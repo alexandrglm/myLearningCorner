@@ -1,4 +1,5 @@
 
+
 @media (min-width: 1024px) and (max-width: 1200px) {
   html {
     transform: scale(1.2);
@@ -27,7 +28,7 @@ header {
   align-items: center;
   background-color: black;
   padding: 0 20px;
-  height: 70px;
+  height: 60px;
 }
 
 #navheader {
@@ -38,6 +39,7 @@ header {
 
 .logo img {
   height: 30px;
+  margin-right: 30px;
 }
 
 .navbarMenu {
@@ -114,13 +116,16 @@ header {
 
 .createButton,
 .accountThings {
+  margin: 10px 0 0 0;
   color: white;
   border: none;
   border-radius: 4px;
   font: normal bold 16px/1 "Lato", sans-serif;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  padding: 15px 15px;
+  padding: 10px 15px;
+  align-items: center;
+  white-space: nowrap;
 }
 
 .createButton {
@@ -212,6 +217,9 @@ body {
 
 .bodyPart1 > p > strong {
   color: #fefefe;
+}
+.bodyPart1 > p::before {
+  content: "CodePen  ";
 }
 
 .bodyPart1B p {
