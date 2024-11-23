@@ -1,370 +1,331 @@
-/* 
-remember to add via css/js a Dark mode selector 
-Code ALL selectors, including father-childs elements, even if they are blank; 
-at the end, erase empty to avoid any warning 
 
-@media's and @font-face should be applied here but let's link-href them 
-Telefon is the font used for main CodePen p but it's a paid ttf, so, Lato, also applied directly at link stylesheet in the main html
+@media (min-width: 1024px) and (max-width: 1200px) {
+  html {
+    transform: scale(1.2);
+    transform-origin: top left;
+  }
 
-@font-face {
-    font-family: "Telefon Black";
-    src: url("https://assets.codepenassets.com/fonts/telefon/black/telefon-black.woff2") format("woff2");
-}
-@font-face {
-    font-family: "Telefon";
-    src: url("https://assets.codepenassets.com/fonts/telefon/bold/telefon-bold.woff2") format("woff2");
-}
-@font-face {
-    font-family: "Lato";
-    src: url("https://fonts.googleapis.com/css?family=Lato");
-}
-
-even the @media max-width limits, web design isn't esponsive at all, navbar is dismembered when zoom-in
-
-
-*/
-
-@media (max-width: 1200px) {
-    .createButton {
-        padding: 10px 20px;
-    }
-
-    .accountThings {
-        padding: 10px 15px;
-    }
-
-    .navbarMenu ul {
-        gap: 10px;
-    }
+  .navbarMenu ul,
+  .navbarMenu2 ul {
+    gap: 10px;
+  }
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 /* header & header child elements */
 header {
-    display: flex;
-    align-items: center;
-    background-color: black;
-    padding: 0 20px;
-    height: 75px;
-    box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  background-color: black;
+  padding: 0 20px;
+  height: 70px;
 }
 
 #navheader {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 
-.logo img  {
-    height: 30px;
-    margin-right: 15px;
+.logo img {
+  height: 30px;
 }
 
 .navbarMenu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+  margin: 0px 120px 0px 50px;
+
 }
 
 .exploreSemiLine p {
-    color: #e9d97d;
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
-    margin-left: 20px;
+  color: #e9d97d;
+  font: 12px 'Lato', sans-serif;
+  margin: 0px 0 0 10px;
 }
 
 .navbarMenu ul {
-    display: flex;
-    gap: 15px;
-    list-style: none;
+  display: flex;
+  gap: 15px;
+  list-style: none;
 }
 
 .navbarRegularButton {
-    background-color: transparent;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    font: normal bold 16px/1 "Lato", sans-serif;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: -5px;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font: bold 16px/1 "Lato", sans-serif;
+  padding: 10px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
 }
 
 .navbarRegularButton:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .sparkDropdown {
-    margin-right: 50px;
-    margin-top: -5px;
-    background-color: transparent;
-    color: gray;
-    border: none;
-    font: normal bold 16px/1 "Lato", sans-serif;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: color 0.3 ease;
+  background-color: transparent;
+  color: gray;
+  border: none;
+  font: normal bold 16px/1 "Lato", sans-serif;
+  padding: 15px 20px;
+  margin-top: -5px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: color 0.3s ease;
 }
+
 .sparkDropdown:hover {
-    color: yellow;
+  color: #e9d97d;
 }
 
 .sparkDropdown > .fa-chevron-down {
-    display: inline;
-    margin-left: 10px;
+  display: inline-block;
+  margin-left: 10px;
 }
 
 .navbarMenu2 {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 15px;
-    height: 70px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  height: 70px;
+  flex-wrap: nowrap;
 }
 
 .navbarMenu2 ul {
-    display: flex;
-    list-style: none;
-    padding: 0px;
-    margin: 0px;
-    gap: 15px;
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
+
+.createButton,
+.accountThings {
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font: normal bold 16px/1 "Lato", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 15px 15px;
 }
 
 .createButton {
-    font: normal bold 16px/1 "Lato", sans-serif;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    padding: 15px 20px;
-    cursor: pointer;
-    background-color: rgba(255,255,255,0.2);
-    transition: background-color 0.3 ease;
+  background-color: rgba(255, 255, 255, 0.2);
+
 }
+
 .createButton:hover {
-    background-color: yellow;
+  background-color: #e9d97d;
 }
-
-.createButton > .fa-chevron-down {
-    display: inline;
-    color: #4bce79;
-    margin-left: 10px;
-}
-
-.searchButton {
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    padding: 15px 20px;
-}
-
-.searchButton > .fa-search {
-    color: white;
-    padding: 0px 15px;
-}
-.searchButton i {
-    color: gray;
-    font-size: 16px;
-
-}
-.searchButton:hover i {
-    color: white;
-    transform: rotate(90deg);
-    transition: transform 0.3s ease, color 0.3 ease;
-}
-
 
 .accountThings {
-    background-color: rgba(255, 255, 255, 0.2);
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    font: normal bold 16px/1 "Lato", sans-serif;
-    padding: 15px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .accountThings:hover {
-    background-color: transparent;
+  background-color: transparent;
 }
 
+.createButton > .fa-chevron-down {
+  display: inline-block;
+  color: #4bce79;
+  margin-left: 10px;
+}
+
+.searchButton {
+  color: white;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 15px 15px;
+}
+
+.searchButton > .fa-search {
+  color: white;
+  padding: 0px 10px;
+}
+
+.searchButton i {
+  font-size: 25px;
+}
+
+.searchButton:hover i {
+  transform: rotate(90deg);
+  transition: transform 0.3s ease;
+}
+
+.searchButton > .searchBox {
+  width: 75px;
+}
 
 /* body & body child elements */
 body {
-    background-image: radial-gradient(circle at top left, #353840, #202327);
-    border-radius: 10px;
-    min-height: 100vh;
-    overflow-x: hidden; /* Be aware from overlaps */
-    overflow-y: hidden;
-    margin: 0;
+  background-image: radial-gradient(circle at top left, #353840, #141414);
+  border-radius: 10px;
+  min-height: 100vh;
+  overflow: visible;
+  margin: 0;
 }
 
 .mainBody {
-    display: flex;
-    flex-direction: row;
-    align-items: flex;
-    justify-content: space-between;
-    margin-bottom: -20px;
-    padding: 20px;
-    width: 100%;
-    /* max-width: 1200px; */
-    /* margin: 40px auto; */
-    box-shadow: 0px 4px 8px rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -10px;
+  padding: 20px;
+  width: 100%;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.5);
 }
 
-
-.bodyPart1, .bodyPart2  {
-    flex: 1;
-    margin: 0px 50px;
+.bodyPart1, .bodyPart2 {
+  flex: 1;
+  margin: 0 0 0 50px;
 }
 
 .bodyPart1 {
-    text-align: left;
+  text-align: left;
 }
 
 .bodyPart1 p {
-    font-family: 'Lato';
-    font-weight: 300;
-    color: #cacaca;
-    font-size: 2rem;
-    margin-bottom: 20px;
+  font-family: 'Lato';
+  font-weight: 300;
+  color: #cacaca;
+  font-size: 2rem;
+  margin-bottom: 30px;
 }
 
 .bodyPart1 > p > strong {
-    color: #fefefe;
+  color: #fefefe;
 }
 
 .bodyPart1B p {
-    color: #b3b3b3;
+  color: #b3b3b3;
+  font-size: 1.8rem;
 }
 
-
 .bodyButtons {
-    display: flex;
-    gap: 30px;
+  display: flex;
+  gap: 30px;
 }
 
 .signUpBodyButton {
-    font-family: 'Lato';
-    font: normal 160px/1 "Lato", sans-serif;
-    font-size: 24px;
-    color: black;
-    background-color: #4bce79;
-    padding: 12px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
+  font: bold 24px 'Lato';
+  color: black;
+  background-color: #4bce79;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
 .signUpBodyButton:hover {
-    background-color: orange;
-    color: white;
+  background-color: orange;
+  color: white;
 }
 
 .learnMore {
-    font-family: 'Lato';
-    font: normal bold 160px/1 "Lato", sans-serif;
-    font-size: 24px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 4px;
-    padding: 9px 20px;
-    cursor: pointer;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-    transition: background-color 0.5s ease, transform 0.5s ease;
+  font: bold 24px 'Lato';
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 4px;
+  padding: 9px 20px;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.5s ease, transform 0.5s ease;
 }
 
 .learnMore:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .bodyPart2 > p > strong {
-    color: #6ad4f8;
-
+  color: #6ad4f8;
 }
+
 .bodyPart2 p {
-    font-family: 'Lato';
-    color: white;
-    text-align: left;
-    margin-left: 10px;
+  font-family: 'Lato';
+  color: white;
+  text-align: left;
+  margin: 0 0 0 90px;
 }
 
-.bodyPart2 img  {
-    height: auto;
-    width: 75%;
-    margin-top: 5px;
-    box-shadow: -10px 10px 12px rgba(0, 0, 0, 0.3);
+.bodyPart2 img {
+  height: auto;
+  width: 70%;
+  margin: 10px 0 0 80px;
+  box-shadow: -10px 10px 12px rgba(0, 0, 0, 0.3);
 }
-.bodyPart2 img:hover  {
-    height: auto;
-    width: 75%;
-    margin-top: 5px;
-    box-shadow: -10px 10px 12px rgba(0, 0, 0, 0.3);
-    animation: brillitos 2s infinite alternate;
+
+.bodyPart2 img:hover {
+  animation: brillitos 2s infinite alternate;
 }
+
 @keyframes brillitos {
-    0% {
-        box-shadow: -10px 10px 12px rgba(0,0,0,0.3);
-    }
-    100% {
-        box-shadow: -20px 20px 24px rgba(233, 217, 125, 0.5)
-    }
+  0% {
+    box-shadow: -10px 10px 12px rgba(0,0,0,0.3);
+  }
+  100% {
+    box-shadow: -20px 20px 24px rgba(233, 217, 125, 0.5);
+  }
 }
 
 /* footer & footer child elements */
-.footerNone {
-    background-color: black
-}
-
 .bodyFooter {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 0px;
-    margin-top: 20px;
-    background-color: #36383f;
-
-
-}
-.buttonFooter { /* !! FLEX GROW ATTR. SET 0 BY DEFUALT, PLAY WITH IT, ALSO WITH JUSTIFY-CONTENT */
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    color: #fff;
-    justify-content: center;
-    background-color: #36383f;
-    font-family: 'Lato' sans-serif;
-    font: normal bold 16px/1 "Lato", sans-serif;
-    border: solid 1px #b3b3b3;
-    padding: 10px 0px; /* auto doesn't work at horizontals */
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin: 0px;
-    flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 10px;
+  background-color: #36383f;
 }
 
-.buttonFooter:hover {   
-    background-color: black;
+.buttonFooter {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  justify-content: center;
+  background-color: #36383f;
+  font: normal bold 16px/1 "Lato", sans-serif;
+  border: solid 1px #b3b3b3;
+  padding: 10px 0px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  flex-grow: 1;
+}
+
+.buttonFooter:hover {
+  background-color: black;
 }
 
 .latoButton {
-    font-family: 'Lato';
+  font-family: 'Lato';
 }
 
 .bungeeButton {
-    font-family: 'Bungee';
-    padding: 5px;
+  font-family: 'Bungee';
+  padding: 5px;
+}
+
+.footerNone {
+  font-family: 'Bungee';
+  font-size: 0.8rem;
+  color:  #b3b3b3;
+  text-align: center;
+  margin-top: 5px;
 }
