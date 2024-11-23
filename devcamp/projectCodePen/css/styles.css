@@ -274,16 +274,24 @@ body {
   margin: 0 0 0 90px;
 }
 
-.bodyPart2 img {
+.bodyPart2 > .exampleWithShadowBox {
   height: auto;
   width: 70%;
   margin: 10px 0 0 80px;
   box-shadow: -10px 10px 12px rgba(0, 0, 0, 0.3);
+  transition: all 2s ease-in-out;
 }
 
-.bodyPart2 img:hover {
+.bodyPart2 > .exampleWithShadowBox.hovered {
+  opacity: 0;
+
+}
+
+.bodyPart2 > .exampleWithShadowBox:hover {
   animation: brillitos 2s infinite alternate;
 }
+
+
 
 @keyframes brillitos {
   0% {
