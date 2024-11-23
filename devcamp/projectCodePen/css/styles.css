@@ -113,7 +113,7 @@ header {
 
 /* body & body child elements */
 body {
-    background-image: linear-gradient(to right, #727272, #444444);
+    background-image: linear-gradient(to right, #353840, #202327);
     border-radius: 10px;
     min-height: 100vh;
     overflow-x: hidden; /* Be aware from overlaps */
@@ -138,7 +138,7 @@ body {
 
 .bodyPart1, .bodyPart2  {
     flex: 1;
-    margin: 0px 20px;
+    margin: 0px 50px;
 }
 
 .bodyPart1 {
@@ -148,54 +148,54 @@ body {
 .bodyPart1 p {
     font-family: 'Lato';
     font-weight: 300;
-    color: white;
+    color: #cacaca;
     font-size: 2rem;
     margin-bottom: 20px;
+}
+
+.bodyPart1 > p > strong {
+    color: #fefefe;
+}
+
+.bodyPart1B p {
+    color: #b3b3b3;
 }
 
 .fa-thumbs-up {
     color: greenyellow;
     size: 500px;
 }
-.bodyPart2 {
-    text-align: center;
-}
-.bodyPart2 p {
-    font-family: 'Lato';
-    color: white;
-    text-align: center;
-}
 
-.bodyPart2 img  {
-    height: auto;
-    width: 75%;
-    margin-top: 5px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+.bodyButtons {
+
 }
 
 .signUpBodyButton {
-    background-color: green; /* pending */
-    color: white;
-    border: none; /* pending */
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 4px; /* here, applied */
+    font-family: 'Lato';
+    font: normal 160px/1 "Lato", sans-serif;
+    font-size: 24px;
+    color: black;
+    background-color: #4bce79;
+    padding: 12px 20px;
+    border-radius: 6px; /* here, applied */
     cursor: pointer;
     transition: background-color 0.5s, transform 0.2s;
 }
 
 .signUpBodyButton:hover {
-    background-color: darkgreen;
+    background-color: orange;
+    color: white;
 }
 
 .learnMore {
-    background-color: transparent;
+    font-family: 'Lato';
+    font: normal bold 160px/1 "Lato", sans-serif;
+    font-size: 24px;
+    background-color: black;
     color: #fff;
-    /* display: inline-block; */
-    font: normal bold 16px/1 "Lato", sans-serif;
     text-align: center;
-    border: none;
-    padding: 10px 20px;
+    border-radius: 6px; /* here, applied */
+    padding: 9px 20px;
     cursor: pointer;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
     transition: background-color 0.3s ease, transform 0.2s ease;
@@ -205,24 +205,57 @@ body {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
+.bodyPart2 > p > strong {
+    color: cyan;
+
+}
+.bodyPart2 p {
+    font-family: 'Lato';
+    color: white;
+    text-align: left;
+}
+
+.bodyPart2 img  {
+    height: auto;
+    width: 75%;
+    margin-top: 5px;
+    box-shadow: -10px 10px 12px rgba(0, 0, 0, 0.3);
+}
+
 /* footer & footer child elements */
 .footerNone {
     background-color: black
 }
 
-.buttonFooter {
-    background-color: black;
-    font-family: 'Lato';
+.bodyFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 0px;
+    margin-top: 20px;
+    background-color: #36383f;
+
+
+}
+.buttonFooter { /* !! FLEX GROW ATTR. SET 0 BY DEFUALT, PLAY WITH IT, ALSO WITH JUSTIFY-CONTENT */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     color: #fff;
-    border: none;
+    justify-content: center;
+    background-color: #36383f;
+    font-family: 'Lato' sans-serif;
     font: normal bold 16px/1 "Lato", sans-serif;
-    padding: 10px 20px;
+    border: solid 1px #b3b3b3;
+    padding: 10px 0px; /* auto doesn't work at horizontals */
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin: 0px;
+    flex-grow: 1;
 }
 
 .buttonFooter:hover {   
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: black;
 }
 
 .latoButton {
@@ -231,4 +264,5 @@ body {
 
 .bungeeButton {
     font-family: 'Bungee';
+    padding: 5px;
 }
