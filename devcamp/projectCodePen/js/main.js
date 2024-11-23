@@ -6,10 +6,12 @@ const image = document.querySelector('.exampleWithShadowBox');
 
 image.addEventListener('mouseover', () => {
     image.src = '../img/example2.png';
+    image.classList.add('hovered');
 });
 
 image.addEventListener('mouseout', () => {
     image.src = '../img/lmr7a8E.png';
+    image.classList.remove('hovered');
 });
 
 image.addEventListener('click', () => {
