@@ -1,0 +1,234 @@
+/* remember to add via css/js a Dark mode selector */
+/* Code ALL selectors, including father-childs elements, even if they are blank; 
+/* at the end, erase empty to avoid any warning */
+
+/* @media's and @font-face should be applied here but let's link-href them 
+Telefon is the font used for main CodePen p but it's a paid ttf, so, Lato, also applied directly at link stylesheet in the main html
+
+@font-face {
+    font-family: "Telefon Black";
+    src: url("https://assets.codepenassets.com/fonts/telefon/black/telefon-black.woff2") format("woff2");
+}
+@font-face {
+    font-family: "Telefon";
+    src: url("https://assets.codepenassets.com/fonts/telefon/bold/telefon-bold.woff2") format("woff2");
+}
+@font-face {
+    font-family: "Lato";
+    src: url("https://fonts.googleapis.com/css?family=Lato");
+}
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+/* header & header child elements */
+header {
+    background-color: black;
+    padding: 10px 20px;
+}
+
+#navheader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.navbarMenu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+
+.navbarRegularButton {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font: normal bold 16px/1 "Lato", sans-serif;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.navbarRegularButton:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.createButton,
+.createButton:hover,
+
+.sparkDropdown,
+.sparkDropdown:hover,
+
+.accountThings {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border: none;
+    font: normal bold 16px/1 "Lato", sans-serif;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.accountThings:hover {
+    background-color: transparent;
+}
+
+.sparkDropdown {
+    border: 2px solid white;
+    padding: 8px 18px;
+}
+
+.accountThings {
+    font-size: 26px;
+}
+
+
+.searchButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchButton:hover {
+    transform: rotate(90);
+}
+
+.fa-magnifying-glass {
+    color: gray;
+}
+
+/* body & body child elements */
+body {
+    background-image: linear-gradient(to right, #727272, #444444);
+    border-radius: 10px;
+    min-height: 100vh;
+    overflow-x: hidden; /* Be aware from overlaps */
+    overflow-y: hidden;
+    margin: 0;
+    /* color: pending */
+}
+
+.mainBody {
+    display: flex;
+    flex-direction: row;
+    align-items: flex;
+    justify-content: space-between;
+    margin-bottom: -20px;
+    padding: 20px;
+    width: 100%;
+    /* max-width: 1200px; */
+    /* margin: 40px auto; */
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.5);
+}
+
+
+.bodyPart1, .bodyPart2  {
+    flex: 1;
+    margin: 0px 20px;
+}
+
+.bodyPart1 {
+    text-align: left;
+}
+
+.bodyPart1 p {
+    font-family: 'Lato';
+    font-weight: 300;
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.fa-thumbs-up {
+    color: greenyellow;
+    size: 500px;
+}
+.bodyPart2 {
+    text-align: center;
+}
+.bodyPart2 p {
+    font-family: 'Lato';
+    color: white;
+    text-align: center;
+}
+
+.bodyPart2 img  {
+    height: auto;
+    width: 75%;
+    margin-top: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.signUpBodyButton {
+    background-color: green; /* pending */
+    color: white;
+    border: none; /* pending */
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px; /* here, applied */
+    cursor: pointer;
+    transition: background-color 0.5s, transform 0.2s;
+}
+
+.signUpBodyButton:hover {
+    background-color: darkgreen;
+}
+
+.learnMore {
+    background-color: transparent;
+    color: #fff;
+    /* display: inline-block; */
+    font: normal bold 16px/1 "Lato", sans-serif;
+    text-align: center;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.learnMore:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* footer & footer child elements */
+.footerNone {
+    background-color: black
+}
+
+.buttonFooter {
+    background-color: black;
+    font-family: 'Lato';
+    color: #fff;
+    border: none;
+    font: normal bold 16px/1 "Lato", sans-serif;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buttonFooter:hover {   
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.latoButton {
+    font-family: 'Lato';
+}
+
+.bungeeButton {
+    font-family: 'Bungee';
+}
