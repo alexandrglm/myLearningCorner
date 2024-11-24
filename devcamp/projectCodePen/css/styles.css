@@ -1,13 +1,16 @@
 
-@media (min-width: 1024px) and (max-width: 1200px) {
-  html {
-    transform: scale(1.2);
+/*
+ @media (min-width: 640px) and (max-width: 767px) {
+  header {
+    transform: scale(1);
     transform-origin: top left;
   }
+}
 
-  .navbarMenu ul,
-  .navbarMenu2 ul {
-    gap: 10px;
+@media (min-width: 1024px) and (max-width: 1199px) {
+  header {
+    transform: scale(1.5);
+    transform-origin: top left;
   }
 }
 
@@ -16,6 +19,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+*/
 
 html {
   overflow-x: hidden;
@@ -24,51 +28,53 @@ html {
 /* header & header child elements */
 header {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
   background-color: black;
-  padding: 0 20px;
-  height: 60px;
+}
+
+.logo img {
+  height: 2.5rem;
 }
 
 #navheader {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
-}
-
-.logo img {
-  height: 30px;
-  margin-right: 30px;
+  gap: 1em;
 }
 
 .navbarMenu {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 0;
-  margin: 0 120px 0 50px;
-
+  /* gap: 0.2rem; */
 }
 
 .exploreSemiLine p {
   color: #e9d97d;
-  font: 12px 'Lato', sans-serif;
-  margin: 0 0 0 10px;
+  font: 0.8rem 'Lato', sans-serif;
+  margin: -1em 0 -2em 1em;
 }
 
 .navbarMenu ul {
   display: flex;
-  gap: 15px;
+  gap: 0.2rem;
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .navbarRegularButton {
   background-color: transparent;
   color: #fff;
   border: none;
-  border-radius: 4px;
-  font: bold 16px/1 "Lato", sans-serif;
-  padding: 10px 10px;
+  border-radius: 0.15rem;
+  font: bold 1rem "Lato", sans-serif;
+  padding: 0.6rem 0.75rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
   white-space: nowrap;
@@ -82,9 +88,8 @@ header {
   background-color: transparent;
   color: gray;
   border: none;
-  font: normal bold 16px/1 "Lato", sans-serif;
-  padding: 15px 20px;
-  margin-top: -5px;
+  font: normal bold 1rem "Lato", sans-serif;
+  padding: 0.6rem 1rem;
   cursor: pointer;
   white-space: nowrap;
   transition: color 0.3s ease;
@@ -96,44 +101,42 @@ header {
 
 .sparkDropdown > .fa-chevron-down {
   display: inline-block;
-  margin-left: 10px;
+  margin-left: 0.5rem;
 }
 
 .sparkDropdown > .fa-gift {
   display: inline-block;
-  margin-left: 10px;
+  margin-left: 0.5rem;
 }
+
 .navbarMenu2 {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 15px;
-  height: 70px;
-  flex-wrap: nowrap;
+  gap: 1rem;
 }
 
 .navbarMenu2 ul {
   display: flex;
   list-style: none;
-  gap: 10px;
+  gap: 1rem;
+  padding: 0;
 }
 
 .createButton,
 .accountThings {
-  margin: 10px 0 0 0;
   color: white;
   border: none;
-  border-radius: 4px;
-  font: normal bold 16px/1 "Lato", sans-serif;
+  border-radius: 0.15rem;
+  font: normal bold 1rem "Lato", sans-serif;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  padding: 10px 15px;
-  align-items: center;
+  padding: 0.9rem 0.9rem;
   white-space: nowrap;
 }
 
 .createButton {
   background-color: rgba(255, 255, 255, 0.2);
-
 }
 
 .createButton:hover {
@@ -151,7 +154,7 @@ header {
 .createButton > .fa-chevron-down {
   display: inline-block;
   color: #4bce79;
-  margin-left: 10px;
+  margin-left: 0.5rem;
 }
 
 .searchButton {
@@ -160,18 +163,17 @@ header {
   align-items: center;
   background-color: transparent;
   border: none;
-  border-radius: 4px;
+  border-radius: 0.15rem;
   cursor: pointer;
-  padding: 15px 15px;
+  padding: 0.5rem 2rem;
 }
 
 .searchButton > .fa-search {
   color: white;
-  padding: 0 10px;
 }
 
 .searchButton i {
-  font-size: 25px;
+  font-size: 2rem;
 }
 
 .searchButton:hover i {
@@ -182,11 +184,9 @@ header {
 .searchButton > .searchBox {
   width: 75px;
 }
-
 /* body & body child elements */
 body {
   background-image: radial-gradient(circle at top left, #353840, #141414);
-  border-radius: 10px;
   min-height: 100vh;
   overflow: visible;
   margin: 0;
@@ -195,7 +195,7 @@ body {
 .mainBody {
   display: flex;
   justify-content: space-between;
-  margin-bottom: -10px;
+  margin: -20px 0 -10px 0;
   padding: 20px;
   width: 100%;
   box-shadow: 0 4px 8px rgba(0,0,0,0.5);
@@ -240,7 +240,7 @@ body {
   color: black;
   background-color: #4bce79;
   padding: 12px 20px;
-  border-radius: 4px;
+  border-radius: 0.15em;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.2s;
 }
@@ -255,7 +255,7 @@ body {
   background-color: black;
   color: #fff;
   text-align: center;
-  border-radius: 4px;
+  border-radius: 0.15em;
   padding: 9px 20px;
   cursor: pointer;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
@@ -266,21 +266,21 @@ body {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.bodyPart2 > p > strong {
-  color: #6ad4f8;
-}
-
 .bodyPart2 p {
-  font-family: 'Lato';
+  font: normal bold 0.8rem 'Lato', sans-serif;
   color: white;
   text-align: left;
-  margin: 0 0 0 90px;
+  margin: 2em 0 0 7.5em;
+}
+
+.bodyPart2 > p > strong {
+  color: #6ad4f8;
 }
 
 .bodyPart2 > .exampleWithShadowBox {
   height: auto;
   width: 70%;
-  margin: 10px 0 0 80px;
+  margin: 0.2em 0 0 80px;
   box-shadow: -10px 10px 12px rgba(0, 0, 0, 0.3);
   transition: all 2s ease-in-out;
   animation: flash 0.6s ease-out;
@@ -365,7 +365,7 @@ body {
 
 .footerNone {
   font-family: 'Bungee';
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   color:  #b3b3b3;
   text-align: center;
   margin-top: 5px;
@@ -404,9 +404,9 @@ body {
   color: white;
   background-color: #4040d0;
   border: none;
-  border-radius: 8px;
+  border-radius: 0.15em;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
+  transition: background-color 0.3s, transform 0.2s; /* to be fixed */
   margin: 0 0 -10px 0;
 }
 
@@ -500,7 +500,8 @@ body {
   font: normal bold 20px/1 'Pixelify Sans';
   text-align: left;
   color: whitesmoke;
-  border: solid 1px black;
+  /* border: solid 1px black; */
+  text-shadow: 5px 5px 5px black;
 }
 
 @keyframes scrollUp {
