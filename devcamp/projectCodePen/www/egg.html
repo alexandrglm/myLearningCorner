@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="eu-es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:wght@300;400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>You've found a secret!</title>
+</head>
+<header>
+    <nav id="navheader">
+        <div class="logo">
+            <a href="./index.html"><img src="../img/codepen-wordmark-display-inside-white@10x.png" alt="CodePen Logo"></a>
+        </div>
+
+        <div class="navbarMenu">
+            <div class="exploreSemiLine">
+                <p>EXPLORE</p>
+            </div>
+            <ul>
+                <li><button class="navbarRegularButton" onclick="thisWorks()">You</button></li>
+                <li><button class="navbarRegularButton" onclick="thisWorks()">found</button></li>
+                <li><button class="navbarRegularButton" onclick="thisWorks()">a secret</button></li>
+                <li><button class="navbarRegularButton" onclick="thisWorks()">area</button></li>
+                <li><button class="sparkDropdown" onclick="thisWorks()">Look down<i class="fa fa-chevron-down"></i></button></li>
+            </ul>
+        </div>
+
+        <div class="navbarMenu2">
+            <div id="player">
+                <audio class="eggAudio" src="../img/sonic_Ending.mp3" type="audio/mpeg"></audio>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <div class="initialMessage">
+        <h1>Welcome to the Fantasy zone.</h1>
+        <button class="playButton">Get Ready!</button>
+    </div>
+
+    <div class="egg" style="display: none;">
+        <div class="eggBox1">
+            <img class="eggGif" src="../img/eggBox1.gif" style="display: none;">
+        </div>
+
+        <div class="eggBox2">
+            <div class="scrollingFarewell" style="visibility: hidden; opacity: 0;">
+                <span>
+                    # 1. HTML/CSS Foundations <br><br>
+                    
+                    ### 1. Introduction <br>
+                    &nbsp;. HTML/CSS definitions <br>
+                    &nbsp;. Goals for this unit <br>
+                    &nbsp;. Basic HTML structures <br>
+                    &nbsp;. DevCamp’s VS Code extension <br><br>
+                    
+                    ### 2. CSS Fundamentals <br>
+                    &nbsp;. CSS Styles intro <br>
+                    &nbsp;. CSS Cascading Process <br><br>
+                    
+                    ### 3. HTML Fundamentals <br>
+                    &nbsp;. HTML links <br>
+                    &nbsp;. DIV tag <br>
+                    &nbsp;. ‘Class’ and ‘id’ <br><br>
+                    
+                    ### 4. Layout and Positioning <br>
+                    &nbsp;. FLEXBOX intro <br>
+                    &nbsp;. PADDING in CSS with FlexBox <br>
+                    &nbsp;. Margin in CSS with FlexBox <br>
+                    &nbsp;. CSS GRID intro <br>
+                    &nbsp;. FlexBox into a GRID in order to align items <br><br>
+                    
+                    ### 5. Styling and Visual Effects <br>
+                    &nbsp;. FONTS importing <br>
+                    &nbsp;. ICONS importing <br>
+                    &nbsp;. CHILD-TAG elements <br>
+                    &nbsp;. Custom fonts <br>
+                    &nbsp;. Importing HTML styles and images <br>
+                    &nbsp;. Refactoring the CSS Code to Use More Specific Selectors <br>
+                    &nbsp;. CSS Animations intro <br>
+                    &nbsp;. PARALLAX scrolling <br>
+                    &nbsp;. TEXT OVERLAYS inside parallax scrolling <br>
+                    &nbsp;. ANIMATED HOVER EFFECTS at columns <br>
+                    &nbsp;. NTH-CHILD selectors <br>
+                    &nbsp;. BOX SHADOWS <br>
+                    &nbsp;. IMG filters (brightness, opacity, ...) <br>
+                    &nbsp;. SKEW img's <br>
+                    &nbsp;. CSS FLOAT, text floating around an img <br><br>
+                    
+                    ### 6. Website Sections <br>
+                    &nbsp;. NAV-BAR, styling RIGHT-COLUMN <br>
+                    &nbsp;. NAV-BAR, finalizing, organizing styles conforming best coding practices <br>
+                    &nbsp;. Adding the HTML Structure and Icons for the Feature Section of the Homepage <br>
+                    &nbsp;. FOOTER structure <br>
+                    &nbsp;. FLEXBOX directions on footer styles <br>
+                    &nbsp;. ABOUT.HTML page, its header. <br>
+                    &nbsp;. SQUARE GRID html structure <br>
+                    &nbsp;. TWO COLUMNS with FlexBox and CSS GRID <br>
+                    &nbsp;. ABOUT.html, finalizing styles, organizing styles conforming best coding practices <br>
+                    &nbsp;. TWO COLUMN GRID onto Menu page <br>
+                    &nbsp;. CONTACT.html, creating, structure, ... <br>
+                    &nbsp;. CONTACT.html, layout with CSS GRID <br>
+                    &nbsp;. FORMs, TEXT AREAs and BUTTONS styles <br>
+                    &nbsp;. FORM ELEMENTS DROP SHADOW styles <br>
+                    &nbsp;. CUSTOM TEXT PLACEHOLDERS <br>
+                    &nbsp;. CONTACT.html, finalizing. <br><br>
+                    
+                    ### 7. Forms <br>
+                    &nbsp;. FORMS <br>
+                    &nbsp;. TEXT INPUT STYLES with CSS <br>
+                    &nbsp;. ANIMATIE FORM LABELS <br><br>
+                    
+                    ### 8. Advanced HTML <br>
+                    &nbsp;. HTML BULLET POINTS / NUMBERED LISTs <br>
+                    &nbsp;. ANCHOR TAGs in HTML <br><br>
+                    
+                    ### 9. Advanced CSS <br>
+                    &nbsp;. CSS 'Before' and 'After' pseudo selectors <br><br>
+                    
+                    ### 10. Responsive Design <br>
+                    &nbsp;. CSS MEDIA QUERIES <br>
+                    &nbsp;. RESPONSIVE STYLES, additions. <br>
+                    &nbsp;. RESPONSIVE STYLES t the SQUARE GRIDs, IMGs skew, and FORM ELEMENTS <br><br>
+                    
+                    ### 11. Assessment <br>
+                    &nbsp;. Quizs and works <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    
+
+
+
+                    Thank you so much!
+
+                    2024 &copy Basque DevCamp
+
+
+                    Alexandr Gomez
+                    </span>
+            </div>
+        </div>
+    </div>
+<script src="../js/egg.js"></script> 
+</body>
+<footer>
+    <div class="bodyFooter">
+        <button class="buttonFooter">
+            <span class="latoButton">Coding for </span>
+            <span class="bungeeButton">FUN </span>
+        </button>
+        <button class="buttonFooter">
+            <span class="latoButton">Coding to </span>
+            <span class="bungeeButton">LEARN </span>
+        </button>
+        <button class="buttonFooter">
+            <span class="latoButton">Coding to </span>
+            <span class="bungeeButton">IMPROVE</span>
+        </button>
+        <button class="buttonFooter">
+            <span class="latoButton">Coding for a </span>
+            <span class="bungeeButton">LIVING </span>
+        </button>
+    </div>
+    <div class="footerNone">
+        <div class="footerNone">2024 &copy Basque DevCamp</div>
+    </div>
+</footer>
+</html>
