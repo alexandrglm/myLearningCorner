@@ -1,3 +1,11 @@
+const favicon = document.getElementById('favicon');
+
+if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    favicon.href = '../img/logo-white.png';
+} else {
+    favicon.href = '../img/logo-black.png'
+}
+
 function thisWorks() {
     alert('This action works! Try another buttons and see what you find ...');
 }
