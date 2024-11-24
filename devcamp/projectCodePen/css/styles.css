@@ -1,5 +1,4 @@
 
-
 @media (min-width: 1024px) and (max-width: 1200px) {
   html {
     transform: scale(1.2);
@@ -100,6 +99,10 @@ header {
   margin-left: 10px;
 }
 
+.sparkDropdown > .fa-gift {
+  display: inline-block;
+  margin-left: 10px;
+}
 .navbarMenu2 {
   display: flex;
   align-items: center;
