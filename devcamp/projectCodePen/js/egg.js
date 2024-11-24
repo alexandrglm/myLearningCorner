@@ -1,5 +1,13 @@
+const favicon = document.getElementById('favicon');
+
+if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    favicon.href = '../img/logo-white.png';
+} else {
+    favicon.href = '../img/logo-black.png'
+}
+
 function thisWorks() {
-    alert('You\'ve found a secret! Get ready!');
+    alert('You\'ve found a secret! Get Ready!');
 }
 
 const audio = document.querySelector('.eggAudio');
@@ -18,34 +26,45 @@ playButton.addEventListener('click', () => {
     scroll.style.opacity = '1';
     scroll.style.animation = 'none';
     void scroll.offsetWidth;
-    scroll.style.animation = 'scrollUp 93s linear forwards';
+    scroll.style.animation = 'scrollUp 90s linear forwards';
 });
 
 /* estrellitas! */
 
 const itsRainingStars = document.querySelector('.itsRainingStars');
+const arrayStars = ['star1.png', 'star2.png', 'star3.png', 'star4.png', 'star5.png'];
 
 function starsShower() {
     const stars = document.createElement('div');
     stars.classList.add('stars');
-    
-    const randomStar = Math.random() < 0.5 ? 'star1.png' : 'star2.png';
+  
+    const randomStar = arrayStars[ Math.floor(Math.random() * arrayStars.length) ];
     stars.style.backgroundImage = `url('../img/${randomStar}')`;
-
+  
     stars.style.left = Math.random() * 100 + 'vw';
-    
-    const fallDuration = Math.random() * 3 + 7 + 's';
-    const sparkleDuration = Math.random() * 2 + 3 + 's';
-    stars.style.animationDuration = fallDuration;
-    stars.style.animationDelay = Math.random() * 2 + 's';
-
-    stars.style.animation = `fall ${fallDuration} linear infinite, sparkle ${sparkleDuration} ease-in-out infinite`;
-
+    stars.style.top = Math.random() * -100 + 'px';
+  
+    const size = Math.random() * 28 + 5;
+    stars.style.width = `${size}px`;
+    stars.style.height = `${size}px`;
+  
+    stars.style.opacity = Math.random() * 0.5 + 0.5;
+  
+    const fallDuration = Math.random() * 5 + 5 + 's';
+    const sparkleDuration = Math.random() * 2 + 1 + 's';
+  
+    // const rotateDirection = Math.random() < 0.5 ? 1 : -1;
+    // const rotateDegrees = rotateDirection * 360;
+  
+    stars.style.animation = `fall ${fallDuration} linear infinite, 
+                            sparkle ${sparkleDuration} ease-in-out infinite, 
+                            rotate ${Math.random() * 5 + 5}s linear infinite`; 
+  
     itsRainingStars.appendChild(stars);
-
+  
     setTimeout(() => {
-        stars.remove();
+      stars.remove();
     }, parseFloat(fallDuration) * 1000);
-}
-
-setInterval(starsShower, 200);
+  }
+  
+  setInterval(starsShower, 200);
