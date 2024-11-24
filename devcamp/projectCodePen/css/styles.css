@@ -372,13 +372,25 @@ body {
 }
 
 /* Easter egg confs */
+#player {
+  visibility: visible;
+  color: white;
+  border: none;
+  border-radius: 0.15rem;
+  font: normal bold 1rem "Lato", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 2rem 4rem;
+  white-space: nowrap;
+}
+
 .initialMessage {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 75vh; 
+  height: 69vh; 
   background-color: #5858fe;
   padding: 20px;
   text-align: center;
@@ -407,7 +419,7 @@ body {
   border-radius: 0.15em;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.2s; /* to be fixed */
-  margin: 0 0 -10px 0;
+
 }
 
 .playButton:hover {
@@ -473,25 +485,27 @@ body {
 }
 
 .eggBox1 img {
-  width: 50%;
+  width: 51%;
   max-height: 100%;
   object-fit: contain;
-  margin-left: 200px;
+  margin-left: 10em;
 }
 
 .eggBox2 {
   position: relative;
-  width: 100%;
-  height: 100%;
-  overflow: hidden; 
+  width: auto;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url(../img/eggTablon.png);
+  background-size: cover;
 }
 
 .scrollingFarewell {
   position: absolute;
-  top: 50%;
+  padding: 0em 5em;
+  top: 90%;
   animation: scrollUp 88s linear infinite;
   white-space: pre-line;
 }
