@@ -1,16 +1,25 @@
+
  @media (min-width: 640px) and (max-width: 1023px) {
-  header {
+  html {
     transform: scale(1);
     transform-origin: top left;
   }
 }
 
 @media (min-width: 1024px) and (max-width: 1199px) {
-  header {
+  html {
     transform: scale(1.5);
     transform-origin: top left;
   }
 }
+
+@media (max-width: 640px) {
+  .createButton, .accountThings {
+    padding: 0.3rem 0.4rem;
+    font-size: 0.8rem;
+  }
+}
+
 
 /* header & header child elements */
 header {
@@ -31,14 +40,12 @@ header {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  /* gap: 1em; */
 }
 
 .navbarMenu {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  /* gap: 0.2rem; */
 }
 
 .exploreSemiLine p {
@@ -176,7 +183,8 @@ body {
   justify-content: space-between;
   margin: -2.2em 0 -0.5em 0;
   padding: 20px;
-  width: 100%;
+  width: fixed;
+  height: 25.2em;
   box-shadow: 0 4px 8px rgba(0,0,0,0.5);
 }
 
@@ -185,12 +193,9 @@ body {
   margin: 0 0 0 50px;
 }
 
-.bodyPart1 {
-  text-align: left;
-}
-
 .bodyPart1 p {
   font-family: 'Lato';
+  text-align: left;
   color: #cacaca;
   font-size: 1.9rem;
   margin-bottom: 30px;
@@ -229,44 +234,44 @@ body {
 }
 
 .learnMore {
+  position: relative;
   font: bold 24px 'Lato';
   background-color: black;
   color: #fff;
   text-align: center;
-  border-radius: 0.15em;
+  border-radius: 4px;
   padding: 9px 20px;
   cursor: pointer;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  transition: background-color 0.5s ease, transform 0.5s ease;
+  box-shadow: 0 -4px 24px rgba(233, 217, 125, 0.2);
+  overflow: hidden;
+}
+
+.learnMore:hover {
+  box-shadow: 0 -4px 100px rgba(233, 217, 125, 0.9);
+  font-family: 'Pixelify Sans';
 }
 
 .learnMore::before,
 .learnMore::after {
   content: '';
   position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
+  top: 50%;
+  left: 50%;
+  width: 150%;
+  height: 150%;
+  border-radius: 50%;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translate(-50%, -50%) scale(0.5);
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  z-index: 0;
 }
 
-.learnMore:hover {
-  font-family: 'Pixelify Sans';
-  background: black;
-  color: white;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.3);
-}
-
-.learnMore:hover::before {
+.learnMore::before {
   background: radial-gradient(circle, rgba(255, 255, 255, 0.3), transparent 60%);
-  animation: pixelPulse 1.5s infinite ease-in-out;
-  opacity: 1;
 }
 
-.learnMore:hover::after {
+.learnMore::after {
   background: repeating-linear-gradient(
     45deg,
     rgba(0, 255, 0, 0.4),
@@ -274,32 +279,26 @@ body {
     transparent 5px,
     transparent 10px
   );
-  animation: retroScanlines 2s linear infinite;
   mix-blend-mode: overlay;
-  opacity: 1;
 }
 
-@keyframes pixelPulse {
-  0% {
-    transform: translate(-50%, -50%) scale(1);
-    opacity: 0.6;
-  }
-  50% {
-    transform: translate(-50%, -50%) scale(1.5);
-    opacity: 0.3;
-  }
-  100% {
-    transform: translate(-50%, -50%) scale(2);
-    opacity: 0;
-  }
+.learnMore:hover::before {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.learnMore:hover::after {
+  opacity: 0.7;
+  transform: translate(-50%, -50%) scale(1);
+  animation: retroScanlines 1.5s linear infinite;
 }
 
 @keyframes retroScanlines {
   0% {
-    transform: translate(0, 0);
+    background-position: 0 0;
   }
   100% {
-    transform: translate(50px, 50px);
+    background-position: 0 100%;
   }
 }
 
@@ -394,7 +393,8 @@ body {
 
 .bungeeButton {
   font-family: 'Bungee';
-  padding: 0.4em;
+  padding: 5px;
+  margin: 0.1em 0 0 0;
 }
 
 .footerNone {
@@ -423,8 +423,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 69vh; 
+  width: fixed;
+  height: 23.7em; 
   background-color: #5858fe;
   padding: 20px;
   text-align: center;
@@ -471,8 +471,8 @@ body {
   align-items: center;
   gap: 20px;
   background-color: #5858fe;
-  width: 100%;
-  height: 75vh; 
+  width: fixed;
+  height: 26.2em; 
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   margin: 0 0 -10px 0;
