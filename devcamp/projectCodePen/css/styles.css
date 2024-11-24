@@ -21,9 +21,11 @@
 }
 */
 
+/*
 html {
   overflow-x: hidden;
 }
+*/
 
 /* header & header child elements */
 header {
@@ -99,14 +101,10 @@ header {
   color: #e9d97d;
 }
 
-.sparkDropdown > .fa-chevron-down {
-  display: inline-block;
-  margin-left: 0.5rem;
-}
-
+.sparkDropdown > .fa-chevron-down,
 .sparkDropdown > .fa-gift {
-  display: inline-block;
-  margin-left: 0.5rem;
+    display: inline-block;
+    margin-left: 0.5rem;
 }
 
 .navbarMenu2 {
@@ -181,9 +179,6 @@ header {
   transition: transform 0.3s ease;
 }
 
-.searchButton > .searchBox {
-  width: 75px;
-}
 /* body & body child elements */
 body {
   background-image: radial-gradient(circle at top left, #353840, #141414);
