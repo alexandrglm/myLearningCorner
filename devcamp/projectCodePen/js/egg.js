@@ -1,5 +1,5 @@
 function thisWorks() {
-    alert('You\'ve found a secret! Press PLAY to enjoy!');
+    alert('You\'ve found a secret! Get ready!');
 }
 
 const audio = document.querySelector('.eggAudio');
