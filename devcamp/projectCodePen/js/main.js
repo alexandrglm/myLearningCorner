@@ -1,5 +1,5 @@
 function thisWorks() {
-    alert('This action works!');
+    alert('This action works! Try another buttons and see what you find ...');
 }
 
 const image = document.querySelector('.exampleWithShadowBox');
@@ -15,6 +15,6 @@ image.addEventListener('mouseout', () => {
 });
 
 image.addEventListener('click', () => {
-    alert('CodePen gives you a lightweight HTML-CSS-JS IDE!. Anyway, this a basic HTML/CSS/JS demo for a Bootcamp. Thanks.');
+    alert('CodePen gives you a lightweight HTML-CSS-JS IDE!. Anyway, this a basic HTML/CSS/JS demo for a Bootcamp. But, here you\'ve found something ...');
     
 });
