@@ -1,3 +1,4 @@
+/*
 @media (max-width: 640px) {
   .createButton, .accountThings {
     padding: 0.3rem 0.4rem;
@@ -17,6 +18,7 @@
     transform-origin: top left;
   }
 }
+*/
 
 /* header & header child elements */
 header {
@@ -411,9 +413,11 @@ body {
 
 /* Easter egg confs */
 
+
 .easter {
   display: flex;
-  height: 30.3em;
+  flex: 1;
+  flex-direction: column;
   margin-bottom: -0.2em;
 }
 
@@ -423,8 +427,10 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%; 
-
+  height: 88vh;
+  min-height: 400px;
   background-image: radial-gradient(circle at 50% 0%, #5858fe, black);
+  background-size: cover; 
   text-align: center;
 
 }
@@ -433,31 +439,67 @@ body {
   font-family: 'Pixelify Sans', sans-serif;
   font-size: 60px;
   color: white;
-  margin: 0;
-  margin-bottom: 2em;
+  margin: 0 0 2em 0;
   padding: 10px;
   border-radius: 5px;
+  animation: relampagos 2s linear infinite;
 }
 
-.playButton {
+@keyframes relampagos {
+  0% {
+    text-shadow: none;
+  }
+  10% {
+    text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white;
+  }
+  20% {
+    text-shadow: none;
+  }
+  30% {
+    text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white;
+  }
+  40% {
+    text-shadow: none;
+  }
+  50% {
+    text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white;
+  }
+  60% {
+    text-shadow: none;
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+.getReady {
   font-family: 'Pixelify Sans', sans-serif;
   padding: 15px 30px;
   font-size: 20px;
-  color: white;
-  background-color: #4040d0;
+  color: #141414;
+  background-color: greenyellow;
   border: none;
   border-radius: 0.15em;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
+  transition: all 0.5s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.playButton:hover {
-  background-color: greenyellow;
-  transform: scale(1.05);
+.getReady:hover {
+  background-image: radial-gradient(circle at 50% 120%, #e9d97d, #b58d00);
+  color: black; 
+  transform: scale(1.1) rotate(10deg);
+  box-shadow: 0 12px 24px rgba(233, 217, 125, 0.6);
+  border: 3px solid #5d4000;
+  font-style: italic;
+  letter-spacing: 2px;
+  text-shadow: 0 0 5px #000;
 }
 
-.playButton:active {
+.getReady:active {
   background-color: #1e1e7a;
+  transform: scale(0.95);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .egg {
@@ -482,7 +524,7 @@ body {
   background-position: top left, top right, bottom left, center, 60% 60%, 40% 20%, 80% 40%, 50% 80%, 10% 30%, 75% 85%, 30% 50%;
   animation: wave 20s linear infinite alternate, move-bubbles 30s linear infinite;
   width: 100%;
-  height: 30.3em;
+  height: 80vh;
   overflow: hidden;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
   position: relative;
@@ -561,10 +603,19 @@ body {
 }
 
 .eggBox1 img {
-  width: 60%;
-  max-height: fixed;
+  width: auto;
+  height: 80vh; 
   object-fit: contain;
-  margin-left: 10em;
+  margin: 1.5% 0 0 15%;
+}
+
+.sonicLeaves {
+  animation: fadeOut 3s forwards;
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
 }
 
 .eggBox2 {
@@ -572,23 +623,24 @@ body {
   width: auto;
   height: auto;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
+  margin: 0 0 0 -5%;
 }
 
 .scrollingFarewell {
   position: absolute;
-  padding: 0em 5em;
   top: 90%;
   animation: scrollUp 88s linear infinite;
   white-space: pre-line; 
 }
 
 .scrollingFarewell span {
-  font: normal bold 20px/1 'Pixelify Sans';
+  font: normal bold 22px/1 'Pixelify Sans';
   text-align: left;
   color: whitesmoke;
   text-shadow: 5px 5px 5px black;
+  margin: 0 0 0 -3em;
 }
 
 @keyframes scrollUp {
