@@ -39,6 +39,7 @@ header {
   justify-content: space-around;
   align-items: center;
   width: 100%;
+  z-index: 1000;
 }
 
 .navbarMenu {
@@ -70,6 +71,7 @@ header {
   cursor: pointer;
   transition: background-color 0.3s ease;
   white-space: nowrap;
+
 }
 
 .navbarRegularButton:hover {
@@ -387,6 +389,7 @@ body {
   cursor: pointer;
   transition: background-color 0.3s ease;
   flex-grow: 1;
+  z-index: 4998;
 }
 
 .buttonFooter:hover {
@@ -409,35 +412,38 @@ body {
   color:  #b3b3b3;
   text-align: center;
   padding: 0.1em 0;
+  z-index: -10;
 }
 
 /* Easter egg confs */
-
 
 .easter {
   display: flex;
   flex: 1;
   flex-direction: column;
-  margin-bottom: -0.2em;
+  margin-bottom: -0.3em;
+  background-color: #5858fe;
 }
 
+
 .initialMessage {
+  display: grid;
+}
+
+.fixedMargins {
   display: flex;
+  background-image: linear-gradient(to bottom, black 40%, transparent);
+  background-size: cover;
+  width: 100vw; 
+  min-height: 80vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%; 
-  height: 88vh;
-  min-height: 400px;
-  background-image: radial-gradient(circle at 50% 0%, #5858fe, black);
-  background-size: cover; 
   text-align: center;
-
 }
 
 .initialMessage h1 {
-  font-family: 'Pixelify Sans', sans-serif;
-  font-size: 60px;
+  font: normal 60px 'Pixelify Sans', sans-serif;
   color: white;
   margin: 0 0 2em 0;
   padding: 10px;
@@ -573,7 +579,7 @@ body {
   width: 100%;
   height: 100%;
   pointer-events: none; 
-  z-index: 9999; 
+  z-index: 500; 
 }
 
 .stars {
