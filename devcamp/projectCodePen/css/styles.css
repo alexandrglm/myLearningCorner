@@ -1,4 +1,4 @@
-
+/*
  @media (min-width: 640px) and (max-width: 1023px) {
   html {
     transform: scale(1);
@@ -19,7 +19,7 @@
     font-size: 0.8rem;
   }
 }
-
+*/
 
 /* header & header child elements */
 header {
@@ -173,19 +173,26 @@ header {
 /* body & body child elements */
 body {
   background-image: radial-gradient(circle at top left, #353840, #141414);
-  min-height: 100vh;
-  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
   margin: 0;
+  min-height: 100vh;
+  min-width: 100vw;
+  box-sizing: border-box;
 }
 
 .mainBody {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: -2.2em 0 -0.5em 0;
   padding: 20px;
+  flex-grow: 1;
   width: fixed;
-  height: 25.2em;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  max-width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .bodyPart1, .bodyPart2 {
@@ -406,16 +413,11 @@ body {
 }
 
 /* Easter egg confs */
-#player {
-  visibility: visible;
-  color: white;
-  border: none;
-  border-radius: 0.15rem;
-  font: normal bold 1rem "Lato", sans-serif;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  padding: 2rem 4rem;
-  white-space: nowrap;
+
+.easter {
+  display: flex;
+  height: 28.9em;
+  margin-bottom: -0.2em;
 }
 
 .initialMessage {
@@ -423,12 +425,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: fixed;
-  height: 23.7em; 
+  width: 100%; 
+
   background-image: radial-gradient(circle at 50% 0%, #5858fe, black);
-  padding: 20px;
   text-align: center;
-  margin-bottom: -10px;
+
 }
 
 .initialMessage h1 {
@@ -436,10 +437,9 @@ body {
   font-size: 60px;
   color: white;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 2em;
   padding: 10px;
   border-radius: 5px;
-  width: 100%;
 }
 
 .playButton {
@@ -451,12 +451,12 @@ body {
   border: none;
   border-radius: 0.15em;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s; /* to be fixed */
+  transition: background-color 0.3s, transform 0.2s;
 }
 
 .playButton:hover {
   background-color: greenyellow;
-  transform: scale(1.05); 
+  transform: scale(1.05);
 }
 
 .playButton:active {
@@ -465,7 +465,7 @@ body {
 
 .egg {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr; 
   align-items: center;
   background-color: #5858fe;
   background-image: 
@@ -485,11 +485,12 @@ body {
   background-position: top left, top right, bottom left, center, 60% 60%, 40% 20%, 80% 40%, 50% 80%, 10% 30%, 75% 85%, 30% 50%;
   animation: wave 20s linear infinite alternate, move-bubbles 30s linear infinite;
   width: 100%;
-  height: 25.8em;
+  height: 29.5em;
   overflow: hidden;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
-  margin: 0 0 -0.2em 0;
+  margin-top: -10px; 
   position: relative;
+  flex-grow: 1; 
 }
 
 .egg::before {
@@ -500,13 +501,13 @@ body {
   right: 0;
   bottom: 0;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
-  pointer-events: none;
-  z-index: 1;
+  pointer-events: none; 
+  z-index: 1; 
 }
 
 .egg > * {
   position: relative;
-  z-index: 2;
+  z-index: 2; 
 }
 
 @keyframes wave {
@@ -527,33 +528,13 @@ body {
   }
 }
 
-.bubble {
-  position: absolute;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.5) 10%, rgba(255, 255, 255, 0) 50%);
-  opacity: 0.8;
-  animation: move-bubble linear infinite;
-}
-
-@keyframes move-bubble {
-  0% {
-    transform: translate(var(--x-start), var(--y-start)) scale(1);
-    opacity: 1;
-  }
-  100% {
-    transform: translate(var(--x-end), var(--y-end)) scale(0.5);
-    opacity: 0;
-  }
-}
-
-
 .itsRainingStars {
-  position: fixed; 
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  pointer-events: none;
+  pointer-events: none; 
   z-index: 9999; 
 }
 
@@ -567,25 +548,25 @@ body {
 
 @keyframes fall {
   0% {
-      transform: translateX(-50%) translateY(-50px) rotate(0deg);
+    transform: translateX(-50%) translateY(-50px) rotate(0deg);
   }
   100% {
-      transform: translateX(-50%) translateY(100vh) rotate(360deg);
+    transform: translateX(-50%) translateY(100vh) rotate(360deg);
   }
 }
 
 @keyframes sparkle {
   0%, 100% {
-      opacity: 0.8;
+    opacity: 0.8;
   }
   50% {
-      opacity: 1;
+    opacity: 1;
   }
 }
 
 .eggBox1 img {
-  width: 51%;
-  max-height: 100%;
+  width: 60%;
+  max-height: fixed;
   object-fit: contain;
   margin-left: 10em;
 }
@@ -604,14 +585,13 @@ body {
   padding: 0em 5em;
   top: 90%;
   animation: scrollUp 88s linear infinite;
-  white-space: pre-line;
+  white-space: pre-line; 
 }
 
 .scrollingFarewell span {
   font: normal bold 20px/1 'Pixelify Sans';
   text-align: left;
   color: whitesmoke;
-  /* border: solid 1px black; */
   text-shadow: 5px 5px 5px black;
 }
 
