@@ -13,242 +13,248 @@
     <link rel="icon" href="../img/logo-black.png" id="favicon">
     <title>You've found a secret!</title>
 </head>
-<header>
-    <nav id="navheader">
-        <div class="logo">
-            <a href="./index.html"><img src="../img/codepen-wordmark-display-inside-white@10x.png" alt="CodePen Logo"></a>
-        </div>
-
-        <div class="navbarMenu">
-            <div class="exploreSemiLine">
-                <p>JUST BECAUSE YOU ARE AN AMAZING EXPLORER ...</p>
-            </div>
-            <ul>
-                <li><button class="navbarRegularButton" onclick="thisWorks()">You</button></li>
-                <li><button class="navbarRegularButton" onclick="thisWorks()">found</button></li>
-                <li><button class="navbarRegularButton" onclick="thisWorks()">a</button></li>
-                <li><button class="navbarRegularButton" onclick="thisWorks()">secret</button></li>
-                <li><button class="navbarRegularButton" onclick="thisWorks()">area!</button></li>
-                <li><button class="sparkDropdown" onclick="thisWorks()">Enjoy    <i class="fa-solid fa-gift"></i><i class="fa fa-chevron-down"></i></button></li>
-            </ul>
-        </div>
-
-        <div class="navbarMenu2">
-            <div id="player">
-                <audio class="eggAudio" src="../img/sonic_Ending.mp3" type="audio/mpeg"></audio>
-            </div>
-        </div>
-    </nav>
-</header>
-
 <body>
-    <div class="initialMessage">
-        <h1>Welcome to the Fantasy Zone!</h1>
-        <button class="playButton">Get Ready !!!</button>
-    </div>
+    <header>
+        <nav id="navheader">
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="../img/codepen-wordmark-display-inside-white@10x.png" alt="CodePen Logo">
+                </a>
+            </div>
 
-    <div class="egg" style="display: none;">
-        <div class="itsRainingStars"></div>
-        <div class="eggBox1">
-            <img class="eggGif" src="../img/eggBox1.gif" style="display: none;">
+            <div class="navbarMenu">
+                <div class="exploreSemiLine">
+                    <p>JUST BECAUSE YOU ARE AN AMAZING EXPLORER ...</p>
+                </div>
+                <ul>
+                    <li><button class="navbarRegularButton" onclick="thisWorks()">You</button></li>
+                    <li><button class="navbarRegularButton" onclick="thisWorks()">found</button></li>
+                    <li><button class="navbarRegularButton" onclick="thisWorks()">a</button></li>
+                    <li><button class="navbarRegularButton" onclick="thisWorks()">secret</button></li>
+                    <li><button class="navbarRegularButton" onclick="thisWorks()">area!</button></li>
+                    <li>
+                        <button class="sparkDropdown" onclick="thisWorks()">
+                            Enjoy <i class="fa-solid fa-gift"></i><i class="fa fa-chevron-down"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="navbarMenu2">
+                <div id="player">
+                    <audio class="eggAudio" src="../img/sonic_Ending.mp3" type="audio/mpeg"></audio>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="easter">
+        <div class="initialMessage">
+            <h1>Welcome to the Fantasy Zone!</h1>
+            <button class="playButton">Get Ready !!!</button>
         </div>
 
-        <div class="eggBox2">
-            <div class="scrollingFarewell" style="visibility: hidden; opacity: 0;">
-                <span>
-                    # DevCamp Coding Foundation<br><br>
-                    ## Abstracting what we learned:<br><br> 
-                    ### 1. Introduction <br>
-                    &nbsp;. HTML/CSS definitions <br>
-                    &nbsp;. Goals for this unit <br>
-                    &nbsp;. Basic HTML structures <br>
-                    &nbsp;. DevCamp’s VS Code extension <br><br>
-                    ### 2. CSS Fundamentals <br>
-                    &nbsp;. CSS Styles intro <br>
-                    &nbsp;. CSS Cascading Process <br><br>
-                    ### 3. HTML Fundamentals <br>
-                    &nbsp;. HTML links <br>
-                    &nbsp;. DIV tag <br>
-                    &nbsp;. ‘Class’ and ‘id’ <br><br>
-                    ### 4. Layout and Positioning <br>
-                    &nbsp;. FLEXBOX intro <br>
-                    &nbsp;. PADDING in CSS with FlexBox <br>
-                    &nbsp;. Margin in CSS with FlexBox <br>
-                    &nbsp;. CSS GRID intro <br>
-                    &nbsp;. FlexBox into a GRID in order to align items <br><br>
-                    ### 5. Styling and Visual Effects <br>
-                    &nbsp;. FONTS importing <br>
-                    &nbsp;. ICONS importing <br>
-                    &nbsp;. CHILD-TAG elements <br>
-                    &nbsp;. Custom fonts <br>
-                    &nbsp;. Importing HTML styles and images <br>
-                    &nbsp;. Refactoring the CSS Code to Use More Specific Selectors <br>
-                    &nbsp;. CSS Animations intro <br>
-                    &nbsp;. PARALLAX scrolling <br>
-                    &nbsp;. TEXT OVERLAYS inside parallax scrolling <br>
-                    &nbsp;. ANIMATED HOVER EFFECTS at columns <br>
-                    &nbsp;. NTH-CHILD selectors <br>
-                    &nbsp;. BOX SHADOWS <br>
-                    &nbsp;. IMG filters (brightness, opacity, ...) <br>
-                    &nbsp;. SKEW img's <br>
-                    &nbsp;. CSS FLOAT, text floating around an img <br><br>
-                    ### 6. Website Sections <br>
-                    &nbsp;. NAV-BAR, styling RIGHT-COLUMN <br>
-                    &nbsp;. NAV-BAR, finalizing, organizing styles conforming best coding practices <br>
-                    &nbsp;. Adding the HTML Structure and Icons for the Feature Section of the Homepage <br>
-                    &nbsp;. FOOTER structure <br>
-                    &nbsp;. FLEXBOX directions on footer styles <br>
-                    &nbsp;. ABOUT.HTML page, its header. <br>
-                    &nbsp;. SQUARE GRID html structure <br>
-                    &nbsp;. TWO COLUMNS with FlexBox and CSS GRID <br>
-                    &nbsp;. ABOUT.html, finalizing styles, organizing styles conforming best coding practices <br>
-                    &nbsp;. TWO COLUMN GRID onto Menu page <br>
-                    &nbsp;. CONTACT.html, creating, structure, ... <br>
-                    &nbsp;. CONTACT.html, layout with CSS GRID <br>
-                    &nbsp;. FORMs, TEXT AREAs and BUTTONS styles <br>
-                    &nbsp;. FORM ELEMENTS DROP SHADOW styles <br>
-                    &nbsp;. CUSTOM TEXT PLACEHOLDERS <br>
-                    &nbsp;. CONTACT.html, finalizing. <br><br>
-                    ### 7. Forms <br>
-                    &nbsp;. FORMS <br>
-                    &nbsp;. TEXT INPUT STYLES with CSS <br>
-                    &nbsp;. ANIMATIE FORM LABELS <br><br>
-                    ### 8. Advanced HTML <br>
-                    &nbsp;. HTML BULLET POINTS / NUMBERED LISTs <br>
-                    &nbsp;. ANCHOR TAGs in HTML <br><br>
-                    ### 9. Advanced CSS <br>
-                    &nbsp;. CSS 'Before' and 'After' pseudo selectors <br><br>
-                    ### 10. Responsive Design <br>
-                    &nbsp;. CSS MEDIA QUERIES <br>
-                    &nbsp;. RESPONSIVE STYLES, additions. <br>
-                    &nbsp;. RESPONSIVE STYLES t the SQUARE GRIDs, IMGs skew, and FORM ELEMENTS <br><br>
-                    # JavaScript Programming<br><br>
-                    ## Module 1: JavaScript Basics<br>
-                    &nbsp;. Analyzing the Various Versions of JavaScript <br>
-                    &nbsp;. Variables <br>
-                    &nbsp;. Key Difference Between Var and Let Variables Types <br>
-                    &nbsp;. JavaScript Hoisting <br>
-                    &nbsp;. Syntax for JavaScript Comments <br>
-                    &nbsp;. Comprehensive List of  Data Types <br>
-                    &nbsp;. JavaScript Objects <br>
-                    &nbsp;. How to Check for Data Types  <br>
-                    &nbsp;. How to Perform Type Casting  <br>
-                    &nbsp;. String Functions <br>
-                    &nbsp;. Arithmetic Operators <br>
-                    &nbsp;. Compound Assignment Operators in JavaScript <br>
-                    &nbsp;. Order of Operations in JavaScript <br><br>
-                    ## Module 2: JavaScript Conditionals<br>
-                    &nbsp;. Conditionals <br>
-                    &nbsp;. Basic Syntax for Using Conditionals <br>
-                    &nbsp;. If/Else Conditionals <br>
-                    &nbsp;. Compound Conditionals <br>
-                    &nbsp;. Switch Statement / Checking Data Types <br>
-                    &nbsp;. Ternary Operators <br><br>
-                    ## Module 3: JavaScript Functions<br>
-                    &nbsp;. Basic Syntax for Building Functions <br>
-                    &nbsp;. How Variable Scope Works <br>
-                    &nbsp;. Function Expressions VS Function Declarations <br>
-                    &nbsp;. Function Arguments <br>
-                    &nbsp;. Function Arguments: Reference vs Value <br>
-                    &nbsp;. Closures <br>
-                    &nbsp;. HTML Scripting with Built <br>
-                    &nbsp;. 'this' Keyword <br><br>
-                    ## Module 4: JavaScript Arrays and Data Structures<br>
-                    &nbsp;. Arrays in JavaScript <br>
-                    &nbsp;. Adding and Removing Array Elements <br>
-                    &nbsp;. Splice Function to Remove Specific Array Elements <br><br>
-                    ## Module 5: JavaScript Loops and Iterators<br>
-                    &nbsp;. For Loops <br>
-                    &nbsp;. Loop Through a JavaScript Object <br>
-                    &nbsp;. While and Do/While Loops <br><br>
-                    ## Module 6: Automating Tasks with JavaScript<br>
-                    &nbsp;. Automating Tasks in the Browser with JavaScript <br>
-                    &nbsp;. Running Google Search Queries in JavaScript <br>
-                    &nbsp;. Pull Images from websites  <br>
-                    &nbsp;. Auto Following Accounts and Hashtags on social networks <br><br>
-                    ## Essential Skills & Growth Mindset:<br><br>
-                    &nbsp;. Development Skills You Need <br>
-                    &nbsp;. Are Developers Born or Made? <br>
-                    &nbsp;. Can You Lose Your Coding Skills? <br>
-                    &nbsp;. Cramming vs Consistent Study <br>
-                    &nbsp;. How to Study Effectively <br>
-                    &nbsp;. Guide to Developer Soft Skills <br>
-                    &nbsp;. Discovering the Tipping Point <br><br>
-                    ## Learning Techniques:<br>
-                    &nbsp;. How to Learn a New Programming Language <br>
-                    &nbsp;. Getting Past Skill Plateaus <br>
-                    &nbsp;. How to Practice Programming Techniques <br>
-                    &nbsp;. How to Study and Understand Complex Topics <br>
-                    &nbsp;. How to Use Deep Work <br>
-                    &nbsp;. Is Reading Important for Developers? <br>
-                    &nbsp;. Guide to Memorization <br>
-                    &nbsp;. Slowing Down to Learn How to Code Faster <br>
-                    &nbsp;. Mental Models for Learning How to Code <br> 
-                    &nbsp;. Practical Ways to Use the Pomodoro Technique <br>
-                    &nbsp;. Development Study Tips: Reverse Note Taking <br>
-                    &nbsp;. Task Switching Costs for Developers <br>
-                    &nbsp;. The Power of Making Mistakes <br>
-                    &nbsp;. Learn How to Code from Scratch <br>
-                    &nbsp;. Developer Learning Curve <br>
-                    &nbsp;. Three Practical Approaches to Task Management <br>
-                    &nbsp;. Speed Reading for Developers <br>
-                    &nbsp;. From Copy Paste to Comprehension <br>
-                    &nbsp;. How to Break Through the Cycle of Procrastination   <br><br>
-                    
-                    ## Specific Skills & Concepts:<br><br>
-                    &nbsp;. Introduction to Asynchronous Method Calls <br>
-                    &nbsp;. An Introduction to AI <br>
-                    &nbsp;. Guide to the Model View Controller Architecture <br>
-                    &nbsp;. Object Oriented Inheritance Tutorial <br>
-                    &nbsp;. Guide to CSS Selectors <br>
-                    &nbsp;. Best Practices vs Creativity <br>
-                    &nbsp;. A Developer’s Guide to Content Delivery Networks (CDNs) <br>
-                    &nbsp;. What is Digital Literacy? <br>
-                    &nbsp;. Why do Digital and Coding Literacy Matter? <br>
-                    &nbsp;. Tech Terms and Concepts <br>
-                    &nbsp;. Digitization, Data, and Analytics <br>
-                    &nbsp;. Personality Types and Technical Careers <br>
-                    &nbsp;. What are Tech Careers? <br>
-                    &nbsp;. Tech Trends and Careers   <br><br>
-                    # Management Capabilities Index<br>
-                    ## Self-Management:<br>
-                    &nbsp;. How to Discover and Manage Your Strengths <br><br>
-                    ## Project Management:<br>
-                    &nbsp;. Agile Project Management <br><br>
-                    ## General Management:<br>
-                    &nbsp;. Learn Management Skills <br><br>
-                    ### Course Project evaluation: <br>
-                    &nbsp;. Creating a "Codepen.io-alike" homepage (THIS xD) <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                    Thank you so much!<br>
-                    Alexandr Gomez<br><br><br><br>
-                    2024, November.
-                  </span>
+        <div class="egg" style="display: none;">
+            <div class="itsRainingStars"></div>
+            <div class="eggBox1">
+                <img class="eggGif" src="../img/eggBox1.gif" style="display: none;">
+            </div>
+            <div class="eggBox2">
+                <div class="scrollingFarewell" style="visibility: hidden; opacity: 0;">
+                    <span>
+                        # DevCamp Coding Foundation<br><br>
+                        ## Abstracting what we learned:<br><br> 
+                        ### 1. Introduction <br>
+                        &nbsp;. HTML/CSS definitions <br>
+                        &nbsp;. Goals for this unit <br>
+                        &nbsp;. Basic HTML structures <br>
+                        &nbsp;. DevCamp’s VS Code extension <br><br>
+                        ### 2. CSS Fundamentals <br>
+                        &nbsp;. CSS Styles intro <br>
+                        &nbsp;. CSS Cascading Process <br><br>
+                        ### 3. HTML Fundamentals <br>
+                        &nbsp;. HTML links <br>
+                        &nbsp;. DIV tag <br>
+                        &nbsp;. ‘Class’ and ‘id’ <br><br>
+                        ### 4. Layout and Positioning <br>
+                        &nbsp;. FLEXBOX intro <br>
+                        &nbsp;. PADDING in CSS with FlexBox <br>
+                        &nbsp;. Margin in CSS with FlexBox <br>
+                        &nbsp;. CSS GRID intro <br>
+                        &nbsp;. FlexBox into a GRID in order to align items <br><br>
+                        ### 5. Styling and Visual Effects <br>
+                        &nbsp;. FONTS importing <br>
+                        &nbsp;. ICONS importing <br>
+                        &nbsp;. CHILD-TAG elements <br>
+                        &nbsp;. Custom fonts <br>
+                        &nbsp;. Importing HTML styles and images <br>
+                        &nbsp;. Refactoring the CSS Code to Use More Specific Selectors <br>
+                        &nbsp;. CSS Animations intro <br>
+                        &nbsp;. PARALLAX scrolling <br>
+                        &nbsp;. TEXT OVERLAYS inside parallax scrolling <br>
+                        &nbsp;. ANIMATED HOVER EFFECTS at columns <br>
+                        &nbsp;. NTH-CHILD selectors <br>
+                        &nbsp;. BOX SHADOWS <br>
+                        &nbsp;. IMG filters (brightness, opacity, ...) <br>
+                        &nbsp;. SKEW img's <br>
+                        &nbsp;. CSS FLOAT, text floating around an img <br><br>
+                        ### 6. Website Sections <br>
+                        &nbsp;. NAV-BAR, styling RIGHT-COLUMN <br>
+                        &nbsp;. NAV-BAR, finalizing, organizing styles conforming best coding practices <br>
+                        &nbsp;. Adding the HTML Structure and Icons for the Feature Section of the Homepage <br>
+                        &nbsp;. FOOTER structure <br>
+                        &nbsp;. FLEXBOX directions on footer styles <br>
+                        &nbsp;. ABOUT.HTML page, its header. <br>
+                        &nbsp;. SQUARE GRID html structure <br>
+                        &nbsp;. TWO COLUMNS with FlexBox and CSS GRID <br>
+                        &nbsp;. ABOUT.html, finalizing styles, organizing styles conforming best coding practices <br>
+                        &nbsp;. TWO COLUMN GRID onto Menu page <br>
+                        &nbsp;. CONTACT.html, creating, structure, ... <br>
+                        &nbsp;. CONTACT.html, layout with CSS GRID <br>
+                        &nbsp;. FORMs, TEXT AREAs and BUTTONS styles <br>
+                        &nbsp;. FORM ELEMENTS DROP SHADOW styles <br>
+                        &nbsp;. CUSTOM TEXT PLACEHOLDERS <br>
+                        &nbsp;. CONTACT.html, finalizing. <br><br>
+                        ### 7. Forms <br>
+                        &nbsp;. FORMS <br>
+                        &nbsp;. TEXT INPUT STYLES with CSS <br>
+                        &nbsp;. ANIMATIE FORM LABELS <br><br>
+                        ### 8. Advanced HTML <br>
+                        &nbsp;. HTML BULLET POINTS / NUMBERED LISTs <br>
+                        &nbsp;. ANCHOR TAGs in HTML <br><br>
+                        ### 9. Advanced CSS <br>
+                        &nbsp;. CSS 'Before' and 'After' pseudo selectors <br><br>
+                        ### 10. Responsive Design <br>
+                        &nbsp;. CSS MEDIA QUERIES <br>
+                        &nbsp;. RESPONSIVE STYLES, additions. <br>
+                        &nbsp;. RESPONSIVE STYLES t the SQUARE GRIDs, IMGs skew, and FORM ELEMENTS <br><br>
+                        # JavaScript Programming<br><br>
+                        ## Module 1: JavaScript Basics<br>
+                        &nbsp;. Analyzing the Various Versions of JavaScript <br>
+                        &nbsp;. Variables <br>
+                        &nbsp;. Key Difference Between Var and Let Variables Types <br>
+                        &nbsp;. JavaScript Hoisting <br>
+                        &nbsp;. Syntax for JavaScript Comments <br>
+                        &nbsp;. Comprehensive List of  Data Types <br>
+                        &nbsp;. JavaScript Objects <br>
+                        &nbsp;. How to Check for Data Types  <br>
+                        &nbsp;. How to Perform Type Casting  <br>
+                        &nbsp;. String Functions <br>
+                        &nbsp;. Arithmetic Operators <br>
+                        &nbsp;. Compound Assignment Operators in JavaScript <br>
+                        &nbsp;. Order of Operations in JavaScript <br><br>
+                        ## Module 2: JavaScript Conditionals<br>
+                        &nbsp;. Conditionals <br>
+                        &nbsp;. Basic Syntax for Using Conditionals <br>
+                        &nbsp;. If/Else Conditionals <br>
+                        &nbsp;. Compound Conditionals <br>
+                        &nbsp;. Switch Statement / Checking Data Types <br>
+                        &nbsp;. Ternary Operators <br><br>
+                        ## Module 3: JavaScript Functions<br>
+                        &nbsp;. Basic Syntax for Building Functions <br>
+                        &nbsp;. How Variable Scope Works <br>
+                        &nbsp;. Function Expressions VS Function Declarations <br>
+                        &nbsp;. Function Arguments <br>
+                        &nbsp;. Function Arguments: Reference vs Value <br>
+                        &nbsp;. Closures <br>
+                        &nbsp;. HTML Scripting with Built <br>
+                        &nbsp;. 'this' Keyword <br><br>
+                        ## Module 4: JavaScript Arrays and Data Structures<br>
+                        &nbsp;. Arrays in JavaScript <br>
+                        &nbsp;. Adding and Removing Array Elements <br>
+                        &nbsp;. Splice Function to Remove Specific Array Elements <br><br>
+                        ## Module 5: JavaScript Loops and Iterators<br>
+                        &nbsp;. For Loops <br>
+                        &nbsp;. Loop Through a JavaScript Object <br>
+                        &nbsp;. While and Do/While Loops <br><br>
+                        ## Module 6: Automating Tasks with JavaScript<br>
+                        &nbsp;. Automating Tasks in the Browser with JavaScript <br>
+                        &nbsp;. Running Google Search Queries in JavaScript <br>
+                        &nbsp;. Pull Images from websites  <br>
+                        &nbsp;. Auto Following Accounts and Hashtags on social networks <br><br>
+                        ## Essential Skills & Growth Mindset:<br><br>
+                        &nbsp;. Development Skills You Need <br>
+                        &nbsp;. Are Developers Born or Made? <br>
+                        &nbsp;. Can You Lose Your Coding Skills? <br>
+                        &nbsp;. Cramming vs Consistent Study <br>
+                        &nbsp;. How to Study Effectively <br>
+                        &nbsp;. Guide to Developer Soft Skills <br>
+                        &nbsp;. Discovering the Tipping Point <br><br>
+                        ## Learning Techniques:<br>
+                        &nbsp;. How to Learn a New Programming Language <br>
+                        &nbsp;. Getting Past Skill Plateaus <br>
+                        &nbsp;. How to Practice Programming Techniques <br>
+                        &nbsp;. How to Study and Understand Complex Topics <br>
+                        &nbsp;. How to Use Deep Work <br>
+                        &nbsp;. Is Reading Important for Developers? <br>
+                        &nbsp;. Guide to Memorization <br>
+                        &nbsp;. Slowing Down to Learn How to Code Faster <br>
+                        &nbsp;. Mental Models for Learning How to Code <br> 
+                        &nbsp;. Practical Ways to Use the Pomodoro Technique <br>
+                        &nbsp;. Development Study Tips: Reverse Note Taking <br>
+                        &nbsp;. Task Switching Costs for Developers <br>
+                        &nbsp;. The Power of Making Mistakes <br>
+                        &nbsp;. Learn How to Code from Scratch <br>
+                        &nbsp;. Developer Learning Curve <br>
+                        &nbsp;. Three Practical Approaches to Task Management <br>
+                        &nbsp;. Speed Reading for Developers <br>
+                        &nbsp;. From Copy Paste to Comprehension <br>
+                        &nbsp;. How to Break Through the Cycle of Procrastination   <br><br>
+                        ## Specific Skills & Concepts:<br><br>
+                        &nbsp;. Introduction to Asynchronous Method Calls <br>
+                        &nbsp;. An Introduction to AI <br>
+                        &nbsp;. Guide to the Model View Controller Architecture <br>
+                        &nbsp;. Object Oriented Inheritance Tutorial <br>
+                        &nbsp;. Guide to CSS Selectors <br>
+                        &nbsp;. Best Practices vs Creativity <br>
+                        &nbsp;. A Developer’s Guide to Content Delivery Networks (CDNs) <br>
+                        &nbsp;. What is Digital Literacy? <br>
+                        &nbsp;. Why do Digital and Coding Literacy Matter? <br>
+                        &nbsp;. Tech Terms and Concepts <br>
+                        &nbsp;. Digitization, Data, and Analytics <br>
+                        &nbsp;. Personality Types and Technical Careers <br>
+                        &nbsp;. What are Tech Careers? <br>
+                        &nbsp;. Tech Trends and Careers   <br><br>
+                        # Management Capabilities Index<br>
+                        ## Self-Management:<br>
+                        &nbsp;. How to Discover and Manage Your Strengths <br><br>
+                        ## Project Management:<br>
+                        &nbsp;. Agile Project Management <br><br>
+                        ## General Management:<br>
+                        &nbsp;. Learn Management Skills <br><br>
+                        ### Course Project evaluation: <br>
+                        &nbsp;. Creating a "Codepen.io-alike" homepage (THIS xD) <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                        Thank you so much!<br>
+                        Alexandr Gomez<br><br><br><br>
+                        2024, November.
+                    </span>
+                </div>
             </div>
         </div>
     </div>
-<script src="../js/egg.js"></script> 
-</body>
-<footer>
-    <div class="bodyFooter">
-        <button class="buttonFooter">
-            <span class="latoButton">Coding for </span>
-            <span class="bungeeButton">FUN </span>
-        </button>
-        <button class="buttonFooter">
-            <span class="latoButton">Coding to </span>
-            <span class="bungeeButton">LEARN </span>
-        </button>
-        <button class="buttonFooter">
-            <span class="latoButton">Coding to </span>
-            <span class="bungeeButton">IMPROVE</span>
-        </button>
-        <button class="buttonFooter">
-            <span class="latoButton">Coding for a </span>
-            <span class="bungeeButton">LIVING </span>
-        </button>
-    </div>
-    <div class="footerNone">
-        <div class="footerNone">2024 &copy Basque DevCamp</div>
-    </div>
-</footer>
+</body>        
+    <script src="../js/egg.js"></script>
+
+    <footer>
+        <div class="bodyFooter">
+            <button class="buttonFooter">
+                <span class="latoButton">Coding for </span>
+                <span class="bungeeButton">FUN </span>
+            </button>
+            <button class="buttonFooter">
+                <span class="latoButton">Coding to </span>
+                <span class="bungeeButton">LEARN </span>
+            </button>
+            <button class="buttonFooter">
+                <span class="latoButton">Coding to </span>
+                <span class="bungeeButton">IMPROVE</span>
+            </button>
+            <button class="buttonFooter">
+                <span class="latoButton">Coding for a </span>
+                <span class="bungeeButton">LIVING </span>
+            </button>
+        </div>
+        <div class="footerNone">
+            <div class="footerNone">2024 &copy; Basque DevCamp</div>
+        </div>
+    </footer>
 </html>
