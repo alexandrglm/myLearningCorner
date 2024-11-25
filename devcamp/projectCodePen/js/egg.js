@@ -10,14 +10,48 @@ function thisWorks() {
   alert('You\'ve found a secret! Get Ready!');
 }
 
+function theEnd() {
+  const divText = document.createElement('div');
+  const texto = "End.";
+  let i = 0;
+
+  divText.style.font = 'normal bold 40px/1 "Pixelify Sans"';
+  divText.style.textAlign = 'left';
+  divText.style.color = 'whitesmoke';
+  divText.style.textShadow = '5px 5px 5px black';
+  divText.style.position = 'fixed';
+  divText.style.top = '70%';
+  divText.style.left = '53%';
+  divText.style.transform = 'translate(-50%, -50%)';
+  divText.style.color = 'white';
+  divText.style.zIndex = '999999';
+  document.body.appendChild(divText);
+
+function letraALetra() {
+    if (i < texto.length) {
+      divText.textContent += texto.charAt(i);
+      i++;
+      setTimeout(letraALetra, 500);
+    }
+  }
+
+  letraALetra();
+}
+
+setTimeout(() => {
+  const gif = document.querySelector('.eggGif'); 
+  gif.classList.add('sonicLeaves');
+}, 91000);
+
+
+const getReady = document.querySelector('.getReady');
 const audio = document.querySelector('.eggAudio');
 const gif = document.querySelector('.eggGif');
 const scroll = document.querySelector('.scrollingFarewell');
 const eggContainer = document.querySelector('.egg');
-const playButton = document.querySelector('.playButton');
 const initialMessage = document.querySelector('.initialMessage');
 
-playButton.addEventListener('click', () => {
+getReady.addEventListener('click', () => {
   initialMessage.style.display = 'none';
   eggContainer.style.display = 'grid';
   audio.play();
@@ -27,9 +61,10 @@ playButton.addEventListener('click', () => {
   scroll.style.animation = 'none';
   void scroll.offsetWidth;
   scroll.style.animation = 'scrollUp 90s linear forwards';
+  setTimeout(theEnd, 88200); 
 });
 
-/* lluvia de estrellas (y logos) ! */
+/* estrellitas! */
 const itsRainingStars = document.querySelector('.itsRainingStars');
 const arrayStars = ['star1.png', 'star2.png', 'star3.png', 'star4.png', 'star5.png'];
 
@@ -75,7 +110,7 @@ setTimeout(() => {
 }, 87000);
 
 
-/* burbujas */
+// parallax bg bubbles
 const bubbleContainer = document.querySelector('.egg');
 
 function createBubble() {
@@ -113,3 +148,4 @@ function createBubble() {
 for (let i = 0; i < 40; i++) {
   createBubble();
 }
+
