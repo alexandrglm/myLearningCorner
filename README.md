@@ -17,7 +17,9 @@ The output should look something like this:
 - Accurate representation.
 
 ## Finished project preview:
-https://github.com/user-attachments/assets/77920693-8163-41e2-8e31-b803dc90dee6
+https://github.com/user-attachments/assets/80083fc6-4862-428e-a579-984f8324809a
 
 
+
+2024, November.
 2024, November.
