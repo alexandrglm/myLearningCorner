@@ -20,6 +20,7 @@
 }
 */
 
+
 /* header & header child elements */
 header {
   display: flex;
@@ -39,7 +40,7 @@ header {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  z-index: 1000;
+  z-index: 5000;
 }
 
 .navbarMenu {
@@ -534,7 +535,8 @@ body {
   overflow: hidden;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
   position: relative;
-  flex-grow: 1; 
+  flex-grow: 1;
+  /* & .bubble:nth-child(1) { background-color: red; box-shadow: 0 0 50px 20px rgba(255, 0, 0, 0.5); width: 50px; height: 50px;}  // pending but testing */
 }
 
 .egg::before {
@@ -616,7 +618,7 @@ body {
 }
 
 .sonicLeaves {
-  animation: fadeOut 3s forwards;
+  animation: fadeOut 2s forwards;
 }
 
 @keyframes fadeOut {
@@ -642,7 +644,7 @@ body {
 }
 
 .scrollingFarewell span {
-  font: normal bold 22px/1 'Pixelify Sans';
+  font: normal bold 24px/1 'Pixelify Sans';
   text-align: left;
   color: whitesmoke;
   text-shadow: 5px 5px 5px black;
