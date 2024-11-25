@@ -618,7 +618,7 @@ body {
 }
 
 .sonicLeaves {
-  animation: fadeOut 2s forwards;
+  animation: fadeOut 3s forwards;
 }
 
 @keyframes fadeOut {
