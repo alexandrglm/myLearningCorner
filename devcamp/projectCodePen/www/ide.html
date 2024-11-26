@@ -1,4 +1,18 @@
-<!DOCTYPE html>
+<!-- 2024, November, 26th:
+IDE hasn't been requested for the project but it gives chances to test many learnings
+On calificating process, please take in count that ide.html ide.js and ide.css may
+contain elements which can be incomplete or wrong.
+
+The actual files provided for calificating are:
+../www/index.html
+../www/egg.html
+../css/styles.css
+../js/main.js
+../js/egg.js
+../img/*
+
+Thanks. -->
+
 <html lang="eu-es">
 <head>
     <meta charset="UTF-8">
@@ -9,7 +23,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/ide.css">
     <link rel="icon" href="../img/logo-black.png" id="favicon">
     <title>Like "CodePen.io homepage" project</title>
 </head>
@@ -33,11 +47,26 @@
     </nav>
 </header>
 <body>
-    <div class="mainBody">
+    <div class="bodyIDE">
         <div class="mainIDE">
-            <div class="boxHTML"></div>
-            <div class="boxCSS"></div>
-            <div class="boxJS"></div>
+            <div class="boxHTML">
+                <div class="boxHTMLbar"></div>
+                <div class="boxHTMLcode">
+                    <input class="codeHTML" type="text">
+                </div>
+            </div>
+            <div class="boxCSS">
+                <div class="boxCSSbar"></div>
+                <div class="boxCSScode">
+                    <input class="codeCSS" type="text">
+                </div>
+            </div>
+            <div class="boxJS">
+                <div class="boxJSbar"></div>
+                <div class="boxJScode">
+                    <input class="codeHTML" type="text">
+                </div>
+            </div>
         </div>
     </div>
 </body>
@@ -46,7 +75,6 @@
         <div class="output"></div>
         <div class="console"></div>
     </div>
-    <div class="bodyFooter">
     </div>
     <div class="footerNone">2024 &copy Basque DevCamp</div>
 </footer>
