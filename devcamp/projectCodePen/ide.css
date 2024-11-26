@@ -1,0 +1,149 @@
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: black;
+  }
+
+.navbarMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.navbarRegularButton {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    border-radius: 0.15rem;
+    font: bold 1rem "Lato", sans-serif;
+    padding: 0.6rem 0.75rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+  
+}
+
+.navbarRegularButton:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+body {
+    background-image: radial-gradient(circle at top left, #353840, #141414);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin: 0;
+    min-height: 100vh;
+    /* min-width: 100vw; */
+    box-sizing: border-box;
+}
+
+/* IDE things */
+
+#projectIDE {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 5000;
+}
+  
+.logo2 img {
+    height: 2.5rem;
+}
+  
+.navbarIDE {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    z-index: 5000;
+}
+  
+.navbarIDE ul {
+    display: flex;
+    list-style: none;
+    align-items: flex-end;
+  
+}
+  
+.bodyIDE,
+
+.mainIDE {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    overflow: auto;
+    width: fixed;
+}
+
+.boxHTML,
+.boxCSS,
+.boxJS {
+    display: flex;
+    flex-direction: column;
+    width: calc(100%/3);
+    height: 100%;
+    border: 0.1em solid gray;
+}
+  
+.boxHTMLbar,
+.boxCSSbar,
+.boxJSbar {
+    border-bottom: 0.1em solid greenyellow;
+}
+  
+  
+  
+.boxHTMLcode,
+.boxCSScode,
+.boxJScode {
+    font: normal 1rem bold whitesmoke;
+    background-color: #333;
+    width: 100%;
+    height: 100%;
+    padding: 0.5em;
+    border: none;
+    resize: none;
+  
+}
+  
+  
+.mainOutput {
+    display: flex;
+    flex-direction: column;
+}
+  
+.mainOutput > .output {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 0.5em;
+    border: solid 0.1em gray;
+    white-space: pre-wrap;
+}
+
+.mainOutput > .console {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 0.5em;
+    border: solid 0.1em gray;
+    white-space: pre-wrap;
+}
+
+/* footer things (output / console / footerNone ) */
+.footerNone {
+    font-family: 'Bungee';
+    font-size: 0.6rem;
+    color:  #b3b3b3;
+    text-align: center;
+    padding: 0.1em 0;
+    z-index: -10;
+  }
