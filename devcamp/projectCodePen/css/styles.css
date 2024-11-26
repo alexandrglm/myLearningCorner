@@ -431,6 +431,7 @@ body {
   display: grid;
 }
 
+
 .fixedMargins {
   display: flex;
   background-image: linear-gradient(to bottom, black 40%, transparent);
@@ -479,6 +480,13 @@ body {
   }
 }
 
+.yourName { /* pending */
+  width: 30em;
+  height: 0.5em;
+  padding: 1.5em 1em;
+  font: normal 1.5rem 'Lato', sans-serif;
+  border-radius: 2em;
+}
 .getReady {
   font-family: 'Pixelify Sans', sans-serif;
   padding: 15px 30px;
@@ -529,7 +537,7 @@ body {
     radial-gradient(circle at 25% 35%, rgba(255, 255, 255, 0.2) 6px, transparent 16px);
   background-size: 300% 300%, 250% 250%, 300% 300%, 200% 200%, 300% 300%, 200% 200%, 300% 300%, 250% 250%, 300% 300%, 350% 350%, 300% 300%;
   background-position: top left, top right, bottom left, center, 60% 60%, 40% 20%, 80% 40%, 50% 80%, 10% 30%, 75% 85%, 30% 50%;
-  animation: wave 20s linear infinite alternate, move-bubbles 30s linear infinite;
+  animation: wave 20s linear infinite alternate, move-bubbles 99s linear infinite;
   width: 100%;
   height: 80vh;
   overflow: hidden;
@@ -618,7 +626,7 @@ body {
 }
 
 .sonicLeaves {
-  animation: fadeOut 3s forwards;
+  animation: fadeOut 1.5s forwards;
 }
 
 @keyframes fadeOut {
@@ -665,3 +673,4 @@ body {
     transform: translateY(-100%);
   }
 }
+
