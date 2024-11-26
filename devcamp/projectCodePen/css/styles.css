@@ -665,3 +665,43 @@ body {
     transform: translateY(-100%);
   }
 }
+
+/* IDE things */
+#projectIDE {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  z-index: 5000;
+}
+
+.logo2 img {
+  height: 2.5rem;
+}
+
+.navbarIDE {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  z-index: 5000;
+}
+
+.navbarIDE ul {
+  display: flex;
+  list-style: none;
+  
+}
+
+.mainIDE {
+  flex-grow: 1;
+  overflow: auto;
+
+}
+
+.mainOutput {
+  display: flex;
+  flex-direction: column;
+}
