@@ -1,3 +1,4 @@
+
 const favicon = document.getElementById('favicon');
 
 if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
@@ -9,6 +10,23 @@ if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
 function thisWorks() {
   alert('You\'ve found a secret! Get Ready!');
 }
+
+/* pending 
+const input = document.getElementsByClassName('yourName')[0].value;
+const greeting = 'Hey, ${yourName}, this is what we learned:'; 
+const spanGreetings = document.querySelector('.greetings');
+
+spanGreetings.textContent = greeting;
+greetingSpan.style.visibility = 'visible';
+greetingSpan.style.font = 'normal bold 24px/1 "Pixelify Sans"';
+greetingSpan.style.color = 'whitesmoke';
+greetingSpan.style.border = '1px solid black';
+
+setTimeout(() => {
+  greetingSpan.style.visibility = 'hidden';
+}, 5000);
+*/
+
 
 function theEnd() {
   const divText = document.createElement('div');
@@ -41,7 +59,7 @@ function letraALetra() {
 setTimeout(() => {
   const gif = document.querySelector('.eggGif'); 
   gif.classList.add('sonicLeaves');
-}, 91000);
+}, 88500);
 
 
 const getReady = document.querySelector('.getReady');
@@ -91,8 +109,7 @@ function starsShower() {
   const fallDuration = Math.random() * 5 + 5 + 's';
   const sparkleDuration = Math.random() * 2 + 1 + 's';
 
-  star.style.animation = `fall ${fallDuration} linear, 
-                          sparkle ${sparkleDuration} ease-in-out infinite`;
+  star.style.animation = `fall ${fallDuration} linear, sparkle ${sparkleDuration} ease-in-out infinite`;
 
   itsRainingStars.appendChild(star);
 
@@ -111,6 +128,7 @@ setTimeout(() => {
 
 
 // parallax bg bubbles
+
 const bubbleContainer = document.querySelector('.egg');
 
 function createBubble() {
@@ -148,4 +166,3 @@ function createBubble() {
 for (let i = 0; i < 40; i++) {
   createBubble();
 }
-
