@@ -1,35 +1,11 @@
+/* mains */
+
 header {
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
     justify-content: space-between;
     background-color: black;
-  }
-
-.navbarMenu {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
 }
-
-.navbarRegularButton {
-    background-color: transparent;
-    color: #fff;
-    border: none;
-    border-radius: 0.15rem;
-    font: bold 1rem "Lato", sans-serif;
-    padding: 0.6rem 0.75rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    white-space: nowrap;
-  
-}
-
-.navbarRegularButton:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-
 body {
     background-image: radial-gradient(circle at top left, #353840, #141414);
     display: flex;
@@ -37,28 +13,31 @@ body {
     justify-content: flex-start;
     align-items: stretch;
     margin: 0;
+    height: 100hv;
+    width: 100hv;
     min-height: 100vh;
     /* min-width: 100vw; */
     box-sizing: border-box;
 }
 
-/* IDE things */
+/* navbarIDE things */
 
-#projectIDE {
+#mainHeaderIDE {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     z-index: 5000;
 }
-  
+
 .logo2 img {
     height: 2.5rem;
 }
-  
+
+
 .navbarIDE {
     display: flex;
     flex-wrap: wrap;
@@ -67,22 +46,64 @@ body {
     width: 100%;
     z-index: 5000;
 }
-  
+
+
 .navbarIDE ul {
     display: flex;
     list-style: none;
     align-items: flex-end;
   
 }
+
+
+.navbarMenu {
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    flex-shrink: 1;
+    flex-grow: 1;
+    min-width: 120px;
+    padding-inline-end: 0.5rem;
+}
+
+.navbarRegularButton {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border: none;
+    border-radius: 0.15rem;
+    font: bold 1rem "Lato", sans-serif;
+    cursor: pointer;
+    transition: background-color 2s ease;
+    white-space: nowrap;
+    justify-content: space-between;
+    padding: 0.5em;
+    margin: 0.5em;
+    cursor: pointer;
+}
+
+.navbarRegularButton:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.fa-heart {
+    padding: 0.1em 0;
+}
+
+.fa-chevron {
+    display: inline-block;
+    margin-left: 2.5em;
+
+}
+
+/* IDE things */
+
   
 .bodyIDE,
 
 .mainIDE {
     display: flex;
-    flex-direction: row;
     flex-grow: 1;
-    overflow: auto;
-    width: fixed;
+    overflow-x: hidden;
 }
 
 .boxHTML,
@@ -91,7 +112,7 @@ body {
     display: flex;
     flex-direction: column;
     width: calc(100%/3);
-    height: 100%;
+    height: 90%;
     border: 0.1em solid gray;
 }
   
