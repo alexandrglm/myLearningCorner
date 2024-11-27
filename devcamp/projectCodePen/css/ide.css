@@ -6,17 +6,12 @@ header {
     justify-content: space-between;
     background-color: black;
 }
+
 body {
-    background-image: radial-gradient(circle at top left, #353840, #141414);
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: stretch;
     margin: 0;
-    height: 100hv;
-    width: 100hv;
-    min-height: 100vh;
-    /* min-width: 100vw; */
+    height: 100vh;
     box-sizing: border-box;
 }
 
@@ -24,37 +19,46 @@ body {
 
 #mainHeaderIDE {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
     width: 100%;
-    height: 100vh;
+    box-sizing: border-box;
     z-index: 5000;
+    margin: 1em 0 0 1em;
+    padding: -1em 1em;
 }
 
 .logo2 img {
     height: 2.5rem;
+    margin: 0 1em 0 0;
 }
 
+.projectData,
+
+.projectDataTitle,
+.projectDataSample {
+    color: whitesmoke;
+    margin: 0 0 0 1em;
+    font-size: 70%;
+    justify-content: flex-start;
+}
 
 .navbarIDE {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    z-index: 5000;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    width: auto;
 }
 
 
 .navbarIDE ul {
     display: flex;
     list-style: none;
-    align-items: flex-end;
-  
+    padding: 0;
+    margin: 0;
+    gap: 1em;
 }
-
 
 .navbarMenu {
     white-space: nowrap;
@@ -63,10 +67,11 @@ body {
     flex-shrink: 1;
     flex-grow: 1;
     min-width: 120px;
-    padding-inline-end: 0.5rem;
 }
 
 .navbarRegularButton {
+    display: flex;
+    align-items: center;
     background-color: rgba(255, 255, 255, 0.2);
     color: #fff;
     border: none;
@@ -76,9 +81,7 @@ body {
     transition: background-color 2s ease;
     white-space: nowrap;
     justify-content: space-between;
-    padding: 0.5em;
-    margin: 0.5em;
-    cursor: pointer;
+    padding: 0.5em 1em;
 }
 
 .navbarRegularButton:hover {
@@ -92,17 +95,21 @@ body {
 .fa-chevron {
     display: inline-block;
     margin-left: 2.5em;
+}
 
+.fa-table-list, .fa-thumbtack {
+    display: inline-block;
+    padding: 0.1em 0;
 }
 
 /* IDE things */
 
-  
 .bodyIDE,
-
 .mainIDE {
     display: flex;
     flex-grow: 1;
+    width: 100%;
+    box-sizing: border-box;
     overflow-x: hidden;
 }
 
@@ -110,56 +117,54 @@ body {
 .boxCSS,
 .boxJS {
     display: flex;
+    overflow: hidden;
     flex-direction: column;
+    flex: 1;
     width: calc(100%/3);
-    height: 90%;
+    height: 100%;
     border: 0.1em solid gray;
 }
-  
+
 .boxHTMLbar,
 .boxCSSbar,
 .boxJSbar {
     border-bottom: 0.1em solid greenyellow;
 }
-  
-  
-  
-.boxHTMLcode,
-.boxCSScode,
-.boxJScode {
-    font: normal 1rem bold whitesmoke;
+
+.boxHTMLcode input,
+.boxCSScode input,
+.boxJScode input {
+    font: normal 2rem;
+    color: whitesmoke;
     background-color: #333;
     width: 100%;
-    height: 100%;
-    padding: 0.5em;
+    height: 100vh; /* hay que ajustarlo manualmente */
+    padding: 2em;
     border: none;
-    resize: none;
   
 }
-  
-  
+
+
+
+/* footer things (output / console / footerNone ) */
 .mainOutput {
     display: flex;
     flex-direction: column;
+    height: 20%;
+    width: 100%;
+    border: 1px solid gray;
+    box-sizing: border-box;
 }
   
-.mainOutput > .output {
-    flex-grow: 1;
-    overflow-y: auto;
-    padding: 0.5em;
-    border: solid 0.1em gray;
-    white-space: pre-wrap;
-}
-
+.mainOutput > .output,
 .mainOutput > .console {
-    flex-grow: 1;
+    flex: 1;
     overflow-y: auto;
     padding: 0.5em;
-    border: solid 0.1em gray;
-    white-space: pre-wrap;
+    width: 500px;
+    border: 1px solid black;
+    box-sizing: border-box;
 }
-
-/* footer things (output / console / footerNone ) */
 .footerNone {
     font-family: 'Bungee';
     font-size: 0.6rem;
@@ -167,4 +172,4 @@ body {
     text-align: center;
     padding: 0.1em 0;
     z-index: -10;
-  }
+}
