@@ -25,6 +25,8 @@ Thanks. -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
     <link rel="stylesheet" href="../css/ide.css">
     <link rel="icon" href="../img/logo-black.png" id="favicon">
+    <link rel="script" href="https://cdnjs.cloudflare.com/ajax/libs/ace/1.36.5/ace.min.js" defer>
+    <link rel="script" href="../js/ide.js" defer>
     <title>Like "CodePen.io homepage" project</title>
 </head>
 <header>
@@ -58,30 +60,31 @@ Thanks. -->
         <div class="mainIDE">
             <div class="boxHTML">
                 <div class="boxHTMLbar"></div>
-                <div class="boxHTMLcode">
-                    <input class="codeHTML" type="text">
+                <div id="editorHTML" class="boxHTMLcode"> <!-- id prior against class testing-->
                 </div>
             </div>
             <div class="boxCSS">
                 <div class="boxCSSbar"></div>
-                <div class="boxCSScode">
-                    <input class="codeCSS" type="text">
+                <div id="editorCSS" class="boxCSScode">
                 </div>
             </div>
             <div class="boxJS">
                 <div class="boxJSbar"></div>
-                <div class="boxJScode">
-                    <input class="codeHTML" type="text">
+                <div id="editorJS" class="boxJScode">
                 </div>
             </div>
         </div>
     </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.36.5/ace.min.js"></script>
+<script src="../js/ide.js"></script>
 </body>
 <footer>
     <div class="mainOutput">
-        <div class="output"></div>
-        <div class="console"></div>
+        <div id="output" class="outputView"></div>
+        <div id="console" class="consoleView"></div>
     </div>
     <div class="footerNone">2024 &copy Basque DevCamp</div></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.36.5/ace.min.js"></script>
+<script src="../js/ide.js"></script>
 </footer>
 </html>
