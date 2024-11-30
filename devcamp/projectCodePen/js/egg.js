@@ -1,4 +1,4 @@
-
+// dark/light favicon
 const favicon = document.getElementById('favicon');
 
 if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
@@ -7,27 +7,12 @@ if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
   favicon.href = '../img/logo-black.png';
 }
 
+// fake buttons action
 function thisWorks() {
   alert('You\'ve found a secret! Get Ready!');
 }
 
-/* pending 
-const input = document.getElementsByClassName('yourName')[0].value;
-const greeting = 'Hey, ${yourName}, this is what we learned:'; 
-const spanGreetings = document.querySelector('.greetings');
-
-spanGreetings.textContent = greeting;
-greetingSpan.style.visibility = 'visible';
-greetingSpan.style.font = 'normal bold 24px/1 "Pixelify Sans"';
-greetingSpan.style.color = 'whitesmoke';
-greetingSpan.style.border = '1px solid black';
-
-setTimeout(() => {
-  greetingSpan.style.visibility = 'hidden';
-}, 5000);
-*/
-
-
+// sonic leaves logic
 function theEnd() {
   const divText = document.createElement('div');
   const texto = "End.";
@@ -45,6 +30,7 @@ function theEnd() {
   divText.style.zIndex = '999999';
   document.body.appendChild(divText);
 
+// the end function
 function letraALetra() {
     if (i < texto.length) {
       divText.textContent += texto.charAt(i);
@@ -61,7 +47,7 @@ setTimeout(() => {
   gif.classList.add('sonicLeaves');
 }, 88500);
 
-
+// get ready timers and logic
 const getReady = document.querySelector('.getReady');
 const audio = document.querySelector('.eggAudio');
 const gif = document.querySelector('.eggGif');
@@ -72,6 +58,7 @@ const initialMessage = document.querySelector('.initialMessage');
 getReady.addEventListener('click', () => {
   initialMessage.style.display = 'none';
   eggContainer.style.display = 'grid';
+  audio.currentTime = 0; 
   audio.play();
   gif.style.display = 'block';
   scroll.style.visibility = 'visible';
@@ -79,11 +66,42 @@ getReady.addEventListener('click', () => {
   scroll.style.animation = 'none';
   void scroll.offsetWidth;
   scroll.style.animation = 'scrollUp 90s linear forwards';
+
+  const input = document.getElementsByClassName('yourName')[0]; 
+  const yourName = input.value.trim(); 
+  const greetingSpan = document.querySelector('.greetings');
+
+  if (yourName) { 
+    const greeting = `Hey, ${yourName}, even the admon. thought they were so clever mocking me, but turns out I had the last laugh:`;
+    greetingSpan.textContent = greeting;
+    greetingSpan.style.visibility = 'visible';
+    greetingSpan.style.font = 'normal bold 1.5rem "Pixelify Sans"'; 
+    greetingSpan.style.backgroundImage = 'linear-gradient(to right, #ff5757, #ff9a3c, #ffd43b, #73e25d, #5dbbff, #857dff, #ff57cf)';
+    greetingSpan.style.border = 'solid 1px whitesmoke;'
+    greetingSpan.style.padding = '0.5em 0.5em';
+    greetingSpan.style.webkitBackgroundClip = 'text';
+    greetingSpan.style.webkitTextFillColor = 'transparent';
+    greetingSpan.style.animation = 'sparkle 2s ease-in-out infinite';
+    greetingSpan.style.opacity = '1';
+    greetingSpan.style.transition = 'opacity 1s ease-in-out';
+
+    setTimeout(() => {
+      greetingSpan.style.animation = 'none'; 
+      void greetingSpan.offsetWidth; 
+      greetingSpan.style.opacity = '0';
+      setTimeout(() => {
+        greetingSpan.style.visibility = 'hidden';
+      }, 1000);
+    }, 8000);
+  }
+
   setTimeout(theEnd, 88200); 
 });
 
+
 /* estrellitas! */
 const itsRainingStars = document.querySelector('.itsRainingStars');
+itsRainingStars.style.zIndex = '1000000';
 const arrayStars = ['star1.png', 'star2.png', 'star3.png', 'star4.png', 'star5.png'];
 
 let starsInterval;
