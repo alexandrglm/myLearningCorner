@@ -77,7 +77,6 @@ getReady.addEventListener('click', () => {
     greetingSpan.style.visibility = 'visible';
     greetingSpan.style.font = 'normal bold 1.5rem "Pixelify Sans"'; 
     greetingSpan.style.backgroundImage = 'linear-gradient(to right, #ff5757, #ff9a3c, #ffd43b, #73e25d, #5dbbff, #857dff, #ff57cf)';
-    greetingSpan.style.border = 'solid 1px whitesmoke;'
     greetingSpan.style.padding = '0.5em 0.5em';
     greetingSpan.style.webkitBackgroundClip = 'text';
     greetingSpan.style.webkitTextFillColor = 'transparent';
@@ -146,7 +145,6 @@ setTimeout(() => {
 
 
 // parallax bg bubbles
-
 const bubbleContainer = document.querySelector('.egg');
 
 function createBubble() {
