@@ -1,4 +1,4 @@
-/*
+/* removed, used for debugging with different resolutions.
 @media (max-width: 640px) {
   .createButton, .accountThings {
     padding: 0.3rem 0.4rem;
@@ -19,7 +19,6 @@
   }
 }
 */
-
 
 /* header & header child elements */
 header {
@@ -192,7 +191,6 @@ body {
   margin: -0.5em 0 -0.5em 0;
   padding: 20px;
   flex-grow: 1;
-  width: fixed;
   max-width: 100%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
@@ -480,12 +478,22 @@ body {
   }
 }
 
-.yourName { /* pending */
+.yourName {
   width: 30em;
   height: 0.5em;
   padding: 1.5em 1em;
   font: normal 1.5rem 'Lato', sans-serif;
   border-radius: 2em;
+  margin: 0 0 5em 0;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.yourName:focus { 
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }
 .getReady {
   font-family: 'Pixelify Sans', sans-serif;
@@ -673,4 +681,3 @@ body {
     transform: translateY(-100%);
   }
 }
-
