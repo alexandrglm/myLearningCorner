@@ -22,6 +22,7 @@ var editorJS = ace.edit("editorJS");
 editorJS.setTheme("ace/theme/monokai");
 editorJS.session.setMode("ace/mode/javascript");
 
+/* pending redefining how to implement an output console and html/css/js viewer
 const OutputLogic = document.getElementById('output');
 const ConsoleLogic = document.getElementById('console');
 
@@ -37,9 +38,9 @@ try {
     const jsCode = editorJS.getValue();
 
     const iframe = document.createElement('iframe');
-    document.body.appendChild(iframe); 
+    document.body.appendChild(iframe);
     iframe.contentWindow.document.open();
-    iframe.contentWindow.document.write(` 1 
+    iframe.contentWindow.document.write(` 1
         <!DOCTYPE html>
         <html>
         <head>
@@ -55,9 +56,12 @@ try {
 
     setTimeout(() => {
         OutputLogic.innerHTML = iframe.contentWindow.document.body.innerHTML;
-    }, 1000); 
+    }, 1000);
 } catch (error) {
     console.error(error);
 } finally {
     console.log = consoleLogic;
 }
+*/
+
+
