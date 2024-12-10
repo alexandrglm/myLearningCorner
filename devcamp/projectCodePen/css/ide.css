@@ -60,15 +60,6 @@ body {
     gap: 1em;
 }
 
-.navbarMenu {
-    white-space: nowrap;
-    display: flex;
-    align-items: center;
-    flex-shrink: 1;
-    flex-grow: 1;
-    min-width: 120px;
-}
-
 .navbarRegularButton {
     display: flex;
     align-items: center;
@@ -142,26 +133,21 @@ body {
 }
 
 /* footer things (output / console / footerNone ) */
-
- * .mainOutput {
+ .mainOutput {
     display: flex;
-    flex-direction: column;
-    height: 20%;
+    height: 100%;
     width: 100%;
     border: 1px solid gray;
     box-sizing: border-box;
 }
-
-.mainOutput > .output,
-.mainOutput > .console {
+.mainOutput > #return {
     flex: 1;
     overflow-y: auto;
     padding: 0.5em;
-    width: 500px;
+    width: 800px;
     border: 1px solid black;
     box-sizing: border-box;
 }
-
 .footerNone {
     font-family: 'Bungee';
     font-size: 0.6rem;
