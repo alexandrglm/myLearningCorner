@@ -8,7 +8,11 @@
 
 ## ACE - AJAX Cloud9 Editor  
 **License:** BSD Simplified  
-[Source](https://github.com/ajaxorg/ace/blob/master/LICENSE)  
+[Source](https://github.com/ajaxorg/ace/blob/master/LICENSE) 
+
+## jQuery
+**License:** MIT license
+[Source](https://jquery.com/license/) 
 
 ### Disclaimer
 **CodePen.io stuff (images, logos, ...)**, belonging to their respective owners, are used  
