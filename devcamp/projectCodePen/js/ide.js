@@ -10,37 +10,89 @@ function thisWorks() {
     alert('This action works! ');
 }
 
+
+// ACE config method: setOptions + placeholder method is .insert
+// js trim method for parsing with no erros
 var editorHTML = ace.edit("editorHTML");
-editorHTML.setTheme("ace/theme/monokai");
-editorHTML.session.setMode("ace/mode/html");
+
+editorHTML.setOptions({
+    mode:   'ace/mode/html',
+    theme:  'ace/theme/monokai',
+    wrap:   true,
+    useWorker:  true
+});
+editorHTML.insert(`<div id="testing">
+    <h1> Hello world in green</h1>
+    <h1 class="testing2">Hello World in blue</h1>
+    <h1> Hello world as :nth-child in yellow</h1>
+</div>
+<div>
+    <ul><button class="testing3" onclick="action()">This button rules</button></ul>
+</div>`.trim());
 
 var editorCSS = ace.edit("editorCSS");
-editorCSS.setTheme("ace/theme/monokai");
-editorCSS.session.setMode("ace/mode/css");
+editorCSS.setOptions({
+    mode:   'ace/mode/css',
+    theme:  'ace/theme/monokai',
+    wrap:   true,
+    useWorker:  true
+});
+editorCSS.insert(`#testing {
+    font: normal 1rem 'Verdana', sans-serif;
+    color: green;
+}
+
+#testing > .testing2 {
+    color: blue;
+}
+
+#testing h1:nth-child(3) {
+    font-size: 0.8rem;
+    color: yellow
+}`.trim());
 
 var editorJS = ace.edit("editorJS");
-editorJS.setTheme("ace/theme/monokai");
-editorJS.session.setMode("ace/mode/javascript");
+editorJS.setOptions({
+    mode:   'ace/mode/javascript',
+    theme:  'ace/theme/monokai',
+    wrap:   true,
+    useWorker:  true
+});
+editorJS.insert(`function action() {
+    alert("This button rules!");
+}`.trim())
 
 
 function runCode() {
-    var html = editorHTML.getValue()
-    var css = editorCSS.getValue()
-    var js = editorJS.getValue()
+    var html = editorHTML.getValue();
+    var htmlTrimASVarNotAsMethod = html.trim()  
+    var css = editorCSS.getValue();
+    var js = editorJS.getValue();
 
-    var srcdoc = `
-    <!DOCTYPE html>
-    <html>
-    <head>
-        <style>${css}</style>
-    </head>
-    <body>
-        ${html}
-    <script>${js}</script>
-    </body>
-    </html>
-    `;
+    var hasHTMLStructure = /<html[\s\S]*?>|<!doctype[\s\S]*?>/i.test(htmlTrimASVarNotAsMethod);
+    
+    var srcdoc;
+    if (hasHTMLStructure) {
+        srcdoc = htmlTrimASVarNotAsMethod.replace(
+            /<head[\s\S]*?>/i,
+            (match) => `${match}\n<style>${css.trim()}</style>`
+        ).replace(
+            /<body[\s\S]*?>/i,
+            (match) => `${match}\n<script>${js.trim()}<\/script>`
+        );
+    } else {
+        srcdoc = `
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <style>${css.trim()}</style>
+        </head>
+        <body>
+            ${htmlTrimASVarNotAsMethod}
+            <script>${js.trim()}<\/script>
+        </body>
+        </html>`;
+    }
 
     $('#return').attr('srcdoc', srcdoc);
-    console.log("DEBUG: return works")
 }
