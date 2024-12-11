@@ -320,6 +320,11 @@ body {
   color: #6ad4f8;
 }
 
+.bodyPart2 > p > strong:hover {
+  color: greenyellow;
+  cursor: pointer;
+}
+
 .bodyPart2 > .exampleWithShadowBox {
   height: auto;
   width: 66%;
