@@ -12,7 +12,8 @@ function thisWorks() {
   alert('You\'ve found a secret! Get Ready!');
 }
 
-// sonic leaves logic
+
+// the end function
 function theEnd() {
   const divText = document.createElement('div');
   const texto = "End.";
@@ -30,7 +31,7 @@ function theEnd() {
   divText.style.zIndex = '999999';
   document.body.appendChild(divText);
 
-// the end function
+
 function letraALetra() {
     if (i < texto.length) {
       divText.textContent += texto.charAt(i);
@@ -45,7 +46,7 @@ function letraALetra() {
 setTimeout(() => {
   const gif = document.querySelector('.eggGif'); 
   gif.classList.add('sonicLeaves');
-}, 88500);
+}, 90000);
 
 // get ready timers and logic
 const getReady = document.querySelector('.getReady');
@@ -70,9 +71,9 @@ getReady.addEventListener('click', () => {
   const input = document.getElementsByClassName('yourName')[0]; 
   const yourName = input.value.trim(); 
   const greetingSpan = document.querySelector('.greetings');
-
-  if (yourName) { 
-    const greeting = `Hey, ${yourName}, even the admon. thought they were so clever mocking me, but turns out I had the last laugh:`;
+  const greeting = yourName ? `Hey, ${yourName} , even the admon. thought they were so clever mocking me, but turns out I had the last laugh:` : 'Hey, even the admon. thought they were so clever mocking me, but turns out I had the last laugh:';
+    
+  if (greeting) {
     greetingSpan.textContent = greeting;
     greetingSpan.style.visibility = 'visible';
     greetingSpan.style.font = 'normal bold 1.5rem "Pixelify Sans"'; 
