@@ -1,5 +1,23 @@
-<!DOCTYPE html>
-<html lang="eu-es">
+<!-- 
+2024, Dec. 11th:
+IDE created using ACE standalone with an iframe output, no console.
+
+2024, November, 26th:
+IDE hasn't been requested for the project but it gives chances to test many learnings
+On calificating process, please take in count that ide.html ide.js and ide.css may
+contain elements which can be incomplete or wrong.
+
+The actual files provided for calificating are:
+../www/index.html
+../www/egg.html
+../css/styles.css
+../js/main.js
+../js/egg.js
+../img/*
+
+Thanks. -->
+<!DOCTYPE HTML>
+<html lang="eu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,77 +27,59 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/ide.css">
     <link rel="icon" href="../img/logo-black.png" id="favicon">
+    <link rel="script" href="https://cdnjs.cloudflare.com/ajax/libs/ace/1.36.5/ace.min.js" defer>
+    <link rel="script" href="../js/ide.js" defer>
     <title>Like "CodePen.io homepage" project</title>
 </head>
 <header>
-    <nav id="navheader">
-        <div class="logo">
-            <img src="../img/codepen-wordmark-display-inside-white@10x.png" alt="CodePen Logo">
+    <nav id="mainHeaderIDE">
+        <div class="logo2">
+            <img src="../img/logo-white.png" alt="CodePen Logo" onclick="window.location.href='./index.html'">
         </div>
-
-        <div class="navbarMenu">
-            <div class="exploreSemiLine">
-                <p>EXPLORE</p>
-            </div>
-            <ul>
-                <li><button class="navbarRegularButton" onclick="thisWorks()">Pens</button></li>
-                <li><button class="navbarRegularButton" onclick="thisWorks()">Projects</button></li>
-                <li><button class="navbarRegularButton" onclick="thisWorks()">Posts</button></li>
-                <li><button class="navbarRegularButton" onclick="thisWorks()">Collections</button></li>
-                <li><button class="sparkDropdown" onclick="thisWorks()">Spark<i class="fa fa-chevron-down"></i></button></li>
-            </ul>
+        <div class="projectData">
+                <h3 class="bold"> Project Data Title sample</h3>
+                <h3>Project Data Author sample</h3>
         </div>
-
-        <div class="navbarMenu2">
+        <div class="navbarIDE">
             <ul>
-                <li><button class="createButton" onclick="thisWorks()">Create<i class="fa fa-chevron-down"></i></button></li>
-                <li><button class="searchButton" ><i class="fa fa-search" onclick="thisWorks()"></i></button></li>
-                <li><button class="accountThings" onclick="thisWorks()">Log In</button></li>
-                <li><button class="accountThings" onclick="thisWorks()">Sign Up</button></li>
+                <li><button class="navbarRegularButton" onclick="thisWorks()" aria-label="Like this code"><i class="fa-solid fa-heart"></i></button></li>
+                <li><button class="runButton" onclick="runCode()" aria-label="Run the code"><i class="fa-solid fa-rotate-right"></i><span>Run</span></button></li>
+                <li><button class="navbarRegularButton" onclick="thisWorks()" aria-label="Save this code"><i class="fa-solid fa-cloud"></i>Save<i class="fa fa-chevron-down"></i></button></li>
+                <li><button class="navbarRegularButton" onclick="thisWorks()" aria-label="Settings"><i class="fa-solid fa-gear"></i>Settings</button></li>
+                <li><button class="navbarRegularButton" onclick="thisWorks()" aria-label="Change this view"><i class="fa-solid fa-table-list"></i></button></li>
+                <li><button class="navbarRegularButton" onclick="thisWorks()" aria-label="Pin this code"><i class="fa-solid fa-thumbtack"></i><i class="fa fa-chevron-down"></i></button></li>
+                <li><button class="navbarRegularButton" onclick="thisWorks()" aria-label="The codepen profile logo">ProfileLogo</button></li>
             </ul>
         </div>
     </nav>
 </header>
-<body class="easter">
-    <div class="mainBody">
-        <div class="bodyPart1">
-            <p>is a <strong>Social development environment</strong> for front-end designers and developers. &#128075</p>
-            <div class="bodyPart1B">
-                <p>It's the best place to build and deploy a website, show off your work, build test cases, and find inspiration.</p>
+<body>
+    <div class="bodyIDE">
+        <div class="mainIDE">
+            <div class="boxHTML">
+                <div class="boxHTMLbar"></div>
+                <div id="editorHTML" class="boxHTMLcode"></div>
             </div>
-            <div class="bodyButtons">
-                <button class="signUpBodyButton" onclick="thisWorks()">Sign Up for Free</button>
-                <button class="learnMore" onclick="window.location.href='./egg.html';">Learn More</button>
+            <div class="boxCSS">
+                <div class="boxCSSbar"></div>
+                <div id="editorCSS" class="boxCSScode"></div>
+            </div>
+            <div class="boxJS">
+                <div class="boxJSbar"></div>
+                <div id="editorJS" class="boxJScode"></div>
             </div>
         </div>
-            <div class="bodyPart2">
-                <p>This is <strong>CodePen Projects</strong>!</p>
-                <img class="exampleWithShadowBox" src="../img/lmr7a8E.png" alt="CodePen Example" onclick="window.location.href='./egg.html';">
-            </div>
     </div>
-    <script src="../js/main.js"></script>
 </body>
 <footer>
-    <div class="bodyFooter">
-        <button class="buttonFooter" onclick="thisWorks()">
-            <span class="latoButton">CodePen for </span>
-            <span class="bungeeButton">TEAMS </span>
-        </button>
-        <button class="buttonFooter" onclick="thisWorks()">
-            <span class="latoButton">CodePen for </span>
-            <span class="bungeeButton">EDUCATION </span>
-        </button>
-        <button class="buttonFooter" onclick="thisWorks()">
-            <span class="latoButton">CodePen for </span>
-            <span class="bungeeButton">PRIVACY </span>
-        </button>
-        <button class="buttonFooter" onclick="thisWorks()">
-            <span class="latoButton">CodePen for </span>
-            <span class="bungeeButton">WRITING </span>
-        </button>
+    <div class="mainOutput">
+        <iframe id="return"></iframe>
     </div>
-    <div class="footerNone">2024 &copy Basque DevCamp</div>
+<div class="footerNone">2024 &copy Basque DevCamp</div></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.36.5/ace.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="../js/ide.js"></script>
 </footer>
 </html>
