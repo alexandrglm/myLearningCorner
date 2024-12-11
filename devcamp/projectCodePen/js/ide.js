@@ -11,8 +11,7 @@ function thisWorks() {
 }
 
 
-// ACE config method: setOptions + placeholder method is .insert
-// js trim method for parsing with no erros
+// ACE config method: setOption
 var editorHTML = ace.edit("editorHTML");
 
 editorHTML.setOptions({
