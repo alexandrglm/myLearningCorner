@@ -1,4 +1,9 @@
 <!-- 
+2024, dec. 11th:
+PENDING: 
+- Body plus footer dinamic sizebars
+- BoxLANG bars.
+
 2024, dec. 10th:
 PENDING: 
 - Fixes for the navBar styles 
@@ -24,6 +29,7 @@ The actual files provided for calificating are:
 
 Thanks. -->
 
+<!DOCTYPE HTML>
 <html lang="eu">
 <head>
     <meta charset="UTF-8">
@@ -46,17 +52,13 @@ Thanks. -->
             <img src="../img/logo-white.png" alt="CodePen Logo">
         </div>
         <div class="projectData">
-            <div class="projecDataTitle">
-                <h1> Project Data Title sample</h1>
-            </div>
-            <div class="projectDataAuthor">
+                <h3 class="bold"> Project Data Title sample</h3>
                 <h3>Project Data Author sample</h3>
-            </div>
         </div>
         <div class="navbarIDE">
             <ul>
                 <li><button class="navbarRegularButton" onclick="thisWorks()" aria-label="Like this code"><i class="fa-solid fa-heart"></i></button></li>
-                <li><button class="navbarRegularButton" onclick="runCode()" aria-label="Run the code"><i class="fa-solid fa-rotate-right"></i><span>Run</span></button></li>
+                <li><button class="runButton" onclick="runCode()" aria-label="Run the code"><i class="fa-solid fa-rotate-right"></i><span>Run</span></button></li>
                 <li><button class="navbarRegularButton" onclick="thisWorks()" aria-label="Save this code"><i class="fa-solid fa-cloud"></i>Save<i class="fa fa-chevron-down"></i></button></li>
                 <li><button class="navbarRegularButton" onclick="thisWorks()" aria-label="Settings"><i class="fa-solid fa-gear"></i>Settings</button></li>
                 <li><button class="navbarRegularButton" onclick="thisWorks()" aria-label="Change this view"><i class="fa-solid fa-table-list"></i></button></li>
@@ -88,7 +90,7 @@ Thanks. -->
     <div class="mainOutput">
         <iframe id="return"></iframe>
     </div>
-    <div class="footerNone">2024 &copy Basque DevCamp</div></div>
+<div class="footerNone">2024 &copy Basque DevCamp</div></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.36.5/ace.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="../js/ide.js"></script>
