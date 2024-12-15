@@ -20,7 +20,7 @@ editorHTML.setOptions({
     wrap:   true,
     useWorker:  true
 });
-editorHTML.insert(` <!--- Place your code here, or give a try running this example --->
+editorHTML.insert(` <!--- Place your code here, or give a try by running this example --->
 <div id="testing">
     <h1> Hello world in green</h1>
     <h1 class="testing2">Hello World in blue</h1>
