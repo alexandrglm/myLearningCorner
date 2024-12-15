@@ -20,7 +20,8 @@ editorHTML.setOptions({
     wrap:   true,
     useWorker:  true
 });
-editorHTML.insert(`<div id="testing">
+editorHTML.insert(` <!--- Place your code here, or give a try running this example --->
+<div id="testing">
     <h1> Hello world in green</h1>
     <h1 class="testing2">Hello World in blue</h1>
     <h1> Hello world as :nth-child in yellow</h1>
@@ -36,7 +37,8 @@ editorCSS.setOptions({
     wrap:   true,
     useWorker:  true
 });
-editorCSS.insert(`#testing {
+editorCSS.insert(`   // Test your CSS code here
+#testing {
     font: normal 1rem 'Verdana', sans-serif;
     color: green;
 }
@@ -57,9 +59,12 @@ editorJS.setOptions({
     wrap:   true,
     useWorker:  true
 });
-editorJS.insert(`function action() {
+editorJS.insert(`/*
+Here you can type and test your JS code
+*/
+function action() {
     alert("This button rules!");
-}`.trim())
+}`.trim());
 
 
 function runCode() {
