@@ -1,7 +1,7 @@
 # OpenBootcamp - JavaSE Basics  
 ## Course Content
   
-### [ ] Module 1: Concepts  
+### [X] Module 1: Concepts  
   
   #### Unit 1.1: Development Environment  
   - 1.1.1 [ ]  Hello World  
