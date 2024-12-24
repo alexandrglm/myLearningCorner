@@ -198,8 +198,9 @@ console.log(car.year < 2012 ? `Car: ${car.year} is older` : `Car: ${car.year} is
 ```
 ***
 
+# CONTROL STRUCTURES
 
-# 🔸 CONDITIONALS
+## 🔸 CONDITIONALS
 
 ### ⚡ Ternary operator:
 ```ts
