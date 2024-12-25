@@ -19,8 +19,8 @@ Abstract:
 # 🔸 TS Best Practices (2) ✅✅✅
 
 ### ✅✅✅		Code is easy to be understood  
-- By giving self-explicative names to vars, functions, ...  
-- Var, values, params., functions,... anything follows a clear way to be named.  
+- ✅	By giving self-explicative names to vars, functions, ...  
+- ✅	Var, values, params., functions,... anything follows a clear way to be named.  
 ```text
 This is **camelCase** typing ✅  
 And this is **snake_Case** typing ✅ 
@@ -29,7 +29,7 @@ But this is **aproblematicwayoftypingtobeavoided** ❌
 ```
    
 
-- By using **JSDoc** method:
+- ✅	By using **JSDoc** method:
 
 ```ts
 /**
@@ -110,7 +110,7 @@ Make sure to define optional parameters, default values, and variable-length par
 
 
 ### ✅ 	Arrow Functions and Callbacks:  
-Use arrow functions and anonymous functions to write more concise code and handle callback functions more efficiently.  
+Use of arrow functions and anonymous functions to get a more concise code and handle callback functions more efficiently.  
 ```ts
 let employee = {
     name6: "Pepe",
@@ -133,11 +133,11 @@ There are 2 kind of "family" scooping, one of which was deprecated since ECMA6, 
 2. **Global** Scope  
 
 #### ⚡ (DEPRECATED) Block scope:  
-Since ES6 (2015) introduced `let`and `const` keywords, these two keywords are which provide the Block Scope, so:  
+Since ECMA6 (2015) introduced `let`and `const` keywords, these two keywords are which provide the Block Scope, so:  
 
-- Variables declared with the var keyword ❌**can NOT**❌ have block scope.
+- Variables declared with the `var` keyword ❌**can NOT**❌ have block scope.
 
-- Variables declared inside a { } block ✅**CAN**✅ be accessed from outside the block.
+- Variables declared inside a `{ } block` ✅**CAN**✅ be accessed from outside the block.
   
 - Variables `{ inside a block}` ❌cannot❌ be accesed  from outside it.
 ```ts
