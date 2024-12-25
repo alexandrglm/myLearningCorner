@@ -137,7 +137,149 @@ function myFunction() {
 }
 ```
 
-## Functions
+# 🔸 Functions  
+> Function: A block of code designed to perform an action.
+
+A simple schema:
+```ts
+function name(parameter1: type, parameter2: type, parameter3: type): type {
+  // code to be executed here
+}
+
+function name(); // The invocation
+```
+***
+## Function Definitions
+
+### ⚡ Function Declarations
+A shown in the previous schema, declared functions always has the shown structure, **starting with a FUNCTION CONSTRUCTOR()**.  
+
+Declared functions are not executed immediately. They are "saved for later use", and will be executed later, when they are invoked (called upon).  
+
+
+### ⚡ Function Expressions  
+But, a function can also be defined using a **expression**:
+```ts
+const x = function (a, b) {return a * b};
+```
+  
+After a function expression has been stored in a variable, the variable can be used as a function:
+```ts
+const x = function (a, b) {return a * b};
+let z = x(4, 3); // 
+```
+  
+  
+- A function expression is an **anonymous** function (An unnamed function).  
+- Functions stored in variables do not need function names. They are always invoked (called) using the variable name.  
+
+
+
+
+### ⚡ Function Hoisting
+Hoisting is the default behaviour of **moving declarations to the top of its current scoope**.  
+
+Code hoisting applies to variable and functions declarations, but not to functions expressions.
+
+That's why a function can be called **before** it has been declared. E.g.:
+```ts
+myFunction(5);
+
+function myFunction(y) {
+  return y * y;
+} 
+```
+
+
+### ⚡ Self-Invoking functions  
+Function expressions can be self-invoked.   
+
+A self-invoking expression is invoked (started) automatically, without being called.
+
+Function expressions will execute automatically when the expression is followed by the constructor **()**.
+
+You have to add parentheses around the function to indicate that it is a function expression:
+```ts
+(function () {
+  let x = "Hello!!";
+})(); // The () ending invokes the function
+```
+
+
+### ⚡ Functions as Values
+A function can be used as a value:  
+```ts
+function myFunction(a, b) {
+  return a * b;
+}
+
+let x = myFunction(4, 3); // myFunction is being used as the 'x' variable value
+```
+  
+Also, a function can be used as a expression:  
+```ts
+function myFunction(a, b) {
+  return a * b;
+}
+
+let x = myFunction(4, 3) * 2; // The expression is ( myFunction(4, 3) plus the rest ) 
+```
+
+### ⚡ Functions as Objects (using methods)  
+The `typeof` operator returns "function" for functions.  
+
+But, functions can best be described as objects.
+
+Functions have both `properties` and `methods`.
+
+- *arguments*.**length** property returns the number of arguments received when the function was invoked:
+```ts
+function myFunction(a, b) {
+  return arguments.length;
+} 
+```
+  
+- **toString()** method returns the function as a string:
+```ts
+function myFunction(a, b) {
+  return a * b;
+}
+
+let text = myFunction.toString(); 
+```
+
+To clarify this,:
+
+>- A function defined as the property of an object, is called a method to the object.  
+>
+>- A function designed to create new objects, is called an object constructor.~
+
+### ⚡ Arrow functions  
+Allows a **short syntax** for the function expression. 
+```ts
+// ES5 and earlier
+var x = function(x, y) {
+  return x * y;
+}
+
+// Since ES6
+const x = (x, y) => x * y;
+```
+
+But, ... :
+1. Arrow functions do not let their own **this** keyword, so that they are **not well suited for defining object methods**.
+
+2. Arrow functions **are not hoisted**. They **must be defined before** they are used.
+
+3. A function expression **is always a constant** so that avoiding the use of variables makes the sense.
+
+4. You can only omit the return keyword and the curly brackets if the function is a single statement. Because of this, it might be a good habit to always keep them:
+```ts
+const x = (x, y) => { return x * y };
+```
+*** 
+
+
 
 ```ts
 function greeting(){
