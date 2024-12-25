@@ -4,7 +4,7 @@
 ### ⚡ What's Java?  
 Java is a robust and versatile object-oriented programming language (OOP) introduced in 1995 by Sun Microsystems (now, since 2009, Sun Microsystems was adquired by its new owner, Oracle), aimed to be run on almost-any kind of device.  
   
-Therefore, many other languages like C#, dotNET, have been beign created to face the Java dominance as its competitors.  
+Therefore, many other languages like C#, dotNET, started to be created to face the Java dominance as its competitors.  
 
 
 
