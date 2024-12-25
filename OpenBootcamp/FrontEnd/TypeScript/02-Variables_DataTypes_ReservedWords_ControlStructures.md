@@ -59,12 +59,14 @@ surname = 3; // This will be accepted, a warning won't be shown at console/debug
 # 🔸 DATA TYPES  
 
 ## BUILT-IN DATA TYPES: 
-1. Number
-2. String
+1. String
+2. Number (Integer "int", Biginteger "bigint", Floating, NaN, ...)
 3. Bolean
-4. Void
+4. Undefined
 5. Null
-6. Undefined
+6. Void
+7. Symbol
+8. Object
 ***
 
 ### ⚡ DATA TYPE in ARRAYS, LISTS, ...
