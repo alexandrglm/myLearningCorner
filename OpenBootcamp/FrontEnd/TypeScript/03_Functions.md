@@ -4,14 +4,12 @@ Abstract:
 
 * Functions
 * Variable Scooping
+* Hoisting
 * JSDoc. Documening the code in a proper way.
 * Parsing objects as arguments, different ways
 * Types. Creating object types.
 * 
 	
-
-
-
 
 # 🔸 TS Best Practices (2) ✅✅✅
 
@@ -50,8 +48,29 @@ And this is **snake_Case** typing ✅
 
 But this is **aproblematicwayoftypingtobeavoided** ❌
 ```
- 
-# 🔸 Variable Scoope
+   
+
+### ✅ Every var value has its defined type  
+```ts
+// Definyng the type for the next object
+
+type employeeType = {
+    name7: string;
+    surname7: string;
+    age7: number;
+};
+
+// Creating the object whose content has to fit the previous type definitons, so...
+
+let employeeTyped: employeeType = {
+    name7: "Martin",
+    surname7: "Gonzalez",
+    age7: 42
+};
+```
+***
+
+# 🔸 Variable Scoope  
 
 Scope determines the accessibility (visibility) of variables.
 
@@ -255,6 +274,11 @@ To clarify this,:
 >- A function designed to create new objects, is called an object constructor.~
 
 ### ⚡ Arrow functions  
+Same as declaring any function, but:  
+1. Can be invoked at any time.
+2. Can be used as entry params., as a callbak, like *"When X thing is executed, Y thing is told to do A thing*.
+
+
 Allows a **short syntax** for the function expression. 
 ```ts
 // ES5 and earlier
@@ -279,6 +303,13 @@ const x = (x, y) => { return x * y };
 ```
 *** 
 
+
+
+
+
+## Passing parameters or arguments to a function  
+ 
+ 
 
 
 ```ts
