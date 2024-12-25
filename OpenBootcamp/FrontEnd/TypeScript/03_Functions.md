@@ -304,12 +304,77 @@ const x = (x, y) => { return x * y };
 *** 
 
 
+## 🔸		FUNCTION OVERLOADING  
+TypeScript allows overloading the functions by enabling to be declared the same function but with many differents patterns (values, params.), as needed..  
 
+That's like this due to the needed improvements of code flexibility and legibility, also at compiling.
+
+- Here are defined two methods for the function `greeting()`. One of both allows a string type argument; the other don't:
+```ts
+function greeting(name: string): void;
+function greeting(): void;
+function greeting(name?: string): void {
+    if (name) {
+        console.log(`Hello, ${name}!`);
+    } else {
+        console.log(`Hello!`);
+    }
+}
+
+greeting("Juan");  // Will log "Hello, Juan!"
+greeting();        // Will log "Hello!"
+```
+***
 
 
 ## Passing parameters or arguments to a function  
  
- 
+When defining functions, you can explicitly specify parameters to ensure the correct data types are passed. 
+
+Additionally, you can make some parameters optional or have default values by adding `:?` when declaring them.  
+
+#### CASE 1: Optional
+`name` is an **optional parameter**, so that the function can be **invoked without passing a value** for the variable.
+```ts
+function farewellPerson(name?: string): void {
+    if (name) {
+        console.log(`Bye, ${name}!`);
+    } else {
+        console.log("Bye!");
+    }
+}
+
+farewellPerson();  // "Bye!"
+farewellPerson("Ana");  // "Bye, Ana!"
+```
+  
+#### CASE 2: Predefined value parameters  
+`name` **has a pre-parametrized value** ("Pepe").
+If a value is not passed to function argument, the pre-parametrized value will be used.
+If there's an argument passed, this will be used.  
+```ts
+function farewellPersonWithDefault(name: string = "Pepe"): void {
+    console.log(`Bye, ${name}`);
+}
+
+farewellPersonWithDefault();  // "Bye, Pepe"
+farewellPersonWithDefault("Alba");  // "Bye, Alba"
+```
+  
+#### CASE 3: Rest (...) Paramenters  
+
+* A rest `...argument` (*"dot dot dot Operator plus argument"* structure)* allows differnt list of variables, as an array.  
+* **Useful when we don't know how many values** will be function-passed.  
+
+```
+function exampleMultiParams(...names: string[]): void {
+    names.forEach(name => {
+        console.log(name);
+    });
+}
+
+exampleMultiParams("Martin", "Pepe", "Juan");  // "Martin", "Pepe", "Juan"
+```
 
 
 ```ts
