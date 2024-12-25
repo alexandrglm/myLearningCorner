@@ -1,4 +1,4 @@
- 🔸 SESSION #3  FUNCTIONS
+#  🔸 SESSION #3  FUNCTIONS
 
 Abstract:
 
@@ -55,31 +55,25 @@ But this is **aproblematicwayoftypingtobeavoided** ❌
 
 Scope determines the accessibility (visibility) of variables.
 
-There are 2 types of scope, and another one whose usability was deprecated since ECMA6:
+There are 2 kind of "family" scooping, one of which was deprecated since ECMA6, but needs to be explained for the sake of understanding well what scooping means/defines:
 
-1. Function Scope / Local scoope  
-At the function side.
-
-2. Global Scope  
-At the entire code side.
-
-3. Block Scope. Deprecated, but has to be explained in order to understand in a proper way the scooping.  
+1. **Block / Local / Function** scoope
+2. **Global** Scope  
 
 #### ⚡ (DEPRECATED) Block scope:  
+Since ES6 (2015) introduced `let`and `const` keywords, these two keywords are which provide the Block Scope, so:  
 
-Variables `{ inside a block}` ❌cannot❌ be accesed  from outside it.
+- Variables declared with the var keyword ❌**can NOT**❌ have block scope.
+
+- Variables declared inside a { } block ✅**CAN**✅ be accessed from outside the block.
+  
+- Variables `{ inside a block}` ❌cannot❌ be accesed  from outside it.
 ```ts
 {
   let x = 2;
 }
 // x can NOT be used here 
 ```
-
-Since ES6 (2015) introduced `let`and `const` keywords, these two keywords are which provide the Block Scope, so:  
-
-- Variables declared with the var keyword ❌**can NOT**❌ have block scope.
-
-- Variables declared inside a { } block ✅**CAN**✅ be accessed from outside the block. 
 
 ```ts
 {
@@ -130,7 +124,7 @@ function myFunction() {
 }
 ```
 
-#### ⚡ Function scope:  
+#### ⚡ Global scope:  
 The easiest to be understood:  
 - A variable **declared outside** a function **becomes GLOBAL** to the entire code.  
 
