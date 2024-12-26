@@ -1,4 +1,4 @@
-🔸 1st session:
+# 1st session:
 
 * Introduction and configuration of IDE
 	- Java philosophy and characteristics
@@ -18,9 +18,35 @@
 	-	Variable types
 	-	Primitive types
 	-	Reserved words
-***
 	
-🔸 ## 2: Java characteristics, statistics, TIOBE index.
+	
+# 🔸	Java philoshofy, characteristics, statistics  
+
+## 🔸 Definitions
+
+### ⚡ What's Java?  
+Java is a robust and versatile object-oriented programming language (OOP) introduced in 1995 by Sun Microsystems (now, since 2009, Sun Microsystems was adquired by its new owner, Oracle), aimed to be run on almost-any kind of device.  
+  
+Therefore, many other languages like C#, dotNET, started to be created to face the Java dominance as its competitors.  
+
+### ⚡ Java features:
+	* Java Syntax
+	With very basic syntax easily become familiar and just 50 reserved words.  
+	  
+	* Java is FOSS
+	Even being againts the benefits of (and also not directly by) Oracle, OpenJDK is  available, a Java Development environment free and open-source.  
+	
+	* Java is Compiled and Interpreted, so that getting the best flexibility
+	A mix of advantages taken from compiled languages (faster coding but limited to an specific platform) plus interpreted languages (slower coding development, debugging process only available at runtime execution, but universal as enable to be executed on any platform). The Java code is first compiled into the Bytecode (language interpretator) between and thus the JVM (Java VirtualMachine).  	
+
+###  ⚡ Java development uses:
+	* Websites 
+	* GUI's (EclipseIDE, a tool for developing in Java created in Java, Spotify client, ...)
+	* Frameworks (Lightweight, LibGDX)
+	* Applications (Android Studio pre-Kotlin era, )
+
+***
+### ⚡	More keynotes about Java  
 
 - Java releases: Each 6 months, excepting Java LTS
 - Java 8 brought high changes.
@@ -36,7 +62,7 @@ Since OpenJDK v-24 is still in testing-notProduction mode and SDK 23 offers high
 
 High-level language. Multiparadigma. Permite programas flexibles.
 
-🔸 # TIOBE index, 2024 December
+# TIOBE index, 2024 December
 https://www.tiobe.com/tiobe-index/
 
 | Dec 2024 | Dec 2023 | Change | Language | Ratings | Change |
@@ -46,40 +72,40 @@ https://www.tiobe.com/tiobe-index/
 | 3 | 4 | change | Java page | Java | 9.72% | +1.73% |
 
 Java maintains the 3rd rank.
+***
 
-
-🔸 # Setting up the environment
+# Setting up the environment
 
 ## Requisites:
-OpenJDK, IntelliJ IDE
+- OpenJDK  
+- IntelliJ IDE  
+  
+***
 
-## OpenJDK
-### From deb sources:
-
-### Building from source code:
-[Source](https://openjdk.org/groups/build/doc/building.html)
-[Git Source](https://github.com/openjdk/jdk23u/blob/master/doc/building.md#getting-the-source-code)
-
-**Dependences**: `gcc (=>13.2.0), clang, autoconf, libfreetype6-dev, libfontconfig-dev, libcups2-dev, libx11-dev libxext-dev libxrender-dev libxrandr-dev libxtst-dev libxt-dev, libasound2-dev, libffi-dev, debootstrap, `  
-**Dependences for cross-compiling:** `g++, gcc, with the specific targets for the desired platforms (more info: https://openjdk.org/groups/build/doc/building.html#Cross-Compiling_the_Easy_Way)`  
-
-## IntelliJ IDE
+## IntelliJ IDE  
 
 Site: https://www.jetbrains.com/es-es/idea/download/download-thanks.html?platform=linux&code=IIC
+
+### Building from source code:  
+[Source](https://openjdk.org/groups/build/doc/building.html)
+[Git Source](https://github.com/openjdk/jdk23u/blob/master/doc/building.md#getting-the-source-code)  
+
+`Dependences:` gcc (=>13.2.0), clang, autoconf, libfreetype6-dev, libfontconfig-dev, libcups2-dev, libx11-dev libxext-dev libxrender-dev libxrandr-dev libxtst-dev libxt-dev, libasound2-dev, libffi-dev, debootstrap.  
+
+`Dependences for cross-compiling:` g++, gcc, with the specific targets for the desired platforms [More info.](https://openjdk.org/groups/build/doc/building.html#Cross-Compiling_the_Easy_Way)
 
 
 ## Configuring and using IntelliJ
 
 ## Creating new session
 1. Creating new package  
-Package itinerary tends to be named the same as the developer/creator/enterprise website has, but upside down.
-E.g.:
-My website:	example.com -- so, the itinerary will be --> com.example
-
-2. Creating a class
-- .class files always using CamelCase, but the first letter UPPERCASE
+Package itinerary tends to be named the same as the developer/creator/enterprise website has, but upside down.  
+E.g.:  
+> My website:	example.com -- so, the itinerary will be --> com.example
+  
+2. Creating a class  
+- .class files always using CamelCase, but the first letter UPPERCASE.  
 - .class content:
-
 ```java
 package com.example;
 
@@ -87,21 +113,28 @@ public class HelloWorld {
 
 }
 ```
+Explained:  
 ```text
 package + itinerary;
-public keyword + class keyword + className + openkey{
-	*here will be all the classes, all the code*
-	*line by line*
-}
+
+// here, packages-modules-classes importing will be called.
+
+public keyword + class keyword + className + keys open symbol {
+
+	// This is the place for all the code
+
+	// line by line
+
+close key symbol }
 ```
 
 
-- The code has to be started, always, using enabling the `main`method, by several ways.  
+- The code has to be initialised, always, using enabling the `main`method, by several ways.  
 
 1. By using shortcuts.  
-Typing main, this IDE will set the main method automatically.  
+By typing main, this IDE will set the main method automatically.  
 
-2.  By hand, setting it up manually, like this:
+2.  By typing the initialise code by hand, like this:  
 
 ```java
 public static void main(String[] args){
@@ -109,14 +142,14 @@ public static void main(String[] args){
 }
 ```
 
-- Now, we can add a first code line to test all relations correctibility or not, for example, by typing a simple printing on screen a string.
+- Now, we can add a first code line to test all relations correctibility or not, for example, by typing a simple printing on screen a string.  
 ```java
 
 System.out.println("Hello world, testing init relations");
 
 ```
 
-The initialise code will be like this:
+The initialise code will be like this:  
 ```java
 package com.example;
 
@@ -127,35 +160,44 @@ public class HelloWorld {
         System.out.println("Hello World");
 
     }
-
-
+    
 }
 ```
-.println method is the most basic method to start testing the class environment. More (complex) methods will be detailed.
+.println method is the most basic method to start testing the class environment. More (complex) methods will be detailed.  
 
-- Its time to get compiled and tested our code, by clicking on "RUN" icon or *right-click* > Run.  
+- Now, it's time to get compiled and tested our code, by clicking on "RUN" icon or *right-click* > Run.  
 ![image1](https://github.com/user-attachments/assets/0075bced-8348-405a-af4d-d86705ade2c0)
-The code will be bytecode compiled, ready to be interpreted by the JVM.  
+The code, at this point, is being bytecode-compiled, ready to be interpreted by the JVM.    
 We notice that IntelliJ IDE shows on the botton side the JVM console the compilining and execution flags.  
-*...with exit code 0* means there were no erros at any time.
-
+*...with exit code 0* means there were no erros at any time.  
+  
 - Finally, proved that this initialise configuration is made in the proper way (it works), coding process can be started.
+***
 
-# SYNTAX (1)
+# SYNTAX (1)  
+  
+## CamelCase, but how?  
+  
+'Classes, files`:  CamelCase **LikeThis**. First letter always Uppercase.
 
-## Shorcuts:
+`Variables, Methods/Functions, etc`: cameCase **likeThis**. First letter from the first word to lowercase.
+***
+## Shorcuts:  
 
-`main`		Initialises the project static void main method  
+While the behaviour when coding should be to not shorcutting any ways, IntelliJ IDE offers a wide range of methods' shorcuts to empower the coding process.  
 
-`sout`		System.out.println    
-`soutm`		Prints the current class name and method  
-`soutp`		Prints the method parameters and values  
-`soutv`		Prints a value  
+`main`		Initialises the project static void main method
 
+`sout`		System.out.println	
+`soutm`		Prints the current class name and method
+`soutp`		Prints the method parameters and values
+`soutv`		Prints a value
+***
 ## Indentation  
-Even not giving a indentation to our code, and dislike as in another languages as Python, the standard catches *ONE TAB equal to FOUR SPACES*.  
-Also, giving one blank line each line is the commons.  
 
+Even not giving a indentation to our code, and dislike as when coding another languages as Python, the standards for indentation coding JAVA seems to be *ONE TAB equal to FOUR SPACES*.  
+Also, giving one blank line each line is the commons.  
+***
 ## Comments & Documentating code process  
 
 Taking notes is so useful in any creating process, also including here, when developing. As many other languages, Java has its own routine of comments.  
@@ -170,7 +212,7 @@ Taking notes is so useful in any creating process, also including here, when dev
          */
 ```
   
-Also, a documentation process using JAVADoc may contain a deep technique information about the method is attached to. 
+Also, a documentation process using JAVADoc may contain a deep technique information about the method is attached to.   
 JAVADocs always goes at the same indentation level as the object is referencing. E.g.:  
 ```Java
     /**
@@ -218,7 +260,7 @@ public class ByeWorld {
 
 }
 ```
-
+***
 ## Data types  
 
 1.	Number  
@@ -228,28 +270,6 @@ public class ByeWorld {
 2. Boolean  
 
 3. String  
-
-
-## Creating variables  
-
-Due to the nature of strongness typing Java is, the variable data type needs to be declared. It's told at the start of the line.  
-
-A common schema of creating a number variable is:  
-
-> #### *Data Type + Variable Name + AssignOperator (=) + The value*;    
-
-Numbers and also Strings data types are used by an incremental value size:  
-| Data Type | Sizw   | Range/Precission |
-|--------------|----------|---------------------------------------------------------------------------|
-| `byte`       | 8 bits   | Range: -128 ~ +127                                                         |
-| `short`      | 16 bits  | Range: -32,768 ~ +32,767                                                   |
-| `int`        | 32 bits  | Range: -2,147,483,648 ~ +2,147,483,647                                     |
-| `long`       | 64 bits  | Range: -9,223,372,036,854,775,808 ~ +9,223,372,036,854,775,807             |
-| `float`      | 32 bits  | Precission: 6-7 decimals, a double-word of 16bit.                                                  |
-| `double`     | 64 bits  | Precission: 15 decimals, a double-word of 32bit.                                                   |
-| `char`       | 16 bits  | Range: 0 a 65,535 (a unique UniCode character possible)                  |
-| `string`     | Variable | Depends of the string size. Every character uses 1 word (2 bytes, UTF-16).      |
-
 
 ```Java
       // 1.   Numbers
@@ -280,10 +300,28 @@ Numbers and also Strings data types are used by an incremental value size:
         /**
 		* String is used 'String' because is a method. Further explanations will come
 		*/
-
 ```
+***
+## Creating variables  
 
+Due to the nature of strongness typing Java is, the variable data type needs to be declared. It's told at the start of the line.  
 
+A common schema of creating a number variable is:  
+
+> #### *Data Type + Variable Name + AssignOperator (=) + The value*;    
+
+Numbers and also Strings data types are used by an incremental value size:  
+| Data Type | Sizw   | Range/Precission |
+|--------------|----------|---------------------------------------------------------------------------|
+| `byte`       | 8 bits   | Range: -128 ~ +127                                                         |
+| `short`      | 16 bits  | Range: -32,768 ~ +32,767                                                   |
+| `int`        | 32 bits  | Range: -2,147,483,648 ~ +2,147,483,647                                     |
+| `long`       | 64 bits  | Range: -9,223,372,036,854,775,808 ~ +9,223,372,036,854,775,807             |
+| `float`      | 32 bits  | Precission: 6-7 decimals, a double-word of 16bit.                                                  |
+| `double`     | 64 bits  | Precission: 15 decimals, a double-word of 32bit.                                                   |
+| `char`       | 16 bits  | Range: 0 a 65,535 (a unique UniCode character possible)                  |
+| `string`     | Variable | Depends of the string size. Every character uses 1 word (2 bytes, UTF-16).      |
+*** 
 
 ## Reserved Keywords
 
