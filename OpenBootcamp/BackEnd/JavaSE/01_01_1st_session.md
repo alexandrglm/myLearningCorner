@@ -141,4 +141,89 @@ We notice that IntelliJ IDE shows on the botton side the JVM console the compili
 
 - Finally, proved that this initialise configuration is made in the proper way (it works), coding process can be started.
 
+# SYNTAX (1)
+
+## Shorcuts:
+
+main		Initialises the project static void main method
+
+sout		System.out.println	
+soutm	Prints the current class name and method
+soutp	Prints the method parameters and values
+soutv	Prints a value
+
+## Indentation
+Even not giving a indentation to our code, and dislike as in another languages as Python, the standard catches *ONE TAB equal to FOUR SPACES*.  
+Also, giving one blank line each line is the commons.  
+
+## Comments & Documentating code process
+
+Taking notes is so useful in any creating process, also including here, when developing. As many other languages, Java has its own routine of comments.  
+```java
+// This is the simpliest way to give a comment in one line
+
+ 		/*
+        This is a multi-line comment, useful for planning step by step. E.g.:
+        1- Step1. Create the function sum
+        2. Create number variable
+        3. Use sum function to get the sum of both numbers
+         */
+```
+  
+Also, a documentation process using JAVADoc may contain a deep technique information about the method is attached to. 
+JAVADocs always goes at the same indentation level as the object is referencing. E.g.:
+```Java
+    /**
+     * Title: Entrypoint to java application
+     * Description: Lets the application xecution.
+     *
+     * @param args - Entry arguments for the application
+     *
+     *
+     */
+    public static void main(String[] args) {
+```
+
+
+```Java
+package com.example;
+
+
+/**
+ * Test class to create a simply Java application
+ */
+public class ByeWorld {
+
+
+    /**
+     * This is a JAVADoc. Entrypoint to java application
+     * Lets the application xecution.
+     **
+     * @param args - Entry arguments for the application
+     */
+    public static void main(String[] args) {
+    
+        // This is a simple-line comment
+        System.out.println("ByeWorld.main");
+
+        /*
+        This is a multi-line comment, useful for planning step by step:
+        1- Step1. Create the function sum
+        2. Create number variable
+        3. Use sum function to get the sum of both numbers
+         */
+
+
+    }
+
+}
+```
+
+## Data types
+
+## Creating variables
+
+## Syntax structures
+
+## JAVA Best Practices
 
