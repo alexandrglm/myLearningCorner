@@ -64,7 +64,81 @@ OpenJDK, IntelliJ IDE
 **Dependences for cross-compiling:** `g++, gcc, with the specific targets for the desired platforms (more info: https://openjdk.org/groups/build/doc/building.html#Cross-Compiling_the_Easy_Way)`  
 
 ## IntelliJ IDE
-Site: https://www.jetbrains.com/es-es/idea/download/download-thanks.html?platform=linux&code=IIC  
 
-Pending, from [*5*](https://www.youtube.com/watch?v=wNIG7xV9Vbk&list=PLkVpKYNT_U9cD2VjlxgCsLzGCItSB9WUX&index=5) - ts 02:00
+Site: https://www.jetbrains.com/es-es/idea/download/download-thanks.html?platform=linux&code=IIC
+
+
+## Configuring and using IntelliJ
+
+## Creating new session
+1. Creating new package  
+Package itinerary tends to be named the same as the developer/creator/enterprise website has, but upside down.
+E.g.:
+My website:	example.com -- so, the itinerary will be --> com.example
+
+2. Creating a class
+- .class files always using CamelCase, but the first letter UPPERCASE
+- .class content:
+
+```java
+package com.example;
+
+public class HelloWorld {
+
+}
+```
+```text
+package + itinerary;
+public keyword + class keyword + className + openkey{
+	*here will be all the classes, all the code*
+	*line by line*
+}
+```
+
+
+- The code has to be started, always, using enabling the `main`method, by several ways.  
+
+1. By using shortcuts.  
+Typing main, this IDE will set the main method automatically.  
+
+2.  By hand, setting it up manually, like this:
+
+```java
+public static void main(String[] args){
+
+}
+```
+
+- Now, we can add a first code line to test all relations correctibility or not, for example, by typing a simple printing on screen a string.
+```java
+
+System.out.println("Hello world, testing init relations");
+
+```
+
+The initialise code will be like this:
+```java
+package com.example;
+
+public class HelloWorld {
+
+    public static void main(String[] args){
+
+        System.out.println("Hello World");
+
+    }
+
+
+}
+```
+.println method is the most basic method to start testing the class environment. More (complex) methods will be detailed.
+
+- Its time to get compiled and tested our code, by clicking on "RUN" icon or *right-click* > Run.  
+![image1](https://github.com/user-attachments/assets/0075bced-8348-405a-af4d-d86705ade2c0)
+The code will be bytecode compiled, ready to be interpreted by the JVM.  
+We notice that IntelliJ IDE shows on the botton side the JVM console the compilining and execution flags.  
+*...with exit code 0* means there were no erros at any time.
+
+- Finally, proved that this initialise configuration is made in the proper way (it works), coding process can be started.
+
 
