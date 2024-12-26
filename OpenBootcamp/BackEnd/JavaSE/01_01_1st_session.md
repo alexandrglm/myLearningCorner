@@ -285,6 +285,58 @@ Numbers and also Strings data types are used by an incremental value size:
 
 
 
-## Syntax structures
+## Reserved Keywords
 
-## JAVA Best Practices
+| Reserved Word     | Example of Use                                                        | Description                                                              |
+|-------------------|------------------------------------------------------------------------|--------------------------------------------------------------------------|
+| `abstract`        | `abstract class Animal {}`                                              | Defines an abstract class that cannot be instantiated.                   |
+| `assert`          | `assert x > 0;`                                                         | Used for assertion checks (enabled with `-ea` when running).             |
+| `boolean`         | `boolean isActive = true;`                                              | Defines a boolean variable.                                              |
+| `break`           | `for (int i = 0; i < 10; i++) { if (i == 5) break; }`                  | Breaks out of a loop or a switch statement.                              |
+| `byte`            | `byte b = 127;`                                                         | Defines a byte-type variable.                                            |
+| `case`            | `switch (x) { case 1: break; }`                                          | Defines a case option in a switch statement.                             |
+| `catch`           | `try { throw new Exception(); } catch (Exception e) {}`                 | Catches exceptions in a try-catch block.                                 |
+| `char`            | `char letter = 'A';`                                                    | Defines a character-type variable.                                       |
+| `class`           | `class Dog {}`                                                          | Declares a class in Java.                                                |
+| `continue`        | `for (int i = 0; i < 10; i++) { if (i == 5) continue; }`                | Continues to the next iteration of a loop.                               |
+| `default`         | `switch (x) { default: break; }`                                         | Defines the default case in a switch statement.                          |
+| `do`              | `do { x++; } while (x < 10);`                                           | Starts a do-while loop.                                                  |
+| `double`          | `double pi = 3.14;`                                                     | Defines a double-type variable (floating-point precision).               |
+| `else`            | `if (x < 10) {} else {}`                                                | Defines an alternative branch in an if-else structure.                   |
+| `enum`            | `enum Color { RED, GREEN, BLUE; }`                                       | Declares an enum type.                                                   |
+| `extends`         | `class Dog extends Animal {}`                                            | Indicates that a class inherits from another class.                      |
+| `final`           | `final int MAX = 100;`                                                  | Defines a constant or prevents a class or method from being overridden.  |
+| `finally`         | `try { } catch { } finally {}`                                           | Code block that always executes after a try-catch block.                 |
+| `float`           | `float pi = 3.14f;`                                                     | Defines a float-type variable.                                           |
+| `for`             | `for (int i = 0; i < 10; i++) {}`                                       | Defines a for loop.                                                      |
+| `goto`            | Cannot be used, reserved.                                               | A reserved word but not used.                                            |
+| `if`              | `if (x > 10) {}`                                                        | Defines a conditional structure.                                          |
+| `implements`      | `class Dog implements Animal {}`                                         | Indicates that a class implements an interface.                          |
+| `import`          | `import java.util.Scanner;`                                             | Imports an external class or package.                                    |
+| `instanceof`      | `if (x instanceof String) {}`                                            | Checks if an object is an instance of a class or interface.              |
+| `int`             | `int x = 10;`                                                           | Defines an integer-type variable.                                        |
+| `interface`       | `interface Animal { void speak(); }`                                    | Declares an interface.                                                   |
+| `long`            | `long bigNumber = 10000000000L;`                                         | Defines a long-type variable (64-bit integer).                           |
+| `native`          | `public native void method();`                                          | Defines a native method implemented outside of Java.                      |
+| `new`             | `String str = new String("Hello");`                                      | Creates a new instance of an object.                                     |
+| `null`            | `String str = null;`                                                    | Represents the absence of a value or reference.                          |
+| `package`         | `package com.example;`                                                  | Declares the package that a class belongs to.                             |
+| `private`         | `private int x;`                                                        | Defines a class member with restricted access.                           |
+| `protected`       | `protected int x;`                                                      | Defines a class member accessible by the class, its subclasses, and package.|
+| `public`          | `public class Main {}`                                                  | Defines a class or member accessible from anywhere.                       |
+| `return`          | `return x;`                                                             | Exits a method and optionally returns a value.                           |
+| `short`           | `short s = 32767;`                                                      | Defines a short-type variable.                                           |
+| `static`          | `static int counter = 0;`                                                | Defines a static variable or method that belongs to the class, not instances. |
+| `super`           | `super();`                                                              | Calls the constructor of the superclass.                                  |
+| `switch`          | `switch (x) { case 1: break; }`                                          | Defines a multi-way branching structure.                                  |
+| `synchronized`    | `synchronized void method() {}`                                          | Defines a synchronized method for concurrency control.                    |
+| `this`            | `this.x = x;`                                                          | Refers to the current instance of the class.                              |
+| `throw`           | `throw new Exception("Error");`                                         | Throws an exception manually.                                             |
+| `throws`          | `public void method() throws Exception {}`                              | Declares that a method may throw an exception.                            |
+| `transient`       | `private transient int data;`                                           | Prevents a variable from being serialized.                                |
+| `try`             | `try { } catch { }`                                                     | Starts an exception-handling block with try-catch.                        |
+| `void`            | `public void method() {}`                                               | Indicates that a method does not return any value.                        |
+| `volatile`        | `private volatile boolean flag;`                                        | Indicates that a variable may be modified by different threads.           |
+| `while`           | `while (x < 10) {}`                                                     | Defines a while loop that runs as long as the condition is true.          |
+
+
