@@ -219,11 +219,72 @@ public class ByeWorld {
 }
 ```
 
-## Data types
+## Data types  
 
-## Creating variables
+1.	Number  
+1.1	Integer  
+1.2 Decimal  
+
+2. Boolean  
+
+3. String  
+
+
+## Creating variables  
+
+Due to the nature of strongness typing Java is, the variable data type needs to be declared. It's told at the start of the line.  
+
+A common schema of creating a number variable is:
+
+> #### *Data Type + Variable Name + AssignOperator (=) + The value*;  
+
+Numbers and also Strings data types are used by an incremental value size:
+| Data Type | Sizw   | Range/Precission |
+|--------------|----------|---------------------------------------------------------------------------|
+| `byte`       | 8 bits   | Range: -128 ~ +127                                                         |
+| `short`      | 16 bits  | Range: -32,768 ~ +32,767                                                   |
+| `int`        | 32 bits  | Range: -2,147,483,648 ~ +2,147,483,647                                     |
+| `long`       | 64 bits  | Range: -9,223,372,036,854,775,808 ~ +9,223,372,036,854,775,807             |
+| `float`      | 32 bits  | Precission: 6-7 decimals, a double-word of 16bit.                                                  |
+| `double`     | 64 bits  | Precission: 15 decimals, a double-word of 32bit.                                                   |
+| `char`       | 16 bits  | Range: 0 a 65,535 (a unique UniCode character possible)                  |
+| `string`     | Variable | Depends of the string size. Every character uses 1 word (2 bytes, UTF-16).      |
+
+
+```Java
+      // 1.   Numbers
+        
+        // 1.1  Integers
+        byte variableOne = 1;
+        short variableTwo = 100;
+        int variableThree = 100000;
+        long variableFour = 10000000000;
+
+        long phoneNumber = 666145474;
+        
+        // long price = null; // It deserves a further explanation.
+
+        // 1.2  Decimals
+        float variableFive = 5.5f;
+        double variableSix = 10.5d;
+        variableSix = 20.5d; // here, the variable has been value-changed.
+        double productPrice = 49.99d;
+
+        // 2.   Booleans
+        boolean variable7 = true;
+        boolean variable8 = false;
+
+        // 3.   Strings
+        char variableNine = 'a';
+        String variableTen = "Lorem ipsum dolor sit anet ...";
+        /**
+		* String is used 'String' because is a method. Further explanations will come
+		*/
+
+```
+
+
 
 ## Syntax structures
 
 ## JAVA Best Practices
-
