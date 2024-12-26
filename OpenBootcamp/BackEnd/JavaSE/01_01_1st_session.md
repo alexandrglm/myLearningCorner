@@ -145,18 +145,18 @@ We notice that IntelliJ IDE shows on the botton side the JVM console the compili
 
 ## Shorcuts:
 
-main		Initialises the project static void main method
+`main`		Initialises the project static void main method  
 
-sout		System.out.println	
-soutm	Prints the current class name and method
-soutp	Prints the method parameters and values
-soutv	Prints a value
+`sout`		System.out.println    
+`soutm`		Prints the current class name and method  
+`soutp`		Prints the method parameters and values  
+`soutv`		Prints a value  
 
-## Indentation
+## Indentation  
 Even not giving a indentation to our code, and dislike as in another languages as Python, the standard catches *ONE TAB equal to FOUR SPACES*.  
 Also, giving one blank line each line is the commons.  
 
-## Comments & Documentating code process
+## Comments & Documentating code process  
 
 Taking notes is so useful in any creating process, also including here, when developing. As many other languages, Java has its own routine of comments.  
 ```java
@@ -171,7 +171,7 @@ Taking notes is so useful in any creating process, also including here, when dev
 ```
   
 Also, a documentation process using JAVADoc may contain a deep technique information about the method is attached to. 
-JAVADocs always goes at the same indentation level as the object is referencing. E.g.:
+JAVADocs always goes at the same indentation level as the object is referencing. E.g.:  
 ```Java
     /**
      * Title: Entrypoint to java application
@@ -234,11 +234,11 @@ public class ByeWorld {
 
 Due to the nature of strongness typing Java is, the variable data type needs to be declared. It's told at the start of the line.  
 
-A common schema of creating a number variable is:
+A common schema of creating a number variable is:  
 
-> #### *Data Type + Variable Name + AssignOperator (=) + The value*;  
+> #### *Data Type + Variable Name + AssignOperator (=) + The value*;    
 
-Numbers and also Strings data types are used by an incremental value size:
+Numbers and also Strings data types are used by an incremental value size:  
 | Data Type | Sizw   | Range/Precission |
 |--------------|----------|---------------------------------------------------------------------------|
 | `byte`       | 8 bits   | Range: -128 ~ +127                                                         |
