@@ -4,11 +4,11 @@
 ### [X] Module 1: Concepts  
   
   #### Unit 1.1: Development Environment  
-  - 1.1.1 [ ]  Hello World  
-  - 1.1.2 [ ]  Comments and Documentation  
-  - 1.1.3 [ ]  Variables and Data Types  
-  - 1.1.4 [ ]  Operators  
-  - 1.1.5 [ ]  Reserved Words  
+  - 1.1.1 [x]  Hello World  
+  - 1.1.2 [x]  Comments and Documentation  
+  - 1.1.3 [x]  Variables and Data Types  
+  - 1.1.4 [x]  Operators  
+  - 1.1.5 [x]  Reserved Words  
   - 1.1.6 [ ]  Functions and Parameters  
   - 1.1.7 [ ]  Function Overloading  
   - 1.1.8 [ ]  If-Else Statements  
