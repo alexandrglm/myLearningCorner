@@ -75,6 +75,8 @@ A variable can be defined with `var`, `let` or a `const` (A constant, a value th
 | Strict Mode Reserved Words |
 |----------------------------|
 | `as`                       |
+| `async`                    |
+| `await`                    |
 | `implements`               |
 | `interface`                |
 | `let`                      |
@@ -83,17 +85,23 @@ A variable can be defined with `var`, `let` or a `const` (A constant, a value th
 | `protected`                |
 | `public`                   |
 | `static`                   |
+| `synchronized`             |
+| `volatile`                 |
 | `yield`                    |
   
 ### 3. **Contextual Keywords**
 
 | Contextual Keywords |
 |---------------------|
+| `abstract`          |
 | `any`               |
+| `byte`              |
 | `boolean`           |
+| `char`              |
 | `constructor`       |
 | `declare`           |
 | `get`               |
+| `int`               |
 | `module`            |
 | `require`           |
 | `number`            |
