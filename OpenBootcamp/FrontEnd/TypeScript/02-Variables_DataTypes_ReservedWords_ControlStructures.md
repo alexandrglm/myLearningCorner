@@ -1,4 +1,4 @@
-# 🔸 DEFINITIONS
+# 🔸     DEFINITIONS
 
 ## Type Data Casting: Defining types of languages by data type.  
 ### Typed Languages / Non-Typed languages  
@@ -27,6 +27,82 @@ It refers how many strict or not is a language to permit changes in the data typ
 ## Values: var / const
 
 A variable can be defined with `var`, `let` or a `const` (A constant, a value that cannot change).
+***
+# 🔸    TypeScript Reserved Words  
+### 1. **Reserved Words**
+  
+| Reserved Words        |
+|-----------------------|
+| `break`               |
+| `case`                |
+| `catch`               |
+| `class`               |
+| `const`               |
+| `continue`            |
+| `debugger`            |
+| `default`             |
+| `delete`              |
+| `do`                  |
+| `else`                |
+| `enum`                |
+| `export`              |
+| `extends`             |
+| `false`               |
+| `finally`             |
+| `for`                 |
+| `function`            |
+| `if`                  |
+| `import`              |
+| `in`                  |
+| `instanceof`          |
+| `new`                 |
+| `null`                |
+| `return`              |
+| `super`               |
+| `switch`              |
+| `this`                |
+| `throw`               |
+| `true`                |
+| `try`                 |
+| `typeof`              |
+| `var`                 |
+| `void`                |
+| `while`               |
+| `with`                |
+  
+### 2. **Strict Mode Reserved Words**
+
+| Strict Mode Reserved Words |
+|----------------------------|
+| `as`                       |
+| `implements`               |
+| `interface`                |
+| `let`                      |
+| `package`                  |
+| `private`                  |
+| `protected`                |
+| `public`                   |
+| `static`                   |
+| `yield`                    |
+  
+### 3. **Contextual Keywords**
+
+| Contextual Keywords |
+|---------------------|
+| `any`               |
+| `boolean`           |
+| `constructor`       |
+| `declare`           |
+| `get`               |
+| `module`            |
+| `require`           |
+| `number`            |
+| `set`               |
+| `string`            |
+| `symbol`            |
+| `type`              |
+| `from`              |
+| `of`                |
 ***
 
 # 🔸 TS Best Practices (1) ✅✅✅
