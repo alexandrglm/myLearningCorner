@@ -1,8 +1,8 @@
 /* 
 * OpenBootcamp - TypeScript programm
-* [x] Lesson 1: Introduction. Setting up a NodeJS environment.
-* [x] Lesson 2: Language classifications - Variables - Data Types - Data casting - Reserved keywords - Control Structures
-* [ ] Lesson 3: 
+* [x] Lesson 1: Introduction. Setting up a NodeJS environment.  
+* [x] Lesson 2: Language classifications - Variables - Data Types - Data casting - Reserved keywords - Control Structures  
+* [X] Lesson 3: Functions: Variables Scoope - Hoisting - Function Declarations - Function Expressions - Functions Syntax - Asynchronous functions - Generators
 * [ ] Lesson 4:
 * [ ] Lesson 5:
 * [ ] Lesson 6:
@@ -340,3 +340,361 @@ do {
 } while (counter < 5);
 
 console.log(`DO-WHILE loop: Counter: ${counter}`); 
+
+/* 
+SESSION #3.  FUNCTIONS
+Abstract:
+
+- Best Practices (2):
+  
+  - Well-documented code. (JSDoc)
+  - Explicit typing. (Avoiding 'any' type by declaring every type).
+  - Parameters passing
+  - Function Overloading.
+  - Conciseness code.
+- Variable Scoope & Hoisting
+  
+- Functions:
+  
+  - Declarations
+  - Parameters
+  - `Async Functions` VS `function* Generators`
+  - `Worker`s and `Saga`s
+
+// Functions
+
+/**
+ * This is a documenting JSDoc method
+ * Best Practices with functions:
+ * Giving a self-explicative name 
+ */
+function greeting(){
+    let name = "Pepito";    // Variable scoope: Not globally. locally.
+    console.log(`Hello ${name}!`);
+    
+}
+
+greeting();     // The Invoke
+
+/**
+ * This Function shows a greeting on the console to a person.
+ * @param name The person name to be welcomed
+ */
+
+function greetingParametrised(name: string){ // strongTyped language? So, if name has been declarated as string .... string will be.
+    console.log(`Hello ${name}!`);
+}
+
+const person = "Juanito";
+
+greetingParametrised(person); //
+greetingParametrised("Menganito"); //
+greetingParametrised(33 as unknown as string); // Parsing values "as"... "as unknown as", magic keywords for intentionally parsing one data type to another
+
+
+/**
+ * 
+ * @param name Person name will be, as declarated, = "Pepe"
+ */
+function farewellPerson(name: string = "Pepe"){
+    console.log(`Bye, ${name}`);
+}
+
+farewellPerson() // console: Bye, Pepe
+farewellPerson("Alba"); // console: Bye, Alba
+
+/**
+ * This function shows a farewell to the given name person, if this has been given; when not given, as we used "?:" we created both cases
+ * @param nombre (Optional) The person name to be farewelled
+ */
+
+function farewellOptional(nombre?: string){
+    if (nombre){
+        console.log(`Bye, ${name}!`);
+    } else {
+        console.log(`Bye!`);
+    }
+}
+
+farewellOptional(); // Console. Bye!
+farewellOptional("Juanjo"); // Console: Bye, Juanjo!
+
+
+let name0, surname0, age0 = undefined;
+
+function manyParams(name0: string, surname0?: string, age0: number = 18){
+    if (surname0) {
+        console.log(`${name0} ${surname0} is ${age0} years old`)
+    } else {
+        console.log(`${name0} is ${age0} years old`)   
+    }
+};
+
+manyParams("Martin"); // Console: Martin is 18 years old
+manyParams("Martin", "Gonzalez"); // Console: Martin Gonzalez is 18 years old
+manyParams("Martin", undefined, 30); // Console: Martin is 30 years old
+manyParams("Martin", "Gonzalez", 30); // Console: Martin Gonzalez is 30 years old
+manyParams(name0="Martin", surname0="Gonzalez", age0=30); // Martin San Jose is 30 years old
+
+
+function greetingManyDataTypes(a: string | number ){
+
+   if ( typeof (a) === `string` ){
+    console.log("A is a string");
+   } else if ( typeof (a) === `number` ){
+        console.log("A is a number");
+     } else {
+        console.log("A is not a string nor a number");
+        throw Error("A input error, not a string not a number");
+     }
+};
+
+greetingManyDataTypes("Hola");
+greetingManyDataTypes(3);
+greetingManyDataTypes(true as unknown as number); // A boolean is not permitted because the function(params) has told to not to be other than string and/or number (as unknown as used here to pass the code as an example)
+
+function exampleReturn(name0?: string, surname0?: string): string | number {
+    return '${name0} ${surname0}';
+}
+
+exampleReturn(name0="Martin", surname0="Gonzalez"); 
+
+const nameAndSurname = exampleReturn("Martin", "Gonzalez");
+
+/* Function Overloading */
+
+// Dos formas de hacer lo mismo.
+// Podemos devolver propiedades
+console.log(nameAndSurname); // Console: Martin Gonzalez
+console.log(exampleReturn("Martin", "Gonzalez")) // Console: Martin Gonzalez
+
+
+/* By FACTOR SPREADING*/
+// No especificamos cuantos valores exactos se recibirán.
+
+function exampleMultiParams(...names: string[]) {
+    names.forEach( (name0) => {
+        console.log(name0);
+        return ""; // Al haber especificado ...names as a : string, something has to be returned even being "" empty
+    });
+}
+
+exampleMultiParams("Martin");
+exampleMultiParams("Martin", "Pepe", "Juan", "Alba");
+
+// One more example using an array
+
+const list4 = ["Alberto", "Pepito"];
+exampleListParams(list4);
+
+function exampleListParams(names4: string[]) {
+    names4.forEach((name4) => { 
+        console.log(name4);
+    });
+}
+exampleListParams(["Alba", "Juan"]);
+exampleListParams(list4);
+
+// VOID data type example.
+// VOID ... a value to aVOID ;-)
+
+/**
+ * 
+ * @param names5 return VOID, nothing.
+ */
+function exampleListParamsVoid(...names5: string[]): void {
+    names5.forEach((name5) => {
+        console.log(name5);
+    });
+}
+
+exampleListParamsVoid("Alba", "Juan", "Pepito");
+
+/*
+ TypeScript permits having a more interesting logic by letting functions to be worked with or without parameters
+ Podemos pasar parámetros de muchas diferentes formas.
+ Podemos poner valores por defecto de muchas maneras.
+*/
+
+// ARROW FUNCTION & THE EXPLANATION OF type
+// Sin especificar tipo, estamos dando paso a que la variable employee tenga implicitamente ANY type
+
+/*
+let employee = { // the variable has implicity the ANY type
+    name6: "Pepe",
+    surname6: "Juarez",
+    age6: 36
+}
+
+const employeege = (employee) => `${employee.name6} is ${employee.age6} years old`;
+*/
+
+
+/* Una buena práctica es crear el type de dicha variable, especificando cada type de data del array
+*/
+
+// Definyng the type for the object (employeeTyped)
+type employeeType = {
+    name7: string;
+    surname7: string;
+    age7: number;
+};
+
+/* Creating an object of employeeType type ... whose content has to fit the previous type definitons, so...
+    - 'name7' as a string
+    - surname7' as a string
+    - 'age7' as a number
+*/
+
+let employeeTyped: employeeType = {
+    name7: "Martin",
+    surname7: "Gonzalez",
+    age7: 42
+};
+
+/* Here, a function called employeeTypedAge is created, using the previous type defined,
+it will be returner as a :string with name7, surname7 and age7 attached to.
+*/
+const employeeTypedAge = (employeeTyped: employeeType):string => `${employeeTyped.name7} ${employeeTyped.surname7} is ${employeeTyped.age7} years old`
+
+// Invoking the function parsing the object as an argument
+employeeTypedAge(employeeTyped);
+
+
+/* Now, this function verifies if a employee can get the retirement or no
+*/
+const employeeTypedData = (employeeTyped: employeeType): string => {
+    
+    if ( employeeTyped.age7 >= 70 ) {
+        return `Employee ${employeeTyped.name7} ${employeeTyped.surname7}, being ${employeeTyped.age7} years old, is allowed to get retirement`;
+    } else {
+        return `Employee ${employeeTyped.name7} ${employeeTyped.surname7}, being ${employeeTyped.age7} years old, is NOT allowed to get retirement`
+    }
+};
+
+console.log(employeeTypedData(employeeTyped)); // "Employee Martin Gonzalez, being 42 years old, is NOT allowed to get retirement"
+
+
+// Embebbed functions (a function inside another function)
+/* Given the function 'getPaysheet' with 2 parameters:
+    - 'employeeTyped': The object ... as employeeType type defined previosly.
+    - 'ammount': A function "() => void", which is an empty callback (VOID returns NOTHING).
+    
+This function choose if the object meets the conditions, or not, to follow with the declared function ( if the employee has to get the monthly payroll, or not due to the nature of being retired depending on the age) */
+
+const getPaysheet = (employeeTyped: employeeType, ammount: () => void): void => {
+    if ( employeeTyped.age7 >= 70 ) {
+        return // return nothing, do nothing, the object doesn't meet the conditions
+    } else {
+        ammount() // callback to be executed if the object meet the conditions
+    }
+};
+
+
+/* Definimos otra función llamada 'employeeCollectsPayroll' que recibe un empleado como parámetro 
+y simplemente imprime un mensaje indicando que el empleado ha recogido su nómina. */
+const employeeCollectsPayroll = (employeeTyped: employeeType): void => {
+    console.log(`${employeeTyped.name7} ${employeeTyped.surname7} collects the monthly payroll`);
+};
+    
+/* Llamamos a 'getPaysheet' nuevamente, pero esta vez pasamos 'employeeCollectsPayroll' 
+    como un callback. Para pasar esta función, la envolvemos en una función anónima (lambda) */
+getPaysheet(employeeTyped, () => employeeCollectsPayroll(employeeTyped));
+
+/*
+Unknown function (function expression).
+Integred since ECMA6.
+*/
+
+// // //  HNASTA AQUI, "PASAR CALLBACKS"
+
+/*
+* ASYNC FUNCTIONS & GENERATOR FUNCTIONS
+*/
+ 
+// Async functions
+// "En algun momento quiero que esta tarea se ejecute"
+
+async function exampleAsync(): Promise<string> {
+
+    //Await
+    await console.log("Tarea a completar antes de seguir con la secuencia de instrucciones");
+    console.log("La promesa se alcanzó ergo tarea se ha compleado")
+    return "Completed";
+};
+
+// .then
+exampleAsync().then ((answer) => {
+    console.log("Answer", answer)
+});
+// .catch
+exampleAsync().catch ((error) => {
+    console.log("An error has been catched")
+});
+// .finally
+exampleAsync().finally(() => "All task done.");
+
+
+/* promise methods explainded:
+* .then = Cuando la promesa se alcanza, entonces haz esto
+* .catch = Atrapa un estado, por ejemplo de error, en toda la ejecución
+* .finally = Cuando todo ha terminado, haz esto.
+*/
+
+
+
+// Generator Functions
+// como un iterador
+// Pueden emitir nuevos valores, que se van "escuchando" y procesando
+
+
+function* exampleGenerator() {
+
+    // yield word! -> para emitir valores, como un método de suscripción
+
+    let index = 0;
+    while (index <5) {
+        // Mientras el indice sea menor a 5, emitimos un valor
+        yield index++;
+    }
+};
+// Guardamos la función generadora en una variable
+let generator = exampleGenerator();
+
+// Ahora accedemos a los valores emitidos
+
+console.log(generator.next().value); // será 0
+console.log(generator.next().value); // será 1
+console.log(generator.next().value); // será 2
+console.log(generator.next().value); // será 3
+
+
+
+// Worker and Saga
+// se usa para gestionar el estado de la función
+// haitual en react, angular, ...
+
+function* watcher(aValue: number) {
+
+    yield aValue; // emitimos el valor inicial
+
+    yield* workerGenerator(aValue); // llamamos a las emisiones del worker para que emita otros valores
+
+    yield aValue + 10; // emitimos el valor final
+
+}
+
+function* workerGenerator(aValue: number) {
+    yield aValue + 1;
+    yield aValue + 2;
+    yield aValue + 3;
+
+}
+
+let generatorSaga = watcher(0);
+
+console.log(generatorSaga.next().value); // será 0 (lo ha hecho el watcher)
+console.log(generatorSaga.next().value); // será 1 (lo ha hecho el watcher)
+console.log(generatorSaga.next().value); // será 2 (lo ha hecho el watcher)
+console.log(generatorSaga.next().value); // será 3 (lo ha hecho el watcher)
+console.log(generatorSaga.next().value); // será 10 (lo ha hecho el watcher)
