@@ -1,4 +1,4 @@
-# OpenBootcamp - TypeScript programm
+# OpenBootcamp - TypeScript
 ***
 
 ## Contents
@@ -10,4 +10,4 @@
 * [ ] Lesson 6:  
 * [ ] Lesson 7:  
 * [ ] Lesson 8:  
-*/
+
