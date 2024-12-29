@@ -97,6 +97,33 @@ let employeeTyped: employeeType = {
 
 Function overloading handles multiple function signatures with different types or numbers of parameters.
 
+We use the function overloading when a to-do decision has to be donde depending on what kind of value has been given.
+
+❌ WRONG:
+
+```ts
+function showError(errorType: string): void {
+    console.log("An error has ocurred", errorType);
+}
+
+❌ WRONG:❌ WRONG:❌ WRONG:❌ WRONG:❌ WRONG:❌ WRONG:
+function showError(errorType: number, codeType: number): void {
+    // WRONG WRONG WRONG
+    console.log("An error has ocurred:" errorType, codeType)
+}
+❌ WRONG:❌ WRONG:❌ WRONG:❌ WRONG:❌ WRONG:❌ WRONG:
+```
+
+✅ CORRECT:
+
+```ts
+function showError(errorType: string | number): void {
+ console.log("An error has ocurred", errorType);
+}
+```
+
+✅ CORRECT:
+
 ```ts
 let name0, surname0, age0 = undefined;
 
@@ -113,6 +140,20 @@ manyParams("Martin", "Gonzalez"); // Console: Martin Gonzalez is 18 years old
 manyParams("Martin", undefined, 30); // Console: Martin is 30 years old
 manyParams("Martin", "Gonzalez", 30); // Console: Martin Gonzalez is 30 years old
 manyParams(name0="Martin", surname0="Gonzalez", age0=30); // Martin San Jose is 30 years old
+```
+
+❌ WRONG:
+
+```ts
+let name0, surname0, age0 = undefined;
+
+function manyParams(name0: string, surname0?: string, age0: number = 18){
+    if (surname0) {
+        console.log(`${name0} ${surname0} is ${age0} years old`)
+    } else {
+        console.log(`${name0} is ${age0} years old`)   
+    }
+};
 ```
 
 ### ✅ Parameter Passing Verification:
