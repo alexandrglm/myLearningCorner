@@ -545,7 +545,40 @@ That's like this due to the needed improvements of code flexibility and legibili
   greeting("Juan"); // Will log "Hello, Juan!"
   greeting(); // Will log "Hello!"
   ```
-  
+Another example:    One var and another are passed to args. .
+
+A function has been overloaded here:
+
+```ts
+// 1. One var passed:
+function showError( error: string ): void {
+    console.log("An error occurred:", error);
+}
+
+// 1. Another var passed:
+function showError( errorNumber: number): void {
+      console.log("An error occurred with code:", error);
+}
+
+```
+
+But it can be a bit more concise de-overloading them:
+
+```ts
+// 2. Both vars pased, overloading the function.
+function showError( error: string, errorNumber: number): void {
+    console.log("An error ocurred:", error, "with code ", errornumber
+}
+
+
+// or
+
+function showError ( error: string | number): void {
+    console.log("An error ocurred:, error);
+}
+```
+
+**Overloading may be so useful, but in general (styling) terms, an overloaded function can be improved by well-defining the params.-args.**
 
 ## 🔸 FUNCTION ARGUMENTS - Passing values to.
 
