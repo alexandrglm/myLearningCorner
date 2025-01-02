@@ -1,4 +1,4 @@
-# 🔸 SESSION #3 FUNCTIONS (Part 1)
+# 🔸 SESSION #3 FUNCTIONS
 
 Abstract:
 
