@@ -38,7 +38,7 @@ The resulting ~/package.json will be like this:
 }
 ```
 
-## 2️⃣ Installing nmp dev tools.
+## 2️⃣ Installing nmp dev tools & TS compiler initialisation
 ```bash
 $ npm i --save-dev @types/node nodemon ts-node typescript
 ```
@@ -57,8 +57,10 @@ typescript: TS language core.
 
 rimraf: Generates bundles in a easy way
 ```
+A *node_modules* will be created with all the dependences locally, also with its .json (*package-lock-json*).  
+- TS compiler init:
+`$ npx tsc --init` 
 
-A *node_modules* will be created with all the dependences locally, also with its .json (*package-lock-json*).
 
 ## 3️⃣ Executing TS
 A *tsconfig.json* needs to be created.
