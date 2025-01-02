@@ -93,7 +93,7 @@ let employeeTyped: employeeType = {
 
 ## ✅✅✅ Code is consice, efficient
 
-### ✅ Function Overloading
+### ✅ Function Overloading (Part 1)
 
 Function overloading handles multiple function signatures with different types or numbers of parameters.
 
@@ -523,7 +523,7 @@ function sumAll() {
 }
 ```
 
-## 🔸 FUNCTION OVERLOADING
+## 🔸 FUNCTION OVERLOADING (Part 2: De-overloading same functions as best practices)
 
 TypeScript allows overloading the functions by enabling to be declared the same function but with many differents patterns (values, params.), as needed..
 
