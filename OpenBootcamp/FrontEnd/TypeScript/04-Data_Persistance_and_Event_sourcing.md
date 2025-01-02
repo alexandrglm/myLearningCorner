@@ -1,6 +1,7 @@
 # PENDING:
 ⚠️⚠️⚠️Pending: Reinstall&re-configure nodejs, --dev-tools nodemon rimraf ts-node, aliases, restarting environment.
-
+***
+Left since: [Session4 TS 14:54](https://www.youtube.com/watch?v=9cx98y7gYfA&list=PLkVpKYNT_U9egW5padLMHmnTPb6xm4hLf&index=4)
 
 # Session 4: DATA PERSISTANCE & EVENT SOURCING
 
