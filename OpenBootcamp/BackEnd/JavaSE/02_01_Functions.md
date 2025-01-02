@@ -99,5 +99,5 @@ public class Functions {
 
 - Avoid duplicated code. (Concisse code).  
 - Code refactoring, done easy:  
-  
   [Image 02-CodeRefactoring Easy]
+- Method? Or function? Method is related to an object (Object.method) whereas a function isn't.  
