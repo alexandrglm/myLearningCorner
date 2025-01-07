@@ -3,12 +3,13 @@ package com.example;
 /**
  * Create a function which recieves a price before tax rates and, then, shows the final price including tax rates (21%)
  * Also, add a method to round the prices: Rounding Mode
- * New data type will be used: BigDecimal
+ * New "data type" will be used: BigDecimal.
+ * Big Decimal IS NOT a primitive JAVA data type NOR a method, but a CLASS from the java.math package.
  * New passing values method will be used: .THEDATATYPEValue() .... To Double: .DoubleValue()
  * Rounding Mode syntax:
  * BigDecimal(val: theVariablewithBigDecimals).setScale(2, RoundingMode.HALF_UP);
  *
- * So, BigDecimal and RoundingMode have to be loaded (imported) at the first time.
+ * So, BigDecimal and RoundingMode (both from Java Math package) have to be loaded (imported) at the first time.
  *
  * The most important part of this exercise is passing values as arguments in a function.
  * BigDecimals and RoundingMode methods are secondary for this.
@@ -26,7 +27,7 @@ public class FunctionExercise1 {
         BigDecimal theTaxes = new BigDecimal(thePrice * 0.21).setScale(2, RoundingMode.HALF_UP);
 
         BigDecimal finalPrice = new BigDecimal(thePrice).add(theTaxes).setScale(2, RoundingMode.HALF_UP);
-        
+
         // This is the way letting a function "to exist"
         String printTheResults = getTheFinalPrice(thePrice, theTaxes, finalPrice);
         System.out.println(printTheResults);
