@@ -24,7 +24,7 @@
 ```
 ***
 # MODULE 6 PART 1
-## JAVASCRIPT (iii) // UML // GIT 
+## JAVASCRIPT (iii)
 ```text
 ```
 ***
