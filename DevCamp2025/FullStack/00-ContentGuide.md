@@ -24,7 +24,7 @@
 ### Module 2 keypoints:
 * Setting up a Python environment.
 * Differences on Python versions.
-* Doing a DOC research.
+* Performing a well DOC research.
 * Primitive data types. How/When to use them.
 ***
 # MODULE 3
