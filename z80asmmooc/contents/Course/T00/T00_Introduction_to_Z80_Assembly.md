@@ -1,6 +1,8 @@
 # DEZ80 0.1: Intro
 ### Platform:
 https://profesorretroman.com/course/view.php?id=2&section=0
+![image](https://github.com/user-attachments/assets/1b473457-506d-4f15-8a7b-6b7beee17cf6)
+
 
 ### Objectives:
 As long as nowadays assembling on Z80 might be seen as oudated, newer architectures are still using the same principles instead (which a few differences as a more complexity) so, this reveals the relevance of adquiring these knowledge.
@@ -22,6 +24,7 @@ The course is structured by using videos in a three different perspectives:
 **A. Practice**  
 B. Theory   
 C. Learnings  
+![image](https://github.com/user-attachments/assets/d6e68616-1da1-42de-8393-aa80fb49e000)
 
 #### A. PRACTICE  
 The mandatory way to be follow, in which every knowledge is adquired by coding, testing, practicing.
