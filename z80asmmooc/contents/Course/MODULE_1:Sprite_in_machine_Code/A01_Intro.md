@@ -23,3 +23,5 @@ Goals from Module 1:
 - Draw pixels through different screen positions.
 - Coding and refactoring sprites.
 - Colouring Sprites.
+
+
