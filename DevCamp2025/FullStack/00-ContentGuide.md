@@ -1,5 +1,15 @@
-# MODULE 1
-## SCSS, FLEXBOX (ii), UX/UI
+# MODULE 1 PART 1
+## SCSS
+```text
+```
+***
+# MODULE 1 PART 2
+## FLEXBOX (ii)
+```text
+```
+***
+# MODULE 1 PART 3
+## UX/UI
 ```text
 ```
 ***
