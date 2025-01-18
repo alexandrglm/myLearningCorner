@@ -27,10 +27,10 @@ C. Learnings
 ![image](https://github.com/user-attachments/assets/d6e68616-1da1-42de-8393-aa80fb49e000)
 
 #### A. PRACTICE  
-The mandatory way to be follow, in which every knowledge is adquired by coding, testing, practicing.
+The mandatory way to be followed, where every knowledge is adquired by coding, testing, practicing.
 
 #### B. THEORY  +  C. LEARNINGS
-B and C are not esential but, both, allows to get a deeper knowledge about the Module is being learning.
+B and C are not esential but, both, allows to get a deeper knowledge about the Module is being learned.
 ***
 # DEZ80 0.4: Exercises, capstone, evaluations.
 - Self-evaluated exercises.
