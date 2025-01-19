@@ -400,8 +400,48 @@ In this example, the code will draw a coloured string (typed before at the DATA 
 loop:
    jr    loop
 ```
-# What assembler compiles:
+# Compiling
+## `make`
 
+The compiling process will create many compiled binary formats:
+- .BIN - The program in binary format.
+- .CST - The program in CASSETE format.
+- .DSK - The program in a DISK format.
+
+
+
+A compiling process example:
+```bash
+$ cd ~/game/
+dev@ice:~/game$ make
+preobjs: 'obj/dsk/.folder obj/.folder'
+[game] 
+[game] === PREBUILD PROCCESSING DONE!
+[game] ============================================================
+[game] 
+/home/dev/git/2_iKASTAROAK/Z80/0_environment/cpctelera/cpctelera/tools/sdcc-3.6.8-r9946/bin/sdasz80 -l -o -s -I/home/dev/git/2_iKASTAROAK/Z80/0_environment/cpctelera/cpctelera/src -Isrc   obj/main.rel  src/main.s 
+[game] Linking binary file
+/home/dev/git/2_iKASTAROAK/Z80/0_environment/cpctelera/cpctelera/tools/sdcc-3.6.8-r9946/bin/sdcc -mz80 --no-std-crt0 -Wl-u --code-loc 0x4000 --data-loc 0 -l/home/dev/git/2_iKASTAROAK/Z80/0_environment/cpctelera/cpctelera/cpctelera.lib      obj/main.rel -o "obj/game.ihx"
+[game] Creating Amsdos binary file obj/game.bin
+/home/dev/git/2_iKASTAROAK/Z80/0_environment/cpctelera/cpctelera/tools/hex2bin-2.0/bin/hex2bin -p 00 "obj/game.ihx" | tee obj/game.bin.log
+hex2bin v2.0, Copyright (C) 2015 Jacques Pelletier & contributors
+
+Binary file start = 00004000
+Records start     = 00004000
+Highest address   = 00004127
+Pad Byte          = 0
+[game] Creating Cassette file 'game.cdt'
+'game.cdt' < 'game.bin' {Format:'firmware' Load:'0x4000' Run:'0x4000' Name:'Game'}
+[game] Successfully created 'game.cdt'
+[game] Creating Disk File 'game.dsk'
+DSK : game.dsk
+------------------------------------
+[game.dsk] Added BIN file 'obj/game.bin'
+[game] Successfully created 'game.dsk'
+[game] All files added to game.dsk. Disc ready.
+[game] Creating Snapshot File 'game.sna'
+[game] Successfully created 'game.sna'
+```
 
 
 
