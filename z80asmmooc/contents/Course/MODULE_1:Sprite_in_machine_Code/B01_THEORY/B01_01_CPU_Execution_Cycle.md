@@ -16,11 +16,12 @@ The AMSTRAD buses are:
 - **ADRESS BUS**:  16 bit lenght.
 
 
-The Z80 registers are:
+The Z80 interarl registers are:
 
-- **PC**:  Program Counter
-- **BR**:  d
-- **IR**
+- **PC**:  Program Counter - Everytime an instruction has been loaded, and unless there are not any instruction ordering to backward the counter, an attached circuit sums +1 on the program counter.
+- **BR**:  Buffer register - Temporary storage for anything that comes from the memory.
+- **IR**:  Instruction register -  Same as BR, but for storing instructions.
+
 
 The Z80 memory registers are:
 - **A/F**
