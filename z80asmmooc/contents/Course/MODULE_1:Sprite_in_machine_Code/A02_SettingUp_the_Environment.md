@@ -148,5 +148,89 @@ cpct_bin2c         cpct_installrslib  cpct_rgas2c        cpct_tmx2data
 cpct_bin2sna       cpct_mkproject     cpct_rvm           cpct_winape
 cpct_binpatch      cpct_pack          cpct_sp2tiles
 ```
-- Now, it's time to get WinAPE by using `cpct_winape`:
+- Now, it's time to get WinAPE by using `cpct_winape`. **Make sure your system is wine-enabled (:i386 arch., wine already configured, and so on).
+```bash
+$ cpct_winape 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% WinAPE laucher script
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+[Warning] WinAPE is not configured for your system yet.
+
+Proceeding to install/configure WinAPE on your system.
+
+Do you already have WinAPE installed (y/n)?n
+
+This script can automatically download and install WinAPE under your CPCtelera tools folder for you.
+
+Do want WinAPE to be downloaded & installed (y/n)?y
+ Downloading WinAPE from (http://winape.net/download/WinAPE20B2.zip)...
+2025-01-19 18:22:45 URL:http://winape.net/download/WinAPE20B2.zip [4458571/4458571] -> "/REMOVED_FOR_PRIVACY]2_iKASTAROAK/Z80/0_environment/cpctelera/cpctelera/tools/scripts/../winape.zip" [1]
+Unpacking WinAPE...
+Setting CPCTelera default WinAPE.ini file...
+WinAPE is now configured and installed in '[REMOVED_FOR_PRIVACY]/2_iKASTAROAK/Z80/0_environment/cpctelera/cpctelera/tools/scripts/../winape'
+```
+
+- Then, we need to get RetroVirtual Machine, by performing the same method used before with WinApe, but with the bin `cpct_rvm`:
+```bash
+$ cpct_rvm 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% RetroVirtualMachine laucher script
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+[Warning] RVM is not configured for your system yet.
+
+Proceeding to install/configure RVM on your system.
+
+Do you already have RVM installed (y/n)?n
+
+This script can automatically download and install RVM under your CPCtelera tools folder for you.
+
+Do want RVM to be downloaded & installed (y/n)?y
+ Selecting appropriate URL for your Operative System...
+ Downloading RVM from (http://retrovirtualmachine.ams3.digitaloceanspaces.com/release/beta1/linux/x64/RetroVirtualMachine.2.0.beta-1.r7.linux.x64.zip)...
+2025-01-19 18:24:14 URL:https://retrovirtualmachine.ams3.digitaloceanspaces.com/release/beta1/linux/x64/RetroVirtualMachine.2.0.beta-1.r7.linux.x64.zip [67292659/67292659] -> "[REMOVED_FOR_PRIVACY]/2_iKASTAROAK/Z80/0_environment/cpctelera/cpctelera/tools/scripts/../RVM.zip" [1]
+Unpacking RVM...
+RVM is now configured and installed in '   #/[REMOVED_FOR_PRIVACY]/2_iKASTAROAK/Z80/0_environment/cpctelera/cpctelera/tools/scripts/../rvm'
+
+Launching RetroVirtualMachine V2...
+Machine:  cpc664
+
+```
+# Creating a new Project.
+1. By using `cpct_mkproject` `-a` (--asm, only available at devel. version 1.5.)  
+```bash
+cpct_mkproject -a game
+
+===============================================================
+== CPCtelera: Creating new project in game/
+===============================================================
+> Setting up assembler-based defaults... [ OK ]
+> Creating project folder structure... [ OK ]
+> Copying files from project templates... [ OK ]
+> Copying basic VS Code project configuration... [ OK ]
+> Configuring Android APK exporter... [ OK ]
+> Configuring project name to: game [ OK ]
+> Configuring z80 code load address: 4000 [ OK ]
+> Configuring $CPCT_PATH: Using environment variable [ OK ]
+
+===============================================================
+== CPCtelera: New project created in game/
+===============================================================
+
+```
+## **The default path will be ~/game/**
+```bash
+$ ls -l ~/game
+total 20
+drwxrwxr-x 3 dev dev 4096 ene 19 18:31 cfg
+drwxrwxr-x 2 dev dev 4096 ene 19 18:31 dsk
+drwxrwxr-x 3 dev dev 4096 ene 19 18:31 exp
+-rw-rw-r-- 1 dev dev 1989 ene 19 18:31 Makefile
+drwxrwxr-x 2 dev dev 4096 ene 19 18:31 src
+```
+
+
 
