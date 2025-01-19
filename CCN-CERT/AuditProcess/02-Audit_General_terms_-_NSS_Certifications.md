@@ -42,6 +42,7 @@ A lo largo del siguiente módulo, conoceremos los criterios generales para la Au
 Las organizaciones en el ámbito de aplicación del ENS, ya pertenezcan al sector público o al sector privado, y muy especialmente las Entidades de Certificación, deben ser conscientes de que las Auditorías de Conformidad con el ENS y la expresión de tal conformidad, a través de las correspondientes Certificaciones, guardan relación directa con la garantía de seguridad de los sistemas de información de las entidades públicas.
 
 Debido a ello, las organizaciones que implementen o cumplan con el ENS y, especialmente, las Entidades de Certificación, actuarán siempre con la mayor profesionalidad y rigor, garantizando la calidad y los resultados de las auditorías y la generación de los certificados a que haya lugar.
+***
 
 # Scope of the Audit
 
@@ -70,3 +71,26 @@ An accurate meaning of an Audit Scope would be:
 
 - Tanto unos (los sistemas de información) como los otros (los servicios sustentados en dichos sistemas)… 
   ... deberán aparecer explícitamente mencionados en el Certificado de Conformidad con el ENS que, en su caso, se expida por la Entidad de Certificación, en el caso de tratarse de una Auditoría de Certificación de conformidad con el ENS.
+***
+# Certification Entity Tech. Competence
+
+[ENG]
+
+The Certification Entity must demomnstrate an experience of, at least, **THREE YEARS** regularly conducting Audit Processes related to the ISS, with a special arrangement to:
+
+- Contracts value.
+  
+- A detail of the given Certifications.
+  
+- Time/Journals involved in every Audit process.
+  
+
+[SPA]
+
+La Entidad de Certificación ha de tener una experiencia demostrable de, al menos, tres años en la realización de forma regular de auditorías relacionadas con la seguridad de la información, tomándose en consideración:
+
+- El importe de los contratos
+
+- El número de certificados emitidos.
+
+- Las jornadas de auditor dedicadas a esta actividad:
