@@ -1,5 +1,5 @@
 ## Installing WinAPE (a Win CPC emulator) and CPCtelera v1.5
-- WinAPE, Windows Amstrad Plus Emulator, can be installed on Linux.
+- WinAPE, Windows Amstrad Plus Emulator, needs to be wine-emulated.
 - Latest version available: 2.0b2 	05-Jan-2016 
 - While this is the WinAPE [Source](http://www.winape.net/downloads.jsp), we won't install it separately, as long as **CPCtelera** will do this stuff for us.
 So, let's start setting up the environment by starting  with CPCtelera compilation.
