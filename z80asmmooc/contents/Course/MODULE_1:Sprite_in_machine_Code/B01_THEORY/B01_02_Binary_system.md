@@ -1,3 +1,5 @@
+pending ...  
+
 # B1_02: Binary system (Base 2).
 Video class: [Youtube Link](https://youtu.be/ONMS354Xjz8)  
 Materials used: [1.T02.introduccionAlBinario.pdf](https://github.com/alexandrglm/elearning_tools/blob/9e0eecc5523a81b341b0fbb4c84fc4fcf39c6a2d/z80asmmooc/contents/Course/MODULE_1%3ASprite_in_machine_Code/B01_THEORY/B01_materials/1.T02.introduccionAlBinario.pdf)    
