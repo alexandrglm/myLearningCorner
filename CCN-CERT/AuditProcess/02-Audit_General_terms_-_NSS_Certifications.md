@@ -6,7 +6,7 @@
   
 - Technical Competence (requirements)
   
-- Entidad Certificadora resources
+- Certification Bodies' resources
   
 - Audit extension time
   
@@ -94,3 +94,8 @@ La Entidad de Certificación ha de tener una experiencia demostrable de, al meno
 - El número de certificados emitidos.
 
 - Las jornadas de auditor dedicadas a esta actividad:
+
+***
+
+# pending
+# Certification Entity resources
