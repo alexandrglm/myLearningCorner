@@ -1,8 +1,13 @@
 ## Installing WinAPE (a Win CPC emulator) and CPCtelera v1.5
-- WinAPE, Windows Amstrad Plus Emulator, can be installed on Linux. [Source](http://www.winape.net/downloads.jsp)
+- WinAPE, Windows Amstrad Plus Emulator, can be installed on Linux.
 - Latest version available: 2.0b2 	05-Jan-2016 
+- While this is the WinAPE [Source](http://www.winape.net/downloads.jsp), we won't install it separately, as long as **CPCtelera** will do this stuff for us.
+So, let's start setting up the environment by starting  with CPCtelera compilation.
 
-## CPCtelera git: https://github.com/lronaldo/cpctelera.git
+# Setting up the environment
+
+**CPCtelera sources**: https://github.com/lronaldo/cpctelera.git  
+
 There are many branches inside the same repo which can be chosen by typing `git checkuot` after cloning the repo.
 * `$ git branch`shows the current branch (master branch as default, CPCtelera v.1.4.2)  
 * `$ git checkout development` turns the branch to `development` branch, which tends to get the lastest fixes, content, and so on.
@@ -135,3 +140,13 @@ If you wanted to create a new project, you may use cpct_mkproject <project_folde
 
 If you have any comments, please go to https://github.com/lronaldo/cpctelera or send an email cpctelera@cheesetea.com. We hope you enjoy the library and expect to see your games comming out soon :).
 ```
+- Once compiled and installed, we can check the new binaries added to our system (we should reload our paths, `source .bashrc` and/or by closing/reopening a new terminal session).
+```bash
+$ cpct_
+cpct_aks2c         cpct_img2tileset   cpct_png2chars     cpct_tmx2csv
+cpct_bin2c         cpct_installrslib  cpct_rgas2c        cpct_tmx2data
+cpct_bin2sna       cpct_mkproject     cpct_rvm           cpct_winape
+cpct_binpatch      cpct_pack          cpct_sp2tiles
+```
+- Now, it's time to get WinAPE by using `cpct_winape`:
+
