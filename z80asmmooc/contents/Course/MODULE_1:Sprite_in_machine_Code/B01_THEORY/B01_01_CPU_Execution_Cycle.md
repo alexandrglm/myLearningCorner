@@ -1,11 +1,13 @@
 # B1_01: The CPU Execution Cycle
-Video class: [link](https://youtu.be/p8DeOFI-CKE) 
-Materials used: 
+Video class: [Youtube Link](https://youtu.be/p8DeOFI-CKE)  
+Materials used: [1.T01.elCicloDeEjecucionDeLaCPU.pdf](https://github.com/alexandrglm/elearning_tools/blob/main/z80asmmooc/contents/Course/MODULE_1%3ASprite_in_machine_Code/B01_THEORY/B01_materials/1.T01.elCicloDeEjecucionDeLaCPU.pdf)  
+***
 
 #### Content:
 - How the Z80's execution cycle works.  
 - The `Fetch - Decode - Execute` process, illustrated using the *A01_02 program* as an example: *"How to draw and display a pixel on the screen."*  
 - An introduction to processor counters, registers, buses, and RAM.
+***
 
 The Z80 processor follows a `fetch-decode-execute` cycle to read instructions from memory, perform the necessary operations, and move to the next instruction, enabling the execution of programs and the manipulation of data.(¹)
 
