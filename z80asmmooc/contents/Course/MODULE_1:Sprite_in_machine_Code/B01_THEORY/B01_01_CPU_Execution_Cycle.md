@@ -131,5 +131,5 @@ The code can quickly switch between sets using a single exchange command, which 
 
 ***
 #### References
-1. 'How the Z80 work' - Reading-Uk [Link](http://www.reading-uk.net/en/how-the-z-80-work/)
-2. 'The Z80 registers' - Jimmy Dansbo's Z80 Information site [Link](https://jnz.dk/z80/registers.html)
+1. '*How the Z80 work*' - Reading-Uk [Link](http://www.reading-uk.net/en/how-the-z-80-work/)
+2. '*The Z80 registers*' - Jimmy Dansbo's Z80 Information site [Link](https://jnz.dk/z80/registers.html)
