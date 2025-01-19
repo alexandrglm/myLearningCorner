@@ -411,8 +411,6 @@ The compiling process will create many compiled binary formats:
 
 ⚠️ As long as we will use SNAPSHOTS when developing, the loading processes ARE NOT THE SAME using SNAPSHOTs against BIN/CASSETE/DISK programs.
 
-
-
 A compiling process example:
 ```bash
 $ cd ~/game/
@@ -446,7 +444,7 @@ DSK : game.dsk
 [game] Successfully created 'game.sna'
 ```
 ***
-# RUNNING OUR PROGRAM
+# RUNNING THE PROGRAM
 
 ## CDT - RVM
 ```bash
@@ -458,14 +456,29 @@ Command:  RUN"\n
 ```
 ![image](https://github.com/user-attachments/assets/3dfdadeb-6aee-486d-a32d-035303451512)
 
-## SNA / DSK - WinAPE
+## SNA / DSK / CDT - WinAPE
 ```bash
 ~/game$ cpct_winape game.sna 
 Autoloading symbols file obj/game.noi
 ```
 ![image](https://github.com/user-attachments/assets/0be2fcb0-806c-486c-bf3c-0ddaee2e7094)
-
-
+***
+- The DSK loading throug WinAPE actually opens a new WinAPE instance and type for us `run"{THE_PROGRAM.bin}`
+```bash
+~/game$ cpct_winape game.dsk 
+Autoloading symbols file obj/game.noi
+```
+  
+- The CDT load has to be run at RVM.  
+Cassete loads **use fast-forwarding** when **loading** the program, not so in its execution.  
+```bash
+~/game$ cpct_rvm game.cdt
+Launching RetroVirtualMachine V2...
+Machine:  cpc464
+CDT:      game.cdt
+Command:  RUN"\n 
+WarpMode: ON
+```
 
 
 
