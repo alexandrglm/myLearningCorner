@@ -1,5 +1,6 @@
 ## Installing WinAPE (a Win CPC emulator) and CPCtelera v1.5
-- WinAPE can be deprecated by using an Amstrad CPC Linux emu.
+- WinAPE, Windows Amstrad Plus Emulator, can be installed on Linux. [Source](http://www.winape.net/downloads.jsp)
+- Latest version available: 2.0b2 	05-Jan-2016 
 
 ## CPCtelera git: https://github.com/lronaldo/cpctelera.git
 There are many branches inside the same repo which can be chosen by typing `git checkuot` after cloning the repo.
@@ -33,7 +34,7 @@ $ git branch -a
 $ git checkout development
 branch 'development' set up to track 'origin/development'.
 ```
-- Now, we can start the `./setup.sh`.
+- Now, we can start the `./setup.sh`. Make sure which user you are using as long as executing by the root user will make these binaries available only for the selected used. As regular, don't use root account.
 - This building script will ensure all the requeriments are satisfied.   
 These are the libraries which should be installed before running the setup as they are supported on Debian sources by default (Debian-next -Trixie-):
 ```
@@ -119,10 +120,10 @@ Everything seems to be OK.
 == 3: Configuring CPCtelera environment
 ===============================================================
 > Setting up present CPCtelera folder as install directory and configuring routes and templates...
->>> CPCTelera full path: /home/dev/git/2_iKASTAROAK/Z80/0_environment/cpctelera/cpctelera
+>>> CPCTelera full path: [REMOVED_FOR_PRIVACY]/2_iKASTAROAK/Z80/0_environment/cpctelera/cpctelera
 >>> Inserting full path into build config template... [ OK ]
->>> CPCTelera scripts path: /home/dev/git/2_iKASTAROAK/Z80/0_environment/cpctelera/cpctelera/tools/scripts
->>> Adding scripts path to $PATH variable in /home/dev/.bashrc... [ OK ]
+>>> CPCTelera scripts path: [REMOVED_FOR_PRIVACY]/2_iKASTAROAK/Z80/0_environment/cpctelera/cpctelera/tools/scripts
+>>> Adding scripts path to $PATH variable in .bashrc... [ OK ]
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% CPCtelera is now ready to be used on your system. %%%
