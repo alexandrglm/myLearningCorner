@@ -1,17 +1,19 @@
 ## Installing WinAPE (a Win CPC emulator) and CPCtelera v1.5
-- WinAPE, Windows Amstrad Plus Emulator, needs to be wine-emulated.
+- WinAPE, Windows Amstrad Plus Emulator, needs to be wine-loaded.
 - Latest version available: 2.0b2 	05-Jan-2016 
-- While this is the WinAPE [Source](http://www.winape.net/downloads.jsp), we won't install it separately, as long as **CPCtelera** will do this stuff for us.
-So, let's start setting up the environment by starting  with CPCtelera compilation.
+- Although the WinAPE  [Source](http://www.winape.net/downloads.jsp) is available, there’s no need to install it separately, as CPCtelera will handle this for us.
+
+Let's begin by setting up the environment and starting with the compilation of CPCtelera.
 
 # Setting up the environment
 
 **CPCtelera sources**: https://github.com/lronaldo/cpctelera.git  
 
-There are many branches inside the same repo which can be chosen by typing `git checkuot` after cloning the repo.
-* `$ git branch`shows the current branch (master branch as default, CPCtelera v.1.4.2)  
-* `$ git checkout development` turns the branch to `development` branch, which tends to get the lastest fixes, content, and so on.
-* We can check all the branches availabes with `git branch -a`
+The repository contains multiple branches, which can be selected using `git checkout` after cloning it:  
+- `$ git branch` displays the current branch (the default is the master branch, CPCtelera v1.4.2).  
+- `$ git checkout development` switches to the `development` branch, which usually contains the latest fixes and updates.  
+- You can view all available branches with `$ git branch -a`.
+
 ```bash
 $ git branch -a
 * development
@@ -34,14 +36,16 @@ $ git branch -a
   remotes/origin/spritemirroring
   remotes/origin/update2cdt
 ```
-- `development`branch will be used in our course, so
+- ⚠️ `development` branch will be used. 
 ```bash
 $ git checkout development
 branch 'development' set up to track 'origin/development'.
 ```
-- Now, we can start the `./setup.sh`. Make sure which user you are using as long as executing by the root user will make these binaries available only for the selected used. As regular, don't use root account.
-- This building script will ensure all the requeriments are satisfied.   
-These are the libraries which should be installed before running the setup as they are supported on Debian sources by default (Debian-next -Trixie-):
+- Now, we can start the `./setup.sh` script. ⚠️ Ensure you know which user account you are using, as running it as the root user will make the binaries only available for that specific user. **As always, avoid using the root account. ⚠️
+ 
+- This build script will verify if all requirements are met.  
+The following libraries should be installed beforehand, as they are supported by default in Debian sources (Tested on Debian-next -Trixie-):
+
 ```
 gcc g++ make bison flex mono-complete libboost-dev libfreeimage-dev
 ```
@@ -140,7 +144,9 @@ If you wanted to create a new project, you may use cpct_mkproject <project_folde
 
 If you have any comments, please go to https://github.com/lronaldo/cpctelera or send an email cpctelera@cheesetea.com. We hope you enjoy the library and expect to see your games comming out soon :).
 ```
-- Once compiled and installed, we can check the new binaries added to our system (we should reload our paths, `source .bashrc` and/or by closing/reopening a new terminal session).
+- Once compiled and installed, we can check the new binaries added to our system.
+- Make sure to reload your paths by running `source .bashrc` or by closing and reopening a new terminal session.  
+
 ```bash
 $ cpct_
 cpct_aks2c         cpct_img2tileset   cpct_png2chars     cpct_tmx2csv
@@ -148,7 +154,8 @@ cpct_bin2c         cpct_installrslib  cpct_rgas2c        cpct_tmx2data
 cpct_bin2sna       cpct_mkproject     cpct_rvm           cpct_winape
 cpct_binpatch      cpct_pack          cpct_sp2tiles
 ```
-- Now, it's time to get WinAPE by using `cpct_winape`. **Make sure your system is wine-enabled (:i386 arch., wine already configured, and so on).
+- Now, it's time to get WinAPE by using `cpct_winape`. ⚠️ **Ensure your system is Wine-enabled** (e.g., :i386 architecture, Wine properly configured, etc.). ⚠️
+
 ```bash
 $ cpct_winape 
 
@@ -200,7 +207,8 @@ Machine:  cpc664
 
 ```
 # Creating a new Project.
-1. By using `cpct_mkproject` `-a` (--asm, only available at devel. version 1.5.)  
+1. By using `cpct_mkproject` `-a` (--asm, only available at devel. version 1.5.)
+      - **Default path**: `~/game/`
 ```bash
 cpct_mkproject -a game
 
@@ -236,7 +244,7 @@ drwxrwxr-x 2 user user 4096 ene 19 18:31 src
 ## Sources location
 - ~/game/src/main.s
 - 
-## A code example
+## Example code included.
 ```asm
 ;;-----------------------------LICENSE NOTICE------------------------------------
 ;;  This file is part of CPCtelera: An Amstrad CPC Game Engine 
@@ -319,16 +327,17 @@ loop:
    jr    loop
 ```
 ***
-## *"Disassembling"* the assembler code:
+## *"Disassembling"* the Assembler Code
 
-- As long as the WinApe included assembler might not fit our requirements, we are a more specific assembler which could be used in many different platform developments, but focused on our goals.
-- So, it's **mandatory** for any project to declare some specific block codes:
-  - The DATA area.
-  - The CODE area.
-     - The GLOBAL symbols. 
-     - The MAIN symbol.
-  
-- Thus this, the linker assembling process can compile our code with the best performance.
+- Since the assembler included in WinAPE may not meet our requirements, we use a more versatile assembler, suitable for various platform developments but focused to our specific goals.  
+- It is **mandatory** for any project to declare specific block codes:  
+  - **DATA area**  
+  - **CODE area**  
+    - **GLOBAL symbols**  
+    - **MAIN symbol**  
+
+- These declarations allow the linker and assembler process to compile the code as expected.
+
  
 ## Declaring **.area_DATA**
 
@@ -350,7 +359,7 @@ loop:
 .area _CODE
 ```
 
-## Global directives
+## Global symbols
 ```asm
 .globl cpct_disableFirmware_asm
 .globl cpct_getScreenPtr_asm
@@ -359,19 +368,19 @@ loop:
 ```
 
 ## main Symbol (Where the program starts)
-The first step in our program is *"taking the ownership* of the firmware functions as long as our program is going to set/define/configure/order *"what will happen"* while running it.
+The first step in our program is *"taking the ownership* of the firmware functions, as our program will set/define/configure/order *"what will happen"* on execution time.
 
 ```asm
 _main::
    ;; Disable firmware to prevent it from interfering with string drawing
    call cpct_disableFirmware_asm
 ```
-In this example, the code will draw a coloured string (typed before at the DATA area begining fixed on an specific screen position, by following these logical steps:  
+In this example, the code will draw a colored string (predefined in the DATA area, positioned at a specific screen location) by following these logical steps:  
 
-- 1. By setting up draw character colours.
-- 2. Then, calculating the video-memory location.
-- 3. Once configured the location, by printing the desired string in the video-memory.
-- 4. Adding an infinite loop to maintain the string on the screen.
+1. Set up the draw character colors.  
+2. Calculate the video memory location.  
+3. Configure the location and print the desired string in the video memory.  
+4. Add an infinite loop to keep the string displayed on the screen.  
 
 
   
@@ -400,18 +409,19 @@ In this example, the code will draw a coloured string (typed before at the DATA 
 loop:
    jr    loop
 ```
+***
 # Compiling
 ## `make`
 
-The compiling process will create many compiled binary formats:
-- .BIN - The program in BINARY format.
-- .CDT - The program in CASSETE format.
-- .DSK - The program in a DISK format.
-- .SNA -  A SNAPSHOT file.
+The compiling process generates several binary formats:  
+- **.BIN** - The program in **BINARY** format.  
+- **.CDT** - The program in **CASSETE** format.  
+- **.DSK** - The program in **DISK** format.  
+- **.SNA** - A snapshot file. 
 
-⚠️ As long as we will use SNAPSHOTS when developing, the loading processes ARE NOT THE SAME using SNAPSHOTs against BIN/CASSETE/DISK programs.
+⚠️ Note: Using **SNAPSHOTs** for development differs from loading **BIN**, **cassette**, or **disk** programs. Be aware of these differences during the loading process.  
 
-A compiling process example:
+### Example of a Compiling Process:
 ```bash
 $ cd ~/game/
 dev@ice:~/game$ make
@@ -481,7 +491,7 @@ WarpMode: ON
 ```
 ***
 # OUR FIRST PROGRAM - Drawing 3 coloured moving squares
-
+# Pending
 ## DOCs path:
 ```bash
 $ cd $CPCT_PATH/docs/
