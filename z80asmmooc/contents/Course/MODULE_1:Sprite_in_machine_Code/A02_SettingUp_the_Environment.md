@@ -349,11 +349,20 @@ loop:
 .globl cpct_drawStringM1_asm
 ```
 ## main Symbol (Where the program starts)
+The first step in our program is *"taking the ownership* of the firmware functions as long as our program is going to set/define/configure/order *"what will happen"* while running it.
+
 ```asm
 _main::
    ;; Disable firmware to prevent it from interfering with string drawing
    call cpct_disableFirmware_asm
+```
+In this example, the code will draw a coloured string fixed on an specific screen position, by following these logical steps:  
 
+- 1. By setting up draw character colours.
+- 2. Then, calculating the video-memory location.
+- 3. Once configured the location, by printing the desired string in the video-memory.
+- 4. Adding an infinite loop to maintain the string on the screen. 
+```asm
    ;; Set up draw char colours before calling draw string
    ld    d, #0         ;; D = Background PEN (0)
    ld    e, #3         ;; E = Foreground PEN (3)
@@ -378,6 +387,7 @@ _main::
 loop:
    jr    loop
 ```
+# What assembler compiles:
 
 
 
