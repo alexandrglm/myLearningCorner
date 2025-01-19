@@ -47,14 +47,14 @@ The Z80 memory registers are:
 
 | **Main Register Set** | **Alternative Register Set** |
 |-----------------------|----------------------------|
-| Accumulator (A)       | Accumulator (A')           |
-| Flags (F)             | Flags (F')                 |
-| General Purpose       | General Purpose            |
-| Registers (B, C, D, E, H, L) | Registers (B', C', D', E', H', L') |
-| **Special Purpose Registers** |                    |
-| Interrupt Vector (I) | Memory Refresh (R)         |
-| Index Register (IX)    | Index Register (IY)          |
-| Stack Pointer (SP)   | Program Counter (PC)       |
+| *Accumulator (A)*      | *Accumulator (A')*           |
+| *Flags (F)*             | *Flags (F')*                 |
+| **General Purpose registers** |
+| *B, C, D, E, H, L* | *B', C', D', E', H', L'* |
+| **Special Purpose registers** |
+| *Interrupt Vector (I)* | *Memory Refresh (R*         |
+| *Index Register (IX)*    | *Index Register (IY)*          |
+| *Stack Pointer (SP)*   | *Program Counter (PC)*       |
 
 
 ### Special-Purpose Registers
