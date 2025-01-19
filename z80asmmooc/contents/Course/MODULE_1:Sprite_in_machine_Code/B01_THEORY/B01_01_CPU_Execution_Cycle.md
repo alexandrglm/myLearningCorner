@@ -7,4 +7,32 @@ Materials used:
 - The `Fetch - Decode - Execute` process, illustrated using the *A01_02 program* as an example: *"How to draw and display a pixel on the screen."*  
 - An introduction to processor counters, registers, buses, and RAM.
 
+The Z80 processor follows a `fetch-decode-execute` cycle to read instructions from memory, perform the necessary operations, and move to the next instruction, enabling the execution of programs and the manipulation of data.(¹)
 
+The AMSTRAD buses are:
+- **DATA BUS**:    8 bit lenght.
+- **ADRESS BUS**:  16 bit lenght.
+
+
+The Z80 registers are:
+
+- **PC**:  Program Counter
+- **BR**:  d
+- **IR**
+
+The Z80 memory registers are:
+- **A/F**
+- **B/C**
+- **D/E**
+- **H/L**
+
+- A - B - C - D - F -High - Low
+
+
+
+
+
+***
+#### References
+1. 'How the Z80 work' - Reading-Uk [Link](http://www.reading-uk.net/en/how-the-z-80-work/)
+2. 'The Z80 registers' - Jimmy Dansbo's Z80 Information site [Link](https://jnz.dk/z80/registers.html)
