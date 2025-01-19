@@ -404,9 +404,12 @@ loop:
 ## `make`
 
 The compiling process will create many compiled binary formats:
-- .BIN - The program in binary format.
-- .CST - The program in CASSETE format.
+- .BIN - The program in BINARY format.
+- .CDT - The program in CASSETE format.
 - .DSK - The program in a DISK format.
+- .SNA -  A SNAPSHOT file.
+
+⚠️ As long as we will use SNAPSHOTS when developing, the loading processes ARE NOT THE SAME using SNAPSHOTs against BIN/CASSETE/DISK programs.
 
 
 
@@ -419,11 +422,11 @@ preobjs: 'obj/dsk/.folder obj/.folder'
 [game] === PREBUILD PROCCESSING DONE!
 [game] ============================================================
 [game] 
-/home/dev/git/2_iKASTAROAK/Z80/0_environment/cpctelera/cpctelera/tools/sdcc-3.6.8-r9946/bin/sdasz80 -l -o -s -I/home/dev/git/2_iKASTAROAK/Z80/0_environment/cpctelera/cpctelera/src -Isrc   obj/main.rel  src/main.s 
+ [REMOVED_FOR_PRIVACY]/2_iKASTAROAK/Z80/0_environment/cpctelera/cpctelera/tools/sdcc-3.6.8-r9946/bin/sdasz80 -l -o -s -I [REMOVED_FOR_PRIVACY]/2_iKASTAROAK/Z80/0_environment/cpctelera/cpctelera/src -Isrc   obj/main.rel  src/main.s 
 [game] Linking binary file
-/home/dev/git/2_iKASTAROAK/Z80/0_environment/cpctelera/cpctelera/tools/sdcc-3.6.8-r9946/bin/sdcc -mz80 --no-std-crt0 -Wl-u --code-loc 0x4000 --data-loc 0 -l/home/dev/git/2_iKASTAROAK/Z80/0_environment/cpctelera/cpctelera/cpctelera.lib      obj/main.rel -o "obj/game.ihx"
+ [REMOVED_FOR_PRIVACY]/2_iKASTAROAK/Z80/0_environment/cpctelera/cpctelera/tools/sdcc-3.6.8-r9946/bin/sdcc -mz80 --no-std-crt0 -Wl-u --code-loc 0x4000 --data-loc 0 -l [REMOVED_FOR_PRIVACY]/2_iKASTAROAK/Z80/0_environment/cpctelera/cpctelera/cpctelera.lib      obj/main.rel -o "obj/game.ihx"
 [game] Creating Amsdos binary file obj/game.bin
-/home/dev/git/2_iKASTAROAK/Z80/0_environment/cpctelera/cpctelera/tools/hex2bin-2.0/bin/hex2bin -p 00 "obj/game.ihx" | tee obj/game.bin.log
+ [REMOVED_FOR_PRIVACY]/2_iKASTAROAK/Z80/0_environment/cpctelera/cpctelera/tools/hex2bin-2.0/bin/hex2bin -p 00 "obj/game.ihx" | tee obj/game.bin.log
 hex2bin v2.0, Copyright (C) 2015 Jacques Pelletier & contributors
 
 Binary file start = 00004000
@@ -442,6 +445,28 @@ DSK : game.dsk
 [game] Creating Snapshot File 'game.sna'
 [game] Successfully created 'game.sna'
 ```
+***
+# RUNNING OUR PROGRAM
+
+## CDT - RVM
+```bash
+~/game$ cpct_rvm game.cdt -nw
+Launching RetroVirtualMachine V2...
+Machine:  cpc464
+CDT:      game.cdt
+Command:  RUN"\n 
+```
+![image](https://github.com/user-attachments/assets/3dfdadeb-6aee-486d-a32d-035303451512)
+
+## SNA / DSK - WinAPE
+```bash
+~/game$ cpct_winape game.sna 
+Autoloading symbols file obj/game.noi
+```
+![image](https://github.com/user-attachments/assets/0be2fcb0-806c-486c-bf3c-0ddaee2e7094)
+
+
+
 
 
 
