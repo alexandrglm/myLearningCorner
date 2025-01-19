@@ -479,6 +479,20 @@ CDT:      game.cdt
 Command:  RUN"\n 
 WarpMode: ON
 ```
+***
+# OUR FIRST PROGRAM - Drawing 3 coloured moving squares
+
+## DOCs path:
+```bash
+$ cd $CPCT_PATH/docs/
+```
+## CPCtelera Reference Manual
+⚠️ The man/docs included here reffers to the **Development Branch - v.1.5**.
+
+```bash
+$ cd $CPCT_PATH/docs/index.html
+```
+
 
 
 
