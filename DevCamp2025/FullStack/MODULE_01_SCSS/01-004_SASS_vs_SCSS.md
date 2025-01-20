@@ -4,7 +4,7 @@ So far we have been through a full overview of SCSS, walked through the preproce
 There is something that might be a little bit confusing whether it's in some type of coding interview situation, or just in general as reading documentation.  
 There are actually **two different types of SASS syntax**:
 - **SASS**
-- On what SASS evolved: **SCSS**
+- In which SASS was evolved: **SCSS**
 
 Technically, both of those are called SASS which makes for some kind of confusing component when you're first starting to learn it.  
 Here we are going to talk about the differences there are between the two and what we are going to be using for the course.  
