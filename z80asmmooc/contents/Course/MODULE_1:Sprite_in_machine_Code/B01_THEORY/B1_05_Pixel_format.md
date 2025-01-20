@@ -12,7 +12,7 @@ Materials used: [ 1.T05.formatoPixeles.pdf ](https://github.com/alexandrglm/elea
 
 ## Pixel format
 - The set of rules for storing pixel data in memory so it can be interpreted correctly by the CRTC.
-- It **encodes pixel color in memory** to be shown on-screen.
+- It **encodes pixel colour in memory** to be shown on-screen.
 - There are many pixel formats availables, each with different characteristics, mainly focused on memory usage efficiency.
 ***
 ## Pixel Stoarage in Video Memory
@@ -25,12 +25,21 @@ Materials used: [ 1.T05.formatoPixeles.pdf ](https://github.com/alexandrglm/elea
 ✅ On the memory sage side, this requires only 16 KB for video memory, leaving more space for other system functions, so it's completely allowed to be used in this AMSTRAD system.
 ***
 ## Mode 1 Pixel Format (Amstrad CPC) - A deeper introduction.
-#### Mode 1 Overview:
+### Mode 1 Overview:
+#### Encoding Structure:
 - Uses 2 bits per pixel, enabling 4 pixels to fit in 1 byte.
-- Supports 4 colors, with each combination of 2 bits representing a specific color:
-  | Bits | Color |
-  | 00 | Dark Blue |
-  | 01 | Yellow |
-  | 10 | Cyan |
-  | 11 | Red |
+- Supports 4 colours palette, with each combination of 2 bits representing a specific colour:
+
+| **Bits** | **colour**     |
+|----------|---------------|
+| `00`     | Dark Blue     |
+| `01`     | Yellow        |
+| `10`     | Cyan          |
+| `11`     | Red           |
+
+#### Storage Structure
+- Bits for each pixel are interleaved and not stored sequentially (e.g., pixel 1 uses bits 7 and 3, pixel 2 uses bits 6 and 2).
+- Bits are read **right-to-left**, which determines their association with colours.
+***
+
 
