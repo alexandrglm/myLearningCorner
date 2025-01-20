@@ -9,14 +9,26 @@ Materials used: [ 1.T03.laMagiaDelHexadecimal.pdf ](https://github.com/alexandrg
 - Hexadecimal system explanation: Why Hexadecimal is so useful?  
 - Passing Base16 to Base10 and vice versa.  
 - The "magic" in the direct conversion between Base16 and Base2: Optimising our code skills.  
-- Example: Selecting coloured pixels on video-memory.  
-Añadido de ejemplo de uso para seleccionar píxeles de colores en la memoria de vídeo.  
+- Example: Selecting coloured pixels on video-memory.    
 ***
 
-
-### Why Base16 is so useful?
+## Why Base16 is so useful?
 ![image](https://github.com/user-attachments/assets/a5bdb494-fc05-4a46-a45d-8679a293d961)
 Above: Hexadecimal code.
 Bellow: The same code at Base2 conversion.
 
 Using Base16 the code is more affordable to manage, with a high efficency in time-cost for the coder.
+***
+## Counting on Base10
+![image](https://github.com/user-attachments/assets/5ca857dd-7753-4fe9-9911-acffeb9e32cf)
+
+## Counting on Base16
+![image](https://github.com/user-attachments/assets/8606e252-48e7-4537-bbd6-9be4b96912d4)
+pending: Explanation about the second digit as a group of 16 (0~F).
+
+## Base16 --> Base10
+![image](https://github.com/user-attachments/assets/25a3b7e0-eb89-4e0f-a7d9-701734fa19f9)
+pending explanations
+
+
+
