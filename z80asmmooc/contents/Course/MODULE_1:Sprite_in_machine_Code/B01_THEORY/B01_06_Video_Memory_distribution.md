@@ -85,7 +85,5 @@ Address = Base Address + (Character Column × 2) + Offset
 
     To draw across multiple rows, add 0x800 for each vertical step.  
 ***
-### Video Memory Map**
-
 ## Memory Map table
 ![image](https://github.com/user-attachments/assets/ae857552-41ad-4403-87c3-70b15d22fe58)
