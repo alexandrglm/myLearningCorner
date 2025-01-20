@@ -42,8 +42,17 @@ Used by the assembler to manage code and data.
 .area_CODE
 .include
 .asciz
+_main::
 ...
 ```
+### main Symbol
+Where the program starts.
+The first step in a program is "taking the ownership of the firmware functions, as the program will set/define/configure/order "what will happen" on execution time.  
+```asm
+_main::
+  call cpct_disableFirmware_asm  ;; Disabling firmware
+```
+
 ***
 ## Registers:
 - **General-purpose**: `A, B, C, D, E, H, L`  
