@@ -8,12 +8,16 @@
 .area _CODE
 ;; THIS comes from a the main.s included in CPCtelera v.1.5, and will be used as the base
 
-.globl cpct_disableFirmware_asm
+.globl cpct_disableFirmware_asm   ;; mandatory
+
+;; from this point ... pending.
 .globl cpct_getScreenPtr_asm
 .globl cpct_setDrawCharM1_asm
 .globl cpct_drawStringM1_asm
 
 _main::
+
+   ;; from this point ... pending.
    call cpct_disableFirmware_asm
 
    ld    d, #0
@@ -31,5 +35,6 @@ _main::
 
    call cpct_drawStringM1_asm
 
+;;   infinite loop to maintain in-screen what we coded.
 loop:
    jr    loop
