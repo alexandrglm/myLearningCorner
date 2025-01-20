@@ -9,6 +9,7 @@
 
 .area _DATA
 
+colourarray: .db 1,2,3,4
 colour: .db #3
 
 .area _CODE
@@ -16,6 +17,7 @@ colour: .db #3
 
 .globl cpct_disableFirmware_asm
 .globl cpct_setVideoMode_asm
+.globl cpct_setPalette_asm
 .globl cpct_getScreenPtr_asm
 .globl cpct_drawSolidBox_asm
 
@@ -23,8 +25,12 @@ _main::
 
    	call cpct_disableFirmware_asm
 
-	ld	c, #0
+	ld	c, #1
 	call cpct_setVideoMode_asm
+
+ 	ld	hl, (colourarray)
+  	ld	de, #4
+ 	call cpct_setPalette_asm
 
    	ld   	de, #CPCT_VMEM_START_ASM
    	ld    	b, #24
