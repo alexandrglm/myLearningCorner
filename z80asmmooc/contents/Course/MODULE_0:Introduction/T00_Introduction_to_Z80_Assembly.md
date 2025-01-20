@@ -8,7 +8,7 @@ https://profesorretroman.com/course/view.php?id=2&section=0
 As long as nowadays assembling on Z80 might be seen as oudated, newer architectures are still using the same principles instead (which a few differences as a more complexity) so, this reveals the relevance of adquiring these knowledge.
 
 * Learning, mastering, the Z80 processor, getting solid basis and the deepest.
-* 8BIT Board used: AMSTRAD CPC / SEGA Z80 programs may be ported to this course.
+* 8BIT Board used: AMSTRAD CPC / ~~SEGA Z80 IDE and programs may be ported to this course~~.
 * Using low programming languages (at a harware layer) as :
   * Machine code: The code machines understand.
   * Assembler: next to machine code, but more affordable when creating, editing, ....
