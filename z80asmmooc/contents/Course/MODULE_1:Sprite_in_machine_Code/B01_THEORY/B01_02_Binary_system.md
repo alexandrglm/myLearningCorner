@@ -55,12 +55,7 @@ Therefore, we need to understand all of this kind of status (data stored) combin
 
 ![image](https://github.com/user-attachments/assets/0948887d-0349-402e-9f8b-2f2bbe9e053b)
 
-
-
-
-
-
-  
+***
 
 
 ### Converting from Decimal (Base 10) to Binary (Base 2)
@@ -83,4 +78,21 @@ Therefore, we need to understand all of this kind of status (data stored) combin
 1 / 2 = 0, rest = 1
 ```
 Reading the remainders from bottom to top, the binary representation of our number is `1101`.  
+***
+### Converting from Binary (Base 2) to Decimal (Base 10)
 
+1. Write down the binary number, aligning each digit with its corresponding power of 2.  
+2. Multiply each binary digit (0 or 1) by its positional value (a power of 2).  
+3. Add up all the resulting values to get the decimal equivalent.
+
+#### Example: Converting **10100110** (binary) to decimal:
+  
+| ^ 2 : | 128  | 64  | 32  | 16  | 8   | 4   | 2   | 1   |
+|-------------|-------|------|------|------|------|------|------|------|
+| Binary digit | **1** | **0** | **1** | **0** | **0** | **1** | **1** | **0** |
+
+
+**Adding these values together:**  
+\( `128` + `(there's no 64, so 0)` +  `32` + `(there's no 16, so 0)` + `(there's no 8, so 0)` 4 + 2 = **166** \)
+
+The binary number **10100110** is equivalent to **166** in Base10.
