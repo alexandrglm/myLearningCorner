@@ -89,6 +89,6 @@ Reading the remainders from bottom to top, the binary representation of our numb
 
 
 **Adding these values together:**  
-\( `128` + `(there's no 64, so 0)` +  `32` + `(there's no 16, so 0)` + `(there's no 8, so 0)` 4 + 2 = **166** \)
-
+`128` + `(there's no 64, so 0)` +  `32` + `(there's no 16, so 0)` + `(there's no 8, so 0)` 4 + 2 = **166**   
+  
 The binary number **10100110** is equivalent to **166** in Base10.
