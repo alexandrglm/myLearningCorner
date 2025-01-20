@@ -6,13 +6,13 @@ Each line of assembly code corresponds to one machine instruction.
 
 ## General Syntax
 
-- **LABELS:**
+- **LABELS**  
 Represent addresses or markers in the code; always **end with a colon (:)**.
 ```asm
 loop:
 ```
 
-- **INSTRUCTIONS**
+- **INSTRUCTIONS**  
 An instruction tells the CPU what operation to perform.  
 ```asm
   LD      A, 42  
@@ -21,14 +21,14 @@ An instruction tells the CPU what operation to perform.
 ```
 The instructions, here, are `LD - Load`- `MV - Move` - `ADD - Sums`.  
 
-- **OPERANDS**:
+- **OPERANDS**  
 Values or registers that instructions operate on.  
 ```asm
   LD     A, 42
 ```
 The operands are "A, 42" (loads the value 42 onto A register).  
 
-- **COMMENTS**
+- **COMMENTS**  
 Comments start with a semicolon (;); it's a good practice documenting the code
 ```asm
 LD A, 42  ; Load 42 into register A
