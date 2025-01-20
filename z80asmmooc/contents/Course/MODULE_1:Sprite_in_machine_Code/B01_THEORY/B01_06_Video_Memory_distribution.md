@@ -18,26 +18,27 @@ Understanding how this memory is structured and accessed is key to drawing indiv
 * `Size`: 16,000 bytes.
 * `Resolution (Mode 1)`: 320 x 200 pixels.
 * `Memory Organization`: The memory **is linear**, starting at address 0x0000 and ends at 0xFFFF. However, the video memory must translate this 1D structure into the 2D representation of the screen.
-![image](https://github.com/user-attachments/assets/b84c2d43-3d71-4c7a-bb3a-d2c7dae6aa4f)
+***
 
 ## Memory Organization by Characters
 The screen is divided into characters, each representing an 8x8 pixel block.
-    * __Mode 1 Screen Layout__ :
-        - 40 characters wide x 25 characters tall = 1000 characters.
-        - Each character is made up of 8 rows of pixels, requiring 8 bytes.
+![image](https://github.com/user-attachments/assets/b84c2d43-3d71-4c7a-bb3a-d2c7dae6aa4f)
+    * __Mode 1 Screen Layout__ :  
+        - 40 characters wide x 25 characters tall = 1000 characters.  
+        - Each character is made up of 8 rows of pixels, requiring 8 bytes.  
 
 ## Pixel Row Ordering
 
 * **Linear Arrangement**
-   The memory stores pixel rows sequentially for each line across all characters.
-        - First, the first row of all characters is stored.
-        - Then, the second row, and so on, until all 8 rows are stored.
+   The memory stores pixel rows sequentially for each line across all characters.  
+        - First, the first row of all characters is stored.  
+        - Then, the second row, and so on, until all 8 rows are stored.  
 
     Example:
       ```text
-        Row 1: Pixel rows for all characters in the first row of the screen.
-        Row 2: Pixel rows for all characters in the second row of the screen.
-        Each row starts at a specific memory address and continues sequentially.
+        Row 1: Pixel rows for all characters in the first row of the screen.  
+        Row 2: Pixel rows for all characters in the second row of the screen.  
+        Each row starts at a specific memory address and continues sequentially.  
       ```
 
 ## Address Calculation
@@ -57,44 +58,34 @@ Example:
 Example: Row 2 starts at `0x0800`.  
 
 ```formula
-Base Address = 0x0000 + (Row Number × 0x800)
+Base Address = 0x0000 + (Row Number × 0x800)  
 ```
   
-##### 2. Address for a Character or Pixel within a Row:
-Example: Offset adjusts for specific pixels within a byte.
+##### 2. Address for a Character or Pixel within a Row:  
+Example: Offset adjusts for specific pixels within a byte.  
 
 ```formula
-Address = Base Address + (Character Column × 2) + Offset
+Address = Base Address + (Character Column × 2) + Offset  
 ```
 ***
 ## Memory Example
 ![image](https://github.com/user-attachments/assets/2e275a36-cad8-428e-86c3-19109edaec8f)  
-* Row 1: Starts at `0x0000`, ends at `0x07FF`.
-* Row 2: Starts at `0x0800`.
-* Row 3: Starts at `0x1000`.
-* Character Offset: If a character spans **multiple rows, add the offset for each** subsequent row.
+* Row 1: Starts at `0x0000`, ends at `0x07FF`.  
+* Row 2: Starts at `0x0800`.  
+* Row 3: Starts at `0x1000`.  
+* Character Offset: If a character spans **multiple rows, add the offset for each** subsequent row.  
 ***
 ## Practical Drawing
 #### Drawing Pixels:
 
-    Each byte in memory represents 4 pixels in Mode 1.
-    Colours are determined by the 2 bits per pixel format.
+    Each byte in memory represents 4 pixels in Mode 1.  
+    Colours are determined by the 2 bits per pixel format.  
 
 #### Drawing Rows:
 
-    To draw across multiple rows, add 0x800 for each vertical step.
+    To draw across multiple rows, add 0x800 for each vertical step.  
 ***
 ### Video Memory Map**
 
 ## Memory Map table
 ![image](https://github.com/user-attachments/assets/ae857552-41ad-4403-87c3-70b15d22fe58)
-
-
-
-## Distribution
-
-
-As video memory would be shown. Lineally.  
-
-
-
