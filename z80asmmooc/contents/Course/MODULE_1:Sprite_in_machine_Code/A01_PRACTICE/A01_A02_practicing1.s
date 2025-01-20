@@ -3,7 +3,7 @@
 .include "cpctelera.h.s"
 .area _DATA
 
-;;  pending data
+thecolour: .db #3
 
 .area _CODE
 ;; THIS comes from a the main.s included in CPCtelera v.1.5, and will be used as the base
@@ -11,20 +11,18 @@
 .globl cpct_disableFirmware_asm   ;; mandatory
 .globl cpct_getScreenPtr_asm
 .globl cpct_drawSolidBox_asm
-.globl cpct_drawTileAligned2x8_f_asm
 
 _main::
 
-   ;; from this point ... pending.
    call cpct_disableFirmware_asm
 
-   ld    d, #0
-   ld    e, #3
-
+   ld   d, #10
+   ld   e, #5
    call cpct_getScreenPtr_asm
 
-   call cpct_drawTileAligned2x8_f_asm
-
+   ld   a, (thecolour)
+   ld   c, #10
+   ld   b, #10
    call cpct_drawSolidBox_asm
 
 ;;   infinite loop to maintain in-screen what we coded.
