@@ -74,33 +74,27 @@ There are a number of options. You can simply install the entire SCSS preprocess
 We are going to use CodePen for a few reasons. First, it doesn't require any setup. Also, it will run the same regardless of whether you are working on a PC or a Mac. The goal of this course is to provide you with a foundation that you can apply to any project, regardless of what language you are using.
 
 You can either sign up for an account with CodePen, which I would recommend since it is free and it allows you to save your progress. Once you have decided which option, lets then go to create a new pen.
-
 ![image](https://github.com/user-attachments/assets/a2c600a1-075f-4216-b6c1-5686ce00dd81)
 
 
 You will then be presented with a new project.
-
 ![image](https://github.com/user-attachments/assets/dbc93351-9ca7-490b-8cfa-c04149fdbc32)
-
 
 We are going to get rid of the javascript window. Everything that we are doing in this portion is in HTML & SCSS. The changes that we make here will be automatically rendered in the browser shown below our code boxes. Now there is a little change you have to make before it will automatically recognize the styles.
 
 First, we need to click on the gear in the top left of the CSS box
 ![image](https://github.com/user-attachments/assets/29fd22c5-2dd2-4cae-b75d-a9e1743ed3bf)
 
-
 Then we need to change our preprocessor to use SCSS
 ![image](https://github.com/user-attachments/assets/c0291e28-b4d6-45ae-be6c-bf2dd7568768)
 
 Once we make that change we will notice we now have syntax highlighting and it will pick up the difference between CSS and SCSS. It also changes the heading so we know we are working in SCSS now.
-
-![image](https://github.com/user-attachments/assets/4a8a9d24-2815-4b62-9717-a9d0e32bd641)
-
+![image](https://github.com/user-attachments/assets/4a8a9d24-2815-4b62-9717-a9d0e32bd641)  
 Now we are all set and ready to go.
 ```
 ***
 [SPA]
-``
+```
 Cómo configurar Codepen para procesar archivos Scss
 
 Ahora veremos cómo podemos comenzar a trabajar con SCSS. Si solo está escribiendo CSS puro, no necesita una herramienta como esta porque no hay ningún componente de preprocesador. Como estamos usando SCSS, necesitamos poder convertir todos nuestros estilos SCSS en algo que el navegador pueda entender realmente.
@@ -110,24 +104,20 @@ Hay varias opciones. Puede simplemente instalar todo el preprocesador SCSS local
 Vamos a usar CodePen por algunas razones. Primero, no requiere ninguna configuración. Además, se ejecutará igual sin importar si está trabajando en una PC o una Mac. El objetivo de este curso es brindarle una base que pueda aplicar a cualquier proyecto, independientemente del lenguaje que esté utilizando.
 
 Puede registrarse para obtener una cuenta con CodePen, lo cual le recomiendo ya que es gratis y le permite guardar su progreso. Una vez que haya decidido qué opción, vayamos a crear un nuevo pen.
-
-Imagen
+![image](https://github.com/user-attachments/assets/a2c600a1-075f-4216-b6c1-5686ce00dd81)
 
 Luego se le presentará un nuevo proyecto.
-
-Imagen
+![image](https://github.com/user-attachments/assets/dbc93351-9ca7-490b-8cfa-c04149fdbc32)
 
 Nos vamos a deshacer de la ventana de JavaScript. Todo lo que estamos haciendo en esta parte está en HTML y SCSS. Los cambios que hagamos aquí se renderizarán automáticamente en el navegador que se muestra debajo de nuestros cuadros de código. Ahora hay un pequeño cambio que debe hacer antes de que reconozca automáticamente los estilos.
 
 Primero, debemos hacer clic en el engranaje en la parte superior izquierda del cuadro CSS
-Imagen
+![image](https://github.com/user-attachments/assets/29fd22c5-2dd2-4cae-b75d-a9e1743ed3bf)
 
 Luego necesitamos cambiar nuestro preprocesador para usar SCSS
-Imagen
+![image](https://github.com/user-attachments/assets/c0291e28-b4d6-45ae-be6c-bf2dd7568768)
 
 Una vez que hagamos ese cambio, notaremos que ahora tenemos resaltado de sintaxis y detectará la diferencia entre CSS y SCSS. También cambia el encabezado para que sepamos que ahora estamos trabajando en SCSS.
-
-Imagen
-
+![image](https://github.com/user-attachments/assets/4a8a9d24-2815-4b62-9717-a9d0e32bd641)
 Ahora estamos listos para comenzar.
 ```
