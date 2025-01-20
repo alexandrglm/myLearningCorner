@@ -500,7 +500,7 @@ $ cd $CPCT_PATH/docs/
 ⚠️ The man/docs included here reffers to the **Development Branch - v.1.5**.
 
 ```bash
-$ cd $CPCT_PATH/docs/index.html
+$ $CPCT_PATH/docs/index.html
 ```
 
 
