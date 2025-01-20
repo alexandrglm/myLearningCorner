@@ -19,6 +19,8 @@ Bellow: The same code at Base2 conversion.
 
 Using Base16 the code is more affordable to manage, with a high efficency in time-cost for the coder.
 ***
+# Translating values: Its importance.
+
 ## Counting on Base10
 ![image](https://github.com/user-attachments/assets/5ca857dd-7753-4fe9-9911-acffeb9e32cf)  
 
@@ -40,7 +42,9 @@ pending explanations
 #### Reference table
 ![image](https://github.com/user-attachments/assets/b190e5e5-415b-44b1-84e9-a0ed7dcb700b)
 ***
-
+# Use case: Colouring a pixel from the video-memory.
+![image](https://github.com/user-attachments/assets/def27e10-cea3-4278-af56-b2e763259b6c)
+As seen in this example, working with hex code improves how we can develope.
 
 
 
