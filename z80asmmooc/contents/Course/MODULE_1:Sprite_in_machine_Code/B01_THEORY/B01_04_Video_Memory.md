@@ -4,25 +4,20 @@ Materials used: [ 1.T04.laMemoriaDeVideo.pdf ](https://github.com/alexandrglm/el
 ***
 
 #### Content:  
-- What video memory is.
-- How it works (AMSTRAD CPC related).
-- How CRT screen works
-- The delay while video-mem. manipulating and its on-screen appearance.
+- What video memory is and how it works (AMSTRAD CPC related).
+- How a CRT screen works.
+- Refresh rate: The delay while video-mem. manipulating and its on-screen appearance.
+- Common related issues / Becoming a virtue from the deffective (i)
 ***
 
-## Definitions
+# Definitions, Components, Functionality
 Video memory stores datasets that are read by the *CRCT* (Cathode Ray Tube Controller) to send visual information to the monitor. 
 This is a universal concept in computing, though the organization and formats may vary between systems.
 ![image](https://github.com/user-attachments/assets/69e97767-000c-43d0-85f5-1be4374a34b7)  
 
-
-## Components
 The Amstrad CPC integrates its computer within the keyboard, while the monitor is a separate electronic device connected via a cable.  
 The *CRCController* chip on the motherboard constantly sends data from video memory to the monitor to create the desired objects to be displayed.  
 
-
-
-## Functionality
 A specific area of RAM, starting at address 0000 (Remember, a 8-bit data adresses bus), is designated as video memory.  
 Changing this memory alters what is displayed on the screen.  
   
