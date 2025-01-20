@@ -2,9 +2,38 @@
 - **Assembly language**:
 Low-level programming language that provides direct control of the processor.  
 Each line of assembly code corresponds to one machine instruction.
-
 # Components
 
+## General Syntax
+
+- **LABELS:**
+Represent addresses or markers in the code; always **end with a colon (:)**.
+```asm
+loop:
+```
+
+- **INSTRUCTIONS**
+An instruction tells the CPU what operation to perform.  
+```asm
+  LD      A, 42  
+  MV      A, 4001     
+  ADD     A, 100
+```
+The instructions, here, are `LD - Load`- `MV - Move` - `ADD - Sums`.  
+
+- **OPERANDS**:
+Values or registers that instructions operate on.  
+```asm
+  LD     A, 42
+```
+The operands are "A, 42" (loads the value 42 onto A register).  
+
+- **COMMENTS**
+Comments start with a semicolon (;); it's a good practice documenting the code
+```asm
+LD A, 42  ; Load 42 into register A
+```
+***
 ## Assembly Directives/Symbols:
 Used by the assembler to manage code and data.  
 ```asm
