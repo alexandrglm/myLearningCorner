@@ -60,7 +60,7 @@ Therefore, we need to understand all of this kind of status (data stored) combin
 
 ### Converting from Decimal (Base 10) to Binary (Base 2)
 
-- **Divide the decimal number by 2 and recording the rest at each step.** 
+- **Divide the decimal number by 2 and recording the rest at each step.**  
 ⚠️ Remainder = Rest. *Remainder* is a more specific arithmetical term as the rest complies only at divisions.
 
 #### Steps:  
