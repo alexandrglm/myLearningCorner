@@ -102,12 +102,12 @@ With practice, hexadecimal encoding can be performed directly without converting
 
 ### Remember:
 
-💡👉 **Mode 1 pros**
+💡👉 **Mode 1 pros**  
 Optimizes memory by storing 4 pixels per byte.  
 Supports 4 colors, balancing visual quality against the system limitations.  
   
-💡👉 **Direct Hex Encoding**
-Direct encoding in hexadecimal can simplify the process with practice.
+💡👉 **Direct Hex Encoding**  
+Direct encoding in hexadecimal can simplify the process with practice.  
   
 💡👉 **Interleaved Bits**   
 Bits for pixels are not sequential.  
@@ -116,6 +116,6 @@ Bits for pixels are not sequential.
 Pixel order requires careful attention during encoding.  
   
 💡👉 **Efficiency vs. Complexity**  
-The format can optimize memory usage but increasing programming complexity.
+The format can optimize memory usage but increasing programming complexity.  
 
  
