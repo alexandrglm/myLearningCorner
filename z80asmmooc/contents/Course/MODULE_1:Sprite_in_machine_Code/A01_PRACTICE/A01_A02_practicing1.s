@@ -9,11 +9,9 @@
 ;; THIS comes from a the main.s included in CPCtelera v.1.5, and will be used as the base
 
 .globl cpct_disableFirmware_asm   ;; mandatory
-
-;; from this point ... pending.
 .globl cpct_getScreenPtr_asm
-.globl cpct_setDrawCharM1_asm
-.globl cpct_drawStringM1_asm
+.globl cpct_drawSolidBox_asm
+.globl cpct_drawTileAligned2x8_f_asm
 
 _main::
 
@@ -23,17 +21,11 @@ _main::
    ld    d, #0
    ld    e, #3
 
-   call cpct_setDrawCharM1_asm
-
-   ld   de, #CPCT_VMEM_START_ASM
-   ld    b, #24
-   ld    c, #16
-
    call cpct_getScreenPtr_asm
 
-   ld   iy, #string
+   call cpct_drawTileAligned2x8_f_asm
 
-   call cpct_drawStringM1_asm
+   call cpct_drawSolidBox_asm
 
 ;;   infinite loop to maintain in-screen what we coded.
 loop:
