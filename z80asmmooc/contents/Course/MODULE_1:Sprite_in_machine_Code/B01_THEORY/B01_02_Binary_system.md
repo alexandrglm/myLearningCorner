@@ -43,13 +43,17 @@ Focusing on data processing, a transistor acts as a single **bit**. Depending on
 - **If electricity is sent through the second input, the bit resets to **0**, stopping the flow of electricity:**  
   ![image](https://github.com/user-attachments/assets/588297b3-6a63-43a7-b612-cc62970435e0)
 
-- Now, imagine combining more than one BIT.
-- Four combined BITs forms a NIBBLE:
+Now, imagine combining more than one BIT.  
+- Four combined BITs forms a NIBBLE:  
   ![image](https://github.com/user-attachments/assets/a3f95f85-0d38-4182-8236-248a8a1523ce)
 
 - And ... Eight combined BIT's forms ... a **Byte**!
   ![image](https://github.com/user-attachments/assets/f16d37dc-898e-48c6-b7fd-c265b47aa845)
 
+There are 256 (0~255) possible status in a Byte.
+Therefore, we need to understand all of this kind of status (data stored) combination, and here comes **the Binary system**:  
+
+![image](https://github.com/user-attachments/assets/0948887d-0349-402e-9f8b-2f2bbe9e053b)
 
 
 
