@@ -66,6 +66,7 @@ _main::
 ## Instructions Categories:
 ### Data Transfer: 
 - LD
+- MV
 - EX
 - PUSH
 - POP
