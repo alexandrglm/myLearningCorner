@@ -59,7 +59,8 @@ Managing memory updates during non-drawing phases of the refresh cycle (e.g., ve
 ***
 # Becoming a virtue from the deffect
 
-⚠️ Graphical performance can be affected or **improved** by taking in count what defectives technical limitations the CRT screens have.
+⚠️ Graphical performance can be affected or **improved** by taking in count what defectives technical limitations the CRT screens have and how we can take advantage from them.
+
 
 ## Delayed Updates:
 Changes to video memory are visible only after the screen refreshes, creating a small delay.  
