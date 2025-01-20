@@ -37,13 +37,13 @@ pending explanations
 pending explanations  
 ***
 # Base16 <--> Base10 Bi-directional conversion
-![image](https://github.com/user-attachments/assets/67f91461-c863-4d5d-a38e-d45ef47be6e1)  
-![image](https://github.com/user-attachments/assets/acb60b9e-bc78-4c35-be1e-5d117a93ae26)
+![image](https://github.com/user-attachments/assets/67f91461-c863-4d5d-a38e-d45ef47be6e1)    
+![image](https://github.com/user-attachments/assets/acb60b9e-bc78-4c35-be1e-5d117a93ae26)  
 #### Reference table
-![image](https://github.com/user-attachments/assets/b190e5e5-415b-44b1-84e9-a0ed7dcb700b)
+![image](https://github.com/user-attachments/assets/b190e5e5-415b-44b1-84e9-a0ed7dcb700b)  
 ***
 # Use case: Colouring a pixel from the video-memory.
-![image](https://github.com/user-attachments/assets/def27e10-cea3-4278-af56-b2e763259b6c)
+![image](https://github.com/user-attachments/assets/def27e10-cea3-4278-af56-b2e763259b6c)  
 As seen in this example, working with hex code improves how we can develope.
 
 
