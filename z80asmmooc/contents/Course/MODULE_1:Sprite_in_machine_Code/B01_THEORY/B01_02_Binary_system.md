@@ -81,11 +81,7 @@ Reading the remainders from bottom to top, the binary representation of our numb
 ***
 ### Converting from Binary (Base 2) to Decimal (Base 10)
 
-1. Write down the binary number, aligning each digit with its corresponding power of 2.  
-2. Multiply each binary digit (0 or 1) by its positional value (a power of 2).  
-3. Add up all the resulting values to get the decimal equivalent.
-
-#### Example: Converting **10100110** (binary) to decimal:
+- **10100110** to decimal:
   
 | ^ 2 : | 128  | 64  | 32  | 16  | 8   | 4   | 2   | 1   |
 |-------------|-------|------|------|------|------|------|------|------|
