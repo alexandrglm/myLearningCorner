@@ -102,15 +102,18 @@ The binary number **10100110** is equivalent to **166** in Base10.
 
 #### How the Base 10 System Stores Data  
 
-The Base 10 (decimal) system represents numbers using **10 digits**: 0, 1, 2, 3, 4, 5, 6, 7, 8, and 9. Each position in a number represents a power of 10 and ,as you add digits, the system is expanded by adding new decimal places.  
+The Base 10 (decimal) system represents numbers using **10 digits**: 0, 1, 2, 3, 4, 5, 6, 7, 8, and 9.  
+Each position in a number represents a power of 10 and ,as you add digits, the system is expanded by adding new decimal places.  
+  
 This allows the system to store progressively larger values by grouping numbers into tens, hundreds, thousands, and beyond. Here's how it works:  
-
+```text
 1 to 9: The first group of single digits.  
 10 to 99: The second group, adding a **new decimal place** for tens.  
 100 to 999: The third group, expanding with another decimal place for hundreds.  
 1000 to 9999: Adds a fourth decimal place for thousands.  
 [...]  
 1,000,000,000,000,000 to 9,999,999,999,999,999: Continues expanding as more decimal places are added.  
+```
 
 Each additional decimal place increases the range of numbers the system can represent, building on the power of tens:  
 - **10⁰ = 1** (units place)  
@@ -120,7 +123,7 @@ Each additional decimal place increases the range of numbers the system can repr
 ♾️ This incremental approaching process can continue infinitely giving a huge lenght numbers, as this is the foundation of Base10 system.  
 
 Now, just imagine a building that needs to number each room.  
-A logical way to determine which floor a particular room is on would be:  
+A logical way to determine which floor a particular room is on would be, avoiding   
 - The **first digit on the left** as the floor number.  
 - The remaining digits as the room number on this floor.    
 
