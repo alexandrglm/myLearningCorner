@@ -35,11 +35,11 @@ The screen is divided into characters, each representing an 8x8 pixel block.
         - Then, the second row, and so on, until all 8 rows are stored.  
 
     Example:  
-      ```text
+      
         Row 1: Pixel rows for all characters in the first row of the screen.  
         Row 2: Pixel rows for all characters in the second row of the screen.  
         Each row starts at a specific memory address and continues sequentially.  
-      ```
+  
 
 ## Address Calculation
 
