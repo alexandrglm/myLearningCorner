@@ -7,28 +7,29 @@ Materials used: [ 1.T05.formatoPixeles.pdf ](https://github.com/alexandrglm/elea
 - What a pixel format is / What is used for.  
 - Pixel format examples.  
 - Video mode 1 pixel format on AMSTRAD CPC.  
-- Coding examples / Tips and tricks for a fast conversion.  
+- Coding examples
+- Tips and tricks for a fast conversion.  
 ***
 
 ## Pixel format
-- The set of rules for storing pixel data in memory so it can be interpreted correctly by the CRTC.
-- It **encodes pixel colour in memory** to be shown on-screen.
-- There are many pixel formats availables, each with different characteristics, mainly focused on memory usage efficiency.
+- The set of rules for storing pixel data in memory so it can be interpreted correctly by the CRTC.  
+- It **encodes pixel colour in memory** to be shown on-screen.  
+- There are many pixel formats availables, each with different characteristics, mainly focused on memory usage efficiency.  
 ***
 ## Pixel Stoarage in Video Memory
 ### Case 1: 1 byte = 1 pixel
-* Each byte represents a single pixel, and each value in the byte corresponds to a specific characteristic, as colour.  
-⚠️ For a resolution of 320x200 pixels, this format would require 64 KB of memory, which is inefficient on systems like the CPC with 64 KB total memory.
+* Each byte represents a single pixel, and each value in the byte corresponds to a specific characteristic, as colour.    
+⚠️ For a resolution of 320x200 pixels, this format would require 64 KB of memory, which is inefficient on systems like the CPC with 64 KB total memory.  
 
 ### Case 2: 2 Bits = 1 pixel (AMSTRAD CPC Video Mode 1)
-* Each pixel is represented by 2 bits, allowing 1 byte to store data for 4 pixels.
-✅ On the memory sage side, this requires only 16 KB for video memory, leaving more space for other system functions, so it's completely allowed to be used in this AMSTRAD system.
+* Each pixel is represented by 2 bits, allowing 1 byte to store data for 4 pixels.  
+✅ On the memory sage side, this requires only 16 KB for video memory, leaving more space for other system functions, so it's completely allowed to be used in this AMSTRAD system.  
 ***
 ## Mode 1 Pixel Format (Amstrad CPC) - A deeper introduction.
 ### Mode 1 Overview:
 #### Encoding Structure:
-- Uses 2 bits per pixel, enabling 4 pixels to fit in 1 byte.
-- Supports 4 colours palette, with each combination of 2 bits representing a specific colour:
+- Uses 2 bits per pixel, enabling 4 pixels to fit in 1 byte.  
+- Supports 4 colours palette, with each combination of 2 bits representing a specific colour:  
 
 | **Bits** | **colour**     |
 |----------|---------------|
@@ -38,8 +39,37 @@ Materials used: [ 1.T05.formatoPixeles.pdf ](https://github.com/alexandrglm/elea
 | `11`     | Red           |
 
 #### Storage Structure
-- Bits for each pixel are interleaved and not stored sequentially (e.g., pixel 1 uses bits 7 and 3, pixel 2 uses bits 6 and 2).
-- Bits are read **right-to-left**, which determines their association with colours.
+- Bits for each pixel are interleaved and not stored sequentially (e.g., pixel 1 uses bits 7 and 3, pixel 2 uses bits 6 and 2).  
+- Bits are read **right-to-left**, which determines their association with colours.  
 ***
+# Encoding Pixels
+## The enconding process
+This examples follows a 4-pixels encoding process:  
+
+    1. Identify the colour for each pixel (e.g., yellow, yellow, cyan, cyan).  
+    2. Map the color to its 2-bit representation.  
+    3. Place the bits in their correct positions within the byte:  
+        * Pixel 1 (Yellow): Bits 7 and 3 → 01. 
+        * Pixel 2 (Yellow): Bits 6 and 2 → 01.  
+        * Pixel 3 (Cyan): Bits 5 and 1 → 10.  
+        * Pixel 4 (Cyan): Bits 4 and 0 → 10.  
+
+**Resulting Byte (Binary)**: `01011010`  
+**Hexadecimal Representation**: **5A**  
+***
+# Tips & Tricks
+## Practical Approach to Encoding pixels
+### CASE 1: `01011010` SIMPLIFIED method
+Think of a byte as a two 4-bit groups, each corresponding to a hexadecimal digit, so:
+    - Colours affect specific bits:  
+        * **Left Hex Digit**: Affected by Yellow `(01)` and Red `(11)`.  
+        * **Right Hex Digit**: Affected by Cian `(10)` and Red `(11)`.  
+    - Enconding process will be:
+        * **Colors**: Red, Yellow, Cyan, Cyan.
+        * **Left Hex Digit**: Red `(11)` + Yellow `(01)` → **5**
+        * **Right Hex Digit**: Cyan `(10)` + Cyan `(10)` → **A**
+                 **Final Byte: 5A**
+
+Remember:
 
 
