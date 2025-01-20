@@ -80,6 +80,10 @@ Therefore, we need to understand all of this kind of status (data stored) combin
 Reading the remainders from bottom to top, the binary representation of our number is `1101`.  
 ***
 ### Converting from Binary (Base 2) to Decimal (Base 10)
+#### Steps:  
+    1. Write down the binary number, aligning each digit on its positional value.  
+    2. Multiply each binary digit (0 or 1) by its positional value.  
+    3. Add up all the resulting values to get the decimal equivalent.
 
 - **10100110** to decimal:
   
@@ -89,6 +93,53 @@ Reading the remainders from bottom to top, the binary representation of our numb
 
 
 **Adding these values together:**  
-`128` + `(there's no 64, so 0)` +  `32` + `(there's no 16, so 0)` + `(there's no 8, so 0)` 4 + 2 = **166**   
+`128` + `(there's no 64, so 0)` +  `32` + `(there's no 16, so 0)` + `(there's no 8, so 0)` 4 + 2 + `(there's no 1, so 0)` = **166**   
   
 The binary number **10100110** is equivalent to **166** in Base10.
+***
+
+### Special number use cases
+
+#### How the Base 10 System Stores Data  
+
+The Base 10 (decimal) system represents numbers using **10 digits**: 0, 1, 2, 3, 4, 5, 6, 7, 8, and 9. Each position in a number represents a power of 10 and ,as you add digits, the system is expanded by adding new decimal places.  
+This allows the system to store progressively larger values by grouping numbers into tens, hundreds, thousands, and beyond. Here's how it works:  
+
+1 to 9: The first group of single digits.  
+10 to 99: The second group, adding a **new decimal place** for tens.  
+100 to 999: The third group, expanding with another decimal place for hundreds.  
+1000 to 9999: Adds a fourth decimal place for thousands.  
+[...]  
+1,000,000,000,000,000 to 9,999,999,999,999,999: Continues expanding as more decimal places are added.  
+
+Each additional decimal place increases the range of numbers the system can represent, building on the power of tens:  
+- **10⁰ = 1** (units place)  
+- **10¹ = 10** (tens place)  
+- **10² = 100** (hundreds place), and so on.  
+
+♾️ This incremental approaching process can continue infinitely giving a huge lenght numbers, as this is the foundation of Base10 system.  
+
+Now, just imagine a building that needs to number each room.  
+A logical way to determine which floor a particular room is on would be:  
+- The **first digit on the left** as the floor number.  
+- The remaining digits as the room number on this floor.    
+
+Example:  
+- **107:** Room 7 on the **First** floor.  
+- **923:** Room 23 on the **Ninth** floor.  
+![image](https://github.com/user-attachments/assets/a30cbefc-88fb-4374-aefa-08f191dd9d0b)
+
+
+
+#### How Base2 stores data:
+Imagine a Byte, composed of 8 bits, where each bit has its own state (either **0** or **1**) and can represent data. Let’s use the following example on how a single Byte can encode multiple pieces of information for managing a sprite in a game or application.
+![image](https://github.com/user-attachments/assets/a34a665d-7932-4ddf-93c0-ea204f241261)
+
+The Byte **01011011** can be interpreted as follows:  
+
+- **First bit (0):** Determines the sprite used.  
+- **Bits 2-4 (101):** Represents a time counter in binary, with a maximum value of **Base 2 (111)** or **7 seconds**.  
+- **Bits 5-6 (10):** Specifies the colors used for the sprite.  
+- **Last two bits (11):** Indicates a life counter for the sprite, with a maximum value of **Base 2 (11)** or **3 lives**.  
+
+
