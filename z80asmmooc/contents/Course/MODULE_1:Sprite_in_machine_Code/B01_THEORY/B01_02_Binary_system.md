@@ -13,7 +13,7 @@ Materials used: [1.T02.introduccionAlBinario.pdf](https://github.com/alexandrglm
 - Special use cases: Storing selecte data.  
 ***
 
-### Binary system
+#  ❇️ Binary system
   
 - Binary is a base-2 number system: **0 and 1.**
 - The foundation of the electronic and digital world relies on the binary system:
@@ -58,7 +58,7 @@ Therefore, we need to understand all of this kind of status (data stored) combin
 ***
 
 
-### Converting from Decimal (Base 10) to Binary (Base 2)
+#  ❇️ Converting from Decimal (Base 10) to Binary (Base 2)
 
 - **Divide the decimal number by 2 and recording the rest at each step.**  
 ⚠️ Remainder = Rest. *Remainder* is a more specific arithmetical term as the rest complies only at divisions.
@@ -79,7 +79,7 @@ Therefore, we need to understand all of this kind of status (data stored) combin
 ```
 Reading the remainders from bottom to top, the binary representation of our number is `1101`.  
 ***
-### Converting from Binary (Base 2) to Decimal (Base 10)
+#  ❇️ Converting from Binary (Base 2) to Decimal (Base 10)
 #### Steps:  
     1. Write down the binary number, aligning each digit on its positional value.  
     2. Multiply each binary digit (0 or 1) by its positional value.  
@@ -98,9 +98,9 @@ Reading the remainders from bottom to top, the binary representation of our numb
 The binary number **10100110** is equivalent to **166** in Base10.
 ***
 
-### Special number use cases
+#  ❇️ Special number use cases
 
-#### How the Base 10 System Stores Data  
+## How the Base 10 System Stores Data  
 
 The Base 10 (decimal) system represents numbers using **10 digits**: 0, 1, 2, 3, 4, 5, 6, 7, 8, and 9.  
 Each position in a number represents a power of 10 and ,as you add digits, the system is expanded by adding new decimal places.  
@@ -134,7 +134,7 @@ Example:
 
 
 
-#### How Base2 stores data:
+## How Base2 stores data:
 Imagine a Byte, composed of 8 bits, where each bit has its own state (either **0** or **1**) and can represent data. Let’s use the following example on how a single Byte can encode multiple pieces of information for managing a sprite in a game or application.
 ![image](https://github.com/user-attachments/assets/a34a665d-7932-4ddf-93c0-ea204f241261)
 
