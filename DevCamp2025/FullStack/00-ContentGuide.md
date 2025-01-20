@@ -1,10 +1,12 @@
 # MODULE 1 PART 1
 ## SCSS (86)
 ```text
+2025-01-20
 [x] How to Break Through the Cycle of Procrastination  
-[ ] The Who, What, When, Where, Why, and How of Scss  
-[ ] Scss Preprocessor Demo: How the Scss Magic Happens  
-[ ] Differences Between Sass and Scss  
+[X] The Who, What, When, Where, Why, and How of Scss  
+[X] Scss Preprocessor Demo: How the Scss Magic Happens  
+[X] Differences Between Sass and Scss
+  
 [ ] How to Configure Codepen to Process Scss Files  
 [ ] Is Writing Bad Code Immoral for Developers?  
 [ ] Guide to CSS Selectors for Web Developers and Designers  
