@@ -23,7 +23,9 @@ But what if you have complex nested elements, such as:
 And, here comes SCSS.  
 
 ***
-# 💡 SCSS nesting is an excellent way to:
+# SCSS allows to nest .classes inside another .classes, overriding its global scope.
+
+## 💡 SCSS nesting is an excellent way to:
 
 * Organize styles hierarchically.  
 * Ensure cleaner, more readable code.  
