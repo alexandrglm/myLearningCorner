@@ -1,15 +1,15 @@
-# MODULE 01 - 001:      **CSS Selectors **
+# MODULE 01 - 001:      CSS Selectors 
 
 A strong understanding of **CSS** is essential for building web applications. This guide focuses on **CSS selectors**, the key component that connects styles with page elements.  
 
 ---
-# Recalling about CSS
+## Recalling about CSS
 
-## 🖌️ **What is CSS?**  
+### 🖌️ **What is CSS?**  
 CSS (**Cascading Style Sheets**) defines the look and feel of your application. It contains the **rules** that style your HTML elements.
 ---
 
-## 🎯 **What is a CSS Selector?**  
+###  🎯 **What is a CSS Selector?**  
 Think of a website as a machine:  
 - **HTML**: The components.  
 - **CSS**: The design rules.  
@@ -18,7 +18,7 @@ CSS selectors are the bridge that connects the two.
 They allow you to specify page elements (e.g., navbar, image, breadcrumbs) and apply styles to them.  
 ---
 
-## 🧩 **CSS Selector Basics**  
+### 🧩 **CSS Selector Basics**  
 
 CSS uses specific syntax to select elements:  
 
@@ -33,14 +33,14 @@ CSS uses specific syntax to select elements:
 
 ---
 
-## ⚖️ **CSS Selector Prioritization**  
+### ⚖️ **CSS Selector Prioritization**  
 Even if multiple selectors target the same element:  
 - **The most specific selector wins.**  
 - IDs > Classes > Elements.  
 
 ---
 
-## 🪆 **CSS Selector Nesting**  
+### 🪆 **CSS Selector Nesting**  
 Sometimes, elements are **nested** within others. CSS allows you to target these elements directly:  
 
 > Example:  
@@ -49,7 +49,7 @@ Sometimes, elements are **nested** within others. CSS allows you to target these
 
 ---
 
-## 🔢 **nth-child Selectors**  
+### 🔢 **nth-child Selectors**  
 Need to style a specific item in a group without a class or ID? Use `nth-child`:  
 - **Syntax:** `nth-child(n)`  
 - **Example:**  
@@ -59,14 +59,14 @@ This selector belongs to **pseudo-classes**, a special group of selectors.
 
 ---
 
-## Pseudo-classes
+### Pseudo-classes
 A pseudo-class is a selector that selects elements that are in a specific state, e.g. they are the first element of their type, or they are being hovered over by the mouse pointer.  
 They tend to act as if you had applied a class to some part of your document, often helping you cut down on excess classes in your markup, and giving you more flexible, maintainable code.
 
 Pseudo-classes are keywords that start with a colon. For example, `:hover`, is a pseudo-class.
 ***
 
-### CSS Selectors Cheat Sheet 🖌️
+## CSS Selectors Cheat Sheet 🖌️
 
 | **Selector Type**       | **Description**                                                                 | **Syntax/Example**                                                                 |
 |--------------------------|-------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
@@ -85,7 +85,7 @@ Pseudo-classes are keywords that start with a colon. For example, `:hover`, is a
 | **Contains Selector**    | Matches elements whose attribute value contains a specified value.            | `img[alt*="cat"] { border: 2px solid blue; }`                                   |
 
 
-### CSS Pseudo-classes list
+## CSS Pseudo-classes list
 
 | **Selector**            | **Description**                                                                   | **Syntax/Example**                                                                |
 |--------------------------|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
@@ -107,8 +107,6 @@ Pseudo-classes are keywords that start with a colon. For example, `:hover`, is a
 | `:nth-of-type(n)`       | Selects the nth element of its type.                                               | `p:nth-of-type(2) { font-size: 18px; }`                                          |
 | `:nth-last-of-type(n)`  | Selects the nth element of its type, counting from the end.                        | `p:nth-last-of-type(1) { font-weight: bold; }`                                   |
 | `:not(selector)`        | Excludes elements from being selected.                                             | `:not(.excluded) { color: black; }`                                              |
-
-
 
 ---
 
