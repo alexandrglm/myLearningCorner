@@ -1,0 +1,27 @@
+$master-site-color: #3AE39F;
+$off-white: #f6f6f6;
+
+body {
+  background-color: $off-white;
+  height: 100vh;
+  height: 100vw;
+}
+.page-wrapper {
+  $master-site-color: DodgerBlue;
+  padding: 21px;
+
+  .featured {
+    color: $master-site-color;
+  }
+
+  .page-content {
+    $master-site-color: LightCoral;
+    background-color: $master-site-color;
+    padding: 42px;
+    color: #ffffff;
+  }
+}
+
+.secondary-page-content {
+  color: $master-site-color;
+}
