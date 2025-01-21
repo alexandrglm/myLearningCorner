@@ -1,5 +1,4 @@
-
-# MODULE 1: 005 - CodePen.io to process SCSS 
+# MODULE 1 - 005: - CodePen.io to process SCSS 
 In this guide, we’ll walk through how to start working with **SCSS**. 
 
 If you're writing **pure CSS**, you don’t need a tool like this—there’s no preprocessor component involved.  
