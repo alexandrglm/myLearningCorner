@@ -191,6 +191,15 @@ body {
 ```text
 El ámbito de las variables (Scope) en SCSS, como en cualquier otro lenguaje, nos permite controlar la visibilidad y accesibilidad de las variables dentro de nuestro código.  
 Usamos variables de alcance global (Global scope) para valores que se repiten en todo el sitio y variables de alcance local (Local scope) para estilos específicos de componentes.  
-Dominar este concepto es fundamental para desarrollar un código limpio, eficiente y escalable. 
+Dominar este concepto es fundamental para desarrollar un código limpio, eficiente y escalable.
+
+@mixin's
+El ámbito de las variables se vuelve aún más importante cuando usamos mixins en SCSS.
+Un mixin es como una función que contiene un conjunto de estilos que se pueden reutilizar en diferentes partes del código, como una "caja" que contiene un conjunto de reglas de estilo.
+
+Podemos darle un nombre a esta caja y luego "llamarla" en diferentes partes de nuestro código para reutilizar esos estilos.  
+
+Si un mixin redefine una variable, esta nueva definición tendrá prioridad dentro del mixin.  
+
 ```
 
