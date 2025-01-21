@@ -167,11 +167,37 @@ body {
   }
 }
 ```
+![IMG_Scss_snippets](https://github.com/user-attachments/assets/074a24b4-3977-48fa-a5a2-43d0f1f17be2)
+
 
 
 ***
 [SPA]
 ```text
+Usando Variables Predeterminadas en Scss.
 
+Hemos visto cómo trabajar con variables en Scss permite realizar un solo cambio que se refleja en numerosas definiciones de estilo. Para profundizar en este conocimiento, en esta guía examinaremos cómo establecer valores predeterminados para las variables en Scss.
+
+Puede parecer un tema menor, ya que su principal importancia radica en situaciones donde se personalizan estilos en una aplicación. Sin embargo, creo que es una habilidad útil de comprender y también sirve como una buena introducción al aprendizaje de cómo Scss maneja el ámbito de las variables.
+
+El ámbito de una variable es el proceso que utilizan los lenguajes de programación para controlar dónde se pueden acceder a las variables a lo largo de un programa.
+
+Ejemplo de Uso de Variables en Scss
+
+Para este ejemplo, imaginemos un escenario en el que estamos creando un conjunto de estilos que se utilizarán en varios sitios web. Servicios como Wix y Squarespace deben implementar este tipo de comportamiento en todos sus sistemas. Para nuestro ejemplo, queremos que nuestro esquema de color tenga un conjunto de colores rojo oscuro para el texto de los encabezados y los fondos de las secciones.
+
+Implementaremos mixins de Scss y agregaremos variables con la bandera !default. Si no estás familiarizado con los mixins, los profundizaremos más adelante, por ahora simplemente piénsalos como fragmentos de código reutilizables que se pueden llamar. Puedes ver los resultados a continuación:
+
+Ahora puedes visualizar el primer bloque de código SCSS de esta lección.
+
+No te preocupes por entender todo el código si parece diferente a lo que estás acostumbrado. Simplemente concéntrate en ver cómo estamos estableciendo los colores predeterminados en cada uno de los mixins, lo que resulta en el color rojo oscuro que estamos buscando.
+
+Haciendo las Variables Dinámicas con la Bandera !default
+
+Ahora, imaginemos que tenemos dos clientes. Al primer cliente le gusta el color rojo, por lo que no tenemos que hacer ningún cambio. Sin embargo, el segundo cliente desea tener un color cian oscuro para su aplicación. Si no hubiéramos usado la bandera !default, tendríamos que recorrer toda la aplicación y cambiar todos los valores. Además, si la aplicación es dinámica, tendríamos que encontrar una manera de realizar una sobrescritura del valor, como usar estilos en línea, lo cual puede ser complicado y violar varias buenas prácticas.
+
+Sin embargo, debido a que usamos la bandera !default en nuestros mixins, simplemente podemos agregar una sola línea al principio del archivo que se considerará como el nuevo color 'maestro'. Debido a que las otras variables de color tienen la bandera !default, Scss ignorará esas declaraciones de variables y solo usará la nueva que se proporciona.
+
+Ahora, por favor, lee el segundo fragmento de código SCSS.
 ```
   
