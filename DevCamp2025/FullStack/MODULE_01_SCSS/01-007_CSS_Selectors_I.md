@@ -3,7 +3,7 @@
 A strong understanding of **CSS** is essential for building web applications. This guide focuses on **CSS selectors**, the key component that connects styles with page elements.  
 
 ---
-## Recalling about CSS
+## Recalling on CSS
 
 ### 🖌️ **What is CSS?**  
 CSS (**Cascading Style Sheets**) defines the look and feel of your application. It contains the **rules** that style your HTML elements.
