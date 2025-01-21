@@ -185,3 +185,12 @@ body {
   color: $master-site-color;
 }
 ```
+
+---
+[SPA]  
+```text
+El ámbito de las variables (Scope) en SCSS nos permite controlar la visibilidad y accesibilidad de las variables dentro de nuestro código.  
+Usamos variables de alcance global (Global scope) para valores que se repiten en todo el sitio y variables de alcance local (Local scope) para estilos específicos de componentes.  
+Dominar este concepto es fundamental para desarrollar un código limpio, eficiente y escalable. 
+```
+
