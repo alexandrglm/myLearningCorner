@@ -1,6 +1,6 @@
 # 🎨 **SCSS Variables (1)**
 
-This guide examines why using variables is a powerful tool to simplify our css code, also the syntax for **declaring** and **calling variables** in SCSS files will be introduced.  
+This guide examines why using variables is a powerful tool to simplify our CSS code, also the syntax for **declaring** and **calling variables** in SCSS files will be introduced.  
 
 ---
 
