@@ -1,3 +1,7 @@
+Pending:  Schematize & spa speech abstracting.  
+  
+  
+***
 # MODULE 01 - 012:  SCSS :Pseudo-selectors
 
 ***
