@@ -138,3 +138,17 @@ body {
 ***
 [SPA]
 
+Los estilos anidados en SCSS son una herramienta mejorada del CSS tradicional, evitando el caos de los selectores largos y complicados de ésta.
+
+¿Cómo?
+
+SCSS ofrece una solución mucho más sencilla: 
+
+> **Anidar estilos dentro de estilos**
+
+
+
+
+
+
+
