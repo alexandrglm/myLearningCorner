@@ -9,7 +9,7 @@
 | [X] | 07  | CSS: Recall     | Guide to CSS Selectors for Web Developers and Designers                             | 2025/01/21 |
 | [X] | 08  | SCSS: Variables (1) | Introduction to Variables in SCSS                                                  | 2025/01/21 |
 | [X] | 09  | SCSS: Variables (2) | Using Default Variables in SCSS                                                    | 2025/01/21 |
-| [ ] | 10  |      | Guide to Variable Scope in SCSS                                                    |            |
+| [X] | 10  | SCSS: Scope & @mixin | Guide to Variable Scope in SCSS                                                    | 2025/01/21 |
 | [ ] | 11  |      | Guide to Scss Nesting                                                              |            |
 | [ ] | 12  |      | Scss Pseudo Selector Nesting                                                       |            |
 | [ ] | 13  |      | Creating Your First Mixin                                                          |            |
