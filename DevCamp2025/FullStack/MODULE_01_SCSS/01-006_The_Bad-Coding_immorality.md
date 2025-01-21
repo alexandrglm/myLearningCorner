@@ -1,4 +1,4 @@
-# MODULE 01: 006 🤔 **Is Writing Bad Code Immoral for Developers?**
+# MODULE 1 - 006: 🤔 	**Is Writing Bad Code Immoral for Developers?**
 
 This guide discusses a slightly odd question: 
 
