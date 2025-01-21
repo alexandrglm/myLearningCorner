@@ -203,3 +203,69 @@ I hope that this has been a helpful guide to CSS selectors and that it can help 
 ### Resources
 1. 'Basic CSS selectors' - MDN Web Docs [Link](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Basic_selectors)
 ```
+***
+[SPA]
+```text
+# Guía de Selectores CSS para Desarrolladores y Diseñadores Web
+
+Cuando se trata de construir aplicaciones web, un sólido conocimiento de CSS te llevará muy lejos.
+
+Puedes usar esta publicación como una guía para los selectores CSS, que son el componente clave para conectar estilos con los elementos de una página.
+¿Qué es CSS?
+
+CSS significa Hojas de Estilo en Cascada (Cascading Style Sheets). Tus archivos CSS son donde puedes colocar las reglas que dictarán la apariencia de tu aplicación.
+¿Qué es un selector CSS?
+
+Si imaginas los componentes de un sitio web como engranajes en una máquina, tus elementos HTML y CSS serían entidades separadas.
+
+Esencialmente, tus archivos CSS contienen reglas de estilo para el sitio web, pero para que las reglas entren en vigor, necesitas conectar los dos componentes.
+
+Y ahí es donde entran en juego los selectores CSS.
+
+Los selectores CSS te permiten especificar elementos en la página y luego aplicar las reglas de estilo a los elementos que enumeres.
+
+Por ejemplo, puedes querer seleccionar una barra de navegación o una tabla para darles a los componentes sus propios estilos.
+
+Echando un vistazo a esta página, puedes ver una muestra de los elementos de la página que puedes seleccionar, incluyendo:
+
+- Título de la página
+- Logotipo
+- Barra de navegación
+- Imagen
+- Enlaces para compartir
+- Migas de pan
+- Etc.
+
+Guía de Selectores CSS
+
+Entonces, ¿cómo puedes seleccionar exactamente elementos en una página? Al igual que el lenguaje de marcado HTML, hay una sintaxis específica para usar con los estilos CSS. Y eso es lo que veremos hoy.
+Sintaxis básica
+
+Empezando por lo básico, hay dos formas principales de seleccionar elementos en una página. Puedes seleccionar:
+
+- Elementos – como divs, etiquetas h1, etc. Para estos, el nombre del elemento en sí seleccionará el elemento en la página.
+- IDs únicos – para seleccionar un ID, se usa el símbolo # antes del nombre del ID.
+- Clases – las clases son atributos que puedes usar múltiples veces. Para seleccionar una clase, se usa la sintaxis del selector .
+
+En esta imagen, puedes ver cada una de las opciones de selector. El elemento div se selecciona y se le da el color de fondo rojo. El div con el nombre de clase my_cool_class ha recibido el color de fondo verde. Y por último, el id llamado my_cool_id ha recibido el color de fondo azul.
+Priorización de Selectores CSS
+
+Observa cómo, aunque los tres elementos son divs, todos pueden seleccionarse por separado. Esto se logra a través del concepto de priorización de selectores CSS. A alto nivel, significa que el selector más específico gana. Es por eso que el color de fondo rojo no se renderizó para los elementos que tenían los selectores de clase e id, ya que se consideran más específicos.
+Anidamiento de Selectores CSS
+
+Además de seleccionar elementos básicos, hay muchas veces en las que necesitas seleccionar elementos anidados en una página.
+
+En este ejemplo, puedes ver que tenemos un conjunto de elementos de viñetas anidados dentro de nuestra clase. Al usar esta sintaxis, podemos seleccionar los elementos anidados dentro de otro elemento y definir sus propios estilos.
+Selectores nth-child
+
+Entonces, ¿qué sucede cuando quieres seleccionar un elemento que no tiene una clase o un id y simplemente pertenece a un grupo de elementos? Por ejemplo, ¿qué sucede si necesitamos dar estilos específicos a solo una viñeta?
+
+Ahí es donde entra en juego el selector nth-child.
+
+Aquí puedes ver un selector que aprovecha el mecanismo nth-child, que nos permite especificar qué elemento queremos estilizar. En este caso, pasé 1 para seleccionar la primera viñeta. Los selectores nth-child son parte de un grupo especial de selectores llamados pseudo-clases.
+Una lista de Pseudo-clases
+
+La lista de pseudo-clases es bastante extensa y he colocado un enlace a la lista completa, junto con un enlace a la documentación de selectores CSS que puedes usar para ampliar tus conocimientos.
+
+Espero que esta haya sido una guía útil sobre los selectores CSS y que te ayude a construir estilos personalizados en tu próxima aplicación web.
+```
