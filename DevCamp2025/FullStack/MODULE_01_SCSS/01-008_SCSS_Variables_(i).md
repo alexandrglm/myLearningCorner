@@ -1,6 +1,6 @@
-# 🎨 **SCSS Variables (1)**
+# 🎨 **SCSS Variables (i)**
 
-This guide examines why using variables is a powerful tool to simplify our CSS code, also the syntax for **declaring** and **calling variables** in SCSS files will be introduced.  
+We've walked through how to work with variables in Scss to make it possible to make a single change that populates a number of style definitions. To take this knowledge a step further, in this guide we'll examine how to set default variable values in Scss.
 
 ---
 
@@ -17,6 +17,9 @@ SCSS variables empower you to manage styles more effectively by:
 - **Easier Maintenance**
 - **Cleaner Code**
 - **Scalability**
+
+✅✅✅ **The best benefit, as SCSS is a compiled language, its compiler will stop the execution and will tell to perform a debug:**
+![IMG0_Debug_Compilation_time](https://github.com/user-attachments/assets/879058da-623b-4eb1-81a5-516f89fc535b)
 
 ---
 
