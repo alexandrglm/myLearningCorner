@@ -1,4 +1,4 @@
-# MODULE 01 - 001:      CSS Selectors 
+# MODULE 01 - 007:      CSS Selectors 
 
 A strong understanding of **CSS** is essential for building web applications. This guide focuses on **CSS selectors**, the key component that connects styles with page elements.  
 
