@@ -1,17 +1,15 @@
-# MODULE 1 PART 1
-## SCSS (86)
-| [ ] | N.  | Type | Title                                                                              | Date       |
+| | # | Type | Tittle                                                                              | Date       |
 |-----|-----|------|------------------------------------------------------------------------------------|------------|
-| [X] | 01  | Literacy: Productivity      | [How to Break Through the Cycle of Procrastination](https://github.com/alexandrglm/elearning_tools/blob/427929a399d370353fea75cbd08039057bb3811b/DevCamp2025/FullStack/MODULE_01_SCSS/01-001_Breaking_Through_The_ProcrastinationCycle.md)                                   | 2025/01/20 |
-| [X] | 02  | SCSS - Definitions     | [The Who, What, When, Where, Why, and How of SCSS](https://github.com/alexandrglm/elearning_tools/blob/427929a399d370353fea75cbd08039057bb3811b/DevCamp2025/FullStack/MODULE_01_SCSS/01-002_SCSS_WhoWhatWhenWhereWhyHow.md)                                    | 2025/01/20 |
-| [X] | 03  | SCSS - Workflow     | [SCSS Preprocessor Demo: How the Scss Magic Happens](https://github.com/alexandrglm/elearning_tools/blob/427929a399d370353fea75cbd08039057bb3811b/DevCamp2025/FullStack/MODULE_01_SCSS/01-003_SSCS_PreProcessor_demo.md)                                  | 2025/01/20 |
-| [X] | 04  | SCSS - Origins     | [Differences Between SASS and SCSS](https://github.com/alexandrglm/elearning_tools/blob/427929a399d370353fea75cbd08039057bb3811b/DevCamp2025/FullStack/MODULE_01_SCSS/01-004_SASS_vs_SCSS.md)                                                 | 2025/01/20 |
-| [X] | 05  | SCSS - Setting up an IDE     | [How to Configure Codepen to Process Scss Files](https://github.com/alexandrglm/elearning_tools/blob/427929a399d370353fea75cbd08039057bb3811b/DevCamp2025/FullStack/MODULE_01_SCSS/01-005_CodePen_as_SCSS_IDE.md)                                    | 2025/01/20 |
-| [X] | 06  | Literacy: Ethics / Productivity | [Is Writing Bad Code Immoral for Developers?](https://github.com/alexandrglm/elearning_tools/blob/427929a399d370353fea75cbd08039057bb3811b/DevCamp2025/FullStack/MODULE_01_SCSS/01-006_The_Bad-Coding_immorality.md)                                         | 2025/01/20 |
-| [X] | 07  | CSS: Definitions     | [Guide to CSS Selectors for Web Developers and Designers](https://github.com/alexandrglm/elearning_tools/blob/314ee6db79e1cd64258accb81f784daeaab243b8/DevCamp2025/FullStack/MODULE_01_SCSS/01-007_CSS_Selectors_I.md)                             | 2025/01/21 |
-| [ ] | 08  |      | Introduction to Variables in Scss                                                  |            |
-| [ ] | 09  |      | Using Default Variables in Scss                                                    |            |
-| [ ] | 10  |      | Guide to Variable Scope in Scss                                                    |            |
+| [X] | 01  | Literacy: Productivity      | How to Break Through the Cycle of Procrastination                                   | 2025/01/20 |
+| [X] | 02  | SCSS - Definitions     | The Who, What, When, Where, Why, and How of SCSS                                    | 2025/01/20 |
+| [X] | 03  | SCSS - Workflow     | SCSS Preprocessor Demo: How the Scss Magic Happens                                  | 2025/01/20 |
+| [X] | 04  | SCSS - Origins     | Differences Between SASS and SCSS                                                 | 2025/01/20 |
+| [X] | 05  | SCSS - Setting up an IDE     | How to Configure Codepen to Process Scss Files                                    | 2025/01/20 |
+| [X] | 06  | Literacy: Ethics / Productivity | Is Writing Bad Code Immoral for Developers?                                         | 2025/01/20 |
+| [X] | 07  | CSS: Recall     | Guide to CSS Selectors for Web Developers and Designers                             | 2025/01/21 |
+| [X] | 08  | SCSS: Variables (1) | Introduction to Variables in SCSS                                                  | 2025/01/21 |
+| [X] | 09  | SCSS: Variables (2) | Using Default Variables in SCSS                                                    | 2025/01/21 |
+| [ ] | 10  |      | Guide to Variable Scope in SCSS                                                    |            |
 | [ ] | 11  |      | Guide to Scss Nesting                                                              |            |
 | [ ] | 12  |      | Scss Pseudo Selector Nesting                                                       |            |
 | [ ] | 13  |      | Creating Your First Mixin                                                          |            |
