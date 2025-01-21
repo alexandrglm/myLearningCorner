@@ -227,7 +227,7 @@ Esta es una de las herramientas más poderosas que puede usar como desarrollador
 Cuando uno de ustedes está codificando, el otro desarrollador está observando y dando consejos o advertencias.
 Siempre que estoy construyendo una función compleja, siempre uso la programación en pareja, ya que es similar a trabajar con dos cerebros en la misma función.
 
-* **Educación Continua**:
+* **Formación Continua**:
 No importa cuánto tiempo haya sido desarrollador, nunca llegará a una etapa en la que termine el aprendizaje. Cada día trato de aprender algo nuevo, ya sea a través de tutoriales, libros o publicaciones de blog de otros programadores.  
 
 Espero que este haya sido un artículo que te haya hecho reflexionar y te ayude en tu camino hacia convertirte en un artesano del código.
