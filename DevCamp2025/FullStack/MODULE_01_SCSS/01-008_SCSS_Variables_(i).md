@@ -18,8 +18,8 @@ SCSS variables empower you to manage styles more effectively by:
 - **Cleaner Code**
 - **Scalability**
 
-✅✅✅ **The best benefit, as SCSS is a compiled language, its compiler will stop the execution and will tell to perform a debug:**
-![IMG0_Debug_Compilation_time](https://github.com/user-attachments/assets/879058da-623b-4eb1-81a5-516f89fc535b)
+✅✅✅ **The best benefit, as SCSS is a compiled language, its compiler will stop the execution and will tell to perform a debug:**  
+![IMG0_Debug_Compilation_time](https://github.com/user-attachments/assets/879058da-623b-4eb1-81a5-516f89fc535b)  
 
 ---
 
