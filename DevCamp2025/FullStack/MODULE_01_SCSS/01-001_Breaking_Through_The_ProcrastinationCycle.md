@@ -1,6 +1,6 @@
-# 01-001: Breaking Through the Cycle of Procrastination
+# MODULE 01-001 :  Breaking Through the Cycle of Procrastination
 
-## 🌟 **Imagine this...**
+#### 🌟 **Imagine this...**
 
 You’re sitting in front of your computer, staring at a blank screen.  
 You know you have to work on a **code project**, but it feels like you’re frozen.  
@@ -69,7 +69,7 @@ For example, when I learned to connect to a database, I froze because it opened 
 4. ...and much more!
 
 To overcome this...
- # ...**quiet your mind!**🧘.  
+ # ...quiet your mind!🧘.  
 Celebrate learning a new topic, and take the next step.  
 
 > **Progress is made one step at a time.**
