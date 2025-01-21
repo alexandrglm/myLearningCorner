@@ -7,7 +7,7 @@
 | [X] | 03  | SCSS - Workflow     | Scss Preprocessor Demo: How the Scss Magic Happens                                  | 2025/01/20 |
 | [X] | 04  | SCSS - Origins     | Differences Between Sass and Scss                                                 | 2025/01/20 |
 | [X] | 05  | SCSS - Setting up an IDE     | How to Configure Codepen to Process Scss Files                                    | 2025/01/20 |
-| [ ] | 06  | Literacy: Ethics     | Is Writing Bad Code Immoral for Developers?                                         |            |
+| [X] | 06  | Literacy: Ethics     | Is Writing Bad Code Immoral for Developers?                                         | 2025/01/20 |
 | [ ] | 07  |      | Guide to CSS Selectors for Web Developers and Designers                             |            |
 | [ ] | 08  |      | Introduction to Variables in Scss                                                  |            |
 | [ ] | 09  |      | Using Default Variables in Scss                                                    |            |
