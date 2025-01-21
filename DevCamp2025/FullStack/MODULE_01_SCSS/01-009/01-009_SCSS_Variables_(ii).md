@@ -2,7 +2,6 @@
 
 In this guide, we’ll build on what we’ve learned about SCSS variables and explore how to set **default variable values**   in SCSS.
 
----
 
 ## 🔧 **Why Use Default Variables?**
 
