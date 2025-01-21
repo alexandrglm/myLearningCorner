@@ -112,7 +112,7 @@ Additionally, it provides a **report** to the development team on what needs fix
 This is one of the most powerful tools you can use as a developer.  
 **Pair programming** is when you and another developer take turns working on the same project at the same time—preferably in the same room and on the same computer.  
 
-Whenever I’m building a **complex feature**, I always use **pair programming** since it’s like having **two brains** tackling the same problem. 🧠🧠
+Whenever I’m building a **complex feature**, I always use **pair programming** since it’s like having **two brains** working on the same function. 🧠🧠
 
 ---
 
