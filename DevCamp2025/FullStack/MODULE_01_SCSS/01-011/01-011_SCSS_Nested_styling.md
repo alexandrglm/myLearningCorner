@@ -1,5 +1,8 @@
-# MODULE 01 - 011:   SCSS Nested🪺 styles
+# MODULE 01 - 011:   SCSS Nested🪺 styles  
 One of the most powerful features of SCSS is **style nesting**, making stylesheets cleaner and more intuitive.  
+
+SCSS provides an intuitive nesting feature, allowing you to define styles within the context of their parent. 
+
 ---
 ## 🤔 Why Use Nesting?
 
@@ -22,16 +25,15 @@ But what if you have complex nested elements, such as:
 
 And, here comes SCSS.  
 
-***
-# SCSS allows to nest .classes inside another .classes, overriding its global scope.
+# 💡 SCSS allows to nest .classes inside another .classes, overriding its global scope 💡
 
-## 💡 SCSS nesting is an excellent way to:
+##  SCSS nesting is an excellent way to:
 
 * Organize styles hierarchically.  
 * Ensure cleaner, more readable code.  
 * Avoid repetitive declarations for complex structures.  
 
-SCSS provides an intuitive nesting feature, allowing you to define styles within the context of their parent.  
+ 
 
 ```scss
 $off-white: #f6f6f6;
