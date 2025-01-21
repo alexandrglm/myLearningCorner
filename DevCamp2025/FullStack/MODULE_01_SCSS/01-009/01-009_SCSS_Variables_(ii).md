@@ -59,14 +59,8 @@ Then:
    - Use the new value wherever the variable is called.  
 ***
 
-## Code example
-
-
-
-
-
-
-****
+### Code example
+![IMG_SCSS_snippets](https://github.com/user-attachments/assets/074a24b4-3977-48fa-a5a2-43d0f1f17be2)
 
 ***
 # Video Lesson Speech
