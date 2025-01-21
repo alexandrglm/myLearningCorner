@@ -1,3 +1,121 @@
+# MODULE 01 - 001:      **CSS Selectors **
+
+A strong understanding of **CSS** is essential for building web applications. This guide focuses on **CSS selectors**, the key component that connects styles with page elements.  
+
+---
+# Recalling about CSS
+
+## 🖌️ **What is CSS?**  
+CSS (**Cascading Style Sheets**) defines the look and feel of your application. It contains the **rules** that style your HTML elements.
+---
+
+## 🎯 **What is a CSS Selector?**  
+Think of a website as a machine:  
+- **HTML**: The components.  
+- **CSS**: The design rules.  
+
+CSS selectors are the bridge that connects the two.  
+They allow you to specify page elements (e.g., navbar, image, breadcrumbs) and apply styles to them.  
+---
+
+## 🧩 **CSS Selector Basics**  
+
+CSS uses specific syntax to select elements:  
+
+1. **Elements**: Use the tag name (e.g., `div`, `h1`).  
+2. **Classes**: Use a `.` before the class name (e.g., `.my-class`).  
+3. **IDs**: Use `#` before the ID name (e.g., `#my-id`).  
+
+> **Example:**  
+> - A `div` with no class or ID → background color: red.  
+> - A `div` with the class `.my_cool_class` → background color: green.  
+> - A `div` with the ID `#my_cool_id` → background color: blue.  
+
+---
+
+## ⚖️ **CSS Selector Prioritization**  
+Even if multiple selectors target the same element:  
+- **The most specific selector wins.**  
+- IDs > Classes > Elements.  
+
+---
+
+## 🪆 **CSS Selector Nesting**  
+Sometimes, elements are **nested** within others. CSS allows you to target these elements directly:  
+
+> Example:  
+> - A list (`ul`) has bullet points (`li`).  
+> - Nesting syntax can apply styles to `li` inside a specific `ul`.  
+
+---
+
+## 🔢 **nth-child Selectors**  
+Need to style a specific item in a group without a class or ID? Use `nth-child`:  
+- **Syntax:** `nth-child(n)`  
+- **Example:**  
+  - To style the first bullet point → `nth-child(1)`.  
+
+This selector belongs to **pseudo-classes**, a special group of selectors.
+
+---
+
+## Pseudo-classes
+A pseudo-class is a selector that selects elements that are in a specific state, e.g. they are the first element of their type, or they are being hovered over by the mouse pointer.  
+They tend to act as if you had applied a class to some part of your document, often helping you cut down on excess classes in your markup, and giving you more flexible, maintainable code.
+
+Pseudo-classes are keywords that start with a colon. For example, `:hover`, is a pseudo-class.
+***
+
+### CSS Selectors Cheat Sheet 🖌️
+
+| **Selector Type**       | **Description**                                                                 | **Syntax/Example**                                                                 |
+|--------------------------|-------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| **Universal Selector**   | Selects all elements.                                                        | `* { margin: 0; padding: 0; }`                                                   |
+| **Type Selector**        | Selects all elements of a specific type.                                     | `p { font-size: 16px; }`                                                         |
+| **Class Selector**       | Selects all elements with a specific class.                                  | `.my-class { color: blue; }`                                                     |
+| **ID Selector**          | Selects a single element with a specific ID.                                 | `#my-id { font-weight: bold; }`                                                 |
+| **Group Selector**       | Applies the same styles to multiple elements.                                | `h1, h2, h3 { font-family: Arial, sans-serif; }`                                 |
+| **Descendant Selector**  | Selects elements inside another element.                                     | `div p { color: gray; }`                                                         |
+| **Child Selector**       | Selects direct children of an element.                                       | `ul > li { list-style: none; }`                                                 |
+| **Adjacent Sibling Selector** | Selects the next sibling of an element.                                   | `h1 + p { margin-top: 10px; }`                                                  |
+| **General Sibling Selector**  | Selects all siblings of an element.                                       | `h1 ~ p { font-size: 14px; }`                                                   |
+| **Attribute Selector**   | Selects elements with a specific attribute.                                  | `input[type="text"] { border: 1px solid black; }`                                |
+| **Starts With Selector** | Matches elements whose attribute value starts with a specified value.         | `a[href^="https"] { color: green; }`                                            |
+| **Ends With Selector**   | Matches elements whose attribute value ends with a specified value.           | `a[href$=".pdf"] { color: red; }`                                               |
+| **Contains Selector**    | Matches elements whose attribute value contains a specified value.            | `img[alt*="cat"] { border: 2px solid blue; }`                                   |
+
+
+### CSS Pseudo-classes list
+
+| **Selector**            | **Description**                                                                   | **Syntax/Example**                                                                |
+|--------------------------|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| `:hover`                | Selects an element when hovered over.                                             | `button:hover { background-color: yellow; }`                                     |
+| `:focus`                | Selects an element when it gains focus.                                           | `input:focus { outline: 2px solid blue; }`                                       |
+| `:active`               | Selects an element while being activated (clicked).                               | `a:active { color: red; }`                                                       |
+| `:visited`              | Selects links that have been visited.                                             | `a:visited { color: purple; }`                                                   |
+| `:checked`              | Selects checkboxes or radio buttons that are checked.                             | `input:checked { border: 2px solid green; }`                                     |
+| `:disabled`             | Selects elements that are disabled.                                               | `button:disabled { opacity: 0.5; }`                                              |
+| `:empty`                | Selects elements with no children.                                                | `div:empty { display: none; }`                                                   |
+| `:root`                 | Selects the root element of the document (`<html>`).                              | `:root { --main-color: #333; }`                                                  |
+| `:first-child`          | Selects the first child of a parent element.                                       | `p:first-child { font-weight: bold; }`                                           |
+| `:last-child`           | Selects the last child of a parent element.                                        | `p:last-child { font-style: italic; }`                                           |
+| `:only-child`           | Selects an element if it’s the only child of its parent.                          | `div:only-child { background: lightgray; }`                                      |
+| `:nth-child(n)`         | Selects the nth child of a parent.                                                 | `li:nth-child(2) { color: red; }`                                                |
+| `:nth-last-child(n)`    | Selects the nth child of a parent, counting from the end.                          | `li:nth-last-child(1) { color: green; }`                                         |
+| `:first-of-type`        | Selects the first element of its type.                                             | `p:first-of-type { text-decoration: underline; }`                                |
+| `:last-of-type`         | Selects the last element of its type.                                              | `p:last-of-type { color: blue; }`                                                |
+| `:nth-of-type(n)`       | Selects the nth element of its type.                                               | `p:nth-of-type(2) { font-size: 18px; }`                                          |
+| `:nth-last-of-type(n)`  | Selects the nth element of its type, counting from the end.                        | `p:nth-last-of-type(1) { font-weight: bold; }`                                   |
+| `:not(selector)`        | Excludes elements from being selected.                                             | `:not(.excluded) { color: black; }`                                              |
+
+
+
+---
+
+### 📚 **Resources**  
+- [Basic CSS Selectors - MDN Web Docs](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Basic_selectors)  
+
+
 ***
 # Video Lesson Speech
 [ENG]  
