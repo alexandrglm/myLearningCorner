@@ -31,7 +31,8 @@ Copies what's inside in `a` Accumulator register onto the given 16-bit memory ad
 Copies the given 16 bit value (⚠️ FF00, in this case, **is not a memory address, but a 16 bit number** that needs to be adressed to both 8bit registers) onto `h` and `l`.  
 
 ### `22 - 00 FF` - `ld (FF00), hl`  
-Copies what's inside `h` and `l` registers onto the given memory address (This case, this Opcode is refering a 16 bit memory address). This is the main method to store 16 bit data value into a specific memory address.
+Copies what's inside `h` and `l` registers onto the given memory address (This case, this Opcode is refering a 16 bit memory address). 
+💡 This is the main method to store 16 bit data value into a specific memory address.
 
 ### `18 - 00` - `jr 00`
 Perform a relative jump (`JR`) by adding the given value to `PC` register. Then, the programm counter will follow the execution from that "added" point.  
