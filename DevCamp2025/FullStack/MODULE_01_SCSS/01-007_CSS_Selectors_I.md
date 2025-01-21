@@ -117,7 +117,6 @@ Pseudo-classes are keywords that start with a colon. For example, `:hover`, is a
 ***
 # Video Lesson Speech
 [ENG]  
-```
 # Guide to CSS Selectors for Web Developers and Designers  
 
 When it comes to building out web applications, a solid understanding of CSS will take you a long way.  
@@ -167,6 +166,7 @@ Starting with the basics, there are two main ways to select items on a page. You
     - Unique IDs – for selecting an ID you use the # symbol before the name of the ID.
     - Classes – classes are attributes that you can use multiple times. In order to select a class, you use the . selector syntax.
 
+![IMG3_CSS_Selectors](https://github.com/user-attachments/assets/20a8d034-ccdb-4de7-8879-d8c2677cbb73)
 
 
 In this image, you can see each one of the selector options. The div element is selected and given the background color of red. The div with the class name of my_cool_class has been given the background color of green. And lastly, the id named my_cool_id has been given the background color of blue.  
@@ -179,7 +179,7 @@ Notice how even though all three elements are divs, they can all be selected sep
 
 In addition to selecting basic elements, there are many times where you need to select nested elements on a page.
 
-large
+![IMG4_CSS_Selectors_BulletsExample](https://github.com/user-attachments/assets/a9eac727-672f-48bc-b2ca-6e09110f8dbf)
 
 In this example, you can see that we have a set of bullet point elements nested inside of our class. By using this syntax we’re able to select the nested items inside of another element and define their own styles.
 
