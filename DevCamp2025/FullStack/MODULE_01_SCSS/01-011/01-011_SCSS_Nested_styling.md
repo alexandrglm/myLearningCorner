@@ -1,4 +1,4 @@
-# MODULE 01 - 011:  🪺 SCSS Nested styles
+# MODULE 01 - 011:   SCSS Nested🪺 styles
 One of the most powerful features of SCSS is **style nesting**, making stylesheets cleaner and more intuitive.  
 ---
 ## 🤔 Why Use Nesting?
