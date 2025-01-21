@@ -1,12 +1,11 @@
-# MODULE 1: 003 - SCSS PreProcessor Demo 🎨
+# MODULE 01-003:  SCSS PreProcessor Demo 
 
 ## 🌟 **Introduction**  
 Now that you have a general overview of **SCSS**, let’s dive into its functionality. We’ll explore:  
 - **What SCSS actually does.**  
 - **How it builds advanced features.**  
 
-⚠️ *There’s nothing magical about SCSS.* It’s simply a markup language that gets converted into something more powerful.  
-
+⚠️ *There’s nothing magical about SCSS.* It’s simply a markup language that gets converted into something more powerful. 
 
 ---
 
