@@ -1,6 +1,4 @@
-# 01-002	The SCSS Who, What, When, Where, Why, and How
-
-## 🖥️ **Welcome!**
+# MODULE 01-002 :   SCSS. Who, What, When, Where, Why, and How
 
 Welcome to the **first lesson** in the *Getting DRY with SCSS* course!  
 In this guide, we’ll explore **the who, what, when, where, why, and how** of SCSS.  
@@ -61,18 +59,8 @@ Why learn SCSS? Here’s why it’s worth your time:
 
 SCSS works as a **preprocessor**:
 - It lets you write enhanced CSS with added functionality.  
-- Converts SCSS code into standard CSS.  
-
-### 🔍 Under the Hood:
-- SCSS takes **mixins, variables, functions, and conditionals**, compiles them, and generates CSS ready for browsers.  
-
----
-
-## 🎥 **Next Steps**
-
-In the next guide, we’ll dive into a screencast demo to see SCSS in action! 📽️  
-Let’s transform your approach to front-end design together. 💪
-
+- Converts SCSS code into standard CSS.
+- SCSS takes **mixins, variables, functions, and conditionals**, compiles them, and generates CSS ready for browsers. 
 ***
 ## Video Speech.
 ```
