@@ -1,4 +1,4 @@
-# MODULE 1 - 004 SaSS vs SCSS
+# MODULE 1 - 004:    SaSS 🆚 SCSS
 So far we have been through a full overview of SCSS, walked through the preprocessors step so you can see what code was written and then we looked at how it got translated into something the browser could understand.  
 ***
 There is something that might be a little bit confusing whether it's in some type of coding interview situation, or just in general as reading documentation.  
@@ -10,22 +10,23 @@ Technically, both of those are called SASS which makes for some kind of confusin
 Here we are going to talk about the differences there are between the two and what we are going to be using for the course.  
 
 1. **SASS was the original version**.
-   - ❌ It does not look anything like CSS. ✅ It cares about things such as indentation.
+   - ❌ It does not look anything like CSS.
+   - 🥱 It cares about things such as indentation.
    - 🫵 When using SASS all of your code has to be segmented.
    - 🫵 It has to have the right number of spaces right in front of each set of style definitions.
    - ❌ It doesn't have {curly braces}
-   - ✅ It has plus➕ signs and equal🟰signs all over the place.
+   - ❌ It only has plus➕ signs and equal🟰signs all over the place.
    - If you've ever worked with *Hammill* or *Slim*, you may notice it looks very similar to that type of setup.
 
 What you will see more often is SCSS and that's what we're going to be using in this entire course.  
 
-## Reasons to choose SCSS in production
-There are many reasons why SCSS is used so widely:
-1. 📈 **Lower Learning-curve** :
-   * It looks exactly like CSS.
-   * It uses almost the same syntax. This makes it much more familiar.
-2. ♾️ **Backward Compatibility**:
-   * If you want to write just pure CSS code an SCSS file will still process it where the original version of SASS would actually throw an error.
+## ✅ Reasons to choose SCSS in production
+There are many reasons why SCSS is used so widely:  
+1. 📈 **Lower Learning-curve** :  
+   * It looks exactly like CSS.  
+   * It uses almost the same syntax. This makes it much more familiar.  
+2. ♾️ **Backward Compatibility**:  
+   * If you want to write just pure CSS code an SCSS file will still process it where the original version of SASS would actually throw an error.  
 
 I wanted to go over these differences due to the fact that during your research you are going to run into both syntax.  
 Without this brief overview, it may seem very confusing.
