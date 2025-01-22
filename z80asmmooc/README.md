@@ -42,8 +42,4 @@ Licensing is also described [here](https://github.com/alexandrglm/elearning_tool
 💡 **I really encourage you to start this journey** 🌟  
   * You can do it at your own.  
   * It's open, free and colaborative.  
-  * It's challenging, but that's what makes it fun.  
-
-
-
-
+  * It's a so-hard challenging, but that's what makes it fun.
