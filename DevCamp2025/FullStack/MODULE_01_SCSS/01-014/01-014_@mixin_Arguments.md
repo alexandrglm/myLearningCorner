@@ -138,7 +138,7 @@ body {
   @include iAmABox($width:  100px, $height:  200px, $color: Lime, $border: 2px solid black); 
 }
 ```
-⚠️ **Both aren't oppossite, but complentaries !!!**  
+⚠️ **Both aren't oppossite, but complementary !!!**  
 * Positional Args. are passed in the same order as declared as params. into the mixin, being **fast** while coding. It lacks on **scalability**, for example.
 * Named args., are a more verbosing mode, improving the **readibility**. These aslo complies with the usual *strong typed language* others than CSS/SCSS, being **more concise** and, the best part, it's not needed to remember the exact order of the arguments when replying, including, and so on. 
 
