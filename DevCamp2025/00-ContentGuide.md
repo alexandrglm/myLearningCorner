@@ -2,24 +2,24 @@
 |-----|-----|------|------------------------------------------------------------------------------------|------------|
 | [X] | 01  | Literacy: Productivity      | How to Break Through the Cycle of Procrastination                                   | 2025/01/20 |
 | [X] | 02  | SCSS - Definitions     | The Who, What, When, Where, Why, and How of SCSS                                    | 2025/01/20 |
-| [X] | 03  | SCSS - Workflow     | SCSS Preprocessor Demo: How the Scss Magic Happens                                  | 2025/01/20 |
+| [X] | 03  | SCSS - Workflow     | SCSS Preprocessor Demo: How the SCSS Magic Happens                                  | 2025/01/20 |
 | [X] | 04  | SCSS - Origins     | Differences Between SASS and SCSS                                                 | 2025/01/20 |
-| [X] | 05  | SCSS - Setting up an IDE     | How to Configure Codepen to Process Scss Files                                    | 2025/01/20 |
+| [X] | 05  | SCSS - Setting up an IDE     | How to Configure Codepen to Process SCSS Files                                    | 2025/01/20 |
 | [X] | 06  | Literacy: Ethics / Productivity | Is Writing Bad Code Immoral for Developers?                                         | 2025/01/20 |
 | [X] | 07  | CSS: Recall     | Guide to CSS Selectors for Web Developers and Designers                             | 2025/01/21 |
 | [X] | 08  | SCSS: Variables (1) | Introduction to Variables in SCSS                                                  | 2025/01/21 |
 | [X] | 09  | SCSS: Variables (2) | Using Default Variables in SCSS                                                    | 2025/01/21 |
 | [X] | 10  | SCSS: Scope & @mixin | Guide to Variable Scope in SCSS                                                    | 2025/01/21 |
-| [ ] | 11  |      | Guide to Scss Nesting                                                              |            |
-| [ ] | 12  |      | Scss Pseudo Selector Nesting                                                       |            |
-| [ ] | 13  |      | Creating Your First Mixin                                                          |            |
-| [ ] | 14  |      | Introduction to Mixin Arguments in Scss                                            |            |
-| [ ] | 15  |      | Working with Scss Conditionals                                                     |            |
-| [ ] | 16  |      | Build a Flexbox Mixin with Scss                                                    |            |
-| [ ] | 17  |      | Solution: Build a Flexbox Mixin with Scss                                          |            |
-| [ ] | 18  |      | Scss Lists, @each Directive, and String Interpolation                               |            |
-| [ ] | 19  |      | Real World Example of the Scss @import Directive                                   |            |
-| [ ] | 20  |      | How to Use the @content Directive in Scss to Allow for Mixin Flexibility            |            |
+| [X] | 11  | SCSS: Nested styles | Guide to SCSS Nesting                                                              | 2025/01/21 |
+| [X] | 12  | SCSS: &:pseudo's | SCSS Pseudo Selector Nesting                                                       | 2025/01/21 |
+| [X] | 13  | SCSS: @mixin @include | Creating Your First Mixin                                                          | 2025/01/21 |
+| [ ] | 14  |      | Introduction to Mixin Arguments in SCSS                                            |            |
+| [ ] | 15  |      | Working with SCSS Conditionals                                                     |            |
+| [ ] | 16  |      | Build a Flexbox Mixin with SCSS                                                    |            |
+| [ ] | 17  |      | Solution: Build a Flexbox Mixin with SCSS                                          |            |
+| [ ] | 18  |      | SCSS Lists, @each Directive, and String Interpolation                               |            |
+| [ ] | 19  |      | Real World Example of the SCSS @import Directive                                   |            |
+| [ ] | 20  |      | How to Use the @content Directive in SCSS to Allow for Mixin Flexibility            |            |
 | [ ] | 21  |      | App Overview and Resource Material: Branding Page                                  |            |
 | [ ] | 22  |      | Branding Page Layout and Flexbox Integration                                       |            |
 | [ ] | 23  |      | Building Your First SCSS Grids Container                                            |            |
