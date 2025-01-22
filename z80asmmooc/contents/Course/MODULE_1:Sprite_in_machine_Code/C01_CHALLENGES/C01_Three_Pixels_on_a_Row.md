@@ -65,25 +65,48 @@ Four colors (mode1):
 
 #### Test 1: **OK**
 
-R - Y - C - C
-11 - 01 - 10 - 10
-11011010
-1 1 0 0   1 0 1 1
-CB
-![image](https://github.com/user-attachments/assets/cb2e19d7-35ff-4802-a3ea-4264dab30254)
+R - Y - C - C  
+11 - 01 - 10 - 10  
+11011010  
+1 1 0 0   1 0 1 1  
+CB  
+![image](https://github.com/user-attachments/assets/cb2e19d7-35ff-4802-a3ea-4264dab30254)  
 
 
-#### Test 2
-Y - R - R - B
-0111 1100
-1110   0110
-E6
+#### Test 2  : **WRONG**
+Y - R - R - B  
+0111 1100  
+1110   0110  
+E6  
+**E6 es B Y R R**  
+**EN vez de darles la vuelta en binario, dales la vuelta en el primer paso**  
 
-#### Test 1
 
-#### Test 1
+#### Test 3
+R R R R  
+11 11 11 11
+FF
 
-#### Test 1
+#### Test 4
+B B B B
+0000 0000
+00
+
+#### Test 5
+C C C C
+1010 1010
+0000    1111
+0F
+
+#### Test 6
+Y Y Y Y
+01 01 01 01
+1111    0000
+F0
+
+#### Test 6
+
+
 Aid 1: Bin to hex memorising table, then, practicing, conversions will be automatically calculated
 
 | Base2  | Base16 |
