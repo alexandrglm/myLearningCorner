@@ -1,4 +1,142 @@
-# MODULE 1 - 015:  SCSS Conditional
+# MODULE 1 - 015:  SCSS Conditionals (1) IF - ELSE
+This guide explains how to use conditional logic in SCSS to dynamically adjust styles based on arguments and conditions.  
+
+---
+
+## 🤔 **Why using SCSS Conditionals?**
+
+Conditionals in SCSS allow you to:  
+- Dynamically control styles based on provided arguments.  
+- Handle different style scenarios with clean, scalable and reusable code.  
+- Ensure robust styling logic by capturing edge cases.
+- Prevent undesired effects.  
+
+⚡ SCSS uses regular conditional expressions, but with its own syntax (basically, adding @):  
+- `@if` for primary conditions.
+- `@else if` for additional conditions.
+- `@else` as a fallback.
+
+---
+# IF - ELSE 
+## Cases
+- Allows multiple style scenarios.
+- Handles unexpected arguments / Prevents for undesired behaviors.
+
+## 🔧 **Using `@if`, `@else if`, and `@else`**
+
+### 1️⃣ **Basic Conditional with `@if`**
+Define styles based on a condition:
+
+```scss
+@mixin featured($bg-color: 'dark') {
+  @if $bg-color == 'light' {
+    color: Tomato;
+  }
+}
+
+.featured {
+  @include featured('light');
+}
+```
+Here, the logical steps are:    
+
+* If `$bg-color` is 'light',then, the text color will be `Tomato`.  
+* If no value are passed, it defaults to `Dark`.
+
+### 2️⃣ Expanding Conditions with `@else if` and `@else`   
+This can handle multiple use cases:  
+```scss
+@mixin featured($bg-color: 'dark') {
+  @if $bg-color == 'light' {
+    color: Tomato;
+  } @else if $bg-color == 'dark' {
+    color: Blue;
+  } @else {
+    color: Red;
+  }
+}
+
+.featured {
+  @include featured('blue');
+}
+```
+Now, the logical steps become:  
+* `@if` +  `$bg-color == 'light'`: Sets color to Tomato.  
+
+* `@else if` + `$bg-color == 'dark'`: Sets color to Blue.  
+* Finally, `@else`: Defaults to Red.  
+
+***
+## Final code with Conditionals included
+```scss
+$off-white: #f6f6f6;
+$featured-color: DarkRed;
+
+@mixin featured($bg-color: 'dark') {
+  @if $bg-color == 'light' {
+    color: Tomato;  
+  } @else if $bg-color == 'dark' {
+    color: Blue;  
+  } @else {
+    color: Red;
+  }
+
+  .subheading a {
+    color: black;
+    text-decoration: none;
+    &:hover {
+      color: black;
+      text-decoration: underline;
+    }
+  }
+}
+
+body {
+  background-color: $off-white;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  font-family: Verdana;
+  font-size: 0.8rem;
+}
+
+.page-wrapper {
+  padding: 21px;
+  $featured-color: RoyalBlue;
+
+  .featured {
+    @include featured('light');
+  }
+
+  .page-content {
+    background-color: $featured-color;
+    padding: 42px;
+    color: $off-white;
+
+    .container {
+      height: 60px !important;
+      font-family: Courier;
+
+      .description {
+        float: left;
+        width: 75%;
+      }
+
+      .sidebar {
+        font-family: Verdana;
+        text-align: right;
+        float: right;
+        width: 25%;
+        @include featured('blue');
+      }
+    }
+  }
+}
+```
+
+
 
 ***
 # Video lesson Speech
@@ -259,4 +397,16 @@ body {
 ***
 
 [SPA]  
+
+Usar condicionales en nuestro desarrollo tiene múltiples ventajas:
+* Eficiencia y escalabilidad, en tiempo de desarrollo y mantenimiento.  
+* Seguridad y manejo de errores (previene comportamientos inesperados).  
+* Alcance absoluto (Permite cubrir cualquier caso).  
+
+Usamos condicionales IF - ELSE en los siguientes casos:  
+- `@if` para primeros condicionales.
+- `@else if` para cada uno de los posibles casos esperados.
+- `@else` para el resto de situaciones.
+
+Esto no difiere en absoluto respecto al uso de condicionales en cualquier otro tipo de lenguaje, excepto las especificaciones concretas de sintaxis propias en SCSS (básicamente, una arroba antepuesta sobre cada operador condicional).
 
