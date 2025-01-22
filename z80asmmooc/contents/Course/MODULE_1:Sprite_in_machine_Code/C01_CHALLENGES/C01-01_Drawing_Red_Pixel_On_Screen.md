@@ -12,7 +12,9 @@ Steps:
     `3e 88` -> `ld a,n` -> `ld a,#88`   
     `32 00 C0` -> `ld (nn nn),a` -> ' `ld (C000), a`  
     `18 FE` -> `jr d` -> `jr FE` -> FE: 1111 1110 = 254 -> infinite loop  
-    
+0.2. Tells the `PC`to execute the address we want (4000) and close the Debugger.
+
+
 1. Copy value 88 to CPU.
    We need an empty/available memory zone, so, 00 00 won't be right place to.
 
