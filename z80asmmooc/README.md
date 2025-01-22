@@ -26,14 +26,18 @@ As long as nowadays compiling on Z80 might be seen as oudated (even the Z80 is s
 
 ***
 
-### Platform:
-https://profesorretroman.com/
-![image](https://github.com/user-attachments/assets/1b473457-506d-4f15-8a7b-6b7beee17cf6)
+### Platform:  Moodle.
+![image](https://github.com/user-attachments/assets/1b473457-506d-4f15-8a7b-6b7beee17cf6)  
+[https://profesorretroman.com/](https://profesorretroman.com/)  
 
-The method used is described [here](permalink del T00).
+The method used is described [here](https://github.com/alexandrglm/elearning_tools/blob/3d4ba4908de716be88ab821fd9d666810ef3815a/z80asmmooc/contents/Course/MODULE_0%3AIntroduction/T00_Introduction_to_Z80_Assembly.md).  
+
+***
+
+Licensing is also described [here]([perma](https://github.com/alexandrglm/elearning_tools/blob/3d4ba4908de716be88ab821fd9d666810ef3815a/z80asmmooc/LICENSE)).  
 
 ***
 
-Licensing is also described [here](perma).
+💡 **I really encourage you to start this journey step by step!** 🌟  
 
-***
+
