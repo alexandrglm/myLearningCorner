@@ -1,4 +1,4 @@
-
+![image](https://github.com/user-attachments/assets/79e09eab-ef88-47b1-b880-d78311ea1401)
     3 pixes,  separados en la misma fila.
     Debajo de 3 letras.
     De 3 colores distintos.
@@ -7,6 +7,10 @@
 3E 88 - 3E 08 - 3E 80
 
 2. Positions:    32 XX YY
+`A` - `M`  - `S`
+`A` = C0FE - A init
+`A` = C100
+
 - 32 
 
 
