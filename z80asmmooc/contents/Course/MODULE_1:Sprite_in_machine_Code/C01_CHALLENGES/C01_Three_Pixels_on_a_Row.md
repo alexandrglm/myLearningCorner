@@ -44,19 +44,21 @@ Four colors (mode1):
 10 	Cyan
 11 	Red
 
-Example 1: 
-Red - Blue("Transparent" as screen bg is the same blue) - Red - Yellow
-1 0 1 1  1 0 1 0
-B A
-ld a,#BA
-3E BA
+~~Example 1:~~
+~~Red - Blue("Transparent" as screen bg is the same blue) - Red - Yellow~~
+~~1 0 1 1  1 0 1 0~~
+~~B A~~
+~~ld a,#BA~~
+~~3E BA~~
 
-Example 2: **WRONG**
-Yellow - Cyan - Red - Yellow
+~~Example 2: **WRONG**~~
+~~Yellow - Cyan - Red - Yellow~~
 
-0110 1101
- 6D
- **6D is Cyan - Red - Yellow - Cyan**
+~~0110 1101~~
+~~6D~~
+ ~~**6D is Cyan - Red - Yellow - Cyan**~~
+
+ 
 
 
 
