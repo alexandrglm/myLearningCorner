@@ -6,6 +6,9 @@
 1. Colours:    R - C - Y
 3E 88 - 3E 08 - 3E 80
 
+2. Positions:    32 XX YY
+- 32 
+
 
 1100 0000
 1000 1000
@@ -26,7 +29,11 @@
 
 # Positions
 **XX-YY - HORIZONTAL - VERTICAL**
+![image](https://github.com/user-attachments/assets/65d64634-2f00-4ace-a56a-3fe543542735)
 
+
+***
+### Drafts *test&try*
 1. 
 4000:  3E 88 32 10 D0 18 FE 00 00 00 00 00 00 00 00 00
 Posición 10 D0 
@@ -37,6 +44,10 @@ Posición 10 D0
 
 3.  1A D0 position  
 ![image](https://github.com/user-attachments/assets/cb5b57a9-c63c-4d69-a65b-41794df13f6f)  
+
+4. 00 D5 Vertical media pantalla
+5. 
+***
 
 # Colours
 ld a, nn = 32
