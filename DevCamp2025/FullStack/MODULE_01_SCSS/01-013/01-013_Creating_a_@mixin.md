@@ -19,6 +19,7 @@ And this is how to `@include` it where needed:
   ....
 }
 ```
+---
 
 ### Step-by-step example
 #### Styling a `featured` section with links and :hoover
