@@ -1,8 +1,96 @@
-Pending:  Schematize & spa speech abstracting.  
-  
-  
-***
-# MODULE 01 - 012:  SCSS :Pseudo-selectors
+# MODULE 01 - 012:  SCSS :Pseudo-Selector Nesting
+
+This guide explains how to use **nested pseudo selectors** in SCSS, with an example of customizing a link's hover state.
+---
+
+## 🤔 **What are Pseudo Selectors?**
+
+**Pseudo selectors** allow you to apply styles to elements based on specific states or behaviors.
+
+In adittion, **nesting pseudo-selectors** ensures that styles for pseudo-selectors are clearly linked to their parent selectors.
+
+---
+
+## 🌟 **Step-by-Step Example**
+
+Here’s a scenario where we style a subheading that contains a link.
+
+### 1️⃣ Initial HTML Structure:
+```html
+<div class="container">
+  <div class="page-wrapper">
+    <div class="featured">
+      <h1>About Us</h1>
+
+      <div class="subheading">
+        <h4>
+          <a href="#">My subheading</a>
+        </h4>
+      </div>
+    </div>
+
+    <div class="page-content">
+      <div class="container">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+  </div>
+</div>
+```
+### 2️⃣ SCSS Code:
+```scss
+$off-white: #f6f6f6;
+$featured-color: DarkRed;
+
+body {
+  background-color: $off-white;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  font-family: Verdana;
+  font-size: 0.8rem;
+}
+
+.page-wrapper {
+  padding: 21px;
+  $featured-color: LightCoral;
+
+  .featured {
+    color: $featured-color;
+    
+    .subheading a {
+      color: CornflowerBlue;
+      text-decoration: none;
+      
+      &:hover {
+        color: DarkOliveGreen;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .page-content {
+    background-color: $featured-color;
+    padding: 42px;
+    color: $off-white;
+
+    .container {
+      font-family: Courier;
+    }
+  }
+}
+```
+
+### Observations
+1. Nesting pseudo-selectors:
+   *  Use the `& symbol` followed by the pseudo-selector (e.g., &:hover).
+   *  The `&` references the parent selector, ensuring the hover styles apply specifically to the link.
+   *  <img width="395" alt="01_012_IMG4" src="https://github.com/user-attachments/assets/895821ac-9140-4f23-981c-6998c6d95f8c" />
+   *  The `a tag` inside *.subheading* is styled with a specific color (CornflowerBlue).
+   *  On the hover (`&:hover`), the color changes to DarkOliveGreen, and an underline is added.
+
 
 ***
 
@@ -102,6 +190,12 @@ body {
 ---
 
 [SPA]  
+Anidando *:pseudo-selectors*.
+
+Los pseudo selectores te permiten aplicar estilos a elementos en función de estados o comportamientos específicos.
+
+Además, la anidación de pseudo selectores asegura que los estilos de estos estén claramente relacionados con sus selectores principales.
+```
 
 
 
