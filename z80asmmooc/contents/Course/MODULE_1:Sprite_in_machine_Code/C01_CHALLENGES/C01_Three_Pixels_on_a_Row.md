@@ -13,13 +13,13 @@
 1. 
 4000:  3E 88 32 10 D0 18 FE 00 00 00 00 00 00 00 00 00
 Posición 10 D0 
-![image](https://github.com/user-attachments/assets/ddb2f250-8635-4be8-bbbf-48cdaed3ee91)
+![image](https://github.com/user-attachments/assets/ddb2f250-8635-4be8-bbbf-48cdaed3ee91)  
 
-2.  11 D0 position
-![image](https://github.com/user-attachments/assets/6bb58126-27da-4974-9f6a-aaa0881e4fe8)
+2.  11 D0 position  
+![image](https://github.com/user-attachments/assets/6bb58126-27da-4974-9f6a-aaa0881e4fe8)  
 
-3.  1A D0 position
-![image](https://github.com/user-attachments/assets/cb5b57a9-c63c-4d69-a65b-41794df13f6f)
+3.  1A D0 position  
+![image](https://github.com/user-attachments/assets/cb5b57a9-c63c-4d69-a65b-41794df13f6f)  
 
 # Colours
 ld a, nn = 32
@@ -44,6 +44,12 @@ Four colors (mode1):
 10 	Cyan
 11 	Red
 
+Example 1:
+Red - Blue - Red - Yellow
+1 0 1 1  1 0 1 0
+B A
+ld a,#BA
+3E BA
 
 Aid 1: Bin to hex memorising table, then, practicing, conversions will be automatically calculated
 
