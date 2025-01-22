@@ -5,23 +5,23 @@
 ![descrp_2](https://github.com/user-attachments/assets/9bc26e89-434b-4241-9fff-1c645f2aa376)  
 
 ### Reasons
-As long as nowadays compiling on Z80 might be seen as oudated (even the Z80 is still being used with the Z180 revision), newer architectures uses the same principles whose few differences are a higher complexity, that's the revealing the relevance of adquiring these knowledge:
+Although compiling for the Z80 might be seen as outdated nowadays even though the Z80 is still in use (thanks to its Z180 revision), modern architectures operate on the same principles. The main difference lies in their increased complexity, which highlights the relevance of acquiring this knowledge:
 
 * Just for fun.
 * It's just learning!
   - System architectures.
   - Assembly - Machine code.
-  - De-oxidating the brain by working with base numbers' conversions (Base10 to Base16, Base16 to Base2, ...)
+  - Detox the brain by working with base numbers' conversions (Base10 to Base16, Base16 to Base2, ...)
  
 
 ### What can I expect for?
 
-* Learning, mastering, the Z80 processor, getting solid basis and the deepest.  
-* Platform: AMSTRAD CPC. (Hey, SEGA lovers, you are invited too). 
-* Using low programming languages (at a harware layer) as :   
-  * Assembly: Next to machine code (binary), but more affordable when creating, editing, ....  
+* Learning, mastering, the Z80 processor, getting solid foundations, and the deepest.  
+* Platform: **AMSTRAD CPC**. (Hey, SEGA lovers, you are welcome too!). 
+* Using low-level programming languages (at the harware layer) as :   
+  * Assembly: Close to machine code (binary) but far more manageable for creating, editing, debugging.
 * Creating some apps.  
-* Adquring the kind of knowledge which is only understood for the real Z80/ASSEMBLER lovers.🤪  
+* Acquring the kind of knowledge that only a true Z80/ASSEMBLER enthusiasts could appreciate. 🤪 
 
 ***
 
