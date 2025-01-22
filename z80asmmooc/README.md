@@ -12,7 +12,9 @@ Although compiling for the Z80 might be seen as outdated nowadays even though th
   - System architectures.
   - Assembly - Machine code.
   - Detox the brain by working with base numbers' conversions (Base10 to Base16, Base16 to Base2, ...)
- 
+
+#### Why using English?
+Although the course is Spanish language located, and even my uncountable mistakes when using English (something you may forgive me, or not 🙈🙈🙈), I firmely believe that making mistakes, like having a bad day, also helps in any learning process.
 
 ### What can I expect for?
 
