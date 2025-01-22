@@ -6,12 +6,12 @@ This challenge is performed starting with its guided solution available at A01-0
 Steps:  
 0. The program:  
 ```hex
-3E 88 32 00 C0 18 FE"
+3E 88 32 00 C0 18 FE
 ```
   - Decoding/understanding the programm:
     `3e 88` -> `ld a,n` -> `ld a,#88`   
     `32 00 C0` -> `ld (nn nn),a` -> ' `ld (C000), a`  
-    `18 FE` -> `jr d` -> `jr FE` -> FE: 1111 1110 = 254
+    `18 FE` -> `jr d` -> `jr FE` -> FE: 1111 1110 = 254 -> infinite loop  
     
 1. Copy value 88 to CPU.
    We need an empty/available memory zone, so, 00 00 won't be right place to.
