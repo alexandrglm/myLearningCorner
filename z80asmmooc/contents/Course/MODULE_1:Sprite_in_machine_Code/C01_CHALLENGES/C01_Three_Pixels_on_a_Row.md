@@ -83,20 +83,20 @@ E6
 
 
 #### Test 3
-R R R R  
-11 11 11 11
-FF
+R R R R    
+11 11 11 11  
+FF  
 
 #### Test 4
-B B B B
-0000 0000
-00
+B B B B  
+0000 0000  
+00  
 
 #### Test 5
-C C C C
-1010 1010
-0000    1111
-0F
+C C C C  
+1010 1010  
+0000    1111  
+0F  
 
 #### Test 6
 Y Y Y Y
@@ -104,7 +104,13 @@ Y Y Y Y
 1111    0000
 F0
 
-#### Test 6
+#### Test 7
+R Y Y R  
+1101 1101  
+1111    1010  
+FE
+
+
 
 
 Aid 1: Bin to hex memorising table, then, practicing, conversions will be automatically calculated
