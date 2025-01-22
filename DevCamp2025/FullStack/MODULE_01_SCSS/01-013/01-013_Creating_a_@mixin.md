@@ -325,3 +325,14 @@ body {
   }
 }
 ```
+
+---
+
+[SPA]
+
+La idea general de los mixins, y cómo incluirlos, es brillante.  
+
+Simplemente, creamos y nombramos nuestro mixin, en primer lugar, con el método "@mixin".  
+
+Después, lo vamos añadiendo allí donde sea necesario, a través del método "@include". Un mixin puede añadirse en cualquier selector y servir de base, ahorrando mucho código y tiempo.  
+
