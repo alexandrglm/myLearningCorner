@@ -1,3 +1,37 @@
+![image](https://github.com/user-attachments/assets/1737d72c-532f-40b1-bf65-e15c5c62783d)  
+![image](https://github.com/user-attachments/assets/4fec4339-8ccc-45e3-a5bd-3159e77b1d65)
+
+
+
+```text
+3E - 08 CYAN - BLUE BLUE BLUE on MEM. ADDRESS C2D3
++
+3E - 88 RED/BLUE/BLUE/BLUE on MEM. ADDRESS C2D5
++
+3E - 80 YELLOW/BLUE/BLUE/BLUE on MEM. ADDRESS C2D7
++
+JUMP RELATIVE the FE -> Infinite Loop
++
+Set the PC on 4000:
+
+```
+```hex
+4000: 3E 08 32 D3 C2 3E 88 32 D5 C2 3E 80 32 D7 C2 18
+4001:  FE 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+```
+
+```asm
+ld a,#08
+ld #C2D3, a
+ld a,#88
+ld #C2D5, a
+ld a,#80
+ld #C2D7,a
+jr  loop
+```
+
+***
+# Drafts & Garbage
 ![image](https://github.com/user-attachments/assets/79e09eab-ef88-47b1-b880-d78311ea1401)
     3 pixes,  separados en la misma fila.
     Debajo de 3 letras.
