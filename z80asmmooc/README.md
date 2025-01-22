@@ -33,14 +33,14 @@ The method used is described [here](https://github.com/alexandrglm/elearning_too
 
 ***
 
-Licensing is also described [here]([perma](https://github.com/alexandrglm/elearning_tools/blob/3d4ba4908de716be88ab821fd9d666810ef3815a/z80asmmooc/LICENSE)).  
+Licensing is also described [here](https://github.com/alexandrglm/elearning_tools/blob/3d4ba4908de716be88ab821fd9d666810ef3815a/z80asmmooc/LICENSE).  
 
 ***
 
 💡 **I really encourage you to start this journey** 🌟  
-  * You can do it at your own.
-  * It's open, free and colaborative.
-  * It's challenging, but that's what makes it fun.
+  * You can do it at your own.  
+  * It's open, free and colaborative.  
+  * It's challenging, but that's what makes it fun.  
 
 
 
