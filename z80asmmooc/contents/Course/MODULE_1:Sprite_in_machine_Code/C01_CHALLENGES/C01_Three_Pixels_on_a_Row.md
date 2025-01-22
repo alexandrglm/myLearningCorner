@@ -28,9 +28,15 @@
 4010:  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 
 # Positions
-**XX-YY - HORIZONTAL - VERTICAL**
-![image](https://github.com/user-attachments/assets/65d64634-2f00-4ace-a56a-3fe543542735)
+Top-Left 0x0 ->    C000  
 
+~~**XX-YY - HORIZONTAL - VERTICAL**~~
+![image](https://github.com/user-attachments/assets/65d64634-2f00-4ace-a56a-3fe543542735)  
+
+C000 0% X 0%  
+C200 30% X 40%  
+C205 
+![image](https://github.com/user-attachments/assets/db8de0ec-9dd6-43f5-b780-4a9666c75ae6)
 
 ***
 ### Drafts *test&try*
