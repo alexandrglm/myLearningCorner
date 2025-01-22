@@ -1,9 +1,5 @@
 # DEZ80 - "Dominando Ensamblador del Z80" (Mastering Z80 Assembler)
 
-### Goals described in 2 pictures
-![descrp_1](https://github.com/user-attachments/assets/04df7fe7-da4b-4a2d-9481-b0e35a449fb2)  
-![descrp_2](https://github.com/user-attachments/assets/9bc26e89-434b-4241-9fff-1c645f2aa376)  
-
 ### Reasons
 Although compiling for the Z80 might be seen as outdated nowadays even though the Z80 is still in use (thanks to its Z180 revision), modern architectures operate on the same principles. The main difference lies in their increased complexity, which highlights the relevance of acquiring this knowledge:
 
