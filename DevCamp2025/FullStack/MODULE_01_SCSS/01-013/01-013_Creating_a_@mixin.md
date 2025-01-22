@@ -1,5 +1,137 @@
 # MODULE 01 - 013:  Creating a @mixin
 
+Simplify your SCSS code with **mixins**, reusable blocks of styles that can be called anywhere in your stylesheet.
+
+---
+
+Here’s how to define a mixin:  
+
+```scss
+@mixin theMixinName {
+  // Styles go here
+}
+```
+And this is how to `@include` it where needed:
+```scss
+.iAmAClass {
+  @include theMixinName;
+  font-family: Verdana;
+  ....
+}
+```
+
+### Step-by-step example
+#### Styling a `featured` section with links and :hoover
+```scss
+@mixin featured {
+  color: Tomato;
+
+  .subheading a {
+    color: LightSteelBlue;
+    text-decoration: none;
+    
+    &:hover {
+      color: LightSkyBlue;
+      text-decoration: underline;
+    }
+  }
+}
+```
+#### 🔗 Including a @mixin
+A @mixin can be included in any selector by using `@include`:  
+```scss
+@include mixin-name;
+```
+And the, applying the `@mixin feature` to specific sections:
+```scss
+.page-wrapper {
+  .featured {
+    @include featured;
+  }
+
+  .sidebar {
+    @include featured;
+  }
+}
+```
+#### 🧩 Combining `@mixin`'s with Unique styles
+💡 **Mixins can serve as a base; then, unique styles for each section are added:
+```scss
+.sidebar {
+  @include featured;
+  font-family: Verdana;
+  text-align: right;
+  float: right;
+  width: 25%;
+}
+```
+
+#### Final SCSS code
+Finally, the complete example combining the `@mixin`with the other styles, here:  
+```scss
+$off-white: #f6f6f6;
+$featured-color: DarkRed;
+
+@mixin featured {
+  color: Tomato;
+
+  .subheading a {
+    color: LightSteelBlue;
+    text-decoration: none;
+    
+    &:hover {
+      color: LightSkyBlue;
+      text-decoration: underline;
+    }
+  }
+}
+
+body {
+  background-color: $off-white;
+  height: 100vh;
+  height: 100vw;
+}
+
+.container {
+  font-family: Verdana;
+  font-size: 0.8rem;
+}
+
+.page-wrapper { 
+  padding: 21px;
+  $featured-color: RoyalBlue;
+
+  .featured {
+    @include featured;
+  }
+
+  .page-content {
+    background-color: $featured-color;
+    padding: 42px;
+    color: $off-white;
+
+    .container {
+      height: 60px !important;
+      font-family: courier;
+
+      .description {
+        float: left;
+        width: 75%;
+      }
+
+      .sidebar {
+        font-family: Verdana;
+        text-align: right;
+        float: right;
+        width: 25%;
+        @include featured;
+      }
+    }
+  }
+}
+```
+
+
 ***
 # Video lesson Speech
 [ENG]
