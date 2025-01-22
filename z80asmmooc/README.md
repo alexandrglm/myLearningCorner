@@ -18,9 +18,8 @@ As long as nowadays compiling on Z80 might be seen as oudated (even the Z80 is s
 
 * Learning, mastering, the Z80 processor, getting solid basis and the deepest.  
 * Platform: AMSTRAD CPC. (Hey, SEGA lovers, you are invited too). 
-* Using low programming languages (at a harware layer) as :  
-  * Machine code: The code machines understand.  
-  * Assembler: next to machine code, but more affordable when creating, editing, ....  
+* Using low programming languages (at a harware layer) as :   
+  * Assembly: Next to machine code (binary), but more affordable when creating, editing, ....  
 * Creating some apps.  
 * Adquring the kind of knowledge which is only understood for the real Z80/ASSEMBLER lovers.🤪  
 
