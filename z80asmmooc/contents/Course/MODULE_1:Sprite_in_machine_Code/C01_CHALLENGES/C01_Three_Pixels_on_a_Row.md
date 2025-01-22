@@ -44,12 +44,20 @@ Four colors (mode1):
 10 	Cyan
 11 	Red
 
-Example 1:
-Red - Blue - Red - Yellow
+Example 1: 
+Red - Blue("Transparent" as screen bg is the same blue) - Red - Yellow
 1 0 1 1  1 0 1 0
 B A
 ld a,#BA
 3E BA
+
+Example 2:
+Yellow - Cyan - Red - Yellow
+
+0110 1101
+ 6D
+
+
 
 Aid 1: Bin to hex memorising table, then, practicing, conversions will be automatically calculated
 
