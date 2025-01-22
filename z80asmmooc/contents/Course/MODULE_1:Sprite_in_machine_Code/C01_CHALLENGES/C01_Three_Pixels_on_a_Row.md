@@ -58,10 +58,26 @@ Four colors (mode1):
 ~~6D~~
  ~~**6D is Cyan - Red - Yellow - Cyan**~~
 
- 
+ 00    B
+ 01    Y
+ 10    C    
+ 11    R
 
+#### Test 1
 
+R - Y - C - C
+11 - 01 - 10 - 10
+11011010
+1 1 0 0   1 0 1 1
+CB
 
+#### Test 1
+
+#### Test 1
+
+#### Test 1
+
+#### Test 1
 Aid 1: Bin to hex memorising table, then, practicing, conversions will be automatically calculated
 
 | Base2  | Base16 |
