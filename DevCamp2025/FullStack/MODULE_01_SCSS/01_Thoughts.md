@@ -11,10 +11,10 @@ Primeras 15 guías:
 
 -    El elemento clave sigue siendo recoger cada masterclass/lesson/guía, todo su speech, y desgranar paso a paso todo lo que pretende explicar, realizando esquemas coherentes, documentando cada lección con referencias externas. Es preferible esto que solo tomar unos pocos apuntes y/o replicar lo visto en VSCode/CodePen/dondesea.
   
-- No hay una percepción clara de "En qué momento poder aplicar los conceptos que se van adquiriendo", por lo que es muy recomendable no basar toda la formación en únicamente las guías, y realizar (desarrollar) pequeños proyectos proyectos, ideas, ejemplos de programas, poco a poco.
+- No hay una percepción clara de "En qué momento poder aplicar los conceptos que se van adquiriendo", por lo que es muy recomendable no basar toda la formación en únicamente las guías, y realizar (desarrollar) pequeños proyectos, ideas, ejemplos de programas, poco a poco.
 - La idea de "Manos creativas que aprenden" no es aplicable salvo que se practique, diseñando, sin miedo.
-- El concepto "Miedo a equivocarse" / "Miedo a usar herramientas para aprendizaje y desarrollo" es palpable (Guía "La inmoralidad de desarrollar un mal código", por ejemplo, distorsiona por completo su objetivo de inculcar eficiencia y una buena planificación previa al desarrollo).
-- Sin "Manos creativas, manos que aprenden" ni "Herramientas propias y ajenas para aprendizaje y desarrollo", la formación será frustrante.
+- El concepto "Miedo a equivocarse" / "Miedo a usar herramientas para aprendizaje y desarrollo" es palpable (Guía "La inmoralidad de desarrollar un mal código", por ejemplo, distorsiona por completo su objetivo de inculcar eficiencia y una buena planificación previa al desarrollo).  
+- Sin "Manos creativas, manos que aprenden" ni "Herramientas propias y ajenas para aprendizaje y desarrollo", la formación será ineficaz y frustrante.
 
 
 
