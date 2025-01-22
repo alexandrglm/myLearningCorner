@@ -59,7 +59,8 @@ body {
 ## 📘 **Variable Scope example WITH MIXIN**
 
 #### 💡 `Mixin`s can **override variables within their scope.**
-> '@Mixin': A method that can be called from anywhere in the application.  
+> '@Mixin': A method that can be called from anywhere in the application.
+> A very powerful variables, kind of like the way where we made a change to just one value of a variable at the very beginning and it populated to the rest of the application.  
 
 ```scss
 $master-site-color: #3AE39F;
