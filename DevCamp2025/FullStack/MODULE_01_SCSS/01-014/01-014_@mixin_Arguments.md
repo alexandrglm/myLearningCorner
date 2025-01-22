@@ -1,6 +1,193 @@
-# MODULE 1 - 014:  @mixin ARGUMENTS
+# MODULE 1 - 014:  @mixin with (ARGUMENTS)
+
+This guide focuses on integrating **($arg: )** into SCSS mixins, allowing for dynamic and reusable styling.
+
+---
+
+Arguments in mixins enable you to:
+- Pass specific values to customize styles.
+- Define **default values** for common use cases.
+- Avoid repetitive code by reusing the same mixin dynamically.
+
+---
+
+### 1️⃣ **Defining a Mixin with Arguments**
+Use parentheses to specify arguments for a mixin. You can also assign default values.
+
+```scss
+@mixin mixin-name($arg: default-value) {
+  // Use $arg within the mixin
+}
+```
+
+#### Example  
+##### Defining a @mixin to style links based on `$link-color'
+
+```scss
+@mixin featured($link-color: Black) {
+  color: Tomato;
+
+  .subheading a {
+    color: $link-color;
+    text-decoration: none;
+
+    &:hover {
+      color: $link-color;
+      text-decoration: underline;
+    }
+  }
+}
+```
+***
+### 2️⃣ Using this @mixin with (Arguments)  
+When calling the mixin, pass a value for the argument:  
+```scss
+@include featured(Red);
+```
+Otherwise, **if no values were given, the default vaule would be used**.
+
+## Entire SCSS Code Example for Mixin Arguments with Default Values
+```scss
+$off-white: #f6f6f6;
+$featured-color: DarkRed;
+
+@mixin featured($link-color: Black) {
+  color: Tomato;
+  .subheading a {
+    color: $link-color;
+    text-decoration: none;
+    &:hover {
+      color: $link-color;
+      text-decoration: underline;
+    }
+  }
+}
+
+body {
+  background-color: $off-white;
+  height: 100vh;
+  height: 100vw;
+}
+
+.container {
+  font-family: Verdana;
+  font-size: 0.8rem;
+}
+
+.page-wrapper { 
+  padding: 21px;
+  $featured-color: RoyalBlue;
+
+  .featured {
+    @include featured;
+  }
+
+  .page-content {
+    background-color: $featured-color;
+    padding: 42px;
+    color: $off-white;
+
+    .container {
+      height: 60px !important;
+      font-family: courier;
+
+      .description {
+        float: left;
+        width: 75%;
+      }
+
+      .sidebar {
+        font-family: Verdana;
+        text-align: right;
+        float: right;
+        width: 25%;
+        @include featured(MintCream);
+      }
+    }
+  }
+}
+```
+
 
 ***
+# EXTRA
+⚠️ These references will be furtherly explained, but I think it's necessary to expand the SCSS scope by adding these noted:  
+
+## 💡 Multiple Arguments // Logical Syntax
+ 
+### `@mixin`'s ($Arg:)'s may include multiple arguments, following these rules:  
+
+  * **POSITIONAL ARGUMENTS** ⚠️ **IN ORDER** ⚠️
+  * **NAMED ARGUMENTS**
+
+```scss
+@mixin iAmABox($width:  100px, $height:  200px, $color: Lime, $border: 2px solid black) {
+  width: $width;
+  height: $height;
+  background-color: $color;
+  border: $border;
+}
+
+.iAmAOrderedBox {
+  // Here, Positional Args. IN ORDER included.
+  @include iAmABox(100px, 200px, Lime, 2px solid black);
+}
+
+.iAmANamedBox{
+  // Here we are NAMED args.
+  @include iAmABox($width:  100px, $height:  200px, $color: Lime, $border: 2px solid black); 
+}
+```
+⚠️ **Both aren't oppossite, but complentaries !!!**  
+* Positional Args. are passed in the same order as declared as params. into the mixin, being **fast** while coding. It lacks on **scalability**, for example.
+* Named args., are a more verbosing mode, improving the **readibility**. These aslo complies with the usual *strong typed language* others than CSS/SCSS, being **more concise** and, the best part, it's not needed to remember the exact order of the arguments when replying, including, and so on. 
+
+
+### `@mixin`'s (SCSS in fact) allows using logical operators as:  
+  * **Conditionals**: `@if`, `@else` for logics within the mixin.  
+  * **Loops**:  `@for`, `@each`, or `@while` for reusing styles.  
+  ```scss
+// Example of logical operators on SCSS 
+@mixin iAmUsedToShowConditional($iAmACondition: true) {
+  @if $iAmACondition {
+    color: Lime;
+  } @else {
+    color: Red;
+  }
+}
+
+.title {
+  @include iAmUsedToShowConditional(false);
+}
+```
+
+
+
+```scss
+// This code snippet doesn't belong to the actual Scss code we're using as example
+
+@mixin box($width, $height, $color: LightGray) {
+  width: $width;
+  height: $height;
+  background-color: $color;
+}
+
+.container {
+  @include box(100px, 200px, LightBlue);
+}
+
+.alt-container {
+  @include box($height: 300px, $width: 150px);
+}
+```
+An expanded explanation will be provided on the following guides.  
+
+***
+
+
+***
+
+
 # Video lesson Speech  
 # Introduction to Mixin Arguments in SCSS
 In this guide you'll learn how to pass standard and default arguments to SCSS Mixins to generate dynamic behavior.  
@@ -27,13 +214,19 @@ And now what is going to happen is after I fix the other one it's going to chang
 
 <img width="506" alt="01-014_IMG4" src="https://github.com/user-attachments/assets/dd37fc58-d54c-4d5e-9f20-b0437d97da08" />  
 
-
-Now you can see that this heading link is still black but this one now has been changed to mint cream. And so even though we're using the exact same mix and we can now make this completely dynamic. Now the other thing and we're going to get into is we also have the ability to have default arguments and so say that we for 99 percent of the time we want to have black for this featured mixin. But there are a few times like when we have a dark background where we may want to throw in a different color. So the way that you can do this is we can pull out the color black out of featured first. It's going to throw an error right now because we haven't implemented this fix yet. Up in our mixin, we can add out default argument like this:  
-
+Now you can see that this heading link is still black but this one now has been changed to mint cream. And so even though we're using the exact same mix and we can now make this completely dynamic.  
+  
+Now the other thing and we're going to get into is we also **have the ability to have default arguments** and so say that we for 99 percent of the time we want to have black for this featured mixin. 
+But there are a few times like when we have a dark background where we may want to throw in a different color. So the way that you can do this is we can pull out the color black out of featured first.  
+It's going to throw an error right now because we haven't implemented this fix yet.   
+  
+Up in our mixin, we can add out default argument like this:  
 <img width="398" alt="01-014_IMG5" src="https://github.com/user-attachments/assets/f8dddab7-f2e6-4c8d-b071-c4f81178257b" />  
 
-
-So even though we're not passing in an argument with featured it's still working. If you come down here mint cream is still overwriting this link color. Now, this starts to get a little bit more complicated when you go into having multiple arguments. In our more advanced section when we talk about how we're going to implement flex-box here then I'm going to show you how you can actually use named arguments to make it very clear what values you're setting.  
+So even though we're not passing in an argument with featured it's still working. If you come down here mint cream is still overwriting this link color.   
+  
+Now, this starts to get **a little bit more complicated when you go into having multiple arguments**.  
+In our more advanced section when we talk about how we're going to implement flex-box here then I'm going to show you how you can actually use named arguments to make it very clear what values you're setting.  
 
 ## SCSS Code for Mixin Arguments with Default Values
 ```scss
