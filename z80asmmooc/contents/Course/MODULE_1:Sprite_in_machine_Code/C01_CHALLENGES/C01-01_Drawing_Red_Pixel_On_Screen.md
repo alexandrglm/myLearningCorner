@@ -32,7 +32,10 @@ This challenge is performed starting with its guided solution available at A01-0
 7. Tells the `PC` to execute the address we want (4000) and close the Debugger.
 
   
-![IMG](https://github.com/alexandrglm/elearning_tools/blob/bc01e1afddec92231135ae063906e724085ebcd5/z80asmmooc/contents/Course/MODULE_1%3ASprite_in_machine_Code/C01_CHALLENGES/RedPixelChallenge_Screenshot_20250122-0221.png)    
+![IMG](https://github.com/alexandrglm/elearning_tools/blob/bc01e1afddec92231135ae063906e724085ebcd5/z80asmmooc/contents/Course/MODULE_1%3ASprite_in_machine_Code/C01_CHALLENGES/RedPixelChallenge_Screenshot_20250122-0221.png)  
+
+That's all. 
+🎉🎉🎉🎉🎉🎉
 
 
 
