@@ -63,15 +63,21 @@ Four colors (mode1):
  10    C    
  11    R
 
-#### Test 1
+#### Test 1: **OK**
 
 R - Y - C - C
 11 - 01 - 10 - 10
 11011010
 1 1 0 0   1 0 1 1
 CB
+![image](https://github.com/user-attachments/assets/cb2e19d7-35ff-4802-a3ea-4264dab30254)
 
-#### Test 1
+
+#### Test 2
+Y - R - R - B
+0111 1100
+1110   0110
+E6
 
 #### Test 1
 
