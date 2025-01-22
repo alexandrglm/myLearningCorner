@@ -117,8 +117,8 @@ body {
  
 ### `@mixin`'s ($Arg:)'s may include multiple arguments, following these rules:  
 
-  * **POSITIONAL ARGUMENTS** ⚠️ **IN ORDER** ⚠️
-  * **NAMED ARGUMENTS**
+  * **POSITIONAL ARGUMENTS** ⚠️ **in order** ⚠️
+  * **NAMED ARGUMENTS** ⚠️ **not in order, but always the same** ⚠️
 
 ```scss
 @mixin iAmABox($width:  100px, $height:  200px, $color: Lime, $border: 2px solid black) {
