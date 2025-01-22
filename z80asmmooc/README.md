@@ -37,6 +37,11 @@ Licensing is also described [here]([perma](https://github.com/alexandrglm/elearn
 
 ***
 
-💡 **I really encourage you to start this journey step by step!** 🌟  
+💡 **I really encourage you to start this journey** 🌟  
+  * You can do it at your own.
+  * It's open, free and colaborative.
+  * It's challenging, but that's what makes it fun.
+
+
 
 
