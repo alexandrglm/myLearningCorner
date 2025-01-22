@@ -51,11 +51,12 @@ B A
 ld a,#BA
 3E BA
 
-Example 2:
+Example 2: **WRONG**
 Yellow - Cyan - Red - Yellow
 
 0110 1101
  6D
+ **6D is Cyan - Red - Yellow - Cyan**
 
 
 
