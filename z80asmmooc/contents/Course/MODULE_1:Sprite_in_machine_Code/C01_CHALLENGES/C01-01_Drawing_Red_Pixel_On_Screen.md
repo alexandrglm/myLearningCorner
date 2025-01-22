@@ -21,9 +21,10 @@ This challenge is performed starting with its guided solution available at A01-0
       Opcode 32, to load what's stored on the acummulator, `a`, on the desired mem. address, `C0 00`.
       
     * `18 FE` -> `jr d` -> `jr FE`  
-      Opcode 18, to perform a relative jump on FE, performing an infinite loop.
+      Opcode 18, to perform a relative jump on FE, performing the infinite loop needed to maintain what's executed on-screen.  
       
-    
+# Using the debugger
+
 1. Run WinAPE.
 2. Open the debugger (F7).
 3. Find an empty/available mem. address. (For example, 4000)
