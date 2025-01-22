@@ -289,3 +289,27 @@ body {
   }
 }
 ```
+
+***
+[SPA]
+
+Nuestros @mixin's pueden pasar atributos como argumentos, de una manera similar a cómo lo hacemos en otros lenguajes.  
+
+Pasar argumentos facilita aún más evitar redundancia en nuestro código y en nuestro tiempo a la hora de codificarlo.  
+
+Cuando invocamos un mixin (@include), aún podemos usar un valor personalizado como argumento, deshabilitando lo que dicho mixin hace.  
+
+Al pasar argumentos, lo habitual es que éstos sean múltiples.
+Más adelante se irán explicando cómo hacer, pero para iniciar, los argumentos pueden pasarse de dos formas distintas, con sus propias normas:  
+1. Argumentos posicionales. Que siempre siempre llevan el mismo orden, cuya casi única ventaja radica en que no deben ser nombrados explícitamente, facilitando un código algo más breve y conciso.
+2. Argumentos con su etiqueta (named). Pueden incluirse en distinto orden al especificado, pero siempre deben ser precedidos por sus respectivas etiquetas de atributo.
+
+Visualiza el código de ejemplo para comprender mejor este concepto.
+
+Por último, otra ventaja que se irá desgranando respecto a SCSS es que, como lenguaje preprocesado, permite utilizar operadores lógicos típicos (como Condicionales o bucles). 
+Esto mejorará aún más los tiempos de desarrollo.
+
+
+
+
+
