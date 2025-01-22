@@ -196,10 +196,3 @@ Los pseudo selectores te permiten aplicar estilos a elementos en función de est
 
 Además, la anidación de pseudo selectores asegura que los estilos de estos estén claramente relacionados con sus selectores principales.
 ```
-
-
-
-
-
-
-
