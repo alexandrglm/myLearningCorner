@@ -17,8 +17,8 @@
 | [X] | 15  | SCSS: Conditionals IF-ELSE | Working with SCSS Conditionals                                                     | 2025/01/22 |
 | [X] | 16  | SCSS Task 1 | Build a Flexbox Mixin with SCSS                                                    | 2025/01/22 |
 | [X] | 17  | SCSS Task 1 | Solution: Build a Flexbox Mixin with SCSS                                          | 2025/01/22 |
-| [ ] | 18  |      | SCSS Lists, @each Directive, and String Interpolation                               |            |
-| [ ] | 19  |      | Real World Example of the SCSS @import Directive                                   |            |
+| [X] | 18  | SCSS @each | SCSS Lists, @each Directive, and String Interpolation                               | 2025/01/22 |
+| [X] | 19  | SCSS @import | Real World Example of the SCSS @import Directive                                   |  2025/01/22 |
 | [ ] | 20  |      | How to Use the @content Directive in SCSS to Allow for Mixin Flexibility            |            |
 | [ ] | 21  |      | App Overview and Resource Material: Branding Page                                  |            |
 | [ ] | 22  |      | Branding Page Layout and Flexbox Integration                                       |            |
