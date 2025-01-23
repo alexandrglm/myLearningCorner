@@ -2,6 +2,7 @@
 
 This is a real use where conditionals and mixins makes the great difference when coding.  
 Try the challenge using CodePen, or your HTML/SCSS favourite IDE.
+[CodePen Try](https://codepen.io/Alexandr-Gomez/pen/EaYdQeV)
 
 ## HTML Project Starter Code 
 ```html
