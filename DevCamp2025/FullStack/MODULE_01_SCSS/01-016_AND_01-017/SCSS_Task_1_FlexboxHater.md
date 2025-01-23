@@ -114,7 +114,7 @@ Let's recall what means a mixin, what Conditional we have already learned:
   }
   ...
   ```
-Got it? Do it.
+Got it? **Do it.**
 ***
 Here, is the solution, we are going to describe:
 ```scss
@@ -175,6 +175,53 @@ Here, is the solution, we are going to describe:
         }
       }
     }
+  }
+}
+```
+#### 1. Define the Mixin
+```scss
+@mixin flex-config($justify-content: false, $flex: false, $flex-direction: false, $align-items: false) {
+  display: flex;
+
+  @if $justify-content != false {
+    justify-content: $justify-content;
+  }
+
+  @if $flex != false {
+    flex: $flex;
+  }
+
+  @if $flex-direction != false {
+    flex-direction: $flex-direction;
+  }
+
+  @if $align-items != false {
+    align-items: $align-items;
+  }
+}
+```
+* Allways applies display: `flex`.
+* Conditionally applies `justify-content`, `flex`, `flex-direction`, and `align-items` (the items usually used, reused and repeated ever and ever) @if their corresponding variables are not `false`.
+#### Basic @mixin usage
+```scss
+.container {
+  @include flex-config;
+}
+```
+#### Custom usage
+Sets `flex: 1` and `justify-content: space-between`.  
+```scss
+.item {
+  @include flex-config($flex: 1, $justify-content: space-between);
+}
+```
+#### Nested @mixin usage
+Encapsulates specific flexbox layouts for child elements, improving modularity and code reusability.  
+```scss
+.content {
+  @include flex-config;
+  .metadata {
+    @include flex-config($flex-direction: column, $justify-content: center);
   }
 }
 ```
