@@ -233,7 +233,3 @@ Después, hacemos la programación, muy similar a un bucle FOR - IN típico, per
 
 La interpolación de Strings, como contenido variable, con su propia sintaxis, nos hace el resto del trabajo.  
 ```
-
-
-
-
