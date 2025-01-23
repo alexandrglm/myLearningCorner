@@ -13,8 +13,8 @@
 | [X] | 11  | SCSS: Nested styles | Guide to SCSS Nesting                                                              | 2025/01/21 |
 | [X] | 12  | SCSS: &:pseudo's | SCSS Pseudo Selector Nesting                                                       | 2025/01/21 |
 | [X] | 13  | SCSS: @mixin @include | Creating Your First Mixin                                                          | 2025/01/21 |
-| [ ] | 14  |      | Introduction to Mixin Arguments in SCSS                                            |            |
-| [ ] | 15  |      | Working with SCSS Conditionals                                                     |            |
+| [X] | 14  | SCSS passing Args. | Introduction to Mixin Arguments in SCSS                                            | 2025/01/22 |
+| [X] | 15  | SCSS: Conditionals IF-ELSE | Working with SCSS Conditionals                                                     | 2025/01/21 |
 | [ ] | 16  |      | Build a Flexbox Mixin with SCSS                                                    |            |
 | [ ] | 17  |      | Solution: Build a Flexbox Mixin with SCSS                                          |            |
 | [ ] | 18  |      | SCSS Lists, @each Directive, and String Interpolation                               |            |
