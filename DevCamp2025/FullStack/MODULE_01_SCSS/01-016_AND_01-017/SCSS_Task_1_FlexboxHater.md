@@ -119,7 +119,7 @@ Got it? **Do it.**
 ***
 Here, is the solution, we are going to describe:
 ```scss
-@mixin flexAttributes($justify-content: false, $flex: false, $flex-direction: false, $align-items: false) {
+@mixin flex-config($justify-content: false, $flex: false, $flex-direction: false, $align-items: false) {
   display: flex;
   
   @if $justify-content != false {
@@ -141,14 +141,14 @@ Here, is the solution, we are going to describe:
 
 
 .container {
-  @include flexAttributes;
+  @include flex-config;
   .item { 
-    @include flexAttributes($flex: 1, $justify-content: space-between);
+    @include flex-config($flex: 1, $justify-content: space-between);
     border: 1px solid grey;
     border-radius: 5px;
     margin-bottom: 10px;
     .content {
-      @include flexAttributes($flex-direction: column, $justify-content: center);
+      @include flex-config($flex-direction: column, $justify-content: center);
       .metadata {
         margin-left: 20px;
         .title {
@@ -157,9 +157,9 @@ Here, is the solution, we are going to describe:
       }
     }
     .btn-group {
-      @include flexAttributes($align-items: center);
+      @include flex-config($align-items: center);
       .button {
-        @include flexAttributes($flex-direction: row, $align-items: center, $justify-content: center);
+        @include flex-config($flex-direction: row, $align-items: center, $justify-content: center);
         height: 100%;
         width: 42px;
         font-size: 2em;
