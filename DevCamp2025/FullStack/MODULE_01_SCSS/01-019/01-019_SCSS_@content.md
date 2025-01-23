@@ -1,7 +1,92 @@
-# MODULE 01 - 019:  SCSS @content directive
+# MODULE 01 - 019:  SCSS @content directive FOR FLEXIBLE `@mixin`'s
+
+
+## What is `@content`?
+The `@content` directive allows mixins to be more flexible by yielding additional styles without the need to specify all values in the mixin itself. It lets you pass custom content into the mixin. 💪
+
+Use @content when you need more flexibility in your mixins, especially if you want to pass in dynamic or custom styles without dealing with too many parameters. It’s a great tool for creating adaptable and reusable mixins. 
+
+- **More flexible** mixins.
+- **No need for static arguments**
+- Easily override default styles. 🎨
+- Custom styles directly within the mixin without pre-defined parameters. ✨
+
+---
+## Example
+
+### 1. Standard Mixin (Before `@content`)
+
+```scss
+@mixin notification($background-color, $color, $border) {
+  width: 99%;
+  height: 35px;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 1.2em;
+  font-family: Verdana;
+  border-radius: 3px;
+  margin: 10px;
+  background-color: $background-color;
+  color: $color;
+  border: $border;
+}
+
+.error {
+  @include notification(DarkRed, white, 1px solid LightSlateGray);
+}
+
+.success {
+  @include notification(MediumSeaGreen, MintCream, 1px solid LightSalmon);
+}
+```
+## Observations
+* `notification` is called with specific values.
+*  Argumensts are passed `($background-color, $color, $border)` directly when including the mixin.
+  
+It's ok, but **not flexible when you want to override styles**.  
+
+***
+
+### 2. Using `@content` for Flexibility
+```scss
+@mixin notification {
+  width: 99%;
+  height: 35px;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 1.2em;
+  font-family: Verdana;
+  border-radius: 3px;
+  margin: 10px;
+  @content;
+}
+
+.error {
+  @include notification {
+    background-color: DarkRed;
+    color: white;
+    border: 1px solid LightSlateGray;
+  }
+}
+
+.success {
+  @include notification {
+    background-color: MediumSeaGreen;
+    color: MintCream;
+    border: 1px solid LightSalmon;
+  }
+}
+```
+## Observations
+* No arguments are passed to the mixin.
+* `@content` lets define **custom styles inside the mixin call**.
+  
+So, overriding styles becomes easier and more flexible. 🎨
+
 
 ***
 # Video lesson Speech
+[ENG]  
 # How to Use the @content Directive in Scss to Allow for Mixin Flexibility
 This lesson examines the `@content` directive in Scss and specifically walks through how to refactor a mixin by yielding to a set of custom styles.  
 
@@ -107,4 +192,18 @@ So that is how you can use the content directive in SCSS.
   }
 }
 ```
+
+***
+
+[SPA]
+El @content es una herramienta poderosa en SCSS para hacer los mixins mucho más flexibles. En lugar de pasar todos los valores como parámetros, puedes dejar que el mixin se complete con los estilos que tú des.  
+
+  Usamos contents cuando necesitamos más control sobre lo que pasa dentro del mixin y cuando quieras pasar estilos dinámicos sin complicarte con demasiados parámetros.  
+
+Los usamos por:  
+1.flexibilidad. Puedes pasar cualquier estilo dentro del mixin, sin tener que predefinir todo con variables.  
+2. Si necesitas cambiar algún estilo por defecto, puedes sobreescribirlo de forma rápida y fácil.  
+Por último, el código realizado es más limpio y conciso, eficiente en tiempo de desarrollo.   
+No necesitas tantos parámetros ni repeticiones, lo que lo hace más simple y manejable.  
+
 
