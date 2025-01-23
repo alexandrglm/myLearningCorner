@@ -225,5 +225,15 @@ $cars: 'maserati', 'tesla', 'porsche';
     https://s3.amazonaws.com/bottega-devcamp/scss/cars/porsche.jpg
 ***
 [SPA]  
+Al igual que en otros lenguajes, como bash, ruby, javascript, podemos programar listas, índices e iteradores, para automatizar tareas redundantes (como crear multitud de classes con idénticos atributos).
+La creación de classes, atributos, generación de URL's, la mejora en el mantenimiento y escalabilidad del proyecto y la concisión del código son las mayores ventajas.
+
+Para ello usamos listas, como variables, que incluyen una serie de datos.  
+Después, hacemos la programación, muy similar a un bucle FOR - IN típico, pero con la directiva @each.
+
+La interpolación de Strings, como contenido variable, con su propia sintaxis, nos hace el resto del trabajo.  
+```
+
+
 
 
