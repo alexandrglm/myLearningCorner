@@ -14,9 +14,9 @@
 | [X] | 12  | SCSS: &:pseudo's | SCSS Pseudo Selector Nesting                                                       | 2025/01/21 |
 | [X] | 13  | SCSS: @mixin @include | Creating Your First Mixin                                                          | 2025/01/21 |
 | [X] | 14  | SCSS passing Args. | Introduction to Mixin Arguments in SCSS                                            | 2025/01/22 |
-| [X] | 15  | SCSS: Conditionals IF-ELSE | Working with SCSS Conditionals                                                     | 2025/01/21 |
-| [ ] | 16  |      | Build a Flexbox Mixin with SCSS                                                    |            |
-| [ ] | 17  |      | Solution: Build a Flexbox Mixin with SCSS                                          |            |
+| [X] | 15  | SCSS: Conditionals IF-ELSE | Working with SCSS Conditionals                                                     | 2025/01/22 |
+| [X] | 16  | SCSS Task 1 | Build a Flexbox Mixin with SCSS                                                    | 2025/01/22 |
+| [X] | 17  | SCSS Task 1 | Solution: Build a Flexbox Mixin with SCSS                                          | 2025/01/22 |
 | [ ] | 18  |      | SCSS Lists, @each Directive, and String Interpolation                               |            |
 | [ ] | 19  |      | Real World Example of the SCSS @import Directive                                   |            |
 | [ ] | 20  |      | How to Use the @content Directive in SCSS to Allow for Mixin Flexibility            |            |
