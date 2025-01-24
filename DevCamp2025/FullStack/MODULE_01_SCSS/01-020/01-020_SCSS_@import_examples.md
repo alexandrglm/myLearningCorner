@@ -75,9 +75,17 @@ It is all compiled straight into regular CSSA. So that is a real-world example o
 [Source code](https://github.com/jordanhudgens/daily-smarty/blob/master/app/assets/stylesheets/application.scss)  
 [Application (Not Working)](http://www.dailysmarty.com/)  
 
+***
 
+[SPA]  
 
+Usamos @import para mejorar la estructura, visibilidad, escalabilidad y mantenimiento de nuestro código, desestructurando lo que sería un larguísimo y complejo archivo SCSS único, en diferentes y modulares archivos.  
 
+Esta directiva, por tanto, permite cargar distintos archivos SCSS en uno como módulos. No es ajeno a cómo, en otros lenguajes, se cargan piezas de código cómo módulos.      
 
+La forma habitual de usar @import es:  
+ 1.- Un archivo "director" referencia cada archivo SCSS externo (Pueden ser archivos parciales, o completos), incluyendolos usando esta directiva.    
+ 2.- Cada fichero SCSS referenciado se encuentra dentro de la root folder de nuestro poryecto.    
 
-  
+ Casi cualquier framework, como Rails, facilita la precompilación usando imports.  
+ 
