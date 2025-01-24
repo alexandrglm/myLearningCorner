@@ -20,6 +20,7 @@
 | [X] | 18  | SCSS @each | SCSS Lists, @each Directive, and String Interpolation                               | 2025/01/23 |
 | [X] | 19  | SCSS @import | Real World Example of the SCSS @import Directive                                   |  2025/01/23 |
 | [X] | 20  | SCSS @content | How to Use the @content Directive in SCSS to Allow for Mixin Flexibility            | 2025/01/23 |
+|     |     |              | **APPLIED A CONTENT JUMP to MODULE 1: PART 2 - Git**                                | 2025/01/24 |
 | [ ] | 21  |      | App Overview and Resource Material: Branding Page                                  |            |
 | [ ] | 22  |      | Branding Page Layout and Flexbox Integration                                       |            |
 | [ ] | 23  |      | Building Your First SCSS Grids Container                                            |            |
