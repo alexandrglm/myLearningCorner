@@ -1,4 +1,31 @@
-# MODULE 01 - 020:  SCSS  @import example
+# MODULE 01 - 020:  SCSS  `@import` directive
+
+
+The `@import` directive allows to:
+- **Include other SCSS files** into a main file.
+- **Organize your code** for a better readability/scalability/maintainability.
+- Use both **partials** (files prefixed with `_`) and complete SCSS files.
+
+---
+
+## 1. Master File:
+ - `application.scss` file contains all @import directives.
+   <img width="776" alt="01-020_IMG1" src="https://github.com/user-attachments/assets/75a36ff6-b9e8-4972-a585-ecb18de649d8" />
+   
+In a typical setup:
+- You have a **master SCSS file** (e.g., `application.scss`).
+- This file includes multiple `@import` statements, which act as modular building blocks.
+
+  
+## 2. Output:
+ - After precompilation and minification, a single optimized CSS file is generated, ready for production.
+  <img width="1272" alt="01-020_IMG3" src="https://github.com/user-attachments/assets/47040510-f5f5-47a1-93d0-5e2b1bb101a1" /> 
+
+---
+In final words, managing the SCSS stylesheets "modularly" helps improving the database organisation.  
+Almost any framework is ready to work using multiple stylesheets directed by the master file.
+
+
 
 ***
 # Video Speech lesson
