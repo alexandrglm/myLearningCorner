@@ -1,5 +1,34 @@
 # MODULE 01 - 047 :  Distributed Version Control Systems - Git
 
+A **Distributed Version Control System (DVCS)**, like Git, is a type of **version control system** where **every developer has a full copy of the entire codebase and its history** locally.  
+  
+  This contrasts with older systems, like **Subversion (SVN)**, where **a single central server stores the codebase, and developers rely on it** for most operations.
+
+## **How a DVCS Differs from a Centralized Systems**
+
+| **Feature**                  | **Centralized VCS**           | **Distributed VCS**           |
+|-------------------------------|-------------------------------|--------------------------------|
+| **Dependency on Server**      | Requires server for most tasks. | Most operations are local.     |
+| **Backup**                    | Central repository only.       | Every clone is a full backup.  |
+| **Collaboration**             | Sequential access to files.    | Concurrent collaboration.      |
+| **Branching and Merging**     | Limited and complex.           | Easy and efficient.            |
+| **Offline Support**           | Minimal or none.               | Fully supported.               |
+
+
+---
+
+## **How Does a DVCS Work?**
+
+In a DVCS:
+1. **Local Cloning**: When you clone a repository, you download a complete copy of all the code, including its full history (commits, branches, etc.), onto your computer.
+  
+2. **Local and Remote Operations**: 
+   - Developers can perform most operations (like committing changes, creating branches, and viewing history) **locally**, without needing access to the central server.  
+   - Changes are shared by **pushing** to or **pulling** from a remote repository.
+  
+3. **Branching and Merging**: Developers work on independent branches, which are later merged into shared branches in the remote repository.
+---
+## Git
 Git is a **free and open-source distributed version control system**.
 
 > Bruce Perens (born around 1958) is an American computer programmer and advocate in the free software movement. He created The Open Source Definition and published the first formal announcement and manifesto of open source.
