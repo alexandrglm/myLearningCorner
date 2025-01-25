@@ -1,9 +1,47 @@
 #   MODULE 01 - 050:  GitHub vs GitLab vs BitBucket
 
+## [GitHub](https://www.github.com)
+- **General Purpose**: Ideal for individual and team use.
+- **Strengths**:
+  - Popular and widely adopted.
+  - Strong issue tracker.
+  - Centralized repository management.
+- **Pricing**: Affordable, with free options and various paid plans.
+
+## [GitLab](https://about.gitlab.com)
+- **Enterprise-Friendly**:
+  - Supports LDAP for integrating Windows Active Directory.
+  - Offers a **self-hosted option** for better control and security.
+- **Advantages**:
+  - Ideal for managing sensitive data without relying on third-party servers.
+  - Excellent integration with external tools for project management, issue tracking, and CI/CD.
+- **Pricing**:
+  - Free trial available.
+  - Offers tiered options (Starter, Premium, Ultimate) tailored to enterprise needs.
+
+## [BitBucket](https://bitbucket.org/product/)
+- **Works with Jira**: Widely used in enterprise environments for **agile development**.
+- **Use Case**:
+  - Suitable for enterprises but less feature-rich compared to GitLab.
+- **Advantages**:
+  - **Unlimited private repositories** in the free tier, making it a budget-friendly option.
+  - **Customizable workflows** to fit diverse project management needs.
+- **Personal Insight**:
+  - Interface preference may vary; try it to assess compatibility.
+
 ***
+
 
 # Video lesson Speech
 [ENG]  
+
+## Features updated ¹
+##### About GitHub:  
+Since Microsoft acquired GitHub, they updated the services terms and their Free plans started to provide more reach features/capabilities, getting the features closer to what BitBucket offers:
+
+* GitHub and BitBucket both offer unlimited public/private repositories using a Free account.
+* Aware of the AI capabilities, GitHub also offers its named feature *'CodeSpaces'* on which you can set a web-based IDE for almost any kind of development. 
+***
 In this guide, we're going to walk through a comparison between three of the popular git repository hosting providers out there.  
 ***
 Specifically, we're going to be looking at [GitHub](www.GitHub.com), we're going to be looking at [GitLab](https://about.GitLab.com/), and we're going to be looking at [BitBucket](https://BitBucket.org/product/).  
@@ -59,11 +97,27 @@ This means it also **works pretty well for an enterprise environment**.
 You're going to be able to do it with all three of these providers.   
 So that is a very good idea to keep in mind with whichever one you pick out will work for everything that we go through in this course and most likely each one of these providers will work for around 95 percent of the requirements of your project, so keep that in mind.  
 
-The reason why I included BitBucket here is not as much because of any special features that I'm really in love with but mainly because if you go to the pricing tab right here you'll be able to see that out of the three **BitBucket is the only one that provides unlimited private repos inside of their free tier**.  
+The reason why I included BitBucket here is not as much because of any special features that I'm really in love with but mainly because if you go to the pricing tab right here you'll be able to see that out of the three **BitBucket is the only one that provides unlimited private repos inside of their free tier**¹.  (UPDATE: GitHub also offers unlimited repo creation).  
 ![01-050_IMG2](https://GitHub.com/user-attachments/assets/91ffe800-4780-4bd1-9d39-5a699ec41ea7)  
 
 So if you are a very budget conscious or you're working with a client or company that is, then BitBucket may be a great option for you.    
   
   And when I have worked on teams that use BitBucket every single time it was because they did not want to spend any money to have private repos where with GitHub and GitLab that is a feature that does not come free. So if you want to keep all of your code private and you do not want to pay for it then the BitBucket service may be a good fit for you.  
 ***
-So, in summary, those are the three main hosting providers GitHub which is really the leader in the industry and in my opinion they are the best general purpose providers, GitLab which works fantastic for teams and for any time that you have enterprise types of requirements, and then BitBucket which allows you to have a great set of tools at a much lower price than the other providers.
+So, in summary, those are the three main hosting providers GitHub which is really the leader in the industry and in my opinion they are the best general purpose providers, GitLab which works fantastic for teams and for any time that you have enterprise types of requirements, and then BitBucket which allows you to have a great set of tools at a much lower price than the other providers.  
+***
+[SPA]  
+
+# GitHub
+  Como el propio nombre indica, un hub centralizado para proveer Git.  
+  Es el más conocido.  Orientado a trabajo personal (de propósito general), aunque también usado en entornos profesionales, ofreciendo un excelente sistema de reportes y trabajo colaborativo.  
+  Microsoft es su propietario.  
+  
+# GitLab
+  Es más limitado en cuestión de caractetísticas finales para el usuario, a diferencia de GitHub.
+  Más orientado a desarrollos de perfil empresarial (Compatible con protocolo LDAP Windows Active Directory).
+  GitLab permite usasr sus sources en tu propio servidor para implementar un git provider a la medida de tus necesidades.  
+  
+# BitBucket
+  Utiliza Jira como plataforma de reportes y desarrollo colaborativo.  
+  Respecto a los precios por servicio, es el que ofrece mejores características en su versión gratuita.
