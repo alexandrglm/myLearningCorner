@@ -47,9 +47,9 @@
 | [ ] | 44  |      | Integrating a Nested SCSS Grids Container for Search Result Reference Links          |            |
 | [ ] | 45  |      | Implementing Shared Styles for Custom Input Elements to Decrease Code Duplication  |            |
 | [ ] | 46  |      | Final Project Changes for Daily Smarty Search Engine Front End Implementation      |            |
-| [ ] | 47  |      | Git Overview                                                                       |            |
-| [ ] | 48  |      | How to Sign Up for a GitHub Account                                                |            |
-| [ ] | 49  |      | Difference Between Git and GitHub                                                  |            |
+| [X] | 47  | DVCS: Git | Git Overview                                                                       | 2025/01/24 |
+| [X] | 48  |      | How to Sign Up for a GitHub Account                                                | 2025/01/24 |
+| [X] | 49  |      | Difference Between Git and GitHub                                                  | 2025/01/25 |
 | [ ] | 50  |      | GitHub vs GitLab vs Bitbucket                                                      |            |
 | [ ] | 51  |      | How to Install Git on Your System                                                  |            |
 | [ ] | 52  |      | How to Organize the Course Files and Create a GitHub Repository                    |            |
