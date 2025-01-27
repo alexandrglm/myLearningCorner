@@ -21,15 +21,16 @@
 | [X] | 19  | SCSS @import | Real World Example of the SCSS @import Directive                                   |  2025/01/23 |
 | [X] | 20  | SCSS @content | How to Use the @content Directive in SCSS to Allow for Mixin Flexibility            | 2025/01/23 |
 |     |     |              | **APPLIED A CONTENT JUMP to MODULE 1: PART 2 - Git**                                | 2025/01/24 |
-| [ ] | 21  |      | App Overview and Resource Material: Branding Page                                  |            |
-| [ ] | 22  |      | Branding Page Layout and Flexbox Integration                                       |            |
-| [ ] | 23  |      | Building Your First SCSS Grids Container                                            |            |
-| [ ] | 24  |      | Nesting a SCSS Grids Container in a Parent Div and Grid Gap Introduction              |            |
-| [ ] | 25  |      | How to Create SCSS Grids Columns with Different Widths                               |            |
-| [ ] | 26  |      | Adding Custom Heading and Bullet Point Styles in Grid Columns                      |            |
-| [ ] | 27  |      | Guide to the SCSS Grids Repeat Function to Render a Dynamic Number of Rows           |            |
-| [ ] | 28  |      | Implementing Final Page Styles and Review of SCSS Grids's Repeat Function            |            |
-| [ ] | 29  |      | Combining SCSS Grids with Media Queries to Implement a Responsive Layout             |            |
+|     |     |              | **GETTING BACK to MODULE 1: PART 1 - CSS-GRID**                              | 2025/01/27 |
+| [X] | 21  | Project 1 CSS-GRID    | App Overview and Resource Material: Branding Page                                  | 2025/01/27 |
+| [X] | 22  | Project 1 CSS-GRID | Branding Page Layout and Flexbox Integration                                       | 2025/01/27 |
+| [X] | 23  | Project 1 CSS-GRID | Building Your First CSS Grids Container                                            | 2025/01/27 |
+| [X] | 24  | Project 1 CSS-GRID | Nesting a CSS Grids Container in a Parent Div and Grid Gap Introduction              | 2025/01/27 |
+| [X] | 25  | Project 1 CSS-GRID | How to Create CSS Grids Columns with Different Widths                               | 2025/01/27 |
+| [X] | 26  | Project 1 CSS-GRID | Adding Custom Heading and Bullet Point Styles in Grid Columns                      | 2025/01/27 |
+| [X] | 27  | Project 1 CSS-GRID | Guide to the CSS Grids Repeat Function to Render a Dynamic Number of Rows           | 2025/01/27 |
+| [X] | 28  | Project 1 CSS-GRID | Implementing Final Page Styles and Review of CSS Grids's Repeat Function            | 2025/01/27 |
+| [X] | 29  | Project 1 CSS-GRID | Combining CSS Grids with Media Queries to Implement a Responsive Layout             | 2025/01/27 |
 | [ ] | 30  |      | Search Engine Front End Implementation Project Requirements                        |            |
 | [ ] | 31  |      | Adding HTML Elements to the Index Page                                             |            |
 | [ ] | 32  |      | Implementing the HTML Structure and Custom Class Names for the Index Page          |            |
@@ -48,14 +49,14 @@
 | [ ] | 45  |      | Implementing Shared Styles for Custom Input Elements to Decrease Code Duplication  |            |
 | [ ] | 46  |      | Final Project Changes for Daily Smarty Search Engine Front End Implementation      |            |
 | [X] | 47  | DVCS: Git | Git Overview                                                                       | 2025/01/24 |
-| [X] | 48  |      | How to Sign Up for a GitHub Account                                                | 2025/01/24 |
-| [X] | 49  |      | Difference Between Git and GitHub                                                  | 2025/01/25 |
-| [ ] | 50  |      | GitHub vs GitLab vs Bitbucket                                                      |            |
-| [ ] | 51  |      | How to Install Git on Your System                                                  |            |
-| [ ] | 52  |      | How to Organize the Course Files and Create a GitHub Repository                    |            |
-| [ ] | 53  |      | How to Integrate Gulp and Browser Sync for Auto Reloading HTML Pages               |            |
-| [ ] | 54  |      | How to Align Content Vertically and Horizontally on a Page with Flexbox            |            |
-| [ ] | 55  |      | Overview of Flex Direction                                                         |            |
+| [X] | 48  | DVCS: GitHub basics| How to Sign Up for a GitHub Account                                                | 2025/01/24 |
+| [X] | 49  | DVCS: Git | Difference Between Git and GitHub                                                  | 2025/01/25 |
+| [X] | 50  | DVCS | GitHub vs GitLab vs Bitbucket                                                      | 2025/01/26 |
+| [X] | 51  | DVCS: Git | How to Install Git on Your System                                                  | 2025/01/26 |
+| [X] | 52  | GitHub CLI | How to Organize the Course Files and Create a GitHub Repository                    | 2025/01/26 |
+| [X] | 53  | NPM, `gulp`, `browser-sync` | How to Integrate Gulp and Browser Sync for Auto Reloading HTML Pages               | 2025/01/27  |
+| [X] | 54  | FlexBox | How to Align Content Vertically and Horizontally on a Page with Flexbox            | 2025/01/27 |
+| [X] | 55  | FlexBox | Overview of Flex Direction                                                         | 2025/01/27 |
 | [ ] | 56  |      | Overview of Justify Content                                                        |            |
 | [ ] | 57  |      | Using Justify Content with Multiple Flex Containers                                |            |
 | [ ] | 58  |      | Overview of Flex Basis                                                             |            |
