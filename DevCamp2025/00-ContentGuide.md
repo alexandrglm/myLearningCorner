@@ -21,6 +21,7 @@
 | [X] | 19  | SCSS @import | Real World Example of the SCSS @import Directive                                   |  2025/01/23 |
 | [X] | 20  | SCSS @content | How to Use the @content Directive in SCSS to Allow for Mixin Flexibility            | 2025/01/23 |
 |     |     |              | **APPLIED A CONTENT JUMP to MODULE 1: PART 2 - Git**                                | 2025/01/24 |
+|     |     |              | **GETTING BACK to MODULE 1: PART 1 - CSS-GRID**                              | 2025/01/27 |
 | [ ] | 21  |      | App Overview and Resource Material: Branding Page                                  |            |
 | [ ] | 22  |      | Branding Page Layout and Flexbox Integration                                       |            |
 | [ ] | 23  |      | Building Your First SCSS Grids Container                                            |            |
@@ -48,14 +49,14 @@
 | [ ] | 45  |      | Implementing Shared Styles for Custom Input Elements to Decrease Code Duplication  |            |
 | [ ] | 46  |      | Final Project Changes for Daily Smarty Search Engine Front End Implementation      |            |
 | [X] | 47  | DVCS: Git | Git Overview                                                                       | 2025/01/24 |
-| [X] | 48  |      | How to Sign Up for a GitHub Account                                                | 2025/01/24 |
-| [X] | 49  |      | Difference Between Git and GitHub                                                  | 2025/01/25 |
-| [ ] | 50  |      | GitHub vs GitLab vs Bitbucket                                                      |            |
-| [ ] | 51  |      | How to Install Git on Your System                                                  |            |
-| [ ] | 52  |      | How to Organize the Course Files and Create a GitHub Repository                    |            |
-| [ ] | 53  |      | How to Integrate Gulp and Browser Sync for Auto Reloading HTML Pages               |            |
-| [ ] | 54  |      | How to Align Content Vertically and Horizontally on a Page with Flexbox            |            |
-| [ ] | 55  |      | Overview of Flex Direction                                                         |            |
+| [X] | 48  | DVCS: GitHub basics| How to Sign Up for a GitHub Account                                                | 2025/01/24 |
+| [X] | 49  | DVCS: Git | Difference Between Git and GitHub                                                  | 2025/01/25 |
+| [X] | 50  | DVCS | GitHub vs GitLab vs Bitbucket                                                      | 2025/01/26 |
+| [X] | 51  | DVCS: Git | How to Install Git on Your System                                                  | 2025/01/26 |
+| [X] | 52  | GitHub CLI | How to Organize the Course Files and Create a GitHub Repository                    | 2025/01/26 |
+| [X] | 53  | NPM, `gulp`, `browser-sync` | How to Integrate Gulp and Browser Sync for Auto Reloading HTML Pages               | 2025/01/27  |
+| [X] | 54  | FlexBox | How to Align Content Vertically and Horizontally on a Page with Flexbox            | 2025/01/27 |
+| [X] | 55  | FlexBox | Overview of Flex Direction                                                         | 2025/01/27 |
 | [ ] | 56  |      | Overview of Justify Content                                                        |            |
 | [ ] | 57  |      | Using Justify Content with Multiple Flex Containers                                |            |
 | [ ] | 58  |      | Overview of Flex Basis                                                             |            |
