@@ -22,7 +22,6 @@
 | [X] | 20  | SCSS @content | How to Use the @content Directive in SCSS to Allow for Mixin Flexibility            | 2025/01/23 |
 |     |     |              | **APPLIED A CONTENT JUMP to MODULE 1: PART 2 - Git**                                | 2025/01/24 |
 |     |     |              | **GETTING BACK to MODULE 1: PART 1 - CSS-GRID**                              | 2025/01/27 |
-<<<<<<< HEAD
 | [X] | 21  | Project 1 CSS-GRID    | App Overview and Resource Material: Branding Page                                  | 2025/01/27 |
 | [X] | 22  | Project 1 CSS-GRID | Branding Page Layout and Flexbox Integration                                       | 2025/01/27 |
 | [X] | 23  | Project 1 CSS-GRID | Building Your First CSS Grids Container                                            | 2025/01/27 |
@@ -32,17 +31,6 @@
 | [X] | 27  | Project 1 CSS-GRID | Guide to the CSS Grids Repeat Function to Render a Dynamic Number of Rows           | 2025/01/27 |
 | [X] | 28  | Project 1 CSS-GRID | Implementing Final Page Styles and Review of CSS Grids's Repeat Function            | 2025/01/27 |
 | [X] | 29  | Project 1 CSS-GRID | Combining CSS Grids with Media Queries to Implement a Responsive Layout             | 2025/01/27 |
-=======
-| [ ] | 21  |      | App Overview and Resource Material: Branding Page                                  |            |
-| [ ] | 22  |      | Branding Page Layout and Flexbox Integration                                       |            |
-| [ ] | 23  |      | Building Your First SCSS Grids Container                                            |            |
-| [ ] | 24  |      | Nesting a SCSS Grids Container in a Parent Div and Grid Gap Introduction              |            |
-| [ ] | 25  |      | How to Create SCSS Grids Columns with Different Widths                               |            |
-| [ ] | 26  |      | Adding Custom Heading and Bullet Point Styles in Grid Columns                      |            |
-| [ ] | 27  |      | Guide to the SCSS Grids Repeat Function to Render a Dynamic Number of Rows           |            |
-| [ ] | 28  |      | Implementing Final Page Styles and Review of SCSS Grids's Repeat Function            |            |
-| [ ] | 29  |      | Combining SCSS Grids with Media Queries to Implement a Responsive Layout             |            |
->>>>>>> refs/remotes/origin/main
 | [ ] | 30  |      | Search Engine Front End Implementation Project Requirements                        |            |
 | [ ] | 31  |      | Adding HTML Elements to the Index Page                                             |            |
 | [ ] | 32  |      | Implementing the HTML Structure and Custom Class Names for the Index Page          |            |
