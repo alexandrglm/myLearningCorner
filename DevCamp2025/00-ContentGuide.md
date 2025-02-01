@@ -55,19 +55,19 @@
 | [X] | 51  | DVCS: Git                       | How to Install Git on Your System                                                 | 2025/01/26 |
 | [X] | 52  | GitHub CLI                      | How to Organize the Course Files and Create a GitHub Repository                   | 2025/01/26 |
 | [X] | 53  | NPM, `gulp`, `browser-sync`     | How to Integrate Gulp and Browser Sync for Auto Reloading HTML Pages              | 2025/01/27 |
-| [X] | 54  | FlexBox                         | How to Align Content Vertically and Horizontally on a Page with Flexbox           | 2025/01/27 |
-| [X] | 55  | FlexBox                         | Overview of Flex Direction                                                        | 2025/01/27 |
-| [X] | 56  |                                 | Overview of Justify Content                                                       | 2025/01/29 |
-| [X] | 57  |                                 | Using Justify Content with Multiple Flex Containers                               | 2025/01/29 |
-| [X] | 58  |                                 | Overview of Flex Basis                                                            | 2025/01/29 |
-| [X] | 59  |                                 | Overview of Flex Basis, Flex Grow, and Flex Shrink                                | 2025/01/29 |
-| [X] | 60  |                                 | Using Flexbox and the Flex Property to Implement an HTML Card                     | 2025/01/29 |
-| [X] | 61  |                                 | How to Use the Flex Wrap Property to Implement Responsive Page Elements           | 2025/01/29 |
-| [X] | 62  |                                 | How to Change the Order of Flexbox Items with the Order Property                  | 2025/01/30 |
-| [X] | 63  |                                 | Align Content vs Align Items in Flexbox                                           | 2025/01/30 |
-| [X] | 64  |                                 | Overview of Align Self in Flexbox                                                 | 2025/01/30 |
-| [X] | 65  |                                 | Flexbox Capstone Project Requirements                                             | 2025/01/30 |
-| [X] | 66  |                                 | Solution: Build a Responsive Navbar                                               | 2025/01/30 |
+| [X] | 54  | Project 2: Flexbox              | How to Align Content Vertically and Horizontally on a Page with Flexbox           | 2025/01/27 |
+| [X] | 55  | Project 2: Flexbox              | Overview of Flex Direction                                                        | 2025/01/27 |
+| [X] | 56  | Project 2: Flexbox              | Overview of Justify Content                                                       | 2025/01/29 |
+| [X] | 57  | Project 2: Flexbox              | Using Justify Content with Multiple Flex Containers                               | 2025/01/29 |
+| [X] | 58  | Project 2: Flexbox              | Overview of Flex Basis                                                            | 2025/01/29 |
+| [X] | 59  | Project 2: Flexbox              | Overview of Flex Basis, Flex Grow, and Flex Shrink                                | 2025/01/29 |
+| [X] | 60  | Project 2: Flexbox              | Using Flexbox and the Flex Property to Implement an HTML Card                     | 2025/01/29 |
+| [X] | 61  | Project 2: Flexbox              | How to Use the Flex Wrap Property to Implement Responsive Page Elements           | 2025/01/29 |
+| [X] | 62  | Project 2: Flexbox              | How to Change the Order of Flexbox Items with the Order Property                  | 2025/01/30 |
+| [X] | 63  | Project 2: Flexbox              | Align Content vs Align Items in Flexbox                                           | 2025/01/30 |
+| [X] | 64  | Project 2: Flexbox              | Overview of Align Self in Flexbox                                                 | 2025/01/30 |
+| [X] | 65  | Project 2: Flexbox              | Flexbox Capstone Project Requirements                                             | 2025/01/30 |
+| [X] | 66  | Project 2: Flexbox              | Solution: Build a Responsive Navbar                                               | 2025/01/30 |
 | [ ] | 67  |                                 | Introduction to UX Development and Creative Direction                             |            |
 | [ ] | 68  |                                 | Planning the Prime Objective of an Application                                    |            |
 | [ ] | 69  |                                 | Guide to User Stories and Analyzing a Feature List                                |            |
