@@ -68,12 +68,12 @@
 | [X] | 64  | Project 2: Flexbox              | Overview of Align Self in Flexbox                                                 | 2025/01/30 |
 | [X] | 65  | Project 2: Flexbox              | Flexbox Capstone Project Requirements                                             | 2025/01/30 |
 | [X] | 66  | Project 2: Flexbox              | Solution: Build a Responsive Navbar                                               | 2025/01/30 |
-| [ ] | 67  |                                 | Introduction to UX Development and Creative Direction                             |            |
-| [ ] | 68  |                                 | Planning the Prime Objective of an Application                                    |            |
-| [ ] | 69  |                                 | Guide to User Stories and Analyzing a Feature List                                |            |
-| [ ] | 70  |                                 | How to Create Effective Sitemaps                                                  |            |
-| [ ] | 71  |                                 | How to Design Low Fidelity Wireframes                                             |            |
-| [ ] | 72  |                                 | Guide to UX Mockups                                                               |            |
+| [X] | 67  | UX/UI Masterclass               | Introduction to UX Development and Creative Direction                             | 2025/02/03 |
+| [X] | 68  | UX/UI Masterclass               | Planning the Prime Objective of an Application                                    | 2025/02/03 |
+| [X] | 69  | UX/UI Masterclass               | Guide to User Stories and Analyzing a Feature List                                | 2025/02/03 |
+| [X] | 70  | UX/UI Sitemaps                  | How to Create Effective Sitemaps                                                  | 2025/02/03 |
+| [X] | 71  | UX/UI Wireframes                | How to Design Low Fidelity Wireframes                                             | 2025/02/03 |
+| [X] | 72  | UX/UI Wireframes (2)            | Guide to UX Mockups                                                               | 2025/02/03 |
 | [ ] | 73  |                                 | UX Skill Development                                                              |            |
 | [ ] | 74  |                                 | Project Requirements for UX Course                                                |            |
 | [ ] | 75  |                                 | Introduction to User Interface and Design for Developers                          |            |
