@@ -1,6 +1,6 @@
 ## UX Development & Creative Direction – Notes
 
-### 01-067: Introduction to User Experience (UX) Design
+### 01-067:     Introduction to User Experience (UX) Design
 
 - UX is not just about choosing colors and fonts; it is a structured science.
 
@@ -8,7 +8,7 @@
 
 - A good UX design speeds up application development.
 
-### 01-068: Role of the Creative Director in Application Development
+### 01-068:     Role of the Creative Director in Application Development
 
 - Translating the client’s vision into a functional design.
 
@@ -18,7 +18,7 @@
 
 - Creating a multi-dimensional view of the application to foresee potential issues.
 
-### 01-069:  Planning the Prime Objective of an Application
+### 01-069:      Planning the Prime Objective of an Application
 
 - Establishing the primary goal before any development begins.
 
@@ -34,7 +34,7 @@
 
 - The importance of passion and engagement in creating meaningful applications.
 
-### 01-070: Creating Effective Sitemaps
+### 01-070:     Creating Effective Sitemaps
 
 - A sitemap should address all user stories.
 
@@ -52,7 +52,7 @@
 
 - Utilize collaborative tools for better communication and refinement.
 
-### 01-071: Designing Low Fidelity Wireframes
+### 01-071:     Designing Low Fidelity Wireframes
 
 - Focus strictly on user experience, not user interface.
 
@@ -68,7 +68,7 @@
 
 - Acts as a blueprint for high fidelity wireframes and final UI design.
 
-### 01-072: UX Mockups (High Fidelity Wireframes)
+### 01-072:     UX Mockups (High Fidelity Wireframes)
 
 - High fidelity wireframes (mockups) represent the final look of the system.
 
@@ -83,6 +83,52 @@
 - Reduces miscommunication by providing clear references for developers.
 
 - Should be signed off before proceeding with full development to avoid unnecessary rework.
+
+### 01-073:    UX Skills Development
+
+- Strong communication skills are essential for gathering information from clients and teams.
+
+- Active listening and clear articulation help prevent misunderstandings and improve project outcomes.
+
+- Critical thinking allows designers to analyze problems from both a detailed and broad perspective.
+
+- The ability to zoom in on small details while considering the overall system is crucial.
+
+- Practicing wireframing, mockups, and user experience planning improves skills over time.
+
+- Learning from mistakes and refining approaches leads to better UX design.
+
+- Understanding development constraints helps optimize design decisions for better implementation.
+
+# UX Capstone Requirements:
+
+- The project focuses on building a **portfolio application** emphasizing user experience.
+
+- The first step is defining the **prime objective**, specifying what the user should experience.
+
+- Identify the target audience (employers, partners, customers) and their key actions.
+
+- Deliverables:
+  
+  - **Sitemap** showing all pages and navigation paths.
+  
+  - **Low fidelity wireframe** focusing on structure and usability rather than aesthetics.
+
+- Recommended tools:
+  
+  - **Lucidchart** (for sitemaps) – offers team collaboration and a free trial.
+  
+  - **Adobe XD** or **InVision** (for wireframes) – InVision is a free alternative.
+
+- If using software tools is overwhelming, **sketching on paper or a whiteboard** is a great alternative.
+
+- Follow a structured approach: **start broad (goal definition) and refine progressively**.
+
+- Avoid focusing on UI details at this stage; **content organization and user flow** are the priorities.
+
+- Keep content **concise and direct** to communicate effectively.
+
+- The goal is **not just to create a portfolio application** but to practice the **UX design workflow**.
 
 ---
 
@@ -171,3 +217,19 @@
 - Reducen la posibilidad de malentendidos al proporcionar referencias claras a los desarrolladores.
 
 - Deben ser aprobados antes de continuar con el desarrollo completo para evitar retrabajos innecesarios.
+
+### 01-073:    Desarrollo de Habilidades en UX
+
+- La comunicación efectiva es clave para recopilar información de clientes y equipos.
+
+- Escuchar activamente y articular ideas claramente previene malentendidos y mejora los proyectos.
+
+- El pensamiento crítico permite analizar problemas desde una perspectiva detallada y general.
+
+- La capacidad de alternar entre enfoque en detalles y visión global es esencial.
+
+- Practicar wireframing, mockups y planificación de UX mejora las habilidades con el tiempo.
+
+- Aprender de los errores y refinar enfoques conduce a un mejor diseño UX.
+
+- Comprender las limitaciones del desarrollo ayuda a optimizar decisiones de diseño para su implementación.
