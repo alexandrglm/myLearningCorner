@@ -37,8 +37,6 @@ every single page of my sitemap.*
 
 ![IMG](/home/dev/git/2_iKASTAROAK/DevCamp_General/myLearningProcess/DevCamp2025/FullStack/MODULE_01_SCSS/01_067-082_UI-UX/01-070/01-070_IMG1.png)
 
-
-
 *Here, you can see that there are two main shapes: rectangles and 
 diamonds. This is my own personal thing. You may be working inside of a 
 company that already has these conventions established, or you'll be 
@@ -135,10 +133,6 @@ communicate properly with all the stakeholders.
  Where did this come from?" It's really nice when you don't have to cut 
 through anything, you can just go right to the question and you're all 
 on the same page really quickly.*
-
-
-
-
 
 ***
 
