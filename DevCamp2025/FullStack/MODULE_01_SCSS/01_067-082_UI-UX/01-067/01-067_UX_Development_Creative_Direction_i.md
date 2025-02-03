@@ -1,10 +1,200 @@
 # MODULE 01 - 067: UX Development & Creative Direction (1)
 
-.
+## UX Development & Creative Direction – Notes
+
+### 1. Introduction to User Experience (UX) Design
+
+- UX is not just about choosing colors and fonts; it is a structured science.
+
+- A good UX design speeds up application development.
+
+### 2. Role of the Creative Director in Application Development
+
+- Translating the client’s vision into a functional design.
+
+- Identifying needs and processes within the application.
+
+- Understanding user interactions and data flow.
+
+- Creating a multi-dimensional view of the application to foresee potential issues.
+
+
+
+***
+
+
+
+#### What is the difference between UI and UX?
+
+In digital design, user interface (UI) refers to the interactivity,   
+look, and feel of a product screen or web page, while user experience   
+(UX) covers a user’s overall experience with the product or website.   
+
+
+### Defining UI vs UX design
+
+To create engaging UI, designers consider these four key elements:  
+
+1. **Page layout**.  
+   Ideally, the organization of a web page or mobile app screen should   
+   seem intuitive to users. But to organize it that way, UI designers have   
+   to make dozens of well-considered decisions—from the header position to   
+   the amount of white space.    
+   
+     
+2. **Color scheme and font selection**.  
+   UI designers carefully choose the colors and fonts on a digital product  
+   interface for consistency, accessibility, and brand alignment.  
+   
+     
+3. **Interactive elements.** From [button design](https://www.figma.com/community/file/769870685529936013/Button-UI-%2F-Design-System) to drop-down menus, UI designers   style digital product screens to make user flows intuitive.  
+   
+     
+4. **Wireframe and prototype fidelity.** UX designers often put together basic   wireframes and prototypes. UI designers can help transform them into high-fidelity, functional, interactive product mockups .
+
+### ### Do you really need a UI designer to create UI?
+
+Startups sometimes build a minimum viable product without a dedicated UI
+ designer—but there are drawbacks.   
+
+*"Graphic designers often own responsibilities for brand alignment, and will help provide some brand guidelines to build UI,"* * Hugo says.   
+
+*"But graphic designers traditionally  focus on static printed design, so they may need to get up to speed on accessibility and responsive design—key skills UI designers bring 
+to the table."*
+
+
+
+### ## 5 steps to UX design
+
+There's more to UX design than meets the eye on a 
+user interface. The UX design process involves market research, 
+wireframe development, prototype testing, and cross-functional 
+collaboration.
+
+There are five essential steps to successful UX design:
+
+**1. Consumer and competitor research**
+
+To deliver a positive user experience, UX designers need to understand 
+their target audience.    
+
+ Through UX research, they discover what their users like, what problems and pain points they’re facing, and how they behave online or while using an app or software.   
+
+UX designers may also  perform competitor analysis using a  SWOT process to define their product niche.  
+
+
+
+**2. Information architecture**
+
+Once  UX designers understand users’ needs and behaviors, they can create 
+information architecture (IA) for their product or site.   
+
+Designers use IA as a visual blueprint, outlining essential navigation, content 
+hierarchy, features, and interactions.
+
+One key IA tool is a FLOWCHART map,  which designers use to map out key user flows and decision points.   
+
+IA flowcharts help teams understand at a glance how the product is intended
+ to work—and where there's a gap that may require additional features 
+or updates.   
+
+
+
+**3. Wireframes and prototypes**
+
+With IA sketched out, UX designers can start turning ideas into tangible 
+models, such as wireframes and prototypes.  
+
+ Teams use these proofs of concept to test ideas, define requirements, and set feature priorities.   
+
+
+
+**4. Testing and troubleshooting**
+
+A mockup, a proof of concept, helps UX designers, developers, and product owners see how features will work in practice.   
+
+If testing reveals issues like confusing navigation, menus, or  forms, the team can adjust them before launch.  
+
+
+
+**5. Ongoing updates**
+
+Even  after a digital product has entered the market, a UX designer’s job is 
+never truly done.   
+
+With new user feedback and back-end analytics, they can design updates and improvements.  
+
+For example, analytics may reveal that an e-commerce checkout process is too long, leading to a high cart abandonment rate. To address this issue, UX designers may streamline some checkout steps.   
+
+
+
+
+
+
+
+### ### How to recognize successful UX design
+
+What does UX success look like? According to Peter Morville, author of *Information Architecture for the World Wide Web*, successful UX answers yes to these [seven user experience questions](https://semanticstudios.com/user_experience_design/):Is the site or product useful?
+
+
+
+![IMG](https://semanticstudios.com/wp-content/uploads/2004/06/honeycomb.jpg)
+
+- Is it usable?
+- Is it desirable?
+- Have you made it findable—that is, will a user know where to find what they're looking for?
+- Is it accessible?
+- Is it credible?
+- Is it valuable?
+
+
+
+
+
+
+### ## Where do UX and UI overlap?
+
+Scan  online job listings, and you'll notice employers seeking UX/UI 
+designers— digital designers who can fulfill both roles.  
+
+This may be a stretch, but it's possible,.
+
+"You can  work in a team where you have UI designers and UX designers as separate
+ disciplines, But a product designer or UX designer might take on UI responsibilities, working alongside someone like a business analyst to understand all of the scenarios that need to be covered."  
+
+While UI is generally understood as a specialized subset of UX work, there are three key areas of overlap:
+
+1. **User-centered design expertise.** Both disciplines require designers to develop empathy for the end user and consider how users want to use a product or site.
+2. **Cross-functional teams.** Designers
+   working on UI and UX must collaborate closely with graphic designers 
+   and developers to make products and sites appealing, accessible, 
+   and usable.
+3. **Design tools.** UX and UI designers use many of the same kind of tools.
+
+
+
+References:
+[UI vs UX: What&#x27;s the Difference between UI &amp; UX Design? ](https://www.figma.com/resource-library/difference-between-ui-and-ux/)
+
+[Semantic Studios:   User Experience Design](https://semanticstudios.com/user_experience_design/)
+
+
+
+
+
+
+
+
 
 ***
 
 # Video Lesson Speech
+
+[ENG]  
+
+
+
+
 
 **Jordan Hudgens:** Standing right next to me is Jesse Cook. Jesse is the CEO and the   Creative Director for the Slate dev shop in Lehi, Utah. I've had the privilege of  
  working with Jesse for over a year now and I've absolutely loved the   
@@ -137,3 +327,27 @@ going to be talking about the different concepts you'll need to learn in
 number of case studies that we have worked on so that we can tell you   
 some of the things we did that were good and also a few the things we   
 might have done differently.  
+
+
+
+***
+
+[SPA]  
+
+## Desarrollo de UX y Dirección Creativa
+
+### 1. Introducción al Diseño de Experiencia de Usuario (UX)
+
+- UX no se trata solo de elegir colores y fuentes; es una ciencia estructurada.
+
+- Un buen diseño de UX acelera el desarrollo de aplicaciones.
+
+### 2. Rol del Director Creativo en el Desarrollo de Aplicaciones
+
+- Saber traducir lo que el cliente quiere a un diseño funcional.
+
+- Identificacar las necesidades y procesos dentro de la aplicación.
+
+- Comprender el total entre las interacciones del usuario y el flujo de datos.
+
+- Creación de una visión multidimensional de la aplicación para adelantarse a cualquier problema relacionado.  
