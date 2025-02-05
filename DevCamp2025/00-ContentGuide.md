@@ -91,91 +91,89 @@
 | [X] | 81  | UX/UI                           | How to Create an Effective UI Style Guide                                         | 2025/02/03 |
 | [X] | 82  |                                 | Course Checkpoint 2                                                               | 2025/02/03 |
 
-
 *** 
 
 # MODULE 2
 
 ## PYTHON (i)
 
-|     | #   | Type                            | Tittle                                                                            | Date       |
-| --- | --- | ------------------------------- | --------------------------------------------------------------------------------- | ---------- |
-| []  | 01  |                                 | Logo Design Guide - Part 1                                                        |            |
-| []  | 02  |                                 | Logo Design Guide - Part 2                                                        |            |
-| []  | 03  |                                 | UI Project Requirements: Design a Portfolio Application and Logo                  |            |
-| []  | 04  |                                 | What is Programming?                                                              |            |
-| []  | 05  |                                 | How to Use Repl.it for Running Python in the Browser                              |            |
-| []  | 06  |                                 | How to Install Python 3 on a Mac                                                  |            |
-| []  | 07  |                                 | How to Install Python 3 on a PC                                                   |            |
-| []  | 08  |                                 | Basic Usage Tips and Tricks for the Python Repl                                   |            |
-| []  | 09  |                                 | Introduction to the Zen of Python (PEP 20)                                        |            |
-| []  | 10  |                                 | Differences Between Python Versions 2 vs 3                                        |            |
-| []  | 11  |                                 | Overview of Indentation in Python Programs                                        |            |
-| []  | 12  |                                 | The Case Against Code Comments                                                    |            |
-| []  | 13  |                                 | Manually Build an Incrementing Matrix Function in Python                          |            |
-| []  | 14  |                                 | Section Introduction                                                              |            |
-| []  | 15  |                                 | Introduction to Variables in Python                                               |            |
-| []  | 16  |                                 | Python Best Practices for Variable Naming and Style                               |            |
-| []  | 17  |                                 | Overview of Python Data Types                                                     |            |
-| []  | 18  |                                 | How to Change Python Variable Values                                              |            |
-| []  | 19  |                                 | Guide to Single Line, Inline and Multi Line Comments in Python                    |            |
-| []  | 20  |                                 | Monolithic vs Microservice Application Architectures                              |            |
-| []  | 21  |                                 | Requirement Elicitation – A Guide for Feature Development                         |            |
-| []  | 22  |                                 | Section Introduction                                                              |            |
-| []  | 23  |                                 | Python String Basics                                                              |            |
-| []  | 24  |                                 | Python String Case Functions                                                      |            |
-| []  | 25  |                                 | How to Access Portions of Strings in Python                                       |            |
-| []  | 26  |                                 | Guide to Heredocs in Python                                                       |            |
-| []  | 27  |                                 | How to Build a Raw Multiline String in Python                                     |            |
-| []  | 28  |                                 | Build a Dynamic Reducer in Python                                                 |            |
-| []  | 29  |                                 | Guide to Modern Python String Interpolation                                       |            |
-| []  | 30  |                                 | How to Use Python's format method to Implement Index Based String Interpolation   |            |
-| []  | 31  |                                 | Finding a Substring in Python with: Find, Index, and In                           |            |
-| []  | 32  |                                 | Using Python's replace Function to Find and Replace String Values                 |            |
-| []  | 33  |                                 | Using a Negative Index with a Python String                                       |            |
-| []  | 34  |                                 | Overview of Python's strip, lstrip, and rstrip Functions                          |            |
-| []  | 35  |                                 | Guide to Python's Partition Function                                              |            |
-| []  | 36  |                                 | Guide to the Python split Function                                                |            |
-| []  | 37  |                                 | How to Check if Strings Represent Numbers or Alphanumeric Characters in Python    |            |
-| []  | 38  |                                 | Course Checkpoint 3                                                               |            |
-| []  | 39  |                                 | Section Introduction                                                              |            |
-| []  | 40  |                                 | Overview of Number Types in Python                                                |            |
-| []  | 41  |                                 | Mathematical Operators in Python                                                  |            |
-| []  | 42  |                                 | Guide to the Order of Operations in Python                                        |            |
-| []  | 43  |                                 | How to Use Assignment Operators in Python                                         |            |
-| []  | 44  |                                 | Decimal vs Float in Python                                                        |            |
-| []  | 45  |                                 | How to Convert Between the Integer, Float, Decimal and Complex Numeric Data Types in Python |            |
-| []  | 46  |                                 | Overview of Popular Math Functions in Python                                      |            |
-| []  | 47  |                                 | Build a Manual Exponent Function in Python                                        |            |
-| []  | 48  |                                 | Section Introduction                                                              |            |
-| []  | 49  |                                 | Overview of Lists in Python                                                       |            |
-| []  | 50  |                                 | Three Ways to Remove Elements from a Python List                                  |            |
-| []  | 51  |                                 | Guide to Nested Lists and Best Practices for Storing Multiple Data Types in a Python List |            |
-| []  | 52  |                                 | Overview of Python List Query Processes: len(), Negative Indexes, and index()     |            |
-| []  | 53  |                                 | How to Sort Lists in Python                                                       |            |
-| []  | 54  |                                 | Using the join Function in Python to Build a URL Query String                     |            |
-| []  | 55  |                                 | Overview of Ranges in Python Lists                                                |            |
-| []  | 56  |                                 | Advanced Techniques for Implementing Ranges and Slices in Python Lists            |            |
-| []  | 57  |                                 | Guide to the sorted Function in Python                                            |            |
-| []  | 58  |                                 | How to Find the Median of a Python List with an Odd Number of Numbers             |            |
-| []  | 59  |                                 | Working with the slice Class in Python to Store Slices                            |            |
-| []  | 60  |                                 | How to Add to a List in Python with Both In Place and Copy Processes              |            |
-| []  | 61  |                                 | Build a Weighted Lottery Function in Python                                       |            |
-| []  | 62  |                                 | Overview of Python Dictionaries                                                   |            |
-| []  | 63  |                                 | Guide to Nested Collections in Python Dictionaries                                |            |
-| []  | 64  |                                 | How to Add New Key/Value Pairs to Python Dictionaries                             |            |
-| []  | 65  |                                 | Guide to Using the get Function in Python Dictionaries to Configure Fallback Lookup Values |            |
-| []  | 66  |                                 | Guide to Python Dictionary View Objects                                           |            |
-| []  | 67  |                                 | Overview of the Multiple Methods for Deleting Items in a Python Dictionary        |            |
-| []  | 68  |                                 | Guide to Working with Lists of Nested Dictionaries                                |            |
-| []  | 69  |                                 | Build a Histogram in Python with No 3rd Party Libraries                           |            |
-| []  | 70  |                                 | Introduction to Python Tuples                                                     |            |
-| []  | 71  |                                 | How to Add Elements to a Tuple by Leveraging Re-Assignment                        |            |
-| []  | 72  |                                 | Working with Lists Nested in Tuples                                               |            |
-| []  | 73  |                                 | Guide to Slices in Python Tuples                                                  |            |
-| []  | 74  |                                 | Three Ways to Remove Elements from a Python Tuple                                 |            |
-| []  | 75  |                                 | Course Checkpoint 4                                                               |            |
-
+|     | #   | Type                                | Tittle                                                                                      | Date       |
+| --- | --- | ----------------------------------- | ------------------------------------------------------------------------------------------- | ---------- |
+| [X] | 01  | UX/IU Project: Logo Design          | Logo Design Guide - Part 1                                                                  | 2025/02/04 |
+| [X] | 02  | UX/IU Project: Logo Design          | Logo Design Guide - Part 2                                                                  | 2025/02/04 |
+| [x] | 03  | UX/UI Project Capstone              | UI Project Requirements: Design a Portfolio Application and Logo                            | 2025/02/04 |
+| [X] | 04  | Literacy: Programming foundations   | What is Programming?                                                                        | 2025/02/04 |
+| [X] | 05  | Python: Online IDE                  | How to Use Repl.it for Running Python in the Browser                                        | 2025/02/04 |
+| [X] | 06  | Python IDE setup                    | How to Install Python 3 on a Mac                                                            | 2025/02/04 |
+| [X] | 07  | Python IDE setup                    | How to Install Python 3 on a PC                                                             | 2025/02/04 |
+| [X] | 08  | Python: Online IDE                  | Basic Usage Tips and Tricks for the Python Repl                                             | 2025/02/04 |
+| [X] | 09  | Python Philosophy                   | Introduction to the Zen of Python (PEP 20)                                                  | 2025/02/04 |
+| [X] | 10  | Python Versions                     | Differences Between Python Versions 2 vs 3                                                  | 2025/02/04 |
+| [X] | 11  | Literacy: Indentation consensus     | Overview of Indentation in Python Programs                                                  | 2025/02/04 |
+| [X] | 12  | Literacy: Documenting code, or not. | The Case Against Code Comments                                                              | 2025/02/04 |
+| []  | 13  |                                     | Manually Build an Incrementing Matrix Function in Python                                    |            |
+| []  | 14  |                                     | Section Introduction                                                                        |            |
+| []  | 15  |                                     | Introduction to Variables in Python                                                         |            |
+| []  | 16  |                                     | Python Best Practices for Variable Naming and Style                                         |            |
+| []  | 17  |                                     | Overview of Python Data Types                                                               |            |
+| []  | 18  |                                     | How to Change Python Variable Values                                                        |            |
+| []  | 19  |                                     | Guide to Single Line, Inline and Multi Line Comments in Python                              |            |
+| []  | 20  |                                     | Monolithic vs Microservice Application Architectures                                        |            |
+| []  | 21  |                                     | Requirement Elicitation – A Guide for Feature Development                                   |            |
+| []  | 22  |                                     | Section Introduction                                                                        |            |
+| []  | 23  |                                     | Python String Basics                                                                        |            |
+| []  | 24  |                                     | Python String Case Functions                                                                |            |
+| []  | 25  |                                     | How to Access Portions of Strings in Python                                                 |            |
+| []  | 26  |                                     | Guide to Heredocs in Python                                                                 |            |
+| []  | 27  |                                     | How to Build a Raw Multiline String in Python                                               |            |
+| []  | 28  |                                     | Build a Dynamic Reducer in Python                                                           |            |
+| []  | 29  |                                     | Guide to Modern Python String Interpolation                                                 |            |
+| []  | 30  |                                     | How to Use Python's format method to Implement Index Based String Interpolation             |            |
+| []  | 31  |                                     | Finding a Substring in Python with: Find, Index, and In                                     |            |
+| []  | 32  |                                     | Using Python's replace Function to Find and Replace String Values                           |            |
+| []  | 33  |                                     | Using a Negative Index with a Python String                                                 |            |
+| []  | 34  |                                     | Overview of Python's strip, lstrip, and rstrip Functions                                    |            |
+| []  | 35  |                                     | Guide to Python's Partition Function                                                        |            |
+| []  | 36  |                                     | Guide to the Python split Function                                                          |            |
+| []  | 37  |                                     | How to Check if Strings Represent Numbers or Alphanumeric Characters in Python              |            |
+| []  | 38  |                                     | Course Checkpoint 3                                                                         |            |
+| []  | 39  |                                     | Section Introduction                                                                        |            |
+| []  | 40  |                                     | Overview of Number Types in Python                                                          |            |
+| []  | 41  |                                     | Mathematical Operators in Python                                                            |            |
+| []  | 42  |                                     | Guide to the Order of Operations in Python                                                  |            |
+| []  | 43  |                                     | How to Use Assignment Operators in Python                                                   |            |
+| []  | 44  |                                     | Decimal vs Float in Python                                                                  |            |
+| []  | 45  |                                     | How to Convert Between the Integer, Float, Decimal and Complex Numeric Data Types in Python |            |
+| []  | 46  |                                     | Overview of Popular Math Functions in Python                                                |            |
+| []  | 47  |                                     | Build a Manual Exponent Function in Python                                                  |            |
+| []  | 48  |                                     | Section Introduction                                                                        |            |
+| []  | 49  |                                     | Overview of Lists in Python                                                                 |            |
+| []  | 50  |                                     | Three Ways to Remove Elements from a Python List                                            |            |
+| []  | 51  |                                     | Guide to Nested Lists and Best Practices for Storing Multiple Data Types in a Python List   |            |
+| []  | 52  |                                     | Overview of Python List Query Processes: len(), Negative Indexes, and index()               |            |
+| []  | 53  |                                     | How to Sort Lists in Python                                                                 |            |
+| []  | 54  |                                     | Using the join Function in Python to Build a URL Query String                               |            |
+| []  | 55  |                                     | Overview of Ranges in Python Lists                                                          |            |
+| []  | 56  |                                     | Advanced Techniques for Implementing Ranges and Slices in Python Lists                      |            |
+| []  | 57  |                                     | Guide to the sorted Function in Python                                                      |            |
+| []  | 58  |                                     | How to Find the Median of a Python List with an Odd Number of Numbers                       |            |
+| []  | 59  |                                     | Working with the slice Class in Python to Store Slices                                      |            |
+| []  | 60  |                                     | How to Add to a List in Python with Both In Place and Copy Processes                        |            |
+| []  | 61  |                                     | Build a Weighted Lottery Function in Python                                                 |            |
+| []  | 62  |                                     | Overview of Python Dictionaries                                                             |            |
+| []  | 63  |                                     | Guide to Nested Collections in Python Dictionaries                                          |            |
+| []  | 64  |                                     | How to Add New Key/Value Pairs to Python Dictionaries                                       |            |
+| []  | 65  |                                     | Guide to Using the get Function in Python Dictionaries to Configure Fallback Lookup Values  |            |
+| []  | 66  |                                     | Guide to Python Dictionary View Objects                                                     |            |
+| []  | 67  |                                     | Overview of the Multiple Methods for Deleting Items in a Python Dictionary                  |            |
+| []  | 68  |                                     | Guide to Working with Lists of Nested Dictionaries                                          |            |
+| []  | 69  |                                     | Build a Histogram in Python with No 3rd Party Libraries                                     |            |
+| []  | 70  |                                     | Introduction to Python Tuples                                                               |            |
+| []  | 71  |                                     | How to Add Elements to a Tuple by Leveraging Re-Assignment                                  |            |
+| []  | 72  |                                     | Working with Lists Nested in Tuples                                                         |            |
+| []  | 73  |                                     | Guide to Slices in Python Tuples                                                            |            |
+| []  | 74  |                                     | Three Ways to Remove Elements from a Python Tuple                                           |            |
+| []  | 75  |                                     | Course Checkpoint 4                                                                         |            |
 
 ### Module 2 keypoints:
 

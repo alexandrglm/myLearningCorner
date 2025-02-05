@@ -7,7 +7,6 @@ you put on tasks such as the size that the logos are going to be.
 
 **Jordan Hudgens:** So if it goes on a billboard it can be one size or you could have a much larger sized logo with more detail.  
 
-
  But then if it also needs to be a smartphone application icon then you can't have very much detail at all or else it looks weird.   
 
 So how do you kind of draw the line on detail?  
@@ -46,7 +45,6 @@ And I also like distinctive logos more. They're easier.
 I don't have to illustrate a coffee cup or anything that, I can do something a little bit simpler.   
 
 The problem is getting it to accurately convey the mood and message and tell a story.   
-
 
 That is more difficult.  
 
@@ -104,7 +102,6 @@ So when we see things certain types of elements, it's going to make our minds ha
 
 That's a huge thing I want you to take from this guide specifically.   
 
-
 You may think, if you were like me, you may have just thought that logo 
 design was something that could be done by artists.   
 
@@ -117,7 +114,6 @@ because you haven't dug into the science enough yet.
 
 That's a personal thing that I'm going to be working on is being able to experiment with 
 that and see if I can finally kind of get past that point a little bit.   
-
 
 So I'm excited about that.   
 

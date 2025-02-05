@@ -38,10 +38,7 @@ My favorite thing I've ever heard about good branding is to be good storytellers
 A lot of times if you're doing the branding for a company you think, "I need to make the company look as awesome as possible" when really, and this is what I love so 
 much: You're not making the brand be the hero of the user's story.   
 
-
 You're making the users the hero of *their own* story *inside of* this brand. It's really cool.  
-
-
 
 I mean, you look at car commercials and it's not about just making the car the coolest thing ever, it's that *you're* really cool *inside* the car.   
 
@@ -49,10 +46,7 @@ Like *you're* the hero, when *you're* using this car, right? So that's a really 
 specific scientific method and artistic method of establishing a good 
 brand, telling that story, designing logos, and using color.  
 
-
-
 So with logos, they are... pretty frustrating, and also ***really*** gratifying when you get it right and it looks good. It's just awesome.   
-
 
 You can go and look at other people's logos and you're just like "*oh, well, duh like that's so easy*."   
 
@@ -112,8 +106,6 @@ We ended up with a name that used vernacular that people in a gym would commonly
 
 Instead of "Meat Sticks", the name that we came up with was "Triset."  
 
-
-
 ![IMG](./02-001__IMG1.png)
 
 ![IMG](./02-001_IMG2.png)
@@ -123,7 +115,6 @@ It's this process of using these three different individual packets.
 And you're doing a set of three of them, right?     
 
 So Triset is actually a really good example of how you can communicate what it's doing, but in a distinctive way where you wouldn't necessarily know right off the bat.     
-
 
 And then the logo is really cool.    
 
