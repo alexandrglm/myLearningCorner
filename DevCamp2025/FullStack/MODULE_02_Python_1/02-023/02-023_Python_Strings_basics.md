@@ -85,5 +85,3 @@ The multiple backslash characters helps protect the double quotes.
 ![IMG](./02-023_IMG5.png)
 
 So, these are four different examples of how to create strings and how to utilize backslash characters in order to escape string values within Python.
-
-

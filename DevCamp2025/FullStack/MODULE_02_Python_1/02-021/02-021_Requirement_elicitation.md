@@ -111,11 +111,13 @@ Examples might have been:
   **Because a non-technical client isn’t going to know **what a module is.   
   
   But they will understand what a new page on the site is.
+
 - ***How will this interact with other parts of** ...the website?   *
   
   This question would have instantly given me the feedback to know that this 
   spreadsheet was simply meant to be a different invoice formatting 
   option.  
+
 - ***Can you describe the flow of ***... how this will be generated? 
   
   This is one of my favorite questions to ask because **it forces the client to be 

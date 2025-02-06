@@ -35,11 +35,9 @@ This is going to be a base for you to add your own comments and experience the d
 
 First, we will use single-line comments by stating “single-line comment” and then giving one more line.
 
-
  This is specific to using [repl.it](https://repl.it/), if you fail to give a new line and instead hit return, you are going to receive an error.   
 
 This is not a Python error, but rather an issue with [repl.it](https://repl.it/).  
-
 
  The error message states “unexpected EOF” which stands for End Of File while parsing because there is no need for a program that has a single line comment and no code.
 
@@ -69,14 +67,11 @@ The comments will be ignored. You can also test this by printing it in Python 3.
 
 ![IMG](./02-019_IMG3.png)
 
-
-
 ## In-line comments
 
 Now, another way to comment is by using an inline comment.   
 
 Although this is multiple lines, it is also considered a single line comment.  
-
 
 Performing true multiline comments is more of the standard convention for Python developers and will be shown later.  
 
@@ -91,7 +86,6 @@ Depending on the editor, it may even suggest you split the variable with a “he
 ![IMG](./02-019_IMG4.png)
 
 This does not state there is an issue, but rather serves as a reminder for when you use the syntax “to do” in all capital letters.   
-
 
 This, universal symbol for “not done yet”, is across all programming languages and all frameworks.   
 
@@ -144,11 +138,6 @@ For example, they may say that you should include a hash mark before multiline c
 
 However, in all my years of industry, this standard is yet to change.  
 
-
  When you go through the advanced Python course, you’ll see how multiline comments can be automatically converted into documentation.   
 
 In this course, we have explored a holistic view of all three variations, so you can shift perspectives within this programming dispute.
-
-
-
-

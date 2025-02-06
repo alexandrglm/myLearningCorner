@@ -11,8 +11,6 @@ While you can create beautiful, functional applications with either option, it i
 important to look closely at the two so you can pick the one that is 
 right for your needs.
 
-
-
 ![IMG](./02-020_IMG1.png)
 
 ## Monolithic Architecture
@@ -20,8 +18,6 @@ right for your needs.
 Monolithic architecture is the setup used for **traditional server-side systems.*:
 
 > The entire system’s function is based on a single application.
-
-
 
 This type of system comes with various advantages.   
 
@@ -61,7 +57,6 @@ That allows you to find a prompt solution.
 
 So that if a component fails, your entire system doesn’t have to fail.   
 
-
 If you create your system where each component can function without the other components, your system won’t crash just because a single feature 
 does.
 
@@ -81,7 +76,6 @@ Of course, there are some drawbacks to microservices as well.
 ## Monolithic vs Microservice Summary
 
 In summary, both architecture types work for Rails development.  
-
 
 Instead of trying to make a universal decision about what type of use, instead decide which one you should use for the specific application that you’re working on.   
 
