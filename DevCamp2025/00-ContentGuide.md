@@ -111,10 +111,10 @@
 | [X] | 10  | Python Versions                     | Differences Between Python Versions 2 vs 3                                                  | 2025/02/04 |
 | [X] | 11  | Literacy: Indentation consensus     | Overview of Indentation in Python Programs                                                  | 2025/02/04 |
 | [X] | 12  | Literacy: Documenting code, or not. | The Case Against Code Comments                                                              | 2025/02/04 |
-| []  | 13  |                                     | Manually Build an Incrementing Matrix Function in Python                                    |            |
-| []  | 14  |                                     | Section Introduction                                                                        |            |
-| []  | 15  |                                     | Introduction to Variables in Python                                                         |            |
-| []  | 16  |                                     | Python Best Practices for Variable Naming and Style                                         |            |
+| [X] | 13  | Python Example: Incremental Matrix Function| Manually Build an Incrementing Matrix Function in Python                             | 2025/02/06 |
+| [X] | 14  | Python Module intro                 | Section Introduction                                                                        | 2025/02/06 |
+| [X] | 15  | Python: Variables intro             | Introduction to Variables in Python                                                         | 2025/02/06 |
+| [X] | 16  | Python: Type Case & Naming styles, PEP8 | Python Best Practices for Variable Naming and Style                                     | 2025/02/06 |
 | []  | 17  |                                     | Overview of Python Data Types                                                               |            |
 | []  | 18  |                                     | How to Change Python Variable Values                                                        |            |
 | []  | 19  |                                     | Guide to Single Line, Inline and Multi Line Comments in Python                              |            |
