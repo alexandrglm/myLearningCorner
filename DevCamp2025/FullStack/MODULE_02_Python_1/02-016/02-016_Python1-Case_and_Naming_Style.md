@@ -1,20 +1,14 @@
 # MODULE 02 - 016:    Python - Case&Naming Styles
 
-
-
 ***
 
 Continuing with our journey on Python variables I want to discuss something that's very important and it may not seem like the biggest deal right now but the further you go along on your python development journey you're going to discover that there are a number of standard conventions that the industry uses.
 
-
-
 In this guide we will return to the two variables:
 
-1.  `name`
+1. `name`
 
 2. `post_count`
-
-
 
 Name is self-explanatory because it is only one word.   
 
@@ -70,7 +64,7 @@ There are several features including, but not limited to:
 
 * what type of indentation to use between tabs and spaces
 
-*  all sorts of rules.
+* all sorts of rules.
 
 Throughout this entire course and the advanced course, all concepts will be built on in each module according to PEP 8 or [PEP 8](https://www.python.org/dev/peps/pep-0008/#naming-conventions) standards.
 
@@ -116,7 +110,6 @@ I am going to rid of this variable, however, I also want to inform you of anothe
 
 Many other tutorials include variable names that would never be considered in the industry. 
 
-
 For example, if I wanted to add two variables together, I may name my 
 variables "X" and "Y".  
 
@@ -148,5 +141,3 @@ One of my favorite programmers is a gentleman named **DHH**, a creator of the Ru
 ## ## Resources
 
 - [PEP 8 Style Guide](https://www.python.org/dev/peps/pep-0008/#naming-conventions)
-
-

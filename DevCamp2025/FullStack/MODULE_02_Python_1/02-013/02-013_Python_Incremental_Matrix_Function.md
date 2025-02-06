@@ -77,8 +77,6 @@ print(manual_incrementing_matrix(5))
 
 ![IMG](./02-013_IMG0.png)
 
-
-
 ***
 
 In this coding exercise, we're going to walk through how we can build a 

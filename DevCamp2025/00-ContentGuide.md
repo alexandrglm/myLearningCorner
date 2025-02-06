@@ -115,8 +115,8 @@
 | [X] | 14  | Python Module intro                 | Section Introduction                                                                        | 2025/02/06 |
 | [X] | 15  | Python: Variables intro             | Introduction to Variables in Python                                                         | 2025/02/06 |
 | [X] | 16  | Python: Type Case & Naming styles, PEP8 | Python Best Practices for Variable Naming and Style                                     | 2025/02/06 |
-| []  | 17  |                                     | Overview of Python Data Types                                                               |            |
-| []  | 18  |                                     | How to Change Python Variable Values                                                        |            |
+| [X] | 17  | Python: Primitive Data Types (1)    | Overview of Python Data Types                                                               | 2025/02/06 |
+| [X] | 18  | Python: Refactoring var. values     | How to Change Python Variable Values                                                        | 2025/02/06 |
 | []  | 19  |                                     | Guide to Single Line, Inline and Multi Line Comments in Python                              |            |
 | []  | 20  |                                     | Monolithic vs Microservice Application Architectures                                        |            |
 | []  | 21  |                                     | Requirement Elicitation – A Guide for Feature Development                                   |            |

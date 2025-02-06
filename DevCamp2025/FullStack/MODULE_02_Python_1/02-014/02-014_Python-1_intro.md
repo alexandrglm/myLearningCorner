@@ -1,7 +1,5 @@
 # MODULE 02 - 014:    Python - Part 1 intro
 
-
-
 > Variables
 > 
 > Primitive Data types
@@ -22,8 +20,6 @@ In this first section, we're going to discuss one of the key fundamentals when i
 
 - > Variables
 
-
-
 If you are new coding, a variable may seem alien outside of statistics and mathematics.   
 
 However, variables are a major portion of building programs.  
@@ -31,7 +27,6 @@ However, variables are a major portion of building programs.
 For those unexposed to variables beforehand, let’s explore an example. Let’s say:
 
 *"I have a red solo cup with the name “$Jordan_water$. ” *  
-
 
 Because of its easy reference, I could ask for someone to bring me the “Jordan_water” cup, and they would know exactly which container of water  I was requesting.
 

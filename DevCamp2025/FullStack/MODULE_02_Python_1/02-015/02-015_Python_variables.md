@@ -1,10 +1,6 @@
 # MODULE 02 - 015:    Python - Variables
 
-
-
 Python is not a strong type language. Although it can be as an advantage, the weak type languages may introduce a lot of errors if one data type is parsed to another data type due to function malfunctions. Be careful with this.
-
-
 
 Python can be coded&interpreted in many different ways:
 
@@ -16,18 +12,12 @@ Python can be coded&interpreted in many different ways:
 
 Use what you feel more comfortable with.
 
-
-
-
-
 ***
 
 In this guide, we're going to walk through how we can utilize variables 
 inside a python.   
 
 Now if you're brand new to Python and even brand new to programming then the concept of variables may be a little bit foreign.  
-
-
 
 In this guide, two different types of variables and four different ways to run this program will be demonstrated (which will not be showcased in  every guide).   
 
@@ -48,8 +38,6 @@ It contains three components:
 2. the "=" sign
 
 3. What the variable should store. 
-
-
 
 For example, I've made a variable titled "name", the equal sign, followed by "Kristine"
 
@@ -91,8 +79,6 @@ Both the name and post count variables can be coded with straightforward simplic
 
 Now, in order to print these out we will utilize the print command, pass in name, and then do another print command that says post count.
 
-
-
 ```python
 print(name)
 print(post_count)
@@ -119,8 +105,6 @@ In Vim, **do not become distracted of the dotted lines, tildas, etc.** Details o
 All that truly matters is that we have the exact same program that we had in [repl.it](https://repl.it/).   
 
 One of the most important characteristics of **Python** is that it **can be run a number of different ways**.  
-
-
 
 By opening Python 3, I can look up my variables.   
 
@@ -151,7 +135,6 @@ name and print post count.
 
 One more example includes opening a repl here on in the terminal itself.  
 
-
  Here, I am able to say name is equal to Kristine and post count is equal to 42.  
 
 I will also receive the identical output if I say print name and print post count.
@@ -174,5 +157,4 @@ my personal choice.
 
 If you do not want to set anything up, then I recommend using a tool like [repl.it](https://repl.it/).
 
-  
  This is for simply understanding the basic concepts behind how to build Python programs. As you become more comfortable, you can adjust and build your local development environment to start constructing the programs out there.
