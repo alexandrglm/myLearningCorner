@@ -17,18 +17,15 @@ Create a function that generates a matrix (list of lists) of any size, with valu
 2. **Populate the matrix with auto-incrementing values**
    
    - Use nested loops and the `enumerate` function to iterate over the matrix and assign values.  
-     
-     
-   - The `enumerate` function provides both the index and value of each element, allowing us to track the position and increment values accordingly.
-     
-     ```python
-     counter = 0
-     for idx, el in enumerate(matrix):
-         for nested_idx, nested_el in enumerate(el):
-             matrix[idx][nested_idx] = counter + nested_idx
-         counter += 1
-     ```
-
+- The `enumerate` function provides both the index and value of each element, allowing us to track the position and increment values accordingly.
+  
+  ```python
+  counter = 0
+  for idx, el in enumerate(matrix):
+      for nested_idx, nested_el in enumerate(el):
+          matrix[idx][nested_idx] = counter + nested_idx
+      counter += 1
+  ```
 3. **Return the completed matrix**
 - After populating the matrix, return it as the result of the function.
   
@@ -58,8 +55,6 @@ Here's a visual representation of the matrix generation process:
 - The `counter` variable keeps track of the starting value for each row, ensuring that the values increment sequentially across the entire matrix.
 - The `nested_idx` variable represents the index of the element within the current row, allowing us to calculate the correct incremented value.
 
-
-
 ### Code
 
 ```python
@@ -80,9 +75,13 @@ def manual_incrementing_matrix(n):
 print(manual_incrementing_matrix(5))
 ```
 
+![IMG](./02-013_IMG0.png)
+
+
+
 ***
 
-`In this coding exercise, we're going to walk through how we can build a 
+In this coding exercise, we're going to walk through how we can build a 
 matrix manually and we're also going to see how we can build a matrix 
 that is prefilled with auto-incrementing values.  
 
