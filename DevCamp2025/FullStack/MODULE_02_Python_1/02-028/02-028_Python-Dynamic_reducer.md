@@ -1,4 +1,6 @@
-# MODULE 02 - 028: Python - Dynamic Reducer / operator() & reduce()
+# 
+
+MODULE 02 - 028: Python - Dynamic Reducer / operator() & reduce()
 
 This guided exercise introduces **functional programming** in Python using `operator` and `reduce()`
 
@@ -37,8 +39,6 @@ add_lambda = lambda x, y: x + y
 print(add(2, 3))        # Output: 5
 print(add_lambda(2, 3)) # Output: 5
 ```
-
-
 
 ### Use Case:
 
@@ -440,7 +440,6 @@ When working with lambda functions, arguments are passed directly after `lambda`
 
 ```python
 lambda x, y: x * y
-
 ```
 
 In our case, we use a dictionary lookup to dynamically select the operation:
@@ -453,10 +452,6 @@ This makes the function highly flexible.
 
 If anything in this explanation is unclear, reach out for clarification. We covered several important Python concepts, including **functional programming, dictionary lookups, and lambda functions**. Take the time to review until everything makes sense, then move on to the next challenge.
 
-
-
 ## Resources
 
 - [Exercise Source Code Solution](https://gist.github.com/jordanhudgens/77e69cea2b71300392f85b4a77ad7e4f)
-
-
