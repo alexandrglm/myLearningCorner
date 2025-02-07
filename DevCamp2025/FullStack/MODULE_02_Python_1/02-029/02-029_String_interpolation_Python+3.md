@@ -8,8 +8,6 @@ are going to go over string interpolation in Python.
 Now string interpolation is very big if you've never heard of it, it's a very scary
  word but it has a pretty basic goal and that is to give you the ability** to run python code inside of strings**.
 
-
-
 The reason why I'm so excited about these guides is because I think you're going to see a very practical pathway for this feature and how it can be used in real-world applications because it's pretty rare that the applications you're going to build are going to be static which means it's going to be rare that you're simply going to have hardcoded strings in your applications that don't change.   
 
 Instead, you may have some string contacts so you may have some elements that are hard coded and then you have other elements that are going to be dynamic they're going to change based on the user behavior and that's what string interpolation allows us to do.
@@ -21,7 +19,6 @@ Instead, you may have some string contacts so you may have some elements that ar
 Now I am using vim and the terminal in this guide and there are a few reasons for that.   
 
 One I want to illustrate that you can run this type of code in any kind of environment that can run Python 3 code you can still run all of these scripts inside of [repl.it](https://repl.it/).  
-
 
  You could do this simply in the regular Repl environment right in the terminal.  
 
@@ -70,11 +67,7 @@ So I'm a save and switch over now if you are following along for the first time 
 
 Then, if you remember back to the configuration guides the way you can process your python code is by typing in python and depending on how many versions you have and what your default version is on your system you may have to type Python 3 the way you can tell your version is just type the word python and hit return and it's going to show you right at the top what version of Python you're using:   
 
-
-
 ![large](./02-029_IMG1.png)
-
-
 
 If your version says Python 2.7 or lower version than anything that is 3.6 then this code that we're building will not work and you may have to type in Python 3 and then you'll see that you have the correct version set up if you do not.   
 
@@ -106,8 +99,6 @@ If I run this then you can see it says `hi 4`.
 
 ![large](./02-029_IMG4.png)
 
-
-
 So that's just an example of showing that anything inside of those curly brackets is going to be parsed and treated like a python script which is a very helpful little tool.   
 
 Now if I come back here I want to show you a few other examples and so one is you may have noticed that we have curly brackets right here.  
@@ -136,14 +127,9 @@ Your next thought maybe okay I'm going to use the backslash characters and when 
 
 This is the first thing I did when I wanted to test out how I could escape the curly brackets.   
 
-
 his was the very first thing I did.  
 
-
-
 ![large](./02-029_IMG6.png)
-
-
 
 I was wrong and I needed to look up the documentation because if you run this you'll see you get an error and it says there's a syntax err F String expression part cannot include a backslash which I thought was weird but there is I'm sure some reasons behind why the python developers decided to do that.   
 
@@ -218,7 +204,6 @@ And then you can customize it and then build your system and then it will simply
 
 Imagine that you've purchased a product on Amazon and you're sent a confirmation e-mail saying Hi thank you for purchasing these products.   
 
-
 They implemented this exact type of feature that is how these kinds of 
 systems are built. So I think that's really exciting.
 
@@ -250,5 +235,3 @@ print(email_content)
 
 > [f-strings](https://docs.python.org/3/whatsnew/3.6.html#pep-498-formatted-string-literals)  
 > Formatted string literals are prefixed with 'f' and are similar to the format strings accepted by str.format()
-
-

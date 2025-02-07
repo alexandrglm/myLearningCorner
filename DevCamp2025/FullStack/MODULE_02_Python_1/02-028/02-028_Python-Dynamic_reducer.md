@@ -1,6 +1,4 @@
-# 
-
-MODULE 02 - 028: Python - Dynamic Reducer / operator() & reduce()
+# MODULE 02 - 028: Python - Dynamic Reducer / operator() & reduce()
 
 This guided exercise introduces **functional programming** in Python using `operator` and `reduce()`
 
@@ -9,6 +7,44 @@ This guided exercise introduces **functional programming** in Python using `oper
 - `**reduce()**` applies an operation to an entire list, making it an elegant way to implement a reducer.
 
 It also introduces function expressions in Python using `lambda`functions:
+
+**The goal of this guide is to create  a more flexible reduce() function.**
+
+```python
+import operator
+from functools import reduce
+
+def dynamic_reducer(collection, op):
+    
+    operators = {
+        "+" : operator.add,
+        "-" : operator.sub,
+        "*" : operator.mul,
+        "/" : operator.truediv
+        # reduce(string : function)
+    }
+
+    # And, now, here is where we going to set the dynamic reducer callback
+    return reduce( (lambda total, element: operators[op] ( total, element ) ), collection )
+    # !!!! This from above is, and pay attention, the same as:
+    # if op == '+' : return reduce( (lambda total, element: total + element) )
+    # elif op == '-' : return reduce( (lambda total, element: total + element) )
+    # elif op == '*' : return reduce( (lambda total, element: total + element) )
+    # else op == '/' : return reduce( (lambda total, element: total + element) )
+
+print(dynamic_reducer( [1, 2, 3], '+' ))
+print(dynamic_reducer( [1, 2, 3], '-' ))
+print(dynamic_reducer( [1, 2, 3], '*' ))
+print(dynamic_reducer( [1, 2, 3], '/' ))
+```
+
+
+
+# Exercise solution
+
+```python
+
+```
 
 ***
 
