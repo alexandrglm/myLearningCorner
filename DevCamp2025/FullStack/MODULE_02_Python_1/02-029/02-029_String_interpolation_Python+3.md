@@ -1,4 +1,4 @@
-# MODULE 02 - 029: String interpolation in Python <=3
+# MODULE 02 - 029: String interpolation in Python <=3 / `f " "` method.
 
 ***
 
