@@ -43,8 +43,6 @@ And like I mentioned you could put this in some type of Addition value variable 
 
 I'm simply doing that so it will appear here on the right-hand side and I'm going to reverse this just to make it easy to reference in your show notes. So that is Addition.
 
-
-
 ## Substraction
 
 Now subtraction is going to be very similar to this.   
@@ -139,8 +137,6 @@ The way this one works is it uses an asterix so `100*38=3800`.
 
 And this next one might look a little bit tricky.   
 
-
-
 ## Modulus (Odd or  Even)
 
 > How many times the Energizer can be entirely divided by the exponent?
@@ -183,8 +179,6 @@ But if you are checking to see if an item is even or odd using this modulus oper
  That's the typical use case for using modulus.   
 
 Now obviously you can use any other time you want a remainder but that is a very common practice.
-
-
 
 ## Exponents ( ^ )
 
