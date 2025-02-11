@@ -1,6 +1,125 @@
-# MODULE 02 - 029: String interpolation in Python <=3 / `f " "` method.
+## MODULE 02 - 029: String Interpolation in Python (<=3) - `f""` Method
+
+## **Understanding String Interpolation in Python**
+
+String interpolation allows us to **execute Python code inside strings** dynamically. This is a powerful feature for building **dynamic applications**, where strings can include both **hardcoded** and **variable elements**.
+
+### **Why is String Interpolation Important?**
+
+- It eliminates manual string concatenation.
+- It improves code readability and maintainability.
+- It allows dynamic content generation (e.g., email templates, reports, logs).
+
+✅ **Best Practice:** Always use **formatted string literals (`f""`)** when working with dynamic strings.
+
+---
+
+## **1️⃣ Basic String Interpolation with `f""`**
+
+The **formatted string literal** (also known as an **f-string**) is prefixed with an `f` or `F`. Inside the string, expressions can be enclosed in curly braces `{}`.
+
+### **Example Usage:**
+
+```python
+name = 'Kristine'
+greeting = f'Hi {name}'
+print(greeting)  # Output: 'Hi Kristine'
+```
+
+✅ **Key Benefits:**
+
+- Variables can be embedded directly into strings.
+- No need for cumbersome `+` concatenation.
+
+---
+
+## **2️⃣ Running Python Code Inside an f-string**
+
+F-strings can evaluate **any Python expression** inside the `{}`.
+
+```python
+math_result = f'2 + 2 = {2 + 2}'
+print(math_result)  # Output: '2 + 2 = 4'
+```
+
+✅ **Best Practice:** Use f-strings to embed dynamic expressions inside strings instead of constructing them manually.
+
+---
+
+## **3️⃣ Escaping Curly Braces in f-strings**
+
+Since curly braces `{}` are used for expressions, to **print** them literally, use **double curly braces**:
+
+```python
+brackets_text = f'This is how you show {{brackets}} in f-strings.'
+print(brackets_text)
+```
+
+✅ **Best Practice:** Use `{{` and `}}` to avoid syntax errors when displaying curly braces.
+
+---
+
+## **4️⃣ Multiline Strings and Heredocs with f-strings**
+
+F-strings work with **multiline strings** (also known as **heredocs**) for creating formatted text blocks.
+
+### **Example: Email Template with f-string**
+
+```python
+name = 'Kristine'
+product = 'Python e-learning course'
+
+email_content = f"""
+Hi {name},
+Thank you for purchasing {product}.
+Regards,
+Sales Team
+"""
+
+print(email_content)
+```
+
+✅ **Use Case:** Dynamic content generation for emails, reports, and notifications.
+
+---
+
+## **5️⃣ Handling Different Python Versions**
+
+F-strings were introduced in **Python 3.6**. If you're using an older version, you should **upgrade your Python version** or use **`str.format()`** as an alternative.
+
+```python
+name = 'Kristine'
+print('Hi {}'.format(name))
+```
+
+🚨 **Warning:** Older environments may not support f-strings. Check your Python version using:
+
+```sh
+python --version
+```
+
+---
+
+## **🔍 Summary: Key Takeaways**
+
+| Feature                   | Benefit                                                    |
+| ------------------------- | ---------------------------------------------------------- |
+| **f-strings (`f""`)**     | Clean, readable syntax for embedding variables in strings. |
+| **Expression Evaluation** | Supports inline calculations inside `{}`.                  |
+| **Curly Brace Escaping**  | Use `{{` and `}}` to display `{}` literally.               |
+| **Heredoc Support**       | Useful for generating formatted multiline strings.         |
+
+---
+
+## **📌 Python Documentation Reference**
+
+🔗 **[Python 3.6 - f-strings](https://docs.python.org/3/whatsnew/3.6.html#pep-498-formatted-string-literals)**
+
+> Formatted string literals allow embedded Python expressions inside `{}`.
 
 ***
+
+## Video lesson speech
 
 I'm very excited about the next few guides because these next few guides 
 are going to go over string interpolation in Python.   

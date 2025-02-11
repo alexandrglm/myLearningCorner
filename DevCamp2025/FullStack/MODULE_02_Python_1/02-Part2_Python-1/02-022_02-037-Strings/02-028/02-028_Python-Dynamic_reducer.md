@@ -1,4 +1,4 @@
-# MODULE 02 - 028: Python - Dynamic Reducer / operator() & reduce()
+## MODULE 02 - 028: Python - Dynamic Reducer using `operator` & `reduce`
 
 This guided exercise introduces **functional programming** in Python using `operator` and `reduce()`
 
@@ -8,43 +8,173 @@ This guided exercise introduces **functional programming** in Python using `oper
 
 It also introduces function expressions in Python using `lambda`functions:
 
-**The goal of this guide is to create  a more flexible reduce() function.**
+**The goal of this guide is to create a more flexible reduce() function.**
+
+---
+
+## **Understanding the Dynamic Reducer**
+
+In this guide, we will build a **dynamic reducer** using Python's `operator` and `reduce()`. If you haven't worked with reducers before, this will be a great opportunity to learn about them while reinforcing your knowledge of functional programming.
+
+A **reducer** takes a collection of values and a mathematical operation, then applies that operation across all elements in the collection.
+
+✅ **Key Concepts Covered:**
+
+- Python’s `operator` module.
+- Using `reduce()` from `functools`.
+- Lambda functions.
+- Function lookups using dictionaries.
+
+---
+
+## **1️⃣ How Does the Dynamic Reducer Work?**
+
+The `dynamic_reducer()` function:
+
+- Takes in **a list of numbers**.
+- Accepts an **operator as a string** (e.g., `"+", "-", "*", "/"`).
+- Performs the specified operation on the list using `reduce()`.
+
+### **Example Usage:**
 
 ```python
-import operator
 from functools import reduce
+import operator
 
 def dynamic_reducer(collection, op):
-    
     operators = {
-        "+" : operator.add,
-        "-" : operator.sub,
-        "*" : operator.mul,
-        "/" : operator.truediv
-        # reduce(string : function)
+        "+": operator.add,
+        "-": operator.sub,
+        "*": operator.mul,
+        "/": operator.truediv
     }
+    return reduce((lambda total, element: operators[op](total, element)), collection)
 
-    # And, now, here is where we going to set the dynamic reducer callback
-    return reduce( (lambda total, element: operators[op] ( total, element ) ), collection )
-    # !!!! This from above is, and pay attention, the same as:
-    # if op == '+' : return reduce( (lambda total, element: total + element) )
-    # elif op == '-' : return reduce( (lambda total, element: total + element) )
-    # elif op == '*' : return reduce( (lambda total, element: total + element) )
-    # else op == '/' : return reduce( (lambda total, element: total + element) )
-
-print(dynamic_reducer( [1, 2, 3], '+' ))
-print(dynamic_reducer( [1, 2, 3], '-' ))
-print(dynamic_reducer( [1, 2, 3], '*' ))
-print(dynamic_reducer( [1, 2, 3], '/' ))
+# Test cases
+print(dynamic_reducer([1, 2, 3], "+"))  # Output: 6
+print(dynamic_reducer([1, 2, 3], "-"))  # Output: -4
+print(dynamic_reducer([1, 2, 3], "*"))  # Output: 6
+print(dynamic_reducer([1, 2, 3], "/"))  # Output: 0.1666...
 ```
 
+✅ **Best Practice:** Use dictionaries to map string operators to Python functions, ensuring flexibility and clean code.
 
+---
 
-# Exercise solution
+## **2️⃣ Breaking Down the Solution**
+
+### **Creating an Operator Lookup Table**
+
+We use a dictionary to map operator strings (`"+", "-", "*", "/"`) to their corresponding functions:
 
 ```python
-
+operators = {
+    "+": operator.add,
+    "-": operator.sub,
+    "*": operator.mul,
+    "/": operator.truediv
+}
 ```
+
+### **Using `reduce()` to Apply Operations**
+
+The `reduce()` function applies an operation to all elements in a list, accumulating results.
+
+```python
+reduce(lambda total, element: operators[op](total, element), collection)
+```
+
+This line dynamically calls the correct operator function using:
+
+```python
+operators[op](total, element)
+```
+
+✅ **Why Use `reduce()`?**
+
+- Simplifies looping through collections.
+- Eliminates the need for manual accumulation.
+- Works well with functional programming.
+
+🚨 **Note:** If you prefer a manual approach, you can iterate using a loop:
+
+```python
+total = collection[0]
+for num in collection[1:]:
+    total = operators[op](total, num)
+print(total)
+```
+
+---
+
+## **3️⃣ Understanding Lambda Functions in `reduce()`**
+
+The lambda function inside `reduce()`:
+
+```python
+lambda total, element: operators[op](total, element)
+```
+
+- `total`: The accumulated result.
+- `element`: The current list item.
+- `operators[op](total, element)`: Dynamically applies the correct operation.
+
+For example, given `[1, 2, 3]` and `op = "+"`, `reduce()` will perform:
+
+1. `1 + 2 = 3`
+2. `3 + 3 = 6`
+
+✅ **Best Practice:** Use lambda functions when passing operations dynamically.
+
+---
+
+## **4️⃣ Handling Edge Cases**
+
+1. **Empty List Handling**
+   
+   ```python
+   if not collection:
+      return 0  # Default value for an empty list
+   ```
+
+2. **Invalid Operator Handling**
+   
+   ```python
+   if op not in operators:
+      raise ValueError("Invalid operator")
+   ```
+
+3. **Division by Zero**
+   
+   ```python
+   if op == "/" and 0 in collection[1:]:
+      raise ZeroDivisionError("Cannot divide by zero")
+   ```
+
+✅ **Best Practice:** Always include error handling to prevent crashes.
+
+---
+
+## **🔍 Summary: Key Takeaways**
+
+| Concept              | Explanation                                                |
+| -------------------- | ---------------------------------------------------------- |
+| **`reduce()`**       | Applies an operation across all elements in a list.        |
+| **Operator Lookup**  | A dictionary maps symbols (`"+", "-"`, etc.) to functions. |
+| **Lambda Functions** | Used inside `reduce()` to dynamically apply operations.    |
+| **Error Handling**   | Ensures safe execution (e.g., avoids division by zero).    |
+
+---
+
+## **📌 Python Documentation Reference**
+
+🔗 **[functools.reduce()](https://docs.python.org/3/library/functools.html#functools.reduce)**
+
+> Reduce a list to a single value using a function.
+
+🔗 **[operator module](https://docs.python.org/3/library/operator.html)**
+
+> Provides standard operator functions like `add`, `sub`, `mul`, and `truediv`.
 
 ***
 
