@@ -1,4 +1,115 @@
-# MODULE 02 - 040: Python - Overview of Numbers.
+## MODULE 02 - 040: Python - Overview of Numbers
+
+---
+
+## **Understanding How Python Works with Numbers**
+
+Python provides powerful tools for handling numbers, making it an essential skill for **performing calculations, implementing machine learning algorithms, and building dynamic programs**.
+
+Python automatically assigns number types without explicit declaration, which differs from languages like Java or C++. This flexibility allows developers to focus on logic rather than type management.
+
+✅ **Best Practice:** Use the appropriate number type for your calculations to ensure precision and avoid unexpected behavior.
+
+---
+
+## **1️⃣ Python's Main Number Types**
+
+Python supports multiple numeric types. Let's explore them:
+
+### **1. Integers (`int`)**
+
+An **integer** is a whole number without decimals or fractions.
+
+```python
+product_id = 123  # Integer
+new_product = 150  # Another integer
+```
+
+📌 **Use Case:** Counting items, indexing, and working with discrete values.
+
+---
+
+### **2. Floating-Point Numbers (`float`)**
+
+A **float** is a number with a decimal point.
+
+```python
+sale_price = 14.99  # Float
+```
+
+🚨 **Warning:** Floats **aren't as precise** as decimals, making them unsuitable for high-precision applications (e.g., scientific computing, financial calculations).
+
+📌 **Use Case:** Prices, measurements, and percentages.
+
+---
+
+### **3. Fractions (`Fraction`)**
+
+Python provides support for **fractions** via the `fractions` module.
+
+```python
+from fractions import Fraction
+tip_percentage = Fraction(1, 5)  # 1/5 or 0.2
+print(float(tip_percentage))  # Output: 0.2
+```
+
+📌 **Use Case:** When you need exact fractional calculations (e.g., ratios, probability calculations).
+
+---
+
+## **2️⃣ How Python Dynamically Converts Number Types**
+
+Python can **automatically convert** between numeric types based on operations:
+
+```python
+result = sale_price + new_product
+print(result)  # Output: 164.99
+```
+
+### **Conversion Rules:**
+
+- **Integer + Integer** → Integer
+- **Integer + Float** → Float
+- **Fraction + Integer** → Float (unless explicitly kept as `Fraction`)
+
+📌 **Use Case:** Simplifies calculations by dynamically adjusting number types.
+
+---
+
+## **3️⃣ Example: Performing Operations with Different Number Types**
+
+```python
+product_id = 123
+sale_price = 14.99
+tip_percentage = 1/5
+new_product = 150
+
+print(sale_price + new_product)  # Output: 164.99 (Float result)
+```
+
+✅ **Best Practice:** Python handles type conversions automatically, but be mindful of precision issues when using floats.
+
+---
+
+## **🔍 Summary: Key Takeaways**
+
+| Number Type               | Example | Use Case                                   |
+| ------------------------- | ------- | ------------------------------------------ |
+| **Integer (`int`)**       | `123`   | Whole numbers, counters, indexing          |
+| **Float (`float`)**       | `14.99` | Prices, percentages, general calculations  |
+| **Fraction (`Fraction`)** | `1/5`   | Exact values for mathematical computations |
+
+---
+
+## **📌 Python Documentation Reference**
+
+🔗 **[Python Numeric Types](https://docs.python.org/3/library/stdtypes.html#numeric-types-int-float-complex)**
+
+> Covers integers, floating-point numbers, and complex numbers.
+
+🔗 **[fractions module](https://docs.python.org/3/library/fractions.html)**
+
+> Provides exact fractional arithmetic in Python.
 
 ***
 

@@ -1,4 +1,118 @@
-# Module 02 - 041: Python - Mathematical operators
+## MODULE 02 - 041: Python - Mathematical Operators
+
+## ## **Understanding Mathematical Operators in Python**
+
+Now that you are familiar with Python’s numeric data types, let's explore the **mathematical operators** available in Python. These operators allow us to perform calculations efficiently.
+
+✅ **Best Practice:** Understanding these operators is essential for working with numbers in Python, whether for basic calculations or complex algorithms.
+
+---
+
+## **1️⃣ Basic Arithmetic Operators**
+
+| Operator | Description         | Example     | Output    |
+| -------- | ------------------- | ----------- | --------- |
+| `+`      | Addition            | `100 + 42`  | `142`     |
+| `-`      | Subtraction         | `100 - 42`  | `58`      |
+| `/`      | Division            | `100 / 42`  | `2.38...` |
+| `//`     | Floor Division      | `100 // 42` | `2`       |
+| `*`      | Multiplication      | `100 * 42`  | `4200`    |
+| `%`      | Modulus (Remainder) | `100 % 42`  | `16`      |
+| `**`     | Exponentiation      | `5 ** 2`    | `25`      |
+
+✅ **Best Practice:** Use `//` when you need **only the integer quotient** (e.g., `9 // 2 = 4`).
+
+---
+
+## **2️⃣ Exploring Each Operator with Examples**
+
+### **Addition (`+`):**
+
+```python
+print(100 + 42)  # Output: 142
+```
+
+### **Subtraction (`-`):**
+
+```python
+print(100 - 42)  # Output: 58
+```
+
+### **Division (`/`):**
+
+```python
+print(100 / 42)  # Output: 2.38...
+```
+
+🚨 **Warning:** Division always returns a float, even if both numbers are integers.
+
+---
+
+### **Floor Division (`//`):**
+
+✅ **Rounding Down to the Nearest Integer**
+
+```python
+print(100 // 42)  # Output: 2
+```
+
+🚨 **Warning:** Unlike regular division, **floor division rounds down** to the nearest whole number.
+
+---
+
+### **Multiplication (`*`):**
+
+```python
+print(100 * 42)  # Output: 4200
+```
+
+---
+
+### **Modulus (`%`):**
+
+✅ **Checking if a Number is Even or Odd**
+
+```python
+print(4 % 2)  # Output: 0 (Even)
+print(5 % 2)  # Output: 1 (Odd)
+```
+
+📌 **Use Case:** Modulus is useful for finding remainders and checking for even/odd numbers.
+
+---
+
+### **Exponentiation (`**`):**
+
+✅ **Calculating Powers**
+
+```python
+print(5 ** 2)  # Output: 25
+print(11 ** 2)  # Output: 121
+```
+
+📌 **Use Case:** Used for squaring, cubing, and other exponential operations.
+
+---
+
+## **🔍 Summary: Key Takeaways**
+
+| Operator | Function                        |
+| -------- | ------------------------------- |
+| `+`      | Addition                        |
+| `-`      | Subtraction                     |
+| `/`      | Division (returns float)        |
+| `//`     | Floor Division (integer result) |
+| `*`      | Multiplication                  |
+| `%`      | Modulus (remainder)             |
+| `**`     | Exponentiation                  |
+
+---
+
+## **📌 Python Documentation Reference**
+
+🔗 **[Python Arithmetic Operators](https://docs.python.org/3/library/operator.html#mapping-operators-to-functions)**
+
+> Covers arithmetic operations and their behavior.
 
 ***
 

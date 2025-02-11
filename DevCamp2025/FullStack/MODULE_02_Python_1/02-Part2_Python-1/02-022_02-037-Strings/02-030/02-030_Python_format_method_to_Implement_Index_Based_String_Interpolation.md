@@ -1,7 +1,5 @@
 ## MODULE 02 - 030: Python Index-Based String Interpolation (`.format()` Method)
 
-
-
 ## **Understanding the `.format()` Method in Python**
 
 String interpolation allows dynamic insertion of values into strings. While **f-strings (`f""`)** are the modern approach, the **`.format()` method** was widely used in Python before version 3.6.
@@ -112,8 +110,6 @@ print(greeting)
 🔗 **[str.format()](https://docs.python.org/3/library/stdtypes.html#str.format)**
 
 > Perform string formatting by replacing `{}` placeholders with values.
-
-
 
 ***
 
