@@ -95,7 +95,7 @@
 
 # MODULE 2
 
-## PYTHON (i)
+## Branding // Python (1)
 
 |     | #   | Type                                                                                                  | Tittle                                                                                      | Date       |
 | --- | --- | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- | ---------- |
@@ -142,7 +142,7 @@
 | [X] | 41  | Python: Math operators                                                                                | Mathematical Operators in Python                                                            | 2025/02/11 |
 | [X] | 42  | Python: PEMDAS                                                                                        | Guide to the Order of Operations in Python                                                  | 2025/02/11 |
 | [X] | 43  | Python: Assignment Operators (+= -= ...)                                                              | How to Use Assignment Operators in Python                                                   | 2025/02/11 |
-| []  | 44  |                                                                                                       | Decimal vs Float in Python                                                                  |            |
+| [X] | 44  | Python: Decimals & Floats                                                                             | Decimal vs Float in Python                                                                  | 2025/02/11 |
 | []  | 45  |                                                                                                       | How to Convert Between the Integer, Float, Decimal and Complex Numeric Data Types in Python |            |
 | []  | 46  |                                                                                                       | Overview of Popular Math Functions in Python                                                |            |
 | []  | 47  |                                                                                                       | Build a Manual Exponent Function in Python                                                  |            |
