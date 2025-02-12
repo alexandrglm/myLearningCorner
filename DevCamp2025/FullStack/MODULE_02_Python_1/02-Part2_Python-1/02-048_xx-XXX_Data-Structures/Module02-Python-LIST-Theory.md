@@ -1,10 +1,10 @@
-# MODULE 02 - Python
+# **MODULE 02 - Python, Data Structures:**
 
-## LISTs - Theory
+## LIST's Theory
 
 ****
 
-**📌 Introduction to Lists in Python**
+## **📌 Introduction to Lists in Python**
 
 A **list** in Python is an **ordered, mutable collection** that can store multiple data types. Lists allow **modifications**, meaning we can add, remove, and modify elements dynamically.
 
@@ -14,6 +14,8 @@ A **list** in Python is an **ordered, mutable collection** that can store multip
 ✔ **Mutable** – Lists can be changed after creation.  
 ✔ **Heterogeneous** – Can store different data types (integers, strings, floats, etc.).  
 ✔ **Indexed** – Elements can be accessed via index values.
+
+📌 **Python Documentation:** [Lists](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists)
 
 ---
 
@@ -34,6 +36,8 @@ mixed_list = ["Python", 3.14, True, 42]
 print(numbers)  # Output: [1, 2, 3, 4, 5]
 ```
 
+📌 **Python Documentation:** [List Literals](https://docs.python.org/3/tutorial/introduction.html#lists)
+
 ---
 
 ## **🎯 Accessing Elements**
@@ -49,6 +53,8 @@ print(languages[-1])  # Output: C++ (Negative indexing: last element)
 
 ✔ **Negative indices** allow access from the end of the list (`-1` is the last element, `-2` the second-last, etc.).
 
+📌 **Python Documentation:** [Indexing](https://docs.python.org/3/tutorial/datastructures.html#accessing-elements)
+
 ---
 
 ## **✏️ Modifying Lists**
@@ -60,6 +66,8 @@ fruits = ["Apple", "Banana", "Cherry"]
 fruits[1] = "Blueberry"  # Modifying an element
 print(fruits)  # Output: ['Apple', 'Blueberry', 'Cherry']
 ```
+
+📌 **Python Documentation:** [Mutable Sequences](https://docs.python.org/3/tutorial/datastructures.html#mutable-sequence-types)
 
 ---
 
@@ -83,6 +91,8 @@ fruits.extend(["Mango", "Grapes"])
 print(fruits)  # ['Apple', 'Blueberry', 'Banana', 'Cherry', 'Mango', 'Grapes']
 ```
 
+📌 **Python Documentation:** [list.append()](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists), [list.insert()](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists), [list.extend()](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists)
+
 ---
 
 ## **🗑️ Removing Elements**
@@ -105,6 +115,8 @@ numbers.clear()
 print(numbers)  # []
 ```
 
+📌 **Python Documentation:** [list.remove()](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists), [list.pop()](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists), [list.clear()](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists)
+
 ---
 
 ## **📊 Common List Methods**
@@ -122,19 +134,7 @@ print(numbers)  # []
 | `reverse()`    | Reverses the list                  |
 | `copy()`       | Returns a copy of the list         |
 
----
-
-## **🎯 List Slicing**
-
-Slicing allows extracting sublists.
-
-```python
-nums = [10, 20, 30, 40, 50, 60]
-print(nums[1:4])   # [20, 30, 40]
-print(nums[:3])    # [10, 20, 30] (from start)
-print(nums[3:])    # [40, 50, 60] (to end)
-print(nums[::2])   # [10, 30, 50] (every second element)
-```
+📌 **Python Documentation:** [List Methods](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists)
 
 ---
 
@@ -156,20 +156,7 @@ for index, color in enumerate(colors):
     print(f"Index {index}: {color}")
 ```
 
----
-
-## **📌 List Comprehension (Advanced)**
-
-List comprehensions offer a concise way to create lists.
-
-```python
-squares = [x**2 for x in range(1, 6)]
-print(squares)  # [1, 4, 9, 16, 25]
-
-# Filtering
-evens = [x for x in range(10) if x % 2 == 0]
-print(evens)  # [0, 2, 4, 6, 8]
-```
+📌 **Python Documentation:** [Looping Techniques](https://docs.python.org/3/tutorial/datastructures.html#looping-techniques)
 
 ---
 
@@ -178,4 +165,8 @@ print(evens)  # [0, 2, 4, 6, 8]
 ✔ **Lists store multiple items in an ordered, mutable structure.**  
 ✔ **They support indexing, slicing, and iteration.**  
 ✔ **Common operations include adding, modifying, and removing elements.**  
-✔ **List comprehensions provide an efficient way to create lists.
+✔ **List comprehensions provide an efficient way to create lists.**
+
+📌 **Python Documentation:** [Python Lists](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists)
+
+Mastering lists is essential in Python, as they are one of the most widely used data structures! 🚀🔥

@@ -1,4 +1,100 @@
-# MODULE 02 - 050: Python - LISTs, Removing Elements. / .remove() - .pop() - ' del' - .clear()
+# **MODULE 02 - 050: Python - Removing Elements from Lists**
+
+---
+
+## **📌 Overview**
+
+Python provides multiple ways to remove elements from a list. Each method serves a distinct purpose:
+
+✔ `.remove(value)`: Removes the first occurrence of a specified value.
+✔ `.pop()`: Removes and **returns** the last element (or at a given index).
+✔ `del list[index]`: Deletes an element at a specific index.
+✔ `.clear()`: Removes all elements, leaving an empty list.
+
+---
+
+## **🔹 Removing by Value: `.remove()`**
+
+If you know the **value** you want to remove, `.remove()` is the best choice.
+
+```python
+users = ['Kristine', 'Tiffany', 'Jordan', 'Leann']
+users.remove('Jordan')
+print(users)  # ['Kristine', 'Tiffany', 'Leann']
+```
+
+✅ **Use Case:** When you need to remove a known element without worrying about indexes.
+
+📌 **Python Documentation:** [list.remove()](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists)
+
+---
+
+## **🔹 Removing & Using an Element: `.pop()`**
+
+`.pop()` removes **and returns** an element. If no index is provided, it removes the last element.
+
+```python
+users = ['Kristine', 'Tiffany', 'Leann']
+popped_user = users.pop()
+print(popped_user)  # 'Leann' (the removed user)
+print(users)  # ['Kristine', 'Tiffany']
+```
+
+✅ **Use Case:** When you need to remove an element **and use it later**.
+
+📌 **Python Documentation:** [list.pop()](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists)
+
+---
+
+## **🔹 Removing by Index: `del list[index]`**
+
+If you know the **index** of the element to remove, use `del`.
+
+```python
+users = ['Kristine', 'Tiffany']
+del users[0]  # Removes 'Kristine'
+print(users)  # ['Tiffany']
+```
+
+✅ **Use Case:** When you have an **index-based** removal operation.
+
+📌 **Python Documentation:** [del statement](https://docs.python.org/3/reference/simple_stmts.html#the-del-statement)
+
+---
+
+## **🔹 Removing All Elements: `.clear()`**
+
+If you need to **wipe the entire list**, use `.clear()`.
+
+```python
+users = ['a', 'b', 'c', 'd']
+users.clear()
+print(users)  # [] (empty list)
+```
+
+✅ **Use Case:** When you want to **reset a list** without deleting the variable.
+
+📌 **Python Documentation:** [list.clear()](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists)
+
+---
+
+## **📊 Summary Table**
+
+| Method        | Purpose                                     | Returns Removed Element? |
+| ------------- | ------------------------------------------- | ------------------------ |
+| `.remove(x)`  | Removes first occurrence of `x`             | ❌ No                     |
+| `.pop(i)`     | Removes element at index `i` (default last) | ✅ Yes                    |
+| `del list[i]` | Deletes element at index `i`                | ❌ No                     |
+| `.clear()`    | Removes all elements                        | ❌ No                     |
+
+---
+
+## **🚀 Key Takeaways**
+
+✔ Use `.remove()` when you **know the value** to delete.  
+✔ Use `.pop()` when you **need the removed element**.  
+✔ Use `del` when working with **index-based removal**.  
+✔ Use `.clear()` to **reset a list completely**.
 
 ***
 
