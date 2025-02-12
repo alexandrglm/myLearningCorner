@@ -1,6 +1,4 @@
-# MODULE 02 - 049: Python - Lists
-
-
+## **MODULE 02 - 049: Python - Lists (1)
 
 ****
 
@@ -63,8 +61,6 @@ So, now that we have that I can say print users and, if I run it,  you're going 
 Now that doesn't seem like a very big deal because it almost kind of looks like it just printed out exactly what we typed in and it did.   
 
 However, **this is now no longer just a set of strings what we have here is actually a true data structure we have a list of these string names** which would be like what we'd get if we queried a database with users.
-
-
 
 ## .insert(index, data)
 
@@ -131,8 +127,6 @@ This is a very easy way of doing it.
 
 I **typically find myself using append the most because usually when I'm working with a list I usually am wanting to simply add an 
 element to the very end of it**. So **that's a very common process**.
-
-
 
 ## Querying elements with [index]
 
@@ -208,7 +202,6 @@ So, we are not changing the string Ian to Brayden and the same rules still apply
 
 **All we're doing is we're reassigning the element with an index four 
 to this string object and so that is an important thing to keep in mind.**
-
 
  I don't want you to think that you're going to work with strings one way when you're working with them by themselves in a different way when they're inside of a collection.   
 

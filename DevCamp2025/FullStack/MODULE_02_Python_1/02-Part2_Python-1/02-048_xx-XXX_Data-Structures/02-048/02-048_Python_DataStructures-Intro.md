@@ -5,8 +5,6 @@ So far in this course, we've discussed a few different data types.
 We've discussed strings and numbers and both of those data types are 
 relatively straightforward because there is a one to one kind of analogy between numbers and strings with what you use on a day in and day out basis.
 
-
-
 You use numbers when you count, you use strings when you're using letters and paragraphs and sentences.   
 
 This next section might be a little bit more abstract because we're going to talk about **collections.  **
@@ -20,9 +18,6 @@ And so in this section, we're going to talk about **three different data types**
 * Dictionaries
 
 * Tuples
-  
-   
-  
 
 If you've never heard of those data types do not worry, I want to take a few steps back and look at some real-world analogies between these types of collections.  
 
@@ -31,8 +26,6 @@ If you've never heard of those data types do not worry, I want to take a few ste
 Pretty much **every kind of program you're ever going to use in Python is going to use one of these collection-based data types**.   
 
 And so **it's very important to get a low-level understanding** and then you can use that and take it and use more advanced kind of concepts once you understand it.
-
-
 
 ## Lists
 
@@ -60,8 +53,6 @@ possible**.
 And we're going to walk through all of that in the guides dedicated just to lists and we're going to walk through all kinds of functions you can use on them.   
 
 But right now I want to give you just a very high-level idea of what they are it's a **collection of data** and it is simply like it says **it's a list of items**.
-
-
 
 ## Dictionaries
 
