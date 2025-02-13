@@ -174,11 +174,9 @@ So, it is removing the element but it's giving it to us in a way that we can use
 So let's see what this looks like so I'm going to say print and popped user just like 
 this.   
 
-And then let's also see what the users list looks like now. So if I
- run this you can see that we get our last element this string of Leann 
-and if we look at what the users list looks like now it only has two 
-elements so we started with four we removed one then we popped one but 
-we were able to use that element and then now we're left with two.
+And then let's also see what the users list looks like now.   
+
+So, if I run this you can see that we get our last element this string of Leann and if we look at what the users list looks like now it only has two elements so we started with four we removed one then we popped one but we were able to use that element and then now we're left with two.
 
 ![large](02-050_IMG3.png)
 
@@ -219,7 +217,7 @@ We should only have a single element in the list of Tiffany.
 
 # .clear()
 
-This is not included in the original guide but let's wipe the list:
+This is not included in the original guide but let's wipe the entire list:
 
 ![IMG](02-050_IMG_CLEAR.png)
 

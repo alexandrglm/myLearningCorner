@@ -1,6 +1,103 @@
-# MODULE 02 - 053: Python - Sorting Lists / `sort()`
+## **MODULE 02 - 053: Python - Sorting Lists / `sort()`**
 
+## **📌 Introduction to Sorting Lists in Python**
 
+Sorting lists is a fundamental operation in Python, frequently used when working with collections of data. The `sort()` method allows you to rearrange list elements **alphabetically** or **numerically**.
+
+### **🔹 Key Sorting Methods**
+
+✔ `sort()` – Sorts elements in **ascending order** (A-Z or smallest to largest).  
+✔ `sort(reverse=True)` – Sorts elements in **descending order** (Z-A or largest to smallest).  
+✔ Works with **both strings and numbers** dynamically.
+
+📌 **Python Documentation:** [Sorting Lists](https://docs.python.org/3/howto/sorting.html#sorting-how-to)
+
+---
+
+## **📝 Basic Sorting with `sort()`**
+
+The `sort()` method modifies the list **in-place**, meaning it updates the original list.
+
+```python
+# Example List
+tags = ['Python', 'Development', 'Tutorials', 'Code']
+print(tags)  # ['Python', 'Development', 'Tutorials', 'Code']
+
+# Sort alphabetically
+tags.sort()
+print(tags)  # ['Code', 'Development', 'Python', 'Tutorials']
+```
+
+✔ The method **mutates** the list permanently.  
+✔ Default sorting is **alphabetical** for strings.
+
+📌 **Python Documentation:** [list.sort()](https://docs.python.org/3/library/stdtypes.html#list.sort)
+
+---
+
+## **🔄 Sorting in Reverse Order**
+
+To sort in **descending** order, pass `reverse=True`.
+
+```python
+# Reverse alphabetical sorting
+tags.sort(reverse=True)
+print(tags)  # ['Tutorials', 'Python', 'Development', 'Code']
+```
+
+✔ Flips the order **from Z to A**.  
+✔ Works similarly for **numerical lists**.
+
+📌 **Python Documentation:** [Reversed Sorting](https://docs.python.org/3/howto/sorting.html#ascending-and-descending)
+
+---
+
+## **🔢 Sorting Numbers**
+
+Sorting works similarly for **integer lists**, sorting them from smallest to largest.
+
+```python
+# List of numbers
+totals = [234, 1, 534, 2345]
+print(totals)  # [234, 1, 534, 2345]
+
+# Sort in ascending order
+totals.sort()
+print(totals)  # [1, 234, 534, 2345]
+```
+
+✔ Numbers are sorted **by value**, not by character representation.  
+✔ Sorting is **efficient** (Timsort algorithm, O(n log n)).
+
+📌 **Python Documentation:** [Sorting Algorithms](https://docs.python.org/3/library/functions.html#sorted)
+
+---
+
+## **🔁 Sorting Numbers in Descending Order**
+
+The `reverse=True` argument also works with numerical values.
+
+```python
+# Sort in descending order
+totals.sort(reverse=True)
+print(totals)  # [2345, 534, 234, 1]
+```
+
+✔ Sorts numbers **from largest to smallest**.  
+✔ Great for ranking-based data, such as **leaderboards**.
+
+📌 **Python Documentation:** [Reversing a List](https://docs.python.org/3/howto/sorting.html#sort-stability-and-complex-sorts)
+
+---
+
+## **🚀 Summary & Key Takeaways**
+
+✔ **`sort()` sorts lists in-place (alphabetical or numerical).**  
+✔ **Pass `reverse=True` to sort in descending order.**  
+✔ **Sorting is case-sensitive (`A-Z` before `a-z`).**  
+✔ **Sorting numbers works efficiently using Python’s built-in Timsort algorithm.**
+
+📌 **Python Documentation:** [Sorting How-To](https://docs.python.org/3/howto/sorting.html)
 
 ****
 
@@ -22,7 +119,6 @@ However, **there are also times where you may want to source elements by their a
 So, here I'm just going to give us some new lines and we're going to walk through the first way that you can store elements so this is a basic way and remember that in Python lists are mutable which means you can change them.   
 
 They're not like strings or those types of data types.   
-
 
 So that means that if we make a change to our list that change is permanent so we don't have to reassign it to a value which means I can call `tags.sort()` and then I call it because it's a function and in this case, I'm going to call it with no arguments and note that here in our first example by default we got our list in exactly the same order that they are inside.  
 
@@ -118,7 +214,4 @@ print(totals)   # [1, 234, 534, 2345]
 
 totals.sort(reverse=True)
 print(totals)   # [2345, 534, 234, 1]
-
-
-
 ```

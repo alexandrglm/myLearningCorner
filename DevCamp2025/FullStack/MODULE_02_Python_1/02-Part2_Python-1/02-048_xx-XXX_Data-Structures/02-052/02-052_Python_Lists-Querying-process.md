@@ -1,4 +1,81 @@
-# MODULE 02 - 052: Python - List querying process / `len()` - `[-X negative indexes]` - `index()`
+## **MODULE 02 - 052: Python - List Querying Process**
+
+## **📌 Introduction to Querying Lists in Python**
+
+Python provides built-in functions for **querying lists efficiently**. These methods allow developers to retrieve list properties, locate elements, and access specific items dynamically.
+
+### **🔹 Key Querying Methods**
+
+✔ `len()` – Retrieves the total number of elements in a list.  
+✔ Negative Indexing `[-X]` – Accesses elements from the end of the list.  
+✔ `index()` – Returns the index position of a specific element.
+
+📌 **Python Documentation:** [Built-in Functions](https://docs.python.org/3/library/functions.html#len)
+
+---
+
+## **📊 Using `len()` to Find List Length**
+
+The `len()` function returns the **total number of elements** in a list.
+
+```python
+# Example List
+tags = ['python', 'development', 'tutorials', 'code']
+
+# Get list length
+num_tags = len(tags)
+print(num_tags)  # Output: 4
+```
+
+✔ `len()` helps when iterating over a list or checking its size before performing operations.  
+✔ Be **careful**: `len()` returns a **non-zero-based count**; list indices still start at `0`.
+
+📌 **Python Documentation:** [len()](https://docs.python.org/3/library/functions.html#len)
+
+---
+
+## **🖩 Accessing Elements with Negative Indexing**
+
+Python allows using **negative indices** to access elements from the end of a list.
+
+```python
+# Retrieve last element
+last_item = tags[-1]
+print(last_item)  # Output: 'code'
+```
+
+✔ `-1` accesses the last element, `-2` the second last, and so on.  
+✔ Useful when the list size is unknown but the last item is needed.
+
+📌 **Python Documentation:** [Indexing](https://docs.python.org/3/tutorial/datastructures.html#accessing-elements)
+
+---
+
+## **📍 Finding an Element’s Index with `index()`**
+
+The `index()` method returns the **first occurrence** of an element's index.
+
+```python
+# Finding an element’s index
+index_of_tutorials = tags.index('tutorials')
+print(index_of_tutorials)  # Output: 2
+```
+
+✔ Returns the position of the element in the list.
+✔ Raises a **ValueError** if the element is not found.
+
+📌 **Python Documentation:** [list.index()](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists)
+
+---
+
+## **🚀 Summary & Key Takeaways**
+
+✔ **`len()` provides the total number of elements.**  
+✔ **Negative indexing allows access to elements from the end.**  
+✔ **`index()` returns the first position of an element in the list.**  
+✔ **Be mindful of off-by-one errors when using `len()` with indices.**
+
+📌 **Python Documentation:** [List Methods](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists)
 
 ****
 

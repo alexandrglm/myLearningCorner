@@ -1,4 +1,123 @@
-# MODULE 02 - 051: Python - Nesting Lists / Storing multiple data types
+# **MODULE 02 - 051: Python - Nesting Lists / Storing Multiple Data Types**
+
+## **📌 Introduction to Nested Lists**
+
+A **nested list** is a list that contains other lists as its elements. This allows you to store structured data within lists, such as tables, matrices, or grouped collections of data.
+
+### **🔹 Key Features of Nested Lists**
+
+✔ **Heterogeneous Data** – A list can store multiple data types.  
+✔ **Lists Inside Lists** – Lists can contain other lists as elements.  
+✔ **Dynamic Modifications** – You can modify, append, and remove elements from nested lists.  
+✔ **Useful for Structured Data** – Often used to store table-like or multi-dimensional data.
+
+📌 **Python Documentation:** [Lists](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists)
+
+---
+
+## **🛠️ Creating Lists with Multiple Data Types**
+
+Lists in Python can store **mixed data types**.
+
+```python
+# A list with mixed data types
+mixed_list = [42, 10.3, 'Altuve', ['Kristine', 'Tiffany', 'Jordan', 'Leann']]
+
+print(mixed_list)
+```
+
+✔ The list contains an **integer**, **float**, **string**, and another **list**.  
+✔ You can access and modify elements dynamically.
+
+📌 **Python Documentation:** [List Literals](https://docs.python.org/3/tutorial/introduction.html#lists)
+
+---
+
+## **📂 Storing a List Inside a List**
+
+Lists can be nested within other lists, allowing for structured data storage.
+
+```python
+users = ['Kristine', 'Tiffany', 'Jordan', 'Leann']
+nested_list = [42, 10.3, users]
+print(nested_list)
+```
+
+✔ This structure is useful when grouping related elements together.  
+✔ A list within a list remains a valid element and can be accessed like any other item.
+
+📌 **Python Documentation:** [Nested Lists](https://docs.python.org/3/tutorial/datastructures.html#nested-list-comprehensions)
+
+---
+
+## **🎯 Accessing Elements in Nested Lists**
+
+You can access **nested elements** using multiple indices.
+
+```python
+# Accessing the first element of the nested list
+print(nested_list[2])   # Output: ['Kristine', 'Tiffany', 'Jordan', 'Leann']
+
+# Accessing a specific user inside the nested list
+print(nested_list[2][1])  # Output: Tiffany
+```
+
+✔ The **first index** accesses the main list.  
+✔ The **second index** accesses an element inside the nested list.
+
+📌 **Python Documentation:** [Indexing](https://docs.python.org/3/tutorial/datastructures.html#accessing-elements)
+
+---
+
+## **➕ Adding and Removing Elements**
+
+### **Appending a New List**
+
+```python
+nested_list.append(['Mango', 'Banana'])
+print(nested_list)
+```
+
+✔ Appends a new list to the existing nested list.
+
+📌 **Python Documentation:** [list.append()](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists)
+
+### **Removing a Nested Element with `pop()`**
+
+```python
+removed_list = nested_list.pop()
+print(removed_list)  # Output: ['Mango', 'Banana']
+print(nested_list)
+```
+
+✔ `pop()` removes the **last element** and returns it.  
+✔ If the last element is a list, the entire list is removed.
+
+📌 **Python Documentation:** [list.pop()](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists)
+
+---
+
+## **⚠️ Best Practices for Nested Lists**
+
+🔹 **Be Cautious with Mixed Data Types** – If iterating over lists, ensure data types are compatible. Performing operations on mixed data types can cause errors.  
+🔹 **Use Nested Lists for Structured Data** – Store tabular data, hierarchical structures, or multi-dimensional collections efficiently.  
+🔹 **Avoid Excessive Nesting** – Too many nested levels make lists harder to manage and access.
+
+📌 **Python Documentation:** [Best Practices for Data Structures](https://docs.python.org/3/tutorial/datastructures.html)
+
+---
+
+## **🚀 Summary & Key Takeaways**
+
+✔ **Lists can contain multiple data types, including other lists.**  
+✔ **Nested lists are useful for structuring data logically.**  
+✔ **Use indexing to access elements inside nested lists.**  
+✔ **Modifications are dynamic, allowing easy additions and removals.**  
+✔ **Maintain consistency in data types to avoid iteration errors.**
+
+  
+
+📌 **Python Documentation:** [Python Lists](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists)
 
 ****
 

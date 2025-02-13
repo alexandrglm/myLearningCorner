@@ -1,4 +1,4 @@
-## **MODULE 02 - 049: Python - Lists (1)
+## MODULE 02 - 049: Python - Lists (1)
 
 ****
 
