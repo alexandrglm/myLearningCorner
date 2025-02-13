@@ -1,7 +1,5 @@
 # MODULE 02 - 055: Python - Lists - Ranges (1)
 
-
-
 ****
 
 ## Video lesson Speech
@@ -48,10 +46,8 @@ It's going to stop right here it's going to stop before it gets to 2.
 
 That's a way that ranges work inside a python.  
 
-
  If we truly do want the elements of index 1 and 2 then we have to go 
 one-up the chain so we have to go to a tag with an index that is three. 
-
 
 So now if I run this you'll see that it brings back development and 
 tutorials.
@@ -128,7 +124,3 @@ tag_range = tags[:2]
 tag_range = tags[0:-1]
 print(tag_range)
 ```
-
-
-
-
