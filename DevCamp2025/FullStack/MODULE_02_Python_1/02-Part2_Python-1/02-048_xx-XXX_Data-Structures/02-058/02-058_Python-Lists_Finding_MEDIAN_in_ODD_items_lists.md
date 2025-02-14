@@ -1,4 +1,99 @@
-# MODULE 02 - 058: Python - Lists, Finding Statical MEDIAN in a list
+## **MODULE 02 - 058: Finding the Statistical Median in a Python List**
+
+****
+
+### ⚠️ This lesson includes an exercise, and some required attempts.
+
+****
+
+## **📌 Introduction**
+
+In this guide, we will implement a **manual approach** to finding the statistical **median** of a list in Python **without using external statistical libraries**. This exercise reinforces core Python concepts such as:
+
+- **Sorting lists** using `sorted()`.
+- **Finding the median** using the `math` library with different indexes handling.
+- **Slicing lists** to extract the median value.
+
+🔹 **Note:** This implementation only works for lists with an **odd number of elements**.
+
+📌 **Python Documentation References:**
+
+- [`sorted()` function](https://docs.python.org/3/library/functions.html#sorted)
+- [`math.floor()`](https://docs.python.org/3/library/math.html#math.floor)
+- [`list slicing`](https://docs.python.org/3/tutorial/introduction.html#lists)
+
+---
+
+## **📝 Steps to Find the Median**
+
+1️⃣ **Sort the list** using `sorted()`.  
+2️⃣ **Find the middle index** using `math.floor()` to ensure we select the correct median value.  
+3️⃣ **Extract the median** by accessing the middle index of the sorted list.
+
+---
+
+## **🔍 Implementation**
+
+```python
+import math
+
+"""
+Tools:
+
+- math library
+- sorted function
+- list slicing
+- computations
+  """
+
+sale_prices = [
+ 100,
+ 83,
+ 220,
+ 40,
+ 100,
+ 400,
+ 10,
+ 1,
+ 3
+]
+sorted_list = sorted(sale_prices)
+
+num_of_sales = len(sorted_list)
+
+half_slice = math.floor(num_of_sales/2)
+
+first_sales_items = sorted_list[:half_slice]
+last_sales_items = sorted_list[-(half_slice):]
+
+median = sorted_list[half_slice:(half_slice + 1)]
+
+print(sorted_list)
+print(num_of_sales)
+print(first_sales_items)
+print(last_sales_items)
+print(median)
+```
+
+---
+
+## **✅ Best Practices & Optimizations**
+
+
+✔ **Use Built-in Functions:** Python provides `sorted()` for ordering lists efficiently.  
+
+
+✔ **Handle Large Lists Efficiently:** Sorting is an `O(n log n)` operation, but since we only access a single element after sorting, overall performance is reasonable for practical use cases.  
+
+
+---
+
+## **🚀 Summary & Key Takeaways**
+
+✔ **Sorting ensures that the middle element is correctly positioned.**  
+✔ **Using `math.floor()` helps locate the median index efficiently.**  
+✔ **Python’s list indexing and built-in functions make the implementation concise and readable.**  
+✔ **This method applies only to lists with an odd number of elements.**
 
 ****
 
@@ -246,7 +341,6 @@ Put a negative in front of it and then that is going to give me my set of last  
 
 So if I go last_sales_items just like this. Print it out.   
 
-
 Now you can see "oh I did something wrong. Oh yes."  
 
 I have to put the `(math.floor(num_of_sales/2))` .  
@@ -319,9 +413,7 @@ In review let's kind of summarize the entire process.
 
 * From there we counted how many items were in that list.
 
-*  After that, we used the math floor library to take in the number of sales so the number of elements divided by two which for all odd numbers is always going to give us a point five fraction, and then we said I want the bottom half of that.
-
-
+* After that, we used the math floor library to take in the number of sales so the number of elements divided by two which for all odd numbers is always going to give us a point five fraction, and then we said I want the bottom half of that.
 
 So we're always going to get slightly less than the count of half of the number of items in this list.  
 
@@ -370,6 +462,7 @@ half_slice = math.floor(num_of_sales/2)
 first_sales_items = sorted_list[:half_slice]
 last_sales_items = sorted_list[-(half_slice):]
 median = sorted_list[half_slice:(half_slice + 1)]
+
 print(sorted_list)
 print(num_of_sales)
 print(first_sales_items)
