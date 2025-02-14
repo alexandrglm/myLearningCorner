@@ -182,73 +182,80 @@ print(median)
 
 ****
 
-Welcome back! I hope that was a fun exercise for you if you went 
-through that and that you were able to reinforce some of the knowledge 
-that you have.
+## Guided exercise
 
-Now if the code that you produced is working but it isn't a very good
- looking code that is perfectly fine. Like I already said this is not a 
-production implementation. This is simply a way of reinforcing what 
-we've learned so far in this section and in a few of the other guides.
+Welcome back! I hope that was a fun exercise for you if you went through that and that you were able to reinforce some of the knowledge that you have.
 
-So with all of that being said, I'm going to come down and give us 
-lots of room. So the first thing that I mentioned is we need to bring in
- the math library. So at the very top of the file, I'm going to say 
-import math because we are going to be using some math modules.
+Now, if the code that you produced is working but it isn't a very good looking code that is perfectly fine.   
 
-So the first thing that I want to do is sort that list so I'm going 
-to say sorted_list equals. And in this case, I'm going to use the sorted
- function that we learned about. So you say sorted sale prices. And just
- to confirm that that is working let's look at our sorted list. If I 
-print this out you can see that that list is sorted.
+Like I already said this is not a production implementation. This is simply a way of reinforcing what we've learned so far in this section and in a few of the other guides.
 
-![large](https://s3-us-west-2.amazonaws.com/images-devcamp/Introduction+to+Programming+with+Python/Python+Data+Structures/How+to+Find+the+Median+of+a+Python+List+with+an+Odd+Number+of+Numbers+%23+1386/image1.png)
+So, with all of that being said, I'm going to come down and give us lots of room.  
 
-Now from a visual perspective in this example, I know that I have 1, 
-2, 3, 4, 5, 6, 7, 8, 9 elements and so that means that in this case, the
- fifth element which is 83 is going to be that median value. So that is 
-what we want our results set to have.
+ So, the first thing that I mentioned is we need to bring in the math library.  
 
-Now we can know our number of sales by saying num_of_sales and set 
-this equal to the length of the sorted_list. And so now if I want to see
- how many elements there are without just counting them manually then I 
-can print this out and see that is 9 which is what I counted. So we are 
-all good right there.
+ So, at the very top of the file, I'm going to say import math because we are going to be using some math modules.
 
-Now, this is not going to help us get the median but let's just 
-reinforce our knowledge on slicing and I'm going to create a slice of 
-the first sale items so I'm going to say first_sale_items and I'm going 
-to call our sorted list and to slicing, I'm going to skip the first 
-element so I want to have whatever that first element is I could put 
-zero but I'm just going to leave it blank. And then from there, I can 
-call math.floor and then call num_of_sales divided by two. So remember 
-number_of_sales is 9 but if you divide 9 by 2 then you're going to get 
+So, the first thing that I want to do is sort that list so I'm going to say sorted_list equals. And in this case, I'm going to use the sorted function that we learned about. So you say sorted sale prices. And just to confirm that that is working let's look at our sorted list.   
+
+If I print this out you can see that that list is sorted.
+
+![large](02-058_IMG1.png)
+
+Now from a visual perspective in this example, I know that I have `1, 2, 3, 4, 5, 6, 7, 8, 9`elements and so that means that in this case, the fifth element which is 83 is going to be that median value.  
+
+ So that is what we want our results set to have.
+
+Now, we can know our number of sales by saying num_of_sales and set this equal to the length of the sorted_list.  
+
+ And so now if I want to see how many elements there are without just counting them manually then I can print this out and see that is 9 which is what I counted.  
+
+ So we are all good right there.
+
+Now, this is not going to help us get the median, but l**et's just reinforce our knowledge on slicing**:
+
+I'm going to create a slice of the first sale items, I'm going to say first_sale_items and I'm going to call our sorted list and to slicing.
+
+I'm going to skip the first element so I want to have whatever that first element is I could put zero, but I'm just going to leave it blank.   
+
+And then from there, I can call `math.floor` and then call num_of_sales divided by two. So remember,number_of_sales is 9 but if you divide 9 by 2 then you're going to get 
 four and a half.
 
-So I want to grab the first four elements. So I want to have 4 and 
-that is I can't just type in 4, this example has to work if I have 500 
-in one element or if I have a thousand and thirty-five elements, has to 
-work on any set and any list of array items here that is odd. So I can't
- hard code so I'm just going to check for the whole number of sales. 
-Divide it by 2. That's going to give me some type of a fraction. And 
-then I want the lower end of that fraction because I want to have the 
-first half of the elements. So let's see if this is working. If I say 
-print first sale items just like this. This is going to give me 1, 3, 
-10, and 40. Which is perfect.
+So I want to grab the first four elements.  
 
-![large](https://s3-us-west-2.amazonaws.com/images-devcamp/Introduction+to+Programming+with+Python/Python+Data+Structures/How+to+Find+the+Median+of+a+Python+List+with+an+Odd+Number+of+Numbers+%23+1386/image2.png)
+ So I want to have 4 and that is I can't just type in 4, this example has to work if I have 500 in one element or if I have a thousand and thirty-five elements, has to work on any set and any list of array items here that is odd.  
 
-So this takes me to everything except the median which is exactly 
-what I wanted. If you wanted the last set of sale items you could say 
-last_sales_item sorted list and then here what I could do is I could 
-actually wrap this entire math floor and wrap it in parentheses. Put a 
-negative in front of it and then that is going to give me my set of last
- sale items. So if I go last_sales_items just like this. Print it out. 
-Now you can see oh I did something wrong. Oh yes. I have to put the 
--(math.floor(num_of_sales/2)) That is what I need at the very end.
+ So, I can't hard code so I'm just going to check for the whole number of sales. 
+Divide it by 2.  
 
-So I'm going to cut that out. Paste it in. And let me also just to 
-make it a little easier to read all stretch that. OK. So if you saw what
+ That's going to give me some type of a fraction.  
+
+ And then, I want the** lower end of that fraction** because I want to have the first half of the elements.   
+
+So let's see if this is working.   
+
+If I say print first sale items just like this. This is going to give me 1, 3, 10, and 40.  Which is perfect.
+
+![large](02-058_IMG2.png)
+
+So, this takes me to everything except the median which is exactly what I wanted.   
+
+If you wanted the last set of sale items you could say last_sales_item sorted list and then here what I could do is I could actually wrap this entire math floor and wrap it in parentheses.   
+
+Put a negative in front of it and then that is going to give me my set of last  sale items. 
+
+So if I go last_sales_items just like this. Print it out.   
+
+
+Now you can see "oh I did something wrong. Oh yes."  
+
+I have to put the `(math.floor(num_of_sales/2))` .  
+
+That is what I need at the very end.
+
+So I'm going to cut that out. Paste it in. And let me also just to make it a little easier to read all stretch that.  
+
+ OK. So if you saw what
  I did wrong there I put the slice in that colon on the wrong side. Here
  we want to go negative because remember negative is going to take us 
 backwards in our list. I want to go negative and then I want to go all 
@@ -256,81 +263,81 @@ the way to the end. So now if I try this again. There we go. So now I
 have 100, 100, 220, and 400 which is exactly what I want. It's the last 
 four items.
 
-![large](https://s3-us-west-2.amazonaws.com/images-devcamp/Introduction+to+Programming+with+Python/Python+Data+Structures/How+to+Find+the+Median+of+a+Python+List+with+an+Odd+Number+of+Numbers+%23+1386/image3.png)
+![large](02-058_IMG3.png)
 
-Now creating that first_sales_items and last_sale_items that were not
- part of the exercise. I simply wanted to reinforce exactly how slicing 
-worked and how you could combine computations with that.
+Now, creating that first_sales_items and last_sale_items that were not part of the exercise. I simply wanted to reinforce exactly how slicing worked and how you could combine computations with that.
 
-Now to get the median it's actually a little bit more 
-straightforward. So with the median, I can say median equals sorted list
- and so now what I'm going to do is I'm going to take the math floor so 
-I'm going to grab that everything that we have right here. And so I'm 
-going to say math floor just like this. This is going to be the start of
- my slice and then I'm simply going to in parens put the same exact code
- here and then just add one. And so now if I want to print out my median
- come down here and let's see if this worked. And there you go. We have 
-83 which was the median element so everything there is working properly
+Now, to get the median it's actually a little bit more straightforward.  
 
-![large](https://s3-us-west-2.amazonaws.com/images-devcamp/Introduction+to+Programming+with+Python/Python+Data+Structures/How+to+Find+the+Median+of+a+Python+List+with+an+Odd+Number+of+Numbers+%23+1386/image4.png)
+With the median, I can say median equals sorted list and so now what I'm going to do is I'm going to take the math floor so I'm going to grab that everything that we have right here.  
 
-Now from a code perspective. This is pretty ugly. You have all of 
-this duplicate code which is definitely a bad practice so a way that you
- could clean this up is you could come here and just say we could say 
-half_slice, some type of variable just like that and then I could say 
+ And so I'm going to say math floor just like this.   
+
+This is going to be the start of my slice and then I'm simply going to in parens put the same exact code here and then just add one.   
+
+And so now if I want to print out my median come down here and let's see if this worked. And there you go.   
+
+We have 83 which was the median element so everything there is working properly
+
+![large](02-058_IMG4.png)
+
+Now, **from a code perspective, this is pretty ugly**.   
+
+**You have all of this duplicate code which is definitely a bad practice**.
+
+## Practical code, but unneficient
+
+A way that you could clean this up is you could come here and just say we could say 
+`half_slice`, some type of variable just like that and then I could say 
 math floor input all of this code here just like that.
 
-![large](https://s3-us-west-2.amazonaws.com/images-devcamp/Introduction+to+Programming+with+Python/Python+Data+Structures/How+to+Find+the+Median+of+a+Python+List+with+an+Odd+Number+of+Numbers+%23+1386/image5.png)
+![large](02-058_IMG5.png)
 
-And half_slice is not completely accurate but for the sake of 
-everything we're doing here, we'll say that it is and I'm going to do 
-the same thing here. And in each spot where we call this just to make it
- a little bit easier to read. And now if I run this you can see all of 
-the output is completely identical.
+And half_slice is not completely accurate but for the sake of everything we're doing here, we'll say that it is and I'm going to do the same thing here.   
 
-![large](https://s3-us-west-2.amazonaws.com/images-devcamp/Introduction+to+Programming+with+Python/Python+Data+Structures/How+to+Find+the+Median+of+a+Python+List+with+an+Odd+Number+of+Numbers+%23+1386/image6.png)
+And in each spot where we call this just to make it a little bit easier to read.  
 
-That has less to do with programming and more to do with best 
-practices. If you were ever duplicating a lot of code like that the best
- practice is to streamline it store it in a variable or later on when we
- learn about it store it in a function and then you'll be able to simply
- call that variable or function and not have to duplicate a lot of code 
-and have a bunch of ugly code like we had a second ago.
+ And now if I run this you can see all of the output is completely identical.
+
+![IMG](02-058_IMG6.png)
+
+**That has less to do with programming and more to do with best practices**.   
+
+If you were ever duplicating a lot of code like that, the best practice is to streamline it:
+
+**Store it in a variable or later on when we learn about it store it in a function and then you'll be able to simply call that variable or function and not have to duplicate a lot of code and have a bunch of ugly code like we had a second ago.**
 
 So this is how we are able to do this
 
-In review let's kind of summarize the entire process. We took a list.
- We sorted that list and so we created a new sorted list and we stored 
-it inside of this variable. From there we counted how many items were in
- that list. After that, we used the math floor library to take in the 
-number of sales so the number of elements divided by two which for all 
-odd numbers is always going to give us a point five fraction, and then 
-we said I want the bottom half of that.
+****
 
-So we're always going to get slightly less than the count of half of 
-the number of items in this list. And then for just some exercise here 
-you didn't have to do this part I showed how we could grab the first 
-slice and then the second slice of the entire element leaving the median
- alone.
+In review let's kind of summarize the entire process.   
 
-And then for the median itself, we were able to call on our list and 
-using slicing we were able to grab or bypass the first half and then 
-also end before the second half by just adding one to it. And one thing 
-that's pretty neat about this if you do go and you Google how to find 
-the median in Python pretty much every example you're going to find has 
-to deal with looping or bringing in outside libraries or things like 
-that.
+* We took a list.
 
-However, before you're even learning those kinds of topics you are 
-able to do it just with what we know right now just by knowing a few of 
-the math library functions and knowing how slicing works and sorting and
- finding the length of elements in a list you're able to find the median
- of an odd numbered list which I think is pretty impressive and you 
-should be happy with the progress you are making and all of the work 
-that you're doing that's pretty impressive. And it also shows some of 
-the power of how python works in being able to give you this level of 
-expressiveness and this level of being able to work with and manipulate 
-data just like we have right here. So very nice job!
+* We sorted that list and so we created a new sorted list and we stored it inside of this variable.
+
+* From there we counted how many items were in that list.
+
+*  After that, we used the math floor library to take in the number of sales so the number of elements divided by two which for all odd numbers is always going to give us a point five fraction, and then we said I want the bottom half of that.
+
+
+
+So we're always going to get slightly less than the count of half of the number of items in this list.  
+
+ And then,  for just some exercise here you didn't have to do this part I showed how we could grab the first slice and then the second slice of the entire element leaving the median alone.
+
+And then for the median itself, we were able to call on our list and using slicing we were able to grab or bypass the first half and then also end before the second half by just adding one to it.  
+
+ And one thing that's pretty neat about this, if you do go and you Google how to find 
+the median in Python pretty much every example you're going to find has to deal with looping or bringing in outside libraries or things like that.
+
+However, before you're even learning those kinds of topics you are able to do it just with what we know right now just by knowing a few of the math library functions and knowing how slicing works and sorting and finding the length of elements in a list you're able to find the median of an odd numbered list which I think is pretty impressive and you should be happy with the progress you are making and all of the work that you're doing that's pretty impressive.   
+
+And it also shows some of the power of how python works in being able to give you this level of expressiveness and this level of being able to work with and manipulate 
+data just like we have right here.   
+
+So very nice job!
 
 ## Code
 
