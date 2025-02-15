@@ -1,3 +1,214 @@
+# **TypeScript 03: Functions**
+
+## **📌 Introduction to Functions in TypeScript**
+
+Functions are one of the core building blocks of any TypeScript program. They encapsulate reusable logic and improve code organization. TypeScript enhances JavaScript functions by adding type safety, default parameters, overloads, and more.
+
+📌 **TypeScript Documentation:** [Functions](https://www.typescriptlang.org/docs/handbook/functions.html)
+
+---
+
+## **🔹 Defining Functions in TypeScript**
+
+In TypeScript, we define functions using `function` keyword or arrow functions.
+
+```typescript
+// Function declaration with type annotations
+type GreetFunction = (name: string) => string;
+
+function greet(name: string): string {
+    return `Hello, ${name}!`;
+}
+
+// Function expression with type alias
+const greetArrow: GreetFunction = (name) => `Hello, ${name}!`;
+
+console.log(greet("Alice"));
+console.log(greetArrow("Bob"));
+```
+
+✔ **Both functions ensure that `name` must be a string.**
+
+📌 **TypeScript Documentation:** [Type Annotations](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#function-types)
+
+---
+
+## **🎯 Function Parameters: Optional & Default Values**
+
+TypeScript allows parameters to be optional (`?`) or have default values.
+
+```typescript
+// Optional parameter (indicated by '?')
+function greet(name?: string): string {
+    return name ? `Hello, ${name}!` : "Hello, Guest!";
+}
+
+// Default parameter value
+function greetWithDefault(name: string = "Guest"): string {
+    return `Hello, ${name}!`;
+}
+
+console.log(greet());
+console.log(greet("Alice"));
+console.log(greetWithDefault());
+```
+
+✔ If no argument is provided, TypeScript assigns the default value (`"Guest"`).
+
+📌 **TypeScript Documentation:** [Optional and Default Parameters](https://www.typescriptlang.org/docs/handbook/2/functions.html#optional-and-default-parameters)
+
+---
+
+## **🔁 Function Overloading**
+
+Function overloading allows multiple function signatures for better type inference.
+
+```typescript
+function add(a: number, b: number): number;
+function add(a: string, b: string): string;
+function add(a: any, b: any): any {
+    return a + b;
+}
+
+console.log(add(5, 10));      // 15
+console.log(add("Hello, ", "World!")); // "Hello, World!"
+```
+
+✔ TypeScript allows multiple call signatures but ensures correct types when calling the function.
+
+📌 **TypeScript Documentation:** [Function Overloads](https://www.typescriptlang.org/docs/handbook/2/functions.html#function-overloads)
+
+---
+
+## **🏗 Higher-Order Functions**
+
+A **higher-order function** is a function that takes another function as a parameter or returns a function.
+
+```typescript
+// Function that takes a function as an argument
+function operate(a: number, b: number, operation: (x: number, y: number) => number): number {
+    return operation(a, b);
+}
+
+const add = (x: number, y: number) => x + y;
+const multiply = (x: number, y: number) => x * y;
+
+console.log(operate(5, 3, add));      // 8
+console.log(operate(5, 3, multiply)); // 15
+```
+
+✔ Useful for callbacks, event listeners, and functional programming.
+
+📌 **TypeScript Documentation:** [Higher-Order Functions](https://www.typescriptlang.org/docs/handbook/2/functions.html#inferring-the-types-of-functions)
+
+---
+
+## **🔄 Closures in TypeScript**
+
+Closures allow functions to "remember" variables from their lexical scope even after they have executed.
+
+```typescript
+function counter(): () => number {
+    let count = 0;
+    return () => ++count;
+}
+
+const increment = counter();
+console.log(increment()); // 1
+console.log(increment()); // 2
+```
+
+✔ The returned function maintains access to `count` even after `counter()` finishes execution.
+
+📌 **TypeScript Documentation:** [Closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
+
+---
+
+## **🚀 Generic Functions**
+
+TypeScript generics allow functions to work with multiple types while maintaining type safety.
+
+```typescript
+function identity<T>(arg: T): T {
+    return arg;
+}
+
+console.log(identity(42));        // 42 (number)
+console.log(identity("Hello"));   // "Hello" (string)
+console.log(identity([1, 2, 3])); // [1, 2, 3] (array)
+```
+
+✔ `T` is a placeholder type, which TypeScript replaces dynamically based on usage.
+
+📌 **TypeScript Documentation:** [Generics](https://www.typescriptlang.org/docs/handbook/2/generics.html)
+
+---
+
+## **🎭 Using `this` in Functions**
+
+In TypeScript, `this` can be explicitly typed in functions.
+
+```typescript
+class Person {
+    name: string;
+    constructor(name: string) {
+        this.name = name;
+    }
+
+    sayHello(this: Person) {
+        console.log(`Hello, my name is ${this.name}`);
+    }
+}
+
+const alice = new Person("Alice");
+alice.sayHello();
+```
+
+✔ `this: Person` ensures the method is called on a `Person` instance.
+
+📌 **TypeScript Documentation:** [Typing `this` in Functions](https://www.typescriptlang.org/docs/handbook/2/functions.html#this-parameters)
+
+---
+
+## **🆚 Function Declarations vs Arrow Functions**
+
+Arrow functions differ from function declarations in how they handle `this`.
+
+```typescript
+class Timer {
+    seconds = 0;
+
+    start() {
+        setInterval(() => {
+            this.seconds++;
+            console.log(this.seconds);
+        }, 1000);
+    }
+}
+
+const timer = new Timer();
+timer.start();
+```
+
+✔ Arrow functions inherit `this` from the surrounding lexical scope, avoiding common issues.
+
+📌 **TypeScript Documentation:** [Arrow Functions](https://www.typescriptlang.org/docs/handbook/2/functions.html#arrow-functions)
+
+---
+
+## **📌 Summary & Best Practices**
+
+✔ Always define function return types explicitly.
+✔ Use optional/default parameters where applicable.
+✔ Favor arrow functions in callbacks and class methods to maintain `this` scope.
+✔ Use function overloads for multiple call signatures.
+✔ Leverage generics for reusable functions.
+✔ Ensure parameter types are well-defined to avoid runtime errors.
+
+****
+
+Original Guide :  
+
 # 🔸 SESSION #3 FUNCTIONS
 
 Abstract:
@@ -9,43 +220,42 @@ Abstract:
   - Parameters passing
   - Function Overloading.
   - Conciseness code.
+
 - Variable Scoope & Hoisting
-  
+
 - Functions:
   
   - Declarations
   - Parameters
   - `Async Functions` VS `function* Generators`
   - `Worker`s and `Saga`s
-  
 
 # 🔸 TS Best Practices (2) ✅✅✅
 
 ### ✅✅✅ Code is easy to be understood
 
 - ✅ By giving self-explicative names to vars, functions, ...
+
 - ✅ Var, values, params., functions,... anything follows a clear way to be named.
   
   ```text
   This is **camelCase** typing ✅  
   And this is **snake_Case** typing ✅ 
-  
-  
-  But this is **aproblematicwayoftypingtobeavoided** ❌
   ```
   
+  But this is **aproblematicwayoftypingtobeavoided** ❌
 
+```
 - ✅ By using **JSDoc** method on each function:
-  
+```
 
-````
 ```ts
 /**
  * This is a documenting JSDoc method
  * Best Practices with functions:
  * Giving a self-explicative name 
  */
-````
+```
 
 ## ✅✅✅ Code is explicit even the redundance
 
@@ -190,9 +400,9 @@ There are 2 kind of "family" scooping, one of which was deprecated since ECMA6, 
 Since ECMA6 (2015) introduced `let`and `const` keywords, these two keywords are which provide the Block Scope, so:
 
 - Variables declared with the `var` keyword ❌**can NOT**❌ have block scope.
-  
+
 - Variables declared inside a `{ } block` ✅**CAN**✅ be accessed from outside the block.
-  
+
 - Variables `{ inside a block}` ❌cannot❌ be accesed from outside it.
   
   ```ts
@@ -201,7 +411,6 @@ Since ECMA6 (2015) introduced `let`and `const` keywords, these two keywords are 
   }
   // x can NOT be used here 
   ```
-  
 
 ```ts
 {
@@ -228,20 +437,18 @@ function myFunction() {
 So, **Local variables have Function Scope**:
 
 - They can only be accessed from within the function.
-  
+
 - Since local variables are only recognized inside their functions, variables with the same name can be used in different functions.
-  
+
 - Local variables are created when a function starts, and deleted when the function is completed.
-  
 
 #### ⚡ Function scope:
 
 Means that every function creates a new scope, so:
 
 - Variables defined inside a function are not accessible (visible) from outside the function.
-  
+
 - Variables declared with `var`, `let` and `const` are quite similar when declared inside a function.
-  
 
 ```ts
 function myFunction() {
@@ -389,7 +596,7 @@ Functions have both `properties` and `methods`.
   return arguments.length;
   } 
   ```
-  
+
 - **toString()** method returns the function as a string:
   
   ```ts
@@ -397,11 +604,10 @@ Functions have both `properties` and `methods`.
   return a * b;
   }
   ```
-  
 
 let text = myFunction.toString();
 
-````
+```
 To clarify this,:
 
 >- A function defined as the property of an object, is called a method to the object.  
@@ -423,22 +629,21 @@ var x = function(x, y) {
 
 // Since ES6
 const x = (x, y) => x * y;
-````
+```
 
 But, ... :
 
 1. Arrow functions do not let their own **this** keyword, so that they are **not well suited for defining object methods**.
-  
+
 2. Arrow functions **are not hoisted**. They **must be defined before** they are used.
-  
+
 3. A function expression **is always a constant** so that avoiding the use of variables makes the sense.
-  
+
 4. You can only omit the return keyword and the curly brackets if the function is a single statement. Because of this, it might be a good habit to always keep them:
-  
-  ```ts
-  const x = (x, y) => { return x * y };
-  ```
-  
+   
+   ```ts
+   const x = (x, y) => { return x * y };
+   ```
 
 ---
 
@@ -545,7 +750,8 @@ That's like this due to the needed improvements of code flexibility and legibili
   greeting("Juan"); // Will log "Hello, Juan!"
   greeting(); // Will log "Hello!"
   ```
-Another example:    One var and another are passed to args. .
+  
+  Another example:    One var and another are passed to args. .
 
 A function has been overloaded here:
 
@@ -559,7 +765,6 @@ function showError( error: string ): void {
 function showError( errorNumber: number): void {
       console.log("An error occurred with code:", error);
 }
-
 ```
 
 But it can be a bit more concise de-overloading them:
@@ -594,7 +799,6 @@ The parameters, in a function call, are the function's arguments.
   The function only gets to know the values, not the argument's locations.  
   If a function changes an argument's value, it does not change the parameter's original value.  
   **Changes to arguments are not visible (reflected) outside the function.**  
-  
 
 - ### Objects are passed by Reference
   
@@ -602,7 +806,6 @@ The parameters, in a function call, are the function's arguments.
   If a function changes an object property, it changes the original value.
   
   **Changes to object properties are visible (reflected) outside the function.**
-  
 
 #### ⚡ CASE 1: Optional
 
@@ -687,10 +890,6 @@ const employeeCollectsPayroll = (employeeTyped: employeeType): void => {
 };
 
 getPaysheet(employeeTyped, () => employeeCollectsPayroll(employeeTyped));
-
-
-
-
 ```
 
 Unknown function (function expression) was integred since ECMA6.
@@ -700,13 +899,19 @@ Unknown function (function expression) was integred since ECMA6.
 # Asyncs, Generators, Workers, Sagas.
 
 - **Async Functions (`async/await`)**: These handle asynchronous operations (like API calls) in a linear, readable way, pausing at `await` and resuming when the promise resolves.
+
 - **Generators**: Offer more manual control over the flow, pausing and resuming execution at specific points, allowing more complex workflows without directly relying on asynchronous promises.
+
 - **Workers**: Used for background tasks, often in scenarios requiring separation of concerns, such as in Redux-Saga where tasks (e.g., data fetching) are handled independently of the main UI thread.
+
 - **Sagas**: Ideal for managing complex asynchronous flows, like waiting for multiple actions or handling retries, cancellations, and sequencing in libraries like Redux-Saga.
 
 - **Async/await** is for simplifying async operations.
+
 - **Generators** give manual control over execution.
+
 - **Workers** handle independent tasks or side effects.
+
 - **Sagas** manage complex async flows, often in large applications with multiple interdependent async actions.
 
 ## 🔸 `async function` VS `function* generator`
@@ -747,11 +952,10 @@ exampleAsync().finally(() => "All task done.");
 #### Promise methods explainded:
 
 - `.then` = When the promise is reached, do this.
-  
+
 - `.catch` = Catch an status, as an error, at the function execution time.
-  
+
 - `.finally` = When everything is done, do this.
-  
 
 ---
 
@@ -833,16 +1037,16 @@ SESSION #3.  FUNCTIONS
 Abstract:
 
 - Best Practices (2):
-  
+
   - Well-documented code. (JSDoc)
   - Explicit typing. (Avoiding 'any' type by declaring every type).
   - Parameters passing
   - Function Overloading.
   - Conciseness code.
 - Variable Scoope & Hoisting
-  
+
 - Functions:
-  
+
   - Declarations
   - Parameters
   - `Async Functions` VS `function* Generators`
@@ -858,7 +1062,7 @@ Abstract:
 function greeting(){
     let name = "Pepito";    // Variable scoope: Not globally. locally.
     console.log(`Hello ${name}!`);
-    
+
 }
 
 greeting();     // The Invoke
@@ -1051,7 +1255,7 @@ employeeTypedAge(employeeTyped);
 /* Now, this function verifies if a employee can get the retirement or no
 */
 const employeeTypedData = (employeeTyped: employeeType): string => {
-    
+
     if ( employeeTyped.age7 >= 70 ) {
         return `Employee ${employeeTyped.name7} ${employeeTyped.surname7}, being ${employeeTyped.age7} years old, is allowed to get retirement`;
     } else {
@@ -1066,7 +1270,7 @@ console.log(employeeTypedData(employeeTyped)); // "Employee Martin Gonzalez, bei
 /* Given the function 'getPaysheet' with 2 parameters:
     - 'employeeTyped': The object ... as employeeType type defined previosly.
     - 'ammount': A function "() => void", which is an empty callback (VOID returns NOTHING).
-    
+
 This function choose if the object meets the conditions, or not, to follow with the declared function ( if the employee has to get the monthly payroll, or not due to the nature of being retired depending on the age) */
 
 const getPaysheet = (employeeTyped: employeeType, ammount: () => void): void => {
@@ -1083,7 +1287,7 @@ y simplemente imprime un mensaje indicando que el empleado ha recogido su nómin
 const employeeCollectsPayroll = (employeeTyped: employeeType): void => {
     console.log(`${employeeTyped.name7} ${employeeTyped.surname7} collects the monthly payroll`);
 };
-    
+
 /* Llamamos a 'getPaysheet' nuevamente, pero esta vez pasamos 'employeeCollectsPayroll' 
     como un callback. Para pasar esta función, la envolvemos en una función anónima (lambda) */
 getPaysheet(employeeTyped, () => employeeCollectsPayroll(employeeTyped));
@@ -1098,7 +1302,7 @@ Integred since ECMA6.
 /*
 * ASYNC FUNCTIONS & GENERATOR FUNCTIONS
 */
- 
+
 // Async functions
 // "En algun momento quiero que esta tarea se ejecute"
 
