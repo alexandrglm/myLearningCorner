@@ -1,15 +1,174 @@
-
-
 ---
-
 layout: post
-title:  "MODULE 02 - 062: Python Exercise: Building a Weighted Lottery function"
+title:  "MODULE 02 - 061: Python Exercise: Building a Weighted Lottery function"
 date:   2025-02-16 15:25:45 +0100
 categories: Python DataStructures 
 
 ---
 
-# MODULE 02 - 062: Python Exercise: Building a Weighted Lottery function
+# MODULE 02-061:P ython Exercise:
+
+## Building a Weighted Lottery Function
+
+## **📌 Introduction**
+
+A **weighted lottery function** is a system that randomly selects an item from a set, but with different probabilities based on predefined weights.
+
+This guide will break down how to create a weighted lottery function in Python, using:
+
+- **Dictionaries** to store weights.
+- **Iteration** to process weights efficiently.
+- **NumPy's `random.choice`** to select items based on their probabilities.
+
+📌 **Python Docs:** [random.choice](https://numpy.org/doc/stable/reference/random/generated/numpy.random.choice.html)
+
+---
+
+## **🎯 Problem Statement**
+
+### **Input:**
+
+A dictionary where:
+
+- **Keys** are the possible outcomes.
+- **Values** are their respective weights (higher weight = higher probability of selection).
+
+Example:
+
+```python
+weights = {
+    'winning': 1,
+    'losing': 1000
+}
+```
+
+Here, `winning` should be returned **1 in 1001 times**, while `losing` should be returned **1000 in 1001 times**.
+
+Another possible set:
+
+```python
+other_weights = {
+    'winning': 1,
+    'break_even': 2,
+    'losing': 3
+}
+```
+
+In this case, the function should return:
+
+- `winning` **1/6** times,
+- `break_even` **2/6** times,
+- `losing` **3/6** times.
+
+### **Output:**
+
+A randomly selected **string** representing one of the dictionary keys, chosen according to the weight distribution.
+
+---
+
+## **🚀 Step-by-Step Solution**
+
+### **1️⃣ Creating a Weighted Container List (Inefficient Approach)**
+
+The simplest way to implement this is by creating a list where each item appears as many times as its weight.
+
+```python
+import numpy as np
+
+def weighted_lottery(weights):
+    container_list = []
+
+    for (name, weight) in weights.items():
+        for _ in range(weight):
+            container_list.append(name)
+
+    return np.random.choice(container_list)
+
+weights = {'winning': 1, 'losing': 1000}
+print(weighted_lottery(weights))
+```
+
+✅ This method **works** but is highly inefficient for large datasets.
+✅ Time complexity: **O(n)**, where `n` is the total sum of weights.
+❌ **Memory Usage:** Creating a massive list for large weights (e.g., 100,000 entries) is impractical.
+
+---
+
+### **2️⃣ Optimized Approach: Using NumPy Probability Distribution**
+
+Instead of expanding weights into a list, we directly use **probability distributions**.
+
+#### **🔹 Explanation**:
+
+1. Extract the dictionary keys (`keys` list) and corresponding weights (`values` array).
+2. Convert `values` to a **normalized probability distribution** (each weight divided by total weight sum).
+3. Use `numpy.random.choice()` with `p` (probability distribution) instead of repeating values in a list.
+
+```python
+import numpy as np
+
+def weighted_lottery(weights):
+    keys = list(weights.keys())
+    values = np.array(list(weights.values()), dtype=np.float64)
+
+    return np.random.choice(keys, p=values / values.sum())
+
+other_weights = {
+    'winning': 1,
+    'break_even': 2,
+    'losing': 3
+}
+
+print(weighted_lottery(other_weights))
+```
+
+✅ **Advantages of this method**:
+✔ **Memory efficient** – No need for a giant list.
+✔ **Faster execution** – `numpy.random.choice()` is optimized for large datasets.
+✔ **Scalability** – Handles thousands of items easily.
+
+---
+
+## **📌 Alternative Use Cases**
+
+This function can be used in various applications:
+
+### **🎨 Weighted Random Color Picker**
+
+```python
+colors = {
+    'red': 1,
+    'green': 2,
+    'blue': 3,
+    'yellow': 4,
+    'purple': 5
+}
+print(weighted_lottery(colors))
+```
+
+✅ Higher-weighted colors (like `purple`) will appear more frequently.
+
+### **🎲 Lottery Simulation with 100,000 Entries**
+
+```python
+lottery_entries = {f"Ticket-{i:05d}": max(1, i) for i in range(100000)}
+print(weighted_lottery(lottery_entries))
+```
+
+✅ Scales to **100,000** entries effortlessly, something impossible with the naive approach.
+
+---
+
+## **📌 Summary & Best Practices**
+
+✔ **Use NumPy's `random.choice()`** with probability distribution (`p` parameter) for optimal performance.
+✔ **Avoid list expansion for large datasets** – it's inefficient in memory and speed.
+✔ **Ensure your weights are positive** – negative or zero values will break the probability calculation.
+✔ **Test with different scenarios** to confirm correct probability distributions.
+
+****
+
+## Video lesson Speech
 
 In this Python coding exercise, we are tasked with a pretty challenging project.  
 
@@ -326,7 +485,6 @@ other_weights = {
     'bronze': 20,
 }
 """
-
 ```
 
 ## Resources
