@@ -1,4 +1,97 @@
-# MODULE 02-065: Python -    `get()`  - Configuring fallback lookup values on dictionaries
+# MODULE 02-065: # MODULE 02-065: Python - `get()` - Configuring Fallback Lookup Values on Dictionaries
+
+## Introduction
+
+When working with dictionaries in Python, attempting to access a key that does not exist will raise a `KeyError`. This can disrupt program execution if not handled properly. To mitigate this, Python provides the `.get()` method, which allows querying dictionary keys while specifying a fallback value in case the key is missing.
+
+Using `.get()` is considered a **best practice** in Python when dealing with dictionary lookups where keys may or may not exist.
+
+📌 **Python Documentation:** [Dictionaries - get()](https://docs.python.org/3/library/stdtypes.html#dict.get)
+
+---
+
+## Basic Dictionary Lookup
+
+```python
+teams = {
+    'astros': ['Altuve', 'Correa', 'Bregman'],
+    'angels': ['Trout', 'Pujols'],
+    'yankees': ['Judge', 'Stanton'],
+    'red sox': ['Price', 'Betts']
+}
+
+featured_team = teams['astros']
+print(featured_team)  # Output: ['Altuve', 'Correa', 'Bregman']
+```
+
+✔ This works fine **if the key exists** in the dictionary.
+
+---
+
+## Handling Missing Keys with `.get()`
+
+If we attempt to access a non-existent key using the standard method (`teams['mets']`), Python will raise a `KeyError`. Instead, `.get()` allows querying safely:
+
+```python
+featured_team = teams.get('mets')
+print(featured_team)  # Output: None
+```
+
+✔ When the key does not exist, `.get()` returns `None` instead of raising an error.
+
+---
+
+## Using a Fallback Value
+
+A second argument can be passed to `.get()` to specify a **fallback value**:
+
+```python
+featured_team = teams.get('mets', 'No featured team')
+print(featured_team)  # Output: "No featured team"
+```
+
+✔ This prevents program crashes and provides useful feedback when the key is missing.
+
+---
+
+## Example: Querying Both Existing and Non-Existing Keys
+
+```python
+# Non-existent key (returns None by default)
+print(teams.get('dodgers'))  # Output: None
+
+# Non-existent key with a fallback value
+print(teams.get('dodgers', 'Team not found'))  # Output: "Team not found"
+
+# Existing key (ignores the fallback value)
+print(teams.get('yankees', 'Team not found'))  # Output: ['Judge', 'Stanton']
+```
+
+✔ If the key exists, `.get()` returns its value and **ignores** the fallback argument.
+
+---
+
+## When to Use `.get()` vs Direct Lookup
+
+| Method             | Raises Error? | Returns `None`? | Allows Fallback Value? |
+| ------------------ | ------------- | --------------- | ---------------------- |
+| `teams['key']`     | ✅ Yes         | ❌ No            | ❌ No                   |
+| `teams.get('key')` | ❌ No          | ✅ Yes           | ✅ Yes                  |
+
+✔ Use `.get()` when looking up optional values to prevent `KeyError` and allow fallbacks.
+
+📌 **Python Documentation:** [Dictionaries - get()](https://docs.python.org/3/library/stdtypes.html#dict.get)
+
+---
+
+## Conclusion
+
+- `.get()` allows safe dictionary lookups without raising `KeyError`.
+- A fallback value can be provided to handle missing keys gracefully.
+- It is useful in scenarios where keys **may or may not exist**, preventing crashes.
+- `.get()` is widely considered a **best practice** for optional dictionary lookups in Python.
+
+
 
 ****
 
