@@ -198,8 +198,6 @@ astros_players = teams["astros"]
 print(astros_players)
 ```
 
-
-
 ****
 
 ## Video lesson Speech
