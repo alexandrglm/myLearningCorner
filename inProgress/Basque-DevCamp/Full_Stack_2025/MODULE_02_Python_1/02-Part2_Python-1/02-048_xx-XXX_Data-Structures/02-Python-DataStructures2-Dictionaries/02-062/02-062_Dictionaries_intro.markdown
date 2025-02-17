@@ -1,6 +1,146 @@
-# MODULE 02 - 062: Python:    Dictionaries
+## MODULE 02 - 062: Python: Dictionaries
 
+## Introduction to Dictionaries in Python
 
+Dictionaries are one of Python's core data structures, providing a powerful way to store and manage key-value pairs.  
+
+ Unlike lists, which use numerical indices, dictionaries allow you to reference values by meaningful keys, making data retrieval more intuitive and efficient.
+
+📌 **Python Documentation:** [Dictionaries](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)
+
+---
+
+## **🔹 Defining a Dictionary**
+
+The syntax for creating a dictionary in Python uses curly braces `{}` with key-value pairs separated by colons `:`.
+
+```python
+# Defining a dictionary
+players = {
+    "ss": "Correa",
+    "2b": "Altuve",
+    "3b": "Bregman",
+    "DH": "Gattis",
+    "OF": "Springer"
+}
+```
+
+✔ Each key in the dictionary is unique and maps to a corresponding value.
+
+### **Dictionary Example Output**
+
+Printing the dictionary displays its contents:
+
+```python
+print(players)
+```
+
+**Output:**
+
+```python
+{'ss': 'Correa', '2b': 'Altuve', '3b': 'Bregman', 'DH': 'Gattis', 'OF': 'Springer'}
+```
+
+---
+
+## **🔍 Querying a Dictionary**
+
+To access a value, use the corresponding key inside square brackets `[]`:
+
+```python
+second_base = players["2b"]
+print(second_base)  # Output: Altuve
+```
+
+If a key does not exist, Python raises a `KeyError`.
+
+```python
+print(players["xyz"])  # Raises KeyError
+```
+
+🔹 **To prevent errors, use the `.get()` method**, which returns `None` if the key is not found:
+
+```python
+print(players.get("xyz"))  # Output: None
+```
+
+📌 **Python Documentation:** [Dictionary Methods](https://docs.python.org/3/library/stdtypes.html#mapping-types-dict)
+
+---
+
+## **🔄 Adding & Updating Dictionary Entries**
+
+You can add new key-value pairs or update existing ones:
+
+```python
+players["C"] = "Maldonado"  # Adding a new entry
+players["OF"] = "Brantley"  # Updating an existing entry
+print(players)
+```
+
+✔ **Dictionaries are mutable**, meaning they can be modified after creation.
+
+---
+
+## **❌ Removing Items from a Dictionary**
+
+To remove an item, use the `del` statement or `.pop()` method:
+
+```python
+del players["DH"]  # Removes the key 'DH'
+print(players)
+```
+
+```python
+removed_player = players.pop("OF")  # Removes 'OF' and returns its value
+print(removed_player)  # Output: Brantley
+```
+
+📌 **Python Documentation:** [Removing Elements](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)
+
+---
+
+## **📜 Iterating Over a Dictionary**
+
+You can iterate over keys, values, or both:
+
+```python
+# Iterating through keys
+top_players = {"SS": "Correa", "2B": "Altuve", "3B": "Bregman"}
+for key in top_players:
+    print(key, "->", top_players[key])
+```
+
+✔ **Output:**
+
+```python
+SS -> Correa
+2B -> Altuve
+3B -> Bregman
+```
+
+```python
+# Iterating through values
+for value in top_players.values():
+    print(value)
+```
+
+```python
+# Iterating through key-value pairs
+for key, value in top_players.items():
+    print(f"{key}: {value}")
+```
+
+📌 **Python Documentation:** [Dictionary Iteration](https://docs.python.org/3/tutorial/datastructures.html#looping-techniques)
+
+---
+
+## **📌 Summary & Best Practices**
+
+✔ Use meaningful keys to improve readability.
+✔ Avoid mutable objects (like lists) as dictionary keys.
+✔ Use `.get()` to avoid `KeyError` exceptions.
+✔ Iterate using `.items()` for better efficiency.
 
 ****
 
@@ -75,14 +215,9 @@ decades and let's take out a printed version of a dictionary if you wanted to fi
 
 So, in other words, you would flip through the pages and each one of the pages would have some type of representation of a letter and then from there, you'd be able to go and find the value that you want.   
 
-
-
-
 ## Querying a value
 
 When we're talking about dictionaries in Python it's the same concept where we have some way of referencing this so **we actually are working with words instead of indices **and so that is a very very important distinction between the two.
-
-
 
 Now, how do we query these values?  
 
@@ -126,7 +261,6 @@ Run it again and everything is working and you can grab as many of these as you 
 So just for the sake of practice.
 
  Let's grab another one so if I say designated hitter I go access it and type in DH let's put that there. 
-
 
 Run it and you can see it brings back Gattis. Now, this is case 
 sensitive so if I type DH right here and run it it's going to throw us 
