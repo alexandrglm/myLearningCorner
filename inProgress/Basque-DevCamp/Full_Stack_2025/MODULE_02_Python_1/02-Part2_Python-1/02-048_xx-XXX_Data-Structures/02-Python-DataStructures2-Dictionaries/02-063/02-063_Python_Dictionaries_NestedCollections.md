@@ -1,4 +1,202 @@
-# MODULE 02-063: Python - Dictionaries, Nested Collections
+# **MODULE 02-063: Python - Dictionaries, Nested Collections**
+
+## **📌 Introduction to Nested Dictionaries**
+
+Dictionaries in Python store key-value pairs, where the values can be any data type, including other dictionaries or lists. When dictionaries contain other collections (lists, tuples, sets, or even other dictionaries), they are known as **nested dictionaries** or **nested collections**.
+
+Nested collections are widely used in data structures, APIs, JSON parsing, and database results. This guide covers how to create, query, and manipulate nested collections efficiently.
+
+📌 **Python Documentation:** [Dictionaries](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)
+
+---
+
+## **🔹 Creating a Nested Dictionary**
+
+We can create a nested dictionary by assigning a dictionary key with a **list** or **another dictionary** as its value:
+
+```python
+teams = {
+    "astros": ["Altuve", "Correa", "Bregman"],
+    "angels": ["Trout", "Pujols"],
+    "yankees": ["Judge", "Stanton"]
+}
+```
+
+✔ Each team name is a **key**, and its **value** is a list containing player names.
+
+📌 **Python Documentation:** [Lists](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists)
+
+---
+
+## **🔎 Querying Nested Collections**
+
+### **Accessing Entire Nested Lists**
+
+To retrieve all players of a specific team:
+
+```python
+print(teams["astros"])  # Output: ['Altuve', 'Correa', 'Bregman']
+```
+
+✔ This retrieves the list stored in `teams["astros"]`.
+
+### **Accessing Specific Elements**
+
+We can use **indexing** to fetch specific elements:
+
+```python
+print(teams["astros"][0])  # Output: 'Altuve'
+print(teams["yankees"][1])  # Output: 'Stanton'
+```
+
+✔ Retrieves the first player from `astros` and the second player from `yankees`.
+
+📌 **Python Documentation:** [Indexing and Slicing](https://docs.python.org/3/tutorial/introduction.html#strings)
+
+---
+
+## **🛠 Slicing Nested Lists**
+
+Slicing allows us to extract a portion of the list:
+
+```python
+print(teams["astros"][0:2])  # Output: ['Altuve', 'Correa']
+```
+
+✔ Returns only the first two elements of the `astros` list.
+
+📌 **Python Documentation:** [Slicing](https://docs.python.org/3/library/stdtypes.html#sequence-types-list-tuple-range)
+
+---
+
+## **🔄 Iterating Over a Nested Dictionary**
+
+We can loop through a dictionary and access the nested list elements:
+
+```python
+for team, players in teams.items():
+    print(f"Team: {team}, Players: {', '.join(players)}")
+```
+
+**Output:**
+
+```
+Team: astros, Players: Altuve, Correa, Bregman
+Team: angels, Players: Trout, Pujols
+Team: yankees, Players: Judge, Stanton
+```
+
+✔ `teams.items()` retrieves both the key (team name) and value (player list).
+
+📌 **Python Documentation:** [Dictionary Methods](https://docs.python.org/3/library/stdtypes.html#dict.items)
+
+---
+
+## **📌 Modifying Nested Collections**
+
+### **Adding a New Team**
+
+```python
+teams["red sox"] = ["Martinez", "Devers"]
+print(teams["red sox"])  # Output: ['Martinez', 'Devers']
+```
+
+✔ Adds a new key-value pair to the dictionary.
+
+### **Adding a Player to an Existing Team**
+
+```python
+teams["astros"].append("Springer")
+print(teams["astros"])  # Output: ['Altuve', 'Correa', 'Bregman', 'Springer']
+```
+
+✔ Uses `.append()` to add a new player to the `astros` list.
+
+📌 **Python Documentation:** [Modifying Lists](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists)
+
+---
+
+## **🗑 Removing Elements from a Nested Dictionary**
+
+### **Removing a Specific Player**
+
+```python
+teams["angels"].remove("Pujols")
+print(teams["angels"])  # Output: ['Trout']
+```
+
+✔ `.remove()` deletes a specific value from a list.
+
+### **Removing an Entire Team**
+
+```python
+del teams["yankees"]
+print(teams)
+```
+
+✔ Deletes the `yankees` entry from the dictionary.
+
+📌 **Python Documentation:** [Removing Items from a Dictionary](https://docs.python.org/3/tutorial/datastructures.html#the-del-statement)
+
+---
+
+## **🏗 Storing Nested Dictionary Elements in Variables**
+
+We can store elements in separate variables for easier access:
+
+```python
+astros_players = teams["astros"]
+print(astros_players)  # Output: ['Altuve', 'Correa', 'Bregman']
+```
+
+✔ Now `astros_players` acts as a reference to the list inside `teams`.
+
+---
+
+## **📌 Summary & Best Practices**
+
+✔ Use dictionaries to structure hierarchical data efficiently.
+✔ Remember that dictionary values can be **lists, sets, tuples, or even other dictionaries**.
+✔ Use **indexing and slicing** to retrieve specific elements from nested lists.
+✔ Use `.items()` to loop through both keys and values in a dictionary.
+✔ Use `.append()`, `.remove()`, and `del` to modify dictionary contents.
+✔ Store dictionary values in variables when frequent access is required.
+
+---
+
+## **📌 Full Code Implementation**
+
+```python
+# Nested Dictionary Example
+teams = {
+    "astros": ["Altuve", "Correa", "Bregman"],
+    "angels": ["Trout", "Pujols"],
+    "yankees": ["Judge", "Stanton"]
+}
+
+# Querying Data
+print(teams["astros"])  # Retrieve full list
+print(teams["astros"][1])  # Retrieve specific player
+
+# Slicing
+print(teams["angels"][0:2])
+
+# Iterating Over Dictionary
+for team, players in teams.items():
+    print(f"{team}: {', '.join(players)}")
+
+# Adding Elements
+teams["red sox"] = ["Martinez", "Devers"]
+teams["astros"].append("Springer")
+
+# Removing Elements
+del teams["yankees"]
+teams["angels"].remove("Pujols")
+
+# Storing in a Variable
+astros_players = teams["astros"]
+print(astros_players)
+```
 
 
 
