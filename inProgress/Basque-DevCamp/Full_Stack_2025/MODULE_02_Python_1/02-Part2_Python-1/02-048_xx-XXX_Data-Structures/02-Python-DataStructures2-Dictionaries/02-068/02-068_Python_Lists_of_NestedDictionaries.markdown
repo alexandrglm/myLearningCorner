@@ -1,6 +1,123 @@
-# Module 02 - 068: Python - Lists of Nested Dictionaries
+# # Module 02 - 068: Python - Lists of Nested Dictionaries
+
+## **📌 Overview**
+
+In this lesson, we will explore how to structure and traverse **lists containing nested dictionaries**. This is an essential skill when working with complex data structures, such as database query results or API responses.
 
 
+
+📌 **Python Documentation References:**
+
+- [Dictionaries](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)
+- [Lists](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists)
+
+---
+
+## **🔹 Creating a List of Nested Dictionaries**
+
+A list can contain multiple dictionaries, and each dictionary can store key-value pairs.
+
+```python
+teams = [
+    {
+        'astros': {
+            '2B': 'Altuve',
+            'SS': 'Correa',
+            '3B': 'Bregman'
+        }
+    },
+    {
+        'angels': {
+            'OF': 'Trout', 
+            'DH': 'Pujols'
+        }
+    }
+]
+```
+
+✔ **`teams` is a list that contains two dictionaries.**   
+
+✔ Each dictionary stores team names as keys and **nested dictionaries** as values.
+
+---
+
+## **🔍 Accessing Nested Data**
+
+### **1️⃣ Using List Indices to Access Dictionaries**
+
+To extract a specific dictionary from the list:
+
+```python
+print(teams[0])  # Output: {'astros': {'2B': 'Altuve', 'SS': 'Correa', '3B': 'Bregman'}}
+```
+
+✔ **`teams[0]` retrieves the first dictionary from the list.**
+
+---
+
+### **2️⃣ Using `.get()` to Retrieve Dictionary Values**
+
+To safely retrieve a team’s dictionary:
+
+```python
+angels = teams[1].get('angels', 'Team not found')
+print(angels)  # Output: {'OF': 'Trout', 'DH': 'Pujols'}
+```
+
+✔ **`get('angels', 'Team not found')` ensures that no errors occur if the key is missing.**
+
+📌 **Python Documentation:** [`.get()` method](https://docs.python.org/3/library/stdtypes.html#dict.get)
+
+---
+
+### **3️⃣ Extracting Values from a Nested Dictionary**
+
+Using `.values()` to retrieve player names:
+
+```python
+print(angels.values())  # Output: dict_values(['Trout', 'Pujols'])
+```
+
+✔ **Returns a dictionary view object containing only values.**
+
+---
+
+### **4️⃣ Converting Dictionary Values into a List**
+
+Using `list()` to convert the dictionary values into a list:
+
+```python
+players_list = list(angels.values())
+print(players_list)  # Output: ['Trout', 'Pujols']
+```
+
+✔ **Useful for list operations like sorting or indexing.**
+
+---
+
+### **5️⃣ Retrieving a Specific Value from the List**
+
+To extract a specific value:
+
+```python
+print(players_list[1])  # Output: 'Pujols'
+```
+
+✔ **`players_list[1]` fetches the second item in the list.**
+
+📌 **Python Documentation:** [`.values()` method](https://docs.python.org/3/library/stdtypes.html#dict.values)
+
+---
+
+## **📝 Summary**
+
+| Concept                                 | Example                                    |
+| --------------------------------------- | ------------------------------------------ |
+| **Retrieve a dictionary from the list** | `teams[0]`                                 |
+| **Use `.get()` to prevent errors**      | `teams[1].get('angels', 'Team not found')` |
+| **Extract dictionary values**           | `angels.values()`                          |
+| **Convert values into a list**          | `list(angels.values())`                    |
+| **Retrieve a specific player**          | `players_list[1]`                          |
 
 ****
 
