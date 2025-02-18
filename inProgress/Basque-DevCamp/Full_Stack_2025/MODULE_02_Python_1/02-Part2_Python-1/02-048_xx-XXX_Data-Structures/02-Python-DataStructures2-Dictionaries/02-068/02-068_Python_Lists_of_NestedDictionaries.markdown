@@ -4,8 +4,6 @@
 
 In this lesson, we will explore how to structure and traverse **lists containing nested dictionaries**. This is an essential skill when working with complex data structures, such as database query results or API responses.
 
-
-
 📌 **Python Documentation References:**
 
 - [Dictionaries](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)

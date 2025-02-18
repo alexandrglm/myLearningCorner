@@ -100,59 +100,67 @@ o:$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 """
 ```
 
-Welcome back. I hope that you were able to get through that exercise 
-successfully. Now let's come and let's build this and you'll see what my
- solution was when I was creating it.
+****
 
-So I'm going to create a dictionary here and I'm gonna store it in a 
-variable called sales and then I'm going to set up a number of key-value
- pairs so I'm gonna say Google and I'll say 20 then I'll say Facebook 
-and we'll say Facebook had 42 sales than say Twitter had 10. And then 
-offline had 12. And so these are sales figures that are stored in a 
-key-value based dictionary.
+Welcome back.  
 
-![large](https://s3-us-west-2.amazonaws.com/images-devcamp/Introduction+to+Programming+with+Python/Python+Data+Structures/Build+a+Histogram+in+Python+with+No+3rd+Party+Libraries+%23+1396/image4.png)
+ I hope that you were able to get through that exercise successfully.  
 
-Now in order to get this output we're going to have to perform some 
-calculations and then also have some output. Now once we get into our 
-section on looping and iteration then we could simply loop through all 
-of these items and multiply these values by the strings and then print 
-it all out. And that would give us our histogram.
+ Now let's come and let's build this and you'll see what my solution was when I was creating it.
+
+So, I'm going to create a dictionary here and I'm gonna store it in a variable called sales and then I'm going to set up a number of key-value pairs so I'm gonna say Google and I'll say 20 then I'll say Facebook and we'll say Facebook had 42 sales than say Twitter had 10.   
+
+And then offline had 12. And so these are sales figures that are stored in a key-value based dictionary.
+
+![large](02-069_IMG4.png)
+
+Now, in order to get this output we're going to have to perform some calculations and then also have some output.   
+
+Now, once we get into our section on looping and iteration then we could simply loop through all of these items and multiply these values by the strings and then print 
+it all out.   
+
+And that would give us our histogram.  
 
 However, I didn't want to give you something that I haven't taught 
-you yet. So we're going to do it with the assumption that we are only 
-going to use the knowledge we've gained in the course so far. So I'm 
-going to say print and then I want the first element to be just the 
-abbreviation. So I'm just going to say g right here and then a space and
- then I want to add on to this the other values. Now I'm using the older
- form of string interpellation. You also obviously could use the 
-traditional bracket syntax as well if you'd like. It's completely up to 
-you. But I wanted to show the various operands and how they could be 
-used to combine strings just so you can see that as an example.
+you yet.  
 
-So I'm going to say a g plus sales and perform the lookup for Google 
-right here. And that is going to give me my count. So if I simply wanted
- to see what that would be I can't do it yet because we're trying to 
-combine. If you notice a string with an integer. So we're going to have 
-to perform our multiplication so I'm going to say multiply this by the 
-dollar sign so you just do a single dollar sign. And if you remember 
-back to our order of operations because these are being multiplied this 
-is going to occur first. Remember whenever we perform multiplication 
-between a string and an integer it returns a string. So after we've done
- that then we will be able to add that. So I'm going to hit enter and 
-you can see this work perfectly.
+ So we're going to do it with the assumption that we are only going to use the knowledge we've gained in the course so far.   
 
-![large](https://s3-us-west-2.amazonaws.com/images-devcamp/Introduction+to+Programming+with+Python/Python+Data+Structures/Build+a+Histogram+in+Python+with+No+3rd+Party+Libraries+%23+1396/image5.png)
+So I'm going to say print and then I want the first element to be just the abbreviation.   
+
+So I'm just going to say g right here and then a space and then I want to add on to this the other values.  
+
+ Now I'm using the older form of string interpellation.  
+
+ You also obviously could use the traditional bracket syntax as well if you'd like.   
+
+It's completely up to you. But I wanted to show the various operands and how they could be used to combine strings just so you can see that as an example.
+
+So, I'm going to say a g plus sales and perform the lookup for Google right here.  
+
+ And that is going to give me my count. So, if I simply wanted to see what that would be I can't do it yet because we're trying to combine.   
+
+If you notice a string with an integer. So we're going to have to perform our ultiplication so I'm going to say multiply this by the dollar sign so you just do a single dollar sign.   
+
+And, if you remember back to our order of operations because these are being multiplied this is going to occur first.   
+
+Remember whenever we perform multiplication between a string and an integer it returns a string.   
+
+So, after we've done that then we will be able to add that.  
+
+ So I'm going to hit enter and you can see this work perfectly.
+
+![large](02-069_IMG5.png)
 
 So now let's just replicate that for each one of the other elements. 
 Here we have f for Facebook and next, we're going to go with t for 
 Twitter and lastly we will go with o for offline.
 
-![large](https://s3-us-west-2.amazonaws.com/images-devcamp/Introduction+to+Programming+with+Python/Python+Data+Structures/Build+a+Histogram+in+Python+with+No+3rd+Party+Libraries+%23+1396/image6.png)
+![large](02-069_IMG6.png)
 
 Now let's run this and see if it gives us what we want. And there you go.
 
-![large](https://s3-us-west-2.amazonaws.com/images-devcamp/Introduction+to+Programming+with+Python/Python+Data+Structures/Build+a+Histogram+in+Python+with+No+3rd+Party+Libraries+%23+1396/image7.png)
+![large](02-069_IMG7.png)
 
 You notice we have an identical histogram right here where we're able
  to calculate each one of the values parse them grab the count value for
@@ -167,21 +175,63 @@ dictionaries. So great job and I'll see you in the next section.
 ## Code
 
 ```python
+# Module 02 - 069: Python: Dictionaries, Exercise:
+## Building an Histogram with no external libraries
+
 """
-g $$$$$$$$$$$$$$$$$$$$
-f $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-t $$$$$$$$$$
-o $$$$$$$$$$$$
+Concepts:
+
+g $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+f $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+x $$$$$$$$$$$$$$$$$
+o $$$$$$$$$$$$$$$$$$$$$$$$
+
+print(4 + 'w')  # NOPE!
+print(4 * 'w')  # YEP!
 """
 
-sales = {
- 'google': 20,
- 'facebook': 42,
- 'twitter': 10,
- 'offline': 12,
+
+# Attempt 1
+
+dict_1 = {
+    '$' :   '$' * 10
 }
-print('g ' + sales['google'] * '$')
-print('f ' + sales['facebook'] * '$')
-print('t ' + sales['twitter'] * '$')
-print('o ' + sales['offline'] * '$')
+
+g = 7
+f = 8
+x = 4
+o = 5
+
+print( 'g:' + f'{dict_1['$'] * g}\n')
+print( 'f:' + f'{dict_1['$'] * f}\n')
+print( 'x:' + f'{dict_1['$'] * x}\n')
+print( 'o:' + f'{dict_1['$'] * o}\n')
+"""
+
+"""
+
+
+
+# Proposed solution
+## The dictionary must include all the variables, not the printed symbol!
+
+sales = {
+    'google' : 20,
+    'facebook' : 42,
+    'x-twitter' : 10,
+    'offline' : 12
+}
+
+
+print('g: ' + sales['google'] * '$')
+print('f: ' + sales['facebook'] * '$')
+print('x: ' + sales['x-twitter'] * '$')
+print('o: ' + sales['offline'] * '$')
+
+"""
+g: $$$$$$$$$$$$$$$$$$$$
+f: $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+x: $$$$$$$$$$
+o: $$$$$$$$$$$$
+"""
 ```
