@@ -1,6 +1,118 @@
-# Module 02 - 069: Python: Dictionaries, Exercise:
+# **Module 02 - 069: Python: Dictionaries, Exercise**
 
-## Building an Histogram with no external libraries
+## **Building a Histogram with No External Libraries**
+
+---
+
+## **📌 Introduction**
+
+In this exercise, we will build a simple histogram using Python **without any external libraries**.
+
+A **histogram** is a graphical representation of data distribution, commonly used in **statistics** and **machine learning** to identify patterns and trends.
+
+We will create a dictionary-based histogram that represents sales data using symbols. The program will dynamically count occurrences and visually display them as repeated symbols.
+
+---
+
+## **🔹 Problem Statement**
+
+Given a dataset of sales information, we need to:
+
+✅ Store sales figures using a **dictionary** (key-value pairs).
+✅ Represent different platforms using a **single character** (e.g., 'g' for Google).
+✅ Multiply the count by a chosen symbol (e.g., `$`) to visually display the data.
+✅ Print the histogram in a structured format.
+
+📌 **Example Output:**
+
+```plaintext
+ g: $$$$$$$$$$$$$$$$$$$$
+ f: $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+ x: $$$$$$$$$$
+ o: $$$$$$$$$$$$
+```
+
+---
+
+## **🔸 String Multiplication Trick**
+
+In Python, we can repeat strings using the multiplication operator (`*`).
+
+```python
+print(4 * 'w')  # Output: wwww
+```
+
+🚫 However, we **cannot** concatenate numbers and strings directly:
+
+```python
+print(4 + 'w')  # ❌ TypeError
+```
+
+This trick is the foundation of our histogram representation.
+
+---
+
+## **🎯 Attempt #1 (Incorrect Approach)**
+
+```python
+# Attempt 1: Incorrect approach (Does not use a dictionary correctly)
+
+dict_1 = {'$' : '$' * 10}  # Incorrectly stores the symbol
+
+g = 7
+f = 8
+x = 4
+o = 5
+
+print('g:' + f'{dict_1['$'] * g}\n')
+print('f:' + f'{dict_1['$'] * f}\n')
+print('x:' + f'{dict_1['$'] * x}\n')
+print('o:' + f'{dict_1['$'] * o}\n')
+```
+
+🔴 **Issues in Attempt #1:**
+
+- Stores only the symbol, not actual sales data.
+- Uses standalone variables (`g`, `f`, `x`, `o`) instead of storing them in a dictionary.
+- Does not dynamically iterate through the dictionary.
+
+---
+
+## **✅ Correct Solution: Using a Dictionary**
+
+```python
+# Correct Approach: Using a Dictionary
+
+sales = {
+    'google' : 20,
+    'facebook' : 42,
+    'x-twitter' : 10,
+    'offline' : 12
+}
+
+# Generating the Histogram Output
+print('g: ' + sales['google'] * '$')
+print('f: ' + sales['facebook'] * '$')
+print('x: ' + sales['x-twitter'] * '$')
+print('o: ' + sales['offline'] * '$')
+```
+
+✅ **This approach ensures:**
+
+- The dictionary correctly stores key-value pairs (`platform: sales count`).
+- Uses dictionary lookups instead of standalone variables.
+- Multiplication of string and integer dynamically generates the histogram.
+
+📌 **Output:**
+
+```plaintext
+g: $$$$$$$$$$$$$$$$$$$$
+f: $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+x: $$$$$$$$$$
+o: $$$$$$$$$$$$
+```
+
+
 
 ****
 
