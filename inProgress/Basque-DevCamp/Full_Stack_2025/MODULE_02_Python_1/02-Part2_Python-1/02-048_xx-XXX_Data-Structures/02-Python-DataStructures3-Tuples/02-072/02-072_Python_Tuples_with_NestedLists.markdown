@@ -1,6 +1,98 @@
-# Module 02 - 072: Tuples with Nested Lists
+# **Module 02 - 072: Python - Tuples with Nested Lists**
 
+In this guide, we explore an advanced use case for tuples: **tuples containing nested lists**. Tuples are immutable, meaning they cannot be changed after creation. However, if a tuple contains a **mutable object** (like a list), the contents of that object **can** be modified.
 
+Understanding this concept allows for more flexible data structures while maintaining the advantages of tuples.
+
+📌 **Python Documentation:** [Tuples and Sequences](https://docs.python.org/3/tutorial/datastructures.html#tuples-and-sequences)
+
+---
+
+## **🔹 Creating Tuples with Nested Lists**
+
+A tuple can contain different data types, including lists. Here’s an example:
+
+```python
+post = ('Python Basics', 'Intro guide to Python', ['Altuve', 'Correa', 'Bregman'])
+
+print(post)
+```
+
+✔ The third element is a **list**, while the tuple itself remains immutable.
+
+📌 **Why use this?**
+
+- We can **protect** the tuple’s structure while still allowing changes within the list.
+- Useful for **data groupings** where some values need updates while others remain constant.
+
+---
+
+## **🛠 Modifying Lists Inside Tuples**
+
+Although the tuple itself is immutable, we can modify the list inside it:
+
+```python
+post[2].append('Springer')  # Adds an element to the nested list
+print(post)
+```
+
+✔ The new item **'Springer'** is added to the list inside the tuple.
+
+📌 **Important:** The tuple **itself** has not changed; only the mutable list inside it was modified.
+
+---
+
+## **🚫 Attempting to Modify Tuple Elements**
+
+Trying to modify a tuple’s elements **directly** results in an error:
+
+```python
+post[1] = 'Advanced Python Guide'  # ❌ TypeError
+```
+
+❌ Tuples do **not** support item assignment.
+
+✔ Instead, we can create a **new tuple**:
+
+```python
+post = ('Advanced Python Guide', post[1], post[2])
+print(post)
+```
+
+✔ A new tuple is created, keeping immutability intact.
+
+---
+
+## **🔄 Replacing Lists in Tuples**
+
+Although we cannot modify tuple elements directly, we can **reassign the entire tuple** with an updated list:
+
+```python
+new_list = post[2] + ['New Player']  # Creates a new list
+post = (post[0], post[1], new_list)  # Creates a new tuple
+print(post)
+```
+
+✔ The list is **replaced** by a new one, keeping tuple immutability.
+
+---
+
+## **🔍 Practical Use Cases**
+
+📌 **Where is this useful?**
+
+- **Configurations:** Some values remain fixed, while others (lists) need updates.
+- **Data structures:** Maintaining structured, protected data with modifiable sections.
+- **Machine learning:** Feature sets where some parts are mutable.
+
+---
+
+## **📌 Summary & Best Practices**
+
+✔ **Tuples are immutable**, but **nested lists can be modified**.
+✔ To modify tuple elements, **create a new tuple**.
+✔ Tuples with lists **balance structure and flexibility**.
+✔ Use carefully when mixing immutable and mutable types.
 
 ****
 
@@ -51,7 +143,6 @@ And now if I run this we have access to the string of coding
 So, **we were able to traverse the entire post tuple the same way that we would a list with a nested list inside of it**.   
 
 And so this is going to be something that you're doing quite a bit if you're working with large data structures in machine learning or if you're building out web or mobile APIs for Python applications and any kind of tasks like that.   
-
 
 You're going to be working with state data structures quite a bit so it's good to practice these so you can be familiar with how that works.
 

@@ -131,7 +131,6 @@ Now, this is going to look a little bit odd if you've never seen this before but
 
 However, based on how tuples work and how python works when it comes to evaluating expressions what would happen right here is these parens.   
 
-
 Whenever you have a single element, this is not going to be treated like a tuple.   
 
 Instead what that's **going to be treated like is like a mathematical parens expression**.
@@ -182,8 +181,6 @@ information here because tuples, like I've mentioned multiple times, are
 
 **We can not change this specific object but what we can do is create two objects add them together so we're concatenating them and then put them inside of this variable and it's simply going to override it.**
 
-
-
 Now there are a couple of elements I want to add. One is that we can 
 use the shorthand syntax right here. So instead of saying post equals 
 post plus whatever value we have in the parens we can just add our 
@@ -229,8 +226,6 @@ Now that means that this object right here post is identical.
 
  Now watch what happens right after I have performed this assignment so when I've taken this tuple and I've said plus = and I have overridden this post variable with our new tuple where I've combined them.
 
-
-
 Watch what happens here. Now you're going to see three IDs that are 
 printed out and you're going to see the first two are identical because 
 they're both referencing the same object. However, when we perform this 
@@ -247,14 +242,11 @@ You can see the first two elements here because it's referencing the exact same 
 
 This 14 ending in 256.   
 
-
 However, this third one is for our post after we've created a new tuple a new set of combined tuples. This now ends in 5336 and so this is proof that we are no longer working with this original tuple.   
 
 This one was created it was used here, here and then we took it added this new 
 publish status to it and when we did that python went and it created a 
 new object in memory and therefore a new reference point.
-
-
 
 So that hopefully gives you a little bit of an idea of how immutability works especially when you perform an override.   
 
@@ -303,5 +295,4 @@ post += ('published',)
 
 print('\n\nReasigned Tuple: 'f'{post}')
 print(id(post)) # 140004734724480
-
 ```
