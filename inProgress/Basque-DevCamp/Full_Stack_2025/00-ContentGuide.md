@@ -52,7 +52,7 @@
 | [X] | 42  | Project 1 CSS-GRID              | Initial Styles for the Result Links                                               | 2025/01/29 |
 | [X] | 43  | CSS grid Checkpoint 1           | Course Checkpoint 1                                                               | 2025/01/29 |
 | [X] | 44  | Project 1 CSS-GRID              | Integrating a Nested SCSS Grids Container for Search Result Reference Links       | 2025/01/29 |
-| X ] | 45  | Project 1 CSS-GRID              | Implementing Shared Styles for Custom Input Elements to Decrease Code Duplication | 2025/01/29 |
+| [X] | 45  | Project 1 CSS-GRID              | Implementing Shared Styles for Custom Input Elements to Decrease Code Duplication | 2025/01/29 |
 | [X] | 46  | Project 1 CSS-GRID              | Final Project Changes for Daily Smarty Search Engine Front End Implementation     | 2025/01/29 |
 | [X] | 47  | DVCS: Git                       | Git Overview                                                                      | 2025/01/24 |
 | [X] | 48  | DVCS: GitHub basics             | How to Sign Up for a GitHub Account                                               | 2025/01/24 |
@@ -121,9 +121,9 @@
 | [X] | 20  | Literacy: Services architectures.                                                                                                                                                                                                     | Monolithic vs Microservice Application Architectures                                        | 2025/02/06 |
 | [X] | 21  | Literacy: Framework/App designing process.                                                                                                                                                                                            | Requirement Elicitation – A Guide for Feature Development                                   | 2025/02/06 |
 | [X] | 22  | Python (1) - Strings section                                                                                                                                                                                                          | Section Introduction                                                                        | 2025/02/06 |
-| [X] | 23  | Python: String basics                                                                                                                                                                                                                 | Python String Basics                                                                        | 2025/02/06 |
-| [X] | 24  | Python: String case .methods (`.uppercase` -  `.lower` -  `.title` - `.capitalize`) // Invoking functions VS Objects                                                                                                                  | Python String Case Functions                                                                | 2025/02/06 |
-| [X] | 25  | Python: Accessing Strings portions [start:end] / Zero-base / Inmutability                                                                                                                                                             | How to Access Portions of Strings in Python                                                 | 2025/02/06 |
+| [X] | 23  | Python: String basics                                                                                                                                                                                                                 | Python String Basics                                                                        | 2025/02/06 |
+| [X] | 24  | Python: String case .methods `.upper()` -  `.lower()` -  `.title()` - `.capitalize()` // Invoking functions VS Objects                                                                                                                | Python String Case Functions                                                                | 2025/02/06 |
+| [X] | 25  | Python - String:  `[start:stop]` / Zero-base / Inmutability                                                                                                                                                                           | How to Access Portions of Strings in Python                                                 | 2025/02/06 |
 | [X] | 26  | Python: Heredocs `"""` / `.strip()`                                                                                                                                                                                                   | Guide to Heredocs in Python                                                                 | 2025/02/06 |
 | [X] | 27  | Python: Raw Multi-Line Strings / `repr()` and `\n`                                                                                                                                                                                    | How to Build a Raw Multiline String in Python                                               | 2025/02/06 |
 | [X] | 28  | Python: `reduce()` / `lambda`                                                                                                                                                                                                         | Build a Dynamic Reducer in Python                                                           | 2025/02/07 |
@@ -141,46 +141,39 @@
 | [X] | 40  | Python: Number types                                                                                                                                                                                                                  | Overview of Number Types in Python                                                          | 2025/02/11 |
 | [X] | 41  | Python: Math operators                                                                                                                                                                                                                | Mathematical Operators in Python                                                            | 2025/02/11 |
 | [X] | 42  | Python: PEMDAS                                                                                                                                                                                                                        | Guide to the Order of Operations in Python                                                  | 2025/02/11 |
-| [X] | 43  | Python: Assignment Operators (`+=`,  `-=`,  ...)                                                                                                                                                                                      | How to Use Assignment Operators in Python                                                   | 2025/02/11 |
+| [X] | 43  | Python: Assignment Operators (`+=`,  `-=`,  ...)                                                                                                                                                                                      | How to Use Assignment Operators in Python                                                   | 2025/02/11 |
 | [X] | 44  | Python: Decimals & Floats                                                                                                                                                                                                             | Decimal vs Float in Python                                                                  | 2025/02/11 |
 | [X] | 45  | Python: `int()`, `float()`, `Decimal()`, `complex()`                                                                                                                                                                                  | How to Convert Between the Integer, Float, Decimal and Complex Numeric Data Types in Python | 2025/02/11 |
 | [X] | 46  | Python: `abs()`, `round()`, `math.floor()`, `math.ceiling()`, `math.sqrt()`, `math.pow()`, `math.exp()`, `math.log()`, `math.log10()`, `math.pi()`, `math.tau()`, `math.e()`, `math.inf()`, `math.sin()`, `math.cos()`, Tangent Pi/4. | Overview of Popular Math Functions in Python                                                | 2025/02/12 |
 | [X] | 47  | Python Exercise                                                                                                                                                                                                                       | Build a Manual Exponent Function in Python                                                  | 2025/02/12 |
 | [X] | 48  | Python - Data Structures                                                                                                                                                                                                              | Section Introduction                                                                        | 2025/02/12 |
-| [X] | 49  | Python: Lists / `.insert()` - `.append()` - `list[index]` queries and reasingments                                                                                                                                                    | Overview of Lists in Python                                                                 | 2025/02/12 |
-| [X] | 50  | Python: Lists removals / `.remove()` - `.pop()`- `del list[index]`- `.clear()`                                                                                                                                                        | Three Ways to Remove Elements from a Python List                                            | 2025/02/12 |
+| [X] | 49  | Python: Lists / `.insert()` - `.append()` - `list[index]` queries and reasingments                                                                                                                                                    | Overview of Lists in Python                                                                 | 2025/02/12 |
+| [X] | 50  | Python: Lists removals / `.remove()` - `.pop()`- `del list[index]`- `.clear()`                                                                                                                                                        | Three Ways to Remove Elements from a Python List                                            | 2025/02/12 |
 | [X] | 51  | Python: Nested Lists, Multiple data types.                                                                                                                                                                                            | Guide to Nested Lists and Best Practices for Storing Multiple Data Types in a Python List   | 2025/02/13 |
-| [X] | 52  | Python: Querying Lists / `len()` - `index()` - Negatives Indexes `var[-X]`                                                                                                                                                            | Overview of Python List Query Processes: len(), Negative Indexes, and index()               | 2025/02/13 |
-| [X] | 53  | Python: Sorting lists / `sort()` - `sort(reverse=True)`                                                                                                                                                                               | How to Sort Lists in Python                                                                 | 2025/02/13 |
+| [X] | 52  | Python: Querying Lists / `len()` - `index()` - Negatives Indexes `var[-X]`                                                                                                                                                            | Overview of Python List Query Processes: len(), Negative Indexes, and index()               | 2025/02/13 |
+| [X] | 53  | Python: Sorting lists / `sort()` - `sort(reverse=True)`                                                                                                                                                                               | How to Sort Lists in Python                                                                 | 2025/02/13 |
 | [X] | 54  | Python: Building URI queries / `.join()`                                                                                                                                                                                              | Using the join Function in Python to Build a URL Query String                               | 2025/02/13 |
 | [X] | 55  | Python: Lists' RANGES (1) / `list[ startDelimiter : endDelimiter ]`                                                                                                                                                                   | Overview of Ranges in Python Lists                                                          | 2025/02/13 |
-| [X] | 56  | Python: Lists RANGES and SLICES / `[ inclusive : exclusive : interval ]` - `.sort()`                                                                                                                                                  | Advanced Techniques for Implementing Ranges and Slices in Python Lists                      | 2025/02/13 |
-| [X] | 57  | Python: Lists - Storing sorted values /  `sorted(list)` - `sorted(list, reverse=True)`                                                                                                                                                | Guide to the sorted Function in Python                                                      | 2025/02/13 |
+| [X] | 56  | Python: Lists RANGES and SLICES / `[ inclusive : exclusive : interval ]` - `.sort()`                                                                                                                                                  | Advanced Techniques for Implementing Ranges and Slices in Python Lists                      | 2025/02/13 |
+| [X] | 57  | Python: Lists - Storing sorted values /  `sorted(list)` - `sorted(list, reverse=True)`                                                                                                                                                | Guide to the sorted Function in Python                                                      | 2025/02/13 |
 | [X] | 58  | Python Exercise: Finding MEDIAN on a list.                                                                                                                                                                                            | How to Find the Median of a Python List with an Odd Number of Numbers                       | 2025/02/14 |
-| [X] | 59  | Python: Lists - `slice(start, stop, step)` - `[ start : stop : step ]`                                                                                                                                                                | Working with the slice Class in Python to Store Slices                                      | 2025/02/14 |
-| [X] | 60  | Python: Lists -Adding items to a list with `In Place` and `Simple Copying`methods                                                                                                                                                     | How to Add to a List in Python with Both In Place and Copy Processes                        | 2025/02/15 |
+| [X] | 59  | Python: Lists - `slice(start, stop, step)` - `[ start : stop : step ]`                                                                                                                                                                | Working with the slice Class in Python to Store Slices                                      | 2025/02/14 |
+| [X] | 60  | Python: Lists -Adding items to a list with `In Place` and `Simple Copying`methods                                                                                                                                                     | How to Add to a List in Python with Both In Place and Copy Processes                        | 2025/02/15 |
 | [X] | 61  | Python Exercise: Dictionaries, `for .. in`, `ranges`, `Numpy`                                                                                                                                                                         | Build a Weighted Lottery Function in Python                                                 | 2025/02/16 |
 | [X] | 62  | Python - Dictionaries: Querying items(By Indices, by Ranges,) - Adding/Removing/etc.                                                                                                                                                  | Overview of Python Dictionaries                                                             | 2025/02/17 |
 | [X] | 63  | Python - Dictionaries: Nested Collections inside a Dictionary                                                                                                                                                                         | Guide to Nested Collections in Python Dictionaries                                          | 2025/02/17 |
 | [X] | 64  | Python - Dictionaries: Adding new Keys/Values                                                                                                                                                                                         | How to Add New Key/Value Pairs to Python Dictionaries                                       | 2025/02/17 |
 | [X] | 65  | Python - Dictionaries: `.get(key, value)`                                                                                                                                                                                             | Guide to Using the get Function in Python Dictionaries to Configure Fallback Lookup Values  | 2025/02/17 |
-| [X] | 66  | Python - Dictionaries:  `.keys()` - `.values()` -  `.items()` -  `.list()` -  `.copy()` -  `.list(dictionary.copy().items())` -  `.list(dictionary.items()[a][b][c])`"                                                                | Guide to Python Dictionary View Objects                                                     | 2025/02/17 |
-| [X] | 67  | Python - Dictionaries: `del dict('key')[value Index]` - `.pop()` - `.clear()`                                                                                                                                                         | Overview of the Multiple Methods for Deleting Items in a Python Dictionary                  | 2025/02/18 |
+| [X] | 66  | Python - Dictionaries:  `.keys()` - `.values()` -  `.items()` -  `.list()` -  `.copy()` -  `.list(dictionary.copy().items())` -  `.list(dictionary.items()[a][b][c])`"                                                                | Guide to Python Dictionary View Objects                                                     | 2025/02/17 |
+| [X] | 67  | Python - Dictionaries: `del dict('key')[value Index]` - `.pop()` - `.clear()`                                                                                                                                                         | Overview of the Multiple Methods for Deleting Items in a Python Dictionary                  | 2025/02/18 |
 | [X] | 68  | Python - Dictionaries, Lists of nested dicts / `list( dictionary[INDEX].get('key', 'else').values())[INDEX])`                                                                                                                         | Guide to Working with Lists of Nested Dictionaries                                          | 2025/02/18 |
-| [X] | 69  | Python - Dict. Exercise: Multiplying integers with strings, `dict['key']` management.                                                                                                                                                 | Build a Histogram in Python with No 3rd Party Libraries                                     | 2025/02/18 |
+| [X] | 69  | Python - Dict. Exercise: Multiplying integers with strings, `dict['key']` management.                                                                                                                                                 | Build a Histogram in Python with No 3rd Party Libraries                                     | 2025/02/18 |
 | [X] | 70  | Python - Tuples / Tuples' immutability.                                                                                                                                                                                               | Introduction to Python Tuples                                                               | 2025/02/18 |
-| [X] | 71  | Python - Tuples: `id()` - Re-assingning by merging a value ('value', ) to a new Tuple, then, renaming it to the original.                                                                                                             | How to Add Elements to a Tuple by Leveraging Re-Assignment                                  | 2025/02/18 |
+| [X] | 71  | Python - Tuples: `id()` - Re-assingning by merging a value ('value', ) to a new Tuple, then, renaming it to the original.                                                                                                             | How to Add Elements to a Tuple by Leveraging Re-Assignment                                  | 2025/02/18 |
 | [X] | 72  | Python - Tuples: `the_tuple[index of Tuple][index of List]`                                                                                                                                                                           | Working with Lists Nested in Tuples                                                         | 2025/02/18 |
 | [X] | 73  | Python - Tuples: `the_tuple[ start : stop : step]`                                                                                                                                                                                    | Guide to Slices in Python Tuples                                                            | 2025/02/18 |
 | [X] | 74  | Python - Tuples: `the_tuple[index]` - `the_tuple[start : stop]` - `list(the_tuple) + the_tuple.remove('the_item') + the_tuple = tuple(the_tuple)`                                                                                     | Three Ways to Remove Elements from a Python Tuple                                           | 2025/02/18 |
-| []  | 75  |                                                                                                                                                                                                                                       | Course Checkpoint 4                                                                         |            |
-
-### Module 2 keypoints:
-
-* Setting up a Python environment.
-* Differences on Python versions.
-* Performing a well DOC research.
-* Primitive data types. How/When to use them.
+| []  | 75  |                                                                                                                                                                                                                                       | Course Checkpoint 4                                                                         | 2025/02/19 |
 
 ***
 
@@ -188,9 +181,95 @@
 
 ## PYTHON (ii) - Loops, Conditionals, Data Structure, DB.
 
-```text
+|      | #   | Type                            | Tittle                                                                         | Date       |
+|:----:| --- | ------------------------------- |:------------------------------------------------------------------------------ |:----------:|
+| [X ] | 76  | Python:  Tuples into dict. keys | How to Use a Tuple as a Dictionary Key in Python                               | 2025/02/19 |
+| [ ]  | 77  |                                 | Guide to Python's Zip Function                                                 |            |
+| [ ]  | 78  |                                 | Introduction to the Python Set Data Structure                                  |            |
+| [ ]  | 79  |                                 | Various Methods for Merging Python Sets                                        |            |
+| [ ]  | 80  |                                 | Build an HTML Heading Generator Function in Python                             |            |
+| [ ]  | 81  |                                 | Introduction to Python Loops                                                   |            |
+| [ ]  | 82  |                                 | How to Implement Python Loops for Lists, Tuples, and Dictionaries              |            |
+| [ ]  | 83  |                                 | How to Loop Through the Characters of a Python String                          |            |
+| [ ]  | 84  |                                 | Guide to Looping Over Ranges in Python                                         |            |
+| [ ]  | 85  |                                 | Guide to Continue and Break in Python Loops                                    |            |
+| [ ]  | 86  |                                 | Overview of While Loops in Python                                              |            |
+| [ ]  | 87  |                                 | How to Combine and Flatten Lists in Python with the For / In Loop              |            |
+| [ ]  | 88  |                                 | Introduction to Using List Comprehension in Python                             |            |
+| [ ]  | 89  |                                 | Section Introduction                                                           |            |
+| [ ]  | 90  |                                 | Overview of Python Conditionals                                                |            |
+| [ ]  | 91  |                                 | How to Use the Ternary Operator in Python Conditionals                         |            |
+| [ ]  | 92  |                                 | Full List of Python Conditional Operators                                      |            |
+| [ ]  | 93  |                                 | How to Check if a Value is Included in a Python String or List                 |            |
+| [ ]  | 94  |                                 | How to Build Compound Conditionals in Python                                   |            |
+| [ ]  | 95  |                                 | Remove the First and Last Element from a Python List                           |            |
+| [ ]  | 96  |                                 | Python Methods and Functions Section Introduction                              |            |
+| [ ]  | 97  |                                 | Basic Syntax for Creating Python Functions                                     |            |
+| [ ]  | 98  |                                 | What Does it Mean to Return a Value from a Python Function?                    |            |
+| [ ]  | 99  |                                 | How to Nest Functions in Parent Functions in Python                            |            |
+| [ ]  | 100 |                                 | Guide to Default Arguments in Python Functions                                 |            |
+| [ ]  | 101 |                                 | How to Utilize Named Function Arguments in Python                              |            |
+| [ ]  | 102 |                                 | Guide to Function Argument Unpacking in Python                                 |            |
+| [ ]  | 103 |                                 | Overview of Keyword Arguments in Python Functions                              |            |
+| [ ]  | 104 |                                 | How to Combine All Argument Types in a Single Python Function                  |            |
+| [ ]  | 105 |                                 | Guide to Python Lambdas                                                        |            |
+| [ ]  | 106 |                                 | Project Requirements: Build FizzBuzz in Python                                 |            |
+| [ ]  | 107 |                                 | Solution to FizzBuzz in Python                                                 |            |
+| [ ]  | 108 |                                 | Python Importing Module Section Introduction                                   |            |
+| [ ]  | 109 |                                 | How to Create a Custom Module and Import It In the Python Repl                 |            |
+| [ ]  | 110 |                                 | How to Import a Custom Python Module into Another File                         |            |
+| [ ]  | 111 |                                 | How to Import a Single Function from a Python Module                           |            |
+| [ ]  | 112 |                                 | How to Import a Module and Assign an Alias in Python                           |            |
+| [ ]  | 113 |                                 | How to Install PIP On a Mac or Windows Machine                                 |            |
+| [ ]  | 114 |                                 | Introduction to the Numpy Package in Python                                    |            |
+| [ ]  | 115 |                                 | Overview of the Requests Package in Python to Communicate with APIs            |            |
+| [ ]  | 116 |                                 | Python Package Section Project Requirement                                     |            |
+| [ ]  | 117 |                                 | Project Solution: Build a Web Scraper in Python                                |            |
+| [ ]  | 118 |                                 | Course Checkpoint 5                                                            |            |
+| [ ]  | 119 |                                 | Guide to Pipenv for Managing a Python Project's Packages and Environment       |            |
+| [ ]  | 120 |                                 | Introduction to Classes in Python                                              |            |
+| [ ]  | 121 |                                 | Guide to Python's __init__ Constructor Function                                |            |
+| [ ]  | 122 |                                 | How to Get and Set Data in a Python Class                                      |            |
+| [ ]  | 123 |                                 | How to Work with Python Properties and Decorators                              |            |
+| [ ]  | 124 |                                 | Overview of Dunder Methods in Python: __init__                                 |            |
+| [ ]  | 125 |                                 | Overview of Dunder Methods in Python: __repr__                                 |            |
+| [ ]  | 126 |                                 | How to Build a Custom Iterator Class in Python                                 |            |
+| [ ]  | 127 |                                 | Overview of Iterators vs Generators in Python                                  |            |
+| [ ]  | 128 |                                 | Class vs Instance Attributes in Python                                         |            |
+| [ ]  | 129 |                                 | Introduction to Inheritance in Python                                          |            |
+| [ ]  | 130 |                                 | Using Polymorphism to Build an HTML Generator in Python                        |            |
+| [ ]  | 131 |                                 | Building Polymorphic Functions in Python                                       |            |
+| [ ]  | 132 |                                 | How to Create and Write to a File in Python                                    |            |
+| [ ]  | 133 |                                 | Using Regular Expressions to List File Types in Python                         |            |
+| [ ]  | 134 |                                 | Build a Pretty Price Method in Python                                          |            |
+| [ ]  | 135 |                                 | Postman Installation Guide for Linux                                           |            |
+| [ ]  | 136 |                                 | Guide to Using Postman for External and Local API Requests on Linux            |            |
+| [ ]  | 137 |                                 | Environment Setup for Hello World Flask Application                            |            |
+| [ ]  | 138 |                                 | How to Install Dependencies for Flask Database and API Features                |            |
+| [ ]  | 139 |                                 | Creating a SQLite Database in Flask with SQLAlchemy                            |            |
+| [ ]  | 140 |                                 | How to Create a POST API Endpoint in Flask                                     |            |
+| [ ]  | 141 |                                 | Building an API Endpoint in Flask for Returning All Records with a GET Request |            |
+| [ ]  | 142 |                                 | Implementing a Single Record GET Request in a Flask API                        |            |
+| [ ]  | 143 |                                 | Guide to Building an Update Action with a PUT Request in Flask                 |            |
+| [ ]  | 144 |                                 | How to Build a DELETE API Endpoint in Flask along with Project Summary         |            |
+| [ ]  | 145 |                                 | Get the Average from a List in Python                                          |            |
+| [ ]  | 146 |                                 | How to Install MongoDB on a Mac                                                |            |
+| [ ]  | 147 |                                 | Guide to Creating a MongoDB Database Along with Admin Database Users           |            |
+| [ ]  | 148 |                                 | How to Create a MongoDB Collection                                             |            |
+| [ ]  | 149 |                                 | Guide to Inserting Documents into a MongoDB Collection                         |            |
+| [ ]  | 150 |                                 | How to Insert Many Documents into a MongoDB Collection                         |            |
+| [ ]  | 151 |                                 | How to Query All Documents in a MongoDB Collection with the find() Method      |            |
+| [ ]  | 152 |                                 | How to Query for Specific Documents in a MongoDB Collection                    |            |
+| [ ]  | 153 |                                 | Introduction to MongoDB Projections                                            |            |
+| [ ]  | 154 |                                 | Query for a Portion of a Nested Array Element in a Document Using $slice       |            |
+| [ ]  | 155 |                                 | How to Delete Documents in MongoDB                                             |            |
+| [ ]  | 156 |                                 | How to Include Nested Fields in a find Query                                   |            |
+| [ ]  | 157 |                                 | Using the findOne Method in MongoDB to Query for a Single Document             |            |
+| [ ]  | 158 |                                 | How to Query for a Portion of a String in a MongoDB Document                   |            |
+| [ ]  | 159 |                                 | How to Check if a Field Exists in a MongoDB Document                           |            |
+| [ ]  | 160 |                                 | Course Checkpoint 6                                                            |            |
 
-```
+****
 
 ### Module 3 keypoints:
 
