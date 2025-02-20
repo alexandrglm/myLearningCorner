@@ -186,8 +186,8 @@
 | [X] | 76  | Python:  Tuples into dict. keys | How to Use a Tuple as a Dictionary Key in Python                               | 2025/02/19 |
 | [X] | 77  | Python: `zip()` - `zip(*)`      | Guide to Python's Zip Function                                                 | 2025/02/19 |
 | [X] | 78  | Python: SETs                    | Introduction to the Python Set Data Structure                                  | 2025/02/20 |
-| [ ] | 79  |                                 | Various Methods for Merging Python Sets                                        |            |
-| [ ] | 80  |                                 | Build an HTML Heading Generator Function in Python                             |            |
+| [X] | 79  | Python: Sets -                  | Various Methods for Merging Python Sets                                        | 2025/02/20 |
+| [X] | 80  | Python: Exercise                | Build an HTML Heading Generator Function in Python                             |            |
 | [ ] | 81  |                                 | Introduction to Python Loops                                                   |            |
 | [ ] | 82  |                                 | How to Implement Python Loops for Lists, Tuples, and Dictionaries              |            |
 | [ ] | 83  |                                 | How to Loop Through the Characters of a Python String                          |            |
