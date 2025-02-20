@@ -67,8 +67,6 @@ print(list(priority_index.keys()))    # [(1, 'premier'), (1, 'mvp'), (2, 'standa
 print(priority_index[(1, 'mvp')])     # [84, 22, 24]    
 ```
 
-
-
 ****
 
 ## Video lesson Speech
@@ -83,12 +81,7 @@ But, now, we can actually add multiple values inside of each one of those keys.
 
 So, what I'm going to do for an example :
 
-
-
 Let's imagine that we had an e-commerce site and we wanted to keep track of the various packages that we had. 
-
-
-
 
 We also wanted to include some metadata into the Keys, so I'm going to create a variable here called <mark>Priority index</mark> and I'm going to place a dictionary inside of it.
 
@@ -124,7 +117,6 @@ priority_index = {
 
 So, **what we have here is a very interesting kind of data structure** because we're combining all three of the popular Python data structures.  
 
-
  We have a dictionary, we have a tuple that is being used as a key and then the value is the list.   
 
 And so, **what this allows us to do is actually to add metadata directly into our key**.
@@ -153,8 +145,6 @@ So, in summary, that is how you can utilize tuples in Python as your dictionary 
 
 ****
 
-
-
 ## Code
 
 ```python
@@ -181,7 +171,4 @@ print( list( priority_index.keys() ) )  # [(1, 'premier'), (1, 'mvp'), (2, 'stan
 ## As a list, or original format (must know all dict keys)
 
 print( priority_index[1, 'mvp'] )   # [84, 22, 24]
-
-
-
 ```
