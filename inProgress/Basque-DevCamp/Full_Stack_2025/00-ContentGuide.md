@@ -184,7 +184,7 @@
 |      | #   | Type                            | Tittle                                                                         | Date       |
 |:----:| --- | ------------------------------- |:------------------------------------------------------------------------------ |:----------:|
 | [X ] | 76  | Python:  Tuples into dict. keys | How to Use a Tuple as a Dictionary Key in Python                               | 2025/02/19 |
-| [ ]  | 77  |                                 | Guide to Python's Zip Function                                                 |            |
+| [X ] | 77  | Python: `zip()` - `zip(*)`      | Guide to Python's Zip Function                                                 |            |
 | [ ]  | 78  |                                 | Introduction to the Python Set Data Structure                                  |            |
 | [ ]  | 79  |                                 | Various Methods for Merging Python Sets                                        |            |
 | [ ]  | 80  |                                 | Build an HTML Heading Generator Function in Python                             |            |
