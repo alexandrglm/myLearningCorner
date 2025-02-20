@@ -187,8 +187,6 @@ print(difference_sets)
 print(difference_sets_2)
 ```
 
-
-
 📌 **Python Documentation:** [Set Methods](https://docs.python.org/3/library/stdtypes.html#set)
 
 ---
@@ -210,7 +208,6 @@ tags.add('Yep')
 
 print(tags)
 print(immutable_tags)   # frozenset({'python', 'coding', 'tutorials'})# Attempting to modify will raise an error
-
 ```
 
 📌 **Python Documentation:** [frozenset](https://docs.python.org/3/library/functions.html#frozenset)
@@ -225,8 +222,6 @@ print(immutable_tags)   # frozenset({'python', 'coding', 'tutorials'})# Attempti
 ✔ **Use `frozenset()` when immutability is required**.
 ✔ **Avoid relying on ordering** as sets are unordered.
 
-
-
 ****
 
 ## Video lesson Speech
@@ -237,8 +232,6 @@ covered lists, we've covered dictionaries and we've covered tuples.
 In this last section, we are going to cover one more data structure, the Set.
 
 ****
-
-
 
 Now, I left this one for the last because you're not going to be using sets a ton when you're building out Python applications.   
 
@@ -356,15 +349,11 @@ immutable_new_set = frozenset('This', 'Set', 'is', 'immutable')
 
 print(immutable)
 print(tags)
-
-
 ```
 
 As you can see, a frozen set cannot handle any manipulation:
 
 ![IMG](./03-078_IMG7.png)
-
-
 
 ****
 
@@ -505,5 +494,4 @@ tags.add('Yep')
 
 print(tags)
 print(immutable_tags)   # frozenset({'python', 'coding', 'tutorials'})
-
 ```
