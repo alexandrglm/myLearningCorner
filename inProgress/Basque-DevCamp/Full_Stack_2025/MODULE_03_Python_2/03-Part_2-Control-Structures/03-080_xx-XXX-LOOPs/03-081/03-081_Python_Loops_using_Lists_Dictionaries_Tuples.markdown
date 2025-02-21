@@ -1,6 +1,190 @@
-# MODULE 03 - 081: Python - Loops using lists, dictionaries, tuples
+# MODULE 03 - 081: Python - Loops using Lists, Dictionaries, and Tuples
 
+## Understanding Loops in Python
 
+In this guide, we will explore how to iterate over collections in Python using loops. We will cover three key data structures:
+
+- **Lists**
+- **Tuples**
+- **Dictionaries**
+
+Python provides an intuitive `for...in` loop structure that allows us to iterate over these collections efficiently.
+
+---
+
+## Using `for...in` with Lists
+
+A list is a collection of items stored in square brackets `[]`. The most common way to iterate through a list is using a `for...in` loop.
+
+### Example:
+
+```python
+players = ['Altuve', 'Bregman', 'Correa', 'Gattis']
+
+for player in players:
+    print(player)
+```
+
+### Output:
+
+```
+Altuve
+Bregman
+Correa
+Gattis
+```
+
+### Explanation:
+
+- The loop variable `player` represents each item in the `players` list.
+- In each iteration, `player` is assigned the next item in the list.
+- The `print()` statement outputs the current `player` value.
+
+#### **Convention:**
+
+- If iterating over a collection with a plural name (`players`), use a singular form (`player`) as the iterator variable.
+
+- Example:
+  
+  ```python
+  for square in squares:
+  ```
+
+---
+
+## Using `for...in` with Tuples
+
+A **tuple** is similar to a list but immutable (cannot be changed). Tuples are created using parentheses `()`.
+
+### Example:
+
+```python
+players = ('Altuve', 'Bregman', 'Correa', 'Gattis')
+
+for player in players:
+    print(player)
+```
+
+### Output:
+
+```
+Altuve
+Bregman
+Correa
+Gattis
+```
+
+### Key Points:
+
+- **Tuples work exactly like lists in loops**.
+- Since tuples are immutable, their elements cannot be changed inside the loop.
+- Using tuples is useful when we want to ensure the data structure remains unchanged.
+
+---
+
+## Using `for...in` with Dictionaries
+
+Dictionaries store **key-value pairs** and are created using curly braces `{}`.
+
+### Example:
+
+```python
+players = {
+    '2b': 'Altuve',
+    '3b': 'Bregman',
+    'ss': 'Correa',
+    'dh': 'Gattis'
+}
+
+for position, player in players.items():
+    print(f'Position: {position}, Player: {player}')
+```
+
+### Output:
+
+```
+Position: 2b, Player: Altuve
+Position: 3b, Player: Bregman
+Position: ss, Player: Correa
+Position: dh, Player: Gattis
+```
+
+### Explanation:
+
+- The `.items()` method returns **key-value pairs** from the dictionary.
+- `position` holds the **key** (e.g., `'2b'`), and `player` holds the **value** (e.g., `'Altuve'`).
+- Each iteration prints both the position and the player's name.
+
+#### **Alternative Iterations:**
+
+If we only want the keys:
+
+```python
+for position in players:
+    print(position)
+```
+
+Output:
+
+```
+2b
+3b
+ss
+dh
+```
+
+If we only want the values:
+
+```python
+for player in players.values():
+    print(player)
+```
+
+Output:
+
+```
+Altuve
+Bregman
+Correa
+Gattis
+```
+
+---
+
+## **Understanding Indentation in Loops**
+
+Python enforces indentation to define code blocks.
+
+### Incorrect Indentation (Throws an Error):
+
+```python
+for player in players:
+print(player)  # ❌ IndentationError
+```
+
+### Correct Indentation:
+
+```python
+for player in players:
+    print(player)  # ✅ Proper indentation
+```
+
+### Error Message:
+
+```
+IndentationError: expected an indented block
+```
+
+Make sure your code is **properly indented** to avoid errors!
+
+---
+
+## **Summary of Key Takeaways**
+
+✔ Use `for...in` loops to iterate over lists, tuples, and dictionaries.
+✔ Tuples and lists can be looped over the same way.
+✔ Use `.items()` to iterate over dictionary key-value pairs.
+✔ Always maintain **proper indentation** inside loops.
 
 ****
 
@@ -164,8 +348,6 @@ But, if you're using some other type of local development environment that doesn
 
 ![large](03-081_IMG6.png)
 
-
-
 So, whenever you see this colon in Python you will most likely need to have the next set of code so anything inside of this is called a code block.
 
 And so, you will have to have all of the rest of the code indented with either two spaces or 4 spaces.   
@@ -180,19 +362,74 @@ But we haven't talked about indentation when it comes to python and so I wanted
 ## Code
 
 ```python
+# Working with Lists
 players = ['Altuve', 'Bregman', 'Correa', 'Gattis']
-players = ('Altuve', 'Bregman', 'Correa', 'Gattis')
-
 for player in players:
- print(player)
-players = {
- '2b': 'Altuve',
- '3b': 'Bregman',
- 'ss': 'Correa',
- 'dh': 'Gattis'
-}
+    print(player)
 
+# Working with Tuples
+players = ('Altuve', 'Bregman', 'Correa', 'Gattis')
+for player in players:
+    print(player)
+
+# Working with Dictionaries
+players = {
+    '2b': 'Altuve',
+    '3b': 'Bregman',
+    'ss': 'Correa',
+    'dh': 'Gattis'
+}
 for position, player in players.items():
- print('Position', position)
- print('Player', player)
+    print(f'Position: {position}, Player: {player}')
+```
+
+****
+
+## Coding Exercise
+
+```python
+## Coding Exercise:
+"""
+Create a list named my_list with 5 elements. Then loop over the list to print out each element.
+
+def loop_over_list():
+    # Write your code here
+
+
+    return my_list
+
+"""
+# But I like to complicate things, so, the list has to be created automatically with random items:
+def loop_over_list():
+
+    # Our list is empty
+    my_list = []
+
+    # We want to add 5 random numbers, but we can't import any modules, so,
+    # "randomisation" has to be done manually:
+
+    max_range = 5 # We set the max size of our list
+    items_included = 99999999999 # Here, we set "how many numbers" will be available to "random" choose
+
+    for items in range(max_range):
+        """
+        Hash, like id() returns the unique identificator, as a hash, so
+        we use the modulus operator to get: 
+
+        - The rest of dividing every new hash of each item is being recently created but parsed to a string, 
+        - (divided by) all the numbers/items can be included.
+
+        This give us a random number everytime, that we append to the list
+        each times the max_range tells.
+        """
+        my_list.append(hash(str(items)) % items_included)        
+
+    # Finally, the ACE editor tell us to print each item included in our recently created list, so:
+    for items in my_list:
+        print(items)
+
+    return my_list
+
+
+loop_over_list()
 ```
