@@ -131,10 +131,6 @@ print(heading_generator("Safe Title", 2))  # Works fine
 - [Formatted Strings (f-strings)](https://docs.python.org/3/tutorial/inputoutput.html#formatted-string-literals)
 - [Functions](https://docs.python.org/3/tutorial/controlflow.html#defining-functions)
 
-
-
-
-
 ****
 
 ## Video lesson Speech

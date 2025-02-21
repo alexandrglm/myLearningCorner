@@ -1,4 +1,120 @@
-# MODULE 03 - 083: Python - Loop over Range()
+## MODULE 03 - 083: Python - Loop over `range()`
+
+****
+
+## Understanding `range()` in Python Loops
+
+In this guide, we'll explore how Python's `range()` function works and how to use it effectively within loops. So far, we've iterated through collections such as lists, tuples, dictionaries, and even strings. Now, we'll see how to iterate over a specific sequence of numbers using `range()`.
+
+### `range(start, stop)`
+
+If you need to execute a loop a specific number of times without relying on the length of a list or another collection, `range()` provides a clean and efficient solution.
+
+```python
+for num in range(1, 10):
+    print(num)
+```
+
+#### Explanation:
+
+- `range(1, 10)` generates numbers starting from `1` up to, but **not including**, `10`.
+- This behavior is similar to slicing lists, where the upper bound is exclusive.
+- The loop prints numbers `1` through `9`, **not 10**.
+
+#### Output:
+
+```shell
+1
+2
+3
+4
+5
+6
+7
+8
+9
+```
+
+If you want to include `10`, you need to set the stop value to `11`:
+
+```python
+for num in range(1, 11):
+    print(num)
+```
+
+### `range(start, stop, step)`
+
+You can also specify a `step` argument to control the interval between numbers.
+
+```python
+for num in range(1, 11, 2):
+    print(num)
+```
+
+#### Explanation:
+
+- `range(1, 11, 2)` generates numbers starting from `1` up to, but **not including**, `11`, incrementing by `2` at each step.
+- This results in skipping every other number.
+
+#### Output:
+
+```shell
+1
+3
+5
+7
+9
+```
+
+If we change the step to `3`, we get:
+
+```python
+for num in range(1, 11, 3):
+    print(num)
+```
+
+#### Output:
+
+```shell
+1
+4
+7
+10
+```
+
+### Practical Uses of `range()`
+
+- **Looping a fixed number of times**: Useful when executing code a set number of times.
+- **Skipping elements**: You can process every nth element efficiently.
+- **Index-based iteration**: Often combined with `len()` to iterate over lists using indices.
+
+```python
+names = ["Alice", "Bob", "Charlie"]
+for i in range(len(names)):
+    print(f"Index {i}: {names[i]}")
+```
+
+#### Output:
+
+```shell
+Index 0: Alice
+Index 1: Bob
+Index 2: Charlie
+```
+
+---
+
+### Summary
+
+- `range(start, stop)` iterates from `start` to `stop-1`.
+- `range(start, stop, step)` adds control over the stepping interval.
+- `range()` is commonly used for looping a fixed number of times or iterating over indexed elements in a list.
+
+---
+
+### Python Documentation Reference:
+
+📌 [Python `range()` function](https://docs.python.org/3/library/stdtypes.html#range)
 
 ****
 
@@ -63,6 +179,8 @@ And as you might have guessed if I change this to three and run it again it is g
 
 And this is a really nice way of being able to create a range and then have the kind of control and flexibility for only grabbing the elements and the intervals that you actually want to show.
 
+****
+
 ## Code
 
 ```python
@@ -72,3 +190,16 @@ for num in range(1, 10):
 for num in range(1, 10, 2):
  print(num)
 ```
+
+****
+
+## Coding Exercise
+
+Using a range, write a loop that prints out all the numbers from one through 10 (10 is included).
+
+```python
+def loop_over_range():
+    # Write your code here
+```
+
+
