@@ -1,4 +1,4 @@
-## MODULE 03 - 080: Python Control Structures - Loops
+## MODULE 03 - 081: Python Control Structures - Loops
 
 ## Understanding Loops in Python
 
@@ -236,7 +236,7 @@ Well, the answer is that you're going to be using a for-in loop most likely abou
 ## Code examples
 
 ```python
-# 03-080. Control Structures -> Loops
+# 03-081. Control Structures -> Loops
 import random
 
 
