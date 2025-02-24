@@ -1,4 +1,69 @@
-# Module 03 - 095: Python - Exercise: Removing First and Last elements from a list
+# MODULE 03 - 095: Python Exercise:
+
+#### Exercise: Packing / Unpacking with Goblins
+
+When working with lists in Python, it is common to encounter situations where we need to remove the **first and last elements** while keeping the core data intact.
+
+This is especially useful in cases such as cleaning structured data, processing **HTML elements**, or handling **parsed information** extracted from external sources.
+
+Python provides a convenient way to achieve this efficiently, making list manipulation more dynamic and readable.
+
+🔗 **Reference:** [Python Unpacking Generalizations]([7. Simple statements — Python 3.13.2 documentation](https://docs.python.org/3/reference/simple_stmts.html#assignment-statements))
+
+---
+
+## 📌 Concept: Why Remove the First and Last Elements?
+
+In many scenarios, the first and last elements of a list serve as **wrappers** or **metadata** rather than essential content. Removing them allows us to retain the meaningful data while discarding unnecessary structure. Some common use cases include:
+
+- **Cleaning HTML-like structures**, where the first and last elements represent opening and closing tags.
+- **Extracting relevant data** from API responses or structured text lists.
+- **Filtering out redundant information** from pre-formatted datasets.
+
+---
+
+## 📌 Applying List Destructuring
+
+Python supports **destructuring**, a technique that allows for easy unpacking of elements within a list. By leveraging destructuring, we can efficiently separate the first and last elements from the central content.
+
+### 🔹 How Destructuring Works
+
+Destructuring in Python allows elements of a list to be assigned to multiple variables at once. A useful technique within destructuring is the use of **globbing (`*`)**, which collects multiple elements into a separate variable:
+
+```
+first, *content, last = my_list
+```
+
+Here’s how each element is assigned:
+
+- `first` → Stores the **first element**.
+- `last` → Stores the **last element**.
+- `*content` → Captures **everything in between** as a new list.
+
+This technique provides a simple way to extract the core data without manually iterating through the list.
+
+---
+
+## 📌 Practical Applications
+
+By applying these concepts, we can enhance various tasks involving **list processing**:
+
+- **Web scraping** → Removing HTML tags while retaining content.
+- **Log file analysis** → Filtering out headers and footers.
+- **Data transformation** → Keeping only relevant information in structured datasets.
+
+---
+
+## 📌 Summary
+
+- **Removing the first and last elements** is useful for cleaning structured data.
+- **Destructuring with `*` globbing** allows for efficient extraction of content.
+- **Common use cases** include **HTML parsing, data filtering, and text processing**.
+- This method helps in making **list manipulation more dynamic and readable**.
+
+****
+
+## Video lesson Speech
 
 In this Python programming exercise, we are going to see how we can remove the first and the last elements from the list.
 
@@ -284,9 +349,132 @@ So, if you're looking for a way to **extend this exercise** and **learn a little
 
 ****
 
-## SOlution
+## Entire code, attemps & solution
 
 ```python
+# 03-095: Stretching a list
+
+"""
+remove_first_and_last(list_to_clean)
+
+html_content = ['<h1>', 'Some Content', '</h1>']
+
+remove_first_and_last(html)
+=> 'some content'
+
+html_2 = ['<h1>', 'Some Content', 'more content', '</h1>']
+=> ['some content', 'more content']
+"""
+# ATTEMPT 1
+
+# a simple solution, case "<xx>" then remove
+# This removes tags if specified manually into while
+
+html_2 = ['<h1>', 'Some Content', 'more content', '</h1>']
+
+tags = ['<h1>', '</h1', '<h2>', '</h2>', '<h3>', '</h3>', '<h4>', '</h4>', '<h5>', '</h5>', '<h6>', '</h6>']
+
+def cleaning(html_2):
+
+    iter = 0
+
+    while '<h1>' in html_2 and '</h1>'  in html_2:
+        html_2.remove('<h1>')
+        html_2.remove('</h1>')
+    for each in html_2:
+        iter += 1
+        print(f'Scrapped Content #{iter} : {each}')    
+
+cleaning(html_2)
+
+
+
+
+# ATTEMTP 2
+# This
+
+html_3 = ['<h1>', 'Some Content', 'more content', '</h1>', '<h3>', 'Another subheading', '</h3>']
+
+tags = ['<h1>', '</h1>', '<h2>', '</h2>', '<h3>', '</h3>', '<h4>', '</h4>', '<h5>', '</h5>', '<h6>', '</h6>']
+
+def maxi_cleaner(html_scrapped):
+    counter = 0
+
+    html_scrapped = [ element for element in html_scrapped if element not in tags ]
+
+    for each in html_scrapped:
+        counter +=1
+        print(f'Extracted Content #{counter} :', each )
+
+
+maxi_cleaner(html_3)
+
+
+
+
+# ATTEMPT 3, improving the RegExps
+
+html_4 = [
+    '<h1>', 'Some Content', 'more content', '</h1>', 
+    '<h3>', 'Another subheading', '</h3>',
+    '<h4>', 'More content', '</h4>',
+    '<h6>', 'And much more', 'Even much more', '</h4>'
+    ]
+
+def maxi_cleaner_regexp(html_scrapped_2):
+
+    counter = 0
+
+    tags = [f'<h{heading}>' for heading in range(1,7)] + [f'</h{heading}>' for heading in range(1,7)]
+
+    html_scrapped_2 = [ element for element in html_scrapped_2 if element not in tags ]
+
+    for each in html_scrapped_2:
+        counter +=1
+        print(f'Attempt # content extracted:  #{counter} :', each )
+
+
+maxi_cleaner_regexp(html_4)
+
+###############################
+
+# 03-095
+# This is the guided solution after 72_EXERCISE_Methods_0-Stretching_a_list.py tries
+
+# Goblin theory
+
+nums = [1, 2, 2.5, 2.6, 3, 4]
+print('\nA simple list:  ', nums)
+
+
+
+# First glob used, floats belong to its root base
+
+one, *two, three, four = [1, 2, 2.5, 2.6, 3, 4]
+print('\nRoot 1: ', one)
+print('\nRoot 2: ', two)
+print('\nRoot 3: ', three)
+print('\nRoot 4: ', four)
+
+
+# ATTEMPT 4: using globs
+
+html_content = ['<h1>', 'Content', 'More Content', '</h1>']
+
+def remove_first_and_last(html_content):
+
+    _, *content, _ = html_content
+    counter = 0
+    for each in content:
+        print(f'\nExtracted content #{counter + 1} : ', each)
+        counter += 1
+    return content
+
+remove_first_and_last(html_content)
+
+
+
+
 # SOLUTION
 
 def remove_first_and_last(list_to_clean):
@@ -302,7 +490,7 @@ other_content_to_clean = ['', 'My content', 'Something else', '/']
 
 print('\nSolution: ', remove_first_and_last(other_content_to_clean))
 
-more_content = ['garbage', 'a','b','c','d','e', 'garbage']
+more_content = ['', 'a','b','c','d','e']
 print(remove_first_and_last(more_content))
 ```
 
