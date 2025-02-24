@@ -1,6 +1,6 @@
-# MODULE 03 - 081: Python - Loops using Lists, Dictionaries, and Tuples
+# MODULE 03 - 082: Python - Loops using Lists, Dictionaries, and Tuples
 
-## Understanding Loops in Python
+
 
 In this guide, we will explore how to iterate over collections in Python using loops. We will cover three key data structures:
 
@@ -222,15 +222,15 @@ It's because python does force you to utilize indentation for code blocks. So fo
 
 So, now, if I call this you'll see that it prints out each one of the strings Altuve to all the way through Gattis.
 
-![large](03-081_IMG1.png)
+![large](./03-082_IMG1.png)
 
 Now, before we go on to tuples or dictionaries,  let's take a step back and see exactly what is going on right here.   
 
-So, this player this is a common convention when you're iterating over a collection like we are right here.   
+So, this player this is a commo
 
 So, the word players is the variable. This is a direct mapping to players right here.
 
-![large](03-081_IMG2.png)
+![large](./03-082_IMG2.png)
 
 So this, we need to keep the name here identical because this is the collection we're iterating over.  
 
@@ -241,7 +241,7 @@ nothing specific about using the word player here.
 
 If I said X and then change this to x then this would still work:
 
-![large](03-081_IMG3.png)
+![large](./03-082_IMG3.png)
 
 So, if I run this you can see that it still works exactly the same way.   
 
@@ -272,11 +272,11 @@ So, this is how you can iterate over a list.
 ### for...in with Tuples
 
  Now, if we change this list and we change this to be a tuple it will work exactly the same way and that's one of the very nice things about working with tuples and 
-lists is they do have a bit of shared performance and behavior.  
+lists i
 
 So, if I hit run now you can see this works exactly the same way.
 
-![large](03-081_IMG4.png)
+![large](./03-082_IMG4.png)
 
 So, you can work with both of those data structures and treat them very similarly when it comes to looping.
 
@@ -327,9 +327,9 @@ let's just copy this and now I'll say Player Name and this will now say player.
 
 And now let's run this and see if this is working and it is.   
 
-You can see the first iteration has the position of second base and the player name of Altuve so this is working perfectly.
+You can see the first iteration has the position of second base and the player name of Altuve so this is working perfectl
 
-![large](03-081_IMG5.png)
+![large](./03-082_IMG5.png)
 
 Now, one little thing I want to point out before we finish this guide is, **the importance of indentation**.   
 
@@ -342,11 +342,11 @@ for player in players:
 
 You are going to have an error if you try to run this and repl will give you a little syntax error X right here
 
-![large](03-081_IMG6.png)
+![large](./03-082_IMG6.png)
 
-But, if you're using some other type of local development environment that doesn't have these kinds of Checker's then you are going to run into an odd error called an indentation error I'm gonna run it right now and you'll see it and you can see it as indentation error expected an indented block.
+But, if you're using some other type of local development environment that doesn't have these kinds of Checker's then you are going to run into an odd error called an indentation error I'm gonna run
 
-![large](03-081_IMG6.png)
+![large](./03-082_IMG6.png)
 
 So, whenever you see this colon in Python you will most likely need to have the next set of code so anything inside of this is called a code block.
 
@@ -362,23 +362,35 @@ But we haven't talked about indentation when it comes to python and so I wanted
 ## Code
 
 ```python
+# 03-082: Loops using Lists, Dictioanaries, Tuples
+
 # Working with Lists
+
 players = ['Altuve', 'Bregman', 'Correa', 'Gattis']
+
 for player in players:
     print(player)
+
+
 
 # Working with Tuples
+
 players = ('Altuve', 'Bregman', 'Correa', 'Gattis')
+
 for player in players:
     print(player)
 
+
+
 # Working with Dictionaries
+
 players = {
     '2b': 'Altuve',
     '3b': 'Bregman',
     'ss': 'Correa',
     'dh': 'Gattis'
 }
+
 for position, player in players.items():
     print(f'Position: {position}, Player: {player}')
 ```

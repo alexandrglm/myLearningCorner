@@ -1,4 +1,4 @@
-## MODULE 03 - 083: Python - Loop over `range()`
+## MODULE 03 - 084: Python - Loop over `range()`
 
 ****
 
@@ -138,7 +138,7 @@ I'm going to say num which is short for number and say for num in range and then
 
 And then inside of this let's just see what happens when I print out num this is going to iterate over this range and as you can see it prints out 1 all the way through 9.
 
-![large](03-083_IMG1.png)
+![large](./03-084_IMG1.png)
 
 You may think that this is a little confusing because I passed in the variables or the arguments of one to 10. 
 
@@ -155,7 +155,7 @@ So, that is one through ten, if we wanted to truly get the values of 1 through 1
 
 And as you can see now on the right-hand side the values 1 through 10 and get printed out.
 
-![large](03-083_IMG2.png)
+![large](./03-084_IMG2.png)
 
 ****
 
@@ -171,11 +171,11 @@ You can see that what it does is it still goes over the same range except now in
 
 Now it goes and it skips 1 so it goes with every second value.
 
-![large](03-083_IMG3.png)
+![large](./03-084_IMG3.png)
 
 And as you might have guessed if I change this to three and run it again it is good to go with every third value as you can see right here we have 1 4 7 and 10.
 
-![large](03-083_IMG4.png)
+![large](./03-084_IMG4.png)
 
 And this is a really nice way of being able to create a range and then have the kind of control and flexibility for only grabbing the elements and the intervals that you actually want to show.
 
@@ -184,11 +184,29 @@ And this is a really nice way of being able to create a range and then have the 
 ## Code
 
 ```python
-for num in range(1, 10):
- print(num)
+# 03-084: Looping into Ranges
 
-for num in range(1, 10, 2):
- print(num)
+# range()
+# Syntax: range(start, stop, step)
+# Ranges work similar to slicing, the STOP is off by one value!
+
+for number in range(1,10):
+    print(number)       # 1 2 3 4 5 6 7 8 9
+
+
+
+# Ranges work similar to slicing, the STOP is off by one value!
+for number in range(1,11):
+    print(number)       # 1 2 3 4 5 6 7 8 9 and .. 10 !
+
+
+# Stepping
+
+for number in range(1,11, 2):
+    print(number)       # 1 3 5 7 9
+
+for number in range(1,11, 3):
+    print(number)       # 1 4 7 10
 ```
 
 ****
@@ -201,5 +219,3 @@ Using a range, write a loop that prints out all the numbers from one through 10 
 def loop_over_range():
     # Write your code here
 ```
-
-

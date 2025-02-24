@@ -1,4 +1,4 @@
-# MODULE 03 - 082: Python - Loop Through a String
+# MODULE 03 - 083: Python - Loop Through a String
 
 ### Understanding String Iteration
 
@@ -79,7 +79,7 @@ print(letter)
 
 Finally, if I run this you can see that it prints out each one of the elements exactly like how we walk through with the data collections.
 
-![large](./03-081_IMG1.png)
+![large](./03-083_IMG1.png)
 
 ****
 
