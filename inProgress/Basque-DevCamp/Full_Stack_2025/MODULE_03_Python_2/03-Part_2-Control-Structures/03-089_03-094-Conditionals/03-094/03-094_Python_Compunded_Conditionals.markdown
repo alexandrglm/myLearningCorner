@@ -4,6 +4,98 @@
 
 In this guide, we will expand our understanding of conditionals by exploring **compound conditionals**, which allow us to combine multiple conditions in a Python program.
 
+🔗 **Reference:** [Python Conditional Statements](https://docs.python.org/3/tutorial/controlflow.html#if-statements)
+
+---
+
+## 📌 The `and` Operator
+
+The `and` operator ensures that **both conditions must be true** for the entire expression to evaluate as `True`.
+
+🔗 **Reference:** [Boolean Operations - `and`](https://docs.python.org/3/library/stdtypes.html#boolean-operations-and-or-not)
+
+### ✅ Example Use Case
+
+- A system that requires both a **correct username** and a **correct password** to grant access.
+- If **both** values match, access is **granted**.
+- If **either** value is incorrect, access is **denied**.
+
+🔹 **Key Concept:**
+
+- `True and True` → ✅ `True`
+- `True and False` → ❌ `False`
+
+---
+
+## 📌 The `or` Operator
+
+The `or` operator allows **at least one condition to be true** for the expression to evaluate as `True`.
+
+🔗 **Reference:** [Boolean Operations - `or`](https://docs.python.org/3/library/stdtypes.html#boolean-operations-and-or-not)
+
+### ✅ Example Use Case
+
+- A login system that accepts **either a username or an email** to log in.
+- As long as **one** of them is correct **and** the password is valid, access is granted.
+
+🔹 **Key Concept:**
+
+- `True or False` → ✅ `True`
+- `False or False` → ❌ `False`
+
+---
+
+## 📌 Combining `and` and `or`
+
+We can combine `and` and `or` in a single condition, using **parentheses** to ensure correct execution order.
+
+🔗 **Reference:** [Operator Precedence](https://docs.python.org/3/reference/expressions.html#operator-precedence)
+
+### ✅ Example Use Case
+
+- A system that allows users to log in with **either** a username or an email **but always requires a correct password**.
+
+🔹 **Best Practice:**
+
+- Use parentheses to **group conditions** and clarify execution order.
+- `((condition1 or condition2) and condition3)` ensures that `condition1` or `condition2` is checked first, followed by `condition3`.
+
+---
+
+## 📌 The `not` Operator
+
+The `not` operator **reverses** the boolean value of an expression.
+
+🔗 **Reference:** [Boolean Operations - `not`](https://docs.python.org/3/library/stdtypes.html#boolean-operations-and-or-not)
+
+### ✅ Example Use Case
+
+- A system that grants access to an **admin dashboard** only if the user is logged in **and** is **not** a standard user.
+
+🔹 **Key Concept:**
+
+- `not True` → ❌ `False`
+- `not False` → ✅ `True`
+
+---
+
+## 📌 Summary
+
+- **`and`** → Both conditions must be **true**.
+- **`or`** → At least one condition must be **true**.
+- **Combination of `and` and `or`** → Parentheses help define logic clearly.
+- **`not`** → Reverses a boolean expression.
+
+
+
+
+
+****
+
+## Video lesson Speech
+
+In this guide, we will expand our understanding of conditionals by exploring **compound conditionals**, which allow us to combine multiple conditions in a Python program.
+
 ---
 
 ## 📌 The `and` Operator
@@ -76,11 +168,7 @@ The `not` operator **reverses** the boolean value of an expression.
 - **Combination of `and` and `or`** → Parentheses help define logic clearly.
 - **`not`** → Reverses a boolean expression.
 
-
-
-****
-
-In this guide, we're going to extend our knowledge on conditionals and we're going to see how we can actually add compound conditionals which means multiple conditions inside of a python program.
+****In this guide, we're going to extend our knowledge on conditionals and we're going to see how we can actually add compound conditionals which means multiple conditions inside of a python program.
 
 ****
 
@@ -93,8 +181,6 @@ password = 'thenorth'
 ```
 
 Now, whenever you're logging into a system you need to have the correct username and the correct password in order to access the system and so far everything that we've looked at has had a single condition.   
-
-
 
 ## A second condition
 
@@ -145,14 +231,10 @@ can say access permitted and I'll change this back to the correct answer and if 
 
 ![large](./03-094_IMG1.png)
 
-
-
 Now, **I wouldn't recommend doing it this way but I do like showing new alternate versions whenever they're there**. 
 
 One, because **you may have a preference and you may like this other way better but also because if you're working with legacy python code you're going to run into all 
 kinds of different code styles and so I want you to be able to have familiarity with all of them**.
-
-
 
 Now, this is what we do when we want to set an and condition.   
 
@@ -200,7 +282,6 @@ And now what we can do here on the left-hand side is actually wrap this in paren
 
 And then inside of this, I'll say or email is equal to [jon@snow.com](mailto:jon@snow.com).  
 
-
  And now what this is going to do is it is going to split it up and if you remember when we talked about the order of operations that applies here as well.
 
 So, what Python is going to do is it's gonna come.   
@@ -230,7 +311,6 @@ Now, if I come down here and say [jon@snow.net](mailto:jon@snow.net) instead of 
 ![large](./03-094_IMG7.png)
 
 So, this entire expression here got returned as false and so everything is working properly. Now if I switch this back so it's .com so we know this is true but then our password is false and I run this.   
-
 
 It also is going to say you shall not pass because we are back in the situation where everything on the left-hand side.   
 
@@ -264,7 +344,6 @@ run this you can see it says you can only access the standard dashboard.
 ![large](./03-094_IMG9.png)
 
 And so what is going on here? Well let's look at the top of the very beginning we have a logged-in user that is set to true a standard user.   
-
 
 So, this is telling us a permission level that the user may have. And so we're saying if they're logged in. So this part has to be true. And then here is where we're getting into a little bit more complex territory.   
 
@@ -313,6 +392,8 @@ this video again going through the show notes and then also creating a
 few examples yourself to make sure that you really understand the 
 processes that are happening.
 
+****
+
 ## Code
 
 ```python
@@ -342,7 +423,7 @@ if username_2 == 'jonsnow' and password_2 == 'thepassword':
     print('Granted access.')
 else:
     print('Access\'s NOT granted.')
- 
+
 
 
  # Third Conditions
@@ -446,5 +527,3 @@ def compound_conditional(number):
 
 compound_conditional(number)
 ```
-
-
