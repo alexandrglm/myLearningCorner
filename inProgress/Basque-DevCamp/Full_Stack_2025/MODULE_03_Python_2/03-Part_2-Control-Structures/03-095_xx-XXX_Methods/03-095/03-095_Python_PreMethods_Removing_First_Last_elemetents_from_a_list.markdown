@@ -1,7 +1,5 @@
 # Module 03 - 095: Python - Exercise: Removing First and Last elements from a list
 
-
-
 In this Python programming exercise, we are going to see how we can remove the first and the last elements from the list.
 
 ****
@@ -13,7 +11,6 @@ Now, what I want to see happen with this is I'm going to type out some comments 
 Then, it's also going to have a list to clean past into it.   
 
 And so inside of here or I'm not going to build it out yet, that's all in the solution.   
-
 
 But what I want to have happen is when you pass in some kind of a list so say that I have some HTML elements and so I'll have some strings inside of here one could be an h1 and then after that would be some content followed by a closing h1 tag and that would be a list.
 
@@ -30,7 +27,6 @@ So I just would want to have some content and that's all I would want returned b
 Now, that by itself is not that hard because you could essentially just build something that went and grabbed the second element in the array, but let's imagine that we extend this a little bit.   
 
 So, if I come down here and now we have we'll call it html_2 and so we have html_2.   
-
 
 Now we have some content but we also have more content here.   
 
@@ -65,7 +61,7 @@ tags = ['<h1>', '</h1', '<h2>', '</h2>', '<h3>', '</h3>', '<h4>', '</h4>', '<h5>
 def cleaning(html_2):
 
     iter = 0
-     
+
     while '<h1>' in html_2 and '</h1>'  in html_2:
         html_2.remove('<h1>')
         html_2.remove('</h1>')
@@ -90,7 +86,7 @@ def maxi_cleaner(html_scrapped):
     counter = 0
 
     html_scrapped = [ element for element in html_scrapped if element not in tags ]
-    
+
     for each in html_scrapped:
         counter +=1
         print(f'Extracted Content #{counter} :', each )
@@ -112,13 +108,13 @@ html_4 = [
     ]
 
 def maxi_cleaner_regexp(html_scrapped_2):
-   
+
     counter = 0
 
     tags = [f'<h{heading}>' for heading in range(1,7)] + [f'</h{heading}>' for heading in range(1,7)]
 
     html_scrapped_2 = [ element for element in html_scrapped_2 if element not in tags ]
-    
+
     for each in html_scrapped_2:
         counter +=1
         print(f'Attempt # content extracted:  #{counter} :', each )
@@ -131,8 +127,6 @@ maxi_cleaner_regexp(html_4)
 
 ## Resolving the exercise
 
-
-
 If you did that great job and now I'm going to walk you through what 
 my own solution for this would be. I'm gonna copy this line because this
  is exactly the start of the definition that I want to use. So I'm gonna
@@ -141,8 +135,6 @@ my own solution for this would be. I'm gonna copy this line because this
 ```python
 def remove_first_and_last(list_to_clean):
 ```
-
-
 
 Now inside of here there really is not a lot of work we have to do in order to make this possible.
 
@@ -276,8 +268,6 @@ Now we can also test it out with our **second test case** right here. If I come 
 
 ![IMG](./03-095_IMG5.png)
 
-
-
 So out of all the languages that I've built out this specific code exercise for, **Python really has one of the cleanest syntaxes for it**, because of **destructuring** and because you're able to **glob up these elements**. It's a really nice and easy way to read how this works.  
 
 And also, within **one line**, you can see how quickly you're able to grab those elements and then you can use that **content** however you want.  
@@ -314,7 +304,6 @@ print('\nSolution: ', remove_first_and_last(other_content_to_clean))
 
 more_content = ['garbage', 'a','b','c','d','e', 'garbage']
 print(remove_first_and_last(more_content))
-
 ```
 
 ## Resources
