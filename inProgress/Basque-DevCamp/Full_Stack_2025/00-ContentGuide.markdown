@@ -181,93 +181,93 @@
 
 ## PYTHON (ii) - Loops, Conditionals, Data Structure, DB.
 
-|     | #   | Type                                     | Tittle                                                                         | Date       |
-|:---:| --- | ---------------------------------------- |:------------------------------------------------------------------------------ |:----------:|
-| [X] | 76  | Python:  Tuples into dict. keys          | How to Use a Tuple as a Dictionary Key in Python                               | 2025/02/19 |
-| [X] | 77  | Python: `zip()` - `zip(*)`               | Guide to Python's Zip Function                                                 | 2025/02/19 |
-| [X] | 78  | Python: SETs                             | Introduction to the Python Set Data Structure                                  | 2025/02/20 |
-| [X] | 79  | Python: Sets -                           | Various Methods for Merging Python Sets                                        | 2025/02/20 |
-| [X] | 80  | Python: Exercise                         | Build an HTML Heading Generator Function in Python                             | 2025/02/20 |
-| [X] | 81  | Python: Loops - `while` - `for...in`     | Introduction to Python Loops                                                   | 2025/02/21 |
-| [X] | 82  | Python: Loops                            | How to Implement Python Loops for Lists, Tuples, and Dictionaries              | 2025/02/21 |
-| [X] | 83  | Python: Loop into String                 | How to Loop Through the Characters of a Python String                          | 2025/02/21 |
-| [X] | 84  | Python: `range(start,stop,step)`         | Guide to Looping Over Ranges in Python                                         | 2025/02/21 |
-| [X] | 85  | Python: for...in -> `continue` - `break` | Guide to Continue and Break in Python Loops                                    | 2025/02/22 |
-| [X] | 86  | Python: `While`                          | Overview of While Loops in Python                                              | 2025/02/23 |
-| [ ] | 87  |                                          | How to Combine and Flatten Lists in Python with the For / In Loop              |            |
-| [ ] | 88  |                                          | Introduction to Using List Comprehension in Python                             |            |
-| [ ] | 89  |                                          | Section Introduction                                                           |            |
-| [ ] | 90  |                                          | Overview of Python Conditionals                                                |            |
-| [ ] | 91  |                                          | How to Use the Ternary Operator in Python Conditionals                         |            |
-| [ ] | 92  |                                          | Full List of Python Conditional Operators                                      |            |
-| [ ] | 93  |                                          | How to Check if a Value is Included in a Python String or List                 |            |
-| [ ] | 94  |                                          | How to Build Compound Conditionals in Python                                   |            |
-| [ ] | 95  |                                          | Remove the First and Last Element from a Python List                           |            |
-| [ ] | 96  |                                          | Python Methods and Functions Section Introduction                              |            |
-| [ ] | 97  |                                          | Basic Syntax for Creating Python Functions                                     |            |
-| [ ] | 98  |                                          | What Does it Mean to Return a Value from a Python Function?                    |            |
-| [ ] | 99  |                                          | How to Nest Functions in Parent Functions in Python                            |            |
-| [ ] | 100 |                                          | Guide to Default Arguments in Python Functions                                 |            |
-| [ ] | 101 |                                          | How to Utilize Named Function Arguments in Python                              |            |
-| [ ] | 102 |                                          | Guide to Function Argument Unpacking in Python                                 |            |
-| [ ] | 103 |                                          | Overview of Keyword Arguments in Python Functions                              |            |
-| [ ] | 104 |                                          | How to Combine All Argument Types in a Single Python Function                  |            |
-| [ ] | 105 |                                          | Guide to Python Lambdas                                                        |            |
-| [ ] | 106 |                                          | Project Requirements: Build FizzBuzz in Python                                 |            |
-| [ ] | 107 |                                          | Solution to FizzBuzz in Python                                                 |            |
-| [ ] | 108 |                                          | Python Importing Module Section Introduction                                   |            |
-| [ ] | 109 |                                          | How to Create a Custom Module and Import It In the Python Repl                 |            |
-| [ ] | 110 |                                          | How to Import a Custom Python Module into Another File                         |            |
-| [ ] | 111 |                                          | How to Import a Single Function from a Python Module                           |            |
-| [ ] | 112 |                                          | How to Import a Module and Assign an Alias in Python                           |            |
-| [ ] | 113 |                                          | How to Install PIP On a Mac or Windows Machine                                 |            |
-| [ ] | 114 |                                          | Introduction to the Numpy Package in Python                                    |            |
-| [ ] | 115 |                                          | Overview of the Requests Package in Python to Communicate with APIs            |            |
-| [ ] | 116 |                                          | Python Package Section Project Requirement                                     |            |
-| [ ] | 117 |                                          | Project Solution: Build a Web Scraper in Python                                |            |
-| [ ] | 118 |                                          | Course Checkpoint 5                                                            |            |
-| [ ] | 119 |                                          | Guide to Pipenv for Managing a Python Project's Packages and Environment       |            |
-| [ ] | 120 |                                          | Introduction to Classes in Python                                              |            |
-| [ ] | 121 |                                          | Guide to Python's __init__ Constructor Function                                |            |
-| [ ] | 122 |                                          | How to Get and Set Data in a Python Class                                      |            |
-| [ ] | 123 |                                          | How to Work with Python Properties and Decorators                              |            |
-| [ ] | 124 |                                          | Overview of Dunder Methods in Python: __init__                                 |            |
-| [ ] | 125 |                                          | Overview of Dunder Methods in Python: __repr__                                 |            |
-| [ ] | 126 |                                          | How to Build a Custom Iterator Class in Python                                 |            |
-| [ ] | 127 |                                          | Overview of Iterators vs Generators in Python                                  |            |
-| [ ] | 128 |                                          | Class vs Instance Attributes in Python                                         |            |
-| [ ] | 129 |                                          | Introduction to Inheritance in Python                                          |            |
-| [ ] | 130 |                                          | Using Polymorphism to Build an HTML Generator in Python                        |            |
-| [ ] | 131 |                                          | Building Polymorphic Functions in Python                                       |            |
-| [ ] | 132 |                                          | How to Create and Write to a File in Python                                    |            |
-| [ ] | 133 |                                          | Using Regular Expressions to List File Types in Python                         |            |
-| [ ] | 134 |                                          | Build a Pretty Price Method in Python                                          |            |
-| [ ] | 135 |                                          | Postman Installation Guide for Linux                                           |            |
-| [ ] | 136 |                                          | Guide to Using Postman for External and Local API Requests on Linux            |            |
-| [ ] | 137 |                                          | Environment Setup for Hello World Flask Application                            |            |
-| [ ] | 138 |                                          | How to Install Dependencies for Flask Database and API Features                |            |
-| [ ] | 139 |                                          | Creating a SQLite Database in Flask with SQLAlchemy                            |            |
-| [ ] | 140 |                                          | How to Create a POST API Endpoint in Flask                                     |            |
-| [ ] | 141 |                                          | Building an API Endpoint in Flask for Returning All Records with a GET Request |            |
-| [ ] | 142 |                                          | Implementing a Single Record GET Request in a Flask API                        |            |
-| [ ] | 143 |                                          | Guide to Building an Update Action with a PUT Request in Flask                 |            |
-| [ ] | 144 |                                          | How to Build a DELETE API Endpoint in Flask along with Project Summary         |            |
-| [ ] | 145 |                                          | Get the Average from a List in Python                                          |            |
-| [ ] | 146 |                                          | How to Install MongoDB on a Mac                                                |            |
-| [ ] | 147 |                                          | Guide to Creating a MongoDB Database Along with Admin Database Users           |            |
-| [ ] | 148 |                                          | How to Create a MongoDB Collection                                             |            |
-| [ ] | 149 |                                          | Guide to Inserting Documents into a MongoDB Collection                         |            |
-| [ ] | 150 |                                          | How to Insert Many Documents into a MongoDB Collection                         |            |
-| [ ] | 151 |                                          | How to Query All Documents in a MongoDB Collection with the find() Method      |            |
-| [ ] | 152 |                                          | How to Query for Specific Documents in a MongoDB Collection                    |            |
-| [ ] | 153 |                                          | Introduction to MongoDB Projections                                            |            |
-| [ ] | 154 |                                          | Query for a Portion of a Nested Array Element in a Document Using $slice       |            |
-| [ ] | 155 |                                          | How to Delete Documents in MongoDB                                             |            |
-| [ ] | 156 |                                          | How to Include Nested Fields in a find Query                                   |            |
-| [ ] | 157 |                                          | Using the findOne Method in MongoDB to Query for a Single Document             |            |
-| [ ] | 158 |                                          | How to Query for a Portion of a String in a MongoDB Document                   |            |
-| [ ] | 159 |                                          | How to Check if a Field Exists in a MongoDB Document                           |            |
-| [ ] | 160 |                                          | Course Checkpoint 6                                                            |            |
+|     | #   | Type                                                                                                                                    | Tittle                                                                         | Date       |
+|:---:| --- | --------------------------------------------------------------------------------------------------------------------------------------- |:------------------------------------------------------------------------------ |:----------:|
+| [X] | 76  | Python:  Tuples into dict. keys                                                                                                         | How to Use a Tuple as a Dictionary Key in Python                               | 2025/02/19 |
+| [X] | 77  | Python: `zip()` - `zip(*)`                                                                                                              | Guide to Python's Zip Function                                                 | 2025/02/19 |
+| [X] | 78  | Python: SETs                                                                                                                            | Introduction to the Python Set Data Structure                                  | 2025/02/20 |
+| [X] | 79  | Python: Sets -                                                                                                                          | Various Methods for Merging Python Sets                                        | 2025/02/20 |
+| [X] | 80  | Python: Exercise                                                                                                                        | Build an HTML Heading Generator Function in Python                             | 2025/02/20 |
+| [X] | 81  | Python: Loops - `while` - `for...in`                                                                                                    | Introduction to Python Loops                                                   | 2025/02/21 |
+| [X] | 82  | Python: Loops                                                                                                                           | How to Implement Python Loops for Lists, Tuples, and Dictionaries              | 2025/02/21 |
+| [X] | 83  | Python: Loop into String                                                                                                                | How to Loop Through the Characters of a Python String                          | 2025/02/21 |
+| [X] | 84  | Python: `range(start,stop,step)`                                                                                                        | Guide to Looping Over Ranges in Python                                         | 2025/02/21 |
+| [X] | 85  | Python: for...in -> `continue` - `break`                                                                                                | Guide to Continue and Break in Python Loops                                    | 2025/02/22 |
+| [X] | 86  | Python: `While`                                                                                                                         | Overview of While Loops in Python                                              | 2025/02/23 |
+| [X] | 87  | Python: `for..in` + `.append()` / `.extend()` / `[x for x in xs]` + `[y for y in ys]`                                                   | How to Combine and Flatten Lists in Python with the For / In Loop              | 2025/02/24 |
+| [X] | 88  | Python: new_list = `[x for x in xs if condition]`                                                                                       | Introduction to Using List Comprehension in Python                             | 2025/02/24 |
+| [X] | 89  | Python - Conditionals                                                                                                                   | Section Introduction                                                           | 2025/02/24 |
+| [X] | 90  | Python: `if` / `elif` / `else`                                                                                                          | Overview of Python Conditionals                                                | 2025/02/24 |
+| [X] | 91  | Python: Ternary/Elvis - `something if condition else some_other_thing`                                                                  | How to Use the Ternary Operator in Python Conditionals                         | 2025/02/24 |
+| [X] | 92  | Python: Equality(`==` / `is`), Inequality(`!=`, `<>`, `is not`), Greater/Greater or Equal (`>` / `>=`), Less/Less or Equal (`<` / `<=`) | Full List of Python Conditional Operators                                      | 2025/02/24 |
+| [X] | 93  | Python: `in`                                                                                                                            | How to Check if a Value is Included in a Python String or List                 | 2025/02/24 |
+| [ ] | 94  |                                                                                                                                         | How to Build Compound Conditionals in Python                                   |            |
+| [ ] | 95  |                                                                                                                                         | Remove the First and Last Element from a Python List                           |            |
+| [ ] | 96  |                                                                                                                                         | Python Methods and Functions Section Introduction                              |            |
+| [ ] | 97  |                                                                                                                                         | Basic Syntax for Creating Python Functions                                     |            |
+| [ ] | 98  |                                                                                                                                         | What Does it Mean to Return a Value from a Python Function?                    |            |
+| [ ] | 99  |                                                                                                                                         | How to Nest Functions in Parent Functions in Python                            |            |
+| [ ] | 100 |                                                                                                                                         | Guide to Default Arguments in Python Functions                                 |            |
+| [ ] | 101 |                                                                                                                                         | How to Utilize Named Function Arguments in Python                              |            |
+| [ ] | 102 |                                                                                                                                         | Guide to Function Argument Unpacking in Python                                 |            |
+| [ ] | 103 |                                                                                                                                         | Overview of Keyword Arguments in Python Functions                              |            |
+| [ ] | 104 |                                                                                                                                         | How to Combine All Argument Types in a Single Python Function                  |            |
+| [ ] | 105 |                                                                                                                                         | Guide to Python Lambdas                                                        |            |
+| [ ] | 106 |                                                                                                                                         | Project Requirements: Build FizzBuzz in Python                                 |            |
+| [ ] | 107 |                                                                                                                                         | Solution to FizzBuzz in Python                                                 |            |
+| [ ] | 108 |                                                                                                                                         | Python Importing Module Section Introduction                                   |            |
+| [ ] | 109 |                                                                                                                                         | How to Create a Custom Module and Import It In the Python Repl                 |            |
+| [ ] | 110 |                                                                                                                                         | How to Import a Custom Python Module into Another File                         |            |
+| [ ] | 111 |                                                                                                                                         | How to Import a Single Function from a Python Module                           |            |
+| [ ] | 112 |                                                                                                                                         | How to Import a Module and Assign an Alias in Python                           |            |
+| [ ] | 113 |                                                                                                                                         | How to Install PIP On a Mac or Windows Machine                                 |            |
+| [ ] | 114 |                                                                                                                                         | Introduction to the Numpy Package in Python                                    |            |
+| [ ] | 115 |                                                                                                                                         | Overview of the Requests Package in Python to Communicate with APIs            |            |
+| [ ] | 116 |                                                                                                                                         | Python Package Section Project Requirement                                     |            |
+| [ ] | 117 |                                                                                                                                         | Project Solution: Build a Web Scraper in Python                                |            |
+| [ ] | 118 |                                                                                                                                         | Course Checkpoint 5                                                            |            |
+| [ ] | 119 |                                                                                                                                         | Guide to Pipenv for Managing a Python Project's Packages and Environment       |            |
+| [ ] | 120 |                                                                                                                                         | Introduction to Classes in Python                                              |            |
+| [ ] | 121 |                                                                                                                                         | Guide to Python's __init__ Constructor Function                                |            |
+| [ ] | 122 |                                                                                                                                         | How to Get and Set Data in a Python Class                                      |            |
+| [ ] | 123 |                                                                                                                                         | How to Work with Python Properties and Decorators                              |            |
+| [ ] | 124 |                                                                                                                                         | Overview of Dunder Methods in Python: __init__                                 |            |
+| [ ] | 125 |                                                                                                                                         | Overview of Dunder Methods in Python: __repr__                                 |            |
+| [ ] | 126 |                                                                                                                                         | How to Build a Custom Iterator Class in Python                                 |            |
+| [ ] | 127 |                                                                                                                                         | Overview of Iterators vs Generators in Python                                  |            |
+| [ ] | 128 |                                                                                                                                         | Class vs Instance Attributes in Python                                         |            |
+| [ ] | 129 |                                                                                                                                         | Introduction to Inheritance in Python                                          |            |
+| [ ] | 130 |                                                                                                                                         | Using Polymorphism to Build an HTML Generator in Python                        |            |
+| [ ] | 131 |                                                                                                                                         | Building Polymorphic Functions in Python                                       |            |
+| [ ] | 132 |                                                                                                                                         | How to Create and Write to a File in Python                                    |            |
+| [ ] | 133 |                                                                                                                                         | Using Regular Expressions to List File Types in Python                         |            |
+| [ ] | 134 |                                                                                                                                         | Build a Pretty Price Method in Python                                          |            |
+| [ ] | 135 |                                                                                                                                         | Postman Installation Guide for Linux                                           |            |
+| [ ] | 136 |                                                                                                                                         | Guide to Using Postman for External and Local API Requests on Linux            |            |
+| [ ] | 137 |                                                                                                                                         | Environment Setup for Hello World Flask Application                            |            |
+| [ ] | 138 |                                                                                                                                         | How to Install Dependencies for Flask Database and API Features                |            |
+| [ ] | 139 |                                                                                                                                         | Creating a SQLite Database in Flask with SQLAlchemy                            |            |
+| [ ] | 140 |                                                                                                                                         | How to Create a POST API Endpoint in Flask                                     |            |
+| [ ] | 141 |                                                                                                                                         | Building an API Endpoint in Flask for Returning All Records with a GET Request |            |
+| [ ] | 142 |                                                                                                                                         | Implementing a Single Record GET Request in a Flask API                        |            |
+| [ ] | 143 |                                                                                                                                         | Guide to Building an Update Action with a PUT Request in Flask                 |            |
+| [ ] | 144 |                                                                                                                                         | How to Build a DELETE API Endpoint in Flask along with Project Summary         |            |
+| [ ] | 145 |                                                                                                                                         | Get the Average from a List in Python                                          |            |
+| [ ] | 146 |                                                                                                                                         | How to Install MongoDB on a Mac                                                |            |
+| [ ] | 147 |                                                                                                                                         | Guide to Creating a MongoDB Database Along with Admin Database Users           |            |
+| [ ] | 148 |                                                                                                                                         | How to Create a MongoDB Collection                                             |            |
+| [ ] | 149 |                                                                                                                                         | Guide to Inserting Documents into a MongoDB Collection                         |            |
+| [ ] | 150 |                                                                                                                                         | How to Insert Many Documents into a MongoDB Collection                         |            |
+| [ ] | 151 |                                                                                                                                         | How to Query All Documents in a MongoDB Collection with the find() Method      |            |
+| [ ] | 152 |                                                                                                                                         | How to Query for Specific Documents in a MongoDB Collection                    |            |
+| [ ] | 153 |                                                                                                                                         | Introduction to MongoDB Projections                                            |            |
+| [ ] | 154 |                                                                                                                                         | Query for a Portion of a Nested Array Element in a Document Using $slice       |            |
+| [ ] | 155 |                                                                                                                                         | How to Delete Documents in MongoDB                                             |            |
+| [ ] | 156 |                                                                                                                                         | How to Include Nested Fields in a find Query                                   |            |
+| [ ] | 157 |                                                                                                                                         | Using the findOne Method in MongoDB to Query for a Single Document             |            |
+| [ ] | 158 |                                                                                                                                         | How to Query for a Portion of a String in a MongoDB Document                   |            |
+| [ ] | 159 |                                                                                                                                         | How to Check if a Field Exists in a MongoDB Document                           |            |
+| [ ] | 160 |                                                                                                                                         | Course Checkpoint 6                                                            |            |
 
 ****
 
