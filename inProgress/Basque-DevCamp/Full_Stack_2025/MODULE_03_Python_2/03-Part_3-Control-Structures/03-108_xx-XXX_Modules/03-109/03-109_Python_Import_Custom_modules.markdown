@@ -1,4 +1,89 @@
-# Module 03 - 109: Python - Importing custom modules
+## MODULE 03 - 109: Python - Importing Custom Modules
+
+In the previous guide, we explored how to work with built-in Python modules. Now, we will focus on **creating and importing custom modules**, allowing us to structure our programs more effectively.
+
+There are two main use cases for importing custom modules:  
+1️⃣ **Reusing code within the same project** (e.g., storing helper functions for data processing).  
+2️⃣ **Organizing scripts in separate directories** while ensuring they remain accessible.  
+
+🔗 **Reference:** [Python Modules](https://docs.python.org/3/tutorial/modules.html)
+
+---
+
+## 🔹 Importing a Custom Module in the Same Directory
+
+### ✅ Example: Basic Module Import
+
+Consider the following file structure:
+
+```
+project/
+ ├── main.py
+ ├── helper.py
+```
+
+#### 📌 Steps:
+
+1️⃣ **Create a module (`helper.py`)**:  
+
+- Define a function inside it.  
+  2️⃣ **Import it into `main.py`** using `import helper`.  
+  3️⃣ **Call functions from `helper.py`** inside `main.py` .  
+
+### 🔍 How Python Handles Imports
+
+- Python looks for `helper.py` **inside the current directory**.  
+- If found, it loads the module and allows access to its functions.  
+
+🔗 **Reference:** [Python Import System](https://docs.python.org/3/reference/import.html)
+
+---
+
+## 🔹 Importing Modules from Another Directory
+
+Often, we organize projects by placing modules in a **separate directory** (e.g., `libs/`).
+
+### ✅ Example: Importing from a Subdirectory
+
+Updated file structure:
+
+```
+project/
+ ├── main.py
+ ├── libs/
+ │   ├── helper.py
+```
+
+### 📌 Why Does `import helper` Fail Now?
+
+- Python **only searches the current directory** and system-wide installed modules.
+- Since `helper.py` is now inside `libs/`, we must **manually update Python’s search path**.
+
+### 🛠 Solution: Using `sys.path`
+
+We modify `sys.path` to **tell Python where to find our custom module**:
+
+```
+import sys
+sys.path.insert(0, './libs')
+import helper
+```
+
+🔍 **What Happens?**
+
+- `sys.path.insert(0, './libs')` adds `libs/` to Python’s module search path.
+- Now `import helper` works as expected.
+
+🔗 **Reference:** [Python `sys.path`](https://docs.python.org/3/library/sys.html#sys.path)
+
+---
+
+## 📌 Summary
+
+- **Custom modules** allow for code reuse and better project organization.
+- Python **automatically finds modules in the current directory**.
+- If modules are placed in **subdirectories**, we must **update `sys.path`** to include the new location.
+- This technique enables structured, modular Python programs.
 
 ****
 

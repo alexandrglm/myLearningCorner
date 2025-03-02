@@ -1,4 +1,108 @@
-## Module 03 - 111: Python - Importing a Single Function from a Module
+# MODULE 03 - 111: Python - Importing a Single Function from a Module
+
+
+
+So far, when importing a module, we have had to reference the **entire module** whenever we wanted to use one of its functions. This means calling functions using the syntax:
+
+```
+import helper
+helper.greeting()
+```
+
+While this approach works, it can make code **longer and less readable**, especially when we only need one specific function from a module.
+
+Fortunately, Python allows us to **import a single function directly**, making our code cleaner and more explicit. 🚀
+
+🔗 **Reference:** [Python Importing](https://docs.python.org/3/reference/import.html)
+
+---
+
+## 🔹 The Standard Import Approach
+
+### ✅ Example: Importing the Entire Module
+
+If we import an entire module, we must reference the module each time we call a function:
+
+```
+import math
+print(math.sqrt(4))  # Must use `math.sqrt`
+```
+
+📌 **What Happens?**
+
+- The entire `math` module is imported.
+- To access `sqrt()`, we must use `math.sqrt()`.
+
+---
+
+## 🔹 Importing a Single Function
+
+Instead of importing the entire module, we can import **only the function we need**:
+
+### ✅ Example: Importing `sqrt()` Directly
+
+```
+from math import sqrt
+print(sqrt(4))  # No need for `math.sqrt`
+```
+
+📌 **What Changes?**
+
+- Only `sqrt()` is imported, making it **directly accessible**.
+- We no longer need to prefix it with `math.`.
+
+🔹 **Key Concept:** Importing a specific function keeps code **cleaner and more readable**, especially when dealing with large modules.
+
+🔗 **Reference:** [Python `math` Module](https://docs.python.org/3/library/math.html)
+
+---
+
+## 🔹 Applying This to Custom Modules
+
+This approach is not limited to built-in modules—it also works with **custom modules**.
+
+### ✅ Example: Importing `greeting()` from a Custom Module
+
+Consider a project structure:
+
+```
+project/
+ ├── main.py
+ ├── libs/
+ │   ├── helper.py
+```
+
+Instead of importing the entire `helper` module:
+
+```
+import helper
+print(helper.greeting("Tiffany", "Hudgens"))
+```
+
+We can **import only the function**:
+
+```
+from helper import greeting
+print(greeting("Tiffany", "Hudgens"))
+```
+
+📌 **What Changes?**
+
+- Only `greeting()` is imported, so we **don’t need `helper.` anymore**.
+- The code is **shorter and more readable**.
+
+🔗 **Reference:** [Python Modules](https://docs.python.org/3/tutorial/modules.html)
+
+---
+
+## 📌 Summary
+
+- Importing an entire module requires **module.function()** syntax.
+- We can import **a single function** to make code **cleaner and more explicit**.
+- This method works for both **built-in and custom modules**.
+- Use `from module import function` when you only need **one specific function**.
+
+
 
 ****
 

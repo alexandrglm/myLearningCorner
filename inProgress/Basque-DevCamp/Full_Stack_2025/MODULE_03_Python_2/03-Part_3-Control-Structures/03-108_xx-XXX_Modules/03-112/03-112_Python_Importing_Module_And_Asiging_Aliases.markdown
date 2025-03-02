@@ -1,4 +1,101 @@
-# Module 03 - 112: Python - Importing a Module and Assigning Aliases
+## MODULE 03 - 112: Python - Importing a Module and Assigning Aliases
+
+---
+
+## 🎯 Introduction
+
+When importing modules in Python, we typically call their functions by referencing the full module name. However, some module names can be long or repetitive, making code less readable. To improve clarity and efficiency, Python allows us to **assign aliases** to modules using the `as` keyword.
+
+Aliasing is particularly useful when working with:
+
+- **Modules with long names** (e.g., `import matplotlib.pyplot as plt`).
+- **Frequently used modules** (e.g., `import numpy as np`).
+- **Custom modules** where a shorter reference improves readability.
+
+🔗 **Reference:** [Python Import System](https://docs.python.org/3/reference/import.html)
+
+---
+
+## 🔹 Standard Module Import
+
+By default, when we import a module, we must reference it using its full name:
+
+```
+import helper
+helper.greeting()
+```
+
+📌 **What Happens?**
+
+- The `helper` module is fully imported.
+- To use its functions, we must prefix them with `helper.`.
+
+While this works, **it can become cumbersome** when working with long module names or frequently calling functions from the same module.
+
+---
+
+## 🔹 Using Aliases with `as`
+
+To streamline our code, we can assign an **alias** to a module using the `as` keyword.
+
+### ✅ Example: Assigning an Alias to a Custom Module
+
+```
+import helper as h
+h.greeting("Tiffany", "Hudgens")
+```
+
+📌 **What Changes?**
+
+- Instead of writing `helper.greeting()`, we now use `h.greeting()`.
+- The alias `h` is a **shorter and more readable reference**.
+
+🔗 **Reference:** [Python Modules](https://docs.python.org/3/tutorial/modules.html)
+
+---
+
+## 🔹 Aliasing Built-in Modules
+
+Aliasing is not limited to custom modules; it is widely used with **built-in and third-party modules**.
+
+### ✅ Example: Importing `math` as an Alias
+
+```
+import math as m
+print(m.sqrt(4))
+```
+
+📌 **What Happens?**
+
+- Instead of `math.sqrt(4)`, we can now use `m.sqrt(4)`.
+- The alias `m` makes the code **shorter while maintaining clarity**.
+
+🔗 **Reference:** [Python `math` Module](https://docs.python.org/3/library/math.html)
+
+---
+
+## 🔹 Best Practices for Aliases
+
+✅ **Use common conventions** → Some libraries have well-established aliasing patterns:
+
+- `import numpy as np`
+- `import pandas as pd`
+- `import matplotlib.pyplot as plt`
+
+✅ **Keep aliases intuitive** → Avoid cryptic or misleading aliases (e.g., `import math as xyz`).
+
+✅ **Ensure readability** → The alias should make the code **clearer, not more confusing**.
+
+---
+
+## 📌 Summary
+
+- **Importing with aliases** makes function calls shorter and improves readability.
+- The `as` keyword allows us to assign a **custom name** to a module.
+- Aliasing is commonly used with **both built-in and third-party libraries**.
+- Following aliasing conventions helps maintain **consistency across projects**.
+
+
 
 ****
 
