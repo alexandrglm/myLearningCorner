@@ -1,7 +1,5 @@
 # MODULE 03 - 111: Python - Importing a Single Function from a Module
 
-
-
 So far, when importing a module, we have had to reference the **entire module** whenever we wanted to use one of its functions. This means calling functions using the syntax:
 
 ```
@@ -101,8 +99,6 @@ print(greeting("Tiffany", "Hudgens"))
 - We can import **a single function** to make code **cleaner and more explicit**.
 - This method works for both **built-in and custom modules**.
 - Use `from module import function` when you only need **one specific function**.
-
-
 
 ****
 

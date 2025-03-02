@@ -1,4 +1,4 @@
-## MODULE 03 - 109: Python - Importing Custom Modules
+# MODULE 03 - 109: Python - Importing Custom Modules
 
 In the previous guide, we explored how to work with built-in Python modules. Now, we will focus on **creating and importing custom modules**, allowing us to structure our programs more effectively.
 
@@ -155,17 +155,19 @@ If I run this, you can see it gives the error that inside of the `main.py` file 
 
 The reason for that goes directly to the default behavior of how 
 Python imports modules. Whenever you're using this kind of syntax `import helper`,
- Python is going to look at the default set paths. It's going to look 
-inside of the current directory and then also look for any third-party 
+ Python is going to look at the default set paths.   
+
+It's going to look inside of the current directory and then also look for any third-party 
 packages that you've imported because those, by default, get added to 
 the Python import path.
 
-Now, in order to have our own custom set 
-of modules accessible, we're going to have to work with the system. 
-We're going to add a couple more lines here. First, we're going to 
-import the `sys` library. This is directly available to us 
-inside of the Python language. Then, from here, we're going to add a new
- path. We simply need to take our `libs` directory and add it to the path that Python looks for whenever it's looking for modules that it can import.
+Now, in order to have our own custom set of modules accessible, we're going to have to work with the system.   
+
+We're going to add a couple more lines here. First, we're going to import the `sys` library.   
+
+This is directly available to us inside of the Python language. Then, from here, we're going to add a new path.  
+
+ We simply need to take our `libs` directory and add it to the path that Python looks for whenever it's looking for modules that it can import.
 
 So here, I can say `sys.path.insert` and then pass in, first, the place where in the path I want this accessible. What `insert` is going to do is take the full list of paths that Python looks at and 
 say, at the very first spot, I want you to insert this new path. This is
@@ -189,18 +191,22 @@ So, congratulations! If you went through that, you now know how to create a cust
 ## Code
 
 ```python
-# libs/helper.py file
+# 03-109: Creating custom modules
+
+# helper.py
 
 def greeting(first, last):
- return f'Hi {first} {last}!'
+    return f'Hi {first} {last}!'
 
-# main.py file
+
+# main.py 
 
 import sys
 sys.path.insert(0, './libs')
 import helper
 
 def render():
- print(helper.greeting('Kristine', 'Hudgens'))
+    print(helper.greeting('Krisinte', 'Hudgens'))
 render()
+
 ```

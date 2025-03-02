@@ -1,8 +1,4 @@
-## MODULE 03 - 112: Python - Importing a Module and Assigning Aliases
-
----
-
-## 🎯 Introduction
+# MODULE 03 - 112: Python - Importing a Module and Assigning Aliases
 
 When importing modules in Python, we typically call their functions by referencing the full module name. However, some module names can be long or repetitive, making code less readable. To improve clarity and efficiency, Python allows us to **assign aliases** to modules using the `as` keyword.
 
@@ -94,8 +90,6 @@ print(m.sqrt(4))
 - The `as` keyword allows us to assign a **custom name** to a module.
 - Aliasing is commonly used with **both built-in and third-party libraries**.
 - Following aliasing conventions helps maintain **consistency across projects**.
-
-
 
 ****
 

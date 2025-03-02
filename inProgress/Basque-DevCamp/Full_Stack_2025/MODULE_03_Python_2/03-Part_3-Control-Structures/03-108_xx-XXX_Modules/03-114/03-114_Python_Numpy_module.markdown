@@ -1,7 +1,5 @@
 ## MODULE 03 - 114: Python - NumPy Module
 
-
-
 In this lesson, we will install our first **Python package** and explore the **NumPy** library. NumPy is a powerful package that allows efficient processing of **numbers, records, and objects**.  
 
  It is one of the most widely used libraries in the Python ecosystem, especially in fields such as **data science, machine learning, and scientific computing**. 🚀
@@ -115,8 +113,6 @@ Although Python lists are powerful, NumPy arrays offer several advantages:
 - Functions like `arange()` and `reshape()` help **manipulate data structures easily**.
 - NumPy is widely used in **machine learning, data science, and scientific computing**.
 
-
-
 ****
 
 ## Video Lesson Speech
@@ -153,7 +149,7 @@ Essentially, I'll give you a summary: **NumPy** allows you to process large coll
 
 This is something that you're going to find incredibly helpful when you start implementing machine learning algorithms or when you start building out complex APIs that deal with large collections of complex data.   
 
-NumPy is going to be a very good friend for you.
+**NumPy is going to be a very good friend for you.**
 
 So, the way that we can install it is with **pip**. If you did not install pip or do not want to, you can also download NumPy directly to your system and use it directly, the same way that we have used our own custom modules that we've worked with up until this time. I personally will highly recommend that you use **pip** for this. The way you can do it is if you come to your terminal, type `pip install` and then the name of the library. So, in this case, it's going to be `numpy`. Now, if you already have a library installed on your system, then it's going to skip the installation process. So, if I hit return, because I already have this on my system, it says **requirement already satisfied: numpy**, and then it shows the path in the system where my version of NumPy is installed.
 
@@ -169,23 +165,39 @@ Now, I can say I'm going to create a variable here. I'm going to say `num_range`
 
 So, it's going to say, "OK, there are going to be 16 elements," and I'm going to generate an array of 16 elements. It takes in a range where it's going to start at zero and go all the way up to 15, so it's going to have 16 elements. If you run this and then type `num_range`, you can see that we now have an array that is `0` to `15`.
 
-![IMG](https://s3-us-west-2.amazonaws.com/images-devcamp/Introduction+to+Programming+with+Python/+Importing+Modules+in+Python/Introduction+to+the+Numpy+Package+in+Python+%23+1507/image51.png)
-
-If you're wondering what an array is, an array is very similar to a list. The NumPy library created the concept of an array, which is present in many other programming languages. So, if you came from JavaScript or Ruby, then you're already very familiar with what arrays are. If Python is your very first programming language and you've never heard of an array, just know that a list is very similar to an array. NumPy has created a second level of abstraction where it's created this concept of an array so that you can perform even more advanced tasks, and that's what we're going to do here.
-
-So, remember at the very beginning of this guide, I showed you what I wanted? I wanted the ability to take in any kind of arbitrary set of numbers and have a breakdown of nested arrays inside of that. So, if I call `num_range` and then call the function `reshape`, I can pass in two different numbers here. If I pass in `4` and `4`, what this is going to give me, as you can see right here, is a nested set of four nested arrays inside of that master array, and inside each one of those arrays are four elements.
-
 ![IMG](./03-114_IMG6.png)
 
-This gives us the ability to create an entire matrix of values. This is going to be incredibly necessary when it comes to implementing some of the popular machine learning algorithms. They will require you to perform steps like this, where you are going to have to create an entire collection of data and then, from that point, slice that data up into usable components, such as small nested array elements, exactly like how we have right here.
+If you're wondering what an array is, an array is very similar to a list.   
 
-Imagine if I asked you to do that without using a library like this. It's absolutely possible. Obviously, it is because NumPy is simply a Python library, so it's obviously possible to perform everything that we just did right here in pure Python code without a library. But see how much easier it is when you leverage outside tools. What you're able to do whenever you bring in libraries like NumPy and some of the others that we're going to walk through is, instead of having to start from scratch, you're actually able to stand on the entire Python community and thousands upon thousands of developers who put in countless hours of time building out these kinds of tools. This allows you to focus on reaching your end goal and implementing the behavior that you want to build, as opposed to writing small little boilerplate code elements that would take you to this point instead of having to build every single feature completely from scratch.
+The NumPy library created the concept of an array, which is present in many other programming languages. So, if you came from JavaScript or Ruby, then you're already very familiar with what arrays are. If Python is your very first programming language and you've never heard of an array, just know that a list is very similar to an array. NumPy has created a second level of abstraction where it's created this concept of an array so that you can perform even more advanced tasks, and that's what we're going to do here.
 
-As you go through your development journey, whether you are going into the machine learning industry side of things or if you're learning Python to build out complex web or mobile APIs, you're going to see that it's going to be very rare that you're not going to be using packages like this in some form or another. So, that is our introduction to the NumPy library in Python. I highly recommend that you go and look at the documentation and explore other functions. What we went through does not even touch the tip of the iceberg with how many different functions and packages are available in NumPy.
+So, remember at the very beginning of this guide, I showed you what I wanted?  
+
+I wanted the ability to take in any kind of arbitrary set of numbers and have a breakdown of nested arrays inside of that.   
+
+So, if I call `num_range` and then call the function `reshape`, I can pass in two different numbers here. If I pass in `4` and `4`, what this is going to give me, as you can see right here, is a nested set of four nested arrays inside of that master array, and inside each one of those arrays are four elements.
+
+![IMG](./03-114_IMG7.png)
+
+This gives us the ability to create an entire matrix of values.   
+
+This is going to be incredibly necessary when it comes to implementing some of the popular machine learning algorithms. They will require you to perform steps like this, where you are going to have to create an entire collection of data and then, from that point, slice that data up into usable components, such as small nested array elements, exactly like how we have right here.
+
+Imagine if I asked you to do that without using a library like this.   
+
+It's absolutely possible. Obviously, it is because NumPy is simply a Python library, so it's obviously possible to perform everything that we just did right here in pure Python code without a library.   
+
+But see how much easier it is when you leverage outside tools. What you're able to do whenever you bring in libraries like NumPy and some of the others that we're going to walk through is, instead of having to start from scratch, you're actually able to stand on the entire Python community and thousands upon thousands of developers who put in countless hours of time building out these kinds of tools.  
+
+ This allows you to focus on reaching your end goal and implementing the behavior that you want to build, as opposed to writing small little boilerplate code elements that would take you to this point instead of having to build every single feature completely from scratch.
+
+As you go through your development journey, whether you are going into the machine learning industry side of things or if you're learning Python to build out complex web or mobile APIs, you're going to see that it's going to be very rare that you're not going to be using packages like this in some form or another. So, that is our introduction to the NumPy library in Python.  
+
+ I highly recommend that you go and look at the documentation and explore other functions. What we went through does not even touch the tip of the iceberg with how many different functions and packages are available in NumPy.
 
 If you go back to that Cheese Shop page and scroll down, you can see that there is a home page. If you click on this, it has everything from getting to know it all the way through having an entire NumPy tutorial.
 
-![IMG](./03-114_IMG7.png)
+![IMG](./03-114_IMG8.png)
 
 This has a number of the popular functions, and I highly recommend that you go through that and try them out in the REPL. Imagine the kinds of different levels of functionality that you can build into your program by leveraging what is included in this package.
 
@@ -376,21 +388,20 @@ Imagine the kinds of is and different levels of functionality that
 you can build into your program by leveraging what is included in this 
 package.
 
+****
+
 ## Code
 
 ```python
+# 03-114: Numpy introduction
+
+"""
+Debug this on Terminal
+"""
 import numpy as np
 
 num_range = np.arange(16)
-
-num_range
-
-# array([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15])
+num_range       # array([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15])
 
 num_range.reshape(4, 4)
-
-# array([[ 0,  1,  2,  3],
-       [ 4,  5,  6,  7],
-       [ 8,  9, 10, 11],
-       [12, 13, 14, 15]])
 ```
