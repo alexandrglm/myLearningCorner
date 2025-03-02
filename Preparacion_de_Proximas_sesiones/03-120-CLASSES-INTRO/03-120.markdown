@@ -1,0 +1,142 @@
+# Module 03 - 120: Python - Introduction to Classes in Python
+
+For this lesson on **object-oriented programming** in Python, we are going to take an introductory look at **Python classes**. We'll see exactly how we can build a basic class, analyze the syntax, and then build it out.
+
+****
+
+Now, I'm going to do all of this in **vim**, and I'm going to be using the **pipenv virtual environment**.  
+
+It's perfectly fine for you to follow along either on **Repl.it** or using the exact same process I'm doing.  
+
+You can use **Sublime Text**, **Visual Studio Code**, or anything like that. Everything we're going to be building should be able to be used in any kind of Python environment.
+
+Part of the reason why I'm doing this is to show you exactly how I typically build programs, but also to show you that there are all kinds of different ways that you can do it.  
+
+So, I'm going to start up a new virtual environment session by typing:
+
+```bash
+pipenv shell
+```
+
+This will start up a new environment and give me **Python 3.6.3**. As you can see on the right-hand side, the environment has been activated.
+
+![IMG](https://s3-us-west-2.amazonaws.com/images-devcamp/Advanced+Python+Programming/Object+Oriented+Programming+(OOP)+in+Python/Introduction+to+Classes+in+Python+%23+1567/image11.png)
+
+Now, I can create a file. I'm going to say:
+
+```bash
+vim invoice.py
+```
+
+I'm calling this `invoice.py` because, throughout this entire section, we're going to be building out real-world type classes. Imagine a scenario where you're building out some type of accounting system, and you need to be able to build out an invoice. That's what we're going to be doing in these guides.
+
+---
+
+## Basic Class Syntax
+
+The very first thing I'm going to do is walk through the syntax. I'm going to say:
+
+```python
+class Invoice:
+ def greeting():
+ return 'Hi there'
+```
+
+Here, I've created a class called `Invoice`. Notice that the class name starts with an uppercase letter, which is the common convention. Inside the class, I've defined a function called `greeting`. This function doesn't take any arguments and simply returns the string `'Hi there'`.
+
+---
+
+## Instantiating a Class
+
+Now, the way we call this class is by performing a process called **instantiation**. A class is like a blueprint for an object, but by itself, it does nothing. To create an object from the class, we need to instantiate it.
+
+Here, I'm going to instantiate the class and store it in a variable:
+
+```python
+inv_one = Invoice()
+print(inv_one)
+```
+
+If I save the file and run it, you'll see that it prints out something like this:
+
+```bash
+<main.Invoice object at 0x7f8b1c2b3d30>
+```
+
+This is a pointer to the object we've created. The `__main__` part is a special method, and the `0x7f8b1c2b3d30` is the memory address where Python is storing this invoice.
+
+![IMG](https://s3-us-west-2.amazonaws.com/images-devcamp/Advanced+Python+Programming/Object+Oriented+Programming+(OOP)+in+Python/Introduction+to+Classes+in+Python+%23+1567/image12.png)
+
+If I create another invoice:
+
+```python
+inv_two = Invoice()
+print(inv_two)
+```
+
+You'll see that it now has two instances. Both instances are using the same `Invoice` class blueprint, but they are stored in different memory locations.
+
+![IMG](https://s3-us-west-2.amazonaws.com/images-devcamp/Advanced+Python+Programming/Object+Oriented+Programming+(OOP)+in+Python/Introduction+to+Classes+in+Python+%23+1567/image13.png)
+
+---
+
+## Calling Class Methods
+
+Now, to call the `greeting` function inside the class, we need to use the instance we created. For example:
+
+```python
+print(inv_one.greeting())
+print(inv_two.greeting())
+```
+
+However, if I run this, I'll get an error. This is because I forgot to include the `self` argument in the `greeting` method.  
+
+ In Python, every method inside a class must take `self` as its first argument. The `self` keyword refers to the instance of the class.
+
+Let's fix that:
+
+```python
+class Invoice:
+ def greeting(self):
+ return 'Hi there'
+python_end
+
+Now, if I run the code again:
+
+python
+inv_one = Invoice()
+print(inv_one.greeting())
+```
+
+It will print:
+
+```bash
+Hi there
+```
+
+![IMG](https://s3-us-west-2.amazonaws.com/images-devcamp/Advanced+Python+Programming/Object+Oriented+Programming+(OOP)+in+Python/Introduction+to+Classes+in+Python+%23+1567/image15.png)
+
+---
+
+## Summary
+
+This is the base case example for how you can create a class, instantiate that class, and then call functions inside of the class.  
+
+To recap:
+
+- **Classes** are blueprints for objects.
+- **Instantiation** is the process of creating an object from a class.
+- **Methods** inside a class must take `self` as their first argument.
+
+---
+
+## Code
+
+```python
+class Invoice:
+ def greeting(self):
+ return 'Hi there'
+
+inv_one = Invoice()
+print(inv_one.greeting())
+```
