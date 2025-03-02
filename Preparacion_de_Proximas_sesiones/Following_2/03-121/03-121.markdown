@@ -1,0 +1,86 @@
+# 03-121
+
+Guide to Python's __init__ Constructor Function
+
+Now
+ that you know the basic syntax for creating a class and then a function
+ inside of python in this guide we are going to extend that knowledge 
+and we are going to see how we can add data.
+
+
+
+****
+
+When it comes to working with object-oriented programming and this pretty much is the case for every programming language classes are made up of data and then behavior the behavior is taking care of with functions. So whenever someone says that you need to have behavior inside of a class what they mean is that is your set of functions. 
+
+Now the data is going to be a little bit different and python specifically handles data in classes different than many other programming languages. So we're going to walk through exactly how that works and the syntax for it. I'm going to delete all of this code we did in our last example because we're going to use a different example and we're going to start by implementing what is known as a constructor function. 
+
+In Python the way that you do this is you say def and then Dunder init and the right way to type that is underscore underscore init underscore underscore. 
+
+```python
+__init__
+```
+
+And so this is a special reserved function inside the Python language though do not create your own function called init. This is something that's available to classes and the way that constructor functions like init work is that this is a function that will be automatically called whenever you instantiate the class.
+
+So when you create an invoice one it is first going to come here to this init function and it's going to process everything inside of it so it's going to set everything up that we need and specifically for our use case it is going to add the data into the class. So the very first argument you pass is going to be self and because every function inside of a python class needs self. 
+
+Then we're going to pass a couple of other arguments so we are going to say client and then total. And there's nothing special about these keywords these are just the items that we're going to use to build our invoice and then you build it just like any function so it ends with a colon. 
+
+Now inside of this init function what I'm going to do is I'm going to add the data directly to the class and the way that you can do that is by saying self dot and then we're going to come up with a variable name so I'm gonna set a `self.client = client` and `self.total = total` and so if this syntax looks weird don't worry it is very different in most programming languages. 
+
+But the reason why it's structured like this is because remember that pretty much everything in Python is an object and so whenever we create a new invoice. what we want to do with our data is assign whatever got passed in. So whatever got passed in for client and total and we're going to assign that to the newly created object so we're saying that we're creating two new variables here that are related directly to the instance. So if we create inv_one and we set the client name to google then self.client is going to equal Google and so that is exactly what we are going to do and that's how you can assign those values.
+
+Now that we've done that let's create a function. So I'm gonna say def formatter and formatters just going to take in self just like every other function. And the reason why we're doing this and hopefully this makes a little bit more sense now because we have access to self in this formatter function. That means that we have access to that data in self so we have access to this client and that total. 
+
+And so what I want the formatter to do is to return a formatted string so say F and then pass in using string literal syntax self.client and close it off and we'll say they owe and then dollar with curly braces self.total close it off and end the string and that is all that we need to do. 
+
+```python
+class Invoice:
+    def __init__(self, client, total):
+        self.client = client
+        self.total = total
+
+    def formatter(self):
+        return f'{self.client} owes: ${self.total}'
+```
+
+So now I'm going to come down and I'm going to instantiate a few invoices and create one that's called Google and create a new invoice. But this time instead of just ending the parens now I'm going to pass the values in. So I'm going to pass in the client name and then let's pass in a 100.
+
+And next, let's create another invoice and for this one, I'll say snap chat and here we'll say snap chat and we'll say they owe two hundred dollars and so that's all we have to do to instantiate those. 
+
+```python
+google = Invoice('Google', 100)
+snapchat = Invoice('SnapChat', 200)
+```
+
+Now to actually have something on the screen let's come down and just print it out. So I'll say `print(google.formatter())` and just call it like a normal function and do the same thing with Snapchat. So save it and this should work. I'm going to open up a new window here. And also if you are using TMX one thing I've discovered is you need to make sure that you start up your pip virtual environment up again differently because it will not carry over from previous sessions. 
+
+But if you're not using TMX like I am right here then you don't have to worry about it and the way you can test it out is just by typing python. And as you can see here it says Python 2.7.8 but if I say pipenv shell and start up a new session here. You can see I'm at 3.6.3 so that is what you want to make sure you're doing.
+
+With that in place, we can now call the files so Python invoice and there you go printed out perfectly. Google owes 100 dollars and SnapChat owes 200 hundred dollars. 
+
+![large](https://s3-us-west-2.amazonaws.com/images-devcamp/Advanced+Python+Programming/Object+Oriented+Programming+(OOP)+in+Python/Guide+to+Python's+__init__+Constructor+Function+%23+1568/image11.png)
+
+Let's review exactly what's going on here. So we have created a class from there we created a constructor function so we used the Dunder init function here we passed in self so we have access to the instance of the class. Then we passed in client and total as arguments. 
+
+And here this is the key part of this we assigned those arguments to the object so we said I want you to create a new variable inside of the self-object called client and take this value and then the same thing for total. Then we created a basic function called formatter that all it did was it formatted a string that had access to those self values and so that is how you can work with data and behavior with functions inside a python. 
+
+## Code
+
+```python
+class Invoice:
+  def __init__(self, client, total):
+    self.client = client
+    self.total = total
+
+  def formatter(self):
+    return f'{self.client} owes: ${self.total}'
+
+
+google = Invoice('Google', 100)
+snapchat = Invoice('SnapChat', 200)
+
+print(google.formatter())
+print(snapchat.formatter())
+```

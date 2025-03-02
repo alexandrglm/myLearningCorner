@@ -1,0 +1,114 @@
+# 03-119 Guide to Pipenv for Managing a Python Project's Packages and Environment
+
+In this guide, we're going to walk through the Pipenv library and this is a
+ very powerful tool that allows us to manage our packages that we bring 
+into our projects.
+
+And one of the reasons why [pipenv](https://pypi.org/project/pipenv/) has become incredibly popular and why it's actually recommended by the official Python developers is because it allows you to wrap your entire Project's dependencies into a single environment and that is a very powerful tool and I'm going to walk through why right now. 
+
+I'm gonna create a directory and I'm not going to actually write any python code into it yet because I first want to show you the reason why it's important to have a package manager on your projects.
+
+So I'm gonna say make directory and then we'll just call this python-env and then change into it 
+
+```python
+mkdir python-env
+
+cd python-env
+```
+
+and I'm just gonna create a text file here just so we can walk through it. So I'll say dependency issues and just call it a text file. And so inside of here let's imagine a scenario where you have Python 3.6.3 installed and you come and you build one project it could be a machine learning project. And inside of it you brought the request library and I'm not sure what version they're on but imagine that they're at 1.2. 
+
+Then later on you went and you had to build another python program and so you created a new project and this one is going to be a Django web API. And you also needed the request library for that project so you brought it down but this one required a different version. And so this one might have required 2.0 of the request library. 
+
+Well, that may not seem like an issue but then all of a sudden when you go back to your machine learning program that was working with the request 1.2 you're going to discover that something broke. And now all of a sudden this project doesn't even work anymore. And so what you have come into and so what you're running against is a dependency conflict where you have your version of Python. And even though both of these the machine learning program and the web API they're both using Python 3.6.3 but they're using two different versions of the requests library. And when you went and you updated it for your API you actually performed an override on what you had on your system and now you inadvertently broke the machine learning project and so that is never a fun thing to happen. 
+
+And it's the reason why we need to use tools such as Pipenv because what pipenv will do is it will come here and so we'll just say pipenv and it's going to create this wrapper around Machine Learning. 
+
+![large](https://s3-us-west-2.amazonaws.com/images-devcamp/Advanced+Python+Programming/Environment+and+Version+Management/Guide+to+Pipenv+for+Managing+a+Python+Project's+Packages+and+Environment+%23+1564/image11.png)
+
+And so it's going to assign it to some ID. So it's going to create this virtual environment and then the requests library here is no longer going to be system-wide but instead, requests is going to be nested inside of this virtual environment. Then when you come and you create this Django web API project it's going to create an entirely new virtual environment for you. And then when you come and you install Django and then you come and you install the request package and you say that you need version 2.0 it is not going to affect this version of Machine Learning whatsoever because requests 1.2 is inside of this virtual environment and request 2.0 is inside of this one. 
+
+![large](https://s3-us-west-2.amazonaws.com/images-devcamp/Advanced+Python+Programming/Environment+and+Version+Management/Guide+to+Pipenv+for+Managing+a+Python+Project's+Packages+and+Environment+%23+1564/image12.png)
+
+And so that's why tools like pipenv are so popular and they're definitely considered a best practice in the Python community and really pretty much every programming language that you work in is going to have a package manager in some form or another and so pipenv is a great one for python. 
+
+So now that you know why package managers are important let's come and let's walk through what you need to do in order to install them.
+
+You can go to docs.pipenv.org and depending on what type of system you're on that's going to change how you install it. So if you're on a Mac and you already have homebrew installed then you can simply run the command 
+
+```terminal
+brew install pipenv
+```
+
+and I have that on my system so you can come here paste it in and then run it and that's all you need to do if you're on a Mac. If you're on Ubuntu or some type of Linux distribution you can run this command 
+
+```terminal
+$ sudo apt install software-properties-common python-software-properties
+$ sudo add-apt-repository ppa:pypa/ppa
+$ sudo apt update
+$ sudo apt install pipenv
+```
+
+and then if you're on Windows and one nice thing about Pipenv is and you can if you scroll up here you can even see it. They highlighted the fact that Windows is a first-class citizen in the pipenv world 
+
+![large](https://s3-us-west-2.amazonaws.com/images-devcamp/Advanced+Python+Programming/Environment+and+Version+Management/Guide+to+Pipenv+for+Managing+a+Python+Project's+Packages+and+Environment+%23+1564/image13.png)
+
+so that means and it's great news if you are working on a Windows machine you can use Pipenv and all you have to do assuming that you have Pip installed and python installed on your system is run 
+
+```terminal
+pip install pipenv 
+```
+
+and this will bring down exactly what you need. So after you've done that you can switch here and the way that you can get it started is and the way you can get a new environment started is change into whatever directory that you want to build a project in. So right now I created that python-env directory and so whenever you're ready to get started working on the project you can type pipenv and then if you want it to be a python 3 project type --three and then this is going to go and install a pipenv set up in this specific directory. 
+
+So as you can see it's going it is saying virtual env already exists and then it goes and it's going to create a new virtualenv for this project. From there it's going to figure out which version of python that it's going to use so right now it went through my user's directory and then went through pyenv because that's how I have it installed on my system and then it picked out the exact version that it's using and then it's creating the Virtual Environment from there. 
+
+And so from that point it just added some other items here such as a python executable that is going to allow you to run python directly inside of the virtual environment, installed setup tools, and then very importantly, if you come down here it also created what is called a Pipfile and this is where we can manage all of our projects with specific dependencies. 
+
+![large](https://s3-us-west-2.amazonaws.com/images-devcamp/Advanced+Python+Programming/Environment+and+Version+Management/Guide+to+Pipenv+for+Managing+a+Python+Project's+Packages+and+Environment+%23+1564/image14.png)
+
+So if I open this up and you can open this up in a text editor where you can see all your files. Now you can see that we have this Pipfile 
+
+![large](https://s3-us-west-2.amazonaws.com/images-devcamp/Advanced+Python+Programming/Environment+and+Version+Management/Guide+to+Pipenv+for+Managing+a+Python+Project's+Packages+and+Environment+%23+1564/image15.png)
+
+and there are some things in here that may look a little bit confusing but let's walk through what it actually represents. So we have a source and inside of there, it has a URL. And then this is as you may notice it's pointing to the pypi store and this means that whenever we run our installations or whenever we go out we want to grab outside libraries. It's going to look right here and that's where it's going to send it.
+
+![large](https://s3-us-west-2.amazonaws.com/images-devcamp/Advanced+Python+Programming/Environment+and+Version+Management/Guide+to+Pipenv+for+Managing+a+Python+Project's+Packages+and+Environment+%23+1564/image16.png)
+
+If you're working on a very large project where you may have a custom spot where you're wanting to go grab your dependencies from then you can change this URL and point to that spot. But for the majority of your situations, you are most likely going to use the default. Verify_ssl means you're just going to make sure that all the requests are always encrypted and then the name so this is just the source for where it's going and grabbing the dependencies. 
+
+Now on line 8, this is where you'll list off all the packages for our project. Now we haven't set any of those up yet so it's empty and the same thing for dev-packages. 
+
+Now if you're curious about the difference between the two. Some projects have two types of packages they have the ones that the program needs to function and that means that they are universal. If you are going to run the program on and deploy it to some Web server you're going to have to have that package available at all times. Now for dev packages what this means is that if you have certain libraries that you only need for your local machine and so if you go to deploy this to the Web you do not need to push these dependencies up so these could be tools that maybe automate your local workflow or they run tests or linting but they're never going to be needed in production then they'd go here and your dev packages.  Then lastly here on line 16 notice how this sets the python version and we're using version 3.6 so that's the pip file in a nutshell. 
+
+Now that we have that installed let's walk through how we can now start installing packages. So if I type pipenv then install numpy this is going to go out. But notice I didn't type pip install numpy like normal I typed pipenv and so what that means is that it's not going to globally install numpy on my system but instead it is going to look at the pip file. It's going to add it there and then it's going to ingest all of the dependencies directly inside of that virtual environment. 
+
+![large](https://s3-us-west-2.amazonaws.com/images-devcamp/Advanced+Python+Programming/Environment+and+Version+Management/Guide+to+Pipenv+for+Managing+a+Python+Project's+Packages+and+Environment+%23+1564/image17.png)
+
+Let's run this test with one more. So now I'm going to say pip install requests and so this is now going to go and install requests and one of the cool things its also going to install all of the different libraries that requests and pi depend on. So if we look at what we have now we not only have our Pip file and now you can see that it has the packages of numpy and requests so those get added automatically. 
+
+![large](https://s3-us-west-2.amazonaws.com/images-devcamp/Advanced+Python+Programming/Environment+and+Version+Management/Guide+to+Pipenv+for+Managing+a+Python+Project's+Packages+and+Environment+%23+1564/image18.png)
+
+But if you switch to pip file lock you can see that this is this set and this is JSON data and it lists out all of our nested dependencies. And so if I search for say numpy you can see that it has numpy right here and then it has hashes which these are some of those security checksums that it brought in and it has the version number in this is very important. This is one of the most important reasons why we're doing this is because we now have a hard-coded version for this project which means that if I go install numpy on some other part of my system when it goes up to 1.2 then this project is not going to break. It's still going to be using version 1.14.1 and the same thing goes for requests. 
+
+Now another interesting thing to note here is you may have noticed we installed numpy and requests but what is this URL lib 3? Well, the way that pip files work is they don't just list out the dependencies we installed. They also list the dependencies that the projects themselves require and so the request library is not a standalone library it also needs this URL lib 3 library in order to work properly. So here is where we're able to come and see all of that. 
+
+So that is a pretty neat way of managing all of your dependencies and this is project-specific. So let's clear this out and see how we can get started on here. Because if you notice if I just type Python here I'm just using the Python on my local system and that is not what I want to do. You can see it's showing Python 2.7.8 
+
+![large](https://s3-us-west-2.amazonaws.com/images-devcamp/Advanced+Python+Programming/Environment+and+Version+Management/Guide+to+Pipenv+for+Managing+a+Python+Project's+Packages+and+Environment+%23+1564/image19.png)
+
+That may work for certain things but I want to actually use the python in the virtual environment for this system. So the way I can do this is type pipenv and then from there shell and Oh actually before I do that just you can see a difference. I'm going to type which python and here you can see that it is pointing to /Users/admin/.pyenv/shims/python yours may look different depending on where you have it installed. But the key difference is now I'm going to type pipenv and shell and this is going to start the whole virtual environment session for me. 
+
+![large](https://s3-us-west-2.amazonaws.com/images-devcamp/Advanced+Python+Programming/Environment+and+Version+Management/Guide+to+Pipenv+for+Managing+a+Python+Project's+Packages+and+Environment+%23+1564/image20.png)
+
+So that all worked and now as you can see it's pointing to this activate so if you follow the path this is in /Users/admin/.local/share/virtualenvs/python and so it's doing all this I didn't have to hardcode any of this in pipenv does this automatically. And so this is our virtual environment and it activated it. 
+
+So now it's started and you may even see some other code here directly in your terminal and what this is telling you is you're no longer using your system's version of Python. Now you're using the version in the environment so if I now say which Python you can see it doesn't point to where it did before where it said users and then this shims python. Now when I type that it's pointing at the virtual environment python 
+
+![large](https://s3-us-west-2.amazonaws.com/images-devcamp/Advanced+Python+Programming/Environment+and+Version+Management/Guide+to+Pipenv+for+Managing+a+Python+Project's+Packages+and+Environment+%23+1564/image21.png)
+
+and this is where a lot of the power on virtualenv comes in play because we do not have to worry about what our systems doing but instead we're able to manage it all from the virtual environment. So with all of that in place, if I type Python now you can see without me changing anything in my system whatsoever. I'm now using Python 3.6.3 and this is all being called directly from the environment. 
+
+![large](https://s3-us-west-2.amazonaws.com/images-devcamp/Advanced+Python+Programming/Environment+and+Version+Management/Guide+to+Pipenv+for+Managing+a+Python+Project's+Packages+and+Environment+%23+1564/image22.png)
+
+And if I want to then import say numpy then I'm able to do it and it doesn't give me an error as opposed to if I didn't so that proves that I have numpy directly on my system I'm able to import it directly in the shell which means I am also able to import it in this project and so that is how you can utilize pipenv on your system. How you can build out that Pip file include all of your dependencies and then wrap them all up into your python programs.

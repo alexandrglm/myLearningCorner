@@ -1,0 +1,79 @@
+# 03-120
+
+Introduction to Classes in Python
+
+For
+ this lesson on object-oriented programming in Python, we are going to 
+take an introductory look at Python classes and we're going to see 
+exactly how we can build a basic class analyze the syntax and then build
+ it out.
+
+****
+
+Now I'm going to do all of this in vim and I'm going to be using the pipenv virtual environment. It's perfectly fine for you to follow along either on Repel.it or using the exact same process I'm doing. You can use Sublime Text, Visual Studio code, anything like that everything we're going to be building should be able to be used in any kind of Python environment. 
+
+Part of the reason why I'm doing this is to show you exactly how I typically build programs but also just show you there are all kinds of different ways that you can do it. So I'm going to start up a new virtual environments session by typing pipenv shell and that's going to start up a new environment and it's going to get me the python 3.6.3 and as you can see right here on the right-hand side the environment has been activated.
+
+![large](https://s3-us-west-2.amazonaws.com/images-devcamp/Advanced+Python+Programming/Object+Oriented+Programming+(OOP)+in+Python/Introduction+to+Classes+in+Python+%23+1567/image11.png)
+
+So now what I can do is I can create a file, so I'm gonna say vim and then I'm going to call this invoice.py because throughout this entire section we're going to be building out real-world type classes so imagine a scenario where you're building out some type of accounting system and you need to be able to build out an invoice and so that's what we're going to be doing in these guides. 
+
+The very first thing I'm going to do is walk through the syntax so I'm gonna say class and then in using one uppercase letter so this is going to be capital and that is the common convention I'm going to say class invoice follow that up with a colon. So this is going to be very similar to the same syntax as creating a function. So I'm going to say class invoice and now inside of this class and if you've never worked with object-oriented programming before just know that classes are object mappers so classes essentially give you the ability to create a blueprint for objects so that means that classes can have data inside of them and they can also have functions and they can add behavior. 
+
+In this first example because later on, we're going to get into how we can work with data in our class. But for our first example, I'm just going to create a basic function and I'm not even going to pass in any arguments or anything like that so I'm just going to say def greeting as is going to be a function called greeting and it's not going to take any function arguments and it's just going to return some text so it's going to return a string that says Hi there. And that is literally it is all that I want to do with this specific class remember this is a base case for understanding the syntax. 
+
+```python
+class Invoice:
+
+    def greeting():
+        return 'Hi there'
+```
+
+Now the way that we call this class is you need to perform a process called instantiation. So all we're doing is we are taking this blueprint remember a class is like a blueprint for an object but by itself it does nothing. So there is nothing that's going to happen in this class unless we go and we create an object with that class and the process of creating the object is called instantiation. 
+
+So here I'm going to instantiate the class and store it in a variable so I'm gonna say inv_one just short for invoice one you can call it anything you want and then the way you create a new invoice is very similar to the way that you call a function. So I'm just going to say invoice and then have the parens right at the end. 
+
+Now if I just print this out so if I say print inv_one just like this. 
+
+```python
+print(inv_one)
+```
+
+I'll save the file and on the right-hand side I will open this up so that we can test it out. So I'm gonna say python and then let's see. This is just called our invoice file and as you can see it prints out this weird looking thing. So it prints out those where it says double underscore and the right way to pronounce this is you say dunder. So this says Dunder main it's just short for double underscore since you don't want to say double underscore every single time. 
+
+So it's a special method called main and we're going to get into the special methods later on in the section. But this is just a pointer to the object we've created so you can even see where it says double under main invoice instance at and so this means we've instantiated we created an instance of invoice and where it says at and then it has this weird type of syntax here this is actually the place in memory where Python is storing this invoice. It has to keep this invoice somewhere it doesn't just go into a black hole it has to be kept somewhere in memory on the computer and so this is the exact location in memory where that happens. 
+
+![large](https://s3-us-west-2.amazonaws.com/images-devcamp/Advanced+Python+Programming/Object+Oriented+Programming+(OOP)+in+Python/Introduction+to+Classes+in+Python+%23+1567/image12.png)
+
+And so if we come here and we create another invoice so now we have two invoices and we need to print out the correct variable so if I print this and then run this code you can see that it now has 2 instances it's still using the same invoice class it still using the same blueprint but now you can see because we created two instances. There are two spots in memory now where this class is stored and so that is the way that Python works with instantiation. 
+
+![large](https://s3-us-west-2.amazonaws.com/images-devcamp/Advanced+Python+Programming/Object+Oriented+Programming+(OOP)+in+Python/Introduction+to+Classes+in+Python+%23+1567/image13.png)
+
+But now that class by itself is not very helpful. So the way we can call our greeting function here is by saying inv_one or whatever the name of the variable dot greeting and then simply call greeting the same way that you would with any other function so say dot greeting here as well. 
+
+Now if I save this switch over here and now if I run this up. Looks like we have an issue. 
+
+![large](https://s3-us-west-2.amazonaws.com/images-devcamp/Advanced+Python+Programming/Object+Oriented+Programming+(OOP)+in+Python/Introduction+to+Classes+in+Python+%23+1567/image14.png)
+
+Oh and yes I forgot one piece of syntax and I'm glad I forgot this actually because this will be something that you may forget because it's very different from many other programming languages. You need to pass a default argument into any function here that you have in a class and what you need to pass in is the word self.
+
+And we're not going to get into what self represents quite yet because it is a more advanced topic where we will cover it in this section just for right now. Know that self references the instance so in this case self is going to be referencing inv_one In this case, it's referencing inv_2 and for whenever you are creating a function inside of a class you need to pass self as the first argument and that's something you have to do across the board and that's a reason why we got that error.
+
+So let's clear this and run it one more time and there you go. We get hey there twice. 
+
+![large](https://s3-us-west-2.amazonaws.com/images-devcamp/Advanced+Python+Programming/Object+Oriented+Programming+(OOP)+in+Python/Introduction+to+Classes+in+Python+%23+1567/image15.png)
+
+And so this is the base case example for how you can create a class how you can instantiate that class and then how you can call functions inside of the class.
+
+## Code
+
+```python
+class Invoice:
+
+  def greeting(self):
+    return 'Hi there'
+
+
+inv_one = Invoice()
+print(inv_one.greeting())
+```

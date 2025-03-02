@@ -1,0 +1,68 @@
+# 03-122
+
+How to Get and Set Data in a Python Class
+
+When
+ it comes to developing in object-oriented programming languages a 
+couple terms that you are going to hear quite a bit of are going to be 
+getter and setter functions.
+
+****
+
+If you have ever built anything in Java or any languages like that then those are going to be some functions that you need in order to add or to query any data from the function and in Python this entire process is actually done for you so you do not have to create your own getter setter functions. 
+
+Now I'm going to show in a future guide how to work with properties and that allows you to have control over what data that you can override and what data you have access to in your object. And if that doesn't make any sense to you whatsoever then do not worry we're going to walk through a number of examples just know that what I'm going to show you right here is not possible in the majority of the popular programming languages that are out there. 
+
+The process I'm going to show you right here can be frowned upon because it gives you too much access and allows you to essentially do anything that you want. So I'm going to add that caveat because I don't want you to learn this and then just go wild with being able to go and change all your values in your classes and so that's why I want to add that caveat. Later on, I'm going to show you the proper way to do it if you really need to protect your data. 
+
+But for right now essentially we're not gonna have to change any code here whatsoever because all of the features for being able to query and override values is set for us so I can come down here and I only have one instance I don't have multiple ones just to make it easy for us to see what's going on. But because everything is an object in Python that's what makes it possible for us to query and to set values anytime we want. 
+
+And so we don't have to create special functions to do it because if I come down here and I'm going to get rid of the formatter but if I come down here and I want to get access to the client value I can just type print and then Google.client and because this is an object because when we create this invoice class or when we instantiate it. It gets stored as an object inside of Google right here inside of this variable. 
+
+![large](https://s3-us-west-2.amazonaws.com/images-devcamp/Advanced+Python+Programming/Object+Oriented+Programming+(OOP)+in+Python/How+to+Get+and+Set+Data+in+a+Python+Class+%23+1569/image11.png)
+
+If we want access to an attribute in that class or in that object like client we have access automatically. So if I say Python invoice you can see it prints out Google right there 
+
+![large](https://s3-us-west-2.amazonaws.com/images-devcamp/Advanced+Python+Programming/Object+Oriented+Programming+(OOP)+in+Python/How+to+Get+and+Set+Data+in+a+Python+Class+%23+1569/image12.png)
+
+and just like if I were to do the same thing for the total and it gives us access to a 100. 
+
+![large](https://s3-us-west-2.amazonaws.com/images-devcamp/Advanced+Python+Programming/Object+Oriented+Programming+(OOP)+in+Python/How+to+Get+and+Set+Data+in+a+Python+Class+%23+1569/image13.png)
+
+Now if python is your first programming language then what I just showed you may seem logical that you have access to those elements but I can tell you that it is very rare that programming languages allow this level of access usually you have to come into the language. 
+
+Imagine that this was something like Java you'd have to come up here inside of the class and if you wanted access to say client you would have to create a function like def and then get_client and then inside of here, you need to say return self.client and then down below you couldn't just say client you'd have to call the get_client function 
+
+![large](https://s3-us-west-2.amazonaws.com/images-devcamp/Advanced+Python+Programming/Object+Oriented+Programming+(OOP)+in+Python/How+to+Get+and+Set+Data+in+a+Python+Class+%23+1569/image14.png)
+
+That's what a getter method is but as you saw, we don't have to do that whatsoever. 
+
+Now the other thing we can do that also is pretty rare is we can also set values after we have created the entire object which is something pretty rare but I'll show you right here so I'm going to keep the client here and I'm going to come down and say Google.client set this equal to Yahoo and take this exact code here and we will save it. And if I switch over here and run this you can see that it prints out the client it prints out the first one we created where it says Google and then it allowed me on line 15 over here to override the client value. 
+
+![large](https://s3-us-west-2.amazonaws.com/images-devcamp/Advanced+Python+Programming/Object+Oriented+Programming+(OOP)+in+Python/How+to+Get+and+Set+Data+in+a+Python+Class+%23+1569/image15.png)
+
+So that is in other languages called the setter process where we were able to go into the object and then set a value. So usually you were only able to set the value when you create the class and then later on if you want to change it or override a value you need to create a setter function but once again because everything inside of Python is an object including classes we have the ability to reach into that class and override and set the value like you saw on line 15.
+
+So that is how you can use getters and setters without actually having to create the functions inside of Python.
+
+## Code
+
+```python
+class Invoice:
+
+    def __init__(self, client, total):
+        self.client = client
+        self.total = total
+
+    def formatter(self):
+        return f'{self.client} owes: ${self.total}'
+
+
+google = Invoice('Google', 100)
+
+print(google.client)
+
+google.client = 'Yahoo'
+
+print(google.client)
+```
