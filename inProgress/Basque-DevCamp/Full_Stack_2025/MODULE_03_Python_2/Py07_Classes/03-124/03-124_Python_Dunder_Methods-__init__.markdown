@@ -144,7 +144,7 @@ inv = Invoice()
 
 And from here I can say print str and so this is where it gets cool. I can just say str inv and now if I save this file and I come over here and I run it you can see it prints out and says this is the invoice class. 
 
--![large](https://s3-us-west-2.amazonaws.com/images-devcamp/Advanced+Python+Programming/Object+Oriented+Programming+(OOP)+in+Python/Overview+of+Dunder+Methods+in+Python%3A+__init__+%23+1599/image11.png)
+![IMG](./03-124_IMG1.png)
 
 So Python looks for this str method to be defined and if it's defined in a class it looks for what gets returned. And so in this case we're saying I just want you to return this string saying this is the invoice class. And so the goal of the str method whenever you use it in a class is to help you get some visibility into each one of whatever you've instantiated from that class. 
 
@@ -169,23 +169,30 @@ working with.
 ## Code
 
 ```python
+# 03-124: Dunder __init__
+
+# __init__
+
 class Invoice:
   def __str__(self):
     return "This is the invoice class!"
 
-
 inv = Invoice()
 print(str(inv))
 
+
+# __init__ + __str__ constructors
+
 class Invoice:
-  def __init__(self, client, total):
-    self.client = client
-    self.total = total
+    def __init__(self, invoice_id, client, total):
+        self.invoice_id = invoice_id
+        self.client = client
+        self.total = total
 
-  def __str__(self):
-    return f"Invoice from {self.client} for {self.total}"
+    def __str__(self):
+        return f'\nInvoice # {self.invoice_id}:\nFrom {self.client}.\nTotal ammount: {self.total} €'
+    
+inv_client_1 = Invoice('INV-000354724','Google', 500.00)
 
-
-inv = Invoice('Google', 500)
-print(str(inv))
+print(str(inv_client_1))
 ```

@@ -277,11 +277,13 @@ So if we do not subtract one right here we're going to end up with off by one er
 
 So from there, we are simply running a query in that list, it's going to grab us that player and then from there we're going to increment self.n by one. So that's what is going to make it be iterable that's what's going to make it move down the line. Now we also need to check for the condition and instead of else just to be on the smart side what I'm going to do is an elif and here I'll say elif self.n is equal and I'm going to use the same code here so I'm going to say len self.players and then from there to say minus 1 and now inside of here I'm going to use the same code here where you say actually I'm gonna use almost the same all the same code. 
 
+![IMG](./03-126_IMG0a.png)
+
 I'm grabbing the same player but instead of incrementing by one what I want to do is set self.n equal to zero again. So this is going to start the counter over and then we're going to return the player. So so far I think this is everything that we need and if some of your codes spidey sense is going off and you think that we have too much duplication in this code and that it's not easy to read, you are a hundred percent right. So we're going to come back and refactor it shortly.
 
 But for right now let's just make sure that this is actually working and that we don't have any typos or anything like that. So I'm going to run python and then this is oop_guide.py and there we go we have our first two players that got printed out Springer and Bregman. 
 
-![large](https://s3-us-west-2.amazonaws.com/images-devcamp/Advanced+Python+Programming/Object+Oriented+Programming+(OOP)+in+Python/How+to+Build+a+Custom+Iterator+Class+in+Python+%23+1601/image11.png)
+![large](./03-126_IMG1.png)
 
 Now let's come down because as helpful as that is, that was really the easy part a for in loop could have done that. What we want is to be able to call this as many times as we want and have iterate over our lineup and then start over again automatically. So now if I call it a bunch of times and run the same code you can see that this is working perfectly. 
 
