@@ -2,8 +2,6 @@
 
 # Build a Pretty Price Method
 
-
-
 This coding exercise focuses on **formatting prices** for an e-commerce application. The goal is to **normalize prices** to follow a more attractive pattern, commonly used in retail (e.g., rounding to `.99` or `.95`).
 
 This guide will help you:
@@ -96,20 +94,17 @@ For more **scalability and flexibility**, we can implement this using a class.
 ### ✅ Example: Class-Based Approach
 
 ```python
-
-
-
 import math
 
 class PrettyPrice:
-    
+
     def __init__(self, gross_price, input_type):
         self.gross_price = gross_price
         self.input_type = input_type
 
     def prettify(self):
         base = math.floor(self.gross_price)
-        
+
         if isinstance(self.input_type, int):
             decimals /= 100
             prettified_price = base + decimals
@@ -119,9 +114,6 @@ class PrettyPrice:
 
             prettified_price = base + 0.99
             return f'Prettified price, from {self.gross_price}, is:  {prettified_price} !'
-
-
-
 ```
 
 ### ✅ Using the Class
@@ -238,7 +230,7 @@ So we have a function in python called int and if I pass x to it you
 can see that it returns the integer value which means it strips out all 
 of the decimals.
 
-![large](https://s3-us-west-2.amazonaws.com/images-devcamp/Python+Coding+Exercises/Mathematical+Computation/Build+a+Pretty+Price+Method+in+Python+%23+1700/image11.png)
+![large](./03-134_IMG1.png)
 
 So if you went through the solution and you tried to do something 
 where you saw the decimal and then you checked to see what the value was
@@ -254,7 +246,7 @@ are saying 0.95 cents, just like that let's print this out and see if
 this is working. So let's run it Python pretty price and that worked 
 perfectly.
 
-![large](https://s3-us-west-2.amazonaws.com/images-devcamp/Python+Coding+Exercises/Mathematical+Computation/Build+a+Pretty+Price+Method+in+Python+%23+1700/image12.png)
+![large](./03-134_IMG2.png)
 
 So we have now a pretty price generator and it works very nicely 
 whenever a decimal is passed like we have right here. Now let's see what
@@ -263,7 +255,7 @@ we try this with whole numbers we change this to 95 and said 95 cents if
  we try this now then you're going to see that we end up with 98 which 
 is definitely not what we're looking for.
 
-![large](https://s3-us-west-2.amazonaws.com/images-devcamp/Python+Coding+Exercises/Mathematical+Computation/Build+a+Pretty+Price+Method+in+Python+%23+1700/image13.png)
+![large](./03-134_IMG3.png)
 
 So what I can do here is I can perform a check. So inside of the 
 function itself, I can add a conditional and there is a very helpful 
@@ -281,7 +273,7 @@ extension.
 
 So now let's test this out and see if it's working. And there we go, both of those are working perfectly.
 
-![large](https://s3-us-west-2.amazonaws.com/images-devcamp/Python+Coding+Exercises/Mathematical+Computation/Build+a+Pretty+Price+Method+in+Python+%23+1700/image14.png)
+![large](./03-134_IMG4.png)
 
 So you can see that our API is much more flexible with our function 
 now. So now if you're working with a program that has decimals that are 

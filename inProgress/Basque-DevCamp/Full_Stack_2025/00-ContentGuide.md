@@ -299,19 +299,19 @@
 
 ### Python 08: Inheritance / Polymorphism
 
-|     | #   | Type | Tittle                                                  | Date |
-| --- | --- | ---- | ------------------------------------------------------- | ---- |
-| [ ] | 129 |      | Introduction to Inheritance in Python                   |      |
-| [ ] | 130 |      | Using Polymorphism to Build an HTML Generator in Python |      |
-| [ ] | 131 |      | Building Polymorphic Functions in Python                |      |
-| [ ] | 132 |      | How to Create and Write to a File in Python             |      |
+|     | #   | Type                           | Tittle                                                  | Date       |
+| --- | --- | ------------------------------ | ------------------------------------------------------- | ---------- |
+| [X] | 129 | OOP: Inheritance               | Introduction to Inheritance in Python                   | 2025/03/10 |
+| [X] | 130 | OOP: Polymorphism              | Using Polymorphism to Build an HTML Generator in Python | 2025/03/10 |
+| [X] | 131 | OOP: Polymorphic Functions     | Building Polymorphic Functions in Python                | 2025/03/10 |
+| [X] | 132 | Python: Handling Server files. | How to Create and Write to a File in Python             | 2025/03/10 |
 
 ### Python 09: REGEX
 
-|     | #   | Type | Tittle                                                 | Date |
-| --- | --- | ---- | ------------------------------------------------------ | ---- |
-| [ ] | 133 |      | Using Regular Expressions to List File Types in Python |      |
-| [ ] | 134 |      | Build a Pretty Price Method in Python                  |      |
+|     | #   | Type                           | Tittle                                                 | Date       |
+| --- | --- | ------------------------------ | ------------------------------------------------------ | ---------- |
+| [X] | 133 | Pyhton: REGEX 1 - Server Files | Using Regular Expressions to List File Types in Python | 2025/03/10 |
+| [X] | 134 | Python Exercise                | Build a Pretty Price Method in Python                  | 2025/03/10 |
 
 ### Python 10: API's & Web devel.
 
