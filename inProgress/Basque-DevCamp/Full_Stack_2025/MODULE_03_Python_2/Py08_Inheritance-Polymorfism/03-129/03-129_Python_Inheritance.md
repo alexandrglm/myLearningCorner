@@ -1,4 +1,157 @@
-# MODULE 03 - 129: Python - Inheritance
+## MODULE 03 - 129: Python - Inheritance
+
+
+
+**Inheritance** is a fundamental concept in **object-oriented programming (OOP)** that allows us to create **specialized versions of a class**. Instead of writing new classes from scratch,     we can build upon existing classes and **reuse attributes and methods**.
+
+By the end of this guide, you'll understand:
+✅ How inheritance allows us to define **parent (base) and child (derived) classes**.  
+✅ How child classes **inherit attributes and methods** from parent classes.  
+✅ How to **extend functionality** by adding new methods to a child class.
+
+🔗 **Reference:** [Python Inheritance](https://docs.python.org/3/tutorial/classes.html#inheritance)
+
+---
+
+## 🔹 Defining a Base (Parent) Class
+
+A **parent class** (also called a **base class**) provides general attributes and behaviors that other classes can **inherit**.
+
+### ✅ Example: Creating a `User` Class
+
+```python
+class User:
+    def __init__(self, email, first_name, last_name):
+        self.email = email
+        self.first_name = first_name
+        self.last_name = last_name
+
+    def greeting(self):
+        return f'Hi {self.first_name} {self.last_name}'
+```
+
+📌 **What Happens?**
+
+- The `User` class has **three attributes**: `email`, `first_name`, and `last_name`.
+- It has **one method**: `greeting()`, which returns a formatted message.
+
+🔗 **Reference:** [Python Class Syntax](https://docs.python.org/3/tutorial/classes.html#class-definition-syntax)
+
+---
+
+## 🔹 Creating a Child (Derived) Class
+
+A **child class** inherits attributes and methods from a parent class. This allows us to create specialized versions of existing classes **without duplicating code**.
+
+### ✅ Example: Defining an `AdminUser` Class that Inherits from `User`
+
+```python
+class AdminUser(User):
+    def active_users(self):
+        return '500'
+```
+
+📌 **Key Takeaways:**
+
+- The `AdminUser` class **inherits** from `User`.
+- It **automatically gets** all attributes (`email`, `first_name`, `last_name`) and methods (`greeting()`).
+- We **add a new method** `active_users()`, exclusive to `AdminUser`.
+
+🔗 **Reference:** [Python Inheritance](https://docs.python.org/3/tutorial/classes.html#inheritance)
+
+---
+
+## 🔹 Creating Instances of Both Classes
+
+### ✅ Example: Instantiating Objects
+
+```python
+tiffany = AdminUser('tiffany@devcamp.com', 'Tiffany', 'Hudgens')
+kristine = User('kristine@devcamp.com', 'Kristine', 'Hudgens')
+
+print(tiffany.active_users())  # ✅ 500
+print(tiffany.greeting())      # ✅ Hi Tiffany Hudgens
+
+print(kristine.greeting())     # ✅ Hi Kristine Hudgens
+print(kristine.active_users()) # ❌ ERROR (not defined in `User`)
+```
+
+📌 **What Happens?**
+
+- `tiffany` (AdminUser) has access to **both inherited and new methods**.
+- `kristine` (User) does **not** have access to `active_users()`, since it's only defined in `AdminUser`.
+
+🔗 **Reference:** [Python Object Instantiation](https://docs.python.org/3/tutorial/classes.html#class-instances)
+
+---
+
+## 🔹 How Python Resolves Methods in Inheritance (Method Resolution Order - MRO)
+
+When calling a method, Python follows this order:
+
+1. 1️⃣ **Looks in the child class.**     
+
+2. 2️⃣ **If not found, looks in the parent class.**   
+
+3. 3️⃣ **If still not found, looks in higher-level parent classes** (if multiple inheritance is used).
+
+📌 This is why `AdminUser` can call `greeting()`, even though it’s not explicitly defined in the `AdminUser` class—it **inherits it** from `User`.
+
+🔗 **Reference:** [Python Method Resolution Order (MRO)](https://docs.python.org/3/tutorial/classes.html#multiple-inheritance)
+
+---
+
+## 🔹 Overriding Parent Methods in Child Classes
+
+Sometimes, we want a child class to **change the behavior** of a method inherited from a parent class.
+
+### ✅ Example: Overriding `greeting()`
+
+```python
+class AdminUser(User):
+    def greeting(self):
+        return f'Hello Admin {self.first_name} {self.last_name}'
+```
+
+📌 **What Changes?**
+
+- `AdminUser` now **has its own version** of `greeting()`, replacing the parent’s method.
+- If an `AdminUser` calls `greeting()`, Python uses **the overridden method**.
+
+🔗 **Reference:** [Method Overriding in Python](https://docs.python.org/3/tutorial/classes.html#inheritance)
+
+---
+
+## 🔹 Extending Parent Methods Instead of Overriding
+
+If we want to keep the original functionality while adding something new, we can use `super()`.
+
+### ✅ Example: Extending a Method
+
+```python
+class AdminUser(User):
+    def greeting(self):
+        return f'{super().greeting()} (Admin Access Granted)'
+```
+
+📌 **Why Use `super()`?**
+
+- Calls the **parent class’s `greeting()`** method.
+- Allows us to **extend functionality instead of fully overriding it**.
+
+🔗 **Reference:** [Python `super()` Function](https://docs.python.org/3/library/functions.html#super)
+
+---
+
+## 📌 Summary
+
+- **Inheritance** allows creating specialized versions of a class while reusing existing code.
+- **Child classes inherit all attributes and methods** from parent classes.
+- **New methods can be added** in child classes.
+- **Methods can be overridden** to customize behavior.
+- **Use `super()`** to extend rather than replace parent methods.
+
+By mastering **inheritance**, you can build **scalable, reusable, and efficient** object-oriented programs in Python! 🚀
 
 ****
 
@@ -28,8 +181,10 @@ it's going to return a formatted string so format and say hi and pass in
  with string interpellation self.first_name and then self.last_name and 
 that's all that we're going to need in this class.
 
+```python
 def greeting(self):
-    return f'Hi {self.first_name} {self.last_name}'
+ return f'Hi {self.first_name} {self.last_name}'
+```
 
 But imagine that you're building out a full web application and you 
 need to have the concept of admin users so admin users are going to be a
@@ -49,15 +204,19 @@ the class and then you pass in using parentheses the element so whatever
  class you want it to inherit from. So I'm gonna say class admin user 
 inherits from user.
 
+```python
 class AdminUser(User):
+```
 
 And now I can create a custom function. So imagine that you want the 
 admin users and admin users only to be able to know how many active 
 users are on the site. I could say `def active_users` and it is going to just take in self and then for right now, we're just going to hard code a number in.
 
+```python
 class AdminUser(User):
-    def active_users(self):
-        return '500'
+ def active_users(self):
+ return '500'
+```
 
 so that is how you create a basic class and then how you create a 
 class that inherits from that. So now let's test this out I'm going to 
@@ -77,14 +236,14 @@ from here I can print out and have access to that active users method.
 So I'm going to hit save here and let's run this code you can see it 
 prints out five hundred now.
 
-![large](https://s3-us-west-2.amazonaws.com/images-devcamp/Advanced+Python+Programming/Object+Oriented+Programming+(OOP)+in+Python/Introduction+to+Inheritance+in+Python+%23+1604/image11.png)
+![large](./03-129_IMG1.png)
 
 If I try to do the same thing with Kristine so if I have the user 
 Kristine and I try to allow her to access that active users method I'm 
 going to get an error. And it says AttributeError User object has no 
 attribute active user.
 
-![large](https://s3-us-west-2.amazonaws.com/images-devcamp/Advanced+Python+Programming/Object+Oriented+Programming+(OOP)+in+Python/Introduction+to+Inheritance+in+Python+%23+1604/image12.png)
+![large](./03-129_IMG2.png)
 
 So this is it doing exactly what we want. We've created a specialized
  class that has all of the attributes and all the behavior of the parent
@@ -110,21 +269,41 @@ So in review, that is the basic introduction to how to work with inheritance in 
 ## Code
 
 ```python
+# 03-129: Inheritance
+
+# Defining a Parent Class/Base Class
+## Creating a user class
+
 class User:
- def __init__(self, email, first_name, last_name):
- self.email = email
- self.first_name = first_name
- self.last_name = last_name
- def greeting(self):
- return f'Hi {self.first_name} {self.last_name}'
 
-class AdminUser(User):
- def active_users(self):
- return '500'
+    def __init__(self, email, first_name, last_name):
+        self.email = email
+        self.first_name = first_name
+        self.last_name = last_name
 
-tiffany = AdminUser('tiffany@devcamp.com', 'Tiffany', 'Hudgens')
-kristine = User('kristine@devcamp.com', 'Kristine', 'Hudgens')
-print(tiffany.active_users())
-print(tiffany.greeting())
-print(kristine.active_users())
+    def greeting(self):
+
+        return f'Hi, {self.first_name} {self.last_name}!'
+        
+# Defining a Child Class/Derived Class
+## Creating an Admin class
+
+class AdminUser(User):      # class ChildClass(ParentClass)
+
+    def active_user(self):
+        return '500'
+    
+
+# Creating Instances from both classes
+
+pepe = AdminUser('pepe@mail.com', 'Pepe', 'Perez')
+juan = User('juan@juan.com', 'Juan', 'Juarez')
+
+print(pepe.active_user())
+print(pepe.greeting())
+
+print(juan.greeting())
+# print(juan.active_user())     # Cannot be called, error active_user for juan is not defined
+
+
 ```

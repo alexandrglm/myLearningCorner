@@ -1,6 +1,154 @@
 # MODULE 03 - 134: Python - Exercise
 
-# Build a Pretty Nice method
+# Build a Pretty Price Method
+
+
+
+This coding exercise focuses on **formatting prices** for an e-commerce application. The goal is to **normalize prices** to follow a more attractive pattern, commonly used in retail (e.g., rounding to `.99` or `.95`).
+
+This guide will help you:
+
+* ✅ Implement a **flexible price formatting function**.  
+
+* ✅ Handle **both whole numbers and decimal inputs**.  
+
+* ✅ Use **Python's built-in type-checking** to improve function usability.
+
+🔗 **Reference:** [Python Type Checking (`isinstance`)](https://docs.python.org/3/library/functions.html#isinstance)
+
+---
+
+## 🔹 Understanding the Problem
+
+The function should:
+
+- Accept a **gross price** (e.g., `3.21`).
+- Allow customization of the **price extension** (e.g., `.99` or `.95`).
+- Support **both whole numbers (99) and decimals (0.99)** as extensions.
+
+### ✅ Desired callbacks & outputs
+
+```python
+pretty_price(3.20, 0.99)  # Returns: 3.99
+pretty_price(3.20, 99)    # Returns: 3.99
+pretty_price(3.20, 95)    # Returns: 3.95
+pretty_price(10, 0.50)    # Returns: 10.50
+```
+
+📌 **Key Challenge:**
+
+- Ensure that **both integer and decimal extensions work seamlessly**.
+
+🔗 **Reference:** [Python `int()` Function](https://docs.python.org/3/library/functions.html#int)
+
+---
+
+## 🔹 Implementing the Solution
+
+We will:
+
+1. Extract the **whole number** part of the price.
+2. Check if the extension is an **integer**.
+3. Convert **integers to decimals** (e.g., `99 → 0.99`).
+4. Return the **formatted price**.
+
+### ✅ Pretty Price Function
+
+```python
+def pretty_price(gross_price, extension):
+    base_price = int(gross_price)  # Strip decimals
+
+    if isinstance(extension, int):  # Convert integer extension
+        extension = extension * 0.01  # 99 → 0.99
+
+    return base_price + extension
+```
+
+🔗 **Reference:** [Python `int` vs. `float`](https://docs.python.org/3/library/functions.html#int)
+
+---
+
+## 🔹 Testing the Function
+
+### ✅ Example Usage
+
+```python
+print(pretty_price(3.20, 0.99))  # 3.99
+print(pretty_price(3.20, 99))    # 3.99
+print(pretty_price(3.20, 95))    # 3.95
+print(pretty_price(10, 0.50))    # 10.50
+```
+
+📌 **What Happens?**
+
+- `3.20 → 3` (integer conversion)
+- `99 → 0.99` (integer extension correction)
+- **Final Price:** `3 + 0.99 → 3.99`
+
+🔗 **Reference:** [Python Arithmetic Operations](https://docs.python.org/3/tutorial/introduction.html#numbers)
+
+---
+
+## 🔹 Alternative Approach: Using a Class
+
+For more **scalability and flexibility**, we can implement this using a class.
+
+### ✅ Example: Class-Based Approach
+
+```python
+
+
+
+import math
+
+class PrettyPrice:
+    
+    def __init__(self, gross_price, input_type):
+        self.gross_price = gross_price
+        self.input_type = input_type
+
+    def prettify(self):
+        base = math.floor(self.gross_price)
+        
+        if isinstance(self.input_type, int):
+            decimals /= 100
+            prettified_price = base + decimals
+            return f'Prettified price, from {self.gross_price}, is:  {float(prettified_price)} !'
+
+        else:
+
+            prettified_price = base + 0.99
+            return f'Prettified price, from {self.gross_price}, is:  {prettified_price} !'
+
+
+
+```
+
+### ✅ Using the Class
+
+```python
+price = float(input('Price to be prettfied? :  '))
+input_type = input('Choose your rounding up method (0.xx / xx) :')
+
+prettified_price = PrettyPrice(price, input_type)
+print(prettified_price.prettify())
+```
+
+📌 **Why Use a Class?**
+
+- **Encapsulation**: Keeps price formatting logic inside a single object.
+- **Extendability**: Easier to add new features (e.g., currency conversion).
+
+🔗 **Reference:** [Python OOP: Classes & Methods](https://docs.python.org/3/tutorial/classes.html)
+
+---
+
+## 📌 Summary
+
+- **`pretty_price()`** formats prices for e-commerce.
+- **Handles both integers and decimals** for extensions.
+- **Uses `int()` to strip decimals** and `isinstance()` to convert whole numbers.
+- **A class-based approach** can provide additional scalability.
 
 ---
 
@@ -12,36 +160,62 @@ has a normalized price for say an e-commerce shop.
 
 ****
 
-So this is something that I had to build out 
-for an application recently and so I thought it would be a good idea to 
-include it as an exercise because if you've never done this kind of 
-thing before then the solution might not be the most intuitive. So what 
-we're looking to do is to have a function so that when it's called if 
-it's passed in a gross value. So say this is going to be the sale price 
-and the sale price is 3.21 cents. The output of this function should be 
-3. something like 99 or 95. We also want the ability to have the 
-flexibility to say if it's going to be 99 or 95 or something else you 
-may want it to just be flat 3 dollars and so this is going to be an 
+So this is something that I had to build out for an application recently and so I thought it would be a good idea to include it as an exercise because if you've never done this kind of thing before then the solution might not be the most intuitive.   
+
+So what we're looking to do is to have a function so that when it's called if it's passed in a gross value.   
+
+So say this is going to be the sale price and the sale price is 3.21 cents. The output of this function should be `3.something like 99 or 95`. 
+
+We also want the ability to have the flexibility to say if it's going to be 99 or 95 or something else you may want it to just be flat 3 dollars and so this is going to be an 
 exercise where you can do that.
 
-Now I want to walk through what type of solution before actually 
-getting the solution I want to give you one hint on the solution and 
-that is showing you how you should be able to call this function because
- I put in a little bit of a twist on it. And so I want to be able to 
-call the function like this where I say pretty price and then like you 
-saw before I could pass in something like 3 dollars and 20 cents and 
-then 99 and the output of this should be something like 3 dollars and 99
- cents. But now I want it to be a little bit more flexible so that if I 
-say 3 dollars and 20 cents and then pass in a decimal then I want the 
-output to be exactly the same.
+Now, I want to walk through what type of solution before actually getting the solution I want to give you one hint on the solution and that is showing you how you should be able to call this function because I put in a little bit of a twist on it.   
 
-The reason why I'm doing this is, imagine that you're building out 
-some kind of code library that other developers were going to use, and 
-sometimes they have a whole number that they would pass in and other 
-times they have a decimal in this scenario. I think it makes sense to 
-have both of these working. So that is the set of instructions so I 
-recommend that now you pause the video and then come back and you can 
-watch me as I go through my own personal solution.
+And so I want to be able to call the function like this where I say pretty price and then like you saw before I could pass in something like 3 dollars and 20 cents and then 99 and the output of this should be something like 3 dollars and 99 cents.  
+
+ But now I want it to be a little bit more flexible so that if I say 3 dollars and 20 cents and then pass in a decimal then I want the output to be exactly the same.
+
+The reason why I'm doing this is, imagine that you're building out some kind of code library that other developers were going to use, and sometimes they have a whole number that they would pass in and other times they have a decimal in this scenario. I think it makes sense to have both of these working.   
+
+So that is the set of instructions so I recommend that now you pause the video and then come back and you can watch me as I go through my own personal solution.
+
+****
+
+# Attempt #1
+
+```python
+# Even it's not exactly exactly what exercise should be,
+# this attempt tries to joint last guides' learnings
+
+import math
+
+class PrettyPrice:
+
+    def __init__(self, gross_price, input_type):
+        self.gross_price = gross_price
+        self.input_type = input_type
+
+    def prettify(self):
+        base = math.floor(self.gross_price)
+
+        if isinstance(self.input_type, int):
+            decimals /= 100
+            prettified_price = base + decimals
+            return f'Prettified price, from {self.gross_price}, is:  {float(prettified_price)} !'
+
+        else:
+
+            prettified_price = base + 0.99
+            return f'Prettified price, from {self.gross_price}, is:  {prettified_price} !'
+
+
+
+price = float(input('Price to be prettfied? :  '))
+input_type = input('Choose your rounding up method (0.xx / xx) :')
+
+prettified_price = PrettyPrice(price, input_type)
+print(prettified_price.prettify())
+```
 
 So welcome back, if you went through that. I'm going to get rid of 
 the comments here and start building this out. So I'm going to create a 

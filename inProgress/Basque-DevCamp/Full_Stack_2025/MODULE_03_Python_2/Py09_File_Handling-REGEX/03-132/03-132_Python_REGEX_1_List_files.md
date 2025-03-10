@@ -1,4 +1,111 @@
-# MODULE 03 - 132: Python - REGEX 1: Listing files.
+# MODULE 03 - 132: Python - REGEX 1: Handling server files
+
+Working with the **file system in Python** is a fundamental skill, especially for tasks like logging, data storage, and automation.
+
+In this guide, we will:
+✅ Learn how to **create and write** to files.  
+✅ Understand **how file modes (`w+`) affect file content**.  
+✅ Implement a **basic logging system**.  
+✅ Discuss **important considerations** when working with files.
+
+🔗 **Reference:** [Python File Handling](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files)
+
+---
+
+## 🔹 Creating and Writing to a File
+
+Python provides the built-in `open()` function, which allows us to **create, read, and modify** files.
+
+### ✅ Example: Creating and Writing to `logger.txt`
+
+```python
+file_builder = open("logger.txt", "w+")
+file_builder.write("Hey, I'm in a file!")
+file_builder.close()
+```
+
+📌 **Key Takeaways:**
+
+- `open("logger.txt", "w+")` creates a file if it doesn’t exist.
+- **If the file exists, it will be overwritten**.
+- Always call `close()` to ensure the file is properly saved.
+
+🔗 **Reference:** [Python `open()` Function](https://docs.python.org/3/library/functions.html#open)
+
+---
+
+## 🔹 Automating File Writing with a Loop
+
+Instead of writing a single line, let’s create **multiple log entries dynamically**.
+
+### ✅ Example: Writing Multiple Lines
+
+```python
+file_builder = open("logger.txt", "w+")
+
+for i in range(1, 11):
+    file_builder.write(f"{i}: Hey, I'm a looped line!\n")
+
+file_builder.close()
+```
+
+📌 **What Happens?**
+
+- A loop writes **10 lines** dynamically.
+- `\n` ensures **each entry appears on a new line**.
+
+🔗 **Reference:** [Python String Formatting](https://docs.python.org/3/library/stdtypes.html#str.format)
+
+---
+
+## 🔹 Handling Larger Log Files
+
+If we need a **larger log file**, we can increase the loop range.
+
+### ✅ Appending more content without losing the previous
+
+```python
+file_builder = open("logger.txt", "a+")
+
+for i in range(100):
+    file_builder.write(f"I'm on line {i + 1}\n")
+
+file_builder.close()
+```
+
+📌 **Important Consideration:**
+
+- Every time this script runs, it **overwrites** the existing `logger.txt`.
+- To append new data instead of replacing it, use **append mode (`a+`)** (covered in the next guide).
+
+🔗 **Reference:** [Python File Modes](https://docs.python.org/3/tutorial/inputoutput.html#methods-of-file-objects)
+
+---
+
+## 🔹 Understanding File Overwriting
+
+One of the most important lessons from this guide:
+
+> **Using `w+` mode will overwrite existing file contents.**
+
+If your script runs twice, all previous data is **erased**. This is useful for **temporary logs** but can be problematic for persistent data.
+
+📌 **How to Prevent Overwriting?**
+
+- Use **append mode (`a+`)** to add data instead of replacing it.
+- Check if the file exists **before writing**.
+
+🔗 **Reference:** [Python `os.path.exists()`](https://docs.python.org/3/library/os.path.html#os.path.exists)
+
+---
+
+## 📌 Summary
+
+- **`open("file.txt", "w+")` creates or overwrites a file**.
+- **Use `write()`** to add content to a file.
+- **Loops automate** file writing for multiple lines.
+- **Beware:** `w+` mode **replaces existing content**.
+- In the next guide, we will learn how to **append** to a file instead of overwriting it.
 
 ---
 
@@ -9,11 +116,11 @@ file system in Python. So we're going to start off with the basics.
 
 ****
 
-I want to walk through a practical example. A 
-very common use case for working with the files system is to log values.
- What we're going to do is we're going to build a small program here 
-that is going to be able to create a logger. We're gonna see how we can 
-create a file, and then add it to it.
+I want to walk through a practical example.   
+
+A very common use case for working with the files system is to log values.
+
+What we're going to do is we're going to build a small program here that is going to be able to create a logger. We're gonna see how we can create a file, and then add it to it.
 
 Then we're also going to walk through a few potential issues that you may run into. Let's start off. I have a file here called `file builder`,
  and I'm going to create a variable here where I'm going to open up a 
@@ -67,7 +174,7 @@ Nothing thing else is going to be added to that. If I run this code, I'm
 
 Now if you type `ls`, you can see that we have a `logger` file. Let's open it up, and you can see that our text `"Hey, I'm in a file"` has been added to that. That is working nicely.
 
-![large](https://s3-us-west-2.amazonaws.com/images-devcamp/Advanced+Python+Programming/File+System/How+to+Create+and+Write+to+a+File+in+Python+%23+2107/Image11.png)
+![large](./03-132_IMG1.png)
 
 Now let's take something that's a little bit more practical. I'm 
 going to just comment this out for us so that you can have it in the 
@@ -76,14 +183,17 @@ be a little bit more practical for how you typically use this. So I'm
 going to say:
 
 ```python
-file_builder = open("logger.txt", "w+")
+## Let's fun with file operations and some logic
 
-for i in range(100):
+file_builder = open('logger.txt', 'w+')
 
-# file_builder.write("Hey, I'm in a file!")
+for i in range(1,11):
+    file_builder.write(f'{i}: Hey, I\'m a looped line!\n')
 
 file_builder.close()
 ```
+
+![IMG](./03-132_IMG1b.png)/)
 
 Then inside of this `for-in-loop`, what I want to do is I want to call the same exact process. I can say:
 
@@ -117,7 +227,7 @@ file_builder.close()
 
 Now if I come over here, and I run that same command of `python file_guide.py`, it runs right away. Let's take a look at that `logger` now. Now you can see that it went and built that entire program.
 
-![large](https://s3-us-west-2.amazonaws.com/images-devcamp/Advanced+Python+Programming/File+System/How+to+Create+and+Write+to+a+File+in+Python+%23+2107/Image12.png)
+![large](./03-132_IMG2.png)
 
 If you come all the way down to the bottom. You can see it as `I'm on line 100`.
  On every one of these lines, it gives the line number actually lists it
@@ -163,12 +273,65 @@ So in review, that is the basic introduction for how you can create and then add
 ## Code
 
 ```python
+# 03-132: REGEX-1 -> Reading/Writing files
+
+# open() / write() / close()
+
+file_builder = open('logger.txt', 'w+')
+
+file_builder.write('Hey, this is a line in the file\n')
+
+file_builder.close()
+
+
+# Let's fun with file operations and some logic
+
+## 1
+file_builder = open('logger.txt', 'w+')
+
+for i in range(1,11):
+    file_builder.write(f'{i}: Hey, I\'m a looped line!\n')
+
+file_builder.close()
+
+
+
+## 2
 file_builder = open("logger.txt", "w+")
 
-for i in range(1000):
+for i in range(100):
  file_builder.write(f"I'm on line {i + 1}\n")
 
 # file_builder.write("Hey, I'm in a file!")
 
 file_builder.close()
+
+"""
+## Handling files with os
+
+import os
+
+new_folder = os.mkdir('new_subfolder')
+
+list_folder = os.listdir()
+
+change_back_dir = os.chdir('..')
+# change_last_dir = os.chdir('-')
+
+file_mv = os.rename('old_file', 'new_file')
+
+remove_file = os.remove('logger.txt')
+
+remove_folder = os.rmdir('new_subfolder')
+
+folder_to_check = 'new_subfolder'
+does_the_folder_exist = os.path.exists(folder_to_check)
+
+if does_the_folder_exist is True:
+    print('it exists!')
+else:
+    print('It does not exist') 
+
+get_info_from_file = os.stat('test_file.md')
+"""
 ```

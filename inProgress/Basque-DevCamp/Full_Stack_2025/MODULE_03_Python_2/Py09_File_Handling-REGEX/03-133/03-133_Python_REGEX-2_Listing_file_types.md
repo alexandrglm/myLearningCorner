@@ -1,4 +1,127 @@
-# MODULE 03 - 133: Python: REGEX 2
+# MODULE 03 - 133: Python: REGEX 2 - Listing File Types
+
+Regular expressions (**REGEX**) allow us to **search, filter, and group files** based on patterns.
+
+In this guide, we will:
+✅ Learn how to **use `fnmatch` to filter file types**.  
+✅ Explore **real-world applications of REGEX for file handling**.  
+✅ Implement a **pattern-matching system** to organize files dynamically.
+
+🔗 **Reference:** [Python `fnmatch` Module](https://docs.python.org/3/library/fnmatch.html)
+
+---
+
+## 🔹 Listing Files by Type
+
+To list specific file types, we use the **`fnmatch` module**, which allows pattern matching.
+
+### ✅ Example: Listing `.txt` Files
+
+```python
+import fnmatch
+import os
+
+def list_files():
+    for file in os.listdir('.'):
+        if fnmatch.fnmatch(file, '*.txt'):
+            print('Text files:', file)
+
+list_files()
+```
+
+📌 **How It Works:**
+
+- `os.listdir('.')` lists all files in the current directory.
+- `fnmatch.fnmatch(file, '*.txt')` filters files that end in `.txt`.
+- **Only matching files** are printed.
+
+🔗 **Reference:** [Python `os.listdir()`](https://docs.python.org/3/library/os.html#os.listdir)
+
+---
+
+## 🔹 Filtering Multiple File Types
+
+We can **extend our function** to filter files of different types dynamically.
+
+### ✅ Example: Listing `.py`, `.txt`, `.rb`, and `.yml` Files
+
+```python
+def list_files():
+    for file in os.listdir('.'):
+        if fnmatch.fnmatch(file, '*.py'):
+            print('Python Scripts:', file)
+        if fnmatch.fnmatch(file, '*.txt'):
+            print('Text Files:', file)
+        if fnmatch.fnmatch(file, '*.rb'):
+            print('Ruby Files:', file)
+        if fnmatch.fnmatch(file, '*.yml'):
+            print('YAML Config Files:', file)
+
+list_files()
+```
+
+📌 **What Happens?**
+
+- The function iterates through **all files** in the directory.
+- **Multiple conditions** check for different extensions.
+- Each matching file is categorized and displayed.
+
+🔗 **Reference:** [Python `fnmatch` Patterns](https://docs.python.org/3/library/fnmatch.html#module-fnmatch)
+
+---
+
+## 🔹 Using `fnmatchcase()` for Advanced Filtering
+
+`fnmatchcase()` performs **case-sensitive pattern matching**, which is useful when filtering structured data.
+
+### ✅ Example: Extracting Specific Data from a List
+
+```python
+from fnmatch import fnmatchcase
+
+players = [
+    'Jose Altuve 2B',
+    'Carlos Correa SS',
+    'Alex Bregman 3B',
+    'Scooter Gennett 2B'
+]
+
+second_base_players = [player for player in players if fnmatchcase(player, '* 2B')]
+
+print(second_base_players)  # ['Jose Altuve 2B', 'Scooter Gennett 2B']
+```
+
+📌 **How It Works:**
+
+- The `fnmatchcase(player, '* 2B')` pattern filters players with **"2B"** at the end.
+- The list comprehension dynamically **creates a filtered list**.
+- **No need for manual string manipulation or loops**.
+
+🔗 **Reference:** [Python List Comprehensions](https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions)
+
+---
+
+## 🔹 When to Use `fnmatch` vs. `regex`
+
+| Feature          | `fnmatch`                  | Regular Expressions (Regex)                |
+| ---------------- | -------------------------- | ------------------------------------------ |
+| File Filtering   | ✅ Simple wildcard matching | ✅ Complex filtering with character classes |
+| Case Sensitivity | ❌ Ignores case             | ✅ Can enforce case sensitivity             |
+| Data Extraction  | ❌ Limited                  | ✅ Supports capturing groups                |
+| Performance      | ✅ Faster for simple checks | ❌ Slower for complex patterns              |
+
+📌 **Key Takeaway:** Use `fnmatch` for **simple filename filtering**, but for **complex text parsing**, consider using the `re` module.
+
+🔗 **Reference:** [Python `re` Module](https://docs.python.org/3/library/re.html)
+
+---
+
+## 📌 Summary
+
+- **`fnmatch.fnmatch()`** filters files based on extensions.
+- **`fnmatchcase()`** allows case-sensitive pattern matching.
+- **Dynamic filtering** enables automation in file handling.
+- **For advanced text matching**, use **regular expressions (`re`)**.
 
 ****
 
@@ -93,9 +216,9 @@ import fnmatch
 import os
 
 def list_files():
- for file in os.listdir('.'):
- if fnmatch.fnmatch(file, "*.txt"):
- print("Text files:, ", file)
+    for file in os.listdir('.'):
+        if fnmatch.fnmatch(file, '*.txt'):
+            print('Text files: , ', file)
 ```
 
 Let's hit save, and now, let's just make sure that everything that we
@@ -104,7 +227,7 @@ Let's hit save, and now, let's just make sure that everything that we
 something2, and then something so, so far, so good, everything here is 
 working.
 
-![large](https://s3-us-west-2.amazonaws.com/images-devcamp/Advanced+Python+Programming/File+System/Using+Regular+Expressions+to+List+File+Types+in+Python+%23+2314/image11.png)
+![large](./03-133_IMG1.png)
 
 Now, while we're in this loop though, we can perform any other 
 conditionals that we want, so here, I can, instead of saying, "I want to
@@ -118,16 +241,20 @@ options, so I can say these are my YML files, and just for good measure,
  that we're working on right now.
 
 ```python
+# Let's introduce more cases, one for each file type:
+
 def list_files():
- for file in os.listdir('.'):
- if fnmatch.fnmatch(file, "*.txt"):
- print("Text files:, ", file)
- if fnmatch.fnmatch(file, "*.rb"):
- print("Ruby files:, ", file)
- if fnmatch.fnmatch(file, "*.yml"):
- print("Yaml files:, ", file)
- if fnmatch.fnmatch(file, "*.py"):
- print("Python files:, ", file)
+
+    for file in os.listdir('.'):
+        # Py scripts
+        if fnmatch.fnmatch(file, '*.py'):
+            print('Python Scripts: ', file)
+
+        # TXT files
+        if fnmatch.fnmatch(file, '*.txt'):
+            print('Txt Files: ', file)
+
+list_files()
 ```
 
 If I run this, this should print out all of the files from the file 
@@ -141,7 +268,7 @@ up properly. You can see it's grabbing all the Python files, which, it's
  only finding one. Then, it's finding that Ruby file, then the text 
 files, and then the YML file.
 
-![large](https://s3-us-west-2.amazonaws.com/images-devcamp/Advanced+Python+Programming/File+System/Using+Regular+Expressions+to+List+File+Types+in+Python+%23+2314/image12.png)
+![large](./03-133_IMG2.png)
 
 What we did here is, just in review, we pulled in this fnmatch 
 library. This is giving us the ability to pass in a regular expression 
@@ -232,7 +359,9 @@ Then, we are calling fnmatchcase, we're passing in a string each time
  a player, and then we're looping through, and we're trying to find the 
 ones that end in a space, and then second base or 2B.
 
+```python
 second_base_players = [player for player in players if fnmatchcase(player, "* 2B")]
+```
 
 If this works, this is going to trigger for the first item in the 
 list, and then the last item, and then it's going to store that in a 
@@ -242,7 +371,7 @@ completely new list, so let's print this out and see if this is working,
  this again, you can see that worked perfectly, we have players that 
 play second base, Jose Altuve and Scooter Gennett.
 
-![large](https://s3-us-west-2.amazonaws.com/images-devcamp/Advanced+Python+Programming/File+System/Using+Regular+Expressions+to+List+File+Types+in+Python+%23+2314/image13.png)
+![large](./03-133_IMG3.png)
 
 In review, what we've done here is we've leveraged the fnmatch 
 library in Python, and we've seen how we can pass in patterns of data. 
@@ -261,27 +390,49 @@ expressions along with the Python file system.
 ## Code
 
 ```python
+# 03-133: REGEX_2, Importing a file without overwriting its content.
+
 import fnmatch
-from fnmatch import fnmatchcase
 import os
 
 def list_files():
- for file in os.listdir('.'):
- if fnmatch.fnmatch(file, '*.txt'):
- print('Text files:', file)
- if fnmatch.fnmatch(file, '*.rb'):
- print('Ruby files:', file)
- if fnmatch.fnmatch(file, '*.yml'):
- print('Yaml files:', file)
- if fnmatch.fnmatch(file, '*.py'):
- print('Python files:', file)
+    for file in os.listdir('.'):
+        if fnmatch.fnmatch(file, '*.txt'):
+            print('Text files: , ', file)
+
+
 list_files()
-players = [
- "Jose Altuve 2B",
- "Carlos Correa SS",
- "Alex Bregman 3B",
- "Scooter Gennett 2B"
+
+
+# Let's introduce more cases, one for each file type:
+
+def list_files():
+
+    for file in os.listdir('./'):
+        # Py scripts
+        if fnmatch.fnmatch(file, '*.py'):
+            print('Python Scripts: ', file)
+
+        # TXT files
+        if fnmatch.fnmatch(file, '*.txt'):
+            print('Txt Files: ', file)
+
+list_files()
+
+
+# Matching case example
+
+## While it's not mandatory in this example to "from fnmatch import fnmatchcase",
+## it's a good practice to import only the needed methods.
+
+neighbours = [
+    'Pepito Perez 1A',
+    'Juanito Lopez 1B',
+    'Menganito Smith 2A',
+    'Sandra Bullock 2B'
 ]
-second_base_players = [player for player in players if fnmatchcase(player, "* 2B")]
-print(second_base_players)
+
+first_floor_neighbours = [ neighbour for neighbour in neighbours if fnmatch.fnmatchcase(neighbour, '*1*')]
+
+print(first_floor_neighbours)   # ['Pepito Perez 1A', 'Juanito Lopez 1B']
 ```

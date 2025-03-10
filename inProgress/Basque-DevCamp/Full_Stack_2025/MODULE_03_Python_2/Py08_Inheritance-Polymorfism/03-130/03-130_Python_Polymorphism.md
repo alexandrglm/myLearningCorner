@@ -1,4 +1,148 @@
-# MODULE 03 - 130: Python - Polymorphism
+## MODULE 03 - 130: Python - Polymorphism
+
+Polymorphism is a core concept in **object-oriented programming (OOP)** that allows objects of different classes to be treated as instances of the same class through **shared interfaces**.
+
+This guide will help you understand:
+✅ How polymorphism enables **method overriding** in child classes.  
+✅ Why **abstract classes** enforce structure in class hierarchies.  
+✅ How **real-world applications** leverage polymorphism for flexibility.
+
+🔗 **Reference:** [Python Polymorphism](https://docs.python.org/3/tutorial/classes.html#inheritance)
+
+---
+
+## 🔹 Understanding Polymorphism
+
+Polymorphism means **“many forms”**—a single method name can have different behaviors across multiple classes.
+
+📌 **Why is this important?**
+
+- Reduces code duplication.
+- Increases **scalability** in large applications.
+- Encourages **reusability** of logic across different object types.
+
+### ✅ Example: Parent Class with an Abstract Method
+
+```python
+class Html:
+    def __init__(self, content):
+        self.content = content
+
+    def render(self):
+        raise NotImplementedError("Subclass must implement render method")
+```
+
+📌 **Key Takeaways:**
+
+- **The `render` method is abstract** → It forces child classes to implement it.
+- If a subclass does not define `render()`, Python will **raise an error**.
+- This prevents incomplete or inconsistent implementations.
+
+🔗 **Reference:** [Python Abstract Base Classes](https://docs.python.org/3/library/abc.html)
+
+---
+
+## 🔹 Implementing Polymorphism with Subclasses
+
+We create multiple child classes (`Heading` and `Div`) that **override** the `render()` method differently.
+
+### ✅ Example: Implementing Custom HTML Elements
+
+```python
+class Heading(Html):
+    def render(self):
+        return f'<h1>{self.content}</h1>'
+
+class Div(Html):
+    def render(self):
+        return f'<div>{self.content}</div>'
+```
+
+📌 **What Happens?**
+
+- Each child class **inherits from `Html`**.
+- They **implement `render()` differently**, following the required interface.
+- The `Heading` class wraps content in `<h1>`, while `Div` uses `<div>`.
+
+🔗 **Reference:** [Python Method Overriding](https://docs.python.org/3/tutorial/classes.html#inheritance)
+
+---
+
+## 🔹 Using Polymorphism in Practice
+
+Now that our classes are set up, let's **use them dynamically** without needing to know their exact types.
+
+### ✅ Example: Using a List of Different Objects
+
+```python
+tags = [
+    Div("Some content"),
+    Heading("My Amazing Heading"),
+    Div("Another div")
+]
+
+for tag in tags:
+    print(str(tag) + ': ' + tag.render())
+```
+
+📌 **Why is this powerful?**
+
+- **We don’t need to check types manually**—we simply call `render()`.
+- The correct method is executed based on **the object’s class**.
+- Adding new HTML elements is **easy**, without modifying existing logic.
+
+🔗 **Reference:** [Python Dynamic Typing](https://docs.python.org/3/glossary.html#term-duck-typing)
+
+---
+
+## 🔹 Enforcing Structure with Abstract Classes
+
+We used `raise NotImplementedError` to force child classes to implement `render()`. However, Python provides a **built-in way** to enforce this: the `abc` module.
+
+### ✅ Example: Using an Abstract Base Class (ABC)
+
+```python
+from abc import ABC, abstractmethod
+
+class Html(ABC):
+    def __init__(self, content):
+        self.content = content
+
+    @abstractmethod
+    def render(self):
+        pass  # Forces subclasses to define this method
+```
+
+📌 **Key Takeaways:**
+
+- `ABC` stands for **Abstract Base Class**.
+- The `@abstractmethod` decorator ensures **every subclass must implement `render()`**.
+- **Prevents errors** when developers forget to implement a required method.
+
+🔗 **Reference:** [Python `abc` Module](https://docs.python.org/3/library/abc.html)
+
+---
+
+## 🔹 Real-World Applications of Polymorphism
+
+✅ **Web Frameworks** → Django & Flask use class-based views with polymorphism.
+✅ **GUI Development** → UI elements (buttons, text fields) share a common interface.
+✅ **Game Development** → Different characters have shared `move()` and `attack()` methods.
+
+📌 **When Should You Use Polymorphism?**
+
+- When **multiple classes share behavior** but require different implementations.
+- When **you want to write flexible code** that adapts to new requirements.
+- When enforcing **consistent interfaces** in large applications.
+
+---
+
+## 📌 Summary
+
+- **Polymorphism** allows objects of different classes to share the same method name but with different behaviors.
+- **Abstract methods** enforce implementation in subclasses.
+- **Using lists of objects dynamically** makes code more flexible and scalable.
+- **The `abc` module** provides a built-in way to enforce method implementation.
 
 ---
 
@@ -29,8 +173,10 @@ class and why this function is an abstract one.
 
 So you say render self and then I'm going to say `raise NotImplementedError` and then inside it'll say subclass must implement render method.
 
+```python
 def render(self):
-    raise NotImplementedError('Subclass must implement render method')
+ raise NotImplementedError('Subclass must implement render method')
+```
 
 Okay, this may look a little bit weird to you if you've never seen it
  before. But what I am doing here is I don't actually want anyone to 
@@ -52,7 +198,9 @@ is going to return a formatted string of H1 and then it's going to take
 in self.content and then we're going to close off that h1 tag and that's
  all we need to do.
 
+```python
 return f'<h1>{self.content}</h1>'
+```
 
 Now I can create another class here called div, so I'm going to say 
 class divide. It's also going to inherit from the HTML class and then 
@@ -75,25 +223,27 @@ just the string representation. I'm going to concatenate that with a
 colon. And then let's add that on to tag.render or we're going to call 
 our render function.
 
+```python
 class Div(Html):
-    def render(self):
-        return f'<div>{self.content}</div>'
+ def render(self):
+ return f'<div>{self.content}</div>'
 
 tags = [
-             Div('Some content'), 
-             Heading('My Amazing Heading'), 
-             Div('Another div')
-             ]
+ Div('Some content'), 
+Heading('My Amazing Heading'), 
+Div('Another div')
+ ]
 
 for tag in tags:
-    print(str(tag) + ': ' + tag.render())
+ print(str(tag) + ': ' + tag.render())
+```
 
 So if you've never seen code that looks like this do not worry we are
  going to walk through it right afterward and we're guessing exactly 
 what's going on. But first, let's try to run it. So you're going to run 
 python oop_guide.
 
-![large](https://s3-us-west-2.amazonaws.com/images-devcamp/Advanced+Python+Programming/Object+Oriented+Programming+(OOP)+in+Python/Using+Polymorphism+to+Build+an+HTML+Generator+in+Python+%23+1605/image11.png)
+![large](./03-130_IMG1.png)
 
 And right here it's just printing out everything so it looks like we 
 do not have any typos or anything like that. So you can see it's 
@@ -159,22 +309,26 @@ generator just by doing that and we leverage Object-oriented programming
 ## Code
 
 ```python
+# 03 - 130
+
 class Html:
- def __init__(self, content):
- self.content = content
- def render(self):  
- raise NotImplementedError("Subclass must implement render method")
+    def __init__(self, content):
+        self.content = content
+
+    def render(self):
+        raise NotImplementedError('Subclass must implement render method')
+
 
 class Heading(Html):
- def render(self):
- return f'<h1>{self.content}</h1>'
+    def render(self):
+        return f'<h1>{self.content}</h1>'
 
 class Div(Html):
- def render(self):
- return f'<div>{self.content}</div>'
+    def render(self):
+        return f'<div>{self.content}</div>'
 
-tags = [Div('Some content'), Heading('My Amazing Heading'), Div('Another div')]
+tags = [ Div('Some Content'), Heading('This is a Heading'), Div('Another Div') ]
 
 for tag in tags:
- print(str(tag) + ': ' + tag.render())
+    print( str(tag) + ': ' + tag.render() )
 ```

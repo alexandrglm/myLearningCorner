@@ -216,24 +216,54 @@ Now like I showed over here one of the easiest ways if you're working with someo
 ## Code
 
 ```python
+# 03-128: Class VS Instance Attributes
+
+# Recalling ...
+# Defining Instance Attributes
+
 class Website:
-  def __init__(self, title):
-    self.title = title
+    
+    def __init__(self, title, heading):
+        self.title = title
+        self.heading = heading
 
 
-ws = Website('My Website Title')
-print(ws.__dict__)
+# Creating Instances, and accessing Attributes
+ws1 = Website('My First Website', '<h1>My first heading</h1>')
+ws2 = Website('The Second webpage', '<h1>My second heading</h1>')
 
-ws_two = Website('My Second Title')
-print(ws_two.__dict__)
+# The attributes (Here, title) **exist independently** for each object.
+print(ws1.title, ws1.heading)
+print(ws2.title, ws2.heading)
 
 
-class DifferentWebsite:
-  title = 'My Class Title'
 
-dw = DifferentWebsite()
-print(dw.title)
+# __dict__ -> Inspecting Instance Attributes
 
-dw_two = DifferentWebsite()
-print(dw_two.title)
+print(ws1.__dict__)     # {'title': 'My First Website', 'heading': '<h1>My first heading</h1>'}
+print(ws2.__dict__)
+
+
+#####################
+
+# Class Attributes
+
+# class DifferentWebsites:
+    
+#     # All instances will share this CLASS ATTRIBUTE
+#     title = 'My Class Title'
+
+#     def __init__(self, heading):
+#         self.heading = heading
+
+# dw1 = DifferentWebsites('<h1>New Heading 1</h1>')
+# dw2 = DifferentWebsites('<h2>Another heading</h2>')
+
+# print(dw1.title)
+# print(dw1.heading)
+
+# print(dw2.title)
+# print(dw2.heading)
+
+
 ```

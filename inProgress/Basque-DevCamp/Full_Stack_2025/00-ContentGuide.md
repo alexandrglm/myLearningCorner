@@ -293,7 +293,7 @@
 | [X] | 123 | Python: `@property` constructors / `self.var` - `self._var`                                        | How to Work with Python Properties and Decorators                        | 2025/03/08 |
 | [X] | 124 | Python: Dunder Methods 1 -> `__init__` - `__str__`                                                 | Overview of Dunder Methods in Python: **init**                           | 2025/03/08 |
 | [X] | 125 | Python: Dunder Methods 2 -> `__repr__`                                                             | Overview of Dunder Methods in Python: **repr**                           | 2025/03/08 |
-| [X] | 126 | Python: Dunder Methods 3 -> `__repr__`                                                             | How to Build a Custom Iterator Class in Python                           | 2025/03/08 |
+| [X] | 126 | Python: Dunder Methods 3 -> `__iter__` / `__next__`                                                | How to Build a Custom Iterator Class in Python                           | 2025/03/08 |
 | [X] | 127 | Python: Dunder Methods 4 -> `iter()` for`__iter__` / `next()` for `__next__` / Generator's `yield` | Overview of Iterators vs Generators in Python                            | 2025/03/08 |
 | [X] | 128 | Python: `__dict__`inspector                                                                        | Class vs Instance Attributes in Python                                   | 2025/03/08 |
 

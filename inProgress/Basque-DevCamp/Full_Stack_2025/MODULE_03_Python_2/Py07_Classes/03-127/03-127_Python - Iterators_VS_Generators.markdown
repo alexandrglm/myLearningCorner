@@ -245,7 +245,7 @@ I mean it's a print next and then just call astros_lineup and then that is all t
 
 So let's come over here, run it again. And as you can see that is working properly. 
 
-![large](./03-127_IMG3.png)
+![large](./03-127_IMG2.png)
 
 So right now you can see that we have each one of those three items and that is exactly what we're looking for. 
 
