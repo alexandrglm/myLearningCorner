@@ -38,8 +38,6 @@ pipenv install marshmallow-sqlalchemy
 - Installs Flask-Marshmallow (API Serialization).
 - Installs Marshmallow-SQLAlchemy (Connector for both).
 
-
-
 ---
 
 ## 🔹 Verifying the Installation
@@ -86,8 +84,6 @@ python app.py
 
 - You should see **"Hey Flask!"** confirming that Flask is working correctly.
 
-
-
 ---
 
 ## 📌 Summary
@@ -96,8 +92,6 @@ python app.py
 - **`Flask-Marshmallow`** simplifies JSON serialization for APIs.
 - **`Marshmallow-SQLAlchemy`** bridges SQLAlchemy models and JSON responses.
 - **Testing imports early** helps avoid debugging issues later.
-
-
 
 ****
 
