@@ -1,6 +1,101 @@
 # Module 03 - 138: Python - Flask (2)
 
-## Installing Dependencies for Flask Database and API Features
+## 🎯 Installing Dependencies for Flask Database and API Features
+
+In this guide, we'll set up Flask to work with databases and APIs using three essential libraries:
+
+✅ `Flask-SQLAlchemy` - An **ORM (Object Relational Mapper)** for database interactions.  
+✅ `Flask-Marshmallow` - A **data serialization tool** for handling JSON responses.  
+✅ `Marshmallow-SQLAlchemy` - A **connector** between Flask-SQLAlchemy and Flask-Marshmallow.
+
+🔗 **References:**
+
+- [Flask-SQLAlchemy — Flask-SQLAlchemy Documentation (3.1.x)](https://flask-sqlalchemy.palletsprojects.com/en/stable/)
+- [Flask-Marshmallow: Flask + marshmallow for beautiful APIs &#8212; Flask-Marshmallow 1.3.0 documentation](https://flask-marshmallow.readthedocs.io/en/latest/)
+- [marshmallow-sqlalchemy 1.4.1 documentation](https://marshmallow-sqlalchemy.readthedocs.io/en/latest/)
+
+---
+
+## 🔹 Installing Required Libraries
+
+### ✅ Step 1: Ensure Your Virtual Environment is Active
+
+```bash
+pipenv shell
+```
+
+### ✅ Step 2: Install Dependencies
+
+```bash
+pipenv install Flask-SQLAlchemy
+pipenv install flask-marshmallow
+pipenv install marshmallow-sqlalchemy
+```
+
+📌 **What This Does:**
+
+- Installs Flask-SQLAlchemy (Database ORM).
+- Installs Flask-Marshmallow (API Serialization).
+- Installs Marshmallow-SQLAlchemy (Connector for both).
+
+
+
+---
+
+## 🔹 Verifying the Installation
+
+### ✅ Step 3: Import Libraries in `app.py`
+
+```python
+from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
+from flask_marshmallow import Marshmallow
+import os
+
+app = Flask(__name__)
+
+@app.route('/')
+def hello():
+    return "Hey Flask!"
+
+if __name__ == '__main__':
+    app.run(debug=True)
+```
+
+📌 **Why This is Important?**
+
+- Ensures all libraries are installed and **imported correctly**.
+- Allows Flask to **detect any missing dependencies**.
+
+---
+
+## 🔹 Running Flask and Checking for Errors
+
+### ✅ Step 4: Start the Flask App
+
+```bash
+python app.py
+```
+
+📌 **Expected Output:**
+
+- If **no errors** occur, Flask runs at `http://localhost:5000/`.
+- If **an import error** appears, double-check the installation of dependencies.
+
+### ✅ Step 5: Open `http://localhost:5000/`
+
+- You should see **"Hey Flask!"** confirming that Flask is working correctly.
+
+
+
+---
+
+## 📌 Summary
+
+- **`Flask-SQLAlchemy`** helps interact with a database using Python objects.
+- **`Flask-Marshmallow`** simplifies JSON serialization for APIs.
+- **`Marshmallow-SQLAlchemy`** bridges SQLAlchemy models and JSON responses.
+- **Testing imports early** helps avoid debugging issues later.
 
 
 
@@ -191,4 +286,4 @@ putting those modules to use yet but we know that they are imported into
 
 - [Flask-Marshmallow Documentation](http://flask-marshmallow.readthedocs.io/en/latest/)
 
-- [Marshmallow-SQLAlchemy Documentation](https://marshmallow-sqlalchemy.readthedocs.io/en/latest/)
+- [Marshmallow-SQLAlchemy Documentation](https://marshmallow-sqlalchemy.readthedocs.io/en/latest/)[Command Line Interface &#8212; Flask Documentation (3.2.x)](https://flask.palletsprojects.com/en/latest/cli/)

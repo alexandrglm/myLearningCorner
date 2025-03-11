@@ -1,23 +1,133 @@
 # Module 03 - 135: Python -  Postman (1)
 
+# Postman setup using Debian Testing (as from March, 2025)
+
+
+
+**Postman** is a powerful tool used for **API testing and development**. It allows developers to interact with APIs without writing a single line of code, making it a crucial part of modern web development workflows.
+
+In this guide, we will:
+✅ Install **Postman** on a Linux system.  
+✅ Configure Postman for **API testing**.  
+✅ Set up **shortcut commands** for easy access.
+
+[Install and update Postman | Postman Docs](https://learning.postman.com/docs/getting-started/installation/installation-and-updates/)
+
+---
+
+## 🔹 Installing Postman on Linux
+
+Postman is not included by default in most Linux distributions, so we need to download and set it up manually.
+
+### ✅ Step 1: Download the Latest Version
+
+```bash
+$ wget https://dl.pstmn.io/download/latest/linux_64 -O ./postman.tar.gz
+```
+
+📌 **What This Does:**
+
+- Downloads the latest **Postman package** (`.tar.gz`) for **64-bit Linux**.
+
+### ✅ Step 2: Extract the Package
+
+```bash
+$ tar -xzf postman.tar.gz
+
+$ rm -rf postman.tar.gz
+```
+
+---
+
+## 🔹 Creating a System-Wide Shortcut
+
+To run Postman **from any terminal session**, we create a symbolic link.
+
+### ✅ Step 3: Create a Symlink
+
+```bash
+$ sudo ln -s ~/.local/share/Postman/Postman /usr/bin/postman
+```
+
 ****
+
+### ✅ Step 4: Add Postman to Application Launcher
+
+To access Postman from the **desktop environment**, create a `.desktop` file:
+
+```bash
+$ cd ~/.local/share/Postman/
+$ touch ~/.local/share/applications/postman.desktop
+
+$ WHOAMI=$(whoami)
+
+$ DESKTOP="[Desktop Entry]\n\
+Name=Postman\n\
+Comment=API Development Environment\n\
+Exec=/home/$WHOAMI/.local/share/Postman/Postman\n\
+Icon=/home/$WHOAMI/.local/share/Postman/app/resources/app/assets/icon.png\n\
+Terminal=false\n\
+Type=Application\n\
+Categories=Development;Utility;"
+
+$ echo -e "$DESKTOP" > ~/.local/share/applications/postman.desktop
+$ chmod +x ~/.local/share/applications/postman.desktop
+```
+
+---
+
+## 🔹 Launching Postman
+
+### ✅ Step 6: Run Postman
+
+⚠️ **DO NOT RUN POSTMAN AS ROOT**
+
+After completing the installation, you can launch Postman cli:
+
+```bash
+$ postman &
+```
+
+Alternatively, search for **Postman** in your **Applications Menu**.
+
+If everything is set up correctly, Postman will start without issues. 🚀
+
+---
+
+## 🔹 Postman Setup and API Requests
+
+Once Postman is installed:
+
+- **Sign up for a free account** to sync workspaces.
+- **Start making API requests** using GET, POST, PUT, DELETE.
+- **Use collections and environments** to streamline API testing.
+
+🔗 **Reference:** [Postman Documentation](https://learning.postman.com/docs/getting-started/introduction/)
+
+---
+
+## 📌 Summary
+
+- **Postman** is an essential API testing tool.
+- Installation involves **downloading, extracting, and linking Postman**.
+- A **desktop entry** allows launching Postman from the GUI.
+- Postman helps developers **test and interact with APIs efficiently**.
+
+
+
+
 
 ## Video lesson Speech
 
-Welcome to this section of the course where we're going to see how we 
-can install and configure the Postman application in order to 
-communicate with outside APIs.
+Welcome to this section of the course where we're going to see how we can install and configure the Postman application in order to communicate with outside APIs.
 
 ****
 
-Now if all of these concepts are new to you do
- not worry all this is really going to focus on is configuring your 
-environment. If you're going through this and you're not following along
- on Linux, you can also do the exact same thing on Mac or Windows. The 
-commands that we're going to walk through today are specifically 
-targeted to working with a Linux virtual box type of environment.
+Now if all of these concepts are new to you do not worry all this is really going to focus on is configuring your environment. If you're going through this and you're not following along on Linux, you can also do the exact same thing on Mac or Windows.   
 
-So right here I have a link to **BlueMatador** *(link below)* that has this very helpful guide on how to install Postman on your 
+The commands that we're going to walk through today are specifically targeted to working with a Linux virtual box type of environment.
+
+So, right here I have a link to **BlueMatador** *(link below)* that has this very helpful guide on how to install Postman on your 
 Linux machine. Now if you've never heard of Postman, what it is is a 
 very helpful application that allows you to communicate with outside 
 APIs. So an API is a service kind of like a website or server that you 

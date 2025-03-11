@@ -1,6 +1,235 @@
-# Module 03 - 136: Python - Postman (2)
+## Module 03 - 136: Python - Postman (2)
 
-## Using Postman for External and Local API Requests on Linux
+## GET - POST - PUSH - DELETE / AUTHENTIFICATION
+
+****
+
+⚠️ **Notice that, as long as DailySmart resource is not longer available, official Postman fake API will be used (Postman-Echo).**
+
+****
+
+## 📌 Using Postman for External and Local API Requests
+
+Postman is a powerful tool for testing and interacting with APIs. In this guide, we'll explore how to:
+
+✅ Send **GET**, **POST**, **PUT**, and **DELETE** requests using Postman Echo.  
+✅ Handle **query parameters**, **headers**, and **authentication**.  
+✅ Test **local APIs** running on a development server.
+
+🔗 **Reference:**  [Postman documentation overview | Postman Docs](https://learning.postman.com/docs/introduction/overview/)
+
+---
+
+## 🔹 Understanding APIs and Endpoints
+
+An **API (Application Programming Interface)** allows applications to communicate using **endpoints**, which are specific URLs that return structured data.
+
+For example, **Postman Echo** provides a **GET** endpoint:
+
+```plaintext
+https://postman-echo.com/get
+```
+
+This endpoint returns **JSON data** with details about the request you sent.
+
+📌 **API requests often require parameters, headers, or authentication.****
+
+---
+
+## 🔹 Sending a Basic GET Request in Postman
+
+### ✅ Step 1: Open Postman and Create a New Request
+
+1. Click **+ New Tab**.
+
+2. Select **GET** from the dropdown.
+
+3. Enter the URL:
+   
+   ```plaintext
+   https://postman-echo.com/get
+   ```
+
+4. Click **Send**.
+
+📌 **Postman formats JSON responses for better readability.**
+
+🔗 **Reference:** [Send API requests and get response data in Postman | Postman Docs](https://learning.postman.com/docs/sending-requests/requests/#making-requests)
+
+---
+
+## 🔹 Filtering Data with Query Parameters
+
+Postman Echo allows you to test **query parameters** by appending them to the URL. For example:
+
+```plaintext
+https://postman-echo.com/get?foo1=bar1&foo2=bar2
+```
+
+### ✅ Step 2: Adding Query Parameters
+
+1. Click the **Params** tab.
+
+2. Add key-value pairs:
+   
+   - **Key:** `foo1`
+   
+   - **Value:** `bar1`
+   
+   - **Key:** `foo2`
+   
+   - **Value:** `bar2`
+
+3. Click **Send**.
+
+📌 **This returns a JSON response with the query parameters you sent.**
+
+****
+
+## 🔹 Sending a POST Request with a Body
+
+Postman Echo also supports **POST requests** with a request body.
+
+### ✅ Step 3: Sending a POST Request
+
+1. Change the request method to **POST**.
+
+2. Enter the URL: `https://postman-echo.com/post`
+
+3. Go to the **Body** tab.
+
+4. Select **raw** and choose **JSON** from the dropdown.
+
+5. Enter a JSON body:
+   
+   ```json
+   {
+       "name": "John Doe",
+       "email": "john.doe@example.com"
+   }
+   ```
+
+6. Click **Send**
+
+📌 **Local APIs may return JSON or HTML responses.**
+
+🔗 **References:** 
+
+* [Create Postman collection from Flask application using flask2postman - GeeksforGeeks](https://www.geeksforgeeks.org/create-postman-collection-from-flask-application-using-flask2postman/)
+
+* [Creating APIs with Flask and testing in Postman - DEV Community](https://dev.to/terieyenike/creating-apis-with-flask-and-testing-in-postman-2ojn)
+
+****
+
+## 🔹 Sending a PUT Request to Update Data
+
+A **PUT request** is used to update existing resources. Postman Echo provides an endpoint to simulate this.
+
+### ✅ Step 4: Sending a PUT Request
+
+1. Change the request method to **PUT**.
+
+2. Enter the URL: `https://postman-echo.com/put`
+
+3. Go to the **Body** tab.
+
+4. Select **raw** and choose **JSON** from the dropdown.
+
+5. Enter a JSON body:
+   
+   ```json
+   {
+       "id": 1,
+       "name": "Jane Doe",
+       "email": "jane.doe@example.com"
+   }
+   ```
+
+6. Click **Send**.
+
+📌 **This returns a JSON response with the updated data you sent.**
+
+****
+
+## 🔹 Sending a DELETE Request to Remove Data
+
+A **DELETE request** is used to delete resources. Postman Echo provides an endpoint to simulate this.
+
+### ✅ Step 5: Sending a DELETE Request
+
+1. Change the request method to **DELETE**.
+
+2. Enter the URL: `https://postman-echo.com/delete`
+
+3. (Optional) Go to the **Body** tab if you want to send data with the DELETE request.
+
+4. Select **raw** and choose **JSON** from the dropdown.
+
+5. Enter a JSON body (optional):
+   
+   ```json
+   {
+       "id": 1
+   }
+   ```
+
+6. Click **Send**.
+
+📌 **This returns a JSON response confirming the deletion or the data you sent.**
+
+****
+
+## 🔹 Handling API Authentication
+
+Many APIs require **authentication tokens** (e.g., API keys, OAuth tokens).
+
+### ✅ Step 6: Adding Authentication
+
+1. Click **Authorization**.
+
+2. Select the authentication method (e.g., **Basic Auth**).
+
+3. Enter your credentials:
+   
+   - **Username:** `postman`
+   - **Password:** `password`
+
+4. Enter the URL:  `   https://postman-echo.com/basic-auth `
+
+5. Click **Send**
+
+🔗 **Reference:** [Postman Authentication](https://learning.postman.com/docs/sending-requests/authorization/)
+
+---
+
+## 🔹 Testing a Local API (Flask, Django, Rails, etc.)
+
+If you're developing an API locally, you can test it using **localhost**.
+
+### ✅ Step 7: Sending a Request to a Local API
+
+1. Ensure your local API server is running (e.g., Flask, Django, Rails).
+
+2. Enter the local API URL:
+   
+   ```plaintext
+   http://localhost:3000/guides
+   ```
+
+3. Click **Send**.
+
+📌 **Local APIs may return JSON or HTML responses.**
+
+🔗 **Reference:** [Flask API Setup](https://flask.palletsprojects.com/en/2.0.x/quickstart/)
+
+---
+
+## 📌 Summary
+
+- **Postman simplifies API testing** with structured JSON responses.
+- **GET requests retrieve data**, optionally using **query parameters**.
+- **APIs often require authentication** (API keys, OAuth, etc.).
+- **Local APIs can be tested** using `localhost` and Postman.
 
 ---
 

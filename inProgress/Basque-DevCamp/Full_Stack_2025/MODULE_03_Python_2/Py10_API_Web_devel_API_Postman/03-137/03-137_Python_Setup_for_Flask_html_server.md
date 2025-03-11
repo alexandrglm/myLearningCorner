@@ -1,6 +1,108 @@
-# Module 03 - 137: Python - Flask (1)
+## Module 03 - 137: Python - Flask (1)
 
-## Environment Setup for Hello World Flask Application
+****
+
+## 🎯 Setting Up a Flask Environment
+
+Flask is a lightweight Python framework for building **web applications** and **APIs**.  
+
+ This guide covers:
+
+✅ Installing Flask with `pipenv`.  
+✅ Creating a **basic Flask app**.  
+✅ Running the Flask **development server**.
+
+🔗 **Reference:** [Flask Official Documentation](https://flask.palletsprojects.com/)
+
+---
+
+## 🔹 Installing Flask
+
+### ✅ Step 1: Create a Project Directory
+
+```bash
+mkdir hello-flask && cd hello-flask
+```
+
+### ✅ Step 2: Initialize a Virtual Environment
+
+```bash
+pipenv --three
+```
+
+📌 **Why?** Ensures dependencies are isolated for this project.
+
+### ✅ Step 3: Install Flask
+
+```bash
+pipenv install flask
+```
+
+📌 **This adds Flask to `Pipfile` and installs it in your virtual environment.**
+
+🔗 **Reference:** [Pipenv Guide](https://pipenv.pypa.io/en/latest/)
+
+---
+
+## 🔹 Creating a Basic Flask App
+
+### ✅ Step 4: Create `app.py`
+
+```python
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/')
+def hello():
+    return "Hey Flask!"
+
+if __name__ == '__main__':
+    app.run(debug=True)
+```
+
+📌 **Key Features:**
+
+- `@app.route('/')`: Defines a route for the homepage.
+- `app.run(debug=True)`: Enables **debug mode** for live updates.
+
+---
+
+## 🔹 Running the Flask Server
+
+### ✅ Step 5: Activate the Virtual Environment
+
+```bash
+pipenv shell
+```
+
+### ✅ Step 6: Start the Flask App
+
+```bash
+python app.py
+```
+
+📌 **What Happens?**
+
+- Flask starts a local server at `http://127.0.0.1:5000/`.
+- Visit `http://localhost:5000/` in your browser to see **"Hey Flask!"**.
+
+![Flask running](./03-137_IMG3.png)
+
+### ✅ Step 7: Stop the Server
+
+Press **CTRL + C** in the terminal.
+
+🔗 **Reference:** [Flask Development Server](https://flask.palletsprojects.com/en/latest/cli/)
+
+---
+
+## 📌 Summary
+
+- **Flask** enables rapid API and web development.
+- `pipenv` provides a **virtual environment** for package management.
+- The Flask **debug server** helps during development.
+- You have successfully built and run a **basic Flask API**! 🚀
 
 ---
 
