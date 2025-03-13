@@ -2,6 +2,43 @@
 
 ## Building an API Endpoint in Flask for Returning All Records with a GET Request
 
+*****
+
+## Remember:
+
+We are using VSCode instead of Repl, and ultimately, we are breaking down the original "hello-flask" project into the Python 14 - API section. Therefore, it’s essential to complete each app.py according to the corresponding Python-Course NumFolder.
+
+This GET a single data guide will use: ' app_112.py' .
+
+To replace Repl with VSCode, you can run the following commands in the terminal:    
+
+```bash
+(pipenv) $: python
+>>> from app_112 import db, app
+
+>>> with app.app_context():
+    db.create_all()
+```
+
+Alternatively, you can create a runner script, such as `run.py`:
+
+```
+# runner
+
+from app_112 import db, app
+
+with app.app_context():
+    db.create_all()
+```
+
+Then, you can load it by pressing **F5** to start debugging in VSCode.
+
+So, the setup steps will be:
+
+1. Run `run.py`.
+2. Run `app.py`.
+3. Perform actions in the Postman app.
+
 ---
 
 ## Video lesson Speech

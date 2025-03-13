@@ -4,6 +4,64 @@
 
 ---
 
+# Notice:
+
+As we are using VSCode instead of Repl, and ultimately, we are breaking down the original "hello-flask" project into the Python 14 - API section, many modifications have to be donde.
+
+Therefore, it’s essential to complete each app.py according to the corresponding Python-Course NumFolder.
+
+This GET a single data guide will use: ' app_112.py' .
+
+### ALSO, QUERY() method HAS BEEN DEPRECATED FROM NEWER SQLAlchemy Versions, so, there is a Code Update:
+
+To replace Repl with VSCode, you can run the following commands in the terminal:    
+
+```bash
+(pipenv) $: python
+>>> from app_112 import db, app
+
+>>> with app.app_context():
+    db.create_all()
+```
+
+Alternatively, you can create a runner script, such as `run.py`:
+
+```
+# runner
+
+from app_112 import db, app
+
+with app.app_context():
+    db.create_all()
+```
+
+Then, you can load it by pressing **F5** to start debugging in VSCode.
+
+So, the setup steps will be:
+
+1. Run `run.py`.
+2. Run `app.py`.
+3. Perform actions in the Postman app.
+
+### ALSO, QUERY() method HAS BEEN DEPRECATED FROM NEWER SQLAlchemy Versions, so, there is a Code Update:
+
+```python
+# QUERY METHOD HAS BEEN DEPRECATED
+# @app.route("/guide/<id>", methods=["GET"])
+# def get_guide(id):
+    # guide = Guide.query.get(id)
+    # return guide_schema.jsonify(guide)
+
+# # from app_111
+# ## GET endpoint
+@app.route('/guide/<id>', methods=['GET'])
+def get_guide(id):
+
+    session = Session(db.engine)
+    guide = session.get(Guide, id)
+    return guide_schema.jsonify(guide)
+```
+
 ## Video lesson Speech
 
 A few guides ago, I mentioned how the goal of this application was to 
@@ -21,10 +79,19 @@ So in `app.py` let's start the endpoint like we have in the past.
 **app.py**
 
 ```python
-# Endpoint for querying a single guide
-@app.route("/guide/<id>", methods=["GET"])
+# QUERY METHOD HAS BEEN DEPRECATED
+# @app.route("/guide/<id>", methods=["GET"])
+# def get_guide(id):
+    # guide = Guide.query.get(id)
+    # return guide_schema.jsonify(guide)
+
+# # from app_111
+# ## GET endpoint
+@app.route('/guide/<id>', methods=['GET'])
 def get_guide(id):
-    guide = Guide.query.get(id)
+
+    session = Session(db.engine)
+    guide = session.get(Guide, id)
     return guide_schema.jsonify(guide)
 ```
 
@@ -38,7 +105,7 @@ Now from there I'm simply creating a new variable called 'guide' and calling the
 
 So let's save this and let's see if it's working. So run `python app.py` that looks so far so good. No typos or anything. And now if I open up Postman, and go up to the top, this is going to be a little bit different syntax it's going to be `localhost:5000/guide/1`, while still using a GET request. So now if I clicked send, you can see that return 'some content' and then 'my first guide.' 
 
-![large](https://s3-us-west-2.amazonaws.com/images-devcamp/Python+API+Development+With+Flask/Hello+Flask/Implementing+a+Single+Record+GET+Request+in+a+Flask+API+%23+1837/image11.png)
+![large](./03-142_IMG2.png)
 
 So that's working. If I type in '2' that this is going to bring back the second guide which is perfect. Now if I ask for 200 then it's just going to bring me back an empty object. And this is very important to understand this does not bring in air. So if you're building an application and you don't get or you pass in an invalid ID you're not going to get an error you're simply going to get an empty object. 
 

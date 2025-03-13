@@ -388,7 +388,18 @@ So you're going to hit run, and it might give you a little warning. That's fine,
 
 ![large](./03-139_IMG2.png)
 
-Now, I'm going to say: `db.create_all()`. That's a function, so call it with a `parens` at the end. Hit `enter`, and as long as you don't get any error there, you should be fine. Now let's close it off. The REPL session that is, with `control + d`.  Now if you type `ls`, now you can see that we have a new file here called `app.sqlite`. 
+Now, I'm going to say: `db.create_all()`. 
+
+## **But, for creating the database we have to set up it before:**
+
+```bash
+from app_109 import db, app
+
+with app.app_context():
+    db.create_all()
+```
+
+That's a function, so call it with a `parens` at the end. Hit `enter`, and as long as you don't get any error there, you should be fine. Now let's close it off. The REPL session that is, with `control + d`.  Now if you type `ls`, now you can see that we have a new file here called `app.sqlite`. 
 
 ![large](./03-139_IMG3.png)
 
@@ -398,7 +409,9 @@ What we've done, and if you look at this file, it's not really a thing that you 
 
 That's kind of cool, and it even has all of our values, such as a title having a 100 characters, and a content having 144. That means that all of our commands worked. Let's review it really quickly because I do realize this may be very foreign to you. Now that you've seen the end result, and you've seen what gets created, maybe the first part of what we did might be a little bit more clear. 
 
-Let's just take that line-by-line. First thing that we did is, we created this `base directory`. That's just us going to the operating system, and asking the computer where is the application located. This is the application's base directory. From there we called our app object, and remember that is our `flask object`. 
+Let's just take that line-by-line. 
+
+First thing that we did is, we created this `base directory`. That's just us going to the operating system, and asking the computer where is the application located. This is the application's base directory. From there we called our app object, and remember that is our `flask object`. 
 
 We said: I want you to configure the SQL Alchemy Database URI. So that is going to add whatever value we set it to. It's going to add that to our application, and then SQLAlchemy is going to look up that. Very similar to how dictionaries work. 
 

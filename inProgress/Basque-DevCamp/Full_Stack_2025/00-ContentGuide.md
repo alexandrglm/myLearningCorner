@@ -315,19 +315,19 @@
 
 ### Python 10: API's & Web devel.
 
-|     | #   | Type                                  | Tittle                                                                         | Date       |
-| --- | --- | ------------------------------------- | ------------------------------------------------------------------------------ | ---------- |
-| [X] | 135 | Python: Postman                       | Postman Installation Guide for Linux                                           | 2025/03/11 |
-| [X] | 136 | Python: Postman API - Get, Del, Push, | Guide to Using Postman for External and Local API Requests on Linux            | 2025/03/11 |
-| [X] | 137 | Python: Flask (1)                     | Environment Setup for Hello World Flask Application                            | 2025/03/11 |
-| [X] | 138 | Python: Flask (2),                    | How to Install Dependencies for Flask Database and API Features                | 2025/03/11 |
-| [ ] | 139 |                                       | Creating a SQLite Database in Flask with SQLAlchemy                            |            |
-| [ ] | 140 |                                       | How to Create a POST API Endpoint in Flask                                     |            |
-| [ ] | 141 |                                       | Building an API Endpoint in Flask for Returning All Records with a GET Request |            |
-| [ ] | 142 |                                       | Implementing a Single Record GET Request in a Flask API                        |            |
-| [ ] | 143 |                                       | Guide to Building an Update Action with a PUT Request in Flask                 |            |
-| [ ] | 144 |                                       | How to Build a DELETE API Endpoint in Flask along with Project Summary         |            |
-| [ ] | 145 |                                       | Get the Average from a List in Python                                          |            |
+|     | #   | Type                                   | Tittle                                                                         | Date       |
+| --- | --- | -------------------------------------- | ------------------------------------------------------------------------------ | ---------- |
+| [X] | 135 | Python: Postman                        | Postman Installation Guide for Linux                                           | 2025/03/11 |
+| [X] | 136 | Python: Postman API - Get, Del, Push,  | Guide to Using Postman for External and Local API Requests on Linux            | 2025/03/11 |
+| [X] | 137 | Python: Flask (1)                      | Environment Setup for Hello World Flask Application                            | 2025/03/11 |
+| [X] | 138 | Python: Flask (2),                     | How to Install Dependencies for Flask Database and API Features                | 2025/03/11 |
+| [X] | 139 | Python-Flask: SQLAlchemy init          | Creating a SQLite Database in Flask with SQLAlchemy                            | 2025/03/13 |
+| [X] | 140 | Python-Flask: POST endpoint            | How to Create a POST API Endpoint in Flask                                     | 2025/03/13 |
+| [X] | 141 | Python-Flask: GET (all) endpoint       | Building an API Endpoint in Flask for Returning All Records with a GET Request | 2025/03/13 |
+| [X] | 142 | Python-Flask: GET (single id) endpoint | Implementing a Single Record GET Request in a Flask API                        | 2025/03/13 |
+| [X] | 143 | Python-Flask: PUT endpoint             | Guide to Building an Update Action with a PUT Request in Flask                 | 2025/03/13 |
+| [X] | 144 | Python-Flask: DELETE endpoint          | How to Build a DELETE API Endpoint in Flask along with Project Summary         | 2025/03/13 |
+| [ ] | 145 |                                        | Get the Average from a List in Python                                          |            |
 
 ### Python 11: Databases - MongoDB
 

@@ -1,6 +1,126 @@
 # MODULE 03 - 143: Python - Flask (7)
 
-## Implementing a Single Record GET Request in a Flask API
+## Building an Update Action with a PUT Request in Flask
+
+****
+
+# Notice:
+
+As we are using VSCode instead of Repl, and ultimately, we are breaking down the original "hello-flask" project into the Python 14 - API section, many modifications have to be donde.
+
+Therefore, it’s essential to complete each app.py according to the corresponding Python-Course NumFolder.
+
+This PUT data guide will use:  `app_113.py` .
+
+### ALSO, QUERY() method HAS BEEN DEPRECATED FROM NEWER SQLAlchemy Versions, so, there is a Code Update:
+
+To replace Repl with VSCode, you can run the following commands in the terminal:    
+
+```bash
+(pipenv) $: python
+>>> from app_113 import db, app
+
+>>> with app.app_context():
+    db.create_all()
+```
+
+Alternatively, you can create a runner script, such as `run.py`:
+
+```
+# runner
+
+from app_113 import db, app
+
+with app.app_context():
+    db.create_all()
+```
+
+Then, you can load it by pressing **F5** to start debugging in VSCode.
+
+So, the setup steps will be:
+
+1. Run `run.py`.
+2. Run `app.py`.
+3. Perform actions in the Postman app.
+
+### ALSO, QUERY() method HAS BEEN DEPRECATED FROM NEWER SQLAlchemy Versions, so, there is a Code Update:
+
+```python
+##################
+# from app_109
+# Setting up var environment and class'es
+basedir = os.path.abspath(os.path.dirname(__file__))
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'app.sqlite')
+db = SQLAlchemy(app)
+ma = Marshmallow(app)
+
+class Guide(db.Model):
+
+    id = db.Column(db.Integer, primary_key=True)
+    title = db.Column(db.String(100), unique=False)
+    content = db.Column(db.String(144), unique=False)
+
+    def __init__(self, title, content):
+        self.title = title
+        self.content = content
+
+
+class GuideSchema(ma.Schema):
+    class Meta:
+        fields = ('id', 'title', 'content')
+
+
+guide_schema = GuideSchema()
+guides_schema = GuideSchema(many=True)
+
+
+
+#######################
+# from app_110
+## NEW POST endpoint
+@app.route('/guide', methods=["POST"])
+def add_guide():
+
+    db.create_all()
+
+    title = request.json['title']
+    content = request.json['content']
+
+    new_guide = Guide(title=title, content=content)
+
+    db.session.add(new_guide)
+    db.session.commit()
+
+    return guide_schema.jsonify(new_guide)
+
+
+##################
+# from app_111
+# NEW GET endpoint
+@app.route("/guides", methods=["GET"])
+def get_guides():
+
+    db.create_all()
+
+    all_guides = Guide.query.all()
+    result = guides_schema.dump(all_guides)
+
+    return jsonify(result)
+
+
+##################
+# from app_112
+# NEW GET/<id> single data endpoint
+@app.route('/guide/<id>', methods=['GET'])
+def get_guide(id):
+
+    db.create_all()
+
+    session = Session(db.engine)
+    guide = session.get(Guide, id)
+
+    return guide_schema.jsonify(guide)
+```
 
 ---
 
@@ -27,8 +147,11 @@ So now with all that being said let's move on to our next endpoint. This is goin
 **app.py**
 
 ```py
-# Endpoint for updating a guide
-@app.route("/guide/<id>", methods=["PUT"])
+##################
+# from app_113
+## NEW PUT endpoint
+@app.route('/guide/<id>', methods=['PUT'])
+def guide_update(id):
 ```
 
 Now the difference is going to be in the methods. We're putting in a PUT request, and if our system recognizes a request being sent by Postman, or by the API, or by the front-end that is communicating with, it then it is going to know to contact this endpoint as opposed to our other endpoints. 
@@ -42,12 +165,18 @@ So now that we have that let's go and let's create the update action.
 **app.py**
 
 ```py
-# Endpoint for updating a guide
-@app.route("/guide/<id>", methods=["PUT"])
+##################
+# from app_113
+## NEW PUT endpoint
+@app.route('/guide/<id>', methods=['PUT'])
 def guide_update(id):
+
+    db.create_all()
+
     guide = Guide.query.get(id)
-    title = request.json['title']
-    content = request.json['content']
+
+    guide.title = request.json['title']
+    guide.content = request.json['content']
 ```
 
 So the reason why we're doing this is because if we're editing the guide then we are assuming that they're sending a different title and a different content here for editing purposes. Now in a full-scale application once we get into a much more complex app I'll show you how you can be a little bit more efficient because right now this is kind of taking a naive approach, where it assumes that we're always going to be sending a title and a content. 
@@ -59,15 +188,18 @@ So right now just know we're performing a database query for the guide, and we a
 **app.py**
 
 ```py
-# Endpoint for updating a guide
-@app.route("/guide/<id>", methods=["PUT"])
+##################
+# from app_113
+## NEW PUT endpoint
+@app.route('/guide/<id>', methods=['PUT'])
 def guide_update(id):
-    guide = Guide.query.get(id)
-    title = request.json['title']
-    content = request.json['content']
 
-    guide.title = title
-    guide.content = content
+    db.create_all()
+
+    guide = Guide.query.get(id)
+
+    guide.title = request.json['title']
+    guide.content = request.json['content']
 
     db.session.commit()
     return guide_schema.jsonify(guide)

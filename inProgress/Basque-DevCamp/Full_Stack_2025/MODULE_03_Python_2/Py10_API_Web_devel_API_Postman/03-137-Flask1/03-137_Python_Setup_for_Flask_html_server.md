@@ -209,7 +209,68 @@ And now to test out our application, simply run `python app.py`.
  a basic terminal type of program in Python. And as long as you don't 
 get any error messages, it means everything should be working.
 
-![large](./03-137_IMG2.png)
+```bash
+# Installing and setting up easily pipenv:
+
+## 1. Getting pipenv from sources
+/python-course$ sudo apt install pipenv
+[sudo] password for dev: 
+The following package was automatically installed and is no longer required:
+  libflac12t64
+Use 'sudo apt autoremove' to remove it.
+
+Installing:
+  pipenv
+
+Summary:
+  Upgrading: 0, Installing: 1, Removing: 0, Not Upgrading: 2
+  Download size: 2.067 kB
+  Space needed: 9.980 kB / 435 GB available
+
+Get:1 https://deb.debian.org/debian trixie/main amd64 pipenv all 2024.0.1+ds-2 [2.067 kB]
+Fetched 2.067 kB in 1s (1.600 kB/s)
+Selecting previously unselected package pipenv.
+(Reading database ... 248050 files and directories currently installed.)
+Preparing to unpack .../pipenv_2024.0.1+ds-2_all.deb ...
+Unpacking pipenv (2024.0.1+ds-2) ...
+Setting up pipenv (2024.0.1+ds-2) ...
+Processing triggers for man-db (2.13.0-1) ...
+
+
+## 2. Creating a pipenv for this project
+/python-course$ pipenv shell
+Creating a virtualenv for this project...
+Pipfile: /python-course/Pipfile
+Using default python from /usr/bin/python3 (3.13.2) to create virtualenv...
+⠹ Creating virtual environment...created virtual environment CPython3.13.2.final.0-64 in 129ms
+  creator CPython3Posix(dest=~/.local/share/virtualenvs/python-course-bvOVrkbu, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, via=copy, app_data_dir=/home/dev/.local/share/virtualenv)
+    added seed packages: pip==25.0
+  activators BashActivator,CShellActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+
+✔ Successfully created virtual environment!
+Virtualenv location: ~/.local/share/virtualenvs/python-course-bvOVrkbu
+Creating a Pipfile for this project...
+Launching subshell in virtual environment...
+dev@host:~/python-course$  . ~/.local/share/virtualenvs/python-course-bvOVrkbu/bin/activate
+
+
+## 3. Importing what's necesary:
+(python-course) /python-course$ pipenv install flask
+
+Installing flask...
+Resolving flask...
+Added flask to Pipfile's [packages] ...
+✔ Installation Succeeded
+Pipfile.lock not found, creating...
+Locking [packages] dependencies...
+Building requirements...
+Resolving dependencies...
+✔ Success!
+Locking [dev-packages] dependencies...
+Updated Pipfile.lock ()!
+Installing dependencies from Pipfile.lock ()...
+```
 
 And now we can test this out. So if you notice if you look at this 
 debug log it says that it's running on this URL. Now, this URL `http://127.0.0.1:5000/` This is the same as saying localhost so I can say `localhost:5000` and that is going to take us where we want to be.
@@ -237,6 +298,8 @@ So great job if you went through that you now have built out your
 very first Flask application and as we go through this particular 
 project we're going to start building out a full-scale type of JSON 
 based API.
+
+****
 
 ## Source Code
 

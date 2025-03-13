@@ -177,7 +177,25 @@ project.
 
 Okay, that installed much faster. So now let's install the last one which is marshmallow sqlAlchemy. Type in `pipenv install marshmallow-sqlalchemy`. So that looks like it all worked. So now if I were to open up `pipfile` now you can see that not only do we have flask but we also have these other dependencies right here.
 
-![large](./03-138_IMG1.png)
+```bash
+/python-course$ cat Pipfile
+
+
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+flask = "*"
+flask-sqlalchemy = "*"
+flask-marshmallow = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.13"
+```
 
 Now I do want to point something out that is a little bit odd and 
 that is how the system determines to have all of this have been in 
