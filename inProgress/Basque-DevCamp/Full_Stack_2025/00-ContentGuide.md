@@ -113,7 +113,7 @@
 
 # MODULE 2
 
-## Branding // Python (1)
+## Module 2, Part 1:        UX/UI - Branding
 
 |     | #      | Type                              | Tittle                                                           | Date       |
 | --- | ------ | --------------------------------- | ---------------------------------------------------------------- | ---------- |
@@ -121,6 +121,10 @@
 | [X] | 02-002 | UX/IU Project: Logo Design        | Logo Design Guide - Part 2                                       | 2025/02/04 |
 | [x] | 02-003 | UX/UI Project Capstone            | UI Project Requirements: Design a Portfolio Application and Logo | 2025/02/04 |
 | [X] | 02-004 | Literacy: Programming foundations | What is Programming?                                             | 2025/02/04 |
+
+****
+
+## Module 2, Part 2:        Python-Course, Part 1
 
 ### Python 01: BASICS
 
@@ -220,7 +224,7 @@
 
 # MODULE 3
 
-## PYTHON (ii) - Loops, Conditionals, Data Structure, DB.
+## Module 3, Part 1: Python-Course Part 2
 
 |     | #   | Type                            | Tittle                                             | Date       |
 | --- | --- | ------------------------------- | -------------------------------------------------- | ---------- |
@@ -327,27 +331,30 @@
 | [X] | 142 | Python-Flask: GET (single id) endpoint | Implementing a Single Record GET Request in a Flask API                        | 2025/03/13 |
 | [X] | 143 | Python-Flask: PUT endpoint             | Guide to Building an Update Action with a PUT Request in Flask                 | 2025/03/13 |
 | [X] | 144 | Python-Flask: DELETE endpoint          | How to Build a DELETE API Endpoint in Flask along with Project Summary         | 2025/03/13 |
-| [ ] | 145 |                                        | Get the Average from a List in Python                                          |            |
+| [X] | 145 | Python Exercise                        | Get the Average from a List in Python                                          | 2025/03/14 |
 
-### Python 11: Databases - MongoDB
+****
 
-|     | #   | Type | Tittle                                                                    | Date |
-| --- | --- | ---- | ------------------------------------------------------------------------- | ---- |
-| [ ] | 146 |      | How to Install MongoDB on a Mac                                           |      |
-| [ ] | 147 |      | Guide to Creating a MongoDB Database Along with Admin Database Users      |      |
-| [ ] | 148 |      | How to Create a MongoDB Collection                                        |      |
-| [ ] | 149 |      | Guide to Inserting Documents into a MongoDB Collection                    |      |
-| [ ] | 150 |      | How to Insert Many Documents into a MongoDB Collection                    |      |
-| [ ] | 151 |      | How to Query All Documents in a MongoDB Collection with the find() Method |      |
-| [ ] | 152 |      | How to Query for Specific Documents in a MongoDB Collection               |      |
-| [ ] | 153 |      | Introduction to MongoDB Projections                                       |      |
-| [ ] | 154 |      | Query for a Portion of a Nested Array Element in a Document Using $slice  |      |
-| [ ] | 155 |      | How to Delete Documents in MongoDB                                        |      |
-| [ ] | 156 |      | How to Include Nested Fields in a find Query                              |      |
-| [ ] | 157 |      | Using the findOne Method in MongoDB to Query for a Single Document        |      |
-| [ ] | 158 |      | How to Query for a Portion of a String in a MongoDB Document              |      |
-| [ ] | 159 |      | How to Check if a Field Exists in a MongoDB Document                      |      |
-| [ ] | 160 |      | Course Checkpoint 6                                                       |      |
+### Module 3, Part 2: NoSQL (1) - MongoDB
+
+|     | #   | Type                          | Tittle                                                                    | Date       |
+| --- | --- | ----------------------------- | ------------------------------------------------------------------------- | ---------- |
+| [X] | 146 | MongoDB                       | How to Install MongoDB on a Mac                                           | 2025/03/14 |
+| [X] | ../ | Mongo-Course info             | **Project_MongoDB-Course.md**                                             | 2025/03/14 |
+| [X] | 147 | MongoDB - Databases           | Guide to Creating a MongoDB Database Along with Admin Database Users      | 2025/03/14 |
+| [X] | 148 | MongoDB - Collections         | How to Create a MongoDB Collection                                        | 2025/03/14 |
+| [ ] | 149 | MongoDB - Inserting Documents | Guide to Inserting Documents into a MongoDB Collection                    |            |
+| [ ] | 150 |                               | How to Insert Many Documents into a MongoDB Collection                    |            |
+| [ ] | 151 |                               | How to Query All Documents in a MongoDB Collection with the find() Method |            |
+| [ ] | 152 |                               | How to Query for Specific Documents in a MongoDB Collection               |            |
+| [ ] | 153 |                               | Introduction to MongoDB Projections                                       |            |
+| [ ] | 154 |                               | Query for a Portion of a Nested Array Element in a Document Using $slice  |            |
+| [ ] | 155 |                               | How to Delete Documents in MongoDB                                        |            |
+| [ ] | 156 |                               | How to Include Nested Fields in a find Query                              |            |
+| [ ] | 157 |                               | Using the findOne Method in MongoDB to Query for a Single Document        |            |
+| [ ] | 158 |                               | How to Query for a Portion of a String in a MongoDB Document              |            |
+| [ ] | 159 |                               | How to Check if a Field Exists in a MongoDB Document                      |            |
+| [ ] | 160 |                               | Course Checkpoint 6                                                       |            |
 
 ***
 

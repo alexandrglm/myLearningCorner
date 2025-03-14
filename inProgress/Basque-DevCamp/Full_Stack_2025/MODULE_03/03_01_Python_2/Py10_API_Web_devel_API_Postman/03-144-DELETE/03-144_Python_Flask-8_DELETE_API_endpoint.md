@@ -4,7 +4,7 @@
 
 ---
 
-ALSO, QUERY() method HAS BEEN DEPRECATED FROM NEWER SQLAlchemy Versions, so, there is a Code Update:
+### ALSO, QUERY() method HAS BEEN DEPRECATED FROM NEWER SQLAlchemy Versions, so, there is a Code Update:
 
 To replace Repl with VSCode, you can run the following commands in the terminal:    
 
