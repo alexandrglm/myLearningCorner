@@ -343,10 +343,10 @@
 | [X] | ../ | Mongo-Course info             | **Project_MongoDB-Course.md**                                             | 2025/03/14 |
 | [X] | 147 | MongoDB - Databases           | Guide to Creating a MongoDB Database Along with Admin Database Users      | 2025/03/14 |
 | [X] | 148 | MongoDB - Collections         | How to Create a MongoDB Collection                                        | 2025/03/14 |
-| [ ] | 149 | MongoDB - Inserting Documents | Guide to Inserting Documents into a MongoDB Collection                    |            |
-| [ ] | 150 |                               | How to Insert Many Documents into a MongoDB Collection                    |            |
-| [ ] | 151 |                               | How to Query All Documents in a MongoDB Collection with the find() Method |            |
-| [ ] | 152 |                               | How to Query for Specific Documents in a MongoDB Collection               |            |
+| [X] | 149 | MongoDB - Inserting Documents | Guide to Inserting Documents into a MongoDB Collection                    | 2025/03/15 |
+| [X] | 150 |                               | How to Insert Many Documents into a MongoDB Collection                    | 2025/03/15 |
+| [X] | 151 |                               | How to Query All Documents in a MongoDB Collection with the find() Method | 2025/03/15 |
+| [X] | 152 |                               | How to Query for Specific Documents in a MongoDB Collection               | 2025/03/15 |
 | [ ] | 153 |                               | Introduction to MongoDB Projections                                       |            |
 | [ ] | 154 |                               | Query for a Portion of a Nested Array Element in a Document Using $slice  |            |
 | [ ] | 155 |                               | How to Delete Documents in MongoDB                                        |            |

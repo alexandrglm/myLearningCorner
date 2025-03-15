@@ -1,6 +1,98 @@
-# MODULE 03-148: MongoDB (4) - Inserting Documents
+# Module 03-149: MongoDB (4)
+
+# Inserting Documents
 
 ---
+
+## **Index**
+
+1. Understanding MongoDB Documents
+
+2. Inserting a Single Document
+
+3. Inserting Multiple Documents
+
+4. Handling Flexible Schema
+
+5. Best Practices
+
+6. References
+
+---
+
+## **Understanding MongoDB Documents**
+
+MongoDB stores data in **documents**, which are JSON-like objects consisting of key-value pairs. Unlike traditional SQL databases, MongoDB **does not enforce a schema**, allowing documents in the same collection to have different structures.
+
+Each document is stored in a **collection**, which functions similarly to tables in relational databases.
+
+---
+
+## **Inserting a Single Document**
+
+To insert a single document into the `books` collection, use `insertOne()`. This function expects a **JSON object**.
+
+```
+// Insert a single book documentdb.books.insertOne({  "name": "OOP Programming",  "publishedDate": new Date(),  "authors": [    { "name": "Jon Snow" },    { "name": "Ned Stark" }  ]})
+```
+
+### **Expected Output:**
+
+```
+{ "acknowledged": true, "insertedId": "ObjectId('...')" }
+```
+
+> **Note:** `ObjectId` is a unique identifier automatically generated for each document.
+
+---
+
+## **Inserting Multiple Documents**
+
+To insert multiple records at once, use `insertMany()` with an **array** of JSON objects.
+
+```
+// Insert multiple book documentsdb.books.insertMany([  {    "name": "JavaScript Essentials",    "publishedDate": new Date("2023-01-01"),    "authors": [ { "name": "Alice Johnson" } ]  },  {    "name": "Mastering Databases",    "publishedDate": new Date("2022-05-10"),    "authors": [ { "name": "Bob Smith" }, { "name": "Charlie Brown" } ]  }])
+```
+
+### **Expected Output:**
+
+```
+{ "acknowledged": true, "insertedIds": [ "ObjectId('...')", "ObjectId('...')" ] }
+```
+
+---
+
+## **Handling Flexible Schema**
+
+MongoDB allows **dynamic schema changes**. Documents in the same collection do not need to have identicals structures.
+
+Example:
+
+```
+// Inserting books with different fieldsdb.books.insertMany([  { "name": "Data Science 101", "category": "Technology" },  { "title": "Machine Learning", "publishedYear": 2023 }])
+```
+
+> **Caution:** Schema inconsistency can cause issues when querying and managing data.
+
+---
+
+## **Best Practices**
+
+- **Define a standard document structure** for consistency.
+
+- **Use meaningful field names** that align with your data.
+
+- Leverage indexes to optimize query performance.
+
+- **Validate data** before insertion to prevent inconsistencies.
+
+---
+
+## References
+
+* [MongoDB Docs: Data Modeling](https://www.mongodb.com/docs/manual/data-modeling/)
+
+****
 
 ## Video Lesson Speech
 
