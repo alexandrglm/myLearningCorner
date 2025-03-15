@@ -14,9 +14,7 @@
 
 4. Handling Flexible Schema
 
-5. Best Practices
-
-6. References
+5. 
 
 ---
 

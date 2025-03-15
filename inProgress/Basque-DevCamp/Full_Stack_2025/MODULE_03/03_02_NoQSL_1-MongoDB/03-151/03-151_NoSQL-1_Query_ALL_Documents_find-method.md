@@ -1,4 +1,104 @@
-# MODULE 03-151: MongoDB (6) - Querying Documents with find() method
+# MODULE 03-151: MongoDB (6)
+
+## Querying Documents with `find()` Method
+
+---
+
+## **Index**
+
+1. Understanding the `find()` Method
+
+2. Using `find().pretty()` for Better Readability
+
+3. MongoDB vs SQL: Querying All Documents
+
+4. Automatic Object IDs in MongoDB
+
+5. 
+
+---
+
+So far, we have focused primarily on inserting documents into MongoDB collections. However, retrieving and querying data is just as important. MongoDB provides various methods to retrieve data efficiently, with the `find()` method being the most fundamental.
+
+In this guide, we will explore how to use `find()` to query documents and compare its functionality to SQL-based queries. We will also discuss MongoDB's automatic Object ID generation.
+
+---
+
+## **Understanding the** `**find()**` **Method**
+
+The `find()` method in MongoDB is used to retrieve documents from a collection. It works similarly to the `SELECT` statement in SQL, allowing users to fetch data that matches specific criteria. By default, calling `find()` without any parameters returns all documents in the collection.
+
+### **Syntax:**
+
+```
+// Retrieve all documents in a collection db.books.find()
+```
+
+### **Example Output:**
+
+```
+{ "_id" : ObjectId("507f191e810c19729de860ea"), "name" : "Confident Ruby", "publishedDate" : ISODate("2023-01-01T00:00:00Z") }{ "_id" : ObjectId("507f191e810c19729de860eb"), "name" : "The War of Art", "publishedDate" : ISODate("2023-01-02T00:00:00Z") }
+```
+
+---
+
+## **Using** `**find().pretty()**` **for Better Readability**
+
+MongoDB allows us to improve the readability of query results using the `pretty()` method. This method formats the output in an easily readable JSON structure.
+
+### **Syntax:**
+
+```
+// Retrieve and format all documents db.books.find().pretty()
+```
+
+### **Example Output:**
+
+```
+[  {    "_id": ObjectId("507f191e810c19729de860ea"),    "name": "Confident Ruby",    "publishedDate": ISODate("2023-01-01T00:00:00Z")  },  {    "_id": ObjectId("507f191e810c19729de860eb"),    "name": "The War of Art",    "publishedDate": ISODate("2023-01-02T00:00:00Z")  }]
+```
+
+Using `pretty()` makes it easier to read and analyze large sets of documents in the database.
+
+---
+
+## **MongoDB vs SQL: Querying All Documents**
+
+For users coming from a relational database background, it is useful to compare MongoDB’s `find()` method with SQL queries.
+
+| Operation              | MongoDB Query     | SQL Equivalent         |
+| ---------------------- | ----------------- | ---------------------- |
+| Retrieve all documents | `db.books.find()` | `SELECT * FROM books;` |
+
+This comparison helps in understanding MongoDB’s document-oriented approach in contrast to SQL’s table-based structure.
+
+---
+
+## **Automatic Object IDs in MongoDB**
+
+MongoDB automatically generates a unique identifier (`_id`) for each document. This field acts similarly to a **primary key** in SQL databases and is crucial for uniquely identifying each document.
+
+### **Example Document with Object ID:**
+
+```
+{  "_id": ObjectId("507f191e810c19729de860ea"),  "name": "Confident Ruby",  "publishedDate": ISODate("2023-01-01T00:00:00Z")}
+```
+
+### **Key Points:**
+
+- The `_id` field is automatically added if not specified.
+
+- It ensures each document is uniquely identifiable.
+
+- Object IDs contain encoded timestamp information, making them useful for tracking document creation times.
+
+****
+
+## References
+
+[MongoDB Querying Guide:](https://www.mongodb.com/docs/manual/tutorial/query-documents/)
+
+[MongoDB **`find()`** Method Documentation](https://www.mongodb.com/docs/manual/reference/method/db.collection.find/)
 
 ---
 

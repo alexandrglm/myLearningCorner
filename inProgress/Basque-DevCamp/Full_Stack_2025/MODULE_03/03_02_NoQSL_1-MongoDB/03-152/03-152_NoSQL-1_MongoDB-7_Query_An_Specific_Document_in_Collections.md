@@ -1,4 +1,99 @@
-# MODULE 03-152: MongoDB (7) - Querying an specific Document in Collections
+## MODULE 03-152: MongoDB (7) - Querying a Specific Document in Collections
+
+---
+
+## **Index**
+
+1. Querying a Specific Document
+
+2. Handling Multiple Matches
+
+3. Comparing MongoDB and SQL Queries
+
+---
+
+In many real-world scenarios, retrieving all documents is inefficient. Instead, we often need to query for a specific document based on a field value. MongoDB provides the `find()` method, which allows filtering documents by specific criteria.
+
+In this guide, we will explore how to query a single document in MongoDB using `find()`, handle multiple matches, and compare it with SQL queries.
+
+---
+
+## **Querying a Specific Document**
+
+To retrieve a specific document, we pass a query object to `find()`. This object specifies the condition the document must meet.
+
+### **Syntax:**
+
+```js
+// Query a book by name
+
+db.books.find({ name: "OOP Programming" }).pretty()
+```
+
+### **Example Output:**
+
+```json
+[  
+    {    
+        "_id": ObjectId("507f191e810c19729de860ec"),    
+        "name": "OOP Programming",    
+        "publishedDate": ISODate("2023-03-15T00:00:00Z"),    
+        "authors": [      
+                        { "name": "John Doe" },      
+                        { "name": "Jane Doe" }    
+                    ]  
+    }
+]
+```
+
+This query returns only documents where the `name` field matches "OOP Programming".
+
+---
+
+## **Handling Multiple Matches**
+
+The `find()` method returns **all** matching documents. If multiple documents have the same `name`, they will all be included in the output.
+
+### **Example:**
+
+```javascript
+// Query multiple documents with the same name
+
+db.books.find({ name: "OOP Programming" }).pretty()
+```
+
+If multiple books exist with the same title, the result will contain all of them. This behavior is different from SQL, where primary keys ensure unique values.
+
+To retrieve only the first matching document, use `findOne()`:
+
+```js
+// Retrieve only the first matching document
+
+db.books.findOne({ name: "OOP Programming" })
+```
+
+This ensures that only **one** document is returned, even if multiple matches exist.
+
+---
+
+## **Comparing MongoDB and SQL Queries**
+
+For those familiar with SQL, the equivalent of MongoDB’s `find()` method is the `SELECT` statement with a `WHERE` clause.
+
+| Operation                        | MongoDB Query                                   | SQL Equivalent                                                |
+| -------------------------------- | ----------------------------------------------- | ------------------------------------------------------------- |
+| Find a document by name          | `db.books.find({ name: "OOP Programming" })`    | `SELECT * FROM books WHERE name = 'OOP Programming';`         |
+| Find the first matching document | `db.books.findOne({ name: "OOP Programming" })` | `SELECT * FROM books WHERE name = 'OOP Programming' LIMIT 1;` |
+
+
+
+****
+
+## References
+
+[MongoDB `**find()**`** Method Documentation:](https://www.mongodb.com/docs/manual/reference/method/db.collection.find/)
+
+[MongoDB `**findOne()**` Method Documentation:](https://www.mongodb.com/docs/manual/reference/method/db.collection.findOne/)
 
 ****
 

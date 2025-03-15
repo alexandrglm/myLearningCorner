@@ -6,16 +6,13 @@
 
 ## **Index**
 
-1. Prerequisites
-2. Starting MongoDB
-3. Listing Existing Databases
-4. Creating a New Database
-5. Understanding the `db` Object
-6. Creating a Database User
-7. Listing Users in a Database
-8. Deleting a User
-9. 
-10. References
+1. Starting MongoDB
+2. Listing Existing Databases
+3. Creating a New Database
+4. Understanding the `db` Object
+5. Creating a Database User
+6. Listing Users in a Database
+7. Deleting a User
 
 ---
 
@@ -183,8 +180,6 @@ db.getUsers()
 The removed user should no longer appear in the output.
 
 ---
-
-# References
 
 ## **Review and Best Practices**
 

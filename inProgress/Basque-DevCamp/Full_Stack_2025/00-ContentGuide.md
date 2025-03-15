@@ -347,13 +347,13 @@
 | [X] | 150 |                               | How to Insert Many Documents into a MongoDB Collection                    | 2025/03/15 |
 | [X] | 151 |                               | How to Query All Documents in a MongoDB Collection with the find() Method | 2025/03/15 |
 | [X] | 152 |                               | How to Query for Specific Documents in a MongoDB Collection               | 2025/03/15 |
-| [ ] | 153 |                               | Introduction to MongoDB Projections                                       |            |
-| [ ] | 154 |                               | Query for a Portion of a Nested Array Element in a Document Using $slice  |            |
-| [ ] | 155 |                               | How to Delete Documents in MongoDB                                        |            |
-| [ ] | 156 |                               | How to Include Nested Fields in a find Query                              |            |
-| [ ] | 157 |                               | Using the findOne Method in MongoDB to Query for a Single Document        |            |
-| [ ] | 158 |                               | How to Query for a Portion of a String in a MongoDB Document              |            |
-| [ ] | 159 |                               | How to Check if a Field Exists in a MongoDB Document                      |            |
+| [X] | 153 |                               | Introduction to MongoDB Projections                                       | 2025/03/15 |
+| [X] | 154 |                               | Query for a Portion of a Nested Array Element in a Document Using $slice  | 2025/03/15 |
+| [X] | 155 |                               | How to Delete Documents in MongoDB                                        | 2025/03/15 |
+| [X] | 156 |                               | How to Include Nested Fields in a find Query                              | 2025/03/15 |
+| [X] | 157 |                               | Using the findOne Method in MongoDB to Query for a Single Document        | 2025/03/15 |
+| [X] | 158 |                               | How to Query for a Portion of a String in a MongoDB Document              | 2025/03/15 |
+| [X] | 159 |                               | How to Check if a Field Exists in a MongoDB Document                      |            |
 | [ ] | 160 |                               | Course Checkpoint 6                                                       |            |
 
 ***

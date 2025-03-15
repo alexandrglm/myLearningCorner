@@ -8,7 +8,7 @@
 2. Creating a Collection
 3. Listing Collections
 4. Understanding System Indexes
-5. References
+5. 
 
 ---
 
