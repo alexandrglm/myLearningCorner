@@ -226,6 +226,8 @@
 
 ## Module 3, Part 1: Python-Course Part 2
 
+### Python 04 - Part 2, Tuples, Zip, Sets
+
 |     | #   | Type                            | Tittle                                             | Date       |
 | --- | --- | ------------------------------- | -------------------------------------------------- | ---------- |
 | [X] | 76  | Python:  Tuples into dict. keys | How to Use a Tuple as a Dictionary Key in Python   | 2025/02/19 |
@@ -337,40 +339,146 @@
 
 ### Module 3, Part 2: NoSQL (1) - MongoDB
 
-|     | #   | Type                          | Tittle                                                                    | Date       |
-| --- | --- | ----------------------------- | ------------------------------------------------------------------------- | ---------- |
-| [X] | 146 | MongoDB                       | How to Install MongoDB on a Mac                                           | 2025/03/14 |
-| [X] | ../ | Mongo-Course info             | **Project_MongoDB-Course.md**                                             | 2025/03/14 |
-| [X] | 147 | MongoDB - Databases           | Guide to Creating a MongoDB Database Along with Admin Database Users      | 2025/03/14 |
-| [X] | 148 | MongoDB - Collections         | How to Create a MongoDB Collection                                        | 2025/03/14 |
-| [X] | 149 | MongoDB - Inserting Documents | Guide to Inserting Documents into a MongoDB Collection                    | 2025/03/15 |
-| [X] | 150 |                               | How to Insert Many Documents into a MongoDB Collection                    | 2025/03/15 |
-| [X] | 151 |                               | How to Query All Documents in a MongoDB Collection with the find() Method | 2025/03/15 |
-| [X] | 152 |                               | How to Query for Specific Documents in a MongoDB Collection               | 2025/03/15 |
-| [X] | 153 |                               | Introduction to MongoDB Projections                                       | 2025/03/15 |
-| [X] | 154 |                               | Query for a Portion of a Nested Array Element in a Document Using $slice  | 2025/03/15 |
-| [X] | 155 |                               | How to Delete Documents in MongoDB                                        | 2025/03/15 |
-| [X] | 156 |                               | How to Include Nested Fields in a find Query                              | 2025/03/15 |
-| [X] | 157 |                               | Using the findOne Method in MongoDB to Query for a Single Document        | 2025/03/15 |
-| [X] | 158 |                               | How to Query for a Portion of a String in a MongoDB Document              | 2025/03/15 |
-| [X] | 159 |                               | How to Check if a Field Exists in a MongoDB Document                      |            |
-| [ ] | 160 |                               | Course Checkpoint 6                                                       |            |
+|     | #      | Type                                                                       | Tittle                                                                    | Date       |
+| --- | ------ | -------------------------------------------------------------------------- | ------------------------------------------------------------------------- | ---------- |
+| [X] | 146    | MongoDB                                                                    | How to Install MongoDB on a Mac                                           | 2025/03/14 |
+| [X] | ../    | Mongo-Course info                                                          | **Project_MongoDB-Course.md**                                             | 2025/03/14 |
+| [X] | 147    | MongoDB - `.createUser({})` `.getUsers()`, `.dropUsers()`,                 | Guide to Creating a MongoDB Database Along with Admin Database Users      | 2025/03/14 |
+| [X] | 148    | MongoDB - `.createCollection()`                                            | How to Create a MongoDB Collection                                        | 2025/03/14 |
+| [X] | 149    | MongoDB - `.insertOne({})`                                                 | Guide to Inserting Documents into a MongoDB Collection                    | 2025/03/15 |
+| [X] | 150    | MongoDB - `.insertMany([])`                                                | How to Insert Many Documents into a MongoDB Collection                    | 2025/03/15 |
+| [X] | 151    | MongoDb  - `.find()` - `.find().pretty()`                                  | How to Query All Documents in a MongoDB Collection with the find() Method | 2025/03/15 |
+| [X] | 152    | MongoDB - `.find({key : "value"})`                                         | How to Query for Specific Documents in a MongoDB Collection               | 2025/03/15 |
+| [X] | 153    | MongoDB - Limiting amount of data in a query by `.find({specific values})` | Introduction to MongoDB Projections                                       | 2025/03/15 |
+| [X] | 154    | MongoDB - `.insert({})`, `.find( $slice: PORTION)`,                        | Query for a Portion of a Nested Array Element in a Document Using $slice  | 2025/03/15 |
+| [X] | 155    | MongoDB - `.remove({data}, docs)`                                          | How to Delete Documents in MongoDB                                        | 2025/03/15 |
+| [X] | 156    | MongoDB - `.insert({[{}]})`                                                | How to Include Nested Fields in a find Query                              | 2025/03/15 |
+| [X] | 157    | MongoDB - `.findOne()`                                                     | Using the findOne Method in MongoDB to Query for a Single Document        | 2025/03/15 |
+| [X] | 158    | MongoDB - Unsing REGEX in `.findOne({key: /*REGEX*/})`                     | How to Query for a Portion of a String in a MongoDB Document              | 2025/03/15 |
+| [X] | 159    | MongoDB - `.find( { key: { $exists : True/False})`                         | How to Check if a Field Exists in a MongoDB Document                      | 2025/03/16 |
+| [ ] | 160    |                                                                            | Course Checkpoint 6                                                       |            |
+| [X] | 03-161 | Digital Literacy: NoSQL Intro                                              | Guide to NoSQL Databases for Developers                                   | 2025-03-13 |
 
 ***
 
-### Module 3 keypoints:
+# MODULE 4 - JAVASCRIPT (i)
 
-* Loops, conditionals, methods, functions.
-* Classes.
-* External modules. Using `pip`.
-* Webscrapping. Extracting data from websites using our own scripts.
-* Data structures. MongoDB.
+### JavaScript Basics
 
-***
+|     | #      | Type | Tittle                                                               | Date |
+| --- | ------ | ---- | -------------------------------------------------------------------- | ---- |
+| [ ] | 04-001 |      | Reasons for Learning JavaScript                                      |      |
+| [ ] | 04-002 |      | Analyzing the Various Versions of JavaScript                         |      |
+| [ ] | 04-003 |      | How to Run JavaScript Programs                                       |      |
+| [ ] | 04-004 |      | How to Work with Variables in JavaScript                             |      |
+| [ ] | 04-005 |      | Understanding the Key Difference Between Var and Let Variables Types |      |
+| [ ] | 04-006 |      | Guide to JavaScript Hoisting                                         |      |
+| [ ] | 04-007 |      | Syntax for JavaScript Comments                                       |      |
+| [ ] | 04-008 |      | Comprehensive List of JavaScript Data Types                          |      |
+| [ ] | 04-009 |      | Guide to JavaScript Objects                                          |      |
+| [ ] | 04-010 |      | How to Check for Data Types in JavaScript                            |      |
+| [ ] | 04-011 |      | How to Perform Type Casting in JavaScript                            |      |
+| [ ] | 04-012 |      | Working with String Functions - Part 1                               |      |
+| [ ] | 04-013 |      | Working with String Functions - Part 2                               |      |
+| [ ] | 04-014 |      | Working with String Functions - Part 3                               |      |
+| [ ] | 04-015 |      | JavaScript Arithmetic Operators                                      |      |
+| [ ] | 04-016 |      | Guide to Compound Assignment Operators in JavaScript                 |      |
+| [ ] | 04-017 |      | Order of Operations in JavaScript                                    |      |
+| [ ] | 04-018 |      | How to Get the Average from an Array in JavaScript                   |      |
 
-# MODULE 4
+### JavaScript Conditionals
 
-## JAVASCRIPT (i)
+|     | #      | Type | Tittle                                                                | Date |
+| --- | ------ | ---- | --------------------------------------------------------------------- | ---- |
+| [ ] | 04-019 |      | JavaScript Conditional Section Introduction                           |      |
+| [ ] | 04-020 |      | Basic Syntax for Using Conditionals in JavaScript                     |      |
+| [ ] | 04-021 |      | Guide to If/Else Conditionals in JavaScript                           |      |
+| [ ] | 04-022 |      | Compound Conditionals in JavaScript                                   |      |
+| [ ] | 04-023 |      | How to Build a Switch Statement in JavaScript to Check for Data Types |      |
+| [ ] | 04-024 |      | Overview of JavaScript Ternary Operator                               |      |
+
+### JavaScript Functions
+
+|     | #      | Type | Tittle                                                             | Date |
+| --- | ------ | ---- | ------------------------------------------------------------------ | ---- |
+| [ ] | 04-025 |      | Section Introduction: Introduction to JavaScript Functions         |      |
+| [ ] | 04-026 |      | Basic Syntax for Building Functions in JavaScript                  |      |
+| [ ] | 04-027 |      | How Variable Scope Works in JavaScript                             |      |
+| [ ] | 04-028 |      | Differences Between Function Expressions and Function Declarations |      |
+| [ ] | 04-029 |      | How to Work with Function Arguments in JavaScript                  |      |
+| [ ] | 04-030 |      | Function Arguments: Reference vs Value                             |      |
+| [ ] | 04-031 |      | Introduction to JavaScript Closures                                |      |
+| [ ] | 04-032 |      | Introduction to HTML Scripting with Built in JavaScript Functions  |      |
+| [ ] | 04-033 |      | Introduction to the 'this' Keyword in JavaScript                   |      |
+| [ ] | 04-034 |      | How to Use the 'this' Keyword in JavaScript Programs               |      |
+| [ ] | 04-035 |      | Remove the First and Last Element from a JavaScript Array          |      |
+
+### JavaScript Arrays
+
+|     | #      | Type | Tittle                                                                         | Date |
+| --- | ------ | ---- | ------------------------------------------------------------------------------ | ---- |
+| [ ] | 04-036 |      | Section Introduction: Introduction to JavaScript Arrays                        |      |
+| [ ] | 04-037 |      | How to Create Arrays in JavaScript                                             |      |
+| [ ] | 04-038 |      | Course Checkpoint 7                                                            |      |
+| [ ] | 04-039 |      | Guide to Adding and Removing Array Elements in JavaScript                      |      |
+| [ ] | 04-040 |      | How to Use the Splice Function in JavaScript to Remove Specific Array Elements |      |
+| [ ] | 04-041 |      | Guide to For Loops in JavaScript                                               |      |
+| [ ] | 04-042 |      | How to Loop Through a JavaScript Object                                        |      |
+| [ ] | 04-043 |      | Guide to While and Do/While Loops in JavaScript                                |      |
+
+### Automating Tasks with JavaScript
+
+|     | #      | Type | Tittle                                                                                | Date |
+| --- | ------ | ---- | ------------------------------------------------------------------------------------- | ---- |
+| [ ] | 04-044 |      | Section Introduction: Introduction to Automating Tasks in the Browser with JavaScript |      |
+| [ ] | 04-045 |      | Running Google Search Queries in JavaScript                                           |      |
+| [ ] | 04-046 |      | How to Pull Images from Instagram with JavaScript                                     |      |
+| [ ] | 04-047 |      | Auto Following Accounts and Hashtags on LinkedIn with JavaScript                      |      |
+
+### Modern JavaScript
+
+|     | #      | Type | Tittle                                                                            | Date |
+| --- | ------ | ---- | --------------------------------------------------------------------------------- | ---- |
+| [ ] | 04-048 |      | Modern JavaScript Basics Section Introduction                                     |      |
+| [ ] | 04-049 |      | Using the Const Variable Type in JavaScript                                       |      |
+| [ ] | 04-050 |      | Guide to Backtick string interpolation in Javascript                              |      |
+| [ ] | 04-051 |      | Integrating Conditionals into JavaScript Strings with Ternary Operators           |      |
+| [ ] | 04-052 |      | Introduction to Arrow Functions in JavaScript                                     |      |
+| [ ] | 04-053 |      | Build an HTML Heading Generator Function in JavaScript                            |      |
+| [ ] | 04-054 |      | How Arrow Functions Work with ‘this’                                              |      |
+| [ ] | 04-055 |      | How to Swap Variable Values in JavaScript with Variable Deconstruction            |      |
+| [ ] | 04-056 |      | How to Implement Array Destructuring in JavaScript                                |      |
+| [ ] | 04-057 |      | How to Pass JavaScript Objects as Function Arguments by Leveraging Deconstruction |      |
+| [ ] | 04-058 |      | Guide to Adding Default Object Values to JavaScript Function Arguments            |      |
+| [ ] | 04-059 |      | Guide to the JavaScript Spread Operator                                           |      |
+| [ ] | 04-060 |      | Guide to JavaScript Bind Function                                                 |      |
+| [ ] | 04-061 |      | How to Check if Two Objects Have Equal Values                                     |      |
+
+### Object-Oriented Programming in JavaScript
+
+|     | #      | Type | Tittle                                                         | Date |
+| --- | ------ | ---- | -------------------------------------------------------------- | ---- |
+| [ ] | 04-062 |      | Object Oriented Programming in JavaScript Section Introduction |      |
+| [ ] | 04-063 |      | Introduction to Object Oriented Programming in JavaScript      |      |
+| [ ] | 04-064 |      | Guide to JavaScript OOP Instance Methods                       |      |
+| [ ] | 04-065 |      | Guide to OOP Static Methods in JavaScript                      |      |
+| [ ] | 04-066 |      | JSON Parsing Guide for API Development                         |      |
+| [ ] | 04-067 |      | Build a Manual Exponent Function in JavaScript                 |      |
+
+### JavaScript Promises and Async/Await
+
+|     | #      | Type | Tittle                                                                 | Date |
+| --- | ------ | ---- | ---------------------------------------------------------------------- | ---- |
+| [ ] | 04-068 |      | Introduction to JavaScript Promises                                    |      |
+| [ ] | 04-069 |      | Using a fetch Promise to Communicate with APIs in JavaScript           |      |
+| [ ] | 04-070 |      | How to Group Promises Together with Promise.all in JavaScript          |      |
+| [ ] | 04-071 |      | Introduction to Async and Await in JavaScript                          |      |
+| [ ] | 04-072 |      | Combining Async / Await with Closures to Ensure All Processes Have Run |      |
+| [ ] | 04-073 |      | Using Async / Await for Communicating with Outside APIs in JavaScript  |      |
+| [ ] | 04-074 |      | Implementing Error Handling In a JavaScript Async / Await Function     |      |
+| [ ] | 04-075 |      | Build a Weighted Lottery Function in JavaScript                        |      |
+| [ ] | 04-076 |      | Developer Learning Curve – Why Learning How to Code Takes So Long?     |      |
+| [ ] | 04-077 |      | Course Checkpoint 8                                                    |      |
 
 ### Module 4 keypoints:
 

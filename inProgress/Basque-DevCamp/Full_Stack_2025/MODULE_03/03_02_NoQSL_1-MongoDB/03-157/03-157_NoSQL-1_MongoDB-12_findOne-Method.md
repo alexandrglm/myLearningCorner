@@ -1,6 +1,100 @@
 # MODULE 03-157: MongoDB (12)
+## Using the `findOne` Method in MongoDB
 
-## Using the `findOne` Method in MongoDB to Query for a Single Document
+---
+
+## **Index**
+
+1. Understanding the `findOne` Method
+2. Using `findOne` to Retrieve a Single Document
+3. Comparing `find()` vs `findOne()`
+4. MongoDB vs SQL: Single Record Query
+
+---
+
+When querying a MongoDB collection, sometimes you need to retrieve only a single document rather than multiple results. MongoDB provides the `findOne()` method, which is designed to return the first document that matches a given query.
+
+This guide will explain how `findOne()` works, its differences compared to `find()`, and how it can be leveraged in applications where retrieving a single record is necessary.
+
+---
+
+## **Understanding the `findOne` Method**
+
+MongoDB’s `findOne()` method is used to return the **first** document that matches a given query. If no matching document is found, it returns `null`.
+
+### **Syntax:**
+
+```js
+// Basic findOne query
+
+ db.collection.findOne({ query })
+```
+
+The key difference between `findOne()` and `find()` is that `findOne()` **only returns a single document** instead of a cursor containing multiple documents.
+
+---
+
+## **Using `findOne` to Retrieve a Single Document**
+
+Consider a `books` collection with multiple documents:
+
+```js
+db.books.find({ name: "Blink" })
+```
+
+If multiple documents match the query, all will be returned. However, using `findOne()`, only the first matching document will be retrieved:
+
+```js
+db.books.findOne({ name: "Blink" })
+```
+
+### **Example Output:**
+
+```json
+{
+  "_id": ObjectId("507f1f77bcf86cd799439011"),
+  "name": "Blink",
+  "publishedDate": "2023-05-14T00:00:00Z",
+  "authors": [
+    { "name": "Malcolm Gladwell" }
+  ]
+}
+```
+
+**Key Benefits of `findOne()`:**
+
+- Guarantees that only one document is returned.
+- Eliminates the need to iterate over multiple documents.
+- Useful in applications that require a single result (e.g., retrieving user profiles, fetching configuration settings).
+
+---
+
+## **Comparing `find()` vs `findOne()`**
+
+| Feature            | `find()`                    | `findOne()`               |
+| ------------------ | --------------------------- | ------------------------- |
+| Returns            | Cursor (multiple documents) | Single document or `null` |
+| Use Case           | Retrieving multiple records | Retrieving one record     |
+| Requires Iteration | Yes                         | No                        |
+| Default Output     | JSON array                  | JSON object               |
+
+If multiple documents match the query, `findOne()` returns **only the first document** found, whereas `find()` returns a cursor that can contain multiple documents.
+
+---
+
+## **MongoDB vs SQL: Single Record Query**
+
+| **Operation**        | **MongoDB Query**                     | **SQL Equivalent**                                  |
+| -------------------- | ------------------------------------- | --------------------------------------------------- |
+| Find a single record | `db.books.findOne({ name: "Blink" })` | `SELECT * FROM books WHERE name = 'Blink' LIMIT 1;` |
+
+In SQL databases, retrieving a single record often involves using the `LIMIT 1` clause, while in MongoDB, `findOne()` handles this automatically.
+
+---
+
+## **References**
+
+- [**MongoDB findOne() Documentation:**](https://www.mongodb.com/docs/manual/reference/method/db.collection.findOne)
 
 ---
 

@@ -4,6 +4,131 @@
 
 ---
 
+## **Index**
+
+1. Understanding the Need for Field Existence Checks
+2. Using the `$exists` Operator
+3. Querying for Documents Where a Field Exists
+4. Querying for Documents Where a Field Does Not Exist
+
+
+---
+
+In MongoDB, documents within the same collection do not have to follow a fixed schema, meaning that some documents may contain fields that others do not. As a result, it is often necessary to check whether a specific field exists in a document before processing it.
+
+This guide explores how to use the `$exists` operator to determine whether a field is present in a MongoDB document.
+
+---
+
+## **Understanding the Need for Field Existence Checks**
+
+Since MongoDB allows flexible document structures, some documents may have fields that others do not. Consider the following example:
+
+- Some books in a `books` collection may have a `reviews` field indicating the number of reviews, while others do not.
+- We may need to filter documents based on whether they contain this field.
+
+Using the `$exists` operator, we can efficiently retrieve only those documents that have (or do not have) a particular field.
+
+---
+
+## **Using the `$exists` Operator**
+
+The `$exists` operator is a MongoDB query operator used to check whether a field exists in a document.
+
+### **Syntax:**
+
+```js
+{ field: { $exists: <boolean> } }
+```
+
+- Setting `$exists` to `true` will return documents where the specified field exists.
+- Setting `$exists` to `false` will return documents where the specified field does not exist.
+
+---
+
+## **Querying for Documents Where a Field Exists**
+
+To find all books that include a `reviews` field, use the following query:
+
+```js
+db.books.find({ reviews: { $exists: true } })
+```
+
+### **Example Output:**
+
+```json
+[
+  {
+    "name": "Deep Work: Rules for Focused Success in a Distracted World",
+    "publishedDate": "2024-03-10T00:00:00Z",
+    "reviews": 100,
+    "authors": [
+      { "name": "Cal Newport" }
+    ]
+  }
+]
+```
+
+This query retrieves only the documents that include the `reviews` field.
+
+---
+
+## **Querying for Documents Where a Field Does Not Exist**
+
+To find books that do **not** include a `reviews` field, use:
+
+```js
+db.books.find({ reviews: { $exists: false } })
+```
+
+### **Example Output:**
+
+```json
+[
+  {
+    "name": "The War of Art",
+    "publishedDate": "2024-03-10T00:00:00Z",
+    "authors": [
+      { "name": "Steven Pressfield" }
+    ]
+  },
+  {
+    "name": "Blink",
+    "publishedDate": "2024-03-10T00:00:00Z",
+    "authors": [
+      { "name": "Malcolm Gladwell" }
+    ]
+  }
+]
+```
+
+This query filters out all books that do contain the `reviews` field.
+
+---
+
+## **Practical Use Cases**
+
+- **Data Integrity Checks:** Identify documents missing expected fields to maintain data consistency.
+- **Selective Querying:** Retrieve only documents that include or exclude certain fields.
+- **Schema Evolution:** Detect older documents missing newly added fields and update them accordingly.
+
+---
+
+## **MongoDB vs SQL**
+
+| **Operation**                                 | **MongoDB Query**                                | **SQL Equivalent**                               |
+| --------------------------------------------- | ------------------------------------------------ | ------------------------------------------------ |
+| Find documents where `reviews` exists         | `db.books.find({ reviews: { $exists: true } })`  | `SELECT * FROM books WHERE reviews IS NOT NULL;` |
+| Find documents where `reviews` does not exist | `db.books.find({ reviews: { $exists: false } })` | `SELECT * FROM books WHERE reviews IS NULL;`     |
+
+---
+
+## **References**
+
+- **MongoDB `$exists` Documentation:** [https://www.mongodb.com/docs/manual/reference/operator/query/exists/](https://www.mongodb.com/docs/manual/reference/operator/query/exists/)
+
+***
+
 ## Video lesson Speech
 
 In this guide, we're going to walk through how we can check to see if a field exists or if it doesn't inside of Mongo.
@@ -56,4 +181,3 @@ db.books.find({ reviews: { $exists: true } })
 db.books.find({ reviews: { $exists: false } })
 ```
 
-## 

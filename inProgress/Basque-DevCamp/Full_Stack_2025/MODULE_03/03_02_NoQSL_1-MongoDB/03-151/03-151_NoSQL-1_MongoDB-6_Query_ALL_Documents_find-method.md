@@ -14,7 +14,6 @@
 
 4. Automatic Object IDs in MongoDB
 
-5. 
 
 ---
 

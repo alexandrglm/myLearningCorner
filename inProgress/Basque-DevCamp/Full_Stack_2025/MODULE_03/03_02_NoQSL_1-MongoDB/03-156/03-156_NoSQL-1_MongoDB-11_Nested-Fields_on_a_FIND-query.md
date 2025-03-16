@@ -6,8 +6,6 @@
 
 ## **Index**
 
-
-
 1. Working with Nested Fields in MongoDB
 
 2. Querying Specific Nested Fields
@@ -17,8 +15,6 @@
 4. MongoDB vs SQL: Nested Queries
 
 ---
-
-
 
 MongoDB provides a flexible schema design that allows documents to have **nested fields** and **embedded arrays**.   
 

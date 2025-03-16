@@ -1,4 +1,4 @@
-# MO# MO# MODULE 03-150: MongoDB (5)
+# MODULE 03-150: MongoDB (5)
 
 ## Inserting Multiple Documents in MongoDB
 
@@ -129,8 +129,6 @@ db.books.createIndex({ name: 1 }, { unique: true })
 ```
 
 This ensures that no two books share the same name.
-
-For more details, see [MongoDB Indexing Documentation](https://www.mongodb.com/docs/manual/indexes/).
 
 ****
 
