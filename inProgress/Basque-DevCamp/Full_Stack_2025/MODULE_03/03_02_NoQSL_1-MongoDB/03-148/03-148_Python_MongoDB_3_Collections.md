@@ -1,4 +1,5 @@
 # Module 03-148: MongoDB (3)
+
 ## Collections
 
 ---
@@ -9,7 +10,6 @@
 2. Creating a Collection
 3. Listing Collections
 4. Understanding System Indexes
-5. 
 
 ---
 
@@ -28,23 +28,19 @@ In MongoDB, collections are the equivalent of tables in relational databases. Co
 
 ---
 
-## **Creating a Collection**
+## **Creating a Collection - `.createCollection()`**
 
 To create a new collection in MongoDB, use the `createCollection` method:
 
-```js
- db.createCollection("books")
+```mongodb
+ db.createCollection("books")    # Output { ok: 1 }
 ```
 
-### **Expected Output:**
 
-```json
-{ "ok" : 1 }
-```
 
 This response confirms that the collection was successfully created.
 
-> **Note:** Unlike relational databases, MongoDB automatically creates a collection when the first document is inserted. Explicitly using `createCollection` is only necessary for advanced configurations.
+> **Note:** Unlike relational databases, MongoDB automatically creates a collection when the first document is inserted. **Explicitly using `createCollection` is only necessary for advanced configurations**.
 
 ---
 
@@ -52,26 +48,52 @@ This response confirms that the collection was successfully created.
 
 To view all collections within the current database, run:
 
-```js
-show collections
+```mongodb
+MongoCourse> show collections
+
+Books
+
 ```
 
-### **Example Output:**
-
-```
-books
-system.indexes
-```
-
-This output shows that the database contains a `books` collection, along with `system.indexes` (used for indexing documents).
+This output shows that the database contains a `books` collection.
 
 ---
 
-## **Understanding System Indexes**
+## **Understanding oldie System Indexes**
 
-MongoDB automatically maintains a `system.indexes` collection, which stores index metadata. Indexes improve query performance by enabling efficient lookups.
+It's possible that, if you are using an Old MongoDB version (< 3.x) you'll see another file along with your collection, called `system.indexes`.
 
-> **Tip:** While you don't need to manage `system.indexes` directly, understanding how indexes work can help optimize performance. Learn more in the [MongoDB Indexing Guide](https://www.mongodb.com/docs/manual/indexes/).
+It was used for indexing documents in older versions.
+
+Since 3.x version, the `system.indexes`collections are no longer exist.
+
+MongoDB automatically maintained a system.indexes collection, which had stored index metadata. 
+
+
+
+****
+
+## **Understanding how MongoDB v3.x work along with Indexes - `db.<collection>.getIndexes()`**
+
+Indexes, in general terms, improve query performance by enabling efficient lookups.
+
+> While you don't need to manage `system.indexes` directly, **understanding how indexes work can help optimize performance**. Learn more in the nowday's [MongoDB Indexing Guide](https://www.mongodb.com/docs/manual/indexes/).
+
+
+
+```mongodb
+MongoCourse> db.Books.getIndexes()
+
+
+# Output
+[ { v: 2, key: { _id: 1 }, name: '_id_' } ]
+
+
+```
+
+****
+
+![MongoShell, creating db, and getting indexes](./03-148_IMG01.png)
 
 ---
 
@@ -86,12 +108,16 @@ MongoDB automatically maintains a `system.indexes` collection, which stores inde
 
 ## References
 
-[MongoDB Docs:  Indexes](https://www.mongodb.com/docs/manual/indexes/)
+[# Databases and Collections in PyMongo](https://www.mongodb.com/docs/languages/python/pymongo-driver/current/databases-collections/)
 
 ***
+
 ## Video lesson Speech
+
 Now that we have our database created and we have a user now we can start creating collections. 
+
 ***
+
 Now if you are familiar with the SQL kind of syntax then you're probably used to hearing terms such as **databases** like we have in Mongo and so then you have the idea of **tables** and that tables have columns. We don't have that same exact kind of naming inside of Mongo, we do have databases but then inside of databases we have what is called **collections**, collections are the closest kind of analogy to a table. Collections can store many documents and those documents are the actual items that you're going to be putting into the database.  Before we can start saving the documents we need to create collections to store them in. So we're going to throughout this entire course be building out a database to manage books.  With that in mind, we're going to once again reference our database object and then we're going to create a collection called books. Now the command for this is 
 
 ```

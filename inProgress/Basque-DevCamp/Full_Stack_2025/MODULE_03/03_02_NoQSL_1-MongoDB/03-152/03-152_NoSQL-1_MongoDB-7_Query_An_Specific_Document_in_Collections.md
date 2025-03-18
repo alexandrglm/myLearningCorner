@@ -1,4 +1,5 @@
-# MODULE 03-152: MongoDB (7) 
+# MODULE 03-152: MongoDB (7)
+
 ## Querying a Specific Document in Collections
 
 ---
@@ -23,54 +24,72 @@ In this guide, we will explore how to query a single document in MongoDB using `
 
 To retrieve a specific document, we pass a query object to `find()`. This object specifies the condition the document must meet.
 
-### **Syntax:**
-
-```js
+```mongodb
 // Query a book by name
 
-db.books.find({ name: "OOP Programming" }).pretty()
-```
+MongoCourse> db.Books.find({ name: "Tecnofeudalismo" })
 
-### **Example Output:**
 
-```json
-[  
-    {    
-        "_id": ObjectId("507f191e810c19729de860ec"),    
-        "name": "OOP Programming",    
-        "publishedDate": ISODate("2023-03-15T00:00:00Z"),    
-        "authors": [      
-                        { "name": "John Doe" },      
-                        { "name": "Jane Doe" }    
-                    ]  
-    }
+[
+  {
+    _id: ObjectId('67d9cb025c76fae2cc6b140c'),
+    name: 'Tecnofeudalismo',
+    publishedDate: ISODate('2024-01-01T00:00:00.000Z'),
+    authors: [ { name: 'Yanis Varoufakis' } ]
+  }
 ]
+
 ```
 
-This query returns only documents where the `name` field matches "OOP Programming".
+This query returns only documents where the `name` field matches "Tecnofeudalismo".
 
 ---
 
 ## **Handling Multiple Matches**
 
-The `find()` method returns **all** matching documents. If multiple documents have the same `name`, they will all be included in the output.
+The `find()` method returns **all** matching documents.   
 
-### **Example:**
+If multiple documents have the same `name`, they will all be included in the output.
 
-```javascript
+```mongodb
 // Query multiple documents with the same name
 
-db.books.find({ name: "OOP Programming" }).pretty()
+MongoCourse> db.Books.find({ "authors.name" : "Guy Delisle"  })
+[
+  {
+    _id: ObjectId('67d9cb025c76fae2cc6b140d'),
+    name: 'Pyongyang: A Journey In North Korea',
+    publishedDate: ISODate('2003-01-01T00:00:00.000Z'),
+    authors: [ { name: 'Guy Delisle' } ]
+  },
+  {
+    _id: ObjectId('67d9da355c76fae2cc6b1410'),
+    name: 'Shenzen: A Travelogue from China',
+    publishedDate: ISODate('2000-01-01T00:00:00.000Z'),
+    authors: [ { name: 'Guy Delisle' } ]
+  }
+]
+
 ```
 
-If multiple books exist with the same title, the result will contain all of them. This behavior is different from SQL, where primary keys ensure unique values.
+If multiple books exist with the same key or key.subkey (**use .dotNotation**) the result will contain all of them.   
+
+This behavior is different from SQL, where primary keys ensure unique values.
 
 To retrieve only the first matching document, use `findOne()`:
 
-```js
+```mongodb
 // Retrieve only the first matching document
 
-db.books.findOne({ name: "OOP Programming" })
+MongoCourse> db.Books.findOne({ "authors.name" : "Guy Delisle"  })
+
+{
+  _id: ObjectId('67d9cb025c76fae2cc6b140d'),
+  name: 'Pyongyang: A Journey In North Korea',
+  publishedDate: ISODate('2003-01-01T00:00:00.000Z'),
+  authors: [ { name: 'Guy Delisle' } ]
+}
+
 ```
 
 This ensures that only **one** document is returned, even if multiple matches exist.

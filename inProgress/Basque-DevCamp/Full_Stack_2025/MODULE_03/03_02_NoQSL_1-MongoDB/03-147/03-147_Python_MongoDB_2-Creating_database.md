@@ -22,23 +22,39 @@ Before proceeding, ensure you have MongoDB installed and properly configured on 
 
 ### **Starting MongoDB**
 
-To start the MongoDB daemon, open your terminal and run:
+To start the MongoDB daemon, using non system-wide binary and **the current project .conf**, open your terminal and run:
 
 ```bash
-mongod
+$ ./mongodb/bin/mongod --config ~/<path-for-the-mongodb-project>/mongod.conf
 ```
 
 Then, open a new terminal tab or window and enter the MongoDB shell:
 
 ```bash
-mongo
+mongosh # mongosh for linux deb users
 ```
 
 If everything is working correctly, you should see a prompt similar to:
 
-```
-MongoDB shell version vX.X.X
-connecting to: mongodb://127.0.0.1:27017/test
+```mongodb
+Current Mongosh Log ID:    
+Connecting to:        mongodb://
+Using MongoDB:        8.0.5
+Using Mongosh:        2.4.2
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+
+To help improve our products, anonymous usage data is collected and sent to MongoDB periodically (https://www.mongodb.com/legal/privacy-policy).
+You can opt-out by running the disableTelemetry() command.
+
+------
+   The server generated these startup warnings when booting
+
+   server logs here...
+------
+
+test> 
 ```
 
 ---
@@ -98,26 +114,31 @@ This confirms that all further operations will be performed on `mongoCourse`.
 
 ---
 
-## **Creating a Database User**
+## **Creating a Database User - `.createUser( {...} )`**
 
-Official MongoDB Documentation: 
+Database users are essential for managing access control.   
 
-Database users are essential for managing access control. To create a new user, execute the following JavaScript code inside the MongoDB shell:
+To create a new user, execute the following JavaScript code inside the MongoDB shell.
 
-```js
+**Don't worry if you need many attempts to type full-indented code via CLI. If fails, start again:**
+
+```mongodb
 db.createUser({
-  user: 'jordan',
-  pwd: 'securepassword',
+  user: 'testing',
+  pwd: 'testingpass',
   customData: { startDate: new Date() },
   roles: [
     { role: 'clusterAdmin', db: 'admin' },
     { role: 'readAnyDatabase', db: 'admin' },
     'readWrite'
   ]
-})
+});
+
+
+# Return will be { ok: 1 }
 ```
 
-### **Explanation:**
+### **Explanation**
 
 - `user`: The username for the new user.
 - `pwd`: The password (ensure you use a strong password in production environments).
@@ -129,46 +150,55 @@ db.createUser({
 
 ---
 
-## **Listing Users in a Database**
+## **Listing Users in a Database - `.getUsers()`**
 
 To see all users associated with the current database, use:
 
-```bash
+```mongodb
 db.getUsers()
 ```
 
 Expected output:
 
-```json
-[
-  {
-    "_id": "mongoCourse.jordan",
-    "user": "jordan",
-    "roles": [
-      { "role": "clusterAdmin", "db": "admin" },
-      { "role": "readAnyDatabase", "db": "admin" },
-      "readWrite"
-    ]
-  }
-]
+```mongodb
+{
+  users: [
+    {
+      _id: 'MongoCourse.testing',
+      userId: UUID('ce1ad468-6c8a-4b0a-9bf1-415906014517'),
+      user: 'testing',
+      db: 'MongoCourse',
+      customData: { startDate: ISODate('2025-03-18T18:18:59.343Z') },
+      roles: [
+        { role: 'clusterAdmin', db: 'admin' },
+        { role: 'readAnyDatabase', db: 'admin' },
+        { role: 'readWrite', db: 'MongoCourse' }
+      ],
+      mechanisms: [ 'SCRAM-SHA-1', 'SCRAM-SHA-256' ]
+    }
+  ],
+  ok: 1
+}
 ```
 
-This confirms that our user `jordan` has been successfully created with the specified roles.
+This confirms that our user `testing` has been successfully created with the specified roles.
+
+![terminal output](./03-147_IMG01.png)
 
 ---
 
-## **Deleting a User**
+## **Deleting a User** `.dropUser()`
 
 If you need to remove a user from the database, run:
 
-```bash
+```mongodb
 db.dropUser('jordan')
 ```
 
 Expected output:
 
-```
-true
+```mongodb
+{ ok: 1 }
 ```
 
 To verify, check the list of users again:
@@ -198,6 +228,7 @@ The removed user should no longer appear in the output.
 * [MongoDB Tutorial: ](https://www.mongodb.com/docs/manual/tutorial/manage-users-and-roles/)
 
 ****
+
 ## Video lesson Speech
 
 Just as a reminder of the way you do that, is in the terminal by typing
@@ -211,6 +242,7 @@ mongod
 ```
 mongo
 ```
+
  and you'll have everything up and running just like I have right here and you should have a terminal prompt just like this. 
 
 ![large](./03-147_IMG1.png)
@@ -219,15 +251,15 @@ Now, this is not the regular terminal, this is Mongo's shell. Now if you want to
 
 ```
 show dbs
-
 ```
+
  and sort for databases and then it will bring you all of the databases that you currently have. 
 
 ![large](./03-147_IMG2.png)
 
 Unless you have been working with Mongo you probably have fewer items than these a few of these are ones of other projects that I have.  The way that you can create a new database is to use the `use` word, so I'm going to say 
 
-``` 
+```
 use mongoCourse
 ```
 
@@ -268,8 +300,6 @@ db.getUsers()
  you can see we now only have the one user.
 
 In review what we've done is we've created a database using the `use` command. Then we've seen how you can view all the databases on your system. We saw how you can create users for a specific database and then we saw how we can see all the users that belong and can administer a database and then we saw how we can remove them. 
-
-
 
 ```js
 db.createUser({

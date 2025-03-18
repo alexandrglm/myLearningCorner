@@ -4,11 +4,242 @@ The original guide explains how to install MongoDB for MAC users but,so that for
 
 Additionally, this guide explains how to install MongoDB without it being system-wide, as well as installing it system-wide.   
 
-I recommend the first option.
+I suggest a non system-wide when posible.
 
 ****
 
+# Debian 12 alike
+
+# A)    Mongo-sh system-wide for shell accees + Mongod server/daemon from binaries
+
+1. Add the latest MongoDB sources [from official site](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-debian/):
+
+```bash
+# Importinf .asc/gpg for apt update
+curl -fsSL https://www.mongodb.org/static/pgp/server-8.0.asc | \   sudo gpg -o /usr/share/keyrings/mongodb-server-8.0.gpg \   --dearmor
+```
+
+* Adding to sources (These sources could be mordenized)
+
+```bash
+echo "deb [ signed-by=/usr/share/keyrings/mongodb-server-8.0.gpg ] http://repo.mongodb.org/apt/debian bookworm/mongodb-org/8.0 main" | sudo tee /etc/apt/sources.list.d/mongodb-org-8.0.list
+```
+
+* Getting it
+
+```bash
+sudo apt-get update && sudo apt-get install -y mongodb-org
+```
+
+2. Getting latest MongoDB Community Server bins, **for the required project folder**:
+
+```bash
+curl https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-debian12-8.0.5.tgz
+
+tar -xvz ./mongodb-linux-x86_64-debian12-8.0.5.tgz ./mongodb
+```
+
+3. Setting up the mongod.conf file from our project root folder:
+
+```yaml
+storage:
+    dbPath: ./data/db
+systemLog:
+    destination: file
+    path: ./logs/mongod.log
+    logAppend: true
+net:
+    bindIp: 127.0.0.1
+    port: 27017
+```
+
+4. Starting the Mongod server, in one terminal tab:
+
+```bash
+$ ./mongodb/bin/mongod --config ~/<path-for-the-mongodb-project>/mongod.conf
+```
+
+5. Starting the Mongo shell:
+
+```bash
+$ mongosh
+Current Mongosh Log ID:    *
+Connecting to:        mongodb://*
+Using MongoDB:        8.0.5
+Using Mongosh:        2.4.2
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+
+To help improve our products, anonymous usage data is collected 
+and sent to MongoDB periodically (https://www.mongodb.com/legal/privacy-policy).
+You can opt-out by running the disableTelemetry() command.
+
+------
+   The server generated these startup warnings when booting
+
+test>
+```
+
+***
+
+```markdown
 # Installing MongoDB on Linux
+
+## Install MongoDB Community Edition[](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-debian/#install-mongodb-community-edition "Permalink to this heading")
+
+## [
+
+](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-debian/#install-mongodb-community-edition "Permalink to this heading")
+
+Follow these steps to install MongoDB Community Edition using the `apt` package manager.
+
+1
+
+### Import the public key.[](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-debian/#import-the-public-key. "Permalink to this heading")
+
+### [
+
+](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-debian/#import-the-public-key. "Permalink to this heading")
+
+From a terminal, install `gnupg` and `curl` if they are not already
+available:
+
+
+sudo apt-get install gnupg curl
+
+
+To import the MongoDB public GPG key, run the following command:
+
+
+curl -fsSL https://www.mongodb.org/static/pgp/server-8.0.asc | \   sudo gpg -o /usr/share/keyrings/mongodb-server-8.0.gpg \   --dearmor
+
+
+2
+
+### Create the list file.[](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-debian/#create-the-list-file. "Permalink to this heading")
+
+### [
+
+](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-debian/#create-the-list-file. "Permalink to this heading")
+
+Create the list file for Debian 12 (Bookworm):
+
+
+echo "deb [ signed-by=/usr/share/keyrings/mongodb-server-8.0.gpg ] http://repo.mongodb.org/apt/debian bookworm/mongodb-org/8.0 main" | sudo tee /etc/apt/sources.list.d/mongodb-org-8.0.list
+
+
+3
+
+### Reload the package database.[](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-debian/#reload-the-package-database. "Permalink to this heading")
+
+### [
+
+](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-debian/#reload-the-package-database. "Permalink to this heading")
+
+Issue the following command to reload the local package database:
+
+
+sudo apt-get update
+
+
+4
+
+### Install MongoDB Community Server.[](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-debian/#install-mongodb-community-server. "Permalink to this heading")
+
+### [
+
+](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-debian/#install-mongodb-community-server. "Permalink to this heading")
+
+You can install either the latest stable version of MongoDB or a
+specific version of MongoDB.
+
+To install the latest stable version, issue the following
+
+
+sudo apt-get install -y mongodb-org
+
+
+## Run MongoDB Community Edition[](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-debian/#run-mongodb-community-edition "Permalink to this heading")
+
+## [
+
+](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-debian/#run-mongodb-community-edition "Permalink to this heading")
+
+### ulimit Considerations[](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-debian/#ulimit-considerations "Permalink to this heading")
+
+### [
+
+](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-debian/#ulimit-considerations "Permalink to this heading")
+
+Most Unix-like operating systems limit the system resources that a
+process may use. These limits may negatively impact MongoDB operation,
+and should be adjusted. See [UNIX `ulimit` Settings for Self-Managed Deployments](https://www.mongodb.com/docs/manual/reference/ulimit/) for the recommended
+settings for your platform.
+
+## Note
+
+If the `ulimit` value for number of open files is under `64000`, MongoDB
+generates a startup warning.
+
+### Directories[](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-debian/#directories "Permalink to this heading")
+
+### [
+
+](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-debian/#directories "Permalink to this heading")
+
+By default, a MongoDB instance stores:
+
+- its data files in `/var/lib/mongodb`
+
+- its log files in `/var/log/mongodb`
+
+If you installed via the package manager, these default directories are
+created during the installation.
+
+If you installed manually by downloading the tarballs, you can create
+the directories using `mkdir -p <directory>` or `sudo mkdir -p <directory>` depending on the user that will run MongoDB. (See your
+linux man pages for information on `mkdir` and `sudo`.)
+
+By default, MongoDB runs using the `mongodb` user account. If you
+change the user that runs the MongoDB process, you **must** also modify
+the permission to the `/var/lib/mongodb` and `/var/log/mongodb` directories to give this user access to these directories.
+
+To specify a different log file directory and data file directory, edit
+the [`systemLog.path`](https://www.mongodb.com/docs/manual/reference/configuration-options/#mongodb-setting-systemLog.path) and [`storage.dbPath`](https://www.mongodb.com/docs/manual/reference/configuration-options/#mongodb-setting-storage.dbPath) settings in
+the `/etc/mongod.conf`. Ensure that the user running MongoDB has
+access to these directories.
+
+### Procedure[](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-debian/#procedure "Permalink to this heading")
+
+### [
+
+](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-debian/#procedure "Permalink to this heading")
+
+Follow these steps to run MongoDB Community Edition on your system.
+These instructions assume that you are using the official `mongodb-org` package -- not the unofficial `mongodb` package provided by
+Debian -- and are using the default settings.
+
+**Init System**
+
+To run and manage your [`mongod`](https://www.mongodb.com/docs/manual/reference/program/mongod/#mongodb-binary-bin.mongod) process, you will be using
+your operating system's built-in [init system](https://www.mongodb.com/docs/manual/reference/glossary/#std-term-init-system). Recent versions of
+Linux tend to use **systemd** (which uses the `systemctl` command),
+while older versions of Linux tend to use **System V init** (which uses
+the `service` command).
+
+If you are unsure which init system your platform uses, run the
+following command:
+
+
+ps --no-headers -o comm 1
+
+
+Then select the appropriate tab below based on the result:
+
+- `systemd` - select the **systemd (systemctl)** tab below.
+
+- `init` - select the **System V Init (service)** tab below.
 
 ****
 
@@ -19,24 +250,24 @@ If you want even greater isolation, you can use Docker to run MongoDB in a conta
 This ensures MongoDB doesn’t interact with your system at all.
 
 1. **Install Docker**:
-   
+
    - Follow the official instructions to install Docker: [Install Docker](https://docs.docker.com/engine/install/).
 
 2. **Run MongoDB in a Container**:
-   
+
    - Use the following command to start a MongoDB container:
-     
-     ```bash
+
+     bash
      docker run -d --name mongodb-course -p 27017:27017 -v ~/projects/mongodb-course/data/db:/data/db mongo
-     ```
+
 - This mounts the `~/projects/mongodb-course/data/db` folder to the container for data persistence.
 3. **Connect to the Container**:
-   
+
    - Use the `mongo` shell to connect to the container:
-     
-     ```bash
+
+     bash
      mongo --host 127.0.0.1 --port 27017
-     ```
+
 
 ---
 
@@ -47,26 +278,26 @@ This ensures MongoDB doesn’t interact with your system at all.
 Instead of installing MongoDB via Docker, you can download the binaries and run them directly from a project folder.
 
 1. **Download MongoDB**:
-   
+
    - Go to the [MongoDB Community Download Page](https://www.mongodb.com/try/download/community).
-   
+
    - Select the appropriate version for your Linux distribution and download the `.tgz` file.
 
 2. **Extract the Binaries**:
-   
+
    - Open a terminal and navigate to the folder where you downloaded the `.tgz` file.
-   
+
    - Extract the archive:
-     
-     ```bash
+
+     bash
      tar -xvzf mongodb-linux-x86_64-<version>.tgz
-     ```
-   
+
+
    - Move the extracted folder to your project directory (e.g., `~/projects/mongodb-course`):
-     
-     ```bash
+
+     bash
      mv mongodb-linux-x86_64-<version> ~/projects/mongodb-course/mongodb
-     ```
+
 
 ****
 
@@ -75,25 +306,25 @@ Instead of installing MongoDB via Docker, you can download the binaries and run 
 Now that you have the binaries in your project folder, configure MongoDB to run in an isolated environment.
 
 1. **Create Data and Logs Folders**:
-   
+
    1. MongoDB needs a folder to store data and another for logs. Create these folders inside your project directory:
-      
-      ```bash
+
+      bash
       mkdir -p ~/projects/mongodb-course/data/db
       mkdir -p ~/projects/mongodb-course/logs
-      ```
+
 
 2. **Create a Configuration File**:
-   
+
    1. Create a configuration file (`mongod.conf`) in your project folder:
-      
-      ```bash
+
+      bash
       nano ~/projects/mongodb-course/mongod.conf
-      ```
-   
+
+
    2. Add the following basic configuration:
-      
-      ```bash
+
+      bash
       storage:
         dbPath: /home/<your-username>/projects/mongodb-course/data/db
       systemLog:
@@ -103,8 +334,8 @@ Now that you have the binaries in your project folder, configure MongoDB to run 
       net:
         bindIp: 127.0.0.1
         port: 27017
-      ```
-   
+
+
    3. Save and close the file.
 
 ****
@@ -114,27 +345,27 @@ Now that you have the binaries in your project folder, configure MongoDB to run 
 You can now start MongoDB from your project folder.
 
 1. **Start the MongoDB Server**:
-   
+
    * Navigate to the `bin` folder inside the extracted MongoDB directory:
-     
-     ```bash
+
+     bash
      cd ~/projects/mongodb-course/mongodb/bin
-     ```
-   
+
+
    * Start the MongoDB server using the configuration file:
-     
-     ```bash
+
+     bash
      ./mongod --config ~/projects/mongodb-course/mongod.conf
-     ```
+
 
 2. **Verify MongoDB is Running**:
-   
+
    * Open another terminal and connect to MongoDB using the `mongo` shell:
-     
-     ```bash
+
+     bash
      ./mongo --host 127.0.0.1 --port 27017
-     ```
-   
+
+
    * If the connection is successful, you’ll see the MongoDB shell prompt.
 
 ****
@@ -151,33 +382,33 @@ Now that MongoDB is running, you can use it for your project. Here are some basi
 
 #### **Create a Database**
 
-```bash
+bash
 use mydatabase
-```
+
 
 #### **Create a Collection**
 
-```bash
+bash
 db.createCollection("mycollection")
-```
+
 
 #### **Insert a Document**
 
-```bash
+bash
 db.mycollection.insertOne({ name: "Alice", age: 25 })
-```
+
 
 #### **Query Documents**
 
-```bash
+bash
 db.mycollection.find({ age: { $gt: 20 } })
-```
+
 
 #### **Delete a Database**
 
-```bash
+bash
 db.dropDatabase()
-```
+
 
 ****
 
@@ -185,22 +416,20 @@ db.dropDatabase()
 
 When you’re done with the course, simply delete the project folder to remove MongoDB:
 
-```bash
+bash
 rm -rf ~/projects/mongodb-course
-```
+
 
 If you used Docker, stop and remove the container:
 
-```bash
+bash
 docker stop mongodb-course
 docker rm mongodb-course
-```
+
 
 ****
 
 # C. Via apt, SYSTEM-WIDE (Be careful)
-
-
 
 ### Step 1: Install MongoDB
 
@@ -214,24 +443,24 @@ To install MongoDB, use the package manager of your distribution:
 
 MongoDB stores its data in `/data/db`. You need to create this directory manually:
 
-```bash
+bash
 sudo mkdir -p /data/db
 sudo chown -R `id -un` /data/db
-```
+
 
 ### Step 4: Start MongoDB
 
 To start the MongoDB daemon, run:
 
-```bash
+bash
 mongod
-```
+
 
 You can verify if MongoDB is running by opening a new terminal and typing:  
 
-```bash
+bash
 mongo
-```
+
 
 If everything is set up correctly, this will open the MongoDB shell.
 
@@ -254,17 +483,16 @@ In this guide we're going to walk through how to install and configure Mongo on 
 
 Now if you do not have homebrew installed and  your on a Mac then go to [brew.sh](https://brew.sh/)  and then copy this line of code right here 
 
-```
+
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-```
+
 
 and then open up your terminal and paste it in. So here is the terminal. So if you do not have a brew already installed then you can run it right here and it will go through, it might take a few minutes but it will install and then once you have that you'll be ready to install Mongo. The first command to run will be `brew update`. Now I've already run `brew update` on my system and if you've recently done it then you don't have to either. Brew update will just make sure that you have the latest version of homebrew if you already had it installed.  After that  run `brew install mongodb`.  If you run that then homebrew will go out and  find all the dependencies and build the entire system for you and you will be up and running with it. I already have Mongo on my system so I do not need to run the command but it's a pretty basic command to run. You don't have to be an sudo or anything like that for this specific command. Now after that has run then go and create a data directory. To do this  you're going to type in `mkdir -p /data/db`. 
 
 This is the directory that Mongo needs because that's where it's going to store all of the data and it's going to store it right inside of this directory. So I already have this on my system and the way I can know that is if I type ls and then run it. You can see that I have each one of the collections right here. If you are new to Mongo and you don't have it installed on your system then you need to create that directory. Now another thing that you will have to do is you're going to have to update the permissions on this directory so type in
 
-```
 sudo chown -R `id -un`  /data/db 
-```
+
 
  What that's going to do is it's going to update the permissions for that directory so that you can run all of the various commands and we can actually get going with Mongo. So once you type that you'll have to enter your password in and then you will be good to go. Now I've already run that so I don't need to run that specific command. Once you've gone through all of that the way that you can test to make sure that your system is working is to startup the Mongo. It's called the Mongo demon and so you can type in `mongod` just like that and if you hit return it should start everything up. Now you can open up in a new terminal by typing `command t` and now if I just type `mongo` it's going to open up a mongo shell for me right here and I can get up and running. So if you follow all those commands you'll be able to get Mongo on your system and you can start with the rest of the course. 
 
@@ -272,3 +500,4 @@ sudo chown -R `id -un`  /data/db
 
 - [Updated Installation and Configuration Guide (2023)](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-os-x/)
 - [Installation and Configuration Guide](https://treehouse.github.io/installation-guides/mac/mongo-mac.html)
+```

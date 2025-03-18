@@ -46,28 +46,25 @@ The `find()` method in MongoDB accepts two parameters:
 
 2. **Projection object** - Specifies the fields to include or exclude.
 
-### **Syntax:**
 
-```js
+
+```mongodb
 // Find documents with projection
 
- db.books.find(
-   { name: "Confident Ruby" }, // Query
-   { name: 1, authors: 1, _id: 0 } // Projection
- ).pretty()
-```
+MongoCourse> db.Books.find(
+... { "name" : "El Cerebro Musical" },
+... { "name" : 1, "authors" : 1, "_id" : 0 }
+... )
 
-### **Example Output:**
 
-```json
+
 [
   {
-    "name": "Confident Ruby",
-    "authors": [
-      { "name": "Avdi Grimm" }
-    ]
+    name: 'El Cerebro Musical',
+    authors: [ { name: 'Daniel J. Levitin' } ]
   }
 ]
+
 ```
 
 The projection `{ name: 1, authors: 1, _id: 0 }` specifies that only the `name` and `authors` fields should be returned while excluding `_id`.
@@ -87,7 +84,33 @@ Set the desired fields to `1` (except for `_id`, which is included by default un
 ```js
 // Return only the name and authors fields
 
- db.books.find({}, { name: 1, authors: 1 }).pretty()
+MongoCourse> db.Books.find( {}, { "name" : 1, "authors" : 1 } )
+
+
+
+[
+  {
+    _id: ObjectId('67d9c1555c76fae2cc6b140b'),
+    name: 'El Cerebro Musical',
+    authors: [ { name: 'Daniel J. Levitin' } ]
+  },
+  {
+    _id: ObjectId('67d9cb025c76fae2cc6b140c'),
+    name: 'Tecnofeudalismo',
+    authors: [ { name: 'Yanis Varoufakis' } ]
+  },
+  {
+    _id: ObjectId('67d9cb025c76fae2cc6b140d'),
+    name: 'Pyongyang: A Journey In North Korea',
+    authors: [ { name: 'Guy Delisle' } ]
+  },
+  {
+    _id: ObjectId('67d9da355c76fae2cc6b1410'),
+    name: 'Shenzen: A Travelogue from China',
+    authors: [ { name: 'Guy Delisle' } ]
+  }
+]
+
 ```
 
 ### **2. Excluding Specific Fields**
@@ -97,9 +120,34 @@ Set the fields to `0` to remove them from the results.
 #### **Example:**
 
 ```js
-// Exclude the publishedDate field
+// Exclude the Authors field
 
- db.books.find({}, { publishedDate: 0 }).pretty()
+MongoCourse> db.Books.find( {}, { "authors" : 0 } )
+
+
+[
+  {
+    _id: ObjectId('67d9c1555c76fae2cc6b140b'),
+    name: 'El Cerebro Musical',
+    publishedDate: ISODate('2025-03-18T18:54:13.978Z')
+  },
+  {
+    _id: ObjectId('67d9cb025c76fae2cc6b140c'),
+    name: 'Tecnofeudalismo',
+    publishedDate: ISODate('2024-01-01T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('67d9cb025c76fae2cc6b140d'),
+    name: 'Pyongyang: A Journey In North Korea',
+    publishedDate: ISODate('2003-01-01T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('67d9da355c76fae2cc6b1410'),
+    name: 'Shenzen: A Travelogue from China',
+    publishedDate: ISODate('2000-01-01T00:00:00.000Z')
+  }
+]
+
 ```
 
 ### **Note:**

@@ -1,27 +1,28 @@
 # MODULE 03-150: MongoDB (5)
 
-## Inserting Multiple Documents in MongoDB
+## Inserting Multiple Documents
 
 ---
 
 ## **Index**
 
-1. Understanding Document Insertion
+1. Understanding Document Insertion (2)
 2. The `insertMany()` Method
-3. Example Usage
-4. Return Values and Inserted IDs
-5. 
 
 ---
 
-## **Understanding Document Insertion**
+## **Understanding Document Insertion (2)**
 
-In MongoDB, documents are stored in collections, and each document follows a flexible schema. Inserting data into a collection is one of the most common operations. MongoDB provides different methods to insert documents, including:
+In MongoDB, documents are stored in collections, and each document follows a flexible schema.   
+
+Inserting data into a collection is one of the most common operations. MongoDB provides different methods to insert documents, including:
 
 - **`insertOne()`**: Used for inserting a single document.
 - **`insertMany()`**: Used for inserting multiple documents at once.
 
-In the previous guide, we covered `insertOne()`. Now, we'll focus on `insertMany()`, which allows for batch insertion of documents in an efficient manner.
+In the previous guide, we covered `insertOne()`.   
+
+Now, we'll focus on `insertMany()`, which allows for batch insertion of documents in an efficient manner.
 
 ---
 
@@ -29,15 +30,44 @@ In the previous guide, we covered `insertOne()`. Now, we'll focus on `insertMany
 
 The `insertMany()` method enables bulk insertion of documents into a MongoDB collection. Unlike `insertOne()`, which only takes a single document, `insertMany()` accepts an **array** of documents.
 
-### **Syntax:**
+```mongodb
+# Basic Sintax
 
-```js
- db.collection.insertMany([
+  db.<collection>.insertMany([
     { document1 },
     { document2 },
     { document3 }
  ])
 ```
+
+## **Inserting Multiple Documents - `db.<collection>.insertMany( {...} )`**
+
+To insert multiple records at once, use `insertMany()` with an **array** of JSON objects.
+
+```mongodb
+// Insert multiple book documents - .insertMany())
+
+MongoCourse> db.Books.insertMany([
+...   {
+...     "name": "Tecnofeudalismo",
+...     "publishedDate": new Date("2024-01-01"),
+...     "authors": [
+...       { "name": "Yanis Varoufakis" }
+...     ]
+...   },
+...   {
+...     "name": "Pyongyang: A Journey In North Korea",
+...     "publishedDate": new Date("2003-01-01"),
+...     "authors": [
+...       { "name": "Guy Delisle" }
+...     ]
+...   }
+... ]);
+```
+
+### **Expected Output:**
+
+![MongoDB, .insertMany( {array} )](./03-150_IMG01.png)
 
 ### **Key Points:**
 
@@ -46,63 +76,6 @@ The `insertMany()` method enables bulk insertion of documents into a MongoDB col
 - MongoDB automatically assigns a unique **_id** field to each document if not explicitly provided.
 
 For official documentation, refer to [MongoDB `insertMany()` documentation](https://www.mongodb.com/docs/manual/reference/method/db.collection.insertMany/).
-
----
-
-## **Example Usage**
-
-Let's insert multiple book records into a **books** collection using `insertMany()`:
-
-```js
-db.books.insertMany([
-  {
-    "name": "Confident Ruby",
-    "publishedDate": new Date(),
-    "authors": [
-      { "name": "Avdi Grimm" }
-    ]
-  },
-  {
-    "name": "The War of Art",
-    "publishedDate": new Date(),
-    "authors": [
-      { "name": "Steven Pressfield" }
-    ]
-  },
-  {
-    "name": "Blink",
-    "publishedDate": new Date(),
-    "authors": [
-      { "name": "Malcolm Gladwell" }
-    ]
-  }
-])
-```
-
-This command inserts **three** books into the collection.
-
----
-
-## **Return Values and Inserted IDs**
-
-Upon execution, `insertMany()` returns a confirmation object:
-
-```json
-{
-  "acknowledged": true,
-  "insertedIds": {
-    "0": ObjectId("60c5f3a3b2b8d59e1a56a2b1"),
-    "1": ObjectId("60c5f3a3b2b8d59e1a56a2b2"),
-    "2": ObjectId("60c5f3a3b2b8d59e1a56a2b3")
-  }
-}
-```
-
-### **Key Details:**
-
-- **`acknowledged: true`** → Confirms that the operation was successful.
-- **`insertedIds`** → Provides unique MongoDB ObjectIDs for each document inserted.
-- ObjectIDs are unique and allow efficient document retrieval.
 
 ---
 
@@ -124,8 +97,13 @@ For **very large** insertions, consider breaking them into smaller batches to av
 
 MongoDB does not enforce uniqueness unless explicitly defined using **unique indexes**.
 
-```js
+```mongodb
 db.books.createIndex({ name: 1 }, { unique: true })
+
+
+# Expected Output: name_1
+
+
 ```
 
 This ensures that no two books share the same name.

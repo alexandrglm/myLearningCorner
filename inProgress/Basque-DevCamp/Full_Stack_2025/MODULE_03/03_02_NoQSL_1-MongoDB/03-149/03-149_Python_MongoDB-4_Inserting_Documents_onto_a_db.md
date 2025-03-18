@@ -6,71 +6,80 @@
 
 ## **Index**
 
-1. Understanding MongoDB Documents
+1. Understanding MongoDB Documents (1)
 
 2. Inserting a Single Document
 
-3. Inserting Multiple Documents
-
-4. Handling Flexible Schema
-
-5. 
+3. Handling Flexible Schema
 
 ---
 
 ## **Understanding MongoDB Documents**
 
-MongoDB stores data in **documents**, which are JSON-like objects consisting of key-value pairs. Unlike traditional SQL databases, MongoDB **does not enforce a schema**, allowing documents in the same collection to have different structures.
+MongoDB stores data in **documents**, which are JSON-like objects consisting of key-value pairs.   
+
+Unlike traditional SQL databases, MongoDB **does not enforce a schema**, allowing documents in the same collection to have different structures.
 
 Each document is stored in a **collection**, which functions similarly to tables in relational databases.
 
 ---
 
-## **Inserting a Single Document**
+## **Inserting a Single Document - `db.<collection>.insertOne( {...})`**
 
 To insert a single document into the `books` collection, use `insertOne()`. This function expects a **JSON object**.
 
-```
-// Insert a single book documentdb.books.insertOne({  "name": "OOP Programming",  "publishedDate": new Date(),  "authors": [    { "name": "Jon Snow" },    { "name": "Ned Stark" }  ]})
-```
+```mongodb
+// Insert a single book document - .insertOne()
 
-### **Expected Output:**
-
-```
-{ "acknowledged": true, "insertedId": "ObjectId('...')" }
-```
-
-> **Note:** `ObjectId` is a unique identifier automatically generated for each document.
-
----
-
-## **Inserting Multiple Documents**
-
-To insert multiple records at once, use `insertMany()` with an **array** of JSON objects.
-
-```
-// Insert multiple book documentsdb.books.insertMany([  {    "name": "JavaScript Essentials",    "publishedDate": new Date("2023-01-01"),    "authors": [ { "name": "Alice Johnson" } ]  },  {    "name": "Mastering Databases",    "publishedDate": new Date("2022-05-10"),    "authors": [ { "name": "Bob Smith" }, { "name": "Charlie Brown" } ]  }])
+MongoCourse> db.Books.insertOne(
+... {
+... "name" : "El Cerebro Musical",
+... "publishedDate" : new Date(),
+... "authors" : [ { "name" : "Daniel J. Levitin"} ] 
+... })
+{
 ```
 
 ### **Expected Output:**
 
-```
-{ "acknowledged": true, "insertedIds": [ "ObjectId('...')", "ObjectId('...')" ] }
-```
+![MongoDB, .insertOne() ](./03-149_IMG01.png)
+
+**Note:** `ObjectId` is a unique identifier automatically generated for each document.
 
 ---
+
+****
 
 ## **Handling Flexible Schema**
 
-MongoDB allows **dynamic schema changes**. Documents in the same collection do not need to have identicals structures.
+MongoDB allows **dynamic schema changes**. 
+
+Documents in the same collection do not need to have identicals structures.
+
+⚠️ **In this case, we're going to introduce a new field key type: Published Year**.
+
+> **Caution:** Schema inconsistency can cause issues when querying and managing data.
+
+**This will help us later in creating a framework to manage records (the database), to specify use cases with flexible fields.**
 
 Example:
 
-```
-// Inserting books with different fieldsdb.books.insertMany([  { "name": "Data Science 101", "category": "Technology" },  { "title": "Machine Learning", "publishedYear": 2023 }])
+```mongodb
+db.books.insertMany([
+  {
+    "name": "Data Science 101",
+    "category": "Technology"
+  },
+  {
+    "name": "Machine Learning",
+    "publishedYear": 2023
+  }
+]);
 ```
 
-> **Caution:** Schema inconsistency can cause issues when querying and managing data.
+## Expected Output:
+
+![MongoDB, flexible data schema](./03-149_IMG03.png)
 
 ---
 
