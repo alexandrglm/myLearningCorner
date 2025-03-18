@@ -159,7 +159,7 @@ What will you need?
 
 ![MongoDB Atlas Accounts](./03-146_IMG05.png)
 
-**This means you can create different users, with different permissions, as needed. It is mandatory that you create one, and I recommend NOT using the default username/passwords of your MongoDB account.**
+**This means you can create different users, with different permissions, as needed. It is mandatory that you create one, and I suggest to NOT use the default username/passwords of your MongoDB account.**
 
 
 
