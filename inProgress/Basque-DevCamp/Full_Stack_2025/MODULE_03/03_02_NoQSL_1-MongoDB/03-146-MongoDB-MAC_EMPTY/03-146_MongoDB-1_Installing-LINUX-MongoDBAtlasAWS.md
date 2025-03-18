@@ -1,16 +1,18 @@
 # Module 03 - 146: MongoDB (1)
 
+# MongoDB on Linux + MongoDB Atlas AWS Cluster setup
+
 The original guide explains how to install MongoDB for MAC users but,so that for those Linux users, these steps explains how to set it up.  
 
-Additionally, this guide explains how to install MongoDB without it being system-wide, as well as installing it system-wide.   
+Additionally, this guide explains how to install MongoDB without it being system-wide, as well as installing it system-wide.   I suggest a non system-wide when posible.
 
-I suggest a non system-wide when posible.
+On the other hand, this guide also includes how to set up a free MongoDB Atlas Cluster at AWS (at least while MongoDB allows free accounts for students), to be able to use a remote database or integrate remote MongoDB into our projects.
 
 ****
 
-# Debian 12 alike
+# 1) MongoDB Debian 12 alike setup
 
-# A)    Mongo-sh system-wide for shell accees + Mongod server/daemon from binaries
+## A)    Mongo-sh system-wide for shell access + Mongod server/daemon from binaries
 
 1. Add the latest MongoDB sources [from official site](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-debian/):
 
@@ -80,6 +82,98 @@ You can opt-out by running the disableTelemetry() command.
 
 test>
 ```
+
+# MongoDB Atlas at Amazon AWS Cluster setup
+
+This part of the guide provides an outline on how to set up and connect a MongoDB Atlas cluster on Amazon AWS, for the moment, free of charge.
+
+Once configured, it can be accessed from:
+
+- The local shell in Terminal.
+- The official MongoDB WebGUI framework, from the AWS panel.
+- A webservice like Render (its free plan accepts connecting both services), or in your own back-end of your own server, with the multitude of languages available to develop using Mongo.
+
+**By default, this mini-course will cover Shell access (JavaScript/JSON alike), and Python back-end using PyMongo**.
+
+
+
+****
+
+## General Procedures from AWS side
+
+From: https://www.mongodb.com/docs/atlas/
+
+
+What will you need?
+
+* A MongoDB (free) registered account (https://www.mongodb.com/cloud/atlas/register)
+  
+  ![MongoDB Atlas Account types](./03-146_IMG01.png)
+
+* b
+
+
+
+## What is MongoDB Atlas?
+
+*MongoDB Atlas is a multi-cloud database service by the same people that build MongoDB. Atlas simplifies deploying and managing your databases while offering the versatility you need to build resilient and performant global applications on the cloud providers of your choice.*
+
+
+
+### 1) Deploy a Database
+
+**1.1 Choose a cluster type** : **FREE CLUSTER**
+
+*Play around with a **free cluster**, launch a serverless instance, or define a dedicated cluster configuration for your application.*
+
+![IMG](./03-146_IMG02.png)
+
+*To choose a deployment type, see Database Deployment Types.*
+
+
+
+**1.2 Choose a Cloud Provider and Region:  Amazon AWS @ your nearest location**
+
+*Deploy your database to the same cloud provider and region as your applications to reduce latency and standardize security controls.*
+
+![img](./03-146_IMG03.png)
+
+
+
+### 2)     Secure the Database
+
+**2.1 Add IP Access List Entries**
+
+*Define an IP access list for your cluster.*
+
+**This can include the IPs of your server, or your webservice on Render, Vercel, etc; or, your IP/DynDNS to access from your shell**.
+
+
+![Atlas IP configs](./03-146_IMG04.png)
+
+
+
+**2.2 Manage Database Users**
+
+*Define how your team members and applications authenticate to your database and what data they can access*.
+
+![MongoDB Atlas Accounts](./03-146_IMG05.png)
+
+**This means you can create different users, with different permissions, as needed. It is mandatory that you create one, and I recommend NOT using the default username/passwords of your MongoDB account.**
+
+
+
+### 3)    Connect the Database
+
+**3.1 Choose a Connection Type**
+
+*Connect to your database using the MongoDB Shell, one ofMongoDB's native language drivers, MongoDB Compass, or theMongoDB Connector for BI.*
+
+![img](./03-146_IMG06.png)
+
+**From this point on, everything is created and configured, so that, how you configure and connect your service depends on the use you are going to make of it (Shell, WebGUI, Render/Vercel/etc...).**
+
+
 
 ***
 
