@@ -18,7 +18,7 @@ In MongoDB, documents are stored in collections, and each document follows a fle
 Inserting data into a collection is one of the most common operations. MongoDB provides different methods to insert documents, including:
 
 - **`insertOne()`**: Used for inserting a single document.
-- **`insertMany()`**: Used for inserting multiple documents at once.
+- **`insertMany()`**: Used for inserting multiple documents at once. **This method expects ARRAYS, not set's/objects.**
 
 In the previous guide, we covered `insertOne()`.   
 
@@ -28,7 +28,9 @@ Now, we'll focus on `insertMany()`, which allows for batch insertion of document
 
 ## **The `insertMany()` Method**
 
-The `insertMany()` method enables bulk insertion of documents into a MongoDB collection. Unlike `insertOne()`, which only takes a single document, `insertMany()` accepts an **array** of documents.
+The `insertMany()` method enables bulk insertion of documents into a MongoDB collection.   
+
+Unlike `insertOne()`, which only takes a single document, `insertMany()` accepts an **array** of documents.
 
 ```mongodb
 # Basic Sintax
@@ -48,21 +50,21 @@ To insert multiple records at once, use `insertMany()` with an **array** of JSON
 // Insert multiple book documents - .insertMany())
 
 MongoCourse> db.Books.insertMany([
-...   {
-...     "name": "Tecnofeudalismo",
-...     "publishedDate": new Date("2024-01-01"),
-...     "authors": [
-...       { "name": "Yanis Varoufakis" }
-...     ]
-...   },
-...   {
-...     "name": "Pyongyang: A Journey In North Korea",
-...     "publishedDate": new Date("2003-01-01"),
-...     "authors": [
-...       { "name": "Guy Delisle" }
-...     ]
-...   }
-... ]);
+  {
+    "name": "Tecnofeudalismo",
+    "publishedDate": new Date("2024-01-01"),
+    "authors": [
+      { "name": "Yanis Varoufakis" }
+    ]
+  },
+  {
+    "name": "Pyongyang: A Journey In North Korea",
+    "publishedDate": new Date("2003-01-01"),
+    "authors": [
+      { "name": "Guy Delisle" }
+    ]
+  }
+])
 ```
 
 ### **Expected Output:**
@@ -93,7 +95,7 @@ Although MongoDB is schema-less, maintaining a consistent structure across docum
 
 For **very large** insertions, consider breaking them into smaller batches to avoid excessive memory usage.
 
-### ✅ **Avoid Duplicate Entries**
+### ✅ **Avoid Duplicate Entries passing Documents, not arrays**
 
 MongoDB does not enforce uniqueness unless explicitly defined using **unique indexes**.
 
@@ -102,8 +104,6 @@ db.books.createIndex({ name: 1 }, { unique: true })
 
 
 # Expected Output: name_1
-
-
 ```
 
 This ensures that no two books share the same name.

@@ -8,17 +8,15 @@
 
 1. Understanding Document Deletion in MongoDB
 
-2. Using the `remove()` Method
+2. The deprecated, but useful, `.remove()` Method
 
-3. Deleting a Specific Document
+3. Deleting a Specific Document - `.deleteOne( {...} )`
 
-4. Deleting Multiple Documents
+4. Deleting Multiple Documents - `.deleteMany( [array] )`
 
 5. MongoDB vs SQL: Delete Queries
 
 ---
-
-
 
 So far, we have explored various methods for inserting and querying documents in MongoDB.   
 
@@ -30,11 +28,11 @@ However, managing a database also involves removing unwanted or obsolete documen
 
 MongoDB provides multiple ways to delete documents:
 
-- `**remove()**` **(Deprecated)** – Previously used to delete documents (replaced by `deleteOne()` and `deleteMany()`).
+- `remove()` **(Deprecated)** – Previously used to delete documents (replaced by `deleteOne()` and `deleteMany()`).
 
-- `**deleteOne()**` – Removes a single document matching a query.
+- `deleteOne( {...} )` – Removes a single document matching a query.
 
-- `**deleteMany()**` – Removes all documents that match a given query.
+- `deleteMany( [array] )` – Removes all documents that match a given query.
 
 Using the appropriate method ensures that only the intended documents are removed while preserving database integrity.
 
@@ -44,15 +42,20 @@ Using the appropriate method ensures that only the intended documents are remove
 
 > ⚠️ **Note:** The `remove()` method is deprecated and has been replaced by `deleteOne()` and `deleteMany()`. However, we include it here for historical reference.
 
-### **Syntax:**
+ 
 
-```js
+```mongodb
 // Remove all documents that match the query
- db.books.remove({ name: "OOP Programming" })
+
+db.books.remove({ name: "Machine Learning" })
 
 // Remove only one document that matches the query
- db.books.remove({ name: "OOP Programming" }, 1)
+db.Books.remove({ name: "Data Science 101" }, 1)
 ```
+
+![img remove, deprecated, but useful](./03-155_IMG01.png)
+
+
 
 ---
 

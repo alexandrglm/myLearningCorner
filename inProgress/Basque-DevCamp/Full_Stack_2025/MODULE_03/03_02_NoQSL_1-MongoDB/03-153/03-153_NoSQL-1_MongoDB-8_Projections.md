@@ -46,16 +46,13 @@ The `find()` method in MongoDB accepts two parameters:
 
 2. **Projection object** - Specifies the fields to include or exclude.
 
-
-
 ```mongodb
 // Find documents with projection
 
 MongoCourse> db.Books.find(
-... { "name" : "El Cerebro Musical" },
-... { "name" : 1, "authors" : 1, "_id" : 0 }
-... )
-
+{ "name" : "El Cerebro Musical" },
+{ "name" : 1, "authors" : 1, "_id" : 0 }
+)
 
 
 [
@@ -64,7 +61,6 @@ MongoCourse> db.Books.find(
     authors: [ { name: 'Daniel J. Levitin' } ]
   }
 ]
-
 ```
 
 The projection `{ name: 1, authors: 1, _id: 0 }` specifies that only the `name` and `authors` fields should be returned while excluding `_id`.
@@ -110,8 +106,13 @@ MongoCourse> db.Books.find( {}, { "name" : 1, "authors" : 1 } )
     authors: [ { name: 'Guy Delisle' } ]
   }
 ]
-
 ```
+
+
+
+![img](./03-153_IMG01.png)
+
+
 
 ### **2. Excluding Specific Fields**
 
@@ -147,14 +148,19 @@ MongoCourse> db.Books.find( {}, { "authors" : 0 } )
     publishedDate: ISODate('2000-01-01T00:00:00.000Z')
   }
 ]
-
 ```
-
-### **Note:**
 
 - You **cannot mix** inclusion (`1`) and exclusion (`0`) in the same query, **except for** `**_id**`.
 
 - If no projection is specified, all fields are returned by default.
+
+
+
+![img](./03-153_IMG02.png)
+
+### 
+
+- 
 
 ---
 

@@ -11,10 +11,11 @@
 3. Querying for Documents Where a Field Exists
 4. Querying for Documents Where a Field Does Not Exist
 
-
 ---
 
-In MongoDB, documents within the same collection do not have to follow a fixed schema, meaning that some documents may contain fields that others do not. As a result, it is often necessary to check whether a specific field exists in a document before processing it.
+In MongoDB, documents within the same collection do not have to follow a fixed schema, meaning that some documents may contain fields that others do not.   
+
+As a result, it is often necessary to check whether a specific field exists in a document before processing it.
 
 This guide explores how to use the `$exists` operator to determine whether a field is present in a MongoDB document.
 
@@ -24,7 +25,7 @@ This guide explores how to use the `$exists` operator to determine whether a fie
 
 Since MongoDB allows flexible document structures, some documents may have fields that others do not. Consider the following example:
 
-- Some books in a `books` collection may have a `reviews` field indicating the number of reviews, while others do not.
+- Some books in a `Books` collection may have a `reviews` field indicating the number of reviews, while others do not.
 - We may need to filter documents based on whether they contain this field.
 
 Using the `$exists` operator, we can efficiently retrieve only those documents that have (or do not have) a particular field.
@@ -37,7 +38,7 @@ The `$exists` operator is a MongoDB query operator used to check whether a field
 
 ### **Syntax:**
 
-```js
+```mongodb
 { field: { $exists: <boolean> } }
 ```
 
@@ -50,24 +51,16 @@ The `$exists` operator is a MongoDB query operator used to check whether a field
 
 To find all books that include a `reviews` field, use the following query:
 
-```js
-db.books.find({ reviews: { $exists: true } })
+```mongodb
+Atlas atlas-terube-shard-0 [primary] test> db.Books.find(
+... { reviews: { $exists: true } }
+)
+
+// (NO RESPONSE)
+
 ```
 
-### **Example Output:**
 
-```json
-[
-  {
-    "name": "Deep Work: Rules for Focused Success in a Distracted World",
-    "publishedDate": "2024-03-10T00:00:00Z",
-    "reviews": 100,
-    "authors": [
-      { "name": "Cal Newport" }
-    ]
-  }
-]
-```
 
 This query retrieves only the documents that include the `reviews` field.
 
@@ -77,30 +70,62 @@ This query retrieves only the documents that include the `reviews` field.
 
 To find books that do **not** include a `reviews` field, use:
 
-```js
-db.books.find({ reviews: { $exists: false } })
-```
+```mongodb
+Atlas atlas-terube-shard-0 [primary] test> db.Books.find(
+... { reviews: { $exists: false } }
+)
 
-### **Example Output:**
-
-```json
+// However, as 'reviews' field does not exist, it returns:
 [
   {
-    "name": "The War of Art",
-    "publishedDate": "2024-03-10T00:00:00Z",
-    "authors": [
-      { "name": "Steven Pressfield" }
+    _id: ObjectId('67da1b7d040ae61e086b140b'),
+    name: 'El Cerebro Musical',
+    publishedDate: ISODate('2019-06-13T00:00:00.000Z'),
+    authors: [ { name: 'Daniel J. Levitin' } ]
+  },
+  {
+    _id: ObjectId('67da1c9ddaeedc3d506b140b'),
+    name: 'Tecnofeudalismo',
+    publishedDate: ISODate('2024-01-01T00:00:00.000Z'),
+    authors: [ { name: 'Yanis Varoufakis' } ]
+  },
+  {
+    _id: ObjectId('67da1c9ddaeedc3d506b140c'),
+    name: 'Pyongyang: A Journey In North Korea',
+    publishedDate: ISODate('2003-01-01T00:00:00.000Z'),
+    authors: [ { name: 'Guy Delisle' } ]
+  },
+  {
+    _id: ObjectId('67da207de76d6e52966b140b'),
+    name: 'Shenzen: A Travelogue from China',
+    publishedDate: ISODate('2000-01-01T00:00:00.000Z'),
+    authors: [ { name: 'Guy Delisle' } ]
+  },
+  {
+    _id: ObjectId('67da257ce76d6e52966b140c'),
+    name: '1984',
+    publishedDate: ISODate('1949-06-08T00:00:00.000Z'),
+    authors: [ { name: 'George Orwell' }, { name: 'Eric Arthur Blair' } ]
+  },
+  {
+    _id: ObjectId('67da278be76d6e52966b140d'),
+    name: 'Blink',
+    publishedDate: '2024-03-10T10:00:00Z',
+    authors: [
+      { name: 'Malcolm Gladwell', active: true },
+      { name: 'Ghost Writer', active: true }
     ]
   },
   {
-    "name": "Blink",
-    "publishedDate": "2024-03-10T00:00:00Z",
-    "authors": [
-      { "name": "Malcolm Gladwell" }
-    ]
+    _id: ObjectId('67da2962e76d6e52966b140e'),
+    name: 'Deep Work: Rules for Focused Success in a Distracted World',
+    publishedDate: ISODate('2025-03-19T02:18:10.599Z'),
+    authors: [ { name: 'Cal Newport' } ]
   }
 ]
 ```
+
+
 
 This query filters out all books that do contain the `reviews` field.
 
@@ -180,4 +205,3 @@ db.books.insert(
 db.books.find({ reviews: { $exists: true } })
 db.books.find({ reviews: { $exists: false } })
 ```
-

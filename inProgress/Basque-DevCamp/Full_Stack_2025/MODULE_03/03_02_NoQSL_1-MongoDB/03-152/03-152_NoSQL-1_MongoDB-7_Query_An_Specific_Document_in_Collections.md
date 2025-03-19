@@ -38,7 +38,6 @@ MongoCourse> db.Books.find({ name: "Tecnofeudalismo" })
     authors: [ { name: 'Yanis Varoufakis' } ]
   }
 ]
-
 ```
 
 This query returns only documents where the `name` field matches "Tecnofeudalismo".
@@ -69,7 +68,6 @@ MongoCourse> db.Books.find({ "authors.name" : "Guy Delisle"  })
     authors: [ { name: 'Guy Delisle' } ]
   }
 ]
-
 ```
 
 If multiple books exist with the same key or key.subkey (**use .dotNotation**) the result will contain all of them.   
@@ -89,10 +87,11 @@ MongoCourse> db.Books.findOne({ "authors.name" : "Guy Delisle"  })
   publishedDate: ISODate('2003-01-01T00:00:00.000Z'),
   authors: [ { name: 'Guy Delisle' } ]
 }
-
 ```
 
 This ensures that only **one** document is returned, even if multiple matches exist.
+
+![img](./03-152_IMG02.png)
 
 ---
 
