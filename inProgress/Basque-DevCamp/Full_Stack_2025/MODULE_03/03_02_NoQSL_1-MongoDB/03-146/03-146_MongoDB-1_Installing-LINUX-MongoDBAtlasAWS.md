@@ -4,9 +4,11 @@
 
 The original guide explains how to install MongoDB for MAC users but,so that for those Linux users, these steps explains how to set it up.  
 
-Additionally, this guide explains how to install MongoDB without it being system-wide, as well as installing it system-wide.   I suggest a non system-wide when posible.
+Additionally, this guide explains how to install MongoDB without it being system-wide, as well as installing it system-wide. It's suggested to use a non system-wide when posible.
 
 On the other hand, this guide also includes how to set up a free MongoDB Atlas Cluster at AWS (at least while MongoDB allows free accounts for students), to be able to use a remote database or integrate remote MongoDB into our projects.
+
+Finally, a default connection to Atlas@AWS will be performed and explained.
 
 ****
 
@@ -83,11 +85,13 @@ You can opt-out by running the disableTelemetry() command.
 test>
 ```
 
-# MongoDB Atlas at Amazon AWS Cluster setup
+****
+
+# 2) MongoDB Atlas at Amazon AWS Cluster setup
 
 This part of the guide provides an outline on how to set up and connect a MongoDB Atlas cluster on Amazon AWS, for the moment, free of charge.
 
-Once configured, it can be accessed from:
+Once configured, this action can replace the "Mongod" daemon installed system-wide as it can be accessed through a wide range of methods:
 
 - The local shell in Terminal.
 - The official MongoDB WebGUI framework, from the AWS panel.
@@ -95,14 +99,11 @@ Once configured, it can be accessed from:
 
 **By default, this mini-course will cover Shell access (JavaScript/JSON alike), and Python back-end using PyMongo**.
 
-
-
 ****
 
 ## General Procedures from AWS side
 
 From: https://www.mongodb.com/docs/atlas/
-
 
 What will you need?
 
@@ -112,13 +113,9 @@ What will you need?
 
 * b
 
-
-
 ## What is MongoDB Atlas?
 
 *MongoDB Atlas is a multi-cloud database service by the same people that build MongoDB. Atlas simplifies deploying and managing your databases while offering the versatility you need to build resilient and performant global applications on the cloud providers of your choice.*
-
-
 
 ### 1) Deploy a Database
 
@@ -130,15 +127,11 @@ What will you need?
 
 *To choose a deployment type, see Database Deployment Types.*
 
-
-
 **1.2 Choose a Cloud Provider and Region:  Amazon AWS @ your nearest location**
 
 *Deploy your database to the same cloud provider and region as your applications to reduce latency and standardize security controls.*
 
 ![img](./03-146_IMG03.png)
-
-
 
 ### 2)     Secure the Database
 
@@ -148,10 +141,7 @@ What will you need?
 
 **This can include the IPs of your server, or your webservice on Render, Vercel, etc; or, your IP/DynDNS to access from your shell**.
 
-
 ![Atlas IP configs](./03-146_IMG04.png)
-
-
 
 **2.2 Manage Database Users**
 
@@ -160,8 +150,6 @@ What will you need?
 ![MongoDB Atlas Accounts](./03-146_IMG05.png)
 
 **This means you can create different users, with different permissions, as needed. It is mandatory that you create one, and I suggest to NOT use the default username/passwords of your MongoDB account.**
-
-
 
 ### 3)    Connect the Database
 
@@ -172,6 +160,69 @@ What will you need?
 ![img](./03-146_IMG06.png)
 
 **From this point on, everything is created and configured, so that, how you configure and connect your service depends on the use you are going to make of it (Shell, WebGUI, Render/Vercel/etc...).**
+
+****
+
+# 3) Connecting to MongoDB Atlas via shell
+
+MongoDB Atlas provides a straightforward Connections/Access setup.  
+
+To access it via the local shell, we need at least `mongosh` installed (via sources, via apt install, ....).  
+
+We will create a .conf file and a shell script for quick access.  
+
+Remember to store "secrets" (access paths, username/password, etc.) in a safe place.
+
+1. **Via shell script `./atlas_login.sh`**
+   
+```bash
+   #!/bin/bash
+   
+   echo "Atlas user:  "
+   read user
+   echo "Atlas Pass: "
+   read -s password
+   uri="mongodb://<your_FULL_mongoDB_path>"
+   
+   # 
+   mongosh "$uri" --apiVersion 1 \
+   --tls  \
+   --authenticationDatabase admin \
+   --username "$user" --password "$password"
+```
+   
+   Expected Output:
+   
+```bash
+   $ bash ./mongo_shell.sh 
+   Atlas user:  
+   <user>
+   Atlas Pass: 
+   Current Mongosh Log ID:    *
+   Connecting to:        mongodb://
+   
+   Using MongoDB:        8.0.5 (API Version 1)
+   Using Mongosh:        2.4.2
+   
+   For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+   
+   Atlas * [primary] test> 
+```
+
+
+Since here, you are enable to start creating, configuring, handling, your database.
+
+
+
+
+
+****
+
+[database – Database level operations - PyMongo 4.11 documentation](https://pymongo.readthedocs.io/en/4.11/api/pymongo/database.html#pymongo.database.Database.create_collection)
+
+
+
+
 
 
 
@@ -345,22 +396,22 @@ This ensures MongoDB doesn’t interact with your system at all.
 
 1. **Install Docker**:
 
-   - Follow the official instructions to install Docker: [Install Docker](https://docs.docker.com/engine/install/).
+- Follow the official instructions to install Docker: [Install Docker](https://docs.docker.com/engine/install/).
 
 2. **Run MongoDB in a Container**:
 
-   - Use the following command to start a MongoDB container:
+- Use the following command to start a MongoDB container:
 
-     bash
-     docker run -d --name mongodb-course -p 27017:27017 -v ~/projects/mongodb-course/data/db:/data/db mongo
+  bash
+  docker run -d --name mongodb-course -p 27017:27017 -v ~/projects/mongodb-course/data/db:/data/db mongo
 
 - This mounts the `~/projects/mongodb-course/data/db` folder to the container for data persistence.
 3. **Connect to the Container**:
 
-   - Use the `mongo` shell to connect to the container:
+- Use the `mongo` shell to connect to the container:
 
-     bash
-     mongo --host 127.0.0.1 --port 27017
+  bash
+  mongo --host 127.0.0.1 --port 27017
 
 
 ---
@@ -373,24 +424,24 @@ Instead of installing MongoDB via Docker, you can download the binaries and run 
 
 1. **Download MongoDB**:
 
-   - Go to the [MongoDB Community Download Page](https://www.mongodb.com/try/download/community).
+- Go to the [MongoDB Community Download Page](https://www.mongodb.com/try/download/community).
 
-   - Select the appropriate version for your Linux distribution and download the `.tgz` file.
+- Select the appropriate version for your Linux distribution and download the `.tgz` file.
 
 2. **Extract the Binaries**:
 
-   - Open a terminal and navigate to the folder where you downloaded the `.tgz` file.
+- Open a terminal and navigate to the folder where you downloaded the `.tgz` file.
 
-   - Extract the archive:
+- Extract the archive:
 
-     bash
-     tar -xvzf mongodb-linux-x86_64-<version>.tgz
+  bash
+  tar -xvzf mongodb-linux-x86_64-<version>.tgz
 
 
-   - Move the extracted folder to your project directory (e.g., `~/projects/mongodb-course`):
+- Move the extracted folder to your project directory (e.g., `~/projects/mongodb-course`):
 
-     bash
-     mv mongodb-linux-x86_64-<version> ~/projects/mongodb-course/mongodb
+  bash
+  mv mongodb-linux-x86_64-<version> ~/projects/mongodb-course/mongodb
 
 
 ****
@@ -401,36 +452,36 @@ Now that you have the binaries in your project folder, configure MongoDB to run 
 
 1. **Create Data and Logs Folders**:
 
-   1. MongoDB needs a folder to store data and another for logs. Create these folders inside your project directory:
+1. MongoDB needs a folder to store data and another for logs. Create these folders inside your project directory:
 
-      bash
-      mkdir -p ~/projects/mongodb-course/data/db
-      mkdir -p ~/projects/mongodb-course/logs
+   bash
+   mkdir -p ~/projects/mongodb-course/data/db
+   mkdir -p ~/projects/mongodb-course/logs
 
 
 2. **Create a Configuration File**:
 
-   1. Create a configuration file (`mongod.conf`) in your project folder:
+1. Create a configuration file (`mongod.conf`) in your project folder:
 
-      bash
-      nano ~/projects/mongodb-course/mongod.conf
-
-
-   2. Add the following basic configuration:
-
-      bash
-      storage:
-        dbPath: /home/<your-username>/projects/mongodb-course/data/db
-      systemLog:
-        destination: file
-        path: /home/<your-username>/projects/mongodb-course/logs/mongod.log
-        logAppend: true
-      net:
-        bindIp: 127.0.0.1
-        port: 27017
+   bash
+   nano ~/projects/mongodb-course/mongod.conf
 
 
-   3. Save and close the file.
+2. Add the following basic configuration:
+
+   bash
+   storage:
+     dbPath: /home/<your-username>/projects/mongodb-course/data/db
+   systemLog:
+     destination: file
+     path: /home/<your-username>/projects/mongodb-course/logs/mongod.log
+     logAppend: true
+   net:
+     bindIp: 127.0.0.1
+     port: 27017
+
+
+3. Save and close the file.
 
 ****
 
@@ -440,27 +491,27 @@ You can now start MongoDB from your project folder.
 
 1. **Start the MongoDB Server**:
 
-   * Navigate to the `bin` folder inside the extracted MongoDB directory:
+* Navigate to the `bin` folder inside the extracted MongoDB directory:
 
-     bash
-     cd ~/projects/mongodb-course/mongodb/bin
+  bash
+  cd ~/projects/mongodb-course/mongodb/bin
 
 
-   * Start the MongoDB server using the configuration file:
+* Start the MongoDB server using the configuration file:
 
-     bash
-     ./mongod --config ~/projects/mongodb-course/mongod.conf
+  bash
+  ./mongod --config ~/projects/mongodb-course/mongod.conf
 
 
 2. **Verify MongoDB is Running**:
 
-   * Open another terminal and connect to MongoDB using the `mongo` shell:
+* Open another terminal and connect to MongoDB using the `mongo` shell:
 
-     bash
-     ./mongo --host 127.0.0.1 --port 27017
+  bash
+  ./mongo --host 127.0.0.1 --port 27017
 
 
-   * If the connection is successful, you’ll see the MongoDB shell prompt.
+* If the connection is successful, you’ll see the MongoDB shell prompt.
 
 ****
 

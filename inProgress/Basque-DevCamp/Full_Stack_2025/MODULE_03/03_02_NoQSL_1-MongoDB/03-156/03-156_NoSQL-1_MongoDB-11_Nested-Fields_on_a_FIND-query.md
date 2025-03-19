@@ -14,11 +14,76 @@
 
 4. MongoDB vs SQL: Nested Queries
 
+****
+
+Actual Database:
+
+```mongodb
+Atlas atlas-terube-shard-0 [primary] test> db.Books.insertOne(
+... {
+...     "name": "Blink",
+...     "publishedDate": "2024-03-10T10:00:00Z",
+...     "authors": [
+...         { "name": "Malcolm Gladwell", "active": true },
+...         { "name": "Ghost Writer", "active": true }
+...     ]
+... }
+... )
+{
+  acknowledged: true,
+  insertedId: ObjectId('67da278be76d6e52966b140d')
+}
+Atlas atlas-terube-shard-0 [primary] test> db.Books.find()
+[
+  {
+    _id: ObjectId('67da1b7d040ae61e086b140b'),
+    name: 'El Cerebro Musical',
+    publishedDate: ISODate('2019-06-13T00:00:00.000Z'),
+    authors: [ { name: 'Daniel J. Levitin' } ]
+  },
+  {
+    _id: ObjectId('67da1c9ddaeedc3d506b140b'),
+    name: 'Tecnofeudalismo',
+    publishedDate: ISODate('2024-01-01T00:00:00.000Z'),
+    authors: [ { name: 'Yanis Varoufakis' } ]
+  },
+  {
+    _id: ObjectId('67da1c9ddaeedc3d506b140c'),
+    name: 'Pyongyang: A Journey In North Korea',
+    publishedDate: ISODate('2003-01-01T00:00:00.000Z'),
+    authors: [ { name: 'Guy Delisle' } ]
+  },
+  {
+    _id: ObjectId('67da207de76d6e52966b140b'),
+    name: 'Shenzen: A Travelogue from China',
+    publishedDate: ISODate('2000-01-01T00:00:00.000Z'),
+    authors: [ { name: 'Guy Delisle' } ]
+  },
+  {
+    _id: ObjectId('67da257ce76d6e52966b140c'),
+    name: '1984',
+    publishedDate: ISODate('1949-06-08T00:00:00.000Z'),
+    authors: [ { name: 'George Orwell' }, { name: 'Eric Arthur Blair' } ]
+  },
+  {
+    _id: ObjectId('67da278be76d6e52966b140d'),
+    name: 'Blink',
+    publishedDate: '2024-03-10T10:00:00Z',
+    authors: [
+      { name: 'Malcolm Gladwell', active: true },
+      { name: 'Ghost Writer', active: true }
+    ]
+  }
+]
+```
+
 ---
 
 MongoDB provides a flexible schema design that allows documents to have **nested fields** and **embedded arrays**.   
 
-This structure is beneficial when working with complex data relationships. However, retrieving specific data from these nested structures requires special querying techniques.  
+This structure is beneficial when working with complex data relationships.   
+
+However, **retrieving specific data from these nested structures requires special querying techniques**.  
 
 In this guide, we will explore how to query **specific fields inside nested objects** using projections in MongoDB.  
 
@@ -30,7 +95,7 @@ In MongoDB, documents can contain **nested objects** or **arrays of objects**. T
 
 ### **Example Document with Nested Fields:**
 
-```json
+```mongodb
 {
     "name": "Blink",
     "publishedDate": "2024-03-10T10:00:00Z",
@@ -57,25 +122,23 @@ We can use the `find()` method to retrieve only specific **nested fields** from 
 
 ### **Syntax:**
 
-```js
+```mongodb
 // Find books where name is "Blink" and return only the authors' names  
 
-db.books.find(
-  { name: "Blink" },
-  { "authors.name": 1 }
-).pretty()
-```
+Atlas atlas-terube-shard-0 [primary] test> db.Books.find(
+... { name: "Blink" },
+... { "authors.name": 1 }
+... )
 
-### **Example Output:**
 
-```json
-{
-    "_id": ObjectId("65f9c3e45a2b1e4d8e52f654"),
-    "authors": [
-        { "name": "Malcolm Gladwell" },
-        { "name": "Ghost Writer" }
-    ]
-}
+
+
+[
+  {
+    _id: ObjectId('67da278be76d6e52966b140d'),
+    authors: [ { name: 'Malcolm Gladwell' }, { name: 'Ghost Writer' } ]
+  }
+]
 ```
 
 Here, only the `name` field inside the `authors` array is returned, **excluding** the `active` field.
@@ -88,32 +151,26 @@ Projections allow us to control which **nested fields** are included or excluded
 
 ### **Example:** Excluding `_id` and Returning Only Specific Fields
 
-```js
+```mongodb
 // Return only the book name and authors' names, excluding _id  
 
-db.books.find(
-  { name: "Blink" },
+Atlas atlas-terube-shard-0 [primary] test> db.Books.find(
+...   { name: "Blink" },
+...   {
+...     _id: 0,
+...     name: 1,
+...     "authors.name": 1
+...   }
+... )
+
+
+[
   {
-    _id: 0,
-    name: 1,
-    "authors.name": 1
+    name: 'Blink',
+    authors: [ { name: 'Malcolm Gladwell' }, { name: 'Ghost Writer' } ]
   }
-).pretty()
+]
 ```
-
-### **Example Output:**
-
-```json
-{
-    "name": "Blink",
-    "authors": [
-        { "name": "Malcolm Gladwell" },
-        { "name": "Ghost Writer" }
-    ]
-}
-```
-
-### **Key Notes:**
 
 - `_id: 0` explicitly **excludes** the `_id` field.
 
@@ -122,6 +179,10 @@ db.books.find(
 - `"authors.name": 1` retrieves only the `name` field inside the `authors` array.
 
 ---
+
+![img](./03-156_IMG01.png)
+
+****
 
 ## **MongoDB vs SQL: Nested Queries**
 

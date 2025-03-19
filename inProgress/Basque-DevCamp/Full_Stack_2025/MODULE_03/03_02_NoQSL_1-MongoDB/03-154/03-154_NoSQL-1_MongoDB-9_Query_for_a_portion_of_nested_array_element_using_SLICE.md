@@ -14,19 +14,68 @@
 
 4. MongoDB vs SQL: Handling Nested Arrays
 
+
+
+****
+
+Actual database:
+
+```mongodb
+test> db.Books.find()
+[
+  {
+    _id: ObjectId('67da1b7d040ae61e086b140b'),
+    name: 'El Cerebro Musical',
+    publishedDate: ISODate('2019-06-13T00:00:00.000Z'),
+    authors: [ { name: 'Daniel J. Levitin' } ]
+  },
+  {
+    _id: ObjectId('67da1c9ddaeedc3d506b140b'),
+    name: 'Tecnofeudalismo',
+    publishedDate: ISODate('2024-01-01T00:00:00.000Z'),
+    authors: [ { name: 'Yanis Varoufakis' } ]
+  },
+  {
+    _id: ObjectId('67da1c9ddaeedc3d506b140c'),
+    name: 'Pyongyang: A Journey In North Korea',
+    publishedDate: ISODate('2003-01-01T00:00:00.000Z'),
+    authors: [ { name: 'Guy Delisle' } ]
+  },
+  {
+    _id: ObjectId('67da207de76d6e52966b140b'),
+    name: 'Shenzen: A Travelogue from China',
+    publishedDate: ISODate('2000-01-01T00:00:00.000Z'),
+    authors: [ { name: 'Guy Delisle' } ]
+  },
+  {
+    _id: ObjectId('67da257ce76d6e52966b140c'),
+    name: '1984',
+    publishedDate: ISODate('1949-06-08T00:00:00.000Z'),
+    authors: [ { name: 'George Orwell' }, { name: 'Eric Arthur Blair' } ]
+  }
+]
+
+```
+
 ---
 
-When working with MongoDB, we often deal with **nested arrays** inside documents. By default, querying a document with an array field will return all elements of that array. However, there are cases where we may only want to retrieve a portion of the array rather than the full dataset.
+When working with MongoDB, we often deal with **nested arrays** inside documents.   
 
-MongoDB provides the `**$slice**` operator to limit the number of elements returned from an array field. This guide will explain how to use `$slice` to refine query results efficiently.
+By default, querying a document with an array field will return all elements of that array.   
+
+**However, there are cases where we may only want to retrieve a portion of the array rather than the full dataset.**
+
+MongoDB provides the `$slice` operator to limit the number of elements returned from an array field.   
+
+This guide will explain how to use `$slice` to refine query results efficiently.
 
 ---
 
-## **Understanding the** `**$slice**` **Operator**
+## **Understanding the** `$slice` **Operator**
 
 The `$slice` operator allows retrieving a subset of an array field when querying documents. It is used within the **projection object** of the `find()` method.
 
-### **Key Features of** `**$slice**`**:**
+
 
 - Limits the number of array elements returned.
 
@@ -36,32 +85,37 @@ The `$slice` operator allows retrieving a subset of an array field when querying
 
 ---
 
-## **Using** `**$slice**` **in Queries**
+## **Using** `$slice` **in Queries**
 
 The `$slice` operator is used within the projection part of the `find()` method.
 
-### **Syntax:**
-
-```js
+```mongodb
 // Retrieve only the first N elements of an array field
 
  db.books.find(
-   { name: "Blink" }, // Query condition
+   { name: "1984" }, // Query condition
    { authors: { $slice: 1 } } // Projection using `$slice`
- ).pretty()
+ )
 ```
 
 ### **Example Document:**
 
-```json
-ç{
-  "name": "Blink",
-  "publishedDate": "2023-01-01T00:00:00Z",
-  "authors": [
-    { "name": "Malcolm Gladwell" },
-    { "name": "Ghost Writer" }
-  ]
-}
+```mongodb
+
+Atlas atlas-terube-shard-0 [primary] test> db.Books.find(
+... { name : '1984'},
+... { authors : { $slice: 1  } }
+... )
+[
+  {
+    _id: ObjectId('67da257ce76d6e52966b140c'),
+    name: '1984',
+    publishedDate: ISODate('1949-06-08T00:00:00.000Z'),
+    authors: [ { name: 'George Orwell' } ]
+  }
+]
+
+
 ```
 
 The above query will return only the **first author** from the `authors` array.
@@ -73,35 +127,61 @@ The above query will return only the **first author** from the `authors` array.
 ### **Retrieving the First Element**
 
 ```js
-// Return only the first author
+// Return only the FIRST author value
 
  db.books.find(
    { name: "Blink" },
    { authors: { $slice: 1 } }
- ).pretty()
+ )
 ```
 
 ### **Retrieving the Last Element**
 
-```js
+```mongodb
 // Return only the last author
 
  db.books.find(
-   { name: "Blink" },
+   { name: "1984" },
    { authors: { $slice: -1 } }
- ).pretty()
+ )
+
+
+[
+  {
+    _id: ObjectId('67da257ce76d6e52966b140c'),
+    name: '1984',
+    publishedDate: ISODate('1949-06-08T00:00:00.000Z'),
+    authors: [ { name: 'Eric Arthur Blair' } ]
+  }
+]
+
 ```
 
 ### **Retrieving Multiple Elements from the Start**
 
-```js
-// Return the first two authors
+```mongodb
+// Return the first two element
 
  db.books.find(
-   { name: "Blink" },
+   { name: "1984" },
    { authors: { $slice: 2 } }
- ).pretty()
+ )
+
+
+[
+  {
+    _id: ObjectId('67da257ce76d6e52966b140c'),
+    name: '1984',
+    publishedDate: ISODate('1949-06-08T00:00:00.000Z'),
+    authors: [ { name: 'George Orwell' }, { name: 'Eric Arthur Blair' } ]
+  }
+]
+
 ```
+
+
+
+![img](./03-154_IMG03.png)
 
 ---
 

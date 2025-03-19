@@ -299,26 +299,31 @@ MongoCourse> db.Books.countDocuments()
 To count books, for example, from published after a specific date:
 
 ```mongodb
-MongoCourse> db.Books.countDocuments({ publishedDate: { $gt: ISODate("2023-01-01") } })
+MongoCourse> db.Books.countDocuments({ 
+    publishedDate: { $gt: ISODate("2023-01-01") } 
+})
 
 
 2
 ```
+
+![img](./03-151_IMG02.png)
+
+****
 
 ## **Debugging and Best Practices**
 
 ### **Debugging Queries**
 
 - Use `.explain()` to analyze the performance of a query:
-  
-  ```mongodb
+
+```mongodb
   MongoCourse> db.Books.find().explain("executionStats")
-  ```
-  
   {
     explainVersion: '1',
     queryPlanner: {
-  
+
+
       namespace: 'MongoCourse.Books',
       parsedQuery: {},
       indexFilterSet: false,
@@ -332,10 +337,10 @@ MongoCourse> db.Books.countDocuments({ publishedDate: { $gt: ISODate("2023-01-01
       prunedSimilarIndexes: false,
       winningPlan: { isCached: false, stage: 'COLLSCAN', direction: 'forward' },
       rejectedPlans: []
-  
+
     },
     executionStats: {
-  
+
       executionSuccess: true,
       nReturned: 3,
       executionTimeMillis: 0,
@@ -356,20 +361,20 @@ MongoCourse> db.Books.countDocuments({ publishedDate: { $gt: ISODate("2023-01-01
         direction: 'forward',
         docsExamined: 3
       }
-  
+
     },
     queryShapeHash: 'CC342773C26E7E652D64DECED760BE5F66658046AC863313B9690E40EA7A4BF9',
     command: { find: 'Books', filter: {}, '$db': 'MongoCourse' },
     serverInfo: {
-  
+
       host: '***',
       port: *****,
       version: '8.0.5',
       gitVersion: '***'
-  
+
     },
     serverParameters: {
-  
+
       internalQueryFacetBufferSizeBytes: 104857600,
       internalQueryFacetMaxOutputDocSizeBytes: 104857600,
       internalLookupStageIntermediateDocumentMaxSizeBytes: 104857600,
@@ -380,12 +385,12 @@ MongoCourse> db.Books.countDocuments({ publishedDate: { $gt: ISODate("2023-01-01
       internalDocumentSourceSetWindowFieldsMaxMemoryBytes: 104857600,
       internalQueryFrameworkControl: 'trySbeRestricted',
       internalQueryPlannerIgnoreIndexWithCollationForRegex: 1
-  
+
     },
     ok: 1
   }
-
 ```
+
 - Check for typos in field names or query operators.
 
 - Use `printjson()` to print documents in a readable format during debugging.

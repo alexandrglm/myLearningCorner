@@ -65,7 +65,7 @@ Documents in the same collection do not need to have identicals structures.
 Example:
 
 ```mongodb
-db.books.insertMany([
+db.Books.insertMany([
   {
     "name": "Data Science 101",
     "category": "Technology"
@@ -79,7 +79,7 @@ db.books.insertMany([
 
 ## Expected Output:
 
-![MongoDB, flexible data schema](./03-149_IMG03.png)
+![MongoDB, flexible data schema](./03-150_IMG03.png)
 
 ---
 

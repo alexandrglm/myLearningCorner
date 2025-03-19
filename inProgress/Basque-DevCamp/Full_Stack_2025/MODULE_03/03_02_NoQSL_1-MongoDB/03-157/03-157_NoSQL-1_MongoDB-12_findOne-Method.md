@@ -1,4 +1,5 @@
 # MODULE 03-157: MongoDB (12)
+
 ## Using the `findOne` Method in MongoDB
 
 ---
@@ -24,10 +25,10 @@ MongoDB’s `findOne()` method is used to return the **first** document that mat
 
 ### **Syntax:**
 
-```js
+```mongodb
 // Basic findOne query
 
- db.collection.findOne({ query })
+ db.<collection>.findOne({ query })
 ```
 
 The key difference between `findOne()` and `find()` is that `findOne()` **only returns a single document** instead of a cursor containing multiple documents.
@@ -36,32 +37,28 @@ The key difference between `findOne()` and `find()` is that `findOne()` **only r
 
 ## **Using `findOne` to Retrieve a Single Document**
 
-Consider a `books` collection with multiple documents:
-
-```js
-db.books.find({ name: "Blink" })
-```
-
 If multiple documents match the query, all will be returned. However, using `findOne()`, only the first matching document will be retrieved:
 
-```js
-db.books.findOne({ name: "Blink" })
-```
+```mongodb
+Atlas atlas-terube-shard-0 [primary] test> db.Books.findOne(
+... { name: "Blink" }
+)
 
-### **Example Output:**
 
-```json
 {
-  "_id": ObjectId("507f1f77bcf86cd799439011"),
-  "name": "Blink",
-  "publishedDate": "2023-05-14T00:00:00Z",
-  "authors": [
-    { "name": "Malcolm Gladwell" }
+  _id: ObjectId('67da278be76d6e52966b140d'),
+  name: 'Blink',
+  publishedDate: '2024-03-10T10:00:00Z',
+  authors: [
+    { name: 'Malcolm Gladwell', active: true },
+    { name: 'Ghost Writer', active: true }
   ]
 }
 ```
 
-**Key Benefits of `findOne()`:**
+![img](./03-157_IMG01.png)
+
+ **Benefits of `findOne()`:**
 
 - Guarantees that only one document is returned.
 - Eliminates the need to iterate over multiple documents.

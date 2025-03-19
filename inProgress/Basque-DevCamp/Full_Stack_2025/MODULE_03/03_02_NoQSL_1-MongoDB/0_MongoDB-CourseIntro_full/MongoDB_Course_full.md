@@ -12,10 +12,6 @@ Unlike traditional relational databases (SQL), MongoDB stores data in **flexible
 
 This allows developers to work with data in a way that aligns more naturally with how applications are built today.
 
-****
-
-#### Key Features:
-
 - **Document-oriented**:     
   
   Data is stored as documents, which are hierarchical and can contain nested structures.
@@ -53,7 +49,7 @@ To understand MongoDB, you need to familiarize yourself with its core components
   
   Example:
   
-  ```json
+  ```mongodb
   {
     "_id": ObjectId("64b8f1c7e4b0a1a2b3c4d5e6"),
     "name": "Alice",
@@ -120,7 +116,7 @@ Unlike SQL, where you normalize data into tables, MongoDB encourages **denormali
 - **Embedding**: Store related data within a single document.  
   This is ideal for one-to-one or one-to-few relationships.
   
-  ```json
+  ```mongodb
   {
     "_id": ObjectId("64b8f1c7e4b0a1a2b3c4d5e6"),
     "name": "Alice",
@@ -134,7 +130,7 @@ Unlike SQL, where you normalize data into tables, MongoDB encourages **denormali
 - **Referencing**: Store references (IDs) to related documents in another collection. This is better for one-to-many or 
   many-to-many relationships.
   
-  ```json
+  ```mongodb
   {
     "_id": ObjectId("64b8f1c7e4b0a1a2b3c4d5e6"),
     "name": "Alice",
@@ -162,13 +158,13 @@ MongoDB provides powerful tools for querying and analyzing data.
 
 - Find documents that match specific criteria:
   
-  ```js
+  ```mongo
   db.users.find({ age: { $gt: 25 } });
   ```
 
 - Use projection to return only specific fields:
   
-  ```js
+  ```mongodb
   db.users.find({}, { name: 1, age: 1 });
   ```
 
@@ -179,7 +175,7 @@ analysis. It works like a pipeline, where each stage processes the data and pass
 
 - Example: Group users by city and calculate the average age:
   
-  ```js
+  ```mongodb
   db.users.aggregate([
     { $group: { _id: "$address.city", avgAge: { $avg: "$age" } } }
   ]);
@@ -195,7 +191,7 @@ Let’s design a simple blogging platform using MongoDB.
 
 1. **Users**:
    
-   ```json
+   ```mongodb
    {
      "_id": ObjectId("64b8f1c7e4b0a1a2b3c4d5e6"),
      "name": "Alice",
@@ -206,7 +202,7 @@ Let’s design a simple blogging platform using MongoDB.
 
 2. **Posts**:
    
-   ```json
+   ```mongodb
    {
      "_id": ObjectId("64b8f1c7e4b0a1a2b3c4d5e7"),
      "title": "Introduction to MongoDB",
@@ -219,7 +215,7 @@ Let’s design a simple blogging platform using MongoDB.
 
 3. **Comments**:
    
-   ```json
+   ```mongodb
    {
      "_id": ObjectId("64b8f1c7e4b0a1a2b3c4d5e8"),
      "post_id": ObjectId("64b8f1c7e4b0a1a2b3c4d5e7"),
@@ -233,13 +229,13 @@ Let’s design a simple blogging platform using MongoDB.
 
 - Find all posts by a specific user:
   
-  ```js
+  ```mongodb
   db.posts.find({ author_id: ObjectId("64b8f1c7e4b0a1a2b3c4d5e6") });
   ```
 
 - Find all comments for a specific post:
   
-  ```js
+  ```mongodb
   db.comments.find({ post_id: ObjectId("64b8f1c7e4b0a1a2b3c4d5e7") });
   ```
 
@@ -261,9 +257,9 @@ Let’s design a simple blogging platform using MongoDB.
 
 ***
 
-# MODULE 03-161: MongoDB (0)
+# MODULE 04-161: MongoDB (0)
 
-* **Part 1: Guide to NoSQL for Developers**
+* **Part 1: Digital Literacy: Guide to NoSQL for Developers**
 
 * **Part 2: Complete NoSQL vs SQL guide**
 
@@ -324,7 +320,7 @@ A good rule of thumb is to simply follow the guidelines given by the names thems
 
 For an example of how NoSQL looks, here is a snippet from a MongoDB database:
 
-```json
+```mongodb
 {
  "_id": "507f1f77bcf86cd799439011",
  "name": "John Doe",
@@ -476,247 +472,220 @@ https://www.coursera.org/articles/nosql-vs-sql
 
 # Module 03 - 146: MongoDB (1)
 
+# MongoDB on Linux + MongoDB Atlas AWS Cluster setup
+
 The original guide explains how to install MongoDB for MAC users but,so that for those Linux users, these steps explains how to set it up.  
 
-Additionally, this guide explains how to install MongoDB without it being system-wide, as well as installing it system-wide.   
+Additionally, this guide explains how to install MongoDB without it being system-wide, as well as installing it system-wide. It's suggested to use a non system-wide when posible.
 
-I recommend the first option.
+On the other hand, this guide also includes how to set up a free MongoDB Atlas Cluster at AWS (at least while MongoDB allows free accounts for students), to be able to use a remote database or integrate remote MongoDB into our projects.
 
-****
-
-# Installing MongoDB on Linux
+Finally, a default connection to Atlas@AWS will be performed and explained.
 
 ****
 
-## A. Via Docker:
+# 1) MongoDB Debian 12 alike setup
 
-If you want even greater isolation, you can use Docker to run MongoDB in a container.   
+## A)    Mongo-sh system-wide for shell access + Mongod server/daemon from binaries
 
-This ensures MongoDB doesn’t interact with your system at all.
-
-1. **Install Docker**:
-   
-   - Follow the official instructions to install Docker: [Install Docker](https://docs.docker.com/engine/install/).
-
-2. **Run MongoDB in a Container**:
-   
-   - Use the following command to start a MongoDB container:
-     
-     ```bash
-     docker run -d --name mongodb-course -p 27017:27017 -v ~/projects/mongodb-course/data/db:/data/db mongo
-     ```
-- This mounts the `~/projects/mongodb-course/data/db` folder to the container for data persistence.
-3. **Connect to the Container**:
-   
-   - Use the `mongo` shell to connect to the container:
-     
-     ```bash
-     mongo --host 127.0.0.1 --port 27017
-     ```
-
----
-
-## B. Via Sources
-
-### **1. Download MongoDB Binaries**
-
-Instead of installing MongoDB via Docker, you can download the binaries and run them directly from a project folder.
-
-1. **Download MongoDB**:
-   
-   - Go to the [MongoDB Community Download Page](https://www.mongodb.com/try/download/community).
-   
-   - Select the appropriate version for your Linux distribution and download the `.tgz` file.
-
-2. **Extract the Binaries**:
-   
-   - Open a terminal and navigate to the folder where you downloaded the `.tgz` file.
-   
-   - Extract the archive:
-     
-     ```bash
-     tar -xvzf mongodb-linux-x86_64-<version>.tgz
-     ```
-   
-   - Move the extracted folder to your project directory (e.g., `~/projects/mongodb-course`):
-     
-     ```bash
-     mv mongodb-linux-x86_64-<version> ~/projects/mongodb-course/mongodb
-     ```
-
-****
-
-### **2. Set Up MongoDB for Your Project**
-
-Now that you have the binaries in your project folder, configure MongoDB to run in an isolated environment.
-
-1. **Create Data and Logs Folders**:
-   
-   1. MongoDB needs a folder to store data and another for logs. Create these folders inside your project directory:
-      
-      ```bash
-      mkdir -p ~/projects/mongodb-course/data/db
-      mkdir -p ~/projects/mongodb-course/logs
-      ```
-
-2. **Create a Configuration File**:
-   
-   1. Create a configuration file (`mongod.conf`) in your project folder:
-      
-      ```bash
-      nano ~/projects/mongodb-course/mongod.conf
-      ```
-   
-   2. Add the following basic configuration:
-      
-      ```bash
-      storage:
-        dbPath: /home/<your-username>/projects/mongodb-course/data/db
-      systemLog:
-        destination: file
-        path: /home/<your-username>/projects/mongodb-course/logs/mongod.log
-        logAppend: true
-      net:
-        bindIp: 127.0.0.1
-        port: 27017
-      ```
-   
-   3. Save and close the file.
-
-****
-
-### **3. Run MongoDB**
-
-You can now start MongoDB from your project folder.
-
-1. **Start the MongoDB Server**:
-   
-   * Navigate to the `bin` folder inside the extracted MongoDB directory:
-     
-     ```bash
-     cd ~/projects/mongodb-course/mongodb/bin
-     ```
-   
-   * Start the MongoDB server using the configuration file:
-     
-     ```bash
-     ./mongod --config ~/projects/mongodb-course/mongod.conf
-     ```
-
-2. **Verify MongoDB is Running**:
-   
-   * Open another terminal and connect to MongoDB using the `mongo` shell:
-     
-     ```bash
-     ./mongo --host 127.0.0.1 --port 27017
-     ```
-   
-   * If the connection is successful, you’ll see the MongoDB shell prompt.
-
-****
-
-### **4. Stop MongoDB**
-
-When you’re done working with MongoDB, stop the server by pressing `Ctrl + C` in the terminal where it’s running.
-
-****
-
-### **5. Using MongoDB in Your Project**
-
-Now that MongoDB is running, you can use it for your project. Here are some basic commands to get started:
-
-#### **Create a Database**
+1. Add the latest MongoDB sources [from official site](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-debian/):
 
 ```bash
-use mydatabase
+# Importinf .asc/gpg for apt update
+curl -fsSL https://www.mongodb.org/static/pgp/server-8.0.asc | \   sudo gpg -o /usr/share/keyrings/mongodb-server-8.0.gpg \   --dearmor
 ```
 
-#### **Create a Collection**
+* Adding to sources (These sources could be mordenized)
 
 ```bash
-db.createCollection("mycollection")
+echo "deb [ signed-by=/usr/share/keyrings/mongodb-server-8.0.gpg ] http://repo.mongodb.org/apt/debian bookworm/mongodb-org/8.0 main" | sudo tee /etc/apt/sources.list.d/mongodb-org-8.0.list
 ```
 
-#### **Insert a Document**
+* Getting it
 
 ```bash
-db.mycollection.insertOne({ name: "Alice", age: 25 })
+sudo apt-get update && sudo apt-get install -y mongodb-org
 ```
 
-#### **Query Documents**
+2. Getting latest MongoDB Community Server bins, **for the required project folder**:
 
 ```bash
-db.mycollection.find({ age: { $gt: 20 } })
+curl https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-debian12-8.0.5.tgz
+
+tar -xvz ./mongodb-linux-x86_64-debian12-8.0.5.tgz ./mongodb
 ```
 
-#### **Delete a Database**
+3. Setting up the mongod.conf file from our project root folder:
+
+```yaml
+storage:
+    dbPath: ./data/db
+systemLog:
+    destination: file
+    path: ./logs/mongod.log
+    logAppend: true
+net:
+    bindIp: 127.0.0.1
+    port: 27017
+```
+
+4. Starting the Mongod server, in one terminal tab:
 
 ```bash
-db.dropDatabase()
+$ ./mongodb/bin/mongod --config ~/<path-for-the-mongodb-project>/mongod.conf
+```
+
+5. Starting the Mongo shell:
+
+```bash
+$ mongosh
+Current Mongosh Log ID:    *
+Connecting to:        mongodb://*
+Using MongoDB:        8.0.5
+Using Mongosh:        2.4.2
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+
+To help improve our products, anonymous usage data is collected 
+and sent to MongoDB periodically (https://www.mongodb.com/legal/privacy-policy).
+You can opt-out by running the disableTelemetry() command.
+
+------
+   The server generated these startup warnings when booting
+
+test>
 ```
 
 ****
 
-### **6. Clean Up**
+# 2) MongoDB Atlas at Amazon AWS Cluster setup
 
-When you’re done with the course, simply delete the project folder to remove MongoDB:
+This part of the guide provides an outline on how to set up and connect a MongoDB Atlas cluster on Amazon AWS, for the moment, free of charge.
 
-```bash
-rm -rf ~/projects/mongodb-course
-```
+Once configured, this action can replace the "Mongod" daemon installed system-wide as it can be accessed through a wide range of methods:
 
-If you used Docker, stop and remove the container:
+- The local shell in Terminal.
+- The official MongoDB WebGUI framework, from the AWS panel.
+- A webservice like Render (its free plan accepts connecting both services), or in your own back-end of your own server, with the multitude of languages available to develop using Mongo.
 
-```bash
-docker stop mongodb-course
-docker rm mongodb-course
-```
+**By default, this mini-course will cover Shell access (JavaScript/JSON alike), and Python back-end using PyMongo**.
 
 ****
 
-# C. Via apt, SYSTEM-WIDE (Be careful)
+## General Procedures from AWS side
 
-### Step 1: Install MongoDB
+What will you need?
 
-To install MongoDB, use the package manager of your distribution:
+* A MongoDB (free) registered account (https://www.mongodb.com/cloud/atlas/register)
+  
+  ![MongoDB Atlas Account types](./03-146_IMG01.png)
 
-- **Debian/Ubuntu:**  `sudo apt update & sudop apt install -y mongodb`
-- **Fedora**:  `sudo dnf install -y mongodb`
-- **Arch Linux (AUR package available):** `yay -S mongodb-bin`
+* 
 
-### Step 3: Create the Data Directory
+## What is MongoDB Atlas?
 
-MongoDB stores its data in `/data/db`. You need to create this directory manually:
+*MongoDB Atlas is a multi-cloud database service by the same people that build MongoDB. Atlas simplifies deploying and managing your databases while offering the versatility you need to build resilient and performant global applications on the cloud providers of your choice.*
 
-```bash
-sudo mkdir -p /data/db
-sudo chown -R `id -un` /data/db
-```
+### 1) Deploy a Database
 
-### Step 4: Start MongoDB
+**1.1 Choose a cluster type** : **FREE CLUSTER**
 
-To start the MongoDB daemon, run:
+*Play around with a **free cluster**, launch a serverless instance, or define a dedicated cluster configuration for your application.*
 
-```bash
-mongod
-```
+![IMG](./03-146_IMG02.png)
 
-You can verify if MongoDB is running by opening a new terminal and typing:  
+*To choose a deployment type, see Database Deployment Types.*
 
-```bash
-mongo
-```
+**1.2 Choose a Cloud Provider and Region:  Amazon AWS @ your nearest location**
 
-If everything is set up correctly, this will open the MongoDB shell.
+*Deploy your database to the same cloud provider and region as your applications to reduce latency and standardize security controls.*
+
+![img](./03-146_IMG03.png)
+
+### 2)     Secure the Database
+
+**2.1 Add IP Access List Entries**
+
+*Define an IP access list for your cluster.*
+
+**This can include the IPs of your server, or your webservice on Render, Vercel, etc; or, your IP/DynDNS to access from your shell**.
+
+![Atlas IP configs](./03-146_IMG04.png)
+
+**2.2 Manage Database Users**
+
+*Define how your team members and applications authenticate to your database and what data they can access*.
+
+![MongoDB Atlas Accounts](./03-146_IMG05.png)
+
+**This means you can create different users, with different permissions, as needed. It is mandatory that you create one, and I suggest to NOT use the default username/passwords of your MongoDB account.**
+
+### 3)    Connect the Database
+
+**3.1 Choose a Connection Type**
+
+*Connect to your database using the MongoDB Shell, one ofMongoDB's native language drivers, MongoDB Compass, or theMongoDB Connector for BI.*
+
+![img](./03-146_IMG06.png)
+
+**From this point on, everything is created and configured, so that, how you configure and connect your service depends on the use you are going to make of it (Shell, WebGUI, Render/Vercel/etc...).**
 
 ****
 
-## Resources
+# 3) Connecting to MongoDB Atlas via shell
 
-- [Official MongoDB Installation Guide](https://www.mongodb.com/docs/manual/installation/)
-- [Install MongoDB Community Edition on Linux](https://www.mongodb.com/docs/manual/administration/install-on-linux/)
+MongoDB Atlas provides a straightforward Connections/Access setup.  
+
+To access it via the local shell, we need at least `mongosh` installed (via sources, via apt install, ....).  
+
+We will create a .conf file and a shell script for quick access.  
+
+Remember to store "secrets" (access paths, username/password, etc.) in a safe place.
+
+1. **Via shell script `./atlas_login.sh`**
+
+```bash
+   #!/bin/bash
+
+   echo "Atlas user:  "
+   read user
+   echo "Atlas Pass: "
+   read -s password
+   uri="mongodb://<your_FULL_mongoDB_path>"
+
+   # 
+   mongosh "$uri" --apiVersion 1 \
+   --tls  \
+   --authenticationDatabase admin \
+   --username "$user" --password "$password"
+```
+
+   Expected Output:
+
+```bash
+   $ bash ./mongo_shell.sh 
+   Atlas user:  
+   <user>
+   Atlas Pass: 
+   Current Mongosh Log ID:    *
+   Connecting to:        mongodb://
+
+   Using MongoDB:        8.0.5 (API Version 1)
+   Using Mongosh:        2.4.2
+
+   For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+   Atlas * [primary] test> 
+```
+
+Since here, you are enable to start creating, configuring, handling, your database.
 
 ****
+
+[database – Database level operations - PyMongo 4.11 documentation](https://pymongo.readthedocs.io/en/4.11/api/pymongo/database.html#pymongo.database.Database.create_collection)
+
+***
 
 ***
 
@@ -746,23 +715,39 @@ Before proceeding, ensure you have MongoDB installed and properly configured on 
 
 ### **Starting MongoDB**
 
-To start the MongoDB daemon, open your terminal and run:
+To start the MongoDB daemon, using non system-wide binary and **the current project .conf**, open your terminal and run:
 
 ```bash
-mongod
+$ ./mongodb/bin/mongod --config ~/<path-for-the-mongodb-project>/mongod.conf
 ```
 
 Then, open a new terminal tab or window and enter the MongoDB shell:
 
 ```bash
-mongo
+mongosh # mongosh for linux deb users
 ```
 
 If everything is working correctly, you should see a prompt similar to:
 
-```
-MongoDB shell version vX.X.X
-connecting to: mongodb://127.0.0.1:27017/test
+```mongodb
+Current Mongosh Log ID:    
+Connecting to:        mongodb://
+Using MongoDB:        8.0.5
+Using Mongosh:        2.4.2
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+
+To help improve our products, anonymous usage data is collected and sent to MongoDB periodically (https://www.mongodb.com/legal/privacy-policy).
+You can opt-out by running the disableTelemetry() command.
+
+------
+   The server generated these startup warnings when booting
+
+   server logs here...
+------
+
+test> 
 ```
 
 ---
@@ -822,77 +807,91 @@ This confirms that all further operations will be performed on `mongoCourse`.
 
 ---
 
-## **Creating a Database User**
+## **Creating a Database User - `.createUser( {...} )`**
 
-Official MongoDB Documentation: 
+Database users are essential for managing access control.   
 
-Database users are essential for managing access control. To create a new user, execute the following JavaScript code inside the MongoDB shell:
+To create a new user, execute the following JavaScript code inside the MongoDB shell.
 
-```js
+**Don't worry if you need many attempts to type full-indented code via CLI. If fails, start again:**
+
+```mongodb
 db.createUser({
-  user: 'jordan',
-  pwd: 'securepassword',
+  user: 'testing',
+  pwd: 'testingpass',
   customData: { startDate: new Date() },
   roles: [
     { role: 'clusterAdmin', db: 'admin' },
     { role: 'readAnyDatabase', db: 'admin' },
     'readWrite'
   ]
-})
+});
+
+
+# Return will be { ok: 1 }
 ```
 
-### **Explanation:**
+### **Explanation**
 
 - `user`: The username for the new user.
 - `pwd`: The password (ensure you use a strong password in production environments).
 - `customData`: Optional metadata, e.g., a timestamp for when the user was created.
-- `roles`: Defines the users permissions:
+- `roles`: Defines the user's permissions:
   - `clusterAdmin`: Grants cluster-wide administrative privileges.
   - `readAnyDatabase`: Allows reading from any database.
   - `readWrite`: Provides read and write access to the current database.
 
 ---
 
-## **Listing Users in a Database**
+## **Listing Users in a Database - `.getUsers()`**
 
 To see all users associated with the current database, use:
 
-```bash
+```mongodb
 db.getUsers()
 ```
 
 Expected output:
 
-```json
-[
-  {
-    "_id": "mongoCourse.jordan",
-    "user": "jordan",
-    "roles": [
-      { "role": "clusterAdmin", "db": "admin" },
-      { "role": "readAnyDatabase", "db": "admin" },
-      "readWrite"
-    ]
-  }
-]
+```mongodb
+{
+  users: [
+    {
+      _id: 'MongoCourse.testing',
+      userId: UUID('ce1ad468-6c8a-4b0a-9bf1-415906014517'),
+      user: 'testing',
+      db: 'MongoCourse',
+      customData: { startDate: ISODate('2025-03-18T18:18:59.343Z') },
+      roles: [
+        { role: 'clusterAdmin', db: 'admin' },
+        { role: 'readAnyDatabase', db: 'admin' },
+        { role: 'readWrite', db: 'MongoCourse' }
+      ],
+      mechanisms: [ 'SCRAM-SHA-1', 'SCRAM-SHA-256' ]
+    }
+  ],
+  ok: 1
+}
 ```
 
-This confirms that our user `jordan` has been successfully created with the specified roles.
+This confirms that our user `testing` has been successfully created with the specified roles.
+
+![terminal output](./03-147_IMG01.png)
 
 ---
 
-## **Deleting a User**
+## **Deleting a User** `.dropUser()`
 
 If you need to remove a user from the database, run:
 
-```bash
+```mongodb
 db.dropUser('jordan')
 ```
 
 Expected output:
 
-```
-true
+```mongodb
+{ ok: 1 }
 ```
 
 To verify, check the list of users again:
@@ -921,7 +920,7 @@ The removed user should no longer appear in the output.
 
 * [MongoDB Tutorial: ](https://www.mongodb.com/docs/manual/tutorial/manage-users-and-roles/)
 
-****
+***
 
 ***
 
@@ -939,7 +938,6 @@ The removed user should no longer appear in the output.
 2. Creating a Collection
 3. Listing Collections
 4. Understanding System Indexes
-5. 
 
 ---
 
@@ -958,23 +956,17 @@ In MongoDB, collections are the equivalent of tables in relational databases. Co
 
 ---
 
-## **Creating a Collection**
+## **Creating a Collection - `.createCollection()`**
 
 To create a new collection in MongoDB, use the `createCollection` method:
 
-```js
- db.createCollection("books")
-```
-
-### **Expected Output:**
-
-```json
-{ "ok" : 1 }
+```mongodb
+ db.createCollection("books")    # Output { ok: 1 }
 ```
 
 This response confirms that the collection was successfully created.
 
-> **Note:** Unlike relational databases, MongoDB automatically creates a collection when the first document is inserted. Explicitly using `createCollection` is only necessary for advanced configurations.
+> **Note:** Unlike relational databases, MongoDB automatically creates a collection when the first document is inserted. **Explicitly using `createCollection` is only necessary for advanced configurations**.
 
 ---
 
@@ -982,26 +974,45 @@ This response confirms that the collection was successfully created.
 
 To view all collections within the current database, run:
 
-```js
-show collections
+```mongodb
+MongoCourse> show collections
+
+Books
 ```
 
-### **Example Output:**
-
-```
-books
-system.indexes
-```
-
-This output shows that the database contains a `books` collection, along with `system.indexes` (used for indexing documents).
+This output shows that the database contains a `books` collection.
 
 ---
 
-## **Understanding System Indexes**
+## **Understanding oldie System Indexes**
 
-MongoDB automatically maintains a `system.indexes` collection, which stores index metadata. Indexes improve query performance by enabling efficient lookups.
+It's possible that, if you are using an Old MongoDB version (< 3.x) you'll see another file along with your collection, called `system.indexes`.
 
-> **Tip:** While you don't need to manage `system.indexes` directly, understanding how indexes work can help optimize performance. Learn more in the [MongoDB Indexing Guide](https://www.mongodb.com/docs/manual/indexes/).
+It was used for indexing documents in older versions.
+
+Since 3.x version, the `system.indexes`collections are no longer exist.
+
+MongoDB automatically maintained a system.indexes collection, which had stored index metadata. 
+
+****
+
+## **Understanding how MongoDB v3.x work along with Indexes - `db.<collection>.getIndexes()`**
+
+Indexes, in general terms, improve query performance by enabling efficient lookups.
+
+> While you don't need to manage `system.indexes` directly, **understanding how indexes work can help optimize performance**. Learn more in the nowday's [MongoDB Indexing Guide](https://www.mongodb.com/docs/manual/indexes/).
+
+```mongodb
+MongoCourse> db.Books.getIndexes()
+
+
+# Output
+[ { v: 2, key: { _id: 1 }, name: '_id_' } ]
+```
+
+****
+
+![MongoShell, creating db, and getting indexes](./03-148_IMG01.png)
 
 ---
 
@@ -1016,7 +1027,7 @@ MongoDB automatically maintains a `system.indexes` collection, which stores inde
 
 ## References
 
-[MongoDB Docs:  Indexes](https://www.mongodb.com/docs/manual/indexes/)
+[# Databases and Collections in PyMongo](https://www.mongodb.com/docs/languages/python/pymongo-driver/current/databases-collections/)
 
 ***
 
@@ -1032,71 +1043,80 @@ MongoDB automatically maintains a `system.indexes` collection, which stores inde
 
 ## **Index**
 
-1. Understanding MongoDB Documents
+1. Understanding MongoDB Documents (1)
 
 2. Inserting a Single Document
 
-3. Inserting Multiple Documents
-
-4. Handling Flexible Schema
-
-5. 
+3. Handling Flexible Schema
 
 ---
 
 ## **Understanding MongoDB Documents**
 
-MongoDB stores data in **documents**, which are JSON-like objects consisting of key-value pairs. Unlike traditional SQL databases, MongoDB **does not enforce a schema**, allowing documents in the same collection to have different structures.
+MongoDB stores data in **documents**, which are JSON-like objects consisting of key-value pairs.   
+
+Unlike traditional SQL databases, MongoDB **does not enforce a schema**, allowing documents in the same collection to have different structures.
 
 Each document is stored in a **collection**, which functions similarly to tables in relational databases.
 
 ---
 
-## **Inserting a Single Document**
+## **Inserting a Single Document - `db.<collection>.insertOne( {...})`**
 
 To insert a single document into the `books` collection, use `insertOne()`. This function expects a **JSON object**.
 
-```
-// Insert a single book documentdb.books.insertOne({  "name": "OOP Programming",  "publishedDate": new Date(),  "authors": [    { "name": "Jon Snow" },    { "name": "Ned Stark" }  ]})
-```
+```mongodb
+// Insert a single book document - .insertOne()
 
-### **Expected Output:**
-
-```
-{ "acknowledged": true, "insertedId": "ObjectId('...')" }
-```
-
-> **Note:** `ObjectId` is a unique identifier automatically generated for each document.
-
----
-
-## **Inserting Multiple Documents**
-
-To insert multiple records at once, use `insertMany()` with an **array** of JSON objects.
-
-```
-// Insert multiple book documentsdb.books.insertMany([  {    "name": "JavaScript Essentials",    "publishedDate": new Date("2023-01-01"),    "authors": [ { "name": "Alice Johnson" } ]  },  {    "name": "Mastering Databases",    "publishedDate": new Date("2022-05-10"),    "authors": [ { "name": "Bob Smith" }, { "name": "Charlie Brown" } ]  }])
+MongoCourse> db.Books.insertOne(
+... {
+... "name" : "El Cerebro Musical",
+... "publishedDate" : new Date(),
+... "authors" : [ { "name" : "Daniel J. Levitin"} ] 
+... })
+{
 ```
 
 ### **Expected Output:**
 
-```
-{ "acknowledged": true, "insertedIds": [ "ObjectId('...')", "ObjectId('...')" ] }
-```
+![MongoDB, .insertOne() ](./03-149_IMG01.png)
+
+**Note:** `ObjectId` is a unique identifier automatically generated for each document.
 
 ---
+
+****
 
 ## **Handling Flexible Schema**
 
-MongoDB allows **dynamic schema changes**. Documents in the same collection do not need to have identicals structures.
+MongoDB allows **dynamic schema changes**. 
+
+Documents in the same collection do not need to have identicals structures.
+
+⚠️ **In this case, we're going to introduce a new field key type: Published Year**.
+
+> **Caution:** Schema inconsistency can cause issues when querying and managing data.
+
+**This will help us later in creating a framework to manage records (the database), to specify use cases with flexible fields.**
 
 Example:
 
-```
-// Inserting books with different fieldsdb.books.insertMany([  { "name": "Data Science 101", "category": "Technology" },  { "title": "Machine Learning", "publishedYear": 2023 }])
+```mongodb
+db.Books.insertMany([
+  {
+    "name": "Data Science 101",
+    "category": "Technology"
+  },
+  {
+    "name": "Machine Learning",
+    "publishedYear": 2023
+  }
+]);
 ```
 
-> **Caution:** Schema inconsistency can cause issues when querying and managing data.
+## Expected Output:
+
+![MongoDB, flexible data schema](./03-150_IMG03.png)
 
 ---
 
@@ -1116,7 +1136,7 @@ Example:
 
 * [MongoDB Docs: Data Modeling](https://www.mongodb.com/docs/manual/data-modeling/)
 
-****
+***
 
 ***
 
@@ -1124,44 +1144,76 @@ Example:
 
 # MODULE 03-150: MongoDB (5)
 
-## Inserting Multiple Documents in MongoDB
+## Inserting Multiple Documents
 
 ---
 
 ## **Index**
 
-1. Understanding Document Insertion
+1. Understanding Document Insertion (2)
 2. The `insertMany()` Method
-3. Example Usage
-4. Return Values and Inserted IDs
-5. 
 
 ---
 
-## **Understanding Document Insertion**
+## **Understanding Document Insertion (2)**
 
-In MongoDB, documents are stored in collections, and each document follows a flexible schema. Inserting data into a collection is one of the most common operations. MongoDB provides different methods to insert documents, including:
+In MongoDB, documents are stored in collections, and each document follows a flexible schema.   
+
+Inserting data into a collection is one of the most common operations. MongoDB provides different methods to insert documents, including:
 
 - **`insertOne()`**: Used for inserting a single document.
-- **`insertMany()`**: Used for inserting multiple documents at once.
+- **`insertMany()`**: Used for inserting multiple documents at once. **This method expects ARRAYS, not set's/objects.**
 
-In the previous guide, we covered `insertOne()`. Now, we'll focus on `insertMany()`, which allows for batch insertion of documents in an efficient manner.
+In the previous guide, we covered `insertOne()`.   
+
+Now, we'll focus on `insertMany()`, which allows for batch insertion of documents in an efficient manner.
 
 ---
 
 ## **The `insertMany()` Method**
 
-The `insertMany()` method enables bulk insertion of documents into a MongoDB collection. Unlike `insertOne()`, which only takes a single document, `insertMany()` accepts an **array** of documents.
+The `insertMany()` method enables bulk insertion of documents into a MongoDB collection.   
 
-### **Syntax:**
+Unlike `insertOne()`, which only takes a single document, `insertMany()` accepts an **array** of documents.
 
-```js
- db.collection.insertMany([
+```mongodb
+# Basic Sintax
+
+  db.<collection>.insertMany([
     { document1 },
     { document2 },
     { document3 }
  ])
 ```
+
+## **Inserting Multiple Documents - `db.<collection>.insertMany( {...} )`**
+
+To insert multiple records at once, use `insertMany()` with an **array** of JSON objects.
+
+```mongodb
+// Insert multiple book documents - .insertMany())
+
+MongoCourse> db.Books.insertMany([
+  {
+    "name": "Tecnofeudalismo",
+    "publishedDate": new Date("2024-01-01"),
+    "authors": [
+      { "name": "Yanis Varoufakis" }
+    ]
+  },
+  {
+    "name": "Pyongyang: A Journey In North Korea",
+    "publishedDate": new Date("2003-01-01"),
+    "authors": [
+      { "name": "Guy Delisle" }
+    ]
+  }
+])
+```
+
+### **Expected Output:**
+
+![MongoDB, .insertMany( {array} )](./03-150_IMG01.png)
 
 ### **Key Points:**
 
@@ -1170,63 +1222,6 @@ The `insertMany()` method enables bulk insertion of documents into a MongoDB col
 - MongoDB automatically assigns a unique **_id** field to each document if not explicitly provided.
 
 For official documentation, refer to [MongoDB `insertMany()` documentation](https://www.mongodb.com/docs/manual/reference/method/db.collection.insertMany/).
-
----
-
-## **Example Usage**
-
-Let's insert multiple book records into a **books** collection using `insertMany()`:
-
-```js
-db.books.insertMany([
-  {
-    "name": "Confident Ruby",
-    "publishedDate": new Date(),
-    "authors": [
-      { "name": "Avdi Grimm" }
-    ]
-  },
-  {
-    "name": "The War of Art",
-    "publishedDate": new Date(),
-    "authors": [
-      { "name": "Steven Pressfield" }
-    ]
-  },
-  {
-    "name": "Blink",
-    "publishedDate": new Date(),
-    "authors": [
-      { "name": "Malcolm Gladwell" }
-    ]
-  }
-])
-```
-
-This command inserts **three** books into the collection.
-
----
-
-## **Return Values and Inserted IDs**
-
-Upon execution, `insertMany()` returns a confirmation object:
-
-```json
-{
-  "acknowledged": true,
-  "insertedIds": {
-    "0": ObjectId("60c5f3a3b2b8d59e1a56a2b1"),
-    "1": ObjectId("60c5f3a3b2b8d59e1a56a2b2"),
-    "2": ObjectId("60c5f3a3b2b8d59e1a56a2b3")
-  }
-}
-```
-
-### **Key Details:**
-
-- **`acknowledged: true`** → Confirms that the operation was successful.
-- **`insertedIds`** → Provides unique MongoDB ObjectIDs for each document inserted.
-- ObjectIDs are unique and allow efficient document retrieval.
 
 ---
 
@@ -1244,17 +1239,18 @@ Although MongoDB is schema-less, maintaining a consistent structure across docum
 
 For **very large** insertions, consider breaking them into smaller batches to avoid excessive memory usage.
 
-### ✅ **Avoid Duplicate Entries**
+### ✅ **Avoid Duplicate Entries passing Documents, not arrays**
 
 MongoDB does not enforce uniqueness unless explicitly defined using **unique indexes**.
 
-```js
+```mongodb
 db.books.createIndex({ name: 1 }, { unique: true })
+
+
+# Expected Output: name_1
 ```
 
 This ensures that no two books share the same name.
-
-For more details, see [MongoDB Indexing Documentation](https://www.mongodb.com/docs/manual/indexes/).
 
 ****
 
@@ -1266,7 +1262,7 @@ For more details, see [MongoDB Indexing Documentation](https://www.mongodb.com/d
 
 [MongoDB Indexes and Performance Optimization](https://www.mongodb.com/docs/manual/indexes/)
 
-****
+***
 
 ***
 
@@ -1274,7 +1270,7 @@ For more details, see [MongoDB Indexing Documentation](https://www.mongodb.com/d
 
 # MODULE 03-151: MongoDB (6)
 
-## Querying Documents with `find()` Method
+## Querying Documents with `find()` Method & Advanced Querying with Filters and Projections
 
 ---
 
@@ -1288,49 +1284,111 @@ For more details, see [MongoDB Indexing Documentation](https://www.mongodb.com/d
 
 4. Automatic Object IDs in MongoDB
 
+5. Advanced Querying with Filters and Projections
+
+6. Querying Nested Documents and Arrays
+
+7. Sorting and Limiting Results
+
+8. Counting Documents
+
+9. Debugging and Best Practices
+
 ---
 
-So far, we have focused primarily on inserting documents into MongoDB collections. However, retrieving and querying data is just as important. MongoDB provides various methods to retrieve data efficiently, with the `find()` method being the most fundamental.
+So far, we have focused primarily on inserting documents into MongoDB collections.   
 
-In this guide, we will explore how to use `find()` to query documents and compare its functionality to SQL-based queries. We will also discuss MongoDB's automatic Object ID generation.
+However, retrieving and querying data is just as important.   
+
+MongoDB provides various methods to retrieve data efficiently, with the `find()` method being the most fundamental.
+
+In this guide, we will explore how to use `find()` to query documents and compare its functionality to SQL-based queries.   
+
+We will also discuss MongoDB's automatic Object ID generation, advanced querying techniques, and best practices for working with MongoDB queries.  
 
 ---
 
-## **Understanding the** `**find()**` **Method**
+## **Understanding the** `.find()` **Method**
 
-The `find()` method in MongoDB is used to retrieve documents from a collection. It works similarly to the `SELECT` statement in SQL, allowing users to fetch data that matches specific criteria. By default, calling `find()` without any parameters returns all documents in the collection.
+The `find()` method in MongoDB is used to retrieve documents from a collection.  
+
+ It works similarly to the `SELECT` statement in SQL, allowing users to fetch data that matches specific criteria.   
+
+By default, calling `find()` without any parameters returns all documents in the collection.
 
 ### **Syntax:**
 
-```
-// Retrieve all documents in a collection db.books.find()
+```mongodb
+// Retrieve all documents in a collection 
+
+db.Books.find()
 ```
 
 ### **Example Output:**
 
-```
-{ "_id" : ObjectId("507f191e810c19729de860ea"), "name" : "Confident Ruby", "publishedDate" : ISODate("2023-01-01T00:00:00Z") }{ "_id" : ObjectId("507f191e810c19729de860eb"), "name" : "The War of Art", "publishedDate" : ISODate("2023-01-02T00:00:00Z") }
+```mongodb
+[
+  {
+    _id: ObjectId('67d9c1555c76fae2cc6b140b'),
+    name: 'El Cerebro Musical',
+    publishedDate: ISODate('2025-03-18T18:54:13.978Z'),
+    authors: [ { name: 'Daniel J. Levitin' } ]
+  },
+  {
+    _id: ObjectId('67d9cb025c76fae2cc6b140c'),
+    name: 'Tecnofeudalismo',
+    publishedDate: ISODate('2024-01-01T00:00:00.000Z'),
+    authors: [ { name: 'Yanis Varoufakis' } ]
+  },
+  {
+    _id: ObjectId('67d9cb025c76fae2cc6b140d'),
+    name: 'Pyongyang: A Journey In North Korea',
+    publishedDate: ISODate('2003-01-01T00:00:00.000Z'),
+    authors: [ { name: 'Guy Delisle' } ]
+  }
+]
 ```
 
 ---
 
-## **Using** `**find().pretty()**` **for Better Readability**
+## Why older MongoDB versions **USED** `**find().pretty()**` **for Better Readability**
 
-MongoDB allows us to improve the readability of query results using the `pretty()` method. This method formats the output in an easily readable JSON structure.
+MongoDB older versions than 5.x returned data like this:
 
-### **Syntax:**
-
-```
-// Retrieve and format all documents db.books.find().pretty()
-```
-
-### **Example Output:**
-
-```
-[  {    "_id": ObjectId("507f191e810c19729de860ea"),    "name": "Confident Ruby",    "publishedDate": ISODate("2023-01-01T00:00:00Z")  },  {    "_id": ObjectId("507f191e810c19729de860eb"),    "name": "The War of Art",    "publishedDate": ISODate("2023-01-02T00:00:00Z")  }]
+```mongodb
+> db.Books.find()
+{ "_id" : ObjectId("67d9c1555c76fae2cc6b140b"), "name" : "El Cerebro Musical", "publishedDate" : ISODate("2025-03-18T18:54:13.978Z"), "authors" : [ { "name" : "Daniel J. Levitin" } ] }
+{ "_id" : ObjectId("67d9cb025c76fae2cc6b140c"), "name" : "Tecnofeudalismo", "publishedDate" : ISODate("2024-01-01T00:00:00.000Z"), "authors" : [ { "name" : "Yanis Varoufakis" } ] }
 ```
 
-Using `pretty()` makes it easier to read and analyze large sets of documents in the database.
+So that there were available some extending methods, like `.pretty()` or `.toArray()` allowing to  get the query return in a more "human readable" format. This method formats the output in an easily readable JSON structure:
+
+```mongodb
+# In older versions, .pretty() pretifies an JSON output ad by-default in newer versions
+
+> db.Books.find().pretty()
+
+{
+  "_id" : ObjectId("67d9c1555c76fae2cc6b140b"),
+  "name" : "El Cerebro Musical",
+  "publishedDate" : ISODate("2025-03-18T18:54:13.978Z"),
+  "authors" : [
+    { "name" : "Daniel J. Levitin" }
+  ]
+}
+{
+  "_id" : ObjectId("67d9cb025c76fae2cc6b140c"),
+  "name" : "Tecnofeudalismo",
+  "publishedDate" : ISODate("2024-01-01T00:00:00.000Z"),
+  "authors" : [
+    { "name" : "Yanis Varoufakis" }
+  ]
+}
+```
+
+**It's important to understand that newest MondoDB versions includes by default this helpful output schema when a simple `db.<collection>.find()` query is performed, as long as is also important to be aware of this situation if you have to work with an older Mongo version.**
+
+****
 
 ---
 
@@ -1348,21 +1406,276 @@ This comparison helps in understanding MongoDB’s document-oriented approach in
 
 ## **Automatic Object IDs in MongoDB**
 
-MongoDB automatically generates a unique identifier (`_id`) for each document. This field acts similarly to a **primary key** in SQL databases and is crucial for uniquely identifying each document.
+MongoDB automatically generates a unique identifier (`_id`) for each document.   
+
+This field acts similarly to a **primary key** in SQL databases and is crucial for uniquely identifying each document.
 
 ### **Example Document with Object ID:**
 
+```mongodb
+{
+  "_id": ObjectId("507f191e810c19729de860ea"),
+  "name": "Confident Ruby",
+  "publishedDate": ISODate("2023-01-01T00:00:00Z")
+}
 ```
-{  "_id": ObjectId("507f191e810c19729de860ea"),  "name": "Confident Ruby",  "publishedDate": ISODate("2023-01-01T00:00:00Z")}
-```
 
-### **Key Points:**
-
-- The `_id` field is automatically added if not specified.
-
+* The `_id` field is automatically added if not specified.
 - It ensures each document is uniquely identifiable.
 
 - Object IDs contain encoded timestamp information, making them useful for tracking document creation times.
+
+****
+
+## **Advanced Querying with Filters and Projections**
+
+### **Filtering Documents**
+
+You can filter documents by passing a query object to the `find()` method.   
+
+For example, to find books published after a specific date:
+
+```mongodb
+MongoCourse> db.Books.find({ publishedDate: { $gt: ISODate("2023-01-01") } })
+
+
+[
+  {
+    _id: ObjectId('67d9c1555c76fae2cc6b140b'),
+    name: 'El Cerebro Musical',
+    publishedDate: ISODate('2025-03-18T18:54:13.978Z'),
+    authors: [ { name: 'Daniel J. Levitin' } ]
+  },
+  {
+    _id: ObjectId('67d9cb025c76fae2cc6b140c'),
+    name: 'Tecnofeudalismo',
+    publishedDate: ISODate('2024-01-01T00:00:00.000Z'),
+    authors: [ { name: 'Yanis Varoufakis' } ]
+  }
+]
+```
+
+****
+
+### **Projections**
+
+Projections allow you to specify which fields to include or exclude in the results. For example, to retrieve only the `name` field:
+
+```mongodb
+db.Books.find({}, { name: 1, _id: 0 })
+
+
+[
+  { name: 'El Cerebro Musical' },
+  { name: 'Tecnofeudalismo' },
+  { name: 'Pyongyang: A Journey In North Korea' }
+]
+```
+
+This query returns only the `name` field and excludes the `_id` field.
+
+****
+
+## **Querying Nested Documents and Arrays**
+
+MongoDB supports querying nested documents and arrays. For example, to find books written by a specific author:
+
+```mongodb
+MongoCourse> db.Books.find({ "authors.name": "Yanis Varoufakis" })
+[
+  {
+    _id: ObjectId('67d9cb025c76fae2cc6b140c'),
+    name: 'Tecnofeudalismo',
+    publishedDate: ISODate('2024-01-01T00:00:00.000Z'),
+    authors: [ { name: 'Yanis Varoufakis' } ]
+  }
+]
+```
+
+This query searches for documents where the `authors` array contains an object with the `name` field equal to `"Yanis Varoufakis"`.
+
+****
+
+## **Sorting and Limiting Results**
+
+### **Sorting** - `.sort()`
+
+You can sort the results using the `sort()` method. For example, to sort books by `publishedDate` in descending order:
+
+```mongodb
+MongoCourse> db.Books.find().sort({ publishedDate: -1 })
+[
+  {
+    _id: ObjectId('67d9c1555c76fae2cc6b140b'),
+    name: 'El Cerebro Musical',
+    publishedDate: ISODate('2025-03-18T18:54:13.978Z'),
+    authors: [ { name: 'Daniel J. Levitin' } ]
+  },
+  {
+    _id: ObjectId('67d9cb025c76fae2cc6b140c'),
+    name: 'Tecnofeudalismo',
+    publishedDate: ISODate('2024-01-01T00:00:00.000Z'),
+    authors: [ { name: 'Yanis Varoufakis' } ]
+  },
+  {
+    _id: ObjectId('67d9cb025c76fae2cc6b140d'),
+    name: 'Pyongyang: A Journey In North Korea',
+    publishedDate: ISODate('2003-01-01T00:00:00.000Z'),
+    authors: [ { name: 'Guy Delisle' } ]
+  }
+]
+```
+
+### **Limiting** - `.limit()`
+
+To limit the number of results, use the `limit()` method. For example, to retrieve only the first 2 books:
+
+```mongodb
+MongoCourse> db.Books.find().limit(2)
+
+
+
+[
+  {
+    _id: ObjectId('67d9c1555c76fae2cc6b140b'),
+    name: 'El Cerebro Musical',
+    publishedDate: ISODate('2025-03-18T18:54:13.978Z'),
+    authors: [ { name: 'Daniel J. Levitin' } ]
+  },
+  {
+    _id: ObjectId('67d9cb025c76fae2cc6b140c'),
+    name: 'Tecnofeudalismo',
+    publishedDate: ISODate('2024-01-01T00:00:00.000Z'),
+    authors: [ { name: 'Yanis Varoufakis' } ]
+  }
+]
+```
+
+****
+
+## **Counting Documents** - `.countDocuments()`
+
+To count the number of documents that match a query, use the `count()` method.   
+
+For example, to count all books:
+
+```mongodb
+MongoCourse> db.Books.countDocuments()
+
+
+3
+```
+
+To count books, for example, from published after a specific date:
+
+```mongodb
+MongoCourse> db.Books.countDocuments({ 
+    publishedDate: { $gt: ISODate("2023-01-01") } 
+})
+
+
+2
+```
+
+![img](./03-151_IMG02.png)
+
+****
+
+## **Debugging and Best Practices**
+
+### **Debugging Queries**
+
+- Use `.explain()` to analyze the performance of a query:
+
+```mongodb
+  MongoCourse> db.Books.find().explain("executionStats")
+  {
+    explainVersion: '1',
+    queryPlanner: {
+
+
+      namespace: 'MongoCourse.Books',
+      parsedQuery: {},
+      indexFilterSet: false,
+      queryHash: '8F2383EE',
+      planCacheShapeHash: '8F2383EE',
+      planCacheKey: '7DF350EE',
+      optimizationTimeMillis: 0,
+      maxIndexedOrSolutionsReached: false,
+      maxIndexedAndSolutionsReached: false,
+      maxScansToExplodeReached: false,
+      prunedSimilarIndexes: false,
+      winningPlan: { isCached: false, stage: 'COLLSCAN', direction: 'forward' },
+      rejectedPlans: []
+
+    },
+    executionStats: {
+
+      executionSuccess: true,
+      nReturned: 3,
+      executionTimeMillis: 0,
+      totalKeysExamined: 0,
+      totalDocsExamined: 3,
+      executionStages: {
+        isCached: false,
+        stage: 'COLLSCAN',
+        nReturned: 3,
+        executionTimeMillisEstimate: 0,
+        works: 4,
+        advanced: 3,
+        needTime: 0,
+        needYield: 0,
+        saveState: 0,
+        restoreState: 0,
+        isEOF: 1,
+        direction: 'forward',
+        docsExamined: 3
+      }
+
+    },
+    queryShapeHash: 'CC342773C26E7E652D64DECED760BE5F66658046AC863313B9690E40EA7A4BF9',
+    command: { find: 'Books', filter: {}, '$db': 'MongoCourse' },
+    serverInfo: {
+
+      host: '***',
+      port: *****,
+      version: '8.0.5',
+      gitVersion: '***'
+
+    },
+    serverParameters: {
+
+      internalQueryFacetBufferSizeBytes: 104857600,
+      internalQueryFacetMaxOutputDocSizeBytes: 104857600,
+      internalLookupStageIntermediateDocumentMaxSizeBytes: 104857600,
+      internalDocumentSourceGroupMaxMemoryBytes: 104857600,
+      internalQueryMaxBlockingSortMemoryUsageBytes: 104857600,
+      internalQueryProhibitBlockingMergeOnMongoS: 0,
+      internalQueryMaxAddToSetBytes: 104857600,
+      internalDocumentSourceSetWindowFieldsMaxMemoryBytes: 104857600,
+      internalQueryFrameworkControl: 'trySbeRestricted',
+      internalQueryPlannerIgnoreIndexWithCollationForRegex: 1
+
+    },
+    ok: 1
+  }
+```
+
+- Check for typos in field names or query operators.
+
+- Use `printjson()` to print documents in a readable format during debugging.
+
+****
+
+### **Best Practices**
+
+- Use indexes to improve query performance.
+
+- Avoid querying large datasets without filters.
+
+- Use projections to retrieve only the necessary fields.
+
+- Regularly monitor and optimize your queries using `.explain()`.
 
 ****
 
@@ -1372,7 +1685,7 @@ MongoDB automatically generates a unique identifier (`_id`) for each document. T
 
 [MongoDB **`find()`** Method Documentation](https://www.mongodb.com/docs/manual/reference/method/db.collection.find/)
 
----
+***
 
 ***
 
@@ -1404,57 +1717,74 @@ In this guide, we will explore how to query a single document in MongoDB using `
 
 To retrieve a specific document, we pass a query object to `find()`. This object specifies the condition the document must meet.
 
-### **Syntax:**
-
-```js
+```mongodb
 // Query a book by name
 
-db.books.find({ name: "OOP Programming" }).pretty()
-```
+MongoCourse> db.Books.find({ name: "Tecnofeudalismo" })
 
-### **Example Output:**
 
-```json
-[  
-    {    
-        "_id": ObjectId("507f191e810c19729de860ec"),    
-        "name": "OOP Programming",    
-        "publishedDate": ISODate("2023-03-15T00:00:00Z"),    
-        "authors": [      
-                        { "name": "John Doe" },      
-                        { "name": "Jane Doe" }    
-                    ]  
-    }
+[
+  {
+    _id: ObjectId('67d9cb025c76fae2cc6b140c'),
+    name: 'Tecnofeudalismo',
+    publishedDate: ISODate('2024-01-01T00:00:00.000Z'),
+    authors: [ { name: 'Yanis Varoufakis' } ]
+  }
 ]
 ```
 
-This query returns only documents where the `name` field matches "OOP Programming".
+This query returns only documents where the `name` field matches "Tecnofeudalismo".
 
 ---
 
 ## **Handling Multiple Matches**
 
-The `find()` method returns **all** matching documents. If multiple documents have the same `name`, they will all be included in the output.
+The `find()` method returns **all** matching documents.   
 
-### **Example:**
+If multiple documents have the same `name`, they will all be included in the output.
 
-```javascript
+```mongodb
 // Query multiple documents with the same name
 
-db.books.find({ name: "OOP Programming" }).pretty()
+MongoCourse> db.Books.find({ "authors.name" : "Guy Delisle"  })
+[
+  {
+    _id: ObjectId('67d9cb025c76fae2cc6b140d'),
+    name: 'Pyongyang: A Journey In North Korea',
+    publishedDate: ISODate('2003-01-01T00:00:00.000Z'),
+    authors: [ { name: 'Guy Delisle' } ]
+  },
+  {
+    _id: ObjectId('67d9da355c76fae2cc6b1410'),
+    name: 'Shenzen: A Travelogue from China',
+    publishedDate: ISODate('2000-01-01T00:00:00.000Z'),
+    authors: [ { name: 'Guy Delisle' } ]
+  }
+]
 ```
 
-If multiple books exist with the same title, the result will contain all of them. This behavior is different from SQL, where primary keys ensure unique values.
+If multiple books exist with the same key or key.subkey (**use .dotNotation**) the result will contain all of them.   
+
+This behavior is different from SQL, where primary keys ensure unique values.
 
 To retrieve only the first matching document, use `findOne()`:
 
-```js
+```mongodb
 // Retrieve only the first matching document
 
-db.books.findOne({ name: "OOP Programming" })
+MongoCourse> db.Books.findOne({ "authors.name" : "Guy Delisle"  })
+
+{
+  _id: ObjectId('67d9cb025c76fae2cc6b140d'),
+  name: 'Pyongyang: A Journey In North Korea',
+  publishedDate: ISODate('2003-01-01T00:00:00.000Z'),
+  authors: [ { name: 'Guy Delisle' } ]
+}
 ```
 
 This ensures that only **one** document is returned, even if multiple matches exist.
+
+![img](./03-152_IMG02.png)
 
 ---
 
@@ -1475,7 +1805,7 @@ For those familiar with SQL, the equivalent of MongoDB’s `find()` method is th
 
 [MongoDB `**findOne()**` Method Documentation:](https://www.mongodb.com/docs/manual/reference/method/db.collection.findOne/)
 
-****
+***
 
 ***
 
@@ -1529,26 +1859,19 @@ The `find()` method in MongoDB accepts two parameters:
 
 2. **Projection object** - Specifies the fields to include or exclude.
 
-### **Syntax:**
-
-```js
+```mongodb
 // Find documents with projection
 
- db.books.find(
-   { name: "Confident Ruby" }, // Query
-   { name: 1, authors: 1, _id: 0 } // Projection
- ).pretty()
-```
+MongoCourse> db.Books.find(
+{ "name" : "El Cerebro Musical" },
+{ "name" : 1, "authors" : 1, "_id" : 0 }
+)
 
-### **Example Output:**
 
-```json
 [
   {
-    "name": "Confident Ruby",
-    "authors": [
-      { "name": "Avdi Grimm" }
-    ]
+    name: 'El Cerebro Musical',
+    authors: [ { name: 'Daniel J. Levitin' } ]
   }
 ]
 ```
@@ -1567,11 +1890,38 @@ Set the desired fields to `1` (except for `_id`, which is included by default un
 
 #### **Example:**
 
-```js
+```mongodb
 // Return only the name and authors fields
 
- db.books.find({}, { name: 1, authors: 1 }).pretty()
+MongoCourse> db.Books.find( {}, { "name" : 1, "authors" : 1 } )
+
+
+
+[
+  {
+    _id: ObjectId('67d9c1555c76fae2cc6b140b'),
+    name: 'El Cerebro Musical',
+    authors: [ { name: 'Daniel J. Levitin' } ]
+  },
+  {
+    _id: ObjectId('67d9cb025c76fae2cc6b140c'),
+    name: 'Tecnofeudalismo',
+    authors: [ { name: 'Yanis Varoufakis' } ]
+  },
+  {
+    _id: ObjectId('67d9cb025c76fae2cc6b140d'),
+    name: 'Pyongyang: A Journey In North Korea',
+    authors: [ { name: 'Guy Delisle' } ]
+  },
+  {
+    _id: ObjectId('67d9da355c76fae2cc6b1410'),
+    name: 'Shenzen: A Travelogue from China',
+    authors: [ { name: 'Guy Delisle' } ]
+  }
+]
 ```
+
+![img](./03-153_IMG01.png)
 
 ### **2. Excluding Specific Fields**
 
@@ -1579,17 +1929,45 @@ Set the fields to `0` to remove them from the results.
 
 #### **Example:**
 
-```js
-// Exclude the publishedDate field
+```mongodb
+// Exclude the Authors field
 
- db.books.find({}, { publishedDate: 0 }).pretty()
+MongoCourse> db.Books.find( {}, { "authors" : 0 } )
+
+
+[
+  {
+    _id: ObjectId('67d9c1555c76fae2cc6b140b'),
+    name: 'El Cerebro Musical',
+    publishedDate: ISODate('2025-03-18T18:54:13.978Z')
+  },
+  {
+    _id: ObjectId('67d9cb025c76fae2cc6b140c'),
+    name: 'Tecnofeudalismo',
+    publishedDate: ISODate('2024-01-01T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('67d9cb025c76fae2cc6b140d'),
+    name: 'Pyongyang: A Journey In North Korea',
+    publishedDate: ISODate('2003-01-01T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('67d9da355c76fae2cc6b1410'),
+    name: 'Shenzen: A Travelogue from China',
+    publishedDate: ISODate('2000-01-01T00:00:00.000Z')
+  }
+]
 ```
-
-### **Note:**
 
 - You **cannot mix** inclusion (`1`) and exclusion (`0`) in the same query, **except for** `**_id**`.
 
 - If no projection is specified, all fields are returned by default.
+
+![img](./03-153_IMG02.png)
+
+### 
+
+- 
 
 ---
 
@@ -1604,7 +1982,7 @@ Set the fields to `0` to remove them from the results.
 
 ## **References**
 
----
+***
 
 ***
 
@@ -1626,19 +2004,63 @@ Set the fields to `0` to remove them from the results.
 
 4. MongoDB vs SQL: Handling Nested Arrays
 
+****
+
+Actual database:
+
+```mongodb
+test> db.Books.find()
+[
+  {
+    _id: ObjectId('67da1b7d040ae61e086b140b'),
+    name: 'El Cerebro Musical',
+    publishedDate: ISODate('2019-06-13T00:00:00.000Z'),
+    authors: [ { name: 'Daniel J. Levitin' } ]
+  },
+  {
+    _id: ObjectId('67da1c9ddaeedc3d506b140b'),
+    name: 'Tecnofeudalismo',
+    publishedDate: ISODate('2024-01-01T00:00:00.000Z'),
+    authors: [ { name: 'Yanis Varoufakis' } ]
+  },
+  {
+    _id: ObjectId('67da1c9ddaeedc3d506b140c'),
+    name: 'Pyongyang: A Journey In North Korea',
+    publishedDate: ISODate('2003-01-01T00:00:00.000Z'),
+    authors: [ { name: 'Guy Delisle' } ]
+  },
+  {
+    _id: ObjectId('67da207de76d6e52966b140b'),
+    name: 'Shenzen: A Travelogue from China',
+    publishedDate: ISODate('2000-01-01T00:00:00.000Z'),
+    authors: [ { name: 'Guy Delisle' } ]
+  },
+  {
+    _id: ObjectId('67da257ce76d6e52966b140c'),
+    name: '1984',
+    publishedDate: ISODate('1949-06-08T00:00:00.000Z'),
+    authors: [ { name: 'George Orwell' }, { name: 'Eric Arthur Blair' } ]
+  }
+]
+```
+
 ---
 
-When working with MongoDB, we often deal with **nested arrays** inside documents. By default, querying a document with an array field will return all elements of that array. However, there are cases where we may only want to retrieve a portion of the array rather than the full dataset.
+When working with MongoDB, we often deal with **nested arrays** inside documents.   
 
-MongoDB provides the `**$slice**` operator to limit the number of elements returned from an array field. This guide will explain how to use `$slice` to refine query results efficiently.
+By default, querying a document with an array field will return all elements of that array.   
+
+**However, there are cases where we may only want to retrieve a portion of the array rather than the full dataset.**
+
+MongoDB provides the `$slice` operator to limit the number of elements returned from an array field.   
+
+This guide will explain how to use `$slice` to refine query results efficiently.
 
 ---
 
-## **Understanding the** `**$slice**` **Operator**
+## **Understanding the** `$slice` **Operator**
 
 The `$slice` operator allows retrieving a subset of an array field when querying documents. It is used within the **projection object** of the `find()` method.
-
-### **Key Features of** `**$slice**`**:**
 
 - Limits the number of array elements returned.
 
@@ -1648,32 +2070,34 @@ The `$slice` operator allows retrieving a subset of an array field when querying
 
 ---
 
-## **Using** `**$slice**` **in Queries**
+## **Using** `$slice` **in Queries**
 
 The `$slice` operator is used within the projection part of the `find()` method.
 
-### **Syntax:**
-
-```js
+```mongodb
 // Retrieve only the first N elements of an array field
 
  db.books.find(
-   { name: "Blink" }, // Query condition
+   { name: "1984" }, // Query condition
    { authors: { $slice: 1 } } // Projection using `$slice`
- ).pretty()
+ )
 ```
 
 ### **Example Document:**
 
-```json
-ç{
-  "name": "Blink",
-  "publishedDate": "2023-01-01T00:00:00Z",
-  "authors": [
-    { "name": "Malcolm Gladwell" },
-    { "name": "Ghost Writer" }
-  ]
-}
+```mongodb
+Atlas atlas-terube-shard-0 [primary] test> db.Books.find(
+... { name : '1984'},
+... { authors : { $slice: 1  } }
+... )
+[
+  {
+    _id: ObjectId('67da257ce76d6e52966b140c'),
+    name: '1984',
+    publishedDate: ISODate('1949-06-08T00:00:00.000Z'),
+    authors: [ { name: 'George Orwell' } ]
+  }
+]
 ```
 
 The above query will return only the **first author** from the `authors` array.
@@ -1684,36 +2108,58 @@ The above query will return only the **first author** from the `authors` array.
 
 ### **Retrieving the First Element**
 
-```js
-// Return only the first author
+```mongodb
+// Return only the FIRST author value
 
  db.books.find(
    { name: "Blink" },
    { authors: { $slice: 1 } }
- ).pretty()
+ )
 ```
 
 ### **Retrieving the Last Element**
 
-```js
+```mongodb
 // Return only the last author
 
  db.books.find(
-   { name: "Blink" },
+   { name: "1984" },
    { authors: { $slice: -1 } }
- ).pretty()
+ )
+
+
+[
+  {
+    _id: ObjectId('67da257ce76d6e52966b140c'),
+    name: '1984',
+    publishedDate: ISODate('1949-06-08T00:00:00.000Z'),
+    authors: [ { name: 'Eric Arthur Blair' } ]
+  }
+]
 ```
 
 ### **Retrieving Multiple Elements from the Start**
 
-```js
-// Return the first two authors
+```mongodb
+// Return the first two element
 
  db.books.find(
-   { name: "Blink" },
+   { name: "1984" },
    { authors: { $slice: 2 } }
- ).pretty()
+ )
+
+
+[
+  {
+    _id: ObjectId('67da257ce76d6e52966b140c'),
+    name: '1984',
+    publishedDate: ISODate('1949-06-08T00:00:00.000Z'),
+    authors: [ { name: 'George Orwell' }, { name: 'Eric Arthur Blair' } ]
+  }
+]
 ```
+
+![img](./03-154_IMG03.png)
 
 ---
 
@@ -1728,7 +2174,7 @@ However, MongoDB’s `$slice` operator provides a simpler, built-in solution for
 | Retrieve first N elements of an array | `db.books.find({ name: "Blink" }, { authors: { $slice: 1 } })`  | No direct equivalent (requires **JOINs** or **subqueries**) |
 | Retrieve last element of an array     | `db.books.find({ name: "Blink" }, { authors: { $slice: -1 } })` | No direct equivalent                                        |
 
----
+***
 
 ***
 
@@ -1744,11 +2190,11 @@ However, MongoDB’s `$slice` operator provides a simpler, built-in solution for
 
 1. Understanding Document Deletion in MongoDB
 
-2. Using the `remove()` Method
+2. The deprecated, but useful, `.remove()` Method
 
-3. Deleting a Specific Document
+3. Deleting a Specific Document - `.deleteOne( {...} )`
 
-4. Deleting Multiple Documents
+4. Deleting Multiple Documents - `.deleteMany( [array] )`
 
 5. MongoDB vs SQL: Delete Queries
 
@@ -1764,11 +2210,11 @@ However, managing a database also involves removing unwanted or obsolete documen
 
 MongoDB provides multiple ways to delete documents:
 
-- `**remove()**` **(Deprecated)** – Previously used to delete documents (replaced by `deleteOne()` and `deleteMany()`).
+- `remove()` **(Deprecated)** – Previously used to delete documents (replaced by `deleteOne()` and `deleteMany()`).
 
-- `**deleteOne()**` – Removes a single document matching a query.
+- `deleteOne( {...} )` – Removes a single document matching a query.
 
-- `**deleteMany()**` – Removes all documents that match a given query.
+- `deleteMany( [array] )` – Removes all documents that match a given query.
 
 Using the appropriate method ensures that only the intended documents are removed while preserving database integrity.
 
@@ -1778,15 +2224,16 @@ Using the appropriate method ensures that only the intended documents are remove
 
 > ⚠️ **Note:** The `remove()` method is deprecated and has been replaced by `deleteOne()` and `deleteMany()`. However, we include it here for historical reference.
 
-### **Syntax:**
-
-```js
+```mongodb
 // Remove all documents that match the query
- db.books.remove({ name: "OOP Programming" })
+
+db.books.remove({ name: "Machine Learning" })
 
 // Remove only one document that matches the query
- db.books.remove({ name: "OOP Programming" }, 1)
+db.Books.remove({ name: "Data Science 101" }, 1)
 ```
+
+![img remove, deprecated, but useful](./03-155_IMG01.png)
 
 ---
 
@@ -1796,7 +2243,7 @@ To delete a single document that matches a given filter, use `deleteOne()`.
 
 ### **Syntax:**
 
-```js
+```mongodb
 // Delete one document where name is "OOP Programming"
 
 db.books.deleteOne({ name: "OOP Programming" })
@@ -1804,7 +2251,7 @@ db.books.deleteOne({ name: "OOP Programming" })
 
 ### **Example Output:**
 
-```json
+```mongodb
 { "acknowledged": true, "deletedCount": 1 }
 ```
 
@@ -1818,7 +2265,7 @@ To delete **all documents** that match a given query, use `deleteMany()`.
 
 ### **Syntax:**
 
-```js
+```mongodb
 // Delete all documents where name is "OOP Programming"
 
 db.books.deleteMany({ name: "OOP Programming" })
@@ -1826,7 +2273,7 @@ db.books.deleteMany({ name: "OOP Programming" })
 
 ### **Example Output:**
 
-```json
+```mongodb
 { "acknowledged": true, "deletedCount": 3 }
 ```
 
@@ -1841,7 +2288,7 @@ This command removes **all** documents that have `name: "OOP Programming"`.
 | Delete a single document  | `db.books.deleteOne({ name: "OOP Programming" })`  | `DELETE FROM books WHERE name = 'OOP Programming' LIMIT 1;` |
 | Delete multiple documents | `db.books.deleteMany({ name: "OOP Programming" })` | `DELETE FROM books WHERE name = 'OOP Programming';`         |
 
----
+***
 
 ***
 
@@ -1863,11 +2310,76 @@ This command removes **all** documents that have `name: "OOP Programming"`.
 
 4. MongoDB vs SQL: Nested Queries
 
+****
+
+Actual Database:
+
+```mongodb
+Atlas atlas-terube-shard-0 [primary] test> db.Books.insertOne(
+... {
+...     "name": "Blink",
+...     "publishedDate": "2024-03-10T10:00:00Z",
+...     "authors": [
+...         { "name": "Malcolm Gladwell", "active": true },
+...         { "name": "Ghost Writer", "active": true }
+...     ]
+... }
+... )
+{
+  acknowledged: true,
+  insertedId: ObjectId('67da278be76d6e52966b140d')
+}
+Atlas atlas-terube-shard-0 [primary] test> db.Books.find()
+[
+  {
+    _id: ObjectId('67da1b7d040ae61e086b140b'),
+    name: 'El Cerebro Musical',
+    publishedDate: ISODate('2019-06-13T00:00:00.000Z'),
+    authors: [ { name: 'Daniel J. Levitin' } ]
+  },
+  {
+    _id: ObjectId('67da1c9ddaeedc3d506b140b'),
+    name: 'Tecnofeudalismo',
+    publishedDate: ISODate('2024-01-01T00:00:00.000Z'),
+    authors: [ { name: 'Yanis Varoufakis' } ]
+  },
+  {
+    _id: ObjectId('67da1c9ddaeedc3d506b140c'),
+    name: 'Pyongyang: A Journey In North Korea',
+    publishedDate: ISODate('2003-01-01T00:00:00.000Z'),
+    authors: [ { name: 'Guy Delisle' } ]
+  },
+  {
+    _id: ObjectId('67da207de76d6e52966b140b'),
+    name: 'Shenzen: A Travelogue from China',
+    publishedDate: ISODate('2000-01-01T00:00:00.000Z'),
+    authors: [ { name: 'Guy Delisle' } ]
+  },
+  {
+    _id: ObjectId('67da257ce76d6e52966b140c'),
+    name: '1984',
+    publishedDate: ISODate('1949-06-08T00:00:00.000Z'),
+    authors: [ { name: 'George Orwell' }, { name: 'Eric Arthur Blair' } ]
+  },
+  {
+    _id: ObjectId('67da278be76d6e52966b140d'),
+    name: 'Blink',
+    publishedDate: '2024-03-10T10:00:00Z',
+    authors: [
+      { name: 'Malcolm Gladwell', active: true },
+      { name: 'Ghost Writer', active: true }
+    ]
+  }
+]
+```
+
 ---
 
 MongoDB provides a flexible schema design that allows documents to have **nested fields** and **embedded arrays**.   
 
-This structure is beneficial when working with complex data relationships. However, retrieving specific data from these nested structures requires special querying techniques.  
+This structure is beneficial when working with complex data relationships.   
+
+However, **retrieving specific data from these nested structures requires special querying techniques**.  
 
 In this guide, we will explore how to query **specific fields inside nested objects** using projections in MongoDB.  
 
@@ -1879,7 +2391,7 @@ In MongoDB, documents can contain **nested objects** or **arrays of objects**. T
 
 ### **Example Document with Nested Fields:**
 
-```json
+```mongodb
 {
     "name": "Blink",
     "publishedDate": "2024-03-10T10:00:00Z",
@@ -1906,25 +2418,23 @@ We can use the `find()` method to retrieve only specific **nested fields** from 
 
 ### **Syntax:**
 
-```js
+```mongodb
 // Find books where name is "Blink" and return only the authors' names  
 
-db.books.find(
-  { name: "Blink" },
-  { "authors.name": 1 }
-).pretty()
-```
+Atlas atlas-terube-shard-0 [primary] test> db.Books.find(
+... { name: "Blink" },
+... { "authors.name": 1 }
+... )
 
-### **Example Output:**
 
-```json
-{
-    "_id": ObjectId("65f9c3e45a2b1e4d8e52f654"),
-    "authors": [
-        { "name": "Malcolm Gladwell" },
-        { "name": "Ghost Writer" }
-    ]
-}
+
+
+[
+  {
+    _id: ObjectId('67da278be76d6e52966b140d'),
+    authors: [ { name: 'Malcolm Gladwell' }, { name: 'Ghost Writer' } ]
+  }
+]
 ```
 
 Here, only the `name` field inside the `authors` array is returned, **excluding** the `active` field.
@@ -1937,32 +2447,26 @@ Projections allow us to control which **nested fields** are included or excluded
 
 ### **Example:** Excluding `_id` and Returning Only Specific Fields
 
-```js
+```mongodb
 // Return only the book name and authors' names, excluding _id  
 
-db.books.find(
-  { name: "Blink" },
+Atlas atlas-terube-shard-0 [primary] test> db.Books.find(
+...   { name: "Blink" },
+...   {
+...     _id: 0,
+...     name: 1,
+...     "authors.name": 1
+...   }
+... )
+
+
+[
   {
-    _id: 0,
-    name: 1,
-    "authors.name": 1
+    name: 'Blink',
+    authors: [ { name: 'Malcolm Gladwell' }, { name: 'Ghost Writer' } ]
   }
-).pretty()
+]
 ```
-
-### **Example Output:**
-
-```json
-{
-    "name": "Blink",
-    "authors": [
-        { "name": "Malcolm Gladwell" },
-        { "name": "Ghost Writer" }
-    ]
-}
-```
-
-### **Key Notes:**
 
 - `_id: 0` explicitly **excludes** the `_id` field.
 
@@ -1972,6 +2476,10 @@ db.books.find(
 
 ---
 
+![img](./03-156_IMG01.png)
+
+****
+
 ## **MongoDB vs SQL: Nested Queries**
 
 | **Operation**                   | **MongoDB Query**                                         | **SQL Equivalent**                                     |
@@ -1979,7 +2487,7 @@ db.books.find(
 | Retrieve specific nested fields | `db.books.find({ name: "Blink" }, { "authors.name": 1 })` | `SELECT authors.name FROM books WHERE name = 'Blink';` |
 | Exclude `_id` field             | `db.books.find({}, { _id: 0, "authors.name": 1 })`        | `SELECT authors.name FROM books;`                      |
 
----
+***
 
 ***
 
@@ -2012,10 +2520,10 @@ MongoDB’s `findOne()` method is used to return the **first** document that mat
 
 ### **Syntax:**
 
-```js
+```mongodb
 // Basic findOne query
 
- db.collection.findOne({ query })
+ db.<collection>.findOne({ query })
 ```
 
 The key difference between `findOne()` and `find()` is that `findOne()` **only returns a single document** instead of a cursor containing multiple documents.
@@ -2024,32 +2532,28 @@ The key difference between `findOne()` and `find()` is that `findOne()` **only r
 
 ## **Using `findOne` to Retrieve a Single Document**
 
-Consider a `books` collection with multiple documents:
-
-```js
-db.books.find({ name: "Blink" })
-```
-
 If multiple documents match the query, all will be returned. However, using `findOne()`, only the first matching document will be retrieved:
 
-```js
-db.books.findOne({ name: "Blink" })
-```
+```mongodb
+Atlas atlas-terube-shard-0 [primary] test> db.Books.findOne(
+... { name: "Blink" }
+)
 
-### **Example Output:**
 
-```json
 {
-  "_id": ObjectId("507f1f77bcf86cd799439011"),
-  "name": "Blink",
-  "publishedDate": "2023-05-14T00:00:00Z",
-  "authors": [
-    { "name": "Malcolm Gladwell" }
+  _id: ObjectId('67da278be76d6e52966b140d'),
+  name: 'Blink',
+  publishedDate: '2024-03-10T10:00:00Z',
+  authors: [
+    { name: 'Malcolm Gladwell', active: true },
+    { name: 'Ghost Writer', active: true }
   ]
 }
 ```
 
-**Key Benefits of `findOne()`:**
+![img](./03-157_IMG01.png)
+
+ **Benefits of `findOne()`:**
 
 - Guarantees that only one document is returned.
 - Eliminates the need to iterate over multiple documents.
@@ -2084,7 +2588,7 @@ In SQL databases, retrieving a single record often involves using the `LIMIT 1` 
 
 - [**MongoDB findOne() Documentation:**](https://www.mongodb.com/docs/manual/reference/method/db.collection.findOne)
 
----
+***
 
 ***
 
@@ -2105,7 +2609,11 @@ In SQL databases, retrieving a single record often involves using the `LIMIT 1` 
 
 ## **Introduction**
 
-In real-world applications, exact string matching is rarely sufficient. Instead, developers often need to query documents based on **partial string matches**, such as searching for keywords within a larger text field. MongoDB provides **regular expressions (RegEx)** as a powerful tool to perform such queries.
+In real-world applications, exact string matching is rarely sufficient.   
+
+Instead, developers often need to query documents based on **partial string matches**, such as searching for keywords within a larger text field.   
+
+MongoDB provides **regular expressions (RegEx)** as a powerful tool to perform such queries.
 
 This guide will demonstrate how to use **MongoDB's find() method** with regular expressions to search for a portion of a string inside a document.
 
@@ -2115,22 +2623,67 @@ This guide will demonstrate how to use **MongoDB's find() method** with regular 
 
 MongoDB's `find()` method typically retrieves documents where field values match the query exactly. However, when searching for substrings or patterns within a text field, an **exact match is not practical**.
 
-Consider the following document:
+Consider the actual Books collections as :
 
-```js
-{
-  "name": "Deep Work: Rules for Focused Success in a Distracted World",
-  "publishedDate": new Date(),
-  "authors": [
-    {"name": "Cal Newport"}
-  ]
-}
+```mongodb
+Atlas atlas-terube-shard-0 [primary] test> db.Books.find()
+
+
+[
+  {
+    _id: ObjectId('67da1b7d040ae61e086b140b'),
+    name: 'El Cerebro Musical',
+    publishedDate: ISODate('2019-06-13T00:00:00.000Z'),
+    authors: [ { name: 'Daniel J. Levitin' } ]
+  },
+  {
+    _id: ObjectId('67da1c9ddaeedc3d506b140b'),
+    name: 'Tecnofeudalismo',
+    publishedDate: ISODate('2024-01-01T00:00:00.000Z'),
+    authors: [ { name: 'Yanis Varoufakis' } ]
+  },
+  {
+    _id: ObjectId('67da1c9ddaeedc3d506b140c'),
+    name: 'Pyongyang: A Journey In North Korea',
+    publishedDate: ISODate('2003-01-01T00:00:00.000Z'),
+    authors: [ { name: 'Guy Delisle' } ]
+  },
+  {
+    _id: ObjectId('67da207de76d6e52966b140b'),
+    name: 'Shenzen: A Travelogue from China',
+    publishedDate: ISODate('2000-01-01T00:00:00.000Z'),
+    authors: [ { name: 'Guy Delisle' } ]
+  },
+  {
+    _id: ObjectId('67da257ce76d6e52966b140c'),
+    name: '1984',
+    publishedDate: ISODate('1949-06-08T00:00:00.000Z'),
+    authors: [ { name: 'George Orwell' }, { name: 'Eric Arthur Blair' } ]
+  },
+  {
+    _id: ObjectId('67da278be76d6e52966b140d'),
+    name: 'Blink',
+    publishedDate: '2024-03-10T10:00:00Z',
+    authors: [
+      { name: 'Malcolm Gladwell', active: true },
+      { name: 'Ghost Writer', active: true }
+    ]
+  },
+  {
+    _id: ObjectId('67da2962e76d6e52966b140e'),
+    name: 'Deep Work: Rules for Focused Success in a Distracted World',
+    publishedDate: ISODate('2025-03-19T02:18:10.599Z'),
+    authors: [ { name: 'Cal Newport' } ]
+  }
+]
 ```
 
 A **standard** query would require an exact match:
 
-```js
-db.books.findOne({ name: "Deep Work: Rules for Focused Success in a Distracted World" })
+```mongodb
+db.books.findOne(
+... { name: "Deep Work: Rules for Focused Success in a Distracted World" }
+)
 ```
 
 This is **not flexible**. If a user searches for just **"Deep Work"**, this query would fail. To overcome this limitation, we use **regular expressions**.
@@ -2141,26 +2694,27 @@ This is **not flexible**. If a user searches for just **"Deep Work"**, this quer
 
 MongoDB supports **regular expressions (RegEx)** to search for substrings within a text field. The following query searches for the substring **"Deep Work"** anywhere within the `name` field:
 
-```js
-db.books.findOne({ name: /.*deep work.*/i })
+```mongodb
+// REGEX    /.* */i
+
+Atlas atlas-terube-shard-0 [primary] test> db.Books.findOne(
+... { name: /.*deep work.*/i }
+)
+
+
+{
+  _id: ObjectId('67da2962e76d6e52966b140e'),
+  name: 'Deep Work: Rules for Focused Success in a Distracted World',
+  publishedDate: ISODate('2025-03-19T02:18:10.599Z'),
+  authors: [ { name: 'Cal Newport' } ]
+}
 ```
 
-### **Explanation:**
+### **Explanation**
 
 - `/.*deep work.*/` → Matches any occurrence of "deep work" in the string.
 - `.*` → Wildcard characters to match anything before or after "deep work".
 - `/i` → Case-insensitive flag (matches "Deep Work" and "deep work").
-
-### **Expected Output:**
-
-```json
-{
-  "_id": ObjectId("..."),
-  "name": "Deep Work: Rules for Focused Success in a Distracted World",
-  "publishedDate": ISODate("2024-02-20T00:00:00Z"),
-  "authors": [ {"name": "Cal Newport"} ]
-}
-```
 
 ---
 
@@ -2172,21 +2726,40 @@ By default, string queries in MongoDB are **case-sensitive**. Using the `/i` fla
 
 Without `/i`:
 
-```js
-db.books.findOne({ name: /deep work/ })
+```mongodb
+Atlas atlas-terube-shard-0 [primary] test> db.Books.findOne(
+... { name: /deep work/ }
+)
+
+
+null
 ```
 
 - This query **fails** if "Deep Work" is capitalized in the document.
 
 With `/i`:
 
-```js
-db.books.findOne({ name: /deep work/i })
+```mongodb
+Atlas atlas-terube-shard-0 [primary] test> db.Books.findOne(
+... { name: /deep work/i }
+)
+
+
+{
+  _id: ObjectId('67da2962e76d6e52966b140e'),
+  name: 'Deep Work: Rules for Focused Success in a Distracted World',
+  publishedDate: ISODate('2025-03-19T02:18:10.599Z'),
+  authors: [ { name: 'Cal Newport' } ]
+}
 ```
 
 - This query **succeeds**, regardless of capitalization.
 
 ---
+
+![img](./03-158_IMG01.png)
+
+****
 
 ## **Comparison with SQL LIKE Operator**
 
@@ -2207,7 +2780,7 @@ Unlike SQL, MongoDB does **not** require explicit `%` wildcards for substring se
 - [**MongoDB find() Documentation:**](https://www.mongodb.com/docs/manual/reference/method/db.collection.find/)
 - [**MongoDB Regular Expressions:** ](https://www.mongodb.com/docs/manual/reference/operator/query/regex/)
 
----
+***
 
 ***
 
@@ -2228,7 +2801,9 @@ Unlike SQL, MongoDB does **not** require explicit `%` wildcards for substring se
 
 ---
 
-In MongoDB, documents within the same collection do not have to follow a fixed schema, meaning that some documents may contain fields that others do not. As a result, it is often necessary to check whether a specific field exists in a document before processing it.
+In MongoDB, documents within the same collection do not have to follow a fixed schema, meaning that some documents may contain fields that others do not.   
+
+As a result, it is often necessary to check whether a specific field exists in a document before processing it.
 
 This guide explores how to use the `$exists` operator to determine whether a field is present in a MongoDB document.
 
@@ -2238,7 +2813,7 @@ This guide explores how to use the `$exists` operator to determine whether a fie
 
 Since MongoDB allows flexible document structures, some documents may have fields that others do not. Consider the following example:
 
-- Some books in a `books` collection may have a `reviews` field indicating the number of reviews, while others do not.
+- Some books in a `Books` collection may have a `reviews` field indicating the number of reviews, while others do not.
 - We may need to filter documents based on whether they contain this field.
 
 Using the `$exists` operator, we can efficiently retrieve only those documents that have (or do not have) a particular field.
@@ -2251,7 +2826,7 @@ The `$exists` operator is a MongoDB query operator used to check whether a field
 
 ### **Syntax:**
 
-```js
+```mongodb
 { field: { $exists: <boolean> } }
 ```
 
@@ -2264,23 +2839,12 @@ The `$exists` operator is a MongoDB query operator used to check whether a field
 
 To find all books that include a `reviews` field, use the following query:
 
-```js
-db.books.find({ reviews: { $exists: true } })
-```
+```mongodb
+Atlas atlas-terube-shard-0 [primary] test> db.Books.find(
+... { reviews: { $exists: true } }
+)
 
-### **Example Output:**
-
-```json
-[
-  {
-    "name": "Deep Work: Rules for Focused Success in a Distracted World",
-    "publishedDate": "2024-03-10T00:00:00Z",
-    "reviews": 100,
-    "authors": [
-      { "name": "Cal Newport" }
-    ]
-  }
-]
+// (NO RESPONSE)
 ```
 
 This query retrieves only the documents that include the `reviews` field.
@@ -2291,27 +2855,57 @@ This query retrieves only the documents that include the `reviews` field.
 
 To find books that do **not** include a `reviews` field, use:
 
-```js
-db.books.find({ reviews: { $exists: false } })
-```
+```mongodb
+Atlas atlas-terube-shard-0 [primary] test> db.Books.find(
+... { reviews: { $exists: false } }
+)
 
-### **Example Output:**
-
-```json
+// However, as 'reviews' field does not exist, it returns:
 [
   {
-    "name": "The War of Art",
-    "publishedDate": "2024-03-10T00:00:00Z",
-    "authors": [
-      { "name": "Steven Pressfield" }
+    _id: ObjectId('67da1b7d040ae61e086b140b'),
+    name: 'El Cerebro Musical',
+    publishedDate: ISODate('2019-06-13T00:00:00.000Z'),
+    authors: [ { name: 'Daniel J. Levitin' } ]
+  },
+  {
+    _id: ObjectId('67da1c9ddaeedc3d506b140b'),
+    name: 'Tecnofeudalismo',
+    publishedDate: ISODate('2024-01-01T00:00:00.000Z'),
+    authors: [ { name: 'Yanis Varoufakis' } ]
+  },
+  {
+    _id: ObjectId('67da1c9ddaeedc3d506b140c'),
+    name: 'Pyongyang: A Journey In North Korea',
+    publishedDate: ISODate('2003-01-01T00:00:00.000Z'),
+    authors: [ { name: 'Guy Delisle' } ]
+  },
+  {
+    _id: ObjectId('67da207de76d6e52966b140b'),
+    name: 'Shenzen: A Travelogue from China',
+    publishedDate: ISODate('2000-01-01T00:00:00.000Z'),
+    authors: [ { name: 'Guy Delisle' } ]
+  },
+  {
+    _id: ObjectId('67da257ce76d6e52966b140c'),
+    name: '1984',
+    publishedDate: ISODate('1949-06-08T00:00:00.000Z'),
+    authors: [ { name: 'George Orwell' }, { name: 'Eric Arthur Blair' } ]
+  },
+  {
+    _id: ObjectId('67da278be76d6e52966b140d'),
+    name: 'Blink',
+    publishedDate: '2024-03-10T10:00:00Z',
+    authors: [
+      { name: 'Malcolm Gladwell', active: true },
+      { name: 'Ghost Writer', active: true }
     ]
   },
   {
-    "name": "Blink",
-    "publishedDate": "2024-03-10T00:00:00Z",
-    "authors": [
-      { "name": "Malcolm Gladwell" }
-    ]
+    _id: ObjectId('67da2962e76d6e52966b140e'),
+    name: 'Deep Work: Rules for Focused Success in a Distracted World',
+    publishedDate: ISODate('2025-03-19T02:18:10.599Z'),
+    authors: [ { name: 'Cal Newport' } ]
   }
 ]
 ```
@@ -2340,5 +2934,9 @@ This query filters out all books that do contain the `reviews` field.
 ## **References**
 
 - **MongoDB `$exists` Documentation:** [https://www.mongodb.com/docs/manual/reference/operator/query/exists/](https://www.mongodb.com/docs/manual/reference/operator/query/exists/)
+
+***
+
+***
 
 ***

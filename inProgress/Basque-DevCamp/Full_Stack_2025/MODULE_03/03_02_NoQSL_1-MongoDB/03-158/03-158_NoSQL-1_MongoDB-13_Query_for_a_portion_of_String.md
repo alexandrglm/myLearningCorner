@@ -13,7 +13,11 @@
 
 ## **Introduction**
 
-In real-world applications, exact string matching is rarely sufficient. Instead, developers often need to query documents based on **partial string matches**, such as searching for keywords within a larger text field. MongoDB provides **regular expressions (RegEx)** as a powerful tool to perform such queries.
+In real-world applications, exact string matching is rarely sufficient.   
+
+Instead, developers often need to query documents based on **partial string matches**, such as searching for keywords within a larger text field.   
+
+MongoDB provides **regular expressions (RegEx)** as a powerful tool to perform such queries.
 
 This guide will demonstrate how to use **MongoDB's find() method** with regular expressions to search for a portion of a string inside a document.
 
@@ -23,22 +27,69 @@ This guide will demonstrate how to use **MongoDB's find() method** with regular 
 
 MongoDB's `find()` method typically retrieves documents where field values match the query exactly. However, when searching for substrings or patterns within a text field, an **exact match is not practical**.
 
-Consider the following document:
+Consider the actual Books collections as :
 
-```js
-{
-  "name": "Deep Work: Rules for Focused Success in a Distracted World",
-  "publishedDate": new Date(),
-  "authors": [
-    {"name": "Cal Newport"}
-  ]
-}
+```mongodb
+Atlas atlas-terube-shard-0 [primary] test> db.Books.find()
+
+
+[
+  {
+    _id: ObjectId('67da1b7d040ae61e086b140b'),
+    name: 'El Cerebro Musical',
+    publishedDate: ISODate('2019-06-13T00:00:00.000Z'),
+    authors: [ { name: 'Daniel J. Levitin' } ]
+  },
+  {
+    _id: ObjectId('67da1c9ddaeedc3d506b140b'),
+    name: 'Tecnofeudalismo',
+    publishedDate: ISODate('2024-01-01T00:00:00.000Z'),
+    authors: [ { name: 'Yanis Varoufakis' } ]
+  },
+  {
+    _id: ObjectId('67da1c9ddaeedc3d506b140c'),
+    name: 'Pyongyang: A Journey In North Korea',
+    publishedDate: ISODate('2003-01-01T00:00:00.000Z'),
+    authors: [ { name: 'Guy Delisle' } ]
+  },
+  {
+    _id: ObjectId('67da207de76d6e52966b140b'),
+    name: 'Shenzen: A Travelogue from China',
+    publishedDate: ISODate('2000-01-01T00:00:00.000Z'),
+    authors: [ { name: 'Guy Delisle' } ]
+  },
+  {
+    _id: ObjectId('67da257ce76d6e52966b140c'),
+    name: '1984',
+    publishedDate: ISODate('1949-06-08T00:00:00.000Z'),
+    authors: [ { name: 'George Orwell' }, { name: 'Eric Arthur Blair' } ]
+  },
+  {
+    _id: ObjectId('67da278be76d6e52966b140d'),
+    name: 'Blink',
+    publishedDate: '2024-03-10T10:00:00Z',
+    authors: [
+      { name: 'Malcolm Gladwell', active: true },
+      { name: 'Ghost Writer', active: true }
+    ]
+  },
+  {
+    _id: ObjectId('67da2962e76d6e52966b140e'),
+    name: 'Deep Work: Rules for Focused Success in a Distracted World',
+    publishedDate: ISODate('2025-03-19T02:18:10.599Z'),
+    authors: [ { name: 'Cal Newport' } ]
+  }
+]
+
 ```
 
 A **standard** query would require an exact match:
 
-```js
-db.books.findOne({ name: "Deep Work: Rules for Focused Success in a Distracted World" })
+```mongodb
+db.books.findOne(
+... { name: "Deep Work: Rules for Focused Success in a Distracted World" }
+)
+
 ```
 
 This is **not flexible**. If a user searches for just **"Deep Work"**, this query would fail. To overcome this limitation, we use **regular expressions**.
@@ -49,26 +100,30 @@ This is **not flexible**. If a user searches for just **"Deep Work"**, this quer
 
 MongoDB supports **regular expressions (RegEx)** to search for substrings within a text field. The following query searches for the substring **"Deep Work"** anywhere within the `name` field:
 
-```js
-db.books.findOne({ name: /.*deep work.*/i })
+```mongodb
+// REGEX    /.* */i
+
+Atlas atlas-terube-shard-0 [primary] test> db.Books.findOne(
+... { name: /.*deep work.*/i }
+)
+
+
+{
+  _id: ObjectId('67da2962e76d6e52966b140e'),
+  name: 'Deep Work: Rules for Focused Success in a Distracted World',
+  publishedDate: ISODate('2025-03-19T02:18:10.599Z'),
+  authors: [ { name: 'Cal Newport' } ]
+}
+
 ```
 
-### **Explanation:**
+### **Explanation**
 
 - `/.*deep work.*/` → Matches any occurrence of "deep work" in the string.
 - `.*` → Wildcard characters to match anything before or after "deep work".
 - `/i` → Case-insensitive flag (matches "Deep Work" and "deep work").
 
-### **Expected Output:**
 
-```json
-{
-  "_id": ObjectId("..."),
-  "name": "Deep Work: Rules for Focused Success in a Distracted World",
-  "publishedDate": ISODate("2024-02-20T00:00:00Z"),
-  "authors": [ {"name": "Cal Newport"} ]
-}
-```
 
 ---
 
@@ -80,21 +135,41 @@ By default, string queries in MongoDB are **case-sensitive**. Using the `/i` fla
 
 Without `/i`:
 
-```js
-db.books.findOne({ name: /deep work/ })
+```mongodb
+Atlas atlas-terube-shard-0 [primary] test> db.Books.findOne(
+... { name: /deep work/ }
+)
+
+
+null
 ```
 
 - This query **fails** if "Deep Work" is capitalized in the document.
 
 With `/i`:
 
-```js
-db.books.findOne({ name: /deep work/i })
+```mongodb
+Atlas atlas-terube-shard-0 [primary] test> db.Books.findOne(
+... { name: /deep work/i }
+)
+
+
+{
+  _id: ObjectId('67da2962e76d6e52966b140e'),
+  name: 'Deep Work: Rules for Focused Success in a Distracted World',
+  publishedDate: ISODate('2025-03-19T02:18:10.599Z'),
+  authors: [ { name: 'Cal Newport' } ]
+}
+
 ```
 
 - This query **succeeds**, regardless of capitalization.
 
 ---
+
+![img](./03-158_IMG01.png)
+
+****
 
 ## **Comparison with SQL LIKE Operator**
 
@@ -141,6 +216,7 @@ So we're going to pass in this forward slash followed by a dot followed by an as
 ```js
 db.books.findOne({ name: /.*deep work.*/i })
 ```
+
 and let's run it and see if this works.
 
 Then we'll take a step back and analyze the entire expression. So you can see that that worked
@@ -153,6 +229,7 @@ Then we'll take a step back and analyze the entire expression. So you can see th
 db.books.findOne({ name: 'deep work' })
 null
 ```
+
 What exactly is happening here? Well, the first part is to have the slashes (//) because what these slashes do and this is pretty much common in just about every programming language I've ever worked in is whenever you see text in between slashes.    
 
 That typically means it's going to be a regular expression and that it's trying to match a pattern in a string.   
@@ -186,5 +263,3 @@ db.books.insert({
     ]
 });
 ```
-
-
