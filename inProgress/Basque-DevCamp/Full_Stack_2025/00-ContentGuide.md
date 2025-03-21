@@ -365,37 +365,37 @@
 
 ### JavaScript Basics
 
-|     | #      | Type | Tittle                                                               | Date |
-| --- | ------ | ---- | -------------------------------------------------------------------- | ---- |
-| [ ] | 04-001 |      | Reasons for Learning JavaScript                                      |      |
-| [ ] | 04-002 |      | Analyzing the Various Versions of JavaScript                         |      |
-| [ ] | 04-003 |      | How to Run JavaScript Programs                                       |      |
-| [ ] | 04-004 |      | How to Work with Variables in JavaScript                             |      |
-| [ ] | 04-005 |      | Understanding the Key Difference Between Var and Let Variables Types |      |
-| [ ] | 04-006 |      | Guide to JavaScript Hoisting                                         |      |
-| [ ] | 04-007 |      | Syntax for JavaScript Comments                                       |      |
-| [ ] | 04-008 |      | Comprehensive List of JavaScript Data Types                          |      |
-| [ ] | 04-009 |      | Guide to JavaScript Objects                                          |      |
-| [ ] | 04-010 |      | How to Check for Data Types in JavaScript                            |      |
-| [ ] | 04-011 |      | How to Perform Type Casting in JavaScript                            |      |
-| [ ] | 04-012 |      | Working with String Functions - Part 1                               |      |
-| [ ] | 04-013 |      | Working with String Functions - Part 2                               |      |
-| [ ] | 04-014 |      | Working with String Functions - Part 3                               |      |
-| [ ] | 04-015 |      | JavaScript Arithmetic Operators                                      |      |
-| [ ] | 04-016 |      | Guide to Compound Assignment Operators in JavaScript                 |      |
-| [ ] | 04-017 |      | Order of Operations in JavaScript                                    |      |
-| [ ] | 04-018 |      | How to Get the Average from an Array in JavaScript                   |      |
+|     | #      | Type                 | Tittle                                                               | Date       |
+| --- | ------ | -------------------- | -------------------------------------------------------------------- | ---------- |
+| [X] | 04-001 | Literacy             | Reasons for Learning JavaScript                                      | 2025-03-21 |
+| [X] | 04-002 | ECMAScript versions  | Analyzing the Various Versions of JavaScript                         | 2025-03-21 |
+| [X] | 04-003 | IDE                  | How to Run JavaScript Programs                                       | 2025-03-21 |
+| [X] | 04-004 | Variables 1          | How to Work with Variables in JavaScript                             | 2025-03-21 |
+| [X] | 04-005 | Variables 2          | Understanding the Key Difference Between Var and Let Variables Types | 2025-03-21 |
+| [X] | 04-006 | Hoisting             | Guide to JavaScript Hoisting                                         | 2025-03-21 |
+| [X] | 04-007 | Comments             | Syntax for JavaScript Comments                                       | 2025-03-21 |
+| [X] | 04-008 | Primitive Data Types | Comprehensive List of JavaScript Data Types                          | 2025-03-21 |
+| [X] | 04-009 | Objects              | Guide to JavaScript Objects                                          | 2025-03-21 |
+| [X] | 04-010 | `typeof`             | How to Check for Data Types in JavaScript                            |            |
+| [X] | 04-011 |                      | How to Perform Type Casting in JavaScript                            |            |
+| [X] | 04-012 |                      | Working with String Functions - Part 1                               |            |
+| [X] | 04-013 |                      | Working with String Functions - Part 2                               |            |
+| [X] | 04-014 |                      | Working with String Functions - Part 3                               |            |
+| [X] | 04-015 |                      | JavaScript Arithmetic Operators                                      |            |
+| [X] | 04-016 |                      | Guide to Compound Assignment Operators in JavaScript                 |            |
+| [X] | 04-017 |                      | Order of Operations in JavaScript                                    |            |
+| [X] | 04-018 |                      | How to Get the Average from an Array in JavaScript                   |            |
 
 ### JavaScript Conditionals
 
 |     | #      | Type | Tittle                                                                | Date |
 | --- | ------ | ---- | --------------------------------------------------------------------- | ---- |
-| [ ] | 04-019 |      | JavaScript Conditional Section Introduction                           |      |
-| [ ] | 04-020 |      | Basic Syntax for Using Conditionals in JavaScript                     |      |
-| [ ] | 04-021 |      | Guide to If/Else Conditionals in JavaScript                           |      |
-| [ ] | 04-022 |      | Compound Conditionals in JavaScript                                   |      |
-| [ ] | 04-023 |      | How to Build a Switch Statement in JavaScript to Check for Data Types |      |
-| [ ] | 04-024 |      | Overview of JavaScript Ternary Operator                               |      |
+| [X] | 04-019 |      | JavaScript Conditional Section Introduction                           |      |
+| [X] | 04-020 |      | Basic Syntax for Using Conditionals in JavaScript                     |      |
+| [X] | 04-021 |      | Guide to If/Else Conditionals in JavaScript                           |      |
+| [X] | 04-022 |      | Compound Conditionals in JavaScript                                   |      |
+| [X] | 04-023 |      | How to Build a Switch Statement in JavaScript to Check for Data Types |      |
+| [X] | 04-024 |      | Overview of JavaScript Ternary Operator                               |      |
 
 ### JavaScript Functions
 
