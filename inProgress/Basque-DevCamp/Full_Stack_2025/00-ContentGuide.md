@@ -363,7 +363,7 @@
 
 # MODULE 4 - JAVASCRIPT (i)
 
-### JavaScript Basics
+### JavaScript 01:     Basics
 
 |     | #      | Type                 | Tittle                                                               | Date       |
 | --- | ------ | -------------------- | -------------------------------------------------------------------- | ---------- |
@@ -384,9 +384,9 @@
 | [X] | 04-015 |                      | JavaScript Arithmetic Operators                                      |            |
 | [X] | 04-016 |                      | Guide to Compound Assignment Operators in JavaScript                 |            |
 | [X] | 04-017 |                      | Order of Operations in JavaScript                                    |            |
-| [X] | 04-018 |                      | How to Get the Average from an Array in JavaScript                   |            |
+| [X] | 04-018 | Exercise: `reduce()` | **Exercise:** How to Get the Average from an Array in JavaScript     | 2024-03-24 |
 
-### JavaScript Conditionals
+### JavaScript 02:    Conditionals
 
 |     | #      | Type | Tittle                                                                | Date |
 | --- | ------ | ---- | --------------------------------------------------------------------- | ---- |
@@ -397,45 +397,51 @@
 | [X] | 04-023 |      | How to Build a Switch Statement in JavaScript to Check for Data Types |      |
 | [X] | 04-024 |      | Overview of JavaScript Ternary Operator                               |      |
 
-### JavaScript Functions
+### JavaScript 03:    Functions
 
 |     | #      | Type | Tittle                                                             | Date |
 | --- | ------ | ---- | ------------------------------------------------------------------ | ---- |
-| [ ] | 04-025 |      | Section Introduction: Introduction to JavaScript Functions         |      |
-| [ ] | 04-026 |      | Basic Syntax for Building Functions in JavaScript                  |      |
-| [ ] | 04-027 |      | How Variable Scope Works in JavaScript                             |      |
-| [ ] | 04-028 |      | Differences Between Function Expressions and Function Declarations |      |
-| [ ] | 04-029 |      | How to Work with Function Arguments in JavaScript                  |      |
-| [ ] | 04-030 |      | Function Arguments: Reference vs Value                             |      |
-| [ ] | 04-031 |      | Introduction to JavaScript Closures                                |      |
-| [ ] | 04-032 |      | Introduction to HTML Scripting with Built in JavaScript Functions  |      |
-| [ ] | 04-033 |      | Introduction to the 'this' Keyword in JavaScript                   |      |
-| [ ] | 04-034 |      | How to Use the 'this' Keyword in JavaScript Programs               |      |
-| [ ] | 04-035 |      | Remove the First and Last Element from a JavaScript Array          |      |
+| [X] | 04-025 |      | Section Introduction: Introduction to JavaScript Functions         |      |
+| [X] | 04-026 |      | Basic Syntax for Building Functions in JavaScript                  |      |
+| [X] | 04-027 |      | How Variable Scope Works in JavaScript                             |      |
+| [X] | 04-028 |      | Differences Between Function Expressions and Function Declarations |      |
+| [X] | 04-029 |      | How to Work with Function Arguments in JavaScript                  |      |
+| [X] | 04-030 |      | Function Arguments: Reference vs Value                             |      |
 
-### JavaScript Arrays
+### JavaScript 04:    Closures
 
-|     | #      | Type | Tittle                                                                         | Date |
-| --- | ------ | ---- | ------------------------------------------------------------------------------ | ---- |
-| [ ] | 04-036 |      | Section Introduction: Introduction to JavaScript Arrays                        |      |
-| [ ] | 04-037 |      | How to Create Arrays in JavaScript                                             |      |
-| [ ] | 04-038 |      | Course Checkpoint 7                                                            |      |
-| [ ] | 04-039 |      | Guide to Adding and Removing Array Elements in JavaScript                      |      |
-| [ ] | 04-040 |      | How to Use the Splice Function in JavaScript to Remove Specific Array Elements |      |
-| [ ] | 04-041 |      | Guide to For Loops in JavaScript                                               |      |
-| [ ] | 04-042 |      | How to Loop Through a JavaScript Object                                        |      |
-| [ ] | 04-043 |      | Guide to While and Do/While Loops in JavaScript                                |      |
+|     | #      | Type | Tittle                                                            | Date |
+| --- | ------ | ---- | ----------------------------------------------------------------- | ---- |
+| [X] | 04-031 |      | Introduction to JavaScript Closures                               |      |
+| [X] | 04-032 |      | Introduction to HTML Scripting with Built in JavaScript Functions |      |
+| [X] | 04-033 |      | Introduction to the 'this' Keyword in JavaScript                  |      |
+| [X] | 04-034 |      | How to Use the 'this' Keyword in JavaScript Programs              |      |
+|     |        |      |                                                                   |      |
 
-### Automating Tasks with JavaScript
+### JavaScript 05:     Arrays
+
+|     | #      | Type                         | Tittle                                                                         | Date       |
+| --- | ------ | ---------------------------- | ------------------------------------------------------------------------------ | ---------- |
+| [X] | 04-035 | Arrays Introductory Exercise | Remove the First and Last Element from a JavaScript Array                      | 2025-03-24 |
+| [X] | 04-036 |                              | Section Introduction: Introduction to JavaScript Arrays                        |            |
+| [X] | 04-037 |                              | How to Create Arrays in JavaScript                                             |            |
+| [X] | 04-038 |                              | Course Checkpoint 7                                                            |            |
+| [X] | 04-039 |                              | Guide to Adding and Removing Array Elements in JavaScript                      |            |
+| [X] | 04-040 |                              | How to Use the Splice Function in JavaScript to Remove Specific Array Elements |            |
+| [X] | 04-041 |                              | Guide to For Loops in JavaScript                                               |            |
+| [X] | 04-042 |                              | How to Loop Through a JavaScript Object                                        |            |
+| [X] | 04-043 |                              | Guide to While and Do/While Loops in JavaScript                                |            |
+
+### JavaScript 06 :    Automating Tasks with JavaScript
 
 |     | #      | Type | Tittle                                                                                | Date |
 | --- | ------ | ---- | ------------------------------------------------------------------------------------- | ---- |
-| [ ] | 04-044 |      | Section Introduction: Introduction to Automating Tasks in the Browser with JavaScript |      |
-| [ ] | 04-045 |      | Running Google Search Queries in JavaScript                                           |      |
-| [ ] | 04-046 |      | How to Pull Images from Instagram with JavaScript                                     |      |
-| [ ] | 04-047 |      | Auto Following Accounts and Hashtags on LinkedIn with JavaScript                      |      |
+| [X] | 04-044 |      | Section Introduction: Introduction to Automating Tasks in the Browser with JavaScript |      |
+| [X] | 04-045 |      | Running Google Search Queries in JavaScript                                           |      |
+| [X] | 04-046 |      | How to Pull Images from Instagram with JavaScript                                     |      |
+| [X] | 04-047 |      | Auto Following Accounts and Hashtags on LinkedIn with JavaScript                      |      |
 
-### Modern JavaScript
+### JavaScript 07:    Modern JavaScript
 
 |     | #      | Type | Tittle                                                                            | Date |
 | --- | ------ | ---- | --------------------------------------------------------------------------------- | ---- |
