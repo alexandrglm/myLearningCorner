@@ -1,6 +1,115 @@
-# MODULE 04 - 007: JavaScript
+# MODULE 04-007: JavaScript
 
 ## Comments
+
+---
+
+## 1. Understanding Comments in JavaScript
+
+## 2. Single-Line Comments
+
+## 3. Multi-Line Comments
+
+## 4. Best Practices for Using Comments
+
+---
+
+Comments in JavaScript are a way to add notes within your code that do not affect its execution. They help in documenting the code, making it more readable and understandable for other developers (or even for yourself in the future). JavaScript supports two types of comments: **single-line** and **multi-line**.
+
+While comments can be helpful, it is essential to use them intentionally and keep them updated as the code evolves. Overusing comments or failing to maintain them can lead to confusion, especially if the comment no longer accurately describes the functionality of the code.
+
+---
+
+## 1. Understanding Comments in any language
+
+Every programming language provides a way to include comments in the code.   
+
+Comments help developers understand the purpose of certain pieces of code and are ignored by the JavaScript engine when executing the script.
+
+### Why Use Comments?
+
+- **Documentation:** Helps describe the purpose of specific parts of the code.
+- **Debugging:** Allows temporarily disabling parts of the code without deleting them.
+- **Collaboration:** Makes it easier for other developers to understand the logic.
+
+---
+
+## 2. Single-Line Comments
+
+Single-line comments start with `//` and everything after it on that line is ignored by JavaScript.
+
+```javascript
+// This is a single-line comment
+console.log("Hello, World!"); // This is another comment
+```
+
+In the example above, the first line is a comment, and the second line contains code followed by a comment explaining the statement.
+
+---
+
+## 3. Multi-Line Comments
+
+Multi-line comments allow commenting on multiple lines at once. They start with `/*` and end with `*/`.
+
+# 
+
+```javascript
+/*
+   This is a multi-line comment.
+   You can add multiple lines of text here.
+   Everything within these symbols is ignored by JavaScript.
+*/
+console.log("Hello, World!");
+```
+
+Multi-line comments are useful for explaining complex code, providing documentation, or temporarily disabling sections of code for debugging.
+
+---
+
+## 4. Best Practices for Using Comments
+
+1. **Keep comments up to date:** Outdated comments can mislead developers and cause confusion.
+2. **Use comments only when necessary:** Over-commenting can make code harder to read. Strive for clear and self-explanatory code.
+3. **Use meaningful variable and function names:** This reduces the need for excessive commenting.
+4. **Avoid obvious comments:** Do not comment on trivial statements (e.g., `// Declare a variable` when it's evident from the code).
+5. **Use comments to explain why, not how:** The code itself should describe *how* it works, but comments should provide insights into *why* certain decisions were made.
+
+---
+
+## References
+
+- [MDN Web Docs - Comments](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Comments)
+- [W3Schools - JavaScript Comments](https://www.w3schools.com/js/js_comments.asp)
+
+---
+
+### Example Code:
+
+```javascript
+// #04-007: Commentaries in JS
+
+console.log('This guide has no executable code xD')
+
+// This is a single-line comment
+
+/*
+While this is ...
+... a multi-line ...
+    comment!
+
+Here, you can write as you need
+    with
+        no
+            indentation
+                        nor
+                            multi-line
+                                    problems
+*/
+
+// Use comments in a proper and wise way
+```
+
+This guide covers the proper use of comments in JavaScript, their syntax, and best practices to ensure they remain useful in your codebase.
 
 ---
 
@@ -28,15 +137,15 @@ If I do `console.log('Hi there'); // Here is another comment`
 
 You'll see this as you go through documentation and as you get further along on your javascript journey you'll see this happen quite a bit where a developer will have a single line of code and then they want to describe something that is just on that line. And so this is a good way of doing it. Now another way if you want to have multi-line comments is to use this syntax, a slash followed by an Asterix
 
-```/*
-       put anything you 
-       want here on 
-       multiple lines 
-    */```
+```javascript
+/*
+put anything you 
+    want here on 
+        multiple lines 
+*/
+```
 
 and then you close it off with an Asterix and other slash and then everything inside of there is going to be contained in that comment and nothing is going to happen. If you run this entire program right here you can see the only thing that gets run is the one `console.log` line of code. Everything else is considered a comment. That is the syntax for both types of comments that you can use in javascript.
-
-
 
 ```javascript
 // You can put anything you want here

@@ -1,6 +1,132 @@
-# MODULE 04 - 006: JavaScript, Variables (3)
+# MODULE 04 - 006: JavaScript - Variables (3)
 
 ## Hoisting
+
+---
+
+1. What is Hoisting?
+2. How JavaScript Handles Hoisting
+3. Hoisting with `var`, `let`, and `const`
+4. Best Practices to Avoid Hoisting Issues
+
+---
+
+JavaScript **Hoisting** is a fundamental concept that determines how variables and functions are interpreted before the code is executed.   
+
+Understanding hoisting helps in avoiding potential errors related to variable declarations and assignments.
+
+---
+
+## **What is Hoisting?**
+
+Hoisting refers to JavaScript's behavior of moving **variable and function declarations** to the top of their respective scopes during the compilation phase.   
+
+However, only **declarations** are hoisted, not **initializations**.
+
+For example:
+
+```javascript
+console.log(name);
+var name = "Kristine"; // Output: undefined
+```
+
+The variable `name` is hoisted, but its assignment remains in place. This leads to an `undefined` value when `console.log(name);` is executed.
+
+---
+
+## **How JavaScript Handles Hoisting**
+
+When JavaScript runs a script, it first scans for variable and function declarations and moves them to the top of their scope. However, **only the declarations** are hoisted, not their assigned values.
+
+Consider this example:
+
+```javascript
+console.log(age);
+var age = 15;
+```
+
+Internally, JavaScript interprets the code as:
+
+```javascript
+var age;
+console.log(age); // undefined
+age = 15;
+```
+
+This behavior occurs because JavaScript **hoists only the declaration (`var age;`)**, but the assignment (`age = 15;`) remains in place.
+
+---
+
+## **Hoisting with `var`, `let`, and `const`**
+
+- **`var` is hoisted** but initialized as `undefined`.
+- **`let` and `const` are hoisted**, but they remain in a **temporal dead zone** until assigned a value, leading to a `ReferenceError` if accessed before declaration.
+
+### Example:
+
+```javascript
+console.log(myVar); // undefined
+var myVar = 10;
+
+console.log(myLet); // ReferenceError
+let myLet = 20;
+
+console.log(myConst); // ReferenceError
+const myConst = 30;
+```
+
+---
+
+## **Best Practices to Avoid Hoisting Issues**
+
+To prevent unexpected behaviors due to hoisting, follow these best practices:
+
+1. **Always declare variables at the beginning of their scope.**
+2. **Use `let` and `const` instead of `var`** to avoid unintentional hoisting issues.
+3. **Declare and initialize variables before using them.**
+
+### Correct Usage:
+
+```javascript
+let userName = "Jordan";
+console.log(userName); // Jordan
+```
+
+---
+
+## **Code Examples**
+
+### **Hoisted Variables**
+
+```javascript
+name = "Kristine";
+console.log(name); // 'Kristine'
+var name;
+```
+
+### **Initializers Not Hoisted**
+
+```javascript
+console.log(age); // undefined
+var age = 33;
+```
+
+### **Hoisting with `let` and `const`**
+
+```javascript
+console.log(myVar); // undefined
+var myVar = 10;
+
+console.log(myLet); // ReferenceError
+let myLet = 20;
+```
+
+---
+
+## **References**
+
+- **MDN Web Docs on Hoisting**: [Hoisting - MDN Web Docs Glossary: Definitions of Web-related terms | MDN](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting)
+- **JavaScript Info - Hoisting**: https://javascript.info/var
 
 ****
 
@@ -12,7 +138,11 @@ In this lesson we'll examine what JavaScript Hoisting is and how it affects when
 
 We've talked about variables. How to define them, how into reassign values, we've talked about the differences between the `let` and `var`, and now we're going to talk about something that is pretty much specific to javascript. 
 
-Very few programming languages work with this topic the way that javascript does. The topic is called `hoisting`. `Hoisting` is essentially a very specific way that the javascript interpreter actually reads variables. So we're going to go through some examples to see how this works. What this is going to essentially be related to, is where you should define your variables in your program. If you define them in the wrong order then you might run into some odd types of bugs. The way that `hoisting` works is, I'm not going to declare a variable I'm just going to assign a variable. If I have a variable like this `name = 'Kristine';` and type out `console.log(name);`
+Very few programming languages work with this topic the way that javascript does. The topic is called `hoisting`.  
+
+`Hoisting` is essentially a very specific way that the javascript interpreter actually reads variables.  
+
+ So we're going to go through some examples to see how this works. What this is going to essentially be related to, is where you should define your variables in your program. If you define them in the wrong order then you might run into some odd types of bugs. The way that `hoisting` works is, I'm not going to declare a variable I'm just going to assign a variable. If I have a variable like this `name = 'Kristine';` and type out `console.log(name);`
 
 Notice I've not used `var` or `let` but with `Hoisting` what I can actually do is say `var name;` at the bottom. If I run this code it prints out Kristine. 
 

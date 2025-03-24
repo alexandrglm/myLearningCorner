@@ -1,6 +1,126 @@
-# MODULE 04 - 004: JavaScript, Variables (1)
+# MODULE 04-004: JavaScript, Variables (1)
 
 ## How to Work with Variables in JavaScript
+
+---
+
+1. Understanding Variables in JavaScript
+2. Declaring and Assigning Variables
+3. Using `var` vs `let`
+4. Defining Multiple Variables at Once
+
+---
+
+Variables in JavaScript are fundamental building blocks for storing and managing data. They allow developers to store information, manipulate values, and reference data efficiently throughout a program. JavaScript offers multiple ways to declare variables, with `var` and `let` being the most commonly used keywords.
+
+---
+
+## Understanding Variables in JavaScript
+
+A **variable** in JavaScript acts as a container for storing data. It holds different types of values, such as strings, numbers, objects, or arrays, and can be accessed or modified throughout the program.
+
+### Declaring a Variable
+
+To declare a variable, you use either `var`, `let`, or `const`.
+
+```javascript
+var name = "Kristine";
+let age = 12;
+```
+
+Each declaration has different properties regarding **scope**, **reassignment**, and **hoisting**, which we will explore in later guides.
+
+---
+
+## Declaring and Assigning Variables
+
+You can assign values to variables upon declaration or later in the code:
+
+```javascript
+var city;
+city = "Scottsdale";
+```
+
+This flexibility is helpful when working with dynamic data that changes throughout the execution of the script.
+
+To display variable values, you can use `console.log()`:
+
+```javascript
+console.log(city); // Output: Scottsdale
+```
+
+---
+
+## Using `var` vs `let`
+
+JavaScript provides different ways to declare variables, but `var` and `let` behave differently:
+
+### `var` - Function Scoped
+
+```javascript
+var message = "Hello";
+var message = "Goodbye"; // Allowed
+console.log(message); // Output: Goodbye
+```
+
+### `let` - Block Scoped
+
+```javascript
+let status = "Active";
+let status = "Inactive"; // Error: Identifier 'status' has already been declared
+```
+
+Using `let` prevents accidental redeclarations, which makes the code more reliable.
+
+---
+
+## Defining Multiple Variables at Once
+
+JavaScript allows declaring multiple variables in a single statement:
+
+```javascript
+var name, city, age;
+name = "Kristine";
+city = "Scottsdale";
+age = 12;
+```
+
+This technique is useful when defining multiple variables that will be assigned values later.
+
+Using `console.log()` to display all values:
+
+```javascript
+console.log(name, city, age); // Output: Kristine Scottsdale 12
+```
+
+This approach is often used in real-world applications where variables are initialized but filled with data dynamically.
+
+---
+
+## Resources
+
+- [MDN Web Docs - Variables](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Variables)
+- [W3Schools - JavaScript Variables](https://www.w3schools.com/js/js_variables.asp)
+
+---
+
+## Coding Exercise
+
+```javascript
+/*
+Coding Exercise:
+
+Create 2 variables, called cat and dog respectively, and set their values to something.
+*/
+```
+
+
+
+
+
+****
+
+## Video lesson Speech
 
 This guide examines how to work with variables in JavaScript, including:
  how to store data in variables, how to define multiple variables at the

@@ -365,26 +365,26 @@
 
 ### JavaScript 01:     Basics
 
-|     | #      | Type                 | Tittle                                                               | Date       |
-| --- | ------ | -------------------- | -------------------------------------------------------------------- | ---------- |
-| [X] | 04-001 | Literacy             | Reasons for Learning JavaScript                                      | 2025-03-21 |
-| [X] | 04-002 | ECMAScript versions  | Analyzing the Various Versions of JavaScript                         | 2025-03-21 |
-| [X] | 04-003 | IDE                  | How to Run JavaScript Programs                                       | 2025-03-21 |
-| [X] | 04-004 | Variables 1          | How to Work with Variables in JavaScript                             | 2025-03-21 |
-| [X] | 04-005 | Variables 2          | Understanding the Key Difference Between Var and Let Variables Types | 2025-03-21 |
-| [X] | 04-006 | Hoisting             | Guide to JavaScript Hoisting                                         | 2025-03-21 |
-| [X] | 04-007 | Comments             | Syntax for JavaScript Comments                                       | 2025-03-21 |
-| [X] | 04-008 | Primitive Data Types | Comprehensive List of JavaScript Data Types                          | 2025-03-21 |
-| [X] | 04-009 | Objects              | Guide to JavaScript Objects                                          | 2025-03-21 |
-| [X] | 04-010 | `typeof`             | How to Check for Data Types in JavaScript                            |            |
-| [X] | 04-011 |                      | How to Perform Type Casting in JavaScript                            |            |
-| [X] | 04-012 |                      | Working with String Functions - Part 1                               |            |
-| [X] | 04-013 |                      | Working with String Functions - Part 2                               |            |
-| [X] | 04-014 |                      | Working with String Functions - Part 3                               |            |
-| [X] | 04-015 |                      | JavaScript Arithmetic Operators                                      |            |
-| [X] | 04-016 |                      | Guide to Compound Assignment Operators in JavaScript                 |            |
-| [X] | 04-017 |                      | Order of Operations in JavaScript                                    |            |
-| [X] | 04-018 | Exercise: `reduce()` | **Exercise:** How to Get the Average from an Array in JavaScript     | 2024-03-24 |
+|     | #      | Type                                                                                                                                | Tittle                                                               | Date       |
+| --- | ------ | ----------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- | ---------- |
+| [X] | 04-001 | Literacy                                                                                                                            | Reasons for Learning JavaScript                                      | 2025-03-21 |
+| [X] | 04-002 | ECMAScript versions                                                                                                                 | Analyzing the Various Versions of JavaScript                         | 2025-03-21 |
+| [X] | 04-003 | IDE                                                                                                                                 | How to Run JavaScript Programs                                       | 2025-03-21 |
+| [X] | 04-004 | Variables 1                                                                                                                         | How to Work with Variables in JavaScript                             | 2025-03-21 |
+| [X] | 04-005 | Variables 2                                                                                                                         | Understanding the Key Difference Between Var and Let Variables Types | 2025-03-21 |
+| [X] | 04-006 | Hoisting                                                                                                                            | Guide to JavaScript Hoisting                                         | 2025-03-21 |
+| [X] | 04-007 | Comments                                                                                                                            | Syntax for JavaScript Comments                                       | 2025-03-21 |
+| [X] | 04-008 | Primitive Data Types                                                                                                                | Comprehensive List of JavaScript Data Types                          | 2025-03-21 |
+| [X] | 04-009 | Objects                                                                                                                             | Guide to JavaScript Objects                                          | 2025-03-21 |
+| [X] | 04-010 | `typeof`                                                                                                                            | How to Check for Data Types in JavaScript                            | 2025-03-24 |
+| [X] | 04-011 | Data types parsing -`String()`, `.toString()`, `Number()`, `.parseInt()`, `.parseFloat()`, `Number(true / false)`, `Boolean(0 / 1)` | How to Perform Type Casting in JavaScript                            | 2025-03-24 |
+| [X] | 04-012 | String Methods 1: `.length`, `len()`, `.charAt(index)`, `.concat()`, `.includes()`, `.startsWith()`, `.endsWith()`,                 | Working with String Functions - Part 1                               | 2025-03-24 |
+| [X] | 04-013 | Strings Methods 2: `.repeat()`, `.match()`, `.replace()`, `.search()`, `.indexOf()`, `.lastIndexOf()`,                              | Working with String Functions - Part 2                               | 2025-03-24 |
+| [X] | 04-014 |                                                                                                                                     | Working with String Functions - Part 3                               |            |
+| [X] | 04-015 |                                                                                                                                     | JavaScript Arithmetic Operators                                      |            |
+| [X] | 04-016 |                                                                                                                                     | Guide to Compound Assignment Operators in JavaScript                 |            |
+| [X] | 04-017 |                                                                                                                                     | Order of Operations in JavaScript                                    |            |
+| [X] | 04-018 | Exercise: `reduce()`                                                                                                                | **Exercise:** How to Get the Average from an Array in JavaScript     | 2024-03-24 |
 
 ### JavaScript 02:    Conditionals
 

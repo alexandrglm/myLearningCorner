@@ -4,6 +4,163 @@
 
 ---
 
+### 1. Boolean Data Type
+
+### 2. Null Data Type
+
+### 3. Undefined Data Type
+
+### 4. Number Data Type
+
+### 5. String Data Type
+
+### 6. Symbol Data Type
+
+### About Weak Typing -> ANY data type allowed
+
+---
+
+JavaScript provides several **primitive data types**, which categorize different forms of data we work with in our programs. Understanding these types is essential for writing efficient and error-free code.
+
+A **data type** defines the kind of value a variable can store. For example, some values represent **numbers**, while others represent **text** (strings), **true/false** conditions (booleans), or even special types like **null** and **undefined**.
+
+JavaScript is a **dynamically typed language**, meaning we don't have to explicitly declare a variable's type—it is determined automatically by the value assigned.
+
+---
+
+## 1. Boolean Data Type
+
+A **Boolean** has only two possible values: `true` or `false`.
+
+Example:
+
+```js
+var truthy = true;
+var notTruthy = false;
+
+console.log(truthy); // Output: true
+```
+
+Booleans are often used in conditions:
+
+```js
+var isUserLoggedIn = false;
+
+if (isUserLoggedIn) {
+    console.log("Welcome back!");
+} else {
+    console.log("Please log in.");
+}
+```
+
+****
+
+## 2. Null Data Type
+
+The **null** value represents the intentional absence of a value.
+
+Anyway, `null`is **always** considered as a number.
+
+```js
+var absenceOfValue = null;
+
+console.log(absenceOfValue);
+```
+
+****
+
+## 3. Undefined Data Type
+
+`undefined` means a variable has been declared but has **not been assigned** a value.
+
+```js
+var notDefined;
+
+console.log(notDefined); // Output: undefined
+```
+
+The key difference between `null` and `undefined` is that **null** is an explicitly assigned value, whereas `undefined` means a variable has been declared but not initialized.
+
+****
+
+## 4. Number Data Type
+
+JavaScript **numbers** include both integers and floating-point values.
+
+```js
+var age = 25;
+var price = 99.99;
+
+console.log(age);   // Output: 25
+console.log(price); // Output: 99.99
+```
+
+JavaScript does not differentiate between **integers** and **floating-point numbers**; both are represented as `Number`.
+
+
+
+****
+
+## 5. String Data Type
+
+A **string** is a sequence of characters enclosed in quotes (`""` or `''`).
+
+```js
+var firstName = "Alice";
+var greeting = 'Hello, world!';
+
+console.log(firstName); // Output: Alice
+console.log(greeting);  // Output: Hello, world!
+```
+
+You can use either **single** (`'`) or **double** (`"`) quotes.
+
+****
+
+## 6. Symbol Data Type
+
+**Symbol** is a unique and immutable data type introduced in **ES6**.   
+
+It is mainly used for creating unique object properties.
+
+```javascript
+var uniqueId = Symbol("id");
+
+console.log(uniqueId); // Output: Symbol(id)
+```
+
+Symbols are **guaranteed to be unique**, even if they have the same description.
+
+
+
+****
+
+## JavaScript's Dynamic/Weak Typing:     'any' is allowed
+
+Unlike strong typed languages (like Java or C++), JavaScript **dynamically assigns types**.
+
+For example, a variable can hold different types at different times:
+
+```js
+var dynamicVar = "Hello"; // String
+console.log(typeof dynamicVar); // Output: string
+
+dynamicVar = 42; // Now it's a Number
+console.log(typeof dynamicVar); // Output: number
+```
+
+This flexibility allows for faster development but also introduces potential errors when unexpected type changes occur.
+
+****
+
+## Resources
+
+- [MDN Web Docs - JavaScript Data Types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
+
+- [W3Schools - JavaScript Data Types](https://www.w3schools.com/js/js_datatypes.asp)
+
+---
+
 ## Video lesson Speech
 
 This lesson walks through each of the JavaScript data types. Additionally, we'll discuss how JavaScript utilizes dynamic typing.
@@ -153,27 +310,77 @@ but inside of it is the actual foo. If we're to use this in an object which we'r
 That is the full set of data types in javascript. Once again that's `boolean` `null` `undefined` `number` `string` and `symbol` in the next guide we're going to talk about the very important type of component in javascript development that we're going to be using out this entire course so I wanted to dedicate an entire lesson to it. And that is the object.
 
 ```javascript
-// Boolean
+// 04-008:  Primitive Data Types
+
+/*
+About Weak typing language as JS is:
+
+It means that ANY type of data can be assigned
+and reassigned to a variable.
+*/
+
+var dynamicVar = 'I am a String';
+console.log(typeof dynamicVar);
+
+dynamicVar = 42;
+console.log(typeof dynamicVar) // Now, it's a number
+
+dynamicVar = 'I am a String again. I can be ANY data type'
+
+
+// Primitive Data Types
+
+// 1. Boolean Data Type
+
 var truthy = true;
-var notTruthy = false;
+var nonTruthy = false;
 
-// Null
-var nully = null;
+var isUserLogged = false;
 
-// Undefined
+if (isUserLogged) {
+
+    console.log('The user is logged in');
+
+} else {
+    console.log('The user is not logged in')
+}
+
+// 2. Null Data Type
+
+var absenceOfValue = null;
+
+console.log(absenceOfValue); // Remenber, null is always treated as Number
+
+
+// 3. Undefined Data Type
+
 var notDefined;
 
-// Number
-var age = 12;
+console.log(notDefined);
 
-// String
-var name = "Kristine";
-var nameTwo = 'Jordan';
+// 4. Number Data Type
 
-// Symbol
-var mySym = Symbol('foo');
+var age = 25;
+var price = 99.99;
 
-console.log(mySym);
+console.log(age);
+console.log(price);
+
+// 5. String Data Type
+
+var firstName = "Alice";
+var greeting = 'Hello World!';
+
+console.log(firstName);
+console.log(greeting);
+
+// 6. Symbol Data Type (Will be mentioned in Modern JS section)
+
+var uniqueId = Symbol('id');
+
+console.log(uniqueId);
+
+
 ```
 
 ## Resources
