@@ -4,6 +4,154 @@
 
 ---
 
+1. Defining an Object
+
+2. Accessing Object Properties
+
+3. Modifying Object Properties
+
+4. Working with Nested Objects
+
+5. Dynamically Adding Properties
+
+
+
+****
+
+In JavaScript, **objects** are one of the most fundamental structures used in programming. They allow us to store, organize, and manipulate data efficiently.  
+
+An **object** is essentially a collection of **key-value pairs**, where each key (also called a   property) is a unique identifier for a piece of data stored inside the object.
+
+Objects are widely used in **functions, APIs, data storage**, and more, making them an essential concept to master.
+
+****
+
+
+
+## 1. Defining an Object
+
+To define an object in JavaScript, use **curly braces `{}`** and specify key-value pairs inside.
+
+```js
+var user = { name: 'Kristine' };
+
+console.log(user); // { name: 'Kristine' }
+```
+
+****
+
+
+
+## 2. Accessing Object Properties
+
+There are two ways to **retrieve** a value from an object:
+
+
+
+**Dot Notation** (Preferred)
+
+```js
+console.log(user.name); // Output: Kristine
+```
+
+
+
+**Bracket Notation** (Useful for dynamic keys)
+
+```js
+console.log(user["name"]); // Output: Kristine
+```
+
+****
+
+## 3. Modifying Object Properties
+
+Objects in JavaScript are **mutable**, meaning their values can be updated.
+
+```js
+user.name = 'Jordan';
+
+console.log(user.name); // Output: Jordan
+```
+
+****
+
+## 4. Working with Nested Objects
+
+Objects can contain **other objects** as values.
+
+```js
+var user = {
+    name: 'Kristine',
+    age: 12,
+    city: 'Scottsdale',
+    grades: {
+        math: 90,
+        science: 80,
+        languageArts: 100
+    }
+};
+```
+
+To access a **nested property**, use **dot notation**:
+
+```js
+user.grades.coding = 99;
+
+console.log(user.grades); 
+
+/*
+{
+  "math": 90,
+  "science": 80,
+  "languageArts": 100,
+  "coding": 99
+}
+*/
+```
+
+This feature makes objects highly flexible for **storing and updating** data dynamically.
+
+****
+
+## In JavaScript, Objects are King.
+
+#### If you Understand Objects, you Understand JavaScript.
+
+* **Objects** are containers for **Properties** and **Methods**.
+
+* **Properties** are named **Values**.
+
+* **Methods** are **Functions** stored as **Properties**.
+
+* **Properties** can be primitive values, functions, or even other objects.
+
+
+
+In JavaScript, almost "everything" is an object.
+
+- Objects are objects
+- Maths are objects
+- Functions are objects
+- Dates are objects
+- Arrays are objects
+- Maps are objects
+- Sets are objects
+
+All JavaScript values, except primitive data types, are objects.
+
+****
+
+## Resources
+
+- [MDN Web Docs - JavaScript Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
+
+- [W3Schools - JavaScript Objects](https://www.w3schools.com/js/js_objects.asp)
+
+
+
+---
+
 ## Video lesson Speech
 
 This guide explains how to work with JavaScript objects. This will 
@@ -86,8 +234,6 @@ user.grades.coding = 95;
 
 - [Source code](https://github.com/rails-camp/javascript-programming/blob/master/section_b_10_objects.js)
 
-
-
 ****
 
 # Coding Exercise
@@ -108,6 +254,4 @@ var user = {
     languageArts: 100
   }
 };
-
-
 ```
