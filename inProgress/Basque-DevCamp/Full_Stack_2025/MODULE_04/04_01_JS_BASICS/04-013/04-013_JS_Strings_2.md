@@ -26,8 +26,6 @@ let phrase = 'Hello! ';
 phrase.repeat(3); // "Hello! Hello! Hello! "
 ```
 
-
-
 - Returns new string (original remains unchanged)
 
 - Accepts only positive integers (0+)
@@ -127,8 +125,6 @@ function cleanPhone(input) {
 }
 ```
 
-
-
 2. **Template Generation**
 
 ```js
@@ -139,8 +135,6 @@ function generateDivider(character) {
 }
 ```
 
-
-
 3. **Content Analysis**
 
 ```js
@@ -148,14 +142,14 @@ function countOccurrences(text, term) {
 
     let count = 0;
     let pos = text.indexOf(term);
-    
+
     while (pos !== -1) {
-    
+
          count++;
          pos = text.indexOf(term, pos + 1);
-    
+
      }
-    
+
      return count;
 }
 ```

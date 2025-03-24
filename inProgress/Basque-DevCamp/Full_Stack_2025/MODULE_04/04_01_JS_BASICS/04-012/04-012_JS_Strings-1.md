@@ -21,12 +21,15 @@
 The `.length` property returns the number of characters in a string:
 
 ```js
-let str = 'The quick brown fox jumped over the lazy dog';
+// Lenght
+// Remember, ENGTH DOESN'T USE PARENTHESIS 
 
-str.length; // Returns 44 (including spaces)
+let str = 'The Quick Fox Jumped Over The Lazy Dog'
+
+str.length  // '44', including spaces
 ```
 
-- **Not a function **(no parentheses needed)
+- **Not a function**(no parentheses needed)
 
 - Counts all whitespace characters
 
@@ -39,11 +42,14 @@ str.length; // Returns 44 (including spaces)
 Returns the character at a specific position (zero-indexed):
 
 ```js
-let str = 'The quick brown fox jumped over the lazy dog';
+// Character Access Methods 
+// .charAt( index )  - Index is ZeroBased
 
-str.charAt(2); // "e" (0=T, 1=h, 2=e)
+let str = 'The Quick Fox Jumped Over The Lazy Dog'
 
-str.charAt(200); // "" (empty string for out-of-bounds)
+str.charAt(2)       // 'e'
+str.charAt(12)      // 'x'
+str.charAt(200)     // ' ' (Empty, out of bound)
 ```
 
 Important Behaviors:
@@ -61,14 +67,18 @@ Important Behaviors:
 Combines strings without modifying the original:
 
 ```js
-let str = 'The quick brown fox jumped over the lazy dog';
+// String Concatenation
+// .concat()
 
-str.concat(' again'); // Appends new text
+let str = 'The Quick Fox Jumped Over The Lazy Dog'
 
-str; // Original remains unchanged ("The quick...")
+str,concat(' again')     // ' again' is appended
 
-// To persist changes:
-let newStr = str.concat(' and again');
+str;    // 'The Quick Fox Jumped Over The Lazy Dog again'
+
+let newString = str.concat(' and again.')
+
+newString;  // 'The Quick Fox Jumped Over The Lazy Dog again and again.'
 ```
 
 ---
@@ -78,9 +88,13 @@ let newStr = str.concat(' and again');
 Checks for substring existence:
 
 ```js
-str.includes('quick'); // true
+// Search methods
+// .includes()
 
-str.includes('foo'); // false
+let str = 'Hello World';
+
+str.includes('Hello');  // True
+str.includes('Orange'); // False
 ```
 
 ### startsWith() / endsWith()
@@ -150,8 +164,6 @@ function isImageFile(filename) {
 - https://javascript.info/string
 
 - [JavaScript String Methods](https://www.w3schools.com/js/js_string_methods.asp)
-
-
 
 ---
 
