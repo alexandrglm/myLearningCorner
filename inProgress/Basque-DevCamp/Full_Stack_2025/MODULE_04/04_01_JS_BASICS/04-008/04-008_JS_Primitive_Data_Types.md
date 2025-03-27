@@ -97,8 +97,6 @@ console.log(price); // Output: 99.99
 
 JavaScript does not differentiate between **integers** and **floating-point numbers**; both are represented as `Number`.
 
-
-
 ****
 
 ## 5. String Data Type
@@ -130,8 +128,6 @@ console.log(uniqueId); // Output: Symbol(id)
 ```
 
 Symbols are **guaranteed to be unique**, even if they have the same description.
-
-
 
 ****
 
@@ -379,8 +375,6 @@ console.log(greeting);
 var uniqueId = Symbol('id');
 
 console.log(uniqueId);
-
-
 ```
 
 ## Resources
