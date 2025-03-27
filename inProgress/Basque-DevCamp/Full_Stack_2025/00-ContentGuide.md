@@ -380,57 +380,57 @@
 | [X] | 04-011 | Data types parsing -`String()`, `.toString()`, `Number()`, `.parseInt()`, `.parseFloat()`, `Number(true / false)`, `Boolean(0 / 1)` | How to Perform Type Casting in JavaScript                            | 2025-03-24 |
 | [X] | 04-012 | String Methods 1: `.length`, `len()`, `.charAt(index)`, `.concat()`, `.includes()`, `.startsWith()`, `.endsWith()`,                 | Working with String Functions - Part 1                               | 2025-03-24 |
 | [X] | 04-013 | Strings Methods 2: `.repeat()`, `.match()`, `.replace()`, `.search()`, `.indexOf()`, `.lastIndexOf()`,                              | Working with String Functions - Part 2                               | 2025-03-24 |
-| [X] | 04-014 |                                                                                                                                     | Working with String Functions - Part 3                               |            |
-| [X] | 04-015 |                                                                                                                                     | JavaScript Arithmetic Operators                                      |            |
-| [X] | 04-016 |                                                                                                                                     | Guide to Compound Assignment Operators in JavaScript                 |            |
-| [X] | 04-017 |                                                                                                                                     | Order of Operations in JavaScript                                    |            |
+| [X] | 04-014 |                                                                                                                                     | Working with String Functions - Part 3                               | 2025-03-24 |
+| [X] | 04-015 |                                                                                                                                     | JavaScript Arithmetic Operators                                      | 2025-03-24 |
+| [X] | 04-016 |                                                                                                                                     | Guide to Compound Assignment Operators in JavaScript                 | 2025-03-24 |
+| [X] | 04-017 |                                                                                                                                     | Order of Operations in JavaScript                                    | 2025-03-24 |
 | [X] | 04-018 | Exercise: `reduce()`                                                                                                                | **Exercise:** How to Get the Average from an Array in JavaScript     | 2024-03-24 |
 
 ### JavaScript 02:    Conditionals
 
-|     | #      | Type | Tittle                                                                | Date |
-| --- | ------ | ---- | --------------------------------------------------------------------- | ---- |
-| [X] | 04-019 |      | JavaScript Conditional Section Introduction                           |      |
-| [X] | 04-020 |      | Basic Syntax for Using Conditionals in JavaScript                     |      |
-| [X] | 04-021 |      | Guide to If/Else Conditionals in JavaScript                           |      |
-| [X] | 04-022 |      | Compound Conditionals in JavaScript                                   |      |
-| [X] | 04-023 |      | How to Build a Switch Statement in JavaScript to Check for Data Types |      |
-| [X] | 04-024 |      | Overview of JavaScript Ternary Operator                               |      |
+|     | #      | Type | Tittle                                                                | Date       |
+| --- | ------ | ---- | --------------------------------------------------------------------- | ---------- |
+| [X] | 04-019 |      | JavaScript Conditional Section Introduction                           | 2025-03-24 |
+| [X] | 04-020 |      | Basic Syntax for Using Conditionals in JavaScript                     | 2025-03-24 |
+| [X] | 04-021 |      | Guide to If/Else Conditionals in JavaScript                           | 2025-03-24 |
+| [X] | 04-022 |      | Compound Conditionals in JavaScript                                   | 2025-03-24 |
+| [X] | 04-023 |      | How to Build a Switch Statement in JavaScript to Check for Data Types | 2025-03-24 |
+| [X] | 04-024 |      | Overview of JavaScript Ternary Operator                               | 2025-03-24 |
 
 ### JavaScript 03:    Functions
 
-|     | #      | Type | Tittle                                                             | Date |
-| --- | ------ | ---- | ------------------------------------------------------------------ | ---- |
-| [X] | 04-025 |      | Section Introduction: Introduction to JavaScript Functions         |      |
-| [X] | 04-026 |      | Basic Syntax for Building Functions in JavaScript                  |      |
-| [X] | 04-027 |      | How Variable Scope Works in JavaScript                             |      |
-| [X] | 04-028 |      | Differences Between Function Expressions and Function Declarations |      |
-| [X] | 04-029 |      | How to Work with Function Arguments in JavaScript                  |      |
-| [X] | 04-030 |      | Function Arguments: Reference vs Value                             |      |
+|     | #      | Type | Tittle                                                             | Date       |
+| --- | ------ | ---- | ------------------------------------------------------------------ | ---------- |
+| [X] | 04-025 |      | Section Introduction: Introduction to JavaScript Functions         | 2025-03-24 |
+| [X] | 04-026 |      | Basic Syntax for Building Functions in JavaScript                  | 2025-03-24 |
+| [X] | 04-027 |      | How Variable Scope Works in JavaScript                             | 2025-03-24 |
+| [X] | 04-028 |      | Differences Between Function Expressions and Function Declarations | 2025-03-24 |
+| [X] | 04-029 |      | How to Work with Function Arguments in JavaScript                  | 2025-03-24 |
+| [X] | 04-030 |      | Function Arguments: Reference vs Value                             | 2025-03-24 |
 
 ### JavaScript 04:    Closures
 
-|     | #      | Type | Tittle                                                            | Date |
-| --- | ------ | ---- | ----------------------------------------------------------------- | ---- |
-| [X] | 04-031 |      | Introduction to JavaScript Closures                               |      |
-| [X] | 04-032 |      | Introduction to HTML Scripting with Built in JavaScript Functions |      |
-| [X] | 04-033 |      | Introduction to the 'this' Keyword in JavaScript                  |      |
-| [X] | 04-034 |      | How to Use the 'this' Keyword in JavaScript Programs              |      |
-|     |        |      |                                                                   |      |
+|     | #      | Type | Tittle                                                            | Date       |
+| --- | ------ | ---- | ----------------------------------------------------------------- | ---------- |
+| [X] | 04-031 |      | Introduction to JavaScript Closures                               | 2025-03-25 |
+| [X] | 04-032 |      | Introduction to HTML Scripting with Built in JavaScript Functions | 2025-03-25 |
+| [X] | 04-033 |      | Introduction to the 'this' Keyword in JavaScript                  | 2025-03-25 |
+| [X] | 04-034 |      | How to Use the 'this' Keyword in JavaScript Programs              | 2025-03-25 |
+|     |        |      |                                                                   |            |
 
 ### JavaScript 05:     Arrays
 
-|     | #      | Type                         | Tittle                                                                         | Date       |
-| --- | ------ | ---------------------------- | ------------------------------------------------------------------------------ | ---------- |
-| [X] | 04-035 | Arrays Introductory Exercise | Remove the First and Last Element from a JavaScript Array                      | 2025-03-24 |
-| [X] | 04-036 |                              | Section Introduction: Introduction to JavaScript Arrays                        |            |
-| [X] | 04-037 |                              | How to Create Arrays in JavaScript                                             |            |
-| [X] | 04-038 |                              | Course Checkpoint 7                                                            |            |
-| [X] | 04-039 |                              | Guide to Adding and Removing Array Elements in JavaScript                      |            |
-| [X] | 04-040 |                              | How to Use the Splice Function in JavaScript to Remove Specific Array Elements |            |
-| [X] | 04-041 |                              | Guide to For Loops in JavaScript                                               |            |
-| [X] | 04-042 |                              | How to Loop Through a JavaScript Object                                        |            |
-| [X] | 04-043 |                              | Guide to While and Do/While Loops in JavaScript                                |            |
+|     | #      | Type                         | Tittle                                                                         | Date        |
+| --- | ------ | ---------------------------- | ------------------------------------------------------------------------------ | ----------- |
+| [X] | 04-035 | Arrays Introductory Exercise | Remove the First and Last Element from a JavaScript Array                      | 2025-03-25  |
+| [X] | 04-036 |                              | Section Introduction: Introduction to JavaScript Arrays                        | 2025-03-25  |
+| [X] | 04-037 |                              | How to Create Arrays in JavaScript                                             | 22025-03-25 |
+| [X] | 04-038 |                              | Course Checkpoint 7                                                            |             |
+| [X] | 04-039 |                              | Guide to Adding and Removing Array Elements in JavaScript                      |             |
+| [X] | 04-040 |                              | How to Use the Splice Function in JavaScript to Remove Specific Array Elements |             |
+| [X] | 04-041 |                              | Guide to For Loops in JavaScript                                               |             |
+| [X] | 04-042 |                              | How to Loop Through a JavaScript Object                                        |             |
+| [X] | 04-043 |                              | Guide to While and Do/While Loops in JavaScript                                |             |
 
 ### JavaScript 06 :    Automating Tasks with JavaScript
 

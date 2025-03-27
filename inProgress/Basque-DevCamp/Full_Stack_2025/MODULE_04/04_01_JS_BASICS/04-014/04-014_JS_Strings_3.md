@@ -27,18 +27,17 @@
 Extracts portions of strings with flexible indexing:
 
 ```js
+// Slicing content - .slice()
+
 let text = 'The quick brown fox';
 
-// Forward slicing
-text.slice(4, 9); // "quick" (start to end-1)
-text.slice(10); // "brown fox" (to end)
+text.slice(4, 9);       // 'quick'
+text.slice(10);         // 'brown fox' (10th to the end)
 
-// Backward slicing 
-text.slice(-8); // "own fox" (last 8 chars)
-text.slice(-8, -4); // "own " (negative ranges)
+// Backward slice
+text.slice(-8);         // 'own fox' (The latest 8 chars)
+text.slice(-8, -4);     // 'own'
 ```
-
-
 
 - **Non Zero-Based**
 
@@ -55,9 +54,13 @@ text.slice(-8, -4); // "own " (negative ranges)
 Removes whitespace from both ends:
 
 ```js
-let messy = ' Hello World ';
+// Whitespaces - .trim()
 
-messy.trim(); // "Hello World"
+let str2 = ' Hello World   ';
+
+str2.trim();        // 'Hello World' with no whitespaces
+str2.trimStart();   // 'Hello World   ' Trimmed at the beginning
+str2.trimEnd();   // '  Hello World' Trimmed at the end
 ```
 
 Related Methods:
@@ -75,11 +78,13 @@ Related Methods:
 Uniform case formatting:
 
 ```js
-let mixed = 'JavaScript';
+// Case Conversions - .toUpperCase() / .toLowerCase()
 
-mixed.toUpperCase(); // "JAVASCRIPT"
+let words = 'hEllO WoRld'
 
-mixed.toLowerCase(); // "javascript"
+words.toUpperCase()     // 'HELLO WORLD'
+
+words.toULowerCase()     // 'hello world'
 ```
 
 Use Cases:
@@ -97,12 +102,12 @@ Use Cases:
 Combine multiple string operations:
 
 ```js
-let input = ' Some USER Input ';
+// Methods Chaining
 
-input.trim().toLowerCase().slice(0, 10);     // "some user"
+let phrase = '   The QUICK bRoWn FOX';
+
+phrase.trimStart().toLowerCase().slice(4,15)        // 'quick brown
 ```
-
-
 
 Best Practices:
 
@@ -120,7 +125,7 @@ Best Practices:
 
 ```js
 function cleanInput(input) {
-    
+
 return input.trim().toLowerCase().replace(/\s+/g, ' ');
 }
 ```
@@ -129,7 +134,7 @@ return input.trim().toLowerCase().replace(/\s+/g, ' ');
 
 ```js
 function generateUsername(fullName) {
-    
+
     return fullName
         .trim()
         .toLowerCase()
@@ -137,19 +142,17 @@ function generateUsername(fullName) {
 }
 ```
 
-3.  **Excerpt Generation**
+3. **Excerpt Generation**
 
 ```js
 function createExcerpt(text, maxLength) {
-    
+
     return text
         .trim()
         .slice(0, maxLength)
         .concat('...');
 }
 ```
-
-
 
 ---
 
@@ -181,8 +184,6 @@ function createExcerpt(text, maxLength) {
      'ß'.toLocaleUpperCase('de-DE');         // "SS"
      ```
 
-
-
 ---
 
 ## Resources
@@ -192,8 +193,6 @@ function createExcerpt(text, maxLength) {
 - [Slice, Trim, Usage examples](https://es.javascript.info/string#obteniendo-un-substring)
 
 - [Unicode Technical Standard #21 (Case Mapping)](https://www.unicode.org/L2/L1999/99190.htm)
-
-
 
 ****
 
@@ -333,11 +332,11 @@ Fill in the return statement below with some of the string function syntax you j
 // EXAMPLE "return (str.toUpperCase());"
 
 function strings() {
-    
+
     // Use slice to return a substring starting from the "w" through the end of the sentence
     var str = "The five boxing wizards jump quickly";
     return (  <--Delete-this-and-write-your-string-function-->  );
-    
+
 }
 
 strings();

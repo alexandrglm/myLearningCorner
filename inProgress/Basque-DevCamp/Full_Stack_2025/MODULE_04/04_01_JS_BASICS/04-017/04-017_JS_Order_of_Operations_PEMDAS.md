@@ -26,8 +26,6 @@
 5 + 5 * 10;     // 55 (not 100)
 ```
 
-
-
 **PEMDAS Mnemonic** (US Standard):
 
 - **P**arentheses
@@ -46,8 +44,6 @@
 
 - Swaps Multiplication and Division order
 
-
-
 **As in the end both returns the same as Multiplication/Division have equal precedence (left-to-right evaluation)**
 
 ---
@@ -63,7 +59,7 @@
 | 5          | Comparison              | `<` `<=` `>` `>=`                  | Left-to-right |
 | 6          | Equality                | `==` `!=` `===` `!==`              | Left-to-right |
 | 7          | Logical AND             | `&&`                               | Left-to-right |
-| 8          | Logical OR              | `\||`                              | Left-to-Right |
+| 8          | Logical OR              | `\|                                | `             |
 | 9          | Nullish Coalescing      | `??`                               | Left-to-right |
 | 10         | Assignment              | `=` `+=` `-=` `*=` `/=` `%=` `**=` | Right-to-left |
 
@@ -76,8 +72,6 @@
 ```js
 (5 + 5) * 10;     // 100 (parentheses override default precedence)
 ```
-
-
 
 ### Complex Example
 
@@ -105,7 +99,6 @@ Let's breakdown:
 
 8 * 4 / 16;             // 2 (not 0.5)
 ```
-
 
 **When operators have equal precedence (like * and /), JavaScript evaluates from left to right.**
 
@@ -193,16 +186,12 @@ let energy = 0.5 * mass * velocity ** 2;
    let energy = (0.5 * mass) 
                 * (velocity ** 2);
    ```
-   
-   
 
 ---
 
 ## And ... BODMAS? BIDMAS?
 
 Both are **synomins for** international standard english **PEDMAS** abbreviations.
-
-
 
 * **B**rackets - **O**rders - Divisions - Mults. - Adds. - Subs.
 
@@ -217,8 +206,6 @@ Both are **synomins for** international standard english **PEDMAS** abbreviation
 - JavaScript.info: Operators
 
 - ECMAScript Language Specification (Section 12.5)
-
-
 
 ****
 

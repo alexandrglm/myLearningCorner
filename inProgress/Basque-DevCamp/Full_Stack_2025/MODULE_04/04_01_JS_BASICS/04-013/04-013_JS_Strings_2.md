@@ -39,10 +39,12 @@ phrase.repeat(3); // "Hello! Hello! Hello! "
 Searches for patterns using regular expressions:
 
 ```js
-// Phone number pattern
-const phonePattern = /((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}/;
+// Pattern Matchings - .match()
+// Using REGEX
 
-'Call 555-123-4567'.match(phonePattern);  // Returns match object with details
+const phonePattern =/(\d{2}-\d{3}-\d{2}-\d{2})/;
+
+'Call 93-125-55-27'.match(phonePattern)     // // [object Array] (2) ["93-125-55-27","93-125-55-27"]
 ```
 
 Common Use Cases:
@@ -60,13 +62,13 @@ Common Use Cases:
 Substitutes text patterns:
 
 ```js
-let text = 'The fox jumps';
+// String Replacement - .replace()
 
-text.replace('fox', 'wolf'); // "The wolf jumps"
+let str = 'The fox jumps';
 
+str.replace('dog', 'cat');
 
-// With regular expression
-text.replace(/fox/i, 'wolf'); // Case-insensitive
+str.replace(/DOG/i, 'cat');  // the case insensitive claulse /*/i
 ```
 
 Advanced Features:
@@ -84,11 +86,12 @@ Advanced Features:
 Finds pattern matches and returns index:
 
 ```js
-'555-123-4567'.search(phonePattern); // 0 (found at start)
+// Searchs - .search()
 
-'Hi 555-123-4567'.search(phonePattern); // 3 
+let str2 = 'The cat flies over our head. So cute cat'
 
-'No match'.search(phonePattern); // -1
+str2.search('dog')      // -1   No findings
+str2.search('cat')      // 4 - The character (non-zero index) where the finding starts    
 ```
 
 ### `.indexOf()` vs `.lastIndexOf()`
@@ -96,11 +99,12 @@ Finds pattern matches and returns index:
 Locate substring positions:
 
 ```js
-let text = 'never never never';
+// ,indexOf() - .lastIndexOf()
 
-text.indexOf('never'); // 0 (first occurrence)
+let str3 = 'The beat goes on, the beat goes down';
 
-text.lastIndexOf('never'); // 12 (last occurrence)
+str3.indexOf('beat');       // 4 - The fist appareance at non-zero character level
+str3.lastIndexof('beat');   // 22 - The last appareance at non-zero char. level
 ```
 
 Differences:
@@ -182,9 +186,13 @@ function countOccurrences(text, term) {
 
 ## Resources
 
-- 
+About REGEX:
+
+- https://regexr.com/ 
 
 - [Regular Expressions 101 (An Interactive REGEX Tester)](https://regex101.com/)
+
+About String methods. 
 
 - [# Methods of RegExp and String](https://javascript.info/regexp-methods)
 
