@@ -425,66 +425,68 @@
 | [X] | 04-035 | Arrays Introductory Exercise | Remove the First and Last Element from a JavaScript Array                      | 2025-03-25  |
 | [X] | 04-036 |                              | Section Introduction: Introduction to JavaScript Arrays                        | 2025-03-25  |
 | [X] | 04-037 |                              | How to Create Arrays in JavaScript                                             | 22025-03-25 |
-| [X] | 04-038 |                              | Course Checkpoint 7                                                            |             |
-| [X] | 04-039 |                              | Guide to Adding and Removing Array Elements in JavaScript                      |             |
-| [X] | 04-040 |                              | How to Use the Splice Function in JavaScript to Remove Specific Array Elements |             |
-| [X] | 04-041 |                              | Guide to For Loops in JavaScript                                               |             |
-| [X] | 04-042 |                              | How to Loop Through a JavaScript Object                                        |             |
-| [X] | 04-043 |                              | Guide to While and Do/While Loops in JavaScript                                |             |
+| [X] | 04-038 |                              | Course Checkpoint 7                                                            | 2025-03-27  |
+| [X] | 04-039 |                              | Guide to Adding and Removing Array Elements in JavaScript                      | 2025-03-27  |
+| [X] | 04-040 |                              | How to Use the Splice Function in JavaScript to Remove Specific Array Elements | 2025-03-27  |
+|     |        |                              |                                                                                |             |
+| [X] | 04-041 |                              | Guide to For Loops in JavaScript                                               | 2025-03-27  |
+| [X] | 04-042 |                              | How to Loop Through a JavaScript Object                                        | 2025-03-27  |
+| [X] | 04-043 |                              | Guide to While and Do/While Loops in JavaScript                                | 2025-03-27  |
 
 ### JavaScript 06 :    Automating Tasks with JavaScript
 
-|     | #      | Type | Tittle                                                                                | Date |
-| --- | ------ | ---- | ------------------------------------------------------------------------------------- | ---- |
-| [X] | 04-044 |      | Section Introduction: Introduction to Automating Tasks in the Browser with JavaScript |      |
-| [X] | 04-045 |      | Running Google Search Queries in JavaScript                                           |      |
-| [X] | 04-046 |      | How to Pull Images from Instagram with JavaScript                                     |      |
-| [X] | 04-047 |      | Auto Following Accounts and Hashtags on LinkedIn with JavaScript                      |      |
+|     | #      | Type | Tittle                                                                                | Date       |
+| --- | ------ | ---- | ------------------------------------------------------------------------------------- | ---------- |
+| [X] | 04-044 |      | Section Introduction: Introduction to Automating Tasks in the Browser with JavaScript | 2025-03-27 |
+| [X] | 04-045 |      | Running Google Search Queries in JavaScript                                           | 2025-03-28 |
+| [X] | 04-046 |      | How to Pull Images from Instagram with JavaScript                                     | 2025-03-28 |
+| [X] | 04-047 |      | Auto Following Accounts and Hashtags on LinkedIn with JavaScript                      | 2025-03-28 |
 
 ### JavaScript 07:    Modern JavaScript
 
-|     | #      | Type | Tittle                                                                            | Date |
-| --- | ------ | ---- | --------------------------------------------------------------------------------- | ---- |
-| [ ] | 04-048 |      | Modern JavaScript Basics Section Introduction                                     |      |
-| [ ] | 04-049 |      | Using the Const Variable Type in JavaScript                                       |      |
-| [ ] | 04-050 |      | Guide to Backtick string interpolation in Javascript                              |      |
-| [ ] | 04-051 |      | Integrating Conditionals into JavaScript Strings with Ternary Operators           |      |
-| [ ] | 04-052 |      | Introduction to Arrow Functions in JavaScript                                     |      |
-| [ ] | 04-053 |      | Build an HTML Heading Generator Function in JavaScript                            |      |
-| [ ] | 04-054 |      | How Arrow Functions Work with ‘this’                                              |      |
-| [ ] | 04-055 |      | How to Swap Variable Values in JavaScript with Variable Deconstruction            |      |
-| [ ] | 04-056 |      | How to Implement Array Destructuring in JavaScript                                |      |
-| [ ] | 04-057 |      | How to Pass JavaScript Objects as Function Arguments by Leveraging Deconstruction |      |
-| [ ] | 04-058 |      | Guide to Adding Default Object Values to JavaScript Function Arguments            |      |
-| [ ] | 04-059 |      | Guide to the JavaScript Spread Operator                                           |      |
-| [ ] | 04-060 |      | Guide to JavaScript Bind Function                                                 |      |
-| [ ] | 04-061 |      | How to Check if Two Objects Have Equal Values                                     |      |
+|     | #      | Type | Tittle                                                                            | Date       |
+| --- | ------ | ---- | --------------------------------------------------------------------------------- | ---------- |
+| [X] | 04-048 |      | Modern JavaScript Basics Section Introduction                                     | 2025-03-31 |
+| [X] | 04-049 |      | Using the Const Variable Type in JavaScript                                       | 2025-03-31 |
+| [X] | 04-050 |      | Guide to Backtick string interpolation in Javascript                              | 2025-03-31 |
+| [X] | 04-051 |      | Integrating Conditionals into JavaScript Strings with Ternary Operators           | 2025-03-31 |
+| [X] | 04-052 |      | Introduction to Arrow Functions in JavaScript                                     | 2025-04-01 |
+| [X] | 04-053 |      | Build an HTML Heading Generator Function in JavaScript                            | 2025-04-01 |
+| [X] | 04-054 |      | How Arrow Functions Work with ‘this’                                              | 2025-04-01 |
+| [X] | 04-055 |      | How to Swap Variable Values in JavaScript with Variable Deconstruction            | 2025-04-01 |
+| [X] | 04-056 |      | How to Implement Array Destructuring in JavaScript                                | 2025-04-01 |
+| [X] | 04-057 |      | How to Pass JavaScript Objects as Function Arguments by Leveraging Deconstruction | 2025-04-01 |
+| [X] | 04-058 |      | Guide to Adding Default Object Values to JavaScript Function Arguments            | 2025-04-01 |
+| [X] | 04-059 |      | Guide to the JavaScript Spread Operator                                           | 2025-04-01 |
+| [X] | 04-060 |      | Guide to JavaScript Bind Function                                                 | 2025-04-01 |
+| [X] | 04-061 |      | How to Check if Two Objects Have Equal Values                                     | 2025-04-01 |
 
 ### Object-Oriented Programming in JavaScript
 
-|     | #      | Type | Tittle                                                         | Date |
-| --- | ------ | ---- | -------------------------------------------------------------- | ---- |
-| [ ] | 04-062 |      | Object Oriented Programming in JavaScript Section Introduction |      |
-| [ ] | 04-063 |      | Introduction to Object Oriented Programming in JavaScript      |      |
-| [ ] | 04-064 |      | Guide to JavaScript OOP Instance Methods                       |      |
-| [ ] | 04-065 |      | Guide to OOP Static Methods in JavaScript                      |      |
-| [ ] | 04-066 |      | JSON Parsing Guide for API Development                         |      |
-| [ ] | 04-067 |      | Build a Manual Exponent Function in JavaScript                 |      |
+|     | #      | Type | Tittle                                                         | Date       |
+| --- | ------ | ---- | -------------------------------------------------------------- | ---------- |
+| [X] | 04-062 |      | Object Oriented Programming in JavaScript Section Introduction | 2025-04-01 |
+| [X] | 04-063 |      | Introduction to Object Oriented Programming in JavaScript      | 2025-04-01 |
+| [X] | 04-064 |      | Guide to JavaScript OOP Instance Methods                       | 2025-04-01 |
+| [X] | 04-065 |      | Guide to OOP Static Methods in JavaScript                      | 2025-04-02 |
 
 ### JavaScript Promises and Async/Await
 
-|     | #      | Type | Tittle                                                                 | Date |
-| --- | ------ | ---- | ---------------------------------------------------------------------- | ---- |
-| [ ] | 04-068 |      | Introduction to JavaScript Promises                                    |      |
-| [ ] | 04-069 |      | Using a fetch Promise to Communicate with APIs in JavaScript           |      |
-| [ ] | 04-070 |      | How to Group Promises Together with Promise.all in JavaScript          |      |
-| [ ] | 04-071 |      | Introduction to Async and Await in JavaScript                          |      |
-| [ ] | 04-072 |      | Combining Async / Await with Closures to Ensure All Processes Have Run |      |
-| [ ] | 04-073 |      | Using Async / Await for Communicating with Outside APIs in JavaScript  |      |
-| [ ] | 04-074 |      | Implementing Error Handling In a JavaScript Async / Await Function     |      |
-| [ ] | 04-075 |      | Build a Weighted Lottery Function in JavaScript                        |      |
-| [ ] | 04-076 |      | Developer Learning Curve – Why Learning How to Code Takes So Long?     |      |
-| [ ] | 04-077 |      | Course Checkpoint 8                                                    |      |
+|     | #      | Type | Tittle                                                                 | Date       |
+| --- | ------ | ---- | ---------------------------------------------------------------------- | ---------- |
+| [X] | 04-066 |      | JSON Parsing Guide for API Development                                 | 2025-04-02 |
+| [X] | 04-067 |      | Build a Manual Exponent Function in JavaScript                         | 2025-04-02 |
+| [X] | 04-068 |      | Introduction to JavaScript Promises                                    | 2025-04-02 |
+| [X] | 04-069 |      | Using a fetch Promise to Communicate with APIs in JavaScript           | 2025-04-02 |
+| [X] | 04-070 |      | How to Group Promises Together with Promise.all in JavaScript          | 2025-04-02 |
+|     |        |      |                                                                        |            |
+| [X] | 04-071 |      | Introduction to Async and Await in JavaScript                          | 2025-04-02 |
+| [X] | 04-072 |      | Combining Async / Await with Closures to Ensure All Processes Have Run | 2025-04-02 |
+| [X] | 04-073 |      | Using Async / Await for Communicating with Outside APIs in JavaScript  | 2025-04-02 |
+| [X] | 04-074 |      | Implementing Error Handling In a JavaScript Async / Await Function     | 2025-04-02 |
+| [X] | 04-075 |      | Build a Weighted Lottery Function in JavaScript                        | 2025-04-02 |
+| [X] | 04-076 |      | Developer Learning Curve – Why Learning How to Code Takes So Long?     | 2025-04-02 |
+| [ ] | 04-077 |      | Course Checkpoint 8                                                    |            |
 
 ### Module 4 keypoints:
 

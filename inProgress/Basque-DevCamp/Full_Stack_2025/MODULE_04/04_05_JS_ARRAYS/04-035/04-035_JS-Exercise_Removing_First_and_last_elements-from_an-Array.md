@@ -76,7 +76,7 @@ Prevent errors with small arrays:
 ```js
 function trimArray(arr) {
     if (arr.length >= 3) {
-        
+
         return arr.slice(1, -1);
     }
 
@@ -110,8 +110,6 @@ if (arr.length < 3) {
 }
 ```
 
-
-
 ---
 
 ## 4. Edge Case Handling
@@ -133,7 +131,7 @@ function trimArray(arr) {
 
     // Type checking
     if (!Array.isArray(arr)) {
-        
+
         throw new TypeError('Input must be an array');
     }
 
@@ -148,8 +146,6 @@ function trimArray(arr) {
 }
 ```
 
-
-
 ---
 
 ## 5. Alternative Approaches
@@ -158,7 +154,7 @@ function trimArray(arr) {
 
 ```js
 function trimArray(arr) {
-    
+
     return arr.filter((_, index) => 
 
         index !== 0 && index !== arr.length - 1
@@ -195,35 +191,33 @@ Basic implementation:
 function trimArray(arr) {
     
     if (arr.length < 3) {
- 
+
         throw new Error('Need at least 3 elements');
- 
+
     }
- 
+
     return arr.slice(1, -1);
 
 }
 ```
 
-
-
 Enhanced version:
 
 ```js
 function safeTrimArray(arr) {
-  
+
     if (!Array.isArray(arr)) {
- 
+
         throw new TypeError('Expected array input');
- 
+
     }
- 
+
     if (arr.length < 3) {
- 
+
         throw new RangeError(`Array length ${arr.length} < 3`);
- 
+
     }
- 
+
     return arr.slice(1, -1);
 
 }
@@ -236,8 +230,6 @@ function safeTrimArray(arr) {
 - [JavaScript.info: Array Methods](https://javascript.info/array-methods)
 
 - [StackOverflow: Array Slice vs Splice](https://stackoverflow.com/q/37601282)
-
-
 
 ****
 
