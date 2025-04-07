@@ -1,6 +1,6 @@
 # MODULE 04 - 054: JavaScript
 
-# Arrow Function (1): `this`
+# Modern JS (4): `this` with Arrow Functions
 
 ---
 

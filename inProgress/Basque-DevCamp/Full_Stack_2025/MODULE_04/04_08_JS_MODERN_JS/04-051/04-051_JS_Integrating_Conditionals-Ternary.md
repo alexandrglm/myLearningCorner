@@ -4,7 +4,119 @@
 
 ---
 
+1. Ternary Operator Syntax
+
+2. Conditional String Interpolation
+
+3. Real-World Use Cases
+
+4. Best Practices
+
+****
+
+## 1. Ternary Operator Syntax
+
+### Basic Structure
+
+```js
+condition ? expressionIfTrue : expressionIfFalse;
+```
+
+### Embedded in Template Literals
+
+```js
+const status = `Score: ${isWinner ? 'Winner!' : 'Try again'}`;
+```
+
+****
+
+## 2. Conditional String Interpolation
+
+### Battleship Example Solution
+
+```js
+let ship = "hit"; // Test with "hit" or "miss"
+
+function battleShip() {
+    return `${ship === "hit" ? "1 point" : "You lost a point"}`;
+}
+```
+
+**Key Components:**
+
+- Checks `ship` value
+
+- Returns "1 point" for "hit"
+
+- Returns "You lost a point" for any other value
+
+****
+
+## 3. Real-World Use Cases
+
+### Dynamic Styling (React Example)
+
+```js
+function Alert({ isError }) {
+  return (
+    <div className={`alert ${isError ? 'alert-danger' : 'alert-info'}`}>
+      {isError ? 'Error occurred' : 'Notification'}
+    </div>
+  );
+}
+```
+
+### API Response Handling
+
+```js
+const responseMessage = `Request: ${data ? 'Success' : 'Failed - Retrying...'}`;
+```
+
+****
+
+## 4. Best Practices
+
+### Do's and Don'ts
+
+| Yep!                                | Nope!                               |
+| ----------------------------------- | ----------------------------------- |
+| Use for simple true/false logic     | Nest multiple ternaries excessively |
+| Keep expressions short              | Use for complex branching logic     |
+| Format with spacing for readability | Write unreadable one-liners         |
+
+****
+
+**Formatted Example:**
+
+```js
+const message = `Status: ${
+  score > 90 ? 'A' 
+  : score > 75 ? 'B' 
+  : 'C'
+}`;
+```
+
+****
+
+## Common Errors & Fixes
+
+| Error                   | Solution                      |
+| ----------------------- | ----------------------------- |
+| Missing backticks       | Use `` ` `` instead of quotes |
+| Incorrect variable name | Check spelling (e.g., `ship`) |
+| No ternary operator     | Use `? :` syntax              |
+
 ---
+
+## References
+
+* [Conditional (ternary) operator - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_operator)
+
+* https://javascript.info/ifelse#conditional-operator
+
+* 
+
+****
 
 ## Video lesson Speech
 

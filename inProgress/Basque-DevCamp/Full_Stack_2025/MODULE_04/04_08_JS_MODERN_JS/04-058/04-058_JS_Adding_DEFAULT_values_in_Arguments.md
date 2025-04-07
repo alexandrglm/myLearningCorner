@@ -1,6 +1,6 @@
 # MODULE 04 - 058: JavaScript
 
-# Modern JS (10):     Adding Default Object Values to JavaScript Function Arguments
+# Modern JS (8):     Adding Default Object Values to JavaScript Function Arguments
 
 ---
 

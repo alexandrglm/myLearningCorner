@@ -1,6 +1,6 @@
 # MODULE 04 - 056: JavaScript
 
-# Modern JS (7): Array Destructuring
+# Modern JS (6): Array Destructuring
 
 ---
 

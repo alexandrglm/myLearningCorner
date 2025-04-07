@@ -2,6 +2,203 @@
 
 ## Automating Tasks (2) - Pulling images from Instagram
 
+****
+
+1. DOM Inspection Strategies
+
+2. Attribute-Based Element Selection
+
+3. URL Extraction Techniques
+
+4. Handling Dynamic Content
+
+5. Ethical Automation Practices
+
+****
+
+## 1. DOM Inspection Strategies
+
+### Modern Instagram Structure
+
+Instagram's DOM frequently changes, but core patterns remain:
+
+- Images are nested in `<div>` containers with `role="button"`
+
+- `<img>` tags use `alt` attributes for accessibility
+
+- Images are often lazy-loaded
+
+**Recommended Tools:**
+
+- Chrome DevTools Elements Panel
+
+- `document.querySelector` with CSS attribute selectors
+
+****
+
+## 2. Attribute-Based Element Selection
+
+### Reliable Selectors (2023)
+
+```js
+// Best option: Combine role and alt attributes
+const images = document.querySelectorAll('img[role="img"][alt*="Instagram"]');
+
+// Alternative: Target image containers
+const imageContainers = document.querySelectorAll('div[role="button"] img');
+
+// Fallback: XPath for nested structures
+const xpathImages = document.evaluate(
+  '//div[@role="button"]//img',
+  document,
+  null,
+  XPathResult.ORDERED_NODE_SNAPSHOT_TYPE,
+  null
+);
+```
+
+**Why Avoid Class Names?**  
+Instagram frequently changes class names like `.FFVAD`. Attribute selectors provide better stability.
+
+****
+
+## 3. URL Extraction Techniques
+
+### Basic URL Extraction
+
+```js
+const extractUrls = () => {
+  const images = document.querySelectorAll('img[role="img"][alt*="Instagram"]');
+  return Array.from(images).map(img => img.src);
+};
+
+// Usage
+const urls = extractUrls();
+copy(urls); // Copies array to clipboard
+```
+
+### Handling High-Resolution Images
+
+```js
+const getHDUrls = () => {
+  return Array.from(document.querySelectorAll('div[role="button"]'))
+    .map(container => {
+      const style = window.getComputedStyle(container);
+      return style.backgroundImage.slice(4, -1).replace(/"/g, '');
+    });
+};
+```
+
+****
+
+## 4. Handling Dynamic Content
+
+### Scroll to Load All Images
+
+```js
+let previousHeight = 0;
+
+const loadAllImages = () => {
+  window.scrollTo(0, document.body.scrollHeight);
+
+  setTimeout(() => {
+    if (document.body.scrollHeight !== previousHeight) {
+      previousHeight = document.body.scrollHeight;
+      loadAllImages();
+    } else {
+      console.log('All images loaded');
+      copy(extractUrls());
+    }
+  }, 2000);
+};
+
+loadAllImages();
+```
+
+****
+
+## 5. Ethical Automation Practices
+
+### Compliance Guidelines
+
+1. **Rate Limiting:** Add delays between actions
+
+2. **Data Usage:** Never redistribute scraped content
+
+3. **Authentication:** Don't bypass login walls
+
+4. **Legal Compliance:** Adhere to Instagram's Terms
+
+```js
+// Ethical scraping example
+const ethicalExtract = () => {
+  // Add 1-2 second delay
+  setTimeout(() => {
+    const urls = extractUrls();
+    console.log('Collected URLs:', urls.length);
+    // Implement local storage only
+    localStorage.setItem('tempUrls', JSON.stringify(urls));
+  }, 1000);
+};
+```
+
+****
+
+## Updated Coding Exercise
+
+```html
+<p class="grab-these">Content 1</p>
+<p class="grab-these">Content 2</p>
+<p class="grab-these">Content 3</p>
+```
+
+```js
+// Modern solution
+const elements = document.querySelectorAll('.grab-these');
+
+// Alternative: Attribute selector
+const altElements = document.querySelectorAll('[class="grab-these"]');
+
+// Validation check
+if (elements.length === 0) {
+  console.warn('No elements found - check selector');
+} else {
+  console.log(`Found ${elements.length} elements`);
+}
+```
+
+****
+
+## Maintenance Tips
+
+1. **Selector Verification:**  
+   Regularly check element attributes using DevTools
+
+2. **Fallback Strategies:**  
+   Maintain multiple selector options
+
+3. **Error Handling:**  
+   Implement try-catch blocks for DOM operations
+   
+   ```js
+   try {
+     const recentImages = document.querySelectorAll('img[alt*="Photo by"]');
+     console.log('Recent posts:', recentImages.length);
+   } catch (error) {
+     console.error('Selector failed:', error);
+   }
+   ```
+
+****
+
+## Resources
+
+- [Instagram Developer Documentation](https://developers.facebook.com/docs/instagram)
+
+- [MDN Attribute Selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors)
+
+- [Web Scraping Ethics Guide](https://www.scraperapi.com/blog/web-scraping-ethics/)
+
 ---
 
 ## Video lesson Speech

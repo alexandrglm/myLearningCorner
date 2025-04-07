@@ -1,6 +1,6 @@
 # MODULE 04 - 052: JavaScript
 
-# Arrow Functions (0):    Introduction
+## Modern JS (3):    Arrow Functions (1)
 
 ---
 

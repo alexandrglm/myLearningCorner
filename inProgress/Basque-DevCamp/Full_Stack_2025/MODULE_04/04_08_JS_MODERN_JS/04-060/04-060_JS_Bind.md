@@ -1,6 +1,6 @@
 # MODULE 04 - 060: JavaScript
 
-# Modern JS (12):     Bind function
+# Modern JS (10):     Bind function
 
 ---
 
