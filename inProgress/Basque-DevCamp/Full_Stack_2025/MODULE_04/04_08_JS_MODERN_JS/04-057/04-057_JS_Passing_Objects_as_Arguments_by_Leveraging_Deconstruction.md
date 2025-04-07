@@ -1,6 +1,6 @@
 # MODULE 04 - 057: JavaScript
 
-# Modern JS (8): Passing Objects as Function Arguments by Leveraging Deconstruction
+# Modern JS (7): Passing Objects as Function Arguments by Leveraging Deconstruction
 
 ---
 

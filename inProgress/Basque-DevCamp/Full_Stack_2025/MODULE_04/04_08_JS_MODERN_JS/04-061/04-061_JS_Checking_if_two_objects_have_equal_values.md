@@ -1,6 +1,6 @@
 # MODULE 04 - 061: JavaScript
 
-# Modern JS (13):     Check if Two Objects Have Equal Values
+# Modern JS (11):     Check if Two Objects Have Equal Values
 
 ---
 

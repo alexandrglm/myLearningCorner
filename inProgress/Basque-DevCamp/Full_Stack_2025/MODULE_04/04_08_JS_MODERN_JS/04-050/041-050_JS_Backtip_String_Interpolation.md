@@ -4,6 +4,138 @@
 
 ---
 
+1. Template Literal Syntax
+
+2. Expression Embedding
+
+3. Multi-line Strings
+
+4. Real-World Applications
+
+****
+
+## 1. Template Literal Syntax
+
+### Basic Usage
+
+```js
+const lyric = 'Never gonna give you up';
+console.log(`I'm ${lyric}`);     // "I'm Never gonna give you up"
+```
+
+**Key Features:**
+
+- Enclosed in backticks (`` ` ``)
+
+- `${}` syntax for embedding expressions
+
+- Automatic whitespace preservation
+
+****
+
+## 2. Expression Embedding
+
+### Complex Expressions
+
+```js
+// Mathematical operations
+console.log(`Total: ${5 + 3 * 2}`); // "Total: 11"
+
+
+// Function calls
+const getYear = () => new Date().getFullYear();
+console.log(`Current year: ${getYear()}`); 
+
+
+// Nested template literals
+console.log(`Formatted: ${`$${149.99.toFixed(2)}`}`); // "Formatted: $149.99"
+```
+
+****
+
+## 3. Multi-line Strings
+
+### Without Template Literals
+
+```js
+const oldWay = 'Line 1\n' +
+               'Line 2\n' +
+               'Line 3';
+```
+
+### With Template Literals
+
+```js
+const modernWay = `Line 1
+Line 2
+Line 3`;
+```
+
+**Framework Usage:**
+
+- React JSX multi-line elements
+
+- SQL query formatting
+
+- HTML template generation
+
+****
+
+## 4. Real-World Applications
+
+### Dynamic UI Messages
+
+```js
+const user = { name: 'Leia', rank: 'General' };
+console.log(`Alert: ${user.rank} ${user.name} has arrived!`);
+// "Alert: General Leia has arrived!"
+```
+
+### API Error Formatting
+
+```js
+const error = { code: 404, message: 'Not Found' };
+console.log(`Error ${error.code}: ${error.message}`);
+// "Error 404: Not Found"
+```
+
+****
+
+## Common Pitfalls
+
+| Mistake                        | Solution                        |
+| ------------------------------ | ------------------------------- |
+| `console.log('Value: ${val}')` | Use backticks instead of quotes |
+| `${ user.name }`               | Remove spaces: `${user.name}`   |
+| Forgetting expression closure  | Ensure every `${` has `}`       |
+
+---
+
+## Pro Tips
+
+1. **Tagged Templates:** Advanced pattern for custom string processing
+   
+   ```js
+   function highlight(strings, ...values) {
+     return strings.reduce((result, str, i) => 
+       `${result}${str}<mark>${values[i] || ''}</mark>`, '');
+   }
+   ```
+   
+   console.log(highlight`Warning: ${5} alerts found`);
+   // "Warning: <mark>5</mark> alerts found"
+
+```
+2. **Internationalization:** Combine with i18n libraries for dynamic translations
+
+****
+
+## References
+
+[Template literals (Template strings) - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
+
+https://javascript.info/string#template-strings
+
 ---
 
 ## Video lesson Speech

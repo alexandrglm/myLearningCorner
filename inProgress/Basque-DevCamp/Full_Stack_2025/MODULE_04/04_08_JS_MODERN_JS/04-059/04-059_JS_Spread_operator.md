@@ -1,6 +1,6 @@
 # MODULE 04 - 059: JavaScript
 
-# Modern JS (11):     Spread operator
+# Modern JS (9):     Spread operator
 
 ---
 

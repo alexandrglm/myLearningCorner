@@ -1,6 +1,6 @@
 # MODULE 04 - 055: JavaScript
 
-# Modern JS(6): Swap Variable Values in JavaScript with Variable Deconstruction
+# Modern JS(5): Swap Variable Values in JavaScript with Variable Deconstruction
 
 ---
 
