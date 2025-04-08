@@ -4,6 +4,112 @@
 
 ---
 
+
+
+1. The `user` Object Example
+
+2. Traditional vs. Destructured Parameters
+
+3. Real-World Use Case
+
+4. Syntax Requirements
+
+5. Benefits
+
+****
+
+Object destructuring in function parameters is a powerful feature in modern JavaScript that helps clean up and simplify how you pass and handle objects in function calls.
+
+****
+
+### 1. The `user` Object Example
+
+Imagine you're working with user data returned from an API. Instead of manually extracting each value, you can pass the full object to a function and destructure what you need directly in the parameter list.
+
+```js
+const user = {
+  name: 'Kristine',
+  email: 'kristine@devcamp.com'
+};
+```
+
+****
+
+### 2. Traditional vs. Destructured Parameters
+
+**Without destructuring:**
+
+```js
+const renderUser = (user) => {
+  console.log(`${user.name}: ${user.email}`);
+};
+```
+
+**With destructuring (cleaner and more readable):**
+
+```js
+const renderUser = ({ name, email }) => {
+  console.log(`${name}: ${email}`);
+};
+
+renderUser(user);
+```
+
+This approach eliminates the need to access properties inside the function body.
+
+****
+
+### 3. Real-World Use Case
+
+This technique is common in frameworks like **React**, **Angular**, or when writing clean, modular code in **Node.js**.  
+
+
+You'll often receive large objects from APIs, and destructuring allows you to grab only what you need in a lightweight, readable format.
+
+---
+
+### 5. Syntax Requirements
+
+Be aware:
+
+- The **keys** in the destructured parameters **must match** the actual object properties.
+
+- If you attempt to use renamed or undefined keys like `n` instead of `name`, destructuring will fail.
+
+
+
+YEP!:
+
+```js
+({ name, email }) => ...
+```
+
+NOPE!
+
+```js
+({ n, e }) => ... // Fails unless object has those exact keys
+```
+
+### Benefits
+
+- **Cleaner function declarations**
+
+- **Avoids redundancy** in accessing properties
+
+- **Improves code readability**, especially in collaborative environments
+
+- **Reduces parameter overload** in functions expecting complex data
+
+****
+
+## References
+
+* [Destructuring - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring#function_parameters)
+
+* https://javascript.info/destructuring-assignment#function-parameters-destructuring
+
+
+
 ---
 
 ## Video lesson Speech

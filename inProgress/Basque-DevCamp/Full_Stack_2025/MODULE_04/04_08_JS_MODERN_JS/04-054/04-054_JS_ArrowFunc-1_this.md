@@ -4,6 +4,94 @@
 
 ---
 
+1. Arrow functions and `this` keyword
+
+2. Using `this` in constructors
+
+3. `setInterval` and context binding
+
+4. How arrow functions fix `this` issues
+
+****
+
+## 1. Arrow functions and `this` keyword
+
+Now that you're familiar with arrow functions and their syntax, this guide will explain why arrow functions are important, especially regarding how they interact with the `this` keyword—something that behaves quite differently from standard functions.
+
+****
+
+## 2. Using `this` in constructors
+
+Let’s start by defining a basic function constructor:
+
+```js
+function Invoice() {
+  this.taxRate = 0.06;
+}
+```
+
+In JavaScript, functions are treated as objects. So it's possible to assign properties (like `taxRate`) to them.  
+
+This isn't typical in many other languages, but JavaScript allows it because every function is an object:
+
+```js
+function Invoice(subTotal) {
+  this.taxRate = 0.06;
+}
+
+const inv = new Invoice();
+console.log(inv.taxRate); // → 0.06
+```
+
+You can also log the whole object:
+
+```js
+console.log(inv);
+```
+
+****
+
+## 3. `setInterval` and context binding
+
+Let’s enhance the function to include a subtotal and a method to calculate the total after tax using `setInterval`.
+
+```js
+function Invoice(subTotal) {
+  this.taxRate = 0.06;
+  this.subtotal = subTotal;
+  this.total = setInterval(function totalNumbers() {
+    console.log((this.taxRate * this.subTotal) + this.subTotal);
+  }, 2000);
+}
+
+const inv = new Invoice(200);
+inv.total();         // This won't behave as expected
+```
+
+You’ll see `NaN` (Not a Number) printed. Why? Because `this` inside `setInterval` doesn’t refer to the instance of `Invoice`—instead, it refers to the global `window` object.
+
+****
+
+## 4. How arrow functions fix `this` issues
+
+Arrow functions **don’t rebind `this`**. They inherit it from the surrounding scope. So if we change the internal function to an arrow function:
+
+```js
+function Invoice(subTotal) {
+  this.taxRate = 0.06;
+  this.subTotal = subTotal;
+
+  this.total = setInterval(() => {
+    console.log((this.taxRate * this.subTotal) + this.subTotal);
+  }, 2000);
+}
+
+const inv = new Invoice(200);
+inv.total(); // Correct output after 2 seconds
+```
+
+This works correctly because the arrow function maintains the `this` context from its parent scope.
+
 ---
 
 ## Video lesson Speech

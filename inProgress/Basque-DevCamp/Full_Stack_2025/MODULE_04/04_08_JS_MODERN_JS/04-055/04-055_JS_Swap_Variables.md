@@ -4,6 +4,74 @@
 
 ---
 
+1. Traditional Swapping with Temp Variables
+
+2. Destructuring Assignment for Swapping
+
+3. Use Case in Algorithms
+
+****
+
+In modern JavaScript, you can use **destructuring assignment** to efficiently swap values between variables—avoiding the need for temp variables or verbose code patterns.
+
+****
+
+### 1. Traditional Swapping with Temp Variables
+
+Traditionally, variable values were swapped using temporary storage:
+
+```js
+let playerOne = 'Tiffany';
+let playerTwo = 'Kristine';
+
+let tempPlayerOne = playerOne;
+let tempPlayerTwo = playerTwo;
+
+playerOne = tempPlayerTwo;
+playerTwo = tempPlayerOne;
+```
+
+This approach prevents the overwriting issue caused by trying to assign directly between the two variables. However, it’s cumbersome and pollutes your scope with unnecessary variables.
+
+****
+
+### 2. Destructuring Assignment for Swapping
+
+With modern JavaScript (ES6+), we can swap values concisely using **array destructuring**:
+
+```js
+let playerOne = 'Tiffany';
+let playerTwo = 'Kristine';
+
+[playerOne, playerTwo] = [playerTwo, playerOne];
+```
+
+This line swaps the values in place—no temporary variables needed.
+
+> **Note**: Destructuring is not the same as mass assignment. JavaScript doesn’t support Ruby-style multiple assignment without using arrays.
+
+****
+
+### 3. Use Case in Algorithms
+
+Swapping values is essential in many algorithm implementations, such as:
+
+- Bubble Sort
+
+- Merge Sort
+
+- Quick Sort
+
+Destructuring makes these algorithms cleaner and easier to implement.
+
+****
+
+### References
+
+- [Destructuring - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring)
+
+- https://javascript.info/destructuring-assignment
+
 ---
 
 ## Video lesson Speech
