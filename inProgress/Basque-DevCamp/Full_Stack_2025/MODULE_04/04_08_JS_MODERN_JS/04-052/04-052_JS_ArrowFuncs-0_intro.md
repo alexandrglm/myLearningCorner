@@ -4,6 +4,115 @@
 
 ---
 
+1. Traditional Function Declaration
+
+2. Function Expression
+
+3. Arrow Functions
+
+4. Single Argument Arrow Function
+
+5. Multiple Arguments Arrow Function
+
+6. Differences Between Function Expression and Arrow Functions
+
+****
+
+This lesson introduces **arrow functions**, one of the most essential concepts in modern JavaScript. They're concise, widely used, and sometimes visually intimidating to beginners. Let’s break down their structure, use cases, and differences from traditional functions.
+
+****
+
+### 1. Traditional Function Declaration
+
+You can declare a function using the `function` keyword followed by the function name and parameters:
+
+```js
+function fullName(fName, lName) {
+  console.log(`${lName}, ${fName}`);
+}
+fullName('Tiffany', 'Hudgens');
+```
+
+ Reference: [function - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)
+
+****
+
+### 2. Function Expression
+
+Functions can also be stored in variables. This is known as a **function expression**, and the function itself is often **anonymous**:
+
+```js
+const fullName = function(fName, lName) {
+  console.log(`${fName}, ${lName}`);
+};
+fullName('Kristine', 'Hudgens');
+```
+
+Reference: [function expression - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function)
+
+****
+
+### 3. Arrow Functions – Basic Syntax
+
+Arrow functions are shorthand for function expressions. Here's the most basic example:
+
+```js
+const helloWorld = () => {
+  console.log("Hi there");
+};
+helloWorld();
+```
+
+They use the arrow syntax =>, and are always either:
+
+    Stored in a variable, or
+    
+    Immediately executed.
+
+Reference: [Arrow function expressions - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
+
+****
+
+### 4. Single Argument Arrow Function
+
+If an arrow function has **only one parameter**, you can omit the parentheses:
+
+```js
+const firstName = fname => {
+  console.log(fname.toUpperCase());
+};
+firstName('Jordan');
+```
+
+Reference: https://javascript.info/arrow-functions-basics
+
+****
+
+### 5. Multiple Arguments Arrow Function
+
+When using **two or more parameters**, parentheses are required:
+
+```js
+const fullName = (fName, lName) => {
+  console.log(`${lName}, ${fName}`);
+};
+fullName('Kristine', 'Hudgens');
+```
+
+****
+
+### 6. Differences between Function Expression and Arrows
+
+Arrow functions:
+
+- Are always anonymous.
+
+- Must be assigned to a variable or used inline.
+
+- Do not bind their own `this`, which is useful (or problematic) depending on context (covered in next lesson).
+
+Reference: [Arrow function expressions - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions#arrow_functions_vs_function_expressions)
+
 ---
 
 ## Video lesson Speech

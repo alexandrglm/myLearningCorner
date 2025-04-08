@@ -4,7 +4,112 @@
 
 ---
 
+1. The problem with incomplete data
+
+2. The `blog` Object
+
+3. Creating `openGraphMetadata`
+
+4. Default Values via Object Destructuring
+
+5. Output with and without `summary`
+
+6. Why This Matters in Production
+
+****
+
+### 1. The Problem with Incomplete Data
+
+In real-world applications, you often deal with incomplete or inconsistent data—especially when consuming APIs. That’s why it’s crucial to build functions that can handle **missing values gracefully**.
+
+****
+
+### 2. The `blog` Object
+
+We start with a simple object:
+
+```js
+const blog = {
+  title: 'My great post',
+  summary: 'Summary of my post'
+}
+```
+
+****
+
+### 3. Creating `openGraphMetadata`
+
+You define a function using **object destructuring** in the parameter list.  
+In this case, we **require** a `title`, but `summary` is **optional**:
+
+```js
+const openGraphMetadata = ({ title, summary = 'A DailySmarty Post' }) => {
+  console.log(`
+    og-title=${title}
+    og-description=${summary}
+  `);
+};
+```
+
+****
+
+### 4. Default Values via Object Destructuring
+
+If the `summary` key is **missing** in the object passed to the function, JavaScript uses the default:
+
+```js
+summary = 'A DailySmarty Post'
+```
+
+This saves you from writing extra `if` conditions to handle undefined keys.
+
+****
+
+### 5. Output with and without `summary`
+
+**With full data:**
+
+```js
+openGraphMetadata(blog);
+// Output:
+// og-title=My great post
+// og-description=Summary of my post
+```
+
 ---
+
+## **Without summary:**
+
+```js
+openGraphMetadata({ title: 'My great post' });
+// Output:
+// og-title=My great post
+// og-description=A DailySmarty Post
+```
+
+****
+
+### 6. Why This Matters in Production
+
+- Avoids `undefined` values
+
+- Eliminates repetitive conditionals
+
+- Makes function signatures predictable
+
+- Provides cleaner, more robust fallback behavior
+
+- Common in frontend frameworks like React, Angular, and Vue
+
+****
+
+### References
+
+* [Default parameters - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters)
+
+* https://javascript.info/function-basics#default-values
+
+****
 
 ## Video lesson Speech
 
