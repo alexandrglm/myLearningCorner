@@ -1,8 +1,170 @@
 # MODULE 04 - 073:    JavaScript
 
-## Async / Await (2), Using Async / Await for Communicating with Outside APIs
+## Async / Await (3), Using Async / Await for Communicating with Outside APIs
 
 ---
+
+1. Introduction to Async/Await with APIs
+
+2. Sequential API Calls with Async/Await
+
+3. Code Walkthrough: Fetching Data from Multiple APIs
+
+4. Handling Dependencies Between API Calls
+
+****
+
+### 1. Introduction to Async/Await with APIs
+
+`async/await` simplifies asynchronous operations like API calls by allowing developers to write code that **looks synchronous** but runs asynchronously. Key advantages:
+
+- **Readability**: Avoid nested `.then()` chains.
+
+- **Control Flow**: Explicitly define the order of execution for dependent tasks.
+
+- **Error Handling**: Use `try/catch` blocks for unified error management.
+
+**Use Case**: Fetching data from multiple APIs where one call depends on another (e.g., authentication before fetching user data).
+
+---
+
+### 2. Sequential API Calls with Async/Await
+
+When APIs must be called in a specific order (e.g., an authentication token is required for subsequent requests), `async/await` ensures tasks execute sequentially:
+
+1. First API call completes.
+
+2. Second API call uses data from the first.
+
+**Example**
+
+```js
+async function fetchData() {  
+  const authToken = await authenticateUser(); // Must complete first  
+  const userData = await fetchUserData(authToken); // Uses token from first call  
+}  
+```
+
+****
+
+### 3. Code Walkthrough: Fetching Data from Multiple APIs
+
+#### Example Code
+
+```js
+async function queryApis() {  
+  // Fetch posts from Dailysmarty  
+  const postsPromise = fetch('https://api.dailysmarty.com/posts');  
+  const posts = await postsPromise.then(res => res.json());  
+  console.log(posts);  
+
+  // Fetch GitHub repositories  
+  const reposPromise = fetch('https://api.github.com/users/jordanhudgens/repos');  
+  const repos = await reposPromise.then(res => res.json());  
+  console.log(repos);  
+}  
+
+queryApis();  
+```
+
+#### Key Steps:
+
+1. **First API Call**:
+   
+   - `fetch` sends a request to Dailysmarty.
+   
+   - `await` pauses execution until the promise resolves.
+   
+   - `res.json()` parses the response into JSON.
+
+2. **Second API Call**:
+   
+   - Runs **only after** the first API call completes.
+   
+   - Fetches GitHub repositories and logs them.
+
+#### Output Order:
+
+- Dailysmarty posts appear first, followed by GitHub repos, regardless of individual API response times.
+
+****
+
+### 4. Handling Dependencies Between API Calls
+
+**Scenario**: When one API call depends on data from another (e.g., user authentication).
+
+```js
+async function fetchUserData() {  
+  // 1. Authenticate user  
+  const authResponse = await fetch('/auth', { method: 'POST' });  
+  const { token } = await authResponse.json();  
+
+  // 2. Use token to fetch data  
+  const userResponse = await fetch('/user', {  
+    headers: { Authorization: `Bearer ${token}` }  
+  });  
+  return userResponse.json();  
+}  
+```
+
+****
+
+### Best Practices
+
+- Use `async/await` to enforce order in dependent API calls.
+
+- Always handle errors with `try/catch` in production code.
+
+- Use `Promise.all()` for parallel execution of independent tasks.
+
+- Structure code to balance readability and efficiency.
+
+
+
+1. **Use `try/catch` for Error Handling**:
+   
+   ```js
+   async function queryApis() {  
+     try {  
+       const posts = await fetch('/posts').then(res => res.json());  
+       const repos = await fetch('/repos').then(res => res.json());  
+     } catch (err) {  
+       console.error("API Error:", err);  
+     }  
+   }  
+   ```
+2. **Optimize Independent Calls with `Promise.all`**:
+   
+   ```js
+   async function fetchParallel() {  
+     const [posts, repos] = await Promise.all([  
+       fetch('/posts').then(res => res.json()),  
+       fetch('/repos').then(res => res.json())  
+     ]);  
+   }  
+   ```
+   
+   
+3. **Avoid Redundant Variables**:  
+   Simplify code by combining `fetch` and `await`:
+   
+   ```js
+   const posts = await fetch('/posts').then(res => res.json());  
+   ```
+
+****
+
+## References
+
+* [Fetch API - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
+
+* https://javascript.info/async-await
+
+* [HTTP Status Codes Glossary - WebFX](https://www.webfx.com/web-development/glossary/http-status-codes/)
+
+
+
+
 
 ---
 

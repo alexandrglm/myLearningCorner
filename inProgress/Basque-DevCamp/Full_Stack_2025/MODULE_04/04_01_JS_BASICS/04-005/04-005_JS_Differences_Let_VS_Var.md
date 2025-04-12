@@ -8,9 +8,8 @@
 2. Re-defining Variables: `var` vs `let`
 3. Why `let` is More Restrictive
 4. When to Use `var` and `let`
-5. 
 
----
+  ---
 
 Now that you have a solid understanding of how to define variables and assign them values, it's important to discuss **how variables can be re-defined**. This directly leads us to the fundamental difference between `var` and `let` in JavaScript.
 

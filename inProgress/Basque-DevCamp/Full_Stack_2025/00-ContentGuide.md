@@ -363,8 +363,6 @@
 
 # MODULE 4 - JAVASCRIPT (i)
 
-### JavaScript 01:     Basics
-
 |     | #      | Type                                                                                                                                | Tittle                                                               | Date       |
 | --- | ------ | ----------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- | ---------- |
 | [X] | 04-001 | Literacy                                                                                                                            | Reasons for Learning JavaScript                                      | 2025-03-21 |
@@ -378,129 +376,189 @@
 | [X] | 04-009 | Objects                                                                                                                             | Guide to JavaScript Objects                                          | 2025-03-21 |
 | [X] | 04-010 | `typeof`                                                                                                                            | How to Check for Data Types in JavaScript                            | 2025-03-24 |
 | [X] | 04-011 | Data types parsing -`String()`, `.toString()`, `Number()`, `.parseInt()`, `.parseFloat()`, `Number(true / false)`, `Boolean(0 / 1)` | How to Perform Type Casting in JavaScript                            | 2025-03-24 |
-| [X] | 04-012 | String Methods 1: `.length`, `len()`, `.charAt(index)`, `.concat()`, `.includes()`, `.startsWith()`, `.endsWith()`,                 | Working with String Functions - Part 1                               | 2025-03-24 |
-| [X] | 04-013 | Strings Methods 2: `.repeat()`, `.match()`, `.replace()`, `.search()`, `.indexOf()`, `.lastIndexOf()`,                              | Working with String Functions - Part 2                               | 2025-03-24 |
-| [X] | 04-014 |                                                                                                                                     | Working with String Functions - Part 3                               | 2025-03-24 |
-| [X] | 04-015 |                                                                                                                                     | JavaScript Arithmetic Operators                                      | 2025-03-24 |
-| [X] | 04-016 |                                                                                                                                     | Guide to Compound Assignment Operators in JavaScript                 | 2025-03-24 |
-| [X] | 04-017 |                                                                                                                                     | Order of Operations in JavaScript                                    | 2025-03-24 |
+| [X] | 04-012 | String Methods 1: `.length`, `len()`, `.charAt(index)`, `.concat()`, `.includes()`, `.startsWith()`, `.endsWith()`                  | Working with String Functions - Part 1                               | 2025-03-24 |
+| [X] | 04-013 | String Methods 2: `.repeat()`, `.match()`, `.replace()`, `.search()`, `.indexOf()`, `.lastIndexOf()`                                | Working with String Functions - Part 2                               | 2025-03-24 |
+| [X] | 04-014 | String Methods 3: `.slice()`, `.substring()`, `.substr()`, `.split()`                                                               | Working with String Functions - Part 3                               | 2025-03-24 |
+| [X] | 04-015 | Arithmetic Operators: `+`, `-`, `*`, `/`, `%`, `**`                                                                                 | JavaScript Arithmetic Operators                                      | 2025-03-24 |
+| [X] | 04-016 | Compound Assignment Operators: `+=`, `-=`, `*=`, `/=`, `%=`                                                                         | Guide to Compound Assignment Operators in JavaScript                 | 2025-03-24 |
+| [X] | 04-017 | Order of Operations: `()`, `**`, `* / %`, `+ -`                                                                                     | Order of Operations in JavaScript                                    | 2025-03-24 |
 | [X] | 04-018 | Exercise: `reduce()`                                                                                                                | **Exercise:** How to Get the Average from an Array in JavaScript     | 2024-03-24 |
 
 ### JavaScript 02:    Conditionals
 
-|     | #      | Type | Tittle                                                                | Date       |
-| --- | ------ | ---- | --------------------------------------------------------------------- | ---------- |
-| [X] | 04-019 |      | JavaScript Conditional Section Introduction                           | 2025-03-24 |
-| [X] | 04-020 |      | Basic Syntax for Using Conditionals in JavaScript                     | 2025-03-24 |
-| [X] | 04-021 |      | Guide to If/Else Conditionals in JavaScript                           | 2025-03-24 |
-| [X] | 04-022 |      | Compound Conditionals in JavaScript                                   | 2025-03-24 |
-| [X] | 04-023 |      | How to Build a Switch Statement in JavaScript to Check for Data Types | 2025-03-24 |
-| [X] | 04-024 |      | Overview of JavaScript Ternary Operator                               | 2025-03-24 |
+|     | #      | Type                  | Tittle                                                                | Date       |
+| --- | ------ | --------------------- | --------------------------------------------------------------------- | ---------- |
+| [X] | 04-019 | Conditionals - Intro  | JavaScript Conditional Section Introduction                           | 2025-03-24 |
+| [X] | 04-020 | Conditionals - Syntax | Basic Syntax for Using Conditionals in JavaScript                     | 2025-03-24 |
+| [X] | 04-021 | `if/else`             | Guide to If/Else Conditionals in JavaScript                           | 2025-03-24 |
+| [X] | 04-022 | Compound Conditionals | Compound Conditionals in JavaScript                                   | 2025-03-24 |
+| [X] | 04-023 | `switch`, `typeof`    | How to Build a Switch Statement in JavaScript to Check for Data Types | 2025-03-24 |
+| [X] | 04-024 | Ternary Operator      | Overview of JavaScript Ternary Operator                               | 2025-03-24 |
 
 ### JavaScript 03:    Functions
 
-|     | #      | Type | Tittle                                                             | Date       |
-| --- | ------ | ---- | ------------------------------------------------------------------ | ---------- |
-| [X] | 04-025 |      | Section Introduction: Introduction to JavaScript Functions         | 2025-03-24 |
-| [X] | 04-026 |      | Basic Syntax for Building Functions in JavaScript                  | 2025-03-24 |
-| [X] | 04-027 |      | How Variable Scope Works in JavaScript                             | 2025-03-24 |
-| [X] | 04-028 |      | Differences Between Function Expressions and Function Declarations | 2025-03-24 |
-| [X] | 04-029 |      | How to Work with Function Arguments in JavaScript                  | 2025-03-24 |
-| [X] | 04-030 |      | Function Arguments: Reference vs Value                             | 2025-03-24 |
+|     | #      | Type                               | Tittle                                                             | Date       |
+| --- | ------ | ---------------------------------- | ------------------------------------------------------------------ | ---------- |
+| [X] | 04-025 | Functions - Intro                  | Section Introduction: Introduction to JavaScript Functions         | 2025-03-24 |
+| [X] | 04-026 | Function Syntax                    | Basic Syntax for Building Functions in JavaScript                  | 2025-03-24 |
+| [X] | 04-027 | Variable Scope                     | How Variable Scope Works in JavaScript                             | 2025-03-24 |
+| [X] | 04-028 | Function Declaration vs Expression | Differences Between Function Expressions and Function Declarations | 2025-03-24 |
+| [X] | 04-029 | Function Arguments                 | How to Work with Function Arguments in JavaScript                  | 2025-03-24 |
+| [X] | 04-030 | Reference vs Value (Arguments)     | Function Arguments: Reference vs Value                             | 2025-03-24 |
 
-### JavaScript 04:    Closures
+### JavaScript 04:    Closures
 
-|     | #      | Type | Tittle                                                            | Date       |
-| --- | ------ | ---- | ----------------------------------------------------------------- | ---------- |
-| [X] | 04-031 |      | Introduction to JavaScript Closures                               | 2025-03-25 |
-| [X] | 04-032 |      | Introduction to HTML Scripting with Built in JavaScript Functions | 2025-03-25 |
-| [X] | 04-033 |      | Introduction to the 'this' Keyword in JavaScript                  | 2025-03-25 |
-| [X] | 04-034 |      | How to Use the 'this' Keyword in JavaScript Programs              | 2025-03-25 |
-|     |        |      |                                                                   |            |
+|     | #      | Type                      | Tittle                                                            | Date       |
+| --- | ------ | ------------------------- | ----------------------------------------------------------------- | ---------- |
+| [X] | 04-031 | `closures`                | Introduction to JavaScript Closures                               | 2025-03-25 |
+| [X] | 04-032 | `document` object methods | Introduction to HTML Scripting with Built in JavaScript Functions | 2025-03-25 |
+| [X] | 04-033 | `this` keyword            | Introduction to the 'this' Keyword in JavaScript                  | 2025-03-25 |
+| [X] | 04-034 | `this` binding            | How to Use the 'this' Keyword in JavaScript Programs              | 2025-03-25 |
 
-### JavaScript 05:     Arrays
+### JavaScript 05:     Arrays
 
-|     | #      | Type                         | Tittle                                                                         | Date        |
-| --- | ------ | ---------------------------- | ------------------------------------------------------------------------------ | ----------- |
-| [X] | 04-035 | Arrays Introductory Exercise | Remove the First and Last Element from a JavaScript Array                      | 2025-03-25  |
-| [X] | 04-036 |                              | Section Introduction: Introduction to JavaScript Arrays                        | 2025-03-25  |
-| [X] | 04-037 |                              | How to Create Arrays in JavaScript                                             | 22025-03-25 |
-| [X] | 04-038 |                              | Course Checkpoint 7                                                            | 2025-03-27  |
-| [X] | 04-039 |                              | Guide to Adding and Removing Array Elements in JavaScript                      | 2025-03-27  |
-| [X] | 04-040 |                              | How to Use the Splice Function in JavaScript to Remove Specific Array Elements | 2025-03-27  |
-|     |        |                              |                                                                                |             |
-| [X] | 04-041 |                              | Guide to For Loops in JavaScript                                               | 2025-03-27  |
-| [X] | 04-042 |                              | How to Loop Through a JavaScript Object                                        | 2025-03-27  |
-| [X] | 04-043 |                              | Guide to While and Do/While Loops in JavaScript                                | 2025-03-27  |
+|     | #      | Type                                   | Tittle                                                                         | Date        |
+| --- | ------ | -------------------------------------- | ------------------------------------------------------------------------------ | ----------- |
+| [X] | 04-035 | `slice()`                              | Remove the First and Last Element from a JavaScript Array                      | 2025-03-25  |
+| [X] | 04-036 | `Array` basics                         | Section Introduction: Introduction to JavaScript Arrays                        | 2025-03-25  |
+| [X] | 04-037 | `Array` creation                       | How to Create Arrays in JavaScript                                             | 22025-03-25 |
+| [X] | 04-038 | -                                      | Course Checkpoint 7                                                            | 2025-03-27  |
+| [X] | 04-039 | `push()`/`pop()`/`shift()`/`unshift()` | Guide to Adding and Removing Array Elements in JavaScript                      | 2025-03-27  |
+| [X] | 04-040 | `splice()`                             | How to Use the Splice Function in JavaScript to Remove Specific Array Elements | 2025-03-27  |
 
-### JavaScript 06 :    Automating Tasks with JavaScript
+### JavaScript 06:     Loops
 
-|     | #      | Type | Tittle                                                                                | Date       |
-| --- | ------ | ---- | ------------------------------------------------------------------------------------- | ---------- |
-| [X] | 04-044 |      | Section Introduction: Introduction to Automating Tasks in the Browser with JavaScript | 2025-03-27 |
-| [X] | 04-045 |      | Running Google Search Queries in JavaScript                                           | 2025-03-28 |
-| [X] | 04-046 |      | How to Pull Images from Instagram with JavaScript                                     | 2025-03-28 |
-| [X] | 04-047 |      | Auto Following Accounts and Hashtags on LinkedIn with JavaScript                      | 2025-03-28 |
+|     | #      | Type                 | Tittle                                          | Date       |
+| --- | ------ | -------------------- | ----------------------------------------------- | ---------- |
+| [X] | 04-041 | `for` loops          | Guide to For Loops in JavaScript                | 2025-03-27 |
+| [X] | 04-042 | `for...in`           | How to Loop Through a JavaScript Object         | 2025-03-27 |
+| [X] | 04-043 | `while`/`do...while` | Guide to While and Do/While Loops in JavaScript | 2025-03-27 |
 
-### JavaScript 07:    Modern JavaScript
+### JavaScript 07 :    Automating Tasks with JavaScript
 
-|     | #      | Type | Tittle                                                                            | Date       |
-| --- | ------ | ---- | --------------------------------------------------------------------------------- | ---------- |
-| [X] | 04-048 |      | Modern JavaScript Basics Section Introduction                                     | 2025-03-31 |
-| [X] | 04-049 |      | Using the Const Variable Type in JavaScript                                       | 2025-03-31 |
-| [X] | 04-050 |      | Guide to Backtick string interpolation in Javascript                              | 2025-03-31 |
-| [X] | 04-051 |      | Integrating Conditionals into JavaScript Strings with Ternary Operators           | 2025-03-31 |
-| [X] | 04-052 |      | Introduction to Arrow Functions in JavaScript                                     | 2025-04-01 |
-| [X] | 04-053 |      | Build an HTML Heading Generator Function in JavaScript                            | 2025-04-01 |
-| [X] | 04-054 |      | How Arrow Functions Work with ‘this’                                              | 2025-04-01 |
-| [X] | 04-055 |      | How to Swap Variable Values in JavaScript with Variable Deconstruction            | 2025-04-01 |
-| [X] | 04-056 |      | How to Implement Array Destructuring in JavaScript                                | 2025-04-01 |
-| [X] | 04-057 |      | How to Pass JavaScript Objects as Function Arguments by Leveraging Deconstruction | 2025-04-01 |
-| [X] | 04-058 |      | Guide to Adding Default Object Values to JavaScript Function Arguments            | 2025-04-01 |
-| [X] | 04-059 |      | Guide to the JavaScript Spread Operator                                           | 2025-04-01 |
-| [X] | 04-060 |      | Guide to JavaScript Bind Function                                                 | 2025-04-01 |
-| [X] | 04-061 |      | How to Check if Two Objects Have Equal Values                                     | 2025-04-01 |
+|     | #      | Type               | Tittle                                                                                | Date       |
+| --- | ------ | ------------------ | ------------------------------------------------------------------------------------- | ---------- |
+| [X] | 04-044 | `DOM` manipulation | Section Introduction: Introduction to Automating Tasks in the Browser with JavaScript | 2025-03-27 |
+| [X] | 04-045 | `window.location`  | Running Google Search Queries in JavaScript                                           | 2025-03-28 |
+| [X] | 04-046 | `fetch()` API      | How to Pull Images from Instagram with JavaScript                                     | 2025-03-28 |
+| [X] | 04-047 | `event` simulation | Auto Following Accounts and Hashtags on LinkedIn with JavaScript                      | 2025-03-28 |
 
-### Object-Oriented Programming in JavaScript
+### JavaScript 08:    Modern JavaScript
 
-|     | #      | Type | Tittle                                                         | Date       |
-| --- | ------ | ---- | -------------------------------------------------------------- | ---------- |
-| [X] | 04-062 |      | Object Oriented Programming in JavaScript Section Introduction | 2025-04-01 |
-| [X] | 04-063 |      | Introduction to Object Oriented Programming in JavaScript      | 2025-04-01 |
-| [X] | 04-064 |      | Guide to JavaScript OOP Instance Methods                       | 2025-04-01 |
-| [X] | 04-065 |      | Guide to OOP Static Methods in JavaScript                      | 2025-04-02 |
+|     | #      | Type                                    | Tittle                                                                            | Date       |
+| --- | ------ | --------------------------------------- | --------------------------------------------------------------------------------- | ---------- |
+| [X] | 04-048 | ES6+ features                           | Modern JavaScript Basics Section Introduction                                     | 2025-03-31 |
+| [X] | 04-049 | `const`                                 | Using the Const Variable Type in JavaScript                                       | 2025-03-31 |
+| [X] | 04-050 | template literals interpolation         | Guide to Backtick string interpolation in Javascript                              | 2025-03-31 |
+| [X] | 04-051 | ternary operator `? :`                  | Integrating Conditionals into JavaScript Strings with Ternary Operators           | 2025-03-31 |
+| [X] | 04-052 | arrow functions `const x = () => {...}` | Introduction to Arrow Functions in JavaScript                                     | 2025-04-01 |
+| [X] | 04-053 | function composition                    | Build an HTML Heading Generator Function in JavaScript                            | 2025-04-01 |
+| [X] | 04-054 | `this`                                  | How Arrow Functions Work with 'this'                                              | 2025-04-01 |
+| [X] | 04-055 | destructuring                           | How to Swap Variable Values in JavaScript with Variable Deconstruction            | 2025-04-01 |
+| [X] | 04-056 | array destructuring                     | How to Implement Array Destructuring in JavaScript                                | 2025-04-01 |
+| [X] | 04-057 | object destructuring                    | How to Pass JavaScript Objects as Function Arguments by Leveraging Deconstruction | 2025-04-01 |
+| [X] | 04-058 | default parameters                      | Guide to Adding Default Object Values to JavaScript Function Arguments            | 2025-04-01 |
+| [X] | 04-059 | spread `...(array)` operator            | Guide to the JavaScript Spread Operator                                           | 2025-04-01 |
+| [X] | 04-060 | `bind()`                                | Guide to JavaScript Bind Function                                                 | 2025-04-01 |
+| [X] | 04-061 | object comparison                       | How to Check if Two Objects Have Equal Values                                     | 2025-04-01 |
 
-### JavaScript Promises and Async/Await
+### JavaScrip 09:   Object-Oriented Programming in JavaScript
 
-|     | #      | Type | Tittle                                                                 | Date       |
-| --- | ------ | ---- | ---------------------------------------------------------------------- | ---------- |
-| [X] | 04-066 |      | JSON Parsing Guide for API Development                                 | 2025-04-02 |
-| [X] | 04-067 |      | Build a Manual Exponent Function in JavaScript                         | 2025-04-02 |
-| [X] | 04-068 |      | Introduction to JavaScript Promises                                    | 2025-04-02 |
-| [X] | 04-069 |      | Using a fetch Promise to Communicate with APIs in JavaScript           | 2025-04-02 |
-| [X] | 04-070 |      | How to Group Promises Together with Promise.all in JavaScript          | 2025-04-02 |
-|     |        |      |                                                                        |            |
-| [X] | 04-071 |      | Introduction to Async and Await in JavaScript                          | 2025-04-02 |
-| [X] | 04-072 |      | Combining Async / Await with Closures to Ensure All Processes Have Run | 2025-04-02 |
-| [X] | 04-073 |      | Using Async / Await for Communicating with Outside APIs in JavaScript  | 2025-04-02 |
-| [X] | 04-074 |      | Implementing Error Handling In a JavaScript Async / Await Function     | 2025-04-02 |
-| [X] | 04-075 |      | Build a Weighted Lottery Function in JavaScript                        | 2025-04-02 |
-| [X] | 04-076 |      | Developer Learning Curve – Why Learning How to Code Takes So Long?     | 2025-04-02 |
-| [ ] | 04-077 |      | Course Checkpoint 8                                                    |            |
+|     | #      | Type             | Tittle                                                         | Date       |
+| --- | ------ | ---------------- | -------------------------------------------------------------- | ---------- |
+| [X] | 04-062 | OOP concepts     | Object Oriented Programming in JavaScript Section Introduction | 2025-04-01 |
+| [X] | 04-063 | `class` syntax   | Introduction to Object Oriented Programming in JavaScript      | 2025-04-01 |
+| [X] | 04-064 | instance methods | Guide to JavaScript OOP Instance Methods                       | 2025-04-01 |
+| [X] | 04-065 | static methods   | Guide to OOP Static Methods in JavaScript                      | 2025-04-02 |
 
-### Module 4 keypoints:
+### JavaScript 10:   Promises and Async/Await
 
-* Variables.
-* Syntax.
-* Primitive data types.
-* Conditionals, loops, functions, function declaration, function expression.
-* OOP in general terms. Data structures. Async. CEC.
+|     | #      | Type                | Tittle                                                                 | Date       |
+| --- | ------ | ------------------- | ---------------------------------------------------------------------- | ---------- |
+| [X] | 04-066 | `JSON` methods      | JSON Parsing Guide for API Development                                 | 2025-04-02 |
+| [X] | 04-067 | math operations     | Build a Manual Exponent Function in JavaScript                         | 2025-04-02 |
+| [X] | 04-068 | `Promise`           | Introduction to JavaScript Promises                                    | 2025-04-02 |
+| [X] | 04-069 | `fetch()`           | Using a fetch Promise to Communicate with APIs in JavaScript           | 2025-04-02 |
+| [X] | 04-070 | `Promise.all()`     | How to Group Promises Together with Promise.all in JavaScript          | 2025-04-02 |
+| [X] | 04-071 | `async`/`await`     | Introduction to Async and Await in JavaScript                          | 2025-04-02 |
+| [X] | 04-072 | async closures      | Combining Async / Await with Closures to Ensure All Processes Have Run | 2025-04-02 |
+| [X] | 04-073 | API integration     | Using Async / Await for Communicating with Outside APIs in JavaScript  | 2025-04-02 |
+| [X] | 04-074 | `try`/`catch`       | Implementing Error Handling In a JavaScript Async / Await Function     | 2025-04-02 |
+| [X] | 04-075 | weighted algorithms | Build a Weighted Lottery Function in JavaScript                        | 2025-04-02 |
+| [X] | 04-076 | Digital Literacy    | Developer Learning Curve – Why Learning How to Code Takes So Long?     | 2025-04-02 |
+| [X] | 04-077 |                     | Course Checkpoint 8                                                    | 2025-04-09 |
 
 ***
 
 # MODULE 5
 
-## JAVASCRIPT (ii) - Latest Tools - NPM
+## JavaScript (ii) + Git (ii)
+
+### JavaScript 11:   Modern JS Tools
+
+|     | #      | Type         | Tittle                                                | Date |
+| --- | ------ | ------------ | ----------------------------------------------------- | ---- |
+| [ ] | 05-078 |              | Section Introduction for Modern JavaScript Tools      |      |
+| [ ] | 05-079 |              | Overview of Lodash JavaScript Library                 |      |
+| [ ] | 05-080 |              | Popular Lodash Functions: keyBy, reduce, and random   |      |
+| [ ] | 05-081 |              | Overview of the JavaScript Debugger                   |      |
+| [ ] | 05-082 |              | Overview of the Quokka.js Extension                   |      |
+| [ ] | 05-083 |              | Overview of JavaScript Lint Tools                     |      |
+| [ ] | 05-084 |              | Learn How to Code from Scratch – A Practical Strategy |      |
+| [ ] | 05-085 |              | The Power of Making Mistakes – Learning by Failing    |      |
+| [ ] | 05-086 | **Exercise** | Build a Pretty Price Method in JavaScript             |      |
+
+### JavaScript 12:   Modern Error Handling
+
+|     | #      | Type | Tittle                                                      | Date |
+| --- | ------ | ---- | ----------------------------------------------------------- | ---- |
+| [ ] | 05-087 |      | Section Introduction for Modern JavaScript Error Management |      |
+| [ ] | 05-088 |      | Basic Error Management Syntax in JavaScript                 |      |
+| [ ] | 05-089 |      | How to Create a Custom Error Class in JavaScript            |      |
+| [ ] | 05-090 |      | Integrating Error Management into API Calls in JavaScript   |      |
+| [ ] | 05-091 |      | Tips and Tricks to Building New Features as a Developer     |      |
+
+### JavaScript 13:  ES6 Modules
+
+|     | #      | Type | Tittle                                                                    | Date |
+| --- | ------ | ---- | ------------------------------------------------------------------------- | ---- |
+| [ ] | 05-092 |      | Section Introduction for Modern JavaScript Modules                        |      |
+| [ ] | 05-093 |      | How to Utilize the ES6 Project Generator                                  |      |
+| [ ] | 05-094 |      | Basic Guide to Importing and Exporting Code in JavaScript with ES6 Syntax |      |
+| [ ] | 05-095 |      | How to Import Multiple Elements from a JavaScript File                    |      |
+| [ ] | 05-096 |      | Guide to Default Exports in JavaScript                                    |      |
+| [ ] | 05-097 |      | Task Switching Costs for Developers                                       |      |
+
+### JavaScript 14:  NPM
+
+|     | #      | Type | Tittle                                                 | Date |
+| --- | ------ | ---- | ------------------------------------------------------ | ---- |
+| [ ] | 05-098 |      | Section Introduction for JavaScript Package Management |      |
+| [ ] | 05-099 |      | Introduction to NPM Packages                           |      |
+| [ ] | 05-100 |      | How to Install MomentJS into a JavaScript Application  |      |
+| [ ] | 05-101 |      | Popular MomentJS Functions                             |      |
+| [ ] | 05-102 |      | How to Build and Deploy a NPM Module                   |      |
+| [ ] | 05-103 |      | Course Checkpoint 9                                    |      |
+
+|     | #      | Type | Tittle                                                      | Date |
+| --- | ------ | ---- | ----------------------------------------------------------- | ---- |
+| [ ] | 05-104 |      | Build out a Diner Menu using JavaScript                     |      |
+| [ ] | 05-105 |      | Practical Ways to Use the Pomodoro Technique as a Developer |      |
+
+***
+
+## Git (2)
+
+### Git - GitHub Control Version
+
+|     | #      | Type | Tittle                                                    | Date |
+| --- | ------ | ---- | --------------------------------------------------------- | ---- |
+| [ ] | 05-106 |      | How to Create a Local Git Repository                      |      |
+| [ ] | 05-107 |      | How to Push a Local Git Repository to GitHub              |      |
+| [ ] | 05-108 |      | Review of the Git Workflow                                |      |
+| [ ] | 05-109 |      | Examining the Dot Git Directory                           |      |
+| [ ] | 05-110 |      | How to Hide Files and Directories from Git with gitignore |      |
+| [ ] | 05-111 |      | Course Checkpoint 10                                      |      |
 
 ***
 

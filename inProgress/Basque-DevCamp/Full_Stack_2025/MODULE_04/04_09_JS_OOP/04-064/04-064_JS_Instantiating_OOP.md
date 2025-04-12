@@ -1,109 +1,112 @@
 # MODULE 04-064:     JavaScript
 
-## OOP programming (2)    Instance Methods
+
+## OOP programming (1):    Instance Methods
+
+****
+
+1. Class Definition
+
+2. Constructor Method
+
+3. Instantiation Process
+
+4. Instance Properties
+
+****
+
+## 1. Class Definition
+
+Classes in JavaScript serve as blueprints for creating objects. They encapsulate:
+
+- **Properties** (data/state)
+
+- **Methods** (behavior/functionality)
+
+```js
+class Instructor {
+  // Class body goes here
+}
+```
+
+**Historical Context:**  
+Prior to ES6, JavaScript used prototype-based inheritance.  
+
+ Modern class syntax provides clearer structure while maintaining prototype-based inheritance under the hood.
 
 ---
 
-1. Instance Methods Overview
+## 2. Constructor Method
 
-2. Adding Behavior to Classes
+The `constructor` is a special method that:
 
-3. The `this` Keyword
+- Runs automatically when creating new instances
 
-4. Default Parameter Values
+- Initializes instance properties
 
-****
-
-## 1. Instance Methods Overview
-
-Instance methods are functions defined within a class that can be called on individual instances. They:
-
-- Define object behavior
-
-- Have access to instance properties via `this`
-
-- Are called on specific instances
+- Receives arguments passed during instantiation
 
 ```js
-class Instructor {
-  // Instance method example
-  renderDetails() {
-    console.log(`${this.name}: ${this.role}`);
-  }
+constructor({ name }) {
+  this.name = name;
 }
 ```
 
-****
+**Visual Representation:**
 
-## 2. Adding Behavior to Classes
+```
+new Instructor()
+      ↓
+Constructor runs
+      ↓
+Properties initialized
+      ↓
+Instance created
+```
 
-### Method Definition Syntax
+---
 
-Methods are defined similarly to object methods, but within the class body:
+## 3. Instantiation Process
+
+Creating an instance from a class:
+
+```js
+const jon = new Instructor({ name: 'Jon Snow' });
+```
+
+**Key Terms:**
+
+| Term     | Description                        |
+| -------- | ---------------------------------- |
+| `new`    | Operator that creates new instance |
+| `this`   | Refers to the current instance     |
+| Instance | Concrete object created from class |
+
+---
+
+## 4. Instance Properties
+
+Properties are added to instances using `this`:
 
 ```js
 class Instructor {
-  constructor({ name, role = 'assistant' }) {
+  constructor({ name, role = 'teacher' }) {
     this.name = name;
     this.role = role;
-  }
-
-  // Instance method
-  promote(newRole) {
-    this.role = newRole;
-    return `${this.name} promoted to ${newRole}`;
+    this.createdAt = new Date();
   }
 }
 ```
 
-### Calling Methods
+**Property Characteristics:**
 
-```js
-const instructor = new Instructor({ name: 'Sarah' });
-instructor.promote('lead-teacher');  // "Sarah promoted to lead-teacher"
-```
+- Can have default values
 
-****
+- Can be dynamically calculated
 
-## 3. The `this` Keyword
+- Are instance-specific
 
-`this` refers to the current instance and is crucial for:
-
-- Accessing instance properties
-
-- Calling other instance methods
-
-- Maintaining object context
-
-**Common Pitfall:** Losing `this` context in callbacks. Solutions:
-
-- Arrow functions
-
-- `.bind()`
-
-- Storing reference to `this`
-
-****
-
-## 4. Default Parameter Values
-
-Default values can be specified in the constructor:
-
-```js
-constructor({ name, role = 'assistant' }) {
-  this.name = name;
-  this.role = role;
-}
-```
-
-**Usage Examples:**
-
-```js
-const defaultRole = new Instructor({ name: 'Alex' }); // role = 'assistant'
-const customRole = new Instructor({ name: 'Jamie', role: 'teacher' });
-```
-
-****
+---
 
 ## 5. Practical Implementation
 
@@ -111,19 +114,15 @@ const customRole = new Instructor({ name: 'Jamie', role: 'teacher' });
 
 ```js
 class Instructor {
-  constructor({ name, role = 'assistant', courses = [] }) {
+  constructor({ name, specialty }) {
     this.name = name;
-    this.role = role;
-    this.courses = courses;
+    this.specialty = specialty;
+    this.students = [];
   }
 
-  addCourse(course) {
-    this.courses.push(course);
-    return `${course} added to ${this.name}'s courses`;
-  }
-
-  getInfo() {
-    return `${this.name} (${this.role}): ${this.courses.length} courses`;
+  addStudent(student) {
+    this.students.push(student);
+    return `${student} added to ${this.name}'s class`;
   }
 }
 ```
@@ -131,29 +130,52 @@ class Instructor {
 ### Creating and Using Instances
 
 ```js
-const jsTeacher = new Instructor({
-  name: 'Maria',
-  role: 'lead-instructor'
+const jsExpert = new Instructor({
+  name: 'Sarah',
+  specialty: 'JavaScript'
 });
 
-jsTeacher.addCourse('JavaScript 101');
-jsTeacher.addCourse('Advanced React');
-console.log(jsTeacher.getInfo());
+jsExpert.addStudent('Alice');
+jsExpert.addStudent('Bob');
 ```
 
-****
-
-## Common Patterns & Best Practices
-
-### Method Chaining
-
-Return `this` to enable chaining:
+**Instance Visualization:**
 
 ```js
-class Instructor {
-  // ...
+jsExpert Instance:
+{
+  name: "Sarah",
+  specialty: "JavaScript",
+  students: ["Alice", "Bob"],
+  __proto__: Instructor.prototype
+}
+```
 
-  setName(name) {
+---
+
+## Common Pitfalls & Best Practices
+
+### Pitfall 1: Forgetting `new` Keyword
+
+```js
+const badInstance = Instructor(); // TypeError
+```
+
+**Solution:** Always use `new` with class constructors
+
+### Pitfall 2: Modifying Shared Prototype
+
+```js
+Instructor.prototype.school = 'DevCamp'; // Affects ALL instances
+```
+
+**Solution:** Prefer instance properties for instance-specific data
+
+### Best Practice: Clear Property Initialization
+
+Initialize all relevant properties in constructor for better code organization and predictability.
+
+---
     this.name = name;
     return this;
   }
