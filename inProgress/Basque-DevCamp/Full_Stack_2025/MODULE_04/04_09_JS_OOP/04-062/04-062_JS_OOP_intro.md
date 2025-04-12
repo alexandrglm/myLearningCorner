@@ -14,6 +14,8 @@
 
 5. Modern JavaScript OOP
 
+****
+
 ## 1. OOP Fundamentals
 
 Object-Oriented Programming (OOP) is a programming paradigm that organizes code into **objects** containing both:

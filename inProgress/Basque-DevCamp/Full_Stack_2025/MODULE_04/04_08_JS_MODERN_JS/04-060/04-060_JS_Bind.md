@@ -4,6 +4,167 @@
 
 ---
 
+1. Introduction to `bind()`
+
+2. Understanding Function Context (`this`)
+
+3. Syntax and Use of `bind()`
+
+4. Why `bind()` Is Common in React
+
+5. Case Study: Binding a Function to an Object
+
+6. Why Arrow Functions Don’t Work with `bind()`
+
+****
+
+## 1. Introduction to `bind()`
+
+In JavaScript, functions are **first-class objects**, which means they can be passed around and manipulated like any other value. The `bind()` method is a powerful tool that allows you to **permanently bind a specific value of `this`** to a function.
+
+This is especially useful when working with **callback functions**, **event handlers**, or **component methods** in frameworks like **React**.
+
+****
+
+## 2. Understanding Function Context (`this`)
+
+Every time a function is invoked in JavaScript, it gets a special value called `this`, which refers to the object that is currently executing the function.
+
+However, the value of `this` can be **dynamic** and change based on **how** and **where** a function is called, not necessarily where it was defined.
+
+```js
+function sayHi() {
+  console.log(this.name);
+}
+
+const user = { name: "Alice" };
+sayHi();                 // undefined (or window.name in browsers)
+```
+
+Without an explicit context, `this` can refer to the **global object** (`window` in browsers or `global` in Node.js), which is often not what you want.
+
+---
+
+## 3. Syntax and Use of `bind()`
+
+The `bind()` method creates a **new function** with the same body as the original function, but **permanently binds `this`** to the object you pass in.
+
+```js
+const newFunction = originalFunction.bind(context);
+```
+
+Example:
+
+```js
+const user = {
+  name: "Kristine",
+};
+
+function greet() {
+  return `Hello, ${this.name}`;
+}
+
+const greetUser = greet.bind(user);
+
+greetUser();         // "Hello, Kristine"
+```
+
+Once bound, calling `greetUser()` will always refer to `user` as `this`.
+
+****
+
+## 4. Why `bind()` Is Common in React
+
+In older class-based React components, you often see:
+
+```js
+constructor(props) {
+  super(props);
+  this.handleClick = this.handleClick.bind(this);
+}
+```
+
+This ensures that `this` inside `handleClick` refers to the component instance, not to the DOM element or another object.   
+
+Without `bind()`, the method loses its context when passed as a callback, e.g., to an `onClick` event.
+
+****
+
+## 5. Case Study: Binding a Function to an Object
+
+Let’s say we have two users and a function that prints their full name:
+
+```js
+const userOne = {
+  firstName: "Kristine",
+  lastName: "Hudgens"
+};
+
+const userTwo = {
+  firstName: "Tiffany",
+  lastName: "Hudgens"
+};
+
+const fullName = function() {
+  return `${this.lastName}, ${this.firstName}`;
+};
+
+const kristine = fullName.bind(userOne);
+const tiffany = fullName.bind(userTwo);
+
+
+
+console.log(kristine());         // Hudgens, Kristine
+console.log(tiffany());         // Hudgens, Tiffany
+```
+
+By using `bind()`, we **inject** the user context into the `fullName` function without passing arguments or restructuring the function.
+
+****
+
+## 6. Why Arrow Functions Don’t Work with `bind()`
+
+Arrow functions behave differently with `this`. They **do not have their own `this`**; instead, they inherit it from their surrounding lexical scope.
+
+```js
+const fullName = () => {
+  return `${this.lastName}, ${this.firstName}`;
+};
+
+const bound = fullName.bind(userOne);
+
+
+console.log(bound());         // undefined, undefined
+```
+
+Even after using `bind()`, the arrow function continues to use the `this` from the outer scope (usually the global object), **ignoring the bound object**.  
+
+**Conclusion:** To use `bind()` effectively, you must use **regular function expressions** (not arrow functions), as they have dynamic `this` context.
+
+****
+
+| Concept               | Details                                                              |
+| --------------------- | -------------------------------------------------------------------- |
+| Purpose of `bind()`   | Permanently sets the `this` context for a function                   |
+| Common Use Case       | Used in callbacks and class methods, especially in React             |
+| Function Required     | Must be a **regular function expression**, not an arrow function     |
+| Output                | Returns a **new function** with `this` bound to the specified object |
+| Arrow Function Caveat | Arrow functions ignore `.bind()` and inherit `this` from outer scope |
+
+---
+
+## References
+
+* [Function.prototype.bind() - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind)
+
+* https://javascript.info/bind
+
+* [JavaScript Function bind() Method](https://www.w3schools.com/js/js_function_bind.asp)
+
+About using React and Bind:
+
+* https://react.dev/learn/responding-to-events
+
 ---
 
 ## Video lesson Speech

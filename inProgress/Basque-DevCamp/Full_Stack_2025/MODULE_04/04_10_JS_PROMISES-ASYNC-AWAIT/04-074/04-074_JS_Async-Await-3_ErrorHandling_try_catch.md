@@ -4,6 +4,193 @@
 
 ---
 
+1. **Error Handling in Async/Await**
+
+2. **Independent vs. Dependent API Calls**
+
+3. **Code Walkthrough: Granular Error Handling**
+
+****
+
+### 1. Error Handling in Async/Await
+
+Use `try/catch` blocks to manage errors in asynchronous operations.
+
+- **`try`**: Wraps code that might throw an error (e.g., failed API calls).
+
+- **`catch`**: Catches and handles errors, preventing the entire process from crashing.
+
+**Example**
+
+```js
+async function fetchData() {  
+  try {  
+    const data = await fetch('https://api.example.com/data');  
+    console.log(data);  
+  } catch (err) {  
+    console.error("API Error:", err);  
+  }  
+}  
+```
+
+****
+
+### 2. Independent vs. Dependent API Calls
+
+#### Independent API Calls (Parallelizable):
+
+- Use **separate `try/catch` blocks** for each API call.
+
+- Errors in one API do not block others.
+
+**Example**
+
+```js
+async function queryApis() {  
+  try {  
+    // API 1: Fetch posts  
+    const posts = await fetch('/posts').then(res => res.json());  
+  } catch (err) {  
+    console.log("Posts API failed:", err);  
+  }  
+
+  try {  
+    // API 2: Fetch GitHub repos  
+    const repos = await fetch('/repos').then(res => res.json());  
+  } catch (err) {  
+    console.log("GitHub API failed:", err);  
+  }  
+}  
+```
+
+
+
+#### Dependent API Calls (Sequential):
+
+- Use **a single `try/catch` block** for all dependent operations.
+
+- Halts execution on the first error.
+
+**Example**
+
+```js
+async function authAndFetch() {  
+  try {  
+    const token = await authenticateUser(); // Must succeed first  
+    const data = await fetchData(token); // Depends on token  
+  } catch (err) {  
+    console.error("Process failed:", err);  
+  }  
+}  
+```
+
+****
+
+### 3. Code Walkthrough: Granular Error Handling
+
+#### Example Code
+
+```js
+async function queryApis() {  
+  // DailySmarty API  
+  try {  
+    const postsPromise = fetch('http://api.dailysmarty.com/posts');  
+    const posts = await postsPromise.then(res => res.json());  
+    console.log(posts);  
+  } catch (err) {  
+    console.log(err);  
+    console.log('DailySmarty API Error');  
+  }  
+
+  // GitHub API  
+  try {  
+    const reposPromise = fetch('https://api.github.com/users/jordanhudgens/repos');  
+    const repos = await reposPromise.then(res => res.json());  
+    console.log(repos);  
+  } catch (err) {  
+    console.log(err);  
+    console.log('GitHub API Error');  
+  }  
+}  
+
+queryApis();  
+```
+
+- If `DailySmarty` API fails, the error is logged, but the `GitHub` API still executes.
+
+- Errors include context (e.g., `DailySmarty API Error`), aiding debugging.
+
+****
+
+### Best Practices
+
+- Use **separate `try/catch` blocks** for independent API calls to isolate failures.
+
+- Use **a single `try/catch`** for dependent operations to halt on errors.
+
+- Always provide **contextual error messages** for easier debugging.
+
+- Follow security best practices (e.g., HTTPS, error logging).
+
+
+
+
+
+1. **Use Descriptive Error Messages**:
+   
+   ```js
+   catch (err) {  
+     console.log("GitHub API failed:", err.message);  
+   }  
+   ```
+2. **Centralized Logging**:
+   
+   ```js
+   catch (err) {  
+     logErrorToService(err); // Send errors to monitoring tools  
+   }  
+   ```
+3. **Retry Mechanisms**:
+   
+   ```js
+   let retries = 3;  
+   while (retries > 0) {  
+     try {  
+       const data = await fetch('/data');  
+       break;  
+     } catch (err) {  
+       retries--;  
+     }  
+   }  
+   ```
+4. **Fallback Data**:
+   
+   ```js
+   catch (err) {  
+     console.log("Using fallback data");  
+     return fallbackData;  
+   }  
+   ```
+5. **Always Use HTTPS**:
+   
+   ```js
+   // ❌ Avoid  
+   fetch('http://insecure-api.com/data');  
+   
+   // ✅ Use  
+   fetch('https://secure-api.com/data');  
+   ```
+   
+   
+
+****
+
+## References
+
+* [try...catch - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch)
+
+* https://javascript.info/try-catch
+
 ---
 
 ## Video lesson Speech

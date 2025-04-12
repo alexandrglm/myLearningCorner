@@ -1,8 +1,190 @@
 # MODULE 04 - 071:    JavaScript
 
-## Async / Await (0), Introduction
+## Async / Await (1), Introduction
 
 ---
+
+1. What Problem Does Async/Await Solve?
+
+2. What Are Async and Await?
+
+3. Syntax and Basic Usage
+
+4. Async/Await vs. Promises
+
+5. Error Handling with Try/Catch
+
+****
+
+### 1. What Problem Does Async/Await Solve?
+
+Before `async/await`, JavaScript developers faced two primary challenges:
+
+- **Callback Hell**: Deeply nested callbacks for sequential asynchronous operations.
+
+- **Complex Promise Chains**: Long `.then()` chains that reduced code readability.
+
+**Example of Callback Hell**:
+
+```js
+login(() => {  
+  updateAccount(() => {  
+    fetchUserData(() => {  
+      // More nested callbacks...  
+    });  
+  });  
+});  
+```
+
+**Promise Chains**:
+
+```js
+login()  
+  .then(updateAccount)  
+  .then(fetchUserData)  
+  .then(...);  
+```
+
+While promises improved readability, complex workflows still became unwieldy.
+
+****
+
+### 2. What Are Async and Await?
+
+- **`async`**: A keyword to declare a function that returns a `Promise` implicitly.
+
+- **`await`**: A keyword to pause execution until a `Promise` resolves, making asynchronous code look synchronous.
+
+**Key Features**:
+
+- **Sequential Code Flow**: Write asynchronous code in a linear, readable manner.
+
+- **Error Handling**: Use `try/catch` for synchronous-style error handling.
+
+- **Compatibility**: Works with all promise-based APIs (e.g., `fetch`, `setTimeout`).
+
+---
+
+### 3. Syntax and Basic Usage
+
+#### Declaring an Async Function
+
+```js
+async function functionName() {  
+  // Code using await  
+}  
+```
+
+#### Using `await`
+
+```js
+async function loginActivities() {  
+  const loginResult = await login(); // Waits for login() to resolve  
+  console.log(loginResult);  
+}  
+```
+
+**Example**: Simulating a login workflow:
+
+```js
+const login = () => {  
+  return new Promise((resolve) => {  
+    setTimeout(() => resolve("User logged in..."), 2000);  
+  });  
+};  
+
+const updateAccount = () => {  
+  return new Promise((resolve) => {  
+    setTimeout(() => resolve("Updating last login..."), 2000);  
+  });  
+};  
+
+async function loginActivities() {  
+  const loginStatus = await login();  
+  console.log(loginStatus); // "User logged in..." after 2 seconds  
+
+  const updateStatus = await updateAccount();  
+  console.log(updateStatus); // "Updating last login..." after another 2 seconds  
+}  
+
+loginActivities();  
+```
+
+****
+
+### 4. Async/Await vs. Promises
+
+| Feature            | Async/Await                           | Promises                          |
+| ------------------ | ------------------------------------- | --------------------------------- |
+| **Readability**    | Linear, synchronous-like code         | Chained `.then()` calls           |
+| **Error Handling** | `try/catch` blocks                    | `.catch()` method                 |
+| **Debugging**      | Easier (breakpoints work as expected) | Harder in nested `.then()` chains |
+
+**Equivalent Promise Chain**
+
+```js
+login()  
+  .then(loginStatus => {  
+    console.log(loginStatus);  
+    return updateAccount();  
+  })  
+  .then(updateStatus => console.log(updateStatus));  
+```
+
+****
+
+### 5. Error Handling with Try/Catch
+
+Use `try/catch` to handle errors in async functions:
+
+```js
+async function loginActivities() {  
+  try {  
+    const loginStatus = await login();  
+    console.log(loginStatus);  
+
+    const updateStatus = await updateAccount();  
+    console.log(updateStatus);  
+  } catch (err) {  
+    console.error("Error:", err); // Handles rejections from login() or updateAccount()  
+  }  
+}  
+```
+
+****
+
+### 6. Best Practices
+
+- `async/await` simplifies asynchronous code by making it look synchronous.
+
+- Always use `try/catch` for error handling in async functions.
+
+- Combine with `Promise.all()` for parallel execution of independent tasks.
+
+- Avoid overusing `await` to prevent unnecessary blocking.
+1. **Use `async` Sparingly**: Only mark functions as `async` when they use `await`.
+
+2. **Avoid Blocking the Event Loop**: Use `Promise.all()` for parallel tasks:
+   
+   ```js
+   async function parallelTasks() {  
+     const [result1, result2] = await Promise.all([task1(), task2()]);  
+   }  
+   ```
+
+3. **Combine with Destructuring**:
+   
+   ```js
+   const { user, posts } = await fetchDashboardData();  
+   ```
+
+****
+
+## References
+
+* [async function - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function)
+
+* https://javascript.info/async-await
 
 ---
 

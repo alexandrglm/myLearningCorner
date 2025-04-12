@@ -1,6 +1,6 @@
 # MODULE 04-063:     JavaScript
 
-## OOP programming (1)
+## OOP programming (1):    Instance Methods
 
 ****
 

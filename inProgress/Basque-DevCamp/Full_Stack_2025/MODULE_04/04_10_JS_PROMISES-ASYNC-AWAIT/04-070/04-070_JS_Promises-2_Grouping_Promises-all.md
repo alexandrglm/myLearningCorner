@@ -4,6 +4,148 @@
 
 ---
 
+1. Introduction to `Promise.all`
+
+2. How `Promise.all` Works
+
+3. Error Handling with `Promise.all`
+
+4. Use Cases
+
+****
+
+### 1. Introduction to `Promise.all`
+
+`Promise.all` is a method that groups multiple promises into a single promise. It resolves when **all input promises resolve** or rejects immediately if **any promise rejects**.
+
+**Why Use It?**
+
+- Execute asynchronous tasks in parallel.
+
+- Simplify code by handling multiple promises as a single unit.
+
+- Maintain order of results corresponding to input promises.
+
+---
+
+### 2. How `Promise.all` Works
+
+#### Syntax:
+
+```js
+Promise.all([promise1, promise2, ...])  
+  .then(results => /* process results */)  
+  .catch(error => /* handle error */);  
+```
+
+**Example**
+
+```js
+const greeting = new Promise((resolve) => resolve("Hi there"));  
+const updateAccount = new Promise((resolve) => resolve("Updating login..."));  
+
+Promise.all([greeting, updateAccount])  
+  .then(results => {  
+    results.forEach(activity => console.log(activity));  
+    // Output: "Hi there", "Updating login..."  
+  });  
+```
+
+**Key Behavior**:
+
+- Returns an **array of resolved values** in the same order as input promises.
+
+- If **all promises resolve**, `.then()` receives the array.
+
+- If **any promise rejects**, `.catch()` triggers immediately with the first error.
+
+****
+
+### 3. Error Handling with `Promise.all`
+
+#### Rejection Scenario:
+
+```js
+const greeting = new Promise((resolve, reject) => reject("Oops!"));  
+const updateAccount = new Promise((resolve) => resolve("Updated"));  
+
+Promise.all([greeting, updateAccount])  
+  .catch(err => console.error(err)); // Output: "Oops!"  
+```
+
+**Important Notes**:
+
+- A single rejection skips all other promises and triggers `.catch()`.
+
+- Avoid calling both `resolve` and `reject` in the same promise (only the first call takes effect).
+
+---
+
+### 4. Use Cases
+
+1. **Parallel API Calls**:
+   
+   ```js
+   const userPromise = fetch("/api/user");  
+   const postsPromise = fetch("/api/posts");  
+   
+   Promise.all([userPromise, postsPromise])  
+     .then(([userData, postsData]) => renderUI(userData, postsData));  
+   ```
+
+2. **Database Transactions**: Update multiple records atomically.
+
+3. **Aggregating Data**: Combine results from independent asynchronous operations.
+
+****
+
+### Best Practices
+
+- Use `Promise.all` to handle multiple asynchronous tasks in parallel.
+
+- Results are ordered and aggregated into an array.
+
+- A single rejection causes the entire group to fail—plan error handling carefully.
+
+- Ideal for independent operations like API calls or database queries.
+1. **Independent Promises**: Use `Promise.all` only for promises that don’t depend on each other.
+
+2. **Order Preservation**: Results array order matches input promises.
+
+3. **Error Handling**: Always include `.catch()` to avoid unhandled rejections.
+
+4. **Avoid Side Effects**: Ensure individual promises don’t modify shared state.
+
+**Anti-Pattern**:
+
+```js
+// Avoid nesting promises unnecessarily  
+promise1.then(result1 => {  
+  promise2.then(result2 => {  
+    // ...  
+  });  
+});  
+```
+
+**Better Approach**:
+
+```js
+Promise.all([promise1, promise2])  
+  .then(([result1, result2]) => {  
+    // Process results together  
+  });  
+```
+
+****
+
+### References
+
+* [Promise.all() - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all)
+
+* https://javascript.info/promise-api
+
+* [JavaScript Promises](https://www.w3schools.com/js/js_promise.asp)
+
 ---
 
 ## Video lesson Speech

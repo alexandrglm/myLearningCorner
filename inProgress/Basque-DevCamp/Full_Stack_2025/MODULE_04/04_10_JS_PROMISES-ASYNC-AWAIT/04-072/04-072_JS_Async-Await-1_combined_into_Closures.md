@@ -1,8 +1,133 @@
 # MODULE 04 - 072:    JavaScript
 
-## Async / Await (1), Combining Async / Await with Closures to Ensure All Processes Have Run
+## Async / Await (2), Combining Async / Await with Closures to Ensure All Processes Have Run
 
 ---
+
+1. Understanding Parallel Execution
+
+2. Closures and Async/Await
+
+3. Code Walkthrough
+
+4. Benefits of This Approach*
+
+****
+
+### 1. Understanding Parallel Execution
+
+In JavaScript, **asynchronous operations** (like API calls or timers) can run in parallel if initiated simultaneously.
+
+- **Sequential Execution**: `await` pauses execution until a promise resolves (e.g., `await login()` waits 4 seconds, then `await updateAccount()` waits 2 seconds).
+
+- **Parallel Execution**: Start both promises upfront, then `await` their results. Total time = max(4s, 2s) = 4s.
+
+---
+
+### 2. Closures and Async/Await
+
+**Closures** allow functions to retain access to variables from their parent scope. In this example:
+
+- `login()` and `updateAccount()` are called **immediately** when passed as arguments to `loginActivities()`, starting their timers.
+
+- The async function `loginActivities()` uses `await` to wait for their results, but the promises run concurrently.
+
+---
+
+### 3. Code Walkthrough
+
+#### Code Example
+
+```js
+const login = () => {  
+  return new Promise((resolve) => {  
+    setTimeout(() => resolve("User logged in..."), 4000);  
+  });  
+};  
+
+const updateAccount = () => {  
+  return new Promise((resolve) => {  
+    setTimeout(() => resolve("Updating last login..."), 2000);  
+  });  
+};  
+
+async function loginActivities(loginPromise, updatePromise) {  
+  const loginResult = await loginPromise;  
+  console.log(loginResult);  
+
+  const updateResult = await updatePromise;  
+  console.log(updateResult);  
+}  
+
+// Start both promises immediately  
+loginActivities(login(), updateAccount());  
+```
+
+#### Key Steps:
+
+1. **Promise Initialization**:
+   
+   - `login()` and `updateAccount()` are called when passed to `loginActivities()`, starting their timers immediately.
+   
+   - `login()`: 4-second timer.
+   
+   - `updateAccount()`: 2-second timer.
+
+2. **Parallel Execution**:
+   
+   - Both timers run in parallel.
+   
+   - `updateAccount()` resolves after 2 seconds, but its result is awaited *after* `login()` resolves.
+
+3. **Output Timeline**:
+   
+   - At **4 seconds**: `login()` resolves → `"User logged in..."` logs.
+   
+   - At **4 seconds**: `updateAccount()` has already resolved → `"Updating last login..."` logs immediately.
+
+---
+
+### 4. Benefits of This Approach
+
+1. **Faster Execution**: Total time = duration of the longest task (4s), not the sum (6s).
+
+2. **Resource Efficiency**: Parallel execution optimizes CPU/network usage.
+
+3. **Code Clarity**: Maintains sequential-looking code while enabling concurrency.
+
+---
+
+### 5. Best Practices
+
+- **Closures** enable retaining access to promises initialized outside an async function.
+
+- **Parallel Execution** reduces total time by running tasks concurrently.
+
+- Use `Promise.all()` for explicit parallel workflows.
+1. **Use `Promise.all()` for Explicit Parallelism**:
+   
+   ```js
+   async function loginActivities() {  
+     const [loginResult, updateResult] = await Promise.all([login(), updateAccount()]);  
+     console.log(loginResult, updateResult);  
+   }  
+   ```
+   
+   - Clearly signals parallel execution.
+   
+   - Returns results in the order promises are resolved.
+
+2. **Avoid Implicit Dependencies**: Ensure parallel tasks are truly independent.
+
+****
+
+## References
+
+* [Closures - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Closures)
+
+* https://javascript.info/async-await
+
+* [Callbacks 🆚 Promises en JavaScript. ¡Entiende las diferencias y la importancia de cada una! - YouTube](https://www.youtube.com/watch?v=frm0CHyeSbE)
 
 ---
 

@@ -4,6 +4,184 @@
 
 ****
 
+1. What Are Promises?
+
+2. Why Use Promises?
+
+3. Promise States
+
+4. Creating a Promise
+
+5. Handling Outcomes: `.then()` and `.catch()`
+
+****
+
+### 1. What Are Promises?
+
+A **Promise** in JavaScript is an object representing the eventual completion (or failure) of an **asynchronous operation**. It acts as a placeholder for a value that will be available later, allowing non-blocking code execution.
+
+Promises are essential for:
+
+- API calls.
+
+- File I/O operations.
+
+- Database queries.
+
+- Any task with unpredictable completion time.
+
+****
+
+### 2. Why Use Promises?
+
+Before Promises, asynchronous tasks relied on callbacks, leading to "callback hell" (deeply nested code). Promises:
+
+- Simplify asynchronous code.
+
+- Improve readability with chaining (`.then()`, `.catch()`).
+
+- Provide structured error handling.
+
+**Example**: Fetching data from an API without freezing the UI.
+
+---
+
+### 3. Promise States
+
+A Promise has three states:
+
+1. **Pending**: Initial state (not yet resolved or rejected).
+
+2. **Fulfilled (Resolved)**: Operation completed successfully.
+
+3. **Rejected**: Operation failed.
+
+Once a Promise is resolved or rejected, it **cannot change state**.
+
+****
+
+### 4. Creating a Promise
+
+Use the `Promise` constructor, which takes a function with `resolve` and `reject` parameters.
+
+**Syntax**:
+
+```js
+const myPromise = new Promise((resolve, reject) => {  
+  // Asynchronous logic here  
+  if (success) resolve(result);  
+  else reject(error);  
+});  
+```
+
+**Example**: Simulating an API call with `setTimeout`:
+
+```js
+const sleepyGreeting = new Promise((resolve, reject) => {  
+  setTimeout(() => {  
+    resolve("Hello...");  
+  }, 2000);  
+
+  setTimeout(() => {  
+    reject(Error("Too sleepy..."));  
+  }, 2000);  
+});  
+```
+
+*(Note: In practice, only one state (resolve/reject) is triggered based on conditions.)*
+
+****
+
+### 5. Handling Outcomes: `.then()` and `.catch()`
+
+- **`.then()`**: Handles resolved Promises.
+
+- **`.catch()`**: Handles rejected Promises.
+
+**Example**:
+
+```js
+sleepyGreeting  
+  .then((data) => {  
+    console.log(data); // "Hello..." after 2 seconds  
+  })  
+  .catch((err) => {  
+    console.error(err); // Error: "Too sleepy..."  
+  });  
+```
+
+**Key Points**:
+
+- `.then()` receives the resolved value.
+
+- `.catch()` receives the error object.
+
+- Promises can be chained for sequential operations.
+
+****
+
+### 6. Real-World Use Cases
+
+1. **API Requests**: Fetch data without blocking the UI.
+   
+   ```js
+   fetch("https://api.example.com/data")  
+     .then((response) => response.json())  
+     .catch((error) => console.error("Fetch failed:", error));  
+   ```
+
+2. **File Uploads**: Handle upload success/failure
+
+3. **User Authentication**: Manage login processes asynchronously.
+
+****
+
+### 7. Best Practices
+
+- Promises manage asynchronous operations elegantly.
+
+- Use `.then()` for success and `.catch()` for errors.
+
+- Avoid blocking the main thread with asynchronous design.
+
+- **Always Handle Errors**: Use `.catch()` to avoid unhandled promise rejections.
+
+- **Avoid Nesting**: Chain `.then()` calls instead of nesting Promises.
+
+- **Use `async/await`**: For cleaner syntax (builds on Promises).
+
+- **Return Promises in Functions**: For reusability.
+
+**NOPE!**:
+
+```js
+// Nested Promises (hard to read)  
+getUser().then((user) => {  
+  getPosts(user).then((posts) => {  
+    console.log(posts);  
+  });  
+});  
+```
+
+**YEP!**:
+
+```js
+// Chained Promises  
+getUser()  
+  .then((user) => getPosts(user))  
+  .then((posts) => console.log(posts));  
+```
+
+****
+
+### References
+
+- [Promise - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+
+- https://javascript.info/promise-basics
+
+- [JavaScript Promises](https://www.w3schools.com/js/js_promise.asp)
+
 ****
 
 ## Video lesson Speech

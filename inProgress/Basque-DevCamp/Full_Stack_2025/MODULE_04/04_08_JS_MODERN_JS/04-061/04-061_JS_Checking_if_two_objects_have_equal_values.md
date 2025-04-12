@@ -4,6 +4,125 @@
 
 ---
 
+1. **Why Objects Can’t Be Directly Compared**
+
+2. **Building a Shallow Equality Check Function**
+
+3. **Limitations of Shallow Checks**
+
+4. **Deep Equality with Libraries (Lodash)**
+
+****
+
+### 1. Why Objects Can’t Be Directly Compared
+
+In JavaScript, objects are **reference types**. When you compare two objects using `===` or `==`, you’re checking if they point to the **same memory location**, not whether their properties/values match.
+
+**Example**:
+
+```js
+const obj1 = { name: "Alice", age: 30 };
+const obj2 = { name: "Alice", age: 30 };
+
+
+console.log(obj1 === obj2);         // false ❌
+```
+
+Even though `obj1` and `obj2` have identical properties, they are stored in different memory addresses, so comparisons fail.
+
+****
+
+### 2. Building a Shallow Equality Check Function
+
+To compare objects by value, create a custom function that:
+
+1. Checks if both objects have the **same number of keys**.
+
+2. Compares **each key-value pair**.
+
+**Implementation**:
+
+```js
+const isEqual = (obj1, obj2) => {
+  const obj1Keys = Object.keys(obj1);
+  const obj2Keys = Object.keys(obj2);
+
+  // Check key count
+  if (obj1Keys.length !== obj2Keys.length) return false;
+
+  // Check each key-value pair
+  for (const key of obj1Keys) {
+    if (obj1[key] !== obj2[key]) return false;
+  }
+
+  return true;
+};
+```
+
+**How It Works**:
+
+- `Object.keys()` extracts keys from objects.
+
+- A `for...of` loop iterates over keys to compare values.
+
+- **Limitation**: Only works for **shallow comparisons** (no nested objects/arrays).
+
+****
+
+### 3. Limitations of Shallow Checks
+
+The custom `isEqual` function fails for **nested structures**:
+
+```js
+const obj1 = { data: { score: 90 } };
+const obj2 = { data: { score: 90 } };
+
+
+console.log(isEqual(obj1, obj2));         // false ❌
+```
+
+**Why?**  
+Nested objects like `data` are compared by reference, not value.
+
+
+
+****
+
+### 4. Deep Equality with Libraries (Lodash)
+
+For deep comparisons, use libraries like **Lodash**, which handle nested structures, arrays, and edge cases.
+
+**Example with Lodash**:
+
+```js
+import _ from 'lodash';
+
+const obj1 = { data: { score: 90 } };
+const obj2 = { data: { score: 90 } };
+
+
+
+console.log(_.isEqual(obj1, obj2));             // true ✅
+```
+
+**When to Use Lodash**:
+
+- Complex objects with multiple nesting levels.
+
+- Projects where reliability and edge-case handling are critical.
+
+****
+
+### References
+
+* [Object.keys() - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys)
+
+* [Lodash Documentation](https://lodash.com/docs/4.17.15#isEqual)
+
+* [JavaScript Object Definition](https://www.w3schools.com/js/js_object_definition.asp)
+
+
+
 ---
 
 ## Video lesson Speech
