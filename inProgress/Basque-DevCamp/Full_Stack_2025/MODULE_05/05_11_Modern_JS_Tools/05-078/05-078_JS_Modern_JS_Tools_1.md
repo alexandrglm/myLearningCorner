@@ -1,18 +1,12 @@
-# MODULE 05 - 078:   Modern JavaScript
+# MODULE 05 - 078:   Modern JavaScript Tools
 
 ## Modern JS Tools (1)
 
 ****
 
-
-
-
-
 ****
 
 ## Video Lesson Speech
-
-
 
 This is going to be a fun section of the course. In this section, we're 
 going to talk about JavaScript tools and this is going to be a little 
