@@ -363,6 +363,8 @@
 
 # MODULE 4 - JAVASCRIPT (i)
 
+### JavaScript 01:    Basics
+
 |     | #      | Type                                                                                                                                | Tittle                                                               | Date       |
 | --- | ------ | ----------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- | ---------- |
 | [X] | 04-001 | Literacy                                                                                                                            | Reasons for Learning JavaScript                                      | 2025-03-21 |
@@ -434,7 +436,7 @@
 | [X] | 04-042 | `for...in`           | How to Loop Through a JavaScript Object         | 2025-03-27 |
 | [X] | 04-043 | `while`/`do...while` | Guide to While and Do/While Loops in JavaScript | 2025-03-27 |
 
-### JavaScript 07 :    Automating Tasks with JavaScript
+### JavaScript 07 :   DOM
 
 |     | #      | Type               | Tittle                                                                                | Date       |
 | --- | ------ | ------------------ | ------------------------------------------------------------------------------------- | ---------- |
@@ -462,7 +464,7 @@
 | [X] | 04-060 | `bind()`                                | Guide to JavaScript Bind Function                                                 | 2025-04-01 |
 | [X] | 04-061 | object comparison                       | How to Check if Two Objects Have Equal Values                                     | 2025-04-01 |
 
-### JavaScrip 09:   Object-Oriented Programming in JavaScript
+### JavaScrip 09:   Object-Oriented Programming
 
 |     | #      | Type             | Tittle                                                         | Date       |
 | --- | ------ | ---------------- | -------------------------------------------------------------- | ---------- |
@@ -496,27 +498,27 @@
 
 ### JavaScript 11:   Modern JS Tools
 
-|     | #      | Type         | Tittle                                                | Date |
-| --- | ------ | ------------ | ----------------------------------------------------- | ---- |
-| [ ] | 05-078 |              | Section Introduction for Modern JavaScript Tools      |      |
-| [ ] | 05-079 |              | Overview of Lodash JavaScript Library                 |      |
-| [ ] | 05-080 |              | Popular Lodash Functions: keyBy, reduce, and random   |      |
-| [ ] | 05-081 |              | Overview of the JavaScript Debugger                   |      |
-| [ ] | 05-082 |              | Overview of the Quokka.js Extension                   |      |
-| [ ] | 05-083 |              | Overview of JavaScript Lint Tools                     |      |
-| [ ] | 05-084 |              | Learn How to Code from Scratch – A Practical Strategy |      |
-| [ ] | 05-085 |              | The Power of Making Mistakes – Learning by Failing    |      |
-| [ ] | 05-086 | **Exercise** | Build a Pretty Price Method in JavaScript             |      |
+|     | #      | Type                                                           | Tittle                                                | Date       |
+| --- | ------ | -------------------------------------------------------------- | ----------------------------------------------------- | ---------- |
+| [X] | 05-078 |                                                                | Section Introduction for Modern JavaScript Tools      | 2025-04-12 |
+| [ ] | 05-079 | Lodash                                                         | Overview of Lodash JavaScript Library                 | 2025-04-12 |
+| [ ] | 05-080 | Lodash, `keyBy`, `reduce`, `random`                            | Popular Lodash Functions: keyBy, reduce, and random   | 2025-04-12 |
+| [ ] | 05-081 | `Debugger`                                                     | Overview of the JavaScript Debugger                   | 2025-04-13 |
+| [ ] | 05-082 | Quokka Extension, Debugging while coding                       | Overview of the Quokka.js Extension                   | 2025-04-13 |
+| [X] | 05-083 | Linting Tools, removing debugging process/data for Production. | Overview of JavaScript Lint Tools                     | 2025-04-13 |
+| [X] | 05-084 | Digital Literacy                                               | Learn How to Code from Scratch – A Practical Strategy | 2025-04-13 |
+| [X] | 05-085 | Digital Literacy                                               | The Power of Making Mistakes – Learning by Failing    | 2025-04-13 |
+| [X] | 05-086 | **Exercise**                                                   | Build a Pretty Price Method in JavaScript             | 2025-04-13 |
 
 ### JavaScript 12:   Modern Error Handling
 
-|     | #      | Type | Tittle                                                      | Date |
-| --- | ------ | ---- | ----------------------------------------------------------- | ---- |
-| [ ] | 05-087 |      | Section Introduction for Modern JavaScript Error Management |      |
-| [ ] | 05-088 |      | Basic Error Management Syntax in JavaScript                 |      |
-| [ ] | 05-089 |      | How to Create a Custom Error Class in JavaScript            |      |
-| [ ] | 05-090 |      | Integrating Error Management into API Calls in JavaScript   |      |
-| [ ] | 05-091 |      | Tips and Tricks to Building New Features as a Developer     |      |
+|     | #      | Type             | Tittle                                                      | Date       |
+| --- | ------ | ---------------- | ----------------------------------------------------------- | ---------- |
+| [X] | 05-087 |                  | Section Introduction for Modern JavaScript Error Management | 2025-04-13 |
+| [X] | 05-088 | `try`  - `catch` | Basic Error Management Syntax in JavaScript                 | 2025-04-13 |
+| [ ] | 05-089 |                  | How to Create a Custom Error Class in JavaScript            |            |
+| [ ] | 05-090 |                  | Integrating Error Management into API Calls in JavaScript   |            |
+| [ ] | 05-091 |                  | Tips and Tricks to Building New Features as a Developer     |            |
 
 ### JavaScript 13:  ES6 Modules
 
