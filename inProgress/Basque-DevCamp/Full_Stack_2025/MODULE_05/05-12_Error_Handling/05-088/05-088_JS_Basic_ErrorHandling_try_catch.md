@@ -99,8 +99,8 @@ An error occurred with the site component and then give a second argument. I'm j
 
             console.error('DEBUG: Error with sideComponent', e);
         }
-    
-            
+
+
         //
         try {
 
@@ -110,7 +110,7 @@ An error occurred with the site component and then give a second argument. I'm j
 
             console.error('DEBUG: Error with sideComponent', e);
         }
-            
+
     </script>
 </body>
 </html>

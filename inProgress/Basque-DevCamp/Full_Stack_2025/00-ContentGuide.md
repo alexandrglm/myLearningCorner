@@ -512,13 +512,13 @@
 
 ### JavaScript 12:   Modern Error Handling
 
-|     | #      | Type             | Tittle                                                      | Date       |
-| --- | ------ | ---------------- | ----------------------------------------------------------- | ---------- |
-| [X] | 05-087 |                  | Section Introduction for Modern JavaScript Error Management | 2025-04-13 |
-| [X] | 05-088 | `try`  - `catch` | Basic Error Management Syntax in JavaScript                 | 2025-04-13 |
-| [ ] | 05-089 |                  | How to Create a Custom Error Class in JavaScript            |            |
-| [ ] | 05-090 |                  | Integrating Error Management into API Calls in JavaScript   |            |
-| [ ] | 05-091 |                  | Tips and Tricks to Building New Features as a Developer     |            |
+|     | #      | Type                                                         | Tittle                                                      | Date       |
+| --- | ------ | ------------------------------------------------------------ | ----------------------------------------------------------- | ---------- |
+| [X] | 05-087 |                                                              | Section Introduction for Modern JavaScript Error Management | 2025-04-13 |
+| [X] | 05-088 | `try`  - `catch`                                             | Basic Error Management Syntax in JavaScript                 | 2025-04-13 |
+| [X] | 05-089 | `class` `extends ` - `(var, ...params)` - `super(...params)` | How to Create a Custom Error Class in JavaScript            | 2025-04-13 |
+| [X] | 05-090 |                                                              | Integrating Error Management into API Calls in JavaScript   | 2025-04-13 |
+| [X] | 05-091 | **(New)** Digital Literacy                                   | Tips and Tricks to Building New Features as a Developer     | 2025-04-13 |
 
 ### JavaScript 13:  ES6 Modules
 
