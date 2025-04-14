@@ -4,6 +4,62 @@
 
 ****
 
+# MODULE 05 - 078: Modern JavaScript Tools
+
+## Modern JS Tools (1) - Introduction
+
+****
+
+This section will focus on modern JavaScript tools, organized into three main categories:
+
+### 1. Universal Tools
+
+- Work across all JavaScript versions  
+- Compatible with major browsers  
+- Flexible implementation  
+
+### 2. Modern JavaScript-Specific Tools
+
+- Libraries like [Lodash](https://lodash.com/)  
+- Require newer JavaScript versions  
+- Common in modern applications  
+
+### 3. Code Editor-Specific Tools
+
+- Focused on VSCode.
+- Extensions for enhanced workflow  
+- Local development environment setup  
+
+****
+
+## About This Section
+
+This section differs from typical project-based courses because:
+
+- It will be continuously updated with new tools  
+- Focuses on practical workflow enhancements  
+- Provides options rather than requirements  
+- Helps transition from CodePen to local development  
+
+The goal is to showcase tools that can:
+
+- Improve coding efficiency  
+- Support modern JavaScript development  
+- Customize your personal workflow  
+
+## Why VS Code Focus?
+
+VS Code will be the primary editor demonstrated because:
+
+- It's the editor I use for frontend development  
+- Has a rich extension ecosystem  
+- Shows real-world local development behavior  
+- Makes advanced topics easier to demonstrate  
+
+**Note:** These tools are suggestions - choose what works best for your workflow.
+
+
+
 ****
 
 ## Video Lesson Speech

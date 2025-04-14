@@ -4,6 +4,191 @@
 
 ****
 
+1. Introduction to Lodash
+
+2. Setting Up Lodash in a Project
+
+3. Core Lodash Functions
+   
+   - `_.times()`
+   
+   - `_.filter()`
+
+****
+
+## 1. Introduction to Lodash
+
+Lodash is a modern JavaScript utility library that provides **modularity, performance, and extras** for common programming tasks.  
+
+ It offers over 200 functions for operations on arrays, objects, strings, and more, reducing boilerplate code.
+
+### Features:
+
+- **Functional Programming**: Methods like `filter`, `map`, and `reduce` support **immutable** operations.
+
+- **Performance Optimized**: Faster than vanilla JS for many operations.
+
+- **Modular**: Import only the functions you need (e.g., `lodash.times`).
+
+
+
+> **Why Use Lodash?**  
+> Instead of writing manual loops or complex logic (e.g., filtering an array), 
+> Lodash provides concise, readable methods.   
+> 
+> For example, `_.filter(array, predicate)` replaces a `for` loop with a `if` condition.
+
+****
+
+## 2. Setting Up Lodash
+
+### CDN Setup (Quick Start)
+
+Add Lodash via CDN in an HTML file:  
+
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+    
+        <script src=" 
+            https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js
+         "></script>  
+    
+    </head>   
+    <body>
+        
+        <script>
+          console.log(_.VERSION); // Check for loaded version
+        </script>
+    
+    </body>
+</html>
+```
+
+
+
+### NPM Setup
+
+In modern frameworks (React, Vue), use `npm install lodash` and import specific functions (e.g., `import { times } from 'lodash'`).
+
+****
+
+## 3. Core Lodash Functions
+
+## `_.times(n, function)`
+
+Like using a `for... in` it executes a function `n` times and returns an array of results.
+
+
+
+**Example: Generate Random Numbers**
+
+```js
+const randNumber = () => Math.round(Math.random() * 100);
+
+const sampleNumbers = _.times(5, randNumber);
+
+console.log(sampleNumbers); // Output --> 5 different random numbers
+
+
+
+/*
+ * Example of the same function made in vanilla JS:
+
+const sampleNumbers = Array(5).fill().map(() => Math.round(Math.random() * 100));
+
+*/
+```
+
+****
+
+## `_.filter(collection, predicate)`
+
+Filters a collection based on a condition.
+
+**Example: Filter Baseball Players by Batting Average**
+
+```js
+const players = [
+    { name: 'Altuve, J', battingAverage: 0.346 },
+    { name: 'Bregman, A', battingAverage: 0.284 }
+];
+
+const over300 = _.filter(players, player => player.battingAverage > 0.300);
+
+console.log(over300); 
+/* 
+ * Output: 
+
+[{ name: 'Altuve, J', battingAverage: 0.346 }]
+
+
+*/
+
+
+
+```
+
+**How It Works**:
+
+1. Iterates over `players`.
+
+2. Checks `battingAverage > 0.300` for each item.
+
+3. Returns a new array with matching items.
+
+**Key Benefit**: No manual loop or temporary array needed.
+
+****
+
+## 4. More Practical Examples
+
+### Dynamic Data Generation
+
+Use `_.times` to mock datasets:
+
+```js
+const mockUsers = _.times(10, () => ({
+    id: _.uniqueId('user_'),
+    score: _.random(1, 100)
+}));
+```
+
+### Complex Filtering
+
+Chain Lodash methods for advanced queries:
+
+```js
+const highScorers = _.filter(players, player => 
+
+    player.battingAverage > 0.300 && player.name.includes('A')
+
+);
+```
+
+****
+
+## 
+
+Pending to be expanded with:    
+
+* `_.map`/`_.filter` over `_.chain` for better performance in large datasets.
+
+* `_.get`, `_.debounce`, and `_.cloneDeep` for advanced use cases like safe nested property access or event throttling.
+
+* [FP Guide · lodash/lodash Wiki · GitHub](https://github.com/lodash/lodash/wiki/FP-Guide)
+
+****
+
+## Resources
+
+* [Lodash Documentation](https://lodash.com/docs/4.17.15)
+
+* [GitHub - lodash/lodash: A modern JavaScript utility library delivering modularity, performance, &amp; extras.](https://github.com/lodash/lodash)
+
+
+
 ****
 
 ## Video Lesson Speech
