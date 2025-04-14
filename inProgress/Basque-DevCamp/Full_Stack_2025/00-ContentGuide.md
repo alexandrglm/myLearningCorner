@@ -522,14 +522,14 @@
 
 ### JavaScript 13:  ES6 Modules
 
-|     | #      | Type | Tittle                                                                    | Date |
-| --- | ------ | ---- | ------------------------------------------------------------------------- | ---- |
-| [ ] | 05-092 |      | Section Introduction for Modern JavaScript Modules                        |      |
-| [ ] | 05-093 |      | How to Utilize the ES6 Project Generator                                  |      |
-| [ ] | 05-094 |      | Basic Guide to Importing and Exporting Code in JavaScript with ES6 Syntax |      |
-| [ ] | 05-095 |      | How to Import Multiple Elements from a JavaScript File                    |      |
-| [ ] | 05-096 |      | Guide to Default Exports in JavaScript                                    |      |
-| [ ] | 05-097 |      | Task Switching Costs for Developers                                       |      |
+|     | #      | Type                                              | Tittle                                                                    | Date       |
+| --- | ------ | ------------------------------------------------- | ------------------------------------------------------------------------- | ---------- |
+| [X] | 05-092 | NPM                                               | Section Introduction for Modern JavaScript Modules                        | 2025-04-14 |
+| [X] | 05-093 | NPM - ES6 project starter                         | How to Utilize the ES6 Project Generator                                  | 2025-04-14 |
+| [X] | 05-094 | `export object` - `import { object } from script` | Basic Guide to Importing and Exporting Code in JavaScript with ES6 Syntax | 2025-04-14 |
+| [ ] | 05-095 |                                                   | How to Import Multiple Elements from a JavaScript File                    |            |
+| [ ] | 05-096 |                                                   | Guide to Default Exports in JavaScript                                    |            |
+| [ ] | 05-097 |                                                   | Task Switching Costs for Developers                                       |            |
 
 ### JavaScript 14:  NPM
 
