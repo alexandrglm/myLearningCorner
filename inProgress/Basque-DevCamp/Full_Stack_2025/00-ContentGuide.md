@@ -501,7 +501,7 @@
 |     | #      | Type                                                           | Tittle                                                | Date       |
 | --- | ------ | -------------------------------------------------------------- | ----------------------------------------------------- | ---------- |
 | [X] | 05-078 |                                                                | Section Introduction for Modern JavaScript Tools      | 2025-04-12 |
-| [ ] | 05-079 | Lodash                                                         | Overview of Lodash JavaScript Library                 | 2025-04-12 |
+| [X] | 05-079 | Lodash                                                         | Overview of Lodash JavaScript Library                 | 2025-04-12 |
 | [ ] | 05-080 | Lodash, `keyBy`, `reduce`, `random`                            | Popular Lodash Functions: keyBy, reduce, and random   | 2025-04-12 |
 | [ ] | 05-081 | `Debugger`                                                     | Overview of the JavaScript Debugger                   | 2025-04-13 |
 | [ ] | 05-082 | Quokka Extension, Debugging while coding                       | Overview of the Quokka.js Extension                   | 2025-04-13 |
@@ -527,9 +527,9 @@
 | [X] | 05-092 | NPM                                               | Section Introduction for Modern JavaScript Modules                        | 2025-04-14 |
 | [X] | 05-093 | NPM - ES6 project starter                         | How to Utilize the ES6 Project Generator                                  | 2025-04-14 |
 | [X] | 05-094 | `export object` - `import { object } from script` | Basic Guide to Importing and Exporting Code in JavaScript with ES6 Syntax | 2025-04-14 |
-| [ ] | 05-095 |                                                   | How to Import Multiple Elements from a JavaScript File                    |            |
-| [ ] | 05-096 |                                                   | Guide to Default Exports in JavaScript                                    |            |
-| [ ] | 05-097 |                                                   | Task Switching Costs for Developers                                       |            |
+| [X] | 05-095 | `import * as name from './script.js`              | How to Import Multiple Elements from a JavaScript File                    | 2025-04-15 |
+| [X] | 05-096 | Digital Literacy                                  | Guide to Default Exports in JavaScript                                    | 2025-04-15 |
+| [X] | 05-097 | Digital Literacy                                  | Task Switching Costs for Developers                                       | 2025-04-15 |
 
 ### JavaScript 14:  NPM
 
