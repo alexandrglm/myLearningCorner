@@ -539,7 +539,7 @@
 | [X] | 05-099 |                                                                                                     | Introduction to NPM Packages                           | 2025-04-15 |
 | [X] | 05-100 |                                                                                                     | How to Install MomentJS into a JavaScript Application  | 2025-04-15 |
 | [X] | 05-101 | `moment('19880101101112', 'YYYYMMDDHHmmss)`-   `.format()` - `.toString` - `add()` - `subtract()` - | Popular MomentJS Functions                             | 2025-04-15 |
-| [ ] | 05-102 |                                                                                                     | How to Build and Deploy a NPM Module                   |            |
+| [X] | 05-102 | ES6/7 Module Syntax -                                                                               | How to Build and Deploy a NPM Module                   | 2025-04-15 |
 | [ ] | 05-103 |                                                                                                     | Course Checkpoint 9                                    |            |
 
 |     | #      | Type | Tittle                                                      | Date |
