@@ -46,8 +46,6 @@ console.log(positions['2B']);
 // { position: '2B', name: 'Altuve, J' }
 ```
 
-
-
 ### Case 2:     Handling l
 
 ```js
@@ -95,7 +93,6 @@ const ISBNKeyBy = _.keyBy(library, 'isbn')
 
 console.log(titlesKeyBy);
 console.log(ISBNKeyBy);
-
 ```
 
 There's no built-in analogue function in vanillaJS, but `.reduce()` can supply this
@@ -149,8 +146,6 @@ console.log(titlesReduce);
 
 > **Pro Tip**: Combine `_.keyBy` with `_.get` for safe nested property access (e.g., `_.get(positions, '2B.name')`).
 
-
-
 ### Why use Lodash `.keyBy()`?
 
 1. **Clarity**: Expresses intent directly — "key this array by property X".
@@ -163,8 +158,6 @@ console.log(titlesReduce);
 
 5. **Consistency**: Same behavior across platforms and environments.
 
-
-
 ### When to use which?
 
 Use **Lodash `_.keyBy()`** when:
@@ -174,10 +167,6 @@ Use **Lodash `_.keyBy()`** when:
 - You care about readability and consistency in team code.
 
 - You're already using Lodash or working in a complex data pipeline.
-
-  
-
-  
 
 Use **Vanilla `.reduce()`** when:
 
@@ -215,7 +204,6 @@ const homerunStats = [
 const totalHomeRun = _.reduce(homerunStats, (total, player) => total + player.hr, 0)
 
 console.log(totalHomeRun);      // 118
-
 ```
 
 ### Case 3: Generating HTML Strings
