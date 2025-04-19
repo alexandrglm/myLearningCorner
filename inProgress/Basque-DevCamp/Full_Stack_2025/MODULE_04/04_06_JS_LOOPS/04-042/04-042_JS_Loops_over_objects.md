@@ -34,8 +34,6 @@ Here:
 
 ****
 
-
-
 ## Accessing values with bracket notation
 
 You **must** use **bracket notation** (`student[key]`) instead of **dot notation** (`student.key`) when the property name is stored in a variable:
@@ -64,7 +62,6 @@ Declaring `key` with `var` (or `let`) **limits its scope** to the loop. Omitting
 for (var key in student) {
   // safe local variable
 }
-
 ```
 
 ****

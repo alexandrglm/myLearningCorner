@@ -498,17 +498,17 @@
 
 ### JavaScript 11:   Modern JS Tools
 
-|     | #      | Type                                                           | Tittle                                                | Date       |
-| --- | ------ | -------------------------------------------------------------- | ----------------------------------------------------- | ---------- |
-| [X] | 05-078 |                                                                | Section Introduction for Modern JavaScript Tools      | 2025-04-12 |
-| [X] | 05-079 | Lodash                                                         | Overview of Lodash JavaScript Library                 | 2025-04-12 |
-| [ ] | 05-080 | Lodash, `keyBy`, `reduce`, `random`                            | Popular Lodash Functions: keyBy, reduce, and random   | 2025-04-12 |
-| [ ] | 05-081 | `Debugger`                                                     | Overview of the JavaScript Debugger                   | 2025-04-13 |
-| [ ] | 05-082 | Quokka Extension, Debugging while coding                       | Overview of the Quokka.js Extension                   | 2025-04-13 |
-| [X] | 05-083 | Linting Tools, removing debugging process/data for Production. | Overview of JavaScript Lint Tools                     | 2025-04-13 |
-| [X] | 05-084 | Digital Literacy                                               | Learn How to Code from Scratch – A Practical Strategy | 2025-04-13 |
-| [X] | 05-085 | Digital Literacy                                               | The Power of Making Mistakes – Learning by Failing    | 2025-04-13 |
-| [X] | 05-086 | **Exercise**                                                   | Build a Pretty Price Method in JavaScript             | 2025-04-13 |
+|     | #      | Type                                                                                                                              | Tittle                                                | Date       |
+| --- | ------ | --------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- | ---------- |
+| [X] | 05-078 |                                                                                                                                   | Section Introduction for Modern JavaScript Tools      | 2025-04-12 |
+| [X] | 05-079 | Lodash - `_.times(n, function)` - `_.filter(collection, func)`                                                                    | Overview of Lodash JavaScript Library                 | 2025-04-19 |
+| [ ] | 05-080 | Lodash: `_.keyBy(collection, keyProperty)`` - ``_.reduce(collection, function, initialValue)` - `_.random([lower=1], [upper=0]) ` | Popular Lodash Functions: keyBy, reduce, and random   | 2025-04-19 |
+| [ ] | 05-081 | `Debugger`                                                                                                                        | Overview of the JavaScript Debugger                   | 2025-04-13 |
+| [ ] | 05-082 | Quokka Extension, Debugging while coding                                                                                          | Overview of the Quokka.js Extension                   | 2025-04-13 |
+| [X] | 05-083 | Linting Tools, removing debugging process/data for Production.                                                                    | Overview of JavaScript Lint Tools                     | 2025-04-13 |
+| [X] | 05-084 | Digital Literacy                                                                                                                  | Learn How to Code from Scratch – A Practical Strategy | 2025-04-13 |
+| [X] | 05-085 | Digital Literacy                                                                                                                  | The Power of Making Mistakes – Learning by Failing    | 2025-04-13 |
+| [X] | 05-086 | **Exercise**                                                                                                                      | Build a Pretty Price Method in JavaScript             | 2025-04-13 |
 
 ### JavaScript 12:   Modern Error Handling
 
@@ -542,10 +542,10 @@
 | [X] | 05-102 | ES6/7 Module Syntax -                                                                               | How to Build and Deploy a NPM Module                   | 2025-04-15 |
 | [ ] | 05-103 |                                                                                                     | Course Checkpoint 9                                    |            |
 
-|     | #      | Type | Tittle                                                      | Date |
-| --- | ------ | ---- | ----------------------------------------------------------- | ---- |
-| [ ] | 05-104 |      | Build out a Diner Menu using JavaScript                     |      |
-| [ ] | 05-105 |      | Practical Ways to Use the Pomodoro Technique as a Developer |      |
+|     | #      | Type             | Tittle                                                      | Date |
+| --- | ------ | ---------------- | ----------------------------------------------------------- | ---- |
+| [ ] | 05-104 | Exercise         | Build out a Diner Menu using JavaScript                     |      |
+| [X] | 05-105 | Digital Literacy | Practical Ways to Use the Pomodoro Technique as a Developer |      |
 
 ***
 
@@ -553,14 +553,14 @@
 
 ### Git - GitHub Control Version
 
-|     | #      | Type | Tittle                                                    | Date |
-| --- | ------ | ---- | --------------------------------------------------------- | ---- |
-| [ ] | 05-106 |      | How to Create a Local Git Repository                      |      |
-| [ ] | 05-107 |      | How to Push a Local Git Repository to GitHub              |      |
-| [ ] | 05-108 |      | Review of the Git Workflow                                |      |
-| [ ] | 05-109 |      | Examining the Dot Git Directory                           |      |
-| [ ] | 05-110 |      | How to Hide Files and Directories from Git with gitignore |      |
-| [ ] | 05-111 |      | Course Checkpoint 10                                      |      |
+|     | #      | Type                                              | Tittle                                                    | Date       |
+| --- | ------ | ------------------------------------------------- | --------------------------------------------------------- | ---------- |
+| [X] | 05-106 | `git init`                                        | How to Create a Local Git Repository                      | 2025/04/18 |
+| [X] | 05-107 | `git add .` / `git commit -m "..."` /  `git push` | How to Push a Local Git Repository to GitHub              | 2025/04/18 |
+| [X] | 05-108 |                                                   | Review of the Git Workflow                                | 2025/04/18 |
+| [X] | 05-109 | `./.git/`                                         | Examining the Dot Git Directory                           | 2025/04/18 |
+| [X] | 05-110 | `.gitignore`                                      | How to Hide Files and Directories from Git with gitignore | 2025/04/18 |
+| [ ] | 05-111 |                                                   | Course Checkpoint 10                                      |            |
 
 ***
 
