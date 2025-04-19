@@ -58,8 +58,6 @@ VS Code will be the primary editor demonstrated because:
 
 **Note:** These tools are suggestions - choose what works best for your workflow.
 
-
-
 ****
 
 ## Video Lesson Speech

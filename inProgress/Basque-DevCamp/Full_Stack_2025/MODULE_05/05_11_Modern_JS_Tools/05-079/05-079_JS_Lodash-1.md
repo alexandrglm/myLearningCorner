@@ -30,8 +30,6 @@ Lodash is a modern JavaScript utility library that provides **modularity, perfor
 
 - **Modular**: Import only the functions you need (e.g., `lodash.times`).
 
-
-
 > **Why Use Lodash?**  
 > Instead of writing manual loops or complex logic (e.g., filtering an array), 
 > Lodash provides concise, readable methods.   
@@ -50,27 +48,25 @@ Add Lodash via CDN in an HTML file:
 <!DOCTYPE html>
 <html>
     <head>
-    
+
         <script src=" 
             https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js
          "></script>  
-    
+
     </head>   
     <body>
-        
+
         <script>
           console.log(_.VERSION); // Check for loaded version
         </script>
-    
+
     </body>
 </html>
 ```
 
-
-
 ### NPM Setup
 
-In modern frameworks (React, Vue), use `npm install lodash` and import specific functions (e.g., `import { times } from 'lodash'`).
+In modern frameworks (React, Vue), use `npm install lodash` and import specific functions (e.g., `import { times } from 'lodash'`), or import all lodash functions by `import _ from 'lodash'`.
 
 ****
 
@@ -80,30 +76,36 @@ In modern frameworks (React, Vue), use `npm install lodash` and import specific 
 
 Like using a `for... in` it executes a function `n` times and returns an array of results.
 
-
-
 **Example: Generate Random Numbers**
 
 ```js
 const randNumber = () => Math.round(Math.random() * 100);
+const randChoices = _.times(5, randNumber);
 
-const sampleNumbers = _.times(5, randNumber);
-
-console.log(sampleNumbers); // Output --> 5 different random numbers
-
+console.log(randChoices);       // [ 69, 19, 59, 26, 44 ]
 
 
-/*
- * Example of the same function made in vanilla JS:
 
-const sampleNumbers = Array(5).fill().map(() => Math.round(Math.random() * 100));
+// Same try without Lodash advantages
+let randChoiceVanilla = [];
+for ( let idx = 0; idx < 5; idx++) {
 
-*/
+    randChoiceVanilla.push(Math.round(Math.random() * 100))
+
+}
+
+console.log(randChoiceVanilla)  // [ 24, 82, 91, 25, 32 ]
+
+
+// Same try but using Array() methods
+const randChoicesVanillaConciso = Array(5).fill().map(() => Math.round(Math.random() * 100) )
+
+console.log(randChoicesVanillaConciso)      // [ 59, 24, 87, 68, 30 ]
 ```
 
 ****
 
-## `_.filter(collection, predicate)`
+## `_.filter(collection, func)`
 
 Filters a collection based on a condition.
 
@@ -113,21 +115,19 @@ Filters a collection based on a condition.
 const players = [
     { name: 'Altuve, J', battingAverage: 0.346 },
     { name: 'Bregman, A', battingAverage: 0.284 }
-];
+] 
 
-const over300 = _.filter(players, player => player.battingAverage > 0.300);
+const over300 = _.filter(players, player => player.battingAverage > 0.300)
 
-console.log(over300); 
-/* 
- * Output: 
-
-[{ name: 'Altuve, J', battingAverage: 0.346 }]
-
-
+console.log(over300);
+/*
+[
+  {
+    "name": "Altuve, J",
+    "battingAverage": 0.346
+  }
+]
 */
-
-
-
 ```
 
 **How It Works**:
@@ -139,6 +139,62 @@ console.log(over300);
 3. Returns a new array with matching items.
 
 **Key Benefit**: No manual loop or temporary array needed.
+
+### Filtering without using Lodash
+
+```js
+const over300vanilla = players.filter(player => player.battingAverage > 0.300);
+
+console.log(over300vanilla)
+/*
+{
+  "name": "Altuve, J",
+  "battingAverage": 0.346
+}
+*/
+```
+
+**Now, what are the benefits of using Lodash?**:
+
+Both, Lodash and vanillaJS provide powerful ways to filter data, but:
+
+|                              | Lodash (`_.filter`)                                     | Vanilla JS (`Array.prototype.filter`)                                          |
+| ---------------------------- | ------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| **Works with arrays**        | ✅ Yes                                                   | ✅ Yes                                                                          |
+| **Works with objects**       | ✅ Yes — <br/>`_.filter({ a: 1, b: 2 }, val => val > 1)` | ❌ No — only works on arrays                                                    |
+| **Requires import**          | ❌ Yes — you need Lodash (`import _ from 'lodash'`)      | ✅ No — built into JavaScript                                                   |
+| **Modern, readable syntax**  | ✅ Yes — clean, chainable                                | ✅ Yes — also modern and clean                                                  |
+| **Great for large projects** | ✅ Yes — predictable and consistent across data types    | ❌ Yes, but logic can get verbose in places, making scalability more difficult. |
+
+---
+
+### 💡 Why Lodash `.filter()` is powerful
+
+1. **Handles both arrays and plain objects**  
+   Native `.filter()` is limited to arrays. Lodash expands this by allowing object filtering, which is extremely useful when dealing with key-value stores or maps.
+
+2. **Functional consistency**  
+   Lodash's methods (like `_.map`, `_.filter`, `_.reduce`, etc.) all follow a consistent functional style. This makes it easier to compose logic, especially in data transformation pipelines.
+
+3. **More defensive and robust**  
+   Lodash handles `null`, `undefined`, and edge cases more gracefully, reducing the need for manual guards in your code.
+
+4. **Better readability in chained operations**  
+   Lodash supports chaining (`_.chain()`), which is helpful when you need to apply multiple operations on a dataset in a readable and declarative way.
+
+5. **Cross-environment support**  
+   Lodash smooths over inconsistencies between JavaScript engines or versions. It behaves the same whether you’re in Node.js, old browsers, or modern frameworks.
+
+---
+
+### ✅ Example: Object Filtering with Lodash
+
+```js
+_.filter({ a: 1, b: 2, c: 3 }, val => val > 1)
+// Result: { b: 2, c: 3 }
+```
+
+⛔ **Not possible with native `.filter()` — it throws a TypeError.****
 
 ****
 
@@ -167,17 +223,15 @@ const highScorers = _.filter(players, player =>
 );
 ```
 
-****
+**** 
 
-## 
-
-Pending to be expanded with:    
-
-* `_.map`/`_.filter` over `_.chain` for better performance in large datasets.
-
-* `_.get`, `_.debounce`, and `_.cloneDeep` for advanced use cases like safe nested property access or event throttling.
-
-* [FP Guide · lodash/lodash Wiki · GitHub](https://github.com/lodash/lodash/wiki/FP-Guide)
+> Pending to be expanded with:    
+> 
+> - `_.map`/`_.filter` over `_.chain` for better performance in large datasets.
+> 
+> - `_.get`, `_.debounce`, and `_.cloneDeep` for advanced use cases like safe nested property access or event throttling.
+> 
+> - [FP Guide · lodash/lodash Wiki · GitHub](https://github.com/lodash/lodash/wiki/FP-Guide)
 
 ****
 
@@ -186,8 +240,6 @@ Pending to be expanded with:    
 * [Lodash Documentation](https://lodash.com/docs/4.17.15)
 
 * [GitHub - lodash/lodash: A modern JavaScript utility library delivering modularity, performance, &amp; extras.](https://github.com/lodash/lodash)
-
-
 
 ****
 

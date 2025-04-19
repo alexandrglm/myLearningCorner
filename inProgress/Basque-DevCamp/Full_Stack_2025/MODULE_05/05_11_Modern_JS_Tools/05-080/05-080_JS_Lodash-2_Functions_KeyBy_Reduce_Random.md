@@ -4,6 +4,286 @@
 
 ---
 
+1. `_.keyBy()`: Transforming Arrays into Keyed Objects
+
+2. `_.reduce()`: Aggregating and Transforming Data
+   
+   - Summing Values
+   
+   - Calculating Totals from Nested Objects
+   
+   - Generating HTML Strings
+
+3. `_.random()`: Simplified Random Number Generation
+
+****
+
+Lodash provides powerful utilities for data manipulation. This guide focuses on three key functions:
+
+- **`keyBy`**: Converts arrays into lookup-friendly objects.
+
+- **`reduce`**: Aggregates data (sums, averages) or transforms collections.
+
+- **`random`**: Generates random numbers with clean syntax.
+
+****
+
+## 1. `_.keyBy(collection, keyProperty)`
+
+Transforms an array into an object keyed by a property value, enabling O(1) lookups.
+
+### Case 1:     Baseball Roster Lookup
+
+```js
+const roster = [
+  { position: '3B', name: 'Bregman, A' },
+  { position: '2B', name: 'Altuve, J' }
+];
+
+const positions = _.keyBy(roster, 'position');
+
+console.log(positions['2B']); 
+// { position: '2B', name: 'Altuve, J' }
+```
+
+
+
+### Case 2:     Handling l
+
+```js
+const library = [
+    {isbn: '978-84-415-4776-6', title: 'React Practico'},
+    {isbn: '978-84-905-6394-6', title: 'Tu cerebro y la música'},
+    {isbn: '978-18-965-9789-8', title: 'Pyongyang: A journey in North Korea'}
+]
+
+const titlesKeyBy = _.keyBy(library, 'title');
+/*
+{
+  "React Practico": {
+    "isbn": "978-84-415-4776-6",
+    "title": "React Practico"
+  },
+  "Tu cerebro y la música": {
+    "isbn": "978-84-905-6394-6",
+    "title": "Tu cerebro y la música"
+  },
+  "Pyongyang: A journey in North Korea": {
+    "isbn": "978-18-965-9789-8",
+    "title": "Pyongyang: A journey in North Korea"
+  }
+}
+*/
+const ISBNKeyBy = _.keyBy(library, 'isbn')
+/*
+{
+    "978-84-415-4776-6": {
+      "isbn": "978-84-415-4776-6",
+      "title": "React Practico"
+    },
+    "978-84-905-6394-6": {
+      "isbn": "978-84-905-6394-6",
+      "title": "Tu cerebro y la música"
+    },
+    "978-18-965-9789-8": {
+      "isbn": "978-18-965-9789-8",
+      "title": "Pyongyang: A journey in North Korea"
+    }
+}
+*/
+
+
+console.log(titlesKeyBy);
+console.log(ISBNKeyBy);
+
+```
+
+There's no built-in analogue function in vanillaJS, but `.reduce()` can supply this
+
+```js
+const titlesReduce = library.reduce( (objects, item) => {
+
+    objects[item.title] = item;
+
+    return objects;
+
+},
+// empty {}
+{}); 
+
+console.log(titlesReduce);
+/*
+{
+  "React Practico": {
+    "isbn": "978-84-415-4776-6",
+    "title": "React Practico"
+  },
+  "Tu cerebro y la música": {
+    "isbn": "978-84-905-6394-6",
+    "title": "Tu cerebro y la música"
+  },
+  "Pyongyang: A journey in North Korea": {
+    "isbn": "978-18-965-9789-8",
+    "title": "Pyongyang: A journey in North Korea"
+  }
+}
+*/
+```
+
+### Comparison Table
+
+|                          | Lodash (`_.keyBy`)                 | Vanilla JS (`.reduce()` custom logic)  |
+| ------------------------ | ---------------------------------- | -------------------------------------- |
+| One-liner                | ✅ Yes                              | ❌ No (requires `reduce()` boilerplate) |
+| Readable and declarative | ✅ Very                             | ⚠️ Depends on developer’s familiarity  |
+| Chainable                | ✅ Works with `_.chain()`           | ❌ No native chaining                   |
+| Requires import          | ❌ Yes                              | ✅ No                                   |
+| Handles edge cases       | ✅ More robust (e.g., missing keys) | ⚠️ You handle edge cases manually      |
+| Use in large projects    | ✅ Recommended                      | ❌ Yes, but may get verbose             |
+
+**Efficient Access**: No need for `Array.find()` to locate items.
+
+- **API Data Handling**: Ideal for converting API arrays into key-value maps (e.g., by `id`).
+
+- **Performance Tip**: Use `_.reduce` for large datasets instead of chaining `map` + `filter`.
+
+> **Pro Tip**: Combine `_.keyBy` with `_.get` for safe nested property access (e.g., `_.get(positions, '2B.name')`).
+
+
+
+### Why use Lodash `.keyBy()`?
+
+1. **Clarity**: Expresses intent directly — "key this array by property X".
+
+2. **Less boilerplate**: Avoids `.reduce()` syntax noise.
+
+3. **Safety**: Handles `null`, `undefined`, or missing properties more gracefully.
+
+4. **Better for chaining**: Works seamlessly with other Lodash methods.
+
+5. **Consistency**: Same behavior across platforms and environments.
+
+
+
+### When to use which?
+
+Use **Lodash `_.keyBy()`** when:
+
+- You need to transform arrays into object maps often.
+
+- You care about readability and consistency in team code.
+
+- You're already using Lodash or working in a complex data pipeline.
+
+  
+
+  
+
+Use **Vanilla `.reduce()`** when:
+
+- You want zero dependencies.
+
+- It's a one-off case and performance is not critical.
+
+- You’re working in a lightweight script or microservice.
+
+****
+
+## 2. `_.reduce(collection, function, initialValue)`
+
+**Iterates over a collection, accumulating a result*** (e.g., sum, concatenated string).
+
+### Case 1:     Summing Numbers
+
+```js
+const sum = _.reduce([12, 24, 36], (total, num) => total + num, 0 );
+
+console.log(sum)        // 72
+```
+
+### Case 2:     Totaling Nested Object Values
+
+```js
+const homerunStats = [
+    { name: 'Bregman, A',  hr: 19 },
+    { name: 'Altuve, J',   hr: 24 },
+    { name: 'Springer, G', hr: 34 },
+    { name: 'Gurriel, Y',  hr: 18 },
+    { name: 'Gonzalez, M', hr: 23 }
+];
+
+const totalHomeRun = _.reduce(homerunStats, (total, player) => total + player.hr, 0)
+
+console.log(totalHomeRun);      // 118
+
+```
+
+### Case 3: Generating HTML Strings
+
+```js
+// Case 3:  Generating HTML strings
+
+const links = [
+    'https://google.com',
+    'https://basque.devcamp.com'
+]
+
+const webLinks = _.reduce(links, function(html, link){
+
+    return `<a href="${link}">${link}</a><br>`.concat(html);
+
+}, '');
+
+console.log(webLinks);    
+ // <a href="https://basque.devcamp.com">https://basque.devcamp.com</a><br><a href="https://google.com">https://google.com</a><br>
+```
+
+****
+
+## 3. `_.random([lower=1], [upper=0])`
+
+**Generates random numbers within a range, inclusive of bounds.**
+
+### Example: Random Number Generator
+
+```js
+/*
+ * 5.  _.random([lower=1], [upper=0])
+ *
+ * Generates random numbers within a range, inclusive of bounds.
+ */
+
+const randNumberLodash = _.random(1, 100);
+
+console.log(randNumberLodash);
+
+const randNumberListLodash = _.times(5, () => _.random(1, 100));
+
+console.log(randNumberListLodash)   
+```
+
+### Advantages Over Vanilla JS:
+
+- No manual rounding or scaling (`Math.random() * 100`).
+
+- Inclusive bounds (unlike `Math.random()` which excludes upper bound).
+
+****
+
+## Practical Applications
+
+- **`keyBy`**: User databases, inventory systems (e.g., `productsById`).
+
+- **`reduce`**: Analytics (summing sales), dynamic UI generation.
+
+- **`random`**: Mock data, game mechanics, A/B testing.
+
+****
+
+## Resources
+
+* 
+
 ---
 
 ## Video Lesson Speech
