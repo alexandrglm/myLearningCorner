@@ -1,9 +1,59 @@
-# MODULE 05-107:    Git (2)
+# MODULE 05-002:    Git (2)
 
 Pushing a local repo
 ---
 
 ---
+
+1. **Create GitHub Repository**
+   
+   - Click "+" → "New repository"
+   
+   - Choose name (no spaces)
+   
+   - Keep public/private setting
+   
+   - **Don't** initialize with README
+
+2. **Connect Local to Remote**
+   
+   * `-u` sets upstream tracking
+   
+   * First push establishes the remote branch
+
+3. **Verify Remote Connection**
+   
+   ```bash
+   git remote -v          # Shows push/fetch URLs
+   ```
+
+4. **Push to GitHub**
+   
+   - `-u` sets upstream tracking
+   
+   - First push establishes the remote branch
+   
+   ```bash
+   git push -u origin master
+   ```
+
+****
+
+## Workflow Recap
+
+1. Create repo on GitHub (empty)
+
+2. Add remote (`git remote add`)
+
+3. Push code (`git push`)
+
+> **Note**: After initial setup, future pushes just require `git push`
+
+- **Remote**: Cloud-hosted repo (GitHub/GitLab)
+
+- **Origin**: Default name for primary remote
+
+- **Master/Main**: Default branch name (now often called "main")
 
 ****
 
