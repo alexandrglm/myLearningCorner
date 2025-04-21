@@ -5,7 +5,9 @@ Pushing a local repo
 
 ---
 
- Video lesson Speech
+****
+
+## Video lesson Speech
 
 In the last guide, we saw how we could create a local git repository. 
 And in this lesson we're going to see how we can push up that repository

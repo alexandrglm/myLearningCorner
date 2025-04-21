@@ -555,44 +555,108 @@
 
 |     | #      | Type                                              | Tittle                                                    | Date       |
 | --- | ------ | ------------------------------------------------- | --------------------------------------------------------- | ---------- |
-| [X] | 05-106 | `git init`                                        | How to Create a Local Git Repository                      | 2025/04/18 |
-| [X] | 05-107 | `git add .` / `git commit -m "..."` /  `git push` | How to Push a Local Git Repository to GitHub              | 2025/04/18 |
-| [X] | 05-108 |                                                   | Review of the Git Workflow                                | 2025/04/18 |
-| [X] | 05-109 | `./.git/`                                         | Examining the Dot Git Directory                           | 2025/04/18 |
-| [X] | 05-110 | `.gitignore`                                      | How to Hide Files and Directories from Git with gitignore | 2025/04/18 |
-| [ ] | 05-111 |                                                   | Course Checkpoint 10                                      |            |
+| [X] | 05-001 | `git init`                                        | How to Create a Local Git Repository                      | 2025/04/18 |
+| [X] | 05-002 | `git add .` / `git commit -m "..."` /  `git push` | How to Push a Local Git Repository to GitHub              | 2025/04/18 |
+| [X] | 05-003 |                                                   | Review of the Git Workflow                                | 2025/04/18 |
+| [X] | 05-004 | `./.git/`                                         | Examining the Dot Git Directory                           | 2025/04/18 |
+| [X] | 05-005 | `.gitignore`                                      | How to Hide Files and Directories from Git with gitignore | 2025/04/18 |
+| [ ] | 05-006 |                                                   | Course Checkpoint 10                                      |            |
 
 ***
 
 # MODULE 6 PART 1
 
-## JAVASCRIPT (iii)
+## Git (3)
 
-```text
+### Git -
 
-```
+|     | #      | Type | Tittle                                                            | Date |
+| --- | ------ | ---- | ----------------------------------------------------------------- | ---- |
+| [ ] | 06-007 |      | Overview of Git Pull                                              |      |
+| [ ] | 06-008 |      | Development Study Tips: Reverse Note Taking                       |      |
+| [ ] | 06-009 |      | Introduction to Git Branches                                      |      |
+| [ ] | 06-010 |      | Basic Git Branching Workflow                                      |      |
+| [ ] | 06-011 |      | How to Push and Merge a Remote Branch in Git                      |      |
+| [ ] | 06-012 |      | Overview of Git Rebase                                            |      |
+| [ ] | 06-013 |      | Overview of Git Stash                                             |      |
+| [ ] | 06-014 |      | Difference Between Git Fetch and Git Pull                         |      |
+| [ ] | 06-015 |      | How to Delete a Local and Remote Branch in Git                    |      |
+| [ ] | 06-016 |      | A Step by Step Guide for How to Resolve Git Merge Conflicts       |      |
+| [ ] | 06-017 |      | Reverting to the Latest Commit in Git                             |      |
+| [ ] | 06-018 |      | How to Revert a Single File to a Previous Version in Git          |      |
+| [ ] | 06-019 |      | Guide to Viewing a Version Commit for a Git Project               |      |
+| [ ] | 06-020 |      | How to Revert an Entire Project Back to a Previous Version in Git |      |
+| [ ] | 06-021 |      | How to Install the devCamp VS Code Extension                      |      |
+| [ ] | 06-022 |      | Building the Code Editor Activity Visualization Dashboard         |      |
 
-# MODULE 6 PART 2
+---
 
-## GIT
+## MODULE 6 PART 2:        JAVASCRIPT (iii)
 
-```text
+### JavaScript 15: Browser Console and Developer Environment
 
-```
+|     | #      | Type | Tittle                                                        | Date |
+| --- | ------ | ---- | ------------------------------------------------------------- | ---- |
+| [ ] | 06-106 |      | How to Run JavaScript Scripts in the Browser Console          |      |
+| [ ] | 06-107 |      | Comparison of Chrome's Command Line API vs Vanilla JavaScript |      |
+| [ ] | 06-108 |      | How to Process JavaScript from a File in the Browser          |      |
+| [ ] | 06-109 |      | How to Create Custom Code Snippets in VS Code                 |      |
+| [ ] | 06-110 |      | Speed Reading for Developers                                  |      |
+
+### JavaScript 16:     DOM Fundamentals
+
+|     | #      | Type | Tittle                                                                 | Date |
+| --- | ------ | ---- | ---------------------------------------------------------------------- | ---- |
+| [ ] | 06-111 |      | Overview of the DOM                                                    |      |
+| [ ] | 06-112 |      | How to Add and Remove Classes in Vanilla JavaScript                    |      |
+| [ ] | 06-113 |      | Differences Between the Window and Document for JavaScript Development |      |
+| [ ] | 06-114 |      | Overview of JavaScript Query Selectors                                 |      |
+| [ ] | 06-115 |      | Guide to JavaScript Event Listeners                                    |      |
+| [ ] | 06-116 |      | Inline onclick vs addEventListener                                     |      |
+| [ ] | 06-117 |      | How to Add and Remove CSS Styles in Vanilla JavaScript                 |      |
+| [ ] | 06-118 |      | How to Use JavaScript's Toggle Function                                |      |
+
+### JavaScript 17:         Applied JavaScript Features
+
+|     | #      | Type | Tittle                                                              | Date |
+| --- | ------ | ---- | ------------------------------------------------------------------- | ---- |
+| [ ] | 06-119 |      | How to Build a Character Countdown Function in JavaScript           |      |
+| [ ] | 06-120 |      | Guide to Building Shared Behavior with JavaScript Functions         |      |
+| [ ] | 06-121 |      | How to Add Hot Keys to a Web Application in Vanilla JavaScript      |      |
+| [ ] | 06-122 |      | How to Dynamically Create HTML Elements with JavaScript             |      |
+| [ ] | 06-123 |      | Course Checkpoint 11                                                |      |
+| [ ] | 06-124 |      | Guide to Removing HTML Elements with JavaScript                     |      |
+| [ ] | 06-125 |      | Project Requirements: Create and Remove Bullet Points Between Lists |      |
+| [ ] | 06-126 |      | Project Solution: Create and Remove Bullet Points Between Lists     |      |
+
+### JavaScript 18:     Developer Tools and Console Utilities
+
+|     | #      | Type | Tittle                                                                                    | Date |
+| --- | ------ | ---- | ----------------------------------------------------------------------------------------- | ---- |
+| [ ] | 06-127 |      | Overview of the Dev Tool's Network Tab                                                    |      |
+| [ ] | 06-128 |      | Various Console Methods in JavaScript                                                     |      |
+| [ ] | 06-129 |      | How to Use the JavaScript Console's Copy Function to Scrape a Website                     |      |
+| [ ] | 06-130 |      | Create an Array Popper that Alternates Returning from Each Side of an Array in JavaScript |      |
+| [ ] | 06-131 |      | There is No Foo Bar                                                                       |      |
+| [ ] | 06-132 |      | Guide to RESTful Routing                                                                  |      |
+| [ ] | 06-133 |      | Create a Capitalize Function in JavaScript                                                |      |
 
 # MODULE 6 PART 3
 
-## UML (i)
+### UML (1): Fundamentals
 
-```text
-
-```
-
-### Module 6 keypoints:
-
-* Coding best practices using GIT.
-* DOM tree manipulations.
-* UML - Unified Modeling Language: Components, Diagrams, 
+|     | #      | Type | Tittle                                          | Date |
+| --- | ------ | ---- | ----------------------------------------------- | ---- |
+| [ ] | 06-150 |      | Introduction to UML Diagrams                    |      |
+| [ ] | 06-151 |      | Use Case Diagrams Explained                     |      |
+| [ ] | 06-152 |      | Activity Diagrams: Syntax and Semantics         |      |
+| [ ] | 06-153 |      | Sequence Diagrams and Messaging Between Objects |      |
+| [ ] | 06-154 |      | Class Diagrams: Associations and Multiplicity   |      |
+| [ ] | 06-155 |      | Advanced Class Diagram Features                 |      |
+| [ ] | 06-156 |      | State Machine Diagrams: Modeling State Changes  |      |
+| [ ] | 06-157 |      | Component and Deployment Diagrams               |      |
+| [ ] | 06-158 |      | Practical Modeling Exercises with UML           |      |
+| [ ] | 06-159 |      | Course Checkpoint: UML                          |      |
 
 ***
 
