@@ -1,6 +1,82 @@
-# MODULE 05-110:    Git (2)
+# MODULE 05-005:    Git (2)
 
-## .gitignore
+### Git Security: Using .gitignore
+
+****
+
+1. **Purpose**
+   
+   - Excludes sensitive files/directories from version control
+   
+   - Prevents accidental commits of secrets (API keys, credentials)
+   
+   - Reduces repository size by ignoring generated files
+
+2. **Basic Syntax**
+   
+   ```bash
+   # Ignore specific file
+   .env
+   
+   # Ignore entire directory
+   node_modules/
+   
+   # Ignore any directory with the same name
+   **/node_modules/
+   ```
+
+3. **Common Patterns**
+   
+   - `*.env` - All environment files
+   
+   - `*.log` - Log files
+   
+   - `/dist` - Build output
+   
+   - `.DS_Store` - macOS metadata
+
+****
+
+## Workflow
+
+1. **Create .gitignore**
+   
+   ```bash
+   touch .gitignore
+   ```
+
+2. **Add exclusion rules**
+   
+   ```bash
+   # Example contents
+   
+   .env
+   node_modules/
+   *.key
+   ```
+
+3. **Handle cached files**
+   
+   ```bash
+   git rm -r --cached .          # So useful, clearing cache if needed
+   
+   git add .
+   git commit -m "Add .gitignore"
+   ```
+
+****
+
+## Security Best Practices
+
+- Never commit sensitive data
+
+- Add .gitignore early in project setup
+
+- Review staged files (`git status`) before committing
+
+- Use environment variables for secrets
+
+> **Note**: Once committed, sensitive data remains in Git history - consider rewriting history if secrets are accidentally committed.
 
 ---
 

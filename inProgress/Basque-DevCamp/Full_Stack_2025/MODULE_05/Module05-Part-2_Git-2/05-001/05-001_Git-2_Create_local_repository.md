@@ -1,10 +1,10 @@
-# MODULE 05-106:    Git (2)
+# MODULE 05-001:    Git (2)
 
 ## Creating a local repo
 
 ****
 
-## Commands Summary
+# 
 
 1. **Create project directory**
    

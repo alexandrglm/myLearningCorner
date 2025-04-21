@@ -1,8 +1,52 @@
-# MODULE 05-109:    Git (2)
+# MODULE 05-004:    Git (2)
 
 ## The .git directory
 
 ---
+
+1. **`./.git/` is Hidden by Default**
+   
+   - View with `ls -la` or enable hidden files in your editor
+   
+   - Contains all Git metadata for your repository
+
+2. **Key Files/Directories**
+   
+   - `HEAD`: Points to current branch reference
+   
+   - `config`: Repository configuration (remotes, merge settings)
+   
+   - `hooks/`: Scripts that run at Git events (pre-commit, pre-push)
+   
+   - `objects/`: Stores all repository content (commits, trees, blobs)
+   
+   - `refs/`: References to commits (branches, tags)
+
+3. **Commit Tracking**
+   
+   - `logs/`: Stores commit history (`git log` data)
+   
+   - `COMMIT_EDITMSG`: Last commit message
+
+## How Git Uses This Directory
+
+- All Git commands interact with these files
+
+- `git status` checks the `index` file
+
+- `git log` reads from `logs/` directory
+
+- Branch pointers are in `refs/heads/`
+
+> **Note**: You rarely need to modify these files directly - **use Git commands instead.**
+
+# 
+
+- **Hooks**: Custom scripts in `.git/hooks/` can automate workflows
+
+- **Config**: Edit `.git/config` for repository-specific settings
+
+- **Recovery**: The directory contains all data needed to restore repository state
 
 ---
 

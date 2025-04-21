@@ -1,8 +1,57 @@
-# MODULE 05-108:    Git (2)
+# MODULE 05-003:    Git (2)
 
 ## The Git workflow
 
 ---
+
+# Git Workflow
+
+### Develope     ->     Stage     ->     Commit     ->     Push
+
+### Add     ->     Commit     -> Push
+
+****
+
+## Standard Development Cycle
+
+1. **Make Changes**
+   
+   ```bash
+   touch README.md          # Create/edit files
+   ```
+
+2. **Stage Changed**
+   
+   ```bash
+   git add .                # Stage all changes
+   git add file.txt         # Or stage specific files
+   ```
+
+3. **Commit Changes**
+   
+   ```bash
+   git commit -m "Added readme file to repo"
+   ```
+
+4. **Push to Remote**
+   
+   ```bash
+   git push                 # After first push with -u flag
+   ```
+
+****
+
+## Notice
+
+First push requires:
+
+```bash
+git push -u origin master
+```
+
+- Subsequent pushes just need `git push`
+
+- GitHub automatically renders `README.md` as project documentation
 
 ---
 
