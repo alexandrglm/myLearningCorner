@@ -4,6 +4,73 @@
 
 ****
 
+## Commands Summary
+
+1. **Create project directory**
+   
+   ```bash
+   mkdir project-name
+   cd project-name
+   ```
+
+2. **Initialize Git repository**
+   
+   ```bash
+   git init
+   ```
+   
+   - Creates hidden `.git` directory (view with `ls -la`)
+
+3. **Check repository status**
+   
+   ```bash
+   git status
+   ```
+
+4. **Add files to staging**
+   
+   ```bash
+   git add filename  # Specific file. one by one
+   
+   git add .         # All files
+   ```
+
+5. **Commit changes**
+   
+   ```js
+   git commit -m "Initial commit"
+   ```
+
+6. **Push**
+   
+   ```bash
+   git push
+   ```
+
+****
+
+## Workflow Overview
+
+1. Create project files
+
+2. Initialize Git (`git init`)
+
+3. Stage files (`git add`)
+
+4. Commit changes (`git commit`)
+
+****
+
+## Visual Indicators
+
+- `git status` shows:
+  
+  - Untracked files (red)
+  
+  - Staged files (green)
+  
+  - Clean working directory (no changes)
+
 ****
 
 ## Video lesson Speech
