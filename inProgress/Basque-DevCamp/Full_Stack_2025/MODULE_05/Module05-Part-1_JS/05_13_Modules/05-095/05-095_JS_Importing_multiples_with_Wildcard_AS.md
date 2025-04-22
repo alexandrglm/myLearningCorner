@@ -4,6 +4,62 @@
 
 ---
 
+## Key Syntax
+
+### Wildcard Import
+
+```js
+import * as namespace from './module';
+```
+
+- Imports **all exports** from a module
+
+- Groups them under a namespace object
+
+- Usage: `namespace.exportedItem`
+
+## Practical Examples
+
+### Example 1: Basic Usage
+
+```js
+// math.js
+export function add(a, b) { return a + b; }
+export const PI = 3.14;
+
+
+// bootstrap.js
+import * as math from './math';
+
+console.log(math.add(2, 3));         // 5
+console.log(math.PI);                // 3.14
+```
+
+### Example 2: With Default Export
+
+```js
+// config.js
+export default 'API_KEY';
+export const TIMEOUT = 5000;
+
+
+// bootstrap.js
+import * as config from './config';
+
+console.log(config.default);     // 'API_KEY'
+console.log(config.TIMEOUT);     // 5000
+```
+
+## When to Use
+
+1. **Multiple Utilities**: Importing many functions from a utility module
+
+2. **Avoid Naming Conflicts**: When imported names might clash with local variables
+
+3. **Library Integrations**: Some libraries recommend this pattern
+
+> **Note**: **For most cases, prefer named imports (`import { x, y }`) for better code readability** and tree-shaking benefits.
+
 ---
 
 ## Video lesson speech

@@ -522,14 +522,14 @@
 
 ### JavaScript 13:  ES6 Modules
 
-|     | #      | Type                                              | Tittle                                                                    | Date       |
-| --- | ------ | ------------------------------------------------- | ------------------------------------------------------------------------- | ---------- |
-| [X] | 05-092 | NPM                                               | Section Introduction for Modern JavaScript Modules                        | 2025-04-14 |
-| [X] | 05-093 | NPM - ES6 project starter                         | How to Utilize the ES6 Project Generator                                  | 2025-04-14 |
-| [X] | 05-094 | `export object` - `import { object } from script` | Basic Guide to Importing and Exporting Code in JavaScript with ES6 Syntax | 2025-04-14 |
-| [X] | 05-095 | `import * as name from './script.js`              | How to Import Multiple Elements from a JavaScript File                    | 2025-04-15 |
-| [X] | 05-096 | Digital Literacy                                  | Guide to Default Exports in JavaScript                                    | 2025-04-15 |
-| [X] | 05-097 | Digital Literacy                                  | Task Switching Costs for Developers                                       | 2025-04-15 |
+|     | #      | Type                                                              | Tittle                                                                    | Date       |
+| --- | ------ | ----------------------------------------------------------------- | ------------------------------------------------------------------------- | ---------- |
+| [X] | 05-092 | NPM                                                               | Section Introduction for Modern JavaScript Modules                        | 2025-04-14 |
+| [X] | 05-093 | NPM - ES6 project starter                                         | How to Utilize the ES6 Project Generator                                  | 2025-04-14 |
+| [X] | 05-094 | `export object` - `import { object } from script`                 | Basic Guide to Importing and Exporting Code in JavaScript with ES6 Syntax | 2025-04-14 |
+| [X] | 05-095 | `import * as name from './script.js`                              | How to Import Multiple Elements from a JavaScript File                    | 2025-04-15 |
+| [X] | 05-096 | `export defaul func(){ ... }` - `import Function from './script'` | Guide to Default Exports in JavaScript                                    | 2025-04-15 |
+| [X] | 05-097 | Digital Literacy                                                  | Task Switching Costs for Developers                                       | 2025-04-15 |
 
 ### JavaScript 14:  NPM
 

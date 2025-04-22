@@ -32,15 +32,15 @@ Native JavaScript errors (`Error`, `TypeError`, etc.) are limited in their capab
 
 ```js
 class CustomError extends Error {
-  
+
     constructor(message = 'Default error message', ...params) {
         super(...params);
-        
+
         // Maintains proper stack trace
         if (Error.captureStackTrace) {
             Error.captureStackTrace(this, CustomError);
         }
-    
+
     this.name = 'CustomError';
     this.date = new Date();
   }
@@ -63,20 +63,20 @@ class CustomError extends Error {
 
 ```js
 class ApiError extends Error {
-  
+
     constructor(url, status, ...params) {
-    
+
         super(`API call to ${url} failed with status ${status}`, ...params);
-    
+
         this.name = 'ApiError';
         this.status = status;
         this.url = url;
         this.date = new Date();
     }
-  
+
     logToService() {
         console.error(`[${this.date}] ${this.name}:`, {
-      
+
             status: this.status,
             url: this.url,
             stack: this.stack
@@ -85,18 +85,16 @@ class ApiError extends Error {
 }
 ```
 
-
-
 **Usage**:
 
 ```js
 try {
-    
+
     // API call fails
     throw new ApiError('/users', 500);
 
 } catch (error) {
-    
+
     error.logToService();  
     showUserAlert('Service unavailable - please try later');
 }
@@ -110,7 +108,7 @@ try {
 
 ```js
 class ValidationError extends Error {
-  
+
     constructor(field, message, ...params) {
         super(`Validation failed: ${message}`, ...params);
         this.field = field;
@@ -130,7 +128,7 @@ if (!user.email) {
 
 ```js
 class DatabaseError extends Error {
-  
+
     constructor(query, originalError) {
         super(`Query failed: ${originalError.message}`);
         this.query = query;
@@ -144,7 +142,7 @@ class DatabaseError extends Error {
 
 ```js
 class AuthError extends Error {
-  
+
     constructor(userId, reason) {
         super(`Authentication failed for user ${userId}`);
         this.reason = reason;
@@ -169,7 +167,7 @@ class AuthError extends Error {
    
    ```js
    catch (error) {
-     
+   
        if (error instanceof ApiError) {
            // Special API error handling
      }

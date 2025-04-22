@@ -4,6 +4,52 @@
 
 ---
 
+### Default Export Syntax
+
+```js
+// module.js
+export default function() {
+
+    return '<div>Logo</div>';
+
+}
+
+// bootstrap.js
+import Navigation from './module';
+
+console.log(Navigation());         // <div>Logo</div>
+```
+
+- **One per file**: Only one default export allowed per module
+
+- **Flexible naming**: Import name can differ from original export
+
+- **Clean imports**: No curly braces required
+
+****
+
+## Mixed Export Example
+
+```js
+// utils.js
+export default function config() { /*...*/ }
+export function log() { /*...*/ }
+export const VERSION = '1.0';
+
+// app.js
+import appConfig, { log, VERSION } from './utils';
+```
+
+## When to Use Default Exports
+
+1. **Main Component/Class**: When a module has a primary export
+
+2. **Configuration Files**: Single configuration object
+
+3. **Framework Single-File Components**: React/Vue single-file components
+
+> **Best Practice**: **<u>Use named exports for utilities and default exports for primary module functionality</u>**.
+
 ---
 
 ## Video lesson speech
