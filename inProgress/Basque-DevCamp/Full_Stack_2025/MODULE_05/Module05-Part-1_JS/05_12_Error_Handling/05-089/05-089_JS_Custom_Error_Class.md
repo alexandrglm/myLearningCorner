@@ -4,6 +4,186 @@
 
 ---
 
+1. Extending the Error Class
+
+2. Implementing Custom Properties
+
+3. Use cases
+
+****
+
+Custom error classes provide **structured, domain-specific error handling** by:
+
+- Adding contextual metadata to errors
+
+- Standardizing error formats across applications
+
+- Enabling specialized error handling logic
+
+- Improving debugging with rich error information
+
+Native JavaScript errors (`Error`, `TypeError`, etc.) are limited in their capabilities. Custom classes extend this functionality.
+
+****
+
+## 1. Extending the Error Class
+
+### Basic Custom Error Template
+
+```js
+class CustomError extends Error {
+  
+    constructor(message = 'Default error message', ...params) {
+        super(...params);
+        
+        // Maintains proper stack trace
+        if (Error.captureStackTrace) {
+            Error.captureStackTrace(this, CustomError);
+        }
+    
+    this.name = 'CustomError';
+    this.date = new Date();
+  }
+}
+```
+
+- **`extends Error`**: Inherits core Error functionality
+
+- **`super()`**: Calls parent Error constructor
+
+- **Stack Trace**: Preserves call stack for debugging
+
+- **Custom Properties**: Add domain-specific data
+
+****
+
+## 3. Implementing Custom Properties
+
+### Example:         API Error Class
+
+```js
+class ApiError extends Error {
+  
+    constructor(url, status, ...params) {
+    
+        super(`API call to ${url} failed with status ${status}`, ...params);
+    
+        this.name = 'ApiError';
+        this.status = status;
+        this.url = url;
+        this.date = new Date();
+    }
+  
+    logToService() {
+        console.error(`[${this.date}] ${this.name}:`, {
+      
+            status: this.status,
+            url: this.url,
+            stack: this.stack
+        });
+    }
+}
+```
+
+
+
+**Usage**:
+
+```js
+try {
+    
+    // API call fails
+    throw new ApiError('/users', 500);
+
+} catch (error) {
+    
+    error.logToService();  
+    showUserAlert('Service unavailable - please try later');
+}
+```
+
+****
+
+## 4. Use Cases
+
+### Case 1:         Validation Errors
+
+```js
+class ValidationError extends Error {
+  
+    constructor(field, message, ...params) {
+        super(`Validation failed: ${message}`, ...params);
+        this.field = field;
+        this.code = 'VALIDATION_ERROR';
+    }
+}
+
+// Usage
+if (!user.email) {
+    
+    throw new ValidationError('email', 'Email is required');
+
+}
+```
+
+### Case 2:         Database Errors
+
+```js
+class DatabaseError extends Error {
+  
+    constructor(query, originalError) {
+        super(`Query failed: ${originalError.message}`);
+        this.query = query;
+        this.original = originalError;
+
+    }
+}
+```
+
+### Case 3:         Auth Errors
+
+```js
+class AuthError extends Error {
+  
+    constructor(userId, reason) {
+        super(`Authentication failed for user ${userId}`);
+        this.reason = reason;
+        this.isAuthError = true;
+    }
+}
+```
+
+---
+
+## Best Practices
+
+1. **Meaningful Names**: Use domain-specific error names (`PaymentError`, `InventoryError`)
+
+2. **Rich Metadata**: Include relevant context (timestamps, IDs, status codes)
+
+3. **Error Hierarchy**: Build inheritance chains for specialized handling
+
+4. **Utility Methods**: Add methods like `logToService()` or `toJSON()`
+
+5. **Type Checking**:
+   
+   ```js
+   catch (error) {
+     
+       if (error instanceof ApiError) {
+           // Special API error handling
+     }
+   }
+   ```
+
+6. **Combine custom errors with error codes** for internationalization and standardized error handling across large applications.
+
+****
+
+## Resources
+
+* https://javascript.info/custom-errors
+
 ---
 
 ## Video Lesson Speech
