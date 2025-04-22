@@ -4,7 +4,212 @@
 
  ---
 
+1. Core Concepts: XMLHttpRequest & Status Codes
+
+2. Implementing Custom Error Classes
+
+3. Practical API Workflow
+
+4. Use Cases
+
+****
+
+Proper error handling in API communication is **essential** for:
+
+- Gracefully handling service outages
+
+- Providing user-friendly error messages
+
+- Maintaining application stability
+
+- Debugging network issues efficiently
+
+This guide uses vanilla JavaScript's `XMLHttpRequest` and custom error classes to demonstrate robust error handling.
+
+****
+
+## 1. Core Concepts
+
+### XMLHttpRequest Basics
+
+```js
+const request = new XMLHttpRequest();
+
+request.open('GET', 'https://api.example.com/data', true);
+
+request.send();
+```
+
+### HTTP Status Codes
+
+| Code Range | Meaning       |
+| ---------- | ------------- |
+| 200-299    | Success       |
+| 300-399    | Redirection   |
+| 400-499    | Client Errors |
+| 500-599    | Server Errors |
+
+### Custom Error Class Template
+
+```js
+class ApiError extends Error {
+
+    constructor(msg = 'API error occurred', ...params) {
+        super(...params);
+        this.name = 'ApiError';
+        this.msg = msg;
+        this.timestamp = new Date();
+  }
+}
+```
+
+****
+
+## 2. Practical API Workflow
+
+### Full Implementation Example
+
+```js
+class ApiError extends Error {
+
+    constructor(status, url, ...params) {
+        super(`API request failed (${status})`, ...params);
+        this.name = 'ApiError';
+        this.status = status;
+        this.url = url;
+    }
+}
+
+const request = new XMLHttpRequest();
+
+request.open('GET', 'https://api.dailysmarty.com/posts', true);
+
+
+request.onload = function() {
+
+    if (request.status >= 200 && request.status < 400) {
+
+        try {
+
+            const data = JSON.parse(request.responseText);
+            console.log('API Response:', data);
+
+        } catch(parseError) {
+
+            throw new ApiError(500, request.responseURL, 
+            'Invalid JSON response');
+        }
+
+    } else {
+
+        throw new ApiError(request.status, request.responseURL);
+
+    }
+
+};
+
+
+request.onerror = function() {
+
+    throw new ApiError(0, request.responseURL, 
+        'Network connection failed');
+};
+
+request.send();
+```
+
 ---
+
+## 3. Use Cases / Best Practices
+
+1. **Status Code Checks**  
+   Always verify HTTP status before processing responses:
+   
+   ```js
+   if (request.status >= 200 && request.status < 300) {
+   
+       // Handle successful response
+   
+   }
+   ```
+
+2. **JSON Validation**  
+   Wrap `JSON.parse` in try/catch to handle malformed responses:
+   
+   ```js
+   try {
+   
+       const data = JSON.parse(rawResponse);
+   
+   } catch(error) {
+   
+       throw new ApiError(500, url, 'Invalid JSON format');
+   
+   }
+   ```
+
+3. **Custom Error Enrichment**  
+   Include contextual data in errors:
+   
+   ```js
+   class ApiError extends Error {
+   
+       constructor(status, url, body) {
+           super(`API Error [${status}] ${url}`);
+           this.status = status;
+           this.url = url;
+           this.responseBody = body;
+   
+       }
+   
+   }
+   ```
+
+4. **Network Error Handling**  
+   Implement `onerror` handler for connection failures:
+   
+   ```js
+   request.onerror = () => {
+   
+       throw new ApiError(0, url, 'Network failure');
+   
+   };
+   ```
+
+## Error Handling Pattern
+
+```js
+try {
+
+    // API call logic
+
+} catch (error) {
+
+    if (error instanceof ApiError) {    
+        console.error('API Failure:', {
+            status: error.status,
+            url: error.url,
+            time: error.timestamp
+    });
+
+    showUserAlert(`Service error: ${error.status}`);
+    } else {
+
+        console.error('Unexpected error:', error);
+        showUserAlert('System malfunction');
+  }
+}
+```
+
+****
+
+## Resources
+
+* [XMLHttpRequest - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest)
+
+* [HTTP Status Codes Glossary - WebFX](https://www.webfx.com/web-development/glossary/http-status-codes/)
+
+****
 
 ## Video Lesson Speech
 
