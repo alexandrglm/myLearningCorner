@@ -6,17 +6,12 @@
 
 # Node.js, with NVM, for Debians, simply:
 
-
-
 # Node.js Isolated Installation & VS Code Debugging Guide
 
 ## 1. Install NVM
 
 ```bash
 # From https://github.com/nvm-sh/nvm
-
-
-
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.2/install.sh | bash
 ```
 
@@ -30,16 +25,9 @@ source ~/.bashrc # or ~/.zshrc if using Zsh or whatever you use
 
 ```bash
 # As 2025 March, 22.14.0 is the LTS
-
-
-
 nvm ls-remote # Check latest versions available
 
-
-
 nvm install 22.14.0 # Install specific version (This, the latest LTS version)
-
-
 
 nvm use 22.14.0 # Use this version
 ```
@@ -48,8 +36,6 @@ nvm use 22.14.0 # Use this version
 
 ```bash
 node --version
-
-
 
 which node # Note this path for VS Code configuration
 ```
@@ -61,30 +47,18 @@ Create `.vscode/launch.json` in your project:
 ```json
 {
 
-"version": "0.2.0",
-
-"configurations": [
-
-{
-
-"type": "node",
-
-"request": "launch",
-
-"name": "Debug Current File",
-
-"skipFiles": ["<node_internals>/**"],
-
-"program": "${file}",
-
-"runtimeExecutable": "/home/youruser/.nvm/versions/node/v22.14.0/bin/node",
-
-"console": "integratedTerminal"
-
-}
-
-]
-
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Debug Current File",
+            "skipFiles": ["<node_internals>/**"],
+            "program": "${file}",
+            "runtimeExecutable": "/home/youruser/.nvm/versions/node/v22.14.0/bin/node",
+            "console": "integratedTerminal"
+        }
+    ]
 }
 ```
 
@@ -102,8 +76,6 @@ Create `.vscode/launch.json` in your project:
 - Select "Debug Current File"
 
 - Click green play button
-
-
 
 ---
 

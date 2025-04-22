@@ -85,13 +85,11 @@ export function prettyTexts(text) {
 }
 
 // console.log(prettyTexts('Hola que tal'))
-
 ```
 
 In your `package.json`, make sure to use **ES6 Modules syntax** :
 
 ```json
-
 {
   "name": "@yourname/your-module",
   "version": "1.0.0",
@@ -101,7 +99,6 @@ In your `package.json`, make sure to use **ES6 Modules syntax** :
     ".": "./index.js"
   }
 }
-
 ```
 
 ****Using `"type": "module"` allows you to use `import/export` syntax instead of CommonJS (`require`).****
@@ -111,24 +108,13 @@ In your `package.json`, make sure to use **ES6 Modules syntax** :
 ## Create a `package.json` file
 
 1. To create a `package.json` file, on the command line, in the root directory of your Node.js module, run `npm init`:
-   
-   
-   - For [scoped modules](https://docs.npmjs.com/about-scopes), run `npm init --scope=@scope-name`
-   - For [unscoped modules](https://docs.npmjs.com/creating-and-publishing-unscoped-public-packages), run `npm init`  
+- For [scoped modules](https://docs.npmjs.com/about-scopes), run `npm init --scope=@scope-name`
 
-  
-
-
-
+- For [unscoped modules](https://docs.npmjs.com/creating-and-publishing-unscoped-public-packages), run `npm init`  
 2. Provide responses for the required fields (`name` and `version`), as well as the `main` field:
-   
-     
-   
-   * `name`: The name of your module.
-   
-   * `version`: The initial module version. We recommend following [semantic versioning guidelines](https://docs.npmjs.com/about-semantic-versioning) and starting with `1.0.0`.
+* `name`: The name of your module.
 
-
+* `version`: The initial module version. We recommend following [semantic versioning guidelines](https://docs.npmjs.com/about-semantic-versioning) and starting with `1.0.0`.
 
 ****
 
@@ -141,11 +127,13 @@ You can test your package locally before publishing:
    ```bash
    npm link
    ```
+
 2. In another local project (e.g. `test-app`):
    
    ```bash
    npm link @yourname/your-module
    ```
+
 3. Now you can import and use your module:
    
    ```js
@@ -168,13 +156,9 @@ Create an account at [https://npmjs.com/signup](https://www.npmjs.com/signup)
 npm login
 ```
 
-
-
 ### b. Add a README
 
 A good `README.md` is **critical** for documentation, example usage, and discoverability.
-
-
 
 ### c. Add `.gitignore`
 
@@ -185,8 +169,6 @@ Any file/folder included here will be ignored for pushing/fetching repo. You can
 **/dist/
 .env
 ```
-
-
 
 ### d. Add a `.npmignore`
 
@@ -227,8 +209,6 @@ Example:
 - `1.1.0` → new feature, no breaking change
 
 - `2.0.0` → breaking change
-
-
 
 Update the version in `package.json`, or use:
 
@@ -287,23 +267,23 @@ console.log(prettyTexts('Hola que tal));    // HOLA QUE TAL
 
 ## Best Practice
 
-*  **Always prefer using ES6-7 Module syntax** (ES modules):  
+* **Always prefer using ES6-7 Module syntax** (ES modules):  
   `"type": "module"` + `export` / `import`
 
-*  **Use named exports** for flexibility:  
+* **Use named exports** for flexibility:  
   Avoid default exports in reusable libraries.
 
-*  **Document your API** clearly in `README.md`.  
+* **Document your API** clearly in `README.md`.  
 
-*  **Include `exports` field** in `package.json` for proper tree-shaking support.
+* **Include `exports` field** in `package.json` for proper tree-shaking support.
 
-*  **Test your module locally** using `npm link`.
+* **Test your module locally** using `npm link`.
 
-*  **Use `.npmignore` or `"files"` field** in `package.json` to limit what's published.
+* **Use `.npmignore` or `"files"` field** in `package.json` to limit what's published.
 
-*  **Use GitHub repo** + `"repository"` and `"homepage"` fields for visibility.
+* **Use GitHub repo** + `"repository"` and `"homepage"` fields for visibility.
 
-*  **Include a license** (`MIT` is common for open source).
+* **Include a license** (`MIT` is common for open source).
 
 * Use [np](https://www.npmjs.com/package/np) or [changesets](https://github.com/changesets/changesets) for advanced release workflows.
 
@@ -640,5 +620,3 @@ This is definitely on the more advanced side and so I definitely commend you for
 - [NPM module deployed](https://www.npmjs.com/package/devcamp-js-footer)
 - [Project Source Code](https://github.com/jordanhudgens/devcamp-js-footer)
 - [Markdown Tutorial](https://www.markdowntutorial.com/)
-
-npm login **Changed 8/9/22

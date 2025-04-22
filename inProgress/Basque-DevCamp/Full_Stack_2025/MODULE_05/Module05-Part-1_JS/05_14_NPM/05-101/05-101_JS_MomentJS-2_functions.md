@@ -4,7 +4,268 @@
 
 ---
 
+1. Introduction to Moment.js
+
+2. Installation & Setup
+
+3. Core Concepts
+
+4. Parsing & Formatting Dates
+
+5. Relative Time Calculations
+
+6. Date Arithmetic
+
+7. Best Practices
+
+8. Resources
+
+
+
+****
+
+## 1. Introduction to Moment.js
+
+Moment.js is a **powerful JavaScript library** for:
+
+- Parsing, validating, and manipulating dates
+
+- Displaying dates in human-readable formats
+
+- Performing complex date calculations
+
+- Handling timezones and localization
+
+Key Features:
+
+- Chainable API for fluent date operations
+
+- Extensive formatting options
+
+- Lightweight (~20kb minified)
+
+- Browser and Node.js support
+
+****
+
+## 2. Installation & Setup
+
+### Installation
+
+```bash
+npm install moment
+```
+
+### Basic Import
+
+```bash
+import moment from 'moment';
+```
+
+### Getting Current Timestamp
+
+```js
+console.log(  moment().now() );
+```
+
+****
+
+## 3. Core Concepts
+
+### Creating Moment Objects
+
+```js
+// Current date/time
+const now = moment();
+
+// From specific date
+const birthday = moment('1988-01-02', 'YYYY-MM-DD');
+
+// From custom format
+const customDate = moment('20250415150822', 'YYYYMMDDHHmmss');
+```
+
+### Moment Object Structure
+
+```js
+{
+  _isAMomentObject: true,
+  _i: "1988-01-02",          // Input date
+  _f: "YYYY-MM-DD",          // Input format
+  _d: Date,                  // JavaScript Date object
+  _isValid: true             // Validation flag
+}
+```
+
+****
+
+## 4. Parsing & Formatting Dates
+
+### Common Format Tokens
+
+| Token  | Output             | Example |
+| ------ | ------------------ | ------- |
+| `YYYY` | 4-digit year       | 2025    |
+| `MM`   | Month number       | 01-12   |
+| `MMM`  | Month abbreviation | Jan     |
+| `MMMM` | Full month name    | January |
+| `DD`   | Day of month       | 01-31   |
+| `dddd` | Full day name      | Monday  |
+| `HH`   | 24-hour time       | 00-23   |
+| `hh`   | 12-hour time       | 01-12   |
+| `mm`   | Minutes            | 00-59   |
+| `ss`   | Seconds            | 00-59   |
+| `A`    | AM/PM              | AM      |
+
+### Formatting Examples
+
+```js
+const today = moment('2025-04-15');
+
+// Basic formats
+today.format('YYYY-MM-DD');          // "2025-04-15"
+today.format('dddd, MMMM Do YYYY');  // "Tuesday, April 15th 2025"
+
+// Internationalization formats
+today.format('LL');   // "April 15, 2025"
+today.format('LLL');  // "April 15, 2025 12:00 AM"
+today.format('LLLL'); // "Tuesday, April 15, 2025 12:00 AM"
+
+// Custom formats
+today.format('[Quarter] Q [of] YYYY'); // "Quarter 2 of 2025"
+```
+
+****
+
+## 5. Relative Time Calculations
+
+### `fromNow()` Method
+
+```js
+moment('2025-04-10').fromNow();    // "6 days ago" 
+moment('2025-03-10').fromNow();    // "a month ago"
+moment('2020-03-10').fromNow();    // "5 years ago"
+```
+
+### Humanized Durations
+
+```js
+// Time until a future date
+moment('2025-12-25').fromNow();    // "in 8 months"
+
+// Custom thresholds
+moment.updateLocale('en', {
+  relativeTime: {
+    future: 'in %s',
+    past: '%s ago',
+    s: 'a few seconds',
+    m: 'a minute',
+    mm: '%d minutes',
+    h: 'an hour',
+    hh: '%d hours',
+    d: 'a day',
+    dd: '%d days',
+    M: 'a month',
+    MM: '%d months',
+    y: 'a year',
+    yy: '%d years'
+  }
+});
+```
+
+****
+
+## 6. Date Arithmetic
+
+### Adding/Subtracting Time
+
+```js
+const date = moment('2025-04-15');
+
+// Adding time
+date.add(1, 'day').format('LLLL');    // "Wednesday, April 16, 2025 12:00 AM"
+date.add(2, 'months').format('LLLL'); // "Sunday, June 15, 2025 12:00 AM"
+
+// Subtracting time
+date.subtract(3, 'days').format('LLLL');  // "Saturday, April 12, 2025 12:00 AM"
+```
+
+### Start/End of Time Periods
+
+```js
+const now = moment();
+
+now.startOf('day');     // Sets to 00:00:00 today
+now.endOf('month');     // Sets to last millisecond of current month
+now.startOf('hour');    // Sets to beginning of current hour
+```
+
+### Difference Between Dates
+
+```js
+const date1 = moment('2025-01-01');
+const date2 = moment('2025-04-15');
+
+date2.diff(date1, 'days');    // 104 days
+date2.diff(date1, 'months');  // 3 months
+```
+
+****
+
+## 7. Best Practices
+
+1. **Always Specify Format** when parsing strings:
+   
+   ```js
+   // Good
+   moment('15-04-2025', 'DD-MM-YYYY');
+   
+   // Bad (locale-dependent)
+   moment('15-04-2025');
+   ```
+2. **Use Immutable Operations**:
+   
+   ```js
+   // Creates new moment instead of modifying original
+   const newDate = originalDate.add(1, 'day').clone();
+   ```
+3. **Validate Dates**:
+   
+   ```js
+   if (!moment('invalid date', 'YYYY-MM-DD').isValid()) {
+     
+       console.error('Invalid date provided');
+   
+   }
+   ```
+4. **Consider Alternatives** for new projects:
+   
+   **Migration Note**: While Moment.js is feature-rich, consider modern alternatives like `date-fns` or native Intl API for new projects, as Moment.js is now in maintenance mode:
+   
+   
+   - [Temporal - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Temporal)
+   
+   - `date-fns` (modular)
+   
+   - `luxon` (immutable API)
+   
+   - Native `Intl.DateTimeFormat`
+
 ---
+
+## Resources
+
+* [Temporal documentation](https://tc39.es/proposal-temporal/docs/index.html)
+
+* [Temporal - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Temporal)
+
+* [Moment.js cheatsheet](https://devhints.io/moment)
+
+* [Moment.js | Docs](https://momentjs.com/docs/#/-project-status/)
+
+* [Moment Timezone | Home](https://momentjs.com/timezone/)
+
+****
 
 ## Video Lesson Speech
 

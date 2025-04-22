@@ -4,6 +4,198 @@
 
 ---
 
+1. Exporting Code
+
+2. Importing Code
+
+3. Named vs Default Exports
+
+4. Use Cases
+
+****
+
+ES6 modules revolutionize JavaScript development by enabling:
+
+- **Code organization**: Split logic into reusable files
+
+- **Dependency management**: Explicitly declare dependencies
+
+- **Encapsulation**: Control what gets exposed to other files
+
+- **Tree-shaking**: Eliminate unused code in production builds
+
+- Each file is its own module
+
+- Uses `import`/`export` syntax
+
+- Strict mode by default
+
+- Top-level `this` is undefined
+
+****
+
+## 1. Exporting Code
+
+### Named Exports (Multiple per file)
+
+```js
+// helper.js
+export const greeting = 'Hi there';
+
+export function multiply(a, b) {
+    
+    return a * b;
+
+}
+
+export class Calculator {
+
+    // Class implementation
+
+}
+```
+
+### Default Exports (One per file)
+
+```js
+// config.js
+
+const apiKey = '123-abc';
+
+export default apiKey;
+```
+
+### Export Lists
+
+```js
+// utils.js
+function log() { /*...*/ }
+function warn() { /*...*/ }
+
+export { log, warn };
+```
+
+***
+
+## 2. Importing Code
+
+### Importing Named Exports
+
+```js
+// bootstrap.js
+import { greeting, multiply } from './helper';
+```
+
+### Importing Default Exports
+
+```js
+import apiKey from './config';
+```
+
+### Renaming Imports
+
+```js
+import { multiply as mathMultiply } from './helper';
+```
+
+### Import All
+
+```js
+import * as helper from './helper';
+
+// Then, the usage: helper.greeting, helper.multiply()
+```
+
+****
+
+## 3. Named vs Default Exports
+
+| Feature  | Named Exports                | Default Exports         |
+| -------- | ---------------------------- | ----------------------- |
+| Quantity | Multiple per file            | One per file            |
+| Syntax   | `export const/function`      | `export default`        |
+| Import   | `import { name }`            | `import anyName`        |
+| Use Case | Utility functions, constants | Main component/function |
+
+**Best Practice**: Use named exports for most cases, default exports for single-purpose modules.
+
+---
+
+## 5. Practical Examples
+
+### Example 1:         Utility Module
+
+```js
+// math.js
+export function add(a, b) { return a + b; }
+export function subtract(a, b) { return a - b; }
+
+// app.js
+import { add, subtract } from './math';
+
+console.log(add(2, 3));     // 5
+```
+
+### Example 2:         Component Module
+
+```js
+// Button.js
+export default function Button(props) {
+
+    return <button>{props.text}</button>;
+
+}
+
+// App.js
+import CustomButton from './Button';
+```
+
+### Example 3:         Configuration
+
+```js
+// constants.js
+export const API_URL = 'https://api.example.com';
+export const TIMEOUT = 5000;
+
+// service.js
+import { API_URL, TIMEOUT } from './constants';
+```
+
+## Best Practices
+
+1. **File Structure**:
+   
+   ```js
+   /src
+     /components
+     /utils
+     /services
+   ```
+
+2. **Consistent Paths**: Always use `./` or `../` for relative paths
+
+3. **Barrel Files**: Create `index.js` to re-export grouped modules
+   
+   ```js
+   // utils/index.js
+   export * from './math';
+   export * from './strings';
+   ```
+
+4. **Static Imports**: Keep imports at top of file
+
+5. **Avoid Circular Dependencies**: Module A → Module B → Module A
+
+****
+
+## Resources
+
+* [JavaScript modules - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
+
+* https://javascript.info/modules
+
+* [Modules: ECMAScript modules | Node.js v23.11.0 Documentation](https://nodejs.org/api/esm.html)
+
 ****
 
 ## Video lesson speech
