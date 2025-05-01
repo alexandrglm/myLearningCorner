@@ -2,6 +2,78 @@
 
 ****
 
+### Abstract:
+
+To develop a strategy for building new features, especially when you’re unsure of the full scope or afraid of making mistakes.
+
+---
+
+### 1. **From Requirements to User Stories:**
+
+- Instead of writing static requirements (e.g., "user can register"), write **practical user stories** (e.g., "user logs in, sees her posts, edits them...").
+
+- User stories help visualize real functionality and reduce the feeling that you're missing something.
+
+---
+
+### 2. **Start with a Base Case:**
+
+- Break features into **minimal, manageable units**.
+
+- Example: first, build a form that only allows a title; add description and images later.
+
+- This avoids being overwhelmed and helps keep development moving.
+
+---
+
+### 3. **Accept You'll Miss Things:**
+
+- It’s okay to **forget parts** of a feature.
+
+- Be flexible — you can always add missing parts later.
+
+> *Don’t let fear of imperfection paralyze your progress.*
+
+---
+
+### 4. **Fighting Procrastination by Thinking Small:**
+
+- Intimidating features (like uploading multiple images) often cause procrastination.
+
+- Break them into **small technical steps**:
+  
+  1. Add nested attributes.
+  
+  2. Add dynamic JavaScript inputs.
+  
+  3. Seed dummy data.
+  
+  4. Connect to a storage backend.
+
+---
+
+### 5. **Getting Unstuck (Debugging Tips):**
+
+- When stuck, **isolate** the faulty feature.
+
+- Forget best practices temporarily if needed (e.g., put DB queries in views just to test).
+
+- Use tools like Rails console and `pry` to troubleshoot efficiently.
+
+---
+
+### 6. **Messages Over Models:**
+
+- Great developers focus on **messages passed between objects**, not just on model structures.
+
+- Behavior-first design leads to more dynamic and flexible code.
+
+> “You don’t send messages because you have objects. You have objects because you send messages.” – *Sandi Metz*
+
+****
+
+## Original Guide
+
 This guide will focus on answering the question of 'How to develop a strategy for approaching project/feature development'.
 
 ****
