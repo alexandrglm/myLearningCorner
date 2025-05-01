@@ -540,12 +540,12 @@
 | [X] | 05-100 | `import moment from 'moment'`Core Components                                                        | How to Install MomentJS into a JavaScript Application  | 2025-04-15 |
 | [X] | 05-101 | `moment('19880101101112', 'YYYYMMDDHHmmss)`-   `.format()` - `.toString` - `add()` - `subtract()` - | Popular MomentJS Functions                             | 2025-04-15 |
 | [X] | 05-102 | ES6/7 Module Syntax -                                                                               | How to Build and Deploy a NPM Module                   | 2025-04-15 |
-| [ ] | 05-103 |                                                                                                     | Course Checkpoint 9                                    |            |
+| [ ] | 05-103 |                                                                                                     | Course Checkpoint 9                                    | 2025-04-23 |
 
-|     | #      | Type             | Tittle                                                      | Date |
-| --- | ------ | ---------------- | ----------------------------------------------------------- | ---- |
-| [ ] | 05-104 | Exercise         | Build out a Diner Menu using JavaScript                     |      |
-| [X] | 05-105 | Digital Literacy | Practical Ways to Use the Pomodoro Technique as a Developer |      |
+|     | #      | Type             | Tittle                                                      | Date       |
+| --- | ------ | ---------------- | ----------------------------------------------------------- | ---------- |
+| [ ] | 05-104 | Exercise         | Build out a Diner Menu using JavaScript                     | pending    |
+| [X] | 05-105 | Digital Literacy | Practical Ways to Use the Pomodoro Technique as a Developer | 2025-04-23 |
 
 ***
 
@@ -560,7 +560,7 @@
 | [X] | 05-003 |                                                   | Review of the Git Workflow                                | 2025/04/18 |
 | [X] | 05-004 | `./.git/`                                         | Examining the Dot Git Directory                           | 2025/04/18 |
 | [X] | 05-005 | `.gitignore`                                      | How to Hide Files and Directories from Git with gitignore | 2025/04/18 |
-| [ ] | 05-006 |                                                   | Course Checkpoint 10                                      |            |
+| [ ] | 05-006 |                                                   | Course Checkpoint 10                                      | pending    |
 
 ***
 
@@ -568,26 +568,26 @@
 
 ## Git (3)
 
-### Git -
+# 
 
-|     | #      | Type | Tittle                                                            | Date |
-| --- | ------ | ---- | ----------------------------------------------------------------- | ---- |
-| [ ] | 06-007 |      | Overview of Git Pull                                              |      |
-| [ ] | 06-008 |      | Development Study Tips: Reverse Note Taking                       |      |
-| [ ] | 06-009 |      | Introduction to Git Branches                                      |      |
-| [ ] | 06-010 |      | Basic Git Branching Workflow                                      |      |
-| [ ] | 06-011 |      | How to Push and Merge a Remote Branch in Git                      |      |
-| [ ] | 06-012 |      | Overview of Git Rebase                                            |      |
-| [ ] | 06-013 |      | Overview of Git Stash                                             |      |
-| [ ] | 06-014 |      | Difference Between Git Fetch and Git Pull                         |      |
-| [ ] | 06-015 |      | How to Delete a Local and Remote Branch in Git                    |      |
-| [ ] | 06-016 |      | A Step by Step Guide for How to Resolve Git Merge Conflicts       |      |
-| [ ] | 06-017 |      | Reverting to the Latest Commit in Git                             |      |
-| [ ] | 06-018 |      | How to Revert a Single File to a Previous Version in Git          |      |
-| [ ] | 06-019 |      | Guide to Viewing a Version Commit for a Git Project               |      |
-| [ ] | 06-020 |      | How to Revert an Entire Project Back to a Previous Version in Git |      |
-| [ ] | 06-021 |      | How to Install the devCamp VS Code Extension                      |      |
-| [ ] | 06-022 |      | Building the Code Editor Activity Visualization Dashboard         |      |
+|     | #      | Type                     | Tittle                                                            | Date       |
+| --- | ------ | ------------------------ | ----------------------------------------------------------------- | ---------- |
+| [X] | 06-007 | Git                      | Overview of Git Pull                                              | 2025-05-01 |
+| [X] | 06-008 | Digital Literacy         | Development Study Tips: Reverse Note Taking                       | 2025-05-01 |
+| [X] | 06-009 | Git branches             | Introduction to Git Branches                                      | 2025-05-01 |
+| [X] | 06-010 | Git                      | Basic Git Branching Workflow                                      | 2025-05-01 |
+| [X] | 06-011 | Git `push` - `merge`     | How to Push and Merge a Remote Branch in Git                      | 2025-05-01 |
+| [X] | 06-012 | `git rebase`             | Overview of Git Rebase                                            | 2025-05-01 |
+| [X] | 06-013 | `git stash`              | Overview of Git Stash                                             | 2025-05-01 |
+| [X] | 06-014 | `git fetch` - `git pull` | Difference Between Git Fetch and Git Pull                         | 2025-05-01 |
+| [X] | 06-015 |                          | How to Delete a Local and Remote Branch in Git                    | 2025-05-01 |
+| [X] | 06-016 |                          | A Step by Step Guide for How to Resolve Git Merge Conflicts       | 2025-05-01 |
+| [X] | 06-017 |                          | Reverting to the Latest Commit in Git                             | 2025-05-01 |
+| [X] | 06-018 |                          | How to Revert a Single File to a Previous Version in Git          | 2025-05-01 |
+| [X] | 06-019 |                          | Guide to Viewing a Version Commit for a Git Project               | 2025-05-01 |
+| [X] | 06-020 |                          | How to Revert an Entire Project Back to a Previous Version in Git | 2025-05-01 |
+| [X] | 06-021 |                          | How to Install the devCamp VS Code Extension                      | 2025-05-01 |
+| []  | 06-022 |                          | Building the Code Editor Activity Visualization Dashboard         |            |
 
 ---
 
