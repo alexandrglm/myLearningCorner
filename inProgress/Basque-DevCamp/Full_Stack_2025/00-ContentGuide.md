@@ -502,9 +502,9 @@
 | --- | ------ | --------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- | ---------- |
 | [X] | 05-078 |                                                                                                                                   | Section Introduction for Modern JavaScript Tools      | 2025-04-12 |
 | [X] | 05-079 | Lodash - `_.times(n, function)` - `_.filter(collection, func)`                                                                    | Overview of Lodash JavaScript Library                 | 2025-04-19 |
-| [ ] | 05-080 | Lodash: `_.keyBy(collection, keyProperty)`` - ``_.reduce(collection, function, initialValue)` - `_.random([lower=1], [upper=0]) ` | Popular Lodash Functions: keyBy, reduce, and random   | 2025-04-19 |
-| [ ] | 05-081 | `Debugger`                                                                                                                        | Overview of the JavaScript Debugger                   | 2025-04-13 |
-| [ ] | 05-082 | Quokka Extension, Debugging while coding                                                                                          | Overview of the Quokka.js Extension                   | 2025-04-13 |
+| [X] | 05-080 | Lodash: `_.keyBy(collection, keyProperty)`` - ``_.reduce(collection, function, initialValue)` - `_.random([lower=1], [upper=0]) ` | Popular Lodash Functions: keyBy, reduce, and random   | 2025-04-19 |
+| [X] | 05-081 | `Debugger`                                                                                                                        | Overview of the JavaScript Debugger                   | 2025-04-13 |
+| [X] | 05-082 | Quokka Extension, Debugging while coding                                                                                          | Overview of the Quokka.js Extension                   | 2025-04-13 |
 | [X] | 05-083 | Linting Tools, removing debugging process/data for Production.                                                                    | Overview of JavaScript Lint Tools                     | 2025-04-13 |
 | [X] | 05-084 | Digital Literacy                                                                                                                  | Learn How to Code from Scratch – A Practical Strategy | 2025-04-13 |
 | [X] | 05-085 | Digital Literacy                                                                                                                  | The Power of Making Mistakes – Learning by Failing    | 2025-04-13 |
@@ -540,7 +540,7 @@
 | [X] | 05-100 | `import moment from 'moment'`Core Components                                                        | How to Install MomentJS into a JavaScript Application  | 2025-04-15 |
 | [X] | 05-101 | `moment('19880101101112', 'YYYYMMDDHHmmss)`-   `.format()` - `.toString` - `add()` - `subtract()` - | Popular MomentJS Functions                             | 2025-04-15 |
 | [X] | 05-102 | ES6/7 Module Syntax -                                                                               | How to Build and Deploy a NPM Module                   | 2025-04-15 |
-| [ ] | 05-103 |                                                                                                     | Course Checkpoint 9                                    | 2025-04-23 |
+| [X] | 05-103 |                                                                                                     | Course Checkpoint 9                                    | 2025-04-23 |
 
 |     | #      | Type             | Tittle                                                      | Date       |
 | --- | ------ | ---------------- | ----------------------------------------------------------- | ---------- |
@@ -587,7 +587,7 @@
 | [X] | 06-019 |                          | Guide to Viewing a Version Commit for a Git Project               | 2025-05-01 |
 | [X] | 06-020 |                          | How to Revert an Entire Project Back to a Previous Version in Git | 2025-05-01 |
 | [X] | 06-021 |                          | How to Install the devCamp VS Code Extension                      | 2025-05-01 |
-| []  | 06-022 |                          | Building the Code Editor Activity Visualization Dashboard         |            |
+| [X] | 06-022 |                          | Building the Code Editor Activity Visualization Dashboard         |            |
 
 ---
 
