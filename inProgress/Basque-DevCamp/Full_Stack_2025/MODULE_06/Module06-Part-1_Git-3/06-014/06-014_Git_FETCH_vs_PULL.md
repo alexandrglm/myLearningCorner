@@ -4,6 +4,152 @@
 
 ---
 
+## Differences
+
+| Feature       | `git fetch`                         | `git pull`                   |
+| ------------- | ----------------------------------- | ---------------------------- |
+| Action        | Downloads changes but doesn't merge | Downloads AND merges changes |
+| Safety        | Safer - lets you review first       | Riskier - automatic merge    |
+| Workflow      | Two-step process (fetch then merge) | Single-step process          |
+| Local Changes | Preserves your local work           | May cause merge conflicts    |
+
+## ****
+
+## When to Use Each
+
+### Use `git fetch` when:
+
+- Working on complex features
+
+- Multiple developers are contributing
+
+- You want to review changes before merging
+
+- You anticipate merge conflicts
+
+- Working on critical production code
+
+### Use `git pull` when:
+
+- Working alone on a simple project
+
+- You're sure remote changes won't conflict
+
+- You want a quick sync with remote
+
+- Working on non-critical features
+
+## How They Work
+
+### `git pull` = `git fetch` + `git merge`
+
+- Automatically brings down remote changes
+
+- Immediately merges them into your local branch
+
+- Can create unexpected merge conflicts
+
+### `git fetch` + manual merge
+
+1. `git fetch` downloads remote changes
+
+2. `git diff` lets you review changes
+
+3. `git merge origin/branch` merges when ready
+
+## ****
+
+## Step-by-Step Examples
+
+### `git pull` Example
+
+```bash
+# Simple update of local branch
+git checkout main
+git pull origin main
+```
+
+### `git fetch` Example
+
+```bash
+# Safer approach for team environments
+git fetch origin  # Download changes
+git diff origin/main  # Review changes
+git merge origin/main  # Merge when ready
+```
+
+****
+
+## Best Practices
+
+1. **Default to fetch-first workflow** - Especially in team environments
+
+2. **Review before merging** - Always check what you're merging
+
+3. **Use pull for simple updates** - When you're certain of no conflicts
+
+4. **Clean working directory** - Stash or commit changes before both operations
+
+## Handling Diverged Branches
+
+When you see
+
+```bash
+Your branch and 'origin/main' have diverged,
+and have 1 and 1 different commits each, respectively.
+```
+
+
+
+Recommended approach:
+
+```bash
+git fetch  # Get latest changes
+git log --all --graph --oneline  # Visualize differences
+git merge origin/main  # Merge remote changes
+# OR for cleaner history:
+git rebase origin/main  # Replay your commits on top
+```
+
+****
+
+## Common Scenarios
+
+### Scenario 1: Safe Update
+
+```bash
+git fetch
+git merge origin/main
+```
+
+### Scenario 2: Conflict Resolution
+
+```bash
+git fetch
+git diff origin/main  # Identify conflicts
+# Manually resolve conflicts in files
+git add .
+git commit -m "Resolved merge conflicts"
+```
+
+### Scenario 3: Quick Sync
+
+```bash
+git pull  # Only when you're sure of no issues
+```
+
+****
+
+## Resources
+
+* [Git - git-pull Documentation](https://git-scm.com/docs/git-pull)
+
+* [Git - git-push Documentation](https://git-scm.com/docs/git-push)
+
+
+
+
+
 ---
 
 ## Video Lesson Speech

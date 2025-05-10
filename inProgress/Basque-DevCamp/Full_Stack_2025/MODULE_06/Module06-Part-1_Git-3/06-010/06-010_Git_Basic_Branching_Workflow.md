@@ -4,6 +4,228 @@
 
 ---
 
+1. Branching Fundamentals  
+2. Creating and Switching Branches  
+3. Making Changes in Branches  
+4. Merging Branches  
+5. Branch Management  
+6. Real-World Workflow  
+7. Best Practices  
+
+---
+
+## Branching Fundamentals
+
+### What is a Branch?
+
+- Independent line of development
+- Isolates work from main codebase
+- Allows parallel development
+
+### Key Commands:
+
+```bash
+#List all local branches
+
+git branch
+
+# Create and switch to new branch
+
+git checkout -b new-feature
+
+# Switch between branches
+
+git checkout branch-name
+```
+
+****
+
+## Creating and Switching Branches
+
+### Create a Feature Branch
+
+```bash
+git checkout -b readme-updates
+```
+
+### Verify Current Branch
+
+```bash
+git branch
+# Output shows current branch with *
+```
+
+### Switch Back to Main
+
+```bash
+git checkout main
+```
+
+****
+
+## Making Changes in Branches
+
+1. Make your changes
+   
+   ```bash
+   echo "New feature content" >> README.md
+   ```
+
+2. Stage and commit
+   
+   ```bash
+   git add .
+   git commit -m "Added new feature to README"
+   ```
+
+3. Verify changes are isolated
+   
+   ```bash
+   git checkout main
+   # README changes won't be visible here
+   ```
+
+****
+
+## Merging Branches
+
+### Merge Feature into Main
+
+```bash
+# Switch to target branch (main)
+git checkout main
+
+# Merge feature branch
+git merge readme-updates
+```
+
+### Merge Output Types:
+
+- **Fast-forward**: Linear history
+
+- **Merge commit**: Creates new commit
+
+- **Conflict**: Requires manual resolution
+
+****
+
+## Branch Management
+
+### View All Branches
+
+```bash
+git branch -a  # Shows local and remote
+```
+
+### Delete Merged Branches
+
+```bash
+git branch -d readme-updates
+```
+
+### Force Delete (unmerged)
+
+```bash
+git branch -D experimental-feature
+```
+
+****
+
+## Real-World Workflow
+
+### Standard Process:
+
+1. Start from updated main
+   
+   ```bash
+   git checkout main
+   git pull origin main
+   ```
+
+2. Create Feature branch
+   
+   ```bash
+   git checkout -b feature/new-login
+   ```
+
+3. Develop it and commit
+   
+   ```bash
+   git add .
+   git commit -m "Implemented new login UI"
+   ```
+
+4. Merge back to main
+   
+   ```bash
+   git checkout main
+   git merge feature/new-login
+   ```
+
+5. Push Changes
+   
+   ```bash
+   git push origin main
+   ```
+
+****
+
+## Best Practices
+
+1. **Branch Naming**
+   
+   - Use descriptive names: `feature/new-header`
+   
+   - Prefix with type: `fix/login-bug`, `docs/readme-update`
+
+2. **Branch Hygiene**
+   
+   ```bash
+   # Regularly delete merged branches
+   
+   git fetch --prune
+   ```
+
+3. **Merge Strategies**
+   
+   ```bash
+   # For clean history
+   
+   git merge --no-ff feature-branch
+   ```
+
+4. **Branch Protection**
+   
+   ```bash
+   # Never work directly on main
+   
+   git config --global init.defaultBranch main
+   ```
+
+****
+
+## Key Takeaways
+
+1. Branches isolate work until ready
+
+2. `checkout -b` creates and switches
+
+3. Merge brings changes into main
+
+4. Delete branches after merging
+
+5. Always start from updated main
+
+```bash
+# Quick Reference
+
+git branch -a                  # View branches
+git checkout -b new-feature    # Create branch
+git checkout main              # Switch branch
+git merge feature-branch       # Merge changes
+git branch -d feature-branch   # Delete branch
+```
+
 ****
 
 ## Video Lesson Speech

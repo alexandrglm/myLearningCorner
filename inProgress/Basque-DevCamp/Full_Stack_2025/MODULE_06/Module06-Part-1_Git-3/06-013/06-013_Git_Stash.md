@@ -4,7 +4,150 @@
 
 ---
 
+## What is Git Stash?
+
+Git stash 
+temporarily shelves (or "stashes") changes you've made to your working 
+copy so you can work on something else, and then come back and re-apply 
+them later.
+
+## When to Use Stash
+
+- When you need to quickly switch branches but aren't ready to commit
+
+- To save work-in-progress before pulling latest changes
+
+- When you need to temporarily set aside changes to handle urgent tasks
+
+## Basic Workflow
+
+1. Make changes in your working directory
+
+2. Stash them when you need to switch contexts
+   
+   ```bash
+   git stash
+   ```
+
+3. Work on other tasks/branches
+
+4. Return and reapply your stashed changes
+   
+   ```bash
+   git stash apply
+   ```
+
+****
+
+## Key Commands
+
+### Stashing Changes
+
+```bash
+git stash                  # Stash all tracked files
+git stash -u               # Stash including untracked files
+git stash -m "message"     # Stash with custom message
+```
+
+
+
+### Viewing Stashes
+
+```bash
+git stash list             # List all stashes
+git stash show             # Show changes in latest stash
+git stash show stash@{1}   # Show specific stash
+```
+
+
+
+### Applying Stashes
+
+```bash
+git stash apply            # Apply latest stash
+git stash apply stash@{1}  # Apply specific stash
+git stash pop              # Apply and remove latest stash
+```
+
+### Cleaning Up
+
+```bash
+git stash drop             # Remove latest stash
+git stash drop stash@{1}   # Remove specific stash
+git stash clear            # Remove all stashes
+```
+
+## Practical Example
+
+1. Make changes on a feature branch
+   
+   ```bash
+   git checkout -b feature-branch
+   # Make some changes
+   ```
+2. Need to switch to master urgently
+   
+   ```bash
+   git stash
+   git checkout master
+   # Fix urgent issue
+   git commit -m "Emergency fix"
+   ```
+3. Return to feature branch
+   
+   ```bash
+   git checkout feature-branch
+   git stash apply
+   ```
+4. Clean up when done
+   
+   ```bash
+   git stash drop
+   ```
+
 ---
+
+## Important Notes
+
+- Stashes are local to your repository (not pushed to remote)
+
+- Stashes apply to all branches (not branch-specific)
+
+- Multiple stashes are stored in a stack (LIFO - Last In First Out)
+
+- Always check `git stash list` if you think you have stashed changes
+
+- Clear old stashes to avoid confusion (`git stash clear`)
+
+## Best Practices
+
+1. Use descriptive messages when stashing (`git stash -m "WIP: authentication feature"`)
+
+2. Apply stashes to the correct branch
+
+3. Clean up stashes you no longer need
+
+4. Consider committing instead if the changes are significant
+
+5. Use `git stash -u` to include untracked files if needed
+
+## Common Use Cases
+
+- Quickly switching contexts to handle urgent bugs
+
+- Saving state before pulling latest changes
+
+- Temporarily removing changes to test something
+
+- Moving changes between branches (though rebase is often better)
+
+****
+
+## Resources
+
+* [Git - git-stash Documentation](https://git-scm.com/docs/git-stash)
+
+****
 
 ## Video Lesson Speech
 

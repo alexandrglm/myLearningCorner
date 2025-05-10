@@ -1,8 +1,186 @@
 # MODULE 06-007:    Git (3)
 
-### Pull
+## Pull
 
 ****
+
+`git pull` is a combination of two commands:
+
+1. `git fetch` - Downloads latest changes from remote
+
+2. `git merge` - Merges changes into your local branch
+
+Basic syntax:
+
+```bash
+git pull origin main
+```
+
+****
+
+## Team Collaboration Workflow
+
+### Standard Process
+
+1. Team member pushes changes to remote
+
+2. You pull changes before starting work
+
+3. Resolve any conflicts
+
+4. Continue development
+
+5. Push your changes
+
+### Why Pull First?
+
+- Avoids merge conflicts
+
+- Ensures you're working with latest code
+
+- Maintains project history integrity
+
+---
+
+## Step-by-Step Pull Process
+
+1. Check current status:
+   
+   ```bash
+   git status
+   ```
+
+2. Pull latest changes:
+   
+   ```bash
+   git pull origin main
+   ```
+
+3. Verify updates:
+   
+   ```bash
+   git log --oneline -n 3
+   ```
+
+4. Check file changes:
+   
+   ```bash
+   git diff HEAD~1
+   ```
+
+****
+
+---
+
+## Handling Remote Changes
+
+### Scenario: Remote Changes Exist
+
+```bash
+$ git pull
+
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0)
+Unpacking objects: 100% (3/3), done.
+
+From github.com:user/repo
+   1a2b3c4..5d6e7f8  main     -> origin/main
+
+Updating 1a2b3c4..5d6e7f8
+
+Fast-forward
+ my_file.py | 2 ++
+ 1 file changed, 2 insertions(+)
+```
+
+****
+
+### Conflict Resolution:
+
+1. Pull reveals conflicts
+
+2. Open conflicted files
+
+3. Manually resolve (keep/discard changes)
+
+4. Mark as resolved:
+   
+   ```bash
+   git add .
+   
+   git commit -m "Resolved merge conflicts"
+   ```
+
+****
+
+## Best Practices
+
+1. **Pull Before You Push**
+   
+   ```bash
+   # Always pull before pushing
+   
+   git pull && git push
+   ```
+
+2. **Regular Sync**
+   
+   ```bash
+   # Pull every 1-2 hours during active development
+   
+   git pull origin main
+   ```
+
+3. **Branch Protection**
+   
+   ```bash
+   # Work on feature branches, not main
+   
+   git checkout -b feature/new-login
+   ```
+
+4. **Visual Diff Tools**
+   
+   ```bash
+   # Configure merge tool for easier conflict resolution
+   
+   git config --global merge.tool vscode
+   ```
+
+****
+
+## Common Scenarios
+
+### 1. Behind Remote Changes
+
+```bash
+# When remote has changes you don't have locally
+
+$ git status
+
+Your branch is behind 'origin/main' by 1 commit
+```
+
+### 2. Diverged Branches
+
+```bash
+# When you and remote both have new commits
+
+$ git status
+
+Your branch and 'origin/main' have diverged
+```
+
+### 3. Fast-Forward Merge
+
+```bash
+# When no local changes exist
+
+$ git pull
+
+Fast-forward
+```
 
 ****
 

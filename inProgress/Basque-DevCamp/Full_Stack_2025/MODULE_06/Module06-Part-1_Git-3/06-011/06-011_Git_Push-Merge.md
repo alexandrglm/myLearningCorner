@@ -4,6 +4,142 @@
 
 ---
 
+## Why Push?
+
+When you create a branch locally (e.g., `feature-branch`), it only exists, locally, on your machine. To collaborate or sinchronize your work, you need to **push** it to the remote.
+
+```bash
+git checkout -b feature-branch
+```
+
+#### Creates a new branch locally
+
+```bash
+git push -u origin feature-branch
+```
+
+Pushes the branch to the remote repository (`origin`) and sets upstream tracking.
+
+- `-u` (or `--set-upstream`) links your local branch to the remote one, so future pushes/pulls don’t need the branch name.
+
+After pushing, the branch will appear in GitHub under the branch dropdown.
+
+****
+
+## Making Changes
+
+Let’s simulate a code change:
+
+```python
+def hi_there():
+    print('Hello World')
+```
+
+```bash
+git status
+git add myfile.py
+git commit -m "Add hi_there function"
+git push
+```
+
+This pushes the commit to the `feature-branch`.
+
+****
+
+## Merging via GitHub (Pull Request)
+
+Once pushed, GitHub allows you to **create a Pull Request (PR)** to merge your branch into `main` or `master`.
+
+1. Navigate to your repo on GitHub.
+
+2. Click **"Compare & pull request"** next to your branch.
+
+3. Review the diff (changes).
+
+4. Add a PR title and description.
+
+5. Click **"Create pull request"**.
+
+
+
+If no conflicts, GitHub will show:
+
+> “This branch has no conflicts with the base branch.”
+
+6. Click **"Merge pull request"** → **"Confirm merge"**.
+
+Your branch is now merged into `main`.
+
+****
+
+## Merging Locally (Alternative)
+
+You can also merge branches locally:
+
+```bash
+git checkout main
+git pull origin main   # make sure main is up to date
+git merge feature-branch
+git push
+
+```
+
+This merges `feature-branch` into `main` and pushes the updated `main` to GitHub.
+
+****
+
+## Viewing Branches
+
+List local branches:
+
+```bash
+git branch
+```
+
+List remore branches:
+
+```bash
+git brach -r
+```
+
+View all:
+
+```bash
+git brach -a
+```
+
+You can switch to any branch:
+
+```bash
+git checkout branch-name
+```
+
+Or, with Git 2.23+:
+
+```bash
+git switch branch-name
+```
+
+****
+
+## Quick Recap
+
+| Action             | Command                                        |
+| ------------------ | ---------------------------------------------- |
+| Create branch      | `git checkout -b feature-branch`               |
+| Push branch        | `git push -u origin feature-branch`            |
+| Create PR (GitHub) | GitHub UI → "Compare & pull request"           |
+| Merge PR (GitHub)  | GitHub UI → "Merge pull request"               |
+| Merge locally      | `git checkout main → git merge feature-branch` |
+
+## Best Practices
+
+* Use **Pull Requests (PRs)** for code reviews and collaboration.
+
+* **You can delete branches on GitHub after merging** to keep things clean.
+
+* If working solo, merging locally or via GitHub are both valid.
+
 ****
 
 ## Video Lesson Speech

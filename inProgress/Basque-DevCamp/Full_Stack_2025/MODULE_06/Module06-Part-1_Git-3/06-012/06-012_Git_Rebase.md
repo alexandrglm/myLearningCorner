@@ -4,6 +4,126 @@
 
 ---
 
+Rebase is a Git command that **allows you to integrate changes from one 
+branch into another by moving or "replaying" your commits on top of 
+another branch's history**.
+
+
+
+Imagine this initial branch structure:
+
+```
+A---B---C---F---G (master)
+     \
+      D---E (feature)
+```
+
+After rebasing feature onto master:
+
+```
+A---B---C---F---G (master)
+                 \
+                  D'---E' (feature)
+```
+
+1. **Rewrites History**:
+   Rebasing creates new commits (notice the apostrophes on D' and E') - 
+   these are similar but not identical to the original commits
+
+2. **Linear History**: Results in a cleaner, linear project history
+
+3. **Golden Rule**: Never rebase commits that have been pushed to a shared repository
+
+
+
+****
+
+## When to Use Rebase
+
+- To incorporate the latest changes from main/master into your feature branch
+
+- To clean up a messy commit history before merging
+
+- When working on a local, private branch
+
+## When NOT to Use Rebase
+
+- On shared branches (branches others are working on)
+
+- On commits that have already been pushed to a shared remote
+
+****
+
+## How to use
+
+1. Create a feature branch and make changes:
+   
+   ```bash
+   git checkout -b feature-branch 
+   
+   # make changes
+   git add .
+   git commit -m "Feature work"
+   ```
+
+2. Meanwhile, main branch gets updates:
+   
+   ```bash
+   git checkout main
+   git pull
+   ```
+
+3. Rebase your feature branch onto main:
+   
+   ```bash
+   git checkout feature-branch
+   git rebase main
+   ```
+
+4. Resolve any conflicts that arise during rebase
+
+5. Continue development or push your changes (if working alone)
+
+## Common Commands
+
+- `git rebase <branch>`: Rebase current branch onto <branch>
+
+- `git rebase --continue`: Continue rebase after resolving conflicts
+
+- `git rebase --abort`: Abort rebase operation
+
+- `git rebase -i`: Interactive rebase (for editing commits)
+
+****
+
+## Important Notes
+
+- Rebasing changes commit SHAs, which can cause issues if others have based work on your original commits
+
+- The commit timestamps will reflect when the rebase occurred, not when the original changes were made
+
+- Always pull the latest changes before rebasing
+
+## Best Practices
+
+1. Only rebase local branches
+
+2. Communicate with your team if you need to rebase pushed branches
+
+3. Consider using `git merge` for shared branches
+
+4. Use interactive rebase (`-i`) to clean up commits before sharing
+
+ ****
+
+## Resources
+
+- [Git - git-rebase Documentation](https://git-scm.com/docs/git-rebase)
+
+- `git help rebase` for command line documentation
+
+
+
 ****
 
 ## Video Lesson Speech
