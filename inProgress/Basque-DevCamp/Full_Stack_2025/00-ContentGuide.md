@@ -544,8 +544,8 @@
 
 |     | #      | Type             | Tittle                                                      | Date       |
 | --- | ------ | ---------------- | ----------------------------------------------------------- | ---------- |
-| [ ] | 05-104 | Exercise         | Build out a Diner Menu using JavaScript                     | pending    |
-| [X] | 05-105 | Digital Literacy | Practical Ways to Use the Pomodoro Technique as a Developer | 2025-04-23 |
+| [X] | 05-104 | Exercise         | Build out a Diner Menu using JavaScript                     | 2025-05-05 |
+| [X] | 05-105 | Digital Literacy | Practical Ways to Use the Pomodoro Technique as a Developer | 2025-05-06 |
 
 ***
 

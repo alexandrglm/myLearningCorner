@@ -68,15 +68,15 @@
 
 ## Security Best Practices
 
-- Never commit sensitive data
+- Never commit sensitive data ( .env files, ./secrets, API keys, passwords, local PATHS, ...)
+  
+  > **Once committed, sensitive data remains in Git history - consider rewriting history if secrets are accidentally committed.**
 
 - Add .gitignore early in project setup
 
 - Review staged files (`git status`) before committing
 
 - Use environment variables for secrets
-
-> **Note**: Once committed, sensitive data remains in Git history - consider rewriting history if secrets are accidentally committed.
 
 ---
 
