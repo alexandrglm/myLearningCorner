@@ -595,13 +595,13 @@
 
 ### JavaScript 15: Browser Console and Developer Environment
 
-|     | #      | Type | Tittle                                                        | Date |
-| --- | ------ | ---- | ------------------------------------------------------------- | ---- |
-| [ ] | 06-106 |      | How to Run JavaScript Scripts in the Browser Console          |      |
-| [ ] | 06-107 |      | Comparison of Chrome's Command Line API vs Vanilla JavaScript |      |
-| [ ] | 06-108 |      | How to Process JavaScript from a File in the Browser          |      |
-| [ ] | 06-109 |      | How to Create Custom Code Snippets in VS Code                 |      |
-| [ ] | 06-110 |      | Speed Reading for Developers                                  |      |
+|     | #      | Type                                                  | Tittle                                                        | Date       |
+| --- | ------ | ----------------------------------------------------- | ------------------------------------------------------------- | ---------- |
+| [X] | 06-106 | JS Console Browser debugging                          | How to Run JavaScript Scripts in the Browser Console          | 2025-05-13 |
+| [X] | 06-107 | Console API's vs Vanilla JS                           | Comparison of Chrome's Command Line API vs Vanilla JavaScript | 2025-05-13 |
+| [X] | 06-108 | JS Embedded in HTML vs `<script src"./theScript.js">` | How to Process JavaScript from a File in the Browser          | 2025-05-13 |
+| [X] | 06-109 | VSCode Custom Code Snippets                           | How to Create Custom Code Snippets in VS Code                 | 2025-05-13 |
+| [X] | 06-110 | Digital Literacy                                      | Speed Reading for Developers                                  | 2025-05-13 |
 
 ### JavaScript 16:     DOM Fundamentals
 
