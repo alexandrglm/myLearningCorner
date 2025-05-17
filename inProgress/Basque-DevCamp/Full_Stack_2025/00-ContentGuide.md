@@ -608,7 +608,7 @@
 |     | #      | Type | Tittle                                                                 | Date       |
 | --- | ------ | ---- | ---------------------------------------------------------------------- | ---------- |
 | [X] | 06-111 |      | Overview of the DOM                                                    | 2025-05-13 |
-| [ ] | 06-112 |      | How to Add and Remove Classes in Vanilla JavaScript                    |            |
+| [X] | 06-112 |      | How to Add and Remove Classes in Vanilla JavaScript                    | 2025-05-17 |
 | [ ] | 06-113 |      | Differences Between the Window and Document for JavaScript Development |            |
 | [ ] | 06-114 |      | Overview of JavaScript Query Selectors                                 |            |
 | [ ] | 06-115 |      | Guide to JavaScript Event Listeners                                    |            |
