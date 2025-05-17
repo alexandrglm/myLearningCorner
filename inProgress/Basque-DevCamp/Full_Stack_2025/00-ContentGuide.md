@@ -605,16 +605,16 @@
 
 ### JavaScript 16:     DOM Fundamentals
 
-|     | #      | Type | Tittle                                                                 | Date       |
-| --- | ------ | ---- | ---------------------------------------------------------------------- | ---------- |
-| [X] | 06-111 |      | Overview of the DOM                                                    | 2025-05-13 |
-| [X] | 06-112 |      | How to Add and Remove Classes in Vanilla JavaScript                    | 2025-05-17 |
-| [ ] | 06-113 |      | Differences Between the Window and Document for JavaScript Development |            |
-| [ ] | 06-114 |      | Overview of JavaScript Query Selectors                                 |            |
-| [ ] | 06-115 |      | Guide to JavaScript Event Listeners                                    |            |
-| [ ] | 06-116 |      | Inline onclick vs addEventListener                                     |            |
-| [ ] | 06-117 |      | How to Add and Remove CSS Styles in Vanilla JavaScript                 |            |
-| [ ] | 06-118 |      | How to Use JavaScript's Toggle Function                                |            |
+|     | #      | Type                                                                                      | Tittle                                                                 | Date       |
+| --- | ------ | ----------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- | ---------- |
+| [X] | 06-111 |                                                                                           | Overview of the DOM                                                    | 2025-05-13 |
+| [X] | 06-112 | `classList.METHOD` as `.add()` - `.remove()` - `.toggle()` - `.contains()` - `.replace()` | How to Add and Remove Classes in Vanilla JavaScript                    | 2025-05-17 |
+| [X] | 06-113 | `window.METHOD` - `document.METHOD`                                                       | Differences Between the Window and Document for JavaScript Development | 2025-05-17 |
+| [X] | 06-114 | `document.querySelector` - `document.querySelectorAll`                                    | Overview of JavaScript Query Selectors                                 | 2025-05-17 |
+| [ ] | 06-115 |                                                                                           | Guide to JavaScript Event Listeners                                    |            |
+| [ ] | 06-116 |                                                                                           | Inline onclick vs addEventListener                                     |            |
+| [ ] | 06-117 |                                                                                           | How to Add and Remove CSS Styles in Vanilla JavaScript                 |            |
+| [ ] | 06-118 |                                                                                           | How to Use JavaScript's Toggle Function                                |            |
 
 ### JavaScript 17:         Applied JavaScript Features
 
