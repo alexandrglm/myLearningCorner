@@ -16,6 +16,8 @@
 
 ****
 
+
+
 ## 1.     Core Concepts
 
 Hotkeys (keyboard shortcuts) enhance user experience by providing quick access to 
@@ -257,10 +259,6 @@ document.querySelector('#searchBar').addEventListener('focus', () => {
 ## Resources
 
 * [KeyboardEvent - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent)
-
-
-
-
 
 ## Video Lesson Speech
 
