@@ -621,7 +621,7 @@
 |     | #      | Type                                                                                        | Tittle                                                              | Date       |
 | --- | ------ | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- | ---------- |
 | [X] | 06-119 | Exercise - `.innerHTML`,  `.enabled / .disabled` elements - `this` context outside a Class. | How to Build a Character Countdown Function in JavaScript           | 2025-05-19 |
-| [ ] | 06-120 |                                                                                             | Guide to Building Shared Behavior with JavaScript Functions         |            |
+| [X] | 06-120 | DRY - Reusable functions                                                                    | Guide to Building Shared Behavior with JavaScript Functions         | 2025-05-19 |
 | [ ] | 06-121 |                                                                                             | How to Add Hot Keys to a Web Application in Vanilla JavaScript      |            |
 | [ ] | 06-122 |                                                                                             | How to Dynamically Create HTML Elements with JavaScript             |            |
 | [ ] | 06-123 |                                                                                             | Course Checkpoint 11                                                |            |
