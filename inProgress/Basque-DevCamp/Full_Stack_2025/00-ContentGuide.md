@@ -605,16 +605,16 @@
 
 ### JavaScript 16:     DOM Fundamentals
 
-|     | #      | Type                                                                                       | Tittle                                                                 | Date       |
-| --- | ------ | ------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------- | ---------- |
-| [X] | 06-111 |                                                                                            | Overview of the DOM                                                    | 2025-05-13 |
-| [X] | 06-112 | `classList.METHOD` as `.add()` - `.remove()` - `.toggle()` - `.contains()` - `.replace()`  | How to Add and Remove Classes in Vanilla JavaScript                    | 2025-05-17 |
-| [X] | 06-113 | `window.METHOD` - `document.METHOD`                                                        | Differences Between the Window and Document for JavaScript Development | 2025-05-17 |
-| [X] | 06-114 | `document.querySelector` - `document.querySelectorAll`                                     | Overview of JavaScript Query Selectors                                 | 2025-05-17 |
-| [X] | 06-115 | `addEvenetListener'`                                                                       | Guide to JavaScript Event Listeners                                    | 2025-05-18 |
-| [X] | 06-116 | `document.onclick` vs `addEventListener`                                                   | Inline onclick vs addEventListener                                     | 2025-05-18 |
-| [X] | 06-117 | `${theVar}.style.${theStyle}` - `.style.cssText = 'the entire css attr with ; at the end'` | How to Add and Remove CSS Styles in Vanilla JavaScript                 | 2025-05-18 |
-| [ ] | 06-118 |                                                                                            | How to Use JavaScript's Toggle Function                                |            |
+|     | #      | Type                                                                                                                                         | Tittle                                                                 | Date       |
+| --- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- | ---------- |
+| [X] | 06-111 |                                                                                                                                              | Overview of the DOM                                                    | 2025-05-13 |
+| [X] | 06-112 | `classList.METHOD` as `.add()` - `.remove()` - `.toggle()` - `.contains()` - `.replace()`                                                    | How to Add and Remove Classes in Vanilla JavaScript                    | 2025-05-17 |
+| [X] | 06-113 | `window.METHOD` - `document.METHOD`                                                                                                          | Differences Between the Window and Document for JavaScript Development | 2025-05-17 |
+| [X] | 06-114 | `document.querySelector` - `document.querySelectorAll`                                                                                       | Overview of JavaScript Query Selectors                                 | 2025-05-17 |
+| [X] | 06-115 | `addEvenetListener'`                                                                                                                         | Guide to JavaScript Event Listeners                                    | 2025-05-18 |
+| [X] | 06-116 | `document.onclick` vs `addEventListener`                                                                                                     | Inline onclick vs addEventListener                                     | 2025-05-18 |
+| [X] | 06-117 | `${theVar}.style.${theStyle}` - `.style.cssText = 'the entire css attr with ; at the end'`                                                   | How to Add and Remove CSS Styles in Vanilla JavaScript                 | 2025-05-18 |
+| [X] | 06-118 | `const btn = document.getElementByClassName('theButton');` - `btn.addEventListerner('click', (e) => { heading.classList.toggle('hidden') })` | How to Use JavaScript's Toggle Function                                | 2025-08-19 |
 
 ### JavaScript 17:         Applied JavaScript Features
 

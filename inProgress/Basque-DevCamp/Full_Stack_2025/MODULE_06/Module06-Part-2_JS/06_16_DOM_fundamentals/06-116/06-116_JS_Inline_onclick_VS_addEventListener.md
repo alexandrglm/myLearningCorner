@@ -1,4 +1,4 @@
-# Module 06 - 115:     DOM Fundamentals
+# Module 06-116:     DOM Fundamentals
 
 ## Inline `onclick` VS `addEventListener`
 
@@ -20,13 +20,9 @@
 
 Event handling in JavaScript can be done through:
 
-  
-
 - **Inline event handlers**: HTML attribute-based (`onclick`, `onmouseover`, etc.)
 
 - **DOM event listeners**: Programmatic attachment (`addEventListener`)
-
-
 
 While both methods achieve the same end result, `addEventListener` provides a more robust and maintainable approach to event handling in modern web applications.
 
@@ -200,7 +196,7 @@ So this is going to be listening for anything inside. So right here it's going t
 
 But right now and when it comes to working with inline event listeners I can just say I want to find the on Click event for this button and whenever that occurs I want to call our render date function so if i save this and refreshed the page you can see that I have a button here called Click for date and if I click on it you can see that this works perfectly. 
 
-![large](./06-115_IMG1.png)
+![large](./06-116_IMG1.png)
 
 It tells me that it's Thursday, March 1st and if I click it again it will just keep on refreshing so that is working very nicely. So this is how you can use an onclick event handler but place it in the line. 
 
@@ -208,7 +204,7 @@ Now I'm going to comment this out and now we're going to walk through the way we
 
 I'm gonna comment out our render date function here and now you come down and we already have our date element so I know that I have access to the date and that's how we're going to set it. But now I need to first find the button and that's what the key difference is and that's one of the key elements I want you to take away from this guide is that whenever you're using an onclick handler like we're doing right here.
 
-![large](./06-115_IMG2.png)
+![large](./06-116_IMG2.png)
 
 What this is going to do as it's going to make it possible for us to simply pass in the name of the function and call it. Whenever you're using an event listener you need to first find the button and then you can go and grab the elements that you want to work with. So let's come up to the top just so we keep our variables in the same spot and I'll say const and then dateBtn set this equal to document.getElementById and then we need to pass in an ID and we can call this anything that we want so I'm going to create a button go up top and pass in an ID and I'll just call it the same name it's perfectly fine to do that. 
 
@@ -216,7 +212,7 @@ Now I can create a button here that says click for date. And then pass it in the
 
 So I'll pass in event and then we'll use an arrow function and now inside of it we're going to do exactly like what we did above. So I can say a dateElement.inner HTML and then set that equal to date. So if I hit save here and refresh we should have the exact same behavior as before. And if I run it again you can see that that is working perfectly. 
 
-![large](./06-115_IMG3.png)
+![large](./06-116_IMG3.png)
 
 So those are two different ways of performing the same task. In our first approach, we set up an onclick listener directly on the element which means that we didn't have to query that element whatsoever we were simply able to say on click and then call a function. In the second option, we had a couple more steps so we had to first create and add a button here that had an ID. Then we had to go and find it and you don't have to use an ID you could use a class and then you simply would have to iterate over that class. But in this case, we only had a single button so it is fine to use an ID, and then we had to query it, and then we sent the addEventListener so we set our click handler on top of that. 
 
