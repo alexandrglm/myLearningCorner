@@ -45,18 +45,16 @@ component by encapsulating functionality in a JavaScript function.
 msgInput.onkeyup = function () {
 
     console.log(this.value)
-    
+
     msgCounter.innerHTML = maxValue -this.value.length
 
     if ( !getCurrentContentLength( this.value, ( maxValue -1) )) {
 
         msgInput.disabled = true;
-    
+
     }
 }
 ```
-
-
 
 ### Reusable Function Implementation
 
@@ -64,15 +62,15 @@ msgInput.onkeyup = function () {
 const allInputsFieldLengthValidator = ( textField, counter, maxCount ) => {
 
     textField.onkeyup = function () {
-    
+
         console.log(this.value)
-        
+
         counter.innerHTML = maxCount - this.value.length;
-        
+
         if ( !getCurrentContentLength ( this.value, (maxCount - 1) )) {
 
             textField.disabled = true;
-        
+
         }
     }     
 
@@ -81,7 +79,6 @@ const allInputsFieldLengthValidator = ( textField, counter, maxCount ) => {
 
 allInputsFieldLengthValidator(msgInputOne, msgCounterOne, 144);
 allInputsFieldLengthValidator(msgInputTwo, msgCounterTwo, 20)
-
 ```
 
 ****
@@ -122,32 +119,30 @@ allInputsFieldLengthValidator(msgInputTwo, msgCounterTwo, 20)
 
 ```js
 const createCharacterCounter = (config) => {
-  
+
     const { input, counter, max, warningAt } = config;
-  
+
     input.addEventListener('input', function() {
 
         const remaining = max - this.value.length;
         counter.textContent = remaining;
-    
+
         if (remaining <= 0) {
             input.disabled = true;
             counter.classList.add('limit-reached');
-           
+
         } else if (warningAt && remaining <= warningAt) {
-      
+
             counter.classList.add('warning');
-    
+
         } else {
-          
+
             counter.classList.remove('limit-reached', 'warning');
-    
+
         }
     });
 }
 ```
-
-
 
 ### 2. Dynamic Field Registration
 
@@ -155,32 +150,28 @@ const createCharacterCounter = (config) => {
 function registerCharacterCounters() {
 
     document.querySelectorAll('[data-character-counter]').forEach(container => {
-    
+
         const input = container.querySelector('input, textarea');
         const counter = container.querySelector('.counter');
         const max = parseInt(container.dataset.max) || 144;
-    
+
         textFieldLengthValidator(input, counter, max);
     });
 }
 ```
-
-
 
 ### 3. Custom Events
 
 ```js
 // Inside validator function
 if ( !getCurrentContentLength( this.value, (maxCount - 1) )) {
-  
+
     textField.dispatchEvent(new CustomEvent('limitReached', {
         bubbles: true,
         detail: { max: maxCount }
   }));
 }
 ```
-
-
 
 ****
 
@@ -218,8 +209,6 @@ if ( !getCurrentContentLength( this.value, (maxCount - 1) )) {
 
 5. **Naming Collisions**: In global namespace
 
-
-
 ****
 
 ## References
@@ -229,10 +218,6 @@ if ( !getCurrentContentLength( this.value, (maxCount - 1) )) {
 * [Creating and triggering events - Event reference | MDN](https://developer.mozilla.org/en-US/docs/Web/Events/Creating_and_triggering_events)
 
 * https://javascript.info/event-delegation
-
-
-
-
 
 ****
 
@@ -331,7 +316,3 @@ If this looked weird to you if you are not used to building your programs like t
 </script>
 </html>
 ```
-
-
-
-
