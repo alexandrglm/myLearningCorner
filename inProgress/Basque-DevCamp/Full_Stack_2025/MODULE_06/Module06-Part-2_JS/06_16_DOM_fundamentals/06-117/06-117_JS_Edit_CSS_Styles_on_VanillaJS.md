@@ -1,4 +1,4 @@
-# Module 06 - 116:     DOM Fundamentals
+# Module 06 - 117:     DOM Fundamentals
 
 ## Editing CSS styles in VanillaJS
 
@@ -134,11 +134,11 @@ laptop.addEventListener('mouseleave', (e) => {
 
 And so if you want to come and look right now I have an image here and you can access this in the show notes as well. And this image, because it's part of the DOM, is a traditional element as you can see right here it's just a div. And so if I inspect this and look at the HTML code right here in the browser and I'll stretch this out it's a little bit easier to see. You can see it's just the same code that we hand right there. 
 
-![large](./06-116_IMG1.png)
+![large](./06-117_IMG1.png)
 
 Now because of that, we have access to add other elements so we have the ability to add other kinds of attributes such as styles. So if I come in here and add an inline style so if I say style equals border-right. Because that's what I'm going to show you how to do here in a second and say border-right ten pixels solid and red. If I run that you can see that we now have a border here on the right-hand side that is red. 
 
-![large](./06-116_IMG2.png)
+![large](./06-117_IMG2.png)
 
 And so because we have access to this element to this image element that means that we can apply these styles. And so because of that, that means that we can leverage javascript to do that. So what we're going to do is essentially just automatically do what I showed you manually right here. 
 
@@ -154,7 +154,7 @@ So I'm going to pass in the first argument which is mouseover and then I'm going
 
 Now if I come and hit refresh here and hover over you can see that it returns that image so that is giving us exactly what we're looking for. 
 
-![large](./06-116_IMG3.png)
+![large](./06-117_IMG3.png)
 
 But instead of just console logging it, we actually want to add our styles. So I'm gonna say e.target.style and then dot and this part may look a little bit tricky if you've never used this before. We can't use the same exact type of style calls so I can't do something like say border-bottom that wouldn't be syntactically accurate because function calls in JavaScript can't have a dash. And so there is an entire set of mappings between the style names and those properties and what you can do in JavaScript. 
 
@@ -166,13 +166,13 @@ e.target.style.borderRight = '40px solid red';
 
 So assuming that I don't have any typos at all, this should work. So hit clear here, come back hit refresh and now when I hover over that you can see our red border appears just like we want it to so that is perfect. 
 
-![large](./06-116_IMG4.png)
+![large](./06-117_IMG4.png)
 
 And as you may have guessed and as if you're following along as you may have already done we can add a pair to this so we can say because we have a mouseover we also want a mouseout and then everything here is going to be the same except I want to change the red to transparent hit save and I'm going explain in one second why I'm doing this.
 
 So if I hit refresh hover over the red borders there hover out and it's gone. And so that is working very well. 
 
-![large](./06-116_IMG5.png)
+![large](./06-117_IMG5.png)
 
 The reason why I am doing this instead of me just clearing out the border's style on the right-hand side it's because any time that I'm adding a border and so it's going to be potentially affecting other elements. So imagine that on the right-hand side here you had a body of text. If I just added this 40 pixels out of the blue then it would look very jagged because I would hover over and all the text would just slide to the right and it would not look very good or professional but by having it be transparent what that means is that it's going to just be completely invisible so those 40 pixels are there. 
 
@@ -180,7 +180,7 @@ And to do this properly and anyone following along who is a big CSS fan knows th
 
 And so if I hit save here and come and hit refresh now if I hover over this is all working properly. 
 
-![large](./06-116_IMG6.png)
+![large](./06-117_IMG6.png)
 
 Now technically nothing looks different but if you had this inside of a blog or some type of web site then you will be very happy that you did it this way because what we're essentially doing is we are reserving the space right here. So all of this space on the right-hand side we're reserving this and then as soon as it gets hovered over all that's happening is it's not popping out even though that's what it looks like to the user it is simply changing the color from transparent to red. And so if you had content over on the right-hand side it wouldn't be pushed and it wouldn't be animated in an ugly jagged way. 
 
