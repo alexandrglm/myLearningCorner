@@ -40,8 +40,6 @@ This technique is especially crucial when working with:
 
 4. **State Management**: Maintains application state without refreshes
 
-
-
 ****
 
 ## 2.     DOM Manipulation Methods
@@ -86,13 +84,13 @@ function createMessage(content) {
   // 1. Create container
   const messageDiv = document.createElement('div');
   messageDiv.classList.add('chat-message');
-  
+
   // 2. Create content
   const textNode = document.createTextNode(content);
-  
+
   // 3. Assemble structure
   messageDiv.appendChild(textNode);
-  
+
   // 4. Insert into DOM
   const chatContainer = document.querySelector('.chat-container');
   chatContainer.insertBefore(messageDiv, chatContainer.firstChild);
@@ -115,8 +113,6 @@ const newElement = document.createElement('tagName');
 
 - Element exists in memory but not in document
 
-
-
 ### 4.2.     Attribute Configuration
 
 ```js
@@ -132,8 +128,6 @@ newElement.id = 'uniqueId';
 newElement.style.color = 'red';
 ```
 
-
-
 ### 4.3. Content Addition
 
 ```js
@@ -144,8 +138,6 @@ newElement.appendChild(textNode);
 // HTML content (use cautiously)
 newElement.innerHTML = '<strong>Bold text</strong>';
 ```
-
-
 
 ****
 
@@ -178,7 +170,7 @@ const fragment = document.createDocumentFragment();
 
 // Build complex structure in memory
 for (let i = 0; i < 100; i++) {
-  
+
     const item = document.createElement('div');
     fragment.appendChild(item);
 
@@ -226,8 +218,6 @@ container.appendChild(fragment);
 
 5. **Selector Performance**: Complex queries in loops
 
-
-
 ****
 
 ## References
@@ -241,8 +231,6 @@ container.appendChild(fragment);
 * [Avoid large, complex layouts and layout thrashing &nbsp;|&nbsp; Articles &nbsp;|&nbsp; web.dev](https://web.dev/articles/avoid-large-complex-layouts-and-layout-thrashing)
 
 * https://javascript.info/modifying-document
-
-
 
 ****
 
