@@ -8,8 +8,6 @@ Rebase is a Git command that **allows you to integrate changes from one
 branch into another by moving or "replaying" your commits on top of 
 another branch's history**.
 
-
-
 Imagine this initial branch structure:
 
 ```
@@ -33,8 +31,6 @@ A---B---C---F---G (master)
 2. **Linear History**: Results in a cleaner, linear project history
 
 3. **Golden Rule**: Never rebase commits that have been pushed to a shared repository
-
-
 
 ****
 
@@ -113,16 +109,14 @@ A---B---C---F---G (master)
 3. Consider using `git merge` for shared branches
 
 4. Use interactive rebase (`-i`) to clean up commits before sharing
-
- ****
+   
+   ****
 
 ## Resources
 
 - [Git - git-rebase Documentation](https://git-scm.com/docs/git-rebase)
 
 - `git help rebase` for command line documentation
-
-
 
 ****
 

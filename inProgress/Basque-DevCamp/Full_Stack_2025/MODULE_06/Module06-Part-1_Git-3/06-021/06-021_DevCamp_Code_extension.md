@@ -17,7 +17,7 @@ and yours right now assuming you haven't already gone through this video
 
 > Important Note: It's recommended to not install a large number of VS Code extensions at this stage, since they can have some side effects that could interfere with your projects.
 
-![large](https://images-devcamp.s3-us-west-2.amazonaws.com/Development+Environments/Code+Editor+Analytics/How+to+Install+the+devCamp+VS+Code+Extension+ID%3A+%232707/image11.png)
+![large](./06-021_IMG1.png)
 
 Over the next two guides I'm gonna show you how you can actually trigger this, and we're also gonna build a pretty cool little application. It's actually a pretty advanced application, so I'm not gonna have you worry about learning every little piece of it. I'm gonna give you the code, we're gonna walk through what it's doing but then as you go through the course it's gonna start to make more sense. I don't want you to worry or get intimidated about it right now. 
 
@@ -25,11 +25,11 @@ Instead, what I wanna do is first give you the ability to have all of this data 
 
 Because it's one thing as and this is something that I've noticed through the years in working with students is it's one thing to go through the material. But the students that really succeed, the students that get the great jobs and that go on to become great developers really spend a lot of time in their code editor. 
 
-So I wanted to build a tool that would allow you to visualize that and to track it because everything that you track improves. And so we're gonna start off in this guide with installing a extension that is going to connect to devCamp. And it's gonna connect with your visual studio code text editor with devCamp and it's gonna give activity levels here. And then in the next guide, I'm gonna help you build out an application where you can have your own little charting system that shows you your activity level. 
+So I wanted to build a tool that would allow you to visualize that and to track it because everything that you tra
 
-So let's get started. We're gonna start off inside of visual studio code here. Now I want you to go down into the extensions panel, click on that. And then in the extensions marketplace type in devCamp and then devCampVSC should pop up for you and then click install. 
+So let's get started. We're gonna start off inside of visual studio code here. Now I want you to go down into the extensions panel, click on that. And then in the extensions marketplace type 
 
-![large](https://images-devcamp.s3-us-west-2.amazonaws.com/Development+Environments/Code+Editor+Analytics/How+to+Install+the+devCamp+VS+Code+Extension+ID%3A+%232707/image12.png)
+![large](./06-021_IMG2.png)
 
 So this is gonna install it. And as you can see you have this little check mark that says devCamp down below here, 
 

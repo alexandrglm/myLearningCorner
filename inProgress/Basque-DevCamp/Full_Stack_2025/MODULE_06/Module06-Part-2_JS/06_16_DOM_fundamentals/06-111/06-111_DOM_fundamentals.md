@@ -67,8 +67,6 @@ document.body
 document.location.href
 ```
 
-
-
 ****
 
 ## 3.     Navigating the DOM
@@ -92,8 +90,6 @@ document.location.href
 - `.firstElementChild` - First child element
 
 - `.lastElementChild` - Last child element
-
-
 
 ****
 
@@ -121,8 +117,6 @@ document.location.href
 
 - `.style` - Access CSS styles
 
-
-
 ## 5.     DOM Manipulation Basics
 
 ### Accessing Elements
@@ -137,8 +131,6 @@ const topics = document.getElementsByClassName('topics');
 // Access nested elements
 const firstTopic = topics[0].children[0].textContent;
 ```
-
-
 
 ### Modifying Elements
 
@@ -176,8 +168,6 @@ const topicChildren = thirdTopic.children;
 const topicText = topicChildren[0].textContent;
 ```
 
-
-
 ### Example 2: Working with Document Location
 
 ```js
@@ -190,8 +180,6 @@ const protocol = document.location.protocol;
 // Get pathname
 const path = document.location.pathname;
 ```
-
-
 
 ### Example 3: Accessing Element Properties
 
@@ -218,8 +206,6 @@ const childCount = body.children.length;
 
 * https://dom.spec.whatwg.org/ + [GitHub - whatwg/dom: DOM Standard](https://github.com/whatwg/dom)
 
-
-
 ****
 
 ## Video Lesson Speech
@@ -237,7 +223,7 @@ I hope you paid attention then because now we are going to dive into how objects
 They can have an email address and then they can also have a list of items so I could say favorites and give some favorite restaurants like Chipotle and Chik-fil-a are two of my daughter's favorite restaurants. 
 
 ```js
-cost user = {
+const user = {
   name: 'Kristine',
   email: 'kristine@devcamp.com',
   favorites: [
@@ -396,5 +382,3 @@ You might have to do a bit of searching for this one, simply get the div below b
 ```js
 let challenge = //write your code here
 ```
-
-

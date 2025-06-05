@@ -70,22 +70,32 @@ Query selectors support full CSS selector syntax:
 ```js
 // ID selection
 document.querySelector('#main-header')
+// Would Return the entine html line
+<h1 id="main-header">Hi there!</h1>
 
 
 // Class selection
 document.querySelectorAll('.menu-item')
+// [object NodeList] (2)
+[<i/>,<p/>]
 
 
 // Attribute selection
 document.querySelector('[data-toggle="modal"]')
+// Would return
+<button data-toggle="modal" data-target="#myModal">OpenModa</button>
 
 
 // Complex combinations
 document.querySelectorAll('div.widget > h2.title')
+// [object NodeList] (1)
+[<h2/>]
+
 
 
 // Multiple selectors
 document.querySelectorAll('h1, h2, h3')
+v
 ```
 
 ---

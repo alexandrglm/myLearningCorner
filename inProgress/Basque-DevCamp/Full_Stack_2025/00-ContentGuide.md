@@ -582,12 +582,12 @@
 | [X] | 06-014 | `git fetch` - `git pull` | Difference Between Git Fetch and Git Pull                         | 2025-05-01 |
 | [X] | 06-015 |                          | How to Delete a Local and Remote Branch in Git                    | 2025-05-01 |
 | [X] | 06-016 |                          | A Step by Step Guide for How to Resolve Git Merge Conflicts       | 2025-05-01 |
-| [X] | 06-017 |                          | Reverting to the Latest Commit in Git                             | 2025-05-01 |
+| [X] | 06-017 | `git reset`              | Reverting to the Latest Commit in Git                             | 2025-05-01 |
 | [X] | 06-018 |                          | How to Revert a Single File to a Previous Version in Git          | 2025-05-01 |
-| [X] | 06-019 |                          | Guide to Viewing a Version Commit for a Git Project               | 2025-05-01 |
+| [X] | 06-019 | `git log`                | Guide to Viewing a Version Commit for a Git Project               | 2025-05-01 |
 | [X] | 06-020 |                          | How to Revert an Entire Project Back to a Previous Version in Git | 2025-05-01 |
 | [X] | 06-021 |                          | How to Install the devCamp VS Code Extension                      | 2025-05-01 |
-| [X] | 06-022 |                          | Building the Code Editor Activity Visualization Dashboard         |            |
+| [X] | 06-022 |                          | Building the Code Editor Activity Visualization Dashboard         | 2025-05-15 |
 
 ---
 
@@ -624,26 +624,26 @@
 | [X] | 06-120 | DRY - Reusable functions                                                                                                                    | Guide to Building Shared Behavior with JavaScript Functions         | 2025-05-19 |
 | [X] | 06-121 | `const hotKeys = (e) => {<br/>    const event = window.event ? window.event : e;<br/><br/>  if (event.keyCode === 66 && event.ctrlKey) { }` | How to Add Hot Keys to a Web Application in Vanilla JavaScript      | 2025-05-19 |
 | [X] | 06-122 |                                                                                                                                             | How to Dynamically Create HTML Elements with JavaScript             | 2025-05-19 |
-| [ ] | 06-123 |                                                                                                                                             | Course Checkpoint 11                                                |            |
-| [ ] | 06-124 |                                                                                                                                             | Guide to Removing HTML Elements with JavaScript                     |            |
-| [ ] | 06-125 |                                                                                                                                             | Project Requirements: Create and Remove Bullet Points Between Lists |            |
-| [ ] | 06-126 |                                                                                                                                             | Project Solution: Create and Remove Bullet Points Between Lists     |            |
+| [ ] | 06-123 |                                                                                                                                             | Course Checkpoint 11                                                | 2025-06-03 |
+| [X] | 06-124 |                                                                                                                                             | Guide to Removing HTML Elements with JavaScript                     | pending    |
+| [ ] | 06-125 |                                                                                                                                             | Project Requirements: Create and Remove Bullet Points Between Lists | pending    |
+| [ ] | 06-126 |                                                                                                                                             | Project Solution: Create and Remove Bullet Points Between Lists     | pending    |
 
 ### JavaScript 18:     Developer Tools and Console Utilities
 
-|     | #      | Type | Tittle                                                                                    | Date |
-| --- | ------ | ---- | ----------------------------------------------------------------------------------------- | ---- |
-| [ ] | 06-127 |      | Overview of the Dev Tool's Network Tab                                                    |      |
-| [ ] | 06-128 |      | Various Console Methods in JavaScript                                                     |      |
-| [ ] | 06-129 |      | How to Use the JavaScript Console's Copy Function to Scrape a Website                     |      |
-| [ ] | 06-130 |      | Create an Array Popper that Alternates Returning from Each Side of an Array in JavaScript |      |
-| [ ] | 06-131 |      | There is No Foo Bar                                                                       |      |
-| [ ] | 06-132 |      | Guide to RESTful Routing                                                                  |      |
-| [ ] | 06-133 |      | Create a Capitalize Function in JavaScript                                                |      |
+|     | #      | Type | Tittle                                                                                    | Date       |
+| --- | ------ | ---- | ----------------------------------------------------------------------------------------- | ---------- |
+| [X] | 06-127 |      | Overview of the Dev Tool's Network Tab                                                    | 2025-06-05 |
+| [X] | 06-128 |      | Various Console Methods in JavaScript                                                     | 2025-06-05 |
+| [X] | 06-129 |      | How to Use the JavaScript Console's Copy Function to Scrape a Website                     | 2025-06-05 |
+| [X] | 06-130 |      | Create an Array Popper that Alternates Returning from Each Side of an Array in JavaScript | 2025-06-05 |
+| [X] | 06-131 |      | There is No Foo Bar                                                                       | 2025-06-05 |
+| [X] | 06-132 |      | Guide to RESTful Routing                                                                  | 2025-06-05 |
+| [X] | 06-133 |      | Create a Capitalize Function in JavaScript                                                | 2025-06-05 |
 
 # MODULE 6 PART 3
 
-### UML (1):     Fundamentals
+### UML ( Part 1):     Fundamentals
 
 |     | #      | Type | Tittle                                          | Date |
 | --- | ------ | ---- | ----------------------------------------------- | ---- |
@@ -662,19 +662,73 @@
 
 # MODULE 7 PART 1
 
-## UML (ii)
+## UML (Part 2)
 
-```text
+|     | #      | Type | Tittle                                                          | Date |
+| --- | ------ | ---- | --------------------------------------------------------------- | ---- |
+| [ ] | 07-160 |      | Overview of UML Use Case Diagram Elements                       |      |
+| [ ] | 07-161 |      | Deep Dive: Build a Marketing Automation System Use Case Diagram |      |
+| [ ] | 07-162 |      | Use Case Diagrams                                               |      |
+| [ ] | 07-163 |      | Overview of the Elements of a UML Deployment Diagram            |      |
+| [ ] | 07-164 |      | Deep Dive: Build a Song Request Deployment Engine Diagram       |      |
+| [ ] | 07-165 |      | Deployment Diagrams                                             |      |
+| [ ] | 07-166 |      | Overview of UML Package Diagram Elements                        |      |
+| [ ] | 07-167 |      | Deep Dive: Build a Marketing Automation System Package Diagram  |      |
+| [ ] | 07-168 |      | Package Diagrams                                                |      |
+| [ ] | 07-169 |      | Overview of the Elements of a UML Sequence Diagram              |      |
+| [ ] | 07-170 |      | Deep Dive: Build a CRM Commission Engine Sequence Diagram       |      |
+| [ ] | 07-171 |      | Interaction Sequence Diagrams                                   |      |
+| [ ] | 07-172 |      | Overview of UML State Machine Diagram Elements                  |      |
+| [ ] | 07-173 |      | Deep Dive: Build a CRM State Machine Diagram                    |      |
+| [ ] | 07-174 |      | State Machine Diagrams                                          |      |
 
-```
+##### UML Projects
+
+|     | #      | Type | Tittle                                                       | Date |
+| --- | ------ | ---- | ------------------------------------------------------------ | ---- |
+| [ ] | 07-175 |      | The Importance of Systems Analysis and Design                |      |
+| [ ] | 07-176 |      | Overview of Software Systems                                 |      |
+| [ ] | 07-177 |      | Project One: Design Twitter System                           |      |
+| [ ] | 07-178 |      | Project Solution: Twitter Use Case Diagram                   |      |
+| [ ] | 07-179 |      | Project Solution: Twitter Class Diagram                      |      |
+| [ ] | 07-180 |      | Project Two: Design an Ecommerce Application                 |      |
+| [ ] | 07-181 |      | Project Solution: eCommerce Activity Diagram                 |      |
+| [ ] | 07-182 |      | Project Solution: eCommerce Class Diagram                    |      |
+| [ ] | 07-183 |      | Project Three: Model a Phone Parser Code Library             |      |
+| [ ] | 07-184 |      | Project Solution: Phone Parser Package Diagram               |      |
+| [ ] | 07-185 |      | Project Solution: Phone Parser Sequence Diagram              |      |
+| [ ] | 07-186 |      | Project 4: Design Enterprise Fleet Management System - P1    |      |
+| [ ] | 07-187 |      | Project 4: Design Enterprise Fleet Management System - P2    |      |
+| [ ] | 07-188 |      | Project Solution: Enterprise Activity Diagram                |      |
+| [ ] | 07-189 |      | Project Solution: Enterprise Package Diagram                 |      |
+| [ ] | 07-190 |      | Project Solution: Enterprise Deployment Diagram              |      |
+| [ ] | 07-191 |      | Project Solution: Enterprise Class Diagram                   |      |
+| [ ] | 07-192 |      | Project 5: Design the Uber Ride Sharing System               |      |
+| [ ] | 07-193 |      | Project Solution: Uber Activity Diagram                      |      |
+| [ ] | 07-194 |      | Project Solution: Uber Package Diagram                       |      |
+| [ ] | 07-195 |      | Project Solution: Uber Use Case Diagram                      |      |
+| [ ] | 07-196 |      | Project Solution: Uber Deployment Diagram                    |      |
+| [ ] | 07-197 |      | Project 6: Model an Education Assessment System              |      |
+| [ ] | 07-198 |      | Project Solution: Education Assessment Activity Diagram      |      |
+| [ ] | 07-199 |      | Project Solution: Education Assessment Class Diagram         |      |
+| [ ] | 07-200 |      | Project Solution: Education Assessment State Machine Diagram |      |
+| [ ] | 07-201 |      | Project Solution: Education Assessment Deployment Diagram    |      |
+| [ ] | 07-202 |      | Project 7: Design a Marketing Automation System - Part 1     |      |
+| [ ] | 07-203 |      | Project 7: Design a Marketing Automation System - Part 2     |      |
+| [ ] | 07-204 |      | Project Solution: Marketing System Use Case Diagram          |      |
+| [ ] | 07-205 |      | Project Solution: Marketing System Activity Diagram          |      |
+| [ ] | 07-206 |      | Project Solution: Marketing System Package Diagram           |      |
+| [ ] | 07-207 |      | Project Solution: Marketing System Deployment Diagram        |      |
+| [ ] | 07-208 |      | Project Solution: Marketing System State Machine Diagram     |      |
+| [ ] | 07-209 |      | Project Solution: Marketing System Class Diagram             |      |
+
+|     | #      | Type | Tittle               | Date |
+| --- | ------ | ---- | -------------------- | ---- |
+| [ ] | 07-210 |      | Course Checkpoint 13 |      |
 
 # MODULE 7 PART 2
 
 ## REACT (i)
-
-```text
-
-```
 
 ### Module 7 keypoints:
 
@@ -687,10 +741,6 @@
 
 ## REACT (ii)
 
-```text
-
-```
-
 ### Module 8 keypoints:
 
 * Advancing on React⚛️: Managing SCSS Styles. Variables integration. 
@@ -700,10 +750,6 @@
 # MODULE 9
 
 ## REACT (iii)
-
-```text
-
-```
 
 ### Module 9 keypoints:
 
@@ -715,10 +761,6 @@
 # MODULE 10
 
 ## REACT (iv)
-
-```text
-
-```
 
 ### Module 10 keypoints:
 
@@ -734,10 +776,6 @@
 # MODULE 11
 
 ## SQL
-
-```text
-
-```
 
 ### Module 10 keypoints:
 
