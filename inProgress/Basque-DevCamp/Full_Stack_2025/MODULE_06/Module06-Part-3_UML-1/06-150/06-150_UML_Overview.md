@@ -6,16 +6,12 @@
 
 # Objectives
 
-By the end of this course, you will:
+
 
 - Understand when and why to use UML in different development phases
 - Identify appropriate UML diagram types for specific development stages
 - Recognize the problem-solving benefits of UML modeling
 - Apply UML as a planning and communication tool
-
-
-
-
 
 ---
 

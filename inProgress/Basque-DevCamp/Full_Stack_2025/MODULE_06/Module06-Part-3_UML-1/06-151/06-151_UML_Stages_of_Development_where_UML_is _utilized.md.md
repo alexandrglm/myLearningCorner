@@ -4,35 +4,77 @@
 
 ---
 
-## Introduction: UML as a Problem-Solving Tool
+1. UML as a Problem-Solving Tool
+   
+   1. 2    Benefits of using UML
+
+2. Development LifeCycle vs UML Integration
+
+3. Development Phases vs Diagram types used
+   
+   1. Pre-Developing 
+      
+      A.    Activity Diagrams
+      
+      B.    Deployment Diagrams
+   
+   2. Active Developing
+      
+      C.    Class DIagrams
+      
+      D.    Use Case Diagrams
+   
+   3. Post-Development / Mainteinance    
+      
+      E.     Sequence Diagrams
+      
+      F.     Package Diagrams
+
+4. Strategic Application
+
+5. Tools, Books & Software
+
+----
+
+## 1.    UML as a Problem-Solving Tool
 
 UML (Unified Modeling Language) serves as more than just a documentation tool—it's a powerful problem-solving instrument that can transform how we approach software development.   
 
 Many developers feel intimidated when faced with building new applications or adding complex features to existing systems. UML provides a structured approach to break down these challenges into manageable, visual components.
 
-### Benefits of UML
+### 1.2.    Benefits of UML
 
 - **Visual Planning**: Model systems before writing code
+
 - **Risk Reduction**: Identify potential issues early
+
 - **Communication**: Bridge technical and non-technical stakeholders
+
 - **Organization**: Structure complex systems logically
+
 - **Efficiency**: Reduce development time through better planning
 
 - Reduce development time through better planning
+
 - Minimize costly architectural mistakes
+
 - Improve communication with stakeholders
+
 - Maintain code quality through visual organization
+
 - Facilitate team collaboration and onboarding
 
 The key is to view UML not as additional overhead, but as an investment in project success that pays dividends throughout the entire development process.
 
 ---
 
-## Development Lifecycle and UML Integration
+## 2.    Development Lifecycle and UML Integration
 
 UML diagrams can be strategically employed throughout the entire software development lifecycle. Each phase benefits from specific diagram types that address particular challenges and requirements.
 
-### Development Phases Overview:
+---
+
+## 3.    Development Phases Overview
 
 1. **Pre-Development Planning**
 2. **Active Development**
@@ -153,7 +195,7 @@ Defining different access levels for Admin, Manager, and Customer roles in a bus
 
 ---
 
-## Phase 3: Post-Development Maintenance
+## Phase 3: Post-Development / Maintenance
 
 ### Purpose
 
@@ -184,8 +226,6 @@ Understanding the message flow in a payment processing system to add new payment
 - Facilitates debugging of complex interactions
 - Documents system behavior for future reference
 
-
-
 ## F)    Package Diagrams
 
 ![Package Diagrams Example](./06-151_IMG6.png)
@@ -211,7 +251,7 @@ Analyzing a monolithic application to identify components that could be extracte
 
 ---
 
-## Strategic Application Guidelines
+## 4.     Strategic Application Guidelines
 
 ### Choosing the Right Diagram
 
@@ -269,11 +309,9 @@ While any UML diagram can technically be used at any development stage, strategi
 3. **Wrong Tool Selection**: Choose diagrams that address specific current needs
 4. **Isolation**: Don't create diagrams in a vacuum—collaborate with your team
 
-
-
 ---
 
-## References
+## 5.References
 
 ### Primary Sources
 
@@ -329,15 +367,15 @@ While any UML diagram can technically be used at any development stage, strategi
 
 ### Online Resources
 
-- **UML Tutorials Point**: [UML Tutorial](https://www.tutorialspoint.com/uml/)
+- **UML Tutorials Point**: [UML Tutorial](https://www.tutorialspoint.com/uml/index.htm)
 - **IBM Developer - UML Basics**: [IBM Developer](https://developer.ibm.com/articles/an-introduction-to-uml/)
-- **Martin Fowler's UML Resource**: [Uml Mode](https://martinfowler.com/bliki/UmlMode.html)
+- **LucidChart - ¿Qué es UML?**: [LucidChart](https://www.lucidchart.com/pages/es/que-es-el-lenguaje-unificado-de-modelado-uml)
 
 ### Academic Papers
 
-- **Störrle, H.** (2005). How are Conceptual Models Used in Industrial Software Development? A Descriptive Survey. *Proceedings of the 17th Workshop on Software Engineering*.
-- **Dobing, B., & Parsons, J.** (2006). How UML is used. *Communications of the ACM*, 49(5), 109-113.
-- **Reggio, G., Leotta, M., & Ricca, F.** (2014). Who knows/uses UML? A personal opinion survey. *International Conference on Model Driven Engineering Languages and Systems*.
+- [**Störrle, H.** (2005). How are Conceptual Models Used in Industrial Software Development? A Descriptive Survey. *Proceedings of the 17th Workshop on Software Engineering*.](https://www.researchgate.net/publication/317486480_How_are_Conceptual_Models_used_in_Industrial_Software_Development_A_Descriptive_Survey)
+- [**Dobing, B., & Parsons, J.** (2006). How UML is used. *Communications of the ACM*, 49(5), 109-113.](https://dl.acm.org/doi/10.1145/1125944.1125949)
+- [**Reggio, G., Leotta, M., & Ricca, F.** (2014). Who knows/uses UML? A personal opinion survey. *International Conference on Model Driven Engineering Languages and Systems*.](https://sepl.dibris.unige.it/publications/2014-reggio-MODELS.pdf)
 
 ### Standards and Specifications
 
