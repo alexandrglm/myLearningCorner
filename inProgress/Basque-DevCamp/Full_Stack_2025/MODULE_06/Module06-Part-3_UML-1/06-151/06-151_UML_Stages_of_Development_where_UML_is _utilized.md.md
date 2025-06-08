@@ -373,9 +373,9 @@ While any UML diagram can technically be used at any development stage, strategi
 
 ### Academic Papers
 
-- [**Störrle, H.** (2005). How are Conceptual Models Used in Industrial Software Development? A Descriptive Survey. *Proceedings of the 17th Workshop on Software Engineering*.](https://www.researchgate.net/publication/317486480_How_are_Conceptual_Models_used_in_Industrial_Software_Development_A_Descriptive_Survey)
-- [**Dobing, B., & Parsons, J.** (2006). How UML is used. *Communications of the ACM*, 49(5), 109-113.](https://dl.acm.org/doi/10.1145/1125944.1125949)
-- [**Reggio, G., Leotta, M., & Ricca, F.** (2014). Who knows/uses UML? A personal opinion survey. *International Conference on Model Driven Engineering Languages and Systems*.](https://sepl.dibris.unige.it/publications/2014-reggio-MODELS.pdf)
+- **Störrle, H.** (2005). How are Conceptual Models Used in Industrial Software Development? A Descriptive Survey. *Proceedings of the 17th Workshop on Software Engineering*.
+- **Dobing, B., & Parsons, J.** (2006). How UML is used. *Communications of the ACM*, 49(5), 109-113.
+- **Reggio, G., Leotta, M., & Ricca, F.** (2014). Who knows/uses UML? A personal opinion survey. *International Conference on Model Driven Engineering Languages and Systems*.
 
 ### Standards and Specifications
 
