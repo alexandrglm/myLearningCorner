@@ -9,7 +9,7 @@
 ## Video Lesson Speech
 
 We just finished going through an overview of UML, however, I don't think UML can really be appreciated until you think about when it can be used. Part of the reason I have created this course is because UML provides a great tool for problem solving. 
----
+
 Whenever you are approached with building an application or adding a new feature to a preexisting application, it might be a little bit of a daunting task that can intimidate developers and lead to procrastination. UML is a nice tool for stepping in and can help you get started because you can develop a plan to visualize your code and be able to model your systems before worrying about the actual code. when we talk about the stages where you can use UML, there is in my mind, a great opportunity before you touch any code to actually start building some diagrams. 
 
 ## Activity Diagram
@@ -49,6 +49,5 @@ Lastly, after the entire application has been built, UML can still play a very h
 In the final example, we will be using a Package Diagram. After the entire system has been built, there are times where I personally go look at the code base and see how I can organize it be more efficient or I want to decrease the coupling between different modules. I may take out one part of the entire application and turn it into an outside code library. To do that, I can use a Package Diagram to see how I'm organizing the entire code base. That also gives me a very high-level overview for every component in the system and allows me to make sure that I'm conforming to best practices. If I bring a new member to the team, I can show them that Package Diagram and they'll be able to see how the entire system is organized. 
 
 ![Package Diagramns](./06-151_IMG6.png)
-
 
 Those are just a few of the examples of the different types of diagrams we're going to go through in this course. Technically, each one of these diagrams could be used at each stage of a project's lifecycle. Part of going through this course and part of what my goals are is to impart to you is so that you can learn about each diagram and see when it's right for you to use it in your own applications. 
