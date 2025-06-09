@@ -1,0 +1,878 @@
+WEBVTT
+
+1
+00:00:00.380 --> 00:00:02.690
+<v ->Creo que esta guía será muy entretenida</v>
+
+2
+00:00:02.690 --> 00:00:06.080
+porque comenzaremos hablando
+
+3
+00:00:06.080 --> 00:00:08.960
+sobre cosas prácticas.
+
+4
+00:00:08.960 --> 00:00:10.522
+Hasta ahora hemos hablado de historias del usuario,
+
+5
+00:00:10.522 --> 00:00:13.325
+de encontrar los objetivos principales,
+
+6
+00:00:13.325 --> 00:00:16.675
+y en esta guía veremos algo
+
+7
+00:00:16.675 --> 00:00:19.856
+en lo que han trabajado y construido antes:
+
+8
+00:00:19.856 --> 00:00:23.309
+cómo construir un mapa del sitio web.
+
+9
+00:00:23.309 --> 00:00:26.610
+Veremos qué es un mapa del sitio web, algunos objetivos
+
+10
+00:00:26.610 --> 00:00:28.220
+que debemos tener en cuenta al construirlo,
+
+11
+00:00:28.220 --> 00:00:30.661
+cómo utilizarlo para traducirlo
+
+12
+00:00:30.661 --> 00:00:34.130
+a la construcción de la experiencia del usuario,
+
+13
+00:00:34.130 --> 00:00:36.263
+y cómo brindárselo a los desarrolladores
+
+14
+00:00:36.263 --> 00:00:38.350
+para que sepan qué ventanas deben crear.
+
+15
+00:00:38.350 --> 00:00:42.320
+<v ->Exacto, sí, entonces, el método</v>
+
+16
+00:00:42.320 --> 00:00:44.127
+que debes utilizar, o la aptitud mental
+
+17
+00:00:44.127 --> 00:00:46.919
+que debes adoptar cuando creas un mapa del sitio web
+
+18
+00:00:46.919 --> 00:00:50.600
+es que el mapa debe responder a las historias del usuario.
+
+19
+00:00:50.600 --> 00:00:52.270
+Entonces, creamos todas estas historias de usuarios,
+
+20
+00:00:52.270 --> 00:00:53.920
+y crearé un mapa del sitio web,
+
+21
+00:00:53.920 --> 00:00:56.650
+un mapa aparte, para cada usuario.
+
+22
+00:00:56.650 --> 00:01:00.923
+Luego, cada usuario, cualquiera sea su historia,
+
+23
+00:01:00.923 --> 00:01:04.440
+voy viéndolas, por ejemplo,
+
+24
+00:01:04.440 --> 00:01:07.420
+este dice que Jim debería poder recibir mensajes.
+
+25
+00:01:07.420 --> 00:01:09.740
+Entonces me tengo que asegurar
+
+26
+00:01:09.740 --> 00:01:11.240
+de que haya una página de mensajes.
+
+27
+00:01:11.240 --> 00:01:12.732
+Una vez que veo la página,
+
+28
+00:01:12.732 --> 00:01:14.243
+la creo en el mapa,
+
+29
+00:01:14.243 --> 00:01:17.250
+e indico las acciones principales
+
+30
+00:01:17.250 --> 00:01:18.990
+que suceden allí.
+
+31
+00:01:18.990 --> 00:01:20.350
+Si quieren ver
+
+32
+00:01:20.350 --> 00:01:22.890
+aquí tengo un ejemplo de mapa.
+
+33
+00:01:22.890 --> 00:01:26.680
+Este es para la aplicación JukeBox
+
+34
+00:01:26.680 --> 00:01:28.550
+con la que estarán trabajando.
+
+35
+00:01:28.550 --> 00:01:32.064
+El proveedor tendrá que elegir.
+
+36
+00:01:32.064 --> 00:01:34.290
+Las personas crearán sus mapas
+
+37
+00:01:34.290 --> 00:01:35.123
+de formas distintas.
+
+38
+00:01:35.123 --> 00:01:36.700
+Usarán diferentes programas.
+
+39
+00:01:36.700 --> 00:01:38.900
+Me gusta Lucid Chart
+
+40
+00:01:38.900 --> 00:01:40.410
+porque se puede trabajar en equipo,
+
+41
+00:01:40.410 --> 00:01:42.194
+muchas personas pueden participar.
+
+42
+00:01:42.194 --> 00:01:45.568
+Usamos Lucid Chart para crear estos mapas.
+
+43
+00:01:45.568 --> 00:01:48.920
+Luego hay que indica qué página es,
+
+44
+00:01:48.920 --> 00:01:50.140
+qué acciones están.
+
+45
+00:01:50.140 --> 00:01:52.392
+Esto depende del nivel de detalle.
+
+46
+00:01:52.392 --> 00:01:55.780
+Puedes pensar, bueno, tengo todas estas páginas.
+
+47
+00:01:55.780 --> 00:01:58.711
+Puedo hacer click en 15 cosas distintas de cada página.
+
+48
+00:01:58.711 --> 00:02:02.030
+Bien, pero no tienes que indicarlo
+
+49
+00:02:02.030 --> 00:02:03.054
+en cada página.
+
+50
+00:02:03.054 --> 00:02:05.820
+Eso es demasiado detallista y, en mi opinión,
+
+51
+00:02:05.820 --> 00:02:07.024
+no es muy productivo.
+
+52
+00:02:07.024 --> 00:02:08.631
+Porque técnicamente en un sitio web
+
+53
+00:02:08.631 --> 00:02:10.078
+o en una aplicación de escritorio,
+
+54
+00:02:10.078 --> 00:02:13.291
+puedes hacer click en el logo de la página
+
+55
+00:02:13.291 --> 00:02:14.590
+y te llevará al inicio.
+
+56
+00:02:14.590 --> 00:02:16.590
+Pero no necesito indicar esto
+
+57
+00:02:16.590 --> 00:02:18.443
+en cada página de mi mapa.
+
+58
+00:02:18.443 --> 00:02:22.660
+Entonces, aquí se puede ver que hay dos formas principales.
+
+59
+00:02:22.660 --> 00:02:24.510
+Vemos cuadrados y vemos diamantes.
+
+60
+00:02:24.510 --> 00:02:25.650
+Esto es algo mío, personal.
+
+61
+00:02:25.650 --> 00:02:28.470
+Obviamente o trabajas para una empresa
+
+62
+00:02:28.470 --> 00:02:30.417
+que ya tiene esto establecido,
+
+63
+00:02:30.417 --> 00:02:33.130
+o se te ocurrió a ti mismo.
+
+64
+00:02:33.130 --> 00:02:36.300
+Me gusta poner las páginas como rectángulos.
+
+65
+00:02:36.300 --> 00:02:40.105
+Me gusta también indicar acciones únicas,
+
+66
+00:02:40.105 --> 00:02:44.846
+como las acciones notables que resuelven las historias
+
+67
+00:02:44.846 --> 00:02:47.000
+de los usuarios están representadas por diamantes.
+
+68
+00:02:47.000 --> 00:02:49.651
+Al hacer click en uno de estos, se pueden ver
+
+69
+00:02:49.651 --> 00:02:51.890
+algunas de estas acciones que te llevan
+
+70
+00:02:51.890 --> 00:02:54.160
+a otras acciones o a otra pantalla.
+
+71
+00:02:54.160 --> 00:02:55.780
+Todo esto se puede indicar.
+
+72
+00:02:55.780 --> 00:02:58.490
+Al final, con lo que te debes quedar
+
+73
+00:03:00.015 --> 00:03:04.620
+es una foto de todas las páginas,
+
+74
+00:03:04.620 --> 00:03:07.150
+todas las pantallas necesarias, y las acciones principales
+
+75
+00:03:07.150 --> 00:03:10.350
+que se pueden tomar para dar
+
+76
+00:03:10.350 --> 00:03:14.174
+una idea clara de cómo resolver
+
+77
+00:03:14.174 --> 00:03:16.810
+todas las historias de ususarios
+
+78
+00:03:16.810 --> 00:03:18.300
+que ya has creado.
+
+79
+00:03:18.300 --> 00:03:21.480
+<v ->Es increíble. Es un gran ejemplo</v>
+
+80
+00:03:21.480 --> 00:03:25.057
+de un sistema que puede tener un mapa del sitio
+
+81
+00:03:25.057 --> 00:03:28.474
+y ver todas las pantallas necesarias
+
+82
+00:03:28.474 --> 00:03:32.860
+y cómo se tradujeron las historias de usuarios
+
+83
+00:03:32.860 --> 00:03:34.750
+a algo funcional que se puede usar.
+
+84
+00:03:34.750 --> 00:03:37.508
+Luego de crear el mapa del sitio web,
+
+85
+00:03:37.508 --> 00:03:41.300
+se habla con los usuarios
+
+86
+00:03:41.300 --> 00:03:42.150
+para obtener una devolución.
+
+87
+00:03:42.150 --> 00:03:44.330
+Obviamente estoy asumiendo al cliente,
+
+88
+00:03:44.330 --> 00:03:46.320
+o a cualquiera sea la persona.
+
+89
+00:03:46.320 --> 00:03:48.432
+¿Pero también se le lleva esto a los desarrolladores
+
+90
+00:03:48.432 --> 00:03:50.814
+o a las personas con las que te conectas?
+
+91
+00:03:50.814 --> 00:03:53.590
+<v ->Bueno, les llegará a los desarrolladores</v>
+
+92
+00:03:53.590 --> 00:03:55.880
+luego de que haya sido aprobado por el cliente o el dueño,
+
+93
+00:03:55.880 --> 00:03:57.223
+o el que lo maneje.
+
+94
+00:03:58.270 --> 00:04:01.440
+Estás trabajando con ellos para decir
+
+95
+00:04:01.440 --> 00:04:03.000
+bueno, hemos trabajado con las historias de usuario
+
+96
+00:04:03.000 --> 00:04:04.071
+para lograr esto.
+
+97
+00:04:04.071 --> 00:04:07.300
+Muchas veces con clientes
+
+98
+00:04:07.300 --> 00:04:08.620
+puedes ver cómo brilla,
+
+99
+00:04:08.620 --> 00:04:10.400
+ellos no ven
+
+100
+00:04:10.400 --> 00:04:12.693
+lo que se imaginaron.
+
+101
+00:04:14.220 --> 00:04:16.020
+Pero lo importante es que digas
+
+102
+00:04:16.020 --> 00:04:21.020
+bueno, aquí está la lista de historias para Jim.
+
+103
+00:04:21.418 --> 00:04:23.049
+Jim quiere poder enviar mensajes.
+
+104
+00:04:23.049 --> 00:04:24.940
+Aquí lo tiene.
+
+105
+00:04:24.940 --> 00:04:27.420
+Y aquí están las acciones
+
+106
+00:04:27.420 --> 00:04:29.000
+de las que hablamos en la guía anterior.
+
+107
+00:04:29.000 --> 00:04:29.960
+¿Qué podemos hacer?
+
+108
+00:04:29.960 --> 00:04:31.570
+Puede enviar un mensaje.
+
+109
+00:04:31.570 --> 00:04:32.640
+Recibir un mensaje.
+
+110
+00:04:32.640 --> 00:04:33.610
+Marcarlo.
+
+111
+00:04:33.610 --> 00:04:34.784
+Indiquemos eso.
+
+112
+00:04:34.784 --> 00:04:36.990
+¿Qué sucede luego de marcar un mensaje?
+
+113
+00:04:36.990 --> 00:04:38.480
+¿Va a otra pantalla?
+
+114
+00:04:38.480 --> 00:04:40.540
+¿Alguna pantalla de aprobación?
+
+115
+00:04:40.540 --> 00:04:41.730
+Podemos indicar eso.
+
+116
+00:04:41.730 --> 00:04:44.910
+Tenemos la pantalla de mensajes representada en el mapa.
+
+117
+00:04:44.910 --> 00:04:46.720
+Tenemos una acción.
+
+118
+00:04:46.720 --> 00:04:49.760
+Mensaje y contacto marcados.
+
+119
+00:04:49.760 --> 00:04:52.610
+Luego una flecha nos lleva
+
+120
+00:04:52.610 --> 00:04:55.310
+al contenido que marcamos.
+
+121
+00:04:55.310 --> 00:04:57.840
+Puedo representar eso.
+
+122
+00:04:57.840 --> 00:05:00.570
+Entonces cuando avanzo en el desarrollo
+
+123
+00:05:00.570 --> 00:05:02.623
+tengo una idea muy clara.
+
+124
+00:05:03.483 --> 00:05:06.700
+Es mucho mejor que las alternativas,
+
+125
+00:05:06.700 --> 00:05:09.750
+que toman notas y cosas así.
+
+126
+00:05:09.750 --> 00:05:11.877
+O incluso lo saltean.
+
+127
+00:05:11.877 --> 00:05:14.460
+A veces se puede hacer eso
+
+128
+00:05:14.460 --> 00:05:17.403
+y decir: "tengo mis historias, hagámoslo".
+
+129
+00:05:17.403 --> 00:05:21.180
+Esto ayuda a rellenar los espacios vacíos
+
+130
+00:05:21.180 --> 00:05:24.278
+para no volver sobre los diseños.
+
+131
+00:05:24.278 --> 00:05:28.067
+Como cuando te olvidas de hacer algo.
+
+132
+00:05:28.067 --> 00:05:29.764
+Y tienes que volver para atrás en los diseños.
+
+133
+00:05:29.764 --> 00:05:32.538
+El diseño es muy difícil de manipular.
+
+134
+00:05:32.538 --> 00:05:35.880
+Es mejor volver y agregar
+
+135
+00:05:36.953 --> 00:05:39.160
+rectángulos y diamantes.
+
+136
+00:05:39.160 --> 00:05:42.217
+Eso nos recuerda a cuando hablamos
+
+137
+00:05:42.217 --> 00:05:45.130
+de los accionistas y algunas experiencias
+
+138
+00:05:45.130 --> 00:05:48.990
+que he tenido sobre lo importante que es
+
+139
+00:05:48.990 --> 00:05:51.380
+tener este tipo de base para apoyarse.
+
+140
+00:05:51.380 --> 00:05:55.625
+Recuerdo que para un trabajo
+
+141
+00:05:55.625 --> 00:05:59.040
+tuve un cliente que no sabía del tema
+
+142
+00:05:59.040 --> 00:06:03.500
+y tuve que construir la mitad de la aplicación.
+
+143
+00:06:03.500 --> 00:06:08.410
+Lo gracioso es que creí que lo hacía bien,
+
+144
+00:06:08.410 --> 00:06:12.810
+porque el cliente no era técnico,
+
+145
+00:06:12.810 --> 00:06:16.240
+no había nada para señalar
+
+146
+00:06:16.240 --> 00:06:17.480
+que el pudiera entender.
+
+147
+00:06:17.480 --> 00:06:18.832
+No podía entender mi código.
+
+148
+00:06:18.832 --> 00:06:21.189
+La aplicación no estaba lista para prototipo.
+
+149
+00:06:21.189 --> 00:06:24.576
+Por eso en cada reunión
+
+150
+00:06:24.576 --> 00:06:28.600
+me preguntaba qué era cada cosa.
+
+151
+00:06:28.600 --> 00:06:31.850
+Quería ver el resultado.
+
+152
+00:06:31.850 --> 00:06:35.060
+Qué podía hacer cada usuario y qué no.
+
+153
+00:06:35.060 --> 00:06:38.040
+Entonces terminé haciendo algo así
+
+154
+00:06:38.040 --> 00:06:40.031
+a la mitad del proyecto.
+
+155
+00:06:40.031 --> 00:06:42.490
+Si lo hubiera hecho en el escenario correcto,
+
+156
+00:06:42.490 --> 00:06:44.870
+si no lo hubiera hecho al principio,
+
+157
+00:06:44.870 --> 00:06:46.276
+me habría ayudado en mi desarrollo.
+
+158
+00:06:46.276 --> 00:06:50.100
+Pero también habría ayudado al cliente
+
+159
+00:06:50.100 --> 00:06:51.670
+a entender el proceso
+
+160
+00:06:51.670 --> 00:06:52.743
+por el que estaba pasando.
+
+161
+00:06:52.743 --> 00:06:55.960
+<v ->Estamos hablando sobre</v>
+
+162
+00:06:55.960 --> 00:06:57.901
+con quién trabajar
+
+163
+00:06:57.901 --> 00:07:00.020
+y luego de que es aprobado por el cliente,
+
+164
+00:07:00.020 --> 00:07:01.798
+se debe trabajar en equipos.
+
+165
+00:07:01.798 --> 00:07:04.283
+Los líderes del equipo se lo llevan a los desarrolladores.
+
+166
+00:07:04.283 --> 00:07:08.198
+Sin importar qué tan interesado estás en mapas,
+
+167
+00:07:08.198 --> 00:07:12.160
+como desarrollador necesitas saber
+
+168
+00:07:12.160 --> 00:07:13.803
+y entender un mapa de sitio web.
+
+169
+00:07:13.803 --> 00:07:15.693
+No son tan complicados.
+
+170
+00:07:16.973 --> 00:07:19.250
+Eso depende de quién lo haga.
+
+171
+00:07:19.250 --> 00:07:21.300
+Yo los hago no muy complicados
+
+172
+00:07:21.300 --> 00:07:23.460
+porque sería pura maldad.
+
+173
+00:07:23.460 --> 00:07:27.956
+Pero es importante entenderlo
+
+174
+00:07:27.956 --> 00:07:31.071
+porque es un puente de comunicación
+
+175
+00:07:31.071 --> 00:07:35.569
+entre el creador y el desarrollador,
+
+176
+00:07:35.569 --> 00:07:39.490
+entonces todos los proyectos irán mejor.
+
+177
+00:07:39.490 --> 00:07:44.430
+Cuanto mejor entiendas el mapa
+
+178
+00:07:44.430 --> 00:07:45.990
+que se crea,
+
+179
+00:07:45.990 --> 00:07:48.000
+en el lado creativo,
+
+180
+00:07:48.000 --> 00:07:50.570
+más sustancial y más valorado serás
+
+181
+00:07:50.570 --> 00:07:52.700
+como desarrollador porque
+
+182
+00:07:52.700 --> 00:07:54.250
+no tendrás que revisarlo todo.
+
+183
+00:07:54.250 --> 00:07:55.210
+Verás fallas.
+
+184
+00:07:55.210 --> 00:07:56.626
+Todo lo que ya hemos hablado.
+
+185
+00:07:56.626 --> 00:07:58.450
+Lo harás mucho mejor
+
+186
+00:07:58.450 --> 00:07:59.930
+porque podrás
+
+187
+00:07:59.930 --> 00:08:03.430
+ver un panorama rápidamente y saber qué se quiere comunicar.
+
+188
+00:08:03.430 --> 00:08:06.120
+Totalmente, y algunas de las herramientas
+
+189
+00:08:06.120 --> 00:08:08.180
+que tenemos ahora,
+
+190
+00:08:08.180 --> 00:08:11.370
+y antes no teníamos, como Lucid Chart.
+
+191
+00:08:11.370 --> 00:08:13.150
+Algo que me gusta es que se puede ver
+
+192
+00:08:13.150 --> 00:08:18.040
+en el ejemplo, los espacios para comentaios.
+
+193
+00:08:18.040 --> 00:08:21.270
+Cuando yo trabajaba
+
+194
+00:08:21.270 --> 00:08:24.479
+con el equipo de diseño en un diagrama especifico
+
+195
+00:08:24.479 --> 00:08:27.047
+me preguntaban cosas como
+
+196
+00:08:27.047 --> 00:08:28.977
+¿ese tipo de funcionalidad
+
+197
+00:08:28.977 --> 00:08:30.436
+es lo que buscas ahí?
+
+198
+00:08:30.436 --> 00:08:32.320
+Cuando no entendían
+
+199
+00:08:32.320 --> 00:08:33.690
+con claridad.
+
+200
+00:08:33.690 --> 00:08:35.951
+Algo muy bueno es que
+
+201
+00:08:35.951 --> 00:08:38.920
+no solo sirven estas herramientas
+
+202
+00:08:38.920 --> 00:08:42.366
+para interacción,
+
+203
+00:08:42.366 --> 00:08:44.634
+sino también para colaboración
+
+204
+00:08:44.634 --> 00:08:46.590
+mientras se construye.
+
+205
+00:08:46.590 --> 00:08:48.296
+Puedes arreglar errores
+
+206
+00:08:48.296 --> 00:08:51.446
+desde el principio
+
+207
+00:08:51.446 --> 00:08:54.180
+al comunicarte con todos los usuarios.
+
+208
+00:08:54.180 --> 00:08:55.620
+Bien, como dijiste,
+
+209
+00:08:55.620 --> 00:08:58.247
+con Lucid Chart puedo hablar
+
+210
+00:08:58.247 --> 00:09:00.367
+con otros desarrolladores y preguntar
+
+211
+00:09:00.367 --> 00:09:01.756
+qué está pasando.
+
+212
+00:09:01.756 --> 00:09:03.327
+¿De dónde vino esto?
+
+213
+00:09:03.327 --> 00:09:04.160
+¿Qué es esto?
+
+214
+00:09:04.160 --> 00:09:07.350
+No tienes que revisar nada.
+
+215
+00:09:07.350 --> 00:09:09.880
+Vas y preguntas
+
+216
+00:09:09.880 --> 00:09:11.020
+rápidamente.
+
+217
+00:09:11.020 --> 00:09:12.560
+Es genial.
+
+218
+00:09:12.560 --> 00:09:16.293
+Es una guía de como programar
+
+219
+00:09:16.293 --> 00:09:19.203
+un mapa del sitio web para aplicaicones.
+

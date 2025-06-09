@@ -1,0 +1,1046 @@
+WEBVTT
+
+1
+00:00:00.960 --> 00:00:02.760
+<v Jordan>Espero que te hayas divertido construyendo ese</v>
+
+2
+00:00:02.760 --> 00:00:05.620
+proyecto y espero que hayas aprendido un poco sobre
+
+3
+00:00:05.620 --> 00:00:09.430
+CSS Grid y Flexbox y cómo pueden usarse
+
+4
+00:00:09.430 --> 00:00:12.010
+juntos para construir algunas
+
+5
+00:00:12.010 --> 00:00:15.000
+implementaciones potentes de front end.
+
+6
+00:00:15.000 --> 00:00:16.900
+Así que, ahora que has hecho eso,
+
+7
+00:00:16.900 --> 00:00:19.690
+quiero ver en los próximos vídeos
+
+8
+00:00:19.690 --> 00:00:22.217
+cómo yo personalmente he construido esto.
+
+9
+00:00:22.217 --> 00:00:25.090
+También voy a reconocer el mérito de Max,
+
+10
+00:00:25.090 --> 00:00:27.987
+uno de los otros profesores de Bottega,
+
+11
+00:00:27.987 --> 00:00:31.870
+oorque miró la implementación inicial
+
+12
+00:00:31.870 --> 00:00:34.630
+que hice y me dio algunas buenas recomendaciones
+
+13
+00:00:34.630 --> 00:00:38.440
+y también las incluiré en la solución.
+
+14
+00:00:38.440 --> 00:00:41.530
+Y eso algo que antes de continuar
+
+15
+00:00:41.530 --> 00:00:45.510
+quiero darte un consejo personal:
+
+16
+00:00:45.510 --> 00:00:48.560
+no importa cuánto tiempo hayas estado haciendo esto.
+
+17
+00:00:48.560 --> 00:00:52.350
+He estado construyendo sitios web y aplicaciones
+
+18
+00:00:52.350 --> 00:00:54.880
+más de 15 años y
+
+19
+00:00:54.880 --> 00:00:57.110
+nunca hay un momento
+
+20
+00:00:57.110 --> 00:00:59.450
+donde siento que lo sé todo
+
+21
+00:00:59.450 --> 00:01:03.100
+siempre llevo mis proyectos, los comparto con los demás.
+
+22
+00:01:03.100 --> 00:01:07.010
+Recibo sus opiniones sobre cómo lo harían personalmente
+
+23
+00:01:07.010 --> 00:01:10.470
+para implementar un diseño o una característica determinada
+
+24
+00:01:10.470 --> 00:01:13.796
+y nunca me sorprende que puedo
+
+25
+00:01:13.796 --> 00:01:17.860
+siempre aprender algo nuevo de alguien
+
+26
+00:01:17.860 --> 00:01:20.255
+y ni siquiera tiene que ser alguien que lo haya
+
+27
+00:01:20.255 --> 00:01:24.100
+estado haciendo más tiempo, o tenga más experiencia.
+
+28
+00:01:24.100 --> 00:01:26.610
+Un montón de veces aprendo
+
+29
+00:01:26.610 --> 00:01:29.000
+un nuevo método o un nuevo proceso de un estudiante
+
+30
+00:01:29.000 --> 00:01:31.900
+solo porque lo aprendieron antes que yo.
+
+31
+00:01:31.900 --> 00:01:34.730
+Así que asegúrate de tener siempre una mente abierta
+
+32
+00:01:34.730 --> 00:01:37.970
+siempre que estés aprendiendo algo.
+
+33
+00:01:37.970 --> 00:01:40.260
+Si está relacionado con la informática
+
+34
+00:01:40.260 --> 00:01:43.200
+y el desarrollo o realmente cualquier cosa.
+
+35
+00:01:43.200 --> 00:01:45.580
+Eso es algo que personalmente intento hacer.
+
+36
+00:01:45.580 --> 00:01:47.040
+Así que ahora haciendo dicho todo eso,
+
+37
+00:01:47.040 --> 00:01:49.990
+vamos a empezar a construir esta solución.
+
+38
+00:01:49.990 --> 00:01:53.215
+Vamos a empezar a construir la página de índice normal
+
+39
+00:01:53.215 --> 00:01:57.600
+y luego nos ocuparemos de la página de resultados.
+
+40
+00:01:57.600 --> 00:02:00.690
+Con lo que empiezo cuando estoy construyendo
+
+41
+00:02:00.690 --> 00:02:02.960
+cualquier tipo de implementación como esta,
+
+42
+00:02:02.960 --> 00:02:06.660
+así que esto comenzó originalmente con un diseño que
+
+43
+00:02:06.660 --> 00:02:09.104
+me mandó uno de los diseñadores de Bottega.
+
+44
+00:02:09.104 --> 00:02:12.360
+Les pedí una página de inicio de motor de búsqueda
+
+45
+00:02:12.360 --> 00:02:15.821
+y me dieron esto y así me mandaron el diseño
+
+46
+00:02:15.821 --> 00:02:20.640
+terminado y tuve que construirlo.
+
+47
+00:02:20.640 --> 00:02:23.060
+Así que lo primero que haré es,
+
+48
+00:02:23.060 --> 00:02:26.170
+no me importa hacer que sea bonito en absoluto.
+
+49
+00:02:26.170 --> 00:02:29.630
+Solo me importa poner todos los elementos en la página.
+
+50
+00:02:29.630 --> 00:02:31.360
+Así que ese es mi primer paso.
+
+51
+00:02:31.360 --> 00:02:33.294
+Así que sé que tengo un logotipo aquí.
+
+52
+00:02:33.294 --> 00:02:34.758
+Tengo esta entrada.
+
+53
+00:02:34.758 --> 00:02:38.650
+Tengo un presiona volver para buscar enlace aquí.
+
+54
+00:02:38.650 --> 00:02:41.900
+Y luego tengo estos otros elementos aquí
+
+55
+00:02:41.900 --> 00:02:44.042
+que realmente son...
+
+56
+00:02:44.042 --> 00:02:45.793
+podrían ser enlaces, pero
+
+57
+00:02:45.793 --> 00:02:48.130
+por ahora, solo estamos programando todo esto
+
+58
+00:02:48.130 --> 00:02:49.520
+así que en realidad no importa.
+
+59
+00:02:49.520 --> 00:02:52.740
+Solo algunos títulos con otro estilo.
+
+60
+00:02:52.740 --> 00:02:56.060
+No hay mucho en esta página, por lo que no debería
+
+61
+00:02:56.060 --> 00:03:00.380
+necesitar mucho trabajo para obtener todo esto construido.
+
+62
+00:03:00.380 --> 00:03:03.360
+Empecemos por ir a Visual Studio Code
+
+63
+00:03:03.360 --> 00:03:05.930
+y voy a empezar completamente desde cero.
+
+64
+00:03:05.930 --> 00:03:08.460
+No vamos a utilizar ningún marco como
+
+65
+00:03:08.460 --> 00:03:11.860
+Bootstrap o Materialize o nada por el estilo.
+
+66
+00:03:11.860 --> 00:03:15.050
+Podemos construir todo esto sin tener que hacer eso.
+
+67
+00:03:15.050 --> 00:03:18.030
+Ahora también una cosa más para ver al final de cada
+
+68
+00:03:18.030 --> 00:03:20.470
+uno de estos vídeos, voy a subir
+
+69
+00:03:20.470 --> 00:03:24.010
+un compromiso con este repositorio github para que puedas
+
+70
+00:03:24.010 --> 00:03:27.360
+acceder a todo el código fuente de este producto
+
+71
+00:03:27.360 --> 00:03:31.200
+para tenerlo de referencia más adelante si quieres.
+
+72
+00:03:31.200 --> 00:03:33.740
+Mantengo abierta la versión terminada
+
+73
+00:03:33.740 --> 00:03:36.980
+aquí y luego podemos hacer referencia a esto
+
+74
+00:03:36.980 --> 00:03:40.100
+cada vez que estemos construyendo nuestros propios estilos
+
+75
+00:03:40.100 --> 00:03:42.537
+pero vamos a empezar completamente desde cero.
+
+76
+00:03:42.537 --> 00:03:47.537
+Voy a crear un archivo index.html aquí
+
+77
+00:03:48.030 --> 00:03:52.593
+y luego quiero comenzar con el html de boilerplate.
+
+78
+00:03:53.993 --> 00:03:56.970
+Eso me va a dar todo lo básico.
+
+79
+00:03:56.970 --> 00:04:00.450
+Ahora, no necesito algunos de estos artículos, así que
+
+80
+00:04:00.450 --> 00:04:03.830
+no voy a meter un archivo JavaScript
+
+81
+00:04:03.830 --> 00:04:08.090
+O algo así, pero podemos darle un título a esto.
+
+82
+00:04:08.090 --> 00:04:13.020
+Lo llamaremos Implementación de búsqueda de front-end.
+
+83
+00:04:17.007 --> 00:04:20.580
+Entonces, también puedes ver aquí, que por defecto
+
+84
+00:04:20.580 --> 00:04:23.520
+esto nos está dando un enlace a una hoja de estilo
+
+85
+00:04:23.520 --> 00:04:25.670
+que actualmente no tenemos pero
+
+86
+00:04:25.670 --> 00:04:28.110
+vamos a crear eso.
+
+87
+00:04:28.110 --> 00:04:31.580
+Voy a guardar esto y vamos a crear
+
+88
+00:04:31.580 --> 00:04:34.300
+la hoja de estilo como una especie de marcador de posición.
+
+89
+00:04:34.300 --> 00:04:38.403
+Entonces, digamos que esto se llama main.css.
+
+90
+00:04:39.990 --> 00:04:42.890
+Dentro de aquí, solo voy a añadir un comentario
+
+91
+00:04:42.890 --> 00:04:46.143
+y diré que los estilos van aquí.
+
+92
+00:04:47.550 --> 00:04:48.383
+Pulso guardar.
+
+93
+00:04:48.383 --> 00:04:53.383
+Ahora tenemos nuestro HTML básico y un marcador de posición
+
+94
+00:04:54.040 --> 00:04:57.040
+donde colocaremos nuestros estilos.
+
+95
+00:04:57.040 --> 00:04:59.870
+Entonces, comencemos enumerando todo
+
+96
+00:04:59.870 --> 00:05:01.320
+lo que vamos a necesitar.
+
+97
+00:05:01.320 --> 00:05:04.350
+Ahora, esto es algo que hago solo por costumbre,
+
+98
+00:05:04.350 --> 00:05:07.940
+así que no tienes que seguir este proceso exacto
+
+99
+00:05:07.940 --> 00:05:09.850
+pero esto es lo que personalmente me gusta hacer.
+
+100
+00:05:09.850 --> 00:05:12.620
+Me ayuda a entender
+
+101
+00:05:12.620 --> 00:05:14.960
+todo lo que quiero incluir.
+
+102
+00:05:14.960 --> 00:05:17.840
+Sé que voy a necesitar un logotipo
+
+103
+00:05:17.840 --> 00:05:20.990
+Así que voy a decir logotipo aquí.
+
+104
+00:05:20.990 --> 00:05:25.740
+También sé que voy a necesitar una barra de búsqueda
+
+105
+00:05:25.740 --> 00:05:30.170
+así que voy a decir, necesito una barra de búsqueda aquí.
+
+106
+00:05:30.170 --> 00:05:34.920
+Justo debajo de eso, sé que voy a necesitar
+
+107
+00:05:34.920 --> 00:05:36.910
+ese pequeño tipo de enlace.
+
+108
+00:05:36.910 --> 00:05:39.430
+Este pequeño pulsa volver para buscar y
+
+109
+00:05:39.430 --> 00:05:42.350
+copiaré eso para que tener acceso a él.
+
+110
+00:05:42.350 --> 00:05:47.350
+Por lo tanto, voy a decir pulsa volver para buscar,
+
+111
+00:05:47.770 --> 00:05:50.421
+para saber que van por debajo de la barra de búsqueda.
+
+112
+00:05:50.421 --> 00:05:54.800
+Y a partir de ahí vamos a tener nuestro reciente post.
+
+113
+00:05:54.800 --> 00:05:56.730
+No voy a enumerar todos esos
+
+114
+00:05:56.730 --> 00:06:00.040
+porque solo necesito tener un sitio
+
+115
+00:06:00.040 --> 00:06:01.920
+en mi mente donde sé que voy a poner esto.
+
+116
+00:06:01.920 --> 00:06:06.650
+Entonces, diré que las publicaciones recientes irán ahí.
+
+117
+00:06:06.650 --> 00:06:09.867
+Así que realmente porque esta es una página tan básica
+
+118
+00:06:09.867 --> 00:06:12.020
+esto es todo lo que necesito hacer.
+
+119
+00:06:12.020 --> 00:06:14.520
+Sé que necesito un logotipo,
+
+120
+00:06:14.520 --> 00:06:16.150
+un cuadro de búsqueda que irá debajo,
+
+121
+00:06:16.150 --> 00:06:18.690
+este pequeño pulsa volver para buscar justo debajo de eso
+
+122
+00:06:18.690 --> 00:06:21.120
+y luego voy a enumerar las publicaciones recientes.
+
+123
+00:06:21.120 --> 00:06:24.610
+Eso va a ser esta página de índice
+
+124
+00:06:24.610 --> 00:06:27.290
+así que vamos a empezar por conseguir ese logotipo.
+
+125
+00:06:27.290 --> 00:06:31.530
+Simplemente puedes guardar la imagen aquí y luego
+
+126
+00:06:31.530 --> 00:06:35.140
+voy a colocar esto dentro del proyecto.
+
+127
+00:06:35.140 --> 00:06:36.510
+Voy a ir al motor de búsqueda,
+
+128
+00:06:36.510 --> 00:06:41.011
+implementación de front-end y por ahora...
+
+129
+00:06:41.011 --> 00:06:44.080
+Si estás en Linx como yo, puedes
+
+130
+00:06:44.080 --> 00:06:46.820
+crear una carpeta y puedes llamarla imágenes.
+
+131
+00:06:46.820 --> 00:06:49.381
+Si estás en Mac o PC, entonces puedes
+
+132
+00:06:49.381 --> 00:06:52.100
+crear una imagen pinchando con el botón derecho aquí
+
+133
+00:06:52.100 --> 00:06:55.430
+y te da la posibilidad de crear ese directorio.
+
+134
+00:06:55.430 --> 00:06:57.680
+Vamos a llamar a esto por su nombre predeterminado
+
+135
+00:06:57.680 --> 00:07:02.140
+ds_circle_logo.png y lo guardamos.
+
+136
+00:07:02.140 --> 00:07:03.620
+Ahora, tendremos acceso.
+
+137
+00:07:03.620 --> 00:07:06.010
+Volvemos al código de Visual Studio.
+
+138
+00:07:06.010 --> 00:07:08.971
+Puedes ver que ahora tenemos imágenes aquí.
+
+139
+00:07:08.971 --> 00:07:10.950
+Ahora podemos llamarlo.
+
+140
+00:07:10.950 --> 00:07:14.770
+Voy a venir aquí y darle una etiqueta de imagen.
+
+141
+00:07:14.770 --> 00:07:18.360
+El camino a esto es imágenes y luego este
+
+142
+00:07:18.360 --> 00:07:19.193
+ds_circle_logo.
+
+143
+00:07:20.970 --> 00:07:22.400
+Pulso guardar.
+
+144
+00:07:22.400 --> 00:07:24.603
+Ahora vamos a abrir este archivo.
+
+145
+00:07:24.603 --> 00:07:27.150
+Hay varias formas de abrir
+
+146
+00:07:27.150 --> 00:07:29.220
+este archivo y verlo.
+
+147
+00:07:29.220 --> 00:07:33.440
+Técnicamente podría decir CTRL+O aquí
+
+148
+00:07:33.440 --> 00:07:36.830
+y luego navegar al proyecto.
+
+149
+00:07:36.830 --> 00:07:39.900
+Podría decir código, motor de búsqueda aquí, pincho
+
+150
+00:07:39.900 --> 00:07:42.360
+sobre el índice y luego eso lo abriría.
+
+151
+00:07:42.360 --> 00:07:44.530
+Eso es lo que tengo, el producto terminado
+
+152
+00:07:44.530 --> 00:07:46.680
+abierto como ahora.
+
+153
+00:07:46.680 --> 00:07:48.730
+Pero si estás en el Código VS hay
+
+154
+00:07:48.730 --> 00:07:50.720
+incluso una mejor manera de hacer esto.
+
+155
+00:07:50.720 --> 00:07:54.340
+Bajas a tus extensiones aquí
+
+156
+00:07:54.340 --> 00:07:58.680
+y buscas servidor en directo.
+
+157
+00:07:58.680 --> 00:08:00.960
+Ya lo tengo instalado pero si no lo tienes
+
+158
+00:08:00.960 --> 00:08:03.260
+instalado entonces vas a tener un
+
+159
+00:08:03.260 --> 00:08:05.400
+botón de instalar aquí.
+
+160
+00:08:05.400 --> 00:08:07.700
+Pínchalo para instalarlo y luego después de instalarlo,
+
+161
+00:08:07.700 --> 00:08:11.097
+recarga todo el programa.
+
+162
+00:08:11.097 --> 00:08:14.820
+Lo que te va a permitir hacer es,
+
+163
+00:08:14.820 --> 00:08:17.420
+ahora puedo pinchar con el botón derecho aquí.
+
+164
+00:08:17.420 --> 00:08:20.730
+Pincha sobre abrir con servidor en directo y
+
+165
+00:08:20.730 --> 00:08:22.030
+que va a generar
+
+166
+00:08:22.030 --> 00:08:24.100
+un pequeño servidor en directo para nosotros.
+
+167
+00:08:24.100 --> 00:08:26.320
+Este es el proyecto.
+
+168
+00:08:26.320 --> 00:08:27.340
+Esta es nuestra página.
+
+169
+00:08:27.340 --> 00:08:29.690
+Puedes verlo en index.html y
+
+170
+00:08:29.690 --> 00:08:31.514
+la otra cosa genial de esto es que
+
+171
+00:08:31.514 --> 00:08:34.610
+actualiza en tiempo real en directo.
+
+172
+00:08:34.610 --> 00:08:37.250
+Entonces, si quisiera poner algo justo arriba
+
+173
+00:08:37.250 --> 00:08:39.100
+Aquí, esto es sólo una pequeña prueba,
+
+174
+00:08:39.100 --> 00:08:44.100
+así que voy a decir, h1, probando, guardar.
+
+175
+00:08:44.660 --> 00:08:46.550
+Vuelve y mira que no tienes que
+
+176
+00:08:46.550 --> 00:08:47.820
+pulsar actualizar ni nada.
+
+177
+00:08:47.820 --> 00:08:51.770
+Simplemente me permitió actualizar automáticamente
+
+178
+00:08:51.770 --> 00:08:54.710
+y luego ver los resultados ahí en el navegador.
+
+179
+00:08:54.710 --> 00:08:56.700
+Así que definitivamente recomiendo que si estás usando
+
+180
+00:08:56.700 --> 00:08:59.390
+código Visual Studio, instales esa extensión
+
+181
+00:08:59.390 --> 00:09:02.060
+y simplemente te lo pone un poco más fácil.
+
+182
+00:09:02.060 --> 00:09:03.610
+Entonces, una vez más, todo lo que tienes que hacer es
+
+183
+00:09:03.610 --> 00:09:06.220
+Pinchar con el botón derecho sobre el archivo que quieres
+
+184
+00:09:06.220 --> 00:09:08.730
+iniciar y luego pinchar sobre abrir con servidor en directo
+
+185
+00:09:08.730 --> 00:09:11.640
+y entonces podrás ver eso.
+
+186
+00:09:11.640 --> 00:09:14.070
+De acuerdo, solo nos vamos a hacer unos minutos más
+
+187
+00:09:14.070 --> 00:09:16.300
+y luego vamos a hacer un descanso
+
+188
+00:09:16.300 --> 00:09:17.970
+y continuar la implementación.
+
+189
+00:09:17.970 --> 00:09:19.320
+Así que tenemos nuestro logotipo.
+
+190
+00:09:19.320 --> 00:09:22.706
+Ahora sabemos que necesitamos una barra de búsqueda.
+
+191
+00:09:22.706 --> 00:09:26.510
+Voy a crear un div para poner esto dentro.
+
+192
+00:09:26.510 --> 00:09:29.150
+Así que voy a decir div y luego dentro de aquí,
+
+193
+00:09:29.150 --> 00:09:30.810
+va a haber una entrada.
+
+194
+00:09:30.810 --> 00:09:33.270
+Va a ser de texto de tipo.
+
+195
+00:09:33.270 --> 00:09:35.643
+Vamos a añadir un pequeño marcador de posición aquí.
+
+196
+00:09:36.670 --> 00:09:39.290
+Diremos marcador de posición,
+
+197
+00:09:39.290 --> 00:09:44.190
+busca DailySmarty, así.
+
+198
+00:09:44.190 --> 00:09:46.564
+Entonces, también sabemos que necesitamos este
+
+199
+00:09:46.564 --> 00:09:48.940
+pulsar volver para buscar.
+
+200
+00:09:48.940 --> 00:09:51.940
+Vamos a mover eso dentro de esta div
+
+201
+00:09:52.820 --> 00:09:56.317
+y ahora dentro de aquí voy a simplemente
+
+202
+00:09:56.317 --> 00:09:58.830
+crear una etiqueta de párrafo y decir,
+
+203
+00:09:58.830 --> 00:10:01.713
+pulsar volver para buscar.
+
+204
+00:10:03.132 --> 00:10:06.540
+Entonces abajo, aquí, sabemos que tenemos nuestra
+
+205
+00:10:06.540 --> 00:10:09.030
+post reciente, pero vamos a guardar esto
+
+206
+00:10:09.030 --> 00:10:10.980
+y ver dónde estamos.
+
+207
+00:10:10.980 --> 00:10:13.450
+Obviamente este logotipo gigantesco va a
+
+208
+00:10:13.450 --> 00:10:16.470
+tener que volver a hacerse, pero lo haremos más tarde.
+
+209
+00:10:16.470 --> 00:10:18.500
+Podéis ver aquí abajo en la parte inferior que tenemos
+
+210
+00:10:18.500 --> 00:10:20.910
+nuestra barra de búsqueda y dice Search DailySmarty
+
+211
+00:10:20.910 --> 00:10:24.901
+como un marcador de posición y el pulsar volver para buscar.
+
+212
+00:10:24.901 --> 00:10:26.810
+Todo eso está bien.
+
+213
+00:10:26.810 --> 00:10:29.710
+Ahora vamos a construir nuestra última publicación o
+
+214
+00:10:29.710 --> 00:10:32.980
+al menos colocar nuestros marcadores de posición ahí.
+
+215
+00:10:32.980 --> 00:10:36.163
+Voy a crear otro div.
+
+216
+00:10:37.580 --> 00:10:40.310
+Entonces dentro de aquí voy a crear
+
+217
+00:10:40.310 --> 00:10:41.990
+un div anidado.
+
+218
+00:10:41.990 --> 00:10:44.883
+Aquí es donde va a decir Publicación reciente.
+
+219
+00:10:47.530 --> 00:10:49.150
+Así.
+
+220
+00:10:49.150 --> 00:10:52.350
+Y luego desde ahí, vamos a crear
+
+221
+00:10:52.350 --> 00:10:54.863
+un div que va a contener todos
+
+222
+00:10:54.863 --> 00:10:57.757
+esos post recientes.
+
+223
+00:10:57.757 --> 00:11:00.040
+Hay tres.
+
+224
+00:11:00.040 --> 00:11:02.870
+Vamos a tener un div envolvente.
+
+225
+00:11:02.870 --> 00:11:05.810
+Ten en cuenta que no estoy añadiendo ID o clase ahora.
+
+226
+00:11:05.810 --> 00:11:08.939
+Ahora solo quiero obtener todo el contenido de la página.
+
+227
+00:11:08.939 --> 00:11:12.000
+Voy a tener este div envolvente
+
+228
+00:11:12.000 --> 00:11:14.130
+y podemos copiar esto.
+
+229
+00:11:14.130 --> 00:11:16.960
+Puedes copiar esto o poner texto de marcador de posición.
+
+230
+00:11:16.960 --> 00:11:19.299
+Realmente no importa.
+
+231
+00:11:19.299 --> 00:11:24.070
+Voy a copiar eso, pegarlo
+
+232
+00:11:24.070 --> 00:11:26.820
+y luego vamos a crear tres de estos.
+
+233
+00:11:26.820 --> 00:11:29.840
+Más adelante, vamos a añadir div adicionales
+
+234
+00:11:29.840 --> 00:11:32.520
+y envolverlos un poco mejor.
+
+235
+00:11:32.520 --> 00:11:35.430
+Por ahora, esto tiene todo lo que necesitamos.
+
+236
+00:11:35.430 --> 00:11:37.451
+Una cosa que puedes haber visto aquí,
+
+237
+00:11:37.451 --> 00:11:41.007
+si estas usando prettify, como yo
+
+238
+00:11:41.007 --> 00:11:43.990
+en mi código de Visual Studio, cuando pulsas guardar,
+
+239
+00:11:43.990 --> 00:11:46.110
+reajusta todo, pero también
+
+240
+00:11:46.110 --> 00:11:49.380
+mueve este JavaScript aquí y eso es
+
+241
+00:11:49.380 --> 00:11:51.170
+no es lo que quiero.
+
+242
+00:11:51.170 --> 00:11:54.690
+Vamos a mover esto a su propio div
+
+243
+00:11:54.690 --> 00:11:57.410
+incluso en este momento sólo para que no
+
+244
+00:11:57.410 --> 00:12:00.290
+nos topemos con cualquier problema donde nos olvidemos.
+
+245
+00:12:00.290 --> 00:12:05.290
+Bien, ahora tenemos ese JavaScript ahí.
+
+246
+00:12:05.780 --> 00:12:09.663
+Sacaremos eso de cada uno de los copiados.
+
+247
+00:12:11.900 --> 00:12:16.020
+Luego habremos terminado nuestro contenido para esta página.
+
+248
+00:12:16.020 --> 00:12:18.133
+Vamos a terminar eso.
+
+249
+00:12:20.257 --> 00:12:21.540
+Pulsar guardar.
+
+250
+00:12:21.540 --> 00:12:25.430
+Ahora si bajamos al fondo,
+
+251
+00:12:25.430 --> 00:12:27.810
+puedes ver que tenemos todo nuestro texto ahí.
+
+252
+00:12:27.810 --> 00:12:30.920
+Así que este es un buen punto de parada como se puedes ver
+
+253
+00:12:30.920 --> 00:12:34.810
+todavía está muy feo, pero cada vez que me encargan
+
+254
+00:12:34.810 --> 00:12:36.260
+la implementación de este front end
+
+255
+00:12:36.260 --> 00:12:37.460
+es en realidad como empiezo.
+
+256
+00:12:37.460 --> 00:12:40.110
+Acabo de empezar consiguiendo todo el contenido
+
+257
+00:12:40.110 --> 00:12:43.340
+que quiero en la página para que después de tener eso,
+
+258
+00:12:43.340 --> 00:12:45.320
+sé que tengo todos los elementos que necesito
+
+259
+00:12:45.320 --> 00:12:48.084
+y luego puedo empezar a agregar los estilos CSS,
+
+260
+00:12:48.084 --> 00:12:51.010
+añadir mis propias clases personalizadas y luego puedo
+
+261
+00:12:51.010 --> 00:12:54.403
+reorganizar ese contenido como se supone que debe estar.
+

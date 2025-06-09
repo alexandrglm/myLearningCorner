@@ -1,0 +1,1158 @@
+WEBVTT
+
+1
+00:00:01.030 --> 00:00:03.150
+<v ->Hasta ahora, en esta sección sobre variables,</v>
+
+2
+00:00:03.150 --> 00:00:05.580
+hemos estado bastante limitados con el número
+
+3
+00:00:05.580 --> 00:00:08.700
+de tipos de datos que hemos visto desde Python.
+
+4
+00:00:08.700 --> 00:00:12.090
+Y por eso quería tener una guía dedicada
+
+5
+00:00:12.090 --> 00:00:14.310
+que proporcionara una vista general de alto nivel
+
+6
+00:00:14.310 --> 00:00:17.280
+de lo que son los principales tipos de datos
+
+7
+00:00:17.280 --> 00:00:19.370
+y en qué se diferencian entre sí
+
+8
+00:00:19.370 --> 00:00:21.700
+para que sepas cómo usarlos.
+
+9
+00:00:21.700 --> 00:00:23.610
+Como puedes ver aquí, he enumerado
+
+10
+00:00:23.610 --> 00:00:27.840
+los nueve tipos principales que puedes usar en Python.
+
+11
+00:00:27.840 --> 00:00:30.620
+Ahora, como Python está mecanografiado dinámicamente,
+
+12
+00:00:30.620 --> 00:00:32.430
+significa que puedes guardar cada uno
+
+13
+00:00:32.430 --> 00:00:34.670
+de estos tipos de datos en una variable
+
+14
+00:00:34.670 --> 00:00:37.518
+y Python lo deducirá automáticamente,
+
+15
+00:00:37.518 --> 00:00:40.542
+basado en cuál es el valor, qué tipo
+
+16
+00:00:40.542 --> 00:00:43.033
+de datos utilizar.
+
+17
+00:00:43.033 --> 00:00:45.600
+Y así, el elemento más importante aquí
+
+18
+00:00:45.600 --> 00:00:49.490
+es entender cómo están representados
+
+19
+00:00:49.490 --> 00:00:51.850
+y también cómo se pueden utilizar
+
+20
+00:00:51.850 --> 00:00:53.520
+y es por eso que vamos a seguir esto
+
+21
+00:00:53.520 --> 00:00:56.050
+con una implementación práctica.
+
+22
+00:00:56.050 --> 00:01:00.460
+Comenzando en lo más alto de la lista con booleanos,
+
+23
+00:01:00.460 --> 00:01:04.930
+un booleano es un valor verdadero o falso.
+
+24
+00:01:04.930 --> 00:01:08.520
+Así que si tienes una situación como, digamos,
+
+25
+00:01:08.520 --> 00:01:11.150
+tienes una entrada en el blog y quieres
+
+26
+00:01:11.150 --> 00:01:12.700
+la capacidad de decir:
+
+27
+00:01:12.700 --> 00:01:15.220
+¿Este artículo del blog está publicado o no?"
+
+28
+00:01:15.220 --> 00:01:17.820
+Podrías decir que podrías almacenar un booleano
+
+29
+00:01:17.820 --> 00:01:22.740
+y tenerlo en falso hasta que el artículo sea publicado.
+
+30
+00:01:22.740 --> 00:01:25.740
+Ese sería un ejemplo de cómo se puede usar un booleano.
+
+31
+00:01:25.740 --> 00:01:29.800
+Ahora un número es una parte increíblemente compleja
+
+32
+00:01:29.800 --> 00:01:32.300
+dentro de Python y, de hecho, vamos a
+
+33
+00:01:32.300 --> 00:01:35.240
+tener una sección entera dedicada
+
+34
+00:01:35.240 --> 00:01:37.480
+a cómo puedes trabajar con los números porque
+
+35
+00:01:37.480 --> 00:01:39.856
+Python tiene una de las mejores APIs
+
+36
+00:01:39.856 --> 00:01:41.639
+de los modernos lenguajes de programación
+
+37
+00:01:41.639 --> 00:01:43.398
+de propósito general
+
+38
+00:01:43.398 --> 00:01:45.173
+con el trabajo con números
+
+39
+00:01:45.173 --> 00:01:46.720
+y es una de las principales razones
+
+40
+00:01:46.720 --> 00:01:50.400
+por qué Python es tan popular para el aprendizaje automático
+
+41
+00:01:50.400 --> 00:01:54.430
+porque tiene tantas opciones y bibliotecas diferentes
+
+42
+00:01:54.430 --> 00:01:57.111
+que puedes usar con números y así los números
+
+43
+00:01:57.111 --> 00:01:59.880
+pueden ser cualquier cosa, desde números enteros estándar
+
+44
+00:01:59.880 --> 00:02:02.590
+que sería como 1, 2, y 3
+
+45
+00:02:02.590 --> 00:02:06.700
+hasta llegar a grandes números de tipo decimales
+
+46
+00:02:06.700 --> 00:02:09.609
+y números de tipo flotante y cualquier cosa
+
+47
+00:02:09.609 --> 00:02:13.480
+que puedas imaginar y, además de eso,
+
+48
+00:02:13.480 --> 00:02:16.179
+los números también se pueden conectar
+
+49
+00:02:16.179 --> 00:02:18.338
+a tipos aún más potentes
+
+50
+00:02:18.338 --> 00:02:20.565
+de bibliotecas basadas en números, y así sucesivamente,
+
+51
+00:02:20.565 --> 00:02:22.228
+vamos a llegar a eso
+
+52
+00:02:22.228 --> 00:02:24.270
+en la sección de números pero, por ahora,
+
+53
+00:02:24.270 --> 00:02:26.650
+sólo sé que los números pueden ser de todo tipo
+
+54
+00:02:26.650 --> 00:02:29.090
+de diferentes elementos, entre los que se incluyen
+
+55
+00:02:29.090 --> 00:02:31.007
+elementos, incluso fracciones, y así
+
+56
+00:02:31.007 --> 00:02:33.230
+que vamos a revisar, en nuestro ejemplo,
+
+57
+00:02:33.230 --> 00:02:35.550
+sobre cómo se puede representar eso.
+
+58
+00:02:35.550 --> 00:02:37.566
+Moviendo hacia abajo la línea,
+
+59
+00:02:37.566 --> 00:02:40.070
+el número 3 es el tipo de datos de cadenas.
+
+60
+00:02:40.070 --> 00:02:42.353
+Las cadenas pueden ser de cualquier tipo
+
+61
+00:02:42.353 --> 00:02:43.740
+de secuencia de bytes
+
+62
+00:02:43.740 --> 00:02:46.590
+así que esto podría ser algo tan directo como un nombre
+
+63
+00:02:46.590 --> 00:02:49.400
+que es lo que ya hemos visto como ejemplo
+
+64
+00:02:49.400 --> 00:02:52.930
+pero esto también podría ser un documento HTML completo
+
+65
+00:02:52.930 --> 00:02:55.084
+así que hay todo tipo de formas diferentes
+
+66
+00:02:55.084 --> 00:02:57.200
+donde puedes integrar cadenas de texto
+
+67
+00:02:57.200 --> 00:02:59.180
+en tu programa y típicamente,
+
+68
+00:02:59.180 --> 00:03:02.030
+estas cadenas están envueltas
+
+69
+00:03:02.030 --> 00:03:04.950
+con comillas simples o dobles.
+
+70
+00:03:04.950 --> 00:03:07.330
+Bajando la línea, cuarto en la lista,
+
+71
+00:03:07.330 --> 00:03:09.810
+son bytes y matrices de bytes.
+
+72
+00:03:09.810 --> 00:03:12.868
+Ahora los bytes son un tipo de datos que probablemente
+
+73
+00:03:12.868 --> 00:03:15.855
+no entenderás hasta que no te metas en
+
+74
+00:03:15.855 --> 00:03:19.110
+un complejo desarrollo de Python
+
+75
+00:03:19.110 --> 00:03:20.850
+y empieces a realizar tareas
+
+76
+00:03:20.850 --> 00:03:24.720
+como ser capaz de reorganizar una secuencia de bytes
+
+77
+00:03:24.720 --> 00:03:29.100
+o trabajar con imágenes a un nivel literalmente de bytes
+
+78
+00:03:29.100 --> 00:03:31.220
+y así que esto es algo en que no vamos
+
+79
+00:03:31.220 --> 00:03:33.420
+a hablar mucho en este curso
+
+80
+00:03:33.420 --> 00:03:36.300
+pero es bueno entender exactamente
+
+81
+00:03:36.300 --> 00:03:39.630
+qué bytes están en un nivel alto, y luego más adelante,
+
+82
+00:03:39.630 --> 00:03:42.080
+cuando entres en un desarrollo más avanzado
+
+83
+00:03:42.080 --> 00:03:44.820
+entonces podrás ver cómo pueden ser implementados
+
+84
+00:03:44.820 --> 00:03:48.620
+y los tipos de ejemplos en los que deseas utilizarlos.
+
+85
+00:03:48.620 --> 00:03:52.145
+Como la mayoría de los tipos de lenguajes
+
+86
+00:03:52.145 --> 00:03:54.380
+generados dinámicamente,
+
+87
+00:03:54.380 --> 00:03:57.220
+Python, Ruby, y esos tipos de lenguajes,
+
+88
+00:03:57.220 --> 00:04:00.030
+Python tiene un concepto de Ninguno.
+
+89
+00:04:00.030 --> 00:04:03.750
+Cada tipo de lenguaje que se escribe dinámicamente
+
+90
+00:04:03.750 --> 00:04:06.842
+típicamente tiene un ninguno o un nulo
+
+91
+00:04:06.842 --> 00:04:08.290
+o ese tipo de datos
+
+92
+00:04:08.290 --> 00:04:11.130
+y eso es exactamente lo que Python tiene aquí.
+
+93
+00:04:11.130 --> 00:04:13.020
+Y la razón por la que siempre querrías
+
+94
+00:04:13.020 --> 00:04:16.150
+usar un tipo de datos Ninguno es, digamos,
+
+95
+00:04:16.150 --> 00:04:19.070
+cuando deseas definir una variable
+
+96
+00:04:19.070 --> 00:04:21.820
+pero aún no quieres establecer su valor,
+
+97
+00:04:21.820 --> 00:04:26.820
+está perfectamente bien establecer su valor igual a ninguno
+
+98
+00:04:26.920 --> 00:04:30.617
+y luego, más tarde, puedes reordenarla y decir,
+
+99
+00:04:30.617 --> 00:04:32.830
+"Bien, ya no queremos que sea ninguno.
+
+100
+00:04:32.830 --> 00:04:35.160
+Ahora queremos cambiarlo por otra cosa"
+
+101
+00:04:35.160 --> 00:04:37.460
+Así que, por ejemplo, digamos que tienes algún tipo
+
+102
+00:04:37.460 --> 00:04:40.330
+de formulario y el formulario no tenía
+
+103
+00:04:40.330 --> 00:04:43.540
+cualquier cosa escrita en él desde el principio,
+
+104
+00:04:43.540 --> 00:04:45.732
+puedes decir que cada uno de los valores
+
+105
+00:04:45.732 --> 00:04:47.140
+utilizados en el formulario
+
+106
+00:04:47.140 --> 00:04:50.170
+son ninguno, y hasta que no lo sean más.
+
+107
+00:04:50.170 --> 00:04:52.840
+Así que, en otras palabras, cuando un valor
+
+108
+00:04:52.840 --> 00:04:55.640
+ha sido escrito allí, entonces puedes ir
+
+109
+00:04:55.640 --> 00:04:57.670
+y sacarlo con una cadena
+
+110
+00:04:57.670 --> 00:04:59.690
+o un entero o algo así.
+
+111
+00:04:59.690 --> 00:05:01.890
+Y entonces eso cambiará el tipo de datos
+
+112
+00:05:01.890 --> 00:05:05.460
+pero es bueno tener un tipo de datos ninguno
+
+113
+00:05:05.460 --> 00:05:08.290
+porque entonces siempre puedes comprobarlo.
+
+114
+00:05:08.290 --> 00:05:10.156
+Y si eres nuevo en programación
+
+115
+00:05:10.156 --> 00:05:11.658
+o nuevo en Python, eso puede sonar
+
+116
+00:05:11.658 --> 00:05:14.970
+como si no fuera el tipo de herramienta más útil
+
+117
+00:05:14.970 --> 00:05:16.736
+pero los tipos de programas más complejos
+
+118
+00:05:16.736 --> 00:05:18.250
+en los que ingresas,
+
+119
+00:05:18.250 --> 00:05:20.875
+te das cuenta de que ser capaz de comprobar
+
+120
+00:05:20.875 --> 00:05:24.711
+para ver si se ha fijado un valor o si un valor sigue siendo
+
+121
+00:05:24.711 --> 00:05:27.700
+un valor ninguno es en realidad bastante útil.
+
+122
+00:05:27.700 --> 00:05:30.964
+Ahora los siguientes 4 tipos de datos caben todos dentro
+
+123
+00:05:30.964 --> 00:05:35.105
+de una sola categoría que es la categoría de
+
+124
+00:05:35.105 --> 00:05:36.830
+estructura de datos.
+
+125
+00:05:36.830 --> 00:05:40.307
+Listas, Tuplas, Conjuntos y Diccionarios
+
+126
+00:05:40.307 --> 00:05:44.230
+son cuatro maneras en las que puedes gestionar colecciones
+
+127
+00:05:44.230 --> 00:05:45.910
+dentro de Python y vamos a
+
+128
+00:05:45.910 --> 00:05:48.788
+tener una sección completamente, muy grande
+
+129
+00:05:48.788 --> 00:05:51.680
+dedicada a las colecciones porque éstos son
+
+130
+00:05:51.680 --> 00:05:53.400
+uno de los bloques de construcción más grandes
+
+131
+00:05:53.400 --> 00:05:56.350
+cuando se trata de construir aplicaciones web
+
+132
+00:05:56.350 --> 00:05:58.733
+para implementar el aprendizaje automático,
+
+133
+00:05:58.733 --> 00:06:00.870
+todos esos tipos de temas
+
+134
+00:06:00.870 --> 00:06:03.045
+requieren un conocimiento muy profundo
+
+135
+00:06:03.045 --> 00:06:05.220
+de las estructuras de datos.
+
+136
+00:06:05.220 --> 00:06:07.270
+Estos también son bastante complejos,
+
+137
+00:06:07.270 --> 00:06:09.520
+no vamos a entrar en detalles ahora
+
+138
+00:06:09.520 --> 00:06:12.290
+porque no estamos listos para ello.
+
+139
+00:06:12.290 --> 00:06:14.970
+Todavía hay muchos elementos diferentes que necesitamos
+
+140
+00:06:14.970 --> 00:06:17.630
+aprender antes de que podamos entrar en ellos
+
+141
+00:06:17.630 --> 00:06:22.360
+pero, como nivel alto, una lista es similar a un matriz
+
+142
+00:06:22.360 --> 00:06:24.000
+en otros lenguajes de programación.
+
+143
+00:06:24.000 --> 00:06:26.520
+Te da una lista de artículos.
+
+144
+00:06:26.520 --> 00:06:29.530
+Tuplas y los conjuntos son similares a las listas
+
+145
+00:06:29.530 --> 00:06:32.410
+pero tienen algunas características únicas
+
+146
+00:06:32.410 --> 00:06:34.580
+y hablaremos de ellos en esa sección.
+
+147
+00:06:34.580 --> 00:06:37.680
+Y los diccionarios, los diccionarios son muy diferentes
+
+148
+00:06:37.680 --> 00:06:40.550
+de las primeras tres opciones, los diccionarios te dan
+
+149
+00:06:40.550 --> 00:06:43.730
+la capacidad de tener pares de valores clave.
+
+150
+00:06:43.730 --> 00:06:47.270
+Así que, si vienes del lenguaje de programación Ruby
+
+151
+00:06:47.270 --> 00:06:50.100
+y estás familiarizado con la estructura de datos hash,
+
+152
+00:06:50.100 --> 00:06:52.185
+muy similar, y por lo tanto esos son
+
+153
+00:06:52.185 --> 00:06:54.018
+los cuatro tipos de datos principales
+
+154
+00:06:54.018 --> 00:06:55.580
+de la estructura de datos,
+
+155
+00:06:55.580 --> 00:07:00.110
+y como he dicho, hablaremos de eso en detalle más tarde.
+
+156
+00:07:00.110 --> 00:07:02.340
+Ahora voy a darnos un poco
+
+157
+00:07:02.340 --> 00:07:03.975
+de espacio aquí y vamos a
+
+158
+00:07:03.975 --> 00:07:06.920
+construir un programa que utilice múltiples tipos de datos.
+
+159
+00:07:06.920 --> 00:07:09.980
+Vamos a usar un booleano, vamos a usar un entero.
+
+160
+00:07:09.980 --> 00:07:13.160
+Vamos a usar un flotante los cuales están dentro
+
+161
+00:07:13.160 --> 00:07:15.880
+del tipo de datos numéricos y luego vamos a
+
+162
+00:07:15.880 --> 00:07:18.840
+ver cómo podemos convertir cadenas
+
+163
+00:07:18.840 --> 00:07:22.030
+o debería decir convertir números para que
+
+164
+00:07:22.030 --> 00:07:23.840
+puedan trabajar con cadenas y luego
+
+165
+00:07:23.840 --> 00:07:27.620
+vamos a volver y mostrar una cadena al final.
+
+166
+00:07:27.620 --> 00:07:31.680
+Vamos a construir una calculadora de propinas muy pequeña.
+
+167
+00:07:31.680 --> 00:07:34.966
+Así que voy a decir que vamos a comprobar para ver
+
+168
+00:07:34.966 --> 00:07:37.820
+si la comida está completa,
+
+169
+00:07:37.820 --> 00:07:40.570
+y si lo es, entonces va a ser verdadero.
+
+170
+00:07:40.570 --> 00:07:42.870
+Técnicamente, aún no hemos llegado a los condicionales
+
+171
+00:07:42.870 --> 00:07:44.540
+así que esto no está comprobando nada,
+
+172
+00:07:44.540 --> 00:07:46.580
+es simplemente dando un ejemplo
+
+173
+00:07:46.580 --> 00:07:49.970
+de cómo es un booleano para que nuestro sistema
+
+174
+00:07:49.970 --> 00:07:52.500
+revise para asegurarse de que una comida esté completa,
+
+175
+00:07:52.500 --> 00:07:55.880
+y lo que está marcado como verdadero, entonces va a
+
+176
+00:07:55.880 --> 00:07:58.790
+continuar, y si no, no nos va a dejar.
+
+177
+00:07:58.790 --> 00:08:01.973
+Ahora un elemento importante a tener en cuenta aquí
+
+178
+00:08:01.973 --> 00:08:03.440
+con booleanos es
+
+179
+00:08:03.440 --> 00:08:07.100
+la forma en que designas si algo es verdadero es con
+
+180
+00:08:07.100 --> 00:08:11.030
+una T mayúscula y luego sólo la palabra Verdadero.
+
+181
+00:08:11.030 --> 00:08:13.310
+Con Falso, es lo mismo,
+
+182
+00:08:13.310 --> 00:08:15.090
+así que va a ser una F mayúscula.
+
+183
+00:08:15.090 --> 00:08:17.780
+Ahora, si vienes de otros lenguajes de programación,
+
+184
+00:08:17.780 --> 00:08:20.121
+muchos otros lenguajes de programación
+
+185
+00:08:20.121 --> 00:08:22.071
+utilizan verdadero con minúsculas
+
+186
+00:08:22.071 --> 00:08:25.240
+y puedes ver que tenemos un tipo de comprobación aquí
+
+187
+00:08:25.240 --> 00:08:27.848
+para hacernos saber que Verdadero es probablemente
+
+188
+00:08:27.848 --> 00:08:29.191
+lo que estamos buscando
+
+189
+00:08:29.191 --> 00:08:31.280
+porque si tienes verdadero con minúsculas,
+
+190
+00:08:31.280 --> 00:08:34.930
+eso no va a funcionar, sólo un elemento importante
+
+191
+00:08:34.930 --> 00:08:37.370
+para saber cuando se trabaja con booleanos.
+
+192
+00:08:37.370 --> 00:08:41.150
+Ahora voy a usar sólo un número estándar
+
+193
+00:08:41.150 --> 00:08:43.650
+con un número entero así que voy a decir que
+
+194
+00:08:43.650 --> 00:08:45.360
+el subtotal es igual
+
+195
+00:08:45.360 --> 00:08:48.980
+a cien y ahora vamos a generar la propina.
+
+196
+00:08:48.980 --> 00:08:52.540
+Ahora la propina va a ser un múltiple
+
+197
+00:08:52.540 --> 00:08:56.415
+del subtotal por el 20% y así que hay un par
+
+198
+00:08:56.415 --> 00:08:57.967
+de maneras en que podemos hacer eso
+
+199
+00:08:57.967 --> 00:08:59.242
+con nuestro tipo de datos numéricos.
+
+200
+00:08:59.242 --> 00:09:04.225
+Puedo decir que la propina es igual a un subtotal de 0,20,
+
+201
+00:09:06.430 --> 00:09:08.930
+o técnicamente, el cero final no importa
+
+202
+00:09:08.930 --> 00:09:12.460
+así que sólo puedo decir 0,2 y sólo para asegurarme
+
+203
+00:09:12.460 --> 00:09:15.896
+que esto está funcionando, probémoslo aquí mismo.
+
+204
+00:09:15.896 --> 00:09:17.970
+antes de que lo terminemos, así que voy
+
+205
+00:09:17.970 --> 00:09:20.990
+a decir imprimir subtotal y puedes ver
+
+206
+00:09:20.990 --> 00:09:23.990
+que imprime cien, así que estamos bien
+
+207
+00:09:23.990 --> 00:09:26.123
+y ahora imprime la propina
+
+208
+00:09:26.123 --> 00:09:28.580
+y puedes ver que está a 20 dólares,
+
+209
+00:09:28.580 --> 00:09:32.560
+y notarlo automáticamente, no dijimos nada
+
+210
+00:09:32.560 --> 00:09:37.360
+de que esto es un flotante, sino porque añadimos el 0,2,
+
+211
+00:09:38.400 --> 00:09:41.590
+Python se dio cuenta dinámicamente de que estábamos tratando
+
+212
+00:09:41.590 --> 00:09:43.310
+con números de punto flotante y
+
+213
+00:09:43.310 --> 00:09:46.200
+agregó ese decimal para nosotros, así que eso es
+
+214
+00:09:46.200 --> 00:09:48.720
+una característica bastante buena de Python.
+
+215
+00:09:48.720 --> 00:09:52.130
+Así que aquí tenemos nuestra propina y ahora vamos a
+
+216
+00:09:52.130 --> 00:09:55.690
+añadir la propina a nuestro subtotal
+
+217
+00:09:55.690 --> 00:10:00.610
+así que voy a decir subtotal más la propina
+
+218
+00:10:00.610 --> 00:10:04.610
+y nos estamos metiendo en algunas cosas aritméticas
+
+219
+00:10:04.610 --> 00:10:07.540
+y vamos a, dentro de nuestra sección de números,
+
+220
+00:10:07.540 --> 00:10:09.810
+vamos a entrar en mucho más detalle
+
+221
+00:10:09.810 --> 00:10:12.100
+pero, por ahora, pensé que querrías
+
+222
+00:10:12.100 --> 00:10:14.440
+ver algo un poco más práctico
+
+223
+00:10:14.440 --> 00:10:17.040
+cuando se trataba de analizar tipos de datos.
+
+224
+00:10:17.040 --> 00:10:19.260
+Así que todo aquí está funcionando,
+
+225
+00:10:19.260 --> 00:10:22.385
+podemos probarlo diciendo imprimir total,
+
+226
+00:10:22.385 --> 00:10:26.640
+ejecutar, y puedes ver que tenemos nuestro número correcto.
+
+227
+00:10:26.640 --> 00:10:29.334
+Ahora lo que quiero es
+
+228
+00:10:29.334 --> 00:10:32.190
+hacer algo diferente y verás por qué.
+
+229
+00:10:32.190 --> 00:10:36.050
+Así que si digo que quiero un recibo,
+
+230
+00:10:36.050 --> 00:10:37.730
+y esto va a tener una cadena,
+
+231
+00:10:37.730 --> 00:10:41.328
+así que dirá, "Tu total es"
+
+232
+00:10:41.328 --> 00:10:42.860
+y voy a añadir un espacio,
+
+233
+00:10:42.860 --> 00:10:47.660
+un más y luego voy a poner "total".
+
+234
+00:10:47.660 --> 00:10:51.030
+Ahora, si trato de imprimir esto, vamos a
+
+235
+00:10:51.030 --> 00:10:54.080
+encontrarnos con un pequeño error, así que voy a
+
+236
+00:10:54.080 --> 00:10:57.690
+presionar Enter y puedes ver que tenemos un error aquí.
+
+237
+00:10:57.690 --> 00:11:01.360
+Dice que el rastreo de la última llamada
+
+238
+00:11:01.360 --> 00:11:05.620
+en el archivo Python línea 15, así que nos está diciendo
+
+239
+00:11:05.620 --> 00:11:08.320
+justo aquí que el problema está en la línea 15
+
+240
+00:11:08.320 --> 00:11:11.900
+y entonces el tipo de error es en realidad
+
+241
+00:11:11.900 --> 00:11:16.570
+un TypeError y debe ser una cadena y no un flotante.
+
+242
+00:11:16.570 --> 00:11:18.853
+Así que, como puedes ver aquí,
+
+243
+00:11:18.853 --> 00:11:21.530
+cuando multiplicamos el subtotal
+
+244
+00:11:21.530 --> 00:11:25.650
+en un 20%, fuimos capaces de hacerlo correctamente
+
+245
+00:11:25.650 --> 00:11:29.195
+y la razón para eso es porque los flotantes
+
+246
+00:11:29.195 --> 00:11:31.820
+y los números enteros están dentro
+
+247
+00:11:31.820 --> 00:11:33.980
+del tipo de datos numéricos
+
+248
+00:11:33.980 --> 00:11:36.090
+y funcionarán así,
+
+249
+00:11:36.090 --> 00:11:41.090
+sin embargo, una cadena no puede combinarse con un número
+
+250
+00:11:41.980 --> 00:11:45.230
+y esa es la razón por la que estamos recibiendo este error.
+
+251
+00:11:45.230 --> 00:11:48.500
+No se deducirá que simplemente estamos deseando
+
+252
+00:11:48.500 --> 00:11:51.260
+ingresar este total y deslizarlo aquí dentro.
+
+253
+00:11:51.260 --> 00:11:55.280
+Ahora, más adelante en la sección de cadenas, voy a
+
+254
+00:11:55.280 --> 00:11:58.610
+repasar cómo podemos hacer esto
+
+255
+00:11:58.610 --> 00:12:01.535
+de una manera más limpia, pero por ahora lo que quiero
+
+256
+00:12:01.535 --> 00:12:05.480
+mostrarte es cómo puedes realmente convertir
+
+257
+00:12:05.480 --> 00:12:08.300
+un tipo de datos a otro.
+
+258
+00:12:08.300 --> 00:12:13.270
+Así que si digo, "Tu total es" puedo llamar un método
+
+259
+00:12:13.270 --> 00:12:17.020
+aquí llamado STR que es la abreviatura de Cadena
+
+260
+00:12:17.020 --> 00:12:20.460
+y luego puedo, usando los paréntesis, encerrar el total
+
+261
+00:12:20.460 --> 00:12:22.840
+dentro de eso, y lo que esto va a
+
+262
+00:12:22.840 --> 00:12:25.680
+hacer es, va a tomar el valor del total
+
+263
+00:12:25.680 --> 00:12:29.153
+y el tipo de datos, y va a convertirlo
+
+264
+00:12:29.153 --> 00:12:32.810
+a una cadena, y con esto igualando a una cadena,
+
+265
+00:12:32.810 --> 00:12:36.460
+ahora se puede combinar con todo lo demás.
+
+266
+00:12:36.460 --> 00:12:39.520
+Así que ahora, si presiono Enter, verás
+
+267
+00:12:39.520 --> 00:12:43.740
+que lo imprime y combina el tipo de datos numéricos.
+
+268
+00:12:43.740 --> 00:12:46.700
+Así que dice: "Tu Total es 120.0"
+
+269
+00:12:46.700 --> 00:12:50.060
+así que todo está funcionando correctamente.
+
+270
+00:12:50.060 --> 00:12:52.070
+Y antes de que terminemos con este tipo,
+
+271
+00:12:52.070 --> 00:12:54.560
+hay un pequeño cambio que quiero mostrarte,
+
+272
+00:12:54.560 --> 00:12:58.010
+y eso es, si recuerdas cuando dije que los números
+
+273
+00:12:58.010 --> 00:13:00.320
+pueden ser enteros, pueden ser flotantes,
+
+274
+00:13:00.320 --> 00:13:02.470
+e incluso pueden ser fracciones.
+
+275
+00:13:02.470 --> 00:13:04.230
+Bueno, justo aquí con el subtotal,
+
+276
+00:13:04.230 --> 00:13:09.230
+puedo cambiar este 20% para que sea un quinto,
+
+277
+00:13:11.360 --> 00:13:14.500
+y ahora, si pongo esto en marcha, va a seguir
+
+278
+00:13:14.500 --> 00:13:16.100
+dando exactamente el mismo resultado.
+
+279
+00:13:16.100 --> 00:13:20.610
+Así que, si hago eso, puedes ver que tu total es de 120.
+
+280
+00:13:20.610 --> 00:13:23.830
+Así que las opciones que puedes implementar
+
+281
+00:13:23.830 --> 00:13:27.390
+para los números es en realidad una lista bastante extensa
+
+282
+00:13:27.390 --> 00:13:28.610
+y puedas trabajar
+
+283
+00:13:28.610 --> 00:13:30.400
+con todo tipo de números diferentes
+
+284
+00:13:30.400 --> 00:13:32.220
+para realizar cálculos sobre ellos
+
+285
+00:13:32.220 --> 00:13:34.010
+y es una de las cosas que hace que
+
+286
+00:13:34.010 --> 00:13:37.170
+Python sea un lenguaje de programación tan popular.
+
+287
+00:13:37.170 --> 00:13:39.903
+Así que esta es la vista general
+
+288
+00:13:39.903 --> 00:13:41.870
+sobre los tipos de datos más populares
+
+289
+00:13:41.870 --> 00:13:44.343
+que se usan dentro de Python.
+

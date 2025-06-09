@@ -1,0 +1,568 @@
+WEBVTT
+
+1
+00:00:00.980 --> 00:00:03.530
+<v ->En esta guía, veremos una comparación</v>
+
+2
+00:00:03.530 --> 00:00:07.780
+entre tres populares servicios
+de alojamiento
+
+3
+00:00:07.780 --> 00:00:09.180
+de repositorios Git.
+
+4
+00:00:09.180 --> 00:00:12.800
+En concreto, hablaremos de GitHub,
+
+5
+00:00:12.800 --> 00:00:14.520
+de GitLab
+
+6
+00:00:14.520 --> 00:00:17.750
+y de Bitbucket.
+
+7
+00:00:17.750 --> 00:00:19.470
+Empezaremos con GitHub.
+
+8
+00:00:19.470 --> 00:00:22.950
+En parte, la razón por la que
+normalmente uso GitHub,
+
+9
+00:00:22.950 --> 00:00:25.700
+que es lo que usaremos para todo este curso,
+
+10
+00:00:25.700 --> 00:00:29.715
+lo uso para casi todos mis proyectos,
+
+11
+00:00:29.715 --> 00:00:31.556
+es que es uno de los mejores
+
+12
+00:00:31.556 --> 00:00:34.110
+de uso general que existen.
+
+13
+00:00:34.110 --> 00:00:37.420
+Funciona muy bien si trabajas en equipo,
+
+14
+00:00:37.420 --> 00:00:39.310
+dispone de un buen sistema
+de seguimiento de problemas
+
+15
+00:00:39.310 --> 00:00:43.720
+y resulta sencillo poder tener un lugar
+
+16
+00:00:43.720 --> 00:00:46.970
+con todos mis repositorios centralizados.
+
+17
+00:00:46.970 --> 00:00:50.580
+Y en cuanto al precio, tampoco está mal.
+
+18
+00:00:50.580 --> 00:00:53.113
+Otra opción es GitLab.
+
+19
+00:00:53.963 --> 00:00:58.500
+GitLab es una buena opción si trabajas
+
+20
+00:00:58.500 --> 00:01:00.000
+en un entorno empresarial.
+
+21
+00:01:00.000 --> 00:01:03.460
+Si tienes una serie de requisitos,
+
+22
+00:01:03.460 --> 00:01:07.080
+como trabajar con LDAP, que es cómo
+
+23
+00:01:07.080 --> 00:01:11.351
+se conecta un conjunto activo
+de directorios de Windows
+
+24
+00:01:11.351 --> 00:01:13.317
+de protocolos
+de autenticación directamente
+
+25
+00:01:13.317 --> 00:01:15.722
+a tus repositorios de código,
+
+26
+00:01:15.722 --> 00:01:18.540
+entonces GitLab es una gran opción.
+
+27
+00:01:18.540 --> 00:01:21.690
+También puede tener lo que se denomina
+
+28
+00:01:21.690 --> 00:01:24.780
+una opción alojada, que significa que
+
+29
+00:01:24.780 --> 00:01:28.030
+puedes instalar
+el código fuente de GitLab
+
+30
+00:01:28.030 --> 00:01:30.070
+en tus propios servidores.
+
+31
+00:01:30.070 --> 00:01:33.630
+Así que es como tener
+tu propia versión de GitHub,
+
+32
+00:01:33.630 --> 00:01:37.370
+pero se llama GitLab,
+directamente en tu servidor
+
+33
+00:01:37.370 --> 00:01:41.300
+y así no tendrás que preocuparte
+
+34
+00:01:41.300 --> 00:01:44.150
+de ningún problema
+ni de vulnerabilidades
+
+35
+00:01:44.150 --> 00:01:47.272
+de seguridad con las que tendrías
+
+36
+00:01:47.272 --> 00:01:49.690
+que trabajar si usaras
+
+37
+00:01:49.690 --> 00:01:52.100
+GitHub o, el siguiente del que hablaremos,
+
+38
+00:01:52.100 --> 00:01:57.100
+Bitbucket. De hecho, en 2017, GitLab tuvo
+
+39
+00:01:57.395 --> 00:02:02.060
+un problema: uno
+de los desarrolladores borró
+
+40
+00:02:02.060 --> 00:02:04.720
+accidentalmente toda una base de datos,
+
+41
+00:02:04.720 --> 00:02:09.290
+y todos los usuarios del GitLab estándar
+
+42
+00:02:09.290 --> 00:02:12.310
+que no empleaban la versión alojada
+
+43
+00:02:12.310 --> 00:02:14.180
+perdieron bastantes datos
+
+44
+00:02:14.180 --> 00:02:16.160
+y llevó un tiempo recuperarlos.
+
+45
+00:02:16.160 --> 00:02:19.600
+Por entonces, yo trabajaba en un equipo
+
+46
+00:02:19.600 --> 00:02:22.890
+con GitLab, pero usaban la versión alojada,
+
+47
+00:02:22.890 --> 00:02:27.287
+así que este borrado no nos afectó.
+
+48
+00:02:27.287 --> 00:02:32.210
+Ya que GitLab está diseñado para trabajar
+
+49
+00:02:32.210 --> 00:02:34.630
+en entornos empresariales,
+
+50
+00:02:34.630 --> 00:02:37.880
+verás que tiene
+una estructura de precios
+
+51
+00:02:37.880 --> 00:02:39.260
+muy diferente a la de GitHub.
+
+52
+00:02:39.260 --> 00:02:43.480
+Ofrecen una versión de prueba gratuita
+
+53
+00:02:43.480 --> 00:02:44.730
+con diferentes compatibilidades.
+
+54
+00:02:44.730 --> 00:02:46.590
+Pero, a medida que avanzas,
+
+55
+00:02:46.590 --> 00:02:49.740
+ves las opciones Starter, Premium y Ultimate,
+
+56
+00:02:49.740 --> 00:02:53.490
+que tienen muchas características
+
+57
+00:02:53.490 --> 00:02:57.570
+relacionadas con el trabajo
+
+58
+00:02:57.570 --> 00:02:58.410
+en un entorno empresarial.
+
+59
+00:02:58.410 --> 00:03:02.330
+También son buenas
+para usarse con herramientas
+
+60
+00:03:02.330 --> 00:03:04.910
+de gestión de proyectos,
+seguimiento de problemas
+
+61
+00:03:04.910 --> 00:03:07.950
+y para una integración continua.
+
+62
+00:03:07.950 --> 00:03:10.490
+Y si no sabes qué son estas cosas
+
+63
+00:03:10.490 --> 00:03:11.940
+y eres nuevo en el mundo del desarrollador,
+
+64
+00:03:11.940 --> 00:03:13.340
+no tienes que preocuparte
+
+65
+00:03:13.340 --> 00:03:15.980
+porque son cosas que no tienes que aplicar
+
+66
+00:03:15.980 --> 00:03:18.090
+ahora mismo, lo aprenderás más tarde.
+
+67
+00:03:18.090 --> 00:03:21.950
+Solo debes saber que GitLab
+es una buena opción
+
+68
+00:03:21.950 --> 00:03:24.330
+cuando quieres tener
+más control sobre tus datos.
+
+69
+00:03:24.330 --> 00:03:29.160
+A nadie le gusta pasar
+sus repositorios de código
+
+70
+00:03:29.160 --> 00:03:30.890
+a servicios de terceros.
+
+71
+00:03:30.890 --> 00:03:34.477
+Con GitLab, puedes gestionarlos
+
+72
+00:03:34.477 --> 00:03:35.750
+con mayor control.
+
+73
+00:03:35.750 --> 00:03:39.080
+El tercero que os mostraré es Bitbucket,
+
+74
+00:03:39.080 --> 00:03:43.250
+y os diré que he usado los tres
+
+75
+00:03:43.250 --> 00:03:45.510
+en varios proyectos durante estos años.
+
+76
+00:03:45.510 --> 00:03:47.520
+Puede que el que más use sea GitHub,
+
+77
+00:03:47.520 --> 00:03:50.700
+pero, según el cliente con el que trabaje
+
+78
+00:03:50.700 --> 00:03:53.730
+o los requisitos
+de la persona para la que
+
+79
+00:03:53.730 --> 00:03:57.148
+creo el sistema,
+he usado Bitbucket y GitLab
+
+80
+00:03:57.148 --> 00:03:59.621
+en varias ocasiones.
+
+81
+00:03:59.621 --> 00:04:03.116
+Bitbucket pertenece
+a la empresa Atlassian,
+
+82
+00:04:03.116 --> 00:04:07.342
+y Atlassian también es dueña del servicio
+
+83
+00:04:07.342 --> 00:04:09.340
+de gestión de proyectos Jira.
+
+84
+00:04:09.340 --> 00:04:13.410
+Por ello, Bitbucket se integra de muchas maneras
+
+85
+00:04:13.410 --> 00:04:18.110
+y es útil si usas Jira
+
+86
+00:04:18.110 --> 00:04:20.420
+para gestionar proyectos, así que también
+
+87
+00:04:20.420 --> 00:04:24.540
+funciona bien en un entorno empresarial,
+
+88
+00:04:24.540 --> 00:04:27.910
+no diría que igual que GitLab, no tiene
+
+89
+00:04:27.910 --> 00:04:31.630
+tantas funciones, y no me convence demasiado
+
+90
+00:04:31.630 --> 00:04:32.680
+su interfaz.
+
+91
+00:04:32.680 --> 00:04:34.900
+Es una preferencia personal,
+
+92
+00:04:34.900 --> 00:04:36.860
+puede que tú lo pruebes
+
+93
+00:04:36.860 --> 00:04:39.260
+y te encante, y eso es genial.
+
+94
+00:04:39.260 --> 00:04:42.650
+Lo que hay que recordar
+sobre estos tres
+
+95
+00:04:42.650 --> 00:04:45.550
+es que son simplemente wrappers,
+
+96
+00:04:45.550 --> 00:04:49.050
+son wrappers visuales
+y servicios de alojamiento
+
+97
+00:04:49.050 --> 00:04:50.440
+para Git.
+
+98
+00:04:50.440 --> 00:04:53.330
+Eso significa que
+
+99
+00:04:53.330 --> 00:04:56.850
+todo lo que veamos en este curso
+
+100
+00:04:56.850 --> 00:04:59.170
+lo podrás hacer
+
+101
+00:04:59.170 --> 00:05:00.150
+con estos tres servicios.
+
+102
+00:05:00.150 --> 00:05:04.209
+Es una buena idea a tener en cuenta.
+
+103
+00:05:04.209 --> 00:05:07.348
+Cualquiera que elijas funcionará
+
+104
+00:05:07.348 --> 00:05:08.830
+para todo lo que veamos en este curso
+
+105
+00:05:08.830 --> 00:05:12.250
+y, muy probablemente, para un 95 %
+
+106
+00:05:12.250 --> 00:05:17.250
+de los requisitos de tu proyecto.
+
+107
+00:05:17.370 --> 00:05:18.827
+Así que tenlo en cuenta.
+
+108
+00:05:18.827 --> 00:05:21.900
+La razón por la que
+he incluido a Bitbucket
+
+109
+00:05:21.900 --> 00:05:26.470
+no se debe a ninguna función especial
+
+110
+00:05:26.470 --> 00:05:29.660
+que me guste, sino principalmente porque,
+
+111
+00:05:29.660 --> 00:05:32.680
+si vas a la pestaña de precios, verás que
+
+112
+00:05:32.680 --> 00:05:36.796
+es el único de los tres que proporciona
+
+113
+00:05:36.796 --> 00:05:40.095
+repositorios privados ilimitados
+
+114
+00:05:40.095 --> 00:05:41.680
+en su versión gratuita.
+
+115
+00:05:41.680 --> 00:05:44.330
+Así que, si tú, tu cliente o la empresa
+
+116
+00:05:44.330 --> 00:05:47.560
+con la que trabajas tienen
+un presupuesto limitado,
+
+117
+00:05:47.560 --> 00:05:50.250
+puede que Bitbucket sea perfecto para ti.
+
+118
+00:05:50.250 --> 00:05:54.030
+Cuando he trabajado
+en equipos que usan Bitbucket,
+
+119
+00:05:54.030 --> 00:05:57.030
+ha sido porque no querían gastar
+
+120
+00:05:57.030 --> 00:06:01.757
+dinero para tener repositorios privados,
+
+121
+00:06:01.757 --> 00:06:05.940
+que son de pago en GitHub y GitLab.
+
+122
+00:06:05.940 --> 00:06:08.800
+Así que, si quieres que
+tu código sea privado,
+
+123
+00:06:08.800 --> 00:06:10.680
+pero no quieres pagarlo,
+
+124
+00:06:10.680 --> 00:06:14.510
+entonces Bitbucket
+puede ser ideal para ti.
+
+125
+00:06:14.510 --> 00:06:18.565
+En resumen, estos son
+los tres principales servicios
+
+126
+00:06:18.565 --> 00:06:20.620
+de alojamiento de Git.
+
+127
+00:06:20.620 --> 00:06:23.410
+GitHub, que en realidad
+es el líder del mercado,
+
+128
+00:06:23.410 --> 00:06:26.220
+y en mi opinión, el mejor servicio
+
+129
+00:06:26.220 --> 00:06:27.320
+de uso general.
+
+130
+00:06:27.320 --> 00:06:30.880
+GitLab, que funciona
+de maravilla en equipos
+
+131
+00:06:30.880 --> 00:06:34.095
+y cuando trabajas con requisitos
+
+132
+00:06:34.095 --> 00:06:35.750
+de tipo empresarial.
+
+133
+00:06:35.750 --> 00:06:39.730
+Y Bitbucket, que te permite
+un gran conjunto
+
+134
+00:06:39.730 --> 00:06:43.973
+de herramientas a un precio menor.
+

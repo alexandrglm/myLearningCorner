@@ -1,0 +1,1338 @@
+WEBVTT
+
+1
+00:00:01.410 --> 00:00:03.300
+<v Narrador>En esta lección, veremos</v>
+
+2
+00:00:03.300 --> 00:00:06.680
+cómo podemos acceder a los valores dentro de las cadenas
+
+3
+00:00:06.680 --> 00:00:09.460
+y también trabajaremos con rangos.
+
+4
+00:00:09.460 --> 00:00:12.550
+Ahora, no te preocupe si no sabes qué son,
+
+5
+00:00:12.550 --> 00:00:13.870
+nunca has trabajado con ellos antes,
+
+6
+00:00:13.870 --> 00:00:16.170
+vamos a tener una visión muy preliminar
+
+7
+00:00:16.170 --> 00:00:18.720
+y luego vamos a ver algunos ejemplos sobre
+
+8
+00:00:18.720 --> 00:00:20.930
+cómo puedes usar los rangos y
+
+9
+00:00:20.930 --> 00:00:23.410
+cómo puedes acceder a los valores de cadena.
+
+10
+00:00:23.410 --> 00:00:26.300
+Si vienes de un lenguaje de programación diferente,
+
+11
+00:00:26.300 --> 00:00:27.960
+parte de esto será revisado,
+
+12
+00:00:27.960 --> 00:00:30.768
+porque la forma en que puedes acceder
+
+13
+00:00:30.768 --> 00:00:31.690
+a estos valores de cadena
+
+14
+00:00:31.690 --> 00:00:33.823
+es muy similar a la forma en que puedes
+
+15
+00:00:33.823 --> 00:00:35.450
+acceder a los valores de cadena
+
+16
+00:00:35.450 --> 00:00:38.770
+en lenguajes como Ruby y JavaScript.
+
+17
+00:00:38.770 --> 00:00:41.020
+Por lo tanto, será un poco de revisión para ti,
+
+18
+00:00:41.020 --> 00:00:43.200
+pero también reforzará el hecho
+
+19
+00:00:43.200 --> 00:00:45.840
+de que puedes realizar las mismas tareas.
+
+20
+00:00:45.840 --> 00:00:48.240
+Si Python es tu primer lenguaje de programación,
+
+21
+00:00:48.240 --> 00:00:50.360
+o has venido de lenguajes que
+
+22
+00:00:50.360 --> 00:00:51.869
+no tienen este tipo de construcción,
+
+23
+00:00:51.869 --> 00:00:55.270
+entonces esto será nuevo, pero será muy importante,
+
+24
+00:00:55.270 --> 00:00:58.800
+porque algunos de los temas de los que hablaremos
+
+25
+00:00:58.800 --> 00:01:01.630
+en esta guía, serán capaces de ser aplicados
+
+26
+00:01:01.630 --> 00:01:05.260
+a todo tipo de diferentes técnicas de programación.
+
+27
+00:01:05.260 --> 00:01:07.690
+Y lo primero de lo que voy a hablar es
+
+28
+00:01:07.690 --> 00:01:10.280
+la numeración basada en cero.
+
+29
+00:01:10.280 --> 00:01:12.450
+Y tendrá sentido en un momento,
+
+30
+00:01:12.450 --> 00:01:14.450
+por qué vamos a empezar con esto.
+
+31
+00:01:14.450 --> 00:01:17.350
+Pero, digamos que tenemos nuestra frase aquí,
+
+32
+00:01:17.350 --> 00:01:20.370
+y voy a poner la cadena
+
+33
+00:01:20.370 --> 00:01:24.220
+dentro de un comentario, aquí en la parte superior.
+
+34
+00:01:24.220 --> 00:01:28.150
+Y cada uno de estos elementos tiene un índice.
+
+35
+00:01:28.150 --> 00:01:30.540
+Ahora, realmente no puedes verlo, pero Python,
+
+36
+00:01:30.540 --> 00:01:33.550
+cuando construye una cadena, crea un índice
+
+37
+00:01:33.550 --> 00:01:36.900
+para cada uno de estos elementos, y aquí,
+
+38
+00:01:36.900 --> 00:01:38.683
+con la 'T' mayúscula,
+
+39
+00:01:38.683 --> 00:01:42.460
+este es el primer elemento del índice.
+
+40
+00:01:42.460 --> 00:01:45.530
+'h' es el segundo, y así sucesivamente,
+
+41
+00:01:45.530 --> 00:01:47.070
+hasta el final de la línea.
+
+42
+00:01:47.070 --> 00:01:50.190
+Así que cada vez que vamos a acceder a un valor,
+
+43
+00:01:50.190 --> 00:01:53.960
+o vamos a sacar cualquiera de estos caracteres
+
+44
+00:01:53.960 --> 00:01:56.440
+dentro de la cadena, necesitamos poder
+
+45
+00:01:56.440 --> 00:01:59.720
+proporcionar cuál es ese valor.
+
+46
+00:01:59.720 --> 00:02:03.470
+Y así, este sistema de numeración es un poco complicado
+
+47
+00:02:03.470 --> 00:02:05.200
+si nunca lo has usado antes,
+
+48
+00:02:05.200 --> 00:02:07.000
+porque es lo que se llama
+
+49
+00:02:07.000 --> 00:02:09.230
+un sistema de numeración basado en cero,
+
+50
+00:02:09.230 --> 00:02:13.250
+y cuando empecemos a trabajar con listas y colecciones,
+
+51
+00:02:13.250 --> 00:02:16.050
+verás que el mismo tipo de sistema de numeración
+
+52
+00:02:16.050 --> 00:02:20.460
+se utiliza en toda la comunidad informática,
+
+53
+00:02:20.460 --> 00:02:23.650
+así que esto va a pasar, no importa si
+
+54
+00:02:23.650 --> 00:02:27.930
+estás trabajando en Python, Java, JavaScript, Ruby,
+
+55
+00:02:27.930 --> 00:02:29.771
+todos estos lenguajes utilizan
+
+56
+00:02:29.771 --> 00:02:31.410
+un sistema de numeración basado en cero.
+
+57
+00:02:31.410 --> 00:02:33.160
+Por lo tanto, puede ser intuitivo
+
+58
+00:02:33.160 --> 00:02:36.070
+pensar que la "T" mayúscula
+
+59
+00:02:36.070 --> 00:02:41.070
+sería mapeada a una, porque ese es el primer elemento,
+
+60
+00:02:41.330 --> 00:02:45.160
+pero en realidad, está mapeada a cero.
+
+61
+00:02:45.160 --> 00:02:48.170
+Y así cada una de estas cadenas,
+
+62
+00:02:48.170 --> 00:02:50.129
+y una vez que entramos en las matrices
+
+63
+00:02:50.129 --> 00:02:51.790
+y esos tipos de listas,
+
+64
+00:02:51.790 --> 00:02:55.060
+el primer elemento no tiene un índice de uno,
+
+65
+00:02:55.060 --> 00:02:57.050
+tiene un índice de cero.
+
+66
+00:02:57.050 --> 00:03:00.860
+Así que, sólo para hacer un poco de un desglose aquí,
+
+67
+00:03:00.860 --> 00:03:03.900
+la 'T' va a ser cero,
+
+68
+00:03:03.900 --> 00:03:07.210
+el índice de la 'h' va a ser uno,
+
+69
+00:03:07.210 --> 00:03:12.210
+y luego la 'e' va a ser dos,
+
+70
+00:03:12.350 --> 00:03:15.820
+y luego continuando por la línea, el espacio,
+
+71
+00:03:15.820 --> 00:03:18.170
+sólo voy a hacer un poco de espacio ahí dentro,
+
+72
+00:03:18.170 --> 00:03:22.790
+y eso va a ser tres.
+
+73
+00:03:22.790 --> 00:03:24.590
+Así es como funciona un sistema
+
+74
+00:03:24.590 --> 00:03:25.750
+de numeración basado en cero,
+
+75
+00:03:25.750 --> 00:03:29.760
+todo el camino hasta lo que sea que es esta "d", aquí mismo,
+
+76
+00:03:29.760 --> 00:03:32.280
+y es importante pensar, e incluir,
+
+77
+00:03:32.280 --> 00:03:34.440
+los espacios vacíos, porque si no lo haces,
+
+78
+00:03:34.440 --> 00:03:36.860
+vas a tener algunos problemas de conteo.
+
+79
+00:03:36.860 --> 00:03:40.650
+Y así, veamos cómo funciona esto, ahora que tienes una idea
+
+80
+00:03:40.650 --> 00:03:43.650
+y un marco mental de cómo funciona el sistema de numeración,
+
+81
+00:03:43.650 --> 00:03:45.782
+veamos cómo podemos acceder a estos valores.
+
+82
+00:03:45.782 --> 00:03:49.062
+Voy a copiar 'starter_sentence' aquí mismo,
+
+83
+00:03:49.062 --> 00:03:51.670
+e imprimamos esto, así que voy a decir
+
+84
+00:03:51.670 --> 00:03:55.030
+print , y la forma en que se accede a él
+
+85
+00:03:55.030 --> 00:03:59.010
+es justo después de la variable que contiene este valor,
+
+86
+00:03:59.010 --> 00:04:03.261
+voy a pasar entre estos corchetes, y en el corchete,
+
+87
+00:04:03.261 --> 00:04:07.620
+le pasaré cualquier índice que quiera usar.
+
+88
+00:04:07.620 --> 00:04:09.028
+Así que si quiero encontrar
+
+89
+00:04:09.028 --> 00:04:11.932
+el primer elemento, esta "T" mayúscula,
+
+90
+00:04:11.932 --> 00:04:15.183
+pasaré el cero entre estos corchetes.
+
+91
+00:04:15.183 --> 00:04:17.220
+Y ahora si le doy a Enter, puedes ver
+
+92
+00:04:17.220 --> 00:04:22.130
+que sólo imprime la 'T', así que esto funciona correctamente
+
+93
+00:04:22.130 --> 00:04:27.079
+y puedo cambiarlo, y si quiero cambiarlo a, digamos, 12,
+
+94
+00:04:27.079 --> 00:04:30.080
+voy a imprimir sólo la 'o',
+
+95
+00:04:30.080 --> 00:04:33.100
+así que lo más probable es que sea esta 'o',
+
+96
+00:04:33.100 --> 00:04:35.540
+o esta 'o', si la contamos hasta el final,
+
+97
+00:04:35.540 --> 00:04:36.930
+entonces veremos cuál.
+
+98
+00:04:36.930 --> 00:04:40.230
+Así es como se puede acceder a un valor.
+
+99
+00:04:40.230 --> 00:04:43.300
+Ahora, hay un poco de truco aquí,
+
+100
+00:04:43.300 --> 00:04:45.530
+y nos lleva perfectamente a
+
+101
+00:04:45.530 --> 00:04:48.681
+entender el concepto de inmutabilidad.
+
+102
+00:04:48.681 --> 00:04:53.150
+Por lo tanto, inmutabilidad es una palabra muy, muy larga,
+
+103
+00:04:53.150 --> 00:04:54.050
+que simplemente significa
+
+104
+00:04:54.050 --> 00:04:55.940
+que no se puede cambiar un elemento.
+
+105
+00:04:55.940 --> 00:04:58.774
+Así que, para una cadena en Python,
+
+106
+00:04:58.774 --> 00:05:02.480
+las cadenas en Python son lo que se llaman inmutables,
+
+107
+00:05:02.480 --> 00:05:04.500
+lo que significa que en realidad no podemos
+
+108
+00:05:04.500 --> 00:05:08.520
+alterar la cadena una vez que ha sido creada.
+
+109
+00:05:08.520 --> 00:05:09.530
+Entonces, en otras palabras, no podemos
+
+110
+00:05:09.530 --> 00:05:11.670
+cambiar los caracteres en la cadena.
+
+111
+00:05:11.670 --> 00:05:14.270
+Podemos ir, podemos crear una nueva variable,
+
+112
+00:05:14.270 --> 00:05:18.530
+y alterarlos de esa manera realizando algún formateo,
+
+113
+00:05:18.530 --> 00:05:20.390
+y algunas tareas diferentes como esas,
+
+114
+00:05:20.390 --> 00:05:22.860
+pero si quieres probar esto,
+
+115
+00:05:22.860 --> 00:05:26.671
+sabemos que esta letra 'o' estaba en esta 12ª posición,
+
+116
+00:05:26.671 --> 00:05:29.700
+y en muchos otros lenguajes de programación,
+
+117
+00:05:29.700 --> 00:05:31.650
+serías capaz de hacer algo como esto,
+
+118
+00:05:31.650 --> 00:05:34.640
+donde podría decir starter_sentence[12],
+
+119
+00:05:34.640 --> 00:05:38.560
+y luego ponerlo igual, digamos, a 'A' mayúscula.
+
+120
+00:05:38.560 --> 00:05:41.790
+Y ahora, si llego a starter_sentence
+
+121
+00:05:41.790 --> 00:05:43.760
+y trato de imprimirla de nuevo,
+
+122
+00:05:43.760 --> 00:05:45.667
+va a devolver un error, y dice,
+
+123
+00:05:45.667 --> 00:05:48.007
+"TypeError: 'string' objects
+
+124
+00:05:48.007 --> 00:05:51.020
+"does not support item assignment",
+
+125
+00:05:51.020 --> 00:05:53.110
+que es sólo otra forma de decir
+
+126
+00:05:53.110 --> 00:05:55.960
+que no eres capaz de cambiar los valores.
+
+127
+00:05:55.960 --> 00:05:57.493
+Una vez que haya creado una cadena,
+
+128
+00:05:57.493 --> 00:05:59.602
+no puedes alterar esa cadena,
+
+129
+00:05:59.602 --> 00:06:01.480
+simplemente puedes trabajar con ella,
+
+130
+00:06:01.480 --> 00:06:04.160
+puedes crear otra variable, dividirla,
+
+131
+00:06:04.160 --> 00:06:08.590
+que veremos más adelante, y luego puedes guardar ese valor
+
+132
+00:06:08.590 --> 00:06:11.110
+dentro de la nueva variable,
+
+133
+00:06:11.110 --> 00:06:12.880
+y luego la habrás alterado,
+
+134
+00:06:12.880 --> 00:06:16.190
+pero no habrás tocado el objeto original,
+
+135
+00:06:16.190 --> 00:06:17.465
+y una vez que entres en un
+
+136
+00:06:17.465 --> 00:06:19.790
+desarrollo más avanzado de Python,
+
+137
+00:06:19.790 --> 00:06:21.630
+verás por qué esto es importante
+
+138
+00:06:21.630 --> 00:06:25.220
+y verás por qué los creadores del lenguaje decidieron
+
+139
+00:06:25.220 --> 00:06:27.610
+hacerlo de esta manera, en lugar de permitirte
+
+140
+00:06:27.610 --> 00:06:30.080
+modificar esto cuando lo desees,
+
+141
+00:06:30.080 --> 00:06:32.430
+y en realidad es una de las razones clave
+
+142
+00:06:32.430 --> 00:06:34.696
+por las que Python es tan popular
+
+143
+00:06:34.696 --> 00:06:36.510
+en la comunidad de aprendizaje automático,
+
+144
+00:06:36.510 --> 00:06:39.440
+se debe a la inmutabilidad, cuando se trata de
+
+145
+00:06:39.440 --> 00:06:43.060
+cadenas y valores, se considera increíblemente importante,
+
+146
+00:06:43.060 --> 00:06:46.970
+porque la inmutabilidad te permite tener mucha más confianza
+
+147
+00:06:46.970 --> 00:06:50.830
+en los datos, porque sabes que los datos no pueden cambiar.
+
+148
+00:06:50.830 --> 00:06:52.670
+Y algunas de las cosas de las que estoy hablando,
+
+149
+00:06:52.670 --> 00:06:55.130
+realmente no vamos a entrar, y entender
+
+150
+00:06:55.130 --> 00:06:57.260
+por qué son importantes hasta más tarde,
+
+151
+00:06:57.260 --> 00:07:00.350
+pero es importante tener un conocimiento fundamental
+
+152
+00:07:00.350 --> 00:07:03.168
+de eso ahora mismo, para que tenga sentido más adelante.
+
+153
+00:07:03.168 --> 00:07:05.950
+Así que, hablemos de cómo realmente
+
+154
+00:07:05.950 --> 00:07:07.460
+podríamos cambiar una frase.
+
+155
+00:07:07.460 --> 00:07:09.718
+Así que, voy a deshacerme de esto,
+
+156
+00:07:09.718 --> 00:07:11.693
+y antes de que podamos hacerlo,
+
+157
+00:07:11.693 --> 00:07:15.080
+tenemos que averiguar y aprender sobre los rangos.
+
+158
+00:07:15.080 --> 00:07:16.530
+Y así, los rangos
+
+159
+00:07:16.530 --> 00:07:20.450
+son una forma de acceder a más de un valor.
+
+160
+00:07:20.450 --> 00:07:24.084
+Entonces, digamos que quiero las primeras tres letras.
+
+161
+00:07:24.084 --> 00:07:27.790
+Podría hacer algo como esto, pero sería muy complicado,
+
+162
+00:07:27.790 --> 00:07:30.110
+en donde podría decir 'cero',
+
+163
+00:07:30.110 --> 00:07:33.403
+y diríamos que esto es primero,
+
+164
+00:07:35.230 --> 00:07:39.630
+y luego podemos llegar a otro que diga segundo,
+
+165
+00:07:39.630 --> 00:07:44.223
+y este va a ser 'uno', y luego el tercero,
+
+166
+00:07:45.520 --> 00:07:47.570
+y este va a ser 'dos',
+
+167
+00:07:47.570 --> 00:07:51.800
+y entonces podríamos tener una nueva variable creada que,
+
+168
+00:07:51.800 --> 00:07:54.577
+diremos, la llamaremos 'new_sentence',
+
+169
+00:07:55.770 --> 00:07:58.010
+y entonces esto simplemente va a ser
+
+170
+00:07:58.010 --> 00:08:00.320
+estos tres se sumaron,
+
+171
+00:08:00.320 --> 00:08:01.883
+así que será primero,
+
+172
+00:08:03.290 --> 00:08:08.020
+segundo, y luego tercero.
+
+173
+00:08:08.020 --> 00:08:10.050
+Y luego imprimiremos nuestra nueva oración,
+
+174
+00:08:10.050 --> 00:08:12.390
+que debería tener la primera palabra
+
+175
+00:08:12.390 --> 00:08:15.170
+de lo que tenemos en nuestra oración, que es 'The'.
+
+176
+00:08:15.170 --> 00:08:18.950
+Así que, eso funciona, es una forma horrible de hacerlo,
+
+177
+00:08:18.950 --> 00:08:20.810
+así que sólo quería mostrarte eso,
+
+178
+00:08:20.810 --> 00:08:24.370
+así que si esto surgió en una entrevista de programación
+
+179
+00:08:24.370 --> 00:08:25.990
+o algo así, entenderás
+
+180
+00:08:25.990 --> 00:08:29.030
+exactamente por qué quieres usar rangos,
+
+181
+00:08:29.030 --> 00:08:31.440
+o cómo se pueden utilizar los rangos
+
+182
+00:08:31.440 --> 00:08:33.370
+para hacer tus códigos más eficientes.
+
+183
+00:08:33.370 --> 00:08:34.680
+Así que lo que voy a hacer
+
+184
+00:08:34.680 --> 00:08:37.505
+es deshacerme de todos estos objetos aquí,
+
+185
+00:08:37.505 --> 00:08:41.880
+y simplemente voy a decir que tenemos 'starter_sentence',
+
+186
+00:08:41.880 --> 00:08:45.763
+y ahora vamos a tener una 'first_word'.
+
+187
+00:08:45.763 --> 00:08:47.710
+Así que, first_word.
+
+188
+00:08:47.710 --> 00:08:49.287
+Y puedo decir 'starter_sentence',
+
+189
+00:08:49.287 --> 00:08:51.900
+y la sintaxis en Python es bastante buena,
+
+190
+00:08:51.900 --> 00:08:54.850
+la forma en que lo haces es diciendo "0:",
+
+191
+00:08:56.810 --> 00:09:00.700
+así que cero es el primer elemento que quieres encontrar,
+
+192
+00:09:00.700 --> 00:09:04.677
+así que en este caso, va a decir "bring me the 'T'",
+
+193
+00:09:04.677 --> 00:09:07.710
+y los dos puntos significa que estamos buscando un rango.
+
+194
+00:09:07.710 --> 00:09:09.976
+Entonces, podríamos decir cero
+
+195
+00:09:09.976 --> 00:09:12.400
+a cualquier otra cosa que queramos,
+
+196
+00:09:12.400 --> 00:09:15.070
+y va a traernos de vuelta todo eso.
+
+197
+00:09:15.070 --> 00:09:18.800
+Y entonces si hago 0:3 justo aquí,
+
+198
+00:09:18.800 --> 00:09:20.430
+y digo, first_word,
+
+199
+00:09:20.430 --> 00:09:24.510
+Puedo decir new_sentence, y simplemente cambiar
+
+200
+00:09:24.510 --> 00:09:26.163
+el first_word allí mismo,
+
+201
+00:09:26.163 --> 00:09:30.380
+y ahora si imprimo esto puedes ver que tenemos 'The'.
+
+202
+00:09:30.380 --> 00:09:33.953
+Y somos capaces de hacerlo con un solo rango.
+
+203
+00:09:33.953 --> 00:09:38.920
+Ahora, un asunto muy importante pero muy sutil aquí, es,
+
+204
+00:09:38.920 --> 00:09:41.040
+mira lo que pasa si uso '2'.
+
+205
+00:09:41.040 --> 00:09:45.122
+Así que, si ejecuto esto, y hago 2, sólo me devuelve 'Th',
+
+206
+00:09:45.122 --> 00:09:47.000
+y por lo tanto es importante entender,
+
+207
+00:09:47.000 --> 00:09:48.790
+siempre que trabajes con rangos,
+
+208
+00:09:48.790 --> 00:09:52.372
+cuando ese rango se detenga, y la forma en que funciona es,
+
+209
+00:09:52.372 --> 00:09:55.846
+cualquiera que sea el valor del índice que pongas aquí,
+
+210
+00:09:55.846 --> 00:09:59.940
+el rango se detendrá justo antes de ese valor.
+
+211
+00:09:59.940 --> 00:10:00.773
+Así que en otras palabras,
+
+212
+00:10:00.773 --> 00:10:03.200
+puedes pensar que esto es casi como
+
+213
+00:10:03.200 --> 00:10:06.530
+el final de un sujetalibros, o algo así en un estante,
+
+214
+00:10:06.530 --> 00:10:11.530
+donde este 2 no va a ser capturado dentro del rango,
+
+215
+00:10:11.950 --> 00:10:14.840
+va a parar justo antes de llegar allí.
+
+216
+00:10:14.840 --> 00:10:17.064
+Así que, dentro de nuestra oración,
+
+217
+00:10:17.064 --> 00:10:20.307
+es cero, uno, y luego dos,
+
+218
+00:10:20.307 --> 00:10:22.057
+pero debido a que dijimos que este rango
+
+219
+00:10:22.057 --> 00:10:23.640
+necesita terminar en dos,
+
+220
+00:10:23.640 --> 00:10:26.300
+significa que va a terminar justo antes
+
+221
+00:10:26.300 --> 00:10:28.600
+de llegar a ese índice de dos.
+
+222
+00:10:28.600 --> 00:10:31.690
+Por lo tanto, eso puede ser un poco confuso
+
+223
+00:10:31.690 --> 00:10:33.380
+si nunca has visto eso antes,
+
+224
+00:10:33.380 --> 00:10:35.300
+nunca has trabajado con un rango,
+
+225
+00:10:35.300 --> 00:10:38.210
+pero es muy importante porque sin esto,
+
+226
+00:10:38.210 --> 00:10:39.677
+si te olvidas de ello, lo que va a suceder es
+
+227
+00:10:39.677 --> 00:10:43.880
+vas a terminar con soluciones casi perfectas,
+
+228
+00:10:43.880 --> 00:10:45.182
+pero te vas a perder
+
+229
+00:10:45.182 --> 00:10:49.240
+una palabra o una carta o algo así,
+
+230
+00:10:49.240 --> 00:10:52.392
+y esta es una técnica que también puede ser utilizada
+
+231
+00:10:52.392 --> 00:10:55.520
+cuando se trabaja con estructuras de datos en Python,
+
+232
+00:10:55.520 --> 00:10:58.080
+así que es importante tener un buen entendimiento de esto,
+
+233
+00:10:58.080 --> 00:10:59.610
+porque vamos a usar los rangos
+
+234
+00:10:59.610 --> 00:11:01.570
+bastante a lo largo de este curso,
+
+235
+00:11:01.570 --> 00:11:04.810
+y cuanto más te adentras en el desarrollo de Python,
+
+236
+00:11:04.810 --> 00:11:07.120
+especialmente si te dedicas al aprendizaje automático,
+
+237
+00:11:07.120 --> 00:11:09.730
+vas a estar usando rangos constantemente,
+
+238
+00:11:09.730 --> 00:11:12.960
+así que es bueno que te hagas una idea de ello ahora mismo.
+
+239
+00:11:12.960 --> 00:11:15.340
+Entonces hablemos de como podemos cambiar esta oración.
+
+240
+00:11:15.340 --> 00:11:18.490
+Tenemos una starter_sentence, pero ¿qué tendríamos que hacer
+
+241
+00:11:18.490 --> 00:11:23.490
+si quisiéramos cambiar 'The' por 'Thy', por ejemplo?
+
+242
+00:11:23.670 --> 00:11:28.010
+Bueno, lo que podemos hacer es, voy a deshacerme de esto,
+
+243
+00:11:28.010 --> 00:11:31.610
+y voy a tener una nueva frase aquí sola,
+
+244
+00:11:31.610 --> 00:11:36.020
+y empezaremos con sólo decir 'Thy',
+
+245
+00:11:36.020 --> 00:11:39.160
+y desde ahí, lo que quiero hacer
+
+246
+00:11:39.160 --> 00:11:43.500
+es tirar del resto de la frase,
+
+247
+00:11:43.500 --> 00:11:48.280
+así que todo desde aquí hasta el final,
+
+248
+00:11:48.280 --> 00:11:50.870
+y me gustaría que hicieras una pausa en el vídeo
+
+249
+00:11:50.870 --> 00:11:54.640
+e investigaras cómo puedes trabajar con los rangos,
+
+250
+00:11:54.640 --> 00:11:57.780
+y cómo es posible, y luego vuelve,
+
+251
+00:11:57.780 --> 00:12:01.080
+y ve cómo hacerlo, y es principalmente porque
+
+252
+00:12:01.080 --> 00:12:03.910
+quiero que seas capaz de empezar a entender
+
+253
+00:12:03.910 --> 00:12:07.610
+cómo puedes buscar este tipo de contenido en la web,
+
+254
+00:12:07.610 --> 00:12:09.710
+y cómo puedes hacer tu propia investigación,
+
+255
+00:12:09.710 --> 00:12:11.450
+porque por mucho que me encantaría creer
+
+256
+00:12:11.450 --> 00:12:14.420
+que puedo enseñarte absolutamente todo lo que hay,
+
+257
+00:12:14.420 --> 00:12:15.870
+simplemente no es el caso.
+
+258
+00:12:15.870 --> 00:12:18.343
+Los idiomas y los marcos de trabajo son tan masivos
+
+259
+00:12:18.343 --> 00:12:21.510
+que mi objetivo no sólo es enseñarte los conceptos,
+
+260
+00:12:21.510 --> 00:12:23.500
+sino también enseñarte cómo ir
+
+261
+00:12:23.500 --> 00:12:25.970
+e investigar y aprender los conceptos.
+
+262
+00:12:25.970 --> 00:12:28.250
+Así que, haz una pausa en el video, regresa,
+
+263
+00:12:28.250 --> 00:12:30.910
+y luego te explicaré cómo funciona mi solución
+
+264
+00:12:30.910 --> 00:12:33.980
+para poder crear nuestra nueva oración.
+
+265
+00:12:33.980 --> 00:12:34.820
+¡Bienvenido de vuelta!
+
+266
+00:12:34.820 --> 00:12:36.540
+Esperamos que su investigación haya ido bien
+
+267
+00:12:36.540 --> 00:12:38.880
+y que ya tenga su propia solución de trabajo.
+
+268
+00:12:38.880 --> 00:12:40.720
+Si no, está perfectamente bien,
+
+269
+00:12:40.720 --> 00:12:44.120
+te mostraré cómo lo haría personalmente aquí mismo.
+
+270
+00:12:44.120 --> 00:12:46.440
+Así que, voy a tomar la starter_sentence,
+
+271
+00:12:46.440 --> 00:12:48.520
+y luego voy a añadir los corchetes,
+
+272
+00:12:48.520 --> 00:12:51.570
+y la parte difícil de esto
+
+273
+00:12:51.570 --> 00:12:55.370
+es agarrar el último valor correctamente.
+
+274
+00:12:55.370 --> 00:12:57.987
+Es bastante fácil contar y decir,
+
+275
+00:12:57.987 --> 00:13:01.277
+"Bien, queremos cero, uno, dos,
+
+276
+00:13:01.277 --> 00:13:03.317
+así que vamos a querer empezar en tres
+
+277
+00:13:03.317 --> 00:13:04.927
+porque queremos tener este espacio,
+
+278
+00:13:04.927 --> 00:13:06.947
+y sabemos que queremos tres,
+
+279
+00:13:06.947 --> 00:13:10.320
+pero ¿qué podríamos hacer por el alcance?
+
+280
+00:13:10.320 --> 00:13:13.580
+Ahora, técnicamente, podrías simplemente contar
+
+281
+00:13:13.580 --> 00:13:15.510
+cada uno de estos caracteres,
+
+282
+00:13:15.510 --> 00:13:17.585
+y luego, sea cual sea el índice
+
+283
+00:13:17.585 --> 00:13:19.320
+que esté justo después de la 'd',
+
+284
+00:13:19.320 --> 00:13:21.980
+o algo así, entonces podrías llamarlo así.
+
+285
+00:13:21.980 --> 00:13:24.690
+Sin embargo, esa no es la forma más
+
+286
+00:13:24.690 --> 00:13:26.890
+Pythonic de hacerlo.
+
+287
+00:13:26.890 --> 00:13:27.831
+En lugar de eso,
+
+288
+00:13:27.831 --> 00:13:31.370
+tenemos una solución que funciona aquí mismo.
+
+289
+00:13:31.370 --> 00:13:36.240
+Por lo tanto, si pasas en un rango, donde tienes un valor,
+
+290
+00:13:36.240 --> 00:13:39.240
+y luego al final, lo dejas en blanco,
+
+291
+00:13:39.240 --> 00:13:42.200
+justo después de los dos puntos, Python va a asumir
+
+292
+00:13:42.200 --> 00:13:44.416
+automáticamente que quieres tomar el rango
+
+293
+00:13:44.416 --> 00:13:46.800
+hasta el final.
+
+294
+00:13:46.800 --> 00:13:50.450
+Y también funciona igual si quieres darle la vuelta,
+
+295
+00:13:50.450 --> 00:13:52.208
+así que aquí mismo, si tienes
+
+296
+00:13:52.208 --> 00:13:54.550
+un espacio en blanco o sólo un espacio vacío,
+
+297
+00:13:54.550 --> 00:13:57.120
+y luego los dos puntos, seguidos por otro índice,
+
+298
+00:13:57.120 --> 00:14:00.940
+entonces va a tomar todo desde el principio.
+
+299
+00:14:00.940 --> 00:14:03.820
+Y eso es algo importante que hay que saber.
+
+300
+00:14:03.820 --> 00:14:06.500
+Así que, justo aquí, lo que vamos a ser capaces de hacer,
+
+301
+00:14:06.500 --> 00:14:09.360
+es generar nuestra nueva oración,
+
+302
+00:14:09.360 --> 00:14:11.900
+así que si presiono Enter, puedes ver
+
+303
+00:14:11.900 --> 00:14:14.247
+que ahora tenemos nuestra nueva oración donde dice,
+
+304
+00:14:14.247 --> 00:14:16.710
+"Thy quick brown fox jumped".
+
+305
+00:14:16.710 --> 00:14:20.228
+Así que, hemos tomado con éxito nuestra starter_sentence,
+
+306
+00:14:20.228 --> 00:14:24.440
+sacado una palabra, ahora técnicamente no la hemos matado,
+
+307
+00:14:24.440 --> 00:14:26.310
+no la hemos sacado de la frase,
+
+308
+00:14:26.310 --> 00:14:27.568
+simplemente hemos cogido
+
+309
+00:14:27.568 --> 00:14:30.470
+a todos los demás personajes excepto por ese,
+
+310
+00:14:30.470 --> 00:14:33.990
+y luego la hemos reemplazado por otra palabra,
+
+311
+00:14:33.990 --> 00:14:36.810
+así que muy buen trabajo si pasaste por eso.
+
+312
+00:14:36.810 --> 00:14:38.630
+Así que, en repaso, cubrimos una serie
+
+313
+00:14:38.630 --> 00:14:40.910
+de temas muy importantes en esta guía.
+
+314
+00:14:40.910 --> 00:14:43.850
+No sólo discutimos cómo trabajar con cadenas
+
+315
+00:14:43.850 --> 00:14:45.990
+y cómo acceder a los valores de las cadenas,
+
+316
+00:14:45.990 --> 00:14:48.880
+sino que también discutimos algunos conceptos de alto nivel,
+
+317
+00:14:48.880 --> 00:14:52.150
+como cómo trabajar con índices
+
+318
+00:14:52.150 --> 00:14:55.070
+y qué es un índice basado en cero,
+
+319
+00:14:55.070 --> 00:14:58.640
+y cómo se puede acceder a valores basados en eso.
+
+320
+00:14:58.640 --> 00:15:00.790
+También hablamos sobre la inmutabilidad,
+
+321
+00:15:00.790 --> 00:15:04.000
+y cómo la inmutabilidad significa que no
+
+322
+00:15:04.000 --> 00:15:05.491
+somos capaces de cambiar
+
+323
+00:15:05.491 --> 00:15:07.820
+una cadena después de que ha sido creada,
+
+324
+00:15:07.820 --> 00:15:09.890
+y la inmutabilidad se puede aplicar a cualquier cosa,
+
+325
+00:15:09.890 --> 00:15:12.010
+podrías tener listas que son inmutables,
+
+326
+00:15:12.010 --> 00:15:13.910
+podrías tener todo tipo de elementos
+
+327
+00:15:13.910 --> 00:15:16.860
+que dices que son inmutables, y si lo son,
+
+328
+00:15:16.860 --> 00:15:19.990
+eso significa que ese valor no puede ser cambiado,
+
+329
+00:15:19.990 --> 00:15:21.760
+y luego hablamos sobre rangos
+
+330
+00:15:21.760 --> 00:15:24.830
+y cómo pueden ser usados para poder acceder
+
+331
+00:15:24.830 --> 00:15:27.910
+a un conjunto de valores dentro de una cadena.
+
+332
+00:15:27.910 --> 00:15:30.420
+Así que, excelente trabajo pasando por esa guía,
+
+333
+00:15:30.420 --> 00:15:32.811
+y vamos a continuar en la siguiente guía,
+
+334
+00:15:32.811 --> 00:15:36.223
+viendo cómo podemos trabajar con diferentes funciones.
+

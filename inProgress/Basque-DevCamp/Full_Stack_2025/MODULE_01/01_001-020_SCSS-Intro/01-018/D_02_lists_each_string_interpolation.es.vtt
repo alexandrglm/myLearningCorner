@@ -1,0 +1,1037 @@
+WEBVTT
+
+1
+00:00:00.580 --> 00:00:01.563
+<v Instructor>Creo que vamos</v>
+
+2
+00:00:01.563 --> 00:00:02.796
+a divertirnos mucho con esta guía.
+
+3
+00:00:02.796 --> 00:00:05.183
+Vamos a aprender muchas
+cosas nuevas y diferentes.
+
+4
+00:00:05.183 --> 00:00:08.410
+Parte de la razón de ello
+es que cada una
+
+5
+00:00:08.410 --> 00:00:12.745
+contendrá temas que de veras
+funcionan mejor juntos.
+
+6
+00:00:12.745 --> 00:00:16.168
+He visto cuando los presentan
+de uno a la vez
+
+7
+00:00:16.168 --> 00:00:19.890
+y algo con lo que me encontré
+fue con la sensación
+
+8
+00:00:19.890 --> 00:00:22.165
+de que era muy difícil entender
+
+9
+00:00:22.165 --> 00:00:24.477
+por qué eran importantes,
+
+10
+00:00:24.477 --> 00:00:26.744
+a menos que estuvieran agrupados,
+
+11
+00:00:26.744 --> 00:00:29.322
+para poder ver
+cómo interactúan entre sí.
+
+12
+00:00:29.322 --> 00:00:33.535
+Los temas que cubriremos en
+la guía van a ser las listas.
+
+13
+00:00:33.535 --> 00:00:35.219
+También hablaremos
+
+14
+00:00:35.219 --> 00:00:39.680
+acerca de la directiva each
+dentro de Scss.
+
+15
+00:00:39.680 --> 00:00:43.280
+Luego terminaremos con
+la interpolación de cadenas.
+
+16
+00:00:43.280 --> 00:00:47.038
+Si algunas de esas cosas
+suenan muy confusas
+
+17
+00:00:47.038 --> 00:00:49.665
+y nunca has oído de ellas,
+está perfectamente bien,
+
+18
+00:00:49.665 --> 00:00:51.092
+vamos a revisarlas
+
+19
+00:00:51.092 --> 00:00:54.697
+y creo que vamos a encontrar
+un ejemplo muy divertido.
+
+20
+00:00:54.697 --> 00:00:58.960
+Entonces, aquí arriba
+tengo algunas imágenes.
+
+21
+00:00:58.960 --> 00:01:02.680
+Tengo una imagen de un Tesla,
+una imagen de un Maserati
+
+22
+00:01:02.680 --> 00:01:05.243
+y la imagen de un Porsche.
+
+23
+00:01:05.243 --> 00:01:09.147
+Ahora voy a tomar estas URL
+
+24
+00:01:09.147 --> 00:01:12.697
+y voy a pegar aquí cada una de ellas,
+
+25
+00:01:12.697 --> 00:01:17.290
+de modo que tendremos
+un Porsche, tendremos un Tesla
+
+26
+00:01:17.290 --> 00:01:19.855
+y luego tendremos un Maserati.
+
+27
+00:01:20.753 --> 00:01:22.648
+Así que los tenemos
+a cada uno de ellos.
+
+28
+00:01:22.648 --> 00:01:27.623
+Lo que quiero es poder tener
+divs HTML aquí
+
+29
+00:01:27.623 --> 00:01:30.481
+y quiero generar dinámicamente
+
+30
+00:01:30.481 --> 00:01:33.827
+los nombres de las clases
+dentro de nuestro Scss.
+
+31
+00:01:33.827 --> 00:01:37.310
+Es algo que es posible
+desde adentro de Scss
+
+32
+00:01:37.310 --> 00:01:40.810
+y es una gran manera
+de realizar tareas como...
+
+33
+00:01:40.810 --> 00:01:44.932
+Imagina que tienes una lista de iconos
+
+34
+00:01:44.932 --> 00:01:49.282
+o algo en el directorio Assets
+y quieres iterarlo,
+
+35
+00:01:49.282 --> 00:01:51.857
+pero no deseas escribir manualmente
+
+36
+00:01:51.857 --> 00:01:55.890
+el nombre de clase para luego
+poner la URL de la imagen
+
+37
+00:01:55.890 --> 00:01:57.752
+y hacer eso con cada uno de ellos.
+
+38
+00:01:57.752 --> 00:02:01.060
+Si solo tienes dos o tres,
+como en este ejemplo,
+
+39
+00:02:01.060 --> 00:02:04.160
+puede no parecer gran cosa,
+pero imagina que tienes
+
+40
+00:02:04.160 --> 00:02:08.760
+una aplicación con cientos
+de iconos o imágenes
+
+41
+00:02:08.760 --> 00:02:12.692
+y, seguramente, todo lo que
+intentamos hacer es cambiar
+
+42
+00:02:12.692 --> 00:02:15.400
+un cierto número de valores,
+tales como establecer
+
+43
+00:02:15.400 --> 00:02:18.875
+la imagen de fondo, lograr un tamaño,
+
+44
+00:02:18.875 --> 00:02:22.600
+configurarlo para no repetirse
+o cualquier cosa similar.
+
+45
+00:02:22.600 --> 00:02:25.723
+No quieres llevar a cabo
+esa tarea una y otra vez,
+
+46
+00:02:25.723 --> 00:02:27.895
+eso es una mala práctica
+de programación,
+
+47
+00:02:27.895 --> 00:02:30.037
+y además, cada vez
+que agregas otros iconos,
+
+48
+00:02:30.037 --> 00:02:32.993
+no quieres tener que repetir
+todo eso de nuevo.
+
+49
+00:02:32.993 --> 00:02:36.618
+Así que veamos cómo aprovechar
+cada una de esas cosas.
+
+50
+00:02:36.618 --> 00:02:40.555
+Repito, esta guía se va
+a tratar de las listas,
+
+51
+00:02:40.555 --> 00:02:43.350
+se va a tratar de la directiva each
+
+52
+00:02:43.350 --> 00:02:46.928
+y se va a tratar de
+la interpolación de cadenas.
+
+53
+00:02:46.928 --> 00:02:50.848
+Entonces, voy a bajar esto hasta aquí.
+
+54
+00:02:50.848 --> 00:02:55.603
+De hecho, voy a quitar
+todos estos comentarios
+
+55
+00:02:55.603 --> 00:02:59.493
+para que no interfieran con
+el resto de nuestro código.
+
+56
+00:02:59.493 --> 00:03:02.045
+Y voy a crear algunos divs más aquí.
+
+57
+00:03:02.045 --> 00:03:05.493
+Así que voy a crear un div de clase.
+
+58
+00:03:05.493 --> 00:03:07.273
+Auto, guión,
+
+59
+00:03:08.220 --> 00:03:09.163
+Maserati.
+
+60
+00:03:10.445 --> 00:03:14.043
+Y luego solo voy a repetir esto
+
+61
+00:03:14.043 --> 00:03:15.990
+un par de veces para cada uno
+de los otros autos.
+
+62
+00:03:15.990 --> 00:03:18.993
+Así que tenemos un Maserati,
+tenemos un Tesla
+
+63
+00:03:18.993 --> 00:03:21.396
+y tenemos un Porsche.
+
+64
+00:03:22.522 --> 00:03:25.670
+Eso es todo lo que necesitamos
+por el lado del HTML,
+
+65
+00:03:25.670 --> 00:03:27.090
+el cual va a ser muy bueno.
+
+66
+00:03:27.090 --> 00:03:29.283
+Significa que si tienes una aplicación
+
+67
+00:03:29.283 --> 00:03:32.922
+en la que tienes este tipo
+de comportamiento incorporado,
+
+68
+00:03:32.922 --> 00:03:34.893
+con lo que vamos a construir con Scss,
+
+69
+00:03:34.893 --> 00:03:37.785
+podrías traer componentes
+de código enteros
+
+70
+00:03:37.785 --> 00:03:40.655
+solo con estas pequeñas llamadas div.
+
+71
+00:03:40.655 --> 00:03:44.769
+Con Scss, vamos a hablar
+de lo que tenemos que hacer.
+
+72
+00:03:44.769 --> 00:03:47.480
+Lo primero que vamos
+a implementar es una lista.
+
+73
+00:03:47.480 --> 00:03:49.852
+Así que aquí voy a añadir comentarios.
+
+74
+00:03:49.852 --> 00:03:54.543
+Sabrás, si sigues muchos
+de mis blogs y otros cursos,
+
+75
+00:03:54.543 --> 00:03:57.280
+que no me encantan los
+comentarios, pero los usaré,
+
+76
+00:03:57.280 --> 00:04:02.130
+implementaré comentarios aquí
+solo para que puedas verlos.
+
+77
+00:04:02.130 --> 00:04:05.207
+Muestran lo que es cada uno
+de estos elementos,
+
+78
+00:04:05.207 --> 00:04:07.530
+si los usas para tu propia referencia.
+
+79
+00:04:07.530 --> 00:04:11.398
+Entonces, aquí vamos a crear
+una lista llamada autos.
+
+80
+00:04:11.398 --> 00:04:15.173
+Con los autos, voy a escoger
+los nombres que queramos.
+
+81
+00:04:15.173 --> 00:04:20.047
+Así que vamos a poner
+Maserati, luego Tesla
+
+82
+00:04:20.047 --> 00:04:22.983
+y, por último, vamos a poner Porsche.
+
+83
+00:04:22.983 --> 00:04:24.908
+Si tienes esto,
+
+84
+00:04:24.908 --> 00:04:27.470
+digamos que estás armando
+una página de autos,
+
+85
+00:04:27.470 --> 00:04:29.885
+podrías tener cada una de tus imágenes
+
+86
+00:04:29.885 --> 00:04:32.270
+en el directorio Asset, de este modo,
+
+87
+00:04:32.270 --> 00:04:35.937
+y darle cualquier nombre
+con el que va a ser llamado.
+
+88
+00:04:35.937 --> 00:04:37.803
+Luego puede iterar
+
+89
+00:04:37.803 --> 00:04:40.925
+y puede construir todo esto por ti.
+
+90
+00:04:40.925 --> 00:04:43.613
+Así que ahora voy a bajar
+
+91
+00:04:43.613 --> 00:04:45.986
+y vamos a usar nuestra directiva each.
+
+92
+00:04:45.986 --> 00:04:49.600
+Nuestra directiva each
+se va a parecer mucho
+
+93
+00:04:49.600 --> 00:04:53.277
+al si condicional o el Mixin.
+
+94
+00:04:53.277 --> 00:04:55.830
+Así que pondremos directiva each.
+
+95
+00:04:56.671 --> 00:04:59.502
+Aquí, lo que esto significa
+es que va a empezar
+
+96
+00:04:59.502 --> 00:05:02.560
+con el símbolo @
+y luego pondremos each.
+
+97
+00:05:02.560 --> 00:05:05.510
+Y lo primero que le pondremos al each
+
+98
+00:05:05.510 --> 00:05:09.248
+será lo que se llama
+una variable de iteración.
+
+99
+00:05:09.248 --> 00:05:12.120
+Así que aquí voy a poner
+el nombre del auto.
+
+100
+00:05:12.120 --> 00:05:14.452
+Ahora bien, si te fijas, no hay nada
+
+101
+00:05:14.452 --> 00:05:16.759
+denominado nombre de auto
+que ya hayamos declarado.
+
+102
+00:05:16.759 --> 00:05:18.700
+Lo que hace each es que,
+
+103
+00:05:18.700 --> 00:05:21.280
+el primer argumento que pasas,
+
+104
+00:05:21.280 --> 00:05:24.015
+va a ser lo que sea el auto
+
+105
+00:05:24.015 --> 00:05:27.985
+cada vez que entra en su bucle.
+
+106
+00:05:27.985 --> 00:05:32.031
+Con each, la primera vez
+que itera sobre los autos,
+
+107
+00:05:32.031 --> 00:05:33.322
+el nombre del auto,
+
+108
+00:05:33.322 --> 00:05:35.427
+la primera vez va a ser Maserati,
+
+109
+00:05:35.427 --> 00:05:37.450
+la segunda vez va a ser Tesla
+
+110
+00:05:37.450 --> 00:05:39.567
+y la tercera vez va a ser Porsche.
+
+111
+00:05:39.567 --> 00:05:42.013
+Así que aquí tenemos
+el nombre de cada auto.
+
+112
+00:05:42.013 --> 00:05:46.440
+"In", y luego puedo pasar
+nuestra lista.
+
+113
+00:05:46.440 --> 00:05:50.950
+Así que puedo decir each,
+nombre del auto, in autos.
+
+114
+00:05:50.950 --> 00:05:54.557
+Desde allí, ahora puedo pasar
+
+115
+00:05:54.557 --> 00:05:56.810
+todo lo que queramos que pase.
+
+116
+00:05:56.810 --> 00:05:59.290
+Lo que quiero que pase es
+
+117
+00:05:59.290 --> 00:06:02.743
+generar dinámicamente todos
+estos nombres de clases.
+
+118
+00:06:02.743 --> 00:06:05.222
+Entonces, si fueras
+a construir esto a mano,
+
+119
+00:06:05.222 --> 00:06:07.160
+harías algo como esto, dirías:
+
+120
+00:06:07.160 --> 00:06:09.862
+auto-Tesla,
+
+121
+00:06:09.862 --> 00:06:14.862
+y luego construirías
+todas tus clases como esta.
+
+122
+00:06:15.091 --> 00:06:17.685
+Sin embargo, debido a la directiva each,
+
+123
+00:06:17.685 --> 00:06:20.135
+debido a la interpolación
+de cadenas y las listas,
+
+124
+00:06:20.135 --> 00:06:21.893
+no tenemos que hacerlo.
+
+125
+00:06:21.893 --> 00:06:24.747
+En realidad, podemos hacer
+solo una clase
+
+126
+00:06:24.747 --> 00:06:27.820
+y generará dinámicamente
+todo esto por ti.
+
+127
+00:06:27.820 --> 00:06:29.600
+Si vienes de un lenguaje,
+
+128
+00:06:29.600 --> 00:06:31.625
+un lenguaje de programación como Ruby
+
+129
+00:06:31.625 --> 00:06:34.927
+y alguna vez has trabajado
+con la metaprogramación,
+
+130
+00:06:34.927 --> 00:06:37.530
+esto es muy similar
+a la metaprogramación.
+
+131
+00:06:37.530 --> 00:06:40.588
+Y si estás a punto de comenzar
+a aprender más sobre Ruby,
+
+132
+00:06:40.588 --> 00:06:43.050
+de nuevo, metaprogramación,
+esto es una gran introducción,
+
+133
+00:06:43.050 --> 00:06:45.679
+pues esencialmente, lo que
+estamos haciendo aquí
+
+134
+00:06:45.679 --> 00:06:47.804
+es algo que mucha gente consideraría
+
+135
+00:06:47.804 --> 00:06:50.647
+un desarrollo increíblemente avanzado,
+
+136
+00:06:50.647 --> 00:06:54.670
+porque estamos creando código
+dinámicamente sobre la marcha.
+
+137
+00:06:54.670 --> 00:06:56.537
+Esencialmente,
+estamos escribiendo código
+
+138
+00:06:56.537 --> 00:06:59.652
+que va, a su vez a escribir código.
+
+139
+00:06:59.652 --> 00:07:01.623
+Lo siguiente que vamos a implementar...
+
+140
+00:07:01.623 --> 00:07:03.813
+Hasta ahora tenemos listas.
+
+141
+00:07:03.813 --> 00:07:06.575
+Ahora tenemos nuestra directiva each.
+
+142
+00:07:06.575 --> 00:07:08.545
+Lo siguiente que vamos a establecer
+
+143
+00:07:08.545 --> 00:07:10.450
+es la interpolación de cadenas.
+
+144
+00:07:10.450 --> 00:07:14.932
+Así que aquí voy a poner
+interpolación de cadenas.
+
+145
+00:07:16.208 --> 00:07:19.628
+Y déjame arreglar la sangría, ahí vamos.
+
+146
+00:07:19.628 --> 00:07:22.503
+La forma en que se utiliza
+la interpolación de cadenas
+
+147
+00:07:22.503 --> 00:07:23.670
+dentro de Scss
+
+148
+00:07:26.410 --> 00:07:29.910
+es mediante el uso de la misma sintaxis
+
+149
+00:07:29.910 --> 00:07:33.333
+que si vienes del lenguaje
+de programación Ruby.
+
+150
+00:07:33.333 --> 00:07:36.896
+Lo que haces es empezar
+con la función hash,
+
+151
+00:07:36.896 --> 00:07:39.028
+luego utilizas las llaves
+
+152
+00:07:39.028 --> 00:07:41.820
+luego pones cualquier cosa que quieras.
+
+153
+00:07:41.820 --> 00:07:46.110
+En este caso, vamos a usar
+nuestra variable de iteración.
+
+154
+00:07:46.110 --> 00:07:50.886
+Entonces, el nombre de auto va
+a ser Maserati la primera vez,
+
+155
+00:07:50.886 --> 00:07:55.327
+lo que significa que va
+a decir auto-Maserati,
+
+156
+00:07:55.327 --> 00:07:57.523
+lo cual, como ves, está aquí.
+
+157
+00:07:57.523 --> 00:08:00.172
+Como tenemos acceso a Maserati,
+
+158
+00:08:00.172 --> 00:08:03.425
+significa que podemos
+colocarlo justo aquí,
+
+159
+00:08:03.425 --> 00:08:06.116
+y esto va a generar esta clase por nosotros
+
+160
+00:08:06.116 --> 00:08:09.316
+cada vez que el Scss compile.
+
+161
+00:08:09.316 --> 00:08:10.770
+Esta es la primera parte,
+
+162
+00:08:10.770 --> 00:08:13.500
+esto va generar nuestros
+tres nombres de clase.
+
+163
+00:08:13.500 --> 00:08:16.572
+Pero en este momento
+están vacíos, así que vamos
+
+164
+00:08:16.572 --> 00:08:19.910
+a construirlo con un poco más
+de interpolación de cadenas.
+
+165
+00:08:19.910 --> 00:08:24.192
+Así que voy a escribir imagen de fondo
+
+166
+00:08:24.192 --> 00:08:27.590
+y a poner una dirección URL.
+
+167
+00:08:27.590 --> 00:08:31.510
+La URL que vamos a poner va a ser esta,
+
+168
+00:08:31.510 --> 00:08:33.845
+excepto que vamos a cambiar el nombre.
+
+169
+00:08:33.845 --> 00:08:36.725
+Así que en lugar de ser
+Porsche, Tesla o Maserati,
+
+170
+00:08:36.725 --> 00:08:38.836
+no tendremos que poner código duro.
+
+171
+00:08:38.836 --> 00:08:41.822
+Lo pasaremos usando
+la interpolación de cadenas.
+
+172
+00:08:41.822 --> 00:08:46.550
+Asegúrate de terminar
+con un punto y coma.
+
+173
+00:08:46.550 --> 00:08:50.560
+Así que lo que vamos a hacer
+es tomar este nombre de auto
+
+174
+00:08:50.560 --> 00:08:53.577
+y vamos a tomar todo esto.
+
+175
+00:08:53.577 --> 00:08:56.110
+Y vamos a poner, en lugar de...
+
+176
+00:08:56.110 --> 00:08:58.420
+Asegúrate de mantener el JPEG allí,
+
+177
+00:08:58.420 --> 00:08:59.603
+pero en lugar de Porsche,
+
+178
+00:08:59.603 --> 00:09:03.265
+va a decir "nombre de auto"
+y luego .jpg.
+
+179
+00:09:03.265 --> 00:09:05.150
+La primera vez que se active
+
+180
+00:09:05.150 --> 00:09:07.667
+será Maserati, así que va
+a tener esta imagen.
+
+181
+00:09:07.667 --> 00:09:09.117
+Luego seguirá por el Tesla,
+
+182
+00:09:09.117 --> 00:09:10.792
+así que va a tomar esta imagen.
+
+183
+00:09:10.792 --> 00:09:13.428
+A continuación, Porsche,
+y va a tomar esta imagen.
+
+184
+00:09:13.428 --> 00:09:15.267
+Esa es la primera parte.
+
+185
+00:09:15.267 --> 00:09:17.407
+Ahora vamos a añadir
+algunos estilos más.
+
+186
+00:09:17.407 --> 00:09:20.453
+Así que en repetir fondo,
+
+187
+00:09:20.453 --> 00:09:23.633
+establezco la secuela sin repeticiones.
+
+188
+00:09:25.042 --> 00:09:26.335
+Luego, la altura.
+
+189
+00:09:27.390 --> 00:09:30.050
+La establezco en 300 píxeles de alto.
+
+190
+00:09:30.050 --> 00:09:31.620
+Y como puedes ver allí,
+
+191
+00:09:31.620 --> 00:09:34.662
+ya estamos trayendo nuestras imágenes.
+
+192
+00:09:34.662 --> 00:09:37.418
+Y también todas las URL
+de las imágenes.
+
+193
+00:09:37.418 --> 00:09:38.601
+Puedes usar las tuyas propias,
+
+194
+00:09:38.601 --> 00:09:40.983
+o si quieres repetirlo exactamente,
+
+195
+00:09:40.983 --> 00:09:45.015
+voy a dejarlas disponibles
+en las notas del vídeo.
+
+196
+00:09:45.015 --> 00:09:49.872
+Entonces voy a escribir que
+el ancho será de 500 píxeles.
+
+197
+00:09:49.872 --> 00:09:54.872
+Y el siguiente, objet-fit,
+será llenar.
+
+198
+00:09:55.118 --> 00:09:58.430
+Luego vamos a presentar esto
+a la izquierda,
+
+199
+00:09:58.430 --> 00:10:01.673
+para que estén todos uno
+junto al otro, y mira eso.
+
+200
+00:10:01.673 --> 00:10:04.953
+Tenemos todo lo que necesitamos aquí.
+
+201
+00:10:04.953 --> 00:10:08.218
+Lo que hemos hecho aquí
+es muy bueno,
+
+202
+00:10:08.218 --> 00:10:11.305
+en lugar de simplemente
+tener que copiar y pegar
+
+203
+00:10:11.305 --> 00:10:13.450
+este código, como habríamos hecho.
+
+204
+00:10:13.450 --> 00:10:16.900
+Técnicamente, si no se usara
+cada uno de estas listas,
+
+205
+00:10:16.900 --> 00:10:20.095
+tendrías que tener una de estas clases
+
+206
+00:10:20.095 --> 00:10:22.413
+que sea completamente idéntica,
+
+207
+00:10:22.413 --> 00:10:25.912
+excepto por tener una URL
+ligeramente diferente.
+
+208
+00:10:25.912 --> 00:10:29.282
+Esto es algo para lo que
+también puedes usar un Mixin,
+
+209
+00:10:29.282 --> 00:10:33.254
+pero creo que, en este caso,
+usar la directiva each
+
+210
+00:10:33.254 --> 00:10:35.392
+es probablemente lo más intuitivo.
+
+211
+00:10:35.392 --> 00:10:38.557
+Si no me crees acerca de las clases
+
+212
+00:10:38.557 --> 00:10:41.360
+que se generan de forma
+dinámica, echemos un vistazo.
+
+213
+00:10:41.360 --> 00:10:44.982
+Si hago clic en Inspeccionar aquí,
+
+214
+00:10:44.982 --> 00:10:47.368
+esto trae toda la información,
+y mira eso.
+
+215
+00:10:47.368 --> 00:10:51.290
+Tenemos una clase llamada
+auto-Maserati,
+
+216
+00:10:51.290 --> 00:10:55.135
+a pesar de que en realidad
+no tenemos ninguna parte
+
+217
+00:10:55.135 --> 00:10:59.298
+del archivo Scss donde
+hayamos creado esa clase.
+
+218
+00:10:59.298 --> 00:11:01.860
+Hemos hecho todo de forma dinámica,
+
+219
+00:11:01.860 --> 00:11:05.368
+lo hemos hecho todo cuando el procesador
+
+220
+00:11:05.368 --> 00:11:07.598
+buscó y empezó a correr.
+
+221
+00:11:07.598 --> 00:11:12.190
+Si nos fijamos en el otro,
+aquí tenemos auto-Tesla
+
+222
+00:11:12.190 --> 00:11:16.815
+y para el último tenemos auto-Porsche.
+
+223
+00:11:16.815 --> 00:11:18.815
+Así que esto es algo muy bueno.
+
+224
+00:11:18.815 --> 00:11:22.930
+Es otra manera, recuerda
+uno de los tópicos
+
+225
+00:11:22.930 --> 00:11:26.590
+que Scss busca lograr, que es
+ayudarte como desarrollador
+
+226
+00:11:26.590 --> 00:11:29.348
+a ser tan eficiente como sea
+posible con tu código,
+
+227
+00:11:29.348 --> 00:11:33.663
+para eliminar la duplicación
+y poder organizar el código
+
+228
+00:11:33.663 --> 00:11:36.853
+de una manera que sea
+intuitiva y escalable,
+
+229
+00:11:36.853 --> 00:11:39.206
+y eso es lo que hacen
+estos tres componentes.
+

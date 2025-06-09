@@ -1,0 +1,94 @@
+WEBVTT
+
+1
+00:00:00.800 --> 00:00:02.550
+<v ->En la última sección del curso,</v>
+
+2
+00:00:02.550 --> 00:00:05.930
+caminamos a través de variables y tipos de datos dentro
+
+3
+00:00:05.930 --> 00:00:09.590
+del lenguaje de programación Python,
+
+4
+00:00:09.590 --> 00:00:11.930
+y en esta sección quiero tomar uno de esos tipos de datos,
+
+5
+00:00:11.930 --> 00:00:15.040
+el tipo de datos de cadena y quiero analizarlo.
+
+6
+00:00:15.040 --> 00:00:16.820
+Vamos a comenzar con lo básico,
+
+7
+00:00:16.820 --> 00:00:20.240
+como los diferentes tipos de cadenas que podemos crear,
+
+8
+00:00:20.240 --> 00:00:22.590
+y luego vamos a entrar en funciones.
+
+9
+00:00:22.590 --> 00:00:25.810
+Y las funciones son procesos que están incorporados
+
+10
+00:00:25.810 --> 00:00:29.180
+directamente en el lenguaje que nos permiten manipular
+
+11
+00:00:29.180 --> 00:00:32.210
+y trabajar con esas cadenas, y vamos a seguir avanzando
+
+12
+00:00:32.210 --> 00:00:36.220
+hasta que aprendamos cómo también construir
+
+13
+00:00:36.220 --> 00:00:37.710
+cadenas dinámicas.
+
+14
+00:00:37.710 --> 00:00:39.680
+Y lo que eso significa es que podremos
+
+15
+00:00:39.680 --> 00:00:43.150
+tener cadenas que comiencen con un valor
+
+16
+00:00:43.150 --> 00:00:47.410
+y luego podremos deslizarnos en otros valores de manera
+
+17
+00:00:47.410 --> 00:00:50.150
+dinámica, y será algo que harás
+
+18
+00:00:50.150 --> 00:00:52.940
+en toda tu carrera de programación.
+
+19
+00:00:52.940 --> 00:00:56.120
+Tener cadenas dinámicas será uno de los componentes
+
+20
+00:00:56.120 --> 00:00:58.740
+clave de casi todos los programas con los que trabajes,
+
+21
+00:00:58.740 --> 00:00:59.573
+así que quiero mostrarle cómo hacerlo,
+
+22
+00:00:59.573 --> 00:01:02.590
+comenzando con lo básico y trabajando
+
+23
+00:01:02.590 --> 00:01:05.973
+en todos los temas avanzados.
+

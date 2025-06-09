@@ -1,0 +1,700 @@
+WEBVTT
+
+1
+00:00:01.080 --> 00:00:01.913
+<v Instructor>En esta lección,</v>
+
+2
+00:00:01.913 --> 00:00:04.360
+veremos cómo instalar Git
+
+3
+00:00:04.360 --> 00:00:06.480
+en tu sistema local.
+
+4
+00:00:06.480 --> 00:00:08.130
+Voy a incluir este enlace
+
+5
+00:00:08.130 --> 00:00:10.690
+con un conjunto de instrucciones en las notas del programa,
+
+6
+00:00:10.690 --> 00:00:12.980
+y simplemente vamos a verlas
+
+7
+00:00:12.980 --> 00:00:15.270
+para poner en marcha Git
+
+8
+00:00:15.270 --> 00:00:17.453
+para que puedas empezar a hacer confirmaciones,
+
+9
+00:00:17.453 --> 00:00:19.183
+implementar versiones
+
+10
+00:00:19.183 --> 00:00:21.600
+y realizar cada una de las tareas
+
+11
+00:00:21.600 --> 00:00:24.170
+que veremsos en este curso.
+
+12
+00:00:24.170 --> 00:00:26.530
+Lo primero que tienes que hacer
+
+13
+00:00:26.530 --> 00:00:29.640
+es bajar a donde dice Configurar Git
+
+14
+00:00:29.640 --> 00:00:32.350
+y necesitas instalarlo en tu sistema.
+
+15
+00:00:32.350 --> 00:00:33.750
+Así que haz clic en este enlace,
+
+16
+00:00:33.750 --> 00:00:36.570
+y esto te lleva
+a la página de descarga.
+
+17
+00:00:36.570 --> 00:00:39.050
+Dependiendo de tu sistema operativo,
+
+18
+00:00:39.050 --> 00:00:41.230
+haz clic en uno de estos botones.
+
+19
+00:00:41.230 --> 00:00:44.960
+Debería detectar el sistema operativo que estás usando,
+
+20
+00:00:44.960 --> 00:00:46.660
+aquí a la derecha.
+
+21
+00:00:46.660 --> 00:00:48.930
+Ha detectado que estoy en un Mac
+
+22
+00:00:48.930 --> 00:00:53.660
+y recomienda que descargue
+la versión 2.16.2,
+
+23
+00:00:53.660 --> 00:00:55.104
+y si hago clic aquí,
+
+24
+00:00:55.104 --> 00:00:57.610
+comenzará a instalarlo en mi sistema.
+
+25
+00:00:57.610 --> 00:00:59.670
+Si estás en un equipo con Windows
+
+26
+00:00:59.670 --> 00:01:02.030
+o un sistema Linux Unix,
+
+27
+00:01:02.030 --> 00:01:05.570
+haz clic en esos enlaces y luego se descargará
+
+28
+00:01:05.570 --> 00:01:08.600
+y podrás poner todo en marcha.
+
+29
+00:01:08.600 --> 00:01:11.150
+Ese es el primer paso, hacer esto.
+
+30
+00:01:11.150 --> 00:01:13.600
+Yo ya tengo Git instalado en mi sistema,
+
+31
+00:01:13.600 --> 00:01:17.010
+así que no tengo que hacer clic, pero si lo necesitara,
+
+32
+00:01:17.010 --> 00:01:18.740
+simplemente haría clic en ese botón
+
+33
+00:01:18.740 --> 00:01:20.950
+o si estuviera
+en otros sistemas operativos,
+
+34
+00:01:20.950 --> 00:01:22.110
+haría clic en ellos.
+
+35
+00:01:22.110 --> 00:01:24.151
+Otro punto a mencionar
+
+36
+00:01:24.151 --> 00:01:27.670
+es el llamado cliente GUI,
+
+37
+00:01:27.670 --> 00:01:32.190
+si no te gusta trabajar con la terminal
+
+38
+00:01:32.190 --> 00:01:33.710
+y la línea de comandos,
+
+39
+00:01:33.710 --> 00:01:36.810
+el cliente GUI te permite
+
+40
+00:01:36.810 --> 00:01:39.670
+realizar todas las mismas tareas que vamos a realizar
+
+41
+00:01:39.670 --> 00:01:40.840
+en este curso,
+
+42
+00:01:40.840 --> 00:01:44.150
+pero te permite hacerlo de una manera visual.
+
+43
+00:01:44.150 --> 00:01:47.638
+La analogía más parecida a esto sería,
+
+44
+00:01:47.638 --> 00:01:49.773
+es casi como tener Git
+
+45
+00:01:49.773 --> 00:01:53.050
+o una herramienta parecida en tu equipo local.
+
+46
+00:01:53.050 --> 00:01:55.010
+Y si haces clic en este enlace,
+
+47
+00:01:55.010 --> 00:01:58.950
+accederás a algunos de los clientes GUI populares.
+
+48
+00:01:58.950 --> 00:02:02.240
+No voy a usar ninguno de ellos en este curso,
+
+49
+00:02:02.240 --> 00:02:05.170
+sin embargo, hay algunos aquí que son muy populares.
+
+50
+00:02:05.170 --> 00:02:08.090
+Están organizados por sistema operativo
+
+51
+00:02:08.090 --> 00:02:10.170
+e incluso tienen versiones móviles
+
+52
+00:02:10.170 --> 00:02:13.742
+y si no te gusta tener que escribir manualmente
+
+53
+00:02:13.742 --> 00:02:15.440
+todos los comandos,
+
+54
+00:02:15.440 --> 00:02:19.610
+puede que te interese utilizar algo así.
+
+55
+00:02:19.610 --> 00:02:22.600
+Después de instalarlo en tu sistema
+
+56
+00:02:22.600 --> 00:02:26.610
+y recuerda, puede que tengas que reiniciar tu equipo,
+
+57
+00:02:26.610 --> 00:02:29.480
+así que descargas esto
+
+58
+00:02:29.480 --> 00:02:32.870
+y luego puedes volver
+a esta parte del vídeo.
+
+59
+00:02:32.870 --> 00:02:34.155
+Una vez hecho eso,
+
+60
+00:02:34.155 --> 00:02:37.100
+es el momento de configurar tus credenciales.
+
+61
+00:02:37.100 --> 00:02:39.350
+El siguiente paso está justo aquí,
+
+62
+00:02:39.350 --> 00:02:41.120
+donde dice Configurar Git,
+
+63
+00:02:41.120 --> 00:02:42.855
+Configurar tu nombre de usuario en Git.
+
+64
+00:02:42.855 --> 00:02:44.320
+Si haces clic ahí,
+
+65
+00:02:44.320 --> 00:02:47.230
+puedes elegir entre configurar
+
+66
+00:02:47.230 --> 00:02:51.870
+tu nombre de usuario de Git
+para todo el sistema,
+
+67
+00:02:51.870 --> 00:02:54.480
+o puedes hacerlo por proyecto.
+
+68
+00:02:54.480 --> 00:02:58.850
+Imagina una situación en la que tienes
+
+69
+00:02:58.850 --> 00:03:00.710
+una cuenta de GitHub,
+
+70
+00:03:00.710 --> 00:03:04.220
+o una cuenta de Git en tu equipo local
+
+71
+00:03:04.220 --> 00:03:07.360
+y tiene que ser diferente para un proyecto específico.
+
+72
+00:03:07.360 --> 00:03:09.710
+No me he encontrado
+en esa situación nunca.
+
+73
+00:03:09.710 --> 00:03:11.878
+Mi cuenta está configurada a nivel general,
+
+74
+00:03:11.878 --> 00:03:14.860
+y supongo que tú querrás hacer lo mismo.
+
+75
+00:03:14.860 --> 00:03:16.360
+Para hacerlo,
+
+76
+00:03:16.360 --> 00:03:17.980
+vas aquí,
+
+77
+00:03:17.980 --> 00:03:19.350
+abres la terminal
+
+78
+00:03:19.350 --> 00:03:21.160
+y solo tienes que copiar este enlace.
+
+79
+00:03:21.160 --> 00:03:22.680
+Sin el signo más,
+
+80
+00:03:22.680 --> 00:03:24.720
+y luego abrir la terminal,
+
+81
+00:03:24.720 --> 00:03:28.620
+lo pegas y luego simplemente escribes tu nombre de usuario.
+
+82
+00:03:28.620 --> 00:03:30.480
+El mío ya está en mi sistema,
+
+83
+00:03:30.480 --> 00:03:34.460
+pero cuando hice esto,
+lo escribí exactamente así,
+
+84
+00:03:34.460 --> 00:03:39.330
+y pone Git config
+guion guion global user.name
+
+85
+00:03:39.330 --> 00:03:40.680
+Jordan Hudgens.
+
+86
+00:03:40.680 --> 00:03:44.930
+Esta es mi cuenta,
+Jordan Hudgens es mi cuenta,
+
+87
+00:03:44.930 --> 00:03:47.980
+no la del ejemplo que preparé.
+
+88
+00:03:47.980 --> 00:03:49.510
+Esto es dev camp GitHub,
+
+89
+00:03:49.510 --> 00:03:52.500
+que configuré pero no voy a usar en mi equipo local,
+
+90
+00:03:52.500 --> 00:03:55.210
+era solo para mostrarte un ejemplo.
+
+91
+00:03:55.210 --> 00:03:58.570
+Así que Jordan Hudgens es
+mi nombre de usuario completo.
+
+92
+00:03:58.570 --> 00:04:01.290
+Y luego, si bajas aquí,
+
+93
+00:04:01.290 --> 00:04:05.610
+tras configurar el nombre de usuario global de Git,
+
+94
+00:04:05.610 --> 00:04:09.010
+entonces lo que tienes que hacer es confirmarlo.
+
+95
+00:04:09.010 --> 00:04:11.750
+Así que copiarías este código,
+
+96
+00:04:11.750 --> 00:04:14.830
+y luego puedes pegarlo.
+
+97
+00:04:14.830 --> 00:04:17.560
+Y aquí no tienes que escribir nada más.
+
+98
+00:04:17.560 --> 00:04:21.330
+Esto es simplemente para confirmar que el nombre de usuario
+
+99
+00:04:21.330 --> 00:04:24.250
+que has escrito es el que quieres usar.
+
+100
+00:04:24.250 --> 00:04:26.121
+Entonces, volvemos,
+
+101
+00:04:26.121 --> 00:04:28.560
+hemos completado dos de los tres pasos,
+
+102
+00:04:28.560 --> 00:04:32.100
+vamos a configurar el último elemento.
+
+103
+00:04:32.100 --> 00:04:34.970
+Y esto confirmará la dirección
+de correo electrónico.
+
+104
+00:04:34.970 --> 00:04:38.612
+Tenemos un nombre de usuario
+en Git y en GitHub
+
+105
+00:04:38.612 --> 00:04:40.480
+y tenemos que configurar
+una dirección de correo.
+
+106
+00:04:40.480 --> 00:04:43.480
+Seguiremos exactamente el mismo patrón.
+
+107
+00:04:43.480 --> 00:04:46.730
+Voy a copiar todo este código,
+
+108
+00:04:46.730 --> 00:04:50.440
+y luego pegar la dirección de correo electrónico
+
+109
+00:04:50.440 --> 00:04:54.070
+que uso para mi cuenta de GitHub.
+
+110
+00:04:54.070 --> 00:04:57.700
+Aquí pones tu dirección de correo electrónico,
+
+111
+00:04:57.700 --> 00:05:01.000
+lo que sea, y luego lo pegas,
+
+112
+00:05:01.000 --> 00:05:03.350
+y como hicimos con el nombre de usuario,
+
+113
+00:05:03.350 --> 00:05:07.770
+simplemente copias esto
+y pegas user.email,
+
+114
+00:05:07.770 --> 00:05:08.770
+no tienes que cambiarlo,
+
+115
+00:05:08.770 --> 00:05:10.360
+esto es solo para confirmarlo.
+
+116
+00:05:10.360 --> 00:05:12.870
+Igual que hicimos
+con el nombre de usuario.
+
+117
+00:05:12.870 --> 00:05:14.250
+Y una vez hecho eso,
+
+118
+00:05:14.250 --> 00:05:16.480
+esos son los tres pasos que debes seguir
+
+119
+00:05:16.480 --> 00:05:18.660
+para instalar Git
+
+120
+00:05:18.660 --> 00:05:21.950
+y configurarlo para que funcione en tu sistema.
+
+121
+00:05:21.950 --> 00:05:26.260
+Si bajamos, tenemos varios otros elementos de autenticación
+
+122
+00:05:26.260 --> 00:05:30.200
+que deben producirse, la primera parte era
+
+123
+00:05:30.200 --> 00:05:32.370
+configurar tu sistema
+para que funcione con Git.
+
+124
+00:05:32.370 --> 00:05:35.730
+Lo instalamos, y configuramos el nombre de usuario
+
+125
+00:05:35.730 --> 00:05:37.260
+y la dirección de correo electrónico.
+
+126
+00:05:37.260 --> 00:05:40.290
+Pero también necesitamos tener una conexión segura.
+
+127
+00:05:40.290 --> 00:05:41.297
+Y como puedes ver,
+
+128
+00:05:41.297 --> 00:05:43.810
+tenemos dos tipos de conexiones.
+
+129
+00:05:43.810 --> 00:05:47.630
+Tenemos conexión por HTTPS, que es lo recomendado,
+
+130
+00:05:47.630 --> 00:05:50.270
+y luego conexión por SSH,
+
+131
+00:05:50.270 --> 00:05:53.750
+y hay dos formas diferentes de configurarlo.
+
+132
+00:05:53.750 --> 00:05:56.200
+Si decides, como dice,
+
+133
+00:05:56.200 --> 00:06:00.330
+clonar con HTTPS, esto te explicará
+
+134
+00:06:00.330 --> 00:06:02.020
+cómo hacerlo.
+
+135
+00:06:02.020 --> 00:06:04.770
+Y luego, si necesitas conectarte por SSH,
+
+136
+00:06:04.770 --> 00:06:07.940
+puedes hacer clic en clonar con SSH
+
+137
+00:06:07.940 --> 00:06:10.290
+y te mostrará cómo hacerlo.
+
+138
+00:06:10.290 --> 00:06:12.870
+Eso lo haremos
+más adelante, en otra guía,
+
+139
+00:06:12.870 --> 00:06:14.510
+pero por ahora, solo quiero mostrarte
+
+140
+00:06:14.510 --> 00:06:15.700
+esas dos opciones.
+
+141
+00:06:15.700 --> 00:06:19.070
+Si no sabes en qué se diferencian,
+
+142
+00:06:19.070 --> 00:06:23.900
+simplemente recuerda que HTTPS
+te permite comunicarte
+
+143
+00:06:23.900 --> 00:06:28.900
+con el protocolo cifrado HTTPS.
+
+144
+00:06:29.030 --> 00:06:31.480
+Ese es un tipo de protocolo.
+
+145
+00:06:31.480 --> 00:06:34.740
+SSH es un tipo de protocolo distinto.
+
+146
+00:06:34.740 --> 00:06:39.060
+Significa Secure Shell,
+y no hay ningún aspecto
+
+147
+00:06:39.060 --> 00:06:41.950
+que haga a uno mejor que el otro.
+
+148
+00:06:41.950 --> 00:06:45.190
+Puedo decirte que necesitarás
+menos pasos
+
+149
+00:06:45.190 --> 00:06:47.990
+para hacer que este funcione
+
+150
+00:06:47.990 --> 00:06:50.200
+que con SSH,
+
+151
+00:06:50.200 --> 00:06:53.690
+pero si estás acostumbrado
+a trabajar con SSH,
+
+152
+00:06:53.690 --> 00:06:55.450
+entonces, adelante.
+
+153
+00:06:55.450 --> 00:07:00.000
+Pero GitHub incluso recomienda que utilices HTTPS,
+
+154
+00:07:00.000 --> 00:07:02.500
+y eso es lo que vamos a usar
+
+155
+00:07:02.500 --> 00:07:03.730
+a lo largo de este curso.
+
+156
+00:07:03.730 --> 00:07:06.700
+Si ya has terminado toda esa configuración,
+
+157
+00:07:06.700 --> 00:07:11.020
+ahora deberías tener Git
+y una conexión con GitHub
+
+158
+00:07:11.020 --> 00:07:12.290
+instalados en tu sistema.
+
+159
+00:07:12.290 --> 00:07:14.427
+Lo último que vamos a hacer
+es verificarlo.
+
+160
+00:07:14.427 --> 00:07:16.010
+Y eso puedes hacerlo
+
+161
+00:07:16.010 --> 00:07:17.680
+si cambias a la terminal,
+
+162
+00:07:17.680 --> 00:07:20.340
+y si estás en Windows
+puedes cambiar a PowerShell,
+
+163
+00:07:20.340 --> 00:07:24.390
+y escribes Git guion guion version
+
+164
+00:07:24.390 --> 00:07:25.990
+y pulsas Intro.
+
+165
+00:07:25.990 --> 00:07:28.390
+Y si eso funciona
+y te muestra una versión
+
+166
+00:07:28.390 --> 00:07:30.540
+como ha ocurrido aquí,
+
+167
+00:07:30.540 --> 00:07:33.120
+eso significa que tienes Git
+en tu sistema
+
+168
+00:07:33.120 --> 00:07:34.963
+y estás listo para empezar.
+

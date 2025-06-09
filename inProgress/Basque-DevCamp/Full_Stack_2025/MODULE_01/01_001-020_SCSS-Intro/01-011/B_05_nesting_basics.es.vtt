@@ -1,0 +1,538 @@
+WEBVTT
+
+1
+00:00:01.070 --> 00:00:02.280
+<v Narrador>A lo largo de este curso hasta ahora</v>
+
+2
+00:00:02.280 --> 00:00:04.700
+ya has visto de lo que vamos a hablar
+
+3
+00:00:04.700 --> 00:00:07.670
+en esta guía y que es el "nesting".
+
+4
+00:00:07.670 --> 00:00:11.410
+El "nesting" es una de mis partes favoritas de SCSS.
+
+5
+00:00:11.410 --> 00:00:15.190
+Lo que nos permite el nido es organizar
+
+6
+00:00:15.190 --> 00:00:18.700
+nuestro código y nuestras definiciones de clase y estilo
+
+7
+00:00:18.700 --> 00:00:23.480
+de una manera que es un poco más atractiva visualmente
+
+8
+00:00:23.480 --> 00:00:26.520
+y también más fácil organizar tu código
+
+9
+00:00:26.520 --> 00:00:28.020
+para que tenga sentido.
+
+10
+00:00:28.020 --> 00:00:31.180
+Así que tomemos por ejemplo cómo tendrías
+
+11
+00:00:31.180 --> 00:00:33.710
+que hacer algo como importar
+
+12
+00:00:33.710 --> 00:00:37.580
+o agregar una clase y agregar una clase padre.
+
+13
+00:00:37.580 --> 00:00:42.370
+Entonces digamos que tenemos algo como mi contenedor.
+
+14
+00:00:42.370 --> 00:00:46.290
+Solo en CSS, si quieres atravesar
+
+15
+00:00:46.290 --> 00:00:48.710
+hasta una de las clases para niños,
+
+16
+00:00:48.710 --> 00:00:50.740
+entonces tendrías que hacer algo
+
+17
+00:00:50.740 --> 00:00:54.010
+como tener un "nesting" aquí, o no,
+
+18
+00:00:54.010 --> 00:00:56.290
+tendrías que decir que quiero poner eso.
+
+19
+00:00:56.290 --> 00:01:01.290
+dentro del contenido de la página y luego pondrías
+
+20
+00:01:01.610 --> 00:01:04.580
+sus diferentes definiciones de estilo
+
+21
+00:01:04.580 --> 00:01:09.380
+y eso es solo con anidar dentro de un elemento.
+
+22
+00:01:09.380 --> 00:01:13.510
+Una vez que comiences a hacerlo por dos, tres, cuatro o más,
+
+23
+00:01:13.510 --> 00:01:16.350
+te darás cuenta de que se empieza a volver mucho
+
+24
+00:01:16.350 --> 00:01:19.380
+más complejo y el código de estilo empieza a ponerse
+
+25
+00:01:19.380 --> 00:01:21.440
+mucho más desafiante para leer.
+
+26
+00:01:21.440 --> 00:01:26.440
+Eso es lo que SCSS o sass nos da en forma de "nesting".
+
+27
+00:01:26.520 --> 00:01:29.640
+Así que aquí mismo, ya te he enseñado
+
+28
+00:01:29.640 --> 00:01:31.230
+esto para el curso solo para que puedas
+
+29
+00:01:31.230 --> 00:01:34.940
+acostumbrarte a la sintaxis y lo que tenemos
+
+30
+00:01:34.940 --> 00:01:37.230
+son un par de ejemplos diferentes.
+
+31
+00:01:37.230 --> 00:01:40.110
+Para nuestro cuerpo y contenedor, estos no contienen nidos.
+
+32
+00:01:40.110 --> 00:01:42.630
+Estos son idénticos a lo que estarías usando
+
+33
+00:01:42.630 --> 00:01:47.100
+si tuvieras una hoja de estilo CSS normal.
+
+34
+00:01:47.100 --> 00:01:49.810
+Ahora bien, si vas al envoltorio de la página, sin embargo,
+
+35
+00:01:49.810 --> 00:01:52.320
+aquí es donde empieza a ser diferente.
+
+36
+00:01:52.320 --> 00:01:54.730
+Para el envoltorio de la página, tenemos un par de estilos.
+
+37
+00:01:54.730 --> 00:01:56.500
+Tenemos nuestro relleno y luego también estamos
+
+38
+00:01:56.500 --> 00:01:58.120
+estableciendo una variable.
+
+39
+00:01:58.120 --> 00:02:01.030
+Ahora dentro de eso, también tenemos
+
+40
+00:02:01.030 --> 00:02:02.920
+esta clase de destacados.
+
+41
+00:02:02.920 --> 00:02:06.340
+Y dentro de los destacados, tenemos una definición de color
+
+42
+00:02:06.340 --> 00:02:10.750
+y al bajar a la línea 23, tenemos el contenido de la página.
+
+43
+00:02:10.750 --> 00:02:14.090
+Ahora la forma en que funciona es que el contenido de la
+
+44
+00:02:14.090 --> 00:02:17.280
+página está anidado dentro del envoltorio de la página y
+
+45
+00:02:17.280 --> 00:02:19.720
+está anidado, pero estos dos no están
+
+46
+00:02:19.720 --> 00:02:22.530
+anidados uno dentro del otro.
+
+47
+00:02:22.530 --> 00:02:25.460
+Por lo tanto, si quisiéramos hacer eso podrías
+
+48
+00:02:25.460 --> 00:02:28.440
+tomar el contenido de toda esta página
+
+49
+00:02:28.440 --> 00:02:32.210
+y luego ponerlo dentro de destacados.
+
+50
+00:02:32.210 --> 00:02:34.220
+Ahora, si hago eso, como puedes ver,
+
+51
+00:02:34.220 --> 00:02:36.450
+ha cambiado todo aquí en la página
+
+52
+00:02:36.450 --> 00:02:38.850
+y no funcionará y la razón
+
+53
+00:02:38.850 --> 00:02:42.210
+es cómo funciona el DOM.
+
+54
+00:02:42.210 --> 00:02:44.580
+Así que recuerda de nuevo al DOM,
+
+55
+00:02:44.580 --> 00:02:46.940
+justo aquí viendo tu HTML,
+
+56
+00:02:46.940 --> 00:02:49.920
+podemos ver cómo están anidados los elementos aquí.
+
+57
+00:02:49.920 --> 00:02:53.130
+Y esta es la razón por la que una de mis partes favoritas
+
+58
+00:02:53.130 --> 00:02:56.020
+de trabajar con SCSS es el componente de anidamiento
+
+59
+00:02:56.020 --> 00:02:58.300
+porque es una de las primeras veces, cuando empiezo
+
+60
+00:02:58.300 --> 00:03:00.730
+a entrar en SCSS, una de las primeras veces
+
+61
+00:03:00.730 --> 00:03:04.510
+en las que noto que muchas de las diferentes cosas
+
+62
+00:03:04.510 --> 00:03:08.210
+que me había acostumbrado a HTML finalmente
+
+63
+00:03:08.210 --> 00:03:11.770
+se tradujeron a como escribí mis propios estilos.
+
+64
+00:03:11.770 --> 00:03:15.314
+Así que con HTML, cuando quiero poner un encabezado
+
+65
+00:03:15.314 --> 00:03:19.270
+dentro de un div, simplemente pongo el encabezado aquí
+
+66
+00:03:19.270 --> 00:03:21.240
+dentro de la div, así,
+
+67
+00:03:21.240 --> 00:03:23.660
+mientras que con CSS regular,
+
+68
+00:03:23.660 --> 00:03:25.650
+no escribirías el código así
+
+69
+00:03:25.650 --> 00:03:27.140
+y por eso no es tan intuitivo,
+
+70
+00:03:27.140 --> 00:03:28.720
+pero con SCSS sí lo harías.
+
+71
+00:03:28.720 --> 00:03:31.410
+Así que aquí tenemos un contenedor,
+
+72
+00:03:31.410 --> 00:03:33.410
+que envuelve toda la página,
+
+73
+00:03:33.410 --> 00:03:36.570
+Así que todo aquí es el contenedor.
+
+74
+00:03:36.570 --> 00:03:39.530
+Entonces dentro de eso, tenemos un envoltorio de página.
+
+75
+00:03:39.530 --> 00:03:41.740
+Ahora el envoltorio de la página lo tiene todo
+
+76
+00:03:41.740 --> 00:03:43.390
+dentro de ella.
+
+77
+00:03:43.390 --> 00:03:46.280
+Y luego hemos destacado y destacado
+
+78
+00:03:46.280 --> 00:03:50.440
+solo tiene este título, esta sección de nosotros aquí.
+
+79
+00:03:50.440 --> 00:03:55.440
+Si tuviera que agregar cualquier otro estilo en destacados,
+
+80
+00:03:55.710 --> 00:04:00.400
+entonces podría afectar solo lo que está aquí.
+
+81
+00:04:00.400 --> 00:04:03.550
+Así que hagamos algo así aquí mismo ahora.
+
+82
+00:04:03.550 --> 00:04:06.752
+Voy a escribir debajo de destacados,
+
+83
+00:04:06.752 --> 00:04:11.752
+voy a poner en una nueva clase y voy a
+
+84
+00:04:11.920 --> 00:04:16.920
+llamarla div class y diremos subtítulo.
+
+85
+00:04:20.204 --> 00:04:23.310
+Y luego lo cerraré y nada cambió
+
+86
+00:04:23.310 --> 00:04:26.180
+hasta ahora y aquí puedo hacer algo
+
+87
+00:04:26.180 --> 00:04:30.983
+como un H4 y decir mi subtítulo,
+
+88
+00:04:32.120 --> 00:04:37.040
+lo cerramos y ahora tenemos mi subtítulo aquí
+
+89
+00:04:37.040 --> 00:04:38.290
+y puedes verlo.
+
+90
+00:04:38.290 --> 00:04:42.300
+Si quiero agregar los diferentes estilos,
+
+91
+00:04:42.300 --> 00:04:46.300
+si quiero tener una clase y quiero estilizarla
+
+92
+00:04:46.300 --> 00:04:51.300
+con un color, podría decir subtítulo y luego
+
+93
+00:04:51.750 --> 00:04:55.440
+dentro de esto podría darle un color de
+
+94
+00:04:55.440 --> 00:04:59.623
+digamos, luz coral.
+
+95
+00:05:00.620 --> 00:05:03.810
+Y ahora esto va a cambiar la luz coral,
+
+96
+00:05:03.810 --> 00:05:08.620
+pero si quisiera cambiarlo a verde oscuro,
+
+97
+00:05:08.620 --> 00:05:10.670
+entonces lo cambiaré a verde oscuro.
+
+98
+00:05:10.670 --> 00:05:14.070
+Ahora si tomo esto, todo el subtítulo
+
+99
+00:05:14.070 --> 00:05:18.201
+y lo pongo dentro de lo destacado,
+
+100
+00:05:18.201 --> 00:05:22.250
+aquí mismo, observa cómo todos nuestros estilos de color
+
+101
+00:05:22.250 --> 00:05:25.640
+simplemente desaparecen y la razón es por
+
+102
+00:05:25.640 --> 00:05:27.300
+cómo funciona la anidación.
+
+103
+00:05:27.300 --> 00:05:30.660
+Una vez más se remonta a cómo funciona CSS en general
+
+104
+00:05:30.660 --> 00:05:33.430
+en lo que respecta a lo más específico que se obtiene
+
+105
+00:05:33.430 --> 00:05:35.230
+con tus definiciones de estilo,
+
+106
+00:05:35.230 --> 00:05:38.540
+el CSS más importante los va a ver.
+
+107
+00:05:38.540 --> 00:05:42.360
+Así que para este ejemplo, solo el subtítulo será,
+
+108
+00:05:42.360 --> 00:05:45.400
+toda esta clase en el estilo dentro de él,
+
+109
+00:05:45.400 --> 00:05:47.700
+solo va a ser llamado si lo ponemos
+
+110
+00:05:47.700 --> 00:05:50.000
+dentro de lo destacado.
+
+111
+00:05:50.000 --> 00:05:52.863
+Así que ahora déjame cortar esto.
+
+112
+00:05:53.764 --> 00:05:58.222
+Voy a poner esto dentro de destacado y ahora
+
+113
+00:05:58.222 --> 00:06:01.780
+puedes ver que nuestros estilos funcionan una vez más,
+
+114
+00:06:01.780 --> 00:06:05.150
+así que ahora está mostrando el verde oscuro
+
+115
+00:06:05.150 --> 00:06:08.050
+y si es más difícil de ver allí, puedo cambiar
+
+116
+00:06:08.050 --> 00:06:13.050
+para iluminar con coral o rojo o algo
+
+117
+00:06:13.100 --> 00:06:15.540
+que sea más fácil de ver.
+
+118
+00:06:15.540 --> 00:06:19.230
+Así es como funciona escencialmente
+
+119
+00:06:19.230 --> 00:06:20.730
+el "nesting".
+
+120
+00:06:20.730 --> 00:06:24.080
+Te da la capacidad de tratar
+
+121
+00:06:24.080 --> 00:06:27.470
+todos tus estilos de la misma manera que tratas
+
+122
+00:06:27.470 --> 00:06:30.380
+tu HTML y cómo puedes colocarlos
+
+123
+00:06:30.380 --> 00:06:33.720
+dentro de otras clases y otras identificaciones
+
+124
+00:06:33.720 --> 00:06:35.670
+y puedes asegurarte de que los estilos que
+
+125
+00:06:35.670 --> 00:06:39.630
+proporcionas solo están disponibles para aquellos
+
+126
+00:06:39.630 --> 00:06:43.840
+elementos específicos en el DOM y en la página.
+
+127
+00:06:43.840 --> 00:06:46.180
+Eso es algo que es muy importante.
+
+128
+00:06:46.180 --> 00:06:48.370
+Una de las primeras cosas que probablemente
+
+129
+00:06:48.370 --> 00:06:51.310
+notes cuando estés pasando por archivos SCSS
+
+130
+00:06:51.310 --> 00:06:54.920
+es que no están al mismo nivel que los CSS normales.
+
+131
+00:06:54.920 --> 00:06:58.010
+Y esa es la razón por la que vemos
+
+132
+00:06:58.010 --> 00:07:00.730
+la forma en que puedes pensar en tus estilos
+
+133
+00:07:00.730 --> 00:07:02.900
+muy alineados con tu forma de pensar
+
+134
+00:07:02.900 --> 00:07:05.153
+escribiendo su código HTML regular.
+

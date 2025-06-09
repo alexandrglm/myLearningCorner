@@ -1,0 +1,900 @@
+WEBVTT
+
+1
+00:00:00.960 --> 00:00:02.950
+<v ->Muy buen trabajo al pasar por el curso.</v>
+
+2
+00:00:02.950 --> 00:00:06.720
+Ahora que tienes algunos conocimientos fundamentales sobre
+
+3
+00:00:06.720 --> 00:00:10.160
+construcción de la experiencia de usuario,
+
+4
+00:00:10.160 --> 00:00:12.550
+estamos en el lugar donde te vas a ensuciar las manos
+
+5
+00:00:12.550 --> 00:00:15.810
+para construir
+
+6
+00:00:15.810 --> 00:00:20.240
+y vas a crear tu propia aplicación de cartera
+
+7
+00:00:20.240 --> 00:00:22.410
+y este es el lado de la experiencia del usuario.
+
+8
+00:00:22.410 --> 00:00:24.860
+Así que en el curso de interfaz de usuario,
+
+9
+00:00:24.860 --> 00:00:27.370
+vamos a hacer que se vea realmente bien
+
+10
+00:00:27.370 --> 00:00:28.749
+seleccionando fuentes y colores
+
+11
+00:00:28.749 --> 00:00:30.780
+y todo ese tipo de cosas,
+
+12
+00:00:30.780 --> 00:00:34.610
+pero en este curso específico y en este proyecto,
+
+13
+00:00:34.610 --> 00:00:37.850
+nos vamos a centrar en la experiencia del usuario
+
+14
+00:00:37.850 --> 00:00:40.340
+y lo que queremos que hagas es
+
+15
+00:00:40.340 --> 00:00:42.790
+que comiences en el paso uno.
+
+16
+00:00:42.790 --> 00:00:45.100
+A partir del objetivo principal.
+
+17
+00:00:45.100 --> 00:00:49.180
+Nombra cuál es el objetivo principal de este sistema
+
+18
+00:00:49.180 --> 00:00:50.980
+y el objetivo primordial no es
+
+19
+00:00:50.980 --> 00:00:53.460
+que sea una aplicación de cartera.
+
+20
+00:00:53.460 --> 00:00:56.250
+Tiene que ser un poco más específico.
+
+21
+00:00:56.250 --> 00:00:58.799
+Esto se reduce a donde quieres centrarte,
+
+22
+00:00:58.799 --> 00:01:01.830
+lo que quieres que la gente vea
+
+23
+00:01:01.830 --> 00:01:05.000
+y el tipo de experiencia que quieres que tengan.
+
+24
+00:01:05.000 --> 00:01:08.740
+<v ->Sí y siempre que hagas este tipo de sitios web de</v>
+
+25
+00:01:08.740 --> 00:01:10.359
+marketing y que te estés comercializando,
+
+26
+00:01:10.359 --> 00:01:12.290
+lo que estás haciendo es
+
+27
+00:01:12.290 --> 00:01:14.800
+identificar a tus usuarios,
+
+28
+00:01:14.800 --> 00:01:16.560
+¿qué estoy tratando de lograr aquí?
+
+29
+00:01:16.560 --> 00:01:17.910
+¿Estoy vendiendo un producto?
+
+30
+00:01:17.910 --> 00:01:20.240
+Sí, te estás vendiendo a ti mismo, ¿verdad?
+
+31
+00:01:20.240 --> 00:01:22.150
+Tú eres el producto y así identifica
+
+32
+00:01:22.150 --> 00:01:23.910
+cuál es ese objetivo primordial,
+
+33
+00:01:23.910 --> 00:01:26.300
+tu llamado a las acciones, tu contenido,
+
+34
+00:01:26.300 --> 00:01:29.700
+debe orientarse a lograr ese objetivo.
+
+35
+00:01:29.700 --> 00:01:31.130
+Cualquiera de estos sitios de marketing,
+
+36
+00:01:31.130 --> 00:01:33.490
+ya sea un botón de compra
+
+37
+00:01:33.490 --> 00:01:35.230
+o un botón de suscripción al boletín
+
+38
+00:01:35.230 --> 00:01:36.570
+o un botón de contacto,
+
+39
+00:01:36.570 --> 00:01:38.200
+estas son las cosas que estàs diciendo,
+
+40
+00:01:38.200 --> 00:01:41.920
+es lo que quiero que hagan mis usuarios x,
+
+41
+00:01:41.920 --> 00:01:46.548
+si se trata de posibles empleadores, posibles socios,
+
+42
+00:01:46.548 --> 00:01:48.210
+gente que compratu producto,
+
+43
+00:01:48.210 --> 00:01:50.330
+son las personas que lo van a usar,
+
+44
+00:01:50.330 --> 00:01:54.280
+así que identifica lo que quieres que hagan estas personas.
+
+45
+00:01:54.280 --> 00:01:55.580
+Quiénes son estas personas.
+
+46
+00:01:55.580 --> 00:01:56.990
+Así que lo mismo de lo que hablamos:
+
+47
+00:01:56.990 --> 00:01:58.150
+identificar el objetivo principal,
+
+48
+00:01:58.150 --> 00:01:59.320
+eso es sobre lo que quieres asegurar
+
+49
+00:01:59.320 --> 00:02:03.250
+que este sitio web gire alrededor.
+
+50
+00:02:03.250 --> 00:02:05.560
+<v ->Absolutamente y por eso algunos de los entregables</v>
+
+51
+00:02:05.560 --> 00:02:09.200
+para este proyecto van a ser la lista de elementos
+
+52
+00:02:09.200 --> 00:02:11.400
+que ya hemos visto
+
+53
+00:02:11.400 --> 00:02:15.670
+y también los principales serán tu estructura wireframe.
+
+54
+00:02:15.670 --> 00:02:17.710
+Lo siento, primero tu mapa del sitio.
+
+55
+00:02:17.710 --> 00:02:19.480
+Recuerda, vas a construir el mapa del sitio,
+
+56
+00:02:19.480 --> 00:02:23.380
+muestra todas las páginas en tu aplicación de cartera
+
+57
+00:02:23.380 --> 00:02:27.610
+y cómo los usuarios pueden navegar de una a otra
+
+58
+00:02:27.610 --> 00:02:30.440
+y luego desplazarse, la gran cosa que
+
+59
+00:02:30.440 --> 00:02:34.180
+hay que hacer es un wireframe de todo el sistema.
+
+60
+00:02:34.180 --> 00:02:38.770
+Recuerda, este es un "wireframe" de muy baja fidelidad.
+
+61
+00:02:38.770 --> 00:02:42.300
+No se verá como tu meta final,
+
+62
+00:02:42.300 --> 00:02:45.010
+la aplicación final, en realidad va a lucir.
+
+63
+00:02:45.010 --> 00:02:47.940
+En su lugar, esto va a ser mucho más alto nivel.
+
+64
+00:02:47.940 --> 00:02:50.550
+Se va a centrar en la navegabilidad,
+
+65
+00:02:50.550 --> 00:02:52.810
+en qué tipos
+
+66
+00:02:52.810 --> 00:02:55.100
+de componentes vas a tener en la página.
+
+67
+00:02:55.100 --> 00:02:55.933
+<v ->Claro, exactamente.</v>
+
+68
+00:02:55.933 --> 00:02:59.240
+El mapa del sitio debería ser bastante fácil
+
+69
+00:02:59.240 --> 00:03:02.240
+porque no tienes muchas acciones
+
+70
+00:03:02.240 --> 00:03:04.790
+aquí y muchas páginas para ir.
+
+71
+00:03:04.790 --> 00:03:05.890
+Debería ser bastante simple.
+
+72
+00:03:05.890 --> 00:03:08.670
+Debe ser bastante preciso y sencillo.
+
+73
+00:03:08.670 --> 00:03:10.020
+Así que poniéndolo bien,
+
+74
+00:03:10.020 --> 00:03:13.472
+¿qué páginas quiero tener en este sitio web?
+
+75
+00:03:13.472 --> 00:03:16.850
+Y usando una herramienta, yo personalmente,
+
+76
+00:03:16.850 --> 00:03:19.080
+les daré un par de opciones.
+
+77
+00:03:19.080 --> 00:03:20.590
+Algunas son pagadas,
+
+78
+00:03:20.590 --> 00:03:22.580
+otras son gratuitas,
+
+79
+00:03:22.580 --> 00:03:25.790
+pero si recuerdas, el mapa del sitio, uso Lucidchart.
+
+80
+00:03:25.790 --> 00:03:26.900
+Es realmente bueno para los equipos,
+
+81
+00:03:26.900 --> 00:03:30.480
+pero también tienen una versión de prueba gratuita.
+
+82
+00:03:30.480 --> 00:03:31.950
+donde puedes entrar, crear un mapa del sitio
+
+83
+00:03:31.950 --> 00:03:36.410
+o un número limitado de mapas de sitio.
+
+84
+00:03:36.410 --> 00:03:39.771
+Así que recomiendo usar Lucidchart para entrar.
+
+85
+00:03:39.771 --> 00:03:44.420
+Como dije, es la opción de los distribuidores si quieres
+
+86
+00:03:44.420 --> 00:03:47.100
+usar círculos en lugar de diamantes, claro,
+
+87
+00:03:47.100 --> 00:03:51.210
+pero siempre y cuando tenga un patrón.
+
+88
+00:03:51.210 --> 00:03:53.810
+Así que traza las páginas que quieras,
+
+89
+00:03:53.810 --> 00:03:55.820
+las acciones específicas que van a suceder
+
+90
+00:03:55.820 --> 00:03:57.740
+y entonces ese será tu mapa del sitio
+
+91
+00:03:57.740 --> 00:04:00.020
+y luego te moverás a los wireframes.
+
+92
+00:04:00.020 --> 00:04:03.191
+Las herramientas que recomendamos para wireframes,
+
+93
+00:04:03.191 --> 00:04:06.120
+yo personalmente uso Adobe Sketch
+
+94
+00:04:07.387 --> 00:04:08.600
+o Adobe XD, lo siento.
+
+95
+00:04:08.600 --> 00:04:12.050
+Yo uso Adobe XD para hacer mis wireframes,
+
+96
+00:04:12.050 --> 00:04:15.170
+pero obviamente es un programa caro.
+
+97
+00:04:15.170 --> 00:04:16.400
+Así que algunas alternativas son Envision,
+
+98
+00:04:16.400 --> 00:04:21.400
+que tiene una parte gratuita, es como lo llaman,
+
+99
+00:04:21.870 --> 00:04:23.680
+donde puedes entrar y puedes dibujar formas
+
+100
+00:04:23.680 --> 00:04:25.640
+y puedes poner contenido dentro de ellas.
+
+101
+00:04:25.640 --> 00:04:29.540
+<v ->Correcto, y así puedes usar una aplicación pagada</v>
+
+102
+00:04:29.540 --> 00:04:31.710
+o si estás entrando en esto
+
+103
+00:04:31.710 --> 00:04:34.000
+y probando, entonces una herramienta gratuita
+
+104
+00:04:34.000 --> 00:04:37.700
+como Envision está perfectamente bien.
+
+105
+00:04:37.700 --> 00:04:41.420
+Si enfocas poco de tu tiempo
+
+106
+00:04:41.420 --> 00:04:46.140
+en tu carrera de desarrollo en el tipo de mundo Ui/Ux,
+
+107
+00:04:46.140 --> 00:04:48.000
+entonces lo más probable es que estés usando
+
+108
+00:04:48.000 --> 00:04:50.380
+algunas de las herramientas más caras y avanzadas,
+
+109
+00:04:50.380 --> 00:04:52.170
+pero para completar este proyecto,
+
+110
+00:04:52.170 --> 00:04:54.930
+puedes usar aplicaciones completamente gratis
+
+111
+00:04:54.930 --> 00:04:57.430
+o pruebas gratuitas.
+
+112
+00:04:57.430 --> 00:05:00.630
+<v ->Y si es intimidante al principio, busca una pizarra blanca</v>
+
+113
+00:05:00.630 --> 00:05:03.270
+y, si no la tienes, consigue un papel.
+
+114
+00:05:03.270 --> 00:05:05.130
+Si no quieres, si solo quieres
+
+115
+00:05:05.130 --> 00:05:06.400
+centrarte en una cosa a la vez,
+
+116
+00:05:06.400 --> 00:05:08.220
+no quieres aprender un nuevo software,
+
+117
+00:05:08.220 --> 00:05:10.160
+me refiero honestamente a tomar un pedazo de papel.
+
+118
+00:05:10.160 --> 00:05:12.410
+Paso mucho de mi tiempo en la pizarra blanca
+
+119
+00:05:12.410 --> 00:05:15.910
+porque podría querer probar tres opciones diferentes
+
+120
+00:05:15.910 --> 00:05:17.360
+Y solo quiero hacer un boceto muy rápido, así que
+
+121
+00:05:17.360 --> 00:05:19.910
+tener un cuaderno de dibujo, una pizarra blanca,
+
+122
+00:05:19.910 --> 00:05:21.590
+no tienes que ir necesariamente
+
+123
+00:05:21.590 --> 00:05:23.090
+al extremo más profundo.
+
+124
+00:05:23.090 --> 00:05:26.810
+Si te sientes vacilante o aprensivo,
+
+125
+00:05:26.810 --> 00:05:30.360
+entonces siéntete libre de dibujarlo.
+
+126
+00:05:30.360 --> 00:05:33.860
+<v ->Y mi mejor consejo para pasar por este proyecto</v>
+
+127
+00:05:33.860 --> 00:05:37.150
+con éxito es realmente seguir el patrón
+
+128
+00:05:37.150 --> 00:05:39.020
+que Jesse describió.
+
+129
+00:05:39.020 --> 00:05:42.450
+Fíjate cómo empezó con lo más general,
+
+130
+00:05:42.450 --> 00:05:45.470
+tipos de conceptos de alto nivel más genéricos,
+
+131
+00:05:45.470 --> 00:05:48.240
+como el objetivo general del sistema
+
+132
+00:05:48.240 --> 00:05:51.470
+y con cada paso hacia abajo al proceso creativo
+
+133
+00:05:51.470 --> 00:05:54.000
+las cosas se volvieron más y más detalladas
+
+134
+00:05:54.000 --> 00:05:55.070
+y tomas el mismo enfoque.
+
+135
+00:05:55.070 --> 00:05:58.280
+No intentes simplemente construir tus wireframes
+
+136
+00:05:58.280 --> 00:05:59.810
+justo cuando termines este video.
+
+137
+00:05:59.810 --> 00:06:00.880
+Sigue el proceso.
+
+138
+00:06:00.880 --> 00:06:02.650
+Ese es todo el punto.
+
+139
+00:06:02.650 --> 00:06:06.750
+Tener una aplicación de cartera muy buena es importante,
+
+140
+00:06:06.750 --> 00:06:08.890
+pero mucho más importante es
+
+141
+00:06:08.890 --> 00:06:10.610
+¿realmente aprendes estas habilidades
+
+142
+00:06:10.610 --> 00:06:13.670
+y aprendes este flujo de trabajo para que más adelante
+
+143
+00:06:13.670 --> 00:06:16.240
+cuando entres en tu propia carrera de desarrollo,
+
+144
+00:06:16.240 --> 00:06:18.670
+estas cosas se conviertan en una segunda naturaleza?
+
+145
+00:06:18.670 --> 00:06:22.640
+<v ->Correcto, y al pasar por este proceso</v>
+
+146
+00:06:22.640 --> 00:06:24.710
+identifica cuál es la diferencia entre
+
+147
+00:06:24.710 --> 00:06:26.770
+interfaz de usuario y experiencia de usuario.
+
+148
+00:06:26.770 --> 00:06:29.130
+Para esto, cuando te enfocas en la experiencia del usuario
+
+149
+00:06:29.130 --> 00:06:32.500
+y estás en esta fase, piensa en el contenido
+
+150
+00:06:32.500 --> 00:06:33.510
+que vas a poner.
+
+151
+00:06:33.510 --> 00:06:34.360
+Esto es cuando en realidad
+
+152
+00:06:34.360 --> 00:06:36.450
+piensas en la narración de historias.
+
+153
+00:06:36.450 --> 00:06:37.640
+Con un sitio web de marketing,
+
+154
+00:06:37.640 --> 00:06:39.820
+al igual que con una aplicación que podrías estar pensando
+
+155
+00:06:39.820 --> 00:06:42.240
+sobre botones y desplazamientos y herramientas
+
+156
+00:06:42.240 --> 00:06:45.440
+y metadatos y cuadros de mando.
+
+157
+00:06:45.440 --> 00:06:48.980
+Con un sitio de marketing, tratas de contar una historia.
+
+158
+00:06:48.980 --> 00:06:50.590
+Estás tratando de decir, de acuerdo,
+
+159
+00:06:50.590 --> 00:06:55.590
+tengo que identificar de qué proposiciones quiero hablar,
+
+160
+00:06:56.040 --> 00:06:58.850
+en qué orden y cuándo quiero llegar a
+
+161
+00:06:58.850 --> 00:07:00.450
+las llamadas a la acción.
+
+162
+00:07:00.450 --> 00:07:03.050
+Entonces, este es el momento de pensar en eso.
+
+163
+00:07:03.050 --> 00:07:04.140
+Podría cambiar un poco
+
+164
+00:07:04.140 --> 00:07:06.430
+cuando empiezas a ponerlo en el diseño,
+
+165
+00:07:06.430 --> 00:07:11.430
+pero durante el wireframinf, deberías pensar:
+
+166
+00:07:11.670 --> 00:07:15.040
+oye, aquí está mi héroe.
+La imagen grande en la parte
+
+167
+00:07:15.040 --> 00:07:16.674
+superior con la frase agradable, concisa.
+
+168
+00:07:16.674 --> 00:07:19.620
+Piensa en lo que quieres que diga
+
+169
+00:07:19.620 --> 00:07:21.270
+y escribe tu contenido.
+
+170
+00:07:21.270 --> 00:07:22.900
+Empieza a poner el texto.
+
+171
+00:07:22.900 --> 00:07:24.470
+No necesariamente tienes que encontrar
+
+172
+00:07:24.470 --> 00:07:26.840
+cualquier icono o imágenes que estés usando
+
+173
+00:07:26.840 --> 00:07:27.910
+o algo por el estilo,
+
+174
+00:07:27.910 --> 00:07:29.230
+pero tu solo estas diciendo: bien,
+
+175
+00:07:29.230 --> 00:07:31.600
+primero quiero hablar de mis antecedentes,
+
+176
+00:07:31.600 --> 00:07:33.720
+luego voy a hablar de lo que soy bueno.
+
+177
+00:07:33.720 --> 00:07:35.610
+Tal vez lo piensas y dices:
+
+178
+00:07:35.610 --> 00:07:37.740
+¿Sabes qué?
+¿Y si un empleador viene aquí?
+
+179
+00:07:37.740 --> 00:07:39.660
+Puede que no quiera leer mi historia,
+
+180
+00:07:39.660 --> 00:07:41.310
+solo quiere ver en qué soy bueno.
+
+181
+00:07:41.310 --> 00:07:43.090
+Tal vez necesito poner eso en el hero.
+
+182
+00:07:43.090 --> 00:07:43.980
+Tal vez no.
+
+183
+00:07:43.980 --> 00:07:45.340
+Eso es lo que estás pensando.
+
+184
+00:07:45.340 --> 00:07:48.360
+Pero si hay un consejo
+
+185
+00:07:48.360 --> 00:07:50.090
+que te puedo dar es:
+
+186
+00:07:50.090 --> 00:07:52.490
+mantén un contenido breve.
+
+187
+00:07:52.490 --> 00:07:54.990
+Que tus encabezados sean muy directos.
+
+188
+00:07:54.990 --> 00:07:59.280
+Sé muy preciso y el texto de apoyo
+
+189
+00:07:59.280 --> 00:08:02.280
+hazlo lo más mínimo posible.
+
+190
+00:08:02.280 --> 00:08:04.519
+Quieres comunicar lo que quieres comunicar
+
+191
+00:08:04.519 --> 00:08:06.690
+en tan pocas palabras como sea posible,
+
+192
+00:08:06.690 --> 00:08:08.260
+especialmente con un empleador
+
+193
+00:08:09.998 --> 00:08:12.310
+y no quieres que pierda el tiempo
+
+194
+00:08:12.310 --> 00:08:14.650
+contándole cuál era tu botana favorita
+
+195
+00:08:14.650 --> 00:08:15.750
+cuando tenías 10 años.
+
+196
+00:08:15.750 --> 00:08:18.600
+<v ->Y eso también trae un muy buen punto.</v>
+
+197
+00:08:18.600 --> 00:08:21.500
+Dependiendo de tu nivel de experiencia en este momento
+
+198
+00:08:21.500 --> 00:08:22.740
+mientras tomas este curso
+
+199
+00:08:22.740 --> 00:08:24.810
+y mientras construyes este proyecto,
+
+200
+00:08:24.810 --> 00:08:27.120
+tal vez no conozcas
+
+201
+00:08:27.120 --> 00:08:30.010
+todos los diferentes componentes.
+
+202
+00:08:30.010 --> 00:08:33.340
+Es posible que no sepas cuál será tu especialidad.
+
+203
+00:08:33.340 --> 00:08:34.430
+Está bien.
+
+204
+00:08:34.430 --> 00:08:37.490
+No quiero que eso te impida
+
+205
+00:08:37.490 --> 00:08:39.370
+salir y construir esto,
+
+206
+00:08:39.370 --> 00:08:41.400
+en su lugar podrías poner algo como
+
+207
+00:08:41.400 --> 00:08:43.860
+esto es lo que creo que es mi especialidad.
+
+208
+00:08:43.860 --> 00:08:45.590
+Podrías ser un desarrollador de pila completa
+
+209
+00:08:45.590 --> 00:08:49.320
+o de front-end y convertirlos en los puntos focales,
+
+210
+00:08:49.320 --> 00:08:51.530
+pero no estás atrapado en eso, créeme.
+
+211
+00:08:51.530 --> 00:08:53.280
+Puedes cambiar en cualquier momento.
+
+212
+00:08:53.280 --> 00:08:57.070
+Constantemente estoy cambiando mi propia aplicación de
+
+213
+00:08:57.070 --> 00:09:00.640
+cartera, solo se sabe que puedes evolucionar continuamente,
+
+214
+00:09:00.640 --> 00:09:05.190
+Pero en este momento desarrolla el sistema correcto
+
+215
+00:09:05.190 --> 00:09:08.270
+porque una cosa es oírlo de nosotros.
+
+216
+00:09:08.270 --> 00:09:09.520
+Es completamente diferente
+
+217
+00:09:09.520 --> 00:09:10.940
+cuando realmente te metes en la maleza
+
+218
+00:09:10.940 --> 00:09:14.390
+y empiezas a construir este tipo de mapas de sitio
+
+219
+00:09:14.390 --> 00:09:15.757
+y wireframes.
+
+220
+00:09:15.757 --> 00:09:17.410
+Vas a encontrar que hay algunos matices
+
+221
+00:09:17.410 --> 00:09:19.510
+que realmente solo puedes aprender
+
+222
+00:09:19.510 --> 00:09:21.420
+cuando lo estás haciendo tú mismo.
+
+223
+00:09:21.420 --> 00:09:23.110
+Así que buena suerte con el proyecto.
+
+224
+00:09:23.110 --> 00:09:25.313
+Y nos vemos en el próximo curso.
+

@@ -1,0 +1,906 @@
+WEBVTT
+
+1
+00:00:00.570 --> 00:00:02.719
+<v ->Si estás interesado en el desarrollo web,</v>
+
+2
+00:00:02.719 --> 00:00:03.989
+probablemente ya hayas escuchado
+
+3
+00:00:03.989 --> 00:00:07.330
+sobre el debate de monolítica vs microservicios.
+
+4
+00:00:07.330 --> 00:00:09.608
+Es difícil hablar de una aplicación web
+
+5
+00:00:09.608 --> 00:00:11.580
+sin que surja esta discusión.
+
+6
+00:00:11.580 --> 00:00:13.470
+Si bien puedes crear aplicaciones hermosas
+
+7
+00:00:13.470 --> 00:00:16.320
+y funcionales con cualquiera de las dos opciones,
+
+8
+00:00:16.320 --> 00:00:17.732
+es importante analizar detenidamente
+
+9
+00:00:17.732 --> 00:00:18.819
+las dos para que puedas elegir
+
+10
+00:00:18.819 --> 00:00:21.390
+la que mejor se adapte a tus necesidades.
+
+11
+00:00:21.390 --> 00:00:22.950
+Antes de dar mi opinión sobre ambas,
+
+12
+00:00:22.950 --> 00:00:25.240
+y cuál de las dos usar, quiero dar
+
+13
+00:00:25.240 --> 00:00:27.123
+una definición muy básica
+
+14
+00:00:27.123 --> 00:00:31.010
+de lo que es una aplicación monolítica frente
+
+15
+00:00:31.010 --> 00:00:33.010
+a una basada en microservicio.
+
+16
+00:00:33.010 --> 00:00:35.600
+La arquitectura monolítica es una configuración utilizada
+
+17
+00:00:35.600 --> 00:00:39.010
+para los sistemas tradicionales del lado del servidor.
+
+18
+00:00:39.010 --> 00:00:41.710
+La función de todo el sistema se basa
+
+19
+00:00:41.710 --> 00:00:43.770
+en una sola aplicación.
+
+20
+00:00:43.770 --> 00:00:46.760
+Este tipo de sistema viene con varias ventajas.
+
+21
+00:00:46.760 --> 00:00:49.160
+En primer lugar, es más rápido desarrollarlo.
+
+22
+00:00:49.160 --> 00:00:51.950
+Puedes crear una aplicación con características básicas
+
+23
+00:00:51.950 --> 00:00:54.180
+y luego ampliarla con el tiempo.
+
+24
+00:00:54.180 --> 00:00:56.530
+Las aplicaciones monolíticas también pueden ser más rápidas
+
+25
+00:00:56.530 --> 00:00:58.440
+que las aplicaciones de microservicio porque
+
+26
+00:00:58.440 --> 00:01:00.810
+no tienen que tener el requisito
+
+27
+00:01:00.810 --> 00:01:03.910
+de comunicarse a través de las API.
+
+28
+00:01:03.910 --> 00:01:04.743
+Para darte una idea
+
+29
+00:01:04.743 --> 00:01:08.420
+de cómo funciona una aplicación monolítica,
+
+30
+00:01:08.420 --> 00:01:10.520
+tenemos algo como esto.
+
+31
+00:01:10.520 --> 00:01:15.520
+Si pretendemos que este grande círculo es una aplicación,
+
+32
+00:01:15.650 --> 00:01:18.341
+entonces podríamos tener características
+
+33
+00:01:18.341 --> 00:01:21.020
+como la autenticación,
+
+34
+00:01:21.020 --> 00:01:25.620
+o si se trata de una aplicación de vlogs,
+
+35
+00:01:25.620 --> 00:01:27.880
+podríamos tener un concepto de publicaciones.
+
+36
+00:01:27.880 --> 00:01:31.638
+Y tendremos una base de datos aquí,
+
+37
+00:01:31.638 --> 00:01:36.638
+y tendremos una estructura de permisos aquí.
+
+38
+00:01:36.990 --> 00:01:40.122
+Podríamos tener una aprobación de flujo de trabajo.
+
+39
+00:01:40.122 --> 00:01:41.763
+Así que podríamos tener
+
+40
+00:01:43.705 --> 00:01:46.205
+un sistema de aprobación de flujo de trabajo
+
+41
+00:01:46.205 --> 00:01:49.570
+para aprobar publicaciones, todo eso aquí.
+
+42
+00:01:49.570 --> 00:01:52.670
+Y cada uno de estos está en el mismo sistema.
+
+43
+00:01:52.670 --> 00:01:56.260
+Todos se comunicarán con la misma base de datos.
+
+44
+00:01:56.260 --> 00:01:59.691
+Estarán en el mismo servidor.
+
+45
+00:02:01.390 --> 00:02:03.700
+Así que todos estarán en la misma máquina,
+
+46
+00:02:03.700 --> 00:02:08.174
+y también usarán el mismo
+
+47
+00:02:09.224 --> 00:02:10.430
+sistema de archivos.
+
+48
+00:02:10.430 --> 00:02:11.988
+Entonces cada uno de estos,
+
+49
+00:02:11.988 --> 00:02:14.492
+tus archivos de base de datos pueden estar ahí,
+
+50
+00:02:14.492 --> 00:02:17.660
+autenticación, todo justo allí.
+
+51
+00:02:17.660 --> 00:02:21.040
+Si estás acostumbrado a crear aplicaciones de Ruby on Rails,
+
+52
+00:02:21.040 --> 00:02:22.960
+esto puede parecerte muy familiar
+
+53
+00:02:22.960 --> 00:02:25.110
+porque es la manera predeterminada
+
+54
+00:02:25.110 --> 00:02:27.040
+en que se crea una aplicación de Rails,
+
+55
+00:02:27.040 --> 00:02:29.120
+donde tienes un conjunto de archivos,
+
+56
+00:02:29.120 --> 00:02:31.160
+y todos se comunican entre sí.
+
+57
+00:02:31.160 --> 00:02:32.800
+Cuando quieres construir una nueva característica,
+
+58
+00:02:32.800 --> 00:02:35.740
+ejecutas un generador, o creas más archivos,
+
+59
+00:02:35.740 --> 00:02:40.740
+y así es como construyes una aplicación monolítica.
+
+60
+00:02:41.080 --> 00:02:45.140
+Ahora, esto está bien, pero también es solo
+
+61
+00:02:45.140 --> 00:02:49.430
+una forma en que se pueden construir las aplicaciones.
+
+62
+00:02:49.430 --> 00:02:52.150
+También tenemos la capacidad de crear
+
+63
+00:02:52.150 --> 00:02:55.460
+cosas llamadas aplicaciones de microservicios.
+
+64
+00:02:55.460 --> 00:02:59.410
+Lo que un microservicio es, es una arquitectura
+
+65
+00:02:59.410 --> 00:03:04.410
+en la que cada característica es su propia aplicación.
+
+66
+00:03:04.470 --> 00:03:06.000
+Entonces, ¿recuerdas cómo
+
+67
+00:03:06.000 --> 00:03:08.397
+teníamos el gran círculo y era una aplicación?
+
+68
+00:03:08.397 --> 00:03:13.396
+Aquí, podríamos tener autenticación
+
+69
+00:03:13.396 --> 00:03:15.040
+de solo estar en su propia aplicación.
+
+70
+00:03:15.040 --> 00:03:17.633
+Y luego tenemos la idea de las publicaciones.
+
+71
+00:03:19.360 --> 00:03:22.760
+Las publicaciones serían su propia aplicación.
+
+72
+00:03:22.760 --> 00:03:26.820
+Y luego, si tenemos una autorización,
+
+73
+00:03:26.820 --> 00:03:29.561
+o un flujo de trabajo de aprobación,
+
+74
+00:03:29.561 --> 00:03:31.628
+tal como lo hicimos antes.
+
+75
+00:03:33.090 --> 00:03:34.880
+Tenemos ese flujo de trabajo de aprobación,
+
+76
+00:03:34.880 --> 00:03:36.850
+y luego tu tienes cada uno de estos,
+
+77
+00:03:36.850 --> 00:03:39.980
+y todas son entidades separadas.
+
+78
+00:03:39.980 --> 00:03:44.978
+Cada una reside en su propio servidor.
+
+79
+00:03:49.620 --> 00:03:51.470
+Y luego, si te estás preguntando,
+
+80
+00:03:51.470 --> 00:03:53.860
+¿cómo se podría conectar todo esto?
+
+81
+00:03:53.860 --> 00:03:58.270
+Tienen API que se conectan entre sí.
+
+82
+00:03:58.270 --> 00:03:59.378
+Por lo tanto, es posible
+
+83
+00:03:59.378 --> 00:04:01.340
+que el flujo de trabajo de aprobación
+
+84
+00:04:01.340 --> 00:04:05.010
+deba ir y hacer una llamada al motor de autorización,
+
+85
+00:04:05.010 --> 00:04:07.313
+verificando si un usuario está autorizado.
+
+86
+00:04:08.160 --> 00:04:11.390
+Y luego puede verificar las publicaciones y correos,
+
+87
+00:04:11.390 --> 00:04:13.040
+así que comunícate con la aplicación
+
+88
+00:04:13.040 --> 00:04:14.640
+de flujo de trabajo de aprobación.
+
+89
+00:04:14.640 --> 00:04:16.530
+Todo esto sucede, usualmente,
+
+90
+00:04:16.530 --> 00:04:20.400
+utilizando aplicaciones basadas en API JSON.
+
+91
+00:04:20.400 --> 00:04:22.332
+Esa es una especie de definición
+
+92
+00:04:22.332 --> 00:04:25.740
+de cómo podrían trabajar a un nivel muy alto.
+
+93
+00:04:25.740 --> 00:04:27.400
+Y ya he analizado algunos
+
+94
+00:04:27.400 --> 00:04:31.940
+de los beneficios de las aplicaciones monolíticas,
+
+95
+00:04:31.940 --> 00:04:34.040
+pero también hay algunos inconvenientes.
+
+96
+00:04:34.040 --> 00:04:36.760
+Mantener las aplicaciones monolíticas puede
+
+97
+00:04:36.760 --> 00:04:39.070
+llegar a ser un gran desafío,
+
+98
+00:04:39.070 --> 00:04:41.500
+especialmente si no están bien desarrollados.
+
+99
+00:04:41.500 --> 00:04:43.750
+Esto se debe principalmente al hecho
+
+100
+00:04:43.750 --> 00:04:46.500
+de que las aplicaciones monolíticas tienen la reputación
+
+101
+00:04:46.500 --> 00:04:49.530
+de asociar estrechamente los procesos.
+
+102
+00:04:49.530 --> 00:04:53.230
+Esto significa que hacer un solo cambio puede tener
+
+103
+00:04:53.230 --> 00:04:55.710
+un efecto dominó y causar varios
+
+104
+00:04:55.710 --> 00:04:59.110
+problemas en diferentes partes de la base del código.
+
+105
+00:04:59.110 --> 00:05:01.890
+Mientras que la arquitectura monolítica pone
+
+106
+00:05:01.890 --> 00:05:05.820
+toda la funcionalidad en un solo proceso,
+
+107
+00:05:05.820 --> 00:05:10.080
+los microservicios los dividen en diferentes partes.
+
+108
+00:05:10.080 --> 00:05:14.120
+Entonces, si creas un microservicio de la manera correcta,
+
+109
+00:05:14.120 --> 00:05:16.390
+entonces no tendrás el mismo nivel
+
+110
+00:05:16.390 --> 00:05:18.980
+de acoplamiento y los elementos no,
+
+111
+00:05:18.980 --> 00:05:21.990
+o no deberían depender entre sí
+
+112
+00:05:21.990 --> 00:05:25.030
+de la misma manera en que lo hace una aplicación monolítica.
+
+113
+00:05:25.030 --> 00:05:28.137
+Así que construyes todos estos diversos servicios
+
+114
+00:05:28.137 --> 00:05:32.110
+dentro de una arquitectura entera,
+
+115
+00:05:32.110 --> 00:05:35.020
+y cada uno de estos puede ser puesto a prueba
+
+116
+00:05:35.020 --> 00:05:37.030
+y desarrollado individualmente.
+
+117
+00:05:37.030 --> 00:05:38.810
+Y una vez que la aplicación está en funcionamiento,
+
+118
+00:05:38.810 --> 00:05:39.893
+los servicios simplemente
+
+119
+00:05:39.893 --> 00:05:41.700
+se ejecutan en servidores separados
+
+120
+00:05:41.700 --> 00:05:46.210
+y procesos separados, todos conectados entre sí.
+
+121
+00:05:46.210 --> 00:05:47.650
+Uno de los mayores beneficios
+
+122
+00:05:47.650 --> 00:05:50.120
+de usar microservicios es la capacidad
+
+123
+00:05:50.120 --> 00:05:51.680
+de ampliar.
+
+124
+00:05:51.680 --> 00:05:54.260
+Puedes ampliar componentes individuales,
+
+125
+00:05:54.260 --> 00:05:58.150
+en lugar de tener que ampliar la aplicación entera.
+
+126
+00:05:58.150 --> 00:06:02.081
+Un buen ejemplo de una vez en la que usé esto fue cuando
+
+127
+00:06:02.081 --> 00:06:04.250
+tenía una aplicación basada en microservicios,
+
+128
+00:06:04.250 --> 00:06:06.930
+y era con una compañía que ejecutaba
+
+129
+00:06:06.930 --> 00:06:09.400
+programas de marketing muy grandes.
+
+130
+00:06:09.400 --> 00:06:12.290
+Y hubo momentos en los que, dentro de un día,
+
+131
+00:06:12.290 --> 00:06:15.300
+podrían obtener 50,000 inscripciones, y eso podría
+
+132
+00:06:15.300 --> 00:06:20.160
+encajar dentro de unas pocas horas.
+
+133
+00:06:20.160 --> 00:06:22.480
+Donde esto ayudó fue cuando
+
+134
+00:06:22.480 --> 00:06:26.550
+pude ampliar ciertos componentes,
+
+135
+00:06:26.550 --> 00:06:30.170
+como la interfaz, y el motor de autorización,
+
+136
+00:06:30.170 --> 00:06:32.600
+sin siquiera tener que tocar estos otros,
+
+137
+00:06:32.600 --> 00:06:35.792
+porque solo eran algún tipo de registros de generación
+
+138
+00:06:35.792 --> 00:06:37.270
+de lead, y no tenían
+
+139
+00:06:37.270 --> 00:06:39.800
+que tocar cada uno de estos otros componentes.
+
+140
+00:06:39.800 --> 00:06:42.218
+Así que en realidad le ahorré mucho dinero a la empresa
+
+141
+00:06:42.218 --> 00:06:44.246
+porque fui capaz de reducir
+
+142
+00:06:44.246 --> 00:06:47.870
+y ampliar, los elementos importantes
+
+143
+00:06:47.870 --> 00:06:49.257
+que se iban a estar relacionados
+
+144
+00:06:49.257 --> 00:06:51.710
+con el trabajo que se iba a realizar.
+
+145
+00:06:51.710 --> 00:06:54.330
+Entonces, además del lado de ampliar,
+
+146
+00:06:54.330 --> 00:06:56.488
+también es bueno porque puedes probar
+
+147
+00:06:56.488 --> 00:06:57.696
+los diversos componentes
+
+148
+00:06:57.696 --> 00:07:01.530
+y aislar cualquier problema de forma rápida y mas fácil,
+
+149
+00:07:01.530 --> 00:07:05.230
+y esto te permite ofrecer una solución más rápida.
+
+150
+00:07:05.230 --> 00:07:07.580
+Además, si un componente falla,
+
+151
+00:07:07.580 --> 00:07:10.870
+no tiene que fallar todo tu sistema.
+
+152
+00:07:10.870 --> 00:07:13.490
+Entonces, si creas tu sistema donde
+
+153
+00:07:13.490 --> 00:07:15.477
+cada componente puede funcionar
+
+154
+00:07:15.477 --> 00:07:18.180
+sin los otros, tu sistema no se caerá
+
+155
+00:07:18.180 --> 00:07:22.350
+solo porque lo haga un sistema o un componente.
+
+156
+00:07:22.350 --> 00:07:24.990
+Un gran ejemplo de esto sería,
+
+157
+00:07:24.990 --> 00:07:29.320
+digamos que tenemos un motor de informes
+
+158
+00:07:29.320 --> 00:07:32.900
+como uno de los componentes de microservicio.
+
+159
+00:07:32.900 --> 00:07:36.640
+Si hubiera un error en el motor de informes
+
+160
+00:07:36.640 --> 00:07:39.330
+y esto fuera una aplicación monolítica,
+
+161
+00:07:39.330 --> 00:07:42.190
+se eliminaría todo el sistema.
+
+162
+00:07:42.190 --> 00:07:45.320
+Sin embargo, si esta parte se cae
+
+163
+00:07:45.320 --> 00:07:47.365
+y hay un problema con ella,
+
+164
+00:07:47.365 --> 00:07:48.748
+todo lo que debería suceder es que,
+
+165
+00:07:48.748 --> 00:07:51.950
+cuando una publicación llama al motor de informes,
+
+166
+00:07:51.950 --> 00:07:55.990
+solo debería recibir un mensaje de no disponible o error,
+
+167
+00:07:55.990 --> 00:07:58.570
+y luego puedes hacer algo,
+
+168
+00:07:58.570 --> 00:08:01.290
+y darle al usuario una mejor retroalimentación.
+
+169
+00:08:01.290 --> 00:08:04.400
+Pero no tienes que eliminar el sistema entero.
+
+170
+00:08:04.400 --> 00:08:07.050
+Así que esta es una gran manera de poder
+
+171
+00:08:07.050 --> 00:08:10.120
+aislar y expandir aplicaciones,
+
+172
+00:08:10.120 --> 00:08:13.310
+especialmente aquellas que son increíblemente grandes.
+
+173
+00:08:13.310 --> 00:08:14.830
+Es muy raro que use
+
+174
+00:08:14.830 --> 00:08:16.810
+una aplicación basada en microservicio
+
+175
+00:08:16.810 --> 00:08:19.834
+para un sistema pequeño, solo porque
+
+176
+00:08:19.834 --> 00:08:22.350
+demora mucho más en construirse,
+
+177
+00:08:22.350 --> 00:08:24.620
+y por lo general requiere más recursos
+
+178
+00:08:24.620 --> 00:08:26.830
+y, por lo tanto, le cuesta más al cliente.
+
+179
+00:08:26.830 --> 00:08:29.570
+Sin embargo, en ciertas situaciones,
+
+180
+00:08:29.570 --> 00:08:31.980
+este puede ser uno de los mejores enfoques.
+
+181
+00:08:31.980 --> 00:08:33.500
+Un beneficio muy bueno de esto,
+
+182
+00:08:33.500 --> 00:08:35.780
+también, es el hecho de que,
+
+183
+00:08:35.780 --> 00:08:39.050
+si tienes un equipo extendido,
+
+184
+00:08:39.050 --> 00:08:41.230
+entonces tienes un grupo remoto de programadores,
+
+185
+00:08:41.230 --> 00:08:43.660
+en realidad puedes separarlos.
+
+186
+00:08:43.660 --> 00:08:48.030
+Así que podría decir que Lucy va a trabajar
+
+187
+00:08:48.030 --> 00:08:51.590
+en la aplicación, la aplicación de flujo de trabajo,
+
+188
+00:08:51.590 --> 00:08:56.300
+y John va a trabajar en el motor de informes,
+
+189
+00:08:56.300 --> 00:09:00.620
+y Keith va a trabajar en las publicaciones,
+
+190
+00:09:00.620 --> 00:09:04.300
+y cada una de ellas casi puede residir
+
+191
+00:09:04.300 --> 00:09:05.920
+dentro de su propio mundo.
+
+192
+00:09:05.920 --> 00:09:08.018
+Cuando trabajé e hice bastante
+
+193
+00:09:08.018 --> 00:09:10.788
+trabajo para Eventbrite, esta era la forma
+
+194
+00:09:10.788 --> 00:09:11.920
+en que se configuraba su sistema.
+
+195
+00:09:11.920 --> 00:09:16.110
+Tenía una de las aplicaciones de microservicio
+
+196
+00:09:16.110 --> 00:09:18.770
+que me contrataron para desarrollar,
+
+197
+00:09:18.770 --> 00:09:21.110
+y de eso era de lo único que era responsable.
+
+198
+00:09:21.110 --> 00:09:22.980
+Solo me preocupaba por lo que hacia esa,
+
+199
+00:09:22.980 --> 00:09:24.900
+y tuve que trabajar con entrantes
+
+200
+00:09:24.900 --> 00:09:29.350
+y crear conexiones y servicios de API salientes.
+
+201
+00:09:29.350 --> 00:09:33.150
+Luego mi componente se centró en algunas partes
+
+202
+00:09:33.150 --> 00:09:34.760
+del sistema de reservas.
+
+203
+00:09:34.760 --> 00:09:36.850
+Y así no tenía que preocuparme
+
+204
+00:09:36.850 --> 00:09:39.143
+por todo lo demás en la aplicación.
+
+205
+00:09:39.143 --> 00:09:40.880
+No tenía que preocuparme por sobrescribir
+
+206
+00:09:40.880 --> 00:09:43.240
+el código de otros usuarios, ni nada de eso.
+
+207
+00:09:43.240 --> 00:09:46.560
+Simplemente podía concentrarme en el elemento
+
+208
+00:09:46.560 --> 00:09:48.460
+del que tenía la responsabilidad.
+
+209
+00:09:48.460 --> 00:09:52.268
+Entonces, dependiendo de, para tomar
+
+210
+00:09:52.268 --> 00:09:55.070
+una decisión sobre qué tipo de sistema
+
+211
+00:09:55.070 --> 00:09:58.700
+usar, realmente se reduce a qué tipo
+
+212
+00:09:58.700 --> 00:10:00.460
+de aplicación necesitas construir,
+
+213
+00:10:00.460 --> 00:10:03.180
+cuál es tu cronograma, cuál es el presupuesto,
+
+214
+00:10:03.180 --> 00:10:04.620
+cuál es tu experiencia.
+
+215
+00:10:04.620 --> 00:10:06.240
+Si eres un programador nuevo,
+
+216
+00:10:06.240 --> 00:10:08.971
+entonces probablemente este no sea lo adecuado para ti,
+
+217
+00:10:08.971 --> 00:10:10.220
+porque tienes que saber
+
+218
+00:10:10.220 --> 00:10:13.160
+bastante sobre cómo funcionan las API y cómo
+
+219
+00:10:13.160 --> 00:10:16.970
+puedes conectar sistemas utilizando varios servicios.
+
+220
+00:10:16.970 --> 00:10:18.830
+Sin embargo, si tienes un poco
+
+221
+00:10:18.830 --> 00:10:20.490
+de experiencia bajo la manga,
+
+222
+00:10:20.490 --> 00:10:22.740
+te sientes cómodo utilizando API,
+
+223
+00:10:22.740 --> 00:10:25.630
+entonces hacer algo como esto puede ser una excelente manera
+
+224
+00:10:25.630 --> 00:10:27.380
+de organizar una base de código
+
+225
+00:10:27.380 --> 00:10:29.970
+y hacer que un sistema sea más ampliable.
+
+226
+00:10:29.970 --> 00:10:33.363
+Todo depende de ti y del proyecto que necesita construir.
+

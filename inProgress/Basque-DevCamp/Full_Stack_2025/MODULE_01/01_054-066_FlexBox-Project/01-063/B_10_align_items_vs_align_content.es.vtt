@@ -1,0 +1,498 @@
+WEBVTT
+
+1
+00:00:00.990 --> 00:00:02.840
+Narrador] En esta guía, vamos a discutir
+
+2
+00:00:02.840 --> 00:00:05.660
+la diferencia entre alinear contenido
+
+3
+00:00:05.660 --> 00:00:08.840
+y alinear elementos en flexbox.
+
+4
+00:00:08.840 --> 00:00:13.840
+Justo aquí, tengo una página HTML simple y bastante vacía.
+
+5
+00:00:14.540 --> 00:00:18.690
+Solo tengo una etiqueta de contenedor dentro del cuerpo
+
+6
+00:00:18.690 --> 00:00:21.050
+y todavía no le he agregado ningún tipo
+
+7
+00:00:21.050 --> 00:00:23.670
+de componentes de flexbox.
+
+8
+00:00:23.670 --> 00:00:26.490
+Así que lo primero que voy a hacer es hacer eso.
+
+9
+00:00:26.490 --> 00:00:31.070
+Voy a añadir, digamos, seis imágenes.
+
+10
+00:00:31.070 --> 00:00:34.170
+Así que puedo hacer eso diciendo
+
+11
+00:00:34.170 --> 00:00:39.170
+que img [src] es igual a,
+
+12
+00:00:39.970 --> 00:00:41.880
+y luego dentro de aquí,
+
+13
+00:00:41.880 --> 00:00:45.660
+usaré emmett para tener algunos números.
+
+14
+00:00:45.660 --> 00:00:50.480
+Así que diré imágenes, más números, jpeg,
+
+15
+00:00:50.480 --> 00:00:53.320
+y eso es todo lo que voy a hacer ahora mismo.
+
+16
+00:00:53.320 --> 00:00:55.570
+Voy a añadir cualquier clase o cualquier cosa.
+
+17
+00:00:55.570 --> 00:00:58.120
+Y luego voy a crear seis de estos.
+
+18
+00:00:58.120 --> 00:01:00.770
+Y así se crean nuestras seis imágenes.
+
+19
+00:01:00.770 --> 00:01:04.920
+Y ahora si aprieto guardar, puedo ver esas seis imágenes.
+
+20
+00:01:04.920 --> 00:01:07.353
+Vamos a añadir algunos estilos personalizados
+
+21
+00:01:07.353 --> 00:01:09.070
+a las imágenes.
+
+22
+00:01:09.070 --> 00:01:10.744
+Así que solo voy a seleccionar la etiqueta de la imagen
+
+23
+00:01:10.744 --> 00:01:11.577
+por sí misma.
+
+24
+00:01:11.577 --> 00:01:14.670
+Obviamente, si estás haciendo esto en una aplicación
+
+25
+00:01:14.670 --> 00:01:18.270
+de producción con varias imágenes,
+
+26
+00:01:18.270 --> 00:01:20.170
+entonces querrías agregar algún tipo de clase o algo así.
+
+27
+00:01:20.170 --> 00:01:22.840
+Pero por ahora, solo quiero repasar las diferencias clave
+
+28
+00:01:22.840 --> 00:01:26.507
+entre alinear elementos y alinear contenido.
+
+29
+00:01:27.350 --> 00:01:29.150
+Así que voy a tratar todas las imágenes de la página
+
+30
+00:01:29.150 --> 00:01:30.633
+de la misma manera.
+
+31
+00:01:30.633 --> 00:01:33.663
+Entonces, digamos 10 píxeles por margen,
+
+32
+00:01:34.780 --> 00:01:37.780
+le daremos una altura de 90 píxeles
+
+33
+00:01:37.780 --> 00:01:42.780
+y luego un ancho de 150 píxeles.
+
+34
+00:01:44.070 --> 00:01:47.280
+Ahora, si guardo esto, ahora puedes ver nuestras imágenes
+
+35
+00:01:47.280 --> 00:01:50.490
+todas en una página, y puedes ver que todas están alineadas
+
+36
+00:01:50.490 --> 00:01:52.490
+en la parte superior izquierda.
+
+37
+00:01:52.490 --> 00:01:54.530
+Ahora mismo, no tenemos ningún tipo
+
+38
+00:01:54.530 --> 00:01:57.030
+de propiedades flexibles dentro de nuestro estilo.
+
+39
+00:01:57.030 --> 00:01:58.810
+Así que vamos a empezar con eso.
+
+40
+00:01:58.810 --> 00:02:03.690
+Así que voy a decir "flexión de pantalla", y si hago eso,
+
+41
+00:02:03.690 --> 00:02:06.980
+entonces puedes ver que ahora todo se mueve
+
+42
+00:02:06.980 --> 00:02:11.980
+de lado a lado, y ya no responde
+
+43
+00:02:12.130 --> 00:02:14.390
+porque no estamos usando flex wrap
+
+44
+00:02:14.390 --> 00:02:16.120
+ni nada parecido.
+
+45
+00:02:16.120 --> 00:02:19.850
+Ya he hablado de eso, vamos a añadir eso en nuestro sistema.
+
+46
+00:02:19.850 --> 00:02:23.710
+Así que voy a decir flex wrap
+
+47
+00:02:23.710 --> 00:02:27.310
+y vamos a permitir que esto se envuelva.
+
+48
+00:02:27.310 --> 00:02:28.720
+Y ahora esto está funcionando,
+
+49
+00:02:28.720 --> 00:02:31.480
+y pueden ver que tenemos cada uno de los elementos,
+
+50
+00:02:31.480 --> 00:02:33.840
+y están uno al lado del otro.
+
+51
+00:02:33.840 --> 00:02:36.420
+Tan pronto como uno no se ajusta a un lado,
+
+52
+00:02:36.420 --> 00:02:39.760
+entonces se mueve hacia abajo a la siguiente línea.
+
+53
+00:02:39.760 --> 00:02:44.760
+[Ahora, si uso algunas propiedades como el contenido
+
+54
+00:02:45.140 --> 00:02:47.900
+justificado, puedo decir centro de contenido justificado.
+
+55
+00:02:47.900 --> 00:02:50.830
+Y entonces esto lo va a alinear así.
+
+56
+00:02:50.830 --> 00:02:55.830
+Y si tuviera que, digamos alinear, antes de entrar
+
+57
+00:02:56.440 --> 00:03:00.350
+en el contenido, digamos alinear los elementos del centro.
+
+58
+00:03:00.350 --> 00:03:02.870
+Si digo eso, puedes ver que esto
+
+59
+00:03:02.870 --> 00:03:05.185
+ahora está centrado en la página.
+
+60
+00:03:05.185 --> 00:03:08.930
+En muchos casos, esto es exactamente lo que está buscando,
+
+61
+00:03:08.930 --> 00:03:12.740
+donde quiere que todo esté centrado,
+
+62
+00:03:12.740 --> 00:03:15.500
+y luego tiene el mismo espacio
+
+63
+00:03:15.500 --> 00:03:18.600
+desde arriba que en la parte inferior.
+
+64
+00:03:18.600 --> 00:03:21.510
+Y así es como funciona la alineación
+
+65
+00:03:21.510 --> 00:03:23.500
+de elementos cuando lo combina con contenido justificado.
+
+66
+00:03:23.500 --> 00:03:24.910
+Y si has seguido
+
+67
+00:03:24.910 --> 00:03:26.913
+el resto de mi curso de flexbox,
+
+68
+00:03:26.913 --> 00:03:29.530
+entonces esto debería ser bastante familiar para ti.
+
+69
+00:03:29.530 --> 00:03:32.430
+Pero, ¿qué pasa si quieres tratar todo el conjunto
+
+70
+00:03:32.430 --> 00:03:35.970
+de elementos como un componente.
+
+71
+00:03:35.970 --> 00:03:39.510
+Así que aquí mismo pueden ver que tenemos esta clase de
+
+72
+00:03:39.510 --> 00:03:42.410
+contenedor y luego, dentro de él, tenemos estos seis
+
+73
+00:03:42.410 --> 00:03:43.310
+elementos de imagen.
+
+74
+00:03:43.310 --> 00:03:45.930
+Bueno, esto está bien, pero hay muchas veces
+
+75
+00:03:45.930 --> 00:03:49.520
+en las que no quieres que tengan todo este espacio
+
+76
+00:03:49.520 --> 00:03:53.400
+entre ellas, por lo que, cuando se trata de arreglar eso,
+
+77
+00:03:53.400 --> 00:03:56.960
+lo que podemos hacer es deshacernos de los elementos
+
+78
+00:03:56.960 --> 00:04:01.960
+alineados, y ahora digamos, alinear el contenido, y centrar.
+
+79
+00:04:03.110 --> 00:04:05.040
+Ahora, si presionas guardar, puedes ver
+
+80
+00:04:05.040 --> 00:04:07.010
+que ahora están agrupados.
+
+81
+00:04:07.010 --> 00:04:08.770
+Y, por lo tanto, hay muchas veces
+
+82
+00:04:08.770 --> 00:04:11.540
+en las que es el comportamiento real que estás deseando.
+
+83
+00:04:11.540 --> 00:04:13.800
+Entonces, si está desarrollando algún tipo
+
+84
+00:04:13.800 --> 00:04:15.360
+de aplicación de cartera,
+
+85
+00:04:15.360 --> 00:04:18.620
+y quiere tener todo enfocado y centrado en el centro
+
+86
+00:04:18.620 --> 00:04:21.200
+de la página,
+
+87
+00:04:21.200 --> 00:04:25.480
+y está tratando con un solo contenedor flexible,
+
+88
+00:04:25.480 --> 00:04:27.750
+entonces esta es una excelente manera de hacerlo.
+
+89
+00:04:27.750 --> 00:04:31.990
+Ahora hay muchas formas de replicar este comportamiento
+
+90
+00:04:31.990 --> 00:04:34.950
+si trabaja con varios contenedores flexibles.
+
+91
+00:04:34.950 --> 00:04:37.460
+Y lo hemos hecho unas cuantas veces en este curso.
+
+92
+00:04:37.460 --> 00:04:40.940
+Y en esos casos, puede combinar contenido justificado
+
+93
+00:04:40.940 --> 00:04:44.420
+y luego alinear elementos para replicar este comportamiento.
+
+94
+00:04:44.420 --> 00:04:46.570
+Pero si estás trabajando con un componente muy simple
+
+95
+00:04:46.570 --> 00:04:47.940
+como con lo que tenemos aquí.
+
+96
+00:04:47.940 --> 00:04:50.300
+Tenemos un único contenedor flexible,
+
+97
+00:04:50.300 --> 00:04:52.710
+como el que tenemos aquí con esta clase,
+
+98
+00:04:52.710 --> 00:04:56.270
+y luego tiene una cantidad de elementos dentro de él,
+
+99
+00:04:56.270 --> 00:04:59.900
+por lo que no tiene que pasar por todo el proceso
+
+100
+00:04:59.900 --> 00:05:04.060
+de tener múltiples elementos flexibles en contenedores
+
+101
+00:05:04.060 --> 00:05:04.950
+, y esos tipo de cosas.
+
+102
+00:05:04.950 --> 00:05:08.510
+Esta es una manera realmente fácil de poder tener
+
+103
+00:05:08.510 --> 00:05:10.660
+este tipo de comportamiento centrado.
+
+104
+00:05:10.660 --> 00:05:13.393
+Ahora alinear contenido toma una serie
+
+105
+00:05:13.393 --> 00:05:15.101
+de diferentes parámetros.
+
+106
+00:05:15.101 --> 00:05:18.350
+Así que podríamos decir flex start, y si guardamos eso,
+
+107
+00:05:18.350 --> 00:05:20.770
+se mueve hasta la parte superior.
+
+108
+00:05:20.770 --> 00:05:25.770
+Si decimos flex end, esto lo va a mover al borde inferior.
+
+109
+00:05:26.030 --> 00:05:30.370
+Ahora diré que normalmente cuando uso el contenido de flex,
+
+110
+00:05:30.370 --> 00:05:34.210
+lo uso con este comportamiento centrado
+
+111
+00:05:34.210 --> 00:05:36.540
+porque generalmente cuando uso flexbox,
+
+112
+00:05:36.540 --> 00:05:40.560
+trato de alinear los elementos como lo estoy haciendo aquí.
+
+113
+00:05:40.560 --> 00:05:43.860
+Es bastante raro que mueva todo el contenido
+
+114
+00:05:43.860 --> 00:05:45.670
+a la parte inferior de la página.
+
+115
+00:05:45.670 --> 00:05:49.760
+Sucedió varias veces, pero este es el caso de uso típico
+
+116
+00:05:49.760 --> 00:05:51.130
+que personalmente tengo para él donde tengo
+
+117
+00:05:51.130 --> 00:05:54.430
+esta división, tengo este tipo de contenedor flexible,
+
+118
+00:05:54.430 --> 00:05:57.150
+y luego quiero mantener todo centrado dentro de él.
+
+119
+00:05:57.150 --> 00:06:00.940
+Y para hacer eso, puede ver que todo lo que necesitábamos
+
+120
+00:06:00.940 --> 00:06:03.173
+era realmente cuatro líneas de código dentro
+
+121
+00:06:03.173 --> 00:06:04.990
+de nuestro archivo SAS.
+
+122
+00:06:04.990 --> 00:06:08.090
+Por lo tanto, es una forma muy agradable y fácil
+
+123
+00:06:08.090 --> 00:06:12.990
+que flexbox nos da la capacidad de centrar nuestros
+
+124
+00:06:12.990 --> 00:06:15.603
+artículos tanto horizontal como verticalmente.
+

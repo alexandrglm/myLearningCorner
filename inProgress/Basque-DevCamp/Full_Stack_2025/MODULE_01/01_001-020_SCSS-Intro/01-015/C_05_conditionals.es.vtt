@@ -1,0 +1,682 @@
+WEBVTT
+
+1
+00:00:00.740 --> 00:00:02.170
+<v Instructor>En la última guía, vimos paso a paso</v>
+
+2
+00:00:02.170 --> 00:00:05.560
+cómo convertir argumentos en Mixins,
+
+3
+00:00:05.560 --> 00:00:07.650
+y eso es increíblemente poderoso,
+
+4
+00:00:07.650 --> 00:00:10.710
+y en esta guía, extenderemos ese conocimiento
+
+5
+00:00:10.710 --> 00:00:13.330
+y hablaremos sobre condicionales.
+
+6
+00:00:13.330 --> 00:00:15.740
+Ahora, si vienes de programación para propósitos generales
+
+7
+00:00:15.740 --> 00:00:18.860
+como Ruby o JavaScript,
+
+8
+00:00:18.860 --> 00:00:22.470
+entonces el concepto de condicionales puede serte familiar,
+
+9
+00:00:22.470 --> 00:00:24.870
+te da la habilidad
+
+10
+00:00:24.870 --> 00:00:27.561
+de tener un a situación donde puedes pedir,
+
+11
+00:00:27.561 --> 00:00:28.894
+"si algo sucede,
+
+12
+00:00:29.950 --> 00:00:32.980
+entonces quiero que realices un grupo de acciones.
+
+13
+00:00:32.980 --> 00:00:35.060
+Pero, si sucede otra cosa,
+
+14
+00:00:35.060 --> 00:00:37.030
+quiero que cambies tu conducta
+
+15
+00:00:37.030 --> 00:00:39.000
+y hagas algo diferente,
+
+16
+00:00:39.000 --> 00:00:42.610
+y SCSS nos permite tener esa clase de flexibilidad
+
+17
+00:00:42.610 --> 00:00:46.260
+y la misma clase de poder, justo en el sistema,
+
+18
+00:00:46.260 --> 00:00:48.860
+entonces, esta es una forma muy poderosa
+
+19
+00:00:48.860 --> 00:00:51.451
+de poder cambiar dinámicamente
+
+20
+00:00:51.451 --> 00:00:53.260
+el comportamiento de los Mixins.
+
+21
+00:00:53.260 --> 00:00:56.460
+Ahora, tomé el código que ingresé la vez pasada
+
+22
+00:00:56.460 --> 00:00:59.590
+en su mayor parte, como pueden ver aquí,
+
+23
+00:00:59.590 --> 00:01:02.530
+agregué los colores de los enlaces,
+
+24
+00:01:02.530 --> 00:01:04.950
+y los dejaré por ahora
+
+25
+00:01:04.950 --> 00:01:07.420
+porque no quiero distraernos
+
+26
+00:01:07.420 --> 00:01:11.650
+de lo que quiero mostrar, que es cómo cambiar
+
+27
+00:01:11.650 --> 00:01:15.160
+estos colores de encabezados y hacerlos dinámicos,
+
+28
+00:01:15.160 --> 00:01:19.120
+basándose en el color de fondo en el que están.
+
+29
+00:01:19.120 --> 00:01:21.970
+Esta es una práctica muy común,
+
+30
+00:01:21.970 --> 00:01:25.000
+cuando te encuentras en una situación
+
+31
+00:01:25.000 --> 00:01:27.630
+donde tienes cierto número de estilos,
+
+32
+00:01:27.630 --> 00:01:29.780
+y digamos que el 90% de ellos
+
+33
+00:01:29.780 --> 00:01:33.070
+funcionan en muchas situaciones diferentes,
+
+34
+00:01:33.070 --> 00:01:35.660
+y que quieres poder compartir esos estilos,
+
+35
+00:01:35.660 --> 00:01:38.830
+pero hay algunas cosas que necesitan cambiar,
+
+36
+00:01:38.830 --> 00:01:41.210
+un gran ejemplo, es digamos, que tenemos
+
+37
+00:01:41.210 --> 00:01:43.160
+este Mixin exhibido aquí.
+
+38
+00:01:43.160 --> 00:01:46.670
+Queremos que todas estas cosas sean las mismas.
+
+39
+00:01:46.670 --> 00:01:49.610
+Lo único que queremos que sea diferente
+
+40
+00:01:49.610 --> 00:01:53.130
+es que queremos este color, y obviamente, podríamos tener
+
+41
+00:01:53.130 --> 00:01:54.930
+algunos otros objetos que podrían ser diferentes,
+
+42
+00:01:54.930 --> 00:01:57.200
+pero para este ejemplo,
+
+43
+00:01:57.200 --> 00:02:00.150
+sólo queremos que sea el color,
+
+44
+00:02:00.150 --> 00:02:02.410
+pero no queremos pasar el color de la forma que lo hicimos
+
+45
+00:02:02.410 --> 00:02:05.150
+en la guía pasada, porque puede haber veces
+
+46
+00:02:05.150 --> 00:02:07.050
+en las que no queramos
+
+47
+00:02:07.050 --> 00:02:09.400
+hacer algo arbitrariamente.
+
+48
+00:02:09.400 --> 00:02:11.670
+En especial si estás construyendo algún tipo
+
+49
+00:02:11.670 --> 00:02:14.860
+de librería de códigos que otras personas utilizarán.
+
+50
+00:02:14.860 --> 00:02:18.090
+Si les permites pasar cualquier color,
+
+51
+00:02:18.090 --> 00:02:19.760
+podrían violar la guía de estilo
+
+52
+00:02:19.760 --> 00:02:21.140
+y podría haber algunos problemas.
+
+53
+00:02:21.140 --> 00:02:26.140
+En vez de eso, puedes pasar algunos otros tipos de valores,
+
+54
+00:02:26.580 --> 00:02:29.140
+o puedes requerir otros valores
+
+55
+00:02:29.140 --> 00:02:32.250
+para que sean pasados, así que lo que haremos aquí,
+
+56
+00:02:32.250 --> 00:02:34.670
+agregaré un argumento nuevo aquí,
+
+57
+00:02:34.670 --> 00:02:39.170
+se llamará Color-BG,
+
+58
+00:02:39.170 --> 00:02:42.770
+y voy a pasarlo así que tendrá "dark"
+
+59
+00:02:42.770 --> 00:02:46.410
+por defecto, recuerda, de la guía pasada,
+
+60
+00:02:46.410 --> 00:02:49.680
+esta es una sintaxis para establecer un valor por defecto
+
+61
+00:02:49.680 --> 00:02:51.740
+para un argumento en SCSS.
+
+62
+00:02:51.740 --> 00:02:54.870
+Y ahora la sintaxis, para una condicional básica,
+
+63
+00:02:54.870 --> 00:02:58.690
+es, digamos, si tiene un símbolo enfrente,
+
+64
+00:02:58.690 --> 00:03:00.490
+ahora, si vienes de otro lenguaje,
+
+65
+00:03:00.490 --> 00:03:03.100
+eso podría lucir extraño, pero esta es la forma
+
+66
+00:03:03.100 --> 00:03:05.460
+en que funciona el pre-procesador con SCSS,
+
+67
+00:03:05.460 --> 00:03:10.070
+así que diremos @if $bg-color
+
+68
+00:03:10.070 --> 00:03:14.790
+es igual a "dark",
+
+69
+00:03:14.790 --> 00:03:17.440
+entonces quiero cambiar este color,
+
+70
+00:03:17.440 --> 00:03:21.263
+así que quiero cambiar el color de este tomate, justo aquí,
+
+71
+00:03:22.100 --> 00:03:26.360
+y así nos dará exactamente la misma conducta.
+
+72
+00:03:26.360 --> 00:03:28.740
+Ahora, ¿por qué está dándonos la misma conducta?
+
+73
+00:03:28.740 --> 00:03:31.710
+Como una reseña rápido de cómo funcionan los argumentos
+
+74
+00:03:31.710 --> 00:03:34.230
+y argumentos por defecto, si vamos para abajo,
+
+75
+00:03:34.230 --> 00:03:38.250
+justo ahora, no estamos llamando o pasando ningún argumento
+
+76
+00:03:38.250 --> 00:03:42.770
+al llamado de este Mixin exhibido, ni aquí ni aquí,
+
+77
+00:03:42.770 --> 00:03:46.160
+y debido a eso, con los argumentos por defecto,
+
+78
+00:03:46.160 --> 00:03:48.660
+significa que siempre será "dark".
+
+79
+00:03:48.660 --> 00:03:52.310
+Ahora, si decimos que si el color de fondo
+
+80
+00:03:52.310 --> 00:03:55.500
+es claro, entonces y sólo entonces,
+
+81
+00:03:55.500 --> 00:03:57.640
+será por defecto
+
+82
+00:03:57.640 --> 00:04:00.120
+cualquiera que sea el valor, así que justo ahora,
+
+83
+00:04:00.120 --> 00:04:03.400
+este cambia a blanco y este cambia a oscuro,
+
+84
+00:04:03.400 --> 00:04:07.610
+y eso es sólo por cómo los otros tipos
+
+85
+00:04:07.610 --> 00:04:10.720
+de ajustes están ahí, así que tenemos un subencabezado con A
+
+86
+00:04:10.720 --> 00:04:14.600
+y tenemos algunos otros elementos en el resto de la página,
+
+87
+00:04:14.600 --> 00:04:18.840
+así que dentro del contenedor, justo aquí,
+
+88
+00:04:18.840 --> 00:04:21.630
+tenemos que nuestro color no será blanco
+
+89
+00:04:21.630 --> 00:04:24.660
+en el contenido de esta página, esa es una razón
+
+90
+00:04:24.660 --> 00:04:27.180
+por la que este "Sobre nosotros" es blanco,
+
+91
+00:04:27.180 --> 00:04:29.740
+así que definitivamente no queremos que eso pase,
+
+92
+00:04:29.740 --> 00:04:31.390
+así que necesitamos asegurarnos
+
+93
+00:04:31.390 --> 00:04:33.980
+que incluyamos cada uno de los escenarios,
+
+94
+00:04:33.980 --> 00:04:37.480
+así que diré, "si el color de fondo es claro,
+
+95
+00:04:37.480 --> 00:04:40.450
+entonces quiero Tomate".
+
+96
+00:04:40.450 --> 00:04:43.470
+Bajando a la llamada exhibida, aquí,
+
+97
+00:04:43.470 --> 00:04:46.510
+pasará "claro", y así,
+
+98
+00:04:46.510 --> 00:04:48.590
+ahora este será Tomate.
+
+99
+00:04:48.590 --> 00:04:49.500
+¿Ves cómo funciona?
+
+100
+00:04:49.500 --> 00:04:53.900
+Cambió justo ahí porque pasamos un argumento
+
+101
+00:04:53.900 --> 00:04:58.040
+que se ajustaba exactamente al condicional que dijimos.
+
+102
+00:04:58.040 --> 00:05:01.160
+Ahora, aquí, para exhibido, voy a pasarlo
+
+103
+00:05:01.160 --> 00:05:04.530
+y diré, "este es un fondo oscuro",
+
+104
+00:05:04.530 --> 00:05:08.590
+y regresa al valor por defecto sea el que sea,
+
+105
+00:05:08.590 --> 00:05:11.650
+y más adelante, lo que podemos hacer es,
+
+106
+00:05:11.650 --> 00:05:14.480
+hay un número de formas de implementar un condicional.
+
+107
+00:05:14.480 --> 00:05:17.710
+Te mostraré un forma de hacerlo,
+
+108
+00:05:17.710 --> 00:05:21.840
+y es, y sólo queremos capturar ciertos casos,
+
+109
+00:05:21.840 --> 00:05:23.410
+digamos que queremos decir, bien,
+
+110
+00:05:23.410 --> 00:05:25.200
+si el color de fondo es claro,
+
+111
+00:05:25.200 --> 00:05:27.520
+entonces quiero ser Tomate.
+
+112
+00:05:27.520 --> 00:05:31.060
+Si es oscuro, entonces quiero que sea blanco,
+
+113
+00:05:31.060 --> 00:05:35.120
+sólo así, creo que lo haré un poco más fácil
+
+114
+00:05:35.120 --> 00:05:38.880
+que podamos con alguno, porque éste ya estaba por defecto,
+
+115
+00:05:38.880 --> 00:05:42.780
+podríamos, así que puedes ver que está cambiando,
+
+116
+00:05:42.780 --> 00:05:47.760
+podríamos elegir uno de nuestros azules, o algo así.
+
+117
+00:05:47.760 --> 00:05:51.240
+Este no es un buen UI UX, esto es sólo para mostrarte
+
+118
+00:05:51.240 --> 00:05:52.715
+cómo cambiar estos colores,
+
+119
+00:05:52.715 --> 00:05:55.140
+así que, es una forma de hacerlo,
+
+120
+00:05:55.140 --> 00:05:57.370
+y eso está bien para ciertas circunstancias,
+
+121
+00:05:57.370 --> 00:06:01.410
+de hecho, cuando vayamos a nuestro proyecto más avanzado,
+
+122
+00:06:01.410 --> 00:06:05.180
+y construyamos un módulo entero de Mixin
+
+123
+00:06:05.180 --> 00:06:08.820
+sólo para Flexbox, entonces haré esto
+
+124
+00:06:08.820 --> 00:06:12.610
+porque me gusta, en ciertos casos, organizar cada uno
+
+125
+00:06:12.610 --> 00:06:15.310
+de mis escenarios con su propia condicional.
+
+126
+00:06:15.310 --> 00:06:18.870
+Esa es una forma, pero hay una sintaxis alternativa
+
+127
+00:06:18.870 --> 00:06:21.040
+para condicionales más directas,
+
+128
+00:06:21.040 --> 00:06:24.350
+y esa es utilizando "else if",
+
+129
+00:06:24.350 --> 00:06:28.470
+así que lo que puedo hacer, es poner esto hasta arriba
+
+130
+00:06:28.470 --> 00:06:32.400
+y decir, "else if", esas son dos palabras,
+
+131
+00:06:32.400 --> 00:06:35.230
+decir "además si el fondo es color oscuro,
+
+132
+00:06:35.230 --> 00:06:37.270
+entonces quiero que cambies el color a azul",
+
+133
+00:06:37.270 --> 00:06:39.630
+como puedes ver, todo aquí
+
+134
+00:06:39.630 --> 00:06:42.930
+permaneció exactamente igual, así que podemos combinar
+
+135
+00:06:42.930 --> 00:06:46.020
+ambos condicionales en uno.
+
+136
+00:06:46.020 --> 00:06:48.850
+Ahora, hagamos uno más porque esto esto está bien,
+
+137
+00:06:48.850 --> 00:06:50.710
+pero ¿qué sucede si alguien
+
+138
+00:06:50.710 --> 00:06:55.600
+pasa un color de fondo totalmente diferente?
+
+139
+00:06:55.600 --> 00:06:58.410
+Bueno, podemos establecer otro por defecto.
+
+140
+00:06:58.410 --> 00:07:00.310
+Tenemos aquí uno establecido por defecto,
+
+141
+00:07:00.310 --> 00:07:02.500
+pero también podemos establecer otro
+
+142
+00:07:03.420 --> 00:07:08.120
+que diga, cualquier otro escenario, podemos pasarlo
+
+143
+00:07:08.120 --> 00:07:11.860
+y así, podemos cambiarlo a rojo,
+
+144
+00:07:11.860 --> 00:07:15.020
+o algo así, y ahora, si bajo por completo
+
+145
+00:07:15.020 --> 00:07:18.630
+hasta el fondo, si alguien llama a este Mixin,
+
+146
+00:07:18.630 --> 00:07:21.930
+pero al llamarlo dice, "tiene un fondo azul",
+
+147
+00:07:21.930 --> 00:07:25.060
+puedes ver que se va al condicional final.
+
+148
+00:07:25.060 --> 00:07:28.800
+Se va al "else" final, y es una forma lista
+
+149
+00:07:28.800 --> 00:07:31.370
+de construir tu sistema porque no quieres
+
+150
+00:07:31.370 --> 00:07:34.840
+terminar en una situación donde no has capturado
+
+151
+00:07:34.840 --> 00:07:38.300
+todos los diferentes escenarios que puedan ocurrir,
+
+152
+00:07:38.300 --> 00:07:41.670
+así, tenemos el nuestro cubierto de dos maneras.
+
+153
+00:07:41.670 --> 00:07:45.430
+Uno, hacemos que sea posible llamar a este Mixin exhibido
+
+154
+00:07:45.430 --> 00:07:49.320
+sin argumento alguno, y establecemos un por defecto normal.
+
+155
+00:07:49.320 --> 00:07:51.250
+Este sería un escenario donde tú sabes
+
+156
+00:07:51.250 --> 00:07:55.070
+que en un enorme porcentaje de situaciones
+
+157
+00:07:55.070 --> 00:07:56.840
+en las que este Mixin será llamado,
+
+158
+00:07:56.840 --> 00:07:58.640
+serán sobre un fondo oscuro,
+
+159
+00:07:58.640 --> 00:08:00.520
+así que está bien establecer este
+
+160
+00:08:00.520 --> 00:08:04.540
+como el valor por defecto, pero también quieres asegurarte
+
+161
+00:08:04.540 --> 00:08:07.390
+que alguien que quizá tuvo un error de dedo,
+
+162
+00:08:07.390 --> 00:08:10.970
+quizá tenga un problema en la forma de llamarlo,
+
+163
+00:08:10.970 --> 00:08:13.810
+querrás asegurarte de tener el verdadero color por defecto,
+
+164
+00:08:13.810 --> 00:08:15.718
+así que si ellos llaman algo diferente
+
+165
+00:08:15.718 --> 00:08:17.120
+además de este oscuro,
+
+166
+00:08:17.120 --> 00:08:19.600
+si llaman algo diferente a claro o oscuro,
+
+167
+00:08:19.600 --> 00:08:21.230
+entonces seguiremos capturando eso,
+
+168
+00:08:21.230 --> 00:08:25.000
+y todo lo demás seguirá funcionando bien,
+
+169
+00:08:25.000 --> 00:08:29.500
+entonces, así es como implementas una condicional normal
+
+170
+00:08:29.500 --> 00:08:33.353
+junto con una condicional compuesta en SCSS.
+

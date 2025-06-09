@@ -1,0 +1,506 @@
+WEBVTT
+
+1
+00:00:01.070 --> 00:00:02.800
+<v Instructor>Una de las partes más poderosas</v>
+
+2
+00:00:02.800 --> 00:00:05.230
+de utilizar SaaS en desarrollo
+
+3
+00:00:05.230 --> 00:00:09.250
+es la habilidad de hacer más eficiente tu código.
+
+4
+00:00:09.250 --> 00:00:11.400
+Si vienes de un lenguaje de programación
+
+5
+00:00:11.400 --> 00:00:16.150
+como Ruby o Python, entonces el concepto de variables
+
+6
+00:00:16.150 --> 00:00:19.370
+es algo muy común que implementas
+
+7
+00:00:19.370 --> 00:00:20.500
+en un programa.
+
+8
+00:00:20.500 --> 00:00:22.883
+Una variable es un contenedor simple
+
+9
+00:00:22.883 --> 00:00:24.970
+que puede albergar un valor
+
+10
+00:00:24.970 --> 00:00:26.428
+y luego puede ser llamado
+
+11
+00:00:26.428 --> 00:00:28.800
+desde cualquier otro lugar en la aplicación
+
+12
+00:00:28.800 --> 00:00:31.620
+así que no necesitas poner el código idéntico
+
+13
+00:00:31.620 --> 00:00:32.880
+en toda la aplicación.
+
+14
+00:00:32.880 --> 00:00:34.940
+Así que demos un vistazo a este
+
+15
+00:00:34.940 --> 00:00:37.100
+ejemplo básico que tenemos aquí.
+
+16
+00:00:37.100 --> 00:00:39.150
+Este será el ejemplo que utilizaremos
+
+17
+00:00:39.150 --> 00:00:40.530
+en todo el curso.
+
+18
+00:00:40.530 --> 00:00:44.260
+Tiene un fragmento de HTML justo aquí
+
+19
+00:00:44.260 --> 00:00:47.120
+que tiene un div con un contenedor,
+
+20
+00:00:47.120 --> 00:00:51.570
+una envoltura de página anidada, un H1 que está exhibido,
+
+21
+00:00:51.570 --> 00:00:54.900
+y también un contenedor de contenido de página
+
+22
+00:00:54.900 --> 00:00:57.230
+que tiene otro contenedor adentro.
+
+23
+00:00:57.230 --> 00:01:00.090
+Esto es simplemente código HTML básico.
+
+24
+00:01:00.090 --> 00:01:03.000
+Y lo que estaremos haciendo durante todo el curso
+
+25
+00:01:03.000 --> 00:01:05.610
+es implementar SaaS.
+
+26
+00:01:05.610 --> 00:01:09.650
+Así que ya deberás tener alineado tu CSS
+
+27
+00:01:09.650 --> 00:01:12.930
+y tener bien configurado el Scss
+
+28
+00:01:12.930 --> 00:01:14.250
+de modo que pre-compile
+
+29
+00:01:14.250 --> 00:01:16.550
+y pueda en efecto procesar tu SaaS
+
+30
+00:01:16.550 --> 00:01:21.550
+en oposición a tratarlo simplemente como CSS estándar.
+
+31
+00:01:21.800 --> 00:01:23.850
+Así que de lo que hablaremos aquí
+
+32
+00:01:23.850 --> 00:01:25.690
+será de variables.
+
+33
+00:01:25.690 --> 00:01:28.500
+Así que justo aquí tenemos nuestro cuerpo, contenedor,
+
+34
+00:01:28.500 --> 00:01:31.460
+envoltura de página, exhibido, contenido de página,
+
+35
+00:01:31.460 --> 00:01:33.200
+y entonces, el contenedor.
+
+36
+00:01:33.200 --> 00:01:35.930
+Ahora, si algo de esto luce un poco raro
+
+37
+00:01:35.930 --> 00:01:38.121
+como tener una clase de contenedor
+
+38
+00:01:38.121 --> 00:01:40.363
+dentro de un contenido de página,
+
+39
+00:01:40.363 --> 00:01:41.796
+dentro de la envoltura de la página,
+
+40
+00:01:41.796 --> 00:01:43.090
+no te preocupes por eso,
+
+41
+00:01:43.090 --> 00:01:47.580
+llegaremos a la sintaxis cuando hablemos de anidamiento.
+
+42
+00:01:47.580 --> 00:01:50.260
+Pero quería mostrártelo de una vez
+
+43
+00:01:50.260 --> 00:01:53.340
+para que comiences a familiarizarte.
+
+44
+00:01:53.340 --> 00:01:58.340
+Pero queremos hablar de cómo aprovechar las variables.
+
+45
+00:01:58.470 --> 00:02:01.040
+Entonces, justo ahora si vemos, podemos ver
+
+46
+00:02:01.040 --> 00:02:03.130
+que tenemos alguna duplicación aquí.
+
+47
+00:02:03.130 --> 00:02:05.070
+Tenemos este color de fondo,
+
+48
+00:02:05.070 --> 00:02:09.520
+y esto representa blanco donde sea que veas seis f en línea.
+
+49
+00:02:09.520 --> 00:02:11.440
+Eso va a ser el color para blanco.
+
+50
+00:02:11.440 --> 00:02:14.580
+Y entonces también tenemos el color DarkRed .
+
+51
+00:02:14.580 --> 00:02:16.060
+Entonces todo esto está bien.
+
+52
+00:02:16.060 --> 00:02:18.390
+Pero imaginen que tienen un archivo CSS
+
+53
+00:02:18.390 --> 00:02:21.250
+que tiene algunos miles de líneas de largo
+
+54
+00:02:21.250 --> 00:02:23.700
+tal como si tomaras alguna clase de plantilla
+
+55
+00:02:23.700 --> 00:02:25.240
+o si construyeras una plantilla.
+
+56
+00:02:25.240 --> 00:02:28.200
+E imagina que un cliente viene
+
+57
+00:02:28.200 --> 00:02:31.170
+y dice, "ya no quiero rojo oscuro,
+
+58
+00:02:31.170 --> 00:02:32.590
+quiero verde oscuro".
+
+59
+00:02:32.590 --> 00:02:35.100
+Y eso significa que tienes que venir
+
+60
+00:02:35.100 --> 00:02:39.920
+a cada punto, cambiar a verde oscuro,
+
+61
+00:02:39.920 --> 00:02:44.000
+y luego solo esperar que atrapaste todos los casos.
+
+62
+00:02:44.000 --> 00:02:48.020
+Y que funcionó, pero eso no es realmente ideal.
+
+63
+00:02:48.020 --> 00:02:51.600
+Parte de la lógica detrás de usar SaaS es el hecho que
+
+64
+00:02:51.600 --> 00:02:55.860
+puedes implementar el mismo tipo de no repetirte a ti mismo,
+
+65
+00:02:55.860 --> 00:03:00.500
+una tipo de mantra que tienes si eres desarrollador de rails
+
+66
+00:03:00.500 --> 00:03:02.760
+o eres un desarrollador de .NET o algo
+
+67
+00:03:02.760 --> 00:03:07.320
+donde realmente no quieras duplicar tu código
+
+68
+00:03:07.320 --> 00:03:09.850
+y quieres poder tener estos fragmentos de código
+
+69
+00:03:09.850 --> 00:03:11.230
+que pueden ser usados en cualquier lugar.
+
+70
+00:03:11.230 --> 00:03:14.030
+Y si quieres hacer un cambio a una parte de la aplicación
+
+71
+00:03:14.030 --> 00:03:16.280
+puedes hacer que se replique en todas las otras partes.
+
+72
+00:03:16.280 --> 00:03:18.260
+Y entonces, allí es donde entran las variables.
+
+73
+00:03:18.260 --> 00:03:19.743
+Así que voy a venir aquí.
+
+74
+00:03:20.930 --> 00:03:24.190
+En la parte más superior, voy a declarar una variable.
+
+75
+00:03:24.190 --> 00:03:26.590
+Entonces, la forma en que haces eso en SaaS
+
+76
+00:03:26.590 --> 00:03:28.520
+es que comienzas con el signo de dólar
+
+77
+00:03:28.520 --> 00:03:30.440
+y solo voy a decir blanco.
+
+78
+00:03:30.440 --> 00:03:35.440
+Y ahora si configuro blanco igual a este,
+
+79
+00:03:39.340 --> 00:03:44.340
+abrir, fffff, justo así,
+
+80
+00:03:44.430 --> 00:03:49.430
+ahora puedo realmente llamar blanco
+
+81
+00:03:49.950 --> 00:03:52.770
+desde cualquier otro lugar en la aplicación
+
+82
+00:03:52.770 --> 00:03:54.853
+que iba a usar eso.
+
+83
+00:03:56.520 --> 00:03:59.350
+Y ahora si doy clic en guardar,
+
+84
+00:03:59.350 --> 00:04:02.800
+todo esto va a trabajar tal como antes.
+
+85
+00:04:02.800 --> 00:04:05.477
+Pero ahora lo que ocurre si queremos cambiar esto
+
+86
+00:04:05.477 --> 00:04:07.280
+y el cliente dice "oh, en realidad
+
+87
+00:04:07.280 --> 00:04:09.310
+quiero optar por el fondo negro".
+
+88
+00:04:09.310 --> 00:04:11.350
+Ahora puedo cambiarlo a negro,
+
+89
+00:04:11.350 --> 00:04:15.210
+y mirar los cambios completamente en el mismo momento.
+
+90
+00:04:15.210 --> 00:04:18.370
+Entonces esta es una variable en acción.
+
+91
+00:04:18.370 --> 00:04:21.670
+Imagina que tuvieras esto en 60 lugares distintos
+
+92
+00:04:21.670 --> 00:04:23.120
+a lo largo de tu aplicación.
+
+93
+00:04:23.120 --> 00:04:25.520
+Cualquier momento que necesites hacer un cambio
+
+94
+00:04:25.520 --> 00:04:28.138
+a todos esos componentes, puedes simplemente cambiar
+
+95
+00:04:28.138 --> 00:04:32.380
+una variable y entonces se replicará en los demás lugares.
+
+96
+00:04:32.380 --> 00:04:34.910
+Entonces, aquí podemos decir que blanco
+
+97
+00:04:34.910 --> 00:04:36.520
+y no vamos a establecer igual a negro,
+
+98
+00:04:36.520 --> 00:04:38.400
+vamos a establecerlo igual solo
+
+99
+00:04:38.400 --> 00:04:41.580
+a color blanco estándar y regular
+
+100
+00:04:41.580 --> 00:04:45.230
+y un patrón común, veo que puedes establecer algo
+
+101
+00:04:45.230 --> 00:04:47.430
+como blanquecino o algo así.
+
+102
+00:04:47.430 --> 00:04:48.870
+Y entonces puedes jugar con el color.
+
+103
+00:04:48.870 --> 00:04:51.140
+Pero, en lugar de tener que hacer múltiples cambios
+
+104
+00:04:51.140 --> 00:04:54.200
+a lo largo de toda la aplicación, puedes solo hacer uno.
+
+105
+00:04:54.200 --> 00:04:55.960
+Entonces, ahora vamos a hacer eso.
+
+106
+00:04:55.960 --> 00:05:00.960
+Y ahora, en lugar de tener rojo oscuro o verde oscuro,
+
+107
+00:05:01.140 --> 00:05:06.140
+aquí podemos decir, master-site-color.
+
+108
+00:05:07.060 --> 00:05:08.950
+Una cosa muy común con la que se toparán
+
+109
+00:05:08.950 --> 00:05:11.380
+cuando construyan sitios web en el lado del front end
+
+110
+00:05:11.380 --> 00:05:15.510
+es que comenzarán a obtener distintos temas disponibles,
+
+111
+00:05:15.510 --> 00:05:19.390
+así que comenzarán a ver que cuando se te envía un diseño
+
+112
+00:05:19.390 --> 00:05:22.860
+de un diseñador en el que tienes algunos colores muy comunes
+
+113
+00:05:22.860 --> 00:05:26.010
+y cosas comunes que vas a implementar
+
+114
+00:05:26.010 --> 00:05:29.390
+y así variables como esta lo hacen muy fácil
+
+115
+00:05:29.390 --> 00:05:32.780
+porque hay muchas veces en que construyo un sitio,
+
+116
+00:05:32.780 --> 00:05:35.080
+el diseñador lo vio y resultó ser
+
+117
+00:05:35.080 --> 00:05:37.120
+un poco distinto a lo que visualizaban,
+
+118
+00:05:37.120 --> 00:05:40.570
+así que envían un grupo de cambios para el color,
+
+119
+00:05:40.570 --> 00:05:43.200
+y en su lugar, mientras esté usando SaaS
+
+120
+00:05:43.200 --> 00:05:45.850
+en lugar de tener que encontrar cada lugar donde está,
+
+121
+00:05:45.850 --> 00:05:49.780
+puedo ir a mi variable y cambiarla justo así.
+
+122
+00:05:49.780 --> 00:05:54.780
+Entonces, ahora si digo verde oscuro como master-site-color,
+
+123
+00:05:55.690 --> 00:06:00.500
+puedo copiar esto y en cualquier lugar donde llamamos rojo
+
+124
+00:06:00.500 --> 00:06:03.050
+oscuro antes para los colores, podemos cambiarlo aquí
+
+125
+00:06:03.050 --> 00:06:06.580
+y ahora todo está funcionando y hemos limpiado y
+
+126
+00:06:06.580 --> 00:06:11.580
+removido la duplicación al aprovechar las variables en SaaS.
+

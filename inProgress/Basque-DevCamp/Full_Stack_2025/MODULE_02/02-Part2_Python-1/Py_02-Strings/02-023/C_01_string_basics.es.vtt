@@ -1,0 +1,558 @@
+WEBVTT
+
+1
+00:00:00.500 --> 00:00:02.620
+<v ->Esta sección va a tratar de</v>
+
+2
+00:00:02.620 --> 00:00:05.470
+cómo trabajar con strings en Python.
+
+3
+00:00:05.470 --> 00:00:08.040
+Ahora, si pasaste por el módulo de variables
+
+4
+00:00:08.040 --> 00:00:11.735
+entonces ya has visto un número de formas de crear strings;
+
+5
+00:00:11.735 --> 00:00:15.290
+y en esta guía introductoria quiero mostrarte
+
+6
+00:00:15.290 --> 00:00:17.750
+las dos opciones diferentes que tienes
+
+7
+00:00:17.750 --> 00:00:21.400
+cuando se trata de crear una string en Python.
+
+8
+00:00:21.400 --> 00:00:23.950
+Uno es usar comillas únicas,
+
+9
+00:00:23.950 --> 00:00:26.580
+y la otra es usar dobles;
+
+10
+00:00:26.580 --> 00:00:28.340
+y te mostraré algunos ejemplos
+
+11
+00:00:28.340 --> 00:00:32.080
+sobre cuando quieres usar uno contra el otro.
+
+12
+00:00:32.080 --> 00:00:34.260
+Entonces, vamos a comenzar
+
+13
+00:00:34.260 --> 00:00:37.800
+con una oración básicamente aquí, y diré:
+
+14
+00:00:37.800 --> 00:00:42.266
+'The quick brown fox jumped over the lazy dog.
+
+15
+00:00:44.200 --> 00:00:49.200
+Y una nota solo por conocimiento de programación;
+
+16
+00:00:49.200 --> 00:00:52.690
+una cosa que notar es que escucharás esta oración
+
+17
+00:00:52.690 --> 00:00:56.280
+en bastantes ejemplos de programación distinta;
+
+18
+00:00:56.280 --> 00:00:58.750
+y la razón por qué es porque
+
+19
+00:00:58.750 --> 00:01:00.520
+esta oración de hecho contiene
+
+20
+00:01:00.520 --> 00:01:02.550
+cada letra del alfabeto;
+
+21
+00:01:02.550 --> 00:01:05.550
+y entonces eso es con este tipo de enfoque puedes ver todas
+
+22
+00:01:05.550 --> 00:01:07.310
+las letras, y si estás tratando de probar
+
+23
+00:01:07.310 --> 00:01:10.630
+algo para ver algún caractér único,
+
+24
+00:01:10.630 --> 00:01:13.860
+o algo por el estilo, entonces este es un gran ejemplo.
+
+25
+00:01:13.860 --> 00:01:15.630
+Eso no tiene nada que ver con strings,
+
+26
+00:01:15.630 --> 00:01:17.690
+pero es algo que verás
+
+27
+00:01:17.690 --> 00:01:20.460
+en tu propio camino la programación varias veces,
+
+28
+00:01:20.460 --> 00:01:22.810
+y quería que supieras por qué.
+
+29
+00:01:22.810 --> 00:01:24.780
+Ahora, esa es una oración básica.
+
+30
+00:01:24.780 --> 00:01:27.480
+Puedes ver que tiene comillas únicas,
+
+31
+00:01:27.480 --> 00:01:32.100
+y si digo imprimir oración,
+
+32
+00:01:32.100 --> 00:01:33.860
+y correr esto,
+
+33
+00:01:33.860 --> 00:01:35.690
+puedes ver que imprime eso.
+
+34
+00:01:35.690 --> 00:01:37.590
+Ahora, si cambio esto
+
+35
+00:01:37.590 --> 00:01:39.723
+para tener comillas dobles,
+
+36
+00:01:40.670 --> 00:01:43.250
+y lo corro de nuevo
+
+37
+00:01:43.250 --> 00:01:44.530
+va a correr.
+
+38
+00:01:44.530 --> 00:01:49.010
+Ahora, no correrá si tengo comillas dobles seguidas por
+
+39
+00:01:49.010 --> 00:01:52.630
+una comilla única, como puedes ver, tendrás un error aquí
+
+40
+00:01:52.630 --> 00:01:55.050
+donde te da un error de sintaxis,
+
+41
+00:01:55.050 --> 00:01:59.270
+y dice final de línea mientras escanea literal string.
+
+42
+00:01:59.270 --> 00:02:01.680
+Y es muy importante que puedas decir
+
+43
+00:02:01.680 --> 00:02:03.660
+que este es un ejemplo obvio,
+
+44
+00:02:03.660 --> 00:02:06.920
+y lo es, sin embargo probablemente te encuentres
+
+45
+00:02:06.920 --> 00:02:08.750
+este tipo de error;
+
+46
+00:02:08.750 --> 00:02:11.260
+y entonces quiero poder ver estos
+
+47
+00:02:11.260 --> 00:02:14.530
+para que cuando los veas podrás entender
+
+48
+00:02:14.530 --> 00:02:18.900
+en un ejemplo más complejo que es lo que va mal.
+
+49
+00:02:18.900 --> 00:02:21.540
+Entonces, voy a volver,
+
+50
+00:02:21.540 --> 00:02:24.110
+y voy a cambiarlo de vuelta
+
+51
+00:02:24.110 --> 00:02:27.690
+a una sola comilla en cada lado;
+
+52
+00:02:27.690 --> 00:02:31.450
+corre de nuevo, y todo funciona.
+
+53
+00:02:31.450 --> 00:02:33.350
+Ahora, en otros lenguajes de programación
+
+54
+00:02:33.350 --> 00:02:36.340
+habrá momentos muy específicos cuando
+
+55
+00:02:36.340 --> 00:02:39.730
+querrás usar comillas dobles contra comillas única;
+
+56
+00:02:39.730 --> 00:02:41.660
+por ejemplo: si vienes del lenguaje de
+
+57
+00:02:41.660 --> 00:02:44.780
+programación Ruby, se necesitan comillas dobles
+
+58
+00:02:44.780 --> 00:02:47.950
+si vas a realizar interpolación de strings.
+
+59
+00:02:47.950 --> 00:02:50.150
+Si no sabes que interpolación de string es
+
+60
+00:02:50.150 --> 00:02:51.230
+eso está bien.
+
+61
+00:02:51.230 --> 00:02:54.300
+Vamos a hablar de eso más tarde en esta sección,
+
+62
+00:02:54.300 --> 00:02:57.900
+pero ten en cuenta que a Python no le importa.
+
+63
+00:02:57.900 --> 00:03:00.060
+Puedes usar comillas únicas, o comillas dobles;
+
+64
+00:03:00.060 --> 00:03:03.850
+y van a ser tratadas de la misma forma.
+
+65
+00:03:03.850 --> 00:03:07.440
+Y entonces, es bueno saber eso porque
+
+66
+00:03:07.440 --> 00:03:09.860
+si vienes de otro lenguaje de programación puede que esperes
+
+67
+00:03:09.860 --> 00:03:11.190
+que se traten de forma distinta,
+
+68
+00:03:11.190 --> 00:03:13.640
+pero en Python no sucede.
+
+69
+00:03:13.640 --> 00:03:16.030
+Ahora, hablemos sobre instancias donde te
+
+70
+00:03:16.030 --> 00:03:18.740
+gustaría usar uno en vez del otro,
+
+71
+00:03:18.740 --> 00:03:23.350
+y trata con cómo quieres escapar caracteres.
+
+72
+00:03:23.350 --> 00:03:26.380
+Entonces, voy a crear una variable nueva.
+
+73
+00:03:26.380 --> 00:03:29.520
+Voy a decir oración dos,
+
+74
+00:03:29.520 --> 00:03:32.260
+y aquí voy a comenzar con comillas únicas,
+
+75
+00:03:32.260 --> 00:03:33.632
+y voy a decir:
+
+76
+00:03:33.632 --> 00:03:38.090
+Ese es el tazón de mi perro.
+
+77
+00:03:39.610 --> 00:03:42.170
+Ahora puede que notes que tenemos un error aquí,
+
+78
+00:03:42.170 --> 00:03:46.000
+y el error es porque comenzamos las comillas únicas,
+
+79
+00:03:46.000 --> 00:03:47.660
+terminamos con con comilla única,
+
+80
+00:03:47.660 --> 00:03:52.260
+pero en el medio de la string hay un apostrofe,
+
+81
+00:03:52.260 --> 00:03:55.190
+y este apostrofe se ve...
+
+82
+00:03:55.190 --> 00:03:58.280
+El interpretador de Python mira este apostrofe
+
+83
+00:03:58.280 --> 00:03:59.850
+como el final de una string.
+
+84
+00:03:59.850 --> 00:04:02.820
+Entonces, esto va a causar un error de sintaxis.
+
+85
+00:04:02.820 --> 00:04:06.240
+Entonces si tratara de correr esto puedes ver
+
+86
+00:04:06.240 --> 00:04:08.780
+que simplemente dice sintaxis inválida,
+
+87
+00:04:08.780 --> 00:04:12.590
+y apunta exactamente a dónde está el error.
+
+88
+00:04:12.590 --> 00:04:15.430
+Ahora ¿Qué podemos hacer para arreglar esto?
+
+89
+00:04:15.430 --> 00:04:17.100
+Bien, hay un par de cosas,
+
+90
+00:04:17.100 --> 00:04:18.870
+y te voy a mostrar ambas opciones.
+
+91
+00:04:18.870 --> 00:04:22.150
+Una es que podemos escapar este caractér.
+
+92
+00:04:22.150 --> 00:04:25.990
+Entonces, si usas una barra invertida
+
+93
+00:04:25.990 --> 00:04:28.640
+verás que esto arregla el problema.
+
+94
+00:04:28.640 --> 00:04:30.810
+Y entonces, lo que una barra invertida hace es
+
+95
+00:04:30.810 --> 00:04:34.000
+que el interpretador Python ve a la string,
+
+96
+00:04:34.000 --> 00:04:37.710
+y si encuentra este caractér aquí,
+
+97
+00:04:37.710 --> 00:04:40.720
+el caractér siguiente va a ser tratado
+
+98
+00:04:40.720 --> 00:04:44.410
+como un valor string en vez de algún tipo de
+
+99
+00:04:44.410 --> 00:04:49.410
+constructo de programación tal como al final de una string,
+
+100
+00:04:49.420 --> 00:04:52.440
+y eso nos va a permitir correrlo.
+
+101
+00:04:52.440 --> 00:04:55.360
+Entonces, ahora si presiono enter puedes ver
+
+102
+00:04:55.360 --> 00:04:59.680
+que imprime todo e incluye ese apostrofe
+
+103
+00:04:59.680 --> 00:05:02.890
+en vez de simplemente terminar la línea,
+
+104
+00:05:02.890 --> 00:05:04.860
+o tratar de terminar la línea.
+
+105
+00:05:04.860 --> 00:05:07.430
+Entonces, esta es una forma en la que puedes hacer eso.
+
+106
+00:05:07.430 --> 00:05:09.600
+Sin embargo, esto entra en funcionamiento donde
+
+107
+00:05:09.600 --> 00:05:11.879
+podríamos querer usar comillas dobles.
+
+108
+00:05:11.879 --> 00:05:16.300
+Entonces si tengo oración tres,
+
+109
+00:05:16.300 --> 00:05:21.300
+y la envuelvo en comillas dobles,
+
+110
+00:05:21.570 --> 00:05:26.040
+ahora puedo deshacerme de esta barra invertida,
+
+111
+00:05:26.040 --> 00:05:28.847
+y entonces eso es algo que puede ser muy útil
+
+112
+00:05:28.847 --> 00:05:30.750
+cuando usas strings.
+
+113
+00:05:30.750 --> 00:05:34.240
+Si sabes que tu string va a contener
+
+114
+00:05:34.240 --> 00:05:36.650
+un apostrofe así,
+
+115
+00:05:36.650 --> 00:05:40.050
+entonces puedes envolver la string entera en comillas dobles
+
+116
+00:05:40.050 --> 00:05:42.070
+para que no tengas que perder el tiempo
+
+117
+00:05:42.070 --> 00:05:44.560
+con tener barras invertidas,
+
+118
+00:05:44.560 --> 00:05:46.250
+o algo por el estilo,
+
+119
+00:05:46.250 --> 00:05:48.340
+y funcionará perfectamente bien.
+
+120
+00:05:48.340 --> 00:05:52.180
+Ahora, esto también funciona de la forma apuesta.
+
+121
+00:05:52.180 --> 00:05:54.340
+Entonces, voy a,
+
+122
+00:05:54.340 --> 00:05:56.330
+solo para que puedas
+
+123
+00:05:56.330 --> 00:05:59.730
+ver todos los ejemplos y combinaciones distintas,
+
+124
+00:05:59.730 --> 00:06:01.590
+voy a decir oración cuatro,
+
+125
+00:06:01.590 --> 00:06:03.260
+y diré:
+
+126
+00:06:03.260 --> 00:06:07.235
+Tiffany dijo "Ese es el tazón de mi perro."
+
+127
+00:06:08.970 --> 00:06:13.970
+Y entonces, justo aquí puedo usar la barra invertida,
+
+128
+00:06:15.220 --> 00:06:19.830
+y luego puedo hacer otra justo al final
+
+129
+00:06:19.830 --> 00:06:22.360
+con otro conjunto de comillas,
+
+130
+00:06:22.360 --> 00:06:24.500
+y esto igual va a funcionar.
+
+131
+00:06:24.500 --> 00:06:28.333
+Entonces, tenemos barras invertidas múltiples aquí,
+
+132
+00:06:28.333 --> 00:06:31.630
+y ayuda a proteger estas comillas dobles
+
+133
+00:06:31.630 --> 00:06:34.578
+para que pueda colocarse dentro de la oración,
+
+134
+00:06:34.578 --> 00:06:38.310
+y entonces, ahora si corro esto
+
+135
+00:06:41.890 --> 00:06:43.680
+puedes ver que eso funciona.
+
+136
+00:06:43.680 --> 00:06:46.300
+Entonces, hay cuatro ejemplos distintos
+
+137
+00:06:46.300 --> 00:06:47.870
+de cómo crear strings,
+
+138
+00:06:47.870 --> 00:06:51.090
+y también como usar barras invertidas
+
+139
+00:06:51.090 --> 00:06:55.423
+para poder escapar valores string dentro de Python.
+

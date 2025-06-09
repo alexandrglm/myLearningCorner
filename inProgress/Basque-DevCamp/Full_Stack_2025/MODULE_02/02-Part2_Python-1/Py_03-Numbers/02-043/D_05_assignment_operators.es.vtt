@@ -1,0 +1,630 @@
+WEBVTT
+
+1
+00:00:01.300 --> 00:00:02.830
+<v Profesor>Anteriormente en esta sección,</v>
+
+2
+00:00:02.830 --> 00:00:06.310
+hablamos acerca de cómo podíamos usar operadores matemáticos
+
+3
+00:00:06.310 --> 00:00:08.300
+para trabajar con números en Python.
+
+4
+00:00:08.300 --> 00:00:10.730
+En esta guía, voy a hablar sobre
+
+5
+00:00:10.730 --> 00:00:13.000
+el operador de tarea
+
+6
+00:00:13.000 --> 00:00:14.920
+esto nos va a dar la capacidad
+
+7
+00:00:14.920 --> 00:00:17.279
+de ejecutar un calculo
+
+8
+00:00:17.279 --> 00:00:20.130
+mientras estamos desarrollando tarea.
+
+9
+00:00:20.130 --> 00:00:23.140
+Si eso está tan claro como el lodo, no se preocupen
+
+10
+00:00:23.140 --> 00:00:26.549
+para a pasar por un número de ejemplos.
+
+11
+00:00:26.549 --> 00:00:29.540
+Una cosa muy buena sobre la sintaxis
+
+12
+00:00:29.540 --> 00:00:33.424
+para los operadores de tareas es que es casi idéntica
+
+13
+00:00:33.424 --> 00:00:37.270
+a un tipo de operador estándar.
+
+14
+00:00:37.270 --> 00:00:41.060
+Si han memorizado la lista de todos los operadores Python,
+
+15
+00:00:41.060 --> 00:00:43.630
+entonces van a ser capaces de usar cada uno
+
+16
+00:00:43.630 --> 00:00:47.040
+de estos operadores de tarea bastante fácilmente.
+
+17
+00:00:47.040 --> 00:00:49.230
+La primera cosa que voy a hacer es,
+
+18
+00:00:49.230 --> 00:00:52.200
+asegurémonos primero que podemos imprimir el total.
+
+19
+00:00:52.200 --> 00:00:54.000
+Entonces aquí tenemos un total
+
+20
+00:00:54.000 --> 00:00:56.980
+y es un entero que es igual a 100.
+
+21
+00:00:56.980 --> 00:01:01.410
+Ahora si quisiéramos agregar digamos 10 a 100,
+
+22
+00:01:01.410 --> 00:01:03.460
+¿cómo nos iría haciendo eso?
+
+23
+00:01:03.460 --> 00:01:07.160
+Podríamos reasignar el valor total
+
+24
+00:01:07.160 --> 00:01:09.260
+y podríamos decir total
+
+25
+00:01:10.700 --> 00:01:13.323
+y luego solo agregar 10.
+
+26
+00:01:13.323 --> 00:01:15.720
+Veamos si esto funciona justo aquí.
+
+27
+00:01:15.720 --> 00:01:17.150
+Voy a correrlo,
+
+28
+00:01:17.150 --> 00:01:21.070
+y pueden ver que tenemos 110, así que funciona.
+
+29
+00:01:21.070 --> 00:01:23.190
+Sin embargo siempre que se encuentren desarrollando este
+
+30
+00:01:23.190 --> 00:01:25.690
+tipo de cálculos,
+
+31
+00:01:25.690 --> 00:01:28.902
+lo que pueden hacer es usar un operador de tarea.
+
+32
+00:01:28.902 --> 00:01:31.260
+La sintaxis para eso es
+
+33
+00:01:31.260 --> 00:01:33.582
+M voy a deshacer de todo aquí en el medio
+
+34
+00:01:33.582 --> 00:01:37.104
+y voy a decir más igual a,
+
+35
+00:01:37.104 --> 00:01:39.650
+luego cualquier valor en este caso
+
+36
+00:01:39.650 --> 00:01:41.580
+que quiera agregar a eso.
+
+37
+00:01:41.580 --> 00:01:43.500
+Pueden ver que tenemos nuestro operador
+
+38
+00:01:43.500 --> 00:01:46.020
+y luego justo después tienen un signo igual.
+
+39
+00:01:46.020 --> 00:01:47.200
+Y lo que esto va a hacer
+
+40
+00:01:47.200 --> 00:01:50.070
+es exactamente como lo que teníamos antes.
+
+41
+00:01:50.070 --> 00:01:55.070
+Si corro esto de nuevo, pueden ver que el total es 110.
+
+42
+00:01:55.170 --> 00:01:56.020
+Y voy a,
+
+43
+00:01:56.020 --> 00:01:59.970
+solo así tienen referencia en las notas a mostrar,
+
+44
+00:01:59.970 --> 00:02:04.970
+voy a decir que total es igual a total más 10.
+
+45
+00:02:05.250 --> 00:02:09.490
+Este es exactamente lo mismo que lo que estamos haciendo acá
+
+46
+00:02:09.490 --> 00:02:13.600
+Estamos simplemente usando tarea para hacerlo.
+
+47
+00:02:13.600 --> 00:02:15.330
+Voy a comentar todo esto
+
+48
+00:02:15.330 --> 00:02:17.520
+Y voy a ir rápidamente por
+
+49
+00:02:17.520 --> 00:02:19.760
+cada uno de los otros elementos para los que pueden
+
+50
+00:02:19.760 --> 00:02:22.740
+usar tarea.
+
+51
+00:02:22.740 --> 00:02:25.370
+Si se devuelven y referencian las notas a mostrar
+
+52
+00:02:25.370 --> 00:02:28.010
+en sus propias notas para lo que sea que hicieran el
+
+53
+00:02:28.010 --> 00:02:29.840
+seguimiento de todos los diferentes operadores,
+
+54
+00:02:29.840 --> 00:02:31.050
+van a notar una tendencia.
+
+55
+00:02:31.050 --> 00:02:33.960
+Y eso es porque todos ellos son exactamente el mismo.
+
+56
+00:02:33.960 --> 00:02:38.960
+Entonces aquí, si quiero sustraer 10 del total,
+
+57
+00:02:39.050 --> 00:02:43.100
+simplemente uso el operador de sustracción aquí,
+
+58
+00:02:43.100 --> 00:02:46.190
+lo ejecuto de nuevo y ahora pueden ver que tenemos 90.
+
+59
+00:02:46.190 --> 00:02:49.420
+No se confundan porque solo temporalmente cambiamos el
+
+60
+00:02:49.420 --> 00:02:51.920
+valor a 110.
+
+61
+00:02:51.920 --> 00:02:54.250
+Así que cuando comenté eso
+
+62
+00:02:54.250 --> 00:02:55.720
+y lo corrí desde cero,
+
+63
+00:02:55.720 --> 00:02:59.050
+tomó el total y restó 10
+
+64
+00:02:59.050 --> 00:03:01.613
+del total y eso es lo que imprimió.
+
+65
+00:03:02.690 --> 00:03:04.100
+Voy a copiar esto,
+
+66
+00:03:04.100 --> 00:03:08.580
+y la próxima linea hacia abajo va a ser multiplicación.
+
+67
+00:03:08.580 --> 00:03:11.336
+Así que, en este caso, voy a decir
+
+68
+00:03:11.336 --> 00:03:14.460
+multiplique con el asterisco, el total,
+
+69
+00:03:14.460 --> 00:03:16.210
+y solo voy a decir por dos, así entonces
+
+70
+00:03:16.210 --> 00:03:20.210
+podemos ver exactamente qué valor va a ser
+
+71
+00:03:20.210 --> 00:03:22.610
+y ahora podemos ver que es 200,
+
+72
+00:03:22.610 --> 00:03:23.598
+lo que hace sentido.
+
+73
+00:03:23.598 --> 00:03:25.230
+Hemos tomado el total,
+
+74
+00:03:25.230 --> 00:03:27.180
+lo hemos multiplicado por dos,
+
+75
+00:03:27.180 --> 00:03:29.570
+y hemos canalizado toda la cosa a la
+
+76
+00:03:29.570 --> 00:03:32.210
+variable total.
+
+77
+00:03:32.210 --> 00:03:34.570
+Hasta aquí todo bien.
+
+78
+00:03:34.570 --> 00:03:35.680
+Como habrán adivinado lo siguiente que vamos
+
+79
+00:03:35.680 --> 00:03:38.133
+a hacer es la división.
+
+80
+00:03:38.133 --> 00:03:41.487
+Ahora, voy a decir total
+
+81
+00:03:41.487 --> 00:03:45.350
+y entonces vamos a ejecutar esta tarea división
+
+82
+00:03:45.350 --> 00:03:47.963
+y vamos a decir divida esto por 10,
+
+83
+00:03:47.963 --> 00:03:51.250
+lo corro, y ustedes pueden ver que nos da el valor
+
+84
+00:03:51.250 --> 00:03:54.910
+y lo convierte en un flotante de 10.0.
+
+85
+00:03:54.910 --> 00:03:58.640
+Ahora si esto está empezando a ser un poquito demasiado,
+
+86
+00:03:58.640 --> 00:04:00.540
+tomemos una pequeña pausa
+
+87
+00:04:00.540 --> 00:04:03.240
+y veamos exactamente que está haciendo esto.
+
+88
+00:04:03.240 --> 00:04:06.780
+Recuerden, todo lo que estamos haciendo aquí es, es un
+
+89
+00:04:06.780 --> 00:04:09.040
+corto circuito. Ustedes podrían desarrollarlo de la misma
+
+90
+00:04:09.040 --> 00:04:11.300
+manera que tenemos en el número tres.
+
+91
+00:04:11.300 --> 00:04:16.300
+Podría decir total es igual al total dividido por 10
+
+92
+00:04:16.490 --> 00:04:19.180
+y si corro esto,
+
+93
+00:04:19.180 --> 00:04:21.970
+verán que obtenemos 10.0.
+
+94
+00:04:21.970 --> 00:04:23.160
+Veamos qué es este aviso.
+
+95
+00:04:23.160 --> 00:04:26.810
+Dice redefinición del tipo total de int a flotante
+
+96
+00:04:26.810 --> 00:04:29.590
+así que no tenemos que preocuparnos sobre esto.
+
+97
+00:04:29.590 --> 00:04:32.580
+Si ustedes están creando programas Python,
+
+98
+00:04:32.580 --> 00:04:35.770
+muy raramente alguna vez verán la sintaxis
+
+99
+00:04:35.770 --> 00:04:39.300
+y es porque tenemos este operador de tarea
+
+100
+00:04:39.300 --> 00:04:41.220
+justo aquí.
+
+101
+00:04:41.220 --> 00:04:43.035
+Este es para división y también
+
+102
+00:04:43.035 --> 00:04:47.876
+tenemos asimismo la capacidad de usar división de piso.
+
+103
+00:04:47.876 --> 00:04:51.630
+Si ejecuto esto, van a ver que es 10, pero
+
+104
+00:04:51.630 --> 00:04:56.630
+una cosa que pueden ustedes notar es que 10, no es 10.0.
+
+105
+00:04:56.710 --> 00:05:00.240
+Recuerden que nuestra división de piso entrega un entero,
+
+106
+00:05:00.240 --> 00:05:02.760
+no devuelve un número de punto flotante,
+
+107
+00:05:02.760 --> 00:05:04.730
+así que si eso es lo que ustedes quieren,
+
+108
+00:05:04.730 --> 00:05:07.360
+entonces pueden ejecutar esa tarea
+
+109
+00:05:07.360 --> 00:05:09.130
+simplemente como lo hicimos ahí.
+
+110
+00:05:09.130 --> 00:05:12.540
+El siguiente en la lista es nuestros exponentes.
+
+111
+00:05:12.540 --> 00:05:14.502
+Voy a decir el total
+
+112
+00:05:14.502 --> 00:05:19.502
+vamos a asignar ese al total al cuadrado.
+
+113
+00:05:20.290 --> 00:05:22.890
+Vamos a correr esto y obtenemos 10.000,
+
+114
+00:05:22.890 --> 00:05:24.920
+tal como esperaban.
+
+115
+00:05:24.920 --> 00:05:26.840
+Tenemos uno más
+
+116
+00:05:26.840 --> 00:05:29.640
+que es el operador de módulo.
+
+117
+00:05:29.640 --> 00:05:34.020
+Aquí, recuerden que el porcentaje es igual a dos,
+
+118
+00:05:34.020 --> 00:05:38.980
+y este va a ser cero porque 100 es par.
+
+119
+00:05:38.980 --> 00:05:43.100
+Si cambiamos 100 para ser 101,
+
+120
+00:05:43.100 --> 00:05:44.940
+esto va a devolver uno,
+
+121
+00:05:44.940 --> 00:05:47.218
+porque, recuerden que, el propósito típico
+
+122
+00:05:47.218 --> 00:05:50.190
+del operador de módulo es hacerles saber
+
+123
+00:05:50.190 --> 00:05:53.690
+si están trabajando con un valor par o impar.
+
+124
+00:05:53.690 --> 00:05:54.850
+Ahora, habiendo dicho todo eso,
+
+125
+00:05:54.850 --> 00:05:57.680
+Quiero mostrarles cada opción diferente en que
+
+126
+00:05:57.680 --> 00:06:00.540
+podrían usar el operador de tarea,
+
+127
+00:06:00.540 --> 00:06:03.520
+pero quiero decir que la manera más común
+
+128
+00:06:03.520 --> 00:06:04.970
+en que van a usar esto
+
+129
+00:06:04.970 --> 00:06:09.420
+o la más común va a ser esta de aquí,
+
+130
+00:06:09.420 --> 00:06:12.770
+donde estamos sumando o restando, y esta.
+
+131
+00:06:12.770 --> 00:06:15.300
+Así que, esas van a ser las dos más comunes
+
+132
+00:06:15.300 --> 00:06:17.772
+y que para lo que la van a usar generalmente
+
+133
+00:06:17.772 --> 00:06:21.990
+es cuando estén incrementando o decrementando valores.
+
+134
+00:06:21.990 --> 00:06:25.990
+Una forma muy común de hacer esto eventualmente sería
+
+135
+00:06:25.990 --> 00:06:28.060
+que tenemos nuestro total justo aquí.
+
+136
+00:06:28.060 --> 00:06:30.220
+Tenemos un total de 100,
+
+137
+00:06:30.220 --> 00:06:33.510
+y ustedes pueden imaginar esto como un carro de compras
+
+138
+00:06:33.510 --> 00:06:37.600
+y es $100 y podrían decir producto dos
+
+139
+00:06:37.600 --> 00:06:42.420
+y hacerlo igual a 120.
+
+140
+00:06:42.420 --> 00:06:47.420
+Entonces, si digo producto tres y lo hago igual a 10.
+
+141
+00:06:48.400 --> 00:06:53.400
+Entonces lo que podría decir aquí es que podría decir total
+
+142
+00:06:53.610 --> 00:06:56.120
+más igual
+
+143
+00:06:56.120 --> 00:06:57.030
+producto dos
+
+144
+00:06:58.300 --> 00:07:01.690
+y luego podríamos tomar el valor y decir
+
+145
+00:07:01.690 --> 00:07:05.370
+producto tres y ahora si corro esto,
+
+146
+00:07:05.370 --> 00:07:07.270
+pueden ver que el valor es 230,
+
+147
+00:07:07.270 --> 00:07:08.730
+así que esa es una manera muy común.
+
+148
+00:07:08.730 --> 00:07:11.690
+Siempre que quieran generar una suma,
+
+149
+00:07:11.690 --> 00:07:13.730
+pueden usar este tipo de sintaxis,
+
+150
+00:07:13.730 --> 00:07:15.340
+que es más rápida
+
+151
+00:07:15.340 --> 00:07:18.460
+y será también una manera más Pythonica.
+
+152
+00:07:18.460 --> 00:07:20.640
+Será la manera que ustedes verán en los
+
+153
+00:07:20.640 --> 00:07:22.710
+programas Python estándar
+
+154
+00:07:22.710 --> 00:07:25.450
+siempre que quieran generar una suma
+
+155
+00:07:25.450 --> 00:07:29.500
+y luego resetear y reasignar el valor.
+
+156
+00:07:29.500 --> 00:07:31.600
+En resumen, así es como pueden ustedes usar
+
+157
+00:07:31.600 --> 00:07:34.003
+los operadores de tarea en Python
+

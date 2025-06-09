@@ -1,0 +1,206 @@
+WEBVTT
+
+1
+00:00:00.880 --> 00:00:02.150
+<v ->En este apartado del curso,</v>
+
+2
+00:00:02.150 --> 00:00:05.700
+vamos a crear un motor de búsqueda front end.
+
+3
+00:00:05.700 --> 00:00:07.520
+No va a ser algo funcional,
+
+4
+00:00:07.520 --> 00:00:09.500
+nos ocuparemos de eso más tarde.
+
+5
+00:00:09.500 --> 00:00:11.710
+Pero por ahora, lo que quiero crear
+
+6
+00:00:11.710 --> 00:00:16.050
+es la versión estática de esta aplicación.
+
+7
+00:00:16.050 --> 00:00:18.689
+Va a tenerlo todo: desde un logo
+
+8
+00:00:18.689 --> 00:00:21.380
+a esta gran barra de búsqueda.
+
+9
+00:00:21.380 --> 00:00:24.320
+La barra de búsqueda tendrá un icono dentro.
+
+10
+00:00:24.320 --> 00:00:28.010
+Y luego tendremos estos elementos aquí abajo.
+
+11
+00:00:28.010 --> 00:00:32.730
+También vamos a crear una segunda página aquí.
+
+12
+00:00:32.730 --> 00:00:35.840
+Os enseñaré cómo quedará esto aquí
+
+13
+00:00:35.840 --> 00:00:39.210
+Y esta será la página de resultados de búsqueda.
+
+14
+00:00:39.210 --> 00:00:42.810
+Como podéis ver, el logo se desliza hasta arriba del todo
+
+15
+00:00:42.810 --> 00:00:44.410
+y es mucho más pequeño.
+
+16
+00:00:44.410 --> 00:00:47.430
+La barra de búsqueda sigue estando aquí y sigue
+
+17
+00:00:47.430 --> 00:00:48.560
+funcionando así.
+
+18
+00:00:48.560 --> 00:00:51.480
+Si os fijáis, cuando clico en esto añade
+
+19
+00:00:51.480 --> 00:00:53.570
+un poco de sombra aquí.
+
+20
+00:00:53.570 --> 00:00:55.450
+Y sigue teniendo el icono.
+
+21
+00:00:55.450 --> 00:00:58.330
+Y cuando comienzas a escribir, pongamos,
+
+22
+00:00:58.330 --> 00:01:03.330
+alguna consulta como esta, todo eso desaparece.
+
+23
+00:01:03.914 --> 00:01:07.290
+Debajo está nuestra lista de resultados de búsqueda.
+
+24
+00:01:07.290 --> 00:01:11.610
+Aparece la categoría, aparece el enlace.
+
+25
+00:01:11.610 --> 00:01:14.240
+Todos esos obviamente son de codificación fija
+
+26
+00:01:14.240 --> 00:01:16.060
+porque esto solo será una aplicación estática.
+
+27
+00:01:16.060 --> 00:01:19.910
+Y luego tiene un par de enlaces debajo.
+
+28
+00:01:19.910 --> 00:01:22.470
+Después, veremos cómo podemos
+
+29
+00:01:22.470 --> 00:01:25.700
+crearlo en una plataforma JavaScript
+
+30
+00:01:25.700 --> 00:01:28.970
+y cómo hacerlo funcional y conectarlo a un API.
+
+31
+00:01:28.970 --> 00:01:30.740
+Pero por ahora, lo que queremos hacer
+
+32
+00:01:30.740 --> 00:01:34.330
+es simplemente crearlo y darle
+
+33
+00:01:34.330 --> 00:01:36.590
+la apariencia y la sensación que busquemos.
+
+34
+00:01:36.590 --> 00:01:40.870
+Además de lo que estamos viendo ahora,
+
+35
+00:01:40.870 --> 00:01:44.590
+también quiero que esté totalmente optimizado para móviles.
+
+36
+00:01:44.590 --> 00:01:47.670
+Así que si lo reducimos así,
+
+37
+00:01:47.670 --> 00:01:49.460
+como en un smartphone,
+
+38
+00:01:49.460 --> 00:01:53.690
+podemos ver que todo se reduce proporcionalmente.
+
+39
+00:01:53.690 --> 00:01:56.730
+Como podéis ver justo aquí,
+
+40
+00:01:56.730 --> 00:02:00.160
+todo sigue en la página, pero ahora se ve mucho mejor.
+
+41
+00:02:00.160 --> 00:02:02.090
+Es como se vería
+
+42
+00:02:02.090 --> 00:02:04.980
+en un smartphone o en un aparato móvil.
+
+43
+00:02:04.980 --> 00:02:07.410
+Aseguraos de hacer eso.
+
+44
+00:02:07.410 --> 00:02:12.410
+Os daré un par de consejos: para este proyecto en concreto,
+
+45
+00:02:12.550 --> 00:02:17.530
+ni siquiera hace falta que uséis Media Queries para crearlo.
+
+46
+00:02:17.530 --> 00:02:22.020
+Simplemente tenéis que usar una combinación de HTML regular
+
+47
+00:02:22.020 --> 00:02:27.020
+con CSS y CSS Grid, y después Flexbox.
+
+48
+00:02:27.280 --> 00:02:30.160
+Si usáis todas esas tecnologías,
+
+49
+00:02:30.160 --> 00:02:34.930
+podréis crear todo lo que os estoy enseñando.
+
+50
+00:02:34.930 --> 00:02:37.490
+Así que buena suerte con el proyecto
+
+51
+00:02:37.490 --> 00:02:40.163
+y os veo más tarde en la solución.
+

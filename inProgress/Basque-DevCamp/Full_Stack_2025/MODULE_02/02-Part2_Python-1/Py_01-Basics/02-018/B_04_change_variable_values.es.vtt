@@ -1,0 +1,430 @@
+WEBVTT
+
+1
+00:00:01.310 --> 00:00:02.143
+<v Instructor>En esta guía vamos a ver</v>
+
+2
+00:00:02.143 --> 00:00:06.080
+cómo podemos cambiar los valores de las variables.
+
+3
+00:00:06.080 --> 00:00:08.654
+Hasta este punto en las secciones que hemos visto
+
+4
+00:00:08.654 --> 00:00:11.180
+cómo podemos establecer valores de variables,
+
+5
+00:00:11.180 --> 00:00:13.970
+pero ahora veremos cómo podemos realmente cambiarlos,
+
+6
+00:00:13.970 --> 00:00:18.350
+y como puedes ver aquí, tengo la calculadora de consejos
+
+7
+00:00:18.350 --> 00:00:20.720
+de muestra que usamos en la guía anterior,
+
+8
+00:00:20.720 --> 00:00:22.500
+y vamos a refactorizarla para
+
+9
+00:00:22.500 --> 00:00:26.430
+usar una sola variable para el total.
+
+10
+00:00:26.430 --> 00:00:29.090
+Así que en lugar de tener un subtotal aquí,
+
+11
+00:00:29.090 --> 00:00:31.800
+en realidad voy a comenzar con el total
+
+12
+00:00:31.800 --> 00:00:34.450
+y luego en cada uno de estos lugares
+
+13
+00:00:34.450 --> 00:00:37.040
+donde antes llamaba al subtotal,
+
+14
+00:00:37.040 --> 00:00:40.470
+simplemente lo reemplazaré con la variable total.
+
+15
+00:00:40.470 --> 00:00:45.160
+Entonces, esto va a comenzar con un total igual a 100,
+
+16
+00:00:45.160 --> 00:00:48.551
+luego vamos a multiplicar el total por un 20%,
+
+17
+00:00:48.551 --> 00:00:51.270
+luego vamos a establecer el total igual
+
+18
+00:00:51.270 --> 00:00:53.960
+al total anterior más la propina
+
+19
+00:00:53.960 --> 00:00:56.580
+y luego vamos a imprimir todo eso.
+
+20
+00:00:56.580 --> 00:00:58.710
+Por lo tanto, si presiono Ejecutar aquí mismo,
+
+21
+00:00:58.710 --> 00:01:01.830
+puedes ver que el total sigue siendo 120.
+
+22
+00:01:01.830 --> 00:01:05.560
+Así que el punto principal donde ocurrió
+
+23
+00:01:05.560 --> 00:01:08.240
+el intercambio fue justo en la línea cuatro aquí.
+
+24
+00:01:08.240 --> 00:01:10.540
+El total se estableció previamente en 100,
+
+25
+00:01:10.540 --> 00:01:12.770
+pero aquí lo estamos restableciendo
+
+26
+00:01:12.770 --> 00:01:16.061
+a lo que sea el total más la propina.
+
+27
+00:01:16.061 --> 00:01:18.829
+Y voy a comentar todo esto
+
+28
+00:01:18.829 --> 00:01:22.900
+y vamos a echar otro vistazo a un ejemplo diferente
+
+29
+00:01:22.900 --> 00:01:25.470
+de que si esa parte fue un poco confusa
+
+30
+00:01:25.470 --> 00:01:27.500
+o fue un poco rápido, quizás esto
+
+31
+00:01:27.500 --> 00:01:29.100
+tenga aún más sentido.
+
+32
+00:01:29.100 --> 00:01:33.620
+Así que comenzaré creando un conjunto de nombres que
+
+33
+00:01:33.620 --> 00:01:37.840
+podría usarse para, por ejemplo, una aplicación de marcador.
+
+34
+00:01:37.840 --> 00:01:39.450
+Así que voy a decir primero,
+
+35
+00:01:39.450 --> 00:01:42.700
+como el primer jugador de béisbol que viene.
+
+36
+00:01:42.700 --> 00:01:46.690
+Voy a decir primero que va a ser Springer.
+
+37
+00:01:46.690 --> 00:01:51.690
+Y luego el segundo será Bergman.
+
+38
+00:01:51.840 --> 00:01:56.040
+Y luego el tercero va a ser Altuve.
+
+39
+00:01:56.040 --> 00:01:59.170
+Así que todo aquí es bastante estándar,
+
+40
+00:01:59.170 --> 00:02:01.550
+pero di que queremos intercambiar a alguien.
+
+41
+00:02:01.550 --> 00:02:04.000
+Digamos que queremos reemplazar a Bregman
+
+42
+00:02:04.000 --> 00:02:06.083
+con un jugador diferente.
+
+43
+00:02:07.530 --> 00:02:12.210
+Si digo segundo, simplemente puedo reemplazar el segundo
+
+44
+00:02:12.210 --> 00:02:13.850
+valor con cualquier otra cosa que desees.
+
+45
+00:02:13.850 --> 00:02:17.830
+Así que podría decir segundo y luego Correa
+
+46
+00:02:17.830 --> 00:02:20.920
+y ahora si imprimo cada uno de estos,
+
+47
+00:02:20.920 --> 00:02:23.720
+así que si imprimo segundo aquí,
+
+48
+00:02:23.720 --> 00:02:26.990
+y luego bajar y hacer lo mismo.
+
+49
+00:02:26.990 --> 00:02:30.450
+Y si ejecuto esto, verá la primera vez
+
+50
+00:02:30.450 --> 00:02:33.690
+que imprimimos en segundo lugar, todavía tenía el valor para
+
+51
+00:02:33.690 --> 00:02:36.830
+Bregman, y luego la próxima vez fue Correa.
+
+52
+00:02:36.830 --> 00:02:40.740
+Así que eso es algo que es muy importante que
+
+53
+00:02:40.740 --> 00:02:41.573
+vas a hacer,
+
+54
+00:02:41.573 --> 00:02:46.573
+que es intercambiar valores y anular valores preexistentes.
+
+55
+00:02:46.730 --> 00:02:49.220
+Ahora, les mostraré algunos elementos que pueden no
+
+56
+00:02:49.220 --> 00:02:51.820
+considerarse la mejor práctica,
+
+57
+00:02:51.820 --> 00:02:55.280
+principalmente porque quiero mostrarles que son posibles.
+
+58
+00:02:55.280 --> 00:02:58.010
+Es posible que desees vigilar esto para
+
+59
+00:02:58.010 --> 00:03:01.400
+evitar que los errores se filtren en tu programa.
+
+60
+00:03:01.400 --> 00:03:06.121
+Entonces, lo que tenemos aquí, debido a la naturaleza
+
+61
+00:03:06.121 --> 00:03:11.121
+de tipo dinámico de nuestro lenguaje Python, si quisiera
+
+62
+00:03:11.610 --> 00:03:13.970
+intercambiar el segundo lugar con algún tipo de número.
+
+63
+00:03:13.970 --> 00:03:17.110
+Entonces, digamos que quería eliminarlo
+
+64
+00:03:17.110 --> 00:03:20.500
+con su promedio de bateo en caso de accidente,
+
+65
+00:03:20.500 --> 00:03:25.500
+entonces si lo ejecuto se ejecutará, pero nota que aquí
+
+66
+00:03:25.833 --> 00:03:28.680
+mismo recibimos esta pequeña advertencia
+
+67
+00:03:28.680 --> 00:03:31.040
+según la herramienta que estés usando para escribir
+
+68
+00:03:31.040 --> 00:03:33.890
+tu código Python, puedes o no recibir esta advertencia,
+
+69
+00:03:33.890 --> 00:03:37.090
+pero lo que dice es que hemos redefinido
+
+70
+00:03:37.090 --> 00:03:41.400
+el segundo tipo de una cadena a un flotador.
+
+71
+00:03:41.400 --> 00:03:44.620
+Y puede que no parezca una gran cosa en este ejemplo,
+
+72
+00:03:44.620 --> 00:03:48.580
+pero en una aplicación del mundo real, lo que podría suceder
+
+73
+00:03:48.580 --> 00:03:51.870
+es decir que llamaste a un método en segundo lugar,
+
+74
+00:03:51.870 --> 00:03:56.870
+como asegurarse de que el formato esté configurado
+
+75
+00:03:57.460 --> 00:04:00.500
+correctamente de modo que tenga mayúscula en el
+
+76
+00:04:00.500 --> 00:04:02.410
+nombre y diferentes tipos de elementos como ese.
+
+77
+00:04:02.410 --> 00:04:07.240
+Si llamas a ese método en la segunda variable
+
+78
+00:04:07.240 --> 00:04:09.923
+y en algún lugar lo restableces accidentalmente
+
+79
+00:04:09.923 --> 00:04:11.980
+para que sea un flotador.
+
+80
+00:04:11.980 --> 00:04:14.610
+Entonces tu programa se ejecutaría en un error
+
+81
+00:04:14.610 --> 00:04:16.890
+porque el tipo que esperaba no
+
+82
+00:04:16.890 --> 00:04:19.250
+era el que realmente obtuvo.
+
+83
+00:04:19.250 --> 00:04:21.290
+Así que esto es posible,
+
+84
+00:04:21.290 --> 00:04:25.350
+sin embargo, es algo que se considera una mala práctica.
+
+85
+00:04:25.350 --> 00:04:28.810
+Cuando estés sobrescribiendo un valor, querrás mantener
+
+86
+00:04:28.810 --> 00:04:33.810
+el mismo tipo de datos variables porque, si no es así,
+
+87
+00:04:33.810 --> 00:04:35.226
+tu programa probablemente se encontrará
+
+88
+00:04:35.226 --> 00:04:37.080
+con un error en algún momento.
+
+89
+00:04:37.080 --> 00:04:40.470
+Entonces, así es como puedes anular un valor.
+
+90
+00:04:40.470 --> 00:04:43.102
+Ahora, una forma en que puedes
+
+91
+00:04:43.102 --> 00:04:45.440
+cambiar un valor con el valor
+
+92
+00:04:45.440 --> 00:04:47.460
+de otra variable también es bastante sencilla.
+
+93
+00:04:47.460 --> 00:04:50.360
+Entonces, digamos que queremos intercambiar
+
+94
+00:04:50.360 --> 00:04:54.910
+y poner el valor de Altuve donde está Springer.
+
+95
+00:04:54.910 --> 00:04:59.670
+Si digo imprimir primero aquí y luego donde digo aquí,
+
+96
+00:04:59.670 --> 00:05:03.740
+primero diré y luego lo cambiaré con el valor en tercero
+
+97
+00:05:03.740 --> 00:05:08.740
+y luego imprimamos primero aquí.
+
+98
+00:05:09.340 --> 00:05:13.100
+Si ejecuto esto, puede ver que primero imprime Springer
+
+99
+00:05:13.100 --> 00:05:18.100
+y luego Altuve a pesar de que este es el tipo de variable.
+
+100
+00:05:18.240 --> 00:05:22.930
+Entonces, lo que tenemos aquí es la capacidad de anular
+
+101
+00:05:22.930 --> 00:05:24.121
+los valores dinámicamente, de modo
+
+102
+00:05:24.121 --> 00:05:26.470
+que en lugar de codificar de forma rígida uno de ellos.
+
+103
+00:05:26.470 --> 00:05:29.080
+Simplemente podemos pasar una variable,
+
+104
+00:05:29.080 --> 00:05:30.890
+y esto será igual
+
+105
+00:05:30.890 --> 00:05:34.420
+a lo que sea el valor de la variable.
+
+106
+00:05:34.420 --> 00:05:37.420
+Así es como puedes cambiar, de múltiples maneras,
+
+107
+00:05:37.420 --> 00:05:41.423
+los valores de las variables dentro de un Python.
+

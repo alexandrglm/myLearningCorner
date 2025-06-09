@@ -1,0 +1,374 @@
+WEBVTT
+
+1
+00:00:00.860 --> 00:00:02.997
+<v ->Ahora que comprenden muy bien</v>
+
+2
+00:00:02.997 --> 00:00:05.265
+el lenguaje de programación Python,
+
+3
+00:00:05.265 --> 00:00:08.535
+cómo se usa en varias aplicaciones
+
+4
+00:00:08.535 --> 00:00:10.310
+y cómo pueden ejecutarlo
+
+5
+00:00:10.310 --> 00:00:12.640
+en su propio sistema o navegador,
+
+6
+00:00:12.640 --> 00:00:16.390
+comenzaremos con lo divertido,
+que es el código.
+
+7
+00:00:16.390 --> 00:00:19.270
+En esta primera sección, hablaremos sobre
+
+8
+00:00:19.270 --> 00:00:21.332
+uno de los fundamentos clave
+
+9
+00:00:21.332 --> 00:00:24.870
+cuando se trata de programar
+en casi cualquier lenguaje,
+
+10
+00:00:24.870 --> 00:00:28.020
+que es el concepto de "variables".
+
+11
+00:00:28.020 --> 00:00:31.640
+Ahora bien, si nunca programaron,
+
+12
+00:00:31.640 --> 00:00:34.790
+una variable puede sonar
+como un tema extraño.
+
+13
+00:00:34.790 --> 00:00:38.640
+O quizá la oyeron usada
+en otras disciplinas,
+
+14
+00:00:38.640 --> 00:00:40.940
+como estadística o matemática.
+
+15
+00:00:40.940 --> 00:00:43.531
+Cuando se trata de programar,
+
+16
+00:00:43.531 --> 00:00:47.131
+las variables son
+una parte absolutamente clave
+
+17
+00:00:47.131 --> 00:00:49.050
+para desarrollar programas.
+
+18
+00:00:49.050 --> 00:00:51.470
+Pero si nunca oyeron
+sobre las variables,
+
+19
+00:00:51.470 --> 00:00:54.130
+les daré un ejemplo real.
+
+20
+00:00:54.130 --> 00:00:58.073
+Aquí tengo un vasito rojo.
+
+21
+00:00:58.073 --> 00:01:01.039
+El vaso tiene el nombre aquí,
+
+22
+00:01:01.039 --> 00:01:04.860
+que es Jordan_agua.
+
+23
+00:01:04.860 --> 00:01:08.418
+Si hubiera agua aquí dentro,
+
+24
+00:01:08.418 --> 00:01:12.530
+este vasito rojo de aquí
+no sería el agua,
+
+25
+00:01:12.530 --> 00:01:16.400
+sino solo el contenedor para esa agua.
+
+26
+00:01:16.400 --> 00:01:19.500
+Podría usar esto y usar este vaso
+
+27
+00:01:19.500 --> 00:01:21.000
+y podría referenciarlo.
+
+28
+00:01:21.000 --> 00:01:24.870
+Podría decir:
+"Tráeme el vaso Jordan_agua".
+
+29
+00:01:24.870 --> 00:01:27.830
+Y todos sabrían
+exactamente a cuál me refiero
+
+30
+00:01:27.830 --> 00:01:30.676
+porque se nombró así.
+Luego, podría usar eso
+
+31
+00:01:30.676 --> 00:01:33.120
+y tomarlo para realizar tareas;
+
+32
+00:01:33.120 --> 00:01:36.900
+podría beber de él, podría regar las plantas,
+
+33
+00:01:36.900 --> 00:01:39.330
+podría hacer distintas tareas.
+
+34
+00:01:39.330 --> 00:01:43.540
+Pero el vaso por sí solo
+es simplemente un contenedor
+
+35
+00:01:43.540 --> 00:01:45.920
+para lo que le vierta.
+
+36
+00:01:45.920 --> 00:01:47.511
+No es el agua en sí,
+
+37
+00:01:47.511 --> 00:01:49.878
+es solo un modo de transportarla
+
+38
+00:01:49.878 --> 00:01:52.840
+y usarla para referenciarla fácilmente
+
+39
+00:01:52.840 --> 00:01:54.905
+porque tiene un nombre.
+
+40
+00:01:54.905 --> 00:01:58.522
+Y todos sabrán exactamente a qué me refiero
+
+41
+00:01:58.522 --> 00:02:02.700
+cuando quiera que me traigan
+este vaso específico.
+
+42
+00:02:02.700 --> 00:02:06.580
+En la programación,
+las variables funcionan igual.
+
+43
+00:02:06.580 --> 00:02:10.620
+Las variables en sí
+son simplemente contenedores
+
+44
+00:02:10.620 --> 00:02:12.720
+para distintos elementos de datos.
+
+45
+00:02:12.720 --> 00:02:16.450
+Quizá queramos poner
+un conjunto de números,
+
+46
+00:02:16.450 --> 00:02:18.340
+quizá queramos poner un cálculo,
+
+47
+00:02:18.340 --> 00:02:21.960
+quizá queramos poner
+una oración o párrafo
+
+48
+00:02:21.960 --> 00:02:23.259
+en la variable.
+
+49
+00:02:23.259 --> 00:02:27.920
+En esta sección específica,
+ahondaremos sobre
+
+50
+00:02:27.920 --> 00:02:31.620
+qué son las variables,
+la sintaxis y cómo usarlas.
+
+51
+00:02:31.620 --> 00:02:34.560
+Y también mencionaremos
+las prácticas óptimas.
+
+52
+00:02:34.560 --> 00:02:37.860
+Una práctica muy común que vi
+a lo largo de los años
+
+53
+00:02:37.860 --> 00:02:40.840
+de trabajar con estudiantes,
+es que un estudiante
+
+54
+00:02:40.840 --> 00:02:44.250
+cuando aprende
+a trabajar con una variable
+
+55
+00:02:44.250 --> 00:02:48.610
+usará distintas prácticas de nomenclaturas.
+
+56
+00:02:48.610 --> 00:02:51.215
+En otras palabras,
+quizá haya un estudiante
+
+57
+00:02:51.215 --> 00:02:54.050
+que escriba una variable
+toda en mayúsculas,
+
+58
+00:02:54.050 --> 00:02:57.410
+o quizá haya un estudiante
+que use guiones bajos
+
+59
+00:02:57.410 --> 00:03:01.977
+y que use mayúsculas al azar
+donde sienta que es adecuado.
+
+60
+00:03:01.977 --> 00:03:03.668
+Pero en Python,
+
+61
+00:03:03.668 --> 00:03:07.270
+hay prácticas muy estandarizadas
+
+62
+00:03:07.270 --> 00:03:10.160
+cuando se trata
+de nombrar a estas variables.
+
+63
+00:03:10.160 --> 00:03:14.730
+Y en esta sección específica,
+veremos cuáles son.
+
+64
+00:03:14.730 --> 00:03:17.020
+El objetivo es,
+para el final de esta sección,
+
+65
+00:03:17.020 --> 00:03:19.610
+que no solo entiendan
+la sintaxis correcta
+
+66
+00:03:19.610 --> 00:03:23.240
+para usar variables en Python,
+sino que también sigan
+
+67
+00:03:23.240 --> 00:03:26.050
+las prácticas óptimas del lenguaje.
+
+68
+00:03:26.050 --> 00:03:28.667
+Para saber más sobre las variables,
+
+69
+00:03:28.667 --> 00:03:31.620
+también debemos hablar
+sobre qué colocaremos
+
+70
+00:03:31.620 --> 00:03:33.210
+dentro de esas variables.
+
+71
+00:03:33.210 --> 00:03:35.385
+Mencioné que podemos colocar números,
+
+72
+00:03:35.385 --> 00:03:38.718
+oraciones, párrafos
+
+73
+00:03:38.718 --> 00:03:41.770
+y distintas cosas dentro de una variable.
+
+74
+00:03:41.770 --> 00:03:46.240
+Sería negligente
+si no explicara ese concepto.
+
+75
+00:03:46.240 --> 00:03:49.690
+En la programación, ese concepto se llama "tipo de dato",
+
+76
+00:03:49.690 --> 00:03:51.708
+es decir, que un tipo de dato
+
+77
+00:03:51.708 --> 00:03:55.160
+nos permitirá usar oraciones;
+
+78
+00:03:55.160 --> 00:03:58.130
+otro tipo de dato
+nos dejará usar números.
+
+79
+00:03:58.130 --> 00:04:00.210
+Y en esta sección, explicaremos
+
+80
+00:04:00.210 --> 00:04:02.937
+todos los tipos de datos
+claves en Python
+
+81
+00:04:02.937 --> 00:04:05.990
+para que puedan reconocerlos.
+Y, más adelante en el curso,
+
+82
+00:04:05.990 --> 00:04:08.523
+dedicaremos una sección
+
+83
+00:04:08.523 --> 00:04:10.557
+a cada uno de esos tipos de datos
+
+84
+00:04:10.557 --> 00:04:12.733
+para que lo comprendan a fondo.
+

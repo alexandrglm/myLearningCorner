@@ -1,0 +1,442 @@
+WEBVTT
+
+1
+00:00:01.020 --> 00:00:03.352
+<v ->Ya que contamos con nuestras estructura HTML</v>
+
+2
+00:00:03.352 --> 00:00:05.827
+junto con cada uno de los nombres
+
+3
+00:00:05.827 --> 00:00:07.785
+de clases que queremos usar,
+
+4
+00:00:07.785 --> 00:00:10.660
+ahora es momento de comenzar a implementar el estilo.
+
+5
+00:00:10.660 --> 00:00:12.910
+Así que ahora vamos a ser capaces de ver exactamente
+
+6
+00:00:12.910 --> 00:00:16.830
+lo que podemos hacer para que esto combine con el diseño.
+
+7
+00:00:16.830 --> 00:00:20.770
+Así que voy a abrir este archivo main.css
+
+8
+00:00:20.770 --> 00:00:23.380
+y comencemos a armar esto.
+
+9
+00:00:23.380 --> 00:00:26.709
+Voy a empezar trabajando con el contenedor.
+
+10
+00:00:26.709 --> 00:00:28.426
+Ahora voy o no voy a necesitar
+
+11
+00:00:28.426 --> 00:00:31.093
+hacer algunos cambios en el HTML
+
+12
+00:00:31.093 --> 00:00:34.356
+como integrar fuentes personalizadas y cosas como esa
+
+13
+00:00:34.356 --> 00:00:36.165
+pero ahora no me voy a preocupar por ello,
+
+14
+00:00:36.165 --> 00:00:38.570
+Primero voy a tratar de alinear esto
+
+15
+00:00:38.570 --> 00:00:40.210
+un poco mejor en la página.
+
+16
+00:00:40.210 --> 00:00:43.350
+Así que voy a tomar esa clase de contenedor
+
+17
+00:00:43.350 --> 00:00:47.023
+y voy a usar la ventana de cuadrícula
+
+18
+00:00:47.023 --> 00:00:49.510
+para que esto sea un contenedor de cuadrícula.
+
+19
+00:00:49.510 --> 00:00:51.310
+Así que ahora diré "ventana de cuadrícula"
+
+20
+00:00:51.310 --> 00:00:54.922
+y quiero usar las filas de plantilla de cuadrícula
+
+21
+00:00:54.922 --> 00:00:57.650
+en columnas y les voy a mostrar exactamente
+
+22
+00:00:57.650 --> 00:00:59.290
+cómo se hace, así que pondré
+
+23
+00:00:59.290 --> 00:01:04.290
+"Filas de ventana de cuadrícula" y empezaré con filas
+
+24
+00:01:04.421 --> 00:01:06.391
+para que puedan usar las que sea primero.
+
+25
+00:01:06.391 --> 00:01:11.391
+Voy a repetir entonces dentro de la función de repetición,
+
+26
+00:01:11.490 --> 00:01:14.140
+digamos "auto-encajar",
+
+27
+00:01:14.140 --> 00:01:16.290
+"minmax"
+
+28
+00:01:16.290 --> 00:01:19.422
+y después pasar en 100 pixels
+
+29
+00:01:19.422 --> 00:01:24.406
+y después 1fr que significa "Unidad fractional".
+
+30
+00:01:24.406 --> 00:01:29.003
+Ahora voy a buscar "Columnas de ventana de cuadrícula",
+
+31
+00:01:30.110 --> 00:01:31.775
+tal como lo hice,
+
+32
+00:01:31.775 --> 00:01:36.110
+y sólo queremos tener tres columnas así que pondré 1fr,
+
+33
+00:01:36.110 --> 00:01:40.160
+1fr, 1fr para esas tres unidades fracionales,
+
+34
+00:01:40.160 --> 00:01:41.410
+y no se preocupen, vamos a repasar
+
+35
+00:01:41.410 --> 00:01:45.000
+todo esto en breve, ahora voy a escribirlo
+
+36
+00:01:45.000 --> 00:01:46.910
+todo y después lo que seleccionaremos
+
+37
+00:01:46.910 --> 00:01:49.570
+y veremos todo lo que esto representa.
+
+38
+00:01:49.570 --> 00:01:54.570
+Ahora vamos a añadir un poco de margen arriba, pondré 5,
+
+39
+00:01:54.770 --> 00:01:58.560
+y vamos con 5 regular E-M
+
+40
+00:01:58.560 --> 00:02:01.113
+y después justificamos los objetos,
+
+41
+00:02:02.720 --> 00:02:05.000
+queremos que todo esté centrado
+
+42
+00:02:05.000 --> 00:02:07.275
+y despues "Alinear objetos"
+
+43
+00:02:07.275 --> 00:02:11.280
+y quiero que esté centrado también,
+
+44
+00:02:11.280 --> 00:02:14.600
+y por último quiero tomar la altura
+
+45
+00:02:14.600 --> 00:02:19.320
+y que sea el 100% de la visión de la altura,
+
+46
+00:02:19.320 --> 00:02:22.850
+la cual puedo usar con 100vh.
+
+47
+00:02:22.850 --> 00:02:25.980
+Ahora grabamos eso y nada cambia
+
+48
+00:02:25.980 --> 00:02:28.350
+con respecto a la imagen porque aun
+
+49
+00:02:28.350 --> 00:02:31.390
+no hemos aplicado los estilos de imagen,
+
+50
+00:02:31.390 --> 00:02:34.150
+pero puedes ver que esos elementos
+
+51
+00:02:34.150 --> 00:02:37.000
+que anteriormente teníamos en la lado inferior izquierdo
+
+52
+00:02:37.000 --> 00:02:40.210
+de la página ya no están ahí y te puedes preguntar
+
+53
+00:02:40.210 --> 00:02:41.370
+dónde están, y puedes ver
+
+54
+00:02:41.370 --> 00:02:44.160
+que se encuentran aquí en el lado derecho.
+
+55
+00:02:44.160 --> 00:02:47.955
+Y esto es, al menos estamos moviendo los objetos,
+
+56
+00:02:47.955 --> 00:02:49.742
+aun tenemos mucho por hacer, obviamente,
+
+57
+00:02:49.742 --> 00:02:53.465
+pero hay que apresurarnos, esto no va a ser
+
+58
+00:02:53.465 --> 00:02:58.456
+nuestra implementación completa, pero sólo por hacerlo,
+
+59
+00:02:58.456 --> 00:03:01.470
+vayamos y actualicemos el ancho de la imagen
+
+60
+00:03:01.470 --> 00:03:05.680
+y pongámosla a 200 pixeles sólo para hacerla
+
+61
+00:03:05.680 --> 00:03:07.210
+más fácil de ver para nosotros.
+
+62
+00:03:07.210 --> 00:03:08.910
+Eso está mejor ahí,
+
+63
+00:03:08.910 --> 00:03:13.260
+Ahora puedes ver una cuadrícula implementada
+
+64
+00:03:13.260 --> 00:03:15.780
+para poner nuestro logo aquí,
+
+65
+00:03:15.780 --> 00:03:18.437
+tenemos la barra de búsqueda y ese pequeño
+
+66
+00:03:18.437 --> 00:03:19.720
+"Presiona Enter para buscar",
+
+67
+00:03:19.720 --> 00:03:21.410
+y luego tenemos los posts recientes.
+
+68
+00:03:21.410 --> 00:03:23.450
+Ahora no están uno encima del otro
+
+69
+00:03:23.450 --> 00:03:26.410
+como queremos, pero eso es algo que vamos a
+
+70
+00:03:26.410 --> 00:03:31.410
+implementar pronto, pero por ahora al menos sabemos
+
+71
+00:03:31.744 --> 00:03:35.570
+que todo esto funciona, debo decir que al menos
+
+72
+00:03:35.570 --> 00:03:40.160
+somos capaces de mover elementos efectivamente en la página.
+
+73
+00:03:40.160 --> 00:03:41.701
+Ahora si presiono click en el botón de
+
+74
+00:03:41.701 --> 00:03:43.985
+"Inspeccionar" aquí arriba,
+
+75
+00:03:43.985 --> 00:03:45.970
+aquí puedes observar,
+
+76
+00:03:45.970 --> 00:03:47.553
+puedes ver donde estas pequeñas líneas
+
+77
+00:03:47.553 --> 00:03:49.280
+punteadas y moradas están,
+
+78
+00:03:49.280 --> 00:03:53.860
+esas representan las columnas, y antes
+
+79
+00:03:53.860 --> 00:03:55.520
+cuando escribía eso, puedes ver aquí
+
+80
+00:03:55.520 --> 00:03:58.353
+todos nuestros estilos enlistados,
+
+81
+00:03:58.353 --> 00:03:59.950
+tenemos una ventana de cuadrícula,
+
+82
+00:03:59.950 --> 00:04:01.891
+filas de ventanas de cuadrículas,
+
+83
+00:04:01.891 --> 00:04:04.190
+tenemos que repetir esto aquí,
+
+84
+00:04:04.190 --> 00:04:06.900
+todo lo que esto hace es simplemente
+
+85
+00:04:06.900 --> 00:04:09.390
+configurar las filas que tenemos.
+
+86
+00:04:09.390 --> 00:04:11.340
+Puedes ver que tenemos una fila aquí arriba,
+
+87
+00:04:11.340 --> 00:04:15.060
+y después la fila enorme que forma todo lo demás,
+
+88
+00:04:15.060 --> 00:04:17.480
+y después tenemos columnas de ventana de cuadrícula,
+
+89
+00:04:17.480 --> 00:04:22.230
+y las tenemos a 1fr, 1fr y 1fr si recuerdas
+
+90
+00:04:22.230 --> 00:04:25.750
+cuando hablamos de esto en el proyecto pasado,
+
+91
+00:04:25.750 --> 00:04:29.360
+lo que esto significa es que va a tener tres columnas
+
+92
+00:04:29.360 --> 00:04:31.760
+y cada una de estas columnas va a ser
+
+93
+00:04:31.760 --> 00:04:33.790
+igual en tamaño.
+
+94
+00:04:33.790 --> 00:04:37.206
+Así que si cambio una de estas,
+
+95
+00:04:37.206 --> 00:04:40.410
+por ejemplo 1fr para la última
+
+96
+00:04:40.410 --> 00:04:43.510
+y cambio esta a 2,
+
+97
+00:04:46.340 --> 00:04:48.630
+de esta forma, entonces verían
+
+98
+00:04:48.630 --> 00:04:51.520
+que esta toma el doble de ancho
+
+99
+00:04:51.520 --> 00:04:54.670
+que los otros elementos, así que vamos
+
+100
+00:04:54.670 --> 00:04:56.410
+a jugar con esto un poco,
+
+101
+00:04:56.410 --> 00:04:59.173
+pero por ahora, eso al menos nos muestra
+
+102
+00:04:59.173 --> 00:05:04.170
+que, uno, hemos usado efectivamente el estilo correcto
+
+103
+00:05:04.170 --> 00:05:06.895
+para que nuestra declaración de importación
+
+104
+00:05:06.895 --> 00:05:09.745
+trabaje correctamente, y después también,
+
+105
+00:05:09.745 --> 00:05:13.360
+que podemos comunicarnos con la ventana de cuadrícula,
+
+106
+00:05:13.360 --> 00:05:16.550
+podemos usar esa API, podemos armar nuestras columnas,
+
+107
+00:05:16.550 --> 00:05:20.040
+filas, así que pienso que estamos más cerca
+
+108
+00:05:20.040 --> 00:05:23.020
+de donde queremos estar, en la próxima guía vamos a seguir
+
+109
+00:05:23.020 --> 00:05:25.800
+trabajando en esto y vamos a
+
+110
+00:05:25.800 --> 00:05:29.668
+empezar a añadir estilos personalizados al logo.
+
