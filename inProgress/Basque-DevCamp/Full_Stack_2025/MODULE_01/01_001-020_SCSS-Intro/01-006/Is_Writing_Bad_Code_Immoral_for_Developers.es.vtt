@@ -1,0 +1,562 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.207
+<v ->Hoy, analizaré una pregunta un tanto extraña.</v>
+
+2
+00:00:04.207 --> 00:00:07.250
+¿Es inmoral programar mal?
+
+3
+00:00:07.250 --> 00:00:09.780
+Lo que nos lleva al concepto acerca de la importancia
+
+4
+00:00:09.780 --> 00:00:12.880
+de desarrollar una programación bien escrita.
+
+5
+00:00:12.880 --> 00:00:15.320
+Puede parecer una pregunta algo rara
+
+6
+00:00:15.320 --> 00:00:16.528
+porque es probable que el modo de pensar
+
+7
+00:00:16.528 --> 00:00:18.588
+de la mayoría de los desarrolladores sea
+
+8
+00:00:18.588 --> 00:00:21.570
+que un proyecto de programación no es moral ni inmoral.
+
+9
+00:00:21.570 --> 00:00:24.197
+Son solo archivos de programación
+
+10
+00:00:24.197 --> 00:00:26.675
+que cumplen con varias funcionalidades.
+
+11
+00:00:26.675 --> 00:00:28.685
+Quiero pensar que la mayor parte de los desarrolladores
+
+12
+00:00:28.685 --> 00:00:30.799
+están orgullosos de su trabajo y por eso
+
+13
+00:00:30.799 --> 00:00:34.417
+desean programar de acuerdo a las mejores prácticas,
+
+14
+00:00:34.417 --> 00:00:37.522
+sin embargo, por los plazos de entrega,
+
+15
+00:00:37.522 --> 00:00:42.277
+muchos proyectos parecen constar de un trabajo sencillo
+
+16
+00:00:42.277 --> 00:00:44.969
+para terminar tan rápido como humanamente sea posible
+
+17
+00:00:44.969 --> 00:00:46.660
+y poder pasar al siguiente proyecto.
+
+18
+00:00:46.660 --> 00:00:48.935
+El inconveniente con este modo de pensar
+
+19
+00:00:48.935 --> 00:00:51.684
+es que puede causar problemas tales como perder
+
+20
+00:00:51.684 --> 00:00:53.480
+casos de borde por las características
+
+21
+00:00:53.480 --> 00:00:55.127
+y que sea difícil mantener
+
+22
+00:00:55.127 --> 00:00:57.505
+las bases de programación mal organizadas
+
+23
+00:00:57.505 --> 00:01:00.610
+y que otros desarrolladores puedan agregar funcionalidades.
+
+24
+00:01:00.610 --> 00:01:04.620
+Respecto a la pregunta sobre si programar mal es inmoral,
+
+25
+00:01:04.620 --> 00:01:06.513
+recuerdo una historia excelente
+
+26
+00:01:06.513 --> 00:01:08.563
+de un profesor en ciencias de la computación
+
+27
+00:01:08.563 --> 00:01:10.931
+en Texas Tech, el dr. Michael Gelfond,
+
+28
+00:01:10.931 --> 00:01:14.990
+y utilicé esa idea para esta publicación.
+
+29
+00:01:14.990 --> 00:01:18.270
+Durante una de sus conferencias, nos preguntó lo mismo
+
+30
+00:01:18.270 --> 00:01:20.200
+y luego relató una historia.
+
+31
+00:01:20.200 --> 00:01:22.930
+Hace algunas décadas, cuando él trabajaba como programador
+
+32
+00:01:22.930 --> 00:01:24.571
+de una organización de software,
+
+33
+00:01:24.571 --> 00:01:27.160
+se topó con un molesto error de programación.
+
+34
+00:01:27.160 --> 00:01:29.360
+Le llevó varios días descubrir
+
+35
+00:01:29.360 --> 00:01:31.686
+que el desarrollador anterior había creado
+
+36
+00:01:31.686 --> 00:01:33.714
+una función que estaba mal construida
+
+37
+00:01:33.714 --> 00:01:37.350
+y provocaba que se rompiera el módulo con que trabajaba.
+
+38
+00:01:37.350 --> 00:01:39.890
+Luego de contarnos la historia, volvió a preguntarnos
+
+39
+00:01:39.890 --> 00:01:42.040
+si programar mal era inmoral.
+
+40
+00:01:42.040 --> 00:01:44.008
+La mayoría de la clase respondió que no,
+
+41
+00:01:44.008 --> 00:01:47.380
+pero luego preguntó si matar a alguien
+
+42
+00:01:47.380 --> 00:01:51.910
+unos días antes de su muerte es inmoral.
+
+43
+00:01:51.910 --> 00:01:55.870
+La respuesta unánime fue que sí.
+
+44
+00:01:55.870 --> 00:01:57.692
+Para terminar la conferencia expresó:
+
+45
+00:01:57.692 --> 00:02:00.316
+"Entonces, ¿no fue inmoral que la programación
+
+46
+00:02:00.316 --> 00:02:04.940
+del otro desarrollador robara dos días de mi vida?".
+
+47
+00:02:04.940 --> 00:02:06.700
+Fue un comentario bastante válido.
+
+48
+00:02:06.700 --> 00:02:09.550
+Esa historia y la pregunta se quedaron en mí por años
+
+49
+00:02:09.550 --> 00:02:12.857
+y ahora mi respuesta a la pregunta sobre si programar mal
+
+50
+00:02:12.857 --> 00:02:15.357
+es inmoral es un sí rotundo.
+
+51
+00:02:15.357 --> 00:02:17.324
+Como desarrolladores, debemos estar orgullosos
+
+52
+00:02:17.324 --> 00:02:20.710
+del trabajo que hacemos, no solo por los intereses
+
+53
+00:02:20.710 --> 00:02:22.600
+de nuestros clientes o empleados,
+
+54
+00:02:22.600 --> 00:02:25.483
+sino por el simple hecho de que nuestro objetivo
+
+55
+00:02:25.483 --> 00:02:27.780
+debe ser convertirnos en artesanos
+
+56
+00:02:27.780 --> 00:02:29.610
+en cada cosa que hacemos.
+
+57
+00:02:29.610 --> 00:02:33.571
+Programar es lo más parecido a la magia en este mundo
+
+58
+00:02:33.571 --> 00:02:37.123
+y me siento honrado de poder trabajar en esto a diario,
+
+59
+00:02:37.123 --> 00:02:39.200
+junto con poder también enseñar a otros
+
+60
+00:02:39.200 --> 00:02:40.260
+cómo hacer lo mismo.
+
+61
+00:02:40.260 --> 00:02:42.250
+Por esa razón, debería motivarnos
+
+62
+00:02:42.250 --> 00:02:44.055
+tener claramente definida la meta
+
+63
+00:02:44.055 --> 00:02:45.713
+de llegar a ser excelentes en nuestro oficio.
+
+64
+00:02:45.713 --> 00:02:48.390
+Mi jugador de béisbol preferido de todos los tiempos
+
+65
+00:02:48.390 --> 00:02:50.703
+fue Joe DiMaggio quien tenía una cita excelente
+
+66
+00:02:50.703 --> 00:02:52.711
+que creo que es muy pertinente
+
+67
+00:02:52.711 --> 00:02:54.180
+para los desarrolladores de software.
+
+68
+00:02:54.180 --> 00:02:57.680
+Dijo: "Siempre puede haber algún niño
+
+69
+00:02:57.680 --> 00:03:00.090
+que me vea por primera vez.
+
+70
+00:03:00.090 --> 00:03:01.870
+A él le debo lo mejor".
+
+71
+00:03:01.870 --> 00:03:04.898
+Trato de aplicarla en todos mis proyectos de programación.
+
+72
+00:03:04.898 --> 00:03:07.309
+Es fácil acostumbrarse a la pereza,
+
+73
+00:03:07.309 --> 00:03:10.078
+sin embargo, luego recuerdo que alguien tal vez
+
+74
+00:03:10.078 --> 00:03:12.750
+esté buscando un proyecto o un tutorial
+
+75
+00:03:12.750 --> 00:03:16.190
+y podría ser la primera impresión que tenga de mí
+
+76
+00:03:16.190 --> 00:03:20.170
+como desarrollador y también de la programación en general.
+
+77
+00:03:20.170 --> 00:03:23.730
+Si tomo los atajos, aunque la aplicación funcione,
+
+78
+00:03:23.730 --> 00:03:27.010
+podría ser un mal reflejo de mi trabajo
+
+79
+00:03:27.010 --> 00:03:28.610
+y de los lenguajes que utilizo.
+
+80
+00:03:28.610 --> 00:03:30.950
+No significa que no puedan cometer errores.
+
+81
+00:03:30.950 --> 00:03:32.450
+Es justamente lo contrario.
+
+82
+00:03:32.450 --> 00:03:35.370
+Me esfuerzo constantemente para ser mejor desarrollador
+
+83
+00:03:35.370 --> 00:03:37.990
+y es por ese motivo que siempre intento trabajar
+
+84
+00:03:37.990 --> 00:03:40.500
+para construir características y proyectos
+
+85
+00:03:40.500 --> 00:03:44.370
+que no haya creado antes y eso lleva naturalmente
+
+86
+00:03:44.370 --> 00:03:46.620
+a cometer errores durante el proceso de aprendizaje.
+
+87
+00:03:46.620 --> 00:03:48.622
+Sin embargo, existe una clara distinción
+
+88
+00:03:48.622 --> 00:03:50.570
+entre los errores que se comenten
+
+89
+00:03:50.570 --> 00:03:53.189
+al intentar construir una característica ambiciosa,
+
+90
+00:03:53.189 --> 00:03:55.333
+en comparación con los errores del proyecto
+
+91
+00:03:55.333 --> 00:03:59.310
+que aparecen debido a la pereza y a una mala programación.
+
+92
+00:03:59.310 --> 00:04:01.310
+Si programar mal es inmoral,
+
+93
+00:04:01.310 --> 00:04:03.910
+¿cómo podemos combatirlo?
+
+94
+00:04:03.910 --> 00:04:06.157
+Por suerte, contamos con una buena serie de instrumentos
+
+95
+00:04:06.157 --> 00:04:08.290
+y flujos de trabajo que podemos implementar.
+
+96
+00:04:08.290 --> 00:04:09.740
+Aquí les presento algunos
+
+97
+00:04:09.740 --> 00:04:11.540 line:15% 
+que me resultaron los más efectivos.
+
+98
+00:04:11.540 --> 00:04:13.373 line:15% 
+El primero es el desarrollo guiado por pruebas o TDD
+
+99
+00:04:13.373 --> 00:04:14.995 line:15% 
+y por comportamiento o BDD.
+
+100
+00:04:14.995 --> 00:04:18.490 line:15% 
+Más allá de su opinión sobre estos procesos,
+
+101
+00:04:18.490 --> 00:04:21.870 line:15% 
+no se puede negar que si se implementan de manera adecuada,
+
+102
+00:04:21.870 --> 00:04:25.170 line:15% 
+pueden conducir a bases de programación bien construidas.
+
+103
+00:04:25.170 --> 00:04:28.620 line:15% 
+El TDD lleva desde luego a seguir las mejores prácticas
+
+104
+00:04:28.620 --> 00:04:32.501 line:15% 
+tales como el bajo acoplamiento, el uso de métodos pequeños
+
+105
+00:04:32.501 --> 00:04:36.006 line:15% 
+con su paso de refactorización del cual soy muy fanático
+
+106
+00:04:36.006 --> 00:04:38.679 line:15% 
+porque asegura que una aplicación
+
+107
+00:04:38.679 --> 00:04:40.380 line:15% 
+se construya del modo correcto.
+
+108
+00:04:40.380 --> 00:04:44.330 line:15% 
+Otra herramienta de ayuda es la integración continua.
+
+109
+00:04:44.330 --> 00:04:47.840 line:15% 
+Suponiendo que tienen un conjunto de pruebas de herramientas
+
+110
+00:04:47.840 --> 00:04:49.784 line:15% 
+de integración continua general y automatizado
+
+111
+00:04:49.784 --> 00:04:53.540 line:15% 
+como CodeShip o Travis, se asegurarán de que el código
+
+112
+00:04:53.540 --> 00:04:55.881 line:15% 
+no salte a producción
+
+113
+00:04:55.881 --> 00:04:58.520 line:15% 
+hasta haber pasado todas las pruebas.
+
+114
+00:04:58.520 --> 00:05:01.360 line:15% 
+Me ha pasado varias veces que CodeShip bloqueó
+
+115
+00:05:01.360 --> 00:05:03.940 line:15% 
+una mala implementación que hubiera dado de baja un sitio
+
+116
+00:05:03.940 --> 00:05:06.480 line:15% 
+y hubiera enviado un informe al equipo de desarrollo
+
+117
+00:05:06.480 --> 00:05:08.530 line:15% 
+sobre qué era lo que se debía reparar.
+
+118
+00:05:08.530 --> 00:05:10.250 line:15% 
+Lo siguiente es la programación en parejas.
+
+119
+00:05:10.250 --> 00:05:12.230 line:15% 
+Es una de las herramientas más poderosas
+
+120
+00:05:12.230 --> 00:05:13.900 line:15% 
+que pueden usar como desarrolladores.
+
+121
+00:05:13.900 --> 00:05:15.540 line:15% 
+Si no están familiarizados,
+
+122
+00:05:15.540 --> 00:05:17.416 line:15% 
+la programación en parejas es un proceso en el cual
+
+123
+00:05:17.416 --> 00:05:21.280 line:15% 
+ustedes y otro desarrollador trabajan por turnos
+
+124
+00:05:21.280 --> 00:05:23.984 line:15% 
+en un proyecto al mismo tiempo, preferentemente
+
+125
+00:05:23.984 --> 00:05:26.870 line:15% 
+en la misma sala y la misma computadora.
+
+126
+00:05:26.870 --> 00:05:30.290 line:15% 
+Cuando uno de ustedes programa, el otro mira
+
+127
+00:05:30.290 --> 00:05:33.110 line:15% 
+y da consejos o advertencias.
+
+128
+00:05:33.110 --> 00:05:35.170 line:15% 
+Siempre que construyo una característica compleja,
+
+129
+00:05:35.170 --> 00:05:37.030 line:15% 
+uso la programación en pareja,
+
+130
+00:05:37.030 --> 00:05:40.110 line:15% 
+ya que se trata de una manera muy focalizada y efectiva
+
+131
+00:05:40.110 --> 00:05:43.050 line:15% 
+para desarrollar y, además, seguir las mejores prácticas.
+
+132
+00:05:43.050 --> 00:05:45.320 line:15% 
+La última es la educación continua.
+
+133
+00:05:45.320 --> 00:05:47.420 line:15% 
+Sin importar el tiempo que lleven como desarrolladores,
+
+134
+00:05:47.420 --> 00:05:50.330 line:15% 
+la educación nunca tiene un punto límite.
+
+135
+00:05:50.330 --> 00:05:52.240 line:15% 
+Todos los días, intento aprender algo nuevo,
+
+136
+00:05:52.240 --> 00:05:55.430 line:15% 
+ya sea de los tutoriales, libros o publicaciones en blogs
+
+137
+00:05:55.430 --> 00:05:56.900 line:15% 
+de otros programadores.
+
+138
+00:05:56.900 --> 00:05:59.500
+Espero que esta publicación los haga pensar
+
+139
+00:05:59.500 --> 00:06:02.050
+y ayude en el camino de transformarse
+
+140
+00:06:02.050 --> 00:06:04.153
+en los mejores artesanos de la programación.
+

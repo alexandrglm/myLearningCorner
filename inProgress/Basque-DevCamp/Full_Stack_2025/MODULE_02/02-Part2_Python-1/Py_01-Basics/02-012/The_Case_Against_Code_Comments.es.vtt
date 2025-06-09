@@ -1,0 +1,634 @@
+WEBVTT
+
+1
+00:00:00.910 --> 00:00:03.930
+<v ->Una pregunta formulada por aspirantes y expertos</v>
+
+2
+00:00:03.930 --> 00:00:07.940
+desarrolladores es si debo comentar mi código.
+
+3
+00:00:07.940 --> 00:00:11.310
+Esta discusión generalmente genera un animado debate
+
+4
+00:00:11.310 --> 00:00:13.876
+entre los desarrolladores y, de hecho,
+
+5
+00:00:13.876 --> 00:00:17.213
+cuando publiqué esto, alguien lo publicó en
+
+6
+00:00:17.213 --> 00:00:20.934
+el sitio Hacker News y se hizo tan popular
+
+7
+00:00:20.934 --> 00:00:24.230
+que llegó a la página principal de Hacker News,
+
+8
+00:00:24.230 --> 00:00:26.460
+que es la primera vez que tengo uno de mis blogs
+
+9
+00:00:26.460 --> 00:00:28.050
+llegando a esa página principal.
+
+10
+00:00:28.050 --> 00:00:32.610
+Esa publicación tenía cientos de comentarios,
+
+11
+00:00:32.610 --> 00:00:34.949
+mensajes y cosas que me llegaban y
+
+12
+00:00:34.949 --> 00:00:37.710
+se colocaron en el sitio.
+
+13
+00:00:37.710 --> 00:00:39.660
+Algunos de ellos me apoyaron,
+
+14
+00:00:39.660 --> 00:00:42.410
+otros no tanto.
+
+15
+00:00:42.410 --> 00:00:45.770
+Entonces, ya sea que tu opinión esté de un lado
+
+16
+00:00:45.770 --> 00:00:48.580
+o del otro, generalmente va a ser una opinión bastante
+
+17
+00:00:48.580 --> 00:00:50.220
+fuerte al respecto.
+
+18
+00:00:50.220 --> 00:00:54.170
+Así que esto es lo que he visto a través de mi
+
+19
+00:00:54.170 --> 00:00:56.380
+propia experiencia de desarrollo.
+
+20
+00:00:56.380 --> 00:00:59.930
+No voy a decir que esta es la única manera de hacerlo,
+
+21
+00:00:59.930 --> 00:01:01.950
+pero voy a decir que esta es una forma
+
+22
+00:01:01.950 --> 00:01:05.572
+en la que personalmente he encontrado que es el
+
+23
+00:01:05.572 --> 00:01:08.630
+enfoque más efectivo cuando se trata de
+
+24
+00:01:08.630 --> 00:01:10.970
+comentar el código, cuando el momento adecuado para hacerlo
+
+25
+00:01:10.970 --> 00:01:13.510
+y cuándo no debería hacerse.
+
+26
+00:01:13.510 --> 00:01:14.940
+No creo, personalmente,
+
+27
+00:01:14.940 --> 00:01:18.500
+que la pregunta tenga una respuesta correcta o incorrecta.
+
+28
+00:01:18.500 --> 00:01:21.420
+En cambio, creo que la respuesta es que
+
+29
+00:01:21.420 --> 00:01:24.110
+simplemente depende de la situación.
+
+30
+00:01:24.110 --> 00:01:27.090
+En esta guía, quiero echar un vistazo práctico
+
+31
+00:01:27.090 --> 00:01:29.850
+a cuándo los comentarios de código pueden ser beneficiosos,
+
+32
+00:01:29.850 --> 00:01:33.310
+junto con cuándo los comentarios pueden causar problemas.
+
+33
+00:01:33.310 --> 00:01:35.800
+Recuerdo cuando aprendí a codificar.
+
+34
+00:01:35.800 --> 00:01:39.560
+Un tema común que usé fue que pensé
+
+35
+00:01:39.560 --> 00:01:42.260
+que todo mi código debería ser comentado.
+
+36
+00:01:42.260 --> 00:01:44.050
+Esto pareció una buena idea al principio,
+
+37
+00:01:44.050 --> 00:01:46.408
+y en un mundo perfecto, los comentarios
+
+38
+00:01:46.408 --> 00:01:48.500
+en código serían beneficiosos.
+
+39
+00:01:48.500 --> 00:01:52.640
+Sin embargo, no vivimos en un mundo perfecto en absoluto.
+
+40
+00:01:52.640 --> 00:01:54.700
+Saltemos a una máquina del tiempo y veamos
+
+41
+00:01:54.700 --> 00:01:59.370
+cómo podría haber comentado un método hace años.
+
+42
+00:01:59.370 --> 00:02:01.260
+Si ejecuta este código verá
+
+43
+00:02:01.260 --> 00:02:03.440
+que todo funciona correctamente.
+
+44
+00:02:03.440 --> 00:02:06.640
+Dado que la única regla constante del desarrollo de software
+
+45
+00:02:06.640 --> 00:02:08.540
+es que los requisitos cambian,
+
+46
+00:02:08.540 --> 00:02:11.486
+imaginemos que nuestro programa debe actualizarse
+
+47
+00:02:11.486 --> 00:02:15.960
+para imprimir también la posición del jugador.
+
+48
+00:02:15.960 --> 00:02:19.490
+En este código, he actualizado el método para que tome
+
+49
+00:02:19.490 --> 00:02:23.230
+un hash de valor clave e imprima el reproductor,
+
+50
+00:02:23.230 --> 00:02:26.220
+la alineación, el número y la posición.
+
+51
+00:02:26.220 --> 00:02:28.553
+Esto funciona correctamente cuando paso en
+
+52
+00:02:28.553 --> 00:02:30.100
+un argumento hash.
+
+53
+00:02:30.100 --> 00:02:31.710
+¿Pero notaste algo?
+
+54
+00:02:31.710 --> 00:02:35.360
+No actualicé mis comentarios y las instrucciones
+
+55
+00:02:35.360 --> 00:02:38.030
+siguen solicitando una matriz.
+
+56
+00:02:38.030 --> 00:02:40.810
+Si necesito trabajar con este método en el futuro,
+
+57
+00:02:40.810 --> 00:02:44.280
+y hago referencia a mis comentarios y paso en una matriz,
+
+58
+00:02:44.280 --> 00:02:47.350
+el programa ya no funciona correctamente.
+
+59
+00:02:47.350 --> 00:02:49.425
+Entonces, ¿cuál es el problema principal
+
+60
+00:02:49.425 --> 00:02:50.640
+con los comentarios de código?
+
+61
+00:02:50.640 --> 00:02:53.890
+El problema se reduce al hecho de que son frágiles
+
+62
+00:02:53.890 --> 00:02:55.660
+y no se puede confiar.
+
+63
+00:02:55.660 --> 00:02:58.530
+Los comentarios, por su naturaleza, son estáticos.
+
+64
+00:02:58.530 --> 00:03:01.550
+Esto significa que puede cambiar completamente el
+
+65
+00:03:01.550 --> 00:03:04.300
+comportamiento de un método, y si no actualiza
+
+66
+00:03:04.300 --> 00:03:07.500
+los comentarios, se volverán inútiles.
+
+67
+00:03:07.500 --> 00:03:09.590
+Cuando tomo una aplicación legacy
+
+68
+00:03:09.590 --> 00:03:11.290
+y miro los comentarios,
+
+69
+00:03:11.290 --> 00:03:14.710
+es raro que todavía sean aplicables
+
+70
+00:03:14.710 --> 00:03:16.570
+al sistema actual.
+
+71
+00:03:16.570 --> 00:03:18.344
+Y después de que este post llegara a Hacker News,
+
+72
+00:03:18.344 --> 00:03:22.272
+uno de los comentarios constantes que seguí viendo
+
+73
+00:03:22.272 --> 00:03:26.270
+de la gente fue que los comentarios deben estar allí
+
+74
+00:03:26.270 --> 00:03:29.130
+y, si no, el desarrollador no está
+
+75
+00:03:29.130 --> 00:03:30.360
+haciendo su trabajo.
+
+76
+00:03:30.360 --> 00:03:32.630
+Podría estar muy bien.
+
+77
+00:03:32.630 --> 00:03:36.010
+Sin embargo, a través de los años comencé lentamente
+
+78
+00:03:36.010 --> 00:03:38.027
+a dejar de comentar sobre mi código basado
+
+79
+00:03:38.027 --> 00:03:39.200
+en el comportamiento
+
+80
+00:03:39.200 --> 00:03:41.660
+como clases o métodos,
+
+81
+00:03:41.660 --> 00:03:45.120
+y en su lugar me centré en mejorar los nombres
+
+82
+00:03:45.120 --> 00:03:47.950
+que he dado a ciertas partes de mi programa.
+
+83
+00:03:47.950 --> 00:03:50.483
+Descubrí que si nombro un componente
+
+84
+00:03:50.483 --> 00:03:52.090
+de código correctamente,
+
+85
+00:03:52.090 --> 00:03:54.490
+los comentarios ya no son necesarios.
+
+86
+00:03:54.490 --> 00:03:58.010
+DHH, el creado de la estructura Ruby on Rails,
+
+87
+00:03:58.010 --> 00:04:01.400
+dijo esto sobre la importancia de nombrar.
+
+88
+00:04:01.400 --> 00:04:03.710
+Una de los placeres reales de la programación
+
+89
+00:04:03.710 --> 00:04:07.600
+es elegir grandes nombres de variables, métodos y clases.
+
+90
+00:04:07.600 --> 00:04:10.125
+Pero un placer aún mayor es cuando
+
+91
+00:04:10.125 --> 00:04:12.060
+puedes nombrar pares,
+
+92
+00:04:12.060 --> 00:04:14.185
+o incluso narraciones completas,
+
+93
+00:04:14.185 --> 00:04:16.160
+que se ajusten a la perfección.
+
+94
+00:04:16.160 --> 00:04:18.430
+En las notas del programa, publiqué una guía
+
+95
+00:04:18.430 --> 00:04:21.770
+que él escribió donde da una excelente historia
+
+96
+00:04:21.770 --> 00:04:24.762
+en un momento específico en el que fue intencional
+
+97
+00:04:24.762 --> 00:04:27.840
+acerca de nombrar un método.
+
+98
+00:04:27.840 --> 00:04:30.350
+Con toda la crítica que he hecho
+
+99
+00:04:30.350 --> 00:04:31.940
+acerca ce los comentarios de código,
+
+100
+00:04:31.940 --> 00:04:34.900
+puede que se pregunte: ¿habrá algún momento
+
+101
+00:04:34.900 --> 00:04:37.170
+en el que comentar sea beneficioso?
+
+102
+00:04:37.170 --> 00:04:40.060
+Y la respuesta es sí.
+
+103
+00:04:40.060 --> 00:04:43.350
+No me gusta agregar comentarios al código para
+
+104
+00:04:43.350 --> 00:04:47.050
+explicar la funcionalidad o el comportamiento
+
+105
+00:04:47.050 --> 00:04:51.010
+porque descubrí que eso cambia regularmente.
+
+106
+00:04:51.010 --> 00:04:54.560
+Sin embargo, he encontrado algunas maneras de incorporar
+
+107
+00:04:54.560 --> 00:04:57.280
+comentarios que han demostrado ser útiles.
+
+108
+00:04:57.280 --> 00:05:00.210
+En primer lugar, utilizaré los comentarios de código
+
+109
+00:05:00.210 --> 00:05:03.040
+para fines de organización de código.
+
+110
+00:05:03.040 --> 00:05:05.080
+Descubrí que los comentarios pueden ser útiles
+
+111
+00:05:05.080 --> 00:05:08.560
+para archivos de código grandes, como los estilos CSS.
+
+112
+00:05:08.560 --> 00:05:10.640
+Agregaré comentarios como
+
+113
+00:05:10.640 --> 00:05:13.160
+estos son donde están mis encabezados de navegación
+
+114
+00:05:13.160 --> 00:05:15.280
+o algo así.
+
+115
+00:05:15.280 --> 00:05:17.320
+Este tipo de comentarios me permite saber rápidamente
+
+116
+00:05:17.320 --> 00:05:19.910
+dónde se puede encontrar un conjunto específico de estilos.
+
+117
+00:05:19.910 --> 00:05:23.492
+Debido a que este tipo de comentarios no dan instrucciones
+
+118
+00:05:23.492 --> 00:05:27.130
+ni describen el comportamiento, son mucho menos probables
+
+119
+00:05:27.130 --> 00:05:28.420
+que se vuelvan obsoletos.
+
+120
+00:05:28.420 --> 00:05:31.219
+Luego, descubrí que los comentarios automatizados
+
+121
+00:05:31.219 --> 00:05:32.311
+pueden ser útiles
+
+122
+00:05:32.311 --> 00:05:34.450
+para propósitos referenciales.
+
+123
+00:05:34.450 --> 00:05:37.980
+Por ejemplo, el Annotate Ruby Gem creará y
+
+124
+00:05:37.980 --> 00:05:39.796
+actualizará automáticamente los comentarios y
+
+125
+00:05:39.796 --> 00:05:41.010
+los archivos de código
+
+126
+00:05:41.010 --> 00:05:44.220
+que proporcionan información de la base de datos y
+
+127
+00:05:44.220 --> 00:05:46.040
+ese tipo de material relacionado.
+
+128
+00:05:46.040 --> 00:05:47.590
+Cuando trabajo en una aplicación de Rails,
+
+129
+00:05:47.590 --> 00:05:49.807
+hago referencia constantemente al archivo
+
+130
+00:05:49.807 --> 00:05:51.182
+de esquema de la base de datos
+
+131
+00:05:51.182 --> 00:05:53.273
+para asegurarme de que estoy seleccionando
+
+132
+00:05:53.273 --> 00:05:54.460
+los nombres de columna correctos.
+
+133
+00:05:54.460 --> 00:05:58.300
+La gema de anotación procesa automáticamente
+
+134
+00:05:58.300 --> 00:06:01.040
+todas las diferentes migraciones que tengo
+
+135
+00:06:01.040 --> 00:06:03.890
+y el archivo de esquema y eso agrega
+
+136
+00:06:03.890 --> 00:06:07.170
+comentarios para ellas y las actualiza en los
+
+137
+00:06:07.170 --> 00:06:09.430
+archivos de modelo y en algunos otros archivos
+
+138
+00:06:09.430 --> 00:06:11.460
+para que yo pueda consultarlos y no tenga que
+
+139
+00:06:11.460 --> 00:06:13.150
+volver a cambiar entre los archivos.
+
+140
+00:06:13.150 --> 00:06:15.560
+Cuando se trata de trabajar con comentarios de código,
+
+141
+00:06:15.560 --> 00:06:18.325
+las herramientas automatizadas como esta ayudarán
+
+142
+00:06:18.325 --> 00:06:20.697
+a actualizar los comentarios para que sean beneficiosos
+
+143
+00:06:20.697 --> 00:06:24.040
+no solo cuando se escribió el comentario,
+
+144
+00:06:24.040 --> 00:06:27.170
+sino también a medida que cambia el programa.
+
+145
+00:06:27.170 --> 00:06:28.790
+En resumen, los comentarios de código
+
+146
+00:06:28.790 --> 00:06:29.740
+pueden llevar definitivamente
+
+147
+00:06:29.740 --> 00:06:32.810
+a una serie de problemas negativos con los programas.
+
+148
+00:06:32.810 --> 00:06:35.627
+Los comentarios son frágiles, pueden ser engañosos
+
+149
+00:06:35.627 --> 00:06:38.777
+y realiza un mal trabajo al explicar el comportamiento
+
+150
+00:06:38.777 --> 00:06:40.068
+de la aplicación.
+
+151
+00:06:40.068 --> 00:06:43.370
+Una mejor opción es mejorar la denominación de los métodos
+
+152
+00:06:43.370 --> 00:06:45.930
+para que su código se explique a sí mismo.
+
+153
+00:06:45.930 --> 00:06:48.160
+Después de publicar la guía originalmente,
+
+154
+00:06:48.160 --> 00:06:50.620
+un desarrollador llamado Chris Gregory
+
+155
+00:06:50.620 --> 00:06:54.010
+señaló una excelente cita de Robert,
+
+156
+00:06:54.010 --> 00:06:56.410
+también llamada "Tío Bob" Martin,
+
+157
+00:06:56.410 --> 00:07:00.640
+quien dijo que cada comentario que escribas es un error
+
+158
+00:07:00.640 --> 00:07:03.003
+en expresarte bien en el código.
+

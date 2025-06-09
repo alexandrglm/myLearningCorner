@@ -1,0 +1,358 @@
+WEBVTT
+
+1
+00:00:01.080 --> 00:00:02.570
+<v Instructor>Esta será una guía rápida</v>
+
+2
+00:00:02.570 --> 00:00:04.770
+en la que hablaremos acerca de la propiedad del pedido
+
+3
+00:00:04.770 --> 00:00:07.610
+y cómo podemos usarlo en flexbox.
+
+4
+00:00:07.610 --> 00:00:10.560
+Si alguna vez se encuentra en una situación
+
+5
+00:00:10.560 --> 00:00:14.040
+en la que necesita cambiar el orden de los elementos
+
+6
+00:00:14.040 --> 00:00:16.273
+mediante programación por lo que necesita la capacidad
+
+7
+00:00:16.273 --> 00:00:20.275
+en su código CSS para dictar en qué orden van a aparecer
+
+8
+00:00:20.275 --> 00:00:24.453
+los elementos dentro de un contenedor de flexbox,
+
+9
+00:00:24.453 --> 00:00:26.680
+podemos controlarlo mediante el uso
+
+10
+00:00:26.680 --> 00:00:28.880
+de la propiedad de orden.
+
+11
+00:00:28.880 --> 00:00:31.900
+Así que aquí, recuperé nuestros bloques que usamos
+
+12
+00:00:31.900 --> 00:00:34.500
+cuando ibamos por las propiedades de crecimiento
+
+13
+00:00:34.500 --> 00:00:37.070
+y contracción del espacio flexible.
+
+14
+00:00:37.070 --> 00:00:39.480
+Y si vengo aquí, pueden ver
+
+15
+00:00:39.480 --> 00:00:41.540
+que tenemos un div de contenedor de clase.
+
+16
+00:00:41.540 --> 00:00:44.550
+Tenemos otro div de bloques de clase.
+
+17
+00:00:44.550 --> 00:00:48.590
+Y luego tenemos tres elementos hijos dentro de eso.
+
+18
+00:00:48.590 --> 00:00:51.540
+Entonces, guardé la mayor parte del código aquí.
+
+19
+00:00:51.540 --> 00:00:53.710
+De hecho, mantuve todo el código igual.
+
+20
+00:00:53.710 --> 00:00:57.700
+Así que tenemos que el contenedor es un contenedor flexbox;
+
+21
+00:00:57.700 --> 00:01:00.100
+Podemos ver que cuando vemos aquí en la línea 18
+
+22
+00:01:00.100 --> 00:01:01.710
+donde dice desplegar flex.
+
+23
+00:01:01.710 --> 00:01:05.977
+Y luego los bloques también son un contenedor
+
+24
+00:01:05.977 --> 00:01:09.693
+de flexbox anidado, lo que significa que cada uno de estos
+
+25
+00:01:09.693 --> 00:01:12.470
+elementos de bloque es un elemento de flexbox.
+
+26
+00:01:12.470 --> 00:01:14.680
+Entonces, para hacer lo que vamos a hacer,
+
+27
+00:01:14.680 --> 00:01:17.812
+donde vamos a cambiar el orden mediante programación usando
+
+28
+00:01:17.812 --> 00:01:21.548
+flexbox en CSS, debemos asegurarnos de que estos elementos
+
+29
+00:01:21.548 --> 00:01:25.470
+sean un elemento de flexbox.
+
+30
+00:01:25.470 --> 00:01:28.810
+Entonces, esto es específico de CSS, pero, por lo general,
+
+31
+00:01:28.810 --> 00:01:31.130
+cuando implementes esto,
+
+32
+00:01:31.130 --> 00:01:33.950
+será siempre que uses flexbox.
+
+33
+00:01:33.950 --> 00:01:35.960
+Así que, si vengo aquí.
+
+34
+00:01:35.960 --> 00:01:39.010
+Como puede ver en el lado derecho, tengo nuestros bloques
+
+35
+00:01:39.010 --> 00:01:42.980
+en su orden predeterminado estándar de uno, dos, tres.
+
+36
+00:01:42.980 --> 00:01:45.200
+Y eso es porque los enumeramos
+
+37
+00:01:45.200 --> 00:01:47.640
+como uno, dos y tres aquí.
+
+38
+00:01:47.640 --> 00:01:51.490
+Ahora, si quiero cambiar esto, puedo venir aquí
+
+39
+00:01:51.490 --> 00:01:55.500
+y decir que quiero que el bloque uno se mueva
+
+40
+00:01:55.500 --> 00:01:56.820
+hasta el final.
+
+41
+00:01:56.820 --> 00:01:59.900
+Y así puedo decir orden tres.
+
+42
+00:01:59.900 --> 00:02:04.720
+Y si copio esto y digo que quiero mover el bloque dos
+
+43
+00:02:04.720 --> 00:02:07.610
+al principio, puedo decir orden uno.
+
+44
+00:02:07.610 --> 00:02:12.430
+Y luego aquí, puedo cambiar esto para ordenar dos.
+
+45
+00:02:12.430 --> 00:02:16.150
+Ahora, si guardo esto, puede ver en el lado derecho,
+
+46
+00:02:16.150 --> 00:02:19.560
+porque cambiamos esa propiedad de orden, el bloque
+
+47
+00:02:19.560 --> 00:02:22.320
+que estaba en dos ahora está en uno.
+
+48
+00:02:22.320 --> 00:02:26.370
+Y es porque le dimos un valor de pedido de uno.
+
+49
+00:02:26.370 --> 00:02:29.840
+Y lo mismo, el que tenía tres se ha cambiado
+
+50
+00:02:29.840 --> 00:02:31.720
+a dos, porque le dimos un dos.
+
+51
+00:02:31.720 --> 00:02:35.950
+Y luego uno, aquí mismo, es el último
+
+52
+00:02:35.950 --> 00:02:37.090
+porque son tres.
+
+53
+00:02:37.090 --> 00:02:38.910
+Ahora, si borro esto.
+
+54
+00:02:38.910 --> 00:02:43.910
+Entonces, si digo que no voy a dar un valor codificado
+
+55
+00:02:44.070 --> 00:02:47.290
+duro a tres, entonces puedes ver...
+
+56
+00:02:47.290 --> 00:02:48.270
+O a uno.
+
+57
+00:02:48.270 --> 00:02:51.120
+Puedes ver que, de forma predeterminada, si no pasamos
+
+58
+00:02:51.120 --> 00:02:55.500
+una propiedad de pedido, entonces ninguno de estos
+
+59
+00:02:55.500 --> 00:02:58.670
+otros elementos no vamos a tener
+
+60
+00:02:58.670 --> 00:03:00.630
+la misma definición.
+
+61
+00:03:00.630 --> 00:03:01.810
+Pero, ahora, mira esto.
+
+62
+00:03:01.810 --> 00:03:03.030
+Esto es un poco interesante.
+
+63
+00:03:03.030 --> 00:03:06.863
+Si cambio el bloque tres y dos
+
+64
+00:03:08.180 --> 00:03:11.120
+y los cambio, puedes ver que ese cambio
+
+65
+00:03:11.120 --> 00:03:12.330
+aún se refleja.
+
+66
+00:03:12.330 --> 00:03:15.210
+Entonces, cuando dije que el bloque dos tendrá
+
+67
+00:03:15.210 --> 00:03:17.830
+un valor de orden de dos; y luego el bloque tres tendrá
+
+68
+00:03:17.830 --> 00:03:19.430
+un valor de orden de uno.
+
+69
+00:03:19.430 --> 00:03:21.820
+Se puede ver que eso cambió el orden.
+
+70
+00:03:21.820 --> 00:03:25.800
+Pero como no pasamos nada a este bloque de una clase,
+
+71
+00:03:25.800 --> 00:03:27.510
+simplemente se ignora.
+
+72
+00:03:27.510 --> 00:03:30.470
+Y esa propiedad de orden luego se moverá
+
+73
+00:03:30.470 --> 00:03:34.000
+hacia abajo de la cadena a esos próximos artículos.
+
+74
+00:03:34.000 --> 00:03:36.570
+Ahora, le daré una pequeña advertencia
+
+75
+00:03:36.570 --> 00:03:41.050
+de que uso flexbox casi todos los días en varios proyectos
+
+76
+00:03:41.050 --> 00:03:45.700
+en los que trabajo y muy rara vez uso la propiedad order.
+
+77
+00:03:45.700 --> 00:03:48.910
+Así que esto no es algo que probablemente harás
+
+78
+00:03:48.910 --> 00:03:50.890
+día tras día.
+
+79
+00:03:50.890 --> 00:03:54.140
+Sin embargo, existe una buena posibilidad de que se
+
+80
+00:03:54.140 --> 00:03:57.008
+encuentre en situaciones en las que encuentre
+
+81
+00:03:57.008 --> 00:03:58.883
+esta propiedad del pedido en el código de otra persona
+
+82
+00:03:58.883 --> 00:04:01.120
+o en alguna documentación.
+
+83
+00:04:01.120 --> 00:04:04.060
+Así que es útil tener una idea de cómo funciona.
+
+84
+00:04:04.060 --> 00:04:07.350
+Y luego también para comprender lo que sucede
+
+85
+00:04:07.350 --> 00:04:10.760
+con los casos de borde impar, como vemos aquí.
+
+86
+00:04:10.760 --> 00:04:13.850
+Cuando un par de los artículos reciben esta propiedad del
+
+87
+00:04:13.850 --> 00:04:17.447
+pedido pero luego uno de los artículos o algunos de los
+
+88
+00:04:17.447 --> 00:04:20.468
+artículos no lo hacen. Entonces, es importante entender
+
+89
+00:04:20.468 --> 00:04:22.113
+qué sucede cuando ese es el caso.
+

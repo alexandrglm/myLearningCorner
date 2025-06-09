@@ -1,0 +1,2418 @@
+WEBVTT
+
+1
+00:00:00.880 --> 00:00:02.630
+<v Profesor>Esta será una lección muy divertida.</v>
+
+2
+00:00:02.630 --> 00:00:05.950
+Este va a ser uno de nuestros primeros no-triviales
+
+3
+00:00:05.950 --> 00:00:08.450
+front-end que implementemos.
+
+4
+00:00:08.450 --> 00:00:11.093
+Y esto está en realidad tomado de algo
+
+5
+00:00:11.093 --> 00:00:14.290
+que aprendí cuando estaba originalmente
+
+6
+00:00:14.290 --> 00:00:15.790
+enseñándome a mi mismo Flexbox.
+
+7
+00:00:15.790 --> 00:00:19.540
+Así que aquí, me pidieron que construyera
+
+8
+00:00:19.540 --> 00:00:22.230
+una característica de tarjeta en DevCamp.
+
+9
+00:00:22.230 --> 00:00:24.960
+Así que las cartas tenían que funcionar así
+
+10
+00:00:24.960 --> 00:00:27.078
+donde había una imagen que estaba tomando
+
+11
+00:00:27.078 --> 00:00:30.480
+toda la parte izquierda de la tarjeta,
+
+12
+00:00:30.480 --> 00:00:31.517
+en todas las tarjetas.
+
+13
+00:00:31.517 --> 00:00:33.400
+y luego tenía algo de contenido
+
+14
+00:00:33.400 --> 00:00:35.220
+que a veces tendría un título.
+
+15
+00:00:35.220 --> 00:00:37.320
+Otras veces también tendría un título
+
+16
+00:00:37.320 --> 00:00:39.100
+junto con el subtítulo.
+
+17
+00:00:39.100 --> 00:00:40.720
+Y luego en el lado derecho
+
+18
+00:00:40.720 --> 00:00:42.840
+tenía que haber botones de acción
+
+19
+00:00:42.840 --> 00:00:45.750
+y tenían que funcionar un poco como un botón móvil.
+
+20
+00:00:45.750 --> 00:00:47.510
+Así que como podéis ver aquí,
+
+21
+00:00:47.510 --> 00:00:49.880
+tenemos estos elementos de acción.
+
+22
+00:00:49.880 --> 00:00:52.180
+Pero no son solo botones por sí mismos
+
+23
+00:00:52.180 --> 00:00:55.260
+Pero en realidad están yendo y estirando
+
+24
+00:00:55.260 --> 00:00:58.330
+desde la parte superior de la tarjeta hasta la inferior.
+
+25
+00:00:58.330 --> 00:01:00.850
+Y luego, además de todo esto,
+
+26
+00:01:00.850 --> 00:01:04.280
+tenemos que hacer que las tarjetas respondan
+
+27
+00:01:04.280 --> 00:01:07.630
+y lo suficientemente flexibles para una página como esta
+
+28
+00:01:07.630 --> 00:01:09.320
+podríamos tener una tarjeta destacada
+
+29
+00:01:09.320 --> 00:01:10.810
+y luego a la derecha de ella,
+
+30
+00:01:10.810 --> 00:01:13.860
+podríamos tener una especie de tarjeta asociada.
+
+31
+00:01:13.860 --> 00:01:18.000
+Y así vamos a desarrollar todo esto en esta guía.
+
+32
+00:01:18.000 --> 00:01:20.390
+También váis a ver cómo podemos tener
+
+33
+00:01:20.390 --> 00:01:22.920
+algunos iconos de fontawesome justo ahí.
+
+34
+00:01:22.920 --> 00:01:24.490
+Así que he integrado esos
+
+35
+00:01:25.445 --> 00:01:26.670
+junto con otras imágenes
+
+36
+00:01:26.670 --> 00:01:28.410
+y tipografías personalizadas.
+
+37
+00:01:28.410 --> 00:01:30.000
+Así que vamos a montar
+
+38
+00:01:30.000 --> 00:01:32.390
+un buen número de cosas que hemos aprendido,
+
+39
+00:01:32.390 --> 00:01:34.610
+no solo en este curso de Flexbox,
+
+40
+00:01:34.610 --> 00:01:38.600
+pero también en CSS y HTML en general.
+
+41
+00:01:38.600 --> 00:01:40.980
+Así que lo que tenemos ahora,
+
+42
+00:01:40.980 --> 00:01:43.320
+todavía no se ve muy bien.
+
+43
+00:01:43.320 --> 00:01:46.340
+Así que he añadido todos los elementos de base.
+
+44
+00:01:46.340 --> 00:01:50.520
+Así que tenemos enlaces a la imagen, al título, subtítulo,
+
+45
+00:01:50.520 --> 00:01:51.480
+todo el contenido.
+
+46
+00:01:51.480 --> 00:01:54.820
+Puedes ver que tenemos nuestros iconos pequeños aquí,
+
+47
+00:01:54.820 --> 00:01:56.300
+Pero todo es bastante feo.
+
+48
+00:01:56.300 --> 00:01:58.200
+Lo único que realmente está ahí
+
+49
+00:01:58.200 --> 00:02:00.860
+es la tipografía, y eso es porque agregué la tipografía
+
+50
+00:02:00.860 --> 00:02:03.140
+y se aplicó a todo el cuerpo.
+
+51
+00:02:03.140 --> 00:02:05.140
+Y como estamos pasando por esto,
+
+52
+00:02:05.140 --> 00:02:08.930
+también voy a ver esto en modo de pantalla completa.
+
+53
+00:02:08.930 --> 00:02:11.110
+Así que vamos a cambiar de un lado a otro
+
+54
+00:02:11.110 --> 00:02:14.490
+entre el navegador y luego el código.
+
+55
+00:02:14.490 --> 00:02:17.950
+Así que aquí, tendréis acceso a este código de inicio
+
+56
+00:02:17.950 --> 00:02:18.860
+en las notas a mostrar.
+
+57
+00:02:18.860 --> 00:02:21.290
+Y así, como se puede ver en la parte superior,
+
+58
+00:02:21.290 --> 00:02:24.950
+traje la tipografía de las API de Google
+
+59
+00:02:24.950 --> 00:02:29.870
+y luego traje el enlace de fontawesome.cdn.
+
+60
+00:02:29.870 --> 00:02:33.280
+Así es como podemos tener esos íconos.
+
+61
+00:02:33.280 --> 00:02:37.240
+Y si estás interesado en explorar más cosas,
+
+62
+00:02:37.240 --> 00:02:39.370
+podéis simplemente ir a fontawesome.com
+
+63
+00:02:39.370 --> 00:02:41.640
+y puedes obtener estas URL.
+
+64
+00:02:41.640 --> 00:02:44.160
+Podéis ver la biblioteca completa de iconos.
+
+65
+00:02:44.160 --> 00:02:47.450
+Y es una herramienta muy útil si quieres iconos gratis
+
+66
+00:02:47.450 --> 00:02:49.120
+para su aplicación.
+
+67
+00:02:49.120 --> 00:02:50.970
+Así que aquí, como puedes ver,
+
+68
+00:02:50.970 --> 00:02:53.060
+vamos a estar escribiendo un poco de código.
+
+69
+00:02:53.060 --> 00:02:56.630
+He añadido todos los estilos,
+
+70
+00:02:56.630 --> 00:02:58.810
+al menos los selectores de estilo
+
+71
+00:02:58.810 --> 00:03:01.710
+dentro de nuestros estilos integrados aquí
+
+72
+00:03:01.710 --> 00:03:03.240
+junto con el HTML.
+
+73
+00:03:03.240 --> 00:03:04.910
+Así que no vamos a hacer ningún cambio
+
+74
+00:03:04.910 --> 00:03:06.840
+al HTML, en absoluto.
+
+75
+00:03:06.840 --> 00:03:08.890
+Pero echémosle un vistazo,
+
+76
+00:03:08.890 --> 00:03:11.000
+solo para que tengamos una idea de lo que hay aquí.
+
+77
+00:03:11.000 --> 00:03:12.560
+Tenemos un contenedor,
+
+78
+00:03:12.560 --> 00:03:14.240
+y esto va a terminar
+
+79
+00:03:14.240 --> 00:03:15.830
+todo dentro de eso.
+
+80
+00:03:15.830 --> 00:03:17.500
+Así que tenemos este contenedor
+
+81
+00:03:17.500 --> 00:03:19.840
+y luego tenemos una clase de elemento.
+
+82
+00:03:19.840 --> 00:03:23.490
+Y el otro tiene una clase de elemento también.
+
+83
+00:03:23.490 --> 00:03:25.610
+Ahora la diferencia es que la primera
+
+84
+00:03:25.610 --> 00:03:27.110
+es un elemento destacado
+
+85
+00:03:27.110 --> 00:03:30.313
+y el segundo es un elemento asociado.
+
+86
+00:03:31.530 --> 00:03:34.470
+Y luego, ahora esto es lo que también es interesante.
+
+87
+00:03:34.470 --> 00:03:37.380
+Así que tenemos esta envoltura de contenedor.
+
+88
+00:03:37.380 --> 00:03:40.730
+Luego tenemos el elemento, que es otro envoltura.
+
+89
+00:03:40.730 --> 00:03:43.840
+Entonces tenemos contenido dentro de eso.
+
+90
+00:03:43.840 --> 00:03:46.120
+Y ahí es donde tenemos la imagen,
+
+91
+00:03:46.120 --> 00:03:49.640
+el título, el subtítulo, todos esos elementos
+
+92
+00:03:49.640 --> 00:03:51.730
+y luego tenemos nuestros grupos de botones
+
+93
+00:03:51.730 --> 00:03:54.720
+que van a estar en el lado derecho.
+
+94
+00:03:54.720 --> 00:03:56.960
+Y solo para darte un poco una imagen,
+
+95
+00:03:56.960 --> 00:03:59.770
+podemos echar un vistazo al elemento terminado.
+
+96
+00:03:59.770 --> 00:04:03.500
+Y así si pincho sobre inspeccionar aquí
+
+97
+00:04:03.500 --> 00:04:07.100
+y saco esto, si pincho en el cuerpo
+
+98
+00:04:07.100 --> 00:04:10.530
+y luego bajo al contenedor,
+
+99
+00:04:10.530 --> 00:04:13.840
+se puede ver que el contenedor envuelve todos los elementos.
+
+100
+00:04:13.840 --> 00:04:16.640
+Y luego si pincho sobre ese elemento destacado.
+
+101
+00:04:16.640 --> 00:04:20.650
+Se puede ver que envuelve uno en el lado izquierdo.
+
+102
+00:04:20.650 --> 00:04:22.880
+Si abro un poco más,
+
+103
+00:04:22.880 --> 00:04:25.430
+nuestro contenido va a ir de
+
+104
+00:04:25.430 --> 00:04:27.320
+aquí hasta la izquierda.
+
+105
+00:04:27.320 --> 00:04:29.630
+Y luego vendrá nuestro grupo de botones
+
+106
+00:04:29.630 --> 00:04:31.050
+hasta aquí,
+
+107
+00:04:31.050 --> 00:04:33.640
+aunque solo necesite estos elementos.
+
+108
+00:04:33.640 --> 00:04:36.530
+Y lo mismo en este lado.
+
+109
+00:04:36.530 --> 00:04:39.560
+La única diferencia es que vamos a aprovechar
+
+110
+00:04:39.560 --> 00:04:42.356
+La propiedad flex para gestionar la cantidad de espacio
+
+111
+00:04:42.356 --> 00:04:46.730
+que ocupa este objeto en comparación con este otro.
+
+112
+00:04:46.730 --> 00:04:48.960
+Así que vamos a cerrar aquí
+
+113
+00:04:48.960 --> 00:04:53.150
+y volver a la aplicación en vivo y empezar.
+
+114
+00:04:53.150 --> 00:04:58.150
+Entonces, primero, necesitamos crear el elemento principal.
+
+115
+00:04:59.410 --> 00:05:01.690
+Así que aquí tenemos nuestro contenedor.
+
+116
+00:05:01.690 --> 00:05:06.620
+Y dentro de aquí, vamos a agregar una definición de estilo
+
+117
+00:05:06.620 --> 00:05:08.270
+de bloque de visualización.
+
+118
+00:05:08.270 --> 00:05:12.060
+Así que voy a, lo siento pantalla flex.
+
+119
+00:05:12.060 --> 00:05:15.000
+Así que pantalla flex, pulso guardar,
+
+120
+00:05:15.000 --> 00:05:17.160
+Y veamos que pasa.
+
+121
+00:05:17.160 --> 00:05:21.480
+Así que solo con esa pantalla, Flex Call,
+
+122
+00:05:21.480 --> 00:05:25.170
+ya hemos movido los elementos a su sitio.
+
+123
+00:05:25.170 --> 00:05:28.310
+Y recuerda que por defecto
+
+124
+00:05:28.310 --> 00:05:31.840
+podemos tener acceso a la fila de dirección flex.
+
+125
+00:05:31.840 --> 00:05:34.160
+Y por eso están uno al lado del otro,
+
+126
+00:05:34.160 --> 00:05:38.700
+porque cada vez que dices pantalla flex en este elemento
+
+127
+00:05:38.700 --> 00:05:41.750
+cualquiera de los elementos secundarios dentro de ella
+
+128
+00:05:41.750 --> 00:05:43.100
+van a ser recogidos
+
+129
+00:05:43.100 --> 00:05:45.020
+y se van a mover juntos.
+
+130
+00:05:45.020 --> 00:05:46.760
+Si cambiamos la columna,
+
+131
+00:05:46.760 --> 00:05:49.840
+luego se apilan uno encima del otro de nuevo.
+
+132
+00:05:49.840 --> 00:05:51.960
+Así que ese es el primer paso.
+
+133
+00:05:51.960 --> 00:05:54.900
+Y nuestro contenedor no va a contener otras
+
+134
+00:05:54.900 --> 00:05:56.890
+definiciones de clase, excepto es.
+
+135
+00:05:56.890 --> 00:05:59.660
+Sólo va a tener pantalla flex.
+
+136
+00:05:59.660 --> 00:06:02.370
+Ahora vamos a entrar en el elemento contenedor.
+
+137
+00:06:02.370 --> 00:06:05.635
+Así que esto va a estar relacionado con cualquier cosa
+
+138
+00:06:05.635 --> 00:06:10.635
+que está realmente en este elemento o este otro.
+
+139
+00:06:11.420 --> 00:06:13.150
+Y creo que es un poco más fácil de ver
+
+140
+00:06:13.150 --> 00:06:15.626
+cuando ves la versión final.
+
+141
+00:06:15.626 --> 00:06:18.840
+Así que cuando digo elemento, me refiero a toda esta tarjeta
+
+142
+00:06:18.840 --> 00:06:21.190
+y toda esta tarjeta.
+
+143
+00:06:21.190 --> 00:06:24.400
+Así que ahora que sabemos lo que queremos seleccionar,
+
+144
+00:06:24.400 --> 00:06:28.140
+dentro de, oh y parece que deshice esa opción,
+
+145
+00:06:28.140 --> 00:06:29.050
+vaya,
+
+146
+00:06:29.050 --> 00:06:31.940
+así que dentro del elemento contenedor,
+
+147
+00:06:31.940 --> 00:06:34.860
+voy a decir que esto también
+
+148
+00:06:34.860 --> 00:06:38.240
+se va a mostrar flex.
+
+149
+00:06:38.240 --> 00:06:41.490
+Y luego voy a introducir por fin,
+
+150
+00:06:41.490 --> 00:06:43.750
+la propiedad de flex.
+
+151
+00:06:43.750 --> 00:06:46.090
+Así que esta es nuestra propiedad flex.
+
+152
+00:06:46.090 --> 00:06:49.270
+Ahora si recuerdas cuando estaba explicando
+
+153
+00:06:49.270 --> 00:06:54.030
+los conceptos de reducción, base y crecimiento de flex,
+
+154
+00:06:54.030 --> 00:06:55.940
+que dije que había una manera
+
+155
+00:06:55.940 --> 00:06:58.280
+donde podríamos combinar todos esos.
+
+156
+00:06:58.280 --> 00:07:00.462
+Esa es la propiedad flex.
+
+157
+00:07:00.462 --> 00:07:02.770
+Así que voy a...
+
+158
+00:07:04.609 --> 00:07:05.442
+Oh, volvamos a subir.
+
+159
+00:07:05.442 --> 00:07:07.050
+No paro de darle a deshacer.
+
+160
+00:07:07.050 --> 00:07:10.300
+Y es un nuevo teclado, un nuevo teclado mecánico
+
+161
+00:07:10.300 --> 00:07:12.131
+con el que he estado jugando.
+
+162
+00:07:12.131 --> 00:07:13.240
+Sigo intentando acostumbrarme a el.
+
+163
+00:07:13.240 --> 00:07:16.020
+Así que vamos a volver unos pocos
+
+164
+00:07:16.020 --> 00:07:18.890
+Y así queremos volver a mostrar
+
+165
+00:07:21.650 --> 00:07:23.720
+y luego ir a flex
+
+166
+00:07:23.720 --> 00:07:26.250
+y luego tenemos una propiedad flex de uno.
+
+167
+00:07:26.250 --> 00:07:27.540
+Y volvemos a normal.
+
+168
+00:07:27.540 --> 00:07:30.170
+Bien, ahora vamos a volver atrás y ver lo que tenemos.
+
+169
+00:07:30.170 --> 00:07:32.410
+Así que ahora hemos tenido algunos cambios.
+
+170
+00:07:32.410 --> 00:07:36.610
+Tenemos que cada uno de nuestros elementos está tomando
+
+171
+00:07:36.610 --> 00:07:38.330
+la mitad de la página y esto es perfecto.
+
+172
+00:07:38.330 --> 00:07:40.680
+Esto es exactamente lo que estamos buscando,
+
+173
+00:07:40.680 --> 00:07:42.400
+porque lo que hemos hecho es,
+
+174
+00:07:42.400 --> 00:07:44.450
+cuando dijimos pantalla flex,
+
+175
+00:07:44.450 --> 00:07:48.740
+Tomó los divs, así que, si te acuerdas
+
+176
+00:07:48.740 --> 00:07:52.220
+tenemos contenido dentro de las tarjetas,
+
+177
+00:07:52.220 --> 00:07:53.720
+o dentro de los elementos.
+
+178
+00:07:53.720 --> 00:07:55.980
+El contenido está en su propia categoría
+
+179
+00:07:55.980 --> 00:07:58.430
+con la imagen, el título y el subtítulo.
+
+180
+00:07:58.430 --> 00:08:00.210
+Y luego tenemos el grupo de botones
+
+181
+00:08:00.210 --> 00:08:02.590
+que tiene los botones dentro.
+
+182
+00:08:02.590 --> 00:08:05.200
+Y ahora están uno al lado del otro,
+
+183
+00:08:05.200 --> 00:08:07.810
+porque están en diferentes divs.
+
+184
+00:08:07.810 --> 00:08:10.090
+Así que estos son los dos elementos secundarios.
+
+185
+00:08:10.090 --> 00:08:11.450
+Son el elemento flex.
+
+186
+00:08:11.450 --> 00:08:14.530
+Así que esto es hacer exactamente lo que estamos buscando.
+
+187
+00:08:14.530 --> 00:08:18.550
+Y ahora si vienes a la documentación.
+
+188
+00:08:18.550 --> 00:08:21.700
+y pondré esto dentro de las notas del programa,
+
+189
+00:08:21.700 --> 00:08:23.950
+porque esta es una manera muy útil
+
+190
+00:08:23.950 --> 00:08:27.100
+de entender cómo funciona la propiedad flex.
+
+191
+00:08:27.100 --> 00:08:29.770
+Así que esta es nuestra propiedad flex
+
+192
+00:08:29.770 --> 00:08:32.960
+con el valor predeterminado que estamos dando de Flex 1.
+
+193
+00:08:32.960 --> 00:08:36.830
+Así que esto solo significa que escogemos el predeterminado
+
+194
+00:08:36.830 --> 00:08:41.830
+y esto es combinar la base, reducción, y crecimiento.
+
+195
+00:08:42.270 --> 00:08:44.820
+Y si vienes aquí un poco,
+
+196
+00:08:44.820 --> 00:08:46.790
+se puede ver que flex puede tomar
+
+197
+00:08:47.689 --> 00:08:48.522
+las propiedades que le dimos,
+
+198
+00:08:48.522 --> 00:08:52.350
+que es solo Flex 1 allí, y ese es el valor predeterminado.
+
+199
+00:08:52.350 --> 00:08:54.380
+Pero entonces también puedes estirarlo.
+
+200
+00:08:54.380 --> 00:08:58.120
+Y así puedes decir, quiero que el primer elemento sea uno
+
+201
+00:08:58.120 --> 00:09:00.780
+y quiero que el segundo elemento sea uno
+
+202
+00:09:00.780 --> 00:09:05.780
+Y luego quiero dar una base flex de 100 píxeles.
+
+203
+00:09:05.870 --> 00:09:09.260
+Por eso dije que cuando estás usando
+
+204
+00:09:09.260 --> 00:09:12.360
+reducción, crecimiento y base que puedas combinarlos.
+
+205
+00:09:12.360 --> 00:09:14.380
+Y esa será la forma tradicional
+
+206
+00:09:14.380 --> 00:09:15.213
+en la que lo hagas.
+
+207
+00:09:15.213 --> 00:09:18.860
+Normalmente vas a usar esta propiedad flex,
+
+208
+00:09:18.860 --> 00:09:22.330
+y si quieres tener crecimiento, reducción, y base,
+
+209
+00:09:22.330 --> 00:09:26.200
+entonces puedes añadirlos todos en la misma línea.
+
+210
+00:09:26.200 --> 00:09:28.620
+Ahora, esto es algo que está muy bien aquí abajo,
+
+211
+00:09:28.620 --> 00:09:31.710
+que es que a veces estos números
+
+212
+00:09:31.710 --> 00:09:33.760
+pueden ser un poco confusos
+
+213
+00:09:33.760 --> 00:09:37.360
+y lo que podemos hacer es que podemos tener nombres
+
+214
+00:09:37.360 --> 00:09:38.960
+asociados a ellos.
+
+215
+00:09:38.960 --> 00:09:43.960
+Se puede usar el nombre automático y también iniciales
+
+216
+00:09:44.430 --> 00:09:46.660
+y esta va a ser la implementación
+
+217
+00:09:46.660 --> 00:09:47.970
+con la que terminemos.
+
+218
+00:09:47.970 --> 00:09:50.840
+Porque si vienes y miras cual es nuestro objetivo,
+
+219
+00:09:50.840 --> 00:09:53.370
+nuestro objetivo es tener una configuración como esta,
+
+220
+00:09:53.370 --> 00:09:55.610
+donde tenemos una tarjeta que ocupa
+
+221
+00:09:55.610 --> 00:09:56.790
+la mayoría del espacio.
+
+222
+00:09:56.790 --> 00:09:59.920
+Parece ser aproximadamente el 60 por ciento,
+
+223
+00:09:59.920 --> 00:10:03.370
+y luego el resto es este asociado.
+
+224
+00:10:03.370 --> 00:10:05.480
+Pues si nos fijamos en la documentación.
+
+225
+00:10:05.480 --> 00:10:07.420
+puedes notar aquí
+
+226
+00:10:07.420 --> 00:10:10.090
+que esto es muy similar a eso.
+
+227
+00:10:10.090 --> 00:10:11.930
+No tenemos elementos iniciales,
+
+228
+00:10:11.930 --> 00:10:13.790
+solo tenemos uno, que está bien.
+
+229
+00:10:13.790 --> 00:10:17.030
+Así que vamos a utilizar la propiedad flex de auto
+
+230
+00:10:17.030 --> 00:10:20.230
+y esto va a ocupar automáticamente
+
+231
+00:10:20.230 --> 00:10:21.350
+todo este espacio
+
+232
+00:10:21.350 --> 00:10:24.770
+y luego inicial va a tener prácticamente
+
+233
+00:10:24.770 --> 00:10:26.040
+lo que queda.
+
+234
+00:10:26.040 --> 00:10:29.840
+Y así tienen algunas definiciones bastante útiles
+
+235
+00:10:29.840 --> 00:10:31.990
+de exactamente lo que esto representa.
+
+236
+00:10:31.990 --> 00:10:34.735
+Así que si me desplazo un poco más,
+
+237
+00:10:34.735 --> 00:10:37.300
+dice que eso auto representa
+
+238
+00:10:37.300 --> 00:10:39.240
+el elemento es dimensionado de acuerdo a
+
+239
+00:10:39.240 --> 00:10:41.150
+sus propiedades de anchura y altura
+
+240
+00:10:41.150 --> 00:10:44.710
+pero crece para absorber cualquier espacio libre extra.
+
+241
+00:10:44.710 --> 00:10:46.830
+Esta es la clave aquí.
+
+242
+00:10:46.830 --> 00:10:49.670
+Cualquier espacio libre adicional en el contenedor flex
+
+243
+00:10:49.670 --> 00:10:53.670
+y se reduce a su tamaño mínimo para adaptarse al contenedor.
+
+244
+00:10:53.670 --> 00:10:54.790
+Y esto es equivalente,
+
+245
+00:10:54.790 --> 00:10:57.370
+en otras palabras, si no quieres escribir auto,
+
+246
+00:10:57.370 --> 00:11:00.950
+podrías escribir flex: 1 1 y luego auto.
+
+247
+00:11:00.950 --> 00:11:02.920
+Así es como funciona auto,
+
+248
+00:11:02.920 --> 00:11:07.920
+Es que crece y ocupa cualquier espacio libre y vacío.
+
+249
+00:11:08.170 --> 00:11:10.890
+Inicial es el valor predeterminado.
+
+250
+00:11:10.890 --> 00:11:14.180
+Y lo que esto significa es que si miras esta tarjeta aquí
+
+251
+00:11:14.180 --> 00:11:17.940
+ves que está tomando y su anchura
+
+252
+00:11:17.940 --> 00:11:20.550
+está siendo determinada por su contenido.
+
+253
+00:11:20.550 --> 00:11:22.970
+La razón por la que es tan amplia
+
+254
+00:11:22.970 --> 00:11:25.810
+no es porque vamos a codificar esto en absoluto.
+
+255
+00:11:25.810 --> 00:11:27.960
+Es porque tenemos una imagen,
+
+256
+00:11:27.960 --> 00:11:30.850
+tenemos un título y ocupa tanto espacio
+
+257
+00:11:30.850 --> 00:11:32.470
+y luego tenemos estos botones.
+
+258
+00:11:32.470 --> 00:11:36.170
+Así que inicial significa asignar suficiente espacio
+
+259
+00:11:36.170 --> 00:11:39.350
+para este elemento y no más.
+
+260
+00:11:39.350 --> 00:11:42.070
+Así que inicial solo va a ocupar
+
+261
+00:11:42.070 --> 00:11:45.060
+tanto espacio como sea necesario para encajar el contenido
+
+262
+00:11:45.060 --> 00:11:46.110
+lo cual es muy práctico.
+
+263
+00:11:46.110 --> 00:11:48.290
+Hay muchas veces que quieres un div
+
+264
+00:11:48.290 --> 00:11:50.620
+Sólo para ocupar todo el espacio que necesite.
+
+265
+00:11:50.620 --> 00:11:51.950
+Y nada más.
+
+266
+00:11:51.950 --> 00:11:55.300
+Mientras que cuando combinas eso con auto,
+
+267
+00:11:55.300 --> 00:11:57.830
+auto dice, está bien, tengo todo mi espacio aquí
+
+268
+00:11:57.830 --> 00:11:59.920
+y luego todo lo que queda,
+
+269
+00:11:59.920 --> 00:12:01.900
+yo también me encargaré de eso.
+
+270
+00:12:01.900 --> 00:12:05.610
+Y esa es la razón por la cual este auto crece
+
+271
+00:12:05.610 --> 00:12:07.510
+aquí en el lado izquierdo.
+
+272
+00:12:07.510 --> 00:12:10.442
+Así que recomiendo encarecidamente ver la documentación.
+
+273
+00:12:10.442 --> 00:12:13.540
+Y la documentación en general en Flexbox
+
+274
+00:12:13.540 --> 00:12:15.560
+es muy buena, es muy útil
+
+275
+00:12:15.560 --> 00:12:18.940
+y tienen algunos grandes tipos de entornos REPL
+
+276
+00:12:18.940 --> 00:12:21.350
+donde puedes jugar con ellos, cambiar los valores
+
+277
+00:12:21.350 --> 00:12:24.604
+Y verlos cambiar en tiempo real.
+
+278
+00:12:24.604 --> 00:12:25.437
+Así que uso esto bastante
+
+279
+00:12:25.437 --> 00:12:27.890
+cuando estoy construyendo mis propios proyectos.
+
+280
+00:12:27.890 --> 00:12:32.690
+Ya estamos totalmente familiarizados con la propiedad flex
+
+281
+00:12:32.690 --> 00:12:34.910
+para que podamos tomarla y usarla.
+
+282
+00:12:34.910 --> 00:12:37.280
+Estamos empezando con sólo flex 1,
+
+283
+00:12:37.280 --> 00:12:39.320
+pero vamos a utilizar la propiedad flex
+
+284
+00:12:39.320 --> 00:12:41.300
+algunas otras veces también.
+
+285
+00:12:41.300 --> 00:12:45.180
+Así que este es nuestro contenedor y luego nuestro elemento.
+
+286
+00:12:45.180 --> 00:12:46.730
+Y ahora que tenemos eso,
+
+287
+00:12:46.730 --> 00:12:50.490
+todavía tenemos otras cosas con las que trabajar.
+
+288
+00:12:50.490 --> 00:12:53.540
+Así que voy a decir justificar el contenido
+
+289
+00:12:53.540 --> 00:12:57.040
+y en este caso, quiero usar espacio intermedio.
+
+290
+00:12:57.040 --> 00:12:59.610
+Así que vamos a estar combinando todo tipo de cosas
+
+291
+00:12:59.610 --> 00:13:01.150
+que hemos aprendido hasta ahora
+
+292
+00:13:01.150 --> 00:13:04.340
+y quiero tener un borde para esto
+
+293
+00:13:04.340 --> 00:13:09.340
+de un píxel, quiero que sea sólido y gris,
+
+294
+00:13:09.480 --> 00:13:11.930
+y también quiero tener un radio de borde,
+
+295
+00:13:11.930 --> 00:13:13.160
+porque esto va a ser una tarjeta,
+
+296
+00:13:13.160 --> 00:13:15.930
+así que queremos tener algún tipo de radio para ello.
+
+297
+00:13:15.930 --> 00:13:18.990
+Así que solo va a curvar un poco los bordes de la tarjeta.
+
+298
+00:13:18.990 --> 00:13:21.560
+Y luego también vamos a tener algunos márgenes,
+
+299
+00:13:21.560 --> 00:13:23.998 line:15% 
+para que no se estén chocando contra todo lo demás.
+
+300
+00:13:23.998 --> 00:13:27.060
+Así que pulsa guardar allí y ahora puedes ver
+
+301
+00:13:27.060 --> 00:13:28.880
+que tenemos tarjetas.
+
+302
+00:13:28.880 --> 00:13:31.800
+Así que ahora tenemos algún tipo de forma
+
+303
+00:13:31.800 --> 00:13:35.530
+de distinguir dónde termina la tarjeta y dónde empieza.
+
+304
+00:13:35.530 --> 00:13:37.820
+Así que ese es nuestro contenedor.
+
+305
+00:13:37.820 --> 00:13:41.160
+Y por si acaso no estás familiarizado con la sintaxis,
+
+306
+00:13:41.160 --> 00:13:43.960
+aquí estoy seleccionando el contenedor
+
+307
+00:13:43.960 --> 00:13:47.360
+y luego estoy diciendo para cualquier elemento dentro,
+
+308
+00:13:47.360 --> 00:13:49.620
+y no me refiero a elementos en el sentido plural,
+
+309
+00:13:49.620 --> 00:13:51.330
+me refiero al elemento en el,
+
+310
+00:13:51.330 --> 00:13:55.035
+si hay algún elemento con un nombre de clase de elemento
+
+311
+00:13:55.035 --> 00:13:58.360
+dentro del contenedor, aplicar estas propiedades.
+
+312
+00:13:58.360 --> 00:14:00.542
+Así es como funciona el selector.
+
+313
+00:14:00.542 --> 00:14:02.160
+Así que ahora que tenemos eso,
+
+314
+00:14:02.160 --> 00:14:06.150
+podemos ir al contenedor, al elemento, y luego al contenido.
+
+315
+00:14:06.150 --> 00:14:08.110
+Así que la forma en que tengo esto configurado
+
+316
+00:14:08.110 --> 00:14:10.680
+es que realmente estamos atravesando este árbol.
+
+317
+00:14:10.680 --> 00:14:14.100
+Así que si ves, contenedor, elemento, contenido,
+
+318
+00:14:14.100 --> 00:14:16.800
+tenemos todo el contenedor,
+
+319
+00:14:16.800 --> 00:14:19.230
+que es realmente toda la página en este caso.
+
+320
+00:14:19.230 --> 00:14:20.950
+Luego tenemos el elemento,
+
+321
+00:14:20.950 --> 00:14:23.230
+así que es cada uno de estos.
+
+322
+00:14:23.230 --> 00:14:24.530
+Y luego tenemos contenido,
+
+323
+00:14:24.530 --> 00:14:27.180
+que es todo lo que está aquí dentro
+
+324
+00:14:27.180 --> 00:14:29.560
+y todo lo que está aquí dentro.
+
+325
+00:14:29.560 --> 00:14:31.770
+Así que eso es lo que vamos a hacer aquí
+
+326
+00:14:31.770 --> 00:14:34.740
+y vamos a darle a esto solo uno
+
+327
+00:14:34.740 --> 00:14:37.563
+y decir pantalla flex.
+
+328
+00:14:39.490 --> 00:14:43.000
+Y ahora puedes ver que nos estamos acercando mucho.
+
+329
+00:14:43.000 --> 00:14:44.690
+Y entonces, lo que hicimos cuando hicimos eso
+
+330
+00:14:44.690 --> 00:14:49.256
+es antes cuando no teníamos una pantalla de flex
+
+331
+00:14:49.256 --> 00:14:52.540
+todo lo que estaba pasando era los elementos
+
+332
+00:14:52.540 --> 00:14:56.860
+estaban siendo tratados como div normales de vanilla HTML.
+
+333
+00:14:56.860 --> 00:14:59.500
+Pero ahora, porque tienen pantalla flex,
+
+334
+00:14:59.500 --> 00:15:03.090
+tienen automáticamente esa fila de dirección flexible
+
+335
+00:15:03.090 --> 00:15:05.590
+y así se colocan uno al lado del otro.
+
+336
+00:15:05.590 --> 00:15:08.870
+Así que eso está funcionando muy bien.
+
+337
+00:15:08.870 --> 00:15:13.870
+Bajando tenemos contenedor, elemento, contenido, metadatos.
+
+338
+00:15:14.060 --> 00:15:17.570
+Bueno, vamos a echar un vistazo rápido a los metadatos.
+
+339
+00:15:17.570 --> 00:15:20.310
+Y también, por si tenéis curiosidad,
+
+340
+00:15:20.310 --> 00:15:24.080
+este es exactamente el mismo tipo de flujo
+
+341
+00:15:24.080 --> 00:15:26.510
+que sigo cada vez que estoy construyendo
+
+342
+00:15:26.510 --> 00:15:28.700
+mi propia implementación de front-end.
+
+343
+00:15:28.700 --> 00:15:33.340
+Así que no voy y escribo un montón de código
+
+344
+00:15:33.340 --> 00:15:35.260
+y luego ver que pasa.
+
+345
+00:15:35.260 --> 00:15:38.450
+Me gusta recorrer cada uno de los elementos
+
+346
+00:15:38.450 --> 00:15:40.730
+exactamente como lo estamos haciendo ahora
+
+347
+00:15:40.730 --> 00:15:43.570
+y ver exactamente como puedo estilizarlos.
+
+348
+00:15:43.570 --> 00:15:46.710
+Así que ahora, el siguiente elemento que vamos a ver
+
+349
+00:15:46.710 --> 00:15:50.550
+es un elemento contenedor, contenido, metadatos.
+
+350
+00:15:50.550 --> 00:15:52.960
+Si utilizamos nuestro inspector aquí,
+
+351
+00:15:52.960 --> 00:15:55.470
+podemos ver cuáles son los metadatos.
+
+352
+00:15:55.470 --> 00:15:57.010
+Así que si pinchas aquí,
+
+353
+00:15:57.010 --> 00:16:01.200
+puedes ver que los metadatos representan todo el contenido.
+
+354
+00:16:01.200 --> 00:16:02.960
+Y lo mismo por aquí.
+
+355
+00:16:02.960 --> 00:16:06.220
+Si pincho sobre el inspector y pincho sobre este,
+
+356
+00:16:06.220 --> 00:16:09.160
+esto es también nuestros metadatos.
+
+357
+00:16:09.160 --> 00:16:13.720
+Así que eso es lo que vamos a usar para nuestro contenido.
+
+358
+00:16:13.720 --> 00:16:17.133
+Así que dentro de aquí, vamos a tener algunos artículos
+
+359
+00:16:17.133 --> 00:16:18.270
+que tenemos que añadir.
+
+360
+00:16:18.270 --> 00:16:22.730
+Así que necesitamos tener una pantalla de flex.
+
+361
+00:16:23.990 --> 00:16:26.280
+Así que esto también va a ser un contenedor flex.
+
+362
+00:16:26.280 --> 00:16:29.560
+Y luego para este, queremos flexionar la dirección.
+
+363
+00:16:29.560 --> 00:16:30.970
+Necesitamos sobreescribirlo.
+
+364
+00:16:30.970 --> 00:16:33.361
+Así que necesitamos que esto sea una columna no una fila.
+
+365
+00:16:33.361 --> 00:16:38.361
+Y luego quiero justificar el contenido al centro.
+
+366
+00:16:38.660 --> 00:16:40.010
+Y ahora cuando hago esto,
+
+367
+00:16:40.010 --> 00:16:43.560
+esto significa que va a centrar el contenido verticalmente,
+
+368
+00:16:43.560 --> 00:16:46.906
+porque va a tomar esta columna de dirección flex
+
+369
+00:16:46.906 --> 00:16:51.031
+y luego lo va a centrar de esa manera.
+
+370
+00:16:51.031 --> 00:16:53.435
+Por defecto, si estubiese usando la fila,
+
+371
+00:16:53.435 --> 00:16:55.850
+entonces lo movería de derecha a izquierda
+
+372
+00:16:55.850 --> 00:16:57.640
+y no de arriba hacia abajo.
+
+373
+00:16:57.640 --> 00:17:01.940
+Así que justifica el contenido y vamos a añadir un poco
+
+374
+00:17:01.940 --> 00:17:06.940
+de margen, no a la derecha, a la izquierda a 10 píxeles,
+
+375
+00:17:07.840 --> 00:17:12.110
+no, hagamos 20 para asegurarnos de que tenemos espacio.
+
+376
+00:17:12.110 --> 00:17:14.880
+Así que voy a darle a guardar y ahí vamos.
+
+377
+00:17:14.880 --> 00:17:18.810
+Ahora puedes ver que nuestro contenido se ve mucho mejor.
+
+378
+00:17:18.810 --> 00:17:22.700
+Tenemos nuestro subtítulo y este contenido aquí.
+
+379
+00:17:22.700 --> 00:17:25.750
+Y luego mirad como si hay dos elementos,
+
+380
+00:17:25.750 --> 00:17:28.740
+los elementos todavía están siendo colocados ahí
+
+381
+00:17:28.740 --> 00:17:30.960
+y alineado centrado verticalmente.
+
+382
+00:17:30.960 --> 00:17:32.470
+Y luego si solo hay uno,
+
+383
+00:17:32.470 --> 00:17:36.340
+así que si no tenemos un subtítulo, como es en este caso,
+
+384
+00:17:36.340 --> 00:17:38.611
+entonces esto se está colocando ahí,
+
+385
+00:17:38.611 --> 00:17:40.817
+y se está centrando verticalmente también.
+
+386
+00:17:40.817 --> 00:17:42.410
+Esto es realmente útil.
+
+387
+00:17:42.410 --> 00:17:44.500
+No te puedo decir cuántas veces he tenido que
+
+388
+00:17:44.500 --> 00:17:48.680
+escribir un código CSS muy feo antes de que hubiera Flexbox
+
+389
+00:17:48.680 --> 00:17:51.890
+para poder realizar este mismo comportamiento.
+
+390
+00:17:51.890 --> 00:17:55.730
+A donde quería que un elemento se centrara de esta manera,
+
+391
+00:17:55.730 --> 00:17:58.700
+pero si hubiera dos que quisiera centrar así.
+
+392
+00:17:58.700 --> 00:18:01.010
+Así que es bueno que Flexbox nos dé esto
+
+393
+00:18:01.010 --> 00:18:03.170
+prácticamente por defecto.
+
+394
+00:18:03.170 --> 00:18:04.760
+Así que estamos avanzando.
+
+395
+00:18:04.760 --> 00:18:07.040
+Sólo tenemos unos pocos elementos más que añadir.
+
+396
+00:18:07.040 --> 00:18:09.520
+Así que ahora, vamos a estar trabajando con
+
+397
+00:18:09.520 --> 00:18:13.770
+el contenedor, elemento, contenido, metadatos, título.
+
+398
+00:18:13.770 --> 00:18:16.940
+Así que para este, este va a ser
+
+399
+00:18:16.940 --> 00:18:21.583
+bastante a tiro hecho y tengo que decir margen,
+
+400
+00:18:22.650 --> 00:18:25.810
+cero píxeles, pulsar guardar
+
+401
+00:18:25.810 --> 00:18:28.210
+Y ahora puedes ver que hemos solucionado el problema.
+
+402
+00:18:28.210 --> 00:18:30.350
+Así que la razón por la que teníamos
+
+403
+00:18:30.350 --> 00:18:32.930
+ese poco de margen ahí abajo en la parte inferior
+
+404
+00:18:32.930 --> 00:18:36.387
+era porque este H1 en realidad lo estaba sobrescribiendo
+
+405
+00:18:36.387 --> 00:18:38.220
+y estaba empujando todo hacia abajo.
+
+406
+00:18:38.220 --> 00:18:42.230
+Así que cuando dices, sólo quiero eliminar eso,
+
+407
+00:18:42.230 --> 00:18:43.950
+entonces eso arregla eso.
+
+408
+00:18:43.950 --> 00:18:45.660
+Así que bajando,
+
+409
+00:18:45.660 --> 00:18:48.520
+así que todo está cuidado en el lado izquierdo.
+
+410
+00:18:48.520 --> 00:18:52.970
+Una cosa que me encanta es ver como tenemos la imagen aquí
+
+411
+00:18:52.970 --> 00:18:55.690
+que encaja perfectamente y brota
+
+412
+00:18:55.690 --> 00:18:59.230
+contra la parte inferior, la izquierda y la parte superior,
+
+413
+00:18:59.230 --> 00:19:01.800
+esto tampoco es una cosa trivial que hacer
+
+414
+00:19:01.800 --> 00:19:03.330
+si no estás utilizando Flexbox.
+
+415
+00:19:03.330 --> 00:19:07.580
+Así que poder tener el elemento perfectamente colocado ahí,
+
+416
+00:19:07.580 --> 00:19:10.970
+alineado justo al lado de todos los otros metadatos,
+
+417
+00:19:10.970 --> 00:19:13.580
+ese es un beneficio realmente bueno que obtienes.
+
+418
+00:19:13.580 --> 00:19:16.210
+Así que ahora vamos a pasar al grupo de botones.
+
+419
+00:19:16.210 --> 00:19:19.090
+Vamos a pasarlo bien configurándolos.
+
+420
+00:19:19.090 --> 00:19:23.250
+Vamos a empezar con la visualización de flexión.
+
+421
+00:19:23.250 --> 00:19:27.310
+Y luego desde allí vamos a alinear nuestros artículos.
+
+422
+00:19:27.310 --> 00:19:31.260
+Así que aquí voy a decir, alinear elementos.
+
+423
+00:19:31.260 --> 00:19:34.970
+Y aquí quiero tenerlos centrados.
+
+424
+00:19:34.970 --> 00:19:38.570
+Así que voy a decir alinear los elementos del centro.
+
+425
+00:19:38.570 --> 00:19:41.410
+Si volvemos podemos ver que ahora tiene
+
+426
+00:19:41.410 --> 00:19:45.330
+nuestros botones alineados exactamente como los queremos.
+
+427
+00:19:45.330 --> 00:19:46.640
+Todavía tenemos que añadir nuestros estilos,
+
+428
+00:19:46.640 --> 00:19:49.540
+pero al menos están posicionados en el lugar correcto.
+
+429
+00:19:49.540 --> 00:19:51.790
+Y ahora si bajamos,
+
+430
+00:19:51.790 --> 00:19:54.390
+tenemos dentro de nuestro grupo de botones
+
+431
+00:19:54.390 --> 00:19:57.860
+cada uno de ellos tiene una clase de botones.
+
+432
+00:19:57.860 --> 00:20:00.146
+Y así que dentro de la clase de botones
+
+433
+00:20:00.146 --> 00:20:02.960
+Vamos a añadir una serie de elementos.
+
+434
+00:20:02.960 --> 00:20:05.850
+Así que primero vamos a añadir una altura.
+
+435
+00:20:05.850 --> 00:20:09.550
+Porque, recuerda el comportamiento que estamos buscando,
+
+436
+00:20:09.550 --> 00:20:12.320
+quiero tener estos pequeños efectos de flotar
+
+437
+00:20:12.320 --> 00:20:13.980
+donde cuando floto sobre algo
+
+438
+00:20:13.980 --> 00:20:17.130
+lo trata de la misma forma en que te imaginas
+
+439
+00:20:17.130 --> 00:20:19.661
+que algo en un entorno móvil funcionaría,
+
+440
+00:20:19.661 --> 00:20:22.087
+como donde tienes todas estas tarjetas
+
+441
+00:20:22.087 --> 00:20:24.090
+y están todas una encima de la otra.
+
+442
+00:20:24.090 --> 00:20:28.170
+Y luego puedes pinchar y presionar sobre una de estas
+
+443
+00:20:28.170 --> 00:20:30.100
+y solo una de estas acciones,
+
+444
+00:20:30.100 --> 00:20:32.330
+y te da este bonito efecto de flotar
+
+445
+00:20:32.330 --> 00:20:34.460
+que va de arriba a abajo.
+
+446
+00:20:34.460 --> 00:20:36.180
+Bueno, la forma en que podemos hacer eso
+
+447
+00:20:36.180 --> 00:20:39.200
+es declarando una altura.
+
+448
+00:20:39.200 --> 00:20:43.260
+Y para eso voy a decir 100 % en altura.
+
+449
+00:20:43.260 --> 00:20:46.890
+Y esto también va a ser un contenedor flex,
+
+450
+00:20:46.890 --> 00:20:49.160
+porque tiene enlaces dentro.
+
+451
+00:20:49.160 --> 00:20:51.168
+Así que voy a decir pantalla flex,
+
+452
+00:20:51.168 --> 00:20:54.203
+alinear los elementos del centro.
+
+453
+00:20:55.550 --> 00:20:59.433
+Entonces vamos a hacer la fila de dirección flex,
+
+454
+00:20:59.433 --> 00:21:02.036
+que es realmente la predeterminada,
+
+455
+00:21:02.036 --> 00:21:04.109
+así que no tenemos que tener eso,
+
+456
+00:21:04.109 --> 00:21:05.280
+pero solo voy a hacerlo
+
+457
+00:21:05.280 --> 00:21:07.680
+para aclarar que eso es lo que hay.
+
+458
+00:21:07.680 --> 00:21:10.790
+Vamos a darle un ancho de 42 píxeles,
+
+459
+00:21:10.790 --> 00:21:12.830
+porque 42 es siempre el mejor número
+
+460
+00:21:12.830 --> 00:21:14.290
+cuando puedas usarlo.
+
+461
+00:21:14.290 --> 00:21:17.433
+Y luego justificar el contenido, centro.
+
+462
+00:21:18.630 --> 00:21:22.120
+Y luego vamos a darle un tamaño de fuente,
+
+463
+00:21:22.120 --> 00:21:24.536
+porque eso es una cosa genial cuando
+
+464
+00:21:24.536 --> 00:21:25.550
+trabajas con iconos fontawesome,
+
+465
+00:21:25.550 --> 00:21:28.110
+es que puedes tratarlos como tipografías.
+
+466
+00:21:28.110 --> 00:21:30.727
+Así que les voy a decir fontawesome 2em,
+
+467
+00:21:32.191 --> 00:21:34.440
+y eso les dará el doble de tamaño.
+
+468
+00:21:34.440 --> 00:21:36.850
+Y ahora mirad eso, estamos,
+
+469
+00:21:36.850 --> 00:21:38.370
+oh, en realidad, oh me he engañado,
+
+470
+00:21:38.370 --> 00:21:39.630
+estamos viendo la solución.
+
+471
+00:21:39.630 --> 00:21:40.463
+Ahí vamos, está bien.
+
+472
+00:21:40.463 --> 00:21:42.040
+Aún así está bastante mejor.
+
+473
+00:21:42.040 --> 00:21:44.900
+Bien, esto es, esto es fantástico.
+
+474
+00:21:44.900 --> 00:21:46.750
+Todavía tenemos que arreglar nuestros colores
+
+475
+00:21:46.750 --> 00:21:48.440
+y tenemos que añadir nuestros efectos de flotar,
+
+476
+00:21:48.440 --> 00:21:50.050
+pero estamos en el tamaño correcto
+
+477
+00:21:50.050 --> 00:21:53.260
+y estamos alineados perfectamente.
+
+478
+00:21:53.260 --> 00:21:55.300
+Estos están alineados exactamente de la manera
+
+479
+00:21:55.300 --> 00:21:57.330
+que yo quería que estubieran.
+
+480
+00:21:57.330 --> 00:22:01.330
+Así que al bajar, solo nos quedan cinco elementos
+
+481
+00:22:01.330 --> 00:22:03.660
+y dos de ellos son bastante pequeños también.
+
+482
+00:22:03.660 --> 00:22:07.060
+Así que ahora tenemos que dentro de esa clase de botón,
+
+483
+00:22:07.060 --> 00:22:08.830
+el botón tiene un enlace.
+
+484
+00:22:08.830 --> 00:22:12.120
+Y así es como somos capaces de sobrescribir.
+
+485
+00:22:12.120 --> 00:22:14.380
+ese color azul feo
+
+486
+00:22:14.380 --> 00:22:16.530
+que es lo predeterminado con HTML.
+
+487
+00:22:16.530 --> 00:22:18.970
+Así que vamos a decir este color
+
+488
+00:22:18.970 --> 00:22:22.400
+debería ser verde mar claro.
+
+489
+00:22:22.400 --> 00:22:25.000
+Creo que es una buena opción.
+
+490
+00:22:25.000 --> 00:22:29.200
+Y entonces tampoco quiero ningún texto decorado.
+
+491
+00:22:29.200 --> 00:22:32.400
+Así que la decoración del texto va a ser ninguna,
+
+492
+00:22:32.400 --> 00:22:34.647
+solo para asegurarnos de que no tenemos ningún problema
+
+493
+00:22:34.647 --> 00:22:36.490
+como cuando te flotas sobre él
+
+494
+00:22:36.490 --> 00:22:40.390
+y añade un subrayado o algo así.
+
+495
+00:22:40.390 --> 00:22:41.570
+Así que si volvemos a cambiar,
+
+496
+00:22:41.570 --> 00:22:43.680
+ahora estamos en el correcto
+
+497
+00:22:43.680 --> 00:22:46.630
+y si flotamos encima, no tenemos ningún subrayado
+
+498
+00:22:46.630 --> 00:22:50.990
+y tenemos nuestro bonito color verde mar.
+
+499
+00:22:50.990 --> 00:22:54.760
+Bajando, ahora vamos a gestionar nuestro estado flotante.
+
+500
+00:22:54.760 --> 00:22:57.210
+Así que con el estado flotante aquí,
+
+501
+00:22:57.210 --> 00:22:59.230
+y recuerda la forma en que puedes hacer esto
+
+502
+00:22:59.230 --> 00:23:03.210
+es con este pseudoselector de flotación de dos puntos.
+
+503
+00:23:03.210 --> 00:23:06.630
+Ahora lo que podemos hacer es decir color de fondo
+
+504
+00:23:08.570 --> 00:23:13.133
+y para este vamos con el gris pizarra claro.
+
+505
+00:23:14.030 --> 00:23:16.550
+Y luego queremos,
+
+506
+00:23:16.550 --> 00:23:18.210
+también una cosa que puedes ver
+
+507
+00:23:18.210 --> 00:23:20.550
+y vamos a guardar esto primero,
+
+508
+00:23:20.550 --> 00:23:22.400
+es que cuando estás construyendo
+
+509
+00:23:22.400 --> 00:23:24.262
+este tipo de elementos personalizados
+
+510
+00:23:24.262 --> 00:23:26.990
+entonces a veces y en mi caso,
+
+511
+00:23:26.990 --> 00:23:29.100
+con el navegador que estoy usando,
+
+512
+00:23:29.100 --> 00:23:30.890
+cambia el cursor.
+
+513
+00:23:30.890 --> 00:23:32.770
+Pero ese no es siempre el caso.
+
+514
+00:23:32.770 --> 00:23:34.410
+Así que si es necesario,
+
+515
+00:23:34.410 --> 00:23:38.470
+y tuve que hacer esto para la implementación de mi Dev Camp,
+
+516
+00:23:38.470 --> 00:23:41.990
+también puedes añadir tu propio cursor.
+
+517
+00:23:41.990 --> 00:23:46.990
+Así que aquí voy a decir el puntero del cursor
+
+518
+00:23:47.200 --> 00:23:49.760
+y eso es algo que si
+
+519
+00:23:49.760 --> 00:23:51.840
+alguna vez estás haciendo algo como esto
+
+520
+00:23:51.840 --> 00:23:53.640
+donde estas creando tus propios elementos,
+
+521
+00:23:53.640 --> 00:23:55.980
+No todos los navegadores van a reconocer
+
+522
+00:23:55.980 --> 00:23:58.170
+que estos son todos los enlaces,
+
+523
+00:23:58.170 --> 00:24:01.580
+porque el enlace es realmente solo este icono.
+
+524
+00:24:01.580 --> 00:24:04.210
+Pero queremos tratarlo todo como un enlace
+
+525
+00:24:04.210 --> 00:24:06.710
+y así puedes cambiar el cursor de esa manera.
+
+526
+00:24:06.710 --> 00:24:09.450
+Así que ahora tenemos ese bonito color de fondo,
+
+527
+00:24:09.450 --> 00:24:11.700
+que es excelente.
+
+528
+00:24:11.700 --> 00:24:13.935
+Pero como puedes ver, es algo así como,
+
+529
+00:24:13.935 --> 00:24:18.450
+siempre que tengas un poco de verde y este carbón,
+
+530
+00:24:18.450 --> 00:24:21.580
+o este gris pizarra claro, entonces es difícil de ver.
+
+531
+00:24:21.580 --> 00:24:24.960
+Así que tenemos que cambiar el color de nuestro botón
+
+532
+00:24:24.960 --> 00:24:26.990
+sobre el efecto de flotar.
+
+533
+00:24:26.990 --> 00:24:29.550
+Así que eso es lo que hace este siguiente selector.
+
+534
+00:24:29.550 --> 00:24:32.053
+Y aquí podemos decir,
+
+535
+00:24:33.440 --> 00:24:36.050
+no color de fondo, este es solo color normal.
+
+536
+00:24:36.050 --> 00:24:39.220
+Así que solo vamos a decir color blanco.
+
+537
+00:24:39.220 --> 00:24:40.930
+Guardar, vamos a comprobarlo.
+
+538
+00:24:40.930 --> 00:24:42.330
+Y ahora cuando flotamos,
+
+539
+00:24:42.330 --> 00:24:44.000
+puedes verlo que cambia a blanco
+
+540
+00:24:44.000 --> 00:24:45.740
+y está mucho mejor.
+
+541
+00:24:45.740 --> 00:24:49.190
+Hasta ahora todo va muy bien.
+
+542
+00:24:49.190 --> 00:24:51.120
+Y habrá muchos casos
+
+543
+00:24:51.120 --> 00:24:54.210
+donde todo lo que necesitas hacer
+
+544
+00:24:54.210 --> 00:24:57.400
+es tener exactamente lo que tenemos aquí.
+
+545
+00:24:57.400 --> 00:25:00.140
+Tantas veces estoy en una situación donde
+
+546
+00:25:00.140 --> 00:25:03.140
+todas estas tarjetas simplemente van a
+
+547
+00:25:03.140 --> 00:25:05.580
+pasar por la pantalla así
+
+548
+00:25:05.580 --> 00:25:08.620
+y está bien que todos tengan el tamaño correcto.
+
+549
+00:25:08.620 --> 00:25:11.230
+Y así, en ese caso, podrías dejarlo
+
+550
+00:25:11.230 --> 00:25:14.240
+justo donde estamos ahora, ya has terminado.
+
+551
+00:25:14.240 --> 00:25:16.320
+Pero ahora en nuestro caso, recuerda,
+
+552
+00:25:16.320 --> 00:25:18.710
+que queramos poder tener
+
+553
+00:25:18.710 --> 00:25:20.140
+este tipo de comportamiento
+
+554
+00:25:20.140 --> 00:25:22.170
+donde tenemos un artículo destacado
+
+555
+00:25:22.170 --> 00:25:24.300
+y luego tenemos uno asociado
+
+556
+00:25:24.300 --> 00:25:26.010
+que solo debería ocupar
+
+557
+00:25:26.010 --> 00:25:27.490
+tanto espacio como necesite
+
+558
+00:25:27.490 --> 00:25:30.410
+y el destacado debe ocupar más espacio.
+
+559
+00:25:30.410 --> 00:25:33.700
+Así que al bajar, solo nos quedan dos elementos
+
+560
+00:25:33.700 --> 00:25:35.890
+y aquí es donde vamos a terminar
+
+561
+00:25:35.890 --> 00:25:37.950
+con nuestra propiedad flex.
+
+562
+00:25:37.950 --> 00:25:42.850
+Así que aquí es tan fácil como decir, flex auto.
+
+563
+00:25:42.850 --> 00:25:46.210
+Y luego, si bajamos a lo asociado,
+
+564
+00:25:46.210 --> 00:25:49.637
+ahora podemos decir flex y luego inicial.
+
+565
+00:25:51.260 --> 00:25:55.300
+Pulsa guardar, vuelve y hemos terminado.
+
+566
+00:25:55.300 --> 00:25:57.420
+Así que mira lo que se hace aquí
+
+567
+00:25:57.420 --> 00:25:59.550
+es que se ha tomado todo ese contenido,
+
+568
+00:25:59.550 --> 00:26:02.610
+dice vale, esto solo necesita tanto espacio
+
+569
+00:26:02.610 --> 00:26:05.000
+y luego el del lado izquierdo
+
+570
+00:26:05.000 --> 00:26:08.460
+ocupa todo lo demás que queda.
+
+571
+00:26:08.460 --> 00:26:11.290
+Ahora de un elemento de respuesta,
+
+572
+00:26:11.290 --> 00:26:13.640
+si yo fuera, bueno, no los encogería
+
+573
+00:26:13.640 --> 00:26:15.090
+para tener este tamaño.
+
+574
+00:26:15.090 --> 00:26:15.923
+Si ese es el caso
+
+575
+00:26:15.923 --> 00:26:17.180
+vas a tener que hacer algunas consultas de medios.
+
+576
+00:26:17.180 --> 00:26:20.580
+Pero si tu pantalla es
+
+577
+00:26:20.580 --> 00:26:22.290
+un poco más pequeña o algo,
+
+578
+00:26:22.290 --> 00:26:25.840
+mira aquí ahora, que el estado inicial
+
+579
+00:26:25.840 --> 00:26:27.280
+todavía se va a mantener.
+
+580
+00:26:27.280 --> 00:26:30.260
+Así que esto es como lo que verías en una tablet.
+
+581
+00:26:30.260 --> 00:26:32.010
+Se mantiene el estado inicial.
+
+582
+00:26:32.010 --> 00:26:33.530
+No sigue encogiéndose,
+
+583
+00:26:33.530 --> 00:26:37.980
+pero el destacado, como está en automático, se encoge.
+
+584
+00:26:37.980 --> 00:26:40.430
+Se va a encoger
+
+585
+00:26:40.430 --> 00:26:42.750
+y entonces no va a ser
+
+586
+00:26:42.750 --> 00:26:44.810
+una especie de reducción relacionada,
+
+587
+00:26:44.810 --> 00:26:48.440
+simplemente va a mirar este lado izquierdo,
+
+588
+00:26:48.440 --> 00:26:50.860
+solo le dará espacio extra
+
+589
+00:26:50.860 --> 00:26:53.110
+si hay espacio extra disponible.
+
+590
+00:26:53.110 --> 00:26:56.220
+Así que así es como funciona el flex automático.
+
+591
+00:26:56.220 --> 00:26:58.660
+Y recomiendo encarecidamente ver la documentación
+
+592
+00:26:58.660 --> 00:27:01.010
+y explorar todos las formas diferentes
+
+593
+00:27:01.010 --> 00:27:04.600
+en que puedes usarlo para tu propio proyecto.
+
+594
+00:27:04.600 --> 00:27:06.640
+Pero buen trabajo si lo has hecho.
+
+595
+00:27:06.640 --> 00:27:09.280
+Esto, sé que esta fue una guía mucho más larga
+
+596
+00:27:09.280 --> 00:27:10.870
+que las otras,
+
+597
+00:27:10.870 --> 00:27:13.840
+Pero quería enseñaros proyecto real.
+
+598
+00:27:13.840 --> 00:27:17.410
+Y esto es literalmente casi el mismo código
+
+599
+00:27:17.410 --> 00:27:20.300
+que el que tengo en DevCamp para algunas tarjetas
+
+600
+00:27:20.300 --> 00:27:21.900
+que son exactamente así.
+
+601
+00:27:21.900 --> 00:27:23.810
+Así que esto bien podría ser algo
+
+602
+00:27:23.810 --> 00:27:25.380
+que te pidan que construyas.
+
+603
+00:27:25.380 --> 00:27:26.950
+Y ahora ya sabes cómo hacerlo
+
+604
+00:27:26.950 --> 00:27:29.903
+usando Flexbox y las propiedades Flex.
+

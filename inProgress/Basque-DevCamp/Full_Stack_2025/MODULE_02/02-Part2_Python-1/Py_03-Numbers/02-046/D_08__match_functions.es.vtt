@@ -1,0 +1,594 @@
+WEBVTT
+
+1
+00:00:01.000 --> 00:00:03.700
+<v ->Hasta ahora en esta sección, en números Python</v>
+
+2
+00:00:03.700 --> 00:00:07.210
+hemos visto cómo podemos trabajar con varios
+
+3
+00:00:07.210 --> 00:00:12.210
+tipos de número en Python: cómo podemos hacer computaciones
+
+4
+00:00:12.360 --> 00:00:16.700
+cómo podemos ver los tipos de datos, el orden de operaciones
+
+5
+00:00:16.700 --> 00:00:19.780
+y distintos elementos así. Eso es todo conocimiento
+
+6
+00:00:19.780 --> 00:00:22.970
+fundacional muy importante. Pero ahora con todo eso
+
+7
+00:00:22.970 --> 00:00:27.200
+en su sitio, quiero daros una muestra
+
+8
+00:00:27.200 --> 00:00:31.240
+de todas las funciones disponibles para el tipo de número
+
+9
+00:00:31.240 --> 00:00:35.390
+de datos en Python. Lo que tenemos aquí es
+
+10
+00:00:35.390 --> 00:00:38.760
+una mirada a cómo podemos automatizar una serie de
+
+11
+00:00:38.760 --> 00:00:42.790
+los procesos de los que hemos hablado y cómo podemos
+
+12
+00:00:42.790 --> 00:00:46.510
+nombrar procesos útiles en números.
+
+13
+00:00:46.510 --> 00:00:48.970
+Lo primero que voy a hacer,
+
+14
+00:00:48.970 --> 00:00:53.690
+arriba de todo, es importar la biblioteca matemática.
+
+15
+00:00:53.690 --> 00:00:57.029
+Python es famoso por funcionar muy bien
+
+16
+00:00:57.029 --> 00:00:59.340
+en cálculos matemáticos.
+
+17
+00:00:59.340 --> 00:01:04.340
+Parte de eso se debe a tener una gran biblioteca matemática
+
+18
+00:01:04.760 --> 00:01:07.380
+donde tienes estas grandes funciones y vamos
+
+19
+00:01:07.380 --> 00:01:10.690
+a ver algunas de las más populares que hay.
+
+20
+00:01:10.690 --> 00:01:14.360
+He creado dos variables. Una es una negativa
+
+21
+00:01:14.360 --> 00:01:19.360
+llamada pérdida, y es -20,25. Este es un número decimal
+
+22
+00:01:20.010 --> 00:01:23.250
+que es negativo. Y el siguiente es un número decimal
+
+23
+00:01:23.250 --> 00:01:28.070
+llamado coste de producto a 89,99. Vamos a ver
+
+24
+00:01:28.070 --> 00:01:31.480
+un número de funciones varias que podéis encontrar
+
+25
+00:01:31.480 --> 00:01:35.800
+útiles al trabajar con números en Python.
+
+26
+00:01:35.800 --> 00:01:38.160
+La primera, voy a poner todos esto en una línea
+
+27
+00:01:38.160 --> 00:01:43.160
+de print, es abs, que es el valor absoluto.
+
+28
+00:01:43.700 --> 00:01:48.244
+Voy a decir "pérdida absoluta". Y lo que va a hacer
+
+29
+00:01:48.244 --> 00:01:53.244
+es tomar el valor absoluto de pérdida, y si tus cálculos
+
+30
+00:01:54.370 --> 00:01:58.270
+están oxidados, el valor absoluto, lo que eso
+
+31
+00:01:58.270 --> 00:02:01.680
+hará es tomar el valor puro y
+
+32
+00:02:01.680 --> 00:02:05.030
+va a eliminar este signo negativo de aquí.
+
+33
+00:02:05.030 --> 00:02:09.033
+Ahora, si ejecuto esto, veréis que el valor es 20,25.
+
+34
+00:02:10.820 --> 00:02:15.430
+Así que está simplemente disponible para la clase de número
+
+35
+00:02:15.430 --> 00:02:18.330
+dentro de un Python. Si quieres probarlo,
+
+36
+00:02:18.330 --> 00:02:23.330
+si lo eliminamos o quitamos la coma
+
+37
+00:02:23.600 --> 00:02:26.650
+de lo que teníamos en la línea 1, veréis que
+
+38
+00:02:26.650 --> 00:02:30.080
+eso aún funciona. No se necesita la biblioteca matemática en
+
+39
+00:02:30.080 --> 00:02:34.040
+el valor absoluto. Está dentro de la biblioteca Phyton.
+
+40
+00:02:34.040 --> 00:02:38.800
+Vayamos con una que la necesite. Voy a
+
+41
+00:02:38.800 --> 00:02:43.110
+decir aquí math porque estamos importando
+
+42
+00:02:43.110 --> 00:02:47.510
+la biblioteca matemática. Pondré math.floor
+
+43
+00:02:47.510 --> 00:02:51.400
+y luego pondré el coste del producto.
+
+44
+00:02:51.400 --> 00:02:56.400
+Ahora voy a ejecutar esto y veréis que el valor es 89
+
+45
+00:02:57.230 --> 00:02:59.040
+y lo que tenemos aquí es el coste
+
+46
+00:02:59.040 --> 00:03:02.350
+de producto, mirad. Ha devuelto un entero
+
+47
+00:03:02.350 --> 00:03:07.350
+y ha recogido el suelo del decimal del coste de producto.
+
+48
+00:03:07.690 --> 00:03:12.250
+Técnicamente también podrías poner int aquí
+
+49
+00:03:13.180 --> 00:03:15.960
+como hemos visto antes. Si pongo int
+
+50
+00:03:15.960 --> 00:03:20.230
+en el coste de producto, esto nos da el mismo valor exacto.
+
+51
+00:03:20.230 --> 00:03:25.230
+Una razón por la que quizá no queráis hacer esto es porque
+
+52
+00:03:25.672 --> 00:03:30.500
+math.floor muestra claramente vuestra intención.
+
+53
+00:03:30.500 --> 00:03:34.610
+En cuanto a programación, uno de los elementos más
+
+54
+00:03:34.610 --> 00:03:38.500
+importante es no solo asegurarte de que el programa funciona
+
+55
+00:03:38.500 --> 00:03:43.500
+correctamente, sino también ser muy explícito en
+
+56
+00:03:43.690 --> 00:03:47.820
+tus intenciones al codificar. Si quieres
+
+57
+00:03:47.820 --> 00:03:52.060
+los suelos más bajos, si quieres el valor de suelo de
+
+58
+00:03:52.060 --> 00:03:56.580
+esta variable de coste de producto. Cuando dices math floor
+
+59
+00:03:56.580 --> 00:03:59.250
+cuando lees esto después, o si otro
+
+60
+00:03:59.250 --> 00:04:03.450
+lo está leyendo, entenderán que querías
+
+61
+00:04:03.450 --> 00:04:07.970
+el valor inferior, el valor inferior redondeado hacia abajo
+
+62
+00:04:07.970 --> 00:04:11.768
+del coste de producto. Su usas int, aunque el valor
+
+63
+00:04:11.768 --> 00:04:15.540
+podría haber sido el mismo, tu intención no es tan clara.
+
+64
+00:04:15.540 --> 00:04:19.920
+Porque cuando veo la palabra int, veo esa función,
+
+65
+00:04:19.920 --> 00:04:22.840
+mi primer pensamiento es que quien sea que lo desarrolló,
+
+66
+00:04:22.840 --> 00:04:27.110
+aunque fuera yo, la intención era convertir
+
+67
+00:04:27.110 --> 00:04:32.110
+el valor a un int, y tiene un efecto secundario que es darte
+
+68
+00:04:32.650 --> 00:04:36.780
+el valor de suelo de ese int porque se elimina cualquier
+
+69
+00:04:36.780 --> 00:04:39.700
+número decimal. Sin embargo, mi intención con eso
+
+70
+00:04:39.700 --> 00:04:43.950
+no sería clara. Cuando aquí, es muy explícito
+
+71
+00:04:43.950 --> 00:04:48.950
+que quiero la versión inferior redondeada hacia abajo.
+
+72
+00:04:49.250 --> 00:04:53.060
+Y el otro tema es que podemos hacer lo contrario.
+
+73
+00:04:53.060 --> 00:04:58.060
+Math también tiene un contrario positivo llamado ceil,
+
+74
+00:04:58.210 --> 00:05:02.610
+que es abreviatura de techo. Si lo ejecuto,
+
+75
+00:05:02.610 --> 00:05:06.210
+veréis que obtenemos 90. Esto va a -
+
+76
+00:05:06.210 --> 00:05:09.720
+el techo nos dará un valor redondeado hacia arriba.
+
+77
+00:05:09.720 --> 00:05:14.720
+Así que si digo 89,12, veréis que sigue devolviendo un 90.
+
+78
+00:05:15.560 --> 00:05:19.700
+Siempre redondeará por arriba al siguiente número completo
+
+79
+00:05:19.700 --> 00:05:23.170
+y devolverá un entero como habéis visto.
+
+80
+00:05:23.170 --> 00:05:25.700
+Lo otro que se puede hacer que es muy guay es que podéis
+
+81
+00:05:25.700 --> 00:05:30.440
+combinarlas. Digamos que vengo y quiero conseguir
+
+82
+00:05:30.440 --> 00:05:35.440
+el valor absoluto de una pérdida, pero también el suelo.
+
+83
+00:05:36.730 --> 00:05:41.730
+Habéis visto que el valor absoluto de pérdida da 20,25
+
+84
+00:05:41.790 --> 00:05:46.790
+pero puedo decir math.floor, ponerlo entre paréntesis y
+
+85
+00:05:48.120 --> 00:05:53.120
+si lo ejecuto obtengo 20,25 redondeado, en este caso, abajo,
+
+86
+00:05:53.760 --> 00:05:56.010
+que técnicamente parece que es erróneo, ¿verdad?
+
+87
+00:05:56.010 --> 00:05:59.650
+Porque son 21. Parece el valor techo.
+
+88
+00:05:59.650 --> 00:06:03.620
+Sin embargo, daos cuenta de que el suelo matemático
+
+89
+00:06:03.620 --> 00:06:08.620
+se pide antes que el valor absoluto. Vamos a hacerlo.
+
+90
+00:06:08.630 --> 00:06:12.990
+Tomémoslo en un par de pasos. Si vengo aquí
+
+91
+00:06:12.990 --> 00:06:17.550
+y quito la orden de valor absoluto y lo ejecuto.
+
+92
+00:06:17.550 --> 00:06:22.550
+Nos da -21. Porque el primer valor es -20,25,
+
+93
+00:06:25.560 --> 00:06:28.200
+así que en realidad vamos en la dirección opuesta.
+
+94
+00:06:28.200 --> 00:06:32.270
+Para que me creáis, vamos a hacerlo incluso
+
+95
+00:06:32.270 --> 00:06:36.130
+sin eso. Hagamos solo la pérdida.
+
+96
+00:06:36.130 --> 00:06:40.970
+La pérdida dará -20,25. Cuando introducimos
+
+97
+00:06:42.440 --> 00:06:47.440
+el suelo, nos va a dar el opuesto como si
+
+98
+00:06:47.440 --> 00:06:52.440
+fuera un número positivo. Y -21 es el valor suelo porque
+
+99
+00:06:53.250 --> 00:06:54.083
+es menor para un número negativo. El motivo
+
+100
+00:06:54.083 --> 00:06:58.871
+por el que quería que vierais esto es para que pudierais
+
+101
+00:07:00.500 --> 00:07:04.430
+ver cómo funciona la prioridad. Si ahora vuelvo
+
+102
+00:07:04.430 --> 00:07:08.500
+a introducir el valor absoluto, la forma en que funciona
+
+103
+00:07:08.500 --> 00:07:13.500
+es que el suelo matemático en la pérdida sería lo primero.
+
+104
+00:07:13.700 --> 00:07:17.680
+Luego, el valor absoluto se calcularía sobre eso. Y esa
+
+105
+00:07:17.680 --> 00:07:21.720
+es la razón por la que si lo ejecutas, obtienes 21.
+
+106
+00:07:21.720 --> 00:07:23.880
+Eso es algo importante saber cuándo
+
+107
+00:07:23.880 --> 00:07:28.780
+anidas funciones como esa. Vale, bajamos
+
+108
+00:07:28.780 --> 00:07:31.820
+y vamos con otra. Hasta ahora, hemos cubierto
+
+109
+00:07:31.820 --> 00:07:35.640
+el valor absoluto, suelo, techo y luego hemos visto cómo
+
+110
+00:07:35.640 --> 00:07:39.050
+podemos combinarlos. El siguiente que haremos
+
+111
+00:07:39.050 --> 00:07:43.730
+es redondear. Es cuando simplemente quieres redondear
+
+112
+00:07:43.730 --> 00:07:48.730
+al número entero más cercano. Puedo decir redondear aquí
+
+113
+00:07:48.800 --> 00:07:51.320
+y luego pondremos el coste de producto.
+
+114
+00:07:51.320 --> 00:07:55.810
+Ahora está a 89,99. Si ejecuto esto,
+
+115
+00:07:55.810 --> 00:08:00.743
+son 90. Pero si lo cambio de nuevo a 89,12, son 89.
+
+116
+00:08:02.880 --> 00:08:06.850
+Si tenéis curiosidad sobre cómo llegar al número
+
+117
+00:08:06.850 --> 00:08:11.760
+entero más cercano, round es una buena forma de hacerlo.
+
+118
+00:08:11.760 --> 00:08:13.780
+Solo hay dos más por cubrir.
+
+119
+00:08:13.780 --> 00:08:17.050
+Serán la raíz cuadrada y luego vamos a trabajar con
+
+120
+00:08:17.050 --> 00:08:21.860
+exponentes. Voy a copiar esto. Y ahora, en vez de
+
+121
+00:08:21.860 --> 00:08:26.860
+redondear, voy a poner math.raíz cuadrada, y así es
+
+122
+00:08:28.340 --> 00:08:32.557
+como ponemos raíz cuadrada en la función sqrt y ahora
+
+123
+00:08:33.840 --> 00:08:38.640
+si ejecuto esto, obtenemos el número decimal de 9,48
+
+124
+00:08:38.640 --> 00:08:42.770
+y luego una lista de valores. Así se obtiene rápidamente
+
+125
+00:08:42.770 --> 00:08:47.180
+la raíz cuadrada, que es una pequeña función increíblemente
+
+126
+00:08:47.180 --> 00:08:49.800
+útil que he usado varias veces.
+
+127
+00:08:49.800 --> 00:08:54.160
+La última que vamos a hacer se llama pow.
+
+128
+00:08:54.160 --> 00:08:59.160
+Puedo decir math.pow y entonces toma dos argumentos.
+
+129
+00:08:59.980 --> 00:09:04.980
+Si pongo 5, 2 y lo imprimo. Son 25 porque
+
+130
+00:09:08.470 --> 00:09:13.470
+eso es 5 al cuadrado. Este es el equivalente,
+
+131
+00:09:13.880 --> 00:09:17.313
+como podréis haber notado a hacer esto.
+
+132
+00:09:19.210 --> 00:09:22.980
+Porque tenemos el operador de exponente aquí
+
+133
+00:09:23.970 --> 00:09:27.870
+y si ejecuto esto y obtengo el mismo número exacto.
+
+134
+00:09:27.870 --> 00:09:31.130
+Si tenéis curiosidad sobre por qué querríais usar uno o
+
+135
+00:09:31.130 --> 00:09:34.613
+el otro. La respuesta está en el resultado. ¿Os fijáis
+
+136
+00:09:34.613 --> 00:09:38.930
+en el resultado cómo obtenemos un número decimal al usar
+
+137
+00:09:38.930 --> 00:09:43.930
+math.pow y cuando solo usamos el operador, el operador
+
+138
+00:09:44.130 --> 00:09:48.370
+de exponente, obtenemos un entero. Eso significa que
+
+139
+00:09:48.370 --> 00:09:51.440
+si vais a la biblioteca matemática y miras
+
+140
+00:09:51.440 --> 00:09:55.540
+la función pow, veréis que es mucho más
+
+141
+00:09:55.540 --> 00:09:59.540
+complejo y mucho más preciso científicamente. Así que si
+
+142
+00:09:59.540 --> 00:10:03.770
+usáis exponentes en cálculos científicos grandes,
+
+143
+00:10:03.770 --> 00:10:07.910
+os interesa usar math pow, mientras que si solo
+
+144
+00:10:07.910 --> 00:10:12.460
+queréis un exponente simple, podéis usar el operador
+
+145
+00:10:12.460 --> 00:10:14.980
+de exponente básico como hemos hecho aquí.
+
+146
+00:10:14.980 --> 00:10:17.310
+Revisando, estas son funciones muy comunes y populares
+
+147
+00:10:17.310 --> 00:10:21.860
+incluidas en la biblioteca de matemática
+
+148
+00:10:21.860 --> 00:10:25.103
+y en la clase de número estándar en Python.
+

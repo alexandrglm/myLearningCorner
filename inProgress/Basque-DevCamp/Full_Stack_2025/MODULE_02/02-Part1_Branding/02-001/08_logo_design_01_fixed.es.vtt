@@ -1,0 +1,698 @@
+WEBVTT
+
+1
+00:00:01.010 --> 00:00:02.400
+<v ->En esta sección del curso,</v>
+
+2
+00:00:02.400 --> 00:00:05.450
+vamos a entrar en uno de los principales
+
+3
+00:00:05.450 --> 00:00:08.400
+conceptos fundamentales que mucha gente piensa
+
+4
+00:00:08.400 --> 00:00:11.320
+cuando piensan en la interfaz de usuario y el diseño
+
+5
+00:00:11.320 --> 00:00:14.120
+y eso es la marca, y ese es
+
+6
+00:00:14.120 --> 00:00:17.840
+un tema muy especial para mí, y es uno
+
+7
+00:00:17.840 --> 00:00:20.600
+que pedí específicamente
+
+8
+00:00:20.600 --> 00:00:22.810
+que me incluyeran, porque para mi,
+
+9
+00:00:22.810 --> 00:00:26.570
+esto se acerca tanto a la magia negra del diseño
+
+10
+00:00:26.570 --> 00:00:30.430
+como cualquier cosa con la que haya trabajado,
+
+11
+00:00:30.430 --> 00:00:32.360
+porque he estado en varios proyectos
+
+12
+00:00:32.360 --> 00:00:36.860
+donde el cliente me pidió que les diseñara un logotipo,
+
+13
+00:00:36.860 --> 00:00:39.231
+y no vamos a presumir de ninguno de esos.
+
+14
+00:00:39.231 --> 00:00:40.970
+<v ->No eran muy buenos,</v>
+
+15
+00:00:40.970 --> 00:00:43.160
+y eso siempre me molestó
+
+16
+00:00:43.160 --> 00:00:45.090
+que yo, por mucho que lo intentaba,
+
+17
+00:00:45.090 --> 00:00:48.340
+parecía que no estaba construyendo algo
+
+18
+00:00:48.340 --> 00:00:49.780
+que pareciese profesional,
+
+19
+00:00:49.780 --> 00:00:52.420
+y así que, un poco sí que viene
+
+20
+00:00:52.420 --> 00:00:54.840
+de la inspiración, porque yo siempre
+
+21
+00:00:54.840 --> 00:00:55.950
+estaba tratando de crear algo
+
+22
+00:00:55.950 --> 00:00:59.190
+completamente único, que es
+
+23
+00:00:59.190 --> 00:01:00.930
+difícil de hacer, y punto, pero realmente difícil de hacer
+
+24
+00:01:00.930 --> 00:01:03.660
+con cosas como logotipos, y ese tipo de cosas,
+
+25
+00:01:03.660 --> 00:01:05.810
+pero luego encima de eso, me faltaba
+
+26
+00:01:05.810 --> 00:01:08.680
+un componente muy importante, y es una cosa
+
+27
+00:01:08.680 --> 00:01:11.140
+que cuando nos sentamos y hablamos de esto
+
+28
+00:01:11.140 --> 00:01:14.520
+y me mostrabais vuestro proceso,
+
+29
+00:01:14.520 --> 00:01:16.110
+en realidad me emocioné mucho,
+
+30
+00:01:16.110 --> 00:01:19.150
+porque lo que Jesse va a ver
+
+31
+00:01:19.150 --> 00:01:22.850
+está enseñando que diseñar logotipos
+
+32
+00:01:22.850 --> 00:01:25.190
+y este tipo de componentes de marca,
+
+33
+00:01:25.190 --> 00:01:27.600
+definitivamente es un arte.
+
+34
+00:01:27.600 --> 00:01:31.440
+pero también hay un componente científico muy fuerte.
+
+35
+00:01:31.440 --> 00:01:32.370
+<v ->Mmm, absolutamente.</v>
+
+36
+00:01:32.370 --> 00:01:35.760
+Sí, y me refiero a la marca es una palabra grande, ¿verdad?
+
+37
+00:01:35.760 --> 00:01:37.400
+Al igual que, y si estamos hablando
+
+38
+00:01:37.400 --> 00:01:39.320
+específicamente sobre logotipos o si estamos hablando
+
+39
+00:01:39.320 --> 00:01:41.320
+sobre el sentimiento general, si eso está siendo
+
+40
+00:01:41.320 --> 00:01:43.440
+puesto en una aplicación con el uso del color
+
+41
+00:01:43.440 --> 00:01:45.870
+y diferentes elementos de marca,
+
+42
+00:01:45.870 --> 00:01:47.610
+o si solo estamos hablando de
+
+43
+00:01:49.750 --> 00:01:52.690
+el nombre y como esta marca
+
+44
+00:01:52.690 --> 00:01:54.370
+se supone que es percibida.
+
+45
+00:01:54.370 --> 00:01:57.920
+Quiero decir, esto podría ser una guía de tres horas
+
+46
+00:01:57.920 --> 00:01:59.870
+solo hablando de esto.
+
+47
+00:01:59.870 --> 00:02:03.650
+Primero, hay mucho de diseño, ¿verdad?
+
+48
+00:02:03.650 --> 00:02:06.530
+Estamos hablando de cosas muy específicas
+
+49
+00:02:06.530 --> 00:02:07.990
+de diseñar logotipos, y como dijiste,
+
+50
+00:02:07.990 --> 00:02:09.940
+muchas veces, especialmente cuando eres autónomo,
+
+51
+00:02:09.940 --> 00:02:12.200
+eres el chico de la tecnología y quieren
+
+52
+00:02:12.200 --> 00:02:13.200
+que te inventes un logotipo.
+
+53
+00:02:13.200 --> 00:02:15.450
+Así que saber un poco al respecto
+
+54
+00:02:15.450 --> 00:02:18.843
+es muy importante, y lo que realmente significa la marca.
+
+55
+00:02:20.548 --> 00:02:22.460
+Aparte de la pura estética de la marca,
+
+56
+00:02:22.460 --> 00:02:23.930
+mi cosa favorita que he escuchado
+
+57
+00:02:23.930 --> 00:02:28.240
+sobre una buena marca es ser buenos narradores, ¿verdad?
+
+58
+00:02:28.240 --> 00:02:30.900
+Y no solo un buen narrador,
+
+59
+00:02:30.900 --> 00:02:32.300
+que cuando piensas en contar historias
+
+60
+00:02:32.300 --> 00:02:33.980
+y muchas veces si estás haciendo
+
+61
+00:02:33.980 --> 00:02:36.050
+la marca para una empresa, piensas,
+
+62
+00:02:36.050 --> 00:02:38.640
+Ah, necesito hacer que esté lo mejor posible,
+
+63
+00:02:38.640 --> 00:02:40.900
+cuando realmente, y esto es lo que me gusta tanto,
+
+64
+00:02:40.900 --> 00:02:44.320
+es que no estás haciendo que la marca sea el héroe.
+
+65
+00:02:44.320 --> 00:02:47.480
+de la historia de sus usuarios, si no que los usuarios
+
+66
+00:02:47.480 --> 00:02:50.810
+son los héroes de su propia historia con la marca, ¿verdad?
+
+67
+00:02:50.810 --> 00:02:51.770
+Es bastante genial.
+
+68
+00:02:51.770 --> 00:02:53.740
+Me refiero a que ves los anuncios de coches
+
+69
+00:02:53.740 --> 00:02:55.780
+y no se trata solo de hacer el coche
+
+70
+00:02:55.780 --> 00:02:58.310
+sea lo más genial del mundo, es que tu eres genial
+
+71
+00:02:58.310 --> 00:03:00.840
+dentro del coche, como si fueras el héroe
+
+72
+00:03:00.840 --> 00:03:02.310
+cuando estás usando este coche,
+
+73
+00:03:02.310 --> 00:03:04.770
+y eso es un concepto realmente genial
+
+74
+00:03:04.770 --> 00:03:07.780
+de lo que la marca puede transmitir, pero podemos
+
+75
+00:03:07.780 --> 00:03:09.770
+adentrarnos mucho en lo que es el
+
+76
+00:03:09.770 --> 00:03:12.750
+método científico específico y método artístico
+
+77
+00:03:12.750 --> 00:03:16.000
+de establecer una buena marca, contando esa historia,
+
+78
+00:03:16.000 --> 00:03:18.894
+diseñando los logotipos, utilizando color.
+
+79
+00:03:18.894 --> 00:03:23.400
+Así que con los logotipos, son bastante frustrantes
+
+80
+00:03:23.400 --> 00:03:25.173
+y también muy gratificantes.
+
+81
+00:03:26.380 --> 00:03:28.520
+Cuando lo haces bien, y están bien,
+
+82
+00:03:28.520 --> 00:03:31.240
+Es simplemente increíble, y puedes ir
+
+83
+00:03:31.240 --> 00:03:32.500
+y ver los logotipos de otra gente,
+
+84
+00:03:32.500 --> 00:03:34.260
+y dices como, ah, bueno,
+
+85
+00:03:34.260 --> 00:03:36.110
+eso tan fácil.
+
+86
+00:03:36.110 --> 00:03:38.070
+No es fácil, quiero decir que tomas algo
+
+87
+00:03:38.070 --> 00:03:39.440
+como el logotipo de Nike, ¿verdad?
+
+88
+00:03:39.440 --> 00:03:41.100
+Y tú dices como, ah, podría hacer eso en dos segundos.
+
+89
+00:03:41.100 --> 00:03:43.796
+Es como, claro, podrías, después de verlo.
+
+90
+00:03:43.796 --> 00:03:45.620 line:15% 
+Exacto.
+
+91
+00:03:45.620 --> 00:03:49.310
+<v ->Y Nike es realmente un buen caso de estudio</v>
+
+92
+00:03:49.310 --> 00:03:50.870
+mirando las diferencias entre
+
+93
+00:03:50.870 --> 00:03:53.460
+un logotipo descriptivo y un logotipo distintivo.
+
+94
+00:03:53.460 --> 00:03:55.350
+Así que la diferencia entre uno descriptivo
+
+95
+00:03:55.350 --> 00:03:58.830
+y un logotipo distintivo es que un logotipo descriptivo
+
+96
+00:03:58.830 --> 00:04:01.100
+va a decir mucho mejor
+
+97
+00:04:01.100 --> 00:04:04.500
+exactamente lo que hace esta marca.
+
+98
+00:04:04.500 --> 00:04:05.890
+Piensa en Dunkin' Donuts, ¿verdad?
+
+99
+00:04:05.890 --> 00:04:09.110
+Dunkin' Donuts tiene café, ¿verdad?
+
+100
+00:04:09.110 --> 00:04:13.040
+Burger King tiene el logotipo en los bollos, ¿verdad?
+
+101
+00:04:13.040 --> 00:04:15.490
+Pero Nike no es un zapato, ¿verdad?
+
+102
+00:04:15.490 --> 00:04:17.640
+Es como una pasada.
+
+103
+00:04:17.640 --> 00:04:19.320
+Ahora, ¿qué está haciendo la pasada?
+
+104
+00:04:19.320 --> 00:04:20.800
+Está transmitiendo movimiento.
+
+105
+00:04:20.800 --> 00:04:22.960
+Está, ya sabes, está transmitiendo la idea
+
+106
+00:04:22.960 --> 00:04:27.340
+de lo que es Nike, pero no necesariamente de lo que es,
+
+107
+00:04:27.340 --> 00:04:29.150
+Y esa es la diferencia entre un logotipo descriptivo
+
+108
+00:04:29.150 --> 00:04:31.310
+y uno distintivo, y algunas veces usas uno
+
+109
+00:04:31.310 --> 00:04:33.273
+y a veces usas el otro.
+
+110
+00:04:35.400 --> 00:04:36.800
+Si realmente vas y empiezas a mirar
+
+111
+00:04:36.800 --> 00:04:38.840
+muchos logotipos muy populares,
+
+112
+00:04:38.840 --> 00:04:41.300
+comenzarás a identificar, donde es como,
+
+113
+00:04:41.300 --> 00:04:43.560
+ah, como no puedo imaginar esta marca
+
+114
+00:04:43.560 --> 00:04:44.550
+siendo algo diferente, pero ahora
+
+115
+00:04:44.550 --> 00:04:46.850
+que estoy mirando este logotipo, es como
+
+116
+00:04:48.258 --> 00:04:50.216
+¿por qué decidieron esto?
+
+117
+00:04:50.216 --> 00:04:51.710
+<v ->Claro, exactamente.</v>
+
+118
+00:04:51.710 --> 00:04:52.930
+<v ->Porque muchas veces ese logotipo.</v>
+
+119
+00:04:52.930 --> 00:04:55.380
+Sólo se está utilizando para establecer la fuerza
+
+120
+00:04:56.416 --> 00:04:59.030
+o se está utilizando para establecer la sabiduría,
+
+121
+00:04:59.030 --> 00:05:02.580
+y puedes hacer eso en base a lo afilados que son los bordes,
+
+122
+00:05:02.580 --> 00:05:05.260
+lo blandos que son, cómo de grueso es,
+
+123
+00:05:05.260 --> 00:05:07.910
+cuánto espacio negativo hay dentro.
+
+124
+00:05:07.910 --> 00:05:10.050
+Hay un par de ejemplos realmente buenos
+
+125
+00:05:10.050 --> 00:05:13.830
+que puedo dar desde mi propia experiencia personal.
+
+126
+00:05:13.830 --> 00:05:16.170
+Uno se incluye no solo haciendo el logotipo
+
+127
+00:05:16.170 --> 00:05:18.400
+pero en realidad haciendo el nombre también para un cliente.
+
+128
+00:05:18.400 --> 00:05:21.590
+Vino a nosotros y quería crear
+
+129
+00:05:22.630 --> 00:05:25.190
+estos suplementos de proteínas que venían en
+
+130
+00:05:25.190 --> 00:05:28.940
+como, unos paquetitos de palitos de azúcar
+
+131
+00:05:28.940 --> 00:05:30.900
+Para antes, durante y después de entrenar.
+
+132
+00:05:30.900 --> 00:05:32.817
+Así que vino, nos dio la idea, y nos dijo,
+
+133
+00:05:32.817 --> 00:05:34.377
+«Esto es lo que va a ser el producto,
+
+134
+00:05:34.377 --> 00:05:35.827
+y tengo una idea para un nombre,
+
+135
+00:05:35.827 --> 00:05:37.910
+y quiero llamarlos palitos de carne.»
+
+136
+00:05:37.910 --> 00:05:41.907
+Y estábamos como, «Vale, podemos tratar de pensar
+
+137
+00:05:41.907 --> 00:05:44.060
+en algo diferente?»
+
+138
+00:05:44.060 --> 00:05:46.060
+<v ->Dijo, claro, si pensamos en algo mejor,</v>
+
+139
+00:05:46.060 --> 00:05:47.730
+porque para él, era como, ah, cabezas de carne,
+
+140
+00:05:47.730 --> 00:05:49.460
+y como eran como palitos de azúcar,
+
+141
+00:05:49.460 --> 00:05:51.620
+y es como, no está bien.
+
+142
+00:05:51.620 --> 00:05:55.490
+Así que lo que hicimos fue un largo proceso.
+
+143
+00:05:55.490 --> 00:05:59.240
+de crear, ¿cuáles son las palabras asociadas con esto?
+
+144
+00:05:59.240 --> 00:06:01.700
+¿A qué cosas queremos que esta marca
+
+145
+00:06:01.700 --> 00:06:03.240
+esté asociada?
+
+146
+00:06:03.240 --> 00:06:05.930
+Y eso ayudará a conducir, no solo cómo la llamamos,
+
+147
+00:06:05.930 --> 00:06:07.483
+pero el logotipo que diseñamos,
+
+148
+00:06:08.860 --> 00:06:11.670
+y si nos fijamos en el logotipo, y podemos sacar esto,
+
+149
+00:06:11.670 --> 00:06:16.060
+donde lo que terminamos haciendo es inventar un nombre
+
+150
+00:06:16.060 --> 00:06:19.810
+que usaba palabras que la gente en un gimnasio
+
+151
+00:06:19.810 --> 00:06:21.350
+usarían normalmente.
+
+152
+00:06:21.350 --> 00:06:24.600
+Así que en lugar de palitos de carne, el nombre
+
+153
+00:06:24.600 --> 00:06:27.410
+que se nos ocurrió fue Triset, ¿verdad?
+
+154
+00:06:27.410 --> 00:06:31.940
+Así que es este proceso de usar estos tres
+
+155
+00:06:31.940 --> 00:06:33.800
+diferentes paquetes individuales, y
+
+156
+00:06:33.800 --> 00:06:35.540
+haces un conjunto de tres de ellos, ¿verdad?
+
+157
+00:06:35.540 --> 00:06:39.350
+Y así, Triset es en realidad un muy buen ejemplo
+
+158
+00:06:39.350 --> 00:06:41.920
+de como, cómo puedes comunicar
+
+159
+00:06:41.920 --> 00:06:43.790
+lo que está haciendo, pero hacerlo de forma distintiva
+
+160
+00:06:43.790 --> 00:06:46.580
+donde no necesariamente, desde el principio,
+
+161
+00:06:46.580 --> 00:06:48.130
+sabes exactamente de lo que está hablando,
+
+162
+00:06:48.130 --> 00:06:49.700
+pero no necesita hacer eso necesariamente.
+
+163
+00:06:49.700 --> 00:06:52.870
+Y luego el logotipo, que era realmente genial,
+
+164
+00:06:52.870 --> 00:06:56.900
+porque la T en el principio y el final
+
+165
+00:06:56.900 --> 00:06:58.760
+pueden unirse y formar el logotipo.
+
+166
+00:06:58.760 --> 00:07:02.450
+que es una columna, que está estableciendo esa fuerza
+
+167
+00:07:02.450 --> 00:07:04.160
+que queríamos comunicar.
+
+168
+00:07:04.160 --> 00:07:05.050
+<v ->Eso es genial.</v>
+
+169
+00:07:05.050 --> 00:07:08.610
+<v ->Y así la marca del logotipo, que sería esa columna</v>
+
+170
+00:07:08.610 --> 00:07:11.070
+se puede utilizar, y luego el tipo de logotipo,
+
+171
+00:07:11.070 --> 00:07:13.760
+que sería todo el Triset escrito.
+
+172
+00:07:13.760 --> 00:07:17.410
+Muy buen ejemplo de tomar la idea
+
+173
+00:07:17.410 --> 00:07:19.450
+que un cliente quería y luego
+
+174
+00:07:19.450 --> 00:07:21.943
+realmente transmitirle el poder de esa distinción.
+

@@ -1,0 +1,622 @@
+WEBVTT
+
+1
+00:00:01.270 --> 00:00:03.560
+<v ->Si recuerdas cuando hablamos de</v>
+
+2
+00:00:03.560 --> 00:00:06.640
+los tipos de data numérica en Python,
+
+3
+00:00:06.640 --> 00:00:10.280
+Les dije que hay una advertencia muy importante
+
+4
+00:00:10.280 --> 00:00:12.940
+cuando se trabaja con decimales, y eso es que si
+
+5
+00:00:12.940 --> 00:00:16.510
+quieres realizar cálculos avanzados,
+
+6
+00:00:16.510 --> 00:00:18.420
+necesitaría ser muy preciso.
+
+7
+00:00:18.420 --> 00:00:21.250
+Entonces, usar el número de coma flotante,
+
+8
+00:00:21.250 --> 00:00:24.060
+no va a ser tu mejor opción.
+
+9
+00:00:24.060 --> 00:00:26.740
+En vez, tenemos otra librería que podemos
+
+10
+00:00:26.740 --> 00:00:30.810
+usar dentro de Python llamada la librería Decimal
+
+11
+00:00:30.810 --> 00:00:32.620
+y esa es la que vamos a ver en esta guía.
+
+12
+00:00:32.620 --> 00:00:36.160
+Voy a mostrarles la diferencia clave entre flotante
+
+13
+00:00:36.160 --> 00:00:39.540
+y decimales y luego podemos hablar un poco sobre
+
+14
+00:00:39.540 --> 00:00:43.160
+cuando querrías usar uno sobre el otro, y esto también
+
+15
+00:00:43.160 --> 00:00:46.890
+va a darnos una introducción agradable a como
+
+16
+00:00:46.890 --> 00:00:49.390
+podemos importar librerías externas.
+
+17
+00:00:49.390 --> 00:00:53.080
+Entonces, aunque decimal está dentro de Python,
+
+18
+00:00:53.080 --> 00:00:55.530
+vamos a tener que llamarla explícitamente
+
+19
+00:00:55.530 --> 00:00:59.030
+porque no podemos simplemente usarla de la misma forma que
+
+20
+00:00:59.030 --> 00:01:02.800
+hemos usado otras funciones hasta este punto.
+
+21
+00:01:02.800 --> 00:01:05.130
+Entonces, antes de continuar inventemos algunas
+
+22
+00:01:05.130 --> 00:01:06.930
+variables de ejemplo.
+
+23
+00:01:06.930 --> 00:01:11.350
+Voy a decir costo de producto y establezcamos esto igual a
+
+24
+00:01:11.350 --> 00:01:15.950
+algún tipo de número de coma flotante como 88,40.
+
+25
+00:01:15.950 --> 00:01:18.840
+Solo mantengo este cero aquí para que sea más fácil
+
+26
+00:01:18.840 --> 00:01:21.250
+de visualizar como un costo.
+
+27
+00:01:21.250 --> 00:01:24.160
+Técnicamente, se va a ver así desde el
+
+28
+00:01:24.160 --> 00:01:27.730
+interpretador de Python porque ignora ceros rezagados.
+
+29
+00:01:27.730 --> 00:01:31.890
+Luego, vamos a inventar una tasa de comisión.
+
+30
+00:01:31.890 --> 00:01:35.590
+Entonces, para la tasa de comisión digamos que esta
+
+31
+00:01:35.590 --> 00:01:38.490
+comisión va a ser 0,08,
+
+32
+00:01:40.951 --> 00:01:41.784
+por el bien del
+
+33
+00:01:41.784 --> 00:01:44.580
+argumento, que es equivalente a 8%.
+
+34
+00:01:44.580 --> 00:01:48.870
+Entonces, estamos usando esto para una herramienta de manejo
+
+35
+00:01:48.870 --> 00:01:51.136
+de comisiones para este programa y
+
+36
+00:01:51.136 --> 00:01:53.095
+luego para cantidades de productos
+
+37
+00:01:53.095 --> 00:01:56.080
+y voy a crear una variable aquí llamada cantidad
+
+38
+00:01:56.080 --> 00:01:59.140
+y diremos que hay, déjenme hacerlo un poco más grande,
+
+39
+00:01:59.140 --> 00:02:03.700
+digamos 450 de estos objetos que son vendidos.
+
+40
+00:02:03.700 --> 00:02:07.430
+Entonces ahora si quiero realizar este cálculo,
+
+41
+00:02:07.430 --> 00:02:11.060
+puedo decir costo de producto, puedo usar el operador
+
+42
+00:02:11.060 --> 00:02:14.290
+de asignación del que recientemente aprendimos y
+
+43
+00:02:14.290 --> 00:02:19.290
+puedo tomar la tasa de comisión y multiplicar eso
+
+44
+00:02:19.330 --> 00:02:24.120
+por el costo de producto y ahora si quiero imprimirlo,
+
+45
+00:02:24.120 --> 00:02:29.120
+puedo decir print el costo del producto multiplicado
+
+46
+00:02:29.670 --> 00:02:31.570
+por la cantidad.
+
+47
+00:02:31.570 --> 00:02:35.250
+Entonces, lo que eso va a hacer es que va a tomar
+
+48
+00:02:35.250 --> 00:02:38.600
+cada uno de estos valores, va a multiplicar la
+
+49
+00:02:38.600 --> 00:02:42.780
+tasa de comisión por el costo del producto y eso
+
+50
+00:02:42.780 --> 00:02:45.060
+nos dará el valor de comisión.
+
+51
+00:02:45.060 --> 00:02:48.630
+Va a sumar eso al costo del producto, así que
+
+52
+00:02:48.630 --> 00:02:52.130
+esencialmente es un sistema que trata de ver
+
+53
+00:02:52.130 --> 00:02:54.880
+cuanto dinero debería ganar un vendedor cada vez
+
+54
+00:02:54.880 --> 00:02:57.990
+que se vende un producto y eso es lo que esto hará, va a
+
+55
+00:02:57.990 --> 00:03:02.540
+decir que este producto pudo costar 88,40,
+
+56
+00:03:02.540 --> 00:03:06.600
+pero también tenemos que pagarle al vendedor 8%, así que
+
+57
+00:03:06.600 --> 00:03:09.780
+queremos el costo total del producto incluyendo la comisión
+
+58
+00:03:09.780 --> 00:03:13.140
+entonces eso es lo que dará, y luego vamos a
+
+59
+00:03:13.140 --> 00:03:17.010
+multiplicar eso por cuántas unidades fueron vendidas, que en
+
+60
+00:03:17.010 --> 00:03:18.103
+este caso son 450.
+
+61
+00:03:19.630 --> 00:03:23.610
+Entonces, voy a correr eso y el valor que obtenemos
+
+62
+00:03:23.610 --> 00:03:28.300
+aquí es 42.962,4
+
+63
+00:03:29.960 --> 00:03:32.190
+y vamos a guardar esto
+
+64
+00:03:33.110 --> 00:03:35.620
+como un comentario, un comentario en línea aquí solo
+
+65
+00:03:35.620 --> 00:03:39.880
+para que puedas ver que este es el valor cuando trabajamos
+
+66
+00:03:39.880 --> 00:03:42.720
+con un flotante porque todos estos, aunque puede que se vean
+
+67
+00:03:42.720 --> 00:03:45.180
+como decimales, técnicamente son
+
+68
+00:03:45.180 --> 00:03:47.170
+números de coma flotante.
+
+69
+00:03:47.170 --> 00:03:49.820
+Ahora, voy a comentar esto, para que no nos
+
+70
+00:03:49.820 --> 00:03:52.040
+confundamos y ahora hablemos sobre
+
+71
+00:03:52.040 --> 00:03:54.080
+cómo podemos trabajar con decimales.
+
+72
+00:03:54.080 --> 00:03:58.080
+Vamos a tener que ir al principio y vamos a importar
+
+73
+00:03:58.080 --> 00:04:01.150
+esto desde Python y la forma en la que puedes importar
+
+74
+00:04:01.150 --> 00:04:05.660
+una librería es diciendo "from decimal", y esto es
+
+75
+00:04:05.660 --> 00:04:10.660
+obviamente para la librería decimal, "import decimal".
+
+76
+00:04:10.820 --> 00:04:14.340
+Ahora, si eso no tiene sentido para ti, no te preocupes.
+
+77
+00:04:14.340 --> 00:04:18.560
+Lo que hacemos aquí es que tenemos acceso en Python a la
+
+78
+00:04:18.560 --> 00:04:23.560
+librería decimal y dentro de la librería decimal
+
+79
+00:04:23.690 --> 00:04:28.100
+hay todo tipo de clases, y funciones, y diferentes
+
+80
+00:04:28.100 --> 00:04:30.870
+elementos así, a la que tenemos acceso, y decimos
+
+81
+00:04:30.870 --> 00:04:35.870
+que queremos tomar la clase decimal y todo lo que
+
+82
+00:04:36.500 --> 00:04:38.910
+eso incluye, todas las funciones y todo lo que
+
+83
+00:04:38.910 --> 00:04:42.240
+se le parece, de la librería decimal y queremos usarlo
+
+84
+00:04:42.240 --> 00:04:43.780
+en este archivo.
+
+85
+00:04:43.780 --> 00:04:47.180
+Ahora, esto es como dije al principio, esto es solo
+
+86
+00:04:47.180 --> 00:04:50.750
+una introducción al trabajo con librerías externas,
+
+87
+00:04:50.750 --> 00:04:53.930
+vamos a tener una sección entera dedicada a eso
+
+88
+00:04:53.930 --> 00:04:56.450
+más adelante cuando entremos en temas más avanzados.
+
+89
+00:04:56.450 --> 00:04:59.170
+Por ahora, mantén en mente que estamos trayendo la
+
+90
+00:04:59.170 --> 00:05:04.170
+librería decimal y la función específica de un decimal,
+
+91
+00:05:04.630 --> 00:05:06.710
+y esto es lo que vamos a usar.
+
+92
+00:05:06.710 --> 00:05:11.710
+Ahora que tenemos todo esto, voy a copiar esto
+
+93
+00:05:11.810 --> 00:05:15.700
+en comentario, comentarlo para que puedas ver ambos
+
+94
+00:05:15.700 --> 00:05:17.310
+lado a lado.
+
+95
+00:05:17.310 --> 00:05:21.170
+Y ahora, la forma en la que puedes crear un decimal es
+
+96
+00:05:21.170 --> 00:05:25.090
+copiar decimal, tiene que ser todo así con eso
+
+97
+00:05:25.090 --> 00:05:29.600
+titulado, con la D mayúscula, y decimal deletreado,
+
+98
+00:05:29.600 --> 00:05:32.097
+y luego, porque es una función, vamos a llamar
+
+99
+00:05:32.097 --> 00:05:35.340
+"Decimal" y lo que eso va a hacer es que va a
+
+100
+00:05:35.340 --> 00:05:39.150
+sobreescribir esto, para que ya no sea un número de coma
+
+101
+00:05:39.150 --> 00:05:41.810
+flotante, ahora va a ser un decimal,
+
+102
+00:05:41.810 --> 00:05:44.750
+y voy a hacer lo mismo aquí
+
+103
+00:05:46.320 --> 00:05:50.160
+y esto nos va a dar lo que estamos buscando.
+
+104
+00:05:50.160 --> 00:05:53.130
+Entonces, tenemos un costo de producto, una tasa de comisión
+
+105
+00:05:53.130 --> 00:05:56.320
+que ahora son decimales, ya no son números de coma flotante.
+
+106
+00:05:56.320 --> 00:05:59.210
+Mantenemos la cantidad igual, y ahora
+
+107
+00:05:59.210 --> 00:06:01.970
+vamos a correr este proceso de nuevo.
+
+108
+00:06:01.970 --> 00:06:05.680
+Entonces, voy a subir al costo del producto, y vamos
+
+109
+00:06:05.680 --> 00:06:07.870
+a comentar todo lo demás.
+
+110
+00:06:07.870 --> 00:06:10.800
+No tenemos que llamar decimal de nuevo porque todos estos
+
+111
+00:06:10.800 --> 00:06:15.700
+elementos son decimales ahora, y si corro esto
+
+112
+00:06:15.700 --> 00:06:19.460
+puedes ver que obtenemos un número mucho mayor.
+
+113
+00:06:19.460 --> 00:06:20.640
+Voy a copiar esto
+
+114
+00:06:22.300 --> 00:06:25.880
+y agregarlo al comentario para que lo tengas para las notas.
+
+115
+00:06:25.880 --> 00:06:30.170
+Ahora esto puede parecer un poco raro porque justo aquí
+
+116
+00:06:30.170 --> 00:06:34.520
+cuando trabajamos con flotantes, simplemente terminamos
+
+117
+00:06:34.520 --> 00:06:39.440
+el cálculo en ,4, y eso parecía bastante preciso.
+
+118
+00:06:39.440 --> 00:06:42.820
+Sin embargo, lo que hace decimales es que te dan un nivel de
+
+119
+00:06:42.820 --> 00:06:46.630
+precisión mucho mayor, puedes ver que técnicamente nuestra
+
+120
+00:06:46.630 --> 00:06:50.600
+comisión y el total para el producto no fue
+
+121
+00:06:50.600 --> 00:06:55.280
+42.962,4, sino que en vez
+
+122
+00:06:55.280 --> 00:07:00.280
+fue 42.962,4 y luego un decimal increíblemente
+
+123
+00:07:01.480 --> 00:07:05.800
+largo aquí, y eso no puede parecer como la gran cosa,
+
+124
+00:07:05.800 --> 00:07:08.880
+pero imagina que estás creando esto para una compañía
+
+125
+00:07:08.880 --> 00:07:12.290
+grande como Walmart o algún tipo de compañía así,
+
+126
+00:07:12.290 --> 00:07:16.040
+y vas a correr este tipo de cálculos
+
+127
+00:07:16.040 --> 00:07:20.710
+todo el día, cada día en millones y billones de dólares
+
+128
+00:07:20.710 --> 00:07:21.960
+en transacciones,
+
+129
+00:07:21.960 --> 00:07:24.700
+entonces estos pequeños números que no parecen
+
+130
+00:07:24.700 --> 00:07:28.530
+la gran cosa van a sumar, y van a causar errores
+
+131
+00:07:28.530 --> 00:07:32.500
+en tu informe financiero,
+
+132
+00:07:32.500 --> 00:07:37.180
+tus cálculos, y eso puede ser un problema.
+
+133
+00:07:37.180 --> 00:07:41.190
+Ahora eso es si estás creando algún tipo de aplicación
+
+134
+00:07:41.190 --> 00:07:44.290
+financiera y quieres asegurarte de que tus cálculos
+
+135
+00:07:44.290 --> 00:07:47.240
+financieros cuando sumas y multiplicas y divides,
+
+136
+00:07:47.240 --> 00:07:48.810
+quieres asegurarte de que
+
+137
+00:07:48.810 --> 00:07:50.640
+esos números son precisos.
+
+138
+00:07:50.640 --> 00:07:54.460
+Ahora, donde esto también entra en juego es cuando se trata
+
+139
+00:07:54.460 --> 00:07:56.830
+de cálculos científicos.
+
+140
+00:07:56.830 --> 00:08:00.422
+Ha habido instancias, de hecho NASA tuvo una situación muy
+
+141
+00:08:00.422 --> 00:08:05.330
+mala donde estaban usando aritmética de coma flotante
+
+142
+00:08:05.330 --> 00:08:09.340
+en vez de estos tipos de decimales de alta precisión,
+
+143
+00:08:09.340 --> 00:08:12.840
+y tuvieron un choque de un trasbordador espacial
+
+144
+00:08:12.840 --> 00:08:16.720
+por eso y entonces es muy crítico asegurar
+
+145
+00:08:16.720 --> 00:08:20.580
+en cualquier tipo de sistema que requiera un
+
+146
+00:08:20.580 --> 00:08:23.570
+alto grado de precisión que eliges la herramienta correcta
+
+147
+00:08:23.570 --> 00:08:24.760
+para el trabajo correcto.
+
+148
+00:08:24.760 --> 00:08:28.330
+Hay muchas veces cuando un número de coma flotante funciona
+
+149
+00:08:28.330 --> 00:08:31.690
+perfectamente bien y entonces puedes usarlo
+
+150
+00:08:31.690 --> 00:08:33.070
+justo así.
+
+151
+00:08:33.070 --> 00:08:37.260
+Sin embargo, cuando se trata de algo relacionado con
+
+152
+00:08:37.260 --> 00:08:41.110
+finanzas, o científico o donde el nivel de precisión es
+
+153
+00:08:41.110 --> 00:08:45.460
+increíblemente importante, entonces es una buena idea traer
+
+154
+00:08:45.460 --> 00:08:48.420
+la clase decimal, justo como hicimos aquí, para que
+
+155
+00:08:48.420 --> 00:08:52.223
+puedas obtener el valor real.
+

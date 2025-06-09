@@ -1,0 +1,334 @@
+WEBVTT
+
+1
+00:00:00.960 --> 00:00:04.670
+<v ->Seguimos con el viaje en las series de datos en Python,</v>
+
+2
+00:00:04.670 --> 00:00:08.340
+vamos a volver atrás y a discutir inmutabilidad.
+
+3
+00:00:08.340 --> 00:00:10.710
+Si recordáis hace unas pocas guías,
+
+4
+00:00:10.710 --> 00:00:14.660
+hablamos sobre cómo las series en Python son inmutables,
+
+5
+00:00:14.660 --> 00:00:17.660
+lo que significa que no pueden ser cambiadas.
+
+6
+00:00:17.660 --> 00:00:19.890
+Eso puede sonar como un concepto raro
+
+7
+00:00:19.890 --> 00:00:22.500
+porque si vienes de otros lenguajes de programación,
+
+8
+00:00:22.500 --> 00:00:27.420
+es increíblemente fácil cambiar los valores de series,
+
+9
+00:00:27.420 --> 00:00:30.520
+pero en Python no es ni posible.
+
+10
+00:00:30.520 --> 00:00:32.970
+Así que, por suerte, hay una serie de formas alternativas.
+
+11
+00:00:32.970 --> 00:00:37.380
+En esta guía quiero hablar sobre la función reemplazar.
+
+12
+00:00:37.380 --> 00:00:40.180
+No es posible sacar provecho de replace
+
+13
+00:00:40.180 --> 00:00:44.050
+para reemplazar completamente una serie.
+
+14
+00:00:44.050 --> 00:00:48.190
+Así que lo que vamos a hacer es sacar provecho de la
+
+15
+00:00:48.190 --> 00:00:51.320
+capacidad de reemplazar, y luego reasignar un nuevo valor.
+
+16
+00:00:51.320 --> 00:00:53.710
+Ahora, si el proceso os
+
+17
+00:00:53.710 --> 00:00:56.310
+suena a chino, no os preocupéis.
+
+18
+00:00:56.310 --> 00:00:57.930
+Vamos a hablar con ejemplos.
+
+19
+00:00:57.930 --> 00:00:59.680
+Así que voy a hacer una oración.
+
+20
+00:00:59.680 --> 00:01:00.970
+Ponemos nuestra favorita,
+
+21
+00:01:00.970 --> 00:01:03.670
+"el zorro rápido marrón
+
+22
+00:01:03.670 --> 00:01:06.373
+saltó sobre el perro vago."
+
+23
+00:01:07.340 --> 00:01:11.230
+Ahora, hablaremos sobre cómo realizar la reasignación.
+
+24
+00:01:11.230 --> 00:01:14.790
+Reasignar, simplemente, como la palabra suena,
+
+25
+00:01:14.790 --> 00:01:19.240
+nos permite reasignar un valor.
+
+26
+00:01:19.240 --> 00:01:23.890
+Si quisiéramos, digamos, sobrescribir el valor de la oración
+
+27
+00:01:23.890 --> 00:01:25.580
+Podría decir oración
+
+28
+00:01:25.580 --> 00:01:27.490
+y luego decir
+
+29
+00:01:27.490 --> 00:01:28.880
+nuevo valor.
+
+30
+00:01:28.880 --> 00:01:31.970
+Si bajo hasta aquí e imprimo la oración,
+
+31
+00:01:31.970 --> 00:01:35.590
+puedes adivinar qué es lo que se va a imprimir.
+
+32
+00:01:35.590 --> 00:01:38.210
+Aquí está, tenemos un valor nuevo.
+
+33
+00:01:38.210 --> 00:01:41.330
+No cambiamos la serie.
+
+34
+00:01:41.330 --> 00:01:44.650
+Recordad cuando hicimos un breve inciso
+
+35
+00:01:44.650 --> 00:01:48.530
+en el que os enseñé que una serie
+
+36
+00:01:48.530 --> 00:01:49.870
+no es variable,
+
+37
+00:01:49.870 --> 00:01:51.720
+que estos son elementos diferentes.
+
+38
+00:01:51.720 --> 00:01:55.240
+Ahora tenemos una variable, un operador de asignación,
+
+39
+00:01:55.240 --> 00:01:58.190
+y tenemos la serie en sí.
+
+40
+00:01:58.190 --> 00:02:00.050
+Lo que estamos haciendo aquí es,
+
+41
+00:02:00.050 --> 00:02:03.720
+cuando estamos redefiniendo esto,
+
+42
+00:02:03.720 --> 00:02:07.760
+o cuando estamos reasignando un valor nuevo en la oración,
+
+43
+00:02:07.760 --> 00:02:09.790
+estamos tocando esta serie.
+
+44
+00:02:09.790 --> 00:02:12.850
+Lo que estamos diciéndole al intérprete Python
+
+45
+00:02:12.850 --> 00:02:15.730
+es que la oración variable
+
+46
+00:02:15.730 --> 00:02:18.670
+es ahora igual a esta serie.
+
+47
+00:02:18.670 --> 00:02:20.930
+Que estas dos son series completamente distintas.
+
+48
+00:02:20.930 --> 00:02:24.220
+Y cuando este valor nuevo se imprima,
+
+49
+00:02:24.220 --> 00:02:28.800
+está apuntando a esta serie de aquí.
+
+50
+00:02:28.800 --> 00:02:31.610
+Con este conocimiento, lo que podemos hacer es
+
+51
+00:02:31.610 --> 00:02:34.180
+no preocuparnos de cambiar la serie
+
+52
+00:02:34.180 --> 00:02:36.200
+porque eso no es posible en Python.
+
+53
+00:02:36.200 --> 00:02:39.800
+Pero lo que podemos hacer es tomar esa serie,
+
+54
+00:02:39.800 --> 00:02:43.670
+realizar cualquier cambio que queramos en ella y reasignarla
+
+55
+00:02:43.670 --> 00:02:48.120
+Y podemos reasignarla de vuelta a la oración variable.
+
+56
+00:02:48.120 --> 00:02:52.260
+Lo que voy a hacer es llamar oración,
+
+57
+00:02:52.260 --> 00:02:56.137
+y aquí, voy a decir: "oración punto replace".
+
+58
+00:02:57.580 --> 00:03:00.340
+Y la función replace necesita dos argumentos.
+
+59
+00:03:00.340 --> 00:03:03.540
+Necesita la palabra que estás buscando y luego,
+
+60
+00:03:03.540 --> 00:03:06.390
+requiere la palabra por la que sustituirla.
+
+61
+00:03:06.390 --> 00:03:10.527
+Aquí voy a decir "Quiero que trates de encontrar rápido,
+
+62
+00:03:10.527 --> 00:03:14.090
+y lo reemplaces con lento."
+
+63
+00:03:14.090 --> 00:03:17.510
+Ahora si le doy atrás, podéis ver que es
+
+64
+00:03:17.510 --> 00:03:21.100
+"el zorro lento marrón saltó sobre el perro vago".
+
+65
+00:03:21.100 --> 00:03:23.170
+¿Qué ha pasado aquí?
+
+66
+00:03:23.170 --> 00:03:25.060
+Cogimos esta oración,
+
+67
+00:03:25.060 --> 00:03:29.050
+que estaba asignada a esta serie en concreto,
+
+68
+00:03:29.050 --> 00:03:33.150
+y luego la reasignamos al mismo nombre.
+
+69
+00:03:33.150 --> 00:03:34.770
+Esta es la misma variable,
+
+70
+00:03:34.770 --> 00:03:37.350
+pero cogimos la referencia a esa serie
+
+71
+00:03:37.350 --> 00:03:39.187
+así que cogimos esa oración y dijimos:
+
+72
+00:03:39.187 --> 00:03:42.920
+"Quiero que reemplaces rápido por lento".
+
+73
+00:03:42.920 --> 00:03:46.150
+Así que, ese es el proceso para poder,
+
+74
+00:03:46.150 --> 00:03:48.660
+no cambiar la serie porque es imposible,
+
+75
+00:03:48.660 --> 00:03:51.890
+pero sí para poder reemplazar una palabra clave,
+
+76
+00:03:51.890 --> 00:03:56.090
+la función replace, con el proceso de reasignación.
+
+77
+00:03:56.090 --> 00:03:59.110
+Así que ahora podemos conseguir exactamente el mismo
+
+78
+00:03:59.110 --> 00:04:00.490
+topo de meta que teníamos,
+
+79
+00:04:00.490 --> 00:04:03.810
+que era tomar una serie y cambiarla.
+
+80
+00:04:03.810 --> 00:04:05.400
+Pero pudimos hacerlo dentro
+
+81
+00:04:05.400 --> 00:04:08.030
+de las normas que Python tiene.
+
+82
+00:04:08.030 --> 00:04:09.610
+Así que, así es como puedes sacar provecho
+
+83
+00:04:09.610 --> 00:04:12.943
+de la función replace dentro de Python.
+

@@ -1,0 +1,506 @@
+WEBVTT
+
+1
+00:00:01.150 --> 00:00:02.750
+[Instructor] En esta lección vamos a pasar por la
+
+2
+00:00:02.750 --> 00:00:04.990
+propiedad del flex-wrap,
+
+3
+00:00:04.990 --> 00:00:08.570
+y cómo usarlo dentro de nuestros programas.
+
+4
+00:00:08.570 --> 00:00:10.730
+Así que aquí del lado derecho,
+
+5
+00:00:10.730 --> 00:00:11.970
+tengo
+
+6
+00:00:11.970 --> 00:00:13.670
+un conjunto de imágenes
+
+7
+00:00:13.670 --> 00:00:14.610
+y también,
+
+8
+00:00:14.610 --> 00:00:15.890
+como una nota adicional,
+
+9
+00:00:15.890 --> 00:00:19.270
+mientras estaba grabando esto, el Unsplash API
+
+10
+00:00:19.270 --> 00:00:21.700
+la cual usualmente utilizo para atrapar estas imágenes
+
+11
+00:00:21.700 --> 00:00:24.020
+estaba presentando problemas así que,
+
+12
+00:00:24.020 --> 00:00:28.363
+agregue algunas imágenes de muestra al proyecto repositorio
+
+13
+00:00:29.416 --> 00:00:31.560
+para que puedas ir y tomar estas tu mismo.
+
+14
+00:00:31.560 --> 00:00:34.890
+Y las uses en caso que no tengas acceso
+
+15
+00:00:34.890 --> 00:00:37.020
+a la imagen Unsplash API
+
+16
+00:00:37.020 --> 00:00:39.710
+o si esta apagada, como esta para mi ahora mismo.
+
+17
+00:00:39.710 --> 00:00:42.040
+Así que lo que tenemos aquí es
+
+18
+00:00:42.040 --> 00:00:45.660
+una situación donde tenemos todas estas imágenes.
+
+19
+00:00:45.660 --> 00:00:48.610
+Y, si bajamos y miramos al HTML
+
+20
+00:00:48.610 --> 00:00:52.460
+puedes ver que tenemos un div de clase="contenedor"
+
+21
+00:00:52.460 --> 00:00:56.140
+y dentro de eso, eso va a ser nuestro
+
+22
+00:00:56.140 --> 00:00:59.130
+contenedor flex, y luego tenemos
+
+23
+00:00:59.130 --> 00:01:02.710
+esta clase="img_blocks" lo cual es otro div
+
+24
+00:01:02.710 --> 00:01:07.230
+y después dentro de lo que tenemos un número de imágenes.
+
+25
+00:01:07.230 --> 00:01:10.240
+Ahora con eso lo que queremos hacer
+
+26
+00:01:10.240 --> 00:01:12.910
+imagina que estas construyendo un sitio de portafolio
+
+27
+00:01:12.910 --> 00:01:15.330
+para una agencia y algo así.
+
+28
+00:01:15.330 --> 00:01:19.480
+Y ellos quieren exhibir todos sus proectos
+
+29
+00:01:19.480 --> 00:01:20.910
+y su anterior trabajo.
+
+30
+00:01:20.910 --> 00:01:22.460
+Esta es una cosa muy común que
+
+31
+00:01:22.460 --> 00:01:24.200
+te pedirán construir.
+
+32
+00:01:24.200 --> 00:01:26.640
+Y entonces, el comportamiento básico
+
+33
+00:01:26.640 --> 00:01:30.560
+es muy similar a lo que típicamente haríamos con
+
+34
+00:01:30.560 --> 00:01:33.610
+el simple HTML y CSS.
+
+35
+00:01:33.610 --> 00:01:35.820
+Si vienes aquí y miras,
+
+36
+00:01:35.820 --> 00:01:38.620
+puedes ver que estamos muy cerca a lo que
+
+37
+00:01:38.620 --> 00:01:39.530
+queremos hacer.
+
+38
+00:01:39.530 --> 00:01:44.530
+Así que, lo que idealmente quiero, si amplio esto,
+
+39
+00:01:44.550 --> 00:01:48.150
+es que quiero imitar los comportamientos estandar
+
+40
+00:01:48.150 --> 00:01:51.370
+que obtienes con HTML donde si tu tienes
+
+41
+00:01:51.370 --> 00:01:53.540
+la pantalla lo suficientemente ancha,
+
+42
+00:01:53.540 --> 00:01:56.520
+entonces puedes tener 4 elementos y si tu
+
+43
+00:01:56.520 --> 00:01:58.500
+sigues ampliando la pantalla
+
+44
+00:01:58.500 --> 00:02:01.290
+entonces ellas seguirán saliendo justo ahí.
+
+45
+00:02:01.290 --> 00:02:04.450
+Así que sin tocar HTML o CSS,
+
+46
+00:02:04.450 --> 00:02:07.980
+esta es la manera en que funciona.
+
+47
+00:02:07.980 --> 00:02:10.920
+Pero ahora imagina un escenario donde no solo
+
+48
+00:02:10.920 --> 00:02:13.790
+quieres tener este tipo de comportamiento,
+
+49
+00:02:13.790 --> 00:02:16.660
+también querrás tener todo este contenido
+
+50
+00:02:16.660 --> 00:02:18.480
+y todas estas imágenes centradas,
+
+51
+00:02:18.480 --> 00:02:21.440
+y quieres usar Flexbox para hacer eso.
+
+52
+00:02:21.440 --> 00:02:24.360
+Podrías pensar que podrías hacer algo como esto.
+
+53
+00:02:24.360 --> 00:02:26.460
+Así que, vamos a pasar por esto,
+
+54
+00:02:26.460 --> 00:02:30.050
+déjame encogerlo para tener en el tamaño correcto.
+
+55
+00:02:30.050 --> 00:02:32.890
+Así que voy a adentrarme en nuestro contenedor
+
+56
+00:02:32.890 --> 00:02:36.510
+y empezamos a adicionar algunos estilos de Flexbox.
+
+57
+00:02:36.510 --> 00:02:39.230
+Así que voy a decir que esto va a
+
+58
+00:02:39.230 --> 00:02:43.130
+mostrar no en línea, va a mostrar Flex,
+
+59
+00:02:43.130 --> 00:02:46.870
+y luego quiero justificar el contenido
+
+60
+00:02:46.870 --> 00:02:48.500
+y quiero centrarlo.
+
+61
+00:02:48.500 --> 00:02:51.340
+Y luego quiero alinear
+
+62
+00:02:51.340 --> 00:02:52.200
+elementos
+
+63
+00:02:53.320 --> 00:02:56.760
+y luego los quiero centrar.
+
+64
+00:02:56.760 --> 00:02:59.360
+Le doy guardar, y luego puedes ver que tenemos
+
+65
+00:02:59.360 --> 00:03:01.810
+un poco del comportamiento que estamos buscando
+
+66
+00:03:01.810 --> 00:03:04.600
+pero recuerda, porque este es nuestro Flexbox
+
+67
+00:03:04.600 --> 00:03:07.710
+y nosotros, o este es nuestro contenedor de Flexbox
+
+68
+00:03:07.710 --> 00:03:10.360
+solo tiene un elemento hijo,
+
+69
+00:03:10.360 --> 00:03:12.870
+el cual es este img_blocks div.
+
+70
+00:03:12.870 --> 00:03:15.710
+Y entonces todo lo que estamos haciendo ahora
+
+71
+00:03:15.710 --> 00:03:18.900
+cuando estamos diciendo justificar contenido y alinear
+
+72
+00:03:18.900 --> 00:03:21.840
+elementos y todo lo que somos capaces de hacer es
+
+73
+00:03:21.840 --> 00:03:22.850
+centrar este,
+
+74
+00:03:22.850 --> 00:03:24.550
+todo el div,
+
+75
+00:03:24.550 --> 00:03:27.520
+no cada uno de los elementos dentro de este.
+
+76
+00:03:27.520 --> 00:03:30.290
+Así que esto nos esta acercando un poco
+
+77
+00:03:30.290 --> 00:03:33.100
+pero ahora necesitamos ir y agregar algunos estilos a
+
+78
+00:03:33.100 --> 00:03:34.540
+nuestra clase img_blocks.
+
+79
+00:03:34.540 --> 00:03:37.160
+Así que bajemos aquí
+
+80
+00:03:37.160 --> 00:03:41.520
+y digamos que dentro de nuestro contenedor
+
+81
+00:03:41.520 --> 00:03:45.870
+y nuestra clase img_blocks, tambien queremos
+
+82
+00:03:45.870 --> 00:03:47.400
+hacer este contenedor flex.
+
+83
+00:03:47.400 --> 00:03:51.820
+Así que voy a decir mostrar: flex y luego de allí
+
+84
+00:03:51.820 --> 00:03:55.530
+voy a decir justificar contenido: centrar.
+
+85
+00:03:55.530 --> 00:03:58.120
+Y voy a usar el mismo, más o menos la misma cosa,
+
+86
+00:03:58.120 --> 00:04:00.500
+lo podía copiar, porque voy a decir
+
+87
+00:04:00.500 --> 00:04:05.500
+alinear elementos y quiero centrarlos también.
+
+88
+00:04:05.570 --> 00:04:07.140
+Ahora si guardo esto
+
+89
+00:04:07.140 --> 00:04:10.230
+que no es el comportamiento que estamos buscando.
+
+90
+00:04:10.230 --> 00:04:13.610
+Ven aquí y vamos a ampliar esto.
+
+91
+00:04:13.610 --> 00:04:15.060
+Toda la pantalla completa.
+
+92
+00:04:15.060 --> 00:04:17.700
+Puedes ver que esto no es
+
+93
+00:04:17.700 --> 00:04:19.660
+lo que estamos buscando de ninguna manera.
+
+94
+00:04:19.660 --> 00:04:21.870
+Tenemos toda clase de problemas raros donde
+
+95
+00:04:21.870 --> 00:04:24.840
+las imágenes están empezando muy lejos de la izquierda,
+
+96
+00:04:24.840 --> 00:04:27.990
+de hecho están causando que toda la página vaya a la derecha
+
+97
+00:04:27.990 --> 00:04:31.410
+y vayan por la borde del div padre
+
+98
+00:04:31.410 --> 00:04:34.080
+que definitivamente no es lo que queremos que suceda.
+
+99
+00:04:34.080 --> 00:04:37.700
+Y entonces, es ahí donde la propiedad de flex-wrap
+
+100
+00:04:37.700 --> 00:04:39.410
+entra a jugar.
+
+101
+00:04:39.410 --> 00:04:44.410
+Si vamos a este contenedor img_blocks, justo aquí,
+
+102
+00:04:44.860 --> 00:04:48.100
+si bajo justi bajo los elementos alineados
+
+103
+00:04:48.100 --> 00:04:50.710
+digo flex-wrap,
+
+104
+00:04:50.710 --> 00:04:53.170
+o flex dash wrap,
+
+105
+00:04:53.170 --> 00:04:56.920
+y solo pasa envuelto,
+
+106
+00:04:56.920 --> 00:04:59.070
+y si le doy guardar a esto
+
+107
+00:04:59.070 --> 00:05:01.870
+puedes ver que ahora esta trabajando perfectamente.
+
+108
+00:05:01.870 --> 00:05:04.740
+Así que ese flex-wrap lo hace simplemente
+
+109
+00:05:04.740 --> 00:05:06.690
+nos dice cada uno de los elementos
+
+110
+00:05:06.690 --> 00:05:09.930
+que tan pronto lleguen al límite
+
+111
+00:05:09.930 --> 00:05:13.530
+del contenedor, que simplemente los mueva hacía
+
+112
+00:05:13.530 --> 00:05:14.680
+abajo en la siguiente línea,
+
+113
+00:05:14.680 --> 00:05:18.580
+así que esta imitando el estándar del comportamiento HTML
+
+114
+00:05:18.580 --> 00:05:22.090
+pero esta combinando eso y esta fusionándose en lo que
+
+115
+00:05:22.090 --> 00:05:24.710
+tenemos con Flexbox.
+
+116
+00:05:24.710 --> 00:05:28.030
+Así que ahora, si miramos a esta pantalla grande
+
+117
+00:05:28.030 --> 00:05:29.300
+puedes ver que estamos obteniendo
+
+118
+00:05:29.300 --> 00:05:31.120
+el comportamiento exacto que queremos.
+
+119
+00:05:31.120 --> 00:05:34.350
+Donde simplemente están yéndose uno al lado del otro
+
+120
+00:05:34.350 --> 00:05:36.950
+y justo cuando da con el borde,
+
+121
+00:05:36.950 --> 00:05:40.470
+en vez de ampliarse y empujarse a la izquierda
+
+122
+00:05:40.470 --> 00:05:43.000
+o hacer algo como eso, simplemente baja
+
+123
+00:05:43.000 --> 00:05:46.440
+a la siguiente línea, o se envuelve a la siguiente línea.
+
+124
+00:05:46.440 --> 00:05:49.580
+Lo cual es el génesis del nombre.
+
+125
+00:05:49.580 --> 00:05:53.010
+Así que así es como puedes usar Flexbox
+
+126
+00:05:53.010 --> 00:05:55.423
+y la propiedad de flex-wrap.
+

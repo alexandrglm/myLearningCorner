@@ -1,0 +1,2025 @@
+WEBVTT
+
+1
+00:00:00.584 --> 00:00:01.417
+<v ->Hola</v>
+
+2
+00:00:01.417 --> 00:00:03.160
+y bienvenidos a nuestra guía
+
+3
+00:00:03.160 --> 00:00:04.510
+de inspiración,
+
+4
+00:00:04.510 --> 00:00:05.490
+cómo se aplica
+
+5
+00:00:05.490 --> 00:00:07.480
+a una interfaz de usuario.
+
+6
+00:00:07.480 --> 00:00:10.580
+Esta es una parte muy importante del curso
+
+7
+00:00:10.580 --> 00:00:12.180
+porque cuando he realizado
+
+8
+00:00:12.180 --> 00:00:13.570
+otros cursos de interfaz de usuario
+
+9
+00:00:13.570 --> 00:00:15.630
+he tratado de aprender
+
+10
+00:00:15.630 --> 00:00:16.660
+qué tipos
+
+11
+00:00:16.660 --> 00:00:18.720
+de cosas son importantes.
+
+12
+00:00:18.720 --> 00:00:19.580
+Uno para enseñar,
+
+13
+00:00:19.580 --> 00:00:21.870
+y también para aprender.
+
+14
+00:00:21.870 --> 00:00:25.050
+Este parece ser un componente muy crítico
+
+15
+00:00:25.050 --> 00:00:26.636
+que parecía faltar.
+<v ->¡Sí!</v>
+
+16
+00:00:26.636 --> 00:00:27.469
+<v ->Así que</v>
+
+17
+00:00:27.469 --> 00:00:29.550
+por eso que vamos a entrar en ello de inmediato,
+
+18
+00:00:29.550 --> 00:00:32.760
+porque siempre que he probado el diseño,
+
+19
+00:00:32.760 --> 00:00:33.593
+cualquier cosa,
+
+20
+00:00:33.593 --> 00:00:34.850
+ya sea de un sitio web, un logotipo,
+
+21
+00:00:34.850 --> 00:00:36.430
+o algo por el estilo,
+
+22
+00:00:36.430 --> 00:00:38.165
+uno de los pasos más difíciles que tengo es
+
+23
+00:00:38.165 --> 00:00:39.760
+ese primero,
+
+24
+00:00:39.760 --> 00:00:40.710
+que es
+
+25
+00:00:40.710 --> 00:00:42.151
+que no tengo ni idea de qué exactamente
+
+26
+00:00:42.151 --> 00:00:43.880
+¡diseñar!
+<v ->¡Exacto!</v>
+
+27
+00:00:43.880 --> 00:00:44.713
+<v ->Y,</v>
+
+28
+00:00:44.713 --> 00:00:45.700
+cuando yo
+
+29
+00:00:45.700 --> 00:00:47.888
+hablo con otros diseñadores,
+
+30
+00:00:47.888 --> 00:00:50.500
+casi se saltan esa parte
+
+31
+00:00:50.500 --> 00:00:51.450
+un poco,
+
+32
+00:00:51.450 --> 00:00:53.113
+y para mí sin eso,
+
+33
+00:00:53.113 --> 00:00:55.820
+realmente no puedes hacer nada más.
+
+34
+00:00:55.820 --> 00:00:58.100
+Así que quería hablar contigo
+
+35
+00:00:58.100 --> 00:00:58.950
+y
+
+36
+00:00:58.950 --> 00:00:59.870
+saber un poco
+
+37
+00:00:59.870 --> 00:01:01.800
+cuál es tu sistema personal
+
+38
+00:01:01.800 --> 00:01:03.650
+para obtener inspiración.
+
+39
+00:01:03.650 --> 00:01:05.480
+Así que cuando digo,
+
+40
+00:01:05.480 --> 00:01:07.120
+necesito la característica X, Y, Z.
+
+41
+00:01:07.120 --> 00:01:08.118
+<v ->Sí.</v>
+
+42
+00:01:08.118 --> 00:01:10.439
+<v ->¿Cómo sabes que debería ser esta caja</v>
+
+43
+00:01:10.439 --> 00:01:12.650
+con este tipo de bordes redondeados?
+
+44
+00:01:12.650 --> 00:01:14.990
+¿Y dónde colocas todos los componentes?
+
+45
+00:01:14.990 --> 00:01:16.567
+Y solo un poco hablar con
+
+46
+00:01:16.567 --> 00:01:18.764
+como obtienes ese tipo de ideas
+
+47
+00:01:18.764 --> 00:01:20.240
+para los proyectos en los que trabajas.
+
+48
+00:01:20.240 --> 00:01:21.073
+<v ->¡Correcto! Absolutamente,</v>
+
+49
+00:01:21.073 --> 00:01:21.906
+así que,
+
+50
+00:01:21.906 --> 00:01:23.013
+encuentro
+
+51
+00:01:23.013 --> 00:01:26.070
+que a muchos diseñadores les cuesta un poco
+
+52
+00:01:26.070 --> 00:01:27.070
+hablar de esto a veces,
+
+53
+00:01:27.070 --> 00:01:28.050
+no con otros diseñadores,
+
+54
+00:01:28.050 --> 00:01:29.510
+pero tal vez en una situación como esta
+
+55
+00:01:29.510 --> 00:01:30.790
+porque es casi como
+
+56
+00:01:30.790 --> 00:01:31.623
+ya sabes,
+
+57
+00:01:31.623 --> 00:01:33.330
+estás regalando un poco
+
+58
+00:01:33.330 --> 00:01:34.173
+la salsa secreta.
+
+59
+00:01:35.040 --> 00:01:35.990
+El concepto
+
+60
+00:01:35.990 --> 00:01:39.560
+de mirar otro trabajo en busca de inspiración
+
+61
+00:01:39.560 --> 00:01:40.770
+es crucial.
+
+62
+00:01:40.770 --> 00:01:42.080
+No hay razón para no hacerlo,
+
+63
+00:01:42.080 --> 00:01:44.820
+así es como estamos mejorando en nuestros diseños
+
+64
+00:01:44.820 --> 00:01:45.653
+y estamos iterando.
+
+65
+00:01:45.653 --> 00:01:47.200
+El diseño está cambiando,
+
+66
+00:01:47.200 --> 00:01:48.850
+las aplicaciones que se ven hoy
+
+67
+00:01:48.850 --> 00:01:51.600
+son diferentes de hace tres años,
+
+68
+00:01:51.600 --> 00:01:52.460
+y van a verse diferentes
+
+69
+00:01:52.460 --> 00:01:53.320
+en tres años a partir de ahora,
+
+70
+00:01:53.320 --> 00:01:55.755
+y todo el mundo es una especie de, ya sabes,
+
+71
+00:01:55.755 --> 00:01:56.588
+estamos desarrollando
+
+72
+00:01:56.588 --> 00:01:58.040
+y hemos pasado de esto,
+
+73
+00:01:58.040 --> 00:01:59.537
+volvamos en el tiempo seis años,
+
+74
+00:01:59.537 --> 00:02:01.970
+todo estaba usando lo que se llama
+
+75
+00:02:01.970 --> 00:02:03.260
+diseño esqueuomórfico.
+
+76
+00:02:03.260 --> 00:02:05.562
+Así que si piensas como el original
+
+77
+00:02:05.562 --> 00:02:07.480
+Iphone IOS,
+
+78
+00:02:07.480 --> 00:02:10.170
+como Notes tenía como
+
+79
+00:02:10.170 --> 00:02:11.770
+un poco de cuero falso.
+<v ->Sí.</v>
+
+80
+00:02:11.770 --> 00:02:12.785
+arriba en la parte superior.
+<v ->Sí.</v>
+
+81
+00:02:12.785 --> 00:02:14.470
+<v ->Todo se veía igual.</v>
+
+82
+00:02:14.470 --> 00:02:16.030
+Fue una interpretación digital
+
+83
+00:02:16.030 --> 00:02:17.902
+de un elemento físico.
+
+84
+00:02:17.902 --> 00:02:18.735
+Así que,
+
+85
+00:02:18.735 --> 00:02:19.573
+el sombreado, la sombra paralela,
+
+86
+00:02:19.573 --> 00:02:21.920
+como si todo fuera como realmente
+
+87
+00:02:21.920 --> 00:02:23.550
+como pseudorealista, ¿verdad?
+
+88
+00:02:23.550 --> 00:02:24.993
+Eso se llama esqueuomorfismo.
+
+89
+00:02:25.960 --> 00:02:26.793
+De repente,
+
+90
+00:02:26.793 --> 00:02:28.600
+se convirtió en muy anticuado,
+
+91
+00:02:28.600 --> 00:02:30.030
+era iOS 7
+
+92
+00:02:30.030 --> 00:02:30.863
+cuando de repente
+
+93
+00:02:30.863 --> 00:02:33.030
+se volvió todo plano.
+<v ->Ya.</v>
+
+94
+00:02:33.030 --> 00:02:34.760
+<v ->Como casi ninguna sombra caída.</v>
+
+95
+00:02:34.760 --> 00:02:36.170
+Todo era solo colores planos
+
+96
+00:02:36.170 --> 00:02:37.894
+casi ningún gradiente.
+
+97
+00:02:37.894 --> 00:02:40.080
+Y fue realmente un reto para mucha gente
+
+98
+00:02:40.080 --> 00:02:41.220
+fuera de la comunidad del diseño
+
+99
+00:02:41.220 --> 00:02:43.130
+porque dentro de la comunidad del diseño
+
+100
+00:02:43.130 --> 00:02:44.630
+ya habíamos estado viendo que eso sucedía,
+
+101
+00:02:44.630 --> 00:02:45.463
+habíamos estado viendo
+
+102
+00:02:45.463 --> 00:02:46.700
+sitios web haciendo eso
+
+103
+00:02:46.700 --> 00:02:47.900
+y así entonces,
+
+104
+00:02:47.900 --> 00:02:48.830
+IOS lo hizo
+
+105
+00:02:48.830 --> 00:02:49.970
+y el mundo era como:
+
+106
+00:02:49.970 --> 00:02:50.803
+¡Ahh!
+
+107
+00:02:50.803 --> 00:02:52.469
+No me gusta esto.
+
+108
+00:02:52.469 --> 00:02:53.982
+La razón por la cual,
+
+109
+00:02:53.982 --> 00:02:56.730
+Steve Jobs quería el diseño esqueuomórfico
+
+110
+00:02:56.730 --> 00:02:57.563
+primero,
+
+111
+00:02:57.563 --> 00:02:59.460
+Es porque la gente no estaba acostumbrada
+
+112
+00:02:59.460 --> 00:03:00.721
+a trabajar en un smartphone.
+<v ->¡Cierto!</v>
+
+113
+00:03:00.721 --> 00:03:03.780
+<v ->Así que quería muchos elementos del mundo real</v>
+
+114
+00:03:03.780 --> 00:03:04.613
+en eso,
+
+115
+00:03:04.613 --> 00:03:06.720
+así al menos la gente se sentiría un poco
+
+116
+00:03:06.720 --> 00:03:07.553
+más segura,
+
+117
+00:03:07.553 --> 00:03:10.050
+un poco haciendo ese salto al reino digital.
+
+118
+00:03:10.050 --> 00:03:11.380
+La razón por la que menciona estas cosas
+
+119
+00:03:11.380 --> 00:03:12.213
+es porque
+
+120
+00:03:12.213 --> 00:03:13.630
+el diseño siempre está cambiando
+
+121
+00:03:13.630 --> 00:03:15.074
+y va a empezar
+
+122
+00:03:15.074 --> 00:03:18.365
+a comunicarse al público de diferentes maneras.
+
+123
+00:03:18.365 --> 00:03:20.200
+Nosotros,
+
+124
+00:03:20.200 --> 00:03:22.440
+no sabíamos cómo desplazarnos muy bien
+
+125
+00:03:22.440 --> 00:03:23.700
+cuando los sitios web salieron por primera vez,
+
+126
+00:03:23.700 --> 00:03:24.533
+así que todos están amontonando
+
+127
+00:03:24.533 --> 00:03:26.700
+todo el contenido arriba del todo,
+
+128
+00:03:26.700 --> 00:03:27.990
+lo estaban poniendo en esos
+
+129
+00:03:27.990 --> 00:03:29.360
+primeros 900 píxeles.
+<v ->Ya.</v>
+
+130
+00:03:29.360 --> 00:03:30.387
+<v ->¡Porque así lo hicieron con los periódicos!</v>
+
+131
+00:03:30.387 --> 00:03:31.290
+¿No?
+<v ->¡Sí!</v>
+
+132
+00:03:31.290 --> 00:03:32.123
+<v ->En los periódicos,</v>
+
+133
+00:03:32.123 --> 00:03:34.200
+pones todas las grandes historias allí
+
+134
+00:03:34.200 --> 00:03:35.810
+y así cuando inventamos sitios web,
+
+135
+00:03:35.810 --> 00:03:37.870
+oh esto es solo una especie de periódico
+
+136
+00:03:37.870 --> 00:03:38.880
+en una computadora.
+
+137
+00:03:38.880 --> 00:03:40.420
+Así que eso es lo que la gente trata de hacer
+
+138
+00:03:40.420 --> 00:03:41.290
+y si vuelves
+
+139
+00:03:41.290 --> 00:03:43.550
+a un sitio web de 1998,
+
+140
+00:03:43.550 --> 00:03:44.826
+tengo todas las cosas como
+
+141
+00:03:44.826 --> 00:03:47.390
+arriba antes de desplazarme.
+<v ->Absolutamente.</v>
+
+142
+00:03:47.390 --> 00:03:49.050
+<v ->Y entonces,</v>
+
+143
+00:03:49.050 --> 00:03:49.883
+ahora
+
+144
+00:03:49.883 --> 00:03:51.430
+llegamos al 2010,
+
+145
+00:03:51.430 --> 00:03:52.305
+la gente se dio cuenta
+
+146
+00:03:52.305 --> 00:03:54.050
+de que puedes desplazarte
+
+147
+00:03:54.050 --> 00:03:55.730
+y luego empiezas a ver muchas más páginas
+
+148
+00:03:55.730 --> 00:03:56.800
+de captación
+
+149
+00:03:56.800 --> 00:03:59.000
+donde se puede contar una historia, ya sabes,
+
+150
+00:03:59.000 --> 00:04:01.040
+sección por sección por sección.
+
+151
+00:04:01.040 --> 00:04:01.923
+Por lo que,
+
+152
+00:04:03.320 --> 00:04:04.729
+el diseño sigue cambiando
+
+153
+00:04:04.729 --> 00:04:07.370
+y por eso necesitas poder salir
+
+154
+00:04:07.370 --> 00:04:08.362
+y ver el aspecto
+
+155
+00:04:08.362 --> 00:04:10.183
+de las aplicaciones,
+
+156
+00:04:10.183 --> 00:04:12.290
+ver los sitios web.
+
+157
+00:04:12.290 --> 00:04:13.123
+Así que,
+
+158
+00:04:13.123 --> 00:04:14.152
+lo primero que hago,
+
+159
+00:04:14.152 --> 00:04:16.180
+hay dos sitios web muy populares
+
+160
+00:04:16.180 --> 00:04:17.013
+donde los diseñadores
+
+161
+00:04:17.013 --> 00:04:17.846
+publican su trabajo.
+
+162
+00:04:17.846 --> 00:04:18.970
+Lo publican,
+
+163
+00:04:18.970 --> 00:04:20.600
+uno para,
+
+164
+00:04:20.600 --> 00:04:21.857
+un poco conseguir seguidores,
+
+165
+00:04:21.857 --> 00:04:23.090
+es como Instagram,
+
+166
+00:04:23.090 --> 00:04:24.480
+Pero solo para diseños.
+<v ->Sí.</v>
+
+167
+00:04:24.480 --> 00:04:25.780
+<v ->Así que está</v>
+
+168
+00:04:25.780 --> 00:04:26.613
+Behance
+
+169
+00:04:26.613 --> 00:04:27.700
+y está Dribble.
+
+170
+00:04:27.700 --> 00:04:29.770
+Ambos son realmente geniales.
+
+171
+00:04:29.770 --> 00:04:31.020
+Yo solo paso de un lado a otro
+
+172
+00:04:31.020 --> 00:04:31.930
+entre los dos.
+
+173
+00:04:31.930 --> 00:04:33.490
+Así que,
+
+174
+00:04:33.490 --> 00:04:34.323
+lo que estás haciendo
+
+175
+00:04:34.323 --> 00:04:36.053
+no es necesariamente ir para decir:
+
+176
+00:04:36.053 --> 00:04:38.840
+Voy a ir y me voy completamente
+
+177
+00:04:38.840 --> 00:04:41.080
+a imitar a otro diseño
+
+178
+00:04:41.080 --> 00:04:43.290
+porque es probable
+
+179
+00:04:43.290 --> 00:04:45.900
+que nadie realmente ha diseñado la aplicación exacta
+
+180
+00:04:45.900 --> 00:04:46.733
+que estás haciendo,
+
+181
+00:04:46.733 --> 00:04:47.800
+tal vez a veces sí,
+
+182
+00:04:47.800 --> 00:04:49.520
+y no hay nada de malo en mirarlo
+
+183
+00:04:49.520 --> 00:04:50.353
+y pensar:
+
+184
+00:04:50.353 --> 00:04:51.186
+Oh eso es interesante,
+
+185
+00:04:51.186 --> 00:04:52.870
+ponen esos ajustes de esta manera
+
+186
+00:04:52.870 --> 00:04:54.660
+o toman esta acción de esta manera.
+
+187
+00:04:54.660 --> 00:04:55.493
+Eso está totalmente bien,
+
+188
+00:04:55.493 --> 00:04:58.470
+a veces hay una respuesta correcta objetiva,
+
+189
+00:04:58.470 --> 00:04:59.350
+una manera de hacer algo,
+
+190
+00:04:59.350 --> 00:05:00.183
+y he encontrado cosas
+
+191
+00:05:00.183 --> 00:05:01.480
+donde estoy como:
+
+192
+00:05:01.480 --> 00:05:02.410
+Esta es la única
+
+193
+00:05:02.410 --> 00:05:03.243
+forma correcta de hacer esto.
+<v ->Ya.</v>
+
+194
+00:05:04.860 --> 00:05:06.465
+<v ->Pero luego hay mucha subjetividad</v>
+
+195
+00:05:06.465 --> 00:05:07.640
+en diseño
+
+196
+00:05:07.640 --> 00:05:08.473
+y entonces
+
+197
+00:05:08.473 --> 00:05:09.306
+definitivamente puedes
+
+198
+00:05:09.306 --> 00:05:10.139
+un poco pivotar
+
+199
+00:05:10.139 --> 00:05:10.972
+y decir como "ahh",
+
+200
+00:05:10.972 --> 00:05:12.100
+me encanta la mayor parte de lo que hicieron aquí
+
+201
+00:05:12.100 --> 00:05:13.618
+pero hay algunas cosas que podrían haber hecho
+
+202
+00:05:13.618 --> 00:05:14.602
+diferentes.
+<v ->Absolutamente.</v>
+
+203
+00:05:14.602 --> 00:05:15.435
+<v ->Así que,</v>
+
+204
+00:05:15.435 --> 00:05:17.130
+desde una perspectiva estrictamente estética,
+
+205
+00:05:17.130 --> 00:05:18.980
+entras y estás mirando
+
+206
+00:05:20.250 --> 00:05:21.083
+ya sabes,
+
+207
+00:05:21.083 --> 00:05:23.684
+qué tipo de paleta de colores
+
+208
+00:05:23.684 --> 00:05:24.897
+estas personas están usando.
+
+209
+00:05:24.897 --> 00:05:26.850
+No necesitas reinventar la rueda
+
+210
+00:05:26.850 --> 00:05:27.780
+para muchas de estas cosas.
+
+211
+00:05:27.780 --> 00:05:28.613
+Así que,
+
+212
+00:05:28.613 --> 00:05:30.185
+si estoy diseñando una aplicación
+
+213
+00:05:30.185 --> 00:05:32.310
+y la aplicación tiene una lista
+
+214
+00:05:32.310 --> 00:05:34.160
+con fotos de perfil a la izquierda
+
+215
+00:05:34.160 --> 00:05:35.760
+y algunos metadatos a la derecha,
+
+216
+00:05:36.701 --> 00:05:39.361
+¿cuántas veces ha sido diseñado?
+
+217
+00:05:39.361 --> 00:05:40.323
+Y solo queda así.
+<v ->¡Sólo un par de veces!</v>
+
+218
+00:05:41.361 --> 00:05:42.370
+<v ->Como solo un índice</v>
+
+219
+00:05:42.370 --> 00:05:43.940
+de objetos,
+
+220
+00:05:43.940 --> 00:05:44.836
+tantas veces.
+
+221
+00:05:44.836 --> 00:05:46.150
+Así que,
+
+222
+00:05:46.150 --> 00:05:47.910
+ve y mira y sé como:
+
+223
+00:05:47.910 --> 00:05:48.743
+Ah, vale,
+
+224
+00:05:48.743 --> 00:05:51.371
+¿uso un nombre audaz, fuerte
+
+225
+00:05:51.371 --> 00:05:52.810
+y oscuro
+
+226
+00:05:52.810 --> 00:05:53.980
+como nombre de usuario?
+
+227
+00:05:53.980 --> 00:05:55.470
+y luego como un color claro,
+
+228
+00:05:55.470 --> 00:05:56.830
+una fuente delgada a la derecha
+
+229
+00:05:56.830 --> 00:05:58.170
+o los hago delgados los dos
+
+230
+00:05:58.170 --> 00:05:59.555
+o hago esto azul
+
+231
+00:05:59.555 --> 00:06:01.031
+para que yo sepa que puedo hacer clic en él,
+
+232
+00:06:01.031 --> 00:06:02.360
+o, ya sabes.
+<v ->Sí.</v>
+
+233
+00:06:02.360 --> 00:06:04.120
+<v ->Así que hay muchas decisiones diferentes</v>
+
+234
+00:06:04.120 --> 00:06:05.310
+que puedes hacer
+
+235
+00:06:05.310 --> 00:06:07.162
+y como opuesto a decir
+
+236
+00:06:07.162 --> 00:06:07.995
+que esta es la única manera
+
+237
+00:06:07.995 --> 00:06:09.730
+en que vas a hacer esto en el futuro,
+
+238
+00:06:09.730 --> 00:06:10.563
+no,
+
+239
+00:06:10.563 --> 00:06:11.490
+se trata del proceso.
+
+240
+00:06:11.490 --> 00:06:13.002
+Así que lo primero que debes hacer,
+
+241
+00:06:13.002 --> 00:06:14.936
+cuando sabes el tipo de cosas
+
+242
+00:06:14.936 --> 00:06:15.860
+que necesita el diseño,
+
+243
+00:06:15.860 --> 00:06:17.420
+ya has conseguido la experiencia de usuario
+
+244
+00:06:17.420 --> 00:06:19.930
+o muchas veces esto ayuda en la experiencia
+
+245
+00:06:19.930 --> 00:06:21.650
+de usuario, por ejemplo,
+
+246
+00:06:21.650 --> 00:06:23.410
+contraseña olvidada.
+
+247
+00:06:23.410 --> 00:06:25.090
+Puedes pensar, de inmediato
+
+248
+00:06:25.090 --> 00:06:26.450
+en todas las pantallas que necesitan existir
+
+249
+00:06:26.450 --> 00:06:27.792
+para como una contraseña olvidada.
+
+250
+00:06:27.792 --> 00:06:28.860
+Como haces clic
+
+251
+00:06:28.860 --> 00:06:29.693
+y luego dice como:
+
+252
+00:06:29.693 --> 00:06:30.640
+te llegará un enlace por correo electrónico.
+
+253
+00:06:30.640 --> 00:06:31.473
+O dice:
+
+254
+00:06:31.473 --> 00:06:32.780
+Hey, acabamos de enviarte un código
+
+255
+00:06:32.780 --> 00:06:33.880
+y aquí está.
+<v ->Correcto.</v>
+
+256
+00:06:33.880 --> 00:06:36.010
+<v ->¿Como cuál es ese proceso exacto?</v>
+
+257
+00:06:36.010 --> 00:06:36.843
+Ve,
+
+258
+00:06:36.843 --> 00:06:37.676
+toma tu teléfono
+
+259
+00:06:37.676 --> 00:06:38.580
+míralo,
+
+260
+00:06:38.580 --> 00:06:39.702
+sal de Facebook
+
+261
+00:06:39.702 --> 00:06:41.174
+y haz clic en olvidó la contraseña
+
+262
+00:06:41.174 --> 00:06:42.490
+y mira cómo lo hacen,
+
+263
+00:06:42.490 --> 00:06:43.323
+mira cómo
+
+264
+00:06:43.323 --> 00:06:45.182
+todas estas otras aplicaciones lo están haciendo,
+
+265
+00:06:45.182 --> 00:06:46.150
+y piensa:
+
+266
+00:06:46.150 --> 00:06:46.983
+¡Oh!
+
+267
+00:06:46.983 --> 00:06:47.816
+Porque entonces estás realmente teniendo
+
+268
+00:06:47.816 --> 00:06:48.840
+una buena experiencia de usuario allí
+
+269
+00:06:48.840 --> 00:06:49.673
+y estás diciendo:
+
+270
+00:06:49.673 --> 00:06:50.506
+eso es una gran molestia,
+
+271
+00:06:50.506 --> 00:06:52.100
+tengo que abrir mi correo en mi teléfono
+
+272
+00:06:52.100 --> 00:06:53.370
+y en mi escritorio,
+
+273
+00:06:53.370 --> 00:06:54.810
+no, me gusta más la versión del mensaje,
+
+274
+00:06:54.810 --> 00:06:55.643
+ya sabes.
+<v ->Absolutamente.</v>
+
+275
+00:06:55.643 --> 00:06:56.958
+<v ->Hay solo...</v>
+
+276
+00:06:56.958 --> 00:06:57.791
+hay
+
+277
+00:06:57.791 --> 00:06:58.624
+tal beneficio,
+
+278
+00:06:58.624 --> 00:06:59.540
+así que no ignores eso.
+
+279
+00:06:59.540 --> 00:07:01.900
+Me gusta poder probar cosas
+
+280
+00:07:01.900 --> 00:07:03.870
+y eso te ayudará
+
+281
+00:07:03.870 --> 00:07:05.630
+un poco a avanzar,
+
+282
+00:07:05.630 --> 00:07:08.116
+y esa es la manera correcta de hacerlo.
+
+283
+00:07:08.116 --> 00:07:08.949
+<v ->Absolutamente.</v>
+
+284
+00:07:08.949 --> 00:07:09.782
+Y
+
+285
+00:07:09.782 --> 00:07:10.615
+con eso,
+
+286
+00:07:10.615 --> 00:07:11.448
+definitivamente
+
+287
+00:07:11.448 --> 00:07:13.570
+cuando sabes la aplicación que estás construyendo
+
+288
+00:07:13.570 --> 00:07:14.880
+y el conjunto de características,
+
+289
+00:07:14.880 --> 00:07:16.550
+esa es definitivamente una parte de eso.
+
+290
+00:07:16.550 --> 00:07:18.000
+¿Encuentras eso
+
+291
+00:07:18.000 --> 00:07:19.530
+cuando no estás
+
+292
+00:07:19.530 --> 00:07:21.907
+en realidad con un proyecto específico
+
+293
+00:07:21.907 --> 00:07:22.950
+en mente?
+
+294
+00:07:22.950 --> 00:07:24.430
+¿Todavía vas
+
+295
+00:07:24.430 --> 00:07:26.590
+solo para aprender continuamente
+
+296
+00:07:26.590 --> 00:07:27.830
+y encontrar nuevas cosas,
+
+297
+00:07:27.830 --> 00:07:29.730
+sigues yendo aun cuando
+
+298
+00:07:29.730 --> 00:07:31.190
+solo tienes curiosidad?
+
+299
+00:07:31.190 --> 00:07:32.023
+<v ->Oh sí.</v>
+
+300
+00:07:32.023 --> 00:07:33.342
+Es como Instagram.
+
+301
+00:07:33.342 --> 00:07:36.140
+Es como una red social.
+
+302
+00:07:36.140 --> 00:07:37.220
+Sí.
+
+303
+00:07:37.220 --> 00:07:39.050
+Y más aún,
+
+304
+00:07:39.050 --> 00:07:40.650
+tengo una carpeta de marcadores como,
+
+305
+00:07:40.650 --> 00:07:42.950
+cada vez que estoy en cualquier sitio web
+
+306
+00:07:42.950 --> 00:07:44.850
+que me gusta una cosa que hicieron ellos
+
+307
+00:07:44.850 --> 00:07:46.100
+lo marcaré como:
+
+308
+00:07:46.100 --> 00:07:46.933
+Oh,
+
+309
+00:07:46.933 --> 00:07:48.890
+me gusta mucho como mostraron estos testimonios,
+
+310
+00:07:48.890 --> 00:07:50.540
+así que la próxima vez que esté diseñando un sitio web,
+
+311
+00:07:50.540 --> 00:07:52.700
+voy a ver este testimonio.
+
+312
+00:07:52.700 --> 00:07:53.533
+Así que,
+
+313
+00:07:53.533 --> 00:07:55.880
+siempre estoy guardando cosas que me gustan.
+
+314
+00:07:55.880 --> 00:07:57.980
+Tomo fotos de patrones.
+
+315
+00:07:57.980 --> 00:07:58.890
+Me gusta,
+
+316
+00:07:58.890 --> 00:08:00.570
+fuera en el mundo real al igual que:
+
+317
+00:08:00.570 --> 00:08:02.248
+Oh, esto podría ser un patrón de fondo guay,
+
+318
+00:08:02.248 --> 00:08:03.170
+o
+
+319
+00:08:04.040 --> 00:08:07.010
+definitivamente cuando veo aplicaciones
+
+320
+00:08:07.010 --> 00:08:08.540
+de las que realmente me gusta el diseño,
+
+321
+00:08:08.540 --> 00:08:10.840
+el ejemplo perfecto es Venmo
+
+322
+00:08:10.840 --> 00:08:11.673
+frente
+
+323
+00:08:11.673 --> 00:08:12.550
+a la aplicación Cash,
+
+324
+00:08:12.550 --> 00:08:13.830
+se Square.
+
+325
+00:08:13.830 --> 00:08:15.990
+Dos interfaces muy diferentes
+
+326
+00:08:15.990 --> 00:08:17.180
+y personalmente
+
+327
+00:08:17.180 --> 00:08:18.410
+me encanta la de Cash,
+
+328
+00:08:18.410 --> 00:08:19.243
+y entonces,
+
+329
+00:08:19.243 --> 00:08:20.348
+la uso
+
+330
+00:08:20.348 --> 00:08:22.750
+porque ese es el diseño que me gusta.
+
+331
+00:08:22.750 --> 00:08:24.096
+Pero puedes comparar eso
+
+332
+00:08:24.096 --> 00:08:25.190
+y puedes decir:
+
+333
+00:08:25.190 --> 00:08:26.023
+Vale,
+
+334
+00:08:27.320 --> 00:08:28.670
+Venmo va por esto
+
+335
+00:08:28.670 --> 00:08:30.111
+Y Cash va por esto,
+
+336
+00:08:30.111 --> 00:08:30.944
+¿por qué?
+
+337
+00:08:30.944 --> 00:08:32.750
+Ellos obviamente tal vez
+
+338
+00:08:32.750 --> 00:08:34.860
+tomaron una decisión así
+
+339
+00:08:34.860 --> 00:08:36.680
+de por qué hacer este tipo de diseño
+
+340
+00:08:36.680 --> 00:08:38.580
+y por qué hicieron este tipo de diseño.
+
+341
+00:08:38.580 --> 00:08:39.670
+Y así,
+
+342
+00:08:39.670 --> 00:08:42.280
+simplemente estás constantemente añadiendo a esa
+
+343
+00:08:42.280 --> 00:08:43.770
+cartera mental.
+
+344
+00:08:43.770 --> 00:08:45.780
+Especialmente porque
+
+345
+00:08:45.780 --> 00:08:46.743
+una gran,
+
+346
+00:08:47.877 --> 00:08:49.730
+una gran herramienta para resolver problemas,
+
+347
+00:08:49.730 --> 00:08:50.750
+tanto en la experiencia del usuario
+
+348
+00:08:50.750 --> 00:08:54.150
+como definitivamente en la interfaz de usuario,
+
+349
+00:08:54.150 --> 00:08:55.490
+es la precedencia.
+
+350
+00:08:55.490 --> 00:08:57.570
+Cada vez que llegas a un punto,
+
+351
+00:08:57.570 --> 00:08:59.260
+es esperanzador
+
+352
+00:08:59.260 --> 00:09:00.200
+que si encuentras un problema
+
+353
+00:09:00.200 --> 00:09:02.500
+dices: ¿cómo voy a diseñar eso?
+
+354
+00:09:02.500 --> 00:09:04.490
+Si tienes algo registrado
+
+355
+00:09:04.490 --> 00:09:05.323
+en tu cabeza,
+
+356
+00:09:05.323 --> 00:09:06.450
+es como
+
+357
+00:09:06.450 --> 00:09:08.100
+oh, se que Snapchat hace algo
+
+358
+00:09:08.100 --> 00:09:08.933
+como esto.
+<v ->Vale.</v>
+
+359
+00:09:08.933 --> 00:09:10.170
+<v ->Y puedes ir a eso</v>
+
+360
+00:09:10.170 --> 00:09:11.560
+y puedes mirar la precedencia
+
+361
+00:09:11.560 --> 00:09:13.170
+y puedes ver si eso funcionó bien
+
+362
+00:09:13.170 --> 00:09:14.210
+o si eso funcionó mal.
+
+363
+00:09:14.210 --> 00:09:16.050
+Te da tal base,
+
+364
+00:09:16.050 --> 00:09:17.450
+y tu no solo
+
+365
+00:09:17.450 --> 00:09:19.060
+estás estrujándote el cerebro todo el tiempo.
+
+366
+00:09:19.060 --> 00:09:19.980
+<v ->Eso es genial,</v>
+
+367
+00:09:19.980 --> 00:09:22.420
+y ese es uno de los puntos más grandes
+
+368
+00:09:22.420 --> 00:09:24.331
+sobre por qué quise incluir esta guía
+
+369
+00:09:24.331 --> 00:09:25.451
+en todo el curso,
+
+370
+00:09:25.451 --> 00:09:27.190
+y para mí esto es en realidad,
+
+371
+00:09:27.190 --> 00:09:29.410
+una de las cosas mas importantes
+
+372
+00:09:29.410 --> 00:09:30.243
+que
+
+373
+00:09:30.243 --> 00:09:32.210
+todos sacarán del curso.
+
+374
+00:09:32.210 --> 00:09:34.144
+Porque personalmente me siento,
+
+375
+00:09:34.144 --> 00:09:36.110
+especialmente cuando era más joven
+
+376
+00:09:36.110 --> 00:09:37.844
+y yo estaba realmente luchando con
+
+377
+00:09:37.844 --> 00:09:39.540
+tener ideas de diseño,
+
+378
+00:09:39.540 --> 00:09:42.010
+porque habría tantas veces que era
+
+379
+00:09:42.010 --> 00:09:43.640
+el único desarrollador en un proyecto,
+
+380
+00:09:43.640 --> 00:09:45.220
+lo que significaba que yo hacía todo.
+
+381
+00:09:45.220 --> 00:09:47.100
+No solo la aplicación web,
+
+382
+00:09:47.100 --> 00:09:48.407
+pero también el logo
+
+383
+00:09:48.407 --> 00:09:49.831
+y el esquema de color
+
+384
+00:09:49.831 --> 00:09:51.580
+y todo.
+
+385
+00:09:51.580 --> 00:09:54.900
+Siempre tuve esta mentalidad
+
+386
+00:09:54.900 --> 00:09:56.540
+de que necesitaba
+
+387
+00:09:56.540 --> 00:09:57.621
+para construir un buen diseño
+
+388
+00:09:57.621 --> 00:10:00.800
+que todo estuviera hecho desde cero.
+
+389
+00:10:00.800 --> 00:10:02.334
+Tiene que ser único.
+
+390
+00:10:02.334 --> 00:10:04.460
+No podía mirar nada más,
+
+391
+00:10:04.460 --> 00:10:05.466
+esto tenía que ser justo,
+
+392
+00:10:05.466 --> 00:10:07.440
+algo que,
+
+393
+00:10:07.440 --> 00:10:08.740
+saliera de la nada,
+
+394
+00:10:08.740 --> 00:10:11.310
+y eso nunca salió bien.
+
+395
+00:10:11.310 --> 00:10:12.663
+<v ->No.</v>
+<v ->Nunca.</v>
+
+396
+00:10:13.962 --> 00:10:15.370
+Ya sabes,
+
+397
+00:10:15.370 --> 00:10:18.730
+incluso hemos hablado de eso antes,
+
+398
+00:10:18.730 --> 00:10:20.030
+existen,
+
+399
+00:10:20.030 --> 00:10:21.610
+las manzanas del mundo
+
+400
+00:10:21.610 --> 00:10:22.850
+y ese tipo de personas.
+
+401
+00:10:22.850 --> 00:10:25.120
+Tienen muchos procesos de pensamiento
+
+402
+00:10:25.120 --> 00:10:26.485
+y gastaron
+
+403
+00:10:26.485 --> 00:10:28.558
+decenas de millones de dólares
+
+404
+00:10:28.558 --> 00:10:32.610
+investigando qué es una buena interfaz de usuario
+
+405
+00:10:32.610 --> 00:10:35.150
+y simplemente ignorar eso
+
+406
+00:10:35.150 --> 00:10:36.230
+es,
+
+407
+00:10:36.230 --> 00:10:37.460
+irresponsable.
+<v ->Sí.</v>
+
+408
+00:10:37.460 --> 00:10:38.293
+<v ->Así que</v>
+
+409
+00:10:38.293 --> 00:10:41.130
+aprender de todo el trabajo que se ha hecho
+
+410
+00:10:41.130 --> 00:10:42.340
+por personas que han estado haciendo esto
+
+411
+00:10:42.340 --> 00:10:43.511
+durante un largo tiempo,
+
+412
+00:10:43.511 --> 00:10:45.487
+es un componente muy crítico,
+
+413
+00:10:45.487 --> 00:10:47.451
+y si nos saltamos eso
+
+414
+00:10:47.451 --> 00:10:50.267
+constantemente nos vamos a encontrar
+
+415
+00:10:50.267 --> 00:10:52.470
+los mismos problemas una y otra vez
+
+416
+00:10:52.470 --> 00:10:53.801
+donde nos quedamos un poco atascados
+
+417
+00:10:53.801 --> 00:10:55.430
+y no podemos
+
+418
+00:10:55.430 --> 00:10:57.430
+realmente crear algo que sea profesional.
+
+419
+00:10:57.430 --> 00:10:58.263
+<v ->¡Correcto!</v>
+
+420
+00:10:58.263 --> 00:10:59.096
+Me refiero a tomar
+
+421
+00:10:59.096 --> 00:10:59.929
+como ejemplo,
+
+422
+00:10:59.929 --> 00:11:00.762
+Snapchat,
+
+423
+00:11:00.762 --> 00:11:03.070
+y luego, de repente, Facebook sale
+
+424
+00:11:03.070 --> 00:11:04.352
+con una característica similar
+
+425
+00:11:04.352 --> 00:11:06.190
+en Instagram
+
+426
+00:11:06.190 --> 00:11:08.479
+y luego agrega la transmisión en vivo
+
+427
+00:11:08.479 --> 00:11:10.363
+a la plataforma de Facebook.
+
+428
+00:11:11.372 --> 00:11:13.558
+O la transmisión en vivo en Facebook compara eso con
+
+429
+00:11:13.558 --> 00:11:14.680
+Meerkat
+
+430
+00:11:15.778 --> 00:11:16.860
+o Periscope,
+
+431
+00:11:16.860 --> 00:11:18.050
+ese tipo de cosas.
+
+432
+00:11:18.050 --> 00:11:20.140
+Se ven extremadamente similares,
+
+433
+00:11:20.140 --> 00:11:20.973
+¿por qué?
+
+434
+00:11:20.973 --> 00:11:22.070
+Porque hay un montón de formas
+
+435
+00:11:22.070 --> 00:11:24.967
+correctas objetivamente de hacer las cosas allí.
+
+436
+00:11:24.967 --> 00:11:26.580
+Es como,
+
+437
+00:11:26.580 --> 00:11:28.450
+van a parecer
+
+438
+00:11:28.450 --> 00:11:30.650
+muy similares porque
+
+439
+00:11:30.650 --> 00:11:32.410
+para que se vea diferente
+
+440
+00:11:32.410 --> 00:11:34.034
+solo lo empeoraría.
+
+441
+00:11:34.034 --> 00:11:36.393
+Hay ciertas cosas como
+
+442
+00:11:37.280 --> 00:11:38.460
+pensar en si solo
+
+443
+00:11:38.460 --> 00:11:40.610
+tenemos corazones por debajo
+
+444
+00:11:40.610 --> 00:11:43.360
+o tenemos comentarios que también aparecen debajo.
+
+445
+00:11:43.360 --> 00:11:44.360
+Me gusta como hace eso,
+
+446
+00:11:44.360 --> 00:11:45.250
+se ve realmente
+
+447
+00:11:45.250 --> 00:11:46.270
+como parecido
+
+448
+00:11:46.270 --> 00:11:48.518
+Facebook live streaming y Periscope,
+
+449
+00:11:48.518 --> 00:11:50.650
+está muy cerca
+
+450
+00:11:50.650 --> 00:11:52.680
+en Facebook llegan desde la izquierda,
+
+451
+00:11:52.680 --> 00:11:53.630
+o desde la derecha,
+
+452
+00:11:53.630 --> 00:11:55.900
+y en Periscope suben por debajo.
+
+453
+00:11:55.900 --> 00:11:56.733
+Es algo
+
+454
+00:11:57.680 --> 00:12:00.250
+tan como matizado y cercano,
+
+455
+00:12:00.250 --> 00:12:01.083
+pero es como
+
+456
+00:12:01.083 --> 00:12:03.010
+¿de qué otra manera se supone que debes hacerlo?
+
+457
+00:12:03.010 --> 00:12:05.840
+No hay nada de malo en mirar
+
+458
+00:12:05.840 --> 00:12:07.530
+cómo otras personas lo están haciendo,
+
+459
+00:12:07.530 --> 00:12:08.712
+y luego tomar una decisión,
+
+460
+00:12:08.712 --> 00:12:10.131
+¿Es ese el camino correcto?
+
+461
+00:12:10.131 --> 00:12:11.455
+¿Es esa la manera equivocada?
+
+462
+00:12:11.455 --> 00:12:14.345
+¿Hay una manera subjetivamente diferente
+
+463
+00:12:14.345 --> 00:12:16.279
+de que pueda ser igual de bueno?
+
+464
+00:12:16.279 --> 00:12:18.317
+¡Sí!
+
+465
+00:12:18.317 --> 00:12:19.770
+Pero si ni siquiera lo estás mirando
+
+466
+00:12:19.770 --> 00:12:21.820
+porque estás asustado
+
+467
+00:12:21.820 --> 00:12:23.962
+de que puedas estar copiando algo,
+
+468
+00:12:23.962 --> 00:12:26.517
+entonces te estás haciendo un gran daño.
+
+469
+00:12:26.517 --> 00:12:27.350
+<v ->Sí.</v>
+
+470
+00:12:27.350 --> 00:12:30.559
+Creo que eso es 100 % preciso.
+
+471
+00:12:30.559 --> 00:12:31.392
+Así que,
+
+472
+00:12:31.392 --> 00:12:33.073
+algunos deberes para ti,
+
+473
+00:12:33.073 --> 00:12:35.353
+como estudiante, es,
+
+474
+00:12:35.353 --> 00:12:37.050
+antes incluso de pasar a la siguiente guía,
+
+475
+00:12:37.050 --> 00:12:40.080
+definitivamente te recomiendo que vayas a algunas
+
+476
+00:12:40.080 --> 00:12:41.430
+de esas aplicaciones,
+
+477
+00:12:41.430 --> 00:12:43.339
+como Dribble y Behance,
+
+478
+00:12:43.339 --> 00:12:46.040
+para que puedas empezar
+
+479
+00:12:46.040 --> 00:12:49.104
+a ver lo que hay por ahí.
+
+480
+00:12:49.104 --> 00:12:51.260
+Cuando Jesse originalmente me mostró esos,
+
+481
+00:12:51.260 --> 00:12:53.890
+porque esa no es realmente la parte del mundo
+
+482
+00:12:53.890 --> 00:12:55.510
+en la que estoy metido,
+
+483
+00:12:55.510 --> 00:12:56.880
+estaba absolutamente fascinado.
+
+484
+00:12:56.880 --> 00:12:58.870
+Era como todas estas diferentes
+
+485
+00:12:58.870 --> 00:13:01.350
+pantallas y conceptos
+
+486
+00:13:01.350 --> 00:13:04.210
+que los diseñadores talentosos están creando,
+
+487
+00:13:04.210 --> 00:13:05.520
+son cosas de las que podría aprender,
+
+488
+00:13:05.520 --> 00:13:06.980
+y son cosas que,
+
+489
+00:13:06.980 --> 00:13:07.880
+como dijiste,
+
+490
+00:13:07.880 --> 00:13:10.230
+puedes incluir en ese portafolio mental,
+
+491
+00:13:10.230 --> 00:13:12.711
+esas cosas para que cada vez que empiezo a pensar
+
+492
+00:13:12.711 --> 00:13:13.619
+en una nueva característica
+
+493
+00:13:13.619 --> 00:13:15.801
+o alguna nueva página que necesito crear,
+
+494
+00:13:15.801 --> 00:13:18.270
+de repente no estoy empezando desde cero.
+
+495
+00:13:18.270 --> 00:13:19.870
+Soy capaz de aprovechar
+
+496
+00:13:19.870 --> 00:13:21.580
+lo que he aprendido de los demás,
+
+497
+00:13:21.580 --> 00:13:23.280
+especialmente de otros que han estado haciendo eso
+
+498
+00:13:23.280 --> 00:13:24.599
+durante un largo tiempo.
+
+499
+00:13:24.599 --> 00:13:25.432
+Así que,
+
+500
+00:13:25.432 --> 00:13:26.310
+diviértete haciendo eso
+
+501
+00:13:26.310 --> 00:13:28.110
+y nos vemos en la próxima guía.
+

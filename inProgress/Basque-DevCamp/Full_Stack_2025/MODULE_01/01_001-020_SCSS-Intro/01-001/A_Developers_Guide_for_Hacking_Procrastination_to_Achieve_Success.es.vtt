@@ -1,0 +1,706 @@
+﻿WEBVTT
+
+1
+00:00:00.690 --> 00:00:04.130
+<v ->Quiero que te imagines sentado frente a tu computadora,</v>
+
+2
+00:00:04.130 --> 00:00:05.950
+mirando una pantalla en blanco.
+
+3
+00:00:05.950 --> 00:00:08.730
+Sabes que tienes que trabajar en un proyecto de código,
+
+4
+00:00:08.730 --> 00:00:11.570
+pero se siente como si estuvieras completamente congelado.
+
+5
+00:00:11.570 --> 00:00:14.130
+La tarea que tienes ante ti es tan intimidante,
+
+6
+00:00:14.130 --> 00:00:16.430
+que ni siquiera sabes por dónde empezar.
+
+7
+00:00:16.430 --> 00:00:18.910
+Parece que prefieres hacer cualquier otra cosa
+
+8
+00:00:18.910 --> 00:00:21.307
+en todo el mundo, además de la tarea
+
+9
+00:00:21.307 --> 00:00:23.480
+que te está mirando a la cara.
+
+10
+00:00:23.480 --> 00:00:26.810
+Este escenario es la cara fea y demasiado común
+
+11
+00:00:26.810 --> 00:00:29.750
+de la procrastinación con la que los programadores
+
+12
+00:00:29.750 --> 00:00:31.440
+luchan constantemente.
+
+13
+00:00:31.440 --> 00:00:35.480
+Si esto te resulta familiar, estás en buena compañía.
+
+14
+00:00:35.480 --> 00:00:38.400
+Pero, si quieres ser un desarrollador profesional,
+
+15
+00:00:38.400 --> 00:00:42.290
+necesitas implementar un sistema para piratearla.
+
+16
+00:00:42.290 --> 00:00:44.830
+Y eso es lo que vamos a aprender hoy.
+
+17
+00:00:44.830 --> 00:00:47.690
+Como instructor principal de devCamp, me hacen preguntas
+
+18
+00:00:47.690 --> 00:00:49.340
+estudiantes de todo el mundo.
+
+19
+00:00:49.340 --> 00:00:52.560
+Sin embargo, una de las preguntas más frecuentes es
+
+20
+00:00:52.560 --> 00:00:54.910
+cómo superar la procrastinación.
+
+21
+00:00:54.910 --> 00:00:56.470
+Antes de que pasemos por un sistema
+
+22
+00:00:56.470 --> 00:00:59.810
+para piratearla, primero tenemos que sumergirnos
+
+23
+00:00:59.810 --> 00:01:02.810
+en las causas fundamentales de este hábito negativo.
+
+24
+00:01:02.810 --> 00:01:04.070
+Cada persona es única.
+
+25
+00:01:04.070 --> 00:01:06.950
+Sin embargo, con los años, he visto que la procrastinación
+
+26
+00:01:06.950 --> 00:01:11.340
+es típicamente causada por tres patrones de pensamiento.
+
+27
+00:01:11.340 --> 00:01:13.920
+El primero es el perfeccionismo,
+
+28
+00:01:13.920 --> 00:01:18.530
+luego el miedo al éxito y la falta de planificación.
+
+29
+00:01:18.530 --> 00:01:22.240
+Para superar la procrastinación y volver a la normalidad,
+
+30
+00:01:22.240 --> 00:01:25.200
+tendremos que abordar cada uno de estos temas.
+
+31
+00:01:25.200 --> 00:01:27.430
+Porque si dejas que cualquiera de estas mentalidades
+
+32
+00:01:27.430 --> 00:01:29.700
+controle la forma en que opera tu mente,
+
+33
+00:01:29.700 --> 00:01:32.150
+nunca serás capaz de alcanzar tu potencial.
+
+34
+00:01:32.150 --> 00:01:34.740
+A esta conferencia la llamo "Piratear la procrastinación",
+
+35
+00:01:34.740 --> 00:01:37.690
+porque creo que "piratear" es el mejor término
+
+36
+00:01:37.690 --> 00:01:41.940
+para lo que tiene que suceder y lograr el éxito.
+
+37
+00:01:41.940 --> 00:01:45.130
+Los desarrolladores piratean apps para crear funciones,
+
+38
+00:01:45.130 --> 00:01:46.620
+o para arreglar errores.
+
+39
+00:01:46.620 --> 00:01:49.860
+Así, necesitamos piratear nuestros patrones de pensamiento,
+
+40
+00:01:49.860 --> 00:01:52.410
+para que nuestro cerebro funcione correctamente.
+
+41
+00:01:52.410 --> 00:01:53.770
+Antes de que pasemos por el sistema,
+
+42
+00:01:53.770 --> 00:01:55.880
+quiero dejar claro un concepto.
+
+43
+00:01:55.880 --> 00:01:58.457
+Como humanos, estamos hechos para la acción.
+
+44
+00:01:58.457 --> 00:02:01.200
+La procrastinación es un hábito negativo
+
+45
+00:02:01.200 --> 00:02:02.880
+que hemos aprendido a través de los años
+
+46
+00:02:02.880 --> 00:02:05.880
+y al tener un patrón de pensamiento impulsado por el miedo.
+
+47
+00:02:05.880 --> 00:02:08.670
+Para tener éxito en cualquier cosa en la vida,
+
+48
+00:02:08.670 --> 00:02:12.130
+ya sea desarrollo o negocios,
+
+49
+00:02:12.130 --> 00:02:15.100
+superar la procrastinación es un requisito.
+
+50
+00:02:15.100 --> 00:02:18.200
+Empezando la lista de las causas de la procrastinación,
+
+51
+00:02:18.200 --> 00:02:19.760
+está el perfeccionismo.
+
+52
+00:02:19.760 --> 00:02:21.990
+Analicemos un ejemplo del mundo real
+
+53
+00:02:21.990 --> 00:02:24.540
+de lo opuesto al perfeccionismo.
+
+54
+00:02:24.540 --> 00:02:26.990
+¿Alguna vez has visto a un bebé intentando ponerse de pie
+
+55
+00:02:26.990 --> 00:02:28.390
+por primera vez?
+
+56
+00:02:28.390 --> 00:02:32.520
+Bebés que no han aprendido que el fracaso es algo malo,
+
+57
+00:02:32.520 --> 00:02:35.870
+pasarán incontables horas intentando ponerse de pie.
+
+58
+00:02:35.870 --> 00:02:37.940
+Cada vez se caerán
+
+59
+00:02:37.940 --> 00:02:41.540
+y no parece que los afecte en lo más mínimo.
+
+60
+00:02:41.540 --> 00:02:45.100
+Pero no encontrarás un bebé que deje que el perfeccionismo
+
+61
+00:02:45.100 --> 00:02:47.660
+se interponga en el camino para lograr su objetivo.
+
+62
+00:02:47.660 --> 00:02:50.670
+En vez de eso, seguirá tratando y tratando
+
+63
+00:02:50.670 --> 00:02:54.520
+hasta que pueda ponerse de pie y caminar por sí mismo.
+
+64
+00:02:54.520 --> 00:02:58.630
+Sin embargo, en algún momento entre esa época de bebés,
+
+65
+00:02:58.630 --> 00:03:02.400
+y la adultez desarrollamos el patrón de pensamiento
+
+66
+00:03:02.400 --> 00:03:04.680
+que se supone que no debemos fallar.
+
+67
+00:03:04.680 --> 00:03:08.750
+Así que, en vez de intentarlo y fallar hasta tener éxito,
+
+68
+00:03:08.750 --> 00:03:11.590
+simplemente tratamos de realizar sólo tareas
+
+69
+00:03:11.590 --> 00:03:13.500
+que sabemos que podemos hacer correctamente.
+
+70
+00:03:13.500 --> 00:03:18.490
+Para deshacerse de la mentalidad perfeccionista,
+
+71
+00:03:18.490 --> 00:03:21.070
+tenemos que remover el componente en nuestro cerebro
+
+72
+00:03:21.070 --> 00:03:22.690
+que tiene miedo de fracasar.
+
+73
+00:03:22.690 --> 00:03:25.620
+Si eres desarrollador, aprender a crear una característica
+
+74
+00:03:25.620 --> 00:03:28.650
+que nunca has creado antes, déjame aclarar algo
+
+75
+00:03:28.650 --> 00:03:29.483
+para ti,
+
+76
+00:03:29.483 --> 00:03:32.000
+lo vas a hacer mal la primera vez.
+
+77
+00:03:32.000 --> 00:03:34.350
+Y eso es una multa del 100 por ciento.
+
+78
+00:03:34.350 --> 00:03:35.730
+Si crees que al esperar, crees que vas a ir
+
+79
+00:03:35.730 --> 00:03:39.540
+a aprender mágicamente a realizar la tarea a la perfección
+
+80
+00:03:39.540 --> 00:03:40.940
+estás tristemente equivocado.
+
+81
+00:03:40.940 --> 00:03:43.850
+Así que el primer paso es aceptar el fracaso
+
+82
+00:03:43.850 --> 00:03:47.490
+y eliminar el requisito del perfeccionismo.
+
+83
+00:03:47.490 --> 00:03:50.860
+El siguiente en la lista, es piratear el miedo al éxito.
+
+84
+00:03:50.860 --> 00:03:53.500
+Si has superado la trampa del perfeccionismo,
+
+85
+00:03:53.500 --> 00:03:54.680
+felicitaciones.
+
+86
+00:03:54.680 --> 00:03:58.100
+Sin embargo, he visto desarrolladores quedarse atascados
+
+87
+00:03:58.100 --> 00:04:01.870
+debido al miedo al éxito así como al miedo al fracaso.
+
+88
+00:04:01.870 --> 00:04:03.490
+Esto puede parecer un poco extraño,
+
+89
+00:04:03.490 --> 00:04:05.910
+porque el éxito no parece ser algo
+
+90
+00:04:05.910 --> 00:04:07.570
+a lo que deberías tenerle miedo.
+
+91
+00:04:07.570 --> 00:04:09.050
+Sin embargo, recuerdo
+
+92
+00:04:09.050 --> 00:04:11.840
+cuando estaba aprendiendo desarrollo,
+
+93
+00:04:11.840 --> 00:04:13.960
+cuando estaba revisando un libro de códigos,
+
+94
+00:04:13.960 --> 00:04:17.850
+me emocionaba tanto cuando descubría un nuevo concepto.
+
+95
+00:04:17.850 --> 00:04:21.050
+Sin embargo, me congelaba.
+
+96
+00:04:21.050 --> 00:04:23.117
+La primera respuesta de mi mente fue,
+
+97
+00:04:23.117 --> 00:04:26.550
+"Si aprendes esto, ¿qué vas a hacer?"
+
+98
+00:04:26.550 --> 00:04:28.110
+Por ejemplo, cuando aprendí por primera vez cómo
+
+99
+00:04:28.110 --> 00:04:31.250
+construir una conexión a una base de datos, dejé el libro,
+
+100
+00:04:31.250 --> 00:04:33.840
+y no lo recogí hasta semanas después.
+
+101
+00:04:33.840 --> 00:04:35.720
+Al aprender el concepto de base de datos,
+
+102
+00:04:35.720 --> 00:04:40.290
+abrí un nuevo mundo entero y muy aterrador
+
+103
+00:04:40.290 --> 00:04:43.920
+de todos los temas que sabía que iba a tener que aprender
+
+104
+00:04:43.920 --> 00:04:44.990
+después de eso.
+
+105
+00:04:44.990 --> 00:04:48.750
+De repente, tuve que entender las consultas SQL,
+
+106
+00:04:48.750 --> 00:04:51.840
+cómo construir relaciones entre tablas de bases de datos,
+
+107
+00:04:51.840 --> 00:04:54.350
+requisitos de inyección de SQL para seguridad,
+
+108
+00:04:54.350 --> 00:04:58.330
+y la lista aparentemente seguía y seguía, en mi mente.
+
+109
+00:04:58.330 --> 00:05:00.350
+Para piratear el miedo al éxito,
+
+110
+00:05:00.350 --> 00:05:02.290
+necesitamos calmar nuestras mentes.
+
+111
+00:05:02.290 --> 00:05:03.644
+El miedo al éxito está realmente arraigado
+
+112
+00:05:03.644 --> 00:05:05.890
+en el miedo a lo desconocido.
+
+113
+00:05:05.890 --> 00:05:10.040
+Así que, cuando sientas esto, simplemente da un paso atrás,
+
+114
+00:05:10.040 --> 00:05:13.620
+alégrate de haber aprendido un nuevo tema y luego continúa
+
+115
+00:05:13.620 --> 00:05:15.930
+con la siguiente característica o tema.
+
+116
+00:05:15.930 --> 00:05:17.790
+No dejes que tu mente se desborde con todos
+
+117
+00:05:17.790 --> 00:05:20.430
+los potenciales conceptos desconocidos que vas a
+
+118
+00:05:20.430 --> 00:05:22.520
+a tener que aprender en el futuro.
+
+119
+00:05:22.520 --> 00:05:25.972
+Como si aprendieras cualquier otra cosa, un paso
+
+120
+00:05:25.972 --> 00:05:29.220
+a la vez, y como sabemos que no podemos aprender múltiples
+
+121
+00:05:29.220 --> 00:05:32.670
+cosas al mismo tiempo, esto debería ser intuitivo.
+
+122
+00:05:32.670 --> 00:05:35.050
+Una vez que ya has aprendido algo nuevo,
+
+123
+00:05:35.050 --> 00:05:38.000
+puedes añadir eso a tu arsenal de desarrollo,
+
+124
+00:05:38.000 --> 00:05:39.850
+y luego seguir adelante,
+
+125
+00:05:39.850 --> 00:05:43.244
+ya que no es posible aprender 20 cosas a la vez,
+
+126
+00:05:43.244 --> 00:05:46.130
+no dejes que tu mente piense que deberías ser capaz
+
+127
+00:05:46.130 --> 00:05:47.140
+de hacer eso.
+
+128
+00:05:47.140 --> 00:05:49.810
+El último en la lista para piratear la procrastinación,
+
+129
+00:05:49.810 --> 00:05:52.550
+es crear un plan práctico.
+
+130
+00:05:52.550 --> 00:05:55.330
+Cuando reconozco que estoy procrastinando,
+
+131
+00:05:55.330 --> 00:05:58.380
+me digo a mí mismo que mire mi plan de ataque.
+
+132
+00:05:58.380 --> 00:06:01.930
+Normalmente, descubriré que mi plan es demasiado general,
+
+133
+00:06:01.930 --> 00:06:05.220
+o posiblemente que ni siquiera he creado un plan real.
+
+134
+00:06:05.220 --> 00:06:08.640
+Por ejemplo, si estoy construyendo una aplicación de nómina,
+
+135
+00:06:08.640 --> 00:06:11.010
+puede que tenga algo en mi lista de cosas por hacer
+
+136
+00:06:11.010 --> 00:06:13.900
+que dice "construir motor de reporte".
+
+137
+00:06:13.900 --> 00:06:14.970
+Esa es una característica que asusta.
+
+138
+00:06:14.970 --> 00:06:17.110
+Ese tipo de característica estará en mi lista de pendientes
+
+139
+00:06:17.110 --> 00:06:20.810
+durante semanas sin que yo tome acciones para construirlo.
+
+140
+00:06:20.810 --> 00:06:22.700
+Sin embargo, he aprendido que si puedo romper
+
+141
+00:06:22.700 --> 00:06:26.160
+ese gran requerimiento en una serie de pequeñas tareas,
+
+142
+00:06:26.160 --> 00:06:29.300
+puedo romper el ciclo de procrastinación.
+
+143
+00:06:29.300 --> 00:06:32.510
+Como ejemplo, con una característica de motor de informes,
+
+144
+00:06:32.510 --> 00:06:34.740
+puedo crear una serie mucho más pequeña,
+
+145
+00:06:34.740 --> 00:06:37.137
+tareas más manejables, como,
+
+146
+00:06:37.137 --> 00:06:40.740
+crear una página para que los usuarios accedan a informes.
+
+147
+00:06:40.740 --> 00:06:44.270
+Luego, una consulta de base de datos extrayendo los informes
+
+148
+00:06:44.270 --> 00:06:45.900
+de la base de datos.
+
+149
+00:06:45.900 --> 00:06:50.040
+Construir un descargador de archivos para los informes etc.
+
+150
+00:06:50.040 --> 00:06:53.750
+Pero ¿notas lo pequeños que son cada uno de esos objetos?
+
+151
+00:06:53.750 --> 00:06:57.280
+Esos son los tipos de características que no me da miedo,
+
+152
+00:06:57.280 --> 00:07:00.670
+pero el motor de informes, porque es tan vago
+
+153
+00:07:00.670 --> 00:07:03.330
+y porque es una parte crítica de la misión
+
+154
+00:07:03.330 --> 00:07:05.430
+de la aplicación, eso es algo que
+
+155
+00:07:05.430 --> 00:07:09.380
+que sería intimidante mirar día tras día,
+
+156
+00:07:09.380 --> 00:07:12.700
+si no has desglosado todas las cosas que necesitas hacer
+
+157
+00:07:12.700 --> 00:07:14.130
+para poder construirlo.
+
+158
+00:07:14.130 --> 00:07:17.050
+Cuando descompongo una característica grande y aterradora
+
+159
+00:07:17.050 --> 00:07:20.130
+en pequeños pedazos, me siento mejor al instante.
+
+160
+00:07:20.130 --> 00:07:22.020
+La característica ya no es esta cosa gigante
+
+161
+00:07:22.020 --> 00:07:24.300
+mirando por encima de mi hombro, que siento que tengo
+
+162
+00:07:24.300 --> 00:07:27.530
+hasta mañana una y otra vez.
+
+163
+00:07:27.530 --> 00:07:30.370
+En vez de eso, soy capaz de simplemente seguir un conjunto
+
+164
+00:07:30.370 --> 00:07:32.890
+de tareas muy pequeñas cada día,
+
+165
+00:07:32.890 --> 00:07:35.990
+y luego, toda la característica ha sido construida.
+
+166
+00:07:35.990 --> 00:07:38.060
+Espero que esta haya sido una guía útil,
+
+167
+00:07:38.060 --> 00:07:41.270
+por ayudarte a romper el ciclo de procrastinación
+
+168
+00:07:41.270 --> 00:07:44.110
+en tus propios proyectos y que serás capaz de usarlo
+
+169
+00:07:44.110 --> 00:07:46.550
+para convertirte en un desarrollador más efectivo.
+
+170
+00:07:46.550 --> 00:07:48.350
+Te dejo con una cita del libro
+
+171
+00:07:48.350 --> 00:07:51.300
+Los Cinco elementos del pensamiento eficaz.
+
+172
+00:07:51.300 --> 00:07:55.517
+Dice: "Estar dispuesto a fracasar es un atributo liberador
+
+173
+00:07:55.517 --> 00:07:57.450
+"del pensamiento transformador."
+
+174
+00:07:57.450 --> 00:07:59.240
+Así ve a afuera,
+
+175
+00:07:59.240 --> 00:08:00.940
+elabora un plan práctico
+
+176
+00:08:00.940 --> 00:08:03.763
+y dejar de procrastinar y empieza a codificar.
+

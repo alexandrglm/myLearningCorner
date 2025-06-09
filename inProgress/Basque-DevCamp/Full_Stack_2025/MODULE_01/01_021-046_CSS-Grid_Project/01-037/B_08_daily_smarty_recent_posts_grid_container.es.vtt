@@ -1,0 +1,570 @@
+WEBVTT
+
+1
+00:00:00.730 --> 00:00:02.840
+<v Narrador>La página está saliendo bastante bien.</v>
+
+2
+00:00:02.840 --> 00:00:06.810
+Hay algunos artículos de limpieza que habrá que ver luego.
+
+3
+00:00:06.810 --> 00:00:09.100
+como la altura del cuadro de búsqueda,
+
+4
+00:00:09.100 --> 00:00:11.390
+las tipografías, y algunas de esas cosas,
+
+5
+00:00:11.390 --> 00:00:16.390
+Pero ahora quiero abordar el Pulsar volver para buscar
+
+6
+00:00:16.650 --> 00:00:18.530
+y luego los Posts recientes.
+
+7
+00:00:18.530 --> 00:00:21.732
+Veremos si podemos hacer todo esto en una sola guía.
+
+8
+00:00:21.732 --> 00:00:24.380
+Así que voy a volver aquí,
+
+9
+00:00:24.380 --> 00:00:27.352
+y echemos un vistazo a lo que tenemos para trabajar.
+
+10
+00:00:27.352 --> 00:00:30.490
+Así que tenemos la barra de búsqueda de la página de inicio
+
+11
+00:00:30.490 --> 00:00:32.239
+y luego dentro de ella tenemos esa entrada
+
+12
+00:00:32.239 --> 00:00:35.720
+y luego esa etiqueta P, esa etiqueta de párrafo.
+
+13
+00:00:35.720 --> 00:00:40.720
+Agarramos la barra de búsqueda de la página principal
+
+14
+00:00:43.250 --> 00:00:45.410 line:15% 
+y la pegamos,
+
+15
+00:00:45.410 --> 00:00:48.570 line:15% 
+pero en lugar de tener entradas y todo ahí
+
+16
+00:00:48.570 --> 00:00:51.310 line:15% 
+sólo quiero agarrar la etiqueta del párrafo.
+
+17
+00:00:51.310 --> 00:00:54.400 line:15% 
+Así que eso será todo lo que trabajemos aquí.
+
+18
+00:00:54.400 --> 00:00:58.690 line:15% 
+Y dentro, quiero que este tenga un color personalizado.
+
+19
+00:00:58.690 --> 00:01:02.613 line:15% 
+Así que vamos con almohadilla y luego B3, B3, B3
+
+20
+00:01:06.100 --> 00:01:08.130 line:15% 
+para el valor hexadecimal.
+
+21
+00:01:08.130 --> 00:01:11.260 line:15% 
+Quiero que el tamaño de la tipografía sea 1.4rem
+
+22
+00:01:12.220 --> 00:01:15.710 line:15% 
+así que el tamaño de tipografía 1.4rem
+
+23
+00:01:17.810 --> 00:01:22.810 line:15% 
+y luego desde ahí quiero una altura de línea aquí
+
+24
+00:01:23.330 --> 00:01:27.583 line:15% 
+Y la altura de la línea va a ser 1.7rem.
+
+25
+00:01:28.420 --> 00:01:31.937 line:15% 
+Vamos a añadir un margen superior de 2.3rem,
+
+26
+00:01:34.500 --> 00:01:37.960 line:15% 
+y luego quiero que esto esté alineado a la derecha
+
+27
+00:01:37.960 --> 00:01:40.300 line:15% 
+así que alinear texto a la derecha.
+
+28
+00:01:40.300 --> 00:01:43.690 line:15% 
+Bien, veamos si eso nos da lo que estamos buscando.
+
+29
+00:01:43.690 --> 00:01:46.190
+Y sí, eso está mucho mejor.
+
+30
+00:01:46.190 --> 00:01:48.840
+La razón por la que esto se ve tan diferente
+
+31
+00:01:48.840 --> 00:01:51.850
+de lo que tenemos aquí es realmente solo porque
+
+32
+00:01:51.850 --> 00:01:54.290
+necesitamos integrar algunas tipografías
+
+33
+00:01:54.290 --> 00:01:57.060
+y vamos a añadir un tamaño de base
+
+34
+00:01:57.060 --> 00:01:59.530
+que todo el proyecto va a seguir.
+
+35
+00:01:59.530 --> 00:02:02.980
+Pero por ahora todo está alineado correctamente,
+
+36
+00:02:02.980 --> 00:02:07.010
+tiene el color correcto, y estoy contento con eso.
+
+37
+00:02:07.010 --> 00:02:10.020
+Así que ahora vamos a abordar estos posts recientes.
+
+38
+00:02:10.020 --> 00:02:11.380
+Creo que deberíamos poder
+
+39
+00:02:11.380 --> 00:02:14.460
+verlos bastante rápido.
+
+40
+00:02:14.460 --> 00:02:17.290
+Así que tenemos nuestro envoltorio de post reciente
+
+41
+00:02:17.290 --> 00:02:22.290
+Y ese es nuestro elemento de rejilla y está bien.
+
+42
+00:02:22.436 --> 00:02:24.970
+Podremos dejar eso exactamente como está.
+
+43
+00:02:24.970 --> 00:02:27.787
+Así que ahora vamos a hablar de ese título.
+
+44
+00:02:27.787 --> 00:02:32.787
+tenemos algo llamado encabezado de publicaciones recientes.
+
+45
+00:02:34.490 --> 00:02:38.890
+Esto tiene un color específico para eso, así que voy a decir
+
+46
+00:02:38.890 --> 00:02:41.210
+almohadilla 2660F y luego 3.
+
+47
+00:02:46.894 --> 00:02:50.230
+Y en caso de que te preguntes por esto,
+
+48
+00:02:50.230 --> 00:02:54.320
+todos estos colores me los dio el diseñador de bodega
+
+49
+00:02:54.320 --> 00:02:57.630
+así que en el lado de mi pantalla tengo algunas notas
+
+50
+00:02:57.630 --> 00:03:01.290
+Con mis colores hexagonales y algunos elementos de tamaño
+
+51
+00:03:01.290 --> 00:03:03.841
+así que no pienses que los tengo memorizados
+
+52
+00:03:03.841 --> 00:03:06.010
+o que hay que memorizarlos.
+
+53
+00:03:06.010 --> 00:03:07.640
+Eso normalmente va a ser algo
+
+54
+00:03:07.640 --> 00:03:09.680
+que, o bien se te ocurre
+
+55
+00:03:09.680 --> 00:03:12.100
+o si estás trabajando en un equipo más grande,
+
+56
+00:03:12.100 --> 00:03:13.900
+entonces te los dará el diseñador.
+
+57
+00:03:13.900 --> 00:03:16.420
+Así que puedes simplemente, no pienses que tienes que
+
+58
+00:03:16.420 --> 00:03:18.890
+memorizar códigos hexadecimales o algo así.
+
+59
+00:03:18.890 --> 00:03:21.164
+Normalmente, tendrás un buen punto de referencia para ellos.
+
+60
+00:03:21.164 --> 00:03:26.164
+Así que ahora vamos a añadir un margen inferior a esto.
+
+61
+00:03:26.540 --> 00:03:30.920
+Y para esto voy a tener un 3rem
+
+62
+00:03:30.920 --> 00:03:34.817
+y luego un tamaño de tipografía de 1.4rem.
+
+63
+00:03:38.630 --> 00:03:40.210 line:15% 
+Bien, echémosle un vistazo
+
+64
+00:03:40.210 --> 00:03:43.740 line:15% 
+y ahí tenemos las publicaciones recientes.
+
+65
+00:03:43.740 --> 00:03:45.610 line:15% 
+Está saliendo bien.
+
+66
+00:03:45.610 --> 00:03:48.670
+Así que ahora que tenemos que ahora vamos a hablar de
+
+67
+00:03:48.670 --> 00:03:50.318
+los posts recientes,
+
+68
+00:03:50.318 --> 00:03:54.650
+como ese elemento que contiene
+
+69
+00:03:54.650 --> 00:03:56.260
+Cada uno de los posts mismos.
+
+70
+00:03:56.260 --> 00:03:59.220
+Así que tenemos este post reciente aquí
+
+71
+00:03:59.220 --> 00:04:03.530
+y esto va a contener tres elementos dentro.
+
+72
+00:04:03.530 --> 00:04:06.763
+Así que vamos a empezar con los posts recientes.
+
+73
+00:04:07.670 --> 00:04:10.970 line:15% 
+Así que los posts recientes así.
+
+74
+00:04:10.970 --> 00:04:15.970 line:15% 
+Y luego voy a hacer de esto un elemento de cuadrícula,
+
+75
+00:04:16.060 --> 00:04:18.900 line:15% 
+o debería decir un contenedor de cuadrícula,
+
+76
+00:04:18.900 --> 00:04:20.913 line:15% 
+así que esto va a ser una cuadrícula.
+
+77
+00:04:21.920 --> 00:04:25.670 line:15% 
+Y luego quiero el ancho de esto,
+
+78
+00:04:25.670 --> 00:04:27.920 line:15% 
+porque puedes ver que es bastante fino ahora mismo,
+
+79
+00:04:27.920 --> 00:04:31.350 line:15% 
+Quiero que tenga el mismo ancho que la barra de búsqueda
+
+80
+00:04:31.350 --> 00:04:36.350 line:15% 
+que es 66 VW, que significa ancho de vista,
+
+81
+00:04:36.600 --> 00:04:40.460 line:15% 
+para columnas de plantilla de cuadrícula.
+
+82
+00:04:40.460 --> 00:04:44.876 line:15% 
+Voy a decir que repita y dentro de aquí autoajuste
+
+83
+00:04:44.876 --> 00:04:48.740 line:15% 
+lo que les va a permitir ser colocados automáticamente
+
+84
+00:04:48.740 --> 00:04:53.740 line:15% 
+uno al lado del otro con valores máx. Mín. de 100 píxeles
+
+85
+00:04:55.350 --> 00:04:58.393 line:15% 
+y luego una unidad fraccionaria.
+
+86
+00:04:59.544 --> 00:05:02.260 line:15% 
+Entonces voy a tener un poco de cuadrícula aquí también.
+
+87
+00:05:02.260 --> 00:05:05.583 line:15% 
+Así que la distancia de la cuadrícula es 2.5rem. Guardar.
+
+88
+00:05:09.500 --> 00:05:10.870
+Y eso es.
+
+89
+00:05:10.870 --> 00:05:13.150
+Eso está mucho mejor.
+
+90
+00:05:13.150 --> 00:05:15.180
+Así que estamos realmente muy cerca
+
+91
+00:05:15.180 --> 00:05:17.030
+de tener esta página completa hecha.
+
+92
+00:05:17.030 --> 00:05:20.850 line:15% 
+Así que veamos cuánto más podemos ir en esto.
+
+93
+00:05:20.850 --> 00:05:23.723 line:15% 
+Así que tenemos posts recientes, tenemos su envoltorio,
+
+94
+00:05:23.723 --> 00:05:25.902
+ahora vamos a personalizar el título.
+
+95
+00:05:25.902 --> 00:05:30.902
+Así que post reciente y luego título,
+
+96
+00:05:32.692 --> 00:05:35.650
+entonces para esto agregaremos un color personalizado
+
+97
+00:05:35.650 --> 00:05:39.350
+y será 53 53 53
+
+98
+00:05:39.350 --> 00:05:42.050
+que es un gris más oscuro.
+
+99
+00:05:42.050 --> 00:05:44.660
+El tamaño de la tipografía será 1.4rem
+
+100
+00:05:46.180 --> 00:05:48.690 line:15% 
+y podemos saltar directamente a la categoría
+
+101
+00:05:48.690 --> 00:05:51.633 line:15% 
+así que decimos categoría de post reciente.
+
+102
+00:05:53.350 --> 00:05:56.270 line:15% 
+Este color va a ser un poco diferente
+
+103
+00:05:56.270 --> 00:06:01.100 line:15% 
+así que para éste digamos almohadilla 999 9999.
+
+104
+00:06:02.542 --> 00:06:04.613 line:15% 
+Sí, tengo seis de ellos ahí.
+
+105
+00:06:05.584 --> 00:06:07.830 line:15% 
+El tamaño de letra aquí será un poco más pequeño
+
+106
+00:06:07.830 --> 00:06:10.360 line:15% 
+así que va a ser 1.2rem
+
+107
+00:06:10.360 --> 00:06:13.560 line:15% 
+y entonces el peso de la tipografía será 600.
+
+108
+00:06:13.560 --> 00:06:17.480 line:15% 
+Una buena regla general cuando quieras que algo destaque
+
+109
+00:06:17.480 --> 00:06:20.380 line:15% 
+es usar la tipografía de peso 600-800 que
+
+110
+00:06:20.380 --> 00:06:23.460 line:15% 
+va a ser una buena apuesta.
+
+111
+00:06:23.460 --> 00:06:24.293
+Ahí tienes.
+
+112
+00:06:24.293 --> 00:06:25.800
+Eso está muy bien.
+
+113
+00:06:25.800 --> 00:06:27.414 line:15% 
+Tenemos nuestros mensajes recientes aquí
+
+114
+00:06:27.414 --> 00:06:31.359 line:15% 
+que está encima del contenedor de cuadrícula
+
+115
+00:06:31.359 --> 00:06:35.410 line:15% 
+y ahora estamos utilizando otro contenedor de rejilla aquí
+
+116
+00:06:35.410 --> 00:06:38.490 line:15% 
+que tiene esos tres elementos,
+
+117
+00:06:38.490 --> 00:06:40.240
+y si pincho dos veces aquí puedes ver
+
+118
+00:06:40.240 --> 00:06:42.160
+que esto se contrae.
+
+119
+00:06:42.160 --> 00:06:45.660
+Y mira que no tuvimos que usar ninguna consulta de medios
+
+120
+00:06:45.660 --> 00:06:48.740
+a pesar de que tenemos un contenedor de cuadrícula aquí
+
+121
+00:06:48.740 --> 00:06:50.660
+que comenzó con tres elementos.
+
+122
+00:06:50.660 --> 00:06:55.660
+Porque ponemos esa repetición y el mín. máx.
+
+123
+00:06:56.250 --> 00:06:58.410
+aquí es donde la magia sucede.
+
+124
+00:06:58.410 --> 00:07:01.500
+Así que justo donde ves donde dice 100 píxeles
+
+125
+00:07:01.500 --> 00:07:05.519
+o 1 FR para el mín. Máx. lo que esto te permite hacer
+
+126
+00:07:05.519 --> 00:07:08.730
+es tener este tipo de comportamiento dinámico.
+
+127
+00:07:08.730 --> 00:07:12.536
+Entonces, en un escritorio, sabe que puede ocupar todo
+
+128
+00:07:12.536 --> 00:07:17.000
+y tener 100 píxeles de ancho, pero si se reduce,
+
+129
+00:07:17.000 --> 00:07:19.500
+entonces si tiene que tener su tamaño mínimo
+
+130
+00:07:19.500 --> 00:07:22.276
+entonces simplemente irá automáticamente
+
+131
+00:07:22.276 --> 00:07:25.040
+y simplemente se apilarán uno encima del otro
+
+132
+00:07:25.040 --> 00:07:26.120
+así.
+
+133
+00:07:26.120 --> 00:07:27.480
+Y creo que está muy bien.
+
+134
+00:07:27.480 --> 00:07:31.220
+Estoy muy contento con cómo se está comportando.
+
+135
+00:07:31.220 --> 00:07:33.910
+Así que voy a parar el vídeo aquí,
+
+136
+00:07:33.910 --> 00:07:37.520
+y como habrás notado, nuestro diseño es correcto
+
+137
+00:07:37.520 --> 00:07:41.540
+pero no está tan bien como lo que tenemos aquí.
+
+138
+00:07:41.540 --> 00:07:45.220
+Eso es porque tenemos algunas tipografías personalizadas
+
+139
+00:07:45.220 --> 00:07:48.390
+que necesitamos integrar junto con algunos tamaños.
+
+140
+00:07:48.390 --> 00:07:51.360
+Así que eso es lo que vamos a hacer en la próxima guía
+
+141
+00:07:51.360 --> 00:07:52.940
+y entonces deberíamos poder tener
+
+142
+00:07:52.940 --> 00:07:55.193
+toda esta primera página terminada.
+

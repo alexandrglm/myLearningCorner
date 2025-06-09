@@ -1,0 +1,434 @@
+WEBVTT
+
+1
+00:00:00.620 --> 00:00:02.330
+<v Instructor>Después de terminar la última guía,</v>
+
+2
+00:00:02.330 --> 00:00:05.520
+me di cuenta de que puede que me haya precipitado un poco
+
+3
+00:00:05.520 --> 00:00:07.710
+en lo que planeamos hacer a continuación
+
+4
+00:00:07.710 --> 00:00:11.670
+y algunos de los temas que iba a presentar
+
+5
+00:00:11.670 --> 00:00:14.880
+para una característica más complicada con mixins
+
+6
+00:00:14.880 --> 00:00:18.042
+podría ser un poco difícil de entender
+
+7
+00:00:18.042 --> 00:00:19.710
+si nunca los has visto antes.
+
+8
+00:00:19.710 --> 00:00:21.830
+Así que, en realidad voy a poner fin a esto
+
+9
+00:00:21.830 --> 00:00:25.040
+y seguir con algunos temas más sencillos
+
+10
+00:00:25.040 --> 00:00:26.970
+que conducen a eso y lo haremos
+
+11
+00:00:26.970 --> 00:00:28.420
+en un par de vídeos.
+
+12
+00:00:28.420 --> 00:00:30.840
+Así que, lo primero de lo que quiero hablar
+
+13
+00:00:30.840 --> 00:00:34.381
+es de cómo ahora mismo nuestro mixin para "destacado"
+
+14
+00:00:34.381 --> 00:00:39.110
+es sólo este nombre de aquí, es sólo un mixin de nombre.
+
+15
+00:00:39.110 --> 00:00:41.450
+Y con eso, lo que eso significa es que
+
+16
+00:00:41.450 --> 00:00:43.290
+que no va a ser dinámico,
+
+17
+00:00:43.290 --> 00:00:45.280
+lo que está bien para ciertos casos,
+
+18
+00:00:45.280 --> 00:00:48.910
+hay momentos en los que simplemente quieres tener acceso
+
+19
+00:00:48.910 --> 00:00:52.590
+a un conjunto de estilos y poder obtener este mixin
+
+20
+00:00:52.590 --> 00:00:55.490
+desde cualquier lugar y eso está perfectamente bien.
+
+21
+00:00:55.490 --> 00:00:59.430
+Sin embargo, hay muchas veces en las que quieres cambiar
+
+22
+00:00:59.430 --> 00:01:02.020
+ese comportamiento sólo un poco,
+
+23
+00:01:02.020 --> 00:01:03.578
+puede que quieras tener algún tipo de
+
+24
+00:01:03.578 --> 00:01:05.450
+comportamiento dinámico
+
+25
+00:01:05.450 --> 00:01:08.580
+y eso es lo que podemos aprovechar los argumentos
+
+26
+00:01:08.580 --> 00:01:11.722
+con que podemos pasar directamente a nuestro mixin.
+
+27
+00:01:11.722 --> 00:01:13.697
+Así que, lo que puedo hacer aquí,
+
+28
+00:01:13.697 --> 00:01:15.860
+voy a empezar con uno básico
+
+29
+00:01:15.860 --> 00:01:17.780
+y entonces esto nos llevará directamente
+
+30
+00:01:17.780 --> 00:01:20.247
+en cómo podemos implementar los condicionales.
+
+31
+00:01:20.247 --> 00:01:24.889
+Así que, voy a empezar justo después de la palabra mixin,
+
+32
+00:01:24.889 --> 00:01:29.260
+Voy a declarar una variable y con esta variable
+
+33
+00:01:29.260 --> 00:01:33.760
+voy a llamarlo "color del enlace".
+
+34
+00:01:33.760 --> 00:01:36.270
+Y entonces, ¿cuál es el objetivo de esto?
+
+35
+00:01:36.270 --> 00:01:40.830
+es que debería ser capaz de reemplazar el color justo aquí.
+
+36
+00:01:40.830 --> 00:01:44.130
+en ambos enlaces y debería ser dinámico.
+
+37
+00:01:44.130 --> 00:01:46.450
+Así que, si queremos un color aquí,
+
+38
+00:01:46.450 --> 00:01:48.830
+pero un color completamente diferente aquí,
+
+39
+00:01:48.830 --> 00:01:51.050
+entonces todavía podemos llamarlo "destacado"
+
+40
+00:01:51.050 --> 00:01:53.170
+y tener un comportamiento diferente.
+
+41
+00:01:53.170 --> 00:01:54.880
+Así que, la forma en que vamos a hacerlo
+
+42
+00:01:54.880 --> 00:01:58.557
+es copiar "color del enlace" y en lugar de tener
+
+43
+00:01:58.557 --> 00:02:01.662
+el eslabón azul claro codificado, voy a pegar esto
+
+44
+00:02:01.662 --> 00:02:06.280
+aquí y sólo por el bien del argumento
+
+45
+00:02:06.280 --> 00:02:07.790
+voy a pegarlo aquí
+
+46
+00:02:07.790 --> 00:02:09.470
+para el efecto hover también.
+
+47
+00:02:09.470 --> 00:02:12.010
+También puedes añadir, puedes añadir tantos
+
+48
+00:02:12.010 --> 00:02:13.318
+de estos como quieras,
+
+49
+00:02:13.318 --> 00:02:15.367
+para que puedas hacer el "color del enlace",
+
+50
+00:02:15.367 --> 00:02:19.330
+podrías hacer un color para el hover, eso depende de ti.
+
+51
+00:02:19.330 --> 00:02:22.710
+Pero, para este ejemplo básico, sólo voy a ir con uno.
+
+52
+00:02:22.710 --> 00:02:24.828
+Así que, ahora que tenemos este "color del enlace",
+
+53
+00:02:24.828 --> 00:02:28.562
+puedes notar, si estás siguiendo el CodePen
+
+54
+00:02:28.562 --> 00:02:32.630
+que ahora tenemos un error y si hago clic en este error,
+
+55
+00:02:32.630 --> 00:02:35.550
+lo que va a demostrar es que el mixin "destacado"
+
+56
+00:02:35.550 --> 00:02:37.810
+le falta "color del enlace" del argumento.
+
+57
+00:02:37.810 --> 00:02:40.018
+Esa es una forma agradable y útil de ver
+
+58
+00:02:40.018 --> 00:02:41.468
+qué es lo que va mal.
+
+59
+00:02:41.468 --> 00:02:44.350
+Entonces, lo que esto significa es que cuando pasemos
+
+60
+00:02:44.350 --> 00:02:47.370
+o cuando obtengamos "destacado" aquí mismo,
+
+61
+00:02:47.370 --> 00:02:49.290
+tenemos que pasar en ese argumento.
+
+62
+00:02:49.290 --> 00:02:53.950
+Así que, aquí voy a escribir, digamos "negro"
+
+63
+00:02:53.950 --> 00:02:56.770
+y ahora lo que va a pasar es,
+
+64
+00:02:56.770 --> 00:02:58.277
+después de que arreglé el otro,
+
+65
+00:02:58.277 --> 00:03:01.700
+lo va a cambiar por este "destacado".
+
+66
+00:03:01.700 --> 00:03:06.700
+Voy a copiar esto, venir aquí y escribo lo mismo,
+
+67
+00:03:06.920 --> 00:03:08.390
+ahora los dos son negros.
+
+68
+00:03:08.390 --> 00:03:11.710
+Ahora, si quiero cambiar este, digamos que para este
+
+69
+00:03:11.710 --> 00:03:16.710
+quiero cambiarlo por algo como "crema de menta",
+
+70
+00:03:17.340 --> 00:03:20.074
+ahora puedes ver que este enlace de subtítulos
+
+71
+00:03:20.074 --> 00:03:21.324
+sigue siendo negro,
+
+72
+00:03:21.324 --> 00:03:23.940
+pero este ahora ha sido cambiado a blanco
+
+73
+00:03:23.940 --> 00:03:25.630
+o este color "crema de menta".
+
+74
+00:03:25.630 --> 00:03:27.538
+Y así, a pesar de que estamos usando
+
+75
+00:03:27.538 --> 00:03:29.300
+exactamente el mismo mixin,
+
+76
+00:03:29.300 --> 00:03:32.270
+ahora podemos hacer esto completamente dinámico,
+
+77
+00:03:32.270 --> 00:03:35.940
+lo que es una cosa muy buena e increíblemente útil de hacer.
+
+78
+00:03:35.940 --> 00:03:38.150
+Ahora, la otra cosa, y vamos a entrar en esto
+
+79
+00:03:38.150 --> 00:03:41.200
+aún más en la sección complicada o más avanzada,
+
+80
+00:03:41.200 --> 00:03:43.974
+es que también tenemos la capacidad de
+
+81
+00:03:43.974 --> 00:03:46.120
+tener argumentos por defecto.
+
+82
+00:03:46.120 --> 00:03:51.090
+Y así, digamos que durante el 99% del tiempo,
+
+83
+00:03:51.090 --> 00:03:54.985
+queremos que "negro" esté aquí para este mixin
+
+84
+00:03:54.985 --> 00:03:57.740
+"destacado", pero hay un par de veces,
+
+85
+00:03:57.740 --> 00:04:00.120
+como cuando tenemos un fondo oscuro,
+
+86
+00:04:00.120 --> 00:04:02.980
+donde quizá queramos ponerle un color diferente.
+
+87
+00:04:02.980 --> 00:04:05.280
+Así que, la forma en que puedes hacer esto
+
+88
+00:04:05.280 --> 00:04:09.980
+es que voy a sacar "destacado", así de fácil.
+
+89
+00:04:09.980 --> 00:04:11.380
+Va a lanzar un error ahora mismo,
+
+90
+00:04:11.380 --> 00:04:14.010
+porque aún no hemos implementado este arreglo.
+
+91
+00:04:14.010 --> 00:04:16.468
+Y aquí voy a escribir "color del enlace"
+
+92
+00:04:16.468 --> 00:04:18.850
+y luego le daré dos puntos
+
+93
+00:04:18.850 --> 00:04:23.550
+y luego podemos seguir esto con "negro" justo aquí.
+
+94
+00:04:23.550 --> 00:04:26.760
+Y ahora, como pueden ver, esto ha sido arreglado,
+
+95
+00:04:26.760 --> 00:04:30.650
+así que aunque no estemos pasando un argumento
+
+96
+00:04:30.650 --> 00:04:33.290
+con "destacado" aquí, sigue funcionando.
+
+97
+00:04:33.290 --> 00:04:34.610
+Y si vienes aquí,
+
+98
+00:04:34.610 --> 00:04:39.220
+"crema de menta" sigue anulando el "color del enlace".
+
+99
+00:04:39.220 --> 00:04:41.960
+Ahora esto empieza a ser un poco más complicado
+
+100
+00:04:41.960 --> 00:04:46.480
+cuando vas a tener múltiples argumentos.
+
+101
+00:04:46.480 --> 00:04:49.810
+Y en nuestra sección más avanzada, cuando hablo de
+
+102
+00:04:49.810 --> 00:04:52.040
+cómo vamos a implementar Flexbox aquí,
+
+103
+00:04:52.040 --> 00:04:53.130
+entonces voy a mostrarte
+
+104
+00:04:53.130 --> 00:04:55.270
+cómo puede utilizar realmente los argumentos con nombre
+
+105
+00:04:55.270 --> 00:04:58.640
+para dejar muy claro qué valores estás estableciendo.
+
+106
+00:04:58.640 --> 00:05:02.410
+Pero, para esta guía, quería darte una buena base
+
+107
+00:05:02.410 --> 00:05:05.520
+para entender cómo funcionan las cosas cuando se trata de
+
+108
+00:05:05.520 --> 00:05:08.453
+establecer argumentos dentro de los mixins.
+

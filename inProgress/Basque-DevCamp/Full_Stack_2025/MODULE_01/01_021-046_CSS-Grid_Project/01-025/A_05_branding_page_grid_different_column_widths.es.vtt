@@ -1,0 +1,1130 @@
+WEBVTT
+
+1
+00:00:00.960 --> 00:00:02.220
+<v Hombre>En las últimas guías,</v>
+
+2
+00:00:02.220 --> 00:00:05.630
+construimos nuestro primer contenedor de cuadrícula CSS,
+
+3
+00:00:05.630 --> 00:00:06.890
+y espero que hayas visto que
+
+4
+00:00:06.890 --> 00:00:10.950
+intuitivo es poder crear conceptos
+
+5
+00:00:10.950 --> 00:00:15.770
+como columnas y colocarlas justo dentro de nuestros diseños,
+
+6
+00:00:15.770 --> 00:00:17.340
+como hicimos aquí.
+
+7
+00:00:17.340 --> 00:00:21.100
+Este va a ser un tipo de uso muy común,
+
+8
+00:00:21.100 --> 00:00:24.730
+donde necesitas tener una situación donde tengas contenido
+
+9
+00:00:24.730 --> 00:00:27.570
+en el lado izquierdo, contenido en el lado derecho,
+
+10
+00:00:27.570 --> 00:00:30.480
+y quieres que ambos tamaños sean iguales.
+
+11
+00:00:30.480 --> 00:00:32.090
+Eso es lo que implementamos.
+
+12
+00:00:32.090 --> 00:00:34.610
+Así que esto es algo que vas a poder
+
+13
+00:00:34.610 --> 00:00:38.270
+utilizar en proyectos durante años, que es agradable y útil.
+
+14
+00:00:38.270 --> 00:00:39.830
+Si cambiamos aquí,
+
+15
+00:00:39.830 --> 00:00:43.122
+ahora puedes ver que la próxima cuadrícula vamos a crear
+
+16
+00:00:43.122 --> 00:00:48.122
+es un conjunto de que si y no, y luego también imágenes.
+
+17
+00:00:48.570 --> 00:00:50.250
+Así que vamos a ampliar nuestro conocimiento,
+
+18
+00:00:50.250 --> 00:00:53.500
+así que esta vez en lugar de simplemente tener dos columnas,
+
+19
+00:00:53.500 --> 00:00:56.090
+vamos a crear un nuevo contenedor de rejilla.
+
+20
+00:00:56.090 --> 00:00:58.650
+Va a contener tres columnas,
+
+21
+00:00:58.650 --> 00:01:02.470
+uno con una lista de que si, otro con una lista de no hacer,
+
+22
+00:01:02.470 --> 00:01:04.340
+y luego las imágenes.
+
+23
+00:01:04.340 --> 00:01:06.000
+Ahora la diferencia,
+
+24
+00:01:06.000 --> 00:01:07.320
+o una de las diferencias claves aquí
+
+25
+00:01:07.320 --> 00:01:09.258
+no es sólo tener tres columnas,
+
+26
+00:01:09.258 --> 00:01:12.921
+pero también vamos a dictar el tamaño diferente
+
+27
+00:01:12.921 --> 00:01:16.850
+para una de las columnas, esta columna de imágenes.
+
+28
+00:01:16.850 --> 00:01:20.380
+Así que vamos a empezar con eso.
+
+29
+00:01:20.380 --> 00:01:21.690
+Voy a venir aquí,
+
+30
+00:01:21.690 --> 00:01:24.400
+y veamos que necesitamos agregar.
+
+31
+00:01:24.400 --> 00:01:26.150
+Si bajamos al fondo,
+
+32
+00:01:26.150 --> 00:01:29.507
+y asegúrese de que ahora va a colocar todo esto
+
+33
+00:01:29.507 --> 00:01:31.730
+dentro de ese contenedor de contenido,
+
+34
+00:01:31.730 --> 00:01:35.453
+así que vas a seguir esa sangría aquí abajo,
+
+35
+00:01:36.520 --> 00:01:38.250
+y vamos a empezar.
+
+36
+00:01:38.250 --> 00:01:40.690
+Así que voy a crear una clase aquí.
+
+37
+00:01:40.690 --> 00:01:45.690
+Voy a llamarlo "dos donts wrapper",
+
+38
+00:01:46.120 --> 00:01:50.120
+y todo podrá ser colocado dentro de aquí.
+
+39
+00:01:50.120 --> 00:01:52.540
+Tenemos un par de componentes diferentes,
+
+40
+00:01:52.540 --> 00:01:56.600
+tenemos una lista de hacer y tenemos una lista de no hacer.
+
+41
+00:01:56.600 --> 00:02:01.430
+Así que decidamos cómo queremos enumerarlos.
+
+42
+00:02:01.430 --> 00:02:04.860
+Voy a empezar primero diciendo que
+
+43
+00:02:04.860 --> 00:02:09.090
+quiero tener una lista de cosas que hacer y no hacer,
+
+44
+00:02:09.090 --> 00:02:10.560
+y un div,
+
+45
+00:02:10.560 --> 00:02:13.900
+y así será la primera lista
+
+46
+00:02:13.900 --> 00:02:15.365
+contenida dentro de aquí.
+
+47
+00:02:15.365 --> 00:02:18.570
+Entonces también voy a poder reutilizar esta clase,
+
+48
+00:02:18.570 --> 00:02:21.690
+así que voy a poder tener
+
+49
+00:02:21.690 --> 00:02:25.390
+exactamente el mismo tipo de comportamiento aquí.
+
+50
+00:02:25.390 --> 00:02:26.960
+Y la razón por la que estoy haciendo esto es
+
+51
+00:02:26.960 --> 00:02:30.500
+que si nos fijamos en el objetivo final que buscamos,
+
+52
+00:02:30.500 --> 00:02:34.370
+tenemos que hacer y no hacer y son prácticamente idénticos.
+
+53
+00:02:34.370 --> 00:02:36.070
+El contenido va a ser diferente,
+
+54
+00:02:36.070 --> 00:02:38.310
+pero van a ser del mismo tamaño,
+
+55
+00:02:38.310 --> 00:02:40.730
+van a contener los mismos tipos de elementos,
+
+56
+00:02:40.730 --> 00:02:42.920
+y podemos tratarlos de la misma manera.
+
+57
+00:02:42.920 --> 00:02:46.260
+Así que no hay razón para crear una clase diferente
+
+58
+00:02:46.260 --> 00:02:48.210
+para este elemento izquierdo,
+
+59
+00:02:48.210 --> 00:02:51.202
+y luego una diferente para el derecho.
+
+60
+00:02:51.202 --> 00:02:52.380
+Con eso en mente,
+
+61
+00:02:52.380 --> 00:02:54.940
+mantenemos solo listas de no hacer,
+
+62
+00:02:54.940 --> 00:02:57.155
+y las mantenemos exactamente iguales.
+
+63
+00:02:57.155 --> 00:02:58.691
+Ahora dentro de aquí,
+
+64
+00:02:58.691 --> 00:03:01.608
+vamos a tener un rumbo.
+
+65
+00:03:01.608 --> 00:03:04.875
+Vamos a tener nuestro si y nuestros no,
+
+66
+00:03:04.875 --> 00:03:07.924
+así que voy a decir si hacer...
+
+67
+00:03:07.924 --> 00:03:08.900
+o punto
+
+68
+00:03:10.500 --> 00:03:11.710
+hacer,
+
+69
+00:03:11.710 --> 00:03:12.543
+no hacer,
+
+70
+00:03:12.543 --> 00:03:15.540
+y luego esto va a ser un título regular,
+
+71
+00:03:15.540 --> 00:03:18.520
+así que solo digan título.
+
+72
+00:03:18.520 --> 00:03:20.720
+Y luego dentro,
+
+73
+00:03:20.720 --> 00:03:23.080
+simplemente coloquemos en lo que queremos.
+
+74
+00:03:23.080 --> 00:03:28.077
+Así que voy a tener que decir "logo do's",
+
+75
+00:03:29.000 --> 00:03:32.443
+como tenemos justo allí, y luego podemos copiar esto,
+
+76
+00:03:33.960 --> 00:03:36.137
+y este va a decir "no hacer".
+
+77
+00:03:37.680 --> 00:03:40.450
+Bien, ahora debajo de eso,
+
+78
+00:03:40.450 --> 00:03:43.530
+queremos tener una etiqueta ul,
+
+79
+00:03:43.530 --> 00:03:45.920
+y luego dentro de esa etiqueta ul,
+
+80
+00:03:45.920 --> 00:03:49.310
+queremos tener, creo que son cuatro etiquetas li.
+
+81
+00:03:49.310 --> 00:03:52.850
+Así que sí, tenemos ul seguido de cuatro li,
+
+82
+00:03:52.850 --> 00:03:56.960
+así que puedo decir ul, li, cuatro veces
+
+83
+00:03:56.960 --> 00:03:59.210
+y si tienes Emmet en tu sistema,
+
+84
+00:03:59.210 --> 00:04:00.820
+puedes escribirlo así
+
+85
+00:04:00.820 --> 00:04:04.810
+y va a crear todo ese contenido para ti.
+
+86
+00:04:04.810 --> 00:04:08.053
+Solo voy a copiar esto de uno en uno.
+
+87
+00:04:09.630 --> 00:04:13.470
+Y luego puedes pegar cada uno de estos,
+
+88
+00:04:13.470 --> 00:04:16.740
+y eso te va a permitir hacer esto
+
+89
+00:04:16.740 --> 00:04:19.370
+un poco más eficiente que tratar de
+
+90
+00:04:19.370 --> 00:04:21.160
+escribir todo a mano,
+
+91
+00:04:21.160 --> 00:04:22.593
+y también te pondrá en el hábito
+
+92
+00:04:22.593 --> 00:04:25.730
+de usar herramientas como Emmet.
+
+93
+00:04:25.730 --> 00:04:28.954
+Si estás construyendo grandes aplicaciones frontales,
+
+94
+00:04:28.954 --> 00:04:31.670
+no quieres gastar todo tu tiempo escribiendo
+
+95
+00:04:31.670 --> 00:04:34.148
+y recordando el código basado en Euler,
+
+96
+00:04:34.148 --> 00:04:38.131
+Es mucho mejor llegar a ser capaz de
+
+97
+00:04:38.131 --> 00:04:40.410
+construir tus sistemas fuera.
+
+98
+00:04:40.410 --> 00:04:44.613
+Así que aquí tenemos una ul con tres li,
+
+99
+00:04:46.400 --> 00:04:50.083
+Y vamos a copiar cada uno de estos.
+
+100
+00:05:00.250 --> 00:05:05.250
+Que parece que atrapó un final de línea en esa copia,
+
+101
+00:05:05.690 --> 00:05:08.853
+Allá vamos, y la última.
+
+102
+00:05:13.990 --> 00:05:15.160
+Bueno.
+
+103
+00:05:15.160 --> 00:05:16.130
+Ahora vamos a guardar esto,
+
+104
+00:05:16.130 --> 00:05:18.980
+y echar un vistazo y ver cómo se ve.
+
+105
+00:05:18.980 --> 00:05:21.160
+Está bien, hasta ahora, todo bien.
+
+106
+00:05:21.160 --> 00:05:21.993
+Ahora, fíjate,
+
+107
+00:05:21.993 --> 00:05:24.720
+que estos simplemente se apilan uno encima del otro,
+
+108
+00:05:24.720 --> 00:05:28.040
+eso es porque no hemos creado ningún tipo de columnas
+
+109
+00:05:28.040 --> 00:05:31.710
+o cualquier tipo de componente de red todavía.
+
+110
+00:05:31.710 --> 00:05:34.950
+Antes de empezar a hacer todo eso,
+
+111
+00:05:34.950 --> 00:05:38.030
+vamos a añadir en estas imágenes aquí.
+
+112
+00:05:38.030 --> 00:05:40.516
+Así que vamos a volver y
+
+113
+00:05:40.516 --> 00:05:44.970
+si abres tu directorio de imágenes,
+
+114
+00:05:44.970 --> 00:05:47.690
+debes tener una lista de no hacer.
+
+115
+00:05:47.690 --> 00:05:52.690
+Tenemos dont_color.png, no recortemos, y no estiremos.
+
+116
+00:05:53.200 --> 00:05:57.600
+Así que bajemos por debajo de este div aquí,
+
+117
+00:05:57.600 --> 00:06:00.400
+vamos a añadir uno nuevo.
+
+118
+00:06:00.400 --> 00:06:05.000
+Vamos a darnos un poco de espacio.
+
+119
+00:06:05.000 --> 00:06:05.833
+Y aquí mismo,
+
+120
+00:06:05.833 --> 00:06:08.610
+Voy a crear un div envoltorio para esas imágenes.
+
+121
+00:06:08.610 --> 00:06:12.263
+Así que voy a decir imágenes de no hacer,
+
+122
+00:06:13.100 --> 00:06:15.550
+y luego dentro de aquí,
+
+123
+00:06:15.550 --> 00:06:16.900
+lo que podremos hacer es
+
+124
+00:06:16.900 --> 00:06:19.610
+añadir cada una de esas imágenes.
+
+125
+00:06:19.610 --> 00:06:23.003
+Voy a crear lo que llamo un cuadro de imagen,
+
+126
+00:06:23.003 --> 00:06:27.360
+porque si te fijas no solo tenemos una imagen,
+
+127
+00:06:27.360 --> 00:06:29.960
+pero también tenemos texto justo debajo.
+
+128
+00:06:29.960 --> 00:06:33.423
+Así que quiero crear otra envoltura aquí.
+
+129
+00:06:33.423 --> 00:06:34.960
+Solo como una pequeña nota al margen,
+
+130
+00:06:34.960 --> 00:06:37.860
+si crees que estoy usando muchos divs,
+
+131
+00:06:37.860 --> 00:06:39.550
+Hay una buena razón para eso.
+
+132
+00:06:39.550 --> 00:06:43.830
+Una vez tuve una persona que aprendió muchas de mis
+
+133
+00:06:43.830 --> 00:06:45.835
+habilidades de desarrollo front-end de decirme
+
+134
+00:06:45.835 --> 00:06:49.340
+que nunca se ha topado con una situación donde
+
+135
+00:06:49.340 --> 00:06:52.170
+puso demasiados divs en un programa.
+
+136
+00:06:52.170 --> 00:06:54.281
+Cada vez que él estaba haciendo errores
+
+137
+00:06:54.281 --> 00:06:58.200
+o algo no se veía bien en la página,
+
+138
+00:06:58.200 --> 00:07:02.070
+casi siempre fue porque no estaba usando suficientes divs,
+
+139
+00:07:02.070 --> 00:07:05.694
+bastantes envoltorios y suficientes tipos de contenedores.
+
+140
+00:07:05.694 --> 00:07:08.350
+Tomé ese conocimiento,
+
+141
+00:07:08.350 --> 00:07:11.940
+y por eso siempre estoy tratando de aplicar eso.
+
+142
+00:07:11.940 --> 00:07:14.970
+Así que en cualquier momento tienes una situación
+
+143
+00:07:14.970 --> 00:07:18.040
+donde un componente no funciona
+
+144
+00:07:18.040 --> 00:07:18.930
+de la forma que quieres
+
+145
+00:07:18.930 --> 00:07:20.680
+no se está alineando bien,
+
+146
+00:07:20.680 --> 00:07:23.150
+por lo general lo que significa es que necesitas
+
+147
+00:07:23.150 --> 00:07:27.130
+mirar tu arquitectura y cómo tienes tus divs
+
+148
+00:07:27.130 --> 00:07:30.060
+y sus vanos y todos sus componentes estructurados
+
+149
+00:07:30.060 --> 00:07:32.403
+para ver están anidados correctamente,
+
+150
+00:07:34.090 --> 00:07:37.600
+si tienes el niño y los padres divs en el lugar correcto,
+
+151
+00:07:37.600 --> 00:07:38.730
+ese tipo de cosas.
+
+152
+00:07:38.730 --> 00:07:41.590
+Así que me gusta tomar un enfoque donde
+
+153
+00:07:41.590 --> 00:07:44.070
+tengo tantos divs como sea posible,
+
+154
+00:07:44.070 --> 00:07:47.190
+porque entonces siempre tengo algo que puedo seleccionar
+
+155
+00:07:47.190 --> 00:07:48.770
+y con eso puedo trabajar.
+
+156
+00:07:48.770 --> 00:07:50.640
+Así que dentro de no imágenes,
+
+157
+00:07:50.640 --> 00:07:55.640
+voy a crear una clase llamada "no encajonar imagen",
+
+158
+00:07:56.400 --> 00:08:01.400
+y dentro de aquí voy a tener una imagen,
+
+159
+00:08:01.404 --> 00:08:06.020
+y así vamos a entrar en el directorio de imágenes,
+
+160
+00:08:06.020 --> 00:08:09.110
+y creo que la primera si recuerdo correctamente,
+
+161
+00:08:09.110 --> 00:08:10.660
+fue estirar.
+
+162
+00:08:10.660 --> 00:08:13.020
+Y luego justo debajo de eso
+
+163
+00:08:13.020 --> 00:08:16.260
+quiero tener otro div aquí
+
+164
+00:08:16.260 --> 00:08:18.430
+y puede ser simplemente uno simple.
+
+165
+00:08:18.430 --> 00:08:22.630
+No se necesita clase ni nada, y diremos estiramiento.
+
+166
+00:08:22.630 --> 00:08:27.630
+Así que vamos a venir aquí y crear sólo algunos más de estos
+
+167
+00:08:28.990 --> 00:08:30.860
+para cada una de estas imágenes.
+
+168
+00:08:30.860 --> 00:08:33.740
+Y así, el siguiente, si recuerdo bien,
+
+169
+00:08:33.740 --> 00:08:34.790
+es recortar.
+
+170
+00:08:34.790 --> 00:08:37.400
+Así que vamos a decir "no cortar",
+
+171
+00:08:37.400 --> 00:08:39.079
+sí, eso es correcto.
+
+172
+00:08:39.079 --> 00:08:42.830
+cambia este contenido a recortar
+
+173
+00:08:42.830 --> 00:08:45.710
+y por último es el color.
+
+174
+00:08:45.710 --> 00:08:47.877
+Así que el próximo será "no colorear".
+
+175
+00:08:53.320 --> 00:08:54.510
+Guarda esto,
+
+176
+00:08:54.510 --> 00:08:58.290
+y volvamos y veamos cómo se ve esto.
+
+177
+00:08:58.290 --> 00:09:01.500
+Está bien, así que esto es traer todo correctamente
+
+178
+00:09:01.500 --> 00:09:03.890
+y este es, una vez más, el comportamiento por defecto.
+
+179
+00:09:03.890 --> 00:09:06.560
+Así que cada vez que traes divs,
+
+180
+00:09:06.560 --> 00:09:11.030
+el comportamiento HTML predeterminado es que va a
+
+181
+00:09:11.030 --> 00:09:12.960
+colocarlos uno encima del otro,
+
+182
+00:09:12.960 --> 00:09:14.570
+como tenemos justo aquí.
+
+183
+00:09:14.570 --> 00:09:18.700
+Así que ahora vamos a implementar nuestra red,
+
+184
+00:09:18.700 --> 00:09:21.550
+para que podamos obtener este tipo de configuración.
+
+185
+00:09:21.550 --> 00:09:25.480
+Cambiando de vuelta, si llegas a la cima,
+
+186
+00:09:25.480 --> 00:09:29.970
+ves que tenemos este envoltorio de hacer y no hacer.
+
+187
+00:09:29.970 --> 00:09:32.120
+Voy a copiar eso,
+
+188
+00:09:32.120 --> 00:09:36.333
+y bajando aquí abajo,
+
+189
+00:09:38.410 --> 00:09:42.010
+voy a empezar a crear nuestro contenedor cuadrículado.
+
+190
+00:09:42.010 --> 00:09:45.290
+Así que primero voy a darnos algunos márgenes,
+
+191
+00:09:45.290 --> 00:09:49.560
+así que diremos margen superior,
+
+192
+00:09:49.560 --> 00:09:52.840
+ve con los mismos 75 píxeles.
+
+193
+00:09:52.840 --> 00:09:57.130
+y luego el margen inferior también será de 75 píxeles.
+
+194
+00:09:57.130 --> 00:09:59.170
+Así que eso nos va a dar un poco de separación
+
+195
+00:09:59.170 --> 00:10:02.090
+entre los demás contenedores.
+
+196
+00:10:02.090 --> 00:10:06.600
+Ahora, a continuación, entremos en hacer cuadrículas.
+
+197
+00:10:06.600 --> 00:10:08.361
+Así que voy a decir "cuadrícula de visualización",
+
+198
+00:10:08.361 --> 00:10:10.710
+y luego aquí esto es lo que va a ser
+
+199
+00:10:10.710 --> 00:10:11.690
+un poquito diferente.
+
+200
+00:10:11.690 --> 00:10:15.520
+Voy a decir "plantilla de cuadrícula",
+
+201
+00:10:15.520 --> 00:10:17.350
+y luego "columnas",
+
+202
+00:10:17.350 --> 00:10:19.930
+y en lugar de solo pasar en dos,
+
+203
+00:10:19.930 --> 00:10:23.280
+vamos a pasar en tres y voy a cambiar los tamaños.
+
+204
+00:10:23.280 --> 00:10:25.380
+Así que si trato esto,
+
+205
+00:10:25.380 --> 00:10:26.900
+si los quisiera todos del mismo tamaño,
+
+206
+00:10:26.900 --> 00:10:31.427
+Podría decir 1fr, 1fr, y luego 1fr.
+
+207
+00:10:32.670 --> 00:10:33.963
+Déjame guardar esto.
+
+208
+00:10:34.840 --> 00:10:36.640
+Y luego, como puedes ver,
+
+209
+00:10:36.640 --> 00:10:39.190
+esto nos da algo de lo que estamos buscando.
+
+210
+00:10:39.190 --> 00:10:40.240
+Si te das cuenta,
+
+211
+00:10:40.240 --> 00:10:43.440
+está empezando a parecerse un poco a este diseño,
+
+212
+00:10:43.440 --> 00:10:46.554
+pero definitivamente tiene algo de margen para mejorar.
+
+213
+00:10:46.554 --> 00:10:48.017
+Volvamos aquí,
+
+214
+00:10:48.017 --> 00:10:50.290
+y la forma en que puedes cambiar una columna
+
+215
+00:10:50.290 --> 00:10:53.560
+es simplemente cambiando este tamaño fraccional.
+
+216
+00:10:53.560 --> 00:10:58.560
+Así que si quiero que las columnas uno y dos más grandes,
+
+217
+00:10:59.360 --> 00:11:02.780
+el doble de ancho que la columna tres,
+
+218
+00:11:02.780 --> 00:11:06.200
+puedo cambiar estas fracciones para que
+
+219
+00:11:06.200 --> 00:11:09.399
+este diga dos y este diga dos
+
+220
+00:11:09.399 --> 00:11:12.780
+Y ahora si le doy a guardar y vuelvo aquí,
+
+221
+00:11:12.780 --> 00:11:15.820
+se puede ver que se ha reducido ese tamaño,
+
+222
+00:11:15.820 --> 00:11:18.220
+y todavía tenemos que trabajar un poco en las imágenes,
+
+223
+00:11:18.220 --> 00:11:22.010
+pero como pueden ver nuestras columnas ahora tienen los
+
+224
+00:11:22.010 --> 00:11:23.462
+tipos de ancho adecuado.
+
+225
+00:11:23.462 --> 00:11:27.281
+Ahora también inspeccionemos esto y veamos
+
+226
+00:11:27.281 --> 00:11:31.100
+qué tipo de brecha de red queremos implementar.
+
+227
+00:11:31.100 --> 00:11:33.905
+Así que vamos a seleccionar nuestra envoltura de si y no.
+
+228
+00:11:33.905 --> 00:11:37.870
+Pueden ver que en este momento no hay brecha,
+
+229
+00:11:37.870 --> 00:11:40.096
+pero podemos bajar aquí y
+
+230
+00:11:40.096 --> 00:11:43.450
+probarlo para ver qué tipo de tamaño
+
+231
+00:11:43.450 --> 00:11:44.790
+pensamos que funcionaría.
+
+232
+00:11:44.790 --> 00:11:47.253
+Así que voy a decir la brecha de cuadrícula,
+
+233
+00:11:48.460 --> 00:11:50.522
+empieza con diez píxeles.
+
+234
+00:11:50.522 --> 00:11:51.870
+Nos da un poco
+
+235
+00:11:51.870 --> 00:11:54.190
+pero no es realmente lo que estoy buscando,
+
+236
+00:11:54.190 --> 00:11:56.820
+así que vamos a aumentar eso un poco
+
+237
+00:11:56.820 --> 00:11:58.630
+y vamos con esos treinta.
+
+238
+00:11:58.630 --> 00:12:00.800
+Creo que eso será mucho mejor,
+
+239
+00:12:00.800 --> 00:12:02.730
+así que ahora si lo resaltas,
+
+240
+00:12:02.730 --> 00:12:05.175
+se puede ver que tenemos mucho mejor espacio
+
+241
+00:12:05.175 --> 00:12:06.904
+entre cada uno de esos,
+
+242
+00:12:06.904 --> 00:12:10.538
+y ahora también puedes ver la diferencia en el tamaño.
+
+243
+00:12:10.538 --> 00:12:13.009
+Esas dos columnas de la izquierda tienen...
+
+244
+00:12:13.009 --> 00:12:16.270
+son el doble del tamaño de la columna
+
+245
+00:12:16.270 --> 00:12:17.243
+todo el camino a la derecha,
+
+246
+00:12:17.243 --> 00:12:20.010
+así es como puedes crear un contenedor
+
+247
+00:12:20.010 --> 00:12:23.270
+que tiene columnas y todas son de diferente tamaño,
+
+248
+00:12:23.270 --> 00:12:26.920
+y puedes cambiar cuál es más grande
+
+249
+00:12:26.920 --> 00:12:29.180
+y cuál es más pequeña.
+
+250
+00:12:29.180 --> 00:12:31.580
+Así que déjame cerrar esto,
+
+251
+00:12:31.580 --> 00:12:33.995
+y por último antes de tomar un descanso,
+
+252
+00:12:33.995 --> 00:12:35.587
+lo que vamos a hacer es
+
+253
+00:12:35.587 --> 00:12:39.860
+actualizar estas imágenes y estos tamaños aquí.
+
+254
+00:12:39.860 --> 00:12:42.412
+Así que voy a venir aquí,
+
+255
+00:12:42.412 --> 00:12:45.440
+y definamos esta clase.
+
+256
+00:12:45.440 --> 00:12:49.430
+Así que vamos a decir "cuadro de imagen de no hacer",
+
+257
+00:12:49.430 --> 00:12:52.080
+y también queremos seleccionar la imagen en sí.
+
+258
+00:12:52.080 --> 00:12:55.923
+y diremos "ancho" y haremos este cincuenta por ciento.
+
+259
+00:12:57.160 --> 00:13:01.040
+Pulsa guardar, y ahora puedes ver que esto es mucho mejor.
+
+260
+00:13:01.040 --> 00:13:03.210
+Ahora vamos a alinear esto mejor
+
+261
+00:13:03.210 --> 00:13:04.650
+y haremos algunos cambios.
+
+262
+00:13:04.650 --> 00:13:06.214
+En este momento esto todavía es muy crudo,
+
+263
+00:13:06.214 --> 00:13:07.990
+pero como puedes ver,
+
+264
+00:13:07.990 --> 00:13:11.482
+añadiendo unas pocas líneas de código de cuadrícula CSS,
+
+265
+00:13:11.482 --> 00:13:16.482
+somos capaces de pasar de algunos puntos muy feos
+
+266
+00:13:16.960 --> 00:13:19.620
+e imágenes todas apiladas una encima de la otra,
+
+267
+00:13:19.620 --> 00:13:21.990
+y somos capaces de definir una cuadrícula
+
+268
+00:13:21.990 --> 00:13:24.710
+y somos capaces de definir uno que es
+
+269
+00:13:24.710 --> 00:13:27.580
+mucho más avanzado de lo que uno usualmente
+
+270
+00:13:27.580 --> 00:13:32.580
+es capaz de hacer si crea flotadores o agrega flotadores,
+
+271
+00:13:32.730 --> 00:13:37.050
+y luego definir el ancho de cada uno de esos manualmente.
+
+272
+00:13:37.050 --> 00:13:38.745
+Aquí, solo podemos decir,
+
+273
+00:13:38.745 --> 00:13:40.570
+"Sabes qué, cuadrícula CSS,
+
+274
+00:13:40.570 --> 00:13:43.240
+"quiero que me des tres columnas
+
+275
+00:13:43.240 --> 00:13:46.721
+"y quiero que las dos primeras sean dos veces más grandes
+
+276
+00:13:46.721 --> 00:13:48.384
+"que la última".
+
+277
+00:13:48.384 --> 00:13:50.870
+Esta es una razón por la que me encanta la cuadrícula CSS,
+
+278
+00:13:50.870 --> 00:13:54.786
+porque permite ser muy rápido y fácilmente
+
+279
+00:13:54.786 --> 00:13:57.340
+configurar el diseño en la página,
+
+280
+00:13:57.340 --> 00:14:00.060
+y como nos metemos en proyectos cada vez más avanzados,
+
+281
+00:14:00.060 --> 00:14:02.667
+verás que esa misma sintaxis que
+
+282
+00:14:02.667 --> 00:14:06.963
+usamos va a ser reutilizada una y otra vez.
+

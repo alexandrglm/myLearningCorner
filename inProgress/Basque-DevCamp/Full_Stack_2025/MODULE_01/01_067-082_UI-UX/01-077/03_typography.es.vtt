@@ -1,0 +1,1083 @@
+WEBVTT
+
+1
+00:00:00.930 --> 00:00:02.830
+<v ->En esta sección del curso vamos a hablar</v>
+
+2
+00:00:02.830 --> 00:00:06.880
+de los elementos de diseño de la interfaz de usuario,
+
+3
+00:00:06.880 --> 00:00:11.425
+y en esta primera guía vamos a hablar de la tipografía,
+
+4
+00:00:11.425 --> 00:00:13.620
+y esto es algo que
+
+5
+00:00:13.620 --> 00:00:16.620
+he visto personalmente ya que he trabajado en proyectos,
+
+6
+00:00:16.620 --> 00:00:19.490
+especialmente en algunos de los proyectos últimamente,
+
+7
+00:00:19.490 --> 00:00:23.336
+donde esto, parece que no es gran problema,
+
+8
+00:00:23.336 --> 00:00:25.359
+hasta que no se haga bien.
+
+9
+00:00:25.359 --> 00:00:26.192
+Si.
+
+10
+00:00:26.192 --> 00:00:29.310
+<v ->Allí, recuerdo que en el proyecto Daily Smarty</v>
+
+11
+00:00:29.310 --> 00:00:32.980
+implementé el diseño inicial completo,
+
+12
+00:00:32.980 --> 00:00:35.950
+y había elegido las fuentes correctas,
+
+13
+00:00:35.950 --> 00:00:38.790
+todo en la página estaba exactamente donde debía estar,
+
+14
+00:00:38.790 --> 00:00:41.570
+pero hubo algunos cambios sutiles,
+
+15
+00:00:41.570 --> 00:00:44.700
+como no coincidir en el primer borrador
+
+16
+00:00:44.700 --> 00:00:47.280
+con el peso correcto de algunas de las fuentes,
+
+17
+00:00:47.280 --> 00:00:49.150
+y miraba tu diseño,
+
+18
+00:00:49.150 --> 00:00:51.267
+y luego miraba hacia la pantalla,
+
+19
+00:00:51.267 --> 00:00:54.357
+y la pantalla no era buena.
+
+20
+00:00:54.357 --> 00:00:55.190
+Si.
+
+21
+00:00:55.190 --> 00:00:56.930
+<v ->No se sentía profesional,</v>
+
+22
+00:00:56.930 --> 00:01:00.290
+y aunque tenía un 98%--
+<v ->Cierto.</v>
+
+23
+00:01:00.290 --> 00:01:03.006
+<v ->Del diseño adaptado, y por lo tanto,</v>
+
+24
+00:01:03.006 --> 00:01:04.480
+esto es algo importante.
+
+25
+00:01:04.480 --> 00:01:06.780
+Es algo que he visto que realmente separa
+
+26
+00:01:06.780 --> 00:01:10.340
+un diseño mediocre de algo que realmente
+
+27
+00:01:10.340 --> 00:01:11.173
+parece profesional.
+
+28
+00:01:11.173 --> 00:01:14.180
+<v ->Absolutamente, no, esto es lo más divertido.</v>
+
+29
+00:01:14.180 --> 00:01:15.860
+Así que, estas van a ser unas guías emocionantes.
+
+30
+00:01:15.860 --> 00:01:18.740
+Así que, la tipografía es impresionante.
+
+31
+00:01:18.740 --> 00:01:21.980
+Me encanta la tipografía, y a veces odio la tipografía,
+
+32
+00:01:21.980 --> 00:01:24.956
+pero una buena teoría
+
+33
+00:01:24.956 --> 00:01:27.415
+tipográfica hace una gran diferencia,
+
+34
+00:01:27.415 --> 00:01:31.770
+y es que quería empezar con esto específicamente.
+
+35
+00:01:31.770 --> 00:01:34.486
+Entonces, la tipografía puede ser extremadamente
+
+36
+00:01:34.486 --> 00:01:35.748
+melindrosa, ¿verdad?
+
+37
+00:01:35.748 --> 00:01:38.589
+Puedes estar a un punto de distancia
+
+38
+00:01:38.589 --> 00:01:40.439
+de las páginas de aspecto fantástico,
+
+39
+00:01:40.439 --> 00:01:42.300
+o simplemente de las páginas de aspecto basura.
+
+40
+00:01:42.300 --> 00:01:44.900
+<v ->Cierto.</v>
+<v ->Y la razón por la que</v>
+
+41
+00:01:45.790 --> 00:01:49.870
+no se trata de una sola pieza de texto aislada,
+
+42
+00:01:49.870 --> 00:01:54.740
+es porque la tipografía se reproduce entre sí
+
+43
+00:01:54.740 --> 00:01:57.870
+con diferentes familias de fuentes o diferentes pesos
+
+44
+00:01:57.870 --> 00:01:59.212
+o diferentes tamaños.
+
+45
+00:01:59.212 --> 00:02:02.100
+Todo en esa página necesita estar hablando entre sí,
+
+46
+00:02:02.100 --> 00:02:03.850
+porque si una cosa no pertenece,
+
+47
+00:02:03.850 --> 00:02:06.290
+si una cosa no está haciendo lo que se supone que debe
+
+48
+00:02:06.290 --> 00:02:09.583
+hacer, ya sabes, puedes hacer que el texto de ese cuerpo sea
+
+49
+00:02:09.583 --> 00:02:10.533
+sólo un punto más grande
+
+50
+00:02:10.533 --> 00:02:12.150
+y puede que no parezca un gran problema,
+
+51
+00:02:12.150 --> 00:02:14.320
+pero ahora de repente todos mis encabezados
+
+52
+00:02:14.320 --> 00:02:16.750
+no toman el control adecuado de la situación.
+
+53
+00:02:16.750 --> 00:02:19.850
+Han perdido el control de la copia del cuerpo,
+
+54
+00:02:19.850 --> 00:02:22.350
+y no están en negrita como deberían estar,
+
+55
+00:02:22.350 --> 00:02:24.420
+y eso lo desequilibra todo.
+
+56
+00:02:24.420 --> 00:02:27.983
+Y honestamente, si no estás pensando en la tipografía,
+
+57
+00:02:27.983 --> 00:02:29.900
+puedes estar mirando una página,
+
+58
+00:02:29.900 --> 00:02:31.780
+y estás como si no supieras qué le pasa,
+
+59
+00:02:31.780 --> 00:02:33.250
+pero algo le pasa,
+
+60
+00:02:33.250 --> 00:02:36.130
+hay una buena posibilidad de que sea la tipografía.
+
+61
+00:02:36.130 --> 00:02:40.263
+Y es algo con lo que me topo con los desarrolladores todo el
+
+62
+00:02:40.263 --> 00:02:43.021
+tiempo cuando piensan que lo suficientemente cerca
+
+63
+00:02:43.021 --> 00:02:44.395
+es lo suficientemente bueno.
+
+64
+00:02:44.395 --> 00:02:45.245
+No lo es.
+
+65
+00:02:45.245 --> 00:02:46.840
+Tiene que estar muerto.
+
+66
+00:02:46.840 --> 00:02:49.460
+Si el diseño se te entrega
+
+67
+00:02:50.350 --> 00:02:54.040
+por un diseñador competente, necesitas que combine
+
+68
+00:02:54.040 --> 00:02:56.800
+con ese píxel perfecto, especialmente la tipografía.
+
+69
+00:02:56.800 --> 00:02:59.060
+No lo hagas, si te falta un peso,
+
+70
+00:02:59.060 --> 00:03:02.380
+o si el diseñador ha usado una fuente que tiene una
+
+71
+00:03:02.380 --> 00:03:04.970
+licencia de escritorio pero no hay una versión web de ella,
+
+72
+00:03:04.970 --> 00:03:07.960
+tienes que, sólo no lo ignores, y será como, oh,
+
+73
+00:03:07.960 --> 00:03:09.210
+700 funcionará.
+
+74
+00:03:09.210 --> 00:03:10.135
+<v ->Cierto.</v>
+
+75
+00:03:10.135 --> 00:03:15.100
+<v ->Tienes que asegurarte de que estás igualando el peso.</v>
+
+76
+00:03:16.360 --> 00:03:18.510
+Y podrías pensar que es como un píxel de diferencia.
+
+77
+00:03:18.510 --> 00:03:20.890
+Es sólo un píxel de grosor.
+
+78
+00:03:20.890 --> 00:03:22.800
+Puede hacer una gran diferencia.
+
+79
+00:03:22.800 --> 00:03:26.710
+<v ->Realmente puede, y hay una historia muy interesante.</v>
+
+80
+00:03:26.710 --> 00:03:29.320
+Seguimos señalando a Apple porque han sido
+
+81
+00:03:29.320 --> 00:03:32.210
+un líder en diseño en la industria durante mucho tiempo,
+
+82
+00:03:32.210 --> 00:03:35.430
+pero mucha gente no se da cuenta de que una
+
+83
+00:03:35.430 --> 00:03:40.430
+de las grandes pasiones de Steve Jobs era la caligrafía.
+
+84
+00:03:40.470 --> 00:03:45.470
+Esa fue una, él fue a unas pocas clases en la escuela,
+
+85
+00:03:45.535 --> 00:03:47.690
+porque no era un gran fan de la universidad,
+
+86
+00:03:47.690 --> 00:03:49.850
+y la caligrafía era una de ellas,
+
+87
+00:03:49.850 --> 00:03:52.570
+y esa era una de sus grandes pasiones,
+
+88
+00:03:52.570 --> 00:03:55.790
+y es muy interesante que
+
+89
+00:03:55.790 --> 00:03:57.420
+una de las primeras cosas que dijo que quería
+
+90
+00:03:57.420 --> 00:04:00.160
+en el sistema operativo era la capacidad de tener
+
+91
+00:04:00.160 --> 00:04:01.510
+diferentes tipos de fuentes.
+<v ->Cierto, cierto, uh huh.</v>
+
+92
+00:04:01.510 --> 00:04:03.450
+<v ->Y es algo importante.</v>
+
+93
+00:04:03.450 --> 00:04:05.580
+<v ->Quiero decir, cuando salieron con el Apple Watch</v>
+
+94
+00:04:05.580 --> 00:04:07.535
+se dieron cuenta de que la Helvética,
+
+95
+00:04:07.535 --> 00:04:11.510
+que suelen usar todo el tiempo, no funcionaba bien en ella,
+
+96
+00:04:11.510 --> 00:04:13.170
+porque todo era muy pequeño.
+
+97
+00:04:13.170 --> 00:04:15.827
+Y así, hicieron una fuente completamente nueva,
+
+98
+00:04:15.827 --> 00:04:18.620
+San Francisco, que luego implementaron en todo.
+
+99
+00:04:18.620 --> 00:04:20.090
+Es como su nueva Helvética,
+
+100
+00:04:20.090 --> 00:04:22.120
+pero originalmente fue hecha para reunir
+
+101
+00:04:22.120 --> 00:04:24.330
+las necesidades del reloj, porque era tan pequeño
+
+102
+00:04:24.330 --> 00:04:26.780
+y aunque sigue siendo muy parecido
+
+103
+00:04:26.780 --> 00:04:29.410
+a lo que estaban usando, sólo hay un poquito más de espacio
+
+104
+00:04:29.410 --> 00:04:33.320
+entre los diferentes símbolos, el peso está
+
+105
+00:04:33.320 --> 00:04:36.888
+un poco más equilibrado alrededor de cada uno de ellos.
+
+106
+00:04:36.888 --> 00:04:40.450
+Pero hicieron una fuente completamente nueva sólo para
+
+107
+00:04:40.450 --> 00:04:43.092
+lograr un tamaño de pantalla más pequeño, y era,
+
+108
+00:04:43.092 --> 00:04:45.359
+si lo hubieran intentado, te garantizo que si sólo,
+
+109
+00:04:45.359 --> 00:04:46.643
+si piratearas tu reloj
+
+110
+00:04:46.643 --> 00:04:48.530
+e implementaras la Helvética en él,
+
+111
+00:04:48.530 --> 00:04:51.670
+entonces no se vería bien.
+<v ->Cierto.</v>
+
+112
+00:04:51.670 --> 00:04:52.503
+Absolutamente.
+
+113
+00:04:52.503 --> 00:04:55.220
+Así que, hablamos sobre la importancia de ello.
+
+114
+00:04:55.220 --> 00:04:58.850
+¿Cuáles son algunos de los pasos que debe seguir para poder
+
+115
+00:04:58.850 --> 00:05:02.410
+elegir los tipos de fuentes adecuados para las aplicaciones
+
+116
+00:05:02.410 --> 00:05:03.468
+que está diseñando?
+
+117
+00:05:03.468 --> 00:05:06.930
+<v ->Bien, entonces, tienes que empezar</v>
+
+118
+00:05:06.930 --> 00:05:11.240
+a entender algunos principios básicos de tipografía.
+
+119
+00:05:11.240 --> 00:05:12.930
+Por lo tanto, entender la diferencia entre las fuentes
+
+120
+00:05:12.930 --> 00:05:14.560
+serif y sans-serif, ¿verdad?
+
+121
+00:05:14.560 --> 00:05:18.840
+Así que, imagina la sans-serif como es,
+
+122
+00:05:18.840 --> 00:05:21.270
+la serif es cuando las fuentes tienen pequeñas cosas
+
+123
+00:05:21.270 --> 00:05:23.530
+saliendo de ellas, y luego las estás redondeando,
+
+124
+00:05:23.530 --> 00:05:24.770
+¿verdad?
+
+125
+00:05:24.770 --> 00:05:25.703
+Pensémoslo de esa manera.
+
+126
+00:05:25.703 --> 00:05:28.540
+Así que, lo redondeas y tienes una fuente
+
+127
+00:05:28.540 --> 00:05:30.150
+como Roboto, ¿verdad?
+<v ->Cierto.</v>
+
+128
+00:05:30.150 --> 00:05:32.780
+<v ->Donde todos los símbolos se detienen.</v>
+
+129
+00:05:32.780 --> 00:05:33.690
+Simplemente se acaban.
+
+130
+00:05:33.690 --> 00:05:36.530
+Entonces, diferentes fuentes van a funcionar
+
+131
+00:05:36.530 --> 00:05:37.610
+mejor en diferentes instancias.
+
+132
+00:05:37.610 --> 00:05:40.870
+Ahora, aunque hay muchas reglas con la tipografía,
+
+133
+00:05:40.870 --> 00:05:44.070
+cada regla puede romperse con la tipografía.
+
+134
+00:05:44.070 --> 00:05:46.649
+Pero hay algunas cosas clave.
+
+135
+00:05:46.649 --> 00:05:49.600
+Por ejemplo, toma Daily Smarty, cuando estábamos diseñando
+
+136
+00:05:49.600 --> 00:05:53.390
+esto, así que, todas las cabeceras y etiquetas, cosas así,
+
+137
+00:05:53.390 --> 00:05:55.580
+las que verás son fuentes sans-serif.
+
+138
+00:05:55.580 --> 00:05:57.940
+<v ->Cierto.</v>
+<v ->Pero el cuerpo del texto</v>
+
+139
+00:05:57.940 --> 00:06:00.860
+en los mensajes grandes, que es una fuente serif,
+
+140
+00:06:00.860 --> 00:06:03.600
+porque nuestros ojos tienen mucho más fácil la lectura de
+
+141
+00:06:03.600 --> 00:06:07.486
+fuentes serif, especialmente en los párrafos grandes.
+
+142
+00:06:07.486 --> 00:06:09.440
+<v ->Eso tiene sentido.</v>
+<v ->Está bien cuando tienes</v>
+
+143
+00:06:09.440 --> 00:06:10.780
+un encabezado o algo así.
+
+144
+00:06:10.780 --> 00:06:13.380
+Eso no quiere decir que no se pueda tener un cuerpo
+
+145
+00:06:13.380 --> 00:06:14.840
+que a veces sea sans-serif.
+
+146
+00:06:14.840 --> 00:06:18.180
+Lo hago, y también tengo cabeceras que son fuentes serif,
+
+147
+00:06:18.180 --> 00:06:21.090
+<v Jordan>Y DevCamp usa fuentes sans-serif</v>
+
+148
+00:06:21.090 --> 00:06:22.090
+para el cuerpo.
+<v ->Si.</v>
+
+149
+00:06:22.090 --> 00:06:24.220
+<v ->Pero Daily Smarty usa serif,</v>
+
+150
+00:06:24.220 --> 00:06:27.320
+y ambas se ven bien, sólo que de maneras diferentes.
+
+151
+00:06:27.320 --> 00:06:30.110
+<v ->Claro, y si lo estás, sí, obviamente y cuando lo hicimos</v>
+
+152
+00:06:30.110 --> 00:06:32.900
+con DevCamp, como dije, puedes romper esas reglas.
+
+153
+00:06:32.900 --> 00:06:34.870
+Puedes hacer que funcionen, pero tienes que ser consciente
+
+154
+00:06:34.870 --> 00:06:36.860
+de ello, y es como, bueno, tengo que asegurarme de que
+
+155
+00:06:36.860 --> 00:06:38.816
+al menos estoy usando una fuente sans-serif
+
+156
+00:06:38.816 --> 00:06:42.430
+que no esté demasiado cerca y que tenga
+
+157
+00:06:42.430 --> 00:06:44.960
+los símbolos fácilmente identificable
+
+158
+00:06:44.960 --> 00:06:46.940
+para que siga siendo legible.
+
+159
+00:06:46.940 --> 00:06:48.870
+<v ->Absolutamente, y entonces, ¿cuáles son algunas de las</v>
+
+160
+00:06:48.870 --> 00:06:52.288
+herramientas que usas para poder pasar por eso
+
+161
+00:06:52.288 --> 00:06:54.980
+y ver cómo son,
+
+162
+00:06:54.980 --> 00:06:58.520
+cómo es un encabezado en comparación con el párrafo
+
+163
+00:06:58.520 --> 00:07:00.647
+y qué tan bien se van a complementar entre sí?
+
+164
+00:07:00.647 --> 00:07:04.730
+<v ->Bien, un buen lugar para empezar es Google Fonts.</v>
+
+165
+00:07:04.730 --> 00:07:07.260
+No sólo son realmente fáciles de implementar,
+
+166
+00:07:07.260 --> 00:07:09.820
+y hay muchos de ellos, y son de alta calidad,
+
+167
+00:07:09.820 --> 00:07:12.070
+y no tienes que pagar por ellos,
+
+168
+00:07:12.070 --> 00:07:14.910
+lo que es realmente bueno es que también muestran fuentes
+
+169
+00:07:14.910 --> 00:07:16.589
+agradables que combinan con cada uno de ellos, ¿verdad?
+
+170
+00:07:16.589 --> 00:07:19.470
+<v ->Si.</v>
+<v ->Así que, se puede ver cómo,</v>
+
+171
+00:07:19.470 --> 00:07:24.320
+por ejemplo, Open Sans, qué tan bien Open Sans se va a
+
+172
+00:07:24.320 --> 00:07:25.556
+combinar con otras fuentes.
+
+173
+00:07:25.556 --> 00:07:26.930
+Podría darte algunas ideas.
+
+174
+00:07:26.930 --> 00:07:29.280
+Ahora, eso no quiere decir que muchos sitios web
+
+175
+00:07:29.280 --> 00:07:32.330
+o muchas aplicaciones usarán la misma fuente para todo,
+
+176
+00:07:32.330 --> 00:07:33.570
+y puedes hacerlo.
+
+177
+00:07:33.570 --> 00:07:36.606
+Tienes que usar tus pesos como corresponde.
+
+178
+00:07:36.606 --> 00:07:38.460
+Tienes que usar tus tallas como corresponde.
+
+179
+00:07:38.460 --> 00:07:40.840
+No hay razón por la que no puedas usar la misma fuente
+
+180
+00:07:40.840 --> 00:07:43.500
+para tus encabezados y la misma fuente para tu cuerpo
+
+181
+00:07:43.500 --> 00:07:45.910
+o subencabezados o etiquetas o cosas por el estilo.
+
+182
+00:07:45.910 --> 00:07:48.150
+Pero Google Fonts es un buen punto de partida,
+
+183
+00:07:48.150 --> 00:07:49.640
+y hay muchos sitios web que muestran
+
+184
+00:07:49.640 --> 00:07:52.460
+buenas combinaciones de fuentes, pero es realmente bueno,
+
+185
+00:07:52.460 --> 00:07:54.760
+porque Google las coloca una al lado de la otra.
+
+186
+00:07:54.760 --> 00:07:56.990
+Puedes implementar ambas cosas muy rápidamente,
+
+187
+00:07:56.990 --> 00:07:58.060
+así que, sí.
+
+188
+00:07:58.060 --> 00:08:00.480
+Es una herramienta muy útil de usar.
+
+189
+00:08:00.480 --> 00:08:02.390
+<v ->Además, desde el punto de vista del desarrollo,</v>
+
+190
+00:08:02.390 --> 00:08:04.493
+Google Fonds es muy bueno,
+
+191
+00:08:04.493 --> 00:08:07.542
+ya que también te ofrecen un enlace de descarga si quieres
+
+192
+00:08:07.542 --> 00:08:09.675
+utilizarlas internamente en tu aplicación,
+
+193
+00:08:09.675 --> 00:08:11.710
+e incluso te ofrecen una opción de CDN.
+
+194
+00:08:11.710 --> 00:08:13.780
+Así que puedes importarlo directamente,
+
+195
+00:08:13.780 --> 00:08:15.510
+y luego tener acceso instantáneo
+
+196
+00:08:15.510 --> 00:08:17.110
+a todas tus hojas de estilo.
+
+197
+00:08:17.110 --> 00:08:20.318
+Así que, eso es una buena solución completa.
+
+198
+00:08:20.318 --> 00:08:23.970
+<v ->Sí, así que, y en cuanto a cuando empieces a diseñar</v>
+
+199
+00:08:23.970 --> 00:08:25.757
+tu página, eso es algo que
+
+200
+00:08:25.757 --> 00:08:26.910
+es definitivamente importante.
+
+201
+00:08:26.910 --> 00:08:29.240
+Quiero decir, todo es agradable cuando puedes ver,
+
+202
+00:08:29.240 --> 00:08:30.730
+esa fuente se supone que funciona con esa,
+
+203
+00:08:30.730 --> 00:08:33.000
+y luego simplemente te vas, pero hay muchas variables
+
+204
+00:08:33.000 --> 00:08:35.160
+entre los tamaños y pesos.
+
+205
+00:08:35.160 --> 00:08:37.190
+Puede volverse un poco difícil
+
+206
+00:08:37.190 --> 00:08:38.430
+de manejar muy rápido, ¿verdad?
+
+207
+00:08:38.430 --> 00:08:41.820
+Así que, lo que necesitas asegurarte que estás haciendo
+
+208
+00:08:41.820 --> 00:08:43.650
+es cuando estás mirando tu página, cuando estás juntando
+
+209
+00:08:43.650 --> 00:08:45.590
+esta página, o esta pantalla,
+
+210
+00:08:45.590 --> 00:08:48.307
+necesitas ver, las etiquetas,
+
+211
+00:08:48.307 --> 00:08:51.235
+tienen que llamar la atención,
+
+212
+00:08:51.235 --> 00:08:55.670
+y luego yo tengo que llevar al lector a otra área.
+
+213
+00:08:55.670 --> 00:08:59.150
+A veces puede haber algunos metadatos que,
+
+214
+00:08:59.150 --> 00:09:02.679
+digan las etiquetas en un post para Daily Smarty,
+
+215
+00:09:02.679 --> 00:09:04.250
+esas necesitan estar allí.
+
+216
+00:09:04.250 --> 00:09:06.273
+Necesitan ser más pequeños.
+
+217
+00:09:06.273 --> 00:09:09.220
+No necesitan controlar la situación.
+
+218
+00:09:09.220 --> 00:09:10.580
+Es algo que el usuario
+
+219
+00:09:10.580 --> 00:09:12.820
+no va a buscar inmediatamente.
+
+220
+00:09:12.820 --> 00:09:14.640
+Si lo es, tienes que planificar en consecuencia
+
+221
+00:09:14.640 --> 00:09:16.260
+y hacerlos más fáciles de encontrar, ¿verdad?
+
+222
+00:09:16.260 --> 00:09:19.160
+Entonces, estás implementando estas ideas de,
+
+223
+00:09:19.160 --> 00:09:22.700
+¿qué es lo que quiero que el usuario mire,
+
+224
+00:09:22.700 --> 00:09:25.160
+y qué es lo que el usuario quiere encontrar?
+
+225
+00:09:25.160 --> 00:09:28.090
+Así es como se empieza a guiar,
+
+226
+00:09:28.090 --> 00:09:31.493
+necesita saber dónde están las etiquetas.
+
+227
+00:09:32.400 --> 00:09:35.050
+Pero no quiero que todo el mundo los vea,
+
+228
+00:09:35.050 --> 00:09:37.170
+así que está tomando algo más importante
+
+229
+00:09:37.170 --> 00:09:39.940
+como la descripción o lo que sea, por ejemplo.
+
+230
+00:09:39.940 --> 00:09:44.940
+Así que, lo que harás es quizás hacer la fuente más pequeña,
+
+231
+00:09:45.282 --> 00:09:49.610
+pero también la pondrás un poco gris.
+
+232
+00:09:49.610 --> 00:09:50.443
+Juega con eso.
+
+233
+00:09:50.443 --> 00:09:52.480
+¿Cómo se equilibra, cómo se ve?
+
+234
+00:09:52.480 --> 00:09:55.860
+Bien, no, esos son un poco exagerados.
+
+235
+00:09:55.860 --> 00:09:57.240
+Así que los voy a hacer en negrita,
+
+236
+00:09:57.240 --> 00:09:59.306
+pero los voy a dejar en gris.
+
+237
+00:09:59.306 --> 00:10:02.877
+No es una regla difícil y rápida porque vas a estar
+
+238
+00:10:02.877 --> 00:10:05.815
+diseñando muchos tipos diferentes de aplicaciones,
+
+239
+00:10:05.815 --> 00:10:09.073
+pero conociendo las diferentes variables con las que tienes
+
+240
+00:10:09.073 --> 00:10:10.622
+que trabajar y sabiendo que es importante,
+
+241
+00:10:10.622 --> 00:10:12.150
+esas son las más importantes,
+
+242
+00:10:12.150 --> 00:10:14.120
+eso es lo más importante que puedes sacar de esto,
+
+243
+00:10:14.120 --> 00:10:16.590
+es que la tipografía es muy importante.
+
+244
+00:10:16.590 --> 00:10:19.287
+Así que, no lo conviertas en una idea adicional.
+
+245
+00:10:19.287 --> 00:10:22.660
+Piénsalo bien y comprende que entre
+
+246
+00:10:22.660 --> 00:10:25.370
+los colores de tus fuentes, los grosores,
+
+247
+00:10:25.370 --> 00:10:29.270
+el tamaño y las familias de fuentes, puedes realmente
+
+248
+00:10:29.270 --> 00:10:33.060
+controlar lo prominente o sutil que va a ser una fuente
+
+249
+00:10:33.060 --> 00:10:33.960
+en esa pantalla.
+
+250
+00:10:33.960 --> 00:10:36.910
+<v ->Sí, ese es un gran punto, y para tu tarea,</v>
+
+251
+00:10:36.910 --> 00:10:40.150
+quiero que revises, tomes una aplicación
+
+252
+00:10:40.150 --> 00:10:43.660
+que hayas construido antes de esto, o que hagas
+
+253
+00:10:43.660 --> 00:10:47.930
+un par de páginas HTML simples, vayas a Google Fonts,
+
+254
+00:10:47.930 --> 00:10:50.440
+o a una de estas herramientas de fuentes en línea,
+
+255
+00:10:50.440 --> 00:10:53.400
+y realices diferentes combinaciones.
+
+256
+00:10:53.400 --> 00:10:56.713
+Entonces, realiza una combinación de fuentes
+
+257
+00:10:56.713 --> 00:10:58.430
+para un encabezado y un párrafo.
+
+258
+00:10:58.430 --> 00:11:00.170
+Experimenta con diferentes pesos,
+
+259
+00:11:00.170 --> 00:11:03.200
+y crea unas cuantas páginas diferentes como esta,
+
+260
+00:11:03.200 --> 00:11:07.000
+y luego veas cuánta diferencia realmente hace.
+
+261
+00:11:07.000 --> 00:11:09.920
+Explora las fuentes serif y sans-serif
+
+262
+00:11:09.920 --> 00:11:12.100
+y ve cómo pueden complementarse entre sí,
+
+263
+00:11:12.100 --> 00:11:15.300
+sólo para que puedas adquirir el hábito de explorarlas,
+
+264
+00:11:15.300 --> 00:11:17.800
+ver qué tipos de pesos
+
+265
+00:11:17.800 --> 00:11:20.250
+pueden hacer cuando agregas eso a una página,
+
+266
+00:11:20.250 --> 00:11:23.240
+y cómo puedes enfatizar las diferentes partes,
+
+267
+00:11:23.240 --> 00:11:25.557
+y después de que lo hayas hecho,
+
+268
+00:11:25.557 --> 00:11:27.423
+puede pasar a la siguiente guía.
+

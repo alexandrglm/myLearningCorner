@@ -1,0 +1,934 @@
+WEBVTT
+
+1
+00:00:01.000 --> 00:00:04.680
+<v ->Hola y bienvenidos a este curso UX para desarrolladores.</v>
+
+2
+00:00:04.680 --> 00:00:08.047
+Este será uno de los primeros cursos que he elaborado
+
+3
+00:00:08.047 --> 00:00:11.270
+en que no solo estaré yo. De hecho, escucharás
+
+4
+00:00:11.270 --> 00:00:12.930
+a otra persona más
+
+5
+00:00:12.930 --> 00:00:14.760
+la mayor parte de este curso.
+
+6
+00:00:14.760 --> 00:00:17.590
+Y existe una razón bien específica para ello.
+
+7
+00:00:17.590 --> 00:00:20.170
+Justo al lado mío se encuentra Jesse Cooke.
+
+8
+00:00:20.170 --> 00:00:23.360
+Jesse es el CEO y Director Creativo
+
+9
+00:00:23.360 --> 00:00:27.520
+de la tienda Slate Dev en Lehi Utah.
+
+10
+00:00:27.520 --> 00:00:29.670
+He tenido el privilegio de poder trabajar
+
+11
+00:00:29.670 --> 00:00:32.440
+con Jesse desde hace más de un año.
+
+12
+00:00:32.440 --> 00:00:35.210
+Y he adorado absolutamente la experiencia.
+
+13
+00:00:35.210 --> 00:00:38.070
+Hemos desarrollado muchas aplicaciones distintas juntos.
+
+14
+00:00:38.070 --> 00:00:39.750
+Juntos trabajamos muy bien.
+
+15
+00:00:39.750 --> 00:00:43.570
+Ha sido capaz de mejorar completamente la forma
+
+16
+00:00:43.570 --> 00:00:44.700
+en que DevCamp luce.
+
+17
+00:00:44.700 --> 00:00:45.980
+Si notas la diferencia
+
+18
+00:00:45.980 --> 00:00:48.250
+de como era DevCamp antes,
+
+19
+00:00:48.250 --> 00:00:50.140
+podrás ver que cuando yo lo hice lucía bien distinto.
+
+20
+00:00:50.140 --> 00:00:53.170
+Y tenemos que agradecerle a Jesse por eso.
+
+21
+00:00:53.170 --> 00:00:55.260
+Es muy bueno en lo que hace,
+
+22
+00:00:55.260 --> 00:00:58.930
+y por eso quería invitar a alguien
+
+23
+00:00:58.930 --> 00:01:00.900
+que fuera un muy buen especialista.
+
+24
+00:01:00.900 --> 00:01:04.330
+No quería decirles a ustedes
+
+25
+00:01:04.330 --> 00:01:07.280
+cómo yo manejo la experiencia de usuario
+
+26
+00:01:07.280 --> 00:01:09.660
+porque esa no es mi especialidad.
+
+27
+00:01:09.660 --> 00:01:12.170
+No fui entrenado oficialmente para eso
+
+28
+00:01:12.170 --> 00:01:16.970
+y tengo muy poco entrenamiento en la experiencia
+
+29
+00:01:16.970 --> 00:01:18.900
+e interfaz de usuario.
+
+30
+00:01:18.900 --> 00:01:21.220
+Y eso, pienso, que es el caso
+
+31
+00:01:21.220 --> 00:01:23.080
+de muchos desarrolladores diferentes.
+
+32
+00:01:23.080 --> 00:01:26.410
+Ese es el propósito detrás de este curso,
+
+33
+00:01:26.410 --> 00:01:29.440
+es que quiero brindarte la habilidad
+
+34
+00:01:29.440 --> 00:01:33.860
+de aprender qué ocurre y los pasos necesitados
+
+35
+00:01:33.860 --> 00:01:38.060
+para diseñar apropiadamente una aplicación.
+
+36
+00:01:38.060 --> 00:01:42.112
+Pienso que uno de los mayores problemas con la percepción
+
+37
+00:01:42.112 --> 00:01:44.840
+del diseño en el mundo de los desarrolladores
+
+38
+00:01:44.840 --> 00:01:47.922
+es que los diseñadores simplemente son personas que escogen
+
+39
+00:01:47.922 --> 00:01:50.550
+los colores y las fuentes que van a ir en la pantalla.
+
+40
+00:01:50.550 --> 00:01:52.430
+Y eso conlleva mucho más.
+
+41
+00:01:52.430 --> 00:01:54.550
+Existe una ciencia entera
+
+42
+00:01:54.550 --> 00:01:58.510
+detrás de cómo se desarrolla una experiencia de usuario.
+
+43
+00:01:58.510 --> 00:02:01.550
+Y de eso trata este curso.
+
+44
+00:02:01.550 --> 00:02:05.460
+Por lo que quería introducirte a Jesse por esa parte,
+
+45
+00:02:05.460 --> 00:02:08.070
+y después en esta guía introductoria,
+
+46
+00:02:08.070 --> 00:02:10.480
+daremos una explicación avanzada
+
+47
+00:02:10.480 --> 00:02:12.990
+de qué es la dirección creativa.
+
+48
+00:02:12.990 --> 00:02:16.790
+¿Pudieras hablar entonces un poco sobre algunas de las cosas
+
+49
+00:02:16.790 --> 00:02:20.040
+desde la perspectiva de un director creativo, que haces
+
+50
+00:02:20.040 --> 00:02:21.500
+cuando trabajas con los clientes, y cuando trabajas
+
+51
+00:02:21.500 --> 00:02:24.460
+en una nueva aplicación, o nueva característica
+
+52
+00:02:24.460 --> 00:02:26.550
+de una aplicación?
+
+53
+00:02:26.550 --> 00:02:29.737
+<v ->Por supuesto, trabajamos específicamente con muchos</v>
+
+54
+00:02:29.737 --> 00:02:32.260
+clientes, pero eso no necesariamente significa
+
+55
+00:02:32.260 --> 00:02:34.670
+que siempre asumirás una posición servicial.
+
+56
+00:02:34.670 --> 00:02:36.630
+Pudieras estar trabajando en una única aplicación.
+
+57
+00:02:36.630 --> 00:02:38.030
+Pudieras trabajar para alguna compañía tecnológica
+
+58
+00:02:38.030 --> 00:02:40.480
+que tenga una app, y que tú tengas un administrador
+
+59
+00:02:40.480 --> 00:02:41.330
+al que rendirle cuentas.
+
+60
+00:02:41.330 --> 00:02:45.330
+Son escenarios muy similares.
+
+61
+00:02:45.330 --> 00:02:48.800
+La idea del papel del director creativo,
+
+62
+00:02:48.800 --> 00:02:50.820
+es que a él se le solicita
+
+63
+00:02:50.820 --> 00:02:52.200
+cuando algo necesita ser desarrollado o cambiado.
+
+64
+00:02:52.200 --> 00:02:55.050
+Y lo que tienen que hacer es tomar esa visión
+
+65
+00:02:55.050 --> 00:02:56.740
+de la persona que se la está compartiendo.
+
+66
+00:02:56.740 --> 00:02:59.330
+En mi caso, la mayoría de las veces son clientes.
+
+67
+00:02:59.330 --> 00:03:00.930
+Y necesito hacer planos de eso.
+
+68
+00:03:01.904 --> 00:03:06.410
+Y parece ser mucho más rápido y directo de lo que
+
+69
+00:03:06.410 --> 00:03:08.240
+es en realidad la mayoría de las veces.
+
+70
+00:03:08.240 --> 00:03:10.560
+La analogía que siempre le doy a mis clientes
+
+71
+00:03:10.560 --> 00:03:14.120
+es que dibujen una bicicleta.
+
+72
+00:03:14.120 --> 00:03:16.530
+La idea es que todo el mundo
+
+73
+00:03:16.530 --> 00:03:17.570
+sabe cómo es una bicicleta.
+
+74
+00:03:17.570 --> 00:03:21.520
+Saben cómo será su app en su mente.
+
+75
+00:03:21.520 --> 00:03:23.210
+Pero cuando sientas a la gente,
+
+76
+00:03:23.210 --> 00:03:25.290
+estadísticamente el 75% de la gente
+
+77
+00:03:25.290 --> 00:03:28.040
+te dibujarán incorrectamente la bicicleta.
+
+78
+00:03:28.040 --> 00:03:29.800
+A pesar de que todos sepamos cómo es.
+
+79
+00:03:29.800 --> 00:03:30.670
+La tenemos en la mente.
+
+80
+00:03:30.670 --> 00:03:32.810
+Es como si me dijera, "Sé cómo quiero que sea esto,"
+
+81
+00:03:32.810 --> 00:03:34.702
+pero cuando lo tienes que dibujar,
+
+82
+00:03:34.702 --> 00:03:37.180
+cuando tienes que hacer los trazos
+
+83
+00:03:37.180 --> 00:03:38.947
+te dices, "¿Hay que empezar de arriba hacia abajo?
+
+84
+00:03:38.947 --> 00:03:41.087
+¿O era de abajo hacia arriba?"
+
+85
+00:03:44.060 --> 00:03:44.970
+Hay un vídeo muy gracioso
+
+86
+00:03:44.970 --> 00:03:46.160
+en que la gente construye las bicicletas
+
+87
+00:03:46.160 --> 00:03:48.560
+que la gente dibuja, y muestran cuán inmóviles son,
+
+88
+00:03:48.560 --> 00:03:50.120
+y que no funcionan.
+
+89
+00:03:50.120 --> 00:03:51.410
+Pero eso es lo que le digo a mis clientes.
+
+90
+00:03:51.410 --> 00:03:53.517
+Les digo, "Tienes idea de cómo será esto,
+
+91
+00:03:53.517 --> 00:03:54.947
+pero no sabes necesariamente
+
+92
+00:03:54.947 --> 00:03:56.687
+cómo se estructuran los datos.
+
+93
+00:03:56.687 --> 00:03:58.507
+Puede que ni siquiera sepas todos los usuarios
+
+94
+00:03:58.507 --> 00:04:01.350
+que tienen que existir para crear esos datos."
+
+95
+00:04:01.350 --> 00:04:03.820
+Y piensan, "Oh, bueno, entonces esto necesita ser aprobado."
+
+96
+00:04:03.820 --> 00:04:06.590
+Bueno, ¿quién va a aprobar ese procedimiento?
+
+97
+00:04:06.590 --> 00:04:09.350
+¿Quién va a interactuar con esos datos?
+
+98
+00:04:09.350 --> 00:04:10.670
+¿A quién van dirigidos?
+
+99
+00:04:10.670 --> 00:04:14.120
+Necesitan ver la estructura multi-dimensional
+
+100
+00:04:14.120 --> 00:04:16.200
+que estas apps crean.
+
+101
+00:04:16.200 --> 00:04:18.470
+Entonces, eso es lo que hace el director creativo.
+
+102
+00:04:18.470 --> 00:04:23.450
+Ayudan a llevar la idea a un plano
+
+103
+00:04:23.450 --> 00:04:26.810
+en el que se podrá seguir el objetivo completo
+
+104
+00:04:26.810 --> 00:04:29.300
+de un extremo a otro para todos los distintos usuarios.
+
+105
+00:04:29.300 --> 00:04:31.050
+<v ->Es asombroso, y es algo</v>
+
+106
+00:04:31.050 --> 00:04:34.010
+que he encontrado que es crucial a través de los años,
+
+107
+00:04:34.010 --> 00:04:38.580
+porque la experiencia del usuario no es mi especialidad.
+
+108
+00:04:38.580 --> 00:04:42.490
+Cuando trabajo en un proyecto, por mí mismo,
+
+109
+00:04:42.490 --> 00:04:44.900
+y soy el que está a cargo de hacer eso,
+
+110
+00:04:44.900 --> 00:04:48.240
+a pesar de que no me queda tan bien
+
+111
+00:04:48.240 --> 00:04:50.680
+como si tú me lo diseñaras,
+
+112
+00:04:50.680 --> 00:04:53.060
+he podido ser capaz de implementarlo,
+
+113
+00:04:53.060 --> 00:04:56.630
+pero también retrasó mi progreso.
+
+114
+00:04:56.630 --> 00:05:01.050
+Porque me paso demasiado tiempo pensando en dónde
+
+115
+00:05:01.050 --> 00:05:04.050
+necesitan estar todos los componentes en la página
+
+116
+00:05:04.050 --> 00:05:05.860
+y a quién se le permite interactuar con ellos,
+
+117
+00:05:05.860 --> 00:05:08.640
+y eso ocurre si le hacen clic a este botón,
+
+118
+00:05:08.640 --> 00:05:10.540
+contra este otro.
+
+119
+00:05:10.540 --> 00:05:15.530
+Mientras que, mi tiempo de desarrollo coge un impulso
+
+120
+00:05:15.530 --> 00:05:18.490
+astronómico cuando Jesse me envía un conjunto de planos
+
+121
+00:05:18.490 --> 00:05:20.050
+y de wireframes
+
+122
+00:05:20.050 --> 00:05:23.030
+de lo que necesito desarrollar en DevCamp.
+
+123
+00:05:23.030 --> 00:05:26.240
+Por eso, esa es una gran razón por la cual
+
+124
+00:05:26.240 --> 00:05:29.200
+quisimos hacer este curso y añadirlo al curriculum,
+
+125
+00:05:29.200 --> 00:05:32.190
+para que pudieras aprender esto.
+
+126
+00:05:32.190 --> 00:05:37.100
+Si quieres aprender a desarrollar tus propios UI y UX,
+
+127
+00:05:37.100 --> 00:05:37.933
+no significa que necesariamente
+
+128
+00:05:37.933 --> 00:05:40.240
+tengas que ser director creativo.
+
+129
+00:05:40.240 --> 00:05:45.070
+Puede que seas un desarrollador con esta habilidad y ya.
+
+130
+00:05:45.070 --> 00:05:46.660
+Y en la industria, de hecho,
+
+131
+00:05:46.660 --> 00:05:49.360
+no estoy seguro, ¿has escuchado la palabra "unicornio?"
+
+132
+00:05:49.360 --> 00:05:50.193
+<v ->Sí.</v>
+
+133
+00:05:50.193 --> 00:05:51.026
+<v ->Bueno, sí.</v>
+
+134
+00:05:51.026 --> 00:05:52.340
+Si nunca antes la has escuchado.
+
+135
+00:05:52.340 --> 00:05:55.120
+En la industria del desarrollo, se te llama por la palabra
+
+136
+00:05:55.120 --> 00:05:59.120
+"unicornio" si eres muy bueno en el diseño
+
+137
+00:05:59.120 --> 00:06:01.660
+y muy bueno en el desarrollo.
+
+138
+00:06:01.660 --> 00:06:04.290
+Y la razón de esto es porque es muy raro.
+
+139
+00:06:04.290 --> 00:06:06.670
+Es tan raro como un unicornio.
+
+140
+00:06:06.670 --> 00:06:08.400
+Queremos que todos los que tomen
+
+141
+00:06:08.400 --> 00:06:10.060
+este curso se vuelvan unicornios.
+
+142
+00:06:10.060 --> 00:06:13.120
+Con suerte lo podrás lograr.
+
+143
+00:06:13.120 --> 00:06:16.620
+Tenemos un número de módulos distintos geniales
+
+144
+00:06:16.620 --> 00:06:18.410
+por todo el sistema completo.
+
+145
+00:06:18.410 --> 00:06:22.000
+Y también lo abordamos de manera distinta.
+
+146
+00:06:22.000 --> 00:06:26.832
+He visto otros cursos de UI y UX, y una cosa que siempre
+
+147
+00:06:26.832 --> 00:06:30.213
+me ha molestado un poco es que han combinado
+
+148
+00:06:30.213 --> 00:06:33.590
+los dos elementos en el mismo curso.
+
+149
+00:06:33.590 --> 00:06:37.790
+Por lo que a propósito yo quise crear un curso UX
+
+150
+00:06:37.790 --> 00:06:41.140
+y otro de UI separados, porque para mí
+
+151
+00:06:41.140 --> 00:06:43.178
+son completamente diferentes.
+
+152
+00:06:43.178 --> 00:06:44.011
+<v ->Completamente diferentes.</v>
+
+153
+00:06:44.011 --> 00:06:47.030
+<v ->Usualmente los imparten la misma persona, así como tú,</v>
+
+154
+00:06:47.030 --> 00:06:50.960
+pero si te pones a pensar
+
+155
+00:06:50.960 --> 00:06:54.077
+en que, "Bueno, si estoy haciendo UI y UX, eso significa
+
+156
+00:06:54.077 --> 00:06:56.767
+que estoy trabajando mucho en Photoshop
+
+157
+00:06:56.767 --> 00:06:58.640
+y haciendo que todo se vea más bonito."
+
+158
+00:06:58.640 --> 00:07:03.270
+Creo que eso desmerita por completo la porción UX entera.
+
+159
+00:07:03.270 --> 00:07:05.190
+Al igual que cuando pasamos
+
+160
+00:07:05.190 --> 00:07:07.270
+por el esbozo de este curso.
+
+161
+00:07:07.270 --> 00:07:10.430
+Nos empezamos a dar cuenta de cuál por ciento se tomó
+
+162
+00:07:10.430 --> 00:07:14.470
+para desarrollar la experiencia de usuario indicada,
+
+163
+00:07:14.470 --> 00:07:17.203
+al contrario de simplemente hacer que las cosas
+
+164
+00:07:17.203 --> 00:07:18.050
+se vieran bonitas.
+
+165
+00:07:18.050 --> 00:07:21.110
+También quería asegurarme de que nos centremos en eso,
+
+166
+00:07:21.110 --> 00:07:24.830
+para que puedas valorarlo lo necesitado, porque podría
+
+167
+00:07:24.830 --> 00:07:27.530
+prometerte de que cuando sales al mundo
+
+168
+00:07:27.530 --> 00:07:30.310
+a hacer una aplicación de verdad,
+
+169
+00:07:30.310 --> 00:07:32.770
+el tener todas estas habilidades
+
+170
+00:07:32.770 --> 00:07:35.395
+es algo que te diferenciará de todos los otros
+
+171
+00:07:35.395 --> 00:07:36.803
+desarrolladores que hay por ahí.
+
+172
+00:07:36.803 --> 00:07:39.100
+<v ->Oh, absolutamente. Mis desarrolladores</v>
+
+173
+00:07:39.100 --> 00:07:42.970
+son increíblemente valiosos porque puedo confiar en ellos.
+
+174
+00:07:42.970 --> 00:07:44.670
+Ocasionalmente me equivoco, ¿cierto?
+
+175
+00:07:44.670 --> 00:07:47.690
+A veces se me olvida algo,
+
+176
+00:07:47.690 --> 00:07:49.500
+y llegará al punto en donde se lo explico
+
+177
+00:07:49.500 --> 00:07:51.510
+al CTO, o el CTO se lo explica
+
+178
+00:07:51.510 --> 00:07:53.230
+a los desarrolladores
+
+179
+00:07:53.230 --> 00:07:55.580
+que están codificando por él.
+
+180
+00:07:55.580 --> 00:07:58.310
+Y si han sido capaces de desarrollar
+
+181
+00:07:58.310 --> 00:07:59.887
+ese pensamiento crítico como para decir,
+
+182
+00:07:59.887 --> 00:08:01.260
+"Bueno, ¿y de dónde sale esto?"
+
+183
+00:08:01.260 --> 00:08:04.310
+Y, "¿De dónde se supone que saque estos datos?"
+
+184
+00:08:04.310 --> 00:08:08.200
+Y, "necesito ya sea un administrador de alto nivel,
+
+185
+00:08:08.200 --> 00:08:09.370
+o añadir a un usuario distinto,
+
+186
+00:08:09.370 --> 00:08:12.570
+o esto necesita ocurrir en una página distinta
+
+187
+00:08:12.570 --> 00:08:13.850
+porque aquí no puede ser."
+
+188
+00:08:13.850 --> 00:08:17.060
+Es de mucha ayuda que esas cosas se encuentren rápidamente
+
+189
+00:08:17.060 --> 00:08:19.670
+y no después de dos semanas de desarrollo,
+
+190
+00:08:19.670 --> 00:08:20.980
+y que se den cuenta que deben regresar
+
+191
+00:08:20.980 --> 00:08:22.110
+y arreglar muchas cosas.
+
+192
+00:08:22.110 --> 00:08:26.980
+Por lo que me encanta que mis desarrolladores vayan aún
+
+193
+00:08:26.980 --> 00:08:29.750
+más allá e identifiquen algo que a mí se me haya olvidado.
+
+194
+00:08:29.750 --> 00:08:34.430
+Y, es definitivamente un momento "unicornio"
+
+195
+00:08:34.430 --> 00:08:35.800
+porque habrán muchas veces
+
+196
+00:08:35.800 --> 00:08:38.020
+en que las cosas te salen mal
+
+197
+00:08:38.020 --> 00:08:39.610
+y eventualmente te dices, "Oh, por Dios.
+
+198
+00:08:39.610 --> 00:08:41.677
+¿Cómo se me pudo olvidar eso?"
+
+199
+00:08:42.750 --> 00:08:44.220
+Entonces, sí. Es algo que definitivamente
+
+200
+00:08:44.220 --> 00:08:46.930
+te brindará las habilidades
+
+201
+00:08:46.930 --> 00:08:51.820
+para poder ver el aspecto multi-dimensional
+
+202
+00:08:51.820 --> 00:08:54.400
+de estas aplicaciones de forma muy rápida.
+
+203
+00:08:54.400 --> 00:08:57.260
+Tendrás que caer y levantarte muchas veces
+
+204
+00:08:57.260 --> 00:08:58.860
+para poder ampliar tus horizontes.
+
+205
+00:08:58.860 --> 00:09:01.370
+No debes enfrascarte en algo y pensar
+
+206
+00:09:01.370 --> 00:09:03.380
+que ese no es tu trabajo como desarrollador.
+
+207
+00:09:03.380 --> 00:09:06.970
+No cierres esas puertas
+
+208
+00:09:06.970 --> 00:09:11.070
+cuando no puedas entender todo lo que ocurre.
+
+209
+00:09:11.070 --> 00:09:12.420
+<v ->Absolutamente.</v>
+
+210
+00:09:12.420 --> 00:09:14.930
+Bueno, esa ha sido una muy buena introducción para todo
+
+211
+00:09:14.930 --> 00:09:17.420
+lo que vamos a estudiar en este curso.
+
+212
+00:09:17.420 --> 00:09:20.010
+Hablaremos sobre los distintos conceptos
+
+213
+00:09:20.010 --> 00:09:22.110
+que necesitas aprender para
+
+214
+00:09:22.110 --> 00:09:24.780
+proporcionar una experiencia de usuario sólida.
+
+215
+00:09:24.780 --> 00:09:27.900
+Y usaremos un número de casos de estudios
+
+216
+00:09:27.900 --> 00:09:31.610
+en los que Jesse y yo hemos trabajado personalmente,
+
+217
+00:09:31.610 --> 00:09:34.060
+para poderte mostrar algunas de las cosas que hemos hecho
+
+218
+00:09:34.060 --> 00:09:36.040
+de las que puedes aprender, en las que hemos tenido éxito.
+
+219
+00:09:36.040 --> 00:09:37.880
+Y también varias cosas
+
+220
+00:09:37.880 --> 00:09:40.650
+que hubiéramos querido hacer distintas
+
+221
+00:09:40.650 --> 00:09:43.240
+si pudiéramos regresar en el tiempo y cambiarlas.
+
+222
+00:09:43.240 --> 00:09:45.570
+Estudiaremos muchísimas cosas en este curso.
+
+223
+00:09:45.570 --> 00:09:48.260
+Como podrás ver, este curso es muy diferente
+
+224
+00:09:48.260 --> 00:09:50.350
+a todos los otros que has pasado.
+
+225
+00:09:50.350 --> 00:09:52.570
+Habrá mucha más interacción
+
+226
+00:09:52.570 --> 00:09:53.920
+entre tú, yo, y Jesse.
+
+227
+00:09:53.920 --> 00:09:56.810
+Será similar a cómo trabajamos
+
+228
+00:09:56.810 --> 00:09:58.010
+cuando compartimos la misma oficina,
+
+229
+00:09:58.010 --> 00:10:00.210
+cuando debatimos cosas,
+
+230
+00:10:00.210 --> 00:10:02.100
+y pedimos opiniones,
+
+231
+00:10:02.100 --> 00:10:04.840
+ya sea para un concepto o para un proyecto real.
+
+232
+00:10:04.840 --> 00:10:06.330
+Así que espero que disfrutes el curso
+
+233
+00:10:06.330 --> 00:10:08.130
+y nos veremos en el próximo vídeo.
+

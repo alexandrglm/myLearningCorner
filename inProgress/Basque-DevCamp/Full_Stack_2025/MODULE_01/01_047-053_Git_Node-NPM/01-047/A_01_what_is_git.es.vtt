@@ -1,0 +1,962 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:01.010
+¿QUÉ ES GIT?
+
+2
+00:00:01.010 --> 00:00:03.990
+<v Profesor>Bienvenido a este curso de lo básico de Git.</v>
+
+3
+00:00:03.990 --> 00:00:08.610
+En esta guía, explicaremos lo qué es Git,
+
+4
+00:00:08.610 --> 00:00:12.290
+y cómo podemos usarlo en nuestras aplicaciones.
+
+5
+00:00:12.290 --> 00:00:14.700
+Cada vez que aprendo una nueva tecnología,
+
+6
+00:00:14.700 --> 00:00:17.470
+me ayuda estudiar su definición,
+
+7
+00:00:17.470 --> 00:00:20.900
+y así es como empezaremos en esta guía.
+
+8
+00:00:20.900 --> 00:00:22.083
+¿Qué es Git?
+
+9
+00:00:23.080 --> 00:00:28.080
+Git-scm, el mantenedor de la "Git y librería de código,"
+
+10
+00:00:28.760 --> 00:00:31.872
+dice que Git es un Sistema de Control de Versiones
+
+11
+00:00:31.872 --> 00:00:34.770
+libre y de código abierto.
+
+12
+00:00:34.770 --> 00:00:38.330
+Y si no entiendes ninguna de esas palabras,
+
+13
+00:00:38.330 --> 00:00:39.530
+no te preocupes.
+
+14
+00:00:39.530 --> 00:00:42.500
+Explicaremos esta definición
+
+15
+00:00:42.500 --> 00:00:45.120
+y escogeremos las palabras claves necesarias
+
+16
+00:00:45.120 --> 00:00:46.320
+y las estudiaremos.
+
+17
+00:00:46.320 --> 00:00:49.480
+Específicamente discutiremos lo que significa
+
+18
+00:00:49.480 --> 00:00:51.700
+que un proyecto sea de código abierto,
+
+19
+00:00:51.700 --> 00:00:54.180
+lo que significa que sea distribuido,
+
+20
+00:00:54.180 --> 00:00:56.981
+y por último, lo que significa Control de Versión,
+
+21
+00:00:56.981 --> 00:01:00.140
+y cómo puedes usar un Sistema de Control de Versiones
+
+22
+00:01:00.140 --> 00:01:02.260
+en tus propias aplicaciones.
+
+23
+00:01:02.260 --> 00:01:04.980
+Mirando a la primera frase, código abierto,
+
+24
+00:01:04.980 --> 00:01:07.350
+esto significa que su uso es libre
+
+25
+00:01:07.350 --> 00:01:11.430
+y es desarrollado por una comunidad de desarrolladores.
+
+26
+00:01:11.430 --> 00:01:14.092
+Muchos de los lenguajes de programación más populares
+
+27
+00:01:14.092 --> 00:01:17.300
+y frameworks de la actualidad son de código abierto.
+
+28
+00:01:17.300 --> 00:01:21.530
+Y la razón, es porque su uso es libre.
+
+29
+00:01:21.530 --> 00:01:23.900
+En los primeros días de la ciencia computacional,
+
+30
+00:01:23.900 --> 00:01:25.892
+muchos de los lenguajes de programación
+
+31
+00:01:25.892 --> 00:01:29.590
+y sistemas operativos creados tenían dueño,
+
+32
+00:01:29.590 --> 00:01:32.730
+lo que significó que tenías que pagarle a la compañía
+
+33
+00:01:32.730 --> 00:01:34.490
+que creó el lenguaje
+
+34
+00:01:34.490 --> 00:01:36.590
+o el software para poder usarlo.
+
+35
+00:01:36.590 --> 00:01:39.750
+Código abierto significa que lo puedes usar completamente
+
+36
+00:01:39.750 --> 00:01:40.990
+gratis, lo cual significa
+
+37
+00:01:40.990 --> 00:01:44.030
+que su acceso es mucho más fácil.
+
+38
+00:01:44.030 --> 00:01:45.820
+No tendrás que ahorrar dinero para pagar
+
+39
+00:01:45.820 --> 00:01:48.440
+por una licencia de software como has tenido
+
+40
+00:01:48.440 --> 00:01:51.480
+que hacer para el sistema operativo de Windows,
+
+41
+00:01:51.480 --> 00:01:53.540
+o el sistema de Windows Server.
+
+42
+00:01:53.540 --> 00:01:55.910
+Al ser Git de código abierto, eso significa
+
+43
+00:01:55.910 --> 00:01:58.020
+que pudieras descargarlo ahora mismo en tu sistema
+
+44
+00:01:58.020 --> 00:02:01.640
+gratuitamente y empezar a trabajar en proyectos.
+
+45
+00:02:01.640 --> 00:02:05.330
+La otra cara de la moneda, es que además es desarrollado por
+
+46
+00:02:05.330 --> 00:02:10.200
+una larga comunidad de desarrolladores por todo el mundo.
+
+47
+00:02:10.200 --> 00:02:12.860
+Significa que hay un equipo
+
+48
+00:02:12.860 --> 00:02:15.100
+de científicos talentosos computacionales
+
+49
+00:02:15.100 --> 00:02:17.200
+trabajando en el proyecto.
+
+50
+00:02:17.200 --> 00:02:18.570
+Añaden nuevas características,
+
+51
+00:02:18.570 --> 00:02:20.670
+integran parches de seguridad,
+
+52
+00:02:20.670 --> 00:02:24.170
+y obtienes lo mejor de su campo
+
+53
+00:02:24.170 --> 00:02:26.182
+de los diferentes desarrolladores
+
+54
+00:02:26.182 --> 00:02:28.690
+que están por todo el mundo.
+
+55
+00:02:28.690 --> 00:02:31.270
+Ahora que revisamos el concepto de código abierto,
+
+56
+00:02:31.270 --> 00:02:34.750
+avancemos y veamos lo que significa cuando decimos
+
+57
+00:02:34.750 --> 00:02:36.930
+que Git es distribuido.
+
+58
+00:02:36.930 --> 00:02:37.990
+Esto significa esencialmente
+
+59
+00:02:37.990 --> 00:02:42.470
+que Git mantiene un repositorio de código centralizado.
+
+60
+00:02:42.470 --> 00:02:45.370
+Y esto te brinda una enorme cantidad de poder,
+
+61
+00:02:45.370 --> 00:02:47.380
+no solo para tu propio desarrollo,
+
+62
+00:02:47.380 --> 00:02:51.100
+sino además para trabajar en proyectos con equipos.
+
+63
+00:02:51.100 --> 00:02:53.550
+Puede que haya muchos proyectos en los que tengas
+
+64
+00:02:53.550 --> 00:02:57.210
+que hacer la aplicación entera completamente por ti mismo.
+
+65
+00:02:57.210 --> 00:03:00.350
+Sin embargo, en aplicaciones más grandes,
+
+66
+00:03:00.350 --> 00:03:01.937
+y cada vez que trabajes para una compañía,
+
+67
+00:03:01.937 --> 00:03:05.440
+trabajarás como parte de un equipo.
+
+68
+00:03:05.440 --> 00:03:07.777
+Eso significa que puede que tengas un código base,
+
+69
+00:03:07.777 --> 00:03:11.790
+y que haya unos cuantos, o incluso un número grande
+
+70
+00:03:11.790 --> 00:03:14.090
+de desarrolladores trabajando
+
+71
+00:03:14.090 --> 00:03:16.490
+en el mismo conjunto de archivos de códigos,
+
+72
+00:03:16.490 --> 00:03:19.680
+y si no existiera un lugar centralizado
+
+73
+00:03:19.680 --> 00:03:21.870
+en donde esos archivos de código pudieran residir,
+
+74
+00:03:21.870 --> 00:03:23.640
+y en donde pudieras monitorear sus cambios,
+
+75
+00:03:23.640 --> 00:03:26.510
+habría un gran conflicto.
+
+76
+00:03:26.510 --> 00:03:30.090
+Imagina el caso en donde tú y otro desarrollador
+
+77
+00:03:30.090 --> 00:03:32.520
+trabajen en un archivo idéntico,
+
+78
+00:03:32.520 --> 00:03:33.900
+y cuando le hagas cambios,
+
+79
+00:03:33.900 --> 00:03:36.530
+no te avise de los cambios
+
+80
+00:03:36.530 --> 00:03:39.120
+que hizo el otro desarrollador, ni a él de los tuyos,
+
+81
+00:03:39.120 --> 00:03:42.700
+eso pudiera echar a perder la aplicación entera.
+
+82
+00:03:42.700 --> 00:03:45.930
+Lo que Git hace es que nos brinda la habilidad
+
+83
+00:03:45.930 --> 00:03:48.941
+de tener un flujo de trabajo centralizado,
+
+84
+00:03:48.941 --> 00:03:51.980
+en cómo procesar esos tipos de cambios.
+
+85
+00:03:51.980 --> 00:03:54.270
+Revisemos esto en un caso de estudio.
+
+86
+00:03:54.270 --> 00:03:56.030
+En este diagrama de aquí,
+
+87
+00:03:56.030 --> 00:03:59.310
+verás que tenemos todos estos pequeños íconos,
+
+88
+00:03:59.310 --> 00:04:01.720
+y todos siguen una línea
+
+89
+00:04:01.720 --> 00:04:03.290
+que va hasta el centro.
+
+90
+00:04:03.290 --> 00:04:05.660
+Justo en la esquina izquierda,
+
+91
+00:04:05.660 --> 00:04:07.570
+tenemos lo que se le llama Rama Maestra.
+
+92
+00:04:07.570 --> 00:04:11.700
+Y explicaremos lo que representan estos nombres.
+
+93
+00:04:11.700 --> 00:04:14.300
+Ahora mismo, solo te hablaré sobre cómo Git
+
+94
+00:04:14.300 --> 00:04:16.310
+es un sistema distribuido
+
+95
+00:04:16.310 --> 00:04:18.890
+para darte una idea de cómo funciona.
+
+96
+00:04:18.890 --> 00:04:22.380
+Tenemos todos estos pequeños diamantes,
+
+97
+00:04:22.380 --> 00:04:24.840
+y cada uno de ellos
+
+98
+00:04:24.840 --> 00:04:27.560
+representa un cambio en el código.
+
+99
+00:04:27.560 --> 00:04:29.510
+Un cambio significativo en el código.
+
+100
+00:04:29.510 --> 00:04:33.910
+De hecho, representan una versión que explicaremos pronto.
+
+101
+00:04:33.910 --> 00:04:38.910
+Imagina el caso en que trabajas en cierta característica,
+
+102
+00:04:39.060 --> 00:04:43.520
+y es representada por la pequeña flecha aquí.
+
+103
+00:04:43.520 --> 00:04:46.030
+Si quieres trabajar en esa característica,
+
+104
+00:04:46.030 --> 00:04:49.130
+podrás hacer lo que es llamado comprobación del código,
+
+105
+00:04:49.130 --> 00:04:52.910
+en donde recibes el código entero en tu sistema,
+
+106
+00:04:52.910 --> 00:04:54.880
+e implementas una característica,
+
+107
+00:04:54.880 --> 00:04:56.180
+y a partir de ahí,
+
+108
+00:04:56.180 --> 00:05:00.200
+podrás comprobarla en el Repositorio Central.
+
+109
+00:05:00.200 --> 00:05:02.520
+Luego imagina que uno de tus compañeros de trabajo
+
+110
+00:05:02.520 --> 00:05:05.410
+esté trabajando en una característica aún mayor,
+
+111
+00:05:05.410 --> 00:05:08.980
+representada por esas flechas verdes
+
+112
+00:05:08.980 --> 00:05:10.790
+en la parte de abajo.
+
+113
+00:05:10.790 --> 00:05:14.150
+Lo que les permite Git, es que ambos pueden
+
+114
+00:05:14.150 --> 00:05:18.680
+trabajar en el mismo idéntico proyecto a la misma vez,
+
+115
+00:05:18.680 --> 00:05:22.130
+comprobando partes distintas de la aplicación,
+
+116
+00:05:22.130 --> 00:05:24.520
+y luego subiéndolas
+
+117
+00:05:24.520 --> 00:05:26.970
+al Repositorio Central.
+
+118
+00:05:26.970 --> 00:05:28.720
+Aquí en el centro,
+
+119
+00:05:28.720 --> 00:05:30.990
+esa Rama Maestra, esa línea recta
+
+120
+00:05:30.990 --> 00:05:33.130
+que pasa por el centro, representa
+
+121
+00:05:33.130 --> 00:05:36.140
+el Repositorio Central de Códigos
+
+122
+00:05:36.140 --> 00:05:39.460
+al que tiene acceso el equipo entero.
+
+123
+00:05:39.460 --> 00:05:43.477
+Y tú, como desarrollador y parte de ese proyecto,
+
+124
+00:05:43.477 --> 00:05:47.343
+puedes trabajar en distintos componentes de la aplicación
+
+125
+00:05:47.343 --> 00:05:49.790
+en los que estén trabajando otros miembros del equipo,
+
+126
+00:05:49.790 --> 00:05:53.690
+y puedes monitorear sus cambios de la base de código entera,
+
+127
+00:05:53.690 --> 00:05:56.510
+y ellos pueden monitorear tus cambios.
+
+128
+00:05:56.510 --> 00:05:59.407
+A un alto nivel, eso es lo que significa
+
+129
+00:05:59.407 --> 00:06:03.520
+decir que el sistema Git es Distribuido.
+
+130
+00:06:03.520 --> 00:06:07.380
+Significa que existe un Repositorio Central en donde tú
+
+131
+00:06:07.380 --> 00:06:10.020
+y otros miembros del equipo podrán acceder al código.
+
+132
+00:06:10.020 --> 00:06:14.410
+Ahora veamos lo que es Sistema de Control de Versiones.
+
+133
+00:06:14.410 --> 00:06:17.140
+Esto también tiene un acrónimo que verás,
+
+134
+00:06:17.140 --> 00:06:20.010
+y es muy común, el cual es VCS,
+
+135
+00:06:20.010 --> 00:06:23.350
+y significa Sistema de Control de Versiones.
+
+136
+00:06:23.350 --> 00:06:26.270
+Y lo que significa es que te posibilita
+
+137
+00:06:26.270 --> 00:06:29.920
+crear hechos claves para un proyecto.
+
+138
+00:06:29.920 --> 00:06:32.427
+Existen muchas ocasiones, especialmente en aplicaciones
+
+139
+00:06:32.427 --> 00:06:36.283
+más largas, en donde querrás edificar una característica
+
+140
+00:06:36.283 --> 00:06:39.100
+significativa, pero hay probabilidad
+
+141
+00:06:39.100 --> 00:06:41.650
+de que pueda echar a perder otras partes de la aplicación.
+
+142
+00:06:41.650 --> 00:06:46.060
+Y el Sistema de Control de Versiones te permite
+
+143
+00:06:46.060 --> 00:06:48.040
+crear hechos claves.
+
+144
+00:06:48.040 --> 00:06:50.240
+Como puedes ver en este diagrama de aquí,
+
+145
+00:06:50.240 --> 00:06:54.690
+cada uno de los diamantes, y las flechas representan
+
+146
+00:06:54.690 --> 00:06:56.850
+una cantidad significativa de cambios en el código,
+
+147
+00:06:56.850 --> 00:07:01.610
+y también una versión específica del código.
+
+148
+00:07:01.610 --> 00:07:04.840
+Tan genial como pudiera ser tu nueva característica,
+
+149
+00:07:04.840 --> 00:07:09.027
+pudiera ser un error, y si algo le pasara
+
+150
+00:07:09.027 --> 00:07:10.880
+a la aplicación y se echara a perder,
+
+151
+00:07:10.880 --> 00:07:15.750
+podrás revertirla a una versión más antigua
+
+152
+00:07:15.750 --> 00:07:18.140
+del código en donde sirva.
+
+153
+00:07:18.140 --> 00:07:21.310
+Y en el caso en que apliques algún cambio que eche
+
+154
+00:07:21.310 --> 00:07:24.260
+a perder el sistema entero, o apague el servidor,
+
+155
+00:07:24.260 --> 00:07:28.770
+o algo así, en vez de tener
+
+156
+00:07:28.770 --> 00:07:31.950
+que revertir manualmente todos los cambios
+
+157
+00:07:31.950 --> 00:07:34.130
+en el código por ti mismo,
+
+158
+00:07:34.130 --> 00:07:36.880
+el Sistema de Control de Versiones te permitirá
+
+159
+00:07:36.880 --> 00:07:39.800
+revertir la aplicación entera
+
+160
+00:07:39.800 --> 00:07:43.090
+a los cambios previos.
+
+161
+00:07:43.090 --> 00:07:46.240
+Y esto te lo hace mucho más eficiente,
+
+162
+00:07:46.240 --> 00:07:48.370
+el poder tomar la base entera de códigos
+
+163
+00:07:48.370 --> 00:07:49.610
+y cambiarla de vuelta
+
+164
+00:07:49.610 --> 00:07:52.510
+y restaurarla a una versión funcional.
+
+165
+00:07:52.510 --> 00:07:55.810
+Cuando empecé a trabajar en aplicaciones gigantes hace años,
+
+166
+00:07:55.810 --> 00:07:59.800
+y esto fue antes de que Git se hiciera popular
+
+167
+00:07:59.800 --> 00:08:03.226
+en la comunidad de desarrolladores, tuve que crear
+
+168
+00:08:03.226 --> 00:08:05.850
+mi propio tipo de Administración de Control de Versiones.
+
+169
+00:08:05.850 --> 00:08:07.870
+Y muchos desarrolladores antiguos
+
+170
+00:08:07.870 --> 00:08:09.210
+tuvieron que hacer esto también.
+
+171
+00:08:09.210 --> 00:08:12.780
+Y no era para nada divertido.
+
+172
+00:08:12.780 --> 00:08:14.730
+Y se veía así.
+
+173
+00:08:14.730 --> 00:08:18.590
+Tenía en el servidor la AplicaciónEnDirecto.
+
+174
+00:08:18.590 --> 00:08:21.160
+Y cada vez que quería
+
+175
+00:08:21.160 --> 00:08:25.190
+crear un cambio significativo en la aplicación,
+
+176
+00:08:25.190 --> 00:08:27.380
+por ejemplo, edificar una nueva característica,
+
+177
+00:08:27.380 --> 00:08:31.770
+para estar seguro, copiaría la aplicación entera
+
+178
+00:08:31.770 --> 00:08:34.908
+en otra carpeta del servidor,
+
+179
+00:08:34.908 --> 00:08:38.260
+y la llamaría AplicacionesArchivadas.
+
+180
+00:08:38.260 --> 00:08:41.620
+Y le pondría una fecha, y a veces incluso un tiempo
+
+181
+00:08:41.620 --> 00:08:46.027
+para representar en cuál estado estaba la aplicación
+
+182
+00:08:46.027 --> 00:08:49.360
+antes de yo hacerle cambios significativos.
+
+183
+00:08:49.360 --> 00:08:51.970
+El problema aquí
+
+184
+00:08:51.970 --> 00:08:54.640
+era que tenía que copiar literalmente la aplicación entera.
+
+185
+00:08:54.640 --> 00:08:57.970
+Consumía muchos recursos,
+
+186
+00:08:57.970 --> 00:09:00.370
+y tenía tendencia a errores.
+
+187
+00:09:00.370 --> 00:09:04.860
+Imagina el caso en donde yo cambiaba quince archivos,
+
+188
+00:09:04.860 --> 00:09:09.610
+si uno de esos quince era la causa del error,
+
+189
+00:09:09.610 --> 00:09:11.280
+era bien difícil
+
+190
+00:09:11.280 --> 00:09:13.790
+comprobar cuál era.
+
+191
+00:09:13.790 --> 00:09:15.745
+El sistema de Git solo se centra
+
+192
+00:09:15.745 --> 00:09:19.000
+en monitorear los cambios que hagas.
+
+193
+00:09:19.000 --> 00:09:21.380
+Cada nueva versión en Git
+
+194
+00:09:21.380 --> 00:09:24.110
+no incluye la aplicación entera
+
+195
+00:09:24.110 --> 00:09:27.020
+y una versión nueva de esa aplicación,
+
+196
+00:09:27.020 --> 00:09:31.150
+solo monitorea los cambios específicos que hiciste,
+
+197
+00:09:31.150 --> 00:09:34.120
+y así puedes monitorearlo todo mucho más eficientemente.
+
+198
+00:09:34.120 --> 00:09:37.830
+Aquí tenemos un ejemplo de una aplicación de la vida real
+
+199
+00:09:37.830 --> 00:09:41.540
+que tengo, y aquí hay un cambio significativo de versión,
+
+200
+00:09:41.540 --> 00:09:44.660
+y en vez de copiar la aplicación entera,
+
+201
+00:09:44.660 --> 00:09:49.200
+lo que Git hizo fue monitorear cuáles fueron los cambios,
+
+202
+00:09:49.200 --> 00:09:53.360
+y te da una gran perspectiva de cómo administrarlos.
+
+203
+00:09:53.360 --> 00:09:55.400
+Como podrás ver en el lado izquierdo,
+
+204
+00:09:55.400 --> 00:09:58.130
+en donde está resaltado en rojo,
+
+205
+00:09:58.130 --> 00:10:02.780
+lo que Git te dice, es que esa es la versión anterior.
+
+206
+00:10:02.780 --> 00:10:04.880
+Aquí es donde ocurrieron todos los cambios,
+
+207
+00:10:04.880 --> 00:10:06.670
+y si revisas en el lado derecho,
+
+208
+00:10:06.670 --> 00:10:07.750
+en donde está el signo de más
+
+209
+00:10:07.750 --> 00:10:09.550
+y está resaltado en verde,
+
+210
+00:10:09.550 --> 00:10:12.980
+aquí es donde puedo ver junto a los miembros de mi equipo
+
+211
+00:10:12.980 --> 00:10:16.480
+exactamente cuáles fueron esos cambios.
+
+212
+00:10:16.480 --> 00:10:21.433
+Y si alguno de ellos echara a perder parte de la aplicación,
+
+213
+00:10:21.433 --> 00:10:24.020
+sería muy fácil
+
+214
+00:10:24.020 --> 00:10:27.090
+revertirlo simplemente a la versión
+
+215
+00:10:27.090 --> 00:10:30.770
+antes de que el bug fuera introducido al programa.
+
+216
+00:10:30.770 --> 00:10:34.330
+Y como puedes ver, esta es una manera mucho más objetiva
+
+217
+00:10:34.330 --> 00:10:37.188
+y eficiente de administrar cuáles fueron
+
+218
+00:10:37.188 --> 00:10:38.370
+los cambios del código.
+
+219
+00:10:38.370 --> 00:10:41.040
+En vez de tener que copiar la aplicación entera,
+
+220
+00:10:41.040 --> 00:10:44.330
+y tener que buscar entre los cientos,
+
+221
+00:10:44.330 --> 00:10:46.690
+o incluso miles de archivos de códigos para ver
+
+222
+00:10:46.690 --> 00:10:51.690
+en cuál se introdujo el bug, puedo ver literalmente
+
+223
+00:10:51.940 --> 00:10:55.520
+renglón por renglón dónde cada uno de esos cambios ocurrió,
+
+224
+00:10:55.520 --> 00:10:59.090
+y eso me permite regresar a la base de códigos,
+
+225
+00:10:59.090 --> 00:11:02.330
+arreglar cualquier cambio, y monitorear todo el trabajo
+
+226
+00:11:02.330 --> 00:11:04.340
+que está llevando a cabo mi equipo.
+
+227
+00:11:04.340 --> 00:11:08.057
+En resumen, en respuesta a lo que es Git,
+
+228
+00:11:08.057 --> 00:11:12.290
+Git es de código abierto, significa que es de uso libre,
+
+229
+00:11:12.290 --> 00:11:15.120
+y es desarrollado por la comunidad de Código Abierto.
+
+230
+00:11:15.120 --> 00:11:18.300
+Distribuido, significa que tienes acceso
+
+231
+00:11:18.300 --> 00:11:21.310
+al repositorio centralizado de tu base de códigos,
+
+232
+00:11:21.310 --> 00:11:24.730
+en donde todos los miembros de tu equipo pueden analizar
+
+233
+00:11:24.730 --> 00:11:27.341
+el código, usarlo, y continuamente añadir
+
+234
+00:11:27.341 --> 00:11:30.490
+nuevas características a ese repositorio centralizado.
+
+235
+00:11:30.490 --> 00:11:33.630
+Y por último, es un Sistema de Control de Versiones,
+
+236
+00:11:33.630 --> 00:11:37.300
+lo cual significa que puedes crear hechos clave
+
+237
+00:11:37.300 --> 00:11:38.140
+dentro de tu base de códigos.
+
+238
+00:11:38.140 --> 00:11:39.500
+Puedes monitorear los cambios,
+
+239
+00:11:39.500 --> 00:11:41.770
+y efectivamente
+
+240
+00:11:41.770 --> 00:11:44.983
+revertir las cosas cada vez que lo necesites.
+

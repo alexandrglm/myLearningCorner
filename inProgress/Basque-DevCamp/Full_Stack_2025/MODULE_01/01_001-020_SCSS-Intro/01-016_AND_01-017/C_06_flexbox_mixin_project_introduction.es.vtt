@@ -1,0 +1,370 @@
+WEBVTT
+
+1
+00:00:00.770 --> 00:00:02.350
+<v Instructor>Estoy emocionado por esta guía</v>
+
+2
+00:00:02.350 --> 00:00:03.890
+porque en ella,
+
+3
+00:00:03.890 --> 00:00:07.800
+voy a mostrarles algo del poder real
+
+4
+00:00:07.800 --> 00:00:10.770
+que puedes obtener de los mixins de SCSS
+
+5
+00:00:10.770 --> 00:00:15.010
+y como puedes combinar muchas de las cosas
+
+6
+00:00:15.010 --> 00:00:17.330
+que hemos estado aprendiendo a través de este curso
+
+7
+00:00:17.330 --> 00:00:19.450
+en una guía.
+
+8
+00:00:19.450 --> 00:00:21.070
+Y entonces, lo que haremos
+
+9
+00:00:21.070 --> 00:00:25.770
+es crear un mixin de flexbox.
+
+10
+00:00:25.770 --> 00:00:28.420
+Ahora, si nunca has escuchado lo que es un flexbox antes,
+
+11
+00:00:28.420 --> 00:00:30.550
+está bien.
+
+12
+00:00:30.550 --> 00:00:33.440
+También será una pequeña introducción para ti
+
+13
+00:00:33.440 --> 00:00:34.820
+sobre como funciona un flexbox.
+
+14
+00:00:34.820 --> 00:00:39.140
+Es una forma muy poderosa de escribir tu código CSS
+
+15
+00:00:39.140 --> 00:00:42.940
+para hacer cosas como alinear objetos.
+
+16
+00:00:42.940 --> 00:00:46.760
+Si algunas vez has tenido problemas con hacer que un título
+
+17
+00:00:46.760 --> 00:00:51.000
+o algo se alinee al centro,
+
+18
+00:00:51.000 --> 00:00:52.250
+o algo por el estilo,
+
+19
+00:00:52.250 --> 00:00:53.820
+algunas cosas que parecen ser fáciles
+
+20
+00:00:53.820 --> 00:00:56.630
+pero pueden ser sorprendentemente difíciles,
+
+21
+00:00:56.630 --> 00:01:01.050
+felxbox es una gran opción para diseño front end moderno.
+
+22
+00:01:01.050 --> 00:01:03.790
+Sin embargo, esta guía no es acerca de flexbox,
+
+23
+00:01:03.790 --> 00:01:05.570
+es de algo
+
+24
+00:01:05.570 --> 00:01:07.400
+que no me gusta acerca del flexbox
+
+25
+00:01:07.400 --> 00:01:11.600
+y decidí construir un mixin para poder arreglarlo.
+
+26
+00:01:11.600 --> 00:01:15.030
+Este es un prototipo y un componente
+
+27
+00:01:15.030 --> 00:01:17.140
+que estaba construyendo para DevCamp.
+
+28
+00:01:17.140 --> 00:01:20.700
+Y lo que está aquí es un grupo de cartas,
+
+29
+00:01:20.700 --> 00:01:24.640
+y estas cartas tienen un título, un subtítulo,
+
+30
+00:01:24.640 --> 00:01:25.930
+tienen una imagen,
+
+31
+00:01:25.930 --> 00:01:28.810
+y luego tienen unos enlaces de acción de objetos.
+
+32
+00:01:28.810 --> 00:01:30.600
+Ahora, se ven mucho mejor en DevCamp.
+
+33
+00:01:30.600 --> 00:01:33.200
+Este solo era un prototipo antes de llegar al diseñador.
+
+34
+00:01:33.200 --> 00:01:36.900
+Y era para aprender como felxbox podría usarse
+
+35
+00:01:36.900 --> 00:01:40.130
+para hacer cosas como alinear estos botones aquí
+
+36
+00:01:40.130 --> 00:01:42.300
+y poner una imagen aquí.
+
+37
+00:01:42.300 --> 00:01:45.300
+Si tratas de hacer esto solamente en CSS,
+
+38
+00:01:45.300 --> 00:01:47.220
+esto sería una tarea muy desafiante.
+
+39
+00:01:47.220 --> 00:01:51.540
+Entonces, uso flexbox para poder hacer eso.
+
+40
+00:01:51.540 --> 00:01:53.890
+Ahora, veamos el CSS.
+
+41
+00:01:53.890 --> 00:01:58.280
+Aquí tenemos una muestra de flex para todo el contenedor.
+
+42
+00:01:58.280 --> 00:02:03.200
+Y te daré acceso al HTML y el CSS
+
+43
+00:02:03.200 --> 00:02:04.940
+para que lo puedas ver todo:
+
+44
+00:02:04.940 --> 00:02:06.130
+Primero, como comenzó,
+
+45
+00:02:06.130 --> 00:02:09.980
+y luego, también como vamos a redefinirlo.
+
+46
+00:02:09.980 --> 00:02:11.440
+Entonces, tenemos este contenedor
+
+47
+00:02:11.440 --> 00:02:14.520
+y cada vez que quieras que algo use flexbox,
+
+48
+00:02:14.520 --> 00:02:16.840
+tenemos que decir mostrar flex.
+
+49
+00:02:16.840 --> 00:02:18.820
+Entonces, puedes ver que lo tenemos aquí.
+
+50
+00:02:18.820 --> 00:02:20.920
+Luego tenemos esta clase de objeto.
+
+51
+00:02:20.920 --> 00:02:22.620
+También lo tenemos aquí.
+
+52
+00:02:22.620 --> 00:02:25.800
+Tambié0n tenemos este objeto contenido; lo tenemos aquí.
+
+53
+00:02:25.800 --> 00:02:27.910
+Metadata; lo tenemos aquí.
+
+54
+00:02:27.910 --> 00:02:29.220
+Grupo de botones.
+
+55
+00:02:29.220 --> 00:02:30.110
+Entiendes el punto.
+
+56
+00:02:30.110 --> 00:02:32.610
+Está en todos lados.
+
+57
+00:02:32.610 --> 00:02:34.850
+Cada uno de estos elementos,
+
+58
+00:02:34.850 --> 00:02:37.700
+y algunos están anidados, algunos están afuera,
+
+59
+00:02:37.700 --> 00:02:39.690
+pero todos están en esta clase contenedor,
+
+60
+00:02:39.690 --> 00:02:43.720
+tienen alguna forma de componente flexbox,
+
+61
+00:02:43.720 --> 00:02:47.300
+ya sea uno o ya sea para cinco.
+
+62
+00:02:47.300 --> 00:02:50.730
+Y requerimos la habilidad de simplemente
+
+63
+00:02:50.730 --> 00:02:55.730
+remover toda esa duplicación y llamar un solo mixin.
+
+64
+00:02:57.320 --> 00:03:00.330
+Sabes todo lo que necesitas saber
+
+65
+00:03:00.330 --> 00:03:02.020
+para poder hacer esto.
+
+66
+00:03:02.020 --> 00:03:05.580
+Te mostraré los distintos componentes
+
+67
+00:03:05.580 --> 00:03:07.840
+que vamos a utilizar.
+
+68
+00:03:07.840 --> 00:03:11.210
+Usaremos el objeto flex.
+
+69
+00:03:11.210 --> 00:03:14.670
+Usaremos el elemento mostrar flex aquí.
+
+70
+00:03:14.670 --> 00:03:16.930
+Usaremos justificar contenido.
+
+71
+00:03:16.930 --> 00:03:19.460
+Usaremos dirección de flex.
+
+72
+00:03:19.460 --> 00:03:23.150
+Y tenemos alinear objetos.
+
+73
+00:03:23.150 --> 00:03:25.760
+Y eso es todo.
+
+74
+00:03:25.760 --> 00:03:29.690
+Cada uno de esos objetos, los tomaremos
+
+75
+00:03:29.690 --> 00:03:32.150
+y los usaremos en un mixin,
+
+76
+00:03:32.150 --> 00:03:33.880
+pero, como podrías haber notado,
+
+77
+00:03:33.880 --> 00:03:36.150
+cada componente es algo distinto.
+
+78
+00:03:36.150 --> 00:03:39.560
+Cada uno necesita un grupo de valores distinto.
+
+79
+00:03:39.560 --> 00:03:42.360
+Entonces, todo lo que has aprendido hasta ahora,
+
+80
+00:03:42.360 --> 00:03:46.320
+ya sea solo un mixin estandar, argumentos,
+
+81
+00:03:46.320 --> 00:03:50.310
+valores predeterminados, condicionales, todas esas cosas
+
+82
+00:03:50.310 --> 00:03:54.250
+son lo que necesitas para poder crear este proyecto.
+
+83
+00:03:54.250 --> 00:03:57.350
+Entonces, tienes acceso al código inicial aquí,
+
+84
+00:03:57.350 --> 00:04:01.930
+tanto el archivo HTML como el SCSS, y quiero que
+
+85
+00:04:01.930 --> 00:04:05.960
+saques todo el contenido flexbox,
+
+86
+00:04:05.960 --> 00:04:07.500
+cada uno de esos objetos,
+
+87
+00:04:07.500 --> 00:04:10.140
+y los pongas en un mixin
+
+88
+00:04:10.140 --> 00:04:12.540
+para que solo llames un mixin
+
+89
+00:04:12.540 --> 00:04:15.550
+en cada punto que tenga flexbox.
+
+90
+00:04:15.550 --> 00:04:16.840
+Repásalo, hazlo,
+
+91
+00:04:16.840 --> 00:04:19.770
+y luego puedes ver como lo hice personalmente
+
+92
+00:04:19.770 --> 00:04:20.863
+en la solución.
+

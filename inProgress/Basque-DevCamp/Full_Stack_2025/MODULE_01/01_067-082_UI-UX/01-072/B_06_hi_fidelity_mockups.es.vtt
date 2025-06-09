@@ -1,0 +1,394 @@
+WEBVTT
+
+1
+00:00:00.960 --> 00:00:03.750
+<v ->En la última guía, analizamos el concepto de entramado</v>
+
+2
+00:00:03.750 --> 00:00:07.430
+de alambres y, específicamente, cómo podríamos construir
+
+3
+00:00:07.430 --> 00:00:10.340
+esquemas de alambre de baja fidelidad, que son tramas de
+
+4
+00:00:10.340 --> 00:00:14.170
+alambre que nos permiten capturar el... solo una especie de
+
+5
+00:00:14.170 --> 00:00:16.990
+versión de alto nivel del sistema para poder ver la forma
+
+6
+00:00:16.990 --> 00:00:18.365
+en que fluirán las páginas,
+
+7
+00:00:18.365 --> 00:00:21.340
+la interacción del usuario y los gestos,
+
+8
+00:00:21.340 --> 00:00:24.510
+donde se ubicarán los diferentes componentes de la página.
+
+9
+00:00:24.510 --> 00:00:29.200
+Pero son de muy baja fidelidad, y en esta guía,
+
+10
+00:00:29.200 --> 00:00:31.960
+lo que vamos a discutir es la alta fidelidad
+
+11
+00:00:31.960 --> 00:00:35.550
+o lo que se llaman modelos y estos serán mucho
+
+12
+00:00:35.550 --> 00:00:37.360
+más detallados.
+
+13
+00:00:37.360 --> 00:00:40.400
+Esto va a ser, esencialmente, el aspecto que tendrá
+
+14
+00:00:40.400 --> 00:00:41.970
+el sistema.
+
+15
+00:00:41.970 --> 00:00:43.720
+Ahora, no vamos a entrar en muchos detalles
+
+16
+00:00:43.720 --> 00:00:48.150
+porque el curso completo de interfaz de usuario,
+
+17
+00:00:48.150 --> 00:00:50.040
+de eso se trata.
+
+18
+00:00:50.040 --> 00:00:54.400
+Es cómo puede ir y puede crear estos tipos de maquetas
+
+19
+00:00:54.400 --> 00:00:57.940
+y cómo puede elegir los esquemas de color correctos
+
+20
+00:00:57.940 --> 00:01:02.250
+y construir una guía de estilo y construir toda la interfaz.
+
+21
+00:01:02.250 --> 00:01:04.400
+Por lo tanto, no vamos a entrar en eso en este momento,
+
+22
+00:01:04.400 --> 00:01:06.790
+pero sí queríamos incluir esto en esta sección,
+
+23
+00:01:06.790 --> 00:01:10.480
+para que supieras en qué etapa se debe construir
+
+24
+00:01:10.480 --> 00:01:12.400
+este tipo de diseños.
+
+25
+00:01:12.400 --> 00:01:15.930
+<v ->Correcto, y así, sí, como dijiste,</v>
+
+26
+00:01:15.930 --> 00:01:18.260
+siguiendo los wireframes de baja fidelidad,
+
+27
+00:01:18.260 --> 00:01:20.370
+vas a entrar en estos diseños de alta fidelidad
+
+28
+00:01:20.370 --> 00:01:22.700
+o estas maquetas y, en general,
+
+29
+00:01:22.700 --> 00:01:25.870
+como dije anteriormente y en la guía anterior,
+
+30
+00:01:25.870 --> 00:01:29.710
+clientes y gerentes y Jefes, todos empiezan a ponerse
+
+31
+00:01:29.710 --> 00:01:32.700
+realmente prácticos porque esta es una parte muy divertida.
+
+32
+00:01:32.700 --> 00:01:37.010
+En general, la forma en que normalmente ejecuto estos
+
+33
+00:01:37.010 --> 00:01:39.570
+proyectos es que tengo que firmar en el mapa del sitio,
+
+34
+00:01:39.570 --> 00:01:42.210
+y que tengo que cerrar la sesión en baja fidelidad.
+
+35
+00:01:42.210 --> 00:01:46.200
+Ellos saben, yo sé los objetos del cliente.
+
+36
+00:01:46.200 --> 00:01:47.660
+De acuerdo, reviso los wireframes,
+
+37
+00:01:47.660 --> 00:01:50.520
+el wireframe de baja fidelidad, y me despido
+
+38
+00:01:50.520 --> 00:01:53.650
+de cada uno, así que confío en que conozco
+
+39
+00:01:53.650 --> 00:01:56.230
+los objetos que se supone que deben ir en él.
+
+40
+00:01:56.230 --> 00:02:00.330
+Armado con eso, creo unos pocos, solo un par,
+
+41
+00:02:00.330 --> 00:02:04.600
+uno o dos diseños de alta fidelidad de páginas clave,
+
+42
+00:02:04.600 --> 00:02:05.800
+para poder obtener esa estética.
+
+43
+00:02:05.800 --> 00:02:09.040
+Así que realmente puedo darle al cliente una buena idea
+
+44
+00:02:09.040 --> 00:02:11.530
+de cómo será su aplicación.
+
+45
+00:02:11.530 --> 00:02:14.310
+En ese momento, me gusta ir al batcave,
+
+46
+00:02:14.310 --> 00:02:16.120
+y eso es lo que le digo , como...
+
+47
+00:02:16.120 --> 00:02:18.320
+"Kay, voy a desaparecer por un tiempo
+
+48
+00:02:18.320 --> 00:02:20.970
+y espero que para este momento, haya estableció cierta
+
+49
+00:02:20.970 --> 00:02:24.090
+confianza en que no necesitan participar en cada pantalla.
+
+50
+00:02:24.090 --> 00:02:25.890
+Saben que voy a igualar esa estética que instalé
+
+51
+00:02:25.890 --> 00:02:28.040
+en esas primeras pantallas, y
+
+52
+00:02:28.040 --> 00:02:30.230
+luego aplicaré ese mismo diseño.
+
+53
+00:02:30.230 --> 00:02:33.350
+Realmente estoy poniendo la pintura en los alambres.
+
+54
+00:02:33.350 --> 00:02:35.470
+Estoy empezando a mover las cosas.
+
+55
+00:02:35.470 --> 00:02:37.730
+Tenía un botón en el marco de alambre de baja fidelidad,
+
+56
+00:02:37.730 --> 00:02:38.620
+no me importaba a dónde iba,
+
+57
+00:02:38.620 --> 00:02:39.780
+así que lo tiré en el medio.
+
+58
+00:02:39.780 --> 00:02:42.450
+Cuando empiezo a diseñarlo, hay un efecto dominó,
+
+59
+00:02:42.450 --> 00:02:44.550
+donde cada decisión afectará a otra decisión,
+
+60
+00:02:44.550 --> 00:02:47.040
+y es por eso que hicimos los wireframes de baja fidelidad,
+
+61
+00:02:47.040 --> 00:02:50.290
+porque no queremos que se cambie una para afectar
+
+62
+00:02:50.290 --> 00:02:52.530
+un montón de cosas que pones mucho de tiempo y esfuerzo.
+
+63
+00:02:52.530 --> 00:02:55.030
+Este es el punto en el que puede comenzar a ser realmente
+
+64
+00:02:55.030 --> 00:02:58.480
+meticuloso y puede comenzar a preocuparse por el equilibrio,
+
+65
+00:02:58.480 --> 00:03:00.360
+porque conoce todas las piezas de Lego con las
+
+66
+00:03:00.360 --> 00:03:03.090
+que estás trabajando, para que sepas cuándo las ensambla,
+
+67
+00:03:03.090 --> 00:03:05.620
+debe seguir de esa manera, y si no es así,
+
+68
+00:03:05.620 --> 00:03:07.440
+es porque has permitido que alguien como yo
+
+69
+00:03:07.440 --> 00:03:10.520
+agregue más alcance que tiendo a hacer.
+
+70
+00:03:10.520 --> 00:03:14.280
+Entonces, ahí es donde entramos en esto.
+
+71
+00:03:14.280 --> 00:03:17.680
+Entonces, quieres asegurarte de que estén firmados.
+
+72
+00:03:17.680 --> 00:03:18.990
+No ignore la baja fidelidad,
+
+73
+00:03:18.990 --> 00:03:20.700
+porque cuando llegue a este punto, querrás poder trabajar
+
+74
+00:03:20.700 --> 00:03:23.010
+con confianza y, de hecho, dedicarle tiempo
+
+75
+00:03:23.010 --> 00:03:25.370
+para hacer que cada una de estas cosas se vea bien.
+
+76
+00:03:25.370 --> 00:03:26.230
+<v ->Eso es perfecto.</v>
+
+77
+00:03:26.230 --> 00:03:29.210
+Y así, eso es justo, queríamos mantener
+
+78
+00:03:29.210 --> 00:03:32.290
+esta parte de la sección corta porque no queremos
+
+79
+00:03:32.290 --> 00:03:34.970
+entrar en detalles al respecto, ya que de eso se trata todo
+
+80
+00:03:34.970 --> 00:03:38.260
+el curso, pero la conclusión principal de esto
+
+81
+00:03:38.260 --> 00:03:41.630
+es la comprensión después de haber hecho esos wireframes,
+
+82
+00:03:41.630 --> 00:03:42.580
+los tienes aprobados,
+
+83
+00:03:42.580 --> 00:03:43.688
+tus desarrolladores están trabajando
+
+84
+00:03:43.688 --> 00:03:45.490
+en la construcción del backend del sistema,
+
+85
+00:03:45.490 --> 00:03:47.960
+ahí es donde te pones a trabajar,
+
+86
+00:03:47.960 --> 00:03:50.527
+empiezas a diseñar, empiezas a construir la guía de
+
+87
+00:03:50.527 --> 00:03:53.540
+estilo y empiezas a agregar color.
+
+88
+00:03:53.540 --> 00:03:55.230
+Aquí es donde las cosas empiezan a ponerse bonitas,
+
+89
+00:03:55.230 --> 00:03:57.720
+y definitivamente eso es una parte divertida para mí.
+
+90
+00:03:57.720 --> 00:04:01.410
+Cada vez que me envías las nuevas pantallas
+
+91
+00:04:01.410 --> 00:04:04.741
+que solicito, siempre me emociono
+
+92
+00:04:04.741 --> 00:04:08.920
+porque eso es algo a lo que puedo ir y,
+
+93
+00:04:08.920 --> 00:04:10.440
+por último, pongo todas las campanas y silbidos.
+
+94
+00:04:10.440 --> 00:04:12.700
+Y es algo que la gente quiere ver.
+
+95
+00:04:12.700 --> 00:04:14.860
+Entonces, creo que definitivamente también
+
+96
+00:04:14.860 --> 00:04:17.730
+será un curso divertido, así que espero que disfruten ese,
+
+97
+00:04:17.730 --> 00:04:20.730
+pero ahora que sabemos lo que está incluido en esta etapa,
+
+98
+00:04:20.730 --> 00:04:22.780
+seguiremos avanzando en la línea.
+

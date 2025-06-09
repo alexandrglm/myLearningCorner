@@ -1,0 +1,662 @@
+WEBVTT
+
+1
+00:00:01.070 --> 00:00:02.990
+<v Instructor>En las últimas guías hemos analizado</v>
+
+2
+00:00:02.990 --> 00:00:05.570
+cómo podríamos trabajar con la interpolación
+
+3
+00:00:05.570 --> 00:00:07.100
+de cadenas dentro de Python.
+
+4
+00:00:07.100 --> 00:00:10.300
+Y, principalmente, les he estado mostrando cómo aprovechar
+
+5
+00:00:10.300 --> 00:00:14.120
+los literales de las cadenas al poder colocar llaves
+
+6
+00:00:14.120 --> 00:00:17.999
+dentro de la cadena y luego simplemente colocar variables
+
+7
+00:00:17.999 --> 00:00:19.360
+dentro de ellas.
+
+8
+00:00:19.360 --> 00:00:23.240
+Y esa será probablemente tu mejor apuesta
+
+9
+00:00:23.240 --> 00:00:27.290
+y tu mejor opción para implementar la interpolación
+
+10
+00:00:27.290 --> 00:00:29.100
+de cadenas en tus propios proyectos de Python.
+
+11
+00:00:29.100 --> 00:00:32.770
+Sin embargo, también quiero mostrarte el método de formato.
+
+12
+00:00:32.770 --> 00:00:34.780
+Y la razón principal por la que te mostraré esto
+
+13
+00:00:34.780 --> 00:00:37.870
+es que creo que deberías usarlo,
+
+14
+00:00:37.870 --> 00:00:40.960
+porque ya no se usan mucho más,
+
+15
+00:00:40.960 --> 00:00:44.470
+sin embargo, si te encuentras con proyectos más antiguos
+
+16
+00:00:44.470 --> 00:00:46.320
+que usan ese tipo de formato,
+
+17
+00:00:46.320 --> 00:00:50.280
+quiero que puedas estar al tanto de qué hacer.
+
+18
+00:00:50.280 --> 00:00:54.260
+Y el otro beneficio es que esto ayudará a reforzar
+
+19
+00:00:54.260 --> 00:00:57.390
+la metodología de numeración de base cero,
+
+20
+00:00:57.390 --> 00:00:59.110
+que si no estás familiarizado,
+
+21
+00:00:59.110 --> 00:01:02.610
+pondrá esto de vuelta en tu mente.
+
+22
+00:01:02.610 --> 00:01:05.410
+Así que voy a empezar con algunas variables aquí.
+
+23
+00:01:05.410 --> 00:01:08.900
+Voy a tener uno, ese es un nombre.
+
+24
+00:01:08.900 --> 00:01:11.470
+Otra, esa es una edad.
+
+25
+00:01:11.470 --> 00:01:14.490
+Y luego uno más que es un producto.
+
+26
+00:01:14.490 --> 00:01:18.480
+Esto es bastante similar a lo que hemos implementado hasta
+
+27
+00:01:18.480 --> 00:01:21.390
+ahora cuando trabajamos con heredocs y ese tipo de cadenas.
+
+28
+00:01:21.390 --> 00:01:26.390
+Voy a decir: "Curso de aprendizaje electrónico de Python".
+
+29
+00:01:26.550 --> 00:01:30.610
+Y ahora lo que voy a hacer es crear un saludo.
+
+30
+00:01:30.610 --> 00:01:33.960
+Voy a decir, "hola".
+
+31
+00:01:33.960 --> 00:01:36.800
+Y el primer lugar que quiero deslizar,
+
+32
+00:01:36.800 --> 00:01:39.290
+el primer contenido es el nombre.
+
+33
+00:01:39.290 --> 00:01:43.100
+Ahora sabes que con nuestra interpolación de cadenas
+
+34
+00:01:43.100 --> 00:01:47.340
+literales podría hacer esto, sin embargo, lo que voy a hacer
+
+35
+00:01:47.340 --> 00:01:50.360
+es mostrarte cómo puedes usar
+
+36
+00:01:50.360 --> 00:01:52.040
+el método de formato.
+
+37
+00:01:52.040 --> 00:01:57.040
+Y así voy a decir, hola cero, y luego,
+
+38
+00:01:57.890 --> 00:02:02.890
+aparecen en la lista como, voy a colocar el número uno allí.
+
+39
+00:02:04.780 --> 00:02:07.610
+Si esto parece extraño, te mostraré cómo tiene sentido
+
+40
+00:02:07.610 --> 00:02:08.443
+más adelante.
+
+41
+00:02:08.443 --> 00:02:12.080
+Así que voy a decir, hola, aparecen como uno
+
+42
+00:02:12.080 --> 00:02:17.080
+y luego años, y han comprado,
+
+43
+00:02:17.991 --> 00:02:22.250
+y luego colocan dentro de aquí solo los corchetes
+
+44
+00:02:22.250 --> 00:02:24.890
+una vez más, el número 2.
+
+45
+00:02:24.890 --> 00:02:28.820
+Y llamemos formato para esto.
+
+46
+00:02:28.820 --> 00:02:30.830
+Ahora, la forma en que funciona
+
+47
+00:02:30.830 --> 00:02:32.796
+el formato es tomando cualquier número
+
+48
+00:02:32.796 --> 00:02:35.100
+de argumentos que quieras transmitir.
+
+49
+00:02:35.100 --> 00:02:39.460
+Así que puedo decir nombre, antigüedad y producto,
+
+50
+00:02:39.460 --> 00:02:41.150
+y lo que esto va a hacer
+
+51
+00:02:41.150 --> 00:02:45.800
+es ir a la cadena y se va a mapa
+
+52
+00:02:45.800 --> 00:02:47.870
+a cada uno de estos valores.
+
+53
+00:02:47.870 --> 00:02:51.530
+Entonces, el nombre se asignará al primer elemento,
+
+54
+00:02:51.530 --> 00:02:52.920
+que es cero.
+
+55
+00:02:52.920 --> 00:02:55.530
+La edad se asignará al segundo elemento,
+
+56
+00:02:55.530 --> 00:02:57.430
+que tiene el índice uno.
+
+57
+00:02:57.430 --> 00:03:00.260
+Y luego el producto será mapeado aquí.
+
+58
+00:03:00.260 --> 00:03:02.320
+Veamos si esto funciona.
+
+59
+00:03:02.320 --> 00:03:06.053
+Voy a saludar y quiero imprimir esto.
+
+60
+00:03:07.290 --> 00:03:10.547
+Entonces, si ejecuto este código aquí, puedes ver que dice:
+
+61
+00:03:10.547 --> 00:03:13.250
+"Hola Kristine, tienes 12 años y
+
+62
+00:03:13.250 --> 00:03:17.080
+has comprado el curso de aprendizaje electrónico de Python".
+
+63
+00:03:17.080 --> 00:03:21.110
+y luego, podrías, por si acaso, solo para que lo sepas,
+
+64
+00:03:21.110 --> 00:03:23.500
+no tiene que proporcionarlos en orden,
+
+65
+00:03:23.500 --> 00:03:27.220
+simplemente deben asignarse a esta orden.
+
+66
+00:03:27.220 --> 00:03:31.660
+Así que podrías hacer algo como poder tomar este 2 aquí
+
+67
+00:03:32.600 --> 00:03:37.550
+y años y decir algo así como,
+
+68
+00:03:37.550 --> 00:03:42.550
+comprar el producto, el número 2 y así,
+
+69
+00:03:43.931 --> 00:03:46.920
+podría ejecutarlo de nuevo y, como puedes ver,
+
+70
+00:03:46.920 --> 00:03:49.350
+dice, compra del producto, curso de aprendizaje electrónico
+
+71
+00:03:49.350 --> 00:03:50.550
+de Python , y luego hola Kristine.
+
+72
+00:03:50.550 --> 00:03:53.210
+Por lo tanto, no importa el orden en que los coloques
+
+73
+00:03:53.210 --> 00:03:55.390
+en una cadena, simplemente debes saber
+
+74
+00:03:55.390 --> 00:03:58.040
+que siempre que quieras hacer referencia al nombre,
+
+75
+00:03:58.040 --> 00:04:01.750
+usarás los corchetes con el cero.
+
+76
+00:04:01.750 --> 00:04:05.040
+Cuando quieras usar la edad, usará uno
+
+77
+00:04:05.040 --> 00:04:07.310
+y el producto usará dos.
+
+78
+00:04:07.310 --> 00:04:11.640
+No estás limitado a usar simplemente tres elementos aquí.
+
+79
+00:04:11.640 --> 00:04:14.463
+Podrías poner tantas como quieras.
+
+80
+00:04:16.530 --> 00:04:18.750
+Ni siquiera necesitas colocar variables aquí.
+
+81
+00:04:18.750 --> 00:04:22.590
+Entonces, si quisiera decir mi nombre aquí,
+
+82
+00:04:22.590 --> 00:04:24.620
+y nos dará un error, dice,
+
+83
+00:04:24.620 --> 00:04:26.530
+hay demasiados argumentos para la cadena de formato,
+
+84
+00:04:26.530 --> 00:04:31.090
+porque en realidad ahora está buscando el número cuatro.
+
+85
+00:04:31.090 --> 00:04:36.090
+Así que podría decir aquí y pasar el número cuatro,
+
+86
+00:04:36.600 --> 00:04:40.550
+porque ese es el índice, y ahora si ejecuto esto,
+
+87
+00:04:40.550 --> 00:04:42.866
+dice el archivo python línea cinco,
+
+88
+00:04:42.866 --> 00:04:45.570
+índice de tupla fuera del rango.
+
+89
+00:04:45.570 --> 00:04:47.190
+Y ese fue simplemente mi error.
+
+90
+00:04:47.190 --> 00:04:50.760
+A pesar de que he estado haciendo esto durante mucho tiempo,
+
+91
+00:04:50.760 --> 00:04:55.590
+todavía me tropiezo al tener índices basados en cero.
+
+92
+00:04:55.590 --> 00:04:58.850
+Aquí conté uno, dos, tres y cuatro elementos,
+
+93
+00:04:58.850 --> 00:05:02.400
+pero olvidé que estos se asignan a índices.
+
+94
+00:05:02.400 --> 00:05:06.100
+Esto es parte de la razón por la que quise implementar esto
+
+95
+00:05:06.100 --> 00:05:10.730
+porque este no es un tema muy intuitivo
+
+96
+00:05:10.730 --> 00:05:11.590
+para que lo entiendas.
+
+97
+00:05:11.590 --> 00:05:14.100
+Si nunca ha usado índices basados en cero,
+
+98
+00:05:14.100 --> 00:05:18.570
+una de las cosas más naturales que hacemos como individuos,
+
+99
+00:05:18.570 --> 00:05:21.260
+si hemos aprendido, contando desde uno,
+
+100
+00:05:21.260 --> 00:05:23.840
+haremos exactamente lo que hice allí.
+
+101
+00:05:23.840 --> 00:05:25.860
+Lo que era contar cuatro elementos
+
+102
+00:05:25.860 --> 00:05:29.210
+y luego automáticamente pensé en colocar un cuatro allí,
+
+103
+00:05:29.210 --> 00:05:33.420
+en la actualidad el nombre se asigna como el índice cero,
+
+104
+00:05:33.420 --> 00:05:37.780
+la edad como uno, el producto es dos, Jordan es tres.
+
+105
+00:05:37.780 --> 00:05:41.630
+Así que si vuelvo a ejecutar esto, verás que funciona.
+
+106
+00:05:41.630 --> 00:05:44.040
+Y así puedes pasar solo una cadena aquí,
+
+107
+00:05:44.040 --> 00:05:45.820
+no tiene que ser una variable.
+
+108
+00:05:45.820 --> 00:05:47.450
+Puede pasar lo que quieras,
+
+109
+00:05:47.450 --> 00:05:49.090
+solo deber saber que se asignará
+
+110
+00:05:49.090 --> 00:05:52.450
+a un valor de índice específico.
+
+111
+00:05:52.450 --> 00:05:55.157
+Entonces eso es algo que es importante en ello.
+
+112
+00:05:55.157 --> 00:05:58.340
+Y otra nota a tener en cuenta,
+
+113
+00:05:58.340 --> 00:06:01.270
+parte de la razón por la que no edito los errores de esa
+
+114
+00:06:01.270 --> 00:06:06.130
+manera es porque quiero que puedas ver los errores comunes.
+
+115
+00:06:06.130 --> 00:06:08.670
+Tienes que ver cuál era el mensaje de error.
+
+116
+00:06:08.670 --> 00:06:13.670
+Entonces, si vuelvo y cambio esto de nuevo a 4 y lo ejecuto,
+
+117
+00:06:13.700 --> 00:06:15.940
+puedes ver que obtenemos un error que dice
+
+118
+00:06:15.940 --> 00:06:17.840
+que el índice de tupla está fuera de rango.
+
+119
+00:06:17.840 --> 00:06:21.990
+A menos que estés familiarizado con las tuplas y hayas
+
+120
+00:06:21.990 --> 00:06:24.450
+trabajado con un error fuera de rango,
+
+121
+00:06:24.450 --> 00:06:28.260
+puede que no sea la idea más intuitiva de comprender.
+
+122
+00:06:28.260 --> 00:06:30.280
+Y, entonces, quiero mantener estos errores.
+
+123
+00:06:30.280 --> 00:06:32.820
+Siempre que cometo un error tipográfico
+
+124
+00:06:32.820 --> 00:06:33.880
+o escribo algo así,
+
+125
+00:06:33.880 --> 00:06:37.770
+quiero hacerlo para que cuando se produzcan estos errores,
+
+126
+00:06:37.770 --> 00:06:41.140
+porque supongo que se van a encontrar muchos errores.
+
+127
+00:06:41.140 --> 00:06:44.630
+Sé que lo hago cuando estoy trabajando en mis propios
+
+128
+00:06:44.630 --> 00:06:47.710
+proyectos e incluso cuando estoy trabajando y enseñando.
+
+129
+00:06:47.710 --> 00:06:49.390
+Y así, ya que vas a encontrar errores,
+
+130
+00:06:49.390 --> 00:06:52.370
+quiero tratar de mantenerlos lo más posible,
+
+131
+00:06:52.370 --> 00:06:54.540
+para que cuando te encuentres con otros similares,
+
+132
+00:06:54.540 --> 00:06:57.160
+sepas cómo depurarlos.
+
+133
+00:06:57.160 --> 00:07:00.590
+Así que voy a cambiar esto de nuevo a 3, pulsa ejecutar,
+
+134
+00:07:00.590 --> 00:07:04.030
+y ahora todo vuelve a funcionar.
+
+135
+00:07:04.030 --> 00:07:08.190
+Entonces, así es como puede usar el método de formato
+
+136
+00:07:08.190 --> 00:07:11.310
+para implementar la interpolación de cadenas.
+
+137
+00:07:11.310 --> 00:07:14.600
+Ahora, una vez más, solo para reiterar,
+
+138
+00:07:14.600 --> 00:07:18.060
+esta es una opción para realizar esta tarea,
+
+139
+00:07:18.060 --> 00:07:21.750
+pero mi favorito personal ahora es,
+
+140
+00:07:21.750 --> 00:07:24.640
+en lugar de implementarlo de esta manera,
+
+141
+00:07:24.640 --> 00:07:27.050
+es usar la cadena literal.
+
+142
+00:07:27.050 --> 00:07:31.760
+Así que puedo deshacerme de todo este código aquí mismo,
+
+143
+00:07:31.760 --> 00:07:36.280
+y ahora simplemente puedo escribir una f aquí,
+
+144
+00:07:36.280 --> 00:07:39.060
+que es la abreviatura del formato, pero creo
+
+145
+00:07:39.060 --> 00:07:40.740
+que esta es una forma más limpia de hacerlo.
+
+146
+00:07:40.740 --> 00:07:42.530
+Y luego ya no tengo que preocuparme por
+
+147
+00:07:42.530 --> 00:07:44.740
+estos números de índice.
+
+148
+00:07:44.740 --> 00:07:49.740
+Entonces, aquí solo puedo decir producto y luego nombre,
+
+149
+00:07:54.410 --> 00:07:58.280
+edad, y luego, si quisiera, podría lanzar, digamos,
+
+150
+00:07:58.280 --> 00:08:03.280
+decir de la cuenta y colocarlo así.
+
+151
+00:08:06.280 --> 00:08:10.650
+Y si escribo todo eso y ahora ejecuto esto,
+
+152
+00:08:10.650 --> 00:08:12.970
+obtendrás exactamente el mismo resultado,
+
+153
+00:08:12.970 --> 00:08:14.500
+pero la razón por la que me gusta esto es
+
+154
+00:08:14.500 --> 00:08:15.980
+porque es más intuitivo.
+
+155
+00:08:15.980 --> 00:08:20.980
+No tengo que ir a contar cada uno de esos valores de índice
+
+156
+00:08:20.990 --> 00:08:22.900
+y luego ver dónde se asigna,
+
+157
+00:08:22.900 --> 00:08:25.690
+porque si terminas con una cadena muy grande,
+
+158
+00:08:25.690 --> 00:08:29.040
+será más desafiante seguirla, mientras que en cambio,
+
+159
+00:08:29.040 --> 00:08:34.040
+si simplemente deslizo en la expresión,
+
+160
+00:08:34.420 --> 00:08:37.400
+que sería una variable, como producto o nombre,
+
+161
+00:08:37.400 --> 00:08:40.090
+sabré exactamente qué valor va allí.
+
+162
+00:08:40.090 --> 00:08:42.530
+Entonces, una vez más, esas son dos formas de poder usar
+
+163
+00:08:42.530 --> 00:08:44.440
+la interpolación de cadenas.
+
+164
+00:08:44.440 --> 00:08:48.660
+Y también una razón por la que personalmente me gusta usar
+
+165
+00:08:48.660 --> 00:08:52.033
+esta forma literal de cadena más moderna de hacerlo.
+

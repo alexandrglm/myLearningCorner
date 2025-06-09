@@ -1,0 +1,377 @@
+WEBVTT
+
+1
+00:00:01.020 --> 00:00:02.550
+<v ->En esta guía, explicaremos</v>
+
+2
+00:00:02.550 --> 00:00:05.240
+la guía de instalación de Python 3,
+
+3
+00:00:05.240 --> 00:00:07.940
+si trabajan sobre Windows
+
+4
+00:00:07.940 --> 00:00:11.600
+y quieren ejecutar localmente
+los scripts de Python.
+
+5
+00:00:11.600 --> 00:00:13.810
+Comenzaremos yendo
+
+6
+00:00:13.810 --> 00:00:18.600
+a python.org/downloads/windows.
+
+7
+00:00:18.600 --> 00:00:22.240
+Recomiendo descargar
+la última versión estable.
+
+8
+00:00:22.240 --> 00:00:25.452
+Esta será la última versión de Python 3,
+
+9
+00:00:25.452 --> 00:00:27.570
+que es la 3.6.4.
+
+10
+00:00:27.570 --> 00:00:29.300
+Quizá vean otras opciones,
+
+11
+00:00:29.300 --> 00:00:33.410
+como 3.7 u otras opciones aquí.
+
+12
+00:00:33.410 --> 00:00:35.980
+Recomiendo descargar
+la última versión estable.
+
+13
+00:00:35.980 --> 00:00:38.005
+porque podría haber
+
+14
+00:00:38.005 --> 00:00:41.522
+algunos cambios en esas versiones
+
+15
+00:00:41.522 --> 00:00:44.213
+que podrían causarles problemas,
+
+16
+00:00:44.213 --> 00:00:48.445
+así que recomiendo escoger
+la opción de arriba de todo
+
+17
+00:00:48.445 --> 00:00:50.510
+y cliquear sobre ella.
+
+18
+00:00:50.510 --> 00:00:54.910
+Nos mostrará todos los cambios.
+
+19
+00:00:54.910 --> 00:00:57.228
+Estas son las diferencias
+
+20
+00:00:57.228 --> 00:01:00.940
+entre las versiones 3.6 y 3.5.
+
+21
+00:01:00.940 --> 00:01:04.730
+Si queremos revisar cada una,
+
+22
+00:01:04.730 --> 00:01:08.060
+veremos cuáles son
+los cambios específicos.
+
+23
+00:01:08.060 --> 00:01:10.270
+Si son nuevos
+en el diseño con lenguaje
+
+24
+00:01:10.270 --> 00:01:12.840
+y con la programación en general,
+
+25
+00:01:12.840 --> 00:01:15.800
+todos los lenguajes de programación tienen versiones.
+
+26
+00:01:15.800 --> 00:01:18.190
+Los desarrolladores del lenguaje
+
+27
+00:01:18.190 --> 00:01:21.156
+irán y obtendrán
+
+28
+00:01:21.156 --> 00:01:23.681
+cada una de las nuevas funcionalidades
+
+29
+00:01:23.681 --> 00:01:26.198
+que creen que la industria necesita,
+
+30
+00:01:26.198 --> 00:01:28.730
+o implementarán parches de seguridad
+
+31
+00:01:28.730 --> 00:01:30.110
+y distintas cosas así.
+
+32
+00:01:30.110 --> 00:01:33.880
+Veremos qué nos permite hacer
+cada versión.
+
+33
+00:01:33.880 --> 00:01:35.938
+Nos desplazamos hasta abajo de todo
+
+34
+00:01:35.938 --> 00:01:40.470
+y veremos todas las opciones
+que tenemos.
+
+35
+00:01:40.470 --> 00:01:43.450
+Estos son los archivos
+que podemos descargar.
+
+36
+00:01:43.450 --> 00:01:45.410
+Está el archivo de ayuda para Windows,
+
+37
+00:01:45.410 --> 00:01:47.570
+está el archivo comprimido incrustable,
+
+38
+00:01:47.570 --> 00:01:49.205
+están los instaladores.
+
+39
+00:01:49.205 --> 00:01:53.380
+Escogeremos este instalador de aquí.
+
+40
+00:01:53.380 --> 00:01:56.190
+Cliquearé este
+
+41
+00:01:57.082 --> 00:01:58.890
+y debajo me preguntará
+
+42
+00:01:58.890 --> 00:02:03.042
+si quiero ejecutar
+este instalador Python 3.6
+
+43
+00:02:03.042 --> 00:02:06.430
+desde python.org.
+Diré que sí.
+
+44
+00:02:06.430 --> 00:02:08.580
+Esto es algo específico
+
+45
+00:02:08.580 --> 00:02:13.163
+para las varios SO
+y microchips que tengamos.
+
+46
+00:02:13.163 --> 00:02:16.360
+Luego, cliquearé en "Ejecutar".
+
+47
+00:02:16.360 --> 00:02:18.945
+Se descargará todo el paquete.
+
+48
+00:02:18.945 --> 00:02:21.990
+Luego, hará un escaneo de seguridad.
+
+49
+00:02:21.990 --> 00:02:25.560
+Y cuando todo acabe,
+debería abrir el instalador.
+
+50
+00:02:25.560 --> 00:02:26.601
+Aquí vamos.
+
+51
+00:02:26.601 --> 00:02:30.298
+Tenemos el instalador Python 3.6.
+
+52
+00:02:30.298 --> 00:02:32.730
+Cliquearé "Instalar ahora".
+
+53
+00:02:32.730 --> 00:02:36.810
+Y también quiero agregar
+Python 3.6 a la ruta.
+
+54
+00:02:36.810 --> 00:02:40.180
+Entonces, cliquearé "Instalar ahora".
+
+55
+00:02:40.180 --> 00:02:43.700
+Mostrará un comprobación de seguridad
+
+56
+00:02:43.700 --> 00:02:47.085
+y preguntará si realmente
+quiero ejecutar el instalador.
+
+57
+00:02:47.085 --> 00:02:49.243
+No estoy seguro si eso aparecerá o no
+
+58
+00:02:49.243 --> 00:02:52.040
+en la captura de pantalla,
+pero acaba de salir.
+
+59
+00:02:52.040 --> 00:02:55.070
+Y ya está instalando
+
+60
+00:02:55.070 --> 00:02:57.060
+Python para Windows.
+
+61
+00:02:57.060 --> 00:03:00.267
+Si todo sale bien, se instalará
+
+62
+00:03:00.267 --> 00:03:03.250
+y podremos ejecutar
+scripts de Python en breve.
+
+63
+00:03:03.250 --> 00:03:06.240
+Pausaré este video hasta que acabe.
+
+64
+00:03:06.240 --> 00:03:07.790
+¡Parece que funciona!
+
+65
+00:03:07.790 --> 00:03:09.390
+Dice que la instalación fue exitosa.
+
+66
+00:03:09.390 --> 00:03:13.174
+Cerraré. Y podemos probar esto
+
+67
+00:03:13.174 --> 00:03:16.330
+presionando la tecla Windows.
+
+68
+00:03:16.330 --> 00:03:19.538
+Bajamos y buscamos...
+
+69
+00:03:19.538 --> 00:03:24.250
+Esto no saldrá en la pantalla,
+pero si escriben "cmd",
+
+70
+00:03:24.250 --> 00:03:26.010
+ejecutarán el símbolo del sistema
+
+71
+00:03:26.010 --> 00:03:27.830
+y aparecerá aquí.
+
+72
+00:03:27.830 --> 00:03:30.365
+Si todo sale bien,
+
+73
+00:03:30.365 --> 00:03:33.450
+deberíamos poder escribir "python".
+
+74
+00:03:33.450 --> 00:03:38.450
+Solo debemos escribir "python" aquí.
+
+75
+00:03:38.640 --> 00:03:41.640
+Y veremos que ahora está funcionando.
+
+76
+00:03:41.640 --> 00:03:43.743
+Esto es diferente
+a lo que estoy acostumbrado.
+
+77
+00:03:43.743 --> 00:03:46.692
+Yo uso una Mac
+y debo escribir explícitamente
+
+78
+00:03:46.692 --> 00:03:47.936
+"python 3".
+
+79
+00:03:47.936 --> 00:03:50.530
+Pero por como lo instalamos,
+
+80
+00:03:50.530 --> 00:03:53.580
+solo debemos escribir la palabra "python".
+
+81
+00:03:53.580 --> 00:03:57.490
+Vemos que tenemos acceso
+a Python 3.6.4
+
+82
+00:03:57.490 --> 00:03:59.560
+y ya podemos probarlo.
+
+83
+00:03:59.560 --> 00:04:01.740
+Si queremos probar esto,
+
+84
+00:04:01.740 --> 00:04:06.020
+podemos escribir
+"print 'Hi from Windows'"
+
+85
+00:04:06.020 --> 00:04:07.827
+y terminarlo.
+
+86
+00:04:07.827 --> 00:04:11.770
+Si lo ejecutamos,
+vemos que funciona bien.
+
+87
+00:04:11.770 --> 00:04:13.660
+Eso es todo lo que debemos hacer
+
+88
+00:04:13.660 --> 00:04:17.923
+para instalar Python sobre Windows.
+

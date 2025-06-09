@@ -1,0 +1,890 @@
+WEBVTT
+
+1
+00:00:00.348 --> 00:00:02.410
+<v Instructor>En algunas de las guías anteriores</v>
+
+2
+00:00:02.410 --> 00:00:05.180
+puedes haber notado cómo hice comentarios
+
+3
+00:00:05.180 --> 00:00:07.990
+que estaban anotados dentro del archivo de código.
+
+4
+00:00:07.990 --> 00:00:10.630
+Y entonces, quería dedicar en esta Guía
+
+5
+00:00:10.630 --> 00:00:13.730
+una lección entera para hablar de las tres formas
+
+6
+00:00:13.730 --> 00:00:18.480
+comunes de agregar comentarios a un programa Python.
+
+7
+00:00:18.480 --> 00:00:21.820
+Entonces, tenemos un comentario de una sola línea,
+
+8
+00:00:21.820 --> 00:00:24.990
+tenemos un comentario en línea y luego tenemos
+
+9
+00:00:24.990 --> 00:00:28.210
+un comentario de varias líneas, así que
+
+10
+00:00:28.210 --> 00:00:29.650
+vamos a repasarlos.
+
+11
+00:00:29.650 --> 00:00:32.150
+Pero antes de hacer eso, hablemos de
+
+12
+00:00:32.150 --> 00:00:33.920
+lo que es un comentario.
+
+13
+00:00:33.920 --> 00:00:38.150
+Un comentario te permite agregar contexto
+
+14
+00:00:38.150 --> 00:00:41.380
+y documentación adicional a sus programas.
+
+15
+00:00:41.380 --> 00:00:45.650
+Ahora, muchos estudiantes nuevos tienen la idea
+
+16
+00:00:45.650 --> 00:00:48.940
+de que necesitan comentar cada parte de su aplicación
+
+17
+00:00:48.940 --> 00:00:50.600
+y eso simplemente no es acertado.
+
+18
+00:00:50.600 --> 00:00:54.540
+Si revisas algunas de las bases de código más populares
+
+19
+00:00:54.540 --> 00:00:57.000
+para Python, o en realidad de cualquier tipo
+
+20
+00:00:57.000 --> 00:00:59.980
+de lenguaje de programación, verás que sólo
+
+21
+00:00:59.980 --> 00:01:04.470
+se comentan los componentes importantes de un programa
+
+22
+00:01:04.470 --> 00:01:08.160
+y hay muchos desarrolladores y científicos informáticos
+
+23
+00:01:08.160 --> 00:01:11.526
+que creen que los programas deberían tener comentarios
+
+24
+00:01:11.526 --> 00:01:12.750
+muy limitados.
+
+25
+00:01:12.750 --> 00:01:16.340
+Y, si estás agregando un comentario, entonces podría haber
+
+26
+00:01:16.340 --> 00:01:19.240
+sido un error, podría haber sido una situación en la que no
+
+27
+00:01:19.240 --> 00:01:21.550
+lo hiciste con el mejor nombre de variable.
+
+28
+00:01:21.550 --> 00:01:23.650
+Y no voy a entrar en detalles sobre eso todavía,
+
+29
+00:01:23.650 --> 00:01:26.210
+ya que necesita poder entender la forma
+
+30
+00:01:26.210 --> 00:01:30.990
+en que llamas a las funciones y clases
+
+31
+00:01:30.990 --> 00:01:33.390
+y ese tipo de elementos para comprender realmente
+
+32
+00:01:33.390 --> 00:01:35.590
+cuándo es el momento adecuado para agregar comentarios
+
+33
+00:01:35.590 --> 00:01:37.170
+y cuándo no deberías hacerlo.
+
+34
+00:01:37.170 --> 00:01:40.750
+Pero hablaré sobre ello a medida que avancemos en el
+
+35
+00:01:40.750 --> 00:01:45.090
+programa y también en nuestro curso avanzado tengo una
+
+36
+00:01:45.090 --> 00:01:50.090
+sección completa dedicada sólo para agregar un conjunto
+
+37
+00:01:50.460 --> 00:01:52.184
+profesional de comentarios para que tus programas
+
+38
+00:01:52.184 --> 00:01:53.485
+puedan autodocumentarse.
+
+39
+00:01:53.485 --> 00:01:55.570
+Así que esto será la base para eso
+
+40
+00:01:55.570 --> 00:01:58.420
+y te permitirá agregar tus propios comentarios
+
+41
+00:01:58.420 --> 00:02:00.430
+y ver las diferentes variaciones de los mismos.
+
+42
+00:02:00.430 --> 00:02:01.850
+Y vamos a empezar revisando
+
+43
+00:02:01.850 --> 00:02:03.330
+los comentarios de una sola línea.
+
+44
+00:02:03.330 --> 00:02:08.330
+Así que voy a decir, soy un comentario de una sola línea
+
+45
+00:02:08.660 --> 00:02:10.970
+y luego le doy una línea más.
+
+46
+00:02:10.970 --> 00:02:12.940
+Te mostraré esto y esto es algo
+
+47
+00:02:12.940 --> 00:02:15.740
+específico para usar Repl.it
+
+48
+00:02:15.740 --> 00:02:18.520
+y si no insertas una nueva línea
+
+49
+00:02:18.520 --> 00:02:22.080
+y simplemente presionas Return, obtendrás un error.
+
+50
+00:02:22.080 --> 00:02:26.190
+Ahora bien, esto no es un error de Python, este es un
+
+51
+00:02:26.190 --> 00:02:28.940
+problema con Repl.it porque realmente no hay necesidad
+
+52
+00:02:28.940 --> 00:02:31.360
+de tener un programa que sólo tenga
+
+53
+00:02:31.360 --> 00:02:35.460
+un comentario de una sola línea y ningún código real.
+
+54
+00:02:35.460 --> 00:02:38.800
+Por lo tanto, está buscando, y si observas el mensaje de
+
+55
+00:02:38.800 --> 00:02:42.640
+error dice: EOF inesperado, que significa fin de archivo,
+
+56
+00:02:42.640 --> 00:02:43.670
+mientras analiza.
+
+57
+00:02:43.670 --> 00:02:45.920
+Entonces, este no es un problema con Python,
+
+58
+00:02:45.920 --> 00:02:47.630
+es únicamente con Repl.it.
+
+59
+00:02:47.630 --> 00:02:51.360
+Quería mostrarte eso en caso de que te encontraras con eso.
+
+60
+00:02:51.360 --> 00:02:55.220
+Voy a dejarlo claro y si sólo agregas una nueva línea
+
+61
+00:02:55.220 --> 00:02:58.260
+funcionará, así que si presiono Entrer, verás que
+
+62
+00:02:58.260 --> 00:03:01.420
+no se procesa ningún código y ese es el objetivo,
+
+63
+00:03:01.420 --> 00:03:04.850
+siempre que tengas un comentario no deberías tener un código
+
+64
+00:03:04.850 --> 00:03:06.140
+que se ejecute.
+
+65
+00:03:06.140 --> 00:03:10.440
+También voy a abrir, el entorno Repl
+
+66
+00:03:10.440 --> 00:03:11.900
+en nuestra terminal.
+
+67
+00:03:11.900 --> 00:03:15.610
+Así que voy a abrir la terminal aquí.
+
+68
+00:03:15.610 --> 00:03:19.800
+Y, solo voy a decir python3,
+
+69
+00:03:19.800 --> 00:03:21.500
+para que puedas ver cómo funciona esto.
+
+70
+00:03:21.500 --> 00:03:26.500
+Así que aquí voy a decir, soy un comentario de una sola
+
+71
+00:03:26.920 --> 00:03:30.010
+línea, haz clic en ejecutar y,
+
+72
+00:03:30.010 --> 00:03:32.743
+como puedes ver, abre estos tres pequeños puntos
+
+73
+00:03:32.743 --> 00:03:34.400
+para nosotros aquí mismo.
+
+74
+00:03:34.400 --> 00:03:37.000
+Y entonces, podrías agregar otras líneas,
+
+75
+00:03:37.000 --> 00:03:39.530
+o simplemente presionar Return nuevamente
+
+76
+00:03:39.530 --> 00:03:43.290
+y ahora está de vuelta en el Repl, donde podría decir
+
+77
+00:03:43.290 --> 00:03:45.510
+que dos más dos son cuatro.
+
+78
+00:03:45.510 --> 00:03:48.420
+Por lo tanto, ésta es la forma en que, si estás siguiendo
+
+79
+00:03:48.420 --> 00:03:51.600
+y estás usando el Repl, ésta es una forma en la que
+
+80
+00:03:51.600 --> 00:03:55.990
+se procesaría y, obviamente, si está usando otra cosa,
+
+81
+00:03:55.990 --> 00:03:59.760
+como sólo el código en sí, así que si estás usando esto
+
+82
+00:03:59.760 --> 00:04:01.730
+en un archivo de código.
+
+83
+00:04:01.730 --> 00:04:04.970
+Así que voy a crear uno nuevo aquí,
+
+84
+00:04:04.970 --> 00:04:07.440
+y no te preocupes por la sintaxis, esto es específico
+
+85
+00:04:07.440 --> 00:04:09.040
+para este editor de texto.
+
+86
+00:04:09.040 --> 00:04:13.583
+Así que puedo decir 06_comments y luego py,
+
+87
+00:04:14.810 --> 00:04:17.360
+y puedo empezar diciendo que
+
+88
+00:04:17.360 --> 00:04:22.360
+soy un comentario de una sola línea, y luego, si quiero
+
+89
+00:04:24.170 --> 00:04:29.170
+imprimir Hola, debajo, sólo va a imprimir Hola,
+
+90
+00:04:29.700 --> 00:04:32.910
+el comentario será ignorado.
+
+91
+00:04:32.910 --> 00:04:37.250
+Y puedo probar esto diciendo python3
+
+92
+00:04:37.250 --> 00:04:40.453
+y luego vamos a encontrarlo, es 06_comments.
+
+93
+00:04:41.547 --> 00:04:44.330
+Imprímelo, es Hola y no muestra
+
+94
+00:04:44.330 --> 00:04:46.050
+ninguno de los comentarios.
+
+95
+00:04:46.050 --> 00:04:49.370
+Así que esto es un comentario de una sola línea.
+
+96
+00:04:49.370 --> 00:04:53.080
+Ahora, otro que es bastante común es la posibilidad
+
+97
+00:04:53.080 --> 00:04:55.310
+de tener un comentario en línea.
+
+98
+00:04:55.310 --> 00:04:57.750
+Y, de hecho, sólo para aclarar esto,
+
+99
+00:04:57.750 --> 00:05:02.000
+voy a decir que esto es una sola línea
+
+100
+00:05:02.000 --> 00:05:03.980
+y sé lo que probablemente están pensando,
+
+101
+00:05:03.980 --> 00:05:06.610
+ésta no es una sola línea, son múltiples líneas
+
+102
+00:05:06.610 --> 00:05:08.580
+y eso es cierto en este caso.
+
+103
+00:05:08.580 --> 00:05:10.610
+Te mostraré cómo puedes realizar
+
+104
+00:05:10.610 --> 00:05:14.410
+un verdadero comentario multilínea, pero técnicamente puedes
+
+105
+00:05:14.410 --> 00:05:17.270
+hacerlo, pero luego te mostraré algo
+
+106
+00:05:17.270 --> 00:05:19.730
+que es más cercano a la convención común
+
+107
+00:05:19.730 --> 00:05:21.490
+para los desarrolladores de Python.
+
+108
+00:05:21.490 --> 00:05:24.180
+Así que ahora digamos que tenemos una variable
+
+109
+00:05:24.180 --> 00:05:29.180
+y es un nombre y diremos que es Kristine Hudgens
+
+110
+00:05:30.070 --> 00:05:34.940
+y lo que puedo hacer es, puedo decir y poner una marca aquí
+
+111
+00:05:34.940 --> 00:05:39.940
+y decir TODO y cambiar a,
+
+112
+00:05:42.060 --> 00:05:47.060
+o diré algo así como: dividir en dos variables,
+
+113
+00:05:47.630 --> 00:05:51.230
+por lo que este es un tipo bastante común de cosas
+
+114
+00:05:51.230 --> 00:05:53.350
+cuando estoy creando un programa,
+
+115
+00:05:53.350 --> 00:05:56.590
+es que si tengo una variable o un método
+
+116
+00:05:56.590 --> 00:05:59.880
+o algo así, funciona
+
+117
+00:05:59.880 --> 00:06:02.300
+para la implementación actual pero necesito volver
+
+118
+00:06:02.300 --> 00:06:05.210
+y arréglarlo más tarde o quizás hazlo más,
+
+119
+00:06:05.210 --> 00:06:08.700
+un poco más avanzado, entonces agregaré un TODO aquí.
+
+120
+00:06:08.700 --> 00:06:12.730
+Y si te das cuenta, dependiendo del editor que estés usando,
+
+121
+00:06:12.730 --> 00:06:16.500
+esto incluso agrega un pequeño botón de ayuda aquí que dice:
+
+122
+00:06:16.500 --> 00:06:19.700
+TODO: dividir en dos variables.
+
+123
+00:06:19.700 --> 00:06:22.950
+Y, por lo tanto, esto no significa que haya un problema con
+
+124
+00:06:22.950 --> 00:06:26.030
+él, es simplemente un recordatorio y muchos otros editores
+
+125
+00:06:26.030 --> 00:06:29.510
+le recordarán cada vez que hayas usado esta sintaxis,
+
+126
+00:06:29.510 --> 00:06:32.390
+donde dice TODO con todas las letras mayúsculas.
+
+127
+00:06:32.390 --> 00:06:35.170
+Esto se encuentra en todos los lenguajes de programación,
+
+128
+00:06:35.170 --> 00:06:38.950
+en todos los marcos, es un símbolo universal
+
+129
+00:06:38.950 --> 00:06:41.710
+para decir que aún no se ha hecho y tengo
+
+130
+00:06:41.710 --> 00:06:44.350
+que volver y trabajar más adelante.
+
+131
+00:06:44.350 --> 00:06:46.640
+Así que es algo bueno para tener en cuenta
+
+132
+00:06:46.640 --> 00:06:50.080
+cada vez que veas eso en tus propios programas
+
+133
+00:06:50.080 --> 00:06:51.200
+en los que estás trabajando.
+
+134
+00:06:51.200 --> 00:06:54.033
+Entonces, hasta ahora tenemos comentarios de una línea
+
+135
+00:06:54.033 --> 00:06:55.540
+y comentarios en línea.
+
+136
+00:06:55.540 --> 00:06:56.940
+Veamos el tercero.
+
+137
+00:06:56.940 --> 00:06:59.100
+Este tercero se verá un poco raro
+
+138
+00:06:59.100 --> 00:07:00.630
+si nunca lo has visto antes.
+
+139
+00:07:00.630 --> 00:07:02.730
+Sé que fue extraño la primera vez que lo vi
+
+140
+00:07:02.730 --> 00:07:04.550
+cuando comencé a trabajar con Python.
+
+141
+00:07:04.550 --> 00:07:08.620
+Pero así es como puedes usar un comentario multilínea.
+
+142
+00:07:08.620 --> 00:07:13.620
+Voy a subir y tengo algunas oraciones aquí
+
+143
+00:07:14.760 --> 00:07:17.740
+que acabo de lorem ipsum así.
+
+144
+00:07:17.740 --> 00:07:21.960
+Y entonces, si tengo un comentario como éste,
+
+145
+00:07:21.960 --> 00:07:26.540
+la forma en que puedo designarlo, es usar comillas dobles,
+
+146
+00:07:26.540 --> 00:07:30.560
+agregua tres en la parte superior derecha aquí,
+
+147
+00:07:30.560 --> 00:07:34.930
+baja a la línea inferior y agrega tres aquí
+
+148
+00:07:34.930 --> 00:07:38.300
+y verás que ahora no obtenemos
+
+149
+00:07:38.300 --> 00:07:39.560
+ningún tipo de error.
+
+150
+00:07:39.560 --> 00:07:43.920
+Y, déjame ejecutar esto e imprimir algo.
+
+151
+00:07:43.920 --> 00:07:46.300
+Sólo para que puedas ver que algo está pasando.
+
+152
+00:07:46.300 --> 00:07:50.490
+Así que ahora, si ejecuto esto y pulso Enter,
+
+153
+00:07:50.490 --> 00:07:51.660
+puedes ver que esto funciona.
+
+154
+00:07:51.660 --> 00:07:55.390
+Por lo tanto, todo aquí funciona correctamente,
+
+155
+00:07:55.390 --> 00:07:57.690
+nuestros comentarios se ignoran,
+
+156
+00:07:57.690 --> 00:08:00.120
+lo que debería ser, estos son sólo un punto de referencia
+
+157
+00:08:00.120 --> 00:08:04.710
+para ti y tenemos de una sola línea, tenemos en línea
+
+158
+00:08:04.710 --> 00:08:09.710
+y aquí tenemos un comentario de varias líneas.
+
+159
+00:08:10.120 --> 00:08:12.840
+Y esas son las tres variaciones que usarás
+
+160
+00:08:12.840 --> 00:08:15.530
+a medida que desarrolles tus propios programas
+
+161
+00:08:15.530 --> 00:08:19.650
+y agregues tu propia documentación en dichos programas.
+
+162
+00:08:19.650 --> 00:08:23.230
+Ahora sería negligente si no terminara este clase
+
+163
+00:08:23.230 --> 00:08:26.690
+discutiendo una pequeña controversia sobre Python.
+
+164
+00:08:26.690 --> 00:08:31.260
+Que es la forma en que trata con las cadenas multilínea
+
+165
+00:08:31.260 --> 00:08:33.230
+y los comentarios multilínea.
+
+166
+00:08:33.230 --> 00:08:35.440
+Aquí mismo tengo la página de Twitter
+
+167
+00:08:35.440 --> 00:08:39.340
+de Guido van Rossum, quien es el creador
+
+168
+00:08:39.340 --> 00:08:41.170
+del lenguaje de programación Python.
+
+169
+00:08:41.170 --> 00:08:45.440
+Y como pueden ver, dijo, y esto fue en 2011,
+
+170
+00:08:45.440 --> 00:08:49.310
+que como un tip de Python puedes usar cadenas de varias
+
+171
+00:08:49.310 --> 00:08:51.680
+líneas como comentarios de varias líneas.
+
+172
+00:08:51.680 --> 00:08:56.580
+Que es exactamente lo que tenemos aquí.
+
+173
+00:08:56.580 --> 00:09:00.790
+Así que estas son cadenas de varias líneas, que se denotan
+
+174
+00:09:00.790 --> 00:09:04.490
+al tener estas tres comillas dobles
+
+175
+00:09:04.490 --> 00:09:05.570
+justo aquí.
+
+176
+00:09:05.570 --> 00:09:09.120
+Y estos representan un comentario multilínea.
+
+177
+00:09:09.120 --> 00:09:11.490
+Ahora hubo mucha controversia
+
+178
+00:09:11.490 --> 00:09:14.860
+durante varios años, simplemente porque a algunas personas
+
+179
+00:09:14.860 --> 00:09:16.600
+simplemente les gustaba crear problemas,
+
+180
+00:09:16.600 --> 00:09:20.610
+que hablaban de que técnicamente no era
+
+181
+00:09:20.610 --> 00:09:23.960
+un comentario válido y que la única forma de agregar
+
+182
+00:09:23.960 --> 00:09:26.760
+comentarios era tener la almohadilla #.
+
+183
+00:09:26.760 --> 00:09:30.850
+Y así, donde me gusta caer en ese lado del debate
+
+184
+00:09:30.850 --> 00:09:33.720
+es generalmente con la persona que creó el lenguaje de
+
+185
+00:09:33.720 --> 00:09:36.580
+programación porque probablemente sepa más sobre esto
+
+186
+00:09:36.580 --> 00:09:39.600
+que yo y más sobre esto que la mayoría.
+
+187
+00:09:39.600 --> 00:09:42.490
+Y, por lo tanto, la única razón por la que lo mencioné es
+
+188
+00:09:42.490 --> 00:09:46.450
+porque técnicamente hay formas posibles
+
+189
+00:09:46.450 --> 00:09:50.660
+en que ese tipo de comentario podría causar un error
+
+190
+00:09:50.660 --> 00:09:52.630
+en el programa, pero no son prácticos.
+
+191
+00:09:52.630 --> 00:09:56.830
+Y parte de la razón por la que puse este Tweet específico
+
+192
+00:09:56.830 --> 00:10:01.130
+fue porque este caballero, aquí en 2015,
+
+193
+00:10:01.130 --> 00:10:06.130
+encontró una manera de hacer que un comentario de varias
+
+194
+00:10:06.460 --> 00:10:11.010
+líneas arrojara un error, que es creando simplemente el tipo
+
+195
+00:10:11.010 --> 00:10:14.210
+de código Python más feo que haya visto jamás en mi vida y
+
+196
+00:10:14.210 --> 00:10:19.120
+lograr que saliera una excepción entre paréntesis y estas
+
+197
+00:10:19.120 --> 00:10:20.300
+3 almohadillas y todo lo demás.
+
+198
+00:10:20.300 --> 00:10:23.060
+Y, como pudiste ver, su respuesta a eso fue:
+
+199
+00:10:23.060 --> 00:10:25.930
+lo llevaste más allá de lo razonable.
+
+200
+00:10:25.930 --> 00:10:28.020
+Con lo que también estoy de acuerdo.
+
+201
+00:10:28.020 --> 00:10:30.450
+Así que simplemente quiero presentarte eso porque,
+
+202
+00:10:30.450 --> 00:10:34.910
+dependiendo de con quién estés trabajando en tu código
+
+203
+00:10:34.910 --> 00:10:38.680
+Python, alguien puede hacer un comentario sobre el tipo
+
+204
+00:10:38.680 --> 00:10:40.740
+de comentarios que estás utilizando.
+
+205
+00:10:40.740 --> 00:10:43.791
+Y pueden decir que debes hacer comentarios de varias líneas
+
+206
+00:10:43.791 --> 00:10:46.780
+con una marca de almohadilla al principio de cada uno
+
+207
+00:10:46.780 --> 00:10:49.690
+de ellos, que coincida con la sintaxis que utilizan
+
+208
+00:10:49.690 --> 00:10:52.590
+lenguajes como Ruby y no usar esto.
+
+209
+00:10:52.590 --> 00:10:54.870
+Sin embargo, he estado haciendo esto durante años
+
+210
+00:10:54.870 --> 00:10:59.210
+y aún es un estándar de la industria hacer esto
+
+211
+00:10:59.210 --> 00:11:01.970
+con casi todas las personas con las que he trabajado
+
+212
+00:11:01.970 --> 00:11:04.810
+y cuando pases por el curso avanzado de Python,
+
+213
+00:11:04.810 --> 00:11:07.860
+también verás cómo estos comentarios de varias líneas
+
+214
+00:11:07.860 --> 00:11:10.790
+se pueden realmente convertir automáticamente
+
+215
+00:11:10.790 --> 00:11:12.750
+en documentación.
+
+216
+00:11:12.750 --> 00:11:14.883
+Lo que es una herramienta muy útil para
+
+217
+00:11:14.883 --> 00:11:16.541
+un buen número de programas.
+
+218
+00:11:16.541 --> 00:11:19.160
+Pero quería darles una visión holística de todos ellos
+
+219
+00:11:19.160 --> 00:11:21.410
+para que pudieran ver las tres variaciones
+
+220
+00:11:21.410 --> 00:11:24.570
+y también como introducción a uno de sus primeros tipos
+
+221
+00:11:24.570 --> 00:11:27.790
+de disputas de programación,
+
+222
+00:11:27.790 --> 00:11:29.663
+y pudieran ver ambos lados de la misma.
+

@@ -1,0 +1,490 @@
+WEBVTT
+
+1
+00:00:01.030 --> 00:00:03.330
+<v Instructor>En esta guía te mostraré</v>
+
+2
+00:00:03.330 --> 00:00:06.200
+como puedes empezar a trabajar con Sass,
+
+3
+00:00:06.200 --> 00:00:08.440
+y como puedes comenzar
+
+4
+00:00:08.440 --> 00:00:11.010
+y tener el pre-proceso o acceso.
+
+5
+00:00:11.010 --> 00:00:13.380
+Si solo escribes CSS puro,
+
+6
+00:00:13.380 --> 00:00:15.160
+no necesitas una herramienta como esta,
+
+7
+00:00:15.160 --> 00:00:18.440
+porque no hay componentes pre-procesadores.
+
+8
+00:00:18.440 --> 00:00:21.490
+Si pasaste por mi curso de HTML y CSS,
+
+9
+00:00:21.490 --> 00:00:23.600
+sabes que podemos simplemente
+
+10
+00:00:23.600 --> 00:00:27.390
+crear un archivo .css, y añadir nuestros estilos,
+
+11
+00:00:27.390 --> 00:00:29.090
+y el navegador lo puede interpretar.
+
+12
+00:00:29.090 --> 00:00:31.780
+Pero por todo ese paso de pre-procesador
+
+13
+00:00:31.780 --> 00:00:34.680
+necesitamos un intermediario.
+
+14
+00:00:34.680 --> 00:00:38.730
+Necesitamos poder convertir todos nuestros estilos Sass
+
+15
+00:00:38.730 --> 00:00:41.830
+en algo que el navegador pueda comprender.
+
+16
+00:00:41.830 --> 00:00:44.000
+Existe una cantidad de opciones,
+
+17
+00:00:44.000 --> 00:00:49.000
+puedes instalar todos los tipos Sass de pre-procesadores
+
+18
+00:00:49.350 --> 00:00:51.130
+localmente, como en tu terminal,
+
+19
+00:00:51.130 --> 00:00:53.700
+y luego cada vez que hagas un cambio,
+
+20
+00:00:53.700 --> 00:00:56.890
+puede pre-procesar el sistema por ti,
+
+21
+00:00:56.890 --> 00:00:58.820
+pero si hiciera eso, tendrías que
+
+22
+00:00:58.820 --> 00:01:03.000
+hacerlo, ya sea en PC o Mac y además,
+
+23
+00:01:03.000 --> 00:01:07.640
+es bastante raro que lo tenga que hacer yo mismo.
+
+24
+00:01:07.640 --> 00:01:10.500
+Entonces, estoy intentando enseñarte habilidades distintas
+
+25
+00:01:10.500 --> 00:01:12.350
+y el conocimiento que necesitarás
+
+26
+00:01:12.350 --> 00:01:16.670
+cuando estés usando esto en una aplicación real.
+
+27
+00:01:16.670 --> 00:01:19.920
+Y en el mundo real, usualmente estoy usando algún tipo
+
+28
+00:01:19.920 --> 00:01:23.160
+de framework web, cuando necesito implementar Sass.
+
+29
+00:01:23.160 --> 00:01:25.990
+Así que, si tienes una aplicación Rails
+
+30
+00:01:25.990 --> 00:01:28.890
+puedes continuar en este curso,
+
+31
+00:01:28.890 --> 00:01:32.490
+haciendo los mismos estilos, porque Rails provee
+
+32
+00:01:32.490 --> 00:01:34.650
+ese proceso de pre-compilación.
+
+33
+00:01:34.650 --> 00:01:36.920
+Voy a usar CodePen por algunas razones,
+
+34
+00:01:36.920 --> 00:01:40.540
+uno porque no requiere configuración.
+
+35
+00:01:40.540 --> 00:01:42.420
+Así que si solo sigues este curso,
+
+36
+00:01:42.420 --> 00:01:46.120
+y tienes una PC, Mac o Linux,
+
+37
+00:01:46.120 --> 00:01:47.470
+podrás continuar,
+
+38
+00:01:47.470 --> 00:01:49.560
+y no tendrás que pasar tiempo
+
+39
+00:01:49.560 --> 00:01:52.300
+instalando cualquier tipo de dependencias de sistema,
+
+40
+00:01:52.300 --> 00:01:54.810
+preocupándote por versiones ni nada por el estilo.
+
+41
+00:01:54.810 --> 00:01:57.750
+Mi meta con el curso es que comiences
+
+42
+00:01:57.750 --> 00:01:59.590
+con Sass de inmediato.
+
+43
+00:01:59.590 --> 00:02:01.760
+Ahora, cuando estés listo, luego de que
+
+44
+00:02:01.760 --> 00:02:04.490
+termines el curso y puedas crear
+
+45
+00:02:04.490 --> 00:02:07.590
+estos estilos diferentes, puedes tomar eso
+
+46
+00:02:07.590 --> 00:02:11.580
+y traducirlo a cualquier tipo de framework
+
+47
+00:02:11.580 --> 00:02:16.190
+que tengas, ya sea .net, php, Rails
+
+48
+00:02:16.190 --> 00:02:18.440
+todos podrán usar
+
+49
+00:02:18.440 --> 00:02:20.270
+una sintaxis idéntica,
+
+50
+00:02:20.270 --> 00:02:23.100
+y todos tienen su pre-procesador.
+
+51
+00:02:23.100 --> 00:02:24.620
+Esa es una pequeña nota
+
+52
+00:02:24.620 --> 00:02:27.310
+en porqué tomé esa decisión.
+
+53
+00:02:27.310 --> 00:02:30.150
+Y la manera en la que puedes comenzar es
+
+54
+00:02:30.150 --> 00:02:33.100
+pulsar en ya sea inscribirte o crear,
+
+55
+00:02:33.100 --> 00:02:34.825
+so haces click en crear,
+
+56
+00:02:34.825 --> 00:02:37.150
+puedes comenzar a escribir de inmediato
+
+57
+00:02:37.150 --> 00:02:41.180
+Si haces cilck en New Pen, puedes comenzar así.
+
+58
+00:02:41.180 --> 00:02:44.850
+Y todo estará preparado y trabajando para ti.
+
+59
+00:02:44.850 --> 00:02:47.720
+Pero recomiendo inscribirte porque es gratis
+
+60
+00:02:47.720 --> 00:02:50.176
+así que si haces click en inscribirte y click en
+
+61
+00:02:50.176 --> 00:02:54.520
+unirte a CodePen gratis, si de verdad vas en serio,
+
+62
+00:02:54.520 --> 00:02:57.290
+y quieres funciones extra, entonces puedes elegir
+
+63
+00:02:57.290 --> 00:03:00.610
+una opción paga, pero también puedes hacer click
+
+64
+00:03:00.610 --> 00:03:03.820
+en unirte a CodPen gratis, e inscribirte
+
+65
+00:03:03.820 --> 00:03:07.410
+con toda la información que tienes,
+
+66
+00:03:07.410 --> 00:03:11.070
+tu email, nombre de usuario y todos esos elementos.
+
+67
+00:03:11.070 --> 00:03:14.320
+Ahora, ya tengo una cuenta CodePen.
+
+68
+00:03:14.320 --> 00:03:16.700
+Así que no necesito preocuparme por eso.
+
+69
+00:03:16.700 --> 00:03:20.360
+Pero regresaré al tipo de sistema
+
+70
+00:03:20.360 --> 00:03:22.240
+normal, vacío.
+
+71
+00:03:22.240 --> 00:03:25.790
+Tenemos HTML, CSS y JavaScript.
+
+72
+00:03:25.790 --> 00:03:29.150
+Para este curso, nos desharemos de JavaScript,
+
+73
+00:03:29.150 --> 00:03:30.440
+no tenemos que preocuparnos por eso.
+
+74
+00:03:30.440 --> 00:03:32.630
+Todo lo que haremos será
+
+75
+00:03:32.630 --> 00:03:36.110
+en HTML o Sass.
+
+76
+00:03:36.110 --> 00:03:40.630
+Y luego el navegador, así que todo lo que creemos
+
+77
+00:03:40.630 --> 00:03:43.730
+será renderizado aquí en el navegador.
+
+78
+00:03:43.730 --> 00:03:47.650
+Tendrás HTML, así que podrías tener algún tipo de
+
+79
+00:03:47.650 --> 00:03:50.080
+membrete aquí.
+
+80
+00:03:50.080 --> 00:03:52.960
+Y luego, cuando pulses guardar,
+
+81
+00:03:52.960 --> 00:03:54.960
+o si tienes guardado automático activado,
+
+82
+00:03:54.960 --> 00:03:57.570
+será añadido, y lo mismo ocurrirá
+
+83
+00:03:57.570 --> 00:03:58.920
+con tus estilos.
+
+84
+00:03:58.920 --> 00:04:01.720
+Ahora hay poco cambio que hacer,
+
+85
+00:04:01.720 --> 00:04:05.430
+porque si simplemente comienzas a agregar tus estilos aquí,
+
+86
+00:04:05.430 --> 00:04:10.230
+en otras palabras, si añado algo de Sass, tal como
+
+87
+00:04:10.230 --> 00:04:14.150
+crear una variable que llame color de membrete aquí,
+
+88
+00:04:14.150 --> 00:04:19.053
+y diga rojo, y luego trate de aplicarlo a mi H1,
+
+89
+00:04:20.110 --> 00:04:22.630
+podría decir color y
+
+90
+00:04:24.300 --> 00:04:26.480
+color de membrete y no te preocupes, entraremos
+
+91
+00:04:26.480 --> 00:04:28.850
+en variables, no mostraré nada de esto
+
+92
+00:04:28.850 --> 00:04:30.450
+por lo menos en la porción de enseñanza.
+
+93
+00:04:30.450 --> 00:04:33.540
+Es simplemente mostrando como funciona el sistema.
+
+94
+00:04:33.540 --> 00:04:36.740
+Ahora, si el Sass estuviera trabajando,
+
+95
+00:04:36.740 --> 00:04:39.350
+y trajera una pequeña cosa
+
+96
+00:04:39.350 --> 00:04:41.790
+preguntando si la quieres cambiar, si el Sass funcionara,
+
+97
+00:04:41.790 --> 00:04:46.100
+entonces esto habría cambiado a rojo, pero no.
+
+98
+00:04:46.100 --> 00:04:49.090
+Necesitamos añadir el paso del pre-procesador.
+
+99
+00:04:49.090 --> 00:04:50.600
+Entonces, la forma de hacer eso
+
+100
+00:04:50.600 --> 00:04:53.350
+es al hacer click en esta pequeña caja aquí,
+
+101
+00:04:53.350 --> 00:04:56.710
+y luego donde dice pre-procesador CSS,
+
+102
+00:04:56.710 --> 00:05:00.290
+en vez de decir ninguno, ven y elige el que quieras.
+
+103
+00:05:00.290 --> 00:05:03.120
+Ahora ¿Recuerdas cuando hablé de la diferencia
+
+104
+00:05:03.120 --> 00:05:05.800
+entre Sass y SCSS?
+
+105
+00:05:05.800 --> 00:05:07.990
+Pues puedes ver, que si quieres correr
+
+106
+00:05:07.990 --> 00:05:10.490
+uno sobre el otro, puedes hacerlo aquí.
+
+107
+00:05:10.490 --> 00:05:13.540
+Tono en nuestro curso será con SCSS.
+
+108
+00:05:13.540 --> 00:05:17.100
+Así que selecciona ese ítem, y puedes elegir de algunos
+
+109
+00:05:17.100 --> 00:05:19.270
+otros tipos de elemento.
+
+110
+00:05:19.270 --> 00:05:21.190
+Yo personalmente no lo haré,
+
+111
+00:05:21.190 --> 00:05:23.340
+simplemente pulsaré guardar y cerrar.
+
+112
+00:05:23.340 --> 00:05:26.380
+Y ahora, como puedes ver tenemos un par de cambios.
+
+113
+00:05:26.380 --> 00:05:28.710
+Primero, tenemos realce de sintaxis.
+
+114
+00:05:28.710 --> 00:05:31.030
+Entendió que esto era una variable.
+
+115
+00:05:31.030 --> 00:05:33.630
+Y luego, también, si bajas aquí,
+
+116
+00:05:33.630 --> 00:05:36.580
+puedes ver que nuestro membrete ahora es rojo,
+
+117
+00:05:36.580 --> 00:05:41.340
+exactamente como lo queríamos, y además, donde dice CSS,
+
+118
+00:05:41.340 --> 00:05:44.410
+nos da una pequeña nota para decir
+
+119
+00:05:44.410 --> 00:05:47.200
+que esto es realmente un archivo Sass.
+
+120
+00:05:47.200 --> 00:05:49.470
+Entonces, eso es todo lo que tienes que hacer
+
+121
+00:05:49.470 --> 00:05:53.800
+para configurar tu sistema en CodePen
+
+122
+00:05:53.800 --> 00:05:56.393
+para correr y procesar archivos sass.
+
