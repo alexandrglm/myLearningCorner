@@ -4,8 +4,6 @@
 
 --- 
 
-
-
 ---
 
 ## Video Lesson Speech

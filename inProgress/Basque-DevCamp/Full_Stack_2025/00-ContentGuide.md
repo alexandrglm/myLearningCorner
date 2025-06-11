@@ -53,7 +53,7 @@
 | [X] | 40  | Project 1 CSS-GRID    | Adding Initial HTML to the Results Page                                           | 2025/01/29 |
 | [X] | 41  | Project 1 CSS-GRID    | How to Create an Abstract Container Class that can be Shared Across Pages         | 2025/01/29 |
 | [X] | 42  | Project 1 CSS-GRID    | Initial Styles for the Result Links                                               | 2025/01/29 |
-| [X] | 43  | CSS grid Checkpoint 1 | Course Checkpoint 1                                                               | 2025/01/29 |
+| [X] | 43  | CSS grid Checkpoint 1 | **Course Checkpoint 1**                                                           | 2025/01/29 |
 | [X] | 44  | Project 1 CSS-GRID    | Integrating a Nested SCSS Grids Container for Search Result Reference Links       | 2025/01/29 |
 | [X] | 45  | Project 1 CSS-GRID    | Implementing Shared Styles for Custom Input Elements to Decrease Code Duplication | 2025/01/29 |
 | [X] | 46  | Project 1 CSS-GRID    | Final Project Changes for Daily Smarty Search Engine Front End Implementation     | 2025/01/29 |
@@ -107,7 +107,7 @@
 | [X] | 79  | UX/UI                | Guide to Whitespace                                      | 2025/02/03 |
 | [X] | 80  | UX/UI                | Designing for Mobile and Desktop Environments            | 2025/02/03 |
 | [X] | 81  | UX/UI                | How to Create an Effective UI Style Guide                | 2025/02/03 |
-| [X] | 82  |                      | Course Checkpoint 2                                      | 2025/02/03 |
+| [X] | 82  |                      | **Course Checkpoint 2**                                  | 2025/02/03 |
 
 *** 
 
@@ -128,25 +128,25 @@
 
 ### Python 01: BASICS
 
-|     | #   | Type                                        | Tittle                                                         | Date       |
-| --- | --- | ------------------------------------------- | -------------------------------------------------------------- | ---------- |
-| [X] | 05  | Python: Online IDE                          | How to Use Repl.it for Running Python in the Browser           | 2025/02/04 |
-| [X] | 06  | Python IDE setup                            | How to Install Python 3 on a Mac                               | 2025/02/04 |
-| [X] | 07  | Python IDE setup                            | How to Install Python 3 on a PC                                | 2025/02/04 |
-| [X] | 08  | Python: Online IDE                          | Basic Usage Tips and Tricks for the Python Repl                | 2025/02/04 |
-| [X] | 09  | Python Philosophy                           | Introduction to the Zen of Python (PEP 20)                     | 2025/02/04 |
-| [X] | 10  | Python Versions                             | Differences Between Python Versions 2 vs 3                     | 2025/02/04 |
-| [X] | 11  | Literacy: Indentation consensus             | Overview of Indentation in Python Programs                     | 2025/02/04 |
-| [X] | 12  | Literacy: Documenting code, or not.         | The Case Against Code Comments                                 | 2025/02/04 |
-| [X] | 13  | Python Example: Incremental Matrix Function | Manually Build an Incrementing Matrix Function in Python       | 2025/02/06 |
-| [X] | 14  | Python Module intro                         | Section Introduction                                           | 2025/02/06 |
-| [X] | 15  | Python: Variables intro                     | Introduction to Variables in Python                            | 2025/02/06 |
-| [X] | 16  | Python: Type Case & Naming styles, PEP8     | Python Best Practices for Variable Naming and Style            | 2025/02/06 |
-| [X] | 17  | Python: Primitive Data Types (1)            | Overview of Python Data Types                                  | 2025/02/06 |
-| [X] | 18  | Python: Refactoring var. values             | How to Change Python Variable Values                           | 2025/02/06 |
-| [X] | 19  | Python: Comments types                      | Guide to Single Line, Inline and Multi Line Comments in Python | 2025/02/06 |
-| [X] | 20  | Literacy: Services architectures.           | Monolithic vs Microservice Application Architectures           | 2025/02/06 |
-| [X] | 21  | Literacy: Framework/App designing process.  | Requirement Elicitation – A Guide for Feature Development      | 2025/02/06 |
+|     | #      | Type                                        | Tittle                                                         | Date       |
+| --- | ------ | ------------------------------------------- | -------------------------------------------------------------- | ---------- |
+| [X] | 02-005 | Python: Online IDE                          | How to Use Repl.it for Running Python in the Browser           | 2025/02/04 |
+| [X] | 02-006 | Python IDE setup                            | How to Install Python 3 on a Mac                               | 2025/02/04 |
+| [X] | 02-007 | Python IDE setup                            | How to Install Python 3 on a PC                                | 2025/02/04 |
+| [X] | 02-008 | Python: Online IDE                          | Basic Usage Tips and Tricks for the Python Repl                | 2025/02/04 |
+| [X] | 02-009 | Python Philosophy                           | Introduction to the Zen of Python (PEP 20)                     | 2025/02/04 |
+| [X] | 02-010 | Python Versions                             | Differences Between Python Versions 2 vs 3                     | 2025/02/04 |
+| [X] | 02-011 | Literacy: Indentation consensus             | Overview of Indentation in Python Programs                     | 2025/02/04 |
+| [X] | 02-012 | Literacy: Documenting code, or not.         | The Case Against Code Comments                                 | 2025/02/04 |
+| [X] | 02-013 | Python Example: Incremental Matrix Function | Manually Build an Incrementing Matrix Function in Python       | 2025/02/06 |
+| [X] | 02-014 | Python Module intro                         | Section Introduction                                           | 2025/02/06 |
+| [X] | 02-015 | Python: Variables intro                     | Introduction to Variables in Python                            | 2025/02/06 |
+| [X] | 02-016 | Python: Type Case & Naming styles, PEP8     | Python Best Practices for Variable Naming and Style            | 2025/02/06 |
+| [X] | 02-017 | Python: Primitive Data Types (1)            | Overview of Python Data Types                                  | 2025/02/06 |
+| [X] | 18     | Python: Refactoring var. values             | How to Change Python Variable Values                           | 2025/02/06 |
+| [X] | 19     | Python: Comments types                      | Guide to Single Line, Inline and Multi Line Comments in Python | 2025/02/06 |
+| [X] | 20     | Literacy: Services architectures.           | Monolithic vs Microservice Application Architectures           | 2025/02/06 |
+| [X] | 21     | Literacy: Framework/App designing process.  | Requirement Elicitation – A Guide for Feature Development      | 2025/02/06 |
 
 ### Python 02- STRINGS
 
@@ -168,7 +168,7 @@
 | [X] | 35  | Python: `.partition()`                                                                                               | Guide to Python's Partition Function                                            | 2025/02/10 |
 | [X] | 36  | Python: `.split()`                                                                                                   | Guide to the Python split Function                                              | 2025/02/10 |
 | [X] | 37  | Python: `.isalpha()` / `.isnumeric()`                                                                                | How to Check if Strings Represent Numbers or Alphanumeric Characters in Python  | 2025/02/10 |
-| [X] | 38  |                                                                                                                      | Course Checkpoint 3                                                             | 2025/02/11 |
+| [X] | 38  |                                                                                                                      | **Course Checkpoint 3**                                                         | 2025/02/11 |
 
 ### Python 03 - NUMBERS
 
@@ -218,7 +218,7 @@
 | [X] | 72  | Python - Tuples: `the_tuple[index of Tuple][index of List]`                                                                                                      | Working with Lists Nested in Tuples                                                        | 2025/02/18 |
 | [X] | 73  | Python - Tuples: `the_tuple[ start : stop : step]`                                                                                                               | Guide to Slices in Python Tuples                                                           | 2025/02/18 |
 | [X] | 74  | Python - Tuples: `the_tuple[index]` - `the_tuple[start : stop]` - `list(the_tuple) + the_tuple.remove('the_item') + the_tuple = tuple(the_tuple)`                | Three Ways to Remove Elements from a Python Tuple                                          | 2025/02/18 |
-| [X] | 75  |                                                                                                                                                                  | Course Checkpoint 4                                                                        | 2025/02/19 |
+| [X] | 75  |                                                                                                                                                                  | **Course Checkpoint 4**                                                                    | 2025/02/19 |
 
 ---
 
@@ -286,7 +286,7 @@
 | [X] | 115 | Python: `request`module, API `.get()`                                                       | Overview of the Requests Package in Python to Communicate with APIs | 2025/03/02 |
 | [X] | 116 | Python: Exercise, `request`, `bs4`, `inflection`. Getting HTML content and manipulating it. | Python Package Section Project Requirement                          | 2025/03/02 |
 | [X] | 117 | Python: WebCrapper exercise solution.                                                       | Project Solution: Build a Web Scraper in Python                     | 2025/03/02 |
-| [X] | 118 |                                                                                             | Course Checkpoint 5                                                 | 2025/03/06 |
+| [X] | 118 |                                                                                             | **Course Checkpoint 5**                                             | 2025/03/06 |
 
 ### Python 07:  Class'es
 
@@ -560,7 +560,7 @@
 | [X] | 05-003 |                                                   | Review of the Git Workflow                                | 2025/04/18 |
 | [X] | 05-004 | `./.git/`                                         | Examining the Dot Git Directory                           | 2025/04/18 |
 | [X] | 05-005 | `.gitignore`                                      | How to Hide Files and Directories from Git with gitignore | 2025/04/18 |
-| [ ] | 05-006 |                                                   | Course Checkpoint 10                                      | pending    |
+| [ ] | 05-006 |                                                   | **Course Checkpoint 10**                                  | pending    |
 
 ***
 
@@ -623,23 +623,26 @@
 | [X] | 06-119 | Exercise - `.innerHTML`,  `.enabled / .disabled` elements - `this` context outside a Class.                                                 | How to Build a Character Countdown Function in JavaScript           | 2025-05-19 |
 | [X] | 06-120 | DRY - Reusable functions                                                                                                                    | Guide to Building Shared Behavior with JavaScript Functions         | 2025-05-19 |
 | [X] | 06-121 | `const hotKeys = (e) => {<br/>    const event = window.event ? window.event : e;<br/><br/>  if (event.keyCode === 66 && event.ctrlKey) { }` | How to Add Hot Keys to a Web Application in Vanilla JavaScript      | 2025-05-19 |
-| [X] | 06-122 |                                                                                                                                             | How to Dynamically Create HTML Elements with JavaScript             | 2025-05-19 |
+| [X] | 06-122 | `x.createElement(y)`, `x.appendChild(y)`                                                                                                    | How to Dynamically Create HTML Elements with JavaScript             | 2025-05-19 |
 | [X] | 06-123 |                                                                                                                                             | Course Checkpoint 11                                                | 2025-06-03 |
-| [X] | 06-124 |                                                                                                                                             | Guide to Removing HTML Elements with JavaScript                     | pending    |
-| [ ] | 06-125 |                                                                                                                                             | Project Requirements: Create and Remove Bullet Points Between Lists | pending    |
-| [ ] | 06-126 |                                                                                                                                             | Project Solution: Create and Remove Bullet Points Between Lists     | pending    |
+| [X] | 06-124 | `x.forEach ( element => element.remove() )`                                                                                                 | Guide to Removing HTML Elements with JavaScript                     | 2025-06-11 |
+| [ ] | 06-125 | `Object -> forEach -> element -> perform the action -> once`                                                                                | Project Requirements: Create and Remove Bullet Points Between Lists | 2025-06-11 |
+| [ ] | 06-126 |                                                                                                                                             | Project Solution: Create and Remove Bullet Points Between Lists     | 2025-06-11 |
 
 ### JavaScript 18:     Developer Tools and Console Utilities
 
-|     | #      | Type | Tittle                                                                                    | Date       |
-| --- | ------ | ---- | ----------------------------------------------------------------------------------------- | ---------- |
-| [X] | 06-127 |      | Overview of the Dev Tool's Network Tab                                                    | 2025-06-05 |
-| [X] | 06-128 |      | Various Console Methods in JavaScript                                                     | 2025-06-05 |
-| [X] | 06-129 |      | How to Use the JavaScript Console's Copy Function to Scrape a Website                     | 2025-06-05 |
-| [X] | 06-130 |      | Create an Array Popper that Alternates Returning from Each Side of an Array in JavaScript | 2025-06-05 |
-| [X] | 06-131 |      | There is No Foo Bar                                                                       | 2025-06-05 |
-| [X] | 06-132 |      | Guide to RESTful Routing                                                                  | 2025-06-05 |
-| [X] | 06-133 |      | Create a Capitalize Function in JavaScript                                                | 2025-06-05 |
+|     | #      | Type | Tittle                                                                | Date       |
+| --- | ------ | ---- | --------------------------------------------------------------------- | ---------- |
+| [X] | 06-127 |      | Overview of the Dev Tool's Network Tab                                | 2025-06-05 |
+| [X] | 06-128 |      | Various Console Methods in JavaScript                                 | 2025-06-05 |
+| [X] | 06-129 |      | How to Use the JavaScript Console's Copy Function to Scrape a Website | 2025-06-05 |
+
+|     | #      | Type     | Tittle                                                                                    | Date       |
+| --- | ------ | -------- | ----------------------------------------------------------------------------------------- | ---------- |
+| [X] | 06-130 | Exercise | Create an Array Popper that Alternates Returning from Each Side of an Array in JavaScript | 2025-06-05 |
+| [X] | 06-131 | Literacy | There is No Foo Bar                                                                       | 2025-06-05 |
+| [X] | 06-132 | Literacy | Guide to RESTful Routing                                                                  | 2025-06-05 |
+| [X] | 06-133 | Exercise | Create a Capitalize Function in JavaScript                                                | 2025-06-05 |
 
 # MODULE 6 PART 3
 
@@ -660,31 +663,31 @@
 
 ### UML Diagrams
 
-|     | #      | Type | Tittle                                                         | Date |
-| --- | ------ | ---- | -------------------------------------------------------------- | ---- |
-| [ ] | 06-158 |      | Introduction to UML                                            |      |
-| [ ] | 06-159 |      | Section Introduction                                           |      |
-| [ ] | 06-160 |      | Overview of Structural Diagrams in UML                         |      |
-| [ ] | 06-161 |      | Overview of Behavioral Diagrams in UML                         |      |
-| [ ] | 06-162 |      | UML Diagrams                                                   |      |
-| [ ] | 06-163 |      | Overview of Class Diagram Elements                             |      |
-| [ ] | 06-164 |      | UML Class Diagram Associations, Multiplicity, and Navigability |      |
-| [ ] | 06-165 |      | Deep Dive: Build Twitter Using Class Diagrams                  |      |
-| [ ] | 06-166 |      | Class Diagrams                                                 |      |
-| [ ] | 06-167 |      | Elements of a UML Activity Diagram                             |      |
-| [ ] | 06-168 |      | How to Design an Activity Diagram for an Online Grading System |      |
-| [ ] | 06-169 |      | Activity Diagrams                                              |      |
-| [ ] | 06-170 |      | Course Checkpoint 12                                           |      |
-| [ ] | 06-171 |      | Introduction to UML Diagrams                                   |      |
-| [ ] | 06-172 |      | Use Case Diagrams Explained                                    |      |
-| [ ] | 06-173 |      | Activity Diagrams: Syntax and Semantics                        |      |
-| [ ] | 06-174 |      | Sequence Diagrams and Messaging Between Objects                |      |
-| [ ] | 06-175 |      | Class Diagrams: Associations and Multiplicity                  |      |
-| [ ] | 06-176 |      | Advanced Class Diagram Features                                |      |
-| [ ] | 06-177 |      | State Machine Diagrams: Modeling State Changes                 |      |
-| [ ] | 06-178 |      | Component and Deployment Diagrams                              |      |
-| [ ] | 06-179 |      | Practical Modeling Exercises with UML                          |      |
-| [ ] | 06-180 |      | Course Checkpoint: UML                                         |      |
+|     | #      | Type | Tittle                                                         | Date       |
+| --- | ------ | ---- | -------------------------------------------------------------- | ---------- |
+| [X] | 06-158 | Quiz | Introduction to UML                                            | 2025-06-09 |
+| [X] | 06-159 |      | Section Introduction                                           | 2025-06-09 |
+| [X] | 06-160 |      | Overview of Structural Diagrams in UML                         | 2025-06-09 |
+| [X] | 06-161 |      | Overview of Behavioral Diagrams in UML                         | 2025-06-09 |
+| [X] | 06-162 | Quiz | UML Diagrams Q                                                 | pending    |
+| [X] | 06-163 |      | Overview of Class Diagram Elements                             | 2025-06-10 |
+| [X] | 06-164 |      | UML Class Diagram Associations, Multiplicity, and Navigability | 2025-06-10 |
+| [X] | 06-165 |      | Deep Dive: Build Twitter Using Class Diagrams                  | 2025-06-10 |
+| [ ] | 06-166 | Quiz | Class Diagrams                                                 | pending    |
+| [X] | 06-167 |      | Elements of a UML Activity Diagram                             | 2025-06-10 |
+| [X] | 06-168 |      | How to Design an Activity Diagram for an Online Grading System |            |
+| [ ] | 06-169 | Quiz | Activity Diagrams                                              | pending    |
+| [ ] | 06-170 |      | **Course Checkpoint 12**                                       |            |
+| [ ] | 06-171 |      | Introduction to UML Diagrams                                   |            |
+| [ ] | 06-172 |      | Use Case Diagrams Explained                                    |            |
+| [ ] | 06-173 |      | Activity Diagrams: Syntax and Semantics                        |            |
+| [ ] | 06-174 |      | Sequence Diagrams and Messaging Between Objects                |            |
+| [ ] | 06-175 |      | Class Diagrams: Associations and Multiplicity                  |            |
+| [ ] | 06-176 |      | Advanced Class Diagram Features                                |            |
+| [ ] | 06-177 |      | State Machine Diagrams: Modeling State Changes                 |            |
+| [ ] | 06-178 |      | Component and Deployment Diagrams                              |            |
+| [ ] | 06-179 |      | Practical Modeling Exercises with UML                          |            |
+| [ ] | 06-180 |      | Course Checkpoint: UML                                         |            |
 
 ---
 
