@@ -1,17 +1,21 @@
-<diagram program="umletino" version="15.1"><zoom_level>15</zoom_level><element><id>UMLClass</id><coordinates><x>45</x><y>60</y><w>510</w><h>180</h></coordinates><panel_attributes>Users
+<diagram program="umletino" version="15.1"><zoom_level>12</zoom_level><element><id>UMLClass</id><coordinates><x>204</x><y>60</y><w>408</w><h>144</h></coordinates><panel_attributes>Usuario
 --
-- username:	String
-- password:	String
-- realname:	Fullname
++ username:		String
+- password:		String
+l
 --
-+ Fullname(String, String, String)
-+ userInfo(String,String, String) : String
-+ sendLogin(String, String) : String (void)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>390</x><y>285</y><w>315</w><h>210</h></coordinates><panel_attributes>Fullname
++ Usuario(String, String, String)
++ userInfo(username, nombreReal): String
++ sendLogin(username, password) : String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>228</x><y>348</y><w>384</w><h>132</h></coordinates><panel_attributes>NombreReal
 --
-- firstName: 	String
-- surname:	String
-+ userName:	String
+- nombre: 	String
+- apellidos: 	String
++ username: 	String
 --
-+ Users(String, String, String):	String
-+ showRecord(String, String, String):	String
-</panel_attributes><additional_attributes></additional_attributes></element></diagram>
++ NombreReal(String, String, String)
++ userRecord(username, nombreReal):	String
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>384</x><y>192</y><w>120</w><h>180</h></coordinates><panel_attributes>lt=&lt;-
+- nombreReal
+m1=1</panel_attributes><additional_attributes>10;130;10;10</additional_attributes></element></diagram>
