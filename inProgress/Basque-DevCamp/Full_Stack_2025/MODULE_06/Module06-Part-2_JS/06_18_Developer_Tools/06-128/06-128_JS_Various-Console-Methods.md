@@ -48,11 +48,9 @@ For structured data (arrays of objects), use `console.table()` for better readab
 
 ```js
 const players = [
- 
+
     { name: "Correa", position: "SS" },    
     { name: "Bregman", position: "3B" }
-
-
 ```
 
 ![Table Output](./06-128_IMG4.png)  
@@ -120,8 +118,6 @@ console.warn("This method will be deprecated in v2.0");
 
 - [Console overview &nbsp;|&nbsp; Chrome DevTools &nbsp;|&nbsp; Chrome for Developers](https://developer.chrome.com/docs/devtools/console/)
 
-
-
 ---
 
 ## Video Lesson Speech
@@ -188,5 +184,3 @@ So I hope that this was a helpful overview of some of the additional ways that y
 ## Resources
 
 - [Full list of JavaScript console methods](https://developer.mozilla.org/en-US/docs/Web/API/Console)
-
-
