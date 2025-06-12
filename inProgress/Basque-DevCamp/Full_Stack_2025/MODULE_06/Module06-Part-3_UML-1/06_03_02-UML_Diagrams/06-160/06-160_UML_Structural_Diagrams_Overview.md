@@ -27,13 +27,15 @@
 
 ## 1.    Introduction to Structural Diagrams
 
-Structural UML diagrams represent the static aspects of a system, focusing on the things that must be present in the system being modeled. 
+Structural UML diagrams represent the static aspects of a system, focusing on **the things that must be present in the system being modeled**. 
 
-Unlike behavioral diagrams that show what happens when the system runs, structural diagrams show what exists in the system.
+Unlike behavioral diagrams that show what happens when the system runs, structural diagrams show **what exists in the system**.
 
  The three primary structural diagrams covered in this overview are **Class Diagrams**, **Deployment Diagrams**, and **Package Diagrams**.
 
-These diagrams serve as the foundation for system architecture documentation and are essential for communicating design decisions to development teams, stakeholders, and maintenance personnel. Each diagram type addresses different aspects of system structure, from object-oriented design to physical deployment architecture.
+These diagrams serve as **the foundation for system architecture documentation** and are essential for communicating design decisions to development teams, stakeholders, and maintenance personnel.   
+
+Each diagram type addresses different aspects of system structure, from object-oriented design to physical deployment architecture.
 
 ---
 
