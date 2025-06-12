@@ -663,31 +663,31 @@
 
 ### UML Diagrams
 
-|     | #      | Type                     | Tittle                                                         | Date       |
-| --- | ------ | ------------------------ | -------------------------------------------------------------- | ---------- |
-| [X] | 06-158 | Quiz                     | Introduction to UML                                            | 2025-06-09 |
-| [X] | 06-159 |                          | Section Introduction                                           | 2025-06-09 |
-| [X] | 06-160 | `Class` - `Deployment` - `Package`| Overview of Structural Diagrams in UML                         | 2025-06-09 |
-| [X] | 06-161 | `Activity` - `UseCase` - `State` - `Sequence` | Overview of Behavioral Diagrams in UML                         | 2025-06-09 |
-| [X] | 06-162 | Quiz                     | UML Diagrams                                                   | pending    |
-| [X] | 06-163 |                          | Overview of Class Diagram Elements                             | 2025-06-10 |
-| [X] | 06-164 |                          | UML Class Diagram Associations, Multiplicity, and Navigability | 2025-06-10 |
-| [X] | 06-165 |                          | Deep Dive: Build Twitter Using Class Diagrams                  | 2025-06-10 |
-| [ ] | 06-166 | Quiz                     | Class Diagrams                                                 | pending    |
-| [X] | 06-167 |                          | Elements of a UML Activity Diagram                             | 2025-06-10 |
-| [X] | 06-168 |                          | How to Design an Activity Diagram for an Online Grading System |            |
-| [ ] | 06-169 | Quiz                     | Activity Diagrams                                              | pending    |
-| [ ] | 06-170 |                          | **Course Checkpoint 12**                                       |            |
-| [ ] | 06-171 |                          | Introduction to UML Diagrams                                   |            |
-| [ ] | 06-172 |                          | Use Case Diagrams Explained                                    |            |
-| [ ] | 06-173 |                          | Activity Diagrams: Syntax and Semantics                        |            |
-| [ ] | 06-174 |                          | Sequence Diagrams and Messaging Between Objects                |            |
-| [ ] | 06-175 |                          | Class Diagrams: Associations and Multiplicity                  |            |
-| [ ] | 06-176 |                          | Advanced Class Diagram Features                                |            |
-| [ ] | 06-177 |                          | State Machine Diagrams: Modeling State Changes                 |            |
-| [ ] | 06-178 |                          | Component and Deployment Diagrams                              |            |
-| [ ] | 06-179 |                          | Practical Modeling Exercises with UML                          |            |
-| [ ] | 06-180 |                          | Course Checkpoint: UML                                         |            |
+|     | #      | Type                                                                                                | Tittle                                                                                | Date       |
+| --- | ------ | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | ---------- |
+| [X] | 06-158 | Quiz                                                                                                | Introduction to UML                                                                   | 2025-06-09 |
+| [X] | 06-159 |                                                                                                     | Section Introduction                                                                  | 2025-06-09 |
+| [X] | 06-160 | `Class` - `Deployment` - `Package`                                                                  | Overview of Structural Diagrams in UML                                                | 2025-06-09 |
+| [X] | 06-161 | `Activity` - `UseCase` - `State` - `Sequence`                                                       | Overview of Behavioral Diagrams in UML                                                | 2025-06-09 |
+| [X] | 06-162 | Quiz                                                                                                | UML Diagrams                                                                          | 2025-06-10 |
+| [X] | 06-163 | `1.Class Name - 2. Attributes - 3. Operations/Methods`                                              | Overview of Class Diagram Elements                                                    | 2025-06-12 |
+| [X] | 06-164 | `Associations -> Binary, Compounded, Reflexive` - `1. MULTIPLICITY` - `2. NAVIGABILITY` - `3. ROLE` | UML Class Diagram Associations, Multiplicity, and Navigability (and Role)             | 2025-06-12 |
+| [X] | 06-165 | UML Class Diagram Example - `Customizating UML to improve clarity - Being Flexible`                 | Deep Dive: Build Twitter Using Class Diagrams **(UML Customization for the Clarity)** | 2025-06-12 |
+| [X] | 06-166 | Quiz                                                                                                | Class Diagrams                                                                        | 2025-06-12 |
+| [X] | 06-167 |                                                                                                     | Elements of a UML Activity Diagram                                                    | 2025-06-10 |
+| [X] | 06-168 |                                                                                                     | How to Design an Activity Diagram for an Online Grading System                        |            |
+| [ ] | 06-169 | Quiz                                                                                                | Activity Diagrams                                                                     | pending    |
+| [ ] | 06-170 |                                                                                                     | **Course Checkpoint 12**                                                              |            |
+| [ ] | 06-171 |                                                                                                     | Introduction to UML Diagrams                                                          |            |
+| [ ] | 06-172 |                                                                                                     | Use Case Diagrams Explained                                                           |            |
+| [ ] | 06-173 |                                                                                                     | Activity Diagrams: Syntax and Semantics                                               |            |
+| [ ] | 06-174 |                                                                                                     | Sequence Diagrams and Messaging Between Objects                                       |            |
+| [ ] | 06-175 |                                                                                                     | Class Diagrams: Associations and Multiplicity                                         |            |
+| [ ] | 06-176 |                                                                                                     | Advanced Class Diagram Features                                                       |            |
+| [ ] | 06-177 |                                                                                                     | State Machine Diagrams: Modeling State Changes                                        |            |
+| [ ] | 06-178 |                                                                                                     | Component and Deployment Diagrams                                                     |            |
+| [ ] | 06-179 |                                                                                                     | Practical Modeling Exercises with UML                                                 |            |
+| [ ] | 06-180 |                                                                                                     | Course Checkpoint: UML                                                                |            |
 
 ---
 

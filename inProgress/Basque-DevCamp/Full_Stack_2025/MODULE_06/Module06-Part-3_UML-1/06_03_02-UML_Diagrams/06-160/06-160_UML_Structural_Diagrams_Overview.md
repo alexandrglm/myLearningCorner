@@ -43,7 +43,7 @@ Each diagram type addresses different aspects of system structure, from object-o
 
 ### Purpose and Applications
 
-Class diagrams are the most popular and commonly used UML diagrams in software development. They serve as the cornerstone of object-oriented analysis and design, providing a visual representation of classes, their attributes, methods, and relationships within a system.
+Class diagrams are **the most popular** and commonly used UML diagrams in software development. They serve as the cornerstone of object-oriented analysis and design, providing **a visual representation of classes, their attributes, methods, and relationships** within a system.
 
 Class diagrams are particularly valuable for:
 
@@ -58,7 +58,7 @@ Every class in a UML class diagram consists of three essential sections:
 
 1. **Class Name**: The top compartment containing the class identifier
 2. **Attributes**: The middle section listing properties and their data types
-3. **Operations**: The bottom section showing methods and functions
+3. **Operations/Methods**: The bottom section showing methods and functions
 
 #### Attribute Syntax
 
