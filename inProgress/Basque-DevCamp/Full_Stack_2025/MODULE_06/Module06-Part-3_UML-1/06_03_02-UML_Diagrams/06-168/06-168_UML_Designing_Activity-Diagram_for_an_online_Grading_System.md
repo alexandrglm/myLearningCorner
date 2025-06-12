@@ -39,16 +39,30 @@ Next, I look at the system, I see that the system's going to
 
 Lastly, I look at the student, which will confirm and answer. The system will be redirected if the student has not answered the last question, otherwise, it will allow them to finish. 
 
-Let's start at the very beginning
+Let's start at the very beginning:
+
+![IMG](./06-168_IMG02.png)
 
 - We see that a teacher assigns a test in the quiz.
-- From there, it's going to get redirected to the system (if you like sports analogies you can think of action flows kind of like you're playing basketball, with each action flow you're passing the basketball to another player) 
+- From there, it's going to get redirected to the system (if you like sports analogies you can think of action flows kind of like you're playing basketball, with each action flow you're passing the basketball to another player):
+
+![IMG](./06-168_IMG03.png)
+
 - The system passes to the student. 
 - The student has the ability to confirm (that would be like a student logging into the system and confirming that they want to start a quiz)
 - From that point, the system is going to take over again and ask a question
 - That question gets passed to the student. 
 - The student answers
-- That goes down to a branch (remember the branches are where we can branch and have two different kinds of behavior, If the guards switch "yes" and "no" are there, then we check with the branches where it says "was at last?" If it was not the last question, it is going to be redirected to the system. It's going to ask another question and loop like that until that branch answer changes. Once we get to the point where it was the last question, it's going to switch to "yes" and it's going to follow the other action flow
+- That goes down to a branch (remember the branches are where we can branch and have two different kinds of behavior)
+
+![IMG](./06-168_IMG04.png)
+
+So, if the guards switch "yes" and "no" are there, then we check with the branches where it says "was at last?" If it was not the last question, it is going to be redirected to the system. It's going to ask another question and loop like that until that branch answer changes.   
+
+Once we get to the point where it was the last question, it's going to switch to "yes" and it's going to follow the other action flow:  
+
+![IMG](./06-168_IMG05.png)
+
 - it's going to assume the results 
 - It's going to get redirected to the teacher
 - Teacher will approve it
