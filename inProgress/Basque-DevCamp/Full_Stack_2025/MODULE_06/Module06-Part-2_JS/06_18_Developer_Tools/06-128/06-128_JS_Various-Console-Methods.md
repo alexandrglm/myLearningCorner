@@ -44,6 +44,8 @@ console.log("User:", user, "Logged at:", new Date());
 
 ## 3.    Displaying Data as Tables
 
+### `console.table()`
+
 For structured data (arrays of objects), use `console.table()` for better readability:
 
 ```js
@@ -51,6 +53,7 @@ const players = [
 
     { name: "Correa", position: "SS" },    
     { name: "Bregman", position: "3B" }
+]
 ```
 
 ![Table Output](./06-128_IMG4.png)  
@@ -82,7 +85,7 @@ console.warn("This method will be deprecated in v2.0");
 
 ---
 
-## Additional Console Utilities
+## 5. Additional Console Utilities
 
 ### Other Useful Methods
 
