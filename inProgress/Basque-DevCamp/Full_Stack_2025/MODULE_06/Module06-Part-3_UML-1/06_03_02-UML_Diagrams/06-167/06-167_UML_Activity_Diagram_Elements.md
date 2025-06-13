@@ -26,7 +26,7 @@
 
 ## 1.     Introduction to Activity Diagrams
 
-UML Activity Diagra**ms are behavioral diagrams that illustrate the flow of activities within a system or process**.   
+UML Activity Diagrams are **behavioural diagrams that illustrate the flow of activities within a system or process**.   
 
 They provide a **visual representation of workflows**, business processes, and algorithmic logic, making them essential tools for system analysis and design.
 
@@ -46,8 +46,7 @@ Activity diagrams consist of **SEVEN** fundamental elements that work together t
 1. **Initial State** 
    The starting point of any activity flow
 
-2. **Activity/Action State**
-   
+2. **Activity/Action State**  
    Individual actions/processes within the workflow.
 
 3. **Action Flow** 
@@ -63,7 +62,7 @@ Activity diagrams consist of **SEVEN** fundamental elements that work together t
    The termination point of the activity flow
 
 7. **Swim Lanes**
-   Organizational boundaries that group activities by responsibility
+   Organisational boundaries that group activities by responsibility
 
 ---
 
