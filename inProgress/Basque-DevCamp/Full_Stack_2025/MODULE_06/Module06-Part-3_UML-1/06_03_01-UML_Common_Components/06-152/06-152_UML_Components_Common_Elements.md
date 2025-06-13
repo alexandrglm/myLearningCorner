@@ -19,14 +19,14 @@ Now these are not the diagrams themselves, these are just some common elements t
 
 The six common elements are we’re going to walk through are:
 
-* Frames
+* **Frames**
 
-* Classifiers 
+* **Classifiers** 
 
-* Stereotypes 
+* **Stereotypes** 
 
-* Comments 
+* **Comments** 
 
-* Dependencies
+* **Dependencies**
 
-* Features (which are also called Properties)
+* **Features (which are also called Properties)**

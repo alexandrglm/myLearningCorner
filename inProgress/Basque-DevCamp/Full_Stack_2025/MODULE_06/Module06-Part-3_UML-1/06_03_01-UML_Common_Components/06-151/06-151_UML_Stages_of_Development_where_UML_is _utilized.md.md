@@ -15,19 +15,16 @@
    1. Pre-Developing 
       
       A.    Activity Diagrams
-      
       B.    Deployment Diagrams
    
    2. Active Developing
       
-      C.    Class DIagrams
-      
+      C.    Class Diagrams
       D.    Use Case Diagrams
    
-   3. Post-Development / Mainteinance    
+   3. Post-Development / Maintenance    
       
       E.     Sequence Diagrams
-      
       F.     Package Diagrams
 
 4. Strategic Application
@@ -44,31 +41,34 @@ Many developers feel intimidated when faced with building new applications or ad
 
 ### 1.2.    Benefits of UML
 
-- **Visual Planning**: Model systems before writing code
+- **Visual Planning**
+  
+  - Model systems before writing code
 
-- **Risk Reduction**: Identify potential issues early
+- **Risk Reduction** 
+  
+  - Identify potential issues early
+  - Minimise costly architectural mistakes
 
-- **Communication**: Bridge technical and non-technical stakeholders
+- **Communication** 
+  
+  - Bridge technical and non-technical stakeholders
+  - Improve communication between any parts involved
 
-- **Organization**: Structure complex systems logically
+- **Organisation** 
+  
+  - Structure complex systems logically
+  - Maintain code quality through visual organisation
 
-- **Efficiency**: Reduce development time through better planning
-
-- Reduce development time through better planning
-
-- Minimize costly architectural mistakes
-
-- Improve communication with stakeholders
-
-- Maintain code quality through visual organization
-
-- Facilitate team collaboration and onboarding
+- **Efficiency**
+  
+  - Reduce development time through better planning
 
 The key is to view UML not as additional overhead, but as an investment in project success that pays dividends throughout the entire development process.
 
 ---
 
-## 2.    Development Lifecycle and UML Integration
+## 2.    Development Life-Cycle and UML Integration
 
 UML diagrams can be strategically employed throughout the entire software development lifecycle. Each phase benefits from specific diagram types that address particular challenges and requirements.
 
@@ -82,30 +82,29 @@ UML diagrams can be strategically employed throughout the entire software develo
 
 ---
 
-## Phase 1: Pre-Development Planning
-
-### Purpose
+## Phase 1:     Pre-Development Planning
 
 Before writing a single line of code, UML helps establish a clear roadmap and architecture for your application.
 
-### 
-
-### ### Diagrams Used in Pre-Development Phase
+### Diagrams Used in Pre-Development Phase
 
 ## A)    Activity Diagrams
 
 ![](./06-151_IMG1.png)
 
-**When to Use**: When you need to understand application flow and user interactions
+**Usage**   
+
+When you need to understand application flow and user interactions
 
 **Purpose**
 
 - Map out the sequential flow of activities
 - Define decision points and alternative paths
 - Break down complex processes into manageable steps
-- Visualize user journey through the application
+- Visualise user journey through the application
 
 **Example Scenario**
+
 Planning a user registration system where you need to understand the flow from initial signup through email verification to account activation.
 
 **Benefits**
@@ -118,16 +117,19 @@ Planning a user registration system where you need to understand the flow from i
 
 ![](./06-151_IMG2.png)
 
-**When to Use**: When designing system architecture and infrastructure
+**Usage**
+
+When designing system architecture and infrastructure
 
 **Purpose**
 
 - Define high-level system architecture
 - Specify technology stack and component relationships
 - Plan server configurations and deployment strategies
-- Visualize how different system components will communicate
+- Visualise how different system components will communicate
 
 **Example**
+
 Planning a web application with a JavaScript/Angular frontend, REST API backend, and database server with specific configurations.
 
 **Benefits**
@@ -139,28 +141,29 @@ Planning a web application with a JavaScript/Angular frontend, REST API backend,
 
 ---
 
-## Phase 2: Active Development
-
-### Purpose
+## Phase 2:      Active Development
 
 During development, UML helps maintain organization and ensures best practices while building the system.
 
-### ### Diagrams Used in Active Development Phase
+### Diagrams Used in Active Development Phase
 
 ## C)    Class Diagrams
 
 ![Class Diagram Example](./06-151_IMG3.png)
 
-**When to Use**: When designing database schemas and object relationships
+**Usage** 
+
+When designing database schemas and object relationships
 
 **Purpose**
 
 - Model database table relationships
-- Ensure proper database normalization
+- Ensure proper database normalisation
 - Define object properties and methods
-- Visualize inheritance and composition relationships
+- Visualise inheritance and composition relationships
 
 **Example***
+
 Designing an e-commerce database with User, Product, Order, and Payment entities and their relationships.
 
 **Benefits**
@@ -174,19 +177,22 @@ Designing an e-commerce database with User, Product, Order, and Payment entities
 
 ![Use Case Diagram Example](./06-151_IMG4.png)
 
-**When to Use**: When building authorization systems and defining user roles
+**Usage**
 
-**Purpose**:
+When building authorization systems and defining user roles
+
+**Purpose**
 
 - Define user roles and permissions
 - Organize system functionalities by user type
 - Document feature access levels
 - Plan authorization and authentication requirements
 
-**Example Scenario**:
+**Example Scenario**
+
 Defining different access levels for Admin, Manager, and Customer roles in a business application.
 
-**Benefits**:
+**Benefits**
 
 - Provides clear authorization roadmap
 - Facilitates communication with non-technical stakeholders
@@ -195,9 +201,7 @@ Defining different access levels for Admin, Manager, and Customer roles in a bus
 
 ---
 
-## Phase 3: Post-Development / Maintenance
-
-### Purpose
+## Phase 3:    Post-Development / Maintenance
 
 After the system is built, UML continues to provide value for maintenance, optimization, and team onboarding.
 
@@ -207,16 +211,19 @@ After the system is built, UML continues to provide value for maintenance, optim
 
 ![Sequence Diagrams Example](./06-151_IMG5.png)
 
-**When to Use**: When adding advanced features or refactoring existing code
+**Usage** 
+
+When adding advanced features or refactoring existing code
 
 **Purpose**
 
-- Visualize internal system message flow
-- Analyze method interactions and dependencies
-- Identify optimization opportunities
-- Debug complex system behaviors
+- Visualise internal system message flow
+- Analyse method interactions and dependencies
+- Identify optimisation opportunities
+- Debug complex system behaviours
 
-**Example***
+**Example**
+
 Understanding the message flow in a payment processing system to add new payment methods or troubleshoot transaction failures.
 
 **Benefits**
@@ -230,17 +237,19 @@ Understanding the message flow in a payment processing system to add new payment
 
 ![Package Diagrams Example](./06-151_IMG6.png)
 
-**When to Use**: When organizing code architecture or planning modularization
+**Usage** 
+
+When organizing code architecture or planning modularization
 
 **Purpose**
 
-- Visualize code organization and dependencies
+- Visualise code organisation and dependencies
 - Identify opportunities to reduce coupling
 - Plan code library extraction
 - Document system structure for new team members
 
 **Example Scenario**
-Analyzing a monolithic application to identify components that could be extracted into microservices or separate libraries.
+Analysing a monolithic application to identify components that could be extracted into microservices or separate libraries.
 
 **Benefits**
 
@@ -259,26 +268,32 @@ While any UML diagram can technically be used at any development stage, strategi
 
 ### Decision Matrix
 
-| Development Phase  | Primary Challenge          | Recommended Diagrams       | Secondary Options |
-| ------------------ | -------------------------- | -------------------------- | ----------------- |
-| Pre-Development    | Understanding requirements | Activity, Use Case         | Sequence, Class   |
-| Pre-Development    | Architecture planning      | Deployment, Package        | Component         |
-| Active Development | Data modeling              | Class, Entity-Relationship | Package           |
-| Active Development | Feature planning           | Use Case, Activity         | Sequence          |
-| Post-Development   | Performance optimization   | Sequence, Activity         | Package           |
-| Post-Development   | Code organization          | Package, Component         | Class             |
+| Development Phase  | Primary Challenge          | **Recommended**                | *Secondary Options* |
+| ------------------ | -------------------------- | ------------------------------ | ------------------- |
+| Pre-Development    | Understanding requirements | **Activity, Use Case**         | *Sequence, Class*   |
+| Pre-Development    | Architecture planning      | **Deployment, Package**        | *Component*         |
+| Active Development | Data modeling              | **Class, Entity-Relationship** | *Package*           |
+| Active Development | Feature planning           | **Use Case, Activity**         | *Sequence*          |
+| Post-Development   | Performance optimization   | **Sequence, Activity**         | *Package*           |
+| Post-Development   | Code organization          | **Package, Component**         | *Class*             |
 
 ### Best Practices
 
 1. **Start Simple**: Begin with high-level diagrams before diving into details
+
 2. **Iterate Frequently**: Update diagrams as understanding evolves
+
 3. **Collaborate**: Use diagrams as communication tools with team members
+
 4. **Document Decisions**: Include rationale for architectural choices
+
 5. **Keep Current**: Maintain diagrams alongside code changes
 
 ---
 
 ## Practical Implementation Strategy
+
+---
 
 ### Getting Started Checklist
 
@@ -305,17 +320,21 @@ While any UML diagram can technically be used at any development stage, strategi
 ### Common Pitfalls to Avoid
 
 1. **Over-Documentation**: Don't create diagrams for the sake of completeness
-2. **Outdated Diagrams**: Keep diagrams synchronized with code changes
+
+2. **Outdated Diagrams**: Keep diagrams synchronised with code changes
+
 3. **Wrong Tool Selection**: Choose diagrams that address specific current needs
+
 4. **Isolation**: Don't create diagrams in a vacuum—collaborate with your team
 
 ---
 
-## 5.References
+## Expanded References to covering entire UML Course
 
 ### Primary Sources
 
-- **Object Management Group (OMG)**. *UML 2.5.1 Specification*.  [About the Unified Modeling Language Specification Version 2.5.1](https://www.omg.org/spec/UML/2.5.1/)
+- [UML Analysis - Universitat Oberta de Catalunya [Spanish] ](https://openaccess.uoc.edu/server/api/core/bitstreams/a21b69c6-0ee4-4d72-8186-a88df9420bed/content)
+
 - [**Booch, G., Rumbaugh, J., & Jacobson, I.** (2005). *The Unified Modeling Language User Guide* (2nd ed.). Addison-Wesley Professional.](https://patologia.com.mx/informatica/uug.pdf)
 
 ### Software Development Lifecycle Integration
@@ -360,15 +379,16 @@ While any UML diagram can technically be used at any development stage, strategi
 
 ### Tools and Software
 
-- **Enterprise Architect** - Sparx Systems: [https://sparxsystems.com/](https://sparxsystems.com/)
-- **Lucidchart** - UML Diagramming: https://www.lucidchart.com/pages/uml
-- **PlantUML** - Open Source UML Tool: [https://plantuml.com/](https://plantuml.com/)
-- **Visual Paradigm** - UML Modeling Tool: [https://www.visual-paradigm.com/](https://www.visual-paradigm.com/)
+- **UMLetino** - Free/Online Tool: [https://www.umletino.com](https://www.umletino.com/)
 
-### Online Resources
+- **PlantUML** - Open Source UML Tool: [https://plantuml.com/](https://plantuml.com/)
+  
+  ### Online Resources
 
 - **UML Tutorials Point**: [UML Tutorial](https://www.tutorialspoint.com/uml/index.htm)
+
 - **IBM Developer - UML Basics**: [IBM Developer](https://developer.ibm.com/articles/an-introduction-to-uml/)
+
 - **LucidChart - ¿Qué es UML?**: [LucidChart](https://www.lucidchart.com/pages/es/que-es-el-lenguaje-unificado-de-modelado-uml)
 
 ### Academic Papers
@@ -381,6 +401,7 @@ While any UML diagram can technically be used at any development stage, strategi
 
 - **ISO/IEC 19501:2005** - Information technology — Open Distributed Processing — Unified Modeling Language (UML)
 - **IEEE 1016-2009** - Standard for Information Technology — Systems Design — Software Design Descriptions 
+- **Object Management Group (OMG)**. *UML 2.5.1 Specification*.  [About the Unified Modeling Language Specification Version 2.5.1](https://www.omg.org/spec/UML/2.5.1/)
 
 ---
 

@@ -1,6 +1,6 @@
 # MODULE 06 - 167    UML
 
-## Activity Diagram Elements
+## Activity Diagram Elements (1/2)
 
 ---
 
@@ -223,7 +223,7 @@ In the grading system, the final state occurs when results are stored in the sys
 
 ***
 
-## 4. Practical Application Context
+## 4.     Practical Application Context
 
 The grading system example demonstrates how these elements work together in a real-world scenario:
 
@@ -236,7 +236,7 @@ The grading system example demonstrates how these elements work together in a re
 
 ---
 
-## 5. Design Considerations and Best Practices
+## 5.     Design Considerations and Best Practices
 
 ### Complexity Management
 
@@ -260,7 +260,7 @@ The grading system example demonstrates how these elements work together in a re
 
 ## References
 
-* [Análisis UML - UOC](https://openaccess.uoc.edu/server/api/core/bitstreams/a21b69c6-0ee4-4d72-8186-a88df9420bed/content)
+* [Análisis UML - UOC [ SPA]](https://openaccess.uoc.edu/server/api/core/bitstreams/a21b69c6-0ee4-4d72-8186-a88df9420bed/content)
 - [UML activity diagrams are UML behavior diagrams which show flow of control or object flow with emphasis on the sequence and conditions of the flow.](https://www.uml-diagrams.org/activity-diagrams.html) - Comprehensive reference for activity diagram notation
 - [Activity Diagram Best Practices](https://sparxsystems.com/resources/tutorials/uml/activity-diagram.html) - Professional guidelines for creating effective activity diagrams
 

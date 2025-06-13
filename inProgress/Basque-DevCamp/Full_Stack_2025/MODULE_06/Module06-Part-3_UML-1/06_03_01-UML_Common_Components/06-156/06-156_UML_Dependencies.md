@@ -80,15 +80,16 @@ The essence of dependencies lies in **coupling** - the degree to which one compo
 - **Risk assessment** for modifications
 - **Maintenance planning** and resource allocation
 
+![large](./06-156_IMG1.png)
 ### 1.2     The Role of Coupling in Software Design
 
-Coupling describes the interdependence between software modules or components. In UML dependencies:
+Coupling describes the **interdependence between software modules or components**. In UML dependencies:
 
 - **High coupling** = Strong dependency, difficult to modify independently
 - **Low coupling** = Weak dependency, easier to maintain and modify
 - **No coupling** = Independent components, maximum flexibility
 
-The goal in software design is typically to achieve **low coupling** while maintaining necessary functional relationships.
+The goal in software design is typically to achieve **low coupling** **while maintaining necessary functional relationships**.
 
 ### 1.3     Dependencies as System Architecture Indicators
 
@@ -155,6 +156,8 @@ Dependencies are represented by:
 Client -----> Supplier
        (dashed line with open arrowhead)
 ```
+
+![large](./06-156_IMG2.png)
 
 **Visual elements:**
 
@@ -573,62 +576,66 @@ A -----> B -----> C
 
 ## 10.     Tools and Techniques for Dependency Management
 
-### 10.1     Static Analysis Tools
+---
+### 10.1     *Static Analysis Tools*
 
-**Code analysis tools**
+#### **Code analysis tools**
 
 - **SonarQube** - Dependency analysis and coupling metrics
 - **NDepend** - .NET dependency analysis and visualization
 - **JDepend** - Java package dependency analysis
 - **Dependency Cruiser** - JavaScript/TypeScript dependency analysis
 
-**UML tools with dependency analysis**
+#### **UML tools with dependency analysis**
 
 - **Enterprise Architect** - Comprehensive dependency modeling
 - **Visual Paradigm** - Dependency impact analysis
 - **MagicDraw** - Advanced dependency management features
 
-### 10.2     Dependency Visualization
+---
+### 10.2     *Dependency Visualization*
 
-**Visualization techniques**
+#### **Visualisation techniques**
 
 - **Dependency graphs** - Node-and-edge representations
 - **Dependency matrices** - Tabular dependency relationships
 - **Layered diagrams** - Architectural layer dependencies
 - **Tree structures** - Hierarchical dependency views
 
-**Visualization tools**
+#### **Visualisation tools**
 
 - **Graphviz** - Graph visualization engine
 - **D3.js** - Interactive dependency visualizations
 - **Gephi** - Network analysis and visualization
 - **yEd** - Professional graph editing and analysis
 
-### 10.3     Impact Analysis Methods
+---
+### 10.3     *Impact Analysis Methods*
 
-**Analysis approaches**
+#### **Analysis approaches**
 
 - **Forward impact** - What does this component affect?
 - **Backward impact** - What affects this component?
 - **Change impact** - What changes when this is modified?
 - **Failure impact** - What fails if this component fails?
 
-**Impact analysis tools**
+#### **Impact analysis tools**
 
 - **Lattix** - Architecture and dependency analysis
 - **Structure101** - Dependency structure matrices
 - **CAST** - Application intelligence and impact analysis
 
-### 10.4     Automated Dependency Tracking
+---
+### 10.4     *Automated Dependency Tracking*
 
-**Tracking capabilities**
+#### **Tracking capabilities**
 
 - **Build-time analysis** - Dependencies identified during compilation
 - **Runtime monitoring** - Dynamic dependency discovery
 - **Version tracking** - Dependency version changes over time
 - **Usage analytics** - Frequency and patterns of dependency usage
 
-**Implementation tools**
+#### **Implementation tools**
 
 - **Maven/Gradle** - Build-time dependency management
 - **NPM/Yarn** - JavaScript dependency tracking
@@ -639,7 +646,7 @@ A -----> B -----> C
 
 ## 11.     Standards and References
 
-### 11.1 UML Standards and Specifications
+### 11.1     UML Standards and Specifications
 
 - **OMG UML 2.5.1 Specification** - Object Management Group
   - Section 7.8: Dependencies and their semantics
@@ -649,7 +656,7 @@ A -----> B -----> C
 - **ISO/IEC 19505-2:2012** - UML Superstructure specification
   - Part 2: Detailed dependency type definitions
 
-### 11.2 Software Architecture and Design Standards
+### 11.2     Software Architecture and Design Standards
 
 - **IEEE 1471-2000** - Recommended Practice for Architectural Description
   - Dependency documentation in architectural views
@@ -658,25 +665,25 @@ A -----> B -----> C
 - **ISO 25010:2011** - Systems and Software Quality Requirements and Evaluation (SQuaRE)
   - Maintainability and coupling quality characteristics
 
-### 11.3 Design Principles and Best Practices
+### 11.3     Design Principles and Best Practices
 
 - [Dependency Inversion Principle - Martin Fowler](https://martinfowler.com/articles/dipInTheWild.html)
 - [Patterns in Practice: Cohesion And Coupling | Microsoft Learn](https://learn.microsoft.com/en-us/archive/msdn-magazine/2008/october/patterns-in-practice-cohesion-and-coupling)
 
-### 11.4 UML Modeling Resources
+### 11.4     UML Modeling Resources
 
 - [UML Dependencies - UML-diagrams.org](https://www.uml-diagrams.org/dependency.html)
 - [Component Diagram - UML 2 Diagrams - UML Modeling Tool](https://www.visual-paradigm.com/VPGallery/diagrams/Component.html)
 - [UML Component Diagrams: An Agile Introduction](https://agilemodeling.com/artifacts/componentdiagram.htm)
 
-### 11.5 Software Engineering References
+### 11.5     Software Engineering References
 
 - **"Clean Architecture" by Robert C. Martin** - Dependency management principles
 - **"Software Architecture in Practice" by Bass, Clements, and Kazman** - Architectural dependency analysis
 - **"UML Distilled" by Martin Fowler** - Practical UML dependency usage
 - **"Pattern-Oriented Software Architecture" by Buschmann et al.** - Dependency patterns and solutions
 
-### 11.6 Industry Frameworks and Guidelines
+### 11.6     Industry Frameworks and Guidelines
 
 - **TOGAF** - The Open Group Architecture Framework dependency modeling
 - **Zachman Framework** - Enterprise architecture dependency perspectives

@@ -50,7 +50,9 @@
 
 ### 1.1     Definition and Purpose
 
-UML Comments (also referred to as **Notes**) are supplementary documentation elements that provide descriptive markup within UML diagrams. They serve as a bridge between formal UML notation and natural language explanation, enabling clearer communication of design intent and implementation details.
+UML Comments (also referred to as **Notes**) are **supplementary documentation elements that provide descriptive markup within UML diagrams**. 
+
+They serve as *a bridge between formal UML notation and natural language* explanation, enabling clearer communication of design intent and implementation details.
 
 Comments are **non-formalized** annotations that can contain virtually any descriptive text, making them highly flexible tools for enhancing diagram readability and comprehension.
 
@@ -189,6 +191,8 @@ The UML specification defines specific visual elements for comments:
 └─────────────────┘
 ```
 
+![large](./06-155_IMG03.png)
+
 **The folded corner (◣) is a distinctive feature that immediately identifies the element as a comment.**
 
 ### 5.2 Connection Lines
@@ -255,7 +259,7 @@ Each comment in the example above serves a specific purpose:
 
 ### 6.3     Method Documentation
 
-Comments can also document methods and their behavior:
+**Comments can also document methods** and their behavior:
 
 ```
 ┌─────────────────┐
@@ -306,7 +310,7 @@ Strategic comment placement involves:
 
 ## 8.     Best Practices and Tips
 
-### 8.1     Writing Effective Comments
+### *8.1     Writing Effective Comments*
 
 #### **Do**
 
@@ -323,7 +327,7 @@ Strategic comment placement involves:
 - Create comments that will quickly become outdated
 - Clutter diagrams with excessive annotations
 
-### 8.2     Avoiding Over-Documentation
+### 8.2     *Avoiding Over-Documentation*
 
 Signs of over-documentation include:
 
@@ -332,7 +336,7 @@ Signs of over-documentation include:
 - **Trivial explanations** of obvious elements
 - **Outdated comments** that no longer reflect reality
 
-### 8.3     Maintenance Considerations
+### 8.3     *Maintenance Considerations*
 
 **Regular Review Process**
 
@@ -353,7 +357,7 @@ Signs of over-documentation include:
 - Define review processes for comment additions
 - Ensure consistent comment quality across team members
 
-### 8.4     Tool-Specific Considerations
+### 8.4     *Tool-Specific Considerations*
 
 Different UML tools may have variations in:
 
@@ -362,7 +366,7 @@ Different UML tools may have variations in:
 - **Export capabilities** for comments
 - **Search functionality** within comments
 
-### 8.5 Accessibility and Internationalization
+### 8.5 *Accessibility and Internationalization*
 
 Consider these factors for broader accessibility:
 
@@ -375,33 +379,9 @@ Consider these factors for broader accessibility:
 
 ## 9.     Standards and References
 
-### 9.1 UML Standards
-
-- **OMG UML 2.5.1 Specification** - Object Management Group
-  - Section 7.3.2: Comments and their usage
-  - Annex B: UML Notation Guide
-- **ISO/IEC 19505-1:2012** - Information technology — Object Management Group Unified Modeling Language (UML)
-- **ISO/IEC 19505-2:2012** - UML Superstructure specification
-
-### 9.2 Design Guidelines and Best Practices
-
+* https://devcamp.com/trails/uml-foundations
 - [UML Comments and Notes - UML-diagrams.org](https://www.uml-diagrams.org/uml-25-diagrams.html#comment)
 - [UML Modeling Style Guidelines - Agile Modeling](http://agilemodeling.com/style/)
-
-### 9.3 Tool Documentation
-
-- **Enterprise Architect** - Comments and Notes Implementation
-- **Visual Paradigm** - UML Comment Features and Usage
-- **Lucidchart** - UML Annotation Guidelines
-- **Draw.io/Diagrams.net** - UML Comment Notation
-
-### 9.4 Industry Standards and Frameworks
-
-- **TOGAF** - The Open Group Architecture Framework documentation standards
-- **IEEE 1471-2000** - Recommended Practice for Architectural Description
-- **IEEE 830-1998** - Recommended Practice for Software Requirements Specifications
-- **CMMI** - Capability Maturity Model Integration documentation practices
-
 
 
 ---
