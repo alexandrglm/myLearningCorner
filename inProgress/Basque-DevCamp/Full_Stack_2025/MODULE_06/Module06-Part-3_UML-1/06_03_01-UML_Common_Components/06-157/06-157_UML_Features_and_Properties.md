@@ -82,20 +82,27 @@
 
 ## 1.     Introduction to UML Features and Properties
 
+---
 ### 1.1     Definition and Core Concepts
 
-**Features** and **Properties** in UML represent the fundamental building blocks that define the characteristics and capabilities of model elements. 
+**Features** and **Properties** in UML represent the **fundamental building blocks that define the characteristics and capabilities of model elements**. 
 
-They serve as the standardized way to describe what an element **has** (properties) and what it can **do** (behavioral features).
+They serve as the standardised way to describe what an element **has** (properties) and what it can **do** (behavioural features).
 
-**Definition**
+#### **Definition**
 
-- **Feature**: A distinguishing characteristic of a model element that can be either structural or behavioral
-- **Property**: A structural feature that represents an attribute or association end of a classifier
-- **Element**: Any constituent part of a UML model that can have features and properties
+- **Feature**
+>A distinguishing characteristic of a model element that can be either structural or behavioural
+
+- **Property** 
+>A structural feature that represents an attribute or association end of a classifier
+
+- **Element**
+>Any constituent part of a UML model that can have features and properties
 
 These concepts form the foundation for creating consistent, understandable, and maintainable UML models across different diagram types and development teams.
 
+---
 ### 1.2     Universal Application Across Diagrams
 
 Features and properties appear in virtually every UML diagram type, making them essential components for UML practitioners to master. Their universal nature means that understanding these concepts provides a foundation that applies to:
@@ -106,6 +113,7 @@ Features and properties appear in virtually every UML diagram type, making them 
 
 This universality enables consistent communication and documentation practices across all aspects of system modeling.
 
+---
 ### 1.3     Role in Element Specification
 
 Features and properties serve critical roles in element specification:
@@ -120,6 +128,7 @@ Features and properties serve critical roles in element specification:
 
 ## 2.     Understanding Features in UML
 
+---
 ### 2.1     Feature Fundamentals
 
 A **feature** is a distinguishing characteristic of a model element. Features can be:
@@ -141,6 +150,7 @@ Features
     └── Extensions Points
 ```
 
+---
 ### 2.2     Types of Features
 
 **Structural Features**
@@ -171,6 +181,7 @@ Features
    
    - Example: Optional steps in use case flows
 
+---
 ### 2.3     Feature Characteristics
 
 All features have common characteristics that define their behavior:
@@ -189,6 +200,7 @@ All features have common characteristics that define their behavior:
 - **Ordering** - Whether multiple values have a specific order
 - **Uniqueness** - Whether duplicate values are allowed
 
+---
 ### 2.4     Feature Visibility and Access
 
 Feature visibility controls access to features from outside the containing element:
@@ -204,6 +216,7 @@ Feature visibility controls access to features from outside the containing eleme
 
 ## 3.     Understanding Properties in UML
 
+---
 ### 3.1     Property Definitions
 
 **Properties** are structural features that represent typed elements within a classifier. They are the most common type of feature and appear as attributes in class diagrams.
@@ -220,6 +233,7 @@ Feature visibility controls access to features from outside the containing eleme
 - `- id: Integer [1] = 0` - Private integer with default value
 - `# items: Product [0..*] {ordered}` - Protected collection with constraints
 
+----
 ### 3.2     Property Types and Categories
 
 **Simple Properties**
@@ -246,6 +260,7 @@ Feature visibility controls access to features from outside the containing eleme
    - Notation: Underlined property name
    - Example: `counter: Integer` (underlined)
 
+---
 ### 3.3     Property Constraints and Specifications
 
 **Multiplicity constraints**
@@ -263,6 +278,8 @@ Feature visibility controls access to features from outside the containing eleme
 - `{readOnly}` - Value cannot be changed after initialization
 - `{union}` - Property represents union of other properties
 - `{subsets propertyName}` - Property is subset of another property
+
+---
 
 ### 3.4     Property Relationships
 
@@ -290,6 +307,7 @@ Vehicle
 
 ## 4.     Standardized Naming Conventions
 
+---
 ### 4.1     Importance of Consistency
 
 Standardized naming conventions are crucial for several reasons:
@@ -308,6 +326,7 @@ Standardized naming conventions are crucial for several reasons:
 - **Bug reduction** - Clear naming reduces misunderstandings
 - **Knowledge transfer** - Easier to hand off projects between developers
 
+---
 ### 4.2     Naming Convention Benefits
 
 **Development team scenario:** Without naming conventions, five developers working independently might create:
@@ -320,21 +339,27 @@ Standardized naming conventions are crucial for several reasons:
 
 **Result**: Inconsistent, confusing codebase that's difficult to maintain.
 
-**With UML features and properties standardization**
+**With UML features and properties standardsiation**
 
 - All developers use: `name: String`, `email: String`, `createdAt: DateTime`
 - **Consistent patterns** across the entire application
 - **Predictable structure** for new developers
 - **Maintainable codebase** with clear intent
 
+----
 ### 4.3     Team Communication Enhancement
 
-Standardized features and properties create a **common vocabulary** for team communication:
+Standardised features and properties create a **common vocabulary** for team communication:
 
-**In documentation:** "The User class has a `name` property that stores the user's full name" **In code reviews:** "Update the `updatedAt` property when the record changes" **In meetings:** "We need to add a `status` feature to track the order state"
+* ***In documentation:** "The User class has a `name` property that stores the user's full name"
+
+* ***In code reviews:** "Update the `updatedAt` property when the record changes"
+
+* ***In meetings:** "We need to add a `status` feature to track the order state"
 
 This shared language eliminates confusion and accelerates development discussions.
 
+---
 ### 4.4     Code Quality and Maintainability
 
 **Quality improvements**
@@ -374,6 +399,9 @@ Class diagrams are the primary location for detailed feature and property specif
 │ + generateSlug(): String    │
 └─────────────────────────────┘
 ```
+
+![large](06-157_IMG03.png)
+
 
 **Feature representation**
 
@@ -576,7 +604,7 @@ UML defines four standard visibility levels that control access to features:
 
 ### 7.2     Public, Private, and Protected Access
 
-**Public features (`+`):**
+#### **Public features (`+`):**
 
 ```
 Customer
@@ -587,7 +615,7 @@ Customer
 
 **Usage:** API interfaces, external communication, public contracts
 
-**Private features (`-`):**
+#### **Private features (`-`):**
 
 ```
 Customer
@@ -598,7 +626,7 @@ Customer
 
 **Usage:** Internal implementation details, sensitive data, helper methods
 
-**Protected features (`#`):**
+#### **Protected features (`#`):**
 
 ```
 Person
@@ -610,7 +638,7 @@ Person
 
 ### 7.3     Package and Implementation Visibility
 
-**Package visibility (`~`):**
+#### **Package visibility (`~`):**
 
 ```
 OrderProcessor
@@ -737,7 +765,7 @@ FileService
 
 ### 9.1     Static vs Instance Features
 
-**Instance features** - Belong to individual object instances:
+#### **Instance features** - Belong to individual object instances:
 
 ```
 BankAccount
@@ -745,7 +773,7 @@ BankAccount
 + deposit(amount: Money): void // Operation on specific account
 ```
 
-**Static features** - Belong to the class itself, shared across all instances:
+#### **Static features** - Belong to the class itself, shared across all instances:
 
 ```
 BankAccount
@@ -757,7 +785,7 @@ BankAccount
 
 ### 9.2     Abstract and Virtual Features
 
-**Abstract features** - Declared but not implemented in the current class:
+### **Abstract features** - Declared but not implemented in the current class:
 
 ```
 Shape {abstract}
@@ -765,7 +793,7 @@ Shape {abstract}
 + /perimeter(): Real {abstract}   // Abstract operation
 ```
 
-**Virtual features** - Can be overridden by subclasses:
+#### **Virtual features** - Can be overridden by subclasses:
 
 ```
 Vehicle
@@ -823,7 +851,7 @@ Dog extends Animal
 
 ### 10.1     Naming Convention Standards
 
-**Attribute naming**
+#### **Attribute naming**
 
 - **Use clear, descriptive names** - `customerEmail` not `ce`
 - **Follow language conventions** - `camelCase` in Java, `snake_case` in Python
@@ -831,7 +859,7 @@ Dog extends Animal
 - **Avoid technical jargon** - Business domain terminology preferred
 - **Be consistent across the model** - Same concepts use same names
 
-**Operation naming**
+#### **Operation naming**
 
 - **Use verb phrases** - `calculateTotal()`, `validateInput()`
 - **Query operations** - Start with `get`, `find`, `is`, `has`
@@ -840,7 +868,7 @@ Dog extends Animal
 
 ### 10.2     Documentation Strategies
 
-**Feature documentation levels**
+#### **Feature documentation levels**
 
 1. **Name documentation** - Clear, self-documenting names
 2. **Type documentation** - Precise type specifications
@@ -848,7 +876,8 @@ Dog extends Animal
 4. **Comment documentation** - Additional clarification when needed
 5. **External documentation** - Detailed specifications in separate documents
 
-**Documentation templates**
+
+####  **Documentation templates**
 
 ```
 Customer
@@ -860,7 +889,7 @@ Customer
 
 ### 10.3     Team Collaboration Guidelines
 
-**Establishing standards**
+#### **Establishing standards**
 
 - **Create naming guides** - Document team conventions
 - **Use code review** - Enforce consistency through peer review
@@ -868,7 +897,7 @@ Customer
 - **Regular refactoring** - Update names as understanding improves
 - **Tool support** - Use UML tools that enforce consistency
 
-**Communication practices**
+#### **Communication practices**
 
 - **Feature glossaries** - Shared terminology definitions
 - **Regular model reviews** - Team validation of feature designs
@@ -877,7 +906,7 @@ Customer
 
 ### 10.4     Quality Assurance Practices
 
-**Feature quality checks**
+#### **Feature quality checks**
 
 - **Naming consistency** - Same concepts use same names
 - **Type accuracy** - Correct data types for intended usage
@@ -885,7 +914,7 @@ Customer
 - **Visibility appropriateness** - Proper encapsulation levels
 - **Documentation adequacy** - Sufficient clarification provided
 
-**Quality metrics**
+#### **Quality metrics**
 
 - **Feature coverage** - Percentage of features with proper documentation
 - **Naming compliance** - Adherence to established conventions
@@ -898,7 +927,7 @@ Customer
 
 ### 11.1     Inconsistent Naming Problems
 
-**Common inconsistencies**
+#### **Common inconsistencies**
 
 ```
 // BAD: Multiple naming styles in same model
@@ -927,7 +956,7 @@ User
 
 ### 11.2     Over-Specification Issues
 
-**Over-detailed models**
+#### **Over-detailed models**
 
 ```
 // BAD: Too much implementation detail in UML
@@ -952,7 +981,7 @@ DatabaseConnection
 
 ### 11.3     Visibility Misuse
 
-**Common visibility mistakes**
+#### **Common visibility mistakes**
 
 ```
 // BAD: Everything public
@@ -980,7 +1009,7 @@ Customer
 
 ### 11.4     Documentation Neglect
 
-**Under-documented features**
+#### **Under-documented features**
 
 ```
 // BAD: Unclear purpose and constraints
@@ -1020,7 +1049,7 @@ Order
 
 ### 12.2     Code Generation Features
 
-**Forward engineering capabilities**
+#### **Forward engineering capabilities**
 
 ```
 // UML Class Definition
@@ -1030,6 +1059,7 @@ Customer
 + calculateDiscount(): Money
 
 // Generated Java Code
+
 public class Customer {
     private String name;
     private String email;

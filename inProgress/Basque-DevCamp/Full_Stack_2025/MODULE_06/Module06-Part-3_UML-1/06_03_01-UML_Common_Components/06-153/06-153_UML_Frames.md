@@ -4,25 +4,32 @@
 
 ---
 
+
 1. **Introduction to Frames**
-   1. What are Frames?
-   2. Purpose and Benefits
+   1.1    What are Frames?
+   1.2    Purpose and Benefits
+
 2. **Frame Components and Structure**
-   1. Frame Header Elements
-   2. Encapsulation Boundaries
+   2.1   Frame Header Elements
+   2.2   Encapsulation Boundaries
+
 3. **Standardized Naming Conventions**
-   1. Official UML Frame Mappings
-   2. Diagram Type Identifiers
+   3.1   Official UML Frame Mappings
+   3.2   Diagram Type Identifiers
+
 4. **Implementation in Different Diagram Types**
-   1. Use Case Diagram Frames
-   2. Class Diagram Frames
-   3. Activity Diagram Frames
-   4. Sequence Diagram Frames
+   4.1   Use Case Diagram Frames
+   4.2   Class Diagram Frames
+   4.3   Activity Diagram Frames
+   4.4   Sequence Diagram Frames
+
 5. **Practical Application**
-   1. Large System Management
-   2. Team Collaboration Benefits
+   5.1   Large System Management
+   5.2   Team Collaboration Benefits
+
 6. **Frame Design Guidelines**
-7. **Tools and Implementation**
+
+7. **Tips for Implementation**
 
 ---
 
@@ -30,11 +37,19 @@
 
 ### What are Frames?
 
-Frames in UML are **encapsulation containers** that provide contextual boundaries around diagram elements. They serve as visual organizers that wrap entire diagrams or significant portions of diagrams within a defined boundary, complete with descriptive headers that immediately communicate the diagram's purpose, type, and scope.
+Frames in UML are **encapsulation containers** that provide contextual boundaries around diagram elements. 
 
-Frames as **labeled containers** that hold your UML diagrams, similar to how you might label file folders in a filing cabinet. Just as a labeled folder helps you quickly identify its contents without opening it, frames help you instantly understand what type of diagram you're looking at and what system or module it represents.
+![large](./06-153_IMG3.png)
+
+They **serve as visual organizers** that wrap entire diagrams or significant portions of diagrams within a **defined boundary**, complete **with descriptive headers** that immediately communicate the diagram's purpose, type, and scope.
+
+Frames as **labeled containers** that hold your UML diagrams, similar to how you might label file folders in a filing cabinet. 
+
+Just as a labeled folder helps **you quickly identify its contents without opening it**, frames help you instantly understand what type of diagram you're looking at and what system or module it represents.
 
 ### Purpose
+
+![large](./06-153_IMG1.png)
 
 #### Primary Functions
 
@@ -54,17 +69,18 @@ Frames as **labeled containers** that hold your UML diagrams, similar to how you
 
 ## 2.     Frame Components and Structure
 
-### Frame Header Elements
+### *Frame Header Elements*
 
-Every UML frame consists of two essential components:
+Every UML frame consists of **TWO** essential components:
 
-#### The Frame Border
+![](./06-153_IMG04.png)
+#### Frame Border
 
 - A rectangular boundary that encapsulates the entire diagram
 - Clearly delineates what belongs to this specific model
 - Provides visual separation from other documentation elements
 
-#### The Frame Header (Nameplate)
+#### Frame Header (Nameplate)
 
 Located in the **top-left corner**, the header contains:
 
@@ -90,9 +106,9 @@ UC SongRequest v1.2
 
 ---
 
-## 3. Standardized Naming Conventions
+## 3.      Standardized Naming Conventions
 
-### Official UML Frame Mappings
+### *Official UML Frame Mappings*
 
 The UML specification provides standardized abbreviations for frame headers:
 
@@ -112,7 +128,7 @@ The UML specification provides standardized abbreviations for frame headers:
 | **Timing**               | `tim`        | Timing Diagram               |
 | **Use Case**             | `uc`         | Use Case Diagram             |
 
-### Naming Best Practices
+### *Naming Best Practices*
 
 #### For System Names
 
@@ -120,9 +136,9 @@ The UML specification provides standardized abbreviations for frame headers:
 - Keep names **concise but descriptive**: `OrderSystem` rather than `OnlineOrderManagementSystem`
 - Use **consistent terminology** across all diagrams
 
-#### Complete Examples:
+#### Complete Examples
 
-```plantuml
+```
 uc UserAuthentication
 class PaymentProcessor  
 act OrderFulfillment
@@ -133,11 +149,12 @@ depl ProductionEnvironment
 
 ---
 
-## 4. Implementation in Different Diagram Types
+## 4.     Implementation in Different Diagram Types
 
-### Use Case Diagram Frames
+### *Use Case Diagram Frames*
 
-**Purpose**: Identify actors and their interactions with system functionality
+**Purpose** 
+Identify actors and their interactions with system functionality
 
 **Frame Example**
 
@@ -181,9 +198,11 @@ depl ProductionEnvironment
 - Object-oriented system architecture
 - Code generation planning
 
-### Activity Diagram Frames
+---
+### *Activity Diagram Frames*
 
-**Purpose**: Map business processes and workflow logic
+**Purpose**  
+Map business processes and workflow logic
 
 **Frame Example**
 
@@ -203,9 +222,11 @@ depl ProductionEnvironment
 - Workflow optimization
 - System behavior modeling
 
-### Sequence Diagram Frames
+---
+### *Sequence Diagram Frames*
 
-**Purpose**: Document message flow between system components
+**Purpose**  
+Document message flow between system components
 
 **Frame Example**
 
@@ -229,16 +250,17 @@ depl ProductionEnvironment
 ---
 
 ## 5.     Practical Application
-
-### Large System Management
+---
+### *Large System Management*
 
 #### Challenge:         Documentation Overload
 
-In enterprise systems, you might have **50+ UML diagrams** across multiple modules. Without frames, finding the right diagram becomes a time-consuming hunt.
+In enterprise systems, you might have **50+ UML diagrams** across multiple modules.  
+Without frames, finding the right diagram becomes a time-consuming hunt.
 
 #### Solution:            Systematic Frame Usage
 
-```plantuml
+```
 uc CustomerPortal_Authentication
 uc CustomerPortal_Dashboard  
 uc CustomerPortal_Billing
@@ -252,17 +274,18 @@ seq CustomerPortal_PaymentFlow
 seq CustomerPortal_ReportGeneration
 ```
 
-**Result**: Instant recognition and logical grouping of related diagrams.
+**Result** -> Instant recognition and logical grouping of related diagrams.
 
-### Team Collaboration Benefits
+---
+### *Team Collaboration Benefits*
 
-#### Scenario: New Team Member Onboarding
+#### Scenario:    New Team Member Onboarding
 
 When a new developer joins your team:
 
 **Without Frames**
 
-- Must analyze each diagram to understand its purpose
+- Must analyse each diagram to understand its purpose
 - Confusion about which diagrams relate to which modules
 - Time wasted on clarification meetings
 
@@ -284,31 +307,31 @@ When a new developer joins your team:
 
 ## 6.     Frame Design Guidelines
 
-### Visual Design Principles
+---
+### *Visual Design Principles*
 
-#### Frame Sizing
+* ####  Frame Sizing
 
-- **Minimum Padding**: Leave at least 10-15 pixels between frame border and diagram content
-- **Proportional Scaling**: Frame should scale with diagram complexity
-- **Consistent Margins**: Maintain uniform spacing across all diagrams
+	- **Minimum Padding**: Leave at least 10-15 pixels between frame border and diagram content
+	- **Proportional Scaling**: Frame should scale with diagram complexity
+	- **Consistent Margins**: Maintain uniform spacing across all diagrams
 
-#### Header Placement
+* #### Header Placement
+	- **Always Top-Left**: Standard UML convention
+	- **Clear Font**: Use readable typeface, typically same as diagram text
+	- **Appropriate Size**: Header should be prominent but not overwhelming
 
-- **Always Top-Left**: Standard UML convention
-- **Clear Font**: Use readable typeface, typically same as diagram text
-- **Appropriate Size**: Header should be prominent but not overwhelming
 
-### Content Organization
-
+* ### Content Organization
 #### What Goes Inside Frames
 
-✅ **Include:**
+✅ **Include**
 
 - All primary diagram elements
 - Related annotations and notes
 - Legend or key information specific to this diagram
 
-❌ **Exclude:**
+❌ **Exclude**
 
 - General project information (use separate title blocks)
 - Unrelated diagram elements
@@ -322,45 +345,10 @@ When a new developer joins your team:
 
 ---
 
-## 7.     Tools and Implementation
+## 7.     Tips for Implementation
 
-### Popular UML Tools with Frame Support
-
-#### PlantUML (Text-Based)
-
-```plantuml
-@startuml uc_SongRequest
-!frame uc SongRequest
-
-actor User
-actor DJ
-
-User --> (Request Song)
-DJ --> (Approve Request)
-DJ --> (Reject Request)
-
-@enduml
-```
-
-#### Enterprise Architect
-
-- Built-in frame templates
-- Automatic frame generation
-- Customizable frame styles
-
-#### Visual Paradigm
-
-- Drag-and-drop frame creation
-- Frame property panels
-- Export with frame formatting
-
-#### Lucidchart
-
-- Frame shapes in UML template library
-- Text formatting for headers
-- Collaborative frame editing
-
-### Implementation Checklist
+---
+### *Implementation Checklist*
 
 **Before Creating Diagrams:**
 
@@ -383,9 +371,6 @@ DJ --> (Reject Request)
 - [ ] Update frames when diagram scope changes
 
 ---
-
-## Best Practices and Tips
-
 ### Professional Standards
 
 1. **Consistency is King**: Use the same frame style throughout all project documentation
@@ -400,7 +385,7 @@ DJ --> (Reject Request)
 ❌ **Missing Frames**: Having some diagrams with frames and others without  
 ❌ **Wrong Diagram Types**: Using `class` abbreviation for an activity diagram
 
-### Tips
+### More Tips
 
 💡 **Frame Templates**: Create reusable frame templates in your UML tool  
 💡 **Color Coding**: Use subtle background colors to distinguish diagram types  

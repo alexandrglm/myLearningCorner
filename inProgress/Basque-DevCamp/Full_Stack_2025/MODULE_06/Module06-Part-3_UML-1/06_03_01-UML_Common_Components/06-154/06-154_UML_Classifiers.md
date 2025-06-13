@@ -4,7 +4,7 @@
 
 ---
 
-1. What are Classifiers?
+1. What Classifiers are
 2. Abstract Nature of Classifiers
 3. Universal Application Across Diagrams
 4. Key Characteristics and Functions
@@ -14,30 +14,38 @@
 
 ---
 
-## 1.    What are Classifiers?
+## 1.    What Classifiers Are
 
-Classifiers are fundamental UML components that serve as identification mechanisms for various elements within UML diagrams. They provide a standardized naming convention that enables clear communication between designers, developers, and stakeholders throughout the software development lifecycle.
+Classifiers are fundamental UML components that serve as **identification mechanisms for various elements within UML diagrams**.   
 
-The primary purpose of classifiers is exactly what their name implies - they **classify items**. This high-level categorization system ensures consistency and clarity across all UML documentation and serves as a foundation for understanding the structure and relationships within a system.
+> We refer a class, an object, a component, or a deployment node as classifiers in UML since they define a common set of properties. We are able to design object diagrams by instantiating classifiers.
+
+They provide **a standardised naming convention** that **enables clear communication** between designers, developers, and stakeholders throughout the software development life-cycle.
+
+The primary purpose of classifiers is exactly what their name implies - they **classify items**. 
+
+This **high-level categorisation** system ensures consistency and clarity across all UML documentation and serves as a foundation for understanding the structure and relationships within a system.
 
 ---
 
 ## 2.    Abstract Nature of Classifiers
 
-One of the most important concepts to understand about classifiers is their **abstract nature**. This means:
+One of the most important concepts to understand about classifiers is their **abstract nature**.
+
+This means:
 
 - **You won't implement a classifier directly** in code
 - Classifiers are more of a **category or template** for components
 - They serve as a **conceptual framework** rather than concrete implementations
 - This abstract characteristic often trips up newcomers to UML
 
-Understanding this abstraction is crucial for both practical application and theoretical comprehension, especially in certification exams or academic assessments.
-
 ---
 
 ## 3.    Universal Application Across Diagrams
 
-Classifiers are utilized in virtually every type of UML diagram, making them one of the most pervasive elements in UML modeling. They appear in:
+Classifiers are utilised in virtually every type of UML diagram, making them one of the most pervasive elements in UML modeling.   
+
+They appear in:
 
 - **Class Diagrams** - Naming classes and their relationships
 - **Use Case Diagrams** - Identifying actors and use cases
@@ -54,19 +62,19 @@ This universal application makes classifiers an essential skill for anyone worki
 
 ## 4.    Key Characteristics and Functions
 
-### Standardization
+### *Standardisation*
 
 Classifiers provide a **unified naming approach** across all UML elements, ensuring consistency in documentation and communication.
 
-### Identification
+### *Identification*
 
 They serve as **unique identifiers** for different components, making it easier to reference and discuss specific elements during development.
 
-### Communication
+### *Communication*
 
 Classifiers act as a **common language** between team members, facilitating better understanding and collaboration.
 
-### Documentation
+### *Documentation*
 
 They provide **clear labeling** that makes UML diagrams self-documenting and easier to maintain over time.
 
@@ -76,7 +84,11 @@ They provide **clear labeling** that makes UML diagrams self-documenting and eas
 
 ### Class Diagrams
 
-In a class diagram, the classifier appears as the **class name** at the top of each class box. For example, if you have a class representing a blog system, "Topic" would be the classifier for that particular class.
+In a class diagram, the classifier appears as the **class name** at the top of each class box. 
+
+![large](./06-154_IMG3.png)
+
+For example, if you have a class representing a blog system, "Topic" would be the classifier for that particular class.
 
 ### Use Case Diagrams
 
@@ -167,6 +179,8 @@ A common source of confusion is the relationship between **classifiers** and **c
 
 ## References
 
+- https://www.geeksforgeeks.org/system-design/unified-modeling-language-uml-class-diagrams/
+- https://www.geeksforgeeks.org/system-design/unified-modeling-language-uml-object-diagrams/
 - [UML Classifiers Overview - UML-diagrams.org](https://www.uml-diagrams.org/classifier.html)
 - [Composite Structure Diagram - UML 2 Diagrams - UML Modeling Tool](https://www.visual-paradigm.com/VPGallery/diagrams/CompositeStructureDiagram.html)
 - [Introduction to the Diagrams of UML 2.X](https://agilemodeling.com/essays/umldiagrams.htm)
