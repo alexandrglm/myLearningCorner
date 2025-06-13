@@ -177,12 +177,6 @@ También identificamos los siguientes objetos-Funciones:
 De ello, y aunque sólo tenemos una Actividad (Quiz) de todo el programa (Grading System), podemos realizar un pseudo-código:
 
 ```js
-/*
-Pseudocódigo basado en JS con características de TypeScript 
-(como tipado fuerte de tipos de datos) para definir, muy por encima,
-un posible programa estilo Grading System
-*/
-
 class Alumno {
 
     constructor(nombre, id, curso) {
