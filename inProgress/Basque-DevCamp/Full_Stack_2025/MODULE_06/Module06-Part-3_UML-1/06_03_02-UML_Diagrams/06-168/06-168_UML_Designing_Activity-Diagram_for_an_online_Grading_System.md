@@ -137,7 +137,6 @@ The process moves to the Student lane for **"Confirm"** activity. This represent
 
 After confirmation, control returns to the system for **"Ask Question"**, followed by transfer to the student for **"Answer"** activity.
 
-### 
 
 ### Decision and Loop Logic
 
