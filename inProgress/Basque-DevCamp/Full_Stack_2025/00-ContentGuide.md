@@ -678,16 +678,6 @@
 | [X] | 06-168 |                                                                                                     | How to Design an Activity Diagram for an Online Grading System                        | 2025-06-12 |
 | [X] | 06-169 | Quiz                                                                                                | Activity Diagrams                                                                     | 2025-06-12 |
 | [ ] | 06-170 |                                                                                                     | **Course Checkpoint 12**                                                              |            |
-| [ ] | 06-171 |                                                                                                     | Introduction to UML Diagrams                                                          |            |
-| [ ] | 06-172 |                                                                                                     | Use Case Diagrams Explained                                                           |            |
-| [ ] | 06-173 |                                                                                                     | Activity Diagrams: Syntax and Semantics                                               |            |
-| [ ] | 06-174 |                                                                                                     | Sequence Diagrams and Messaging Between Objects                                       |            |
-| [ ] | 06-175 |                                                                                                     | Class Diagrams: Associations and Multiplicity                                         |            |
-| [ ] | 06-176 |                                                                                                     | Advanced Class Diagram Features                                                       |            |
-| [ ] | 06-177 |                                                                                                     | State Machine Diagrams: Modeling State Changes                                        |            |
-| [ ] | 06-178 |                                                                                                     | Component and Deployment Diagrams                                                     |            |
-| [ ] | 06-179 |                                                                                                     | Practical Modeling Exercises with UML                                                 |            |
-| [ ] | 06-180 |                                                                                                     | Course Checkpoint: UML                                                                |            |
 
 ---
 
@@ -697,74 +687,140 @@
 
 |     | #      | Type | Tittle                                                          | Date |
 | --- | ------ | ---- | --------------------------------------------------------------- | ---- |
-| [ ] | 07-181 |      | Overview of UML Use Case Diagram Elements                       |      |
-| [ ] | 07-182 |      | Deep Dive: Build a Marketing Automation System Use Case Diagram |      |
-| [ ] | 07-183 |      | Use Case Diagrams                                               |      |
-| [ ] | 07-184 |      | Overview of the Elements of a UML Deployment Diagram            |      |
-| [ ] | 07-185 |      | Deep Dive: Build a Song Request Deployment Engine Diagram       |      |
-| [ ] | 07-186 |      | Deployment Diagrams                                             |      |
-| [ ] | 07-187 |      | Overview of UML Package Diagram Elements                        |      |
-| [ ] | 07-188 |      | Deep Dive: Build a Marketing Automation System Package Diagram  |      |
-| [ ] | 07-189 |      | Package Diagrams                                                |      |
-| [ ] | 07-190 |      | Overview of the Elements of a UML Sequence Diagram              |      |
-| [ ] | 07-191 |      | Deep Dive: Build a CRM Commission Engine Sequence Diagram       |      |
-| [ ] | 07-192 |      | Interaction Sequence Diagrams                                   |      |
-| [ ] | 07-193 |      | Overview of UML State Machine Diagram Elements                  |      |
-| [ ] | 07-194 |      | Deep Dive: Build a CRM State Machine Diagram                    |      |
-| [ ] | 07-195 |      | State Machine Diagrams                                          |      |
+| [ ] | 07-171 |      | Overview of UML Use Case Diagram Elements                       |      |
+| [ ] | 07-172 |      | Deep Dive: Build a Marketing Automation System Use Case Diagram |      |
+| [ ] | 07-173 |      | Use Case Diagrams                                               |      |
+| [ ] | 07-174 |      | Overview of the Elements of a UML Deployment Diagram            |      |
+| [ ] | 07-175 |      | Deep Dive: Build a Song Request Deployment Engine Diagram       |      |
+| [ ] | 07-176 |      | Deployment Diagrams                                             |      |
+| [ ] | 07-177 |      | Overview of UML Package Diagram Elements                        |      |
+| [ ] | 07-178 |      | Deep Dive: Build a Marketing Automation System Package Diagram  |      |
+| [ ] | 07-179 |      | Package Diagrams                                                |      |
+| [ ] | 07-180 |      | Overview of the Elements of a UML Sequence Diagram              |      |
+| [ ] | 07-181 |      | Deep Dive: Build a CRM Commission Engine Sequence Diagram       |      |
+| [ ] | 07-182 |      | Interaction Sequence Diagrams                                   |      |
+| [ ] | 07-183 |      | Overview of UML State Machine Diagram Elements                  |      |
+| [ ] | 07-184 |      | Deep Dive: Build a CRM State Machine Diagram                    |      |
+| [ ] | 07-185 |      | State Machine Diagrams                                          |      |
 
-##### UML Projects
+### UML Projects
 
 |     | #      | Type | Tittle                                                       | Date |
 | --- | ------ | ---- | ------------------------------------------------------------ | ---- |
-| [ ] | 07-196 |      | The Importance of Systems Analysis and Design                |      |
-| [ ] | 07-197 |      | Overview of Software Systems                                 |      |
-| [ ] | 07-198 |      | Project One: Design Twitter System                           |      |
-| [ ] | 07-199 |      | Project Solution: Twitter Use Case Diagram                   |      |
-| [ ] | 07-200 |      | Project Solution: Twitter Class Diagram                      |      |
-| [ ] | 07-201 |      | Project Two: Design an Ecommerce Application                 |      |
-| [ ] | 07-202 |      | Project Solution: eCommerce Activity Diagram                 |      |
-| [ ] | 07-203 |      | Project Solution: eCommerce Class Diagram                    |      |
-| [ ] | 07-204 |      | Project Three: Model a Phone Parser Code Library             |      |
-| [ ] | 07-205 |      | Project Solution: Phone Parser Package Diagram               |      |
-| [ ] | 07-206 |      | Project Solution: Phone Parser Sequence Diagram              |      |
-| [ ] | 07-207 |      | Project 4: Design Enterprise Fleet Management System - P1    |      |
-| [ ] | 07-208 |      | Project 4: Design Enterprise Fleet Management System - P2    |      |
-| [ ] | 07-209 |      | Project Solution: Enterprise Activity Diagram                |      |
-| [ ] | 07-210 |      | Project Solution: Enterprise Package Diagram                 |      |
-| [ ] | 07-211 |      | Project Solution: Enterprise Deployment Diagram              |      |
-| [ ] | 07-212 |      | Project Solution: Enterprise Class Diagram                   |      |
-| [ ] | 07-213 |      | Project 5: Design the Uber Ride Sharing System               |      |
-| [ ] | 07-214 |      | Project Solution: Uber Activity Diagram                      |      |
-| [ ] | 07-215 |      | Project Solution: Uber Package Diagram                       |      |
-| [ ] | 07-216 |      | Project Solution: Uber Use Case Diagram                      |      |
-| [ ] | 07-217 |      | Project Solution: Uber Deployment Diagram                    |      |
-| [ ] | 07-218 |      | Project 6: Model an Education Assessment System              |      |
-| [ ] | 07-219 |      | Project Solution: Education Assessment Activity Diagram      |      |
-| [ ] | 07-220 |      | Project Solution: Education Assessment Class Diagram         |      |
-| [ ] | 07-221 |      | Project Solution: Education Assessment State Machine Diagram |      |
-| [ ] | 07-222 |      | Project Solution: Education Assessment Deployment Diagram    |      |
-| [ ] | 07-223 |      | Project 7: Design a Marketing Automation System - Part 1     |      |
-| [ ] | 07-224 |      | Project 7: Design a Marketing Automation System - Part 2     |      |
-| [ ] | 07-225 |      | Project Solution: Marketing System Use Case Diagram          |      |
-| [ ] | 07-226 |      | Project Solution: Marketing System Activity Diagram          |      |
-| [ ] | 07-227 |      | Project Solution: Marketing System Package Diagram           |      |
-| [ ] | 07-228 |      | Project Solution: Marketing System Deployment Diagram        |      |
-| [ ] | 07-229 |      | Project Solution: Marketing System State Machine Diagram     |      |
-| [ ] | 07-230 |      | Project Solution: Marketing System Class Diagram             |      |
+| [ ] | 07-186 |      | The Importance of Systems Analysis and Design                |      |
+| [ ] | 07-187 |      | Overview of Software Systems                                 |      |
+| [ ] | 07-188 |      | Project One: Design Twitter System                           |      |
+| [ ] | 07-189 |      | Project Solution: Twitter Use Case Diagram                   |      |
+| [ ] | 07-190 |      | Project Solution: Twitter Class Diagram                      |      |
+| [ ] | 07-191 |      | Project Two: Design an Ecommerce Application                 |      |
+| [ ] | 07-192 |      | Project Solution: eCommerce Activity Diagram                 |      |
+| [ ] | 07-193 |      | Project Solution: eCommerce Class Diagram                    |      |
+| [ ] | 07-194 |      | Project Three: Model a Phone Parser Code Library             |      |
+| [ ] | 07-195 |      | Project Solution: Phone Parser Package Diagram               |      |
+| [ ] | 07-196 |      | Project Solution: Phone Parser Sequence Diagram              |      |
+| [ ] | 07-197 |      | Project 4: Design Enterprise Fleet Management System - P1    |      |
+| [ ] | 07-198 |      | Project 4: Design Enterprise Fleet Management System - P2    |      |
+| [ ] | 07-199 |      | Project Solution: Enterprise Activity Diagram                |      |
+| [ ] | 07-200 |      | Project Solution: Enterprise Package Diagram                 |      |
+| [ ] | 07-201 |      | Project Solution: Enterprise Deployment Diagram              |      |
+| [ ] | 07-202 |      | Project Solution: Enterprise Class Diagram                   |      |
+| [ ] | 07-203 |      | Project 5: Design the Uber Ride Sharing System               |      |
+| [ ] | 07-204 |      | Project Solution: Uber Activity Diagram                      |      |
+| [ ] | 07-205 |      | Project Solution: Uber Package Diagram                       |      |
+| [ ] | 07-206 |      | Project Solution: Uber Use Case Diagram                      |      |
+| [ ] | 07-207 |      | Project Solution: Uber Deployment Diagram                    |      |
+| [ ] | 07-208 |      | Project 6: Model an Education Assessment System              |      |
+| [ ] | 07-209 |      | Project Solution: Education Assessment Activity Diagram      |      |
+| [ ] | 07-210 |      | Project Solution: Education Assessment Class Diagram         |      |
+| [ ] | 07-211 |      | Project Solution: Education Assessment State Machine Diagram |      |
+| [ ] | 07-212 |      | Project Solution: Education Assessment Deployment Diagram    |      |
+| [ ] | 07-213 |      | Project 7: Design a Marketing Automation System - Part 1     |      |
+| [ ] | 07-214 |      | Project 7: Design a Marketing Automation System - Part 2     |      |
+| [ ] | 07-215 |      | Project Solution: Marketing System Use Case Diagram          |      |
+| [ ] | 07-216 |      | Project Solution: Marketing System Activity Diagram          |      |
+| [ ] | 07-217 |      | Project Solution: Marketing System Package Diagram           |      |
+| [ ] | 07-218 |      | Project Solution: Marketing System Deployment Diagram        |      |
+| [ ] | 07-219 |      | Project Solution: Marketing System State Machine Diagram     |      |
+| [ ] | 07-220 |      | Project Solution: Marketing System Class Diagram             |      |
 
 |     | #      | Type | Tittle               | Date |
 | --- | ------ | ---- | -------------------- | ---- |
-| [ ] | 07-231 |      | Course Checkpoint 13 |      |
+| [ ] | 07-221 |      | Course Checkpoint 13 |      |
+
+---
 
 # MODULE 7 PART 2
 
 ## REACT (i)
 
-### Module 7 keypoints:
+### React Setup & Architecture
 
-* Applying UML in real scenarios.
-* React⚛️ intro: Setting up. Node. Git. Dependences. API callback method using Axios.
+|     | #      | Type | Tittle                                                          | Date |
+| --- | ------ | ---- | --------------------------------------------------------------- | ---- |
+| [ ] | 07-001 |      | React Architecture Overview                                     |      |
+| [ ] | 07-002 |      | How to Install Node and NPM on a Mac                            |      |
+| [ ] | 07-003 |      | Text Editor Overview for React Development                      |      |
+| [ ] | 07-004 |      | How to Install Node and NPM on a PC                             |      |
+| [ ] | 07-005 |      | How to Generate a React Project with the Project Builder Module |      |
+| [ ] | 07-006 |      | VS Code Formatting Extension Fix                                |      |
+| [ ] | 07-007 |      | How to Install and Configure Git for Source Version Control     |      |
+| [ ] | 07-008 |      | How to Go Through the React Course Material and UI/UX Workflow  |      |
+| [ ] | 07-009 |      | React Portfolio Project Creation                                |      |
+| [ ] | 07-010 |      | Adding, Removing, and Managing Node Modules in a React Project  |      |
+| [ ] | 07-011 |      | Additional Way to Install Dependencies in a React Application   |      |
+| [ ] | 07-012 |      | Analyzing the src Directory in a React Application              |      |
+| [ ] | 07-013 |      | Overview of the Static Directory in a React Application         |      |
+| [ ] | 07-014 |      | Overview of Webpack's Role in React                             |      |
+| [ ] | 07-015 |      | What is Babel?                                                  |      |
+| [ ] | 07-016 |      | How to Override Server Ports in React                           |      |
+| [ ] | 07-017 |      | Overview of the package.json File in a React Application        |      |
+| [ ] | 07-018 |      | Difference Between package.json and package-lock.json Files     |      |
+| [ ] | 07-019 |      | Overview of Procfile, Readme, and Server JS Files               |      |
+| [ ] | 07-020 |      | Pushing Application Code to GitHub                              |      |
+
+
+
+### React:     Fundamentals and COmponents
+
+|     | #      | Type | Tittle                                                                     | Date |
+| --- | ------ | ---- | -------------------------------------------------------------------------- | ---- |
+| [ ] | 07-021 |      | Introduction to React Components                                           |      |
+| [ ] | 07-022 |      | Class vs Functional Components in React                                    |      |
+| [ ] | 07-023 |      | React Constructor Overview                                                 |      |
+| [ ] | 07-024 |      | Custom Functions in React and Using Map to Loop Over Data                  |      |
+| [ ] | 07-025 |      | Overview of Props in React                                                 |      |
+| [ ] | 07-026 |      | How JSX Works in React                                                     |      |
+| [ ] | 07-027 |      | Introduction to Working with State in React                                |      |
+| [ ] | 07-028 |      | Deep Dive: Props, State, and this - Part 1                                 |      |
+| [ ] | 07-029 |      | Deep Dive: Props, State, and this - Part 2                                 |      |
+| [ ] | 07-030 |      | Deep Dive: Component Lifecycle in React                                    |      |
+| [ ] | 07-031 |      | How to Change State Values in React                                        |      |
+| [ ] | 07-032 |      | How to Build a Data Filter in React                                        |      |
+| [ ] | 07-033 |      | Introduction to React Conditionals                                         |      |
+| [ ] | 07-034 |      | How to Use Ternary Operators in JSX Code to Implement Conditional Behavior |      |
+
+
+
+### React:     API - DevCamp Space
+
+|     | #      | Type | Tittle                                                            | Date |
+| --- | ------ | ---- | ----------------------------------------------------------------- | ---- |
+| [ ] | 07-041 |      | Section Introduction and DevCamp Space Registration               |      |
+| [ ] | 07-042 |      | Overview of DevCamp Space                                         |      |
+| [ ] | 07-043 |      | How to Install Axios in React to Communicate with APIs            |      |
+| [ ] | 07-044 |      | Making the Initial API GET Request in React                       |      |
+| [ ] | 07-045 |      | Organizing Portfolio API Query into the Portfolio Container Class |      |
+| [ ] | 07-046 |      | How to Render API Data in React                                   |      |
+| [ ] | 07-047 |      | How and Why to Use the Key Prop in React                          |      |
+| [ ] | 07-048 |      | Populating the Portfolio Item Data                                |      |
+
+
+
+|     | #      | Type | Tittle               | Date |
+| --- | ------ | ---- | -------------------- | ---- |
+| [ ] | 07-049 |      | Course Checkpoint 14 |      |
+
+
 
 ***
 
@@ -772,9 +828,87 @@
 
 ## REACT (ii)
 
-### Module 8 keypoints:
+### React:    Debugging - API
 
-* Advancing on React⚛️: Managing SCSS Styles. Variables integration. 
+|     | #      | Type | Tittle                                                       | Date |
+| --- | ------ | ---- | ------------------------------------------------------------ | ---- |
+| [ ] | 08-050 |      | How to Log Data Coming in from an API in React               |      |
+| [ ] | 08-051 |      | Introduction to the JavaScript Debugger                      |      |
+| [ ] | 08-052 |      | Introduction to the React Developer Tools                    |      |
+| [ ] | 08-053 |      | Using the Debugger to Extract API Key Names                  |      |
+| [ ] | 08-054 |      | Refactoring the PortfolioItem Component to Use Destructuring |      |
+| [ ] | 08-055 |      | How to Render Images in React from an API                    |      |
+
+
+
+### React:    Styles - Design 
+
+|     | #      | Type | Tittle                                                          | Date |
+| --- | ------ | ---- | --------------------------------------------------------------- | ---- |
+| [ ] | 08-056 |      | How to Create a Main Scss File to Import and Organize Styles    |      |
+| [ ] | 08-057 |      | How to Use Custom Fonts in React                                |      |
+| [ ] | 08-058 |      | Building Out the Flexbox Container for the Navigation Component |      |
+| [ ] | 08-059 |      | Building the Navigation Link Wrapper Styles                     |      |
+| [ ] | 08-060 |      | Integrating Scss Variables to Manage the App Style Guide        |      |
+| [ ] | 08-061 |      | Finalizing the Navigation Link Styles                           |      |
+| [ ] | 08-062 |      | Cleaning Up the App Component                                   |      |
+| [ ] | 08-063 |      | Building the Style Structure for the Homepage Portfolio Items   |      |
+| [ ] | 08-064 |      | How to Use Inline Styles in React to Render Background Images   |      |
+| [ ] | 08-065 |      | Overlaying Text and Images on a Background Image in React       |      |
+| [ ] | 08-066 |      | Updating Styles with React Event Listeners                      |      |
+| [ ] | 08-067 |      | Using Mixins to Create Button Styles                            |      |
+
+### React:    Authentification
+
+|     | #      | Type | Tittle                                      | Date |
+| --- | ------ | ---- | ------------------------------------------- | ---- |
+| [ ] | 08-068 |      | Overview of Authentication Behavior         |      |
+| [ ] | 08-069 |      | How to Import Static Images in React        |      |
+| [ ] | 08-070 |      | Finalizing the Auth Component Styles        |      |
+| [ ] | 08-071 |      | Creating the Initial Login Component        |      |
+| [ ] | 08-072 |      | Introduction to React Forms                 |      |
+| [ ] | 08-073 |      | Overview of React's Form Submit Handler     |      |
+| [ ] | 08-074 |      | Creating an Authentication Session in React |      |
+| [ ] | 08-075 |      | Handling Sign In Error in React             |      |
+| [ ] | 08-076 |      | Deep Dive: Authentication                   |      |
+| [ ] | 08-077 |      | Course Checkpoint 15                        |      |
+
+
+
+### React:    Render Props, Routing
+
+|     | #      | Type | Tittle                                                            | Date |
+| --- | ------ | ---- | ----------------------------------------------------------------- | ---- |
+| [ ] | 08-078 |      | Introduction to Render Props in React                             |      |
+| [ ] | 08-079 |      | Updating a Parent Component's State from a Child Component        |      |
+| [ ] | 08-080 |      | Automatically Checking if a User is Logged In in React            |      |
+| [ ] | 08-081 |      | How to Convert a Class Component into a Functional Component      |      |
+| [ ] | 08-082 |      | How to Show and Hide Links When Logged In                         |      |
+| [ ] | 08-083 |      | Building a Route Guard in React                                   |      |
+| [ ] | 08-084 |      | Implementing a Logout Handler in the App Component                |      |
+| [ ] | 08-085 |      | Finalizing the Logout Functionality with a Higher Order Component |      |
+
+
+
+### React:        Portfolio Manager
+
+|     | #      | Type | Tittle                                                           | Date |
+| --- | ------ | ---- | ---------------------------------------------------------------- | ---- |
+| [ ] | 08-086 |      | Portfolio Manager Feature Overview                               |      |
+| [ ] | 08-087 |      | Building a Secure Class Component for the Portfolio Manager Page |      |
+| [ ] | 08-088 |      | Portfolio Manager Grid Layout Implementation                     |      |
+| [ ] | 08-089 |      | Populating the Portfolio Manager State with API Call Data        |      |
+| [ ] | 08-090 |      | Building the Portfolio Sidebar List Component                    |      |
+| [ ] | 08-091 |      | Finalizing Portfolio Manager Sidebar List Styles                 |      |
+| [ ] | 08-092 |      | Creating the Portfolio Form and Calling it from the Parent       |      |
+| [ ] | 08-093 |      | Building the Initial Portfolio Form Elements                     |      |
+| [ ] | 08-094 |      | Implementing Portfolio Form Handlers                             |      |
+| [ ] | 08-095 |      | Introduction to Building JavaScript FormData Objects             |      |
+| [ ] | 08-096 |      | Fixing Multiple Key Prop Warnings in React                       |      |
+| [ ] | 08-097 |      | Creating Portfolio Items from React Form                         |      |
+| [ ] | 08-098 |      | Course Checkpoint 16                                             |      |
+
+
 
 ***
 
@@ -782,10 +916,7 @@
 
 ## REACT (iii)
 
-### Module 9 keypoints:
 
-* A deep research on React⚛️: Advance use on API's, custom fields styling, ...
-* Adding new workflows.
 
 ***
 
@@ -793,25 +924,10 @@
 
 ## REACT (iv)
 
-### Module 10 keypoints:
 
-* Mastering React⚛️:
-  * Stringtags, Truncate.
-  * Dropzone.
-  * HOC implementation.
-  * Redux Thunk.
-  * Axios advanced use.
 
 ***
 
 # MODULE 11
 
 ## SQL
-
-### Module 10 keypoints:
-
-* Creating, adding, getting, filtering, updating, reverting, deleting, data using SQL database.
-* Redis.
-* Hash.
-
-***
