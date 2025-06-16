@@ -1,0 +1,26 @@
+<diagram program="umletino" version="15.1"><zoom_level>7</zoom_level><element><id>UMLSequenceAllInOne</id><coordinates><x>77</x><y>42</y><w>616</w><h>483</h></coordinates><panel_attributes>title=seq Phone Parser
+desc=Secuencia de Reformateo/Limpieza de un num. telefónico
+autoTick=false
+obj=Primera Línea de Vida\nParser:parse()~a 
+obj=Segunda Línea de Vida\nParser:digit_length_validator()~b 
+obj=Tercera Línea de Vida\nCountryCodes:country_code_validator()~c
+found-&gt;a : Datos a tratar
+tick=
+tick=
+a-&gt;a + : Eliminar todos los caracteres excepto los numéricos
+tick=
+tick=
+a.a2-&gt;b : validar longitud
+tick=
+b.&gt;a : resultado de digit_length_validator()
+tick=
+tick=
+a.a3-&gt;c: Validar préfijo
+tick=
+c.&gt;a :  Resultado de country_code_validator()
+tick=
+tick=
+a.&gt;lost : Número de teléfono Tratado Ok!
+
+
+</panel_attributes><additional_attributes></additional_attributes></element></diagram>
