@@ -2,40 +2,40 @@
 ## Sterotypes
 --
 
-1. Introduction to UML Stereotypes
-   1.1 Definition and Purpose
-   1.2 Why Stereotypes Look Strange
-   1.3 When and Where to Use Them
+1. Introduction to UML Stereotypes  
+   1.1 Definition and Purpose  
+   1.2 Why Stereotypes Look Strange  
+   1.3 When and Where to Use Them  
 
-2. Stereotype Syntax and Notation
-   2.1 Basic Syntax Rules
-   2.2 Visual Representation
-   2.3 Placement Guidelines
+2. Stereotype Syntax and Notation  
+   2.1 Basic Syntax Rules  
+   2.2 Visual Representation  
+   2.3 Placement Guidelines  
 
-3. Understanding Metaclass Extension
-   3.1 What "Extends a Metaclass" Means
-   3.2 Abstract to Practical Translation
-   3.3 Standardized Naming Benefits
+3. Understanding Metaclass Extension  
+   3.1 What "Extends a Metaclass" Means  
+   3.2 Abstract to Practical Translation  
+   3.3 Standardized Naming Benefits  
 
-4. Common Stereotype Applications
-   4.1 Model-View-Controller (MVC) Patterns
-   4.2 Architectural Pattern Representation
-   4.3 Framework-Specific Stereotypes
-   4.4 Domain-Specific Modeling
+4. Common Stereotype Applications  
+   4.1 Model-View-Controller (MVC) Patterns  
+   4.2 Architectural Pattern Representation  
+   4.3 Framework-Specific Stereotypes  
+   4.4 Domain-Specific Modeling  
 
-5. Practical Examples
-   5.1 MVC Architecture Stereotypes
-   5.2 Enterprise Application Patterns
-   5.3 Web Development Stereotypes
-   5.4 Database Modeling Stereotypes
+5. Practical Examples  
+   5.1 MVC Architecture Stereotypes  
+   5.2 Enterprise Application Patterns  
+   5.3 Web Development Stereotypes 
+   5.4 Database Modeling Stereotypes  
 
-6. Best Practices
-   6.1 When to Use Stereotypes
-   6.2 Clarity vs Complexity
-   6.3 Team Communication
-   6.4 Tool Considerations
+6. Best Practices  
+   6.1 When to Use Stereotypes  
+   6.2 Clarity vs Complexity  
+   6.3 Team Communication  
+   6.4 Tool Considerations  
 
-7. Standards and References
+7. Standards and References  
 
 ---
 
