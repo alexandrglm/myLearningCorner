@@ -1,4 +1,4 @@
-# Module 06 - 156:     UML Components
+# Module 06 - 157:     UML Components
 
 ## DEPENDENCIES
 
@@ -80,7 +80,7 @@ The essence of dependencies lies in **coupling** - the degree to which one compo
 - **Risk assessment** for modifications
 - **Maintenance planning** and resource allocation
 
-![large](./06-156_IMG1.png)
+![large](./06-157_IMG1.png)
 ### 1.2     The Role of Coupling in Software Design
 
 Coupling describes the **interdependence between software modules or components**. In UML dependencies:
@@ -157,7 +157,7 @@ Client -----> Supplier
        (dashed line with open arrowhead)
 ```
 
-![large](./06-156_IMG2.png)
+![large](./06-157_IMG2.png)
 
 **Visual elements:**
 
@@ -707,7 +707,7 @@ needs another component.
 
 That is really the most straightforward explanation on being able to understand how a coupling work, that in turn describes how dependencies work. 
 
-![large](./06-156_IMG1.png)
+![large](./06-157_IMG1.png)
 
 From a practical perspective, it's simply a dotted line with an open arrow from one element to another. Why is it important? Well we need to know which components need other components. If we do not know how this works, whoever is building the system is not going to be able to know how important one element is to another. 
 
@@ -715,7 +715,7 @@ There is another important purpose. If I'm new to a project that has been around
 
 The dependency gives us the ability to know what parts of the application or the software need other parts. The dependency is shown with a dotted line with the open arrow. 
 
-![large](./06-156_IMG2.png)
+![large](./06-157_IMG2.png)
 
 Our example right here is for a music and song request system that connects to Spotify. This is a pretty simple example but this is an application that I'm currently building and is a very real UML diagram. 
 

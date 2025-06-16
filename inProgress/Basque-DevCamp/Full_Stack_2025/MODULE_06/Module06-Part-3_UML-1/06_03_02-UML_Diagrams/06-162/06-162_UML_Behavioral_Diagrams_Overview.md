@@ -1,4 +1,4 @@
-# MODULE 06 - 161    UML Diagrams
+# MODULE 06 - 162    UML Diagrams
 
 ## Behavioral Diagrams - Overview
 
@@ -382,7 +382,7 @@ For an example activity diagram, we have a coffee ordering service.
 - You can see that it starts with an order, someone is going online and ordering coffee. 
 - It goes to a decision point based off on the user's decision.
 
-![large](./06-161_IMG1.png)  
+![large](./06-162_IMG1.png)  
 
 Hopefully, you can see how powerful an activity diagram can be, with one set of elements we've been able to create and render the entire experience that a user would have on a website. This is pretty complex behavior, however, if you handed this to me I would already have ideas on how to build this type of application. 
 
@@ -409,7 +409,7 @@ The next diagram is the use case diagram, again they're a little bit more high l
 - Subsystems
 - Relationships. 
 
-![large](./06-161_IMG2.png)
+![large](./06-162_IMG2.png)
 
 An example Use Case diagram here is for a marketing engine, you can see actors are displayed on both sides. We have a marketing specialist and we have a customer. Inside of the entire diagram we have use cases, you can see everything that both actors have access to. 
 
@@ -431,7 +431,7 @@ What is being visualized is what data looks like and actions at various stages o
 
 The example below shows a state machine diagram. We have a lead funnel diagram, It starts with the user (entry point). Each rectangle represents different state. We have a user who's a visitor, based off of their decisions, if they submitted a form then they can change into a converted state. If they qualify for CRM conditions they get moved into a lead state and so on and so forth. 
 
-![large](./06-161_IMG3.png)
+![large](./06-162_IMG3.png)
 
 The state machine diagram is a way of breaking down parts into small pieces and showing what users will have access to and show decisions that they have. 
 
@@ -454,7 +454,7 @@ The elements that comprise a sequence diagram
 
 Looking at an example, we are coming back to our phone parser code library. What we have here is all of those different elements I just spoke about.
 
-![large](./06-161_IMG4.png)
+![large](./06-162_IMG4.png)
 
 If you start at the beginning, from data to parse, each one of those lines with an arrow that is a message. Messages can be sent to a module itself, the first one where it says "delete all symbols except numbers" is a message from the parse engine to itself. From there it goes down that lifeline, it goes down the activation point (the wide rectangle) then it goes to the next one. It sends a message to the digit length validator to validate the number length. The response is the dotted arrow, this is the message that is sent back. 
 

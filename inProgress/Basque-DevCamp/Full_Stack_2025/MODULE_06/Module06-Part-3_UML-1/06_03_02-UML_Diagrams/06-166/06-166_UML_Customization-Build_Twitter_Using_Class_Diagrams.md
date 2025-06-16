@@ -1,4 +1,4 @@
-# MODULE 06 - 165    UML Examples
+# MODULE 06 - 166    UML Examples
 
 ## UML Customization (by) Building Twitter using Class Diagrams
 
@@ -116,7 +116,7 @@ The Tweet class serves as the central hub of the Twitter system, containing exte
 - `replies`: Response collection
 - `likes`: Engagement metrics
 
-![IMG](./06-165_IMG1.png)
+![IMG](./06-166_IMG1.png)
 
 **Primary Operations/Methods**
 
@@ -354,7 +354,7 @@ non-trivial type of class diagram.
 
 We have a very special treat, we are going to rebuild Twitter using UML. 
 
-![large](./06-165_IMG1.png)
+![large](./06-166_IMG1.png)
 
 We have a Twitter class diagram. It is made up of a number of classes, everything from the main `tweet` class, all the way through security parameters messages. The real Twitter, the full application that we all know and love, is probably much larger than this. Given my experience, I can tell you they probably have a lot of other classes we simply don't know about. I wanted to extract out many of the different elements that we are aware of to show how we could design it ourselves. 
 
@@ -364,7 +364,7 @@ Anytime I go outside of the realm of standard UML it's for a specific reason. Si
 
 So the very first item that I want to look at is one of the most key components of Twitter which is the `tweet` class.
 
-![large](./06-165_IMG2.png)
+![large](./06-166_IMG2.png)
 
 Looking at the `tweet` class, this is a pretty massive class. It has a number of attributes, everything from an ID through likes. We also have a number of items such as hashtags, images, replies, etc. We also have the ability to publish items, which is one of the operations. The real Twitter has many other items. We're not going to go into each one. The important part is understanding which elements are needed in order to build it. 
 
@@ -376,7 +376,7 @@ If you look down inside of the tweet attributes, we have an attribute called "au
 
 We have an ID, text, author, and one called retweet.
 
-![large](./06-165_IMG3.png)
+![large](./06-166_IMG3.png)
 
 Now you see this `retweet` class. I want to point out this is not formal UML right here. You see what we have with a dotted line around the retweet class, you're going to see this for the `tweet`, `#`, for `following` and for the `security` setting. That represents a join table with a bidirectional relationship. 
 Essentially, it means it is an area in the database. In the way that I'm looking at it, it's a class that does nothing but connects other classes. It's kind of like a go-between database table, it is only used as a way of navigating from one class to another. 
@@ -389,7 +389,7 @@ This is the database relationship you have set up, you need a join table and you
 
 Then you just need a reference point to that. That's something that is very helpful, you can tell what the original tweet was and then which one represents the retweeted version. 
 
-![large](./06-165_IMG4.png)
+![large](./06-166_IMG4.png)
 
 Moving down to the very bottom, you can see we have a `like` class, the relationship between `like` is going to belong to a `tweet.` 
 
@@ -404,7 +404,7 @@ For the one operation, we have a like, that's what would manage the process of a
 
 If you're thinking about this in regards to how you would build the feature, you'd have this "like" method that would be able to be called. When someone presses that button, it would perform all the actions. It would say what the tweet was, who is liking it, and it would associate the time stamp on the server to and create a record in the database. 
 
-![large](./06-165_IMG5.png)
+![large](./06-166_IMG5.png)
 
 The `reply` class gives us the ability to have users reply to a tweet, which is a common pattern that you see when you go to Twitter. The `reply` class has a reference to the `tweet` that owns it. 
 
@@ -414,7 +414,7 @@ Hopefully, you can start to see a pattern here. The way the relationships and as
 
 There is just a couple more items that I want to focus on.
 
-![large](./06-165_IMG6.png)
+![large](./06-166_IMG6.png)
 
 The next one is with the `user` class and `following` class. One of the more confusing and advanced features that you'll come across when you're building out social networks is the ability to have a user or one class reference itself. 
 
@@ -428,7 +428,7 @@ That is very different if you've never done it before, it's a completely differe
 
 The last item I'm going to point to is this `TweetHashtag` join table.
 
-![large](./06-165_IMG7.png)
+![large](./06-166_IMG7.png)
 
 We talked about self-referential tables, we have a few other join tables that are simply managing the connection between two classes. So `TweetHashtag` connects the `Tweet` to the `Hashtag`. This is what you typically want to do whenever you have a many to many relationship. A `tweet` needs to be able to have many hashtags and vice versa a hashtag needs to have many tweets. 
 

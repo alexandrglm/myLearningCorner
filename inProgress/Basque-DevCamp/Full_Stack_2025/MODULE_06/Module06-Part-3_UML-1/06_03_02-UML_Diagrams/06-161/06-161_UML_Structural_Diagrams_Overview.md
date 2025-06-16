@@ -1,4 +1,4 @@
-# MODULE 06 - 160    UML Diagrams
+# MODULE 06 - 161    UML Diagrams
 
 ## Structural Diagrams - Overview
 
@@ -229,7 +229,7 @@ In this section on diagrams, we we're going to take a high-level overview of str
 
 We're going to start off by going through the three main types, `Class`, `Deployment`, and `Package`. 
 
-![large](./06-160_IMG1.png)
+![large](./06-161_IMG1.png)
 
 Each one is going to have their very own section of the course so we're not going to dive too far deep into those. I want to provide a resource so that you can have a high-level overview. You can start to see some familiar types of components on the page and the more you see it the more you're going to become familiar with it and feel comfortable using it in your own projects. 
 
@@ -239,15 +239,15 @@ The first diagram we're going to talk about is the Class diagram. The class diag
 
 A class diagram fits in very well with a database modeling system. If you're trying to start a new project, a commonplace to start is to pick out what type of data you want, how you want those elements to be associated with each other, and some of the core operations. The elements that make up a class diagram are `Name`, `Attributes`, and `Operations`.
 
-![large](./06-160_IMG2.png)
+![large](./06-161_IMG2.png)
 
 Looking at an example, you saw this one earlier when we're talking about the elements, we have a class diagram for our Topic class. Our topic has attributes, name and operations. The top part is the `name` of the class followed by the `attributes` and the bottom has the `operations`.
 
-![large](./06-160_IMG3.png)
+![large](./06-161_IMG3.png)
 
 To take more of a deep dive, Let's see what each one really does and also what some symbols represent. 
 
-![large](./06-160_IMG4.png)
+![large](./06-161_IMG4.png)
 
 We know the top class name is "topic." The next box is where you put all your attributes. if you're going to take this class diagram and translate it to use a `Mysql` or a `Postgres` database table, you would create a table called topic or topics. 
 
@@ -267,13 +267,13 @@ So that's a very high-level view of how a Class diagram works.
 
 Next, we're going to talk about deployment diagrams. deployment diagrams are made up of six different elements. 
 
-![large](./06-160_IMG5.png)
+![large](./06-161_IMG5.png)
 
 At a high level, deployment diagrams give us the ability to model how an entire system architecture should be configured. 
 
 If we have an application that has multiple servers, multiple places where we can store code and it's going to communicate with the system, a deployment diagram is perfect for setting that up.
 
-![large](./06-160_IMG6.png)
+![large](./06-161_IMG6.png)
 
 For right here, let's talk about things at a high level. This is a deployment diagram for an assessment engine, starting at the top, it has what is called the CI server. In the CI server we have:
 
@@ -297,7 +297,7 @@ This is a standard setup, we have four servers here and the deployment engine al
 
 Moving on to the last diagram. The package diagram is something that I use when I am building a code library where I want to allow another application to communicate with. 
 
-![large](./06-160_IMG7.png)
+![large](./06-161_IMG7.png)
 
 For the example below, this is a phone parser ruby gem that I built for another project. You can see a frame surrounding it and it's a package diagram for the phone parser gem library that I built. it's made up of a couple different sub-packages. 
 
@@ -307,7 +307,7 @@ We have a phone parser and this has a few elements:
 - Country code
 - Digit length validator
 
-![large](./06-160_IMG8.png)
+![large](./06-161_IMG8.png)
 
 If you notice right there in between we have a dependency. Remember dependencies are those elements that have the dotted lines connected to an open arrow. 
 
