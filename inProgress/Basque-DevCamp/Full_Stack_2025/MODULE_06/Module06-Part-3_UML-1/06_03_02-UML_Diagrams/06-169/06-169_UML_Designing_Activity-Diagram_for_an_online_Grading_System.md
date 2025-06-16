@@ -1,4 +1,4 @@
-# MODULE 06 - 168    UML
+# MODULE 06 - 169    UML
 
 ## Designing an Activity Diagram for an online grading system (2/2)
 
@@ -173,7 +173,7 @@ When the last question is completed, the workflow proceeds through:
 
 The action flows in activity diagrams can be conceptualized using a basketball analogy where each activity represents a player and action flows represent passing the ball between players.
 
-![](./06-168_IMG03.png)
+![](./06-169_IMG03.png)
 
 **Flow Characteristics**
 
@@ -218,7 +218,7 @@ Multiple paths converging at decision points
 Decision points creating multiple possible paths
 ```
 
-![](./06-168_IMG04.png)
+![](./06-169_IMG04.png)
 
 ### Control Transfer Mechanisms
 
@@ -334,7 +334,7 @@ grading system diagram.
 
 We're going to follow the data along at each stage. 
 
-![large](./06-168_IMG1.png)
+![large](./06-169_IMG1.png)
 
 The first thing that I look at with this activity diagram is the name "quiz" up at the top. I know that this activity diagram has to do with the process of working through a quiz. The next spot I look at is the swim lanes, depending on how the UML designer made the diagram, you may see swim lanes that are horizontal. Don't let that throw you off, there are no changes whatsoever, it is dependent on how the components fit on the page and if it makes more sense to place it horizontally or vertically.
 
@@ -359,12 +359,12 @@ Lastly, I look at the student, which will confirm and answer. The system will be
 
 Let's start at the very beginning:
 
-![IMG](./06-168_IMG02.png)
+![IMG](./06-169_IMG02.png)
 
 - We see that a teacher assigns a test in the quiz.
 - From there, it's going to get redirected to the system (if you like sports analogies you can think of action flows kind of like you're playing basketball, with each action flow you're passing the basketball to another player):
 
-![IMG](./06-168_IMG03.png)
+![IMG](./06-169_IMG03.png)
 
 - The system passes to the student. 
 - The student has the ability to confirm (that would be like a student logging into the system and confirming that they want to start a quiz)
@@ -373,13 +373,13 @@ Let's start at the very beginning:
 - The student answers
 - That goes down to a branch (remember the branches are where we can branch and have two different kinds of behavior)
 
-![IMG](./06-168_IMG04.png)
+![IMG](./06-169_IMG04.png)
 
 So, if the guards switch "yes" and "no" are there, then we check with the branches where it says "was at last?" If it was not the last question, it is going to be redirected to the system. It's going to ask another question and loop like that until that branch answer changes.   
 
 Once we get to the point where it was the last question, it's going to switch to "yes" and it's going to follow the other action flow:  
 
-![IMG](./06-168_IMG05.png)
+![IMG](./06-169_IMG05.png)
 
 - it's going to assume the results 
 - It's going to get redirected to the teacher

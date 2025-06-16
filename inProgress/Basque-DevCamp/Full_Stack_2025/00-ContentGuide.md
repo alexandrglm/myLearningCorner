@@ -650,34 +650,38 @@
 
 ### UML Common Components
 
-|     | #      | Type                                                     | Tittle                                             | Date       |
-| --- | ------ | -------------------------------------------------------- | -------------------------------------------------- | ---------- |
-| [X] | 06-150 | UML                                                      | UML Overview                                       | 2025-06-06 |
-| [X] | 06-151 | PreDeveloping - Developing - PostDeveloping/Mainteinance | Stages of Development where UML is Utilized        | 2025-06-06 |
-| [X] | 06-152 |                                                          | Introduction to UML Components and Common Elements | 2025-06-06 |
-| [X] | 06-153 |                                                          | Common UML Components: Frames                      | 2025-06-07 |
-| [X] | 06-154 |                                                          | Common UML Components: Classifiers                 | 2025-06-07 |
-| [X] | 06-155 |                                                          | Common UML Components: Comments and Notes          | 2025-06-07 |
-| [X] | 06-156 |                                                          | Common UML Components: Dependencies                | 2025-06-07 |
-| [X] | 06-157 |                                                          | Common UML Components: Features and Properties     | 2025-06-07 |
+|      | #      | Type                                                     | Tittle                                             | Date       |
+| ---- | ------ | -------------------------------------------------------- | -------------------------------------------------- | ---------- |
+| \[X] | 06-150 | UML                                                      | UML Overview                                       | 2025-06-06 |
+| \[X] | 06-151 | PreDeveloping - Developing - PostDeveloping/Mainteinance | Stages of Development where UML is Utilized        | 2025-06-06 |
+| \[X] | 06-152 |                                                          | Introduction to UML Components and Common Elements | 2025-06-06 |
+| \[X] | 06-153 |                                                          | Common UML Components: Frames                      | 2025-06-07 |
+| \[X] | 06-154 |                                                          | Common UML Components: Classifiers                 | 2025-06-07 |
+| \[X] | 06-155 |                                                          | Common UML Components. Stereotypes                 | 2025-06-16 |
+| \[X] | 06-156 |                                                          | Common UML Components: Comments and Notes          | 2025-06-07 |
+| \[X] | 06-157 |                                                          | Common UML Components: Dependencies                | 2025-06-07 |
+| \[X] | 06-158 |                                                          | Common UML Components: Features and Properties     | 2025-06-07 |
+| \[X] | 06-159 | Quiz                                                     | Introduction to UML                                | 2025-06-09 |
+
+
 
 ### UML Diagrams
 
-|     | #      | Type                                                                                                | Tittle                                                                                | Date       |
-| --- | ------ | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | ---------- |
-| [X] | 06-158 | Quiz                                                                                                | Introduction to UML                                                                   | 2025-06-09 |
-| [X] | 06-159 |                                                                                                     | Section Introduction                                                                  | 2025-06-09 |
-| [X] | 06-160 | `Class` - `Deployment` - `Package`                                                                  | Overview of Structural Diagrams in UML                                                | 2025-06-09 |
-| [X] | 06-161 | `Activity` - `UseCase` - `State` - `Sequence`                                                       | Overview of Behavioral Diagrams in UML                                                | 2025-06-09 |
-| [X] | 06-162 | Quiz                                                                                                | UML Diagrams                                                                          | 2025-06-10 |
-| [X] | 06-163 | `1.Class Name - 2. Attributes - 3. Operations/Methods`                                              | Overview of Class Diagram Elements                                                    | 2025-06-12 |
-| [X] | 06-164 | `Associations -> Binary, Compounded, Reflexive` - `1. MULTIPLICITY` - `2. NAVIGABILITY` - `3. ROLE` | UML Class Diagram Associations, Multiplicity, and Navigability (and Role)             | 2025-06-12 |
-| [X] | 06-165 | UML Class Diagram Example - `Customizating UML to improve clarity - Being Flexible`                 | Deep Dive: Build Twitter Using Class Diagrams **(UML Customization for the Clarity)** | 2025-06-12 |
-| [X] | 06-166 | Quiz                                                                                                | Class Diagrams                                                                        | 2025-06-12 |
-| [X] | 06-167 |                                                                                                     | Elements of a UML Activity Diagram                                                    | 2025-06-12 |
-| [X] | 06-168 |                                                                                                     | How to Design an Activity Diagram for an Online Grading System                        | 2025-06-12 |
-| [X] | 06-169 | Quiz                                                                                                | Activity Diagrams                                                                     | 2025-06-12 |
-| [ ] | 06-170 |                                                                                                     | **Course Checkpoint 12**                                                              |            |
+|      | #      | Type                                                                                                | Tittle                                                                                | Date       |
+| ---- | ------ | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | ---------- |
+| \[X] | 06-160 |                                                                                                     | Section Introduction                                                                  | 2025-06-09 |
+| \[X] | 06-161 | `Class` - `Deployment` - `Package`                                                                  | Overview of Structural Diagrams in UML                                                | 2025-06-09 |
+| \[X] | 06-162 | `Activity` - `UseCase` - `State` - `Sequence`                                                       | Overview of Behavioral Diagrams in UML                                                | 2025-06-09 |
+| \[X] | 06-163 | Quiz                                                                                                | UML Diagrams                                                                          | 2025-06-10 |
+| \[X] | 06-164 | `1.Class Name - 2. Attributes - 3. Operations/Methods`                                              | Overview of Class Diagram Elements                                                    | 2025-06-12 |
+| \[X] | 06-165 | `Associations -> Binary, Compounded, Reflexive` - `1. MULTIPLICITY` - `2. NAVIGABILITY` - `3. ROLE` | UML Class Diagram Associations, Multiplicity, and Navigability (and Role)             | 2025-06-12 |
+| \[X] | 06-166 | UML Class Diagram Example - `Customizating UML to improve clarity - Being Flexible`                 | Deep Dive: Build Twitter Using Class Diagrams **(UML Customization for the Clarity)** | 2025-06-12 |
+| \[X] | 06-167 | Quiz                                                                                                | Class Diagrams                                                                        | 2025-06-12 |
+| \[X] | 06-168 |                                                                                                     | Elements of a UML Activity Diagram                                                    | 2025-06-12 |
+| \[X] | 06-169 |                                                                                                     | How to Design an Activity Diagram for an Online Grading System                        | 2025-06-12 |
+| \[X] | 06-170 | Quiz                                                                                                | Activity Diagrams                                                                     | 2025-06-12 |
+| \[ ] | 06-171 |                                                                                                     | **Course Checkpoint 12**                                                              |            |
+
 
 ---
 
@@ -685,67 +689,68 @@
 
 ## UML (Part 2)
 
-|     | #      | Type | Tittle                                                          | Date       |
-| --- | ------ | ---- | --------------------------------------------------------------- | ---------- |
-| [X] | 07-171 |      | Overview of UML Use Case Diagram Elements                       | 2025-06-15 |
-| [X] | 07-172 |      | Deep Dive: Build a Marketing Automation System Use Case Diagram | 2025-06-15 |
-| [X] | 07-173 | Quiz | Use Case Diagrams                                               | 2025-06-15 |
-| [ ] | 07-174 |      | Overview of the Elements of a UML Deployment Diagram            |            |
-| [ ] | 07-175 |      | Deep Dive: Build a Song Request Deployment Engine Diagram       |            |
-| [ ] | 07-176 |      | Deployment Diagrams                                             |            |
-| [ ] | 07-177 |      | Overview of UML Package Diagram Elements                        |            |
-| [ ] | 07-178 |      | Deep Dive: Build a Marketing Automation System Package Diagram  |            |
-| [ ] | 07-179 |      | Package Diagrams                                                |            |
-| [ ] | 07-180 |      | Overview of the Elements of a UML Sequence Diagram              |            |
-| [ ] | 07-181 |      | Deep Dive: Build a CRM Commission Engine Sequence Diagram       |            |
-| [ ] | 07-182 |      | Interaction Sequence Diagrams                                   |            |
-| [ ] | 07-183 |      | Overview of UML State Machine Diagram Elements                  |            |
-| [ ] | 07-184 |      | Deep Dive: Build a CRM State Machine Diagram                    |            |
-| [ ] | 07-185 |      | State Machine Diagrams                                          |            |
+|      | #      | Type | Tittle                                                          | Date       |
+| ---- | ------ | ---- | --------------------------------------------------------------- | ---------- |
+| \[X] | 07-172 |      | Overview of UML Use Case Diagram Elements                       | 2025-06-15 |
+| \[X] | 07-173 |      | Deep Dive: Build a Marketing Automation System Use Case Diagram | 2025-06-15 |
+| \[X] | 07-174 | Quiz | Use Case Diagrams                                               | 2025-06-15 |
+| \[ ] | 07-175 |      | Overview of the Elements of a UML Deployment Diagram            |            |
+| \[ ] | 07-176 |      | Deep Dive: Build a Song Request Deployment Engine Diagram       |            |
+| \[ ] | 07-177 |      | Deployment Diagrams                                             |            |
+| \[ ] | 07-178 |      | Overview of UML Package Diagram Elements                        |            |
+| \[ ] | 07-179 |      | Deep Dive: Build a Marketing Automation System Package Diagram  |            |
+| \[ ] | 07-180 |      | Package Diagrams                                                |            |
+| \[ ] | 07-181 |      | Overview of the Elements of a UML Sequence Diagram              |            |
+| \[ ] | 07-182 |      | Deep Dive: Build a CRM Commission Engine Sequence Diagram       |            |
+| \[ ] | 07-183 |      | Interaction Sequence Diagrams                                   |            |
+| \[ ] | 07-184 |      | Overview of UML State Machine Diagram Elements                  |            |
+| \[ ] | 07-185 |      | Deep Dive: Build a CRM State Machine Diagram                    |            |
+| \[ ] | 07-186 |      | State Machine Diagrams                                          |            |
 
 ### UML Projects
 
-|     | #      | Type | Tittle                                                       | Date |
-| --- | ------ | ---- | ------------------------------------------------------------ | ---- |
-| [ ] | 07-186 |      | The Importance of Systems Analysis and Design                |      |
-| [ ] | 07-187 |      | Overview of Software Systems                                 |      |
-| [ ] | 07-188 |      | Project One: Design Twitter System                           |      |
-| [ ] | 07-189 |      | Project Solution: Twitter Use Case Diagram                   |      |
-| [ ] | 07-190 |      | Project Solution: Twitter Class Diagram                      |      |
-| [ ] | 07-191 |      | Project Two: Design an Ecommerce Application                 |      |
-| [ ] | 07-192 |      | Project Solution: eCommerce Activity Diagram                 |      |
-| [ ] | 07-193 |      | Project Solution: eCommerce Class Diagram                    |      |
-| [ ] | 07-194 |      | Project Three: Model a Phone Parser Code Library             |      |
-| [ ] | 07-195 |      | Project Solution: Phone Parser Package Diagram               |      |
-| [ ] | 07-196 |      | Project Solution: Phone Parser Sequence Diagram              |      |
-| [ ] | 07-197 |      | Project 4: Design Enterprise Fleet Management System - P1    |      |
-| [ ] | 07-198 |      | Project 4: Design Enterprise Fleet Management System - P2    |      |
-| [ ] | 07-199 |      | Project Solution: Enterprise Activity Diagram                |      |
-| [ ] | 07-200 |      | Project Solution: Enterprise Package Diagram                 |      |
-| [ ] | 07-201 |      | Project Solution: Enterprise Deployment Diagram              |      |
-| [ ] | 07-202 |      | Project Solution: Enterprise Class Diagram                   |      |
-| [ ] | 07-203 |      | Project 5: Design the Uber Ride Sharing System               |      |
-| [ ] | 07-204 |      | Project Solution: Uber Activity Diagram                      |      |
-| [ ] | 07-205 |      | Project Solution: Uber Package Diagram                       |      |
-| [ ] | 07-206 |      | Project Solution: Uber Use Case Diagram                      |      |
-| [ ] | 07-207 |      | Project Solution: Uber Deployment Diagram                    |      |
-| [ ] | 07-208 |      | Project 6: Model an Education Assessment System              |      |
-| [ ] | 07-209 |      | Project Solution: Education Assessment Activity Diagram      |      |
-| [ ] | 07-210 |      | Project Solution: Education Assessment Class Diagram         |      |
-| [ ] | 07-211 |      | Project Solution: Education Assessment State Machine Diagram |      |
-| [ ] | 07-212 |      | Project Solution: Education Assessment Deployment Diagram    |      |
-| [ ] | 07-213 |      | Project 7: Design a Marketing Automation System - Part 1     |      |
-| [ ] | 07-214 |      | Project 7: Design a Marketing Automation System - Part 2     |      |
-| [ ] | 07-215 |      | Project Solution: Marketing System Use Case Diagram          |      |
-| [ ] | 07-216 |      | Project Solution: Marketing System Activity Diagram          |      |
-| [ ] | 07-217 |      | Project Solution: Marketing System Package Diagram           |      |
-| [ ] | 07-218 |      | Project Solution: Marketing System Deployment Diagram        |      |
-| [ ] | 07-219 |      | Project Solution: Marketing System State Machine Diagram     |      |
-| [ ] | 07-220 |      | Project Solution: Marketing System Class Diagram             |      |
+|      | #      | Type | Tittle                                                       | Date |
+| ---- | ------ | ---- | ------------------------------------------------------------ | ---- |
+| \[ ] | 07-187 |      | The Importance of Systems Analysis and Design                |      |
+| \[ ] | 07-188 |      | Overview of Software Systems                                 |      |
+| \[ ] | 07-189 |      | Project One: Design Twitter System                           |      |
+| \[ ] | 07-190 |      | Project Solution: Twitter Use Case Diagram                   |      |
+| \[ ] | 07-191 |      | Project Solution: Twitter Class Diagram                      |      |
+| \[ ] | 07-192 |      | Project Two: Design an Ecommerce Application                 |      |
+| \[ ] | 07-193 |      | Project Solution: eCommerce Activity Diagram                 |      |
+| \[ ] | 07-194 |      | Project Solution: eCommerce Class Diagram                    |      |
+| \[ ] | 07-195 |      | Project Three: Model a Phone Parser Code Library             |      |
+| \[ ] | 07-196 |      | Project Solution: Phone Parser Package Diagram               |      |
+| \[ ] | 07-197 |      | Project Solution: Phone Parser Sequence Diagram              |      |
+| \[ ] | 07-198 |      | Project 4: Design Enterprise Fleet Management System - P1    |      |
+| \[ ] | 07-199 |      | Project 4: Design Enterprise Fleet Management System - P2    |      |
+| \[ ] | 07-200 |      | Project Solution: Enterprise Activity Diagram                |      |
+| \[ ] | 07-201 |      | Project Solution: Enterprise Package Diagram                 |      |
+| \[ ] | 07-202 |      | Project Solution: Enterprise Deployment Diagram              |      |
+| \[ ] | 07-203 |      | Project Solution: Enterprise Class Diagram                   |      |
+| \[ ] | 07-204 |      | Project 5: Design the Uber Ride Sharing System               |      |
+| \[ ] | 07-205 |      | Project Solution: Uber Activity Diagram                      |      |
+| \[ ] | 07-206 |      | Project Solution: Uber Package Diagram                       |      |
+| \[ ] | 07-207 |      | Project Solution: Uber Use Case Diagram                      |      |
+| \[ ] | 07-208 |      | Project Solution: Uber Deployment Diagram                    |      |
+| \[ ] | 07-209 |      | Project 6: Model an Education Assessment System              |      |
+| \[ ] | 07-210 |      | Project Solution: Education Assessment Activity Diagram      |      |
+| \[ ] | 07-211 |      | Project Solution: Education Assessment Class Diagram         |      |
+| \[ ] | 07-212 |      | Project Solution: Education Assessment State Machine Diagram |      |
+| \[ ] | 07-213 |      | Project Solution: Education Assessment Deployment Diagram    |      |
+| \[ ] | 07-214 |      | Project 7: Design a Marketing Automation System - Part 1     |      |
+| \[ ] | 07-215 |      | Project 7: Design a Marketing Automation System - Part 2     |      |
+| \[ ] | 07-216 |      | Project Solution: Marketing System Use Case Diagram          |      |
+| \[ ] | 07-217 |      | Project Solution: Marketing System Activity Diagram          |      |
+| \[ ] | 07-218 |      | Project Solution: Marketing System Package Diagram           |      |
+| \[ ] | 07-219 |      | Project Solution: Marketing System Deployment Diagram        |      |
+| \[ ] | 07-220 |      | Project Solution: Marketing System State Machine Diagram     |      |
+| \[ ] | 07-221 |      | Project Solution: Marketing System Class Diagram             |      |
+
 
 |     | #      | Type | Tittle               | Date |
 | --- | ------ | ---- | -------------------- | ---- |
-| [ ] | 07-221 |      | Course Checkpoint 13 |      |
+| [ ] | 07-222 |      | Course Checkpoint 13 |      |
 
 ---
 

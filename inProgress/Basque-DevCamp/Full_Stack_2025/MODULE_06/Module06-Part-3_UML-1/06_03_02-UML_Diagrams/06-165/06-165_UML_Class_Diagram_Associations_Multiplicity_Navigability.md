@@ -1,4 +1,4 @@
-# MODULE 06 - 164    UML Diagrams
+# MODULE 06 - 165    UML Diagrams
 
 ## Class Diagram Associations, Multiplicity, Navigability
 
@@ -69,7 +69,7 @@ Using a content management system model with three classes:
 - **Guide has many Tags**: Guides can be tagged with multiple keywords
 - **Tag belongs to many Guides**: Tags can be applied to multiple guides
 
-![large](./06-164_IMG02.png)
+![large](./06-165_IMG02.png)
 
 This creates a hierarchical content structure where topics organize guides, and tags provide cross-cutting categorization.
 
@@ -104,7 +104,7 @@ Multiplicity defines the quantitative aspects of associations using specific not
 
 ### Common Multiplicity Patterns
 
-![large](./06-164_IMG03.png)
+![large](./06-165_IMG03.png)
 
 **Topic to Guide Relationship: `1..*`**
 
@@ -150,7 +150,7 @@ This notation immediately conveys that guides can have multiple tags, making dia
 - **Guide**: "Class Diagrams" belongs to UML topic, tagged with "design," "documentation," "OOP"
 - **Tag**: "Design" appears across multiple guides in different topics
 
-![large](./06-164_IMG1.png)
+![large](./06-165_IMG1.png)
 
 This structure enables flexible content organization while maintaining clear hierarchical relationships.
 
@@ -176,7 +176,7 @@ Navigability defines **how objects can access and communicate with related objec
 
 Using the Topic-Guide-Tag model, navigation possibilities include:
 
-![large](./06-164_IMG04.png)
+![large](./06-165_IMG04.png)
 
 **From Topic:**
 
@@ -296,7 +296,7 @@ what it takes to build an effective full diagram for a system.
 
 The other side is being able to establish the right kinds of associations between classes. I have created three different classes and taken out the attributes and the operations so we can focus on the relationships. Relationship is the same thing as an association, It is how one class is connected to another.
 
-![large](./06-164_IMG1.png)
+![large](./06-165_IMG1.png)
 
 I have a topic class which is connected to a guide which is connected to a tag class. Each of these has a relationship/association with the other one. This is how you can set up your associations at a high level. You may have noticed those little `1's` and `0's`, `...` , `*`, those are ways that we can be very clear and very explicit about that type of association. 
 
@@ -317,7 +317,7 @@ We're going to talk about a high level Association, I'm going to give examples b
 - guide has many and belongs to tags
 - tag has many and belongs to guides
 
-![](./06-164_IMG02.png)
+![](./06-165_IMG02.png)
 
 How do we know that a topic has many guides and not the other way around? When we talk about those things that may seem kind of intuitive, however, the numbers are what give it away. That leads to how we need to understand multiplicity. 
 
@@ -333,7 +333,7 @@ Multiplicity is how we designate the direction of the relationship in regards to
 
 - There is always at least one guide for every tag. The tag, if you think about it in a blogging sense, are not going to live by itself. A tag has to have some guide that it was created for and added to in order to be alive, that's its dependency. It can also belong to many guides. Think of having multiple blog posts where you're talking about UML, you may add the tag UML, you would add that to the blog/guide. That means a tag can still have many guides, once we get into our detailed breakdown and go into how we would rebuild Twitter using a class diagram, we're going to see this type of relationship quite a bit. 
 
-![](./06-164_IMG03.png)
+![](./06-165_IMG03.png)
 
 Another more simplified way is, we can draw a line and put a star there. If we put a guide and connected it to tag, we could put a star where the tag is and most developers could see that we mean a guide can have many tags. That's another type of approach you will see often. 
 
@@ -344,6 +344,6 @@ Navigability deals with is how you can have one class communicate with any other
 - You can find all of the guides for each topic because topic is connected to guide
 - You can find all of the tags for a topic through a guide. Imagine that we add a topic, like UML, and underneath that, we had any number of guides. if you traverse and go from topic to one of the guides, you could get access to see all of the tags that are associated with that guide. You can do that for each one of the other ones, you can find a guide topic, you can find all the tags associated with a guide, etc. 
 
-![](./06-164_IMG04.png)
+![](./06-165_IMG04.png)
 
 This is a great time to point out why UML is so powerful. Imagine a situation where we didn't have UML., (UML was never invented) and we had to write out all of these associations so the developer would be able to understand it and translate it into code. Notice, we didn't have room to write all the different ways you could navigate from a topic to a tag using these 3 classes. Imagine taking a system that has several classes and all kinds of different relationships. It would be a very long list in order to build those and write out all navigation rules. With UML, you can visually see how each one of these elements is connected. You could pick one and then traverse the line to see what items it can navigate. If it can navigate to it here it should be able to do that in the code. 
