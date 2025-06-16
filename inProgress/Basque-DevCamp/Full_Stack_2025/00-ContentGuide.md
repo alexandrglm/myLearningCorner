@@ -621,13 +621,13 @@
 |     | #      | Type                                                                                                                                        | Tittle                                                              | Date       |
 | --- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- | ---------- |
 | [X] | 06-119 | Exercise - `.innerHTML`,  `.enabled / .disabled` elements - `this` context outside a Class.                                                 | How to Build a Character Countdown Function in JavaScript           | 2025-05-19 |
-| [X] | 06-120 | DRY - Reusable functions                                                                                                                    | Guide to Building Shared Behavior with JavaScript Functions         | 2025-05-19 |
+| [X] | 06-120 | DRY - Reusable functions \| ( 17_02 demo app @ Javascript-Course)                                                                           | Guide to Building Shared Behavior with JavaScript Functions         | 2025-05-19 |
 | [X] | 06-121 | `const hotKeys = (e) => {<br/>    const event = window.event ? window.event : e;<br/><br/>  if (event.keyCode === 66 && event.ctrlKey) { }` | How to Add Hot Keys to a Web Application in Vanilla JavaScript      | 2025-05-19 |
 | [X] | 06-122 | `x.createElement(y)`, `x.appendChild(y)`                                                                                                    | How to Dynamically Create HTML Elements with JavaScript             | 2025-05-19 |
 | [X] | 06-123 |                                                                                                                                             | Course Checkpoint 11                                                | 2025-06-03 |
 | [X] | 06-124 | `x.forEach ( element => element.remove() )`                                                                                                 | Guide to Removing HTML Elements with JavaScript                     | 2025-06-11 |
-| [X] | 06-125 | `Object -> forEach -> element -> perform the action -> once`                                                                                | Project Requirements: Create and Remove Bullet Points Between Lists | 2025-06-11 |
-| [X] | 06-126 |                                                                                                                                             | Project Solution: Create and Remove Bullet Points Between Lists     | 2025-06-11 |
+| [X] | 06-125 | `Object -> forEach -> element -> perform the action -> once` \| ( Included 00_Exercises  @ Javascript-Course)                               | Project Requirements: Create and Remove Bullet Points Between Lists | 2025-06-11 |
+| [X] | 06-126 | ( Included 00_Exercises  @ Javascript-Course)                                                                                               | Project Solution: Create and Remove Bullet Points Between Lists     | 2025-06-11 |
 
 ### JavaScript 18:     Developer Tools and Console Utilities
 
