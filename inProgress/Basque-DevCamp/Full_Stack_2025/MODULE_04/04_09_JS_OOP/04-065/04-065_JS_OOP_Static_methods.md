@@ -80,10 +80,13 @@ Static methods are ideal for **utility functions** that process class-related da
 **Example**: Check if an instructor can teach:
 
 ```js
-class Instructor {  
+class Instructor { 
+
   constructor({ name, role = "assistant" }) {  
+  
     this.name = name;  
     this.role = role;  
+  
   }  
 
   static canTeach(instructor) {  
