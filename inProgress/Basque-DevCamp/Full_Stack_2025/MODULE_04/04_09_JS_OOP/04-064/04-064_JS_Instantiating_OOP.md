@@ -17,7 +17,7 @@
 
 ## 1. Class Definition
 
-Classes in JavaScript serve as blueprints for creating objects. They encapsulate:
+Classes in JavaScript serve as **blueprints for creating objects**. They encapsulate:
 
 - **Properties** (data/state)
 
@@ -175,7 +175,10 @@ Instructor.prototype.school = 'DevCamp'; // Affects ALL instances
 
 Initialize all relevant properties in constructor for better code organization and predictability.
 
----
+```js
+class Instructor {
+  constructor( {name} ) {
+    
     this.name = name;
     return this;
   }
@@ -201,10 +204,30 @@ class Instructor {
   // ...
 
   _validateRole(role) {
-    return ['assistant', 'teacher', 'lead'].includes(role);
+    return ['assistant', 'teacher', 'lead'].includes(this.role);
   }
 }
 ```
+
+### REAL private Method Convention (Since ES2021)
+
+```js
+class Instructor{
+
+  #role;
+  
+  constructor( {name, role} ) {
+
+    this.name = name;
+    this.#role = role;
+  }
+
+  #validateRole(role) {
+    
+    return ['assistant', 'teacher', 'lead'].include(this.#role)
+  }
+}
+
 
 ****
 
@@ -212,6 +235,8 @@ class Instructor {
 
 * [Classes -> Method Definitions - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes#method_definitions)
 
+
+* [JS OOP Private Methods](https://stackoverflow.com/questions/55611/javascript-private-methods)
 ****
 
 ## Video lesson Speech

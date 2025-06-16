@@ -1,0 +1,1262 @@
+﻿WEBVTT
+
+1
+00:00:00.790 --> 00:00:02.750
+<v Narrador>Si recuerdas, en nuestra introducción</v>
+
+2
+00:00:02.750 --> 00:00:06.480
+mencioné como UML se divide en
+
+3
+00:00:06.480 --> 00:00:08.930
+dos tipos diferentes de diagramas.
+
+4
+00:00:08.930 --> 00:00:11.030
+Tenemos diagramas estructurales
+
+5
+00:00:11.030 --> 00:00:16.030
+que nos dan una vista de alto nivel de cómo se organizan
+
+6
+00:00:16.240 --> 00:00:18.550
+nuestra base codificada y nuestros sistemas
+
+7
+00:00:18.550 --> 00:00:21.940
+y luego tenemos diagramas de comportamiento
+
+8
+00:00:21.940 --> 00:00:24.620
+y eso es lo que veremos hoy.
+
+9
+00:00:24.620 --> 00:00:27.910
+Y como revisión, de comportamiento significa,
+
+10
+00:00:27.910 --> 00:00:29.270
+prácticamente como suena,
+
+11
+00:00:29.270 --> 00:00:32.790
+estos diagramas ilustrarán
+
+12
+00:00:32.790 --> 00:00:34.590
+cómo nuestro sistema debería comportarse.
+
+13
+00:00:34.590 --> 00:00:35.900
+Cómo debería actuar.
+
+14
+00:00:35.900 --> 00:00:40.900
+Cómo debería interactuar con los mismos sistemas internos
+
+15
+00:00:41.550 --> 00:00:45.350
+junto con actores externos, individuos y usuarios
+
+16
+00:00:45.350 --> 00:00:48.560
+que trabajarán con el sistema.
+
+17
+00:00:48.560 --> 00:00:50.680
+Ahora los diagramas que recorreremos
+
+18
+00:00:50.680 --> 00:00:53.160
+son los diagramas de actividad, el caso
+
+19
+00:00:53.160 --> 00:00:56.920
+práctico, máquina de estado y secuencia.
+
+20
+00:00:56.920 --> 00:01:00.520
+Y recorreremos una perspectiva general de alto nivel
+
+21
+00:01:00.520 --> 00:01:04.050
+de cada uno de esos y luego más adelante en el transcurso
+
+22
+00:01:04.050 --> 00:01:07.520
+cada uno de esos tendrá su propia sección en las que
+
+23
+00:01:07.520 --> 00:01:12.110
+entraremos en más detalle sobre qué hacen los elementos,
+
+24
+00:01:12.110 --> 00:01:15.580
+cómo pueden construirse así puedes comenzar a usarlos
+
+25
+00:01:15.580 --> 00:01:18.110
+para tus propios proyectos.
+
+26
+00:01:18.110 --> 00:01:21.900
+Para comenzar tenemos el diagrama de actividad,
+
+27
+00:01:21.900 --> 00:01:24.090
+este es realmente muy poderoso.
+
+28
+00:01:24.090 --> 00:01:28.460
+Esto es, me gusta considerar a los diagramas de actividades
+
+29
+00:01:28.460 --> 00:01:32.180
+como a los diagramas de comportamiento o la categoría
+
+30
+00:01:32.180 --> 00:01:33.013
+es de la misma manera que los diagramas de clase son
+
+31
+00:01:33.013 --> 00:01:36.080
+con respecto a los estructurales.
+
+32
+00:01:36.080 --> 00:01:41.080
+Los diagramas de actividades son muy sencillos para que
+
+33
+00:01:42.430 --> 00:01:44.030
+usuarios no técnicos puedan ver y entender.
+
+34
+00:01:44.030 --> 00:01:47.730
+Cuando trabajo con un ejecutivo
+
+35
+00:01:47.730 --> 00:01:49.670
+que puede no ser técnico,
+
+36
+00:01:49.670 --> 00:01:52.710
+puede que no tenga idea qué es UML,
+
+37
+00:01:52.710 --> 00:01:54.250
+mucho menos que significan las siglas
+
+38
+00:01:54.250 --> 00:01:57.340
+y los componentes que lo componen.
+
+39
+00:01:57.340 --> 00:01:58.173
+El diagrama de actividad le permite
+
+40
+00:01:58.173 --> 00:01:59.006
+mirar una table y ver exactamente
+
+41
+00:02:04.300 --> 00:02:07.290
+lo que el sistema debería hacer
+
+42
+00:02:07.290 --> 00:02:10.400
+desde el comienzo, todo el recorrido hasta el final.
+
+43
+00:02:10.400 --> 00:02:14.660
+Pues los diagramas de actividad tienen muy buen sintaxis
+
+44
+00:02:14.660 --> 00:02:18.800
+tanto como para usted como desarrollador y para un ingeniero
+
+45
+00:02:18.800 --> 00:02:22.800
+como para gente que puede no tener conocimientos técnicos.
+
+46
+00:02:22.800 --> 00:02:26.270
+También aprovecho los diagramas de actividad un poco
+
+47
+00:02:26.270 --> 00:02:30.420
+siempre que estoy creando un sistema desde cero
+
+48
+00:02:30.420 --> 00:02:33.020
+y quiero solo comprometerme
+
+49
+00:02:33.020 --> 00:02:37.520
+y ver exactamente qué es lo que está pasando en cada estado
+
+50
+00:02:37.520 --> 00:02:39.928
+del ciclo de vida de un usuario
+
+51
+00:02:39.928 --> 00:02:43.517
+o en un tipo de sistema de flujo de trabajo.
+
+52
+00:02:43.517 --> 00:02:46.117
+Pues los elementos integrados
+
+53
+00:02:46.117 --> 00:02:48.620
+dentro de un diagrama de actividad es,
+
+54
+00:02:48.620 --> 00:02:51.540
+habrá un estado inicial y un punto de partida.
+
+55
+00:02:51.540 --> 00:02:56.150
+Una actividad o un estado de acción, un flujo de acción,
+
+56
+00:02:56.150 --> 00:02:59.680
+decisiones o sectorización, guardias
+
+57
+00:02:59.680 --> 00:03:03.640
+y luego y un estado final o punto final.
+
+58
+00:03:03.640 --> 00:03:06.300
+Para observar un ejemplo de diagrama de actividad,
+
+59
+00:03:06.300 --> 00:03:10.030
+justo aquí tenemos uno de un servicio de ordenes de café.
+
+60
+00:03:10.030 --> 00:03:14.240
+Y tenemos cada uno de los componentes que revisamos.
+
+61
+00:03:14.240 --> 00:03:18.210
+Puedes ver que comienza con una orden
+
+62
+00:03:18.210 --> 00:03:21.550
+y alguien se conecta online, están ordenando café,
+
+63
+00:03:21.550 --> 00:03:23.550
+se dirige justo a un punto de decisión
+
+64
+00:03:23.550 --> 00:03:27.580
+y puedes ver que se llama punto de decisión o sector.
+
+65
+00:03:27.580 --> 00:03:30.930
+Y se basará en la decisión del usuario,
+
+66
+00:03:30.930 --> 00:03:33.040
+si están buscando algo,
+
+67
+00:03:33.040 --> 00:03:34.820
+si están investigando una categoría,
+
+68
+00:03:34.820 --> 00:03:36.950
+buscarán algo
+
+69
+00:03:36.950 --> 00:03:39.100
+que ya han guardado en el sitio web,
+
+70
+00:03:39.100 --> 00:03:40.300
+se desviará
+
+71
+00:03:40.300 --> 00:03:42.340
+y luego el usuario tendrá
+
+72
+00:03:42.340 --> 00:03:43.173
+una experiencia completamente distinta basada
+
+73
+00:03:43.173 --> 00:03:44.673
+en sus decisiones.
+
+74
+00:03:46.700 --> 00:03:49.808
+Ahora, por suerte podrás ver tan solo este diagrama
+
+75
+00:03:49.808 --> 00:03:50.840
+de alto nivel
+
+76
+00:03:50.840 --> 00:03:53.730
+y cuán poderoso el diagrama de actividad puede realmente ser
+
+77
+00:03:53.730 --> 00:03:58.730
+porque con un conjunto de elementos justo aquí
+
+78
+00:03:58.770 --> 00:04:03.300
+Pudimos crear y representar la experiencia completa
+
+79
+00:04:03.300 --> 00:04:05.640
+que un usuario tendrá en un sitio web.
+
+80
+00:04:05.640 --> 00:04:07.930
+Este es un comportamiento bastante complejo
+
+81
+00:04:07.930 --> 00:04:10.200
+pero si lo dejas en mis manos
+
+82
+00:04:10.200 --> 00:04:12.970
+ya hubiese tenido algunas ideas geniales
+
+83
+00:04:12.970 --> 00:04:16.210
+sobre cómo crear este tipo de aplicación.
+
+84
+00:04:16.210 --> 00:04:20.820
+Ahora, es de mucho más alto nivel que, digamos, un diagrama
+
+85
+00:04:20.820 --> 00:04:22.290
+de clase en el lado estructural
+
+86
+00:04:22.290 --> 00:04:24.730
+y también es de más alto nivel
+
+87
+00:04:24.730 --> 00:04:29.730
+que cosas como un diagrama de caso de uso o de secuencia
+
+88
+00:04:30.800 --> 00:04:35.000
+porque lo único que nos importa justo aquí son actividades.
+
+89
+00:04:35.000 --> 00:04:38.549
+Así que no entraremos en detalle sobre los nombres de
+
+90
+00:04:38.549 --> 00:04:39.891
+los nombres de los atributos
+
+91
+00:04:39.891 --> 00:04:42.860
+o los nombres de los métodos o funciones.
+
+92
+00:04:42.860 --> 00:04:45.130
+Justo aquí solo quiero ver
+
+93
+00:04:45.130 --> 00:04:48.750
+cómo luce la experiencia para un usuario.
+
+94
+00:04:48.750 --> 00:04:51.590
+Ellos van a, buscarán productos,
+
+95
+00:04:51.590 --> 00:04:53.490
+qué pasa cuando encuentran un producto.
+
+96
+00:04:53.490 --> 00:04:56.450
+Qué pasa cuando lo encuentran y quieren verlo
+
+97
+00:04:56.450 --> 00:05:00.120
+o qué pasa si toman una decisión diferente.
+
+98
+00:05:00.120 --> 00:05:02.680
+Si quieren agregarlo al carrito o no,
+
+99
+00:05:02.680 --> 00:05:05.980
+luego les damos otros tipos de opciones.
+
+100
+00:05:05.980 --> 00:05:09.350
+Y esta es una manera de poder mostrar
+
+101
+00:05:09.350 --> 00:05:13.750
+todo interior de un diagrama que comienza por el principio
+
+102
+00:05:13.750 --> 00:05:17.623
+todo el camino hacia el final de la transacción
+
+103
+00:05:18.500 --> 00:05:21.890
+El próximo diagrama el diagrama de caso de uso.
+
+104
+00:05:21.890 --> 00:05:24.180
+Pues, los casos de uso son geniales.
+
+105
+00:05:24.180 --> 00:05:26.530
+Una vez más, tienen un nivel un poco más alto
+
+106
+00:05:26.530 --> 00:05:28.970
+y te darán la posibilidad
+
+107
+00:05:28.970 --> 00:05:32.790
+de mostrar todo a lo que un usuario tiene acceso.
+
+108
+00:05:32.790 --> 00:05:36.320
+Pues, lo que a mí personalmente me gusta es usar diagramas
+
+109
+00:05:36.320 --> 00:05:39.530
+de uso de caso cuando comienzo a crear una aplicación
+
+110
+00:05:39.530 --> 00:05:43.480
+y necesito ilustrar un sistema de autorización.
+
+111
+00:05:43.480 --> 00:05:46.530
+Entonces, lo que quiero decir es que este tipo de usuario
+
+112
+00:05:46.530 --> 00:05:48.760
+puede realizar todas estas tareas.
+
+113
+00:05:48.760 --> 00:05:51.930
+Este otro tipo de usuario como un usuario administrador
+
+114
+00:05:51.930 --> 00:05:55.440
+pueden realizar incluso estas tareas adicionales.
+
+115
+00:05:55.440 --> 00:05:57.510
+Pues, este tipo de comportamiento
+
+116
+00:05:57.510 --> 00:06:00.960
+es lo que un diagrama de caso de uso hace muy bien.
+
+117
+00:06:00.960 --> 00:06:05.070
+Algunos de los elementos que se utilizan dentro de este
+
+118
+00:06:05.070 --> 00:06:08.130
+diagrama son casos de usos en sí, actores,
+
+119
+00:06:08.130 --> 00:06:11.410
+subsistemas y relaciones.
+
+120
+00:06:11.410 --> 00:06:13.970
+Ahora, un ejemplo de diagrama de caso de uso justo aquí
+
+121
+00:06:13.970 --> 00:06:16.330
+es para un motor de marketing.
+
+122
+00:06:16.330 --> 00:06:19.720
+Y puedes ver que los actores están exhibidos en ambos lados,
+
+123
+00:06:19.720 --> 00:06:22.850
+tenemos un especialista en marketing, ese es un actor
+
+124
+00:06:22.850 --> 00:06:25.990
+y luego tenemos un cliente, ese es un actor secundario.
+
+125
+00:06:25.990 --> 00:06:29.520
+Y dentro de este diagrama completo
+
+126
+00:06:29.520 --> 00:06:32.320
+tenemos todas estas diferentes acciones,
+
+127
+00:06:32.320 --> 00:06:34.550
+tenemos estas, que se llaman casos de uso,
+
+128
+00:06:34.550 --> 00:06:36.970
+esa es la razón por la que se llama diagrama de caso de uso
+
+129
+00:06:36.970 --> 00:06:41.970
+y puedes ver todo a lo que ambos actores tienen acceso.
+
+130
+00:06:42.120 --> 00:06:44.660
+Ahora también tenemos esos conectores.
+
+131
+00:06:44.660 --> 00:06:47.140
+Pues, esos conectores son acciones
+
+132
+00:06:47.140 --> 00:06:50.230
+que van entre cada caso de uso.
+
+133
+00:06:50.230 --> 00:06:53.380
+Entonces por ejemplo, el cliente justo allí,
+
+134
+00:06:53.380 --> 00:06:56.720
+antes de que puedan acceder al formulario de caso de uso
+
+135
+00:06:56.720 --> 00:06:59.730
+tienen que completar algo en ese formulario.
+
+136
+00:06:59.730 --> 00:07:00.563
+Mientras que en el lado izquiero, el especialista
+
+137
+00:07:00.563 --> 00:07:01.646
+en marketing,
+
+138
+00:07:02.850 --> 00:07:07.020
+pueden acceder al formulario de caso de uso al generarlo.
+
+139
+00:07:07.020 --> 00:07:09.520
+Pues ahora tenemos procesos diferentes
+
+140
+00:07:09.520 --> 00:07:13.610
+a los que cada uno de los actores tiene acceso.
+
+141
+00:07:13.610 --> 00:07:16.420
+Algunos de ellos en ciertas aplicaciones pueden compartirse
+
+142
+00:07:16.420 --> 00:07:18.080
+y en otras,
+
+143
+00:07:18.080 --> 00:07:22.140
+simplemente abarcan el mismo módulo
+
+144
+00:07:22.140 --> 00:07:23.880
+desde distintos ángulos.
+
+145
+00:07:23.880 --> 00:07:28.530
+Así que imagina un caso en el que tengas un usuario
+
+146
+00:07:28.530 --> 00:07:32.800
+administrador y manejan algunos empleados.
+
+147
+00:07:32.800 --> 00:07:35.340
+Un empleado puede enviar una planilla de horarios
+
+148
+00:07:35.340 --> 00:07:37.810
+y ese usuario administrador, el gestor,
+
+149
+00:07:37.810 --> 00:07:39.620
+es el que la aprobará.
+
+150
+00:07:39.620 --> 00:07:41.300
+Entonces, ambos individuos,
+
+151
+00:07:41.300 --> 00:07:44.600
+ambos actores se dirigen a una planilla de horarios
+
+152
+00:07:44.600 --> 00:07:49.060
+pero tienen tipos de comportamientos completamente distintos
+
+153
+00:07:49.060 --> 00:07:50.950
+a los que tienen acceso.
+
+154
+00:07:50.950 --> 00:07:54.230
+Cuando los empleados solo pueden enviar uno,
+
+155
+00:07:54.230 --> 00:07:56.140
+donde el administrados puede cambiarlo,
+
+156
+00:07:56.140 --> 00:07:59.130
+pueden aprobarlo, pueden rechazarlo,
+
+157
+00:07:59.130 --> 00:08:00.160
+pueden agregar comentarios.
+
+158
+00:08:00.160 --> 00:08:03.810
+Entonces es una buena manera siempre que estés creando
+
+159
+00:08:03.810 --> 00:08:06.930
+algún tipo de sistema de autorización en tu aplicación,
+
+160
+00:08:06.930 --> 00:08:10.540
+es una buena manera de ilustrarlo.
+
+161
+00:08:10.540 --> 00:08:12.800
+Ahora, el próximo del que hablaremos
+
+162
+00:08:12.800 --> 00:08:15.160
+es el diagrama de máquina de estado.
+
+163
+00:08:15.160 --> 00:08:16.710
+Ahora, una máquina de estado,
+
+164
+00:08:16.710 --> 00:08:20.320
+si vinieras de un contexto de informática,
+
+165
+00:08:20.320 --> 00:08:24.390
+máquinas de estados son de los sistemas más antiguos
+
+166
+00:08:24.390 --> 00:08:26.820
+de la informática que se hayan creado.
+
+167
+00:08:26.820 --> 00:08:29.940
+Ahora, eso no significa que tenían UML en ese entonces,
+
+168
+00:08:29.940 --> 00:08:32.820
+una máquina de estado esencialmente refleja,
+
+169
+00:08:32.820 --> 00:08:37.680
+es una representación visual de un concepto muy antiguo
+
+170
+00:08:37.680 --> 00:08:39.520
+en informática.
+
+171
+00:08:39.520 --> 00:08:43.920
+Y lo que es es poder visualizar
+
+172
+00:08:43.920 --> 00:08:47.370
+cómo lucen los datos y cómo lucen las acciones
+
+173
+00:08:47.370 --> 00:08:52.370
+en varias etapas del ciclo de vida de sistemas de software.
+
+174
+00:08:53.140 --> 00:08:56.950
+Pues, los elementos que tenemos son un punto de entrada,
+
+175
+00:08:56.950 --> 00:09:01.950
+opciones, restricciones, estados y luego transiciones.
+
+176
+00:09:02.890 --> 00:09:04.270
+Ahora podemos verlo
+
+177
+00:09:04.270 --> 00:09:08.660
+con un ejemplo de diagrama de máquina de estado justo aquí
+
+178
+00:09:08.660 --> 00:09:11.170
+donde tenemos un diagrama de embudo de clientes potenciales.
+
+179
+00:09:11.170 --> 00:09:14.210
+Comienza con un usuario, ese es el punto de entrada.
+
+180
+00:09:14.210 --> 00:09:19.210
+Cada uno de esos rectángulos representa distintos estados.
+
+181
+00:09:19.970 --> 00:09:22.520
+Entonces, tenemos un usuario que es un visitante,
+
+182
+00:09:22.520 --> 00:09:25.590
+luego, basado en una de sus decisiones,
+
+183
+00:09:25.590 --> 00:09:27.720
+si han enviado un formulario,
+
+184
+00:09:27.720 --> 00:09:31.080
+luego pueden cambiar a estado convertido.
+
+185
+00:09:31.080 --> 00:09:34.980
+Luego si califican para condiciones CRM
+
+186
+00:09:34.980 --> 00:09:37.329
+pueden ser trasladados a un estado de clientes potenciales
+
+187
+00:09:37.329 --> 00:09:38.605
+y así sucesivamente.
+
+188
+00:09:38.605 --> 00:09:41.720
+Entonces, puedes ver que el diagrama de máquina de estado
+
+189
+00:09:41.720 --> 00:09:43.890
+es una manera de dividir
+
+190
+00:09:43.890 --> 00:09:47.310
+en la mayor cantidad de pequeñas piezas,
+
+191
+00:09:47.310 --> 00:09:49.470
+lo que debería estar pasando,
+
+192
+00:09:49.470 --> 00:09:51.300
+las acciones que deberías estar sucediendo
+
+193
+00:09:51.300 --> 00:09:54.470
+y lo que un usuario, en este caso, un usuario,
+
+194
+00:09:54.470 --> 00:09:57.280
+podría ser una solicitud de datos,
+
+195
+00:09:57.280 --> 00:09:58.770
+podría ser cualquier cosa así,
+
+196
+00:09:58.770 --> 00:10:01.300
+a lo que tendrán acceso
+
+197
+00:10:01.300 --> 00:10:03.260
+y también mostró las decisiones
+
+198
+00:10:03.260 --> 00:10:06.050
+que tienen posibilidad de usar.
+
+199
+00:10:06.050 --> 00:10:08.180
+Ahora, una cosa que puedes notar justo aquí
+
+200
+00:10:08.180 --> 00:10:12.750
+es que esto luce similar a un diagrama de actividad.
+
+201
+00:10:12.750 --> 00:10:13.970
+Tenemos decisiones,
+
+202
+00:10:13.970 --> 00:10:16.470
+tenemos estos tipos de diferentes estados
+
+203
+00:10:16.470 --> 00:10:19.360
+en los que puedes seguir al usuario
+
+204
+00:10:19.360 --> 00:10:22.050
+y que es completamente exacto,
+
+205
+00:10:22.050 --> 00:10:23.380
+eso es una buena observación.
+
+206
+00:10:23.380 --> 00:10:27.530
+Y una cosa que verás mientras más entres en UML es
+
+207
+00:10:27.530 --> 00:10:30.560
+que no hay un diagrama
+
+208
+00:10:30.560 --> 00:10:32.660
+perfecto para cada situación
+
+209
+00:10:32.660 --> 00:10:35.600
+y diagramas que tienen muchas superposiciones.
+
+210
+00:10:35.600 --> 00:10:39.670
+Entonces los diagramas que eliges usar
+
+211
+00:10:39.670 --> 00:10:42.660
+estarán determinados por la situación.
+
+212
+00:10:42.660 --> 00:10:44.460
+Y mientras más nos metemos
+
+213
+00:10:44.460 --> 00:10:46.330
+entraremos en mucho más detalle
+
+214
+00:10:46.330 --> 00:10:48.490
+cuando entremos y dividamos estos
+
+215
+00:10:48.490 --> 00:10:49.990
+en sus propias secciones.
+
+216
+00:10:49.990 --> 00:10:54.270
+Pero lo que verás es cada uno de estos tiene un caso
+
+217
+00:10:54.270 --> 00:10:56.840
+en el que encaja un poco mejor
+
+218
+00:10:56.840 --> 00:10:59.473
+que en uno de los otros diagramas.
+
+219
+00:11:00.480 --> 00:11:04.520
+Ahora, seguimos adelante, tenemos el diagrama de secuencia.
+
+220
+00:11:04.520 --> 00:11:07.886
+Ahora, un diagrama de secuencia es uno
+
+221
+00:11:07.886 --> 00:11:10.210
+de los diagramas favoritos
+
+222
+00:11:10.210 --> 00:11:14.480
+que a muchos de los desarrolladores senior les gusta usar.
+
+223
+00:11:14.480 --> 00:11:17.340
+Y la razón para ello es porque
+
+224
+00:11:17.340 --> 00:11:19.960
+mientras más avanzado seas como desarrolador
+
+225
+00:11:19.960 --> 00:11:24.150
+más empiezas a pensar de tu aplicación
+
+226
+00:11:24.150 --> 00:11:28.190
+como un sistema que envía mensajes
+
+227
+00:11:28.190 --> 00:11:30.900
+ya sea dentro de sí internamente
+
+228
+00:11:30.900 --> 00:11:33.970
+o hacia servicios y sistemas externos
+
+229
+00:11:33.970 --> 00:11:36.150
+y poder visualizar
+
+230
+00:11:36.150 --> 00:11:40.800
+cómo lucen esos mensajes es increíblemente importante.
+
+231
+00:11:40.800 --> 00:11:43.580
+Ahora, los diagramas de secuencia entre todos los diagramas
+
+232
+00:11:43.580 --> 00:11:45.870
+de comportamiento son de los más complejos
+
+233
+00:11:45.870 --> 00:11:49.020
+y es por eso que lo guardé para el último.
+
+234
+00:11:49.020 --> 00:11:51.160
+Pero quería,
+
+235
+00:11:51.160 --> 00:11:53.780
+este es uno de los más importantes del que aprenderás
+
+236
+00:11:53.780 --> 00:11:57.400
+porque habla directamente sobre la ejecución.
+
+237
+00:11:57.400 --> 00:12:01.210
+Habla exactamente sobre cómo necesita operar el código
+
+238
+00:12:01.210 --> 00:12:04.770
+y si está bien hecho hará esa ejecución,
+
+239
+00:12:04.770 --> 00:12:07.450
+hará que el proyecto sea mucho más fácil de crear
+
+240
+00:12:07.450 --> 00:12:10.190
+y se creará con una ejecución
+
+241
+00:12:10.190 --> 00:12:12.450
+lo más eficiente posible.
+
+242
+00:12:12.450 --> 00:12:15.790
+Ahora, algunos elementos que comprenden un diagrama
+
+243
+00:12:15.790 --> 00:12:19.780
+de secuencia es un papel de clase o participante,
+
+244
+00:12:19.780 --> 00:12:23.420
+una ocurrencia de activación o ejecución,
+
+245
+00:12:23.420 --> 00:12:28.350
+mensajes, a los que acabo de nombrar y luego líneas vitales.
+
+246
+00:12:28.350 --> 00:12:30.400
+Ahora, observando el ejemplo uno,
+
+247
+00:12:30.400 --> 00:12:32.490
+justo aquí regresamos
+
+248
+00:12:32.490 --> 00:12:35.270
+a nuestra biblioteca de analizador de códigos telefónicos,
+
+249
+00:12:35.270 --> 00:12:38.180
+pero aquí observaremos un diagrama de secuencia
+
+250
+00:12:38.180 --> 00:12:40.540
+antes de observar un diagrama de paquete.
+
+251
+00:12:40.540 --> 00:12:42.520
+Y pues lo que tenemos aquí
+
+252
+00:12:42.520 --> 00:12:46.180
+es todos esos elementos diferentes de los que recién hablé
+
+253
+00:12:46.180 --> 00:12:49.010
+están justo aquí, tenemos un punto de partida
+
+254
+00:12:49.010 --> 00:12:52.470
+y luego tenemos cada uno de esos componentes.
+
+255
+00:12:52.470 --> 00:12:55.037
+Entonces, arriba en la parte superior tenemos un proceso
+
+256
+00:12:55.037 --> 00:12:55.870
+de análisis,
+
+257
+00:12:55.870 --> 00:12:58.362
+luego tenemos un proceso de análisis de validación
+
+258
+00:12:58.362 --> 00:13:00.300
+de longitud de dígito
+
+259
+00:13:00.300 --> 00:13:02.200
+y luego justo a la derecha de eso
+
+260
+00:13:02.200 --> 00:13:05.160
+tenemos un validador de código de país.
+
+261
+00:13:05.160 --> 00:13:09.670
+Y pues si seguimos donde comienza desde datos a análisis,
+
+262
+00:13:09.670 --> 00:13:12.580
+cada una de esas pequeñas lineas con flechas
+
+263
+00:13:12.580 --> 00:13:15.170
+eso es un mensaje.
+
+264
+00:13:15.170 --> 00:13:18.980
+Entonces, un mensaje puede ser enviado a un módulo en sí,
+
+265
+00:13:18.980 --> 00:13:21.280
+así el primero donde dice,
+
+266
+00:13:21.280 --> 00:13:24.170
+eliminar todos los símbolos excepto los números
+
+267
+00:13:24.170 --> 00:13:28.640
+eso es un mensaje del motor de análisis en sí mismo,
+
+268
+00:13:28.640 --> 00:13:32.360
+y luego desde allí baja esa línea vital.
+
+269
+00:13:32.360 --> 00:13:34.560
+Entonces, baja hacia el punto de activación
+
+270
+00:13:34.560 --> 00:13:37.120
+que es el rectángulo ancho
+
+271
+00:13:37.120 --> 00:13:38.730
+y luego va al próximo,
+
+272
+00:13:38.730 --> 00:13:41.770
+envía un mensaje al validador de longitud de dígito.
+
+273
+00:13:41.770 --> 00:13:44.060
+Dice validar la longitud del número.
+
+274
+00:13:44.060 --> 00:13:46.280
+La respuesta, la flecha a puntos
+
+275
+00:13:46.280 --> 00:13:48.810
+es el mensaje que se envió de regreso.
+
+276
+00:13:48.810 --> 00:13:53.810
+Entonces, si piensas sobre un programa a un nivel muy bajo
+
+277
+00:13:54.740 --> 00:13:56.290
+todo lo que realmente importa
+
+278
+00:13:56.290 --> 00:14:00.130
+es configurar las entradas y salidas.
+
+279
+00:14:00.130 --> 00:14:03.520
+¿Cuál es este método o esta clase?
+
+280
+00:14:03.520 --> 00:14:05.590
+¿Qué puede introducirse dentro de él?
+
+281
+00:14:05.590 --> 00:14:07.200
+¿Cuál es la salida esperada?
+
+282
+00:14:07.200 --> 00:14:09.830
+Si puedes simular tus propios sistemas
+
+283
+00:14:09.830 --> 00:14:11.930
+para poder pensar en esos términos,
+
+284
+00:14:11.930 --> 00:14:14.070
+para pensar en los mensajes que se envían.
+
+285
+00:14:14.070 --> 00:14:19.070
+Para pensar en los tipos de mensajes que serán aceptados,
+
+286
+00:14:20.370 --> 00:14:22.280
+luego lo que esto hará
+
+287
+00:14:22.280 --> 00:14:26.210
+es ayudarte a tener un conocimiento más claro
+
+288
+00:14:26.210 --> 00:14:29.010
+del comportamiento de ese sistema.
+
+289
+00:14:29.010 --> 00:14:29.910
+Y lo mismo con este,
+
+290
+00:14:29.910 --> 00:14:33.450
+Va todo el camino desde el comienzo con análisis de datos
+
+291
+00:14:33.450 --> 00:14:35.690
+bien hasta el fondo
+
+292
+00:14:35.690 --> 00:14:38.450
+donde la respuesta es una expectativa
+
+293
+00:14:38.450 --> 00:14:40.360
+para tener un número telefónico analizado.
+
+294
+00:14:40.360 --> 00:14:42.270
+Ahora, lo genial de esto es,
+
+295
+00:14:42.270 --> 00:14:45.760
+que si me mostraras este diagrama y no escribo este código,
+
+296
+00:14:45.760 --> 00:14:48.680
+dentro de los dos segundos podré ver
+
+297
+00:14:48.680 --> 00:14:51.050
+las dos partes más importantes de sistema
+
+298
+00:14:51.050 --> 00:14:53.800
+y eso es que estoy pasando
+
+299
+00:14:53.800 --> 00:14:57.040
+datos para analizar y lo que estoy esperando recibir
+
+300
+00:14:57.040 --> 00:14:59.050
+a cambio que es un número de teléfono analizado.
+
+301
+00:14:59.050 --> 00:15:01.341
+Entonces, instantáneamente conozco el objetivo
+
+302
+00:15:01.341 --> 00:15:02.174
+de la biblioteca
+
+303
+00:15:02.174 --> 00:15:04.747
+y si quisiese ser aún más detallista
+
+304
+00:15:04.747 --> 00:15:06.540
+podría agregar comentarios y notas
+
+305
+00:15:06.540 --> 00:15:08.480
+que hablen sobre los tipos de datos.
+
+306
+00:15:08.480 --> 00:15:13.480
+Entonces, podría decir, necesita un número de teléfono fijo
+
+307
+00:15:13.530 --> 00:15:15.810
+como entrada allí bien al principio
+
+308
+00:15:15.810 --> 00:15:18.700
+y regresará otro tipo
+
+309
+00:15:18.700 --> 00:15:21.410
+y podría incuso poner un ejemplo de cómo luciría,
+
+310
+00:15:21.410 --> 00:15:23.080
+así podría ver exactamente
+
+311
+00:15:23.080 --> 00:15:25.700
+lo que son esas entradas y salidas.
+
+312
+00:15:25.700 --> 00:15:28.320
+Y luego mientras sigo el camino
+
+313
+00:15:28.320 --> 00:15:31.140
+Puedo ver todos los mensajes que se envían
+
+314
+00:15:31.140 --> 00:15:33.660
+y eso me dará un conocimiento mucho mejor
+
+315
+00:15:33.660 --> 00:15:36.313
+de los comportamientos de ese sistema.
+

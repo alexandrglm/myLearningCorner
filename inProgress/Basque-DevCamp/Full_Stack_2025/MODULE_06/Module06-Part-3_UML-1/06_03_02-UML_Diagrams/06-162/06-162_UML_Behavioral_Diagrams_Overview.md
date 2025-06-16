@@ -7,34 +7,42 @@
 ## Table of Contents
 
 1. Introduction to Behavioral Diagrams
+
 2. Activity Diagrams
-   2.1. Purpose and Non-Technical Accessibility
-   2.2. Core Elements
-   2.3. Coffee Ordering Service Example
-   2.4. User Experience Modeling
+   2.1. Purpose and Non-Technical Accessibility  
+   2.2. Core Elements  
+   2.3. Coffee Ordering Service Example  
+   2.4. User Experience Modeling  
+
 3. Use Case Diagrams
-   3.1. Authorization System Illustration
-   3.2. Core Components
-   3.3. Marketing Engine Example
-   3.4. Actor-Based Access Control
+   3.1. Authorization System Illustration  
+   3.2. Core Components  
+   3.3. Marketing Engine Example  
+   3.4. Actor-Based Access Control  
+
 4. State Machine Diagrams
-   4.1. Data Lifecycle Visualization
-   4.2. Essential Elements
-   4.3. Lead Funnel Example
-   4.4. Comparison with Activity Diagrams
+   4.1. Data Lifecycle Visualization  
+   4.2. Essential Elements  
+   4.3. Lead Funnel Example  
+   4.4. Comparison with Activity Diagrams  
+
 5. Sequence Diagrams
-   5.1. Message-Based System Design
-   5.2. Implementation-Focused Elements
-   5.3. Phone Parser Example
-   5.4. Input-Output System Thinking
+   5.1. Message-Based System Design  
+   5.2. Implementation-Focused Elements  
+   5.3. Phone Parser Example  
+   5.4. Input-Output System Thinking  
+
 6. Best Practices and Implementation Guidelines
+
 7. Tools and Diagram Selection Criteria
 
 ---
 
 ## 1.    Introduction to Behavioral Diagrams
 
-Behavioral diagrams represent the dynamic aspects of UML modeling, illustrating how systems should behave, act, and interact with internal components and external actors. Unlike structural diagrams that show what exists in the system, behavioral diagrams focus on what happens when the system runs.
+Behavioral diagrams represent the dynamic aspects of UML modeling, illustrating **how systems should behave, act, and interact with internal components and external actors.** 
+
+Unlike structural diagrams that show what exists in the system, behavioral diagrams **focus on what happens** when the system runs, giving clarity for understanding the system behavior, user interactions, and the dynamic relationships between system components.
 
 The four primary behavioral diagrams covered are:
 
@@ -43,7 +51,6 @@ The four primary behavioral diagrams covered are:
 - **State Machine Diagrams**: Object state transitions and lifecycle
 - **Sequence Diagrams**: Message passing and system interactions
 
-These diagrams are essential for understanding system behavior, user interactions, and the dynamic relationships between system components.
 
 ---
 
@@ -334,6 +341,7 @@ Each behavioral diagram serves specific scenarios:
 
 ## References
 
+- [Diagramas de Seq - IONOS](https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/diagramas-de-secuencia/)
 - [UML Activity Diagrams Tutorial](https://www.lucidchart.com/pages/uml-activity-diagram) - Comprehensive guide to activity diagram creation
 - [What is Use Case Diagram?](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-use-case-diagram/)
 - [UML State Machine Diagrams - Overview of Graphical Notation](https://www.uml-diagrams.org/state-machine-diagrams.html)

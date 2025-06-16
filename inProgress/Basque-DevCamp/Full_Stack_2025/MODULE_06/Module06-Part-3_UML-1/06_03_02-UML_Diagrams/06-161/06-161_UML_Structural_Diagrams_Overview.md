@@ -6,21 +6,25 @@
 
 ## Table of Contents
 
-1. Introduction to Structural Diagrams
-2. Class Diagrams
-   2.1. Purpose and Applications
-   2.2. Core Components
-   2.3. Syntax and Notation
-   2.4. Database Integration
-3. Deployment Diagrams
-   3.1. Architecture Modeling
-   3.2. Six Core Elements
-   3.3. CI/CD Integration
-   3.4. Node and Component Structure
-4. Package Diagrams
-   4.1. Library Organization
-   4.2. Dependency Management
-   4.3. Modular Architecture
+1. Introduction to Structural Diagrams  
+
+2. Class Diagrams  
+   2.1. Purpose and Applications  
+   2.2. Core Components  
+   2.3. Syntax and Notation  
+   2.4. Database Integration  
+
+3. Deployment Diagrams  
+   3.1. Architecture Modeling  
+   3.2. Six Core Elements  
+   3.3. CI/CD Integration  
+   3.4. Node and Component Structure  
+
+4. Package Diagrams  
+   4.1. Library Organization  
+   4.2. Dependency Management  
+   4.3. Modular Architecture  
+
 5. Best Practices and Implementation Tips
 
 ---
@@ -157,7 +161,7 @@ Modern deployment diagrams often incorporate Continuous Integration/Continuous D
 
 ### Library Organization
 
-Package diagrams organize related classes and interfaces into cohesive units. They're particularly useful for:
+Package diagrams **organize related classes and interfaces into cohesive units**. They're particularly useful for:
 
 - **Code Library Design**: Structuring reusable components
 - **System Modularization**: Breaking complex systems into manageable parts
@@ -171,7 +175,7 @@ Package diagrams excel at showing dependencies between different modules:
 - **Access Dependencies**: One package accesses public elements of another
 - **Usage Dependencies**: One package requires another for its operation
 
-**Dependency Notation:**
+**Dependency Notation**
 
 - Dotted arrows indicate dependency relationships
 - Open arrowheads point toward the depended-upon package
