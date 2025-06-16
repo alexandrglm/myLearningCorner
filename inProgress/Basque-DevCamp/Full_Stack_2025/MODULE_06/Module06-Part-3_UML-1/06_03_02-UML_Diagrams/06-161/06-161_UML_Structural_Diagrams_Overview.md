@@ -43,7 +43,9 @@ Each diagram type addresses different aspects of system structure, from object-o
 
 ### Purpose and Applications
 
-Class diagrams are **the most popular** and commonly used UML diagrams in software development. They serve as the cornerstone of object-oriented analysis and design, providing **a visual representation of classes, their attributes, methods, and relationships** within a system.
+Class diagrams are **the most popular** and commonly used UML diagrams in software development.   
+
+They serve as the cornerstone of object-oriented analysis and design, providing **a visual representation of classes, their attributes, methods, and relationships** within a system.
 
 Class diagrams are particularly valuable for:
 
@@ -63,13 +65,13 @@ Every class in a UML class diagram consists of three essential sections:
 #### Attribute Syntax
 
 ```
-visibility name : type [multiplicity] = defaultValue
+[+/-/#/~ visibility] [name] : [type] [multiplicity] = defaultValue
 ```
 
 #### Operation Syntax
 
 ```
-visibility name(parameters) : returnType
+[+/-/#/~ visibility] [name(parameters)] : [returnType]
 ```
 
 ### Syntax and Notation
@@ -124,6 +126,8 @@ Deployment diagrams model the physical deployment of software components on hard
 ### CI/CD Integration
 
 Modern deployment diagrams often incorporate Continuous Integration/Continuous Deployment (CI/CD) concepts:
+
+![IMG](./06-161_IMG6.png)
 
 **Typical CI/CD Flow**
 
@@ -283,7 +287,7 @@ For right here, let's talk about things at a high level. This is a deployment di
 
 Each of these are the nodes for the deployment diagram. Those large boxes are what a node is. Inside, It has components, these components could be their own applications, processes, or anything like that.
 
-Starting with the CI server, we have a service app and then we have version control. If you're relatively new to DevOps, CI stands for "Continuous Integration." If you have an application on your local machine, you don't just send that application up to the final production server.  The typical process for a large scale system is you'd push to a CI server. From there it would process a number of different procedures, it would run all of your tests, It would run your database migrations, etc. The main goal of the CI server is to guide and protect your deployment, preventing an accidental deployment of something that shuts down the entire system. 
+Starting with the CI server, we have a service app and then we have version control.   If you're relatively new to DevOps, CI stands for "Continuous Integration." If you have an application on your local machine, you don't just send that application up to the final production server.  The typical process for a large scale system is you'd push to a CI server. From there it would process a number of different procedures, it would run all of your tests, It would run your database migrations, etc. The main goal of the CI server is to guide and protect your deployment, preventing an accidental deployment of something that shuts down the entire system. 
 
 From there, CI server is going to be connected via different archetypes with the build artifacts and it's going to connect to the staging environment. From there the staging environment has an app server, It has a build process and it also has X number of additional build processes. 
 

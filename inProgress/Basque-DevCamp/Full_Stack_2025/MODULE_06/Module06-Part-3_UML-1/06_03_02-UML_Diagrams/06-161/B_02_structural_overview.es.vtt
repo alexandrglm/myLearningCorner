@@ -1,0 +1,1010 @@
+﻿WEBVTT
+
+1
+00:00:01.040 --> 00:00:03.740
+<v Narrador>En esta sección sobre diagramas, vamos a tomar</v>
+
+2
+00:00:03.740 --> 00:00:08.740
+una vista de alto nivel de diagramas UML estructurales.
+
+3
+00:00:08.790 --> 00:00:11.460
+Y vamos a comenzar por ver
+
+4
+00:00:11.460 --> 00:00:13.620
+los tres tipos principales que vamos a revisar
+
+5
+00:00:13.620 --> 00:00:16.360
+en este curso, que es la clase,
+
+6
+00:00:16.360 --> 00:00:19.240
+el despliegue, y los diagramas paquete.
+
+7
+00:00:19.240 --> 00:00:21.871
+Ahora, cada uno se estos van a tener
+
+8
+00:00:21.871 --> 00:00:25.480
+su sección propia del curso,
+
+9
+00:00:25.480 --> 00:00:28.550
+así que no nos vamos a adentrar mucho en esos.
+
+10
+00:00:28.550 --> 00:00:31.804
+Quiero proveer esto más como un recurso
+
+11
+00:00:31.804 --> 00:00:34.904
+para que puedas tener esa idea de alto nivel,
+
+12
+00:00:34.904 --> 00:00:39.330
+y para que puedas comenzar a ver algunos tipos familiares
+
+13
+00:00:39.330 --> 00:00:42.510
+de componentes en la página, y mientras más tiempo lo veas
+
+14
+00:00:42.510 --> 00:00:44.710
+más vas a familiarizarte con el
+
+15
+00:00:44.710 --> 00:00:46.570
+y sentirte realmente cómodo al
+
+16
+00:00:46.570 --> 00:00:48.622
+usarlo en tus propios proyectos.
+
+17
+00:00:48.622 --> 00:00:51.220
+Entonces el primer diagrama del que vamos a hablar
+
+18
+00:00:51.220 --> 00:00:53.330
+es el diagrama de clase.
+
+19
+00:00:53.330 --> 00:00:57.960
+Ahora, el diagrama de clase es probablemente el más popular
+
+20
+00:00:57.960 --> 00:01:00.111
+y el tipo más común de diagrama
+
+21
+00:01:00.111 --> 00:01:02.260
+que vas a ver.
+
+22
+00:01:02.260 --> 00:01:06.230
+Parte de la razón de eso es porque incluso si una
+
+23
+00:01:06.230 --> 00:01:09.140
+organización no es muy fanática
+
+24
+00:01:09.140 --> 00:01:11.940
+de usar UML para arquitectura,
+
+25
+00:01:11.940 --> 00:01:14.856
+digamos que es solo un taller de desarrollo pequeño
+
+26
+00:01:14.856 --> 00:01:15.900
+y solo quieren
+
+27
+00:01:15.900 --> 00:01:20.440
+usar su tiempo tan eficientemente como sea posible,
+
+28
+00:01:20.440 --> 00:01:24.250
+No siempre tienen el tiempo de construir un conjunto entero
+
+29
+00:01:24.250 --> 00:01:27.690
+de 12 a 15 tipos de diagramas
+
+30
+00:01:27.690 --> 00:01:30.520
+para estructurar cada parte del sistema,
+
+31
+00:01:30.520 --> 00:01:34.150
+pero si quieren tener un diagrama al que puedan apuntar
+
+32
+00:01:34.150 --> 00:01:38.300
+y decir "Si, así es como se arma nuestro sistema"
+
+33
+00:01:38.300 --> 00:01:40.850
+Y eso es lo que hace un diagrama de clase.
+
+34
+00:01:40.850 --> 00:01:45.850
+Un diagrama de clase también encaja muy bien con trabajar
+
+35
+00:01:46.130 --> 00:01:50.340
+con un sistema de modelado de tipo base de datos.
+
+36
+00:01:50.340 --> 00:01:54.760
+Así que si estás intentando comenzar con un proyecto nuevo
+
+37
+00:01:54.760 --> 00:01:58.120
+y no sabes realmente donde comenzar,
+
+38
+00:01:58.120 --> 00:02:00.839
+un lugar muy común para comenzar es tratar de elegir
+
+39
+00:02:00.839 --> 00:02:04.380
+que tipo de data quieres tener,
+
+40
+00:02:04.380 --> 00:02:05.980
+cómo quieres que se asocien esos
+
+41
+00:02:05.980 --> 00:02:08.450
+elementos entre si,
+
+42
+00:02:08.450 --> 00:02:11.300
+y algunas de las operaciones centrales.
+
+43
+00:02:11.300 --> 00:02:13.625
+Y entonces los elementos que conforman
+
+44
+00:02:13.625 --> 00:02:15.125
+un diagrama de clase es
+
+45
+00:02:15.125 --> 00:02:18.750
+uno un nombre, luego un conjunto de atributos,
+
+46
+00:02:18.750 --> 00:02:21.780
+y finalmente las operaciones.
+
+47
+00:02:21.780 --> 00:02:24.380
+Ahora echando un vistazo a uno de ejemplo,
+
+48
+00:02:24.380 --> 00:02:26.300
+viste esta antes
+
+49
+00:02:26.300 --> 00:02:28.260
+cuando estábamos hablando de elementos.
+
+50
+00:02:28.260 --> 00:02:31.018
+Pero aquí tenemos un diagrama de clase
+
+51
+00:02:31.018 --> 00:02:33.473
+para nuestra clase tema.
+
+52
+00:02:33.473 --> 00:02:36.670
+Ahora, nuestro tema tiene atributos,
+
+53
+00:02:36.670 --> 00:02:41.170
+tiene un nombre y tiene operaciones.
+
+54
+00:02:41.170 --> 00:02:46.030
+La parte tope es el nombre de la clase,
+
+55
+00:02:46.030 --> 00:02:48.070
+seguida por los atributos en el fondo
+
+56
+00:02:48.070 --> 00:02:50.020
+ahí tiene las operaciones.
+
+57
+00:02:50.020 --> 00:02:54.350
+Ahora a profundizar un poco más en el,
+
+58
+00:02:54.350 --> 00:02:56.840
+veamos que hace cada uno de esos realmente
+
+59
+00:02:56.840 --> 00:02:59.950
+y también qué representan algunos de esos otros símbolos.
+
+60
+00:02:59.950 --> 00:03:04.526
+Ya conocemos el nombre al tope, el nombre de clase es tema.
+
+61
+00:03:04.526 --> 00:03:07.770
+La siguiente caja es donde colocas todos tus atributos.
+
+62
+00:03:07.770 --> 00:03:10.423
+Así que si vas a tomar este diagrama de clase
+
+63
+00:03:10.423 --> 00:03:15.040
+y quieres traducir a digamos MySQL
+
+64
+00:03:15.040 --> 00:03:17.639
+o a una tabla de base de datos Postgres,
+
+65
+00:03:17.639 --> 00:03:22.010
+entonces crearía una tabla llamada tema o temas
+
+66
+00:03:22.010 --> 00:03:26.850
+y sabes que vas a tener que tener un campo de título,
+
+67
+00:03:26.850 --> 00:03:30.520
+un Slug, un creado en, y luego un actualizado en,
+
+68
+00:03:30.520 --> 00:03:34.000
+para tu tabla de temas
+
+69
+00:03:34.000 --> 00:03:36.870
+y luego va a tener un conjunto de tipos de data,
+
+70
+00:03:36.870 --> 00:03:38.720
+entonces título va a ser un string.
+
+71
+00:03:38.720 --> 00:03:41.520
+Slug va a ser un string, y luego creado en
+
+72
+00:03:41.520 --> 00:03:45.770
+y actualizado en ambos van a ser campos de fecha.
+
+73
+00:03:45.770 --> 00:03:48.410
+Esa es una cosa grandiosa sobre usar diagramas de clase
+
+74
+00:03:48.410 --> 00:03:50.690
+y es parte de por qué son tan populares es
+
+75
+00:03:50.690 --> 00:03:53.660
+que si le dieras esta clase aquí a
+
+76
+00:03:53.660 --> 00:03:54.932
+un administrador de base de datos,
+
+77
+00:03:54.932 --> 00:03:58.406
+sabrían inmediatamente lo que tendrían que hacer
+
+78
+00:03:58.406 --> 00:04:02.670
+para crear un esquema, crear una tabla de base de datos,
+
+79
+00:04:02.670 --> 00:04:04.066
+sabrían que atributos dar
+
+80
+00:04:04.066 --> 00:04:07.060
+y serían capaces de prácticamente solo copiar
+
+81
+00:04:07.060 --> 00:04:08.830
+y pegar cada uno de estos elementos
+
+82
+00:04:08.830 --> 00:04:11.220
+para construir eso.
+
+83
+00:04:11.220 --> 00:04:12.580
+Ahora, adicionalmente,
+
+84
+00:04:12.580 --> 00:04:16.160
+además de solo como podrías usarlo para una base de datos,
+
+85
+00:04:16.160 --> 00:04:18.457
+también lo puedes usar cuando construyes
+
+86
+00:04:18.457 --> 00:04:20.430
+la funcionalidad misma.
+
+87
+00:04:20.430 --> 00:04:22.559
+Por ejemplo, si miras ahí al fondo,
+
+88
+00:04:22.559 --> 00:04:24.500
+tenemos operaciones,
+
+89
+00:04:24.500 --> 00:04:26.841
+entonces un diagrama de clase, recuerda,
+
+90
+00:04:26.841 --> 00:04:28.580
+está separado en tres partes.
+
+91
+00:04:28.580 --> 00:04:30.010
+La primera parte es un nombre,
+
+92
+00:04:30.010 --> 00:04:32.840
+esa segunda caja es tu conjunto de atributos,
+
+93
+00:04:32.840 --> 00:04:36.470
+y tercero es el conjunto de operaciones.
+
+94
+00:04:36.470 --> 00:04:40.350
+Ahora, las operaciones tienen una sintaxis muy específica.
+
+95
+00:04:40.350 --> 00:04:42.723
+El primer objeto, ese pequeño símbolo de más,
+
+96
+00:04:42.723 --> 00:04:47.180
+eso significa que la operación, el método,
+
+97
+00:04:47.180 --> 00:04:51.610
+la función, que está disponible fuera de las clases.
+
+98
+00:04:51.610 --> 00:04:55.783
+En otras palabras, si tenemos un controlador que llama tema,
+
+99
+00:04:55.783 --> 00:04:57.990
+y crea un tema,
+
+100
+00:04:57.990 --> 00:05:00.881
+luego puede llamar los primeros diez en la instancia
+
+101
+00:05:00.881 --> 00:05:01.860
+de ese tema
+
+102
+00:05:01.860 --> 00:05:03.680
+y va a retornar, en este caso,
+
+103
+00:05:03.680 --> 00:05:07.150
+los diez mejores temas. Está disponible.
+
+104
+00:05:07.150 --> 00:05:09.650
+Si agregas un pequeño símbolo de resta eso significaría
+
+105
+00:05:09.650 --> 00:05:12.530
+que es un método, es una operación,
+
+106
+00:05:12.530 --> 00:05:15.680
+que solo está disponible al tema.
+
+107
+00:05:15.680 --> 00:05:18.388
+Por ejemplo, si tuviéramos algún tipo de
+
+108
+00:05:18.388 --> 00:05:20.870
+algoritmo especializado
+
+109
+00:05:20.870 --> 00:05:23.120
+que ayudara a determinar los mejores diez,
+
+110
+00:05:23.120 --> 00:05:25.660
+pero no queremos que eso se contara,
+
+111
+00:05:25.660 --> 00:05:28.090
+no queremos que ninguna otra clase lo pueda llamar
+
+112
+00:05:28.090 --> 00:05:30.020
+porque hay un nivel muy bajo
+
+113
+00:05:30.020 --> 00:05:32.940
+y solo debería ser utilizado por la clase tema,
+
+114
+00:05:32.940 --> 00:05:35.880
+colocaríamos un pequeño signo de resta ahí mismo
+
+115
+00:05:35.880 --> 00:05:40.130
+para decir que es privado, es visible solo para el tema.
+
+116
+00:05:40.130 --> 00:05:42.780
+Así que es una vista de muy alto nivel
+
+117
+00:05:42.780 --> 00:05:45.350
+de como funciona un diagrama de clase.
+
+118
+00:05:45.350 --> 00:05:49.103
+Ahora, vamos a hablar de diagramas de despliegue.
+
+119
+00:05:49.103 --> 00:05:51.111
+Los diagramas de despliegue
+
+120
+00:05:51.111 --> 00:05:53.469
+están hechos de seis elementos diferentes,
+
+121
+00:05:53.469 --> 00:05:57.220
+están compuestos de nodos, componentes, artefactos,
+
+122
+00:05:57.220 --> 00:06:00.607
+enlaces, dependencias y asociaciones.
+
+123
+00:06:00.607 --> 00:06:02.780
+Ahora, a un nivel alto,
+
+124
+00:06:02.780 --> 00:06:06.976
+un diagrama de despliegue nos da la habilidad de modelar
+
+125
+00:06:06.976 --> 00:06:09.959
+cómo la arquitectura completa de un sistema
+
+126
+00:06:09.959 --> 00:06:12.360
+debe ser configurada.
+
+127
+00:06:12.360 --> 00:06:15.565
+Así que si tenemos, como tenemos aquí,
+
+128
+00:06:15.565 --> 00:06:19.670
+una aplicación que tiene servidores múltiples,
+
+129
+00:06:19.670 --> 00:06:22.730
+lugares múltiples donde podemos almacenar código,
+
+130
+00:06:22.730 --> 00:06:25.350
+y eso va a comunicar con el sistema,
+
+131
+00:06:25.350 --> 00:06:28.670
+un diagrama de despliegue es perfecto para organizar eso.
+
+132
+00:06:28.670 --> 00:06:31.180
+Ahora, vamos a ver una sección entera
+
+133
+00:06:31.180 --> 00:06:34.250
+sobre diagramas de despliegue, pero por ahora hablemos
+
+134
+00:06:34.250 --> 00:06:36.707
+sobre las cosas a un nivel alto.
+
+135
+00:06:36.707 --> 00:06:38.957
+Entonces este es un diagrama de despliegue
+
+136
+00:06:38.957 --> 00:06:40.390
+para un motor de evaluación,
+
+137
+00:06:40.390 --> 00:06:43.810
+y lo que puede hacer es, comenzando desde el tope,
+
+138
+00:06:43.810 --> 00:06:46.640
+tiene lo que se llama el servidor CI.
+
+139
+00:06:46.640 --> 00:06:50.020
+Ahora ambiente de servidores de ensayo CI, pre-producción.
+
+140
+00:06:50.020 --> 00:06:52.720
+Y ambiente de producción.
+
+141
+00:06:52.720 --> 00:06:57.373
+Cada uno de estos son los nodos del diagrama de despliegue.
+
+142
+00:06:59.482 --> 00:07:01.670
+Y esas cajas grandes, eso es lo que es un nodo.
+
+143
+00:07:01.670 --> 00:07:04.060
+Tiene componentes adentro,
+
+144
+00:07:04.060 --> 00:07:07.490
+estos componentes podrían ser sus propias aplicaciones,
+
+145
+00:07:07.490 --> 00:07:10.320
+pueden ser procesos, cosas por el estilo.
+
+146
+00:07:10.320 --> 00:07:14.180
+Para comenzar con el servidor CI tenemos una app de servicio
+
+147
+00:07:14.180 --> 00:07:15.940
+y luego tenemos control de versión.
+
+148
+00:07:15.940 --> 00:07:20.260
+Y si eres relativamente a DevOps, CI significa
+
+149
+00:07:20.260 --> 00:07:22.020
+Integración Continua,
+
+150
+00:07:22.020 --> 00:07:24.950
+y la forma en que eso se usa es
+
+151
+00:07:24.950 --> 00:07:28.210
+si tienes una aplicación en tu máquina local,
+
+152
+00:07:28.210 --> 00:07:31.560
+no solo envías esa aplicación directamente
+
+153
+00:07:31.560 --> 00:07:34.100
+al servidor de producción final.
+
+154
+00:07:34.100 --> 00:07:38.610
+Lo que es el proceso típico para un sistema de gran escala
+
+155
+00:07:38.610 --> 00:07:42.500
+es que lo subirías a un servidor CI. Desde ahí,
+
+156
+00:07:42.500 --> 00:07:45.770
+procesaría un número de procedimientos distintos.
+
+157
+00:07:45.770 --> 00:07:47.690
+Entonces correría todos las pruebas,
+
+158
+00:07:47.690 --> 00:07:51.480
+correría as migraciones de base de datos,
+
+159
+00:07:51.480 --> 00:07:52.800
+haría todo tipo de cosas,
+
+160
+00:07:52.800 --> 00:07:57.209
+y la meta principal del servidor CI es esencialmente guiar
+
+161
+00:07:57.209 --> 00:08:00.410
+y proteger tu desarrollo
+
+162
+00:08:00.410 --> 00:08:03.233
+para que no despliegues algo accidentalmente
+
+163
+00:08:03.233 --> 00:08:05.960
+que detenga el sistema entero.
+
+164
+00:08:05.960 --> 00:08:10.410
+De ahí, el servidor CI, como puedes ver, va a ser
+
+165
+00:08:10.410 --> 00:08:15.370
+conectado a través de un tipo arco distinto justo ahí
+
+166
+00:08:15.370 --> 00:08:17.299
+con los artefactos build,
+
+167
+00:08:17.299 --> 00:08:21.370
+y va a conectar al ambiente de prueba.
+
+168
+00:08:21.370 --> 00:08:24.340
+Desde ahí, el ambiente de prueba tiene un servidor app,
+
+169
+00:08:24.340 --> 00:08:29.340
+tiene un proceso build y también tiene un número x o n
+
+170
+00:08:29.600 --> 00:08:31.500
+de procesos build adicionales.
+
+171
+00:08:31.500 --> 00:08:35.550
+Entonces, un ejemplo práctico de esto sería tener,
+
+172
+00:08:35.550 --> 00:08:38.930
+digamos que tienes un nodo aplicación
+
+173
+00:08:38.930 --> 00:08:41.950
+y ese nodo aplicación tiene cosas como
+
+174
+00:08:41.950 --> 00:08:46.270
+un pre-compilador Sass, y también usa Gulp,
+
+175
+00:08:46.270 --> 00:08:48.940
+y usas todos estos procesos distintos,
+
+176
+00:08:48.940 --> 00:08:51.570
+pero puedes tener todos estos construidos junto
+
+177
+00:08:51.570 --> 00:08:53.905
+con el nodo de ambiente de prueba.
+
+178
+00:08:53.905 --> 00:08:56.470
+Ahora, si todo funciona en las pruebas,
+
+179
+00:08:56.470 --> 00:08:59.500
+tienes la habilidad a través del servidor CI,
+
+180
+00:08:59.500 --> 00:09:03.550
+nota como cada uno de estos nodos está conectado.
+
+181
+00:09:03.550 --> 00:09:06.900
+Tienes la habilidad de copiar todo
+
+182
+00:09:06.900 --> 00:09:10.940
+y desplegar eso a un ambiente de pre-producción
+
+183
+00:09:10.940 --> 00:09:14.130
+y ahí es usualmente donde QA realizará sus pruebas
+
+184
+00:09:14.130 --> 00:09:16.610
+y luego finalmente puedes copiar todo
+
+185
+00:09:16.610 --> 00:09:19.810
+y desplegar eso al ambiente de producción.
+
+186
+00:09:19.810 --> 00:09:22.260
+Entonces esta es una configuración estándar
+
+187
+00:09:22.260 --> 00:09:23.970
+donde tenemos 4 servidores,
+
+188
+00:09:23.970 --> 00:09:25.535
+por lo menos cuatro servidores aquí mismo,
+
+189
+00:09:25.535 --> 00:09:28.210
+y el motor de despliegue nos permite
+
+190
+00:09:28.210 --> 00:09:30.343
+conectarlos todos juntos
+
+191
+00:09:30.343 --> 00:09:35.090
+y mostrarnos, a otros miembros de equipo DevOps,
+
+192
+00:09:35.090 --> 00:09:38.550
+otros desarrolladores, a un nivel alto cómo van a estar
+
+193
+00:09:38.550 --> 00:09:42.360
+organizados el sistema y todos los componentes del sistema.
+
+194
+00:09:42.360 --> 00:09:44.700
+Y siguiendo al último diagrama,
+
+195
+00:09:44.700 --> 00:09:47.370
+es el diagrama de paquete.
+
+196
+00:09:47.370 --> 00:09:50.013
+El diagrama de paquete es algo que uso bastante
+
+197
+00:09:50.013 --> 00:09:53.230
+cuando estoy construyendo una librería de código
+
+198
+00:09:53.230 --> 00:09:57.070
+que quiero permitir que se comunico con
+
+199
+00:09:57.070 --> 00:09:58.690
+otra aplicación.
+
+200
+00:09:58.690 --> 00:10:01.410
+Entonces está compuesta y los elementos
+
+201
+00:10:01.410 --> 00:10:03.170
+que puedes usar adentro,
+
+202
+00:10:03.170 --> 00:10:06.783
+y también lo que le puedes proporcionar, son los tipos,
+
+203
+00:10:06.783 --> 00:10:11.684
+clasificadores, clases, usar diagramas de caso, componentes,
+
+204
+00:10:11.684 --> 00:10:15.800
+paquetes, para que un paquete se pueda mostrar adentro
+
+205
+00:10:15.800 --> 00:10:20.800
+de otro paquete, restricciones, dependencias y eventos.
+
+206
+00:10:20.940 --> 00:10:25.416
+Para el ejemplo aquí, esto es para un parser de teléfono que
+
+207
+00:10:25.416 --> 00:10:29.000
+era una gema ruby que construí para otro proyecto,
+
+208
+00:10:29.000 --> 00:10:32.000
+y puedes ver que tiene un marco alrededor,
+
+209
+00:10:32.000 --> 00:10:33.620
+y es un diagrama de paquete
+
+210
+00:10:33.620 --> 00:10:37.080
+pera la librería del parser de teléfono que construí,
+
+211
+00:10:37.080 --> 00:10:41.690
+y está compuesta de un par de sub paquetes distintos.
+
+212
+00:10:41.690 --> 00:10:43.610
+Entonces tenemos un parser de teléfono,
+
+213
+00:10:43.610 --> 00:10:47.030
+y esto tiene algunos elementos como un número,
+
+214
+00:10:47.030 --> 00:10:48.370
+un código de país.
+
+215
+00:10:48.370 --> 00:10:51.470
+Tiene algunas operaciones distintas tales como
+
+216
+00:10:51.470 --> 00:10:53.213
+un validador de enlace de dígitos
+
+217
+00:10:53.213 --> 00:10:57.250
+y si notas justo ahí en medio, tenemos una
+
+218
+00:10:57.250 --> 00:11:00.650
+dependencia, recuerda que dependencias son esos elementos
+
+219
+00:11:00.650 --> 00:11:04.470
+que tienen líneas punteadas conectadas a una flecha abierta.
+
+220
+00:11:04.470 --> 00:11:07.040
+Así que añade una dependencia a los códigos de país,
+
+221
+00:11:07.040 --> 00:11:10.099
+que es otra librería de código envuelta dentro
+
+222
+00:11:10.099 --> 00:11:12.350
+del paquete parser de teléfono.
+
+223
+00:11:12.350 --> 00:11:15.590
+Ahí adentro, tenemos colecciones de data
+
+224
+00:11:15.590 --> 00:11:18.410
+y tenemos otras operaciones.
+
+225
+00:11:18.410 --> 00:11:21.060
+Y la cosa realmente agradable sobre un diagrama de paquete
+
+226
+00:11:21.060 --> 00:11:23.702
+como este, es que tenemos la habilidad de,
+
+227
+00:11:23.702 --> 00:11:27.810
+de un vistazo, ver que tenemos estos dos módulos
+
+228
+00:11:27.810 --> 00:11:29.130
+que conforman el paquete,
+
+229
+00:11:29.130 --> 00:11:32.510
+sabemos que uno de los módulos depende del otro,
+
+230
+00:11:32.510 --> 00:11:34.910
+y luego podemos ver todos los atributos
+
+231
+00:11:34.910 --> 00:11:37.050
+y operaciones con un vistazo.
+
+232
+00:11:37.050 --> 00:11:38.848
+Esto lo hace muy sencillo,
+
+233
+00:11:38.848 --> 00:11:42.250
+cuando tienes este tipo de diagramas
+
+234
+00:11:42.250 --> 00:11:46.080
+porque puedes organizar tu código, pero también
+
+235
+00:11:46.080 --> 00:11:49.100
+lo hace un poco más sencillo de pensar las cosas con calma.
+
+236
+00:11:49.100 --> 00:11:52.300
+Si apenas miraste a digamos tu repo GitHub,
+
+237
+00:11:52.300 --> 00:11:55.720
+o apenas abriste el código en tu máquina local,
+
+238
+00:11:55.720 --> 00:12:00.670
+hace muy desafiante a veces el comprender todos
+
+239
+00:12:00.670 --> 00:12:03.640
+los componentes distintos que conforman un sistema.
+
+240
+00:12:03.640 --> 00:12:04.930
+Este es un muy básico,
+
+241
+00:12:04.930 --> 00:12:07.580
+este solo tiene dos módulos adentro.
+
+242
+00:12:07.580 --> 00:12:09.630
+Imagina un proyecto que tiene una librería
+
+243
+00:12:09.630 --> 00:12:10.888
+de matriz de código
+
+244
+00:12:10.888 --> 00:12:14.602
+que es masiva, que tiene cincuenta o cien de estos.
+
+245
+00:12:14.602 --> 00:12:16.820
+Puede volver muy complejo
+
+246
+00:12:16.820 --> 00:12:18.690
+el comprender todo eso,
+
+247
+00:12:18.690 --> 00:12:21.600
+pero un diagrama de paquete te permite encapsular todos
+
+248
+00:12:21.600 --> 00:12:23.320
+los objetos importantes,
+
+249
+00:12:23.320 --> 00:12:25.030
+ver cómo se relacionan entre si,
+
+250
+00:12:25.030 --> 00:12:27.184
+ver cuales dependen de los otros
+
+251
+00:12:27.184 --> 00:12:28.880
+para que puedas continuar
+
+252
+00:12:28.880 --> 00:12:32.403
+con el proceso más eficiente posible.
+
