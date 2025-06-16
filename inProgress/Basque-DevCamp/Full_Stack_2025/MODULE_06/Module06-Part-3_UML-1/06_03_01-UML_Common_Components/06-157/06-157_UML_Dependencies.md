@@ -71,7 +71,9 @@
 
 ### 1.1     Definition and Core Concepts
 
-A UML **dependency** is a relationship that indicates one element (the client) relies on another element (the supplier) for its proper functioning. Dependencies represent the most fundamental form of relationship in UML, denoting that changes to the supplier may affect the client.
+A UML **dependency** is a relationship that indicates one element (the client) relies on another element (the supplier) for its proper functioning.   
+
+Dependencies **represent the most fundamental form of relationship in UML**, denoting that changes to the supplier may affect the client.
 
 The essence of dependencies lies in **coupling** - the degree to which one component needs another component to function correctly. Understanding dependencies is crucial for:
 

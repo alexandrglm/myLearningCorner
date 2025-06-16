@@ -105,7 +105,9 @@ These concepts form the foundation for creating consistent, understandable, and 
 ---
 ### 1.2     Universal Application Across Diagrams
 
-Features and properties appear in virtually every UML diagram type, making them essential components for UML practitioners to master. Their universal nature means that understanding these concepts provides a foundation that applies to:
+Features and properties appear in virtually every UML diagram type, making them essential components for UML practitioners to master.   
+
+Their universal nature means that understanding these concepts provides a foundation that applies to:
 
 - **Structural diagrams** - Class, object, component, package, and deployment diagrams
 - **Behavioral diagrams** - Use case, activity, sequence, and state machine diagrams
