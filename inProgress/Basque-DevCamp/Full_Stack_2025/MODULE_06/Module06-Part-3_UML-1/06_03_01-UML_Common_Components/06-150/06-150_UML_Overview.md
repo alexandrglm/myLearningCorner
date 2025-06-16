@@ -4,15 +4,6 @@
 
 ---
 
-# Objectives
-
-- ==Understand when and why to use UML in== different development phases
-- Identify appropriate UML diagram types for specific development stages
-- Recognize the problem-solving benefits of UML modeling
-- Apply UML as a planning and communication tool
-
----
-
 1. What UML is
 
 2. Historical Context and Creation
@@ -66,7 +57,42 @@ UML has undergone continuous updates since 1996, similar to programming language
 
 ---
 
-## 3.     Benefits for Developers
+## 3.     UML Benefits
+
+## 1.    UML as a Problem-Solving Tool
+
+UML (Unified Modeling Language) serves as more than just a documentation tool—it's a powerful problem-solving instrument that can transform how we approach software development.   
+
+Many developers feel intimidated when faced with building new applications or adding complex features to existing systems. UML provides a structured approach to break down these challenges into manageable, visual components.
+
+### 1.2.    Benefits of UML
+
+- **Visual Planning**
+  
+  - Model systems before writing code
+
+- **Risk Reduction** 
+  
+  - Identify potential issues early
+  - Minimise costly architectural mistakes
+
+- **Communication** 
+  
+  - Bridge technical and non-technical stakeholders
+  - Improve communication between any parts involved
+
+- **Organisation** 
+  
+  - Structure complex systems logically
+  - Maintain code quality through visual organisation
+
+- **Efficiency**
+  
+  - Reduce development time through better planning
+
+The key is to view UML not as additional overhead, but as an investment in project success that pays dividends throughout the entire development process.
+
+---
 
 ### A)    Language Agnostic Communication
 
@@ -88,7 +114,7 @@ A Ruby developer needs to explain system architecture to Java or JavaScript deve
 
 ==<u>Developers can communicate complex system concepts without being constrained by language-specific syntax or implementation details.</u>==
 
-### 
+---
 
 ### B)    Non-Technical Stakeholder Communication
 

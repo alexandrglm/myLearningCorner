@@ -4,77 +4,39 @@
 
 ---
 
-1. UML as a Problem-Solving Tool
-   
-   1. 2    Benefits of using UML
 
-2. Development LifeCycle vs UML Integration
+1. Development LifeCycle vs UML Integration
 
-3. Development Phases vs Diagram types used
+2. Development Phases vs Diagram types used
    
-   1. Pre-Developing 
+   2.1. Pre-Developing 
       
       A.    Activity Diagrams
       B.    Deployment Diagrams
    
-   2. Active Developing
+   2.2. Active Developing
       
       C.    Class Diagrams
       D.    Use Case Diagrams
    
-   3. Post-Development / Maintenance    
+   2.3. Post-Development / Maintenance    
       
       E.     Sequence Diagrams
       F.     Package Diagrams
 
-4. Strategic Application
+3. Strategic Application
 
-5. Tools, Books & Software
-
-----
-
-## 1.    UML as a Problem-Solving Tool
-
-UML (Unified Modeling Language) serves as more than just a documentation tool—it's a powerful problem-solving instrument that can transform how we approach software development.   
-
-Many developers feel intimidated when faced with building new applications or adding complex features to existing systems. UML provides a structured approach to break down these challenges into manageable, visual components.
-
-### 1.2.    Benefits of UML
-
-- **Visual Planning**
-  
-  - Model systems before writing code
-
-- **Risk Reduction** 
-  
-  - Identify potential issues early
-  - Minimise costly architectural mistakes
-
-- **Communication** 
-  
-  - Bridge technical and non-technical stakeholders
-  - Improve communication between any parts involved
-
-- **Organisation** 
-  
-  - Structure complex systems logically
-  - Maintain code quality through visual organisation
-
-- **Efficiency**
-  
-  - Reduce development time through better planning
-
-The key is to view UML not as additional overhead, but as an investment in project success that pays dividends throughout the entire development process.
+4. Tools, Books & Software
 
 ---
 
-## 2.    Development Life-Cycle and UML Integration
+## 1.    Development Life-Cycle and UML Integration
 
 UML diagrams can be strategically employed throughout the entire software development lifecycle. Each phase benefits from specific diagram types that address particular challenges and requirements.
 
 ---
 
-## 3.    Development Phases Overview
+## 2.    Development Phases Overview
 
 1. **Pre-Development Planning**
 2. **Active Development**
@@ -113,6 +75,8 @@ Planning a user registration system where you need to understand the flow from i
 - Identifies potential bottlenecks or complex decision points
 - Provides a reference for developers and stakeholders
 
+
+
 ## B)    Deployment Diagrams
 
 ![](./06-151_IMG2.png)
@@ -145,6 +109,8 @@ Planning a web application with a JavaScript/Angular frontend, REST API backend,
 
 During development, UML helps maintain organization and ensures best practices while building the system.
 
+---
+
 ### Diagrams Used in Active Development Phase
 
 ## C)    Class Diagrams
@@ -172,6 +138,8 @@ Designing an e-commerce database with User, Product, Order, and Payment entities
 - Helps identify redundancy and optimization opportunities
 - Serves as documentation for database structure
 - Facilitates code generation and ORM mapping
+
+
 
 ## D)    Use Case Diagrams
 
@@ -205,6 +173,7 @@ Defining different access levels for Admin, Manager, and Customer roles in a bus
 
 After the system is built, UML continues to provide value for maintenance, optimization, and team onboarding.
 
+
 ### Diagrams Used in Post-Development / Mainteinance Phase
 
 ## E)    Sequence Diagrams
@@ -233,6 +202,9 @@ Understanding the message flow in a payment processing system to add new payment
 - Facilitates debugging of complex interactions
 - Documents system behavior for future reference
 
+
+
+
 ## F)    Package Diagrams
 
 ![Package Diagrams Example](./06-151_IMG6.png)
@@ -258,9 +230,11 @@ Analysing a monolithic application to identify components that could be extracte
 - Identifies refactoring opportunities
 - Documents architectural decisions
 
+
+
 ---
 
-## 4.     Strategic Application Guidelines
+## 3.     Strategic Application Guidelines
 
 ### Choosing the Right Diagram
 
@@ -291,7 +265,7 @@ While any UML diagram can technically be used at any development stage, strategi
 
 ---
 
-## Practical Implementation Strategy
+4. ## Practical Implementation Strategy
 
 ---
 
