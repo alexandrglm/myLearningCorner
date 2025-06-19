@@ -139,11 +139,11 @@ Representamos las dependencias con lineas (o flechas) discontinuas `-  A -----> 
 
 Por lo general, todos los tipos de diagramas en UML responden a **DOS** categorías fundamentales:
 
-- #### Diagramas `ESTRUCTURALES` (Structural)
+- #### Diagramas `ESTRUCTURALES` (Structural - Lo Que Tiene)
     * Modelan cómo el sistema debe ser definido, construido
     * El estructural más utilizado, los **diagramas de clases**
 
-- #### Diagramas de `COMPORTAMIENTO` (Behavioural)
+- #### Diagramas de `COMPORTAMIENTO` (Behavioural - Lo Que Hace)
     * No definen la construcción del sistema, sino cómo el sistema actúa, de qué recursos/permisos/interacciones dispone, cómo debe responder ante X evento.
 
 ---
@@ -207,7 +207,7 @@ Modelan el despliegue de los distintos componentes de software/hardware respecto
 
 Están formados por **SEIS** elementos comunes:
 
-*   ##### NODOS (Nodes)
+* ##### NODOS (Nodes)
 Sistemas fisicos o virtuales, pero independientes, donde los distintos componentes son desplegados.  
 
 
@@ -283,10 +283,10 @@ Los diagramas de paquete contienen estos elementos comunes:
 Aquellos que definen cómo el sistema debería comportarse al ejecutar nuestro programa, principalmente, son **CUATRO**:
 
 
-1. ##### Diagramas de Actividad
-2. ##### Diagramas de Casos de Uso
-3. ##### Diagramas de Estados (State Machine)
-4. ##### Diagramas Secuenciales
+* ##### Diagramas de Actividad
+* ##### Diagramas de Casos de Uso
+* ##### Diagramas de Estados (State Machine)
+* ##### Diagramas Secuenciales
 
 ---
 
@@ -432,7 +432,7 @@ Alumnos
 * #### MULTIPLICIDAD
   Propiedad que restringe, o no, el numero de instancias que participan en la asociación de dos elementos.
   
-  En el ejemplo de Cliente - Pedido, podriamos decir que Cliente a Pedido es relación 1 a muchos (`*`), es decir, un Cliente puede "existir por si mismo" teniendo cero pedidos, un pedido o muchos pedidos.
+  En el ejemplo de Cliente - Pedido, podriamos decir que Cliente a Pedido es relación n (muchos, `*`) a 1, es decir, un Cliente puede "existir por si mismo" teniendo cero pedidos, un pedido o muchos pedidos.
   
   Pedido, en cambio, sin un cliente, no tiene razón de ser.
 
