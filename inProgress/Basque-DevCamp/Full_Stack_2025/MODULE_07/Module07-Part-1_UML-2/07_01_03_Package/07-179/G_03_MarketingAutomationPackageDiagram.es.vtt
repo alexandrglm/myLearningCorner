@@ -1,0 +1,374 @@
+﻿WEBVTT
+
+1
+00:00:01.050 --> 00:00:02.800
+<v Instructor>En esta guía, vamos a pasar un diagrama</v>
+
+2
+00:00:02.800 --> 00:00:06.640
+de paquete que he construido para un sistema que actualmente
+
+3
+00:00:06.640 --> 00:00:08.980
+tenemos en desarrollo.
+
+4
+00:00:08.980 --> 00:00:12.344
+Entonces ahora tenemos este sistema de automatización de
+
+5
+00:00:12.344 --> 00:00:16.087
+mercadeo y, como ustedes pueden ver, dentro de él,
+
+6
+00:00:16.087 --> 00:00:18.310
+tiene varios paquetes dentro.
+
+7
+00:00:18.310 --> 00:00:23.310
+Así que tenemos automatización de mercadeo, que cubre
+
+8
+00:00:23.520 --> 00:00:26.790
+viajes, perspectivas, canales, controladores de aplicaciones
+
+9
+00:00:26.790 --> 00:00:29.023
+y luego los controladores de aplicaciones se conectan a
+
+10
+00:00:29.023 --> 00:00:30.907
+varios otros elementos.
+
+11
+00:00:30.907 --> 00:00:35.530
+Entonces, la forma en que esto funciona es que tenemos una
+
+12
+00:00:35.530 --> 00:00:38.280
+aplicación y esa aplicación tiene varios componentes
+
+13
+00:00:38.280 --> 00:00:41.189
+distintos componentes de software que la constituyen.
+
+14
+00:00:41.189 --> 00:00:43.862
+Ahora, esto no significa que viajes y perspectivas
+
+15
+00:00:43.862 --> 00:00:47.100
+sean aplicaciones distintas.
+
+16
+00:00:47.100 --> 00:00:49.880
+Esa sería la forma que lo configuraríamos si tuviéramos
+
+17
+00:00:49.880 --> 00:00:53.329
+una arquitectura de microservicio y tuviéramos toda esta
+
+18
+00:00:53.329 --> 00:00:56.036
+configuración, de la manera como lo hicimos con el diagrama
+
+19
+00:00:56.036 --> 00:00:57.470
+de implementación.
+
+20
+00:00:57.470 --> 00:00:59.938
+Ese no es el caso acá y es parte de la razón de por qué
+
+21
+00:00:59.938 --> 00:01:02.459
+me gusta usar diagramas de paquete
+
+22
+00:01:02.459 --> 00:01:06.380
+cuando estoy un poco inseguro acerca de la arquitectura,
+
+23
+00:01:06.380 --> 00:01:10.158
+porque puede haber un momento en que quiera dividir estos
+
+24
+00:01:10.158 --> 00:01:14.450
+distintos servicios en sus propias aplicaciones.
+
+25
+00:01:14.450 --> 00:01:16.995
+Pero un patrón muy común que personalmente sigo,
+
+26
+00:01:16.995 --> 00:01:21.060
+es que primero empiezo con una sola aplicación
+
+27
+00:01:21.060 --> 00:01:24.420
+y construyo tanto como puedo de la funcionalidad en esa
+
+28
+00:01:24.420 --> 00:01:29.420
+aplicación, y entonces, más tarde, puedo decidir eliminarlo
+
+29
+00:01:29.870 --> 00:01:31.570
+y convertirlo en su propia aplicación,
+
+30
+00:01:31.570 --> 00:01:33.449
+y luego conectarse vía APIs.
+
+31
+00:01:33.449 --> 00:01:35.860
+Lo genial de esto es que,
+
+32
+00:01:35.860 --> 00:01:40.590
+si hago bien mi trabajo cuando construyo un diagrama de
+
+33
+00:01:40.590 --> 00:01:43.400
+paquete, no debiera tener que cambiarlo más tarde.
+
+34
+00:01:43.400 --> 00:01:45.470
+Ahora, eso no quiere decir que no debo.
+
+35
+00:01:45.470 --> 00:01:48.128
+Hay muchas veces donde me meto al sistema
+
+36
+00:01:48.128 --> 00:01:50.580
+y me doy cuenta de que he olvidado un componente clave
+
+37
+00:01:50.580 --> 00:01:54.340
+y entonces tendré que actualizar el diagrama y añadirlo.
+
+38
+00:01:54.340 --> 00:01:57.247
+Pero, por ahora, la forma que pueden pensar en esto es
+
+39
+00:01:57.247 --> 00:01:59.678
+que estos son sus módulos de alto nivel.
+
+40
+00:01:59.678 --> 00:02:02.947
+Así que, como ven, no tenemos detalles
+
+41
+00:02:02.947 --> 00:02:07.947
+tales como sus nombres de clase o actividades diferentes
+
+42
+00:02:08.550 --> 00:02:09.930
+o nada como eso.
+
+43
+00:02:09.930 --> 00:02:13.680
+Este es uno de los tipos de diagramas de más alto nivel
+
+44
+00:02:13.680 --> 00:02:15.710
+que ustedes pueden usar.
+
+45
+00:02:15.710 --> 00:02:19.000
+Este podría ser uno de los primeros diagramas
+
+46
+00:02:19.000 --> 00:02:21.880
+que elaboraré cuando inicie un nuevo proyecto.
+
+47
+00:02:21.880 --> 00:02:25.150
+Entonces, aquí, puedo decir que necesito
+
+48
+00:02:25.150 --> 00:02:28.700
+esta aplicación de gran escala y luego trato de cargar
+
+49
+00:02:28.700 --> 00:02:32.420
+los módulos que estoy estimando se van a necesitar.
+
+50
+00:02:32.420 --> 00:02:34.430
+Entonces, ahí es donde pondré cosas
+
+51
+00:02:34.430 --> 00:02:36.120
+como viajes y controladores de aplicaciones.
+
+52
+00:02:36.120 --> 00:02:39.120
+Y cuando me digan que voy a tener que tener
+
+53
+00:02:39.120 --> 00:02:41.910
+la integración de un Slack y un HipChat,
+
+54
+00:02:41.910 --> 00:02:43.910
+entonces sé que voy a tener que tener
+
+55
+00:02:43.910 --> 00:02:45.900
+alguna forma de conectar esos.
+
+56
+00:02:45.900 --> 00:02:48.310
+Y pueden ver ahí que tenemos un artefacto
+
+57
+00:02:48.310 --> 00:02:51.662
+que crea una conexión entre nuestros controladores de
+
+58
+00:02:51.662 --> 00:02:56.662
+aplicaciones, con esas como la API de Slack o HipChat.
+
+59
+00:02:57.060 --> 00:02:59.740
+Así que, esto es algo, como pueden ver,
+
+60
+00:02:59.740 --> 00:03:01.290
+que es de muy alto nivel.
+
+61
+00:03:01.290 --> 00:03:05.355
+Es una manera genial de ser capaces de empezar a planificar
+
+62
+00:03:05.355 --> 00:03:07.260
+la forma cómo funciona su aplicación.
+
+63
+00:03:07.260 --> 00:03:10.910
+Esta es una herramienta que recomiendo a estudiantes y
+
+64
+00:03:10.910 --> 00:03:14.470
+desarrolladores cuando ellos están un poco inseguros sobre
+
+65
+00:03:14.470 --> 00:03:16.490
+cuál va a ser la estructura de su aplicación
+
+66
+00:03:16.490 --> 00:03:20.340
+y quieren tener una idea de todos los componentes
+
+67
+00:03:20.340 --> 00:03:22.000
+que la van a constituir.
+
+68
+00:03:22.000 --> 00:03:25.803
+Ahora, este es también un excelente ejemplo de un diagrama
+
+69
+00:03:25.803 --> 00:03:29.350
+que ustedes pueden usar cuando están construyendo una
+
+70
+00:03:29.350 --> 00:03:31.580
+biblioteca de código, como una RubyGem o algo parecido.
+
+71
+00:03:31.580 --> 00:03:35.030
+Y en un curso distinto, eventualmente vamos a hacer eso
+
+72
+00:03:35.030 --> 00:03:37.597
+y aprovecharemos un diagrama de paquete para eso.
+
+73
+00:03:37.597 --> 00:03:42.034
+De hecho, en otros lenguajes, tales como Java,
+
+74
+00:03:42.034 --> 00:03:43.825
+tienen todo un sistema,
+
+75
+00:03:43.825 --> 00:03:47.562
+toda una parte de la estructura del lenguaje mismo,
+
+76
+00:03:47.562 --> 00:03:50.200
+llamada paquete.
+
+77
+00:03:50.200 --> 00:03:52.460
+Así que, si están familiarizados con Java
+
+78
+00:03:52.460 --> 00:03:55.200
+o si alguna vez trabajan Java en el futuro,
+
+79
+00:03:55.200 --> 00:03:57.320
+entonces se van a meter en eso,
+
+80
+00:03:57.320 --> 00:04:00.771
+donde verán que ellos organizan sus códigos
+
+81
+00:04:00.771 --> 00:04:05.060
+y sus grupos de archivos de código en paquetes.
+
+82
+00:04:05.060 --> 00:04:07.532
+Y esa es parte de donde todo el concepto
+
+83
+00:04:07.532 --> 00:04:10.806
+de diagramas de paquete que logró llevarse a UML,
+
+84
+00:04:10.806 --> 00:04:13.600
+es que había muchos desarrolladores Java
+
+85
+00:04:13.600 --> 00:04:17.042
+y para lo que usaban ellos sus paquetes,
+
+86
+00:04:17.042 --> 00:04:20.730
+era para poder encapsular un gran número de
+
+87
+00:04:20.730 --> 00:04:24.020
+diferentes archivos de código, y cuando digo gran número,
+
+88
+00:04:24.020 --> 00:04:27.155
+podrían ser solo unos pocos o podrían ser docenas.
+
+89
+00:04:27.155 --> 00:04:29.771
+Realmente depende del uso, pero realmente,
+
+90
+00:04:29.771 --> 00:04:33.970
+lo que un paquete les permite hacer, es encapsular un número
+
+91
+00:04:33.970 --> 00:04:37.710
+de otros componentes, sean ellos otras aplicaciones
+
+92
+00:04:37.710 --> 00:04:40.950
+o solo módulos de código, y luego ser capaces de mostrar
+
+93
+00:04:40.950 --> 00:04:42.923
+como se relacionan entre ellos.
+

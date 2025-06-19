@@ -1,0 +1,573 @@
+﻿WEBVTT
+
+1
+00:00:01.030 --> 00:00:03.650
+<v Narrador>Ya hemos revisado</v>
+todos los elementos,
+
+2
+00:00:03.650 --> 00:00:07.640
+así que vamos a meternos de lleno en lo que
+
+3
+00:00:07.640 --> 00:00:10.820
+crearemos cuando los juntemos todos.
+
+4
+00:00:10.820 --> 00:00:13.580
+Aquí tenemos un diagrama de casos de uso
+
+5
+00:00:13.580 --> 00:00:16.647
+para un sistema automatizado
+de marketing.
+
+6
+00:00:16.647 --> 00:00:19.320
+Contiene todos los elementos
+
+7
+00:00:19.320 --> 00:00:21.444
+de los que hemos hablado en relación
+
+8
+00:00:21.444 --> 00:00:23.286
+con los diagramas de casos de uso.
+
+9
+00:00:23.286 --> 00:00:25.477
+Tenemos actores, subsistemas,
+
+10
+00:00:25.477 --> 00:00:29.230
+casos de uso y relaciones.
+
+11
+00:00:29.230 --> 00:00:31.840
+Centrémonos en el especialista
+en marketing,
+
+12
+00:00:31.840 --> 00:00:33.793
+ese es nuestro primer actor.
+
+13
+00:00:33.793 --> 00:00:36.900
+Puedes pensar en él como si fuera
+
+14
+00:00:36.900 --> 00:00:39.780
+el administrador del sistema.
+
+15
+00:00:39.780 --> 00:00:43.460
+Si sigues las líneas para ver cada uno
+
+16
+00:00:43.460 --> 00:00:46.610
+de los diferentes casos de uso
+a los que tienen acceso,
+
+17
+00:00:46.610 --> 00:00:49.580
+puedes ver arriba de todo que pueden
+
+18
+00:00:49.580 --> 00:00:52.110
+gestionar viajes y formas,
+
+19
+00:00:52.110 --> 00:00:55.480
+obtener notificaciones sobre viajes;
+
+20
+00:00:55.480 --> 00:00:57.630
+en este caso, piensa en un viaje
+
+21
+00:00:57.630 --> 00:01:01.440
+como jerga de marketing para un sistema
+
+22
+00:01:01.440 --> 00:01:04.630
+que les da la capacidad de seguir a usuarios
+
+23
+00:01:04.630 --> 00:01:09.630
+desde el momento en que son clientes potenciales
+
+24
+00:01:09.640 --> 00:01:12.510
+hasta que empiezan
+a hablar con el servicio
+
+25
+00:01:12.510 --> 00:01:14.830
+al cliente o un agente comercial,
+
+26
+00:01:14.830 --> 00:01:17.270
+todo el período hasta que se convierten en una venta,
+
+27
+00:01:17.270 --> 00:01:18.980
+y pueden seguir ese proceso.
+
+28
+00:01:18.980 --> 00:01:23.190
+Esto es algo muy común si creas herramientas
+
+29
+00:01:23.190 --> 00:01:25.990
+para, por ejemplo, automatización
+
+30
+00:01:25.990 --> 00:01:28.580
+de marketing o sistemas CMR
+
+31
+00:01:28.580 --> 00:01:31.300
+como Salesforce y similares,
+
+32
+00:01:31.300 --> 00:01:36.090
+así que este viaje,
+en realidad, todo el sistema,
+
+33
+00:01:36.090 --> 00:01:40.480
+es un diagrama de casos de uso del mundo real
+
+34
+00:01:40.480 --> 00:01:43.930
+creado para un proyecto actualmente en desarrollo,
+
+35
+00:01:43.930 --> 00:01:47.660
+así que es muy real, exactamente lo que
+
+36
+00:01:47.660 --> 00:01:49.760
+verás en el sector.
+
+37
+00:01:49.760 --> 00:01:52.580
+Queríamos asegurarnos de poder obtener
+
+38
+00:01:52.580 --> 00:01:55.180
+cosas como notificaciones cada vez
+
+39
+00:01:55.180 --> 00:01:57.795
+que un estado cambiase, por ejemplo,
+
+40
+00:01:57.795 --> 00:02:02.600
+cuando un cliente potencial
+
+41
+00:02:02.600 --> 00:02:04.357
+pasa de ser un cliente potencial
+
+42
+00:02:04.357 --> 00:02:06.910
+a hablar con un agente de ventas,
+
+43
+00:02:06.910 --> 00:02:10.790
+necesitamos poder obtener una notificación.
+
+44
+00:02:10.790 --> 00:02:13.830
+Junto a la notificación, puedes ver
+
+45
+00:02:13.830 --> 00:02:17.770
+que hay una relación, dice "notificar".
+
+46
+00:02:17.770 --> 00:02:22.520
+Simplemente proporciona orientación
+
+47
+00:02:22.520 --> 00:02:24.880
+en los procesos que ocurrirán.
+
+48
+00:02:24.880 --> 00:02:27.392
+Si decimos que vamos a ir
+
+49
+00:02:27.392 --> 00:02:29.283
+desde causar los eventos de viaje,
+
+50
+00:02:29.283 --> 00:02:31.141
+eso tiene que conectar con
+
+51
+00:02:31.141 --> 00:02:34.690
+que el especialista en marketing reciba notificaciones,
+
+52
+00:02:34.690 --> 00:02:37.350
+así que se les notificará.
+
+53
+00:02:37.350 --> 00:02:40.590
+Eso es solo un caso de uso
+y es una relación
+
+54
+00:02:40.590 --> 00:02:44.350
+entre un proceso y otro.
+
+55
+00:02:44.350 --> 00:02:47.270
+Más abajo, tenemos nuestro subsistema
+
+56
+00:02:47.270 --> 00:02:48.700
+del panel de control web.
+
+57
+00:02:48.700 --> 00:02:52.260
+Aquí es donde se incluirá cada uno
+
+58
+00:02:52.260 --> 00:02:54.110
+de estos cinco elementos.
+
+59
+00:02:54.110 --> 00:02:56.591
+Un especialista en marketing puede recibir informes,
+
+60
+00:02:56.591 --> 00:02:59.050
+gestionar todos sus contactos
+
+61
+00:02:59.050 --> 00:03:01.170
+y generar formularios,
+
+62
+00:03:01.170 --> 00:03:05.340
+todo ello desde dentro del panel de control web.
+
+63
+00:03:05.340 --> 00:03:08.547
+Vamos a pasar al cliente. Al cliente
+
+64
+00:03:08.547 --> 00:03:11.630
+también le puedes llamar cliente potencial
+
+65
+00:03:11.630 --> 00:03:15.260
+o lo que quieras en tu sistema personal.
+
+66
+00:03:15.260 --> 00:03:17.810
+El cliente es otro actor y tiene acceso
+
+67
+00:03:17.810 --> 00:03:21.213
+a varias cosas.
+Por ejemplo, arriba de todo,
+
+68
+00:03:21.213 --> 00:03:24.810
+pueden causar un evento
+de viaje si hacen cosas como
+
+69
+00:03:24.810 --> 00:03:29.810
+registrarse con el formulario
+de una empresa
+
+70
+00:03:30.040 --> 00:03:32.160
+donde dicen que quieren más información.
+
+71
+00:03:32.160 --> 00:03:35.720
+Eso causará un evento
+de viaje y dicho evento,
+
+72
+00:03:35.720 --> 00:03:38.060
+como ya hemos visto antes, puede realizar
+
+73
+00:03:38.060 --> 00:03:41.000
+otras acciones: está relacionado
+
+74
+00:03:41.000 --> 00:03:45.290
+con el envío de notificaciones y también tareas
+
+75
+00:03:45.290 --> 00:03:47.259
+como que, si sigues la línea hacia abajo,
+
+76
+00:03:47.259 --> 00:03:50.200
+el cliente recibirá un mensaje.
+
+77
+00:03:50.200 --> 00:03:53.600
+Aquí esto sería como si el cliente rellenase
+
+78
+00:03:53.600 --> 00:03:56.750
+ese formulario que dice que quiere más información
+
+79
+00:03:56.750 --> 00:04:00.580
+y, luego, se le envía, así que reciben ese mensaje,
+
+80
+00:04:00.580 --> 00:04:03.900
+lo obtienen en el sitio web
+y, desde allí,
+
+81
+00:04:03.900 --> 00:04:07.410
+continúa hacia abajo y puede visitar recursos,
+
+82
+00:04:07.410 --> 00:04:11.680
+rellenar formularios, todas esas cosas,
+
+83
+00:04:12.697 --> 00:04:17.697
+así que esto proporciona
+un buen grado de visualización
+
+84
+00:04:17.960 --> 00:04:21.830
+a la hora de ver a qué tipos de funcionalidades
+
+85
+00:04:21.830 --> 00:04:25.400
+y funciones tiene acceso
+
+86
+00:04:25.400 --> 00:04:27.515
+cada usuario del sistema.
+
+87
+00:04:27.515 --> 00:04:32.515
+Si un ingeniero me diera este tipo de diagrama,
+
+88
+00:04:33.010 --> 00:04:35.380
+vería de inmediato que tenemos
+
+89
+00:04:35.380 --> 00:04:38.370
+un panel de control web
+con una interfaz de creación
+
+90
+00:04:38.370 --> 00:04:41.598
+de informes, mensajes, recursos,
+
+91
+00:04:41.598 --> 00:04:44.780
+un sitio para gestionar contactos y formularios,
+
+92
+00:04:44.780 --> 00:04:48.017
+y si me fijo en los actores, puedo ver
+
+93
+00:04:48.017 --> 00:04:53.017
+exactamente a lo que cada uno tendrá acceso,
+
+94
+00:04:53.160 --> 00:04:56.880
+además de cuál podrá hacer cosas
+
+95
+00:04:56.880 --> 00:05:00.351
+como recibir notificaciones.
+Cuando veo las notificaciones
+
+96
+00:05:00.351 --> 00:05:04.050
+arriba de todo y veo que no están dentro
+
+97
+00:05:04.050 --> 00:05:06.890
+del panel de control web,
+eso me dice que
+
+98
+00:05:06.890 --> 00:05:10.080
+tendré que crear un sistema de correo electrónico
+
+99
+00:05:10.080 --> 00:05:14.027
+para notificar
+al especialista en marketing
+
+100
+00:05:14.027 --> 00:05:19.027
+cada vez que haya
+un cambio en el cliente o
+
+101
+00:05:19.100 --> 00:05:23.322
+cliente potencial. Cuando voy al panel de control web
+
+102
+00:05:23.322 --> 00:05:26.330
+y veo cosas como, en la parte inferior,
+
+103
+00:05:26.330 --> 00:05:29.620
+donde dice generar o rellenar formularios,
+
+104
+00:05:29.620 --> 00:05:32.730
+eso me dice que tendré
+que crear varios componentes
+
+105
+00:05:32.730 --> 00:05:35.010
+en lo que respecta a los formularios:
+
+106
+00:05:35.010 --> 00:05:37.670
+necesitaré crear formularios dinámicos
+
+107
+00:05:37.670 --> 00:05:41.360
+que el especialista pueda usar y a los que
+
+108
+00:05:41.360 --> 00:05:44.760
+el cliente pueda acceder y rellenar,
+
+109
+00:05:44.760 --> 00:05:48.610
+y eso se va a recoger en informes
+
+110
+00:05:48.610 --> 00:05:51.090
+y otros diferentes elementos similares.
+
+111
+00:05:51.090 --> 00:05:55.030
+Aunque este diagrama no sea muy grande,
+
+112
+00:05:55.030 --> 00:05:59.200
+solo con estos ocho casos de uso
+
+113
+00:05:59.200 --> 00:06:01.870
+puedo ver mucha de la funcionalidad,
+
+114
+00:06:01.870 --> 00:06:05.800
+lo que enlaza con una de las finalidades
+
+115
+00:06:05.800 --> 00:06:10.300
+de UML, en este pequeño diagrama.
+
+116
+00:06:10.300 --> 00:06:15.209
+Esto ocuparía muchas páginas de contenido escrito
+
+117
+00:06:15.209 --> 00:06:20.150
+si alguien me lo describiera a mano, si alguien
+
+118
+00:06:20.150 --> 00:06:23.120
+abriera Word y empezara a escribir
+
+119
+00:06:23.120 --> 00:06:25.787
+todos los requisitos para su sistema,
+
+120
+00:06:25.787 --> 00:06:30.193
+llevaría muchísimo tiempo reflejar todo esto
+
+121
+00:06:30.193 --> 00:06:33.540
+por escrito con párrafos y enumeraciones.
+
+122
+00:06:33.540 --> 00:06:36.779
+En su lugar, con un diagrama como este,
+
+123
+00:06:36.779 --> 00:06:41.440
+puedo ver qué autorizaciones
+deberían tener los usuarios,
+
+124
+00:06:41.440 --> 00:06:45.070
+puedo ver los componentes que estarán disponibles
+
+125
+00:06:45.070 --> 00:06:50.070
+en las páginas, puedo ver funciones como notificaciones,
+
+126
+00:06:50.070 --> 00:06:54.400
+viajes y reglas, y eso es muy valioso.
+
+127
+00:06:54.400 --> 00:06:57.938
+Es parte del motivo
+por el que UML se lleva usando
+
+128
+00:06:57.938 --> 00:07:01.930
+décadas. No ha cambiado mucho
+
+129
+00:07:01.930 --> 00:07:05.390
+con los años, porque puedes obtener
+
+130
+00:07:05.390 --> 00:07:09.100
+mucho rendimiento simplemente
+
+131
+00:07:09.100 --> 00:07:11.500
+utilizando estas sencillas herramientas.
+
+132
+00:07:11.500 --> 00:07:15.840
+Te darás cuenta de que solo estamos usando cuatro elementos
+
+133
+00:07:15.840 --> 00:07:19.730
+dentro de este diagrama
+de casos de uso y hemos creado
+
+134
+00:07:19.730 --> 00:07:22.440
+todo un sistema con él,
+lo cual es bastante genial.
+
+135
+00:07:22.440 --> 00:07:24.081
+Espero que disfrutes de los diagramas
+
+136
+00:07:24.081 --> 00:07:25.790
+de casos de uso tanto como yo.
+
+137
+00:07:25.790 --> 00:07:28.323
+Nos vemos en la siguiente sección.
+
