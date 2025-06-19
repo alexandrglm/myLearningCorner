@@ -637,12 +637,12 @@
 | [X] | 06-128 |      | Various Console Methods in JavaScript                                 | 2025-06-05 |
 | [X] | 06-129 |      | How to Use the JavaScript Console's Copy Function to Scrape a Website | 2025-06-05 |
 
-|     | #      | Type     | Tittle                                                                                    | Date       |
-| --- | ------ | -------- | ----------------------------------------------------------------------------------------- | ---------- |
-| [X] | 06-130 | Exercise | Create an Array Popper that Alternates Returning from Each Side of an Array in JavaScript | 2025-06-05 |
-| [X] | 06-131 | Literacy | There is No Foo Bar                                                                       | 2025-06-05 |
-| [X] | 06-132 | Literacy | Guide to RESTful Routing                                                                  | 2025-06-05 |
-| [X] | 06-133 | Exercise | Create a Capitalize Function in JavaScript                                                | 2025-06-05 |
+|     | #      | Type                                                            | Tittle                                                                                    | Date       |
+| --- | ------ | --------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | ---------- |
+| [X] | 06-130 | Exercise - Class which turns `.pop()` or  `shift()` to an Array | Create an Array Popper that Alternates Returning from Each Side of an Array in JavaScript | 2025-06-17 |
+| [X] | 06-131 | Literacy                                                        | There is No Foo Bar                                                                       | 2025-06-05 |
+| [X] | 06-132 | Literacy                                                        | Guide to RESTful Routing                                                                  | 2025-06-05 |
+| [X] | 06-133 | Exercise                                                        | Create a Capitalize Function in JavaScript                                                | 2025-06-05 |
 
 # MODULE 6 PART 3
 
@@ -707,12 +707,17 @@
 | \[ ] | 07-185 |      | Deep Dive: Build a CRM State Machine Diagram                    |            |
 | \[ ] | 07-186 |      | State Machine Diagrams                                          |            |
 
+
+|      | #      | Type | Tittle                                                       | Date       |
+| ---- | ------ | ---- | ------------------------------------------------------------ | ---------- |
+| \[X] | 07-187 |      | The Importance of Systems Analysis and Design                | 2025-06-17 |
+| \[X] | 07-188 |      | Overview of Software Systems                                 | 2025-06-17 |
+
+
 ### UML Projects
 
 |      | #      | Type | Tittle                                                       | Date |
 | ---- | ------ | ---- | ------------------------------------------------------------ | ---- |
-| \[ ] | 07-187 |      | The Importance of Systems Analysis and Design                |      |
-| \[ ] | 07-188 |      | Overview of Software Systems                                 |      |
 | \[ ] | 07-189 |      | Project One: Design Twitter System                           |      |
 | \[ ] | 07-190 |      | Project Solution: Twitter Use Case Diagram                   |      |
 | \[ ] | 07-191 |      | Project Solution: Twitter Class Diagram                      |      |

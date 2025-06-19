@@ -1,0 +1,450 @@
+﻿WEBVTT
+
+1
+00:00:00.980 --> 00:00:02.810
+<v Instructor>Ahora que conoces todos los elementos</v>
+
+2
+00:00:02.810 --> 00:00:06.140
+que comprenden un Diagrama de Implementación UML,
+
+3
+00:00:06.140 --> 00:00:10.610
+echemos un vistazo a un caso de uso de la vida real.
+
+4
+00:00:10.610 --> 00:00:14.420
+Así que aquí tenemos un servicio de solicitud de música.
+
+5
+00:00:14.420 --> 00:00:18.930
+Este servicio va a permitir a los usuarios iniciar sesión
+
+6
+00:00:18.930 --> 00:00:22.100
+y luego construir listas de reproducción basadas en
+
+7
+00:00:22.100 --> 00:00:24.250
+diferentes canciones que quieren escoger.
+
+8
+00:00:24.250 --> 00:00:26.680
+Ahora, esta es una aplicación del mundo real
+
+9
+00:00:26.680 --> 00:00:29.440
+que actualmente estoy construyendo mientras hablamos.
+
+10
+00:00:29.440 --> 00:00:32.270
+Y entonces pensé que este sería un buen momento
+
+11
+00:00:32.270 --> 00:00:35.320
+para poder ver el Diagrama de Implementación que construí.
+
+12
+00:00:35.320 --> 00:00:37.670
+Ahora, no construí este diagrama para el curso.
+
+13
+00:00:37.670 --> 00:00:40.940
+Realmente construí esto para el sistema en sí
+
+14
+00:00:40.940 --> 00:00:42.350
+y luego me di cuenta que sería
+
+15
+00:00:42.350 --> 00:00:44.010
+un gran ejemplo para el curso.
+
+16
+00:00:44.010 --> 00:00:47.630
+Así que para que sepas, esto es algo que tomé
+
+17
+00:00:47.630 --> 00:00:51.860
+y trabajé directamente en la traducción al código.
+
+18
+00:00:51.860 --> 00:00:54.030
+También lo tomé y lo mostré
+
+19
+00:00:54.030 --> 00:00:58.110
+a varios accionistas, el diseñador UIUX
+
+20
+00:00:58.110 --> 00:01:01.940
+al otro desarrollador API que está trabajando
+
+21
+00:01:01.940 --> 00:01:04.900
+conmigo, el desarrollador de interfaz,
+
+22
+00:01:04.900 --> 00:01:08.180
+para poder ser capaces de aprovechar el poder
+
+23
+00:01:08.180 --> 00:01:10.980
+de ser capaces de visualizar esto
+
+24
+00:01:10.980 --> 00:01:13.810
+y nos permitió hacer mucho más
+
+25
+00:01:13.810 --> 00:01:15.620
+en un período corto de tiempo.
+
+26
+00:01:15.620 --> 00:01:18.470
+Este sería un tipo de sistema muy desafiante en
+
+27
+00:01:18.470 --> 00:01:21.350
+lo de escribir a mano cada uno de los requisitos.
+
+28
+00:01:21.350 --> 00:01:24.190
+Pero con un simple tipo de diagrama
+
+29
+00:01:24.190 --> 00:01:26.360
+como este podemos hacer eso.
+
+30
+00:01:26.360 --> 00:01:30.220
+Así que vamos a empezar con el nodo superior izquierdo.
+
+31
+00:01:30.220 --> 00:01:33.070
+Aquí mismo tenemos un servicio web angular.
+
+32
+00:01:33.070 --> 00:01:37.270
+Esta será la interfaz de usuario para todo el sistema.
+
+33
+00:01:37.270 --> 00:01:41.210
+Podemos ver que necesita estar en algún tipo de dispositivo.
+
+34
+00:01:41.210 --> 00:01:44.220
+Ese es el artefacto y también agregué
+
+35
+00:01:44.220 --> 00:01:47.410
+algunos detalles adicionales, así que tenemos un
+
+36
+00:01:47.410 --> 00:01:51.540
+sistema operativo de Linux y luego tenemos
+
+37
+00:01:51.540 --> 00:01:55.253
+un componente en el interior que va a aprovechar angular.
+
+38
+00:01:56.276 --> 00:01:59.070
+Ahora esto tiene unas cuantas dependencias diferentes.
+
+39
+00:01:59.070 --> 00:02:03.550
+Tiene una dependencia de la propia API,
+
+40
+00:02:03.550 --> 00:02:06.530
+que va a ser la interfaz que gestiona todos los datos
+
+41
+00:02:06.530 --> 00:02:09.520
+y toda la mayoría de la lógica empresarial,
+
+42
+00:02:09.520 --> 00:02:11.640
+Y luego también tiene una dependencia
+
+43
+00:02:11.640 --> 00:02:14.280
+en el sistema de autenticación.
+
+44
+00:02:14.280 --> 00:02:17.650
+Así que se va a conectar a dos sistemas diferentes.
+
+45
+00:02:17.650 --> 00:02:22.210
+Uno para gestionar todo el proceso de inicio de sesión
+
+46
+00:02:22.210 --> 00:02:25.740
+y poder comprobar si un usuario está registrado
+
+47
+00:02:25.740 --> 00:02:27.660
+y si se les permite estar en el sistema.
+
+48
+00:02:27.660 --> 00:02:29.760
+El otro es para la interfaz
+
+49
+00:02:29.760 --> 00:02:33.000
+y coloqué un par de otros protocolos allí
+
+50
+00:02:33.000 --> 00:02:35.610
+o un par de otros artefactos que son protocolos
+
+51
+00:02:35.610 --> 00:02:39.450
+y van a usar una API de JSON de descanso.
+
+52
+00:02:39.450 --> 00:02:42.560
+Así que ahí mismo me dice mucho sobre el sistema.
+
+53
+00:02:42.560 --> 00:02:44.480
+Si me mostraras esto,
+
+54
+00:02:44.480 --> 00:02:47.080
+y tuviera que ver que tenías una interfaz angular
+
+55
+00:02:47.080 --> 00:02:49.730
+comunicando con una API de rieles
+
+56
+00:02:49.730 --> 00:02:51.500
+y luego un sistema de autenticación,
+
+57
+00:02:51.500 --> 00:02:54.480
+ya tengo algunas pistas muy buenas
+
+58
+00:02:54.480 --> 00:02:57.270
+sobre cómo construir ese sistema.
+
+59
+00:02:57.270 --> 00:02:59.840
+Ahora hablando sobre dependencias,
+
+60
+00:02:59.840 --> 00:03:02.780
+este es un gran ejemplo para analizar
+
+61
+00:03:02.780 --> 00:03:05.550
+cómo funcionan las dependencias en el programa.
+
+62
+00:03:05.550 --> 00:03:08.100
+Así que aquí tenemos un a interfaz angular,
+
+63
+00:03:08.100 --> 00:03:10.410
+ya hemos hablado de sus dependencias.
+
+64
+00:03:10.410 --> 00:03:14.010
+Ahora el sistema de autenticación, técnicamente
+
+65
+00:03:14.010 --> 00:03:16.740
+esto no tiene un conjunto de dependencias.
+
+66
+00:03:16.740 --> 00:03:19.220
+Y la razón de eso es porque
+
+67
+00:03:19.220 --> 00:03:22.240
+por la forma en que funcionan las dependencias en general.
+
+68
+00:03:22.240 --> 00:03:26.170
+Si lo piensas, lo que realmente significa dependencia
+
+69
+00:03:26.170 --> 00:03:30.960
+es que ese sistema no podría funcionar correctamente.
+
+70
+00:03:30.960 --> 00:03:34.500
+sin lo que sea de lo que depende.
+
+71
+00:03:34.500 --> 00:03:37.620
+La interfaz angular, que tiene perfecto sentido
+
+72
+00:03:37.620 --> 00:03:39.790
+para eso tener estas otras dependencias
+
+73
+00:03:39.790 --> 00:03:41.950
+porque imagínate si fueras a ello
+
+74
+00:03:41.950 --> 00:03:45.040
+y no tiene datos y no pudieras iniciar sesión.
+
+75
+00:03:45.040 --> 00:03:47.366
+No tendría punto alguno.
+
+76
+00:03:47.366 --> 00:03:48.840
+No sería capaz de funcionar apropiadamente.
+
+77
+00:03:48.840 --> 00:03:51.610
+Ahora al sistema de autentificación por el otro lado
+
+78
+00:03:51.610 --> 00:03:54.920
+no le importa la interfaz regular.
+
+79
+00:03:54.920 --> 00:03:57.120
+Podrías cambiarla con una interfaz reacción
+
+80
+00:03:57.120 --> 00:03:59.550
+y no le interesaría en lo más mínimo.
+
+81
+00:03:59.550 --> 00:04:03.950
+Simplemente toma pedidos y da respuestas.
+
+82
+00:04:03.950 --> 00:04:06.630
+No depende de esos otros sistemas.
+
+83
+00:04:06.630 --> 00:04:09.870
+Ahora un sistema un tanto intermedio,
+
+84
+00:04:09.870 --> 00:04:13.230
+el nodo intermedio son los carriles API.
+
+85
+00:04:13.230 --> 00:04:15.400
+Técnicamente, tampoco le interesa
+
+86
+00:04:15.400 --> 00:04:17.830
+o depende de la interfaz.
+
+87
+00:04:17.830 --> 00:04:21.420
+Simplemente es una API que puede tomar respuestas,
+
+88
+00:04:21.420 --> 00:04:24.290
+o toma pedidos y luego da respuestas.
+
+89
+00:04:24.290 --> 00:04:26.490
+Sin embargo tiene una dependencia al sistema
+
+90
+00:04:26.490 --> 00:04:29.470
+de autentificación y la razón para ello
+
+91
+00:04:29.470 --> 00:04:32.378
+es porque a veces las respuestas llegaran
+
+92
+00:04:32.378 --> 00:04:35.030
+y van a tener que ir
+
+93
+00:04:35.030 --> 00:04:37.700
+y comunicarse con ese sistema de autentificación
+
+94
+00:04:37.700 --> 00:04:40.440
+para asegurarse que fuese un pedido valido.
+
+95
+00:04:40.440 --> 00:04:43.860
+Y ese es un patrón muy común que verás
+
+96
+00:04:43.860 --> 00:04:47.070
+dónde tengas algún tipo de inferfaz
+
+97
+00:04:47.070 --> 00:04:49.670
+JavaScript con rieles de inferzas
+
+98
+00:04:49.670 --> 00:04:51.890
+y muchas veces cosas intermedias entre las dos,
+
+99
+00:04:51.890 --> 00:04:55.100
+habrá algún tipo de sistema de autentificación.
+
+100
+00:04:55.100 --> 00:04:57.550
+Ahora cada uno de esos nodos
+
+101
+00:04:57.550 --> 00:05:00.060
+es muy similar respecto a su estructura.
+
+102
+00:05:00.060 --> 00:05:02.440
+Tiene un conjunto de artefactos y luego
+
+103
+00:05:02.440 --> 00:05:05.000
+tiene componentes dentro de esos.
+
+104
+00:05:05.000 --> 00:05:06.860
+Y luego también quería mostrar
+
+105
+00:05:06.860 --> 00:05:09.500
+que puedes usar notas y comentarios aquí para
+
+106
+00:05:09.500 --> 00:05:11.620
+poder dar un poco más de
+
+107
+00:05:11.620 --> 00:05:14.000
+descripción para los desarrolladores.
+
+108
+00:05:14.000 --> 00:05:17.230
+Así que aquí simplemente me di cuenta de que esto va
+
+109
+00:05:17.230 --> 00:05:22.230
+a utilizar tokens JWT para la comunicación de autenticación.
+
+110
+00:05:22.300 --> 00:05:25.330
+Si le doy esto a un desarrollador de rieles,
+
+111
+00:05:25.330 --> 00:05:27.260
+les va a dar un muy buen conjunto
+
+112
+00:05:27.260 --> 00:05:30.063
+de instrucciones sobre qué construir.
+

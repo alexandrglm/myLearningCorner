@@ -37,8 +37,8 @@ This pattern continues until the array is empty.
 class ArrayPopper {
  
     constructor(arr) {
-    this.arr = arr; // Store the input array
-    this.atBeginning = true; // Toggle flag (start at beginning)
+        this.arr = arr; // Store the input array
+        this.atBeginning = true; // Toggle flag (start at beginning)
     }
 
     togglePopper() {
