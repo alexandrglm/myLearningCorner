@@ -694,24 +694,24 @@
 | \[X] | 07-172 |      | Overview of UML Use Case Diagram Elements                       | 2025-06-15 |
 | \[X] | 07-173 |      | Deep Dive: Build a Marketing Automation System Use Case Diagram | 2025-06-15 |
 | \[X] | 07-174 | Quiz | Use Case Diagrams                                               | 2025-06-15 |
-| \[ ] | 07-175 |      | Overview of the Elements of a UML Deployment Diagram            |            |
-| \[ ] | 07-176 |      | Deep Dive: Build a Song Request Deployment Engine Diagram       |            |
-| \[ ] | 07-177 |      | Deployment Diagrams                                             |            |
-| \[ ] | 07-178 |      | Overview of UML Package Diagram Elements                        |            |
-| \[ ] | 07-179 |      | Deep Dive: Build a Marketing Automation System Package Diagram  |            |
-| \[ ] | 07-180 |      | Package Diagrams                                                |            |
-| \[ ] | 07-181 |      | Overview of the Elements of a UML Sequence Diagram              |            |
-| \[ ] | 07-182 |      | Deep Dive: Build a CRM Commission Engine Sequence Diagram       |            |
-| \[ ] | 07-183 |      | Interaction Sequence Diagrams                                   |            |
-| \[ ] | 07-184 |      | Overview of UML State Machine Diagram Elements                  |            |
-| \[ ] | 07-185 |      | Deep Dive: Build a CRM State Machine Diagram                    |            |
-| \[ ] | 07-186 |      | State Machine Diagrams                                          |            |
+| \[X] | 07-175 |      | Overview of the Elements of a UML Deployment Diagram            | 2025-06-23 |
+| \[X] | 07-176 |      | Deep Dive: Build a Song Request Deployment Engine Diagram       | 2025-06-23 |
+| \[X] | 07-177 | Quiz | Deployment Diagrams                                             | 2025-06-23 |
+| \[X] | 07-178 |      | Overview of UML Package Diagram Elements                        | 2025-06-23 |
+| \[X] | 07-179 |      | Deep Dive: Build a Marketing Automation System Package Diagram  | 2025-06-23 |
+| \[X] | 07-180 | Quiz | Package Diagrams                                                | 2025-06-23 |
+| \[X] | 07-181 |      | Overview of the Elements of a UML Sequence Diagram              | 2025-06-28 |
+| \[X] | 07-182 |      | Deep Dive: Build a CRM Commission Engine Sequence Diagram       | 2025-06-28 |
+| \[X] | 07-183 | Quiz | Interaction Sequence Diagrams                                   | 2025-07-01 |
+| \[X] | 07-184 |      | Overview of UML State Machine Diagram Elements                  | 2025-07-01 |
+| \[X] | 07-185 |      | Deep Dive: Build a CRM State Machine Diagram                    | 2025-07-01 |
+| \[X] | 07-186 | Quiz | State Machine Diagrams                                          | 2025-07-01 |
 
 
-|      | #      | Type | Tittle                                                       | Date       |
-| ---- | ------ | ---- | ------------------------------------------------------------ | ---------- |
-| \[X] | 07-187 |      | The Importance of Systems Analysis and Design                | 2025-06-17 |
-| \[X] | 07-188 |      | Overview of Software Systems                                 | 2025-06-17 |
+|      | #      | Type | Tittle                                        | Date       |
+| ---- | ------ | ---- | --------------------------------------------- | ---------- |
+| \[X] | 07-187 |      | The Importance of Systems Analysis and Design | 2025-06-17 |
+| \[X] | 07-188 |      | Overview of Software Systems                  | 2025-06-17 |
 
 
 ### UML Projects
