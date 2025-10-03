@@ -1,0 +1,490 @@
+﻿WEBVTT
+
+1
+00:00:01.060 --> 00:00:03.330
+<v ->Hi, and welcome to Project One,</v>
+
+2
+00:00:03.330 --> 00:00:07.080
+where we are going to build and design Twitter.
+
+3
+00:00:07.080 --> 00:00:09.190
+Now, I wanna make a very quick point
+
+4
+00:00:09.190 --> 00:00:10.950
+'cause you will hear me say design
+
+5
+00:00:10.950 --> 00:00:13.090
+quite a bit throughout this course.
+
+6
+00:00:13.090 --> 00:00:15.610
+Especially because it's a systems analysis
+
+7
+00:00:15.610 --> 00:00:17.330
+and design course.
+
+8
+00:00:17.330 --> 00:00:19.250
+But when I say design, I do not
+
+9
+00:00:19.250 --> 00:00:22.100
+mean building the user interface
+
+10
+00:00:22.100 --> 00:00:24.870
+that is a completely different course,
+
+11
+00:00:24.870 --> 00:00:26.880
+that is when you are building
+
+12
+00:00:26.880 --> 00:00:29.580
+the way that the users are gonna interact
+
+13
+00:00:29.580 --> 00:00:31.950
+with that at a very high level
+
+14
+00:00:31.950 --> 00:00:33.990
+and a user interface,
+
+15
+00:00:33.990 --> 00:00:35.640
+kind of perspective.
+
+16
+00:00:35.640 --> 00:00:39.210
+When I say design I'm talking about how the system
+
+17
+00:00:39.210 --> 00:00:42.380
+is architected and as a developer,
+
+18
+00:00:42.380 --> 00:00:44.170
+when you're working in an office
+
+19
+00:00:44.170 --> 00:00:46.175
+and someone comes up and they say
+
+20
+00:00:46.175 --> 00:00:49.280
+they want you to design this system.
+
+21
+00:00:49.280 --> 00:00:50.980
+Most likely they're gonna be talking
+
+22
+00:00:50.980 --> 00:00:53.880
+about what were doing, so what we
+
+23
+00:00:53.880 --> 00:00:56.230
+are going to be doing in Project One,
+
+24
+00:00:56.230 --> 00:00:59.490
+with designing and building Twitter,
+
+25
+00:00:59.490 --> 00:01:02.860
+is we are gonna take a two pronged approach to it.
+
+26
+00:01:02.860 --> 00:01:06.340
+If you remember back to the UML course
+
+27
+00:01:06.340 --> 00:01:08.674
+remember that UML diagrams are broken into
+
+28
+00:01:08.674 --> 00:01:13.674
+two categories, they are structural and behavioral,
+
+29
+00:01:13.890 --> 00:01:16.220
+now for the structural class
+
+30
+00:01:16.220 --> 00:01:17.810
+or the diagram we are gonna be doing
+
+31
+00:01:17.810 --> 00:01:20.680
+is the class diagram and remember the class
+
+32
+00:01:20.680 --> 00:01:25.370
+diagrams are the go to diagram for structural designs.
+
+33
+00:01:25.370 --> 00:01:27.610
+They are the types of diagrams that can
+
+34
+00:01:27.610 --> 00:01:30.380
+pretty much be taken and translated
+
+35
+00:01:30.380 --> 00:01:32.180
+directly into code.
+
+36
+00:01:32.180 --> 00:01:35.280
+They are how you can configure your system
+
+37
+00:01:35.280 --> 00:01:38.410
+to set up your database associations
+
+38
+00:01:38.410 --> 00:01:40.230
+it list out all your attributes
+
+39
+00:01:40.230 --> 00:01:44.410
+it lists out all your method names, everything like that.
+
+40
+00:01:44.410 --> 00:01:48.400
+So that's gonna be the first one, we're going to build
+
+41
+00:01:48.400 --> 00:01:51.480
+the entire class diagram for Twitter
+
+42
+00:01:51.480 --> 00:01:54.130
+now that's gonna be pretty comprehensive
+
+43
+00:01:54.130 --> 00:01:55.930
+in order to complete this project.
+
+44
+00:01:55.930 --> 00:02:00.050
+You will need to build a user class, a tweet class
+
+45
+00:02:00.050 --> 00:02:03.450
+a retweet class, a preference class
+
+46
+00:02:03.450 --> 00:02:06.850
+a security class, a message class
+
+47
+00:02:06.850 --> 00:02:10.490
+a hashtag class, a reply class,
+
+48
+00:02:10.490 --> 00:02:14.090
+a like class, a location class,
+
+49
+00:02:14.090 --> 00:02:15.770
+a image class
+
+50
+00:02:15.770 --> 00:02:17.560
+and then you're also gonna have to
+
+51
+00:02:17.560 --> 00:02:21.400
+create a class for users to follow
+
+52
+00:02:21.400 --> 00:02:25.440
+other users and so the part that
+
+53
+00:02:25.440 --> 00:02:27.350
+you need to do with this is when
+
+54
+00:02:27.350 --> 00:02:29.470
+you build this diagram, each one of
+
+55
+00:02:29.470 --> 00:02:32.050
+those classes is going to represent its
+
+56
+00:02:32.050 --> 00:02:35.870
+own database table and it's gonna be its own entity.
+
+57
+00:02:35.870 --> 00:02:38.380
+You have to list inside of there, each one
+
+58
+00:02:38.380 --> 00:02:41.120
+of the attributes inside of that class.
+
+59
+00:02:41.120 --> 00:02:42.590
+I am not gonna tell you which ones
+
+60
+00:02:42.590 --> 00:02:44.720
+to use, you can go back and look
+
+61
+00:02:44.720 --> 00:02:47.700
+at Twitter to see what they used.
+
+62
+00:02:47.700 --> 00:02:49.330
+They do not have to be identical,
+
+63
+00:02:49.330 --> 00:02:51.270
+you simply have to go and build
+
+64
+00:02:51.270 --> 00:02:54.540
+it in the way that you personally think is best.
+
+65
+00:02:54.540 --> 00:02:56.330
+As far as operations go,
+
+66
+00:02:56.330 --> 00:02:58.510
+those are those type of actions,
+
+67
+00:02:58.510 --> 00:03:00.470
+remember those are method names
+
+68
+00:03:00.470 --> 00:03:04.180
+so it might be a posted tweet or show a tweet
+
+69
+00:03:04.180 --> 00:03:05.730
+or get all tweets.
+
+70
+00:03:05.730 --> 00:03:07.510
+There's all kind of different
+
+71
+00:03:07.510 --> 00:03:09.510
+method names that you could use.
+
+72
+00:03:09.510 --> 00:03:11.610
+Now I am not going to, and your
+
+73
+00:03:11.610 --> 00:03:13.250
+instructor is not gonna grade you
+
+74
+00:03:13.250 --> 00:03:18.250
+on how everyone's solutions's gonna look like mine
+
+75
+00:03:18.630 --> 00:03:20.310
+or the instructors.
+
+76
+00:03:20.310 --> 00:03:22.820
+That is not the point of this project
+
+77
+00:03:22.820 --> 00:03:24.950
+and it's not the point of any of these projects,
+
+78
+00:03:24.950 --> 00:03:27.460
+each one of these is going to be flexible,
+
+79
+00:03:27.460 --> 00:03:31.090
+you do have to build classes and go with the full list
+
+80
+00:03:31.090 --> 00:03:34.150
+that I just gave you, but there is flexibility
+
+81
+00:03:34.150 --> 00:03:37.150
+inside of those in regards to the attribute names,
+
+82
+00:03:37.150 --> 00:03:40.730
+and the method names and how all of those work.
+
+83
+00:03:40.730 --> 00:03:43.530
+What I want you to do is to put yourself
+
+84
+00:03:43.530 --> 00:03:46.780
+in the mindset, like you are back in time,
+
+85
+00:03:46.780 --> 00:03:48.760
+and you were the developer that they
+
+86
+00:03:48.760 --> 00:03:50.800
+tasked with building Twitter.
+
+87
+00:03:50.800 --> 00:03:55.160
+And I want you to design the entire system that way.
+
+88
+00:03:55.160 --> 00:03:58.190
+So I want you to pick out all of those class names
+
+89
+00:03:58.190 --> 00:03:59.470
+and add the attributes that you
+
+90
+00:03:59.470 --> 00:04:01.140
+think make the most sense, and then
+
+91
+00:04:01.140 --> 00:04:03.690
+most importantly, I want you to set up
+
+92
+00:04:03.690 --> 00:04:08.580
+those relationships, so a user can have many tweets.
+
+93
+00:04:08.580 --> 00:04:11.590
+Remember that implementing multiplicity, you need to be
+
+94
+00:04:11.590 --> 00:04:14.940
+able to show how that association works.
+
+95
+00:04:14.940 --> 00:04:18.610
+Each one of these classes is gonna be connected in some way
+
+96
+00:04:18.610 --> 00:04:20.420
+or another, to another class.
+
+97
+00:04:20.420 --> 00:04:23.400
+Not one of these is a stand alone entity,
+
+98
+00:04:23.400 --> 00:04:26.280
+so that's a very important concept to keep in mind,
+
+99
+00:04:26.280 --> 00:04:27.240
+so that's the first one.
+
+100
+00:04:27.240 --> 00:04:29.100
+That's the structural diagram,
+
+101
+00:04:29.100 --> 00:04:31.850
+the next one is gonna be the behavioral.
+
+102
+00:04:31.850 --> 00:04:35.780
+And for that, I want you to build a use case diagram,
+
+103
+00:04:35.780 --> 00:04:39.030
+remember that use cases are very high level,
+
+104
+00:04:39.030 --> 00:04:42.330
+and they're a great way of visualizing the types
+
+105
+00:04:42.330 --> 00:04:45.370
+of authorizations that users have.
+
+106
+00:04:45.370 --> 00:04:47.210
+Now for Twitter the different
+
+107
+00:04:47.210 --> 00:04:49.640
+requirements I want you build the use case
+
+108
+00:04:49.640 --> 00:04:54.220
+diagram are gonna be for a user and a follower.
+
+109
+00:04:54.220 --> 00:04:56.380
+Those are gonna be the two actors
+
+110
+00:04:56.380 --> 00:04:58.450
+that are gonna be integrated
+
+111
+00:04:58.450 --> 00:05:00.820
+for this diagram were gonna have as
+
+112
+00:05:00.820 --> 00:05:03.350
+far as actions go, we gonna have the ability
+
+113
+00:05:03.350 --> 00:05:06.173
+to post tweets, retweets, likes,
+
+114
+00:05:06.173 --> 00:05:08.920
+and messages and then feel free to put
+
+115
+00:05:08.920 --> 00:05:12.310
+any other kinds of optional types of features in there,
+
+116
+00:05:12.310 --> 00:05:14.720
+like the ability to post a message,
+
+117
+00:05:14.720 --> 00:05:18.760
+or see a message or the ability to post an image.
+
+118
+00:05:18.760 --> 00:05:22.010
+I wanna leave that up to your own creativity,
+
+119
+00:05:22.010 --> 00:05:24.960
+and also with the way that you personally think
+
+120
+00:05:24.960 --> 00:05:26.970
+that it should be built out.
+
+121
+00:05:26.970 --> 00:05:28.920
+So now that you know the requirements,
+
+122
+00:05:28.920 --> 00:05:30.283
+good luck on the project.
+
