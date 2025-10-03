@@ -1,0 +1,450 @@
+﻿WEBVTT
+
+1
+00:00:01.060 --> 00:00:03.330
+<v ->Hola, bienvenidos a Proyecto Uno,</v>
+
+2
+00:00:03.330 --> 00:00:07.080
+donde vamos a crear y diseñar Twitter.
+
+3
+00:00:07.080 --> 00:00:09.190
+Quiero aclarar algo rápidamente,
+
+4
+00:00:09.190 --> 00:00:10.950
+porque me oiréis hablar de diseño
+
+5
+00:00:10.950 --> 00:00:13.090
+bastante a menudo a lo largo del curso.
+
+6
+00:00:13.090 --> 00:00:15.610
+Especialmente porque se trata de un curso de análisis
+
+7
+00:00:15.610 --> 00:00:17.330
+de sistemas y de diseño.
+
+8
+00:00:17.330 --> 00:00:19.250
+Pero cuando digo diseño,
+
+9
+00:00:19.250 --> 00:00:22.100
+no me refiero a crear la interfaz de usuario,
+
+10
+00:00:22.100 --> 00:00:24.870
+ese es un curso totalmente diferente
+
+11
+00:00:24.870 --> 00:00:29.580
+en el que creas la manera en que los usuarios interactúan
+
+12
+00:00:29.580 --> 00:00:31.950
+con ella a un nivel muy alto
+
+13
+00:00:31.950 --> 00:00:35.640
+desde la perspectiva de una interfaz de usuario.
+
+14
+00:00:35.640 --> 00:00:39.210
+Cuando digo diseño, me refiero a la manera en que el sistema
+
+15
+00:00:39.210 --> 00:00:42.380
+está diseñado, y como desarrollador,
+
+16
+00:00:42.380 --> 00:00:44.170
+cuando trabajas en una oficina
+
+17
+00:00:44.170 --> 00:00:46.175
+y alguien viene y te dice
+
+18
+00:00:46.175 --> 00:00:49.280
+que quiere que diseñes un sistema,
+
+19
+00:00:49.280 --> 00:00:52.655
+probablemente se referirán a lo que vamos a hacer.
+
+20
+00:00:52.655 --> 00:00:56.230
+Así que lo vamos a hacer en Proyecto Uno,
+
+21
+00:00:56.230 --> 00:00:59.490
+diseño y creación de Twitter,
+
+22
+00:00:59.490 --> 00:01:02.860
+es vamos a tomar un enfoque doble.
+
+23
+00:01:02.860 --> 00:01:06.340
+Si recordamos el curso de UML,
+
+24
+00:01:06.340 --> 00:01:08.674
+recordamos que los diagramas UML se dividen
+
+25
+00:01:08.674 --> 00:01:13.674
+en dos categorías: estructurales y conducutuales.
+
+26
+00:01:13.890 --> 00:01:16.220
+Para la clase estructural
+
+27
+00:01:16.220 --> 00:01:17.810
+o el diagrama que vamos a hacer
+
+28
+00:01:17.810 --> 00:01:20.680
+es el diagrama de clases, y recordemos que los diagramas
+
+29
+00:01:20.680 --> 00:01:23.571
+de clases son los diagramas más frecuentes
+
+30
+00:01:23.571 --> 00:01:25.370
+para los diseños estructurales.
+
+31
+00:01:25.370 --> 00:01:27.610
+Estos son los tipos de diagramas
+
+32
+00:01:27.610 --> 00:01:32.180
+que pueden tomarse y traducirse directamente a código.
+
+33
+00:01:32.180 --> 00:01:35.280
+Son una manera de configurar tu sistema
+
+34
+00:01:35.280 --> 00:01:38.410
+para ajustar todas las asociaciones de la base de datos,
+
+35
+00:01:38.410 --> 00:01:40.230
+incluye todos los atributos,
+
+36
+00:01:40.230 --> 00:01:44.410
+todos los nombres de los métodos, y cosas así.
+
+37
+00:01:44.410 --> 00:01:48.400
+Ese va a ser el primero, vamos a crear
+
+38
+00:01:48.400 --> 00:01:51.480
+el diagrama de clases para Twitter.
+
+39
+00:01:51.480 --> 00:01:54.130
+Va a ser bastante completo.
+
+40
+00:01:54.130 --> 00:01:55.930
+Para realizar este proyecto,
+
+41
+00:01:55.930 --> 00:02:00.050
+necesitaremos una clase de usuario, una clase de tuit,
+
+42
+00:02:00.050 --> 00:02:03.450
+una clase de retuit, una clase de preferencia,
+
+43
+00:02:03.450 --> 00:02:06.850
+una clase de seguridad, una clase de mensaje,
+
+44
+00:02:06.850 --> 00:02:10.490
+una clase de hashtag, una clase de respuesta,
+
+45
+00:02:10.490 --> 00:02:14.090
+una clase de "me gusta", una clase de ubicación,
+
+46
+00:02:14.090 --> 00:02:15.770
+una clase de imagen,
+
+47
+00:02:15.770 --> 00:02:17.577
+y luego también necesitaremos
+
+48
+00:02:17.577 --> 00:02:22.577
+crear una clase para que los usuarios siga a otros usuarios.
+
+49
+00:02:23.320 --> 00:02:25.903
+Así que lo que tenéis que hacer
+
+50
+00:02:27.350 --> 00:02:29.470
+al crear este diagrama es que cada una
+
+51
+00:02:29.470 --> 00:02:32.050
+de esas clases represente
+
+52
+00:02:32.050 --> 00:02:35.870
+su propia tabla de base de datos y sea su propia entidad.
+
+53
+00:02:35.870 --> 00:02:38.380
+Tenéis que incluirlo todo, cada uno
+
+54
+00:02:38.380 --> 00:02:41.120
+de los atributos dentro de esa clase.
+
+55
+00:02:41.120 --> 00:02:42.590
+No os voy a decir cuáles usar,
+
+56
+00:02:42.590 --> 00:02:44.720
+podéis volver y echar un vistazo
+
+57
+00:02:44.720 --> 00:02:47.700
+a Twitter para ver lo que usaron.
+
+58
+00:02:47.700 --> 00:02:49.330
+No tienen por qué ser idénticos,
+
+59
+00:02:49.330 --> 00:02:51.270
+simplemente tenéis que crearlo
+
+60
+00:02:51.270 --> 00:02:54.540
+de forma que prefiráis personalmente.
+
+61
+00:02:54.540 --> 00:02:56.330
+En lo que respecta a las operaciones,
+
+62
+00:02:56.330 --> 00:02:58.510
+son ese tipo de acciones,
+
+63
+00:02:58.510 --> 00:03:00.470
+recordad que son nombres de métodos,
+
+64
+00:03:00.470 --> 00:03:04.180
+así que podría ser un tuit publicado, o mostrar un tuit,
+
+65
+00:03:04.180 --> 00:03:05.730
+o ver todos los tuits.
+
+66
+00:03:05.730 --> 00:03:09.510
+Hay todo tipo de nombres de métodos diferentes utilizables.
+
+67
+00:03:09.510 --> 00:03:13.250
+Lo que ni yo ni vuestro profesor haremos
+
+68
+00:03:13.250 --> 00:03:18.088
+será evaluar si vuestras soluciones se parecen
+
+69
+00:03:18.088 --> 00:03:20.310
+a la mía o a la de los profesores.
+
+70
+00:03:20.310 --> 00:03:22.820
+No es el objetivo de este proyecto
+
+71
+00:03:22.820 --> 00:03:24.950
+ni el de ningún proyecto,
+
+72
+00:03:24.950 --> 00:03:27.460
+cada uno de estos va a ser flexible,
+
+73
+00:03:27.460 --> 00:03:31.090
+tenéis que crear clases e incluir toda la lista
+
+74
+00:03:31.090 --> 00:03:34.150
+que os acabo de dar, pero hay flexibilidad
+
+75
+00:03:34.150 --> 00:03:37.150
+en lo que respecta a los nombres de los atributos,
+
+76
+00:03:37.150 --> 00:03:40.730
+los nombres de los métodos y la manera en que funcionan.
+
+77
+00:03:40.730 --> 00:03:43.530
+Lo que quiero que hagáis es que os imaginéis
+
+78
+00:03:43.530 --> 00:03:46.780
+que volvéis atrás en el tiempo
+
+79
+00:03:46.780 --> 00:03:50.800
+y sois los desarrolladores encargados de crear Twitter.
+
+80
+00:03:50.800 --> 00:03:55.160
+Y quiero que diseñéis todo el sistema de esa manera.
+
+81
+00:03:55.160 --> 00:03:58.190
+Queiro que escojáis todos los nombres de clases
+
+82
+00:03:58.190 --> 00:03:59.470
+y añadáis los atributos
+
+83
+00:03:59.470 --> 00:04:01.140
+que creáis que tienen más sentido,
+
+84
+00:04:01.140 --> 00:04:05.572
+y lo más importante, quiero que configuréis esas relaciones
+
+85
+00:04:05.572 --> 00:04:08.580
+para que un usuario pueda tener muchos tuits.
+
+86
+00:04:08.580 --> 00:04:11.590
+Recordad que al implementar multiplicidad, debéis
+
+87
+00:04:11.590 --> 00:04:14.940
+ser capazos de mostrar cómo funciona esa asociación.
+
+88
+00:04:14.940 --> 00:04:18.610
+Cada una de estas clases estará conectada de alguna forma
+
+89
+00:04:18.610 --> 00:04:20.420
+o de otra a otra clase.
+
+90
+00:04:20.420 --> 00:04:23.400
+Ninguna de ellas es una entidad independiente,
+
+91
+00:04:23.400 --> 00:04:26.280
+ese es un concepto muy importante a tener en cuenta,
+
+92
+00:04:26.280 --> 00:04:29.100
+y ese es el primero. Eso es el diagrama estructural,
+
+93
+00:04:29.100 --> 00:04:31.850
+el siguiente será el conductual.
+
+94
+00:04:31.850 --> 00:04:35.780
+Para ello, quiero que creéis un diagrama de casos de uso,
+
+95
+00:04:35.780 --> 00:04:39.030
+recordad que los casos de uso son de nivel muy alto,
+
+96
+00:04:39.030 --> 00:04:42.330
+y son una buena forma de visualizar los tipos
+
+97
+00:04:42.330 --> 00:04:45.370
+de autorizaciones que los usuarios tienen.
+
+98
+00:04:45.370 --> 00:04:47.210
+Para Twitter, los diferentes requisitos con los que
+
+99
+00:04:47.210 --> 00:04:49.640
+con los que quiero que creéis el diagrama
+
+100
+00:04:49.640 --> 00:04:54.220
+de casos de uso serán para el usuario y para el seguidor.
+
+101
+00:04:54.220 --> 00:04:58.645
+Serán los dos actores que estarán integrados
+
+102
+00:04:58.645 --> 00:05:01.962
+en este diagrama. En lo que respecta a las acciones,
+
+103
+00:05:01.962 --> 00:05:05.840
+tendremos la posibilidad de publicar tuits, retuits,
+
+104
+00:05:05.840 --> 00:05:08.920
+"me gustas" y mensajes, y luego si queréis incluid
+
+105
+00:05:08.920 --> 00:05:12.310
+otros tipos de funciones opcionales,
+
+106
+00:05:12.310 --> 00:05:14.720
+como la posibilidad de publicar un mensaje,
+
+107
+00:05:14.720 --> 00:05:18.760
+de ver un mensaje o la posibilidad de publicar una imagen.
+
+108
+00:05:18.760 --> 00:05:22.010
+Quiero dejarlo en manos de vuestra creatividad
+
+109
+00:05:22.010 --> 00:05:24.960
+y también de la forma en que personalmente creáis
+
+110
+00:05:24.960 --> 00:05:26.970
+que debería crearse.
+
+111
+00:05:26.970 --> 00:05:28.920
+Así que ahora que conocéis los requisitos,
+
+112
+00:05:28.920 --> 00:05:30.283
+buena suerte con el proyecto.
+
