@@ -1117,4 +1117,84 @@
 
 # MODULE 11
 
-## SQL
+### SQL
+
+|      | #      | Type   | Tittle                                                                 | Date       |
+| ---- | ------ | ------ | ---------------------------------------------------------------------- | ---------- |
+| \[X] | 11-511 | CRUD   | CRUD Section Introduction                                               | 2025-09-28 |
+| \[X] | 11-512 | SQL    | Guide to Adding Records to a MySQL Database                             | 2025-09-28 |
+| \[X] | 11-513 | SQL    | How to Query for All Records in a SQL Database                          | 2025-09-28 |
+| \[X] | 11-514 | SQL    | How to Filter SQL Queries with the: 'where', 'and', 'or' Commands       | 2025-09-28 |
+| \[X] | 11-515 | SQL    | Using Limit and Offset in a SQL Query                                   | 2025-09-28 |
+| \[X] | 11-516 | SQL    | How to Update Records in SQL with the UPDATE Command                    | 2025-09-29 |
+| \[X] | 11-517 | SQL    | Using BEGIN and ROLLBACK to Revert Queries in MySQL                     | 2025-09-29 |
+| \[X] | 11-518 | SQL    | How to Query for Unique Values in a SQL Database                        | 2025-09-29 |
+| \[X] | 11-519 | SQL    | How to Use ORDER BY and CAST in MySQL                                    | 2025-09-29 |
+| \[X] | 11-520 | SQL    | Guide to Deleting Records from a SQL Database                            | 2025-09-29 |
+| \[X] | 11-521 | SQL    | Introduction to Advanced SQL Queries                                     | 2025-09-29 |
+| \[X] | 11-522 | SQL    | How to Run a SQL Query Using Ranges                                      | 2025-09-30 |
+| \[X] | 11-523 | SQL    | Guide to Wildcard Queries in MySQL                                       | 2025-09-30 |
+| \[X] | 11-524 | SQL    | Writing Cleaner SQL Code with the WHERE/IN Command                       | 2025-09-30 |
+| \[X] | 11-525 | SQL    | Introduction to SQL Subqueries                                           | 2025-09-30 |
+| \[X] | 11-526 | SQL    | Additional Examples of SQL Subqueries                                     | 2025-10-01 |
+| \[X] | 11-527 | SQL    | How to Use SQL Subqueries for Insert Statements                           | 2025-10-01 |
+| \[X] | 11-528 | SQL    | Introduction to SQL Functions                                             | 2025-10-01 |
+| \[X] | 11-529 | SQL    | How to Change the Data Type of a Column from String to Decimal for Financial Data in SQL | 2025-10-01 |
+| \[X] | 11-530 | SQL    | How to Use the: MIN, MAX, SUM, AVG, and COUNT Functions in SQL           | 2025-10-01 |
+| \[X] | 11-531 | SQL    | How to Generate Summary Reports in SQL with GROUP BY and Aggregate Functions | 2025-10-01 |
+| \[X] | 11-532 | SQL    | Syntax for Adding Comments to a SQL Script                               | 2025-10-01 |
+| \[X] | 11-533 | SQL    | How to Turn Safe Mode Off in MySQL                                       | 2025-10-01 |
+| \[X] | 11-534 | SQL    | How to Add a New Column in SQL and Fill It with Randomized Sample Data   | 2025-10-01 |
+| \[X] | 11-535 | SQL    | How to Implement Calculated Fields in SQL                                 | 2025-10-01 |
+| \[X] | 11-536 | SQL    | Adding Custom Row and Cell Names in SQL                                   | 2025-10-01 |
+| \[X] | 11-537 | SQL    | Introduction to Control Flow in SQL                                       | 2025-10-01 |
+| \[X] | 11-538 | SQL    | Defining Aliases in SQL Queries and Exporting Data to CSV                 | 2025-10-01 |
+| \[X] | 11-539 | SQL    | How to Alias Table Names in SQL                                           | 2025-10-01 |
+| \[X] | 11-540 | SQL    | How to Use Case Statements in SQL Queries to Implement Conditional Logic  | 2025-10-01 |
+| \[X] | 11-541 | SQL    | Introduction to Relational Queries in SQL                                  | 2025-10-01 |
+| \[X] | 11-542 | SQL    | Guide to SQL Inner Joins                                                  | 2025-10-01 |
+| \[X] | 11-543 | SQL    | How to Add Multiple Conditionals to an Inner Join Query in SQL            | 2025-10-01 |
+| \[X] | 11-544 | SQL    | How to Join 3 Tables Together with an Inner Join in SQL                   | 2025-10-01 |
+| \[X] | 11-545 | SQL    | Inner vs Outer Joins in SQL                                               | 2025-10-01 |
+| \[X] | 11-546 | SQL    | How to Build a Summary Report of Data from 3 Tables in SQL                | 2025-10-01 |
+| \[X] | 11-547 | SQL    | Introduction to Advanced SQL Topics                                       | 2025-10-01 |
+| \[X] | 11-548 | SQL    | Guide to Understanding and Working with SQL Indexes                      | 2025-10-01 |
+| \[X] | 11-549 | SQL    | SQL Database Normalization Techniques                                     | 2025-10-01 |
+| \[X] | 11-550 | SQL    | How to Work with EER Diagrams in SQL in Order to Model Database Tables and Data Relationships | 2025-10-01 |
+| \[X] | 11-551 | SQL    | Project Requirements for SQL Course                                       | 2025-10-01 |
+
+
+
+### REDIS
+
+|      | #      | Type   | Tittle                                                                     | Date       |
+| ---- | ------ | ------ | -------------------------------------------------------------------------- | ---------- |
+| \[X] | 11-552 | Redis  | How to Install Redis and Run the Redis CLI on a Mac                        | 2025-10-01 |
+| \[X] | 11-553 | Redis  | SET and GET Commands in Redis                                             | 2025-10-01 |
+| \[X] | 11-554 | Redis  | Key Structure Design in Redis                                             | 2025-10-01 |
+| \[X] | 11-555 | Redis  | Incrementing and Decrementing Values in Redis                             | 2025-10-01 |
+| \[X] | 11-556 | Redis  | Guide to Deleting in Redis with the DEL Command                            | 2025-10-01 |
+| \[X] | 11-557 | Redis  | How to Check if a Key Has Been Set in Redis                                | 2025-10-01 |
+| \[X] | 11-558 | Redis  | How to Expire a Key in Redis                                              | 2025-10-01 |
+| \[X] | 11-559 | Redis  | Guide to Overriding a Keys Value with GETSET                               | 2025-10-01 |
+| \[ ] | 11-560 | Redis  | How to Query for Key Names with the KEYS Pattern Command                     |      |
+| \[ ] | 11-561 | Redis  | Introduction to Hashes in Redis and the HSET Command                          |      |
+| \[ ] | 11-562 | Redis  | Common Redis Hash Commands                                                     |      |
+| \[ ] | 11-563 | Redis  | Project Requirements for Redis Course                                         |      |
+| \[ ] | 11-564 | Redis  | Project Solution                                                              |      |
+
+---
+
+### Final Capstone Project
+
+| #      | Type   | Tittle           | Date              |
+| ------ | ------ | ---------------- | ----------------- |
+| 11-565 |        | Capstone Project | **In Progress**   |
+
+
+### Course Checkpoint 21
+
+| #      | Type   | Tittle               | Date |
+| ------ | ------ | -------------------- | ---- |
+| 11-566 |        | Course Checkpoint 21 |      |
+
