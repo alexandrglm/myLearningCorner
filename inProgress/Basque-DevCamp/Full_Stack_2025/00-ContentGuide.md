@@ -766,45 +766,57 @@
 |      | #      | Type   | Tittle                                                          | Date       |
 | ---- | ------ | ------ | --------------------------------------------------------------- | ---------- |
 | \[X] | 07-001 | Intro  | React Architecture Overview                                     | 2025-08-01 |
-| \[X] | 07-002 | Setup  | How to Install Node and NPM on a Mac                            | 2025-08-01 |
-| \[X] | 07-003 | Tools  | Text Editor Overview for React Development                      | 2025-08-01 |
-| \[X] | 07-004 | Setup  | How to Install Node and NPM on a PC                             | 2025-08-01 |
-| \[X] | 07-005 | Setup  | How to Generate a React Project with the Project Builder Module | 2025-08-03 |
-| \[X] | 07-006 | Tools  | VS Code Formatting Extension Fix                                | 2025-08-03 |
-| \[X] | 07-007 | Setup  | How to Install and Configure Git for Source Version Control     | 2025-08-03 |
-| \[X] | 07-008 | Guide  | How to Go Through the React Course Material and UI/UX Workflow  | 2025-08-03 |
-| \[X] | 07-009 | Project| React Portfolio Project Creation                                | 2025-08-05 |
-| \[X] | 07-010 | Setup  | Adding, Removing, and Managing Node Modules in a React Project  | 2025-08-05 |
-| \[X] | 07-011 | Setup  | Additional Way to Install Dependencies in a React Application   | 2025-08-05 |
-| \[X] | 07-012 | Code   | Analyzing the src Directory in a React Application              | 2025-08-07 |
-| \[X] | 07-013 | Code   | Overview of the Static Directory in a React Application         | 2025-08-07 |
-| \[X] | 07-014 | Build  | Overview of Webpack's Role in React                             | 2025-08-07 |
-| \[X] | 07-015 | Build  | What is Babel?                                                  | 2025-08-07 |
-| \[X] | 07-016 | Config | How to Override Server Ports in React                           | 2025-08-09 |
-| \[X] | 07-017 | Config | Overview of the package.json File in a React Application        | 2025-08-09 |
-| \[X] | 07-018 | Config | Difference Between package.json and package-lock.json Files     | 2025-08-09 |
-| \[X] | 07-019 | Config | Overview of Procfile, Readme, and Server JS Files               | 2025-08-09 |
-| \[X] | 07-020 | Git    | Pushing Application Code to GitHub                              | 2025-08-09 |
+| \[X] |        | Setup  | How to Install Node and NPM on a Mac                            | 2025-08-01 |
+| \[X] |        | Tools  | Text Editor Overview for React Development                      | 2025-08-01 |
+| \[X] |        | Setup  | How to Install Node and NPM on a PC                             | 2025-08-01 |
+| \[X] | 07-002 | Setup  | How to Generate a React Project with the Project Builder Module | 2025-08-03 |
+| \[X] |        | Tools  | VS Code Formatting Extension Fix                                | 2025-08-03 |
+| \[X] | 07-004 | Setup  | How to Install and Configure Git for Source Version Control     | 2025-08-03 |
+| \[X] | 07-005 | Guide  | How to Go Through the React Course Material and UI/UX Workflow  | 2025-08-03 |
+| \[X] | 07-006 | Project| React Portfolio Project Creation                                | 2025-08-05 |
+| \[X] | 07-007 | Setup  | Adding, Removing, and Managing Node Modules in a React Project  | 2025-08-05 |
+| \[X] | 07-008 | Setup  | Additional Way to Install Dependencies in a React Application   | 2025-08-05 |
+| \[X] | 07-009 | Code   | Analyzing the src Directory in a React Application              | 2025-08-07 |
+| \[X] | 07-010 | Code   | Overview of the Static Directory in a React Application         | 2025-08-07 |
+| \[X] | 07-011 | Build  | Overview of Webpack's Role in React                             | 2025-08-07 |
+| \[X] | 07-012 | Build  | What is Babel?                                                  | 2025-08-07 |
+| \[X] | 07-013 | Config | How to Override Server Ports in React                           | 2025-08-09 |
+| \[X] | 07-014 | Config | Overview of the package.json File in a React Application        | 2025-08-09 |
+| \[X] | 07-015 | Config | Difference Between package.json and package-lock.json Files     | 2025-08-09 |
+| \[X] | 07-016 | Config | Overview of Procfile, Readme, and Server JS Files               | 2025-08-09 |
+| \[X] |        | Git    | Pushing Application Code to GitHub                              | 2025-08-09 |
 
 
 ### React:    Fundamentals and Components
 
-|      | #      | Type   | Tittle                                                                     | Date       |
+|      | #      | Type   | Title                                                                      | Date       |
 | ---- | ------ | ------ | -------------------------------------------------------------------------- | ---------- |
-| \[X] | 07-021 | Intro  | Introduction to React Components                                           | 2025-08-11 |
-| \[X] | 07-022 | Concept| Class vs Functional Components in React                                    | 2025-08-11 |
-| \[X] | 07-023 | Concept| React Constructor Overview                                                 | 2025-08-11 |
-| \[X] | 07-024 | Code   | Custom Functions in React and Using Map to Loop Over Data                  | 2025-08-11 |
-| \[X] | 07-025 | Concept| Overview of Props in React                                                 | 2025-08-13 |
-| \[X] | 07-026 | Concept| How JSX Works in React                                                     | 2025-08-13 |
-| \[X] | 07-027 | State  | Introduction to Working with State in React                                | 2025-08-13 |
-| \[X] | 07-028 | State  | Deep Dive: Props, State, and this - Part 1                                 | 2025-08-15 |
-| \[X] | 07-029 | State  | Deep Dive: Props, State, and this - Part 2                                 | 2025-08-15 |
-| \[X] | 07-030 | State  | Deep Dive: Component Lifecycle in React                                    | 2025-08-15 |
-| \[X] | 07-031 | State  | How to Change State Values in React                                        | 2025-08-15 |
-| \[X] | 07-032 | Code   | How to Build a Data Filter in React                                        | 2025-08-17 |
-| \[X] | 07-033 | Logic  | Introduction to React Conditionals                                         | 2025-08-17 |
-| \[X] | 07-034 | Logic  | How to Use Ternary Operators in JSX Code to Implement Conditional Behavior | 2025-08-17 |
+| \[X] | 07-017 | Intro  | Introduction to React Components                                           | 2025-08-11 |
+| \[X] | 07-018 | Concept| Class vs Functional Components in React                                    | 2025-08-11 |
+| \[X] | 07-019 | Concept| React Constructor Overview                                                 | 2025-08-11 |
+| \[X] | 07-020 | Code   | Custom Functions in React and Using Map to Loop Over Data                  | 2025-08-11 |
+| \[X] | 07-021 | Concept| Overview of Props in React                                                 | 2025-08-13 |
+| \[X] | 07-022 | Concept| How JSX Works in React                                                     | 2025-08-13 |
+| \[X] | 07-023 | State  | Introduction to Working with State in React                                | 2025-08-13 |
+| \[X] | 07-024 | State  | Deep Dive: Props, State, and this - Part 1                                 | 2025-08-15 |
+| \[X] | 07-025 | State  | Deep Dive: Props, State, and this - Part 2                                 | 2025-08-15 |
+| \[X] | 07-026 | State  | Deep Dive: Component Lifecycle in React                                    | 2025-08-15 |
+| \[X] | 07-027 | State  | How to Change State Values in React                                        | 2025-08-15 |
+| \[X] | 07-028 | Code   | How to Build a Data Filter in React                                        | 2025-08-17 |
+| \[X] | 07-029 | Logic  | Introduction to React Conditionals                                         | 2025-08-17 |
+| \[X] | 07-030 | Logic  | How to Use Ternary Operators in JSX Code to Implement Conditional Behavior | 2025-08-17 |
+
+
+### React:      Basic Routing
+|      | #      | Type   | Title                                                                      | Date       |
+| ---- | ------ | ------ | -------------------------------------------------------------------------- | ---------- |
+| \[X] | 07-031 | Route  | Basic Route Setup in React                                                 | 2025-08-18 |
+| \[X] | 07-032 | Route  | Overview of React Router NavLinks                                          | 2025-08-18 |
+| \[X] | 07-033 | Route  | Guide to Working with NavLink Active Styles                                | 2025-08-18 |
+| \[X] | 07-034 | Route  | Overview of the Link Component in React                                    | 2025-08-18 |
+| \[X] | 07-035 | Route  | How to Access URL Values in React                                          | 2025-08-18 |
+| \[X] | 07-036 | Route  | Implementing a Catch All Route with React Router                           | 2025-08-18 |
+
 
 
 ### React:    API - DevCamp Space
