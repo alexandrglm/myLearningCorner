@@ -1,4 +1,8 @@
-*** 
+ 
+# FSD Training - Bottega DevCamp 2025 Part Time
+
+
+---
 
 # MODULE 1
 
@@ -109,7 +113,7 @@
 | \[X] | 81  | UX/UI                | How to Create an Effective UI Style Guide                | 2025/02/03 |
 | \[X] | 82  |                      | **Course Checkpoint 2**                                  | 2025/02/03 |
 
-*** 
+---
 
 # MODULE 2
 
@@ -220,6 +224,7 @@
 | \[X] | 74  | Python - Tuples: `the_tuple[index]` - `the_tuple[start : stop]` - `list(the_tuple) + the_tuple.remove('the_item') + the_tuple = tuple(the_tuple)`                | Three Ways to Remove Elements from a Python Tuple                                          | 2025/02/18 |
 | \[X] | 75  |                                                                                                                                                                  | **Course Checkpoint 4**                                                                    | 2025/02/19 |
 
+
 ---
 
 # MODULE 3
@@ -288,7 +293,7 @@
 | \[X] | 117 | Python: WebCrapper exercise solution.                                                       | Project Solution: Build a Web Scraper in Python                     | 2025/03/02 |
 | \[X] | 118 |                                                                                             | **Course Checkpoint 5**                                             | 2025/03/06 |
 
-### Python 07:  Class'es
+### Python 07:  Classes'
 
 |      | #   | Type                                                                                               | Tittle                                                                   | Date       |
 | ---- | --- | -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ | ---------- |
@@ -359,11 +364,12 @@
 | [ ] | 160    |                                                                            | Course Checkpoint 6                                                       |            |
 | \[X] | 03-161 | Digital Literacy: NoSQL Intro                                              | Guide to NoSQL Databases for Developers                                   | 2025-03-13 |
 
-***
+
+---
 
 # MODULE 4 - JAVASCRIPT (i)
 
-### JavaScript 01:    Basics
+### JavaScript 01:  Basics
 
 |      | #      | Type                                                                                                                                | Tittle                                                               | Date       |
 | ---- | ------ | ----------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- | ---------- |
@@ -386,7 +392,7 @@
 | \[X] | 04-017 | Order of Operations: `()`, `**`, `* / %`, `+ -`                                                                                     | Order of Operations in JavaScript                                    | 2025-03-24 |
 | \[X] | 04-018 | Exercise: `reduce()`                                                                                                                | **Exercise:** How to Get the Average from an Array in JavaScript     | 2024-03-24 |
 
-### JavaScript 02:    Conditionals
+### JavaScript 02:      Conditionals
 
 |      | #      | Type                  | Tittle                                                                | Date       |
 | ---- | ------ | --------------------- | --------------------------------------------------------------------- | ---------- |
@@ -397,7 +403,7 @@
 | \[X] | 04-023 | `switch`, `typeof`    | How to Build a Switch Statement in JavaScript to Check for Data Types | 2025-03-24 |
 | \[X] | 04-024 | Ternary Operator      | Overview of JavaScript Ternary Operator                               | 2025-03-24 |
 
-### JavaScript 03:    Functions
+### JavaScript 03:      Functions
 
 |      | #      | Type                               | Tittle                                                             | Date       |
 | ---- | ------ | ---------------------------------- | ------------------------------------------------------------------ | ---------- |
@@ -408,7 +414,7 @@
 | \[X] | 04-029 | Function Arguments                 | How to Work with Function Arguments in JavaScript                  | 2025-03-24 |
 | \[X] | 04-030 | Reference vs Value (Arguments)     | Function Arguments: Reference vs Value                             | 2025-03-24 |
 
-### JavaScript 04:    Closures
+### JavaScript 04:      Closures
 
 |      | #      | Type                      | Tittle                                                            | Date       |
 | ---- | ------ | ------------------------- | ----------------------------------------------------------------- | ---------- |
@@ -417,7 +423,7 @@
 | \[X] | 04-033 | `this` keyword            | Introduction to the 'this' Keyword in JavaScript                  | 2025-03-25 |
 | \[X] | 04-034 | `this` binding            | How to Use the 'this' Keyword in JavaScript Programs              | 2025-03-25 |
 
-### JavaScript 05:     Arrays
+### JavaScript 05:      Arrays
 
 |      | #      | Type                                   | Tittle                                                                         | Date        |
 | ---- | ------ | -------------------------------------- | ------------------------------------------------------------------------------ | ----------- |
@@ -428,7 +434,7 @@
 | \[X] | 04-039 | `push()`/`pop()`/`shift()`/`unshift()` | Guide to Adding and Removing Array Elements in JavaScript                      | 2025-03-27  |
 | \[X] | 04-040 | `splice()`                             | How to Use the Splice Function in JavaScript to Remove Specific Array Elements | 2025-03-27  |
 
-### JavaScript 06:     Loops
+### JavaScript 06:      Loops
 
 |      | #      | Type                 | Tittle                                          | Date       |
 | ---- | ------ | -------------------- | ----------------------------------------------- | ---------- |
@@ -436,7 +442,7 @@
 | \[X] | 04-042 | `for...in`           | How to Loop Through a JavaScript Object         | 2025-03-27 |
 | \[X] | 04-043 | `while`/`do...while` | Guide to While and Do/While Loops in JavaScript | 2025-03-27 |
 
-### JavaScript 07 :   DOM
+### JavaScript 07:      DOM
 
 |      | #      | Type               | Tittle                                                                                | Date       |
 | ---- | ------ | ------------------ | ------------------------------------------------------------------------------------- | ---------- |
@@ -445,7 +451,7 @@
 | \[X] | 04-046 | `fetch()` API      | How to Pull Images from Instagram with JavaScript                                     | 2025-03-28 |
 | \[X] | 04-047 | `event` simulation | Auto Following Accounts and Hashtags on LinkedIn with JavaScript                      | 2025-03-28 |
 
-### JavaScript 08:    Modern JavaScript
+### JavaScript 08:      Modern JavaScript
 
 |      | #      | Type                                    | Tittle                                                                            | Date       |
 | ---- | ------ | --------------------------------------- | --------------------------------------------------------------------------------- | ---------- |
@@ -464,7 +470,7 @@
 | \[X] | 04-060 | `bind()`                                | Guide to JavaScript Bind Function                                                 | 2025-04-01 |
 | \[X] | 04-061 | object comparison                       | How to Check if Two Objects Have Equal Values                                     | 2025-04-01 |
 
-### JavaScrip 09:   Object-Oriented Programming
+### JavaScrip 09:       Object-Oriented Programming
 
 |      | #      | Type             | Tittle                                                         | Date       |
 | ---- | ------ | ---------------- | -------------------------------------------------------------- | ---------- |
@@ -473,7 +479,7 @@
 | \[X] | 04-064 | instance methods | Guide to JavaScript OOP Instance Methods                       | 2025-04-01 |
 | \[X] | 04-065 | static methods   | Guide to OOP Static Methods in JavaScript                      | 2025-04-02 |
 
-### JavaScript 10:   Promises and Async/Await
+### JavaScript 10:      Promises and Async/Await
 
 |      | #      | Type                | Tittle                                                                 | Date       |
 | ---- | ------ | ------------------- | ---------------------------------------------------------------------- | ---------- |
@@ -490,13 +496,14 @@
 | \[X] | 04-076 | Digital Literacy    | Developer Learning Curve – Why Learning How to Code Takes So Long?     | 2025-04-02 |
 | \[X] | 04-077 |                     | Course Checkpoint 8                                                    | 2025-04-09 |
 
-***
+
+---
 
 # MODULE 5
 
 ## JavaScript (ii) + Git (ii)
 
-### JavaScript 11:   Modern JS Tools
+### JavaScript 11:      Modern JS Tools
 
 |      | #      | Type                                                                                                                              | Tittle                                                | Date       |
 | ---- | ------ | --------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- | ---------- |
@@ -510,7 +517,7 @@
 | \[X] | 05-085 | Digital Literacy                                                                                                                  | The Power of Making Mistakes – Learning by Failing    | 2025-04-13 |
 | \[X] | 05-086 | **Exercise**                                                                                                                      | Build a Pretty Price Method in JavaScript             | 2025-04-13 |
 
-### JavaScript 12:   Modern Error Handling
+### JavaScript 12:      Modern Error Handling
 
 |      | #      | Type                                                         | Tittle                                                      | Date       |
 | ---- | ------ | ------------------------------------------------------------ | ----------------------------------------------------------- | ---------- |
@@ -520,7 +527,7 @@
 | \[X] | 05-090 | `var request = new XMLHttpRequest();`                        | Integrating Error Management into API Calls in JavaScript   | 2025-04-13 |
 | \[X] | 05-091 | **(New)** Digital Literacy                                   | Tips and Tricks to Building New Features as a Developer     | 2025-04-13 |
 
-### JavaScript 13:  ES6 Modules
+### JavaScript 13:      ES6 Modules
 
 |      | #      | Type                                                              | Tittle                                                                    | Date       |
 | ---- | ------ | ----------------------------------------------------------------- | ------------------------------------------------------------------------- | ---------- |
@@ -531,7 +538,7 @@
 | \[X] | 05-096 | `export defaul func(){ ... }` - `import Function from './script'` | Guide to Default Exports in JavaScript                                    | 2025-04-15 |
 | \[X] | 05-097 | Digital Literacy                                                  | Task Switching Costs for Developers                                       | 2025-04-15 |
 
-### JavaScript 14:  NPM
+### JavaScript 14:      NPM
 
 |      | #      | Type                                                                                                | Tittle                                                 | Date       |
 | ---- | ------ | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------ | ---------- |
@@ -562,13 +569,14 @@
 | \[X] | 05-005 | `.gitignore`                                      | How to Hide Files and Directories from Git with gitignore | 2025/04/18 |
 | [ ] | 05-006 |                                                   | **Course Checkpoint 10**                                  | pending    |
 
-***
+
+---
+
 
 # MODULE 6 PART 1
 
 ## Git (3)
 
-# 
 
 |      | #      | Type                     | Tittle                                                            | Date       |
 | ---- | ------ | ------------------------ | ----------------------------------------------------------------- | ---------- |
@@ -591,9 +599,9 @@
 
 ---
 
-## MODULE 6 PART 2:        JAVASCRIPT (iii)
+## MODULE 6 PART 2:     JAVASCRIPT (iii)
 
-### JavaScript 15: Browser Console and Developer Environment
+### JavaScript 15:      Browser Console and Developer Environment
 
 |      | #      | Type                                                  | Tittle                                                        | Date       |
 | ---- | ------ | ----------------------------------------------------- | ------------------------------------------------------------- | ---------- |
@@ -603,7 +611,7 @@
 | \[X] | 06-109 | VSCode Custom Code Snippets                           | How to Create Custom Code Snippets in VS Code                 | 2025-05-13 |
 | \[X] | 06-110 | Digital Literacy                                      | Speed Reading for Developers                                  | 2025-05-13 |
 
-### JavaScript 16:     DOM Fundamentals
+### JavaScript 16:      DOM Fundamentals
 
 |      | #      | Type                                                                                                                                         | Tittle                                                                 | Date       |
 | ---- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- | ---------- |
@@ -616,7 +624,7 @@
 | \[X] | 06-117 | `${theVar}.style.${theStyle}` - `.style.cssText = 'the entire css attr with ; at the end'`                                                   | How to Add and Remove CSS Styles in Vanilla JavaScript                 | 2025-05-18 |
 | \[X] | 06-118 | `const btn = document.getElementByClassName('theButton');` - `btn.addEventListerner('click', (e) => { heading.classList.toggle('hidden') })` | How to Use JavaScript's Toggle Function                                | 2025-08-19 |
 
-### JavaScript 17:         Applied JavaScript Features
+### JavaScript 17:      Applied JavaScript Features
 
 |      | #      | Type                                                                                                                                        | Tittle                                                              | Date       |
 | ---- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- | ---------- |
@@ -629,7 +637,7 @@
 | \[X] | 06-125 | `Object -> forEach -> element -> perform the action -> once` \| ( Included 00_Exercises  @ Javascript-Course)                               | Project Requirements: Create and Remove Bullet Points Between Lists | 2025-06-11 |
 | \[X] | 06-126 | ( Included 00_Exercises  @ Javascript-Course)                                                                                               | Project Solution: Create and Remove Bullet Points Between Lists     | 2025-06-11 |
 
-### JavaScript 18:     Developer Tools and Console Utilities
+### JavaScript 18:      Developer Tools and Console Utilities
 
 |      | #      | Type | Tittle                                                                | Date       |
 | ---- | ------ | ---- | --------------------------------------------------------------------- | ---------- |
@@ -643,6 +651,8 @@
 | \[X] | 06-131 | Literacy                                                        | There is No Foo Bar                                                                       | 2025-06-05 |
 | \[X] | 06-132 | Literacy                                                        | Guide to RESTful Routing                                                                  | 2025-06-05 |
 | \[X] | 06-133 | Exercise                                                        | Create a Capitalize Function in JavaScript                                                | 2025-06-05 |
+
+****
 
 # MODULE 6 PART 3
 
@@ -685,7 +695,8 @@
 
 ---
 
-# MODULE 7 PART 1
+
+# MODULE 7
 
 ## UML (Part 2)
 
@@ -712,6 +723,7 @@
 | ---- | ------ | ---- | --------------------------------------------- | ---------- |
 | \[X] | 07-187 |      | The Importance of Systems Analysis and Design | 2025-06-17 |
 | \[X] | 07-188 |      | Overview of Software Systems                  | 2025-06-17 |
+
 
 ### UML Projects
 
@@ -755,7 +767,9 @@
 | ---- | ------ | ---- | -------------------- | -------------- |
 | \[X] | 07-222 |      | Course Checkpoint 13 | 2025-10-03     |
 
----
+
+****
+
 
 # MODULE 7 PART 2
 
@@ -833,11 +847,12 @@
 | \[X] | 07-048 | API    | Populating the Portfolio Item Data                                | 2025-08-20 |
 
 
-
-
 |      | #      | Type | Tittle               | Date            |
 | ---- | ------ | ---- | -------------------- | --------------- |
 | \[X] | 07-049 |      | Course Checkpoint 14 | 2025-10-02      |
+
+
+---
 
 # MODULE 8
 
@@ -933,13 +948,12 @@
 | \[X] | 08-097 |      | Course Checkpoint 16 | 2025-10-03      |
 
 
-***
+---
 
 # MODULE 9
-
 ## REACT (iii)
 
-### React: Forms & Uploads
+### React:      Forms & Uploads
 
 |      | #      | Type   | Tittle                                                                    | Date       |
 | ---- | ------ | ------ | ------------------------------------------------------------------------- | ---------- |
@@ -979,7 +993,7 @@
 
 
 
-### React: Blog System
+### React:      Blog System
 
 |      | #      | Type   | Tittle                                                      | Date       |
 | ---- | ------ | ------ | ----------------------------------------------------------- | ---------- |
@@ -1018,11 +1032,15 @@
 | \[X] | 09-153 |      | Course Checkpoint 18 | 2025-10-03      |
 
 
-***
+
+---
+
+
 
 # MODULE 10
+## REACT (iv)
 
-## REACT (iv)### React: Blog & Daily Smarty UI
+### React:      Blog & Daily Smarty UI
 
 |      | #      | Type       | Tittle                                                                      | Date       |
 | ---- | ------ | ---------- | --------------------------------------------------------------------------- | ---------- |
@@ -1080,7 +1098,7 @@
 
 |       | #      | Type | Tittle               | Date            |
 | ----- | ------ | ---- | -------------------- | --------------- |
-| \[X]  | 09-153 |      | Course Checkpoint 18 | 2025-10-03      |                                                   | 2025-09-26 |
+| \[X]  | 09-153 |      | Course Checkpoint 18 | 2025-10-03      |
 
 |      | #      | Type       | Tittle                                                                      | Date       |
 | ---- | ------ | ---------- | --------------------------------------------------------------------------- | ---------- |
@@ -1108,6 +1126,8 @@
 | \[X] | 10-227 | Deploy     | Deploying the Daily Smarty UI App to Heroku                                  | 2025-09-27 |
 | \[X] | 10-228 | CSS        | Making the Home Screen Mobile Responsive with CSS Media Queries              | 2025-09-27 |
 
+
+## MODULE 10 Part 2:    SQL
 ### SQL: Basics & Setup
 
 |      | #      | Type  | Tittle                                           | Date       |
@@ -1123,77 +1143,80 @@
 | \[X] | 10-508 | SQL   | How to Add New Columns to a Table in MySQL     | 2025-09-28 |
 | \[X] | 10-509 | SQL   | Deep Dive: SQL Data Types                       | 2025-09-28 |
 
-| \[]  | 10-510 | SQL   | Course Checkpoint 20                            |  |
+
+|      | #      | Type   | Tittle              | Date       |
+| ---- | ------ | ------ | ------------------- | ---------- |
+| \[X] | 10-510 | SQL   | Course Checkpoint 20 | 2025-10-03 |
 
 ***
 
 # MODULE 11
 
-### SQL
+### SQL: CRUD & Project
 
 |      | #      | Type   | Tittle                                                                 | Date       |
 | ---- | ------ | ------ | ---------------------------------------------------------------------- | ---------- |
-| \[X] | 11-511 | CRUD   | CRUD Section Introduction                                               | 2025-09-28 |
-| \[X] | 11-512 | SQL    | Guide to Adding Records to a MySQL Database                             | 2025-09-28 |
-| \[X] | 11-513 | SQL    | How to Query for All Records in a SQL Database                          | 2025-09-28 |
-| \[X] | 11-514 | SQL    | How to Filter SQL Queries with the: 'where', 'and', 'or' Commands       | 2025-09-28 |
-| \[X] | 11-515 | SQL    | Using Limit and Offset in a SQL Query                                   | 2025-09-28 |
-| \[X] | 11-516 | SQL    | How to Update Records in SQL with the UPDATE Command                    | 2025-09-29 |
-| \[X] | 11-517 | SQL    | Using BEGIN and ROLLBACK to Revert Queries in MySQL                     | 2025-09-29 |
-| \[X] | 11-518 | SQL    | How to Query for Unique Values in a SQL Database                        | 2025-09-29 |
-| \[X] | 11-519 | SQL    | How to Use ORDER BY and CAST in MySQL                                    | 2025-09-29 |
-| \[X] | 11-520 | SQL    | Guide to Deleting Records from a SQL Database                            | 2025-09-29 |
-| \[X] | 11-521 | SQL    | Introduction to Advanced SQL Queries                                     | 2025-09-29 |
-| \[X] | 11-522 | SQL    | How to Run a SQL Query Using Ranges                                      | 2025-09-30 |
-| \[X] | 11-523 | SQL    | Guide to Wildcard Queries in MySQL                                       | 2025-09-30 |
-| \[X] | 11-524 | SQL    | Writing Cleaner SQL Code with the WHERE/IN Command                       | 2025-09-30 |
-| \[X] | 11-525 | SQL    | Introduction to SQL Subqueries                                           | 2025-09-30 |
-| \[X] | 11-526 | SQL    | Additional Examples of SQL Subqueries                                     | 2025-10-01 |
-| \[X] | 11-527 | SQL    | How to Use SQL Subqueries for Insert Statements                           | 2025-10-01 |
-| \[X] | 11-528 | SQL    | Introduction to SQL Functions                                             | 2025-10-01 |
+| \[X] | 11-511 | CRUD   | CRUD Section Introduction                                              | 2025-09-28 |
+| \[X] | 11-512 | SQL    | Guide to Adding Records to a MySQL Database                            | 2025-09-28 |
+| \[X] | 11-513 | SQL    | How to Query for All Records in a SQL Database                         | 2025-09-28 |
+| \[X] | 11-514 | SQL    | How to Filter SQL Queries with the: 'where', 'and', 'or' Commands      | 2025-09-28 |
+| \[X] | 11-515 | SQL    | Using Limit and Offset in a SQL Query                                  | 2025-09-28 |
+| \[X] | 11-516 | SQL    | How to Update Records in SQL with the UPDATE Command                   | 2025-09-29 |
+| \[X] | 11-517 | SQL    | Using BEGIN and ROLLBACK to Revert Queries in MySQL                    | 2025-09-29 |
+| \[X] | 11-518 | SQL    | How to Query for Unique Values in a SQL Database                       | 2025-09-29 |
+| \[X] | 11-519 | SQL    | How to Use ORDER BY and CAST in MySQL                                  | 2025-09-29 |
+| \[X] | 11-520 | SQL    | Guide to Deleting Records from a SQL Database                          | 2025-09-29 |
+| \[X] | 11-521 | SQL    | Introduction to Advanced SQL Queries                                   | 2025-09-29 |
+| \[X] | 11-522 | SQL    | How to Run a SQL Query Using Ranges                                    | 2025-09-30 |
+| \[X] | 11-523 | SQL    | Guide to Wildcard Queries in MySQL                                     | 2025-09-30 |
+| \[X] | 11-524 | SQL    | Writing Cleaner SQL Code with the WHERE/IN Command                     | 2025-09-30 |
+| \[X] | 11-525 | SQL    | Introduction to SQL Subqueries                                         | 2025-09-30 |
+| \[X] | 11-526 | SQL    | Additional Examples of SQL Subqueries                                  | 2025-10-01 |
+| \[X] | 11-527 | SQL    | How to Use SQL Subqueries for Insert Statements                        | 2025-10-01 |
+| \[X] | 11-528 | SQL    | Introduction to SQL Functions                                          | 2025-10-01 |
 | \[X] | 11-529 | SQL    | How to Change the Data Type of a Column from String to Decimal for Financial Data in SQL | 2025-10-01 |
-| \[X] | 11-530 | SQL    | How to Use the: MIN, MAX, SUM, AVG, and COUNT Functions in SQL           | 2025-10-01 |
+| \[X] | 11-530 | SQL    | How to Use the: MIN, MAX, SUM, AVG, and COUNT Functions in SQL         | 2025-10-01 |
 | \[X] | 11-531 | SQL    | How to Generate Summary Reports in SQL with GROUP BY and Aggregate Functions | 2025-10-01 |
-| \[X] | 11-532 | SQL    | Syntax for Adding Comments to a SQL Script                               | 2025-10-01 |
-| \[X] | 11-533 | SQL    | How to Turn Safe Mode Off in MySQL                                       | 2025-10-01 |
-| \[X] | 11-534 | SQL    | How to Add a New Column in SQL and Fill It with Randomized Sample Data   | 2025-10-01 |
-| \[X] | 11-535 | SQL    | How to Implement Calculated Fields in SQL                                 | 2025-10-01 |
-| \[X] | 11-536 | SQL    | Adding Custom Row and Cell Names in SQL                                   | 2025-10-01 |
-| \[X] | 11-537 | SQL    | Introduction to Control Flow in SQL                                       | 2025-10-01 |
-| \[X] | 11-538 | SQL    | Defining Aliases in SQL Queries and Exporting Data to CSV                 | 2025-10-01 |
-| \[X] | 11-539 | SQL    | How to Alias Table Names in SQL                                           | 2025-10-01 |
-| \[X] | 11-540 | SQL    | How to Use Case Statements in SQL Queries to Implement Conditional Logic  | 2025-10-01 |
-| \[X] | 11-541 | SQL    | Introduction to Relational Queries in SQL                                  | 2025-10-01 |
-| \[X] | 11-542 | SQL    | Guide to SQL Inner Joins                                                  | 2025-10-01 |
-| \[X] | 11-543 | SQL    | How to Add Multiple Conditionals to an Inner Join Query in SQL            | 2025-10-01 |
-| \[X] | 11-544 | SQL    | How to Join 3 Tables Together with an Inner Join in SQL                   | 2025-10-01 |
-| \[X] | 11-545 | SQL    | Inner vs Outer Joins in SQL                                               | 2025-10-01 |
-| \[X] | 11-546 | SQL    | How to Build a Summary Report of Data from 3 Tables in SQL                | 2025-10-01 |
-| \[X] | 11-547 | SQL    | Introduction to Advanced SQL Topics                                       | 2025-10-01 |
-| \[X] | 11-548 | SQL    | Guide to Understanding and Working with SQL Indexes                      | 2025-10-01 |
-| \[X] | 11-549 | SQL    | SQL Database Normalization Techniques                                     | 2025-10-01 |
+| \[X] | 11-532 | SQL    | Syntax for Adding Comments to a SQL Script                             | 2025-10-01 |
+| \[X] | 11-533 | SQL    | How to Turn Safe Mode Off in MySQL                                     | 2025-10-01 |
+| \[X] | 11-534 | SQL    | How to Add a New Column in SQL and Fill It with Randomized Sample Data | 2025-10-01 |
+| \[X] | 11-535 | SQL    | How to Implement Calculated Fields in SQL                              | 2025-10-01 |
+| \[X] | 11-536 | SQL    | Adding Custom Row and Cell Names in SQL                                | 2025-10-01 |
+| \[X] | 11-537 | SQL    | Introduction to Control Flow in SQL                                    | 2025-10-01 |
+| \[X] | 11-538 | SQL    | Defining Aliases in SQL Queries and Exporting Data to CSV              | 2025-10-01 |
+| \[X] | 11-539 | SQL    | How to Alias Table Names in SQL                                        | 2025-10-01 |
+| \[X] | 11-540 | SQL    | How to Use Case Statements in SQL Queries to Implement Conditional Logic | 2025-10-01 |
+| \[X] | 11-541 | SQL    | Introduction to Relational Queries in SQL                              | 2025-10-01 |
+| \[X] | 11-542 | SQL    | Guide to SQL Inner Joins                                               | 2025-10-01 |
+| \[X] | 11-543 | SQL    | How to Add Multiple Conditionals to an Inner Join Query in SQL         | 2025-10-01 |
+| \[X] | 11-544 | SQL    | How to Join 3 Tables Together with an Inner Join in SQL                | 2025-10-01 |
+| \[X] | 11-545 | SQL    | Inner vs Outer Joins in SQL                                            | 2025-10-01 |
+| \[X] | 11-546 | SQL    | How to Build a Summary Report of Data from 3 Tables in SQL             | 2025-10-01 |
+| \[X] | 11-547 | SQL    | Introduction to Advanced SQL Topics                                    | 2025-10-01 |
+| \[X] | 11-548 | SQL    | Guide to Understanding and Working with SQL Indexes                    | 2025-10-01 |
+| \[X] | 11-549 | SQL    | SQL Database Normalization Techniques                                  | 2025-10-01 |
 | \[X] | 11-550 | SQL    | How to Work with EER Diagrams in SQL in Order to Model Database Tables and Data Relationships | 2025-10-01 |
-| \[X] | 11-551 | SQL    | Project Requirements for SQL Course                                       | 2025-10-01 |
+| \[X] | 11-551 | SQL    | Project Requirements for SQL Course                                    | 2025-10-01 |
 
 
 
 ### REDIS
 
-|      | #      | Type   | Tittle                                                                     | Date       |
-| ---- | ------ | ------ | -------------------------------------------------------------------------- | ---------- |
-| \[X] | 11-552 | Redis  | How to Install Redis and Run the Redis CLI on a Mac                        | 2025-10-01 |
-| \[X] | 11-553 | Redis  | SET and GET Commands in Redis                                             | 2025-10-01 |
-| \[X] | 11-554 | Redis  | Key Structure Design in Redis                                             | 2025-10-01 |
-| \[X] | 11-555 | Redis  | Incrementing and Decrementing Values in Redis                             | 2025-10-01 |
-| \[X] | 11-556 | Redis  | Guide to Deleting in Redis with the DEL Command                            | 2025-10-01 |
-| \[X] | 11-557 | Redis  | How to Check if a Key Has Been Set in Redis                                | 2025-10-01 |
-| \[X] | 11-558 | Redis  | How to Expire a Key in Redis                                              | 2025-10-01 |
-| \[X] | 11-559 | Redis  | Guide to Overriding a Keys Value with GETSET                               | 2025-10-01 |
-| \[ ] | 11-560 | Redis  | How to Query for Key Names with the KEYS Pattern Command                     |      |
-| \[ ] | 11-561 | Redis  | Introduction to Hashes in Redis and the HSET Command                          |      |
-| \[ ] | 11-562 | Redis  | Common Redis Hash Commands                                                     |      |
-| \[ ] | 11-563 | Redis  | Project Requirements for Redis Course                                         |      |
-| \[ ] | 11-564 | Redis  | Project Solution                                                              |      |
+|      | #      | Type   | Tittle                                                                    | Date       |
+| ---- | ------ | ------ | ------------------------------------------------------------------------- | ---------- |
+| \[X] | 11-601 | Redis  | How to Install Redis and Run the Redis CLI on a Mac                       | 2025-10-01 |
+| \[X] | 11-602 | Redis  | SET and GET Commands in Redis                                             | 2025-10-01 |
+| \[X] | 11-603 | Redis  | Key Structure Design in Redis                                             | 2025-10-01 |
+| \[X] | 11-604 | Redis  | Incrementing and Decrementing Values in Redis                             | 2025-10-01 |
+| \[X] | 11-605 | Redis  | Guide to Deleting in Redis with the DEL Command                           | 2025-10-01 |
+| \[X] | 11-606 | Redis  | How to Check if a Key Has Been Set in Redis                               | 2025-10-01 |
+| \[X] | 11-607 | Redis  | How to Expire a Key in Redis                                              | 2025-10-01 |
+| \[X] | 11-608 | Redis  | Guide to Overriding a Keys Value with GETSET                              | 2025-10-01 |
+| \[X] | 11-609 | Redis  | How to Query for Key Names with the KEYS Pattern Command                  | 2025-10-02 |
+| \[X] | 11-610 | Redis  | Introduction to Hashes in Redis and the HSET Command                      | 2025-10-02 |
+| \[X] | 11-611 | Redis  | Common Redis Hash Commands                                                | 2025-10-02 |
+| \[X] | 11-612 | Redis  | Project Requirements for Redis Course                                     | 2025-10-02 |
+| \[X] | 11-613 | Redis  | Project Solution                                                          | 2025-10-02 |
 
 ---
 
@@ -1201,12 +1224,12 @@
 
 | #      | Type   | Tittle           | Date              |
 | ------ | ------ | ---------------- | ----------------- |
-| 11-565 |        | Capstone Project | **In Progress**   |
+| 11-700 |        | Capstone Project | **Delayed/Done**  |
 
 
 ### Course Checkpoint 21
 
 | #      | Type   | Tittle               | Date |
 | ------ | ------ | -------------------- | ---- |
-| 11-566 |        | Course Checkpoint 21 |      |
+| 11-701 |        | Course Checkpoint 21 | Done |
 
