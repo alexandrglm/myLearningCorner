@@ -837,19 +837,19 @@
 
 |      | #      | Type   | Tittle                                                            | Date       |
 | ---- | ------ | ------ | ----------------------------------------------------------------- | ---------- |
-| \[X] | 07-041 | Intro  | Section Introduction and DevCamp Space Registration               | 2025-08-19 |
-| \[X] | 07-042 | Intro  | Overview of DevCamp Space                                         | 2025-08-19 |
-| \[X] | 07-043 | API    | How to Install Axios in React to Communicate with APIs            | 2025-08-19 |
-| \[X] | 07-044 | API    | Making the Initial API GET Request in React                       | 2025-08-19 |
-| \[X] | 07-045 | API    | Organizing Portfolio API Query into the Portfolio Container Class | 2025-08-20 |
-| \[X] | 07-046 | API    | How to Render API Data in React                                   | 2025-08-20 |
-| \[X] | 07-047 | API    | How and Why to Use the Key Prop in React                          | 2025-08-20 |
-| \[X] | 07-048 | API    | Populating the Portfolio Item Data                                | 2025-08-20 |
+| \[X] | 07-037 | Intro  | Section Introduction and DevCamp Space Registration               | 2025-08-19 |
+| \[X] | 07-038 | Intro  | Overview of DevCamp Space                                         | 2025-08-19 |
+| \[X] | 07-039 | API    | How to Install Axios in React to Communicate with APIs            | 2025-08-19 |
+| \[X] | 07-040 | API    | Making the Initial API GET Request in React                       | 2025-08-19 |
+| \[X] | 07-041 | API    | Organizing Portfolio API Query into the Portfolio Container Class | 2025-08-20 |
+| \[X] | 07-042 | API    | How to Render API Data in React                                   | 2025-08-20 |
+| \[X] | 07-043 | API    | How and Why to Use the Key Prop in React                          | 2025-08-20 |
+| \[X] | 07-044 | API    | Populating the Portfolio Item Data                                | 2025-08-20 |
 
 
 |      | #      | Type | Tittle               | Date            |
 | ---- | ------ | ---- | -------------------- | --------------- |
-| \[X] | 07-049 |      | Course Checkpoint 14 | 2025-10-02      |
+| \[X] |        |      | Course Checkpoint 14 | 2025-10-02      |
 
 
 ---
@@ -860,47 +860,46 @@
 
 ### React:    Debugging - API
 
-|      | #      | Type   | Tittle                                                       | Date       |
-| ---- | ------ | ------ | ------------------------------------------------------------ | ---------- |
-| \[X] | 08-050 | Debug  | How to Log Data Coming in from an API in React               | 2025-09-01 |
-| \[X] | 08-051 | Debug  | Introduction to the JavaScript Debugger                      | 2025-09-01 |
-| \[X] | 08-052 | Debug  | Introduction to the React Developer Tools                    | 2025-09-01 |
-| \[X] | 08-053 | Debug  | Using the Debugger to Extract API Key Names                  | 2025-09-02 |
-| \[X] | 08-054 | Refact | Refactoring the PortfolioItem Component to Use Destructuring | 2025-09-02 |
-| \[X] | 08-055 | Media  | How to Render Images in React from an API                    | 2025-09-02 |
+|     | #      | Type   | Title                                                        | Date       |
+| --- | ------ | ------ | ------------------------------------------------------------ | ---------- |
+| [X] | 08-045 | Debug  | How to Log Data Coming in from an API in React               | 2025-09-01 |
+| [X] | 08-046 | Debug  | Introduction to the JavaScript Debugger                      | 2025-09-01 |
+| [X] | 08-047 | Debug  | Introduction to the React Developer Tools                    | 2025-09-01 |
+| [X] | 08-048 | Debug  | Using the Debugger to Extract API Key Names                  | 2025-09-02 |
+| [X] | 08-049 | Refact | Refactoring the PortfolioItem Component to Use Destructuring | 2025-09-02 |
+| [X] | 08-050 | Media  | How to Render Images in React from an API                    | 2025-09-02 |
 
+### React:    Styles - Design
 
-### React:    Styles - Design 
-
-|      | #      | Type   | Tittle                                                          | Date       |
-| ---- | ------ | ------ | --------------------------------------------------------------- | ---------- |
-| \[X] | 08-056 | Styles | How to Create a Main Scss File to Import and Organize Styles    | 2025-09-04 |
-| \[X] | 08-057 | Styles | How to Use Custom Fonts in React                                | 2025-09-04 |
-| \[X] | 08-058 | Layout | Building Out the Flexbox Container for the Navigation Component | 2025-09-04 |
-| \[X] | 08-059 | Layout | Building the Navigation Link Wrapper Styles                     | 2025-09-05 |
-| \[X] | 08-060 | Styles | Integrating Scss Variables to Manage the App Style Guide        | 2025-09-05 |
-| \[X] | 08-061 | Styles | Finalizing the Navigation Link Styles                           | 2025-09-05 |
-| \[X] | 08-062 | Clean  | Cleaning Up the App Component                                   | 2025-09-06 |
-| \[X] | 08-063 | Styles | Building the Style Structure for the Homepage Portfolio Items   | 2025-09-06 |
-| \[X] | 08-064 | Media  | How to Use Inline Styles in React to Render Background Images   | 2025-09-07 |
-| \[X] | 08-065 | Media  | Overlaying Text and Images on a Background Image in React       | 2025-09-07 |
-| \[X] | 08-066 | Events | Updating Styles with React Event Listeners                      | 2025-09-08 |
-| \[X] | 08-067 | Styles | Using Mixins to Create Button Styles                            | 2025-09-08 |
-
+|     | #      | Type   | Title                                                           | Date       |
+| --- | ------ | ------ | --------------------------------------------------------------- | ---------- |
+| [X] | 08-051 | Styles | How to Create a Main Scss File to Import and Organize Styles    | 2025-09-04 |
+| [X] | 08-052 | Styles | How to Use Custom Fonts in React                                | 2025-09-04 |
+| [X] | 08-053 | Layout | Building Out the Flexbox Container for the Navigation Component | 2025-09-04 |
+| [X] | 08-054 | Layout | Building the Navigation Link Wrapper Styles                     | 2025-09-05 |
+| [X] | 08-055 | Styles | Integrating Scss Variables to Manage the App Style Guide        | 2025-09-05 |
+| [X] | 08-056 | Styles | Finalizing the Navigation Link Styles                           | 2025-09-05 |
+| [X] | 08-057 | Clean  | Cleaning Up the App Component                                   | 2025-09-06 |
+| [X] | 08-058 | Styles | Building the Style Structure for the Homepage Portfolio Items   | 2025-09-06 |
+| [X] | 08-059 | Media  | How to Use Inline Styles in React to Render Background Images   | 2025-09-07 |
+| [X] | 08-060 | Media  | Overlaying Text and Images on a Background Image in React       | 2025-09-07 |
+| [X] | 08-061 | Events | Updating Styles with React Event Listeners                      | 2025-09-08 |
+| [X] | 08-062 | Styles | Using Mixins to Create Button Styles                            | 2025-09-08 |
 
 ### React:    Authentification
 
-|      | #      | Type  | Tittle                                      | Date       |
-| ---- | ------ | ----- | ------------------------------------------- | ---------- |
-| \[X] | 08-068 | Auth  | Overview of Authentication Behavior         | 2025-09-09 |
-| \[X] | 08-069 | Media | How to Import Static Images in React        | 2025-09-09 |
-| \[X] | 08-070 | Styles| Finalizing the Auth Component Styles        | 2025-09-10 |
-| \[X] | 08-071 | Auth  | Creating the Initial Login Component        | 2025-09-10 |
-| \[X] | 08-072 | Forms | Introduction to React Forms                 | 2025-09-11 |
-| \[X] | 08-073 | Forms | Overview of React's Form Submit Handler     | 2025-09-11 |
-| \[X] | 08-074 | Auth  | Creating an Authentication Session in React | 2025-09-12 |
-| \[X] | 08-075 | Auth  | Handling Sign In Error in React             | 2025-09-12 |
-| \[X] | 08-076 | Auth  | Deep Dive: Authentication                   | 2025-09-12 |
+|     | #      | Type   | Title                                       | Date       |
+| --- | ------ | ------ | ------------------------------------------- | ---------- |
+| [X] | 08-063 | Auth   | Overview of Authentication Behavior         | 2025-09-09 |
+| [X] | 08-064 | Media  | How to Import Static Images in React        | 2025-09-09 |
+| [X] | 08-065 | Styles | Finalizing the Auth Component Styles        | 2025-09-10 |
+| [X] | 08-066 | Auth   | Creating the Initial Login Component        | 2025-09-10 |
+| [X] | 08-067 | Forms  | Introduction to React Forms                 | 2025-09-11 |
+| [X] | 08-068 | Forms  | Overview of React's Form Submit Handler     | 2025-09-11 |
+| [X] | 08-069 | Auth   | Creating an Authentication Session in React | 2025-09-12 |
+| [X] | 08-070 | Auth   | Handling Sign In Error in React             | 2025-09-12 |
+| [X] | 08-071 | Auth   | Deep Dive: Authentication                   | 2025-09-12 |
+
 
 
 
