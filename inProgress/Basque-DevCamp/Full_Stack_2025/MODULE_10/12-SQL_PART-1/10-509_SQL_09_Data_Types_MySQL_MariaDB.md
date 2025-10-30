@@ -1,342 +1,362 @@
-# 10-509_SQL_09_Data_Types_MySQL_MariaDB
+# 10-509 SQL 09 - Data Types MySQL/MariaDB
 
 ---
 
-**[Guide](https://devcamp.com/pt-full-stack-development-javascript-python-react/guide/sql-data-types) - Adapted for Linux Debian + MariaDB**
+[Guide](https://devcamp.com/pt-full-stack-development-javascript-python-react/guide/sql-data-types)
+
+[Material PDF](./deep-dive-sql-data-types.pdf)
 
 ---
 
-## 🎯 Data Types in SQL
+## Data Types in SQL
 
 Comprehensive exploration of SQL data types - correct selection according to each use case.
 
-## 📋 Complete List of Data Types
+## Complete List of Data Types
 
+`CHAR`, `VARCHAR`, `BOOLEAN`, `SMALLINT`, `INT`, `DECIMAL`, `FLOAT`, `DATETIME`, `CLOB`, `BLOB`
 
-`CHAR, VARCHAR, BOOLEAN, SMALLINT, INT,  DECIMAL, FLOAT, DATETIME, CLOB, BLOB`
+## CHAR - Character
 
-## 🛠️ CHAR - Character
+### Features
 
-## Features
+- Fixed-length string - always takes the defined space
+- Reserves entire memory
+- Range: 1-255 characters
 
-- **Fixed-length string** - fixed length
+### Proper Use
 
-- **Reserves entire memory** - always takes the defined space
+```sql
+phone_number    CHAR(10)    -- '5551234567'
+ssn             CHAR(9)     -- '123456789'
+state_code      CHAR(2)     -- 'AZ'
+```
 
-- **Range**: 1-255 characters
+Use when: Exact length is known.
 
-## ✅ Proper Use
+### Improper Use
 
-sql
+```sql
+name    CHAR(50)    -- wastes memory if name is short
+age     CHAR(3)     -- 42 is NOT a string
+```
 
-`phone_number    CHAR(10)    -- '5551234567' ssn             CHAR(9)     -- '123456789' state_code      CHAR(2)     -- 'AZ'`
+## VARCHAR - Variable Character
 
-**Use when**: EXACT length is known.
+### Features
 
-## ❌ Improper Use
+- Variable-length string - adjusts dynamically
+- Dynamic memory - only uses necessary space
+- Range: 1-65,535 characters
+- Slightly slower than CHAR
 
-sql
+### Proper Use
 
-`name    CHAR(50)    -- wastes memory if name is short age     CHAR(3)     -- 42 is NOT a string`
+```sql
+email           VARCHAR(80)
+username        VARCHAR(50)
+description     VARCHAR(500)
+```
 
-## 🔧 VARCHAR - Variable Character
+Use when: Variable or unknown length.
 
-## Features
+### Improper Use
 
-- **Variable-length string** - adjusts dynamically
+```sql
+phone       VARCHAR(10)    -- better as CHAR(10)
+age         VARCHAR(3)     -- 42 is integer
+active      VARCHAR(10)    -- 'true' better as BOOLEAN
+```
 
-- **Dynamic memory** - only uses necessary space
+## BOOLEAN
 
-- **Range**: 1-65,535 characters
+### Features
 
-- **Slightly slower** than CHAR
+- True/False only
+- Valid values: `true`, `false`, `TRUE`, `FALSE`
 
-## ✅ Proper Use
+### Proper Use
 
-sql
+```sql
+is_active       BOOLEAN    -- true
+is_archived     BOOLEAN    -- FALSE
+has_premium     BOOLEAN    -- true
+```
 
-`email           VARCHAR(80) username        VARCHAR(50) description     VARCHAR(500)`
+### Improper Use
 
-**Use when**: Variable or unknown length.
+```sql
+status    BOOLEAN    -- 1 (not valid)
+active    BOOLEAN    -- 'yes' (not valid)
+flag      BOOLEAN    -- 0 (not valid)
+```
 
-## ❌ Improper Use
+## SMALLINT
 
-sql
+### Features
 
-`phone       VARCHAR(10)    -- better as CHAR(10) age         VARCHAR(3)     -- 42 is integer active      VARCHAR(10)    -- 'true' better as BOOLEAN`
+- Range: -32,768 to 32,768
+- Automatically truncates decimals
 
-## 🎨 BOOLEAN
+### Proper Use
 
-## Features
+```sql
+age             SMALLINT    -- 42
+quantity        SMALLINT    -- -150
+year_offset     SMALLINT    -- 2024
+```
 
-- **True/False only**
+Note: 42.5 becomes 42 (automatically truncated)
 
-- **Valid values**: `true`, `false`, `TRUE`, `FALSE`
+### Improper Use
 
-## ✅ Proper Use
+```sql
+population    SMALLINT    -- 50000 (out of range)
+price         SMALLINT    -- 19.99 becomes 19
+```
 
-sql
+## INT - Integer
 
-`is_active       BOOLEAN    -- true is_archived     BOOLEAN    -- FALSE has_premium     BOOLEAN    -- true`
+### Features
 
-## ❌ Improper Use
+- Range: -2,147,483,648 to 2,147,483,648
+- Popular for IDs and large counts
 
-sql
+### Proper Use
 
-`-- ERROR: only accepts true/false status    BOOLEAN    -- 1 ❌ active    BOOLEAN    -- 'yes' ❌ flag      BOOLEAN    -- 0 ❌`
+```sql
+users_id        INT    -- 1,234,567
+views_count     INT    -- 9,876,543
+population      INT    -- 3,500,000
+```
 
-## 📊 SMALLINT
+### Improper Use
 
-## Features
+```sql
+price       INT    -- 42.99 becomes 42
+name        INT    -- 'John' not valid
+```
 
-- **Range**: -32,768 to 32,768
+## DECIMAL
 
-- **Automatically truncates decimals**
+### Features
 
-## ✅ Proper Use
+- Exact precision - critical for finance
+- Syntax: `DECIMAL(precision, scale)`
+  - precision: total digits
+  - scale: digits after the decimal
 
-sql
+### Proper Use
 
-`age             SMALLINT    -- 42 quantity        SMALLINT    -- -150 year_offset     SMALLINT    -- 2024`
+```sql
+price           DECIMAL(10, 2)    -- 99999999.99
+salary          DECIMAL(8, 2)     -- 123456.78
+tax_rate        DECIMAL(5, 4)     -- 9.8340
+```
 
-**42.5 → 42** (automatically truncated)
+Examples:
+- `DECIMAL(4, 3)` returns 9.834
+- `DECIMAL(7, 2)` returns 42215.85
 
-## ❌ Improper Use
+### Improper Use
 
-sql
+```sql
+huge_number    DECIMAL(50, 2)    -- Maximum 38 digits
+```
 
-`population    SMALLINT    -- 50000 ❌ (out of range) price         SMALLINT    -- 19.99 becomes 19 ❌`
+Use for: Money, exact financial calculations.
 
-## 🔢 INT - Integer
+## FLOAT
 
-## Features
+### Features
 
-- **Range**: -2,147,483,648 to 2,147,483,648
+- Approximation - NOT exact
+- Giant numbers - up to 1.79 × 10^308
+- Faster than DECIMAL
 
-- **Popular** for IDs and large counts
+### Proper Use
 
-## ✅ Proper Use
+```sql
+scientific_data     FLOAT
+large_calculations  FLOAT
+coordinates         FLOAT
+```
 
-sql
+### Improper Use
 
-`users_id        INT    -- 1,234,567 views_count     INT    -- 9,876,543 population      INT    -- 3,500,000`
+```sql
+account_balance    FLOAT    -- use DECIMAL
+price              FLOAT    -- use DECIMAL
+```
 
-## ❌ Improper Use
+Important Issue: 9.5 may be stored as 9.4999999
 
-sql
+```sql
+SELECT * FROM table WHERE value = 9.5;  -- may fail
+```
 
-`price       INT    -- 42.99 → 42 ❌ name        INT    -- 'John' ❌`
+Never use for money or exact values.
 
-## 💰 DECIMAL
+## DATETIME
 
-## Features
+### Features
 
-- **Exact precision** - critical for finance
+- Range: 1753-01-01 to 9999-12-31
+- Format: `YYYY-MM-DD HH:MM:SS.fraction`
 
-- **Syntax**: `DECIMAL(precision, scale)`
-  
-  - **precision**: total digits
-  
-  - **scale**: digits after the decimal
+### Proper Use
 
-## ✅ Proper Use
+```sql
+created_at      DATETIME    -- '2025-01-15 14:30:45'
+updated_at      DATETIME    -- '2024-12-01 00:00:00'
+login_time      DATETIME    -- '2025-10-06 09:15:30.123'
+```
 
-sql
+### Improper Use
 
-`price           DECIMAL(10, 2)    -- 99999999.99 salary          DECIMAL(8, 2)     -- 123456.78 tax_rate        DECIMAL(5, 4)     -- 9.8340`
+```sql
+birth_date    DATETIME    -- '01-15-2025' (incorrect format)
+timestamp     DATETIME    -- 1704067200 (not valid)
+event_date    DATETIME    -- 'Jan 15, 2025' (not valid)
+```
 
-**Examples**:
-
-- `DECIMAL(4, 3)` → 9.834
-
-- `DECIMAL(7, 2)` → 42215.85
-
-## ❌ Improper Use
-
-sql
-
-`-- Maximum 38 digits huge_number    DECIMAL(50, 2)    -- ❌`
-
-**Use for**: Money, exact financial calculations.
-
-## 🌊 FLOAT
-
-## Features
-
-- **Approximation** - NOT exact
-
-- **Giant numbers** - up to 1.79 × 10^308
-
-- **Faster** than DECIMAL
-
-## ✅ Proper Use
-
-sql
-
-`scientific_data     FLOAT large_calculations  FLOAT coordinates         FLOAT`
-
-## ❌ Improper Use
-
-sql
-
-`account_balance    FLOAT    -- ❌ use DECIMAL price              FLOAT    -- ❌ use DECIMAL`
-
-**⚠️ Issue**:
-
-sql
-
-`-- 9.5 may be stored as 9.4999999 SELECT * FROM table WHERE value = 9.5;  -- may fail`
-
-**Never use for money or exact values**.
-
-## 📅 DATETIME
-
-## Features
-
-- **Range**: 1753-01-01 to 9999-12-31
-
-- **Format**: `YYYY-MM-DD HH:MM:SS.fraction`
-
-## ✅ Proper Use
-
-sql
-
-`created_at      DATETIME    -- '2025-01-15 14:30:45' updated_at      DATETIME    -- '2024-12-01 00:00:00' login_time      DATETIME    -- '2025-10-06 09:15:30.123'`
-
-## ❌ Improper Use
-
-sql
-
-`-- Incorrect format birth_date    DATETIME    -- '01-15-2025' ❌ timestamp     DATETIME    -- 1704067200 ❌ event_date    DATETIME    -- 'Jan 15, 2025' ❌`
-
-**Variants**:
-
+Variants:
 - `DATE` - date only
-
 - `TIME` - time only
-
 - `DATETIME` - both
 
-## 📝 CLOB - Character Large Object
+## CLOB - Character Large Object
 
-## Features
+### Features
 
-- **Up to 2 GB** of text
+- Up to 2 GB of text
+- Rarely used
 
-- **Rarely used**
+### Proper Use
 
-## ✅ Proper Use
+```sql
+full_book_text      CLOB
+massive_document    CLOB
+```
 
-sql
+### Improper Use
 
-`full_book_text      CLOB massive_document    CLOB`
+```sql
+blog_post       CLOB    -- VARCHAR is enough
+description     CLOB    -- VARCHAR(500) is better
+```
 
-## ❌ Improper Use
+Use only if: Text > 65,535 characters.
 
-sql
+## BLOB - Binary Large Object
 
-`blog_post       CLOB    -- VARCHAR is enough description     CLOB    -- VARCHAR(500) is better`
+### Features
 
-**Use only if**: Text > 65,535 characters.
+- Up to 2 GB of binary data
+- Stores images directly in DB
 
-## 🖼️ BLOB - Binary Large Object
+### Proper Use
 
-## Features
+```sql
+profile_image       BLOB
+pdf_document        BLOB
+binary_file         BLOB
+```
 
-- **Up to 2 GB** of binary data
+### Improper Use
 
-- **Stores images** directly in DB
+```sql
+image_path    VARCHAR(255)    -- 'https://cdn.com/img.jpg' (better practice)
+```
 
-## ✅ Proper Use
+Note: Nowadays, storing URLs is preferred over direct files.
 
-sql
+## Quick Selection Guide
 
-`profile_image       BLOB pdf_document        BLOB binary_file         BLOB`
+### Text
 
-## ❌ Improper Use
+- Fixed known length → `CHAR`
+- Variable length → `VARCHAR`
+- Massive text → `CLOB`
 
-sql
+### Numbers
 
-`-- Best practice: File URL image_path    VARCHAR(255)    -- 'https://cdn.com/img.jpg'`
+- Small integers → `SMALLINT`
+- Normal integers → `INT`
+- Money/finance → `DECIMAL`
+- Scientific/approximate → `FLOAT`
 
-**Note**: Nowadays, storing URLs is preferred over direct files.
+### Others
 
-## 🎯 Quick Selection Guide
+- True/False → `BOOLEAN`
+- Dates/times → `DATETIME`
+- Binary files → `BLOB`
 
-## Text
+## Practical Examples
 
-- **Fixed known length** → `CHAR`
+### Users Table
 
-- **Variable length** → `VARCHAR`
+```sql
+users_id            INT
+username            VARCHAR(50)
+email               VARCHAR(80)
+age                 SMALLINT
+is_active           BOOLEAN
+created_at          DATETIME
+profile_picture     BLOB
+```
 
-- **Massive text** → `CLOB`
+### Products Table
 
-## Numbers
+```sql
+product_id          INT
+name                VARCHAR(100)
+price               DECIMAL(10, 2)
+stock_quantity      SMALLINT
+weight              FLOAT
+in_stock            BOOLEAN
+```
 
-- **Small integers** → `SMALLINT`
+### Financial Table
 
-- **Normal integers** → `INT`
+```sql
+transaction_id      INT
+amount              DECIMAL(12, 2)    -- NEVER FLOAT
+tax                 DECIMAL(5, 4)
+account_balance     DECIMAL(15, 2)
+timestamp           DATETIME
+```
 
-- **Money/finance** → `DECIMAL`
+## Common Mistakes
 
-- **Scientific/approximate** → `FLOAT`
+### FLOAT for Money
 
-## Others
+```sql
+-- BAD
+price    FLOAT
 
-- **True/False** → `BOOLEAN`
+-- GOOD
+price    DECIMAL(10, 2)
+```
 
-- **Dates/times** → `DATETIME`
+### VARCHAR for Numbers
 
-- **Binary files** → `BLOB`
+```sql
+-- BAD
+age      VARCHAR(3)
 
-## 📋 Practical Examples
+-- GOOD
+age      SMALLINT
+```
 
-## Users Table
+### INT with Decimals
 
-sql
+```sql
+-- BAD: 42.99 becomes 42 (truncated)
+price    INT
 
-`users_id            INT             PK username            VARCHAR(50)      email               VARCHAR(80)      age                 SMALLINT         is_active           BOOLEAN          created_at          DATETIME         profile_picture     BLOB`            
-
-## Products Table
-
-sql
-
-`product_id          INT             PK name                VARCHAR(100)     price               DECIMAL(10, 2)   stock_quantity      SMALLINT         weight              FLOAT            in_stock            BOOLEAN`         
-
-## Financial Table
-
-sql
-
-`transaction_id      INT             PK amount              DECIMAL(12, 2)  -- NEVER FLOAT tax                 DECIMAL(5, 4)    account_balance     DECIMAL(15, 2)   timestamp           DATETIME`        
-
-## ⚠️ Common Mistakes
-
-## ❌ FLOAT for Money
-
-sql
-
-`-- BAD price    FLOAT -- GOOD price    DECIMAL(10, 2)`
-
-## ❌ VARCHAR for Numbers
-
-sql
-
-`-- BAD age      VARCHAR(3) -- GOOD age      SMALLINT`
-
-## ❌ INT with Decimals
-
-sql
-
-`-- BAD: 42.99 → 42 (truncated) price    INT -- GOOD price    DECIMAL(6, 2)`
+-- GOOD
+price    DECIMAL(6, 2)
+```
 
 ---
-
-## 🚀 Next Steps
-
-**Next guide**:
-
-- **INSERT statements** - adding data
-
-- **Queries with different data types**
-
-**Data types mastered** - key for correct selection in any project.
