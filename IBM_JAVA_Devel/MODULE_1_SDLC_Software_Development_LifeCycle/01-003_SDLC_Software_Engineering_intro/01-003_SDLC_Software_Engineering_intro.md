@@ -11,7 +11,6 @@
 ![Software Engineering definiton](./01-003_IMG2.png)
 
 
-
 ### Historical Context
 
 The discipline emerged in the 1960s, evolving from ad hoc programming towards formal and standardised methods.  
@@ -61,7 +60,30 @@ Today, the development process is typically guided by the **Software Development
 
 The SDLC **identifies the steps needed** to develop **high-quality software**. Later in this module, we will discuss the SDLC, the traits of high-quality software, and roles common in the field of software engineering.
 
+***
 
+## Real-Life Example
+
+The importance of software engineering in a practical context:
+
+#### Example: Developing a Mobile Banking App
+
+#### Context 
+*A bank wants to create a mobile application that allows customers to manage their accounts, transfer money, and pay bills.*
+
+#### Relevance to Software Engineering
+
+* **Systematic Approach**: The software engineering team begins by gathering business requirements through consultations with stakeholders, including bank employees and customers. This ensures that the app meets user needs and complies with financial regulations.
+
+* **Design and Development**: The team uses a systematic approach to design the application architecture, ensuring it is scalable and secured. They apply software engineering principles to create a robust system that can handle a large number of users simultaneously.
+
+* **Testing and Maintenance**: After developing the application, the team conducts rigorous testing to identify and fix bugs. They also implement a plan for ongoing maintenance and updates, ensuring the app remains functional and secure over time.
+
+##### Connexion to Software Engineering Responsibilities
+
+1.  Designing, Building, and Maintaining: The software engineers are responsible for the entire lifecycle of the application, from initial design to ongoing maintenance.
+
+2. Consulting with Stakeholders: They work closely with various stakeholders, including security specialists to ensure the app is secure and meets compliance standards.
 
 ---
 
