@@ -9,7 +9,7 @@
 
 ### MODULE 1: SDLC — Software Development LifeCycle
 
-|     | #        | Type             | Title                                             | Status           |
+|     | #        | Type             | Title                                             | Date             |
 | --- | -------- | ---------------- | ------------------------------------------------- | ---------------- |
 | [X] | 01-001   | Literacy         | What Is Software Engineering?                     | 2025-11-04       |
 | [X] | 01-002   | Definitions      | Insiders' Viewpoint: What Is Software Engineering?| 2025-11-04       |
@@ -24,10 +24,52 @@
 | [X] | 01-010   | Versioning       | Software Versions                                 | 2025-11-05       |
 | [X] | 01-011   | Testing          | Software Testing                                  | 2025-11-05       |
 | [X] | 01-012   | Documentation    | Software Documentation                            | 2025-11-05       |
-| [ ] | 01-      | Roles            | Roles in Software Engineering Projects            |                  |
-| [ ] | 01-      | Roles (Industry) | Insiders' Viewpoint: Job Roles in Teams           |                  |
-| [ ] | 01-      | Practice         | The Software Building Process & Roles             |                  |
-| [ ] | 01-      | Summary          | Summary & Highlights                              |                  |
-| [ ] | 01-      | Assessment       | The Software Development Lifecycle                | Due: 2025-11-07  |
+| [X] | 01-013   | Roles            | Roles in Software Engineering Projects            | 2025-11-05       |
+| [X] | 01-014   | Roles (Industry) | Insiders' Viewpoint: Job Roles in Teams           | 2025-11-05       |
+| [X] | 01-014b  | Quiz             | The Software Building Process & Roles             |                  |
+
+
+|     | #        | Type             | Title                                             | Date             |
+| --- | -------- | ---------------- | ------------------------------------------------- | ---------------- |
+| [X] | 01-015   | Summary          | MODULE 1 Summary                                  | 2025-11-05       |
+| [X] | 01-016   | Assessment       | The Software Development Lifecycle                | 2025-11-05       |
 
 ---
+
+### MODULE 2: Web & Cloud Development
+
+#### 02-01  Development Intro
+
+|     | #       | Type      | Title                                          | Date             |
+| --- | ------- | --------- | ---------------------------------------------- | ---------------- |
+| [X] | 02-001  | Overview  | Overview of Web and Cloud Development          | 2025-11-05       |
+| [X] | 02-002  | Front-End | Learning Front-End Development                 | 2025-11-05       |
+| [X] | 02-003  | Back-End  | The Importance of Back-End Development         | 2025-11-05       |
+| [X] | 02-004  | Teamwork  | Teamwork and Squads                            | 2025-11-05       |
+| [X] | 02-005  | Viewpoint | Insiders' Viewpoint: Teamwork in Software Eng. | 2025-11-05       |
+| [X] | 02-006  | Agile Method  | Pair Programming                           | 2025-11-05       |
+| [X] | 02-007  | Viewpoint | Insiders' Viewpoint: Pair Programming          | 2025-11-05       |
+| [X] | 02-007b | Activity  | Categorising Front- and Back-End Technologies  | 2025-11-05       |
+| [X] | 02-007c | Practice  | Introduction to Development                    | 2025-11-05       |
+
+
+
+#### 02-02  Tools in Software Development
+
+|     | #       | Type      | Title                                          | Date   |
+| --- | ------- | --------- | ---------------------------------------------- | ------ |
+| [ ] | 02-008  | Tools     | Introducing Application Development Tools      |        |
+| [ ] | 02-009  | Tools     | More Application Development Tools             |        |
+| [ ] | 02-010  | Stacks    | Introduction to Software Stacks                |        |
+| [ ] | 02-010b | Lab       | Hands-on Lab: Getting Started With an IDE      |        |
+| [ ] | 02-011  | Viewpoint | Insiders' Viewpoint: Tools and Technologies    |        |
+| [ ] | 02-011b | Practice  | Tools in Software Development                  |        |
+
+
+
+### Summary & Assessment
+
+|     | #      | Type       | Title                                | Date   |
+| --- | ------ | ---------- | ------------------------------------ | ------ |
+| [ ] | 02-012 | Summary    | MODULE 2 Summary                     |        |
+| [ ] | 02-013 | Assessment | Web and Cloud Development Assessment |        |
