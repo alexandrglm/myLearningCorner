@@ -1,11 +1,11 @@
 # 02-006: Pair Programming
 
 ![](./02-006_IMG1.png)
-![](./02-004_IMG6.png)
+![](./02-006_IMG6.png)
 
 **Pair programming** is an extension of teamwork where **two developers work side-by-side at one computer**, either physically co-located or virtually via video link or shared screens. 
 
-![](./02-004_IMG2.png)
+![](./02-006_IMG2.png)
 
 As an **Agile development technique**, it enables continuous planning and idea discussion, generally producing superior end products.
 
@@ -14,7 +14,7 @@ As an **Agile development technique**, it enables continuous planning and idea d
 
 ### Three Pair Programming Styles
 
-![](./02-004_IMG3.png)
+![](./02-006_IMG3.png)
 
 #### **Driver/Navigator Style** (Most Common)
 
@@ -51,7 +51,7 @@ Particularly effective for junior engineers learning from experienced practition
 
 ### Benefits of Pair Programming
 
-![](./02-004_IMG4.png)
+![](./02-006_IMG4.png)
 
 - **Knowledge and skill sharing** between developers and team integration
 - **Technical skills enhancement** combined with **soft skills development** (communication, problem-solving)
@@ -64,7 +64,7 @@ Particularly effective for junior engineers learning from experienced practition
 
 ### Challenges
 
-![](./02-004_IMG5.png)
+![](./02-006_IMG5.png)
 
 - **Mental fatigue**: Prolonged focus periods exhaust both programmers
 - **Schedule conflicts**: Personal or work commitments disrupt pair continuity
