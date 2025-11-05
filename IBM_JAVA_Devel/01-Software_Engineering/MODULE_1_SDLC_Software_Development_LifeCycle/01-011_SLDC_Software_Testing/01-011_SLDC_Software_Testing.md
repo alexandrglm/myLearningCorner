@@ -1,7 +1,7 @@
-# 01-010: SDLC - Software Testing
+# 01-011: SDLC - Software Testing
 
-![](./01-010_IMG1.png)
-![](./01-010_IMG16.png)
+![](./01-011_IMG1.png)
+![](./01-011_IMG16.png)
 
 **Software Testing** is the practice of integrating quality checks throughout the software development cycle.   
 
@@ -15,7 +15,7 @@ Test cases should be written after requirements are finalised, though timing var
 
 ## Three Testing Categories
 
-![](./01-010_IMG2.png)
+![](./01-011_IMG2.png)
 
 ***
 
@@ -23,19 +23,19 @@ Test cases should be written after requirements are finalised, though timing var
 
 Uses black-box testing (testing without examining source code or internal structure), focusing only on inputs and corresponding outputs of the system under test (SUT).   
 
-![](./01-010_IMG3.png)
+![](./01-011_IMG3.png)
 
 Tests functional requirements through manual or automated methods, ensuring applications are usable and accessible.   
 
 Validates that user errors and input edge cases are handled seamlessly with appropriate error messages.
 
-![](./01-010_IMG4.png)
+![](./01-011_IMG4.png)
 
 ***
 
 ### **Non-Functional Testing**
 
-![](./01-010_IMG5.png)
+![](./01-011_IMG5.png)
 
 Evaluates application attributes including performance, security, scalability, and availability.   
 
@@ -51,12 +51,12 @@ Answers critical questions like:
 
 ### **Regression Testing** (Maintenance Testing)
 
-![](./01-010_IMG8.png)
+![](./01-011_IMG8.png)
 
 Confirms recent changes (bug fixes, updates) do not adversely affect existing functionality.   
 Occurs when requirements change or defects are fixed.  
 
-![](./01-010_IMG9.png)
+![](./01-011_IMG9.png)
 
 Selection challenges depend on factors including frequent defects, frequently used functionality, recently changed features, complex test cases, edge cases, and randomly successful/failed cases.
 
@@ -65,7 +65,7 @@ Selection challenges depend on factors including frequent defects, frequently us
 
 ## Four Testing Levels
 
-![](./01-010_IMG10.png)
+![](./01-011_IMG10.png)
 
 1.  Unit testing
 2.  Inntegration testing
@@ -77,7 +77,7 @@ Each level occurs at different SDLC stages, reducing testing overlap and time:
 
 ### **Unit Testing**
 
-![](./01-010_IMG11.png)
+![](./01-011_IMG11.png)
 
 Verifies specific code sections, typically at the function level.  
 
@@ -86,13 +86,13 @@ Performed by developers during the development phase, eliminating construction e
 
 ### **Integration Testing**
 
-![](./01-010_IMG12.png)
+![](./01-011_IMG12.png)
 
 Black-box testing identifying errors when two or more independent code modules combine.  
 
 Tests smaller units (previously passed unit testing) incorporated into larger applications.  
 
-![](./01-010_IMG13.png)
+![](./01-011_IMG13.png)
 
 Exposes bugs in module interaction, communication deficiencies with new modules, differing programming logic, and poor exception handling.
 
@@ -100,7 +100,7 @@ Exposes bugs in module interaction, communication deficiencies with new modules,
 
 ### **System Testing**
 
-![](./01-010_IMG14.png)
+![](./01-011_IMG14.png)
 
 Conducted on fully integrated systems after integration testing, evaluating compliance with specified requirements.   
 
@@ -110,7 +110,7 @@ Tests both functional and non-functional aspects in a staging environment mirror
 
 ### **Acceptance Testing**
 
-![](./01-010_IMG15.png)
+![](./01-011_IMG15.png)
 
 Formal testing against user needs, requirements, and business processes. Determines whether systems satisfy user, customer, and stakeholder needs.  
 
