@@ -1,4 +1,4 @@
-# 02-006: Insiders about Pair Programming
+# 02-007: Insiders about Pair Programming
 
 ##  Benefits of Pair Programming
 
