@@ -1,12 +1,12 @@
-# 01-011: SDLC - Software Documentation
+# 01-012: SDLC - Software Documentation
 
-![](./01-011-_IMG1.png)
-![](./01-011-_IMG12.png)
+![](./01-012-_IMG1.png)
+![](./01-012-_IMG12.png)
 
 
 **Software documentation** is information describing what a software product is and how to use it, comprising written, guide, or graphical assets associated with development and use.  
 
-![](./01-011-_IMG2.png)
+![](./01-012-_IMG2.png)
 
 Essential across all SDLC phases, it targets diverse audiences: 
 
@@ -20,7 +20,7 @@ Essential across all SDLC phases, it targets diverse audiences:
 
 ### Two Main Categories
 
-![](./01-011-_IMG3.png)
+![](./01-012-_IMG3.png)
 
 #### **Product Documentation**
 Relates to product functionality, describing features and capabilities.
@@ -32,11 +32,11 @@ Describes how to complete tasks, providing requirements for quality business pro
 
 ### Five Types of Product Documentation
 
-![](./01-011-_IMG4.png)
+![](./01-012-_IMG4.png)
 
 #### **Requirements Documentation**
 
-![](./01-011-_IMG5.png)
+![](./01-012-_IMG5.png)
 
 Written during the planning phase for development teams (developers, architects, QA). Describes expected software features and functionality, including:
 
@@ -48,7 +48,7 @@ Written during the planning phase for development teams (developers, architects,
 
 #### **Design Documentation**
 
-![](./01-011-_IMG6.png)
+![](./01-012-_IMG6.png)
 
 Written by software architects and development teams explaining how software will be built to meet requirements.  
 Comprises conceptual and technical design documents.
@@ -56,7 +56,7 @@ Comprises conceptual and technical design documents.
 
 #### **Technical Documentation**
 
-![](./01-011-_IMG7.png)
+![](./01-012-_IMG7.png)
 
 Includes:
 *   Code comments helping developers understand code behaviour
@@ -66,7 +66,7 @@ Includes:
 
 #### **Quality Assurance Documentation**
 
-![](./01-011-_IMG8.png)
+![](./01-012-_IMG8.png)
 
 Encompasses testing strategy, progress, and metrics.   
 
@@ -81,7 +81,7 @@ Types include:
 
 #### **User Documentation**
 
-![](./01-011-_IMG9º.png)
+![](./01-012-_IMG9º.png)
 
 Intended for end-users, explaining software operation, installation, or troubleshooting.  
 
@@ -93,7 +93,7 @@ May includes FAQs, installation and help guidances, videos, tutorials, and user 
 
 **SOPs** are written, step-by-step documentation explaining how to accomplish common yet complex, organisation-specific tasks.  
 
-![](./01-011-_IMG10.png)
+![](./01-012-_IMG10.png)
 
 Unlike general process documentation overviews, **SOPs provide detailed procedural guidance**. 
 
@@ -106,7 +106,7 @@ Formats may include:
 **Example**:   
 >A software engineering firm's specific steps for merging code into the main branch differ from general version control knowledge and require organisation-specific SOP documentation.
 
-![](./01-011-_IMG11.png)
+![](./01-012-_IMG11.png)
 
 ---
 
