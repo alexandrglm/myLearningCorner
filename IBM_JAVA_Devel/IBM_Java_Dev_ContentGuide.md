@@ -56,20 +56,22 @@
 
 #### 02-02  Tools in Software Development
 
-|     | #       | Type      | Title                                          | Date   |
-| --- | ------- | --------- | ---------------------------------------------- | ------ |
-| [ ] | 02-008  | Tools     | Introducing Application Development Tools      |        |
-| [ ] | 02-009  | Tools     | More Application Development Tools             |        |
-| [ ] | 02-010  | Stacks    | Introduction to Software Stacks                |        |
-| [ ] | 02-010b | Lab       | Hands-on Lab: Getting Started With an IDE      |        |
-| [ ] | 02-011  | Viewpoint | Insiders' Viewpoint: Tools and Technologies    |        |
-| [ ] | 02-011b | Practice  | Tools in Software Development                  |        |
+|     | #       | Type      | Title                                          | Date             |
+| --- | ------- | --------- | ---------------------------------------------- | ---------------- |
+| [X] | 02-008  | Tools     | Introducing Application Development Tools      | 2025-11-06       |
+| [X] | 02-009  | Tools     | More Application Development Tools             | 2025-11-06       |
+| [X] | 02-010  | Stacks    | Introduction to Software Stacks                | 2025-11-06       |
+| [X] | 02-010b | Lab       | Hands-on Lab: Getting Started With an IDE      | 2025-11-06       |
+| [X] | 02-011  | Viewpoint | Insiders' Viewpoint: Tools and Technologies    | 2025-11-06       |
+| [X] | 02-011b | Practice  | Tools in Software Development                  | 2025-11-06       |
 
 
 
 ### Summary & Assessment
 
-|     | #      | Type       | Title                                | Date   |
-| --- | ------ | ---------- | ------------------------------------ | ------ |
-| [ ] | 02-012 | Summary    | MODULE 2 Summary                     |        |
-| [ ] | 02-013 | Assessment | Web and Cloud Development Assessment |        |
+|     | #      | Type       | Title                                | Date             |
+| --- | ------ | ---------- | ------------------------------------ | ---------------- |
+| [X] | 02-012 | Summary    | MODULE 2 Summary                     | 2025-11-06       |
+| [X] | 02-013 | Assessment | Web and Cloud Development Assessment | 2025-11-06       |
+
+---
