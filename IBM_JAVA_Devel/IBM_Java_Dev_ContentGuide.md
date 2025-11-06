@@ -80,19 +80,19 @@
 
 |     | #        | Type              | Title                                                | Status          |
 | --- | -------- | ----------------- | ---------------------------------------------------- | ---------------- |
-| [ ] | 03-001   | Compiled/Interpreted         | Interpreted and Compiled Programming Languages       |                  |
-| [ ] | 03-002   | Compiled/Interpreted        | Comparing Compiled and Interpreted Languages         |                  |
-| [ ] | 03-003   | ASM / Query         | Query and Assembly Programming Languages             |                  |
-| [ ] | 03-004   | Organisation      | Understanding Code Organisation Methods              |                  |
-| [ ] | 03-005   | Lab               | Hello World in 11 Programming Languages              |                  |
-| [ ] | 03-006   | Industry View     | Insiders' Viewpoint: Types of Languages              |                  |
-| [ ] | 03-006b   | Activity          | Programming Logic and Organisational Methods         |                  |
-| [ ] | 03-006c   | Practice          | Programming Languages and Organisation               |                  |
+| [X] | 03-001   | Compiled/Interpreted         | Interpreted and Compiled Programming Languages       | 2025-11-06       |
+| [X] | 03-002   | Compiled/Interpreted        | Comparing Compiled and Interpreted Languages         | 2025-11-06       |
+| [X] | 03-003   | ASM / Query         | Query and Assembly Programming Languages             | 2025-11-06       |
+| [X] | 03-004   | Organisation      | Understanding Code Organisation Methods              | 2025-11-06       |
+| [X] | 03-005   | Lab               | Hello World in 11 Programming Languages              | 2025-11-06       |
+| [X] | 03-006   | Industry View     | Insiders' Viewpoint: Types of Languages              | 2025-11-06       |
+| [X] | 03-006b   | Activity          | Programming Logic and Organisational Methods         | 2025-11-06       |
+| [X] | 03-006c   | Quiz          | Programming Languages and Organisation               |                  |
 | [ ] | 03-009   | Logic             | Branching and Looping Programming Logic              |                  |
 | [ ] | 03-010   | Concepts          | Introduction to Programming Concepts (Part 1)        |                  |
 | [ ] | 03-011   | Concepts          | Introduction to Programming Concepts (Part 2)        |                  |
-| [ ] | 03-011b   | Lab - Python               | Programming Fundamentals with Python                 |                  |
-| [ ] | 03-011c   | Practice          | Introduction to Programming Concepts                 |                  |
+| [ ] | 03-012   | Lab - Python               | Programming Fundamentals with Python                 |                  |
+| [ ] | 03-012c   | Practice          | Introduction to Programming Concepts                 |                  |
 
 |     | #        | Type              | Title                                                | Status          |
 | --- | -------- | ----------------- | ---------------------------------------------------- | ---------------- |
