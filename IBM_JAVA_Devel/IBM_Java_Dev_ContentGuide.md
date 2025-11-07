@@ -87,14 +87,14 @@
 | [X] | 03-005   | Lab               | Hello World in 11 Programming Languages              | 2025-11-06       |
 | [X] | 03-006   | Industry View     | Insiders' Viewpoint: Types of Languages              | 2025-11-06       |
 | [X] | 03-006b   | Activity          | Programming Logic and Organisational Methods         | 2025-11-06       |
-| [X] | 03-006c   | Quiz          | Programming Languages and Organisation               |                  |
-| [ ] | 03-009   | Logic             | Branching and Looping Programming Logic              |                  |
-| [ ] | 03-010   | Concepts          | Introduction to Programming Concepts (Part 1)        |                  |
-| [ ] | 03-011   | Concepts          | Introduction to Programming Concepts (Part 2)        |                  |
-| [ ] | 03-012   | Lab - Python               | Programming Fundamentals with Python                 |                  |
-| [ ] | 03-012c   | Practice          | Introduction to Programming Concepts                 |                  |
+| [X] | 03-006c   | Quiz          | Programming Languages and Organisation               | 2025-11-06       |
+| [X] | 03-007   | Logic (Branch/Loop) | Branching and Looping Programming Logic              | 2025-11-07       |
+| [X] | 03-008   | DataTypes, Identifiers | Introduction to Programming Concepts (Part 1)        | 2025-11-07       |
+| [X] | 03-009   | Functional / OOP | Introduction to Programming Concepts (Part 2)        | 2025-11-07       |
+| [X] | 03-010   | Lab - Python Jupyter | Programming Fundamentals with Python                 | 2025-11-07       |
+| [X] | 03-011   | Quiz | Introduction to Programming Concepts                 | 2025-11-07       |
 
 |     | #        | Type              | Title                                                | Status          |
 | --- | -------- | ----------------- | ---------------------------------------------------- | ---------------- |
-| [ ] | 03-014   | Summary           | Summary & Highlights                                 |                  |
-| [ ] | 03-015   | Assessment        | Basics of Programming (Graded Quiz)                  |                  |
+| [X] | 03-012   | Summary           | Summary & Highlights                                 | 2025-11-07       |
+| [X] | 03-015   | Assessment        | Basics of Programming (Graded Quiz)                  | 2025-11-07       |
