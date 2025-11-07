@@ -11,12 +11,12 @@
 
 ---
 
-### MODULE 02: Dynamic Connectivity & Union–Find
+### MODULE 02:  Dynamic Connectivity & Union–Find
 
 |     | #      | Type       | Title                            | Date |
 | --- | ------ | ---------- | -------------------------------- | ---- |
 | [X] | 02-001 | Schedule | Module & Materials Overview | 2025-11-07 |
-| [X] | 02-002 | Case Literacy | 1.5 - UNION-FIND, Algorithm Analysis | 2025-11-07 |
+| [X] | 02-002 | Lecture Preparation | 1.4 Algorithm Analysis, 1.5 - UNION-FIND,  | 2025-11-07 |
 | [ ] | 02-003 | Mentor | Dynamic Connectivity pattern |      |
 | [ ] | 02-004 | Mentor | Quick-Find         |      |
 | [ ] | 02-005 | Mentor | Quick-Union, part 1 |      |
