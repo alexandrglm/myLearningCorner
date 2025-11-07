@@ -4,13 +4,13 @@
  *  Last modified:     November 7, 2025
  **************************************************************************** */
 
-package src;
+// package src;
 
-public class helloworld {
+public class HelloWorld {
 
     public static void main(String[] args) {
 
-        System.out.println("Hello World!");
+        System.out.println("Hello, World");
 
     }
 }

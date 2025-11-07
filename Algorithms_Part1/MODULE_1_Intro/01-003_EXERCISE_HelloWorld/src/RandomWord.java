@@ -17,13 +17,13 @@ public class RandomWord {
         String whatNeeded = null;
         int i = 0;
 
-        while ( !StdIn.isEmpty() ) {
+        while (!StdIn.isEmpty()) {
 
             String chosenWord = StdIn.readString();
             i++;
 
 
-            if ( StdRandom.bernoulli( 1.0 / i ) ) {
+            if (StdRandom.bernoulli(1.0 / i)) {
 
                 whatNeeded = chosenWord;
 
