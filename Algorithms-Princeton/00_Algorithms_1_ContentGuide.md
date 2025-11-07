@@ -20,7 +20,7 @@
 | [ ] | 02-003 | Mentor | Dynamic Connectivity pattern |      |
 | [ ] | 02-004 | Mentor | Quick-Find         |      |
 | [ ] | 02-005 | Mentor | Quick-Union, part 1 |      |
-| [ ] | 02-006 | Mentor | Quick-Union, part 1 - Improvements  |      |
+| [ ] | 02-006 | Mentor | Quick-Union, part 2 - Improvements  |      |
 | [ ] | 02-007 | Mentor | Union-Find applications  |      |
 
 
