@@ -4,10 +4,12 @@
 
 |     | #      | Type       | Title                         | Date |
 | --- | ------ | ---------- | ----------------------------- | ---- |
-| [X] |        | Video      | Course Introduction           |      |
-| [X] | 01-001 | Reading    | Welcome to Algorithms, Part I |      |
-| [X] | 01-002 | Reading    | Lecture Slides                |      |
-| [ ] | 01-003 | Assignment | Hello, World                  |      |
+| [X] |        | Video      | Course Introduction           | 2025-11-07 |
+| [X] | 01-001 | Reading    | Welcome to Algorithms, Part I | 2025-11-07 |
+| [X] | 01-002 | Reading    | Lecture Slides                | 2025-11-07 |
+| [X] | 01-003 | Assignment | Hello, World                  | 2025-11-07 |
+
+---
 
 ### MODULE 02: Dynamic Connectivity & Union–Find
 
