@@ -15,13 +15,17 @@
 
 |     | #      | Type       | Title                            | Date |
 | --- | ------ | ---------- | -------------------------------- | ---- |
-| [ ] | 02-001 | Video      | Dynamic Connectivity             |      |
-| [ ] | 02-002 | Video      | Quick Find                       |      |
-| [ ] | 02-003 | Video      | Quick Union                      |      |
-| [ ] | 02-004 | Video      | Quick-Union Improvements         |      |
-| [ ] | 02-005 | Video      | Union–Find Applications          |      |
-| [ ] | 02-006 | Reading    | Overview                         |      |
-| [ ] | 02-007 | Reading    | Lecture Slides                   |      |
+| [X] | 02-001 | Schedule | Module & Materials Overview | 2025-11-07 |
+| [X] | 02-002 | Case Literacy | 1.5 - UNION-FIND, Algorithm Analysis | 2025-11-07 |
+| [ ] | 02-003 | Mentor | Dynamic Connectivity pattern |      |
+| [ ] | 02-004 | Mentor | Quick-Find         |      |
+| [ ] | 02-005 | Mentor | Quick-Union, part 1 |      |
+| [ ] | 02-006 | Mentor | Quick-Union, part 1 - Improvements  |      |
+| [ ] | 02-007 | Mentor | Union-Find applications  |      |
+
+
+|     | #      | Type       | Title                            | Date |
+| --- | ------ | ---------- | -------------------------------- | ---- |
 | [ ] | 02-008 | Assignment | Interview Questions (Union–Find) |      |
 | [ ] | 02-009 | Assignment | Percolation                      |      |
 
