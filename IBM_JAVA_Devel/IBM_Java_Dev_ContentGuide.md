@@ -97,4 +97,28 @@
 |     | #        | Type              | Title                                                | Status          |
 | --- | -------- | ----------------- | ---------------------------------------------------- | ---------------- |
 | [X] | 03-012   | Summary           | Summary & Highlights                                 | 2025-11-07       |
-| [X] | 03-015   | Assessment        | Basics of Programming (Graded Quiz)                  | 2025-11-07       |
+| [X] | 03-013   | Assessment        | Basics of Programming (Graded Quiz)                  | 2025-11-07       |
+
+
+---
+
+|     | #      | Type              | Title                                                    | Status              |
+| --- | ------ | ----------------- | -------------------------------------------------------- | ------------------- |
+| [X] | 04-001 | Software Arquitecture, UML | Introduction to Software Architecture           | 2025-11-08             |
+| [X] | 04-002 | UML, Behavioral, Structural | Software Design and Modeling                             | 2025-11-08             |
+| [X] | 04-003 | Klass | Object-Oriented Analysis and Design                      | 2025-11-08             |
+| [X] | 04-004 | Industry View | Insiders' Viewpoint: Importance of Design & Architecture | 2025-11-08             |
+| [X] | 04-005 | Activity, Design Patterns | Create an Architectural Diagram                          | 2025-11-08             |
+| [X] | 04-005b | Quiz | Software Architecture and Design (Practice)              | 2025-11-08             |
+| [X] | 04-006 | SOA, Nodes | Approaches to Application Architecture                   | 2025-11-08             |
+| [ ] | 04-007 |           | Architectural Patterns in Software                       |                     |
+| [ ] | 04-008 |     | Application Deployment Environments                      |                     |
+| [ ] | 04-009 |         | Production Deployment Components                         |                     |
+| [ ] | 04-010 |           | Insiders' Viewpoint: Deployment Architecture             |                     |
+| [ ] | 04-011 |           | Architecture Patterns & Deployment Topologies (Practice) |           |
+
+
+|     | #      | Type              | Title                                                    | Status              |
+| --- | ------ | ----------------- | -------------------------------------------------------- | ------------------- |
+| [ ] | 04-012 | Summary           | Summary & Highlights                                     |                     |
+| [ ] | 04-013 | Graded Assessment | Software Architecture, Design, and Deployment Topologies |                     |
