@@ -111,14 +111,14 @@
 | [X] | 04-005 | Activity, Design Patterns | Create an Architectural Diagram                          | 2025-11-08             |
 | [X] | 04-005b | Quiz | Software Architecture and Design (Practice)              | 2025-11-08             |
 | [X] | 04-006 | SOA, Nodes | Approaches to Application Architecture                   | 2025-11-08             |
-| [ ] | 04-007 |           | Architectural Patterns in Software                       |                     |
-| [ ] | 04-008 |     | Application Deployment Environments                      |                     |
-| [ ] | 04-009 |         | Production Deployment Components                         |                     |
-| [ ] | 04-010 |           | Insiders' Viewpoint: Deployment Architecture             |                     |
-| [ ] | 04-011 |           | Architecture Patterns & Deployment Topologies (Practice) |           |
+| [X] | 04-007 | 2-tier, 3-tier, Event-Driven, Microservices, P2P| Architectural Patterns in Software                      | 2025-11-09             |
+| [X] | 04-008 | Development, QA, Staging, Production | Application Deployment Environments                      | 2025-11-09             |
+| [X] | 04-009 | Firewall, Load Balancer, Web Server, App Server, Proxy, Data Server | Production Deployment Components     | 2025-11-09             |
+| [X] | 04-010 |           | Insiders' Viewpoint: Deployment Architecture             | 2025-11-09             |
+| [X] | 04-011 | Grade | Architecture Patterns & Deployment Topologies (Practice) | 2025-11-09             |
 
 
 |     | #      | Type              | Title                                                    | Status              |
 | --- | ------ | ----------------- | -------------------------------------------------------- | ------------------- |
-| [ ] | 04-012 | Summary           | Summary & Highlights                                     |                     |
-| [ ] | 04-013 | Graded Assessment | Software Architecture, Design, and Deployment Topologies |                     |
+| [X] | 04-012 | Summary           | Summary & Highlights                                     | 2025-11-09          |
+| [X] | 04-013 | Graded Assessment | Software Architecture, Design, and Deployment Topologies | 2025-11-09          |
