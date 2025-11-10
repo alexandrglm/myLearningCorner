@@ -1,10 +1,4 @@
-## Certification:   IBM Java Development
-
-## Courses:         14
-
----
-
-## COURSE 1:    Software Engineering
+## COURSE 1:    Software Engineering Basics
 ***
 
 ### MODULE 1: SDLC — Software Development LifeCycle
@@ -165,39 +159,3 @@
 | **Graded Quiz: Final Quiz** | 
 | **Final Project Submission and Evaluation** | 
 | **Software Engineering Glossary** |
-
-
----
-
-## COURSE 2:    Java Programming - Beginners
-***
-
-### MODULE 1:   Introduction to Java environment and ecosystem
-
-#### Part 1:    Course Info
-
-|     | #        | Type             | Title                                             | Status           |
-| --- | -------- | ---------------- | ------------------------------------------------- | ---------------- |
-| [ ] | 01-001   | Course intro     | Overview of Java Development by IBM               |                  |
-| [ ] | 01-002   | Introduction     | Course Introduction                               |                  |
-| [ ] | 01-003   | Course Info      | Course Overview                                   |                  |
-| [ ] | 01-004   | Tips             | Helpful Tips for Course Completion                |                  |
-
-
-#### Part 2:    Getting Started with Java
-
-|     | #        | Type             | Title                                             | Status           |
-| --- | -------- | ---------------- | ------------------------------------------------- | ---------------- |
-| [ ] | 01-005   | History          | Introduction to Java: History and Evolution       |                  |
-| [ ] | 01-006   | Ecosystem        | The Java Ecosystem                                |                  |
-| [ ] | 01-007   | JVM/JDK/JRE      | The Java Virtual Machine, Development Kit, and Runtime Environment Explained |   |
-| [ ] | 01-008   | Lab              | Installing And Running Your First Java Program   |                  |
-| [ ] | 01-009   | Features         | Using Key Java Features                           |                  |
-| [ ] | 01-010   | Reading          | Comparison of Commercial and Open Source Java   |                  |
-| [ ] | 01-011   | Practice Quiz    | Getting Started with Java                         |                  |
-| [ ] | 01-012   | Summary          | Summary: Introduction to Java Environment and Ecosystem |        
-
-| #        | Type             | Title                                             | Status           |
-| --- | -------- | ---------------- | ------------------------------------------------- | ---------------- |
-| [ ] | 01-013   | Glossary         | Glossary: Introduction to Java Environment and Ecosystem |                  |
-| [ ] | 01-014   | Assessment       | Module 1 Graded Quiz: Introduction to Java Environment and Ecosystem | — |
