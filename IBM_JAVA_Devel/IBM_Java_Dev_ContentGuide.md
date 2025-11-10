@@ -178,18 +178,18 @@
 
 |     | #        | Type             | Title                                             | Status           |
 | --- | -------- | ---------------- | ------------------------------------------------- | ---------------- |
-| [ ] | 01-001   | Course intro     | Overview of Java Development by IBM               |                  |
-| [ ] | 01-002   | Introduction     | Course Introduction                               |                  |
-| [ ] | 01-003   | Course Info      | Course Overview                                   |                  |
-| [ ] | 01-004   | Tips             | Helpful Tips for Course Completion                |                  |
+| [X] | 01-001   | Course intro     | Overview of Java Development by IBM               | 2025-11-10       |
+| [X] | 01-002   | Introduction     | Course Introduction                               | 2025-11-10       |
+| [X] | 01-003   | Course Info      | Course Overview                                   | 2025-11-10       |
+| [X] | 01-004   | Tips             | Helpful Tips for Course Completion                | 2025-11-10       |
 
 
 #### Part 2:    Getting Started with Java
 
 |     | #        | Type             | Title                                             | Status           |
 | --- | -------- | ---------------- | ------------------------------------------------- | ---------------- |
-| [ ] | 01-005   | History          | Introduction to Java: History and Evolution       |                  |
-| [ ] | 01-006   | Ecosystem        | The Java Ecosystem                                |                  |
+| [X] | 01-005   | Definitions      | Introduction to Java: History and Evolution       | 2025-11-10       |
+| [X] | 01-006   | Ecosystem        | The Java Ecosystem                                |                  |
 | [ ] | 01-007   | JVM/JDK/JRE      | The Java Virtual Machine, Development Kit, and Runtime Environment Explained |   |
 | [ ] | 01-008   | Lab              | Installing And Running Your First Java Program   |                  |
 | [ ] | 01-009   | Features         | Using Key Java Features                           |                  |
