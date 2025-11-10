@@ -154,3 +154,15 @@
 | --- | ------ | ------------ | ------------------------------------------- | --------------- |
 | [X] | 05-010 | Summary      | Summary & Highlights                        | 2025-11-10      |
 | [X] | 05-011 | Graded       | Job Opportunities & Skillsets (Quiz)        | 2025-11-10      |
+
+
+---
+
+## Module 6:   Final Assessment
+
+| Type | 
+|------|
+| **Graded Quiz: Final Quiz** | 
+| **Final Project Submission and Evaluation** | 
+| **Software Engineering Glossary** |
+
