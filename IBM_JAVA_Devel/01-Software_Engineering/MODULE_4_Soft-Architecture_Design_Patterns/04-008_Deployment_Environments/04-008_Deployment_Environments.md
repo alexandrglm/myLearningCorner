@@ -91,7 +91,7 @@ A seamless combination of public and private cloud infrastructures, optimising a
 
 ## Lesson Speech
 
-Welcome to Application Deployment Environments. After watching this video you will also be able to: **List different types of pre-production environments and state their purpose**; **Differentiate a production environment from other application environments**; and **compare and contrast deployment options**.
+Welcome to Application Deployment Environments. After this guide you will also be able to: **List different types of pre-production environments and state their purpose**; **Differentiate a production environment from other application environments**; and **compare and contrast deployment options**.
 
 **An application environment is the combination of the hardware and software resources required to run an application.** This includes: **the application code and/or binary executables for its various components or modules**; **the software stack it requires for running the application** such as modules and libraries it depends on, third-party applications and middleware; and **the operating system, any networking components and infrastructure, as well as any physical or virtual hardware** including computing or processing resources, memory, and storage.
 
@@ -105,4 +105,4 @@ Let's discuss cloud deployments next. **There are three types of cloud deploymen
 
 **With a private cloud, the cloud infrastructure is provisioned for exclusive use by a single organisation.** **The software system can be run on-premises, or the infrastructure could be owned, managed, and operated by a service provider.** For example, AWS is also a private cloud service provider. **The main advantage of a private cloud is increased security**, but it also allows for more flexibility because it can be fully customised. **Now a mix of both public and private clouds, working together seamlessly, is called a hybrid cloud model.** **A hybrid cloud potentially optimises the advantages of both public and private cloud models with regard to cost, security, scalability, and flexibility.**
 
-In this video you learned that: **Application environments include: development, testing or QA, staging, and production.** **Production environments must also take into account non-functional requirements like load, security, reliability, and scalability.** And **application environments can be deployed either on-premises on traditional hardware, or on public, private, or hybrid cloud platforms**.
+In this guide you learned that: **Application environments include: development, testing or QA, staging, and production.** **Production environments must also take into account non-functional requirements like load, security, reliability, and scalability.** And **application environments can be deployed either on-premises on traditional hardware, or on public, private, or hybrid cloud platforms**.

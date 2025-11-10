@@ -102,6 +102,9 @@
 
 ---
 
+### MODULE 4    Software Architecture, Design, Patterns
+
+
 |     | #      | Type              | Title                                                    | Status              |
 | --- | ------ | ----------------- | -------------------------------------------------------- | ------------------- |
 | [X] | 04-001 | Software Arquitecture, UML | Introduction to Software Architecture           | 2025-11-08             |
@@ -122,3 +125,32 @@
 | --- | ------ | ----------------- | -------------------------------------------------------- | ------------------- |
 | [X] | 04-012 | Summary           | Summary & Highlights                                     | 2025-11-09          |
 | [X] | 04-013 | Graded Assessment | Software Architecture, Design, and Deployment Topologies | 2025-11-09          |
+
+
+---
+
+### MODULE 5    Software Engineering Careers
+
+|     | #      | Type         | Title                                       | Status          |
+| --- | ------ | ------------ | ------------------------------------------- | --------------- |
+| [X] | 05-001 | Roles (Jr, Sr), Taks, Teams   | What Does a Software Engineer Do?           | 2025-11-10     |
+| [X] | 05-002 | Role Insight | A Day in the Life of a Software Engineer    | 2025-11-10     |
+| [X] | 05-003 | Skills       | Skills Required for Software Engineering    | 2025-11-10     |
+| [X] | 05-004 | Industry View  | Insiders’ Viewpoint: Advice to Future SEs   | 2025-11-10     |
+| [X] | 05-005 | Industry View  | Insiders’ Viewpoint: Women in Software Eng. | 2025-11-10     |
+| [X] | 05-005b | Quiz     | About Software Engineers (Practice)         | 2025-11-10     |
+
+|     | #      | Type         | Title                                       | Status          |
+| --- | ------ | ------------ | ------------------------------------------- | --------------- |
+| [X] | 05-006 | Job Market   | Job Outlook for Software Engineers          | 2025-11-10      |
+| [X] | 05-007 | Career Paths | Career Paths in Software Engineering        | 2025-11-10      |
+| [X] | 05-008 | Titles       | Software Engineering Job Titles             | 2025-11-10      |
+| [X] | 05-008b | Industry View | Insiders’ Viewpoint: Career Paths           | 2025-11-10      |
+| [X] | 05-008b| Lab           | Matching Roles with Responsibilities        | 2025-11-10      |
+| [X] | 05-009 | Ethics       | Code of Ethics                              | 2025-11-10      |
+| [X] | 05-009b | Quiz     | Careers in Software Engineering (Practice)  | 2025-11-10      |
+
+|     | #      | Type         | Title                                       | Status          |
+| --- | ------ | ------------ | ------------------------------------------- | --------------- |
+| [X] | 05-010 | Summary      | Summary & Highlights                        | 2025-11-10      |
+| [X] | 05-011 | Graded       | Job Opportunities & Skillsets (Quiz)        | 2025-11-10      |
