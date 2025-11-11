@@ -195,13 +195,13 @@
 
 |     | #        | Type             | Title                                             | Status           |
 | --- | -------- | ---------------- | ------------------------------------------------- | ---------------- |
-| [ ] | 01-009   | Features         | Using Key Java Features                           |                  |
-| [ ] | 01-010   | Reading          | Comparison of Commercial and Open Source Java   |                  |
-| [ ] | 01-011   | Practice Quiz    | Getting Started with Java                         |                  |
+| [X] | 01-009   | OOP Inheritance, Polymorphism, Encapsulation, Strong Typed DataTypes,... | Java Key Features | 2025-11-12       |
+| [X] | 01-010   | Reading          | Comparison of Commercial and Open Source Java   | 2025-11-12       |
+| [X] | 01-010b  | Practice Quiz    | Getting Started with Java                         | 2025-11-12       |
 
 
 | #        | Type             | Title                                             | Status           |
 | --- | -------- | ---------------- | ------------------------------------------------- | ---------------- |
-| [ ] | 01-012   | Summary          | Summary: Introduction to Java Environment and Ecosystem | |
-| [ ] | 01-013   | Glossary         | Glossary: Introduction to Java Environment and Ecosystem |                  |
-| [ ] | 01-014   | Assessment       | Module 1 Graded Quiz: Introduction to Java Environment and Ecosystem | — |
+| [X] | 01-011   | Summary          | Summary: Introduction to Java Environment and Ecosystem | 2025-11-12       |
+| [X] | 01-012   | Glossary         | Glossary: Introduction to Java Environment and Ecosystem | 2025-11-12       |
+| [X] | 01-013   | Assessment       | Module 1 Graded Quiz: Introduction to Java Environment and Ecosystem | 2025-11-12       |
