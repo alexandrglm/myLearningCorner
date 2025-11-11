@@ -3,7 +3,7 @@
 **/.Algorithms-IDE/
 **/.idea
 **/00-02-REPO
-**/.git
+**/.git/
 ### IntelliJ IDEA ###
 out/
 !**/src/main/**/out/
