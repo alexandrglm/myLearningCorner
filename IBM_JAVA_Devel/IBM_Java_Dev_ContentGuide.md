@@ -205,3 +205,30 @@
 | [X] | 01-011   | Summary          | Summary: Introduction to Java Environment and Ecosystem | 2025-11-12       |
 | [X] | 01-012   | Glossary         | Glossary: Introduction to Java Environment and Ecosystem | 2025-11-12       |
 | [X] | 01-013   | Assessment       | Module 1 Graded Quiz: Introduction to Java Environment and Ecosystem | 2025-11-12       |
+
+---
+
+### MODULE 2:   Building Blocks of Java Programming
+
+#### Part 1 - Basic Programming Constructs
+
+| #       | Type | Title                                       | Status / Date |
+| ------- | ---- | ------------------------------------------- | ------------- |
+| 02-001  |      | Structuring Java Code and Comments          |               |
+| 02-002  |      | Exploring Data Types in Java                |               |
+| 02-003  |      | Lab: Explore Data Types                     |               |
+| 02-004  |      | Introduction to Operators in Java           |               |
+| 02-005  |      | Using Advanced Operators in Java            |               |
+| 02-006  |      | Lab: Using Operators                        |               |
+| 02-007  |      | Working with Arrays                         |               |
+| 02-007b |      | Practice Quiz: Basic Programming Constructs |               |
+
+
+#### Part 2 - Summary, Glossary, Cheatsheets, Evaluation
+
+| #       | Type | Title                                       | Status / Date |
+| ------- | ---- | ------------------------------------------- | ------------- |
+| 02-008  |      | Summary Module 2                            |               |
+| 02-009  |      | Glossary                                    |               |
+| 02-010  |      | Coding Cheatsheet: Building Blocks of Java  |               |
+| 02-011  |      | Module 2 Graded Quiz                        |               |
