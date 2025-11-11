@@ -189,15 +189,19 @@
 |     | #        | Type             | Title                                             | Status           |
 | --- | -------- | ---------------- | ------------------------------------------------- | ---------------- |
 | [X] | 01-005   | Definitions      | Introduction to Java: History and Evolution       | 2025-11-10       |
-| [X] | 01-006   | Ecosystem        | The Java Ecosystem                                |                  |
-| [ ] | 01-007   | JVM/JDK/JRE      | The Java Virtual Machine, Development Kit, and Runtime Environment Explained |   |
-| [ ] | 01-008   | Lab              | Installing And Running Your First Java Program   |                  |
+| [X] | 01-006   | IDEs,SDK,J2ME    | The Java Ecosystem                                | 2025-11-11       |
+| [X] | 01-007   | JVM/JDK/JRE      | The Java Virtual Machine, Development Kit, and Runtime Environment Explained | 2025-11-11       |
+| [X] | 01-008   | Lab, `printf`, `println`, `Scanner` | Installing And Running Your First Java Program   | 2025-11-11       |
+
+|     | #        | Type             | Title                                             | Status           |
+| --- | -------- | ---------------- | ------------------------------------------------- | ---------------- |
 | [ ] | 01-009   | Features         | Using Key Java Features                           |                  |
 | [ ] | 01-010   | Reading          | Comparison of Commercial and Open Source Java   |                  |
 | [ ] | 01-011   | Practice Quiz    | Getting Started with Java                         |                  |
-| [ ] | 01-012   | Summary          | Summary: Introduction to Java Environment and Ecosystem |        
+
 
 | #        | Type             | Title                                             | Status           |
 | --- | -------- | ---------------- | ------------------------------------------------- | ---------------- |
+| [ ] | 01-012   | Summary          | Summary: Introduction to Java Environment and Ecosystem | |
 | [ ] | 01-013   | Glossary         | Glossary: Introduction to Java Environment and Ecosystem |                  |
 | [ ] | 01-014   | Assessment       | Module 1 Graded Quiz: Introduction to Java Environment and Ecosystem | — |
