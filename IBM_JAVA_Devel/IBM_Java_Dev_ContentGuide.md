@@ -214,9 +214,9 @@
 
 |     | #       | Type | Title                                       | Status / Date |
 | --- | ------- | ---- | ------------------------------------------- | ------------- |
-| [ ] | 02-001  |      | Structuring Java Code and Comments          |               |
-| [ ] | 02-002  |      | Exploring Data Types in Java                |               |
-| [ ] | 02-003  |      | Lab: Explore Data Types                     |               |
+| [X] | 02-001  | Naming Conventions, Casing, Comments, Packages, Classes, Main Method/Entry Point, Importing,  | Structuring Java Code and Comments          | 2025-11-12  |
+| [X] | 02-002  | Primitives, Referentials | Exploring Data Types in Java                | 2025-11-12  |
+| [X] | 02-003  | Data Types, Casting | Lab: Explore Data Types                     | 2025-11-12  |
 | [ ] | 02-004  |      | Introduction to Operators in Java           |               |
 | [ ] | 02-005  |      | Using Advanced Operators in Java            |               |
 | [ ] | 02-006  |      | Lab: Using Operators                        |               |
