@@ -217,9 +217,9 @@
 | [X] | 02-001  | Naming Conventions, Casing, Comments, Packages, Classes, Main Method/Entry Point, Importing,  | Structuring Java Code and Comments          | 2025-11-12  |
 | [X] | 02-002  | Primitives, Referentials | Exploring Data Types in Java                | 2025-11-12  |
 | [X] | 02-003  | Data Types, Casting | Lab: Explore Data Types                     | 2025-11-12  |
-| [ ] | 02-004  |      | Introduction to Operators in Java           |               |
-| [ ] | 02-005  |      | Using Advanced Operators in Java            |               |
-| [ ] | 02-006  |      | Lab: Using Operators                        |               |
+| [X] | 02-004  | Arithmetic, Relational, Logical| Introduction to Operators in Java           | 2025-11-12  |
+| [X] | 02-005  | Unary, Bitwise, Shift, Ternary, Assignment,     | Using Advanced Operators in Java            | 2025-11-12    |
+| [X] | 02-006  | Nested Ternary, `for` | Lab: Using Operators                        | 2025-11-12    |
 | [ ] | 02-007  |      | Working with Arrays                         |               |
 | [ ] | 02-007b |      | Practice Quiz: Basic Programming Constructs |               |
 
