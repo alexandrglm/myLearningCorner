@@ -220,8 +220,8 @@
 | [X] | 02-004  | Arithmetic, Relational, Logical| Introduction to Operators in Java           | 2025-11-12  |
 | [X] | 02-005  | Unary, Bitwise, Shift, Ternary, Assignment,     | Using Advanced Operators in Java            | 2025-11-12    |
 | [X] | 02-006  | Nested Ternary, `for` | Lab: Using Operators                        | 2025-11-12    |
-| [ ] | 02-007  |      | Working with Arrays                         |               |
-| [ ] | 02-007b |      | Practice Quiz: Basic Programming Constructs |               |
+| [X] | 02-007  | Arrays, Matrix, `for`, `for : each`  | Working with Arrays                         | 2025-11-13   |
+| [ ] | 02-007b | Assesment | Practice Quiz: Basic Programming Constructs | 2025-11-13   |
 
 
 #### Part 2 - Summary, Glossary, Cheatsheets, Evaluation
