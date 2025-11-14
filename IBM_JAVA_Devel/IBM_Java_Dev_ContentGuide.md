@@ -221,14 +221,38 @@
 | [X] | 02-005  | Unary, Bitwise, Shift, Ternary, Assignment,     | Using Advanced Operators in Java            | 2025-11-12    |
 | [X] | 02-006  | Nested Ternary, `for` | Lab: Using Operators                        | 2025-11-12    |
 | [X] | 02-007  | Arrays, Matrix, `for`, `for : each`  | Working with Arrays                         | 2025-11-13   |
-| [ ] | 02-007b | Assesment | Practice Quiz: Basic Programming Constructs | 2025-11-13   |
+| [X] | 02-007b | Assesment | Practice Quiz: Basic Programming Constructs | 2025-11-13   |
 
 
 #### Part 2 - Summary, Glossary, Cheatsheets, Evaluation
 
-|     | #       | Type | Title                                       | Status / Date |
-| --- | ------- | ---- | ------------------------------------------- | ------------- |
-| [ ] | 02-008  |      | Summary Module 2                            |               |
-| [ ] | 02-009  |      | Glossary                                    |               |
-| [ ] | 02-010  |      | Coding Cheatsheet: Building Blocks of Java  |               |
-| [ ] | 02-011  |      | Module 2 Graded Quiz                        |               |
+|     | #       | Title                                       | Status / Date |
+| --- | ------- | ------------------------------------------- | ------------- |
+| [X] | 02-008  | Summary Module 2                            | 2025-11-14    |
+| [X] | 02-009  | Glossary                                    | 2025-11-14    |
+| [X] | 02-010  | Coding Cheatsheet: Building Blocks of Java  | 2025-11-14    |
+| [X] | 02-011  | Module 2 Graded Quiz                        | 2025-11-14    |
+
+---
+
+### MODULE 3:   Control Structures / String Handling
+
+|     | #       | Type | Title                                                     | Status / Date |
+| --- | ------- | ---- | --------------------------------------------------------- | ------------- |
+| [ ] | 03-001  |      | Using Conditional Statements                              |               |
+| [ ] | 03-002  |      | Introduction to Loops in Java                             |               |
+| [ ] | 03-003  |      | Lab: Array Manipulation and For Loops                     |               |
+| [ ] | 03-004  |      | Working with Strings in Java                              |               |
+| [ ] | 03-005  |      | Lab: Working with Strings                                 |               |
+| [ ] | 03-006  |      | Using Packages and Imports                                |               |
+| [ ] | 03-007  |      | Implementing Functions and Methods                        |               |
+| [ ] | 03-008  |      | Lab: Create Custom Functions and Methods                  |               |
+| [ ] | 03-008b |      | Assessment: Control Structures and String Handling        |               |
+
+
+|     | #       | Title                                                     | Status / Date |
+| --- | ------- | --------------------------------------------------------- | ------------- |
+| [ ] | 03-009  | Summary                                                   |               |
+| [ ] | 03-010  | Glossary:                                                 |               |
+| [ ] | 03-011  | Coding Cheatsheet: Control Structures and String Handling |               |
+| [ ] | 03-012  | Graded                                                    |               |
