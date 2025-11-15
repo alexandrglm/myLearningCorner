@@ -239,8 +239,8 @@
 
 |     | #       | Type | Title                                                     | Status / Date |
 | --- | ------- | ---- | --------------------------------------------------------- | ------------- |
-| [ ] | 03-001  |      | Using Conditional Statements                              |               |
-| [ ] | 03-002  |      | Introduction to Loops in Java                             |               |
+| [X] | 03-001  | `if`, `if-else-if`, `switch` | Using Conditional Statements      | 2025-11-15    |
+| [X] | 03-002  | `for`, `while`, `do-while` | Introduction to Loops in Java       | 2025-11-15    |
 | [ ] | 03-003  |      | Lab: Array Manipulation and For Loops                     |               |
 | [ ] | 03-004  |      | Working with Strings in Java                              |               |
 | [ ] | 03-005  |      | Lab: Working with Strings                                 |               |
