@@ -212,7 +212,7 @@
 
 #### Part 1 - Basic Programming Constructs
 
-|     | #       | Type | Title                                       | Status / Date |
+|     | #       | Type | Title                                       | Date          |
 | --- | ------- | ---- | ------------------------------------------- | ------------- |
 | [X] | 02-001  | Naming Conventions, Casing, Comments, Packages, Classes, Main Method/Entry Point, Importing,  | Structuring Java Code and Comments          | 2025-11-12  |
 | [X] | 02-002  | Primitives, Referentials | Exploring Data Types in Java                | 2025-11-12  |
@@ -226,7 +226,7 @@
 
 #### Part 2 - Summary, Glossary, Cheatsheets, Evaluation
 
-|     | #       | Title                                       | Status / Date |
+|     | #       | Title                                       | Date          |
 | --- | ------- | ------------------------------------------- | ------------- |
 | [X] | 02-008  | Summary Module 2                            | 2025-11-14    |
 | [X] | 02-009  | Glossary                                    | 2025-11-14    |
@@ -237,7 +237,7 @@
 
 ### MODULE 3:   Control Structures / String Handling
 
-|     | #       | Type | Title                                                     | Status / Date |
+|     | #       | Type | Title                                                     | Date          |
 | --- | ------- | ---- | --------------------------------------------------------- | ------------- |
 | [X] | 03-001  | `if`, `if-else-if`, `switch` | Using Conditional Statements      | 2025-11-15    |
 | [X] | 03-002  | `for`, `while`, `do-while` | Introduction to Loops in Java       | 2025-11-15    |
@@ -245,16 +245,36 @@
 | [X] | 03-004  | `.length()`, `.charAt()`, `concat()`, `equals()`, `.substring()`, `split()`, `.join()`, `.toLowerCase()`, `.toUpperCase()`, `.strip()`, `.trim()`, `.replace()` |  Working with Strings in Java  | 2025-11-17    |
 | [X] | 03-004b  | `.contains()`, `.startsWith()`, `.endsWith()`, `.indexOf()`, `.lastIndexOf()`, `.replaceAll(regex)`, `.replaceFirst(regex)`, `.isEmpty()`/`.isBlank()`, `.matches()`, `.repeat()`, `.indent()`, `.transform()`, `.valueOf()`, `.format()`, ... |  String Methods Expanded  | 2025-11-17    |
 | [X] | 03-005  | | Lab: Working with Strings                                | 2025-11-17    |
-| [ ] | 03-006  |      | Using Packages and Imports                                |
-|
-| [ ] | 03-007  |      | Implementing Functions and Methods                        |               |
-| [ ] | 03-008  |      | Lab: Create Custom Functions and Methods                  |               |
-| [ ] | 03-008b |      | Assessment: Control Structures and String Handling        |               |
+| [X] | 03-006  | `com.domain.className`, `package`, `import` | Using Packages and Imports  | 2025-11-17    |
+| [X] | 03-007  |  | Implementing Functions and Methods                        | 2025-11-17    |
+| [X] | 03-008  |      | Lab: Create Custom Functions and Methods                  | 2025-11-17    |
+| [X] | 03-008b |      | Assessment: Control Structures and String Handling        | 2025-11-17    |
 
 
-|     | #       | Title                                                     | Status / Date |
+|     | #       | Title                                                     | Date          |
 | --- | ------- | --------------------------------------------------------- | ------------- |
-| [ ] | 03-009  | Summary                                                   |               |
-| [ ] | 03-010  | Glossary:                                                 |               |
-| [ ] | 03-011  | Coding Cheatsheet: Control Structures and String Handling |               |
-| [ ] | 03-012  | Graded                                                    |               |
+| [X] | 03-009  | Summary                                                   | 2025-11-17    |
+| [X] | 03-010  | Glossary:                                                 | 2025-11-17    |
+| [X] | 03-011  | Coding Cheatsheet: Control Structures and String Handling | 2025-11-17    |
+| [X] | 03-012  | Grade                                                     | 2025-11-17    |
+
+---
+
+### MODULE 4:   Exception Handling
+
+|     | #       | Type | Title                                                     | Date          |
+| --- | ------- | ---- | --------------------------------------------------------- | ------------- |
+| [ ] | 04-001  |      | Exceptions introduction                                   |               |
+| [ ] | 04-002  |      | Using `finally` block                  |               |
+| [ ] | 04-003  |      | Using multiple `try - catch`                  |               |
+| [ ] | 04-004  |      | Lab: Exception Handling Practice                 |               |
+| [ ] | 05-005  |      | Checked and  Runtime Exceptions Compared                 |               |
+| [ ] | 05-005b |      | Assesment: Handling Exception in Java                 |               |
+
+
+|     | #       | Title                                                     |         Date |
+| --- | ------- | --------------------------------------------------------- | ------------- |
+| [ ] | 03-006  | Summary                                                   |               |
+| [ ] | 03-007  | Glossary:                                                 |               |
+| [ ] | 03-008  | Coding Cheatsheet: Robust Exception Handling              |               |
+| [ ] | 03-009  | Grade                                                     |              |
