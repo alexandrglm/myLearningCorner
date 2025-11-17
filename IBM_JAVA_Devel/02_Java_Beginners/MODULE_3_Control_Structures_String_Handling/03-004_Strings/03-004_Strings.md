@@ -19,6 +19,7 @@ String Methods:
 Built-in Methods:   
 -   **`toUpperCase()`** and **`toLowerCase()`** convert case
 -   **`trim()` method** removes leading and trailing spaces
+-   **`.strip() method**, since Java 11, also removes them.
 -   **`replace()` method** replaces characters or substrings
 
 
@@ -81,6 +82,7 @@ String greeting = new String("Hello, World!");
 
 -   **.toUpperCase()** / **.toLowerCase()**
 -   **.trim()**
+-   **.strip()**
 -   **.replace()**
 
 ---
@@ -99,6 +101,15 @@ int length = text.length();  // Returns 16
 
 System.out.println(length);  // Output: 16
 ```
+
+##### `.length-1' as "Last Index Of" 
+
+In Java, the last element of an array or string always has the index `length - 1`. 
+
+Therefore, when you want to **access the last element without knowing its exact position**, instead of using `.lastIndexof()'  method, the `<array>.length - 1` should be used. 
+
+It's a very common pattern in loops and data manipulation, especially when you need to traverse an array backwards or when you want to avoid `ArrayIndexOutOfBoundsException` errors.
+
 
 ---
 
@@ -172,6 +183,9 @@ It allows specifying a starting and ending index.
 The ending index is not included in the result.
 
 ![](./03-004_IMG8.png)
+
+#### Syntax
+`<String>.substring(beginIndex: x, endIndex: y)`
 
 ```java
 String text = "Java Programming";
@@ -256,6 +270,35 @@ String trimmed = text.trim();
 
 System.out.println(trimmed);  // Output: Hello World
 ```
+
+---
+
+### `.strip()`
+
+**The `strip()` method is similar to `trim()` but is more modern and flexible**.   
+
+
+-   Whilst `.trim()` only removes ASCII whitespace characters (spaces, tabs, newlines) ...
+-   ... `.strip()` removes all Unicode whitespace characters, making it more robust for international text.  
+
+Additionally, Java 11 introduced:
+
+-   **`stripLeading()`**:   removes whitespace from the beginning only
+-   **`stripTrailing()`**:  removes it from the end only
+
+```java
+String text = "  Hello World  ";
+
+String stripped = text.strip();           // Removes all leading and trailing whitespace
+
+String leadingStripped = text.stripLeading();   // Removes only leading whitespace
+
+String trailingStripped = text.stripTrailing(); // Removes only trailing whitespace
+```
+
+> `.strip()` and its variants are built-in methods available only from Java 11 onwards. For earlier versions, you must use trim().
+
+
 
 ---
 
