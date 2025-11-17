@@ -242,7 +242,7 @@
 | [X] | 03-001  | `if`, `if-else-if`, `switch` | Using Conditional Statements      | 2025-11-15    |
 | [X] | 03-002  | `for`, `while`, `do-while` | Introduction to Loops in Java       | 2025-11-15    |
 | [X] | 03-003  | Arrays, Iteration, CMD Args, `.toCharArray()p  | Lab: Array Manipulation and For Loops                    | 2025-11-17    |
-| [ ] | 03-004  |      | Working with Strings in Java                              |               |
+| [X] | 03-004  | `.length()`, `.charAt()`, `concat()`, `equals()`, `.substring()`, `split()`, `.join()`, `.toLowerCase()`, `.toUpperCase()`, `.trim()`, `.replace()` |  Working with Strings in Java  | 2025-11-17    |
 | [ ] | 03-005  |      | Lab: Working with Strings                                 |               |
 | [ ] | 03-006  |      | Using Packages and Imports                                |               |
 | [ ] | 03-007  |      | Implementing Functions and Methods                        |               |
