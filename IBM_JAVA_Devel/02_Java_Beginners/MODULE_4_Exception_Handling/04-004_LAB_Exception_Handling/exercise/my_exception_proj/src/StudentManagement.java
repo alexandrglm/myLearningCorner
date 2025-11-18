@@ -174,16 +174,18 @@ public class StudentManagement {
 
         } catch (NumberFormatException nfe) {
 
-            System.out.println(" [CHECKED -> NumberFormatExc Handling] - Age must be a numeric value!");
+            System.out.println(" [CHECKED -> NumberFormatExc Handling] - Age must be a numeric value! (an Integer!)");
 
         // Also, added  catch StudentUnderAgeException 
         } catch (StudentUnderAgeException suae) {
 
             System.out.println(suae.getMessage());
+        
+        
+        } finally {
+            
+            sc.close();
         }
-
-        sc.close();
-
     }
 
 }
