@@ -266,9 +266,9 @@
 | --- | ------- | ---- | --------------------------------------------------------- | ------------- |
 | [X] | 04-001  | Checked, Unchecked, Custom, `try`, `catch`, `finally`, `throws`, `extends` | Exceptions introduction  | 2025-11-18    |
 | [X] | 04-002  |      | Using `finally` block                  | 2025-11-18    |
-| [ ] | 04-003  |      | Using multiple `try - catch`                  |               |
-| [ ] | 04-004  |      | Lab: Exception Handling Practice                 |               |
-| [ ] | 04-005  |      | Checked and  Runtime Exceptions Compared                 |               |
+| [X] | 04-003  |      | Using multiple `try - catch`                  | 2025-11-18    |
+| [X] | 04-004  | `extends` / `throws` - `throw`, `try`, `catch` | Lab: Exception Handling Practice    | 2025-11-18    |
+| [X] | 04-005  |      | Checked and  Runtime Exceptions Compared                 | 2025-11-18    |
 | [ ] | 04-005b |      | Assesment: Handling Exception in Java                 |               |
 
 
