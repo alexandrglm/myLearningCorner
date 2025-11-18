@@ -1,6 +1,6 @@
-# 04-006    Checked / Runtime Exceptions
+# 04-005    Checked / Runtime Exceptions
 
-![](./04-006_IMG12.png)
+![](./04-005_IMG12.png)
 
 ---
 
@@ -10,8 +10,8 @@ Java exceptions are classified into two main categories:
 
 -   **Runtime exceptions**
 
-![](./04-006_IMG6.png)
-![](./04-006_IMG7.png)
+![](./04-005_IMG6.png)
+![](./04-005_IMG7.png)
 
 
 
@@ -30,7 +30,7 @@ Java exceptions are classified into two main categories:
 
 ## Checked Exceptions
 
-![](./04-006_IMG1.png)
+![](./04-005_IMG1.png)
 
 
 Checked exceptions are exceptions that are **checked at compile time**.  
@@ -41,7 +41,7 @@ If your code does not handle a checked exception, it results in a compilation er
 
 ### Characteristics
 
-![](./04-006_IMG2.png)
+![](./04-005_IMG2.png)
 
 -   The exception is typically caught using a `try-catch` block or declared in the method signature using the `throws` keyword
 
@@ -54,7 +54,7 @@ If your code does not handle a checked exception, it results in a compilation er
 
 Checked exceptions are used during:
 
-![](./04-006_IMG3.png)
+![](./04-005_IMG3.png)
 
 -   **File operations** (Reading from or writing to a file)
 -   **Database connections**  (Connecting to a database)
@@ -104,8 +104,8 @@ public class FileExample {
 
 ### Benefits of Checked Exceptions
 
-![](./04-006_IMG8.png)
-![](./04-006_IMG9.png)
+![](./04-005_IMG8.png)
+![](./04-005_IMG9.png)
 
 ####    **Compile-Time Safety**
 -   Requires developers to handle potential error scenarios at compile time  
@@ -141,7 +141,7 @@ The Java compiler does not require you to handle or declare runtime exceptions.
 
 ### Characteristics
 
-![](./04-006_IMG4.png)
+![](./04-005_IMG4.png)
 
 -   The exceptions do not need to be explicitly caught or declared
 -   The exceptions indicate programming errors such as **logic errors** or improper use of APIs
@@ -151,7 +151,7 @@ The Java compiler does not require you to handle or declare runtime exceptions.
 
 Runtime exceptions are used to display:
 
-![](./04-006_IMG5.png)
+![](./04-005_IMG5.png)
 
 -   **Arithmetic errors** (such as division by zero or overflow errors)  
 
@@ -193,8 +193,8 @@ public class ArithmeticExample {
 
 ### Benefits of Runtime Exceptions
 
-![](./04-006_IMG10.png)
-![](./04-006_IMG11.png)
+![](./04-005_IMG10.png)
+![](./04-005_IMG11.png)
 
 #### **Simplicity**
 Runtime exceptions **do not require explicit handling**, which simplifies the code.   
