@@ -269,7 +269,7 @@
 | [X] | 04-003  |      | Using multiple `try - catch`                  | 2025-11-18    |
 | [X] | 04-004  | `extends` / `throws` - `throw`, `try`, `catch` | Lab: Exception Handling Practice    | 2025-11-18    |
 | [X] | 04-005  |      | Checked and  Runtime Exceptions Compared                 | 2025-11-18    |
-| [ ] | 04-005b |      | Assesment: Handling Exception in Java                 |               |
+| [X] | 04-005b |      | Assesment: Handling Exception in Java                 | 2025-11-18    |
 
 
 |     | #       | Title                                                     |         Date |
