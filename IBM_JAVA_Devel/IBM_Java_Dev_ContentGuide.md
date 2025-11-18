@@ -274,7 +274,7 @@
 
 |     | #       | Title                                                     |         Date |
 | --- | ------- | --------------------------------------------------------- | ------------- |
-| [ ] | 05-006  | Summary                                                   |               |
-| [ ] | 05-007  | Glossary:                                                 |               |
-| [ ] | 05-008  | Coding Cheatsheet: Robust Exception Handling              |               |
-| [ ] | 06-009  | Grade                                                     |              |
+| [X] | 04-006  | Summary                                                   | 2025-11-18    |
+| [X] | 04-007  | Glossary:                                                 | 2025-11-18    |
+| [X] | 04-008  | Coding Cheatsheet: Robust Exception Handling              | 2025-11-18    |
+| [X] | 04-009  | Grade                                                     || 2025-11-18    |
