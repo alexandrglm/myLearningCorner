@@ -264,17 +264,17 @@
 
 |     | #       | Type | Title                                                     | Date          |
 | --- | ------- | ---- | --------------------------------------------------------- | ------------- |
-| [ ] | 04-001  |      | Exceptions introduction                                   |               |
-| [ ] | 04-002  |      | Using `finally` block                  |               |
+| [X] | 04-001  | Checked, Unchecked, Custom, `try`, `catch`, `finally`, `throws`, `extends` | Exceptions introduction  | 2025-11-18    |
+| [X] | 04-002  |      | Using `finally` block                  | 2025-11-18    |
 | [ ] | 04-003  |      | Using multiple `try - catch`                  |               |
 | [ ] | 04-004  |      | Lab: Exception Handling Practice                 |               |
-| [ ] | 05-005  |      | Checked and  Runtime Exceptions Compared                 |               |
-| [ ] | 05-005b |      | Assesment: Handling Exception in Java                 |               |
+| [ ] | 04-005  |      | Checked and  Runtime Exceptions Compared                 |               |
+| [ ] | 04-005b |      | Assesment: Handling Exception in Java                 |               |
 
 
 |     | #       | Title                                                     |         Date |
 | --- | ------- | --------------------------------------------------------- | ------------- |
-| [ ] | 03-006  | Summary                                                   |               |
-| [ ] | 03-007  | Glossary:                                                 |               |
-| [ ] | 03-008  | Coding Cheatsheet: Robust Exception Handling              |               |
-| [ ] | 03-009  | Grade                                                     |              |
+| [ ] | 05-006  | Summary                                                   |               |
+| [ ] | 05-007  | Glossary:                                                 |               |
+| [ ] | 05-008  | Coding Cheatsheet: Robust Exception Handling              |               |
+| [ ] | 06-009  | Grade                                                     |              |
