@@ -1,0 +1,96 @@
+@startuml
+
+package "KLASSES, IBM Java > 2 > 05-001 Grocery Store Exercise" {
+
+    class Items {
+
+        - itemName : String
+        - itemPrice : String
+        - itemQuantity : String
+
+        + Items(itemName : String, itemPrice : String, itemQuantity : String)
+
+        + getItemName() : String
+        + getItemPrice() : String
+        + getItemQuantity() : String
+        + setItemName(itemName : String) : void
+        + setItemPrice(itemPrice : String) : void
+        + setItemQuantity(itemQuantity : String) : void
+
+        + priceParser() : float
+        + quantityParser() : int
+        + {static} redondeo(itemPrice : float) : float
+    }
+
+    class Inventory {
+
+        - items : ArrayList<Item>
+
+        + Inventory()
+
+        + createItem(itemName : String, price : String, quantity : String) : void
+        + readAllInventory() : void
+        + findByName(choiceName : String) : int
+        + findByIndex(choiceIndex : int) : int
+        + deleteItem(idx : int) : void
+
+        + get(idx : int) : Item
+        + averagePrice() : float
+        + filterByPrice(maxPrice : float) : void
+
+        + hasStock(idx : int, choiceQuantity : int) : boolean
+        + reduceStock(idx : int, reduceQuantity : int) : boolean
+        + updateStock(idx : int, updateQuantity : int) : boolean
+
+        + getItems() : ArrayList<Item>
+    }
+
+    class GroceryShop {
+
+        - inventory : Inventory
+        - sc : Scanner
+
+        + GroceryShop(inventory : Inventory, sc : Scanner)
+        + buyMenu() : void
+        - finishCart(cartList : ArrayList<String>, totalBill : float) : void
+    }
+
+    class Menu {
+
+        - inventory : Inventory
+        - shop : GroceryShop
+        - sc : Scanner
+
+        + Menu(inventory : Inventory, shop : GroceryShop, sc : Scanner)
+
+        + mainMenu() : void
+        - inventoryMenu() : void
+
+        + createItem() : void
+        + readItem() : void
+        + readItems() : void
+        + updateItem() : void
+        + deleteItem() : void
+
+        + searchItem() : void
+        + filterItems() : void
+
+        + {static} prettyExit() : void
+        + {static} regexValidation(input : String) : boolean
+    }
+
+
+    class Main {
+
+        + main(args : String[] args) : void
+
+    }
+
+    Inventory "1" *-- "MANY" Items
+    GroceryShop --> Inventory
+    Menu --> Inventory
+    Menu --> GroceryShop
+
+}
+
+@enduml
