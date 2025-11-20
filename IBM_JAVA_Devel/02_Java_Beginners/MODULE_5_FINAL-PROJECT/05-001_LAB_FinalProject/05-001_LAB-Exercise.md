@@ -1,4 +1,69 @@
 # **05-001 Final Project Overview**
+---
+
+## Classes
+
+1. `Items`
+2. `Inventory`
+3. `GroceryShop`
+4. `Menu`
+5. `Main`
+
+---
+
+## Implementation Versions
+
+There are **two implementations** for managing the inventory:
+
+### 1.  `ArrayList<>` + Getters/Setters Approach
+
+![](./01_Using_ArrayList/05-001_klasses_all.png)
+
+   -    Each item is represented as an `Items` object stored in an `ArrayList`.  
+   -    Standard OOP approach with GETTERs (`getItemName()`, `getItemPrice()`, `getItemQuantity()`), and their corresponding setters.  
+   -    Easy to extend and maintain, high flexibility, but slightly heavier in memory.
+
+---
+
+### 2.  Data Matrix (`String[][]`)  Approach
+
+![](./02_using_String_data_matrix/05-002_klasses_DataMatrix.png)
+
+
+   -    Inventory is stored as a fixed-size 2D array (`items[25][3]`).  
+   -    Eliminates `Items` objects and most getters/setters, but ...  
+   -    ... Accessing and updating items is performed through `Inventory` methods such as `getName(i)`, `updatePrice(i, newPrice)`, etc.  
+   -    Simpler in structure, but less flexible.
+
+---
+
+*2025, November, 20*
+
+---
+
+## Requirements
+
+| Task | Implementation |
+| ---- | -------------- |
+| Task 1: Store item names | `Inventory.items[][]` or `ArrayList<Items>` |
+| Task 2: Store item prices | `Items.priceParser()`, `Inventory.items[][]`, `redondeo()` |
+| Task 3: Create and import a `Scanner` object | `Main`, `Menu`, `GroceryShop` |
+| Task 4: Infinite menu loops | `Menu.mainMenu()`, `Menu.inventoryMenu()`, `GroceryShop.buyMenu()` |
+| Task 5: Inner loop for purchases | `GroceryShop.buyMenu()` |
+| Task 6: Get user input for item name | `Inventory.findByName()`, `Inventory.findByIndex()` |
+| Task 7: Get item price by index | `Inventory.get()`, `Inventory.getItems()` |
+| Task 8: Get item quantity and calculate total | `Inventory.get()`, `Inventory.getItems()`, `GroceryShop.buyMenu()` |
+| Task 9: Print total price | `GroceryShop.buyMenu()` |
+| Task 10: Implement item search functionality | `Inventory.findByName()`, `Inventory.findByIndex()` |
+| Task 11: Calculate average price | `Inventory.averagePrice()` |
+| Task 12: Filter items below a certain price | `Inventory.filterByPrice()` |
+| Task 13: Apply discounts and calculate final bill | `GroceryShop.finishCart()` |
+| Task 14: Inventory management (create/update/delete/reduce stock) | `Inventory` |
+
+
+---
+
+# Assesment Details
 
 ## **Learning Objectives**
 

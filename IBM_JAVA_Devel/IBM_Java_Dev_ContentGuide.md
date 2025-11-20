@@ -277,4 +277,22 @@
 | [X] | 04-006  | Summary                                                   | 2025-11-18    |
 | [X] | 04-007  | Glossary:                                                 | 2025-11-18    |
 | [X] | 04-008  | Coding Cheatsheet: Robust Exception Handling              | 2025-11-18    |
-| [X] | 04-009  | Grade                                                     || 2025-11-18    |
+| [X] | 04-009  | Grade                                                     | 2025-11-18    |
+
+---
+
+### MODULE 5:   Final Project
+
+|     | #       | Type | Title                                                     | Date          |
+| --- | ------- | ---- | --------------------------------------------------------- | ------------- |
+| [X] | 05-001  | Lab Grading | Final Project Overview  | 2025-11-20    |
+| [ ] | 05-002  | Lab grading     | FInal Project            | |
+| [ ] | 05-003  | LAb Assesment     | Final Project Assesment                  |  |
+| [ ] | 05-004  | Grading | Final   |    |
+
+|     | #       | Type | Title                                                     | Date          |
+| --- | ------- | ---- | --------------------------------------------------------- | ------------- |
+| [ ] | 05-005  |      | Course Wrap-up                 |    |
+| [ ] | 05-006 |      | Course 2 Glossary                 |  |
+| [ ] | 05-007 |      | Course 2 Cheatsheet                 |     |
+
