@@ -1,26 +1,23 @@
 # 02-004 Operators
 
-![](./02-004_IMG8.png)
+![](../../../../.gitbook/assets/02-004_IMG8.png)
 
--   **Operators are special symbols** that tell the Java compiler to perform specific operations
+* **Operators are special symbols** that tell the Java compiler to perform specific operations
+* **Arithmetic operators** are used for basic mathematical operations: `+`, `-`, `*`, `/`, `%`
+* **Relational operators** are used to compare values and return boolean results: `==`, `!=`, `>`, `<`, `>=`, `<=`
+* **Logical operators** are used to combine boolean expressions: `&&`, `||`, `!`
 
--   **Arithmetic operators** are used for basic mathematical operations: `+`, `-`, `*`, `/`, `%`
+***
 
--   **Relational operators** are used to compare values and return boolean results: `==`, `!=`, `>`, `<`, `>=`, `<=`
+![](<../../../../.gitbook/assets/02-004_IMG1 (1).png>)
 
--   **Logical operators** are used to combine boolean expressions: `&&`, `||`, `!`
+**Operators are special symbols that perform operations on variables and values.**
 
----
-
-![](./02-004_IMG1.png)
-
-**Operators are special symbols that perform operations on variables and values.**  
-
-Tells the Java compiler to perform specific mathematical or logical manipulations.   
+Tells the Java compiler to perform specific mathematical or logical manipulations.
 
 Operators can work with variables, constants, and expressions to produce the expected result.
 
-##### **Example**
+**Example**
 
 ```java
 int a = 10;
@@ -28,24 +25,23 @@ int b = 5;
 int sum = a + b;  // The plus operator adds the values of a and b
 ```
 
----
+***
 
 ## Arithmetic Operators
 
 Used to perform basic arithmetic operations.
 
-![](./02-004_IMG2.png)
+![](<../../../../.gitbook/assets/02-004_IMG2 (1).png>)
 
-| Operator | Symbol | Description | Example |
-|----------|--------|-------------|---------|
-| Addition | `+` | Adds two values | `a + b` |
-| Subtraction | `-` | Subtracts one value from another | `a - b` |
-| Multiplication | `*` | Multiplies two values | `a * b` |
-| Division | `/` | Divides one value by another | `a / b` |
-| Modulus | `%` | Gives the remainder when one value is divided by another | `a % b` |
+| Operator       | Symbol | Description                                              | Example |
+| -------------- | ------ | -------------------------------------------------------- | ------- |
+| Addition       | `+`    | Adds two values                                          | `a + b` |
+| Subtraction    | `-`    | Subtracts one value from another                         | `a - b` |
+| Multiplication | `*`    | Multiplies two values                                    | `a * b` |
+| Division       | `/`    | Divides one value by another                             | `a / b` |
+| Modulus        | `%`    | Gives the remainder when one value is divided by another | `a % b` |
 
-
-![](./02-004_IMG3.png)
+![](<../../../../.gitbook/assets/02-004_IMG3 (1).png>)
 
 ```java
 int a = 10;
@@ -58,27 +54,26 @@ System.out.println("Division: " + (a / b));       // Output: 2
 System.out.println("Modulus: " + (a % b));        // Output: 0
 ```
 
----
+***
 
 ## Relational Operators
 
-![](./02-004_IMG4.png)
+![](<../../../../.gitbook/assets/02-004_IMG4 (1).png>)
 
-Used to **compare two values**.   
+Used to **compare two values**.
 
 They **return a boolean result:** `true` or `false`
 
-| Operator | Symbol | Description | Example |
-|----------|--------|-------------|---------|
-| Equal to | `==` | Checks if two values are the same | `a == b` |
-| Not equal to | `!=` | Checks if two values are different | `a != b` |
-| Greater than | `>` | Checks if one value is larger than the other | `a > b` |
-| Less than | `<` | Checks if one value is smaller than the other | `a < b` |
-| Greater than or equal to | `>=` | Checks if one value is larger than or equal to the other | `a >= b` |
-| Less than or equal to | `<=` | Checks if one value is smaller than or equal to the other | `a <= b` |
+| Operator                 | Symbol | Description                                               | Example  |
+| ------------------------ | ------ | --------------------------------------------------------- | -------- |
+| Equal to                 | `==`   | Checks if two values are the same                         | `a == b` |
+| Not equal to             | `!=`   | Checks if two values are different                        | `a != b` |
+| Greater than             | `>`    | Checks if one value is larger than the other              | `a > b`  |
+| Less than                | `<`    | Checks if one value is smaller than the other             | `a < b`  |
+| Greater than or equal to | `>=`   | Checks if one value is larger than or equal to the other  | `a >= b` |
+| Less than or equal to    | `<=`   | Checks if one value is smaller than or equal to the other | `a <= b` |
 
-
-![](./02-004_IMG5.png)
+![](<../../../../.gitbook/assets/02-004_IMG5 (1).png>)
 
 ```java
 int a = 10;
@@ -90,21 +85,21 @@ System.out.println("Is a greater than b? " + (a > b));        // Output: true
 System.out.println("Is a less than or equal to b? " + (a <= b)); // Output: false
 ```
 
----
+***
 
 ## Logical Operators
 
-![](./02-004_IMG6.png)
+![](<../../../../.gitbook/assets/02-004_IMG6 (1).png>)
 
 Used to **combine multiple boolean expressions**.
 
-| Operator | Symbol | Description | Example |
-|----------|--------|-------------|---------|
-| Logical AND | `&&` | Returns true only if both conditions are true | `a > b && b < c` |
-| Logical OR | `\|\|` | Returns true if at least one condition is true | `a > b \|\| b < c` |
-| Logical NOT | `!` | Reverses a condition's result | `!( a > b)` |
+| Operator    | Symbol | Description                                    | Example            |
+| ----------- | ------ | ---------------------------------------------- | ------------------ |
+| Logical AND | `&&`   | Returns true only if both conditions are true  | `a > b && b < c`   |
+| Logical OR  | `\|\|` | Returns true if at least one condition is true | `a > b \|\| b < c` |
+| Logical NOT | `!`    | Reverses a condition's result                  | `!( a > b)`        |
 
-![](./02-004_IMG7.png)
+![](<../../../../.gitbook/assets/02-004_IMG7 (1).png>)
 
 ```java
 boolean x = true;
@@ -115,7 +110,7 @@ System.out.println("x || y: " + (x || y));  // Output: true (at least one is tru
 System.out.println("!x: " + (!x));          // Output: false (reverses true to false)
 ```
 
----
+***
 
 ## Lesson Speech
 

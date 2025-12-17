@@ -21,16 +21,16 @@ for char in text:
 
 #### How It Works:
 
-- The loop assigns each character in the string to `char`.
-- The `print` function prints each character on a separate line.
+* The loop assigns each character in the string to `char`.
+* The `print` function prints each character on a separate line.
 
----
+***
 
 ### Practical Use Cases
 
-- Counting specific characters in a string
-- Searching for vowels or consonants
-- Transforming characters (e.g., converting to uppercase)
+* Counting specific characters in a string
+* Searching for vowels or consonants
+* Transforming characters (e.g., converting to uppercase)
 
 #### Example: Convert Each Character to Uppercase
 
@@ -49,13 +49,13 @@ for char in text:
 print(f"The letter 'a' appears {count_a} times.")
 ```
 
-****
+***
 
 ## Video lesson Speech
 
 This is going to be a quick guide where we walk through how we can extend our knowledge of looping in python and we see that the for in loop can also be used with strings.
 
-****
+***
 
 So if I have a string that contains a portion of the alphabet. I could say alphabet and inside of that put abcdef.
 
@@ -63,7 +63,7 @@ So if I have a string that contains a portion of the alphabet. I could say alpha
 alphabet = 'abcdef'
 ```
 
-If I want to loop through each one of those items a 4 in the loop allows me to access them just like they were in a collection because if you think about it a string is really just a collection of characters so it's almost like you can think about a string is a list in a sense. 
+If I want to loop through each one of those items a 4 in the loop allows me to access them just like they were in a collection because if you think about it a string is really just a collection of characters so it's almost like you can think about a string is a list in a sense.
 
 When it comes to iterating over it so I could think of the first element being the character a, the second one being the Character b and so on and so forth and so with that in mind it means that we can do something like:
 
@@ -79,9 +79,9 @@ print(letter)
 
 Finally, if I run this you can see that it prints out each one of the elements exactly like how we walk through with the data collections.
 
-![large](./03-083_IMG1.png)
+![large](../../../../../../../../.gitbook/assets/03-083_IMG1.png)
 
-****
+***
 
 ## Code
 
@@ -92,12 +92,12 @@ for letter in alphabet:
  print(letter)
 ```
 
-****
+***
 
 ## Code Exercise
 
-Prompt: Create a variable called "name" and assign it your name as a string.   
-Write a for in loop that iterates through the string and prints each character.  
+Prompt: Create a variable called "name" and assign it your name as a string.\
+Write a for in loop that iterates through the string and prints each character.
 
 ```python
 def loop_over_string():

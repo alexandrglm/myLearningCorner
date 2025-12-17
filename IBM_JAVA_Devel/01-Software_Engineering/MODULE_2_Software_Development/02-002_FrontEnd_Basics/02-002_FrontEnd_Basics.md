@@ -1,10 +1,8 @@
 # 02-002: Front-End Basics
 
-
-
 ### Front-End Developer Role
 
-![](./02-002_IMG5.png)
+![](<../../../../.gitbook/assets/02-002_IMG5 (1).png>)
 
 Front-end developers create website structures, apply styling and appeal, ensure multi-browser and multi-device compatibility, and continuously upgrade technologies as they evolve.
 
@@ -19,12 +17,12 @@ Front-end developers create website structures, apply styling and appeal, ensure
 ### Modern Stylesheet Languages
 
 #### **SASS** (Syntactically Awesome Style Sheets)
-An extension of CSS supporting variables, nested rules, and inline imports. Enables faster, easier stylesheet creation whilst maintaining CSS compatibility.
 
+An extension of CSS supporting variables, nested rules, and inline imports. Enables faster, easier stylesheet creation whilst maintaining CSS compatibility.
 
 #### **LESS** (Leaner Style Sheets)
 
-![](./02-002_IMG1.png)
+![](<../../../../.gitbook/assets/02-002_IMG1 (1).png>)
 
 Enhances CSS with additional styles and functions, remaining backwards compatible. LESS.js converts LESS styles to CSS.
 
@@ -34,32 +32,23 @@ Enhances CSS with additional styles and functions, remaining backwards compatibl
 
 **Responsive design** automatically resizes to the accessed device, maintaining functionality across all screen dimensions.
 
-
-
----
+***
 
 ### JavaScript Frameworks
 
 #### **Angular Framework** (Google)
-![](./02-002_IMG2.png)
-Open-source framework rendering HTML pages quickly and efficiently with built-in routing and form validation tools.
 
-
+![](<../../../../.gitbook/assets/02-002_IMG2 (1).png>) Open-source framework rendering HTML pages quickly and efficiently with built-in routing and form validation tools.
 
 #### **React.js** (Meta)
-![](./02-002_IMG3.png)
-A JavaScript library building and rendering web page components. Not a complete framework suite; routing requires third-party tools. Specialises in component manipulation and page composition.
 
-
+![](<../../../../.gitbook/assets/02-002_IMG3 (1).png>) A JavaScript library building and rendering web page components. Not a complete framework suite; routing requires third-party tools. Specialises in component manipulation and page composition.
 
 #### **Vue.js** (Community-maintained)
-![](./02-002_IMG4.png)
-Focuses on the Vue layer (user interface, buttons, visual components). Flexible, scalable, integrates well with other frameworks, and functions as both library and framework.
 
+![](<../../../../.gitbook/assets/02-002_IMG4 (1).png>) Focuses on the Vue layer (user interface, buttons, visual components). Flexible, scalable, integrates well with other frameworks, and functions as both library and framework.
 
-
-
----
+***
 
 ## Video Lesson
 

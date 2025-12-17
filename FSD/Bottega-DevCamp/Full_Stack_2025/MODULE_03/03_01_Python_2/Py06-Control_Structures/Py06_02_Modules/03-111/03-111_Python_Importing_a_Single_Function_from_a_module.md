@@ -13,7 +13,7 @@ Fortunately, Python allows us to **import a single function directly**, making o
 
 🔗 **Reference:** [Python Importing](https://docs.python.org/3/reference/import.html)
 
----
+***
 
 ## 🔹 The Standard Import Approach
 
@@ -28,10 +28,10 @@ print(math.sqrt(4))  # Must use `math.sqrt`
 
 📌 **What Happens?**
 
-- The entire `math` module is imported.
-- To access `sqrt()`, we must use `math.sqrt()`.
+* The entire `math` module is imported.
+* To access `sqrt()`, we must use `math.sqrt()`.
 
----
+***
 
 ## 🔹 Importing a Single Function
 
@@ -46,14 +46,14 @@ print(sqrt(4))  # No need for `math.sqrt`
 
 📌 **What Changes?**
 
-- Only `sqrt()` is imported, making it **directly accessible**.
-- We no longer need to prefix it with `math.`.
+* Only `sqrt()` is imported, making it **directly accessible**.
+* We no longer need to prefix it with `math.`.
 
 🔹 **Key Concept:** Importing a specific function keeps code **cleaner and more readable**, especially when dealing with large modules.
 
 🔗 **Reference:** [Python `math` Module](https://docs.python.org/3/library/math.html)
 
----
+***
 
 ## 🔹 Applying This to Custom Modules
 
@@ -86,31 +86,31 @@ print(greeting("Tiffany", "Hudgens"))
 
 📌 **What Changes?**
 
-- Only `greeting()` is imported, so we **don’t need `helper.` anymore**.
-- The code is **shorter and more readable**.
+* Only `greeting()` is imported, so we **don’t need `helper.` anymore**.
+* The code is **shorter and more readable**.
 
 🔗 **Reference:** [Python Modules](https://docs.python.org/3/tutorial/modules.html)
 
----
+***
 
 ## 📌 Summary
 
-- Importing an entire module requires **module.function()** syntax.
-- We can import **a single function** to make code **cleaner and more explicit**.
-- This method works for both **built-in and custom modules**.
-- Use `from module import function` when you only need **one specific function**.
+* Importing an entire module requires **module.function()** syntax.
+* We can import **a single function** to make code **cleaner and more explicit**.
+* This method works for both **built-in and custom modules**.
+* Use `from module import function` when you only need **one specific function**.
 
-****
+***
 
 ## Video lesson Speech
 
 So far in this section, whenever we've imported a module, we've had to explicitly define that module and call it whenever we wanted access to the functions.
 
-****
+***
 
 For example, here we imported the `helper` module, and when we wanted access to the `greeting` function inside of that module, we had to call `helper.greeting`.
 
-![large](./03-111_IMG1.png)
+![large](../../../../../../../../.gitbook/assets/03-111_IMG1.png)
 
 If I open up the REPL right here and go back to our `math` example just to review, if I say `import math` and then I want the square root, I have to say `math.sqrt` and then pass in the value. That's how I can have access to the functions inside of that module.
 
@@ -128,11 +128,11 @@ So, it's only going to bring in that one `greeting` function.
 
 Now, I can get rid of the `helper` call, save the file, and if I run `python main.py`, you can see that we have identical behavior, but now our file is much easier to read.
 
-We don't have that ugly `helper.greeting` type of syntax. So, whenever you are bringing in some type of module 
-and you know that you only want a single function from it, you can use 
+We don't have that ugly `helper.greeting` type of syntax. So, whenever you are bringing in some type of module\
+and you know that you only want a single function from it, you can use\
 this syntax, and it is a little bit easier to work with.
 
-****
+***
 
 ## Code
 

@@ -1,114 +1,112 @@
-# 05-009     Software Engineering Code of Ethics
+# 05-009 Software Engineering Code of Ethics
 
-![](./05-009_IMG11.png)
+![](../../../../.gitbook/assets/05-009_IMG11.png)
 
----
+***
 
-The **Joint Task Force on Software Engineering Ethics and Professional Practices** developed a Code of Ethics outlining goals and standards for software engineers.  
+The **Joint Task Force on Software Engineering Ethics and Professional Practices** developed a Code of Ethics outlining goals and standards for software engineers.
 
 The task force, formed by the **Institute of Electrical and Electronics Engineers Computer Society (IEEE-CS)** and the **Association for Computing Machinery (ACM)**, recognised computing's prominence in global commerce, government, and society.
 
-The Code of Ethics holds software engineers accountable, maintaining the profession's status as beneficial and respected.   
+The Code of Ethics holds software engineers accountable, maintaining the profession's status as beneficial and respected.
 
 Eight principles pertain to software specification, analysis, design, development, testing, and maintenance, dedicated to serving public interest.
 
 **Intended audience:** Engineers, mentors, instructors, managers, students, and policymakers.
 
----
+***
 
 ### Eight Core Principles
 
-![](./05-009_IMG1.png)
+![](../../../../.gitbook/assets/05-009_IMG1.png)
 
----
+***
 
 #### 1. Public
 
-![](./05-009_IMG2.png)
+![](../../../../.gitbook/assets/05-009_IMG2.png)
 
 Listed first, reflecting prioritisation of public interest above all other considerations.
 
 **Primary focus:** Positively affecting public good.
 
-**Responsibilities:**   Accepting responsibility for work regarding safety, fairness, accessibility, and integrity.
+**Responsibilities:** Accepting responsibility for work regarding safety, fairness, accessibility, and integrity.
 
-
-
----
+***
 
 #### 2. Client or Employer
 
-![](./05-009_IMG3.png)
+![](../../../../.gitbook/assets/05-009_IMG3.png)
 
-**Responsibilities:**   Acting in clients' and employers' best interests; honesty regarding unethical actions (plagiarism, illegal activities); seeking consent where necessary; honouring confidentiality.
+**Responsibilities:** Acting in clients' and employers' best interests; honesty regarding unethical actions (plagiarism, illegal activities); seeking consent where necessary; honouring confidentiality.
 
----
+***
 
 #### 3. Product
 
-![](./05-009_IMG4.png)
+![](../../../../.gitbook/assets/05-009_IMG4.png)
 
-**Focused on:**     Seeking quality whilst balancing cost and timelines in software under production.
+**Focused on:** Seeking quality whilst balancing cost and timelines in software under production.
 
----
+***
 
 #### 4. Judgement
 
-![](./05-009_IMG5.png)
+![](../../../../.gitbook/assets/05-009_IMG5.png)
 
-**Responsibilities:**   Acting with integrity and independence; maintaining **objectivity and honesty** in software and documentation work; avoiding inappropriate financial activities (bribery, double billing); declining duties creating conflicts of interest.
+**Responsibilities:** Acting with integrity and independence; maintaining **objectivity and honesty** in software and documentation work; avoiding inappropriate financial activities (bribery, double billing); declining duties creating conflicts of interest.
 
----
+***
 
 #### 5. Management
 
-![](./05-009_IMG6.png)
+![](../../../../.gitbook/assets/05-009_IMG6.png)
 
-**Scope:**  Management behaviour consistent with all principles.
+**Scope:** Management behaviour consistent with all principles.
 
-**Management Responsibilities:**    Minimising risk; employing security procedures; ensuring realistic staff expectations; providing fair compensation; procuring intellectual property rights appropriately.
+**Management Responsibilities:** Minimising risk; employing security procedures; ensuring realistic staff expectations; providing fair compensation; procuring intellectual property rights appropriately.
 
----
+***
 
 #### 6. Profession
 
-![](./05-009_IMG7.png)
+![](../../../../.gitbook/assets/05-009_IMG7.png)
 
-**Focused on:**     Protecting profession reputation through integrity.
+**Focused on:** Protecting profession reputation through integrity.
 
-**Responsibilities:**   Acting with integrity; not elevating oneself at others' expense; notifying managers, employers, and clients of intention to comply with code; expressing concern over code violations.
+**Responsibilities:** Acting with integrity; not elevating oneself at others' expense; notifying managers, employers, and clients of intention to comply with code; expressing concern over code violations.
 
----
+***
 
 #### 7. Colleagues
 
-![](./05-009_IMG8.png)
+![](../../../../.gitbook/assets/05-009_IMG8.png)
 
-**Focused on:**     Treating peers with respect and fairness.
+**Focused on:** Treating peers with respect and fairness.
 
-**Responsibilities:**   Encouraging colleague compliance with code; not claiming credit for others' work; collaborative professional conduct.
+**Responsibilities:** Encouraging colleague compliance with code; not claiming credit for others' work; collaborative professional conduct.
 
----
+***
 
 #### 8. Self
 
-![](./05-009_IMG9.png)
+![](../../../../.gitbook/assets/05-009_IMG9.png)
 
-**Fosuced on:**     Professional development and personal responsibility.
+**Fosuced on:** Professional development and personal responsibility.
 
-**Responsibilities:**   Pursuing lifelong learning and professional development; endeavouring to create quality software; conducting oneself professionally and with integrity.
+**Responsibilities:** Pursuing lifelong learning and professional development; endeavouring to create quality software; conducting oneself professionally and with integrity.
 
----
+***
 
 ### Application and Limitations
 
-![](./05-009_IMG10.png)
+![](../../../../.gitbook/assets/05-009_IMG10.png)
 
-The Code of Ethics supplements but does not replace conscientious decision-making and common sense.   
+The Code of Ethics supplements but does not replace conscientious decision-making and common sense.
 
 Application requires individual discretion and wisdom; engineers must determine when and where principles apply to specific situations.
 
----
+***
 
 ## Lesson Speech
 

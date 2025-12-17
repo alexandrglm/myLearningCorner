@@ -1,31 +1,32 @@
-# 04-002 Using `finally` Blocks
+# 04-002 Using finally Blocks
 
-![](./04-002_IMG10.png)
+![](../../../../.gitbook/assets/04-002_IMG10.png)
 
--   **The `finally` block** contains code that will execute regardless of whether an exception occurred or not
+* **The `finally` block** contains code that will execute regardless of whether an exception occurred or not
+* **`finally` always executes** after the `try` and `catch` blocks, unless the program crashes or is forcibly terminated
+* **Correct usage** involves using `finally` for cleanup code and releasing resources (files, database connections, etc.)
+* **Incorrect usage** includes:
+* ```
+  Not handling exceptions within the `finally` block
+  ```
+* ```
+  Using `return` statements in `finally`, which override previous returns
+  ```
+* ```
+  Assuming the `finally` block won't execute after an exception
+  ```
+* **Resource management** is the primary purpose of the `finally` block, ensuring resources are always properly released
 
--   **`finally` always executes** after the `try` and `catch` blocks, unless the program crashes or is forcibly terminated
-
--   **Correct usage** involves using `finally` for cleanup code and releasing resources (files, database connections, etc.)
-
--   **Incorrect usage** includes:
-  -     Not handling exceptions within the `finally` block
-  -     Using `return` statements in `finally`, which override previous returns
-  -     Assuming the `finally` block won't execute after an exception
-  
--   **Resource management** is the primary purpose of the `finally` block, ensuring resources are always properly released
-
-
----
+***
 
 ## What is a `finally` Block?
 
-**The `finally` block is a crucial part of exception handling in Java.**  
+**The `finally` block is a crucial part of exception handling in Java.**\
 Contains code that will execute regardless of whether an exception occurred or not.
 
 ### Structure of Exception Handling
 
-![](./04-002_IMG1.png)
+![](<../../../../.gitbook/assets/04-002_IMG1 (2).png>)
 
 ```java
 try {
@@ -42,22 +43,19 @@ try {
 }
 ```
 
----
+***
 
 ## Key Characteristics of `finally` Blocks
 
-![](./04-002_IMG2.png)
+![](<../../../../.gitbook/assets/04-002_IMG2 (2).png>)
 
 > **The code within the `finally` block always runs after the `try` and `catch` blocks regardless of whether an exception was thrown or caught.**
 
 > **The `finally` block is commonly used for resource management such as closing files or releasing resources, ensuring that these operations are performed no matter what happens in the try-catch structure.**
 
-
-
 ### `finally` Block Structure
 
-
-![](./04-002_IMG3.png)
+![](../../../../.gitbook/assets/04-002_IMG3.png)
 
 ```java
 try {
@@ -75,10 +73,9 @@ try {
     }
 ```
 
+![](<../../../../.gitbook/assets/04-002_IMG4 (1).png>)
 
-![](./04-002_IMG4.png)
-
----
+***
 
 ## Correct Usage of `finally` Blocks
 
@@ -90,13 +87,9 @@ The **primary purpose** of the `finally` block is ...
 
 > **... preventing, in instance, resource leaks.**
 
+### Example 1: Closing Files
 
-
-### Example 1:  Closing Files
-
-
-![](./04-002_IMG5.png)
-
+![](<../../../../.gitbook/assets/04-002_IMG5 (1).png>)
 
 ```java
 try {
@@ -120,11 +113,11 @@ try {
 }
 ```
 
----
+***
 
-### Example 2:  Closing Database Connections
+### Example 2: Closing Database Connections
 
-![](./04-002_IMG6.png)
+![](<../../../../.gitbook/assets/04-002_IMG6 (1).png>)
 
 **The `finally` block ensures the database connection is properly closed, preventing potential memory leaks or locking issues.**
 
@@ -149,8 +142,7 @@ try {
 }
 ```
 
----
-
+***
 
 ## Incorrect Usage of `finally` Blocks
 
@@ -158,8 +150,7 @@ try {
 
 **If an exception occurs in the `finally` block, it may suppress exceptions thrown in the `try` or `catch` blocks.**
 
-
-![](./04-002_IMG7.png)
+![](<../../../../.gitbook/assets/04-002_IMG7 (1).png>)
 
 ```java
 try {
@@ -180,15 +171,13 @@ try {
 
 **In this case, if an exception occurs in the `finally` block, it can prevent the original exception from being handled properly, making debugging difficult.**
 
----
+***
 
-### Mistake 2:  Using `return` Statements in `finally`
-
+### Mistake 2: Using `return` Statements in `finally`
 
 **Using a `return` statement inside a `finally` block can lead to unexpected behaviour as it overrides any return statements from the `try` or `catch` blocks.**
 
-
-![](./04-002_IMG8.png)
+![](<../../../../.gitbook/assets/04-002_IMG8 (1).png>)
 
 ```java
 public static int testMEthod() {
@@ -209,15 +198,16 @@ public static int testMEthod() {
 }
 
 ```
+
 Even though there are returns in both the `try` and `catch` blocks, the `finally` block's `return` statement takes precedence, leading to the output being always 3. This can lead to unexpected outcomes and should be avoided.
 
----
+***
 
-### Mistake 3:  Assuming `finally` Won't Execute After an Exception
+### Mistake 3: Assuming `finally` Won't Execute After an Exception
 
 **A common misconception is that if an exception occurs, the `finally` block will not execute. This is incorrect.**
 
-![](./04-002_IMG9.png)
+![](<../../../../.gitbook/assets/04-002_IMG9 (1).png>)
 
 **The `finally` block will always execute unless the program crashes or is forcibly terminated.**
 
@@ -236,9 +226,7 @@ try {
 
 **Without a `finally` block, there's no guaranteed cleanup such as closing resources, which can lead to resource leaks.**
 
-
-
----
+***
 
 ## Lesson Speech
 

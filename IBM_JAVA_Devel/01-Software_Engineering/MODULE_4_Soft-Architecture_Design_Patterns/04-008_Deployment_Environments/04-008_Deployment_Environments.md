@@ -1,93 +1,99 @@
 # 04-008 Application Deployment Environments
 
-![](./04-008_IMG6.png)
+![](../../../../.gitbook/assets/04-008_IMG6.png)
 
 ### Application Environment Overview
 
-![](./04-008_IMG1.png)
+![](<../../../../.gitbook/assets/04-008_IMG1 (1).png>)
 
 An **application environment** is the combination of hardware and software resources required to run an application, comprising:
 
--   Application code and/or binary executables for components or modules
--   Software stack (modules, libraries, dependencies)
--   Third-party applications and middleware
--   Operating system, networking components, and infrastructure
--   Physical or virtual hardware (computing, memory, storage resources)
+* Application code and/or binary executables for components or modules
+* Software stack (modules, libraries, dependencies)
+* Third-party applications and middleware
+* Operating system, networking components, and infrastructure
+* Physical or virtual hardware (computing, memory, storage resources)
 
----
+***
 
 ### Pre-Production Environments
 
-![](./04-008_IMG2.png)
+![](<../../../../.gitbook/assets/04-008_IMG2 (1).png>)
 
-**Pre-production environments** are platforms on which applications reside in various forms as they prepare for production release.  
+**Pre-production environments** are platforms on which applications reside in various forms as they prepare for production release.
 
 Common pre-production environments include:
 
--   **Development Environment:** The platform where application code is actively developed, often the developer's workstation. Developers build and test code locally or in a shared development server.
+* **Development Environment:** The platform where application code is actively developed, often the developer's workstation. Developers build and test code locally or in a shared development server.
+* **QA Environment (Testing):** Allows the quality assurance team to test application components systematically, identifying bugs and validating functionality before production release.
+* **Staging Environment:** Replicates the production environment as closely as possible without serving general users. This environment enables final testing under production-like conditions, identifying environment-specific issues.
 
--   **QA Environment (Testing):** Allows the quality assurance team to test application components systematically, identifying bugs and validating functionality before production release.
-
--   **Staging Environment:** Replicates the production environment as closely as possible without serving general users. This environment enables final testing under production-like conditions, identifying environment-specific issues.
-
----
+***
 
 ### Production Environment
 
-![](./04-008_IMG3.png)
+![](../../../../.gitbook/assets/04-008_IMG3.png)
 
 The **production environment**, often called "production," includes the entire solution stack (hardware and software) on which the live application operates, serving all end-users. Unlike pre-production environments, production must account for:
 
--   **Application load:** High concurrent user volumes (thousands or millions for enterprise applications)
-
--   **Non-functional requirements:**
-  -     Security
-  -     Reliability
-  -     Scalability
-  -     Performance
+* **Application load:** High concurrent user volumes (thousands or millions for enterprise applications)
+* **Non-functional requirements:**
+* ```
+  Security
+  ```
+* ```
+  Reliability
+  ```
+* ```
+  Scalability
+  ```
+* ```
+  Performance
+  ```
 
 Production environments are significantly more complex and robust than pre-production alternatives due to these additional considerations.
 
----
+***
 
 ### Deployment Options
 
 #### On-Premises Deployment
 
-![](./04-008_IMG4.png)
+![](../../../../.gitbook/assets/04-008_IMG4.png)
 
 The system and infrastructure reside in-house within the organisation's physical location, typically behind a **firewall** (which prevents unauthorised access to or from private networks).
 
 **Characteristics:**
--   Organisation retains full control and ownership
--   Organisation responsible for system, hardware, infrastructure, and maintenance
--   Greater security and control possible
--   Typically higher cost than cloud deployment
 
----
+* Organisation retains full control and ownership
+* Organisation responsible for system, hardware, infrastructure, and maintenance
+* Greater security and control possible
+* Typically higher cost than cloud deployment
+
+***
 
 #### Cloud Deployment Models
 
-![](./04-008_IMG5.png)
+![](../../../../.gitbook/assets/04-008_IMG5.png)
 
 #### **Public Cloud**
+
 Leverages cloud infrastructure over the open internet on hardware owned by cloud providers. Hardware and services are shared with other companies, offering maximum scalability and cost-effectiveness.
 
-*    **Public cloud providers:**  
-    Amazon Web Services (AWS), Microsoft Azure, Google Cloud Platform, IBM Cloud,...
+* **Public cloud providers:**\
+  Amazon Web Services (AWS), Microsoft Azure, Google Cloud Platform, IBM Cloud,...
 
+#### **Private Cloud**
 
-#### **Private Cloud** 
 Cloud infrastructure provisioned for exclusive use by a single organisation. Infrastructure may be on-premises or owned, managed, and operated by a service provider (e.g., AWS private cloud).
-
 
 **Advantages:** Increased security, full customisation flexibility.
 
-
 #### **Hybrid Cloud**
+
 A seamless combination of public and private cloud infrastructures, optimising advantages of both models regarding cost, security, scalability, and flexibility.
 
----
+***
 
 ## Lesson Speech
 

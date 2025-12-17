@@ -1,10 +1,10 @@
-# MODULE 01 - 016 + 017:  SCSS Task 1 - FlexBox Hater
+# MODULE 01 - 016 + 017: SCSS Task 1 - FlexBox Hater
 
-This is a real use where conditionals and mixins makes the great difference when coding.  
-Try the challenge using CodePen, or your HTML/SCSS favourite IDE.
-[CodePen Try](https://codepen.io/Alexandr-Gomez/pen/EaYdQeV)
+This is a real use where conditionals and mixins makes the great difference when coding.\
+Try the challenge using CodePen, or your HTML/SCSS favourite IDE.[CodePen Try](https://codepen.io/Alexandr-Gomez/pen/EaYdQeV)
 
-## HTML Project Starter Code 
+## HTML Project Starter Code
+
 ```html
 <div class='container'>
   <div class='item'>
@@ -50,7 +50,9 @@ Try the challenge using CodePen, or your HTML/SCSS favourite IDE.
   </div>
 </div>
 ```
-## SCSS Project Starter Code 
+
+## SCSS Project Starter Code
+
 ```scss
 .container {
   display: flex;
@@ -102,22 +104,28 @@ Try the challenge using CodePen, or your HTML/SCSS favourite IDE.
 ```
 
 ### Now, how would you implement mixin's and conditionals in order to cleanise / make more efficiente code?
+
 ### Are this tip so useful for those FlexBox haters? Ha, ha!
 
 Let's recall what means a mixin, what Conditional we have already learned:
-  ```scss
-  @mixin aMixin($attribute1:  itsValue, $attribute2:  itsValue2, ...) { }
- .aClass {
-    include@ aMixin(equal, or not)
-  }
-  @if $attribute1 != boolean {
-    attribute1: $attribute1;
-  }
-  ...
-  ```
+
+```scss
+@mixin aMixin($attribute1:  itsValue, $attribute2:  itsValue2, ...) { }
+.aClass {
+  include@ aMixin(equal, or not)
+}
+@if $attribute1 != boolean {
+  attribute1: $attribute1;
+}
+...
+```
+
 Got it? **Do it.**
+
 ***
+
 Here, is the solution, we are going to describe:
+
 ```scss
 @mixin flex-config($justify-content: false, $flex: false, $flex-direction: false, $align-items: false) {
   display: flex;
@@ -179,7 +187,9 @@ Here, is the solution, we are going to describe:
   }
 }
 ```
+
 #### 1. Define the Mixin
+
 ```scss
 @mixin flex-config($justify-content: false, $flex: false, $flex-direction: false, $align-items: false) {
   display: flex;
@@ -201,23 +211,32 @@ Here, is the solution, we are going to describe:
   }
 }
 ```
+
 * Allways applies display: `flex`.
 * Conditionally applies `justify-content`, `flex`, `flex-direction`, and `align-items` (the items usually used, reused and repeated ever and ever) @if their corresponding variables are not `false`.
+
 #### Basic @mixin usage
+
 ```scss
 .container {
   @include flex-config;
 }
 ```
+
 #### Custom usage
-Sets `flex: 1` and `justify-content: space-between`.  
+
+Sets `flex: 1` and `justify-content: space-between`.
+
 ```scss
 .item {
   @include flex-config($flex: 1, $justify-content: space-between);
 }
 ```
+
 #### Nested @mixin usage
-Encapsulates specific flexbox layouts for child elements, improving modularity and code reusability.  
+
+Encapsulates specific flexbox layouts for child elements, improving modularity and code reusability.
+
 ```scss
 .content {
   @include flex-config;

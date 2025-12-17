@@ -1,65 +1,55 @@
-# 04-005    Checked / Runtime Exceptions
+# 04-005 Checked / Runtime Exceptions
 
-![](./04-005_IMG12.png)
+![](../../../../.gitbook/assets/04-005_IMG12.png)
 
----
+***
 
 Java exceptions are classified into two main categories:
 
--   **Checked Exceptions**
+* **Checked Exceptions**
+* **Runtime exceptions**
 
--   **Runtime exceptions**
-
-![](./04-005_IMG6.png)
-![](./04-005_IMG7.png)
-
-
+![](../../../../.gitbook/assets/04-005_IMG6.png) ![](../../../../.gitbook/assets/04-005_IMG7.png)
 
 ## Comparison: Checked vs Runtime Exceptions
 
-| Aspect | Checked Exceptions | Runtime Exceptions |
-|--------|-------------------|-------------------|
-| **Compile-Time Check** | Yes, discovered and reviewed at compile time | No,  occur as the program runs |
-| **Mandatory Handling** | Yes, must be caught or declared with `throws` | No,  optional handling |
-| **Purpose** | Handle recovery from external events (file not found, network issues) | Indicate programming errors that need to be fixed |
-| **Examples** | `IOException`, `FileNotFoundException`, `ClassNotFoundException` | `NullPointerException`, `ArithmeticException`, `ArrayIndexOutOfBoundsException` |
-| **Recovery** | Often help applications recover from errors | Typically indicate bugs to be fixed |
+| Aspect                 | Checked Exceptions                                                    | Runtime Exceptions                                                              |
+| ---------------------- | --------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
+| **Compile-Time Check** | Yes, discovered and reviewed at compile time                          | No, occur as the program runs                                                   |
+| **Mandatory Handling** | Yes, must be caught or declared with `throws`                         | No, optional handling                                                           |
+| **Purpose**            | Handle recovery from external events (file not found, network issues) | Indicate programming errors that need to be fixed                               |
+| **Examples**           | `IOException`, `FileNotFoundException`, `ClassNotFoundException`      | `NullPointerException`, `ArithmeticException`, `ArrayIndexOutOfBoundsException` |
+| **Recovery**           | Often help applications recover from errors                           | Typically indicate bugs to be fixed                                             |
 
-
----
+***
 
 ## Checked Exceptions
 
-![](./04-005_IMG1.png)
+![](<../../../../.gitbook/assets/04-005_IMG1 (1).png>)
 
+Checked exceptions are exceptions that are **checked at compile time**.
 
-Checked exceptions are exceptions that are **checked at compile time**.  
-
-The Java compiler ensures that your **code handles these exceptions before it can be successfully compiled**.  
+The Java compiler ensures that your **code handles these exceptions before it can be successfully compiled**.
 
 If your code does not handle a checked exception, it results in a compilation error.
 
 ### Characteristics
 
-![](./04-005_IMG2.png)
+![](<../../../../.gitbook/assets/04-005_IMG2 (1).png>)
 
--   The exception is typically caught using a `try-catch` block or declared in the method signature using the `throws` keyword
-
--   The exception represents recoverable conditions such as file not found or network issues
-
-- The compiler mandates explicit handling or declaration
-
+* The exception is typically caught using a `try-catch` block or declared in the method signature using the `throws` keyword
+* The exception represents recoverable conditions such as file not found or network issues
+* The compiler mandates explicit handling or declaration
 
 ### Common Use Cases
 
 Checked exceptions are used during:
 
-![](./04-005_IMG3.png)
+![](../../../../.gitbook/assets/04-005_IMG3.png)
 
--   **File operations** (Reading from or writing to a file)
--   **Database connections**  (Connecting to a database)
--   **Network communications** (Making network calls)
-
+* **File operations** (Reading from or writing to a file)
+* **Database connections** (Connecting to a database)
+* **Network communications** (Making network calls)
 
 ### Example: File Handling
 
@@ -87,77 +77,71 @@ public class FileExample {
 }
 ```
 
-1.  In this example, we create a `File` object pointing to `nonexistentfile.txt`.  
-
-2.  Then, we initialise a `Scanner` object to read the file.  
-
-3.  Since the file may not exist, we wrap our code in a `try-catch` block to handle the `FileNotFoundException`.
-
+1. In this example, we create a `File` object pointing to `nonexistentfile.txt`.
+2. Then, we initialise a `Scanner` object to read the file.
+3. Since the file may not exist, we wrap our code in a `try-catch` block to handle the `FileNotFoundException`.
 
 ### Common Checked Exceptions
 
-| Exception | Purpose |
-|-----------|---------|
-| `IOException` | Handling file operations and network communications |
-| `FileNotFoundException` | Handling missing file issues |
+| Exception                | Purpose                                                |
+| ------------------------ | ------------------------------------------------------ |
+| `IOException`            | Handling file operations and network communications    |
+| `FileNotFoundException`  | Handling missing file issues                           |
 | `ClassNotFoundException` | When attempting to load classes dynamically at runtime |
 
 ### Benefits of Checked Exceptions
 
-![](./04-005_IMG8.png)
-![](./04-005_IMG9.png)
+![](../../../../.gitbook/assets/04-005_IMG8.png) ![](../../../../.gitbook/assets/04-005_IMG9.png)
 
-####    **Compile-Time Safety**
--   Requires developers to handle potential error scenarios at compile time  
+#### **Compile-Time Safety**
 
--   Reduces the chances of unhandled exceptions occurring during execution   
+* Requires developers to handle potential error scenarios at compile time
+* Reduces the chances of unhandled exceptions occurring during execution
+* Leads to more stable applications
 
--   Leads to more stable applications  
+#### **Recoverable Errors**
 
-
-#### **Recoverable Errors**  
-
-Checked exceptions typically represent conditions that a program can anticipate and recover from, such as file not found or invalid user input.  
+Checked exceptions typically represent conditions that a program can anticipate and recover from, such as file not found or invalid user input.
 
 > This encourages developers to **implement error-handling mechanisms** to manage these situations gracefully.
 
 #### **Clear API Contracts**
-By declaring checked exceptions in method signatures, APIs communicate the possible issues that may arise when using them.   
 
-This helps users of the API understand what exceptions they need to handle, leading to better code practices.  
+By declaring checked exceptions in method signatures, APIs communicate the possible issues that may arise when using them.
+
+This helps users of the API understand what exceptions they need to handle, leading to better code practices.
 
 #### **Promotes Defensive Programming**
+
 Using checked exceptions **encourages developers to think proactively about error handling**, leading to **more robust and resilient software**.
 
----
+***
 
 ## Runtime Exceptions
 
-Runtime exceptions are **not checked at compile time**.   
+Runtime exceptions are **not checked at compile time**.
 
-These exceptions occur **during the execution of the program and can often be avoided by fixing the code** . 
+These exceptions occur **during the execution of the program and can often be avoided by fixing the code** .
 
 The Java compiler does not require you to handle or declare runtime exceptions.
 
 ### Characteristics
 
-![](./04-005_IMG4.png)
+![](../../../../.gitbook/assets/04-005_IMG4.png)
 
--   The exceptions do not need to be explicitly caught or declared
--   The exceptions indicate programming errors such as **logic errors** or improper use of APIs
--   They typically signal bugs in the code that should be fixed rather than handled
+* The exceptions do not need to be explicitly caught or declared
+* The exceptions indicate programming errors such as **logic errors** or improper use of APIs
+* They typically signal bugs in the code that should be fixed rather than handled
 
 ### Common Use Cases
 
 Runtime exceptions are used to display:
 
-![](./04-005_IMG5.png)
+![](../../../../.gitbook/assets/04-005_IMG5.png)
 
--   **Arithmetic errors** (such as division by zero or overflow errors)  
-
--   **Null pointer access errors** (when you try to access an object that has not been initialised)  
-
--   **Array index out-of-bounds errors** (when you access invalid indices in arrays or collections)
+* **Arithmetic errors** (such as division by zero or overflow errors)
+* **Null pointer access errors** (when you try to access an object that has not been initialised)
+* **Array index out-of-bounds errors** (when you access invalid indices in arrays or collections)
 
 ### Example: Arithmetic Exception
 
@@ -179,44 +163,45 @@ public class ArithmeticExample {
 }
 ```
 
-1.  In this example, we attempt a division operation to divide 10 by 0. 
-2.  Since dividing by 0 triggers an `ArithmeticException`, we catch this exception in a `try-catch` block. 
-3.  The Java program catches the exception and prints an appropriate message.
+1. In this example, we attempt a division operation to divide 10 by 0.
+2. Since dividing by 0 triggers an `ArithmeticException`, we catch this exception in a `try-catch` block.
+3. The Java program catches the exception and prints an appropriate message.
 
 ### Common Runtime Exceptions
 
-| Exception | Purpose |
-|-----------|---------|
-| `NullPointerException` | When the code tries to use a null reference |
-| `ArithmeticException` | When invalid mathematical operations occur |
+| Exception                        | Purpose                                             |
+| -------------------------------- | --------------------------------------------------- |
+| `NullPointerException`           | When the code tries to use a null reference         |
+| `ArithmeticException`            | When invalid mathematical operations occur          |
 | `ArrayIndexOutOfBoundsException` | When accessing array elements outside valid indices |
 
 ### Benefits of Runtime Exceptions
 
-![](./04-005_IMG10.png)
-![](./04-005_IMG11.png)
+![](../../../../.gitbook/assets/04-005_IMG10.png) ![](../../../../.gitbook/assets/04-005_IMG11.png)
 
 #### **Simplicity**
-Runtime exceptions **do not require explicit handling**, which simplifies the code.   
+
+Runtime exceptions **do not require explicit handling**, which simplifies the code.
 
 Developers can focus on the main logic without being burdened by mandatory error handling for every potential issue.
 
 #### **Indication of Programming Errors**
-Runtime exceptions usually **indicate bugs or logical errors in the code**, such as null pointer access or array index out of bounds.   
+
+Runtime exceptions usually **indicate bugs or logical errors in the code**, such as null pointer access or array index out of bounds.
 
 Using runtime exceptions allows developers to catch and fix these issues during development rather than at runtime.
 
 #### **Performance**
+
 Since runtime exceptions do not require checked handling, they can lead to **cleaner and more efficient code, especially in performance-critical sections** of an application.
 
 #### **Control Flow**
-Runtime exceptions can be used to signal problems that should not occur if the program logic is correct.  
+
+Runtime exceptions can be used to signal problems that should not occur if the program logic is correct.
 
 This allows developers to implement custom logic for handling unexpected conditions without cluttering the code with error-handling structures.
 
-
-
----
+***
 
 ## Lesson Speech
 

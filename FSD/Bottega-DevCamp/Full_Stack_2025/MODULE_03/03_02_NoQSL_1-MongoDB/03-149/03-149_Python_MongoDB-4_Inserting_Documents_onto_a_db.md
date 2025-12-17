@@ -1,30 +1,30 @@
-# Module 03-149: MongoDB (4)
+# 03-149\_Python\_MongoDB-4\_Inserting\_Documents\_onto\_a\_db
 
-# Inserting Documents
+## Module 03-149: MongoDB (4)
 
----
+## Inserting Documents
 
-## **Index**
+***
+
+### **Index**
 
 1. Understanding MongoDB Documents (1)
-
 2. Inserting a Single Document
-
 3. Handling Flexible Schema
 
----
+***
 
-## **Understanding MongoDB Documents**
+### **Understanding MongoDB Documents**
 
-MongoDB stores data in **documents**, which are JSON-like objects consisting of key-value pairs.   
+MongoDB stores data in **documents**, which are JSON-like objects consisting of key-value pairs.
 
 Unlike traditional SQL databases, MongoDB **does not enforce a schema**, allowing documents in the same collection to have different structures.
 
 Each document is stored in a **collection**, which functions similarly to tables in relational databases.
 
----
+***
 
-## **Inserting a Single Document - `db.<collection>.insertOne( {...})`**
+### **Inserting a Single Document - `db.<collection>.insertOne( {...})`**
 
 To insert a single document into the `books` collection, use `insertOne()`. This function expects a **JSON object**.
 
@@ -40,19 +40,19 @@ MongoCourse> db.Books.insertOne(
 {
 ```
 
-### **Expected Output:**
+#### **Expected Output:**
 
-![MongoDB, .insertOne() ](./03-149_IMG01.png)
+![MongoDB, .insertOne()](../../../../../../.gitbook/assets/03-149_IMG01.png)
 
 **Note:** `ObjectId` is a unique identifier automatically generated for each document.
 
----
+***
 
-****
+***
 
-## **Handling Flexible Schema**
+### **Handling Flexible Schema**
 
-MongoDB allows **dynamic schema changes**. 
+MongoDB allows **dynamic schema changes**.
 
 Documents in the same collection do not need to have identicals structures.
 
@@ -77,41 +77,38 @@ db.Books.insertMany([
 ]);
 ```
 
-## Expected Output:
+### Expected Output:
 
-![MongoDB, flexible data schema](./03-150_IMG03.png)
+![MongoDB, flexible data schema](../../../../../../.gitbook/assets/03-150_IMG03.png)
 
----
+***
 
-## **Best Practices**
+### **Best Practices**
 
-- **Define a standard document structure** for consistency.
+* **Define a standard document structure** for consistency.
+* **Use meaningful field names** that align with your data.
+* Leverage indexes to optimize query performance.
+* **Validate data** before insertion to prevent inconsistencies.
 
-- **Use meaningful field names** that align with your data.
+***
 
-- Leverage indexes to optimize query performance.
-
-- **Validate data** before insertion to prevent inconsistencies.
-
----
-
-## References
+### References
 
 * [MongoDB Docs: Data Modeling](https://www.mongodb.com/docs/manual/data-modeling/)
 
-****
+***
 
-## Video Lesson Speech
+### Video Lesson Speech
 
-Now that we have our collection built out we can start adding documents into our database.   
+Now that we have our collection built out we can start adding documents into our database.
 
 I'm going to open up sublime text and let's start writing out the script that is going to insert a book into our book collection.
 
-****
+***
 
-I'm going to start off with 'db' this is something you're going to keep on seeing throughout the rest of this course and as long as you work with Mongo you're always going to be working with this `db` object because this references the database that you're going to be working with. Now after the database is going to be the name of your collection.   
+I'm going to start off with 'db' this is something you're going to keep on seeing throughout the rest of this course and as long as you work with Mongo you're always going to be working with this `db` object because this references the database that you're going to be working with. Now after the database is going to be the name of your collection.
 
-So in the case where I created a collection called **books**, it's going to be `db.books` and then we're going to have this function called **insert**. 
+So in the case where I created a collection called **books**, it's going to be `db.books` and then we're going to have this function called **insert**.
 
 ```
 db.books.insertOne
@@ -123,13 +120,13 @@ Now I'm going to put this inside parentheses and then it expects to receive an o
 db.books.insertOne()
 ```
 
-When you hear say someone say oh it expects an object.   
+When you hear say someone say oh it expects an object.
 
-What that means is we need to pass it in with curly braces. Just like in Javascript we're going to pass in a set of key-value pairs.   
+What that means is we need to pass it in with curly braces. Just like in Javascript we're going to pass in a set of key-value pairs.
 
-The first one is going to be the name of our book.  
+The first one is going to be the name of our book.
 
- So I'm going to say `name` and let's just say `OOP Programming` and then we'll pass in a `published date` and just say `new date`. 
+So I'm going to say `name` and let's just say `OOP Programming` and then we'll pass in a `published date` and just say `new date`.
 
 ```
 db.books.insertOne({
@@ -138,55 +135,55 @@ db.books.insertOne({
 })
 ```
 
-Then we can pass in a collection inside of our document, so inside of this, we are not limited to just given a traditional key-value pair like `name` and then OOP Programming.  
+Then we can pass in a collection inside of our document, so inside of this, we are not limited to just given a traditional key-value pair like `name` and then OOP Programming.
 
- We can also pass in a collection, so I can say that there are multiple `authors` here and this is going to be an array of data.   
+We can also pass in a collection, so I can say that there are multiple `authors` here and this is going to be an array of data.
 
-So any time that you're going to pass in a collection pass it in as an array. So that's one thing that I really like about Mongo is it's as close to just pure programming code as you'll typically get in a database.   
+So any time that you're going to pass in a collection pass it in as an array. So that's one thing that I really like about Mongo is it's as close to just pure programming code as you'll typically get in a database.
 
-This is very similar to just writing pure Javascript and that's one reason why I personally enjoy working with that. Now inside of authors we're going to pass another set of objects and so each author is going to be an object themselves here we're going to have a name for an author and we'll say *John Snow* wrote the one part of this and add a comma afterward.  
+This is very similar to just writing pure Javascript and that's one reason why I personally enjoy working with that. Now inside of authors we're going to pass another set of objects and so each author is going to be an object themselves here we're going to have a name for an author and we'll say _John Snow_ wrote the one part of this and add a comma afterward.
 
- Now let's add another one and say *Ned Stark* wrote the other one and this is all that we need right here. So if I copy this and come into the terminal then we can run it and it will give us our `WriteResult({ "nInserted" : 1 })`.   
+Now let's add another one and say _Ned Stark_ wrote the other one and this is all that we need right here. So if I copy this and come into the terminal then we can run it and it will give us our `WriteResult({ "nInserted" : 1 })`.
 
-What this means is notice that this is a Javascript object right here and that it got returned back to us. Now if I come back here and I get rid of one of these authors and now will say *John Snow Jr*.  
+What this means is notice that this is a Javascript object right here and that it got returned back to us. Now if I come back here and I get rid of one of these authors and now will say _John Snow Jr_.
 
- I can copy this again paste it in the terminal and it got written as well, so this is now in the database. So I wanted to add two items in so that you could see one and that you can put in as many items as you want
+I can copy this again paste it in the terminal and it got written as well, so this is now in the database. So I wanted to add two items in so that you could see one and that you can put in as many items as you want
 
-![large](./03-149_IMG1.png)
+![large](../../../../../../.gitbook/assets/03-149_IMG1.png)
 
-But notice how the system didn't care whatsoever about a couple of things.   
+But notice how the system didn't care whatsoever about a couple of things.
 
-It didn't care that we sent in a duplicate name but also it didn't require the same number of authors.   
+It didn't care that we sent in a duplicate name but also it didn't require the same number of authors.
 
-Now just to throw it off even a little bit more let's imagine right here with `publishedDate` if I change this to `startDate` copy this again and paste it in everything worked exactly like normal. 
+Now just to throw it off even a little bit more let's imagine right here with `publishedDate` if I change this to `startDate` copy this again and paste it in everything worked exactly like normal.
 
-![large](./03-149_IMG2.png)
+![large](../../../../../../.gitbook/assets/03-149_IMG2.png)
 
-Now, this goes to one of the most critical parts of understanding how Mongo works compared with a traditional SQL database and that is is that there is no schema whatsoever.   
+Now, this goes to one of the most critical parts of understanding how Mongo works compared with a traditional SQL database and that is is that there is no schema whatsoever.
 
-So what that means is that all of the Mongo code that you write Mongo doesn't care about things like column names or what the names of your keys are, you can write and have each one of your documents be as unique as it needs to be. 
+So what that means is that all of the Mongo code that you write Mongo doesn't care about things like column names or what the names of your keys are, you can write and have each one of your documents be as unique as it needs to be.
 
-Now there comes a level of responsibility when you're doing that and that because imagine a scenario where you're building some type of social network and you're using Mongo to do it.   
+Now there comes a level of responsibility when you're doing that and that because imagine a scenario where you're building some type of social network and you're using Mongo to do it.
 
-If you are irresponsible and you put all kinds of different names in different key-value pairs and you put a completely different structure when you run a database query you're not going to be able to do anything with the data because it's going to come back and it's not going to have the same type of naming structure.   
+If you are irresponsible and you put all kinds of different names in different key-value pairs and you put a completely different structure when you run a database query you're not going to be able to do anything with the data because it's going to come back and it's not going to have the same type of naming structure.
 
-So you're going to have to build many workarounds and it's not going to be very scalable. So with the flexibility that Mongo gives you, it's important to understand what your structure looks like.   
+So you're going to have to build many workarounds and it's not going to be very scalable. So with the flexibility that Mongo gives you, it's important to understand what your structure looks like.
 
-You don't have a schema as you do in SQL.  With SQL you don't have to worry about when you run a database query having elements named under different columns. And so here you might have that issue.  
+You don't have a schema as you do in SQL. With SQL you don't have to worry about when you run a database query having elements named under different columns. And so here you might have that issue.
 
- So say that for the first set of your application you called `name`, then you decided you know what I want to change this to `title` and if I come here and run it.   
+So say that for the first set of your application you called `name`, then you decided you know what I want to change this to `title` and if I come here and run it.
 
-Everything worked. And if I run a database query I'm going to get four books back but there's going to be some differences and that is for the first three I'm going to have a `name` attribute that I can query and in the last one though it's going to be `title`.   
+Everything worked. And if I run a database query I'm going to get four books back but there's going to be some differences and that is for the first three I'm going to have a `name` attribute that I can query and in the last one though it's going to be `title`.
 
-Now Mongo itself doesn't care. It does not care about your data and care about the structure it's so flexible it simply allows you to store these object kind of documents and then you're in charge of managing first the creation but then also the ability to query them.   
+Now Mongo itself doesn't care. It does not care about your data and care about the structure it's so flexible it simply allows you to store these object kind of documents and then you're in charge of managing first the creation but then also the ability to query them.
 
-So this is a very important component and that's the reason why I'm spending some time discussing it and that is because if this is implemented poorly then you're going to run into a number of bugs and you're going to have to build many different scripts to clean up your data, and that's an ever fun situation.   
+So this is a very important component and that's the reason why I'm spending some time discussing it and that is because if this is implemented poorly then you're going to run into a number of bugs and you're going to have to build many different scripts to clean up your data, and that's an ever fun situation.
 
-So just make sure that you're cognizant of that and so that you'll be able to make sure and you'll be confident that when you query something you'll know the various attributes that are in there but the flexibility that Mongo provides in not requiring a schema is really one of the key elements that have made it such a popular database. So that is how you can add an insert into a collection in Mongo. 
+So just make sure that you're cognizant of that and so that you'll be able to make sure and you'll be confident that when you query something you'll know the various attributes that are in there but the flexibility that Mongo provides in not requiring a schema is really one of the key elements that have made it such a popular database. So that is how you can add an insert into a collection in Mongo.
 
-****
+***
 
-## Code
+### Code
 
 ```js
 db.books.insertOne({

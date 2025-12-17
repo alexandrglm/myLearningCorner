@@ -1,13 +1,12 @@
 # 03-008: Introduction to Programming Concepts - Part 1
 
-![](./03-008_IMG1.png)
-![](./03-008_IMG8.png)
+![](../../../../.gitbook/assets/03-008_IMG1.png) ![](../../../../.gitbook/assets/03-008_IMG8.png)
 
----
+***
 
 ### Identifiers
 
-![](./03-008_IMG2.png)
+![](../../../../.gitbook/assets/03-008_IMG2.png)
 
 **Identifiers** are custom-named labels that software developers assign to reference program components such as stored values, methods, interfaces, or classes.
 
@@ -15,39 +14,40 @@
 
 If an identifier stores data, it can be one of two types:
 
--   **CONSTANTS**
--   **VARIABLES**
-
+* **CONSTANTS**
+* **VARIABLES**
 
 #### Constants
 
-![](./03-008_IMG3.png)
+![](../../../../.gitbook/assets/03-008_IMG3.png)
 
 **Definition**: A data item whose value does **not change** within a program.
 
 **Examples**:
-- Numerical constant: mathematical value of Pi
-- Text string: player's name in a game
+
+* Numerical constant: mathematical value of Pi
+* Text string: player's name in a game
 
 **Terminology**: Also referred to as **"named constants"**.
 
 **Assignment**: Value is assigned when the constant is defined.
 
 **Benefits**:
+
 1. **Ease of readability**: Meaningful names make code clearer (e.g., `pi_value`, `cost_price`, `tax_rate`)
 2. **Maintainability**: If the value changes, update only the constant definition, not every occurrence in code
 
-
 #### Variables
 
-![](./03-008_IMG4.png)
+![](../../../../.gitbook/assets/03-008_IMG4.png)
 
 **Definition**: An identifier whose value **can change** during program execution.
 
 **Examples**:
-- User entering their age in an application
-- High score in a game
-- Any user input or runtime-determined value
+
+* User entering their age in an application
+* High score in a game
+* Any user input or runtime-determined value
 
 **Data types**: Can be strings of text, numerical values, or any other data type.
 
@@ -57,31 +57,31 @@ If an identifier stores data, it can be one of two types:
 
 **Best practice**: Using variables prevents "hard-coding" all names and values—essential for flexible, maintainable code.
 
----
+***
 
 ### Containers
 
-![](./03-008_IMG5.png)
+![](../../../../.gitbook/assets/03-008_IMG5.png)
 
-**Definition**:     Special identifier types referencing **multiple elements** in a program.
+**Definition**: Special identifier types referencing **multiple elements** in a program.
 
-**Purpose**:        Eliminate the need to create individual variables for each element—enabling faster, more efficient code.
+**Purpose**: Eliminate the need to create individual variables for each element—enabling faster, more efficient code.
 
 **Scenario**: Storing 1,000 integers would require 1,000 individual variables if containers were not used—unwieldy and inefficient.
 
 #### **TWO container types**:
 
--   **ARRAYS**
--   **VECTORS**
-
+* **ARRAYS**
+* **VECTORS**
 
 #### Arrays
 
-![](./03-008_IMG6.png)
+![](../../../../.gitbook/assets/03-008_IMG6.png)
 
-**Definition**:     Container storing a **fixed number** of elements of the **same type** in sequential order, starting from index zero.
+**Definition**: Container storing a **fixed number** of elements of the **same type** in sequential order, starting from index zero.
 
-**Declaration**: 
+**Declaration**:
+
 1. Specify the data type (integer, boolean, string, etc.)
 2. Specify the array name
 3. Specify the maximum size in square brackets
@@ -89,22 +89,22 @@ If an identifier stores data, it can be one of two types:
 **Syntax**: `dataType arrayName[maxSize];`
 
 **Characteristics**:
-- Fixed size (cannot expand)
-- Elements stored in sequential memory locations
-- Fast element access
-- Memory-efficient
 
-
+* Fixed size (cannot expand)
+* Elements stored in sequential memory locations
+* Fast element access
+* Memory-efficient
 
 #### Vectors
 
-![](./03-008_IMG7.png)
+![](../../../../.gitbook/assets/03-008_IMG7.png)
 
 **Definition**: Container with **dynamic size** that automatically resizes itself as elements are added or removed.
 
 **Alternative name**: **"Dynamic arrays"**
 
 **Declaration**:
+
 1. Specify the container type (`vector`)
 2. Specify the data type in angle brackets
 3. Specify the vector name
@@ -112,13 +112,14 @@ If an identifier stores data, it can be one of two types:
 **Syntax**: `vector<dataType> vectorName;`
 
 **Characteristics**:
-- Dynamic size (expands/contracts automatically)
-- No maximum size specification needed
-- Elements not stored in sequential memory locations
-- Slightly slower element access than arrays
-- Requires more memory than arrays
 
----
+* Dynamic size (expands/contracts automatically)
+* No maximum size specification needed
+* Elements not stored in sequential memory locations
+* Slightly slower element access than arrays
+* Requires more memory than arrays
+
+***
 
 ## Video Lesson
 
@@ -128,7 +129,7 @@ After this guide, you will be able to: **Describe the purpose and use of identif
 
 To **fully understand software programming**, there are **some fundamental programming concepts** you **need to know first**. The **first concepts you will look at** are **identifiers**. **Software developers use an identifier** to **reference a program component** such as a **stored value, a method, an interface, or a class**, by **assigning a custom-named label** to it. If the **identifier stores data**, then the **data values** in the program can be **one of two types: either a constant, or a variable**.
 
-A **constant** is a **data item whose value does not change** within a program. This could be a **numerical constant** such as the **mathematical value of Pi**, or it could be a **text string** that **remains constant** such as a **player's name within a game**. **Constants are also referred to as 'named constants.'** You **assign a value to a constant** when you **define it**. For example, you might want it to **refer to a numerical value** within your program such as **Pi, or a cost price, or a rate of tax**, and then, rather than **repeatedly retyping the same numerical value**, you can just **declare a constant for that value instead**, and **name it something meaningful** like **'pi_value', or 'cost_price', or 'tax_rate'**.
+A **constant** is a **data item whose value does not change** within a program. This could be a **numerical constant** such as the **mathematical value of Pi**, or it could be a **text string** that **remains constant** such as a **player's name within a game**. **Constants are also referred to as 'named constants.'** You **assign a value to a constant** when you **define it**. For example, you might want it to **refer to a numerical value** within your program such as **Pi, or a cost price, or a rate of tax**, and then, rather than **repeatedly retyping the same numerical value**, you can just **declare a constant for that value instead**, and **name it something meaningful** like **'pi\_value', or 'cost\_price', or 'tax\_rate'**.
 
 There are **a couple of major benefits** to **using constants in your programs**; **one is for ease of readability** in your code, and the **other is that if the specified value changes** in the future, **you only need to change it once** on the constant, rather than **finding every instance** of that numerical value **within your code and changing it**.
 

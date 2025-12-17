@@ -4,7 +4,7 @@ In this guide, we're going to walk through the **Pipenv library**, a very powerf
 
 One of the reasons why [Pipenv](https://pypi.org/project/pipenv/) has become incredibly popular—and why it's actually recommended by the official Python developers—is because it allows you to wrap your entire project's dependencies into a **single environment**. This is a very powerful tool, and I'm going to walk through why right now.
 
----
+***
 
 ## Why Use Pipenv?
 
@@ -23,43 +23,38 @@ Later on, you build another Python program—a **Django web API**. You also need
 
 That may not seem like an issue, but then all of a sudden, when you go back to your machine learning program that was working with **requests 1.2**, you're going to discover that something broke. Now, this project doesn't even work anymore. What you've run into is a **dependency conflict**. Both projects are using Python 3.6.3, but they're using two different versions of the **requests library**. When you updated it for your API, you inadvertently broke the machine learning project.
 
-This is why we need tools like **Pipenv**. Pipenv will create a **virtual environment** for each project, isolating their dependencies. So, when you install **requests 1.2** for the machine learning project, it will be nested inside its own virtual environment.  
+This is why we need tools like **Pipenv**. Pipenv will create a **virtual environment** for each project, isolating their dependencies. So, when you install **requests 1.2** for the machine learning project, it will be nested inside its own virtual environment.
 
-When you install **requests 2.0** for the Django web API, it will be in a completely separate virtual environment.  
+When you install **requests 2.0** for the Django web API, it will be in a completely separate virtual environment.
 
- This way, the two projects won't interfere with each other.
-
-
+This way, the two projects won't interfere with each other.
 
 ![IMG](https://s3-us-west-2.amazonaws.com/images-devcamp/Advanced+Python+Programming/Environment+and+Version+Management/Guide+to+Pipenv+for+Managing+a+Python+Project's+Packages+and+Environment+%23+1564/image11.png)
 
----
+***
 
 ## Installing Pipenv
 
 You can go to [docs.pipenv.org](https://docs.pipenv.org/) to find installation instructions depending on your system.
 
-- **Mac (with Homebrew):**
-  `brew install pipenv`
+* **Mac (with Homebrew):**`brew install pipenv`
+*   **Ubuntu/Linux:**
 
-- **Ubuntu/Linux:**
-  
-  ```bash
-  sudo apt install software-properties-common python-software-properties
-  sudo add-apt-repository ppa:pypa/ppa
-  sudo apt update
-  sudo apt install pipenv
-  `
-  ```
-
-- **Windows:** 
+    ```bash
+    sudo apt install software-properties-common python-software-properties
+    sudo add-apt-repository ppa:pypa/ppa
+    sudo apt update
+    sudo apt install pipenv
+    `
+    ```
+* **Windows:**\
   pip install pipenv
 
 Pipenv is a **first-class citizen** on Windows, so you can use it just as easily as on other platforms.
 
 ![IMG](https://s3-us-west-2.amazonaws.com/images-devcamp/Advanced+Python+Programming/Environment+and+Version+Management/Guide+to+Pipenv+for+Managing+a+Python+Project's+Packages+and+Environment+%23+1564/image13.png)
 
----
+***
 
 ## Setting Up a Pipenv Environment
 
@@ -81,7 +76,7 @@ After running this command, Pipenv will generate a **Pipfile** in your project d
 
 ![IMG](https://s3-us-west-2.amazonaws.com/images-devcamp/Advanced+Python+Programming/Environment+and+Version+Management/Guide+to+Pipenv+for+Managing+a+Python+Project's+Packages+and+Environment+%23+1564/image14.png)
 
----
+***
 
 ## Understanding the Pipfile
 
@@ -101,13 +96,13 @@ name = "pypi"
 python_version = "3.6"
 ```
 
-- **Packages:** This is where you list the packages your project needs to run.
-- **Dev-packages:** These are packages you only need for development, such as testing or linting tools.
-- **Requires:** This specifies the Python version your project requires.
+* **Packages:** This is where you list the packages your project needs to run.
+* **Dev-packages:** These are packages you only need for development, such as testing or linting tools.
+* **Requires:** This specifies the Python version your project requires.
 
 ![IMG](https://s3-us-west-2.amazonaws.com/images-devcamp/Advanced+Python+Programming/Environment+and+Version+Management/Guide+to+Pipenv+for+Managing+a+Python+Project's+Packages+and+Environment+%23+1564/image15.png)
 
----
+***
 
 ## Installing Packages with Pipenv
 
@@ -127,9 +122,7 @@ pipenv install requests flask
 
 ![IMG](https://s3-us-west-2.amazonaws.com/images-devcamp/Advanced+Python+Programming/Environment+and+Version+Management/Guide+to+Pipenv+for+Managing+a+Python+Project's+Packages+and+Environment+%23+1564/image17.png)
 
-
-
----
+***
 
 ## Working with the Virtual Environment
 
@@ -151,7 +144,7 @@ Once inside the virtual environment, you can run Python scripts and import the i
 
 ![IMG](https://s3-us-west-2.amazonaws.com/images-devcamp/Advanced+Python+Programming/Environment+and+Version+Management/Guide+to+Pipenv+for+Managing+a+Python+Project's+Packages+and+Environment+%23+1564/image20.png)
 
----
+***
 
 ## Summary
 
@@ -159,8 +152,8 @@ Pipenv is a powerful tool for managing **Python project dependencies** and **vir
 
 To recap:
 
-- Use `pipenv --three` to create a new Python 3 environment.
-- Use `pipenv install <package>` to install packages.
-- Use `pipenv shell` to activate the virtual environment.
+* Use `pipenv --three` to create a new Python 3 environment.
+* Use `pipenv install <package>` to install packages.
+* Use `pipenv shell` to activate the virtual environment.
 
 By following these steps, you can manage your Python projects more effectively and avoid common dependency issues.

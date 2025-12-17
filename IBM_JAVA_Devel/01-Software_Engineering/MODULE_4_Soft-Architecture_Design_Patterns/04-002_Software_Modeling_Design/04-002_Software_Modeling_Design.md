@@ -1,76 +1,76 @@
 # 04-002 Software Modelling Design
 
-![](./04-002_IMG9.png)
+![](../../../../.gitbook/assets/04-002_IMG9.png)
 
+**Software design** is a process during which structural components and behavioural attributes of software are documented before development.
 
-**Software design** is a process during which structural components and behavioural attributes of software are documented before development.  
-
-![](./04-002_IMG1.png)
+![](../../../../.gitbook/assets/04-002_IMG1.png)
 
 A key activity is **modelling**—creating visual or diagrammatic representations of the software solution, its sub-components, and their interactions.
 
----
+***
 
 ### Structured Design
 
-**Structured design** conceptualises a software problem into well-organised smaller solution elements called **modules and sub-modules**.   
+**Structured design** conceptualises a software problem into well-organised smaller solution elements called **modules and sub-modules**.
 
 It stresses organisation to achieve cohesive, effective solutions.
 
-![](./04-002_IMG2.png)
+![](../../../../.gitbook/assets/04-002_IMG2.png)
 
 **Key principles:**
 
-- **Cohesion:** All functionally related elements are grouped together within a module.
-- **Loose coupling:** Modules are weakly associated so changes in one component have minimal effect on another. This architectural principle underpins service-oriented architectures and microservices-based patterns.
+* **Cohesion:** All functionally related elements are grouped together within a module.
+* **Loose coupling:** Modules are weakly associated so changes in one component have minimal effect on another. This architectural principle underpins service-oriented architectures and microservices-based patterns.
 
 Modules are arranged hierarchically with data flowing between them, enabling clear organisation and maintainability.
 
 ### Behavioural Models
 
-![](./04-002_IMG4.png)
+![](../../../../.gitbook/assets/04-002_IMG4.png)
 
-**Behavioural models** describe what a system does without explaining how it implements that behaviour.   
+**Behavioural models** describe what a system does without explaining how it implements that behaviour.\
 They communicate overall system behaviour through various UML diagram types.
 
 ### Unified Modelling Language (UML)
 
-**UML** is a standardised, **programming language agnostic** visual notation for representing architecture, design, and implementation of complex software systems.  
+**UML** is a standardised, **programming language agnostic** visual notation for representing architecture, design, and implementation of complex software systems.
 
-![](./04-002_IMG5.png)
+![](../../../../.gitbook/assets/04-002_IMG5.png)
 
 It can be applied throughout development regardless of the programming language used.
 
 UML diagrams are classified into two categories:
-- **Structural diagrams:** Show static structure
-- **Behavioural diagrams:** Show dynamic interactions and state changes
 
+* **Structural diagrams:** Show static structure
+* **Behavioural diagrams:** Show dynamic interactions and state changes
 
 #### Advantages of UML
 
-![](./04-002_IMG6.png)
+![](../../../../.gitbook/assets/04-002_IMG6.png)
 
 1. **Cost and time savings:** Plan features before coding begins
 2. **Team onboarding:** Enable new members or transferred developers to quickly understand the system
 3. **Communication:** Facilitate dialogue between technical and non-technical audiences
 4. **Navigation:** Provide visual relationships among modules, aiding source code navigation
 
----
+***
 
 ### Behavioural Diagram Types
 
-#### **State Transition Diagram** 
-A collection of **states** and **events** describing different system states and the events triggering state changes. Arrows represent possible transitions with event labels.
-![](./04-002_IMG7.png)
+#### **State Transition Diagram**
 
-#### **Interaction Diagram (Sequence Diagram)** 
-Models the **dynamic nature** of a software system, visualising objects and their relationships.   
+A collection of **states** and **events** describing different system states and the events triggering state changes. Arrows represent possible transitions with event labels. ![](../../../../.gitbook/assets/04-002_IMG7.png)
 
-![](./04-002_IMG8.png)
+#### **Interaction Diagram (Sequence Diagram)**
+
+Models the **dynamic nature** of a software system, visualising objects and their relationships.
+
+![](../../../../.gitbook/assets/04-002_IMG8.png)
 
 A sequence diagram displays communication between objects **with respect to time**, showing temporal ordering of interactions.
 
----
+***
 
 ## Lesson Speech
 

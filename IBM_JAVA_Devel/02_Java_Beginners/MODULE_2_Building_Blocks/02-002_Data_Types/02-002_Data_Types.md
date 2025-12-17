@@ -1,47 +1,41 @@
 # 02-002 Data Types
 
-![](./02-002_IMG13.png)
+![](../../../../.gitbook/assets/02-002_IMG13.png)
 
----
+***
 
-![](./02-002_IMG1.png)
+![](../../../../.gitbook/assets/02-002_IMG1.png)
 
-Data types are **containers designed to hold specific types of information**.   
+Data types are **containers designed to hold specific types of information**.
 
-Think of them as specialised containers—you wouldn't store soup in a shopping bag or groceries in a drinking glass.  
+Think of them as specialised containers—you wouldn't store soup in a shopping bag or groceries in a drinking glass.
 
 In programming, each data type specifies the type of data a variable can store and has specific properties such as size and range. They determine what operations Java programs can perform on the data.
 
-
----
+***
 
 ## Categories of Data Types
 
 In Java, data types can be broadly categorised into two groups:
 
-1.  **Primitive Data Types**
-2.  **Reference Data Types**
+1. **Primitive Data Types**
+2. **Reference Data Types**
 
----
+***
 
 ## Primitive Data Types
 
-![](./02-002_IMG2.png)
+![](../../../../.gitbook/assets/02-002_IMG2.png)
 
 ### Characteristics
 
-- Store the data type's stored value directly
-
-- Consist of a fixed size and a default fixed, immutable value
-
-- Cannot contain a null value
-
+* Store the data type's stored value directly
+* Consist of a fixed size and a default fixed, immutable value
+* Cannot contain a null value
 
 ### Types of Primitive Data Types
 
-
-![](./02-002_IMG3.png)
-![](./02-002_IMG4.png)
+![](<../../../../.gitbook/assets/02-002_IMG3 (2).png>) ![](<../../../../.gitbook/assets/02-002_IMG4 (2).png>)
 
 | Data Type  | Size (bits) | Range                                                   | Example                               | Common Use                                        |
 | ---------- | ----------- | ------------------------------------------------------- | ------------------------------------- | ------------------------------------------------- |
@@ -49,38 +43,30 @@ In Java, data types can be broadly categorised into two groups:
 | **short**  | 16          | -32,768 to 32,767                                       | `short temperature = -5;`             | Small integer values (e.g., temperature)          |
 | **int**    | 32          | -2,147,483,648 to 2,147,483,647                         | `int population = 1_000_000;`         | Default choice for whole numbers                  |
 | **long**   | 64          | -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 | `long distanceToMoon = 384_400_000L;` | Very large integers (suffix `L`)                  |
-| **float**  | 32          | ~±3.4×10³⁸ (≈7 decimal digits)                          | `float price = 19.99f;`               | Decimal numbers with lower precision (suffix `f`) |
-| **double** | 64          | ~±1.8×10³⁰⁸ (≈15 decimal digits)                        | `double pi = 3.141592653589793;`      | High-precision decimal numbers                    |
+| **float**  | 32          | \~±3.4×10³⁸ (≈7 decimal digits)                         | `float price = 19.99f;`               | Decimal numbers with lower precision (suffix `f`) |
+| **double** | 64          | \~±1.8×10³⁰⁸ (≈15 decimal digits)                       | `double pi = 3.141592653589793;`      | High-precision decimal numbers                    |
 
-
-![](./02-002_IMG5.png)
+![](<../../../../.gitbook/assets/02-002_IMG5 (2).png>)
 
 | Data Type | Size (bits) | Range                 | Example               | Common Use                   |
 | --------- | ----------- | --------------------- | --------------------- | ---------------------------- |
 | **char**  | 16          | 0 to 65,535 (Unicode) | `char initial = 'A';` | Single characters or symbols |
 
-
 | Data Type   | Size (bits) | Range             | Example                    | Common Use                        |
 | ----------- | ----------- | ----------------- | -------------------------- | --------------------------------- |
 | **boolean** | 1 (logical) | `true` or `false` | `boolean loggedIn = true;` | Conditional logic and state flags |
 
-
----
+***
 
 ## Reference Data Types
 
-![](./02-002_IMG6.png)
+![](<../../../../.gitbook/assets/02-002_IMG6 (1).png>)
 
 Reference data types use a **memory address that finds the actual data's location**. They enable the use of more complex data structures.
 
 ### Types of Reference Data Types
 
-![](./02-002_IMG7.png)
-![](./02-002_IMG8.png)
-![](./02-002_IMG9.png)
-![](./02-002_IMG10.png)
-![](./02-002_IMG11.png)
-
+![](<../../../../.gitbook/assets/02-002_IMG7 (1).png>) ![](<../../../../.gitbook/assets/02-002_IMG8 (1).png>) ![](<../../../../.gitbook/assets/02-002_IMG9 (1).png>) ![](<../../../../.gitbook/assets/02-002_IMG10 (1).png>) ![](<../../../../.gitbook/assets/02-002_IMG11 (1).png>)
 
 #### Strings
 
@@ -93,7 +79,7 @@ String name = "Alice";
 
 #### Arrays
 
-An **array is a collection of multiple values stored under a single variable name**.  
+An **array is a collection of multiple values stored under a single variable name**.\
 All values in an array must be of the same type.
 
 ```java
@@ -104,13 +90,13 @@ Arrays are great for storing lists of items like student scores or names. You ca
 
 #### Classes
 
-A **class is like a blueprint for creating objects**. 
+A **class is like a blueprint for creating objects**.
 
-Useful for:  
+Useful for:
 
--   Organising related data and functions together
--   Creating templates for multiple smaller items
--   Enforcing consistent structure and behaviour
+* Organising related data and functions together
+* Creating templates for multiple smaller items
+* Enforcing consistent structure and behaviour
 
 An **object is an instance of a class** that contains both data (attributes) and methods (functions) to operate on that data.
 
@@ -130,17 +116,17 @@ public class Book {
 
 #### Interfaces
 
-An **interface data type in Java is like a contract** that **defines a set of methods that a class must implement**. 
+An **interface data type in Java is like a contract** that **defines a set of methods that a class must implement**.
 
 When you create an interface, you only declare the methods without providing their actual code.
 
-Interfaces are useful for:  
+Interfaces are useful for:
 
--   Allowing a class to use features from multiple sources
-
--    Using different classes in the same way if they follow the same interface
-
--       Making code cleaner and easier to update
+* Allowing a class to use features from multiple sources
+* Using different classes in the same way if they follow the same interface
+* ```
+    Making code cleaner and easier to update
+  ```
 
 ```java
 public interface Animal {
@@ -153,7 +139,7 @@ public interface Animal {
 
 #### Enumerations (Enum)
 
-An **enum, short for enumeration, is a special data type** that lets you **define a list of named values**. 
+An **enum, short for enumeration, is a special data type** that lets you **define a list of named values**.
 
 Useful for representing **fixed sets of options**, such as days of the week or colours.
 
@@ -170,22 +156,21 @@ public enum DayOfWeek {
 }
 ```
 
----
+***
 
 ## Best Practices for Selecting Data Types
 
-![](./02-002_IMG12.png)
+![](../../../../.gitbook/assets/02-002_IMG12.png)
 
 When selecting data types for your programs, consider the following recommendations:
 
--   **Use `int`** for whole numbers
--   **Use `double`** for decimal-based numbers
--   **Use `String`** for text-based data
--   **Use `boolean`** for yes/no conditions
--   **Be careful with decimal calculations** – ensure consistency in data types used (e.g., use `double` throughout monetary calculations rather than mixing `double` and `float`)
+* **Use `int`** for whole numbers
+* **Use `double`** for decimal-based numbers
+* **Use `String`** for text-based data
+* **Use `boolean`** for yes/no conditions
+* **Be careful with decimal calculations** – ensure consistency in data types used (e.g., use `double` throughout monetary calculations rather than mixing `double` and `float`)
 
-
----
+***
 
 ## Lesson Speech
 

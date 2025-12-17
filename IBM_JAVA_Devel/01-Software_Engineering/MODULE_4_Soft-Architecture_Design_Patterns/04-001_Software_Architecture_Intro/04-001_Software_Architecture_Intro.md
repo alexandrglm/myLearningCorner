@@ -1,86 +1,76 @@
-# 04-001    Software Architecture Introduction
+# 04-001 Software Architecture Introduction
 
-![](./04-001_IMG10.png)
+![](../../../../.gitbook/assets/04-001_IMG10.png)
 
 **Software architecture** is the organisation of a system.
 
-Acts like  blueprint that defines the fundamental structures of a software system and explains its behaviour. 
+Acts like blueprint that defines the fundamental structures of a software system and explains its behaviour.
 
 It establishes how components interact with each other, the operating environment, and the design principles governing the system.
 
 ### The **Early Design decisions**
 
-![](./04-001_IMG2.png)
+![](../../../../.gitbook/assets/04-001_IMG2.png)
 
 Architecture captures decisions made during the design phase of the SDLC that are costly to change once implemented. These decisions conflate subsequent coding and implementation choices throughout development.
 
-### But, also, the **Non-functional aspects** 
+### But, also, the **Non-functional aspects**
 
-![](./04-001_IMG3.png)
+![](../../../../.gitbook/assets/04-001_IMG3.png)
 
 Architecture addresses critical qualities including:
 
--   Performance
--   Scalability
--   Maintainability
--   Interoperability
--   Security
--   Manageability
+* Performance
+* Scalability
+* Maintainability
+* Interoperability
+* Security
+* Manageability
 
----
+***
 
 ### Importance of Well-Designed Architecture
 
-
-
 1. **Stakeholder balance:** Balances differing needs of stakeholders and establishes a basis for communication among team members.
-
 2. **Foundation for decisions:** Represents earliest design decisions that influence all subsequent implementation choices.
-
 3. **Agility and longevity:** Enables adaptation to changing requirements and increases the lifespan of the software system even when implementation details change.
+4. **Increases the lifespan cycle**.
 
-4.  **Increases the lifespan cycle**.
-
----
+***
 
 ### Technology Stack Selection
 
-![](./04-001_IMG4.png)
+![](../../../../.gitbook/assets/04-001_IMG4.png)
 
-Architecture directly influences **technology stack** choices—the complete list of technologies including software, programming languages, libraries, and frameworks used to create the system.  
+Architecture directly influences **technology stack** choices—the complete list of technologies including software, programming languages, libraries, and frameworks used to create the system.
 
 Architects must understand each stack's advantages and disadvantages to anticipate development needs and address non-functional requirements.
 
----
+***
 
 ### Production Environment
 
-![](./04-001_IMG9.png)
+![](../../../../.gitbook/assets/04-001_IMG9.png)
 
 The architecture drives choices about the **production environment**—the infrastructure that runs and delivers the application to end-users, comprising servers, load balancers, databases, and other operational components.
 
----
+***
 
 ### Architectural Artifacts
 
 Three primary deliverables communicate design decisions:
 
-*   **SOFTWARE DESIGN DOCUMENT - SDD**
-![](./04-001_IMG6.png)
+* **SOFTWARE DESIGN DOCUMENT - SDD** ![](../../../../.gitbook/assets/04-001_IMG6.png)
+* **ARCHITECTURAL DIAGRAM** ![](../../../../.gitbook/assets/04-001_IMG7.png)
+* **UML Diagrams** ![](../../../../.gitbook/assets/04-001_IMG8.png)
 
-*   **ARCHITECTURAL DIAGRAM**
-![](./04-001_IMG7.png)
-
-*   **UML Diagrams**
-![](./04-001_IMG8.png)
-
-| Artifact | Purpose |
-|----------|---------|
+| Artifact                           | Purpose                                                                                                                                                                             |
+| ---------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Software Design Document (SDD)** | Collection of technical specifications including functional description, design considerations, assumptions, dependencies, constraints, requirements, objectives, and methodologies |
-| **Architectural Diagram** | Displays components, their interactions, constraints, and confines; illustrates architectural patterns |
-| **UML Diagrams** | Communicate structure and behaviour using language-agnostic notation |
+| **Architectural Diagram**          | Displays components, their interactions, constraints, and confines; illustrates architectural patterns                                                                              |
+| **UML Diagrams**                   | Communicate structure and behaviour using language-agnostic notation                                                                                                                |
 
----
+***
 
 ## Lesson Speech
 

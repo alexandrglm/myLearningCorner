@@ -1,46 +1,45 @@
 # 03-006 Packages and Imports
 
-![](./03-006_IMG16.png)
-![](./03-006_IMG17.png)
+![](../../../../.gitbook/assets/03-006_IMG16.png) ![](../../../../.gitbook/assets/03-006_IMG17.png)
 
--   **A package** is a namespace that organises related classes and interfaces into a structured folder-like format
--   **Packages are created** using the `package` keyword followed by the package name
--   **Packages provide:** organisation, namespace management, access control, and efficient file management
--   **An import** is a statement that allows a programmer to include classes or entire packages into their code
--   **Imports are done** using the `import` keyword followed by the package or class name
--   **Common Java packages** include `java.lang`, `java.util`, `java.io`, `java.net`, `java.sql`, and `java.time`
+* **A package** is a namespace that organises related classes and interfaces into a structured folder-like format
+* **Packages are created** using the `package` keyword followed by the package name
+* **Packages provide:** organisation, namespace management, access control, and efficient file management
+* **An import** is a statement that allows a programmer to include classes or entire packages into their code
+* **Imports are done** using the `import` keyword followed by the package or class name
+* **Common Java packages** include `java.lang`, `java.util`, `java.io`, `java.net`, `java.sql`, and `java.time`
 
----
+***
 
 ## What are Packages?
 
-![](./03-006_IMG1.png)
+![](../../../../.gitbook/assets/03-006_IMG1.png)
 
-**A package in Java serves as a namespace that organises and groups related classes and interfaces.**   
+**A package in Java serves as a namespace that organises and groups related classes and interfaces.**
 
-Think of packages as meticulously organised record office cabinets—each cabinet holds related files for a specific department.   
+Think of packages as meticulously organised record office cabinets—each cabinet holds related files for a specific department.\
 Similarly, packages in Java act as these cabinets, organising related classes and interfaces into specific namespaces.
 
-![](./03-006_IMG2.png)
+![](../../../../.gitbook/assets/03-006_IMG2.png)
 
-*   **Packages help organise classes into a folder-like structure, making them easier to locate and use.** 
-*   They also **prevent name conflicts by providing a unique namespace for each class**, allowing classes with the same name to exist in different packages. 
-*   Additionally, **packages control access by allowing some classes to be public whilst restricting others to package-level visibility.**
+* **Packages help organise classes into a folder-like structure, making them easier to locate and use.**
+* They also **prevent name conflicts by providing a unique namespace for each class**, allowing classes with the same name to exist in different packages.
+* Additionally, **packages control access by allowing some classes to be public whilst restricting others to package-level visibility.**
 
 ### Benefits of Packages
 
-- **Organisation:** Group related classes together
-- **Namespace Management:** Prevent naming conflicts
-- **Access Control:** Control visibility of classes
-- **Project Structure:** Facilitate efficient file management in large-scale applications
+* **Organisation:** Group related classes together
+* **Namespace Management:** Prevent naming conflicts
+* **Access Control:** Control visibility of classes
+* **Project Structure:** Facilitate efficient file management in large-scale applications
 
----
+***
 
 ## Creating Packages
 
 **To create a package in Java, add the `package` keyword at the top of your file, followed by the package name.**
 
-![](./03-006_IMG3.png)
+![](../../../../.gitbook/assets/03-006_IMG3.png)
 
 ### Syntax
 
@@ -54,7 +53,7 @@ package packageName;
 
 ### Example
 
-![](./03-006_IMG4.png)
+![](../../../../.gitbook/assets/03-006_IMG4.png)
 
 ```java
 package shapes;
@@ -78,19 +77,19 @@ public class Circle {
 }
 ```
 
--   The package is declared as `shapes`
--   A `Circle` class is defined within the package
--   A private `radius` attribute stores the circle's radius
--   The constructor initialises the radius
--   The `area()` method calculates and returns the area
+* The package is declared as `shapes`
+* A `Circle` class is defined within the package
+* A private `radius` attribute stores the circle's radius
+* The constructor initialises the radius
+* The `area()` method calculates and returns the area
 
----
+***
 
 ## Imports
 
-![](./03-006_IMG5.png)
+![](../../../../.gitbook/assets/03-006_IMG5.png)
 
-**An import is a statement in Java that allows users to bring in classes or packages into their current file, making the code cleaner and more readable.**  
+**An import is a statement in Java that allows users to bring in classes or packages into their current file, making the code cleaner and more readable.**\
 **It eliminates the need to type the full package name each time a class is used.**
 
 ### Syntax
@@ -101,7 +100,7 @@ import packageName.ClassName;
 
 ### Importing a Single Class
 
-![](./03-006_IMG6.png)
+![](../../../../.gitbook/assets/03-006_IMG6.png)
 
 ```java
 import shapes.Circle;
@@ -120,10 +119,9 @@ public class Main {
 
 ### Importing All Classes from a Package
 
-![](./03-006_IMG7.png)
+![](../../../../.gitbook/assets/03-006_IMG7.png)
 
-**All classes from a package can be imported by using an wildcard (*):**  
-
+**All classes from a package can be imported by using an wildcard (\*):**
 
 ```java
 import shapes.*;
@@ -140,106 +138,110 @@ public class Main {
 }
 ```
 
----
+***
 
 ## Built-in Java Packages
 
 ### `java.lang`
 
-![](./03-006_IMG8.png)
+![](../../../../.gitbook/assets/03-006_IMG8.png)
 
 **The `java.lang` package is automatically imported and provides core classes for Java development.**
 
 #### `java.lang` Key classes:
--   **`String`** – Text manipulation
--   **`Math`** – Mathematical functions
--   **`System`** – Input/output and environment interaction
 
----
+* **`String`** – Text manipulation
+* **`Math`** – Mathematical functions
+* **`System`** – Input/output and environment interaction
+
+***
 
 ### `java.util`
 
-![](./03-006_IMG9.png)
+![](../../../../.gitbook/assets/03-006_IMG9.png)
 
 **The `java.util` package contains classes for collections, data structures, and algorithms.**
 
 #### `java.util` Key classes:
--   **`ArrayList`** – Resizable arrays
--   **`HashMap`** – Key-value pair data storage
--   **`Date`** – Managing dates and times
 
----
+* **`ArrayList`** – Resizable arrays
+* **`HashMap`** – Key-value pair data storage
+* **`Date`** – Managing dates and times
+
+***
 
 ### `java.io`
 
-![](./03-006_IMG10.png)
+![](../../../../.gitbook/assets/03-006_IMG10.png)
 
 **The `java.io` package enables input and output operations, including file handling and stream processing.**
 
 #### `java.io` Key classes:
--   **`File`** – Manages file paths and directories
--   **`InputStream`** and **`OutputStream`** – Read and write byte streams
--   **`BufferedReader`** – Efficiently reads text from input streams
 
----
+* **`File`** – Manages file paths and directories
+* **`InputStream`** and **`OutputStream`** – Read and write byte streams
+* **`BufferedReader`** – Efficiently reads text from input streams
+
+***
 
 ### `java.net`
 
-![](./03-006_IMG11.png)
+![](../../../../.gitbook/assets/03-006_IMG11.png)
 
 **The `java.net` package offers classes for networking, allowing communication over networks and access to web resources.**
 
 #### `java.net` Key classes:
--   **`Socket`** – Used for client-server communication
--   **`URL`** – Represents a web address for accessing resources
 
----
+* **`Socket`** – Used for client-server communication
+* **`URL`** – Represents a web address for accessing resources
+
+***
 
 ### `java.sql`
 
-![](./03-006_IMG12.png)
+![](../../../../.gitbook/assets/03-006_IMG12.png)
 
 **The `java.sql` package facilitates database connectivity and executing Structured Query Language (SQL) queries.**
 
 #### `java.sql` Key classes:
--   **`Connection`** – Establishes database connections
--   **`Statement`** – Executes SQL commands
 
----
+* **`Connection`** – Establishes database connections
+* **`Statement`** – Executes SQL commands
+
+***
 
 ### `java.time`
 
-![](./03-006_IMG13.png)
+![](../../../../.gitbook/assets/03-006_IMG13.png)
 
 **The `java.time` package provides a modern API for handling dates and times.**
 
 #### `java.time` Key classes:
--   **`LocalDate`** – Manages dates without time zones
--   **`LocalTime`** – Handles times without dates
 
----
+* **`LocalDate`** – Manages dates without time zones
+* **`LocalTime`** – Handles times without dates
+
+***
 
 ## Best Practices for Packages and Imports
 
 ### Package Management
 
-![](./03-006_IMG14.png)
+![](../../../../.gitbook/assets/03-006_IMG14.png)
 
--   **Use a unique naming convention** like your domain name in reverse
--   **Group related classes together** logically
--   **Keep package names short and clear** to facilitate easy package management
+* **Use a unique naming convention** like your domain name in reverse
+* **Group related classes together** logically
+* **Keep package names short and clear** to facilitate easy package management
 
 ### Import Management
 
-![](./03-006_IMG15.png)
+![](../../../../.gitbook/assets/03-006_IMG15.png)
 
--   **Import only what you need** instead of using wildcards
--   **Organise imports logically** for better readability
--   **Remove unused imports** to keep your code tidy and professional
+* **Import only what you need** instead of using wildcards
+* **Organise imports logically** for better readability
+* **Remove unused imports** to keep your code tidy and professional
 
-
-
----
+***
 
 ## Lesson Speech
 

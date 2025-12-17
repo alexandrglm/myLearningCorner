@@ -1,15 +1,18 @@
-# MODULE 06 - 164    UML Diagrams
+# 06-164\_UML\_Class\_Diagram\_Elements\_Overview
 
-## Class Diagram Elements - Overview
+## MODULE 06 - 164    UML Diagrams
 
----
+### Class Diagram Elements - Overview
 
-# Class Diagram Fundamentals Guide
+***
 
-## Overview
+## Class Diagram Fundamentals Guide
+
+### Overview
+
 Class diagrams are the most popular structural diagrams in UML. They provide a blueprint for your object-oriented system by showing the static structure of classes and their basic elements.
 
-## Class Diagram Structure
+### Class Diagram Structure
 
 Every class diagram consists of **three main sections**:
 
@@ -23,21 +26,24 @@ Every class diagram consists of **three main sections**:
 └─────────────────┘
 ```
 
----
+***
 
-## 1. Name Section
+### 1. Name Section
 
-### Purpose
-- Identifies the class
-- Should be a **noun** representing the entity
-- Follows **PascalCase** convention
+#### Purpose
 
-### Best Practices
-- Use descriptive, meaningful names
-- Avoid abbreviations unless universally understood
-- Keep it concise but clear
+* Identifies the class
+* Should be a **noun** representing the entity
+* Follows **PascalCase** convention
 
-### Examples
+#### Best Practices
+
+* Use descriptive, meaningful names
+* Avoid abbreviations unless universally understood
+* Keep it concise but clear
+
+#### Examples
+
 ```
 User
 BankAccount
@@ -45,32 +51,36 @@ ShoppingCart
 EmailService
 ```
 
----
+***
 
-## 2. Attributes Section
+### 2. Attributes Section
 
 Attributes represent the **data** or **properties** that objects of this class will hold.
 
-### Required Components
+#### Required Components
+
 Each attribute must include **three elements**:
 
 1. **Visibility**
-2. **Name** 
+2. **Name**
 3. **Data Type**
 
-### Visibility Symbols
-| Symbol | Visibility | Meaning |
-|--------|------------|---------|
-| `+` | Public | Accessible from anywhere |
-| `#` | Protected | Accessible within class and subclasses |
-| `-` | Private | Accessible only within the class |
+#### Visibility Symbols
 
-### Syntax Format
+| Symbol | Visibility | Meaning                                |
+| ------ | ---------- | -------------------------------------- |
+| `+`    | Public     | Accessible from anywhere               |
+| `#`    | Protected  | Accessible within class and subclasses |
+| `-`    | Private    | Accessible only within the class       |
+
+#### Syntax Format
+
 ```
 [visibility][name]: [dataType]
 ```
 
-### Examples
+#### Examples
+
 ```
 + firstName: String
 + lastName: String
@@ -79,7 +89,8 @@ Each attribute must include **three elements**:
 # userId: Long
 ```
 
-### Real-World Class Example
+#### Real-World Class Example
+
 ```
 ┌─────────────────┐
 │   BankAccount   │
@@ -91,28 +102,32 @@ Each attribute must include **three elements**:
 └─────────────────┘
 ```
 
----
+***
 
-## 3. Operations Section
+### 3. Operations Section
 
 Operations represent the **behavior** or **methods** that the class can perform.
 
-### Key Characteristics
-- Always followed by **parentheses** `()`
-- Use **visibility symbols** (same as attributes)
-- Represent what the class **can do**
+#### Key Characteristics
 
-### Visibility Rules
-- `+` (Public): Can be called from **outside** the class
-- `-` (Private): Can **only** be called from **within** the class
-- `#` (Protected): Can be called from class and **subclasses**
+* Always followed by **parentheses** `()`
+* Use **visibility symbols** (same as attributes)
+* Represent what the class **can do**
 
-### Syntax Format
+#### Visibility Rules
+
+* `+` (Public): Can be called from **outside** the class
+* `-` (Private): Can **only** be called from **within** the class
+* `#` (Protected): Can be called from class and **subclasses**
+
+#### Syntax Format
+
 ```
 [visibility][methodName](): [returnType]
 ```
 
-### Examples
+#### Examples
+
 ```
 + deposit(): void
 + withdraw(): boolean
@@ -121,7 +136,8 @@ Operations represent the **behavior** or **methods** that the class can perform.
 # generateReport(): String
 ```
 
-### Complete Class Example
+#### Complete Class Example
+
 ```
 ┌─────────────────────────┐
 │      BankAccount        │
@@ -139,11 +155,12 @@ Operations represent the **behavior** or **methods** that the class can perform.
 └─────────────────────────┘
 ```
 
----
+***
 
-## Programming Language Mapping
+### Programming Language Mapping
 
-### JavaScript/TypeScript Example
+#### JavaScript/TypeScript Example
+
 ```typescript
 class BankAccount {
     public accountNumber: string;
@@ -159,7 +176,8 @@ class BankAccount {
 }
 ```
 
-### Python Example
+#### Python Example
+
 ```python
 class BankAccount:
     def __init__(self):
@@ -184,24 +202,26 @@ class BankAccount:
         pass
 ```
 
----
+***
 
-## Common Data Types
+### Common Data Types
 
-### Primitive Types
-- `String` - Text data
-- `Integer` - Whole numbers
-- `Double/Float` - Decimal numbers
-- `Boolean` - True/false values
-- `Date` - Date/time values
+#### Primitive Types
 
-### Object Types
-- Custom class names (e.g., `User`, `Address`)
-- Collections (e.g., `List<String>`, `Array<Integer>`)
+* `String` - Text data
+* `Integer` - Whole numbers
+* `Double/Float` - Decimal numbers
+* `Boolean` - True/false values
+* `Date` - Date/time values
 
----
+#### Object Types
 
-## Quick Reference Template
+* Custom class names (e.g., `User`, `Address`)
+* Collections (e.g., `List<String>`, `Array<Integer>`)
+
+***
+
+### Quick Reference Template
 
 ```
 ┌─────────────────┐
@@ -217,9 +237,9 @@ class BankAccount:
 └─────────────────┘
 ```
 
----
+***
 
-## Key Takeaways
+### Key Takeaways
 
 1. **Three sections**: Name, Attributes, Operations
 2. **Visibility matters**: Use `+`, `#`, `-` appropriately
@@ -229,39 +249,37 @@ class BankAccount:
 
 This foundation prepares you for more advanced concepts like relationships, associations, and multiplicities in the next guide.
 
+***
 
+### Video Lesson Speech
 
----
-
-## Video Lesson Speech
-
-We're going to start off this section on the class diagrams with a 
-review. You may be curious on why we're returning to this topic class 
+We're going to start off this section on the class diagrams with a\
+review. You may be curious on why we're returning to this topic class\
 diagram. We've walked through it a few times.
 
----
+***
 
 I wanted to design this course so in the future you would have a quick reference.
 
-![](./06-164_IMG1.png)
+![](../../../../../../../.gitbook/assets/06-163_IMG1.png)
 
 A Class diagram has three elements.
 
-- Name
-- Attributes
-- Operations
+* Name
+* Attributes
+* Operations
 
-The name is the most self-explanatory piece, we have a topic which is
- the name for this class diagram. In a real-world scenario, you wouldn't
- add these specific types of notes like class name because it's 
+The name is the most self-explanatory piece, we have a topic which is\
+the name for this class diagram. In a real-world scenario, you wouldn't\
+add these specific types of notes like class name because it's\
 self-explanatory.
 
 Attributes have three different items at a minimum that you should include.
 
-- Visibility (public/protected/private can be denoted with a plus/hash/minus)
-- Name
-- Data Type
+* Visibility (public/protected/private can be denoted with a plus/hash/minus)
+* Name
+* Data Type
 
-Operations are methods/functions. Add a plus if you want to call from
- outside of the topic or a minus if you do not want to call outside the 
+Operations are methods/functions. Add a plus if you want to call from\
+outside of the topic or a minus if you do not want to call outside the\
 topic. Also, operations are always followed by parentheses.

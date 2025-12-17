@@ -1,4 +1,6 @@
-## MODULE 03 - 100: Python - Default Arguments in Functions
+# 03-100\_Python\_Default\_funcs\_Args
+
+### MODULE 03 - 100: Python - Default Arguments in Functions
 
 Throughout this section, we have worked with function arguments in Python, always using **required positional arguments**. But what happens if a function is called without providing all the necessary values?
 
@@ -6,13 +8,13 @@ In this guide, we will explore **default arguments**—a powerful feature that a
 
 🔗 **Reference:** [Python Function Definitions](https://docs.python.org/3/tutorial/controlflow.html#defining-functions)
 
----
+***
 
-## 🔹 Understanding Default Arguments
+### 🔹 Understanding Default Arguments
 
 When defining a function, we can assign **default values** to parameters. If a value is not provided when calling the function, Python will use the **default argument** instead.
 
-### ✅ Example: Greeting Function
+#### ✅ Example: Greeting Function
 
 ```
 def greeting(name="Guest"):
@@ -28,20 +30,20 @@ greeting("Kristine")  # Output: Hi Kristine!
 
 📌 **What Happens?**
 
-- If no argument is passed, the function defaults to **"Guest"**.
-- If an argument is provided, it **overrides** the default.
+* If no argument is passed, the function defaults to **"Guest"**.
+* If an argument is provided, it **overrides** the default.
 
 🔹 **Key Concept:** Default arguments make functions more **flexible and user-friendly**, avoiding errors when values are missing.
 
 🔗 **Reference:** [Python Function Arguments](https://docs.python.org/3/tutorial/controlflow.html#default-argument-values)
 
----
+***
 
-## 🚨 The Wrong Way: Using Mutable Defaults
+### 🚨 The Wrong Way: Using Mutable Defaults
 
 One of the most common mistakes when using default arguments is assigning a **mutable object** (like a list) as a default value.
 
-### ❌ Dangerous Example: Using a List as a Default Argument
+#### ❌ Dangerous Example: Using a List as a Default Argument
 
 ```
 def some_function(collection=[]):
@@ -51,14 +53,14 @@ def some_function(collection=[]):
 
 📌 **What Happens?**
 
-- Calling `some_function()` the first time returns `[1]`.
-- Calling `some_function()` again **unexpectedly returns `[1, 1]`**.
+* Calling `some_function()` the first time returns `[1]`.
+* Calling `some_function()` again **unexpectedly returns `[1, 1]`**.
 
-### 🔥 Why Does This Happen?
+#### 🔥 Why Does This Happen?
 
 Python **only evaluates default arguments once**, when the function is **first defined**, not every time it is called. Because lists are **mutable**, every subsequent function call **modifies the same list** stored in memory instead of creating a new one.
 
-### 🔍 Memory Behavior
+#### 🔍 Memory Behavior
 
 To visualize this, we can print the **memory ID** of the list:
 
@@ -76,13 +78,13 @@ some_function()  # Same memory ID, meaning the list persists!
 
 🔗 **Reference:** [Python Data Model - Mutability](https://docs.python.org/3/reference/datamodel.html#objects-values-and-types)
 
----
+***
 
-## ✅ The Correct Way: Using `None` as a Default Argument
+### ✅ The Correct Way: Using `None` as a Default Argument
 
 To avoid unintended side effects, use **`None`** as a default value and create a new list inside the function.
 
-### 🛠 Corrected Example
+#### 🛠 Corrected Example
 
 ```
 def some_function(collection=None):
@@ -92,72 +94,72 @@ def some_function(collection=None):
     return collection
 ```
 
-### 🔍 Why This Works
+#### 🔍 Why This Works
 
-- Each function call **creates a new list** instead of modifying a shared one.
-- Prevents accidental modifications to persistent memory.
+* Each function call **creates a new list** instead of modifying a shared one.
+* Prevents accidental modifications to persistent memory.
 
----
+***
 
-## 📌 Summary
+### 📌 Summary
 
-- **Default arguments** allow functions to be called **without requiring all parameters**.
-- Avoid **mutable defaults** like lists, as they persist across function calls.
-- Instead, use `None` as a default value and initialize the list inside the function.
-- This ensures that **each function call starts with a fresh, independent object**.
+* **Default arguments** allow functions to be called **without requiring all parameters**.
+* Avoid **mutable defaults** like lists, as they persist across function calls.
+* Instead, use `None` as a default value and initialize the list inside the function.
+* This ensures that **each function call starts with a fresh, independent object**.
 
-****
+***
 
-## Video Lesson Speech
+### Video Lesson Speech
 
-Throughout this section on Python functions, each time we have referenced function arguments they have been the same type of arguments.  
+Throughout this section on Python functions, each time we have referenced function arguments they have been the same type of arguments.
 
-****
+***
 
-They are just like we have right here in our example for greeting where we have a function called name and if we were to try to call this function without some kind of value.   
+They are just like we have right here in our example for greeting where we have a function called name and if we were to try to call this function without some kind of value.
 
 So, if we were to just try to call it just like this we would run into an error:
 
-![large](./03-100_IMG1.png)
+![large](../../../../../../../../.gitbook/assets/03-100_IMG1.png)
 
-The error is that we have a one missing required positional argument, that is name.   
+The error is that we have a one missing required positional argument, that is name.
 
-Now, this is helpful and there are many times where this is exactly what you want to have.  
+Now, this is helpful and there are many times where this is exactly what you want to have.
 
- But imagine that you have a greeting function and you need it to work on your Web site regardless if someone is signed in or if they are a guest.   
+But imagine that you have a greeting function and you need it to work on your Web site regardless if someone is signed in or if they are a guest.
 
-Well if they're a guest then you're not going to know their name.   
+Well if they're a guest then you're not going to know their name.
 
 And so what you can do is have what is called a default argument and the syntax for that is inside of the definition line you say name equals and then you pass in whatever the default argument is.
 
-So, in this case, we're just going to say, guest. And so now if I run
- this code you can see that it prints out Hi guest whenever no arguments
- are provided.
+So, in this case, we're just going to say, guest. And so now if I run\
+this code you can see that it prints out Hi guest whenever no arguments\
+are provided.
 
-![large](./03-100_IMG2.png)
+![large](../../../../../../../../.gitbook/assets/03-100_IMG2.png)
 
-But whenever we do pass in a string as we have right here then that overrides the default argument.   
+But whenever we do pass in a string as we have right here then that overrides the default argument.
 
-And so that is a very nice and clean way of being able to have your system be dynamic enough so that you can call the function and you can pass it arguments or you can leave those arguments blank and this is the proper way of implementing default 
+And so that is a very nice and clean way of being able to have your system be dynamic enough so that you can call the function and you can pass it arguments or you can leave those arguments blank and this is the proper way of implementing default\
 arguments.
 
-## The wrong way
+### The wrong way
 
-Now, I'm going to show you the wrong way to do this and this can lead to some very confusing Python bugs and so I want to show it to you.   
+Now, I'm going to show you the wrong way to do this and this can lead to some very confusing Python bugs and so I want to show it to you.
 
-This is **also a common interview question if you are looking for a Python programming job**.   
+This is **also a common interview question if you are looking for a Python programming job**.
 
-So, I wanted to include this so I'm going to create a function here.  
+So, I wanted to include this so I'm going to create a function here.
 
-And the goal of this function does not matter at all because I just want to show you exactly what this common issue is.   
+And the goal of this function does not matter at all because I just want to show you exactly what this common issue is.
 
-So, I'm just going to call it some function and I'm going to pass in some type of collection. So this is just the function name.   
+So, I'm just going to call it some function and I'm going to pass in some type of collection. So this is just the function name.
 
-It could be named anything it could be named X.   
+It could be named anything it could be named X.
 
-But we're just going to say collection because I want you to realize that this is going to expect a list.   
+But we're just going to say collection because I want you to realize that this is going to expect a list.
 
-And so I'm gonna say def some_function collection with a default argument.
+And so I'm gonna say def some\_function collection with a default argument.
 
 ```python
 def some_function(collection = [])
@@ -170,69 +172,69 @@ def some_function(collection=[]):
  collection.append(1)
 ```
 
-Now, this is very basic, and part of the reason why is because what 
-I'm going to show you goes into some advanced topics and it deals even 
-with memory usage and different elements like that. And so I think the 
-more straightforward the example the easier it's going to be to 
+Now, this is very basic, and part of the reason why is because what\
+I'm going to show you goes into some advanced topics and it deals even\
+with memory usage and different elements like that. And so I think the\
+more straightforward the example the easier it's going to be to\
 understand why this could be a problem.
 
-So all that this is going to do is it is going to go to our collection here and it's going to append the number one. So so far that's pretty straightforward. So I'm just going to say return collection so this is just going to return the final collection.  
+So all that this is going to do is it is going to go to our collection here and it's going to append the number one. So so far that's pretty straightforward. So I'm just going to say return collection so this is just going to return the final collection.
 
-Now depending on what text editor you're using have you're using Repl. You 
-can see we already have a warning here and the warning says dangerous 
+Now depending on what text editor you're using have you're using Repl. You\
+can see we already have a warning here and the warning says dangerous\
 default value as argument.
 
-![large](./03-100_IMG3.png)
+![large](../../../../../../../../.gitbook/assets/03-100_IMG3.png)
 
-The reason for this goes to the topic of **mutability versus immutability** and if you're curious about why I discussed that topic so much earlier on in the course it's because you are constantly going to see this issue arise as you're building out Python programs.   
+The reason for this goes to the topic of **mutability versus immutability** and if you're curious about why I discussed that topic so much earlier on in the course it's because you are constantly going to see this issue arise as you're building out Python programs.
 
-**You do not want to make a mutable data type such as a list a default argument** and I'm going to show you why right here if we come down and if I call our some_function just like this and it's returning a value.   
+**You do not want to make a mutable data type such as a list a default argument** and I'm going to show you why right here if we come down and if I call our some\_function just like this and it's returning a value.
 
 So, in order to see this, we need to print it out, then if I call this just like I have it here. It seems like it works. You can see that we have a list of one.
 
-![large](./03-100_IMG4.png)
+![large](../../../../../../../../.gitbook/assets/03-100_IMG4.png)
 
 Now if I were to call this somewhere in another part of the program imagine that this is even in a different file a completely different part of the application you would most likely expect that the collection here would return the value of a list with 1 just like we got returned right here.
 
-![large](./03-100_IMG5.png)
+![large](../../../../../../../../.gitbook/assets/03-100_IMG5.png)
 
 That would be the logical behavior at least in my mind and in most people's minds.
 
-If I call this we have a different issue.   
+If I call this we have a different issue.
 
-So notice here this goes to the entire issue of mutability our collection is staying in memory.   
+So notice here this goes to the entire issue of mutability our collection is staying in memory.
 
-So, that means that even if you're calling some function from some other 
-part of the program it is going to go back and it's going to see the very first time where the collection was created and it's going to go reference that original collection.  
+So, that means that even if you're calling some function from some other\
+part of the program it is going to go back and it's going to see the very first time where the collection was created and it's going to go reference that original collection.
 
- So, even though your other part of the program thought it was starting off with a clean slate.   
+So, even though your other part of the program thought it was starting off with a clean slate.
 
-It was just calling some function and performing some type of behavior. You actually
- have a connection between the two collections.  
+It was just calling some function and performing some type of behavior. You actually\
+have a connection between the two collections.
 
-So, the collection on line 6 is connected to line 9 just like you can see here that we're printing out.   
+So, the collection on line 6 is connected to line 9 just like you can see here that we're printing out.
 
 Two different collections that's what it looks like but it's actually referencing the same spot in memory.
 
 ![large](https://s3-us-west-2.amazonaws.com/images-devcamp/Introduction+to+Programming+with+Python/Python+Methods+and+Functions/Guide+to+Default+Arguments+in+Python+Functions+%23+1490/image6.png)
 
-If that's not clear to you, let's walk through a couple of other ways  of looking at this.  
+If that's not clear to you, let's walk through a couple of other ways of looking at this.
 
- So, I'm going to come back into our function here and I'm going to add a print statement so I'm going to print out what is called the ID.
+So, I'm going to come back into our function here and I'm going to add a print statement so I'm going to print out what is called the ID.
 
 Now, this is the place in memory on your computer that this particular collection is so I'm going to say give me the ID for the collection.
 
 ![large](https://s3-us-west-2.amazonaws.com/images-devcamp/Introduction+to+Programming+with+Python/Python+Methods+and+Functions/Guide+to+Default+Arguments+in+Python+Functions+%23+1490/image7.png)
 
-And so now if I run this again you're going to see that when we print it out some function the first time that it printed out this long number it ends in 776.  
+And so now if I run this again you're going to see that when we print it out some function the first time that it printed out this long number it ends in 776.
 
 When we printed out the sum function somewhere else in the program it is still pointing to that 776 address in your computer's memory. And that is the reason why we have a list that did not start off with the clean slate but it actually added onto it.
 
 **And so that is the reason why it is considered a very bad practice to ever set a default argument as a list.**
 
-****
+***
 
-## Code
+### Code
 
 ```python
 # 03-100: Default Arguments in functions
@@ -269,9 +271,9 @@ print(a_function())     # 1, 1
 ## Both are using the same memory spot
 ```
 
-****
+***
 
-## CodingExercise
+### CodingExercise
 
 ```python
 # CodingExercise

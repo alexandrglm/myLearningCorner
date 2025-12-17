@@ -3,25 +3,23 @@
 ### Role of Back-End Development
 
 * Front-end developers create client-facing interfaces using HTML, CSS, and JavaScript.
-
 * **Back-end developers** create and manage resources processing user requests, supplying data, and providing services securely.
 
-![](./02-003_IMG1.png)
+![](../../../../.gitbook/assets/02-003_IMG1.png)
 
 Front-end and back-end developers collaborate closely, understanding requirements and interaction points before development and throughout the lifecycle.
 
 ### Back-End Responsibilities
 
-Back-end developers handle data processing (login information, search queries, payment details), user account management, authentication, authorisation, and secure data handling.  
+Back-end developers handle data processing (login information, search queries, payment details), user account management, authentication, authorisation, and secure data handling.
 
 They enable infrastructure to process requests, respond to client interactions (data requests, form inputs, sensitive information), and route requests appropriately.
 
----
+***
 
 ### Core Components: APIs, Routes, Endpoints
 
-
-![](./02-003_IMG2.png)
+![](../../../../.gitbook/assets/02-003_IMG2.png)
 
 **API** (Application Programming Interface): Code working with data using JSON or XML with set rules and structure. Enables Cloud apps, mobile apps, and software to access back-end resources.
 
@@ -29,37 +27,31 @@ They enable infrastructure to process requests, respond to client interactions (
 
 **Endpoint**: An API or path addressing requests. Missing endpoints trigger 404 errors.
 
-
-![](./02-003_IMG3.png)
-
+![](../../../../.gitbook/assets/02-003_IMG3.png)
 
 Back-end routing connects front-end requests to correct back-end services, allowing clients to "plug into the correct socket" at the server.
 
----
+***
 
 ### Popular Back-End Languages and Frameworks
 
-
-![](./02-003_IMG4.png)
+![](../../../../.gitbook/assets/02-003_IMG4.png)
 
 **JavaScript**: Originally browser-based; now used server-side with Node.js and Express frameworks for back-end functionality.
 
 **Python**: Flexible, easy to learn language with wide functionality for webpages, database connection, and data analysis. Popular frameworks include Django and Flask.
 
-
----
+***
 
 ### Working with DBs
 
+![](../../../../.gitbook/assets/02-003_IMG5.png)
 
-![](./02-003_IMG5.png)
-
-**SQL and Databases**: Essential for back-end developers. 
+**SQL and Databases**: Essential for back-end developers.
 
 **Object Relational Mapping (ORM)** tools simplify database queries, though understanding database fundamentals aids troubleshooting.
 
-
----
+***
 
 ## Video Lesson
 
