@@ -1,57 +1,50 @@
 # 04-003 Object-Oriented Analysis
 
-![](./04-003_IMG5.png)
+![](../../../../.gitbook/assets/04-003_IMG5.png)
 
 **Object-Oriented Analysis and Design (OOAD)** is an approach for analysing and designing software systems developed using object-oriented programming languages (Java, C++, Python, etc.).
 
-![](./04-003_IMG1.png)
+![](../../../../.gitbook/assets/04-003_IMG1.png)
 
----
+***
 
 ### Objects and Classes
 
-![](./04-003_IMG2.png)
+![](../../../../.gitbook/assets/04-003_IMG2.png)
 
-**Objects** are the fundamental building blocks of OOAD.   
+**Objects** are the fundamental building blocks of OOAD.\
 Each object contains:
 
--   **Data:** Properties that describe the object's state
--   **Behaviours:** Methods that prescribe the actions the object can take
-
+* **Data:** Properties that describe the object's state
+* **Behaviours:** Methods that prescribe the actions the object can take
 
 **Classes** are generic blueprints or templates for creating objects.
 
 A class defines the structure and capabilities that instances will possess, specifying generic attributes (properties and methods) without assigning particular values until an object is instantiated.
 
-**Instantiation** is the process of creating a specific object (instance) from a class. When instantiated, the generic attributes defined in the class are assigned particular values.   
+**Instantiation** is the process of creating a specific object (instance) from a class. When instantiated, the generic attributes defined in the class are assigned particular values.
 
 For example, the `Patient` class may define a `LastName` property as a placeholder; when a specific patient object is instantiated (e.g., Pepito Perez), `LastName` receives a concrete value.
 
-
----
-
+***
 
 ### Advantages of OOAD
 
-![](./04-003_IMG3.png)
+![](../../../../.gitbook/assets/04-003_IMG3.png)
 
--   Allows complex systems to be decomposed into interacting objects
+* Allows complex systems to be decomposed into interacting objects
+* Enables multiple developers to work on different components simultaneously
+* Provides a structured approach aligned with object-oriented programming paradigms
 
--   Enables multiple developers to work on different components simultaneously
-
--   Provides a structured approach aligned with object-oriented programming paradigms
-
----
+***
 
 ### Class Diagrams
 
 **Class diagrams** are structural UML diagrams used to communicate a software system's structure in OOAD. They display:
 
-- **Classes:** Each box represents a class
-
-- **Attributes:** Properties (data) and methods (actions) available to the class
-- **Relationships:** How classes relate to and interact with one another
-
+* **Classes:** Each box represents a class
+* **Attributes:** Properties (data) and methods (actions) available to the class
+* **Relationships:** How classes relate to and interact with one another
 
 #### Inheritance
 
@@ -59,16 +52,16 @@ For example, the `Patient` class may define a `LastName` property as a placehold
 
 #### Example hierarchy
 
-![](./04-003_IMG4.png)
+![](../../../../.gitbook/assets/04-003_IMG4.png)
 
-- **Medical Personnel** (parent class)
-  - **Nurse** (subclass)
-  - **Doctor** (subclass)
-    - **Specialist** (subclass of Doctor)
+* **Medical Personnel** (parent class)
+  * **Nurse** (subclass)
+  * **Doctor** (subclass)
+    * **Specialist** (subclass of Doctor)
 
 In this structure, specialists can perform all actions doctors can, and doctors can perform all actions medical personnel can.
 
----
+***
 
 ## Lesson Speech
 

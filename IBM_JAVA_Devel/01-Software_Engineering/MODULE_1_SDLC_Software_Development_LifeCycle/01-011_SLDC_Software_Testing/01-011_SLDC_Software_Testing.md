@@ -1,123 +1,110 @@
 # 01-011: SDLC - Software Testing
 
-![](./01-011_IMG1.png)
-![](./01-011_IMG16.png)
+![](../../../../.gitbook/assets/01-011_IMG1.png) ![](../../../../.gitbook/assets/01-011_IMG16.png)
 
-**Software Testing** is the practice of integrating quality checks throughout the software development cycle.   
+**Software Testing** is the practice of integrating quality checks throughout the software development cycle.
 
-Its purpose is verifying software matches expected requirements and ensuring error-free code.   
+Its purpose is verifying software matches expected requirements and ensuring error-free code.
 
-Testing involves writing **test cases**—step-by-step procedures containing inputs, data, and expected outputs—to verify functionality and requirement satisfaction.   
+Testing involves writing **test cases**—step-by-step procedures containing inputs, data, and expected outputs—to verify functionality and requirement satisfaction.
 
 Test cases should be written after requirements are finalised, though timing varies by development method (Agile, waterfall).
 
----
+***
 
 ## Three Testing Categories
 
-![](./01-011_IMG2.png)
+![](../../../../.gitbook/assets/01-011_IMG2.png)
 
 ***
 
 ### **Functional Testing**
 
-Uses black-box testing (testing without examining source code or internal structure), focusing only on inputs and corresponding outputs of the system under test (SUT).   
+Uses black-box testing (testing without examining source code or internal structure), focusing only on inputs and corresponding outputs of the system under test (SUT).
 
-![](./01-011_IMG3.png)
+![](../../../../.gitbook/assets/01-011_IMG3.png)
 
-Tests functional requirements through manual or automated methods, ensuring applications are usable and accessible.   
+Tests functional requirements through manual or automated methods, ensuring applications are usable and accessible.
 
 Validates that user errors and input edge cases are handled seamlessly with appropriate error messages.
 
-![](./01-011_IMG4.png)
+![](../../../../.gitbook/assets/01-011_IMG4.png)
 
 ***
 
 ### **Non-Functional Testing**
 
-![](./01-011_IMG5.png)
+![](../../../../.gitbook/assets/01-011_IMG5.png)
 
-Evaluates application attributes including performance, security, scalability, and availability.   
+Evaluates application attributes including performance, security, scalability, and availability.
 
 Answers critical questions like:
-> How does the application behave under stress? 
-> What occurs when many users login simultaneously? 
-> Are documentation and user manuals consistent with application behaviour? 
-> Does the application behave similarly across operating systems? 
-> How does disaster recovery function? 
-> How secure is the application?
+
+> How does the application behave under stress? What occurs when many users login simultaneously? Are documentation and user manuals consistent with application behaviour? Does the application behave similarly across operating systems? How does disaster recovery function? How secure is the application?
 
 ***
 
 ### **Regression Testing** (Maintenance Testing)
 
-![](./01-011_IMG8.png)
+![](../../../../.gitbook/assets/01-011_IMG8.png)
 
-Confirms recent changes (bug fixes, updates) do not adversely affect existing functionality.   
-Occurs when requirements change or defects are fixed.  
+Confirms recent changes (bug fixes, updates) do not adversely affect existing functionality.\
+Occurs when requirements change or defects are fixed.
 
-![](./01-011_IMG9.png)
+![](../../../../.gitbook/assets/01-011_IMG9.png)
 
 Selection challenges depend on factors including frequent defects, frequently used functionality, recently changed features, complex test cases, edge cases, and randomly successful/failed cases.
 
-
----
+***
 
 ## Four Testing Levels
 
-![](./01-011_IMG10.png)
+![](../../../../.gitbook/assets/01-011_IMG10.png)
 
-1.  Unit testing
-2.  Inntegration testing
-3.  System testing
-4.  Acceptance testing
+1. Unit testing
+2. Inntegration testing
+3. System testing
+4. Acceptance testing
 
 Each level occurs at different SDLC stages, reducing testing overlap and time:
 
-
 ### **Unit Testing**
 
-![](./01-011_IMG11.png)
+![](../../../../.gitbook/assets/01-011_IMG11.png)
 
-Verifies specific code sections, typically at the function level.  
+Verifies specific code sections, typically at the function level.
 
 Performed by developers during the development phase, eliminating construction errors before code integration. Increases software quality and development efficiency.
 
-
 ### **Integration Testing**
 
-![](./01-011_IMG12.png)
+![](../../../../.gitbook/assets/01-011_IMG12.png)
 
-Black-box testing identifying errors when two or more independent code modules combine.  
+Black-box testing identifying errors when two or more independent code modules combine.
 
-Tests smaller units (previously passed unit testing) incorporated into larger applications.  
+Tests smaller units (previously passed unit testing) incorporated into larger applications.
 
-![](./01-011_IMG13.png)
+![](../../../../.gitbook/assets/01-011_IMG13.png)
 
 Exposes bugs in module interaction, communication deficiencies with new modules, differing programming logic, and poor exception handling.
 
-
-
 ### **System Testing**
 
-![](./01-011_IMG14.png)
+![](../../../../.gitbook/assets/01-011_IMG14.png)
 
-Conducted on fully integrated systems after integration testing, evaluating compliance with specified requirements.   
+Conducted on fully integrated systems after integration testing, evaluating compliance with specified requirements.
 
 Tests both functional and non-functional aspects in a staging environment mirroring production. Validates the complete software product.
 
-
-
 ### **Acceptance Testing**
 
-![](./01-011_IMG15.png)
+![](../../../../.gitbook/assets/01-011_IMG15.png)
 
-Formal testing against user needs, requirements, and business processes. Determines whether systems satisfy user, customer, and stakeholder needs.  
+Formal testing against user needs, requirements, and business processes. Determines whether systems satisfy user, customer, and stakeholder needs.
 
 Usually performed by customers or stakeholders during the maintenance SDLC stage.
 
-
----
+***
 
 ## Video Lesson
 

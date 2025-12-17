@@ -1,12 +1,12 @@
 # 05-001 What Does a Software Engineer Do?
 
-![](./05-001_IMG9.png)
+![](../../../../.gitbook/assets/05-001_IMG9.png)
 
 ### Software Engineering Overview
 
-![](./05-001_IMG1.png)
+![](../../../../.gitbook/assets/05-001_IMG1.png)
 
-**Software engineers** apply expertise in engineering, mathematics, and computing to design and develop software solving real-world problems for users.  
+**Software engineers** apply expertise in engineering, mathematics, and computing to design and develop software solving real-world problems for users.
 
 The discipline suits analytical thinkers with strong problem-solving abilities.
 
@@ -14,87 +14,89 @@ The discipline suits analytical thinkers with strong problem-solving abilities.
 
 Software engineers develop diverse software categories including:
 
-![](./05-001_IMG2.png)
+![](../../../../.gitbook/assets/05-001_IMG2.png)
 
-- Desktop applications
-- Web applications
-- Mobile apps
-- Games
-- Operating systems
-- Network controllers
+* Desktop applications
+* Web applications
+* Mobile apps
+* Games
+* Operating systems
+* Network controllers
 
 ### Technologies and Tools
 
-Engineers utilise multiple technologies:  
+Engineers utilise multiple technologies:
 
-![](./05-001_IMG3.png)
+![](../../../../.gitbook/assets/05-001_IMG3.png)
 
--   Programming languages
--   Development environments
--   Frameworks and libraries
--   Databases
--   Servers.
+* Programming languages
+* Development environments
+* Frameworks and libraries
+* Databases
+* Servers.
 
 ### Categories of Software Engineers
 
-![](./05-001_IMG4.png)
+![](../../../../.gitbook/assets/05-001_IMG4.png)
 
 #### **Back-end Engineers (System Developers)**
+
 Build computer systems and networks supporting front-end applications. Focus on infrastructure and system-level functionality.
 
 #### **Front-end Engineers (Application Developers)**
+
 Client-focused, creating software users directly interact with, including Android, iOS, and Windows applications, and platform-agnostic websites.
 
----
+***
 
 ### Work Contexts and Areas
 
-![](./05-001_IMG5.png)
+![](../../../../.gitbook/assets/05-001_IMG5.png)
 
 Software engineers work in various settings developing:
 
-- **Off-the-shelf software:** Commercial products for general market
-- **Bespoke software:** Customised solutions for specific client requirements
-- **Internal software:** Systems for organisation users
+* **Off-the-shelf software:** Commercial products for general market
+* **Bespoke software:** Customised solutions for specific client requirements
+* **Internal software:** Systems for organisation users
 
 Within teams, engineers may specialise in:
 
-![](./05-001_IMG6.png)
+![](../../../../.gitbook/assets/05-001_IMG6.png)
 
-- **Data integration layers:** Accessing and loading data from multiple sources
-- **Business logic:** Applying real-world business rules to data
-- **User interfaces:** Enabling user interaction with solutions
+* **Data integration layers:** Accessing and loading data from multiple sources
+* **Business logic:** Applying real-world business rules to data
+* **User interfaces:** Enabling user interaction with solutions
 
----
+***
 
 ### Day-to-Day Tasks and Responsibilities
 
 Common tasks include:
 
-![](./05-001_IMG7.png)
+![](../../../../.gitbook/assets/05-001_IMG7.png)
 
-- **Design:** Taking user specifications and designing new software systems
-- **Development:** Writing code and testing functionality
-- **Evaluation:** Testing new software programmes
-- **Optimisation:** Maximising software efficiency
-- **Maintenance:** Updating and maintaining existing systems
-- **Documentation:** Recording code for colleague understanding
-- **Communication:** Presenting systems to users and customers
-- **Deployment:** Some engineers (e.g., DevOps practitioners) integrate and deploy code onto infrastructure
+* **Design:** Taking user specifications and designing new software systems
+* **Development:** Writing code and testing functionality
+* **Evaluation:** Testing new software programmes
+* **Optimisation:** Maximising software efficiency
+* **Maintenance:** Updating and maintaining existing systems
+* **Documentation:** Recording code for colleague understanding
+* **Communication:** Presenting systems to users and customers
+* **Deployment:** Some engineers (e.g., DevOps practitioners) integrate and deploy code onto infrastructure
 
 Engineers both build new systems and test, improve, and maintain colleagues' software.
 
----
+***
 
 ### Roles - Career Progression
 
-![](./05-001_IMG8.png)
+![](../../../../.gitbook/assets/05-001_IMG8.png)
 
 **Junior positions** typically focus on limited, specific responsibilities: writing, testing, deploying, and documenting code.
 
 **Senior roles** expand scope significantly, providing primary responsibility for multiple solution areas including planning and design phases. Progression moves from responsibility for single code sections to multiple areas across one or more products.
 
----
+***
 
 ## Lesson Speech
 

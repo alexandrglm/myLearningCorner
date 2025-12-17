@@ -1,18 +1,20 @@
-## Module 03 - 116: Python - Exercise
+# 03-116\_EXERCISE\_Web-Scrapper
 
-## Web Scraper
+### Module 03 - 116: Python - Exercise
 
-****
+### Web Scraper
 
-# Video Lesson Speech
+***
 
-## Note
+## Video Lesson Speech
 
-### DailySmarty is currently not accessible.
+### Note
 
-### Web scraping has recently become less common as a general practice, and many websites have set up security measures to prevent scraping of their data. It is not something we will use elsewhere in the course, but it is good to know about as it allows pulling information from a website when it doesn't have an accessible API.
+#### DailySmarty is currently not accessible.
 
-### Watching the video will suffice for this lesson as it is difficult to reference a site for scraping. Please reference the documentation to learn more about web scraping and the BeautifulSoup package: [BeautifulSoup Documentation](https://www.crummy.com/software/BeautifulSoup/bs4/doc/index.html)
+#### Web scraping has recently become less common as a general practice, and many websites have set up security measures to prevent scraping of their data. It is not something we will use elsewhere in the course, but it is good to know about as it allows pulling information from a website when it doesn't have an accessible API.
+
+#### Watching the video will suffice for this lesson as it is difficult to reference a site for scraping. Please reference the documentation to learn more about web scraping and the BeautifulSoup package: [BeautifulSoup Documentation](https://www.crummy.com/software/BeautifulSoup/bs4/doc/index.html)
 
 Part of the reason why I have structured this particular project in the way that I have is because it will help you on the entire course capstone project. There are going to be a few fundamental concepts that you're going to learn while you go through this project and when you watch me go through the solution. These concepts will help you on the much larger and more challenging course capstone project. I want to give you some of the knowledge that you're going to need in order to do that.
 
@@ -28,33 +30,33 @@ What I want you to do is build a program that comes to this URL and then **scrap
 
 Now, technically, just like every other website, this is just **HTML code**. If I were to right-click here and view the page source, this is what the website actually looks like to the browser.
 
-![IMG](./03-116_IMG1.png)
+![IMG](../../../../../../../../.gitbook/assets/03-116_IMG1.png)
 
 If you leverage the **requests library**, you're going to be able to call the URL directly and then get access to all of this content. If this looks very confusing, do not worry. It is something that you're going to learn how to implement, and I'm also going to help you and give you a few hints on how you can parse pure HTML code. It's going to be with a few more packages and libraries.
 
-But before we get into those, let me show you the full set of requirements that I want you to do. You're going to come to this URL: [http://www.dailysmarty.com/topics/python](http://www.dailysmarty.com/topics/python).  
+But before we get into those, let me show you the full set of requirements that I want you to do. You're going to come to this URL: [http://www.dailysmarty.com/topics/python](http://www.dailysmarty.com/topics/python).
 
- The program is going to parse through all of the data on there. I want you to select all of the links that go to posts. If I were to right-click on this and click "Copy Link Address," let me open up a text editor, say `vim project.py`, and paste in what that URL looks like. You are going to get access to this.
+The program is going to parse through all of the data on there. I want you to select all of the links that go to posts. If I were to right-click on this and click "Copy Link Address," let me open up a text editor, say `vim project.py`, and paste in what that URL looks like. You are going to get access to this.
 
-![IMG](./03-116_IMG2.png)
+![IMG](../../../../../../../../.gitbook/assets/03-116_IMG2.png)
 
-Now, what I want you to do is to only pull out the links that are related to posts.   
+Now, what I want you to do is to only pull out the links that are related to posts.
 
-There are going to be links all over this page.   
+There are going to be links all over this page.
 
 There are links that go to the feed, topics, users, posts, new posts, URLs—they are going to be all over the place. So, I want you to filter out the ones that you do not want and only grab the ones that go directly to a post.
 
-![IMG](./03-116_IMG3.png)
+![IMG](../../../../../../../../.gitbook/assets/03-116_IMG3.png)
 
 As you go through and get all of the URLs, you're going to notice some patterns, and that's going to help you decide which links you want and which links you do not want.
 
 The next thing that I want you to do is take the link in your text editor and convert that link into a page title that will look something like this.
 
-![IMG](./03-116_IMG4.png)
+![IMG](../../../../../../../../.gitbook/assets/03-116_IMG4.png)
 
 I don't want you to go through and figure out how to grab the page title element itself because if you click on the element here and look at the code, I don't want you to simply come here and grab the link text.
 
-![IMG](./03-116_IMG5.png)
+![IMG](../../../../../../../../.gitbook/assets/03-116_IMG5.png)
 
 That would kind of defeat the purpose of what I'm wanting you to do.
 
@@ -64,21 +66,21 @@ Instead, what I want you to do is grab the **URL only** and then build a functio
 "How to Implement FizzBuzz in Python"
 ```
 
-The final output for this project should look something like this.  
+The final output for this project should look something like this.
 
- If I have a list of all of these items here, it should look something like 
-this, where I come down here and I have one title, two titles, all the 
+If I have a list of all of these items here, it should look something like\
+this, where I come down here and I have one title, two titles, all the\
 way down to whatever the last one is.
 
-![large](./03-116_IMG6.png)
+![large](../../../../../../../../.gitbook/assets/03-116_IMG6.png)
 
 Now, these are going to be slightly different depending on when you're taking this course because new posts are being added to daily smarty on a daily basis so don't worry about the titles lining up perfectly.
 
-I simply want you to be able to take a set of URLs and then convert them the way that I've done right here. So far I know that this may seem like a lot if you've never built out this type of behavior before so I'm going to give you a few hints. So first I will recommend that you use the requests library I'll put in the libraries to use so I would recommend the request library. Another one that I would recommend is the inflection library and I recommend that you go and research what that represents. And then lastly is the beautifulsoup library. This is going to be a critical one for any type of parsing and web scraping that you're going to do whenever it comes to building out these types of applications. 
+I simply want you to be able to take a set of URLs and then convert them the way that I've done right here. So far I know that this may seem like a lot if you've never built out this type of behavior before so I'm going to give you a few hints. So first I will recommend that you use the requests library I'll put in the libraries to use so I would recommend the request library. Another one that I would recommend is the inflection library and I recommend that you go and research what that represents. And then lastly is the beautifulsoup library. This is going to be a critical one for any type of parsing and web scraping that you're going to do whenever it comes to building out these types of applications.
 
-![large](./03-116_IMG7.png)
+![large](../../../../../../../../.gitbook/assets/03-116_IMG7.png)
 
-Now if you're using this with Python 3 then you can use the traditional pip install request if you haven't installed it already. And then you're also going to do the same thing for the inflection library. But now for beautifulsoup, you can't simply call pip install beautifulsoup. You have to use the latest version so you're going to call beautifulsoup and then 4 that will install the version that you're going to need for this program. 
+Now if you're using this with Python 3 then you can use the traditional pip install request if you haven't installed it already. And then you're also going to do the same thing for the inflection library. But now for beautifulsoup, you can't simply call pip install beautifulsoup. You have to use the latest version so you're going to call beautifulsoup and then 4 that will install the version that you're going to need for this program.
 
 ```python
 pip install requests
@@ -90,13 +92,13 @@ So with those 3 libraries, you're going to be able to build out this entire syst
 
 If you have any questions whatsoever about this project feel free to reach out to your instructor ask any questions they'll help you to implement the solution. So good luck with the project and I will see you in the next guide where I walk through my own personal solution.
 
-## Resources
+### Resources
 
-- [Link to DailySmarty Python Topic](http://www.dailysmarty.com/topics/python)
+* [Link to DailySmarty Python Topic](http://www.dailysmarty.com/topics/python)
 
-****
+***
 
-## Exercise Attempts
+### Exercise Attempts
 
 ```python
 import requests

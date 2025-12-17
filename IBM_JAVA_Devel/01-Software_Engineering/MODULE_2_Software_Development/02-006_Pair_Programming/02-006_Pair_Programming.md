@@ -1,78 +1,68 @@
 # 02-006: Pair Programming
 
-![](./02-006_IMG1.png)
-![](./02-006_IMG6.png)
+![](../../../../.gitbook/assets/02-006_IMG1.png) ![](../../../../.gitbook/assets/02-006_IMG6.png)
 
-**Pair programming** is an extension of teamwork where **two developers work side-by-side at one computer**, either physically co-located or virtually via video link or shared screens. 
+**Pair programming** is an extension of teamwork where **two developers work side-by-side at one computer**, either physically co-located or virtually via video link or shared screens.
 
-![](./02-006_IMG2.png)
+![](../../../../.gitbook/assets/02-006_IMG2.png)
 
 As an **Agile development technique**, it enables continuous planning and idea discussion, generally producing superior end products.
 
-
----
+***
 
 ### Three Pair Programming Styles
 
-![](./02-006_IMG3.png)
+![](../../../../.gitbook/assets/02-006_IMG3.png)
 
 #### **Driver/Navigator Style** (Most Common)
 
-One developer (driver) types code whilst the other (navigator) reviews code in real-time, provides directions, and maintains awareness of the broader solution.   
+One developer (driver) types code whilst the other (navigator) reviews code in real-time, provides directions, and maintains awareness of the broader solution.
 
 Regular role-swapping keeps both developers engaged throughout tasks.
 
-
-
 #### **Ping-Pong Style**
 
-Incorporates test-driven development.       
+Incorporates test-driven development.
 
-For each task, one developer writes a failing test; the second writes code to pass it. Roles swap for each new task, alternating test-writer and implementer.       
+For each task, one developer writes a failing test; the second writes code to pass it. Roles swap for each new task, alternating test-writer and implementer.
 
 Both developers collaboratively refactor successful code to refine and improve.
 
-
-
 #### **Strong Style Pair Programming**
 
-Particularly effective for junior engineers learning from experienced practitioners. 
+Particularly effective for junior engineers learning from experienced practitioners.
 
-**Defining rule:**  
+**Defining rule:**
+
 > Ideas must pass through another's hands to reach the computer.
 
+* The experienced developer navigates whilst the junior drives, learning through witnessing implementation and thought processes.
+* Drivers should withhold challenges until full implementation completes, preserving navigator idea flow.
 
-*   The experienced developer navigates whilst the junior drives, learning through witnessing implementation and thought processes. 
-
-*   Drivers should withhold challenges until full implementation completes, preserving navigator idea flow.
-
-
----
+***
 
 ### Benefits of Pair Programming
 
-![](./02-006_IMG4.png)
+![](../../../../.gitbook/assets/02-006_IMG4.png)
 
-- **Knowledge and skill sharing** between developers and team integration
-- **Technical skills enhancement** combined with **soft skills development** (communication, problem-solving)
-- **Code quality improvement**: Two sets of eyes reduce typos, logic errors, and bugs
-- **Real-time code review** enabling additional review layers (complementing formal reviews)
-- **Optimal problem-solving**: Multiple perspectives converge on superior approaches earlier
-- **Overall efficiency**: Despite longer initial development time, reduced review, testing, and debugging time yields better code with less total effort
-
-
+* **Knowledge and skill sharing** between developers and team integration
+* **Technical skills enhancement** combined with **soft skills development** (communication, problem-solving)
+* **Code quality improvement**: Two sets of eyes reduce typos, logic errors, and bugs
+* **Real-time code review** enabling additional review layers (complementing formal reviews)
+* **Optimal problem-solving**: Multiple perspectives converge on superior approaches earlier
+* **Overall efficiency**: Despite longer initial development time, reduced review, testing, and debugging time yields better code with less total effort
 
 ### Challenges
 
-![](./02-006_IMG5.png)
+![](../../../../.gitbook/assets/02-006_IMG5.png)
 
-- **Mental fatigue**: Prolonged focus periods exhaust both programmers
-- **Schedule conflicts**: Personal or work commitments disrupt pair continuity
-- **Role imbalance**: One developer controlling the entire process creates ineffective "typist/programmer" pairing, negating benefits
-- **Personality incompatibility**: Individual differences may hinder collaboration
-- **Environmental disruption**: Multiple pair-programming sessions generate noise affecting other workers
+* **Mental fatigue**: Prolonged focus periods exhaust both programmers
+* **Schedule conflicts**: Personal or work commitments disrupt pair continuity
+* **Role imbalance**: One developer controlling the entire process creates ineffective "typist/programmer" pairing, negating benefits
+* **Personality incompatibility**: Individual differences may hinder collaboration
+* **Environmental disruption**: Multiple pair-programming sessions generate noise affecting other workers
 
----
+***
 
 ## Video Lesson
 

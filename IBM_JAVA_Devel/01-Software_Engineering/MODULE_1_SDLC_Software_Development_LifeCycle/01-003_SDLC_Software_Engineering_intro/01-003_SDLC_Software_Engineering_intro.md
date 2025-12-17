@@ -1,33 +1,32 @@
 # 01-003: SDLC Software Engineering Introduction
 
-![Goals](./01-003_IMG1_Goals.png)
+![Goals](../../../../.gitbook/assets/01-003_IMG1_Goals.png)
 
-![Abstract](./01-003_IMG10.png)
+![Abstract](../../../../.gitbook/assets/01-003_IMG10.png)
 
 ## Theory
 
 **Software Engineering** is the application of scientific principles to the design and creation of software, employing a systematic approach to collect and analyse business requirements in order to design, build, and test software applications.
 
-![Software Engineering definiton](./01-003_IMG2.png)
-
+![Software Engineering definiton](../../../../.gitbook/assets/01-003_IMG2.png)
 
 ### Historical Context
 
-The discipline emerged in the 1960s, evolving from ad hoc programming towards formal and standardised methods.  
+The discipline emerged in the 1960s, evolving from ad hoc programming towards formal and standardised methods.
 
-![Systematic Approach to SE](./01-003_IMG3.png)
+![Systematic Approach to SE](../../../../.gitbook/assets/01-003_IMG3.png)
 
-![](./01-003_IMG4.png)
+![](../../../../.gitbook/assets/01-003_IMG4.png)
 
 The **software crisis** (mid-1960s to mid-1980s) highlighted the inefficiencies in early development processes—projects frequently exceeded budgets, missed schedules, and produced unmaintainable, buggy code. Solutions that worked for small systems failed to scale to large, complex projects.
 
-![](./01-003_IMG5.png)
+![](../../../../.gitbook/assets/01-003_IMG5.png)
 
 ### Modern Solutions
 
 The resolution involved two key developments: transforming ad hoc coding into an established engineering discipline and the rise of **Computer-Aided Software Engineering (CASE)** tools.
 
-![](./01-003_IMG6.png)
+![](../../../../.gitbook/assets/01-003_IMG6.png)
 
 Today, the **Software Development Lifecycle (SDLC)** guides the development process to ensure high-quality software.
 
@@ -35,28 +34,27 @@ Today, the **Software Development Lifecycle (SDLC)** guides the development proc
 
 Whilst the terms are often used interchangeably, distinct differences exist:
 
-![](./01-003_IMG7.png)
+![](../../../../.gitbook/assets/01-003_IMG7.png)
 
-- **Software Engineers** possess broader knowledge, take a systematic big-picture approach, and design entire systems
-- **Software Developers** have a narrower scope, may employ more creative approaches, and implement specific functionality within systems
-- Engineers typically work on larger-scale projects focused on broad structure; developers solve immediate problems
+* **Software Engineers** possess broader knowledge, take a systematic big-picture approach, and design entire systems
+* **Software Developers** have a narrower scope, may employ more creative approaches, and implement specific functionality within systems
+* Engineers typically work on larger-scale projects focused on broad structure; developers solve immediate problems
 
 ### Key Responsibilities
 
-Software engineers are tasked with designing, building, and maintaining software systems.   
+Software engineers are tasked with designing, building, and maintaining software systems.
 
-![](./01-003_IMG8.png)
+![](../../../../.gitbook/assets/01-003_IMG8.png)
 
-Their responsibilities encompass writing and testing code, consulting with stakeholders (clients, third-party vendors, security specialists, and team members), and applying a measured scientific approach to development.  
+Their responsibilities encompass writing and testing code, consulting with stakeholders (clients, third-party vendors, security specialists, and team members), and applying a measured scientific approach to development.
 
+### SDLC
 
-### SDLC 
+The adoption of a **measured scientific approach** to software development has influenced the way software is created and designed.
 
-The adoption of a **measured scientific approach** to software development has influenced the way software is created and designed.  
+Today, the development process is typically guided by the **Software Development Lifecycle, or SDLC**.
 
-Today, the development process is typically guided by the **Software Development Lifecycle, or SDLC**.  
-
-![](./01-003_IMG9.png)
+![](../../../../.gitbook/assets/01-003_IMG9.png)
 
 The SDLC **identifies the steps needed** to develop **high-quality software**. Later in this module, we will discuss the SDLC, the traits of high-quality software, and roles common in the field of software engineering.
 
@@ -68,28 +66,26 @@ The importance of software engineering in a practical context:
 
 #### Example: Developing a Mobile Banking App
 
-#### Context 
-*A bank wants to create a mobile application that allows customers to manage their accounts, transfer money, and pay bills.*
+#### Context
+
+_A bank wants to create a mobile application that allows customers to manage their accounts, transfer money, and pay bills._
 
 #### Relevance to Software Engineering
 
 * **Systematic Approach**: The software engineering team begins by gathering business requirements through consultations with stakeholders, including bank employees and customers. This ensures that the app meets user needs and complies with financial regulations.
-
 * **Design and Development**: The team uses a systematic approach to design the application architecture, ensuring it is scalable and secured. They apply software engineering principles to create a robust system that can handle a large number of users simultaneously.
-
 * **Testing and Maintenance**: After developing the application, the team conducts rigorous testing to identify and fix bugs. They also implement a plan for ongoing maintenance and updates, ensuring the app remains functional and secure over time.
 
-##### Connexion to Software Engineering Responsibilities
+**Connexion to Software Engineering Responsibilities**
 
-1.  Designing, Building, and Maintaining: The software engineers are responsible for the entire lifecycle of the application, from initial design to ongoing maintenance.
-
+1. Designing, Building, and Maintaining: The software engineers are responsible for the entire lifecycle of the application, from initial design to ongoing maintenance.
 2. Consulting with Stakeholders: They work closely with various stakeholders, including security specialists to ensure the app is secure and meets compliance standards.
 
----
+***
 
 ## Lesson Speech
 
-Welcome to What is **Software Engineering**?  
+Welcome to What is **Software Engineering**?\
 After watching this video, you will be able to **define Software Engineering, list the Responsibilities of a Software Engineer**, and **compare and contrast Software Developers and Software Engineers**.
 
 **Software Engineering** is the **application of scientific principles** to the design and creation of software. The field uses a **systematic approach** to collect and analyse business requirements in order to design, build, and test software applications to satisfy those business requirements.

@@ -1,49 +1,46 @@
-# 03-007    Programming Logic:  Branching and Looping 
+# 03-007 Programming Logic: Branching and Looping
 
-![](./03-007_IMG5.png)
-
+![](../../../../.gitbook/assets/03-007_IMG5.png)
 
 ### Fundamental Concepts
 
-**Programming logic** comprises two major categories: 
+**Programming logic** comprises two major categories:
 
--   **Branching** 
--   **Looping**
+* **Branching**
+* **Looping**
 
 Both types utilise **Boolean expressions** and **variables**.
 
-![](./03-007_IMG1.png)
+![](../../../../.gitbook/assets/03-007_IMG1.png)
 
 **Boolean expression**: A programming statement with exactly two possible values: **true** or **false**. Computers use Boolean logic to make decisions—executing one action if the expression evaluates to true, another if false.
 
 **Variable**: A named container holding an assigned value that can change based on program conditions or input. Variables form the basis of programming alongside Boolean logic.
 
----
+***
 
 ### Program Structure
 
 Programs typically consist of:
 
-- **Instructions**: Directions telling the computer what to do
-- **Data**: Information the program uses during execution
-- **Variables**: Values changeable depending on conditions or information passed to the program
+* **Instructions**: Directions telling the computer what to do
+* **Data**: Information the program uses during execution
+* **Variables**: Values changeable depending on conditions or information passed to the program
 
-
----
+***
 
 ## Branching Logic
 
 **Branching** is the programming logic where a computer program makes decisions, following different instruction sets depending on whether specific conditions are met during execution.
 
+![](../../../../.gitbook/assets/03-007_IMG2.png)
 
-![](./03-007_IMG2.png)
+* Each **possible code pathway creates another branch**
+* The **branch executed** depends on parameter values assigned to the branching procedure
+* **No limit** to the number of branches—enabling complex logic implementation
+* Parameter values originate from **user input** or **output from previous procedures**
 
-- Each **possible code pathway creates another branch**
-- The **branch executed** depends on parameter values assigned to the branching procedure
-- **No limit** to the number of branches—enabling complex logic implementation
-- Parameter values originate from **user input** or **output from previous procedures**
-
----
+***
 
 ## Branching Constructs
 
@@ -53,52 +50,51 @@ Programs typically consist of:
 
 #### If Statement
 
-![](./03-007_IMG6.png)
+![](../../../../.gitbook/assets/03-007_IMG6.png)
 
-**Purpose**:    Decision-making construct guiding programs to make decisions based on specified criteria.
+**Purpose**: Decision-making construct guiding programs to make decisions based on specified criteria.
 
-**Logic**:      Executes one code set when condition is TRUE, another when FALSE.
+**Logic**: Executes one code set when condition is TRUE, another when FALSE.
 
 #### If-Then-Else Statement
 
-![](./03-007_IMG7.png)
+![](../../../../.gitbook/assets/03-007_IMG7.png)
 
-**Purpose**:    Conditional construct extending basic if logic.
+**Purpose**: Conditional construct extending basic if logic.
 
-**Logic**:      Executes the substatement following the "then" keyword **only if** the provided condition is true.
+**Logic**: Executes the substatement following the "then" keyword **only if** the provided condition is true.
 
 #### If-Else Statement
 
-![](./03-007_IMG8.png)
+![](../../../../.gitbook/assets/03-007_IMG8.png)
 
-**Purpose**:    Extends the "if" statement by specifying an action if the condition is false.
+**Purpose**: Extends the "if" statement by specifying an action if the condition is false.
 
-**Logic**:      Programme executes either the **true code block** or the **false code block**—something is always performed with if-else statements.
-
+**Logic**: Programme executes either the **true code block** or the **false code block**—something is always performed with if-else statements.
 
 #### Switch Statement
 
-![](./03-007_IMG1.png)
+![](../../../../.gitbook/assets/03-007_IMG1.png)
 
-**Purpose**:    Selection control mechanism allowing a variable or expression value to change control flow.
+**Purpose**: Selection control mechanism allowing a variable or expression value to change control flow.
 
-**Mechanism**:  Uses search and map techniques to determine execution pathway.
+**Mechanism**: Uses search and map techniques to determine execution pathway.
 
 #### GoTo Statement
 
-![](./03-007_IMG10.png)
+![](../../../../.gitbook/assets/03-007_IMG10.png)
 
 **Purpose**: Performs one-way control transfer to another line of code.
 
 **Distinction**: Unlike function calls, GoTo does **not return control** to the calling location.
 
----
+***
 
 ## Looping Logic
 
 **Looping** is programming logic where a sequence of instructions continually repeats until reaching a specific condition.
 
-![](./03-007_IMG3.png)
+![](../../../../.gitbook/assets/03-007_IMG3.png)
 
 ### Loop Process
 
@@ -109,13 +105,13 @@ Programs typically consist of:
 
 **Fundamental principle**: Looping is a core programming concept enabling efficient code reuse and iterative data processing.
 
----
+***
 
 ## Loop Types
 
 ### **THREE basic loop statements**:
 
-![](./03-007_IMG4.png)
+![](../../../../.gitbook/assets/03-007_IMG4.png)
 
 #### While Loop
 
@@ -128,6 +124,7 @@ Programs typically consist of:
 **Characteristic**: **Counter-controlled loop**—precise iteration count.
 
 **Logic**:
+
 1. Initial value performed **only once**
 2. Condition tests and compares counter to fixed value **after each iteration**
 3. Loop stops when condition returns **false**
@@ -138,26 +135,27 @@ Programs typically consist of:
 
 **Logic**: Loop body executes at least once before condition is checked. Continues repeating until condition becomes false.
 
----
+***
 
 ## Key Distinctions
 
 ### Branching vs. Looping
 
-| Aspect | Branching | Looping |
-|--------|-----------|---------|
-| **Purpose** | Decide **what actions to take** | Decide **how many times** to perform an action |
-| **Control Flow** | Jumps to different code sections | Repeats code sections |
-| **Execution** | Executes based on conditions | Executes until condition met |
-| **Structure** | Multiple possible pathways | Iterative repetition |
+| Aspect           | Branching                        | Looping                                        |
+| ---------------- | -------------------------------- | ---------------------------------------------- |
+| **Purpose**      | Decide **what actions to take**  | Decide **how many times** to perform an action |
+| **Control Flow** | Jumps to different code sections | Repeats code sections                          |
+| **Execution**    | Executes based on conditions     | Executes until condition met                   |
+| **Structure**    | Multiple possible pathways       | Iterative repetition                           |
 
 ### Boolean Expressions and Variables
 
 Both branching and looping rely on:
-- **Boolean expressions**: Conditional statements evaluating to true or false
-- **Variables**: Named values that change based on program conditions
 
----
+* **Boolean expressions**: Conditional statements evaluating to true or false
+* **Variables**: Named values that change based on program conditions
+
+***
 
 ## Video Lesson
 

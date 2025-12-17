@@ -1,23 +1,23 @@
 # 05-007 Career Paths in Software Engineering
 
-![](./05-007_IMG10.png)
+![](../../../../.gitbook/assets/05-007_IMG10.png)
 
 ### Career Path Overview
 
 Software engineering careers typically progress in one of two directions as experience and skills develop:
 
-![](./05-007_IMG1.png)
+![](../../../../.gitbook/assets/05-007_IMG1.png)
 
-1.  **Technical path:** Continued focus on coding, problem-solving, and technology mastery
-2.  **Management path:** Leadership development and team oversight
+1. **Technical path:** Continued focus on coding, problem-solving, and technology mastery
+2. **Management path:** Leadership development and team oversight
 
 Career progression involves increasing responsibility, broader project scope, and expanded skill sets across roles.
 
----
+***
 
 ### Entry Level: Junior/Associate Software Engineer
 
-![](./05-007_IMG2.png)
+![](../../../../.gitbook/assets/05-007_IMG2.png)
 
 **Responsibilities:** Developing small software chunks meeting agreed specifications.
 
@@ -27,11 +27,11 @@ Career progression involves increasing responsibility, broader project scope, an
 
 **Characteristics:** Foundation-building phase establishing core competencies.
 
----
+***
 
 ### Mid-Level: Software Engineer
 
-![](./05-007_IMG3.png)
+![](../../../../.gitbook/assets/05-007_IMG3.png)
 
 **Responsibilities:** Greater independence; breaking larger tasks into achievable sub-tasks; learning new programming languages; demonstrating software development lifecycle understanding.
 
@@ -39,19 +39,19 @@ Career progression involves increasing responsibility, broader project scope, an
 
 **Growth:** Transition from task execution to problem decomposition and strategic thinking.
 
----
+***
 
 ### Senior Level: Senior Software Engineer
 
-![](./05-007_IMG4.png)
+![](../../../../.gitbook/assets/05-007_IMG4.png)
 
 **Responsibilities:** Project-wide involvement and entire codebase understanding; mentoring software engineers; conducting code reviews; efficient problem-solving across diverse technical challenges.
 
 **Scope:** Broader technical authority and knowledge-sharing responsibilities.
 
----
+***
 
-![](./05-007_IMG5.png)
+![](../../../../.gitbook/assets/05-007_IMG5.png)
 
 ### Technical Career Continuation
 
@@ -63,47 +63,45 @@ Career progression involves increasing responsibility, broader project scope, an
 
 **Technical Lead:** Team management of developers and engineers; potential entire development lifecycle responsibility; stakeholder reporting.
 
-![](./05-007_IMG6.png)
+![](../../../../.gitbook/assets/05-007_IMG6.png)
 
 **Engineering Manager:** Team support and encouragement; career progression facilitation; team capability development.
 
-
-
 **Director of Engineering:** Strategic and technical dual role:
 
-![](./05-007_IMG7.png)
+![](../../../../.gitbook/assets/05-007_IMG7.png)
 
-- **Strategic:** Project prioritisation; hiring needs identification; long-term goal definition
-- **Technical:** Project definition; requirement specification; project oversight
+* **Strategic:** Project prioritisation; hiring needs identification; long-term goal definition
+* **Technical:** Project definition; requirement specification; project oversight
 
-**Chief Technology Officer (CTO):**  
-![](./05-007_IMG8.png)
+**Chief Technology Officer (CTO):**\
+![](../../../../.gitbook/assets/05-007_IMG8.png)
 
 Organisational technology arm leadership; research and development oversight; systems and infrastructure monitoring; budget alignment; technology evaluation for competitive advantage.
 
-----
+***
 
 ### Alternative Career Transitions
 
-![](./05-007_IMG9.png)
+![](../../../../.gitbook/assets/05-007_IMG9.png)
 
 Software engineering provides foundation skills enabling transitions into various roles:
 
-- **Technical sales/customer support:** For engineers preferring client interaction
-- **Data engineer/data scientist:** For those combining coding with numerical and data analysis interests
-- **Database administrator/developer:** For those specialising in data management
-- **Software tester:** For engineers focused on bug identification and fixing
-- **Other technical/leadership roles:** Leveraging transferable skills across IT field
+* **Technical sales/customer support:** For engineers preferring client interaction
+* **Data engineer/data scientist:** For those combining coding with numerical and data analysis interests
+* **Database administrator/developer:** For those specialising in data management
+* **Software tester:** For engineers focused on bug identification and fixing
+* **Other technical/leadership roles:** Leveraging transferable skills across IT field
 
 ### Career Characteristics
 
-- Continuous learning required as technology evolves
-- Increasing responsibility with each progression level
-- Flexibility in role transitions throughout career
-- Software engineering foundation enabling diverse career opportunities
-- Varied organisational job titles with similar role functions
+* Continuous learning required as technology evolves
+* Increasing responsibility with each progression level
+* Flexibility in role transitions throughout career
+* Software engineering foundation enabling diverse career opportunities
+* Varied organisational job titles with similar role functions
 
----
+***
 
 ## Lesson Speech
 

@@ -1,208 +1,209 @@
 # 01-006 The Java Ecosystem
 
-![](./01-006_IMG16.png)
-![](./01-006_IMG17.png)
+![](../../../../.gitbook/assets/01-006_IMG16.png) ![](../../../../.gitbook/assets/01-006_IMG17.png)
 
----
+***
 
 **Java** is a prominent programming language, pivotal in software development. Created by Sun Microsystems in 1995 and now owned by Oracle Corporation, the **Java ecosystem** comprises various tools, libraries, frameworks, and platforms enabling developers to create robust, scalable, and secure applications.
 
----
+***
 
 ### Core Components
----
+
+***
 
 #### Java Development Kit (JDK)
 
-![](./01-006_IMG1.png)
+![](<../../../../.gitbook/assets/01-006_IMG1 (1).png>)
 
 The **primary toolkit for Java developers**, comprising three key elements:
 
-##### **Java Compiler (javac)**
+**Java Compiler (javac)**
+
 Converts Java source code into platform-independent bytecode.
 
-##### **Java Runtime Environment (JRE)**
+**Java Runtime Environment (JRE)**
+
 Encompasses the JVM and core libraries, required for running Java applications.
 
-##### **Utilities**
+**Utilities**
+
 Command-line tools assisting in the development process.
 
----
+***
 
 #### Java Runtime Environment (JRE)
 
-![](./01-006_IMG2.png)
+![](<../../../../.gitbook/assets/01-006_IMG2 (1).png>)
 
 Provides necessary components for executing Java applications:
 
-##### **Java Virtual Machine (JVM)**
+**Java Virtual Machine (JVM)**
+
 Executes bytecode, ensuring platform independence.
 
-##### **Core libraries** 
+**Core libraries**
+
 Essential APIs for input-output, networking, and concurrency functionalities.
 
----
+***
 
 ### Integrated Development Environments (IDEs)
 
-![](./01-006_IMG3.png)
+![](<../../../../.gitbook/assets/01-006_IMG3 (1).png>)
 
 **IDEs** are software applications providing comprehensive facilities for software development. Popular Java IDEs include:
 
-| IDE | Characteristics |
-|-----|-----------------|
-| **Eclipse** | Open-source; known for powerful plugins |
-| **IntelliJ IDEA** | Offers smart code completion and advanced features |
-| **NetBeans** | Open-source; beginner-friendly with straightforward interface |
+| IDE               | Characteristics                                               |
+| ----------------- | ------------------------------------------------------------- |
+| **Eclipse**       | Open-source; known for powerful plugins                       |
+| **IntelliJ IDEA** | Offers smart code completion and advanced features            |
+| **NetBeans**      | Open-source; beginner-friendly with straightforward interface |
 
+#### **Common IDE features**
 
-#### **Common IDE features** 
-![](./01-006_IMG4.png)
--   Code editor
--   Debugger
--   Build automation tools
--   Project management capabilities
+![](<../../../../.gitbook/assets/01-006_IMG4 (1).png>)
 
----
+* Code editor
+* Debugger
+* Build automation tools
+* Project management capabilities
+
+***
 
 ### Frameworks
 
 Frameworks facilitate code reuse and accelerate development:
 
-#### **Spring Framewor** 
+#### **Spring Framewor**
 
-![](./01-006_IMG5.png)
+![](<../../../../.gitbook/assets/01-006_IMG5 (1).png>)
 
-Comprehensive enterprise application framework featuring:  
+Comprehensive enterprise application framework featuring:
 
--   **Dependency Injection (DI):** Promotes loosely coupled code
--   **Aspect-Oriented Programming (AOP):** Separates cross-cutting concerns from business logic
--   **Spring Boot:** Simplifies Spring application setup with embedded servers and pre-configured settings
--   **Spring MVC:** Streamlines web application development through structured architecture
+* **Dependency Injection (DI):** Promotes loosely coupled code
+* **Aspect-Oriented Programming (AOP):** Separates cross-cutting concerns from business logic
+* **Spring Boot:** Simplifies Spring application setup with embedded servers and pre-configured settings
+* **Spring MVC:** Streamlines web application development through structured architecture
 
+#### **Hibernate**
 
-#### **Hibernate** 
-
-![](./01-006_IMG6.png)
+![](<../../../../.gitbook/assets/01-006_IMG6 (1).png>)
 
 Object-Relational Mapping (ORM) framework simplifying data handling by automating Java object-to-database table mapping.
 
----
+***
 
 ### Build Tools
 
-![](./01-006_IMG7.png)
+![](<../../../../.gitbook/assets/01-006_IMG7 (1).png>)
 
 Automate compiling code, managing dependencies, and packaging applications:
 
-| Tool | Characteristics |
-|------|-----------------|
-| **Maven** | Simplifies project management with dependency management and standardised build lifecycle |
-| **Gradle** | Known for incremental builds and multi-project support using Groovy or Kotlin scripts |
+| Tool       | Characteristics                                                                           |
+| ---------- | ----------------------------------------------------------------------------------------- |
+| **Maven**  | Simplifies project management with dependency management and standardised build lifecycle |
+| **Gradle** | Known for incremental builds and multi-project support using Groovy or Kotlin scripts     |
 
----
+***
 
 ### Application Servers
 
-![](./01-006_IMG8.png)
+![](<../../../../.gitbook/assets/01-006_IMG8 (1).png>)
 
 Provide environments for deploying and managing Java applications:
 
-| Server | Purpose |
-|--------|---------|
+| Server            | Purpose                                                                         |
+| ----------------- | ------------------------------------------------------------------------------- |
 | **Apache Tomcat** | Open-source servlet container; ideal for small-to-medium-sized web applications |
-| **JBoss** | Supports full Java EE stack; suitable for large-scale enterprise applications |
+| **JBoss**         | Supports full Java EE stack; suitable for large-scale enterprise applications   |
 
----
-
+***
 
 ### Testing Frameworks
 
-![](./01-006_IMG9.png)
+![](<../../../../.gitbook/assets/01-006_IMG9 (1).png>)
 
 Ensure application functionality through robust testing tools:
 
-| Framework | Features |
-|-----------|----------|
-| **JUnit** | Creates repeatable tests using annotations and assertions validating outcomes |
-| **TestNG** | Offers data-driven testing and parallel test execution |
+| Framework  | Features                                                                      |
+| ---------- | ----------------------------------------------------------------------------- |
+| **JUnit**  | Creates repeatable tests using annotations and assertions validating outcomes |
+| **TestNG** | Offers data-driven testing and parallel test execution                        |
 
-
----
+***
 
 ### Cloud-Native and Microservices Development
 
-![](./01-006_IMG10.png)
+![](<../../../../.gitbook/assets/01-006_IMG10 (1).png>)
 
 #### **Spring Cloud**
+
 Provides tools for building cloud-native applications, including service discovery and configuration management.
 
----
+***
 
 ### Desktop Application Development
 
-![](./01-006_IMG11.png)
+![](<../../../../.gitbook/assets/01-006_IMG11 (1).png>)
 
-####    **JavaFX**
+#### **JavaFX**
 
 Builds rich desktop applications with modern user interfaces; supports graphical elements (buttons, tables, charts)
 
-
-####    **Swing** 
+#### **Swing**
 
 Older GUI toolkit; lightweight, customisable components enabling traditional cross-platform desktop applications
 
----
+***
 
 ### Mobile Application Development
 
-![](./01-006_IMG12.png)
+![](../../../../.gitbook/assets/01-006_IMG12.png)
 
-#### **Android** 
+#### **Android**
+
 Most widely used mobile operating system globally, heavily reliant on Java.
 
-##### **Android SDK** 
+**Android SDK**
+
 Tools and libraries for building Android applications; provides APIs accessing device features (cameras, GPS, sensors)
 
-##### **Android Studio** 
+**Android Studio**
+
 Official IDE for Android development; offers code editing, debugging, and performance tuning
 
+**Kotlin vs Java**
 
-##### **Kotlin vs Java**
-
-![](./01-006_IMG13.png)
+![](../../../../.gitbook/assets/01-006_IMG13.png)
 
 Whilst Kotlin is the preferred language, Java remains significant; many Android libraries are Java-based
 
-
----
+***
 
 ### Embedded Systems Development
 
 **Specialised computing systems** performing dedicated functions within larger mechanical or electrical systems. Java increasingly used due to portability and ease of use.
 
-
 #### **Java Microedition (ME)**
-![](./01-006_IMG14.png)
-Subset of Java platform for resource-constrained devices; provides APIs tailored for mobile and embedded environments.
 
+![](../../../../.gitbook/assets/01-006_IMG14.png) Subset of Java platform for resource-constrained devices; provides APIs tailored for mobile and embedded environments.
 
 #### **Embedded Java**
-![](./01-006_IMG15.png)
-Platforms specifically designed for embedded hardware; implementations like Oracle's Java Embedded enable applications on sensors, gateways, and embedded systems
 
+![](../../../../.gitbook/assets/01-006_IMG15.png) Platforms specifically designed for embedded hardware; implementations like Oracle's Java Embedded enable applications on sensors, gateways, and embedded systems
 
----
+***
 
 ### Community and Support
 
 **Available support forms:**
 
-- **Online forums** (Stack Overflow): Ask questions, receive answers from experienced developers
-- **Official Oracle documentation:** Detailed information on all Java aspects
-- **Local meetups and conferences:** Connect with developers, learn new skills
+* **Online forums** (Stack Overflow): Ask questions, receive answers from experienced developers
+* **Official Oracle documentation:** Detailed information on all Java aspects
+* **Local meetups and conferences:** Connect with developers, learn new skills
 
----
+***
 
 ## Lesson Speech
 

@@ -1,24 +1,22 @@
 # 01-009: SDLC - Methodologies
 
-![](./01-009_IMG1.png)
-![](./01-009_IMG10.png)
+![](../../../../.gitbook/assets/01-009_IMG1.png) ![](../../../../.gitbook/assets/01-009_IMG10.png)
 
-Software development methodologies clarify communication amongst team members and determine how and when information is shared.  
+Software development methodologies clarify communication amongst team members and determine how and when information is shared.
 
-![](./01-009_IMG2.png)
+![](../../../../.gitbook/assets/01-009_IMG2.png)
 
 Three primary approaches are:
 
-- Waterfall
-- V-shape model
-- Agile
+* Waterfall
+* V-shape model
+* Agile
 
-
----
+***
 
 ### Comparative Analysis
 
-![](./01-009_IMG6.png)
+![](../../../../.gitbook/assets/01-009_IMG6.png)
 
 **Sequential vs. Iterative**: Waterfall and V-shape are sequential; Agile is cyclical.
 
@@ -26,71 +24,66 @@ Three primary approaches are:
 
 **Modern Preference**: Agile is the most popular methodology in contemporary software development, facilitated by modern coding languages and technologies enabling modular design.
 
----
+***
 
 ### Waterfall Method
 
-![](./01-009_IMG3.png)
+![](../../../../.gitbook/assets/01-009_IMG3.png)
 
-A **sequential method** where each phase's output becomes the next phase's input. All planning (requirements, architectural design) occurs upfront; subsequent phases begin only after the previous completes.   
+A **sequential method** where each phase's output becomes the next phase's input. All planning (requirements, architectural design) occurs upfront; subsequent phases begin only after the previous completes.
 
-Customers typically see the product only during testing.   
+Customers typically see the product only during testing.
 
 Major releases result in long intervals (years) between versions.
 
-![](./01-009_IMG7.png)
+![](../../../../.gitbook/assets/01-009_IMG7.png)
 
 **Pros**: Easy to understand; discrete, well-defined stages; roles clearly defined; upfront planning simplifies budget estimation and resource allocation.
 
 **Cons**: Lacks flexibility; changing or overlooked requirements are difficult to incorporate later; unforeseen complications cannot be easily accommodated.
 
----
+***
 
 ### V-Shape Model
 
-Named for its V-shaped visual structure, this **sequential method** mirrors waterfall with enhanced testing rigours.  
+Named for its V-shaped visual structure, this **sequential method** mirrors waterfall with enhanced testing rigours.
 
-![](./01-009_IMG4.png)
+![](../../../../.gitbook/assets/01-009_IMG4.png)
 
-- The left side descends through **verification phases** (planning, system design, architecture design, module design), culminating at the bottom in the **coding phase**.   
+* The left side descends through **verification phases** (planning, system design, architecture design, module design), culminating at the bottom in the **coding phase**.
+* The right side ascends through **validation phases** (unit testing, integration testing, system testing, acceptance testing). Each verification phase corresponds to a validation phase. Tests are written during verification and executed during validation.
+* The node for all is the Coding phase.
 
-- The right side ascends through **validation phases** (unit testing, integration testing, system testing, acceptance testing). Each verification phase corresponds to a validation phase. Tests are written during verification and executed during validation.
-
-- The node for all is the Coding phase.
-
-![](./01-009_IMG8.png)
+![](../../../../.gitbook/assets/01-009_IMG8.png)
 
 **Pros**: Simple, easy to use; test plan design during verification saves considerable time during coding and validation.
 
 **Cons**: More rigid than waterfall; does not readily accommodate changing requirements; modifying functionality during testing is extremely difficult.
 
----
+***
 
 ### Agile Method
 
-![](./01-009_IMG5.png)
+![](../../../../.gitbook/assets/01-009_IMG5.png)
 
-An **iterative, cyclical approach** focusing on collaborative development over multiple short cycles rather than strict top-down linearity.  
-Teams work in **sprints** (typically 1-4 weeks).  
-Unit testing occurs in each sprint to minimise failure risk.  
+An **iterative, cyclical approach** focusing on collaborative development over multiple short cycles rather than strict top-down linearity.\
+Teams work in **sprints** (typically 1-4 weeks).\
+Unit testing occurs in each sprint to minimise failure risk.\
 The final sprint stage is **feedback** rather than traditional maintenance.
 
 **Sprint Process**: At sprint end, working code is released at a **sprint demo** where stakeholders observe new functionality and provide feedback. The entire process repeats each cycle. After multiple sprints, a **Minimum Viable Product (MVP)**—containing core features to validate assumptions—is developed for stakeholder feedback.
 
 **Core Values** (Agile Manifesto): Individuals and interactions over processes and tools; working software over comprehensive documentation; customer collaboration over contract negotiation; responding to change over following a plan.
 
-
-![](./01-009_IMG9.png)
+![](../../../../.gitbook/assets/01-009_IMG9.png)
 
 **Pros**: Handles changing requirements quickly and easily; planning initiates at each sprint's beginning; most resources focus on the building phase; QA, stakeholders, and customers test working code frequently; modular design allows incremental releases.
 
 **Cons**: Upfront planning (budgeting, scheduling) is challenging due to unclear overall product scope; requires significant stakeholder engagement.
 
+***
 
----
-
-
----
+***
 
 ## Video Lesson
 

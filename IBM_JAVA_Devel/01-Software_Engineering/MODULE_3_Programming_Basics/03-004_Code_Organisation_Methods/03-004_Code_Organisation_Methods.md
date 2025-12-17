@@ -1,95 +1,96 @@
 # 03-004: Code Organisation Methods
 
-![](./03-004_IMG6.png)
+![](../../../../.gitbook/assets/03-004_IMG6.png)
 
 ### Importance of Code Organisation
 
-Well-planned software design **improves code readability, maintainability, and scalability whilst reducing bugs and errors throughout project lifecycles.**  
+Well-planned software design **improves code readability, maintainability, and scalability whilst reducing bugs and errors throughout project lifecycles.**
 
 Visual planning formats enhance code quality, establish consistency, and support logical structure during development.
 
----
+***
 
 ### Two Primary Organisation Methods
 
--   **PSEUDOCODE**
--   **FLOWCHARTS** (Also related to some UML theory)
+* **PSEUDOCODE**
+* **FLOWCHARTS** (Also related to some UML theory)
 
-![](./03-004_IMG1.png)
-![](./03-004_IMG2.png)
+![](../../../../.gitbook/assets/03-004_IMG1.png) ![](../../../../.gitbook/assets/03-004_IMG2.png)
 
 **Pseudocode** and **flowcharts** serve complementary purposes, each excelling in different scenarios.
 
----
+***
 
 ### Flowcharts: Visual Algorithm Representation
 
 **Flowcharts** provide pictorial algorithm representations using standardised symbols, shapes, arrows, and colours to demonstrate processes or programmes.
 
 **Standard Symbols**:
-- **Start/End**: Capsule/oval
-- **Process**: Rectangle
-- **Decision**: Diamond
-- **Data**: Parallelogram
-- **Connectors**: Arrows indicating sequence
+
+* **Start/End**: Capsule/oval
+* **Process**: Rectangle
+* **Decision**: Diamond
+* **Data**: Parallelogram
+* **Connectors**: Arrows indicating sequence
 
 **Characteristics**:
-- Graphical, easy-to-understand format
-- Ideal for smaller concepts and problems
-- Excellent communication tool for logic discussion
-- Strong project starting point (easier initial creation than pseudocode)
-- Easily highlight elements and relationships
+
+* Graphical, easy-to-understand format
+* Ideal for smaller concepts and problems
+* Excellent communication tool for logic discussion
+* Strong project starting point (easier initial creation than pseudocode)
+* Easily highlight elements and relationships
 
 **Tools**: Microsoft Visio, Lucidchart, Draw.io, DrawAnywhere (provide drag-and-drop editors and team collaboration features).
 
-![](./03-004_IMG3.png)
+![](../../../../.gitbook/assets/03-004_IMG3.png)
 
 **Example**: Adding two numbers flowchart sequences Start capsule → Data input (n1, n2) → Process (Sum = n1 + n2) → Data output (Print Sum) → End capsule, connected by arrows.
 
----
+***
 
 ### Pseudocode: Language-Independent Algorithm Description
 
-**Pseudocode** provides informal, high-level algorithm descriptions without strict programming language syntax or technology constraints.  
+**Pseudocode** provides informal, high-level algorithm descriptions without strict programming language syntax or technology constraints.
 
 It bridges programmer intent and executable code, enabling logical planning without technical details.
 
-![](./03-004_IMG4.png)
+![](../../../../.gitbook/assets/03-004_IMG4.png)
 
 **Characteristics**:
-- Language-agnostic; no syntax requirements
-- Concise, typically under one page
-- Informal outline or rough draft format
-- Focuses on logic rather than syntax
-- Beginner-friendly; no syntax concerns
 
+* Language-agnostic; no syntax requirements
+* Concise, typically under one page
+* Informal outline or rough draft format
+* Focuses on logic rather than syntax
+* Beginner-friendly; no syntax concerns
 
 #### **Benefits Over Flowcharts**
 
-![](./03-004_IMG5.png)
+![](../../../../.gitbook/assets/03-004_IMG5.png)
 
-- Simple, explicit explanations of each programme line
-- Easier logic focus without syntax distraction
-- Facilitates multi-language programmer collaboration
-- Easier code review across development groups
-- Accessible to non-programmers
-- Rapid, simple translation to any programming language
-- Straightforward design modifications
+* Simple, explicit explanations of each programme line
+* Easier logic focus without syntax distraction
+* Facilitates multi-language programmer collaboration
+* Easier code review across development groups
+* Accessible to non-programmers
+* Rapid, simple translation to any programming language
+* Straightforward design modifications
 
 **Use Cases**: Large programming projects, initial design documentation, cross-functional communication (technical and non-technical stakeholders), multi-language environments.
 
 ### Comparative Application
 
-|        | Flowcharts | Pseudocode |
-|--------|-----------|-----------|
-| **Scale** | Smaller concepts/problems | Larger projects |
-| **Format** | Visual/graphical | Textual/narrative |
-| **Initial Creation** | Faster/easier | More time-intensive |
-| **Communication** | Visual logic discussion | Logic and flow explanation |
-| **Language Independence** | Visual universality | Explicit language-agnostic |
-| **Documentation** | Standalone visual documentation | Translatable design specification |
+|                           | Flowcharts                      | Pseudocode                        |
+| ------------------------- | ------------------------------- | --------------------------------- |
+| **Scale**                 | Smaller concepts/problems       | Larger projects                   |
+| **Format**                | Visual/graphical                | Textual/narrative                 |
+| **Initial Creation**      | Faster/easier                   | More time-intensive               |
+| **Communication**         | Visual logic discussion         | Logic and flow explanation        |
+| **Language Independence** | Visual universality             | Explicit language-agnostic        |
+| **Documentation**         | Standalone visual documentation | Translatable design specification |
 
----
+***
 
 ## Video Lesson
 

@@ -1,15 +1,23 @@
-# PENDING:
-⚠️⚠️⚠️Pending: Reinstall&re-configure nodejs, --dev-tools nodemon rimraf ts-node, aliases, restarting environment.
+# 04-Data\_Persistance\_and\_Event\_sourcing
+
+## PENDING:
+
+⚠️⚠️⚠️Pending: Reinstall\&re-configure nodejs, --dev-tools nodemon rimraf ts-node, aliases, restarting environment.
+
 ***
-Left since: [Session4 TS 14:54](https://www.youtube.com/watch?v=9cx98y7gYfA&list=PLkVpKYNT_U9egW5padLMHmnTPb6xm4hLf&index=4)
 
-# Session 4: DATA PERSISTANCE & EVENT SOURCING
+Left since: [Session4 TS 14:54](https://www.youtube.com/watch?v=9cx98y7gYfA\&list=PLkVpKYNT_U9egW5padLMHmnTPb6xm4hLf\&index=4)
 
-### 1. LocalStorage --> Stores data in browser (Data isn't wasted automatically, code has to delete it)
-### 2. SessionStorage --> Differnce is sessionBrowser based. Data are persistent at session side.
-### 3. Cookies --> Has ExpirationDate, its scope is on URl.
+## Session 4: DATA PERSISTANCE & EVENT SOURCING
 
-#### 1. LocalStorage
+#### 1. LocalStorage --> Stores data in browser (Data isn't wasted automatically, code has to delete it)
+
+#### 2. SessionStorage --> Differnce is sessionBrowser based. Data are persistent at session side.
+
+#### 3. Cookies --> Has ExpirationDate, its scope is on URl.
+
+**1. LocalStorage**
+
 ```ts
 function saveLocalStorage(): void {
 
@@ -21,8 +29,11 @@ function readLocalStorage(): void {
    let nameLocalStorage =  localStorage.get("name");
 }
 ```
-#### 2. SessionStorage
-Same as LocalStorage:  
+
+**2. SessionStorage**
+
+Same as LocalStorage:
+
 ```ts
 function saveSessionStorage(): void {
 
@@ -35,16 +46,17 @@ function readSessionStorage(): void {
 }
 ```
 
-#### 3. Cookies
+**3. Cookies**
 
 While own solutions can be coded, there are some ext dependences in frameworks as npm which resolves this.
 
-Site: https://www.npmjs.com/
+Site: https://www.npmjs.com/\
 Modules: Cookies (Generic)
+
 ***
 
+#### Entire tsdemo BACKUP:
 
-### Entire tsdemo BACKUP:  
 ```ts
 /*
 import { Stats } from "fs";
@@ -798,4 +810,3 @@ Site: https://www.npmjs.com/
 
 */
 ```
-

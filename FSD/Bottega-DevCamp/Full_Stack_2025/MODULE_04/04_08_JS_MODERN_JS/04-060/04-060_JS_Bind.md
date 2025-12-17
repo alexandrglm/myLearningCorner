@@ -1,32 +1,29 @@
-# MODULE 04 - 060: JavaScript
+# 04-060\_JS\_Bind
 
-# Modern JS (10):     Bind function
+## MODULE 04 - 060: JavaScript
 
----
+## Modern JS (10):     Bind function
+
+***
 
 1. Introduction to `bind()`
-
 2. Understanding Function Context (`this`)
-
 3. Syntax and Use of `bind()`
-
 4. Why `bind()` Is Common in React
-
 5. Case Study: Binding a Function to an Object
-
 6. Why Arrow Functions Don’t Work with `bind()`
 
-****
+***
 
-## 1. Introduction to `bind()`
+### 1. Introduction to `bind()`
 
 In JavaScript, functions are **first-class objects**, which means they can be passed around and manipulated like any other value. The `bind()` method is a powerful tool that allows you to **permanently bind a specific value of `this`** to a function.
 
 This is especially useful when working with **callback functions**, **event handlers**, or **component methods** in frameworks like **React**.
 
-****
+***
 
-## 2. Understanding Function Context (`this`)
+### 2. Understanding Function Context (`this`)
 
 Every time a function is invoked in JavaScript, it gets a special value called `this`, which refers to the object that is currently executing the function.
 
@@ -43,9 +40,9 @@ sayHi();                 // undefined (or window.name in browser
 
 Without an explicit context, `this` can refer to the **global object** (`window` in browsers or `global` in Node.js), which is often not what you want.
 
----
+***
 
-## 3. Syntax and Use of `bind()`
+### 3. Syntax and Use of `bind()`
 
 The `bind()` method creates a **new function** with the same body as the original function, but **permanently binds `this`** to the object you pass in.
 
@@ -71,9 +68,9 @@ greetUser();         // "Hello, Kristine"
 
 Once bound, calling `greetUser()` will always refer to `user` as `this`.
 
-****
+***
 
-## 4. Why `bind()` Is Common in React
+### 4. Why `bind()` Is Common in React
 
 In older class-based React components, you often see:
 
@@ -84,13 +81,13 @@ constructor(props) {
 }
 ```
 
-This ensures that `this` inside `handleClick` refers to the component instance, not to the DOM element or another object.   
+This ensures that `this` inside `handleClick` refers to the component instance, not to the DOM element or another object.
 
 Without `bind()`, the method loses its context when passed as a callback, e.g., to an `onClick` event.
 
-****
+***
 
-## 5. Case Study: Binding a Function to an Object
+### 5. Case Study: Binding a Function to an Object
 
 Let’s say we have two users and a function that prints their full name:
 
@@ -120,9 +117,9 @@ console.log(tiffany());         // Hudgens, Tiffany
 
 By using `bind()`, we **inject** the user context into the `fullName` function without passing arguments or restructuring the function.
 
-****
+***
 
-## 6. Why Arrow Functions Don’t Work with `bind()`
+### 6. Why Arrow Functions Don’t Work with `bind()`
 
 Arrow functions behave differently with `this`. They **do not have their own `this`**; instead, they inherit it from their surrounding lexical scope.
 
@@ -137,11 +134,11 @@ const bound = fullName.bind(userOne);
 console.log(bound());         // undefined, undefined
 ```
 
-Even after using `bind()`, the arrow function continues to use the `this` from the outer scope (usually the global object), **ignoring the bound object**.  
+Even after using `bind()`, the arrow function continues to use the `this` from the outer scope (usually the global object), **ignoring the bound object**.
 
 **Conclusion:** To use `bind()` effectively, you must use **regular function expressions** (not arrow functions), as they have dynamic `this` context.
 
-****
+***
 
 | Concept               | Details                                                              |
 | --------------------- | -------------------------------------------------------------------- |
@@ -151,27 +148,25 @@ Even after using `bind()`, the arrow function continues to use the `this` from t
 | Output                | Returns a **new function** with `this` bound to the specified object |
 | Arrow Function Caveat | Arrow functions ignore `.bind()` and inherit `this` from outer scope |
 
----
+***
 
-## References
+### References
 
 * [Function.prototype.bind() - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind)
-
 * https://javascript.info/bind
-
 * [JavaScript Function bind() Method](https://www.w3schools.com/js/js_function_bind.asp)
 
 About using React and Bind:
 
 * https://react.dev/learn/responding-to-events
 
----
+***
 
-## Video lesson Speech
+### Video lesson Speech
 
 As you're building out JavaScript applications, sooner or later, you're most likely going to come across the bind function.
 
-****
+***
 
 Now, bind is something that can be a little bit confusing to grasp, especially in the beginning, but what I want to do is I want to be able to simplify it for you so that you can understand what it does and how it's used in applications.
 
@@ -209,21 +204,21 @@ So, what we want to accomplish is I want to be able to inject and bind ... Spoil
 
 And I'm going to be able to do the same thing here with Tiffany, so I'll say, "`fullName.bind(userTwo)`," and now, if I want to call this function, so I'm going to call Kristine, then you can see that it returns, "Hudgens, Kristine," so it has connected, and has bound together, the fullName function and then the userOne object, and if I do the same thing here with the Tiffany function, this is going to bind the userTwo object, also with our function.
 
-![large](./04-060_IMG1.png)
+![large](../../../../../../.gitbook/assets/04-060_IMG1.png)
 
 So that, if you've never gone through it before, that may seem a little bit odd, but this is a way that JavaScript allows you to connect a function with an object, so instead of having to create a function and pass in arguments, where you would say something like, "`fname`," and, "`lname`," for first name and last name, and then calling that inside of it, we're able to actually bypass that process and bind the function directly with the object, and whenever you see the bind function inside of React, or any of the JavaScript frameworks, that's exactly what it's doing.
 
 Now, I want to add one more little caveat here. I'm going to comment this out right here, and let me show you what happens and why we can't use an arrow function. So, if you've seen a lot of arrow functions around, you may be curious about why I didn't use one. I'll copy this, and right here, with fullName, instead of using a function expression, I'm just going to use an arrow function, so I'll say equals, and then an arrow just like this. You can see that now, this is no longer working. We're getting undefined for both of these functions.
 
-![large](./04-060_IMG2.png)
+![large](../../../../../../.gitbook/assets/04-060_IMG2.png)
 
-The reason for this is because whenever you use an arrow function, remember the key difference between a function expression, like what we have here on line 11, and an arrow function is that the arrow function changes the way that `this` works. 
+The reason for this is because whenever you use an arrow function, remember the key difference between a function expression, like what we have here on line 11, and an arrow function is that the arrow function changes the way that `this` works.
 
-So, you need to be careful, and if you run into any bugs where you are trying to bind an object with a function, and you're getting undefined, the issue may be that it is referencing the wrong scope of `this`, so this right here, when you use an arrow function, is actually supposed to be referencing only the scope of this single function right here, not what is bound to it. 
+So, you need to be careful, and if you run into any bugs where you are trying to bind an object with a function, and you're getting undefined, the issue may be that it is referencing the wrong scope of `this`, so this right here, when you use an arrow function, is actually supposed to be referencing only the scope of this single function right here, not what is bound to it.
 
 So that's the reason why this will not work, and so if you're wanting to use bind, you need to be able to use it with the kind of function expression as we have here. So in review, that is a basic introduction to how the bind function works in JavaScript.
 
-## Code
+### Code
 
 ```javascript
 const userOne = {

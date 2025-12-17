@@ -1,12 +1,12 @@
 # 10-509 SQL 09 - Data Types MySQL/MariaDB
 
----
+***
 
 [Guide](https://devcamp.com/pt-full-stack-development-javascript-python-react/guide/sql-data-types)
 
-[Material PDF](./deep-dive-sql-data-types.pdf)
+[Material PDF](../../../../../inProgress/Basque-DevCamp/Full_Stack_2025/MODULE_10/12-SQL_PART-1/deep-dive-sql-data-types.pdf)
 
----
+***
 
 ## Data Types in SQL
 
@@ -20,9 +20,9 @@ Comprehensive exploration of SQL data types - correct selection according to eac
 
 ### Features
 
-- Fixed-length string - always takes the defined space
-- Reserves entire memory
-- Range: 1-255 characters
+* Fixed-length string - always takes the defined space
+* Reserves entire memory
+* Range: 1-255 characters
 
 ### Proper Use
 
@@ -45,10 +45,10 @@ age     CHAR(3)     -- 42 is NOT a string
 
 ### Features
 
-- Variable-length string - adjusts dynamically
-- Dynamic memory - only uses necessary space
-- Range: 1-65,535 characters
-- Slightly slower than CHAR
+* Variable-length string - adjusts dynamically
+* Dynamic memory - only uses necessary space
+* Range: 1-65,535 characters
+* Slightly slower than CHAR
 
 ### Proper Use
 
@@ -72,8 +72,8 @@ active      VARCHAR(10)    -- 'true' better as BOOLEAN
 
 ### Features
 
-- True/False only
-- Valid values: `true`, `false`, `TRUE`, `FALSE`
+* True/False only
+* Valid values: `true`, `false`, `TRUE`, `FALSE`
 
 ### Proper Use
 
@@ -95,8 +95,8 @@ flag      BOOLEAN    -- 0 (not valid)
 
 ### Features
 
-- Range: -32,768 to 32,768
-- Automatically truncates decimals
+* Range: -32,768 to 32,768
+* Automatically truncates decimals
 
 ### Proper Use
 
@@ -119,8 +119,8 @@ price         SMALLINT    -- 19.99 becomes 19
 
 ### Features
 
-- Range: -2,147,483,648 to 2,147,483,648
-- Popular for IDs and large counts
+* Range: -2,147,483,648 to 2,147,483,648
+* Popular for IDs and large counts
 
 ### Proper Use
 
@@ -141,10 +141,10 @@ name        INT    -- 'John' not valid
 
 ### Features
 
-- Exact precision - critical for finance
-- Syntax: `DECIMAL(precision, scale)`
-  - precision: total digits
-  - scale: digits after the decimal
+* Exact precision - critical for finance
+* Syntax: `DECIMAL(precision, scale)`
+  * precision: total digits
+  * scale: digits after the decimal
 
 ### Proper Use
 
@@ -155,8 +155,9 @@ tax_rate        DECIMAL(5, 4)     -- 9.8340
 ```
 
 Examples:
-- `DECIMAL(4, 3)` returns 9.834
-- `DECIMAL(7, 2)` returns 42215.85
+
+* `DECIMAL(4, 3)` returns 9.834
+* `DECIMAL(7, 2)` returns 42215.85
 
 ### Improper Use
 
@@ -170,9 +171,9 @@ Use for: Money, exact financial calculations.
 
 ### Features
 
-- Approximation - NOT exact
-- Giant numbers - up to 1.79 × 10^308
-- Faster than DECIMAL
+* Approximation - NOT exact
+* Giant numbers - up to 1.79 × 10^308
+* Faster than DECIMAL
 
 ### Proper Use
 
@@ -201,8 +202,8 @@ Never use for money or exact values.
 
 ### Features
 
-- Range: 1753-01-01 to 9999-12-31
-- Format: `YYYY-MM-DD HH:MM:SS.fraction`
+* Range: 1753-01-01 to 9999-12-31
+* Format: `YYYY-MM-DD HH:MM:SS.fraction`
 
 ### Proper Use
 
@@ -221,16 +222,17 @@ event_date    DATETIME    -- 'Jan 15, 2025' (not valid)
 ```
 
 Variants:
-- `DATE` - date only
-- `TIME` - time only
-- `DATETIME` - both
+
+* `DATE` - date only
+* `TIME` - time only
+* `DATETIME` - both
 
 ## CLOB - Character Large Object
 
 ### Features
 
-- Up to 2 GB of text
-- Rarely used
+* Up to 2 GB of text
+* Rarely used
 
 ### Proper Use
 
@@ -252,8 +254,8 @@ Use only if: Text > 65,535 characters.
 
 ### Features
 
-- Up to 2 GB of binary data
-- Stores images directly in DB
+* Up to 2 GB of binary data
+* Stores images directly in DB
 
 ### Proper Use
 
@@ -275,22 +277,22 @@ Note: Nowadays, storing URLs is preferred over direct files.
 
 ### Text
 
-- Fixed known length → `CHAR`
-- Variable length → `VARCHAR`
-- Massive text → `CLOB`
+* Fixed known length → `CHAR`
+* Variable length → `VARCHAR`
+* Massive text → `CLOB`
 
 ### Numbers
 
-- Small integers → `SMALLINT`
-- Normal integers → `INT`
-- Money/finance → `DECIMAL`
-- Scientific/approximate → `FLOAT`
+* Small integers → `SMALLINT`
+* Normal integers → `INT`
+* Money/finance → `DECIMAL`
+* Scientific/approximate → `FLOAT`
 
 ### Others
 
-- True/False → `BOOLEAN`
-- Dates/times → `DATETIME`
-- Binary files → `BLOB`
+* True/False → `BOOLEAN`
+* Dates/times → `DATETIME`
+* Binary files → `BLOB`
 
 ## Practical Examples
 
@@ -359,4 +361,4 @@ price    INT
 price    DECIMAL(6, 2)
 ```
 
----
+***

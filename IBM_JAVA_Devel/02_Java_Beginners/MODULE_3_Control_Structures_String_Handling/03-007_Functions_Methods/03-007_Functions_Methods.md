@@ -1,42 +1,38 @@
 # 03-007 Implementing Functions and Methods
 
-![](./03-007_IMG17.png)
+![](../../../../.gitbook/assets/03-007_IMG17.png)
 
+* **A function** is a standalone block of code that performs a specific task
+* **A method** is a function associated with a class
+* **Function/Method structure** includes: return type, name, parameters, code block, and optional return statement
+* **Parameters** are variable definitions; **arguments** are actual values passed
+* **Return values** are the results provided by the function or method
+* **Method overloading** allows multiple methods with the same name but different parameters
+* **Scope** determines where identifiers are accessible (local, class, static)
+* **Void methods** perform actions without returning values
+* **Methods** are integral to object-oriented programming and can access class state
 
--   **A function** is a standalone block of code that performs a specific task
--   **A method** is a function associated with a class
--   **Function/Method structure** includes: return type, name, parameters, code block, and optional return statement
--   **Parameters** are variable definitions; **arguments** are actual values passed
--   **Return values** are the results provided by the function or method
--   **Method overloading** allows multiple methods with the same name but different parameters
--   **Scope** determines where identifiers are accessible (local, class, static)
--   **Void methods** perform actions without returning values
--   **Methods** are integral to object-oriented programming and can access class state
-
-
----
+***
 
 ## What are Functions?
 
-**A function is a block of code that performs a specific task, and helps organise, reuse, and improve the readability of code.**  
+**A function is a block of code that performs a specific task, and helps organise, reuse, and improve the readability of code.**
 
-![](./03-007_IMG1.png)
-![](./03-007_IMG2.png)
+![](<../../../../.gitbook/assets/03-007_IMG1 (1).png>) ![](<../../../../.gitbook/assets/03-007_IMG2 (1).png>)
 
 Think of a cookbook with countless recipes—each recipe is like a function. It takes specific ingredients as input, follows the steps outlined in the recipe as code, and produces a dish as the final output.
 
+**In Java, a function is created using a specific structure that includes:**
 
-**In Java, a function is created using a specific structure that includes:**  
-
--   **Return type** – The type of value the function will return (e.g., `int`, `double`, `String`, or `void`)
--   **Function name** – Describes its purpose
--   **Parameters** – Optional inputs that allow data processing
--   **Code block** – Contains the logic to execute
--   **Return statement** – Optional, provides the function's output
+* **Return type** – The type of value the function will return (e.g., `int`, `double`, `String`, or `void`)
+* **Function name** – Describes its purpose
+* **Parameters** – Optional inputs that allow data processing
+* **Code block** – Contains the logic to execute
+* **Return statement** – Optional, provides the function's output
 
 ### Syntax
 
-![](./03-007_IMG3.png)
+![](<../../../../.gitbook/assets/03-007_IMG3 (1).png>)
 
 ```java
 [accessModifier] [static] returnType functionName(param1Type param1, param2Type param 2) {
@@ -50,7 +46,7 @@ Think of a cookbook with countless recipes—each recipe is like a function. It 
 
 ### Example: Simple Function
 
-![](./03-007_IMG4.png)
+![](<../../../../.gitbook/assets/03-007_IMG4 (1).png>)
 
 ```java
 public static int add(int a, int b) {
@@ -68,22 +64,21 @@ public static void main(String[] args) {
 }
 ```
 
----
+***
 
 ## What are Methods?
 
-![](./03-007_IMG5.png)
+![](<../../../../.gitbook/assets/03-007_IMG5 (1).png>)
 
-**A method is a function that is associated with a class.** **It defines the behaviour or actions that objects of that class can perform.**  
+**A method is a function that is associated with a class.** **It defines the behaviour or actions that objects of that class can perform.**
 
-**The process of creating a method is similar to creating a function.**   
+**The process of creating a method is similar to creating a function.**
 
 It includes defining the return type, method name, input parameters, and the code, with an optional return statement.
 
 ### Syntax
 
-![](./03-007_IMG6.png)
-
+![](<../../../../.gitbook/assets/03-007_IMG6 (1).png>)
 
 ```java
 [accessModifier] [static] returnType methodName(param1Type param1, param2Type param2) {
@@ -97,8 +92,7 @@ It includes defining the return type, method name, input parameters, and the cod
 
 ### Example: Method in a Class
 
-
-![](./03-007_IMG7.png)
+![](<../../../../.gitbook/assets/03-007_IMG7 (1).png>)
 
 ```java
 public class Calculator {
@@ -125,22 +119,18 @@ public class Main {
 }
 ```
 
----
+***
 
 ## Parameters and Arguments
 
+![](<../../../../.gitbook/assets/03-007_IMG8 (1).png>)
 
-![](./03-007_IMG8.png)
-
-*   **A parameter is a variable used to define the input type of a function or method.**  
-
-*   **Arguments are the actual values passed to a function or method when called.**
-
+* **A parameter is a variable used to define the input type of a function or method.**
+* **Arguments are the actual values passed to a function or method when called.**
 
 ### Example: Multiple Parameters
 
-
-![](./03-007_IMG9.png)
+![](../../../../.gitbook/assets/03-007_IMG9.png)
 
 ```java
 public void greet(String name, int age) {
@@ -156,21 +146,19 @@ public static void main(String[] args) {
 }
 ```
 
----
+***
 
 ## Return Values
 
+![](<../../../../.gitbook/assets/03-007_IMG10 (1).png>)
 
-![](./03-007_IMG10.png)
-
-**A return value is the result that a function or method gives back after performing its task.**  
+**A return value is the result that a function or method gives back after performing its task.**
 
 It can be any data type, such as a number or a string, and is **specified in the `return` statement**.
 
 ### Example: Calculating Area
 
-
-![](./03-007_IMG11.png)
+![](../../../../.gitbook/assets/03-007_IMG11.png)
 
 ```java
 public class Rectangle {
@@ -197,22 +185,19 @@ public class Main {
 }
 ```
 
----
+***
 
 ## Method Overloading
 
+![](../../../../.gitbook/assets/03-007_IMG12.png)
 
-![](./03-007_IMG12.png)
-
-**Method overloading defines multiple methods with the same name in a class but with different parameters.**  
+**Method overloading defines multiple methods with the same name in a class but with different parameters.**
 
 **The correct method is chosen based on the arguments passed when the method is called.**
 
-
 ### Example: Overloaded Methods
 
-
-![](./03-007_IMG13.png)
+![](../../../../.gitbook/assets/03-007_IMG13.png)
 
 ```java
 public class Display {
@@ -242,34 +227,30 @@ public class Main {
 }
 ```
 
-
----
+***
 
 ## Scope and Identifiers
 
+![](../../../../.gitbook/assets/03-007_IMG14.png)
 
-![](./03-007_IMG14.png)
-
-**An identifier in Java is a name given to a variable, method, class, or entity.**   
+**An identifier in Java is a name given to a variable, method, class, or entity.**\
 **The scope of an identifier refers to where in the programme it can be accessed.**
 
 ### Types of Scope
 
-| Scope | Description | Example |
-|-------|-------------|---------|
-| **Local Scope** | Identifiers accessible only within a method or block | Variables inside a method |
-| **Class Scope** | Variables declared in a class but outside methods; accessible throughout the class | Instance variables |
-| **Static Scope** | Static variables belong to the class and are accessible throughout the class | `static` variables |
+| Scope            | Description                                                                        | Example                   |
+| ---------------- | ---------------------------------------------------------------------------------- | ------------------------- |
+| **Local Scope**  | Identifiers accessible only within a method or block                               | Variables inside a method |
+| **Class Scope**  | Variables declared in a class but outside methods; accessible throughout the class | Instance variables        |
+| **Static Scope** | Static variables belong to the class and are accessible throughout the class       | `static` variables        |
 
----
+***
 
 ## Void Methods
 
 **A void method acts without returning a value.** It performs an action but does not return any result.
 
-
-![](./03-007_IMG15.png)
-
+![](../../../../.gitbook/assets/03-007_IMG15.png)
 
 ### Example: Void Method
 
@@ -287,26 +268,23 @@ public static void main(String[] args) {
 }
 ```
 
----
+***
 
 ## Functions vs. Methods
 
 > **Methods are tied to classes and can access instance variables, whereas functions are independent and not tied to any class.**
 
+![](../../../../.gitbook/assets/03-007_IMG16.png)
 
+| Aspect                | Function                                  | Method                                          |
+| --------------------- | ----------------------------------------- | ----------------------------------------------- |
+| **Definition**        | Standalone block of code                  | Function associated with a class                |
+| **Class Association** | Not tied to a class                       | Integral part of a class                        |
+| **Object Access**     | Cannot directly access instance variables | Can access instance variables and other methods |
+| **Usage in Java**     | Rarely used independently                 | Central to object-oriented programming          |
+| **Scope**             | Independent scope                         | Access to class variables and methods           |
 
-![](./03-007_IMG16.png)
-
-| Aspect | Function | Method |
-|--------|----------|--------|
-| **Definition** | Standalone block of code | Function associated with a class |
-| **Class Association** | Not tied to a class | Integral part of a class |
-| **Object Access** | Cannot directly access instance variables | Can access instance variables and other methods |
-| **Usage in Java** | Rarely used independently | Central to object-oriented programming |
-| **Scope** | Independent scope | Access to class variables and methods |
-
-
----
+***
 
 ## Lesson Speech
 

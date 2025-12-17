@@ -1,22 +1,21 @@
-# MODULE 04 - 050: JavaScript
+# 041-050\_JS\_Backtip\_String\_Interpolation
 
-# Modern JS (2):    Backtip String Interpolation
+## MODULE 04 - 050: JavaScript
 
----
+## Modern JS (2):    Backtip String Interpolation
+
+***
 
 1. Template Literal Syntax
-
 2. Expression Embedding
-
 3. Multi-line Strings
-
 4. Real-World Applications
 
-****
+***
 
-## 1. Template Literal Syntax
+### 1. Template Literal Syntax
 
-### Basic Usage
+#### Basic Usage
 
 ```js
 const lyric = 'Never gonna give you up';
@@ -25,17 +24,15 @@ console.log(`I'm ${lyric}`);     // "I'm Never gonna give you up"
 
 **Key Features:**
 
-- Enclosed in backticks (`` ` ``)
+* Enclosed in backticks (`` ` ``)
+* `${}` syntax for embedding expressions
+* Automatic whitespace preservation
 
-- `${}` syntax for embedding expressions
+***
 
-- Automatic whitespace preservation
+### 2. Expression Embedding
 
-****
-
-## 2. Expression Embedding
-
-### Complex Expressions
+#### Complex Expressions
 
 ```js
 // Mathematical operations
@@ -51,11 +48,11 @@ console.log(`Current year: ${getYear()}`);
 console.log(`Formatted: ${`$${149.99.toFixed(2)}`}`); // "Formatted: $149.99"
 ```
 
-****
+***
 
-## 3. Multi-line Strings
+### 3. Multi-line Strings
 
-### Without Template Literals
+#### Without Template Literals
 
 ```js
 const oldWay = 'Line 1\n' +
@@ -63,7 +60,7 @@ const oldWay = 'Line 1\n' +
                'Line 3';
 ```
 
-### With Template Literals
+#### With Template Literals
 
 ```js
 const modernWay = `Line 1
@@ -73,17 +70,15 @@ Line 3`;
 
 **Framework Usage:**
 
-- React JSX multi-line elements
+* React JSX multi-line elements
+* SQL query formatting
+* HTML template generation
 
-- SQL query formatting
+***
 
-- HTML template generation
+### 4. Real-World Applications
 
-****
-
-## 4. Real-World Applications
-
-### Dynamic UI Messages
+#### Dynamic UI Messages
 
 ```js
 const user = { name: 'Leia', rank: 'General' };
@@ -91,7 +86,7 @@ console.log(`Alert: ${user.rank} ${user.name} has arrived!`);
 // "Alert: General Leia has arrived!"
 ```
 
-### API Error Formatting
+#### API Error Formatting
 
 ```js
 const error = { code: 404, message: 'Not Found' };
@@ -99,9 +94,9 @@ console.log(`Error ${error.code}: ${error.message}`);
 // "Error 404: Not Found"
 ```
 
-****
+***
 
-## Common Pitfalls
+### Common Pitfalls
 
 | Mistake                        | Solution                        |
 | ------------------------------ | ------------------------------- |
@@ -109,23 +104,23 @@ console.log(`Error ${error.code}: ${error.message}`);
 | `${ user.name }`               | Remove spaces: `${user.name}`   |
 | Forgetting expression closure  | Ensure every `${` has `}`       |
 
----
+***
 
-## Pro Tips
+### Pro Tips
 
-1. **Tagged Templates:** Advanced pattern for custom string processing
-   
-   ```js
-   function highlight(strings, ...values) {
-     return strings.reduce((result, str, i) => 
-       `${result}${str}<mark>${values[i] || ''}</mark>`, '');
-   }
-   ```
-   
-   console.log(highlight`Warning: ${5} alerts found`);
-   // "Warning: <mark>5</mark> alerts found"
+1.  **Tagged Templates:** Advanced pattern for custom string processing
 
-```
+    ```js
+    function highlight(strings, ...values) {
+      return strings.reduce((result, str, i) => 
+        `${result}${str}<mark>${values[i] || ''}</mark>`, '');
+    }
+    ```
+
+    console.log(highlight`Warning: ${5} alerts found`);\
+    // "Warning: 5 alerts found"
+
+````
 2. **Internationalization:** Combine with i18n libraries for dynamic translations
 
 ****
@@ -191,11 +186,11 @@ const lyrics = 'Never gonna give you up';
 console.log(`I'm ${lyrics}`);
 console.log(`I'm ${2 + 2}`);
 console.log(`I'm ${lyrics + " " + lyrics}`);
-```
+````
 
-****
+***
 
-## Coding Exercise
+### Coding Exercise
 
 Inside the below function, write a variable and give it a string that says "It's a trap!" Then on the `return` use string interpolation to finish the movie line
 

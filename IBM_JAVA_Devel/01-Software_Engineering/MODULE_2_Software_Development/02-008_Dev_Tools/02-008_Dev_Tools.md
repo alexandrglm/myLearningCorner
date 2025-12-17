@@ -1,73 +1,68 @@
 # 02-008: Development Tools
 
-A cloud application developer's workbench comprises three essential components: 
+A cloud application developer's workbench comprises three essential components:
 
-1.  Version Control
+1. Version Control
+2. Libraries
+3. Frameworks.
 
-2.  Libraries
-
-3.  Frameworks.
-
----
+***
 
 ### Version Control
 
-**Version control systems** track changes made, when they occurred, and by whom, whilst resolving conflicts between modifications.   
+**Version control systems** track changes made, when they occurred, and by whom, whilst resolving conflicts between modifications.
 
 Essential for multi-developer projects, version control is valuable even for solo contributors, enabling code reversion when issues arise and documenting development history.
 
 **Git and GitHub** are extremely popular for source code storage and management. **Git** stores files in **repositories** where developers track changes, split code into **branches** for focused development, and merge them into the main codebase.
 
----
-
+***
 
 ### Libraries
 
-**Code libraries** are collections of reusable code—standard programmes and subroutines—solving specific problems or adding particular features.  
+**Code libraries** are collections of reusable code—standard programmes and subroutines—solving specific problems or adding particular features.
 
 Libraries enable rapid development by eliminating the need to build functionality from scratch (e.g., navigation carousels).
 
 **Characteristics**:
 
-- Multiple libraries integrate into existing projects
-
-- Developers retain control, calling required methods as needed
-
-- Programme flow returns to normal once subroutine completion
-
-- Flexible; chosen based on specific needs
-
+* Multiple libraries integrate into existing projects
+* Developers retain control, calling required methods as needed
+* Programme flow returns to normal once subroutine completion
+* Flexible; chosen based on specific needs
 
 **Examples**: jQuery (DOM manipulation), Email-validator (email verification), Apache Commons Proper (reusable Java components).
 
----
+***
 
 ### Frameworks
 
-**Frameworks** provide standardised application build and deployment structures, acting as skeletons developers extend with custom code.  
+**Frameworks** provide standardised application build and deployment structures, acting as skeletons developers extend with custom code.
 
 Unlike libraries, frameworks dictate programme architecture and control flow, determining which subroutines and methods execute and when.
 
 **Key characteristics**:
-- Must be chosen early; cannot be incorporated into existing projects
-- Impose specific structural requirements
-- Framework calls developer code (inversion of control), not vice versa
-- Less flexible than libraries but provide standardisation
-- **Opinionated frameworks** make decisions about code style, file locations, and naming conventions, reducing configuration overhead
+
+* Must be chosen early; cannot be incorporated into existing projects
+* Impose specific structural requirements
+* Framework calls developer code (inversion of control), not vice versa
+* Less flexible than libraries but provide standardisation
+* **Opinionated frameworks** make decisions about code style, file locations, and naming conventions, reducing configuration overhead
 
 **Inversion of Control**: The framework's predefined workflow directing development creates a sense of reduced developer control, but enables standardised apps and eliminates tedious configuration tasks.
 
 **Examples**: AngularJS (JavaScript-based dynamic web applications), Vue.js (UI-focused JavaScript framework), Django (Python web development framework).
 
----
+***
 
 ## Inversion of Control
 
-![](./02-008_IMG1.png)
+![](../../../../.gitbook/assets/02-008_IMG1.png)
 
-![](./02-008_IMG2.png)
+![](../../../../.gitbook/assets/02-008_IMG2.png)
 
----
+***
+
 ## Video Lesson
 
 Welcome to **Introducing Application Development Tools**. Getting your **Cloud App** from the **ideas stage** to **fully formed, written, and deployed** is a **long process**, but there are **many tools** which will **help you along the way**.

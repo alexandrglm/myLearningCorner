@@ -1,33 +1,24 @@
-# Audit general terms / NSS certification
+# 02-Audit\_General\_terms\_-\_NSS\_Certifications
 
-## Definitions:
+## Audit general terms / NSS certification
 
-- Scope of the Audit
-  
-- Technical Competence (requirements)
-  
-- Certification Bodies' resources
-  
-- Audit extension time
-  
-- Auditing Findings
-  
-- Remote Certification Process
-  
-- Shared resources utilisation
-  
-- Passed Mark / Conformed Mark
-  
-- Exceptional certification situations
-  
-- Entities responsabilities
-  
-- Provisional Passed Marks.
-  
+### Definitions:
 
-## Introduction
+* Scope of the Audit
+* Technical Competence (requirements)
+* Certification Bodies' resources
+* Audit extension time
+* Auditing Findings
+* Remote Certification Process
+* Shared resources utilisation
+* Passed Mark / Conformed Mark
+* Exceptional certification situations
+* Entities responsabilities
+* Provisional Passed Marks.
 
-[ENG]
+### Introduction
+
+\[ENG]
 
 In this module, we will learn about the general criteria for conducting audits and obtaining certification under the (Spanish) National Security Scheme (NSS).
 
@@ -35,67 +26,62 @@ Organizations subject to the NSS, whether Public or Private bodies, but particul
 
 That's why the Entities whose determination is complying with a NSS must show the more professional attitude and rigor, the better, ensuring the quality and the best given results of the Audits, and the issuance of the Certifications as applicable.
 
-[SPA]
+\[SPA]
 
 A lo largo del siguiente módulo, conoceremos los criterios generales para la Auditoría y Certificación de los sistemas de información del ámbito de aplicación del Esquema Nacional de Seguridad.
 
 Las organizaciones en el ámbito de aplicación del ENS, ya pertenezcan al sector público o al sector privado, y muy especialmente las Entidades de Certificación, deben ser conscientes de que las Auditorías de Conformidad con el ENS y la expresión de tal conformidad, a través de las correspondientes Certificaciones, guardan relación directa con la garantía de seguridad de los sistemas de información de las entidades públicas.
 
 Debido a ello, las organizaciones que implementen o cumplan con el ENS y, especialmente, las Entidades de Certificación, actuarán siempre con la mayor profesionalidad y rigor, garantizando la calidad y los resultados de las auditorías y la generación de los certificados a que haya lugar.
+
 ***
 
-# Scope of the Audit
+## Scope of the Audit
 
-[ENG]
+\[ENG]
 
 An accurate meaning of an Audit Scope would be:
 
 > Through the proper identification of:
-> 
-> - The ISS covered under it.
->   
-> - The services provided through those systems.
->   
->   Both the former (ISS) and the latter (the services supported by those systems):
->   
->   **Must be explicitly mentioned in the 
->   Certificate of Conformity with the NSS,**
->   
+>
+> * The ISS covered under it.
+> *   The services provided through those systems.
+>
+>     Both the former (ISS) and the latter (the services supported by those systems):
+>
+>     **Must be explicitly mentioned in the**\
+>     **Certificate of Conformity with the NSS,**
 
-[SPA]
+\[SPA]
 
-- Sería importante definir con precisión el alcance de la auditoría…
-  
-  mediante la adecuada determinación de los sistemas de información comprendidos en la misma y los servicios prestados por medio de tales sistemas.
-  
+*   Sería importante definir con precisión el alcance de la auditoría…
 
-- Tanto unos (los sistemas de información) como los otros (los servicios sustentados en dichos sistemas)… 
+    mediante la adecuada determinación de los sistemas de información comprendidos en la misma y los servicios prestados por medio de tales sistemas.
+* Tanto unos (los sistemas de información) como los otros (los servicios sustentados en dichos sistemas)…\
   ... deberán aparecer explícitamente mencionados en el Certificado de Conformidad con el ENS que, en su caso, se expida por la Entidad de Certificación, en el caso de tratarse de una Auditoría de Certificación de conformidad con el ENS.
-***
-# Certification Entity Tech. Competence
 
-[ENG]
+***
+
+## Certification Entity Tech. Competence
+
+\[ENG]
 
 The Certification Entity must demomnstrate an experience of, at least, **THREE YEARS** regularly conducting Audit Processes related to the ISS, with a special arrangement to:
 
-- Contracts value.
-  
-- A detail of the given Certifications.
-  
-- Time/Journals involved in every Audit process.
-  
+* Contracts value.
+* A detail of the given Certifications.
+* Time/Journals involved in every Audit process.
 
-[SPA]
+\[SPA]
 
 La Entidad de Certificación ha de tener una experiencia demostrable de, al menos, tres años en la realización de forma regular de auditorías relacionadas con la seguridad de la información, tomándose en consideración:
 
-- El importe de los contratos
-
-- El número de certificados emitidos.
-
-- Las jornadas de auditor dedicadas a esta actividad:
+* El importe de los contratos
+* El número de certificados emitidos.
+* Las jornadas de auditor dedicadas a esta actividad:
 
 ***
 
-# pending
-# Certification Entity resources
+## pending
+
+## Certification Entity resources

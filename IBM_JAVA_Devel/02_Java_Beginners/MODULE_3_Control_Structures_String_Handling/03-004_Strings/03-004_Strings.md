@@ -1,61 +1,61 @@
 # 03-004 Working with Strings
 
-![](./03-004_IMG14.png)
-![](./03-004_IMG15.png)
+![](../../../../.gitbook/assets/03-004_IMG14.png) ![](../../../../.gitbook/assets/03-004_IMG15.png)
 
--   **Strings** are sequences of characters, including spaces and punctuation
--   **Strings are immutable** – modifying them creates a new string
--   Strings can be created using **string literals** or the **`new` keyword**
+* **Strings** are sequences of characters, including spaces and punctuation
+* **Strings are immutable** – modifying them creates a new string
+* Strings can be created using **string literals** or the **`new` keyword**
 
-String Methods:     
--   **`length()` method** returns the number of characters in a string
--   **`charAt()` method** retrieves a character at a specific index
--   **Concatenation** combines strings using `+` or `concat()` method
--   **`equals()` method** compares two strings for identical content
--   **`substring()` method** extracts a part of a string
--   **`split()` method** divides a string into smaller pieces
--   **`String.join()` method** combines strings with a separator
+String Methods:
 
-Built-in Methods:   
--   **`toUpperCase()`** and **`toLowerCase()`** convert case
--   **`trim()` method** removes leading and trailing spaces
--   **`.strip() method**, since Java 11, also removes them.
--   **`replace()` method** replaces characters or substrings
+* **`length()` method** returns the number of characters in a string
+* **`charAt()` method** retrieves a character at a specific index
+* **Concatenation** combines strings using `+` or `concat()` method
+* **`equals()` method** compares two strings for identical content
+* **`substring()` method** extracts a part of a string
+* **`split()` method** divides a string into smaller pieces
+* **`String.join()` method** combines strings with a separator
 
+Built-in Methods:
 
+* **`toUpperCase()`** and **`toLowerCase()`** convert case
+* **`trim()` method** removes leading and trailing spaces
+* **\`.strip() method**, since Java 11, also removes them.
+* **`replace()` method** replaces characters or substrings
 
----
+***
+
 ## What are Strings?
 
-![](./03-004_IMG2.png)
+![](<../../../../.gitbook/assets/03-004_IMG2 (1).png>)
 
-**A string is a sequence of characters, like a line of text in a book.** They include spaces and punctuation.   
-For example, `"Hello, World!"` is a string with 13 characters.  
+**A string is a sequence of characters, like a line of text in a book.** They include spaces and punctuation.\
+For example, `"Hello, World!"` is a string with 13 characters.
 
-![](./03-004_IMG1.png)
+![](<../../../../.gitbook/assets/03-004_IMG1 (1).png>)
 
-**Strings are essential in Java for handling text like names or messages.**  
+**Strings are essential in Java for handling text like names or messages.**\
 Think of a string as a bead necklace where each bead represents a character, and the entire necklace represents the string, just as you can:
--   Count
--   Remove
--   Rearrange
--   Replace
-... beads on the necklace, you can manipulate characters in a string to get the requested result.
 
----
+* Count
+* Remove
+* Rearrange
+* Replace ... beads on the necklace, you can manipulate characters in a string to get the requested result.
+
+***
 
 ## Creating Strings
 
 Strings in Java can be created in two ways:
--   **String Literals**
--   `new`**Keyword**
 
-![](./03-004_IMG3.png)
+* **String Literals**
+* `new`**Keyword**
+
+![](<../../../../.gitbook/assets/03-004_IMG3 (1).png>)
 
 Both methods create a string, though the **literal approach is more commonly used**.
 
-
-### A -  String Literal
+### A - String Literal
 
 ```java
 String greeting = "Hello, World!";
@@ -67,31 +67,29 @@ String greeting = "Hello, World!";
 String greeting = new String("Hello, World!");
 ```
 
----
+***
 
 ## Common String Methods
 
--   **.length()**
--   **.charAt()**
--   **.concat()**
--   **.equals()**
--   **.substring()**
--   **.split()**
--   **.join()**
+* **.length()**
+* **.charAt()**
+* **.concat()**
+* **.equals()**
+* **.substring()**
+* **.split()**
+* **.join()**
+* **.toUpperCase()** / **.toLowerCase()**
+* **.trim()**
+* **.strip()**
+* **.replace()**
 
-
--   **.toUpperCase()** / **.toLowerCase()**
--   **.trim()**
--   **.strip()**
--   **.replace()**
-
----
+***
 
 ### `.length()` - String (char) Counting
 
 **The `length()` method finds the number of characters in a string.** It returns the total number of characters, including spaces.
 
-![](./03-004_IMG4.png)
+![](<../../../../.gitbook/assets/03-004_IMG4 (1).png>)
 
 ```java
 String text = "Java Programming";
@@ -102,22 +100,21 @@ int length = text.length();  // Returns 16
 System.out.println(length);  // Output: 16
 ```
 
-##### `.length-1' as "Last Index Of" 
+**\`.length-1' as "Last Index Of"**
 
-In Java, the last element of an array or string always has the index `length - 1`. 
+In Java, the last element of an array or string always has the index `length - 1`.
 
-Therefore, when you want to **access the last element without knowing its exact position**, instead of using `.lastIndexof()'  method, the `<array>.length - 1` should be used. 
+Therefore, when you want to **access the last element without knowing its exact position**, instead of using `.lastIndexof()' method, the` .length - 1\` should be used.
 
 It's a very common pattern in loops and data manipulation, especially when you need to traverse an array backwards or when you want to avoid `ArrayIndexOutOfBoundsException` errors.
 
-
----
+***
 
 ### `charAt()` - String Counting
 
 **The `charAt()` method is used to access individual characters from a string.** This method returns the character at a specific position, starting from index 0.
 
-![](./03-004_IMG5.png)
+![](<../../../../.gitbook/assets/03-004_IMG5 (1).png>)
 
 ```java
 String word = "Java";
@@ -127,13 +124,13 @@ char firstChar = word.charAt(0);  // Returns 'J'
 System.out.println(firstChar);    // Output: J
 ```
 
----
+***
 
 ### `.concat()` - String Concatenation
 
 **Combining strings is known as concatenation.** This operation can be executed with the `+` operator or the `concat()` method, both of which yield the same output.
 
-![](./03-004_IMG60.png)
+![](03-004_IMG60.png)
 
 ```java
 String firstName = "John";
@@ -151,15 +148,15 @@ System.out.println(fullName1);  // Output: John Doe
 System.out.println(fullName2);  // Output: John Doe
 ```
 
----
+***
 
 ### `.equals()` - Strings Comparison
 
-**Comparing strings is done using the `equals()` method, which checks if two strings have identical content.**  
+**Comparing strings is done using the `equals()` method, which checks if two strings have identical content.**
 
 The `equals()` method ensures that the actual characters in the strings match and is case-sensitive.
 
-![](./03-004_IMG7.png)
+![](../../../../.gitbook/assets/03-004_IMG7.png)
 
 ```java
 String str1 = "Hello";
@@ -172,19 +169,20 @@ System.out.println(str1.equals(str2));  // Output: true
 System.out.println(str1.equals(str3));  // Output: false
 ```
 
----
+***
 
 ### `.substring()` - String Extraction
 
-**Substrings within strings can be extracted using the `substring()` method.**  
+**Substrings within strings can be extracted using the `substring()` method.**
 
-It allows specifying a starting and ending index.  
+It allows specifying a starting and ending index.
 
 The ending index is not included in the result.
 
-![](./03-004_IMG8.png)
+![](../../../../.gitbook/assets/03-004_IMG8.png)
 
 #### Syntax
+
 `<String>.substring(beginIndex: x, endIndex: y)`
 
 ```java
@@ -195,13 +193,13 @@ String sub = text.substring(5, 16);  // Returns "Programming"
 System.out.println(sub);             // Output: Programming
 ```
 
----
+***
 
 ### `.split()` - String Destructuring
 
 **Strings can be split up using the `split()` method, which breaks a string into smaller pieces based on a specified delimiter.**
 
-![](./03-004_IMG9.png)
+![](../../../../.gitbook/assets/03-004_IMG9.png)
 
 ```java
 String items = "apple,banana,cherry";
@@ -213,23 +211,25 @@ for (String fruit : fruits) {
 ```
 
 Output:
+
 ```
 apple
 banana
 cherry
 ```
 
----
+***
 
 ### `.join()` - Strings Combining
 
-**Joining strings can also be done using the `String.join()` method.**  
+**Joining strings can also be done using the `String.join()` method.**
 
 If there is an array of strings and the goal is to combine them into one single string, this method allows specifying a separator.
 
-![](./03-004_IMG10.png)
+![](../../../../.gitbook/assets/03-004_IMG10.png)
 
 #### Syntax
+
 `String.join("<separator>", <varname>)`
 
 ```java
@@ -240,16 +240,15 @@ String result = String.join(", ", colours);
 System.out.println(result);  // Output: Red, Green, Blue
 ```
 
----
+***
+
 ### Built-in Methods
 
 ### `toUpperCase()` and `toLowerCase()` - Built-in Methods
 
 **The `toUpperCase()` method converts all letters in a string to uppercase, and the `toLowerCase()` method converts all letters in a string to lowercase.**
 
-![](./03-004_IMG12.png)
-![](./03-004_IMG13.png)
-
+![](../../../../.gitbook/assets/03-004_IMG12.png) ![](../../../../.gitbook/assets/03-004_IMG13.png)
 
 ```java
 String text = "Hello World";
@@ -258,9 +257,9 @@ System.out.println(text.toUpperCase());   // Output: HELLO WORLD
 System.out.println(text.toLowerCase());   // Output: hello world
 ```
 
----
+***
 
-### `trim()` - 
+### `trim()` -
 
 **The `trim()` method removes any extra spaces at the beginning or end of a string.**
 
@@ -271,20 +270,19 @@ String trimmed = text.trim();
 System.out.println(trimmed);  // Output: Hello World
 ```
 
----
+***
 
 ### `.strip()`
 
-**The `strip()` method is similar to `trim()` but is more modern and flexible**.   
+**The `strip()` method is similar to `trim()` but is more modern and flexible**.
 
-
--   Whilst `.trim()` only removes ASCII whitespace characters (spaces, tabs, newlines) ...
--   ... `.strip()` removes all Unicode whitespace characters, making it more robust for international text.  
+* Whilst `.trim()` only removes ASCII whitespace characters (spaces, tabs, newlines) ...
+* ... `.strip()` removes all Unicode whitespace characters, making it more robust for international text.
 
 Additionally, Java 11 introduced:
 
--   **`stripLeading()`**:   removes whitespace from the beginning only
--   **`stripTrailing()`**:  removes it from the end only
+* **`stripLeading()`**: removes whitespace from the beginning only
+* **`stripTrailing()`**: removes it from the end only
 
 ```java
 String text = "  Hello World  ";
@@ -298,9 +296,7 @@ String trailingStripped = text.stripTrailing(); // Removes only trailing whitesp
 
 > `.strip()` and its variants are built-in methods available only from Java 11 onwards. For earlier versions, you must use trim().
 
-
-
----
+***
 
 ### `replace()` Method
 
@@ -313,14 +309,13 @@ String replaced = text.replace("World", "Java");
 System.out.println(replaced);  // Output: Hello Java
 ```
 
----
-
+***
 
 ## String Immutability
 
-![](./03-004_IMG11.png)
+![](../../../../.gitbook/assets/03-004_IMG11.png)
 
-**Immutable means that, once an object or value is created, it cannot be changed or modified.**  
+**Immutable means that, once an object or value is created, it cannot be changed or modified.**
 
 In Java, **strings are immutable.** If you try to modify it, a new string is created instead.
 
@@ -333,10 +328,9 @@ System.out.println(original);  // Output: Hello
 System.out.println(modified);  // Output: Hello World
 ```
 
----
+***
 
-
----
+***
 
 ## Lesson Speech
 

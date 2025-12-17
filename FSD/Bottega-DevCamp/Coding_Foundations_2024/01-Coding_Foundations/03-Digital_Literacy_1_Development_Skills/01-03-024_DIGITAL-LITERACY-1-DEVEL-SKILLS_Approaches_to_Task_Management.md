@@ -2,7 +2,7 @@
 
 One of the most common questions that I get asked is how to properly manage tasks on a day-to-day basis, and this can come from the perspective of a developer, an employee, an entrepreneur, or simply a lifelong learner.
 
----
+***
 
 All of us have a wide-ranging set of tasks that we have to get accomplished on a daily basis, and being able to properly manage those can be quite challenging. So, what we're going to walk through in this guide are a number of potential solutions for how to build out a task management system.
 
@@ -10,7 +10,7 @@ The reason why I'm going to give you multiple options is because it's been my ex
 
 Now, the very first thing we're going to do is talk about the **primary goal** of being able to manage tasks.
 
-![IMG](./03-024/03-024_IMG1.png)
+![IMG](../../../../../.gitbook/assets/03-024_IMG1.png)
 
 And then we're going to walk into the formal definition and see what this represents, and that's going to help lead the way for what our system is going to look like.
 
@@ -24,13 +24,13 @@ Now, we have two other components here. The next is that we want to do things in
 
 Now, I'm going to go into the definition from Wikipedia, not to bore you, but instead to help give us a framework for what a task management system really should contain.
 
-![IMG](./03-024/03-024_IMG2.png)
+![IMG](../../../../../.gitbook/assets/03-024_IMG2.png)
 
 So, it says that "Task management is a process of managing a task through its lifecycle. It involves planning, testing, tracking, and reporting. Task management can help either individuals achieve goals or groups of individuals collaborate and share knowledge for the accomplishment of collective goals. Tasks are also differentiated by complexity from low to high."
 
 Now, I want to highlight a few key words here:
 
-![IMG](./03-024/03-024_IMG3.png)
+![IMG](../../../../../.gitbook/assets/03-024_IMG3.png)
 
 And those are **lifecycle**, **planning**, **testing**, **tracking**, **reporting**, **individual goals**, **group goals**, **collaboration**, **sharing knowledge**, and **complexity**. The reason why I picked out these words is because they go into all of the different elements that a task management system should really contain.
 
@@ -38,7 +38,7 @@ Now, a few of those are optional. So, if you do not work with a team, then colla
 
 So, in the **pro** category:
 
-![IMG](./03-024/03-024_IMG4.png)
+![IMG](../../../../../.gitbook/assets/03-024_IMG4.png)
 
 A properly structured task management system is great because it helps to provide structure and organization. It allows you to perform tracking and reporting. It allows for collaboration, and one of my favorite pros is that it **decreases stress**. Research shows that one of the top causes for stress and anxiety in individuals is uncertainty.
 
@@ -46,19 +46,19 @@ And so, if you as an individual have a high level of uncertainty about the tasks
 
 Now that we've talked about the pros, let's mention a few of the **cons**.
 
-![IMG](./03-024/03-024_IMG5.png)
+![IMG](../../../../../.gitbook/assets/03-024_IMG5.png)
 
 One is that there is **additional setup time**. There is no way around this. If you want to properly implement a task management system, you're going to have to dedicate and allocate the time needed in order to build it properly and then also to maintain it. I personally spend anywhere between 10 and 30 minutes a day working through and planning out my activities. And this is very common in pretty much every task management system I've ever implemented. So, you are going to have to have that time sliced out of your day. Now, also, there can be a **learning curve**. So, depending on the type of system that you want to implement, there are various things that you're going to have to learn in order to build it out properly.
 
 I do not think that either of these cons detract enough to say that you shouldn't have some form of task management system. And what we're going to do is go through three options, and these are three systems that I have personally used throughout the last few years, and each one of them has proven to be very effective.
 
-![IMG](./03-024/03-024_IMG6.png)
+![IMG](../../../../../.gitbook/assets/03-024_IMG6.png)
 
 The three that we're going to talk about are going to be **daily task journaling**, **Kanban**, and then a **traditional to-do list**. In the first case study, we're going to go with daily task journaling, and the example that I'm going to use is from a company called [Best Self Co](https://bestself.co/). I've used their service for a while, and it is a system where they print and structure an entire journal. This small book, and they send you a new one every 12 weeks. It is a paid service, but each one of the components that are included can be something that, if you do not want to pay the money but you still want to implement daily task journaling as your system, then you can do all of this yourself completely for free.
 
 I'm simply going to walk through their structure because there were a number of benefits, and I got quite a bit out of it when I was going through their system. Every daily task journaling system is a little bit different, and so what I want to do is include some of the more popular elements, and then you can always pick and choose which one of these items you can include into your own daily routine.
 
-![IMG](./03-024/03-024_IMG7.png)
+![IMG](../../../../../.gitbook/assets/03-024_IMG7.png)
 
 What they had is that you always start off the day listing off what you're grateful for. Now, this is not something that they invented. In fact, I've heard a number of popular entrepreneurs, such as **Arianna Huffington**, who does this exact thing every day when she wakes up. She lists off three things that she's grateful for before she has opened her phone to look at emails, before she's done anything else. In her description of the process, she said that it allowed her to start her day with the right mindset instead of diving right into any tasks that could potentially increase stress and anxiety.
 
@@ -72,7 +72,7 @@ So, in other words, if I procrastinated, for example, and I didn't complete a nu
 
 So, this is something where you can brag a little bit to yourself on the things that you were happy with. And so, the way that the journal actually looks—and this is a verbatim screenshot or a picture of my journal when I was going through it:
 
-![IMG](./03-024/03-024_IMG8.png)
+![IMG](../../../../../inProgress/Basque-DevCamp/Coding_Foundations_2024/01-Coding_Foundations/03-Digital_Literacy_1_Development_Skills/03-024/03-024_IMG8.png)
 
 On the left-hand side there, you can see that all of my tasks for the day were time-boxed, and it went from 6:00 a.m. all the way through 9:00 p.m. So, right there, I listed out every single task that I had to do, and this includes your entire life. So, if you are in school or if you are working in a job, you don't simply list the elements that are related to your school or work; instead, you list everything out.
 
@@ -100,134 +100,133 @@ If you are someone who really enjoys working with pen and paper, this can be a g
 
 Now, we're going to move on to a task manager system that you can use as an individual or in a group in collaborative settings. And that is a **Kanban** approach. A Kanban is a project management methodology that's been used for several decades and has become incredibly popular in a number of different industries, and so we're going to walk through a few variations of that.
 
-![IMG](./03-024/03-024_IMG9.png)
+![IMG](../../../../../.gitbook/assets/03-024_IMG9.png)
 
 We're going to see how we can use it for daily status tracking, for collaboration, how we can use it for projects both for yourself and for groups, and also how you can leverage this kind of tool for adding metadata and other kinds of associated content and helpful items like that into your daily workflow.
 
----
+***
 
+For this walkthrough we're going to jump into the browser and we're going to work with the [Trello](https://trello.com/?aceid=\&adposition=1t1\&adgroup=45883604321\&campaign=817711909\&creative=230348617886\&device=c\&keyword=trello\&matchtype=e\&network=g\&placement=\&ds_kids=p20478354863\&gclid=EAIaIQobChMI9q3L_a2h2QIVD3R-Ch1U7wwFEAAYASAAEgJd0vD_BwE\&gclsrc=aw.ds) software.
 
-For this walkthrough we're going to jump into the browser and we're going to work with the [Trello](https://trello.com/?aceid=&adposition=1t1&adgroup=45883604321&campaign=817711909&creative=230348617886&device=c&keyword=trello&matchtype=e&network=g&placement=&ds_kids=p20478354863&gclid=EAIaIQobChMI9q3L_a2h2QIVD3R-Ch1U7wwFEAAYASAAEgJd0vD_BwE&gclsrc=aw.ds) software.
+And so Trello is a free tool to use, they have paid options. If you're working on a small enough team then it is free and especially if you're just using it for your own purposes then it's completely free and you can see a very different approach here compared with the daily task journalling.
 
-And so Trello is a free tool to use, they have paid options. If you're working on a small enough team then it is free and especially if you're just using it for your own purposes then it's completely free and you can see a very different approach here compared with the daily task journalling. 
+![IMG](../../../../../.gitbook/assets/03-024_IMG10.png)
 
-![IMG](./03-024/03-024_IMG10.png)
+And in addition to that we're going to go through three examples. I have a number of Kanban boards that I work with individuals on and also that I work with just for my own personal use. And so I'm going to show you the approach because it is different for each one of these boards.
 
-And in addition to that we're going to go through three examples. I have a number of Kanban boards that I work with individuals on and also that I work with just for my own personal use. And so I'm going to show you the approach because it is different for each one of these boards. 
+The first one I'm going to show you is the traditional Kanban approach and so what Kanban is, is it gives you the ability to track states of a specific project. So on the top of each one of these cards here is something that's called in progress so this is a state. Then Need Quizzes, Need Projects, and then each one of them have a state that they are in.
 
-The first one I'm going to show you is the traditional Kanban approach and so what Kanban is, is it gives you the ability to track states of a specific project. So on the top of each one of these cards here is something that's called in progress so this is a state. Then Need Quizzes, Need Projects, and then each one of them have a state that they are in. 
+![IMG](../../../../../.gitbook/assets/03-024_IMG11.png)
 
-![IMG](./03-024/03-024_IMG11.png)
+And so the way I've set this up is this is sequential and if you're wondering what this is for, this is a process that I use with the curriculum team for Bottega. This is how we track to see if a entire course is done and also how we can track and then have reporting on the status of each one of our projects. Take for example our introduction to programming with python. Right here we can see that it needs quizzes and so that can tell someone on the curriculum team who's been tasked with writing the quizzes that if they're looking for something to do then right here they can come to the course and then start and add that. After they've added all the quizzes they can click on this and then drag this task over to the next card.
 
-And so the way I've set this up is this is sequential and if you're wondering what this is for, this is a process that I use with the curriculum team for Bottega. This is how we track to see if a entire course is done and also how we can track and then have reporting on the status of each one of our projects. Take for example our introduction to programming with python. Right here we can see that it needs quizzes and so that can tell someone on the curriculum team who's been tasked with writing the quizzes that if they're looking for something to do then right here they can come to the course and then start and add that. After they've added all the quizzes they can click on this and then drag this task over to the next card. 
+![IMG](../../../../../.gitbook/assets/03-024_IMG12.png)
 
-![IMG](./03-024/03-024_IMG12.png)
+![IMG](../../../../../.gitbook/assets/03-024_IMG13.png)
 
-![IMG](./03-024/03-024_IMG13.png)
+So in this case every one of our courses has projects and so with that in mind we know that when the quizzes have been added it's on to our task where we need to start adding projects.
 
-So in this case every one of our courses has projects and so with that in mind we know that when the quizzes have been added it's on to our task where we need to start adding projects. 
+Obviously, this is very specific to my and my team's use case. But if you imagine any kind of project that you are working on it probably has various states of being in progress too. All the way down to having a quality assurance team looking at it and you'll have a custom set of states and processes and you can simply take each one of these tasks on a journey.
 
-Obviously, this is very specific to my and my team's use case. But if you imagine any kind of project that you are working on it probably has various states of being in progress too. All the way down to having a quality assurance team looking at it and you'll have a custom set of states and processes and you can simply take each one of these tasks on a journey. 
+Now, this is a full project management solution. So this goes even beyond a daily task management. This is going into a tool that you could use if you're working with a large team of people where everyone can get reporting they can track the status of each item and then they can collaborate and be able to assign tasks to other people.
 
-Now, this is a full project management solution. So this goes even beyond a daily task management. This is going into a tool that you could use if you're working with a large team of people where everyone can get reporting they can track the status of each item and then they can collaborate and be able to assign tasks to other people. 
+Now I'm going to go to a another board that functions very differently.
 
-Now I'm going to go to a another board that functions very differently. 
-
-![IMG](./03-024/03-024_IMG14.png)
+![IMG](../../../../../.gitbook/assets/03-024_IMG14.png)
 
 So this is a specific course board and it has a number of different collaborators. I have worked on each one of these cards. And then we also have designers and engineers that have also contributed in one spot or another. So we are not treating this like a traditional Kanban board.
 
-If you look back at the course one that we had here here 
+If you look back at the course one that we had here here
 
-![IMG](./03-024/03-024_IMG15.png)
+![IMG](../../../../../.gitbook/assets/03-024_IMG15.png)
 
-we set up essentially we sent a journey. So we set up each one of these cards to be a state. And then you would take a task and then drag it to the very next state. 
+we set up essentially we sent a journey. So we set up each one of these cards to be a state. And then you would take a task and then drag it to the very next state.
 
-Here:  
+Here:
 
-![IMG](./03-024/03-024_IMG16.png)
+![IMG](../../../../../.gitbook/assets/03-024_IMG16.png)
 
-what I've done is I've treated each card as its own project and so the goal of this is not to take one of the tasks and then move it over to another board because this is a one project and this is a completely different project. And so here I'm treating it very different than the first example. But what I wanted to show you here was the ability to add quite a bit of metadata. So this is incredibly helpful for having a dashboard where you can look at a project and get all of the information you need all in one spot. 
+what I've done is I've treated each card as its own project and so the goal of this is not to take one of the tasks and then move it over to another board because this is a one project and this is a completely different project. And so here I'm treating it very different than the first example. But what I wanted to show you here was the ability to add quite a bit of metadata. So this is incredibly helpful for having a dashboard where you can look at a project and get all of the information you need all in one spot.
 
-So this is fantastic for collaboration and also tracking the progress of each one of these projects. So for example I have to add to this property management application a uml diagram. And so before there was no little diagram here but if you click on this it will actually pop up the diagram that I added. 
+So this is fantastic for collaboration and also tracking the progress of each one of these projects. So for example I have to add to this property management application a uml diagram. And so before there was no little diagram here but if you click on this it will actually pop up the diagram that I added.
 
-![IMG](./03-024/03-024_IMG17.png)
+![IMG](../../../../../.gitbook/assets/03-024_IMG17.png)
 
 So in the beginning this was completely blank it didn't have the image. But now after I finish that uml diagram I was able to upload it and now everyone on the entire team can come to this dashboard and they can all see what the diagram looks like and then they can work on it from there.
 
-![IMG](./03-024/03-024_IMG18.png)
+![IMG](../../../../../.gitbook/assets/03-024_IMG18.png)
 
-So for example if I come down to one of these other projects like this e-commerce shop right here 
+So for example if I come down to one of these other projects like this e-commerce shop right here
 
-![IMG](./03-024/03-024_IMG19.png)
+![IMG](../../../../../.gitbook/assets/03-024_IMG19.png)
 
-I worked on this with a number of designers and engineers where it started with listing out the goal for the system, which is just a short sentence right here. 
+I worked on this with a number of designers and engineers where it started with listing out the goal for the system, which is just a short sentence right here.
 
-![IMG](./03-024/03-024_IMG20.png)
+![IMG](../../../../../.gitbook/assets/03-024_IMG20.png)
 
-Then from there I created wire frames and then site maps that showed the high level behavior of the system 
+Then from there I created wire frames and then site maps that showed the high level behavior of the system
 
-![IMG](./03-024/03-024_IMG21.png)
+![IMG](../../../../../.gitbook/assets/03-024_IMG21.png)
 
-and as I was doing this the other members of the team were able to see this and we didn't even have to talk on the phone or have meetings they simply were able to see everything that I added. And then they were able to go and perform their own tasks. 
+and as I was doing this the other members of the team were able to see this and we didn't even have to talk on the phone or have meetings they simply were able to see everything that I added. And then they were able to go and perform their own tasks.
 
-So for example the designer was able to go and create a full design for the entire system. 
+So for example the designer was able to go and create a full design for the entire system.
 
-![IMG](./03-024/03-024_IMG22.png)
+![IMG](../../../../../.gitbook/assets/03-024_IMG22.png)
 
-![IMG](./03-024/03-024_IMG23.png)
+![IMG](../../../../../.gitbook/assets/03-024_IMG23.png)
 
-![IMG](./03-024/03-024_IMG24.png)
+![IMG](../../../../../.gitbook/assets/03-024_IMG24.png)
 
-![IMG](./03-024/03-024_IMG25.png)
+![IMG](../../../../../.gitbook/assets/03-024_IMG25.png)
 
-![IMG](./03-024/03-024_IMG26.png)
+![IMG](../../../../../.gitbook/assets/03-024_IMG26.png)
 
 And all he had to do was track each one of the items that I was adding and then that gave him an idea on exactly how he needed to structure his own tasks. And then when he was done as you can see right here this was done by our designer Nate Lords. And he simply pasted in the link so that I and the development team were able to come to it and see the completed design.
 
-![IMG](./03-024/03-024_IMG27.png)
+![IMG](../../../../../.gitbook/assets/03-024_IMG27.png)
 
-And so we did that for each one of these projects and it proved to be incredibly efficient for us. 
+And so we did that for each one of these projects and it proved to be incredibly efficient for us.
 
-The last Trello example I'm going to show you is my daily Trello. 
+The last Trello example I'm going to show you is my daily Trello.
 
-![IMG](./03-024/03-024_IMG28.png)
+![IMG](../../../../../.gitbook/assets/03-024_IMG28.png)
 
-So right here I've set up a Kanban board and this is just for myself to work on as you can see you can also have them where they're private versus having team collaboration. And here I've set up the way that I like to manage my tasks. And so I have everything that I want to get done on a daily basis. Now this is a very long list, some of these are projects where I oversee other people and so the task may simply be to call them or send him an email or simply check on the status of a particular item. 
+So right here I've set up a Kanban board and this is just for myself to work on as you can see you can also have them where they're private versus having team collaboration. And here I've set up the way that I like to manage my tasks. And so I have everything that I want to get done on a daily basis. Now this is a very long list, some of these are projects where I oversee other people and so the task may simply be to call them or send him an email or simply check on the status of a particular item.
 
-And just like we saw with the last task board you able to add any metadata that you want. So for this task you can click on it and this has all of the content that I need to add to a page of devcamp 
+And just like we saw with the last task board you able to add any metadata that you want. So for this task you can click on it and this has all of the content that I need to add to a page of devcamp
 
-![IMG](./03-024/03-024_IMG29.png)
+![IMG](../../../../../.gitbook/assets/03-024_IMG29.png)
 
 which is just a really nice easy way of keeping all of the details for something I need to work on in one location.
 
 So this is an effective way of doing it. And then what I do is as soon as I'm done with one of these tasks those am done writing the python curriculum and everything I wanted to do on this task for the day I simply come to this tomorrow task and I simply drag it over to this card. And by the end of the day I should have each one of these cards moved over and this entire channel of Today here should be empty. And then what my process is is I simply change the name.
 
-![IMG](./03-024/03-024_IMG30.png)
+![IMG](../../../../../.gitbook/assets/03-024_IMG30.png)
 
-So this would be today and then I change this channel to be tomorrow and then the next day I simply repeat it and I dragged each one of these cards over to the other channel. I also as you can see have other ones set up because there are tasks that I perform on a daily basis. But then there are also tasks that I perform on a weekly basis. So I had this channel set up for these all all the items that I want to do starting the following week and then I also have tasks that should only be performed monthly and so they are right here. And then I also have a final item which is this set of items that I just have here for consistent follow ups. 
+So this would be today and then I change this channel to be tomorrow and then the next day I simply repeat it and I dragged each one of these cards over to the other channel. I also as you can see have other ones set up because there are tasks that I perform on a daily basis. But then there are also tasks that I perform on a weekly basis. So I had this channel set up for these all all the items that I want to do starting the following week and then I also have tasks that should only be performed monthly and so they are right here. And then I also have a final item which is this set of items that I just have here for consistent follow ups.
 
-![IMG](./03-024/03-024_IMG31.png)
+![IMG](../../../../../.gitbook/assets/03-024_IMG31.png)
 
-It's just here essentially so that I will not forget about them and so I'll continually look over here to make sure that I am performing each one of these tasks. 
+It's just here essentially so that I will not forget about them and so I'll continually look over here to make sure that I am performing each one of these tasks.
 
-So we're almost done we have completed two of the three walkthrough's and so switch back here and now we're going to look at the third option which is the to do list. 
+So we're almost done we have completed two of the three walkthrough's and so switch back here and now we're going to look at the third option which is the to do list.
 
 Now this one is probably one of the most basic options that are out there but because of that it has the lowest learning curve. So if you think back to the daily tracking journal when you did that you needed to learn a number of options you needed to learn a number of different things you needed to learn the process you needed to build out your own system. And it takes not a lot of time but it does take some time to learn.
 
-And the next option in working with Kanban boards and working with tools like Trello that takes quite a bit longer especially if you've never used a tool like that before. But with this type of system there is pretty much no learning curve is a basic to do list and that may seem like it's not the most effective approach but as I'm going to show you it actually can be quite helpful when done properly and it is very flexible. 
+And the next option in working with Kanban boards and working with tools like Trello that takes quite a bit longer especially if you've never used a tool like that before. But with this type of system there is pretty much no learning curve is a basic to do list and that may seem like it's not the most effective approach but as I'm going to show you it actually can be quite helpful when done properly and it is very flexible.
 
-And in order to walk through it and open up a text editor. And as you can see right here I have a list of 12 tasks 
+And in order to walk through it and open up a text editor. And as you can see right here I have a list of 12 tasks
 
-![IMG](./03-024/03-024_IMG32.png)
+![IMG](../../../../../.gitbook/assets/03-024_IMG32.png)
 
-and if you're curious on which of these three systems that we've walked through which one I'm personally using I'm actually using all three in some form or another right now because I've found that the combination of those three is a way that allows me to be as efficient as possible. 
+and if you're curious on which of these three systems that we've walked through which one I'm personally using I'm actually using all three in some form or another right now because I've found that the combination of those three is a way that allows me to be as efficient as possible.
 
-I'm continually changing and evolving myself so that is going to adapt. Now if you're curious if I'm being truthful you can come down even to number 12 here and you can see my task is video for daily task management so I'm actually doing this as we speak. So it's going to be really nice. At the end of this I'm going to be able to put a little x here and that is going to be crossed off. 
+I'm continually changing and evolving myself so that is going to adapt. Now if you're curious if I'm being truthful you can come down even to number 12 here and you can see my task is video for daily task management so I'm actually doing this as we speak. So it's going to be really nice. At the end of this I'm going to be able to put a little x here and that is going to be crossed off.
 
-![IMG](./03-024/03-024_IMG33.png)
+![IMG](../../../../../.gitbook/assets/03-024_IMG33.png)
 
-Now if these symbols look weird to you it's because I'm using a language here called markdown that is completely optional. If you are not a developer and you don't want to use tools like markdown you can have a list that looks exactly like this 
+Now if these symbols look weird to you it's because I'm using a language here called markdown that is completely optional. If you are not a developer and you don't want to use tools like markdown you can have a list that looks exactly like this
 
 ```html
 1.
@@ -237,28 +236,28 @@ Now if these symbols look weird to you it's because I'm using a language here ca
 
 and that is perfectly fine.
 
-Now you also can time box these and that's is something that I do quite often so I might do something like say from 8 a.m. to 10:00 a.m. I'm going to perform this task. 
+Now you also can time box these and that's is something that I do quite often so I might do something like say from 8 a.m. to 10:00 a.m. I'm going to perform this task.
 
-![IMG](./03-024/03-024_IMG34.png)
+![IMG](../../../../../.gitbook/assets/03-024_IMG34.png)
 
-So that is a way where I can be a little bit more structured with it. I don't have them right here 
+So that is a way where I can be a little bit more structured with it. I don't have them right here
 
-![IMG](./03-024/03-024_IMG35.png)
+![IMG](../../../../../.gitbook/assets/03-024_IMG35.png)
 
-because one I already have that my journal and so I'm not a fan of wasting time. So there's no need for me to put the Times right here. I'm simply keeping this list so that I don't have to always go back directly to the Journal and I can simply mark items off right here. 
+because one I already have that my journal and so I'm not a fan of wasting time. So there's no need for me to put the Times right here. I'm simply keeping this list so that I don't have to always go back directly to the Journal and I can simply mark items off right here.
 
 Now the other reason why I like using markdown is because of something I'm going to show you it's a way that you can leverage a tool like a to do list and actually make it collaborative. So if I save this I can copy this and to put it on the web so that markdown language I'm going to show you the reason why I'm using it here in a second if I paste this and I can just say mytask and I'm using GitHub's gist engine right here so I can say mytask.md
 
-![IMG](./03-024/03-024_IMG36.png)
+![IMG](../../../../../.gitbook/assets/03-024_IMG36.png)
 
-You notice here this is just what I had in the text editor and if I create public gist what that's going to do is see how it actually converted this into a To Do List automatically? 
+You notice here this is just what I had in the text editor and if I create public gist what that's going to do is see how it actually converted this into a To Do List automatically?
 
-![IMG](./03-024/03-024_IMG37.png)
+![IMG](../../../../../.gitbook/assets/03-024_IMG37.png)
 
-so I can share this link with anyone else on the team I'm working with and they can see exactly what I am working on and also what the status is so I can come here and say okay this is done for the day and so's this and so is this item and then they can track that. 
+so I can share this link with anyone else on the team I'm working with and they can see exactly what I am working on and also what the status is so I can come here and say okay this is done for the day and so's this and so is this item and then they can track that.
 
-![IMG](./03-024/03-024_IMG38.png)
+![IMG](../../../../../.gitbook/assets/03-024_IMG38.png)
 
-And so if you don't want to use a tool like Trello you simply want to use something that is dead simple to implement then this is a another option. 
+And so if you don't want to use a tool like Trello you simply want to use something that is dead simple to implement then this is a another option.
 
 So in review we've walked through three different systems that you can utilize. Daily tasks journalling, we walk through Kanban boards, and just walked through the dead simple to do list kind of system. My recommendation is for you is to try out all of them and see which one allows you to be the most efficient to decrease stress and anxiety and help you organize your goals and achieve them on a daily basis.

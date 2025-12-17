@@ -1,28 +1,26 @@
-# Module 04-013: JavaScript - Strings (3)
+# 04-014\_JS\_Strings\_3
 
-## Working with String Functions - Part 3
+## Module 04-013: JavaScript - Strings (3)
 
----
+### Working with String Functions - Part 3
 
-# Module 04-013: JavaScript Strings (Part 3)
+***
 
-## Contents
+## Module 04-013: JavaScript Strings (Part 3)
+
+### Contents
 
 1. String Slicing
-
 2. Trimming Whitespace
-
 3. Case Conversion
-
 4. Method Chaining
-
 5. Practical Applications
 
----
+***
 
-## String Slicing
+### String Slicing
 
-### - `.slice()`
+#### - `.slice()`
 
 Extracts portions of strings with flexible indexing:
 
@@ -39,17 +37,14 @@ text.slice(-8);         // 'own fox' (The latest 8 chars)
 text.slice(-8, -4);     // 'own'
 ```
 
-- **Non Zero-Based**
+* **Non Zero-Based**
+* Negative indexes count from end
+* End index is exclusive
+* Returns new string (original unchanged)
 
-- Negative indexes count from end
+***
 
-- End index is exclusive
-
-- Returns new string (original unchanged)
-
----
-
-## Whitespace Management - `.trim()`
+### Whitespace Management - `.trim()`
 
 Removes whitespace from both ends:
 
@@ -65,15 +60,13 @@ str2.trimEnd();   // '  Hello World' Trimmed at the end
 
 Related Methods:
 
-- `trimStart()` - Only beginning whitespace
+* `trimStart()` - Only beginning whitespace
+* `trimEnd()` - Only trailing whitespace
+* Handles spaces, tabs, newlines
 
-- `trimEnd()` - Only trailing whitespace
+***
 
-- Handles spaces, tabs, newlines
-
----
-
-## Case Conversion - `.toUpperCase()` / `.toLowerCase()`
+### Case Conversion - `.toUpperCase()` / `.toLowerCase()`
 
 Uniform case formatting:
 
@@ -89,15 +82,13 @@ words.toULowerCase()     // 'hello world'
 
 Use Cases:
 
-- Case-insensitive comparisons
+* Case-insensitive comparisons
+* Normalizing user input
+* Formatting display text
 
-- Normalizing user input
+***
 
-- Formatting display text
-
----
-
-## Method Chaining
+### Method Chaining
 
 Combine multiple string operations:
 
@@ -111,15 +102,13 @@ phrase.trimStart().toLowerCase().slice(4,15)        // 'quick brown
 
 Best Practices:
 
-- Limit to 2-3 chained methods
+* Limit to 2-3 chained methods
+* Add comments for complex chains
+* Consider intermediate variables for clarity
 
-- Add comments for complex chains
+***
 
-- Consider intermediate variables for clarity
-
----
-
-## Practical Applications
+### Practical Applications
 
 1. **Data Cleaning Pipeline**
 
@@ -154,75 +143,63 @@ function createExcerpt(text, maxLength) {
 }
 ```
 
----
+***
 
-## Remember
+### Remember
 
 1. **Slice Flexibility**
-   
-   - Use negative indexes for end-relative positions
-   
-   - Omitting end index slices to end of string
-
+   * Use negative indexes for end-relative positions
+   * Omitting end index slices to end of string
 2. **Immutability Principle**
-   
-   - All methods return new strings
-   
-   - Original remains unchanged
-
+   * All methods return new strings
+   * Original remains unchanged
 3. **Performance Considerations**
-   
-   - Chain operations left-to-right efficiently
-   
-   - Trim early in processing pipelines
-
+   * Chain operations left-to-right efficiently
+   * Trim early in processing pipelines
 4. **Internationalization**
-   
-   - For locale-aware case conversion, use:
-     
-     ```js
-     'ß'.toLocaleUpperCase('de-DE');         // "SS"
-     ```
+   *   For locale-aware case conversion, use:
 
----
+       ```js
+       'ß'.toLocaleUpperCase('de-DE');         // "SS"
+       ```
 
-## Resources
+***
 
-- [MDN: String. **See Statics/Prototypes/ Methods**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+### Resources
 
-- [Slice, Trim, Usage examples](https://es.javascript.info/string#obteniendo-un-substring)
+* [MDN: String. **See Statics/Prototypes/ Methods**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+* [Slice, Trim, Usage examples](https://es.javascript.info/string#obteniendo-un-substring)
+* [Unicode Technical Standard #21 (Case Mapping)](https://www.unicode.org/L2/L1999/99190.htm)
 
-- [Unicode Technical Standard #21 (Case Mapping)](https://www.unicode.org/L2/L1999/99190.htm)
+***
 
-****
+### Video lesson speech
 
-## Video lesson speech
-
-This is the final guide in the String function module. In this lesson 
-we'll walk through the slice, case, and trim functions. We'll also 
+This is the final guide in the String function module. In this lesson\
+we'll walk through the slice, case, and trim functions. We'll also\
 examine how we can chain functions together.
 
-****
+***
 
-Welcome back to this third and final video on how to work with string functions in javascript. This one should also be a little bit shorter we just have a few items that I wanted to cover. 
+Welcome back to this third and final video on how to work with string functions in javascript. This one should also be a little bit shorter we just have a few items that I wanted to cover.
 
-The first one is the `slice` function so I'm going to type string or str because that's the name of my variable dot slice. Now we have a few different options. So we have three ways that we can use slice, the very first way is to just pass an index value and what it will do is it will return all of the items to the right of that. 
+The first one is the `slice` function so I'm going to type string or str because that's the name of my variable dot slice. Now we have a few different options. So we have three ways that we can use slice, the very first way is to just pass an index value and what it will do is it will return all of the items to the right of that.
 
 ```javascript
 str.slice(10);
 "brown fox jumped over the lazy dog"
 ```
 
-So let's just do 
+So let's just do
 
 ```javascript
 str.charAt(10);
 "b"
 ```
 
-to see where that's at. That is the b, so it grabs the b all the way to the end. That is a nice and easy way if you know that you have some values that you want to skip over and you don't care about them and you just want from that point all the way the end. `Slice` with just one value will give you that. And it's that index value. 
+to see where that's at. That is the b, so it grabs the b all the way to the end. That is a nice and easy way if you know that you have some values that you want to skip over and you don't care about them and you just want from that point all the way the end. `Slice` with just one value will give you that. And it's that index value.
 
-Now the other way we could do this is we could actually go backwards. So say that we have a giant string and we don't want to count all the way from left to right. And also another time where that comes in very handy is say we have a set of strings. So it could be a social security number or something like that. And we know that we're always going to get say the last four or five digits. Those are always going to be exactly the same. And we only want those. 
+Now the other way we could do this is we could actually go backwards. So say that we have a giant string and we don't want to count all the way from left to right. And also another time where that comes in very handy is say we have a set of strings. So it could be a social security number or something like that. And we know that we're always going to get say the last four or five digits. Those are always going to be exactly the same. And we only want those.
 
 Well, we can work from right to left by using negatives. So here I'm going to say negative 8 and run this.
 
@@ -240,14 +217,14 @@ str.slice(4, 10);
 "quick "
 ```
 
-Now we can refine that a little bit and we can say four to nine, run that. And it's quick just by itself. 
+Now we can refine that a little bit and we can say four to nine, run that. And it's quick just by itself.
 
 ```javascript
 str.slice(4, 9);
 "quick"
 ```
 
-Now, this also brings up something that is a little bit handy. 
+Now, this also brings up something that is a little bit handy.
 
 The next function I want to talk about is the `trim` method. So say that I have a new variable I'm going to call it messy string and this has a bunch of empty space in between. It has this foo value and then to the left has all these spaces and then to the right, it has all these spaces.
 
@@ -256,14 +233,14 @@ var messyString = '    foo     ';
 undefined
 ```
 
-If I call messyString you can see that it keeps all those spaces. 
+If I call messyString you can see that it keeps all those spaces.
 
 ```javascript
 messyString;
 "    foo    "
 ```
 
-But if I call messyString and then call `trim` on it, this `trim` function is going to return `"foo"`. So trim is a very helpful function. You will find it is incredibly beneficial when you're wanting to clean up user data because there are all kinds of times where I'll be given a database or a raw file and it has strings left and right and trim makes it very nice and easy to clean those. So that's helpful. 
+But if I call messyString and then call `trim` on it, this `trim` function is going to return `"foo"`. So trim is a very helpful function. You will find it is incredibly beneficial when you're wanting to clean up user data because there are all kinds of times where I'll be given a database or a raw file and it has strings left and right and trim makes it very nice and easy to clean those. So that's helpful.
 
 Now let's see how we can actually combine some of these functions. Now remember with string when I called slice on it and past 4 thru 10 remember how that brings, quick with the extra space at the end? Well, I can actually chain these together so if I say trim and run this.
 
@@ -272,13 +249,13 @@ str.slice(4, 10).trim();
 "quick"
 ```
 
-Notice how this has now cleaned it up even though we're still passing four and ten. 
+Notice how this has now cleaned it up even though we're still passing four and ten.
 
-One of the most important things I wanted to show you right there, is that these functions can be chained together. And as you go further on your javascript development journey you are going to discover that you're going to be changing methods left and right now you have to be very careful about that. There are many times where people kind of get out of hand with this and it becomes very confusing and very difficult to debug. 
+One of the most important things I wanted to show you right there, is that these functions can be chained together. And as you go further on your javascript development journey you are going to discover that you're going to be changing methods left and right now you have to be very careful about that. There are many times where people kind of get out of hand with this and it becomes very confusing and very difficult to debug.
 
-There are some recommended principles that say you don't really want to ever have more than two to three different items that are chained together. Anything above that it can lead to some very challenging bugs to get fixed and it's also very hard to refactor that code and clean it up. But there are going to be times where you want to do things just like this, where we `slice` something and then we called `trim` to make sure that we had some nice clean values afterwards. So that is the `slice` and then the `trim` function. 
+There are some recommended principles that say you don't really want to ever have more than two to three different items that are chained together. Anything above that it can lead to some very challenging bugs to get fixed and it's also very hard to refactor that code and clean it up. But there are going to be times where you want to do things just like this, where we `slice` something and then we called `trim` to make sure that we had some nice clean values afterwards. So that is the `slice` and then the `trim` function.
 
-We just have two more that we're going to cover. 
+We just have two more that we're going to cover.
 
 The first is going to be `toUpperCase` so when you call this it's going to do exactly what you thought. It's going to convert all of the values to uppercase.
 
@@ -287,16 +264,16 @@ str.toUpperCase();
 "THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG"
 ```
 
-Now we also have an option of doing `toLowerCase` running that you can see it's all lower case. 
+Now we also have an option of doing `toLowerCase` running that you can see it's all lower case.
 
 ```javascript
 str.toLowerCase();
 "the quick brown fox jumped over the lazy dog"
 ```
 
-Originally if you reference the very top line we only had one item that was uppercase and so that one got taken down to the lower case and all the other ones simply remain the same. 
+Originally if you reference the very top line we only had one item that was uppercase and so that one got taken down to the lower case and all the other ones simply remain the same.
 
-In the last three videos, we've covered all of the main functions related to the string data types. Very nice job going through that. I'm also going to include in this guide a link to the documentation that shows all of the remaining functions. 
+In the last three videos, we've covered all of the main functions related to the string data types. Very nice job going through that. I'm also going to include in this guide a link to the documentation that shows all of the remaining functions.
 
 Now I didn't include every single one because that would have taken even longer and we spent quite a bit of time and I want to start moving on to other things like the number data type but also some of the ones I left out were related to things such as converting to a specific international locale to do things like that. And I know that doesn't apply to everybody. So you feel free to reference the documentation. And as always I will put a link to the source code and then also the actual code that we just went through in the written guide.
 
@@ -316,14 +293,14 @@ var messyString = '    Hi there    ';
 messyString.trim(); // "Hi there"
 ```
 
-## Resources
+### Resources
 
-- [Source code](https://github.com/rails-camp/javascript-programming/blob/master/section_b_13_string_functions.js)
-- [Full list of String functions](https://www.w3schools.com/jsref/jsref_obj_string.asp)
+* [Source code](https://github.com/rails-camp/javascript-programming/blob/master/section_b_13_string_functions.js)
+* [Full list of String functions](https://www.w3schools.com/jsref/jsref_obj_string.asp)
 
-****
+***
 
-## Coding Exercise
+### Coding Exercise
 
 Fill in the return statement below with some of the string function syntax you just learned!
 

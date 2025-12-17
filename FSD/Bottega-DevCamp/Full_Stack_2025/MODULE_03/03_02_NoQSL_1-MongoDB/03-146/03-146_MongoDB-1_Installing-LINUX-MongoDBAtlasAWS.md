@@ -1,8 +1,10 @@
-# Module 03 - 146: MongoDB (1)
+# 03-146\_MongoDB-1\_Installing-LINUX-MongoDBAtlasAWS
 
-# MongoDB on Linux + MongoDB Atlas AWS Cluster setup
+## Module 03 - 146: MongoDB (1)
 
-The original guide explains how to install MongoDB for MAC users but,so that for those Linux users, these steps explains how to set it up.  
+## MongoDB on Linux + MongoDB Atlas AWS Cluster setup
+
+The original guide explains how to install MongoDB for MAC users but,so that for those Linux users, these steps explains how to set it up.
 
 Additionally, this guide explains how to install MongoDB without it being system-wide, as well as installing it system-wide. It's suggested to use a non system-wide when posible.
 
@@ -10,11 +12,11 @@ On the other hand, this guide also includes how to set up a free MongoDB Atlas C
 
 Finally, a default connection to Atlas@AWS will be performed and explained.
 
-****
+***
 
-# 1) MongoDB Debian 12 alike setup
+## 1) MongoDB Debian 12 alike setup
 
-## A)    Mongo-sh system-wide for shell access + Mongod server/daemon from binaries
+### A)    Mongo-sh system-wide for shell access + Mongod server/daemon from binaries
 
 1. Add the latest MongoDB sources [from official site](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-debian/):
 
@@ -85,96 +87,95 @@ You can opt-out by running the disableTelemetry() command.
 test>
 ```
 
-****
+***
 
-# 2) MongoDB Atlas at Amazon AWS Cluster setup
+## 2) MongoDB Atlas at Amazon AWS Cluster setup
 
 This part of the guide provides an outline on how to set up and connect a MongoDB Atlas cluster on Amazon AWS, for the moment, free of charge.
 
 Once configured, this action can replace the "Mongod" daemon installed system-wide as it can be accessed through a wide range of methods:
 
-- The local shell in Terminal.
-- The official MongoDB WebGUI framework, from the AWS panel.
-- A webservice like Render (its free plan accepts connecting both services), or in your own back-end of your own server, with the multitude of languages available to develop using Mongo.
+* The local shell in Terminal.
+* The official MongoDB WebGUI framework, from the AWS panel.
+* A webservice like Render (its free plan accepts connecting both services), or in your own back-end of your own server, with the multitude of languages available to develop using Mongo.
 
 **By default, this mini-course will cover Shell access (JavaScript/JSON alike), and Python back-end using PyMongo**.
 
-****
+***
 
-## General Procedures from AWS side
+### General Procedures from AWS side
 
 From: https://www.mongodb.com/docs/atlas/
 
 What will you need?
 
-* A MongoDB (free) registered account (https://www.mongodb.com/cloud/atlas/register)
-  
-  ![MongoDB Atlas Account types](./03-146_IMG01.png)
+*   A MongoDB (free) registered account (https://www.mongodb.com/cloud/atlas/register)
 
+    ![MongoDB Atlas Account types](../../../../../../.gitbook/assets/03-146_IMG01.png)
 * b
 
-## What is MongoDB Atlas?
+### What is MongoDB Atlas?
 
-*MongoDB Atlas is a multi-cloud database service by the same people that build MongoDB. Atlas simplifies deploying and managing your databases while offering the versatility you need to build resilient and performant global applications on the cloud providers of your choice.*
+_MongoDB Atlas is a multi-cloud database service by the same people that build MongoDB. Atlas simplifies deploying and managing your databases while offering the versatility you need to build resilient and performant global applications on the cloud providers of your choice._
 
-### 1) Deploy a Database
+#### 1) Deploy a Database
 
-**1.1 Choose a cluster type** : **FREE CLUSTER**
+**1.1 Choose a cluster type** : **FREE CLUSTER**
 
-*Play around with a **free cluster**, launch a serverless instance, or define a dedicated cluster configuration for your application.*
+_Play around with a **free cluster**, launch a serverless instance, or define a dedicated cluster configuration for your application._
 
-![IMG](./03-146_IMG02.png)
+![IMG](../../../../../../.gitbook/assets/03-146_IMG02.png)
 
-*To choose a deployment type, see Database Deployment Types.*
+_To choose a deployment type, see Database Deployment Types._
 
-**1.2 Choose a Cloud Provider and Region:  Amazon AWS @ your nearest location**
+**1.2 Choose a Cloud Provider and Region: Amazon AWS @ your nearest location**
 
-*Deploy your database to the same cloud provider and region as your applications to reduce latency and standardize security controls.*
+_Deploy your database to the same cloud provider and region as your applications to reduce latency and standardize security controls._
 
-![img](./03-146_IMG03.png)
+![img](../../../../../../.gitbook/assets/03-146_IMG03.png)
 
-### 2)     Secure the Database
+#### 2)     Secure the Database
 
 **2.1 Add IP Access List Entries**
 
-*Define an IP access list for your cluster.*
+_Define an IP access list for your cluster._
 
 **This can include the IPs of your server, or your webservice on Render, Vercel, etc; or, your IP/DynDNS to access from your shell**.
 
-![Atlas IP configs](./03-146_IMG04.png)
+![Atlas IP configs](../../../../../../.gitbook/assets/03-146_IMG04.png)
 
 **2.2 Manage Database Users**
 
-*Define how your team members and applications authenticate to your database and what data they can access*.
+_Define how your team members and applications authenticate to your database and what data they can access_.
 
-![MongoDB Atlas Accounts](./03-146_IMG05.png)
+![MongoDB Atlas Accounts](../../../../../../.gitbook/assets/03-146_IMG05.png)
 
 **This means you can create different users, with different permissions, as needed. It is mandatory that you create one, and I suggest to NOT use the default username/passwords of your MongoDB account.**
 
-### 3)    Connect the Database
+#### 3)    Connect the Database
 
 **3.1 Choose a Connection Type**
 
-*Connect to your database using the MongoDB Shell, one ofMongoDB's native language drivers, MongoDB Compass, or theMongoDB Connector for BI.*
+_Connect to your database using the MongoDB Shell, one ofMongoDB's native language drivers, MongoDB Compass, or theMongoDB Connector for BI._
 
-![img](./03-146_IMG06.png)
+![img](../../../../../../.gitbook/assets/03-146_IMG06.png)
 
 **From this point on, everything is created and configured, so that, how you configure and connect your service depends on the use you are going to make of it (Shell, WebGUI, Render/Vercel/etc...).**
 
-****
+***
 
-# 3) Connecting to MongoDB Atlas via shell
+## 3) Connecting to MongoDB Atlas via shell
 
-MongoDB Atlas provides a straightforward Connections/Access setup.  
+MongoDB Atlas provides a straightforward Connections/Access setup.
 
-To access it via the local shell, we need at least `mongosh` installed (via sources, via apt install, ....).  
+To access it via the local shell, we need at least `mongosh` installed (via sources, via apt install, ....).
 
-We will create a .conf file and a shell script for quick access.  
+We will create a .conf file and a shell script for quick access.
 
 Remember to store "secrets" (access paths, username/password, etc.) in a safe place.
 
 1. **Via shell script `./atlas_login.sh`**
-   
+
 ```bash
    #!/bin/bash
    
@@ -190,9 +191,9 @@ Remember to store "secrets" (access paths, username/password, etc.) in a safe pl
    --authenticationDatabase admin \
    --username "$user" --password "$password"
 ```
-   
-   Expected Output:
-   
+
+Expected Output:
+
 ```bash
    $ bash ./mongo_shell.sh 
    Atlas user:  
@@ -209,22 +210,11 @@ Remember to store "secrets" (access paths, username/password, etc.) in a safe pl
    Atlas * [primary] test> 
 ```
 
-
 Since here, you are enable to start creating, configuring, handling, your database.
 
-
-
-
-
-****
+***
 
 [database – Database level operations - PyMongo 4.11 documentation](https://pymongo.readthedocs.io/en/4.11/api/pymongo/database.html#pymongo.database.Database.create_collection)
-
-
-
-
-
-
 
 ***
 

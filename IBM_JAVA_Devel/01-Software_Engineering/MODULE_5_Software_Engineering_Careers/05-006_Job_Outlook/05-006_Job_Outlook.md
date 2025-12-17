@@ -1,12 +1,12 @@
 # 05-006 Job Outlook for Software Engineers
 
-![](05-006_IMG4.png)
+![](../../../../.gitbook/assets/05-006_IMG4.png)
 
 ### Drivers of High Demand for Software Engineers
 
-![](05-006_IMG1.png)
+![](../../../../.gitbook/assets/05-006_IMG1.png)
 
-![](05-006_IMG2.png)
+![](../../../../.gitbook/assets/05-006_IMG2.png)
 
 **Industry adoption:** Almost all industries require software to compete and grow, creating continuous demand. Most organisations require applications and websites for internal operations and customer interaction.
 
@@ -14,35 +14,35 @@
 
 **Competitive pressure:** Vendors continuously release new versions and enhanced functionality, requiring software engineers for development, enhancement, and new capabilities across platforms.
 
----
+***
 
 ### Job Outlook and Statistics
 
-The US Bureau of Labor Statistics projects **22% job growth** for software developers, analysts, and testers from 2020 to 2030—**higher than average growth**.   
+The US Bureau of Labor Statistics projects **22% job growth** for software developers, analysts, and testers from 2020 to 2030—**higher than average growth**.
 
 This represents approximately **200,000 job openings annually in the United States alone**, spanning diverse industries including mobile development, healthcare, and insurance.
 
 **Security software** represents a particularly large growth area due to increasing cybersecurity threats and computer crime.
 
----
+***
 
 ### Hiring Trends and Accessibility
 
 Historically, software engineers held degrees in software engineering or computer science. However, major employers (IBM, Google, Tesla) increasingly hire non-graduates demonstrating required skills, widening industry access and reducing educational cost barriers.
 
----
+***
 
 ### Compensation
 
 Software engineer salaries vary significantly with experience:
 
-- **Junior roles:** $90,000 USD
-- **Experienced roles:** $120,000+ USD
-- **Average:** ~$110,000 USD annually (2.5× average US base salary)
+* **Junior roles:** $90,000 USD
+* **Experienced roles:** $120,000+ USD
+* **Average:** \~$110,000 USD annually (2.5× average US base salary)
 
 **Additional benefits** include medical insurance, gym membership, profit shares, and retirement plans, making software engineering financially attractive.
 
----
+***
 
 ### Role Expectations and Working Conditions
 
@@ -52,28 +52,28 @@ Software engineer salaries vary significantly with experience:
 
 **Location:** Work-from-home flexibility varies by employer but technology enables remote work. Some global teams operate across all time-zones.
 
----
+***
 
 ### Employment Contexts
 
 Employers span all sectors:
 
--   **Large technology companies:** FAANG (Facebook, Amazon, Apple, Netflix, Google)
--   **Medium software companies:** Specialised software development
--   **Small software houses and start-ups**
--   **Large non-technology companies:** Banks, retailers, pharmaceuticals requiring internal/external systems
+* **Large technology companies:** FAANG (Facebook, Amazon, Apple, Netflix, Google)
+* **Medium software companies:** Specialised software development
+* **Small software houses and start-ups**
+* **Large non-technology companies:** Banks, retailers, pharmaceuticals requiring internal/external systems
 
----
+***
 
 ### Professional Development
 
 Most employers encourage continuous learning—expanding technical or soft skills. Organisations typically invest in keeping engineer skills current to enable optimal software solutions.
 
----
+***
 
 ### Employment Options
 
-![](05-006_IMG3.png)
+![](../../../../.gitbook/assets/05-006_IMG3.png)
 
 **Employed roles:** Apprenticeships, internships, part-time, full-time positions providing stability and regular income.
 
@@ -83,7 +83,7 @@ Most employers encourage continuous learning—expanding technical or soft skill
 
 **Open source contribution:** Volunteer coding on open-source projects, providing experience, skill enhancement, employment opportunities, and technical reputation whilst contributing to important causes or communities.
 
----
+***
 
 ## Lesson Speech
 

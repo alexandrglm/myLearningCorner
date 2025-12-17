@@ -1,6 +1,8 @@
-# MODULE 03 - 095: Python Exercise:
+# 03-095\_Python\_PreMethods\_Removing\_First\_Last\_elemetents\_from\_a\_list
 
-#### Exercise: Packing / Unpacking with Goblins
+## MODULE 03 - 095: Python Exercise:
+
+**Exercise: Packing / Unpacking with Goblins**
 
 When working with lists in Python, it is common to encounter situations where we need to remove the **first and last elements** while keeping the core data intact.
 
@@ -8,25 +10,25 @@ This is especially useful in cases such as cleaning structured data, processing 
 
 Python provides a convenient way to achieve this efficiently, making list manipulation more dynamic and readable.
 
-🔗 **Reference:** [Python Unpacking Generalizations]([7. Simple statements — Python 3.13.2 documentation](https://docs.python.org/3/reference/simple_stmts.html#assignment-statements))
+🔗 **Reference:** \[Python Unpacking Generalizations]\([7. Simple statements — Python 3.13.2 documentation](https://docs.python.org/3/reference/simple_stmts.html#assignment-statements))
 
----
+***
 
-## 📌 Concept: Why Remove the First and Last Elements?
+### 📌 Concept: Why Remove the First and Last Elements?
 
 In many scenarios, the first and last elements of a list serve as **wrappers** or **metadata** rather than essential content. Removing them allows us to retain the meaningful data while discarding unnecessary structure. Some common use cases include:
 
-- **Cleaning HTML-like structures**, where the first and last elements represent opening and closing tags.
-- **Extracting relevant data** from API responses or structured text lists.
-- **Filtering out redundant information** from pre-formatted datasets.
+* **Cleaning HTML-like structures**, where the first and last elements represent opening and closing tags.
+* **Extracting relevant data** from API responses or structured text lists.
+* **Filtering out redundant information** from pre-formatted datasets.
 
----
+***
 
-## 📌 Applying List Destructuring
+### 📌 Applying List Destructuring
 
 Python supports **destructuring**, a technique that allows for easy unpacking of elements within a list. By leveraging destructuring, we can efficiently separate the first and last elements from the central content.
 
-### 🔹 How Destructuring Works
+#### 🔹 How Destructuring Works
 
 Destructuring in Python allows elements of a list to be assigned to multiple variables at once. A useful technique within destructuring is the use of **globbing (`*`)**, which collects multiple elements into a separate variable:
 
@@ -36,82 +38,82 @@ first, *content, last = my_list
 
 Here’s how each element is assigned:
 
-- `first` → Stores the **first element**.
-- `last` → Stores the **last element**.
-- `*content` → Captures **everything in between** as a new list.
+* `first` → Stores the **first element**.
+* `last` → Stores the **last element**.
+* `*content` → Captures **everything in between** as a new list.
 
 This technique provides a simple way to extract the core data without manually iterating through the list.
 
----
+***
 
-## 📌 Practical Applications
+### 📌 Practical Applications
 
 By applying these concepts, we can enhance various tasks involving **list processing**:
 
-- **Web scraping** → Removing HTML tags while retaining content.
-- **Log file analysis** → Filtering out headers and footers.
-- **Data transformation** → Keeping only relevant information in structured datasets.
+* **Web scraping** → Removing HTML tags while retaining content.
+* **Log file analysis** → Filtering out headers and footers.
+* **Data transformation** → Keeping only relevant information in structured datasets.
 
----
+***
 
-## 📌 Summary
+### 📌 Summary
 
-- **Removing the first and last elements** is useful for cleaning structured data.
-- **Destructuring with `*` globbing** allows for efficient extraction of content.
-- **Common use cases** include **HTML parsing, data filtering, and text processing**.
-- This method helps in making **list manipulation more dynamic and readable**.
+* **Removing the first and last elements** is useful for cleaning structured data.
+* **Destructuring with `*` globbing** allows for efficient extraction of content.
+* **Common use cases** include **HTML parsing, data filtering, and text processing**.
+* This method helps in making **list manipulation more dynamic and readable**.
 
-****
+***
 
-## Video lesson Speech
+### Video lesson Speech
 
 In this Python programming exercise, we are going to see how we can remove the first and the last elements from the list.
 
-****
+***
 
-Now, what I want to see happen with this is I'm going to type out some comments so we can see exactly how this should work.  
+Now, what I want to see happen with this is I'm going to type out some comments so we can see exactly how this should work.
 
- So, I want to build out a function and we'll call it `remove_first_and_last` you can call yours whatever you'd like.   
+So, I want to build out a function and we'll call it `remove_first_and_last` you can call yours whatever you'd like.
 
-Then, it's also going to have a list to clean past into it.   
+Then, it's also going to have a list to clean past into it.
 
-And so inside of here or I'm not going to build it out yet, that's all in the solution.   
+And so inside of here or I'm not going to build it out yet, that's all in the solution.
 
 But what I want to have happen is when you pass in some kind of a list so say that I have some HTML elements and so I'll have some strings inside of here one could be an h1 and then after that would be some content followed by a closing h1 tag and that would be a list.
 
-Let me shrink this just to make it easier to see on one line.   
+Let me shrink this just to make it easier to see on one line.
 
-So, this would be an example of the list.   
+So, this would be an example of the list.
 
-If I were to call remove first and last pass in the HTML the output that I would be looking for here would be simply some content.   
+If I were to call remove first and last pass in the HTML the output that I would be looking for here would be simply some content.
 
 So I just would want to have some content and that's all I would want returned because I want to have this first element and this last element removed.
 
-![large](./03-095_IMG1.png)
+![large](../../../../../../../../.gitbook/assets/03-095_IMG1.png)
 
-Now, that by itself is not that hard because you could essentially just build something that went and grabbed the second element in the array, but let's imagine that we extend this a little bit.   
+Now, that by itself is not that hard because you could essentially just build something that went and grabbed the second element in the array, but let's imagine that we extend this a little bit.
 
-So, if I come down here and now we have we'll call it html_2 and so we have html_2.   
+So, if I come down here and now we have we'll call it html\_2 and so we have html\_2.
 
-Now we have some content but we also have more content here.   
+Now we have some content but we also have more content here.
 
-What I would want if I called html_2 is someone content and then more and just to make it very clear what should get returned here is a list.   
+What I would want if I called html\_2 is someone content and then more and just to make it very clear what should get returned here is a list.
 
-So let me just do that just so it's not confusing.   
+So let me just do that just so it's not confusing.
 
 You're not returning a string, **the goal of this should be to return some type of list and that should be what gets returned whether it's one item, two items, or a thousand items.**
 
-So, if someone were to pass a thousand and a few items into your function then it should have the exact same behavior where it drops offthe first and the last element.   
+So, if someone were to pass a thousand and a few items into your function then it should have the exact same behavior where it drops offthe first and the last element.
 
-And, if you're curious on how this could be beneficial, this is something that I have to build out quite a bit or at least some variation of this whenever I'm performing any kind of task such as building out a web scraper or anything like that any time where I know beyond a shadow of a doubt that I'm going to be getting at least 3 elements back or 3 elements are going to be inside of a list and the first and the last elements are just kind of throwaway elements.  
+And, if you're curious on how this could be beneficial, this is something that I have to build out quite a bit or at least some variation of this whenever I'm performing any kind of task such as building out a web scraper or anything like that any time where I know beyond a shadow of a doubt that I'm going to be getting at least 3 elements back or 3 elements are going to be inside of a list and the first and the last elements are just kind of throwaway elements.
 
- Then, this is something that can be quite helpful so I recommend if you're going through this that you pause the video right now, and you try to build this out on your own and then come back and watch my own solution to it.
+Then, this is something that can be quite helpful so I recommend if you're going through this that you pause the video right now, and you try to build this out on your own and then come back and watch my own solution to it.
 
-![large](./03-095_IMG2.png)
+![large](../../../../../../../../.gitbook/assets/03-095_IMG2.png)
 
-****
+***
 
-## Attempt 1
+### Attempt 1
 
 ```python
 # ATTEMPT 1
@@ -137,7 +139,7 @@ def cleaning(html_2):
 cleaning(html_2)
 ```
 
-## Attempt 2
+### Attempt 2
 
 ```python
 # ATTEMTP 2
@@ -160,7 +162,7 @@ def maxi_cleaner(html_scrapped):
 maxi_cleaner(html_3)
 ```
 
-## Attempt 3
+### Attempt 3
 
 ```python
 # ATTEMPT 3, improving the RegExps
@@ -188,14 +190,14 @@ def maxi_cleaner_regexp(html_scrapped_2):
 maxi_cleaner_regexp(html_4)
 ```
 
-****
+***
 
-## Resolving the exercise
+### Resolving the exercise
 
-If you did that great job and now I'm going to walk you through what 
-my own solution for this would be. I'm gonna copy this line because this
- is exactly the start of the definition that I want to use. So I'm gonna
- say def remove first and last.
+If you did that great job and now I'm going to walk you through what\
+my own solution for this would be. I'm gonna copy this line because this\
+is exactly the start of the definition that I want to use. So I'm gonna\
+say def remove first and last.
 
 ```python
 def remove_first_and_last(list_to_clean):
@@ -203,15 +205,15 @@ def remove_first_and_last(list_to_clean):
 
 Now inside of here there really is not a lot of work we have to do in order to make this possible.
 
-If you follow along and you follow my **JavaScript** or **Ruby** programming exercises, then what you may have seen, because I've built this out in those languages as well, is that there were a few other kinds of syntax options in those languages.  
+If you follow along and you follow my **JavaScript** or **Ruby** programming exercises, then what you may have seen, because I've built this out in those languages as well, is that there were a few other kinds of syntax options in those languages.
 
-But I really like the way that **Python** does this and, in fact, Python has probably the **best way of doing this**, because you have the ability to **glob** the elements in the list.  
+But I really like the way that **Python** does this and, in fact, Python has probably the **best way of doing this**, because you have the ability to **glob** the elements in the list.
 
----
+***
 
-## What is "globbing"?
+### What is "globbing"?
 
-If you do not know what **globbing** is, what it allows you to do, I'll come down here and write it in a comment.  
+If you do not know what **globbing** is, what it allows you to do, I'll come down here and write it in a comment.
 
 Imagine that you have some kind of list, for example:
 
@@ -227,9 +229,9 @@ one, two, three = [1, 2, 3]
 
 What you would get is:
 
-- `one = 1`
-- `two = 2`
-- `three = 3`
+* `one = 1`
+* `two = 2`
+* `three = 3`
 
 But now, **if you had more than these elements**, let's say:
 
@@ -237,7 +239,7 @@ But now, **if you had more than these elements**, let's say:
 [1, 2, 3, 4, 5]
 ```
 
-What you can do is **use an asterisk (`*`) in front of the second variable**, and what's going to happen is **it is going to glob everything in the middle**.  
+What you can do is **use an asterisk (`*`) in front of the second variable**, and what's going to happen is **it is going to glob everything in the middle**.
 
 So, in this case:
 
@@ -245,9 +247,9 @@ So, in this case:
 one, *two, three = [1, 2, 3, 4, 5]
 ```
 
-- `one` is still going to grab the very first element (`1`).
-- `three` is going to grab the very last element (`5`).
-- `two` is going to **store everything in between as a list** (`[2, 3, 4]`).
+* `one` is still going to grab the very first element (`1`).
+* `three` is going to grab the very last element (`5`).
+* `two` is going to **store everything in between as a list** (`[2, 3, 4]`).
 
 We can test this out in the **REPL** just in case you don't believe me.
 
@@ -259,9 +261,9 @@ one, two, three = [1, 2, 3]
 
 Now:
 
-- `one` is equal to `1`
-- `two` is equal to `2`
-- `three` is equal to `3`
+* `one` is equal to `1`
+* `two` is equal to `2`
+* `three` is equal to `3`
 
 Now if we want to extend this a little bit, we can say:
 
@@ -269,19 +271,19 @@ Now if we want to extend this a little bit, we can say:
 one, *two, three = [1, 2, 3, 45, 6]
 ```
 
-- `one` is still equal to `1`
-- `three` should be equal to `6`
-- `two` is now equal to `[2, 3, 45]`
+* `one` is still equal to `1`
+* `three` should be equal to `6`
+* `two` is now equal to `[2, 3, 45]`
 
 So because of that, we can build our solution with this code.
 
-![IMG](./03-095_IMG3.png)
+![IMG](../../../../../../../../.gitbook/assets/03-095_IMG3.png)
 
----
+***
 
-Now I'm going to **clear the terminal** and switch back to the code, and we can keep this up here in the comments just so you can have them for the show notes.  
+Now I'm going to **clear the terminal** and switch back to the code, and we can keep this up here in the comments just so you can have them for the show notes.
 
-Now I'm going to use **destructuring**. A common convention inside Python whenever you're assigning a variable that you are **not going to use**, is to assign it to an **underscore (`_`)**.  
+Now I'm going to use **destructuring**. A common convention inside Python whenever you're assigning a variable that you are **not going to use**, is to assign it to an **underscore (`_`)**.
 
 So I'm not going to use the **first** or the **last** elements, so I'm going to say:
 
@@ -306,9 +308,9 @@ python remove_first_and_last.py
 
 And that worked! You can see that we have **some content** right there, which is exactly what we're looking for. So this **successfully removed the first and last elements**.
 
-****
+***
 
-# ATTEMPT 4 once read the guide:
+## ATTEMPT 4 once read the guide:
 
 ```python
 # ATTEMPT 4: using globs
@@ -325,31 +327,31 @@ def remove_first_and_last(html_content):
 remove_first_and_last(html_content)
 ```
 
----
+***
 
-![IMG](./03-095_IMG4.png)
+![IMG](../../../../../../../../.gitbook/assets/03-095_IMG4.png)
 
 Now we can also test it out with our **second test case** right here. If I come down and get rid of our first one and now let's just **print this out**. If I run it again, you can see it returned `'Some content'` and then `'more'`, so it is **globbing up all of the elements inside the list** besides the first one and the last one, which get dropped.
 
-![IMG](./03-095_IMG5.png)
+![IMG](../../../../../../../../.gitbook/assets/03-095_IMG5.png)
 
-So out of all the languages that I've built out this specific code exercise for, **Python really has one of the cleanest syntaxes for it**, because of **destructuring** and because you're able to **glob up these elements**. It's a really nice and easy way to read how this works.  
+So out of all the languages that I've built out this specific code exercise for, **Python really has one of the cleanest syntaxes for it**, because of **destructuring** and because you're able to **glob up these elements**. It's a really nice and easy way to read how this works.
 
-And also, within **one line**, you can see how quickly you're able to grab those elements and then you can use that **content** however you want.  
+And also, within **one line**, you can see how quickly you're able to grab those elements and then you can use that **content** however you want.
 
 Now, **if you're looking for a way to have even a little bit more of a challenge**, I would suggest implementing a **conditional** inside this function that **checks** to make sure that the list you pass in **contains at least three or more elements**.
 
 Imagine a scenario where you try to perform this type of **structuring** and you had **only one element** or **nothing at all**. What should you do? You should **raise some type of error**.
 
-You should say that you need to put in at least **three different elements** inside of whatever list you're passing in, or else you get an error.  
+You should say that you need to put in at least **three different elements** inside of whatever list you're passing in, or else you get an error.
 
-If you're building out some type of **Python module** that had this kind of behavior in it, it would be very helpful to **provide clear error messages** whenever someone is using it improperly.  
+If you're building out some type of **Python module** that had this kind of behavior in it, it would be very helpful to **provide clear error messages** whenever someone is using it improperly.
 
-So, if you're looking for a way to **extend this exercise** and **learn a little bit more about it**, then I think that would be a nice way of adding to it.  
+So, if you're looking for a way to **extend this exercise** and **learn a little bit more about it**, then I think that would be a nice way of adding to it.
 
-****
+***
 
-## Entire code, attemps & solution
+### Entire code, attemps & solution
 
 ```python
 # 03-095: Stretching a list
@@ -494,6 +496,6 @@ more_content = ['', 'a','b','c','d','e']
 print(remove_first_and_last(more_content))
 ```
 
-## Resources
+### Resources
 
-- [Exercise Code](https://github.com/jordanhudgens/python-exercises/blob/master/data-structures/remove_first_and_last.py)
+* [Exercise Code](https://github.com/jordanhudgens/python-exercises/blob/master/data-structures/remove_first_and_last.py)

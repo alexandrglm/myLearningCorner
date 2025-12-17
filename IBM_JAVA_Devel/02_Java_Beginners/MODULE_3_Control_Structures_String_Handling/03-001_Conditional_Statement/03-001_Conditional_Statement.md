@@ -1,38 +1,36 @@
 # 03-001 Conditional Statements
 
-![](./03-001_IMG8.png)
+![](../../../../.gitbook/assets/03-001_IMG8.png)
 
-- **Conditional statements** result in decisions that direct your program to act based on specified conditions
-- **`if` statement** checks for a specific condition and runs code if that condition is true
-- **`if-else` statement** gives an alternative action if a condition is false
-- **`else-if` statement** allows you to check multiple conditions sequentially
-- **`switch` statement** checks a single variable against multiple values, with `default` as a fallback
-- **Nested conditional statements** allow for complex decision-making by combining multiple conditions
+* **Conditional statements** result in decisions that direct your program to act based on specified conditions
+* **`if` statement** checks for a specific condition and runs code if that condition is true
+* **`if-else` statement** gives an alternative action if a condition is false
+* **`else-if` statement** allows you to check multiple conditions sequentially
+* **`switch` statement** checks a single variable against multiple values, with `default` as a fallback
+* **Nested conditional statements** allow for complex decision-making by combining multiple conditions
 
+***
 
----
+**Conditional statements are an important programming construct.**\
+![](<../../../../.gitbook/assets/03-001_IMG1 (1).png>) In Java, **conditional statements result in decisions that direct your program to act based on the specified conditions.** Think of conditional statements as questions that your program asks whilst running. You direct the program's next actions based on the answer to those questions, such as true or false.
 
-**Conditional statements are an important programming construct.**   
-![](./03-001_IMG1.png)
-In Java, **conditional statements result in decisions that direct your program to act based on the specified conditions.** Think of conditional statements as questions that your program asks whilst running. You direct the program's next actions based on the answer to those questions, such as true or false.
-
----
+***
 
 ## Types of Conditional Statements
 
-Java uses several conditional statements:  
-![](./03-001_IMG2.png)
+Java uses several conditional statements:\
+![](<../../../../.gitbook/assets/03-001_IMG2 (1).png>)
 
-- `if` statement
-- `if-else` statement
-- `else-if` statement
-- `switch` statement
+* `if` statement
+* `if-else` statement
+* `else-if` statement
+* `switch` statement
 
----
+***
 
 ## `if` Statement
 
-![](./03-001_IMG3.png)
+![](<../../../../.gitbook/assets/03-001_IMG3 (1).png>)
 
 The **`if` statement checks for a specific condition.** If the condition is true, the programme runs the code inside the statement.
 
@@ -54,12 +52,11 @@ if (number > 5) {
 }
 ```
 
-
----
+***
 
 ## `if-else` Statement
 
-![](./03-001_IMG4.png)
+![](<../../../../.gitbook/assets/03-001_IMG4 (1).png>)
 
 The **`if-else` statement gives an alternative action if a condition is false.** You use this conditional statement to run different code depending on whether the condition is true or false.
 
@@ -85,8 +82,7 @@ if (number > 5) {
 }
 ```
 
-
----
+***
 
 ## `else-if` Statement
 
@@ -118,14 +114,13 @@ if (number > 5) {
 }
 ```
 
-
----
+***
 
 ## `switch` Statement
 
-![](./03-001_IMG5.png)
+![](<../../../../.gitbook/assets/03-001_IMG5 (1).png>)
 
-A **`switch` statement checks a single variable against multiple values.**   
+A **`switch` statement checks a single variable against multiple values.**
 
 Compared to writing many `if-else` statements, the `switch` statement helps you cleanly manage multiple conditions for a single variable.
 
@@ -164,18 +159,17 @@ switch (day) {
 }
 ```
 
-
 ### The `default` Case
 
-![](./03-001_IMG6.png)
+![](../../../../.gitbook/assets/03-001_IMG6.png)
 
 **When using a `switch` statement, it's good practice to include a `default` case,** which runs if none of the specified cases match, acting as a fallback option.
 
----
+***
 
 ## Nested Conditional Statements
 
-![](./03-001_IMG7.png)
+![](../../../../.gitbook/assets/03-001_IMG7.png)
 
 **You can nest conditional statements for complex decisions.** Nested statements allow you to check multiple conditions in a hierarchy.
 
@@ -195,7 +189,6 @@ if (age >= 18) {
 }
 ```
 
-
 ```
 Output:
 You are an adult
@@ -203,8 +196,7 @@ You are an adult
 
 (The second message does not print because 20 is not greater than or equal to 65.)
 
----
-
+***
 
 ## Lesson Speech
 

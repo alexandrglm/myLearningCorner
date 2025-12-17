@@ -1,80 +1,78 @@
 # 04-009 Production Deployment Components
 
-![](./04-009_IMG7.png)
+![](../../../../.gitbook/assets/04-009_IMG7.png)
 
 ### Production Environment Architecture
 
-![](./04-009_IMG1.png)
+![](<../../../../.gitbook/assets/04-009_IMG1 (1).png>)
 
 A typical n-tier architecture for production deployment comprises multiple tiers, with all tiers except the presentation tier located behind a firewall:
 
-1.  **Presentation tier:** Front-end client applications
-2.  **Web tier:** Web load balancer distributing traffic to multiple web servers
-3.  **Application server tier:** App load balancer or proxy server routing traffic to application servers
-4.  **Data tier:** Database server with high availability replicas for reliability
+1. **Presentation tier:** Front-end client applications
+2. **Web tier:** Web load balancer distributing traffic to multiple web servers
+3. **Application server tier:** App load balancer or proxy server routing traffic to application servers
+4. **Data tier:** Database server with high availability replicas for reliability
 
 **Note:** Not all components are necessary for every deployment; architecture varies based on requirements.
 
-
 ### Firewall
 
-![](./04-009_IMG2.png)
+![](<../../../../.gitbook/assets/04-009_IMG2 (1).png>)
 
 A **firewall** is a security device that monitors traffic between networks, permitting or blocking requested data based on security rules. It acts as a barrier preventing viruses, malware, and hackers from accessing the internal network.
 
-
 ### Load Balancer
 
-![](./04-009_IMG3.png)
+![](<../../../../.gitbook/assets/04-009_IMG3 (1).png>)
 
 A **load balancer** distributes network traffic efficiently amongst multiple servers (a **server farm**) on a network. Located between clients and servers, load balancers:
 
-- Prevent server traffic overload
-- Determine which servers best fulfil requirements, maximising availability and responsiveness
-- Ensure no single server is overworked
-- Manage concurrent client requests, returning data quickly and reliably
+* Prevent server traffic overload
+* Determine which servers best fulfil requirements, maximising availability and responsiveness
+* Ensure no single server is overworked
+* Manage concurrent client requests, returning data quickly and reliably
 
 #### Servers
 
-![](./04-009_IMG4.png)
+![](../../../../.gitbook/assets/04-009_IMG4.png)
 
 ### Web Server
 
-A **web server** is software or hardware that delivers content (web pages, files, images, videos) to clients.   
+A **web server** is software or hardware that delivers content (web pages, files, images, videos) to clients.
 
 Web servers primarily respond to **HTTP (HyperText Transfer Protocol)** requests from web browsers, serving website content to users.
 
 ### Application Server
 
-An **application server** runs **business logic** and provides the application to clients rather than clients running the application locally.   
+An **application server** runs **business logic** and provides the application to clients rather than clients running the application locally.
 
 Its primary function is enabling interaction between end-users and server-side application code. Business logic determines data creation, storage, and modification, dictating transaction results and database operations.
 
 ### Proxy Server
 
-![](./04-009_IMG5.png)
+![](../../../../.gitbook/assets/04-009_IMG5.png)
 
 A **proxy server** is an intermediate server positioned between two tiers, handling requests between them. Proxy servers serve multiple purposes including:
 
-- Load balancing
-- System optimisation
-- Caching
-- Firewall functionality
-- Request source obscuring
-- Encryption
-- Malware scanning
+* Load balancing
+* System optimisation
+* Caching
+* Firewall functionality
+* Request source obscuring
+* Encryption
+* Malware scanning
 
 Proxy servers improve efficiency, privacy, and security of data flowing through networks.
 
 ### Database Server
 
-![](./04-009_IMG6.png)
+![](../../../../.gitbook/assets/04-009_IMG6.png)
 
-A **database** is a collection of related data stored on a computer, accessible through various methods and typically controlled by **database management system (DBMS)** software.  
+A **database** is a collection of related data stored on a computer, accessible through various methods and typically controlled by **database management system (DBMS)** software.
 
 The DBMS connects the database to users or other programs, controlling database access. The **database server** controls data flow and storage, connecting the DBMS to applications so data can be retrieved or manipulated by application code.
 
----
+***
 
 ## Lesson Speech
 
