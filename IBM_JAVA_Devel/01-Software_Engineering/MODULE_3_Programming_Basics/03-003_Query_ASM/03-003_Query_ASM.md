@@ -1,82 +1,81 @@
 # 03-003: Query / ASM Languages (High-Level - Low-Level)
 
-
 ### Language Level Classification
 
-![](./03-003_IMG1.png)
+![](../../../../.gitbook/assets/03-003_IMG1.png)
 
 Programming languages divide into **high-level** and **low-level** categories based on abstraction proximity to machine code.
 
-*   **High-level languages**: Sophisticated, English-like syntax facilitating code comprehension and rapid development. Examples include **query languages** (SQL), **structured programming** (Pascal), and **object-oriented languages** (Python).
+* **High-level languages**: Sophisticated, English-like syntax facilitating code comprehension and rapid development. Examples include **query languages** (SQL), **structured programming** (Pascal), and **object-oriented languages** (Python).
+* **Low-level languages**: Symbolic representations of machine code (binary: 0s, 1s). Examples include **assembly languages** (ARM, MIPS, X86).
 
-*   **Low-level languages**: Symbolic representations of machine code (binary: 0s, 1s). Examples include **assembly languages** (ARM, MIPS, X86).
-
----
+***
 
 ### Query Languages: High-Level Database Communication
 
-![](./03-003_IMG2.png)
-![](./03-003_IMG3.png)
+![](../../../../.gitbook/assets/03-003_IMG2.png) ![](../../../../.gitbook/assets/03-003_IMG3.png)
 
 **Query languages** provide predefined, understandable instructions for database requests. They enable structured communication between user applications and databases, ensuring both parties use identical syntax and semantics.
 
-![](./03-003_IMG4.png)
+![](../../../../.gitbook/assets/03-003_IMG4.png)
 
 **Characteristics**:
-- Predominantly request, create, read, update, or delete database data (**CRUD operations**)
-- Utilise understandable commands and syntax
-- Database management system-specific syntax requirements
+
+* Predominantly request, create, read, update, or delete database data (**CRUD operations**)
+* Utilise understandable commands and syntax
+* Database management system-specific syntax requirements
 
 **Common Query Languages**: **SQL** (most prevalent); **AQL**, **CQL**, **Datalog**, **DMX**.
 
 **Database Types**:
-- **SQL databases**: Relational with structured, predefined schemas
-- **NoSQL databases** (Not Only SQL): Non-relational with dynamic schemas for unstructured data
+
+* **SQL databases**: Relational with structured, predefined schemas
+* **NoSQL databases** (Not Only SQL): Non-relational with dynamic schemas for unstructured data
 
 **SQL Query Categories**:
-- **SELECT queries**: Request data retrieval
-- **Action queries**: Manipulate data (CREATE, INSERT, UPDATE, DELETE)
-- **Administrative queries**: Create users, modify permissions
 
-![](./03-003_IMG5.png)
-![](./03-003_IMG6.png)
-![](./03-003_IMG7.png)
+* **SELECT queries**: Request data retrieval
+* **Action queries**: Manipulate data (CREATE, INSERT, UPDATE, DELETE)
+* **Administrative queries**: Create users, modify permissions
 
----
+![](../../../../.gitbook/assets/03-003_IMG5.png) ![](../../../../.gitbook/assets/03-003_IMG6.png) ![](../../../../.gitbook/assets/03-003_IMG7.png)
+
+***
 
 ### Assembly Languages: Low-Level Processor Communication
 
 **Assembly languages** use simple symbolic representations (mnemonics) for machine code instructions, requiring assembler translation rather than compilation or interpretation.
 
-![](./03-003_IMG8.png)
+![](../../../../.gitbook/assets/03-003_IMG8.png)
 
 **Characteristics**:
-- One-to-one mapping between statements and machine code instructions (unlike high-level languages producing multiple instructions)
-- Processor architecture-specific; each CPU type typically has its own assembly language
-- Line-by-line statement entry; one statement per line
-- Readable symbolic format utilising mnemonics
+
+* One-to-one mapping between statements and machine code instructions (unlike high-level languages producing multiple instructions)
+* Processor architecture-specific; each CPU type typically has its own assembly language
+* Line-by-line statement entry; one statement per line
+* Readable symbolic format utilising mnemonics
 
 **Assembly Statement Structure**:
+
 ```
 [label:] instruction [operands] [; comments]
 ```
-- **Label** (optional): Statement identifier
-- **Instruction (mnemonic)**: Operation direction
-- **Operands** (optional): Data location parameters
-- **Comments** (optional): Explanatory notes
 
-![](./03-003_IMG9.png)
+* **Label** (optional): Statement identifier
+* **Instruction (mnemonic)**: Operation direction
+* **Operands** (optional): Data location parameters
+* **Comments** (optional): Explanatory notes
+
+![](../../../../.gitbook/assets/03-003_IMG9.png)
 
 **Common Mnemonics**: **INP** (Input), **OUT** (Output), **LDA** (Load), **STA** (Store), **ADD** (Add).
 
-![](./03-003_IMG10.png)
-**Statement Components**:
-- **Opcodes**: Processor directives specifying data operations
-- **Operands**: Data location specifications
-![](./03-003_IMG11.png)
+![](../../../../.gitbook/assets/03-003_IMG10.png) **Statement Components**:
 
+* **Opcodes**: Processor directives specifying data operations
+* **Operands**: Data location specifications ![](../../../../.gitbook/assets/03-003_IMG11.png)
 
----
+***
 
 ## Lesson Speech
 

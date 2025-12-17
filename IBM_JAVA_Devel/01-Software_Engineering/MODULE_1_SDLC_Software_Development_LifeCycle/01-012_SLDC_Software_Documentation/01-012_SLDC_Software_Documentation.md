@@ -1,124 +1,122 @@
 # 01-012: SDLC - Software Documentation
 
-![](./01-012_IMG1.png)
-![](./01-012_IMG12.png)
+![](../../../../.gitbook/assets/01-012_IMG1.png) ![](../../../../.gitbook/assets/01-012_IMG12.png)
 
+**Software documentation** is information describing what a software product is and how to use it, comprising written, guide, or graphical assets associated with development and use.
 
-**Software documentation** is information describing what a software product is and how to use it, comprising written, guide, or graphical assets associated with development and use.  
+![](../../../../.gitbook/assets/01-012_IMG2.png)
 
-![](./01-012_IMG2.png)
+Essential across all SDLC phases, it targets diverse audiences:
 
-Essential across all SDLC phases, it targets diverse audiences: 
+* The End-Uusers
+* Software developers
+* QA engineers
+* System administrators
+* Any other involved stakeholder
 
-*   The End-Uusers
-*   Software developers
-*   QA engineers
-*   System administrators
-*   Any other involved stakeholder
-
----
+***
 
 ### Two Main Categories
 
-![](./01-012_IMG3.png)
+![](../../../../.gitbook/assets/01-012_IMG3.png)
 
 #### **Product Documentation**
+
 Relates to product functionality, describing features and capabilities.
 
 #### **Process Documentation**
+
 Describes how to complete tasks, providing requirements for quality business process implementation.
 
----
+***
 
 ### Five Types of Product Documentation
 
-![](./01-012_IMG4.png)
+![](../../../../.gitbook/assets/01-012_IMG4.png)
 
 #### **Requirements Documentation**
 
-![](./01-012_IMG5.png)
+![](../../../../.gitbook/assets/01-012_IMG5.png)
 
 Written during the planning phase for development teams (developers, architects, QA). Describes expected software features and functionality, including:
 
--   The Software Requirements Specifications (SRS)
--   System Requirement Specifications (SysRS)
--   User Acceptance Specifications
-
-
+* The Software Requirements Specifications (SRS)
+* System Requirement Specifications (SysRS)
+* User Acceptance Specifications
 
 #### **Design Documentation**
 
-![](./01-012_IMG6.png)
+![](../../../../.gitbook/assets/01-012_IMG6.png)
 
-Written by software architects and development teams explaining how software will be built to meet requirements.  
+Written by software architects and development teams explaining how software will be built to meet requirements.\
 Comprises conceptual and technical design documents.
-
 
 #### **Technical Documentation**
 
-![](./01-012_IMG7.png)
+![](../../../../.gitbook/assets/01-012_IMG7.png)
 
 Includes:
-*   Code comments helping developers understand code behaviour
-*   Working papers explaining code functionality,
-*   Documents recording engineers' ideas and thoughts during project implementation.
 
+* Code comments helping developers understand code behaviour
+* Working papers explaining code functionality,
+* Documents recording engineers' ideas and thoughts during project implementation.
 
 #### **Quality Assurance Documentation**
 
-![](./01-012_IMG8.png)
+![](../../../../.gitbook/assets/01-012_IMG8.png)
 
-Encompasses testing strategy, progress, and metrics.   
+Encompasses testing strategy, progress, and metrics.
 
 Types include:
-*   Test plans
-*   Test data
-*   Test scenarios
-*   Test cases
-*   Test strategies
-*   **Traceability matrices** (mapping test cases to requirements)
 
+* Test plans
+* Test data
+* Test scenarios
+* Test cases
+* Test strategies
+* **Traceability matrices** (mapping test cases to requirements)
 
 #### **User Documentation**
 
-![](./01-012_IMG9.png)
+![](../../../../.gitbook/assets/01-012_IMG9.png)
 
-Intended for end-users, explaining software operation, installation, or troubleshooting.  
+Intended for end-users, explaining software operation, installation, or troubleshooting.
 
 May includes FAQs, installation and help guidances, videos, tutorials, and user manuals.
 
----
+***
 
 ### Standard Operating Procedures (SOPs)
 
-**SOPs** are written, step-by-step documentation explaining how to accomplish common yet complex, organisation-specific tasks.  
+**SOPs** are written, step-by-step documentation explaining how to accomplish common yet complex, organisation-specific tasks.
 
-![](./01-012-_IMG10.png)
+![](01-012-_IMG10.png)
 
-Unlike general process documentation overviews, **SOPs provide detailed procedural guidance**. 
+Unlike general process documentation overviews, **SOPs provide detailed procedural guidance**.
 
 Formats may include:
--   Flowcharts
--   Hierarchical outlines
--   Sequential instructions.
 
+* Flowcharts
+* Hierarchical outlines
+* Sequential instructions.
 
-**Example**:   
->A software engineering firm's specific steps for merging code into the main branch differ from general version control knowledge and require organisation-specific SOP documentation.
+**Example**:
 
-![](./01-012-_IMG11.png)
+> A software engineering firm's specific steps for merging code into the main branch differ from general version control knowledge and require organisation-specific SOP documentation.
 
----
+![](01-012-_IMG11.png)
+
+***
 
 ### Documentation Maintenance
 
-Documentation must remain current throughout the SDLC.  
+Documentation must remain current throughout the SDLC.
 
-During the maintenance phase, updates occur when software changes (e.g., user interface modifications require corresponding online manual updates).  
+During the maintenance phase, updates occur when software changes (e.g., user interface modifications require corresponding online manual updates).
 
 Periodic reviews ensure accuracy, and organisations must allocate resources for this critical task.
 
----
+***
 
 ## Video Lesson
 

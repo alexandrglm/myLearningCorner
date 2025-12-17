@@ -1,35 +1,34 @@
-# 04-001    Exceptions/Errors
+# 04-001 Exceptions/Errors
 
-![](./04-001_IMG16.png)
+![](../../../../.gitbook/assets/04-001_IMG16.png)
 
-- **An exception** is an event that disrupts the normal flow of a program
-- **Exceptions** provide a way to handle errors gracefully without crashing the program
-- **An error** signals a critical issue that a reasonable application should not attempt to catch as it lies outside the programmer's control
-- **Checked exceptions** are exceptions that the compiler checks at compile time
-- **Unchecked exceptions** are exceptions that are not checked by the compiler at compile time
-- **Custom exceptions** can be created by extending the `Exception` class for checked exceptions or `RuntimeException` for unchecked exceptions
-- **`try`, `catch`, and `finally` blocks** provide a robust mechanism for handling exceptions
+* **An exception** is an event that disrupts the normal flow of a program
+* **Exceptions** provide a way to handle errors gracefully without crashing the program
+* **An error** signals a critical issue that a reasonable application should not attempt to catch as it lies outside the programmer's control
+* **Checked exceptions** are exceptions that the compiler checks at compile time
+* **Unchecked exceptions** are exceptions that are not checked by the compiler at compile time
+* **Custom exceptions** can be created by extending the `Exception` class for checked exceptions or `RuntimeException` for unchecked exceptions
+* **`try`, `catch`, and `finally` blocks** provide a robust mechanism for handling exceptions
 
+***
 
----
+**An exception is an event that disrupts the normal flow of a program.**
 
-**An exception is an event that disrupts the normal flow of a program.**  
+![](../../../../.gitbook/assets/04-001_IMG1.png)
 
-![](./04-001_IMG1.png)
-
-It is an error that occurs during the execution of a program, which can cause it to behave unexpectedly or crash.   
+It is an error that occurs during the execution of a program, which can cause it to behave unexpectedly or crash.
 
 Exceptions can arise from various situations, such as... :
 
--   Trying to divide by zero
--   Acessing an invalid index in an array
--   Attempting to open a file that does not exist
+* Trying to divide by zero
+* Acessing an invalid index in an array
+* Attempting to open a file that does not exist
 
 ### The Role of Exceptions in Java
 
-![](./04-001_IMG2.png)
+![](<../../../../.gitbook/assets/04-001_IMG2 (1).png>)
 
-**Exceptions in Java provide a way to handle errors gracefully without crashing the program.** 
+**Exceptions in Java provide a way to handle errors gracefully without crashing the program.**
 
 Instead of letting the program terminate abruptly, you can **catch these exceptions** and **take the appropriate actions**, such as displaying error messages or attempting to recover from the error.
 
@@ -37,112 +36,99 @@ Instead of letting the program terminate abruptly, you can **catch these excepti
 
 Exceptions can occur for several reasons including:
 
-![](./04-001_IMG3.png)
+![](<../../../../.gitbook/assets/04-001_IMG3 (1).png>)
 
--   Invalid user input
--   Device malfunction
--   Disruption of network connectivity
--   Out-of-bounds access
--   `null` reference issues
--   Type mismatches
--   Attempting to open an unavailable file
--   Database-related errors
--   Arithmetic mistakes
+* Invalid user input
+* Device malfunction
+* Disruption of network connectivity
+* Out-of-bounds access
+* `null` reference issues
+* Type mismatches
+* Attempting to open an unavailable file
+* Database-related errors
+* Arithmetic mistakes
 
----
+***
 
 ## Errors vs. Exceptions
 
-![](./04-001_IMG4.png)
+![](<../../../../.gitbook/assets/04-001_IMG4 (1).png>)
 
+* **Errors signify serious conditions that cannot be recovered from.** They are usually related to the environment in which the application is running. These errors typically lie **outside of the programmer's control**, and **attempts to handle them should be avoided**.
 
-*   **Errors signify serious conditions that cannot be recovered from.** They are usually related to the environment in which the application is running. These errors typically lie **outside of the programmer's control**, and **attempts to handle them should be avoided**.
+![](<../../../../.gitbook/assets/04-001_IMG6 (1).png>)
 
-![](./04-001_IMG6.png)
-
-*   **An error catches a critical issue that a reasonable exception should not attempt to catch.** 
-
-*   **An exception denotes situations that a reasonable application might try to catch.**
+* **An error catches a critical issue that a reasonable exception should not attempt to catch.**
+* **An exception denotes situations that a reasonable application might try to catch.**
 
 ### Examples of Errors
 
-![](./04-001_IMG5.png)
+![](../../../../.gitbook/assets/04-001_IMG5.png)
 
--   JVM exhausting memory
--   Memory leaks
--   Stack overflow errors
--   Library incompatibilities
--   Infinite recursion
+* JVM exhausting memory
+* Memory leaks
+* Stack overflow errors
+* Library incompatibilities
+* Infinite recursion
 
-
-
----
+***
 
 ## Types of Exceptions
 
-*   **CHECKED** Exceptions
-*   **UNCHECKED** Exceptions
-*   **CUSTOM** Exceptions
+* **CHECKED** Exceptions
+* **UNCHECKED** Exceptions
+* **CUSTOM** Exceptions
 
----
+***
 
 ## Checked Exceptions
 
-**Exceptions that the compiler checks at compile time.**  
+**Exceptions that the compiler checks at compile time.**
 
-![](./04-001_IMG7.png)
+![](<../../../../.gitbook/assets/04-001_IMG7 (1).png>)
 
 You must handle these exceptions either with a `try-catch` block or declare them in the method signature using the `throws` keyword.
 
 ### Examples of Checked Exceptions
 
-![](./04-001_IMG8.png)
+![](<../../../../.gitbook/assets/04-001_IMG8 (1).png>)
 
--   **`IOException`** – Occurs when there is an input-output operation failure, such as reading from a file that doesn't exist
+* **`IOException`** – Occurs when there is an input-output operation failure, such as reading from a file that doesn't exist
+* **`SQLException`** – Related to database access errors, such as when executing SQL statements
+* **`ClassNotFoundException`** – Thrown when an application tries to load a class by its name but cannot find it
 
--   **`SQLException`** – Related to database access errors, such as when executing SQL statements
-
--   **`ClassNotFoundException`** – Thrown when an application tries to load a class by its name but cannot find it
-
-
----
-
+***
 
 ## Unchecked Exceptions
 
-![](./04-001_IMG9.png)
+![](<../../../../.gitbook/assets/04-001_IMG9 (1).png>)
 
-**Exceptions that are not checked by the compiler at compile time.**  
+**Exceptions that are not checked by the compiler at compile time.**
 
 They usually indicate programming errors and can be avoided by writing **correct code**.
 
 ### Examples of Unchecked Exceptions
 
-![](./04-001_IMG10.png)
+![](<../../../../.gitbook/assets/04-001_IMG10 (1).png>)
 
-- **`NullPointerException`** – Occurs when an application attempts to use a `null` object reference, such as calling a method on a `null` object  
+* **`NullPointerException`** – Occurs when an application attempts to use a `null` object reference, such as calling a method on a `null` object
+* **`ArrayIndexOutOfBoundsException`** – Thrown when trying to access an array with an index that is either negative or greater than or equal to the array's size
+* **`ArithmeticException`** – Occurs when an exceptional arithmetic condition occurs, such as dividing by zero
+* **`IllegalArgumentException`** – Thrown to indicate that a method has been passed an illegal or inappropriate argument
 
-- **`ArrayIndexOutOfBoundsException`** – Thrown when trying to access an array with an index that is either negative or greater than or equal to the array's size  
-
-- **`ArithmeticException`** – Occurs when an exceptional arithmetic condition occurs, such as dividing by zero  
-
-- **`IllegalArgumentException`** – Thrown to indicate that a method has been passed an illegal or inappropriate argument
-
----
-
+***
 
 ## Custom Exceptions
 
-![](./04-001_IMG11.png)
+![](../../../../.gitbook/assets/04-001_IMG11.png)
 
-**Custom exceptions are when you create your own exception classes in Java by extending the `Exception` class for checked exceptions or `RuntimeException` for unchecked exceptions.**   
+**Custom exceptions are when you create your own exception classes in Java by extending the `Exception` class for checked exceptions or `RuntimeException` for unchecked exceptions.**
 
 This allows you to define specific error conditions relevant to your application.
 
+### Example: Custom Exception Class
 
-### Example:    Custom Exception Class
-
-![](./04-001_IMG14.png)
+![](../../../../.gitbook/assets/04-001_IMG14.png)
 
 ```java
 public class MyCustomException extends Exception {
@@ -158,7 +144,7 @@ public class MyCustomException extends Exception {
 
 ### Using a Custom Exception
 
-![](./04-001_IMG15.png)
+![](../../../../.gitbook/assets/04-001_IMG15.png)
 
 ```java
 public class Main {
@@ -180,18 +166,17 @@ public class Main {
 }
 ```
 
----
-
+***
 
 ## Exception Handling: Try, Catch, and Finally
 
-**Java provides a robust block mechanism for handling exceptions:**  
+**Java provides a robust block mechanism for handling exceptions:**
 
--   `try`
--   `catch`
--   `finally`
+* `try`
+* `catch`
+* `finally`
 
-![](./04-001_IMG12.png)
+![](../../../../.gitbook/assets/04-001_IMG12.png)
 
 ### `try` Block
 
@@ -203,10 +188,8 @@ public class Main {
 
 ### `finally` Block
 
-**The `finally` block contains code that will execute regardless of whether an exception occurred or not.**   
+**The `finally` block contains code that will execute regardless of whether an exception occurred or not.**\
 It is often used for cleanup operations, such as closing files or releasing resources.
-
-
 
 ### Syntax
 
@@ -232,14 +215,11 @@ try {
 
 ### Example: Division by Zero
 
-In this example:  
+In this example:
 
-1.   The `try` block attempts to divide by zero, which throws an `ArithmeticException`
-
-2.  The `catch` block catches this exception and prints an error message
-
-3.  The `finally` block executes regardless of whether an exception occurred or not
-
+1. The `try` block attempts to divide by zero, which throws an `ArithmeticException`
+2. The `catch` block catches this exception and prints an error message
+3. The `finally` block executes regardless of whether an exception occurred or not
 
 ```java
 int numerator = 10;
@@ -261,9 +241,7 @@ try {
 }
 ```
 
-
-
----
+***
 
 ## Lesson Speech
 

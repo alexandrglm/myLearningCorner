@@ -1,106 +1,103 @@
 # 05-003 Skills Required for Software Engineering
 
-![](./05-003_IMG1.png)
+![](../../../../.gitbook/assets/05-003_IMG1.png)
 
 ### Hard Skills vs Soft Skills
----
+
+***
+
 #### HARD SKILLS
 
-*Hard skills** are practical, technical skills needed to design, build, maintain, and repair software solutions.  
+_Hard skills_\* are practical, technical skills needed to design, build, maintain, and repair software solutions.
 
 They are learned through formal education (schools, colleges, universities), online courses, diplomas, certificates, or field experience. Hard skills are **quantifiable and certifiable**.
 
----
+***
 
 #### SOFT SKILLS
 
-**Soft skills** are personal characteristics and interpersonal abilities—non-technical skills embedded in personality. 
+**Soft skills** are personal characteristics and interpersonal abilities—non-technical skills embedded in personality.
 
 They are less tangible, harder to define or quantify, but easily transferable across roles and industries.
 
 Effective software engineers combine both skill categories.
 
----
+***
 
 ### Hard Skills for Software Engineers
 
 #### **Software Analysis and Design**
+
 Analyse user needs through various methods and design effective solutions meeting those requirements.
 
-
 #### **Computer Programming and Coding**
-Essential development skills. While some roles require specific languages, employers often welcome any programming language experience with expectation to cross-train. 
--    **Currently in-demand languages:** Java, Python, C#, Ruby.
 
+Essential development skills. While some roles require specific languages, employers often welcome any programming language experience with expectation to cross-train.
+
+* **Currently in-demand languages:** Java, Python, C#, Ruby.
 
 #### **Frameworks and Object-Oriented Principles**
+
 Understanding diverse frameworks and OOP concepts are key competencies.
 
+#### **Testing Skills**
 
-#### **Testing Skills** 
 Determine whether code meets functional specifications and provides acceptable user experience.
 
-
 #### **Debugging Skills**
+
 Identify and resolve code defects when solutions malfunction or underperform.
 
-
 #### **Deployment Skills**
+
 Distribute completed solutions to users, including shell scripting, containers, and continuous integration/continuous delivery (CI/CD) tools.
 
-
 #### **Monitoring Skills**
+
 Review solution performance in production environments.
 
-
 #### **Troubleshooting Skills**
+
 Resolve runtime and performance issues.
 
----
+***
 
 ### Soft Skills for Software Engineers
 
 #### **Teamwork**
 
-Software engineers work in project-based or role-based teams, squads (Agile), or pair programming arrangements.  
+Software engineers work in project-based or role-based teams, squads (Agile), or pair programming arrangements.
 
 Team collaboration leverages individual strengths and facilitates knowledge and skill development.
-
-
 
 #### **Communication**
 
 Interact effectively with diverse stakeholders—technical peers, managers, clients, and users—gathering support, guidance, requirements clarification, and user feedback.
 
-
-
 #### **Time Management**
 
 Meet deadlines to prevent cascading delays, particularly critical in distributed teams across time-zones where delays compound significantly.
 
-
 #### **Problem-Solving**
 
 Essential throughout the software lifecycle:
--   Design phase: conceptualising appropriate solutions
--   Development phase: implementing required functionality
--   Testing/debugging phase: locating and resolving bugs
--   Ongoing: managing emerging issues
 
+* Design phase: conceptualising appropriate solutions
+* Development phase: implementing required functionality
+* Testing/debugging phase: locating and resolving bugs
+* Ongoing: managing emerging issues
 
-
-#### **Adaptability** 
+#### **Adaptability**
 
 Respond to changing project requirements including client-requested feature changes, manager-directed priority shifts, or user-requested alternative interaction methods.
 
-
 #### **Openness to Feedback**
 
-Accept constructive criticism from peer reviews, mentors, and stakeholders. This feedback-driven approach improves solutions and facilitates professional growth.  
+Accept constructive criticism from peer reviews, mentors, and stakeholders. This feedback-driven approach improves solutions and facilitates professional growth.
 
 Peer review systems enforce corporate standards and enhance code quality; junior roles typically include mentor guidance for continuous improvement.
 
----
+***
 
 ## Lesson Speech
 

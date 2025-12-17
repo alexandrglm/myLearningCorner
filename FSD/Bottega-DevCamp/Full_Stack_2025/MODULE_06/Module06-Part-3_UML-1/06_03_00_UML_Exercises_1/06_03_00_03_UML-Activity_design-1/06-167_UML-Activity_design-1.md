@@ -1,59 +1,51 @@
-# Ejercicio UML:    Diseñar un Diagrama de Actividad para un programa simple
+# Ejercicio UML: Diseñar un Diagrama de Actividad para un programa simple
 
-## 0.   Origen
+## 0. Origen
 
-Desde la guía *06-166, UML -> "Elements of a UML Activity Diagram"* y la posterior, *06-167, UML -> "How to Design an Activity Diagram for an Online Grading System"*, recibimos a través de un ejemplo sencillo los distintos elementos típicos de un Diagrama de Actividades.
+Desde la guía _06-166, UML -> "Elements of a UML Activity Diagram"_ y la posterior, _06-167, UML -> "How to Design an Activity Diagram for an Online Grading System"_, recibimos a través de un ejemplo sencillo los distintos elementos típicos de un Diagrama de Actividades.
 
 Vamos a expandir el ejemplo, realizar el mismo diagrama, desde cero, tratando de incorporar elementos típicos y generales de UML (como frames/marcos, comentarios) y, finalmente, desarrollar de manera básica un pseudo-código de ejemplo que aplique a lo que tratamos de explicar con este diagrama.
 
-
-## 1.   En Lenguaje Contextual
+## 1. En Lenguaje Contextual
 
 Se definen varios actores:
 
 * El **Alumno**, que va a examinarse con un test adecuado.
-
 * El **Sistema**, que genera test adecuado cuando el mentor se lo indica, examina al alumno pregunta a pregunta y recaba un informe final que será entregafo al mentor, almacenando los resultados cuando el mentor corrija y valide estos.
-
 * El **Mentor**, quien asigna los temas a examinar y, junto al informe entregado por el sistema, califica los resultados del alumno para ser almacenados en el sistema.
-
 
 Primero, vamos a especificar TODOS los elementos típicos de un diagrama de actividades:
 
-1. **Estado Inicial (Initial State )**
-Es el propósito inicial de nuestra actividad concreta (Quiz) para nuestro programa "Grading System".
-
-
-2. **Estado/Punto de Actividad/Acción (Activity/Action State)**
-Será cada acción realizada dentro de nuestra actividad después de nuestro estado inicial.
+1. **Estado Inicial (Initial State )**\
+   Es el propósito inicial de nuestra actividad concreta (Quiz) para nuestro programa "Grading System".
+2. **Estado/Punto de Actividad/Acción (Activity/Action State)**\
+   Será cada acción realizada dentro de nuestra actividad después de nuestro estado inicial.
 
 Son Acciones como:
-- "Generar un set de preguntas"
-- "Confirmar el set y Comenzar"
-- "Lanzar una pregunta al alumno"
-- "Responder cada pregunta"
-- "Corregir y validar resultados"
 
+* "Generar un set de preguntas"
+* "Confirmar el set y Comenzar"
+* "Lanzar una pregunta al alumno"
+* "Responder cada pregunta"
+* "Corregir y validar resultados"
 
-3. **Flujo de Acción (Action Flow)**
-De un Punto de Acción a otro, existe esa acción realizada. Esta acción es el Flujo de acción.
+3. **Flujo de Acción (Action Flow)**\
+   De un Punto de Acción a otro, existe esa acción realizada. Esta acción es el Flujo de acción.
 
-Por ejemplo, para el Mentor poder examinar un Quiz, el sistema debe haber realizado un paso previo, que es "generar un informe de respuestas emitidas por el alumno". 
+Por ejemplo, para el Mentor poder examinar un Quiz, el sistema debe haber realizado un paso previo, que es "generar un informe de respuestas emitidas por el alumno".
 
 Cuando éste se realiza y se traslada al Mentor, este es uno de los flujos de acción de nuestro programa.
 
+4. **Punto de Decisión (Decision/Branch Point)**\
+   Puntos del programa donde **siempre tenemos un flujo de entrada y dos (o más) posibles ramas/salidas**.
 
-4. **Punto de Decisión (Decision/Branch Point)**
-Puntos del programa donde **siempre tenemos un flujo de entrada y dos (o más) posibles ramas/salidas**.
+Representados por un diamante (rombo o cuadrado girado 45 grados), a nivel de ejecución, **no son ramas paralelas**, es decir, son estilo **"OR"** y sólo se ejecutará una u otra acción.
 
-Representados por un diamante (rombo o cuadrado girado 45 grados), a nivel de ejecución, **no son ramas paralelas**, es decir, son estilo **"OR"** y sólo se ejecutará una u otra acción. 
-
-Como apunte, añadir que también existen ramas paralelas de ejecución, estilo **"AND"**, representadas por "barras gruesas" de entrada y salida, cuyas condiciones, todas las que se dispongan, deben cumplirse para realizar una salida. **No es el caso de este programa, Grading System, pero está bien señalarlas.
-
+Como apunte, añadir que también existen ramas paralelas de ejecución, estilo **"AND"**, representadas por "barras gruesas" de entrada y salida, cuyas condiciones, todas las que se dispongan, deben cumplirse para realizar una salida. \*\*No es el caso de este programa, Grading System, pero está bien señalarlas.
 
 5. **Guardas/Ramas (Guards)**
 
-De cada punto de decisión, tendremos diferentes ramas.
+De cada punto de decisión, tendremos diferentes ramas.\
 En nuestro programa Grading System, no se trata de las respuestas del alumno en si mismas sino si **el alumno contestó la última pregunta, para continuar con el Flujo de Acción, o quedan preguntas sin responder y el sistema debe seguir lanzando preguntas.**
 
 6. **Estado Final (Final State)**
@@ -61,15 +53,13 @@ En nuestro programa Grading System, no se trata de las respuestas del alumno en 
 Cuando todas las acciones han sido realizadas, llegamos a un punto o estado final de nuestra actividad.
 
 En el propósito de nuestra actividad Quiz, una vez que:
-- El alumno contesta todas las preguntas.
-- El sistema genera un informe de respuestas para el Mentor.
-- El Mentor corrige y valida las acciones del alumno ...
 
-- ... éste, el Mentor, pide al sistema almacenar los datos de calificaciones del alumno. **Este será el estado final**
+* El alumno contesta todas las preguntas.
+* El sistema genera un informe de respuestas para el Mentor.
+* El Mentor corrige y valida las acciones del alumno ...
+* ... éste, el Mentor, pide al sistema almacenar los datos de calificaciones del alumno. **Este será el estado final**
 
-
-
-0. **Carriles (Swim Lanes)**
+1. **Carriles (Swim Lanes)**
 
 Por cada actor (cada parte participante en nuestra actividad "Quiz", de nuestro programa "Grading System"), disponemos de un carril.
 
@@ -77,11 +67,12 @@ Como cada Punto de Acción (Cada Acción) recae sobre un actor u otro, es import
 
 **Esta es la característima más fundamental de los Diagramas de Actividad"**
 
-## 2.   Diagrama de Actividad
+## 2. Diagrama de Actividad
 
-![large](./Diagram%202025-06-13%2022-21-16.png)
+![large](<../../../../../../../.gitbook/assets/Diagram 2025-06-13 22-21-16.png>)
 
-Desarrollado en [UMLetino](https://www.umletino.com/umletino.html).  
+Desarrollado en [UMLetino](https://www.umletino.com/umletino.html).
+
 ```xml
 <!-- Código de UMLetino (es muy mejorable)-->
 <diagram program="umletino" version="15.1"><zoom_level>15</zoom_level><element><id>UMLFrame</id><coordinates><x>0</x><y>0</y><w>1470</w><h>1245</h></coordinates><panel_attributes>act			Quiz (GradingSystem)
@@ -140,39 +131,33 @@ bg=blue</panel_attributes><additional_attributes></additional_attributes></eleme
 
 ```
 
-## 3.   Desarrollo del código
+## 3. Desarrollo del código
 
 A grandes rasgos, podemos definir todos estos objetos / clases:
 
 * "Alumno", quien podría conformarse de su propia clase que defina "los datos personales del alumno", el "identificador del alumno", el "curso realizado" y sus respectivas "asignaturas, o módulos", el "profesor asignado", y otros datos.
-
 * "Mentor", quien del mismo modo, provendrá de su propia clase la cual identifique qué Mentor es (datos), qué Alumnos tutoriza, etc.
-
 * "Preguntas". Podría ser un gran "array" (objeto de objetos). En su construcción, a través de su propia clase, tendría diferentes atributos como "Asignatura", "Lección", "Respuesta".
-
 
 También identificamos los siguientes objetos-Funciones:
 
 * Funcion "Examinar Al Alumno":
- - Recibida las instrucciones del mentor para examinar a un alumno determinado, recaba las preguntas pertinentes.
- - Interactúa con el alumno, una vez recabadas las preguntas, para que éste confirme que se debe iniciar el test.
- - Lanza preguntas al alumno, espera su respuesta y verifica si quedan preguntas pendientes de respuesta o no, para finalizar el proceso de examinación y generar un informe que remite al Mentor.
+* Recibida las instrucciones del mentor para examinar a un alumno determinado, recaba las preguntas pertinentes.
+* Interactúa con el alumno, una vez recabadas las preguntas, para que éste confirme que se debe iniciar el test.
+* Lanza preguntas al alumno, espera su respuesta y verifica si quedan preguntas pendientes de respuesta o no, para finalizar el proceso de examinación y generar un informe que remite al Mentor.
+* Función "Labores del Mentor"
+* Emite las instrucciones-requisitos al sistema para que éste examine al alumno.
+* Recibe el informe de todo el proceso de examinación realizado en la función "Examinar Al Alumno".
+* Evalúa el proceso, realiza las acciones pertinentes para con el Alumno/el proceso de Examinación del alumno.
+* Pide almacenar los resultados en el sistema.
 
- * Función "Labores del Mentor"
-  - Emite las instrucciones-requisitos al sistema para que éste examine al alumno.
-  - Recibe el informe de todo el proceso de examinación realizado en la función "Examinar Al Alumno".
-  - Evalúa el proceso, realiza las acciones pertinentes para con el Alumno/el proceso de Examinación del alumno.
-  - Pide almacenar los resultados en el sistema.
+Se pueden deducir otras funciones secundarias necesarias para poder realizar la actividad Quiz/el programa Grading System, como:
 
-
-  Se pueden deducir otras funciones secundarias necesarias para poder realizar la actividad Quiz/el programa Grading System, como:
-
-  * Hacer login en el sistema
-  * Determinar el rol (Alumno, Mentor, cualquier otro)
-  * Registrar acciones del alumno durante la sesión de examinación
-  * Registrar fechas, datos de cualquier otro tipo, etc.
-  * Manejar distintas bases de datos (Alumnos, Mentores, Cursos, Asignaturas, Preguntas, etc...)
-
+* Hacer login en el sistema
+* Determinar el rol (Alumno, Mentor, cualquier otro)
+* Registrar acciones del alumno durante la sesión de examinación
+* Registrar fechas, datos de cualquier otro tipo, etc.
+* Manejar distintas bases de datos (Alumnos, Mentores, Cursos, Asignaturas, Preguntas, etc...)
 
 De ello, y aunque sólo tenemos una Actividad (Quiz) de todo el programa (Grading System), podemos realizar un pseudo-código:
 
@@ -285,6 +270,3 @@ class Auxiliares {
 
 // etc etc etc
 ```
-
-
-

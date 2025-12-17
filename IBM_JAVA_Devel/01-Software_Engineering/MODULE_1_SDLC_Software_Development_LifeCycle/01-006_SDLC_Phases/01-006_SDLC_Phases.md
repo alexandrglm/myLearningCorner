@@ -1,10 +1,10 @@
 # 01-006: SDLC Phases
 
-![](./01-006_IMG1.png)
+![](../../../../.gitbook/assets/01-006_IMG1.png)
 
-![](./01-006_IMG11.png)
+![](../../../../.gitbook/assets/01-006_IMG11.png)
 
----
+***
 
 The SDLC generally comprises **SIX distinct phases**:
 
@@ -15,9 +15,9 @@ The SDLC generally comprises **SIX distinct phases**:
 5. **Deployment**
 6. **Maintenance**
 
-![](./01-006_IMG2.png)
+![](../../../../.gitbook/assets/01-006_IMG2.png)
 
-Each phase is discrete, meaning tasks do not overlap between consecutive phases, though modern iterative approaches allow requirements to shift and be accommodated throughout the cycle.  
+Each phase is discrete, meaning tasks do not overlap between consecutive phases, though modern iterative approaches allow requirements to shift and be accommodated throughout the cycle.
 
 Some organisations use different phase names (e.g., "requirements," "strategy," "analysis" instead of "planning") or have additional/fewer stages.
 
@@ -25,11 +25,11 @@ Some organisations use different phase names (e.g., "requirements," "strategy," 
 
 ### Phase 1: Planning
 
-Requirements are gathered, analysed, documented, and prioritised. 
+Requirements are gathered, analysed, documented, and prioritised.
 
 Key considerations might include:
 
-![](./01-006_IMG3.png)
+![](../../../../.gitbook/assets/01-006_IMG3.png)
 
 * Identifying users
 * Defining the solution's purpose
@@ -38,79 +38,72 @@ Key considerations might include:
 * Identifying risks
 * Establishing quality assurance requirements, allocating resources, and scheduling the project
 
+**SRS DOCUMENT**: A **Software Requirements Specification (SRS)** document, approved by all stakeholders, and estimated labour, material costs, and team assignments. ![](../../../../.gitbook/assets/01-006_IMG5.png)
 
-**SRS DOCUMENT**: A **Software Requirements Specification (SRS)** document, approved by all stakeholders, and estimated labour, material costs, and team assignments.
-![](./01-006_IMG5.png)
+**Prototypes** may be developed to clarify requirements—small-scale replicas used for stakeholder feedback and testing basic design ideas. ![](../../../../.gitbook/assets/01-006_IMG4.png)
 
-**Prototypes** may be developed to clarify requirements—small-scale replicas used for stakeholder feedback and testing basic design ideas.
-![](./01-006_IMG4.png)
-
----
+***
 
 ### Phase 2: Design
 
-The SRS Requirements inform the development of software architecture.  
+The SRS Requirements inform the development of software architecture.
 
-![](./01-006_IMG6.png)
+![](../../../../.gitbook/assets/01-006_IMG6.png)
 
 Multiple team members collaborate to design the architecture, which is reviewed by stakeholders and the development team. Prototypes may be designed as preliminary mock-ups for demonstration.
 
 **Deliverable**: A **DESIGN DOCUMENTS** used by developers in the subsequent development phase.
 
----
+***
 
 ### Phase 3: Development
 
-Also called the "building" or "implementation" phase, developers begin coding based on the design document.  
+Also called the "building" or "implementation" phase, developers begin coding based on the design document.
 
-![](./01-006_IMG7.png)
+![](../../../../.gitbook/assets/01-006_IMG7.png)
 
 Project planners assign coding tasks, and the phase typically involves programming tools, multiple languages, software stacks, and organisational standards or guidelines.
 
 ### Phase 4: Testing
 
-Once coding is complete, the code undergoes thorough testing to ensure stability, security, and compliance with SRS requirements.  
+Once coding is complete, the code undergoes thorough testing to ensure stability, security, and compliance with SRS requirements.
 
 Testings may be manual, automated, or hybrid.
 
 Common testing levels includes:
 
-- Unit testing
-- Integration testing
-- System testing
-- Acceptance testing.
+* Unit testing
+* Integration testing
+* System testing
+* Acceptance testing.
 
-![](./01-006_IMG8.png)
+![](../../../../.gitbook/assets/01-006_IMG8.png)
 
 **Process**: Product bugs are reported, tracked, and fixed; code is retested iteratively until stability is achieved.
 
----
+***
 
 ### Phase 5: Deployment
 
-The application is released into the production environment and made available to users.  
+The application is released into the production environment and made available to users.
 
-![](./01-006_IMG9.png)
+![](../../../../.gitbook/assets/01-006_IMG9.png)
 
-This may occur in stages: first to a **User Acceptance Testing (UAT)** platform, then to production following customer sign-off.  
+This may occur in stages: first to a **User Acceptance Testing (UAT)** platform, then to production following customer sign-off.
 
 Releases can be distributed via websites, mobile app stores, or corporate software servers.
 
----
-
+***
 
 ### Phase 6: Maintenance
 
-After deployment, this phase identifies any remaining bugs, user interface (UI) issues, and unaddressed requirements.  
+After deployment, this phase identifies any remaining bugs, user interface (UI) issues, and unaddressed requirements.
 
 Code enhancements are identified. High-priority bugs are fixed immediately; others may be incorporated into future software releases, potentially initiating another development cycle.
 
-![](./01-006_IMG10.png)
+![](../../../../.gitbook/assets/01-006_IMG10.png)
 
-
-
-
----
+***
 
 ## Video Lesson
 

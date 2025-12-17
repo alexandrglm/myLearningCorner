@@ -1,129 +1,127 @@
 # 01-013: SDLC - Roles
 
-![](./01-013_IMG1.png)
-![](./01-013_IMG12.png)
+![](../../../../.gitbook/assets/01-013_IMG1.png) ![](../../../../.gitbook/assets/01-013_IMG12.png)
 
-Software development projects comprise multiple roles with varying titles depending on methodology (Agile vs. waterfall) and organisational preferences.  
-Not all projects include every role.  
+Software development projects comprise multiple roles with varying titles depending on methodology (Agile vs. waterfall) and organisational preferences.\
+Not all projects include every role.
 
-**NINE** common roles are: 
+**NINE** common roles are:
 
-![](./01-013_IMG2.png)
+![](../../../../.gitbook/assets/01-013_IMG2.png)
 
--   Project manager/Scrum master
--   Stakeholder
--   System / Software Architect
--   UX Designer
--   Software Developer
--   QA engineer / Tester
--   Site Reliability engineer
--   Product Manager / Owner
--   Technical Writer / Information developer.
+* Project manager/Scrum master
+* Stakeholder
+* System / Software Architect
+* UX Designer
+* Software Developer
+* QA engineer / Tester
+* Site Reliability engineer
+* Product Manager / Owner
+* Technical Writer / Information developer.
 
----
-
+***
 
 ### Project Manager / Scrum Master
 
-![](./01-013_IMG3.png)
+![](../../../../.gitbook/assets/01-013_IMG3.png)
 
-#### **Traditional SDLC** -> **Project Manager** 
+#### **Traditional SDLC** -> **Project Manager**
+
 Ensures smooth project execution and facilitates communication, addressing planning, scheduling, budgeting, personnel and resource allocation, software plan execution, and team communication.
 
-
 #### **Agile** -> **Scrum Master**
+
 Prioritises team and individual success, facilitating communication aligned with Agile values emphasising people and collaboration over process.
 
----
+***
 
 ### Stakeholder
 
-![](./01-013_IMG4.png)
+![](../../../../.gitbook/assets/01-013_IMG4.png)
 
-Individuals for whom the product is designed: 
+Individuals for whom the product is designed:
 
--   Customers
--   End-users
--   Decision-makers
--   System administrators
--   Any other key personnel
+* Customers
+* End-users
+* Decision-makers
+* System administrators
+* Any other key personnel
 
-Responsible for defining project requirements and providing requirement clarification or feedback when proposed solutions require adjustment. 
+Responsible for defining project requirements and providing requirement clarification or feedback when proposed solutions require adjustment.
 
 May participate in beta and acceptance testing before release.
 
----
+***
 
 ### System / Software Architect
 
-![](./01-013_IMG5.png)
+![](../../../../.gitbook/assets/01-013_IMG5.png)
 
-Designs and communicates project architecture to team members. Also called **solution architects**.   
+Designs and communicates project architecture to team members. Also called **solution architects**.
 
-Responsible for designing essential characteristics of the software's inner structure and technical aspects.  
+Responsible for designing essential characteristics of the software's inner structure and technical aspects.\
 Provides technical support across SDLC stages.
 
----
+***
 
 ### UX Designer
 
-![](./01-013_IMG6.png)
+![](../../../../.gitbook/assets/01-013_IMG6.png)
 
-Balances intuitive design with robust functionality meeting requirements.  
+Balances intuitive design with robust functionality meeting requirements.\
 Determines how software behaves from the user's perspective, communicating functionality to end-users and defining user interaction methods.
 
----
+***
 
 ### Software Developer
 
-![](./01-013_IMG7.png)
+![](../../../../.gitbook/assets/01-013_IMG7.png)
 
 Writes code powering the software, implementing architecture from design documents, incorporating SRS requirements, and employing UX requirements determined by UX designers.
 
----
+***
 
 ### QA Engineer / Tester
 
-![](./01-013_IMG8.png)
+![](../../../../.gitbook/assets/01-013_IMG8.png)
 
-Ensures product quality and customer requirement compliance.  
+Ensures product quality and customer requirement compliance.\
 Writes and executes test cases identifying bugs and deficiencies, providing feedback to development teams.
 
----
+***
 
 ### Site Reliability Engineer (SRE) / Ops Engineer
 
-![](./01-013_IMG9.png)
+![](../../../../.gitbook/assets/01-013_IMG9.png)
 
-Bridges development and operations, combining software engineering expertise with IT systems management.        
+Bridges development and operations, combining software engineering expertise with IT systems management.
 
-*   Tracking incidents
-*   Facilitates incident discussions
-*   Automates systems and procedures
-*   Assists  on troubleshooting
-*   Ensures customer reliability
+* Tracking incidents
+* Facilitates incident discussions
+* Automates systems and procedures
+* Assists on troubleshooting
+* Ensures customer reliability
 
----
+***
 
 ### Product Manager / Product Owner
 
-![](./01-013_IMG10.png)
+![](../../../../.gitbook/assets/01-013_IMG10.png)
 
-Possesses product vision and intimate understanding of client requirements and end-user needs.  
+Possesses product vision and intimate understanding of client requirements and end-user needs.\
 Leads development efforts ensuring the product delivers stakeholder value.
 
----
+***
 
 ### Technical Writer / Information Developer
 
-![](./01-013_IMG11.png)
+![](../../../../.gitbook/assets/01-013_IMG11.png)
 
-*   Writes end-user documentation on technical material for non-technical audiences.  
+* Writes end-user documentation on technical material for non-technical audiences.
+* Assists end-user software operation and enables timely customer feedback.
+* May author user manuals, reports, white papers, and press releases.
 
-*   Assists end-user software operation and enables timely customer feedback.       
-*   May author user manuals, reports, white papers, and press releases.
-
----
+***
 
 ## Video Lesson
 

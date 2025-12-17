@@ -1,89 +1,82 @@
-# 02-009    Development Tools 2
+# 02-009 Development Tools 2
 
-Application development tools facilitate building and deploying apps: 
+Application development tools facilitate building and deploying apps:
 
--   **CI/CD**
--   **Build tools**
--   **Packages** / **Package managers**
+* **CI/CD**
+* **Build tools**
+* **Packages** / **Package managers**
 
----
+***
 
 ### CI/CD (Continuous Integration / Continuous Deployment)
 
 **CI/CD** represents DevOps best practices enabling developers to deliver frequent, reliable changes.
 
-![](./02-009_IMG1.png)
+![](../../../../.gitbook/assets/02-009_IMG1.png)
 
 #### **Continuous Integration (CI)**
 
-Implemented through build-automation servers, CI ensures code components work together smoothly. 
+Implemented through build-automation servers, CI ensures code components work together smoothly.
 
 A CI build environment integrates newly developed code frequently—daily or hourly, depending on project change velocity—automatically building and testing code.
-
 
 #### **Continuous Delivery (CD)**
 
 Beginning where CI ends, CD deploys all code changes from a build to testing or staging environments for further validation before production release.
 
----
+***
 
 ### Build Tools
 
-**Build tools** transform source code into installation-ready binaries, organising source code, setting compile flags, and managing dependencies.   
+**Build tools** transform source code into installation-ready binaries, organising source code, setting compile flags, and managing dependencies.\
 Essential in multi-project environments with multiple developers, they automate previously manual daily tasks.
 
-![](./02-009_IMG2.png)
+![](../../../../.gitbook/assets/02-009_IMG2.png)
 
 **Automated tasks**:
-- Downloading dependencies
-- Compiling source code into binary code
-- Packaging binary code
-- Running tests
-- Deployment to production systems
 
+* Downloading dependencies
+* Compiling source code into binary code
+* Packaging binary code
+* Running tests
+* Deployment to production systems
 
 #### **Two build tool categories**
 
-![](./02-009_IMG3.png)
+![](../../../../.gitbook/assets/02-009_IMG3.png)
 
-- **Build-automation utilities**: Generate build artefacts (executables) by compiling and linking source code
-
-- **Build-automation servers**: Execute build-automation utilities on scheduled or triggered basis
+* **Build-automation utilities**: Generate build artefacts (executables) by compiling and linking source code
+* **Build-automation servers**: Execute build-automation utilities on scheduled or triggered basis
 
 **Examples**: Webpack (JavaScript module bundler), Babel (JavaScript compiler), Web Assembly (binary instruction format for browsers).
 
-
----
+***
 
 ### Packages and Package Managers
 
 **Packages** are archive files containing app files, installation instructions, and metadata. Metadata includes package description, version, and dependencies (packages requiring prior installation).
 
-**Package managers** handle software discovery, installation, maintenance, and uninstallation tasks, coordinating with file archivers, verifying checksums and digital certificates, locating and downloading software from repositories, and managing dependencies.
-![](./02-009_IMG5.png)
-
+**Package managers** handle software discovery, installation, maintenance, and uninstallation tasks, coordinating with file archivers, verifying checksums and digital certificates, locating and downloading software from repositories, and managing dependencies. ![](../../../../.gitbook/assets/02-009_IMG5.png)
 
 #### **Platform package managers**
 
-![](./02-009_IMG6.png)
+![](../../../../.gitbook/assets/02-009_IMG6.png)
 
-- **Linux**: DPKG (Debian), RPM (Red Hat)
-- **Windows**: Chocolatey
-- **Android**: Package Manager
-- **macOS**: Homebrew, MacPorts
-
-
+* **Linux**: DPKG (Debian), RPM (Red Hat)
+* **Windows**: Chocolatey
+* **Android**: Package Manager
+* **macOS**: Homebrew, MacPorts
 
 #### **Language-specific package managers**
 
-![](./02-009_IMG7.png)
+![](../../../../.gitbook/assets/02-009_IMG7.png)
 
-- **Node.js/Javascript**: npm
-- **Java**: Gradle, Maven
-- **Ruby**: RubyGems
-- **Python**: Pip, Conda
+* **Node.js/Javascript**: npm
+* **Java**: Gradle, Maven
+* **Ruby**: RubyGems
+* **Python**: Pip, Conda
 
----
+***
 
 ## Video Lesson
 
@@ -114,10 +107,11 @@ Now that you have your **app developed and tested**, you're **ready to deploy**.
 Once you have **bundled your app** into a **package**, you can use a **package manager** to **distribute it**. **Package managers** take care of the **tasks of finding, installing, maintaining or uninstalling. software packages** at the **user's request**.
 
 **Package management systems**:
-- **Coordinate with file archivers** to **extract package archives**.
-- **Verify checksums and digital certificates** to **ensure the integrity and authenticity** of the package.
-- **Locate, download, install, or update existing software** from a **software repository**.
-- And **manage dependencies** to **ensure a package is installed** with **all packages it requires**.
+
+* **Coordinate with file archivers** to **extract package archives**.
+* **Verify checksums and digital certificates** to **ensure the integrity and authenticity** of the package.
+* **Locate, download, install, or update existing software** from a **software repository**.
+* And **manage dependencies** to **ensure a package is installed** with **all packages it requires**.
 
 Some **commonly used package managers** for each of the **major platforms** are listed here: On **Linux** - **Debian Package Management System (DPKG). Red Hat Package Manager (RPM).**
 

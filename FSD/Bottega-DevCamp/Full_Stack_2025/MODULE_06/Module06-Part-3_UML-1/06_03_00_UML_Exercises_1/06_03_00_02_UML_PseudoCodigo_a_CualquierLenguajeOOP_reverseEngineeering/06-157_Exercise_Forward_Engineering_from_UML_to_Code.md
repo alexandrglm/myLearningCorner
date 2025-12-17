@@ -1,12 +1,15 @@
-
 # Ejercicio Pseudo-Código UML a Distintos lenguajes.
 
 ## UML Class / UML Object
+
 ## Encapsulación
+
 ## ES6 Closures / ES2022 this
 
----
+***
+
 ### 0. Origen
+
 Tomando como ejemplo la siguiente definición para una clase típica, para **JAVA**, que maneja datos de usuario y aplica ficticiamente un descuento a un precio:
 
 ```
@@ -17,7 +20,6 @@ Customer
 + calculateDiscount(): Money
 
 ```
-
 
 ```
 // Generated Java Code
@@ -39,14 +41,13 @@ public class Customer {
 }
 ```
 
-
 ## 1. Esqueleto Básico
 
 Basándote en el UML:
 
-- Clase `Customer`
-- Propiedades públicas: `name` (string) y `email` (string)
-- Método público: `calculateDiscount()` que retorna un `number`
+* Clase `Customer`
+* Propiedades públicas: `name` (string) y `email` (string)
+* Método público: `calculateDiscount()` que retorna un `number`
 
 ¿Cómo definirías la clase `Customer` en JavaScript? Empieza con la estructura básica.
 
@@ -75,20 +76,21 @@ class Customer {
 
 ```
 
-
 ### 2. Haciendo las variables no públicas, con getter / setter, usando ES2022.
 
 * ¿Cómo modificarías tu clase Customer para usar get y set en lugar del acceso directo a las propiedades?
 
 _Pista: Necesitarás decidir cómo almacenar internamente los valores (¿propiedades privadas con # o alguna convención?) y luego crear los getters/setters públicos._
 
-Intenta reescribir tu clase usando propiedades privadas #name y #email, con sus respectivos getters y setters. ¿Cómo quedaría la estructura completa?.
+Intenta reescribir tu clase usando propiedades privadas #name y #email, con sus respectivos getters y setters. ¿Cómo quedaría la estructura completa?.\
 Incluye:
 
-    - Las propiedades privadas
-    - El constructor (que ahora debe asignar a las propiedades privadas)
-    - Los getters y setters
-    - El método calculateDiscount()
+```
+- Las propiedades privadas
+- El constructor (que ahora debe asignar a las propiedades privadas)
+- Los getters y setters
+- El método calculateDiscount()
+```
 
 ```js
 class Customer {
@@ -131,21 +133,18 @@ class Customer {
 
 ```
 
-
 ### 3. Enfoques de uso
 
 * ¿En qué situaciones reales necesitarías controlar cómo se accede o modifica una propiedad, versus simplemente permitir acceso directo?
-
 * ¿Se te ocurre algún ejemplo donde podrías querer "interceptar" cuando alguien lee o cambia el `name` o `email`?
 
 A la hora de querer crear un objeto de dicha clase, y tratar de implementar alguna función para algún objetivo, como validación de entrada.
 
 Por ejemplo, estos son casos reales:
 
-1.  Implementar un sistema de validación de entrada de email
+1. Implementar un sistema de validación de entrada de email
 2. Reformateo de cadenas a .toUpperCase()
 3. Métodos de consola para debug, warn, etc...
-
 
 ```js
 
@@ -196,11 +195,9 @@ class Customer {
 
 ### 4. ¿Cuál de estos casos te parece más práctico para el desarrollo real?
 
-En etapas de desarrollo, cualquier método que nos ayude a lanzar Error, o alguna extensión de error. 
+En etapas de desarrollo, cualquier método que nos ayude a lanzar Error, o alguna extensión de error.
 
 También cualquier método de consola, como log, debug, warn, o alerts.
-
-
 
 ### 5. Si instanciamos una clase, dado el código actual, ¿Qué ocurriría?
 
@@ -212,13 +209,11 @@ let customer = new Customer('juan', 'email-sin-arroba')
 
 Recibiríamos un error con el mensaje que hemos específicado ("Email tiene que llevar @").
 
-
-
 ### 5. Y, ¿Cómo era todo antes de ES2022? JS Closures, "a la antigua usanza", sin `constructor()`, haciénolo manualmente
 
-*   Las propiedades privadas `#` no existían en JavaScript antes de ES2022. 
-    En sintaxis antigua solo teníamos la convención `_` (que no es realmente privada).
-    ¿Cómo lo harías " a la vieja usanza " ?
+* Las propiedades privadas `#` no existían en JavaScript antes de ES2022.\
+  En sintaxis antigua solo teníamos la convención `_` (que no es realmente privada).\
+  ¿Cómo lo harías " a la vieja usanza " ?
 
 A través de una función (que usaremos PascalCase para este ejercicio, para asemejarla a la class), y **closures**, es decir, creando nuevos objetos privados, de alcance protegido, a la propia función, respecto a los públicos.
 
@@ -271,36 +266,33 @@ function Customer(customerName, customerEmail) {
 
 }
 ```
+
 ### 6. Volviendo a UML
 
 * Basándote en tu función Customer actual (que emula "a la antigua usanza" las clases, usando closure, con propiedades privadas, getters/setters, validaciones), ¿cómo representarías esto en UML?
 
 Respecto a la clase Customer, con getter/setter explícitos, usaremos un diagrama de Clases con las siguientes características:
 
-1. Nombre de Clase:     Customer
-2. Atributos: 
-    - [Privado - ]      name: String
-    - [Privado - ]      email: String
-
-    - [Publico +]       Customer(String, String)
-
+1. Nombre de Clase: Customer
+2. Atributos:
+   * \[Privado - ] name: String
+   * \[Privado - ] email: String
+   * \[Publico +] Customer(String, String)
 3. Métodos:
-    - [Publico +]    getName():    String
-    - [Publico +]    setName(String):      void  
-    - [Publico +]    getMail():    String
-    - [Publico +]    setMail(String):      void
+   * \[Publico +] getName(): String
+   * \[Publico +] setName(String): void
+   * \[Publico +] getMail(): String
+   * \[Publico +] setMail(String): void
+   * \[Publico +] calculateDiscount(): Integer
 
-    - [Publico +]    calculateDiscount():  Integer
+* **Datos privados / Métodos públicos**
+* Nuestras variables name y email son **privadas**.\
+  Las customerX son sólo parámetros del consturctor, **no se consideran entonces para definir en UML**
+* Los **getter / setter son siempre públicos**.\
+  Son la "interfaz pública" para acceder a los datos privados.
 
-*   **Datos privados / Métodos públicos**
-*   Nuestras variables name y email son **privadas**.
-    Las customerX son sólo parámetros del consturctor, **no se consideran entonces para definir en UML**
+La Sintáxis , con el software UMLetino por ejemplo, sería:
 
-*   Los **getter / setter son siempre públicos**. 
-    Son la "interfaz pública" para acceder a los datos privados.
-
-
-La Sintáxis , con el software UMLetino  por ejemplo, sería:
 ```
 Customer
 --
@@ -318,9 +310,10 @@ Customer
 + calculateDiscount():	Number	
 
 ```
-![large](./Class-Customer_conGETTER.png)
 
-** Es importante señalar que UML, al final, no define código, sino conceptos de diseño.**
+![large](../../../../../../../.gitbook/assets/Class-Customer_conGETTER.png)
+
+\*\* Es importante señalar que UML, al final, no define código, sino conceptos de diseño.\*\*
 
 La función `Customer()`:
 
@@ -339,11 +332,9 @@ Eso ES una clase conceptualmente, sin importar si usas:
 
 En nuestro código "antiguo" como en el moderno, donde estamos especificando variables privadas, da igual si usamos una clase o lo hacemos "a la antigua usanza" usando una función con sus getter/setter, **en ambos casos es perfectamente aceptable usar Diagrama de Clases**.
 
-
 ### 7. UML actual, simplificado, sin variables privadas con interfaz pública.
 
-
-![large](./Class-Customer_SIMPLIFIC.png)
+![large](../../../../../../../.gitbook/assets/Class-Customer_SIMPLIFIC.png)
 
 ```
 Customer

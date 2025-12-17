@@ -1,119 +1,113 @@
 # 01-008: SDLC - Requirements
 
-![](./01-008_IMG1.png)
-![](./01-008_IMG14.png)
+![](../../../../.gitbook/assets/01-008_IMG1.png) ![](../../../../.gitbook/assets/01-008_IMG14.png)
 
-**Requirement gathering** is a **SIX** step process of defining a problem to be solved and documenting how to solve it: 
+**Requirement gathering** is a **SIX** step process of defining a problem to be solved and documenting how to solve it:
 
-![](./01-008_IMG2.png)
+![](../../../../.gitbook/assets/01-008_IMG2.png)
 
-1.  Identifying Stakeholders
-2.  Establishing goals and objectives
-3.  Eliciting requirements
-4.  Documenting requirements
-5.  Analysing and confirming requirements
-6.  Prioritising.
+1. Identifying Stakeholders
+2. Establishing goals and objectives
+3. Eliciting requirements
+4. Documenting requirements
+5. Analysing and confirming requirements
+6. Prioritising.
 
----
+***
 
-### Step 1:     Identify Stakeholders
+### Step 1: Identify Stakeholders
 
-![](./01-008_IMG3.png)
+![](../../../../.gitbook/assets/01-008_IMG3.png)
 
-Stakeholders generally work for the organisation requesting software development.   
-Key personnel include decision-makers, end-users, system administrators, engineering, marketing, sales, and customer support personnel.   
+Stakeholders generally work for the organisation requesting software development.\
+Key personnel include decision-makers, end-users, system administrators, engineering, marketing, sales, and customer support personnel.\
 Representation from every affected group is advisable.
 
----
+***
 
-### Step 2:     Goals and Objectives
+### Step 2: Goals and Objectives
 
-![](./01-008_IMG4.png)
+![](../../../../.gitbook/assets/01-008_IMG4.png)
 
-**Goals** are broad, long-term achievable outcomes encompassing customer and business objectives. 
+**Goals** are broad, long-term achievable outcomes encompassing customer and business objectives.
 
 **Objectives** are more specific, actionable, and measurable actions that achieve stated goals.
 
----
+***
 
-### Steps 3rd to 6th:    Elicit, Document, Confirm, Prioritise
+### Steps 3rd to 6th: Elicit, Document, Confirm, Prioritise
 
-These steps are typically completed iteratively. 
+These steps are typically completed iteratively.
 
-![](./01-008_IMG5.png)
+![](../../../../.gitbook/assets/01-008_IMG5.png)
 
-- **Elicitation** occurs via surveys, questionnaires, and interviews. 
+* **Elicitation** occurs via surveys, questionnaires, and interviews.
+* Requirements are **documented** and checked for alignment with goals and objectives.
+* **Confirmation** involves analysing requirements for consistency, clarity, and completeness, followed by stakeholder approval.
 
-- Requirements are **documented** and checked for alignment with goals and objectives. 
+![](../../../../.gitbook/assets/01-008_IMG6.png)
 
-- **Confirmation** involves analysing requirements for consistency, clarity, and completeness, followed by stakeholder approval. 
+* **Prioritisation** uses labels like "must-have," "highly desired," and "nice to have."
 
-
-![](./01-008_IMG6.png)
-
-- **Prioritisation** uses labels like "must-have," "highly desired," and "nice to have."
-
----
+***
 
 ### Three Specification Documents
 
-![](./01-008_IMG7.png)
+![](../../../../.gitbook/assets/01-008_IMG7.png)
 
 #### **Software Requirements Specification (SRS)** (most common)
 
-![](./01-008_IMG8.png)
+![](../../../../.gitbook/assets/01-008_IMG8.png)
 
 Captures software functionalities.Also establishes performance benchmarks.
 
-##### SRS Structure
+**SRS Structure**
 
-- **Purpose**: Intended use, audience, scope
-- **Scope**: Benefits, goals, objectives
-- **Constraints**: Operating conditions, standards, hardware limitations
-- **Assumptions**: Required operating system, hardware dependencies
-- **Dependencies**: Reliance on other software products
-- **Requirements**: Functional, external interface, system features, non-functional
+* **Purpose**: Intended use, audience, scope
+* **Scope**: Benefits, goals, objectives
+* **Constraints**: Operating conditions, standards, hardware limitations
+* **Assumptions**: Required operating system, hardware dependencies
+* **Dependencies**: Reliance on other software products
+* **Requirements**: Functional, external interface, system features, non-functional
 
-![](./01-008_IMG9.png)
-![](./01-008_IMG10.png)
-![](./01-008_IMG11.png)
-##### Requirement Classification
+![](../../../../.gitbook/assets/01-008_IMG9.png) ![](../../../../.gitbook/assets/01-008_IMG10.png) ![](../../../../.gitbook/assets/01-008_IMG11.png)
 
-- **Functional**: Software functionalities
-- **External Interface**: Behaviour regarding external entities, users, hardware, software interaction
-- **System Features**: Subset of functional requirements; required for system function
-- **Non-Functional**: Performance, safety, security, quality standards
+**Requirement Classification**
 
----
+* **Functional**: Software functionalities
+* **External Interface**: Behaviour regarding external entities, users, hardware, software interaction
+* **System Features**: Subset of functional requirements; required for system function
+* **Non-Functional**: Performance, safety, security, quality standards
+
+***
 
 #### **User Requirements Specification (URS)**
 
-![](./01-008_IMG12.png)
-Documents user stories or use cases answering: 
-> Who is the user? What function is needed? Why does the user need this? 
+![](../../../../.gitbook/assets/01-008_IMG12.png) Documents user stories or use cases answering:
+
+> Who is the user? What function is needed? Why does the user need this?
 
 User acceptance testing verifies these are met. Often combined with SRS into a single document.
 
----
+***
 
 #### **System Requirement Specification (SysRS)**
 
-![](./01-008_IMG13.png)
+![](../../../../.gitbook/assets/01-008_IMG13.png)
 
 Broader in scope than SRS; outlines entire system requirements including:
 
-*   System capabilities
-*   Interfaces
-*   User characteristics
-*   Policies, Directives, Regulations
-*   Personnel
-*   Performance
-*   Security requirements
-*   Acceptance criteria
-*   Hardware specificatione
+* System capabilities
+* Interfaces
+* User characteristics
+* Policies, Directives, Regulations
+* Personnel
+* Performance
+* Security requirements
+* Acceptance criteria
+* Hardware specificatione
 
-
----
+***
 
 ## Video Lesson
 

@@ -1,137 +1,145 @@
-# MODULE 1 - 006: 🤔 	**Is Writing Bad Code Immoral for Developers?**
+# 01-006\_The\_Bad-Coding\_immorality
 
-This guide discusses a slightly odd question: 
+## MODULE 1 - 006: 🤔 **Is Writing Bad Code Immoral for Developers?**
 
-	>“Is writing bad code immoral?”*
- 
-It leads us to the concept of the importance of developing **well-written code**.
----
+This guide discusses a slightly odd question:
 
-## But ..🧐 the question stills overwhelm: *Is Writing Bad Code Immoral?*
+```
+>“Is writing bad code immoral?”*
+```
 
-This may seem like a weird question to ask because the mindset of most developers is that code projects are neither **moral** nor **immoral**.  
-They are simply **programming files** that perform various functionalities.  
+### It leads us to the concept of the importance of developing **well-written code**.
 
-I would like to think that most developers take pride in their work and therefore want to write code that adheres to **best practices**.  
-However, given **schedule** and **budget constraints**, many projects devolve, with the top goal becoming "to simply work",  and being completed as soon as humanly possible.
+### But ..🧐 the question stills overwhelm: _Is Writing Bad Code Immoral?_
 
-But, this mindset can lead to:  
-- **Missing edge cases** for features 
-- **Poorly organized codebases** that are difficult to maintain 
+This may seem like a weird question to ask because the mindset of most developers is that code projects are neither **moral** nor **immoral**.\
+They are simply **programming files** that perform various functionalities.
 
----
+I would like to think that most developers take pride in their work and therefore want to write code that adheres to **best practices**.\
+However, given **schedule** and **budget constraints**, many projects devolve, with the top goal becoming "to simply work", and being completed as soon as humanly possible.
 
-## 📖 **A Story Behind this Question**
+But, this mindset can lead to:
 
-Regarding the question of "Is writing bad code immoral?", I heard a great story from one of my *Computer Science professors* at Texas Tech, Dr. Michael Gelfond.  
-This is where I got the idea to write this post.  
+* **Missing edge cases** for features
+* **Poorly organized codebases** that are difficult to maintain
 
-### **The Story**:
-A few decades ago, Dr. Gelfond was working as a programmer for a software organization when he ran into a **nasty code bug**.  
-It took him **several days** to figure out that the previous developer had built a **poorly constructed function**, causing the module he was working on to break.  
+***
 
-After telling us this story, Dr. Gelfond posed the question again:  
-**“Is writing bad code immoral?”**  
-Most of the class answered **no**.  
+### 📖 **A Story Behind this Question**
+
+Regarding the question of "Is writing bad code immoral?", I heard a great story from one of my _Computer Science professors_ at Texas Tech, Dr. Michael Gelfond.\
+This is where I got the idea to write this post.
+
+#### **The Story**:
+
+A few decades ago, Dr. Gelfond was working as a programmer for a software organization when he ran into a **nasty code bug**.\
+It took him **several days** to figure out that the previous developer had built a **poorly constructed function**, causing the module he was working on to break.
+
+After telling us this story, Dr. Gelfond posed the question again:\
+&#xNAN;**“Is writing bad code immoral?”**\
+Most of the class answered **no**.\
 Then, he asked:
 
 > **"If we murder someone a few days before they were going to die, is that immoral?"**
 
 The answer was unanimous: **yes**.
 
-He finished his lecture by saying:  
+He finished his lecture by saying:
+
 > **“Well, wasn’t it immoral that the last developer’s code stole two days away from my life?”**
 
----
+***
 
-## 💡 **My Answer: Absolutely Yes!**
+### 💡 **My Answer: Absolutely Yes!**
 
-That story has stuck with me for years.  
-Now, my answer to the question **“Is writing bad code immoral?”** is a **resounding yes**!  
+That story has stuck with me for years.\
+Now, my answer to the question **“Is writing bad code immoral?”** is a **resounding yes**!
 
-As developers, we should take **pride** in the work we produce. Not just for our **clients’** or **employers’ interests**, but simply because our goal should be to be **true craftsmen** in everything we do.  
+As developers, we should take **pride** in the work we produce. Not just for our **clients’** or **employers’ interests**, but simply because our goal should be to be **true craftsmen** in everything we do.
 
-**Coding is the closest thing we have to magic** in this world, and I feel **honored** to be able to work with it on a daily basis, along with teaching others how to do the same.  
+**Coding is the closest thing we have to magic** in this world, and I feel **honored** to be able to work with it on a daily basis, along with teaching others how to do the same.
 
-With that in mind, it should motivate us to have a clearly defined goal of being **excellent** at our craft.
----
+### With that in mind, it should motivate us to have a clearly defined goal of being **excellent** at our craft.
 
-## ⚾ **Joe DiMaggio’s Wisdom for Developers**
+### ⚾ **Joe DiMaggio’s Wisdom for Developers**
 
-One of my all-time favorite baseball players, **Joe DiMaggio**, said:  
-> *“There is always some kid who may be seeing me for the first time. I owe him my best.”*
+One of my all-time favorite baseball players, **Joe DiMaggio**, said:
 
-I try to apply this in all of the code projects I do.  
-It’s easy to fall into **lazy habits**, but I remind myself that **someone might be looking** at this project for the first time, and it could be the **first impression** they have about me as a developer.  
+> _“There is always some kid who may be seeing me for the first time. I owe him my best.”_
 
-If I take shortcuts—even if the application works—it could reflect **badly on my work**.  
----
+I try to apply this in all of the code projects I do.\
+It’s easy to fall into **lazy habits**, but I remind myself that **someone might be looking** at this project for the first time, and it could be the **first impression** they have about me as a developer.
 
-## 🔄 **Mistakes Are Part of Growth**
+### If I take shortcuts—even if the application works—it could reflect **badly on my work**.
 
-This doesn’t mean that you can’t make **mistakes**. Quite the opposite, actually!  
-I’m constantly striving to become a **better developer**. This means I’m always trying to work on building **features** and **projects** that I haven’t created before.  
+### 🔄 **Mistakes Are Part of Growth**
 
-This naturally leads to **mistakes** during the learning process.  
+This doesn’t mean that you can’t make **mistakes**. Quite the opposite, actually!\
+I’m constantly striving to become a **better developer**. This means I’m always trying to work on building **features** and **projects** that I haven’t created before.
+
+This naturally leads to **mistakes** during the learning process.
 
 However, there is a **clear distinction** between:
-- 💡💡💡 Mistakes made while trying to build an **ambitious feature** 
--  ❌ ❌ ❌ **Project bugs** due to laziness and poorly written code.
 
----
+* 💡💡💡 Mistakes made while trying to build an **ambitious feature**
+* ❌ ❌ ❌ **Project bugs** due to laziness and poorly written code.
 
-# 🛠️ **How to Write Better Code**
+***
 
-So, if writing bad code is immoral, what can we do to combat it?  
+## 🛠️ **How to Write Better Code**
+
+So, if writing bad code is immoral, what can we do to combat it?\
 Thankfully, we have a nice set of tools and workflows to help. Here are a few of the ones that I’ve found to be the most effective:
 
----
+***
 
-### 1. **TDD/BDD** *(Test Driven Development / Behavior Driven Development)*  
+#### 1. **TDD/BDD** _(Test Driven Development / Behavior Driven Development)_
 
-Regardless of your thoughts on TDD/BDD, there’s no denying that when implemented properly, it leads to a **well-constructed codebase**.  
+Regardless of your thoughts on TDD/BDD, there’s no denying that when implemented properly, it leads to a **well-constructed codebase**.
 
-- TDD encourages **low coupling** and **small methods**.
-- The **refactoring** step ensures that an application is built the **right way**.  
+* TDD encourages **low coupling** and **small methods**.
+* The **refactoring** step ensures that an application is built the **right way**.
 
 I’m a huge fan of TDD to help with building quality code.
 
----
+***
 
-### 2. **Continuous Integration**
+#### 2. **Continuous Integration**
 
 With a **comprehensive automated test suite**, continuous integration tools such as **CodeShip** or **Travis** ensure that code won’t be pushed to production until it’s passed the full test suite. 🛡️
 
-I’ve had several occasions where **CodeShip blocked a bad deploy** that would’ve taken down a site.  
+I’ve had several occasions where **CodeShip blocked a bad deploy** that would’ve taken down a site.\
 Additionally, it provides a **report** to the development team on what needs fixing.
 
----
+***
 
-### 3. **Pair Programming**
+#### 3. **Pair Programming**
 
-This is one of the most powerful tools you can use as a developer.  
-**Pair programming** is when you and another developer take turns working on the same project at the same time—preferably in the same room and on the same computer.  
+This is one of the most powerful tools you can use as a developer.\
+**Pair programming** is when you and another developer take turns working on the same project at the same time—preferably in the same room and on the same computer.
 
 Whenever I’m building a **complex feature**, I always use **pair programming** since it’s like having **two brains** working on the same function. 🧠🧠
 
----
+***
 
-### 4. **Continuing Education**
+#### 4. **Continuing Education**
 
-No matter how long you’ve been a developer, **learning never stops**.  
-Each day I try to learn something new—whether it’s from **tutorials**, **books**, or **blogs**.  
+No matter how long you’ve been a developer, **learning never stops**.\
+Each day I try to learn something new—whether it’s from **tutorials**, **books**, or **blogs**.
 
 The key is to keep **growing** and always stay curious. 📚
 
----
-
+***
 
 I hope this post has been **thought-provoking** and will help you on your journey toward becoming a **code craftsman**.
 
 ***
-# Video Lesson Speech
-[ENG]
-```text
+
+## Video Lesson Speech
+
+\[ENG]
+
+```
 # Is Writing Bad Code Immoral for Developers?
 This guide discusses a slightly odd question: “is writing bad code immoral?” Which leads to the concept of the importance of developing well written code.  
 ***
@@ -180,9 +188,12 @@ When one of you is coding, the other developer is watching and giving advice or 
 
 I hope that this has been a thought-provoking post and will help you on your journey towards becoming a code craftsman.
 ```
+
 ***
-[SPA]
-```text
+
+\[SPA]
+
+```
 # ¿Es Inmoral Escribir Mal Código?
 
 Este artículo explora una pregunta un tanto inusual: "¿Es inmoral escribir código mal hecho?". Esto nos lleva a reflexionar sobre la importancia de desarrollar código bien escrito.

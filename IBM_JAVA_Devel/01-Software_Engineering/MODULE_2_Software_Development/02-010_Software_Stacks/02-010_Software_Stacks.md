@@ -1,20 +1,18 @@
 # 02-010: Software Stacks
 
-![](./02-010_IMG1.png)
-![](./02-010_IMG10.png)
+![](../../../../.gitbook/assets/02-010_IMG1.png) ![](../../../../.gitbook/assets/02-010_IMG10.png)
 
-
----
+***
 
 ## What is a software stack?
 
-A **software stack** is a structured set of software components that together enable an application to be developed, executed and maintained.  
+A **software stack** is a structured set of software components that together enable an application to be developed, executed and maintained.
 
-Components are arranged in layers; higher layers provide user-facing features, while lower layers manage data, system resources and interactions with hardware.   
+Components are arranged in layers; higher layers provide user-facing features, while lower layers manage data, system resources and interactions with hardware.
 
 When the definition expands to include hardware and infrastructure (load balancers, virtual machines, storage), the expression **technology stack** is used.
 
----
+***
 
 ## Parts of a software stack
 
@@ -36,30 +34,21 @@ When the definition expands to include hardware and infrastructure (load balance
 
 No formal structure exists; only requirement is that software and services support application development, functionality, or deployment. Not all available layers require use—only those relevant to solutions. Components originate from internal resources, third-party providers, or cloud providers.
 
-![](./02-010_IMG3.png)
+![](../../../../.gitbook/assets/02-010_IMG3.png)
 
 ### Presentation layer (Top)
 
-**Purpose:** Deliver the application’s interface and user experience.
-**Contains:** HTML/CSS/JavaScript, single-page application frameworks, native mobile UI frameworks, templates, accessibility aids.
-**Responsibilities:** Rendering, client-side validation and state, responsive layout, accessibility, user interaction patterns and local caching (where applicable).
-**When to focus here:** If user experience, performance perceived by users (time-to-interact) and accessibility are primary goals.
+**Purpose:** Deliver the application’s interface and user experience. **Contains:** HTML/CSS/JavaScript, single-page application frameworks, native mobile UI frameworks, templates, accessibility aids. **Responsibilities:** Rendering, client-side validation and state, responsive layout, accessibility, user interaction patterns and local caching (where applicable). **When to focus here:** If user experience, performance perceived by users (time-to-interact) and accessibility are primary goals.
 
 ### Logic layer (Business logic / Middle)
 
-**Purpose:** Implement application rules and orchestrate behaviour.
-**Contains:** Back-end services, APIs, controllers, domain models, service layers, task queues and integration adapters.
-**Responsibilities:** Validation, business rules, coordinating reads/writes to the data layer, orchestrating third-party services and exposing APIs (REST/GraphQL/gRPC).
-**When to focus here:** When domain complexity, reuse of logic across clients, or integration with multiple systems is required.
+**Purpose:** Implement application rules and orchestrate behaviour. **Contains:** Back-end services, APIs, controllers, domain models, service layers, task queues and integration adapters. **Responsibilities:** Validation, business rules, coordinating reads/writes to the data layer, orchestrating third-party services and exposing APIs (REST/GraphQL/gRPC). **When to focus here:** When domain complexity, reuse of logic across clients, or integration with multiple systems is required.
 
 ### Data layer (Bottom)
 
-**Purpose:** Persist and manage application state and supporting data.
-**Contains:** Relational or document databases, caches, search engines, object stores and data pipelines.
-**Responsibilities:** Data modelling, queries, indexing, transactions, backups, replication, access control and performance tuning.
-**When to focus here:** When durability, consistency, analytics or complex querying are required.
+**Purpose:** Persist and manage application state and supporting data. **Contains:** Relational or document databases, caches, search engines, object stores and data pipelines. **Responsibilities:** Data modelling, queries, indexing, transactions, backups, replication, access control and performance tuning. **When to focus here:** When durability, consistency, analytics or complex querying are required.
 
----
+***
 
 ## Supporting infrastructure layers (optional)
 
@@ -67,23 +56,17 @@ These layers are commonly added beneath the data tier for scale, security and op
 
 ### Security (cross-cutting)
 
-**Role:** Applies across every layer.
-**Includes:** Authentication, authorisation, encryption, secrets management, network policies and monitoring for intrusion and misuse.
-**Focus areas:** Least privilege, secure defaults, data protection (at rest and in transit) and compliance.
+**Role:** Applies across every layer. **Includes:** Authentication, authorisation, encryption, secrets management, network policies and monitoring for intrusion and misuse. **Focus areas:** Least privilege, secure defaults, data protection (at rest and in transit) and compliance.
 
 ### Virtualisation / Runtime abstraction
 
-**Role:** Abstracts physical hardware to provide isolation and portability.
-**Includes:** VMs, container runtimes and hypervisors.
-**Benefits:** Resource isolation, portability and environment reproducibility.
+**Role:** Abstracts physical hardware to provide isolation and portability. **Includes:** VMs, container runtimes and hypervisors. **Benefits:** Resource isolation, portability and environment reproducibility.
 
 ### Orchestration
 
-**Role:** Automates deployment, scaling and lifecycle management for services.
-**Includes:** Scheduling, service discovery, rolling updates and self-healing mechanisms.
-**Technologies:** Kubernetes, Nomad, Docker Swarm.
+**Role:** Automates deployment, scaling and lifecycle management for services. **Includes:** Scheduling, service discovery, rolling updates and self-healing mechanisms. **Technologies:** Kubernetes, Nomad, Docker Swarm.
 
----
+***
 
 ## Where components come from
 
@@ -93,86 +76,72 @@ These layers are commonly added beneath the data tier for scale, security and op
 
 Mixing sources is normal; managed services reduce operational effort at the cost of vendor lock-in and ongoing costs.
 
----
+***
 
 ## Common software stacks — descriptions and typical uses
 
-
 ### LAMP (Linux, Apache, MySQL, PHP/Perl/Python)
-![](./02-010_IMG5.png)
-**or...**  
-![](./02-010_IMG6.png)
+
+![](../../../../.gitbook/assets/02-010_IMG5.png) **or...**\
+![](../../../../.gitbook/assets/02-010_IMG6.png)
 
 A traditional stack for web applications running on a Linux server with Apache, a relational DB, and dynamic server-side scripting.
 
-**Best for:** Classic web apps, content management systems, projects that benefit from mature tooling and wide hosting support.  
+**Best for:** Classic web apps, content management systems, projects that benefit from mature tooling and wide hosting support.
 
-**Pros:** Vast community support, stable, easy to host and maintain; clear separation of concerns.  
+**Pros:** Vast community support, stable, easy to host and maintain; clear separation of concerns.
 
 **Cons:** Heterogeneous languages between front/back ends; relational DB focus makes unstructured data less natural; less platform-agnostic.
 
----
+***
 
 ### MEAN (MongoDB, Express, Angular, Node.js)
-![](./02-010_IMG7.png)
 
+![](../../../../.gitbook/assets/02-010_IMG7.png)
 
+Full-JavaScript stack using a document-oriented database and Angular for the front-end.
 
-Full-JavaScript stack using a document-oriented database and Angular for the front-end.  
+**Best for:** Rapid development where JavaScript end-to-end accelerates development and team skills align to JS.
 
-**Best for:** Rapid development where JavaScript end-to-end accelerates development and team skills align to JS.  
-
-**Pros:** Single language across stack; rich Node.js ecosystem.  
+**Pros:** Single language across stack; rich Node.js ecosystem.
 
 **Cons:** Not ideal for complex relational data; Express-based monolith services can hinder reusability in large systems.
 
----
+***
 
 ### MERN (MongoDB, Express, React, Node.js)
-![](./02-010_IMG8.png)
+
+![](../../../../.gitbook/assets/02-010_IMG8.png)
 
 Similar to MEAN but React replaces Angular, emphasising component-driven UI.
 
-**Best for:** High-performing, interactive front-ends with a JavaScript-centric backend.  
+**Best for:** High-performing, interactive front-ends with a JavaScript-centric backend.
 
-**Pros:** React’s ecosystem and component model; flexibility for server-side rendering or client-only apps.  
+**Pros:** React’s ecosystem and component model; flexibility for server-side rendering or client-only apps.
 
 **Cons:** Still document-db centric; front/back skillset remains JavaScript.
 
-
 ### MEVN (MongoDB, Express, Vue, Node.js)
 
-**Overview:** Like MEAN/MERN but Vue.js provides a lightweight front-end framework.
-**Best for:** Teams valuing a gentler learning curve and smaller framework footprint.
-**Pros:** Fast initial performance and easier onboarding for smaller teams.
-**Cons:** Fewer mature, enterprise-grade libraries than Angular.
+**Overview:** Like MEAN/MERN but Vue.js provides a lightweight front-end framework. **Best for:** Teams valuing a gentler learning curve and smaller framework footprint. **Pros:** Fast initial performance and easier onboarding for smaller teams. **Cons:** Fewer mature, enterprise-grade libraries than Angular.
 
 ### Python–Django
 
-**Overview:** Python with the Django web framework, batteries-included approach with ORM, admin interface, and conventions.
-**Best for:** Rapidly-changing, large-scale web apps; data-heavy applications where Python’s ecosystem is valuable.
-**Pros:** Strong conventions, excellent libraries, good for team productivity.
-**Cons:** Opinionated structure may feel limiting for bespoke architectures.
+**Overview:** Python with the Django web framework, batteries-included approach with ORM, admin interface, and conventions. **Best for:** Rapidly-changing, large-scale web apps; data-heavy applications where Python’s ecosystem is valuable. **Pros:** Strong conventions, excellent libraries, good for team productivity. **Cons:** Opinionated structure may feel limiting for bespoke architectures.
 
 ### Ruby on Rails
 
-**Overview:** Opinionated full-stack framework with strong conventions, emphasising developer happiness and rapid development.
-**Best for:** Startups and projects where rapid prototyping is critical.
-**Pros:** Productivity and convention-over-configuration; efficient use of JSON/XML for APIs.
-**Cons:** Performance and scaling considerations for certain workloads; smaller ecosystem than JavaScript or Python in some areas.
+**Overview:** Opinionated full-stack framework with strong conventions, emphasising developer happiness and rapid development. **Best for:** Startups and projects where rapid prototyping is critical. **Pros:** Productivity and convention-over-configuration; efficient use of JSON/XML for APIs. **Cons:** Performance and scaling considerations for certain workloads; smaller ecosystem than JavaScript or Python in some areas.
 
 ### ASP.NET (Microsoft stack)
 
-**Overview:** Microsoft stack with ASP.NET MVC, IIS, SQL Server and Azure services.
-**Best for:** Enterprise environments, Windows-centric infrastructures or where tight integration with Microsoft products is desired.
-**Pros:** Enterprise-grade tooling, good Windows integration and Azure-managed services.
-**Cons:** Historically more proprietary; licensing and platform choices may be limiting for some organisations.
+**Overview:** Microsoft stack with ASP.NET MVC, IIS, SQL Server and Azure services. **Best for:** Enterprise environments, Windows-centric infrastructures or where tight integration with Microsoft products is desired. **Pros:** Enterprise-grade tooling, good Windows integration and Azure-managed services. **Cons:** Historically more proprietary; licensing and platform choices may be limiting for some organisations.
 
----
+***
 
 ## Comparative analysis — practical trade-offs
 
-![](./02-010_IMG9.png)
+![](../../../../.gitbook/assets/02-010_IMG9.png)
 
 When comparing stacks consider:
 
@@ -182,7 +151,7 @@ When comparing stacks consider:
 * **Scalability pattern:** Some stacks and components scale horizontally easily (microservices + containers), others rely on vertical scaling or complex partitioning.
 * **Operational effort and cost:** Managed cloud services reduce ops work; self-hosting increases control but requires investment in DevOps.
 
----
+***
 
 ## Advantages and disadvantages (summary)
 
@@ -206,7 +175,7 @@ When comparing stacks consider:
 * Advantages: Enterprise tooling, integration with Microsoft ecosystem.
 * Disadvantages: Perceived vendor lock-in and licensing complexity in some cases.
 
----
+***
 
 ## How stacks evolve in practice
 
@@ -218,7 +187,7 @@ Teams typically start with a simpler three-tier stack and then:
 4. Add observability (metrics, tracing, logging) and CI/CD pipelines.
 5. Replace or augment components (e.g., move from MySQL to a managed cloud DB or add search with Elasticsearch).
 
----
+***
 
 ## Choosing a stack
 
@@ -228,16 +197,7 @@ Teams typically start with a simpler three-tier stack and then:
 * What is the expected growth and how will you scale?
 * What is the budget for managed services vs in-house operations?
 
-
-
-
-
-
-
-
-
-
----
+***
 
 ## Video Lesson
 

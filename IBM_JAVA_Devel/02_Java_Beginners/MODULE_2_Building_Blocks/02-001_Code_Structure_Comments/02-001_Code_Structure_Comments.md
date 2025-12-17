@@ -1,13 +1,12 @@
 # 02-001 Java Code Structure and Comments
 
-![](./02-001_IMG15.png)
-![](./02-001_IMG16.png)
+![](../../../../.gitbook/assets/02-001_IMG15.png) ![](../../../../.gitbook/assets/02-001_IMG16.png)
 
 ## Comments in Java
 
-Comments are notes in the code that are not executed by the program.   
+Comments are notes in the code that are not executed by the program.
 
-They are meant for developers to explain, clarify, or annotate parts of the code.   
+They are meant for developers to explain, clarify, or annotate parts of the code.
 
 Using comments is a good practice as it helps you and others to understand your code better when revisiting it later.
 
@@ -15,9 +14,9 @@ Using comments is a good practice as it helps you and others to understand your 
 
 #### Single-Line Comments
 
-![](./02-001_IMG1.png)
+![](../../../../.gitbook/assets/02-001_IMG1.png)
 
-Single-line comments start with **two forward slash marks** (`//`).   
+Single-line comments start with **two forward slash marks** (`//`).\
 Everything that follows on that line is treated as a comment.
 
 ```java
@@ -27,9 +26,9 @@ int number = 10; // This variable stores the number 10
 
 #### Multi-Line Comments
 
-![](./02-001_IMG2.png)
+![](<../../../../.gitbook/assets/02-001_IMG2 (1).png>)
 
-Multi-line comments start with a **forward slash and an asterisk** (`/*`) and end with **an asterisk and a forward slash** (`*/`).   
+Multi-line comments start with a **forward slash and an asterisk** (`/*`) and end with **an asterisk and a forward slash** (`*/`).\
 They can span multiple lines.
 
 ```java
@@ -43,12 +42,11 @@ int sum = 0; /* This variable will hold
 
 #### Documentation Comments
 
-![](./02-001_IMG3.png)
+![](../../../../.gitbook/assets/02-001_IMG3.png)
 
-Documentation comments are used to generate documentation using tools like **Javadoc**.   
+Documentation comments are used to generate documentation using tools like **Javadoc**.
 
 They start with a **forward slash followed by two asterisks** (`/**`).
-
 
 ```java
 /**
@@ -60,29 +58,26 @@ They start with a **forward slash followed by two asterisks** (`/**`).
 
 ### Why Use Comments?
 
-![](./02-001_IMG4.png)
+![](../../../../.gitbook/assets/02-001_IMG4.png)
 
--   **Clarity:** Explain complex logic, making it easier for others to understand the content.
+* **Clarity:** Explain complex logic, making it easier for others to understand the content.
+* **Maintenance:** Aid understanding by providing context and reducing confusion when revisiting code.
+* **Collaboration:** Enable team members to better understand each other's work in team environments.
 
--   **Maintenance:** Aid understanding by providing context and reducing confusion when revisiting code.
-
--   **Collaboration:** Enable team members to better understand each other's work in team environments.
-
----
+***
 
 ## Packages in Java
 
-![](./02-001_IMG5.png)
+![](../../../../.gitbook/assets/02-001_IMG5.png)
 
-Packages are used to **group related classes and interfaces together**.  
-They help avoid naming conflicts and make it easier to manage large projects.  
+Packages are used to **group related classes and interfaces together**.\
+They help avoid naming conflicts and make it easier to manage large projects.
 
 The place where you "content" anything related to your application, or module/submodule.
 
-
 ### Creating a Package
 
-![](./02-001_IMG6.png)
+![](../../../../.gitbook/assets/02-001_IMG6.png)
 
 To create a package, use the **`package`** keyword at the top of your Java source file:
 
@@ -98,7 +93,7 @@ public class MyClass {
 
 ### Package File Structure
 
-![](./02-001_IMG7.png)
+![](../../../../.gitbook/assets/02-001_IMG7.png)
 
 The folder structure of your file system should **match the package declaration**:
 
@@ -114,17 +109,15 @@ Each part of the package name corresponds to a folder.
 
 Traditionally, the convention was com.organisationname.appname, where:
 
--   `com`:  Denoted a commercial organisation or enterprise.
-
--   `organisationname`: Represented the registered name of the organisation.
-
--   `appname`: Indicated the application’s name.
+* `com`: Denoted a commercial organisation or enterprise.
+* `organisationname`: Represented the registered name of the organisation.
+* `appname`: Indicated the application’s name.
 
 Today, it remains a good practice to include an "identifier" that reflects the developer, team, organisation, or enterprise name for clarity and ownership.
 
----
+***
 
-![](./02-001_IMG8.png)
+![](../../../../.gitbook/assets/02-001_IMG8.png)
 
 ## Source Files and Naming Conventions
 
@@ -148,38 +141,35 @@ public class Book {
 
 ### Casing
 
-| Java Element | Naming Convention | Case Style | Example(s) |
-|---------------|-------------------|-------------|-------------|
-| **Classes** | Nouns starting with a capital letter. | PascalCase (Upper CamelCase) | `User`, `DataInputStream`, `BankAccount` |
-| **Interfaces** | Nouns or adjectives starting with a capital letter. | PascalCase | `Runnable`, `Serializable`, `Processable` |
-| **Objects (Class Instances)** | Follow the same convention as variables. | lowerCamelCase | `myObject`, `userList` |
-| **Variables (Local & Instance)** | Meaningful names starting with a lowercase letter. | lowerCamelCase | `counter`, `userName`, `currentSpeed` |
-| **Methods (Functions)** | Verbs or verb phrases starting with a lowercase letter. | lowerCamelCase | `calculateTotal()`, `getName()`, `isEmpty()` |
-| **Constants (static final)** | Uppercase letters, words separated by underscores. | SCREAMING_SNAKE_CASE | `MAX_VALUE`, `PI`, `BUFFER_SIZE` |
-| **Packages** | Lowercase words separated by dots. | lowercase (with dots) | `com.company.project` |
+| Java Element                     | Naming Convention                                       | Case Style                   | Example(s)                                   |
+| -------------------------------- | ------------------------------------------------------- | ---------------------------- | -------------------------------------------- |
+| **Classes**                      | Nouns starting with a capital letter.                   | PascalCase (Upper CamelCase) | `User`, `DataInputStream`, `BankAccount`     |
+| **Interfaces**                   | Nouns or adjectives starting with a capital letter.     | PascalCase                   | `Runnable`, `Serializable`, `Processable`    |
+| **Objects (Class Instances)**    | Follow the same convention as variables.                | lowerCamelCase               | `myObject`, `userList`                       |
+| **Variables (Local & Instance)** | Meaningful names starting with a lowercase letter.      | lowerCamelCase               | `counter`, `userName`, `currentSpeed`        |
+| **Methods (Functions)**          | Verbs or verb phrases starting with a lowercase letter. | lowerCamelCase               | `calculateTotal()`, `getName()`, `isEmpty()` |
+| **Constants (static final)**     | Uppercase letters, words separated by underscores.      | SCREAMING\_SNAKE\_CASE       | `MAX_VALUE`, `PI`, `BUFFER_SIZE`             |
+| **Packages**                     | Lowercase words separated by dots.                      | lowercase (with dots)        | `com.company.project`                        |
 
-
-
----
+***
 
 ## Classes and Methods
 
-![](./02-001_IMG9.png)
+![](../../../../.gitbook/assets/02-001_IMG9.png)
 
-In Java, **everything is organised into classes**.  
+In Java, **everything is organised into classes**.\
 A class is a **blueprint for creating objects** and can contain methods or functions that define behaviours.
 
->   **Example:** In a shopping application, you might have a `Product` class with methods like `calculatePrice()` or `applyDiscount()`.
-
+> **Example:** In a shopping application, you might have a `Product` class with methods like `calculatePrice()` or `applyDiscount()`.
 
 ### Method Naming Conventions
 
-![](./02-001_IMG10.png)
+![](../../../../.gitbook/assets/02-001_IMG10.png)
 
 Methods should have descriptive names and follow a consistent naming convention. **camelCase** is commonly used, where:
 
-- The first word is lowercase
-- Subsequent words start with an uppercase letter
+* The first word is lowercase
+* Subsequent words start with an uppercase letter
 
 ```java
 public class Book {
@@ -196,11 +186,11 @@ public class Book {
 }
 ```
 
----
+***
 
 ## The Main Method / Entry Point
 
-![](./02-001_IMG11.png)
+![](../../../../.gitbook/assets/02-001_IMG11.png)
 
 Every Java application needs an **entry point**, which is typically a **`main` method** within a public class.
 
@@ -225,15 +215,15 @@ public class Library {
 
 The code above:
 
-1.  Creates a new `Library` object
-2.  Adds books to the library
-3.  Displays all books in the library
+1. Creates a new `Library` object
+2. Adds books to the library
+3. Displays all books in the library
 
----
+***
 
 ## Import Statements
 
-![](./02-001_IMG12.png)
+![](../../../../.gitbook/assets/02-001_IMG12.png)
 
 When you need to use classes from other packages, import them at the **top of your source file**:
 
@@ -251,46 +241,45 @@ public class Library {
 }
 ```
 
----
+***
 
 ## Best Practices for Beginners
 
-![](./02-001_IMG13.png)
-![](./02-001_IMG14.png)
+![](../../../../.gitbook/assets/02-001_IMG13.png) ![](../../../../.gitbook/assets/02-001_IMG14.png)
 
 ### 1. Use Meaningful and Descriptive Names
 
--   Choose names that are immediately understandable
--   `Customer` is clearer than `C1`
--   Makes it easier for anyone reading your code to understand its purpose
+* Choose names that are immediately understandable
+* `Customer` is clearer than `C1`
+* Makes it easier for anyone reading your code to understand its purpose
 
 ### 2. Keep Your Code Organised
 
--   Manage a logical structure in your codebase
--   Group related classes into packages
--   Keep your folder structure intuitive
--   Create separate folders for different modules (e.g., authentication, product management)
+* Manage a logical structure in your codebase
+* Group related classes into packages
+* Keep your folder structure intuitive
+* Create separate folders for different modules (e.g., authentication, product management)
 
 ### 3. Comment Generously But Wisely
 
--   Explain **why** certain decisions were made, especially if not immediately obvious
--   Avoid stating the obvious
-    * WRONG ->      `// Increment i by one`
-    * **BETTER** ->     `i++`
-- Provide context rather than repeating what the code already shows
+* Explain **why** certain decisions were made, especially if not immediately obvious
+* Avoid stating the obvious
+  * WRONG -> `// Increment i by one`
+  * **BETTER** -> `i++`
+* Provide context rather than repeating what the code already shows
 
 ### 4. Adhere to Consistent Formatting
 
--   Use consistent indentation, spacing, and braces placement throughout
--   Most coding environments have settings to enforce consistent formatting automatically
+* Use consistent indentation, spacing, and braces placement throughout
+* Most coding environments have settings to enforce consistent formatting automatically
 
 ### 5. Follow the Flow of Code Execution
 
--   Code execution in Java follows a **top-to-bottom approach** within methods
--   The JVM starts executing from the **`main` method** of the class specified as the entry point
--   Understanding this flow helps structure your methods logically
+* Code execution in Java follows a **top-to-bottom approach** within methods
+* The JVM starts executing from the **`main` method** of the class specified as the entry point
+* Understanding this flow helps structure your methods logically
 
----
+***
 
 ## Lesson Speech
 

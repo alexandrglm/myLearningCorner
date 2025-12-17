@@ -1,119 +1,112 @@
 # 01-007: SDLC - Building Quality Software (QA)
 
-![](./01-007_IMG1.png)
+![](<../../../../.gitbook/assets/01-007_IMG1 (1).png>)
 
-![](./01-007_IMG12.png)
+![](../../../../.gitbook/assets/01-007_IMG12.png)
 
-Building high-quality software requires adherence to **SIX common software engineering processes**: 
+Building high-quality software requires adherence to **SIX common software engineering processes**:
 
-![](./01-007_IMG2.png)
+![](<../../../../.gitbook/assets/01-007_IMG2 (1).png>)
 
-1.  Requirements gathering
-2.  Design
-3.  Coding for Quality
-4.  Testing
-5.  Releasing
-6.  Documenting
+1. Requirements gathering
+2. Design
+3. Coding for Quality
+4. Testing
+5. Releasing
+6. Documenting
 
+***
 
----
+### 1. Requirements Gathering (SRS) Stage
 
-### 1.  Requirements Gathering (SRS) Stage
+The **Software Requirements Specification (SRS)** encompasses collecting and documenting the set of requirements the software must adhere to.
 
-The **Software Requirements Specification (SRS)** encompasses collecting and documenting the set of requirements the software must adhere to.  
+It may include use cases describing business needs and user flows.
 
-It may include use cases describing business needs and user flows.  
+![](<../../../../.gitbook/assets/01-007_IMG3 (1).png>)
 
-![](./01-007_IMG3.png)
+Software requirements are classified into four broad categories:
 
-Software requirements are classified into four broad categories: 
+![](<../../../../.gitbook/assets/01-007_IMG4 (1).png>)
 
-![](./01-007_IMG4.png)
+1. **Functional**
+2. **External and User Interface (UI)**
+3. **System Features**
+4. **Non-Functional**
 
-1.  **Functional**
-2.  **External and User Interface (UI)**
-3.  **System Features**
-4.  **Non-Functional**
+***
 
----
+### 2. Design Stage
 
-### 2.  Design Stage
+Software design transforms requirements into an implementable structure, translating them into a language developers can use.
 
-Software design transforms requirements into an implementable structure, translating them into a language developers can use.  
-
-The technical lead breaks down requirements into related components with clearly defined behaviours, boundaries, and interactions, defining the system architecture.   
+The technical lead breaks down requirements into related components with clearly defined behaviours, boundaries, and interactions, defining the system architecture.
 
 Design incorporates guidance on system functions, performance, security, platform characteristics, business rules, application logic, **API (Application Programming Interface)** design, user interfaces, and database design.
 
-![](./01-007_IMG5.png)
+![](<../../../../.gitbook/assets/01-007_IMG5 (1).png>)
 
----
+***
 
-### 3.  Code Quality Stage
+### 3. Code Quality Stage
 
-**Code quality** encompasses attributes including maintainability, readability, testability, and security.  
+**Code quality** encompasses attributes including maintainability, readability, testability, and security.
 
-![](./01-007_IMG6.png)
+![](<../../../../.gitbook/assets/01-007_IMG6 (1).png>)
 
-Quality code must fulfil intended requirements without defects, be clean and consistent, easy to read and maintain, well documented, and efficient.  
+Quality code must fulfil intended requirements without defects, be clean and consistent, easy to read and maintain, well documented, and efficient.
 
 **Coding for quality** involves following coding standards, conventions, patterns and styles; using **linters** (automated tools) to detect programmatic and stylistic errors; and including code comments for clarity, etc.
 
-![](./01-007_IMG7.png)
+![](<../../../../.gitbook/assets/01-007_IMG7 (1).png>)
 
----
+***
 
-### 4.  Testing Stage
+### 4. Testing Stage
 
 Software testing verifies that code matches established requirements and is free of bugs, identifying errors, gaps, or missing requirements. Properly tested software ensures reliability, security, performance, and efficiency.
 
-![](./01-007_IMG8.png)
+![](../../../../.gitbook/assets/01-007_IMG8.png)
 
 #### **Testing Levels**
 
-- **Unit testing** (smallest isolated code component, often developer-performed)
+* **Unit testing** (smallest isolated code component, often developer-performed)
+* **Integration** (testing integrated components)
+* **System** (full product testing)
+* **User acceptance** (UAT/beta testing by intended end users)
 
-- **Integration** (testing integrated components)
+![](../../../../.gitbook/assets/01-007_IMG9.png)
 
-- **System** (full product testing)
-
-- **User acceptance** (UAT/beta testing by intended end users)
-
-![](./01-007_IMG9.png)
-
-#### **Testing Categories** 
+#### **Testing Categories**
 
 1. **Functional**
-2.  **Non-functional**
-3.  **Regression testing**
+2. **Non-functional**
+3. **Regression testing**
 
----
+***
 
-### 5.  Release Stage
+### 5. Release Stage
 
 Software distributions are called "releases," intended for different audiences:
 
-![](./01-007_IMG10.png)
+![](../../../../.gitbook/assets/01-007_IMG10.png)
 
-- **Alpha**: First functioning version released to select stakeholders; likely contains errors, may lack full feature set, design changes possible
+* **Alpha**: First functioning version released to select stakeholders; likely contains errors, may lack full feature set, design changes possible
+* **Beta** (Limited Release): Released to external stakeholders; tests software under real conditions, identifies outstanding bugs, meets all functional requirements
+* **GA** (General Availability): Released to all users; stable, tested version following beta refinements
 
-- **Beta** (Limited Release): Released to external stakeholders; tests software under real conditions, identifies outstanding bugs, meets all functional requirements
+***
 
-- **GA** (General Availability): Released to all users; stable, tested version following beta refinements
-
----
-
-### 6.  Documentation Stage
+### 6. Documentation Stage
 
 Software documentation serves both technical and non-technical users.
 
-![](./01-007_IMG11.png)
+![](../../../../.gitbook/assets/01-007_IMG11.png)
 
-- **System Documentation** (Technical Users): README files, inline comments, architecture and design documents, verification information, maintenance guides
+* **System Documentation** (Technical Users): README files, inline comments, architecture and design documents, verification information, maintenance guides
+* **User Documentation** (Non-Technical End-Users): User guides, instructional lessons and manuals, online help, inline help
 
-- **User Documentation** (Non-Technical End-Users): User guides, instructional lessons and manuals, online help, inline help
-
----
+***
 
 ## Lesson Speech
 

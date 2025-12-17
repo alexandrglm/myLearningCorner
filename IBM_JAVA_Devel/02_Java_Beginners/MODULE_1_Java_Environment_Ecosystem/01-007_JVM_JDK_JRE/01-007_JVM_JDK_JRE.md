@@ -1,17 +1,16 @@
-# 01-007    JVM, JDK, and JRE Explained
+# 01-007 JVM, JDK, and JRE Explained
 
-![](./01-007_IMG7.png)
+![](../../../../.gitbook/assets/01-007_IMG7.png)
 
----
+***
 
-Java's versatility stems from three crucial components: 
+Java's versatility stems from three crucial components:
 
--   **Java Virtual Machine (JVM)**
--   **Java Development Kit (JDK)**
--   **Java Runtime Environment (JRE)**
+* **Java Virtual Machine (JVM)**
+* **Java Development Kit (JDK)**
+* **Java Runtime Environment (JRE)**
 
-
----
+***
 
 ### Java Virtual Machine (JVM)
 
@@ -19,101 +18,94 @@ Java's versatility stems from three crucial components:
 
 The JVM acts as a translator between humans and machines, **converting Java bytecode into machine code** the operating system comprehends and execites.
 
-
-![](./01-007_IMG1.png)
+![](../../../../.gitbook/assets/01-007_IMG1.png)
 
 **How it works:**
 
-1.  Java programmes are compiled into **Java bytecode** (a platform-independent format)
-2.  The JVM converts bytecode into **machine code** the operating system understands
-3.  This process is called **Just-In-Time (JIT) compilation**
+1. Java programmes are compiled into **Java bytecode** (a platform-independent format)
+2. The JVM converts bytecode into **machine code** the operating system understands
+3. This process is called **Just-In-Time (JIT) compilation**
 
+**Memory management**
 
-##### **Memory management** 
 The JVM manages memory through **garbage collection**, automatically freeing unused memory, preventing memory leaks, and maintaining smooth programme operation.
 
-
----
+***
 
 ### Java Development Kit (JDK)
 
 **The JDK** is an essential software package providing everything needed to build, compile, and run Java applications.
 
-![](./01-007_IMG2.png)
+![](../../../../.gitbook/assets/01-007_IMG2.png)
 
 The JDK is like a complete carpenter's toolbox—just as carpenters use various tools for building furniture, developers use the JDK to create diverse Java applications from simple programmes to complex systems.
 
 #### **JDK Components**
--   **Java Runtime Environment (JRE)** Necessary for executing Java programmes
 
--   **Development tools:** *Javac* compiler, debuggers, and other utilities for Java development
-
--   **Java APIs:** Collections of libraries offering reusable code for common programming tasks
-
+* **Java Runtime Environment (JRE)** Necessary for executing Java programmes
+* **Development tools:** _Javac_ compiler, debuggers, and other utilities for Java development
+* **Java APIs:** Collections of libraries offering reusable code for common programming tasks
 
 #### **JDK Development process**
 
-1.  Java programmes are saved to `.java` files
-2.  Programmes are compiled to bytecode using **Javac compiler**
-3.  Bytecode is executed using the **JVM** (runs on any platform)
+1. Java programmes are saved to `.java` files
+2. Programmes are compiled to bytecode using **Javac compiler**
+3. Bytecode is executed using the **JVM** (runs on any platform)
 
----
+***
 
 ### Java Runtime Environment (JRE)
 
-**The JRE** provides the essential environment for running Java applications.  
-**Does NOT contain development tools** such as compilers.  
+**The JRE** provides the essential environment for running Java applications.\
+**Does NOT contain development tools** such as compilers.
 
-![](./01-007_IMG3.png)
+![](../../../../.gitbook/assets/01-007_IMG3.png)
 
-When running Java applications, the JRE manages class file loading and execution via the JVM. With JRE installed, any Java programmes can run without the full JDK.  
+When running Java applications, the JRE manages class file loading and execution via the JVM. With JRE installed, any Java programmes can run without the full JDK.
 
 So, JRE is like a fully furnished room ready for occupancy. It contains everything needed for comfortable functioning (JVM, libraries), but lacks renovation tools (which exist in the JDK).
 
+#### \*\* JRE Components\*\*
 
-#### ** JRE Components**
-- **Java Virtual Machine (JVM)**
-- **Core libraries**
-- **Other execution components**
+* **Java Virtual Machine (JVM)**
+* **Core libraries**
+* **Other execution components**
 
-
----
+***
 
 ### Relationship Between JVM, JRE, and JDK
 
-![](./01-007_IMG4.png)
+![](../../../../.gitbook/assets/01-007_IMG4.png)
 
-| Component | Purpose | Contains |
-|-----------|---------|----------|
-| **JVM** | Engine executing Java bytecode; converts to machine code | Bytecode interpreter and garbage collection |
-| **JRE** | Environment for running Java applications | JVM + Core libraries (NO development tools) |
-| **JDK** | Complete kit for Java development and execution | JRE + Development tools (Javac, debuggers, utilities) |
+| Component | Purpose                                                  | Contains                                              |
+| --------- | -------------------------------------------------------- | ----------------------------------------------------- |
+| **JVM**   | Engine executing Java bytecode; converts to machine code | Bytecode interpreter and garbage collection           |
+| **JRE**   | Environment for running Java applications                | JVM + Core libraries (NO development tools)           |
+| **JDK**   | Complete kit for Java development and execution          | JRE + Development tools (Javac, debuggers, utilities) |
 
----
+***
 
 ### **Usage scenarios**
 
-![](./01-007_IMG5.png)
+![](../../../../.gitbook/assets/01-007_IMG5.png)
 
--   **JDK:** When developing Java applications (requires all tools for coding, compiling, debugging)
+* **JDK:** When developing Java applications (requires all tools for coding, compiling, debugging)
+* **JRE:** When running Java applications without development (lighter weight, no development tools)
+* **JVM:** Core engine included in both JDK and JRE, executing programmes
 
--   **JRE:** When running Java applications without development (lighter weight, no development tools)
-
--   **JVM:** Core engine included in both JDK and JRE, executing programmes
-
----
+***
 
 ### Current Versions and Updates
 
-![](./01-007_IMG6.png)
+![](../../../../.gitbook/assets/01-007_IMG6.png)
 
-**Latest stable version:** Java 23 (released September 2024)  
+**Latest stable version:** Java 23 (released September 2024)
 
-**Version alignment:** JDK and JRE typically update together, ensuring version compatibility. JVM included in both follows the same version.  
+**Version alignment:** JDK and JRE typically update together, ensuring version compatibility. JVM included in both follows the same version.
 
-**Update schedule:** JVM updates included in quarterly and critical patch updates from Oracle.  
+**Update schedule:** JVM updates included in quarterly and critical patch updates from Oracle.
 
----
+***
 
 ## Lesson Speech
 

@@ -1,82 +1,70 @@
-# 05-091:    Tips and Tricks to Building New Features as a Developer
+# 05-091:    Tips and Tricks to Building New Features as a Developer
 
-****
+***
 
 ### Abstract:
 
 To develop a strategy for building new features, especially when you’re unsure of the full scope or afraid of making mistakes.
 
----
+***
 
 ### 1. **From Requirements to User Stories:**
 
-- Instead of writing static requirements (e.g., "user can register"), write **practical user stories** (e.g., "user logs in, sees her posts, edits them...").
+* Instead of writing static requirements (e.g., "user can register"), write **practical user stories** (e.g., "user logs in, sees her posts, edits them...").
+* User stories help visualize real functionality and reduce the feeling that you're missing something.
 
-- User stories help visualize real functionality and reduce the feeling that you're missing something.
-
----
+***
 
 ### 2. **Start with a Base Case:**
 
-- Break features into **minimal, manageable units**.
+* Break features into **minimal, manageable units**.
+* Example: first, build a form that only allows a title; add description and images later.
+* This avoids being overwhelmed and helps keep development moving.
 
-- Example: first, build a form that only allows a title; add description and images later.
-
-- This avoids being overwhelmed and helps keep development moving.
-
----
+***
 
 ### 3. **Accept You'll Miss Things:**
 
-- It’s okay to **forget parts** of a feature.
+* It’s okay to **forget parts** of a feature.
+* Be flexible — you can always add missing parts later.
 
-- Be flexible — you can always add missing parts later.
+> _Don’t let fear of imperfection paralyze your progress._
 
-> *Don’t let fear of imperfection paralyze your progress.*
-
----
+***
 
 ### 4. **Fighting Procrastination by Thinking Small:**
 
-- Intimidating features (like uploading multiple images) often cause procrastination.
-
-- Break them into **small technical steps**:
-  
+* Intimidating features (like uploading multiple images) often cause procrastination.
+* Break them into **small technical steps**:
   1. Add nested attributes.
-  
   2. Add dynamic JavaScript inputs.
-  
   3. Seed dummy data.
-  
   4. Connect to a storage backend.
 
----
+***
 
 ### 5. **Getting Unstuck (Debugging Tips):**
 
-- When stuck, **isolate** the faulty feature.
+* When stuck, **isolate** the faulty feature.
+* Forget best practices temporarily if needed (e.g., put DB queries in views just to test).
+* Use tools like Rails console and `pry` to troubleshoot efficiently.
 
-- Forget best practices temporarily if needed (e.g., put DB queries in views just to test).
-
-- Use tools like Rails console and `pry` to troubleshoot efficiently.
-
----
+***
 
 ### 6. **Messages Over Models:**
 
-- Great developers focus on **messages passed between objects**, not just on model structures.
+* Great developers focus on **messages passed between objects**, not just on model structures.
+* Behavior-first design leads to more dynamic and flexible code.
 
-- Behavior-first design leads to more dynamic and flexible code.
+> “You don’t send messages because you have objects. You have objects because you send messages.” – _Sandi Metz_
 
-> “You don’t send messages because you have objects. You have objects because you send messages.” – *Sandi Metz*
-
-****
+***
 
 ## Original Guide
 
 This guide will focus on answering the question of 'How to develop a strategy for approaching project/feature development'.
 
-****
+***
 
 I have a special treat for you today. One of my favorite parts of this show is interacting with viewers. And this guide will focus on answering a viewer question regarding strategies for approaching project development.
 
@@ -86,7 +74,7 @@ The following is a letter I received from Christian, a developer from Germany.
 
 > I really would like to hear your advice on how you approach building features on apps, as I have the following problems:
 
-> – I can’t really plan a feature from start to end because I always think I’m missing something important
+> – I can’t really plan a feature from start to end because I always think I’m missing something important\
 > – Procrastination and being afraid to make errors that will be costly to correct in the future
 
 > How do you approach building features when you don’t know the scope exactly?
@@ -117,9 +105,9 @@ One of the statements made was that you don’t feel comfortable planning featur
 
 You probably tried putting together a list of requirements, such as:
 
-- A user should be able to register.
-- Records can only be edited by the user that created the posting.
-- Etc.
+* A user should be able to register.
+* Records can only be edited by the user that created the posting.
+* Etc.
 
 If you take this approach it’s natural to feel like you’re missing a feature, especially if you’re new to development.
 
@@ -159,7 +147,7 @@ I greatly appreciate your candor (which was a huge reason why I decided to give 
 
 One of the top tools I use to battle procrastination is thinking small. We, as developers, naturally tend to push challenging features away. Instead, we like to focus on working with components that we’re already comfortable with. That’s natural for everyone, however, it’s not good. And I have to remind myself of this fact daily.
 
-![small](./05-091_IMG1.png)
+![small](../../../../../../../.gitbook/assets/05-091_IMG1.png)
 
 In his book Deep Work, Cal Newport discusses how deep work (the type of work that takes someone from good to great) is not fun. In fact, when researching top performers, Newport found that 100% of the individuals did not enjoy working on challenging tasks. So when it comes to approaching project development, please understand that the scariest features might be your greatest catalyst for improving as a programmer.
 

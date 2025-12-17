@@ -1,10 +1,12 @@
-# B01 - Module 1, Theory
+# B01\_00\_CPC\_Video\_Modes\_ColourPalettes
 
-## B01_01:    Amstrad CPC Video Modes and Colour Palettes
+## B01 - Module 1, Theory
 
----
+### B01\_01:    Amstrad CPC Video Modes and Colour Palettes
 
-# ## **Video Modes**
+***
+
+## ## **Video Modes**
 
 | **Mode** | **Resolution** | **Simultaneous Colors** | **Description**                                          |
 | -------- | -------------- | ----------------------- | -------------------------------------------------------- |
@@ -13,11 +15,11 @@
 | **2**    | 640x200        | 2                       | High resolution, limited colors.                         |
 | **3**    | 160x200        | 4                       | Undocumented, Low-res, Low-Color, presumibly so high FPS |
 
----
+***
 
-## **Color Palette**
+### **Color Palette**
 
-The Amstrad CPC uses a hardware palette of 27 unique colors, encoded as **hardware values (0-31)**.  
+The Amstrad CPC uses a hardware palette of 27 unique colors, encoded as **hardware values (0-31)**.\
 This is the mapping of **Firmware values**, **Hardware values**, and their **RGB representation**.
 
 | **Firmware** | **Hardware** | **Color**      | **RGB % (R, G, B)** |
@@ -50,10 +52,10 @@ This is the mapping of **Firmware values**, **Hardware values**, and their **RGB
 | 25           | 3 (0x03)     | Pastel Yellow  | 100, 100, 50        |
 | 26           | 11 (0x0B)    | Bright White   | 100, 100, 100       |
 
----
+***
 
-## **Notes**
+### **Notes**
 
-- **Firmware Colors**: Used by the Amstrad CPC firmware and user programs.  
-- **Hardware Colors**: Directly mapped to the PAL chip and Gate Array.  
-- Use the **Hardware values** for functions like `cpct_setPalette_asm`.
+* **Firmware Colors**: Used by the Amstrad CPC firmware and user programs.
+* **Hardware Colors**: Directly mapped to the PAL chip and Gate Array.
+* Use the **Hardware values** for functions like `cpct_setPalette_asm`.

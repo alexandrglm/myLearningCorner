@@ -1,27 +1,22 @@
-# MODULE 04-064:     JavaScript
+# MODULE 04-064:     JavaScript
 
+## OOP programming (1):    Instance Methods
 
-## OOP programming (1):    Instance Methods
-
-****
+***
 
 1. Class Definition
-
 2. Constructor Method
-
 3. Instantiation Process
-
 4. Instance Properties
 
-****
+***
 
 ## 1. Class Definition
 
 Classes in JavaScript serve as **blueprints for creating objects**. They encapsulate:
 
-- **Properties** (data/state)
-
-- **Methods** (behavior/functionality)
+* **Properties** (data/state)
+* **Methods** (behavior/functionality)
 
 ```js
 class Instructor {
@@ -29,22 +24,20 @@ class Instructor {
 }
 ```
 
-**Historical Context:**  
-Prior to ES6, JavaScript used prototype-based inheritance.  
+**Historical Context:**\
+Prior to ES6, JavaScript used prototype-based inheritance.
 
- Modern class syntax provides clearer structure while maintaining prototype-based inheritance under the hood.
+Modern class syntax provides clearer structure while maintaining prototype-based inheritance under the hood.
 
----
+***
 
 ## 2. Constructor Method
 
 The `constructor` is a special method that:
 
-- Runs automatically when creating new instances
-
-- Initializes instance properties
-
-- Receives arguments passed during instantiation
+* Runs automatically when creating new instances
+* Initializes instance properties
+* Receives arguments passed during instantiation
 
 ```js
 constructor({ name }) {
@@ -64,7 +57,7 @@ Properties initialized
 Instance created
 ```
 
----
+***
 
 ## 3. Instantiation Process
 
@@ -82,7 +75,7 @@ const jon = new Instructor({ name: 'Jon Snow' });
 | `this`   | Refers to the current instance     |
 | Instance | Concrete object created from class |
 
----
+***
 
 ## 4. Instance Properties
 
@@ -100,13 +93,11 @@ class Instructor {
 
 **Property Characteristics:**
 
-- Can have default values
+* Can have default values
+* Can be dynamically calculated
+* Are instance-specific
 
-- Can be dynamically calculated
-
-- Are instance-specific
-
----
+***
 
 ## 5. Practical Implementation
 
@@ -151,7 +142,7 @@ jsExpert Instance:
 }
 ```
 
----
+***
 
 ## Common Pitfalls & Best Practices
 
@@ -211,7 +202,7 @@ class Instructor {
 
 ### REAL private Method Convention (Since ES2021)
 
-```js
+````js
 class Instructor{
 
   #role;
@@ -306,9 +297,9 @@ const jon = new Instructor({name: 'Jon Snow'});
 const brayden = new Instructor({name: 'Brayden', role: 'teacher'});
 jon.renderDetails();
 brayden.renderDetails();
-```
+````
 
-One is John Snow assistant. The other is Brayden teacher. So right here we have now effectively created an instance method they can work with all different types of input. So whether we simply are using defaults or we are using the full set of objects that are available then what we can do is then, call that instance and then call the instance method on that. And so this is something it may still seem very basic. That's good because we want this to be a very common thing for you to be able to understand because this is something you're going to be doing quite a bit. 
+One is John Snow assistant. The other is Brayden teacher. So right here we have now effectively created an instance method they can work with all different types of input. So whether we simply are using defaults or we are using the full set of objects that are available then what we can do is then, call that instance and then call the instance method on that. And so this is something it may still seem very basic. That's good because we want this to be a very common thing for you to be able to understand because this is something you're going to be doing quite a bit.
 
 I remember working with a student one time who was having a number of issues and what it came down to is they had skipped the part of understanding, on what instantiation meant and so what they kept on doing was performing tasks such as just calling the instructor class and the different methods inside of it directly, without understanding the first part. Without understanding right here that you need to first instantiate that class turns it into an object. Once it's an object you can do anything that you need to with it.
 
@@ -334,11 +325,11 @@ jon.renderDetails();
 brayden.renderDetails();
 ```
 
-****
+***
 
 ## Coding Exercise
 
-You're in the market for a new car but want it to be electric. Create an instance of the Car class called `model3`. The `year` must be a number *(so don't wrap it in quotation marks)*. Set the `brand` to "Tesla" and change the `poweredBy` to "electricity".
+You're in the market for a new car but want it to be electric. Create an instance of the Car class called `model3`. The `year` must be a number _(so don't wrap it in quotation marks)_. Set the `brand` to "Tesla" and change the `poweredBy` to "electricity".
 
 ```js
 class Car {

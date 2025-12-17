@@ -1,70 +1,78 @@
-# MODULE 1 - 005: - CodePen.io to process SCSS 
-In this guide, we’ll walk through how to start working with **SCSS**. 
+# 01-005\_CodePen\_as\_SCSS\_IDE
 
-If you're writing **pure CSS**, you don’t need a tool like this—there’s no preprocessor component involved.  
-However, since we’re using SCSS, we need to convert our SCSS styles into something browsers can understand. 
+## MODULE 1 - 005: - CodePen.io to process SCSS
+
+In this guide, we’ll walk through how to start working with **SCSS**.
+
+If you're writing **pure CSS**, you don’t need a tool like this—there’s no preprocessor component involved.\
+However, since we’re using SCSS, we need to convert our SCSS styles into something browsers can understand.\
 Let’s get started! 🚀
 
----
+***
 
-## 📝 **Why Use SCSS with CodePen?**
+### 📝 **Why Use SCSS with CodePen?**
 
-### ✅ Reasons**:
-- **No setup required**: CodePen works out-of-the-box.
-- **Cross-platform**: It runs seamlessly on both PC and Mac.
-- **Universal foundation**: Skills you’ll learn here can be applied to any project, regardless of language or framework.
+#### ✅ Reasons\*\*:
 
-If you’re using a framework like **React**, **Rails**, you can still follow along since Rails handles the SCSS precompilation process for you. 
+* **No setup required**: CodePen works out-of-the-box.
+* **Cross-platform**: It runs seamlessly on both PC and Mac.
+* **Universal foundation**: Skills you’ll learn here can be applied to any project, regardless of language or framework.
+
+If you’re using a framework like **React**, **Rails**, you can still follow along since Rails handles the SCSS precompilation process for you.\
 However, CodePen simplifies the process, making it ideal for learning and experimenting.
 
----
+***
 
-## 🌐 **Getting Started with CodePen**
+### 🌐 **Getting Started with CodePen**
 
-1. **Sign Up for a Free Account**  
-   It allows to **save your progress**.  
-   > *Skip this step if you prefer working without an account.*  
-    ![image](https://github.com/user-attachments/assets/792e29d3-4efd-4fde-9e56-52a5795ec6d6)
+1.  **Sign Up for a Free Account**\
+    It allows to **save your progress**.
 
-2. **Create a New Pen**  
-   - Click on the "New Pen" button.  
-   - You’ll be presented with a blank project layout:  
-     **HTML**, **CSS**, **JavaScript**, and the **output** preview.
-    ![image](https://github.com/user-attachments/assets/17f5ee50-f464-46b1-9978-862e20446c04)
+    > _Skip this step if you prefer working without an account._\
+    > ![image](https://github.com/user-attachments/assets/792e29d3-4efd-4fde-9e56-52a5795ec6d6)
+2. **Create a New Pen**
+   * Click on the "New Pen" button.
+   * You’ll be presented with a blank project layout:\
+     **HTML**, **CSS**, **JavaScript**, and the **output** preview.![image](https://github.com/user-attachments/assets/17f5ee50-f464-46b1-9978-862e20446c04)
 
----
+***
 
-## ✂️ **Setting Up SCSS in CodePen**
+### ✂️ **Setting Up SCSS in CodePen**
 
 We’ll be working with **HTML** and **SCSS** only. Follow these steps:
 
-### 🔧 **Step 1: Remove the JavaScript Window**
-   - Since we’re focusing on SCSS, the JavaScript panel isn’t needed.
+#### 🔧 **Step 1: Remove the JavaScript Window**
 
-### 🔧 **Step 2: Configure the CSS Panel for SCSS**
-   1. **Click the gear icon** in the top left of the CSS box.  
-      ![Image: CSS Gear Icon](img2)  
-   2. **Change the Preprocessor** to **SCSS**.  
-      ![Image: Select SCSS](img4)
+* Since we’re focusing on SCSS, the JavaScript panel isn’t needed.
 
-   > 🔍 *Once this is done, syntax highlighting will be enabled.*  
-   > **You’ll also see the heading update to "SCSS."**
+#### 🔧 **Step 2: Configure the CSS Panel for SCSS**
 
----
+1. **Click the gear icon** in the top left of the CSS box.\
+   ![Image: CSS Gear Icon](../../../../../../inProgress/Basque-DevCamp/Full_Stack_2025/MODULE_01/01_001-020_SCSS-Intro/01-005/img2)
+2. **Change the Preprocessor** to **SCSS**.\
+   ![Image: Select SCSS](../../../../../../inProgress/Basque-DevCamp/Full_Stack_2025/MODULE_01/01_001-020_SCSS-Intro/01-005/img4)
 
-## 🎉 **Start Coding in SCSS**
+> 🔍 _Once this is done, syntax highlighting will be enabled._\
+> **You’ll also see the heading update to "SCSS."**
+
+***
+
+### 🎉 **Start Coding in SCSS**
 
 ![image](https://github.com/user-attachments/assets/18dc6036-c70f-48e9-a3ec-d2a66cbd0f59)
 
-Now everything is set! Here’s what happens:  
-- The changes you make will **auto-render** in the preview below.  
-- You can start writing **SCSS-specific styles**, and CodePen will handle the preprocessing for you.
+Now everything is set! Here’s what happens:
 
+* The changes you make will **auto-render** in the preview below.
+* You can start writing **SCSS-specific styles**, and CodePen will handle the preprocessing for you.
 
 ***
-# Video Speech
-[ENG]
-```text
+
+## Video Speech
+
+\[ENG]
+
+```
 # How to Configure Codepen to Process Scss Files
 We are now going to walk through how we can start working with SCSS. If you're just writing pure CSS you don't need a tool like this because there is no preprocessor component. Since we are using SCSS we need to be able to convert all of our SCSS styles into something the browser can actually understand. 
 ***
@@ -91,8 +99,11 @@ Once we make that change we will notice we now have syntax highlighting and it w
 ![image](https://github.com/user-attachments/assets/4a8a9d24-2815-4b62-9717-a9d0e32bd641)  
 Now we are all set and ready to go.
 ```
+
 ***
-[SPA]
+
+\[SPA]
+
 ```
 Cómo configurar Codepen para procesar archivos Scss
 

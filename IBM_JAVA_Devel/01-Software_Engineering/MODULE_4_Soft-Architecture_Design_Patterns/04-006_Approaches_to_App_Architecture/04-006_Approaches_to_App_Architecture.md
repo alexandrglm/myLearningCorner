@@ -1,16 +1,16 @@
 # 04-006 Approaches to Application Architecture
 
-![](./04-006_IMG9.png)
+![](../../../../.gitbook/assets/04-006_IMG9.png)
 
 ### Components
 
-A **component** is an individual unit of encapsulated functionality serving as part of an application in conjunction with other components  
+A **component** is an individual unit of encapsulated functionality serving as part of an application in conjunction with other components
 
 Components operate at a higher level of abstraction than objects.
 
 #### Six Characteristics of Components
 
-![](./04-006_IMG1.png)
+![](../../../../.gitbook/assets/04-006_IMG1.png)
 
 1. **Reusable:** Designed to be reused across different applications
 2. **Replaceable:** Easily substituted with another component
@@ -21,17 +21,15 @@ Components operate at a higher level of abstraction than objects.
 
 #### Examples of Components
 
-- **APIs:** Open-source or proprietary APIs connecting systems to databases or services, reusable across multiple systems  
-
-- **Data Access Objects (DAO):** Database interfaces allowing application switching between databases without code modification  
-
-- **Controllers:** Determine which components to invoke for particular events, controlling data flow between components
+* **APIs:** Open-source or proprietary APIs connecting systems to databases or services, reusable across multiple systems
+* **Data Access Objects (DAO):** Database interfaces allowing application switching between databases without code modification
+* **Controllers:** Determine which components to invoke for particular events, controlling data flow between components
 
 ### Component-Based Architecture
 
-![](./04-006_IMG2.png)
+![](../../../../.gitbook/assets/04-006_IMG2.png)
 
-**Component-based architecture** focuses on decomposing the design into logical, independent components.   
+**Component-based architecture** focuses on decomposing the design into logical, independent components.
 
 It emphasises composing loosely coupled, independent components that work together to create an application, providing higher abstraction than object-oriented design alone.
 
@@ -39,7 +37,7 @@ It emphasises composing loosely coupled, independent components that work togeth
 
 A **service** is a unit of functionality designed for **independent deployment** and reuse by multiple systems, focusing on solutions to business needs.
 
-![](./04-006_IMG3.png)
+![](../../../../.gitbook/assets/04-006_IMG3.png)
 
 **Key Difference from Components:** A service operates as a **single unique, always-running instance** with multiple clients communicating with it, whereas components may exist in multiple instances.
 
@@ -49,61 +47,52 @@ A **service** is a unit of functionality designed for **independent deployment**
 
 ### Service-Oriented Architecture (SOA)
 
-![](./04-006_IMG4.png)
+![](../../../../.gitbook/assets/04-006_IMG4.png)
 
-**Service-Oriented Architecture (SOA)** structures systems around services that are **loosely coupled** and **interface via communication protocols over a network**.   
+**Service-Oriented Architecture (SOA)** structures systems around services that are **loosely coupled** and **interface via communication protocols over a network**.
 
 SOA enables building distributed systems delivering services to other applications through standardised protocols.
 
-
----
+***
 
 ### Distributed Systems
 
-![](./04-006_IMG5.png)
+![](../../../../.gitbook/assets/04-006_IMG5.png)
 
-A **distributed system** comprises multiple services located on different machines that **coordinate interactions by passing messages** via communication protocols (such as HTTP).   
+A **distributed system** comprises multiple services located on different machines that **coordinate interactions by passing messages** via communication protocols (such as HTTP).
 
 Despite operating across multiple machines, distributed systems appear to end-users as a **single coherent system**.
 
 #### Characteristics of Distributed Systems
 
-![](./04-006_IMG6.png)
+![](../../../../.gitbook/assets/04-006_IMG6.png)
 
-- **Fault-tolerant:** System continues operation if a node or service fails; may change during execution without service interruption  
-
-- **Concurrent operations:** Multiple activities run simultaneously, reducing latency and increasing throughput  
-
-- **Scalable:** Performance adapts as user numbers increase  
-
-- **Heterogeneous:** No requirement for uniform hardware, operating systems, or programming languages across nodes  
-
-- **Resource sharing:** Distributed sharing of hardware, software, and data
-
+* **Fault-tolerant:** System continues operation if a node or service fails; may change during execution without service interruption
+* **Concurrent operations:** Multiple activities run simultaneously, reducing latency and increasing throughput
+* **Scalable:** Performance adapts as user numbers increase
+* **Heterogeneous:** No requirement for uniform hardware, operating systems, or programming languages across nodes
+* **Resource sharing:** Distributed sharing of hardware, software, and data
 
 #### Nodes
 
-![](./04-006_IMG7.png)
+![](../../../../.gitbook/assets/04-006_IMG7.png)
 
-A **node** is any device on a network capable of recognising, processing, and transmitting data to other network nodes.  
+A **node** is any device on a network capable of recognising, processing, and transmitting data to other network nodes.
 
 Distributed systems consist of multiple interconnected nodes running one or more services in an SOA structure.
 
-
-
 #### Distributed System Architectures
 
-![](./04-006_IMG8.png)
+![](../../../../.gitbook/assets/04-006_IMG8.png)
 
-Distributed systems typically employ one or more fundamental architectures:  
+Distributed systems typically employ one or more fundamental architectures:
 
-- Client-server
-- Three-tier
-- Peer-to-peer
-- Microservices
+* Client-server
+* Three-tier
+* Peer-to-peer
+* Microservices
 
-
----
+***
 
 ## Lesson Speech
 

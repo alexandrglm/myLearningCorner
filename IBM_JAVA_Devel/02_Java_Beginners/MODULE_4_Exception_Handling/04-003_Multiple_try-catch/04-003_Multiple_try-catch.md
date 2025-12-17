@@ -1,28 +1,25 @@
-# 04-003 Using Multiple `try-catch` Blocks
----
-> PENDING:  Re-write a better guide
----
+# 04-003 Using Multiple try-catch Blocks
 
-![](./04-003_IMG14.png)
+***
 
--   **`try-catch` blocks** are used to handle runtime exceptions and take appropriate actions, preventing the program from crashing
+> PENDING: Re-write a better guide
 
--   **Multiple `try-catch`** refers to using more than one `catch` block within a single `try` statement or multiple `try-catch` statements
+***
 
--   **Advantages** of multiple `try-catch` include clearer error handling, specific responses to different errors, and better code organisation
+![](../../../../.gitbook/assets/04-003_IMG14.png)
 
--   **User input validation** and **file handling** are common use cases for multiple `try-catch` blocks
+* **`try-catch` blocks** are used to handle runtime exceptions and take appropriate actions, preventing the program from crashing
+* **Multiple `try-catch`** refers to using more than one `catch` block within a single `try` statement or multiple `try-catch` statements
+* **Advantages** of multiple `try-catch` include clearer error handling, specific responses to different errors, and better code organisation
+* **User input validation** and **file handling** are common use cases for multiple `try-catch` blocks
+* **The `throws` keyword** indicates that a method can throw one or more exceptions, informing the caller to handle them
+* **`throws` provides separation of concerns** and enables better error-handling practices
 
--   **The `throws` keyword** indicates that a method can throw one or more exceptions, informing the caller to handle them
-
--   **`throws` provides separation of concerns** and enables better error-handling practices
-
----
+***
 
 ## What is a `try-catch` Block?
 
-![](./04-003_IMG1.png)
-![](./04-003_IMG2.png)
+![](<../../../../.gitbook/assets/04-003_IMG1 (2).png>) ![](<../../../../.gitbook/assets/04-003_IMG2 (2).png>)
 
 **Java uses exceptions to provide error handling capabilities for its programs.** Before you can catch an exception, the code must throw one. **Any Java code can throw an exception.**
 
@@ -41,13 +38,12 @@ try {
 }
 ```
 
----
+***
 
 ## Multiple `try-catch` Blocks
 
--   **Multiple `try-catch` refers to the use of more than one `catch` block within a single `try` statement or multiple `try-catch` statements in your code.** 
-
--   **This allows you to handle different types of exceptions separately, which is useful when you expect different kinds of errors from the same block of code.**
+* **Multiple `try-catch` refers to the use of more than one `catch` block within a single `try` statement or multiple `try-catch` statements in your code.**
+* **This allows you to handle different types of exceptions separately, which is useful when you expect different kinds of errors from the same block of code.**
 
 ### Example: Two `catch` Blocks
 
@@ -73,18 +69,18 @@ try {
 } ...
 ```
 
--   **`ArrayIndexOutOfBoundsException`** occurs when trying to access an array with an invalid index
--   **`ArithmeticException`** occurs when there is an illegal arithmetic operation such as dividing by zero
+* **`ArrayIndexOutOfBoundsException`** occurs when trying to access an array with an invalid index
+* **`ArithmeticException`** occurs when there is an illegal arithmetic operation such as dividing by zero
 
----
+***
 
 ## Advantages of Multiple `try-catch` Blocks
 
-![](./04-003_IMG5.png)
+![](<../../../../.gitbook/assets/04-003_IMG5 (2).png>)
 
-![](./04-003_IMG6.png)
+![](<../../../../.gitbook/assets/04-003_IMG6 (1).png>)
 
-![](./04-003_IMG7.png)
+![](<../../../../.gitbook/assets/04-003_IMG7 (1).png>)
 
 **Using multiple `try-catch` blocks in a program offers several advantages:**
 
@@ -100,20 +96,17 @@ try {
 
 **Exception handling helps keep code organised and readable.**
 
----
-
+***
 
 ## Use Cases for Multiple `try-catch` Blocks
 
 ### User Input Validation
 
-
-**In software applications, user inputs are often unpredictable.**  
+**In software applications, user inputs are often unpredictable.**
 
 Using multiple `try-catch` blocks can help validate inputs effectively.
 
-
-![](./04-003_IMG8.png)
+![](<../../../../.gitbook/assets/04-003_IMG8 (1).png>)
 
 ```java
 try {
@@ -134,17 +127,15 @@ try {
 
 If the input is not a valid number, a `NumberFormatException` is thrown and handled by the `catch` block.
 
-
----
-
+***
 
 ### File Handling
 
-**When working with files, multiple exceptions can arise, such as file not found or issues during reading and writing.**  
+**When working with files, multiple exceptions can arise, such as file not found or issues during reading and writing.**
 
 Using multiple `try-catch` blocks can assist in handling file errors.
 
-![](./04-003_IMG9.png)
+![](<../../../../.gitbook/assets/04-003_IMG9 (1).png>)
 
 ```java
 try {
@@ -165,17 +156,16 @@ try {
 }
 ```
 
-- **`FileNotFoundException`** is caught if the file doesn't exist
-- **`IOException`** is caught if there's any I/O issue when reading the file
+* **`FileNotFoundException`** is caught if the file doesn't exist
+* **`IOException`** is caught if there's any I/O issue when reading the file
 
-
----
+***
 
 ## The `throws` Keyword
 
 **The Java runtime system and many classes from Java packages throw exceptions in some circumstances by using the `throw` statement.**
 
-![](./04-003_IMG10.png)
+![](<../../../../.gitbook/assets/04-003_IMG10 (1).png>)
 
 ### Syntax
 
@@ -187,28 +177,23 @@ returnType methodName(params) throws ExceptionType1, ExceptionType2 {
 }
 ```
 
--   **You can use the `throws` keyword in method declaration to indicate that a method can throw one or more exceptions.**
-
--   **This informs the caller of the method that they need to handle these exceptions either with a `try-catch` block or by declaring them in their own method using `throws`.**
-
+* **You can use the `throws` keyword in method declaration to indicate that a method can throw one or more exceptions.**
+* **This informs the caller of the method that they need to handle these exceptions either with a `try-catch` block or by declaring them in their own method using `throws`.**
 
 ### Advantages of `throws` Keyword
 
-![](./04-003_IMG11.png)
+![](<../../../../.gitbook/assets/04-003_IMG11 (1).png>)
 
-1.  **Separation of Concerns** - Each method can focus on its own logic without handling each possible exception  
+1. **Separation of Concerns** - Each method can focus on its own logic without handling each possible exception
+2. **Clear Error Handling Indication** – By declaring exceptions, method users can more clearly determine which error-handling methods to implement to manage potential errors
+3. **Robust Code Design** – Java's robust code design capabilities lead to better error-handling practices, which encourages developers to plan for exception management
 
-2.  **Clear Error Handling Indication** – By declaring exceptions, method users 
-can more clearly determine which error-handling methods to implement to manage potential errors  
-
-3.  **Robust Code Design** – Java's robust code design capabilities lead to better error-handling practices, which encourages developers to plan for exception management
-
----
+***
 
 ### Example: Using `throws`
 
-![](./04-003_IMG12.png)
-![](./04-003_IMG13.png)
+![](../../../../.gitbook/assets/04-003_IMG12.png) ![](../../../../.gitbook/assets/04-003_IMG13.png)
+
 ```java
 public static void readFile(String filename) throws IOException {
 
@@ -233,16 +218,13 @@ public static void main(String[] args) {
 }
 ```
 
-Here:  
-1.   **The `readFile` method is defined with the `throws IOException` clause**, indicating it might throw an `IOException` if there's an issue with file reading  
+Here:
 
-2. **In the `main` method**, we call `readFile` and wrap it in a `try-catch` block to handle the potential `IOException`  
+1. **The `readFile` method is defined with the `throws IOException` clause**, indicating it might throw an `IOException` if there's an issue with file reading
+2. **In the `main` method**, we call `readFile` and wrap it in a `try-catch` block to handle the potential `IOException`
+3. If the specified file does not exist, the `FileReader` will throw an `IOException`, which is then caught by the `catch` block, allowing us to handle the error gracefully
 
-3.  If the specified file does not exist, the `FileReader` will throw an `IOException`, which is then caught by the `catch` block, allowing us to handle the error gracefully
-
-
-
----
+***
 
 ## Lesson Speech
 

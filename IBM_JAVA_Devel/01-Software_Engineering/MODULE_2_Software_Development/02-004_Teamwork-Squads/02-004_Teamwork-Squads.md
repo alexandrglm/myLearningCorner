@@ -1,75 +1,72 @@
 # 02-004: Teamwork / Squads
 
-![](./02-004_IMG6.png)
-![](./02-004_IMG7.png)
+![](../../../../.gitbook/assets/02-004_IMG6.png) ![](../../../../.gitbook/assets/02-004_IMG7.png)
 
 ### Definition and Benefits of Teamwork
 
-![](./02-004_IMG1.png)
+![](../../../../.gitbook/assets/02-004_IMG1.png)
 
-A **team** is a group of people working together towards a common aim.   
-Teams comprise individuals with diverse skills, experience, and talents, enabling specialisation whilst expanding skillsets through collaboration.  
+A **team** is a group of people working together towards a common aim.\
+Teams comprise individuals with diverse skills, experience, and talents, enabling specialisation whilst expanding skillsets through collaboration.
 
 Teamworking promotes creativity through idea discussion and intellectual challenge, whilst positive attitudes and behaviours create positive results.
 
-
 ### Foundations for Team Success
 
-![](./02-004_IMG2.png)
+![](../../../../.gitbook/assets/02-004_IMG2.png)
 
-Successful teamwork requires: 
+Successful teamwork requires:
 
--   **Trust and respect** amongst members
--   **Clearly defined and agreed goals** ensuring alignment
--   **Defined roles** avoiding task duplication or omission
--   Working with **individual strengths**
--   Celebrating successes
--   Analysing problems
+* **Trust and respect** amongst members
+* **Clearly defined and agreed goals** ensuring alignment
+* **Defined roles** avoiding task duplication or omission
+* Working with **individual strengths**
+* Celebrating successes
+* Analysing problems
 
 But, the most important part:
 
--   **Vital communication** using methods accessible to all team members
-
+* **Vital communication** using methods accessible to all team members
 
 ### Teamwork in Software Engineering
 
-Teams conduct kick-off meetings to plan projects, assign tasks, and establish goals. Throughout project lifecycles, whole-team and sub-team meetings review progress.  
+Teams conduct kick-off meetings to plan projects, assign tasks, and establish goals. Throughout project lifecycles, whole-team and sub-team meetings review progress.
 
-![](./02-004_IMG3.png)
+![](../../../../.gitbook/assets/02-004_IMG3.png)
 
 **Design and code reviews** occur at team level.
 
 **Walkthroughs** present individual sections to team members and stakeholders
 
-**Retrospective meetings** occur post-project to analyse successes and improvements. 
+**Retrospective meetings** occur post-project to analyse successes and improvements.
 
 **Mentoring** (informal or formalised) facilitates knowledge sharing. Internal teams may maintain code standards, legacy systems, or evaluate new software.
 
 ### Benefits of Team Collaboration
 
-![](./02-004_IMG4.png)
+![](../../../../.gitbook/assets/02-004_IMG4.png)
 
-- **Creativity and knowledge-sharing** leveraging individual strengths
-- **Improved code quality** through corporate standard adherence and documentation
-- **Better code maintainability** with reduced bugs through enhanced accountability
-- **Stress reduction** through peer support and collaborative problem-solving
-- **Increased understanding** of broader project scope and coherent solutions
+* **Creativity and knowledge-sharing** leveraging individual strengths
+* **Improved code quality** through corporate standard adherence and documentation
+* **Better code maintainability** with reduced bugs through enhanced accountability
+* **Stress reduction** through peer support and collaborative problem-solving
+* **Increased understanding** of broader project scope and coherent solutions
 
----
+***
 
 ### Squads in Agile Development
 
-![](./02-004_IMG5.png)
+![](../../../../.gitbook/assets/02-004_IMG5.png)
 
-Some Agile-following organisations term teams **"squads"** (typically small teams of up to 10 developers),  comprising:
+Some Agile-following organisations term teams **"squads"** (typically small teams of up to 10 developers), comprising:
 
--   A **Squad leader** (anchor developer and coach)
--   **Software engineers** (developing, implementing features, and writing test cases)
--   Optionally, **UX designers or developers**. 
+* A **Squad leader** (anchor developer and coach)
+* **Software engineers** (developing, implementing features, and writing test cases)
+* Optionally, **UX designers or developers**.
 
 Some squads employ **pair programming** practices.
 
----
+***
 
 ## Video Lesson
 

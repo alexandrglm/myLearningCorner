@@ -1,108 +1,125 @@
-# MODULE 01-001 :  Breaking Through the Cycle of Procrastination
+# 01-001\_Breaking\_Through\_The\_ProcrastinationCycle
 
-#### 🌟 **Imagine this...**
+## MODULE 01-001 : Breaking Through the Cycle of Procrastination
 
-You’re sitting in front of your computer, staring at a blank screen.  
-You know you have to work on a **code project**, but it feels like you’re frozen.  
+**🌟 Imagine this...**
 
-The task is **so intimidating** that you don’t even know where to begin.  
-It feels as if you’d rather be doing *anything else in the world*.  
+You’re sitting in front of your computer, staring at a blank screen.\
+You know you have to work on a **code project**, but it feels like you’re frozen.
 
-This is the **ugly face of procrastination**, and it's something programmers constantly fight.  
+The task is **so intimidating** that you don’t even know where to begin.\
+It feels as if you’d rather be doing _anything else in the world_.
+
+This is the **ugly face of procrastination**, and it's something programmers constantly fight.\
 If this resonates with you, don’t worry—you’re in good company. But if you want to become a **professional developer**, it’s time to implement a system to **hack procrastination**.
+
 ***
 
-## **Understanding Procrastination**
+### **Understanding Procrastination**
 
-As the lead instructor at Devcamp, one of the most common questions I get is:  
-**“How can I overcome procrastination?”**
+As the lead instructor at Devcamp, one of the most common questions I get is:\
+&#xNAN;**“How can I overcome procrastination?”**
 
-Before we dive into the solution, let’s explore its **root causes**.  
-  
+Before we dive into the solution, let’s explore its **root causes**.
+
 Through the years, I’ve found procrastination stems from **three primary patterns**:
 
-- 🌀 **Perfectionism**  
-- 😰 **Fear of success**  
-- 🗓️ **Lack of planning**
+* 🌀 **Perfectionism**
+* 😰 **Fear of success**
+* 🗓️ **Lack of planning**
 
 Overcoming procrastination means addressing these patterns directly.
+
 ***
 
-##  **Hacking Procrastination**
+### **Hacking Procrastination**
 
-We need to **hack our thought patterns** just as developers hack code to fix bugs.  
+We need to **hack our thought patterns** just as developers hack code to fix bugs.
 
-Remember:  
-> **Humans are made for action.**  
+Remember:
 
-Procrastination is a learned behavior driven by **fear-based thoughts**.  
+> **Humans are made for action.**
+
+Procrastination is a learned behavior driven by **fear-based thoughts**.\
 To succeed in **coding, business**, or life, **you must conquer it**.
+
 ***
 
-### 1️⃣ **Hacking Perfectionism**
+#### 1️⃣ **Hacking Perfectionism**
 
-Ever watched a baby learning to walk?  
-Babies don’t fear failure—they fall and try again until they succeed.  
+Ever watched a baby learning to walk?\
+Babies don’t fear failure—they fall and try again until they succeed.\
 Somewhere along the way, we learn that failure is “bad,” and we stop trying new things.
 
 > **“You’re going to get it wrong the first time—and that’s okay!”**
 
-If you’re a developer learning a new feature: **Don’t wait for perfection** !!!.  
-Instead: **Embrace failure** as part of the process.  
+If you’re a developer learning a new feature: **Don’t wait for perfection** !!!.\
+Instead: **Embrace failure** as part of the process.
 
-  > **Fell free to remove the fear of failure.**  
+> **Fell free to remove the fear of failure.**
 
 ***
 
-### 2️⃣ **Hacking the Fear of Success**
+#### 2️⃣ **Hacking the Fear of Success**
 
-If you’ve conquered perfectionism, congratulations!  
+If you’ve conquered perfectionism, congratulations!\
 But many developers fall into another trap: **fear of success**.
 
-Here’s what this fear might sound like:  
+Here’s what this fear might sound like:
+
 > “If I learn this, what comes next?”
 
-For example, when I learned to connect to a database, I froze because it opened up an **infinite list of new concepts**, for example:  
-1. Writing **SQL queries**  
-2. Building **relationships** between tables  
-3. Understanding **SQL injections**  
+For example, when I learned to connect to a database, I froze because it opened up an **infinite list of new concepts**, for example:
+
+1. Writing **SQL queries**
+2. Building **relationships** between tables
+3. Understanding **SQL injections**
 4. ...and much more!
 
 To overcome this...
- # ...quiet your mind!🧘.  
-Celebrate learning a new topic, and take the next step.  
 
-> **Progress is made one step at a time.**
-    👣 👣  👣  👣  👣 ...  🎯🎯  🚀🏆🎯💯🤩  🎯⭐!  
+## ...quiet your mind!🧘.
 
----
+Celebrate learning a new topic, and take the next step.
 
-### 3️⃣ **Hacking the Plan**
-
-Procrastination often stems from a **poor plan**.  
-If your tasks are too broad, they’ll seem impossible to start.
-
-For example, instead of writing:  
-- *“Build reporting engine”*
-
-**Break it into smaller pieces**, actionable tasks:  
-- Create a page for users to access reports.  
-- Create an entire reports form.
-- Give it a style.
-- Create a database conected to our engine
-- Load all the users' data.
-- ...
-
-      > "Make a great plan, and cut it onto little pieces"
+> **Progress is made one step at a time.**\
+> 👣 👣 👣 👣 👣 ... 🎯🎯 🚀🏆🎯💯🤩 🎯⭐!
 
 ***
-I hope that this has been a helpful guide for helping you break the cycle of procrastination in your own projects and that you will be able to use it to become a more effective developer.   
+
+#### 3️⃣ **Hacking the Plan**
+
+Procrastination often stems from a **poor plan**.\
+If your tasks are too broad, they’ll seem impossible to start.
+
+For example, instead of writing:
+
+* _“Build reporting engine”_
+
+**Break it into smaller pieces**, actionable tasks:
+
+* Create a page for users to access reports.
+* Create an entire reports form.
+* Give it a style.
+* Create a database conected to our engine
+* Load all the users' data.
+*   ...
+
+    ```
+    > "Make a great plan, and cut it onto little pieces"
+    ```
+
+***
+
+I hope that this has been a helpful guide for helping you break the cycle of procrastination in your own projects and that you will be able to use it to become a more effective developer.\
 I’ll leave you with a quote from the book The Five Element of Effective Thinking:
 
-    > “Being willing to fail is a liberating attribute of transformative thinking.”
+```
+> “Being willing to fail is a liberating attribute of transformative thinking.”
+```
 
-So put yourself out there, create a practical plan, and stop procrastinating and start coding!
----
+### So put yourself out there, create a practical plan, and stop procrastinating and start coding!
+
 ```
 [VIDEO SPEECH]  
 I want you to imagine sitting in front of your computer, staring at a blank screen. 
@@ -204,7 +221,9 @@ I’ll leave you with a quote from the book The Five Element of Effective Thinki
 
 So put yourself out there, create a practical plan, and stop procrastinating and start coding!
 ```
-[SPA]  
+
+\[SPA]
+
 ```
 01-001: Rompiendo el Ciclo de la Procrastinación
 
@@ -304,3 +323,4 @@ Te dejo con una cita del libro Los cinco elementos del pensamiento efectivo:
 
 ¡Así que muévete, crea un plan práctico, deja de procrastinar y comienza a codificar!
 ``
+```

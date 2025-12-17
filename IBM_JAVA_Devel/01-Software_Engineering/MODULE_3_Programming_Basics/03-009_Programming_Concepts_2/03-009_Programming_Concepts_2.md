@@ -1,90 +1,87 @@
 # 03-009: Introduction to Programming Concepts - Part 2 (Function / OOP)
 
-![](./03-009_IMG1.png)
-![](./03-009_IMG8.png)
-
+![](../../../../.gitbook/assets/03-009_IMG1.png) ![](../../../../.gitbook/assets/03-009_IMG8.png)
 
 ### Functions
 
-![](./03-009_IMG2.png)
+![](../../../../.gitbook/assets/03-009_IMG2.png)
 
-**Definition**:     A piece of structured, stand-alone, and reusable code that performs a single specific action.
+**Definition**: A piece of structured, stand-alone, and reusable code that performs a single specific action.
 
-**Origin**:         Consequence of **modular programming** software development methodology—encouraging program separation into multiple modular components, each performing specific tasks.
+**Origin**: Consequence of **modular programming** software development methodology—encouraging program separation into multiple modular components, each performing specific tasks.
 
-**Purpose**:        Enables developers to divide substantial, complex programs into smaller, manageable, focused pieces.
+**Purpose**: Enables developers to divide substantial, complex programs into smaller, manageable, focused pieces.
 
 **Alternative names**: Subroutines, procedures, methods, modules (language-dependent).
 
-**Mechanism**:      Functions accept data as input, process the data, then return the result as output.
+**Mechanism**: Functions accept data as input, process the data, then return the result as output.
 
 #### Function Types
 
-![](./03-009_IMG2.png)
+![](../../../../.gitbook/assets/03-009_IMG2.png)
 
-**Standard library functions**: Built-in functions provided by the programming language (e.g., `println function).
+**Standard library functions**: Built-in functions provided by the programming language (e.g., \`println function).
 
-**User-defined functions**:     Custom functions written by programmers, reusable repeatedly.
+**User-defined functions**: Custom functions written by programmers, reusable repeatedly.
 
 #### Function Implementation Steps
 
-![](./03-009_IMG3.png)
+![](../../../../.gitbook/assets/03-009_IMG3.png)
 
 1. **Define (or create)** a function:
-   - Provide function keyword
-   - Assign unique function name
-   - Provide statements comprising function body
-
+   * Provide function keyword
+   * Assign unique function name
+   * Provide statements comprising function body
 2. **Call (or invoke)** a function:
-   - Trigger the specified actions within the function
-   - Pass specified parameters if required
+   * Trigger the specified actions within the function
+   * Pass specified parameters if required
+3. **Declaring** a function:
+   * Some languages (C, C++) require function declaration in addition to definition.
 
-3.  **Declaring** a function:
-    - Some languages (C, C++) require function declaration in addition to definition.
-
-    
 **Code block identification**: Varies across languages—braces, begin/end statements, or indentation.
 
----
+***
 
 ### Objects and Object-Oriented Programming
 
-![](./03-009_IMG5.png)
+![](../../../../.gitbook/assets/03-009_IMG5.png)
 
 **Object-Oriented Programming (OOP)**: Programming methodology focused on **objects** rather than functions (as in procedure-oriented programming).
 
 #### Real-World Object Analysis
 
-![](./03-009_IMG6.png)
+![](../../../../.gitbook/assets/03-009_IMG6.png)
 
 Consider any real-world object (car, bike, TV, washing machine) and ask:
-- **"What states can the object be in?"** → Properties/attributes
-- **"What behaviours can the object perform?"** → Methods/functions
+
+* **"What states can the object be in?"** → Properties/attributes
+* **"What behaviours can the object perform?"** → Methods/functions
 
 **Observation**: More complex objects have more potential states and behaviours.
 
 #### Software Objects
 
-![](./03-009_IMG7.png)
+![](../../../../.gitbook/assets/03-009_IMG7.png)
 
 **Definition**: Software objects are conceptually similar to real-world objects, comprising **states (properties)** and **behaviours (methods)**.
 
 **Examples**: Windows service, user account, database table, system folder.
 
 **Storage and exposure**:
-- **Properties** stored in **fields** (variables in some languages)
-- **Behaviours** exposed through **methods** (functions in some languages)
+
+* **Properties** stored in **fields** (variables in some languages)
+* **Behaviours** exposed through **methods** (functions in some languages)
 
 #### OOP vs Procedural Programming
 
-| Aspect | Procedural Programming | Object-Oriented Programming |
-|--------|--------|---------|
-| **Focus** | Functions | Objects |
-| **Data structure** | Separate from functions | Packaged within objects |
-| **Operation** | Methods operate on separate data | Objects operate on own data |
-| **Encapsulation** | No bundling | Data and methods bundled together |
+| Aspect             | Procedural Programming           | Object-Oriented Programming       |
+| ------------------ | -------------------------------- | --------------------------------- |
+| **Focus**          | Functions                        | Objects                           |
+| **Data structure** | Separate from functions          | Packaged within objects           |
+| **Operation**      | Methods operate on separate data | Objects operate on own data       |
+| **Encapsulation**  | No bundling                      | Data and methods bundled together |
 
----
+***
 
 ## Video Lesson
 

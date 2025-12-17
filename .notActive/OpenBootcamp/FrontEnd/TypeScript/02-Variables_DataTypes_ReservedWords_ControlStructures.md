@@ -1,29 +1,31 @@
-# **TypeScript 02: Variables, Data Types, Reserved Words, and Control Structures**
+# 02-Variables\_DataTypes\_ReservedWords\_ControlStructures
 
-## **🔹 Understanding Type Systems in Programming**
+## **TypeScript 02: Variables, Data Types, Reserved Words, and Control Structures**
 
-### **📌 Typed vs Non-Typed Languages**
+### **🔹 Understanding Type Systems in Programming**
 
-- **Typed Languages**: Require explicit type definitions for variables (e.g., TypeScript, C, Java, Rust).
-- **Non-Typed Languages**: Do not enforce strict type definitions (e.g., JavaScript, Python, PHP).
+#### **📌 Typed vs Non-Typed Languages**
 
-### **📌 Static vs Dynamic Typing**
+* **Typed Languages**: Require explicit type definitions for variables (e.g., TypeScript, C, Java, Rust).
+* **Non-Typed Languages**: Do not enforce strict type definitions (e.g., JavaScript, Python, PHP).
 
-- **Dynamically Typed**: Variables can change their type at runtime.
-  - Example: JavaScript, PHP, Ruby, Python.
-- **Statically Typed**: Variables have fixed types known at compile-time.
-  - Example: TypeScript, C, C++, Java.
+#### **📌 Static vs Dynamic Typing**
 
-### **📌 Strong vs Weak Typing**
+* **Dynamically Typed**: Variables can change their type at runtime.
+  * Example: JavaScript, PHP, Ruby, Python.
+* **Statically Typed**: Variables have fixed types known at compile-time.
+  * Example: TypeScript, C, C++, Java.
 
-- **Strongly Typed**: Enforces strict type rules (e.g., TypeScript, Python).
-- **Weakly Typed**: Allows implicit type conversions (e.g., JavaScript, PHP).
+#### **📌 Strong vs Weak Typing**
+
+* **Strongly Typed**: Enforces strict type rules (e.g., TypeScript, Python).
+* **Weakly Typed**: Allows implicit type conversions (e.g., JavaScript, PHP).
 
 📖 **Official Docs:** [TypeScript Handbook - Basics](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html)
 
----
+***
 
-## **🔹 Declaring Variables in TypeScript**
+### **🔹 Declaring Variables in TypeScript**
 
 In TypeScript, variables are declared using `var`, `let`, and `const`:
 
@@ -33,17 +35,17 @@ const age: number = 30;
 var isOnline: boolean = true;
 ```
 
-- `let` → Block-scoped, preferred over `var`.
-- `const` → Immutable (read-only) variables.
-- `var` → Function-scoped (avoid using it in modern TypeScript).
+* `let` → Block-scoped, preferred over `var`.
+* `const` → Immutable (read-only) variables.
+* `var` → Function-scoped (avoid using it in modern TypeScript).
 
 📖 **Official Docs:** [TypeScript Variable Declarations](https://www.typescriptlang.org/docs/handbook/variable-declarations.html)
 
----
+***
 
-## **🔹 Reserved Words in TypeScript**
+### **🔹 Reserved Words in TypeScript**
 
-### **1️⃣ Reserved Keywords**
+#### **1️⃣ Reserved Keywords**
 
 Words that have predefined meanings in TypeScript and cannot be used as variable names:
 
@@ -54,7 +56,7 @@ in, instanceof, new, null, return, super, switch, this, throw, true,
 try, typeof, var, void, while, with
 ```
 
-### **2️⃣ Strict Mode Reserved Words**
+#### **2️⃣ Strict Mode Reserved Words**
 
 Additional words reserved in strict mode:
 
@@ -65,11 +67,11 @@ public, static, synchronized, volatile, yield
 
 📖 **Official Docs:** [TypeScript Keywords](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#type-annotations)
 
----
+***
 
-## **🔹 Best Practices in TypeScript**
+### **🔹 Best Practices in TypeScript**
 
-### ✅ **Use Template Literals for String Concatenation**
+#### ✅ **Use Template Literals for String Concatenation**
 
 Instead of:
 
@@ -85,7 +87,7 @@ console.log(`Hello, ${name}. How are you?`);
 
 📖 **Official Docs:** [Template Literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
 
-### ✅ **Always Specify Data Types**
+#### ✅ **Always Specify Data Types**
 
 ```ts
 let year: number = 2024;
@@ -95,7 +97,7 @@ let isActive: boolean = true;
 
 📖 **Official Docs:** [Type Annotations](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#type-annotations)
 
-### ✅ **Use `any` with Caution**
+#### ✅ **Use `any` with Caution**
 
 The `any` type allows changing a variable's type dynamically, but it should be used sparingly as it removes TypeScript’s type safety.
 
@@ -106,9 +108,9 @@ value = 42;  // No error, but bad practice
 
 📖 **Official Docs:** [The `any` Type](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any)
 
----
+***
 
-## **🔹 TypeScript Built-in Data Types**
+### **🔹 TypeScript Built-in Data Types**
 
 | **Type**    | **Example**                                   |
 | ----------- | --------------------------------------------- |
@@ -122,17 +124,17 @@ value = 42;  // No error, but bad practice
 
 📖 **Official Docs:** [Basic Types](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#the-primitives-string-number-and-boolean)
 
----
+***
 
-## **🔹 Conditional Structures**
+### **🔹 Conditional Structures**
 
-### **1️⃣ Ternary Operator**
+#### **1️⃣ Ternary Operator**
 
 ```ts
 const result = age > 18 ? "Adult" : "Minor";
 ```
 
-### **2️⃣ If-Else**
+#### **2️⃣ If-Else**
 
 ```ts
 if (age > 18) {
@@ -142,7 +144,7 @@ if (age > 18) {
 }
 ```
 
-### **3️⃣ Switch Statement**
+#### **3️⃣ Switch Statement**
 
 ```ts
 switch (age) {
@@ -159,11 +161,11 @@ switch (age) {
 
 📖 **Official Docs:** [Control Flow](https://www.typescriptlang.org/docs/handbook/2/narrowing.html)
 
----
+***
 
-## **🔹 Loop Structures**
+### **🔹 Loop Structures**
 
-### **1️⃣ For Loop**
+#### **1️⃣ For Loop**
 
 ```ts
 for (let i = 0; i < 5; i++) {
@@ -171,7 +173,7 @@ for (let i = 0; i < 5; i++) {
 }
 ```
 
-### **2️⃣ While Loop**
+#### **2️⃣ While Loop**
 
 ```ts
 let count = 0;
@@ -181,7 +183,7 @@ while (count < 5) {
 }
 ```
 
-### **3️⃣ Do-While Loop**
+#### **3️⃣ Do-While Loop**
 
 ```ts
 let counter = 0;
@@ -193,63 +195,63 @@ do {
 
 📖 **Official Docs:** [Loops and Iteration](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#arrays)
 
----
+***
 
-## **🚀 Summary & Key Takeaways**
+### **🚀 Summary & Key Takeaways**
 
-✔ TypeScript is a **statically typed** language that enforces type safety.
-✔ Use `let` and `const` instead of `var` for variable declarations.
-✔ Always specify data types for variables (`string`, `number`, `boolean`, etc.).
-✔ Avoid using `any` unless absolutely necessary.
-✔ Use `template literals` for string interpolation.
-✔ Follow best practices for clean and maintainable TypeScript code.
+✔ TypeScript is a **statically typed** language that enforces type safety.\
+✔ Use `let` and `const` instead of `var` for variable declarations.\
+✔ Always specify data types for variables (`string`, `number`, `boolean`, etc.).\
+✔ Avoid using `any` unless absolutely necessary.\
+✔ Use `template literals` for string interpolation.\
+✔ Follow best practices for clean and maintainable TypeScript code.\
 ✔ Use `control structures` and `loops` efficiently for flow control.
 
 📖 **Official Docs:** [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html)
 
-****
+***
 
-## Original guide:
+### Original guide:
 
-# 🔸     DEFINITIONS
+## 🔸 DEFINITIONS
 
-## Type Data Casting: Defining types of languages by data type.
+### Type Data Casting: Defining types of languages by data type.
 
-### Typed Languages / Non-Typed languages
+#### Typed Languages / Non-Typed languages
 
-### Static type / Dynamic Type
+#### Static type / Dynamic Type
 
-* **DYNAMIC TYPED:** *Not Compiled / Type Datacasting allowed*
+* **DYNAMIC TYPED:** _Not Compiled / Type Datacasting allowed_
 
-As the propper name tells, dynamics are flexible on data casting. A value can be a string, then a number, then a boolean.
-Dynamic languages, as JavaScript, give results in a simple way but, when the project is growing, debugging/correcting errors becomes a nightmare.  
-Dynamics verifies the types on-exec so that debugging/correcting/mitigating errors can be made late enough.  
-Examples of dynamic languages: JavaScript, PHP, Ruby, Perl, ...  
+As the propper name tells, dynamics are flexible on data casting. A value can be a string, then a number, then a boolean.\
+Dynamic languages, as JavaScript, give results in a simple way but, when the project is growing, debugging/correcting errors becomes a nightmare.\
+Dynamics verifies the types on-exec so that debugging/correcting/mitigating errors can be made late enough.\
+Examples of dynamic languages: JavaScript, PHP, Ruby, Perl, ...
 
-* **STATIC TYPED**: *Compiled / Forbidden Type Datacasting*
+* **STATIC TYPED**: _Compiled / Forbidden Type Datacasting_
 
-On the other hand, Static Typed languages does not allow to change a data type on a var value.  
-Debugging process can be made on time due to the compilation process instead of discovering them on execution time.  
-Example of static typed languages are C, C#, C+, C++, Java, Kotlin, Rust, ...  
+On the other hand, Static Typed languages does not allow to change a data type on a var value.\
+Debugging process can be made on time due to the compilation process instead of discovering them on execution time.\
+Example of static typed languages are C, C#, C+, C++, Java, Kotlin, Rust, ...
 
-### *Strong Typed* / *Weak Typed* Languages
+#### _Strong Typed_ / _Weak Typed_ Languages
 
-It refers how many strict or not is a language to permit changes in the data type from a variable.  
+It refers how many strict or not is a language to permit changes in the data type from a variable.
 
-- A resctrictive **Strong** Typed language won't allow the data casting. There are few exceptions when parsing integers to flotaing point numbers.  
-- A permissive **Weak** Typed language allows to change the data on the-fly, in a simple way. 
+* A resctrictive **Strong** Typed language won't allow the data casting. There are few exceptions when parsing integers to flotaing point numbers.
+* A permissive **Weak** Typed language allows to change the data on the-fly, in a simple way.
 
 ***
 
-## Values: var / const
+### Values: var / const
 
 A variable can be defined with `var`, `let` or a `const` (A constant, a value that cannot change).
 
 ***
 
-# 🔸    TypeScript Reserved Words
+## 🔸 TypeScript Reserved Words
 
-### 1. **Reserved Words**
+#### 1. **Reserved Words**
 
 | Reserved Words |
 | -------------- |
@@ -290,7 +292,7 @@ A variable can be defined with `var`, `let` or a `const` (A constant, a value th
 | `while`        |
 | `with`         |
 
-### 2. **Strict Mode Reserved Words**
+#### 2. **Strict Mode Reserved Words**
 
 | Strict Mode Reserved Words |
 | -------------------------- |
@@ -309,7 +311,7 @@ A variable can be defined with `var`, `let` or a `const` (A constant, a value th
 | `volatile`                 |
 | `yield`                    |
 
-### 3. **Contextual Keywords**
+#### 3. **Contextual Keywords**
 
 | Contextual Keywords |
 | ------------------- |
@@ -334,19 +336,19 @@ A variable can be defined with `var`, `let` or a `const` (A constant, a value th
 
 ***
 
-# 🔸 TS Best Practices (1) ✅✅✅
+## 🔸 TS Best Practices (1) ✅✅✅
 
-### ✅ Using Backtips (`) when concatening phrases.
+#### ✅ Using Backtips (\`) when concatening phrases.
 
 Given a variable called name ( `let name = Pepito`), there are many syntax ways to create concatenated phrases, but one of them is the prefered:
 
-*"Hello, " + name + ". How are you"*  
-*"How are you", name, "?"*    
+_"Hello, " + name + ". How are you"_\
+&#xNAN;_"How are you", name, "?"_
 
-*`Where were you born, ${name} ?`* » **This is the best syntax mode**.
+_`Where were you born, ${name} ?`_ » **This is the best syntax mode**.\
 TS concatenating allows "string" COMMA variable COMMA ...
 
-### ✅ Even being refundant, always declare the data type.
+#### ✅ Even being refundant, always declare the data type.
 
 ```ts
 var year: number = 2024;
@@ -356,9 +358,9 @@ var onlineStatus: boolean = false;
 
 ***
 
-### ✅ *ANY* reserved word.
+#### ✅ _ANY_ reserved word.
 
-A value can be data-type changed by using `: any` reserved word, but it has to be used with caution (*: any* breaks the strongness type of TypeScript).   
+A value can be data-type changed by using `: any` reserved word, but it has to be used with caution (_: any_ breaks the strongness type of TypeScript).
 
 ```ts
 var surname: any = "Jhonson"; // ANY word lets changing data type
@@ -367,9 +369,9 @@ surname = 3; // This will be accepted, a warning won't be shown at console/debug
 
 ***
 
-# 🔸 DATA TYPES
+## 🔸 DATA TYPES
 
-## BUILT-IN DATA TYPES:
+### BUILT-IN DATA TYPES:
 
 1. String
 2. Number (Integer "int", Biginteger "bigint", Floating, NaN, ...)
@@ -382,7 +384,7 @@ surname = 3; // This will be accepted, a warning won't be shown at console/debug
 
 ***
 
-### ⚡ DATA TYPE in ARRAYS, LISTS, ...
+#### ⚡ DATA TYPE in ARRAYS, LISTS, ...
 
 ```ts
 let toDoList: string[] = ["Task 1", "Task 2"]; // varname: type[]
@@ -392,36 +394,35 @@ let values: (string | number | boolean)[] = [false, "Hola", true, 36]; //varname
 
 ***
 
-### ⚡ NUMBERED VALUES (enum)
+#### ⚡ NUMBERED VALUES (enum)
 
-Enum defines a set of named constants.
-Their order, if unspecified, starts from 0. They can be ordered (numbered, lettered) as needed.  
+Enum defines a set of named constants.\
+Their order, if unspecified, starts from 0. They can be ordered (numbered, lettered) as needed.
 
-* 1st. Defining the enumerating variable and its options-attributes.
-  
-  ```ts
-  enum Situation {
-    Completed,
-    Incompleted,
-    Pending
-  }
-  ```
+*   1st. Defining the enumerating variable and its options-attributes.
 
-* 2nd. Giving what status has another (the desired) object:
-  
-  ```ts
-  let taskStatus: Situation = Situation.Completed;
-  ```
+    ```ts
+    enum Situation {
+      Completed,
+      Incompleted,
+      Pending
+    }
+    ```
+*   2nd. Giving what status has another (the desired) object:
 
-enum WinningPoint {
-    first = 1,
-    second, // When the first enumerated value is given, the next values follow its order so, it's not needed to define them
-    third
+    ```ts
+    let taskStatus: Situation = Situation.Completed;
+    ```
+
+enum WinningPoint {\
+first = 1,\
+second, // When the first enumerated value is given, the next values follow its order so, it's not needed to define them\
+third\
 }
 
 let winningMarathon: WinningPoint = WinningPoint.second;
 
-```
+````
 ***
 
 
@@ -447,11 +448,11 @@ console.log(`Task: ${Task1.Named}`);
  *   - `Task1` is a variable that is declared to be of type `TaskInterface`. 
      This ensures that `Task1` adheres to the structure defined by the interface.
  */
-```
+````
 
 ***
 
-### ⚡ Assigning Multiple Values/Variables
+#### ⚡ Assigning Multiple Values/Variables
 
 1. **Expanded assignment**: Assigning each property to a separate variable individually.
 2. **Destructuring assignment**: Extracting multiple properties at once using a concise syntax.
@@ -464,7 +465,7 @@ let myTask = {
 };
 ```
 
-  **1 - EXPANDED ASSIGNMENT**
+**1 - EXPANDED ASSIGNMENT**
 
 ```ts
 let MyTitle = myTask.NameMyTask; 
@@ -480,11 +481,11 @@ let { NameMyTask, SituationMyTask, PriorToMyTask } = myTask;
 
 ***
 
-## SPREAD SYNTAX (Factored spread, variable propagation)
+### SPREAD SYNTAX (Factored spread, variable propagation)
 
 The spread syntax allows you to "spread" the elements of an iterable (like an array) into another array or the properties of an object into another object.
 
-### ⚡ By using LISTS
+#### ⚡ By using LISTS
 
 ```ts
 let shoppingCartMonday: string[] = ["Model1", "Model2"];
@@ -494,7 +495,7 @@ let shoppingCartWednesday: boolean[] = [false];
 let shoppingCartEntireWeek = [...shoppingCartMonday, ...shoppingCartTuesday]; 
 ```
 
-### ⚡ By using OBJECTS
+#### ⚡ By using OBJECTS
 
 ```ts
 let SituationApp = {
@@ -511,7 +512,7 @@ let newSituationApp = {
 
 ***
 
-## TYPES of TypeScript: Creating new types.
+### TYPES of TypeScript: Creating new types.
 
 ```ts
 type Product = {
@@ -532,11 +533,11 @@ console.log(car.year < 2012 ? `Car: ${car.year} is older` : `Car: ${car.year} is
 
 ***
 
-# CONTROL STRUCTURES
+## CONTROL STRUCTURES
 
-## 🔸 CONDITIONALS
+### 🔸 CONDITIONALS
 
-### ⚡ Ternary operator:
+#### ⚡ Ternary operator:
 
 ```ts
 console.log(car.year < 2012 ? `Car: ${car.year} is older` : `Car: ${car.year} is newer`);
@@ -544,7 +545,7 @@ console.log(car.year < 2012 ? `Car: ${car.year} is older` : `Car: ${car.year} is
 
 ***
 
-### ⚡ If ... else
+#### ⚡ If ... else
 
 ```ts
 let error4: boolean = false; // Declaring a variable for the condition
@@ -557,7 +558,7 @@ if (error4) {
 
 ***
 
-### ⚡ If ... else if ... else
+#### ⚡ If ... else if ... else
 
 ```ts
 if (car.year < 2010) {
@@ -571,7 +572,7 @@ if (car.year < 2010) {
 
 ***
 
-### ⚡ Switch statement
+#### ⚡ Switch statement
 
 ```ts
 switch (Task1.Situation) {
@@ -597,7 +598,7 @@ try {
 
 ***
 
-# 🔸 LOOPS
+## 🔸 LOOPS
 
 ```ts
 // Given an array ...
@@ -620,9 +621,9 @@ let newTaskList: TaskInterface[] = [
 ];
 ```
 
-### ⚡ FOR loop
+#### ⚡ FOR loop
 
-Iterates a specific number of times based on a counter variable.    
+Iterates a specific number of times based on a counter variable.
 
 ```ts
 for (let index = 0; index < newTaskList.length; index++) {
@@ -631,9 +632,9 @@ for (let index = 0; index < newTaskList.length; index++) {
 }
 ```
 
-### ⚡ forEach loop
+#### ⚡ forEach loop
 
-Executes a function for each element in an array.  
+Executes a function for each element in an array.
 
 ```ts
 newTaskList.forEach((task: TaskInterface, index: number) => {
@@ -641,11 +642,11 @@ newTaskList.forEach((task: TaskInterface, index: number) => {
 });
 ```
 
-### ⚡ FOR....IN loop
+#### ⚡ FOR....IN loop
 
-Iterates over the enumerable properties of an object (including inherited ones).  
-It's generally not recommended to use for-in loops with arrays as it iterates over indexes (strings) instead of actual elements.  
-⚠️⚠️⚠️ This FOR....IN example is out of coding lesson due to the nature of the loop, which could break our entire code.  
+Iterates over the enumerable properties of an object (including inherited ones).\
+It's generally not recommended to use for-in loops with arrays as it iterates over indexes (strings) instead of actual elements.\
+⚠️⚠️⚠️ This FOR....IN example is out of coding lesson due to the nature of the loop, which could break our entire code.
 
 ```ts
 let singleTask: TaskInterface = {
@@ -661,7 +662,7 @@ for (const key in singleTask) {
 }    
 ```
 
-### ⚡ WHILE loop
+#### ⚡ WHILE loop
 
 Executes a code block repeatedly as long as a condition is true
 
@@ -682,7 +683,7 @@ while (taskToProcess.Situation === Situation.Pending) {
 console.log(`WHILE loop: Task Status: ${taskToProcess.Situation}`);
 ```
 
-### ⚡ DO...WHILE loop
+#### ⚡ DO...WHILE loop
 
 Executes a code block at least once, then repeats as long as a condition is true.
 
@@ -698,7 +699,7 @@ console.log(`DO-WHILE loop: Counter: ${counter}`);
 
 ***
 
-📖 *index.ts* typed on this lesson:
+📖 _index.ts_ typed on this lesson:
 
 ```ts
 import { Stats } from "fs";
@@ -1033,6 +1034,6 @@ do {
 console.log(`DO-WHILE loop: Counter: ${counter}`);
 ```
 
-## Source:
+### Source:
 
-[OpenBootCamp - TypeScript course](https://www.youtube.com/watch?v=wutMZAg2t_4&list=PLkVpKYNT_U9egW5padLMHmnTPb6xm4hLf&index=3)
+[OpenBootCamp - TypeScript course](https://www.youtube.com/watch?v=wutMZAg2t_4\&list=PLkVpKYNT_U9egW5padLMHmnTPb6xm4hLf\&index=3)

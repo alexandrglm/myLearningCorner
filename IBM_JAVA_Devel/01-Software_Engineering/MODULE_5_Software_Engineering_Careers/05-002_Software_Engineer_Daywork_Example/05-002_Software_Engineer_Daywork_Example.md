@@ -1,6 +1,5 @@
 # 05-002 Software Engineer Day-to-Day Work Example
 
-
 ### Real-World Software Engineer Day-to-Day Activities
 
 A typical day for a software engineer encompasses multiple dimensions of professional work, combining technical development, collaboration, learning, and problem-solving within an organisational context.
@@ -12,38 +11,40 @@ Engineers begin by reviewing communications and calendar commitments. **Code rev
 ### Daily Standup Meetings
 
 **Standup meetings** are brief team synchronisation sessions where each member reports:
-- Accomplishments from previous day
-- Current work priorities
-- Ongoing challenges or blockers
+
+* Accomplishments from previous day
+* Current work priorities
+* Ongoing challenges or blockers
 
 These meetings enable knowledge sharing and allow mentors to provide real-time advice on technical approaches and code optimisation strategies.
 
 ### Focus Time and Code Optimisation
 
-![](./05-002_IMG1.png)
+![](../../../../.gitbook/assets/05-002_IMG1.png)
 
 Engineers dedicate uninterrupted time to concentrated project work. Activities include:
-- Implementing feedback from code reviews
-- Re-engineering code for performance improvement
-- Using analysis software to measure and validate performance gains
-- Submitting revised code for additional feedback
+
+* Implementing feedback from code reviews
+* Re-engineering code for performance improvement
+* Using analysis software to measure and validate performance gains
+* Submitting revised code for additional feedback
 
 ### Cross-Departmental Collaboration
 
-Software engineers work with non-technical departments (marketing, business) to understand requirements.   
+Software engineers work with non-technical departments (marketing, business) to understand requirements.
 
 **Minimum Viable Product (MVP)** development involves creating functional prototypes with core features for user testing and feedback gathering.
 
 ### Skill Development and Learning
 
-![](./05-002_IMG3.png)
+![](../../../../.gitbook/assets/05-002_IMG3.png)
 
 Engineers engage in continuous learning through:
 
-- **On-the-job learning:** Tackling unfamiliar technologies whilst contributing meaningfully to projects
-- **Technical research:** Reviewing documentation, watching tutorials, reading technical blogs
-- **Peer mentorship:** Learning from experienced colleagues' solutions and design approaches
-- **Knowledge sharing:** Accessing existing codebases (e.g., previous front-end implementations) for design inspiration and reusability
+* **On-the-job learning:** Tackling unfamiliar technologies whilst contributing meaningfully to projects
+* **Technical research:** Reviewing documentation, watching tutorials, reading technical blogs
+* **Peer mentorship:** Learning from experienced colleagues' solutions and design approaches
+* **Knowledge sharing:** Accessing existing codebases (e.g., previous front-end implementations) for design inspiration and reusability
 
 ### Bug Fixes and Quality Assurance
 
@@ -57,7 +58,7 @@ Regular feedback from senior team members provides alternative problem-solving a
 
 Professional enthusiasm extends beyond work hours, with engineers maintaining conceptual engagement with problems, planning implementations, and maintaining intellectual momentum about upcoming tasks.
 
----
+***
 
 ## Lesson Speech
 

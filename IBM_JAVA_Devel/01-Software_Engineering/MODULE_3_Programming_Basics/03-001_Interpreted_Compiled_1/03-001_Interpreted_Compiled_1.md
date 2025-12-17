@@ -1,61 +1,60 @@
 # 03-001: Interpreted / Compiled Languages - 1
 
-![](./03-001_IMG1.png)
+![](../../../../.gitbook/assets/03-001_IMG1.png)
 
 ### Language Categories
 
 **Programming languages** translate human-readable code into machine code (binary: ones and zeros) for computer execution. Two primary categories exist: **interpreted (scripting)** and **compiled** languages.
 
-![](./03-001_IMG2.png)
+![](../../../../.gitbook/assets/03-001_IMG2.png)
 
----
+***
 
 ### Interpreted Languages (Scripting Languages)
 
 **Interpreted languages** execute through interpreters—software translating human-readable code to machine code at runtime. Interpreters operate via web browsers or locally installed programmes.
 
-![](./03-001_IMG3.png)
+![](../../../../.gitbook/assets/03-001_IMG3.png)
 
 **Characteristics**:
-- Runtime translation from source code to machine code
-- Platform-agnostic (require appropriate interpreter)
-- Suitable for repetitive, frequently-executed scripts
-- Easier to learn; more versatile
+
+* Runtime translation from source code to machine code
+* Platform-agnostic (require appropriate interpreter)
+* Suitable for repetitive, frequently-executed scripts
+* Easier to learn; more versatile
 
 **Evolution**: Some interpreted languages become outdated; versatility and ease-of-learning determine modern adoption rates.
 
 **Examples**: **JavaScript** (web browser interpreter), **Python** (popular for ease of learning), **Lua** (lightweight game scripting language).
 
-
----
-
+***
 
 ### Compiled Languages
 
 **Compiled languages** produce executable applications and programmes (e.g., operating systems, music applications) packaged into single executable files. Compilation occurs before execution.
 
-![](./03-001_IMG4.png)
+![](../../../../.gitbook/assets/03-001_IMG4.png)
 
 **Process**:
+
 1. Source code (programming language) conversion to machine code
 2. Compilation into executable file
 3. Programme execution upon user selection
 
-![](./03-001_IMG5.png)
-
+![](../../../../.gitbook/assets/03-001_IMG5.png)
 
 **Characteristics**:
-- Faster execution (pre-compiled)
-- Suited for complex problems and large-scale applications
-- Typically larger programme files
-- Cross-platform capability via appropriate compilation
+
+* Faster execution (pre-compiled)
+* Suited for complex problems and large-scale applications
+* Typically larger programme files
+* Cross-platform capability via appropriate compilation
 
 **Common compiled languages**: **C** and variations (**C++**, **C#**) used in Windows, macOS, Linux; **Java** (Android OS) providing strong cross-platform compatibility.
 
 **Real-world examples**: Operating systems (Windows, macOS, Linux, Android), device applications, system software.
 
-
----
+***
 
 ## Video Lesson
 

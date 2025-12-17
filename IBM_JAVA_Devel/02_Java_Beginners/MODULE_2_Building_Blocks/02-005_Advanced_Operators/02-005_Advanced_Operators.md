@@ -1,40 +1,42 @@
-# 02-005 Advanced Operators
+# 02-005\_Advanced\_Operators
 
-![](./02-005_IMG8.png)
+## 02-005 Advanced Operators
 
-- **Advanced operators** work with binary data and perform low-level programming tasks
-- **Assignment operators** combine mathematical operations with assignment: `=`, `+=`, `-=`, `*=`, `/=`, `%=`
-- **Unary operators** operate on a single operand: `+`, `-`, `++`, `--`
-- **Ternary operator** is a shorthand for if-else statements: `condition ? expression1 : expression2`
+![](../../../../.gitbook/assets/02-005_IMG8.png)
 
----
+* **Advanced operators** work with binary data and perform low-level programming tasks
+* **Assignment operators** combine mathematical operations with assignment: `=`, `+=`, `-=`, `*=`, `/=`, `%=`
+* **Unary operators** operate on a single operand: `+`, `-`, `++`, `--`
+* **Ternary operator** is a shorthand for if-else statements: `condition ? expression1 : expression2`
 
-![](./02-005_IMG1.png)
+***
 
-**Advanced operators, such as bitwise and shift operators in Java, go beyond basic arithmetic, comparison, and logical operators.**  
+![](../../../../.gitbook/assets/02-005_IMG1.png)
 
-They are primarily used for **low-level programming tasks**, such as optimising performance or working with hardware.   
+**Advanced operators, such as bitwise and shift operators in Java, go beyond basic arithmetic, comparison, and logical operators.**
+
+They are primarily used for **low-level programming tasks**, such as optimising performance or working with hardware.
 
 They can also be used for graphics programming, cryptography, and so on.
 
----
+***
 
-## Assignment Operators
+### Assignment Operators
 
-![](./02-005_IMG2.png)
+![](../../../../.gitbook/assets/02-005_IMG2.png)
 
 Assignment operators are used to **assign values to variables** and combine mathematical operations with assignment.
 
-| Operator | Symbol | Description | Example |
-|----------|--------|-------------|---------|
-| Assign | `=` | Assigns a value to a variable | `a = 10` |
-| Add and assign | `+=` | Adds a value to a variable and updates it | `a += 5` (equivalent to `a = a + 5`) |
-| Subtract and assign | `-=` | Subtracts a value and updates the variable | `a -= 2` (equivalent to `a = a - 2`) |
-| Multiply and assign | `*=` | Multiplies the variable by a value and updates it | `a *= 3` (equivalent to `a = a * 3`) |
-| Divide and assign | `/=` | Divides the variable by a value and updates it | `a /= 2` (equivalent to `a = a / 2`) |
-| Modulus and assign | `%=` | Finds the remainder and updates the variable | `a %= 4` (equivalent to `a = a % 4`) |
+| Operator            | Symbol | Description                                       | Example                              |
+| ------------------- | ------ | ------------------------------------------------- | ------------------------------------ |
+| Assign              | `=`    | Assigns a value to a variable                     | `a = 10`                             |
+| Add and assign      | `+=`   | Adds a value to a variable and updates it         | `a += 5` (equivalent to `a = a + 5`) |
+| Subtract and assign | `-=`   | Subtracts a value and updates the variable        | `a -= 2` (equivalent to `a = a - 2`) |
+| Multiply and assign | `*=`   | Multiplies the variable by a value and updates it | `a *= 3` (equivalent to `a = a * 3`) |
+| Divide and assign   | `/=`   | Divides the variable by a value and updates it    | `a /= 2` (equivalent to `a = a / 2`) |
+| Modulus and assign  | `%=`   | Finds the remainder and updates the variable      | `a %= 4` (equivalent to `a = a % 4`) |
 
-![](./02-005_IMG3.png)
+![](../../../../.gitbook/assets/02-005_IMG3.png)
 
 ```java
 int a = 10;
@@ -47,26 +49,26 @@ a *= 2;  // Multiplies a by 2
 System.out.println("After a *= 2: " + a);   // Output: 30
 ```
 
----
+***
 
-## Unary Operators
+### Unary Operators
 
-![](./02-005_IMG4.png)
+![](../../../../.gitbook/assets/02-005_IMG4.png)
 
-Unary operators **operate on a single operand**.  
+Unary operators **operate on a single operand**.
 
 They can be used for incrementing, decrementing, or negating values.
 
-| Operator | Symbol | Description | Example |
-|----------|--------|-------------|---------|
-| Unary plus | `+` | Doesn't change the value | `+a` |
-| Unary minus | `-` | Negates the sign of a value | `-a` |
-| Pre-increment | `++a` | Adds 1 to the variable (before using it) | `++a` |
-| Post-increment | `a++` | Adds 1 to the variable (after using it) | `a++` |
-| Pre-decrement | `--a` | Subtracts 1 from the variable (before using it) | `--a` |
-| Post-decrement | `a--` | Subtracts 1 from the variable (after using it) | `a--` |
+| Operator       | Symbol | Description                                     | Example |
+| -------------- | ------ | ----------------------------------------------- | ------- |
+| Unary plus     | `+`    | Doesn't change the value                        | `+a`    |
+| Unary minus    | `-`    | Negates the sign of a value                     | `-a`    |
+| Pre-increment  | `++a`  | Adds 1 to the variable (before using it)        | `++a`   |
+| Post-increment | `a++`  | Adds 1 to the variable (after using it)         | `a++`   |
+| Pre-decrement  | `--a`  | Subtracts 1 from the variable (before using it) | `--a`   |
+| Post-decrement | `a--`  | Subtracts 1 from the variable (after using it)  | `a--`   |
 
-![](./02-005_IMG5.png)
+![](../../../../.gitbook/assets/02-005_IMG5.png)
 
 ```java
 int a = 10;
@@ -81,26 +83,26 @@ a--;  // Decrement by 1
 System.out.println("After decrement: " + a);   // Output: 10
 ```
 
----
+***
 
-## Ternary Operator
+### Ternary Operator
 
-![](./02-005_IMG6.png)
+![](../../../../.gitbook/assets/02-005_IMG6.png)
 
 The **ternary operator is a shorthand form of the conditional statement**. It takes three operands.
 
-### Syntax
+#### Syntax
 
 ```java
 condition ? expression1 : expression2
 ```
 
-![](./02-005_IMG7.png)
+![](../../../../.gitbook/assets/02-005_IMG7.png)
 
-- If the condition is **true**, it executes **expression1**
-- If the condition is **false**, it executes **expression2**
+* If the condition is **true**, it executes **expression1**
+* If the condition is **false**, it executes **expression2**
 
-### Example
+#### Example
 
 ```java
 int a = 10;
@@ -111,45 +113,42 @@ System.out.println("Maximum value: " + max);  // Output: 20
 ```
 
 In this example:
-- The condition `a > b` is checked
-- Since 10 is not greater than 20, the condition is false
-- Therefore, `b` (which is 20) is assigned to `max`
 
----
+* The condition `a > b` is checked
+* Since 10 is not greater than 20, the condition is false
+* Therefore, `b` (which is 20) is assigned to `max`
 
-# Bitwise and Shift Operators 
+***
 
--   **Bitwise operators** work directly on binary representations of integers
+## Bitwise and Shift Operators
 
--   **AND (`&`)**, **OR (`|`)**, **XOR (`^`)**, and **NOT (`~`)** compare or invert individual bits
+* **Bitwise operators** work directly on binary representations of integers
+* **AND (`&`)**, **OR (`|`)**, **XOR (`^`)**, and **NOT (`~`)** compare or invert individual bits
+* **Left shift (`<<`)** multiplies by powers of 2
+* **Right shift (`>>`)** divides by powers of 2 whilst preserving the sign
+* **Unsigned right shift (`>>>`)** always shifts in 0s
+* These operators are crucial for **performance optimisation**, **hardware manipulation**, **cryptography**, and **graphics programming**
 
--   **Left shift (`<<`)** multiplies by powers of 2
+***
 
--   **Right shift (`>>`)** divides by powers of 2 whilst preserving the sign
+### What are Bitwise Operators?
 
--   **Unsigned right shift (`>>>`)** always shifts in 0s
+**Bitwise operators work directly with the binary representations of integers.**
 
--   These operators are crucial for **performance optimisation**, **hardware manipulation**, **cryptography**, and **graphics programming**
-
----
-
-## What are Bitwise Operators?
-
-**Bitwise operators work directly with the binary representations of integers.**   
-
-They manipulate individual bits (0s and 1s) to perform operations.   
+They manipulate individual bits (0s and 1s) to perform operations.
 
 These operators are essential for low-level programming, performance optimisation, hardware manipulation, and cryptography.
 
----
+***
 
-## Bitwise Operators
+### Bitwise Operators
 
----
-### Bitwise AND (`&`)
+***
 
-*   **Compares each bit of two operands.**
-*   **Returns 1 only if both bits are 1.**
+#### Bitwise AND (`&`)
+
+* **Compares each bit of two operands.**
+* **Returns 1 only if both bits are 1.**
 
 ```
 a = 5  →  0101 (binary)
@@ -165,12 +164,12 @@ int result = a & b;             // 0001 = 1
 System.out.println(result);     // Output: 1
 ```
 
----
+***
 
-### Bitwise OR (`|`)
+#### Bitwise OR (`|`)
 
-*   **Compares each bit of two operands**
-*   **Returns 1 if at least one bit is 1**
+* **Compares each bit of two operands**
+* **Returns 1 if at least one bit is 1**
 
 ```
 a = 5  →  0101 (binary)
@@ -186,12 +185,12 @@ int result = a | b;             // 0111 = 7
 System.out.println(result);     // Output: 7
 ```
 
----
+***
 
-### Bitwise XOR (`^`)
+#### Bitwise XOR (`^`)
 
-*   **Compares each bit of two operands**
-*   **Returns 1 if bits are different, 0 if they're the sam**
+* **Compares each bit of two operands**
+* **Returns 1 if bits are different, 0 if they're the sam**
 
 ```
 a = 5  →  0101 (binary)
@@ -207,11 +206,11 @@ int result = a ^ b;             // 0110 = 6
 System.out.println(result);     // Output: 6
 ```
 
----
+***
 
-### Bitwise NOT (`~`)
+#### Bitwise NOT (`~`)
 
-*   **Inverts all bits. 0 becomes 1, and 1 becomes 0. This is a unary operator (works on one operand).**
+* **Inverts all bits. 0 becomes 1, and 1 becomes 0. This is a unary operator (works on one operand).**
 
 ```
 a = 5  →  0101 (binary)
@@ -226,17 +225,17 @@ System.out.println(result);     // Output: -6
 // Note: The result is -6 due to two's complement representation in Java.
 ```
 
----
+***
 
-## Shift Operators
+### Shift Operators
 
 Shift operators move all the bits of a number left or right by a specified number of positions.
 
-### Left Shift (`<<`)
+#### Left Shift (`<<`)
 
-*   **Shifts all bits to the left** 
-*   **Fills empty spaces on the right with 0s**
-*   **Effectively multiplies by 2^n (where n is the shift amount)**
+* **Shifts all bits to the left**
+* **Fills empty spaces on the right with 0s**
+* **Effectively multiplies by 2^n (where n is the shift amount)**
 
 ```
 a = 5  →  0101 (binary)
@@ -253,13 +252,13 @@ System.out.println("a << 1: " + result1);  // Output: 10
 System.out.println("a << 2: " + result2);  // Output: 20
 ```
 
----
+***
 
-### Right Shift (`>>`)
+#### Right Shift (`>>`)
 
-*   **Shifts all bits to the right**
-*   **Fills empty spaces on the left with the sign bit (preserves the sign)**
-*   **Effectively divides by 2^n (where n is the shift amount)**
+* **Shifts all bits to the right**
+* **Fills empty spaces on the left with the sign bit (preserves the sign)**
+* **Effectively divides by 2^n (where n is the shift amount)**
 
 ```
 a = 20  →  10100 (binary)
@@ -276,13 +275,13 @@ System.out.println("a >> 1: " + result1);  // Output: 10
 System.out.println("a >> 2: " + result2);  // Output: 5
 ```
 
----
+***
 
-### Unsigned Right Shift (`>>>`)
+#### Unsigned Right Shift (`>>>`)
 
-*   **Shifts all bits to the right**
-*   **Fills empty spaces on the left with 0s regardless of the sign (unsigned)**
-*   **Always positive result**
+* **Shifts all bits to the right**
+* **Fills empty spaces on the left with 0s regardless of the sign (unsigned)**
+* **Always positive result**
 
 ```
 a = -20 (with sign bit)
@@ -296,11 +295,11 @@ int result = a >>> 1;
 System.out.println(result);  // Output: Large positive number
 ```
 
----
+***
 
-## Practical Applications
+### Practical Applications
 
-### 1. Checking if a Bit is Set
+#### 1. Checking if a Bit is Set
 
 ```java
 int flags = 5;                                  // 0101
@@ -309,7 +308,7 @@ boolean isBitSet = (flags & (1 << 2)) != 0;     // Check if bit 2 is set
 System.out.println(isBitSet);                   // Output: true
 ```
 
-### 2. Setting a Bit
+#### 2. Setting a Bit
 
 ```java
 int flags = 5;              // 0101
@@ -318,7 +317,7 @@ flags = flags | (1 << 1);   // Set bit 1
 System.out.println(flags);  // Output: 7 (0111)
 ```
 
-### 3. Clearing a Bit
+#### 3. Clearing a Bit
 
 ```java
 int flags = 7;              // 0111
@@ -327,7 +326,7 @@ flags = flags & ~(1 << 1);  // Clear bit 1
 System.out.println(flags);  // Output: 5 (0101)
 ```
 
-### 4. Toggling a Bit
+#### 4. Toggling a Bit
 
 ```java
 int flags = 5;              // 0101
@@ -336,7 +335,7 @@ flags = flags ^ (1 << 2);   // Toggle bit 2
 System.out.println(flags);  // Output: 1 (0001)
 ```
 
-### 5. Multiplying/Dividing by Powers of 2
+#### 5. Multiplying/Dividing by Powers of 2
 
 ```java
 int num = 10;
@@ -347,24 +346,23 @@ System.out.println("10 << 2: " + multiplied);  // Output: 40
 System.out.println("10 >> 1: " + divided);     // Output: 5
 ```
 
----
+***
 
-## Summary Table
+### Summary Table
 
-| Operator | Name | Description | Example |
-|----------|------|-------------|---------|
-| `&` | Bitwise AND | Returns 1 if both bits are 1 | `5 & 3 = 1` |
-| `\|` | Bitwise OR | Returns 1 if at least one bit is 1 | `5 \| 3 = 7` |
-| `^` | Bitwise XOR | Returns 1 if bits differ | `5 ^ 3 = 6` |
-| `~` | Bitwise NOT | Inverts all bits | `~5 = -6` |
-| `<<` | Left Shift | Shifts left, fills with 0s | `5 << 1 = 10` |
-| `>>` | Right Shift | Shifts right, fills with sign bit | `20 >> 1 = 10` |
-| `>>>` | Unsigned Right Shift | Shifts right, fills with 0s | `-1 >>> 1 = Large positive` |
+| Operator | Name                 | Description                        | Example                     |
+| -------- | -------------------- | ---------------------------------- | --------------------------- |
+| `&`      | Bitwise AND          | Returns 1 if both bits are 1       | `5 & 3 = 1`                 |
+| `\|`     | Bitwise OR           | Returns 1 if at least one bit is 1 | `5 \| 3 = 7`                |
+| `^`      | Bitwise XOR          | Returns 1 if bits differ           | `5 ^ 3 = 6`                 |
+| `~`      | Bitwise NOT          | Inverts all bits                   | `~5 = -6`                   |
+| `<<`     | Left Shift           | Shifts left, fills with 0s         | `5 << 1 = 10`               |
+| `>>`     | Right Shift          | Shifts right, fills with sign bit  | `20 >> 1 = 10`              |
+| `>>>`    | Unsigned Right Shift | Shifts right, fills with 0s        | `-1 >>> 1 = Large positive` |
 
+***
 
----
-
-## Lesson Speech
+### Lesson Speech
 
 Welcome to this guide about how to use advanced operators in Java. After this guide, you'll be able to describe the different types of advanced operators and explain how they work. **Advanced operators, such as bitwise and shift operators in Java, go beyond basic arithmetic, comparison, and logical operators.** They are primarily used for **low-level programming tasks**, such as **optimising performance or working with hardware**. They can also be used for graphics programming, cryptography, and so on. **Bitwise operators are used for working with binary data, and shift operators are for shifting bits and numbers.** **Assignment operators are used to assign values to variables.**
 
