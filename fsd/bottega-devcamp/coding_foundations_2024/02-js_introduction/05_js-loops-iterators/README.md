@@ -1,2 +1,0 @@
-# 05\_JS-LOOPS-ITERATORS
-
