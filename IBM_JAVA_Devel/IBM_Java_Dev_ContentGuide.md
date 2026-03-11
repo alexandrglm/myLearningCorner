@@ -286,13 +286,42 @@
 |     | #       | Type | Title                                                     | Date          |
 | --- | ------- | ---- | --------------------------------------------------------- | ------------- |
 | [X] | 05-001  | Lab Grading | Final Project Overview  | 2025-11-20    |
-| [ ] | 05-002  | Lab grading     | FInal Project            | |
-| [ ] | 05-003  | LAb Assesment     | Final Project Assesment                  |  |
-| [ ] | 05-004  | Grading | Final   |    |
+| [X] | 05-002  | Lab grading     | FInal Project            | |
+| [X] | 05-003  | LAb Assesment     | Final Project Assesment                  |  |
+| [X] | 05-004  | Grading | Final   |    |
 
 |     | #       | Type | Title                                                     | Date          |
 | --- | ------- | ---- | --------------------------------------------------------- | ------------- |
-| [ ] | 05-005  |      | Course Wrap-up                 |    |
-| [ ] | 05-006 |      | Course 2 Glossary                 |  |
-| [ ] | 05-007 |      | Course 2 Cheatsheet                 |     |
+| [X] | 05-005  |      | Course Wrap-up                 |    |
+| [X] | 05-006 |      | Course 2 Glossary                 |  |
+| [X] | 05-007 |      | Course 2 Cheatsheet                 |     |
 
+---
+
+### COURSE 3: Object Oriented Programming in Java
+***
+
+### MODULE 1: Object-Oriented Programming Basics
+
+|     | #       | Type | Title                                                     | Date |
+| --- | ------- | ---- | --------------------------------------------------------- | ---- |
+| [ ] | 01-001  | | Course Introduction                                      | |
+| [ ] | 01-002  | Reading | Course Overview                                        | |
+| [ ] | 01-003  | Tips | Helpful Tips for Course Completion                        | |
+| [ ] | 01-004  |  | Introduction to Object-Oriented Programming              | |
+| [ ] | 01-005  |  | Using Classes and Objects in Java                        | |
+| [ ] | 01-006  | Lab | Lab: Create Your First Class                              | |
+| [ ] | 01-007  |  | Using Encapsulation in Java                              | |
+| [ ] | 01-008  |  | Building Java Constructors                               | |
+| [ ] | 01-009  | Lab | Lab: Build Your Own Java Constructor                      | |
+| [ ] | 01-010  | Practice | Practice Quiz: Object Oriented Programming Basics     | |
+| [ ] | 01-011  | Optional | Case Study Introduction                               | |
+| [ ] | 01-012  | Optional | Case Study: Object-Oriented Programming Basics       | |
+| [ ] | 01-013  |  | Coding Challenge: OOP Basics in Java                 | |
+
+|     | #       | Type | Title                                                     | Date |
+| --- | ------- | ---- | --------------------------------------------------------- | ---- |
+| [ ] | 01-014  | Summary | Summary: Object Oriented Programming Basics in Java   | |
+| [ ] | 01-015  | Glossary | Glossary: Object Oriented Programming Basics in Java | |
+| [ ] | 01-016  | Cheatsheet | Coding Cheat Sheet: OOP Basics in Java             | |
+| [ ] | 01-017  | Graded | Module 1 Graded Quiz: Object Oriented Programming Basics | |
