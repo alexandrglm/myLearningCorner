@@ -299,25 +299,27 @@
 ---
 
 ### COURSE 3: Object Oriented Programming in Java
-***
+
+|     | #       | Type | Title                                                     | Date |
+| --- | ------- | ---- | --------------------------------------------------------- | ---- |
+| [X] | 00-001  | | Course Introduction                                      | 2026-03-11 |
+| [X] | 00-002  | Reading | Course Overview                                        | 2026-03-11 |
+| [X] | 00-003  | Tips | Helpful Tips for Course Completion                        | 2026-03-11 |
 
 ### MODULE 1: Object-Oriented Programming Basics
 
 |     | #       | Type | Title                                                     | Date |
 | --- | ------- | ---- | --------------------------------------------------------- | ---- |
-| [ ] | 01-001  | | Course Introduction                                      | |
-| [ ] | 01-002  | Reading | Course Overview                                        | |
-| [ ] | 01-003  | Tips | Helpful Tips for Course Completion                        | |
-| [ ] | 01-004  |  | Introduction to Object-Oriented Programming              | |
-| [ ] | 01-005  |  | Using Classes and Objects in Java                        | |
-| [ ] | 01-006  | Lab | Lab: Create Your First Class                              | |
-| [ ] | 01-007  |  | Using Encapsulation in Java                              | |
-| [ ] | 01-008  |  | Building Java Constructors                               | |
-| [ ] | 01-009  | Lab | Lab: Build Your Own Java Constructor                      | |
-| [ ] | 01-010  | Practice | Practice Quiz: Object Oriented Programming Basics     | |
-| [ ] | 01-011  | Optional | Case Study Introduction                               | |
-| [ ] | 01-012  | Optional | Case Study: Object-Oriented Programming Basics       | |
-| [ ] | 01-013  |  | Coding Challenge: OOP Basics in Java                 | |
+| [X] | 01-001  | Properties, Methods, Inheritance, Encapsulation, Polymorphism | Introduction to Object-Oriented Programming              | 2026-03-11 |
+| [X] | 01-002  | Subclasses, Declaration, Instantiation, Initialisation, Invokation. Access Modifiers (Public, Private, Protected, Default). Non-Access Modifiers (Static, Final, Abstract) | Using Classes and Objects in Java                        | 2026-03-11 |
+| [ ] | 01-003  | Lab | Lab: Create Your First Class                              | |
+| [ ] | 01-004  |  | Using Encapsulation in Java                              | |
+| [ ] | 01-005  |  | Building Java Constructors                               | |
+| [ ] | 01-006  | Lab | Lab: Build Your Own Java Constructor                      | |
+| [ ] | 01-007  | Practice | Practice Quiz: Object Oriented Programming Basics     | |
+| [ ] | 01-008  | Optional | Case Study Introduction                               | |
+| [ ] | 01-009  | Optional | Case Study: Object-Oriented Programming Basics       | |
+| [ ] | 01-010  |  | Coding Challenge: OOP Basics in Java                 | |
 
 |     | #       | Type | Title                                                     | Date |
 | --- | ------- | ---- | --------------------------------------------------------- | ---- |
