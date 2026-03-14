@@ -241,7 +241,7 @@
 | --- | ------- | ---- | --------------------------------------------------------- | ------------- |
 | [X] | 03-001  | `if`, `if-else-if`, `switch` | Using Conditional Statements      | 2025-11-15    |
 | [X] | 03-002  | `for`, `while`, `do-while` | Introduction to Loops in Java       | 2025-11-15    |
-| [X] | 03-003  | Arrays, Iteration, CMD Args, `.toCharArray()p  | Lab: Array Manipulation and For Loops                    | 2025-11-17    |
+| [X] | 03-003  | Arrays, Iteration, CMD Args, `.toCharArray()`  | Lab: Array Manipulation and For Loops                    | 2025-11-17    |
 | [X] | 03-004  | `.length()`, `.charAt()`, `concat()`, `equals()`, `.substring()`, `split()`, `.join()`, `.toLowerCase()`, `.toUpperCase()`, `.strip()`, `.trim()`, `.replace()` |  Working with Strings in Java  | 2025-11-17    |
 | [X] | 03-004b  | `.contains()`, `.startsWith()`, `.endsWith()`, `.indexOf()`, `.lastIndexOf()`, `.replaceAll(regex)`, `.replaceFirst(regex)`, `.isEmpty()`/`.isBlank()`, `.matches()`, `.repeat()`, `.indent()`, `.transform()`, `.valueOf()`, `.format()`, ... |  String Methods Expanded  | 2025-11-17    |
 | [X] | 03-005  | | Lab: Working with Strings                                | 2025-11-17    |
@@ -312,10 +312,10 @@
 | --- | ------- | ---- | --------------------------------------------------------- | ---- |
 | [X] | 01-001  | Properties, Methods, Inheritance, Encapsulation, Polymorphism | Introduction to Object-Oriented Programming              | 2026-03-11 |
 | [X] | 01-002  | Subclasses, Declaration, Instantiation, Initialisation, Invokation. Access Modifiers (Public, Private, Protected, Default). Non-Access Modifiers (Static, Final, Abstract) | Using Classes and Objects in Java                        | 2026-03-11 |
-| [ ] | 01-003  | Lab | Lab: Create Your First Class                              | |
-| [ ] | 01-004  |  | Using Encapsulation in Java                              | |
-| [ ] | 01-005  |  | Building Java Constructors                               | |
-| [ ] | 01-006  | Lab | Lab: Build Your Own Java Constructor                      | |
+| [X] | 01-003  | Classes | Lab: Create Your First Class                              | 2026-03-12 |
+| [X] | 01-004  | Encapsulation for Control, Flexibility, Security. Access Modifiers: `private`, `public`, `protected`, Default| Using Encapsulation in Java                              | 2026-03-14 |
+| [X] | 01-005  | Publics, Parametrised, NoArgs  | Building Java Constructors                               | 2026-03-14 |
+| [ ] | 01-006  | Constructor | Lab: Build Your Own Java Constructor                      | |
 | [ ] | 01-007  | Practice | Practice Quiz: Object Oriented Programming Basics     | |
 | [ ] | 01-008  | Optional | Case Study Introduction                               | |
 | [ ] | 01-009  | Optional | Case Study: Object-Oriented Programming Basics       | |
