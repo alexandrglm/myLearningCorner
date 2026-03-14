@@ -315,9 +315,12 @@
 | [X] | 01-003  | Classes | Lab: Create Your First Class                              | 2026-03-12 |
 | [X] | 01-004  | Encapsulation for Control, Flexibility, Security. Access Modifiers: `private`, `public`, `protected`, Default| Using Encapsulation in Java                              | 2026-03-14 |
 | [X] | 01-005  | Publics, Parametrised, NoArgs  | Building Java Constructors                               | 2026-03-14 |
-| [ ] | 01-006  | Constructor | Lab: Build Your Own Java Constructor                      | |
-| [ ] | 01-007  | Practice | Practice Quiz: Object Oriented Programming Basics     | |
-| [ ] | 01-008  | Optional | Case Study Introduction                               | |
+| [X] | 01-006  | Constructors, `.equals()`, `@Override`, immutable `final` encapsulation,   | Lab: Build Your Own Java Constructor                      | 2026-03-14 |
+| [X] | 01-007  | Practice | Practice Quiz: Object Oriented Programming Basics     | 2026-03-14 |
+
+|     | #       | Type | Title                                                     | Date |
+| --- | ------- | ---- | --------------------------------------------------------- | ---- |
+| [ ] | 01-008  | Optional | Case Study Introduction: Leave Tracking System:           | |
 | [ ] | 01-009  | Optional | Case Study: Object-Oriented Programming Basics       | |
 | [ ] | 01-010  |  | Coding Challenge: OOP Basics in Java                 | |
 
