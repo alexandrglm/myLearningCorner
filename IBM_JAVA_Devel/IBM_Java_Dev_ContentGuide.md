@@ -324,9 +324,9 @@
 | [X] | 01-009  | Lab, Case Study, Constructors, `.clone()`, `@Override`, `<ArrayList>`, `.size()`, `isEmpty()`  | Case Study: Object-Oriented Programming Basics       | 2026-03-15 |
 | [X] | 01-010  | Lab, Case Study, Classes, Constructors | Coding Challenge: OOP Basics in Java                 | 2026-03-15 |
 
-|     | #       | Type | Title                                                     | Date |
-| --- | ------- | ---- | --------------------------------------------------------- | ---- |
-| [ ] | 01-014  | Summary | Summary: Object Oriented Programming Basics in Java   | |
-| [ ] | 01-015  | Glossary | Glossary: Object Oriented Programming Basics in Java | |
-| [ ] | 01-016  | Cheatsheet | Coding Cheat Sheet: OOP Basics in Java             | |
-| [ ] | 01-017  | Graded | Module 1 Graded Quiz: Object Oriented Programming Basics | |
+|     | #       | Type | Date |
+| --- | ------- | ---- |  ---- |
+| [X] | 01-011  | Summary | 2026-03-15 |
+| [X] | 01-012  | Glossary | 2026-03-15  |
+| [X] | 01-013  | Cheatsheet | 2026-03-15 |
+| [X] | 01-014  | Grade | 2026-03-15 |
