@@ -339,7 +339,7 @@
 
 |     | #      | Type | Title                                                                           | Date |
 | --- | ------ | ---- | ------------------------------------------------------------------------------- | ---- |
-| [ ] | 02-001 |      | Understanding Inheritance in Java                                               |      |
+| [X] | 02-001 | Inheritance, Superclass, Subclass, `extends`. Types: Single Inheritance, Multilevel, Hierarchical, Multiple (Using `interfaces) | Understanding Inheritance in Java                                               | 2026-03-15 |
 | [ ] | 02-002 |      | Exploring Polymorphism                                                          |      |
 | [ ] | 02-003 |      | Lab: Implementing Polymorphism                                                  |      |
 | [ ] | 02-004 |      | Applying Abstractions in Java                                                   |      |
