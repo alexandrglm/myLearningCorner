@@ -320,9 +320,9 @@
 
 |     | #       | Type | Title                                                     | Date |
 | --- | ------- | ---- | --------------------------------------------------------- | ---- |
-| [X] | 01-008  | Lab, Case Study | Case Study Introduction: Leave Tracking System:           |  2026-03-15 |
-| [X] | 01-009  | Lab, Case Study, Constructors, `.clone()`, `@Override`, `<ArrayList>`, `.size()`, `isEmpty()`  | Case Study: Object-Oriented Programming Basics       |  2026-03-15 |
-| [ ] | 01-010  |  | Coding Challenge: OOP Basics in Java                 | |
+| [X] | 01-008  | Lab, Case Study | Case Study Introduction: Leave Tracking System:           | 2026-03-15 |
+| [X] | 01-009  | Lab, Case Study, Constructors, `.clone()`, `@Override`, `<ArrayList>`, `.size()`, `isEmpty()`  | Case Study: Object-Oriented Programming Basics       | 2026-03-15 |
+| [X] | 01-010  | Lab, Case Study, Classes, Constructors | Coding Challenge: OOP Basics in Java                 | 2026-03-15 |
 
 |     | #       | Type | Title                                                     | Date |
 | --- | ------- | ---- | --------------------------------------------------------- | ---- |
