@@ -330,3 +330,29 @@
 | [X] | 01-012  | Glossary | 2026-03-15  |
 | [X] | 01-013  | Cheatsheet | 2026-03-15 |
 | [X] | 01-014  | Grade | 2026-03-15 |
+
+
+
+---
+
+### MODULE 2: OOP Advanced
+
+|     | #      | Type | Title                                                                           | Date |
+| --- | ------ | ---- | ------------------------------------------------------------------------------- | ---- |
+| [ ] | 02-001 |      | Understanding Inheritance in Java                                               |      |
+| [ ] | 02-002 |      | Exploring Polymorphism                                                          |      |
+| [ ] | 02-003 |      | Lab: Implementing Polymorphism                                                  |      |
+| [ ] | 02-004 |      | Applying Abstractions in Java                                                   |      |
+| [ ] | 02-005 |      | Using Inner Classes in Java                                                     |      |
+| [ ] | 02-006 |      | Lab: Designing Interfaces and Abstract Classes                                  |      |
+| [ ] | 02-007 |      | (Optional) Lab: Case Study: Advanced Object Oriented Programming Concepts       |      |
+| [ ] | 02-008 |      | (Optional) Lab: Coding Challenge: Advanced Object Oriented Programming Concepts |      |
+| [ ] | 02-009 |      | Practice Quiz: Advanced Object Oriented Programming Concepts in Java            |      |
+
+|     | #      |  Title                     | Date |
+| --- | ------ |  --------------------------| ---- |
+| [ ] | 02-010 |  Summary                   |      |
+| [ ] | 02-011 |  Glossary                  |      |
+| [ ] | 02-012 |  Coding Cheat Sheet        |      |
+| [ ] | 02-013 |  Grade                     |      |
+
