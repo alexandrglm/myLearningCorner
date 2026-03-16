@@ -342,7 +342,7 @@
 | [X] | 02-001 | Inheritance, Superclass, Subclass, `extends`. Types: Single Inheritance, Multilevel, Hierarchical, Multiple (Using `interfaces) | Understanding Inheritance in Java                                               | 2026-03-15 |
 | [X] | 02-002 | Compile-time type (Overloaded), Runtime type (Overrided). Virtual method resolution (as default for non-statics) | Exploring Polymorphism                                                          | 2026-03-15 |
 | [X] | 02-003 | Overloaded methods in subclasses. `.contat()`, `Array[]`  | Lab: Implementing Polymorphism                                                  | 2026-03-15 |
-| [ ] | 02-004 |      | Applying Abstractions in Java                                                   |      |
+| [X] | 02-004 | Interfaces (Abstract Methods, Method Signatures, Multiple Inheritance, Public Methods).  Abstract Classes (Abstract Methods, Concrete Methods, Single Inheritance)  | Applying Abstractions in Java                                                   | 2026-03-15 |
 | [ ] | 02-005 |      | Using Inner Classes in Java                                                     |      |
 | [ ] | 02-006 |      | Lab: Designing Interfaces and Abstract Classes                                  |      |
 | [ ] | 02-007 |      | (Optional) Lab: Case Study: Advanced Object Oriented Programming Concepts       |      |
