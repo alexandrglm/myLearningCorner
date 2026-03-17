@@ -345,9 +345,9 @@
 | [X] | 02-004 | Interfaces (Abstract Methods, Method Signatures, Multiple Inheritance, Public Methods).  Abstract Classes (Abstract Methods, Concrete Methods, Single Inheritance)  | Applying Abstractions in Java                                                   | 2026-03-15 |
 | [X] | 02-005 | Types: Non-Static, Static Nested, Method-local, Anonymous     | Using Inner Classes in Java                                                     | 2026-03-15 |
 | [X] | 02-006 | Interfaces, `implements`, Cloneable `extends` | Lab: Designing Interfaces and Abstract Classes                                  | 2026-03-15 |
-| [ ] | 02-007 |      | (Optional) Lab: Case Study: Advanced Object Oriented Programming Concepts       |      |
+| [X] | 02-007 | Leave Tracking System, PART 2 | Lab: Case Study1 PART 2: Advanced Object Oriented Programming Concepts       | 2026-03-17 |
 | [ ] | 02-008 |      | (Optional) Lab: Coding Challenge: Advanced Object Oriented Programming Concepts |      |
-| [ ] | 02-009 |      | Practice Quiz: Advanced Object Oriented Programming Concepts in Java            |      |
+| [X] | 02-009 |      | Grace: Advanced Object Oriented Programming Concepts in Java            | 2026-03-17 |
 
 |     | #      |  Title                     | Date |
 | --- | ------ |  --------------------------| ---- |
