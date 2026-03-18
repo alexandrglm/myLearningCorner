@@ -362,7 +362,7 @@
 
 |     | #      | Type | Title                                                              | Date |
 | --- | ------ | ---- | ------------------------------------------------------------------ | ---- |
-| [ ] | 03-001 |      | Introduction to the Java Collections Framework                     |      |
+| [X] | 03-001 | Lists: `ArrayList`, `LinkedList`. Sets: `HashSet`, `LinkSet`. Maps: `HashMap`, `TreeMap` | Introduction to the Java Collections Framework                     | 2026-03-18 |
 | [ ] | 03-002 |      | Working with Lists: ArrayList and LinkedList                       |      |
 | [ ] | 03-003 |      | Lab: Create a Simple To-Do List Using ArrayList                    |      |
 | [ ] | 03-004 |      | Exploring Sets: HashSet and TreeSet                                |      |
