@@ -363,7 +363,7 @@
 |     | #      | Type | Title                                                              | Date |
 | --- | ------ | ---- | ------------------------------------------------------------------ | ---- |
 | [X] | 03-001 | Lists: `ArrayList`, `LinkedList`. Sets: `HashSet`, `LinkSet`. Maps: `HashMap`, `TreeMap` | Introduction to the Java Collections Framework                     | 2026-03-18 |
-| [ ] | 03-002 |      | Working with Lists: ArrayList and LinkedList                       |      |
+| [X] | 03-002 | `<ArrayList>`: Faster Access, Slower Edit, Init 10  - `<LinkedList>`: Slower Access, Faster Edit, Inits Empty | Working with Lists: ArrayList and LinkedList                       | 2026-03-18 |
 | [ ] | 03-003 |      | Lab: Create a Simple To-Do List Using ArrayList                    |      |
 | [ ] | 03-004 |      | Exploring Sets: HashSet and TreeSet                                |      |
 | [ ] | 03-005 |      | Using Queues in Java                                               |      |
