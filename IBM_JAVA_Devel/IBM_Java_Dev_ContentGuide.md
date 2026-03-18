@@ -346,13 +346,16 @@
 | [X] | 02-005 | Types: Non-Static, Static Nested, Method-local, Anonymous     | Using Inner Classes in Java                                                     | 2026-03-15 |
 | [X] | 02-006 | Interfaces, `implements`, Cloneable `extends` | Lab: Designing Interfaces and Abstract Classes                                  | 2026-03-15 |
 | [X] | 02-007 | Leave Tracking System, PART 2 | Lab: Case Study1 PART 2: Advanced Object Oriented Programming Concepts       | 2026-03-17 |
-| [ ] | 02-008 |      | (Optional) Lab: Coding Challenge: Advanced Object Oriented Programming Concepts |      |
-| [X] | 02-009 |      | Grace: Advanced Object Oriented Programming Concepts in Java            | 2026-03-17 |
+| [X] | 02-008 | Interaces, Abstraction. Polymorphism | Lab: Coding Challenge: Advanced Object Oriented Programming Concepts | 2026-03-18 |
+| [X] | 02-009 | | Grade: Advanced Object Oriented Programming Concepts in Java            | 2026-03-17 |
 
 |     | #      |  Title                     | Date |
 | --- | ------ |  --------------------------| ---- |
-| [ ] | 02-010 |  Summary                   |      |
-| [ ] | 02-011 |  Glossary                  |      |
-| [ ] | 02-012 |  Coding Cheat Sheet        |      |
-| [ ] | 02-013 |  Grade                     |      |
+| [X] | 02-010 |  Summary                   | 2026-03-17 |
+| [X] | 02-011 |  Glossary                  | 2026-03-17 |
+| [X] | 02-012 |  Coding Cheat Sheet        | 2026-03-17 |
+| [X] | 02-013 |  Grade                     | 2026-03-17 |
+
+
+
 
