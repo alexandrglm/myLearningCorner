@@ -356,6 +356,31 @@
 | [X] | 02-012 |  Coding Cheat Sheet        | 2026-03-17 |
 | [X] | 02-013 |  Grade                     | 2026-03-17 |
 
+---
+
+## MODULE 3:    Collections
+
+|     | #      | Type | Title                                                              | Date |
+| --- | ------ | ---- | ------------------------------------------------------------------ | ---- |
+| [ ] | 03-001 |      | Introduction to the Java Collections Framework                     |      |
+| [ ] | 03-002 |      | Working with Lists: ArrayList and LinkedList                       |      |
+| [ ] | 03-003 |      | Lab: Create a Simple To-Do List Using ArrayList                    |      |
+| [ ] | 03-004 |      | Exploring Sets: HashSet and TreeSet                                |      |
+| [ ] | 03-005 |      | Using Queues in Java                                               |      |
+| [ ] | 03-006 |      | Using Maps: HashMap and TreeMap                                    |      |
+| [ ] | 03-007 |      | Lab: Implement a Phonebook Using a HashMap                         |      |
+| [ ] | 03-008 |      | Using Collections in Real-World Scenarios                          |      |
+| [ ] | 03-009 |      | (Optional) Lab: Case Study: Working with Collections in Java       |      |
+| [ ] | 03-010 |      | (Optional) Lab: Coding Challenge: Working with Collections in Java |      |
+| [ ] | 03-011 |      | Practice Quiz: Working with Collections in Java                    |      |
+| [ ] | 03-012 |      | Grade: Working with Collections in Java                            |      |
+
+|     | #      | Title              | Date |
+| --- | ------ | ------------------ | ---- |
+| [ ] | 03-013 | Summary            |      |
+| [ ] | 03-014 | Glossary           |      |
+| [ ] | 03-015 | Coding Cheat Sheet |      |
+| [ ] | 03-016 | Grade              |      |
 
 
 
