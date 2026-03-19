@@ -365,7 +365,7 @@
 | [X] | 03-001 | Lists: `ArrayList`, `LinkedList`. Sets: `HashSet`, `LinkSet`. Maps: `HashMap`, `TreeMap` | Introduction to the Java Collections Framework                     | 2026-03-18 |
 | [X] | 03-002 | `<ArrayList>`: Faster Access, Slower Edit, Init 10  - `<LinkedList>`: Slower Access, Faster Edit, Inits Empty | Working with Lists: ArrayList and LinkedList                       | 2026-03-18 |
 | [X] | 03-003 | `ArrayList<>`, `Collections<>`, `.sort()`, `Comparator<>`, `Integer.compare(int1, int2)`, `forEach( singleVar -> {})`. Method Reference `arrayListVar.sort(Class::methodToReference)`  | Lab: Create a Simple To-Do List Using ArrayList                    | 2026-03-18 |
-| [ ] | 03-004 |      | Exploring Sets: HashSet and TreeSet                                |      |
+| [X] | 03-004 | Sets, `HashSet`: Hast tables, NO order, Allows `null`, Faster - `TreeSet`: Red/Black tree nodes, Ordered, No `null`, Slower    | Exploring Sets: HashSet and TreeSet                                | 2026-03-19 |
 | [ ] | 03-005 |      | Using Queues in Java                                               |      |
 | [ ] | 03-006 |      | Using Maps: HashMap and TreeMap                                    |      |
 | [ ] | 03-007 |      | Lab: Implement a Phonebook Using a HashMap                         |      |
