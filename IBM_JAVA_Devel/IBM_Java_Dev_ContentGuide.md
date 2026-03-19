@@ -367,7 +367,7 @@
 | [X] | 03-003 | `ArrayList<>`, `Collections<>`, `.sort()`, `Comparator<>`, `Integer.compare(int1, int2)`, `forEach( singleVar -> {})`. Method Reference `arrayListVar.sort(Class::methodToReference)`  | Lab: Create a Simple To-Do List Using ArrayList                    | 2026-03-18 |
 | [X] | 03-004 | Sets, `HashSet`: Hast tables, NO order, Allows `null`, Faster - `TreeSet`: Red/Black tree nodes, Ordered, No `null`, Slower    | Exploring Sets: HashSet and TreeSet                                | 2026-03-19 |
 | [X] | 03-005 | `.offer()`, `.poll()`, `.peek()` | Using Queues in Java                                               | 2026-03-19 |
-| [ ] | 03-006 |      | Using Maps: HashMap and TreeMap                                    |      |
+| [X] | 03-006 | Maps, `HashMaps`: Hash Tables, NO Order, ONE `null`key, multiple `null` values, Faster  - `TreeMaps`: Reb/Black tree, Ordered **by keys**, NO `null` keys, multiple `null` values`,  Slower | Using Maps: HashMap and TreeMap                                    | 2026-03-19 |
 | [ ] | 03-007 |      | Lab: Implement a Phonebook Using a HashMap                         |      |
 | [ ] | 03-008 |      | Using Collections in Real-World Scenarios                          |      |
 | [ ] | 03-009 |      | (Optional) Lab: Case Study: Working with Collections in Java       |      |

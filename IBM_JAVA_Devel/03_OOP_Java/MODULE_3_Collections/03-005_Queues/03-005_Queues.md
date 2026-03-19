@@ -1,5 +1,7 @@
 # 03-005:   Queues
 
+![](./03-005_IMG4.png)
+
 ---
 
 ## What is a Queue?
