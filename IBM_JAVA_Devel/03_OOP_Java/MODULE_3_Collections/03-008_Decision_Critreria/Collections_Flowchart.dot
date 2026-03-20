@@ -1,0 +1,85 @@
+digraph CollectionsDecisionCriteria {
+
+    rankdir=TD;
+
+    node [
+        shape=box, style=rounded, fontname=Helvetica
+    ];
+
+    edge [
+        fontname=Georgia
+    ];
+
+
+    start [
+        label=<<B>KEY-VALUE</B><BR/><BR/> needed ?>, shape=diamond, style="filled", fillcolor=lightgoldenrodyellow
+    ];
+
+
+
+    mapQuestion [
+        label=<<B>.sort() MAP</B><BR/><BR/> needed ?>, shape=diamond, style="filled", fillcolor=lightgoldenrodyellow
+    ];
+
+    collectionQuestion [
+        label=<<B>UNIQUE ITEMS</B><BR/><BR/> needed ?>, shape=diamond, style="filled", fillcolor=lightgoldenrodyellow
+    ];
+
+
+    setQuestion [
+        label=<<B>.sort() ITEMS</B><BR/><BR/> needed ?>, shape=diamond, style="filled", fillcolor=lightgoldenrodyellow
+    ];
+
+    listQuestion [
+        label=<FREQUENT<BR/><BR/><B>.put() / .remove()</B> ?>, shape=diamond, style="filled", fillcolor=lightgoldenrodyellow
+    ];
+
+
+
+    treeMap [
+        label=<<B>TreeMap</B>>, style="rounded,filled", fillcolor=greenyellow, shape=box, penwidth=2
+    ];
+
+
+    hashMap [
+        label=<<B>HashMap</B>>, style="rounded,filled", fillcolor=greenyellow, shape=box, penwidth=2
+    ];
+
+
+    treeSet [
+        label=<<B>TreeSet</B>>, style="rounded,filled", fillcolor=greenyellow, shape=box, penwidth=2
+    ];
+
+
+    hashSet [
+        label=<<B>HashSet</B>>, style="rounded,filled", fillcolor=greenyellow, shape=box, penwidth=2
+    ];
+
+
+    linkedList [
+        label=<<B>LinkedList</B>>, style="rounded,filled", fillcolor=greenyellow, shape=box, penwidth=2
+    ];
+
+
+    arrayList [
+        label=<<B>ArrayList</B>>, style="rounded,filled", fillcolor=greenyellow, shape=box, penwidth=2
+    ];
+
+
+
+
+    start -> mapQuestion [label=" YES"];
+    start -> collectionQuestion [label=" NO"];
+
+    mapQuestion -> treeMap [label=" YES"];
+    mapQuestion -> hashMap [label=" NO"];
+
+    collectionQuestion -> setQuestion [label=" YES"];
+    collectionQuestion -> listQuestion [label=" NO"];
+
+    setQuestion -> treeSet [label=" YES"];
+    setQuestion -> hashSet [label=" NO"];
+
+    listQuestion -> linkedList [label=" YES"];
+    listQuestion -> arrayList [label=" NO"];
+}

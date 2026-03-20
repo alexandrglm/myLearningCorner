@@ -369,7 +369,7 @@
 | [X] | 03-005 | `.offer()`, `.poll()`, `.peek()` | Using Queues in Java                                               | 2026-03-19 |
 | [X] | 03-006 | Maps, `HashMaps`: Hash Tables, NO Order, ONE `null`key, multiple `null` values, Faster  - `TreeMaps`: Reb/Black tree, Ordered **by keys**, NO `null` keys, multiple `null` values`,  Slower | Using Maps: HashMap and TreeMap                                    | 2026-03-19 |
 | [X] | 03-007 | `.containsKey()`, `.get(value)`, `put(arg1, arg2)`, `.size()`, `.keySet()`, `.remove()`,  IO `PrintWriter` `FileWriter` - Map of List of Key-Value Pairs `HashMap<String, Object> hashmapVarName = new HashMap<>()` & `Object objectVarName = new SuperClass().new Object(key1, key2, key3, key4...)`, `.values()`   | Lab: Implement a Phonebook Using a HashMap                         | 2026-03-19 |
-| [ ] | 03-008 |      | Using Collections in Real-World Scenarios                          |      |
+| [X] | 03-008 | Collections decicion criteria, flowchart | Using Collections in Real-World Scenarios                          | 2026-03-20 |
 | [ ] | 03-009 |      | (Optional) Lab: Case Study: Working with Collections in Java       |      |
 | [ ] | 03-010 |      | (Optional) Lab: Coding Challenge: Working with Collections in Java |      |
 | [ ] | 03-011 |      | Practice Quiz: Working with Collections in Java                    |      |
