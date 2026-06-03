@@ -3,14 +3,14 @@
 ## MODULE 1 - Arquitectura BI
 
 
-| Status | Guide  | Type | Title                                                   | Date |
-| ------ | ------ | ---- | ------------------------------------------------------- | ---- |
-| [ ]    | 01-001 |      | ¿Qué es la inteligencia de negocios?                    |      |
-| [ ]    | 01-002 |      | Tecnologías que forman parte de Business Intelligence.  |      |
-| [ ]    | 01-003 |      | La implantación de un sistema de Business Intelligence. |      |
-| [ ]    | 01-004 |      | Análisis exploratorio de datos (EDA).                   |      |
-| [ ]    | 01-005 |      | Fundamentos de la visualización efectiva de datos.      |      |
-| [ ]    | 01-006 |      | Data Mining y ventas.                                   |      |
+| Status | Guide  | Type | Title                                                   | Date       |
+| ------ | ------ | ---- | ------------------------------------------------------- | ---------- |
+| [X]    | 01-001 |  Definiciones | ¿Qué es la inteligencia de negocios?                    | 2026-06-03 |
+| [X]    | 01-002 | | Tecnologías que forman parte de Business Intelligence.  | 2026-06-03 |
+| [X]    | 01-003 | | La implantación de un sistema de Business Intelligence. | 2026-06-03 |
+| [X]    | 01-004 | EDA | Análisis exploratorio de datos (EDA).                   | 2026-06-03 |
+| [X]    | 01-005 |      | Fundamentos de la visualización efectiva de datos.      | 2026-06-03 |
+| [ ]    | 01-006 | Casos Prácticos (1): Ventas | Data Mining y ventas.                                   |      |
 | [ ]    | 01-007 |      | Herramientas para la fidelización.                      |      |
 | [ ]    | 01-008 |      | Conceptos clave IoT.                                    |      |
 | [ ]    | 01-009 |      | La metodología CRISP.                                   |      |
