@@ -42,9 +42,8 @@ Las buenas prácticas ayudan a lograr los objetivos, coordinando de manera efect
 
 ---
 
-![](./img/01-008.png)
-
 ###  ¿Cuándo no Existe una Estrategia de BI?
+![](./img/01-008.png)
 
 Es posible detectar que no existe una estrategia cuando detectamos algunos de los siguientes puntos dentro de una organización:
 
@@ -60,33 +59,29 @@ Es posible detectar que no existe una estrategia cuando detectamos algunos de lo
 ---
 
 ###	Implantación de una Estrategia de Inteligencia de Negocio
-
 ![](./img/01-009.png)
 ![](./img/01-010.png)
 
-Es un proceso a largo plazo y complejo que implica múltiples departamentos, procesos y recursos entre los que es conveniente destacar:
+Es un **proceso a largo plazo y complejo** que **implica múltiples departamentos, procesos y recursos** entre los que es conveniente destacar:
 
 ####	01. Crear un Centro de Competencia de BI
-
 > Unifica conocimiento en tecnologías, metodologías, estrategia, liderado por un sponsor a nivel ejecutivo y ejecutado por analistas de negocio.
 
 ####	02. Definir Estándares
-
 > Para unificar tanto las tecnologías existentes como las futuras.
 
 ####	03. Medir los Resultados de Aplicaciones Analíticas
-
 > Mediante herramientas de data mining o similares que faciliten la toma de decisiones.
 
 ####	04. Aprender de los Éxitos y Fracasos
-
 > Revisando casos de estudio y consultando a las empresas del sector para determinar qué ha funcionado y qué no.
 
 ####	05. "Evangelizar" la Organización
-
 > Concienciar a todo el personal, desde la dirección hasta el último empleado.
 
 ---
+
+La implementación de un sistema de esta envergadura, requiere un proceso de análisis profundo dentro de la organización
 
 ![](./img/01-011.png)
 
