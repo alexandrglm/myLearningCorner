@@ -10,8 +10,8 @@
 | [X]    | 01-003 | | La implantación de un sistema de Business Intelligence. | 2026-06-03 |
 | [X]    | 01-004 | EDA | Análisis exploratorio de datos (EDA).                   | 2026-06-03 |
 | [X]    | 01-005 |      | Fundamentos de la visualización efectiva de datos.      | 2026-06-03 |
-| [ ]    | 01-006 | Casos Prácticos (1): Ventas | Data Mining y ventas.                                   |      |
-| [ ]    | 01-007 |      | Herramientas para la fidelización.                      |      |
+| [x]    | 01-006 | Casos Prácticos (1): Ventas | Data Mining y ventas. | 2026-06-04 |
+| [X]    | 01-007 | JIT, Monitorización, Utilidad del Conocimiento, Habilidades Interpersonales | Herramientas para la fidelización.                      | 2026-06-07 |
 | [ ]    | 01-008 |      | Conceptos clave IoT.                                    |      |
 | [ ]    | 01-009 |      | La metodología CRISP.                                   |      |
 
