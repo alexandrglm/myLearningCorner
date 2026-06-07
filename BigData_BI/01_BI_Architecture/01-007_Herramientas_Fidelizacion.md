@@ -245,6 +245,8 @@ Actualmente, los fabricantes buscan lograr la inteligencia empresarial a través
 ## **El Big Data en la industria 4.0**
 ![](./01-063.png)
 
+> La implantación de **sensores** en los equipos/máquinas industriales ha generado un volumen de datos que deben ser usados para la organización de las operaciones.
+
 ### **La interconexión entre los sensores, los sistemas y los ordenadores**
 
 Permite incrementar la capacidad de análisis de grandes cantidades de datos, todo ello posible gracias a la existencia de máquinas inteligentes que permiten analizar y visualizar esos datos para que los equipos empresariales puedan tomar decisiones con conocimiento de causa.
