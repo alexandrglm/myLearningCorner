@@ -1,6 +1,6 @@
 # 01-007:	Herramientas para la fidelización
 
-![](./01-037.png)
+![](./img/01-037.png)
 
 Las RRSS han cambiado las normas del márketing y las ventas.
 
@@ -10,7 +10,7 @@ Las RRSS han cambiado las normas del márketing y las ventas.
 
 ---
 
-![](./01-038.png)
+![](./img/01-038.png)
 
 ## **Ventajas de marketing JIT - 1**
 
@@ -21,7 +21,7 @@ En la era digital las campañas de marketing se centran en la personalización y
 ---
 
 ## **Ventajas de marketing JIT - 2**
-![](./01-039.png)
+![](./img/01-039.png)
 
 > **Menos del 20% de la gente impactada por técnicas de marketing son posibles clientes o consumidores del servicio.**
 
@@ -34,14 +34,14 @@ Para conseguir esto utilizan el **marketing JIT** ya que gracias al tener un car
 ---
 
 ## **Ventajas de marketing JIT - 3**
-![](./01-040.png)
+![](./img/01-040.png)
 
 Según un **estudio de Marketing Just-In-Time desarrollado por Accenture**, las empresas que utilizan este tipo de marketing son tres veces más proclives a obtener índices de crecimiento más sólidos en períodos de uno y tres años.
 
 ---
 
 ## **¿Cómo el marketing JIT consigue crear una campaña en el momento oportuno?**
-![](./01-041.png)
+![](./img/01-041.png)
 
 Este tipo de técnica de marketing tiene intrínsecamente un carácter digital, moderno y vanguardista. Esto hace que disminuyan los tiempos de creación e implementación.
 
@@ -51,10 +51,10 @@ Veamos cuáles son sus pasos:
 ---
 
 ## **Pasos para la optimización en marketing JIT**
-![](./01-042.png)
-![](./01-043.png)
-![](./01-044.png)
-![](./01-045.png)
+![](./img/01-042.png)
+![](./img/01-043.png)
+![](./img/01-044.png)
+![](./img/01-045.png)
 
 ### **PASO 01. OPTIMIZACIÓN DE OPERACIONES:**
 > Los miembros del equipo deben ser muy rápidos para llevar a cabo acciones que muevan la inteligencia del público. En otras técnicas de marketing, tomar una idea y darle forma puede llevar meses, en **el marketing JIT tiene que ser en días o semanas.**
@@ -72,7 +72,7 @@ Veamos cuáles son sus pasos:
 
 ---
 
-![](./01-046.png)
+![](./img/01-046.png)
 
 > Comprender a los consumidores y entender sus dudas o conflictos es la clave para que deseen volver.
 
@@ -81,7 +81,7 @@ Es importante reflexionar sobre **la importancia de los datos y la información*
 ---
 
 ## **Utilidad del conocimiento**
-![](./01-047.png)
+![](./img/01-047.png)
 
 El entorno digital aporta una gran información sobre una estrategia de comunicación en web y redes sociales.
 
@@ -89,7 +89,7 @@ El entorno digital aporta una gran información sobre una estrategia de comunica
 
 ---
 
-![](./01-048.png)
+![](./img/01-048.png)
 La **monitorización y la escucha** activa son una herramienta imprescindible para saber más sobre la opinión que las personas tienen sobre una marca, producto o servicio y gestionar la reputación online.
 
 Esta reputación se genera y desarrolla naturalmente cuando un producto o servicio incursiona en el mercado. Sin embargo para asegurar que esta reputación afecta de manera positiva a la empresa siempre es bueno **realizar acciones de control y gestión.**
@@ -97,20 +97,20 @@ Esta reputación se genera y desarrolla naturalmente cuando un producto o servic
 ---
 
 ## **Monitorización**
-![](./01-049.png)
+![](./img/01-049.png)
 Realizar un seguimiento de las opiniones, noticias relacionadas o comentarios para, posteriormente, recabar toda esta información y reunir datos para poder estudiarlos realizando escucha activa.
 
 ---
 
 ## **Escucha activa**
-![](./01-050.png)
+![](./img/01-050.png)
 Es un paso clave ya que hay **que procesar la información recibida e interpretarla de una forma objetiva midiendo el tono** (si es positivo, negativo o sarcástico), **de donde y de quién procede ese comentario, la relevancia del mensaje**, etc.
 
 Este tipo de detalles evidencian que por muchas herramientas que nos ayuden a dar con las claves, debemos ser nosotros quienes los interpretemos. Así la estrategia está completamente supervisada y continuamente en proceso de mejora.
 
 ---
 
-![](./01-051.png)
+![](./img/01-051.png)
 **En definitiva, estamos observando con detalle todo lo que ocurre alrededor de una marca en tiempo real.**
 
 Esta escucha activa es necesaria para conocer no sólo la percepción que los clientes tienen sobre nuestra propia marca, sino también, para conocer detalles sobre la competencia o situación del mercado que resultan útiles para construir una estrategia en constante movimiento y mejora.
@@ -120,7 +120,7 @@ Teniendo en cuenta que nunca antes hemos estado tan conectados con otras persona
 ---
 
 ## **Consejos escucha activa**
-![](./01-052.png)
+![](./img/01-052.png)
 
 Los consumidores son la parte central de la actividad de negocio y eso les convierte en la mejor fuente para detectar qué se está haciendo bien y qué cosas deben modificarse.
 
@@ -131,9 +131,9 @@ Con la llegada del social media esta faceta se ha convertido en una necesidad pe
 ---
 
 ## **Pasos para la escucha activa**
-![](./01-053.png)
-![](./01-054.png)
-![](./01-055.png)
+![](./img/01-053.png)
+![](./img/01-054.png)
+![](./img/01-055.png)
 
 ### **01. INVERSIÓN**
 Como otras funcionalidades, un correcto desarrollo de la escucha activa requiere **una inversión en herramientas de análisis** que ayuden a obtener los datos necesarios para sacar conclusiones precisas y plurales.
@@ -156,7 +156,7 @@ Escuchar ya es un gran paso, pero si no realizamos mejoras no servirá de nada. 
 ---
 
 ## **Ventajas de la escucha activa**
-![](./01-056.png)
+![](./img/01-056.png)
 
 ### **01. Control sobre la marca**
 > Es imprescindible para saber dónde y cómo se habla de la marca
@@ -188,8 +188,8 @@ Escuchar ya es un gran paso, pero si no realizamos mejoras no servirá de nada. 
 ---
 
 ## **Herramientas de monitorización y optimización**
-![](./01-057.png)
-![](./01-058.png)
+![](./img/01-057.png)
+![](./img/01-058.png)
 
 ### **01. CLIPPING:**
 
@@ -211,21 +211,21 @@ Tanto para conocer los medios o redes sociales en los que se está mencionando a
 
 ---
 ## **Caso de estudio:	ZARA**
-![](./01-059.png)
+![](./img/01-059.png)
 
 La **clave del éxito de Zara se basa en marketing Just-In-Time** ya que es capaz de analizar toda la información de su red, clientes y tendencias y transformar esta información en productos en sus tiendas en tan solo 15 días. La mayoría de empresas tardan entre 3 y 6 meses en realizar el mismo proceso.
 
 ---
 
 ### **SEGUIMIENTO**
-![](./01-060.png)
+![](./img/01-060.png)
 Para ello realiza un seguimiento diario de absolutamente todas sus tiendas para enviar al final del día nuevos productos. En este informe de seguimiento las variables que entran en juego son: cuánto se vende, qué se vende, colores y tallas.
 
 Toda esta información se envía a la central de Arteixo y el sistema analiza las necesidades de cada tienda, este proceso se realiza en tan solo dos horas. Después, en tres horas, comienza a enviar el producto más conveniente a sus destinos.
 
 
 ### **NEUROMARKETING**
-![](./01-061.png)
+![](./img/01-061.png)
 Zara no invierte en publicidad de grandes masas (TV, radio, prensa), solo está presente en redes sociales y es de ellas donde extrae la información, que junto a la obtenida de sus tiendas, realiza un análisis e implementa en su estrategia.
 
 Con esta información monta sus escaparates, otro de los pilares de su estrategia. En la creación de los escaparates trabajan especialistas, escaparatistas y profesionales de neuromarketing que probando y modificando múltiples opciones consiguen que cada escaparate sea único y atractivo para el público de cada ciudad.
@@ -234,7 +234,7 @@ Con esta información monta sus escaparates, otro de los pilares de su estrategi
 ---
 
 ## **Casos prácticos en la industria y la producción**
-![](./01-062.png)
+![](./img/01-062.png)
 
 La **industria 4.0 representa para los sectores industriales y productivos la fusión del mundo real con el mundo virtual. Esta revolución digital está marcada por la tecnología que aprovecha el Big Data y la Inteligencia Artificial (IA) para nutrir los sistemas de aprendizaje automático que optimicen los recursos.**
 
@@ -243,7 +243,7 @@ Actualmente, los fabricantes buscan lograr la inteligencia empresarial a través
 ---
 
 ## **El Big Data en la industria 4.0**
-![](./01-063.png)
+![](./img/01-063.png)
 
 > La implantación de **sensores** en los equipos/máquinas industriales ha generado un volumen de datos que deben ser usados para la organización de las operaciones.
 
