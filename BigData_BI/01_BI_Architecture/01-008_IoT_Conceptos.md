@@ -489,12 +489,12 @@ classDef detalle fill:#FFFFFF,color:#333,stroke:#CFCFCF,stroke-width:1px;
 classDef feedback fill:#FFF6D5,color:#000,stroke:#FFB300,stroke-width:4px;
 
 
-F1([Definición del<br/>problema])
-F2([Adquisición y<br/>preparación de<br/>datos])
-F3([Selección y<br/>ajuste del<br/>modelo])
-F4([Validación])
-F5([Despliegue])
-F6([Monitorización])
+F1([1. Definición del<br/>problema])
+F2([2. Adquisición y<br/>preparación de<br/>datos])
+F3([3. Selección y<br/>ajuste del<br/>modelo])
+F4([4. Validación])
+F5([5. Despliegue])
+F6([6. Monitorización])
 
 F1 --> F2
 F2 --> F3
