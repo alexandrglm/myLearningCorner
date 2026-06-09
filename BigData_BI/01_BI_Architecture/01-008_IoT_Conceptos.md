@@ -1,5 +1,5 @@
 # 01-008:	IoT - Conceptos Clave
-![](./01-064.png)
+![](./img/01-064.png)
 
 > Utilizado para describir un sistema en el cual los objetos del mundo físico se podían conectar a Internet por medio de sensores.
 
@@ -14,15 +14,15 @@ Sin embargo, no existe ninguna definición única y universal."
 ---
 
 ## Puntos Fundamentales para explorar oportunidades (**Conceptos clave IoT**)
-![](./01-065.png)
+![](./img/01-065.png)
 
 ### **1. Tecnologías instrumentales**
-![](./01-066.png)
+![](./img/01-066.png)
 La idea de combinar ordenadores, sensores con la Red para el control de los dispositivos lleva implantada largo tiempo, sin embargo, el avance del mercado tecnológico está ocasionando tendencias como por ejemplo la hiperconectividad social, el negocio del cómputo, análisis de datos etc.
 
 
 ### **2. Modelos de conectividad**
-![](./01-067.png)
+![](./img/01-067.png)
 
 La IoT utiliza diversos modelos de conectividad:
 * Dispositivo a dispositivo
@@ -31,13 +31,13 @@ La IoT utiliza diversos modelos de conectividad:
 * Intercambio de datos a través del back-end
 
 ### **3. Potencial de transformación**
-![](./01-068.png)
+![](./img/01-068.png)
 Si las tendencias que se están proyectando se confirman, podemos estar presenciando un cambio de paradigma, la interacción más frecuente en internet será pasiva a través de objetos conectados dejando de lado una interacción activa con el contenido.
 
 ---
 
 ## **Entornos para aplicaciones de la IoT**
-![](./01-069.png)
+![](./img/01-069.png)
 
 Actualmente, está cambiando el paradigma de internet. Ya no se trata exclusivamente de la búsqueda activa de contenidos por parte del usuario.  
 
@@ -45,7 +45,7 @@ Actualmente, está cambiando el paradigma de internet. Ya no se trata exclusivam
 
 
 
-![](./01-070.png)
+![](./img/01-070.png)
 ### **01. CUERPO HUMANO**
 * **Definición:** Dispositivos unidos al cuerpo humano o colocados dentro del mismo (dispositivos para vestir o *wearables*).
 * **Aplicaciones:** Monitorear la salud y el bienestar de las personas, manejar enfermedades, aumentar la aptitud física y la productividad.
@@ -60,8 +60,8 @@ Actualmente, está cambiando el paradigma de internet. Ya no se trata exclusivam
 * **Definición:** Espacios comerciales.
 * **Aplicaciones:** Tiendas, bancos, restaurantes, estadios o cualquier lugar donde los consumidores consideren y compren; incluye sistemas de autopago, ofertas en compras presenciales y optimización del inventario.
 
-![](./01-071.png)
-![](./01-072.png)
+![](./img/01-071.png)
+![](./img/01-072.png)
 
 ### **04. OFICINAS**
 * **Definición:** Espacios donde trabajan trabajadores del conocimiento.
@@ -78,8 +78,8 @@ Actualmente, está cambiando el paradigma de internet. Ya no se trata exclusivam
 * **Aplicaciones:** Minería, petróleo y gas, construcción; eficiencia operativa, mantenimiento predictivo, salud y seguridad.
 
 
-![](./01-073.png)
-![](./01-074.png)
+![](./img/01-073.png)
+![](./img/01-074.png)
 
 ### **07. VEHÍCULOS**
 * **Definición:** Sistemas dentro de vehículos en movimiento.
@@ -97,14 +97,14 @@ Actualmente, está cambiando el paradigma de internet. Ya no se trata exclusivam
 ---
 
 ## Casos de uso de Big Data y visualización de datos en las Fábricas 4.0
-![](./01-075.png)
+![](./img/01-075.png)
 
 La cantidad de información producida por IoT y los sistemas de fabricación actuales se traduce en información relevante para la toma de decisiones y la generación de ideas procesables.  
 
  Mediante el Big Data se clasifica la información recopilada, se modelan bases de datos y se extraen conclusiones que, apoyadas en visualizaciones, mejoran las operaciones de las empresas de las siguientes formas:
 
-![](./01-076.png)
-![](./01-077.png)
+![](./img/01-076.png)
+![](./img/01-077.png)
 
 ### 1. Mejora de procesos del almacén
 > Gracias a sensores y dispositivos portátiles, las empresas pueden mejorar la eficiencia operativa al detectar errores, mejorar los controles de calidad y mostrar rutas óptimas de producción, almacenaje o manejo de materiales.
@@ -156,7 +156,7 @@ La cantidad de información producida por IoT y los sistemas de fabricación act
 ---
 
 ## Gestión de proyectos de Data Science para desplegar el big data y la visualización de datos en el sector industrial
-![](./01-078.png)
+![](./img/01-078.png)
 
 ### 1
 El foco no debe ponerse en la cantidad de información que se maneja, sino en lo que se hace con ella. El análisis de los activos correctos, a través de sus datos, puede facilitar nuevas soluciones a problemas existentes y una mejora general de la productividad. Por eso, uno de los movimientos más importantes para extraer la información mediante la visualización datos es identificar las fuentes de información que realmente aportarán valor.
@@ -336,9 +336,9 @@ Mantener informadas a todas las partes interesadas mediante:
 ---
 
 ## Metodología SMART
-![](./01-079.png)
-![](./01-080.png)
-![](./01-081.png)
+![](./img/01-079.png)
+![](./img/01-080.png)
+![](./img/01-081.png)
 
 El modelo **SMART** de **6 fases** de Spotle.ai para proyectos de ciencia de datos se basa en las directrices del sector, como `CRISP-DM`, y en la experiencia de los profesionales.
 
