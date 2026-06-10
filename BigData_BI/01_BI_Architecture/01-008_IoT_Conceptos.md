@@ -656,4 +656,3 @@ class FB feedback
 
 ---
 
-[PENDING]
