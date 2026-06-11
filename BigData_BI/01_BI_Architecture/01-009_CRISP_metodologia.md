@@ -503,4 +503,3 @@ Identificar los KPI's adecuados, obtener un dashboard visualmente estructurado, 
 
 ---
 
-[PENDING]
