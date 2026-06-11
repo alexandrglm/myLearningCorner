@@ -170,6 +170,18 @@ El big data facilita la integración de los sistemas de la empresa para obtener 
 
 [Video Apoyo Ud.](https://vimeo.com/697272538/ded37ce398)
 
+### ¿Qué es la Gestión de Proyectos?
+
+La **gestión de proyectos** es la práctica de:
+
+* Iniciar proyectos.
+* Planificar el trabajo.
+* Ejecutar las actividades.
+* Controlar el progreso.
+* Cerrar el proyecto.
+
+Todo ello con el objetivo de **alcanzar metas específicas** y cumplir unos **criterios de éxito definidos** dentro del plazo establecido.
+
 > La gestión de proyectos en Data Science es un componente esencial para transformar iniciativas complejas y de alto riesgo en proyectos exitosos. La combinación de equipos multidisciplinares, participación de la dirección, planificación rigurosa y control continuo permite reducir la incertidumbre inherente a estos proyectos.
 
 > Aunque una gran parte de los proyectos de Big Data fracasan, una gestión adecuada puede mejorar considerablemente las probabilidades de éxito, convirtiendo los datos en una fuente real de valor para la organización.
@@ -332,6 +344,8 @@ Mantener informadas a todas las partes interesadas mediante:
 
 
 
+> Mejorar la tasa de éxito de los proyectos de Big Data está directamente relacionado con una gestión de proyectos sólida.
+> Una buena planificación, ejecución y control pueden marcar la diferencia entre el fracaso y el éxito de una iniciativa de ciencia de datos.
 
 ---
 
