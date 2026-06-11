@@ -1,5 +1,47 @@
 # 01-009:	Metodología CRISP
 
+```mermaid
+flowchart LR
+
+    A["📌 1a. Comprensión del negocio"]
+    B["📊 1b. Comprensión de los datos"]
+    C["🧹 2a. Preparación de los datos"]
+    D["🤖 2b. Modelado"]
+    E["✅ 4. Evaluación"]
+    F["🚀 4. Despliegue"]
+
+    DB[("Datos")]
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+
+    B <--> A
+    C <--> B
+    D <--> C
+    E <--> D
+
+    E --> A
+    F --> A
+
+    DB -.-> B
+    DB -.-> C
+    DB -.-> D
+    DB -.-> E
+
+    style A fill:#ff6b6b,color:#fff,stroke:#c92a2a
+    style B fill:#ff6b6b,color:#fff,stroke:#c92a2a
+    style C fill:#ff6b6b,color:#fff,stroke:#c92a2a
+    style D fill:#ff6b6b,color:#fff,stroke:#c92a2a
+    style E fill:#ff6b6b,color:#fff,stroke:#c92a2a
+    style F fill:#ff6b6b,color:#fff,stroke:#c92a2a
+
+    style DB fill:#d8f53d,color:#000,stroke:#666
+```
+
+
 ## METODOLOGÍA CRISP PARA LA GESTIÓN DE PROYECTOS DE CIENCIA DE DATOS
 ![](./img/01-082.png)
 ![](./img/01-083.png)
