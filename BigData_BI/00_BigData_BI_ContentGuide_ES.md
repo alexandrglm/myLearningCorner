@@ -5,15 +5,16 @@
 
 | Status | Guide  | Type | Title                                                   | Date       |
 | ------ | ------ | ---- | ------------------------------------------------------- | ---------- |
-| [X]    | 01-001 |  Definiciones | ¿Qué es la inteligencia de negocios?                    | 2026-06-03 |
-| [X]    | 01-002 | | Tecnologías que forman parte de Business Intelligence.  | 2026-06-03 |
-| [X]    | 01-003 | | La implantación de un sistema de Business Intelligence. | 2026-06-03 |
-| [X]    | 01-004 | EDA | Análisis exploratorio de datos (EDA).                   | 2026-06-03 |
-| [X]    | 01-005 |      | Fundamentos de la visualización efectiva de datos.      | 2026-06-03 |
-| [x]    | 01-006 | Casos Prácticos (1): Ventas | Data Mining y ventas. | 2026-06-04 |
-| [X]    | 01-007 | JIT, Monitorización, Utilidad del Conocimiento, Habilidades Interpersonales | Herramientas para la fidelización.                      | 2026-06-07 |
-| [ ]    | 01-008 |      | Conceptos clave IoT.                                    |      |
-| [ ]    | 01-009 |      | La metodología CRISP.                                   |      |
+| [X]    | 01-001 |  Definiciones | ¿Qué es la inteligencia de negocios?                    							| 2026-06-03 |
+| [X]    | 01-002 | | Tecnologías que forman parte de Business Intelligence 											| 2026-06-03 |
+| [X]    | 01-003 | | La implantación de un sistema de Business Intelligence											| 2026-06-03 |
+| [X]    | 01-004 | EDA | Análisis exploratorio de datos (EDA)                											| 2026-06-03 |
+| [X]    | 01-005 |      | Fundamentos de la visualización efectiva de datos     										| 2026-06-03 |
+| [x]    | 01-006 | Casos Prácticos (1): BI en Ventas 											| Data Mining y ventas 	| 2026-06-04 |
+| [X]    | 01-007 | JIT, Monitorización, Utilidad del Conocimiento, Habilidades Interpersonales | Herramientas para la fidelización  | 2026-06-07 |
+| [X]    | 01-008 | SMART,      																| Conceptos clave IoT 	| 2026-06-09 |
+| [X]    | 01-009 | CRISP, Informes, Cuadro de Mando, Dashboard 								| La metodología CRISP 	| 2026-06-11 |
+| [ ]    | 01-010 | 														| Business Analytics - Herramientas ETL		|     		 |
 
 ---
 
