@@ -14,7 +14,7 @@
 | [X]    | 01-007 | JIT, Monitorización, Utilidad del Conocimiento, Habilidades Interpersonales | Herramientas para la fidelización  | 2026-06-07 |
 | [X]    | 01-008 | SMART,      																| Conceptos clave IoT 	| 2026-06-09 |
 | [X]    | 01-009 | CRISP, Informes, Cuadro de Mando, Dashboard 								| La metodología CRISP 	| 2026-06-11 |
-| [ ]    | 01-010 | 														| Business Analytics - Herramientas ETL		|     		 |
+| [X]    | 01-010 | Businnes Analytic, Descriptiva-Predictiva-Prescriptiva, Áreas de aplicación, Use Cases | Business Analytics - Herramientas ETL		| 2026-06-13 |
 
 ---
 
