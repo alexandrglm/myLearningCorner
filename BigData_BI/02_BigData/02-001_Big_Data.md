@@ -192,6 +192,6 @@ Es imperativo, pues, retomar desde el principio los pasos e iterar, iterar, e it
 
 
 
-***
+---
 
-[*PENDING]
+
