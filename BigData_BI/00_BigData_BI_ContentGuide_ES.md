@@ -22,13 +22,14 @@
 
 | Status | Guide  | Type | Title                                                   | Date |
 | ------ | ------ | ---- | ------------------------------------------------------- | ---- |
-| [ ]    | 02-001 |      | Big Data.                                               |      |
-| [ ]    | 02-002 |      | Machine Learning.                                       |      |
-| [ ]    | 02-003 |      | Arquitecturas Big Data.                                 |      |
-| [ ]    | 02-004 |      | Almacén de datos de la empresa (EDW) aumentado.         |      |
-| [ ]    | 02-005 |      | Pasos para construir un modelo de Machine Learning.     |      |
-| [ ]    | 02-006 |      | Agentes de inteligencia artificial.                     |      |
-| [ ]    | 02-007 |      | Áreas de aplicación de la inteligencia artificial.      |      |
+| [X]    | 02-001 | Definición, Pasos | Big Data                                   | 2026-06-15 |
+| [X]    | 02-002 |      | Perfiles en proyectos Big Data                          | 2026-06-16 |
+| [X]    | 02-003 | Data Hub, EDW, Data Lake | Arquitecturas Big Data.             | 2026-06-16 |
+| [X]    | 02-004 |      | EDW vs Data Hub vs Data Lake (Comparación de modelos)   | 2026-06-16 |
+| [X]    | 02-005 |      | Machine Learning, definición, fases   				   | 2026-06-16 |
+| [ ]    | 02-006 |      | Machine Learning, métodos							   |      |
+| [ ]    | 02-007 |      | Agentes de inteligencia artificial                      |      |
+| [ ]    | 02-008 |      | Áreas de aplicación de la inteligencia artificial.      |      |
 
 
 ---
