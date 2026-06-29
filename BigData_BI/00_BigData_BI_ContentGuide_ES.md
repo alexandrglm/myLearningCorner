@@ -27,9 +27,9 @@
 | [X]    | 02-003 | Data Hub, EDW, Data Lake | Arquitecturas Big Data.             | 2026-06-16 |
 | [X]    | 02-004 |      | EDW vs Data Hub vs Data Lake (Comparación de modelos)   | 2026-06-16 |
 | [X]    | 02-005 |      | Machine Learning, definición, fases   				   | 2026-06-16 |
-| [ ]    | 02-006 |      | Machine Learning, métodos							   |      |
-| [ ]    | 02-007 |      | Agentes de inteligencia artificial                      |      |
-| [ ]    | 02-008 |      | Áreas de aplicación de la inteligencia artificial.      |      |
+| [X]    | 02-006 |      | Machine Learning, métodos							   | 2026-06-29 |
+| [X]    | 02-007 |      | Agentes de inteligencia artificial                     | 2026-06-29 |
+| [X]    | 02-008 |      | Áreas de aplicación de la inteligencia artificial.      | 2026-06-29 |
 
 
 ---
