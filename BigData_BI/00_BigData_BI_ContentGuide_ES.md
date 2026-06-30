@@ -20,8 +20,8 @@
 
 ## MODULE 2 - Data Science
 
-| Status | Guide  | Type | Title                                                   | Date |
-| ------ | ------ | ---- | ------------------------------------------------------- | ---- |
+| Status | Guide  | Type | Title                                                   | Date       |
+| ------ | ------ | ---- | ------------------------------------------------------- | ---------- |
 | [X]    | 02-001 | Definición, Pasos | Big Data                                   | 2026-06-15 |
 | [X]    | 02-002 |      | Perfiles en proyectos Big Data                          | 2026-06-16 |
 | [X]    | 02-003 | Data Hub, EDW, Data Lake | Arquitecturas Big Data.             | 2026-06-16 |
@@ -36,17 +36,18 @@
 
 ## MODULE 3 - NoSQL
 
-| Status | Guide  | Type | Title                                                   | Date |
-| ------ | ------ | ---- | ------------------------------------------------------- | ---- |
-| [ ]    | 03-001 |      | Introducción a NoSQL.                                   |      |
-| [ ]    | 03-002 |      | ¿Qué es Hbase?                                          |      |
-| [ ]    | 03-003 |      | ¿Cómo utilizar Hbase?                                   |      |
-| [ ]    | 03-004 |      | ¿Qué es Cassandra?                                      |      |
-| [ ]    | 03-005 |      | ¿Qué es un MongoDB?                                     |      |
-| [ ]    | 03-006 |      | ¿Qué es Neo4J?                                          |      |
-| [ ]    | 03-007 |      | Introducción a Redis.                                   |      |
-| [ ]    | 03-008 |      | Couch DB.                                               |      |
-| [ ]    | 03-009 |      | Couch App.                                              |      |
+| Status | Guide  | Type | Title                                                                              | Date       |
+| ------ | ------ | ---- | ---------------------------------------------------------------------------------- | ---------- |
+| [X]    | 03-001 | Teorema CAP, ACID, BASE | SQL, NoSQL, BBDD Relacionales                                                | 2026-06-30 |
+| [X]    | 03-002 | HDFS, Hadoop, JVM, REST (Stargate), mmaps, matrix, MapReduce, CPT Consistent - Partition Tolerance  | HBase      | 2026-06-30 |
+| pending | 03-002b | Lab Example | Implementación HBase                                                       |            |
+| [X]    | 03-003 | Orientado a Consultas, NO Join, CQL Cassandra Query Language (traductor SQL cmds), AP Availability - Partition Tolerance, BASE, Row -> Column = (Key-Value-Timestamp)            | Apache Cassandra   | 2026-06-30 |
+| pending | 03-003b | Lab Example | Implementación Cassandra                                                  |            |
+| [ ]    | 03-004 |      | MongoDB                                                                            |      |
+| [ ]    | 03-005 |      | Neo4J                                                                              |      |
+| [ ]    | 03-006 |      | REDIS                                                                              |      |
+| [ ]    | 03-007 |      | Couch DB                                                                           |      |
+| [ ]    | 03-008 |      | Couch App                                                                          |      |
 
 
 
