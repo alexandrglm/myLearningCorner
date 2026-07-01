@@ -43,9 +43,9 @@
 | pending | 03-002b | Lab Example | Implementación HBase                                                       |            |
 | [X]    | 03-003 | Orientado a Consultas, NO Join, CQL Cassandra Query Language (traductor SQL cmds), AP Availability - Partition Tolerance, BASE, Row -> Column = (Key-Value-Timestamp)            | Apache Cassandra   | 2026-06-30 |
 | pending | 03-003b | Lab Example | Implementación Cassandra                                                  |            |
-| [ ]    | 03-004 |      | MongoDB                                                                            |      |
-| [ ]    | 03-005 |      | Neo4J                                                                              |      |
-| [ ]    | 03-006 |      | REDIS                                                                              |      |
+| [X]    | 03-004 | Collections/Documents, BSONs, Key-Value, Orientado a Consultas, REGEX, Escalabilidad, Balanceado, MapReduce, JS Syntax, GridFS, API 27017 | MongoDB   | 2026-07-01 |
+| [X]    | 03-005 | Grafos, Nodos Interconectados, Modela datos enlazados por semántica, ACID, API Rest (deprecada >v.40), SDK Java, CYPHER  | Neo4J   | 2026-07-01 |
+| [X]    | 03-006 | Key-Value , Tipos: `String` `Hash`  `List`  `Set`, EXPIRE, Escalable 1 `MASTER-REDIS` -> `SLAVE-REDIS`, Escalable 2 `CLUSTERS`, Filtro BLOOM| REDIS   | 2026-07-01 |
 | [ ]    | 03-007 |      | Couch DB                                                                           |      |
 | [ ]    | 03-008 |      | Couch App                                                                          |      |
 
