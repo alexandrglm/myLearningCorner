@@ -64,16 +64,20 @@
 
 | Status | Guide  | Type | Title                                                   | Date |
 | ------ | ------ | ---- | ------------------------------------------------------- | ---- |
-| [ ]    | 04-001 |      | Python, intro                               |      |
-| [ ]    | 04-002 |      | Tipos de datos                                         |      |
-| [ ]    | 04-003 |      | Colecciones de tipos de datos                          |      |
-| [ ]    | 04-004 |      | Diccionarios                                          |      |
-| [ ]    | 04-005 |      | Carácter de una cadena                               |      |
-| [ ]    | 04-006 |      | Operaciones aritméticas                              |      |
-| [ ]    | 04-007 |      | Operaciones lógicas                                  |      |
-| [ ]    | 04-008 |      | Operadores de pertenencia.                           |      |
-| [ ]    | 04-009 |      | Condicionales                                       |      |
-| [ ]    | 04-010 |      | OOP                      |      |
+| [X]    | 04-001 |      | Python, intro                                           | 2026-07-02 |
+| [X]    | 04-002 |      | Tipos de datos                                          | 2026-07-02 |
+| [X]    | 04-003 |      | Colecciones de tipos de datos                           | 2026-07-02 |
+| [X]    | 04-004 |      | Diccionarios                                            | 2026-07-02 |
+| [X]    | 04-005 |      | Carácter de una cadena                                  | 2026-07-02 |
+| [X]    | 04-006 |      | Operaciones aritméticas                                 | 2026-07-02 |
+| [X]    | 04-007 |      | Operaciones lógicas                                     | 2026-07-02 |
+| [X]    | 04-008 |      | Operadores de pertenencia.                              | 2026-07-02 |
+| [X]    | 04-009 |      | Condicionales                                           | 2026-07-02 |
+| [X]    | 04-010 |      | Funciones                                               | 2026-07-02 |
+| [X]    | 04-011 | Ejercicio | Funciones 1                                        | 2026-07-02 |
+| [ ]    | 04-013 |      | File Handling                      |      |
+| [ ]    | 04-014 |      | Tablas                     |      |
+| [ ]    | 04-0XX |      | OOP                      |      |
 
 
 ---
