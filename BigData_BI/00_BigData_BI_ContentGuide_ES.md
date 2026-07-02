@@ -40,17 +40,23 @@
 | ------ | ------ | ---- | ---------------------------------------------------------------------------------- | ---------- |
 | [X]    | 03-001 | Teorema CAP, ACID, BASE | SQL, NoSQL, BBDD Relacionales                                                | 2026-06-30 |
 | [X]    | 03-002 | HDFS, Hadoop, JVM, REST (Stargate), mmaps, matrix, MapReduce, CPT Consistent - Partition Tolerance  | HBase      | 2026-06-30 |
-| pending | 03-002b | Lab Example | Implementación HBase                                                       |            |
 | [X]    | 03-003 | Orientado a Consultas, NO Join, CQL Cassandra Query Language (traductor SQL cmds), AP Availability - Partition Tolerance, BASE, Row -> Column = (Key-Value-Timestamp)            | Apache Cassandra   | 2026-06-30 |
-| pending | 03-003b | Lab Example | Implementación Cassandra                                                  |            |
 | [X]    | 03-004 | Collections/Documents, BSONs, Key-Value, Orientado a Consultas, REGEX, Escalabilidad, Balanceado, MapReduce, JS Syntax, GridFS, API 27017 | MongoDB   | 2026-07-01 |
 | [X]    | 03-005 | Grafos, Nodos Interconectados, Modela datos enlazados por semántica, ACID, API Rest (deprecada >v.40), SDK Java, CYPHER  | Neo4J   | 2026-07-01 |
-| [X]    | 03-006 | Key-Value , Tipos: `String` `Hash`  `List`  `Set`, EXPIRE, Escalable 1 `MASTER-REDIS` -> `SLAVE-REDIS`, Escalable 2 `CLUSTERS`, Filtro BLOOM| REDIS   | 2026-07-01 |
-| [ ]    | 03-007 |      | Couch DB                                                                           |      |
-| [ ]    | 03-008 |      | Couch App                                                                          |      |
+| [X]    | 03-006 | Key-Value , Tipos: `String` `Hash`  `List`  `Set`, EXPIRE, Escalable 1 `MASTER-REDIS` -> `SLAVE-REDIS`, Escalable 2 `CLUSTERS`, Filtro BLOOM | REDIS   | 2026-07-01 |
+| [X]    | 03-007 | Documents - Multimodal, CAP no Consistencia, Por commits, JavaScript, REST, Map, Reduce | Couch DB  | 2026-07-02 |
 
 
 
+- Implementaciones - Ejemplo, pendientes de proyectar
+| Status | Guide  | Type | Title                                                                              | Date       |
+| ------ | ------ | ---- | ---------------------------------------------------------------------------------- | ---------- |
+| pending | 03-002b | Lab Example | Implementación HBase                                                      |            |
+| pending | 03-003b | Lab Example | Implementación Cassandra                                                  |            |
+| pending | 03-004b | Lab Example | Implementación MongoDB (via Atlas)                                        |            |
+| pending | 03-005b | Lab Example | Implementación Neo4J                                                      |            |
+| pending | 03-006b | Lab Example | Implementación REDIS                                                      |            |
+| pending | **03-007b** | Lab Example | **Implementación Couch DB**                                           |            |
 ---
 
 ## MODULE 4 - Python Data Analysis
