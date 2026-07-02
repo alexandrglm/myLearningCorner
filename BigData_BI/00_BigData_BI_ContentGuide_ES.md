@@ -48,7 +48,8 @@
 
 
 
-- Implementaciones - Ejemplo, pendientes de proyectar
+- Implementaciones - Ejemplo, pendientes de proyectar:
+
 | Status | Guide  | Type | Title                                                                              | Date       |
 | ------ | ------ | ---- | ---------------------------------------------------------------------------------- | ---------- |
 | pending | 03-002b | Lab Example | Implementación HBase                                                      |            |
