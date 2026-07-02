@@ -64,16 +64,16 @@
 
 | Status | Guide  | Type | Title                                                   | Date |
 | ------ | ------ | ---- | ------------------------------------------------------- | ---- |
-| [ ]    | 04-001 |      | ¿Qué es Python?                                         |      |
-| [ ]    | 04-002 |      | Tipos de datos.                                         |      |
-| [ ]    | 04-003 |      | Colecciones de tipos de datos.                          |      |
-| [ ]    | 04-004 |      | Diccionarios.                                           |      |
-| [ ]    | 04-005 |      | Carácter de una cadena.                                 |      |
-| [ ]    | 04-006 |      | Operaciones aritméticas.                                |      |
-| [ ]    | 04-007 |      | Operaciones lógicas.                                    |      |
-| [ ]    | 04-008 |      | Operadores de pertenencia.                              |      |
-| [ ]    | 04-009 |      | Condicionales.                                          |      |
-| [ ]    | 04-010 |      | Programación orientada a objetos.                       |      |
+| [ ]    | 04-001 |      | Python, intro                               |      |
+| [ ]    | 04-002 |      | Tipos de datos                                         |      |
+| [ ]    | 04-003 |      | Colecciones de tipos de datos                          |      |
+| [ ]    | 04-004 |      | Diccionarios                                          |      |
+| [ ]    | 04-005 |      | Carácter de una cadena                               |      |
+| [ ]    | 04-006 |      | Operaciones aritméticas                              |      |
+| [ ]    | 04-007 |      | Operaciones lógicas                                  |      |
+| [ ]    | 04-008 |      | Operadores de pertenencia.                           |      |
+| [ ]    | 04-009 |      | Condicionales                                       |      |
+| [ ]    | 04-010 |      | OOP                      |      |
 
 
 ---
