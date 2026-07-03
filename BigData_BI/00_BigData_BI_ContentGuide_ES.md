@@ -75,9 +75,9 @@
 | [X]    | 04-009 |      | Condicionales                                           | 2026-07-02 |
 | [X]    | 04-010 |      | Funciones                                               | 2026-07-02 |
 | [X]    | 04-011 | Ejercicio | Funciones 1                                        | 2026-07-02 |
-| [ ]    | 04-013 |      | File Handling                      |      |
-| [ ]    | 04-014 |      | Tablas                     |      |
-| [ ]    | 04-0XX |      | OOP                      |      |
+| [X]    | 04-013 |      | File Handling                      | 2026-07-03 |
+| [X]    | 04-014 |      | Tablas                     | 2026-07-03 |
+| [X]    | 04-015 |      | OOP                      | 2026-07-03 |
 
 
 ---
