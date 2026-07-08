@@ -86,9 +86,9 @@
 
 | Status | Guide  | Type | Title                                                   | Date |
 | ------ | ------ | ---- | ------------------------------------------------------- | ---- |
-| [ ]    | 05-001 |      | ¿Qué es la visualización de datos?                      |      |
-| [ ]    | 05-002 |      | Las metáforas visuales.                                 |      |
-| [ ]    | 05-003 |      | Beneficios de una visualización de datos de calidad.    |      |
+| [X]    | 05-001 | Gráficos, Infografías, Cuadros de Mando, Informes BI, Factor Visual, Comprender, Analizar | Visualización de data                                   | 2026-07-08 |
+| [X]    | 05-002 | Interpretación natural e inmediata  | Metáforas Visuales   | 2026-07-08 |
+| [X]    | 05-003 | Detalles, Respuesta Emocional, Comunicación, Comparación, Hipótesis y predicciones, Monitorización, Impacto, Eficiencia, Optimización, **Toma de Decisiones basada en datos**     | Beneficios de la Visualización de Datos    | 2026-07-08 |
 | [ ]    | 05-004 |      | Principales tipos de visualización de datos.            |      |
 | [ ]    | 05-005 |      | Las leyes de percepción visual de GESTALT.              |      |
 | [ ]    | 05-006 |      | Data Visualization.                                     |      |
