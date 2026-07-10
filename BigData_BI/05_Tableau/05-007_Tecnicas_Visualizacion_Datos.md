@@ -1,6 +1,6 @@
 # 05-007:	Técnicas de representación de datos
 
-![](./img/05-026.img)
+![](./img/05-026.png)
 
 Crear un gráfico a partir de una tabla de excel o incluso un SQL como los que se han utilizado hasta hace unos años es bastante sencillo. Las variables apenas pasaban las 100 columnas y no todas estaban relacionadas entre sí. Sin embargo, a medida que se agregan e interrelacionan variables esto se vuelve más complicado.  
 
@@ -14,21 +14,21 @@ Para datos estructurados, como ventas, ingresos, etc, los gráficos sencillos so
 ---
 
 ## Gráficos relacionales
-![](./img/05-027.img)
+![](./img/05-027.png)
 
 Son especialmente útiles para estudiar la relación de los clientes con una compañía y el nivel de penetración de nuestros productos en cada hogar. Por ejemplo, ¿de los clientes de una compañía telefónica, cuántos tienen solo línea móvil, cuántos tienen pack completo y cuántos han mostrado interés en servicios adicionales como TV bajo demanda o coberturas? ¿Cómo se relacionan dichos productos con los consumidores y qué datos sociodemográficos cumplen?
 
 ---
 
 ## Nube de palabras
-![](./img/05-028.img)
+![](./img/05-028.png)
 
 Para encontrar la moda en una serie de textos. Este gráfico es especialmente indicado para extraer insights a través de la escucha activa en Redes Sociales, pues te permite relacionar tu marca o keywords concretas con aquello que se comenta de ellas, el sentimiento (bueno, neutro o malo) con el que se comenta y el volumen de interacciones que genera. En próximos artículos veremos cómo esto, asociado a usuarios y propuestas políticas concretas, afectaron a las elecciones de Estados Unidos en 2012 y 2016 e incluso a las de España del año pasado.
 
 ---
 
 ## Diseño de mapas de color
-![](./img/05-029.img)
+![](./img/05-029.png)
 
 Utilizados para comparar datos que tienen mucha distancia entre si: por ejemplo en el caso de una compañía que quiera medir la aceptación geográfica de su servicio o producto, o el potencial de clientes se encuentran en un lugar determinado en relación con su situación socioeconómica. Pueden ser de dos tipos:
 
@@ -39,7 +39,7 @@ Utilizados para comparar datos que tienen mucha distancia entre si: por ejemplo 
 ---
 
 ## Diagramas de dispersión
-![](./img/05-030.img)
+![](./img/05-030.png)
 
 Uno de los primeros métodos de visualización de datos, debido a que no pueden mostrar por sí mismas más de tres variables para cada registro, ya que se utilizan coordenadas cartesianas para obtener los valores de las variables.
 
@@ -51,7 +51,7 @@ En la siguiente gráfica podemos observar la calidad en cuanto a la puntualidad 
 ---
 
 ## La clave de representación de datos
-![](./img/05-031.img)
+![](./img/05-031.png)
 
 * Se encuentra en **seleccionar la representación visual** que queremos extraer a nuestros datos.
 * Se realiza en función del **tipo de conclusión que queremos hallar**.
@@ -60,7 +60,7 @@ En la siguiente gráfica podemos observar la calidad en cuanto a la puntualidad 
 ---
 
 ## Herramientas para la visualización de datos: 	Power BI
-![](./img/05-032.img)
+![](./img/05-032.png)
 
 ### ¿Qué es Power BI?
 
@@ -69,7 +69,7 @@ En la siguiente gráfica podemos observar la calidad en cuanto a la puntualidad 
   * No están necesariamente monitorizadas por el equipo de IT.
   * Resultan más flexibles y adecuadas para el día a día de las empresas que lo utilizan.
 
-![](./img/05-033.img)
+![](./img/05-033.png)
 
 * **Informe Anual:** La consultora **Gartner** publica anualmente su informe sobre los diferentes proveedores de este tipo de software destinados a BI.
 * **Formato:** Cuenta con un cuadrante comparativo de las distintas soluciones comerciales.
@@ -78,7 +78,7 @@ En la siguiente gráfica podemos observar la calidad en cuanto a la puntualidad 
 ---
 
 ### Comparativa de soluciones tecnológicas elaborada por Gartner:
-![](./img/05-034.img)
+![](./img/05-034.png)
 
 * **Ejes del cuadrante:**
   * **Eje vertical:** Ability to execute *(Capacidad de ejecución)*
@@ -125,7 +125,7 @@ Tableau no es una única aplicación, sino un entorno compuesto por **cuatro her
 
 
 #### A. 	Tableau Prep
-![](./img/05-035.img)
+![](./img/05-035.png)
 
 > **Definición:** Es una herramienta de **ETL (Extract, Transform, and Load / Extraer, Transformar y Cargar)** orientada a la limpieza y preparación del dato.
 
@@ -134,7 +134,7 @@ Tableau no es una única aplicación, sino un entorno compuesto por **cuatro her
 ---
 
 #### B. 	Tableau Desktop
-![](./img/05-036.img)
+![](./img/05-036.png)
 
 > **Definición:** La aplicación de escritorio principal del entorno.
 
@@ -143,7 +143,7 @@ Tableau no es una única aplicación, sino un entorno compuesto por **cuatro her
 ---
 
 #### C. 	Tableau Online
-![](./img/05-037.img)
+![](./img/05-037.png)
 
 > **Definición:** La vertiente en la nube (**SaaS**) del entorno.
 
@@ -152,7 +152,7 @@ Tableau no es una única aplicación, sino un entorno compuesto por **cuatro her
 ---
 
 #### D. 	Tableau Server
-![](./img/05-038.img)
+![](./img/05-038.png)
 
 > **Definición:** Plataforma empresarial para la gobernanza y compartición de datos.
 
