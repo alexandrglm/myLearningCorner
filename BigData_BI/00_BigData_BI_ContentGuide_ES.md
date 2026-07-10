@@ -92,9 +92,12 @@
 | [X]    | 05-004 |      | Principales tipos de visualización de datos             | 2026-07-09 |
 | [X]    | 05-005 |      | Leyes de percepción visual de GESTALT                   | 2026-07-09 |
 | [X]    | 05-006 |      | Data Visualization                                      | 2026-07-09 |
-| [ ]    | 05-007 |      | Técnicas de representación de datos.                    |      |
+| [X]    | 05-007 | Gráficos Relacionales, Nube de Palabras, Mapas de Color, Mapas Cuadriculados, Mapas Cartográficos, Diagramas de Dispersión, Tableau Prep, Tableau Desktop, Tableau Online, Tableau Server Tableau Public (licencia), Cuadrante Mágico de Gartner  | Técnicas de representación de datos     | 2026-07-10 |
 
 
+| Status | Guide  | Type | Title                                                                              | Date       |
+| ------ | ------ | ---- | ---------------------------------------------------------------------------------- | ---------- |
+| [ ]    | 05-007b | Actividad | Otras herramientas de visualización de datos                                |            |
 ---
 
 ## MODULE 6 - Power BI
