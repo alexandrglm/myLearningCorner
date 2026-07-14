@@ -170,9 +170,6 @@ Herramientas útiles para contextualizar series históricas muy largas:
 *   **Anuario Estadístico Vasco (Periodo completo, 1982 - 2022):** [Eustat - Anuarios](https://es.eustat.eus/estadisticas/tema_1/opt_1/tipo_3/ti_anuario-estadistico-vasco/temas.html)
 *   **Informes y Documentos Históricos de Euskadi:** [Eustat - Informes](https://es.eustat.eus/estadisticas/tema_72/opt_0/tipo_3/ti_informes-y-documentos/temas.html)
 
-**REQUIERE EXTRAER LOS DATOS MANUALMENTE DESADE LOS PROPIOS ANUARIOS!**
-
-
 
 ***
 
@@ -200,3 +197,13 @@ Herramientas útiles para contextualizar series históricas muy largas:
 ![](./img/06-000-01.png)
 
 *  Recomendable trabajar de forma paralela tanto en la **versión Web (Servicio)** como en **Power BI Desktop** utilizando el mismo proyecto. Esto servirá para identificar y comparar posibles discrepancias o limitaciones entre ambas interfaces, las cuales deberían ser mínimas.
+
+
+### PRIMERAS PREGUNTAS QUE QUISIERA PODER RESPONDER Y VISUALIZAR
+
+* ¿Qué relación hay entre el reparto de la riqueza, la criminalidad, la empleabilidad, la inclusión social, en una región-periodo temporal determinado?
+
+* ¿Cuánto influye la alfabetización (incluso la relativa a modelos lingüísticos ) respecto a la inclusión social, laboral, de las personas?
+
+* ¿Existe alguna relación entre la tasa de desempleo, la exclusión social y la salud mental tomando como factor la alfabetización? ¿Aquellos que hace 20-30 años siguieron unos itinerarios educativos, u otros, cómo se encuentran a día de hoy?
+
