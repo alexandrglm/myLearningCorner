@@ -104,7 +104,7 @@ Haga clic en el botón **Ejecutar** (o use las teclas **F5** o **CTRL + MAYÚS +
 ---
 
 # 🟦 Paso 4 de 4 - Copilot en línea
-![](./img/06-001b-05 .png)
+![](./img/06-001b-05.png)
 
 La Vista de Consultas incorpora integración con **Open AI Copilot** para facilitar la creación y depuración de consultas DAX.  
 
