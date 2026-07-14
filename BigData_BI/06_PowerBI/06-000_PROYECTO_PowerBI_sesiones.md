@@ -194,7 +194,7 @@ Herramientas útiles para contextualizar series históricas muy largas:
 	![](./img/06-000-01.png)
 	
 - **Desktop**:
-![](./img/06-000-01.png)
+![](./img/06-000-02.png)
 
 *  Recomendable trabajar de forma paralela tanto en la **versión Web (Servicio)** como en **Power BI Desktop** utilizando el mismo proyecto. Esto servirá para identificar y comparar posibles discrepancias o limitaciones entre ambas interfaces, las cuales deberían ser mínimas.
 
