@@ -104,10 +104,10 @@
 
 | Status | Guide  | Type | Title                                                   | Date |
 | ------ | ------ | ---- | ------------------------------------------------------- | ---- |
-| [ ]    | 06-001 |      | Power BI Desktop.                                       |      |
-| [ ]    | 06-002 |      | Crear nuevos objetos visuales.                          |      |
-| [ ]    | 06-003 |      | Tablas y matrices.                                      |      |
-| [ ]    | 06-004 |      | Gráficos de comparación y de composición.               |      |
+| [X]    | 06-001 |      | Power BI Desktop                                        | 2026-07-13 |
+| [X]    | 06-002 |      | Objetos Visuales                                        | 2026-07-13 |
+| [X]    | 06-003 |      | Tablas y matrices                                       | 2026-07-14 |
+| [ ]    | 06-004 |      | Gráficos de comparación y de composición                | |
 | [ ]    | 06-005 |      | Mapas o gráficos geográficos.                           |      |
 | [ ]    | 06-006 |      | Indicadores o KPIs.                                     |      |
 | [ ]    | 06-007 |      | Visualización de informes.                              |      |
