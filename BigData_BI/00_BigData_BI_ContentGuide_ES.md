@@ -107,10 +107,10 @@
 | [X]    | 06-001 |      | Power BI Desktop                                        | 2026-07-13 |
 | [X]    | 06-002 |      | Objetos Visuales                                        | 2026-07-13 |
 | [X]    | 06-003 |      | Tablas y matrices                                       | 2026-07-14 |
-| [ ]    | 06-004 |      | Gráficos de comparación y de composición                | |
-| [ ]    | 06-005 |      | Mapas o gráficos geográficos.                           |      |
-| [ ]    | 06-006 |      | Indicadores o KPIs.                                     |      |
-| [ ]    | 06-007 |      | Visualización de informes.                              |      |
+| [X]    | 06-004 |      | Gráficos de comparación y de composición                | 2026-07-15 |
+| [X]    | 06-005 |      | Mapas o gráficos geográficos.                           | 2026-07-15 |
+| [X]    | 06-006 |      | Indicadores o KPIs.                                     | 2026-07-15 |
+| [X]    | 06-007 |      | Visualización de informes.                              | 2026-07-16 |
 | [ ]    | 06-008 |      | Cómo crear filtros en Power BI.                         |      |
 | [ ]    | 06-009 |      | Creación de grupos de datos.                            |      |
 | [ ]    | 06-010 |      | Importación de gráficos.                                |      |
