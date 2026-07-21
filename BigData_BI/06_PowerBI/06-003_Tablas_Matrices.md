@@ -40,11 +40,14 @@ Y finalmente aparecerá nuestra tabla con los datos.
 
 ![](./img/06-027.png)
 
+---
+
 > **Recuerda...**
 > Una vez creado un objeto visual debemos darle un formato agradable; a veces es mejor esperar al final, con todos los objetos creados en el informe, para homogeneizar y hacer más agradable el formato de estos.
 
 El último paso consiste en dar formato, por ejemplo, añadir medidas a los datos y darle el formato de tipo de letra, colores, ordenando las columnas, etc, para que se visualice correctamente desde el panel `Formato del objeto visual`:
 
+![](./img/06-027b.png)
 ---
 
 ## MATRICES
@@ -64,4 +67,13 @@ Las matrices nos permiten analizar mejor las relaciones entre elementos padre e 
 **¿Cuándo es idóneo usarlas?**
 
 - Cuando las personas necesitan ver los detalles de los datos, así como el resumen de los datos para obtener una visión completa de la historia.
+![](./img/06-029b.png)
+
 - Suelen incluirse las matrices en un informe o panel para permitir a sus usuarios seleccionar uno o varios elementos, filas, columnas, celdas, etc., de la matriz para realizar el resaltado cruzado de otros objetos visuales de una página del informe.
+![](./img/06-029c.png)
+
+
+
+
+
+
