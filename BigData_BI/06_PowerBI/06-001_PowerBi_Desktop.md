@@ -49,9 +49,9 @@ Estos son los paneles que nos ofrecen las opciones y propiedades que nos permite
 ## Páginas de los informes
 ![](./img/06-005.png)
 
-Las páginas de los informes serán los **lienzos** que contengan las visualizaciones que vamos a crear.
+Las páginas de los informes serán los **lienzos** que contengan las visualizaciones que vamos a crear.  
 
-Cuando arrancamos nuestro proyecto de **BI** nos encontramos en la **vista de informe** con un informe compuesto por una sola página en blanco, en la que podemos ir creando las visualizaciones. Pero podemos crear tantas nuevas páginas como necesitemos en nuestro informe.
+Cuando arrancamos nuestro proyecto de **BI** nos encontramos en la **vista de informe** con un informe compuesto por una sola página en blanco, en la que podemos ir creando las visualizaciones. Pero podemos crear tantas nuevas páginas como necesitemos en nuestro informe.  
 
 > Por usar un ejemplo, podemos decir que las páginas son similares a las diapositivas de **Power Point**.
 
@@ -59,21 +59,22 @@ Cuando arrancamos nuestro proyecto de **BI** nos encontramos en la **vista de in
 
 ![](./img/06-006.png)
 
-Podemoas cambiar entre las vistas `Informe`,  `Datos` y `Modos`sin seleccionar los iconos de la barra de navegación de la izquierda.
+Podemoas cambiar entre las vistas `Informe`,  `Datos` y `Modos`sin seleccionar los iconos de la barra de navegación de la izquierda.  
 
 Para insertar una nueva página en nuestro informe, podemos seguir, en el menú superior de la **vista Informe**, la secuencia:
 
 **Insertar → Nueva página**
-![](./img/06-006b.png)
+
+![](./img/06-006b.png)  
 
 
 > Las páginas creadas aparecen en el área de navegación, en la parte inferior de la vista informe:
 
 ![](./img/06-007.png)
 
-El programa nos permite crear una nueva página en blanco o duplicar una ya existente.
+El programa nos permite crear una nueva página en blanco o duplicar una ya existente.  
 
-Otra opción, más sencilla, para crear una nueva página es hacerlo desde la pestaña con el signo **+** situada en la parte inferior izquierda del lienzo. De esta forma, crearemos la **Página 2** del informe, nombre que podremos cambiar posteriormente.
+Otra opción, más sencilla, para crear una nueva página es hacerlo desde la pestaña con el signo **+** situada en la parte inferior izquierda del lienzo. De esta forma, crearemos la **Página 2** del informe, nombre que podremos cambiar posteriormente.  
 
 
 ### Cambiar el nombre de una página
@@ -93,12 +94,13 @@ También podemos cambiar el orden de las páginas solo clicando en el nombre de 
 ### Lienzo
 ![](./img/06-009.png)
 
-En la zona central de la página se encuentra el **lienzo** en el que podemos crear una o varias visualizaciones.
+En la zona central de la página se encuentra el **lienzo** en el que podemos crear una o varias visualizaciones.  
+
 ![](./img/06-009b.png)
 
-Un informe puede contener **una sola página o varias**.
+Un informe puede contener **una sola página o varias**.  
 
-![](./img/06-010.png)
+![](./img/06-010.png)  
 
 Dentro de la página podemos seleccionar distintas visualizaciones, moverlas de posición, eliminarlas, agruparlas, copiarlas, duplicarlas, etc, al igual que en otros programas de MS.
 
@@ -107,7 +109,8 @@ Además, podemos insertar otros elementos, como los **cuadros de texto**, **boto
 ---
 
 ## Propiedades de la página
-![](./img/06-011.png)
+
+![](./img/06-011.png)  
 
 Desde la **vista informe** podemos asociarle propiedades, a través del campo **Visualizaciones**, en la pestaña **Formato de página**.
 
@@ -125,7 +128,8 @@ Las propiedades aplicadas afectarán a **toda la página seleccionada**:
 ---
 
 ## Tipos de visualización en Power BI
-![](./img/06-012.png)
+
+![](./img/06-012.png)  
 
 **Power BI** ofrece, de forma predeterminada, una gran variedad de **objetos visuales** o **visualizaciones**, desde sencillas **tarjetas** hasta **gráficos de barras**, pasando por **gráficos circulares** o **mapas**, e incluso elementos menos conocidos como **cascadas**, **embudos**, **medidores**, etc.
 
@@ -145,7 +149,8 @@ Los podemos agrupar en:
 ---
 
 ## Categorías principales de objetos visuales
-![](./img/06-013.png)
+
+![](./img/06-013.png)  
 
 > Es importante entender las distintas categorías de elementos visuales, ya que permitirán acelerar el proceso de selección para la información que queremos visualizar.
 
@@ -167,9 +172,10 @@ Los diferentes objetos visuales pueden agruparse, a su vez, en **cuatro categor�
 
 ---
 
-![](./img/06-014.png)
+![](./img/06-014.png)  
 
-Las alternativas predeterminadas, sin contar con los objetos visuales disponibles en el market place de MS,  son varias.
+Las alternativas predeterminadas, sin contar con los objetos visuales disponibles en el market place de MS,  son varias.  
 
-![](./img/06-014b.png)
-Para poder seleccionar cualquiera de los **objetos visuales predeterminados** que nos ofrece **Power BI Desktop** solo tendremos que acudir al **panel de Visualizaciones**, situado en la **vista de Informe**.
+![](./img/06-014b.png)    
+
+Para poder seleccionar cualquiera de los **objetos visuales predeterminados** que nos ofrece **Power BI Desktop** solo tendremos que acudir al **panel de Visualizaciones**, situado en la **vista de Informe**.  
