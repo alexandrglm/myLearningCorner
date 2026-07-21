@@ -17,6 +17,7 @@ Para poder crear nuevos objetos visuales en **Power BI Desktop**, tenemos **dos 
 - Con esta opción, tan solo debemos seleccionar cualquiera de los campos que tenemos en la vista de **Campos** y arrastrarlo hacia el lienzo... De manera predeterminada, la visualización aparecerá como un objeto visual.
 
 - Si seleccionamos un nuevo campo y lo arrastramos sobre el objeto creado, los datos se integrarán en el objeto, ampliando la visualización con el nuevo campo.
+![](./img/06-016b.png)
 
 
 ![](./img/06-017.png)
@@ -59,4 +60,6 @@ Como en el caso anterior, podemos añadir nuevos campos al objeto, eliminar algu
 > **Recuerda:** debes mantener seleccionado el objeto que quieres cambiar, ya que en caso contrario, se creará un nuevo objeto visual en blanco.
 
 ---
+
+![](./img/06-022b.png)
 
