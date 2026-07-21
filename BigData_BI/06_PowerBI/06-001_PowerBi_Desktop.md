@@ -94,6 +94,7 @@ También podemos cambiar el orden de las páginas solo clicando en el nombre de 
 ![](./img/06-009.png)
 
 En la zona central de la página se encuentra el **lienzo** en el que podemos crear una o varias visualizaciones.
+![](./img/06-009b.png)
 
 Un informe puede contener **una sola página o varias**.
 
@@ -170,4 +171,5 @@ Los diferentes objetos visuales pueden agruparse, a su vez, en **cuatro categor�
 
 Las alternativas predeterminadas, sin contar con los objetos visuales disponibles en el market place de MS,  son varias.
 
+![](./img/06-014b.png)
 Para poder seleccionar cualquiera de los **objetos visuales predeterminados** que nos ofrece **Power BI Desktop** solo tendremos que acudir al **panel de Visualizaciones**, situado en la **vista de Informe**.
