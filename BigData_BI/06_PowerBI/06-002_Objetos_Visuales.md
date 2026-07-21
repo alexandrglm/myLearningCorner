@@ -45,14 +45,14 @@ En este segundo caso, en primer lugar seleccionaremos el **tipo de objeto visual
 A continuación, en el panel de **Campos** seleccionamos aquellos que queremos incluir en el nuevo objeto visual e inmediatamente aparecerán en el objeto.
 
 
-![](./img/06-020.png)
+![](./img/06-021.png)
 
 > **Ten en cuenta que los campos que añadas modifican el objeto visual, por lo que es importante experimentar y ver si los cambios mejoran al anterior.**
 
 Como en el caso anterior, podemos añadir nuevos campos al objeto, eliminar algunos de los previamente seleccionados o sustituirlos por otros diferentes.
 
 
-![](./img/06-020.png)
+![](./img/06-022.png)
 
 > En este caso, también podemos cambiar de tipo de objeto visual sin más que seleccionar un tipo de visualización diferente en el campo de **Visualizaciones**.
 
