@@ -1,0 +1,17 @@
+{
+  "version": "0.1",
+  "connections": [
+    {
+      "details": {
+        "protocol": "file",
+        "address": {
+          "path": "c:\\users\\alexander\\desktop\\ordenar\\estudios\\ifefor_bi\\ud_06_powerbi\\06-000b_datos_demo_powerbi\\ifefor_powerbi_dataset001_ejemplo_master.xlsx"
+        },
+        "authentication": null,
+        "query": null
+      },
+      "options": {},
+      "mode": null
+    }
+  ]
+}
