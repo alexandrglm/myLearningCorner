@@ -30,6 +30,8 @@ Es conveniente usarlos con **pocas líneas**, ya que en caso contrario se hacen 
 
 > **Los gráficos de líneas resaltan la forma general de toda una serie de valores**, normalmente a lo largo de un periodo de tiempo determinado.
 
+![](./img/06-031b.png)
+
 ---
 
 ### Gráficos de Áreas
@@ -47,6 +49,10 @@ Hay dos tipos:
 - **Gráfico de Áreas Básico**
 - **Gráfico de Área Apilada**
 
+> Ambos gráficos son **muy efectivos cuando representan cifras de magnitudes muy diferentes**
+
+
+
 #### Gráfico de Áreas Básico
 
 ![](./img/06-033.png)
@@ -59,6 +65,13 @@ El gráfico de áreas apiladas muestra los datos como un área bajo una línea q
 
 Son mejores en una comparativa y permiten visualizar mejor la idea general de la cantidad de cada categoría, aunque es complicado de leer si tiene muchas variables. Ofrece una visión más volumétrica de los datos.
 
+
+![](./img/06-033b.png)
+
+
+> Como añadido, también existen los **GRÁFICOS DE AREAS 100% APILADAS**, que NO forman parte de esta categoría, sino de los gráficos compositivos, mostrando cuánto del total forma un segmento en base a las áreas rellenadas.
+
+
 ---
 
 ### Gráficos de Barras y Columnas
@@ -68,6 +81,10 @@ Son mejores en una comparativa y permiten visualizar mejor la idea general de la
 > Son los más comunes, a veces omitidos por su habitualidad, lo cual es un error.
 
 > Fáciles de leer y de comparar extremos, permitiendo identificar rápidamente las categorías más grandes y pequeñas, y sus diferencias incrementales.
+
+**SON EL ESTANDAR PARA MOSTRAR DATOS CRONOLOGICOS**.  
+
+![](./img/06-034b.png)
 
 - Los **gráficos de barras** son el estándar para buscar un valor concreto en categorías diferentes.
 - Los **gráficos de columnas verticales** son buenos cuando los datos en el eje `X` se excluyen mutuamente. Son el estándar para mostrar datos cronológicos.
@@ -84,7 +101,10 @@ Son mejores en una comparativa y permiten visualizar mejor la idea general de la
 > Pueden ser algo engorrosos cuando se apilan muchas partes en una sola categoría.
 
 - Son ideales cuando también se implican comparaciones de datos entre categorías.
+
 - Es conveniente **no realizar comparativas de más de cinco categorías**, ya que la información no se visualizará adecuadamente.
+
+![](./img/06-035b.png)
 
 ---
 
@@ -105,10 +125,12 @@ Son los gráficos que incluyen áreas, en todas sus vertientes, incluidos:
 
 ![](./img/06-037.png)
 
-> Permiten **comparar totales x categoría** y **ver las partes dentro de cada una**.
+> Permiten **comparar totales X categoría** y **ver las partes dentro de cada una**.
 
 - Los **gráficos de Barras Apiladas** son idóneos si queremos disponer de una referencia del total en un periodo de tiempo, para valores amplios.
 - Los **gráficos de Columnas Apiladas** son similares, pero más útiles para valores menos amplios.
+
+![](./img/06-037b.png)
 
 El problema de este tipo de gráfico es que permiten una buena comparativa con los primeros valores, pero se pierde perspectiva con los siguientes, por lo que es interesante incluir los valores numéricos.
 
@@ -122,6 +144,8 @@ El problema de este tipo de gráfico es que permiten una buena comparativa con l
 
 > Muy útiles para **representar partes de encuestas**.
 
+![](./img/06-038b.png)
+
 Son una variante de las anteriores. Este tipo de gráficos solo aportan información sobre las partes de un todo, nunca sobre conjuntos o cómo difieren los datos de los elementos entre ellos.
 
 > **Nota:** en la gráfica se muestran los mismos datos que en la anterior, aplicados a este tipo de gráficos.
@@ -132,7 +156,8 @@ Son una variante de las anteriores. Este tipo de gráficos solo aportan informac
 
 ![](./img/06-039.png)
 
-Se llaman así ya que combinan un **gráfico de columnas** y un **gráfico de líneas**, lo que permite realizar una comparación más rápida de los datos.
+Se llaman así ya que combinan un **gráfico de columnas** y un **gráfico de líneas**, lo que permite realizar una comparación más rápida y efectiva de los datos.
+
 
 Los gráficos combinados pueden tener uno o dos ejes `Y`, uno para las columnas y otro para la línea, situados a derecha y a izquierda.
 
@@ -144,10 +169,27 @@ Los gráficos combinados pueden tener uno o dos ejes `Y`, uno para las columnas 
 - Comprobar y comparar si una medida (barra) cumple el objetivo que se define mediante otra medida (línea).
 - Ahorrar espacio en el lienzo.
 
+**Es MUY complicado aparejar datos combinados manteniendo la utilidad y narrativa**, por lo que conviene practicar mucho con los datos a mostrar, respecto a:
+
+
+*	EJE X
+*	EJE Y de COLUMNA
+*	EJE Y de LINEA
+*	LEYENDA DE COLUMNA
+*	MULTIPLOS PEQUEÑOS
+
+Recuerda que **PUEDES AÑADIR MÁS DE UN DATO A USAR EN CADA UNO DE LOS CAMPOS, a necesidad;** es una de las formas para poder conseguir AGRUPADOS COMBINADOS.
+
+![](./img/06-039b.png)
+
+
 ---
 
 ![](./img/06-040.png)
+
 > **Recuerda...**
 > El informe podrá contener varias páginas con objetos visuales, pero debemos conseguir que todas ellas narren un relato gráfico común, una historia sobre los datos. El orden o desorden, la claridad o la confusión, pueden atraer o distraer de la lectura de los datos.
->
+ 
 > En este sentido, debemos mantener las alineaciones y la proximidad adecuada entre los distintos elementos, sin agruparlos demasiado juntos, usando gráficas claras, con colores que refuercen el mensaje a transmitir.
+
+![](./img/06-040b.png)
