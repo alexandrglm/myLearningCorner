@@ -1,6 +1,6 @@
 # 06-005: Gráficos Proporcionales
 
-> Muestran información gráfica de las partes respecto a un todo.
+> Muestran **información gráfica de las partes respecto a un todo**.
 
 ---
 
@@ -22,6 +22,8 @@ La relación entre una parte y el todo es muy clara y visual. Funciona mucho mej
 
 Los gráficos circulares muestran la relación de las partes con un todo. La elección de colores y la inclusión de datos numéricos puede ser fundamental cuando las proporciones pueden llevar a confusión.
 
+![](./img/06-042b.png)
+
 ---
 
 ### Gráficos de Anillos
@@ -41,6 +43,8 @@ Muy similar en cuanto a concepto al anterior. Su aportación de valor reside, en
 Un gráfico de anillos es **similar a un gráfico circular**, ya que muestra la relación de las partes con el todo.
 
 > **La única diferencia es que el centro está en blanco** y deja espacio para un dato, un valor, un icono, una etiqueta.
+
+![](./img/06-042b.png)
 
 ---
 
@@ -66,3 +70,5 @@ Un ejemplo podría ser el proceso de ventas, que comienza con los clientes poten
 De un rápido vistazo, la forma del embudo indica el estado del proceso del que se está realizando el seguimiento. Cada fase del embudo representa un porcentaje del total. Por lo tanto, en la mayoría de los casos, un gráfico de embudo tiene la forma de embudo.
 
 > **Los embudos también son útiles para identificar problemas**, ya que **si no siguen una progresión y se producen saltos entre cada fase, ayudan a identificar un problema en el proceso**.
+
+![](./img/06-044b.png)
