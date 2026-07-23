@@ -26,3 +26,6 @@
 * Se utilizan para el análisis de variaciones en una medición de tipo aditivo. Muestran el total acumulado a medida que los valores se suman o se restan.
 
 * Son útiles para ver cómo el valor inicial se ve afectado por una serie de cambios.
+
+
+![](./img/06-047b.png)

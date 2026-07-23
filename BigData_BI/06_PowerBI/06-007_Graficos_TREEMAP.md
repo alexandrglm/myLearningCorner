@@ -21,7 +21,7 @@ Son **gráficos de rectángulos coloreados, cuyo tamaño representa el valor**.
 
 ---
 
-![](./img/06-048.png)
+![](./img/06-049.png)
 
 > Cuando los datos son muy similares, al ojo humano le cuesta percibir las diferencias.
 > Su gran ventaja es facilitar el análisis de las jerarquías escondidas dentro de los grupos de datos.
@@ -31,3 +31,10 @@ Especialmente creados para superar la ineficacia de otros gráficos de área cua
 > **El inconveniente** de este tipo de gráfico es que no es sencillo detectar las pequeñas diferencias de tamaño entre dos datos, por lo que si se necesitan comparaciones precisas ya no es tan útil.
 
 > **Su utilidad** reside también en la posibilidad de implementar en cada área del gráfico otros datos jerárquicos.
+
+---
+
+> Es **MUY importante discernir bien entre Sumas, Promedios y Recuentos,** ya que estos **pueden falsear resultados reales, su proporcionalidad, respecto al total**.
+
+![](./img/06-048b.png)
+
