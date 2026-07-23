@@ -140,6 +140,8 @@
     * 📄 [05 007 Tecnicas Visualizacion Datos](BigData_BI/05_Tableau/05-007_Tecnicas_Visualizacion_Datos.md)
   * **06 PowerBI/**
     * **06 000 Demo 01 Balances/**
+      * 📊 [1 2 ACTUALIZADO ifefor PowerBI dataset001 ejemplo MASTER](BigData_BI/06_PowerBI/06-000_Demo-01_Balances/1-2_ACTUALIZADO_ifefor_PowerBI_dataset001_ejemplo_MASTER.xlsx)
+      * 📊 [1 3 Transformados 1 Calculados ifefor PowerBI dataset001 ejemplo MASTER](BigData_BI/06_PowerBI/06-000_Demo-01_Balances/1-3_Transformados_1_Calculados_ifefor_PowerBI_dataset001_ejemplo_MASTER.xlsx)
       * 📊 [ifefor PowerBI dataset001 ejemplo MASTER](BigData_BI/06_PowerBI/06-000_Demo-01_Balances/ifefor_PowerBI_dataset001_ejemplo_MASTER.xlsx)
     * 📄 [06 000 PROYECTO PowerBI sesiones](BigData_BI/06_PowerBI/06-000_PROYECTO_PowerBI_sesiones.md)
     * 📄 [06 001 PowerBi Desktop](BigData_BI/06_PowerBI/06-001_PowerBi_Desktop.md)
