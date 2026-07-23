@@ -51,6 +51,8 @@ Hay dos tipos:
 
 > Ambos gráficos son **muy efectivos cuando representan cifras de magnitudes muy diferentes**
 
+> Es MUY importante tener MUY claro los datos que se quieren cruzar en EJE X, EJE y y en la LEYENDA DE DATOS. Una buena aplicaicón de LEYENDA genera unos datos de áreas realmente efectivos.
+
 
 
 #### Gráfico de Áreas Básico
