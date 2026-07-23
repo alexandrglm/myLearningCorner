@@ -150,6 +150,7 @@
     * 📄 [06 005 Graficos PROPORCIONALES](BigData_BI/06_PowerBI/06-005_Graficos_PROPORCIONALES.md)
     * 📄 [06 006 Graficos de CASCADA](BigData_BI/06_PowerBI/06-006_Graficos_de_CASCADA.md)
     * 📄 [06 007 Graficos TREEMAP](BigData_BI/06_PowerBI/06-007_Graficos_TREEMAP.md)
+    * 📄 [06 008 Mapas Datos Geograficos](BigData_BI/06_PowerBI/06-008_Mapas_Datos_Geograficos.md)
   * 📕 [EUSTAT 2025 BigData Empresas 2025](BigData_BI/EUSTAT_2025_BigData_Empresas_2025.pdf)
   * 📕 [INE 2023 Brujula IA empresas](BigData_BI/INE_2023_Brujula_IA_empresas.pdf)
   * 📕 [paper01 Impacto BigData IA Ambito Financiero](BigData_BI/paper01_Impacto_BigData_IA_Ambito-Financiero_.pdf)
