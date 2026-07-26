@@ -105,6 +105,10 @@
 | Status | Guide  | Type | Title                                                   | Date |
 | ------ | ------ | ---- | ------------------------------------------------------- | ---- |
 | [X]    | 06-001 |      | Power BI Desktop                                        | 2026-07-13 |
+
+#### OBJETOS VISUALES / TIPOS DE GRÁFICOS
+| Status | Guide  | Type | Title                                                   | Date |
+| ------ | ------ | ---- | ------------------------------------------------------- | ---- |
 | [X]    | 06-002 |      | Objetos Visuales                                        | 2026-07-13 |
 | [X]    | 06-003 | `Resúmenes de datos agregados`, `Detalle y Resumen de datos`, `Obtener visión completa de la historia`     | **Tablas y matrices**                                       | 2026-07-14 |
 | [X]    | 06-004 | COMPARACION: `De Lineas`, `De Àreas`, `De Áreas Básico`, `De Áreas Apiladas`, `De Barras y Columnas`, `De Barras Agrupadas y Columnas Agrupadas` <br>/ COMPOSICIÓN: `Barras Apiladas y de Columnas Apiladas`, `Barras 100% Apiladas y de Columnas 100% Apiladas`, `Gráficos COmbinados`   | **Gráficos de comparación y de composición**                | 2026-07-15 |
@@ -113,10 +117,28 @@
 | [X]    | 06-007 | `Percibir y analizar grandes datos jerárquicos escondidos en grupos de datos`  | **Gráficos TreeMap**                                       | 2026-07-15 |
 | [X]    | 06-008 |      | Mapas o gráficos geográficos.                           | 2026-07-15 |
 | [X]    | 06-009 |      | Indicadores o KPIs.                                     | 2026-07-15 |
-| [X]    | 06-010 |      | Visualización de informes.                              | 2026-07-16 |
-| [X]    | 06-011 |      | Cómo crear filtros en Power BI                          | 2026-07-21 |
-| [X]    | 06-012 |      | Creación de grupos de datos                             | 2026-07-21 |
-| [X]    | 06-013 |      | Importación de gráficos.                                | 2026-07-23 |
+| [X]    | 06-010 |      | Cintas, Dispersión, Esquemas Jerárquicos e Influenciadores Clave  | 2026-07-15 |
+| [X]    | 06-011 |      | Importancia de la Planificación de gráficos                               | 2026-07-16 |
+
+
+#### INFORMES
+| Status | Guide  | Type | Title                                                   | Date |
+| ------ | ------ | ---- | ------------------------------------------------------- | ---- |
+| [X]    | 06-012 | `Formato`, `Estilos`     | Personalización de las Visualizaciones en Informes      | 2026-07-21 |
+| [X]    | 06-013 |  | Filtros      | 2026-07-21 |
+| [X]    | 06-014 |  | Limitación de Filtros     | 2026-07-21 |
+| [X]    | 06-015 |    | Controles de Interacción      | 2026-07-21 |
+| [X]    | 06-016 |    | Medidas     | 2026-07-21 |
+
+#### CREACIÓN DE GRUPOS DE DATOS
+| [X]    | 06-017 |    | Marcadores    | 2026-07-21 |
+| [X]    | 06-018 |    | Grupos de Marcadores    | 2026-07-21 |
+| [X]    | 06-019 |    | Drill Down    | 2026-07-21 |
+
+#### MÁS ELEMENTOS
+| Status | Guide  | Type | Title                                                   | Date |
+| ------ | ------ | ---- | ------------------------------------------------------- | ---- |
+| [X]    | 06-0xx |      | Importación de gráficos.                                | 2026-07-23 |
 
 
 ---
