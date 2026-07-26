@@ -116,7 +116,7 @@
 | [X]    | 06-010 |      | Visualización de informes.                              | 2026-07-16 |
 | [X]    | 06-011 |      | Cómo crear filtros en Power BI                          | 2026-07-21 |
 | [X]    | 06-012 |      | Creación de grupos de datos                             | 2026-07-21 |
-| [ ]    | 06-013 |      | Importación de gráficos.                                |      |
+| [X]    | 06-013 |      | Importación de gráficos.                                | 2026-07-23 |
 
 
 ---
@@ -125,13 +125,13 @@
 
 | Status | Guide  | Type | Title                                                   | Date |
 | ------ | ------ | ---- | ------------------------------------------------------- | ---- |
-| [ ]    | 07-001 |      | Programación R.                                         |      |
-| [ ]    | 07-002 |      | Variables.                                              |      |
-| [ ]    | 07-003 |      | Vectores.                                               |      |
-| [ ]    | 07-004 |      | Data Frames.                                            |      |
-| [ ]    | 07-005 |      | Funciones.                                              |      |
-| [ ]    | 07-006 |      | Librerías.                                              |      |
-| [ ]    | 07-007 |      | Gráficos.                                               |      |
+| [X]    | 07-001 |      | Programación `R`                                        | 2026-07-26 |
+| [X]    | 07-002 |      | Variables                                               | 2026-07-26 |
+| [X]    | 07-003 |      | Vectores                                                | 2026-07-26 |
+| [X]    | 07-004 |      | Data Frames                                             | 2026-07-26 |
+| [ ]    | 07-005 |      | Funciones                                               |      |
+| [ ]    | 07-006 |      | Librerías                                               |      |
+| [ ]    | 07-007 |      | Gráficos                                                |      |
 
 
 
