@@ -153,6 +153,122 @@ Un Excel por bloque (Criminalidad, Empleo, Pobreza, Educación, Vivienda, Salud)
 - LO IDEAL? Modelo estrella con `Dimension_Año`, `Dimension_Territorio`, y una tabla de hechos por bloque (o una única tabla de hechos larga con columna `Bloque`).
 
 
+---
 
 
+# Jerarquía de Bloques de Datos Sesion 3 - 20260724
 
+## /A_Criminalidad
+
+**Descripción:**  
+Evolución de la seguridad ciudadana, infracciones penales e índices delictivos.
+
+**Granularidad objetivo:**  
+Territorio Histórico × Año (con desagregación municipal/comarcal cuando esté disponible).
+
+### Fuentes clave
+
+- **[A01]** Tasa de criminalidad general (Eustat / Agenda 2030)
+- **[A02 ~ A04]** VIOGEN distintos 2015~2025 (Eustat)
+
+PENDIENTES: 
+- **[A05]** Estadísticas Delictivas de la Ertzaintza (históricos y trimestrales)
+- **[A06]** Indicadores Municipales de Sostenibilidad: Índice de Delitos (‰ habitantes)
+
+---
+
+## /B_Empleo
+
+**Descripción:**  
+Dinámicas laborales, desempleo, actividad económica y tejido de ocupación.
+
+**Granularidad objetivo:**  
+Territorio Histórico × Año (y comarcal para datos puntuales).
+
+### Fuentes clave
+
+
+PENDIENTES:   
+- **[B01]** Repositorio de Actividad, Ocupación y Paro (Eustat)
+- **[B01]** Población Parada Censada (por sexo y nivel formativo)
+- **[B03]** Tasas de Actividad y Paro por Comarcas (40 comarcas)
+- **[B04]** Actividad, Ocupación y Paro, Serie Histórica (1985–2021)
+
+---
+
+## /C_Pobreza
+
+**Descripción:**  
+Indicadores de vulnerabilidad económica, exclusión social, riesgo de pobreza y protección asistencial.
+
+**Granularidad objetivo:**  
+Territorio Histórico × Año
+
+### Fuentes clave
+
+PENDIENTES (*Algunas YA han salido en F*) :
+- **[C01]** Módulo EPDS – Encuesta de Necesidades Sociales (Eustat)
+- **[C02]** Pobreza y Desigualdades Sociales (series desde 1986/2008)
+- **[C03]** Porcentaje de Perceptores de RGI y Parados Registrados
+- **[C04]** Población en Riesgo de Pobreza y/o Exclusión Social (Tasa AROPE)
+- **[C05]** Personas en Riesgo o Situación de Pobreza Extrema (Indicador 0306)
+- **[C06]** Evolución de la Tasa de Riesgo de Pobreza sobre la Población Total
+
+---
+
+## /D_Educacion
+
+**Descripción:**  
+Niveles de instrucción, escolarización, analfabetismo y distribución de modelos lingüísticos.
+
+**Granularidad objetivo:**  
+Territorio Histórico × Año (con series históricas amplias desde los años 80).
+
+### Fuentes clave
+
+PENDIENTES:   
+- **[D01]** Escolarización vs. Modelos Lingüísticos (A, B y D) (1983–2025)
+- **[D02]** Tasas de Analfabetismo (población de 10 o más años, por edad y sexo)
+- **[D03]** Modelos Lingüísticos en Centros No Universitarios
+
+---
+
+## /E_Vivienda
+
+**Descripción:**  
+Acceso al alquiler, esfuerzo financiero de los hogares, contratos públicos y políticas de vivienda protegida.
+
+**Granularidad objetivo:**  
+Territorio Histórico / Municipal × Año.
+
+### Fuentes clave
+
+PENDIENTES:   
+- **[E01]** Registro de Contratos de ALOKABIDE S.A.
+- **[E02]** Indicadores de Etxebide:
+  - Viviendas protegidas adjudicadas
+  - Eficiencia de adjudicación
+  - Características de los hogares en alquiler
+  - Esfuerzo económico familiar
+
+---
+
+## /F_Salud
+
+**Descripción:**  
+Bienestar sociosanitario, consumo de sustancias, dependencia, discapacidad, sostenibilidad de pensiones y recursos de los servicios sociales.
+
+**Granularidad objetivo:**  
+Territorio Histórico × Año (1988–2023).
+
+### Fuentes clave
+
+- **[F01]** Personal, Gasto y Financiación de los Servicios Sociales (1988–2023)
+- **[F02]** Centros Asistenciales por Población y Tipo de Centro (1994–2023)
+- **[F03]** Personas Mayores: Centros, Plazas y Usuarios (1994–2023)
+- **[F04]** Discapacidad: Centros, Plazas y Usuarios (1994–2023)
+- **[F05]** EPDS – Encuesta de Necesidades Sociales: Desigualdades Sociales (2014–2024)
+
+PENDIENTES:  
+- **[F15]** Consumo de Sustancias y Test de Alcoholemia (CAGE)
+- **[F16]** Sostenibilidad, Discapacidad, Centros de Día y Afiliación a la Seguridad Social
