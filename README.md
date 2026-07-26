@@ -157,6 +157,7 @@
     * 📄 [07 001 Programacion R](BigData_BI/07_R/07-001_Programacion_R.md)
     * 📄 [07 002 R Variables](BigData_BI/07_R/07-002_R_Variables.md)
     * 📄 [07 003 R Vectores](BigData_BI/07_R/07-003_R_Vectores.md)
+    * 📄 [07 004 R DataFrames](BigData_BI/07_R/07-004_R_DataFrames.md)
   * 📕 [EUSTAT 2025 BigData Empresas 2025](BigData_BI/EUSTAT_2025_BigData_Empresas_2025.pdf)
   * 📕 [INE 2023 Brujula IA empresas](BigData_BI/INE_2023_Brujula_IA_empresas.pdf)
   * 📕 [paper01 Impacto BigData IA Ambito Financiero](BigData_BI/paper01_Impacto_BigData_IA_Ambito-Financiero_.pdf)
