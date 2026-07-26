@@ -155,6 +155,7 @@
     * 📄 [06 008 Mapas Datos Geograficos](BigData_BI/06_PowerBI/06-008_Mapas_Datos_Geograficos.md)
   * **07 R/**
     * 📄 [07 001 Programacion R](BigData_BI/07_R/07-001_Programacion_R.md)
+    * 📄 [07 002 R Variables](BigData_BI/07_R/07-002_R_Variables.md)
   * 📕 [EUSTAT 2025 BigData Empresas 2025](BigData_BI/EUSTAT_2025_BigData_Empresas_2025.pdf)
   * 📕 [INE 2023 Brujula IA empresas](BigData_BI/INE_2023_Brujula_IA_empresas.pdf)
   * 📕 [paper01 Impacto BigData IA Ambito Financiero](BigData_BI/paper01_Impacto_BigData_IA_Ambito-Financiero_.pdf)
