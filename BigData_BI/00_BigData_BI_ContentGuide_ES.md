@@ -151,9 +151,9 @@
 | [X]    | 07-002 |      | Variables                                               | 2026-07-26 |
 | [X]    | 07-003 |      | Vectores                                                | 2026-07-26 |
 | [X]    | 07-004 |      | Data Frames                                             | 2026-07-26 |
-| [ ]    | 07-005 |      | Funciones                                               |      |
-| [ ]    | 07-006 |      | Librerías                                               |      |
-| [ ]    | 07-007 |      | Gráficos                                                |      |
+| [X]    | 07-005 |      | Funciones                                               | 2026-07-30 |
+| [X]    | 07-006 |      | Librerías                                               | 2026-07-30 |
+| [X]    | 07-007 |      | Gráficos                                                | 2026-07-30 |
 
 
 
@@ -163,16 +163,15 @@
 
 | Status | Guide  | Type | Title                                                   | Date |
 | ------ | ------ | ---- | ------------------------------------------------------- | ---- |
-| [ ]    | 08-001 |      | El servicio Power BI.                                   |      |
-| [ ]    | 08-002 |      | El registro en el servicio Power BI.                    |      |
-| [ ]    | 08-003 |      | Tipos de licencia de Power BI.                          |      |
-| [ ]    | 08-004 |      | Contenido del servicio Power BI.                        |      |
-| [ ]    | 08-005 |      | Informes.                                               |      |
-| [ ]    | 08-006 |      | Paneles vs informes.                                    |      |
-| [ ]    | 08-007 |      | Publicar conjuntos de datos e informes.                 |      |
-| [ ]    | 08-008 |      | Power BI Mobile.                                        |      |
-| [ ]    | 08-009 |      | Diseñar informes para Power BI.                         |      |
-| [ ]    | 08-010 |      | Funcionalidades del servicio Power BI.                  |      |
+| [X]    | 08-001 |      | El servicio Power BI                                    | 2026-07-30 |
+| [X]    | 08-002 |      | El registro en el servicio Power BI                     | 2026-07-30 |
+| [X]    | 08-003 |      | Tipos de licencia de Power BI                           | 2026-07-30 |
+| [X]    | 08-004 |      | Contenido del servicio Power BI                         | 2026-07-30 |
+| [X]    | 08-005 |      | Interfaz, Informes y Paneles                            | 2026-07-30 |
+| [ ]    | 08-006 |      | Publicar conjuntos de datos e informes                  |      |
+| [ ]    | 08-007 |      | Power BI Mobile.                                        |      |
+| [ ]    | 08-008 |      | Diseñar informes para Power BI.                         |      |
+| [ ]    | 08-009 |      | Funcionalidades del servicio Power BI.                  |      |
 
 
 ---
