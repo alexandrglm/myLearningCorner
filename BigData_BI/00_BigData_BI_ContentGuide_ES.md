@@ -161,6 +161,8 @@
 
 ## MODULE 8 - Regulación de Escenarios para el uso del dato
 
+### Servicio PowerBI
+
 | Status | Guide  | Type | Title                                                   | Date |
 | ------ | ------ | ---- | ------------------------------------------------------- | ---- |
 | [X]    | 08-001 |      | El servicio Power BI                                    | 2026-07-30 |
@@ -168,9 +170,9 @@
 | [X]    | 08-003 |      | Tipos de licencia de Power BI                           | 2026-07-30 |
 | [X]    | 08-004 |      | Contenido del servicio Power BI                         | 2026-07-30 |
 | [X]    | 08-005 |      | Interfaz, Informes y Paneles                            | 2026-07-30 |
-| [ ]    | 08-006 |      | Publicar conjuntos de datos e informes                  |      |
-| [ ]    | 08-007 |      | Power BI Mobile.                                        |      |
-| [ ]    | 08-008 |      | Diseñar informes para Power BI.                         |      |
+| [X]    | 08-006 |      | Publicar conjuntos de datos e informes                  | 2026-07-30 |
+| [X]    | 08-007 |      | Power BI Mobile.                                        | 2026-08-05 |
+| [X]    | 08-008 |      | Diseñar informes para Power BI.                         | 2026-08-05 |
 | [ ]    | 08-009 |      | Funcionalidades del servicio Power BI.                  |      |
 
 
