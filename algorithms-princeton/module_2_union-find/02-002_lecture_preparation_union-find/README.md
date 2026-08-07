@@ -1,2 +1,0 @@
-# 02-002\_LECTURE\_PREPARATION\_Union-Find
-
