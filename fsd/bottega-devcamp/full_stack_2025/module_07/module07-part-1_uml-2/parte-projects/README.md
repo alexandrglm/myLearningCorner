@@ -1,2 +1,0 @@
-# Parte-Projects
-
