@@ -171,9 +171,11 @@
 | [X]    | 08-004 |      | Contenido del servicio Power BI                         | 2026-07-30 |
 | [X]    | 08-005 |      | Interfaz, Informes y Paneles                            | 2026-07-30 |
 | [X]    | 08-006 |      | Publicar conjuntos de datos e informes                  | 2026-07-30 |
-| [X]    | 08-007 |      | Power BI Mobile.                                        | 2026-08-05 |
-| [X]    | 08-008 |      | Diseñar informes para Power BI.                         | 2026-08-05 |
-| [ ]    | 08-009 |      | Funcionalidades del servicio Power BI.                  |      |
+| [X]    | 08-007 |      | Power BI Mobile                                         | 2026-08-05 |
+| [X]    | 08-008 |      | Diseñar informes para Power BI                          | 2026-08-05 |
+| [X]    | 08-009 | Integración con MS, Grupos de Datos, Áreas de trabajo, Programación de Informes | Funcionalidades del servicio Power BI (1)               | 2026-08-11 |
+| [X]    | 08-010 |      | Conclusiones Rápidas                                    | 2026-08-11 |
+| [X]    | 08-011 | Alerta de datos, Exportación, Comentarios, Métricas de uso, Vista | Funcionalidades del servicio Power BI (2)               | 2026-08-11 |
 
 
 ---
