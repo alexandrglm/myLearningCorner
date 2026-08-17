@@ -173,9 +173,26 @@
 | [X]    | 08-006 |      | Publicar conjuntos de datos e informes                  | 2026-07-30 |
 | [X]    | 08-007 |      | Power BI Mobile                                         | 2026-08-05 |
 | [X]    | 08-008 |      | Diseñar informes para Power BI                          | 2026-08-05 |
+
+
+### Funcionalidades esenciales
+
+| Status | Guide  | Type | Title                                                   | Date |
+| ------ | ------ | ---- | ------------------------------------------------------- | ---- |
 | [X]    | 08-009 | Integración con MS, Grupos de Datos, Áreas de trabajo, Programación de Informes | Funcionalidades del servicio Power BI (1)               | 2026-08-11 |
 | [X]    | 08-010 |      | Conclusiones Rápidas                                    | 2026-08-11 |
 | [X]    | 08-011 | Alerta de datos, Exportación, Comentarios, Métricas de uso, Vista | Funcionalidades del servicio Power BI (2)               | 2026-08-11 |
+| [X]    | 08-012 | Exportar Datos, Preguntas y Respuestas, Suscripción por e-mail  | Funcionalidades del servicio Power BI (3)               | 2026-08-17 |
+| [X]    | 08-013 | Colaborar/Compartir, Colaborar en Área de Trabajo, Conceder Acceso y Permisos, Compartir Área de Trabajo, Compartir por HTML, Compartir por QR, Compartir los DataSets | Funcionalidades del servicio Power BI (4)               | 2026-08-17 |
+| [X]    | 08-014 |  | Apps de PowerBI y Market               | 2026-08-17 |
+| [X]    | 08-015 | Actualización MANUAL, Actualización PROGRAMADA, Programar Actualizaciones, Actualización desde OneDrive, Notificaciones de Error en actualización, Actualizar SOLAMENTE CIERTAS PAGINAS | Actualizar Datos               | 2026-08-17 |
+
+
+### Métricas, Objetivos, Cuadros de Mando
+
+| Status | Guide  | Type | Title                                                   | Date |
+| ------ | ------ | ---- | ------------------------------------------------------- | ---- |
+| [ ]    | 08-016 |      |                                                         |      |
 
 
 ---
