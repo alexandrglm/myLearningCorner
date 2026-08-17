@@ -151,9 +151,13 @@ Para realizar una actualización manual única directamente en Power BI Desktop.
 
 ![](./img/08-172.png)
 
+
 *   Power BI enviará notificaciones de error de las actualizaciones, por medio de un correo electrónico al propietario del conjunto de datos, en caso de que se produzcan errores de actualización, o cuando el Servicio Power BI deshabilita la programación debido a errores consecutivos.
 
 *   Se puede programar el envío de notificaciones de error de actualización a otros usuarios, además de al propietario del conjunto de datos, para garantizar que los problemas se detectan y se abordan a tiempo.
+
+##### **Comprobación del estado** y el historial de actualizaciones
+![](./img/08-173.png)
 
 *   Además, Power BI también envía notificaciones de errores de actualización cuando el Servicio Power BI detiene una actualización programada debido a su inactividad, que es cuando ningún usuario ha visitado un panel o informe generado para el conjunto de datos en un plazo de dos meses.
 
@@ -161,13 +165,15 @@ Para realizar una actualización manual única directamente en Power BI Desktop.
 
 Para ello:  
 
+![](./img/08-174.png)
+![](./img/08-175.png)
 
 1.  Seleccionando el icono de advertencia se puede obtener información adicional, incluyendo detalles del error en **Ver detalles**.
 
 2.  **El Servicio Power BI ofrece la funcionalidad Solución de problemas específica para los fallos de actualización de datos.**
 
 
-![](./img/08-174.png)
+
 
 3.  Si disponemos del rol de administradores de los conjuntos de datos podremos acceder al historial de actualizaciones, que permite revisar el estado de los últimos ciclos de sincronización.
 
@@ -179,7 +185,7 @@ Para ello:
 
 #### **Actualización automática** *de páginas*
 
-![](./img/08-175.png)
+![](./img/08-176.png)
 
 Otra funcionalidad que ofrece Power BI en el proceso de actualización de datos es la actualización automática de páginas, que funciona en el nivel de página de informes, y permite a los creadores de informes establecer un intervalo de actualización de los objetos visuales situados dentro de una página concreta de un informe que solo está activo cuando la página se está usando.  
 
@@ -191,7 +197,7 @@ La actualización automática de páginas **solo estará disponible en orígenes
 
 ### Procedimientos recomendados
 
-![](./img/08-176.png)
+![](./img/08-177.png)
 
 *   Comprobar el historial de actualizaciones de los conjuntos de datos con regularidad para asegurarse de que los informes y los paneles emplean datos actualizados.
 
@@ -211,7 +217,7 @@ La actualización automática de páginas **solo estará disponible en orígenes
 
 ---
 
-![](./img/08-177.png)
+![](./img/08-178.png)
 
 **Para poder actualizar los datos en el Servicio Power BI:**
 
