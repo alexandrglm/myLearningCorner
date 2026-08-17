@@ -82,22 +82,38 @@
 
 ---
 
-## MODULE 5 - Tableau
+## MODULE 5 - Tableau / Data Visualisation
+
+### PRINCIPIOS y METODOS PARA LA REPRESENTACIÓN DE DATOS
 
 | Status | Guide  | Type | Title                                                   | Date |
 | ------ | ------ | ---- | ------------------------------------------------------- | ---- |
-| [X]    | 05-001 | Gráficos, Infografías, Cuadros de Mando, Informes BI, Factor Visual, Comprender, Analizar | Visualización de data                                   | 2026-07-08 |
+| [X]    | 05-001 | Gráficos, Infografías, Cuadros de Mando, Informes BI, Factor Visual, Comprender, Analizar | Visualización de datos  | 2026-07-08 |
 | [X]    | 05-002 | Interpretación natural e inmediata  | Metáforas Visuales   | 2026-07-08 |
-| [X]    | 05-003 | Detalles, Respuesta Emocional, Comunicación, Comparación, Hipótesis y predicciones, Monitorización, Impacto, Eficiencia, Optimización, **Toma de Decisiones basada en datos**     | Beneficios de la Visualización de Datos    | 2026-07-08 |
-| [X]    | 05-004 |      | Principales tipos de visualización de datos             | 2026-07-09 |
-| [X]    | 05-005 |      | Leyes de percepción visual de GESTALT                   | 2026-07-09 |
-| [X]    | 05-006 |      | Data Visualization                                      | 2026-07-09 |
-| [X]    | 05-007 | Gráficos Relacionales, Nube de Palabras, Mapas de Color, Mapas Cuadriculados, Mapas Cartográficos, Diagramas de Dispersión, Tableau Prep, Tableau Desktop, Tableau Online, Tableau Server Tableau Public (licencia), Cuadrante Mágico de Gartner  | Técnicas de representación de datos     | 2026-07-10 |
+| [X]    | 05-003 | Detalles, Respuesta Emocional, Comunicación, Comparación, Hipótesis y predicciones, Monitorización, Impacto, Eficiencia, Optimización, **Impulsar la Toma de Decisiones basada en datos**     | Beneficios de la Visualización de Datos    | 2026-07-08 |
+| [X]    | 05-004 | Cambios en determinado periodo, Comparación de categorías, Clasificación de datos, De una parte al todo, Correlaciones, Distribución de datos, Flujo de los datos,   | Principales tipos de visualización de datos  | 2026-07-09 |
+| [X]    | 05-005 | **Equilibrio entre FORMA y FUNCION**, Principio de PROXIMIDAD, SEMEJANZA o SIMILITUD, SIMETRIA y ORDEN, Principio de CIERRE, Principio de CONTINUIDAD, Principio de FIGURA y FONDO | Leyes de percepción visual de GESTALT                   | 2026-07-09 |
+
+
+### REPRESENTACIÓN DE LOS DATOS
+
+| Status | Guide  | Type | Title                                                   | Date |
+| ------ | ------ | ---- | ------------------------------------------------------- | ---- |
+| [X]    | 05-006 |      | Evalucación de las herramientas para Data Visualisation | 2026-07-09 |
+| [X]    | 05-007 | Simplificar, Comparar, Mostrar, Diversificar, Narrar Visualmente | Principios de Data Visualisation  | 2026-08-17 |
+| [X]    | 05-008 | Gráficos Relacionales, Nube de Palabras, Mapas de Color, Mapas Cuadriculados, Mapas Cartográficos, Diagramas de Dispersión   | 2026-07-10 |
+
+
+### TABLEAU y BI
+
+| Status | Guide  | Type | Title                                                   | Date |
+| ------ | ------ | ---- | ------------------------------------------------------- | ---- |
+| [X]    | 05-009 | Tableau Prep, Tableau Desktop, Tableau Online, Tableau Server, Tableau Public (licencia), Cuadrante Mágico de Gartner  | Tableau y Business Inteligence   | 2026-08-17 |
 
 
 | Status | Guide  | Type | Title                                                                              | Date       |
 | ------ | ------ | ---- | ---------------------------------------------------------------------------------- | ---------- |
-| [ ]    | 05-007b | Actividad | Otras herramientas de visualización de datos                                |            |
+| [ ]    | 05-007b | Actividad | Otras herramientas de visualización de datos                                 |            |
 ---
 
 ## MODULE 6 - Power BI
@@ -106,7 +122,8 @@
 | ------ | ------ | ---- | ------------------------------------------------------- | ---- |
 | [X]    | 06-001 |      | Power BI Desktop                                        | 2026-07-13 |
 
-#### OBJETOS VISUALES / TIPOS DE GRÁFICOS
+### OBJETOS VISUALES / TIPOS DE GRÁFICOS
+
 | Status | Guide  | Type | Title                                                   | Date |
 | ------ | ------ | ---- | ------------------------------------------------------- | ---- |
 | [X]    | 06-002 |      | Objetos Visuales                                        | 2026-07-13 |
@@ -121,7 +138,8 @@
 | [X]    | 06-011 |      | Importancia de la Planificación de gráficos                               | 2026-07-16 |
 
 
-#### INFORMES
+### INFORMES
+
 | Status | Guide  | Type | Title                                                   | Date |
 | ------ | ------ | ---- | ------------------------------------------------------- | ---- |
 | [X]    | 06-012 | `Formato`, `Estilos`     | Personalización de las Visualizaciones en Informes      | 2026-07-21 |
@@ -130,15 +148,18 @@
 | [X]    | 06-015 |    | Controles de Interacción      | 2026-07-21 |
 | [X]    | 06-016 |    | Medidas     | 2026-07-21 |
 
-#### CREACIÓN DE GRUPOS DE DATOS
+### CREACIÓN DE GRUPOS DE DATOS
+
 | [X]    | 06-017 |    | Marcadores    | 2026-07-21 |
 | [X]    | 06-018 |    | Grupos de Marcadores    | 2026-07-21 |
 | [X]    | 06-019 |    | Drill Down    | 2026-07-21 |
 
-#### MÁS ELEMENTOS
+
+### MÁS ELEMENTOS
+
 | Status | Guide  | Type | Title                                                   | Date |
 | ------ | ------ | ---- | ------------------------------------------------------- | ---- |
-| [X]    | 06-0xx |      | Importación de gráficos.                                | 2026-07-23 |
+| [X]    | 06-0xx |      | Importación de gráficos                                 | 2026-07-23 |
 
 
 ---
@@ -161,7 +182,7 @@
 
 ## MODULE 8 - Regulación de Escenarios para el uso del dato
 
-### Servicio PowerBI
+### SERVICIO PowerBI
 
 | Status | Guide  | Type | Title                                                   | Date |
 | ------ | ------ | ---- | ------------------------------------------------------- | ---- |
@@ -175,7 +196,7 @@
 | [X]    | 08-008 |      | Diseñar informes para Power BI                          | 2026-08-05 |
 
 
-### Funcionalidades esenciales
+### FUNCIONALIDADES ESENCIALES de PowerBI
 
 | Status | Guide  | Type | Title                                                   | Date |
 | ------ | ------ | ---- | ------------------------------------------------------- | ---- |
@@ -188,12 +209,20 @@
 | [X]    | 08-015 | Actualización MANUAL, Actualización PROGRAMADA, Programar Actualizaciones, Actualización desde OneDrive, Notificaciones de Error en actualización, Actualizar SOLAMENTE CIERTAS PAGINAS | Actualizar Datos               | 2026-08-17 |
 
 
-### Métricas, Objetivos, Cuadros de Mando
+
+### METRICAS, OBJETIVOS, CUADROS DE MANDO
 
 | Status | Guide  | Type | Title                                                   | Date |
 | ------ | ------ | ---- | ------------------------------------------------------- | ---- |
-| [ ]    | 08-016 |      |                                                         |      |
+| [X]    | 08-016 |      | Métricas, Objetivos, Cuadros de mando                   | 2026-08-17 |
 
+
+### NARRATIVA Y DATOS
+
+| Status | Guide  | Type | Title                                                   | Date |
+| ------ | ------ | ---- | ------------------------------------------------------- | ---- |
+| [X]    | 08-017 |      | Elegir el gráfico adecuado                              | 2026-08-17 |
+| [X]    | 08-018 |      | Contar una historia con datos                           | 2026-08-17 |
 
 ---
 
