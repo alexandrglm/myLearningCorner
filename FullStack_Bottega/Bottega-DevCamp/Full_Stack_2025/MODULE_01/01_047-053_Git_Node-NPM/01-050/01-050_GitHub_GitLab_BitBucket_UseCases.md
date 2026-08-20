@@ -82,7 +82,7 @@ At the time I was working as part of a team that was using GitLab that they were
 
 Now because GitLab is really built for working in enterprise types of environments.\
 You'll see that it has a much different pricing structure than GitHub.\
-![01-050\_IMG1](https://github.com/user-attachments/assets/036281a5-f7cb-43c0-a238-88d8079e6b02)
+![01-050\_IMG1](./image1.png)
 
 So they do have a free trial and it is supported in a few different ways.\
 But as you move down the line and you see the starter, the premium, and the Ultimate options you'll see that they have a number of features many of which are related to working in an enterprise environment.
@@ -111,7 +111,7 @@ You're going to be able to do it with all three of these providers.\
 So that is a very good idea to keep in mind with whichever one you pick out will work for everything that we go through in this course and most likely each one of these providers will work for around 95 percent of the requirements of your project, so keep that in mind.
 
 The reason why I included BitBucket here is not as much because of any special features that I'm really in love with but mainly because if you go to the pricing tab right here you'll be able to see that out of the three **BitBucket is the only one that provides unlimited private repos inside of their free tier**¹. (UPDATE: GitHub also offers unlimited repo creation).\
-![01-050\_IMG2](https://github.com/user-attachments/assets/91ffe800-4780-4bd1-9d39-5a699ec41ea7)
+![01-050\_IMG2](./image2.png)
 
 So if you are a very budget conscious or you're working with a client or company that is, then BitBucket may be a great option for you.
 
