@@ -1,0 +1,418 @@
+WEBVTT
+
+1
+00:00:00.221 --> 00:00:02.450
+<v ->Así que ahora que nuestros resultados se ven bien,</v>
+
+2
+00:00:02.450 --> 00:00:06.100
+es el momento de personalizar los estilos de estos enlaces,
+
+3
+00:00:06.100 --> 00:00:09.280
+y este es un caso de uso perfecto
+
+4
+00:00:09.280 --> 00:00:12.240
+para poder usar CSS Grid.
+
+5
+00:00:12.240 --> 00:00:15.350
+Así que, lo que queremos implementar es exactamente
+
+6
+00:00:15.350 --> 00:00:17.790
+lo que tenemos aquí donde tenemos cuatro columnas
+
+7
+00:00:17.790 --> 00:00:21.610
+y a estas alturas probablemente ya sepas cómo hacer esto.
+
+8
+00:00:21.610 --> 00:00:24.385
+Esta es la solución que yo personalmente
+
+9
+00:00:24.385 --> 00:00:26.090
+pondría en práctica.
+
+10
+00:00:26.090 --> 00:00:29.488
+Así que voy a empezar por ahí, primero asegurándome
+
+11
+00:00:29.488 --> 00:00:30.810
+que tengo el nombre correcto para la clase;
+
+12
+00:00:30.810 --> 00:00:35.810
+así que tengo un envoltorio con los resultados.
+
+13
+00:00:36.390 --> 00:00:39.150
+Voy a copiar todo esto;
+
+14
+00:00:39.150 --> 00:00:40.270
+asegurarme de que no tengo ningún
+
+15
+00:00:40.270 --> 00:00:43.373
+error tipográfico o cualquier cosa con mi selector de clase.
+
+16
+00:00:45.180 --> 00:00:47.490
+Y luego, desde allí,
+
+17
+00:00:47.490 --> 00:00:50.670
+voy a crear mi contenedor CSS Grid.
+
+18
+00:00:50.670 --> 00:00:53.980
+Así que me aseguraré de tener algo de margen
+
+19
+00:00:53.980 --> 00:00:55.780
+en la parte superior, me iré con 2rem
+
+20
+00:00:55.780 --> 00:00:59.780
+y luego mostraré la cuadrícula
+
+21
+00:00:59.780 --> 00:01:03.840
+y luego vamos con las columnas de plantillas de cuadrícula
+
+22
+00:01:03.840 --> 00:01:07.960
+y quiero que se repitan,
+
+23
+00:01:07.960 --> 00:01:10.790
+el primer argumento con ajuste automático
+
+24
+00:01:10.790 --> 00:01:15.790
+y luego con fines de respuesta, quiero usar minmax
+
+25
+00:01:16.180 --> 00:01:21.180
+con 100 píxeles y luego una unidad fraccionaria.
+
+26
+00:01:22.400 --> 00:01:25.030
+Así que guardemos esto.
+
+27
+00:01:25.030 --> 00:01:27.438
+Oh y también necesito asegurarme de que estoy añadiendo
+
+28
+00:01:27.438 --> 00:01:28.550
+un hueco en la rejilla.
+
+29
+00:01:28.550 --> 00:01:31.643
+Así que quiero tener un hueco en la red, 2rem;
+
+30
+00:01:32.712 --> 00:01:34.150
+pulsa "guardar".
+
+31
+00:01:34.150 --> 00:01:37.370
+Ahora si vengo aquí, pueden ver que esto está funcionando.
+
+32
+00:01:37.370 --> 00:01:38.580
+Esto se ve mucho mejor.
+
+33
+00:01:38.580 --> 00:01:39.413
+Todavía tengo que actualizar los estilos
+
+34
+00:01:39.413 --> 00:01:41.610
+para cada elemento individual,
+
+35
+00:01:41.610 --> 00:01:44.770
+pero ahora puedes ver cómo están perfectamente alineados
+
+36
+00:01:44.770 --> 00:01:46.440
+uno al lado del otro.
+
+37
+00:01:46.440 --> 00:01:48.410
+Están ocupando la cantidad adecuada de espacio.
+
+38
+00:01:48.410 --> 00:01:51.320
+Oh y también si lo encojo hacia abajo puedes ver
+
+39
+00:01:51.320 --> 00:01:53.900
+que esto ya responde completamente.
+
+40
+00:01:53.900 --> 00:01:56.820
+Así que, eso se ve perfecto.
+
+41
+00:01:56.820 --> 00:02:00.500
+Así que ahora que tenemos eso, bajemos aquí
+
+42
+00:02:00.500 --> 00:02:03.520
+y veamos qué más necesitamos.
+
+43
+00:02:03.520 --> 00:02:07.687
+Veamos cómo se llaman los elementos aquí dentro.
+
+44
+00:02:07.687 --> 00:02:10.780
+Así que tengo este result-post-link-wrapper
+
+45
+00:02:10.780 --> 00:02:13.000
+y luego tengo cada uno de estos enlaces.
+
+46
+00:02:13.000 --> 00:02:16.890
+Ahora una cosa que necesita ser arreglada aquí es que estos
+
+47
+00:02:16.890 --> 00:02:20.790
+son enlaces y ahora mismo están listados como divs.
+
+48
+00:02:20.790 --> 00:02:23.190
+Vamos a cambiar cada uno de estos elementos.
+
+49
+00:02:23.190 --> 00:02:28.190
+No hay razón para que necesiten ser un div;
+
+50
+00:02:28.930 --> 00:02:32.713
+realmente todos pueden ser &lt;a&gt; tags.
+
+51
+00:02:33.640 --> 00:02:36.490
+Así que esos van a ser todos &lt;a&gt; tags
+
+52
+00:02:36.490 --> 00:02:40.763
+y ahora vamos a cerrarlas todas.
+
+53
+00:02:41.630 --> 00:02:46.630
+Así que va a ser uno, dos, tres y cuatro.
+
+54
+00:02:47.670 --> 00:02:49.950
+De acuerdo, nada va a cambiar,
+
+55
+00:02:49.950 --> 00:02:52.500
+pero ahora lo que tenemos que hacer es
+
+56
+00:02:52.500 --> 00:02:55.230
+añadir un enlace a ellos.
+
+57
+00:02:55.230 --> 00:02:56.570
+Y voy a deshacerme de todos estos porque
+
+58
+00:02:56.570 --> 00:03:00.480
+hasta que lo tengamos completamente hecho no hay razón
+
+59
+00:03:00.480 --> 00:03:02.910
+para conservarlo y luego puedo duplicarlo más tarde.
+
+60
+00:03:02.910 --> 00:03:06.202
+Así que aquí tenemos un href, y ahora tenemos estos
+
+61
+00:03:06.202 --> 00:03:07.780
+y son enlaces reales.
+
+62
+00:03:07.780 --> 00:03:10.370
+Así que si vuelves puedes ver que ahora estos son enlaces
+
+63
+00:03:10.370 --> 00:03:13.110
+y ahora podemos estilizarlos como corresponde.
+
+64
+00:03:13.110 --> 00:03:17.350
+Tenemos esta clase de enlace de post-resultado.
+
+65
+00:03:17.350 --> 00:03:20.470
+Así que puedo elegir eso,
+
+66
+00:03:20.470 --> 00:03:21.763
+venir aquí abajo,
+
+67
+00:03:23.560 --> 00:03:26.330
+pegar eso y ahora podemos estilizarlo.
+
+68
+00:03:26.330 --> 00:03:29.480
+Ahora te darás cuenta, porque he añadido la clase
+
+69
+00:03:29.480 --> 00:03:33.000
+directamente al enlace, no tengo que decir
+
+70
+00:03:33.000 --> 00:03:36.680
+result-post-link &lt;a&gt;, porque ya la he seleccionado.
+
+71
+00:03:36.680 --> 00:03:39.380
+La única forma en que tendría que hacer eso
+
+72
+00:03:39.380 --> 00:03:41.160
+es si tuvieraresult-post-link en un div
+
+73
+00:03:41.160 --> 00:03:44.990
+y luego pongo el enlace &lt;a&gt; dentro de él.
+
+74
+00:03:44.990 --> 00:03:47.040
+Así que ahora que tenemos eso,
+
+75
+00:03:47.040 --> 00:03:49.040
+podemos darle estilo a esto.
+
+76
+00:03:49.040 --> 00:03:51.180
+Así que vamos a añadir un color personalizado
+
+77
+00:03:51.180 --> 00:03:54.740
+para que no estemos usando ese feo azul predeterminado;
+
+78
+00:03:54.740 --> 00:03:56.027
+debería ser el del 53
+
+79
+00:03:57.780 --> 00:03:59.810
+y luego desde allí,
+
+80
+00:03:59.810 --> 00:04:02.804
+no quiero ninguna decoración de texto,
+
+81
+00:04:02.804 --> 00:04:05.303
+así que no quiero ninguna decoración de texto
+
+82
+00:04:05.303 --> 00:04:09.780
+y entonces el tamaño de la fuente debería ser 1.4 rem.
+
+83
+00:04:09.780 --> 00:04:13.440
+Guarda y ahí vamos, y eso se ve muy bien.
+
+84
+00:04:13.440 --> 00:04:17.390
+Ahora si quieres añadir algo, como subrayados
+
+85
+00:04:17.390 --> 00:04:21.010
+cuando te cierras sobre él, depende completamente de ti.
+
+86
+00:04:21.010 --> 00:04:23.770
+Si quieres hacerlo, podrías hacer algo como esto;
+
+87
+00:04:23.770 --> 00:04:27.533
+donde vas y agarras un pseudo selector.
+
+88
+00:04:28.460 --> 00:04:31.350
+Así que sabemos que tenemos acceso al enlace aquí,
+
+89
+00:04:31.350 --> 00:04:33.990
+así que puedo decir :hover
+
+90
+00:04:33.990 --> 00:04:38.230
+y luego puedo cambiar la decoración del texto
+
+91
+00:04:38.230 --> 00:04:42.150
+y simplemente cambiarlo para subrayarlo.
+
+92
+00:04:42.150 --> 00:04:44.738
+Presiona Guardar, y ahora puedes ver
+
+93
+00:04:44.738 --> 00:04:46.263
+si pasas el puntero del ratón por encima de eso
+
+94
+00:04:46.263 --> 00:04:47.960
+ahora está muy claro que se trata de enlaces.
+
+95
+00:04:47.960 --> 00:04:51.090
+También puedes hacer eso con cada uno de estos también.
+
+96
+00:04:51.090 --> 00:04:54.110
+Dejaré eso a tu discreción.
+
+97
+00:04:54.110 --> 00:04:57.070
+Pero ahora estamos en un buen punto de parada.
+
+98
+00:04:57.070 --> 00:05:00.610
+Como puedes ver, nos estamos acercando mucho a la versión
+
+99
+00:05:00.610 --> 00:05:04.100
+final de la página de resultados del motor de búsqueda.
+
+100
+00:05:04.100 --> 00:05:07.020
+Todo lo que realmente necesitamos hacer es actualizar
+
+101
+00:05:07.020 --> 00:05:09.540
+algunos de los estilos de margen para nuestro logo
+
+102
+00:05:09.540 --> 00:05:11.650
+y luego el tamaño de nuestra barra de búsqueda
+
+103
+00:05:11.650 --> 00:05:13.860
+y estaremos listos para empezar.
+
+104
+00:05:13.860 --> 00:05:15.560
+Así que te veré en la próxima guía.
+

@@ -1,0 +1,386 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:02.545
+Cuando se trata de hacer aplicaciones web,
+
+2
+00:00:02.545 --> 00:00:05.301
+un sólido aprendizaje de CCS, te llevará
+
+3
+00:00:05.301 --> 00:00:06.632
+muy lejos.
+
+4
+00:00:06.632 --> 00:00:09.896
+Puedes utilizar esta publicación como una guía
+
+5
+00:00:09.896 --> 00:00:12.240
+para seleccionadores CSS, los cuales son componentes
+
+6
+00:00:12.240 --> 00:00:14.468
+claves para conectar estilos con elementos de la página.
+
+7
+00:00:14.468 --> 00:00:17.605
+CSS se destaca por hojas de estilo en cascada.
+
+8
+00:00:17.605 --> 00:00:20.665
+Tus archivos CSS están donde puedas poner las reglas
+
+9
+00:00:20.665 --> 00:00:22.493
+que dictarán cómo se ve y se siente
+
+10
+00:00:22.493 --> 00:00:23.573
+tu aplicación.
+
+11
+00:00:23.573 --> 00:00:25.631
+Así que si imaginas los componentes de una página web
+
+12
+00:00:25.631 --> 00:00:29.479
+siendo como engranajes en una máquina, tus elementos
+
+13
+00:00:29.479 --> 00:00:32.317
+HTML y CSS serán entidades separadas.
+
+14
+00:00:32.317 --> 00:00:35.266
+Esencialmente, tus archivos CSS contienen las reglas de
+
+15
+00:00:35.266 --> 00:00:37.874
+estilo para tu entrada a la página web,
+
+16
+00:00:37.874 --> 00:00:40.463
+pero para que las reglas tengan efecto,
+
+17
+00:00:40.463 --> 00:00:42.596
+necesitas conectar los dos componentes,
+
+18
+00:00:42.596 --> 00:00:44.684
+y ahí es donde va el seleccionador CSS.
+
+19
+00:00:44.684 --> 00:00:47.746
+El seleccionador CSS te permite especificar elementos
+
+20
+00:00:47.746 --> 00:00:50.767
+en la página y después aplicar las reglas de estilo
+
+21
+00:00:50.767 --> 00:00:53.137
+a los elementos que enlistaste.
+
+22
+00:00:53.137 --> 00:00:56.147
+Por ejemplo, querrás seleccionar navbar o una
+
+23
+00:00:56.147 --> 00:00:58.216
+tabla para dar a los componente
+
+24
+00:00:58.216 --> 00:01:00.107
+su propio conjunto de estilos.
+
+25
+00:01:00.107 --> 00:01:02.743
+Echándole un vistazo a esta página, puedes ver una muestra
+
+26
+00:01:02.743 --> 00:01:05.077
+de los elementos de la página que puedes seleccionar,
+
+27
+00:01:05.077 --> 00:01:09.573
+incluyendo el título de la página, logo, barra navegadora,
+
+28
+00:01:09.573 --> 00:01:13.480
+imagen, links compartidos, rutas, etc.
+
+29
+00:01:13.480 --> 00:01:17.504
+Así que cómo exactamente puedes seleccionar los elementos
+
+30
+00:01:17.504 --> 00:01:20.090
+en esta página? Como en el lenguaje HTML, hay una sintaxis
+
+31
+00:01:20.090 --> 00:01:23.245
+específica para usar estilos CSS, y eso es lo que
+
+32
+00:01:23.245 --> 00:01:24.899
+vamos a ver hoy.
+
+33
+00:01:24.899 --> 00:01:28.028
+Empezando con lo básico, hay dos maneras principales
+
+34
+00:01:28.028 --> 00:01:29.902
+para seleccionar ítems en una página.
+
+35
+00:01:29.902 --> 00:01:32.990
+Puedes seleccionar elementos como divs,
+
+36
+00:01:32.990 --> 00:01:35.065
+etiquetas H1, las cuales son etiquetas títulares,
+
+37
+00:01:35.065 --> 00:01:36.492
+ese tipo de cosas.
+
+38
+00:01:36.492 --> 00:01:38.927
+Para estas, el nombre del mismo elemento seleccionara
+
+39
+00:01:38.927 --> 00:01:40.677
+el ítem en la página.
+
+40
+00:01:40.677 --> 00:01:42.771
+Así que si seleccionas la etiqueta H1,
+
+41
+00:01:42.771 --> 00:01:44.954
+y le aplicas un conjunto de estilos,
+
+42
+00:01:44.954 --> 00:01:48.718
+afectará a todas las etiquetas H1 de la página.
+
+43
+00:01:48.718 --> 00:01:51.513
+Luego, puedes hacer que el sistema encuentre IDs.
+
+44
+00:01:51.513 --> 00:01:54.939
+Para seleccionar ID, utilizas el símbolo #
+
+45
+00:01:54.939 --> 00:01:57.214
+antes del nombre de la ID.
+
+46
+00:01:57.214 --> 00:02:01.177
+Las clases son atributos que puedes utilizar muchas veces.
+
+47
+00:02:01.177 --> 00:02:03.508
+Para seleccionar una clase, utilizas la sintaxis del
+
+48
+00:02:03.508 --> 00:02:06.030
+seleccionador de punto, para que puedas colocar un punto
+
+49
+00:02:06.030 --> 00:02:08.424
+justo enfrente del nombre de la clase.
+
+50
+00:02:08.424 --> 00:02:11.618
+En esta imagen, puedes ver una de las opciones del
+
+51
+00:02:11.618 --> 00:02:13.999
+seleccionador. El elemento div es seleccionado y se le
+
+52
+00:02:13.999 --> 00:02:15.865
+dio fondo de color rojo.
+
+53
+00:02:15.865 --> 00:02:18.974
+El div con el nombre de la clase: mi_clase_chevere
+
+54
+00:02:18.974 --> 00:02:21.755
+le ha dado al fondo el color verde.
+
+55
+00:02:21.755 --> 00:02:25.904
+Y finalmente, la ID llamada mi_id_genial ha dado
+
+56
+00:02:25.904 --> 00:02:28.606
+al fondo el color azul.
+
+57
+00:02:28.606 --> 00:02:31.637
+Date cuenta cómo, aunque los 3 elementos son divs,
+
+58
+00:02:31.637 --> 00:02:34.321
+pueden ser seleccionados por separado.
+
+59
+00:02:34.321 --> 00:02:36.435
+Esto es logrado por el concepto
+
+60
+00:02:36.435 --> 00:02:39.006
+de la priorización del seleccionador CSS.
+
+61
+00:02:39.006 --> 00:02:41.750
+En un nivel alto, significa que el seleccionador más
+
+62
+00:02:41.750 --> 00:02:44.462
+específico gana, razón por la cual el fondo de color
+
+63
+00:02:44.462 --> 00:02:47.115
+rojo no emitido por los elementos que tiene la
+
+64
+00:02:47.115 --> 00:02:49.006
+clase y el seleccionador de ID,
+
+65
+00:02:49.006 --> 00:02:51.538
+ya que son considerados más específicos.
+
+66
+00:02:51.538 --> 00:02:53.843
+Adicionalmente a seleccionar elementos básicos,
+
+67
+00:02:53.843 --> 00:02:56.119
+hay muchas veces donde necesitas seleccionar
+
+68
+00:02:56.119 --> 00:02:58.437
+elementos anidados en la página.
+
+69
+00:02:58.437 --> 00:03:01.000
+En este ejemplo, pueden ver que tenemos listo
+
+70
+00:03:01.000 --> 00:03:04.758
+elementos de viñetas anidados dentro de nuestra clase.
+
+71
+00:03:04.758 --> 00:03:07.762
+Utilizando esta sintaxis, somos capaces de seleccionar
+
+72
+00:03:07.762 --> 00:03:10.918
+los elementos anidados dentro de otro elemento
+
+73
+00:03:10.918 --> 00:03:13.507
+y define nuestro propio estilo.
+
+74
+00:03:13.507 --> 00:03:16.271
+Así que lo que pasa cuando quieres seleccionar un ítem
+
+75
+00:03:16.271 --> 00:03:18.336
+que no tiene una clase o ID,
+
+76
+00:03:18.336 --> 00:03:20.750
+o nada como eso,
+
+77
+00:03:20.750 --> 00:03:23.407
+y simplemente pertenece a un grupo de elementos,
+
+78
+00:03:23.407 --> 00:03:25.724
+como las viñetas?
+
+79
+00:03:25.724 --> 00:03:28.139
+Por ejemplo, qué pasa si necesitas dar estilos
+
+80
+00:03:28.139 --> 00:03:31.636
+específicos a una sola viñeta?
+
+81
+00:03:31.636 --> 00:03:35.418
+Ahi es donde el seleccionador de Nth-child inicia un rol.
+
+82
+00:03:35.418 --> 00:03:38.097
+Aquí puedes ver un seleccionador que tiene ventajas
+
+83
+00:03:38.097 --> 00:03:41.158
+sobre el mecanismo Nth-child, el cual nos permite
+
+84
+00:03:41.158 --> 00:03:43.639
+especificar cual elemento queremos estilizar.
+
+85
+00:03:43.639 --> 00:03:46.023
+En este caso, pase uno para seleccionar
+
+86
+00:03:46.023 --> 00:03:47.968
+la primera viñeta.
+
+87
+00:03:47.968 --> 00:03:50.695
+Los seleccionadores Nth-child son parte de un grupo especial
+
+88
+00:03:50.695 --> 00:03:52.840
+de seleccionadores llamados Pseudo clases.
+
+89
+00:03:52.840 --> 00:03:55.639
+Esta lista de pseudo clases es bastante extensa,
+
+90
+00:03:55.639 --> 00:03:58.459
+y coloque un link para ver la lista completa,
+
+91
+00:03:58.459 --> 00:04:01.630
+junto con el link de la documentación del seleccionador
+
+92
+00:04:01.630 --> 00:04:03.742
+CSS que puedes usar para ampliar tu conocimiento
+
+93
+00:04:03.742 --> 00:04:05.174
+en las notas de muestra.
+
+94
+00:04:05.174 --> 00:04:06.826
+Espero que esto haya sido una guía útil
+
+95
+00:04:06.826 --> 00:04:09.373
+a los seleccionadores CSS, y que te pueda ayudar a
+
+96
+00:04:09.373 --> 00:04:12.814
+construir estilos propios en tu siguiente aplicación web.
+

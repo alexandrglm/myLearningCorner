@@ -1,0 +1,498 @@
+WEBVTT
+
+1
+00:00:01.020 --> 00:00:02.160
+<v Instructor>En las guías anteriores,</v>
+
+2
+00:00:02.160 --> 00:00:03.613
+os he mostrado como sacar provecho
+
+3
+00:00:03.613 --> 00:00:06.350
+de la función strip de Python
+
+4
+00:00:06.350 --> 00:00:10.090
+para poder libraros del exceso de espacios
+
+5
+00:00:10.090 --> 00:00:12.760
+y, en concreto, cómo despejar
+
+6
+00:00:12.760 --> 00:00:15.910
+el comienzo y el final del retorno de carro.
+
+7
+00:00:15.910 --> 00:00:17.361
+Por ejemplo, aquí
+
+8
+00:00:17.361 --> 00:00:19.518
+si tengo está línea de URL,
+
+9
+00:00:19.518 --> 00:00:22.382
+y añadimos algo de espacio a la misma
+
+10
+00:00:22.382 --> 00:00:25.240
+y vamos a imprimirla,
+
+11
+00:00:25.240 --> 00:00:29.255
+podría decir URL y luego poner strip
+
+12
+00:00:29.255 --> 00:00:31.550
+y entonces, dado que es una función,
+
+13
+00:00:31.550 --> 00:00:33.140
+la llamamos con paréntesis.
+
+14
+00:00:33.140 --> 00:00:35.130
+Ahora le damos a enter
+
+15
+00:00:35.130 --> 00:00:38.190
+esto nos va a devolver la URL,
+
+16
+00:00:38.190 --> 00:00:41.110
+pero fijaos como, pese a que yo añadí los espacios
+
+17
+00:00:41.110 --> 00:00:43.270
+antes y después, se libró de ellos.
+
+18
+00:00:43.270 --> 00:00:46.730
+Este es el comportamiento estándar del strip.
+
+19
+00:00:46.730 --> 00:00:47.730
+Sin embargo, en esta guía,
+
+20
+00:00:47.730 --> 00:00:49.631
+quiero daros una visión más avanzada
+
+21
+00:00:49.631 --> 00:00:52.500
+sobre cómo dominar strip
+
+22
+00:00:52.500 --> 00:00:55.895
+y algunas de las funciones que se le asemejan.
+
+23
+00:00:55.895 --> 00:00:59.040
+Empecé este ejemplo de una URL
+
+24
+00:00:59.040 --> 00:01:01.368
+porque es muy razón común de porqué
+
+25
+00:01:01.368 --> 00:01:05.070
+usarías strip en pocas funciones que
+
+26
+00:01:05.070 --> 00:01:06.420
+se le asemejan.
+
+27
+00:01:06.420 --> 00:01:08.880
+Ahora, digamos que queremos poder
+
+28
+00:01:08.880 --> 00:01:13.880
+eliminar el HTTPS y los dos puntos, barra, barra.
+
+29
+00:01:15.040 --> 00:01:17.710
+Digamos que solo queremos imprimir Google
+
+30
+00:01:17.710 --> 00:01:20.830
+y sabemos que vamos a tener esto aquí
+
+31
+00:01:20.830 --> 00:01:23.105
+en frente de cada una de las líneas de URL.
+
+32
+00:01:23.105 --> 00:01:28.105
+Lo que puedo hacer es decir strip a la URL y luego pasar
+
+33
+00:01:29.030 --> 00:01:32.670
+como serie este HTTPS.
+
+34
+00:01:32.670 --> 00:01:36.550
+Al ejecutar esto, vamos a ver
+
+35
+00:01:36.550 --> 00:01:38.220
+que escribe google.
+
+36
+00:01:38.220 --> 00:01:42.250
+Ahora, si estás siguiendo con Repl.it,
+
+37
+00:01:42.250 --> 00:01:45.000
+entonces veréis que hay un pequeño error aquí.
+
+38
+00:01:45.000 --> 00:01:47.410
+No es técnicamente un error, es un aviso,
+
+39
+00:01:47.410 --> 00:01:51.430
+dice que hay un argumento sospechoso en la llamada a strip.
+
+40
+00:01:51.430 --> 00:01:54.692
+Esto es porque realmente necesitas saber
+
+41
+00:01:54.692 --> 00:01:57.460
+cuando estás llamando este tipo de función.
+
+42
+00:01:57.460 --> 00:02:00.450
+Quieres estar seguro de que no estás permitiendo a los
+
+43
+00:02:00.450 --> 00:02:03.880
+usuarios a realizar este tipo de llamadas a strip.
+
+44
+00:02:03.880 --> 00:02:06.458
+Porque lo que pasaría es que potencialmente
+
+45
+00:02:06.458 --> 00:02:10.263
+tener a alguien inyectando algo que pueda entrar en
+
+46
+00:02:10.263 --> 00:02:14.000
+conflicto con otros componentes y crear un error.
+
+47
+00:02:14.000 --> 00:02:17.077
+Así que desde una perspectiva de seguridad Python nos dice
+
+48
+00:02:17.077 --> 00:02:19.970
+cuidado ahí, pero en nuestro caso,
+
+49
+00:02:19.970 --> 00:02:23.070
+sabemos que somos nosotros quienes proveen los datos.
+
+50
+00:02:23.070 --> 00:02:25.290
+Así que está bien que lo usemos.
+
+51
+00:02:25.290 --> 00:02:27.750
+Esa es una opción.
+
+52
+00:02:27.750 --> 00:02:31.060
+Esto es genial, pero realmente podemos tener
+
+53
+00:02:31.060 --> 00:02:34.200
+algo más específico que esto.
+
+54
+00:02:34.200 --> 00:02:37.127
+Digamos que quiero convertir nuestra serie
+
+55
+00:02:37.127 --> 00:02:42.033
+y que de verdad solo imprima la palabra,
+
+56
+00:02:42.930 --> 00:02:46.617
+como comentario, o como comentario en python,
+
+57
+00:02:46.617 --> 00:02:48.700
+solo la palabra Google.
+
+58
+00:02:48.700 --> 00:02:49.660
+Simplemente.
+
+59
+00:02:49.660 --> 00:02:52.910
+Con mayúscula, como un título, como nombre de compañía,
+
+60
+00:02:52.910 --> 00:02:57.500
+y sin el .com, ni el HTTPS y todo eso.
+
+61
+00:02:57.500 --> 00:03:00.079
+Bueno, podemos hacer eso, y vamos a ponernos
+
+62
+00:03:00.079 --> 00:03:02.450
+un poco más avanzados.
+
+63
+00:03:02.450 --> 00:03:04.734
+Así que voy a mantener lo que tenemos aquí,
+
+64
+00:03:04.734 --> 00:03:09.550
+y lo siguiente que haré será usar un método hermano
+
+65
+00:03:09.550 --> 00:03:13.206
+a strip, que es L strip.
+
+66
+00:03:13.206 --> 00:03:16.980
+L strip es el diminutivo para strip izquierdo.
+
+67
+00:03:16.980 --> 00:03:19.460
+Y eso es lo que va a hacer, es más específico,
+
+68
+00:03:19.460 --> 00:03:24.010
+solo va a mirar al valor de la serie de derecha
+
+69
+00:03:24.010 --> 00:03:28.960
+a izquierda hasta encontrar la coincidencia.
+
+70
+00:03:28.960 --> 00:03:31.860
+Voy a comentar esto aquí, ahora,
+
+71
+00:03:31.860 --> 00:03:36.040
+si pongo print url.lstrip y le doy,
+
+72
+00:03:36.040 --> 00:03:39.040
+podéis ver que nos da exactamente el mismo comportamiento.
+
+73
+00:03:39.040 --> 00:03:41.670
+Si supusisteis que L strip
+
+74
+00:03:41.670 --> 00:03:45.920
+podría tener un primo, tenéis razón.
+
+75
+00:03:45.920 --> 00:03:48.320
+Y se llama R strip.
+
+76
+00:03:48.320 --> 00:03:50.410
+Así que creamos una nueva serie.
+
+77
+00:03:50.410 --> 00:03:52.140
+Vamos a realizar una reasignación aquí.
+
+78
+00:03:52.140 --> 00:03:56.810
+Vamos a poner L strip y quitamos https,
+
+79
+00:03:56.810 --> 00:04:00.940
+quitamos eso, y lo reasignamos a URL,
+
+80
+00:04:00.940 --> 00:04:03.051
+y vamos a hacer lo mismo aquí,
+
+81
+00:04:03.051 --> 00:04:07.650
+pero ahora, voy a quitar el .com.
+
+82
+00:04:07.650 --> 00:04:11.510
+Y aquí voy a decir R strip,
+
+83
+00:04:11.510 --> 00:04:14.510
+que viene de strip derecho, así que esto irá a la serie.
+
+84
+00:04:14.510 --> 00:04:16.680
+Y va a empezar desde el final,
+
+85
+00:04:16.680 --> 00:04:18.400
+avanzando hacia la izquierda.
+
+86
+00:04:18.400 --> 00:04:21.490
+Y en este caso, va a encontrar el .com,
+
+87
+00:04:21.490 --> 00:04:24.458
+y luego lo va a reasignar a URL,
+
+88
+00:04:24.458 --> 00:04:28.019
+y para que quede bonito,
+
+89
+00:04:28.019 --> 00:04:33.019
+voy a poner URL, y poner igual a url.capitalize,
+
+90
+00:04:34.509 --> 00:04:36.827
+si soy capaz de escribirlo bien.
+
+91
+00:04:36.827 --> 00:04:40.260
+Y esa es la función, así que lo terminamos así.
+
+92
+00:04:40.260 --> 00:04:42.860
+Y ahora podemos simplemente pasar la URL
+
+93
+00:04:42.860 --> 00:04:46.100
+a nuestra declaración print, y ver si funciona.
+
+94
+00:04:46.100 --> 00:04:48.470
+Al ejecutar esto podéis ver que sí.
+
+95
+00:04:48.470 --> 00:04:50.780
+Imprime Google, y parece más
+
+96
+00:04:50.780 --> 00:04:52.096
+un nombre de compañía,
+
+97
+00:04:52.096 --> 00:04:56.860
+pese a que empezamos simplemente cogiendo la URL.
+
+98
+00:04:56.860 --> 00:04:59.330
+Así que esto es muy útil.
+
+99
+00:04:59.330 --> 00:05:03.010
+Uso R y L strip bastante,
+
+100
+00:05:03.010 --> 00:05:06.954
+en algoritmos de limpieza de datos aprendizaje automatizado.
+
+101
+00:05:06.954 --> 00:05:09.588
+Porque va a haber tantas ocasiones
+
+102
+00:05:09.588 --> 00:05:12.770
+en las que tengas datos y una de las primeras cosas
+
+103
+00:05:12.770 --> 00:05:15.120
+que necesitas hacer es asegurarte de que
+
+104
+00:05:15.120 --> 00:05:17.200
+está correctamente formateado.
+
+105
+00:05:17.200 --> 00:05:19.616
+Dado que si tienes datos de una fuente
+
+106
+00:05:19.616 --> 00:05:22.378
+que tiene algún tipo de formato raro,
+
+107
+00:05:22.378 --> 00:05:26.670
+como empezar la oración con una coma,
+
+108
+00:05:26.670 --> 00:05:28.138
+o algo así, y te llega algo así.
+
+109
+00:05:28.138 --> 00:05:32.150
+Puede sonar raro pero ese tipo de datos se ven bastante
+
+110
+00:05:32.150 --> 00:05:33.930
+en el aprendizaje automatizado
+
+111
+00:05:33.930 --> 00:05:36.010
+porque estás manejando datos en bruto.
+
+112
+00:05:36.010 --> 00:05:38.693
+Así que estás recibiendo datos que pueden haber sido
+
+113
+00:05:38.693 --> 00:05:41.990
+rescatados de millones de webs o algo así.
+
+114
+00:05:41.990 --> 00:05:44.350
+Y necesitas asegurarte de que tienes todos los datos
+
+115
+00:05:44.350 --> 00:05:46.896
+con el formato adecuado
+
+116
+00:05:46.896 --> 00:05:50.520
+para que tu algoritmo pueda de verdad usar los datos.
+
+117
+00:05:50.520 --> 00:05:54.090
+Así que, L y R strip son formas de conseguir eso.
+
+118
+00:05:54.090 --> 00:05:57.770
+Puedes avanzar rápido, extrayendo datos
+
+119
+00:05:57.770 --> 00:05:59.600
+que sabes que van a estar ahí.
+
+120
+00:05:59.600 --> 00:06:00.890
+Comprueba si lo están,
+
+121
+00:06:00.890 --> 00:06:03.030
+y sácalos si no los quieres.
+
+122
+00:06:03.030 --> 00:06:05.974
+Por eso esta es una herramienta muy útil.
+
+123
+00:06:05.974 --> 00:06:09.140
+Ya seas un desarrollador de eliminación de aplicaciones web,
+
+124
+00:06:09.140 --> 00:06:11.963
+como si estás en aprendizaje automatizado.
+

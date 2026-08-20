@@ -1,0 +1,578 @@
+WEBVTT
+
+1
+00:00:00.810 --> 00:00:02.800
+<v ->Antes de pulir</v>
+
+2
+00:00:02.800 --> 00:00:05.120
+el diseño e integrar las fuentes,
+
+3
+00:00:05.120 --> 00:00:08.320
+olvidé algo que quería mostrarles,
+
+4
+00:00:08.320 --> 00:00:12.380
+que es cómo trabajar con este tipo de valores.
+
+5
+00:00:12.380 --> 00:00:14.940
+Como dije, tomará algo más
+
+6
+00:00:14.940 --> 00:00:17.890
+que un adentramiento profundo en lo que tenemos aquí,
+
+7
+00:00:17.890 --> 00:00:20.700
+en estas columnas y filas,
+
+8
+00:00:20.700 --> 00:00:23.250
+y se ve esta extraña
+
+9
+00:00:23.250 --> 00:00:26.510
+fracción con negativos.
+
+10
+00:00:26.510 --> 00:00:29.771
+Me encanta CSS Grid pero esta es una de las cosas
+
+11
+00:00:29.771 --> 00:00:32.931
+que si ves en un tutorial
+
+12
+00:00:32.931 --> 00:00:37.230
+o en un post de Stack Overflow o en un curso como este,
+
+13
+00:00:37.230 --> 00:00:39.330
+no es muy intuitivo,
+
+14
+00:00:39.330 --> 00:00:42.860
+entonces quiero ayudar
+
+15
+00:00:42.860 --> 00:00:46.750
+clarificar qué es y cómo funciona.
+
+16
+00:00:46.750 --> 00:00:50.030
+Para lograr esto, les mostraré algunos documentos
+
+17
+00:00:50.030 --> 00:00:51.484
+y compartiré estos enlaces
+
+18
+00:00:51.484 --> 00:00:54.820
+en las notas al pie.
+
+19
+00:00:54.820 --> 00:00:59.427
+En las columnas y en las filas tenemos esto,
+
+20
+00:00:59.427 --> 00:01:03.950
+como pueden ver esta es la abreviatura para los comandos,
+
+21
+00:01:03.950 --> 00:01:06.705
+aquí los vemos en la columna de inicio
+
+22
+00:01:06.705 --> 00:01:11.460
+y de final, y en las filas de inicio y final.
+
+23
+00:01:11.460 --> 00:01:16.270
+Lo que hacemos entonces
+
+24
+00:01:16.270 --> 00:01:18.400
+es decir que para esta columna
+
+25
+00:01:18.400 --> 00:01:22.100
+para posts recientes, queremos que los tome
+
+26
+00:01:22.100 --> 00:01:27.100
+y comience de a uno. Cuando veas uno negativo
+
+27
+00:01:27.130 --> 00:01:30.644
+significa que debe ir al final.
+
+28
+00:01:30.644 --> 00:01:32.540
+Eso es todo.
+
+29
+00:01:32.540 --> 00:01:36.540
+Espero que haya quedado claro.
+
+30
+00:01:36.540 --> 00:01:39.893
+Aquí tienen este ítem,
+
+31
+00:01:42.050 --> 00:01:44.930
+el primer elemento es la línea de inicio
+
+32
+00:01:44.930 --> 00:01:49.350
+y el siguiente, luego de la barra, es la línea final.
+
+33
+00:01:49.350 --> 00:01:51.860
+Aquí se puede ver un ejemplo de esto
+
+34
+00:01:51.860 --> 00:01:54.340
+donde puedes decir: columna 3,
+
+35
+00:01:54.340 --> 00:01:56.230
+lo que significa que esta es una línea de comienzo,
+
+36
+00:01:56.230 --> 00:01:58.410
+y abarca 2.
+
+37
+00:01:58.410 --> 00:02:00.960
+Cuando digo que abarca 2
+
+38
+00:02:00.960 --> 00:02:03.380
+significa que cubre dos columnas.
+
+39
+00:02:03.380 --> 00:02:05.800
+El ancho deben ser dos columnas.
+
+40
+00:02:05.800 --> 00:02:09.040
+Cuando queremos que haya una negativa,
+
+41
+00:02:09.040 --> 00:02:10.800
+significa que queremos
+
+42
+00:02:10.800 --> 00:02:13.858
+que vaya al final y ocupe todo el espacio.
+
+43
+00:02:13.858 --> 00:02:17.787
+Cuando veas una documentación que diga
+
+44
+00:02:17.787 --> 00:02:20.730
+que un tipo de método o proceso
+
+45
+00:02:20.730 --> 00:02:22.670
+es la abreviatura de algo,
+
+46
+00:02:22.670 --> 00:02:25.970
+lo mejor que podemos hacer
+
+47
+00:02:25.970 --> 00:02:28.550
+es ver a qué cosa se refiere.
+
+48
+00:02:28.550 --> 00:02:32.440
+Si deslizas hacia arriba se ve
+
+49
+00:02:32.440 --> 00:02:34.580
+la columna de inicio
+
+50
+00:02:34.580 --> 00:02:38.690
+desde la fila del final, y si leemos la descripción
+
+51
+00:02:38.690 --> 00:02:42.190
+dice que determina la ubicación de un ítem
+
+52
+00:02:42.190 --> 00:02:47.190
+dentro de la grilla con referencia a líneas específicas.
+
+53
+00:02:47.310 --> 00:02:50.348
+La columna de inicio de la fila de inicio
+
+54
+00:02:50.348 --> 00:02:53.200
+son la línea donde empieza el ítem,
+
+55
+00:02:53.200 --> 00:02:56.510
+y luego la columna y la fila final
+
+56
+00:02:56.510 --> 00:02:58.920
+es la línea donde termina el ítem.
+
+57
+00:02:58.920 --> 00:03:02.422
+Los valores potenciales son líneas,
+
+58
+00:03:02.422 --> 00:03:06.700
+números con longitud, longitudes con nombre.
+
+59
+00:03:06.700 --> 00:03:07.970
+No vamos a adentrarnos en eso
+
+60
+00:03:07.970 --> 00:03:09.780
+porque no me gusta usarlas,
+
+61
+00:03:09.780 --> 00:03:14.420
+y luego el auto que es comportamiento por defecto.
+
+62
+00:03:14.420 --> 00:03:16.570
+Estos son ejemplos
+
+63
+00:03:16.570 --> 00:03:18.800
+que incluiré en las notas.
+
+64
+00:03:18.800 --> 00:03:23.640
+Este post era el que realmente entendía
+
+65
+00:03:23.640 --> 00:03:27.610
+cuando estaba aprendiendo a usar CSS Grid.
+
+66
+00:03:27.610 --> 00:03:30.530
+Si deslizan hacia abajo
+
+67
+00:03:30.530 --> 00:03:32.910
+y hacen una nota al pie,
+
+68
+00:03:32.910 --> 00:03:35.380
+me han escuchado decir varias veces
+
+69
+00:03:35.380 --> 00:03:39.330
+que CSS Grid no es algo que compita
+
+70
+00:03:39.330 --> 00:03:42.550
+con flexbox, sino que se deben usar ambos.
+
+71
+00:03:42.550 --> 00:03:44.730
+Esta es una manera de mostrarlo.
+
+72
+00:03:44.730 --> 00:03:48.863
+Grid está diseñado para usarse con flexbox, no solo.
+
+73
+00:03:48.863 --> 00:03:51.130
+Verán en todo el video
+
+74
+00:03:51.130 --> 00:03:54.310
+la forma en que yo lo uso,
+
+75
+00:03:54.310 --> 00:03:58.620
+y utilizaré ambos
+
+76
+00:03:58.620 --> 00:04:01.040
+para trabajarlos y crear un diseño.
+
+77
+00:04:01.040 --> 00:04:04.290
+Esto compartiré en las notas,
+
+78
+00:04:04.290 --> 00:04:07.520
+y aquí etiquetaré el ancla
+
+79
+00:04:07.520 --> 00:04:09.750
+para que aparezca siempre que utilizo este sitio.
+
+80
+00:04:09.750 --> 00:04:12.860
+Vendrá aquí a este encabezado.
+
+81
+00:04:12.860 --> 00:04:17.190
+Usar líneas con número negativos ayuda mucho
+
+82
+00:04:17.190 --> 00:04:20.030
+porque nos permite hacer esto
+
+83
+00:04:20.030 --> 00:04:22.490
+y me encanta porque todo tiene sentido.
+
+84
+00:04:22.490 --> 00:04:25.560
+Da un escenario donde nos imaginamos
+
+85
+00:04:25.560 --> 00:04:29.730
+un marco de CSS Grid actual con 12 columnas,
+
+86
+00:04:29.730 --> 00:04:32.590
+teniendo en cuenta las consultas del medio,
+
+87
+00:04:32.590 --> 00:04:33.440
+cosas como esta.
+
+88
+00:04:33.440 --> 00:04:36.600
+Bien, y se puede sin problema
+
+89
+00:04:36.600 --> 00:04:38.510
+escribir el código así,
+
+90
+00:04:38.510 --> 00:04:39.980
+así escribimos
+
+91
+00:04:39.980 --> 00:04:42.090
+el código en el primer proyecto
+
+92
+00:04:42.090 --> 00:04:45.900
+donde teníamos columnas y longitudes,
+
+93
+00:04:45.900 --> 00:04:49.010
+muchas consultas.
+
+94
+00:04:49.010 --> 00:04:52.460
+Si deslizan hacia abajo se puede ver
+
+95
+00:04:52.460 --> 00:04:55.880
+que si usas un negativo aquí
+
+96
+00:04:55.880 --> 00:04:59.600
+este se encarga de toda la grilla
+
+97
+00:04:59.600 --> 00:05:01.480
+y permite que la longitud
+
+98
+00:05:01.480 --> 00:05:03.470
+vaya hasta el final
+
+99
+00:05:03.470 --> 00:05:08.470
+y da ejemplos de como hacerlo.
+
+100
+00:05:08.615 --> 00:05:11.600
+Este es uno de mis párrafos favoritos
+
+101
+00:05:11.600 --> 00:05:13.757
+de todo el artículo, dice,
+
+102
+00:05:13.757 --> 00:05:15.777
+"No hay nada malo con este enfoque.
+
+103
+00:05:15.777 --> 00:05:18.747
+Sin embargo, con CSS Grid, es igual de fácil
+
+104
+00:05:18.747 --> 00:05:20.717
+redefinir el número de columnas.
+
+105
+00:05:20.717 --> 00:05:24.057
+Al usar uno negativo, te aseguras
+
+106
+00:05:24.057 --> 00:05:26.680
+de que tu contenido siempre llegará al final."
+
+107
+00:05:26.680 --> 00:05:29.119
+Este fragmento
+
+108
+00:05:29.119 --> 00:05:32.790
+es la parte más importante
+
+109
+00:05:32.790 --> 00:05:35.180
+y siempre deben recordarlo.
+
+110
+00:05:35.180 --> 00:05:37.040
+Siempre que vean un uno negativo,
+
+111
+00:05:37.040 --> 00:05:41.420
+significa que todos los valores
+
+112
+00:05:41.420 --> 00:05:43.300
+llegarán hacia el final.
+
+113
+00:05:43.300 --> 00:05:46.721
+Para echar un vistazo
+
+114
+00:05:46.721 --> 00:05:49.350
+a cualquiera de los elementos
+
+115
+00:05:49.350 --> 00:05:52.090
+para los que usamos un uno negativo,
+
+116
+00:05:52.090 --> 00:05:54.820
+como aquí, en la barra de búsqueda.
+
+117
+00:05:54.820 --> 00:05:59.000
+Esta es una columna para la barra de búsqueda
+
+118
+00:05:59.000 --> 00:06:00.153
+si venimos aquí.
+
+119
+00:06:00.990 --> 00:06:04.000
+A de izquierda a derecha,
+
+120
+00:06:04.000 --> 00:06:07.080
+nos aseguramos que cubra todo el espacio,
+
+121
+00:06:07.080 --> 00:06:09.710
+y hacemos lo mismo con los posts recientes.
+
+122
+00:06:09.710 --> 00:06:12.500
+Verán que no lo hacemos con el logo.
+
+123
+00:06:12.500 --> 00:06:16.380
+En este logo solo decimos columna: 2,
+
+124
+00:06:16.380 --> 00:06:20.200
+y luego fila: 1, entonces no es necesario.
+
+125
+00:06:20.200 --> 00:06:21.540
+Si quieren jugar un poco con esto,
+
+126
+00:06:21.540 --> 00:06:23.663
+y recomiendo que lo hagan,
+
+127
+00:06:23.663 --> 00:06:26.110
+siéntanse libres de añadirlos.
+
+128
+00:06:26.110 --> 00:06:30.840
+Vea qué sucede si añadimos un final aquí.
+
+129
+00:06:30.840 --> 00:06:35.690
+Ven que el logo se expande hasta el final de la columna.
+
+130
+00:06:35.690 --> 00:06:37.280
+También pueden ver qué pasaría
+
+131
+00:06:37.280 --> 00:06:39.020
+si cambian los valores,
+
+132
+00:06:39.020 --> 00:06:41.780
+por ejemplo a 4.
+
+133
+00:06:41.780 --> 00:06:43.920
+No cambia nada.
+
+134
+00:06:43.920 --> 00:06:48.430
+Pueden decir longitud 4, como vimos en la documentación
+
+135
+00:06:48.430 --> 00:06:49.740
+y nada cambia
+
+136
+00:06:49.740 --> 00:06:51.170
+porque no tiene nada con qué trabajar.
+
+137
+00:06:51.170 --> 00:06:53.710
+Pero recomiendo
+
+138
+00:06:53.710 --> 00:06:56.600
+que investiguen el código,
+
+139
+00:06:56.600 --> 00:07:01.490
+lean la documentación que mostré,
+
+140
+00:07:01.490 --> 00:07:06.100
+los documentos de comprensión y este post,
+
+141
+00:07:06.100 --> 00:07:09.300
+y siéntanse libres de cambiar los elementos
+
+142
+00:07:09.300 --> 00:07:13.110
+y ver cómo se altera la página.
+
+143
+00:07:13.110 --> 00:07:17.046
+Este es nuestro adentramiento al trabajo
+
+144
+00:07:17.046 --> 00:07:22.046
+con elementos como columnas y filas en CSS Grid.
+

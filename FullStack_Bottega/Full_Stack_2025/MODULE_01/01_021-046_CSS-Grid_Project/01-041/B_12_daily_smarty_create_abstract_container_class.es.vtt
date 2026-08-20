@@ -1,0 +1,370 @@
+WEBVTT
+
+1
+00:00:00.810 --> 00:00:03.290
+<v Instructor>Ahora que tenemos toda la estructura HTML que</v>
+
+2
+00:00:03.290 --> 00:00:05.780
+vamos a necesitar, ahora comencemos a trabajar
+
+3
+00:00:05.780 --> 00:00:08.020
+en los estilos reales.
+
+4
+00:00:08.020 --> 00:00:12.020
+Ahora, como pueden ver aquí, este es nuestro objetivo,
+
+5
+00:00:12.020 --> 00:00:13.970
+por lo que tenemos una serie de cosas diferentes
+
+6
+00:00:13.970 --> 00:00:16.580
+que tenemos que implementar, y una cosa
+
+7
+00:00:16.580 --> 00:00:18.950
+que también debemos conocer,
+
+8
+00:00:18.950 --> 00:00:23.040
+es que si cambiamos cualquiera de los estilos preexistentes,
+
+9
+00:00:23.040 --> 00:00:26.146
+entonces podrían afectar negativamente
+
+10
+00:00:26.146 --> 00:00:30.390
+el diseño de nuestro índice, de nuestra página de inicio,
+
+11
+00:00:30.390 --> 00:00:32.940
+debemos asegurarnos de que tenemos cuidado con eso.
+
+12
+00:00:32.940 --> 00:00:35.420
+Y así vamos a hacer una pequeña prueba.
+
+13
+00:00:35.420 --> 00:00:36.910
+Una cosa que puedes haber notado,
+
+14
+00:00:36.910 --> 00:00:39.340
+entre la diferencia entre la página de inicio
+
+15
+00:00:39.340 --> 00:00:43.550
+y la página de resultados, es el margen superior.
+
+16
+00:00:43.550 --> 00:00:45.830
+Entonces, una cosa que tendremos que cambiar
+
+17
+00:00:45.830 --> 00:00:49.900
+es que si ingresas en el archivo CSS principal aquí,
+
+18
+00:00:49.900 --> 00:00:54.187
+puedes notar que tenemos un margen en la parte superior de
+
+19
+00:00:55.327 --> 00:00:57.630
+5em, y entonces tendremos que eliminar eso.
+
+20
+00:00:57.630 --> 00:00:59.380
+Y hay un par de otros elementos
+
+21
+00:00:59.380 --> 00:01:04.320
+que tendremos que colocar dentro de otra clase.
+
+22
+00:01:04.320 --> 00:01:05.950
+Así que la mejor manera de hacer esto,
+
+23
+00:01:05.950 --> 00:01:08.780
+es que no quiero simplemente crear dos contenedores.
+
+24
+00:01:08.780 --> 00:01:11.130
+Creo que sería una mala práctica
+
+25
+00:01:11.130 --> 00:01:15.690
+hacer algo como, por ejemplo, un contenedor
+
+26
+00:01:15.690 --> 00:01:17.670
+de página de inicio, porque hay momentos
+
+27
+00:01:17.670 --> 00:01:18.720
+en que querrás hacer eso.
+
+28
+00:01:18.720 --> 00:01:20.420
+Por ejemplo, nuestra barra de búsqueda.
+
+29
+00:01:20.420 --> 00:01:22.420
+Hicimos una barra de búsqueda de la página de inicio,
+
+30
+00:01:22.420 --> 00:01:24.960
+porque esa barra de búsqueda será bastante diferente.
+
+31
+00:01:24.960 --> 00:01:26.830
+Pero siempre que tenga un contenedor,
+
+32
+00:01:26.830 --> 00:01:29.330
+es bueno, y definitivamente es una buena práctica,
+
+33
+00:01:29.330 --> 00:01:32.630
+hacer esto lo más genérico posible.
+
+34
+00:01:32.630 --> 00:01:35.600
+Por lo tanto, tu objetivo debería ser, si está desarrollando
+
+35
+00:01:35.600 --> 00:01:38.250
+algún tipo de clase contenedor, debería poder llamar
+
+36
+00:01:38.250 --> 00:01:41.430
+a esto en la mayoría de las páginas de tu sitio web,
+
+37
+00:01:41.430 --> 00:01:44.330
+suponiendo que tengas un sitio web de aspecto bastante
+
+38
+00:01:44.330 --> 00:01:47.550
+estándar, y luego debería tener el el mismo comportamiento
+
+39
+00:01:47.550 --> 00:01:49.520
+en cada una de esas páginas,
+
+40
+00:01:49.520 --> 00:01:52.930
+y luego puedes agregar personalizaciones por encima de eso.
+
+41
+00:01:52.930 --> 00:01:54.950
+Así que mantendré este contenedor,
+
+42
+00:01:54.950 --> 00:01:57.880
+pero luego agregaré un elemento personalizado,
+
+43
+00:01:57.880 --> 00:02:02.443
+así que desde aquí diré, página de inicio de contenedor,
+
+44
+00:02:03.800 --> 00:02:06.860
+y luego cualquiera de los elementos que creo
+
+45
+00:02:06.860 --> 00:02:09.970
+deberían estar relacionados solo con la página de inicio,
+
+46
+00:02:09.970 --> 00:02:11.310
+Voy a poner por ahí.
+
+47
+00:02:11.310 --> 00:02:14.560
+Entonces, esta altura es una de esas,
+
+48
+00:02:14.560 --> 00:02:18.720
+y luego alinea los elementos, esa es otra.
+
+49
+00:02:18.720 --> 00:02:21.000
+Y luego vamos a ver qué más.
+
+50
+00:02:21.000 --> 00:02:23.833
+El margen superior, sí, em5.
+
+51
+00:02:25.000 --> 00:02:28.950
+Todos estos son específicos de la página de inicio,
+
+52
+00:02:28.950 --> 00:02:33.110
+así que aclaremos este espacio, eso es bueno y claro.
+
+53
+00:02:33.110 --> 00:02:37.420
+Y ahora lo que voy a hacer es agregar la página de inicio
+
+54
+00:02:37.420 --> 00:02:40.220
+del contenedor a la lista de la página de inicio real.
+
+55
+00:02:40.220 --> 00:02:43.080
+Así que en lugar de solo decir contenedor,
+
+56
+00:02:43.080 --> 00:02:48.080
+ahora voy a decir contenedor-página de inicio, así como así.
+
+57
+00:02:48.450 --> 00:02:50.430
+Ahora, si guardo esto, regresemos
+
+58
+00:02:50.430 --> 00:02:52.940
+y nos aseguremos de que no haya nada roto.
+
+59
+00:02:52.940 --> 00:02:55.150
+Y como puedes ver, todo esto sigue funcionando.
+
+60
+00:02:55.150 --> 00:02:58.300
+Eso es bueno, eso significa que hemos ampliado los estilos,
+
+61
+00:02:58.300 --> 00:03:01.260
+los hemos dividido y todavía podemos usar nuestra clase
+
+62
+00:03:01.260 --> 00:03:05.440
+de contenedor raíz para nuestra página de resultados.
+
+63
+00:03:05.440 --> 00:03:07.310
+Así que vamos a hacer eso.
+
+64
+00:03:07.310 --> 00:03:10.130
+Regresemos a results.html,
+
+65
+00:03:10.130 --> 00:03:12.430
+y ahora vamos a entrar,
+
+66
+00:03:12.430 --> 00:03:16.480
+y vamos a crear un contenedor de resultados.
+
+67
+00:03:16.480 --> 00:03:20.870
+Y si vengo aquí abajo, tenemos nuestro contenedor.
+
+68
+00:03:20.870 --> 00:03:22.770
+Ahora vamos a decir resultados de contenedores,
+
+69
+00:03:22.770 --> 00:03:24.603
+resultados de guiones.
+
+70
+00:03:28.100 --> 00:03:31.170
+Y ahora, lo que vamos a colocar dentro de aquí
+
+71
+00:03:31.170 --> 00:03:32.520
+será un poco diferente.
+
+72
+00:03:32.520 --> 00:03:35.713
+Así que vamos a decir margen superior, sólo 2em.
+
+73
+00:03:36.960 --> 00:03:39.770
+Y eso es realmente, esa es la única diferencia
+
+74
+00:03:39.770 --> 00:03:42.100
+que quiero para el contenedor en sí.
+
+75
+00:03:42.100 --> 00:03:43.610
+Ahora no tenemos ningún cambio todavía,
+
+76
+00:03:43.610 --> 00:03:46.430
+porque necesitamos agregar esto a la lista.
+
+77
+00:03:46.430 --> 00:03:51.280
+Así que si voy a los resultados aquí, y vamos a la parte
+
+78
+00:03:51.280 --> 00:03:55.150
+superior donde llamamos contenedor, y ahora solo voy
+
+79
+00:03:55.150 --> 00:03:58.220
+a agregar esto a la derecha,
+
+80
+00:03:58.220 --> 00:04:03.220
+así que diré contenedor-resultados, presioné guardar,
+
+81
+00:04:03.610 --> 00:04:07.500
+y ahora tenemos un poco de margen allí en la parte superior.
+
+82
+00:04:07.500 --> 00:04:10.840
+Ahora todavía tenemos, obviamente, muchas otras cosas
+
+83
+00:04:10.840 --> 00:04:13.890
+que cambiar aquí, como moverlas hacia abajo.
+
+84
+00:04:13.890 --> 00:04:15.850
+Vamos a crear una clase personalizada para eso.
+
+85
+00:04:15.850 --> 00:04:18.200
+Cambiaremos los estilos de entrada aquí,
+
+86
+00:04:18.200 --> 00:04:21.090
+pero estamos en camino, y esta guía,
+
+87
+00:04:21.090 --> 00:04:23.800
+que es nuestro objetivo que quería tener,
+
+88
+00:04:23.800 --> 00:04:26.610
+era poder ver cómo podríamos dividir nuestros estilos
+
+89
+00:04:26.610 --> 00:04:30.740
+en diferentes páginas,
+
+90
+00:04:30.740 --> 00:04:33.510
+al mismo tiempo que podemos tener componentes mantenibles
+
+91
+00:04:33.510 --> 00:04:37.670
+y reutilizables como nuestra clase de contenedor,
+
+92
+00:04:37.670 --> 00:04:39.653
+y creo que podemos hacerlo.
+

@@ -1,0 +1,883 @@
+WEBVTT
+
+1
+00:00:00.830 --> 00:00:02.722
+<v ->En la última guía hablábamos</v>
+
+2
+00:00:02.722 --> 00:00:05.940
+de cómo podemos implementar las variables Sass.
+
+3
+00:00:05.940 --> 00:00:08.968
+Ahora, variables, solo para que podamos repasar,
+
+4
+00:00:08.968 --> 00:00:13.080
+son una forma de definir ciertos valores
+
+5
+00:00:13.080 --> 00:00:17.035
+en código, en código Sass y luego poder llamarlos
+
+6
+00:00:17.035 --> 00:00:20.140
+desde cualquier otro lugar del archivo.
+
+7
+00:00:20.140 --> 00:00:22.073
+Y eso te permite
+
+8
+00:00:22.073 --> 00:00:24.740
+hacer un cambio en un lugar
+
+9
+00:00:24.740 --> 00:00:29.320
+y luego rellenar el resto de la aplicación.
+
+10
+00:00:29.320 --> 00:00:31.592
+En esta guía vamos a hacer algo
+
+11
+00:00:31.592 --> 00:00:33.323
+un poco más avanzado.
+
+12
+00:00:33.323 --> 00:00:36.491
+Y, de hecho, vamos a ver algunas partes
+
+13
+00:00:36.491 --> 00:00:38.117
+mucho más avanzadas de Sass.
+
+14
+00:00:38.117 --> 00:00:40.130
+Y por eso, quiero prepararte para eso
+
+15
+00:00:40.130 --> 00:00:42.983
+porque para mostrarte de lo que vamos a hablar,
+
+16
+00:00:42.983 --> 00:00:44.666
+que es cómo trabajar
+
+17
+00:00:44.666 --> 00:00:47.613
+con tipos variables predeterminados de Sass,
+
+18
+00:00:47.613 --> 00:00:51.005
+tengo que mostrarte que vienen partes más avanzadas de Sass
+
+19
+00:00:51.005 --> 00:00:53.288
+en las que obviamente no hemos entrado todavía,
+
+20
+00:00:53.288 --> 00:00:56.563
+y no vamos a entrar hasta más adelante en el curso.
+
+21
+00:00:56.563 --> 00:00:59.550
+Y la razón principal de esto es porque yo personalmente,
+
+22
+00:00:59.550 --> 00:01:02.835
+como instructor, odio absolutamente cuando la gente da,
+
+23
+00:01:02.835 --> 00:01:05.293
+y otros instructores dan ejemplos
+
+24
+00:01:05.293 --> 00:01:07.133
+que podrían nunca usar en la vida real.
+
+25
+00:01:07.133 --> 00:01:08.758
+Así que, voy a mostrarte algunas cosas
+
+26
+00:01:08.758 --> 00:01:10.145
+que son definitivamente más avanzadas.
+
+27
+00:01:10.145 --> 00:01:13.368
+Vamos a hablar de Mixins y de algunas cosas
+
+28
+00:01:13.368 --> 00:01:15.590
+que no hemos discutido en absoluto.
+
+29
+00:01:15.590 --> 00:01:19.217
+Así que no dejes que esas partes te intimiden
+
+30
+00:01:19.217 --> 00:01:21.965
+o sientas que no puedes entenderlo.
+
+31
+00:01:21.965 --> 00:01:24.083
+La razón por la que lo hago es porque quiero mostrarte
+
+32
+00:01:24.083 --> 00:01:27.900
+los valores predeterminados y para hacerlo correctamente
+
+33
+00:01:27.900 --> 00:01:31.830
+realmente necesito mostrar un ejemplo más avanzado.
+
+34
+00:01:31.830 --> 00:01:33.807
+Solo tenlo en cuenta.
+
+35
+00:01:33.807 --> 00:01:37.547
+Vamos a hablar principalmente de cómo podemos usar
+
+36
+00:01:37.547 --> 00:01:40.140
+tipos de variables predeterminados.
+
+37
+00:01:40.140 --> 00:01:43.395
+Tenemos aquí el mismo código
+
+38
+00:01:43.395 --> 00:01:44.640
+que teníamos la última vez.
+
+39
+00:01:44.640 --> 00:01:47.290
+Y, voy a cambiarla un poquito.
+
+40
+00:01:47.290 --> 00:01:49.331
+Voy a decir que en vez de blanco,
+
+41
+00:01:49.331 --> 00:01:51.610
+voy a decir blanquecino.
+
+42
+00:01:51.610 --> 00:01:54.412
+Y luego, en todos los demás lugares
+
+43
+00:01:54.412 --> 00:01:59.260
+donde se llaman blancos voy a cambiar ese nombre.
+
+44
+00:01:59.260 --> 00:02:03.090
+Y luego, voy a cambiar el color de una sola vez.
+
+45
+00:02:03.090 --> 00:02:06.010
+Así que voy a hacer F6, F6, F6.
+
+46
+00:02:06.010 --> 00:02:09.042
+Y, lo que esto va a hacer es cambiar
+
+47
+00:02:09.042 --> 00:02:12.747
+el color de fondo un poco
+
+48
+00:02:14.060 --> 00:02:17.075
+el color del texto y luego este color de fondo.
+
+49
+00:02:17.075 --> 00:02:19.470
+Es solo un poco blanquecino.
+
+50
+00:02:19.470 --> 00:02:21.803
+De hecho, es el mismo blanco apagado que uso
+
+51
+00:02:21.803 --> 00:02:25.010
+en múltiples aplicaciones como DailySmarty
+
+52
+00:02:25.010 --> 00:02:27.080
+y también en DevCamp.
+
+53
+00:02:27.080 --> 00:02:30.610
+Ahora, la otra cosa que vamos a hacer
+
+54
+00:02:30.610 --> 00:02:32.655
+es construir algunos Mixins.
+
+55
+00:02:32.655 --> 00:02:35.198
+Ahora, vamos a tener una sección entera
+
+56
+00:02:35.198 --> 00:02:36.803
+del curso dedicada a los Mixins.
+
+57
+00:02:36.803 --> 00:02:40.513
+Por ahora sabemos que son algo así como
+
+58
+00:02:40.513 --> 00:02:44.480
+funciones o métodos en otros lenguajes de programación
+
+59
+00:02:44.480 --> 00:02:47.633
+donde puedes envolver una cantidad de artículos,
+
+60
+00:02:47.633 --> 00:02:51.090
+una cantidad de definiciones de estilo en un solo lugar.
+
+61
+00:02:51.090 --> 00:02:53.996
+Y luego, desde ahí puedes llamarlos.
+
+62
+00:02:53.996 --> 00:02:56.350
+Un buen ejemplo sería aquí mismo.
+
+63
+00:02:56.350 --> 00:02:59.010
+Voy a crear un Mixin llamado
+
+64
+00:02:59.010 --> 00:03:02.298
+Heading Feature Styling.
+
+65
+00:03:04.420 --> 00:03:06.478
+Y luego, dentro de esto,
+
+66
+00:03:06.478 --> 00:03:09.103
+puedo tomar lo que quiera.
+
+67
+00:03:09.103 --> 00:03:11.941
+Así que, justo aquí para hacer una muy básica
+
+68
+00:03:11.941 --> 00:03:14.749
+Solo voy a tomar el color
+
+69
+00:03:15.691 --> 00:03:17.266
+y ahora lo que puedo hacer
+
+70
+00:03:17.266 --> 00:03:20.080
+es cortar todo eso
+
+71
+00:03:20.080 --> 00:03:22.786
+y ahora lo colocamos dentro de este
+
+72
+00:03:22.786 --> 00:03:25.810
+Heading Feature Styling.
+
+73
+00:03:25.810 --> 00:03:29.590
+Y, dentro de featured simplemente puedo llamarlo.
+
+74
+00:03:29.590 --> 00:03:33.545
+Así que, justo aquí puedo decir import,
+
+75
+00:03:34.420 --> 00:03:38.060
+o lo siento, include y pegarlo.
+
+76
+00:03:38.060 --> 00:03:40.185
+Y ahora, todo seguirá funcionando
+
+77
+00:03:40.185 --> 00:03:42.082
+exactamente igual que antes.
+
+78
+00:03:42.082 --> 00:03:44.130
+Así que, puedes ver que nada ha cambiado
+
+79
+00:03:44.130 --> 00:03:46.085
+y tampoco tenemos errores.
+
+80
+00:03:46.085 --> 00:03:49.085
+Todo lo que hay aquí es una forma de declarar
+
+81
+00:03:49.085 --> 00:03:51.050
+un Mixin y luego lo llamas.
+
+82
+00:03:51.050 --> 00:03:53.425
+Y, puede que eso no parezca un gran problema
+
+83
+00:03:53.425 --> 00:03:55.760
+porque solo tomamos una línea de código.
+
+84
+00:03:55.760 --> 00:03:57.387
+Así que, déjame mostrarte un poco más
+
+85
+00:03:57.387 --> 00:03:59.500
+de un ejemplo no trivial.
+
+86
+00:03:59.500 --> 00:04:00.816
+Voy a copiar esto,
+
+87
+00:04:01.999 --> 00:04:05.016
+y ahora voy a crear algo,
+
+88
+00:04:05.016 --> 00:04:09.114
+voy a llamarlo Section Feature Styling.
+
+89
+00:04:10.860 --> 00:04:15.088
+Y ahora, tomemos muchas otras opciones.
+
+90
+00:04:15.088 --> 00:04:17.210
+Entonces, podemos tomar un color de fondo.
+
+91
+00:04:17.210 --> 00:04:18.626
+Podemos tomar relleno.
+
+92
+00:04:18.626 --> 00:04:20.435
+Podemos tomar muchas cosas diferentes.
+
+93
+00:04:20.435 --> 00:04:22.588
+De hecho, me voy a llevar
+
+94
+00:04:22.588 --> 00:04:24.348
+todo este código aquí mismo.
+
+95
+00:04:25.610 --> 00:04:28.510
+Como pueden ver, eso cambia bastante las cosas.
+
+96
+00:04:28.510 --> 00:04:29.610
+Voy a pegarlo.
+
+97
+00:04:30.790 --> 00:04:32.523
+Arreglaré la hendidura
+
+98
+00:04:32.523 --> 00:04:35.750
+y ahora puedo llamar a este Mixin
+
+99
+00:04:35.750 --> 00:04:39.600
+y colocarlo exactamente donde estaba antes.
+
+100
+00:04:39.600 --> 00:04:43.330
+Aquí voy a decir que incluya ese Mixin
+
+101
+00:04:43.330 --> 00:04:45.646
+Y ahora pueden ver que todo está funcionando,
+
+102
+00:04:45.646 --> 00:04:47.500
+pero en lugar de tener todo ese código
+
+103
+00:04:47.500 --> 00:04:50.853
+dentro de la definición de estilo actual
+
+104
+00:04:50.853 --> 00:04:52.410
+lo ponemos en un Mixin.
+
+105
+00:04:52.410 --> 00:04:55.730
+Esa es la pequeña introducción a los Mixins,
+
+106
+00:04:55.730 --> 00:04:58.023
+como dije, vamos a tener una sección entera del curso
+
+107
+00:04:58.023 --> 00:05:00.440
+en la que vamos a entrar en detalle.
+
+108
+00:05:00.440 --> 00:05:04.658
+Pero, esto se vuelve útil cuando hablamos
+
+109
+00:05:04.658 --> 00:05:08.080
+de trabajar con valores por defecto.
+
+110
+00:05:08.080 --> 00:05:10.802
+Ahora tenemos estas variables aquí arriba.
+
+111
+00:05:10.802 --> 00:05:12.060
+Tenemos el blanquecino
+
+112
+00:05:12.060 --> 00:05:14.538
+y luego tenemos el color del sitio maestro.
+
+113
+00:05:14.538 --> 00:05:17.480
+Pero muchas veces vas a estar creando
+
+114
+00:05:17.480 --> 00:05:20.628
+estos componentes Sass y estos Mixins
+
+115
+00:05:20.628 --> 00:05:24.790
+y quieres la habilidad de poder establecer
+
+116
+00:05:24.790 --> 00:05:27.700
+valores predeterminados que puedan ser
+
+117
+00:05:27.700 --> 00:05:31.073
+fácilmente sustituidos si necesitas hacer un cambio.
+
+118
+00:05:31.073 --> 00:05:33.670
+Un gran ejemplo de esto, esto es algo que,
+
+119
+00:05:33.670 --> 00:05:35.645
+yo personalmente he construido antes,
+
+120
+00:05:35.645 --> 00:05:39.100
+era parte de un proyecto donde construimos
+
+121
+00:05:39.100 --> 00:05:42.845
+una especie de un constructor de sitios web casero.
+
+122
+00:05:42.845 --> 00:05:46.830
+Permite que una persona normal
+
+123
+00:05:46.830 --> 00:05:50.758
+sin ser programador elija un sitio web
+
+124
+00:05:50.758 --> 00:05:54.060
+una plantilla y luego elegir los diferentes
+
+125
+00:05:54.060 --> 00:05:57.270
+colores personalizados que querían para eso.
+
+126
+00:05:57.270 --> 00:06:00.223
+Y, eso funciona perfectamente bien
+
+127
+00:06:00.223 --> 00:06:03.106
+y es algo en que ciertas personas
+
+128
+00:06:03.106 --> 00:06:05.062
+que quieren valores predeterminados
+
+129
+00:06:05.062 --> 00:06:07.384
+y tienes otras personas que quieren personalizarlo.
+
+130
+00:06:07.384 --> 00:06:11.516
+Por lo tanto, establecí esquemas de color predeterminados
+
+131
+00:06:11.516 --> 00:06:13.833
+que funcionaban y eran genéricos
+
+132
+00:06:13.833 --> 00:06:16.200
+y ciertas personas querían eso.
+
+133
+00:06:16.200 --> 00:06:18.237
+Ni siquiera les importaba cambiar el color.
+
+134
+00:06:18.237 --> 00:06:21.700
+Y luego, hay otras personas que querían anularlo.
+
+135
+00:06:21.700 --> 00:06:24.424
+Este tipo de característica
+
+136
+00:06:24.424 --> 00:06:26.630
+en la configuración de valores predeterminados
+
+137
+00:06:26.630 --> 00:06:30.390
+es cuando algo así viene en la mano.
+
+138
+00:06:30.390 --> 00:06:33.600
+Vamos a repasar exactamente
+
+139
+00:06:33.600 --> 00:06:35.950
+cómo podemos fijar estos valores predeterminados.
+
+140
+00:06:35.950 --> 00:06:40.079
+Lo primero que voy a hacer es entrar en nuestro mejor Mixin
+
+141
+00:06:40.079 --> 00:06:42.737
+y voy a poner algo
+
+142
+00:06:42.737 --> 00:06:45.530
+llamado un Color destacado.
+
+143
+00:06:45.530 --> 00:06:46.896
+Esta va a ser una variable
+
+144
+00:06:46.896 --> 00:06:48.769
+que estoy definiendo aquí adentro.
+
+145
+00:06:48.769 --> 00:06:51.140
+Voy a decir Featured Color.
+
+146
+00:06:51.140 --> 00:06:53.614
+Y, diré rojo oscuro,
+
+147
+00:06:53.614 --> 00:06:55.700
+y la forma en que dices que algo
+
+148
+00:06:55.700 --> 00:06:58.753
+es predeterminado es definiéndolo así.
+
+149
+00:06:58.753 --> 00:07:03.325
+Justo después del valor vas al espacio y luego un pound,
+
+150
+00:07:03.325 --> 00:07:06.408
+o lo siento un bing, y luego a default.
+
+151
+00:07:06.408 --> 00:07:10.540
+Y eso le dice a Sass que va a ser un valor predeterminado.
+
+152
+00:07:10.540 --> 00:07:12.627
+Y también voy a poner
+
+153
+00:07:12.627 --> 00:07:15.665
+ese mismo color característico aquí adentro.
+
+154
+00:07:16.510 --> 00:07:20.172
+Ahora, si presiono "salvar" no hace nada
+
+155
+00:07:20.172 --> 00:07:21.890
+porque todavía no lo hemos llamado.
+
+156
+00:07:21.890 --> 00:07:24.810
+Y entonces, voy a cambiar aquí.
+
+157
+00:07:24.810 --> 00:07:26.451
+Así que Featured Color
+
+158
+00:07:26.451 --> 00:07:28.858
+va a tomar el color del sitio maestro.
+
+159
+00:07:28.858 --> 00:07:31.801
+Y, también lo va a tomar aquí.
+
+160
+00:07:32.720 --> 00:07:35.342
+Y ahora, puedes ver que todo esto es rojo.
+
+161
+00:07:35.342 --> 00:07:38.719
+para este escenario, esto es como lo que estaba explicando
+
+162
+00:07:38.719 --> 00:07:41.620
+con el diseñador de sitios web casero.
+
+163
+00:07:42.470 --> 00:07:45.152
+Aquí es cuando un usuario vendría
+
+164
+00:07:45.152 --> 00:07:47.777
+diría, "Quiero este sitio, no me interesa
+
+165
+00:07:47.777 --> 00:07:48.952
+cambiar los colores".
+
+166
+00:07:48.952 --> 00:07:51.150
+Y así, tendría algún tipo de default
+
+167
+00:07:51.150 --> 00:07:53.068
+como este establecido.
+
+168
+00:07:53.068 --> 00:07:55.768
+Y así, este es el valor predetarmindo
+
+169
+00:07:55.768 --> 00:07:57.951
+si no tenemos que cambiar cualquier otra cosa,
+
+170
+00:07:57.951 --> 00:08:00.900
+esta funcionará de inmediato.
+
+171
+00:08:00.900 --> 00:08:04.130
+Y, en muchos casos, eso está perfectamente bien.
+
+172
+00:08:04.130 --> 00:08:06.955
+Pero, también necesitamos dar
+
+173
+00:08:06.955 --> 00:08:10.240
+la habilidad de cambiar esto sobre la marcha.
+
+174
+00:08:10.240 --> 00:08:12.837
+La forma en la que normalmente lo haría
+
+175
+00:08:12.837 --> 00:08:16.911
+es subir y decirlo en la parte de arriba
+
+176
+00:08:16.911 --> 00:08:19.970
+y la forma en que normalmente haría algo así
+
+177
+00:08:21.078 --> 00:08:25.514
+es importando un conjunto de valores
+
+178
+00:08:25.514 --> 00:08:26.988
+en la parte superior del archivo
+
+179
+00:08:26.988 --> 00:08:28.614
+y si están configurados
+
+180
+00:08:28.614 --> 00:08:31.009
+entonces anularían el valor predeterminado.
+
+181
+00:08:31.009 --> 00:08:32.998
+Así que, justo aquí lo llamamos Featured Color.
+
+182
+00:08:35.920 --> 00:08:40.525
+Si Featured Color está configurado en verde oscuro,
+
+183
+00:08:40.525 --> 00:08:43.128
+o si está aquí en la parte superior del archivo,
+
+184
+00:08:43.128 --> 00:08:45.040
+entonces va a funcionar.
+
+185
+00:08:45.040 --> 00:08:49.425
+Si no, entonces va a ser anulado,
+
+186
+00:08:49.425 --> 00:08:51.272
+o si no está establecido,
+
+187
+00:08:51.272 --> 00:08:53.713
+entonces irá con estos valores predeterminados.
+
+188
+00:08:53.713 --> 00:08:57.292
+Entonces, digamos que esto no está establecido,
+
+189
+00:08:57.292 --> 00:08:59.258
+si corto esto,
+
+190
+00:08:59.258 --> 00:09:02.988
+rojo funciona perfectamente como predeterminado.
+
+191
+00:09:02.988 --> 00:09:06.220
+Si lo vuelvo a pegar,
+el verde oscuro se hace cargo.
+
+192
+00:09:06.220 --> 00:09:08.612
+Y esto puede no parecer un gran problema
+
+193
+00:09:08.612 --> 00:09:09.978
+porque justo aquí, como puedes ver,
+
+194
+00:09:09.978 --> 00:09:11.570
+todo está en un solo archivo.
+
+195
+00:09:11.570 --> 00:09:14.330
+Todo esto funcionaría de la misma manera de todas formas.
+
+196
+00:09:14.330 --> 00:09:17.070
+Pero, imagina un escenario en el que tienes
+
+197
+00:09:17.070 --> 00:09:20.077
+cien definiciones de estilo diferentes.
+
+198
+00:09:20.077 --> 00:09:21.834
+Tienes que ser capaz de llevar un registro
+
+199
+00:09:21.834 --> 00:09:23.043
+de cada uno de ellos.
+
+200
+00:09:23.043 --> 00:09:24.543
+Y, tienes estos pequeños
+
+201
+00:09:24.543 --> 00:09:27.376
+y geniales Mixins que son maneras
+
+202
+00:09:27.376 --> 00:09:29.334
+de hacerlo para que no tengas que copiar y pegar
+
+203
+00:09:29.334 --> 00:09:30.730
+cada uno de estos artículos.
+
+204
+00:09:30.730 --> 00:09:33.705
+Siempre que tengas una sección destacada,
+
+205
+00:09:33.705 --> 00:09:35.377
+no podrás tener una copia y pegar este código
+
+206
+00:09:35.377 --> 00:09:36.824
+en cada uno de ellos.
+
+207
+00:09:36.824 --> 00:09:40.310
+Ahí es donde puedes usar esto
+
+208
+00:09:40.310 --> 00:09:43.101
+y la forma tradicional de hacerlo
+
+209
+00:09:43.101 --> 00:09:45.941
+es un tipo profesional de aplicación basada en Sass
+
+210
+00:09:45.941 --> 00:09:47.487
+tendrías un archivo entero llamado Mixins,
+
+211
+00:09:47.487 --> 00:09:49.143
+y todos sus Mixins están allí.
+
+212
+00:09:49.143 --> 00:09:52.435
+Y luego, los importas siempre que quieras
+
+213
+00:09:52.435 --> 00:09:55.815
+acceder a ellos como lo haremos más tarde aquí.
+
+214
+00:09:55.815 --> 00:09:59.388
+Y, aprovechando estos valores predeterminados,
+
+215
+00:09:59.388 --> 00:10:01.983
+asegúrate de que nunca te vas a encontrar con un error
+
+216
+00:10:01.983 --> 00:10:03.674
+donde no se establece un color,
+
+217
+00:10:03.674 --> 00:10:06.549
+pero entonces también puede ser
+
+218
+00:10:06.549 --> 00:10:10.500
+seguro de que es bueno y fácil anular esos valores.
+
+219
+00:10:10.500 --> 00:10:12.391
+Así es como se puede trabajar
+
+220
+00:10:12.391 --> 00:10:15.474
+con los tipos de variables predeterminados en Sass.
+

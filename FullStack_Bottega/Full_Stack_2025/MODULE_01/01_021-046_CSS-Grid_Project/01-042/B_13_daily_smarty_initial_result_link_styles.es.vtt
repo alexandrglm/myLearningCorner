@@ -1,0 +1,430 @@
+WEBVTT
+
+1
+00:00:00.820 --> 00:00:02.680
+<v Instructor>En esta lección, veremos cómo podemos</v>
+
+2
+00:00:02.680 --> 00:00:06.650
+personalizar y diseñar estos enlaces de publicaciones aquí.
+
+3
+00:00:06.650 --> 00:00:08.300
+Así que estos serán los enlaces de resultados,
+
+4
+00:00:08.300 --> 00:00:10.150
+que normalmente serán uno
+
+5
+00:00:10.150 --> 00:00:13.930
+de los principales puntos focales de toda la página.
+
+6
+00:00:13.930 --> 00:00:15.670
+Nos preocuparemos por reducir el logotipo
+
+7
+00:00:15.670 --> 00:00:19.290
+y la barra de búsqueda más adelante.
+
+8
+00:00:19.290 --> 00:00:21.750
+Creo que antes de hacerlo, el siguiente mejor
+
+9
+00:00:21.750 --> 00:00:24.070
+paso sería centrarse en los datos
+
+10
+00:00:24.070 --> 00:00:25.520
+que a todos realmente les importan,
+
+11
+00:00:25.520 --> 00:00:27.100
+que son los resultados de la búsqueda.
+
+12
+00:00:27.100 --> 00:00:28.980
+Vamos a venir aquí.
+
+13
+00:00:28.980 --> 00:00:30.580
+Tenemos una clase de envoltorio
+
+14
+00:00:30.580 --> 00:00:33.163
+de resultados de publicaciones,
+
+15
+00:00:33.163 --> 00:00:36.680
+y luego publicar, y luego, dentro de cada una de las
+
+16
+00:00:36.680 --> 00:00:39.900
+publicaciones, tenemos un nombre de categoría,
+
+17
+00:00:39.900 --> 00:00:41.650
+un título de resultado de publicación,
+
+18
+00:00:41.650 --> 00:00:43.440
+y luego tenemos para la primera esos enlaces.
+
+19
+00:00:43.440 --> 00:00:47.200
+Así que vengan aquí, voy a bajar
+
+20
+00:00:47.200 --> 00:00:49.760
+hasta el fondo.
+
+21
+00:00:49.760 --> 00:00:51.770
+Y agreguemos un comentario aquí,
+
+22
+00:00:51.770 --> 00:00:54.030
+porque estos serán estilos
+
+23
+00:00:54.030 --> 00:00:57.550
+que están relacionados solo con la página de resultados.
+
+24
+00:00:57.550 --> 00:01:02.550
+Agreguemos un comentario y veremos los estilos de la página
+
+25
+00:01:05.970 --> 00:01:07.760
+de resultados, solo para que sea agradable y organizado.
+
+26
+00:01:07.760 --> 00:01:11.650
+Y ahora vamos a captar cada uno de esos elementos,
+
+27
+00:01:11.650 --> 00:01:16.650
+así que sabemos que ese primero se llamará,
+
+28
+00:01:16.720 --> 00:01:19.570
+veamos, resultados-publicaciones-envoltorio.
+
+29
+00:01:19.570 --> 00:01:21.453
+Déjame copiar todo eso.
+
+30
+00:01:23.490 --> 00:01:25.783
+Esa será la primera clase,
+
+31
+00:01:28.770 --> 00:01:32.550
+y luego dentro de aquí, lo que queremos poner,
+
+32
+00:01:32.550 --> 00:01:37.550
+es que queremos poner un elemento básico de la cuadrícula,
+
+33
+00:01:38.250 --> 00:01:42.390
+una cuadrícula muy similar a la que hicimos anteriormente,
+
+34
+00:01:42.390 --> 00:01:45.550
+y luego un ancho, junto con eso.
+
+35
+00:01:45.550 --> 00:01:50.270
+Digamos que queremos que la fila de la cuadrícula sea tres,
+
+36
+00:01:50.270 --> 00:01:55.270
+luego queremos que la cuadrícula-columna sea 1 / -1,
+
+37
+00:01:58.410 --> 00:02:01.050
+lo que puede reconocer desde antes,
+
+38
+00:02:01.050 --> 00:02:03.760
+de modo que solo queremos que la columna se
+
+39
+00:02:03.760 --> 00:02:06.380
+extienda desde el principio hasta el final hasta el final,
+
+40
+00:02:06.380 --> 00:02:11.380
+luego quiero que el ancho sea el mismo ancho de vista de 66.
+
+41
+00:02:13.440 --> 00:02:16.370
+Guardemos esto, y ahora puedes ver
+
+42
+00:02:16.370 --> 00:02:17.870
+que se ha renderizado
+
+43
+00:02:17.870 --> 00:02:20.400
+en la página exactamente donde lo queremos.
+
+44
+00:02:20.400 --> 00:02:23.610
+Tenemos mucho trabajo, en lo que respecta a su estilo,
+
+45
+00:02:23.610 --> 00:02:26.150
+pero ya no está en el lado izquierdo.
+
+46
+00:02:26.150 --> 00:02:30.240
+Está debajo de la barra de búsqueda y debajo del logotipo,
+
+47
+00:02:30.240 --> 00:02:32.970
+por lo que se ve bien.
+
+48
+00:02:32.970 --> 00:02:36.970
+Ahora trabajemos en esa única clase de correos.
+
+49
+00:02:36.970 --> 00:02:38.530
+Este va a ser muy básico.
+
+50
+00:02:38.530 --> 00:02:43.100
+Solo agregaremos un margen en la parte superior de 3em,
+
+51
+00:02:43.100 --> 00:02:46.593
+y luego haremos lo mismo en la parte inferior.
+
+52
+00:02:48.520 --> 00:02:50.320
+Guarda eso, mira cómo se ve.
+
+53
+00:02:50.320 --> 00:02:52.730
+Y puedes ver que están bien espaciados,
+
+54
+00:02:52.730 --> 00:02:57.560
+por lo que cada uno de estos elementos ahora parece que
+
+55
+00:02:57.560 --> 00:03:02.300
+es una publicación, y en cualquier momento que puede usar el
+
+56
+00:03:02.300 --> 00:03:04.200
+espaciado para segmentar y organizar un código,
+
+57
+00:03:04.200 --> 00:03:05.800
+definitivamente se ve bien.
+
+58
+00:03:05.800 --> 00:03:07.490
+Así que ahora que tenemos eso,
+
+59
+00:03:07.490 --> 00:03:10.690
+veamos cómo llamamos a ese nombre de categoría.
+
+60
+00:03:10.690 --> 00:03:14.790
+Tenemos nombre de categoría, eso es bastante intuitivo.
+
+61
+00:03:14.790 --> 00:03:19.410
+Bien, entonces bajemos, y vamos a decir,
+
+62
+00:03:19.410 --> 00:03:24.410
+nombre de categoría, y esto tendrá un color,
+
+63
+00:03:26.570 --> 00:03:29.859
+creo que voy a elegir el correcto de la lista,
+
+64
+00:03:29.859 --> 00:03:34.859
+#2660F3, y no hay decoración de texto en esto,
+
+65
+00:03:37.740 --> 00:03:42.390
+si hiciste que el nombre de la categoría fuera un enlace.
+
+66
+00:03:42.390 --> 00:03:44.130
+Quiero que esto no sea ninguno.
+
+67
+00:03:44.130 --> 00:03:47.080
+Y luego veamos, ¿hay algo más que
+
+68
+00:03:47.080 --> 00:03:49.090
+debamos agregar a esto?
+
+69
+00:03:49.090 --> 00:03:52.233
+Oh sí, necesitamos un tamaño de fuente, entonces 1.4rem.
+
+70
+00:03:55.300 --> 00:03:57.220
+Y veamos uno al otro,
+
+71
+00:03:57.220 --> 00:04:00.550
+y sabes qué, porque en una versión muy temprana de esto
+
+72
+00:04:00.550 --> 00:04:03.730
+en mis notas, hice un nombre de categoría en un enlace,
+
+73
+00:04:03.730 --> 00:04:05.110
+pero eso no es realmente necesario,
+
+74
+00:04:05.110 --> 00:04:07.500
+por lo que podemos obtener esa decoración de texto.
+
+75
+00:04:07.500 --> 00:04:10.660
+Y ahora, lo único que necesitamos ahora es solo
+
+76
+00:04:10.660 --> 00:04:15.570
+un margen en la parte inferior, no en el final del bloque,
+
+77
+00:04:15.570 --> 00:04:18.480
+necesitamos el margen inferior, ahí vamos.
+
+78
+00:04:18.480 --> 00:04:23.480
+Y para esto, vamos con 1.5rem, y eso debería ser bueno.
+
+79
+00:04:26.360 --> 00:04:29.040
+Así que esto aumentará el tamaño de la fuente
+
+80
+00:04:29.040 --> 00:04:31.220
+desde la raíz, y luego también nos dará
+
+81
+00:04:31.220 --> 00:04:34.340
+un poco de margen, y lo coloreará en azul.
+
+82
+00:04:34.340 --> 00:04:36.170
+Y como puedes ver, eso es perfecto.
+
+83
+00:04:36.170 --> 00:04:37.910
+Eso se ve muy bien.
+
+84
+00:04:37.910 --> 00:04:39.550
+Si quieres revisar aquí,
+
+85
+00:04:39.550 --> 00:04:43.370
+eso es casi un píxel perfecto con lo que queremos hacer.
+
+86
+00:04:43.370 --> 00:04:47.590
+Ahora que tenemos eso, vamos a abordar el enlace.
+
+87
+00:04:47.590 --> 00:04:51.330
+Entonces, el enlace tendrá una clase,
+
+88
+00:04:51.330 --> 00:04:55.990
+veamos cuál es ese nombre, así sea el resultado post-título,
+
+89
+00:04:55.990 --> 00:05:00.990
+así que si vengo aquí, el resultado post-título,
+
+90
+00:05:01.240 --> 00:05:02.890
+pero también necesitamos capturar el enlace,
+
+91
+00:05:02.890 --> 00:05:05.890
+entonces necesitamos más que solo el nombre de la clase.
+
+92
+00:05:05.890 --> 00:05:08.520
+Así que esto tendrá un color,
+
+93
+00:05:08.520 --> 00:05:13.520
+este es el #535353 que hemos usado antes para este.
+
+94
+00:05:15.560 --> 00:05:19.710
+Este es uno donde queremos la decoración de texto: ninguno,
+
+95
+00:05:19.710 --> 00:05:22.120
+porque este en realidad todavía es un enlace,
+
+96
+00:05:22.120 --> 00:05:25.530
+esto es lo que se redirigiría para el usuario,
+
+97
+00:05:25.530 --> 00:05:28.470
+y para esto, agreguemos un poco de un tamaño
+
+98
+00:05:28.470 --> 00:05:30.170
+de fuente más grande.
+
+99
+00:05:30.170 --> 00:05:35.170
+Así que voy a ir 1.8rem, guarda esto.
+
+100
+00:05:36.020 --> 00:05:39.200
+Y ahora puedes ver que los enlaces se ven mucho mejor.
+
+101
+00:05:39.200 --> 00:05:42.270
+Y cuando te sitúas sobre cada uno de estos,
+
+102
+00:05:42.270 --> 00:05:46.680
+no tienen ese subrayado, por lo que se ve mejor.
+
+103
+00:05:46.680 --> 00:05:48.450
+Puedes ver que eso es exactamente
+
+104
+00:05:48.450 --> 00:05:51.620
+lo que estamos buscando implementar, eso es perfecto.
+
+105
+00:05:51.620 --> 00:05:54.330
+Vamos a tomar un descanso ahora, y en la próxima guía,
+
+106
+00:05:54.330 --> 00:05:59.330
+vamos a agregar un elemento de cuadrícula CSS aquí
+
+107
+00:05:59.390 --> 00:06:02.343
+para cada uno de estos enlaces anidados.
+

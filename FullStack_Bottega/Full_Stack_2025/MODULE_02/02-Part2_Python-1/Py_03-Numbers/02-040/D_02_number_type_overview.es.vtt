@@ -1,0 +1,662 @@
+WEBVTT
+
+1
+00:00:01.030 --> 00:00:02.230
+<v Instructor>En esta sección del curso</v>
+
+2
+00:00:02.230 --> 00:00:05.720
+vamos a examinar cómo Python trabaja con números.
+
+3
+00:00:05.720 --> 00:00:07.660
+Ahora, esto va a ser muy crítico
+
+4
+00:00:07.660 --> 00:00:10.070
+para realizar cálculos,
+
+5
+00:00:10.070 --> 00:00:12.760
+implementar algoritmos de aprendizaje de máquina
+
+6
+00:00:12.760 --> 00:00:16.730
+y entender la manera en la que Python permite
+
+7
+00:00:16.730 --> 00:00:19.360
+definir y manejar números,
+
+8
+00:00:19.360 --> 00:00:22.340
+y también ver su naturaleza dinámica.
+
+9
+00:00:22.340 --> 00:00:25.020
+Especialmente comparado con otros lenguajes de programación.
+
+10
+00:00:25.020 --> 00:00:28.010
+Realmente les ayudará a entender cómo trabajar con
+
+11
+00:00:28.010 --> 00:00:31.640
+el lenguaje y cómo crear programas como un todo.
+
+12
+00:00:31.640 --> 00:00:35.400
+Así que vamos a dar en esta guía un breve vistazo
+
+13
+00:00:35.400 --> 00:00:37.283
+a cada uno de los
+
+14
+00:00:37.283 --> 00:00:39.380
+tipos principales de tipos de datos numéricos
+
+15
+00:00:39.380 --> 00:00:41.430
+a los que tenemos acceso en Python.
+
+16
+00:00:41.430 --> 00:00:43.920
+Así que voy a empezar con algunos ejemplos.
+
+17
+00:00:43.920 --> 00:00:46.990
+Entonces, voy a decir que tenemos una variable aquí
+
+18
+00:00:46.990 --> 00:00:50.010
+llamada "product_id", y voy a darle
+
+19
+00:00:50.010 --> 00:00:53.130
+el número uno dos tres.
+
+20
+00:00:53.130 --> 00:00:57.010
+Y el tipo de dato que esto va a representar
+
+21
+00:00:57.010 --> 00:00:59.560
+es el tipo de dato entero.
+
+22
+00:00:59.560 --> 00:01:02.460
+Ahora, si no están seguros de qué son los enteros
+
+23
+00:01:02.460 --> 00:01:05.380
+o cómo funcionan en la ciencia de computación,
+
+24
+00:01:05.380 --> 00:01:07.830
+un entero es un número completo.
+
+25
+00:01:07.830 --> 00:01:10.680
+Así que no es un decimal, no es una fracción,
+
+26
+00:01:10.680 --> 00:01:13.980
+no es un número complejo, sólo es un número como este.
+
+27
+00:01:13.980 --> 00:01:18.430
+Podría ser 123, podría ser 42, podría ser tres,
+
+28
+00:01:18.430 --> 00:01:22.070
+cualquiera de esos va a representar enteros.
+
+29
+00:01:22.070 --> 00:01:25.260
+Y con la manera en la que Python trabaja, y discutimos
+
+30
+00:01:25.260 --> 00:01:27.870
+esto un poco cuando hablamos acerca
+
+31
+00:01:27.870 --> 00:01:29.970
+de los tipos de datos en Python.
+
+32
+00:01:29.970 --> 00:01:34.310
+Pero el cómo trabaja Python con todo esto se decide y
+
+33
+00:01:34.310 --> 00:01:38.110
+se procesa todo cuando ejecutamos nuestro programa de Python
+
+34
+00:01:38.110 --> 00:01:40.940
+y cuando el intérprete se encuentra con este valor
+
+35
+00:01:40.940 --> 00:01:44.370
+va a entender que esto es un entero,
+
+36
+00:01:44.370 --> 00:01:47.270
+y va a asignar eso automáticamente.
+
+37
+00:01:47.270 --> 00:01:49.520
+No tenemos que definirlo nosotros,
+
+38
+00:01:49.520 --> 00:01:51.253
+como tendríamos que hacerlo si estuviéramos
+
+39
+00:01:51.253 --> 00:01:54.740
+trabajando con Java o C++, o un lenguaje así.
+
+40
+00:01:54.740 --> 00:01:58.900
+Este es un entero, y será analizado automáticamente
+
+41
+00:01:58.900 --> 00:02:00.200
+por el sistema.
+
+42
+00:02:00.200 --> 00:02:03.253
+Ahora, el siguiente tipo que vamos a ver es uno...
+
+43
+00:02:03.253 --> 00:02:06.660
+Voy a crear una variable aquí llamada "sale_price"
+
+44
+00:02:06.660 --> 00:02:10.270
+y voy a decir 14.99.
+
+45
+00:02:10.270 --> 00:02:15.040
+Ahora, este es el tipo punto flotante
+
+46
+00:02:15.040 --> 00:02:16.460
+de tipo de dato.
+
+47
+00:02:16.460 --> 00:02:19.840
+Lo que tenemos aquí es, puede verse como un decimal,
+
+48
+00:02:19.840 --> 00:02:23.270
+pero es muy importante no llamar a esto un decimal
+
+49
+00:02:23.270 --> 00:02:26.280
+y vamos a tener una guía en la que
+
+50
+00:02:26.280 --> 00:02:28.760
+veamos exactamente por qué eso es así.
+
+51
+00:02:28.760 --> 00:02:33.760
+Y el punto principal para recordar es flotante,
+
+52
+00:02:33.950 --> 00:02:38.510
+y en realidad hay una librería decimal dentro de Python.
+
+53
+00:02:38.510 --> 00:02:40.900
+Tienen que importarla manualmente, y vamos a hacer eso
+
+54
+00:02:40.900 --> 00:02:43.180
+en una de las guías siguientes.
+
+55
+00:02:43.180 --> 00:02:47.870
+Pero lo importante a notar es que una precisión flotante
+
+56
+00:02:47.870 --> 00:02:52.870
+no es tan granular como una precisión decimal.
+
+57
+00:02:53.440 --> 00:02:55.270
+Eso significa que si están realizando
+
+58
+00:02:55.270 --> 00:02:58.640
+cálculos muy complejos que involucran decimales,
+
+59
+00:02:58.640 --> 00:03:01.880
+entonces, un flotante podría no ser su mejor elección.
+
+60
+00:03:01.880 --> 00:03:04.710
+Y de hecho, ha habido algunos desastres bastante
+
+61
+00:03:04.710 --> 00:03:08.810
+grandes incluyendo un accidente de transbordador solamente
+
+62
+00:03:08.810 --> 00:03:10.818
+porque los números de punto flotante
+
+63
+00:03:10.818 --> 00:03:12.590
+no se usaron adecuadamente.
+
+64
+00:03:12.590 --> 00:03:14.207
+Así que es muy importante comprender eso,
+
+65
+00:03:14.207 --> 00:03:16.400
+pero vamos a tener una guía que examine eso
+
+66
+00:03:16.400 --> 00:03:19.020
+y voy a enseñarles dónde están las diferencias.
+
+67
+00:03:19.020 --> 00:03:23.520
+Pero por ahora pueden pensar en un flotante como un tipo
+
+68
+00:03:23.520 --> 00:03:27.350
+de decimal, es simplemente un tipo que no es preciso.
+
+69
+00:03:27.350 --> 00:03:29.450
+No habría un problema con decir
+
+70
+00:03:29.450 --> 00:03:32.770
+que el precio de venta es $14 dólares con 99 centavos.
+
+71
+00:03:32.770 --> 00:03:36.730
+Sin embargo, si quieren crear un programa científico,
+
+72
+00:03:36.730 --> 00:03:39.660
+entonces, esto no va a funcionar adecuadamente,
+
+73
+00:03:39.660 --> 00:03:40.750
+y deben tener cuidado.
+
+74
+00:03:40.750 --> 00:03:44.290
+Pero al final del día, si quieren un decimal muy básico,
+
+75
+00:03:44.290 --> 00:03:48.745
+este flotante va a ser entendido exactamente como es
+
+76
+00:03:48.745 --> 00:03:52.320
+justo aquí por el intérprete de Python.
+
+77
+00:03:52.320 --> 00:03:55.700
+Entonces, hasta ahora hemos cubierto enteros y flotantes.
+
+78
+00:03:55.700 --> 00:03:59.280
+Lo siguiente que vamos a cubrir son fracciones.
+
+79
+00:03:59.280 --> 00:04:04.280
+Así que voy a decir "tip_percentage", y puedo decir 1/5.
+
+80
+00:04:04.550 --> 00:04:07.160
+Ahora, esto va a representar 20%.
+
+81
+00:04:07.160 --> 00:04:12.160
+Y podemos verificar eso aquí si imprimo "tip_percentage".
+
+82
+00:04:12.290 --> 00:04:14.640
+Verán que eso imprime 0.2,
+
+83
+00:04:14.640 --> 00:04:17.460
+que es equivalente a 20%.
+
+84
+00:04:17.460 --> 00:04:20.590
+Lo bueno de cada uno de estos es,
+
+85
+00:04:20.590 --> 00:04:22.748
+noten cómo no tuvimos que hacer
+
+86
+00:04:22.748 --> 00:04:25.000
+ningún trabajo para decir a Python
+
+87
+00:04:25.000 --> 00:04:28.070
+qué tipo de números estamos trabajando.
+
+88
+00:04:28.070 --> 00:04:30.520
+Y si son nuevos con la programación,
+
+89
+00:04:30.520 --> 00:04:32.220
+entonces, puede ser que esto no parezca gran cosa,
+
+90
+00:04:32.220 --> 00:04:35.030
+esto puede parecer intuitivo, lo cual es parte de la razón
+
+91
+00:04:35.030 --> 00:04:36.321
+por la cual los creadores de Python
+
+92
+00:04:36.321 --> 00:04:37.360
+lo hicieron de esta manera,
+
+93
+00:04:37.360 --> 00:04:40.977
+porque no parece lógico que debiéramos ser capaces de
+
+94
+00:04:40.977 --> 00:04:44.120
+poner cualquier tipo de número, almacenarlo en una variable
+
+95
+00:04:44.120 --> 00:04:47.200
+y hacer que el sistema decida cómo tratarlo.
+
+96
+00:04:47.200 --> 00:04:49.860
+Pero si han estado programando por largo tiempo
+
+97
+00:04:49.860 --> 00:04:53.370
+y han trabajado tipos de lenguajes de mucho más bajo nivel
+
+98
+00:04:53.370 --> 00:04:56.810
+como C y ese tipo de lenguajes, entonces, esto va a parecer
+
+99
+00:04:56.810 --> 00:05:00.630
+muy extraño porque simplemente estamos dejando al sistema,
+
+100
+00:05:00.630 --> 00:05:04.840
+al lenguaje de Python en sí, manejar el análisis
+
+101
+00:05:04.840 --> 00:05:06.570
+y decidir qué tipo de dato usar.
+
+102
+00:05:06.570 --> 00:05:10.440
+Entonces, a media que pasa, mira y encuentra a "product_id",
+
+103
+00:05:10.440 --> 00:05:13.460
+mira y encuentra uno dos tres, y dice
+
+104
+00:05:13.460 --> 00:05:15.160
+"Esto es un entero".
+
+105
+00:05:15.160 --> 00:05:18.520
+Viene a "sale_price", mira el valor asignado
+
+106
+00:05:18.520 --> 00:05:21.350
+y dice, "Este es un número de punto flotante".
+
+107
+00:05:21.350 --> 00:05:24.590
+Y entonces encuentra 1/5 y dice, "Esto es una fracción"
+
+108
+00:05:24.590 --> 00:05:27.840
+y la convierte tal como ven aquí mismo.
+
+109
+00:05:27.840 --> 00:05:30.950
+Y voy a crear otra,
+
+110
+00:05:30.950 --> 00:05:35.180
+así que voy a decir "new_product" y vamos a decir
+
+111
+00:05:35.180 --> 00:05:37.620
+que esto es un 150.
+
+112
+00:05:37.620 --> 00:05:41.210
+Y este es otro entero, pero lo principal
+
+113
+00:05:41.210 --> 00:05:46.040
+que quería mostrarles es lo que pasa cuando combinan.
+
+114
+00:05:46.040 --> 00:05:49.220
+Como cuando realizan cálculos sobre
+
+115
+00:05:49.220 --> 00:05:52.720
+estos varios tipos de datos, porque esa es otra cosa bonita
+
+116
+00:05:52.720 --> 00:05:56.230
+acerca de Python, es muy flexible en permitir
+
+117
+00:05:56.230 --> 00:05:58.510
+cambiar de un lado a otro.
+
+118
+00:05:58.510 --> 00:06:02.710
+Y si recuerdan antes en nuestra sección de cadena de texto,
+
+119
+00:06:02.710 --> 00:06:04.960
+podrían recordar que cuando tratamos
+
+120
+00:06:04.960 --> 00:06:09.470
+de combinar una cadena con un número, nos dio un error.
+
+121
+00:06:09.470 --> 00:06:12.450
+Y eso es porque no se puede tener ese tipo de superposición.
+
+122
+00:06:12.450 --> 00:06:15.930
+Python no quiere que puedan ser tan flexibles
+
+123
+00:06:15.930 --> 00:06:18.080
+con su programación porque van a terminar
+
+124
+00:06:18.080 --> 00:06:20.300
+con algunos errores muy extraños.
+
+125
+00:06:20.300 --> 00:06:24.680
+Pero algo con lo cual es flexible es con estos números.
+
+126
+00:06:24.680 --> 00:06:28.820
+Tienen todos estos subtipos como flotante y entero,
+
+127
+00:06:28.820 --> 00:06:31.030
+y todos pueden trabajar juntos.
+
+128
+00:06:31.030 --> 00:06:34.830
+Y si hago algo como esto, donde digo
+
+129
+00:06:35.819 --> 00:06:40.819
+"sale_price + new_product", e imprimo
+
+130
+00:06:41.204 --> 00:06:45.210
+verán que dice 164 con 99 centavos.
+
+131
+00:06:45.210 --> 00:06:49.446
+Y lo que pasa aquí es que tomamos dos tipos de datos
+
+132
+00:06:49.446 --> 00:06:51.683
+diferentes, o debo decir dos números diferentes
+
+133
+00:06:51.683 --> 00:06:55.560
+de tipos de datos numéricos, flotante y entero.
+
+134
+00:06:55.560 --> 00:06:58.000
+Y cuando se combinan esos, como cuando se suman
+
+135
+00:06:58.000 --> 00:07:01.700
+o se sustraen o se multiplican, Python pasa
+
+136
+00:07:01.700 --> 00:07:06.700
+y convierte esa salida final en flotante.
+
+137
+00:07:06.810 --> 00:07:11.690
+Y si fuésemos a tener dos tipos diferentes de enteros...
+
+138
+00:07:11.690 --> 00:07:15.470
+Voy a copiar esto, lo pondré como comentario.
+
+139
+00:07:15.470 --> 00:07:18.510
+Y si lo hiciera por alguna razón, en sentido lógico
+
+140
+00:07:18.510 --> 00:07:22.300
+uno no combinaría un "product_id" con un "new_product",
+
+141
+00:07:22.300 --> 00:07:24.980
+pero sólo en aras de poder ver
+
+142
+00:07:24.980 --> 00:07:26.580
+la manera en que esto funciona.
+
+143
+00:07:26.580 --> 00:07:30.960
+Estos son dos enteros, 123 y 150.
+
+144
+00:07:30.960 --> 00:07:34.150
+Si añado estos dos juntos, ven que no lo convirtió
+
+145
+00:07:34.150 --> 00:07:37.690
+en un flotante, lo mantuvo como entero.
+
+146
+00:07:37.690 --> 00:07:41.460
+Pero cuando teníamos "sale_price" y "new_product",
+
+147
+00:07:41.460 --> 00:07:45.420
+y uno de estos "sale_price" en este caso era un flotante,
+
+148
+00:07:45.420 --> 00:07:49.830
+entonces, automáticamente convirtió la salida a flotante
+
+149
+00:07:49.830 --> 00:07:53.150
+para que sea ese tipo de valor con base decimal.
+
+150
+00:07:53.150 --> 00:07:56.030
+Y eso es algo que es, también, muy útil.
+
+151
+00:07:56.030 --> 00:07:58.320
+Así que va a haber muchas veces
+
+152
+00:07:58.320 --> 00:08:00.240
+en las que van a estar lidiando con situaciones
+
+153
+00:08:00.240 --> 00:08:02.980
+en las que necesitan realizar cálculos
+
+154
+00:08:02.980 --> 00:08:05.640
+y podrían tener muchos tipos de datos diferentes.
+
+155
+00:08:05.640 --> 00:08:07.720
+Pueden tener un decimal, pueden tener un flotante,
+
+156
+00:08:07.720 --> 00:08:10.250
+pueden tener una fracción y un entero,
+
+157
+00:08:10.250 --> 00:08:12.460
+y necesitan que todos trabajen juntos.
+
+158
+00:08:12.460 --> 00:08:14.780
+Y eso es lo que es tan útil con Python,
+
+159
+00:08:14.780 --> 00:08:16.720
+es que permite hacer eso.
+
+160
+00:08:16.720 --> 00:08:19.250
+Automáticamente permitirá procesar
+
+161
+00:08:19.250 --> 00:08:22.180
+cada uno de esos, realizar cálculos y luego
+
+162
+00:08:22.180 --> 00:08:26.040
+realizará dinámicamente las conversiones
+
+163
+00:08:26.040 --> 00:08:30.290
+de tipos de datos, tal como vimos justo ahí.
+
+164
+00:08:30.290 --> 00:08:33.643
+Entonces, esa es su visión general de los varios tipos
+
+165
+00:08:33.643 --> 00:08:35.783
+de números dentro de Python.
+

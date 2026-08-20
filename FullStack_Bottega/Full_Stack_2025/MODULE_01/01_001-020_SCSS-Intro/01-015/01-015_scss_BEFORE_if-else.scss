@@ -1,0 +1,65 @@
+$off-white: #f6f6f6;
+$featured-color: DarkRed;
+
+@mixin featured($bg-color: 'dark') {
+  @if $bg-color == 'light' {
+    color: Tomato;  
+  } @else if $bg-color == 'dark' {
+    color: blue;  
+  } @else {
+    color: red; 
+  }
+
+  .subheading a {
+    color: black;
+    text-decoration: none;
+    &:hover {
+      color: black;
+      text-decoration: underline;
+    }
+  }
+}
+
+body {
+  background-color: $off-white;
+  height: 100vh;
+  height: 100vw;
+}
+
+.container {
+  font-family: Verdana;
+  font-size: 0.8rem;
+}
+
+.page-wrapper { 
+  padding: 21px;
+  $featured-color: RoyalBlue;
+
+  .featured {
+    @include featured('light');
+  }
+
+  .page-content {
+    background-color: $featured-color;
+    padding: 42px;
+    color: $off-white;
+
+    .container {
+      height: 60px !important;
+      font-family: courier;
+
+      .description {
+        float: left;
+        width: 75%;
+      }
+
+      .sidebar {
+        font-family: Verdana;
+        text-align: right;
+        float: right;
+        width: 25%;
+        @include featured('blue');
+      }
+    }
+  }
+}

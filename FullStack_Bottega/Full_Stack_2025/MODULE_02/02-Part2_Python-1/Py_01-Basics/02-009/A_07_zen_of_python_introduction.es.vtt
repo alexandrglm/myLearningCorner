@@ -1,0 +1,213 @@
+WEBVTT
+
+1
+00:00:00.630 --> 00:00:02.240
+<v Jordan>En esta clase,</v>
+
+2
+00:00:02.240 --> 00:00:06.760
+haremos una introducción
+al Zen de Python.
+
+3
+00:00:06.760 --> 00:00:09.490
+Esta es una PEP,
+que es una actualización
+
+4
+00:00:09.490 --> 00:00:13.592
+del lenguaje de programación,
+y de la documentación también.
+
+5
+00:00:13.592 --> 00:00:18.592
+Ofrece un breve conjunto de pautas
+
+6
+00:00:18.592 --> 00:00:21.860
+que Python cree que deberíamos seguir.
+
+7
+00:00:21.860 --> 00:00:25.601
+Es imposible revisar cada una
+
+8
+00:00:25.601 --> 00:00:27.159
+y ver qué significan,
+
+9
+00:00:27.159 --> 00:00:32.028
+pero quiero presentárselas
+antes de meternos en el curso
+
+10
+00:00:32.028 --> 00:00:33.988
+y comenzar a desarrollar
+programas con Python,
+
+11
+00:00:33.988 --> 00:00:36.020
+porque quizá hagamos referencia,
+
+12
+00:00:36.020 --> 00:00:39.930
+y al ir familiarizándose más
+con el lenguaje,
+
+13
+00:00:39.930 --> 00:00:44.915
+estos puntos Zen, instrucciones y pautas
+
+14
+00:00:44.915 --> 00:00:46.910
+comenzarán a tener más sentido.
+
+15
+00:00:46.910 --> 00:00:51.472
+Tratan sobre las prácticas óptimas con el lenguaje.
+
+16
+00:00:51.472 --> 00:00:53.196
+Si se desplazan hacia abajo...
+
+17
+00:00:53.196 --> 00:00:57.202
+Pueden encontrarlo simplemente buscando "Zen de Python".
+
+18
+00:00:57.202 --> 00:00:59.660
+Si se desplazan hacia abajo,
+
+19
+00:00:59.660 --> 00:01:02.560
+verán esta lista de aquí.
+
+20
+00:01:02.560 --> 00:01:04.843
+Desde el primero,
+
+21
+00:01:04.843 --> 00:01:07.768
+cada uno de estos es un punto,
+
+22
+00:01:07.768 --> 00:01:10.160
+cada uno de estos es una pauta.
+
+23
+00:01:10.160 --> 00:01:13.460
+Donde dice: "Lindo es mejor que feo".
+
+24
+00:01:13.460 --> 00:01:16.400
+"Explícito es mejor que implícito".
+
+25
+00:01:16.400 --> 00:01:18.560
+"Simple es mejor que complejo".
+
+26
+00:01:18.560 --> 00:01:20.750
+"Complejo es mejor que complicado".
+
+27
+00:01:20.750 --> 00:01:23.490
+Nos desplazamos hasta abajo donde dice:
+
+28
+00:01:23.490 --> 00:01:27.020
+"Los espacios de nombres son una gran idea,
+
+29
+00:01:27.020 --> 00:01:29.310
+"¡tengamos más de esas!".
+
+30
+00:01:29.310 --> 00:01:33.602
+Como dije, no podemos decir
+qué representa cada una
+
+31
+00:01:33.602 --> 00:01:37.070
+porque, técnicamente,
+es un modo abstracto
+
+32
+00:01:37.070 --> 00:01:40.730
+de mirar a todo el lenguaje Python
+
+33
+00:01:40.730 --> 00:01:45.730
+y cómo deberíamos programar con Python.
+
+34
+00:01:45.750 --> 00:01:49.940
+Haremos referencia a estas
+más tarde cuando nos topemos
+
+35
+00:01:49.940 --> 00:01:52.417
+con diferentes códigos reutilizables y ejemplos
+
+36
+00:01:52.417 --> 00:01:54.140
+donde esto pueda ilustrarse.
+
+37
+00:01:54.140 --> 00:01:57.680
+Pero por ahora,
+quería que las conocieran.
+
+38
+00:01:57.680 --> 00:02:00.507
+Y, además, hay un huevito de Pascua
+
+39
+00:02:00.507 --> 00:02:04.140
+como dice aquí mismo
+que permite referenciar esto.
+
+40
+00:02:04.140 --> 00:02:08.980
+Si alguna vez quieren mirar todas las pautas,
+
+41
+00:02:08.980 --> 00:02:12.221
+abran un REPL.
+
+42
+00:02:12.221 --> 00:02:14.220
+Escribiré "Python"
+
+43
+00:02:14.220 --> 00:02:17.795
+y luego simplemente "import this".
+
+44
+00:02:17.795 --> 00:02:21.130
+Aquí veremos el Zen de Python completo.
+
+45
+00:02:21.130 --> 00:02:25.410
+Cada uno de esos puntos estarán allí.
+
+46
+00:02:25.410 --> 00:02:26.933
+Y al ir avanzando en este curso,
+
+47
+00:02:26.933 --> 00:02:29.158
+haré lo mejor posible
+
+48
+00:02:29.158 --> 00:02:32.130
+para seguir siempre estas pautas.
+
+49
+00:02:32.130 --> 00:02:35.550
+Mientras más desarrollen programas con Python,
+
+50
+00:02:35.550 --> 00:02:37.873
+más sentido comenzarán a tener estas pautas.
+

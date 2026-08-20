@@ -1,0 +1,246 @@
+WEBVTT
+
+1
+00:00:01.040 --> 00:00:02.590
+<v Instructor>En esta lección, vamos a hablar sobre</v>
+
+2
+00:00:02.590 --> 00:00:05.470
+cómo crear una cuenta en GitHub.
+
+3
+00:00:05.470 --> 00:00:08.750
+Ahora, no quiero que confunda Git con GitHub.
+
+4
+00:00:08.750 --> 00:00:10.910
+Voy a crea una guía completa
+
+5
+00:00:10.910 --> 00:00:14.050
+que hable específicamente sobre las diferencia entre ambos,
+
+6
+00:00:14.050 --> 00:00:16.620
+pero, por ahora, solo quiero que sepa que GitHub
+
+7
+00:00:16.620 --> 00:00:21.610
+es una ubicación donde puede almacenar sus repositorios Git.
+
+8
+00:00:21.610 --> 00:00:25.350
+Entonces, va a comenzar yendo a GitHub.com.
+
+9
+00:00:25.350 --> 00:00:27.160
+Si aún no tiene una cuenta,
+
+10
+00:00:27.160 --> 00:00:29.670
+elija un nombre de usuario.
+
+11
+00:00:29.670 --> 00:00:32.313
+Entonces, aquí voy a escribir devcampgithub.
+
+12
+00:00:35.000 --> 00:00:37.600
+Parece que está disponible,
+
+13
+00:00:37.600 --> 00:00:38.660
+puede notarlo allí,
+
+14
+00:00:38.660 --> 00:00:41.300
+donde está la marca de verificación verde.
+
+15
+00:00:41.300 --> 00:00:45.700
+Luego, ingrese el correo electrónico que tenga
+
+16
+00:00:45.700 --> 00:00:48.597
+y cree una contraseña.
+
+17
+00:00:48.597 --> 00:00:49.763
+Una vez que haya terminado, puede hacer clic en
+
+18
+00:00:49.763 --> 00:00:52.850
+Sign up for GitHub .
+
+19
+00:00:52.850 --> 00:00:55.470
+Luego, le va a pedir que elija un plan,
+
+20
+00:00:55.470 --> 00:00:57.970
+y, dependiendo de cuándo vaya a tomar este curso,
+
+21
+00:00:57.970 --> 00:00:59.940
+esta pantalla podría lucir algo diferente,
+
+22
+00:00:59.940 --> 00:01:01.990
+al igual que todas las pantallas,
+
+23
+00:01:01.990 --> 00:01:06.570
+pero el flujo de trabajo va a ser el mismo.
+
+24
+00:01:06.570 --> 00:01:08.530
+Pero, si no lo es, háganmelo saber
+
+25
+00:01:08.530 --> 00:01:10.090
+así lo actualizo.
+
+26
+00:01:10.090 --> 00:01:13.410
+Lo primero que vamos a hacer es crear un plan,
+
+27
+00:01:13.410 --> 00:01:17.670
+y el básico es repositorios públicos ilimitados.
+
+28
+00:01:17.670 --> 00:01:21.450
+Lo que significa es que todos nuestros proyectos
+
+29
+00:01:21.450 --> 00:01:23.500
+van a estar disponibles de manera gratuita
+
+30
+00:01:23.500 --> 00:01:25.610
+para toda la comunidad de código abierto.
+
+31
+00:01:25.610 --> 00:01:27.610
+Si está revisando esto
+
+32
+00:01:27.610 --> 00:01:29.980
+y cursos de codificación
+
+33
+00:01:29.980 --> 00:01:31.890
+o simplemente está trabajando en proyectos por
+
+34
+00:01:31.890 --> 00:01:34.110
+entretenimiento, eso está perfectamente bien.
+
+35
+00:01:34.110 --> 00:01:35.830
+Debe asegurarse de tener cuidado
+
+36
+00:01:35.830 --> 00:01:40.830
+cuando protege las diferentes variables de configuración,
+
+37
+00:01:41.150 --> 00:01:42.900
+las credenciales API y esa clase de cosas,
+
+38
+00:01:42.900 --> 00:01:45.050
+porque están disponibles al público,
+
+39
+00:01:45.050 --> 00:01:47.070
+y vamos a explicar cómo lo podemos hacer
+
+40
+00:01:47.070 --> 00:01:48.460
+más adelante en este curso.
+
+41
+00:01:48.460 --> 00:01:50.640
+Si está trabajando en proyectos de clientes
+
+42
+00:01:50.640 --> 00:01:52.610
+o haciendo esto para su trabajo,
+
+43
+00:01:52.610 --> 00:01:53.610
+entonces lo más probable es que
+
+44
+00:01:53.610 --> 00:01:57.180
+también quiera tener repositorios con código privado
+
+45
+00:01:57.180 --> 00:01:59.980
+y, para lograrlo, puede seleccionar esta opción
+
+46
+00:01:59.980 --> 00:02:03.270
+y, luego, pagar los siete dólares por mes.
+
+47
+00:02:03.270 --> 00:02:04.103
+Por ahora, simplemente
+
+48
+00:02:04.103 --> 00:02:07.310
+voy a hacer clic en repositorios públicos ilimitados.
+
+49
+00:02:07.310 --> 00:02:11.060
+También puede marcar que quiere recibir ayuda mediante un
+
+50
+00:02:11.060 --> 00:02:12.720
+tutorial y registrarse para recibir actualizaciones.
+
+51
+00:02:12.720 --> 00:02:15.220
+No voy a marcar ninguna de esas casillas.
+
+52
+00:02:15.220 --> 00:02:16.880
+Voy a hacer clic en Continue .
+
+53
+00:02:16.880 --> 00:02:19.820
+Me va a llevar a un tercer lugar,
+
+54
+00:02:19.820 --> 00:02:22.950
+donde intenta personalizar mi experiencia.
+
+55
+00:02:22.950 --> 00:02:27.310
+Puede elegir cada una de estas opciones si aplican a usted,
+
+56
+00:02:27.310 --> 00:02:29.740
+y realmente no importa al final del día.
+
+57
+00:02:29.740 --> 00:02:32.300
+Les voy a guiar en cada uno de ellas.
+
+58
+00:02:32.300 --> 00:02:36.980
+Entonces, haga clic allí, en Submit y listo.
+
+59
+00:02:36.980 --> 00:02:40.610
+Ya registró una cuenta de GitHub
+
+60
+00:02:40.610 --> 00:02:42.880
+y, en la próxima guía, vamos a ver
+
+61
+00:02:42.880 --> 00:02:46.427
+las diferencias clave entre Git y GitHub.
+

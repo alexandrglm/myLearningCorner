@@ -1,0 +1,486 @@
+WEBVTT
+
+1
+00:00:01.030 --> 00:00:03.100
+<v ->Hola y bienvenidos a este curso sobre</v>
+
+2
+00:00:03.100 --> 00:00:05.320
+interfaz de usuario para desarrolladores.
+
+3
+00:00:05.320 --> 00:00:06.830
+Mi nombre es Jordan Hudgens
+
+4
+00:00:06.830 --> 00:00:11.450
+y conmigo está Jesse Cook, CEO y Director Creativo
+
+5
+00:00:11.450 --> 00:00:13.690
+de Slate Development Shop.
+
+6
+00:00:13.690 --> 00:00:18.010
+Si sigues en nuestro curso de Experiencia de Usuario,
+
+7
+00:00:18.010 --> 00:00:20.880
+ahí es donde te ayudamos a desarrollar un sistema
+
+8
+00:00:20.880 --> 00:00:24.460
+para todos los pasos necesarios para la construcción
+
+9
+00:00:24.460 --> 00:00:27.810
+de una interfaz de usuario limpia y eficiente.
+
+10
+00:00:27.810 --> 00:00:30.660
+Y ese es un componente muy importante
+
+11
+00:00:30.660 --> 00:00:35.510
+para crear una aplicación, ya sea móvil, de escritorio,
+
+12
+00:00:35.510 --> 00:00:38.300
+o cualquier tipo de sistema de software.
+
+13
+00:00:38.300 --> 00:00:41.780
+En este curso, vamos a tomar ese conocimiento
+
+14
+00:00:41.780 --> 00:00:45.860
+y lo vamos a extender a las partes del sistema
+
+15
+00:00:45.860 --> 00:00:48.410
+donde los usuarios realmente van a poder verla.
+
+16
+00:00:48.410 --> 00:00:52.570
+Así que es todo, desde los colores, el espacio en blanco,
+
+17
+00:00:52.570 --> 00:00:54.600
+todo tipo de componentes diferentes.
+
+18
+00:00:54.600 --> 00:00:56.650
+Y una de las razones por las que estaba
+
+19
+00:00:56.650 --> 00:00:58.350
+muy entusiasmado con este curso
+
+20
+00:00:58.350 --> 00:01:02.380
+es porque este es un tema que personalmente quiero aprender.
+
+21
+00:01:02.380 --> 00:01:04.570
+Parte de la razón por la que estamos construyendo el curso
+
+22
+00:01:04.570 --> 00:01:05.970
+y por qué Jesse está aquí
+
+23
+00:01:05.970 --> 00:01:08.970
+es que esto no es una fortaleza personal para mí,
+
+24
+00:01:08.970 --> 00:01:10.840
+que es la razón por la cual Jesse está aquí.
+
+25
+00:01:10.840 --> 00:01:13.330
+Queremos a alguien que sea especializado,
+
+26
+00:01:13.330 --> 00:01:15.200
+que ha estado haciendo esto durante años
+
+27
+00:01:15.200 --> 00:01:17.740
+y ha tenido bastante éxito
+
+28
+00:01:17.740 --> 00:01:21.440
+en la implementación de este tipo de técnicas.
+
+29
+00:01:21.440 --> 00:01:23.490
+<v ->Sí, de lo que realmente queremos hacer</v>
+
+30
+00:01:23.490 --> 00:01:24.597
+es darte los mejores fundamentos,
+
+31
+00:01:24.597 --> 00:01:29.410
+es darte los mejores fundamentos,
+
+32
+00:01:29.410 --> 00:01:31.510
+esa fruta de baja altura que realmente va a mejorar
+
+33
+00:01:31.510 --> 00:01:33.940
+tu habilidad para diseñar algo tu mismo.
+
+34
+00:01:33.940 --> 00:01:35.340
+Y no solo diseñarlo,
+
+35
+00:01:35.340 --> 00:01:38.170
+sino también entender los principios
+
+36
+00:01:38.170 --> 00:01:41.320
+para cualquier creatividad que te sea entregada,
+
+37
+00:01:41.320 --> 00:01:44.840
+para que puedas entender cómo implementar esos diseños
+
+38
+00:01:44.840 --> 00:01:47.000
+en una forma de píxel perfecto.
+
+39
+00:01:47.000 --> 00:01:49.390
+Así que realmente entender el proceso de pensamiento
+
+40
+00:01:49.390 --> 00:01:51.230
+que va detrás de las opciones de tipografía,
+
+41
+00:01:51.230 --> 00:01:54.150
+que va por detrás de los colores, la guía de estilo,
+
+42
+00:01:54.150 --> 00:01:55.820
+el equilibrio en la página.
+
+43
+00:01:55.820 --> 00:01:58.140
+El mejor entendimiento que tienes
+
+44
+00:01:58.140 --> 00:02:00.330
+en la comprensión de los principios de diseño
+
+45
+00:02:00.330 --> 00:02:02.040
+no solo te hará más capaz
+
+46
+00:02:02.040 --> 00:02:03.950
+de diseñar estas cosas por ti mismo,
+
+47
+00:02:03.950 --> 00:02:06.600
+también te hará mucho mejor desarrollador
+
+48
+00:02:06.600 --> 00:02:08.350
+porque vas a poder implementar
+
+49
+00:02:08.350 --> 00:02:11.350
+diseños que te son dados con mucha más confianza.
+
+50
+00:02:11.350 --> 00:02:14.420
+<v ->Absolutamente, y justo antes de que estuviéramos filmando,</v>
+
+51
+00:02:14.420 --> 00:02:16.890
+estábamos hablando de uno de los desarrolladores
+
+52
+00:02:16.890 --> 00:02:21.010
+que trabaja para Slate, que también es muy bueno en diseño
+
+53
+00:02:21.010 --> 00:02:25.100
+y estabas hablando de cómo, con ese conjunto de habilidades,
+
+54
+00:02:25.100 --> 00:02:29.820
+ha hecho que cada proyecto en el que ha trabajado
+
+55
+00:02:29.820 --> 00:02:31.320
+acabe de salir muy bien.
+
+56
+00:02:31.320 --> 00:02:34.560
+<v ->Uh, sí, él mostró un gran interés</v>
+
+57
+00:02:34.560 --> 00:02:38.130
+realmente en el ámbito del diseño.
+
+58
+00:02:38.130 --> 00:02:39.810
+Ya sabes, lo contratamos como desarrollador,
+
+59
+00:02:39.810 --> 00:02:43.070
+y realmente demostró que quería tomar
+
+60
+00:02:43.070 --> 00:02:47.280
+un enfoque proactivo para aprender dirección creativa
+
+61
+00:02:47.280 --> 00:02:49.880
+y él ha estado progresando, y ha sido increíble.
+
+62
+00:02:49.880 --> 00:02:51.950
+No solo ha estado pasando un buen rato,
+
+63
+00:02:51.950 --> 00:02:54.820
+realmente ha podido expandir su conjunto de habilidades,
+
+64
+00:02:54.820 --> 00:02:56.980
+pero los otros desarrolladores me han hablado
+
+65
+00:02:56.980 --> 00:02:59.860
+y en los proyectos que han trabajado con él,
+
+66
+00:02:59.860 --> 00:03:04.150
+han ido muy bien porque ha sido capaz de diseñar
+
+67
+00:03:04.990 --> 00:03:07.820
+y entender cómo se ve eso en el lado del desarrollo.
+
+68
+00:03:07.820 --> 00:03:09.960
+Y ya que él es el que también está implementando
+
+69
+00:03:09.960 --> 00:03:12.760
+gran parte del front end, comunicándose con el back end,
+
+70
+00:03:13.750 --> 00:03:17.640
+todo va tan bien porque él mismo lo hace,
+
+71
+00:03:17.640 --> 00:03:19.180
+no tenemos que construir un puente para nadie
+
+72
+00:03:19.180 --> 00:03:21.140
+porque ya está allí.
+
+73
+00:03:21.140 --> 00:03:25.560
+<v ->Absolutamente, eso es algo que por mi parte,</v>
+
+74
+00:03:25.560 --> 00:03:30.040
+una cosa que estoy tratando de mejorar en mí mismo
+
+75
+00:03:30.040 --> 00:03:34.390
+es esta habilidad, porque el flujo de trabajo que he tenido
+
+76
+00:03:34.390 --> 00:03:36.620
+durante la mayor parte de mi propia carrera
+
+77
+00:03:36.620 --> 00:03:39.580
+ha sido trabajando con alguien como tú
+
+78
+00:03:39.580 --> 00:03:44.260
+y siempre tendía que esperar hasta que tuviera las maquetas,
+
+79
+00:03:44.260 --> 00:03:46.460
+los diseños, todo eso,
+
+80
+00:03:46.460 --> 00:03:50.720
+y siempre pasó que estaba constantemente esperando
+
+81
+00:03:50.720 --> 00:03:52.500
+por estas cosas, por estas pantallas
+
+82
+00:03:52.500 --> 00:03:54.120
+y estos diseños para que se hicieran.
+
+83
+00:03:54.120 --> 00:03:58.120
+Y si yo personalmente pudiera ser mejor en este lado,
+
+84
+00:03:58.120 --> 00:04:00.670
+en el diseño y en esa parte del mismo,
+
+85
+00:04:00.670 --> 00:04:04.810
+entonces eso podría ayudar a hacerme un mejor desarrollador
+
+86
+00:04:04.810 --> 00:04:07.480
+porque yo, uno, sabría lo que está pasando
+
+87
+00:04:07.480 --> 00:04:10.810
+y los procesos de pensamiento al elegir ciertos estilos
+
+88
+00:04:10.810 --> 00:04:13.320
+y como diseñas diferentes componentes,
+
+89
+00:04:13.320 --> 00:04:15.200
+pero también, sería capaz de hacer eso
+
+90
+00:04:15.200 --> 00:04:17.480
+e ir directamente al desarrollo,
+
+91
+00:04:17.480 --> 00:04:19.670
+y hacer todo el proceso mucho más eficiente.
+
+92
+00:04:19.670 --> 00:04:20.503
+<v ->Si absolutamente.</v>
+
+93
+00:04:20.503 --> 00:04:22.870
+Sí, definitivamente es algo donde
+
+94
+00:04:22.870 --> 00:04:26.100
+no deberías tener miedo del diseño
+
+95
+00:04:26.100 --> 00:04:29.610
+y pensar como, oh no tengo ningún diseño en mis genes,
+
+96
+00:04:29.610 --> 00:04:32.670
+así que nunca podré ser un diseñador.
+
+97
+00:04:32.670 --> 00:04:35.350
+Hay muchos fundamentos muy básicos
+
+98
+00:04:35.350 --> 00:04:38.100
+que si los entiendes y realmente los practicas
+
+99
+00:04:38.100 --> 00:04:39.510
+y tomas un enfoque activo
+
+100
+00:04:39.510 --> 00:04:41.930
+para aprender a implementar mejor
+
+101
+00:04:41.930 --> 00:04:44.120
+la tipografía y el color y el espacio en blanco
+
+102
+00:04:44.120 --> 00:04:47.600
+van a hacer, te van a poner mucho más adelante
+
+103
+00:04:47.600 --> 00:04:48.913
+en tu capacidad de diseño.
+
+104
+00:04:50.260 --> 00:04:52.930
+Aprender esos fundamentos te da la base
+
+105
+00:04:52.930 --> 00:04:55.650
+en la que realmente puedes empezar a mejorar activamente
+
+106
+00:04:55.650 --> 00:04:58.550
+en lugar de girar en círculos
+
+107
+00:04:58.550 --> 00:05:00.720
+y diseñar el mismo tipo de cosas.
+
+108
+00:05:00.720 --> 00:05:02.090
+Y así, lo que vamos a hacer
+
+109
+00:05:02.090 --> 00:05:03.750
+es vamos a poner esa base
+
+110
+00:05:03.750 --> 00:05:07.730
+de lo que deberías estar pensando, por qué es importante.
+
+111
+00:05:07.730 --> 00:05:10.680
+Hay algunas cosas que quizás crees
+
+112
+00:05:10.680 --> 00:05:12.760
+que no tienen tanto peso
+
+113
+00:05:12.760 --> 00:05:15.010
+en el aspecto,
+
+114
+00:05:15.010 --> 00:05:16.790
+y dices: no sé por qué
+
+115
+00:05:16.790 --> 00:05:19.030
+esto no se ve muy bien, pero simplemente no se ve bien.
+
+116
+00:05:19.030 --> 00:05:21.670
+Así que queremos darte un poco de información
+
+117
+00:05:21.670 --> 00:05:23.740
+tal vez de por qué no se ve muy bien
+
+118
+00:05:23.740 --> 00:05:25.300
+y lo que podrías hacer para que se vea mejor.
+
+119
+00:05:25.300 --> 00:05:28.230
+<v ->Absolutamente, este es un curso que me entusiasma mucho.</v>
+
+120
+00:05:28.230 --> 00:05:31.300
+Espero que obtengas tanto de él como yo.
+
+121
+00:05:31.300 --> 00:05:33.903
+Y te veremos en el próximo conjunto de guías.
+

@@ -1,0 +1,690 @@
+WEBVTT
+
+1
+00:00:00.900 --> 00:00:01.780
+<v Instructor>En la última guía,</v>
+
+2
+00:00:01.780 --> 00:00:04.810
+creamos nuestro contenedor de cuadrícula inicial,
+
+3
+00:00:04.810 --> 00:00:07.690
+pero aun tenemos trabajo por hacer,
+
+4
+00:00:07.690 --> 00:00:11.130
+así que comencemos con eso en esta guía.
+
+5
+00:00:11.130 --> 00:00:14.160
+En primer lugar, debemos tomar nuestro contenedor
+
+6
+00:00:14.160 --> 00:00:18.770
+y moverlo dentro de nuestro contenedor de texto,
+
+7
+00:00:18.770 --> 00:00:22.950
+o mejor dicho, nuestro contenedor de contenido principal.
+
+8
+00:00:22.950 --> 00:00:25.860
+Entonces, si regresa aquí, puedes notar
+
+9
+00:00:25.860 --> 00:00:29.550
+que lo que contiene y envuelve todo el contenido,
+
+10
+00:00:29.550 --> 00:00:33.350
+o debería estarlo, es este contenedor de contenido que tiene
+
+11
+00:00:33.350 --> 00:00:35.325
+un ancho de 660 píxeles.
+
+12
+00:00:35.325 --> 00:00:38.970
+Nuestro contenedor de rejilla se hizo fuera de eso,
+
+13
+00:00:38.970 --> 00:00:42.960
+así que lo que debemos hacer es tomar todo lo que está
+
+14
+00:00:42.960 --> 00:00:45.530
+dentro de esta clase de detalles de archivo aquí,
+
+15
+00:00:45.530 --> 00:00:50.179
+y simplemente necesitamos moverlo dentro de ese contenedor
+
+16
+00:00:50.179 --> 00:00:53.920
+y luego puedes dejar sangría si tienes Prettify
+
+17
+00:00:53.920 --> 00:00:57.510
+o algo así, y debería suceder automáticamente.
+
+18
+00:00:57.510 --> 00:00:59.670
+Y si hago eso, y pulso guardar,
+
+19
+00:00:59.670 --> 00:01:02.760
+puedes ver que ya se ve mucho mejor.
+
+20
+00:01:02.760 --> 00:01:07.262
+Así que ahora que tenemos eso en su lugar, también podemos
+
+21
+00:01:07.262 --> 00:01:09.780
+configurar algunos de los otros estilos que necesitamos.
+
+22
+00:01:09.780 --> 00:01:13.330
+Por lo tanto, volviendo a lo que estamos construyendo,
+
+23
+00:01:13.330 --> 00:01:16.510
+puede notar que tenemos diferentes colores
+
+24
+00:01:16.510 --> 00:01:19.200
+aquí para este contenido,
+
+25
+00:01:19.200 --> 00:01:21.940
+y luego se mueve a la derecha,
+
+26
+00:01:21.940 --> 00:01:24.590
+por lo que hay varios estilos diferentes
+
+27
+00:01:24.590 --> 00:01:27.570
+que necesitamos implementar para para limpiar esto.
+
+28
+00:01:27.570 --> 00:01:31.159
+Ahora que hemos arreglado nuestro diseño,
+
+29
+00:01:31.159 --> 00:01:34.670
+ahora subamos aquí y comencemos a desarrollar
+
+30
+00:01:34.670 --> 00:01:38.310
+esos detalles de estilo adicionales.
+
+31
+00:01:38.310 --> 00:01:41.630
+Entonces, y... déjame asegurarme, estoy bastante seguro, sí.
+
+32
+00:01:41.630 --> 00:01:43.830
+Así que tenemos detalles de estilo, y luego tenemos una
+
+33
+00:01:43.830 --> 00:01:46.319
+clase llamada texto de detalles de estilo aquí.
+
+34
+00:01:46.319 --> 00:01:50.360
+Así que primero ataquemos nuestros detalles de estilo.
+
+35
+00:01:50.360 --> 00:01:53.390
+Creamos nuestro contenedor de cuadrícula aquí,
+
+36
+00:01:53.390 --> 00:01:55.780
+pero tenemos otras cosas que deben agregarse,
+
+37
+00:01:55.780 --> 00:01:58.433
+así que voy a agregar un margen superior,
+
+38
+00:01:59.620 --> 00:02:04.190
+y para este margen superior, voy a ir con 75 píxeles,
+
+39
+00:02:04.190 --> 00:02:07.330
+también voy a hacer Lo mismo para el fondo.
+
+40
+00:02:07.330 --> 00:02:11.460
+No estoy seguro de si te diste cuenta,
+
+41
+00:02:11.460 --> 00:02:14.590
+cuando tuvimos nuestra aplicación de producción,
+
+42
+00:02:14.590 --> 00:02:16.831
+hay una gran cantidad de espacio realmente agradable aquí
+
+43
+00:02:16.831 --> 00:02:19.208
+arriba y debajo de ese contenedor.
+
+44
+00:02:19.208 --> 00:02:22.830
+Así que voy a agregarlos y presionar guardar,
+
+45
+00:02:22.830 --> 00:02:24.350
+y pueden ver que eso nos da
+
+46
+00:02:24.350 --> 00:02:27.080
+mucho mejor espacio allí.
+
+47
+00:02:27.080 --> 00:02:29.770
+Ahora ya tenemos nuestra cuadrícula,
+
+48
+00:02:29.770 --> 00:02:31.990
+y luego tenemos nuestra columna de plantilla de cuadrícula,
+
+49
+00:02:31.990 --> 00:02:34.350
+por lo que todo es bueno en ese lado.
+
+50
+00:02:34.350 --> 00:02:38.585
+Ahora, también tendremos otro elemento de cuadrícula CS
+
+51
+00:02:38.585 --> 00:02:42.160
+aquí, y eso se llamará brecha de cuadrícula.
+
+52
+00:02:42.160 --> 00:02:44.770
+Entonces, la brecha de la cuadrícula, cuando tienes
+
+53
+00:02:44.770 --> 00:02:48.240
+columnas, y si visualizas dos columnas aquí,
+
+54
+00:02:48.240 --> 00:02:51.010
+hay una brecha que las separa,
+
+55
+00:02:51.010 --> 00:02:53.930
+y por eso queremos tener un poco de eso aquí.
+
+56
+00:02:53.930 --> 00:02:58.140
+Así que voy a decir que quiero que la brecha sea de 20
+
+57
+00:02:58.140 --> 00:03:00.000
+píxeles, en este caso, y podemos jugar con él más tarde
+
+58
+00:03:00.000 --> 00:03:01.470
+si necesitamos cambiarlo.
+
+59
+00:03:01.470 --> 00:03:04.480
+Y no hay un gran efecto notable aquí,
+
+60
+00:03:04.480 --> 00:03:07.550
+pero tan pronto como movamos todo este contenido
+
+61
+00:03:07.550 --> 00:03:09.240
+y lo alineamos a la derecha,
+
+62
+00:03:09.240 --> 00:03:11.320
+es donde notarás
+
+63
+00:03:11.320 --> 00:03:12.840
+mucha más diferencia allí.
+
+64
+00:03:12.840 --> 00:03:16.440
+Así que eso es todo lo que necesitamos agregar a los
+
+65
+00:03:16.440 --> 00:03:21.440
+detalles de estilo, así que ahora vamos a trabajar con el
+
+66
+00:03:22.540 --> 00:03:24.620
+texto de detalles de estilo, y aquí será bastante básico.
+
+67
+00:03:24.620 --> 00:03:29.620
+Simplemente quiero alinear todo el texto a la derecha,
+
+68
+00:03:30.030 --> 00:03:33.160
+presionando guardar ahora, y puedes ver que esto
+
+69
+00:03:33.160 --> 00:03:36.820
+se ve mucho mejor, y ahora tenemos nuestro encabezado,
+
+70
+00:03:36.820 --> 00:03:38.350
+tenemos todos estos elementos,
+
+71
+00:03:38.350 --> 00:03:43.170
+y luego está floreciendo justo al lado al logo.
+
+72
+00:03:43.170 --> 00:03:48.170
+Ahora, si inspecciono esto aquí, puedes ver que si estás
+
+73
+00:03:48.220 --> 00:03:52.320
+utilizando una herramienta como las herramientas de
+
+74
+00:03:52.320 --> 00:03:55.440
+desarrollo del navegador en Chrome o en Firefox,
+
+75
+00:03:55.440 --> 00:03:57.580
+cada vez que uses la cuadrícula, notarás algo muy bueno
+
+76
+00:03:57.580 --> 00:04:02.210
+que han agregado recientemente, y notas esas pequeñas líneas
+
+77
+00:04:02.210 --> 00:04:03.790
+púrpuras, cada vez que pasas el ratón sobre ellas.
+
+78
+00:04:03.790 --> 00:04:06.000
+Como puede ver, esas líneas de puntos púrpuras,
+
+79
+00:04:06.000 --> 00:04:08.442
+esas representan las columnas de la cuadrícula,
+
+80
+00:04:08.442 --> 00:04:12.730
+y como la comunidad de desarrollo de aplicaciones
+
+81
+00:04:12.730 --> 00:04:15.050
+para usuario realmente ha estado adoptando herramientas
+
+82
+00:04:15.050 --> 00:04:17.360
+como Flexbox y Grid últimamente,
+
+83
+00:04:17.360 --> 00:04:20.760
+están agregando esto a las herramientas de desarrollo
+
+84
+00:04:20.760 --> 00:04:24.870
+del navegador, por lo que tienes una visión muy clara de
+
+85
+00:04:24.870 --> 00:04:27.286
+dónde están las columnas y cómo hemos configurado
+
+86
+00:04:27.286 --> 00:04:28.803
+nuestro contenedor.
+
+87
+00:04:28.803 --> 00:04:31.230
+Observa que el espacio en blanco justo en el medio,
+
+88
+00:04:31.230 --> 00:04:35.220
+donde se encuentra entre el nombre del color del logotipo
+
+89
+00:04:35.220 --> 00:04:37.540
+principal y luego la imagen real,
+
+90
+00:04:37.540 --> 00:04:40.080
+ese espacio en blanco entre las líneas púrpuras,
+
+91
+00:04:40.080 --> 00:04:41.510
+es nuestra brecha.
+
+92
+00:04:41.510 --> 00:04:45.080
+Entonces, cuando creamos esa brecha en la cuadrícula, eso es
+
+93
+00:04:45.080 --> 00:04:48.870
+lo que teníamos, y podemos probar esto, porque si vengo aquí
+
+94
+00:04:48.870 --> 00:04:52.090
+y lo quito, pueden ver que algo cambió,
+
+95
+00:04:52.090 --> 00:04:54.960
+ambos se acercaron más, pero también,
+
+96
+00:04:54.960 --> 00:04:57.240
+si vienes y pasas de nuevo,
+
+97
+00:04:57.240 --> 00:04:59.980
+ahora puedes ver que no hay espacio allí.
+
+98
+00:04:59.980 --> 00:05:02.940
+Así que esa es una forma visual muy agradable de poder ver
+
+99
+00:05:02.940 --> 00:05:07.920
+lo que hace la brecha de la cuadrícula, así que se ve muy
+
+100
+00:05:07.920 --> 00:05:10.710
+bien, estoy feliz con la forma en que se ve, así que ahora
+
+101
+00:05:10.710 --> 00:05:14.794
+lo que tenemos que hacer es cambiar el color de este
+
+102
+00:05:14.794 --> 00:05:19.210
+contenido, porque como puedes ver, tenemos un color mucho
+
+103
+00:05:19.210 --> 00:05:22.540
+más claro aquí, y si lo inspecciono, esto me dirá el color
+
+104
+00:05:22.540 --> 00:05:25.997
+real que queremos, es este 80-80-80, y
+
+105
+00:05:25.997 --> 00:05:29.300
+entonces el peso de la fuente aquí es normal, así que
+
+106
+00:05:29.300 --> 00:05:34.300
+lo que Lo que quiero hacer es agregar esos estilos aquí.
+
+107
+00:05:34.610 --> 00:05:38.563
+Así que déjame pegar esto, solo lo tengo,
+
+108
+00:05:39.930 --> 00:05:42.520
+y ahora voy
+
+109
+00:05:42.520 --> 00:05:44.900
+a agregar ese color.
+
+110
+00:05:44.900 --> 00:05:48.760
+Así que diré color, queremos este 80-80-80,
+
+111
+00:05:48.760 --> 00:05:52.963
+y luego quiero que el peso de la fuente sea normal.
+
+112
+00:05:54.240 --> 00:05:57.930
+Ahora si presiono guardar y vuelvo,
+
+113
+00:05:57.930 --> 00:06:01.100
+puedes ver que se ve un poco mejor,
+
+114
+00:06:01.100 --> 00:06:05.920
+pero observa que también cambiamos el color del encabezado,
+
+115
+00:06:05.920 --> 00:06:07.940
+y eso no es realmente lo que estamos buscando,
+
+116
+00:06:07.940 --> 00:06:11.230
+y es porque en realidad olvidé algo.
+
+117
+00:06:11.230 --> 00:06:14.560
+Quiero... aquí, no quiero cambiar todo el color,
+
+118
+00:06:14.560 --> 00:06:17.410
+solo quiero cambiar los colores div.
+
+119
+00:06:17.410 --> 00:06:19.830
+Así que si presiono guardar ahora, y ahí vamos,
+
+120
+00:06:19.830 --> 00:06:22.720
+eso se ve mucho mejor allí.
+
+121
+00:06:22.720 --> 00:06:23.960
+Y por muy bueno que esto luzca,
+
+122
+00:06:23.960 --> 00:06:25.640
+aun tenemos algunas cosas más.
+
+123
+00:06:25.640 --> 00:06:28.060
+Volvamos atrás y miremos la versión final.
+
+124
+00:06:28.060 --> 00:06:30.950
+Aquí puedes ver que tenemos más espacio
+
+125
+00:06:30.950 --> 00:06:35.950
+entre el encabezado y el contenido que se encuentra debajo
+
+126
+00:06:36.060 --> 00:06:38.810
+o arriba, y eso es lo que voy a agregar,
+
+127
+00:06:38.810 --> 00:06:42.720
+es que voy a seleccionar este elemento aquí y voy a agregar
+
+128
+00:06:42.720 --> 00:06:45.880
+Un margen superior para darnos un buen espacio.
+
+129
+00:06:45.880 --> 00:06:49.830
+Así que bajemos aquí, lo seleccionaré,
+
+130
+00:06:49.830 --> 00:06:52.870
+pero esta vez recordaré venir
+
+131
+00:06:52.870 --> 00:06:57.629
+y agregar el selector completo, así que en lugar de un div,
+
+132
+00:06:57.629 --> 00:07:00.670
+lo que busco es el H3,
+
+133
+00:07:00.670 --> 00:07:03.210
+y luego Solo diré margen superior,
+
+134
+00:07:03.210 --> 00:07:06.560
+y luego podemos ir con algo bastante simple
+
+135
+00:07:06.560 --> 00:07:07.983
+como 30 píxeles.
+
+136
+00:07:09.020 --> 00:07:11.840
+Así que ahora si presiono guardar, puedes ver,
+
+137
+00:07:11.840 --> 00:07:12.920
+oh, veamos, sí,
+
+138
+00:07:12.920 --> 00:07:15.270
+eso nos ayudó a mejorar un poco, y
+
+139
+00:07:15.270 --> 00:07:18.486
+depende de ti si quieres cambiar eso
+
+140
+00:07:18.486 --> 00:07:21.360
+y si quieres algo más que eso.
+
+141
+00:07:21.360 --> 00:07:23.350
+Creo que se ve bastante bien,
+
+142
+00:07:23.350 --> 00:07:26.200
+y de hecho, si uso las herramientas del navegador aquí,
+
+143
+00:07:26.200 --> 00:07:30.520
+puedes seleccionarlo y luego cambiarlo para que sea
+
+144
+00:07:30.520 --> 00:07:32.550
+lo que sea que estés buscando.
+
+145
+00:07:32.550 --> 00:07:36.060
+Así que tengo mi logotipo principal, nota que tiene,
+
+146
+00:07:36.060 --> 00:07:38.610
+de manera predeterminada, un margen en la parte inferior,
+
+147
+00:07:38.610 --> 00:07:40.740
+es por eso que tenemos este espacio aquí,
+
+148
+00:07:40.740 --> 00:07:42.890
+y luego agregamos un margen en la parte superior,
+
+149
+00:07:42.890 --> 00:07:45.130
+por lo que si desea jugar con él,
+
+150
+00:07:45.130 --> 00:07:49.590
+podría decir margen inferior e ir con cero píxeles,
+
+151
+00:07:49.590 --> 00:07:51.720
+y eso los acerca más,
+
+152
+00:07:51.720 --> 00:07:55.190
+creo que me gusta algo así un poco más,
+
+153
+00:07:55.190 --> 00:07:58.410
+creo que se ve bien, y para el margen superior,
+
+154
+00:07:58.410 --> 00:08:00.523
+incluso puedes jugar con esto un poco,
+
+155
+00:08:01.570 --> 00:08:04.140
+si quieres que sean 40, entonces creo que
+
+156
+00:08:04.140 --> 00:08:06.010
+podría ser un poco mejor.
+
+157
+00:08:06.010 --> 00:08:09.000
+Así que tengo 40 y luego 10,
+
+158
+00:08:09.000 --> 00:08:10.680
+y creo que se ve bien,
+
+159
+00:08:10.680 --> 00:08:13.743
+así que aquí, volvamos y cambiemos esto.
+
+160
+00:08:15.750 --> 00:08:19.120
+Así que voy a ir con 40 para el margen superior,
+
+161
+00:08:19.120 --> 00:08:23.253
+y luego el margen inferior solo será 10.
+
+162
+00:08:25.010 --> 00:08:28.457
+Si guardo eso, ahora puedes ver que tenemos un componente
+
+163
+00:08:28.457 --> 00:08:30.760
+mucho mejor aquí
+
+164
+00:08:30.760 --> 00:08:34.440
+y podemos usar CSS Cuadrícula, espacio de la cuadrícula
+
+165
+00:08:34.440 --> 00:08:37.250
+y las columnas para construir
+
+166
+00:08:37.250 --> 00:08:39.410
+todo este componente.
+
+167
+00:08:39.410 --> 00:08:41.750
+Ahora, en la próxima guía, veremos cómo podemos avanzar
+
+168
+00:08:41.750 --> 00:08:43.840
+por la página,
+
+169
+00:08:43.840 --> 00:08:47.370
+y aquí construiremos otro contenedor de cuadrícula,
+
+170
+00:08:47.370 --> 00:08:50.130
+pero este será uno con tres columnas,
+
+171
+00:08:50.130 --> 00:08:52.750
+y serán de diferentes tamaños,
+
+172
+00:08:52.750 --> 00:08:53.850
+así que nos vemos luego.
+

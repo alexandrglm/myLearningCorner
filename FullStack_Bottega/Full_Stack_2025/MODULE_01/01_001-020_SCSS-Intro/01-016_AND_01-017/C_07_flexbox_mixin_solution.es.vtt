@@ -1,0 +1,986 @@
+WEBVTT
+
+1
+00:00:00.870 --> 00:00:03.350
+<v Instructor>Esperemos le haya ido bien con ese proyecto.</v>
+
+2
+00:00:03.350 --> 00:00:06.950
+Repasemos cuál fue mi solución y también
+
+3
+00:00:06.950 --> 00:00:10.330
+hablemos acerca del proceso que usé
+
+4
+00:00:10.330 --> 00:00:12.180
+cuando estaba construyéndolo.
+
+5
+00:00:12.180 --> 00:00:15.270
+Lo primero que hice fue
+
+6
+00:00:15.270 --> 00:00:18.210
+crear una nueva mezcla.
+
+7
+00:00:18.210 --> 00:00:22.620
+Lo llamé mixin flex config
+
+8
+00:00:22.620 --> 00:00:25.070
+y luego pasaré algunos argumentos
+
+9
+00:00:25.070 --> 00:00:27.270
+pero no me preocuparé por ellos ahora.
+
+10
+00:00:27.270 --> 00:00:30.070
+Solo haré algo de espacio para eso, de este modo.
+
+11
+00:00:30.070 --> 00:00:33.650
+Y luego entré y agregué algunos comentarios,
+
+12
+00:00:33.650 --> 00:00:36.870
+para poder llevar registro de todo.
+
+13
+00:00:36.870 --> 00:00:41.140
+Supe que necesitaba visualización o lo configuraría
+
+14
+00:00:41.140 --> 00:00:44.043
+visualización flexible.
+
+15
+00:00:45.360 --> 00:00:48.610
+Sé que eso tiene que estar allí
+
+16
+00:00:48.610 --> 00:00:50.720
+y déjenme bajar.
+
+17
+00:00:50.720 --> 00:00:54.413
+Y haré algunos otros comentarios.
+
+18
+00:00:56.260 --> 00:01:00.110
+Esta identificación tiene unas palabras clave diferentes
+
+19
+00:01:00.110 --> 00:01:02.450
+o atajos de teclado que solía usar.
+
+20
+00:01:02.450 --> 00:01:07.450
+Visualizar flex y luego sé que necesito justificar contenido
+
+21
+00:01:08.560 --> 00:01:13.200
+Y luego de justificar contenido, sé que necesito flex.
+
+22
+00:01:14.920 --> 00:01:19.283
+Luego de eso, necesito dirección flex.
+
+23
+00:01:22.090 --> 00:01:26.580
+Y por último, sé que necesitaba alinear elementos.
+
+24
+00:01:26.580 --> 00:01:31.210
+Con esto en lugar, ahora puedo organizar mi código.
+
+25
+00:01:31.210 --> 00:01:33.800
+Lo que sí sé, si mira
+
+26
+00:01:33.800 --> 00:01:37.650
+todo este código y no necesita ningún tipo de habilidad
+
+27
+00:01:37.650 --> 00:01:40.543
+flex para poder saber esto.
+
+28
+00:01:40.543 --> 00:01:42.630
+No es un pre-requisito para nada.
+
+29
+00:01:42.630 --> 00:01:46.300
+Si mira cada elemento, cada vez que llamamos
+
+30
+00:01:46.300 --> 00:01:49.810
+visualizar flex o cualquiera de los cinco elementos
+
+31
+00:01:49.810 --> 00:01:53.030
+que necesitamos contener, puede que note
+
+32
+00:01:53.030 --> 00:01:55.380
+que visualizar flex está en todos ellos.
+
+33
+00:01:55.380 --> 00:01:58.790
+Lo que eso me dice es que no necesitamos tomar
+
+34
+00:01:58.790 --> 00:02:01.030
+visualizar flex como una opción.
+
+35
+00:02:01.030 --> 00:02:02.930
+Siempre es necesario.
+
+36
+00:02:02.930 --> 00:02:05.290
+Lo bueno acerca de eso, eso significa
+
+37
+00:02:05.290 --> 00:02:08.350
+que nuestro primero es hecho por nosotros.
+
+38
+00:02:08.350 --> 00:02:12.210
+Puedo solo decir visualizar flex y eso está hecho.
+
+39
+00:02:12.210 --> 00:02:15.930
+Cada vez que llamamos esta configuración flex
+
+40
+00:02:15.930 --> 00:02:18.410
+entonces estará configurado.
+
+41
+00:02:18.410 --> 00:02:20.420
+Lo otro que sé que necesito
+
+42
+00:02:20.420 --> 00:02:23.820
+es cada uno de estos otros es optativo.
+
+43
+00:02:23.820 --> 00:02:28.820
+Configuraré esto como variables diferentes.
+
+44
+00:02:28.940 --> 00:02:33.740
+Aquí serán su propio conjunto de argumentos.
+
+45
+00:02:33.740 --> 00:02:38.500
+Justificar contenido, entonces será dollar flex.
+
+46
+00:02:38.500 --> 00:02:42.070
+Entonces tendremos una dirección dollar flex
+
+47
+00:02:42.070 --> 00:02:46.880
+y por último tendremos elementos alineados dólar.
+
+48
+00:02:46.880 --> 00:02:51.430
+Como revisé, recuerde que estos son nuestros argumentos.
+
+49
+00:02:51.430 --> 00:02:54.960
+Debido al modo en que estos funcionan
+
+50
+00:02:54.960 --> 00:02:57.890
+es muy importante que hagamos uno que sepamos
+
+51
+00:02:57.890 --> 00:03:01.160
+algo aquí, debería decir hacer la vida
+
+52
+00:03:01.160 --> 00:03:03.260
+mucho más sencilla para nosotros más tarde.
+
+53
+00:03:03.260 --> 00:03:05.930
+Si dejo esto de este modo,
+
+54
+00:03:05.930 --> 00:03:09.290
+entonces tendré que siempre tener memorizado este orden.
+
+55
+00:03:09.290 --> 00:03:12.120
+Y yo sé que no soy muy bueno
+
+56
+00:03:12.120 --> 00:03:13.410
+memorizando este tipo de cosas,
+
+57
+00:03:13.410 --> 00:03:15.120
+así que no haré eso.
+
+58
+00:03:15.120 --> 00:03:17.880
+Lo que usaré son los llamados argumentos nombrados.
+
+59
+00:03:17.880 --> 00:03:19.220
+Técnicamente, podría tener todo
+
+60
+00:03:19.220 --> 00:03:21.140
+funcionando sin argumentos nombrados porque no son
+
+61
+00:03:21.140 --> 00:03:24.310
+algo por lo que ya hayamos pasado,
+
+62
+00:03:24.310 --> 00:03:27.100
+pero verán que de hecho es exactamente la misma
+
+63
+00:03:27.100 --> 00:03:29.510
+sintaxis que usar por defecto.
+
+64
+00:03:29.510 --> 00:03:32.890
+El modo en que esto funcionará es que configuraré
+
+65
+00:03:32.890 --> 00:03:36.373
+cada uno de estos por defecto para ser falso.
+
+66
+00:03:37.750 --> 00:03:42.490
+Por lo que cada uno de estos será falso por defecto.
+
+67
+00:03:42.490 --> 00:03:46.360
+Lo que eso me permitirá hacer es que ahora cada vez que
+
+68
+00:03:46.360 --> 00:03:49.570
+yo revise, y cada vez que configure mis condicionales,
+
+69
+00:03:49.570 --> 00:03:52.020
+podré revisar para ver
+
+70
+00:03:52.020 --> 00:03:55.270
+si el elemento es verdadero o falso, o debería
+
+71
+00:03:55.270 --> 00:03:56.630
+decir si es falso.
+
+72
+00:03:56.630 --> 00:04:00.458
+Si no es falso, eso me dice que tiene algún tipo
+
+73
+00:04:00.458 --> 00:04:04.960
+de valor, y necesito configurar ese valor.
+
+74
+00:04:04.960 --> 00:04:09.440
+Si es falso, si lo está tomando por defecto,
+
+75
+00:04:09.440 --> 00:04:12.410
+eso significa que cuando llame eso, significa
+
+76
+00:04:12.410 --> 00:04:14.850
+que nunca antes fue configurado.
+
+77
+00:04:14.850 --> 00:04:17.480
+Y si eso es claro como el lodo, no se preocupe.
+
+78
+00:04:17.480 --> 00:04:19.800
+Repasaremos eso en detalle.
+
+79
+00:04:19.800 --> 00:04:23.210
+Configuremos algunos condicionales básicos.
+
+80
+00:04:23.210 --> 00:04:25.680
+Configuraré mi primero.
+
+81
+00:04:25.680 --> 00:04:30.680
+Dirá si justifica contenido, no es igual a falso.
+
+82
+00:04:35.070 --> 00:04:39.530
+Así que en otras palabras, si está configurado.
+
+83
+00:04:39.530 --> 00:04:42.120
+Por lo que por defecto, será falso.
+
+84
+00:04:42.120 --> 00:04:44.770
+Cuando llame esto, como llamaremos
+
+85
+00:04:44.770 --> 00:04:48.660
+a este primero, cuando llame configuración flex,
+
+86
+00:04:48.660 --> 00:04:51.120
+justificar contenido, flex, dirección flex,
+
+87
+00:04:51.120 --> 00:04:52.940
+todo estos serán falsos porque no
+
+88
+00:04:52.940 --> 00:04:55.350
+pasaré cualquier valor de esos.
+
+89
+00:04:55.350 --> 00:04:59.390
+Diré si justificar contenido no es falso
+
+90
+00:04:59.390 --> 00:05:04.000
+entonces quiero configurar valor de contenido y eso es todo.
+
+91
+00:05:04.000 --> 00:05:07.703
+Diré justificar contenido.
+
+92
+00:05:08.640 --> 00:05:12.010
+Y aquí lo que diremos es justificar contenido y solo
+
+93
+00:05:12.010 --> 00:05:17.010
+configurarlo, justo como estamos haciendo aquí.
+
+94
+00:05:17.220 --> 00:05:20.070
+Y esto obviamente tomará el valor de
+
+95
+00:05:20.070 --> 00:05:23.590
+la variable, y canalizará esto justo aquí.
+
+96
+00:05:23.590 --> 00:05:25.600
+Configurará este valor.
+
+97
+00:05:25.600 --> 00:05:28.570
+Ahora con eso en lugar, lo que puedo hacer es
+
+98
+00:05:28.570 --> 00:05:32.850
+ir y poblar cada uno de los otros.
+
+99
+00:05:32.850 --> 00:05:34.880
+Por lo que ese segundo será flex,
+
+100
+00:05:34.880 --> 00:05:37.260
+ésta será dirección flex,
+
+101
+00:05:37.260 --> 00:05:40.950
+y luego ésta última será de alinear elementos.
+
+102
+00:05:40.950 --> 00:05:43.360
+Me desharé de mis comentarios ya que ahora
+
+103
+00:05:43.360 --> 00:05:46.110
+tengo estos aquí como mis argumentos.
+
+104
+00:05:46.110 --> 00:05:48.000
+Tenemos contenido justificado.
+
+105
+00:05:48.000 --> 00:05:52.723
+Tomemos cuidado de flex, ya que ese es nuestro segundo.
+
+106
+00:05:54.250 --> 00:05:56.713
+Cuidemos la dirección flex.
+
+107
+00:05:58.150 --> 00:05:59.963
+Ésta será la tercera.
+
+108
+00:06:02.470 --> 00:06:07.470
+Y por último, tomaremos cuenta de alineamiento de elementos.
+
+109
+00:06:07.810 --> 00:06:12.090
+Si lo está, y casi cometo un error, tenemos que
+
+110
+00:06:12.090 --> 00:06:15.363
+asegurarnos que también configuramos el valor real.
+
+111
+00:06:17.920 --> 00:06:21.053
+Éste será dirección flex.
+
+112
+00:06:26.250 --> 00:06:28.493
+Y por último éste será flex.
+
+113
+00:06:32.090 --> 00:06:35.440
+Créanlo o no, eso es todo.
+
+114
+00:06:35.440 --> 00:06:40.440
+Ahora tenemos un flex box mixin completo.
+
+115
+00:06:40.680 --> 00:06:43.030
+Y ahora podemos entrar a la parte divertida,
+
+116
+00:06:43.030 --> 00:06:45.420
+que es limpiar todo nuestro código.
+
+117
+00:06:45.420 --> 00:06:48.060
+Lo primero que haremos es
+
+118
+00:06:48.060 --> 00:06:53.060
+decir importar, o incluir,
+
+119
+00:06:54.510 --> 00:06:56.330
+recibo mucho esas mezclas.
+
+120
+00:06:56.330 --> 00:07:00.830
+Diré incluir flex config justo aquí.
+
+121
+00:07:02.190 --> 00:07:04.510
+Y como pueden ver, el error se fue.
+
+122
+00:07:04.510 --> 00:07:05.690
+Miren esto.
+
+123
+00:07:05.690 --> 00:07:07.650
+Todo aún es lo mismo.
+
+124
+00:07:07.650 --> 00:07:08.483
+Eso es bueno.
+
+125
+00:07:08.483 --> 00:07:10.630
+Toda la meta de este proyecto es que todo
+
+126
+00:07:10.630 --> 00:07:12.420
+sea lo mismo cuando termine con eso.
+
+127
+00:07:12.420 --> 00:07:14.220
+Así que eso es un buen signo.
+
+128
+00:07:14.220 --> 00:07:16.060
+Esto es lo más básico,
+
+129
+00:07:16.060 --> 00:07:18.550
+porque recuerden que cuando llamemos esto,
+
+130
+00:07:18.550 --> 00:07:20.500
+todos estos elementos serán falsos,
+
+131
+00:07:20.500 --> 00:07:22.400
+porque no configuramos ningún valor.
+
+132
+00:07:22.400 --> 00:07:24.690
+No estamos pasando ningún valor.
+
+133
+00:07:24.690 --> 00:07:26.850
+Cada uno de éstos, cuando se revise para ver,
+
+134
+00:07:26.850 --> 00:07:30.140
+dirá bien, ¿es falso el contenido justificado?
+
+135
+00:07:30.140 --> 00:07:30.973
+No.
+
+136
+00:07:30.973 --> 00:07:34.150
+Es falso, así que no tenemos que preocuparnos
+
+137
+00:07:34.150 --> 00:07:34.983
+por esto.
+
+138
+00:07:34.983 --> 00:07:36.760
+Luego revisará para flex, luego dirección flex.
+
+139
+00:07:36.760 --> 00:07:38.890
+Verá que todos ellos aún son falsos
+
+140
+00:07:38.890 --> 00:07:41.920
+y debido a eso, todo lo que hará será configurar
+
+141
+00:07:41.920 --> 00:07:44.830
+la visualización del valor flex.
+
+142
+00:07:44.830 --> 00:07:47.100
+Entonces ese es el primero.
+
+143
+00:07:47.100 --> 00:07:48.660
+Estamos llegando allí.
+
+144
+00:07:48.660 --> 00:07:52.130
+Pondré esto justo en la cima de nuestro elemento.
+
+145
+00:07:52.130 --> 00:07:55.130
+Aquí tenemos flex, visualiación flex,
+
+146
+00:07:55.130 --> 00:07:57.700
+y sabemos que podemos deshacernos de esta parte,
+
+147
+00:07:57.700 --> 00:07:59.790
+contenido justificado y eso es todo.
+
+148
+00:07:59.790 --> 00:08:02.150
+Aquí tenemos esos dos.
+
+149
+00:08:02.150 --> 00:08:04.990
+El modo en que se puede configurar estos,
+
+150
+00:08:04.990 --> 00:08:08.750
+el modo en que puede usar argumentos nombrados,
+
+151
+00:08:08.750 --> 00:08:13.683
+es que puedo decir flex, de este modo,
+
+152
+00:08:15.020 --> 00:08:18.033
+y luego decir justificar contenido.
+
+153
+00:08:20.710 --> 00:08:22.360
+Es lo mismo.
+
+154
+00:08:22.360 --> 00:08:24.890
+Ahora puedo deshacerme de todo esto.
+
+155
+00:08:24.890 --> 00:08:28.050
+Pueden ver que todo aún está funcionando.
+
+156
+00:08:28.050 --> 00:08:29.880
+Todos los botones están allí, las imágenes
+
+157
+00:08:29.880 --> 00:08:32.230
+están alineadas, el elemento aún funciona.
+
+158
+00:08:32.230 --> 00:08:36.620
+Si fuéramos a borrar esos elementos, puede ver
+
+159
+00:08:36.620 --> 00:08:38.400
+que eso ya no funciona.
+
+160
+00:08:38.400 --> 00:08:40.450
+Esa es una gran señal.
+
+161
+00:08:40.450 --> 00:08:42.280
+Estamos por muy buen camino.
+
+162
+00:08:42.280 --> 00:08:45.830
+Vendré, copiar esto de nuevo,
+
+163
+00:08:45.830 --> 00:08:49.060
+y puede ver que tenemos nuestro idéntico
+
+164
+00:08:49.060 --> 00:08:50.590
+solo visualización flex.
+
+165
+00:08:50.590 --> 00:08:52.240
+Me desharé de ese.
+
+166
+00:08:52.240 --> 00:08:54.550
+Técnicamente, podríamos dejar ese allí, pero
+
+167
+00:08:54.550 --> 00:08:58.560
+me gusta ser bueno y uniforme con todos los llamados.
+
+168
+00:08:58.560 --> 00:09:01.680
+Y este siguiente, tenemos tres elementos.
+
+169
+00:09:01.680 --> 00:09:04.540
+Tenemos visualización flex, de la que podemos deshacernos,
+
+170
+00:09:04.540 --> 00:09:06.520
+y luego tenemos una dirección flex
+
+171
+00:09:06.520 --> 00:09:08.960
+y luego un contenido justificado.
+
+172
+00:09:08.960 --> 00:09:12.330
+Agreguemos estos como argumentos.
+
+173
+00:09:12.330 --> 00:09:17.330
+La dirección flex es columna, y luego contenido justificado.
+
+174
+00:09:24.670 --> 00:09:27.280
+De ese modo, excepto que ahora necesitamos
+
+175
+00:09:27.280 --> 00:09:28.610
+agregar el signo de dólar.
+
+176
+00:09:28.610 --> 00:09:30.030
+Asegúrese de siempre agregar eso.
+
+177
+00:09:30.030 --> 00:09:31.320
+Así es cómo sabe lo que es eso.
+
+178
+00:09:31.320 --> 00:09:32.153
+Y miren eso.
+
+179
+00:09:32.153 --> 00:09:33.340
+Estamos respaldados y funcionando.
+
+180
+00:09:33.340 --> 00:09:35.560
+Todo está funcionando y nuestro código
+
+181
+00:09:35.560 --> 00:09:37.650
+luce mucho más limpio.
+
+182
+00:09:37.650 --> 00:09:39.770
+Bien, siguiente, bajamos.
+
+183
+00:09:39.770 --> 00:09:43.320
+Justo aquí tenemos este botón grupo.
+
+184
+00:09:43.320 --> 00:09:45.100
+Y luce como en el código de comienzo,
+
+185
+00:09:45.100 --> 00:09:46.470
+tenía un llamado duplicado.
+
+186
+00:09:46.470 --> 00:09:48.750
+No tenemos que preocuparnos por colocar final flex
+
+187
+00:09:48.750 --> 00:09:51.520
+en eso, solo alinear elementos.
+
+188
+00:09:51.520 --> 00:09:54.290
+El centro es el otro, es ese duplicado.
+
+189
+00:09:54.290 --> 00:09:56.250
+No necesitamos visualización flex.
+
+190
+00:09:56.250 --> 00:09:59.273
+Solo necesitamos alinear elementos en el centro.
+
+191
+00:10:00.780 --> 00:10:03.210
+Quitaré eso.
+
+192
+00:10:03.210 --> 00:10:06.860
+Y luego remplazaré esos elementos allí
+
+193
+00:10:06.860 --> 00:10:09.620
+y ahora todos nuestros elementos
+
+194
+00:10:09.620 --> 00:10:11.470
+están respaldados y funcionando.
+
+195
+00:10:11.470 --> 00:10:14.300
+Nos estamos moviendo.
+
+196
+00:10:14.300 --> 00:10:16.680
+El siguiente es el botón.
+
+197
+00:10:16.680 --> 00:10:19.360
+Con este botón sabemos que no necesitamos
+
+198
+00:10:19.360 --> 00:10:20.640
+visualización flex.
+
+199
+00:10:20.640 --> 00:10:23.240
+Ya tenemos elemento centro de alineado, entonces
+
+200
+00:10:23.240 --> 00:10:25.580
+ese ya lo tenemos allí desde lo que copiamos.
+
+201
+00:10:25.580 --> 00:10:29.873
+Y luego necesitamos tener este grupo dirección flex.
+
+202
+00:10:30.760 --> 00:10:34.060
+Aquí diré hilera de dirección flex.
+
+203
+00:10:34.060 --> 00:10:38.140
+Y luego también necesito centro de contenido justificado
+
+204
+00:10:38.140 --> 00:10:39.653
+así que pego eso allí.
+
+205
+00:10:40.730 --> 00:10:44.853
+Vamos a deshacernos de nuestras líneas viejas.
+
+206
+00:10:46.310 --> 00:10:49.620
+Y todo está respaldado y funcionando.
+
+207
+00:10:49.620 --> 00:10:52.290
+Y si miran todo lo demás, ya terminamos.
+
+208
+00:10:52.290 --> 00:10:56.090
+Cada uno de los elementos código que usamos
+
+209
+00:10:56.090 --> 00:11:00.187
+para confiar en todos esos escritos manualmente en la caja
+
+210
+00:11:00.187 --> 00:11:03.880
+flex, las definiciones de estilo, y esa lista completa,
+
+211
+00:11:03.880 --> 00:11:06.780
+ahora están completamente encapsulados
+
+212
+00:11:06.780 --> 00:11:10.660
+en este lindo conjunto de elementos mixin.
+
+213
+00:11:10.660 --> 00:11:14.790
+Este mixin puede gestionar todos nuestro tipo de caja
+
+214
+00:11:14.790 --> 00:11:18.610
+flex de comportamiento a través de toda la aplicación.
+
+215
+00:11:18.610 --> 00:11:20.530
+Esto hace la vida mucho más sencilla.
+
+216
+00:11:20.530 --> 00:11:23.520
+Es más fácil saber a lo que tengo acceso
+
+217
+00:11:23.520 --> 00:11:27.400
+y si notan, descartamos una cantidad
+
+218
+00:11:27.400 --> 00:11:31.840
+de líneas de este archivo específico.
+
+219
+00:11:31.840 --> 00:11:35.030
+Puede que digan que agregamos 19 líneas
+
+220
+00:11:35.030 --> 00:11:38.460
+con este mixin, pero cuando piensen en una aplicación
+
+221
+00:11:38.460 --> 00:11:42.150
+masiva, por ejemplo dev camp tiene decenas de
+
+222
+00:11:42.150 --> 00:11:45.610
+miles de líneas de código CSS,
+
+223
+00:11:45.610 --> 00:11:49.290
+cuando hay muchas casillas flex que son utilizadas
+
+224
+00:11:49.290 --> 00:11:52.350
+a lo largo de decenas, de hecho cientos
+
+225
+00:11:52.350 --> 00:11:57.110
+de archivos CSS, entonces tendrá este tipo
+
+226
+00:11:57.110 --> 00:12:00.450
+de envoltorio contenedor en cada uno de esos archivos
+
+227
+00:12:00.450 --> 00:12:02.720
+que todos tenían muchas casillas flex,
+
+228
+00:12:02.720 --> 00:12:05.090
+muchos códigos duplicados en ellos.
+
+229
+00:12:05.090 --> 00:12:09.870
+Con un mixin de 19 líneas pude entrar y
+
+230
+00:12:09.870 --> 00:12:13.290
+eliminar todo eso de toda la aplicación.
+
+231
+00:12:13.290 --> 00:12:16.590
+Eso hace el código mucho más eficiente.
+
+232
+00:12:16.590 --> 00:12:18.550
+Está organizado mucho mejor.
+
+233
+00:12:18.550 --> 00:12:20.740
+Es mucho más sencillo el hacer cambios sobre la marcha
+
+234
+00:12:20.740 --> 00:12:24.840
+y para futuros archivos CSS o futuros archivos Scss
+
+235
+00:12:24.840 --> 00:12:27.530
+que cree, sé que no tengo que preocuparme
+
+236
+00:12:27.530 --> 00:12:30.960
+por escribir manualmente todos esos diferentes
+
+237
+00:12:30.960 --> 00:12:34.000
+elementos mixin, o todos esos elementos casilla flex.
+
+238
+00:12:34.000 --> 00:12:36.780
+Puedo solo llamar un mixin, como lo acabo de hacer aquí.
+
+239
+00:12:36.780 --> 00:12:39.100
+Si hicieron todo eso, excelente trabajo.
+
+240
+00:12:39.100 --> 00:12:42.710
+Eso definitivamente no es un tipo de trabajo trivial de
+
+241
+00:12:42.710 --> 00:12:43.770
+mixin para implementar.
+
+242
+00:12:43.770 --> 00:12:46.890
+Incluyó todo, desde condicionales
+
+243
+00:12:46.890 --> 00:12:50.230
+a nombrados y tipos de argumentos por defecto
+
+244
+00:12:50.230 --> 00:12:52.930
+para usar variables, todo tipos diferentes
+
+245
+00:12:52.930 --> 00:12:53.763
+de cosas por el estilo.
+
+246
+00:12:53.763 --> 00:12:55.023
+Así que muy buen trabajo.
+

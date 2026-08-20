@@ -1,0 +1,86 @@
+WEBVTT
+
+1
+00:00:00.580 --> 00:00:03.760
+<v ->Continuando con nuestro viaje a través de los tipos de</v>
+
+2
+00:00:03.760 --> 00:00:06.630
+datos de Python, en la última sección analizamos cómo
+
+3
+00:00:06.630 --> 00:00:10.230
+trabajar con el tipo de datos de cadena, y en esta sección
+
+4
+00:00:10.230 --> 00:00:13.550
+vamos a sumergirnos en el tipo de datos numéricos.
+
+5
+00:00:13.550 --> 00:00:17.100
+Ahora, una de las razones más importantes por las que Python
+
+6
+00:00:17.100 --> 00:00:20.570
+se ha hecho tan ampliamente aceptada en la comunidad
+
+7
+00:00:20.570 --> 00:00:24.610
+científica, y en las comunidades de ciencia de datos y
+
+8
+00:00:24.610 --> 00:00:25.443
+aprendizaje automático es porque funciona muy bien
+
+9
+00:00:25.443 --> 00:00:26.776
+con los números.
+
+10
+00:00:28.230 --> 00:00:30.850
+Existe una gran variedad de bibliotecas de matemáticas
+
+11
+00:00:30.850 --> 00:00:33.460
+y ciencias que se pueden vincular directamente
+
+12
+00:00:33.460 --> 00:00:37.090
+con el idioma, y en la parte posterior de la sección
+
+13
+00:00:37.090 --> 00:00:38.920
+también lo haremos.
+
+14
+00:00:38.920 --> 00:00:41.320
+Pero vamos a empezar con lo básico.
+
+15
+00:00:41.320 --> 00:00:44.130
+Vamos a ver todos los operadores
+
+16
+00:00:44.130 --> 00:00:45.240
+que puedes usar.
+
+17
+00:00:45.240 --> 00:00:48.860
+Vamos a ver cómo Python realmente mira un programa
+
+18
+00:00:48.860 --> 00:00:51.620
+matemático y una fórmula, y luego el orden de las
+
+19
+00:00:51.620 --> 00:00:55.070
+operaciones que sigue,
+
+20
+00:00:55.070 --> 00:00:57.320
+y lo vamos a analizar al usar
+
+21
+00:00:57.320 --> 00:01:00.353
+algunas bibliotecas de matemáticas poderosas.
+

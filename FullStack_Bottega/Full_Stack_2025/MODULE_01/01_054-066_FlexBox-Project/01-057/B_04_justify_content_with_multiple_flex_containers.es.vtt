@@ -1,0 +1,210 @@
+WEBVTT
+
+1
+00:00:00.550 --> 00:00:02.650
+[Narrador] En esta guía, vamos a extender nuestro
+
+2
+00:00:02.650 --> 00:00:05.560
+conocimiento en contenido justificado y específicamente
+
+3
+00:00:05.560 --> 00:00:10.360
+vamos a pasar por una de las áreas más confusas de usar
+
+4
+00:00:10.360 --> 00:00:14.810
+Flexbox y eso es cuando estas usando contenedores de Flex
+
+5
+00:00:14.810 --> 00:00:19.580
+múltiples y luego tienes un conjunto de estilos que no
+
+6
+00:00:19.580 --> 00:00:22.147
+están haciendo lo que pensabas que iban a hacer.
+
+7
+00:00:22.147 --> 00:00:26.110
+Si recuerdan en la guía pasada, si remuevo esta definición
+
+8
+00:00:26.110 --> 00:00:30.260
+de columna y solo voy con la fila por defecto y de hecho
+
+9
+00:00:30.260 --> 00:00:33.420
+la cambia a fila solo para que puedan ver que esta
+
+10
+00:00:33.420 --> 00:00:36.270
+claramente usando este estilo de fila aquí.
+
+11
+00:00:36.270 --> 00:00:40.510
+Tenemos ese comportamiento raro donde todo se junta
+
+12
+00:00:40.510 --> 00:00:44.795
+la razón para esto tiene que ver directamente
+
+13
+00:00:44.795 --> 00:00:49.690
+porque estamos usando 2 contenedores flex aquí
+
+14
+00:00:49.690 --> 00:00:54.690
+y no somos capaces de usar final si tenemos fila aquí
+
+15
+00:00:56.640 --> 00:01:00.440
+así que si tenemos esta situación de contenedor anidado
+
+16
+00:01:00.440 --> 00:01:03.280
+donde tenemos un contenedor flex que tiene otro contenedor
+
+17
+00:01:03.280 --> 00:01:07.280
+flex si usamos fila y luego la combinación de
+
+18
+00:01:07.280 --> 00:01:10.060
+todos estos etilos aquí, luego vamos a
+
+19
+00:01:10.060 --> 00:01:13.470
+terminar con una página muy extraña.
+
+20
+00:01:13.470 --> 00:01:18.230
+Así que para arreglarlo debe decir, no mostrar, es cambiar
+
+21
+00:01:18.230 --> 00:01:23.230
+la dirección flex aquí para que en vez de usar la fila por
+
+22
+00:01:23.570 --> 00:01:28.570
+defecto, ahora podemos decir columna y si guardo esto, ahora
+
+23
+00:01:29.580 --> 00:01:33.950
+puedes ver que tenemos el comportamiento que esperabas y lo
+
+24
+00:01:33.950 --> 00:01:38.940
+que pasa aquí es antes de que tuvieras nuestra dirección
+
+25
+00:01:38.940 --> 00:01:43.010
+flex estábamos usando fila de este lado lo que significa que
+
+26
+00:01:43.010 --> 00:01:48.010
+iba a tomar todo este bloque de imagen e iba de este camino
+
+27
+00:01:48.500 --> 00:01:52.410
+pero ahora lo que hemos hecho es que la cambiamos y estamos
+
+28
+00:01:52.410 --> 00:01:56.920
+diciendo bueno para todas las direcciones flex de todos los
+
+29
+00:01:56.920 --> 00:02:00.010
+elementos los cuales en este caso es nuestro bloque-imagen.
+
+30
+00:02:00.010 --> 00:02:04.150
+Ahora vamos a utilizar columnas y por eso vamos a ser
+
+31
+00:02:04.150 --> 00:02:09.150
+capaces de cambiar el tipo de dirección flex dentro de este
+
+32
+00:02:09.920 --> 00:02:14.530
+contenedor anidado, esta es una de las cosas que si notaste
+
+33
+00:02:14.530 --> 00:02:19.070
+he hablado sobre los contenedores y elementos flex
+
+34
+00:02:19.070 --> 00:02:22.260
+en casi todas las guías en esta sección y es
+
+35
+00:02:22.260 --> 00:02:24.710
+porque he descubierto que esta es una de las áreas más
+
+36
+00:02:24.710 --> 00:02:29.600
+confusas de Flexbox pero lo bueno es que si tu dominas
+
+37
+00:02:29.600 --> 00:02:34.300
+esta parte, si realmente entiendes la relación padre-hijo
+
+38
+00:02:34.300 --> 00:02:38.270
+cuando se trata de Flexbobx el resto de eso es de hecho
+
+39
+00:02:38.270 --> 00:02:40.010
+muy fácil.
+
+40
+00:02:40.010 --> 00:02:45.010
+Flexbox solo tiene una docena de definiciones de estilo y
+
+41
+00:02:45.350 --> 00:02:48.980
+diferentes atributos que puedes llamar así que ellos no son
+
+42
+00:02:48.980 --> 00:02:53.120
+difíciles de recordar y tan pronto como puedas sentirte bien
+
+43
+00:02:53.120 --> 00:02:57.060
+por como puedas usar contenedores múltiples y luego guardar
+
+44
+00:02:57.060 --> 00:03:01.300
+elementos dentro de esos y trabajar con elementos flex
+
+45
+00:03:01.300 --> 00:03:05.150
+dentro por lo cual estoy usando un ejemplo que tenemos aquí.
+
+46
+00:03:05.150 --> 00:03:09.650
+Donde tenemos un contenedor flex padre entonces tenemos otro
+
+47
+00:03:09.650 --> 00:03:14.110
+contenedor flex hijo y luego tenemos elementos flex dentro
+
+48
+00:03:14.110 --> 00:03:16.850
+porque estoy va a ser un patrón que tu sigues mucho cuando
+
+49
+00:03:16.850 --> 00:03:20.400
+estas construyendo tu propio sistema y entonces es
+
+50
+00:03:20.400 --> 00:03:22.760
+bueno estar familiarizado con ello.
+
+51
+00:03:22.760 --> 00:03:27.760
+Así que así puedes arreglar ese problema, cambiando
+
+52
+00:03:28.120 --> 00:03:30.853
+los valores de tu dirección flex.
+

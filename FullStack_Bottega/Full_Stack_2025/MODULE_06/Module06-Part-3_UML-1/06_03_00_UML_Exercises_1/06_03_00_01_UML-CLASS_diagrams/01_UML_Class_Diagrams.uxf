@@ -1,0 +1,21 @@
+<diagram program="umletino" version="15.1"><zoom_level>12</zoom_level><element><id>UMLClass</id><coordinates><x>204</x><y>60</y><w>408</w><h>144</h></coordinates><panel_attributes>Usuario
+--
++ username:		String
+- password:		String
+l
+--
++ Usuario(String, String, String)
++ userInfo(username, nombreReal): String
++ sendLogin(username, password) : String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>228</x><y>348</y><w>384</w><h>132</h></coordinates><panel_attributes>NombreReal
+--
+- nombre: 	String
+- apellidos: 	String
++ username: 	String
+--
++ NombreReal(String, String, String)
++ userRecord(username, nombreReal):	String
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>384</x><y>192</y><w>120</w><h>180</h></coordinates><panel_attributes>lt=&lt;-
+- nombreReal
+m1=1</panel_attributes><additional_attributes>10;130;10;10</additional_attributes></element></diagram>

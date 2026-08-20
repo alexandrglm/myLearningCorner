@@ -1,0 +1,67 @@
+<diagram program="umletino" version="15.1"><zoom_level>12</zoom_level><element><id>UMLClass</id><coordinates><x>108</x><y>0</y><w>252</w><h>168</h></coordinates><panel_attributes>&lt;&lt;Users' elements&gt;&gt;
+User
+--
+propiedades
+--
+metodos
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>408</x><y>0</y><w>252</w><h>168</h></coordinates><panel_attributes>&lt;&lt;Componentes de un Tweet&gt;&gt;
+Tweet
+--
+propiedades
+--
+metodos
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>408</x><y>192</y><w>252</w><h>168</h></coordinates><panel_attributes>&lt;&lt;Retweet&gt;&gt;
+ReTweet
+--
+propiedades
+--
+metodos
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>108</x><y>384</y><w>252</w><h>168</h></coordinates><panel_attributes>&lt;&lt;Componentes de Seguridad&gt;&gt;
+Security
+--
+propiedades
+--
+metodos
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>108</x><y>192</y><w>252</w><h>168</h></coordinates><panel_attributes>&lt;&lt;Retweetst&gt;&gt;
+Preferences
+--
+propiedades
+--
+metodos
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>408</x><y>384</y><w>252</w><h>168</h></coordinates><panel_attributes>&lt;&lt;Nube de tags&gt;&gt;
+Hashtag
+--
+propiedades
+--
+metodos
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>672</x><y>192</y><w>252</w><h>168</h></coordinates><panel_attributes>&lt;&lt;Contestaciones&gt;&gt;
+Reply
+--
+propiedades
+--
+metodos
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>672</x><y>384</y><w>252</w><h>168</h></coordinates><panel_attributes>&lt;&lt;Likes&gt;&gt;
+Like
+--
+propiedades
+--
+metodos
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>108</x><y>576</y><w>252</w><h>168</h></coordinates><panel_attributes>&lt;&lt;Ubicaciones&gt;&gt;
+Location
+--
+propiedades
+--
+metodos
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>408</x><y>576</y><w>252</w><h>168</h></coordinates><panel_attributes>&lt;&lt;Imagenes&gt;&gt;
+Image
+--
+propiedades
+--
+metodos
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>672</x><y>0</y><w>252</w><h>168</h></coordinates><panel_attributes>&lt;&lt;Usuarios en seguimiento&gt;&gt;
+Users following other users
+--
+propiedades
+--
+metodos
+</panel_attributes><additional_attributes></additional_attributes></element></diagram>

@@ -1,0 +1,738 @@
+WEBVTT
+
+1
+00:00:00.890 --> 00:00:01.723
+<v Profesor>Una vez que tengamos listo</v>
+
+2
+00:00:01.723 --> 00:00:03.430
+nuestro diseño básico
+
+3
+00:00:03.430 --> 00:00:08.430
+podremos comenzar con las funciones básicas de CSS Grid.
+
+4
+00:00:08.430 --> 00:00:10.570
+En nuestra primera cuadrícula, usaremos
+
+5
+00:00:10.570 --> 00:00:13.800
+múltiples contenedores de cuadrículas en esta página.
+
+6
+00:00:13.800 --> 00:00:17.490
+El primero será este texto
+
+7
+00:00:17.490 --> 00:00:19.750
+y este logotipo de aquí.
+
+8
+00:00:19.750 --> 00:00:23.700
+Si bajamos, podremos ver
+
+9
+00:00:23.700 --> 00:00:26.750
+dos columnas, y en la parte izquierda
+
+10
+00:00:26.750 --> 00:00:28.930
+tenemos todos estos detalles de estilo
+
+11
+00:00:28.930 --> 00:00:32.170
+y a la derecha, esta imagen.
+
+12
+00:00:32.170 --> 00:00:36.340
+Ahora podemos acceder a esta imagen en lugar de recursos,
+
+13
+00:00:36.340 --> 00:00:37.870
+así que puedes bajarla
+
+14
+00:00:37.870 --> 00:00:40.140
+y será la que voy a usar.
+
+15
+00:00:40.140 --> 00:00:43.700
+Algo primordial que deberías preguntarte
+
+16
+00:00:43.700 --> 00:00:45.950
+a la hora de crear un diseño
+
+17
+00:00:45.950 --> 00:00:48.750
+es si deberías usar Flexbox
+
+18
+00:00:48.750 --> 00:00:51.790
+o CSS Grid.
+
+19
+00:00:51.790 --> 00:00:54.020
+Mi regla de oro
+
+20
+00:00:54.020 --> 00:00:58.120
+es que, al pensar en mis componentes
+
+21
+00:00:58.120 --> 00:01:02.080
+en cuanto a columnas y filas,
+
+22
+00:01:02.080 --> 00:01:05.580
+suele significar que quiero usar Grid,
+
+23
+00:01:05.580 --> 00:01:07.550
+y eso es lo que tenemos aquí.
+
+24
+00:01:07.550 --> 00:01:11.130
+Entonces, tenemos este texto y esta imagen
+
+25
+00:01:11.130 --> 00:01:13.230
+y están en dos columnas.
+
+26
+00:01:13.230 --> 00:01:14.960
+Si quisiéramos, podríamos dibujar líneas aquí
+
+27
+00:01:14.960 --> 00:01:18.690
+y podríamos ver que hay un gran espacio entre estos dos
+
+28
+00:01:18.690 --> 00:01:20.760
+y que estarán uno junto al otro.
+
+29
+00:01:20.760 --> 00:01:23.840
+Creo que este va a ser un ejemplo perfecto
+
+30
+00:01:23.840 --> 00:01:26.423
+para lo fundamental de CSS Grid
+
+31
+00:01:26.423 --> 00:01:27.930
+y para nuestro primer proyecto.
+
+32
+00:01:27.930 --> 00:01:29.580
+Vamos a pasar para acá
+
+33
+00:01:29.580 --> 00:01:31.630
+y a pasar para el código,
+
+34
+00:01:31.630 --> 00:01:34.230
+y empezaremos a codificarlo.
+
+35
+00:01:34.230 --> 00:01:36.080
+Lo primero que voy a hacer
+
+36
+00:01:36.080 --> 00:01:38.310
+es, justo debajo del content wrapper,
+
+37
+00:01:39.280 --> 00:01:40.920
+añadir algunos divs.
+
+38
+00:01:40.920 --> 00:01:44.920
+El primero va a ser un div,
+
+39
+00:01:44.920 --> 00:01:49.920
+en él, crearé una clase llamada style details.
+
+40
+00:01:50.620 --> 00:01:52.830
+Aquí dentro es donde
+
+41
+00:01:52.830 --> 00:01:54.500
+todo cobrará vida.
+
+42
+00:01:54.500 --> 00:01:56.720
+Voy a crear la columna de la izquierda,
+
+43
+00:01:56.720 --> 00:02:01.586
+que voy a llamarla, por así decirlo, style-details-text,
+
+44
+00:02:03.300 --> 00:02:06.230
+y ahí será donde estará todo el texto.
+
+45
+00:02:06.230 --> 00:02:09.040
+Justo debajo de ahí,
+
+46
+00:02:09.040 --> 00:02:10.860
+voy a colocar la otra columna.
+
+47
+00:02:10.860 --> 00:02:15.707
+Para esta, le llamaremos style details logo,
+
+48
+00:02:17.507 --> 00:02:20.150
+y ahí será donde colocaremos la imagen.
+
+49
+00:02:20.150 --> 00:02:24.030
+Ahora podemos volver aquí e ir
+
+50
+00:02:24.030 --> 00:02:27.090
+a la versión final de la aplicación y copiar
+
+51
+00:02:27.090 --> 00:02:30.890
+todo el contenido y regresar,
+
+52
+00:02:30.890 --> 00:02:35.570
+y pueden copiarlo dentro del mismo texto.
+
+53
+00:02:35.570 --> 00:02:40.570
+Cada uno de estos va a ser su propia cabecera
+
+54
+00:02:40.620 --> 00:02:42.890
+y su propio div.
+
+55
+00:02:42.890 --> 00:02:47.630
+Aquí diré que esto va a ser un h3
+
+56
+00:02:49.040 --> 00:02:54.040
+y cada uno de ellos va a tener un h3 de cierre.
+
+57
+00:02:54.330 --> 00:02:56.910
+Así que vamos a ello.
+
+58
+00:02:56.910 --> 00:03:01.100
+Empezaremos con el logo primordial,
+
+59
+00:03:01.100 --> 00:03:03.200
+y cada uno de ellos contará como sub-encabezamientos.
+
+60
+00:03:03.200 --> 00:03:07.230
+Así que tenemos un primer logotipo, color y nombre.
+
+61
+00:03:07.230 --> 00:03:09.470
+Vamos a separarlos
+
+62
+00:03:09.470 --> 00:03:11.513
+para que no nos cree ninguna confusión.
+
+63
+00:03:13.850 --> 00:03:16.640
+Después, solamente copiaremos estos.
+
+64
+00:03:16.640 --> 00:03:18.320
+Copiamos
+
+65
+00:03:21.310 --> 00:03:23.630
+y se mantiene mi registro.
+
+66
+00:03:23.630 --> 00:03:25.970
+Es uno de los únicos problemas que tengo con el código VS
+
+67
+00:03:25.970 --> 00:03:29.910
+y algunos de los vim key-bindings que son diferentes.
+
+68
+00:03:29.910 --> 00:03:31.850
+Así que los escribiré manualmente.
+
+69
+00:03:31.850 --> 00:03:33.850
+En dependencia del editor de texto que uses
+
+70
+00:03:33.850 --> 00:03:35.853
+puede que tengas que hacer eso o no.
+
+71
+00:03:38.060 --> 00:03:40.013
+Bueno, el último.
+
+72
+00:03:46.130 --> 00:03:47.850
+Ciérralo, está bien.
+
+73
+00:03:47.850 --> 00:03:50.220
+Y para cada uno de estos,
+
+74
+00:03:50.220 --> 00:03:52.400
+quiero que sean divs.
+
+75
+00:03:52.400 --> 00:03:56.967
+No hagas que estos sean tags de párrafos ni nada así.
+
+76
+00:03:56.967 --> 00:04:00.453
+Haré estos dos a la misma vez.
+
+77
+00:04:01.572 --> 00:04:06.489 line:15% 
+LO PUSE EN CÁMARA RÁPIDA PARA AHORRARTE TIEMPO.
+
+78
+00:04:08.430 --> 00:04:10.200
+Ahí vamos, bien.
+
+79
+00:04:10.200 --> 00:04:11.700
+Es una lástima que haya tomado tanto tiempo,
+
+80
+00:04:11.700 --> 00:04:14.350
+pero cuando escribes las cosas así,
+
+81
+00:04:14.350 --> 00:04:15.470
+suele suceder.
+
+82
+00:04:15.470 --> 00:04:18.330
+Ahora podrás ver que esto no es definitivamente
+
+83
+00:04:18.330 --> 00:04:20.670
+lo que buscábamos, y no importa.
+
+84
+00:04:20.670 --> 00:04:22.570
+No hemos añadido ningún tipo de estilos,
+
+85
+00:04:22.570 --> 00:04:24.400
+ni nada así aún, pero
+
+86
+00:04:24.400 --> 00:04:26.650
+podrás ver que está tomando el encabezamiento
+
+87
+00:04:26.650 --> 00:04:30.370
+y que cada uno de los divs están ubicados por debajo de él.
+
+88
+00:04:30.370 --> 00:04:32.700
+Añadamos también la imagen aquí
+
+89
+00:04:32.700 --> 00:04:36.010
+para poder saber cómo quedará después.
+
+90
+00:04:36.010 --> 00:04:41.003
+Aquí sacaré la imagen, y luego la fuente
+
+91
+00:04:41.003 --> 00:04:45.105
+de esto estará dentro del directorio de imagen,
+
+92
+00:04:45.105 --> 00:04:49.020
+y quiero que ese logo tenga margen.
+
+93
+00:04:49.020 --> 00:04:50.810
+Si sostienes eso
+
+94
+00:04:50.810 --> 00:04:53.250
+deberías tener acceso a él también.
+
+95
+00:04:53.250 --> 00:04:56.840
+Si regresamos, podrás ver que está justo ahí.
+
+96
+00:04:56.840 --> 00:05:01.020
+Esto es bueno, pero obviamente luce
+
+97
+00:05:01.020 --> 00:05:03.350
+muy diferente a la versión final.
+
+98
+00:05:03.350 --> 00:05:06.820
+Empecemos a codificarlo.
+
+99
+00:05:06.820 --> 00:05:09.480
+Tenemos los detalles de estilo por aquí.
+
+100
+00:05:09.480 --> 00:05:10.870
+Ese será nuestro wrapper.
+
+101
+00:05:10.870 --> 00:05:13.050
+Luego tenemos detalles de estilo de texto
+
+102
+00:05:13.050 --> 00:05:15.140
+y de logo.
+
+103
+00:05:15.140 --> 00:05:19.320
+Empecemos y vamos a codificarlos
+
+104
+00:05:19.320 --> 00:05:20.950
+dentro de nuestro CSS.
+
+105
+00:05:20.950 --> 00:05:22.750
+Empezaré
+
+106
+00:05:24.090 --> 00:05:27.840
+con los detalles de estilo, y este será
+
+107
+00:05:27.840 --> 00:05:31.360
+nuestro contenedor o wrapper de cuadrículas.
+
+108
+00:05:31.360 --> 00:05:34.770
+La forma en que puedes llamarlo es escribir
+
+109
+00:05:34.770 --> 00:05:37.723
+display, y después, grid.
+
+110
+00:05:38.807 --> 00:05:42.190
+Es bien similar a cuando creas
+
+111
+00:05:42.190 --> 00:05:43.750
+un contenedor Flexbox.
+
+112
+00:05:43.750 --> 00:05:46.030
+Como habrás podido notar, ahí en el renglón 22,
+
+113
+00:05:46.030 --> 00:05:48.100
+cuando quisimos crear un contenedor Flexbox,
+
+114
+00:05:48.100 --> 00:05:49.500
+simplemente ponemos display flex.
+
+115
+00:05:49.500 --> 00:05:51.649
+Cada vez que desees un contenedor de cuadrículas,
+
+116
+00:05:51.649 --> 00:05:53.775
+tienes que escribir display grid.
+
+117
+00:05:53.775 --> 00:05:56.750
+Queremos que nuestro contenedor de cuadrículas
+
+118
+00:05:56.750 --> 00:05:58.324
+tenga dos columnas.
+
+119
+00:05:58.324 --> 00:06:00.260
+La manera en que podemos lograrlo
+
+120
+00:06:00.260 --> 00:06:03.770
+es escribiendo grid template columns.
+
+121
+00:06:03.770 --> 00:06:06.100
+Podrás ver que tenemos varias opciones aquí.
+
+122
+00:06:06.100 --> 00:06:07.640
+Escogeremos las columnas,
+
+123
+00:06:07.640 --> 00:06:10.540
+y después quiero dos columnas, y después
+
+124
+00:06:10.540 --> 00:06:14.690
+tendrás que definir el ancho de esas columnas.
+
+125
+00:06:14.690 --> 00:06:18.147
+Escribiré 1fr, y después 1fr.
+
+126
+00:06:18.147 --> 00:06:22.595
+Si nunca antes habías oído de los fr's, sus siglas
+
+127
+00:06:22.595 --> 00:06:26.100
+significan Unidad de Fracción, o Fracción.
+
+128
+00:06:26.100 --> 00:06:30.270
+Así que al escribir 1fr,
+
+129
+00:06:30.270 --> 00:06:33.725
+significa que queremos que ambas
+
+130
+00:06:33.725 --> 00:06:37.220
+tomen la misma cantidad de espacio.
+
+131
+00:06:37.220 --> 00:06:41.600
+Ahora, tenemos que revisar lo que hicimos después
+
+132
+00:06:41.600 --> 00:06:43.250
+en el proyecto, y lo que podemos hacer...
+
+133
+00:06:43.250 --> 00:06:46.160
+Y miremos que tenemos aquí.
+
+134
+00:06:46.160 --> 00:06:49.170
+Desliza abajo, usaremos el próximo componente,
+
+135
+00:06:49.170 --> 00:06:51.510
+usaremos CSS Grid aquí también,
+
+136
+00:06:51.510 --> 00:06:53.940
+y tendremos tres columnas,
+
+137
+00:06:53.940 --> 00:06:56.890
+pero las primeras dos serán un poco más largas
+
+138
+00:06:56.890 --> 00:06:59.140
+que la última.
+
+139
+00:06:59.140 --> 00:07:01.060
+Por lo que pensé que sería de ayuda tener
+
+140
+00:07:01.060 --> 00:07:04.630
+a ambas donde las pudieras ver justo al lado de la otra,
+
+141
+00:07:04.630 --> 00:07:07.150
+para poder ver la diferencia.
+
+142
+00:07:07.150 --> 00:07:08.970
+Ahora que tenemos eso,
+
+143
+00:07:08.970 --> 00:07:11.450
+estamos progresando un poco.
+
+144
+00:07:11.450 --> 00:07:13.580
+Todavía queda un poco de trabajo por hacer,
+
+145
+00:07:13.580 --> 00:07:16.030
+pero al menos podrás apreciar que ahora
+
+146
+00:07:16.030 --> 00:07:20.840
+el primer logo, color, nombre, y todos estos detalles
+
+147
+00:07:20.840 --> 00:07:24.260
+de texto ahora están al lado de la imagen.
+
+148
+00:07:24.260 --> 00:07:28.070
+Hasta ahora estoy contento con eso.
+
+149
+00:07:28.070 --> 00:07:32.040
+Regresemos y añadamos unos pocos más estilos,
+
+150
+00:07:32.040 --> 00:07:34.860
+y después tomaremos un descanso para seguir trabajando
+
+151
+00:07:34.860 --> 00:07:36.800
+después, pero lo siguiente que quiero hacer
+
+152
+00:07:36.800 --> 00:07:39.160
+es que quiero insertarle estilos a esa imagen.
+
+153
+00:07:39.160 --> 00:07:43.010
+Escribiré style details,
+
+154
+00:07:43.010 --> 00:07:46.830
+y a partir de ahí, escribiré logo,
+
+155
+00:07:46.830 --> 00:07:49.710
+y dentro de eso la imagen.
+
+156
+00:07:49.710 --> 00:07:54.250
+Y de longitud que tenga un 100%.
+
+157
+00:07:54.250 --> 00:07:56.390
+Y si le doy a Guardar y regreso,
+
+158
+00:07:56.390 --> 00:07:58.656
+podrás ver que eso encogió la imagen.
+
+159
+00:07:58.656 --> 00:08:01.510
+Y es debido a lo que tenemos aquí.
+
+160
+00:08:01.510 --> 00:08:02.900
+Pudieras pensar que esto es curioso.
+
+161
+00:08:02.900 --> 00:08:04.110
+Pudieras pensar que
+
+162
+00:08:04.110 --> 00:08:07.150
+la imagen que teníamos antes ya estaba al 100%,
+
+163
+00:08:07.150 --> 00:08:09.450
+pero lo que HTML hace predeterminado,
+
+164
+00:08:09.450 --> 00:08:12.090
+si no le pones ningún tipo de valor a la imagen,
+
+165
+00:08:12.090 --> 00:08:15.430
+es que te mostrará la imagen en su tamaño completo.
+
+166
+00:08:15.430 --> 00:08:17.070
+Así que si pones una imagen gigante,
+
+167
+00:08:17.070 --> 00:08:19.690
+te mostrará un lugar gigante.
+
+168
+00:08:19.690 --> 00:08:23.320
+Pasará sobre el contenedor de cuadrículas,
+
+169
+00:08:23.320 --> 00:08:25.190
+pero con lo que hice aquí,
+
+170
+00:08:25.190 --> 00:08:26.690
+lo que hice fue encogerla.
+
+171
+00:08:26.690 --> 00:08:30.240
+No importa que tan grande sea esa columna de cuadrícula,
+
+172
+00:08:30.240 --> 00:08:35.000
+quiero que rellenes esa columna, eso es todo.
+
+173
+00:08:35.000 --> 00:08:37.808
+Ahora tenemos un tamaño que se acerca un poco más
+
+174
+00:08:37.808 --> 00:08:38.883
+a lo que queríamos.
+
+175
+00:08:38.883 --> 00:08:40.860
+Aún tenemos más trabajo por hacer.
+
+176
+00:08:40.860 --> 00:08:43.330
+Tenemos que poder encoger todo esto,
+
+177
+00:08:43.330 --> 00:08:46.121
+para que quede justo por debajo de nuestras
+
+178
+00:08:46.121 --> 00:08:47.371
+guías de marca,
+
+179
+00:08:47.371 --> 00:08:50.600
+y que siga el camino de todo el otro contenido,
+
+180
+00:08:50.600 --> 00:08:52.670
+como el que tenemos aquí.
+
+181
+00:08:52.670 --> 00:08:55.030
+Pero creo que es un buen lugar para detenernos
+
+182
+00:08:55.030 --> 00:08:59.460
+porque ya al menos tenemos lo básico,
+
+183
+00:08:59.460 --> 00:09:02.800
+o la configuración básica para usar CSS Grid.
+
+184
+00:09:02.800 --> 00:09:05.450
+En la próxima guía comenzaremos a ordenar esto.
+

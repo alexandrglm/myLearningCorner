@@ -1,0 +1,764 @@
+WEBVTT
+
+1
+00:00:03.950 --> 00:00:07.240
+<v Profesor>Esta será una guía divertida de cómo trabajar</v>
+
+2
+00:00:07.240 --> 00:00:10.490
+con strings, y específicamente cómo podemos implementar
+
+3
+00:00:10.490 --> 00:00:13.590
+la llamada función de Partición, porque
+
+4
+00:00:13.590 --> 00:00:16.180
+esto es algo que encontré que es de mucha ayuda.
+
+5
+00:00:16.180 --> 00:00:18.460
+También será
+
+6
+00:00:18.460 --> 00:00:21.740
+una ligera introducción de las colecciones en Python.
+
+7
+00:00:21.740 --> 00:00:24.460
+Tenemos una sección entera dedicada a las colecciones,
+
+8
+00:00:24.460 --> 00:00:27.130
+por lo que no entraremos ahora en detalle,
+
+9
+00:00:27.130 --> 00:00:30.610
+aunque verás cómo las strings pueden estar conectadas
+
+10
+00:00:30.610 --> 00:00:34.147
+y cómo pueden generar sus propias colecciones.
+
+11
+00:00:34.147 --> 00:00:36.640
+Aquí delante tenemos un encabezamiento.
+
+12
+00:00:36.640 --> 00:00:39.115
+Así que imagina un encabezamiento en una app móvil o,
+
+13
+00:00:39.115 --> 00:00:43.087
+en algún tipo de página web, y tenemos,
+
+14
+00:00:43.087 --> 00:00:46.150
+tres componentes, o debería decir que podemos
+
+15
+00:00:46.150 --> 00:00:49.281
+dividir la string en tres componentes.
+
+16
+00:00:49.281 --> 00:00:51.435
+Tenemos nuestro encabezamiento completo aquí,
+
+17
+00:00:51.435 --> 00:00:56.150
+tenemos nuestro encabezado de python, después tenemos
+
+18
+00:00:56.150 --> 00:00:59.810
+estos dos puntos separando el subtítulo,
+
+19
+00:00:59.810 --> 00:01:02.450
+por lo que ponemos python una introducción.
+
+20
+00:01:02.450 --> 00:01:07.450
+Si quisiera la habilidad de dividir esta string
+
+21
+00:01:08.004 --> 00:01:11.521
+para poder tomar mi encabezamiento principal,
+
+22
+00:01:11.521 --> 00:01:15.942
+tomaría este componente aquí, los dos puntos,
+
+23
+00:01:15.942 --> 00:01:19.660
+y luego el subtítulo, y pudiera colocarlos
+
+24
+00:01:19.660 --> 00:01:22.680
+en variables, para usarlos como quiera.
+
+25
+00:01:22.680 --> 00:01:24.050
+¿Cómo haría eso?
+
+26
+00:01:24.050 --> 00:01:27.500
+Ahí es donde entra la función de Partición en juego,
+
+27
+00:01:27.500 --> 00:01:29.980
+y es bien genial, y también podrá
+
+28
+00:01:29.980 --> 00:01:33.190
+brindarnos un bosquejo de cómo trabajar
+
+29
+00:01:33.190 --> 00:01:35.822
+con variables que queramos usar, contra
+
+30
+00:01:35.822 --> 00:01:39.010
+las que son consideradas "variables de desecho,"
+
+31
+00:01:39.010 --> 00:01:41.530
+y verás lo que eso significa en un segundo.
+
+32
+00:01:41.530 --> 00:01:46.530
+Vendré abajo y pondré una lista de tres variables
+
+33
+00:01:46.540 --> 00:01:50.600
+seguidas, por lo que escribiré,
+
+34
+00:01:50.600 --> 00:01:55.600
+encabezado coma guión bajo coma y luego subtítulo.
+
+35
+00:01:56.920 --> 00:01:58.920
+Y si te luce rara esta sintaxis,
+
+36
+00:01:58.920 --> 00:02:02.130
+no te preocupes, explicaremos cada uno
+
+37
+00:02:02.130 --> 00:02:03.940
+de estos elementos para ver
+
+38
+00:02:03.940 --> 00:02:06.300
+qué representa cada uno y cómo usarlos.
+
+39
+00:02:06.300 --> 00:02:09.530
+Y lo que haré ahora es asignar esto
+
+40
+00:02:09.530 --> 00:02:11.660
+a nuestro encabezamiento
+
+41
+00:02:12.843 --> 00:02:15.380
+y no al encabezado, recuerda,
+
+42
+00:02:15.380 --> 00:02:17.923
+encabezamiento es nuestra variable que almacena la string.
+
+43
+00:02:17.923 --> 00:02:22.916
+Escribiré encabezamiento, y luego punto partición,
+
+44
+00:02:22.916 --> 00:02:26.810
+y después partición toma un argumento y lo que es,
+
+45
+00:02:26.810 --> 00:02:30.750
+es el divisor.
+La manera en que funciona
+
+46
+00:02:30.750 --> 00:02:33.742
+la función de partición en Python
+
+47
+00:02:33.742 --> 00:02:36.978
+es que mirará dentro de la string
+
+48
+00:02:36.978 --> 00:02:39.820
+cada vez que pases como el argumento.
+
+49
+00:02:39.820 --> 00:02:43.030
+En este caso, estamos pasando estos dos puntos
+
+50
+00:02:43.030 --> 00:02:46.390
+y un espacio, por lo que una vez que encuentre eso,
+
+51
+00:02:46.390 --> 00:02:50.357
+particiona a la string entera
+
+52
+00:02:50.357 --> 00:02:53.470
+y la separa en tres elementos.
+
+53
+00:02:53.470 --> 00:02:57.233
+Por lo que tomará a Python
+
+54
+00:02:57.233 --> 00:02:59.620
+y será el primer elemento.
+
+55
+00:02:59.620 --> 00:03:02.040
+Después, la partición en sí será
+
+56
+00:03:02.040 --> 00:03:06.066
+el segundo elemento, y después de todo eso
+
+57
+00:03:06.066 --> 00:03:08.630
+será el tercero.
+La manera
+
+58
+00:03:08.630 --> 00:03:10.850
+en que esto funciona, y este es un truco
+
+59
+00:03:10.850 --> 00:03:12.780
+bien genial que te brinda Python,
+
+60
+00:03:12.780 --> 00:03:14.809
+es que cada vez que requiera a partición,
+
+61
+00:03:14.809 --> 00:03:17.960
+y ejecutes una tarea como yo aquí,
+
+62
+00:03:17.960 --> 00:03:22.350
+te regresa la llamada colección tuple.
+
+63
+00:03:22.350 --> 00:03:25.970
+Y no te preocupes si te suena rara la palabra "tuple,"
+
+64
+00:03:25.970 --> 00:03:29.300
+la explicaremos en nuestra sección de colecciones.
+
+65
+00:03:29.300 --> 00:03:31.820
+Esencialmente lo que esto nos permite hacer
+
+66
+00:03:31.820 --> 00:03:34.630
+es que significa que separará lo que solía ser,
+
+67
+00:03:34.630 --> 00:03:38.282
+una string que era un objeto, en tres objetos.
+
+68
+00:03:38.282 --> 00:03:40.365
+La separará en el primero,
+
+69
+00:03:40.365 --> 00:03:43.121
+el segundo y el tercero, y debido a eso,
+
+70
+00:03:43.121 --> 00:03:45.146
+podemos hacer lo que se le llama:
+
+71
+00:03:45.146 --> 00:03:47.040
+desestructuración de variable.
+
+72
+00:03:47.040 --> 00:03:50.520
+Por lo que podemos escribir el primer elemento
+
+73
+00:03:50.520 --> 00:03:51.810
+dentro de la variable de encabezado.
+
+74
+00:03:51.810 --> 00:03:55.560
+El segundo irá dentro del guión bajo,
+
+75
+00:03:55.560 --> 00:03:59.130
+y el tercero irá dentro del subtítulo.
+
+76
+00:03:59.130 --> 00:04:03.476
+Esto sigue una convención muy popular de Python
+
+77
+00:04:03.476 --> 00:04:08.476
+para cuando tengas valores que no quieras usar.
+
+78
+00:04:08.790 --> 00:04:13.418
+La mejor manera de representar estos es con un guion bajo.
+
+79
+00:04:13.418 --> 00:04:16.531
+No es una sintaxis requerida, pero es simplemente
+
+80
+00:04:16.531 --> 00:04:20.072
+la mejor práctica en la comunidad de Python.
+
+81
+00:04:20.072 --> 00:04:23.442
+Expliquemos lo que nos dará,
+
+82
+00:04:23.442 --> 00:04:26.200
+y asegurémonos de que funcione, y después
+
+83
+00:04:26.200 --> 00:04:29.530
+te mostraré algunas variaciones de eso.
+
+84
+00:04:29.530 --> 00:04:33.690
+Escribiré imprimir encabezado, y luego
+
+85
+00:04:33.690 --> 00:04:37.250
+escribamos imprimir subtítulo.
+
+86
+00:04:37.250 --> 00:04:39.650
+Ahora si le doy a Enter, podrás ver
+
+87
+00:04:39.650 --> 00:04:42.510
+que imprime a Python y a una introducción.
+
+88
+00:04:42.510 --> 00:04:46.600
+Efectivamente tomó cada uno de esos elementos
+
+89
+00:04:46.600 --> 00:04:50.740
+y los dividió en nuevas variables.
+
+90
+00:04:50.740 --> 00:04:54.724
+Y técnicamente pudieras escribir imprimir encabezado
+
+91
+00:04:54.724 --> 00:04:59.724
+y poner subtítulo aquí, y te daría tus dos puntos
+
+92
+00:05:00.767 --> 00:05:03.660
+con el espacio justo después.
+
+93
+00:05:03.660 --> 00:05:07.950
+Pero lo que hacemos en Python cuando tenemos
+
+94
+00:05:07.950 --> 00:05:11.800
+un tipo de situación parecida a esta;
+
+95
+00:05:11.800 --> 00:05:14.940
+en donde tenemos algunos elementos que queremos, pero luego,
+
+96
+00:05:14.940 --> 00:05:18.080
+puede que tengamos elementos que no queramos,
+
+97
+00:05:18.080 --> 00:05:20.650
+así como los que estamos intentando sacar.
+
+98
+00:05:20.650 --> 00:05:22.860
+Por lo que no nos deben importar estos dos puntos.
+
+99
+00:05:22.860 --> 00:05:24.960
+No nos debemos preocupar de deshacernos de él,
+
+100
+00:05:24.960 --> 00:05:29.040
+simplemente queremos mostrar que existió en la string.
+
+101
+00:05:29.040 --> 00:05:30.570
+Pero no lo necesitamos para todo
+
+102
+00:05:30.570 --> 00:05:32.320
+lo que haremos después de eso.
+
+103
+00:05:32.320 --> 00:05:35.100
+Digamos que esto lo obtenemos
+
+104
+00:05:35.100 --> 00:05:39.013
+de cierto tipo de API, y necesitas la habilidad
+
+105
+00:05:39.013 --> 00:05:42.451
+de limpiarlo y sacar los contenidos que desees
+
+106
+00:05:42.451 --> 00:05:44.820
+y abandonar las cosas que no desees.
+
+107
+00:05:44.820 --> 00:05:47.540
+La Partición es una manera genial de hacerlo, y otros
+
+108
+00:05:47.540 --> 00:05:50.060
+desarrolladores cuando vengan a ver tu código,
+
+109
+00:05:50.060 --> 00:05:51.980
+o cuando después de años o meses tú
+
+110
+00:05:51.980 --> 00:05:54.210
+revises tu programa;
+
+111
+00:05:54.210 --> 00:05:57.450
+cuando veas este guion bajo, entenderás
+
+112
+00:05:57.450 --> 00:06:00.770
+que significa que lo que sea que se escriba
+
+113
+00:06:00.770 --> 00:06:03.890
+dentro de ese valor, será un "valor de desecho."
+
+114
+00:06:03.890 --> 00:06:05.150
+No te preocupa.
+
+115
+00:06:05.150 --> 00:06:06.950
+También verás esto más tarde
+
+116
+00:06:06.950 --> 00:06:09.570
+cuando hablemos sobre cómo buscar en colecciones
+
+117
+00:06:09.570 --> 00:06:11.430
+cuando tienes cierto tipo de valor
+
+118
+00:06:11.430 --> 00:06:13.370
+del que no te debes preocupar.
+
+119
+00:06:13.370 --> 00:06:15.980
+Sabrás que está disponible dentro de la colección
+
+120
+00:06:15.980 --> 00:06:17.570
+pero solo quieres ignorarlo.
+
+121
+00:06:17.570 --> 00:06:19.290
+Parte de esto es simplemente
+
+122
+00:06:19.290 --> 00:06:21.470
+darte una introducción para eso.
+
+123
+00:06:21.470 --> 00:06:24.380
+Así que si esa parte no tiene sentido práctico
+
+124
+00:06:24.380 --> 00:06:26.874
+de por qué querrías una variable
+
+125
+00:06:26.874 --> 00:06:29.491
+que no usarás,
+
+126
+00:06:29.491 --> 00:06:31.030
+tendrá sentido una vez que llegues
+
+127
+00:06:31.030 --> 00:06:32.950
+a temas más avanzados.
+
+128
+00:06:32.950 --> 00:06:36.251
+Porque una vez que aprendas elementos diferentes
+
+129
+00:06:36.251 --> 00:06:37.840
+así como: aprendizaje de máquina
+
+130
+00:06:37.840 --> 00:06:40.660
+o estudiar complejos desarrollos de API,
+
+131
+00:06:40.660 --> 00:06:44.178
+entenderás que habrán veces en donde tú solo querrás
+
+132
+00:06:44.178 --> 00:06:46.977
+una subsección de los datos que te están pasando.
+
+133
+00:06:46.977 --> 00:06:50.718
+Y usar procesos diferentes como este
+
+134
+00:06:50.718 --> 00:06:53.750
+te ayudan a visualizar qué datos quieres, así como
+
+135
+00:06:53.750 --> 00:06:55.403
+el encabezado o el subtítulo,
+
+136
+00:06:55.403 --> 00:06:58.910
+y cuáles elementos simplemente debes ignorar.
+
+137
+00:06:58.910 --> 00:07:03.810
+Una vez más, esta es simplemente una convención en Python,
+
+138
+00:07:03.810 --> 00:07:06.746
+no es una regla sintáctica.
+
+139
+00:07:06.746 --> 00:07:10.236
+Déjame copiar esto, lo comentaré.
+
+140
+00:07:10.236 --> 00:07:14.230
+Y observa que cambio lo que desee.
+
+141
+00:07:14.230 --> 00:07:19.230
+Pudiera escribir primero segundo tercero, y estos
+
+142
+00:07:19.230 --> 00:07:22.440
+no son especiales de ninguna manera,
+
+143
+00:07:22.440 --> 00:07:23.420
+son solo variables.
+
+144
+00:07:23.420 --> 00:07:25.680
+Podrás llamarlos como sea.
+
+145
+00:07:25.680 --> 00:07:30.680
+Pero si escribo segundo, y hago uno más,
+
+146
+00:07:30.941 --> 00:07:35.067
+y escribo tercero, e imprimo esto aquí,
+
+147
+00:07:35.067 --> 00:07:38.370
+verás que lo imprime todo
+
+148
+00:07:38.370 --> 00:07:40.745
+exactamente igual que antes.
+
+149
+00:07:40.745 --> 00:07:43.780
+No hay nada especial con este
+
+150
+00:07:43.780 --> 00:07:45.200
+tipo de convención de variable.
+
+151
+00:07:45.200 --> 00:07:47.650
+Es simplemente una buena práctica de Python.
+
+152
+00:07:47.650 --> 00:07:50.290
+El componente importante a recordar
+
+153
+00:07:50.290 --> 00:07:52.487
+cada vez que trabajes con una partición,
+
+154
+00:07:52.487 --> 00:07:56.971
+es que divide lo que sea que le pases.
+
+155
+00:07:56.971 --> 00:08:00.204
+Lo que tenemos aquí, es este tipo de valor señalizador
+
+156
+00:08:00.204 --> 00:08:03.394
+con lo que tenemos con dos puntos y un espacio,
+
+157
+00:08:03.394 --> 00:08:05.440
+y pasará dentro de la string,
+
+158
+00:08:05.440 --> 00:08:07.110
+tratará de encontrarla, y después,
+
+159
+00:08:07.110 --> 00:08:09.041
+regresará tres elementos.
+
+160
+00:08:09.041 --> 00:08:12.039
+No importa cuán grande la string
+
+161
+00:08:12.039 --> 00:08:15.135
+a la que le hayas pasado una partición sea.
+
+162
+00:08:15.135 --> 00:08:17.690
+Imagina que estés en la situación
+
+163
+00:08:17.690 --> 00:08:22.690
+de una introducción a Python, y Python avanzado.
+
+164
+00:08:24.709 --> 00:08:26.900
+Si ejecutamos esto ahora mismo, observa cómo tenemos
+
+165
+00:08:26.900 --> 00:08:30.341
+dos de estos tipos de dos puntos elementos de espacio.
+
+166
+00:08:30.341 --> 00:08:32.923
+Si le doy a Enter, verás que
+
+167
+00:08:32.923 --> 00:08:35.810
+aún nos regresa tres elementos.
+
+168
+00:08:35.810 --> 00:08:38.870
+Tenemos el primero, el cual es la primera vez
+
+169
+00:08:38.870 --> 00:08:43.480
+que encontró a estos dos puntos espacio y regresó eso.
+
+170
+00:08:43.480 --> 00:08:46.660
+Y después regresó lo que quedaba restante en la string.
+
+171
+00:08:46.660 --> 00:08:51.300
+Si hicieras esto en una respuesta gigante de API, en donde
+
+172
+00:08:51.300 --> 00:08:55.007
+tuvieras, digamos, un capítulo de un libro de un API,
+
+173
+00:08:55.007 --> 00:08:57.597
+y buscaras un valor y te regresara
+
+174
+00:08:57.597 --> 00:09:01.162
+todo lo que encuentre delante de ese valor.
+
+175
+00:09:01.162 --> 00:09:04.320
+Y después te regresara todo al final.
+
+176
+00:09:04.320 --> 00:09:07.020
+Por lo que es importante que te des cuenta de esto,
+
+177
+00:09:07.020 --> 00:09:08.940
+porque cuando yo aprendí la Partición por primera vez,
+
+178
+00:09:08.940 --> 00:09:13.140
+personalmente traté de usarla en un valor
+
+179
+00:09:13.140 --> 00:09:14.740
+en donde no tenía sentido
+
+180
+00:09:14.740 --> 00:09:16.730
+porque quería más de tres elementos.
+
+181
+00:09:16.730 --> 00:09:19.796
+Pero la partición solamente funciona exactamente
+
+182
+00:09:19.796 --> 00:09:21.396
+como la hemos usado aquí.
+
+183
+00:09:21.396 --> 00:09:24.049
+Esa es una de las enseñanzas que quiero que te lleves.
+
+184
+00:09:24.049 --> 00:09:27.418
+Esa es una herramienta muy, pero que muy poderosa
+
+185
+00:09:27.418 --> 00:09:28.682
+y en la próxima guía
+
+186
+00:09:28.682 --> 00:09:31.780
+extenderemos esto un poco,
+
+187
+00:09:31.780 --> 00:09:35.530
+y revisaremos un proceso que es similar
+
+188
+00:09:35.530 --> 00:09:39.090
+a la partición, pero que nos da la habilidad de crear
+
+189
+00:09:39.090 --> 00:09:43.583
+grupos de valores basados en un conjunto entero de strings,
+
+190
+00:09:43.583 --> 00:09:45.143
+en vez de solo en uno.
+

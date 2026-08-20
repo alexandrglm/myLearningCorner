@@ -1,0 +1,650 @@
+WEBVTT
+
+1
+00:00:00.990 --> 00:00:02.960
+<v Instructor>Ahora que hemos acabado la página de inicio,</v>
+
+2
+00:00:02.960 --> 00:00:05.580
+podemos ir a la página de resultados.
+
+3
+00:00:05.580 --> 00:00:08.770
+Y si os preguntáis por qué nos ha llevado tanto tiempo
+
+4
+00:00:08.770 --> 00:00:12.260
+crear los estilos para una página,
+
+5
+00:00:12.260 --> 00:00:15.280
+os diré que realmente ha llevado un rato.
+
+6
+00:00:15.280 --> 00:00:18.380
+Pero algo que he descubierto a lo largo de los años
+
+7
+00:00:18.380 --> 00:00:22.870
+es que la primera página, o la página maestra del proyecto,
+
+8
+00:00:22.870 --> 00:00:24.740
+siempre es la que llevará más tiempo
+
+9
+00:00:24.740 --> 00:00:28.560
+porque es donde configuras todo el código texto maestro,
+
+10
+00:00:28.560 --> 00:00:30.810
+y cualquier estilo común,
+
+11
+00:00:30.810 --> 00:00:34.130
+las importaciones de clave, cosas así.
+
+12
+00:00:34.130 --> 00:00:37.580
+Van a tener lugar al principio de todo,
+
+13
+00:00:37.580 --> 00:00:40.820
+así que creo que la primera página de una app
+
+14
+00:00:40.820 --> 00:00:43.510
+que diseño o construyo, normalmente es la que lleva
+
+15
+00:00:43.510 --> 00:00:45.150
+más tiempo de todas.
+
+16
+00:00:45.150 --> 00:00:48.720
+Así que la siguiente página irá mucho más rápido.
+
+17
+00:00:48.720 --> 00:00:52.810
+Empecemos haciendo exactamente lo que hemos hecho.
+
+18
+00:00:52.810 --> 00:00:55.040
+Vamos a crear la página HTML,
+
+19
+00:00:55.040 --> 00:00:57.510
+y a partir de ahí, añadiremos
+
+20
+00:00:57.510 --> 00:00:59.490
+cada uno de los elementos en ella.
+
+21
+00:00:59.490 --> 00:01:02.420
+Pero lo que quiero hacer ahora es ir
+
+22
+00:01:02.420 --> 00:01:06.670
+y coger prestado parte del código que ya hemos escrito,
+
+23
+00:01:06.670 --> 00:01:09.790
+para poder reutilizar lo máximo posible.
+
+24
+00:01:09.790 --> 00:01:13.160
+Vamos a crearlo.
+
+25
+00:01:13.160 --> 00:01:15.500
+Voy a copiar este archivo,
+
+26
+00:01:15.500 --> 00:01:19.540
+así que en vez de índice, diremos Copiar,
+
+27
+00:01:19.540 --> 00:01:23.170
+y entonces podemos pegarlo aquí.
+
+28
+00:01:23.170 --> 00:01:26.000
+Luego en vez de índice uno,
+
+29
+00:01:26.000 --> 00:01:28.250
+ya que no me parece un nombre muy útil,
+
+30
+00:01:28.250 --> 00:01:29.540
+vamos a volverlo a nombrar,
+
+31
+00:01:29.540 --> 00:01:32.473
+y lo llamaremos resultados.
+
+32
+00:01:33.340 --> 00:01:35.390
+Y eso es lo que abriremos.
+
+33
+00:01:35.390 --> 00:01:36.920
+También voy a decir
+
+34
+00:01:36.920 --> 00:01:41.920
+Front End Search Implementation Result Page,
+
+35
+00:01:42.510 --> 00:01:45.310
+para que esté muy claro lo que estamos viendo.
+
+36
+00:01:45.310 --> 00:01:47.320
+Ahora hacemos clic en el botón derecho,
+
+37
+00:01:47.320 --> 00:01:49.820
+y decimos abrir con el servidor life server,
+
+38
+00:01:49.820 --> 00:01:52.360
+ahora nos abrirá esa página.
+
+39
+00:01:52.360 --> 00:01:55.530
+Obviamente, tiene el mismo aspecto que el inicio,
+
+40
+00:01:55.530 --> 00:01:58.230
+porque acabamos de copiar y pegar todo el código,
+
+41
+00:01:58.230 --> 00:02:01.000
+y está bien, porque si miras
+
+42
+00:02:01.000 --> 00:02:04.100
+la diferencia, veréis que aquí tenemos un logo.
+
+43
+00:02:04.100 --> 00:02:06.290
+Hasta ahora no tenemos que traerlo aquí.
+
+44
+00:02:06.290 --> 00:02:08.710
+Tendremos que poner un estilo algo distinto.
+
+45
+00:02:08.710 --> 00:02:11.260
+Tenemos esta barra de búsqueda, así que sabemos
+
+46
+00:02:11.260 --> 00:02:12.640
+que necesitaremos una barra de búsqueda.
+
+47
+00:02:12.640 --> 00:02:14.900
+Tendremos que reducirla y usarla,
+
+48
+00:02:14.900 --> 00:02:18.050
+y lo próximo son estos estos elementos.
+
+49
+00:02:18.050 --> 00:02:22.180
+Son similares a nuestro post reciente.
+
+50
+00:02:22.180 --> 00:02:23.850
+Se ve que parte del contenido
+
+51
+00:02:23.850 --> 00:02:26.740
+es el mismo, pero sigue siendo distinto.
+
+52
+00:02:26.740 --> 00:02:29.050
+Lo más probable es que me deshaga
+
+53
+00:02:29.050 --> 00:02:32.200
+de todos los posts recientes que tenemos,
+
+54
+00:02:32.200 --> 00:02:34.340
+porque no vamos a reutilizar nada de eso,
+
+55
+00:02:34.340 --> 00:02:38.090
+y voy a crear un envoltorio de resultados.
+
+56
+00:02:38.090 --> 00:02:40.290
+Vamos a empezar con eso,
+
+57
+00:02:40.290 --> 00:02:43.020
+aún no voy a preocuparme por esos dos.
+
+58
+00:02:43.020 --> 00:02:45.720
+Nos encargaremos cuando entremos en el estilo.
+
+59
+00:02:45.720 --> 00:02:50.280
+Porque ahora quiero ocuparme con el HTML.
+
+60
+00:02:50.280 --> 00:02:55.020
+En vez de los posts recientes, bajaremos.
+
+61
+00:02:55.020 --> 00:02:59.020
+Quiero deshacerme de todo lo de aquí dentro.
+
+62
+00:02:59.020 --> 00:03:01.620
+Así, recent-post-wrapper
+
+63
+00:03:01.620 --> 00:03:06.283
+ahora será results-post-wrapper,
+
+64
+00:03:08.409 --> 00:03:11.020
+y ¿qué aspecto tiene ahora?
+
+65
+00:03:11.020 --> 00:03:14.270
+Si vengo aquí, voy a copiar parte de esto.
+
+66
+00:03:14.270 --> 00:03:16.483
+Tenemos una categoría, y esto será siempre
+
+67
+00:03:16.483 --> 00:03:18.970
+lo mismo para todas.
+
+68
+00:03:18.970 --> 00:03:21.660
+Luego hay un título, y ese será también
+
+69
+00:03:21.660 --> 00:03:22.860
+el mismo para todas.
+
+70
+00:03:22.860 --> 00:03:25.320
+Y luego para el primero, porque este,
+
+71
+00:03:25.320 --> 00:03:28.830
+esta es, para llamaros la atención,
+
+72
+00:03:28.830 --> 00:03:31.980
+esta es la forma en que funciona Daily Smarty.
+
+73
+00:03:31.980 --> 00:03:34.440
+Si habéis trabajado con la API,
+
+74
+00:03:34.440 --> 00:03:36.640
+si buscáis algo y os devuelve
+
+75
+00:03:36.640 --> 00:03:40.310
+los resultados, podéis tener un título normal,
+
+76
+00:03:40.310 --> 00:03:41.143
+y luego podríais hacer clic
+
+77
+00:03:41.143 --> 00:03:43.390
+sobre él e ir al post Daily Smarty.
+
+78
+00:03:43.390 --> 00:03:48.000
+Pero también envía los vínculos enumerados que hay,
+
+79
+00:03:48.000 --> 00:03:50.910
+así que en este caso, lo que estamos imaginando,
+
+80
+00:03:50.910 --> 00:03:53.620
+es que si ponemos el ratón encima, lo que quiero hacer
+
+81
+00:03:53.620 --> 00:03:58.250
+es hacer aparecer y deslizar estos cuatro elementos.
+
+82
+00:03:58.250 --> 00:03:59.520
+No usaremos JavaScript,
+
+83
+00:03:59.520 --> 00:04:01.850
+ni lo vamos a implementar ahora mismo.
+
+84
+00:04:01.850 --> 00:04:06.500
+Lo haremos más tarde en el curso de la aplicación,
+
+85
+00:04:06.500 --> 00:04:08.690
+pero ahora mismo, vamos a enmascarar
+
+86
+00:04:08.690 --> 00:04:10.200
+lo que parece, así que sabemos
+
+87
+00:04:10.200 --> 00:04:13.090
+que tenemos un nombre de categoría, no es un vínculo.
+
+88
+00:04:13.090 --> 00:04:16.890
+Tenemos el vínculo que se apunta al sitio,
+
+89
+00:04:16.890 --> 00:04:19.130
+y luego tenemos para el primer cuadro,
+
+90
+00:04:19.130 --> 00:04:21.060
+tenemos este recuadro que será
+
+91
+00:04:21.060 --> 00:04:25.270
+una situación perfecta para usar tablas y columnas,
+
+92
+00:04:25.270 --> 00:04:27.530
+y aquí tenemos algunos
+
+93
+00:04:27.530 --> 00:04:29.380
+valores codificados,
+
+94
+00:04:29.380 --> 00:04:32.440
+para mostraros el aspecto de la página de resultados.
+
+95
+00:04:32.440 --> 00:04:35.830
+Empecemos a construir eso.
+
+96
+00:04:35.830 --> 00:04:38.650
+Voy a crear una sola.
+
+97
+00:04:38.650 --> 00:04:40.930
+Tenemos results-post-wrapper.
+
+98
+00:04:40.930 --> 00:04:42.970
+Crearemos algo como,
+
+99
+00:04:42.970 --> 00:04:46.500
+digamos que lo llamaremos post.
+
+100
+00:04:46.500 --> 00:04:48.240
+Esa sería una forma de hacerlo.
+
+101
+00:04:48.240 --> 00:04:51.660
+Podríamos decir que será un post único.
+
+102
+00:04:51.660 --> 00:04:56.503
+Sabemos que tendrá un nombre-categoría,
+
+103
+00:04:58.160 --> 00:05:03.093
+y por ahora a este nombre lo llamaremos JavaScript.
+
+104
+00:05:05.000 --> 00:05:07.350
+Luego tendrá una categoría,
+
+105
+00:05:07.350 --> 00:05:12.350
+o título de post, y aquí va a ser result-post-title.
+
+106
+00:05:18.590 --> 00:05:21.620
+Y copiamos una de estas,
+
+107
+00:05:21.620 --> 00:05:23.953
+especialmente porque son todas iguales.
+
+108
+00:05:25.950 --> 00:05:29.103
+Voy a copiarlo y pegarlo.
+
+109
+00:05:30.660 --> 00:05:33.110
+Este será nuestro título,
+
+110
+00:05:33.110 --> 00:05:35.150
+que, en realidad como solo será un vínculo,
+
+111
+00:05:35.150 --> 00:05:36.860
+lo vincularemos ahora mismo.
+
+112
+00:05:36.860 --> 00:05:39.733
+Creo que tiene mucha lógica.
+
+113
+00:05:40.690 --> 00:05:45.550
+Ahí estamos, y dejadme deshacerme de esa v
+
+114
+00:05:45.550 --> 00:05:48.560
+al principio, y luego para la href,
+
+115
+00:05:48.560 --> 00:05:50.640
+podemos poner una almohadilla
+
+116
+00:05:50.640 --> 00:05:53.820
+para que no se señale ni se dirija a ningún sitio.
+
+117
+00:05:53.820 --> 00:05:56.770
+Luego añadiremos estos cuatro,
+
+118
+00:05:56.770 --> 00:05:59.020
+o en realidad da igual.
+
+119
+00:05:59.020 --> 00:06:01.760
+Duplicamos esto cinco veces,
+
+120
+00:06:01.760 --> 00:06:04.750
+y luego voy arriba y añado estos cuatro.
+
+121
+00:06:04.750 --> 00:06:08.933
+Esto es lo que necesitamos para un post único.
+
+122
+00:06:11.440 --> 00:06:15.730
+Ahora hagamos cinco total de estos.
+
+123
+00:06:15.730 --> 00:06:20.333
+Son dos, tres, cuatro y cinco.
+
+124
+00:06:22.310 --> 00:06:25.390
+Vale, veamos con qué hay que trabajar aquí.
+
+125
+00:06:25.390 --> 00:06:27.280
+Y vale, eso funciona,
+
+126
+00:06:27.280 --> 00:06:29.780
+es horroroso y feo, pero funciona.
+
+127
+00:06:29.780 --> 00:06:32.320
+Tenemos la categoría,
+
+128
+00:06:32.320 --> 00:06:34.660
+el vínculo, todo funciona.
+
+129
+00:06:34.660 --> 00:06:37.500
+Ahora creamos estos cuatro elementos,
+
+130
+00:06:37.500 --> 00:06:40.060
+y como veis, esto también son vínculos.
+
+131
+00:06:40.060 --> 00:06:43.740
+Creo que tendría sentido ponerlos en un wrapper,
+
+132
+00:06:43.740 --> 00:06:45.900
+así que voy a subir arriba del todo,
+
+133
+00:06:45.900 --> 00:06:49.410
+y justo debajo de este título,
+
+134
+00:06:49.410 --> 00:06:54.410
+voy a decir result-post-links-wrapper,
+
+135
+00:06:58.540 --> 00:07:03.233
+y luego haremos una versión singular.
+
+136
+00:07:05.520 --> 00:07:10.520
+Esto será un punto, y a partir de ahí,
+
+137
+00:07:12.310 --> 00:07:14.330
+no, Emmet no quiere ayudarme,
+
+138
+00:07:14.330 --> 00:07:17.900
+así que tendremos que escribirlo todo.
+
+139
+00:07:17.900 --> 00:07:22.900
+Ahora vamos a crear una división para cada uno.
+
+140
+00:07:25.870 --> 00:07:26.833
+Eso es.
+
+141
+00:07:28.630 --> 00:07:30.740
+Vale, ahora podemos volver
+
+142
+00:07:30.740 --> 00:07:35.740
+a escribirlo, class es igual a result-post-links,
+
+143
+00:07:35.770 --> 00:07:39.070
+pero en vez de wrapper, ahora solo diré vínculo,
+
+144
+00:07:39.070 --> 00:07:41.933
+porque este va a ser uno.
+
+145
+00:07:43.310 --> 00:07:45.770
+Cerramos la división, eso es,
+
+146
+00:07:45.770 --> 00:07:49.540
+y dejadme copiar uno de estos elementos,
+
+147
+00:07:49.540 --> 00:07:52.220
+para tener acceso a esto.
+
+148
+00:07:52.220 --> 00:07:54.270
+Si tenéis un problema copiando
+
+149
+00:07:54.270 --> 00:07:57.210
+cualquiera de estos elementos, podéis venir aquí
+
+150
+00:07:57.210 --> 00:08:00.773
+en la HTML, y copiarlo del Inspeccionar.
+
+151
+00:08:03.120 --> 00:08:06.853
+Eso es, ahora haremos cuatro.
+
+152
+00:08:09.450 --> 00:08:12.250
+Guardamos y vamos a comprobarlo.
+
+153
+00:08:12.250 --> 00:08:14.820
+Ahí está, tenemos todo nuestro contenido.
+
+154
+00:08:14.820 --> 00:08:17.900
+Si enumeramos esto una vez más,
+
+155
+00:08:17.900 --> 00:08:21.350
+tenemos un logo, la barra de búsqueda,
+
+156
+00:08:21.350 --> 00:08:24.660
+luego está el primero con todos los detalles,
+
+157
+00:08:24.660 --> 00:08:26.340
+y todos estos están duplicados.
+
+158
+00:08:26.340 --> 00:08:29.230
+Creo que está bien, tenemos todo el HTML
+
+159
+00:08:29.230 --> 00:08:31.130
+en la página que necesitamos, e incluso creo
+
+160
+00:08:31.130 --> 00:08:33.430
+que tenemos también la estructura que necesitamos.
+
+161
+00:08:33.430 --> 00:08:36.417
+En la próxima guía, empezaremos añadiendo
+
+162
+00:08:36.417 --> 00:08:39.953
+los estilos personificados específicos de la página.
+

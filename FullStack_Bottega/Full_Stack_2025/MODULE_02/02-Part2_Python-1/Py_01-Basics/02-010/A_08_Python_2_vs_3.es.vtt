@@ -1,0 +1,231 @@
+WEBVTT
+
+1
+00:00:00.240 --> 00:00:01.578
+<v ->Hasta ahora, en esta sección,</v>
+
+2
+00:00:01.578 --> 00:00:04.078
+hablamos sobre varios atributos
+
+3
+00:00:04.078 --> 00:00:06.103
+del lenguaje de programación Python.
+
+4
+00:00:06.103 --> 00:00:09.190
+Dijimos qué es, cómo usarlo,
+
+5
+00:00:09.190 --> 00:00:12.650
+cómo usarlo en la industria,
+y también mencionamos
+
+6
+00:00:12.650 --> 00:00:15.010
+algunas prácticas óptimas principales.
+
+7
+00:00:15.010 --> 00:00:18.470
+Pero antes de comenzar
+a programar con Python
+
+8
+00:00:18.470 --> 00:00:22.290
+y a analizar la sintaxis, mencionaré las diferencias
+
+9
+00:00:22.290 --> 00:00:26.230
+entre Python 2 y Python 3.
+
+10
+00:00:26.230 --> 00:00:30.280
+En un nivel alto,
+solo es una versión distinta,
+
+11
+00:00:30.280 --> 00:00:34.050
+pero veremos varios programas distintos,
+
+12
+00:00:34.050 --> 00:00:36.657
+sobre todo, si googleamos e intentamos hallar
+
+13
+00:00:36.657 --> 00:00:39.040
+distintos programas en Internet.
+
+14
+00:00:39.040 --> 00:00:42.708
+Hallaremos algunos programas
+que usan Python 2
+
+15
+00:00:42.708 --> 00:00:45.110
+y otros que usan Python 3.
+
+16
+00:00:45.110 --> 00:00:46.650
+Y es importante entender
+
+17
+00:00:46.650 --> 00:00:48.550
+cuáles son las diferencias principales.
+
+18
+00:00:48.550 --> 00:00:52.045
+Porque muchos programas,
+durante más de una década,
+
+19
+00:00:52.045 --> 00:00:54.500
+se desarrollaron con Python 2;
+
+20
+00:00:54.500 --> 00:00:58.716
+fue la versión de facto de Python
+
+21
+00:00:58.716 --> 00:01:00.224
+durante mucho tiempo.
+
+22
+00:01:00.224 --> 00:01:03.000
+Y de hecho, sigue siendo la versión de Python
+
+23
+00:01:03.000 --> 00:01:07.030
+que viene en los sistemas operativos, como MacOS.
+
+24
+00:01:07.030 --> 00:01:10.270
+Si tienen una Mac y la encienden
+
+25
+00:01:10.270 --> 00:01:12.125
+y escriben "Python" en la terminal,
+
+26
+00:01:12.125 --> 00:01:15.530
+seguramente usarán Python 2.
+
+27
+00:01:15.530 --> 00:01:19.030
+Como Python 2 viene
+en el sistema por defecto,
+
+28
+00:01:19.030 --> 00:01:23.085
+quizá nos tentemos con usarlo
+para desarrollar programas.
+
+29
+00:01:23.085 --> 00:01:25.190
+Sin embargo, yo no lo recomiendo
+
+30
+00:01:25.190 --> 00:01:28.830
+y tampoco lo hace la comunidad Python.
+
+31
+00:01:28.830 --> 00:01:31.630
+El motivo es que en el 2020,
+
+32
+00:01:31.630 --> 00:01:34.257
+Python 2 llegará al final de su vida,
+
+33
+00:01:34.257 --> 00:01:37.150
+es decir, no tendrá más soporte.
+
+34
+00:01:37.150 --> 00:01:40.530
+No recibirá actualizaciones
+de seguridad y cosas así,
+
+35
+00:01:40.530 --> 00:01:44.040
+y tampoco tendrá funcionalidades nuevas.
+
+36
+00:01:44.040 --> 00:01:48.350
+Si queremos seguir desarrollando más aplicaciones modernas,
+
+37
+00:01:48.350 --> 00:01:51.670
+no se recomienda usar Python 2.
+
+38
+00:01:51.670 --> 00:01:55.730
+Python 3 es la versión con soporte ahora.
+
+39
+00:01:55.730 --> 00:01:57.570
+Recibe actualizaciones constantemente.
+
+40
+00:01:57.570 --> 00:02:02.550
+Al momento de grabar esto,
+estamos en Python 3.6.
+
+41
+00:02:02.550 --> 00:02:05.390
+Y además de todas las actualizaciones,
+
+42
+00:02:05.390 --> 00:02:07.850
+estará presente
+durante muchísimo tiempo.
+
+43
+00:02:07.850 --> 00:02:10.670
+Y si desarrollaremos
+más aplicaciones modernas,
+
+44
+00:02:10.670 --> 00:02:13.353
+como API de Django o Flask
+
+45
+00:02:13.353 --> 00:02:15.660
+para trabajar con algoritmos de aprendizaje automatizado,
+
+46
+00:02:15.660 --> 00:02:19.440
+Python 3 será la versión
+que mejor nos funcionará.
+
+47
+00:02:19.440 --> 00:02:24.012
+Durante todo este curso,
+usaremos Python 3.6,
+
+48
+00:02:24.012 --> 00:02:29.012
+y utilizaremos la sintaxis
+que encaje con esa versión.
+
+49
+00:02:29.210 --> 00:02:33.510
+Si intentan seguirme usando Python 2,
+
+50
+00:02:33.510 --> 00:02:35.676
+la mayoría de los programas
+se programarán
+
+51
+00:02:35.676 --> 00:02:38.918
+con una sintaxis similar,
+pero con diferencias sutiles.
+
+52
+00:02:38.918 --> 00:02:41.051
+Ténganlo en cuenta si,
+por algún motivo,
+
+53
+00:02:41.051 --> 00:02:43.687
+quieren usar la versión anterior.
+

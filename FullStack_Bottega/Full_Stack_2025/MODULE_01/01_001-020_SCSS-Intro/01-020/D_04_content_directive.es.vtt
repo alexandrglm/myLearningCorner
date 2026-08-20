@@ -1,0 +1,438 @@
+WEBVTT
+
+1
+00:00:00.970 --> 00:00:01.840
+<v Instructor>En esta guía</v>
+
+2
+00:00:01.840 --> 00:00:05.450
+hablaremos de la directiva de contenido.
+
+3
+00:00:05.450 --> 00:00:09.800
+La directiva de contenido es una herramienta muy útil
+
+4
+00:00:09.800 --> 00:00:13.940
+que podemos usar con mixins que nos permite hacer
+
+5
+00:00:13.940 --> 00:00:17.850
+interfaces un poco más flexibles
+
+6
+00:00:17.850 --> 00:00:19.410
+para eso mixins.
+
+7
+00:00:19.410 --> 00:00:23.140
+Justo aquí ya tengo un mixin estándar
+
+8
+00:00:23.140 --> 00:00:25.580
+con tres argumentos justo aquí.
+
+9
+00:00:25.580 --> 00:00:29.650
+Y esto es para un conjunto de alertas dib.
+
+10
+00:00:29.650 --> 00:00:32.400
+Tenemos HTML con esto dibs aquí,
+
+11
+00:00:32.400 --> 00:00:36.130
+y luego tenemos un mixin llamado notificación
+
+12
+00:00:36.130 --> 00:00:37.950
+que tiene varios estilos.
+
+13
+00:00:37.950 --> 00:00:42.150
+Todo desde ancho y alto hasta radio del borde
+
+14
+00:00:42.150 --> 00:00:44.410
+y los tres que son dinámicos,
+
+15
+00:00:44.410 --> 00:00:46.260
+los tres valores que son dinámicos
+
+16
+00:00:46.260 --> 00:00:49.390
+son el color de fondo, el color de la fuente de texto
+
+17
+00:00:49.390 --> 00:00:50.860
+y el borde.
+
+18
+00:00:50.860 --> 00:00:53.850
+Y traeremos esos como argumentos.
+
+19
+00:00:53.850 --> 00:00:54.970
+Esto está bien.
+
+20
+00:00:54.970 --> 00:00:56.350
+Esto funciona perfectamente bien.
+
+21
+00:00:56.350 --> 00:01:01.350
+Nuestro resultado final será el mismo código CSS
+
+22
+00:01:02.320 --> 00:01:03.660
+luego de ser compilado.
+
+23
+00:01:03.660 --> 00:01:06.910
+Sin embargo, hay otra forma de hacerlo.
+
+24
+00:01:06.910 --> 00:01:08.990
+Y en ciertas circunstancias,
+
+25
+00:01:08.990 --> 00:01:12.420
+usar la directiva de contenido puede ser un poco
+
+26
+00:01:12.420 --> 00:01:16.980
+más intuitivo que lo que hacemos aquí.
+
+27
+00:01:16.980 --> 00:01:20.590
+Así que aquí estamos ajustando manualmente
+
+28
+00:01:20.590 --> 00:01:23.600
+todos esos valores y estamos ajustando los argumentos,
+
+29
+00:01:23.600 --> 00:01:25.253
+y los estamos llamando.
+
+30
+00:01:26.532 --> 00:01:27.370
+Y eso puede estar bien.
+
+31
+00:01:27.370 --> 00:01:31.040
+Como viste cuando creamos el Mixin completo para Flexbox,
+
+32
+00:01:31.040 --> 00:01:31.970
+eso funcionó.
+
+33
+00:01:31.970 --> 00:01:34.410
+Y es porque queríamos hacer cosas
+
+34
+00:01:34.410 --> 00:01:36.827
+como establecer un montón de valores
+
+35
+00:01:36.827 --> 00:01:39.010
+y valores de argumentos por defecto
+
+36
+00:01:39.010 --> 00:01:40.360
+y ese tipo de cosa.
+
+37
+00:01:40.360 --> 00:01:43.030
+Pero en este caso tomaría un enfoque distinto.
+
+38
+00:01:43.030 --> 00:01:48.030
+En vez de colocar estos objetos de contenido en el mixin,
+
+39
+00:01:48.260 --> 00:01:51.290
+usaría la directiva de contenido.
+
+40
+00:01:51.290 --> 00:01:53.370
+Para poder hacer eso puedo
+
+41
+00:01:53.370 --> 00:01:55.751
+deshacerme de todos estos argumentos
+
+42
+00:01:55.751 --> 00:02:00.751
+y puedo deshacerme de todo este código aquí.
+
+43
+00:02:00.950 --> 00:02:05.580
+Ahora nuestra notificación no necesitará ser
+
+44
+00:02:05.580 --> 00:02:06.780
+un argumento.
+
+45
+00:02:06.780 --> 00:02:09.400
+Y me desharé de esto.
+
+46
+00:02:09.400 --> 00:02:11.520
+Y esto.
+
+47
+00:02:11.520 --> 00:02:14.880
+Y ahora mismo no mostrará nada,
+
+48
+00:02:14.880 --> 00:02:16.440
+lo que tiene sentido.
+
+49
+00:02:16.440 --> 00:02:20.373
+Pero lo que voy a hacer es pasar @content,
+
+50
+00:02:21.860 --> 00:02:25.130
+y lo que esto hará es que esencialmente nos permitirá
+
+51
+00:02:25.130 --> 00:02:29.680
+colocar cualquier otro estilo que quiera
+
+52
+00:02:29.680 --> 00:02:34.680
+y esta directiva de contenido dará
+
+53
+00:02:34.920 --> 00:02:36.920
+lo que pasemos.
+
+54
+00:02:36.920 --> 00:02:40.694
+Con notificación, esta notificación de error,
+
+55
+00:02:40.694 --> 00:02:44.380
+la forma de llamar esta directiva de contenido
+
+56
+00:02:44.380 --> 00:02:46.320
+o como puedes pasar la data para eso
+
+57
+00:02:46.320 --> 00:02:49.010
+es al abrir con corchetes rizados,
+
+58
+00:02:49.010 --> 00:02:54.010
+y esto es justo después de incluir el mixin.
+
+59
+00:02:55.160 --> 00:02:57.593
+Aquí puedo decir background-color.
+
+60
+00:02:59.040 --> 00:03:01.173
+Establece esto igual a rojo oscuro
+
+61
+00:03:01.173 --> 00:03:03.673
+y luego puedo colocar mi color
+
+62
+00:03:05.050 --> 00:03:10.050
+igual a blanco y luego puedo establecer el borde igual a 1px
+
+63
+00:03:10.260 --> 00:03:14.783
+y sólido e iremos con gris claro.
+
+64
+00:03:17.800 --> 00:03:19.270
+Ese es el bore.
+
+65
+00:03:19.270 --> 00:03:20.730
+Puede ser un poco difícil de ver ahí,
+
+66
+00:03:20.730 --> 00:03:22.170
+pero ahí está.
+
+67
+00:03:22.170 --> 00:03:24.540
+Así que esto trabaja bien.
+
+68
+00:03:24.540 --> 00:03:29.540
+Y si copiamos esto para nuestra clase exitosa,
+
+69
+00:03:29.550 --> 00:03:33.553
+ahora en vez de rojo oscuro podemos cambiar a verde océano,
+
+70
+00:03:36.520 --> 00:03:39.423
+el color aquí quiero que sea crema de menta,
+
+71
+00:03:40.600 --> 00:03:43.580
+y en vez de gris claro aquí
+
+72
+00:03:43.580 --> 00:03:46.290
+iremos con salmón claro.
+
+73
+00:03:46.290 --> 00:03:48.990
+No porque me guste pero porque
+
+74
+00:03:48.990 --> 00:03:50.533
+es más fácil de ver.
+
+75
+00:03:51.740 --> 00:03:56.520
+Ok, ahora todo esto trabaja perfectamente.
+
+76
+00:03:56.520 --> 00:03:58.130
+Entonces,
+
+77
+00:03:58.130 --> 00:04:00.580
+Aquí lo que es importante recordar
+
+78
+00:04:00.580 --> 00:04:02.410
+es que no estamos limitados por estos objetos.
+
+79
+00:04:02.410 --> 00:04:03.690
+Sé que comenzamos con estos,
+
+80
+00:04:03.690 --> 00:04:06.540
+pero si quisiera hacer algo más
+
+81
+00:04:06.540 --> 00:04:11.410
+podría colocar todo eso aquí en este contenido.
+
+82
+00:04:11.410 --> 00:04:16.410
+Si quisiera, podría sobreescribir el ancho aquí
+
+83
+00:04:16.920 --> 00:04:21.440
+y podría decir 15 pixeles o algo así
+
+84
+00:04:21.440 --> 00:04:22.610
+y se encogería.
+
+85
+00:04:22.610 --> 00:04:24.490
+Obviamente eso sería algo raro
+
+86
+00:04:24.490 --> 00:04:26.010
+porque no lo podrías ver.
+
+87
+00:04:26.010 --> 00:04:28.180
+Pero el punto es mostrar
+
+88
+00:04:28.180 --> 00:04:30.820
+que es completamente dinámico.
+
+89
+00:04:30.820 --> 00:04:34.730
+Así que puedo sobreescribir cualquiera de esos valores.
+
+90
+00:04:34.730 --> 00:04:37.770
+El punto de usar la directiva de contenido
+
+91
+00:04:37.770 --> 00:04:42.040
+no es reemplazar los argumentos en mixins,
+
+92
+00:04:42.040 --> 00:04:44.410
+porque hay muchos momentos
+
+93
+00:04:44.410 --> 00:04:46.179
+donde querrás hacer eso.
+
+94
+00:04:46.179 --> 00:04:50.190
+Personalmente adoro usar argumentos en mixins.
+
+95
+00:04:50.190 --> 00:04:51.180
+La hace muy fácil.
+
+96
+00:04:51.180 --> 00:04:55.209
+Es muy parecido a escribir código Ruby o JavaScript,
+
+97
+00:04:55.209 --> 00:04:57.120
+y mi mente funciona de esa manera.
+
+98
+00:04:57.120 --> 00:05:00.090
+Así que tiendo a usar eso bastante.
+
+99
+00:05:00.090 --> 00:05:02.000
+Sin embargo, hay momentos donde
+
+100
+00:05:02.000 --> 00:05:04.720
+quiero tener algo más de flexibilidad.
+
+101
+00:05:04.720 --> 00:05:08.020
+Y eso es lo que la directiva de contenido me permite tener.
+
+102
+00:05:08.020 --> 00:05:11.230
+Así que aquí no tengo que preocuparme por pasar
+
+103
+00:05:11.230 --> 00:05:14.760
+todo tipo de variables y argumentos locos
+
+104
+00:05:14.760 --> 00:05:18.270
+y preocuparme por tipos predeterminados y ese tipo de cosas,
+
+105
+00:05:18.270 --> 00:05:22.860
+simplemente puedo llamar la directiva de contenido aquí
+
+106
+00:05:22.860 --> 00:05:27.860
+y pasar cualquier otro tipo de estilos, sobreescrituras,
+
+107
+00:05:27.870 --> 00:05:30.290
+objetos adicionales, justo ahí
+
+108
+00:05:30.290 --> 00:05:32.630
+y todo trabajará muy bien.
+
+109
+00:05:32.630 --> 00:05:36.363
+Así es como puedes usar directivas de contenido en Sass.
+
