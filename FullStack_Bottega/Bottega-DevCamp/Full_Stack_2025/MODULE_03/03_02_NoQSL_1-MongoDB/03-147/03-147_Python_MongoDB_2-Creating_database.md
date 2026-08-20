@@ -183,7 +183,7 @@ Expected output:
 
 This confirms that our user `testing` has been successfully created with the specified roles.
 
-![terminal output](../../../../../../.gitbook/assets/03-147_IMG01.png)
+![terminal output](./03-147_IMG01.png)
 
 ***
 
@@ -244,7 +244,7 @@ mongo
 
 and you'll have everything up and running just like I have right here and you should have a terminal prompt just like this.
 
-![large](../../../../../../.gitbook/assets/03-147_IMG1.png)
+![large](./03-147_IMG1.png)
 
 Now, this is not the regular terminal, this is Mongo's shell. Now if you want to see all of the databases that you currently have on your system you can type in
 
@@ -254,7 +254,7 @@ show dbs
 
 and sort for databases and then it will bring you all of the databases that you currently have.
 
-![large](../../../../../../.gitbook/assets/03-147_IMG2.png)
+![large](./03-147_IMG2.png)
 
 Unless you have been working with Mongo you probably have fewer items than these a few of these are ones of other projects that I have. The way that you can create a new database is to use the `use` word, so I'm going to say
 

@@ -122,7 +122,7 @@ say URL and then simply say strip and then because it's a function call\
 it with parens. Now if I hit enter here this is going to return back the\
 URL
 
-![large](../../../../../../../.gitbook/assets/02-034_IMG1.png)
+![large](.././02-034_IMG1.png)
 
 Notice how even though I added these spaces before and after strip\
 got rid of them and that is the standard behavior with strip.
@@ -139,11 +139,11 @@ https:// right here in front of each one of the URL strings. What I can\
 do is I can say URL strip and then pass in as a string this https:// and\
 now if I run this you're gonna see that it prints out Google.
 
-![large](../../../../../../../.gitbook/assets/02-034_IMG2.png)
+![large](.././02-034_IMG2.png)
 
 Now there is if you're following along on [repl.it](https://repl.it/) then you'll see there is a little error here
 
-![large](../../../../../../../.gitbook/assets/02-034_IMG3.png)
+![large](.././02-034_IMG3.png)
 
 It's not technically an error it's a warning but it says suspicious\
 argument in string strip call and that is because you really do need to\
@@ -171,7 +171,7 @@ left all the way to where it finds its match. I'm going to comment this\
 right here and so now if I print out url.lstrip and print that you can\
 see it gives us the exact same behavior.
 
-![large](../../../../../../../.gitbook/assets/02-034_IMG4.png)
+![large](.././02-034_IMG4.png)
 
 Now if you guessed that 'lstrip' might have a cousin. Then you would be right and it is `rstrip` and let's create a new string and were going to perform reassignment\
 here so I'm gonna say 'lstrip'. Let's pull out the https:// let's remove\
@@ -185,7 +185,7 @@ so we'll end it with parens. And now we can simply pass in URL to our\
 print statement and see if this works. So if I run this you can see that\
 it does.
 
-![large](../../../../../../../.gitbook/assets/02-034_IMG5.png)
+![large](.././02-034_IMG5.png)
 
 It prints out Google and it looks more like the company name even\
 though we started with simply grabbing the url. So there's is something\

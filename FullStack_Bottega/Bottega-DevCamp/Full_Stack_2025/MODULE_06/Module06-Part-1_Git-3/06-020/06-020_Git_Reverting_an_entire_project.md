@@ -26,7 +26,7 @@ So this should be very isolated it is much smarter to simply go through the proc
 
 If I type git log in here you can see that head is currently pointed at the very top commit there and if you go down through all these lines you can see we have a decent number of commits all the way going back all the way to the initial commit.
 
-![large](../../../../../../.gitbook/assets/06-020_IMG1.png)
+![large](./06-020_IMG1.png)
 
 Now as you're going to see when we reset and we revert the entire project to a different version. All of those comments above the one that we are going to select will all go away. And so there are technically ways of getting them back but that goes into some very messy kind of topics that we want to try to avoid as much as possible.
 
@@ -34,7 +34,7 @@ So I'm going to quit out of this and we are going to do exactly what we said bec
 
 And so I'm going to come here and let's perform our full investigation. So if I come and grab this comment right here and copy it let's check it out.
 
-![large](../../../../../../.gitbook/assets/06-020_IMG2.png)
+![large](./06-020_IMG2.png)
 
 So I'm going to make sure we don't have any other branches so git branch I only have master so I can say git check out paste this in and then call investigation. One other note here investigations just what I call it because there is nothing magical about the keyword it's not reserved or anything like that the reason why you do it is so that I know beyond a shadow of a doubt that this branch's goal is just to allow me to investigate the code inside it's not a feature branch or anything like that.
 
@@ -50,27 +50,27 @@ git reset --hard (your commit id)
 
 Run that and now you can see it has pointed head at a different ID and it's the one that we pasted in and as you can see we have 0 5 7 8 and that's exactly what we have right here.
 
-![large](../../../../../../.gitbook/assets/06-020_IMG3.png)
+![large](./06-020_IMG3.png)
 
 So it updated the git ignore file to include node modules directory. So this is taking us all the way back in time. If I type git log now you can see that this has reverted it all the way back to where now we only have these four commits.
 
-![large](../../../../../../.gitbook/assets/06-020_IMG4.png)
+![large](./06-020_IMG4.png)
 
 So if we look at the project and we see git ignore is still there my file now only has one and read me only has those three lines so this is working properly.
 
 Now you may think that you could just push this up so you type git status. You can see that there's no change so there's nothing that we need to commit or anything like that but it does say that the branches behind origin master by 20 commits and so and it can be fast-forwarded.
 
-![large](../../../../../../.gitbook/assets/06-020_IMG5.png)
+![large](./06-020_IMG5.png)
 
 Now it is saying to use git pull to update the local branch but if you did that what that would do is it would simply bring back all of the 20 comments that we just removed. So that's not what we're looking to do. This next command is called a force command. So I can say `git push -f` and then `origin master`.
 
 So I'm going with the remote name followed by the branch name and if I hit push this is going to force this up
 
-![large](../../../../../../.gitbook/assets/06-020_IMG6.png)
+![large](./06-020_IMG6.png)
 
 Now if I switch to Google Chrome you can see that we have all of these changes right here. And then we have the python changes everything here is the latest version before we perform the revert. And if I hit refresh you can see it has been reverted back.
 
-![large](../../../../../../.gitbook/assets/06-020_IMG7.png)
+![large](./06-020_IMG7.png)
 
 So our python file now only has the one line and then we only have what we had a few weeks ago here. So that worked perfectly assuming that you do want to push that back. And also if you come up here and click on commits you can see that it has taken our entire project back in time. So if that is something that you want to do just always be 100 percent certain you know exactly what you're doing.
 

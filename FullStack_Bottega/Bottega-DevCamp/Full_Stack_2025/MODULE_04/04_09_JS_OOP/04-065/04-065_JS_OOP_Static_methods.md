@@ -151,7 +151,7 @@ static methods.
 
 Now an `instance method` to review is a method that can be called on a specific instance just like we were able to call render details on the Jon instance and the Brayden instance.
 
-![medium](../../../../../../.gitbook/assets/04-065_IMG1.png)
+![medium](./04-065_IMG1.png)
 
 And so now we're going to use what's called a `static method`. And I think one of the easiest ways of understanding what static methods are is starting off with a base case.
 

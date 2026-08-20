@@ -145,7 +145,7 @@ full_name = lambda first, last: f'{first} {last}'
 
 So, we're creating a very basic function that takes in a first and last name variable returns a formatted string and then what we can do is treat it like a normal function, so I can call full name and then pass in string values so I can pass in and Kristine and Hudgens just like we've done in the past when we add a full name function.
 
-And we'll also print this because a lambda is only going to return the value I don't want to print that value out. So we're going to simply print this and you can see this is the exact same behavior as when we had a function. ![large](../../../../../../../../.gitbook/assets/03-105_IMG1.png)
+And we'll also print this because a lambda is only going to return the value I don't want to print that value out. So we're going to simply print this and you can see this is the exact same behavior as when we had a function. ![large](../.././03-105_IMG1.png)
 
 But now let's stretch it out a little bit and let's create a greeting function.
 
@@ -161,7 +161,7 @@ So everything here works properly this should say.
 
 Hi there Tiffany Hudgens so if I run this you can see that that is working properly.
 
-![large](../../../../../../../../.gitbook/assets/03-105_IMG2.png)
+![large](../.././03-105_IMG2.png)
 
 So in review a Lambda gives you the ability to quickly and easily wrap functionality, store it in a variable and then pass that entire process to other functions and other parts of your program.
 

@@ -118,7 +118,7 @@ But we didn't get an error or anything like that so our syntax is all correct.
 
 So I'm going to now print out number\_of\_tags and you can see we have four elements inside of here.
 
-![large](../../../../../../../../.gitbook/assets/02-052_IMG1.png)
+![large](../.././02-052_IMG1.png)
 
 ***
 
@@ -151,7 +151,7 @@ Well, there are few ways of doing it and the easiest way is we're going to cheat
 And, so I can say `last_item` and set it equal to tags and then inside of our tags bracket.\
 So, instead of querying zero or , we want to make sure we're getting the very last element in the way that we can do that is bypassing in a negative index so I can say tag's -1 and instead of starting here -1 goes all the way to the back and it grabs this element.
 
-![IMG](../../../../../../../../.gitbook/assets/02-052_IMG1b.png)
+![IMG](../.././02-052_IMG1b.png)
 
 If you remember back to the section. This is the same process that Python utilizes when you're trying to traverse through the characters of a string.
 
@@ -176,7 +176,7 @@ of code.
 
 So, let me save that and print it. So now we're going to have `index_of_last_item` and now if I run this you can see that we have the number three that we're looking for right here.
 
-![large](../../../../../../../../.gitbook/assets/02-052_IMG2.png)
+![large](../.././02-052_IMG2.png)
 
 So this is perfect.
 

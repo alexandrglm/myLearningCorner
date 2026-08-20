@@ -172,7 +172,7 @@ Let's see if this works. I'm going to say greeting and I want to print this out.
 
 So if I run this code here. You can see it says hi Kristine. You are listed as 12 years old and you have purchased Python eLearning course.
 
-![IMG](../../../../../../../.gitbook/assets/02-030_IMG1.png)
+![IMG](.././02-030_IMG1.png)
 
 Just so you know \*\*you don't have to supply these in order. \*\*
 
@@ -187,7 +187,7 @@ And as you can see it says `product purchased Python e-learning course`.
 
 And then `Hi Kristine`.
 
-![IMG](../../../../../../../.gitbook/assets/02-030_IMG2.png)
+![IMG](.././02-030_IMG2.png)
 
 So the order that you placed these in the string doesn't matter you simply have to know that whenever you want to reference name you're going to use the brackets with the zero whenever you want to use age you're going to be using one and product is going to use two.
 
@@ -204,7 +204,7 @@ So I could say here and pass in a number for because that's the index.
 
 And now if I run this oh says file Python line 5 tuple index out of range.
 
-![IMG](../../../../../../../.gitbook/assets/02-030_IMG3.png)
+![IMG](.././02-030_IMG3.png)
 
 and that was simply my mistake.
 
@@ -218,7 +218,7 @@ You've never use zero-base indexes one of the most natural things that we do as 
 
 So if I run this again you'll see that it works
 
-![IMG](../../../../../../../.gitbook/assets/02-030_IMG4.png)
+![IMG](.././02-030_IMG4.png)
 
 And so that, you can pass just a string in here.
 
@@ -234,7 +234,7 @@ One other note to keep in mind, part of the reason why you don't edit out the er
 
 You get to see what the error message was so if I come back and change this back to 4 and run it you can see we:
 
-![IMG](../../../../../../../.gitbook/assets/02-030_IMG3.png)
+![IMG](.././02-030_IMG3.png)
 
 Now that is unless you're familiar with what tuples are and you've\
 worked with an out of range error that may not be the most intuitive\
@@ -249,7 +249,7 @@ to debug them.
 
 I'm going to switch back to 3 hit run and now everything is once again working.
 
-![IMG](../../../../../../../.gitbook/assets/02-030_IMG4.png)
+![IMG](.././02-030_IMG4.png)
 
 So this is how you can use the format method in order to implement string interpolation.
 
@@ -259,7 +259,7 @@ And then I can simply type an "f" right here which is short for format.
 
 This is I think a cleaner way of doing it and then I don't have to worry about these index numbers anymore. And so here I can just say product and then name, age and then if I wanted to I could throw up a from\_account and place it just like that and if I type all of that out and now run this you're going to get the exact same output.
 
-![IMG](../../../../../../../.gitbook/assets/02-030_IMG6.png)
+![IMG](.././02-030_IMG6.png)
 
 But the reason why I like this better is because it's more intuitive.
 

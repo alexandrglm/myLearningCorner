@@ -84,7 +84,7 @@ challenging to read if they're not implemented correctly.
 
 Referencing [PEP 20](https://www.python.org/dev/peps/pep-0020/) , which is the Zen of Python that we've discussed before, If you scroll down the third item on the Zen of Python is that simple is better than complex.
 
-![large](../../../../../../../../.gitbook/assets/03-091_IMG1.png)
+![large](../.././03-091_IMG1.png)
 
 And so, I will show you how to implement ternary operators because these are going to be constructs that you're going to see in a number of Python programs but I am going to give the warning that you need to be careful and you need to make sure that when you implement these that they are better than simply going with a standard if-else statement.
 
@@ -115,11 +115,11 @@ auth = 'can access' if role == 'admin' else 'cannot access'
 
 and so now I say print(auth) what this is going to do is it can print out that that user who's logged in can access the system.
 
-![large](../../../../../../../../.gitbook/assets/03-091_IMG2.png)
+![large](../.././03-091_IMG2.png)
 
 If I type guessed here and run it you can see that it says that they cannot access the system.
 
-![large](../../../../../../../../.gitbook/assets/03-091_IMG3.png)
+![large](../.././03-091_IMG3.png)
 
 This is a pretty standard approach and this is, in my opinion, a good way of being able to build out a ternary operator because my rule of thumb is that whenever I'm building out a conditional if it can read as close to normal language as possible then that can be a good scenario where a ternary operator can be used because then it is clear.
 
@@ -139,7 +139,7 @@ In this case, what I'm doing is I'm just going to return the value or I'm going 
 
 And now I can just print auth just like we did before. So if I run this you can see 'can access'.
 
-![large](../../../../../../../../.gitbook/assets/03-091_IMG4.png)
+![large](../.././03-091_IMG4.png)
 
 If this is anything else.
 
@@ -151,7 +151,7 @@ I'll give us a little bit more room so it's all on one line and that is one rule
 
 Just because it's harder to read and it can lead to syntax errors and typos or spelling mistakes and things like that. So let's see what this mapping looks like.
 
-![large](../../../../../../../../.gitbook/assets/03-091_IMG4.png)
+![large](../.././03-091_IMG4.png)
 
 You can see that we're assigning here whatever the result of the ternary operator is so you can see that if that condition is true you place that first.
 

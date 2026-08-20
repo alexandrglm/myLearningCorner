@@ -21,9 +21,9 @@ Code snippets are reusable code blocks that:
 * Maintain consistency
 * Can include placeholders and tab stops
 
-![VSCode Snippet 1b](../../../../../../../.gitbook/assets/06-109_IMG1b.png)
+![VSCode Snippet 1b](.././06-109_IMG1b.png)
 
-![](../../../../../../../.gitbook/assets/06-109_IMG2b.png)
+![](.././06-109_IMG2b.png)
 
 ***
 
@@ -173,29 +173,29 @@ If you have never worked with code snippets before I think you're really going t
 
 As you can see I simply started typing H and now it automatically is recommending the HTML5 snippet that I created.
 
-![large](../../../../../../../.gitbook/assets/06-109_IMG1.png)
+![large](.././06-109_IMG1.png)
 
 So if I hit return this is going to generate the entire HTML5 boilerplate code.
 
-![large](../../../../../../../.gitbook/assets/06-109_IMG2.png)
+![large](.././06-109_IMG2.png)
 
 Now, this is something that is not directly built into the text editor. This is something I added myself and I'm going to show you exactly how to do that and I'm even going to show you how to do it in multiple programming languages so I no longer have to go and type all of this code out from scratch every time I want to use the full HTML5 boilerplate. So I can save this file and now I have access to the full set of HTML5 features.
 
 So now let's walk through and see how you can do this inside of your own system. If you're on a Mac you can come up to the top left-hand side where it says code right here and then go to preferences and then user snippets.
 
-![large](../../../../../../../.gitbook/assets/06-109_IMG13.png)
+![large](.././06-109_IMG13.png)
 
 If you are on a Windows or Linux machine then you're going to have a similar but just slightly different looking interface. The key is you want to go to user snippets and from here this is going to pop up a dialog box and it's going to ask you to select a language for this snippet that you want to create.
 
-![large](../../../../../../../.gitbook/assets/06-109_IMG4.png)
+![large](.././06-109_IMG4.png)
 
 This is something that I really like about VS Code because it makes it very easy to organize each one of your code snippets specifically by language. So if I start typing in JavaScript it gives me a few different options so it gives me javascript react and then javascript babel. I want to use babel and so if I open that up you can see that it has a full set of instructions already here for me
 
-![large](../../../../../../../.gitbook/assets/06-109_IMG5.png)
+![large](.././06-109_IMG5.png)
 
 and the default one is actually pretty cool so I'm going to get rid of this comment here and so get rid of that entire example and the ending comment tag.
 
-![large](../../../../../../../.gitbook/assets/06-109_IMG6.png)
+![large](.././06-109_IMG6.png)
 
 And what it does is it actually gives you this default example that you can use as your own personal guide for creating your own snippets and it's called print to console.
 
@@ -215,35 +215,35 @@ The `$2` what this represents is that we want to add a new line below. So any ti
 
 Then right below this is the full description. So the print to console is like the short description and then down here we have this extensive description and it says log output to the console.
 
-![large](../../../../../../../.gitbook/assets/06-109_IMG7.png)
+![large](.././06-109_IMG7.png)
 
 So I'm going to save this and I have an index.js file opened right here. So if I come here and simply type log you can see that it by default is looking for that user snippet
 
-![large](../../../../../../../.gitbook/assets/06-109_IMG8.png)
+![large](.././06-109_IMG8.png)
 
 And if I hit return you can see that it works perfectly.
 
-![large](../../../../../../../.gitbook/assets/06-109_IMG9.png)
+![large](.././06-109_IMG9.png)
 
 I have a console log statement and I can say hi there. Notice how the cursor was placed right inside of the console log statement and that it also added a new line right at the bottom.
 
-![large](../../../../../../../.gitbook/assets/06-109_IMG10.png)
+![large](.././06-109_IMG10.png)
 
 So that is working nicely.
 
 So far we've seen one that I premade and then we saw the default one that's used as a tutorial
 
-![large](../../../../../../../.gitbook/assets/06-109_IMG11.png)
+![large](.././06-109_IMG11.png)
 
-![large](../../../../../../../.gitbook/assets/06-109_IMG12.png)
+![large](.././06-109_IMG12.png)
 
 Now let's create our own custom snippets from scratch. And what I want to do is I want to create a snippet that will create a ul tag so it's going to create a set of bullet points for us. So I'm going to come up to code, go down to preferences user snippets.
 
-![large](<../../../../../../../.gitbook/assets/06-109_IMG13 (1).png>)
+![large](<.././06-109_IMG13 (1).png>)
 
 Let's go to HTML and you can see that here is my boilerplate code
 
-![large](../../../../../../../.gitbook/assets/06-109_IMG14.png)
+![large](.././06-109_IMG14.png)
 
 And we're going to replicate this at the very end of the second to last curly brace we'll add a comma because we're going to be adding a new snippet right here at the bottom. And so I'm just going to call the Bullets you can call it whatever you'd like. And then this is going to follow the exact same structure as the snippet above. So I'm giving the short title here of Bullets, then next I'm going to add a prefix. I'll just call it bullets as well for our bullet items and then after that, I need to paste in or I need to add my body.
 
@@ -251,19 +251,19 @@ Now I'm not going to use a string instead I'm going to use an array. Remember th
 
 So here I can say `<li>` and then I'm going to add a `$1` and then I'm going to close off that li statement because I want to place the cursor right there. I could also use `$0` and that would work, as you can see that's exactly what I did here in Boilerplate. And so it's going to look for the first element that it finds with that dollar symbol. And then I want to close this off so I'm going to have a UL closing tag and that should be it. I just now need to add a description right after this body so now I'll say description and say adds bullet point list to HTML file and that should be it so I can hit save.
 
-![large](../../../../../../../.gitbook/assets/06-109_IMG15.png)
+![large](.././06-109_IMG15.png)
 
 Now I should just be able to type bullets in and it should create this entire snippet for me so if I come back to the HTML file inside of this body type bullets and as you can see that worked perfectly
 
-![large](../../../../../../../.gitbook/assets/06-109_IMG16.png)
+![large](.././06-109_IMG16.png)
 
 I can say hi there on this line and then create another one here, Hi there again, hit save.
 
-![large](../../../../../../../.gitbook/assets/06-109_IMG17.png)
+![large](.././06-109_IMG17.png)
 
 And now just to make sure that this is all working. I'm gonna open up the browser and I already have my index HTML file open I can hit refresh and you can see that that is working perfectly.
 
-![large](../../../../../../../.gitbook/assets/06-109_IMG18.png)
+![large](.././06-109_IMG18.png)
 
 We have our full bullet points and we've been able to leverage snippets in order to make the entire process efficient inside of vs code.
 

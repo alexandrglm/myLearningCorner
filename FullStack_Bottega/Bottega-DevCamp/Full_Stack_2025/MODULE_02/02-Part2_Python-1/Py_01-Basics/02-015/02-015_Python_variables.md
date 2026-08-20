@@ -23,7 +23,7 @@ For example, [Rep.it](https://repl.it/) is utilized for the more basic programs 
 
 If you've already gone through the system configuration guide, go to [repl.it](https://repl.it/) to sign in (I'm using my GitHub login) or create a new Repl, then select Python 3.
 
-![IMG](../../../../../../../.gitbook/assets/02-015_IMG1.png)
+![IMG](.././02-015_IMG1.png)
 
 If it's not appearing in the popular section (the auto fill), you could start typing in "Python 3" and select it that way.
 
@@ -82,7 +82,7 @@ print(post_count)
 
 This will save automatically. If I hit "run", you can see on the right that each variable and its print has ran properly.
 
-![IMG](../../../../../../../.gitbook/assets/02-015_IMG2.png)
+![IMG](.././02-015_IMG2.png)
 
 At a high level, a variable is a container; giving you the ability to store elements to reuse later on.
 
@@ -96,7 +96,7 @@ You can see it's an identical program.
 
 In Vim, **do not become distracted of the dotted lines, tildas, etc.** Details of this will be shown later on.
 
-![IMG](../../../../../../../.gitbook/assets/02-015_IMG3.png)
+![IMG](.././02-015_IMG3.png)
 
 All that truly matters is that we have the exact same program that we had in [repl.it](https://repl.it/).
 
@@ -135,7 +135,7 @@ Here, I am able to say name is equal to Kristine and post count is equal to 42.
 
 I will also receive the identical output if I say print name and print post count.
 
-![IMG](../../../../../../../.gitbook/assets/02-015_IMG4.png)
+![IMG](.././02-015_IMG4.png)
 
 Since we didn't really go through a real program when we discussed each type of development environment, I will demonstrate a side by side comparison while going through the variable guide.
 

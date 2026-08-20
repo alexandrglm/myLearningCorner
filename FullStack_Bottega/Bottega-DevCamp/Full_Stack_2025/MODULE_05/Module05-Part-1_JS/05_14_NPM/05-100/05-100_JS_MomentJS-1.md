@@ -16,19 +16,19 @@ The first thing I'm going to do is I'm going to change back into the desktop. An
 
 So I'm going to type in `js-generate` and this is going to ask me what kind of project I want. Once again I want the es6-starter and for this one, we're simply going to call this PackageProject and that is all we have to do. Now I'm going to CD into that directory and now that I'm there and let me also open that up inside of Visual Studio Code so I'm gonna hit command o click on PackageProject, simply click open
 
-![large](../../../../../../../.gitbook/assets/05-100_IMG1.png)
+![large](.././05-100_IMG1.png)
 
 and then it is going to open the entire project and you can see we have all of our code right here.
 
-![large](../../../../../../../.gitbook/assets/05-100_IMG2.png)
+![large](.././05-100_IMG2.png)
 
 Now I want to first go into the package.json file and you'll see all of the dependencies that we currently have. Now notice we do not have a dependency called momentjs listed here and that is going to be the one that you can see here in the browser that we were going to implement.
 
-![large](../../../../../../../.gitbook/assets/05-100_IMG3.png)
+![large](.././05-100_IMG3.png)
 
 But before we do that I'm going to open up the terminal and type npm install. Now what is going to go on here is it's going to go through this process is going to go through our package.json file. It's going to go through all of our dependencies both our dev dependencies and are our regular production dev dependencies right here. And as you can see it's going to create node modules directory. And each one of these different packages is going to be brought down in your application and all of the code is going to be stored in this node modules directory.
 
-![large](../../../../../../../.gitbook/assets/05-100_IMG4.png)
+![large](.././05-100_IMG4.png)
 
 Now one thing I want to point out about how this works and it's very important because if you plan on doing any real-world javascript development you're going to run into this, your node modules directory can be a completely thrown away kind of tool which means that because it can be generated on the fly if you run into any kinds of dependency issues or bugs where say one of these packages interferes with another one it is no problem at all to simply delete this file from your computer and then run npm install once again and it will create this new modules directory.
 
@@ -54,11 +54,11 @@ npm install --save moment
 
 and this is going to go through it's going to reach up into the NPM registry and then it is going to pull down the momentjs Library and as you can see we have it right here.
 
-![large](../../../../../../../.gitbook/assets/05-100_IMG5.png)
+![large](.././05-100_IMG5.png)
 
 And if we open up our node modules directory and scroll all the way down to the M's you will see that we have the moment directory inside of there as well somewhere. Let me see where is that. Oh yes if you are in Visual Studio code you might have to hit refresh and then scroll back up and then you will see it.
 
-![large](../../../../../../../.gitbook/assets/05-100_IMG6.png)
+![large](.././05-100_IMG6.png)
 
 There we go. We have the momentjs library right here and that means that because it's there that means we can start to import it and use it directly in our project.
 

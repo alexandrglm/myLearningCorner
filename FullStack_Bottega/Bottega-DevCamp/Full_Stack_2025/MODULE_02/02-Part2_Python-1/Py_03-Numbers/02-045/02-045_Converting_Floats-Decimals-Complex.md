@@ -178,11 +178,11 @@ also put this in a variable and use it however you want. I'm going to\
 say print product cost it started at 88.40 let's see what happens if we\
 run it now. You can see that now it's 88.
 
-![large](../../../../../../../.gitbook/assets/02-045_IMG2.png)
+![large](.././02-045_IMG2.png)
 
 Now if I change this to 88.80 and run it again you can see it's still 88.
 
-![large](../../../../../../../.gitbook/assets/02-045_IMG3.png)
+![large](.././02-045_IMG3.png)
 
 So it gives us similar behavior to how the floor division computation\
 works where even though 88.8 is closer to 89 all that essentially it's\
@@ -197,7 +197,7 @@ float. So in order to do that the keyword is float and I can say\
 quantity. And now let's see what it does for us if I hit return. You can\
 see 450 gets turned into 450.0 for if you ever need to get that.
 
-![large](../../../../../../../.gitbook/assets/02-045_IMG4.png)
+![large](.././02-045_IMG4.png)
 
 Now if you are working with the decimal library which we've worked\
 with than that already that decimal function already converted a float\
@@ -223,7 +223,7 @@ and instead of it being 88.80 we're going to convert it into a full\
 proper decimal so let's see what happens when we do that. And you can\
 see what this looks like
 
-![large](../../../../../../../.gitbook/assets/02-045_IMG5.png)
+![large](.././02-045_IMG5.png)
 
 and from a mathematical perspective, the way that Python looks at\
 88.80 is actually with this incredibly complex number of 88.79 and then\
@@ -240,7 +240,7 @@ actually use that value as well. And what we can do is say complex and\
 this is going to give us the scientific notation for commission rate. So\
 if I hit return here you can see
 
-![large](../../../../../../../.gitbook/assets/02-045_IMG6.png)
+![large](.././02-045_IMG6.png)
 
 this gives us 0.08 and then gives the full scientific notation in\
 parentheses and this actually because it returns in parens this is\

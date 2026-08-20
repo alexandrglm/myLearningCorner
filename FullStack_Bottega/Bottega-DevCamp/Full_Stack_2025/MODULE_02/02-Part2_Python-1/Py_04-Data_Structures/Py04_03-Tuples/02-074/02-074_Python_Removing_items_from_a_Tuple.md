@@ -179,14 +179,14 @@ So, what this is going to do is it's going to come it's going to bring in the sl
 
 So now if I say print and then post I can simply run this and you can see that published is no longer there.
 
-![large](../../../../../../../../.gitbook/assets/02-074_IMG1.png)
+![large](../.././02-074_IMG1.png)
 
 Now you can also use this because this is a range I could say -2 if I do not want the last two items if I run this.
 
 You can see it stops\
 before it gets to Some cool Python content and published
 
-![large](../../../../../../../../.gitbook/assets/02-074_IMG2.png)
+![large](../.././02-074_IMG2.png)
 
 but I'm just going to go with -1 because this is one of the most common ways I personally have implemented the ability to remove items it's very similar to say how the pop command works with a list in being able to remove items from the end of a collection.
 
@@ -209,7 +209,7 @@ So, if I run this you can see it starts with intro guide to python.
 
 It skipped Python basics and it goes all the way through the end.
 
-![large](../../../../../../../../.gitbook/assets/02-074_IMG3.png)
+![large](../.././02-074_IMG3.png)
 
 So that's how you can remove elements from the beginning of a tuple.
 
@@ -229,7 +229,7 @@ And even our little repl is going to give us a warning when I do this I'm gonna 
 
 And I just pass in post and you can see the warning says redefinition of post type from tuple the list.
 
-![large](../../../../../../../../.gitbook/assets/02-074_IMG4.png)
+![large](../.././02-074_IMG4.png)
 
 And the reason why this would be a bad idea in some cases is that, say that at some point that you don't change it back to a tuple and then you call some functions that only are going to work with a tuple.
 
@@ -241,7 +241,7 @@ Then, you're going to run into some bugs because you were expecting one data typ
 
 Now, the next thing we're going to do now that we have a list and we can print this out to confirm that our list is now working so you can see this is no longer a tuple. We now have a list and you can tell by those square brackets there.
 
-![large](../../../../../../../../.gitbook/assets/02-074_IMG5.png)
+![large](../.././02-074_IMG5.png)
 
 And now let's see what we can do because it's a list. We can treat it just like a list.
 
@@ -253,7 +253,7 @@ This is going to take a list and convert it back into a tuple and so if I run th
 
 The value that gets printed out is exactly our original tuple except it has published removed which is just what we were looking to do.
 
-![large](../../../../../../../../.gitbook/assets/02-074_IMG6.png)
+![large](../.././02-074_IMG6.png)
 
 So that is one of the most common ways whenever you do have a situation where you have one data structure such as a tuple that you can't work with the way you need.
 

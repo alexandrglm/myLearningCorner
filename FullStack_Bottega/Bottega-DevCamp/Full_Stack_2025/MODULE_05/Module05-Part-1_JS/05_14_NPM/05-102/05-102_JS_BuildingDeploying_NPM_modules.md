@@ -296,7 +296,7 @@ Signing up for the NPM registry is pretty straightforward and we'll talk about t
 
 Now with all of that being said let's get started! The very first thing that you want to do is create these accounts. Now I already have one. So right here you can see my profile
 
-![large](../../../../../../../.gitbook/assets/05-102_IMG1.png)
+![large](.././05-102_IMG1.png)
 
 and you can see my list of public packages right here. And we've already talked about these but if you want to create your own you can just go to the NPM site which you can access from the notes at the bottom of this guide. And I'm going open up in incognito mode because I don't want to be logged in since I already have an account and simply come to sign up and then fill out all of your information here. And once you sign up that's going to be all that you need. Make sure you have your e-mail or your username and your password memorized not only to sign in here but you're also going to have to sign in, in your terminal in order for this to work, so that's the first thing.
 
@@ -308,7 +308,7 @@ So with all of that in place, we have our NPM account. We have our Github accoun
 
 First thing is to set our name and our email and then our author url with NPM.
 
-![large](../../../../../../../.gitbook/assets/05-102_IMG2.png)
+![large](.././05-102_IMG2.png)
 
 So what you can do is take these commands in the above image and then open up the terminal. So I'm going to simply come to Visual Studio code. You could also do it in the terminal itself. Hit control and then the Tilda(\~) which will open up the terminal or you can like I said go into the terminal and that's going to give you the same exact access point.
 
@@ -326,7 +326,7 @@ I am already logged in and so I don't need to do it on my side but simply type y
 
 So now that we've done that now let's create a GitHub repo for the package so I'm gonna type github.com, if you're logged in when you go to GitHub you should see something like this and then click on the plus icon to create a new repo.
 
-![large](../../../../../../../.gitbook/assets/05-102_IMG3.png)
+![large](.././05-102_IMG3.png)
 
 So for this, I'm going to call this the devcamp-js-footer and so I definitely recommend giving something like either your company name or your initials or something right in front of the repository name just so it is very unique because when we push this up to NPM you don't want to have a conflict and use a name that's too generic and then it could potentially either already be taken from another NPM package or it might confuse other developers. So whenever you're building out something small like this make sure that you name it in a way that makes sense and is specific to you.
 
@@ -350,7 +350,7 @@ I'm just going to leave it blank and hit return the git repository if you rememb
 
 So simply paste that in and hit return
 
-![large](../../../../../../../.gitbook/assets/05-102_IMG4.png)
+![large](.././05-102_IMG4.png)
 
 and then you can type keywords if you want. I might just type in one so I'll say footer and hit return that simply doesn't do anything except provide some metadata for the NPM registry.
 
@@ -358,35 +358,35 @@ For author, you're going to put your name. License, this is important. The defau
 
 That means that anyone who goes to the NPM registry and downloads your module is going to technically be breaking copyright law if you do not provide this and that is a very bad practice you need to make sure you always provide some type of license. And that's it.
 
-![large](../../../../../../../.gitbook/assets/05-102_IMG5.png)
+![large](.././05-102_IMG5.png)
 
 So it has generated this file, it asks if this is OK and we can review it. But everything here is pretty standard so I'm just going to say yes which you will do when you just hit return and it's done.
 
 So now if I open this up I can click on devcamp-js-footer here and in Visual Studio code
 
-![large](../../../../../../../.gitbook/assets/05-102_IMG6.png)
+![large](.././05-102_IMG6.png)
 
 It's going to pull up a directory that only has one file in it which is good because this is the file that we just generated. And notice how it has our name, our version, our description, the entry point, all of those elements.
 
-![large](../../../../../../../.gitbook/assets/05-102_IMG7.png)
+![large](.././05-102_IMG7.png)
 
 It even creates a few cool ones like any spot where bugs should be rendered. So if a user runs into a bug it tells them to go to this URL
 
-![large](../../../../../../../.gitbook/assets/05-102_IMG8.png)
+![large](.././05-102_IMG8.png)
 
 which is our GitHub account slash issues and they can add the issue right there. So this is all working and I think this all looks good. So let's come back to our cheat sheet. And see what the next steps are.
 
 Now that we have that, it's time to create an index.js file and I provided the code for it
 
-![large](../../../../../../../.gitbook/assets/05-102_IMG9.png)
+![large](.././05-102_IMG9.png)
 
 the functionality is relatively straightforward but we're going to walk through it anyway just to make sure it's clear.
 
-![large](../../../../../../../.gitbook/assets/05-102_IMG10.png)
+![large](.././05-102_IMG10.png)
 
 So I'm gonna say index.js and I'm just going to paste this in and hit save.
 
-![large](../../../../../../../.gitbook/assets/05-102_IMG11.png)
+![large](.././05-102_IMG11.png)
 
 So we have a few things going on here that may look a little bit different. First, at the very top I'm saying use strict and what this means is that all of the code we write has to follow not only best practices but it has to follow the very letter of the JavaScript law. So you have to have things like your semicolons at the end of the line they're no longer optional. You have to have all of the various syntax options all in place and working, that's what use strict means.
 
@@ -394,25 +394,25 @@ The reason why you do it is because you don't know the other types of packages a
 
 That's the reason why you should always put that at the top. And now here you might notice that I'm using the older version of a required statement.
 
-![large](../../../../../../../.gitbook/assets/05-102_IMG12.png)
+![large](.././05-102_IMG12.png)
 
 If you remember back before to our import when we talked about importing things with the es6 syntax we could do things like this where I could say import moment from moment, and that would work perfectly fine, but we are not using that syntax. This is the older version of JavaScript and even though we were expecting that most people who are pulling this in are going to be using the most modern versions we need to be cognizant of the fact that they might not. And so we want to process it and make sure that this will work across all of the different platforms and development environments.
 
 So we're bringing moment in, and one of the things you may be wondering is how in the world do we have access to moment? And that's a great question because technically right now we do not, so we're going to have to bring this in. If you look at our package json file there are no dependencies here. And so the way we can add moment is by opening up the terminal and simply typing in npm install --save and then moment and then what this is going to do is it is going to go up to the NPM registry and it's going to pull in the dependency of moment like you can see right here.
 
-![large](../../../../../../../.gitbook/assets/05-102_IMG13.png)
+![large](.././05-102_IMG13.png)
 
 Now that we have this in our package json file we actually can use it. So when we require it, it is now going to work.
 
 Now, what is this long line?
 
-![large](../../../../../../../.gitbook/assets/05-102_IMG14.png)
+![large](.././05-102_IMG14.png)
 
 Because this looks pretty weird. Well, this is a comment and it is giving a very clear set of instructions on how to work with and also how to understand the code that we're going to be exporting and I need to update it a little bit.
 
 When I originally created the guide I was going to return a div but I changed my mind and instead were simply going to return a String element. And so what we were going to essentially do is what we've discussed we're going to return a String element with a footer and an updating year. So in addition to our little summary here we also have some other documentation items so when I say @param what this means is that the function is going to expect a parameter, it's going to expect some type of function argument.
 
-![large](../../../../../../../.gitbook/assets/05-102_IMG15.png)
+![large](.././05-102_IMG15.png)
 
 It should be of type string so we're providing the data type so that someone doesn't try to slide in a number or an object or anything like that. And the name of the argument is actually name in this case. And so all we're saying is that if you're working with this function you need to pass it this argument for it to work, then we also talk about the return. So this is going to be the output of the function.
 
@@ -420,7 +420,7 @@ Now if you have heard me talk before or gone through some of my other courses yo
 
 And so whenever we're working with outside code or whenever we're building a library like this that others are going to use we want to make it as easy as humanly possible for them to understand exactly what the parameters are. So if there were other parameters here. So if we allowed them to pass in some secondary name or a message or anything like that we would add it in the next line. So we would do something like this where we say param and then it's also a string and this may be called a message, something like that.
 
-![large](../../../../../../../.gitbook/assets/05-102_IMG16.png)
+![large](.././05-102_IMG16.png)
 
 and it's simply a really nice way to document exactly what is needed from whoever else is using this code library. And then also what this return statement means is that we are returning a string type I cannot tell you how frustrating it is when I'm working with some type of package that was not documented properly. And I call a function from the package expecting to get a string data type and then I end up getting an array or some type of collection like that or anytime it's something different than I'd expect it can cause bugs in my application.
 
@@ -428,7 +428,7 @@ I can tell you from experience that other developers feel the same way. So right
 
 Now let's get into the actual code itself. So right here we have the word exports
 
-![large](../../../../../../../.gitbook/assets/05-102_IMG17.png)
+![large](.././05-102_IMG17.png)
 
 Exports is an object that is available to JavaScript and its whats used to export packages and we're using the slightly older syntax here once again. Remember back to when we were exporting files directly we could say something like export default and you know give some type of you know function here.
 
@@ -462,17 +462,17 @@ So it's going to say copyright and then it's going to give a space and then we'r
 
 So right now when I'm filming this, this will return 2018, and then I'm concatenating onto that the name which is the function argument here and then adding on to that All rights reserved. So this is the full copyright that will get generated and you can put on a footer or any other spot that you need it and you're not going to have to worry about dates getting old.
 
-![large](../../../../../../../.gitbook/assets/05-102_IMG18.png)
+![large](.././05-102_IMG18.png)
 
 I've seen so many applications where I scroll down to the footer and I see that the date says the copyright is nineteen ninety-nine or something crazy old and then with the ('YYYY') what we're going to do is we're not going to ever have to worry about that. Any time a user accesses the site and any site that uses this the date is going to be auto-generated from the moment library. So that is going to be a pretty cool little thing.
 
 So now with all of this in place let's go back to our cheat sheet and see where we're at. So the next thing is our readme.
 
-![large](../../../../../../../.gitbook/assets/05-102_IMG19.png)
+![large](.././05-102_IMG19.png)
 
 So the way the readme works is the readme is an important file and it has to be named exactly like this. So I'm going to come here type touch readme.md and this is going to create a ReadMe file.
 
-![large](../../../../../../../.gitbook/assets/05-102_IMG20.png)
+![large](.././05-102_IMG20.png)
 
 What a readme.md file is, is it's called a markdown file. And so what I'm going to type may look a little bit weird, I have created guides specifically walking through how to work with the markdown syntax. And so what I'm typing I don't want you to think it looks weird or that I'm going to fast. If you are ever curious about markdown down there are all kinds of resources you can switch to the browser and type in Markdown tutorial right here and walk you through all of the steps for learning markdown I'll include this in the show notes as well.
 
@@ -480,21 +480,21 @@ And so essentially what I'm doing here is I'm creating a heading. So I'm going t
 
 It's simply giving you a set of instructions to anyone who wants to work with this. So I'm going to say you can use this in your application by saying import footer from and I need to use the name devcamp-js-footer and then simply calling footer and then some name and that is all that you have to do in order to get this working in another application.
 
-![large](../../../../../../../.gitbook/assets/05-102_IMG21.png)
+![large](.././05-102_IMG21.png)
 
 we should probably also do something like say this should be used in the following manner install with the command and here you give a command of NPM install --save devcamp-js-footer and then add it to a javascript project with the following code and there we have all of our instructions.
 
-![large](../../../../../../../.gitbook/assets/05-102_IMG22.png)
+![large](.././05-102_IMG22.png)
 
 and once I push this up you're gonna see that this gets converted to some very nice looking HTML and it's a great way of being able to format your documentation.
 
 So we have our readme, let's see what else we have to do. So we've already installed moment so we can skip that step. And now we're ready to publish. So as long as you have logged in then you should be able to just type NPM publish and then this is going to appear in your list of packages. So let me type in npm Oh and actually you know what I went a little bit too fast. I'm sorry I just realized we haven't pushed it up to GitHub yet. So go to this page on GitHub
 
-![large](../../../../../../../.gitbook/assets/05-102_IMG23.png)
+![large](.././05-102_IMG23.png)
 
 and click copy on this particular piece of code
 
-![large](../../../../../../../.gitbook/assets/05-102_IMG26.png)
+![large](.././05-102_IMG26.png)
 
 and come to your terminal type git init this is going to create an empty git repository and then you also need to do one other task. And so if I were to type git status right now we would have our node modules directory inside of our git repository which is not something we want. So add what is called a git ignore file. So say touch and then .gitignore.
 
@@ -504,33 +504,33 @@ touch .gitignore
 
 And this is going to create a hidden file here it's any file that has a dot in front of it is considered a hidden file and inside of it just type in node modules. Hit save and now if you type get status you will see that node modules is no longer included.
 
-![large](../../../../../../../.gitbook/assets/05-102_IMG25.png)
+![large](.././05-102_IMG25.png)
 
 The reason why you do not want to include these is because if you remember back when I was talking about how node modules can get very stale and how you have to delete them on a regular basis well because of that you don't really want to push up your node modules to a spot where other people might be pulling it down. And so it's a better practice to simply keep it out of version control and then when they install it on their side it's going to automatically pull in the modules they need into their project.
 
 So the first thing I'm going to do is add this to the repository so I'm gonna say `git add .` which is going to add all the files and this kind of goes to why I added that caveat at the very beginning of the guide because if you've never worked with version control before some of these commands are going to look kind of weird. So I'm gonna say `git commit -m` and I'm just going to say `'First commit'`. And now we can paste in these two commands
 
-![large](<../../../../../../../.gitbook/assets/05-102_IMG26 (1).png>)
+![large](<.././05-102_IMG26 (1).png>)
 
 these are the commands I got from GitHub and so it has created the remote and this is going to allow us to push our code up to the repository
 
-![large](../../../../../../../.gitbook/assets/05-102_IMG27.png)
+![large](.././05-102_IMG27.png)
 
 so that is now up there. So if I click on this name or just hit refresh you can see all of our code is here and you can also see the documentation that I created and I wrote in Markdown is also right here.
 
-![large](../../../../../../../.gitbook/assets/05-102_IMG28.png)
+![large](.././05-102_IMG28.png)
 
 So this is all working very nicely! Now we are ready to publish it. Coming back to the terminal type NPM publish and this is going to deploy it to the NPM registry and it looks like that works. So if I come back to the npm registry website hit refresh. Now you can see that we have devcamp-js-footer and it is on the registry and other people will be able to find it.
 
-![large](../../../../../../../.gitbook/assets/05-102_IMG29.png)
+![large](.././05-102_IMG29.png)
 
 If I click on it you can see it pulls in the documentation. This is the reason why I said the ReadMe file is so important because this is shown not just on your GitHub home page but also on your NPM registry page.
 
-![large](../../../../../../../.gitbook/assets/05-102_IMG30.png)
+![large](.././05-102_IMG30.png)
 
 And then it's going to have other stats it's going to show how often it's been downloaded. It's going to show those keywords that I was talking about. And it's also going to list out the dependencies so see how it says a dependency is moment and it's going to have some of the other things like the home page and also the command people need if they want to install it on their own systems.
 
-![large](../../../../../../../.gitbook/assets/05-102_IMG31.png)
+![large](.././05-102_IMG31.png)
 
 So, wow that was a decent amount of work but it is all up there and it is working. Our last step is to test it out and thankfully if you have the J.S. generator application or the node module that we walk through before we can actually use that here to test it out.
 
@@ -540,7 +540,7 @@ So this is just to make sure that we can pull down our new package and run it in
 
 The one thing it's not going to have is our package yet, which is a good thing because I want to show you that we can add this to a preexisting application. So it looks like everything here is working properly. If I type NPM start this is going to startup the react web server and I want to first make sure that everything here is working properly. So if I type localhost:3000 you can see devcamp react starter is working.
 
-![large](../../../../../../../.gitbook/assets/05-102_IMG32.png)
+![large](.././05-102_IMG32.png)
 
 So now let's go and follow our own instructions.
 
@@ -555,29 +555,29 @@ But before I do that I'm gonna open up the package json file just so you can see
 
 You can see it's been added here
 
-![large](../../../../../../../.gitbook/assets/05-102_IMG33.png)
+![large](.././05-102_IMG33.png)
 
 and now let's go and go back one more time to our set of instructions so we've published. And now I'm just going to copy all of this code and pull it into the application.
 
-![large](../../../../../../../.gitbook/assets/05-102_IMG34.png)
+![large](.././05-102_IMG34.png)
 
 So if I go to src and then components and then app I'm going to get rid of all of this
 
-![large](../../../../../../../.gitbook/assets/05-102_IMG35.png)
+![large](.././05-102_IMG35.png)
 
 And let's paste in what I copied.
 
-![large](../../../../../../../.gitbook/assets/05-102_IMG36.png)
+![large](.././05-102_IMG36.png)
 
 So it's pretty basic and it's following our other instructions so I'm importing the footer from and this is the name has to change. This is one of the older versions I did of this. So we can just copy our new package name here and let me delete all of this, paste it in. So make sure you have the exact name of your package and this should map exactly to what you have in your package.json file.
 
-![large](../../../../../../../.gitbook/assets/05-102_IMG37.png)
+![large](.././05-102_IMG37.png)
 
 And then from there in our application we can call our footer function. So I can call footer pass in the devcamp in my case, you can pass in your name, you can pass anything you want and then this is going to go through our code and it is going to generate our copyright. So this is the moment of truth, let's see if all of our hard work is going to work and pay off. It looks like so far everything is starting up. It says it compiled successfully, so far so good.
 
 Let's come back online and now if I hit refresh there we go. It is working and we have a copyright 2018 devcamp. All rights reserved.
 
-![large](../../../../../../../.gitbook/assets/05-102_IMG38.png)
+![large](.././05-102_IMG38.png)
 
 Now, this may seem like a little bit of functionality for a ton of work but what you have now is you have the skill and the knowledge in order to build your own NPM packages and even deploy them on the registry. So what this means is any kind of functionality that you want to build that can be leveraged by other javascript applications you can do, and you can share with the community, you can use it in all of your own types of projects so you don't have to duplicate code or copy and paste code from one project to another.
 

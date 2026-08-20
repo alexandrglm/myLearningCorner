@@ -56,21 +56,21 @@ I was very intentional with separating the last guide from this lesson and the r
 
 And so if you have your GitHub profile open or you're just anywhere on GitHub and logged in you should see a little plus sign in the top right corner.
 
-![large](../../../../../../.gitbook/assets/05-107_IMG1.png)
+![large](./05-107_IMG1.png)
 
 You can click on it and then click on new repository
 
-![large](../../../../../../.gitbook/assets/05-107_IMG2.png)
+![large](./05-107_IMG2.png)
 
 that is going to bring up a dialog page where it asks you for the repository name.
 
-![large](../../../../../../.gitbook/assets/05-107_IMG3.png)
+![large](./05-107_IMG3.png)
 
 Now any name that you give it has to be something that is unique to your own set of repositories. So for my guide or my project, this is going to be my-git-project and I'm going to call it the same thing. But it's important to understand that they do not have to be named the same thing. I have plenty of repositories that are named differently than the applications that they're holding. But for this case I'm just going to use it and as long as there's no duplicate or you didn't put any invalid characters in you're going to get a green checkmark and you're good to go.
 
 Moving down I'm going to keep this public if for any reason you want your repositories to be private. You can click on private but if you do that remember you are going to have to pay for it if you're on GitHub. Now coming down a little further it asks if you want to initialize this repository with a readme do not check this because we're going to be doing this ourselves in a later guide. So all you have to do is click on Create repository and then it's going to create this for us on Github.
 
-![large](../../../../../../.gitbook/assets/05-107_IMG4.png)
+![large](./05-107_IMG4.png)
 
 Now that we have our repository created if you come up top you should see your username followed by the name of the project and there are some other tabs here and we'll talk about these later. Then down below you have a list of options and what these allow you to do is to quickly set up and connect your local repository with what you have here on Github and the easiest way of understanding this is you can think of what we have right now.
 
@@ -78,7 +78,7 @@ So this my-git-project that we've created on GitHub you can think of it as a con
 
 Now coming down here with all these options. You can see that we have the ability to create a new repository straight from the command line. Now we already did this
 
-![large](../../../../../../.gitbook/assets/05-107_IMG5.png)
+![large](./05-107_IMG5.png)
 
 if you look at it you can see step by step they created a new file, they ran git init, they did get add, then they committed it and so in the last guide we did each one of those things we did those four steps so we've already done this part and then these last two steps are identical for the create a new repository on the command line option and for the push an existing repository from the command line option.
 
@@ -99,11 +99,11 @@ Now the one thing to keep in mind depending on the protocol that you picked and 
 
 Now you could technically just copy both of these lines to the clipboard but I want to have a full understanding of what they're doing. So let's do this one at a time. I'm going to come back to the terminal here and then paste this in. And that is all that we need to do.
 
-![large](../../../../../../.gitbook/assets/05-107_IMG6.png)
+![large](./05-107_IMG6.png)
 
 To test this out you can type git remote -v and now you can see that we have this named origin GitHub account.
 
-![large](../../../../../../.gitbook/assets/05-107_IMG7.png)
+![large](./05-107_IMG7.png)
 
 So we have this git remote connection so we have origin for git at GitHub if you're using HTTPS we'll have the HTTPS URL and then it has the full username and then the project.
 
@@ -123,12 +123,12 @@ This means the main code that is used by the application it's the live code. Lat
 
 But for right now you are pushing to the origin remote and you're pushing to the master branch. That's what each one of these commands mean, so if you hit return it may ask you for the passphrase for your key If you're using SSH. If you're using your HTTPS connection then it may ask you for your username, password and then hit return and it looks like everything is working.
 
-![large](../../../../../../.gitbook/assets/05-107_IMG8.png)
+![large](./05-107_IMG8.png)
 
 If you want to see what each one of these represent it counts all the objects so we have three elements and that worked. It's writing the objects and so it's taking all of the elements that we have on our local system on our local project and then is putting those in a protocol where they can be understood by GitHub. It's pushing to GitHub with this URL and then it has created the master branch on GitHub and then it is setting up tracking and so it's doing all of this for us automatically.
 
 Now if I come back here to GitHub I can either hit refresh or just click on the name. You're going to be able to see that we now have our code that was on our local machine is now live.
 
-![large](../../../../../../.gitbook/assets/05-107_IMG9.png)
+![large](./05-107_IMG9.png)
 
 Remember when we created this file my\_file.py? You can see that our live code is now there so great job if you went through that! You now know how to create a repository on GitHub and then how to connect your local get repository with that remote.

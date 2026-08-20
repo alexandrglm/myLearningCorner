@@ -86,7 +86,7 @@ So far in our discussion of Python functions each time we have passed in argumen
 
 What this means is that the Kristine string right here
 
-![large](../../../../../../../../.gitbook/assets/03-101_IMG1.png)
+![large](../.././03-101_IMG1.png)
 
 is going to be passed to this first argument. Then it's going to be used throughout the entire function because we passed it in as the first element.
 
@@ -116,7 +116,7 @@ then it's going to come to last and it's going to do the same thing.
 
 So if we run this code you can see that it works perfectly:
 
-![large](../../../../../../../../.gitbook/assets/03-101_IMG2.png)
+![large](../.././03-101_IMG2.png)
 
 just like before and so this is helpful because now we're being much more explicit with how we're passing our values in.
 
@@ -129,7 +129,7 @@ the order has not changed the behavior because named arguments\
 explicitly declared the mapping then they allow you to pass in whatever\
 your values are in whatever order you prefer.
 
-![large](../../../../../../../../.gitbook/assets/03-101_IMG3.png)
+![large](../.././03-101_IMG3.png)
 
 One thing I love about the python syntax compared with a few other languages such as Ruby or javascript is with python.
 

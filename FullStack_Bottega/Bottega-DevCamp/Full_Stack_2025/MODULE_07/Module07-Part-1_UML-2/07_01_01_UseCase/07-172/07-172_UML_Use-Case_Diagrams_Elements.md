@@ -53,7 +53,7 @@ Use Case Diagrams consist of FOUR fundamental elements that work together to rep
 
 **Examples**
 
-![medium](../../../../../../../.gitbook/assets/07-172_IMG1.png)
+![medium](.././07-172_IMG1.png)
 
 * "Get Reports"
 * "Get Messages"
@@ -78,7 +78,7 @@ Use cases should clearly communicate available features to developers, enabling 
 
 **Definition**: Any entity that interacts with the system from the outside, including both human users and non-human systems.
 
-![medium](../../../../../../../.gitbook/assets/07-172_IMG2.png)
+![medium](.././07-172_IMG2.png)
 
 ### Human Actors
 
@@ -114,7 +114,7 @@ In API-driven architectures, you may never have direct human users. Instead, var
 
 **Example Structure**
 
-![medium](../../../../../../../.gitbook/assets/07-172_IMG3.png)
+![medium](.././07-172_IMG3.png)
 
 ```
 Web Dashboard (Subsystem)
@@ -144,7 +144,7 @@ External to Web Dashboard:
 
 **Visual Representation**: Lines connecting actors to use cases, typically with arrows indicating direction of interaction
 
-![medium](../../../../../../../.gitbook/assets/07-172_IMG4.png)
+![medium](.././07-172_IMG4.png)
 
 \*\*Types of Relationship Lines:
 
@@ -201,13 +201,13 @@ One of the reasons you build this type of diagram is to set up the authorization
 * **Subsystems**
 * **Relationships.**
 
-![medium](../../../../../../../.gitbook/assets/07-172_IMG1.png)
+![medium](.././07-172_IMG1.png)
 
 Use Cases are represented by a circle and typically have some type of action. This is something that is very important when it comes to building these types of diagrams, we're trying to illustrate what types of actions and functionalities that an actor has access to. Right here we have a couple of examples, one is "get reports" the other is "get messages." We like to have very action-oriented types of elements because it makes it much easier to see the types of features that a user has access to.
 
 Notice we don't care about things like the data attributes or direct methods, the goal is to give these to developers and have them know how to build an entire authorization engine. They can see what types of features one type of user has access to versus another type of user.
 
-![medium](../../../../../../../.gitbook/assets/07-172_IMG2.png)
+![medium](.././07-172_IMG2.png)
 
 The next element is the actor. One thing I want to point out, an actor can be a human (Admin or Customer) but it can also be a non-human like an API Client.
 
@@ -215,7 +215,7 @@ Imagine a scenario where you're building an API. That API is not going to have a
 
 An example of that would be if you're building an API and you give the ability for other API/websites/mobile apps to query your API and pull in a list of blog posts or users. You'd build a use case diagram and say that this API client has access to be able to perform the following tasks. I wanted to make that clear, I have taught UML through the years and I typically see actors always being listed as humans, however, they're any types of actors that have access into the system.
 
-![large](../../../../../../../.gitbook/assets/07-172_IMG3.png)
+![large](.././07-172_IMG3.png)
 
 The next element is the subsystem. Focus on the large rectangular box that says "web dashboard," this is a subsystem. Subsystems in a use case diagram are represented by large rectangular boxes that have use cases and different elements inside of them. You may notice that we have items such as:
 
@@ -235,6 +235,6 @@ The items that are outside are::
 
 Those items are all outside of the web dashboard/subsystem. Subsystems (also called system boundaries) are different elements that you can place inside of a use case diagram to help you organize and see where these types of use cases are actually going to occur.
 
-![medium](../../../../../../../.gitbook/assets/07-172_IMG4.png)
+![medium](.././07-172_IMG4.png)
 
 Lastly, use case diagram relationships. Relationships are represented by dotted lines with open arrows. This shows how you can go from one use case to another use case. This gives you the ability to connect your actors directly to the use cases and to the elements and actions that they have access to in the system.

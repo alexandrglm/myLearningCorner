@@ -23,7 +23,7 @@ So whereas you have something like a class diagram
 
 all kinds of things that are very low level. They speak directly to how the code itself needs to be written.
 
-![IMG](../../../../../../../.gitbook/assets/07-178_IMG01.png)
+![IMG](.././07-178_IMG01.png)
 
 Package diagrams are very different. First and foremost, they're going to carry a number of abstract elements
 

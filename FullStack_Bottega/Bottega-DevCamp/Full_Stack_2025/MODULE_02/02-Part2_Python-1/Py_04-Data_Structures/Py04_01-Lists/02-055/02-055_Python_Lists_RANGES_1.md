@@ -165,7 +165,7 @@ If you're familiar with that then this should be pretty straightforward for yo.u
 
 I'm going to start off by doing a pretty basic one where I simply go from `[1:2]` and so now let me print out I'm gonna say `print(tag_range)` and if I run this you're going to see it prints out development.
 
-![large](../../../../../../../../.gitbook/assets/02-055_IMG1.png)
+![large](../.././02-055_IMG1.png)
 
 Now, as a reminder of this part kind of went past you when we wereworking on strings, the second argument here in the range is not included in the results. That comes back.
 
@@ -183,7 +183,7 @@ one-up the chain so we have to go to a tag with an index that is three.
 So now if I run this you'll see that it brings back development and\
 tutorials.
 
-![large](../../../../../../../../.gitbook/assets/02-055_IMG2.png)
+![large](../.././02-055_IMG2.png)
 
 Now, this syntax also allows us to grab ranges that go from end to end.
 
@@ -195,7 +195,7 @@ tag_range = tags[1: ]
 
 So if I run this you can see it brings back development, tutorials, and code
 
-![large](../../../../../../../../.gitbook/assets/02-055_IMG3.png)
+![large](../.././02-055_IMG3.png)
 
 and if I had a thousand other elements after this it would bring back the thousand other elements it's going to go all the way to the end of the list.
 
@@ -209,7 +209,7 @@ tag_range = [ :2]
 
 If I run this you can see it brings back Python and development
 
-![large](../../../../../../../../.gitbook/assets/02-055_IMG4.png)
+![large](../.././02-055_IMG4.png)
 
 But not `tutorials` because once again it stops, it doesn't bring us the second elementary.
 
@@ -229,11 +229,11 @@ And it's going to work exactly the same way but technically having this blank an
 
 So, if I want all of the elements except the last one what I can do is just pass in a negative index because remember that negative one will go to the very back of the list and it will add this one as the delimiters so this is going to be the one where our range stops so now if I print this out you can see we get one two three and that's it stops right there at code because this as an index of negative 1:
 
-![large](../../../../../../../../.gitbook/assets/02-055_IMG5.png)
+![large](../.././02-055_IMG5.png)
 
 Lastly, I want to show you one that is pointless except for learning which is what we're here for and that is you do have **the ability to technically pass in all of the elements** so , if you put two blanks or you put nothing on either side of the colon and run it you will see that it brings back all of the elements here.
 
-![large](../../../../../../../../.gitbook/assets/02-055_IMG6.png)
+![large](../.././02-055_IMG6.png)
 
 Now, I'm spending some time in showing you **the syntax and showing all the different variations for it because this is incredibly important** when it comes to Python development and especially if you want **to go into the machine learning** side of Python because as you will see when you start to get into these algorithm implementations and data manipulation that you're going to have to do to build out these data science programs this syntax with these ranges.
 

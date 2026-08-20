@@ -199,21 +199,21 @@ As you can see right here, I'm on my Instagram profile. You can be on yours if y
 
 I'm going to walk through the process on how I find everything, select it so that even if the `classNames` have changed you should still be able to accomplish the same goal. I want to grab each one of these images.
 
-![large](../../../../../../.gitbook/assets/04-046_IMG1.png)
+![large](./04-046_IMG1.png)
 
 Now, if you click on the image, usually if you go to a website that stores their images in the traditional way, right here you'd be able to do something like say `copy image` or `save image as`. Instagram is a little bit trickier. You can't really do it that way. So we're going to have to use JavaScript in order to get all of these URLs.
 
 Let's start by right-clicking and then clicking on `inspect`. If I do that, what that's going to allow me to do is to see all of the classNames, and I want to go right here. You see where it says `div class` and then it has that `KL4BH`.
 
-![large](../../../../../../.gitbook/assets/04-046_IMG2.png)
+![large](./04-046_IMG2.png)
 
 That's not what we want. That is the `wrapper DIV`, but if I extend that it's going to show all of the details. It's going to show the alt text and all of the images. Notice when I hover over each one of these images is showing each one these image links. It's showing me the image itself.
 
-![large](../../../../../../.gitbook/assets/04-046_IMG3.png)
+![large](./04-046_IMG3.png)
 
 Now that is one way of getting the image, but that's still really manual. The one thing that this is telling us is: we now have access. If you come over here, you can see the className of the image it's that `FFVAD` class. I'm going to copy that.
 
-![large](../../../../../../.gitbook/assets/04-046_IMG4.png)
+![large](./04-046_IMG4.png)
 
 Coming over here, this time in the last guide we use the `dollar selector syntax`. Now I'm going to use just pure Javascript, so I'm going to say:
 
@@ -229,11 +229,11 @@ const images = document.querySelectorAll('.FFVAD')
 
 Now if I run this, this is going to return all of the images in a `nodeList`. You can see if you extend this out, that it gives us each one of these. Looks like there are 30 of them, and if you want to go and hover over each one of them, see how it selects it on the page and it highlights that.
 
-![large](../../../../../../.gitbook/assets/04-046_IMG5.png)
+![large](./04-046_IMG5.png)
 
 So if I want to go with that second image here, I can extend that. It gives me access to the `alt text` and all different kinds of elements. What I really want though is the URL. Let's scroll down. Let's see exactly what we need in order to get access to the URL. Here it is. Right here you can see that we have this source, `SRC`, so that's what we're wanting.
 
-![large](../../../../../../.gitbook/assets/04-046_IMG6.png)
+![large](./04-046_IMG6.png)
 
 Now what we need is we need to traverse through each one of these. We're going to loop through all of them, and then have this value returned. So let's come all the way down to the bottom, and then I'm going to type `control + l` and then `up` again just so we have access to our images.
 
@@ -251,7 +251,7 @@ images.forEach(img => console.log(img.src));
 
 So `forEach` takes a function as its argument, so we're going to pass this in. For right now I just want a console log these values out, just so I know what I have access to. Let's see if this works. So if I run that, you can see that worked perfectly. It gives us each one of these image values.
 
-![large](../../../../../../.gitbook/assets/04-046_IMG7.png)
+![large](./04-046_IMG7.png)
 
 If I click on this, you can see that there is one image. There is another one. Each one of those returns the image that we're looking for. So that is really cool. Technically, you could just copy and paste all of this, but we can do better than that. If you try and copy this, notice how it also brings in the little `debugger line`.
 
@@ -269,7 +269,7 @@ images.forEach(img => imageUrlArray.push(img.src));
 
 Now what that means is the `imageUrlArray` is going to be filled up with all of those URLs. So if I hit enter now, it returns undefined, but if I call `imageUrlArray` now it gives us all of those images.
 
-![large](../../../../../../.gitbook/assets/04-046_IMG8.png)
+![large](./04-046_IMG8.png)
 
 That is much better and gives us in that nice array format. Now you could say: "Okay, I can copy all of this, and then I could put it in a file or whatever", and kind of, but let's see what happens if we do that.
 
@@ -277,7 +277,7 @@ See how if I copy this and then we go into visual studio code. If I paste this i
 
 If you type copy and then the item that you want to copy: this is going to put it on the clipboard in a much better format. So I'm going to say: `copy(imageUrlArray)`. Now if I come here, you can see it has taken all of the images off of the page, and it put it in a nice array format.
 
-![large](../../../../../../.gitbook/assets/04-046_IMG9.png)
+![large](./04-046_IMG9.png)
 
 You could put this right into your own JavaScript code. You could use it if you're building test data, or if you're wanting to create a script that puts this in a database. Anything like that. Now you have access to all of it, and each one of these images are what you had on the page.
 

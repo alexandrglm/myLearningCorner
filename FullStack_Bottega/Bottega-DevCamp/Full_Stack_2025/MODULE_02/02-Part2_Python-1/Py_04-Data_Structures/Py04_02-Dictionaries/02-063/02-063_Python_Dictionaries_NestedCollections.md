@@ -237,7 +237,7 @@ teams = {
 
 So, if I want to print this out, I can just say print teams and then I can parse it exactly like how we've walked through before where I grab the dictionary value so I perform this lookup by passing in the key and so if I run this you can see it prints out that list.
 
-![large](../../../../../../../../.gitbook/assets/02-063_IMG1.png)
+![large](../.././02-063_IMG1.png)
 
 Now, the nice thing about this and this is a very important topic when it comes to understanding programming and computer science is that when you break elements down in their lowest form possible like what we're doing here.
 
@@ -270,7 +270,7 @@ So, say that you wanted to look up and grab a slice of this.
 
 You can perform all of those same things that we did before so I can run this and you can see we now have Altuve and Correa:
 
-![large](../../../../../../../../.gitbook/assets/02-063_IMG2.png)
+![large](../.././02-063_IMG2.png)
 
 and this process is something we covered in-depth than being able to\
 grab the slices.
@@ -300,13 +300,13 @@ So I can say print teams and we can do this just to make sure that we\
 don't have any type of syntax errors or anything like that. As you can\
 see we have a fully functioning dictionary right there.
 
-![large](../../../../../../../../.gitbook/assets/02-063_IMG3.png)
+![large](../.././02-063_IMG3.png)
 
 And, then, you could grab any of these elements so you could grab the Yankees will make a few copies of this.
 
 We'll grab the Astro's and then the angels just like this. If you run this you can see that now we have our lists.
 
-![large](../../../../../../../../.gitbook/assets/02-063_IMG4.png)
+![large](../.././02-063_IMG4.png)
 
 And, as we saw earlier, we can work with these lists just like they were just stored in a plain variable and that is one last item I want to show is that whenever you're working with these you can just store these items in a variable.
 
@@ -314,7 +314,7 @@ So, if you wanted to set up, for example, the Astros you could say Astro's equal
 
 And if I run this you can see everything here is working exactly the same.
 
-![large](../../../../../../../../.gitbook/assets/02-063_IMG5.png)
+![large](../.././02-063_IMG5.png)
 
 So that is a high-level overview of how you can use nested collections inside of a dictionary.
 

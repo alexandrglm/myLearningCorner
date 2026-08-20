@@ -132,7 +132,7 @@ def gretting(*args):
 
 Now, if I want to call this I can call my greeting function and if I only pass in 2 items so if I want to pass in just two names here this will still work. So if I run this you can see it as Hi Tiffany Hudgens.
 
-![large](../../../../../../../../.gitbook/assets/03-102_IMG1.png)
+![large](../.././03-102_IMG1.png)
 
 So that works perfectly.
 
@@ -140,7 +140,7 @@ But no, if I want to pass in a first middle and last name so I could say Kristin
 
 If I run this you can see that this works exactly the same way:
 
-![large](../../../../../../../../.gitbook/assets/03-102_IMG2.png)
+![large](../.././03-102_IMG2.png)
 
 This is a very powerful tool and if you've never seen this before it might look a little bit weird.
 
@@ -148,7 +148,7 @@ So, let's dive into what is occurring here.
 
 I'm going to comment out this print statement and let's simply print out our arg. So I'm gonna say print and then let's print out whatever gets passed in. So if I run this you can see that we are actually **working with tuples**.
 
-![large](../../../../../../../../.gitbook/assets/03-102_IMG3.png)
+![large](../.././03-102_IMG3.png)
 
 So if you remember back to our long discussion on data structures in python and you if you're wondering why it was important to understand and work with tuples when you already had a data structure such as lists.
 
@@ -165,7 +165,7 @@ However, I do want to make sure that you do not think that is a required concept
 
 Technically I could change this and I could say names right here so I've changed the argument definition and also how I've called it. And now if I run this you can see it works exactly the same way.
 
-![large](../../../../../../../../.gitbook/assets/03-102_IMG4.png)
+![large](../.././03-102_IMG4.png)
 
 The reason why I would not recommend this even though it works is that this goes against the python convention.
 
@@ -185,7 +185,7 @@ the time of day and then after that, we're passing in the args and so we\
 can run this it's not going to work properly yet but you can see if we\
 can run it and you can see it still works.
 
-![large](../../../../../../../../.gitbook/assets/03-102_IMG5.png)
+![large](../.././03-102_IMG5.png)
 
 However, it is taking in the first value and it's assigning that to\
 time\_of\_day, so let's fix that. I'm going to say for this first one I'm\
@@ -210,7 +210,7 @@ And now, if I run this you can see that it says Hi tiffany Hudgens.
 
 I hope you're having a good morning. And then next It says Hi Kristine M. Hudgies. I hope that you were having a good afternoon.
 
-![large](../../../../../../../../.gitbook/assets/03-102_IMG6.png)
+![large](../.././03-102_IMG6.png)
 
 So as you can see by leveraging unpacking we're able to create a much more flexible interface for our function.
 

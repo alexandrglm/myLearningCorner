@@ -24,15 +24,15 @@ Because what we're about to do will not revert the entire project. This is more,
 
 So I'm going to come to the end here and I'm going to place all of this code in its own branch and this is considered the best practice for doing this process because we don't simply want to pull everything into the current master branch because the whole reason usually why you follow this process is for investigation purposes. So I'm going to say -b and then I'm just going to call this investigation because that's what we're doing.
 
-![large](../../../../../../.gitbook/assets/06-019_IMG1.png)
+![large](./06-019_IMG1.png)
 
 So now you can see we've switched to a new branch called investigation and if I open this up you can see that in my\_file.py it is showing the code that we already knew was going to be there because this is what we reverted our one file to. But if we come to the read.me you can see that we only have these 3 lines of code. So this is what the entire project looked like at this point in time.
 
-![large](../../../../../../.gitbook/assets/06-019_IMG2.png)
+![large](./06-019_IMG2.png)
 
 Now if I quit out of that and type git checkout master and switch to the master branch if we go and look at these files you can see that this is the current stage of the application.
 
-![large](../../../../../../.gitbook/assets/06-019_IMG3.png)
+![large](./06-019_IMG3.png)
 
 So this is not back at the point in time where our version id was sending us back to. Instead, right now we're looking at the project in the latest comment form and so this is exactly what we are looking to do. The way that you would typically do this is because you don't usually want to simply wipe away all of the previous changes and go back to a previous comment. We'll see how we can do that for when you need to force that.
 
@@ -42,10 +42,10 @@ So whenever you're working with reverting you need to be very careful just becau
 
 Then you can simply go and type get branch -d. This will delete it because you don't want to have all of these investigation branches hanging around and so type that.
 
-![large](../../../../../../.gitbook/assets/06-019_IMG4.png)
+![large](./06-019_IMG4.png)
 
 And now if you type git branch you can see we only have master back on our local system.
 
-![large](../../../../../../.gitbook/assets/06-019_IMG5.png)
+![large](./06-019_IMG5.png)
 
 The flow with that just as a review is we found the version of the application that we wanted to go lookout. We checked it out into an investigation branch and then we were able to go through there and cherry-pick the files that we wanted to bring back and then all you'd have to do from that point is go follow the same flow of saying git check out and then you could do my path to each one of those files and then you'd have exactly what you were looking for which is the revision back to the version for any number of files in the project.

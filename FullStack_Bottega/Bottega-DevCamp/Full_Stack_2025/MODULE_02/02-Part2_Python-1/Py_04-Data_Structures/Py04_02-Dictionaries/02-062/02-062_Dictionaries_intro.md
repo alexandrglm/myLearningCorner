@@ -171,7 +171,7 @@ So, in this case, I'm going to give a list of baseball players so I'm going to s
 
 What I've done here is I have created a key-value pair:
 
-![large](../../../../../../../../.gitbook/assets/02-062_IMG1.png)
+![large](../.././02-062_IMG1.png)
 
 So we have created just in these three lines of code.
 
@@ -230,7 +230,7 @@ So, you're not going to have to learn a completely different syntax if I want to
 What I can do is call players and then pass in instead of an index just pass in the string value of that key and now I'm going to replace this instead of players I'm simply going to pass in second base which is our variable here and if I run this you can see it\
 returns Altuve:
 
-![large](../../../../../../../../.gitbook/assets/02-062_IMG4.png)
+![large](../.././02-062_IMG4.png)
 
 which if we go and we reference it we can see that that is accurate.
 
@@ -242,7 +242,7 @@ Let's see what happens now.
 
 Now if I run this you can see that we get an error
 
-![large](../../../../../../../../.gitbook/assets/02-062_IMG5.png)
+![large](../.././02-062_IMG5.png)
 
 and that may seem like a bad thing.
 

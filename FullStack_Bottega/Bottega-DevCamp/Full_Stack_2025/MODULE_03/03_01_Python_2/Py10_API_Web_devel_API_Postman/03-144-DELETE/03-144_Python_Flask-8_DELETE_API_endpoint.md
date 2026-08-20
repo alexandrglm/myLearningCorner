@@ -197,21 +197,21 @@ def guide_delete(id):
 
 Let's save this and let's run it. So `python app.py`. Run that. Everything looks good so far.
 
-![large](../../../../../../../.gitbook/assets/03-144_IMG1.png)
+![large](.././03-144_IMG1.png)
 
 Now, just so you can see right, if we perform our `get query` on guides and run that, everything here is working. Now what I want to do is I want to remove the second guide here.
 
-![large](../../../../../../../.gitbook/assets/03-144_IMG2.png)
+![large](.././03-144_IMG2.png)
 
 The way we would do that is inside of our verb's here, I would come and I would say that I want to delete a record. Then right here with guides, I'm going to say `guides/2` because that's the id of the record that we want to remove. Now if I click send, then it says `not found` which actually makes sense because, right here, we passed this in wrong.
 
-![large](../../../../../../../.gitbook/assets/03-144_IMG3.png)
+![large](.././03-144_IMG3.png)
 
 I had another point I was going to make in a second, but let's just fix the endpoint that's supposed to be a single `guide/2`. Let's run it one more time, and there we go. This is a little bit interesting, and this is going to be something that is up to you.
 
 In future projects, we're going to talk about it, but whenever you want to remove something, so you want to delete a record, then sometimes you may want to return the entire object like we're doing here.
 
-![large](../../../../../../../.gitbook/assets/03-144_IMG4.png)
+![large](.././03-144_IMG4.png)
 
 What I typically do is I will not return the object. I may just return the ID and then a message, such as that `guide was successfully deleted`. Let's actually do that. I want to, so far I've kind of been following the basic documentation for a lot of this, but let's take a little bit more of a deep dive into this to see what's happening. That may also make a few of the other concepts more clear.
 
@@ -234,7 +234,7 @@ Now we run a `get request` for all of the guides. Send. Now you can see we have 
 
 I'm going to run that delete again. So let's come to delete and let's delete say the guy with the id of `3`. So I'm going to say `guide/3`. Let's delete that one. Hit send, and look at that.
 
-![large](../../../../../../../.gitbook/assets/03-144_IMG5.png)
+![large](.././03-144_IMG5.png)
 
 We didn't get `JSON` back, and so we wouldn't really want to do that in real life. What I did want to show you is this isn't magic. All we're doing here is we're working with just regular Python code. When I say return some of that code, like calling the `schema` and calling `JSONIFY` in those things, it may seem like you need to memorize every little element that you're going to work on. In reality, this is just python code.
 

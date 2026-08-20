@@ -89,7 +89,7 @@ MongoCourse> db.Books.findOne({ "authors.name" : "Guy Delisle"  })
 
 This ensures that only **one** document is returned, even if multiple matches exist.
 
-![img](../../../../../../.gitbook/assets/03-152_IMG02.png)
+![img](./03-152_IMG02.png)
 
 ***
 
@@ -122,11 +122,11 @@ of query based off of a value in that collection.
 
 So here we're going to look for the work of art book so I'm going to say `db.books. find()`, even though in the last guide you saw where we could pass in the parens by themselves. We can also pass in an object so I can say find `name` and then say `The War of Art` and then that object right there, and then I can also call `pretty` on this. Now if I run this you can see that it returns `The War of Art` book.
 
-![IMG](../../../../../../.gitbook/assets/03-152_IMG1.png)
+![IMG](./03-152_IMG1.png)
 
 Now there is a very important item to keep in mind here and that is if I go and I call `OOP Programming` here which is something that has multiple books with that name then it's going to return all of those.
 
-![IMG](../../../../../../.gitbook/assets/03-152_IMG2.png)
+![IMG](./03-152_IMG2.png)
 
 So the reason why that's important to keep in mind is, imagine in an application if you run just a regular find and you think and even if you know that you only have one item with that name it's still going to return a collection back to you which means you're going to have to iterate through it or else you're going to run into an error. Later on, we will get into another method called **find one** where you can be assured that you're only going to get a single object back even if there are multiple items. So in review, the command is
 

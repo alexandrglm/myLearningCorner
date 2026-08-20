@@ -179,7 +179,7 @@ We're going to see how we can listen to events that occur in the browser and the
 
 And so right here in the browser I have a couple image elements and so these are pretty basic and I have some CSS here one declares that the width of the images should be 400 pixels and then inside of it I have a container class and then some image overlay elements.
 
-![large](../../../../../../../.gitbook/assets/06-115_IMG1.png)
+![large](.././06-115_IMG1.png)
 
 So right here what I have and what we're starting off with is an image description so you can imagine the way that this is eventually going to work once we build the feature out is when we hover over the image. This image description is going to appear right here so it's going to be an overlay this will be something you will most likely have to build in some form or another.
 
@@ -187,7 +187,7 @@ And so what we're going to do is we're going to leverage event listeners in Java
 
 So I'm gonna say getElementByClassName and you can see that class if you hover all the way over to the right here in the code is called site image and you have access to all of this in the show notes. So we're going to grab that site image class and because we're using getElementByClassName I can just say site-image and then remember that this is going to return an HTML object so this is going to give us something very similar to an array so I only want the first one because I don't want to have to, you know, build out a full iterator and for each loop, I just want to show you how an event listener works. So this is going to grab that first element and we can test this out by console logging this. I'm going to just grab that image and now if I come back here and hit refresh you can see that we have queried that image correctly we have the full HTML image tag it has the URL and the class and the alt text so everything there is working properly.
 
-![large](../../../../../../../.gitbook/assets/06-115_IMG2.png)
+![large](.././06-115_IMG2.png)
 
 And notice how I was able to treat this very similar to an array if I would not have had that zero here and if I wouldn't have grabbed that element and then hit refresh. You can see it would have brought back that HTML collection where it would have brought both images but for this case, I just want to bring one so that we can work with it. So get rid of that console log statement.
 
@@ -207,17 +207,17 @@ img.addEventListener('click', (e) => {
 
 Now let's come and clear this console out, hit refresh, and notice that nothing got printed out because the image listener is listening for a click on the image. So the only way it's going to do something is if I click on this image if I click on this other image nothing happens. But if I click on this one as you can see we have a spelling mistake, but it did capture that.
 
-![large](../../../../../../../.gitbook/assets/06-115_IMG3.png)
+![large](.././06-115_IMG3.png)
 
 So that's good save and now if I come back here hit refresh clear the error out and if I click on this you can see that now we have the event.
 
-![large](../../../../../../../.gitbook/assets/06-115_IMG4.png)
+![large](.././06-115_IMG4.png)
 
 So the way that we have access to this if you remember back to when we were using the forEach loop remember when we use for each and with each iteration, we had access to the element that we were looping over. Well with the event listener it's very similar we are calling addEventListener on image listening for a click and then when that click happens that triggers an event. So this event we're listening for actually occurs and then automatically it gives us access to this event. So that's how we're able to put this event variable here and so if we want to work with that then we can simply, in this case, we're console logging but usually, we're going to do something a little bit more advanced with it and we will shortly.
 
 But for right now let's take a look at this so if I click on the down arrow I can see that I have this mouse event and then if I scroll down you can see all of the different attributes you have available to you with event.
 
-![large](../../../../../../../.gitbook/assets/06-115_IMG5.png)
+![large](.././06-115_IMG5.png)
 
 So imagine that you're building out a game. You have the ability with these X and Y offsets and these page X and y's and layer x y is if you're building out a game this will perform tasks such as tracking where on the image you are clicking, and so that's a very powerful tool.
 
@@ -225,17 +225,17 @@ Now if you scroll down you can see you have access to all kinds of other attribu
 
 But don't take my word for it, if we come down here and drop into the function for addEventListener and type out debugger hit save and clear the console and hit refresh if you come and click the image this is going to start a debugging session. As you can see here and if you click the console now we can step through the exact stage.
 
-![large](../../../../../../../.gitbook/assets/06-115_IMG6.png)
+![large](.././06-115_IMG6.png)
 
 So if you remember back to when we talked about debugging and what this allows us to do is to stop the execution of the program and it places us right inside of this location right where the debugger is. So that means that I can actually call e. So e is event and this gives us access to what we just printed out in the console log statement. And so now if we want to traverse this so if I want to say do e dot and then look for that target I can type of that. So we can treat this exactly like a javascript object and traverse it the same way that we would with anything else.
 
 So here we have clicked on target and now notice this gives us the exact element that was clicked and so we can work with this however we want.
 
-![large](../../../../../../../.gitbook/assets/06-115_IMG7.png)
+![large](.././06-115_IMG7.png)
 
 So I could say e.target.src and this gives the full URL.
 
-![large](../../../../../../../.gitbook/assets/06-115_IMG8.png)
+![large](.././06-115_IMG8.png)
 
 And so we were able to leverage our event listener watch for when a click occurred on this image and then we were able to perform some task with that. Now, this is a pretty basic example we're really just learning about the data. So let's click out of the debugger and now we're going to walk through an even more advanced example.
 
@@ -247,7 +247,7 @@ And so we can do that using pretty much all of the same tools that you already k
 
 So that is going to give me all of the site images and we can test this out by console logging out images so if I hit save come back here hit refresh. You can see that we have our node lists as both of our site images.
 
-![large](../../../../../../../.gitbook/assets/06-115_IMG9.png)
+![large](.././06-115_IMG9.png)
 
 So now let's create some event listeners. Now there are two event listeners that we are going to work with and we're going to iterate over them because we want the same process to be added to all of the elements on the page. So I'm going to say I am going to say imgs.forEach and we're going to start off with the argument of img because remember when we iterate over forEach takes two arguments. The first is the item that we're iterating over and then the next is a function. I'm gonna say img and then I'm going to place in the arrow function and then inside of here this is where we're going to add our event listener.
 
@@ -271,7 +271,7 @@ const captionElement = event.target.parentElement.children[1];
 
 Now if that looked absolutely insane to you let's pause it right here and let's actually look at what I am trying to do. So if you come down here to the console we have our node list so we can already see what's here. So if I click on this you can see that I have the site image that is the class.
 
-![large](../../../../../../../.gitbook/assets/06-115_IMG10.png)
+![large](.././06-115_IMG10.png)
 
 Now once I grab that and once I've grabbed the target if I want to go to the parent element that means I'm going to go and I'm going to traverse to this container. So inside of this container, this container has child elements it has two of them. One is the image and the other is this div with the description so that is simply going to be returned as an HTML collection and I can treat it very similar to an array so I can use bracket syntax and so essentially all that I'm doing here is I'm traversing the DOM and I'm saying you clicked on this image. I want you to go up to the parent and then I want you to find the second child which is this and then I want you to store that inside of this variable and that's all we're doing.
 
@@ -283,13 +283,13 @@ captionElement.className = 'show-img-overlay';
 
 So let's see if this is working let's come here to the console, clear it, just so you don't have any distractions. Hit refresh and now if I hover over you can see that that is working and if I do it to the second image it works here as well so this is working perfectly. Or I should say it's working halfway perfectly right now when we hover over the description comes here but then it stays.
 
-![laarge](../../../../../../../.gitbook/assets/06-115_IMG11.png)
+![laarge](.././06-115_IMG11.png)
 
 What we're going to do now is we're going to use very similar code to what we have here. And now we're going to iterate over we're going to add another event listener but this one is going to be called mouseout. And so this is going to go and it's going to use the other class. So this is going to say hide image overlay. Everything else is the same except we're listening for a different type of event. Mouseover is what happens when you mouseover the element that you're trying to work with mouseout is what happens when the mouse leaves that element.
 
 So if I hit refresh mouseover it's there, mouseout and it's gone and if I come down the second element it's there mouseout and it is gone.
 
-![large](../../../../../../../.gitbook/assets/06-115_IMG12.png)
+![large](.././06-115_IMG12.png)
 
 And so you have built an entire overlay system for images just with a few lines of code and you're able to tap into a very powerful feature of JavaScript with these event listeners. This is part of the main set of reasons why people use javascript is because there's not a lot of languages and programming tools out there that give you the ability to have this kind of interaction with the user that give you the ability to check and see okay where is the user's mouse right now? And what kind of behavior and what kind of processes do I want to implement whenever they are making some kind or when they're implementing some type of behavior on the page like we're doing right here? like we're mousing over and at mousing out.
 

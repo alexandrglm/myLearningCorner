@@ -40,7 +40,7 @@ Common variants:
 2. **No Context**: Provides zero semantic meaning about the example's purpose.
 3. **Cognitive Load**: Forces mental translation to understand the abstract example.
 
-![Stack Overflow Example](../../../../../../../.gitbook/assets/06-131_IMG1.png)\
+![Stack Overflow Example](.././06-131_IMG1.png)\
 &#xNAN;_&#x54;ypical foo/bar usage in documentation that lacks clarity._
 
 ***
@@ -73,7 +73,7 @@ function calculateTotal(price, quantity) {
 * **Teaching Tool**: Reinforces good naming conventions.
 * **Scalable**: Works for simple snippets or complex tutorials.
 
-![Refactored Example](../../../../../../../.gitbook/assets/06-131_IMG6.png)\
+![Refactored Example](.././06-131_IMG6.png)\
 &#xNAN;_&#x52;eal-world names make examples self-documenting._
 
 ***
@@ -104,7 +104,7 @@ end
 generate_invoice("Google", invoice_number: 101, total: 299.99)
 ```
 
-![Execution Output](../../../../../../../.gitbook/assets/06-131_IMG9.png)\
+![Execution Output](.././06-131_IMG9.png)\
 &#xNAN;_&#x43;learer output with meaningful variable names._
 
 ***
@@ -159,28 +159,28 @@ And if you're a more advanced developer so if you're going through this and you 
 "So with all that being said let's jump into some code examples".\
 For a code example I found a post here on Stack Overflow where someone asked how do methods use hash arguments in Ruby.
 
-![large](../../../../../../../.gitbook/assets/06-131_IMG1.png)
+![large](.././06-131_IMG1.png)
 
 Now I'm just using this as an example you could use this with JavaScript, python, pretty much everyone seems to use this foobar kind of syntax for examples and if you scroll down right here to the accepted answer you can see that the answer includes the word foo. And if you look at some other answers then some of them will also use the word bar. And that's where the confusion comes in. For many students and I think for good reason because you see these kind of words so often if no one's told you that they don't actually mean anything that can be pretty confusing. So what I'd like to do is to just dispel the myth right here that this does anything and so the way you do that is I'm just going to copy all of this code right here
 
-![large](../../../../../../../.gitbook/assets/06-131_IMG2.png)
+![large](.././06-131_IMG2.png)
 
 and let's open it up ourselves and start building it out. So I now have this code and if I save this and if I run this code then you'll see here at the bottom that it gives the output that it gave in the answer where it just prints out some text where it says regular regular argument gives a hash and then gives us `a and b` set of examples.
 
-![large](../../../../../../../.gitbook/assets/06-131_IMG3.png)
+![large](.././06-131_IMG3.png)
 
 Now notice that the method that was created and you don't have to know Ruby to know what's going on right here this is just a method and the developer called this `foo` and then down here they are calling this `foo method`
 
-![large](../../../../../../../.gitbook/assets/06-131_IMG4.png)
+![large](.././06-131_IMG4.png)
 
 so let's just show that foo as an actually mean anything.\
 So what I do whenever I'm teaching or where ever I'm showing a student or another dev. An example I never use these kinds of terms but instead I try to pick out something real life that actually has a meaning. So I'll do something like say let's call an `invoice method` here. So down below we're not going to have foo. We're just going to say `invoice`.
 
-![large](../../../../../../../.gitbook/assets/06-131_IMG5.png)
+![large](.././06-131_IMG5.png)
 
 This could be anything but an invoice is much easier to understand. You could call this anything you want. A lot of times all use a greeting method or anything that makes a little bit more real life sense. And then you also have these other words here you may think that regular is a reserved word but it's not let's just use something that everyone's going to know is not a reserve word. So here I'd say something like. Company name and then down below in the example I would say company name and change it up here as well. Company name and then coming down. I can say this is `Google`.
 
-![large](../../../../../../../.gitbook/assets/06-131_IMG6.png) So so far so good. And now if you want to test us out we can run it again.
+![large](.././06-131_IMG6.png) So so far so good. And now if you want to test us out we can run it again.
 
 So just run this code and you can see everything still works except now we have some output that is a little bit less abstract
 
@@ -188,11 +188,11 @@ So just run this code and you can see everything still works except now we have 
 
 And if you really want to get even further into this whenever I'm using an example I really don't like using terms like `a and b`. Those seem like those are also a little abstract too. So here I might do something like say `invoice number` and then same thing over here. So `invoice number` here and then come down and when I'm calling that this is now invoice number and instead of b I might go with something like `Total`
 
-![large](../../../../../../../.gitbook/assets/06-131_IMG8.png)
+![large](.././06-131_IMG8.png)
 
 and then I can come up to this example. Switch it out for `total` run this code again. And now you can see that we are getting the exact same type of output.
 
-![large](../../../../../../../.gitbook/assets/06-131_IMG9.png)
+![large](.././06-131_IMG9.png)
 
 So the same concept that was trying to be explained is still in place. We've created a method we've used the kinds of principles that are looking to show which is to show how to work with a data structure as an argument and then how to call those values. But instead of using terms like Foo or Bar or A and B instead what we've done is we've created more of a real life scenario. And I think that this really helps to clarify that. So if you're a developer a more senior developer and you're teaching your developer you're more junior developers how to learn then this type of approach is going to make a lot more sense to them.
 

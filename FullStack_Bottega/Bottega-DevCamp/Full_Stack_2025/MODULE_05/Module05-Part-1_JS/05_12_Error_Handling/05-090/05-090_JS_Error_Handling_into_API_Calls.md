@@ -231,7 +231,7 @@ So I'm going to say request.open and you're going to pass open a few different p
 
 So we're going to pass this in as a string and then the last argument is we're simply going to pass in true. And so what this is going to do is if you see our little IntelliSense here
 
-![large](../../../../../../../.gitbook/assets/05-090-IMG1.png)
+![large](.././05-090-IMG1.png)
 
 you can see open takes in a number of arguments. The first is the method which is get, the next is the URL we want to contact, and the third is if this is going to be asynchronous or not and so for this case, I'm just going to say it's going to be asynchronous. It doesn't really matter too much for this specific example but we're just going to do that and now we're going to implement the onload function so I'm going to say `request.onload`.
 
@@ -266,21 +266,21 @@ So this is because we're working with JSON data here we are calling it and sayin
 
 And now this should theoretically work so you can see these are the latest posts right here
 
-![large](../../../../../../../.gitbook/assets/05-090-IMG2.png)
+![large](.././05-090-IMG2.png)
 
 and now if I call this and let me make sure everything is saved and come and hit refresh. Oh and I suppose it would probably help if I actually came and console logged out the data. So I'm gonna say `console.log(data);` obviously are going to be rendering this on the screen or on a web page or in some kind of component if you're using react or view or something like that but for right now we simply want to put it in the console so I'm gonna come here. Hit refresh again and you can see that this worked.
 
-![large](../../../../../../../.gitbook/assets/05-090-IMG3.png)
+![large](.././05-090-IMG3.png)
 
 So we contacted the outside API and it brought in our posts and it brought in as this post object. If you click on this and you can see that we have all of those items that we want. So we have all of the titles we have the content we have their IDs. All of those kinds of elements so this is working.
 
-![large](../../../../../../../.gitbook/assets/05-090-IMG4.png)
+![large](.././05-090-IMG4.png)
 
 Now, what happens if I come up here, and let's say that here I go to the wrong URL?
 
 So if we're calling this `https://api.dailysmarty.com/oops` which could also mimic if it was a down or something like that and I hit save and come hit refresh you can see that we get just a generic get error and it says get and then says 404 Not Found.
 
-![large](../../../../../../../.gitbook/assets/05-090-IMG5.png)
+![large](.././05-090-IMG5.png)
 
 This is okay but imagine an application that you have that is massive and you're making API calls all over the place. You may be making API calls to Facebook, Twitter, Instagram, any kind of outside service like that you probably want some more detail and so that's what we can do.
 
@@ -307,11 +307,11 @@ and that is all that we have to do here. And so now if I come down instead of ju
 
 And so this is going to give us our actual data and our real status code. So that is going to print out a much better message. So now I'm going to come here and hit refresh and now you can see that we still get our 404 for error and if you look to see, this is on line 32.
 
-![large](../../../../../../../.gitbook/assets/05-090-IMG6.png)
+![large](.././05-090-IMG6.png)
 
 So let's see what line 32 is. This is at the very end. So this is part of the other reason why I don't like this first generic error message because notice how it doesn't actually tell us where the issue occurred it just said a 404 error message was found, that is not very helpful. But now come right here and you can see that we now have a much more descriptive error message.
 
-![large](../../../../../../../.gitbook/assets/05-090-IMG7.png)
+![large](.././05-090-IMG7.png)
 
 So it says uncaught API error which is our constructor class and it says an API Error occurred with a status code of 404 and it was on the request on Load function so now you can see that.
 
@@ -319,7 +319,7 @@ Imagine you have this gigantic application with all of these code files. If you 
 
 So, in this case, we know that the issue was we were calling the wrong API endpoints. If I come here hit save clear it out and hit refresh. You can see everything is back in working.
 
-![large](../../../../../../../.gitbook/assets/05-090-IMG8.png)
+![large](.././05-090-IMG8.png)
 
 So once again our API Error is only going to get thrown if the status error message is something above 400 or 400 and above and so that is how you can implement a custom error class in conjunction with an outside API call.
 

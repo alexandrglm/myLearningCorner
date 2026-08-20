@@ -98,7 +98,7 @@ So, in this case, I'm just going to print something out and I'm going to say `f`
 So, I'm gonna say `I'm sorry you need to be at least 25 years old`and that is going to be everything that we need in order to get this working. So if I hit run\
 you can see nothing happens.
 
-![large](../../../../../../../../.gitbook/assets/03-090_IMG1.png)
+![large](../.././03-090_IMG1.png)
 
 So, why is that?
 
@@ -110,11 +110,11 @@ Now, if we change age and we say 15 and now we run it you can see that it now pr
 
 So it says I'm sorry you need to be at least 25 years old.
 
-![large](../../../../../../../../.gitbook/assets/03-090_IMG2.png)
+![large](../.././03-090_IMG2.png)
 
 This can work for any number, so if I say 1500 years old and run this you can see nothing is going to be printed out because this condition is not true.
 
-![large](../../../../../../../../.gitbook/assets/03-090_IMG3.png)
+![large](../.././03-090_IMG3.png)
 
 So, when it comes to understanding conditional logic you just have to think of setting up your conditions and assuming they're going to be either true or false. So, in this case, it is false that age is less than 25 and so this is one of the most basic kinds of conditions that you can implement.
 
@@ -150,7 +150,7 @@ Now we're going to be guaranteed that we're always going to get some kind of pri
 
 We're either going to have an I'm sorry you need to be at least 25 years old or what we have in this case where it says "You're good to go, 1500 years old fits in the range to rent a car."
 
-![large](../../../../../../../../.gitbook/assets/03-090_IMG4.png)
+![large](../.././03-090_IMG4.png)
 
 So this is an if-else statement.
 
@@ -176,11 +176,11 @@ But what I'm going to do is I'm going to add an else if block and it is spelled 
 Now, if we run this we should fall into the second category. Let's hit run and that\
 works.
 
-![large](../../../../../../../../.gitbook/assets/03-090_IMG5.png)
+![large](../.././03-090_IMG5.png)
 
 I'm sorry, 1500 is too old to rent a car. If we change this up and we put something in the middle so we say 50 years old and run this. "You're good to go."
 
-![large](../../../../../../../../.gitbook/assets/03-090_IMG6.png)
+![large](../.././03-090_IMG6.png)
 
 So, as you can see we are checking for two conditions.
 

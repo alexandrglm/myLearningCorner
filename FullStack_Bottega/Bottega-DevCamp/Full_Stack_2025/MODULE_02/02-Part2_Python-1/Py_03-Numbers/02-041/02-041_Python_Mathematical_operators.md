@@ -153,7 +153,7 @@ different value.
 
 So now if I print this out you can see that addition is now equal to 142.
 
-![large](../../../../../../../.gitbook/assets/02-041_IMG1.png)
+![large](.././02-041_IMG1.png)
 
 And like I mentioned you could put this in some type of Addition value variable something like that and put the same process in and then print that out just so you can see that there is nothing special about putting it in the print statement.
 
@@ -166,7 +166,7 @@ Now subtraction is going to be very similar to this.
 We're going to have two different values but instead of a plus sign we're going to have\
 the dash or the subtraction sign right here and now if I print this out you can see the 100 minus 42 is equal to 58
 
-![large](../../../../../../../.gitbook/assets/02-041_IMG2.png)
+![large](.././02-041_IMG2.png)
 
 which is correct.
 
@@ -181,7 +181,7 @@ Now the next one is going to be division.
 Now with the division, this one is going to use the slash character. So I'm gonna say `100/42.3` and then if I run this it's going to give us the value of 2.364 and it keeps\
 going.
 
-![large](../../../../../../../.gitbook/assets/02-041_IMG3.png)
+![large](.././02-041_IMG3.png)
 
 And that is how you can use division.
 
@@ -206,7 +206,7 @@ So here I'm going to come and I'm going to say 100 instead of Slash I'm gonna sa
 
 So right here with divison we have 2.38 in this long floating-point number.
 
-![large](../../../../../../../.gitbook/assets/02-041_IMG4.png)
+![large](.././02-041_IMG4.png)
 
 What floor division gives us is:
 
@@ -221,7 +221,7 @@ create another value right here.
 
 So instead of 100 by 42 let me say 100 by 38 and let's do the same thing with floor division right here and now if I return this let's see what we get.
 
-![large](../../../../../../../.gitbook/assets/02-041_IMG5.png)
+![large](.././02-041_IMG5.png)
 
 So the first value of 100 divided by 42 we already saw is 2.38 and then a string of numbers and then the next one 100 divided by 38 is 2.63.
 
@@ -269,7 +269,7 @@ You use the percent sign and then any number you want after that.
 
 So if I hit return right here you can see that it's modulus is 16.
 
-![large](../../../../../../../.gitbook/assets/02-041_IMG6.png)
+![large](.././02-041_IMG6.png)
 
 Now that may not make the most sense so let's give even a more basic example of what modulus does.
 
@@ -281,7 +281,7 @@ And so if we look at a different example.
 
 So if I say instead of 2 let's say 5 right here and hit enter you can see that it returns a 1 and if I say 25 which is another odd number you can see the value is 1.
 
-![large](../../../../../../../.gitbook/assets/02-041_IMG7.png)
+![large](.././02-041_IMG7.png)
 
 And so what this is doing is it is **dividing 2 into this number as many times as possible and then it's returning the remainder**.
 
@@ -308,7 +308,7 @@ And now if I run this you're going to see that 25 squared is equal to 625 which 
 
 I said 11 it's going to print out 121 and so on and so forth.
 
-![large](../../../../../../../.gitbook/assets/02-041_IMG8.png)
+![large](.././02-041_IMG8.png)
 
 ***
 

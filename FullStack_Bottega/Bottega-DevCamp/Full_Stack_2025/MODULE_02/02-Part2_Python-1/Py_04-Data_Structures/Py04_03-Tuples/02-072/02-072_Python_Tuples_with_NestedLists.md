@@ -123,7 +123,7 @@ is because if we didn't then Python would assume that we're simply trying to ove
 
 So, now, if I say print we can access this post and you're going to see that it has the list as the last element here.
 
-![large](../../../../../../../../.gitbook/assets/02-072_IMG1.png)
+![large](../.././02-072_IMG1.png)
 
 Now, because this is a tuple, we can access that last element.
 
@@ -131,14 +131,14 @@ So, let's say that we want to access the string coding.
 
 We can start by simply using our bracket syntax and because it's the last element we can give the index of negative 1. If I run this you can see we have our list
 
-![large](../../../../../../../../.gitbook/assets/02-072_IMG2.png)
+![large](../.././02-072_IMG2.png)
 
 and if we want the code then we can type 1 because this is the second\
 element which means it has an index of 1.
 
 And now if I run this we have access to the string of coding
 
-![large](../../../../../../../../.gitbook/assets/02-072_IMG2.png)
+![large](../.././02-072_IMG2.png)
 
 So, **we were able to traverse the entire post tuple the same way that we would a list with a nested list inside of it**.
 

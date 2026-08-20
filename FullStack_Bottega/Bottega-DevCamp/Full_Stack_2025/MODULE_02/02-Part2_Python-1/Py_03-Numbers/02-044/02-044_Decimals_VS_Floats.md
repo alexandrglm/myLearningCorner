@@ -180,7 +180,7 @@ commission. So that's what that will equal and then we're going to\
 multiply that by how many units were sold which in this case is 450. So\
 I'm going to run that and the value that we get right here is 42962.4
 
-![large](../../../../../../../.gitbook/assets/02-044_IMG1.png)
+![large](.././02-044_IMG1.png)
 
 And let's save this as a comment an inline comment right here. Just\
 so you can see this is the value when we're working with a float because\
@@ -193,7 +193,7 @@ have to come up to the very top and we're going to import this from\
 Python and the way you can import a library is by saying from decimal\
 and this is obviously for the decimal library import decimal.
 
-![large](../../../../../../../.gitbook/assets/02-044_IMG2.png)
+![large](.././02-044_IMG2.png)
 
 Now if that makes no sense to you do not worry what we're doing here\
 is we have access in Python to the decimal library and inside of the\
@@ -210,7 +210,7 @@ of a decimal and this is what we're going to use. So now that we have\
 all of this let's actually comment copy the come in and out just so you\
 can see both of them side by side.
 
-![large](../../../../../../../.gitbook/assets/02-044_IMG3.png)
+![large](.././02-044_IMG3.png)
 
 Now the way that you can create a decimal is to copy decimal it has\
 to be all like this with it titled with the capital D and decimal\
@@ -226,7 +226,7 @@ and lets comment everything else out. We don't have to call decimal\
 again because all of these elements now are decimals. And if I run this\
 you can see we get a much larger number
 
-![large](../../../../../../../.gitbook/assets/02-044_IMG4.png)
+![large](.././02-044_IMG4.png)
 
 I'm going to copy this and add it to the comment so you have it for\
 the show notes. Now, this may seem kind of odd because right here when\

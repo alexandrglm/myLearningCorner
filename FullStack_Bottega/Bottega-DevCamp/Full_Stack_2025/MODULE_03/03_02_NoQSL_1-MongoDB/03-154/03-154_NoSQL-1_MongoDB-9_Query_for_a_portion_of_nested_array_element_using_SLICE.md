@@ -170,7 +170,7 @@ The above query will return only the **first author** from the `authors` array.
 
 ```
 
-![img](../../../../../../.gitbook/assets/03-154_IMG03.png)
+![img](./03-154_IMG03.png)
 
 ***
 
@@ -199,11 +199,11 @@ What the goal is going to be is once this is added to the database then I want t
 
 So that's going to be something that we can use what is called the **slice method** inside of Mongo and so we'll get into how that works.
 
-![large](../../../../../../.gitbook/assets/03-154_IMG1.png)
+![large](./03-154_IMG1.png)
 
 Now if I go into the terminal and run this it is inserted.
 
-![large](../../../../../../.gitbook/assets/03-154_IMG2.png)
+![large](./03-154_IMG2.png)
 
 Now earlier on in the course, I inserted blank but in between guides I went and I removed it.
 
@@ -219,27 +219,27 @@ As usual, here I'm going to give it two objects.
 
 The first object is our query object so here I'm going to say `Blink` and let's indent this and then I'm also going and `pretty` at the very end.
 
-![large](../../../../../../.gitbook/assets/03-154_IMG3.png)
+![large](./03-154_IMG3.png)
 
 Just to make sure that all of this is working I'm going to come run it and you can see that `Malcolm Gladwell` and the `Ghost Writer` are both included in that query.
 
-![large](../../../../../../.gitbook/assets/03-154_IMG4.png)
+![large](./03-154_IMG4.png)
 
 So with our projection let's come here and our set of constraints. I'm going to say that I want the `publishedDate`, So I do `publishedDate: 1`. I want the `name: 1`, and then I want `authors`. But instead of giving it a **1** like we've done in the past what I'm going to do is pass it an object and instead of passing in say name or one of the attributes inside I'm going to pass in a special function called `$slice` and with `$slice` what I can do is pass in and say I want this specific element in the array. So now if I copy this
 
-![large](../../../../../../.gitbook/assets/03-154_IMG5.png)
+![large](./03-154_IMG5.png)
 
 and I run this you can see that it works.
 
-![large](../../../../../../.gitbook/assets/03-154_IMG6.png)
+![large](./03-154_IMG6.png)
 
 So now what we've done is we've essentially created a query and we've gone into a nested collection and said I only want the very first element in that array. Now if we wanted to go the other direction then we could say `$slice: 2` and that would bring us back the second item and so now it's showing the `Ghost Writer` and `Malcolm Gladwell` right here.
 
-![large](../../../../../../.gitbook/assets/03-154_IMG7.png)
+![large](./03-154_IMG7.png)
 
 If we only wanted the `Ghost Writer` by himself I can say `$slice: -1` and if I run that you can see only has the `Ghost Writer`.
 
-![large](../../../../../../.gitbook/assets/03-154_IMG8.png)
+![large](./03-154_IMG8.png)
 
 So what exactly is going on here is that we're working with a very similar construct as that is contained in pretty much every other programming language which is our array manipulation.
 

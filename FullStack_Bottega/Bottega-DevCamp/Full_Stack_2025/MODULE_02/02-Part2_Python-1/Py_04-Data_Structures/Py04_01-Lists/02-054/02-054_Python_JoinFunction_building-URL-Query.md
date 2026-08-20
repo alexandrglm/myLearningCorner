@@ -136,7 +136,7 @@ And this is the search string that gets sent to the Google servers so that they 
 
 I'm going to cut this and bring it here and I'm going to add a comment. And this is going to be our string.
 
-![large](../../../../../../../../.gitbook/assets/02-054_IMG1.png)
+![large](../.././02-054_IMG1.png)
 
 Now, I'm going to get rid of some of this data because some of it's specific so it shows that Google is looking at the type of browser.
 
@@ -159,7 +159,7 @@ That would be a pretty fun thing to build.
 
 So the first thing I'm going to do is I'm going to grab everything except for the search terms so I'm going to come down here and create a variable called `URI` and paste this in as a string.
 
-![large](../../../../../../../../.gitbook/assets/02-054_IMG2.png)
+![large](../.././02-054_IMG2.png)
 
 Now, if you are not familiar with web development URI and URL can be used in many senses interchangeably especially for what we're discussing now.
 
@@ -186,7 +186,7 @@ So, we need to **be able to build this whole URI query string based off** of tha
 
 Now, I'm going to create a list here and, in the list, it's going to be a set of strings which are going to be our query terms.
 
-![IMG](../../../../../../../../.gitbook/assets/02-054_IMG2b.png)
+![IMG](../.././02-054_IMG2b.png)
 
 So, Python, development and tutorial.
 
@@ -217,7 +217,7 @@ Let's just take a look to see what we have right now.
 
 If I do print formatted tags and run it there we go `Python plus the development plus tutorial`.
 
-![large](../../../../../../../../.gitbook/assets/02-054_IMG3.png)
+![large](../.././02-054_IMG3.png)
 
 That's exactly what we're looking for.
 
@@ -238,7 +238,7 @@ And, now if I print this out, I should have a query URI we should have exactly w
 
 So let's run it and look at that. We have our full string.
 
-![large](../../../../../../../../.gitbook/assets/02-054_IMG4.png)
+![large](../.././02-054_IMG4.png)
 
 So, we have the URI combined with our tags which are then separated with the plus.
 
@@ -256,20 +256,20 @@ Now, just as a point of clarification, you could use anything that you want righ
 
 For example, if I just wanted spaces I could do an empty space in between the tags and notice that now are format strings is separated with an empty space.
 
-![large](../../../../../../../../.gitbook/assets/02-054_IMG5.png)
+![large](../.././02-054_IMG5.png)
 
 Another popular one to do is a minus sign a little dash.
 
 Now you can see that we have dashes right there and so you can put anything that you\
 want.
 
-![large](../../../../../../../../.gitbook/assets/02-054_IMG6.png)
+![large](../.././02-054_IMG6.png)
 
 You could put asdfasdf and when this gets printed out you'll see that\
 it slides whatever string we put right here. It slides in between each\
 one of these elements and it returns a single string.
 
-![large](../../../../../../../../.gitbook/assets/02-054_IMG7.png)
+![large](../.././02-054_IMG7.png)
 
 ***
 

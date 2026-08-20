@@ -21,7 +21,7 @@ We put in all these features and we put 10 features on one page which is _no way
 So if you start with mobile-optimized first it's a lot easier to go from there\
 to desktop than to go from desktop to mobile.
 
-![IMG](../../../../../../.gitbook/assets/01-080_IMG1.png)
+![IMG](./01-080_IMG1.png)
 
 **JH:** Absolutely. And we saw this with the Jukebox design where the designer on that built one of the coolest kinds of things I think I've seen in an application I was building, which was an actual jukebox for the desktop version.
 

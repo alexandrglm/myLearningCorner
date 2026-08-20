@@ -213,21 +213,21 @@ Now obviously it's not going to connect to a back end but what I want to do is I
 
 What I want to do is actually create the message and we're going to create a new object inside of the DOM and so I think this is a good example for understanding how this works. Let's start off by creating our input so I'm going to create an input here and let's give it an id of, let's say just, chat input. It's just going to be a regular text input and then we're also going to create a button with an id and this button is going to just say msgBtn.
 
-![large](../../../../../../../.gitbook/assets/06-122_IMG1.png)
+![large](.././06-122_IMG1.png)
 
 And then inside of here we'll just say submit and that should be all that we need there. Now later on I'm going to add a click handler here. But for right now let's not worry about it and I'm going to come down into the script tag and create a function here. I'm going to say function and send msg. It's not going to take any arguments and this is going to be the function that we're going to call from within the click handler. So here I'll say on click and then just pass in the send message function.
 
-![large](../../../../../../../.gitbook/assets/06-122_IMG2.png)
+![large](.././06-122_IMG2.png)
 
 Now lets test this out just to make sure we have everything wired up correctly. So a console log out we'll just say "Hi". Hit save and now let's come back over here and open up the javascript console.
 
 OK. So now if I click submit you can see it says "Hi". So this is all wired up correctly we have our on click handler it's called lean this and message function. And right now send message is doing nothing more than console logging. So now coming inside of here. Let's actually start building out the structure of our generator.
 
-![large](../../../../../../../.gitbook/assets/06-122_IMG3.png)
+![large](.././06-122_IMG3.png)
 
 And so this is going to be an HMTL generator in a sense because we're going to be creating new elements directly inside of the DOM. So let's say I'm going to create a variable here and we'll call it new div and then in order to create a new div the command is, `document.createElement`. So you're going to say create element. This takes in a string and it's whatever element that you want to create.
 
-![large](../../../../../../../.gitbook/assets/06-122_IMG4.png)
+![large](.././06-122_IMG4.png)
 
 Now in a later guide, I'm going to show you how you can create other elements. You're not limited just to div's. I'm going to show you how you can create an unordered list and list items and those kinds of things. So now that we have our new div, now we need to add a class to it so I'm going to say `newDiv.classList.add('chatMsg');`. This isn't technically necessary but it's something that I want you to see whenever we're adding in a new item.
 
@@ -235,17 +235,17 @@ I want you to see exactly what's happening at the DOM level and it helps wheneve
 
 So let's use a "let" variable this say `let chatInput = document.querySelector('#chat-input').value;`.We want to grab the value from that and that's going to get us the value. And if you want to test this out let's just say we want to console.log this and let's make sure we have everything wired up.
 
-![large](../../../../../../../.gitbook/assets/06-122_IMG5.png)
+![large](.././06-122_IMG5.png)
 
 So I come over here and say "Hey" and then hit submit and you can see that we now have access to grab that chat input value. So we're in really close here we now have created a new div. We haven't added it to the DOM yet but we've created a new div we've added a class. And then from there, we have grabbed the value from the input.
 
 So now what I'm going to do is I'm going to create new variable `const newContent = document.createTextNode` Then pass in that value. We are going to pass in the `(chatInput);` value. Then we only have one more step to get this part of it working. So now we call our `newDiv.appendChild` and then paste in that new content value.
 
-![large](../../../../../../../.gitbook/assets/06-122_IMG6.png)
+![large](.././06-122_IMG6.png)
 
 Okay so what's going on here? Because if you've never done this before, this may look a little weird but one thing I like about this is this is kind of procedural in nature where you can step through every line of code right here and see exactly what's happening. So we're creating a new div right here online 18 from there we're adding a class to that div.
 
-![large](../../../../../../../.gitbook/assets/06-122_IMG7.png)
+![large](.././06-122_IMG7.png)
 
 Then we're grabbing the input value so we're taking it from the form input. Then we are in this line (21) we're creating a text node. So if you tried to skip this step, if you tried to go 20 line to line 22 what you'd be doing is trying to place just raw text input into the DOM inside of that div and that is not going to work. What you need to do is to create a text node. So now we have converted that plain string into a javascript object with this create text node and then we can use append child.
 
@@ -257,13 +257,13 @@ I also need to find in where where exactly in the DOM I'm going to place this an
 
 Now I'm going to say `document.querySelector('#chat-input').value =`
 
-![large](../../../../../../../.gitbook/assets/06-122_IMG8.png)
+![large](.././06-122_IMG8.png)
 
 And why am I going to do that?
 
 I'm going to show you here in one second. So what I'm doing here is I want to make sure that whenever I have hit submit that it clears out that button. So if you want to actually see this in action I'm going to save here and nothing's going to happen yet. But just watch what happens if I type something in here and hit submit to CEO. The text is still in place. Well, that is exactly what we're looking to do.
 
-![large](../../../../../../../.gitbook/assets/06-122_IMG9.png)
+![large](.././06-122_IMG9.png)
 
 So I'm going to hit save and then the expected behavior if you've ever typed in a comment box or chat box or anything is when you hit submit. It should clear it out. And so that's all that this line is doing now. One question that you might have and it's a good question is why wouldn't you be able to just use this chat input variable? It's because what this is grabbing is actually the value.
 
@@ -271,27 +271,27 @@ So if you grabbed this chat input down here you said it's chat input and then va
 
 So I'd rather just say that I want to grab that chat input at this stage and then clear it out. So now let's move down here and I am going to add a little conditional. So lets say `if (document.querySelectorAll('.chatMsg').length > 0)`. So here I'm grabbing all of the elements that have a class of chatMsg So if there are any of these, so I'll check for the length and I'll say if that length is greater than 0 then I want to do something different.
 
-![large](../../../../../../../.gitbook/assets/06-122_IMG10.png)
+![large](.././06-122_IMG10.png)
 
 So in that case I want to reassign chatWrapper which is why I made a let variable. I'll say document dot query selector all and then change that to chatMsg and then grab the first one that may look a little weird to you. I'm going to show you in a second why it is necessary. So come down so you can see a little more room and now we're going to actually implement it. So now this is going to be what gets it working.
 
-![large](../../../../../../../.gitbook/assets/06-122_IMG11.png)
+![large](.././06-122_IMG11.png)
 
 OK, so long as I don't have any typos I believe this should work here. So let's type the first message. Now it will not work if you enter because we don't have any listener for a keypress you actually have to click submit. You can see that that worked. Now we have a little bit of issue with where that button is but we can fix that in a second. So a second message and hit submit again.
 
-![large](../../../../../../../.gitbook/assets/06-122_IMG12.png)
+![large](.././06-122_IMG12.png)
 
 You can see that second message went and that worked properly. So all of this is being added in now. As you can see insert before it is actually inserting it before this element let's just create an empty div element here that we want this inserted before. So let me just create a div and we'll call this just chat wrapper just like this `<div> class="chat-wrapper"></div>` and it's going to start off as being empty. And now instead of grabbing the button as our initial chat wrapper Now we can just say chat wrapper.
 
 This should fix our little button issue. So I'm going to come here. First message hit submit. And that worked. Another one and that one's working. So all of this is working which is phenomenal. I love the way you can do this. Now, this used to be so much harder in JavaScript but in the most modern versions, it becomes much more straightforward. And let's go and let me actually stretch this out a little bit so it's easier to see.
 
-![large](../../../../../../../.gitbook/assets/06-122_IMG13.png)
+![large](.././06-122_IMG13.png)
 
 Now I want you to notice what's happening here in the DOM because this is probably the most important thing about this entire guide. Notice here how we have classes of chatMsg they're getting added. What happens when I say the third one right here. If I hit submit. You can see a third item has gotten added. And this did not used to be here.
 
 We're not doing what we've done before where we had an element there and it was kind of just hidden using CSS and then we toggled the class in order to show it right here actually generating new div elements on the fly. And so this is exactly the kind of thing that you'd want to do if you're building out a full chat application or a commenting application or anything like that where you needed to dynamically add elements onto the page and also notice that we have added that class of chatMsg successfully.
 
-![large](../../../../../../../.gitbook/assets/06-122_IMG14.png)
+![large](.././06-122_IMG14.png)
 
 So if you were to do this and the like I mentioned earlier I put this in there not because it was necessary we didn't have to put that in but imagine a scenario where chat message had some kind of style. So it had some theme that you wanted to add to other as a background color a border anything like that you'd be able to do that because here you wouldn't just add empty divs you actually can add them with any kind of attributes just like you had typed them directly into the HTML yourself which is a pretty neat way of doing it.
 
@@ -299,7 +299,7 @@ So if you look at the structure here you can see that we have our widget. We hav
 
 And let's talk about this conditional because this might be one of the more confusing parts of the entire program and I'm going to comment it out so you can see what would happen if it was not there. So I'm going to close this out and say this message is first and this one is second now. Notice how our behavior has switched. If you remember back to that first example whenever we added a new message, it popped onto the top and then all of the other messages just simply moved down.
 
-![large](../../../../../../../.gitbook/assets/06-122_IMG15.png)
+![large](.././06-122_IMG15.png)
 
 And so in many cases that is the behavior you want. And the reason I did it in this guide is so you could see how you could do it either way because one of the most confusing things (at least for me when I was learning how to do this) is discovering how I could control where an element got added on the page because I don't think that this function insert before is really the best named one because insert before tells me if I say Insert this new div before the chat wrapper that means it should actually go in the DOM before there but that's not the way it works as you notice right here when you click inspect and you can see that at the very top.
 

@@ -47,7 +47,7 @@ With comments, you shouldn't have any code that gets run. I'm also going to open
 
 If I hit run, three little dots should open up.
 
-![IMG](../../../../../../../.gitbook/assets/02-019_IMG1.png)
+![IMG](.././02-019_IMG1.png)
 
 You could add other lines or just hit return again.
 
@@ -61,9 +61,9 @@ By doing so, it will only print “hi there”.
 
 The comments will be ignored. You can also test this by printing it in Python 3.
 
-![IMG](../../../../../../../.gitbook/assets/02-019_IMG2.png)
+![IMG](.././02-019_IMG2.png)
 
-![IMG](../../../../../../../.gitbook/assets/02-019_IMG3.png)
+![IMG](.././02-019_IMG3.png)
 
 ## In-line comments
 
@@ -81,7 +81,7 @@ If it will need to be expanded upon or fixed later, I will add a to-do.
 
 Depending on the editor, it may even suggest you split the variable with a “help” button.
 
-![IMG](../../../../../../../.gitbook/assets/02-019_IMG4.png)
+![IMG](.././02-019_IMG4.png)
 
 This does not state there is an issue, but rather serves as a reminder for when you use the syntax “to do” in all capital letters.
 
@@ -101,7 +101,7 @@ We designate a multiline comment, like this one, is by using double quotes—3 a
 
 Now, there are no errors. If you run this and print it out, it should work properly.
 
-![IMG](../../../../../../../.gitbook/assets/02-019_IMG5.png)
+![IMG](.././02-019_IMG5.png)
 
 Our comments are being ignored, which they should.
 
@@ -128,7 +128,7 @@ comment—some of which can throw a bug in the program.
 
 Most that do so are not practical, such as the one below from 2015.
 
-![IMG](../../../../../../../.gitbook/assets/02-019_IMG6.png)
+![IMG](.././02-019_IMG6.png)
 
 Depending on who you're working on your Python code with, someone may code comments differently than you.
 

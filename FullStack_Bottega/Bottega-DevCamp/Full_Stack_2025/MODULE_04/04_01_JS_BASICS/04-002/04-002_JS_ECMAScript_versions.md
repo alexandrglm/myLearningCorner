@@ -16,13 +16,13 @@ Before learning javascript, I think it is very helpful to understand the various
 
 So we have ECMAScript 1 all the way through 7.
 
-![large](<../../../../../../.gitbook/assets/04-002_IMG1 (1).png>)
+![large](<./04-002_IMG1 (1).png>)
 
 The reason why I wanted to show this page is that it shows some key differences. For example, if you look at the latest version, it has added items such as exponential operators, and one powerful thing was added in 2015. In ECMAScript 6 it added the concept of classes and modules which essentially allowed javascript to function like an object-oriented type language.
 
 Now, this is all very nice and very helpful. It's also important to understand that not every single version is able to be interpreted by every browser.
 
-![large](<../../../../../../.gitbook/assets/04-002_IMG2 (1).png>)
+![large](<./04-002_IMG2 (1).png>)
 
 You have 3, which is supported by all browsers.
 

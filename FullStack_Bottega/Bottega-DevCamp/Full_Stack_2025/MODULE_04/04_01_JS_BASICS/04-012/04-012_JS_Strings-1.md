@@ -236,11 +236,11 @@ str.includes('quick');   // true
 
 It goes through our string, and it found quick right there, and it said, yes, it does include that. Now if I were to run `str.includes();` again and pass in foo, which does not exist, it returns false. So includes is a very nice and straight forward type of function where you pass in whatever you're looking for. If it includes that value, it returns true. If not, it returns false.
 
-![large](../../../../../../.gitbook/assets/04-012_IMG1.png)
+![large](./04-012_IMG1.png)
 
 Now there are some more customized ways of doing this. We have included, but we also have a function called `startsWith`. `startsWith` is very similar except instead of looking through the whole string. It just looks at the very front. If I pass in "the" it returns true because it starts with that. If I pass in quick it returns false because even though that's in the string it doesn't start the string out.
 
-![large](../../../../../../.gitbook/assets/04-012_IMG2.png)
+![large](./04-012_IMG2.png)
 
 Now, this has kind of a contrapositive here which is `endsWith`. We have `startsWith` and `endsWith`. When it's quick, it's going to be false. If it is dog it's going to be true, which you probably already figured out. But what if it's just "g" that's also true. It doesn't check for words it checks just character by character. If I were to say `str.endsWith('lazy dog');` it is also true.
 

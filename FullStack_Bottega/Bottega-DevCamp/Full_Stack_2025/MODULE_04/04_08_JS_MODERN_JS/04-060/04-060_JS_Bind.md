@@ -204,13 +204,13 @@ So, what we want to accomplish is I want to be able to inject and bind ... Spoil
 
 And I'm going to be able to do the same thing here with Tiffany, so I'll say, "`fullName.bind(userTwo)`," and now, if I want to call this function, so I'm going to call Kristine, then you can see that it returns, "Hudgens, Kristine," so it has connected, and has bound together, the fullName function and then the userOne object, and if I do the same thing here with the Tiffany function, this is going to bind the userTwo object, also with our function.
 
-![large](../../../../../../.gitbook/assets/04-060_IMG1.png)
+![large](./04-060_IMG1.png)
 
 So that, if you've never gone through it before, that may seem a little bit odd, but this is a way that JavaScript allows you to connect a function with an object, so instead of having to create a function and pass in arguments, where you would say something like, "`fname`," and, "`lname`," for first name and last name, and then calling that inside of it, we're able to actually bypass that process and bind the function directly with the object, and whenever you see the bind function inside of React, or any of the JavaScript frameworks, that's exactly what it's doing.
 
 Now, I want to add one more little caveat here. I'm going to comment this out right here, and let me show you what happens and why we can't use an arrow function. So, if you've seen a lot of arrow functions around, you may be curious about why I didn't use one. I'll copy this, and right here, with fullName, instead of using a function expression, I'm just going to use an arrow function, so I'll say equals, and then an arrow just like this. You can see that now, this is no longer working. We're getting undefined for both of these functions.
 
-![large](../../../../../../.gitbook/assets/04-060_IMG2.png)
+![large](./04-060_IMG2.png)
 
 The reason for this is because whenever you use an arrow function, remember the key difference between a function expression, like what we have here on line 11, and an arrow function is that the arrow function changes the way that `this` works.
 

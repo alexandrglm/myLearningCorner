@@ -518,17 +518,17 @@ elif op == "/":
     return total / element
 ```
 
-![IMG](../../../../../../../.gitbook/assets/02-028_IMG1.png)
+![IMG](.././02-028_IMG1.png)
 
 Let's see what the bug is here. No, it's actually it's a bug with\
 line 19. It would appear I need to close off. Notice how I have that\
 parenthesis I didn't close off?
 
-![IMG](../../../../../../../.gitbook/assets/02-028_IMG2.png)
+![IMG](.././02-028_IMG2.png)
 
 So now let's run this again and there you go that worked perfectly.
 
-![IMG](../../../../../../../.gitbook/assets/02-028_IMG3.png)
+![IMG](.././02-028_IMG3.png)
 
 We have 6 for addition, -4 for subtraction, 6 for multiplication, and\
 then we have that 0.1666 number for division. So this is working\
@@ -537,13 +537,13 @@ this one 250 and then for multiplication lets make this one 55 and then\
 for our division here will make this one 100 just so we can have some\
 different values to look at.
 
-![IMG](../../../../../../../.gitbook/assets/02-028_IMG4.png)
+![IMG](.././02-028_IMG4.png)
 
 and if I run this one now you can see that it has dynamically adjusted\
 our sums working, our subtraction is still working, multiplication is\
 working perfectly, and then so is our division.
 
-![IMG](../../../../../../../.gitbook/assets/02-028_IMG5.png)
+![IMG](.././02-028_IMG5.png)
 
 ***
 

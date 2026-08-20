@@ -170,7 +170,7 @@ different elements in our list. So now I can simply say "print list of\
 tags" and it should give us our list. So I run that you can see that now\
 we have a list
 
-![large](../../../../../../../.gitbook/assets/02-036_IMG1.png)
+![large](.././02-036_IMG1.png)
 
 which if you're coming from a different type of programming language\
 such as Javascript or Ruby. This is called an array but it is a list in\
@@ -190,7 +190,7 @@ Now split also can be run without any arguments at all. So if I were\
 to take this and call tag split here and pass in no arguments. You'll\
 see if I run this you'll see that we get some different behavior
 
-![large](../../../../../../../.gitbook/assets/02-036_IMG2.png)
+![large](.././02-036_IMG2.png)
 
 the way that split works by default. If you don't pass in any\
 arguments is it simply converts your string into an array or into a list\
@@ -217,7 +217,7 @@ Now technically it would work if we had started out with only this\
 example or I should say. Yeah so I'm just going to do everything from\
 the comma I'm just going to take out just like this
 
-![large](../../../../../../../.gitbook/assets/02-036_IMG3.png)
+![large](.././02-036_IMG3.png)
 
 and so if I wanted to call heading and just perform some type of\
 reassignment so I could say heading list and then heading split and pass\
@@ -243,7 +243,7 @@ up into as many pieces as you need and then you can use those.
 
 So right here
 
-![large](../../../../../../../.gitbook/assets/02-036_IMG4.png)
+![large](.././02-036_IMG4.png)
 
 in this case, you want 3 different elements whereas what it does is\
 it's much more flexible it works on a much wider array of types of\

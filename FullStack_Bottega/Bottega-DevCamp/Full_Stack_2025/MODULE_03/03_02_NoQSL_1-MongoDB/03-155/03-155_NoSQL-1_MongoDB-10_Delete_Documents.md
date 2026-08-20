@@ -45,7 +45,7 @@ db.books.remove({ name: "Machine Learning" })
 db.Books.remove({ name: "Data Science 101" }, 1)
 ```
 
-![img remove, deprecated, but useful](../../../../../../.gitbook/assets/03-155_IMG01.png)
+![img remove, deprecated, but useful](./03-155_IMG01.png)
 
 ***
 
@@ -123,7 +123,7 @@ Now if I passed in a second element so if I passed in say a 1 it's only going to
 
 So here if I run this you can see that it gives us a return result and says number removed is 1.
 
-![large](../../../../../../.gitbook/assets/03-155_IMG1.png)
+![large](./03-155_IMG1.png)
 
 If I go back and say db.books.find and pass in name OOP programming this is going to tell us that we still have a number of books left there.
 

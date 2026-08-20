@@ -100,7 +100,7 @@ I can skip over that first expression here so I'll have to type thing in and the
 
 And this is going to return 'Python basics' and 'Intro guide to Python' so if I run this you can see that it returns a tuple of those first two elements.
 
-![large](../../../../../../../../.gitbook/assets/02-073_IMG1.png)
+![large](../.././02-073_IMG1.png)
 
 Now that is **one of the key differences** when it comes to a **tuple versus a list** if you remember whenever you run a slice or arrange in a list it returns a list of the items that you requested.
 
@@ -119,7 +119,7 @@ talked about slices, this is **the same exact syntax** so that carries directly 
 
 So now if I run this command
 
-![large](../../../../../../../../.gitbook/assets/02-073_IMG2.png)
+![large](../.././02-073_IMG2.png)
 
 you're going to see that the first element or I should say the element with an index of 1 is intro guide to Python so it gives us that end because we added a step of 2 it skipped this Some cool Python content and then it brought us published.
 

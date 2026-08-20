@@ -174,7 +174,7 @@ Atlas atlas-terube-shard-0 [primary] test> db.Books.find(
 
 ***
 
-![img](../../../../../../.gitbook/assets/03-156_IMG01.png)
+![img](./03-156_IMG01.png)
 
 ***
 
@@ -198,7 +198,7 @@ because you have the flexibility and then you also have the ability to nest as m
 
 Just like we have right here
 
-![large](../../../../../../.gitbook/assets/03-156_IMG1.png)
+![large](./03-156_IMG1.png)
 
 Now, I've extended our blank document here and in addition to just having a name for authors we now also have if they're active or not. I also deleted all the blank instances in our database so that we can just be working with a single one. And now if I paste this in you can see that we got one inserted.
 
@@ -226,11 +226,11 @@ db.books.find(
 
 Now our projections are going to be pretty standard so we're going to have a name of one because I want the name back and then a publish date of 1 because I'd like that date and the next part is going to look a little bit different. We can't use our same syntax as we're using right here where we write it without the strings. We do need to embed this in strings. And what we can say is authors which is a name of our collection and then name and so we have authors which are an array and then inside of it there are all of those various elements we have all those objects and so when we do authors dot name what Mongo's going to do it's going to go into that array and then it's all going to go through each one of those objects each one of those authors objects and then it's going to bring back the name attribute only and we can give that a 1 and then we'll also add the pretty function at the end. And now let's run this. If I run this now you can see that it only returns the authors and their respective names. It doesn't bring back if they're active or not.
 
-![large](../../../../../../.gitbook/assets/03-156_IMG2.png)
+![large](./03-156_IMG2.png)
 
 Now just to prove that that is the way it's really working. If I delete most of this and just say authors and run that you can see that's where it brings active true on both of those.
 
-![large](../../../../../../.gitbook/assets/03-156_IMG3.png)
+![large](./03-156_IMG3.png)
 
 But the biggest key here to remember is you have the ability with those embedded nested objects to be able to go through them by first calling the name of whatever the key is here and then follow that up by whatever the key is inside of all the nested objects.
 

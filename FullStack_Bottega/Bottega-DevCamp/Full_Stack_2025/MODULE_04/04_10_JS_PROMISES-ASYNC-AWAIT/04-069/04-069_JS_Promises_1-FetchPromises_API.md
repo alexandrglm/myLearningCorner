@@ -203,7 +203,7 @@ console.log('After program has run');
 
 and let's see what happens when this gets run. So I'm going to hit run and you're going to see that each one of the console log statements printed out
 
-![large](../../../../../../.gitbook/assets/04-069_IMG1.png)
+![large](./04-069_IMG1.png)
 
 Let's compare what they have. And also as a quick aside you may notice here that I'm using the javascript console instead of the CodePen one and the reason for that is codepen limits the amount of data that it will show inside of its console where the javascript one does not. If you're following along using CodePen then I recommend that you use the javascript console when you're working with APIs so that you won't run into any issues with your content being limited or capped.
 
@@ -213,15 +213,15 @@ Now, remember the reason why I'm stressing this is because when it comes to work
 
 Now let's take a look at what we get back in our promise. So if I click the drop-down arrow in the console you might be a little bit confused because if I click on say the promise here.
 
-![large](../../../../../../.gitbook/assets/04-069_IMG2.png)
+![large](./04-069_IMG2.png)
 
 And I keep looking through the data. Nothing here is really telling us what our posts are.
 
-![large](../../../../../../.gitbook/assets/04-069_IMG3.png)
+![large](./04-069_IMG3.png)
 
 If you remember back we would kind of expect that our full set of posts would be exactly like this like we'd be able to see these titles and all of these elements.
 
-![large](../../../../../../.gitbook/assets/04-069_IMG4.png)
+![large](./04-069_IMG4.png)
 
 But what we've done and what `fetch` brings back to us is a `promise` and this is one of the most critical parts to understand when it comes to working with `promises`. Is the `promise` by itself really doesn't do a lot for you, you are not going to output a `promise` on the screen you're going to get back this `promise` object, but then you have to do something with it. You have to say what I want to do with a successful response is X Y Z.
 
@@ -238,13 +238,13 @@ postsPromise
 
 Let's see what this brings back to us. Remember to clear the console, hit save, and hit run and see what gets brought back.
 
-![large](../../../../../../.gitbook/assets/04-069_IMG5.png)
+![large](./04-069_IMG5.png)
 
 So right here you can see that it is starting the `fetch` call all the way to where we were before. Now it brings back this response, what the `promise` returns to us is this data which is the response of that `fetch` call. So you can see that we have this object and this is not our set of posts.
 
 Let's click on it and see what we have.
 
-![large](../../../../../../.gitbook/assets/04-069_IMG6.png)
+![large](./04-069_IMG6.png)
 
 Here we have our headers. We have a status of 200.
 
@@ -281,13 +281,13 @@ postPromise
 
 And now let's see what we have back.
 
-![large](../../../../../../.gitbook/assets/04-069_IMG7.png)
+![large](./04-069_IMG7.png)
 
 OK. So now we're getting a little bit closer. If you look and let me also take and comment all the extra console.log's out. I'll leave them in the show notes but for right now I'm going to comment them out just so we don't have all of this data confusing us.
 
 So what got returned is what we have here which is this object called posts by click on this. You can see we have 10 posts and if I click on that look at what we have here we have all of that data returned to us.
 
-![large](../../../../../../.gitbook/assets/04-069_IMG8.png)
+![large](./04-069_IMG8.png)
 
 So after we've converted it to JSON and that tells javascript that we are expecting JSON data and I want you to format it and return the data like that. Now we have access to it, so let's see how we can parse through it. Because everything we got here is really just an object called post so that doesn't do a lot of good for us if we want to render this on the screen or anything like that. What I'm going to do is call data and I can say .posts `data.posts;` and so what that's going to do and how I can call posts, there's not a special reserved keyword or anything like that.
 
@@ -303,11 +303,11 @@ data.posts.forEach((item) => {
 
 And the reason why I am able to do this. And let me just close all my brackets out and then I'm going to go into the details. The reason I'm able to do this is because this data and when I call posts what this is doing is this is going to grab the array called post and then were iterating over it. Each item in that array we'll have access to and that is its own object. And so I can then call `item.title` and if you go and look at the API you can see right here we have posts.
 
-![large](../../../../../../.gitbook/assets/04-069_IMG9.png)
+![large](./04-069_IMG9.png)
 
 This is what the objects are named. And then you have this set of arrays. So you have right here. This first one of ID 414. Then you have the next one of 413. So all I'm doing is inside of these nested objects I'm just going to be calling title and I have access to it because we're iterating over that. And so I'll console.log(item.title). And then this should work, I believe. If I hit run now this is going to go and look at that. We have printed out each one of the titles inside of the API
 
-![large](../../../../../../.gitbook/assets/04-069_IMG10.png)
+![large](./04-069_IMG10.png)
 
 and I don't know about you but I think that's pretty cool.
 
@@ -327,7 +327,7 @@ and working with promises we've been able to communicate with a completely diffe
 
 Paste that in instead of title in the console.log statement. Now clear the console out let's not get confused. If I click run you can see we have all of the links right here.
 
-![large](../../../../../../.gitbook/assets/04-069_IMG11.png)
+![large](./04-069_IMG11.png)
 
 So if you wanted to place this inside of a page, grab the title, and then create a bunch of links you can pass in the URL, and then in your application you could show all of this same thing for working with Instagram or Twitter or any other outside API. And we did that all with just a few lines of code so that I think that is pretty awesome.
 

@@ -242,9 +242,9 @@ So, there are a few ways that you can do this and I'll give you a couple of diff
 
 #### Attempt 1:
 
-![IMG](../../../../../../../.gitbook/assets/attempt_1.png)
+![IMG](.././attempt_1.png)
 
-![IMG](../../../../../../../.gitbook/assets/attempt_1B.png)
+![IMG](.././attempt_1B.png)
 
 ```python
 import math
@@ -326,7 +326,7 @@ manual_exponent_iterative(2,0)
 
 ```
 
-![IMG](../../../../../../../.gitbook/assets/attempt_2.png)
+![IMG](.././attempt_2.png)
 
 ***
 
@@ -359,7 +359,7 @@ So I'm going to\*\* decrease it by 1\*\*, once again if that syntax looks a litt
 
 But I like the syntax it's a little bit shorter and if you are used to using incrementors and decrementers then it makes sense.
 
-![large](../../../../../../../.gitbook/assets/02-047_IMG1.png)
+![large](.././02-047_IMG1.png)
 
 Then, when I come down here I'm just going to return the total.
 
@@ -398,7 +398,7 @@ Let's come and run this, this is the manual\_exponent.
 
 If I run that you can see we get 8 and 100.
 
-![large](../../../../../../../.gitbook/assets/02-047_IMG2.png)
+![large](.././02-047_IMG2.png)
 
 So this is working very nicely and this is the solution that you built out that is completely fine.
 
@@ -446,7 +446,7 @@ So let's say that we have some type of number so we'll put in here 3 and then an
 
 What this is going to do if you look at what `computed_list` gives, **it will give you a list with two items both of which are 3**.
 
-![large](../../../../../../../.gitbook/assets/02-047_IMG3.png)
+![large](.././02-047_IMG3.png)
 
 So, if you ever need to build out a list and you know all of the elements that you want inside of it, this is a really nice way to be able to build that out.
 
@@ -480,7 +480,7 @@ to run.
 
 So **with this LAMDA function here we are passing it arguments of total and element and then we're saying that every time that you call this LAMDA function which it's going to be called on every element in our computed list right here.**
 
-![IMG](../../../../../../../.gitbook/assets/02-047_IMG3b.png)
+![IMG](.././02-047_IMG3b.png)
 
 We want you to take that total which keeps track of whatever the total is and that's something specific to the reduced function.
 
@@ -491,7 +491,7 @@ of what it's really doing.
 
 Let me start up `pipenv shell` make sure we're working with the right version of Python. Now, let's run this, this is the `manual_exponent.py` and you can see that's working perfectly.
 
-![large](../../../../../../../.gitbook/assets/02-047_IMG4.png)
+![large](.././02-047_IMG4.png)
 
 So we're getting the exact same behavior that we got before but now\
 we're using a functional approach for what we're building out with the\

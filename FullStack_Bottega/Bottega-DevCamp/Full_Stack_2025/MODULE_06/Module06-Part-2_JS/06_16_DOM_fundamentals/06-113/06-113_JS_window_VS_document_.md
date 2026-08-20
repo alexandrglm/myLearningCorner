@@ -172,43 +172,43 @@ So far in this course whenever we wanted to select something on the web page we'
 
 Now another thing that you may not be aware of if you've never used it before is above the document tier. So above the document hierarchy is something called the window. So if I say window here you'll see that this returns a Window object.
 
-![large](../../../../../../../.gitbook/assets/06-113_IMG1.png)
+![large](.././06-113_IMG1.png)
 
 And if you expand and scroll down you'll see this is actually a pretty massive object. There are all kinds of things they will find in here, one very notable one is actually the document. So right here when you're working with the document you're actually working with the document that is nested inside of the window.
 
-![large](../../../../../../../.gitbook/assets/06-113_IMG2.png)
+![large](.././06-113_IMG2.png)
 
 And just for Intuitive purposes, javascript gives you the ability to simply call the document, and then it automatically knows that you mean the document that is inside of the window object. And so if you want to test this out just like we ran `document.getElementByClassName` and then we passed in topics like we've done in previous guides and this returned an HTML collection of all of the divs with each one of the topics.
 
-![large](../../../../../../../.gitbook/assets/06-113_IMG3.png)
+![large](.././06-113_IMG3.png)
 
 As a quick aside in different parts of this course, I've mentioned how because this has the brackets that it's an array, technically it is not an array, it's what's called an HTML collection it's very similar to an array and you can use it in a very similar manner. But there are a few javascript functions and library methods that you can't use it on such as something like the map methods and filter and some of the reduce items that they need to work with an array. You can always convert this directly to an array and so that's just a quick aside just in case you have heard me call it an array it's mainly because you can pretty much use it the same way you can iterate over it with for each and you can search for elements in it you can get the length but it is a very subtle difference.
 
 Getting back to the main point on the difference between window and document. So you saw how we were able to do this, if I were to call up that same code and say `window.document` and run the same thing you can see that we get the exact same HTML collection back and so the window does nest the document inside of it. And so we're able to use this shorthand where we can call document and it references everything on our webpage. So why are we going through this? Well, there's a couple reasons, one is that if you are working with alerts those are actually found inside of the window object. So if I click the window object and scroll down you can see that if you need to work with alerts that is technically considered inside the window not in the document.
 
-![large](../../../../../../../.gitbook/assets/06-113_IMG4.png)
+![large](.././06-113_IMG4.png)
 
 So that's where you'll have an alert pop up on the page such as something like this, so `alert('hi there')` and when it says hi there up here. This actually lives inside of the window and not the documents.
 
-![large](../../../../../../../.gitbook/assets/06-113_IMG5.png)
+![large](.././06-113_IMG5.png)
 
 So that's one thing to keep in mind if you're having to manipulate the alert. Another reason and this is a very key reason that I've run into in the past and it can be a little confusing if you've never done it before. Is this page here doesn't have any Iframes. An Iframe is where you can embed another website inside of yours and so if I switch to another page. This isn't YouTube if anyone has gone through the Flexbox course this is the capstone project for the Flexbox course where we recreate YouTube and this is an actual embed and YouTube uses an Iframe embed. So this is an Iframe inside of our HTML site and so if I call window here like normal so if I use a window document and I see what's inside of this document. As you can see when I highlight this is everything we'd expect it's our doctype HTML our body and it's highlighting everything up here.
 
-![large](../../../../../../../.gitbook/assets/06-113_IMG6.png)
+![large](.././06-113_IMG6.png)
 
 So this is our document.
 
 But now let's go and inspect our Iframes. If I click on inspect and click on the Iframe and it shows exactly where that resides in the HTML
 
-![large](../../../../../../../.gitbook/assets/06-113_IMG7.png)
+![large](.././06-113_IMG7.png)
 
 It happens and what the browser does whenever you bring an Iframe in this frame lives outside of the document. And so even when you come to the console you can see it's no longer saying top. Now has this weird little hash
 
-![large](../../../../../../../.gitbook/assets/06-113_IMG8.png)
+![large](.././06-113_IMG8.png)
 
 Let's try to run that same code again. So if I say `window.document` now it acts like it's the same. But look at this, now it's no longer highlighting the entire site. Instead, it is highlighting only the frame and if I click on this it is now bringing me not the head that we had before and the body tag here is just for the Iframe it is just for the embedded video that YouTube is sending us.
 
-![large](../../../../../../../.gitbook/assets/06-113_IMG9.png)
+![large](.././06-113_IMG9.png)
 
 And so this gives you the ability to treat an Iframe very similar to how you treat your own documents or if you need to change values on there or anything like that then you need to highlight it you need to, typically the way you would structure is you'd wrap it up in some type of div and then you can traverse through that and then grab this secondary window object. So from a visual perspective, you can see how it work the entire window itself is the window object and this is where you'd be able to perform tasks such as seeing the width of the window object to see if the user is on a smartphone or a tablet or if they're on a full desktop browser like I am here.
 

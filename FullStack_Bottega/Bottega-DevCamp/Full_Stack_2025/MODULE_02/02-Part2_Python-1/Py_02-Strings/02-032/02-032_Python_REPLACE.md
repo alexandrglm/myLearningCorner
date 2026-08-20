@@ -146,7 +146,7 @@ could say "sentence" and then say new value. If I come down here and\
 print out the sentence you may guess what is going to be printed out.\
 Right here we get new value.
 
-![large](../../../../../../../.gitbook/assets/02-032_IMG1.png)
+![large](.././02-032_IMG1.png)
 
 Now we did not change this string. Remember when we did that very\
 slow break out where I showed that a string is not the variable? That\

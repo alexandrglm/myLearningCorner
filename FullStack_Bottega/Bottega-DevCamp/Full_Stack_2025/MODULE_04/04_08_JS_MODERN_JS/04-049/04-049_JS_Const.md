@@ -233,7 +233,7 @@ So that is where const comes in. And this is part of the reason why const is suc
     console.log(city);
 ```
 
-![large](../../../../../../.gitbook/assets/04-049_IMG1.png)
+![large](./04-049_IMG1.png)
 
 This is where using code Penn. can be a little bit tricky because you'd think that it would at least show this city again, it just doesn't show it, If there is an error and so right here we do have an error because we have a time where we actually tried to redefine the value.
 
@@ -243,7 +243,7 @@ Now let's try the same code. So I'm going to say `const city = ‘Scottsdale’;
 
 Now if I try this Uncaught TypeError and this is what was happening but it gets hidden in code Penn which is why it's great to use tools like this, but you also sometimes have to switch and use other systems as well like just the pure console
 
-![large](../../../../../../.gitbook/assets/04-049_IMG2.png)
+![large](./04-049_IMG2.png)
 
 So what is this error, it says Uncaught TypeError: Assignment to constant variable. So this is where the problem is and this is a very good thing for it to catch. We do not want to always have the ability to redefine our variables. So I'm going to close out of here. And so just in looking at this code I want you to get very used to typing out the const variable type because as you start looking through the documentation for React and Angular, and all of these other types of frameworks you're going to see const used very very much all over the place.
 

@@ -89,7 +89,7 @@ python app.py
 * Flask starts a local server at `http://127.0.0.1:5000/`.
 * Visit `http://localhost:5000/` in your browser to see **"Hey Flask!"**.
 
-![Flask running](../../../../../../../.gitbook/assets/03-137_IMG3.png)
+![Flask running](.././03-137_IMG3.png)
 
 #### ✅ Step 7: Stop the Server
 
@@ -168,7 +168,7 @@ system.
 
 We can test this out by now looking at the pip file and you can see now around line 14 you should now have Flask
 
-![large](../../../../../../../.gitbook/assets/03-137_IMG1.png)
+![large](.././03-137_IMG1.png)
 
 You can also see that we're working with Python 3.6. That's the basic\
 setup that you're going to want to use. And now we're going to create\
@@ -279,7 +279,7 @@ debug log it says that it's running on this URL. Now, this URL `http://127.0.0.1
 
 So I can go to a localhost:5000 and you can see that it says 'Hey Flask'.
 
-![large](../../../../../../../.gitbook/assets/03-137_IMG3.png)
+![large](.././03-137_IMG3.png)
 
 So if you have gone through all of that and you're seeing 'Hey Flask'\
 that means that you have built your first Flask API application. So\

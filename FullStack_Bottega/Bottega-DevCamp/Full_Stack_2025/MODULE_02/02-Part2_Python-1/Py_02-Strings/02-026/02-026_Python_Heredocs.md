@@ -36,7 +36,7 @@ And so if I say a content, and then I try to wrap this entire set of paragraphs 
 
 Well, we can't even run it because we have an error:
 
-![IMG](../../../../../../../.gitbook/assets/02-026_IMG1.png)
+![IMG](.././02-026_IMG1.png)
 
 The error says EOL (which stands for End of line.) while scanning string literal.
 
@@ -57,13 +57,13 @@ So if I did that would be the same thing.
 
 I personally for my own heredoc's I like using three double quotes just because I like keeping my structure exactly the same and then I can also put this on a new line and if I come down here at the very end I'm going to put this on a new line as well.
 
-![IMG](../../../../../../../.gitbook/assets/02-026_IMG2.png)
+![IMG](.././02-026_IMG2.png)
 
 Now you may notice that our error went away and if I grab content and come down here I can say print content.
 
 And now if I run this everything works.
 
-![IMG](../../../../../../../.gitbook/assets/02-026_IMG3.png)
+![IMG](.././02-026_IMG3.png)
 
 **This is the correct way to build a heredoc in Python.**
 
@@ -80,7 +80,7 @@ If I come up here I can bring this all the way up to the top and then right here
 
 Now you can see that those new lines are gone.
 
-![IMG](../../../../../../../.gitbook/assets/02-026_IMG4.png)
+![IMG](.././02-026_IMG4.png)
 
 Now that works but I don't really like the syntax.
 
@@ -94,7 +94,7 @@ So what I can do with the strip function is at the very end of the string I can 
 
 And now if I clear this and run it again you may notice we get the exact same output.
 
-![IMG](../../../../../../../.gitbook/assets/02-026_IMG5.png)
+![IMG](.././02-026_IMG5.png)
 
 So it has taken out the newline characters from the beginning and the end and that is what the s**trip function does it's a very helpful little function for pulling out any excess newline characters inside of a multi-line string** like this and it makes it just a really **nice way of cleaning up** not just this type of content because you may be wondering and thinking that this looks kind of pointless to clean up this content.
 

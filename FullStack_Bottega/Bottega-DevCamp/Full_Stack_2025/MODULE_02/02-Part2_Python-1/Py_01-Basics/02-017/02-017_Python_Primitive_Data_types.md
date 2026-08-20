@@ -125,7 +125,7 @@ There are two ways of doing this with our number data type.
 
 One way is saying the tip equals the subtotal times 0.2 (there is no need for the trailing 0 in 0,20). To ensure this works, test it.
 
-![IMG](../../../../../../../.gitbook/assets/02-017-IMG1.png)
+![IMG](.././02-017-IMG1.png)
 
 Now, print the tip calculated at 20 dollars.
 
@@ -144,7 +144,7 @@ Add a space, a plus sign, and "total". If I try to print this, we will run into 
 
 Hit enter and see the error.
 
-![IMG](../../../../../../../.gitbook/assets/02-017-IMG2.png)
+![IMG](.././02-017-IMG2.png)
 
 It is telling us the type of error and that it is on line 15.
 
@@ -168,13 +168,13 @@ Since this is now equal to a string, it can be combined with everything else.
 If I hit enter, you'll see that it prints it out and combines the number data\
 type.
 
-![IMG](../../../../../../../.gitbook/assets/02-017-IMG3.png)
+![IMG](.././02-017-IMG3.png)
 
 Now it reads, "your total is 120.0," and everything is working properly.
 
 Remember earlier that I stated that numbers can be integers, floats, and even fractions? Well, because of this, 20 percent can be changed to 1/5 and still have the same output. If you run this, your total will still remain 120.
 
-![IMG](../../../../../../../.gitbook/assets/02-017-IMG4.png)
+![IMG](.././02-017-IMG4.png)
 
 The options that you can implement for numbers is an extensive list and so you're able to work and perform calculations on all different types of numbers.
 

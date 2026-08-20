@@ -134,22 +134,22 @@ You can think of this being something where we'd perform this type of action ins
 
 So right here what I can do is I can say that I want to create a class or I want to define a class and I want it to be dynamic based on the value of this variable right here and I'm not going to change it. So this should just be a const and not a let.
 
-![large](../../../../../../.gitbook/assets/04-051_IMG1.png)
+![large](./04-051_IMG1.png)
 
 So for a class right here this is just your normal string. This is what you'd find in the HTML document. And I'm going to use string interpolation with our dollar curly brackets, and now I'm just going to write a ternary operator.
 
-![large](../../../../../../.gitbook/assets/04-051_IMG2.png)
+![large](./04-051_IMG2.png)
 
 So I'm going to say page is triple equals to home. Then I want to render out this text so I'm going to say a master-layout.\
 And if not then I say secondary-layout and that is all I need to do.
 
 So if I run and before we get into it we are going to walk through the syntax let's just run it and see what happens. So if I hit run now you can see down on the bottom it prints out it combined and it picked out Master layout because this was true.
 
-![large](../../../../../../.gitbook/assets/04-051_IMG3.png)
+![large](./04-051_IMG3.png)
 
 Now if I change this and I say we're on the About page now. Then I run this and now it says secondary-layout.
 
-![large](../../../../../../.gitbook/assets/04-051_IMG4.png)
+![large](./04-051_IMG4.png)
 
 So this is a great way of adding some dynamic behavior right into your system and you will see this a lot in modern frameworks like angular and react. So let's kind of dissect what we have going on here.
 

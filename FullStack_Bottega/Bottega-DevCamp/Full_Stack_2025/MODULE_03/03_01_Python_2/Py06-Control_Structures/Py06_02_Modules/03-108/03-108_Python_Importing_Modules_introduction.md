@@ -97,11 +97,11 @@ However, one of the best things about Python is that it has a massive community 
 
 So far in this course, we have been working with the core Python library. What that means is that in that library, we have a set of functionality that we automatically have access to. For example, when we were using strings, we could call the `format` method and work with it without doing anything at all. We could simply have a string, and just because we were working with the core language, we could call `format`. We didn't have to import any modules or anything like that.
 
-![large](../../../../../../../../.gitbook/assets/03-108_IMG1.png)
+![large](../.././03-108_IMG1.png)
 
 Now, this is still within the base Python language. If you remember back to the numbers section, whenever we wanted to use some advanced math functions, we had to perform an import. Here, this is also going to be within the core Python language, but if we wanted one of the math libraries, we had to import it. So, if we wanted that in our main program right here, we had to say `import math`.
 
-![large](../../../../../../../../.gitbook/assets/03-108_IMG2.png)
+![large](../.././03-108_IMG2.png)
 
 From there, we could call the `floor` function or the `ceil` function and use them exactly like we did. Now, those were still all within the core Python library. However, there is a very large ecosystem of other libraries out there that sit outside of the core language. What that means is we can't simply call them the way we did with the math library. Before we can do that, we need to import them into our own system.
 
@@ -111,6 +111,6 @@ Now, inside of this, it contains a very large number of libraries. You're going 
 
 The connector is called **Pip**, and that is going to give us a direct feed into this entire database. Then, we can simply install those libraries on our system and call them exactly the same way we did with the math library.
 
-![large](../../../../../../../../.gitbook/assets/03-108_IMG3.png)
+![large](../.././03-108_IMG3.png)
 
 So, that is a very high-level overview of the architecture and how packages and modules are structured. There are three ways: one where you have direct access, another where they're in the core language but you still need to import them, and then the third where you have third-party types of libraries that need to be manually installed.

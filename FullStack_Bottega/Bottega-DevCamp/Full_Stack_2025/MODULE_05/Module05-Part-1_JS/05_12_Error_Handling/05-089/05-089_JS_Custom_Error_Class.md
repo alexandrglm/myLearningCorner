@@ -181,7 +181,7 @@ that knowledge.
 
 Now we're going to build out a custom error class that can manage any of our errors that we want to add any custom metadata to. So right now in review, if we run our code exactly like how we have it where we have just a basic try and catch block where we're simply logging out an error, this is good but we can do even better.
 
-![large](../../../../../../../.gitbook/assets/05-089-IMG1.png)
+![large](.././05-089-IMG1.png)
 
 Imagine a scenario where you have a large application. This type of error may not give you all of the details you really need in order to understand what happened when this error occurred and in order to help you go and fix the problem. And so what we can do is we can create a custom error class where we can customize this message. So right now we can simply say an error occurred and we say that it's a type error. But what if we wanted to actually create a name for our error. So we want to create our own error and we want to be able to catch that. Well we can do that and I'm going to come right up to the top of our script tag and I'm going to create a class.
 
@@ -193,17 +193,17 @@ So this is the exact same message which is our first argument in the constructor
 
 So I'm going to pass in rate here I'm just going to pass in as a string DevcampError and then I can pass in any message as a second argument that I want. So I can say my custom error message and now let's see exactly what gets printed out and also just so we don't have any confusion. I'm going to get rid of the second console log statement just because we already know that it works. If we pass in the correct value. So I'm going to clear this and hit refresh and this worked.
 
-![large](../../../../../../../.gitbook/assets/05-089-IMG2.png)
+![large](.././05-089-IMG2.png)
 
 If you notice right here we actually have a real error. So instead of just console logging it out like we did in the last guide here as you can tell we raised our own exception and that is perfectly fine. Just about every major code library that you're going to find are going to have times where they want to truly raise an error. So if the system is not doing its job it's doing something wrong then you may want to raise an error like this. And this comes in very handy whenever you're building your own code libraries or building code that other people are going to utilize and so you can see it says uncaught DevcampError. So right here we're getting the exact error that we created we're getting this class and so it's saying Uncaught DevcampError. And then my custom error message and so this is giving us exactly what we passed into our DevcampError class.
 
 Now we could also make this much more useful if we passed in the error itself so I can pass in the E variable that we caught. And now if I clear this and run it again now you can see it says uncaught DevcampError
 
-![large](../../../../../../../.gitbook/assets/05-089-IMG3.png)
+![large](.././05-089-IMG3.png)
 
 (Firefox 2025 debugger-console may vary as shown here:
 
-![Firefox 2025 Console Debugger Custom Class error style](../../../../../../../.gitbook/assets/05-089-IMG03.png)
+![Firefox 2025 Console Debugger Custom Class error style](.././05-089-IMG03.png)
 
 )
 

@@ -151,7 +151,7 @@ Zaplio is a product where it's using a Twilio number and giving it a text messag
 
 We wanted to create something like iMessages using Twilio numbers, which was pretty cool.
 
-![IMG](../../../../../../.gitbook/assets/02-002-IMG1.png)
+![IMG](./02-002-IMG1.png)
 
 For the logo, we wanted to communicate that interaction.
 
@@ -162,7 +162,7 @@ And it's important to know that you can have both of those things.
 
 So this is where you kind of see some of the science behind what goes into a logo.
 
-![IMG](../../../../../../.gitbook/assets/02-002-IMG2.png)
+![IMG](./02-002-IMG2.png)
 
 If you actually look at the guides that I've set around the logo mark, you can see I've got a Fibonacci sequence of circles that are setting all of my different angles and lines and they're not just arbitrarily placed.
 
@@ -175,7 +175,7 @@ It might seem like a lot of fuss when you could easily just skip that and still 
 
 Apple, again, for example:
 
-![IMG](../../../../../../.gitbook/assets/02-002-IMG3.png)
+![IMG](./02-002-IMG3.png)
 
 If you look at the Apple logo with those same grids and the Fibonacci sequence you can see like, look at the leaf and how one circle indicates one side and the other circle indicates the other side.
 

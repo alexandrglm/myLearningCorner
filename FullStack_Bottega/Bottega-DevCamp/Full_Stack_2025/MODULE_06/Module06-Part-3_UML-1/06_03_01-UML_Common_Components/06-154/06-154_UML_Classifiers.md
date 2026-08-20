@@ -86,7 +86,7 @@ They provide **clear labeling** that makes UML diagrams self-documenting and eas
 
 In a class diagram, the classifier appears as the **class name** at the top of each class box.
 
-![large](../../../../../../../.gitbook/assets/06-154_IMG3.png)
+![large](.././06-154_IMG3.png)
 
 For example, if you have a class representing a blog system, "Topic" would be the classifier for that particular class.
 
@@ -202,14 +202,14 @@ What that means is you won't actually implement a classifier directly. It's more
 
 You are going to be using classifiers throughout the entire course and throughout your entire career as long as you're using UML. Essentially, what they do is exactly what the name implies, they classify items. It's high level, it allows you to have a standardized naming convention as you start building out your designs. Also as developers are reading your designs, they are going to be using classifiers as the application is built.
 
-![large](../../../../../../../.gitbook/assets/06-154_IMG1.png)
+![large](.././06-154_IMG1.png)
 
 So what are some different components and diagrams that use classifiers?
 
-![large](../../../../../../../.gitbook/assets/06-154_IMG2.png)
+![large](.././06-154_IMG2.png)
 
 I was not kidding when I said they're used by pretty much every diagram that you're going to implement. It means that this is the high-level name, make sure to not get it confused with a class diagram. I have seen a number of different forum posts and questions from students asking if a class is a class diagram is the same as a classifier and no it is not. A classifier is simply a way of titling your different UML components and diagrams, it allows you to have one kind of standardized approach.
 
 An example is here in a class diagram where you see "Topic" on the right-hand side. That is the name of the class and that is the classifier for the class diagram. If you are doing this in a Use Case Diagram, like we'll get into later in the course, when you name that Use Case Diagram and you name the different elements that are associated whether it's a topic or a blog post or anything like that, those are the classifiers.
 
-![large](../../../../../../../.gitbook/assets/06-154_IMG3.png)
+![large](.././06-154_IMG3.png)

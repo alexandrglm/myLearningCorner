@@ -111,7 +111,7 @@ What will you need?
 
 *   A MongoDB (free) registered account (https://www.mongodb.com/cloud/atlas/register)
 
-    ![MongoDB Atlas Account types](../../../../../../.gitbook/assets/03-146_IMG01.png)
+    ![MongoDB Atlas Account types](./03-146_IMG01.png)
 * b
 
 ### What is MongoDB Atlas?
@@ -124,7 +124,7 @@ _MongoDB Atlas is a multi-cloud database service by the same people that build M
 
 _Play around with a **free cluster**, launch a serverless instance, or define a dedicated cluster configuration for your application._
 
-![IMG](../../../../../../.gitbook/assets/03-146_IMG02.png)
+![IMG](./03-146_IMG02.png)
 
 _To choose a deployment type, see Database Deployment Types._
 
@@ -132,7 +132,7 @@ _To choose a deployment type, see Database Deployment Types._
 
 _Deploy your database to the same cloud provider and region as your applications to reduce latency and standardize security controls._
 
-![img](../../../../../../.gitbook/assets/03-146_IMG03.png)
+![img](./03-146_IMG03.png)
 
 #### 2)     Secure the Database
 
@@ -142,13 +142,13 @@ _Define an IP access list for your cluster._
 
 **This can include the IPs of your server, or your webservice on Render, Vercel, etc; or, your IP/DynDNS to access from your shell**.
 
-![Atlas IP configs](../../../../../../.gitbook/assets/03-146_IMG04.png)
+![Atlas IP configs](./03-146_IMG04.png)
 
 **2.2 Manage Database Users**
 
 _Define how your team members and applications authenticate to your database and what data they can access_.
 
-![MongoDB Atlas Accounts](../../../../../../.gitbook/assets/03-146_IMG05.png)
+![MongoDB Atlas Accounts](./03-146_IMG05.png)
 
 **This means you can create different users, with different permissions, as needed. It is mandatory that you create one, and I suggest to NOT use the default username/passwords of your MongoDB account.**
 
@@ -158,7 +158,7 @@ _Define how your team members and applications authenticate to your database and
 
 _Connect to your database using the MongoDB Shell, one ofMongoDB's native language drivers, MongoDB Compass, or theMongoDB Connector for BI._
 
-![img](../../../../../../.gitbook/assets/03-146_IMG06.png)
+![img](./03-146_IMG06.png)
 
 **From this point on, everything is created and configured, so that, how you configure and connect your service depends on the use you are going to make of it (Shell, WebGUI, Render/Vercel/etc...).**
 

@@ -14,7 +14,7 @@ So in review what we need our application to do is to go to a Web site. And in t
 
 Now part of the challenge with this is there are many links on this page
 
-![large](../../../../../../../../.gitbook/assets/03-117_IMG0.png)
+![large](../.././03-117_IMG0.png)
 
 and any time that you build out a web scraper that needs to go and select only a small portion of the content in an Html file this is going to be a challenge. So if I were to view page source this is all of the data that we're going to be working with and we need to in as efficient a manner as possible parse through all of it and only grab the elements that we want.
 
@@ -30,7 +30,7 @@ r = requests.get('http://www.dailysmarty.com/topics/python')
 
 Now, this is not the API URL. This is just the website and if I paste this in then that works. So when that went it performed a get request and it pulled all that content back right here and it stored it in the r variable. To test that out I can say r.text and if I run this it's going to bring me back the full HTML document. And so this is what we want to work with.
 
-![large](../../../../../../../../.gitbook/assets/03-117_IMG1.png)
+![large](../.././03-117_IMG1.png)
 
 So if you remember back when we went through the introduction to using the request library we use the JSON function. But now because we're dealing with raw HTML we're just going to work with the text request or the text response. So now that we know that we have successfully called the URL and we've scraped all this HTML content. Now it's time for BeautifulSoup to come in. So I'm going to create a variable called soup set it equal to BeautifulSoup and then pass in as a first argument the raw HTML text so I'm gonna say r.text. As a second argument, you can pass in a string that tells BeautifulSoup what I want it to parse so this is going to be html.parser
 
@@ -40,7 +40,7 @@ soup = BeautifulSoup(r.text, 'html.parser')
 
 and if I run that I can take a look to see what is in the soup variable now. And as you can see it is the full HTML response but now it's been formatted a little differently.
 
-![large](../../../../../../../../.gitbook/assets/03-117_IMG2.png)
+![large](../.././03-117_IMG2.png)
 
 We've actually created a BeautifulSoup object that we can work with and we can parse through.
 
@@ -52,7 +52,7 @@ links = soup.find_all('a')
 
 Find all is a function in BeautifulSoup and it takes in an element on the page. So all of the HTML links have the elements associated with them, so I can pass in a string called a and this is going to bring me back all of the links so if I run this I should now have all of the links on the page and as you can see it is there.
 
-![large](../../../../../../../../.gitbook/assets/03-117_IMG3.png)
+![large](../.././03-117_IMG3.png)
 
 and this is getting us slightly closer to where we want to be but we're still not there, so let's keep moving forward.
 
@@ -65,7 +65,7 @@ for link in links:
 
 and I want to print these out and there you go.
 
-![large](../../../../../../../../.gitbook/assets/03-117_IMG4.png)
+![large](../.././03-117_IMG4.png)
 
 As you can see we've taken the entire massive list of all of those HTML properties and values and all of those things we didn't need and we've successfully parsed it all the way down. So that is giving us just the path that we want and so I think we're ready to build the full implementation now. So I'm going to open up a project file here and the first thing I'm gonna do is to just replicate what we already did in the repl so I'm going to import request and then I'm going to save from bs4 for import BeautifulSoup. And then let's replicate our request so r equals requests.get and I'll pass in this value for the site we want to pull in and then we'll create our soup object so soup equals BeautifulSoup and then pass in r.text so our response text and then our parsing mechanism which is going to be html.parser
 
@@ -83,7 +83,7 @@ for link in links:
 
 Come down here and I'm going to open up another windowpane right here that you can see and I'm gonna keep this open for the rest of the solution. So Python project run that and you can see we have now successfully taken everything that we built out in the REPL and we placed it in the file, so that is looking good.
 
-![large](../../../../../../../../.gitbook/assets/03-117_IMG5.png)
+![large](../.././03-117_IMG5.png)
 
 I think we are on the right track and now the next stage is going to be filtering it down. As you can see we have all of these various links here but we only want the ones that say posts in them so you can see we have ones that say users sign in, users sign up, we have topics. But the way that we're going to be able and narrow this down in filter to what we really want is by only selecting the ones that have that word posts.
 
@@ -106,7 +106,7 @@ return titles
 
 if I run this again we should have the exact same behavior which we do. So everything there is working well and we're well on our way to our solutions.
 
-![large](../../../../../../../../.gitbook/assets/03-117_IMG6.png)
+![large](../.././03-117_IMG6.png)
 
 Let's come up here I'm going keep this for the link, for a second, but it's going to change because what I want to do is implement a secondary function. It's going to be a function nested inside of our titles generator and I'm going to call it post\_formatters. So I'm gonna say def post\_formatter and post\_formatter isn't going to work with a collection. It's only going to work with a single URL.
 
@@ -121,21 +121,21 @@ def post_formatter(url):
 
 and so what this is going to do is it's going to allow us to filter down this full set of all of these different URLs. And it's going to ignore the ones that don't have the word posts in it. And so what I want to do is to filter that and add that into this titles list. And so the way we can do that is by saying titles.append URL and if I saved this and then come down here this is it right now this is going to return. So let's actually print it out so I'm gonna say print titles and now if I run this we should have a filtered down list and as you can see we do.
 
-![large](../../../../../../../../.gitbook/assets/03-117_IMG7.png)
+![large](../.././03-117_IMG7.png)
 
 It's not printing them out one by one because we're simply looping over and we're adding them to the titles list and then we're printing now that list. And so that's why it has this format. But if you look inside of this each one of these elements is only containing the posts URL, so our filter is working properly. So now if we come back up here we can move on and we can get to the next stage of what we're looking to do which is if you notice as helpful as these URL paths are and having them filtered is great too. We still have this kind of annoying little slash posts slash and then the actual URL contains a title that we're looking for.
 
 So how can we get rid of that? Let's jump back into the python repl. So I'm gonna say python here and I'm going to grab one of these URLs as an example. So if I grab this one you can see it as posts in it and I'm going to grab the whole thing as you saw already it doesn't include the daily smarty part but that's really fine for this example. I can say string paste in that full URL and as you notice what we're wanting to do is we want to ignore everything that happens before this spot.
 
-![large](../../../../../../../../.gitbook/assets/03-117_IMG8.png)
+![large](../.././03-117_IMG8.png)
 
 The way we can do that with the string is by leveraging the split function so I can say str which is my variable dot split and then inside of that I am going to say I want to split this string up every time there is a slash. So every time there's a slash I want you to split it up and this is going to return a list and so if I run this you can see I now have the string split up into a list and it's going to have a number of elements inside of it.
 
-![large](../../../../../../../../.gitbook/assets/03-117_IMG9.png)
+![large](../.././03-117_IMG9.png)
 
 And I only want the last one. So what I can do is using bracket syntax say -1 this will go and grab the very last element inside of this list and there you go, right here we have exactly what we're looking for.
 
-![large](../../../../../../../../.gitbook/assets/03-117_IMG10.png)
+![large](../.././03-117_IMG10.png)
 
 I'm gonna close out of this and come and let's add that inside of our post\_formatter code block. So here I'm going to create another variable. Now remember because strings are immutable in python I can't simply change the string I have to reassign it and I'm going to assign it into a variable with the same name. So I'm gonna say URL and then equals URL.split and use the same code that we used in the REPL so I'm gonna split it every time there is a slash and then I'm going to grab the last element there.
 
@@ -150,11 +150,11 @@ so that is going to give me the first part of what we need and the next part is 
 
 So if I run this you can see that what that returns is the same string except it has swapped out all of the dashes for empty spaces which is exactly what we're looking for.
 
-![large](../../../../../../../../.gitbook/assets/03-117_IMG11.png)
+![large](../.././03-117_IMG11.png)
 
 So I'm going to create another line here and reassign url once again and say url.replace pass in a single dash pass in an empty space and then this is getting us much closer. So let's run the entire code again and see where we're at, and there you go we're almost there to the final solution.
 
-![large](../../../../../../../../.gitbook/assets/03-117_IMG12.png)
+![large](../.././03-117_IMG12.png)
 
 Now the last thing that we need to implement is notice how all of our content is lowercase and what we really want to do is to mimic something closer to what we have on the website where we have capital letters and so that is where the inflection package comes in.
 
@@ -162,7 +162,7 @@ So I'm going to switch over here and at the third line I'm gonna say import and 
 
 But this is something that will be helpful later on if you ever need to mimic this type of functionality so I am bringing in the titleize function and I can say here url = titleizw and say titleize and remember we can call this directly because I'm saying from inflection import and only import a single function and this expects a string. We're going to pass in our url end the parens, hit save, and now let's run this one more time and that is looking perfect.
 
-![large](../../../../../../../../.gitbook/assets/03-117_IMG13.png)
+![large](../.././03-117_IMG13.png)
 
 So that is fantastic!
 
@@ -174,7 +174,7 @@ titles - titlesgeneratior(links)
 
 I'll say for title in titles, I want you to print the title. Hit save and let's run it one last time and see if our entire solution works running that again and look at that! We have a fully functional web scraper that goes through and pulls out only the links that we specifically wanted and then format's them so that they can be used in any way that we need them.
 
-![large](../../../../../../../../.gitbook/assets/03-117_IMG14.png)
+![large](../.././03-117_IMG14.png)
 
 Great job if you went through that solution, this was a very challenging project but this is going to lead you perfectly into what you're going to be asked to build in the entire course capstone project. Now that you've gone through this you're ready to build out the capstone application.
 

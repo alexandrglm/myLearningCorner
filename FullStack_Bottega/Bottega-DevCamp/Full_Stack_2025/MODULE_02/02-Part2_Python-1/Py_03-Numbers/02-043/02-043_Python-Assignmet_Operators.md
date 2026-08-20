@@ -132,7 +132,7 @@ So let's see if this works right here.
 
 I'm going to run it and you can see we have a hundred and ten. So that works.
 
-![large](../../../../../../../.gitbook/assets/02-043_IMG1.png)
+![large](.././02-043_IMG1.png)
 
 However, whenever you find yourself performing this type of calculation what you can do is use an assignment operator.
 
@@ -147,7 +147,7 @@ And this is going to do is exactly like what we had before.
 
 So if I run this again you can see total is a hundred and ten
 
-![large](../../../../../../../.gitbook/assets/02-043_IMG2.png)
+![large](.././02-043_IMG2.png)
 
 I'm going to just so you have a reference in the show notes.
 
@@ -169,7 +169,7 @@ Now don't be confused because we only temporarily change the value to 1 10.
 
 So when I commented this out and I ran it from scratch it took the total and it subtracted 10 from that total and that's what got printed out.
 
-![large](../../../../../../../.gitbook/assets/02-043_IMG3.png)
+![large](.././02-043_IMG3.png)
 
 I'm going to copy this and the next one down the line is going to be multiplication.
 
@@ -177,7 +177,7 @@ So in this case I'm going to say multiply with the asterisk the total and I'm ju
 see exactly what the value is going to be. And now we can see that's 200\
 which makes sense.
 
-![large](../../../../../../../.gitbook/assets/02-043_IMG4.png)
+![large](.././02-043_IMG4.png)
 
 So we've taken total we have multiplied it by two and we have piped\
 the entire thing into the total variable. So far so good. As you may\
@@ -186,7 +186,7 @@ to say total and then we're going to perform this division assignment\
 and we're going to say divide this by 10 run it and you can see it gives\
 us the value and it converts it to a float of ten point zero.
 
-![large](../../../../../../../.gitbook/assets/02-043_IMG5.png)
+![large](.././02-043_IMG5.png)
 
 Now if this is starting to get a little bit much. Let's take a quick\
 pause and see exactly what this is doing. Remember that all we're doing\
@@ -213,7 +213,7 @@ even if we changed 100 to be 101. This is going to return one because\
 remember the typical purpose of the modulus operator is to let you know\
 if you're working with an event or an odd value.
 
-![large](../../../../../../../.gitbook/assets/02-043_IMG6.png)
+![large](.././02-043_IMG6.png)
 
 Now with all this being said, I wanted to show you every different\
 option that you could use the assignment operator on. But I want to say\
@@ -229,7 +229,7 @@ could say product 2 and set this equal to 120. And then if I say product\
 total plus equals product to and then we could take the value and say\
 product 3 and now if I run this you can see the value is 230.
 
-![large](../../../../../../../.gitbook/assets/02-043_IMG7.png)
+![large](.././02-043_IMG7.png)
 
 So that's a very common way whenever you want to generate a sum you\
 can use this type of syntax which is much faster and it's also going to\

@@ -54,7 +54,7 @@ thing for greeting. So I'll say greeting is alpha and so now if I run\
 this you can see the first element prints out false and the second one\
 is true
 
-![large](../../../../../../../.gitbook/assets/02-037_IMG1.png)
+![large](.././02-037_IMG1.png)
 
 and so what this is doing is it's checking to see is this variable\
 values so is this 5 a set of alphanumeric characters or not. This one is\
@@ -69,7 +69,7 @@ API's and I'm going to show you the one that I use the most and that is `isnumer
 just so you don't get confused on what the output is clear and run\
 again. And now you can see that it swapped.
 
-![large](../../../../../../../.gitbook/assets/02-037_IMG2.png)
+![large](.././02-037_IMG2.png)
 
 So now we're checking to see is the value numeric and in this case, 5\
 is numeric it may be a string but inside that string is a number and\
@@ -87,7 +87,7 @@ thing is you may think that if I typed Hi there you may think that this\
 would work in that this would be true. But if I run this you'll see that\
 this is false.
 
-![large](../../../../../../../.gitbook/assets/02-037_IMG3.png)
+![large](.././02-037_IMG3.png)
 
 And the reason is because it may be alphanumeric for H, I and then\
 the, e, r, e. However, this space in the middle is not alphanumeric and\

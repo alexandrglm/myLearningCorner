@@ -226,7 +226,7 @@ So let me switch over here and let's run this code.
 
 So this is python and I'm calling this file the html\_heading\_generator.py if I hit enter and you can see that that works perfectly. We get two tags that are returned.
 
-![large](../../../../../../../.gitbook/assets/03-080_IMG1.png)
+![large](.././03-080_IMG1.png)
 
 The first one is that h1 tag with greeting inside of it and the next one is Hi there and Hi there is inside of an h3 tag.
 

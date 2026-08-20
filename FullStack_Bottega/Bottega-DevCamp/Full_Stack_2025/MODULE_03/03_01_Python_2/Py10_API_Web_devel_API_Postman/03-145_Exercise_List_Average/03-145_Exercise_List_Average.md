@@ -18,23 +18,23 @@ What I mean by that is if I have a list like this I could say I have a list and 
 
 What I want to be able to do is to pass that number list into our function and then have it return the average which in this case is three point five.
 
-![large](../../../../../../../.gitbook/assets/03-145_IMG1.png)
+![large](.././03-145_IMG1.png)
 
 Now there are many ways to do this! One caveat and I'm going to tell you is I do not want you to use any library for this specific exercise. Now in a production application then you typically are going to use the library because they have been worked on by developers for years and they catch all of the various edge cases, and they're typically very good from a performance perspective. For the sake of this exercise, I want you to build this out from scratch.
 
 Now if you've never seen any of the average functions, there are a few libraries that specialize in them. So before we go into that exercise it will show you those. If you wanted to get a very thorough kind of average or mean, then I would use the statistics library which is built directly into python. I believe starting at around Python 3.3 and so with that what you could do is you can say `print(statistics.mean(num_list)` and then pass in that number list.
 
-![large](../../../../../../../.gitbook/assets/03-145_IMG2.png)
+![large](.././03-145_IMG2.png)
 
 That should return 3.5 for you if I run python get average you can see that is correct and that returns 3.5.
 
 Now if you wanted to use another library, so statistics is good, but it is a very thorough and therefore it's not as performance as NumPys libraries. If you have Numpy installed on your system it also has a mean function. You could implement it just like this. Run it, and that works, and because this is such a small list you're not going to notice the difference in performance.
 
-![large](../../../../../../../.gitbook/assets/03-145_IMG3.png)
+![large](.././03-145_IMG3.png)
 
 Those are the two that I use the most often. So that is the behavior we're looking for, but I don't want you to use any specific library like that. One thing I will say is you can bring in the "funk tools library of reduce," and I've talked about "reduce" in a number of my guides. If you haven't seen any of those, then you can go and reference that. I'm not going to go into a ton of detail on it right now, but in a solution, I'll walk through it. You need to know that the funk tools library has a function called reduce. That is going to be able, to sum up, values from a list. If you remember your early math days, you know that to get the mean what you need is the sum of the values divided by the total number of elements. That's how you're going to get that mean or that average back.
 
-![large](../../../../../../../.gitbook/assets/03-145_IMG4.png)
+![large](.././03-145_IMG4.png)
 
 Right now pause the video go out build your solution and then when you come back you can see how I built it. I hope you had a good time building out that solution. I am now going to build out my version of that.
 
@@ -67,7 +67,7 @@ def get_average(num_list):
 print(get_average(num_list))
 ```
 
-![IMG](../../../../../../../.gitbook/assets/03-145_IMG4b.png)
+![IMG](.././03-145_IMG4b.png)
 
 ***
 
@@ -85,7 +85,7 @@ The first is a function, and it's going to be a lambda function where we tell re
 
 I'm going to say LAMDA and give the arguments which are going to be total and then element. This is what's going to be passed into reduce, and then I want the total to be added to the element.
 
-![large](../../../../../../../.gitbook/assets/03-145_IMG5.png)
+![large](.././03-145_IMG5.png)
 
 If you are a little rusty on the reduced documentation what that means is when this starts it's going to set the total equal to the first element of one.
 
@@ -105,19 +105,19 @@ This is not going to return the average, but it will return the total as long as
 
 So let's get rid of this numpy and call "get average".
 
-![large](../../../../../../../.gitbook/assets/03-145_IMG6.png)
+![large](.././03-145_IMG6.png)
 
 Let's run this again and there we go our total is 21.
 
-![large](../../../../../../../.gitbook/assets/03-145_IMG7.png)
+![large](.././03-145_IMG7.png)
 
 Everything is working with our reduce function. Now all will we need to do is take that total and say return the total divided by the length of that number list. That's all we need to do.
 
-![large](../../../../../../../.gitbook/assets/03-145_IMG8.png)
+![large](.././03-145_IMG8.png)
 
 One thing to note if you're coming from a language such as a ruby at this stage in the ruby code you'd need to convert the length of the number list into a float to get a decimal value. Python does that for us automatically, so we don't have to do that. We should get 3.5, and now I'm running that, and we do.
 
-![large](../../../../../../../.gitbook/assets/03-145_IMG9.png)
+![large](.././03-145_IMG9.png)
 
 Everything there is working correctly. Great job if you went through that you now know how to create an averaging function inside a python.
 

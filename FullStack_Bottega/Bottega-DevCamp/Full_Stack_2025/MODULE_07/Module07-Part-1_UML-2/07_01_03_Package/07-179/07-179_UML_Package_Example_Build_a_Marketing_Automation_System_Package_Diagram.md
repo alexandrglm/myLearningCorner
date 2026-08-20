@@ -12,7 +12,7 @@ In this guide we're going to walk through a package diagram that I have built ou
 
 ***
 
-![large](../../../../../../../.gitbook/assets/07-179_IMG1.png)
+![large](.././07-179_IMG1.png)
 
 We have this marketing automation system and as you can see, it has a number of packages inside. We have marketing automation which wraps up
 

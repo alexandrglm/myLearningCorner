@@ -103,11 +103,11 @@ I switched back to our `main` file right here to import `helper` just by itself,
 
 If I switch down here and run this code, you can see that this works.
 
-![large](../../../../../../../../.gitbook/assets/03-112_IMG1.png)
+![large](../.././03-112_IMG1.png)
 
 Now, I'm going to switch back up to the file, and the way that you can use an alias is you can use the exact same syntax. So, you say `import`, then the name of the module, and then say `as`. After that, you can use anything that you want, assuming it's not a reserved word. So, you can't use something like `for`, `class`, `def`, or anything like that. But if you want to say `import helper as h`, then you can come down here and instead of saying `helper.greeting`, you can just say `h.greeting`. If I save this file and come back down here to run it, you can see that it still works properly.
 
-![large](../../../../../../../../.gitbook/assets/03-112_IMG2.png)
+![large](../.././03-112_IMG2.png)
 
 Now, I can run the exact same process with any of the other code libraries. If I open up the REPL, I can import the `math` library as `m`. Then, if I want to pull in the square root function, I can say:
 
@@ -117,7 +117,7 @@ m.sqrt(4)
 
 Run it, and you can see it works exactly the same way as when we used to have to spell out `math` entirely.
 
-![large](../../../../../../../../.gitbook/assets/03-112_IMG3.png)
+![large](../.././03-112_IMG3.png)
 
 This is going to be a pattern that you'll see in a number of Python programs, especially ones that have very large module names.
 

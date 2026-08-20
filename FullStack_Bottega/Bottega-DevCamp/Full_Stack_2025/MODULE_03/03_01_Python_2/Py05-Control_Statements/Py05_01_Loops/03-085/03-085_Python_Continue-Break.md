@@ -214,7 +214,7 @@ But notice what happens when it gets
 
 It says _Sorry, cersei you are not allowed_, and very importantly it follows and it continues hence the continue keyword and it says sansa is allowed.
 
-![large](../../../../../../../../.gitbook/assets/03-085_IMG1.png)
+![large](../.././03-085_IMG1.png)
 
 ***
 
@@ -257,13 +257,13 @@ So notice how we are still nested inside of this if conditional.
 Now I'm going to say break and then down below. And notice here when I\
 type break, automatically I wa
 
-![large](../../../../../../../../.gitbook/assets/03-085_IMG2.png)
+![large](../.././03-085_IMG2.png)
 
 Next, I'm just going to say
 
 So, if I print this out you can see:
 
-![large](../../../../../../../../.gitbook/assets/03-085_IMG3.png)
+![large](../.././03-085_IMG3.png)
 
 it starts off like normal prints out jon, tyrion, theon and then it prints out exactly what you'd expect here when it finds Searcy.
 

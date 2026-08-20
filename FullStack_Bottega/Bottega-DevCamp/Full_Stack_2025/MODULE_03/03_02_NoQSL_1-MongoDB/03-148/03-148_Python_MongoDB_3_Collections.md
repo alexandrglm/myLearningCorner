@@ -87,7 +87,7 @@ MongoCourse> db.Books.getIndexes()
 
 ***
 
-![MongoShell, creating db, and getting indexes](../../../../../../.gitbook/assets/03-148_IMG01.png)
+![MongoShell, creating db, and getting indexes](./03-148_IMG01.png)
 
 ***
 
@@ -120,11 +120,11 @@ db.createCollection('books')
 
 and then put in the name of the collection itself. Now if I run this it's going to return `"ok" : 1`. This syntax that gets returned is very important in understanding how Mongo works.
 
-![large](../../../../../../.gitbook/assets/03-148_IMG1.png)
+![large](./03-148_IMG1.png)
 
 It's also very helpful for understanding why the Javascript community and the Front End community as a whole have absolutely fallen in love with Mongo and it's because the Mongo syntax whether it's how you write it or the values that get returned is very familiar, it's very much like you are going to get in any kind of Javascript development environment. Like you see right here if you are returning this you're not getting just like an HTML or HTTP and you're working with APIs, you'd get a status code of 200. If you're working with the Redis database you would be getting the words `ok` or you might get an integer `1`. Here in Mongo, you're actually getting an object and a key-value Json type object back where the key is `ok` and then the value is `1`. If you were doing this say in an API kind of environment and you just created a collection then you would be able to get this object back and you'd be able to treat it just like pure JSON. So it's a pretty cool thing that Mongo gives us and so we're going to be able to have that kind of Javascript mindset this entire time. So now that we have that I can type `show collections` and now you can see that we have our books there where before we didn't have anything. What this means is we've added a collection and we also have this `system.indexes`. Now we don't have to worry about that. That's simply a collection that's going to store any indexes that we're using inside of the database and indexes are ways of being able to speed up queries. But we're not going to have to work with them directly.
 
-![large](../../../../../../.gitbook/assets/03-148_IMG2.png)
+![large](./03-148_IMG2.png)
 
 For right now just know that is a way that you can create a collection and then how you can see all of the collections inside of a Mongo database.
 

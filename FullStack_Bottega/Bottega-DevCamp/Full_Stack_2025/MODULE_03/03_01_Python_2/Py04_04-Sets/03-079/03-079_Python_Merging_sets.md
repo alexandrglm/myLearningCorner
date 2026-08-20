@@ -181,7 +181,7 @@ So, if we want to print this out, the merged tags, you'll see that the new set g
 
 Has all of the elements from each one of these sets.
 
-![large](../../../../../../../.gitbook/assets/03-079_IMG1.png)
+![large](.././03-079_IMG1.png)
 
 Except **it also removes the duplicate**, so we only have coding listedonce even though it's 3 times in the data, and then tutorials are only listed once and then it brings together all of those other elements so **that is how you can merge tags**.
 
@@ -203,7 +203,7 @@ tags\_one - tags\_two and now if I print this out so print out this\
 exclusive \_to\_tag\_one then you are going to see an interesting type of\
 result.
 
-![large](../../../../../../../.gitbook/assets/03-079_IMG2.png)
+![large](.././03-079_IMG2.png)
 
 We only have python, so let's look at the data and see exactly what that means.
 
@@ -231,7 +231,7 @@ Now, as you can imagine we can flip this and so I can say tags in tags two but n
 
 And now if we run this you're going to see we have Ruby and development
 
-![large](../../../../../../../.gitbook/assets/03-079_IMG2.png)
+![large](.././03-079_IMG2.png)
 
 Go back and see why we're getting that.
 
@@ -250,7 +250,7 @@ It's like if you had two overlapping circles you would have both of the elements
 
 So, what we're looking for here are only the shared items and so what we can do I'm going to call this `universal_tags` and then say tags\_one and then use the ampersand symbol and then say tags\_two add and now if I print out universal tags and run this you can see that we're going to get coding and tutorials
 
-![large](../../../../../../../.gitbook/assets/03-079_IMG5.png)
+![large](.././03-079_IMG5.png)
 
 So let's come up one last time and see exactly what we have here.
 

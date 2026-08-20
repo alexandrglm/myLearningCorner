@@ -175,7 +175,7 @@ Now, when we come down to greeting we're no longer going to be just passing in a
 
 Now, we're going to pass in a first name and a last name so I'm going to pass in these values and if I run this you can see that everything functions just like before.
 
-![large](../../../../../../../../.gitbook/assets/03-099_IMG1.png)
+![large](../.././03-099_IMG1.png)
 
 Now, the most common question that is asked whenever you're working with nested function is when should you choose to nest versus keep them separate.
 

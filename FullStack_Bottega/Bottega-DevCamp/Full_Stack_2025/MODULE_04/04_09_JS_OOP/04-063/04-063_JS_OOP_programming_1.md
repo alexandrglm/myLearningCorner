@@ -230,7 +230,7 @@ Now, what is going on right here?
 What we have here is our name which is what's to be passed into when we ever we create a new instructor and we want to actually do something with this name. And so the way that we can do it is we can add this in so it is a part of the class. It's a part of the class whenever a new one gets created.\
 The way we can do it is, by saying this name and set it equal to that. So if you want to think in the highlighting here does a very nice job of showing that these are different things. Name and name here. These are going to be referencing the same element inside of the object.
 
-![large](../../../../../../.gitbook/assets/04-063_IMG1.png)
+![large](./04-063_IMG1.png)
 
 Now, this right here when we say this name what that is referencing is the instance of instructor. So when we create an instructor like we're going to, here in a second, what we're going to do is we're going to create a new instance and then we're going to with this say, for this specific instance, I want you to store whatever name got passed in with this object.
 
@@ -263,7 +263,7 @@ Then inside of this, remember we're passing an object so whatever you have in yo
 
 So what I need to do is pass a name and I can say. Jon Snow right here. We have instantiated a new instructor and it is John and it has this attribute name. Now if we want to see what this looks like we can console log Jon and now save and I run this it's going to print out as you can see an object it doesn't print out anything that says instructor because what we've done is we've taken all of this blueprint right here, and we've said I want to take all of these different rules and these types of elements you have inside of here, and I want you to wrap it all into an object and right now it's very basic but it still is a javascript object.
 
-![large](../../../../../../.gitbook/assets/04-063_IMG2.png)
+![large](./04-063_IMG2.png)
 
 Now to get back to some of the industry types of nomenclature and how you would say some of these words. So right here we have Jon. This Jon is considered an instance of the instructor class. So Jon's an object and the proper term that you'd want to call it is you'd say that John is an instance of instructor.
 

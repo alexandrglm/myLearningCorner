@@ -7,7 +7,7 @@ values.
 
 Up until this point in the section we've seen how we can set variable values but now we're going to see how we can actually change those.
 
-![IMG](../../../../../../../.gitbook/assets/02-018_IMG1.png)
+![IMG](.././02-018_IMG1.png)
 
 In this guide, we are going to refactor the sample tip calculator that we used in the previous guide to use a single variable for the total.
 
@@ -19,7 +19,7 @@ This will start with the total equaling 100, then have it multiplied by 20 perce
 
 We will print this and then run it to see the total still at 120.
 
-![IMG](../../../../../../../.gitbook/assets/02-018_IMG2.png)
+![IMG](.././02-018_IMG2.png)
 
 The main location of this switching was line 4 where the total was originally set to 100.
 
@@ -43,7 +43,7 @@ Everything here is standard, however, if Bregman needed to be replaced by a diff
 
 After doing so, the second value can be replaced with any value including Correa. Now, if I print each one of these out, you will see both before and after the swap.
 
-![IMG](../../../../../../../.gitbook/assets/02-018_IMG3.png)
+![IMG](.././02-018_IMG3.png)
 
 This element of switching out values and overriding preexisting values is extremely important in Python development.
 
@@ -51,7 +51,7 @@ Now, I'm going to show you a few elements that are bad practice and will lead to
 
 Because of the dynamically typed nature of the Python language, I could swap “second” with his batting average instead. If I want to run this, it will run, but you may receive the warning below:
 
-![IMG](../../../../../../../.gitbook/assets/02-018_IMG4.png)
+![IMG](.././02-018_IMG4.png)
 
 ( _Depending on what tool you're using to write your Python code you may or may not get this warning._ )
 

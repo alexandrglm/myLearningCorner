@@ -110,7 +110,7 @@ So far in this section, whenever we've imported a module, we've had to explicitl
 
 For example, here we imported the `helper` module, and when we wanted access to the `greeting` function inside of that module, we had to call `helper.greeting`.
 
-![large](../../../../../../../../.gitbook/assets/03-111_IMG1.png)
+![large](../.././03-111_IMG1.png)
 
 If I open up the REPL right here and go back to our `math` example just to review, if I say `import math` and then I want the square root, I have to say `math.sqrt` and then pass in the value. That's how I can have access to the functions inside of that module.
 

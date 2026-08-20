@@ -146,7 +146,7 @@ So we're going to go through some examples to see how this works. What this is g
 
 Notice I've not used `var` or `let` but with `Hoisting` what I can actually do is say `var name;` at the bottom. If I run this code it prints out Kristine.
 
-![large](<../../../../../../.gitbook/assets/04-006_IMG1 (1).png>)
+![large](<./04-006_IMG1 (1).png>)
 
 There is no issue with that whatsoever, the reason for this is something that may seem a little bit confusing if you're brand new to programming, or if you're coming from a different programming language and you've never used javascript before. Essentially what the interpreter does with `hoisting` is it goes and it tries to find every spot where a variable has been declared.
 

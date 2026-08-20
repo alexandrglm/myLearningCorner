@@ -21,7 +21,7 @@ another file. And so that's what we're going to walk through in this\
 guide. We're going to see how we can create a custom module just like we\
 have right here with our helper.py file and our greeter function.
 
-![large](../../../../../../../../.gitbook/assets/03-110_IMG1.png)
+![large](../.././03-110_IMG1.png)
 
 Then we are going to create another file and then import it directly\
 in, later on in the guide we're going to expand our knowledge, and we're\
@@ -34,7 +34,7 @@ It's going to be called main.py y I'm going to save this file and if I\
 come and refresh the tree here on the left-hand side you can see we\
 have a main.py file.
 
-![large](../../../../../../../../.gitbook/assets/03-110_IMG2.png)
+![large](../.././03-110_IMG2.png)
 
 Now, in order to import this, it's actually the exact same syntax\
 that we used for the repl so I can say import helper. So what Python is\
@@ -65,7 +65,7 @@ running this script make sure that you are inside of whatever directory.\
 Both of these files and MCSA python and then main. Why. And if I run\
 this you can see that it works perfectly.
 
-![large](../../../../../../../../.gitbook/assets/03-109_IMG3.png)
+![large](../.././03-109_IMG3.png)
 
 It went, it grabbed the helper module it brought it into the main\
 file, and then it had access to the greeting function. So far everything\
@@ -81,14 +81,14 @@ into the Libs directory. So everything's going to be identical except\
 now if I come down and hit refresh you can see that I have a lib's\
 directory and that is where the helper.py file is located.
 
-![large](../../../../../../../../.gitbook/assets/03-109_IMG4.png)
+![large](../.././03-109_IMG4.png)
 
 Now if I go into main and I don't make any changes and try to run\
 this you're going to see that we run into an error. So if I run this you\
 can see it gives the error that inside of the main.py file on line 1\
 for import helper the module was not found.
 
-![large](../../../../../../../../.gitbook/assets/03-110_IMG5.png)
+![large](../.././03-110_IMG5.png)
 
 The reason for that goes directly to the default behavior of how\
 python import's modules. Whenever you're using this kind of syntax `import helper` python is going to look at the default set paths so it's going to look\
@@ -118,7 +118,7 @@ for a directory called lib's and then it's going to insert that path.\
 So I'm gonna save this file. And now we're going to try to rerun this\
 code and if I run this now you can see that it is working properly.
 
-![large](../../../../../../../../.gitbook/assets/03-110_IMG6.png)
+![large](../.././03-110_IMG6.png)
 
 So congratulations if you went through that you now know how to\
 create a custom python module call it from either the current directory\

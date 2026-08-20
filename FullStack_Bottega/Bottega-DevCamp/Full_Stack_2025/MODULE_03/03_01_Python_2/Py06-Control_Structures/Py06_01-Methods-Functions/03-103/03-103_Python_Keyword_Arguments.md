@@ -107,7 +107,7 @@ Now before we even make our program functional let's just take this and print it
 
 So, if I put this inside of a print statement and then come down here and say greeting and pass in no arguments and run this you can see that what gets returned back is a dictionary.
 
-![large](../../../../../../../../.gitbook/assets/03-103_IMG1.png)
+![large](../.././03-103_IMG1.png)
 
 So, that is one of the biggest keys between working with keyword arguments versus just traditional unpacking.
 
@@ -124,7 +124,7 @@ Hudgens.
 
 If I run this code you can see that what gets printed out is a dictionary where the name to Key so this name parameter first name is the key and then the value is whatever I passed into it.
 
-![large](../../../../../../../../.gitbook/assets/03-103_IMG2.png)
+![large](../.././03-103_IMG2.png)
 
 And so this is a very basic way of working with keyword arguments.
 
@@ -147,11 +147,11 @@ Except instead of having a first name I'm just going to say hi guest have a grea
 
 Okay, let's first try it out for our named argument set. So if I run this you can see that that works perfectly it says Hi Kristine Hudgens have a great day.
 
-![large](../../../../../../../../.gitbook/assets/03-103_IMG3.png)
+![large](../.././03-103_IMG3.png)
 
 Now if I come down here and I simply pass in greeting with no values you can see the next. That statement works perfectly fine and it says hi guest. Have a great day.
 
-![large](../../../../../../../../.gitbook/assets/03-103_IMG4.png)
+![large](../.././03-103_IMG4.png)
 
 So, here we're able to effectively work with keyword arguments on a dynamic basis. So we're able to have the function itself check to see if keyword args were given if they were.
 

@@ -122,7 +122,7 @@ Now when it comes to JavaScript code you can actually process an entire javascri
 
 If you are following along in Chrome then you can type Command + Option + J and that is going to open up the javascript console directly in the browser like you can see here
 
-![large](../../../../../../../.gitbook/assets/06-106_IMG1.png)
+![large](.././06-106_IMG1.png)
 
 You can also follow along using another browser such as Firefox. The only reason why I'm recommending chrome is so that the commands and shortcuts that I give you will look exactly the same on my screen as yours as you're following along.
 
@@ -132,7 +132,7 @@ But with javascript, I can so if I want to create some type of function so I'm g
 
 So now if I call full name I can pass in one string and then another and then run it and you can see that it has formatted that string it put a space inside of it and this is exactly the way that this would behave if I wrote this in a text editor and right here the browser itself was able to interpret that code.
 
-![large](../../../../../../../.gitbook/assets/06-106_IMG2.png)
+![large](.././06-106_IMG2.png)
 
 Now, this is using the older syntax for JavaScript but some of the more modern browsers especially the modern browsers with the latest versions are even able to process the latest versions of JavaScript.
 
@@ -146,15 +146,15 @@ es6FullName = (first, last) => {
 
 So our output is going to be completely identical but here were able to use the modern version of JavaScript which usually and up until recently I would not have been able to do this. I would have had to have written the code in the older version of JavaScript for the browser to process it. But here I can and as you can see it as taken in that function we have no errors. And now if I say es6FullName and pass in two strings for names and run it you can see. And looks like we have a little error here.
 
-![large](../../../../../../../.gitbook/assets/06-106_IMG3.png)
+![large](.././06-106_IMG3.png)
 
 It's because right here notice how I did not use the dollar sign
 
-![large](../../../../../../../.gitbook/assets/06-106_IMG4.png)
+![large](.././06-106_IMG4.png)
 
 So I'm going to copy this and paste it right here and fix it and now this will work. So, dollar sign last and run it again. And now I can call it properly so I'm gonna say es6FullName and now it returns. Tiffany Hudgens and his formatted it perfectly.
 
-![large](../../../../../../../.gitbook/assets/06-106_IMG5.png)
+![large](.././06-106_IMG5.png)
 
 This is pretty cool because this is something that you weren't able to do until very recently. All of the major browsers have taken into account the newest versions of javascript that have concepts such as arrow functions and string literals and the types of concepts and tools that if you went through my modern javascript course that you're familiar with and so now you can test out those exact same scripts right here in the browser.
 

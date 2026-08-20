@@ -182,7 +182,7 @@ console.log(truthy);
 
 If I run this you can see it returns true.
 
-![medium](../../../../../../.gitbook/assets/04-008_IMG1.png)
+![medium](./04-008_IMG1.png)
 
 Now, this is not a name it's not a letter it's not a series of letters like our name variables are. These are just two values. True and false. And so those are the only two things that a boolean can be. So this would be something like saying is a user a paid user if you're building an application and it's a SASS product and you want to be able to see which of these users is paid and which ones are a free member. Well, you can in your data say this is a paid user it's true that they are paid and then when we get into conditionals we're going to talk about how we can leverage that to give our programs dynamic behavior. Right now just know that we have a boolean data type and it has two potential values true and false.
 
@@ -298,7 +298,7 @@ I could type asdf or something like that it doesn't represent anything special. 
 
 If I hit run now. Now we have an object symbol
 
-![medium](../../../../../../.gitbook/assets/04-008_IMG2.png)
+![medium](./04-008_IMG2.png)
 
 but inside of it is the actual foo. If we're to use this in an object which we're going to talk about next then it's going to have unique representation which is going to be the symbol of foo.
 

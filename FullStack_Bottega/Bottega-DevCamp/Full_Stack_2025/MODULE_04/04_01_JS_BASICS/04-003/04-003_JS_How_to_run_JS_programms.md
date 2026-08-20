@@ -72,7 +72,7 @@ Create `.vscode/launch.json` in your project:
    * Select "Debug Current File"
    * Click green play button
 
-![IMG](../../../../../../.gitbook/assets/04-003_VSCode-NVM-Node-Debian.png)
+![IMG](./04-003_VSCode-NVM-Node-Debian.png)
 
 ## Optional: Nodemon Configuration
 
@@ -114,7 +114,7 @@ In this lesson, we're going to walk through how to set up our development enviro
 
 We're also going to talk about another tool it's free to use called Code pen.
 
-![large](<../../../../../../.gitbook/assets/04-003_IMG1 (1).png>)
+![large](<./04-003_IMG1 (1).png>)
 
 That's the way you can leverage javascript development and you can also do things such as save the files things like that. None of which are going to require you to have a Mac or a PC. They can be done on pretty much any computer connected to the Internet.
 
@@ -124,19 +124,19 @@ The very first thing I'm going to do is show you how to use your browser to do t
 
 If you have a browser window open and this is going to be slightly different if you're on a Mac versus a PC. On a PC right now. But you're going to have your little options on the top right-hand side. And then if you scroll down to where it says more tools and click on developer tools this is going to open up this page for you.
 
-![large](<../../../../../../.gitbook/assets/04-003_IMG2 (1).png>)
+![large](<./04-003_IMG2 (1).png>)
 
 This is going to be your console where you can go and actually run the Javascript code. Now depending on what page you open it up to you may get some little error messages like this.
 
-![large](<../../../../../../.gitbook/assets/04-003_IMG3 (1).png>)
+![large](<./04-003_IMG3 (1).png>)
 
 That's perfectly fine. If you click this little clear console button
 
-![large](<../../../../../../.gitbook/assets/04-003_IMG4 (1).png>)
+![large](<./04-003_IMG4 (1).png>)
 
 or you press control L then that will allow you to clear everything out so you can focus on the code. Now just to make sure that everything's working. I'm going to type something super basic in and it's just going to be a variable. I'm going to just say
 
-![medium](<../../../../../../.gitbook/assets/04-003_IMG5 (1).png>)
+![medium](<./04-003_IMG5 (1).png>)
 
 `var hello_world = "Hi there";` (Just like that)
 
@@ -150,17 +150,17 @@ You can pick out whichever one is your favorite and stick with that. I personall
 
 If you press sign up right here you can sign up and it has right here where it looks like you have all these paid options. But if you just click Join CodePen Free then you can type all of your information in right here and you can have a free account.
 
-![large](../../../../../../.gitbook/assets/04-003_IMG6.png)
+![large](./04-003_IMG6.png)
 
 Now I already have an account so I'm not going to sign up for a new. If I click on login and click on log in right here. This is what you're going to see as soon as you sign in.
 
-![large](../../../../../../.gitbook/assets/04-003_IMG7.png)
+![large](./04-003_IMG7.png)
 
 Now in order to start writing javascript code, you can go up to create and click new pen. This is going to give you an entire development environment. Now technically you could write HTML and CSS code for this course. We're just going to be using javascript so I can drag to resize us all the way to the left so that we'll have plenty of room. I'm also going to zoom in so that you see exactly what I am typing and you don't have to squint your eyes or anything like that.
 
 We have the ability to save our environment so here I'm going to say javascript-devcamp-course and hit return.
 
-![large](../../../../../../.gitbook/assets/04-003_IMG8.png)
+![large](./04-003_IMG8.png)
 
 That's going to create this for me, now I'll be able to save it. And come back to it if I take a break and all of my code will be saved. I just click the little save button and everything's good to go. Now a few settings that I want to use and that you may or may not want to use if you're following along. If I click on settings and click on the Javascript section this gives you a few different options just in case you want to change it for this course. I'm not going to use a javascript preprocessor and we're not going to go into this. This essentially would allow us to use some things like typescript. We'll cover that in the typescript course and Babbel and Coffeescript but we're not going to worry about that right now. This is just something in case you're curious about what these things are.
 
@@ -168,15 +168,15 @@ This is just the ability to add some custom settings to each one of your various
 
 This is going to allow us to do is to type out our code. Then the code that's going to get run is going to get run right down on the bottom. Now coming over to the down arrow if you click on it, you'll see a few different options like Tidy JS, Analyze JS, and some options there.
 
-![large](../../../../../../.gitbook/assets/04-003_IMG9.png)
+![large](./04-003_IMG9.png)
 
 We'll play around with these a little bit as we start to explore it. You also have the ability to do things like changing the view.
 
-![medium](../../../../../../.gitbook/assets/04-003_IMG10.png)
+![medium](./04-003_IMG10.png)
 
 Now some of the things you may use a little bit more if you're getting into and you want to add your HTML and CSS code. For this course, I'm just going to keep all of these items exactly the same as we go along in the course we may change up a few settings we may do some things that may make life a little bit easier. For right now everything we're going to do is going to simply work just like this. So if I type in something like the same thing
 
-![medium](../../../../../../.gitbook/assets/04-003_IMG11.png)
+![medium](./04-003_IMG11.png)
 
 ````var
 console.log(hello_world); ```

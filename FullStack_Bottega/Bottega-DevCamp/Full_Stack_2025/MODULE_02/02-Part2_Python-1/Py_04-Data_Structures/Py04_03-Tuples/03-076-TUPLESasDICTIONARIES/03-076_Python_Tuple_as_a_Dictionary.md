@@ -129,7 +129,7 @@ And remember **we need to convert this to a list because if we simply call keys 
 
 So, now, if I run this code ,you can see that we have the ability now to access these keys:
 
-![large](../../../../../../../../.gitbook/assets/03-076_IMG1.png)
+![large](../.././03-076_IMG1.png)
 
 You could use all of the standard ways of grabbing them, so you could grab items and anything that we were using before you could use it with our traditional dictionaries.
 

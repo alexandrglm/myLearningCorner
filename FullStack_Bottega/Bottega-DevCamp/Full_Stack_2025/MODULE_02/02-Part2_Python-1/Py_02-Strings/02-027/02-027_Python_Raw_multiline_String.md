@@ -24,7 +24,7 @@ Don't worry we're going to have a very large section dedicated to functions and 
 And so for right now just know that this is a method that takes content in and then\
 it puts out a different type of content. (**repr uses** ):
 
-![IMG](../../../../../../../.gitbook/assets/02-027_IMG0.png)
+![IMG](.././02-027_IMG0.png)
 
 **It performs some tasks and then it returns a different type of process**.
 
@@ -50,7 +50,7 @@ Instead we can simply wrap it up in this heredoc and then Python performs a task
 
 And so what we have if you look at it we have a new line right here and then you may notice that we have two new line characters here:
 
-![IMG](../../../../../../../.gitbook/assets/02-027_IMG2.png)
+![IMG](.././02-027_IMG2.png)
 
 The reason for that is because we have one new line here and that is when it comes down it's like a carriage return and then we have a second one that is here.
 
@@ -68,7 +68,7 @@ Well, one of the cool things is if we take this raw content I'm going to copy th
 
 And so now if I am going to clear it, return, and look at that we have the entire output just like we did with the heredoc.
 
-![IMG](../../../../../../../.gitbook/assets/02-027_IMG3.png)
+![IMG](.././02-027_IMG3.png)
 
 So just like we had all of our different spaces on our new line characters and everything like that with our multiline String.
 

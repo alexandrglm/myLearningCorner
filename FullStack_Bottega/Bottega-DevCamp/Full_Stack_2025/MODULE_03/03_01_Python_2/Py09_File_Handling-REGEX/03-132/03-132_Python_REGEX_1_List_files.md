@@ -174,7 +174,7 @@ going to say `python file_guide.py`, and hit return. We don't get any errors.
 
 Now if you type `ls`, you can see that we have a `logger` file. Let's open it up, and you can see that our text `"Hey, I'm in a file"` has been added to that. That is working nicely.
 
-![large](../../../../../../../.gitbook/assets/03-132_IMG1.png)
+![large](.././03-132_IMG1.png)
 
 Now let's take something that's a little bit more practical. I'm\
 going to just comment this out for us so that you can have it in the\
@@ -193,7 +193,7 @@ for i in range(1,11):
 file_builder.close()
 ```
 
-![IMG](../../../../../../../.gitbook/assets/03-132_IMG1b.png)/)
+![IMG](.././03-132_IMG1b.png)/)
 
 Then inside of this `for-in-loop`, what I want to do is I want to call the same exact process. I can say:
 
@@ -227,7 +227,7 @@ file_builder.close()
 
 Now if I come over here, and I run that same command of `python file_guide.py`, it runs right away. Let's take a look at that `logger` now. Now you can see that it went and built that entire program.
 
-![large](../../../../../../../.gitbook/assets/03-132_IMG2.png)
+![large](.././03-132_IMG2.png)
 
 If you come all the way down to the bottom. You can see it as `I'm on line 100`.\
 On every one of these lines, it gives the line number actually lists it\

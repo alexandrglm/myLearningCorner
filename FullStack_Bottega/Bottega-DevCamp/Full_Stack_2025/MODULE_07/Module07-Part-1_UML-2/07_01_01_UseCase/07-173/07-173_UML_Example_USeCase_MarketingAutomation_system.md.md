@@ -33,7 +33,7 @@ This system manages the entire customer journey from lead generation to conversi
 * Provide reporting and contact management capabilities
 * Enable dynamic form creation and customer interaction
 
-![large](../../../../../../../.gitbook/assets/07-173_IMG1.png)
+![large](.././07-173_IMG1.png)
 
 ***
 
@@ -143,7 +143,7 @@ _-_--
 
 **Marketing Specialist Connections**
 
-![small](../../../../../../../.gitbook/assets/07-173_IMG04.png)
+![small](.././07-173_IMG04.png)
 
 * Direct access to all external functions
 * Full access to web dashboard subsystem
@@ -151,7 +151,7 @@ _-_--
 
 **Customer/Lead Connections**
 
-![small](../../../../../../../.gitbook/assets/07-173_IMG05.png)
+![small](.././07-173_IMG05.png)
 
 * Limited to customer-facing interactions
 * No administrative access
@@ -163,7 +163,7 @@ _-_--
 
 **"Notify" Relationship**
 
-![small](../../../../../../../.gitbook/assets/07-173_IMG06.png)
+![small](.././07-173_IMG06.png)
 
 * **Source**: Trigger Journey Events
 * **Target**: Get Notifications Regarding Journeys
@@ -291,11 +291,11 @@ Now that we've reviewed all of the elements, let's take a deep dive into what we
 
 ***
 
-![large](../../../../../../../.gitbook/assets/07-173_IMG1.png)
+![large](.././07-173_IMG1.png)
 
 We have a use case diagram for a marketing automation system, this has all the elements that we've walked through with using Use Case diagrams.
 
-![large](<../../../../../../../.gitbook/assets/07-173_IMG2 (1).png>)
+![large](<.././07-173_IMG2 (1).png>)
 
 Looking at the marketing specialist, you can think about them being an admin user for the system. If you follow along to see each one of the different use cases they have access to. You can see at the very top they have the ability to:
 

@@ -158,7 +158,7 @@ So inside the first one, I'm going to say Astro's and then I want the\
 Astro's value to actually be another dictionary. And so in order to do\
 that, I'm going to use this syntax right here
 
-![large](../../../../../../../../.gitbook/assets/02-068_IMG1.png)
+![large](../.././02-068_IMG1.png)
 
 and in case whatever development environment you're working on\
 doesn't have this kind of autocompletion we can just kind of review here\
@@ -187,7 +187,7 @@ we're going to go with outfield and DH. And here we can go with Trout\
 and Pujols and these are our teams and we have now multiple levels of\
 nesting.
 
-![large](../../../../../../../../.gitbook/assets/02-068_IMG2.png)
+![large](../.././02-068_IMG2.png)
 
 And if this looks weird to you or looks cumbersome I highly recommend for you to build multiple of these out.
 
@@ -197,7 +197,7 @@ Because I can tell you this is going to be very similar to how you're going to w
 
 So, now that we have that we can just make sure that our syntax is right and we don't have any errors so I'm just going to print out teams and if I do that you can see everything worked
 
-![large](../../../../../../../../.gitbook/assets/02-068_IMG3.png)
+![large](../.././02-068_IMG3.png)
 
 we have **this list that contains multiple dictionaries inside** of it so everything there is working well now that we know we have a list.
 
@@ -208,7 +208,7 @@ Astro's is the first one listed.
 So that means they have an index value of 0 and so if I run this you can see we have our Astro's team exactly like how we structured it here where it returned a dictionary and inside of that dictionary is a single key-value pair where the key is a string and then\
 the value is this nested dictionary.
 
-![large](../../../../../../../../.gitbook/assets/02-068_IMG4.png)
+![large](../.././02-068_IMG4.png)
 
 So, now let's extend this a little bit further.
 
@@ -217,7 +217,7 @@ variable called Angels and we're going to set this equal to teams 1 because we k
 
 I'm going to say get angels and let's set up a default because we're good developers that want to make sure we don't run into errors and say the default is "team not found" and now let's just print it out so I can print out angels and see if this works and it does
 
-![large](../../../../../../../../.gitbook/assets/02-068_IMG5.png)
+![large](../.././02-068_IMG5.png)
 
 Right here we have the value which contains our outfielder and our D.H. and I'm also going to comment out `print(teams[0])` just so we don't get any of the output confused.
 
@@ -229,19 +229,19 @@ grab these values.
 So I can say something like values and this is going to return a\
 dictionary view object of the name. So here we have Trout and Pujols
 
-![large](../../../../../../../../.gitbook/assets/02-068_IMG6.png)
+![large](../.././02-068_IMG6.png)
 
 ## Getting the values, but listed `list()`
 
 and if you remember we want to just simply grab the elements and treat it like a list we can just say list and run it again. Now we're at\
 Trout and Pujols
 
-![large](../../../../../../../../.gitbook/assets/02-068_IMG7.png)
+![large](../.././02-068_IMG7.png)
 
 and if we just want Pujols' name we can treat it like a traditional\
 list pass on an index value of 1. And here we go. We have a name.
 
-![large](../../../../../../../../.gitbook/assets/02-068_IMG8.png)
+![large](../.././02-068_IMG8.png)
 
 So in review, we created a variable called teams that stores a list.\
 The list has multiple nested dictionaries and inside of each one of\

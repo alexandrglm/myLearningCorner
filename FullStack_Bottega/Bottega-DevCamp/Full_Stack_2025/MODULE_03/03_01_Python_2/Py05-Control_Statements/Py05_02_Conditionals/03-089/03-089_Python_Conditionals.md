@@ -23,7 +23,7 @@ Let's consider an **authentication system** that checks if a user is allowed to 
 
 * The system **grants access**.
 
-![Authentication Success](../../../../../../../../.gitbook/assets/03-089_IMG1.png)
+![Authentication Success](../.././03-089_IMG1.png)
 
 ### ❌ If the credentials are incorrect:
 
@@ -31,11 +31,11 @@ Let's consider an **authentication system** that checks if a user is allowed to 
 * It may also check if the username exists in the database.
 * If the username does not exist, the system may prompt the user to **register**.
 
-![Authentication Failure](../../../../../../../../.gitbook/assets/03-089_IMG2.png)
+![Authentication Failure](../.././03-089_IMG2.png)
 
 This process can involve multiple **levels of conditionals**, leading to different scenarios based on user input.
 
-![Conditional Flow](../../../../../../../../.gitbook/assets/03-089_IMG3.png)
+![Conditional Flow](../.././03-089_IMG3.png)
 
 ***
 
@@ -80,11 +80,11 @@ We could build something like this and this isn't the syntax.
 
 This is more of a visual so we can say if user, and then password are correct so we'll say correct.
 
-![large](../../../../../../../../.gitbook/assets/03-089_IMG1.png)
+![large](../.././03-089_IMG1.png)
 
 Then I want to perform a couple of tasks so if the answer is yes then I want to come down here and say let into site.
 
-![large](../../../../../../../../.gitbook/assets/03-089_IMG2.png)
+![large](../.././03-089_IMG2.png)
 
 But now what if it's not correct? We may have a couple of different options. So if it's no then we don't want to only say they're not allowed into the site. So that's definitely part of it we're not going to let someone who's not authorized in but we may do is have a secondary check and a secondary conditional.
 
@@ -94,7 +94,7 @@ So not authorized but then we may also want to perform some other checks to say 
 even exist in the system". Maybe we want to check and say "Would you like\
 to register?"
 
-![large](../../../../../../../../.gitbook/assets/03-089_IMG3.png)
+![large](../.././03-089_IMG3.png)
 
 Then we could have different conditionals at different levels.
 

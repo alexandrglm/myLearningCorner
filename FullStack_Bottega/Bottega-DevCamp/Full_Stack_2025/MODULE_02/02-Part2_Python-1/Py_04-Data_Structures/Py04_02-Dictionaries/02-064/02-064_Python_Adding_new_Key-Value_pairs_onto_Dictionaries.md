@@ -104,7 +104,7 @@ So, if I come here and I say red sox then to add this key-value pair I can add i
 
 And, now, if I run this you'll see that our team's list which is what I'm printing out now contains the Red Sox:
 
-![large](../../../../../../../../.gitbook/assets/02-064_IMG1.png)
+![large](../.././02-064_IMG1.png)
 
 **A part of the reason why I also wanted to use this example was to see that you can break your regular keys into multiple words.**
 

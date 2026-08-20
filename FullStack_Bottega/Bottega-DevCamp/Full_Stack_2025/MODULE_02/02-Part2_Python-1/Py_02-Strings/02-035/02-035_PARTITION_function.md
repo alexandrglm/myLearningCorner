@@ -180,14 +180,14 @@ I'm going to say print header and then let's just say print\
 subheader. Now if I hit return you can see it prints out python and an\
 introduction.
 
-![large](../../../../../../../.gitbook/assets/02-035_IMG1.png)
+![large](.././02-035_IMG1.png)
 
 So it effectively grabbed each one of those elements and sliced it\
 into the new variables and you could technically you could even go print\
 header and say underscore right here and it would give you your colon\
 with the space right after it.
 
-![large](../../../../../../../.gitbook/assets/02-035_IMG2.png)
+![large](.././02-035_IMG2.png)
 
 But what we do in Python is whenever you have some type of situation\
 where it looks like this where we have some elements that we want. But\
@@ -229,7 +229,7 @@ you'll see that it prints out everything exactly the same as before so\
 there is nothing special with this kind of variable convention it simply\
 is a python best practice.
 
-![large](../../../../../../../.gitbook/assets/02-035_IMG3.png)
+![large](.././02-035_IMG3.png)
 
 The important component to remember whenever you're working with\
 partition is that it breaks whatever you pass in. So what we have right\
@@ -243,7 +243,7 @@ Python: Advanced. If we run this right now notice how we have two of\
 these types of Colon space elements. If I hit return you'll see that we\
 still get 3 elements back
 
-![large](../../../../../../../.gitbook/assets/02-035_IMG4.png)
+![large](.././02-035_IMG4.png)
 
 we get the first one which is the first time that it found this Colon\
 space and then it returns that and then it returned anything that was\

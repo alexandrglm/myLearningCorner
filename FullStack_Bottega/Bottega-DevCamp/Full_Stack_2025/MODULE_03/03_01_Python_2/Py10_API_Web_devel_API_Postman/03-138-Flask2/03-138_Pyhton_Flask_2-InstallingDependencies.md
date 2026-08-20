@@ -233,7 +233,7 @@ if __name__ == '__main__':
 
 That's all we need to do. So let's save this and let's attempt to run it. Let's say `python app.py` And there we go, we do have an error and this is the reason why I wanted to test this out.
 
-![large](../../../../../../../.gitbook/assets/03-138_IMG2.png)
+![large](.././03-138_IMG2.png)
 
 So let's open it up again. See where that error is so I have from\
 flask import that from flask here. So I have to have a spelling mistake\
@@ -282,7 +282,7 @@ that's helped me through the years. So if I'm going to come here and go\
 to localhost:5000 just to make sure that everything is still working and\
 there we go.
 
-![large](../../../../../../../.gitbook/assets/03-138_IMG3.png)
+![large](.././03-138_IMG3.png)
 
 So it says hey flask. So our project is working. We're not actually\
 putting those modules to use yet but we know that they are imported into\

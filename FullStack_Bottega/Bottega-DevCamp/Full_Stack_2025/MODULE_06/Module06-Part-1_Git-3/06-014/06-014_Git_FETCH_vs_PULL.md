@@ -145,31 +145,31 @@ So that's what we are going to do. We've already talked about what `git pull` do
 made changes for git pull demo
 ```
 
-![large](../../../../../../.gitbook/assets/06-014_IMG1.png)
+![large](./06-014_IMG1.png)
 
-![large](../../../../../../.gitbook/assets/06-014_IMG2.png)
+![large](./06-014_IMG2.png)
 
 So if I come back now let's switch to the master branch
 
-![large](../../../../../../.gitbook/assets/06-014_IMG3.png)
+![large](./06-014_IMG3.png)
 
 and if I type `git pull` what's going to happen is it's going to bring down those latest changes and it is also going to automatically update the file.
 
-![large](../../../../../../.gitbook/assets/06-014_IMG4.png)
+![large](./06-014_IMG4.png)
 
 So if I look inside of the readme now you can see that it says made changes for the `git pull` demos.
 
-![large](../../../../../../.gitbook/assets/06-014_IMG5.png)
+![large](./06-014_IMG5.png)
 
 So those changes were made and they were automatically applied. So that is `git pull` and whenever you have completely kind of application where you're either doing all of the work yourself or maybe it's something where there's not a ton of other developers out there and you haven't made a lot of changes to your local version `git pull` can work.
 
 But imagine a scenario like this where we have already made a few changes ourselves on our local machines so I can say my file and let's just duplicate this python function.
 
-![large](../../../../../../.gitbook/assets/06-014_IMG6.png)
+![large](./06-014_IMG6.png)
 
 I'm g
 
-![large](../../../../../../.gitbook/assets/06-014_IMG7.png)
+![large](./06-014_IMG7.png)
 
 So I have a different version on my local machine then we have up here so I'm going to come right here and I'm going to create and go through the full `git add` and `git commit` process.
 
@@ -180,27 +180,27 @@ git commit -m "Added new python function"
 
 So now what I can do is switch back and add one more change. So we'll just copy this in the readme
 
-![large](../../../../../../.gitbook/assets/06-014_IMG10.png)
+![large](./06-014_IMG10.png)
 
 and say made more changes for the `git pull` demo and I will say `git pull/fetch` just to make it clear what we
 
-![large](../../../../../../.gitbook/assets/06-014_IMG9.png)
+![large](./06-014_IMG9.png)
 
 and if I type `git status` I don't have any changes. But now notice it says your branch and origin master have diverged and have 1 and 1 different commits each respectively.
 
-![large](<../../../../../../.gitbook/assets/06-014_IMG10 (1).png>)
+![large](<./06-014_IMG10 (1).png>)
 
 Use `git pull` to merge the remote branch into yours nothing to commit working tree clean.
 
 Okay well, that's fine it'
 
-![large](../../../../../../.gitbook/assets/06-014_IMG11.png)
+![large](./06-014_IMG11.png)
 
-![large](../../../../../../.gitbook/assets/06-014_IMG12.png)
+![large](./06-014_IMG12.png)
 
 It didn't say made more changes so that is giving us our best hint on what's happening. `Git fetch` does not automatically override the code that we have locally. So now that we see that it hasn't made any changes how can we actually merge this in. Well, let's type `git status` once again just to make sure we don't have any changes and also to get that message.
 
-![large](../../../../../../.gitbook/assets/06-014_IMG13.png)
+![large](./06-014_IMG13.png)
 
 So notice how it gives us a little bit of a hint here where it says your branch and origin master. So that means that our local branch and then origin master. This is our remote origins the name of the remote and then master have diverged so we could just run `git pull` but I'm going to show you a different way of doing it.
 
@@ -212,11 +212,11 @@ git merge origin/master
 
 and we know to do this because that's exactly what it says right here.
 
-![large](../../../../../../.gitbook/assets/06-014_IMG14.png)
+![large](./06-014_IMG14.png)
 
 So now we can say \`gi
 
-![large](../../../../../../.gitbook/assets/06-014_IMG15.png)
+![large](./06-014_IMG15.png)
 
 So let's walk through it. It says merge remote-tracking branch origin master please enter a commit message to explain why this merge is necessary especially if it merges an updated upstream into a topic branch. Do not worry about keywords like updated upstream because we're going to get into that later. Just know it's asking for us to add some details on wh
 
@@ -228,15 +228,15 @@ Merged in a remote master with local master changes
 
 and typically you'd add what kind of features you're working on right now we're just saying that we're merging that in.
 
-![large](../../../../../../.gitbook/assets/06-014_IMG16.png)
+![large](./06-014_IMG16.png)
 
 I'm going to save that and now if I type `git status` everything is clean but it says your branch is ahead of origin master by 2 commits and for the moment of truth. Let's open up that readme file and now you can see that the made more changes for git pull/fetch demo is life so I'm going to close this out and all we have to do now is type `git push` type the passphrase in and then everything is going to be sync up if you switch back to Google Chrome here. Nothing has changed in this file but if you then go to my project and click on commits you'll see that we have two new commits
 
-![large](../../../../../../.gitbook/assets/06-014_IMG17.png)
+![large](./06-014_IMG17.png)
 
 we have made more changes for a git pull/fetch demo and then we also have the main one here. This was our local change or we added a new Python function. And then lastly we have and this is our most up to date one. The merge remote-tracking branch. So this gives the little description we added where he said merged in remote master with the local master changes and so if I click on this-this is going to show that it brought in those changes.
 
-![large](../../../../../../.gitbook/assets/06-014_IMG18.png)
+![large](./06-014_IMG18.png)
 
 So this merged our remote copy of origin master with our local one. Now you may be curious and be wondering why in the world did we just have to go through all of those steps. When `git pull` did that for us automatically. And that's a great question because in the example I just gave. It's perfectly fine to run `git pull` if you know the files that were chang
 

@@ -186,9 +186,9 @@ We ended up with a name that used vernacular that people in a gym would commonly
 
 Instead of "Meat Sticks", the name that we came up with was "Triset."
 
-![IMG](../../../../../../.gitbook/assets/02-001__IMG1.png)
+![IMG](./02-001__IMG1.png)
 
-![IMG](../../../../../../.gitbook/assets/02-001_IMG2.png)
+![IMG](./02-001_IMG2.png)
 
 It's this process of using these three different individual packets.
 

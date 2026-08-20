@@ -223,7 +223,7 @@ Even getting to where we are connecting to outside API's and then seeing what ha
 
 So what I have right here is I have visual studio code on the left-hand side and then I have the browser on the right-hand side with the javascript console open.
 
-![large](../../../../../../../.gitbook/assets/05-088-IMG1.png)
+![large](.././05-088-IMG1.png)
 
 {1:04}I created an index each DML file and I opened it up over here. Just as a little review in case you didn't watch some of the previous guides where I did that now with this example right here we just have a basic HD Amelle layout and we don't have any code so all of our code is going to go inside of this script tag. And let's walk through our first example. And so what I'm going to do is I'm going to create a function some say function and call this function the site component.
 

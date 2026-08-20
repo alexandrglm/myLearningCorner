@@ -204,7 +204,7 @@ all. This is simply going to return a value. And we can test this out by\
 running it and as you can see nothing gets printed out but everything\
 worked.
 
-![large](../../../../../../../../.gitbook/assets/03-098_IMG1.png)
+![large](../.././03-098_IMG1.png)
 
 and so let's see how this can really be used. So instead of simply\
 calling this function, we're going to call it but we are going to set it\
@@ -233,7 +233,7 @@ out to see if it works, and there you can see it has our formatted\
 first and last name and that has been placed directly inside of our\
 greeting function.
 
-![large](../../../../../../../../.gitbook/assets/03-098_IMG2.png)
+![large](../.././03-098_IMG2.png)
 
 And so if that is not clear at all, let's take one last walk through of it:
 
@@ -251,7 +251,7 @@ Now, one of the biggest things I wanted to emphasize was the difference between 
 Well, first we're going to get something kind of weird happening where it prints out\
 the name which's that's expected but then it says Hi None!
 
-![large](../../../../../../../../.gitbook/assets/03-098_IMG3.png)
+![large](../.././03-098_IMG3.png)
 
 The reason why it says hi none is because when we simply print a value out in a function it returns nothing.
 
@@ -264,7 +264,7 @@ And so that is not very effective.
 
 **That's the reason why the return is so important to understand because when it comes to building out entire processes and storing them in functions typically you want to return a value so that you can call that from either another function or just some different part of the program**.
 
-![IMG](../../../../../../../../.gitbook/assets/03-098_IMG4.png)
+![IMG](../.././03-098_IMG4.png)
 
 So in review that is the key difference between the return and the print statements.
 

@@ -198,7 +198,7 @@ query = sentence.find('quick')
 
 And so now if I run it run print query let's see what this tells us.
 
-![large](../../../../../../../.gitbook/assets/02-031_IMG1.png)
+![large](.././02-031_IMG1.png)
 
 If I hit enter you can see this returns a 4.
 
@@ -223,7 +223,7 @@ I'll copy it and comment it out.
 
 And so we also have the index function here and if I run this you'll see that it returns exactly the same value.
 
-![large](../../../../../../../.gitbook/assets/02-031_IMG2.png)
+![large](.././02-031_IMG2.png)
 
 **So index is finding exactly the same way that our find function worked**.
 
@@ -240,15 +240,15 @@ So let's come here and I'm going to make the second one called `query_two` and t
 
 So right here as you can tell I'm going to clear both of these work exactly the same way because they found quick inside of the sentence.
 
-![large](../../../../../../../.gitbook/assets/02-031_IMG3.png)
+![large](.././02-031_IMG3.png)
 
 However, if I change this to oops which is not contained anywhere here and I try to run this we get an error
 
-![large](../../../../../../../.gitbook/assets/02-031_IMG4.png)
+![large](.././02-031_IMG4.png)
 
 and if I comment out the index method here, hit clear you'll see that this worked.
 
-![large](../../../../../../../.gitbook/assets/02-031_IMG5.png)
+![large](.././02-031_IMG5.png)
 
 So find when it is looking for value that it does not find inside of a string.
 
@@ -268,11 +268,11 @@ So I have query and here I can pass in value so I could pass in quick. I could p
 
 So im going to pass in 'fox' in sentence. And now if I print this out so now I can run it and it prints true
 
-![large](../../../../../../../.gitbook/assets/02-031_IMG6.png)
+![large](.././02-031_IMG6.png)
 
 If I passed in something like oops it's return value is false
 
-![large](../../../../../../../.gitbook/assets/02-031_IMG7.png)
+![large](.././02-031_IMG7.png)
 
 and so you have three different versions.
 
