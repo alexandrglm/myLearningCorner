@@ -143,9 +143,10 @@
 
 |      | #      | Type                                        | Tittle                                                         | Date       |
 | ---- | ------ | ------------------------------------------- | -------------------------------------------------------------- | ---------- |
+| \[X] | 02-004 | Digital Literacy                            | What programming is                                            | 2025/02/04 |
 | \[X] | 02-005 | Python: Online IDE                          | How to Use Repl.it for Running Python in the Browser           | 2025/02/04 |
-| \[X] | 02-006 | Python IDE setup                            | How to Install Python 3 on a Mac                               | 2025/02/04 |
-| \[X] | 02-007 | Python IDE setup                            | How to Install Python 3 on a PC                                | 2025/02/04 |
+| \[X] | 02-006 | Python IDE setup PC WI                      | How to Install Python 3 on a Mac                               | 2025/02/04 |
+| \[X] | 02-007 | Python IDE setup MAC                        | How to Install Python 3 on a PC                                | 2025/02/04 |
 | \[X] | 02-008 | Python: Online IDE                          | Basic Usage Tips and Tricks for the Python Repl                | 2025/02/04 |
 | \[X] | 02-009 | Python Philosophy                           | Introduction to the Zen of Python (PEP 20)                     | 2025/02/04 |
 | \[X] | 02-010 | Python Versions                             | Differences Between Python Versions 2 vs 3                     | 2025/02/04 |
@@ -558,6 +559,10 @@
 |      | #      | Type             | Tittle                                                      | Date       |
 | ---- | ------ | ---------------- | ----------------------------------------------------------- | ---------- |
 | \[X] | 05-104 | Exercise         | Build out a Diner Menu using JavaScript                     | 2025-05-05 |
+
+
+|      | #      | Type             | Tittle                                                      | Date       |
+| ---- | ------ | ---------------- | ----------------------------------------------------------- | ---------- |
 | \[X] | 05-105 | Digital Literacy | Practical Ways to Use the Pomodoro Technique as a Developer | 2025-05-06 |
 
 ***
