@@ -889,31 +889,31 @@
 
 |      | #      | Type    | Tittle                                                            | Date       |
 | ---- | ------ | ------- | ----------------------------------------------------------------- | ---------- |
-| \[X] | 08-078 | Props   | Introduction to Render Props in React                             | 2025-09-12 |
-| \[X] | 08-079 | State   | Updating a Parent Component's State from a Child Component        | 2025-09-12 |
-| \[X] | 08-080 | Auth    | Automatically Checking if a User is Logged In in React            | 2025-09-13 |
-| \[X] | 08-081 | Convert | How to Convert a Class Component into a Functional Component      | 2025-09-13 |
-| \[X] | 08-082 | Auth    | How to Show and Hide Links When Logged In                         | 2025-09-14 |
-| \[X] | 08-083 | Auth    | Building a Route Guard in React                                   | 2025-09-14 |
-| \[X] | 08-084 | Auth    | Implementing a Logout Handler in the App Component                | 2025-09-15 |
-| \[X] | 08-085 | Auth    | Finalizing the Logout Functionality with a Higher Order Component | 2025-09-15 |
+| \[X] | 08-072 | Props   | Introduction to Render Props in React                             | 2025-09-12 |
+| \[X] | 08-073 | State   | Updating a Parent Component's State from a Child Component        | 2025-09-12 |
+| \[X] | 08-072 | Auth    | Automatically Checking if a User is Logged In in React            | 2025-09-13 |
+| \[X] | 08-075 | Convert | How to Convert a Class Component into a Functional Component      | 2025-09-13 |
+| \[X] | 08-076 | Auth    | How to Show and Hide Links When Logged In                         | 2025-09-14 |
+| \[X] | 08-077 | Auth    | Building a Route Guard in React                                   | 2025-09-14 |
+| \[X] | 08-078 | Auth    | Implementing a Logout Handler in the App Component                | 2025-09-15 |
+| \[X] | 08-079 | Auth    | Finalizing the Logout Functionality with a Higher Order Component | 2025-09-15 |
 
 #### React: Portfolio Manager
 
 |      | #      | Type   | Tittle                                                           | Date       |
 | ---- | ------ | ------ | ---------------------------------------------------------------- | ---------- |
-| \[X] | 08-086 | Intro  | Portfolio Manager Feature Overview                               | 2025-09-16 |
-| \[X] | 08-087 | Secure | Building a Secure Class Component for the Portfolio Manager Page | 2025-09-16 |
-| \[X] | 08-088 | Layout | Portfolio Manager Grid Layout Implementation                     | 2025-09-16 |
-| \[X] | 08-089 | API    | Populating the Portfolio Manager State with API Call Data        | 2025-09-17 |
-| \[X] | 08-090 | UI     | Building the Portfolio Sidebar List Component                    | 2025-09-17 |
-| \[X] | 08-091 | Styles | Finalizing Portfolio Manager Sidebar List Styles                 | 2025-09-17 |
-| \[X] | 08-092 | Form   | Creating the Portfolio Form and Calling it from the Parent       | 2025-09-18 |
-| \[X] | 08-093 | Form   | Building the Initial Portfolio Form Elements                     | 2025-09-18 |
-| \[X] | 08-094 | Form   | Implementing Portfolio Form Handlers                             | 2025-09-19 |
-| \[X] | 08-095 | Form   | Introduction to Building JavaScript FormData Objects             | 2025-09-19 |
-| \[X] | 08-096 | Fix    | Fixing Multiple Key Prop Warnings in React                       | 2025-09-20 |
-| \[X] | 08-097 | Form   | Creating Portfolio Items from React Form                         | 2025-09-20 |
+| \[X] | 08-080 | Intro  | Portfolio Manager Feature Overview                               | 2025-09-16 |
+| \[X] | 08-081 | Secure | Building a Secure Class Component for the Portfolio Manager Page | 2025-09-16 |
+| \[X] | 08-082 | Layout | Portfolio Manager Grid Layout Implementation                     | 2025-09-16 |
+| \[X] | 08-083 | API    | Populating the Portfolio Manager State with API Call Data        | 2025-09-17 |
+| \[X] | 08-084 | UI     | Building the Portfolio Sidebar List Component                    | 2025-09-17 |
+| \[X] | 08-085 | Styles | Finalizing Portfolio Manager Sidebar List Styles                 | 2025-09-17 |
+| \[X] | 08-086 | Form   | Creating the Portfolio Form and Calling it from the Parent       | 2025-09-18 |
+| \[X] | 08-087 | Form   | Building the Initial Portfolio Form Elements                     | 2025-09-18 |
+| \[X] | 08-088 | Form   | Implementing Portfolio Form Handlers                             | 2025-09-19 |
+| \[X] | 08-089 | Form   | Introduction to Building JavaScript FormData Objects             | 2025-09-19 |
+| \[X] | 08-090 | Fix    | Fixing Multiple Key Prop Warnings in React                       | 2025-09-20 |
+| \[X] | 08-091 | Form   | Creating Portfolio Items from React Form                         | 2025-09-20 |
 
 |      | #      | Type | Tittle               | Date       |
 | ---- | ------ | ---- | -------------------- | ---------- |
@@ -929,33 +929,33 @@
 
 |      | #      | Type   | Tittle                                                                     | Date       |
 | ---- | ------ | ------ | -------------------------------------------------------------------------- | ---------- |
-| \[X] | 09-098 | Form   | Guide to Select Dropdowns in React                                         | 2025-09-20 |
-| \[X] | 09-099 | Form   | Guide to the Textarea Tag in React                                         | 2025-09-20 |
-| \[X] | 09-100 | State  | Implementing a Base State Value for a React Select Tag                     | 2025-09-20 |
-| \[X] | 09-101 | Data   | Populating Parent Component Data in React                                  | 2025-09-21 |
-| \[X] | 09-102 | Upload | Installing React Dropzone Component and Performing a Security Audit Fix    | 2025-09-21 |
-| \[X] | 09-103 | Upload | Integrating React Dropzone Component into the Portfolio Form               | 2025-09-21 |
-| \[X] | 09-104 | Upload | Uploading Thumbnail Images to the API in React                             | 2025-09-22 |
-| \[X] | 09-105 | Upload | Adding the Banner and Logo Image Uploaders                                 | 2025-09-22 |
-| \[X] | 09-106 | Refs   | Overview of React Refs to Clear the Form and Image Uploaders               | 2025-09-22 |
-| \[X] | 09-107 | Mixins | Creating a Form Input Mixin                                                | 2025-09-23 |
-| \[X] | 09-108 | Styles | How to Implement Custom Select and Textarea Styles                         | 2025-09-23 |
-| \[X] | 09-109 | Styles | Building CSS Grid Styles for the Portfolio Form                            | 2025-09-23 |
-| \[X] | 09-110 | Upload | Updating the Dropzone Labels with Child Components to Finalize the Form    | 2025-09-23 |
-| \[X] | 09-111 | CRUD   | Building a Delete Click Handler in React                                   | 2025-09-24 |
-| \[X] | 09-112 | CRUD   | How to Delete API Data in React and Update State                           | 2025-09-24 |
-| \[X] | 09-113 | Icons  | Installing and Configuring Font Awesome in React                           | 2025-09-24 |
-| \[X] | 09-114 | Icons  | How to Style Font Awesome Icons in React                                   | 2025-09-24 |
-| \[X] | 09-115 | Icons  | Font Awesome Naming Requirements for React Components                      | 2025-09-25 |
-| \[X] | 09-116 | CRUD   | Building an Edit Click Handler in React                                    | 2025-09-25 |
-| \[X] | 09-117 | CRUD   | Populating the Portfolio Edit Form in React                                | 2025-09-25 |
-| \[X] | 09-118 | API    | Making Dynamic Axios API Queries in React                                  | 2025-09-25 |
-| \[X] | 09-119 | CRUD   | Working with New and Edit Workflows in React                               | 2025-09-25 |
-| \[X] | 09-120 | Cond   | Guide to Multi Line Ternary Operators in React for Showing/Hiding Dropzone | 2025-09-26 |
-| \[X] | 09-121 | Styles | Populating Image Thumbnail Conditionals and Styles                         | 2025-09-26 |
-| \[X] | 09-122 | CRUD   | Adding Delete Image Links to the Image Thumbnails                          | 2025-09-26 |
-| \[X] | 09-123 | Fix    | Fixing an Image Edit Bug                                                   | 2025-09-26 |
-| \[X] | 09-124 | CRUD   | Finalizing the Image Delete Functionality                                  | 2025-09-26 |
+| \[X] | 09-092 | Form   | Guide to Select Dropdowns in React                                         | 2025-09-20 |
+| \[X] | 09-093 | Form   | Guide to the Textarea Tag in React                                         | 2025-09-20 |
+| \[X] | 09-094 | State  | Implementing a Base State Value for a React Select Tag                     | 2025-09-20 |
+| \[X] | 09-095 | Data   | Populating Parent Component Data in React                                  | 2025-09-21 |
+| \[X] | 09-096 | Upload | Installing React Dropzone Component and Performing a Security Audit Fix    | 2025-09-21 |
+| \[X] | 09-097 | Upload | Integrating React Dropzone Component into the Portfolio Form               | 2025-09-21 |
+| \[X] | 09-098 | Upload | Uploading Thumbnail Images to the API in React                             | 2025-09-22 |
+| \[X] | 09-099 | Upload | Adding the Banner and Logo Image Uploaders                                 | 2025-09-22 |
+| \[X] | 09-100 | Refs   | Overview of React Refs to Clear the Form and Image Uploaders               | 2025-09-22 |
+| \[X] | 09-101 | Mixins | Creating a Form Input Mixin                                                | 2025-09-23 |
+| \[X] | 09-102 | Styles | How to Implement Custom Select and Textarea Styles                         | 2025-09-23 |
+| \[X] | 09-103 | Styles | Building CSS Grid Styles for the Portfolio Form                            | 2025-09-23 |
+| \[X] | 09-104 | Upload | Updating the Dropzone Labels with Child Components to Finalize the Form    | 2025-09-23 |
+| \[X] | 09-105 | CRUD   | Building a Delete Click Handler in React                                   | 2025-09-24 |
+| \[X] | 09-106 | CRUD   | How to Delete API Data in React and Update State                           | 2025-09-24 |
+| \[X] | 09-107 | Icons  | Installing and Configuring Font Awesome in React                           | 2025-09-24 |
+| \[X] | 09-108 | Icons  | How to Style Font Awesome Icons in React                                   | 2025-09-24 |
+| \[X] | 09-109 | Icons  | Font Awesome Naming Requirements for React Components                      | 2025-09-25 |
+| \[X] | 09-110 | CRUD   | Building an Edit Click Handler in React                                    | 2025-09-25 |
+| \[X] | 09-110b | CRUD   | Populating the Portfolio Edit Form in React                                | 2025-09-25 |
+| \[X] | 09-111 | API    | Making Dynamic Axios API Queries in React                                  | 2025-09-25 |
+| \[X] | 09-112 | CRUD   | Working with New and Edit Workflows in React                               | 2025-09-25 |
+| \[X] | 09-113 | Cond   | Guide to Multi Line Ternary Operators in React for Showing/Hiding Dropzone | 2025-09-26 |
+| \[X] | 09-114 | Styles | Populating Image Thumbnail Conditionals and Styles                         | 2025-09-26 |
+| \[X] | 09-115 | CRUD   | Adding Delete Image Links to the Image Thumbnails                          | 2025-09-26 |
+| \[X] | 09-116 | Fix    | Fixing an Image Edit Bug                                                   | 2025-09-26 |
+| \[X] | 09-117 | CRUD   | Finalizing the Image Delete Functionality                                  | 2025-09-26 |
 
 |      | #      | Type | Tittle               | Date       |
 | ---- | ------ | ---- | -------------------- | ---------- |
@@ -965,33 +965,33 @@
 
 |      | #      | Type    | Tittle                                                        | Date       |
 | ---- | ------ | ------- | ------------------------------------------------------------- | ---------- |
-| \[X] | 09-126 | Intro   | Overview of the Blog Features                                 | 2025-09-26 |
-| \[X] | 09-127 | Convert | Converting the Functional Blog Component into a Class Comp.   | 2025-09-26 |
-| \[X] | 09-128 | API     | Calling the Blog API and Storing the Data in State            | 2025-09-26 |
-| \[X] | 09-129 | Render  | Rendering Blog Records to the Screen                          | 2025-09-26 |
-| \[X] | 09-130 | Comp    | Creating a Dedicated Blog Item Component                      | 2025-09-26 |
-| \[X] | 09-131 | Comp    | Building the Initial Blog Detail Component                    | 2025-09-26 |
-| \[X] | 09-132 | API     | Calling a Single Blog Item from the API in React              | 2025-09-26 |
-| \[X] | 09-133 | Render  | Rendering the Blog Details to the Screen                      | 2025-09-26 |
-| \[X] | 09-134 | Styles  | Applying Styles to the Blog Detail Component                  | 2025-09-26 |
-| \[X] | 09-135 | Styles  | Applying Styles to the Blog Index Component                   | 2025-09-26 |
-| \[X] | 09-136 | Event   | Building a JavaScript Event Listener for Scroll Events        | 2025-09-26 |
-| \[X] | 09-137 | Deep    | Deep Dive: innerHeight, scrollTop, and offsetHeight           | 2025-09-26 |
-| \[X] | 09-138 | API     | Getting the Count of Total Records from Server & Update State | 2025-09-26 |
-| \[X] | 09-139 | UI      | Implementing an Animated Data Loading Icon in React           | 2025-09-26 |
-| \[X] | 09-140 | UI      | Building the Full Infinite Scroll Functionality in React      | 2025-09-26 |
-| \[X] | 09-141 | Fix     | Refactoring the Infinite Scroll Feature to Fix Memory Leak    | 2025-09-26 |
-| \[X] | 09-142 | Modal   | Installing the React Modal Library                            | 2025-09-26 |
-| \[X] | 09-143 | Modal   | Rendering the React Modal in the Blog Component               | 2025-09-26 |
-| \[X] | 09-144 | Modal   | Triggering the React Modal to Open with a Link Click          | 2025-09-26 |
-| \[X] | 09-145 | Modal   | How to Close the React Modal                                  | 2025-09-26 |
-| \[X] | 09-146 | Styles  | Applying Custom Styles to the React Modal                     | 2025-09-26 |
-| \[X] | 09-147 | Fix     | Fixing Screen Reading Warning for React Modal                 | 2025-09-26 |
-| \[X] | 09-148 | Form    | Creating the Initial Blog Form Component                      | 2025-09-26 |
-| \[X] | 09-149 | Form    | Building the Blog Form Event Handlers                         | 2025-09-26 |
-| \[X] | 09-150 | API     | Creating Blog Posts via the API                               | 2025-09-26 |
-| \[X] | 09-151 | CRUD    | Building the Full Blog Creation Workflow                      | 2025-09-26 |
-| \[X] | 09-152 | Styles  | Applying Blog Form Styles                                     | 2025-09-26 |
+| \[X] | 09-118 | Intro   | Overview of the Blog Features                                 | 2025-09-26 |
+| \[X] | 09-119 | Convert | Converting the Functional Blog Component into a Class Comp.   | 2025-09-26 |
+| \[X] | 09-120 | API     | Calling the Blog API and Storing the Data in State            | 2025-09-26 |
+| \[X] | 09-121 | Render  | Rendering Blog Records to the Screen                          | 2025-09-26 |
+| \[X] | 09-122 | Comp    | Creating a Dedicated Blog Item Component                      | 2025-09-26 |
+| \[X] | 09-123 | Comp    | Building the Initial Blog Detail Component                    | 2025-09-26 |
+| \[X] | 09-124 | API     | Calling a Single Blog Item from the API in React              | 2025-09-26 |
+| \[X] | 09-125 | Render  | Rendering the Blog Details to the Screen                      | 2025-09-26 |
+| \[X] | 09-126 | Styles  | Applying Styles to the Blog Detail Component                  | 2025-09-26 |
+| \[X] | 09-127 | Styles  | Applying Styles to the Blog Index Component                   | 2025-09-26 |
+| \[X] | 09-128 | Event   | Building a JavaScript Event Listener for Scroll Events        | 2025-09-26 |
+| \[X] | 09-129 | Deep    | Deep Dive: innerHeight, scrollTop, and offsetHeight           | 2025-09-26 |
+| \[X] | 09-130 | API     | Getting the Count of Total Records from Server & Update State | 2025-09-26 |
+| \[X] | 09-131 | UI      | Implementing an Animated Data Loading Icon in React           | 2025-09-26 |
+| \[X] | 09-132 | UI      | Building the Full Infinite Scroll Functionality in React      | 2025-09-26 |
+| \[X] | 09-133 | Fix     | Refactoring the Infinite Scroll Feature to Fix Memory Leak    | 2025-09-26 |
+| \[X] | 09-134 | Modal   | Installing the React Modal Library                            | 2025-09-26 |
+| \[X] | 09-135 | Modal   | Rendering the React Modal in the Blog Component               | 2025-09-26 |
+| \[X] | 09-136 | Modal   | Triggering the React Modal to Open with a Link Click          | 2025-09-26 |
+| \[X] | 09-137 | Modal   | How to Close the React Modal                                  | 2025-09-26 |
+| \[X] | 09-138 | Styles  | Applying Custom Styles to the React Modal                     | 2025-09-26 |
+| \[X] | 09-139 | Fix     | Fixing Screen Reading Warning for React Modal                 | 2025-09-26 |
+| \[X] | 09-140 | Form    | Creating the Initial Blog Form Component                      | 2025-09-26 |
+| \[X] | 09-141 | Form    | Building the Blog Form Event Handlers                         | 2025-09-26 |
+| \[X] | 09-142 | API     | Creating Blog Posts via the API                               | 2025-09-26 |
+| \[X] | 09-143 | CRUD    | Building the Full Blog Creation Workflow                      | 2025-09-26 |
+| \[X] | 09-144 | Styles  | Applying Blog Form Styles                                     | 2025-09-26 |
 
 |      | #      | Type | Tittle               | Date       |
 | ---- | ------ | ---- | -------------------- | ---------- |
@@ -1005,89 +1005,111 @@
 
 #### React: Blog & Daily Smarty UI
 
+
+
 |      | #      | Type      | Tittle                                                                        | Date       |
 | ---- | ------ | --------- | ----------------------------------------------------------------------------- | ---------- |
-| \[X] | 10-154 | Styles    | Building the Styles for the New Blog Icon with a Fixed Position on the Page   | 2025-09-26 |
-| \[X] | 10-155 | Props     | Revisiting Render Props and Passing the Logged In Status to Child Components  | 2025-09-26 |
-| \[X] | 10-156 | Helpers   | Building a Dedicated Icon Helper File in React                                | 2025-09-26 |
-| \[X] | 10-157 | Setup     | Installing Draft JS Dependencies for Rich Text Editing in React               | 2025-09-26 |
-| \[X] | 10-158 | Form      | Rendering Draft JS Form Component and Building Rich Text Editor Styles        | 2025-09-26 |
-| \[X] | 10-159 | Form      | Updating the Blog Form to Handle Rich Text Editor State Changes               | 2025-09-26 |
-| \[X] | 10-160 | Form      | Retrieving HTML Content from Draft JS Component                               | 2025-09-26 |
-| \[X] | 10-161 | Fix       | Fixing Set State on an Unmounted Component Warning in React                   | 2025-09-26 |
-| \[X] | 10-162 | Parser    | Installing React HTML Parser and Generating Sample Content                    | 2025-09-26 |
-| \[X] | 10-163 | Parser    | Parsing HTML in React and Rendering to the Blog Detail Page                   | 2025-09-26 |
-| \[X] | 10-164 | Parser    | Installing Striptags and Truncate Component in React                          | 2025-09-26 |
-| \[X] | 10-165 | Parser    | Removing HTML Tags and Generating Summaries for Blogs                         | 2025-09-26 |
-| \[X] | 10-166 | Upload    | Configuring Dropzone for Blog Featured Image                                  | 2025-09-26 |
-| \[X] | 10-167 | Upload    | Adding the Ability to Upload Featured Images to Blogs                         | 2025-09-26 |
-| \[X] | 10-168 | Styles    | Finalizing the Blog Form Styles                                               | 2025-09-26 |
-| \[X] | 10-169 | Editor    | Customizing the Draft JS Toolbar                                              | 2025-09-26 |
-| \[X] | 10-170 | Media     | Converting Image Files into Base64 Strings                                    | 2025-09-26 |
-| \[X] | 10-171 | Editor    | Positioning Draft JS Icons                                                    | 2025-09-26 |
-| \[X] | 10-172 | Form      | Adding Click Handler to Render the BlogForm Component                         | 2025-09-26 |
-| \[X] | 10-173 | Form      | Passing the Blog Title and Status to the Form to Edit                         | 2025-09-26 |
-| \[X] | 10-174 | Editor    | How to Programmatically Add Content to Draft JS                               | 2025-09-26 |
-| \[X] | 10-175 | Media     | Enabling Dynamic Rendering of the Featured Image in the Blog Form             | 2025-09-26 |
-| \[X] | 10-176 | CRUD      | Deleting Featured Blog Images via API and Updating Parent Component State     | 2025-09-26 |
-| \[X] | 10-177 | API       | Communicating with Blog Update API Endpoint                                   | 2025-09-26 |
-| \[X] | 10-178 | Auth      | Enabling Authorization Rules for Blog Detail Component                        | 2025-09-26 |
-| \[X] | 10-179 | Styles    | Building About Page Styles for React Portfolio                                | 2025-09-26 |
-| \[X] | 10-180 | Styles    | Building Contact Page Styles for the React Portfolio                          | 2025-09-26 |
-| \[X] | 10-181 | Portfolio | Initial Build Out of the Portfolio Detail Component                           | 2025-09-26 |
-| \[X] | 10-182 | Render    | Rendering the Portfolio Detail Data on the Screen                             | 2025-09-26 |
-| \[X] | 10-183 | Styles    | Portfolio Detail Styles                                                       | 2025-09-26 |
-| \[X] | 10-184 | Feature   | Full Filtering Feature Build Out in React                                     | 2025-09-26 |
-| \[X] | 10-185 | CRUD      | Enabling the Ability to Delete Blog Posts                                     | 2025-09-26 |
-| \[X] | 10-186 | Styles    | Finalizing the Auth Form Styles                                               | 2025-09-26 |
-| \[X] | 10-187 | Deploy    | Heroku Deployment for React JS Applications                                   | 2025-09-26 |
-| \[X] | 10-188 | Interview | Answering Impossible Interview Questions                                      | 2025-09-26 |
-| \[X] | 10-189 | Project   | React Project Five Application Overview                                       | 2025-09-26 |
-| \[X] | 10-190 | App       | Generating Daily Smarty UI Application                                        | 2025-09-26 |
-| \[X] | 10-191 | CSS       | CSS Grid Basic Setup for Daily Smarty UI                                      | 2025-09-26 |
-| \[X] | 10-192 | Component | Setting Up A Logo Component                                                   | 2025-09-26 |
-| \[X] | 10-193 | Component | Creating Searchbar and Recent Posts Components                                | 2025-09-26 |
-| \[X] | 10-194 | Redux     | Setting Up Redux Form In the SearchBar Component                              | 2025-09-26 |
-| \[X] | 10-195 | Routes    | Setting Up Daily Smarty UI Routes Using React Router Dom                      | 2025-09-26 |
-| \[X] | 10-196 | Component | Setting Up the Results Component for the Daily Smarty UI                      | 2025-09-26 |
-| \[X] | 10-197 | HOC       | Implementing an HOC Called with Router                                        | 2025-09-26 |
-| \[X] | 10-198 | Redux     | Setting Up Redux Thunk and Connecting the Recent Posts Component to Redux     | 2025-09-26 |
-| \[X] | 10-199 | API       | Utilizing Axios to Perform a GET Request on the Redux Thunk Action Dispatcher | 2025-09-26 |
-| \[X] | 10-200 | Redux     | How to Utilize Redux Dev Tools and Fix the Set Recent Posts Reducer           | 2025-09-26 |
-| \[X] | 10-201 | Redux     | Using the Redux Map State to Props Function in the Recent Posts Component     | 2025-09-26 |
-| \[X] | 10-202 | Component | Creating a Post Component for the Daily Smarty UI                             | 2025-09-26 |
-| \[X] | 10-203 | JS        | Review of the Spread Operator and Rendering Post Associated Topics            | 2025-09-26 |
-| \[X] | 10-204 | Component | Customizing the Logo Component to Take In a Custom Size Prop                  | 2025-09-26 |
+| \[X] | 10-145 | Styles    | Building the Styles for the New Blog Icon with a Fixed Position on the Page   | 2025-09-26 |
+| \[X] | 10-146 | Props     | Revisiting Render Props and Passing the Logged In Status to Child Components  | 2025-09-26 |
+| \[X] | 10-147 | Helpers   | Building a Dedicated Icon Helper File in React                                | 2025-09-26 |
+| \[X] | 10-148 | Setup     | Installing Draft JS Dependencies for Rich Text Editing in React               | 2025-09-26 |
+| \[X] | 10-149 | Form      | Rendering Draft JS Form Component and Building Rich Text Editor Styles        | 2025-09-26 |
+| \[X] | 10-150 | Form      | Updating the Blog Form to Handle Rich Text Editor State Changes               | 2025-09-26 |
+| \[X] | 10-151 | Form      | Retrieving HTML Content from Draft JS Component                               | 2025-09-26 |
+| \[X] | 10-152 | Fix       | Fixing Set State on an Unmounted Component Warning in React                   | 2025-09-26 |
+| \[X] | 10-153 | Parser    | Installing React HTML Parser and Generating Sample Content                    | 2025-09-26 |
+| \[X] | 10-154 | Parser    | Parsing HTML in React and Rendering to the Blog Detail Page                   | 2025-09-26 |
+| \[X] | 10-155 | Parser    | Installing Striptags and Truncate Component in React                          | 2025-09-26 |
+| \[X] | 10-156 | Parser    | Removing HTML Tags and Generating Summaries for Blogs                         | 2025-09-26 |
+| \[X] | 10-157 | Upload    | Configuring Dropzone for Blog Featured Image                                  | 2025-09-26 |
+| \[X] | 10-158 | Upload    | Adding the Ability to Upload Featured Images to Blogs                         | 2025-09-26 |
+| \[X] | 10-159 | Styles    | Finalizing the Blog Form Styles                                               | 2025-09-26 |
+| \[X] | 10-160 | Editor    | Customizing the Draft JS Toolbar                                              | 2025-09-26 |
+| \[X] | 10-161 | Media     | Converting Image Files into Base64 Strings                                    | 2025-09-26 |
+| \[X] | 10-162 | Editor    | Positioning Draft JS Icons                                                    | 2025-09-26 |
+| \[X] | 10-163 | Form      | Adding Click Handler to Render the BlogForm Component                         | 2025-09-26 |
+| \[X] | 10-164 | Form      | Passing the Blog Title and Status to the Form to Edit                         | 2025-09-26 |
+| \[X] | 10-165 | Editor    | How to Programmatically Add Content to Draft JS                               | 2025-09-26 |
+| \[X] | 10-166 | Media     | Enabling Dynamic Rendering of the Featured Image in the Blog Form             | 2025-09-26 |
+| \[X] | 10-167 | CRUD      | Deleting Featured Blog Images via API and Updating Parent Component State     | 2025-09-26 |
+| \[X] | 10-168 | API       | Communicating with Blog Update API Endpoint                                   | 2025-09-26 |
+| \[X] | 10-169 | Auth      | Enabling Authorization Rules for Blog Detail Component                        | 2025-09-26 |
+
+
+
+
+|      | #      | Type      | Tittle                                                                        | Date       |
+| ---- | ------ | --------- | ----------------------------------------------------------------------------- | ---------- |
+| \[X] | 10-170 | Styles    | Building About Page Styles for React Portfolio                                | 2025-09-26 |
+| \[X] | 10-171 | Styles    | Building Contact Page Styles for the React Portfolio                          | 2025-09-26 |
+| \[X] | 10-172 | Portfolio | Initial Build Out of the Portfolio Detail Component                           | 2025-09-26 |
+| \[X] | 10-173 | Render    | Rendering the Portfolio Detail Data on the Screen                             | 2025-09-26 |
+| \[X] | 10-174 | Styles    | Portfolio Detail Styles                                                       | 2025-09-26 |
+| \[X] | 10-175 | Feature   | Full Filtering Feature Build Out in React                                     | 2025-09-26 |
+| \[X] | 10-176 | CRUD      | Enabling the Ability to Delete Blog Posts                                     | 2025-09-26 |
+| \[X] | 10-177 | Styles    | Finalizing the Auth Form Styles                                               | 2025-09-26 |
+
+
+|      | #      | Type      | Tittle                                                                        | Date       |
+| ---- | ------ | --------- | ----------------------------------------------------------------------------- | ---------- |
+| \[X] | 10-178 | Deploy    | Heroku Deployment for React JS Applications                                   | 2025-09-26 |
+| \[X] | 10-179 | Interview | Answering Impossible Interview Questions                                      | 2025-09-26 |
+
+
+#### PROJECT FIVE
+
+
+|      | #      | Type      | Tittle                                                                        | Date       |
+| ---- | ------ | --------- | ----------------------------------------------------------------------------- | ---------- |
+| \[X] | 10-200 | Project   | React Project Five Application Overview                                       | 2025-09-26 |
+| \[X] | 10-201 | App       | Generating Daily Smarty UI Application                                        | 2025-09-26 |
+| \[X] | 10-202 | CSS       | CSS Grid Basic Setup for Daily Smarty UI                                      | 2025-09-26 |
+| \[X] | 10-203 | Component | Setting Up A Logo Component                                                   | 2025-09-26 |
+| \[X] | 10-204 | Component | Creating Searchbar and Recent Posts Components                                | 2025-09-26 |
+| \[X] | 10-205 | Redux     | Setting Up Redux Form In the SearchBar Component                              | 2025-09-26 |
+| \[X] | 10-206 | Routes    | Setting Up Daily Smarty UI Routes Using React Router Dom                      | 2025-09-26 |
+| \[X] | 10-207 | Component | Setting Up the Results Component for the Daily Smarty UI                      | 2025-09-26 |
+| \[X] | 10-208 | HOC       | Implementing an HOC Called with Router                                        | 2025-09-26 |
+| \[X] | 10-209 | Redux     | Setting Up Redux Thunk and Connecting the Recent Posts Component to Redux     | 2025-09-26 |
+| \[X] | 10-210 | API       | Utilizing Axios to Perform a GET Request on the Redux Thunk Action Dispatcher | 2025-09-26 |
+| \[X] | 10-211 | Redux     | How to Utilize Redux Dev Tools and Fix the Set Recent Posts Reducer           | 2025-09-26 |
+| \[X] | 10-212 | Redux     | Using the Redux Map State to Props Function in the Recent Posts Component     | 2025-09-26 |
+| \[X] | 10-213 | Component | Creating a Post Component for the Daily Smarty UI                             | 2025-09-26 |
+| \[X] | 10-214 | JS        | Review of the Spread Operator and Rendering Post Associated Topics            | 2025-09-26 |
+| \[X] | 10-215 | Component | Customizing the Logo Component to Take In a Custom Size Prop                  | 2025-09-26 |
+
 
 |      | #      | Type | Tittle               | Date       |
 | ---- | ------ | ---- | -------------------- | ---------- |
 | \[X] | 09-153 |      | Course Checkpoint 18 | 2025-10-03 |
 
+
 |      | #      | Type      | Tittle                                                                                      | Date       |
 | ---- | ------ | --------- | ------------------------------------------------------------------------------------------- | ---------- |
-| \[X] | 10-206 | Component | Modifying the Search Bar Component to Take the OnSubmit Function via Props                  | 2025-09-27 |
-| \[X] | 10-207 | Redux     | Creating the Fetch Posts with Query Action                                                  | 2025-09-27 |
-| \[X] | 10-208 | Component | Setting Up a Results Posts Component                                                        | 2025-09-27 |
-| \[X] | 10-209 | Redux     | Creating a Set Results Posts Type and Reducer                                               | 2025-09-27 |
-| \[X] | 10-210 | Redux     | Mapping State to Props in a Results Posts Component                                         | 2025-09-27 |
-| \[X] | 10-211 | Component | Modifying the Posts Component to Render Different JSX Based on Prop                         | 2025-09-27 |
-| \[X] | 10-212 | Redux     | Modifying the Fetch Posts Process with Query Action Creator to Take in an Optional Callback | 2025-09-27 |
-| \[X] | 10-213 | Animation | Utilizing the React Animate Height NPM Package to Add Hover Animations                      | 2025-09-27 |
-| \[X] | 10-214 | CSS       | CSS Grid Explained for Daily Smarty UI                                                      | 2025-09-27 |
-| \[X] | 10-215 | CSS       | Applying CSS Grid Styles to the Home Component                                              | 2025-09-27 |
-| \[X] | 10-216 | CSS       | Styling the Search Bar Component                                                            | 2025-09-27 |
-| \[X] | 10-217 | CSS       | Fixing CSS Grid Styles for the Daily Smarty UI                                              | 2025-09-27 |
-| \[X] | 10-218 | CSS       | Styling the Recent Post Component                                                           | 2025-09-27 |
-| \[X] | 10-219 | Font      | Adding Font Awesome to the Application                                                      | 2025-09-27 |
-| \[X] | 10-220 | Styles    | Adding Styles to the Results Component                                                      | 2025-09-27 |
-| \[X] | 10-221 | Styles    | Styling the Results Component Search Bar                                                    | 2025-09-27 |
-| \[X] | 10-222 | Styles    | Styling the Results and Result Post Components                                              | 2025-09-27 |
-| \[X] | 10-223 | Styles    | Finishing the Result Post Component Styles                                                  | 2025-09-27 |
-| \[X] | 10-224 | JS        | Using Vanilla JavaScript String Methods to Give Post Links a Title                          | 2025-09-27 |
-| \[X] | 10-225 | JS        | Handling A Few Cases for the Pretty Post Link Names                                         | 2025-09-27 |
-| \[X] | 10-226 | JS        | Adding a Content Display Message to Users When No PostLinks Exist                           | 2025-09-27 |
-| \[X] | 10-227 | Deploy    | Deploying the Daily Smarty UI App to Heroku                                                 | 2025-09-27 |
-| \[X] | 10-228 | CSS       | Making the Home Screen Mobile Responsive with CSS Media Queries                             | 2025-09-27 |
+| \[X] | 10-216 | Component | Modifying the Search Bar Component to Take the OnSubmit Function via Props                  | 2025-09-27 |
+| \[X] | 10-217 | Redux     | Creating the Fetch Posts with Query Action                                                  | 2025-09-27 |
+| \[X] | 10-218 | Component | Setting Up a Results Posts Component                                                        | 2025-09-27 |
+| \[X] | 10-219 | Redux     | Creating a Set Results Posts Type and Reducer                                               | 2025-09-27 |
+| \[X] | 10-220 | Redux     | Mapping State to Props in a Results Posts Component                                         | 2025-09-27 |
+| \[X] | 10-221 | Component | Modifying the Posts Component to Render Different JSX Based on Prop                         | 2025-09-27 |
+| \[X] | 10-222 | Redux     | Modifying the Fetch Posts Process with Query Action Creator to Take in an Optional Callback | 2025-09-27 |
+| \[X] | 10-223 | Animation | Utilizing the React Animate Height NPM Package to Add Hover Animations                      | 2025-09-27 |
+| \[X] | 10-224 | CSS       | CSS Grid Explained for Daily Smarty UI                                                      | 2025-09-27 |
+| \[X] | 10-225 | CSS       | Applying CSS Grid Styles to the Home Component                                              | 2025-09-27 |
+| \[X] | 10-226 | CSS       | Styling the Search Bar Component                                                            | 2025-09-27 |
+| \[X] | 10-227 | CSS       | Fixing CSS Grid Styles for the Daily Smarty UI                                              | 2025-09-27 |
+| \[X] | 10-228 | CSS       | Styling the Recent Post Component                                                           | 2025-09-27 |
+| \[X] | 10-229 | Font      | Adding Font Awesome to the Application                                                      | 2025-09-27 |
+| \[X] | 10-230 | Styles    | Adding Styles to the Results Component                                                      | 2025-09-27 |
+| \[X] | 10-231 | Styles    | Styling the Results Component Search Bar                                                    | 2025-09-27 |
+| \[X] | 10-232 | Styles    | Styling the Results and Result Post Components                                              | 2025-09-27 |
+| \[X] | 10-233 | Styles    | Finishing the Result Post Component Styles                                                  | 2025-09-27 |
+| \[X] | 10-234 | JS        | Using Vanilla JavaScript String Methods to Give Post Links a Title                          | 2025-09-27 |
+| \[X] | 10-235 | JS        | Handling A Few Cases for the Pretty Post Link Names                                         | 2025-09-27 |
+| \[X] | 10-236 | JS        | Adding a Content Display Message to Users When No PostLinks Exist                           | 2025-09-27 |
+| \[X] | 10-237 | Deploy    | Deploying the Daily Smarty UI App to Heroku                                                 | 2025-09-27 |
+| \[X] | 10-238 | CSS       | Making the Home Screen Mobile Responsive with CSS Media Queries                             | 2025-09-27 |
+
 
 ### MODULE 10 Part 2: SQL
 
@@ -1095,10 +1117,9 @@
 
 |      | #      | Type | Tittle                                            | Date       |
 | ---- | ------ | ---- | ------------------------------------------------- | ---------- |
-| \[X] | 10-500 | SQL  | Introduction to SQL Databases                     | 2025-09-27 |
-| \[X] | 10-501 | SQL  | Differences Between Popular SQL Implementations   | 2025-09-28 |
-| \[X] | 10-502 | SQL  | Installing MySQL on a Mac                         | 2025-09-28 |
-| \[X] | 10-503 | SQL  | How to Install MySQL Workbench on a Mac           | 2025-09-28 |
+| \[X] | 10-501 | SQL  | Introduction to SQL Databases                     | 2025-09-27 |
+| \[X] | 10-502 | SQL  | Differences Between Popular SQL Implementations   | 2025-09-28 |
+| \[X] | 10-503 | SQL  | Installing MySQL / MariaDB on a Mac                         | 2025-09-28 |
 | \[X] | 10-504 | SQL  | Creating a Database Schema in MySQL Workbench     | 2025-09-28 |
 | \[X] | 10-505 | SQL  | How to Create a Table in MySQL                    | 2025-09-28 |
 | \[X] | 10-506 | SQL  | How to Create a Table with a Foreign Key in MySQL | 2025-09-28 |
@@ -1106,59 +1127,59 @@
 | \[X] | 10-508 | SQL  | How to Add New Columns to a Table in MySQL        | 2025-09-28 |
 | \[X] | 10-509 | SQL  | Deep Dive: SQL Data Types                         | 2025-09-28 |
 
+
 |      | #      | Type | Tittle               | Date       |
 | ---- | ------ | ---- | -------------------- | ---------- |
-| \[X] | 10-510 | SQL  | Course Checkpoint 20 | 2025-10-03 |
+| \[X] | 10-509b | SQL  | Course Checkpoint 20 | 2025-10-03 |
 
 ***
 
 ## MODULE 11
 
 #### SQL: CRUD & Project
-
 |      | #      | Type | Tittle                                                                                        | Date       |
 | ---- | ------ | ---- | --------------------------------------------------------------------------------------------- | ---------- |
-| \[X] | 11-511 | CRUD | CRUD Section Introduction                                                                     | 2025-09-28 |
-| \[X] | 11-512 | SQL  | Guide to Adding Records to a MySQL Database                                                   | 2025-09-28 |
-| \[X] | 11-513 | SQL  | How to Query for All Records in a SQL Database                                                | 2025-09-28 |
-| \[X] | 11-514 | SQL  | How to Filter SQL Queries with the: 'where', 'and', 'or' Commands                             | 2025-09-28 |
-| \[X] | 11-515 | SQL  | Using Limit and Offset in a SQL Query                                                         | 2025-09-28 |
-| \[X] | 11-516 | SQL  | How to Update Records in SQL with the UPDATE Command                                          | 2025-09-29 |
-| \[X] | 11-517 | SQL  | Using BEGIN and ROLLBACK to Revert Queries in MySQL                                           | 2025-09-29 |
-| \[X] | 11-518 | SQL  | How to Query for Unique Values in a SQL Database                                              | 2025-09-29 |
-| \[X] | 11-519 | SQL  | How to Use ORDER BY and CAST in MySQL                                                         | 2025-09-29 |
-| \[X] | 11-520 | SQL  | Guide to Deleting Records from a SQL Database                                                 | 2025-09-29 |
-| \[X] | 11-521 | SQL  | Introduction to Advanced SQL Queries                                                          | 2025-09-29 |
-| \[X] | 11-522 | SQL  | How to Run a SQL Query Using Ranges                                                           | 2025-09-30 |
-| \[X] | 11-523 | SQL  | Guide to Wildcard Queries in MySQL                                                            | 2025-09-30 |
-| \[X] | 11-524 | SQL  | Writing Cleaner SQL Code with the WHERE/IN Command                                            | 2025-09-30 |
-| \[X] | 11-525 | SQL  | Introduction to SQL Subqueries                                                                | 2025-09-30 |
-| \[X] | 11-526 | SQL  | Additional Examples of SQL Subqueries                                                         | 2025-10-01 |
-| \[X] | 11-527 | SQL  | How to Use SQL Subqueries for Insert Statements                                               | 2025-10-01 |
-| \[X] | 11-528 | SQL  | Introduction to SQL Functions                                                                 | 2025-10-01 |
-| \[X] | 11-529 | SQL  | How to Change the Data Type of a Column from String to Decimal for Financial Data in SQL      | 2025-10-01 |
-| \[X] | 11-530 | SQL  | How to Use the: MIN, MAX, SUM, AVG, and COUNT Functions in SQL                                | 2025-10-01 |
-| \[X] | 11-531 | SQL  | How to Generate Summary Reports in SQL with GROUP BY and Aggregate Functions                  | 2025-10-01 |
-| \[X] | 11-532 | SQL  | Syntax for Adding Comments to a SQL Script                                                    | 2025-10-01 |
-| \[X] | 11-533 | SQL  | How to Turn Safe Mode Off in MySQL                                                            | 2025-10-01 |
-| \[X] | 11-534 | SQL  | How to Add a New Column in SQL and Fill It with Randomized Sample Data                        | 2025-10-01 |
-| \[X] | 11-535 | SQL  | How to Implement Calculated Fields in SQL                                                     | 2025-10-01 |
-| \[X] | 11-536 | SQL  | Adding Custom Row and Cell Names in SQL                                                       | 2025-10-01 |
-| \[X] | 11-537 | SQL  | Introduction to Control Flow in SQL                                                           | 2025-10-01 |
-| \[X] | 11-538 | SQL  | Defining Aliases in SQL Queries and Exporting Data to CSV                                     | 2025-10-01 |
-| \[X] | 11-539 | SQL  | How to Alias Table Names in SQL                                                               | 2025-10-01 |
-| \[X] | 11-540 | SQL  | How to Use Case Statements in SQL Queries to Implement Conditional Logic                      | 2025-10-01 |
-| \[X] | 11-541 | SQL  | Introduction to Relational Queries in SQL                                                     | 2025-10-01 |
-| \[X] | 11-542 | SQL  | Guide to SQL Inner Joins                                                                      | 2025-10-01 |
-| \[X] | 11-543 | SQL  | How to Add Multiple Conditionals to an Inner Join Query in SQL                                | 2025-10-01 |
-| \[X] | 11-544 | SQL  | How to Join 3 Tables Together with an Inner Join in SQL                                       | 2025-10-01 |
-| \[X] | 11-545 | SQL  | Inner vs Outer Joins in SQL                                                                   | 2025-10-01 |
-| \[X] | 11-546 | SQL  | How to Build a Summary Report of Data from 3 Tables in SQL                                    | 2025-10-01 |
-| \[X] | 11-547 | SQL  | Introduction to Advanced SQL Topics                                                           | 2025-10-01 |
-| \[X] | 11-548 | SQL  | Guide to Understanding and Working with SQL Indexes                                           | 2025-10-01 |
-| \[X] | 11-549 | SQL  | SQL Database Normalization Techniques                                                         | 2025-10-01 |
-| \[X] | 11-550 | SQL  | How to Work with EER Diagrams in SQL in Order to Model Database Tables and Data Relationships | 2025-10-01 |
-| \[X] | 11-551 | SQL  | Project Requirements for SQL Course                                                           | 2025-10-01 |
+| \[X] | 11-510 | CRUD | CRUD Section Introduction                                                                     | 2025-09-28 |
+| \[X] | 11-511 | SQL  | Guide to Adding Records to a MySQL Database                                                   | 2025-09-28 |
+| \[X] | 11-512 | SQL  | How to Query for All Records in a SQL Database                                                | 2025-09-28 |
+| \[X] | 11-513 | SQL  | How to Filter SQL Queries with the: 'where', 'and', 'or' Commands                             | 2025-09-28 |
+| \[X] | 11-514 | SQL  | Using Limit and Offset in a SQL Query                                                         | 2025-09-28 |
+| \[X] | 11-515 | SQL  | How to Update Records in SQL with the UPDATE Command                                          | 2025-09-29 |
+| \[X] | 11-516 | SQL  | Using BEGIN and ROLLBACK to Revert Queries in MySQL                                           | 2025-09-29 |
+| \[X] | 11-517 | SQL  | How to Query for Unique Values in a SQL Database                                              | 2025-09-29 |
+| \[X] | 11-518 | SQL  | How to Use ORDER BY and CAST in MySQL                                                         | 2025-09-29 |
+| \[X] | 11-519 | SQL  | Guide to Deleting Records from a SQL Database                                                 | 2025-09-29 |
+| \[X] | 11-520 | SQL  | Introduction to Advanced SQL Queries                                                          | 2025-09-29 |
+| \[X] | 11-521 | SQL  | How to Run a SQL Query Using Ranges                                                           | 2025-09-30 |
+| \[X] | 11-522 | SQL  | Guide to Wildcard Queries in MySQL                                                            | 2025-09-30 |
+| \[X] | 11-523 | SQL  | Writing Cleaner SQL Code with the WHERE/IN Command                                            | 2025-09-30 |
+| \[X] | 11-524 | SQL  | Introduction to SQL Subqueries                                                                | 2025-09-30 |
+| \[X] | 11-525 | SQL  | Additional Examples of SQL Subqueries                                                         | 2025-10-01 |
+| \[X] | 11-526 | SQL  | How to Use SQL Subqueries for Insert Statements                                               | 2025-10-01 |
+| \[X] | 11-527 | SQL  | Introduction to SQL Functions                                                                 | 2025-10-01 |
+| \[X] | 11-528 | SQL  | How to Change the Data Type of a Column from String to Decimal for Financial Data in SQL      | 2025-10-01 |
+| \[X] | 11-529 | SQL  | How to Use the: MIN, MAX, SUM, AVG, and COUNT Functions in SQL                                | 2025-10-01 |
+| \[X] | 11-530 | SQL  | How to Generate Summary Reports in SQL with GROUP BY and Aggregate Functions                  | 2025-10-01 |
+| \[X] | 11-531 | SQL  | Syntax for Adding Comments to a SQL Script                                                    | 2025-10-01 |
+| \[X] | 11-532 | SQL  | How to Turn Safe Mode Off in MySQL                                                            | 2025-10-01 |
+| \[X] | 11-533 | SQL  | How to Add a New Column in SQL and Fill It with Randomized Sample Data                        | 2025-10-01 |
+| \[X] | 11-534 | SQL  | How to Implement Calculated Fields in SQL                                                     | 2025-10-01 |
+| \[X] | 11-535 | SQL  | Adding Custom Row and Cell Names in SQL                                                       | 2025-10-01 |
+| \[X] | 11-536 | SQL  | Introduction to Control Flow in SQL                                                           | 2025-10-01 |
+| \[X] | 11-537 | SQL  | Defining Aliases in SQL Queries and Exporting Data to CSV                                     | 2025-10-01 |
+| \[X] | 11-538 | SQL  | How to Alias Table Names in SQL                                                               | 2025-10-01 |
+| \[X] | 11-539 | SQL  | How to Use Case Statements in SQL Queries to Implement Conditional Logic                      | 2025-10-01 |
+| \[X] | 11-540 | SQL  | Introduction to Relational Queries in SQL                                                     | 2025-10-01 |
+| \[X] | 11-541 | SQL  | Guide to SQL Inner Joins                                                                      | 2025-10-01 |
+| \[X] | 11-542 | SQL  | How to Add Multiple Conditionals to an Inner Join Query in SQL                                | 2025-10-01 |
+| \[X] | 11-543 | SQL  | How to Join 3 Tables Together with an Inner Join in SQL                                       | 2025-10-01 |
+| \[X] | 11-544 | SQL  | Inner vs Outer Joins in SQL                                                                   | 2025-10-01 |
+| \[X] | 11-545 | SQL  | How to Build a Summary Report of Data from 3 Tables in SQL                                    | 2025-10-01 |
+| \[X] | 11-546 | SQL  | Introduction to Advanced SQL Topics                                                           | 2025-10-01 |
+| \[X] | 11-547 | SQL  | Guide to Understanding and Working with SQL Indexes                                           | 2025-10-01 |
+| \[X] | 11-548 | SQL  | SQL Database Normalization Techniques                                                         | 2025-10-01 |
+| \[X] | 11-549 | SQL  | How to Work with EER Diagrams in SQL in Order to Model Database Tables and Data Relationships | 2025-10-01 |
+| \[X] | 11-550 | SQL  | Project Requirements for SQL Course                                                           | 2025-10-01 |
 
 #### REDIS
 
