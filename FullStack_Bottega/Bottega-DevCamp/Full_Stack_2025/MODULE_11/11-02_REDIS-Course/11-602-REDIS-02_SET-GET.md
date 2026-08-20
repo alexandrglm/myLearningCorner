@@ -10,7 +10,7 @@ In this section of the course, we're going to walk through some of the most comm
 
 In this guide specifically, we are going to go through two of the most introductory and common types of commands that you're going to run into when using `redis` and that is `set` and `get`. And so the way that we can do this is we use the word set. And as you may notice that is going to give you a set of items that are going to give you a key value, then you also have a few other optional values but we are not going to get into those right now.
 
-![large](../../../../../.gitbook/assets/11-602_IMG1.png)
+![large](./11-602_IMG1.png)
 
 They deal with expiring when you would want this key to expire if you're using this for say caching or something like that. For right now we're simply going to use the key and value. The way that you can tell if it is required or if it's optional is if it's in brackets. That means that these are optional and you can see that you also have the ability to combine them with a pipe.
 

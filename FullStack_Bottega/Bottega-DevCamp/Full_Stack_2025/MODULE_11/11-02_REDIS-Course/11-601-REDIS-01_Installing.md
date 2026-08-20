@@ -10,7 +10,7 @@ In this guide, we're going to talk about how we can install Redis on a Mac and h
 
 If you do not already have homebrew installed then you can go to [brew.sh](../../../../../inProgress/Basque-DevCamp/Full_Stack_2025/MODULE_11/11-02_REDIS-Course/brew.sh) and simply get this line of code right here and then open up your terminal and then paste it in.
 
-![large](../../../../../.gitbook/assets/11-600_IMG1.png)
+![large](./11-600_IMG1.png)
 
 I'm going to switch to the terminal. You would paste it in the terminal, and it would install the homebrew dependency management system.
 
@@ -30,7 +30,7 @@ redis-server
 
 and then you should see something similar to this.
 
-![large](../../../../../.gitbook/assets/11-600_IMG2.png)
+![large](./11-600_IMG2.png)
 
 and what that means is that `redis` is up and running. You can tell at the bottom where it says the server is now ready to accept connections on port 6379. And if you hit `command t` this will open up a new tab in your `terminal`.
 
@@ -44,7 +44,7 @@ And then it's going to open up a Redis session for me.
 
 And now we can run all of our code. If you see these numbers this IP address, followed by the port 6379
 
-![large](../../../../../.gitbook/assets/11-600_IMG3.png)
+![large](./11-600_IMG3.png)
 
 What this is doing, is it's telling us that we have the local connection up and running and the port that the same one that was mentioned earlier. This is now where it's running so everything is working. Now, if you are following along and that all worked, you are ready to get started with the course.
 

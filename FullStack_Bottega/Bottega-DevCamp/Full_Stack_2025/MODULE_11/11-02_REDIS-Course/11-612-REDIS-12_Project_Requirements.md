@@ -14,7 +14,7 @@ Whatever language is your specialty. That's what I want you to build this in. Th
 
 Now what I'm going to show is a redis link shortener and so that is going to be what you're going to build in this project.
 
-![large](../../../../../.gitbook/assets/11-612_IMG1.png)
+![large](./11-612_IMG1.png)
 
 And so it's going to be very basic from a core functionality perspective. You're going to have a spot where you can type in a URL and then have it shortened.
 
@@ -22,11 +22,11 @@ If I go and say copy this URL from dailysmarty and paste it in and click shorten
 
 Right here we have a link, if I click on this you can see that now it takes me to the correct URL so that is working properly.
 
-![large](../../../../../.gitbook/assets/11-612_IMG2.png)
+![large](./11-612_IMG2.png)
 
 If I come back and I get anotherURL and paste in the Wall Street Journal it creates an other URL and if I click on it it takes me to the Wall Street Journal. Now also if you go top to the right hand side where it says all links. This has all of the links that have been shortened.
 
-![large](../../../../../.gitbook/assets/11-612_IMG3.png)
+![large](./11-612_IMG3.png)
 
 This is a pretty light weight kind of application. We are only going to have really two pages, you're going to have just this regular index page and then the page that shows all of the links and I don't care about how it looks and I don't care what language or framework you use. The entire point of this project is learning how to build something completely in redis.
 
