@@ -1,0 +1,286 @@
+﻿WEBVTT
+
+1
+00:00:01.030 --> 00:00:03.660
+<v ->Ahora que hemos pasado por un resumen completo de Scss,</v>
+
+2
+00:00:03.660 --> 00:00:06.740
+y también atravesamos el paso de pre-procesador
+
+3
+00:00:06.740 --> 00:00:09.600
+para que puedas ver qué código se escribió,
+
+4
+00:00:09.600 --> 00:00:12.060
+y luego puedes ver como se tradujo
+
+5
+00:00:12.060 --> 00:00:14.600
+en algo que el navegador podría entender,
+
+6
+00:00:14.600 --> 00:00:16.770
+quiero tomar un apartado rápido
+
+7
+00:00:16.770 --> 00:00:19.330
+Hay algo que puede ser un poco confuso,
+
+8
+00:00:19.330 --> 00:00:21.788
+ya sea en algún tipo de configuración
+
+9
+00:00:21.788 --> 00:00:24.097
+de entrevista de codificación
+
+10
+00:00:24.097 --> 00:00:26.620
+o simplemente en general mientras lees la documentación,
+
+11
+00:00:26.620 --> 00:00:28.590
+Y es que en realidad hay
+
+12
+00:00:28.590 --> 00:00:31.560
+dos tipos diferentes de sintaxis de Scss,
+
+13
+00:00:31.560 --> 00:00:35.600
+hay Sass que se deletrea S-A-S-S,
+
+14
+00:00:35.600 --> 00:00:39.800
+y luego está el Scss que se deletrea S-C-S-S.
+
+15
+00:00:39.800 --> 00:00:42.100
+Ahora, técnicamente, los dos se llaman Sass,
+
+16
+00:00:42.100 --> 00:00:45.890
+lo que hace que algún tipo de componente sea confuso
+
+17
+00:00:45.890 --> 00:00:48.180
+cuando empiezas a aprenderlo,
+
+18
+00:00:48.180 --> 00:00:50.730
+Y así este vídeo simplemente va a discutir
+
+19
+00:00:50.730 --> 00:00:52.720
+algunas de las diferencias sutiles,
+
+20
+00:00:52.720 --> 00:00:55.220
+y luego también voy a hablar,
+
+21
+00:00:55.220 --> 00:00:58.560
+de lo que vamos a repasar en todo el curso.
+
+22
+00:00:58.560 --> 00:01:01.600
+Sass con S-A-S-S
+
+23
+00:01:01.600 --> 00:01:04.800
+fue la versión original de Sass.
+
+24
+00:01:04.800 --> 00:01:07.930
+No se parece en nada a CSS,
+
+25
+00:01:07.930 --> 00:01:11.040
+se preocupa por cosas como la sangría,
+
+26
+00:01:11.040 --> 00:01:13.540
+todo su código tiene que ser segmentado,
+
+27
+00:01:13.540 --> 00:01:15.830
+tiene que tener el número correcto de espacios,
+
+28
+00:01:15.830 --> 00:01:20.230
+justo en frente de cada conjunto de definiciones de estilo.
+
+29
+00:01:20.230 --> 00:01:23.730
+No tiene llaves, tiene signos más.
+
+30
+00:01:23.730 --> 00:01:26.130
+e iguala signos en todo el lugar.
+
+31
+00:01:26.130 --> 00:01:29.630
+Si alguna vez has trabajado con HAML o Slim,
+
+32
+00:01:29.630 --> 00:01:31.855
+es posible que notes que se ve muy similar
+
+33
+00:01:31.855 --> 00:01:34.300
+a ese tipo de configuración.
+
+34
+00:01:34.300 --> 00:01:37.050
+Y eso está bien, pero no ves mucho
+
+35
+00:01:37.050 --> 00:01:40.300
+puro Sass así escrito.
+
+36
+00:01:40.300 --> 00:01:43.100
+Lo que ves sobre todo es gente que usa la sintaxis.
+
+37
+00:01:43.100 --> 00:01:46.750
+S-C-S-S, y eso es lo que vamos a usar
+
+38
+00:01:46.750 --> 00:01:51.310
+en todo este curso, principalmente porque es lo que se usa
+
+39
+00:01:51.310 --> 00:01:53.693
+en la industria para todos los proyectos en los
+
+40
+00:01:53.693 --> 00:01:54.810
+que he trabajado,
+
+41
+00:01:55.730 --> 00:01:58.840
+y es un patrón bastante común a seguir.
+
+42
+00:01:58.840 --> 00:02:02.810
+Parte de la razón por la cual la sintaxis S-C-S-S
+
+43
+00:02:02.810 --> 00:02:05.780
+realmente se ha apoderado, y esa es la única
+
+44
+00:02:05.780 --> 00:02:10.780
+que la mayoría de la gente utiliza, es exactamente como CSS,
+
+45
+00:02:11.190 --> 00:02:14.500
+así que tiene llaves, se usa punto y coma.
+
+46
+00:02:14.500 --> 00:02:16.950
+al final de cada definición de estilo,
+
+47
+00:02:16.950 --> 00:02:18.840
+y por eso es mucho más familiar,
+
+48
+00:02:18.840 --> 00:02:22.960
+y la curva de aprendizaje también es mucho más baja.
+
+49
+00:02:22.960 --> 00:02:24.840
+No te importa tener que asegurarte
+
+50
+00:02:24.840 --> 00:02:26.870
+de que la muesca sea perfecta
+
+51
+00:02:26.870 --> 00:02:29.330
+o vas a obtener algún tipo de error de sintaxis.
+
+52
+00:02:29.330 --> 00:02:32.660
+Es mucho más amigable para los principiantes,
+
+53
+00:02:32.660 --> 00:02:37.660
+y también, si quieres escribir solo código CSS puro,
+
+54
+00:02:37.800 --> 00:02:41.240
+un archivo S-C-S-S todavía lo procesará,
+
+55
+00:02:41.240 --> 00:02:44.220
+donde la versión original de Sass
+
+56
+00:02:44.220 --> 00:02:46.030
+en realidad tiraría un error,
+
+57
+00:02:46.030 --> 00:02:48.630
+así que solo quería hacer un apartado rápido,
+
+58
+00:02:48.630 --> 00:02:51.870
+porque mientras investigas esto por tu cuenta,
+
+59
+00:02:51.870 --> 00:02:54.970
+vas a encontrarte con ambas opciones de sintaxis,
+
+60
+00:02:54.970 --> 00:02:57.820
+y muchas veces, cuando haces una pregunta en Google,
+
+61
+00:02:57.820 --> 00:03:01.420
+vas a ver la versión original de Sass,
+
+62
+00:03:01.420 --> 00:03:05.300
+el tipo S-A-S-S de Sass, y podría verse
+
+63
+00:03:05.300 --> 00:03:08.600
+un poco confuso, entonces, quería dejarlo claro
+
+64
+00:03:08.600 --> 00:03:11.030
+desde el primer momento, vamos a usar
+
+65
+00:03:11.030 --> 00:03:15.280
+la versión compatible con la industria, que es S-C-S-S.
+
+66
+00:03:15.280 --> 00:03:17.900
+Si trabajas en Rails, eso es lo que verás
+
+67
+00:03:17.900 --> 00:03:20.010
+casi a diario cuando se trata
+
+68
+00:03:20.010 --> 00:03:23.070
+de hacer tus estilos, y si lo estás agregando
+
+69
+00:03:23.070 --> 00:03:25.270
+a, como, como vamos a hacer,
+
+70
+00:03:25.270 --> 00:03:28.210
+usando CodePen donde quieras verlo todo en el navegador,
+
+71
+00:03:28.210 --> 00:03:30.360
+esa es la forma más común de hacerlo.
+

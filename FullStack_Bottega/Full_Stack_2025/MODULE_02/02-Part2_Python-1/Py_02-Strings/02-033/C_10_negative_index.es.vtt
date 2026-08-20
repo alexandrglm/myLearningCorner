@@ -1,0 +1,203 @@
+WEBVTT
+
+1
+00:00:00.433 --> 00:00:02.730
+<v Jordan>Hasta ahora</v>
+en esta sección sobre cadenas,
+
+2
+00:00:02.730 --> 00:00:06.280
+donde hemos hablado sobre
+un índice para una cadena,
+
+3
+00:00:06.280 --> 00:00:10.110
+hablamos sobre valores de índice positivos.
+
+4
+00:00:10.110 --> 00:00:14.410
+Revisamos: el primer valor aquí es cero,
+
+5
+00:00:14.410 --> 00:00:18.080
+el siguiente es uno y van subiendo
+
+6
+00:00:18.080 --> 00:00:20.120
+en valores sucesivos.
+
+7
+00:00:20.120 --> 00:00:23.550
+Sin embargo, si queremos llegar atrás de todo
+
+8
+00:00:23.550 --> 00:00:26.170
+y queremos trabajar hacia atrás,
+
+9
+00:00:26.170 --> 00:00:29.480
+entonces podemos trabajar con valores de índice negativos.
+
+10
+00:00:29.480 --> 00:00:32.780
+Y sobre eso se tratará esta guía.
+
+11
+00:00:32.780 --> 00:00:35.450
+Digamos que simplemente queremos agarrar
+
+12
+00:00:35.450 --> 00:00:38.400
+el último caracter de esta cadena.
+
+13
+00:00:38.400 --> 00:00:42.290
+Si venimos aquí, a "sentence",
+
+14
+00:00:42.290 --> 00:00:45.160
+podemos agarrar
+una porción de la oración
+
+15
+00:00:45.160 --> 00:00:48.660
+simplemente introduciendo una negativa.
+
+16
+00:00:48.660 --> 00:00:50.322
+Si ahora imprimo esto,
+
+17
+00:00:50.322 --> 00:00:53.110
+verán que allí tiene el punto.
+
+18
+00:00:53.110 --> 00:00:56.400
+Y si quiero retroceder aún más,
+
+19
+00:00:56.400 --> 00:00:59.230
+puedo escribir "-3"
+
+20
+00:00:59.230 --> 00:01:03.100
+y así imprimirá la "o" de "dog".
+
+21
+00:01:03.100 --> 00:01:04.750
+Y podríamos seguir
+
+22
+00:01:04.750 --> 00:01:09.620
+y agarrar nuestros valores
+en este índice negativo así.
+
+23
+00:01:09.620 --> 00:01:12.300
+Esto es útil, pero solo nos permitirá
+
+24
+00:01:12.300 --> 00:01:14.830
+agarrar un solo valor.
+
+25
+00:01:14.830 --> 00:01:19.610
+Y ¿si quisiéramos agarrar
+la última palabra de aquí?
+
+26
+00:01:19.610 --> 00:01:23.007
+Y digamos que conocemos
+
+27
+00:01:23.007 --> 00:01:26.050
+todas las últimas palabras de esta sentencia,
+
+28
+00:01:26.050 --> 00:01:29.510
+o lo que tenemos aquí
+y con lo que debemos trabajar,
+
+29
+00:01:29.510 --> 00:01:33.130
+contendrán cuatro caracteres.
+
+30
+00:01:33.130 --> 00:01:36.370
+Lo que podemos hacer es seguir trabajando con nuestro rango.
+
+31
+00:01:36.370 --> 00:01:40.070
+Entonces, podemos escribir "-4:"
+
+32
+00:01:40.070 --> 00:01:42.260
+y luego dejar el resto en blanco.
+
+33
+00:01:42.260 --> 00:01:46.200
+Y quería incluir esta guía en el curso
+
+34
+00:01:46.200 --> 00:01:48.890
+porque quería recordarles un poco
+
+35
+00:01:48.890 --> 00:01:50.630
+cómo trabajar con rangos,
+
+36
+00:01:50.630 --> 00:01:53.340
+porque este será un tema muy importante
+
+37
+00:01:53.340 --> 00:01:55.631
+cuando tratemos
+con aprendizaje automatizado
+
+38
+00:01:55.631 --> 00:01:57.670
+y conceptos así.
+
+39
+00:01:57.670 --> 00:02:01.490
+Y si recuerdan,
+siempre que introducimos ":"
+
+40
+00:02:01.490 --> 00:02:05.620
+y dejamos el resto
+del argumento en blanco,
+
+41
+00:02:05.620 --> 00:02:08.650
+entonces irá
+hasta el final de la cadena.
+
+42
+00:02:08.650 --> 00:02:10.320
+Si esto funciona,
+
+43
+00:02:10.320 --> 00:02:14.303
+debería mostrar "dog"
+con el punto en el final.
+
+44
+00:02:15.270 --> 00:02:19.170
+Después de ejecutarlo,
+ven que es exactamente así.
+
+45
+00:02:19.170 --> 00:02:22.300
+En resumen,
+así es como podemos trabajar
+
+46
+00:02:22.300 --> 00:02:24.333
+con índices negativos
+
+47
+00:02:24.333 --> 00:02:26.533
+dentro de una cadena en Python.
+

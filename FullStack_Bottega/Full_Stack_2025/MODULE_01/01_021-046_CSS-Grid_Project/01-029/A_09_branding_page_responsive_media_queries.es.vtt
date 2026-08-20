@@ -1,0 +1,526 @@
+WEBVTT
+
+1
+00:00:00.980 --> 00:00:03.050
+<v Instructor>En esta guía, tomaremos</v>
+
+2
+00:00:03.050 --> 00:00:04.780
+nuestra página de cuadrícula de CSS,
+
+3
+00:00:04.780 --> 00:00:07.950
+nuestra página de pautas de marca y haremos que sea
+
+4
+00:00:07.950 --> 00:00:11.540
+receptiva para que funcione bien en los teléfonos móviles.
+
+5
+00:00:11.540 --> 00:00:14.970
+Y vamos a ver cómo podemos aprovechar las consultas
+
+6
+00:00:14.970 --> 00:00:19.710
+de los medios, combinar eso con las llamadas actualizadas
+
+7
+00:00:19.710 --> 00:00:22.080
+a la cuadrícula de CSS para implementar eso.
+
+8
+00:00:22.080 --> 00:00:24.430
+Y aquí mismo puedes ver que estoy en la página
+
+9
+00:00:24.430 --> 00:00:25.522
+real de DailySmarty.
+
+10
+00:00:25.522 --> 00:00:28.850
+Esto es lo que vamos a implementar donde tenemos nuestro
+
+11
+00:00:28.850 --> 00:00:33.850
+contenido y luego, como pueden ver en nuestra página,
+
+12
+00:00:35.230 --> 00:00:39.050
+ahora tenemos nuestro estilo habitual.
+
+13
+00:00:39.050 --> 00:00:42.540
+Entonces, aunque esto se reduce en un dispositivo móvil,
+
+14
+00:00:42.540 --> 00:00:47.240
+todavía tenemos todo alineado a la derecha y tenemos
+
+15
+00:00:47.240 --> 00:00:49.300
+la imagen justo al lado.
+
+16
+00:00:49.300 --> 00:00:52.460
+Lo que quiero hacer es realmente cambiarlo para que
+
+17
+00:00:52.460 --> 00:00:57.460
+todo ese contenido se alinee en el centro y luego aquí
+
+18
+00:00:57.620 --> 00:00:59.170
+tenemos la imagen debajo de eso.
+
+19
+00:00:59.170 --> 00:01:02.650
+Creo que es mucho más fácil de ver para la gente.
+
+20
+00:01:02.650 --> 00:01:06.430
+Moviéndonos hacia abajo, tenemos nuestras viñetas que ya no
+
+21
+00:01:06.430 --> 00:01:09.421
+están una al lado de la otra, por lo que no están
+
+22
+00:01:09.421 --> 00:01:11.028
+en sus propias columnas.
+
+23
+00:01:11.028 --> 00:01:12.953
+Y lo mismo para las imágenes.
+
+24
+00:01:12.953 --> 00:01:15.403
+Y siéntase libre de jugar con los tamaños de imagen
+
+25
+00:01:15.403 --> 00:01:16.236
+que desees.
+
+26
+00:01:16.236 --> 00:01:19.350
+Lo que le mostraré le permitirá personalizar esto como
+
+27
+00:01:19.350 --> 00:01:21.620
+desees personalmente.
+
+28
+00:01:21.620 --> 00:01:25.070
+Así es como lo hicimos con DailySmarty.
+
+29
+00:01:25.070 --> 00:01:26.510
+Creo que esto se ve bien.
+
+30
+00:01:26.510 --> 00:01:30.320
+Pongámonos de moda y creo
+
+31
+00:01:30.320 --> 00:01:33.970
+que te sorprenderás de lo fácil que es usar una cuadrícula
+
+32
+00:01:33.970 --> 00:01:38.750
+CSS para incorporar componentes móviles sensibles.
+
+33
+00:01:38.750 --> 00:01:40.710
+Entonces, bajemos aquí.
+
+34
+00:01:40.710 --> 00:01:43.870
+Este es el fondo de nuestros estilos incrustados.
+
+35
+00:01:43.870 --> 00:01:46.230
+Voy a decir los medios de comunicación.
+
+36
+00:01:46.230 --> 00:01:49.363
+Así que vamos a configurar una consulta de medios
+
+37
+00:01:49.363 --> 00:01:50.670
+y luego digamos ancho máximo.
+
+38
+00:01:50.670 --> 00:01:54.449
+Y para esto voy a ir con 48m.
+
+39
+00:01:54.449 --> 00:01:58.180
+Así que solo vamos a tener nuestro máximo ancho
+
+40
+00:01:58.180 --> 00:02:01.180
+y capacidad de respuesta para dispositivos
+
+41
+00:02:01.180 --> 00:02:02.713
+de tipo smartphone.
+
+42
+00:02:02.713 --> 00:02:05.940
+Entonces, todo lo que está dentro de aquí, si tus consultas
+
+43
+00:02:05.940 --> 00:02:08.990
+de medios están un poco oxidadas, todo lo que agregamos
+
+44
+00:02:08.990 --> 00:02:13.800
+aquí solo se aplicará cuando la pantalla tenga
+
+45
+00:02:13.800 --> 00:02:14.940
+el tamaño que tiene ahora.
+
+46
+00:02:14.940 --> 00:02:18.324
+Cuando está alrededor del mismo tamaño que
+
+47
+00:02:18.324 --> 00:02:19.157
+un teléfono inteligente.
+
+48
+00:02:19.157 --> 00:02:19.990
+Así que lo primero que quiero hacer
+
+49
+00:02:19.990 --> 00:02:24.150
+es agarrar esos detalles de estilo.
+
+50
+00:02:24.150 --> 00:02:26.870
+Así que si recuerdas, los detalles de estilo
+
+51
+00:02:26.870 --> 00:02:29.314
+es nuestro contenedor de cuadrícula aquí.
+
+52
+00:02:29.314 --> 00:02:34.280
+Ahora mismo estamos usando dos columnas, pero lo que quiero
+
+53
+00:02:34.280 --> 00:02:39.280
+hacer es decir detalles de estilo y cambiar
+
+54
+00:02:40.920 --> 00:02:43.163
+las columnas de la plantilla de cuadrícula a solo 1fr.
+
+55
+00:02:44.220 --> 00:02:49.220
+Y luego quiero agregar un poco de espacio en la cuadrícula
+
+56
+00:02:49.651 --> 00:02:53.193
+y digamos 50 píxeles.
+
+57
+00:02:54.470 --> 00:02:57.370
+Así que guarda esto y podrás ver
+
+58
+00:02:57.370 --> 00:02:59.390
+que ya se ve mucho mejor.
+
+59
+00:02:59.390 --> 00:03:01.210
+Ahora no me gusta esto.
+
+60
+00:03:01.210 --> 00:03:02.090
+Esto es feo.
+
+61
+00:03:02.090 --> 00:03:03.190
+Necesitamos centrarlo.
+
+62
+00:03:03.190 --> 00:03:07.449
+Pero nota cómo podemos decir que ahora
+
+63
+00:03:07.449 --> 00:03:09.230
+solo queremos un a columna.
+
+64
+00:03:09.230 --> 00:03:11.600
+Cuando solo pasas un elemento aquí
+
+65
+00:03:11.600 --> 00:03:13.140
+a las columnas de la plantilla de la cuadrícula,
+
+66
+00:03:13.140 --> 00:03:14.970
+solo se creará una columna.
+
+67
+00:03:14.970 --> 00:03:19.120
+Y debido a que dijimos 1fr, eso significa que esencialmente
+
+68
+00:03:19.120 --> 00:03:21.210
+el 100% de esa columna será retomada.
+
+69
+00:03:21.210 --> 00:03:23.430
+Esa unidad fraccionaria.
+
+70
+00:03:23.430 --> 00:03:25.510
+Así que eso es muy bueno.
+
+71
+00:03:25.510 --> 00:03:29.580
+Bajemos aquí y centre eso, o centre el texto
+
+72
+00:03:29.580 --> 00:03:34.580
+para que podamos hacer eso diciendo el texto de detalles
+
+73
+00:03:36.650 --> 00:03:40.173
+de estilo y luego el centro de alineación del texto.
+
+74
+00:03:43.064 --> 00:03:47.080
+Guarda eso y ahora estamos muy bien.
+
+75
+00:03:47.080 --> 00:03:52.080
+Por lo tanto, nuestro componente de respuesta ahora se está
+
+76
+00:03:52.260 --> 00:03:56.620
+actualizando, así que cuando estamos en una pantalla
+
+77
+00:03:56.620 --> 00:03:59.222
+pequeña, ahora está centrado y se parece más a lo que cabría
+
+78
+00:03:59.222 --> 00:04:01.705
+esperar en un teléfono inteligente.
+
+79
+00:04:01.705 --> 00:04:04.092
+Si hago doble clic en esto y lo extiendo, puedes ver que
+
+80
+00:04:04.092 --> 00:04:06.360
+ahora cambia y estamos viendo la vista de escritorio ahora.
+
+81
+00:04:06.360 --> 00:04:07.770
+Que es lo que estamos buscando.
+
+82
+00:04:07.770 --> 00:04:11.570
+Cuando alguien está accediendo a esto en una tableta o en
+
+83
+00:04:11.570 --> 00:04:14.930
+una computadora de escritorio, queremos que se vea así,
+
+84
+00:04:14.930 --> 00:04:18.210
+pero cada vez que se reduce, queremos que se vea un poco
+
+85
+00:04:18.210 --> 00:04:21.762
+más como una apariencia amigable para dispositivos móviles.
+
+86
+00:04:21.762 --> 00:04:24.790
+Así que sigamos bajando y la próxima
+
+87
+00:04:24.790 --> 00:04:27.028
+que vamos a abordar, y en realidad solo tenemos
+
+88
+00:04:27.028 --> 00:04:30.370
+tres líneas más de código para escribir, o realmente dos
+
+89
+00:04:30.370 --> 00:04:32.120
+si no contamos la definición.
+
+90
+00:04:32.120 --> 00:04:35.110
+Y así, a continuación, vamos a tomar el wrapper
+
+91
+00:04:35.110 --> 00:04:37.423
+de los sí y los no.
+
+92
+00:04:38.761 --> 00:04:42.230
+Y luego, desde allí, vamos a decir que queremos
+
+93
+00:04:42.230 --> 00:04:47.120
+que las columnas de la plantilla de cuadrícula
+
+94
+00:04:47.120 --> 00:04:48.167
+sean 1fr.
+
+95
+00:04:49.743 --> 00:04:52.943
+Así que realmente lo mismo que hicimos
+
+96
+00:04:52.943 --> 00:04:53.918
+con detalles de estilo.
+
+97
+00:04:53.918 --> 00:04:56.710
+Presione guardar allí y podrá ver que hizo
+
+98
+00:04:56.710 --> 00:04:59.880
+exactamente lo mismo por nosotros, y de hecho,
+
+99
+00:04:59.880 --> 00:05:03.090
+si queremos mantenernos con 50 píxeles,
+
+100
+00:05:03.090 --> 00:05:07.200
+podemos hacer que esto sea aún más eficiente aquí.
+
+101
+00:05:07.200 --> 00:05:12.200
+Y podríamos decir que queremos poner el wrapper de
+
+102
+00:05:14.840 --> 00:05:18.613
+los sí y los no y tener todo eso allí.
+
+103
+00:05:18.613 --> 00:05:22.070
+E incluso podemos deshacernos de esto porque
+
+104
+00:05:22.070 --> 00:05:23.730
+las columnas de la plantilla de cuadrícula son las mismas.
+
+105
+00:05:23.730 --> 00:05:27.160
+Ahora, si presiono guardar, veremos que todavía tenemos
+
+106
+00:05:27.160 --> 00:05:30.970
+el mismo comportamiento exacto, por lo que tenemos el mismo
+
+107
+00:05:30.970 --> 00:05:31.803
+tipo de respuesta y lo hicimos en solo unas pocas líneas
+
+108
+00:05:31.803 --> 00:05:32.720
+de código.
+
+109
+00:05:35.310 --> 00:05:39.100
+Eso es lo más fácil que es desarrollar este tipo de
+
+110
+00:05:39.100 --> 00:05:41.400
+comportamiento sensible al aprovechar herramientas como
+
+111
+00:05:41.400 --> 00:05:43.150
+la cuadrícula de CSS.
+
+112
+00:05:46.150 --> 00:05:49.640
+Puedo decirle por experiencia que cuando tuve que
+
+113
+00:05:49.640 --> 00:05:53.670
+desarrollar ese tipo de funcionalidad, ha requerido mucho
+
+114
+00:05:53.670 --> 00:05:57.500
+más que solo las cinco líneas de código
+
+115
+00:05:57.500 --> 00:05:58.960
+que escribimos allí.
+
+116
+00:05:58.960 --> 00:06:01.610
+Tuve que hacer todo tipo de cosas como cambiar
+
+117
+00:06:01.610 --> 00:06:06.010
+los valores de flotación, cambiar el ancho de los elementos
+
+118
+00:06:06.010 --> 00:06:08.807
+y hay mucho trabajo que hacer.
+
+119
+00:06:08.807 --> 00:06:11.960
+Luego tenía que ir y probarlo en todo tipo de dispositivos
+
+120
+00:06:11.960 --> 00:06:15.450
+porque a veces, si codificaba cosas como su ancho
+
+121
+00:06:15.450 --> 00:06:17.390
+o algo así, funcionaría
+
+122
+00:06:17.390 --> 00:06:19.700
+en algunos teléfonos inteligentes, pero no en todos.
+
+123
+00:06:19.700 --> 00:06:23.253
+Pero al aprovechar la cuadrícula de CSS, podemos eliminar
+
+124
+00:06:23.253 --> 00:06:26.450
+todo eso de la ecuación y simplemente actualizar
+
+125
+00:06:26.450 --> 00:06:28.520
+la cantidad de columnas con las que queríamos trabajar
+
+126
+00:06:28.520 --> 00:06:32.040
+y luego hizo todo el trabajo duro por nosotros.
+
+127
+00:06:32.040 --> 00:06:34.730
+Entonces, felicidades si pasaste por eso.
+
+128
+00:06:34.730 --> 00:06:36.830
+Ya has terminado el proyecto uno.
+
+129
+00:06:36.830 --> 00:06:41.830
+Tú sabes cómo implementar el tipo básico de implementación
+
+130
+00:06:42.280 --> 00:06:44.700
+de tipo de cuadrícula CSS y hacer
+
+131
+00:06:44.700 --> 00:06:46.983
+que toda la página sea receptiva.
+

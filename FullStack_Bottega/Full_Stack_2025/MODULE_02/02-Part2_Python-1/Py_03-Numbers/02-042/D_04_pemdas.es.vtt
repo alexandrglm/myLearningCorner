@@ -1,0 +1,718 @@
+WEBVTT
+
+1
+00:00:01.100 --> 00:00:03.040
+<v Narrador>En esta guía, vamos a hablar sobre</v>
+
+2
+00:00:03.040 --> 00:00:06.870
+el orden de las operaciones en los cálculos de Python.
+
+3
+00:00:06.870 --> 00:00:09.890
+Este es un concepto increíblemente importante
+
+4
+00:00:09.890 --> 00:00:13.730
+porque si no lo entiendes correctamente,
+
+5
+00:00:13.730 --> 00:00:17.240
+vas a terminar con algunos cálculos muy extraños
+
+6
+00:00:17.240 --> 00:00:19.320
+y vas a esperar un tipo de resultado
+
+7
+00:00:19.320 --> 00:00:21.860
+y terminarás obteniendo otra cosa,
+
+8
+00:00:21.860 --> 00:00:23.970
+el orden de operaciones es
+
+9
+00:00:23.970 --> 00:00:28.228
+el orden en que el sistema de Python
+
+10
+00:00:28.228 --> 00:00:31.490
+va y realiza los cálculos.
+
+11
+00:00:31.490 --> 00:00:35.530
+Así que aquí mismo, tengo una expresión completa
+
+12
+00:00:35.530 --> 00:00:38.810
+que estoy almacenando dentro de una variable de cálculo,
+
+13
+00:00:38.810 --> 00:00:42.800
+así que Python irá a través de todo este cálculo
+
+14
+00:00:42.800 --> 00:00:44.370
+y luego la ejecutará
+
+15
+00:00:44.370 --> 00:00:47.250
+y la almacenará dentro de esta variable
+
+16
+00:00:47.250 --> 00:00:49.370
+y luego simplemente vamos a imprimirlo.
+
+17
+00:00:49.370 --> 00:00:52.920
+Antes de que lo haga y lo imprima,
+
+18
+00:00:52.920 --> 00:00:57.090
+quiero que pienses qué va a hacer esto,
+
+19
+00:00:57.090 --> 00:01:00.270
+así que quiero que trates de resolver esto en tu cabeza
+
+20
+00:01:00.270 --> 00:01:03.840
+o en papel y puedas decir, está bien,
+
+21
+00:01:03.840 --> 00:01:08.710
+el resultado de este cálculo debe ser este número
+
+22
+00:01:08.710 --> 00:01:11.620
+y ver qué tan cerca puedes llegar a comprender
+
+23
+00:01:11.620 --> 00:01:14.250
+el orden de las operaciones porque esto es algo
+
+24
+00:01:14.250 --> 00:01:16.480
+que no es específico de python.
+
+25
+00:01:16.480 --> 00:01:20.258
+En realidad, esto es algo fundamental
+
+26
+00:01:20.258 --> 00:01:23.268
+en matemática y aritmética estándar,
+
+27
+00:01:23.268 --> 00:01:26.510
+por lo que quiero que puedas ver cuánto recuerdas,
+
+28
+00:01:26.510 --> 00:01:28.560
+esto puede recordarte un poco,
+
+29
+00:01:28.560 --> 00:01:31.680
+puede que te lleve al séptimo, octavo grado o algo así,
+
+30
+00:01:31.680 --> 00:01:33.950
+sin embargo, es algo
+
+31
+00:01:33.950 --> 00:01:35.300
+que es muy importante entender
+
+32
+00:01:35.300 --> 00:01:38.670
+y luego regresar y vamos a revisarlo.
+
+33
+00:01:38.670 --> 00:01:42.350
+Así que bienvenido de nuevo, si realizó esos cálculos,
+
+34
+00:01:42.350 --> 00:01:44.680
+primero quiero ejecutarlo
+
+35
+00:01:44.680 --> 00:01:47.390
+y luego pasaremos por el proceso
+
+36
+00:01:47.390 --> 00:01:49.250
+y también te ayudaré a darte,
+
+37
+00:01:49.250 --> 00:01:51.900
+si tuviste algún problema para entender
+
+38
+00:01:51.900 --> 00:01:53.720
+cómo funcionó en el orden,
+
+39
+00:01:53.720 --> 00:01:56.880
+te daré algunas formas y esencialmente,
+
+40
+00:01:56.880 --> 00:02:00.580
+un marco mental para comprenderlo y recordarlo.
+
+41
+00:02:00.580 --> 00:02:02.670
+Así que voy a ejecutarlo
+
+42
+00:02:02.670 --> 00:02:06.430
+y pueden ver que el valor devuelto es negativo 103.
+
+43
+00:02:06.430 --> 00:02:08.780
+Ahora, si ejecutara esto
+
+44
+00:02:08.780 --> 00:02:12.150
+y simplemente comienza diciendo, está bien
+
+45
+00:02:12.150 --> 00:02:14.370
+la forma en que se ejecuta es ocho más dos, que es 10
+
+46
+00:02:14.370 --> 00:02:18.010
+y luego multiplicamos 10 por cinco y entonces tenemos 50
+
+47
+00:02:18.010 --> 00:02:20.680
+y luego vamos a restar y si continúas así,
+
+48
+00:02:20.680 --> 00:02:24.230
+terminarás con la respuesta incorrecta
+
+49
+00:02:24.230 --> 00:02:28.430
+veamos cómo realmente funciona el orden de las operaciones
+
+50
+00:02:28.430 --> 00:02:31.620
+y vamos a usar una mnemotécnica para esto,
+
+51
+00:02:31.620 --> 00:02:34.723
+así que voy a darnos una cadena multilínea
+
+52
+00:02:35.740 --> 00:02:38.370
+y esta es una forma en la que me enseñaron
+
+53
+00:02:38.370 --> 00:02:43.370
+y usé un proceso de crecimiento llamado PEMDAS
+
+54
+00:02:43.400 --> 00:02:44.991
+y diré
+
+55
+00:02:44.991 --> 00:02:49.692
+P-E-M-D-A-S,
+
+56
+00:02:54.000 --> 00:02:58.800
+PEMDAS y hay muchas variaciones diferentes a esto.
+
+57
+00:02:58.800 --> 00:03:01.160
+Es posible que escuches que se llama PEMDOS,
+
+58
+00:03:01.160 --> 00:03:02.620
+o PEMDAS,
+
+59
+00:03:02.620 --> 00:03:06.100
+puede que escuches que se cambian
+
+60
+00:03:06.100 --> 00:03:09.070
+y en realidad sería PEDMAS,
+
+61
+00:03:09.070 --> 00:03:12.230
+por lo que hay muchas variaciones diferentes
+
+62
+00:03:12.230 --> 00:03:14.876
+y esta es la que utilizo, pero en al final del día,
+
+63
+00:03:14.876 --> 00:03:18.290
+todos van a decir lo mismo,
+
+64
+00:03:18.290 --> 00:03:19.920
+todos van a significar lo mismo
+
+65
+00:03:19.920 --> 00:03:23.030
+y todo se trata del orden de las operaciones.
+
+66
+00:03:23.030 --> 00:03:24.580
+La forma en que me enseñaron esto
+
+67
+00:03:24.580 --> 00:03:27.700
+fue con esta pequeña oración mnemotécnica que fue,
+
+68
+00:03:27.700 --> 00:03:32.544
+¨Please Excuse
+
+69
+00:03:32.544 --> 00:03:37.544
+My Dear Aunt Sally¨
+
+70
+00:03:38.150 --> 00:03:40.930
+y esa es la forma en que lo recordé personalmente.
+
+71
+00:03:40.930 --> 00:03:44.810
+Quizás recuerdes algo en tus propios días
+
+72
+00:03:44.810 --> 00:03:45.890
+que te ayude a hacerlo,
+
+73
+00:03:45.890 --> 00:03:48.590
+pero esto es lo que me ayudó a recordarlo
+
+74
+00:03:48.590 --> 00:03:52.370
+y ahora hablemos de lo que esto representa en realidad.
+
+75
+00:03:52.370 --> 00:03:56.900
+Entonces, el ¨Please¨ representa paréntesis,
+
+76
+00:03:56.900 --> 00:03:59.900
+así que eso significa que todo está en orden,
+
+77
+00:03:59.900 --> 00:04:03.340
+por lo que la P, o paréntesis serán
+
+78
+00:04:03.340 --> 00:04:06.500
+el primer conjunto de elementos que se procesan,
+
+79
+00:04:06.500 --> 00:04:08.750
+así que si observamos este cálculo,
+
+80
+00:04:08.750 --> 00:04:10.550
+lo primero que se procesará
+
+81
+00:04:10.550 --> 00:04:15.240
+es nueve más dos porque está dentro de paréntesis.
+
+82
+00:04:15.240 --> 00:04:20.240
+El siguiente, ¨Excuse¨ será nuestro exponente
+
+83
+00:04:21.418 --> 00:04:23.060
+y no voy a poner paréntesis,
+
+84
+00:04:23.060 --> 00:04:26.570
+solo dire exponentes,
+
+85
+00:04:26.570 --> 00:04:30.230
+lo que significa que vamos a tomar este cálculo
+
+86
+00:04:30.230 --> 00:04:34.320
+que se hace, luego vamos a ver el exponente
+
+87
+00:04:34.320 --> 00:04:38.833
+y lo vamos a cuadrar, porque es el exponente dos.
+
+88
+00:04:40.060 --> 00:04:44.933
+M, o ¨My¨ significa Multiplicación,
+
+89
+00:04:45.920 --> 00:04:49.740
+por lo que tenemos nuestra Multiplicación aquí.
+
+90
+00:04:49.740 --> 00:04:50.770
+Ahora, si recuerdas,
+
+91
+00:04:50.770 --> 00:04:54.692
+dije que algunas personas usan PEMDAS,
+
+92
+00:04:54.692 --> 00:04:57.090
+como lo hemos hecho aquí, otras personas usan PEDMAS
+
+93
+00:04:57.090 --> 00:05:00.150
+y ahí es donde cambias la D y la M.
+
+94
+00:05:00.150 --> 00:05:02.820
+Ahora, he tenido múltiples conversaciones
+
+95
+00:05:02.820 --> 00:05:06.800
+y he recibido más comentarios sobre esta guía,
+
+96
+00:05:06.800 --> 00:05:08.950
+especialmente cuando la he enseñado en otros idiomas,
+
+97
+00:05:08.950 --> 00:05:11.050
+como JavaScript y Ruby
+
+98
+00:05:11.050 --> 00:05:14.710
+y todos parecen querer pelear por esto
+
+99
+00:05:14.710 --> 00:05:19.173
+y por eso he preguntado a los profesores de matemáticas de
+
+100
+00:05:19.173 --> 00:05:21.980
+universidades exactamente cuál es la respuesta correcta,
+
+101
+00:05:21.980 --> 00:05:26.270
+y la verdad es que no hay una forma de hacerlo
+
+102
+00:05:26.270 --> 00:05:29.790
+y el problema es que, una vez que se llega a esta etapa,
+
+103
+00:05:29.790 --> 00:05:34.710
+la M y la D, que es Multiplicación y División,
+
+104
+00:05:36.180 --> 00:05:40.520
+vas de derecha a izquierda y no importa.
+
+105
+00:05:40.520 --> 00:05:42.770
+Así que primero podrías hacer la división,
+
+106
+00:05:42.770 --> 00:05:44.590
+primero podrías hacer la multiplicación,
+
+107
+00:05:44.590 --> 00:05:48.307
+no importa, vas a terminar con el mismo resultado exacto
+
+108
+00:05:48.307 --> 00:05:49.640
+y si no me crees,
+
+109
+00:05:49.640 --> 00:05:52.010
+revísalo tú mismo, investigalo tú mismo,
+
+110
+00:05:52.010 --> 00:05:54.140
+esto es simplemente la forma en que lo hago personalmente
+
+111
+00:05:54.140 --> 00:05:56.080
+para poder recordarlo,
+
+112
+00:05:56.080 --> 00:05:59.390
+pero he visto a personas cambiarlo
+
+113
+00:05:59.390 --> 00:06:01.670
+y hacer la división antes de la multiplicación.
+
+114
+00:06:01.670 --> 00:06:04.750
+Todavía va a salir a la misma respuesta.
+
+115
+00:06:04.750 --> 00:06:09.550
+A continuación, tenemos ¨Aunt¨ que significa adición.
+
+116
+00:06:09.550 --> 00:06:11.700
+Así que con la adición, aquí es donde
+
+117
+00:06:11.700 --> 00:06:14.720
+tendremos nuestro signo de más, así que aquí mismo,
+
+118
+00:06:14.720 --> 00:06:17.730
+lo tenemos aquí al principio.
+
+119
+00:06:17.730 --> 00:06:21.330
+Ahora, nota que tenemos un signo de más dentro del
+
+120
+00:06:21.330 --> 00:06:23.820
+paréntesis y ese es el primer proceso que vamos a ejecutar
+
+121
+00:06:23.820 --> 00:06:27.870
+porque está dentro de estos paréntesis.
+
+122
+00:06:27.870 --> 00:06:31.483
+Y luego, por último, tenemos Resta,
+
+123
+00:06:32.860 --> 00:06:33.770
+que es nuestro guión
+
+124
+00:06:33.770 --> 00:06:36.470
+y las pondré aquí en las notas del programa,
+
+125
+00:06:36.470 --> 00:06:39.630
+solo para que tengas acceso a ellas,
+
+126
+00:06:39.630 --> 00:06:42.250
+oh y eso es una división, así que es una barra diagonal,
+
+127
+00:06:42.250 --> 00:06:45.620
+la multiplicación es nuestro asterisco
+
+128
+00:06:45.620 --> 00:06:48.680
+y voy a formatear todo esto
+
+129
+00:06:48.680 --> 00:06:52.760
+solo para que todos sean iguales, y luego aquí, Paréntesis.
+
+130
+00:06:55.270 --> 00:06:57.910
+Bien, ese es el orden,
+
+131
+00:06:57.910 --> 00:07:01.110
+pero ahora veamos hacia atrás
+
+132
+00:07:01.110 --> 00:07:03.325
+y construyamos esto, así que en lugar de confiar
+
+133
+00:07:03.325 --> 00:07:05.680
+en que esa es la respuesta correcta,
+
+134
+00:07:05.680 --> 00:07:08.997
+veamos cómo pudieron hacerlo y cuando digo ellos,
+
+135
+00:07:08.997 --> 00:07:10.570
+me refiero al lenguaje de programación Python.
+
+136
+00:07:10.570 --> 00:07:13.930
+Vamos a ver cómo fue capaz de procesar eso.
+
+137
+00:07:13.930 --> 00:07:16.440
+Voy a entrar en nuestros comentarios
+
+138
+00:07:16.440 --> 00:07:18.920
+y vamos a hacer esto como en la escuela,
+
+139
+00:07:18.920 --> 00:07:22.760
+así que vamos a ir paso a paso.
+
+140
+00:07:22.760 --> 00:07:27.440
+Aquí, si estamos siguiendo las reglas de PEDMAS
+
+141
+00:07:27.440 --> 00:07:31.810
+o las reglas de PEMDAS, vamos a comenzar con los paréntesis.
+
+142
+00:07:31.810 --> 00:07:34.790
+Así que voy a copiar esto a la siguiente línea
+
+143
+00:07:34.790 --> 00:07:38.910
+y simplemente vamos a agregar nueve más dos,
+
+144
+00:07:38.910 --> 00:07:41.510
+así que obtendremos 11 aquí
+
+145
+00:07:41.510 --> 00:07:44.330
+y eso es todo lo que haremos en esa línea.
+
+146
+00:07:44.330 --> 00:07:48.370
+Bajando, nuestro siguiente pedido, recuerden que son
+
+147
+00:07:48.370 --> 00:07:50.880
+los Exponentes, por lo que serán 11 cuadrados.
+
+148
+00:07:50.880 --> 00:07:54.233
+Afortunadamente, esto es parte de la razón por la que usé
+
+149
+00:07:54.233 --> 00:07:57.090
+dos aquí porque realmente sé qué es 11 al cuadrado.
+
+150
+00:07:57.090 --> 00:07:58.530
+Si hubiera hecho algo más grande que eso,
+
+151
+00:07:58.530 --> 00:08:00.690
+habríamos tenido que sacar la calculadora.
+
+152
+00:08:00.690 --> 00:08:04.610
+Así que sabemos que 11 al cuadrado es 121,
+
+153
+00:08:04.610 --> 00:08:09.610
+entonces ahora tenemos ocho más dos veces cinco menos 121.
+
+154
+00:08:10.300 --> 00:08:13.470
+Copiemos esto y volviendo a mirar
+
+155
+00:08:13.470 --> 00:08:15.360
+y haciendo referencia a lo que nos queda,
+
+156
+00:08:15.360 --> 00:08:18.020
+el siguiente en la lista es Multiplicación,
+
+157
+00:08:18.020 --> 00:08:21.233
+así que aquí tenemos dos por cinco,
+
+158
+00:08:21.233 --> 00:08:23.593
+así que sabemos que este es el 10
+
+159
+00:08:24.560 --> 00:08:27.500
+y ahora tenemos la suma y la resta
+
+160
+00:08:27.500 --> 00:08:31.760
+y desde aquí podemos hacer esto de derecha a izquierda,
+
+161
+00:08:31.760 --> 00:08:35.097
+por lo que no tenemos que hacer el resto,
+
+162
+00:08:35.097 --> 00:08:38.570
+terminarás con ocho más 10, que es 18,
+
+163
+00:08:38.570 --> 00:08:41.330
+18 menos 121,
+
+164
+00:08:41.330 --> 00:08:46.210
+va a ser la respuesta correcta, 103.
+
+165
+00:08:46.210 --> 00:08:49.480
+Ahora, si no me crees, no te culpo
+
+166
+00:08:49.480 --> 00:08:52.350
+porque la aritmética no es mi fuerte.
+
+167
+00:08:52.350 --> 00:08:57.294
+Digamos que ocho más diez son 18,
+
+168
+00:08:57.294 --> 00:09:00.040
+menos 121
+
+169
+00:09:00.040 --> 00:09:03.660
+y eso es igual a 103 negativo.
+
+170
+00:09:03.660 --> 00:09:05.550
+Así que ese es el proceso completo,
+
+171
+00:09:05.550 --> 00:09:08.770
+desde Parans hasta la Resta.
+
+172
+00:09:08.770 --> 00:09:12.000
+No es necesario que realices esta tarea,
+
+173
+00:09:12.000 --> 00:09:14.230
+tienes que entender cómo funciona,
+
+174
+00:09:14.230 --> 00:09:16.430
+porque digamos que debes llamar variables
+
+175
+00:09:16.430 --> 00:09:20.330
+y debes hacerlo con el orden incorrecto de las operaciones,
+
+176
+00:09:20.330 --> 00:09:22.600
+terminarás con un error,
+
+177
+00:09:22.600 --> 00:09:24.132
+por lo que es importante entender
+
+178
+00:09:24.132 --> 00:09:27.000
+que este es el proceso completo que Python
+
+179
+00:09:27.000 --> 00:09:29.663
+utiliza cuando ejecuta tus cálculos.
+

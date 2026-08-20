@@ -1,0 +1,32 @@
+$off-white: #f6f6f6;
+$master-site-color: DarkGreen;
+
+@mixin heading-feature-styling {
+  $featured-color: DarkRed !default;
+  color: $featured-color;
+}
+
+@mixin section-feature-styling {
+  $featured-color: DarkRed !default;
+  background-color: $featured-color;
+  padding: 42px;
+  color: #ffffff;
+}
+
+body {
+  background-color: $off-white;
+  height: 100vh;
+  height: 100vw;
+}
+
+.page-wrapper { 
+  padding: 21px;
+
+  .featured {
+    @include heading-feature-styling;
+  }
+
+  .page-content {
+    @include section-feature-styling;
+  }
+}

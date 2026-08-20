@@ -1,0 +1,518 @@
+﻿WEBVTT
+
+1
+00:00:01.080 --> 00:00:03.940
+<v ->Hola, y bienvenidos a nuestro curso de resolución de</v>
+
+2
+00:00:03.940 --> 00:00:07.150
+problemas en el que vamos a abordar Análisis de Sistemas y
+
+3
+00:00:07.150 --> 00:00:09.600
+Diseño para tener una aproximación práctica
+
+4
+00:00:09.600 --> 00:00:12.780
+para resolver problemas de software complejos.
+
+5
+00:00:12.780 --> 00:00:16.050
+Este es un curso que aprecio mucho.
+
+6
+00:00:16.050 --> 00:00:18.810
+Durante los años que he enseñado,
+
+7
+00:00:18.810 --> 00:00:20.900
+decenas de miles de estudiantes,
+
+8
+00:00:20.900 --> 00:00:24.040
+una de las cosas que siempre recibía
+
+9
+00:00:24.040 --> 00:00:26.230
+en lo relativo a comentarios
+
+10
+00:00:26.230 --> 00:00:28.500
+es que hacen muchos tutoriales,
+
+11
+00:00:28.500 --> 00:00:30.630
+luego aprenden la sintaxis,
+
+12
+00:00:30.630 --> 00:00:33.790
+aprenden cómo crear la aplicación
+
+13
+00:00:33.790 --> 00:00:37.300
+siguiendo a un guía.
+
+14
+00:00:37.300 --> 00:00:41.340
+Pero los comentarios que recibo es que están al tanto
+
+15
+00:00:41.340 --> 00:00:44.750
+de qué crear, pero no saben qué hacer
+
+16
+00:00:44.750 --> 00:00:48.250
+cuando se les da un tipo de problema nuevo.
+
+17
+00:00:48.250 --> 00:00:50.690
+Y esto es lo que quiero hacer en este curso,
+
+18
+00:00:50.690 --> 00:00:55.028
+ir más allá de la idea de simplemente seguirme
+
+19
+00:00:55.028 --> 00:00:59.070
+y crear algo basado en un tutorial
+
+20
+00:00:59.070 --> 00:01:01.410
+y en su lugar, lo que quiero ayudaros a hacer es
+
+21
+00:01:01.410 --> 00:01:05.690
+quiero ayudaros a desarrollar la mentalidad de solución
+
+22
+00:01:05.690 --> 00:01:09.130
+de problemas y tener un abordaje analítico
+
+23
+00:01:09.130 --> 00:01:11.850
+para crear sistemas complejos.
+
+24
+00:01:11.850 --> 00:01:13.890
+Este curso es algo diferente de muchos
+
+25
+00:01:13.890 --> 00:01:16.210
+de los otros que podáis haber visto.
+
+26
+00:01:16.210 --> 00:01:18.550
+Y eso es porque si pensamos que vamos a aprender
+
+27
+00:01:18.550 --> 00:01:21.600
+a solucionar problemas complejos,
+
+28
+00:01:21.600 --> 00:01:24.910
+no vamos a preocuparnos por el lenguaje de programación.
+
+29
+00:01:24.910 --> 00:01:27.800
+Y este es un componente muy importante
+
+30
+00:01:27.800 --> 00:01:30.530
+para entender cómo resolver problemas.
+
+31
+00:01:30.530 --> 00:01:32.750
+Un problema muy habitual que recibo
+
+32
+00:01:32.750 --> 00:01:37.100
+con los desarrolladores principiantes es que al preguntarles
+
+33
+00:01:37.100 --> 00:01:40.180
+algo lo primero que hacen es tratar de ir
+
+34
+00:01:40.180 --> 00:01:42.640
+al ordenador y tratar de resolverlo.
+
+35
+00:01:42.640 --> 00:01:45.570
+Y es bueno tener una acercamiento tan agresivo
+
+36
+00:01:45.570 --> 00:01:47.040
+para tratar de hacer algo.
+
+37
+00:01:47.040 --> 00:01:50.090
+Pero hablarlo paso a paso
+
+38
+00:01:50.090 --> 00:01:53.080
+y pudiendo analizar el problema
+
+39
+00:01:53.080 --> 00:01:55.140
+y meditarlo,
+
+40
+00:01:55.140 --> 00:01:58.540
+puedes crear una situación más compleja.
+
+41
+00:01:58.540 --> 00:02:00.490
+El único prerrequisito para este curso
+
+42
+00:02:00.490 --> 00:02:03.310
+es tener entendimiento de UML,
+
+43
+00:02:03.310 --> 00:02:06.270
+es decir el Lenguaje Unificado de Modelado.
+
+44
+00:02:06.270 --> 00:02:07.877
+Porque lo que vamos a hacer es
+
+45
+00:02:07.877 --> 00:02:11.330
+ver una serie de proyectos.
+
+46
+00:02:11.330 --> 00:02:15.180
+Va a haber de todo desde diseño de twitter,
+
+47
+00:02:15.180 --> 00:02:19.510
+hasta crear un sistema Uber entero.
+
+48
+00:02:19.510 --> 00:02:22.170
+Y para eso, no nos vamos a preocupar por
+
+49
+00:02:22.170 --> 00:02:23.630
+el lenguaje de programación.
+
+50
+00:02:23.630 --> 00:02:25.000
+Eso está aún muy lejos.
+
+51
+00:02:25.000 --> 00:02:28.480
+Eso es simplemente implementación pura de las cosas,
+
+52
+00:02:28.480 --> 00:02:31.310
+en su lugar lo que haremos es ver el sistema
+
+53
+00:02:31.310 --> 00:02:33.460
+como un todo
+
+54
+00:02:33.460 --> 00:02:35.550
+porque muchas veces lo que he visto,
+
+55
+00:02:35.550 --> 00:02:38.280
+es que un estudiante o un desarrollador joven,
+
+56
+00:02:38.280 --> 00:02:40.120
+empieza a desarrollar algo
+
+57
+00:02:40.120 --> 00:02:44.390
+y luego de repente a mitad de camino se dan cuenta
+
+58
+00:02:44.390 --> 00:02:48.300
+de que deberían haberlo hecho de una forma diferente.
+
+59
+00:02:48.300 --> 00:02:49.920
+Y eso es lo que vamos a hacer,
+
+60
+00:02:49.920 --> 00:02:54.330
+vamos a usar UML para diseñar este sistema.
+
+61
+00:02:54.330 --> 00:02:58.130
+Vamos a configurar la forma en que deben mostrarse
+
+62
+00:02:58.130 --> 00:03:01.200
+los datos antes de tocar el código.
+
+63
+00:03:01.200 --> 00:03:02.800
+Luego vamos a ver
+
+64
+00:03:02.800 --> 00:03:06.200
+cómo puedes dominar los diagramas basados en comportamiento
+
+65
+00:03:06.200 --> 00:03:10.940
+y veremos cómo personalizas y diseñas la experiencia,
+
+66
+00:03:10.940 --> 00:03:14.760
+antes de poder entrar en la implementación.
+
+67
+00:03:14.760 --> 00:03:17.200
+Este curso está diseñado
+
+68
+00:03:17.200 --> 00:03:20.740
+para tener varios proyectos.
+
+69
+00:03:20.740 --> 00:03:22.760
+Al principio de cada proyecto,
+
+70
+00:03:22.760 --> 00:03:26.470
+voy a aparecer cámara y voy a deciros
+
+71
+00:03:26.470 --> 00:03:28.300
+qué debe crearse.
+
+72
+00:03:28.300 --> 00:03:32.330
+Así que voy a daros el nombre del proyecto,
+
+73
+00:03:32.330 --> 00:03:34.900
+ya sea Twitter o Uber
+
+74
+00:03:34.900 --> 00:03:38.330
+y otro tipo de librería de código o característica
+
+75
+00:03:38.330 --> 00:03:41.400
+y os listaré los requisitos que se necesitan,
+
+76
+00:03:41.400 --> 00:03:45.130
+más o menos como si estuvieras trabajando para una de esas
+
+77
+00:03:45.130 --> 00:03:47.910
+compañías y te diesen ese tipo de tarea.
+
+78
+00:03:47.910 --> 00:03:50.470
+Y luego, tras eso, quiero que
+
+79
+00:03:50.470 --> 00:03:53.030
+no veas el vídeo más allá,
+
+80
+00:03:53.030 --> 00:03:56.290
+quiero que te pongas a diseñar los sistemas.
+
+81
+00:03:56.290 --> 00:03:57.210
+No en código.
+
+82
+00:03:57.210 --> 00:03:58.500
+No estamos aún ahí.
+
+83
+00:03:58.500 --> 00:04:01.660
+No va a haber nada de programación en este curso.
+
+84
+00:04:01.660 --> 00:04:05.870
+Esto va de cómo crear un plan
+
+85
+00:04:05.870 --> 00:04:09.880
+para diseñar y codificar esos sistemas.
+
+86
+00:04:09.880 --> 00:04:11.080
+Y después de eso
+
+87
+00:04:11.080 --> 00:04:14.390
+de que hayas creado los distintos tipos de diagrama
+
+88
+00:04:14.390 --> 00:04:16.340
+que os pido crear,
+
+89
+00:04:16.340 --> 00:04:18.550
+entonces podrás ver las soluciones para ver
+
+90
+00:04:18.550 --> 00:04:22.370
+cómo yo, personalmente, habría diseñado esos sistemas.
+
+91
+00:04:22.370 --> 00:04:26.290
+T si tienes curiosidad sobre por qué esta clase es
+
+92
+00:04:26.290 --> 00:04:28.170
+importante, lo que quiero señalar es,
+
+93
+00:04:28.170 --> 00:04:29.940
+cuando se trata de resolución de problemas
+
+94
+00:04:29.940 --> 00:04:33.350
+el cual es una de las cosas más importantes
+
+95
+00:04:33.350 --> 00:04:35.220
+que busca quien contrata
+
+96
+00:04:35.220 --> 00:04:38.740
+en una persona potencial que van a contratar,
+
+97
+00:04:38.740 --> 00:04:42.100
+es que si puedes diseñar un sistema bien,
+
+98
+00:04:42.100 --> 00:04:47.100
+puedes crear, digamos un diagrama de clase bien diseñado,
+
+99
+00:04:47.710 --> 00:04:51.370
+puedes coger ese plan, ese modelo visual
+
+100
+00:04:51.370 --> 00:04:55.740
+y puedes literalmente ir a escribir tu programa entero
+
+101
+00:04:55.740 --> 00:04:58.900
+de la nada, siguiendo esas guías.
+
+102
+00:04:58.900 --> 00:05:00.530
+Puedes crear esas tablas,
+
+103
+00:05:00.530 --> 00:05:02.540
+puedes configurar la relación
+
+104
+00:05:02.540 --> 00:05:06.000
+de forma que todas se comuniquen de forma adecuada,
+
+105
+00:05:06.000 --> 00:05:08.020
+puedes crear todos los demás módulos.
+
+106
+00:05:08.020 --> 00:05:11.590
+Una vez entras en los sistemas dirigidos por comportamiento,
+
+107
+00:05:11.590 --> 00:05:14.530
+eso te ayudará a realizar tareas como saber
+
+108
+00:05:14.530 --> 00:05:17.540
+cómo debe funcionar tu sistema de autenticación.
+
+109
+00:05:17.540 --> 00:05:19.510
+Tu motor de despliegue te dirá
+
+110
+00:05:19.510 --> 00:05:22.190
+todas los tipos diferentes de aplicaciones
+
+111
+00:05:22.190 --> 00:05:25.600
+que deben estar en la arquitectura de tu sistema.
+
+112
+00:05:25.600 --> 00:05:27.980
+Entonces, lo que vamos a hacer en este curso,
+
+113
+00:05:27.980 --> 00:05:30.310
+es el tipo de planificación.
+
+114
+00:05:30.310 --> 00:05:35.310
+Es el primer paso antes de meterse en el código,
+
+115
+00:05:35.700 --> 00:05:39.070
+antes de poder implementar ese sistema
+
+116
+00:05:39.070 --> 00:05:43.090
+y de verdad que quiero irradiar la importancia de esto
+
+117
+00:05:43.090 --> 00:05:46.370
+porque ocurre demasiado a menudo,
+
+118
+00:05:46.370 --> 00:05:49.720
+alguien o bien se asusta
+
+119
+00:05:49.720 --> 00:05:53.160
+o bien trata de lanzar el sistema contra la pared
+
+120
+00:05:53.160 --> 00:05:54.550
+y a ver si funciona.
+
+121
+00:05:54.550 --> 00:05:56.190
+Pese a que gastan algo de tiempo
+
+122
+00:05:56.190 --> 00:05:59.640
+y crean algo correctamente y lo modelan,
+
+123
+00:05:59.640 --> 00:06:02.730
+va a hacer la implementación del código
+
+124
+00:06:02.730 --> 00:06:04.860
+mucho más directa.
+
+125
+00:06:04.860 --> 00:06:07.310
+Hasta ahora hemos hablado sobre por qué se creó el curso
+
+126
+00:06:07.310 --> 00:06:10.470
+y vamos a ver también el abordaje en el sistema,
+
+127
+00:06:10.470 --> 00:06:12.790
+para continuar en el curso.
+
+128
+00:06:12.790 --> 00:06:16.550
+Ahora, en la siguiente guía, vamos a hacer una revisión
+
+129
+00:06:16.550 --> 00:06:18.203
+corta sobre qué es un sistema.
+

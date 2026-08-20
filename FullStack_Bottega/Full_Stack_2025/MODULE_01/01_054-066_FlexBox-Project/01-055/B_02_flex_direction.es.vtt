@@ -1,0 +1,770 @@
+WEBVTT
+
+1
+00:00:01.070 --> 00:00:05.290
+<v ->En esta lección, vamos a ver la dirección flex.</v>
+
+2
+00:00:05.290 --> 00:00:08.240
+Si estás siguiendo el curso y también estás
+
+3
+00:00:08.240 --> 00:00:11.440
+organizando tus archivos, lo que hice, y esto es lo que
+
+4
+00:00:11.440 --> 00:00:13.710
+voy a hacer a lo largo del curso, es
+
+5
+00:00:13.710 --> 00:00:17.580
+crear un directorio dentro de la raíz del proyecto
+
+6
+00:00:17.580 --> 00:00:21.200
+y lo he llamado error-page-project, y ahí es
+
+7
+00:00:21.200 --> 00:00:24.160
+donde he puesto todo el código que acabamos ver,
+
+8
+00:00:24.160 --> 00:00:28.560
+la imagen y el índice y, así tal como vais viendo,
+
+9
+00:00:28.560 --> 00:00:31.730
+podéis simplemente copiar esos archivos ahí y
+
+10
+00:00:31.730 --> 00:00:34.740
+entonces tengo un archivo nuevo de índice aquí que está
+
+11
+00:00:34.740 --> 00:00:36.900
+en la raíz de la aplicación.
+
+12
+00:00:36.900 --> 00:00:39.660
+Entonces, ese es mi proceso, y tú también puedes
+
+13
+00:00:39.660 --> 00:00:42.230
+ver eso y acceder a él en obtener hub.
+
+14
+00:00:42.230 --> 00:00:45.980
+Así que ahora lo que vamos a hacer es ver
+
+15
+00:00:45.980 --> 00:00:49.053
+y diseccionar algunos de los diferentes elementos
+
+16
+00:00:49.053 --> 00:00:52.110
+que vimos en esa página de error, y específicamente
+
+17
+00:00:52.110 --> 00:00:54.290
+vamos a ver la dirección flex.
+
+18
+00:00:54.290 --> 00:00:57.700
+Vamos a empezar creando un código HTML aquí.
+
+19
+00:00:57.700 --> 00:01:00.670
+Voy a crear una clase contenedora
+
+20
+00:01:00.670 --> 00:01:04.810
+que va a ser div.container,
+
+21
+00:01:04.810 --> 00:01:07.840
+y vamos a cerrar esto, para tener
+
+22
+00:01:07.840 --> 00:01:12.040
+un poco más de espacio, y en la clase de contenedores
+
+23
+00:01:12.040 --> 00:01:16.410
+Voy a crear una clase llamada bloques de imagen
+
+24
+00:01:16.410 --> 00:01:19.713
+así que voy a decir div.img_blocks, y luego
+
+25
+00:01:23.210 --> 00:01:27.010
+aquí voy a tener una serie de imágenes.
+
+26
+00:01:27.010 --> 00:01:31.370
+Así que voy a decir img y voy a usar
+
+27
+00:01:31.370 --> 00:01:35.150
+una herramienta interesante llamada Unsplash si no la has
+
+28
+00:01:35.150 --> 00:01:38.660
+usado antes, pero lo que te permite hacer es
+
+29
+00:01:38.660 --> 00:01:42.650
+llamar a una url y luego te va a dar
+
+30
+00:01:42.650 --> 00:01:45.450
+una imagen aleatoria de su biblioteca.
+
+31
+00:01:45.450 --> 00:01:49.703
+Entonces, puedo decir https://source.unsplash.com
+
+32
+00:01:57.370 --> 00:02:02.370
+y luego barra al azar, y luego puedes pasar en un tamaño,
+
+33
+00:02:03.380 --> 00:02:07.757
+así que voy a decir 150x150 y ahora si pulso guardar,
+
+34
+00:02:10.970 --> 00:02:13.480
+puedes ver que tenemos una imagen ahí.
+
+35
+00:02:13.480 --> 00:02:17.630
+Así que vamos y creamos seis de estos,
+
+36
+00:02:17.630 --> 00:02:22.630
+así que diremos 1, 2, 3, 4, 5, 6, pulso guardar y ahora
+
+37
+00:02:24.637 --> 00:02:28.610
+puedes ver que tenemos seis imágenes y son aleatorias.
+
+38
+00:02:28.610 --> 00:02:31.220
+Así que, estas son las diferentes imágenes que
+
+39
+00:02:31.220 --> 00:02:32.540
+vamos a estar usando a lo largo
+
+40
+00:02:32.540 --> 00:02:35.820
+de esta guía y también en algunas otras.
+
+41
+00:02:35.820 --> 00:02:40.820
+Así que empecemos y una cosa, la siguiente parte no es tan
+
+42
+00:02:41.510 --> 00:02:44.410
+necesaria para flex box pero lo que nos va a permitir
+
+43
+00:02:44.410 --> 00:02:49.410
+hacer es visualizar exactamente lo que está sucediendo
+
+44
+00:02:49.720 --> 00:02:52.740
+y cómo se ve la página, porque ahora mismo es solo
+
+45
+00:02:52.740 --> 00:02:56.720
+una página vacía, es un poco difícil imaginar dónde
+
+46
+00:02:56.720 --> 00:02:59.910
+Los elementos están en relación con el resto de la página.
+
+47
+00:02:59.910 --> 00:03:02.680
+Así que voy a poner un borde alrededor de toda esta página
+
+48
+00:03:02.680 --> 00:03:05.710
+y así vamos a ser capaces de ver exactamente dónde
+
+49
+00:03:05.710 --> 00:03:10.540
+está todo en relación con los otros elementos principales.
+
+50
+00:03:10.540 --> 00:03:14.840
+Así que voy a empezar diciendo cuerpo y luego
+
+51
+00:03:14.840 --> 00:03:19.840
+vamos con margen de cero, y probablemente ayudaría
+
+52
+00:03:21.130 --> 00:03:24.970
+si hago esto una etiqueta de estilo, hay tienes.
+
+53
+00:03:24.970 --> 00:03:29.610
+Así que voy a tener un cuerpo aquí, y va a tener
+
+54
+00:03:29.610 --> 00:03:31.760
+un margen de cero y luego
+
+55
+00:03:31.760 --> 00:03:34.050
+va a haber un relleno de cero.
+
+56
+00:03:34.050 --> 00:03:38.450
+Vamos a asegurarnos de que no tiene una etiqueta de cuerpo
+
+57
+00:03:38.450 --> 00:03:43.020
+como puedes ver aquí, tenemos un margen que va a
+
+58
+00:03:43.020 --> 00:03:45.630
+confundirnos un poco si estamos tratando
+
+59
+00:03:45.630 --> 00:03:48.620
+de realizar tareas como estirar los elementos
+
+60
+00:03:48.620 --> 00:03:50.930
+de un lado a otro de la página.
+
+61
+00:03:50.930 --> 00:03:53.850
+Así que voy a deshacerme de eso y ahora puedes ver que
+
+62
+00:03:53.850 --> 00:03:58.850
+no tenemos ningún margen o borde que esté en la página.
+
+63
+00:03:59.670 --> 00:04:04.120
+Para trabajar con la página lo más transparente posible.
+
+64
+00:04:04.120 --> 00:04:08.380
+Ahora vamos a trabajar con nuestra clase de contenedores.
+
+65
+00:04:08.380 --> 00:04:12.400
+Así que creamos ese contenedor y contenedor es un nombre
+
+66
+00:04:12.400 --> 00:04:16.550
+que vas a ver un poco en el mundo del CSS
+
+67
+00:04:16.550 --> 00:04:21.550
+y específicamente en Flexbox cada vez que creemos
+
+68
+00:04:21.940 --> 00:04:26.940
+algún elemento flex que contenga elementos secundarios,
+
+69
+00:04:27.440 --> 00:04:32.250
+así que aquí mismo, tenemos un contenedor que también va a
+
+70
+00:04:32.250 --> 00:04:35.590
+tener múltiples elementos dentro, como esta
+
+71
+00:04:35.590 --> 00:04:39.700
+clase de bloque de imágenes y estas imágenes dentro.
+
+72
+00:04:39.700 --> 00:04:44.360
+Lo que contenedor nos permite hacer es envolver todo eso
+
+73
+00:04:44.360 --> 00:04:48.180
+y luego ser capaces de declarar nuestros estilos en eso.
+
+74
+00:04:48.180 --> 00:04:52.710
+Así que con el contenedor, quiero tener un margen de cero
+
+75
+00:04:52.710 --> 00:04:57.210
+aquí también, y luego quiero tener una altura,
+
+76
+00:04:57.210 --> 00:04:59.330
+y esto puede parecer un poco diferente si nunca lo has
+
+77
+00:04:59.330 --> 00:05:02.450
+visto antes pero vamos a realizar un pequeño cálculo.
+
+78
+00:05:02.450 --> 00:05:07.450
+Así que voy a decir altura, calc, y luego quiero tener
+
+79
+00:05:07.990 --> 00:05:12.990
+un 100 % de la altura de la vista menos veinte píxeles,
+
+80
+00:05:14.520 --> 00:05:18.800
+y luego quiero hacer algo muy parecido para el ancho.
+
+81
+00:05:18.800 --> 00:05:22.540
+Así que voy a decir ancho, excepto en lugar de 100 %
+
+82
+00:05:22.540 --> 00:05:26.360
+de la altura de la vista, voy a decir que quiero que
+
+83
+00:05:26.360 --> 00:05:30.030
+para el ancho de vista, y en un poco cuando nos
+
+84
+00:05:30.030 --> 00:05:33.840
+veamos cómo toda nuestra configuración de flex
+
+85
+00:05:33.840 --> 00:05:36.060
+va a ser, esto va a tener sentido
+
+86
+00:05:36.060 --> 00:05:38.070
+Por qué estamos realizando este cálculo.
+
+87
+00:05:38.070 --> 00:05:41.330
+Pero esto es algo bastante bueno en CSS, esto no está
+
+88
+00:05:41.330 --> 00:05:45.000
+relacionado con Flexbox, puedes realizar cálculos
+
+89
+00:05:45.000 --> 00:05:49.470
+matemáticos y eso puede ayudar si has tenido un problema
+
+90
+00:05:49.470 --> 00:05:53.280
+donde uno de tus elementos está realmente desbordado,
+
+91
+00:05:53.280 --> 00:05:56.300
+puede ser porque tienes margen y cuando
+
+92
+00:05:56.300 --> 00:05:59.990
+realizas cálculos, puede restar ese margen.
+
+93
+00:05:59.990 --> 00:06:04.490
+Ahora que tenemos eso, vamos a crear nuestra frontera.
+
+94
+00:06:04.490 --> 00:06:09.367
+Voy a decir borde, diez píxeles, rojo sólido.
+
+95
+00:06:11.270 --> 00:06:15.140
+Pulso guardar, y ahora puedes ver que tenemos este borde,
+
+96
+00:06:15.140 --> 00:06:20.140
+y este es el lienzo en el que vamos a trabajar.
+
+97
+00:06:20.320 --> 00:06:22.480
+Así que ahora que tenemos todo eso, podemos
+
+98
+00:06:22.480 --> 00:06:24.820
+empezar a trabajar con Flexbox y en realidad vamos
+
+99
+00:06:24.820 --> 00:06:26.700
+a poder ver dónde está todo.
+
+100
+00:06:26.700 --> 00:06:31.700
+Así que ahora vamos a decir pantalla, flex, y si
+
+101
+00:06:34.830 --> 00:06:37.100
+pulso guardar ahora, vas a ver que nada
+
+102
+00:06:37.100 --> 00:06:41.040
+cambia porque ya teníamos exactamente los valores
+
+103
+00:06:41.040 --> 00:06:44.160
+por defecto que serían con Flexbox, donde estos elementos
+
+104
+00:06:44.160 --> 00:06:48.000
+están uno al lado del otro, así que por ahora, sin cambios.
+
+105
+00:06:48.000 --> 00:06:50.570
+Ahora hablemos de contenido justificado.
+
+106
+00:06:50.570 --> 00:06:55.570
+Vamos a decir justificar el contenido y luego centrarlo.
+
+107
+00:06:57.880 --> 00:07:02.130
+De momento nada, bueno, veamos qué está pasando ahora.
+
+108
+00:07:02.130 --> 00:07:07.130
+Ahora digamos alinear elementos y centrar.
+
+109
+00:07:09.030 --> 00:07:12.970
+Pulso guardar, y eso está alineado, entonces ¿por qué
+
+110
+00:07:12.970 --> 00:07:15.530
+no se han alineado nuestros contenidos justificados?
+
+111
+00:07:15.530 --> 00:07:19.230
+Y bueno, ese es todo el punto de esta guía,
+
+112
+00:07:19.230 --> 00:07:23.810
+y eso es porque el contenido justificado realiza una acción,
+
+113
+00:07:23.810 --> 00:07:27.010
+alinear elementos realiza una acción diferente, pero están
+
+114
+00:07:27.010 --> 00:07:30.980
+relacionados con el concepto de dirección flex.
+
+115
+00:07:30.980 --> 00:07:35.350
+Entonces, por defecto, si tienes un contenedor flex como
+
+116
+00:07:35.350 --> 00:07:40.290
+este, la forma predeterminada que se establece, o cómo
+
+117
+00:07:40.290 --> 00:07:44.290
+la dirección flex se establece, es que se establece como
+
+118
+00:07:44.290 --> 00:07:49.290
+una dirección basada en filas, y filas significa que va
+
+119
+00:07:49.740 --> 00:07:53.340
+de lado a lado, por eso nuestro justificar contenido
+
+120
+00:07:53.340 --> 00:07:55.460
+aquí realmente no hace nada.
+
+121
+00:07:55.460 --> 00:07:57.700
+Así que ahora vamos a ver cómo solucionar esto.
+
+122
+00:07:57.700 --> 00:08:02.700
+Así que si vengo aquí, y ahora voy a decir contenedor
+
+123
+00:08:02.910 --> 00:08:06.673
+y quiero ese conjunto de bloques de imágenes secundarias,
+
+124
+00:08:07.930 --> 00:08:12.157
+ahora voy a decir pantalla flex, y
+
+125
+00:08:13.750 --> 00:08:16.480
+voy a cambiar la dirección de flex.
+
+126
+00:08:16.480 --> 00:08:20.380
+Así que en lugar de ir con la fila predeterminada, ahora voy
+
+127
+00:08:20.380 --> 00:08:23.830
+con columna, no columnas, solo columna,
+
+128
+00:08:23.830 --> 00:08:27.470
+y ahora si pulso guardar, verás que esto ha
+
+129
+00:08:27.470 --> 00:08:30.530
+cambiado por completo cómo funciona la configuración.
+
+130
+00:08:30.530 --> 00:08:35.300
+Ahora tenemos todos los elementos centrados horizontalmente
+
+131
+00:08:35.300 --> 00:08:37.470
+y técnicamente se centran verticalmente.
+
+132
+00:08:37.470 --> 00:08:40.950
+Si vengo aquí abajo, puede ser difícil de ver dependiendo
+
+133
+00:08:40.950 --> 00:08:43.310
+de cuántos de estos tienes y cómo de grande es tu
+
+134
+00:08:43.310 --> 00:08:46.960
+pantalla, pero si quito tres de esos,
+
+135
+00:08:46.960 --> 00:08:49.930
+Verás que volvemos a tener los elementos centrados
+
+136
+00:08:49.930 --> 00:08:52.940
+directamente en la página, y lo guardaré ahora mismo
+
+137
+00:08:52.940 --> 00:08:55.450
+Sólo para esta resolución de pantalla.
+
+138
+00:08:55.450 --> 00:08:58.840
+Así que eso es algo que es un poco interesante
+
+139
+00:08:58.840 --> 00:09:02.112
+y hay algo aquí que acabo de hacer que tú
+
+140
+00:09:02.112 --> 00:09:04.470
+puedes o no haber notado pero
+
+141
+00:09:04.470 --> 00:09:05.303
+en realidad he creado dos contenedores flex.
+
+142
+00:09:05.303 --> 00:09:06.136
+Recuerda la regla de que cada vez que dices pantalla flex
+
+143
+00:09:11.890 --> 00:09:15.870
+dentro de una definición de clase, eso significa que eso es
+
+144
+00:09:15.870 --> 00:09:19.850
+un contenedor flex, por lo que esta clase de contenedor es
+
+145
+00:09:19.850 --> 00:09:24.650
+un contenedor flex, pero también este contenedor con
+
+146
+00:09:24.650 --> 00:09:29.650
+bloques de imágenes, también es un contenedor flex, y por
+
+147
+00:09:29.720 --> 00:09:33.770
+eso si quieres ver en base a qué tipo de modelo box
+
+148
+00:09:33.770 --> 00:09:38.220
+funciona, cada uno de estos elementos es una imagen,
+
+149
+00:09:38.220 --> 00:09:42.580
+y cada uno de estos es un elemento flex, pero
+
+150
+00:09:42.580 --> 00:09:46.470
+están anidados dentro de esta clase de bloques de imágenes.
+
+151
+00:09:46.470 --> 00:09:51.470
+Los bloques de imagen es un contenedor flex para imágenes.
+
+152
+00:09:52.320 --> 00:09:57.060
+Si subes en la jerarquía una más, esta clase contenedora
+
+153
+00:09:57.060 --> 00:10:01.960
+es el contenedor flex para esta clase, y si te resulta
+
+154
+00:10:01.960 --> 00:10:05.980
+un poco confuso, no te preocupes, se tarda un poco más
+
+155
+00:10:05.980 --> 00:10:08.140
+de tiempo en acostumbrarse a esta parte, pero parte de
+
+156
+00:10:08.140 --> 00:10:11.520
+la razón por la que estoy viendo esto ahora es porque
+
+157
+00:10:11.520 --> 00:10:15.120
+Si no entiendes esta parte o al menos
+
+158
+00:10:15.120 --> 00:10:17.860
+si no te lo han enseñado, entonces vas a estar siempre
+
+159
+00:10:17.860 --> 00:10:22.660
+confundido con cómo las definiciones de estilo flex
+
+160
+00:10:22.660 --> 00:10:25.730
+están afectando a los elementos de la página, porque
+
+161
+00:10:25.730 --> 00:10:29.150
+la forma en que funciona con esta relación
+
+162
+00:10:29.150 --> 00:10:32.100
+principal/secundario, y esto es lo que realmente me ayudó
+
+163
+00:10:32.100 --> 00:10:35.750
+a entender flex box cuando empecé a aprenderlo, fue que
+
+164
+00:10:35.750 --> 00:10:39.630
+tienes el concepto de contenedores, y luego tienes
+
+165
+00:10:39.630 --> 00:10:43.490
+los elementos a los que afectan, y por eso en este caso,
+
+166
+00:10:43.490 --> 00:10:47.430
+cuando digo aquí, pantalla flex y
+
+167
+00:10:47.430 --> 00:10:50.860
+justificar contenido, centrar, alinear elementos, centrar,
+
+168
+00:10:50.860 --> 00:10:53.960
+lo que estoy haciendo aquí es que estoy diciendo
+
+169
+00:10:53.960 --> 00:10:57.040
+quiero que le hagas eso a este div.
+
+170
+00:10:57.040 --> 00:11:01.410
+Ahora esto no va a afectar a las imágenes,
+
+171
+00:11:01.410 --> 00:11:06.410
+las imágenes se ven afectadas aquí, así porque cuando creé
+
+172
+00:11:06.700 --> 00:11:09.900
+un contenedor nuevo aquí que dije pantalla flex, significa
+
+173
+00:11:09.900 --> 00:11:14.900
+que convierto bloques de imágenes en su contenedor flex
+
+174
+00:11:16.070 --> 00:11:20.000
+y luego cualquier cambio que haga aquí, como agregar
+
+175
+00:11:20.000 --> 00:11:23.400
+volumna de dirección flex, nada de eso
+
+176
+00:11:23.400 --> 00:11:26.120
+va a ser lo que afecte a los elementos de la imagen.
+
+177
+00:11:26.120 --> 00:11:30.280
+Y si tienes en cuenta ese tipo de jerarquía, entonces
+
+178
+00:11:30.280 --> 00:11:35.230
+Eso va a ayudar realmente a solidificar todo.
+
+179
+00:11:35.230 --> 00:11:39.313
+Así que si vengo aquí, y podría cambiar esto a fila,
+
+180
+00:11:40.180 --> 00:11:44.350
+y pulsar guardar, y ahora puedes ver que ya no están
+
+181
+00:11:44.350 --> 00:11:48.470
+apilados uno encima del otro, si no que están al lado.
+
+182
+00:11:48.470 --> 00:11:51.700
+Y también podría simplemente eliminar eso por completo
+
+183
+00:11:51.700 --> 00:11:53.470
+y deshacerme de él, porque recuerda
+
+184
+00:11:53.470 --> 00:11:57.140
+la dirección flex por defecto siempre es fila.
+
+185
+00:11:57.140 --> 00:12:01.300
+La única forma en que será diferente es
+
+186
+00:12:01.300 --> 00:12:05.860
+si dices explícitamente que quieres cambiarlo a columna.
+
+187
+00:12:05.860 --> 00:12:08.990
+Y así, cada vez que necesites apilar elementos
+
+188
+00:12:08.990 --> 00:12:11.160
+uno encima del otro, quieres usar
+
+189
+00:12:11.160 --> 00:12:14.720
+columna de dirección de flexión y por defecto,
+
+190
+00:12:14.720 --> 00:12:17.870
+Los elementos simplemente van a ir uno al lado del otro.
+
+191
+00:12:17.870 --> 00:12:20.570
+Así que ese es el comportamiento predeterminado cuando
+
+192
+00:12:20.570 --> 00:12:23.423
+estás usando flex box y dirección flex.
+

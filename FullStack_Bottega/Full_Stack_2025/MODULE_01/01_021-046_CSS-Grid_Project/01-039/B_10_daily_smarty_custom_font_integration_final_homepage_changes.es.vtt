@@ -1,0 +1,306 @@
+WEBVTT
+
+1
+00:00:00.512 --> 00:00:03.980
+<v ->En esta guía vamos a terminar la página de inicio</v>
+
+2
+00:00:03.980 --> 00:00:07.010
+y también vamos a actualizar estas fuentes,
+
+3
+00:00:07.010 --> 00:00:09.610
+así que creo que esta va a ser una muy buena guía
+
+4
+00:00:09.610 --> 00:00:11.550
+donde podamos limpiar todo.
+
+5
+00:00:11.550 --> 00:00:14.980
+Ahora, voy a abrir Google Fonts.
+
+6
+00:00:14.980 --> 00:00:18.020
+Para ello, accede a fonts.google.com
+
+7
+00:00:18.020 --> 00:00:23.020
+y la fuente con la que me voy a ir aquí es la fuente Lato.
+
+8
+00:00:24.440 --> 00:00:27.200
+Así que puedo hacer clic aquí para añadirlo
+
+9
+00:00:27.200 --> 00:00:30.270
+y ahora esto me va a dar una familia seleccionada.
+
+10
+00:00:30.270 --> 00:00:33.950
+Va a dar un enlace que podemos usar para importarlo
+
+11
+00:00:33.950 --> 00:00:36.890
+y también da algunas instrucciones útiles.
+
+12
+00:00:36.890 --> 00:00:39.000
+Sólo voy a copiar esto
+
+13
+00:00:39.000 --> 00:00:43.150
+y porque esto va a dentro de nuestro archivo CSS,
+
+14
+00:00:43.150 --> 00:00:46.090
+tienes que asegurarte de que se coloque
+
+15
+00:00:46.090 --> 00:00:50.570
+y la importación se coloca encima de la hoja de estilo.
+
+16
+00:00:50.570 --> 00:00:53.340
+Así que voy a ponerlo aquí,
+
+17
+00:00:53.340 --> 00:00:55.637
+pulsa guardar y ahora podemos importar
+
+18
+00:00:55.637 --> 00:00:58.950
+directamente en este fichero principal.
+
+19
+00:00:58.950 --> 00:01:01.380
+Voy a desplazarme hasta la parte de arriba,
+
+20
+00:01:01.380 --> 00:01:04.060
+incluso encima del contenedor porque voy a poner
+
+21
+00:01:04.060 --> 00:01:06.600
+algunas nuevas reglas universales aquí.
+
+22
+00:01:06.600 --> 00:01:10.370
+Voy a decir que para todo el documento html
+
+23
+00:01:10.370 --> 00:01:15.337
+quiero que la familia tipográfica sea Lato
+
+24
+00:01:17.240 --> 00:01:21.150
+y luego los refuerzos para ser sans-serif.
+
+25
+00:01:21.150 --> 00:01:23.140
+Entonces también voy a añadir algunos
+
+26
+00:01:23.140 --> 00:01:26.350
+otros elementos aquí como el tamaño de una caja,
+
+27
+00:01:26.350 --> 00:01:30.010
+esto va a usar la caja fronteriza
+
+28
+00:01:30.010 --> 00:01:32.950
+y luego el tamaño de la fuente.
+
+29
+00:01:32.950 --> 00:01:36.655
+Así que voy a darle un tamaño de fuente predefinido,
+
+30
+00:01:36.655 --> 00:01:41.568
+entonces este tamaño de fuente va a ser del 62,5%.
+
+31
+00:01:44.650 --> 00:01:48.985
+¿Recuerdas cuando hice referencia a cómo usamos REM?
+
+32
+00:01:48.985 --> 00:01:53.985
+Este html va a causar que todos los tamaños de fuente
+
+33
+00:01:55.020 --> 00:02:00.020
+para empezar con un tamaño de fuente raíz de 62.5.
+
+34
+00:02:00.170 --> 00:02:02.520
+Así que cada vez que llamamos a un tamaño de fuente
+
+35
+00:02:02.520 --> 00:02:06.302
+y decimos que el tamaño de fuente es, digamos, 5.rem
+
+36
+00:02:06.302 --> 00:02:09.793
+entonces va a empezar con el conocimiento
+
+37
+00:02:09.793 --> 00:02:13.640
+que empieza en 62.5,
+
+38
+00:02:13.640 --> 00:02:17.150
+esto va a ayudar a reducir todos esos tamaños de fuente.
+
+39
+00:02:17.150 --> 00:02:19.780
+Así que probemos esto y veamos si funciona
+
+40
+00:02:19.780 --> 00:02:23.000
+y ahí vamos, esto ya se ve mucho mejor.
+
+41
+00:02:23.000 --> 00:02:27.825
+Puedes ver cuánto más de cerca está mirando esto
+
+42
+00:02:27.825 --> 00:02:29.450
+el resultado final, así que sólo tenemos
+
+43
+00:02:29.450 --> 00:02:31.700
+algunos elementos más que añadir
+
+44
+00:02:31.700 --> 00:02:33.990
+y habremos terminado
+
+45
+00:02:33.990 --> 00:02:36.140
+o por lo menos todo lo que se ha hecho con esta página.
+
+46
+00:02:36.140 --> 00:02:39.060
+Así que ahora voy a ir justo aquí abajo
+
+47
+00:02:39.060 --> 00:02:41.840
+y voy a añadir más reglas de comodín.
+
+48
+00:02:41.840 --> 00:02:44.660
+Así que voy a decir * es igual
+
+49
+00:02:44.660 --> 00:02:48.170
+y luego voy a poner esto en la línea de abajo.
+
+50
+00:02:48.170 --> 00:02:50.210
+Voy a usar unos cuantos pseudo-selectores más,
+
+51
+00:02:50.210 --> 00:02:54.403
+así que voy a decir *::antes
+
+52
+00:02:55.320 --> 00:02:59.810
+y luego *::después
+
+53
+00:02:59.810 --> 00:03:02.880
+y todo lo que esto va a hacer es asegurarse
+
+54
+00:03:02.880 --> 00:03:07.240
+de que si es que hay algo que se carga o algo así más tarde,
+
+55
+00:03:07.240 --> 00:03:09.389
+que esto asegura que antes y después
+
+56
+00:03:09.389 --> 00:03:12.850
+que se van a poner en marcha unas cuantas reglas.
+
+57
+00:03:12.850 --> 00:03:16.150
+Así que vamos a decir que nuestro margen va a ser
+
+58
+00:03:16.150 --> 00:03:17.610
+para empezar con cero,
+
+59
+00:03:17.610 --> 00:03:20.830
+porque por defecto un documento html tiene
+
+60
+00:03:20.830 --> 00:03:23.510
+un poco de margen y acolchado integrado
+
+61
+00:03:23.510 --> 00:03:25.700
+pero no queremos nada de eso.
+
+62
+00:03:25.700 --> 00:03:30.083
+También queremos que el tamaño de la caja se herede.
+
+63
+00:03:32.090 --> 00:03:36.550
+Le di a guardar, ahora venimos y fue un poco difícil
+
+64
+00:03:36.550 --> 00:03:38.600
+de ver porque era bastante sutil,
+
+65
+00:03:38.600 --> 00:03:40.870
+que ahora si vienes aquí puedes ver
+
+66
+00:03:40.870 --> 00:03:44.800
+que estamos casi idénticamente con el diseño.
+
+67
+00:03:44.800 --> 00:03:47.800
+Así que definitivamente estoy muy contento con esto
+
+68
+00:03:47.800 --> 00:03:50.820
+y si reducimos esto puedes ver
+
+69
+00:03:50.820 --> 00:03:53.090
+que es totalmente receptivo,
+
+70
+00:03:53.090 --> 00:03:55.919
+así que nuestros últimos mensajes son receptivos,
+
+71
+00:03:55.919 --> 00:03:59.330
+la barra de búsqueda justo aquí es,
+
+72
+00:03:59.330 --> 00:04:01.400
+tenemos este pequeño efecto de revoloteo
+
+73
+00:04:01.400 --> 00:04:03.230
+en lugar de ese contorno feo,
+
+74
+00:04:03.230 --> 00:04:05.930
+así que estoy contento con cómo se ve esto.
+
+75
+00:04:05.930 --> 00:04:08.160
+Creo que hemos terminado con esta página
+
+76
+00:04:08.160 --> 00:04:11.763
+y estamos listos para pasar a la página de resultados.
+

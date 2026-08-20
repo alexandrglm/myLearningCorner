@@ -1,0 +1,498 @@
+WEBVTT
+
+1
+00:00:01.130 --> 00:00:02.410
+<v Narrador>Ustedes puede que hayan notado que muchos</v>
+
+2
+00:00:02.410 --> 00:00:05.500
+de los ejemplos que doy, en este curso,
+
+3
+00:00:05.500 --> 00:00:08.940
+han girado realmente alrededor de trabajar con APIs.
+
+4
+00:00:08.940 --> 00:00:10.210
+Una tremenda razón para eso,
+
+5
+00:00:10.210 --> 00:00:14.560
+es porque una de las formas más modernas de usar Python
+
+6
+00:00:14.560 --> 00:00:18.790
+en desarrollo es construir y administrar requerimientos API,
+
+7
+00:00:18.790 --> 00:00:21.140
+y entonces es por eso que muchos de los ejemplos
+
+8
+00:00:21.140 --> 00:00:22.770
+realmente se enfocan en eso.
+
+9
+00:00:22.770 --> 00:00:26.500
+Y esta guía se va a enfocar específicamente en
+
+10
+00:00:26.500 --> 00:00:31.500
+cómo puedes trabajar con data API para chequear los datos
+
+11
+00:00:32.370 --> 00:00:36.570
+internos con respuestas de API, y eso puede sonar muy
+
+12
+00:00:36.570 --> 00:00:39.600
+confuso si nunca antes has trabajado con APIs,
+
+13
+00:00:39.600 --> 00:00:43.070
+así que voy a repasar algunos ejemplos.
+
+14
+00:00:43.070 --> 00:00:45.080
+Entonces una cosa que los puede sorprender,
+
+15
+00:00:45.080 --> 00:00:47.060
+si nunca ha trabajado con una API, es que
+
+16
+00:00:47.060 --> 00:00:51.800
+la mayoría de los datos API vienen en un formato cadena.
+
+17
+00:00:51.800 --> 00:00:54.170
+Eso en parte es la razón porque la sección sobre cadenas
+
+18
+00:00:54.170 --> 00:00:57.210
+fue bastante larga, porque quería darles todas las
+
+19
+00:00:57.210 --> 00:01:00.670
+herramientas necesarias para poder manipular,
+
+20
+00:01:00.670 --> 00:01:04.010
+buscar y abajar con datos en cadena,
+
+21
+00:01:04.010 --> 00:01:06.000
+porque van a estar usando eso bastante
+
+22
+00:01:06.000 --> 00:01:08.840
+si están trabajando con API´s en Python.
+
+23
+00:01:08.840 --> 00:01:13.160
+Y entonces, lo que tengo aquí son dos elementos diferentes.
+
+24
+00:01:13.160 --> 00:01:17.770
+Tengo una data API variable que almacena 5.
+
+25
+00:01:17.770 --> 00:01:20.163
+Es una cadena pero está almacenando 5 adentro.
+
+26
+00:01:20.163 --> 00:01:23.300
+Y luego tengo una variable de saludo,
+
+27
+00:01:23.300 --> 00:01:26.380
+esa simplemente almacena la palabra Hola.
+
+28
+00:01:26.380 --> 00:01:28.860
+Ahora un patrón muy común que ustedes van a ver
+
+29
+00:01:28.860 --> 00:01:31.150
+cuando trabajen con APIs es,
+
+30
+00:01:31.150 --> 00:01:33.458
+ustedes van a establecer algún tipo de solicitud,
+
+31
+00:01:33.458 --> 00:01:37.720
+y luego necesitan ir y correr una consulta de base de datos
+
+32
+00:01:37.720 --> 00:01:40.380
+sobre eso, y todo eso suena bastante sencillo,
+
+33
+00:01:40.380 --> 00:01:42.410
+sin embargo, no lo es.
+
+34
+00:01:42.410 --> 00:01:46.390
+Por que muchas veces, lo que necesitan es alguna
+
+35
+00:01:46.390 --> 00:01:47.670
+identificación para un registro de base de datos,
+
+36
+00:01:47.670 --> 00:01:51.050
+y la base de datos espera que se le pase un entero.
+
+37
+00:01:51.050 --> 00:01:55.020
+Y lo que tenemos aquí en la línea uno se ve como un entero,
+
+38
+00:01:55.020 --> 00:01:56.890
+pero técnicamente, es una cadena.
+
+39
+00:01:56.890 --> 00:02:00.100
+Es una cadena que tiene el número cinco en ella.
+
+40
+00:02:00.100 --> 00:02:02.500
+Y entonces, hay muchas veces donde ustedes quieren poder
+
+41
+00:02:02.500 --> 00:02:06.080
+correr una consulta de base de datos, pero necesitan estar
+
+42
+00:02:06.080 --> 00:02:08.220
+seguros, necesitan estar 100% seguros,
+
+43
+00:02:08.220 --> 00:02:12.420
+que su cadena sí representa un entero
+
+44
+00:02:12.420 --> 00:02:17.210
+y no solo un tradicional set alfanumérico de caracteres,
+
+45
+00:02:17.210 --> 00:02:18.730
+como lo que tenemos justo aquí,
+
+46
+00:02:18.730 --> 00:02:21.620
+y de eso es lo que se va a tratar esta guía.
+
+47
+00:02:21.620 --> 00:02:25.610
+Entonces voy a imprimir unos pocos elementos diferentes aquí
+
+48
+00:02:25.610 --> 00:02:27.840
+Luego voy a llamar api_data,
+
+49
+00:02:27.840 --> 00:02:30.800
+y luego voy a llamar una función llamada isalpha,
+
+50
+00:02:32.020 --> 00:02:32.853
+y entonces, es una función, así que la voy a terminar en
+
+51
+00:02:32.853 --> 00:02:33.770
+paréntesis.
+
+52
+00:02:35.060 --> 00:02:38.190
+Y voy a hacer la misma cosa para nuestro saludo,
+
+53
+00:02:38.190 --> 00:02:40.940
+entonces voy a decir saludo.isalpha.
+
+54
+00:02:40.940 --> 00:02:43.040
+Y entonces ahora, si corro esto,
+
+55
+00:02:43.040 --> 00:02:46.470
+pueden ver que el primer elemento imprime falso
+
+56
+00:02:46.470 --> 00:02:48.410
+y el segundo es verdadero.
+
+57
+00:02:48.410 --> 00:02:51.458
+Y entonces lo que esto está haciendo es verificar para ver
+
+58
+00:02:51.458 --> 00:02:54.000
+¿es este un valor variable?
+
+59
+00:02:54.000 --> 00:02:58.230
+Entonces ¿es este 5 un set de caracteres alfanuméricos o no?
+
+60
+00:02:58.230 --> 00:03:02.930
+Este es un 5 dentro de una cadena, así que no es alpha,
+
+61
+00:03:02.930 --> 00:03:05.410
+y entonces es falso.
+
+62
+00:03:05.410 --> 00:03:08.510
+Ahora el saludo Hola contiene dos caracteres
+
+63
+00:03:08.510 --> 00:03:10.420
+y ambos son alfanuméricos,
+
+64
+00:03:10.420 --> 00:03:12.960
+así que sí, esos son verdaderos.
+
+65
+00:03:12.960 --> 00:03:16.720
+Entonces esta es una manera de verificar y ver qué valor es.
+
+66
+00:03:16.720 --> 00:03:19.539
+Ahora les voy a mostrar en un segundo por qué esto,
+
+67
+00:03:19.539 --> 00:03:21.420
+tan útil como es,
+
+68
+00:03:21.420 --> 00:03:26.150
+todavía no es probablemente el más sencillo de usar,
+
+69
+00:03:26.150 --> 00:03:27.660
+cuando se trabaja con APIs.
+
+70
+00:03:27.660 --> 00:03:30.090
+Y les voy a mostrar el que yo utilizo más,
+
+71
+00:03:30.090 --> 00:03:33.580
+y ese es isnumeric.
+
+72
+00:03:33.580 --> 00:03:36.760
+Entonces voy a decir es... numérico,
+
+73
+00:03:36.760 --> 00:03:39.100
+y entonces voy a comentar estos,
+
+74
+00:03:39.100 --> 00:03:42.274
+solo así no nos confundiremos en cuál es la salida.
+
+75
+00:03:42.274 --> 00:03:43.670
+Todo claro.
+
+76
+00:03:43.670 --> 00:03:45.190
+Y corro de nuevo.
+
+77
+00:03:45.190 --> 00:03:47.230
+Y ahora pueden ver que está cambiado.
+
+78
+00:03:47.230 --> 00:03:50.560
+Así que ahora estamos chequeando para ver es el valor
+
+79
+00:03:50.560 --> 00:03:53.400
+numérico, y en este caso, 5 en numérico.
+
+80
+00:03:53.400 --> 00:03:55.807
+Puede ser una cadena, pero dentro de esa cadena.
+
+81
+00:03:55.807 --> 00:03:57.860
+Es un número,
+
+82
+00:03:57.860 --> 00:04:00.210
+y la misma cosa con Hola.
+
+83
+00:04:00.210 --> 00:04:03.982
+Hola es un set de caracteres alfanuméricos, así que no es
+
+84
+00:04:03.982 --> 00:04:06.174
+numérico y por consiguiente, es falso.
+
+85
+00:04:06.174 --> 00:04:10.630
+Ahora, yo típicamente, cuando estoy desarrollando algún tipo
+
+86
+00:04:10.630 --> 00:04:14.300
+de, estoy trabajando con una API y estoy analizando enteros
+
+87
+00:04:14.300 --> 00:04:16.030
+a una consulta de base de datos,
+
+88
+00:04:16.030 --> 00:04:19.910
+Típicamente verifico si ellos son numéricos,
+
+89
+00:04:19.910 --> 00:04:22.240
+versus usar el is.alpha.
+
+90
+00:04:22.240 --> 00:04:24.280
+Y la razón principal es esta,
+
+91
+00:04:24.280 --> 00:04:27.840
+es que puedo obtener algunos falsos positivos con is.alpha.
+
+92
+00:04:27.840 --> 00:04:31.623
+Y comentaré eso y volvamos aquí,
+
+93
+00:04:32.650 --> 00:04:35.710
+y voy simplemente a de hecho no comentar este,
+
+94
+00:04:35.710 --> 00:04:37.920
+porque sabemos que funciona.
+
+95
+00:04:37.920 --> 00:04:39.710
+Así que este funciona para verificar ver
+
+96
+00:04:39.710 --> 00:04:43.540
+es un valor numérico dentro o no,
+
+97
+00:04:43.540 --> 00:04:47.149
+pero una cosa un poquito tramposa es, pueden pensar que
+
+98
+00:04:47.149 --> 00:04:51.190
+si tecleo Hola ahí, ustedes pueden pensar que esto
+
+99
+00:04:51.190 --> 00:04:54.420
+funcionaría que esto sería verdadero, pero si corro esto,
+
+100
+00:04:54.420 --> 00:04:56.080
+verán que esto es falso.
+
+101
+00:04:56.080 --> 00:04:59.760
+Y la razón es porque, puede ser alfanumérico
+
+102
+00:04:59.760 --> 00:05:04.560
+para H-I y luego T-H-E-R-E, sin embargo,
+
+103
+00:05:04.560 --> 00:05:08.050
+este espacio en el medio no es alfanumérico,
+
+104
+00:05:08.050 --> 00:05:11.440
+y entonces lo que pasa es que va a través de la cadena
+
+105
+00:05:11.440 --> 00:05:16.440
+y is.alpha devolverá verdadero solamente si el 100% de los
+
+106
+00:05:17.810 --> 00:05:20.310
+valores en esa cadena so alfanuméricos.
+
+107
+00:05:20.310 --> 00:05:25.310
+Así que si quito eso, corrió de nuevo, ahora es verdadero.
+
+108
+00:05:25.890 --> 00:05:29.080
+Entonces, eso es parte del porqué yo, personalmente,
+
+109
+00:05:29.080 --> 00:05:31.560
+no uso mucho is.alpha.
+
+110
+00:05:31.560 --> 00:05:33.840
+Estoy seguro que hay muchas instancias donde puede se útil,
+
+111
+00:05:33.840 --> 00:05:36.300
+pero quería mostrarles ambas opciones,
+
+112
+00:05:36.300 --> 00:05:40.180
+y lo que tenemos acá con isnumeric es increíblemente útil,
+
+113
+00:05:40.180 --> 00:05:42.770
+porque hay tantas ocasiones donde ustedes podrían
+
+114
+00:05:42.770 --> 00:05:45.010
+obtener data desde APIs si están
+
+115
+00:05:45.010 --> 00:05:46.880
+trabajando en algoritmos de aprendizaje de máquina.
+
+116
+00:05:46.880 --> 00:05:49.640
+Podrían obtener data donde piensan que van a btener
+
+117
+00:05:49.640 --> 00:05:53.260
+algún tipo de entero, pero resulta que, en cambio,
+
+118
+00:05:53.260 --> 00:05:57.480
+ponen una frase ahí y si ustedes ponen el set completo
+
+119
+00:05:57.480 --> 00:05:59.620
+de sus otros métodos arriba de eso,
+
+120
+00:05:59.620 --> 00:06:01.730
+entonces van a correr errores
+
+121
+00:06:01.730 --> 00:06:04.210
+y entonces es bueno verificar para estar seguros que
+
+122
+00:06:04.210 --> 00:06:06.820
+la data que está contenida dentro de una cadena,
+
+123
+00:06:06.820 --> 00:06:10.380
+es algo que ustedes pueden tratar como un número
+
+124
+00:06:10.380 --> 00:06:14.113
+y eso es lo que el proceso isnumeric nos entrega.
+

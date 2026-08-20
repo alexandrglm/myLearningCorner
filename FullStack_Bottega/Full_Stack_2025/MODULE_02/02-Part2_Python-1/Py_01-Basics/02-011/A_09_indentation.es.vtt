@@ -1,0 +1,646 @@
+WEBVTT
+
+1
+00:00:00.810 --> 00:00:02.980
+<v Instructor>En esta lección examinaremos</v>
+
+2
+00:00:02.980 --> 00:00:06.030
+cómo Python funciona con la sangría
+
+3
+00:00:06.030 --> 00:00:08.780
+y luego analizaremos
+
+4
+00:00:08.780 --> 00:00:11.600
+las mejores prácticas en la comunidad de Python,
+
+5
+00:00:11.600 --> 00:00:14.940
+cuando se trata de cómo debes estructurar
+
+6
+00:00:14.940 --> 00:00:17.410
+y diseñar tus programas de Python.
+
+7
+00:00:17.410 --> 00:00:19.230
+Ahora, una serie de conceptos
+
+8
+00:00:19.230 --> 00:00:20.460
+que vamos a analizar
+
+9
+00:00:20.460 --> 00:00:24.040
+y algunos de los ejemplos pueden no tener sentido todavía,
+
+10
+00:00:24.040 --> 00:00:27.210
+porque para ver correctamente los ejemplos
+
+11
+00:00:27.210 --> 00:00:30.230
+de cómo trabajar con la sangría en Python,
+
+12
+00:00:30.230 --> 00:00:32.160
+tendrás que ver algo de código,
+
+13
+00:00:32.160 --> 00:00:34.270
+que aún no hemos visto.
+
+14
+00:00:34.270 --> 00:00:37.240
+Tales como funciones y bloques de código.
+
+15
+00:00:37.240 --> 00:00:40.710
+Y entonces no quiero que la sintaxis te intimide
+
+16
+00:00:40.710 --> 00:00:42.770
+o que te sientas perdido.
+
+17
+00:00:42.770 --> 00:00:45.630
+Así que no te preocupes por esa parte,
+
+18
+00:00:45.630 --> 00:00:49.720
+mantente enfocado en la discusión sobre el estilo
+
+19
+00:00:49.720 --> 00:00:51.230
+y la sangría.
+
+20
+00:00:51.230 --> 00:00:53.850
+Porque te ayudará a prepararte
+
+21
+00:00:53.850 --> 00:00:57.170
+cuando lleguemos a esos temas más avanzados.
+
+22
+00:00:57.170 --> 00:01:00.060
+Así que aquí tengo una función de suma básica.
+
+23
+00:01:00.060 --> 00:01:03.620
+Toma el número uno y el número dos
+
+24
+00:01:03.620 --> 00:01:08.370
+y luego imprime la suma de ambos números.
+
+25
+00:01:08.370 --> 00:01:10.660
+Y si ejecuto esto
+
+26
+00:01:10.660 --> 00:01:12.500
+y paso dos y cuatro,
+
+27
+00:01:12.500 --> 00:01:15.080
+funciona correctamente y obtengo seis.
+
+28
+00:01:15.080 --> 00:01:17.350
+Y lo que tenemos aquí en la línea dos,
+
+29
+00:01:17.350 --> 00:01:19.960
+es lo que se llama un bloque de código.
+
+30
+00:01:19.960 --> 00:01:24.060
+Y aquí es donde se va a utilizar la sangría.
+
+31
+00:01:24.060 --> 00:01:26.170
+Así que esto es muy importante,
+
+32
+00:01:26.170 --> 00:01:28.550
+porque si no uso sangría
+
+33
+00:01:28.550 --> 00:01:31.590
+y digo que tengo la declaración impresa en línea,
+
+34
+00:01:31.590 --> 00:01:34.710
+justo debajo de esta definición
+
+35
+00:01:34.710 --> 00:01:37.490
+e intento ejecutarla, obtendré un error.
+
+36
+00:01:37.490 --> 00:01:39.930
+Y como puedes ver aquí en el lado derecho,
+
+37
+00:01:39.930 --> 00:01:42.520
+esto da como resultado un error de sangrado
+
+38
+00:01:42.520 --> 00:01:44.490
+y brinda algunos consejos útiles.
+
+39
+00:01:44.490 --> 00:01:48.220
+Dice que esperaba un bloque con sangría
+
+40
+00:01:48.220 --> 00:01:50.550
+y eso nos da una pista,
+
+41
+00:01:50.550 --> 00:01:52.830
+que necesitamos sangrar esto,
+
+42
+00:01:52.830 --> 00:01:56.370
+para que funcione una vez que solucione ese error.
+
+43
+00:01:56.370 --> 00:01:57.540
+Lo corro de nuevo.
+
+44
+00:01:57.540 --> 00:01:59.850
+Y está de vuelta al trabajo.
+
+45
+00:01:59.850 --> 00:02:04.830
+Eso es una introducción básica a la sangría.
+
+46
+00:02:04.830 --> 00:02:07.062
+Y vamos a entrar mucho más en esto,
+
+47
+00:02:07.062 --> 00:02:09.712
+cuando vayamos a nuestra sección sobre cómo funcionan
+
+48
+00:02:09.712 --> 00:02:11.450
+las funciones en Python.
+
+49
+00:02:11.450 --> 00:02:13.930
+Pero el siguiente tema que quiero discutir,
+
+50
+00:02:13.930 --> 00:02:16.750
+trata específicamente sobre seguir
+
+51
+00:02:16.750 --> 00:02:19.100
+las recomendaciones de la comunidad
+
+52
+00:02:19.100 --> 00:02:23.510
+y si vamos a usar espacios o pestañas
+
+53
+00:02:23.510 --> 00:02:25.430
+y si vamos a usar espacios,
+
+54
+00:02:25.430 --> 00:02:28.870
+cuántos de ellos vamos a utilizar.
+
+55
+00:02:28.870 --> 00:02:30.510
+Cuando me veas trabajar,
+
+56
+00:02:30.510 --> 00:02:32.680
+con Repl.it a través de este curso,
+
+57
+00:02:32.680 --> 00:02:34.900
+que voy a hacer bastante,
+
+58
+00:02:34.900 --> 00:02:39.900
+entonces Repl.it usará dos espacios por defecto.
+
+59
+00:02:40.400 --> 00:02:42.580
+Y si quieres cambiar eso,
+
+60
+00:02:42.580 --> 00:02:46.270
+puedes hacer clic en el icono de configuración aquí.
+
+61
+00:02:46.270 --> 00:02:49.440
+Y luego puedes cambiar cualquiera de los ajustes
+
+62
+00:02:49.440 --> 00:02:50.830
+que quieras aquí.
+
+63
+00:02:50.830 --> 00:02:54.820
+Convierte automáticamente las pestañas en espacios.
+
+64
+00:02:54.820 --> 00:02:56.400
+Podrías usar pestañas si quieres.
+
+65
+00:02:56.400 --> 00:02:57.930
+Prefiero los espacios.
+
+66
+00:02:57.930 --> 00:03:01.470
+Y luego también podrías cambiar el tamaño de sangría.
+
+67
+00:03:01.470 --> 00:03:04.820
+Ahora esto va a entrar en
+
+68
+00:03:04.820 --> 00:03:08.690
+un debate bastante acalorado en la comunidad de Python.
+
+69
+00:03:08.690 --> 00:03:12.130
+Y te voy a dar mi recomendación personal
+
+70
+00:03:12.130 --> 00:03:15.660
+y luego te dejaré que te decidas.
+
+71
+00:03:15.660 --> 00:03:17.840
+Tengo la mía puesta a dos.
+
+72
+00:03:17.840 --> 00:03:21.080
+Eso tiene más que ver con el hecho de que uso Repl.it,
+
+73
+00:03:21.080 --> 00:03:24.430
+tanto para la programación en Python como para Ruby.
+
+74
+00:03:24.430 --> 00:03:27.150
+Y en la comunidad de Ruby,
+
+75
+00:03:27.150 --> 00:03:30.280
+normalmente vas a usar dos espacios.
+
+76
+00:03:30.280 --> 00:03:35.280
+En Python, verás a muchos individuos que usan dos
+
+77
+00:03:35.450 --> 00:03:38.330
+y también verás muchos que usan a cuatro.
+
+78
+00:03:38.330 --> 00:03:41.197
+Y luego tendrás algunos debates
+
+79
+00:03:41.197 --> 00:03:43.830
+bastante intensos sobre cuál es mejor.
+
+80
+00:03:43.830 --> 00:03:46.560
+Y para que puedan verlo en la práctica,
+
+81
+00:03:46.560 --> 00:03:48.790
+abriré aquí mismo, DataCamp,
+
+82
+00:03:48.790 --> 00:03:52.460
+que es una herramienta popular en línea para Data Science.
+
+83
+00:03:52.460 --> 00:03:57.460
+Y como puedes ver, su código utiliza dos espacios.
+
+84
+00:03:57.840 --> 00:03:59.650
+Y para que puedan ver eso,
+
+85
+00:03:59.650 --> 00:04:02.450
+decidieron ir con ese enfoque.
+
+86
+00:04:02.450 --> 00:04:04.350
+Ahora si voy a un sitio diferente.
+
+87
+00:04:04.350 --> 00:04:08.250
+Esta es una de las piezas clave de la documentación,
+
+88
+00:04:08.250 --> 00:04:09.730
+se encontrará con bastante,
+
+89
+00:04:09.730 --> 00:04:12.890
+cuando esté en Google varios conceptos en Python.
+
+90
+00:04:12.890 --> 00:04:17.480
+Puedes ver que su bloque de código tiene cuatro espacios.
+
+91
+00:04:17.480 --> 00:04:20.510
+Y entonces verás que ambos funcionan.
+
+92
+00:04:20.510 --> 00:04:23.740
+Entonces, cuando se trata del compilador de Python,
+
+93
+00:04:23.740 --> 00:04:26.270
+verás esta declaración aquí,
+
+94
+00:04:26.270 --> 00:04:28.310
+mirará esta
+
+95
+00:04:28.310 --> 00:04:32.830
+y verás la que tengo aquí como nuestro ejemplo.
+
+96
+00:04:32.830 --> 00:04:36.070
+Y todos estos van a funcionar perfectamente bien,
+
+97
+00:04:36.070 --> 00:04:38.490
+desde una perspectiva de codificación pura.
+
+98
+00:04:38.490 --> 00:04:40.460
+Ahora, cuál de ellos vas a usar,
+
+99
+00:04:40.460 --> 00:04:44.460
+probablemente se determinará según tus preferencias
+
+100
+00:04:44.460 --> 00:04:46.740
+y el equipo de desarrolladores,
+
+101
+00:04:46.740 --> 00:04:50.070
+si estás en una organización con la que trabajas.
+
+102
+00:04:50.070 --> 00:04:52.961
+Mi preferencia personal cuando estoy trabajando
+
+103
+00:04:52.961 --> 00:04:54.770
+en mis propios proyectos
+
+104
+00:04:54.770 --> 00:04:58.770
+es tener mi editor de texto local configurado en cuatro.
+
+105
+00:04:58.770 --> 00:05:01.800
+Y si abro mi propio editor de texto,
+
+106
+00:05:01.800 --> 00:05:04.033
+puedes ver que de forma predeterminada,
+
+107
+00:05:04.033 --> 00:05:06.660
+lo tengo configurado en cuatro espacios.
+
+108
+00:05:06.660 --> 00:05:07.870
+Y así puedes contarlos.
+
+109
+00:05:07.870 --> 00:05:11.620
+Tengo uno, dos, tres y luego cuatro.
+
+110
+00:05:11.620 --> 00:05:15.130
+Y mi razón personal para hacer esto es
+
+111
+00:05:15.130 --> 00:05:19.010
+porque siempre que copio y pego un código,
+
+112
+00:05:19.010 --> 00:05:23.670
+digamos que de un sitio web como el que tenemos aquí.
+
+113
+00:05:23.670 --> 00:05:26.610
+Según mi experiencia, la mayoría
+
+114
+00:05:26.610 --> 00:05:29.520
+de los diferentes sitios web,
+
+115
+00:05:29.520 --> 00:05:30.773
+los diferentes tutoriales
+
+116
+00:05:30.773 --> 00:05:33.500
+y las bibliotecas de código con las que trabajo,
+
+117
+00:05:33.500 --> 00:05:35.770
+suelen utilizar cuatro espacios.
+
+118
+00:05:35.770 --> 00:05:38.230
+Y entonces, si copio este código aquí mismo
+
+119
+00:05:38.230 --> 00:05:40.290
+y lo pego.
+
+120
+00:05:40.290 --> 00:05:43.480
+Puede ver que la función que escribí
+
+121
+00:05:43.480 --> 00:05:45.800
+se corresponde perfectamente
+
+122
+00:05:45.800 --> 00:05:48.770
+con la función de Feliz Cumpleaños
+
+123
+00:05:48.770 --> 00:05:51.180
+de la que copié.
+
+124
+00:05:51.180 --> 00:05:54.140
+Y si voy a este otro ejemplo
+
+125
+00:05:54.140 --> 00:05:55.950
+y copio,
+
+126
+00:05:55.950 --> 00:05:57.060
+este código.
+
+127
+00:05:57.060 --> 00:05:58.800
+Y pego esto.
+
+128
+00:05:58.800 --> 00:06:01.630
+Puedes ver que esto no está alineado.
+
+129
+00:06:01.630 --> 00:06:03.900
+Y por lo tanto, no hay reglas duras y rápidas
+
+130
+00:06:03.900 --> 00:06:07.244
+sobre lo que debe usar desde una perspectiva de sangría.
+
+131
+00:06:07.244 --> 00:06:09.560
+Pero lo que recomiendo
+
+132
+00:06:09.560 --> 00:06:12.200
+es encontrar qué funciona mejor para ti
+
+133
+00:06:12.200 --> 00:06:13.990
+y luego asegurarte
+
+134
+00:06:13.990 --> 00:06:16.880
+de que todos tus programas coincidan exactamente con eso.
+
+135
+00:06:16.880 --> 00:06:20.920
+Entonces, si tomáramos este tipo de código aquí,
+
+136
+00:06:20.920 --> 00:06:23.491
+que tiene sangría de dos espacios,
+
+137
+00:06:23.491 --> 00:06:27.420
+entonces me aseguraré de que después de pegarlo,
+
+138
+00:06:27.420 --> 00:06:30.080
+lo muevo a cuatro espacios,
+
+139
+00:06:30.080 --> 00:06:34.590
+para que se alinee perfectamente con el resto de mi programa
+
+140
+00:06:34.590 --> 00:06:35.590
+Así que en revisión.
+
+141
+00:06:35.590 --> 00:06:37.400
+En esta guía hemos discutido,
+
+142
+00:06:37.400 --> 00:06:40.440
+el requisito de tener sangría,
+
+143
+00:06:40.440 --> 00:06:43.000
+en nuestros bloques de código en Python
+
+144
+00:06:43.000 --> 00:06:46.290
+y luego también hemos discutido
+
+145
+00:06:46.290 --> 00:06:48.270
+el tema de espacios contra tabulaciones
+
+146
+00:06:48.270 --> 00:06:52.270
+y qué tan lejos deben estar los espacios.
+
+147
+00:06:52.270 --> 00:06:55.480
+Si deben ser dos espacios o cuatro.
+
+148
+00:06:55.480 --> 00:06:58.960
+Ahora, el último consejo que les dejaré
+
+149
+00:06:58.960 --> 00:07:03.880
+es que recomiendo que no utilices pestañas,
+
+150
+00:07:03.880 --> 00:07:07.930
+ya que esto se transferirá de manera diferente,
+
+151
+00:07:07.930 --> 00:07:09.240
+en diferentes sistemas.
+
+152
+00:07:09.240 --> 00:07:13.258
+Por lo tanto, si presionas tu código hasta un repositorio
+
+153
+00:07:13.258 --> 00:07:15.060
+de terceros, como en Github,
+
+154
+00:07:15.060 --> 00:07:17.770
+tus pestañas pueden traducirse de manera diferente
+
+155
+00:07:17.770 --> 00:07:19.260
+y pueden parecer diferentes
+
+156
+00:07:19.260 --> 00:07:21.660
+a la de otros desarrolladores de tu equipo.
+
+157
+00:07:21.660 --> 00:07:24.018
+Independientemente de lo que uses entre dos
+
+158
+00:07:24.018 --> 00:07:25.210
+y cuatro espacios,
+
+159
+00:07:25.210 --> 00:07:29.040
+te recomiendo que decidas los espacios,
+
+160
+00:07:29.040 --> 00:07:33.100
+ya que las pestañas pueden provocar un comportamiento
+
+161
+00:07:33.100 --> 00:07:35.363
+muy extraño e incluso pueden provocar errores.
+

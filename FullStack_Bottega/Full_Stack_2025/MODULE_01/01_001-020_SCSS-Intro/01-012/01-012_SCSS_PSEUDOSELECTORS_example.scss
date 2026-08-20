@@ -1,0 +1,40 @@
+$off-white: #f6f6f6;
+$featured-color: DarkRed;
+
+body {
+  background-color: $off-white;
+  height: 100vh;
+  height: 100vw;
+}
+
+.container {
+  font-family: Verdana;
+  font-size: 0.8rem;
+}
+
+.page-wrapper { 
+  padding: 21px;
+  $featured-color: LightCoral;
+
+  .featured {
+    color: $featured-color;
+    .subheading a {
+      color: CornflowerBlue;
+      text-decoration: none;
+      &:hover {
+        color: DarkOliveGreen;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .page-content {
+
+    background-color: $featured-color;
+    padding: 42px;
+    color: $off-white;
+    .container {
+      font-family: courier;
+    }
+  }
+}

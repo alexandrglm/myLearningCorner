@@ -1,0 +1,494 @@
+﻿WEBVTT
+
+1
+00:00:01.028 --> 00:00:02.930
+<v Instructor>Ahora que tienes una pequeña revisión</v>
+
+2
+00:00:02.930 --> 00:00:07.100
+sobre lo que es SCSS, vamos a repasar el proceso.
+
+3
+00:00:07.100 --> 00:00:11.030
+Vamos a ver exactamente qué hace y cómo puede
+
+4
+00:00:11.030 --> 00:00:15.120
+construir todas las funciones distintas que mencioné.
+
+5
+00:00:15.120 --> 00:00:17.120
+Ahora, no voy a ir hacia el código
+
+6
+00:00:17.120 --> 00:00:21.300
+y explicar cómo se convierten estos elementos
+
+7
+00:00:21.300 --> 00:00:25.760
+de sintaxis SCSS hacia algo que puede ver el navegador;
+
+8
+00:00:25.760 --> 00:00:27.610
+en su lugar, lo que voy a repasar,
+
+9
+00:00:27.610 --> 00:00:31.440
+es mostrarles en el nivel alto, el proceso que ocurre,
+
+10
+00:00:31.440 --> 00:00:33.830
+porque una cosa que realmente me ayudó
+
+11
+00:00:33.830 --> 00:00:36.170
+cuando estaba aprendiendo originariamente SCSS
+
+12
+00:00:36.170 --> 00:00:39.490
+es solo ver que no hay mágico al respecto.
+
+13
+00:00:39.490 --> 00:00:43.560
+Es simplemente un tipo de lenguaje de marcas
+
+14
+00:00:43.560 --> 00:00:48.560
+que puede ser convertido en algo mucho más complejo.
+
+15
+00:00:48.580 --> 00:00:52.810
+Si trabajas con cualquier clase de otra biblioteca,
+
+16
+00:00:52.810 --> 00:00:56.800
+como Jquery, o Angular, que son bibliotecas JavaScript
+
+17
+00:00:56.800 --> 00:01:01.120
+y marcos de trabajo, entonces esos son muy similares a SCSS
+
+18
+00:01:01.120 --> 00:01:05.340
+en el sentido de que están sentados sobre otro lenguaje
+
+19
+00:01:05.340 --> 00:01:09.150
+o otro lenguaje de marcas y entonces son convertidos
+
+20
+00:01:09.150 --> 00:01:11.990
+en algo que es mucho más complejo,
+
+21
+00:01:11.990 --> 00:01:14.160
+y que sería mucho más difícil de escribir desde cero.
+
+22
+00:01:14.160 --> 00:01:15.930
+Eso es en esencia lo que SCSS hace.
+
+23
+00:01:15.930 --> 00:01:19.690
+Cada estilo en el que vamos a construir en este curso
+
+24
+00:01:19.690 --> 00:01:21.610
+y que vas a usar en SCSS,
+
+25
+00:01:21.610 --> 00:01:23.320
+no importa cuán avanzado sea,
+
+26
+00:01:23.320 --> 00:01:27.130
+técnicamente, podrían todos ser realizados con CSS,
+
+27
+00:01:27.130 --> 00:01:31.030
+así que no hay nada especial sobre usar SCSS
+
+28
+00:01:31.030 --> 00:01:34.180
+desde el punto de vista de salida.
+
+29
+00:01:34.180 --> 00:01:37.590
+Usamos SCSS para poder mejorar nuestros procesos
+
+30
+00:01:37.590 --> 00:01:40.520
+y así que podamos organizar mejor nuestro código,
+
+31
+00:01:40.520 --> 00:01:43.910
+así que justo aquí, tenemos un CodePen,
+
+32
+00:01:43.910 --> 00:01:45.910
+y voy a pasar en una guía diferente
+
+33
+00:01:45.910 --> 00:01:48.560
+y caminar por cómo configurar CodePen para que funcione,
+
+34
+00:01:48.560 --> 00:01:50.230
+y esto es lo que vamos a usar
+
+35
+00:01:50.230 --> 00:01:53.480
+a lo largo de todo el curso, pero aquí, tengo HTML,
+
+36
+00:01:53.480 --> 00:01:55.890
+y aquí tengo el SCSS.
+
+37
+00:01:55.890 --> 00:02:00.720
+Ahora, si solo pongo esto en un archivo CSS normal,
+
+38
+00:02:00.720 --> 00:02:03.330
+el navegador no lo interpretaría,
+
+39
+00:02:03.330 --> 00:02:07.510
+así, no nos daría nuestros lindos mensajes de notificación
+
+40
+00:02:07.510 --> 00:02:09.730
+justo aquí, nos mostraría un error,
+
+41
+00:02:09.730 --> 00:02:12.820
+porque CSS no sabe qué es un Mixin.
+
+42
+00:02:12.820 --> 00:02:16.030
+CSS no sabe cuáles son las variables,
+
+43
+00:02:16.030 --> 00:02:18.270
+y no sabe cuál es el enunciado incluido.
+
+44
+00:02:18.270 --> 00:02:21.360
+Todos estos son elementos de SCSS,
+
+45
+00:02:21.360 --> 00:02:24.370
+y estas son cosas que podemos llamar,
+
+46
+00:02:24.370 --> 00:02:28.530
+pero entonces van a ser convertidas en CSS puro
+
+47
+00:02:28.530 --> 00:02:31.840
+porque eso es lo que los navegadores pueden representar.
+
+48
+00:02:31.840 --> 00:02:35.050
+Ahora, para ver cómo se ve esto en CSS,
+
+49
+00:02:35.050 --> 00:02:38.680
+para ver cómo se tradujo, puedo venir aquí,
+
+50
+00:02:38.680 --> 00:02:43.540
+al lado derecho, y Vista CSS Compilada.
+
+51
+00:02:43.540 --> 00:02:46.130
+Si doy clic aquí, ahora vamos a ver
+
+52
+00:02:46.130 --> 00:02:49.510
+un grupo completamente distinto de estilos,
+
+53
+00:02:49.510 --> 00:02:52.330
+así, tenemos solo dos clases,
+
+54
+00:02:52.330 --> 00:02:55.180
+una llamada .error, una llamada .success ,
+
+55
+00:02:55.180 --> 00:02:57.850
+y tiene todos estos elementos.
+
+56
+00:02:57.850 --> 00:03:00.890
+Ahora, noten que hay mucha duplicación.
+
+57
+00:03:00.890 --> 00:03:04.140
+Tenemos ancho idéntico, tenemos altura idéntica,
+
+58
+00:03:04.140 --> 00:03:07.060
+tenemos el mismo tipo de alineación de texto,
+
+59
+00:03:07.060 --> 00:03:10.100
+tenemos el mismo relleno, tenemos el mismo tamaño de fuente,
+
+60
+00:03:10.100 --> 00:03:14.480
+tenemos la misma fuente, el radio del borde es idéntico,
+
+61
+00:03:14.480 --> 00:03:18.980
+el margen es idéntico, las únicas cosas que son distintas
+
+62
+00:03:18.980 --> 00:03:23.710
+son rojo oscuro, blanco y luego lo que tenemos como borde.
+
+63
+00:03:23.710 --> 00:03:27.080
+Ahora, técnicamente si fueras a escribir esto en CSS puro,
+
+64
+00:03:27.080 --> 00:03:29.580
+podrías terminar con mucha duplicación,
+
+65
+00:03:29.580 --> 00:03:31.330
+lo que sería una forma desordenada de escribirlo,
+
+66
+00:03:31.330 --> 00:03:34.780
+porque entonces, cada vez que quieras hacer un cambio,
+
+67
+00:03:34.780 --> 00:03:38.490
+tal como cambiar la altura, o el radio del borde
+
+68
+00:03:38.490 --> 00:03:41.050
+o algo así, tendrías que hacer el cambio
+
+69
+00:03:41.050 --> 00:03:43.200
+en cada ejemplo, y usualmente
+
+70
+00:03:43.200 --> 00:03:46.530
+no solo tienes dos clases para gestionar notificaciones,
+
+71
+00:03:46.530 --> 00:03:49.520
+usualmente, podrías tener media docena o más.
+
+72
+00:03:49.520 --> 00:03:53.030
+Pero si volvemos y realmente vemos lo que creamos,
+
+73
+00:03:53.030 --> 00:03:54.950
+y puedo dar clic en esta flecha y dar clic
+
+74
+00:03:54.950 --> 00:03:58.000
+en ver SCSS No Compilado de nuevo,
+
+75
+00:03:58.000 --> 00:04:01.270
+pueden ver que no tenemos ninguna duplicación
+
+76
+00:04:01.270 --> 00:04:03.690
+dentro de nuestro archivo SCSS.
+
+77
+00:04:03.690 --> 00:04:06.940
+Podemos tener este Mixin al que tenemos una sección entera
+
+78
+00:04:06.940 --> 00:04:09.350
+dedicada, así que no se preocupen por la sintaxis
+
+79
+00:04:09.350 --> 00:04:10.890
+ni nada por ahora.
+
+80
+00:04:10.890 --> 00:04:14.570
+Solo quiero mostrarles exactamente cómo ocurre el proceso,
+
+81
+00:04:14.570 --> 00:04:18.790
+y llevarlos por el hecho de que en CSS y los navegadores
+
+82
+00:04:18.790 --> 00:04:21.640
+por sí mismos no podrían saber qué están haciendo.
+
+83
+00:04:21.640 --> 00:04:24.920
+No podrían permitirte definir
+
+84
+00:04:24.920 --> 00:04:26.627
+dos clases distintas como esta,
+
+85
+00:04:26.627 --> 00:04:28.760
+y la otra cosa que podrían notar
+
+86
+00:04:28.760 --> 00:04:32.930
+es que todo el concepto de una Mixin fue omitido,
+
+87
+00:04:32.930 --> 00:04:35.940
+así, cuando ese pre-procesador comienza,
+
+88
+00:04:35.940 --> 00:04:39.030
+cuando el proceso inicia, entonces lo ignora.
+
+89
+00:04:39.030 --> 00:04:41.300
+Simplemente toma todo ese código
+
+90
+00:04:41.300 --> 00:04:45.390
+y lo añade al CSS maestro,
+
+91
+00:04:45.390 --> 00:04:50.090
+en el archivo pre-procesado, y esto es lo que envía
+
+92
+00:04:50.090 --> 00:04:53.100
+al navegador, así que ahora al navegador no le importa
+
+93
+00:04:53.100 --> 00:04:56.470
+la duplicación ni nada así.
+
+94
+00:04:56.470 --> 00:05:00.160
+Está perfectamente bien, pero lo que te permite hacer
+
+95
+00:05:00.160 --> 00:05:03.330
+es mejorar el proceso de desarrollo entero.
+
+96
+00:05:03.330 --> 00:05:07.990
+Así, ahora, si quiero, digamos, añadir un nuevo tipo
+
+97
+00:05:07.990 --> 00:05:11.900
+de estilo, así si quiero tener .success y .error,
+
+98
+00:05:11.900 --> 00:05:15.260
+pero quiero tener .warning puedo simplemente
+
+99
+00:05:15.260 --> 00:05:19.080
+crear esta nueva clase y luego cambiar el color de fondo,
+
+100
+00:05:19.080 --> 00:05:22.280
+el color de fuente, y luego el borde si quiero,
+
+101
+00:05:22.280 --> 00:05:26.020
+para algo un poco distinto, y no he copiado código.
+
+102
+00:05:26.020 --> 00:05:30.360
+No he hecho tipos de estilos a los que tenga que ir
+
+103
+00:05:30.360 --> 00:05:33.850
+y cambiar, y ahora puedo controlar todo el sistema
+
+104
+00:05:33.850 --> 00:05:37.320
+desde aquí, y si viniera y dijera,
+
+105
+00:05:37.320 --> 00:05:40.970
+Ver CSS Compilado, y pueden ver,
+
+106
+00:05:40.970 --> 00:05:42.467
+ahora tenemos nuestra clase .warning,
+
+107
+00:05:42.467 --> 00:05:44.810
+y tiene todos esos elementos,
+
+108
+00:05:44.810 --> 00:05:47.260
+entonces al comenzar por el curso,
+
+109
+00:05:47.260 --> 00:05:49.960
+una cosa que definitivamente recomendaré que hagan
+
+110
+00:05:49.960 --> 00:05:53.510
+es juguetear y cambiar entre ver
+
+111
+00:05:53.510 --> 00:05:56.400
+el archivo SCSS y lo que representa,
+
+112
+00:05:56.400 --> 00:05:58.220
+porque una cosa que aprenderás es
+
+113
+00:05:58.220 --> 00:06:00.450
+que en realidad aprenderás un poco más
+
+114
+00:06:00.450 --> 00:06:02.700
+sobre cómo CSS funciona en general,
+
+115
+00:06:02.700 --> 00:06:05.490
+especialmente cuando entres en tipos de temas incluso más
+
+116
+00:06:05.490 --> 00:06:07.870
+complicados, tales como anidar,
+
+117
+00:06:07.870 --> 00:06:11.920
+y seudoselectores anidados y tipos de herencia.
+
+118
+00:06:11.920 --> 00:06:14.510
+Esas son cosas que, si eres muy nuevo
+
+119
+00:06:14.510 --> 00:06:15.830
+al desarrollo de front end,
+
+120
+00:06:15.830 --> 00:06:19.460
+podría ser un poco intimidante, pero, con SCSS,
+
+121
+00:06:19.460 --> 00:06:22.550
+esta es otra forma que puedes aprender CSS
+
+122
+00:06:22.550 --> 00:06:25.810
+y cómo funciona en general, así que es una guía
+
+123
+00:06:25.810 --> 00:06:29.433
+de ver cómo el paso de pre-procesado funciona en SCSS.
+

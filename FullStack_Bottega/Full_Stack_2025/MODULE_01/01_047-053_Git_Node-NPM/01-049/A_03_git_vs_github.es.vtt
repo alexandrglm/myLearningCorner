@@ -1,0 +1,414 @@
+WEBVTT
+
+1
+00:00:00.970 --> 00:00:03.600
+<v ->Ahora que tienes configurada tu cuenta de GitHub,</v>
+
+2
+00:00:03.600 --> 00:00:06.560
+quiero en esta guía explicarte
+
+3
+00:00:06.560 --> 00:00:11.120
+las diferencias entre Git y GitHub,
+
+4
+00:00:11.120 --> 00:00:14.040
+porque esto es algo que me han preguntado
+
+5
+00:00:14.040 --> 00:00:17.708
+muchos estudiantes, y existe una confusión
+
+6
+00:00:17.708 --> 00:00:20.280
+inicial bien entendible
+
+7
+00:00:20.280 --> 00:00:22.400
+sobre cuál es la diferencia,
+
+8
+00:00:22.400 --> 00:00:25.090
+por lo que para eso es esta guía.
+
+9
+00:00:25.090 --> 00:00:29.550
+Aquí tengo mi perfil personal en GitHub
+
+10
+00:00:29.550 --> 00:00:32.360
+en la pantalla, y podrás ver una lista
+
+11
+00:00:32.360 --> 00:00:34.760
+de algunos de mis repositorios populares,
+
+12
+00:00:34.760 --> 00:00:37.420
+últimos commits, y elementos parecidos.
+
+13
+00:00:37.420 --> 00:00:41.080
+Si hago clic en este, dice Portafolio de DevCamp,
+
+14
+00:00:41.080 --> 00:00:44.790
+me mostrará el proyecto entero que tengo.
+
+15
+00:00:44.790 --> 00:00:48.920
+Este es técnicamente un repositorio de Git,
+
+16
+00:00:48.920 --> 00:00:50.750
+por lo que cada vez que tengas un proyecto de código
+
+17
+00:00:50.750 --> 00:00:53.680
+que hayas empujado a GitHub, como el que tengo aquí,
+
+18
+00:00:53.680 --> 00:00:55.818
+eso es simplemente una capa gráfica
+
+19
+00:00:55.818 --> 00:00:58.840
+de lo que tienes en tu máquina local,
+
+20
+00:00:58.840 --> 00:01:01.290
+y por lo que es increíblemente poderosa
+
+21
+00:01:01.290 --> 00:01:03.770
+es porque es una capa que puede funcionar
+
+22
+00:01:03.770 --> 00:01:05.560
+como tu repositorio centralizado.
+
+23
+00:01:05.560 --> 00:01:09.360
+Si recuerdas nuestro repaso de Git,
+
+24
+00:01:09.360 --> 00:01:13.210
+y cuando hablamos de cómo múltiples individuos
+
+25
+00:01:13.210 --> 00:01:15.340
+y desarrolladores por todo el mundo
+
+26
+00:01:15.340 --> 00:01:18.730
+pueden trabajar en el mismo proyecto a la vez,
+
+27
+00:01:18.730 --> 00:01:20.950
+las herramientas como GitHub te lo permiten.
+
+28
+00:01:20.950 --> 00:01:24.600
+Si solo tuvieras tu código de Git en tu repositorio
+
+29
+00:01:24.600 --> 00:01:27.400
+en tu máquina local, otros desarrolladores
+
+30
+00:01:27.400 --> 00:01:30.430
+no pudieran jalarlo y empujarlo
+
+31
+00:01:30.430 --> 00:01:32.450
+así como podrías tú si lo tuvieras
+
+32
+00:01:32.450 --> 00:01:34.090
+en un lugar como GitHub.
+
+33
+00:01:34.090 --> 00:01:36.590
+Lo que tenemos aquí es un versión
+
+34
+00:01:36.590 --> 00:01:39.700
+almacenada, simple y centralizada
+
+35
+00:01:39.700 --> 00:01:41.870
+de lo que tengo en mi máquina local,
+
+36
+00:01:41.870 --> 00:01:43.970
+y me brinda un número de herramientas
+
+37
+00:01:43.970 --> 00:01:45.470
+como, trabajar con conceptos,
+
+38
+00:01:45.470 --> 00:01:48.580
+ramas, y poder ver
+
+39
+00:01:48.580 --> 00:01:51.870
+todos mis commits en una manera visual.
+
+40
+00:01:51.870 --> 00:01:54.920
+Si nunca antes has trabajado con Git o GitHub,
+
+41
+00:01:54.920 --> 00:01:58.280
+y esta es tu introducción a la tecnología,
+
+42
+00:01:58.280 --> 00:02:00.310
+no te preocupes si te sientes confundido,
+
+43
+00:02:00.310 --> 00:02:01.880
+eso es perfectamente normal.
+
+44
+00:02:01.880 --> 00:02:04.620
+Solo te muestro esto para que te des cuenta
+
+45
+00:02:04.620 --> 00:02:06.370
+de que existe una diferencia.
+
+46
+00:02:06.370 --> 00:02:10.057
+Sé que el nombre de GitHub pareciera que solo fuera Git,
+
+47
+00:02:10.057 --> 00:02:11.965
+pero es exactamente de la forma
+
+48
+00:02:11.965 --> 00:02:15.740
+en que te lo describen las palabras: es una cúpula
+
+49
+00:02:15.740 --> 00:02:18.977
+para Git, es una cúpula para tus repositorios en Git.
+
+50
+00:02:18.977 --> 00:02:22.765
+Así como tengo este proyecto entero aquí,
+
+51
+00:02:22.765 --> 00:02:25.760
+si cambio a mi base local de códigos,
+
+52
+00:02:25.760 --> 00:02:28.490
+si cambio a Vim, y tengo
+
+53
+00:02:28.490 --> 00:02:30.804
+el proyecto idéntico, este es el mismo
+
+54
+00:02:30.804 --> 00:02:33.410
+Portafolio de DevCamp, no importa
+
+55
+00:02:33.410 --> 00:02:35.330
+que tipo de lenguaje o framework,
+
+56
+00:02:35.330 --> 00:02:37.880
+o tipo de proyecto sea en el que trabajes,
+
+57
+00:02:37.880 --> 00:02:40.600
+podrás usar Git para cualquiera de esos.
+
+58
+00:02:40.600 --> 00:02:44.800
+Esta es mi versión local de Git aquí,
+
+59
+00:02:44.800 --> 00:02:47.524
+podrás ver que incluso tengo un directorio Git,
+
+60
+00:02:47.524 --> 00:02:50.520
+tengo, si deslizas hacia abajo,
+
+61
+00:02:50.520 --> 00:02:53.472
+tengo un archivo ignorado de Git que enlista
+
+62
+00:02:53.472 --> 00:02:57.617
+todos los archivos que no quiero que se empujen a GitHub,
+
+63
+00:02:57.617 --> 00:02:59.830
+y que solo quiero en mi máquina local,
+
+64
+00:02:59.830 --> 00:03:02.540
+y estaremos enseñando exactamente
+
+65
+00:03:02.540 --> 00:03:04.870
+cómo podemos trabajar con todos estos archivos diferentes,
+
+66
+00:03:04.870 --> 00:03:08.140
+ya sea estén en el directorio de Git, o en sus ignorados.
+
+67
+00:03:08.140 --> 00:03:11.840
+Lo que tengo aquí es el repositorio actual de Git,
+
+68
+00:03:11.840 --> 00:03:15.140
+está localizado en mi máquina local,
+
+69
+00:03:15.140 --> 00:03:18.980
+si fuera a hacer un cambio a cualquiera de los archivos--
+
+70
+00:03:18.980 --> 00:03:21.110
+simplemente abriré uno,
+
+71
+00:03:21.110 --> 00:03:24.850
+y abajo en el fondo, escribiré algún cambio.
+
+72
+00:03:24.850 --> 00:03:28.230
+Y si guardo este archivo y cierro,
+
+73
+00:03:28.230 --> 00:03:31.330
+y escribo, obtener estado; más tarde
+
+74
+00:03:31.330 --> 00:03:33.300
+explicaremos qué significan todos estos comandos
+
+75
+00:03:33.300 --> 00:03:35.410
+en sus secciones dedicadas, pero ahora mismo
+
+76
+00:03:35.410 --> 00:03:37.251
+solo quiero mostrarles
+
+77
+00:03:37.251 --> 00:03:40.070
+que lo que tengo aquí es la versión local
+
+78
+00:03:40.070 --> 00:03:41.330
+del repositorio de Git.
+
+79
+00:03:41.330 --> 00:03:44.360
+Si escribo, estado de Git, podrás ver
+
+80
+00:03:44.360 --> 00:03:46.660
+que tengo cambios en varios archivos diferentes,
+
+81
+00:03:46.660 --> 00:03:48.820
+uno, en el que estaba trabajando anteriormente,
+
+82
+00:03:48.820 --> 00:03:52.560
+y el archivo LÉEME que me acabas de ver usar.
+
+83
+00:03:52.560 --> 00:03:57.560
+Ahora, si regreso al repositorio actual
+
+84
+00:03:57.830 --> 00:04:01.240
+almacenado en GitHub y deslizo hacia abajo,
+
+85
+00:04:01.240 --> 00:04:03.410
+podrás ver que ese cambio no está aquí,
+
+86
+00:04:03.410 --> 00:04:05.760
+porque aún no he empujado el código,
+
+87
+00:04:05.760 --> 00:04:08.280
+solo está en mi máquina local.
+
+88
+00:04:08.280 --> 00:04:12.650
+Si lo añado al repositorio, creo un commit,
+
+89
+00:04:12.650 --> 00:04:15.360
+eso significa que estoy creando una versión,
+
+90
+00:04:15.360 --> 00:04:17.610
+estoy creando un modelo en el tiempo
+
+91
+00:04:17.610 --> 00:04:21.140
+al que quiero verle los cambios,
+
+92
+00:04:21.140 --> 00:04:23.660
+y después lo empujo a GitHub,
+
+93
+00:04:23.660 --> 00:04:26.720
+entonces todos los cambios serán reflejados aquí,
+
+94
+00:04:26.720 --> 00:04:29.740
+y más tarde explicaremos cómo se ve todo eso.
+
+95
+00:04:29.740 --> 00:04:34.580
+En resumen, hay una diferencia clave entre Git y GitHub.
+
+96
+00:04:34.580 --> 00:04:37.010
+Git es la tecnología actual,
+
+97
+00:04:37.010 --> 00:04:40.290
+que nos permite crear commits
+
+98
+00:04:40.290 --> 00:04:42.610
+y versiones de nuestros sistemas,
+
+99
+00:04:42.610 --> 00:04:45.210
+y trabajar con ramas y esos tipos de desarrollos;
+
+100
+00:04:45.210 --> 00:04:48.303
+y GitHub es un repositorio centralizado
+
+101
+00:04:48.303 --> 00:04:50.530
+en donde puedes visualizarlos a todos
+
+102
+00:04:50.530 --> 00:04:53.350
+y donde puedes además colaborar en proyectos
+
+103
+00:04:53.350 --> 00:04:54.983
+con otros miembros del equipo.
+

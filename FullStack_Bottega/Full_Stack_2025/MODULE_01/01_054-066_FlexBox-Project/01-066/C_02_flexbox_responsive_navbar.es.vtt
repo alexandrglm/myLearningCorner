@@ -1,0 +1,1856 @@
+WEBVTT
+
+1
+00:00:00.770 --> 00:00:02.573
+<v Instructor>En esta guía, vamos a hablar</v>
+
+2
+00:00:02.573 --> 00:00:05.980
+de cómo crear una barra de navegación totalmente receptiva
+
+3
+00:00:05.980 --> 00:00:10.540
+utilizando Flexbox, HTML, CSS y JavaScript,
+
+4
+00:00:10.540 --> 00:00:12.763
+e incluso va a incluir construir
+
+5
+00:00:12.763 --> 00:00:15.221
+una funcionalidad completa de "toggle"
+
+6
+00:00:15.221 --> 00:00:17.514
+para la barra de navegación
+
+7
+00:00:17.514 --> 00:00:19.210
+cuando se usa en un teléfono inteligente,
+
+8
+00:00:19.210 --> 00:00:21.320
+así que va a ser muy divertido,
+
+9
+00:00:21.320 --> 00:00:23.790
+y una guía bastante completa.
+
+10
+00:00:23.790 --> 00:00:25.610
+Así que voy a empezar ahora
+
+11
+00:00:25.610 --> 00:00:30.210
+y voy a crear algo de HTML5 Boilerplate
+
+12
+00:00:30.210 --> 00:00:33.165
+y probemos nuestro sistema
+
+13
+00:00:33.165 --> 00:00:34.538
+solo para asegurarme de que funciona.
+
+14
+00:00:34.538 --> 00:00:38.820
+Así que crearé un H1 aquí y diré hola ahí.
+
+15
+00:00:38.820 --> 00:00:42.140
+Y si estás usando una herramienta como Gulp
+
+16
+00:00:42.140 --> 00:00:45.640
+y empiezas de cero como lo hice aquí,
+
+17
+00:00:45.640 --> 00:00:48.178
+entonces lo harás por primera vez,
+
+18
+00:00:48.178 --> 00:00:49.813
+vas a tener que darle a Actualizar.
+
+19
+00:00:49.813 --> 00:00:51.968
+Así que si estás siguiendo a mis otros guías
+
+20
+00:00:51.968 --> 00:00:53.830
+y viste cómo te he mostrado
+
+21
+00:00:53.830 --> 00:00:56.302
+cómo construir un observador de Gulp,
+
+22
+00:00:56.302 --> 00:00:59.310
+entonces no quería que eso se convirtiera
+
+23
+00:00:59.310 --> 00:01:01.309
+en algo confuso para ti
+
+24
+00:01:01.309 --> 00:01:03.870
+si ves que no se están reflejando cambios,
+
+25
+00:01:03.870 --> 00:01:08.150
+es porque tienes que tener un pedazo válido de HTML
+
+26
+00:01:08.150 --> 00:01:12.050
+y después, pulsas Actualizar en el navegador,
+
+27
+00:01:12.050 --> 00:01:15.110
+entonces comenzará la auto-actualización como aquí.
+
+28
+00:01:15.110 --> 00:01:16.750
+Así que ahora con todo eso en su lugar,
+
+29
+00:01:16.750 --> 00:01:19.705
+empecemos a construir nuestro componente de navegación.
+
+30
+00:01:19.705 --> 00:01:22.060
+Ahora lo primero que voy a crear
+
+31
+00:01:22.060 --> 00:01:25.118
+es una envoltura que va a almacenar
+
+32
+00:01:25.118 --> 00:01:27.309
+todos los enlaces de navegación
+
+33
+00:01:27.309 --> 00:01:29.273
+y todos los elementos que vamos a tener.
+
+34
+00:01:29.273 --> 00:01:32.940
+Así que voy a decir ".navbar"
+
+35
+00:01:32.940 --> 00:01:35.870
+y eso va a crear nuestro envoltorio div
+
+36
+00:01:35.870 --> 00:01:38.582
+y ahora vamos a agregar un enlace,
+
+37
+00:01:38.582 --> 00:01:40.904
+así que voy a agregar un enlace
+
+38
+00:01:41.860 --> 00:01:45.750
+y la clase para este va a ser marca,
+
+39
+00:01:45.750 --> 00:01:49.230
+así que diré "class = brand"
+
+40
+00:01:49.230 --> 00:01:51.400
+y puedes poner lo que quieras aquí,
+
+41
+00:01:51.400 --> 00:01:53.499
+yo voy a decir "MyName".
+
+42
+00:01:54.706 --> 00:01:56.032
+Si presiono Guardar ahora,
+
+43
+00:01:56.032 --> 00:01:59.690
+puedes ver que fue actualizado en el lado derecho.
+
+44
+00:01:59.690 --> 00:02:03.275
+Ahora aquí dentro, voy a tener dos juegos de enlaces
+
+45
+00:02:03.275 --> 00:02:06.060
+y por eso, voy a crear dos divs.
+
+46
+00:02:06.060 --> 00:02:08.093
+Uno de ellos lo llamaré izquierda
+
+47
+00:02:08.093 --> 00:02:11.451
+y al otro derecha
+
+48
+00:02:11.451 --> 00:02:13.968
+y los que están a la izquierda
+
+49
+00:02:13.968 --> 00:02:16.420
+van a contener los enlaces que queremos
+
+50
+00:02:16.420 --> 00:02:19.477
+junto al componente "brand"
+
+51
+00:02:19.477 --> 00:02:22.075
+y los de la derecha van a estar
+
+52
+00:02:22.075 --> 00:02:24.322
+a la derecha de la barra de navegación.
+
+53
+00:02:24.322 --> 00:02:28.540
+Ahora dentro de aquí, voy a decir "a.link",
+
+54
+00:02:28.540 --> 00:02:32.103
+esto va a crear un enlace que,
+
+55
+00:02:33.350 --> 00:02:35.103
+por ahora no va a ir a ningún lado
+
+56
+00:02:35.103 --> 00:02:37.254
+pero puedo decir, "Link 1",
+
+57
+00:02:38.240 --> 00:02:42.093
+duplicar esto, y tendremos el "Link 2".
+
+58
+00:02:43.376 --> 00:02:45.573
+Y ahora del lado derecho,
+
+59
+00:02:45.573 --> 00:02:47.717
+vamos a hacer exactamente lo mismo
+
+60
+00:02:47.717 --> 00:02:50.862
+excepto que ahora voy a hacer que diga "Link 3"
+
+61
+00:02:50.862 --> 00:02:53.230
+así que una vez que lo tengamos en vivo,
+
+62
+00:02:53.230 --> 00:02:55.250
+podremos echarle un vistazo.
+
+63
+00:02:55.250 --> 00:02:57.465
+Ahora puedes ver que eso se actualizó,
+
+64
+00:02:57.465 --> 00:03:00.370
+esto no está usando CSS en este momento
+
+65
+00:03:00.370 --> 00:03:03.142
+así que no va a haber estilos
+
+66
+00:03:03.142 --> 00:03:05.358
+y eso es en lo que nos vamos a meter ahora.
+
+67
+00:03:05.358 --> 00:03:08.913
+Esto va a ser como el 99% del código
+
+68
+00:03:08.913 --> 00:03:11.430
+que necesitamos escribir en el lado HTML
+
+69
+00:03:11.430 --> 00:03:13.255
+y ahora podemos empezar a construir
+
+70
+00:03:13.255 --> 00:03:16.566
+nuestros estilos CSS personalizados.
+
+71
+00:03:16.566 --> 00:03:18.663
+Así que voy a usar estilos incrustados
+
+72
+00:03:18.663 --> 00:03:20.310
+pero podrías usar esto
+
+73
+00:03:20.310 --> 00:03:24.429
+dentro de algún otro archivo de estilo específico
+
+74
+00:03:24.429 --> 00:03:26.270
+y eso está perfectamente bien,
+
+75
+00:03:26.270 --> 00:03:28.612
+pero aquí voy a tenerlos a todos en un solo lugar,
+
+76
+00:03:28.612 --> 00:03:31.400
+solo para que sea agradable y fácil de ver.
+
+77
+00:03:31.400 --> 00:03:35.740
+Puedes notar en la parte superior y a la izquierda,
+
+78
+00:03:35.740 --> 00:03:37.519
+que tenemos un poco de margen
+
+79
+00:03:37.519 --> 00:03:41.748
+y eso es algo que se obtiene por defecto con HTML
+
+80
+00:03:41.748 --> 00:03:43.988
+y por eso, lo que quiero hacer es anularlo
+
+81
+00:03:43.988 --> 00:03:46.978
+porque quiero tener nuestra barra de navegación
+
+82
+00:03:46.978 --> 00:03:51.030
+contra la parte superior, izquierda y derecha.
+
+83
+00:03:51.030 --> 00:03:53.710
+Entonces puedes anular eso con solo decir
+
+84
+00:03:53.710 --> 00:03:58.278
+"body margin: 0px".
+
+85
+00:03:58.278 --> 00:04:01.443
+Si guardas eso, ahora puedes ver que nuestros enlaces
+
+86
+00:04:01.443 --> 00:04:03.450
+se mueven hacia arriba contra eso.
+
+87
+00:04:03.450 --> 00:04:05.350
+Así que eso es todo lo que necesitamos para nuestro cuerpo
+
+88
+00:04:05.350 --> 00:04:08.260
+y ahora vamos a tomar esa barra de navegación
+
+89
+00:04:09.220 --> 00:04:13.060
+y por ahora vamos a agregarle un color de fondo.
+
+90
+00:04:13.060 --> 00:04:15.401
+Voy a elegir un color azul oscuro
+
+91
+00:04:15.401 --> 00:04:20.401
+de #415068.
+
+92
+00:04:21.630 --> 00:04:24.990
+Ahora si presiono Guardar ahora mismo,
+
+93
+00:04:24.990 --> 00:04:27.570
+tengo que deletrearlo correctamente.
+
+94
+00:04:27.570 --> 00:04:30.340
+Así que ahora nos va a dar ese bonito
+
+95
+00:04:30.340 --> 00:04:33.770
+color azul oscuro para la barra de navegación.
+
+96
+00:04:33.770 --> 00:04:36.490
+No hemos terminado
+con la clase de "navbar"
+
+97
+00:04:36.490 --> 00:04:38.287
+pero lo que voy a hacer es,
+
+98
+00:04:38.287 --> 00:04:40.770
+que todos los otros estilos que voy a agregar,
+
+99
+00:04:40.770 --> 00:04:44.020
+lo haré dentro de una "media query".
+
+100
+00:04:44.020 --> 00:04:46.110
+El objetivo de este ejercicio
+
+101
+00:04:46.110 --> 00:04:49.912
+es construir un componente de "navbar" receptivo
+
+102
+00:04:49.912 --> 00:04:52.975
+así que voy a mantener nuestros estilos básicos
+
+103
+00:04:52.975 --> 00:04:56.750
+y luego cualquier cosa que esté específicamente dirigida
+
+104
+00:04:56.750 --> 00:04:59.670
+a tener el elemento receptivo,
+
+105
+00:04:59.670 --> 00:05:01.987
+va a estar dentro de una "media query".
+
+106
+00:05:01.987 --> 00:05:05.060
+Así que aquí voy a dejar "Navbar" solamente,
+
+107
+00:05:05.060 --> 00:05:09.708
+y luego, voy a decir "navbar div"
+
+108
+00:05:09.708 --> 00:05:12.066
+así que esto va a ser para cualquiera de los div
+
+109
+00:05:12.066 --> 00:05:13.802
+dentro de un navbar,
+
+110
+00:05:13.802 --> 00:05:18.330
+Quiero que "display" sea "none"
+
+111
+00:05:18.330 --> 00:05:19.660
+y la razón por la que estoy haciendo eso
+
+112
+00:05:19.660 --> 00:05:22.368
+es porque quiero manejar todo esto,
+
+113
+00:05:22.368 --> 00:05:25.490
+quiero saber si se muestra algo o no
+
+114
+00:05:25.490 --> 00:05:27.570
+dentro de la "media query".
+
+115
+00:05:27.570 --> 00:05:31.863
+Así que ahora si presiono Guardar, se van a esconder
+
+116
+00:05:31.863 --> 00:05:34.030
+todos esos elementos dentro de la barra de navegación
+
+117
+00:05:34.030 --> 00:05:36.043
+lo que está bien, eso es lo que estamos buscando.
+
+118
+00:05:36.043 --> 00:05:40.470
+Porque una media query será responsable de mostrarlos o no.
+
+119
+00:05:40.470 --> 00:05:43.518
+Así que ahora vamos a agregar un par de estilos más.
+
+120
+00:05:43.518 --> 00:05:46.451
+Voy a usar uno que todavía no agregamos
+
+121
+00:05:46.451 --> 00:05:49.962
+pero lo haremos pronto y esa es nuestra clase "toggle".
+
+122
+00:05:49.962 --> 00:05:51.970
+Vamos a agregarla en un momento.
+
+123
+00:05:51.970 --> 00:05:55.943
+Y ahora vamos a agregar también un estilo para una marca,
+
+124
+00:05:55.943 --> 00:05:57.650
+ambos van a ser lo mismo.
+
+125
+00:05:57.650 --> 00:05:59.432
+Y van a usar
+
+126
+00:05:59.432 --> 00:06:01.432
+"display: inline-block".
+
+127
+00:06:05.400 --> 00:06:08.617
+Y la razón por la que estoy usando "inline-block" aquí
+
+128
+00:06:08.617 --> 00:06:12.730
+es porque eventualmente, una vez que hayamos lanzado esto,
+
+129
+00:06:12.730 --> 00:06:15.129
+el bloqueo en línea nos da
+
+130
+00:06:15.129 --> 00:06:17.450
+unos buenos tamaños por defecto.
+
+131
+00:06:17.450 --> 00:06:20.530
+Así que esto no va a tener nada que ver
+
+132
+00:06:20.530 --> 00:06:23.975
+con lo que estamos haciendo con los contenedores Flexbox
+
+133
+00:06:23.975 --> 00:06:25.660
+o elementos o algo así,
+
+134
+00:06:25.660 --> 00:06:27.268
+solo ayuda a darnos
+
+135
+00:06:27.268 --> 00:06:30.355
+un pequeño y bonito conjunto de estilos básicos.
+
+136
+00:06:30.355 --> 00:06:32.010
+Así que ahora que lo tenemos,
+
+137
+00:06:32.010 --> 00:06:35.562
+podemos empezar a agregar clases a nuestro enlace.
+
+138
+00:06:35.562 --> 00:06:39.212
+Así que voy a decir "navbar.link"
+
+139
+00:06:40.387 --> 00:06:41.900
+y adentro de eso,
+
+140
+00:06:41.900 --> 00:06:45.290
+voy a agregar unos cuantos estilos.
+
+141
+00:06:45.290 --> 00:06:49.990
+Así que diremos que esto va a ser "display: block"
+
+142
+00:06:49.990 --> 00:06:52.048
+porque van a ser elementos flexibles,
+
+143
+00:06:52.048 --> 00:06:53.489
+no contenedores flexibles,
+
+144
+00:06:53.489 --> 00:06:55.625
+así que no tenemos que decir "display: flex" aquí.
+
+145
+00:06:55.625 --> 00:06:57.665
+De hecho, si lo hiciéramos, no funcionaría bien.
+
+146
+00:06:57.665 --> 00:07:01.347
+Y luego quiero que estos estén alineados en el centro
+
+147
+00:07:01.347 --> 00:07:04.040
+así que voy a decir "text-align: center",
+
+148
+00:07:04.040 --> 00:07:06.226
+el relleno va a ser 1em,
+
+149
+00:07:07.510 --> 00:07:10.633
+va con decoración de texto: "none".
+
+150
+00:07:11.855 --> 00:07:13.997
+Un pequeño fondo
+
+151
+00:07:15.264 --> 00:07:20.264
+de #223047,
+
+152
+00:07:20.429 --> 00:07:23.900
+que es más de ese tipo de color azul oscuro,
+
+153
+00:07:23.900 --> 00:07:26.720
+no exactamente como ese, pero muy parecido.
+
+154
+00:07:26.720 --> 00:07:30.053
+Y por último, el color será blanco.
+
+155
+00:07:30.980 --> 00:07:32.393
+Ahora no vas a ver nada de esto
+
+156
+00:07:32.393 --> 00:07:36.351
+porque en la línea 18, los estamos escondiendo
+
+157
+00:07:36.351 --> 00:07:39.732
+pero tan pronto como lo abra en la "media query",
+
+158
+00:07:39.732 --> 00:07:41.970
+entonces empezarás a ver estos enlaces.
+
+159
+00:07:41.970 --> 00:07:43.807
+Así que ahora vamos a bajar
+
+160
+00:07:43.807 --> 00:07:47.010
+y tenemos todos los estilos para nuestro enlace,
+
+161
+00:07:47.010 --> 00:07:49.767
+vamos a trabajar con nuestras seudo clases.
+
+162
+00:07:49.767 --> 00:07:53.297
+Así que diré "navbar.link:hover"
+
+163
+00:07:54.290 --> 00:07:56.548
+y también navbar...
+
+164
+00:07:58.831 --> 00:08:01.064
+"navbar.link:active".
+
+165
+00:08:02.350 --> 00:08:04.090
+Ahora lo que vamos a hacer aquí
+
+166
+00:08:04.090 --> 00:08:08.052
+es agregar un color que, en realidad,
+
+167
+00:08:08.052 --> 00:08:11.475
+será exactamente lo contrario de lo que tenemos aquí.
+
+168
+00:08:11.475 --> 00:08:14.085
+Así que puedo copiar esto
+
+169
+00:08:15.270 --> 00:08:18.450
+y entonces ese va a ser nuestro color,
+
+170
+00:08:18.450 --> 00:08:21.720
+y nuestro fondo, va a ser blanco.
+
+171
+00:08:21.720 --> 00:08:24.435
+Esto significa que cada vez que pases
+
+172
+00:08:24.435 --> 00:08:26.170
+por encima de uno de estos enlaces,
+
+173
+00:08:26.170 --> 00:08:29.880
+van a tener exactamente el efecto opuesto
+
+174
+00:08:29.880 --> 00:08:31.533
+a sus estilos básicos.
+
+175
+00:08:31.533 --> 00:08:35.290
+Así que va a tener este color azul oscuro originalmente
+
+176
+00:08:35.290 --> 00:08:37.650
+y luego, ni bien pases sobre él
+
+177
+00:08:37.650 --> 00:08:40.048
+entonces va a cambiar
+
+178
+00:08:40.048 --> 00:08:43.180
+y ese va a ser el color de la fuente, el color del enlace,
+
+179
+00:08:43.180 --> 00:08:47.420
+y entonces el fondo real va a cambiar a blanco.
+
+180
+00:08:47.420 --> 00:08:50.345
+Déjame arreglar esta ortografía,
+
+181
+00:08:50.345 --> 00:08:54.440
+"background" es "white"
+
+182
+00:08:54.440 --> 00:08:56.320
+y eso es todo lo que necesitamos hacer.
+
+183
+00:08:56.320 --> 00:08:58.172
+Ahora vamos a movernos por la línea,
+
+184
+00:08:58.172 --> 00:09:00.195
+solo tenemos algunos estilos más de base,
+
+185
+00:09:00.195 --> 00:09:02.287
+tres estilos de base más que debemos agregar.
+
+186
+00:09:02.287 --> 00:09:06.780
+Uno va a ser para la marca, así que "navbar.brand"
+
+187
+00:09:06.780 --> 00:09:11.140
+y aquí vamos a darle un ancho de 10em.
+
+188
+00:09:11.140 --> 00:09:14.420
+Queremos que esto también esté alineado en el centro.
+
+189
+00:09:14.420 --> 00:09:16.536
+Así que "text-align: center",
+
+190
+00:09:16.536 --> 00:09:19.780
+entonces el relleno va a ser 1em
+
+191
+00:09:19.780 --> 00:09:21.920
+y el color será blanco.
+
+192
+00:09:23.250 --> 00:09:26.303
+Presiona Guardar y ahora puedes ver que eso se actualizó
+
+193
+00:09:26.303 --> 00:09:28.555
+porque no estamos ocultando nuestra marca
+
+194
+00:09:28.555 --> 00:09:31.107
+queremos que siempre esté disponible.
+
+195
+00:09:31.107 --> 00:09:34.185
+Eso se ve bien y puedes notar que tenemos
+
+196
+00:09:34.185 --> 00:09:36.503
+ese pequeño subrayado ahí
+
+197
+00:09:36.503 --> 00:09:40.210
+y quiero deshacerme de eso, así que voy a decir que Navbar
+
+198
+00:09:40.210 --> 00:09:43.060
+y luego, así cualquier elemento,
+
+199
+00:09:43.060 --> 00:09:45.162
+cualquier elemento de enlace de aquí.
+
+200
+00:09:45.162 --> 00:09:48.429
+Quiero ocultar el subrayado
+
+201
+00:09:48.429 --> 00:09:51.337
+así que, "text-decoration: none"
+
+202
+00:09:51.337 --> 00:09:54.590
+pulsa Guardar y el subrayado desaparece.
+
+203
+00:09:54.590 --> 00:09:57.417
+Y ahora estamos en nuestra última definición de estilo
+
+204
+00:09:57.417 --> 00:09:58.875
+para nuestros estilos de base
+
+205
+00:09:58.875 --> 00:10:00.978
+y esto va a ser para una clase de toggle,
+
+206
+00:10:00.978 --> 00:10:02.470
+la que aún no hemos implementado,
+
+207
+00:10:02.470 --> 00:10:04.842
+pero sabemos que vamos a necesitarlo
+
+208
+00:10:04.842 --> 00:10:07.410
+así que puedo decir "navbar.toggle",
+
+209
+00:10:07.410 --> 00:10:11.480
+"padding: 1em", y el color va a ser negro.
+
+210
+00:10:12.314 --> 00:10:16.889
+Esto va a ser para nuestra pequeña hamburguesa.
+
+211
+00:10:18.280 --> 00:10:21.230
+De acuerdo, entonces todo está ahí.
+
+212
+00:10:21.230 --> 00:10:24.310
+Vamos a agregar esta funcionalidad de toggle
+
+213
+00:10:24.310 --> 00:10:25.725
+o no la funcionalidad en sí
+
+214
+00:10:25.725 --> 00:10:30.020
+pero al menos agregemos lo que vamos a ver aquí,
+
+215
+00:10:30.020 --> 00:10:32.350
+así que esto va a traer Font Awesome
+
+216
+00:10:32.350 --> 00:10:34.646
+y luego aquí en la parte superior izquierda,
+
+217
+00:10:34.646 --> 00:10:37.480
+va a haber tres pequeñas barras
+
+218
+00:10:37.480 --> 00:10:40.058
+y esa es la manera tradicional,
+
+219
+00:10:40.058 --> 00:10:41.233
+estoy seguro de que lo viste
+
+220
+00:10:41.233 --> 00:10:43.679
+en una serie de aplicaciones móviles.
+
+221
+00:10:43.679 --> 00:10:47.010
+Así que voy a agregar un nuevo enlace aquí
+
+222
+00:10:47.010 --> 00:10:49.173
+y va a ser un clase toggle.
+
+223
+00:10:50.260 --> 00:10:53.515
+Y el Href no va a apuntar a ninguna parte
+
+224
+00:10:53.515 --> 00:10:55.980
+pero quiero agregar una identificación aquí
+
+225
+00:10:55.980 --> 00:10:58.443
+y es porque quiero ser capaz de agarrarlo
+
+226
+00:10:58.443 --> 00:11:01.123
+así que diré "navHamburger"
+
+227
+00:11:03.420 --> 00:11:05.200
+y luego aquí dentro
+
+228
+00:11:05.200 --> 00:11:08.060
+vamos a agregar nuestro icono.
+
+229
+00:11:08.060 --> 00:11:11.093
+Pero aún no sabemos cuál es nuestro icono
+
+230
+00:11:11.093 --> 00:11:13.540
+y no podríamos traerlo todavía
+
+231
+00:11:13.540 --> 00:11:16.580
+porque tenemos que importarlo usando Font Awesome.
+
+232
+00:11:16.580 --> 00:11:17.977
+Así que vamos a agarrar eso.
+
+233
+00:11:17.977 --> 00:11:21.074
+Voy a cambiar a un navegador
+
+234
+00:11:21.074 --> 00:11:24.660
+y si estiro esto hasta el final,
+
+235
+00:11:24.660 --> 00:11:26.653
+vamos a Font Awesome.
+
+236
+00:11:28.810 --> 00:11:31.717
+Traeremos una fuente de Google, pero no ahora.
+
+237
+00:11:31.717 --> 00:11:33.880
+Así que Font Awesome, aquí vamos,
+
+238
+00:11:33.880 --> 00:11:38.880
+y si navegas a "Get Started", entonces puedes bajar
+
+239
+00:11:39.550 --> 00:11:44.270
+y tener la versión CDN gratuita.
+
+240
+00:11:44.270 --> 00:11:49.240
+Cambia aquí y luego justo debajo de la etiqueta de título,
+
+241
+00:11:49.240 --> 00:11:50.667
+solo pega eso.
+
+242
+00:11:50.667 --> 00:11:52.008
+Así que puedes presionar Guardar
+
+243
+00:11:52.008 --> 00:11:54.193
+y ahora con eso en su lugar,
+
+244
+00:11:54.193 --> 00:11:57.420
+podemos encontrar el icono que queremos usar.
+
+245
+00:11:57.420 --> 00:12:02.420
+Así que si vuelves a cambiar, y luego haces clic en Iconos,
+
+246
+00:12:02.720 --> 00:12:04.860
+puedes buscar hamburguesas
+
+247
+00:12:04.860 --> 00:12:07.405
+y te dará exactamente lo que necesitas.
+
+248
+00:12:07.405 --> 00:12:09.565
+Así que voy a escribir hamburguesa
+
+249
+00:12:11.450 --> 00:12:13.635
+y puedes ver que tenemos nuestras tres barras aquí
+
+250
+00:12:14.576 --> 00:12:17.658
+e incluso te darán el HTML que necesitas.
+
+251
+00:12:17.658 --> 00:12:20.270
+Puedes copiar ese código
+
+252
+00:12:20.270 --> 00:12:22.700
+y me iré de aquí
+
+253
+00:12:22.700 --> 00:12:26.183
+y ahora podemos pegar esto adentro.
+
+254
+00:12:29.395 --> 00:12:33.210
+Y luego asegúrate de pedirlo correctamente.
+
+255
+00:12:33.210 --> 00:12:36.113
+Así es como puedes verlo ahora,
+
+256
+00:12:36.113 --> 00:12:38.897
+que nos da nuestras tres pequeñas hamburguesas
+
+257
+00:12:38.897 --> 00:12:41.410
+para que el icono se haya importado correctamente
+
+258
+00:12:41.410 --> 00:12:43.280
+y ahora puedes verlos.
+
+259
+00:12:43.280 --> 00:12:45.510
+Así que estoy contento con eso.
+
+260
+00:12:45.510 --> 00:12:48.585
+Nos quedamos donde decía "navbar.toggle".
+
+261
+00:12:48.585 --> 00:12:49.838
+Esto no hace nada todavía,
+
+262
+00:12:49.838 --> 00:12:52.913
+vamos a necesitar JavaScript para poder usarlo.
+
+263
+00:12:52.913 --> 00:12:55.995
+Pero, por ahora, al menos sabemos que está apareciendo
+
+264
+00:12:55.995 --> 00:12:59.603
+y en ese lado está funcionando.
+
+265
+00:12:59.603 --> 00:13:01.557
+Así que volvamos a cambiar
+
+266
+00:13:01.557 --> 00:13:04.850
+y ahora vamos a construir nuestras "media queries".
+
+267
+00:13:04.850 --> 00:13:08.440
+Así que la forma de hacerlo es diciendo "media"
+
+268
+00:13:08.440 --> 00:13:11.455
+y luego pasas al tamaño de la pantalla
+
+269
+00:13:11.455 --> 00:13:12.908
+a la que quieres apuntar.
+
+270
+00:13:12.908 --> 00:13:15.708
+Así que diré "min.width"
+
+271
+00:13:15.708 --> 00:13:18.970
+y quiero que este ancho sea,
+
+272
+00:13:18.970 --> 00:13:22.601
+déjame ver, en este caso, digamos 48em.
+
+273
+00:13:24.070 --> 00:13:26.268
+Y entonces, cualquier cosa aquí adentro
+
+274
+00:13:26.268 --> 00:13:29.226
+solo va a ocurrir cuando la pantalla
+
+275
+00:13:29.226 --> 00:13:31.250
+esté en modo de escritorio.
+
+276
+00:13:31.250 --> 00:13:34.004
+Así que aquí diré que navbar
+
+277
+00:13:34.004 --> 00:13:37.610
+y aquí es donde vamos a empezar a usar Flexbox.
+
+278
+00:13:37.610 --> 00:13:40.850
+Voy a decir "navbar flex"
+
+279
+00:13:40.850 --> 00:13:44.757
+y luego agreguemos una "navbar"
+
+280
+00:13:44.757 --> 00:13:48.110
+y vamos a envolver nuestros dos contenedores.
+
+281
+00:13:48.110 --> 00:13:50.233
+Así que esos elementos de la izquierda
+
+282
+00:13:50.233 --> 00:13:51.933
+y el lado derecho.
+
+283
+00:13:51.933 --> 00:13:56.263
+Así que diré "navbar left" y "navbar right"
+
+284
+00:13:57.630 --> 00:14:01.240
+y ahora vamos a hacer estos contenedores flex también.
+
+285
+00:14:01.240 --> 00:14:03.428
+Voy a decir "display: flex",
+
+286
+00:14:03.428 --> 00:14:06.350
+darles una propiedad flex de uno
+
+287
+00:14:06.350 --> 00:14:08.849
+y ahora no vas a ver ningún cambio aquí
+
+288
+00:14:08.849 --> 00:14:12.637
+porque es una pantalla pequeña,
+
+289
+00:14:12.637 --> 00:14:14.765
+y vamos a estirarlo hasta el final,
+
+290
+00:14:14.765 --> 00:14:16.532
+y ahora puedes ver que nuestra barra de navegación
+
+291
+00:14:16.532 --> 00:14:19.473
+empieza a parecerse a una barra de navegación de verdad.
+
+292
+00:14:19.473 --> 00:14:20.820
+Eso es emocionante.
+
+293
+00:14:20.820 --> 00:14:22.243
+Creo que se ve muy bien
+
+294
+00:14:22.243 --> 00:14:26.300
+y ahora si bajamos, podemos actualizar estos valores.
+
+295
+00:14:26.300 --> 00:14:30.665
+Vamos a tomar ese enlace de navbar de nuevo,
+
+296
+00:14:30.665 --> 00:14:32.990
+así que "navbar.link",
+
+297
+00:14:34.381 --> 00:14:37.598
+diremos que queremos que el ancho sea automático
+
+298
+00:14:38.708 --> 00:14:40.800
+y entonces te habrás dado cuenta
+
+299
+00:14:40.800 --> 00:14:44.622
+que nuestro Enlace 3 está en el medio,
+
+300
+00:14:44.622 --> 00:14:46.495
+es una especie de tierra de nadie.
+
+301
+00:14:46.495 --> 00:14:49.115
+Quiero tenerlo todo a la derecha.
+
+302
+00:14:49.115 --> 00:14:51.180
+Así que la forma en que podemos hacerlo
+
+303
+00:14:51.180 --> 00:14:54.013
+es diciendo "navbar"
+
+304
+00:14:55.238 --> 00:14:56.655
+y luego ".right",
+
+305
+00:14:57.980 --> 00:15:02.750
+"justify-content" y luego queremos que esto sea "flex-end"
+
+306
+00:15:02.750 --> 00:15:05.164
+que lo moverá hasta el lado derecho,
+
+307
+00:15:05.164 --> 00:15:07.251
+e incluso se puede ver aquí mismo.
+
+308
+00:15:07.251 --> 00:15:09.525
+Ahora ese enlace está completamente terminado
+
+309
+00:15:09.525 --> 00:15:13.440
+y los enlaces 1 y 2 están en los lugares que queremos,
+
+310
+00:15:13.440 --> 00:15:15.073
+la marca está donde queremos,
+
+311
+00:15:15.073 --> 00:15:17.507
+y luego nuestra hamburguesa está donde la queremos.
+
+312
+00:15:17.507 --> 00:15:21.130
+Así que esto va bastante bien.
+
+313
+00:15:21.130 --> 00:15:23.733
+Ahora no queremos la hamburguesa ahí arriba
+
+314
+00:15:23.733 --> 00:15:25.116
+así que aún tenemos trabajo que hacer,
+
+315
+00:15:25.116 --> 00:15:26.341
+pero está progresando.
+
+316
+00:15:26.341 --> 00:15:28.422
+Vamos a arreglar el problema de la hamburguesa.
+
+317
+00:15:28.422 --> 00:15:31.480
+Así que voy a decir "navbar.toggle"
+
+318
+00:15:34.040 --> 00:15:38.670
+y para este tamaño, vamos a decir "display: none".
+
+319
+00:15:38.670 --> 00:15:40.323
+Y ahora si volvemos a cambiar,
+
+320
+00:15:40.323 --> 00:15:42.818
+puedes ver que la hamburguesa ya no está,
+
+321
+00:15:42.818 --> 00:15:47.800
+que es exactamente lo que queremos en este caso concreto.
+
+322
+00:15:47.800 --> 00:15:50.400
+Eso es todo lo que tenemos que hacer
+
+323
+00:15:50.400 --> 00:15:52.574
+para esa "media query" específica.
+
+324
+00:15:52.574 --> 00:15:55.292
+Ahora, apuntemos a los teléfonos inteligentes.
+
+325
+00:15:55.292 --> 00:15:58.470
+Así que podemos volver a elegir eso ahora
+
+326
+00:15:58.470 --> 00:16:01.033
+porque los diferentes estilos que vamos a usar
+
+327
+00:16:01.033 --> 00:16:03.267
+son lo que queremos que ocurra
+
+328
+00:16:03.267 --> 00:16:05.010
+cuando esto esté en una pantalla más pequeña
+
+329
+00:16:05.010 --> 00:16:06.235
+como se puede ver aquí.
+
+330
+00:16:06.235 --> 00:16:09.700
+Así que vieron cómo regresó la hamburguesa
+
+331
+00:16:09.700 --> 00:16:11.761
+porque ahora estamos en una pantalla más pequeña.
+
+332
+00:16:11.761 --> 00:16:16.225
+Voy a decir "min-width" y demás,
+
+333
+00:16:16.225 --> 00:16:17.580
+y en realidad, ¿sabes qué?
+
+334
+00:16:17.580 --> 00:16:19.338
+Si tengo un "min-width" aquí,
+
+335
+00:16:19.338 --> 00:16:21.875
+déjame desplazarme un poco hacia arriba.
+
+336
+00:16:21.875 --> 00:16:23.818
+y sí, olvidé un elemento.
+
+337
+00:16:23.818 --> 00:16:27.887
+Necesito asegurarme de que agregamos una barra de navegación
+
+338
+00:16:27.887 --> 00:16:31.923
+y luego veamos, "navbar div",
+
+339
+00:16:32.864 --> 00:16:34.880
+Olvidé un pequeño elemento aquí.
+
+340
+00:16:34.880 --> 00:16:36.515
+Y por eso tenemos que asegurarnos
+
+341
+00:16:36.515 --> 00:16:40.245
+de que todos los divs aquí son flexibles.
+
+342
+00:16:40.245 --> 00:16:43.480
+Y la razón por la que hice esto por separado
+
+343
+00:16:43.480 --> 00:16:46.657
+fue porque normalmente cuando estoy usando este elemento
+
+344
+00:16:46.657 --> 00:16:48.293
+o cuando estoy integrando esto
+
+345
+00:16:48.293 --> 00:16:49.967
+en una de mis propias aplicaciones,
+
+346
+00:16:49.967 --> 00:16:52.310
+no siempre tengo una clase de izquierda y otra de derecha,
+
+347
+00:16:52.310 --> 00:16:54.443
+puede que tenga otras clases dentro de ella
+
+348
+00:16:54.443 --> 00:16:57.070
+como una barra de búsqueda o algo así.
+
+349
+00:16:57.070 --> 00:16:59.873
+Y en este ejemplo específico,
+
+350
+00:16:59.873 --> 00:17:01.311
+no necesitarías este código
+
+351
+00:17:01.311 --> 00:17:04.186
+pero si tienes otros "divs"
+
+352
+00:17:04.186 --> 00:17:06.750
+dentro de tu "navbar",
+
+353
+00:17:06.750 --> 00:17:10.092
+entonces necesitarás alguna forma de envolverlos a todos.
+
+354
+00:17:10.092 --> 00:17:13.438
+Así que esto es algo opcional, pero lo tenía en mis notas
+
+355
+00:17:13.438 --> 00:17:15.220
+para asegurarme de que eso estaba incluido.
+
+356
+00:17:15.220 --> 00:17:17.370
+Así que, dejemos eso ahí.
+
+357
+00:17:17.370 --> 00:17:19.153
+Pero ahora vamos a bajar
+
+358
+00:17:19.153 --> 00:17:21.794
+y a apuntar a los teléfonos inteligentes.
+
+359
+00:17:21.794 --> 00:17:26.302
+Así que podemos decir "max-width",
+
+360
+00:17:26.302 --> 00:17:28.513
+y vamos con 48em.
+
+361
+00:17:28.513 --> 00:17:31.047
+Así que esto es esencialmente todo lo contrario
+
+362
+00:17:31.047 --> 00:17:32.682
+de lo que teníamos antes.
+
+363
+00:17:32.682 --> 00:17:34.528
+Así que esto va a ser para los teléfonos inteligentes
+
+364
+00:17:34.528 --> 00:17:36.820
+y ahora podemos ir
+
+365
+00:17:36.820 --> 00:17:40.654
+a "navbar.active.toggle"
+
+366
+00:17:42.070 --> 00:17:45.912
+y hagamos el fondo aquí
+
+367
+00:17:48.690 --> 00:17:51.090
+ese tipo de color masticable
+
+368
+00:17:51.090 --> 00:17:54.010
+si puedo deletrear background correctamente, ahí vamos.
+
+369
+00:17:54.010 --> 00:17:57.358
+Así que el fondo va a ser ese azul oscuro,
+
+370
+00:17:57.358 --> 00:18:01.385
+tendré el 223047
+
+371
+00:18:01.385 --> 00:18:04.620
+y luego haremos el color blanco.
+
+372
+00:18:04.620 --> 00:18:06.460
+Así que esto va a ser lo que pase
+
+373
+00:18:06.460 --> 00:18:08.465
+cuando hagas clic en eso
+
+374
+00:18:08.465 --> 00:18:12.678
+vas a tener las diferentes funciones de toggle.
+
+375
+00:18:12.678 --> 00:18:17.520
+Así que ahora que tenemos eso, podemos decir "navbar.brand"
+
+376
+00:18:18.480 --> 00:18:22.310
+y ahora queremos que la alineación sea a la izquierda.
+
+377
+00:18:22.310 --> 00:18:24.800
+Por lo tanto, digamos "text alignment left"
+
+378
+00:18:24.800 --> 00:18:27.478
+y puedes ver que nuestra marca se movió
+
+379
+00:18:27.478 --> 00:18:31.058
+porque quiero eso más cerca de nuestra hamburguesa.
+
+380
+00:18:31.058 --> 00:18:33.310
+cuando está en un teléfono inteligente.
+
+381
+00:18:33.310 --> 00:18:34.758
+Y luego lo creas o no,
+
+382
+00:18:34.758 --> 00:18:36.773
+solo tenemos que agregar una clase más
+
+383
+00:18:36.773 --> 00:18:40.325
+así que va a ser "navbar.active div"
+
+384
+00:18:41.500 --> 00:18:45.313
+y luego esto va a ser "display: block".
+
+385
+00:18:50.620 --> 00:18:52.828
+Ahora no vemos ningún cambio
+
+386
+00:18:52.828 --> 00:18:55.677
+y la razón es porque puede que hayas notado
+
+387
+00:18:55.677 --> 00:18:58.580
+que introduje una nueva clase aquí llamada "active"
+
+388
+00:18:58.580 --> 00:19:01.800
+y así que la tenemos aquí y aquí.
+
+389
+00:19:01.800 --> 00:19:06.468
+Y vamos a hacer aparecer esta clase activa
+
+390
+00:19:06.468 --> 00:19:10.447
+en la pantalla y va a ser agregada al dom
+
+391
+00:19:10.447 --> 00:19:14.200
+cada vez que hagas clic en el icono de la hamburguesa.
+
+392
+00:19:14.200 --> 00:19:16.368
+Así que vamos a aprovechar JavaScript
+
+393
+00:19:16.368 --> 00:19:17.720
+para poder hacerlo
+
+394
+00:19:17.720 --> 00:19:19.390
+y lo primero que tenemos que hacer
+
+395
+00:19:19.390 --> 00:19:22.055
+es seleccionar esta "navHamburger".
+
+396
+00:19:22.055 --> 00:19:24.288
+Lo que quiero hacer es que JavaScript
+
+397
+00:19:24.288 --> 00:19:25.930
+recepcione este clic,
+
+398
+00:19:25.930 --> 00:19:30.176
+así que cada vez que hacemos clic en esta clase toggle,
+
+399
+00:19:30.176 --> 00:19:32.045
+va a tomar "navHamburger"
+
+400
+00:19:32.045 --> 00:19:36.275
+y luego vamos a hacer que haga algún tipo de tarea.
+
+401
+00:19:36.275 --> 00:19:40.820
+Vamos debajo del cuerpo y voy a decir "script"
+
+402
+00:19:40.820 --> 00:19:43.430
+y ahora vamos a realizar nuestro selector.
+
+403
+00:19:43.430 --> 00:19:47.930
+Así que diré "const navHamburger"
+
+404
+00:19:47.930 --> 00:19:50.213
+y realizaremos nuestra consulta
+
+405
+00:19:50.213 --> 00:19:54.140
+de "document.querySelector"
+
+406
+00:19:54.140 --> 00:19:57.930
+y vamos a especificar navHamburger.
+
+407
+00:20:00.750 --> 00:20:03.860
+Ahora que tenemos eso, agreguemos un receptor de eventos,
+
+408
+00:20:03.860 --> 00:20:07.720
+así que "navHamburger.addEventListener",
+
+409
+00:20:07.720 --> 00:20:09.467
+para que recepcione un clic.
+
+410
+00:20:09.467 --> 00:20:12.549
+Y si vieron alguno de mis tutoriales de JavaScript,
+
+411
+00:20:12.549 --> 00:20:15.608
+especialmente los que hablan de receptores de evento,
+
+412
+00:20:15.608 --> 00:20:19.640
+sabes que podemos pasarle un evento a un receptor de evento.
+
+413
+00:20:19.640 --> 00:20:23.625
+Así que voy a usar esta sintaxis de flechas para la función
+
+414
+00:20:23.625 --> 00:20:28.625
+y aquí adentro, diré "navHamburger.parentElement"
+
+415
+00:20:28.940 --> 00:20:31.048
+así que vamos a atravesar el dom,
+
+416
+00:20:31.048 --> 00:20:33.730
+mover un elemento para arriba,
+
+417
+00:20:33.730 --> 00:20:36.932
+así que todo lo que esté por encima de "parentElement"
+
+418
+00:20:36.932 --> 00:20:39.869
+que en este caso es la clase navbar.
+
+419
+00:20:39.869 --> 00:20:44.550
+Voy a agregar o cambiar, diría yo,
+
+420
+00:20:44.550 --> 00:20:46.350
+la clase activa.
+
+421
+00:20:46.350 --> 00:20:51.140
+Voy a decir "parentElement.classList.toggle"
+
+422
+00:20:51.140 --> 00:20:54.083
+y luego pasar a active.
+
+423
+00:20:55.475 --> 00:20:59.685
+Vamos a pulsar Guardar porque creo que ahora
+
+424
+00:20:59.685 --> 00:21:02.507
+debería estar funcionando todo.
+
+425
+00:21:02.507 --> 00:21:06.198
+Voy a venir aquí y si hago clic en esto,
+
+426
+00:21:06.198 --> 00:21:08.227
+puedes ver que esto está funcionando perfectamente.
+
+427
+00:21:08.227 --> 00:21:12.143
+Tenemos configurado nuestro sistema de navegación sensible.
+
+428
+00:21:12.143 --> 00:21:13.609
+Si hago doble clic en esto
+
+429
+00:21:13.609 --> 00:21:15.480
+y cambiamos al modo de escritorio,
+
+430
+00:21:15.480 --> 00:21:17.488
+puedes ver que la barra de navegación
+
+431
+00:21:17.488 --> 00:21:18.858
+ahora se ve completamente diferente.
+
+432
+00:21:18.858 --> 00:21:23.159
+Esconde la hamburguesa
+y tiene nuestros enlaces,
+
+433
+00:21:23.159 --> 00:21:26.168
+si lo reducimos al tamaño de un teléfono inteligente,
+
+434
+00:21:26.168 --> 00:21:29.306
+entonces tenemos este útil desplegable.
+
+435
+00:21:29.306 --> 00:21:31.810
+Ahora, la última cosa que quiero hacer
+
+436
+00:21:31.810 --> 00:21:34.160
+es arreglar estas fuentes
+
+437
+00:21:34.160 --> 00:21:36.081
+porque estas fuentes son bastante feas
+
+438
+00:21:36.081 --> 00:21:40.250
+y odiaría darte una barra de navegación con ese aspecto.
+
+439
+00:21:40.250 --> 00:21:43.163
+Así que vamos a cambiar a Google Fonts.
+
+440
+00:21:45.920 --> 00:21:49.295
+Y cuando estaba investigando este tema,
+
+441
+00:21:49.295 --> 00:21:51.882
+encontré una fuente que me pareció muy bonita
+
+442
+00:21:51.882 --> 00:21:56.450
+así que voy a buscarla, se llama "Oxygen"
+
+443
+00:21:56.450 --> 00:22:00.670
+y puedes hacer clic aquí, clic en seleccionar esta fuente
+
+444
+00:22:00.670 --> 00:22:03.453
+y luego Google te da todas las instrucciones
+
+445
+00:22:03.453 --> 00:22:05.518
+que necesitas para implementarla.
+
+446
+00:22:05.518 --> 00:22:09.900
+Puedes copiar este pequeño importador de enlaces,
+
+447
+00:22:09.900 --> 00:22:14.520
+sube a la parte superior, y pégalo justo debajo
+
+448
+00:22:14.520 --> 00:22:16.705
+lo que tenemos aquí con Font Awesome.
+
+449
+00:22:17.714 --> 00:22:22.714
+Y luego dentro de una definición de estilo HTML,
+
+450
+00:22:23.200 --> 00:22:26.933
+puedes decir que quieres tener esta familia de fuentes.
+
+451
+00:22:28.068 --> 00:22:30.760
+Vamos a hacer clic en esto, copiarlo,
+
+452
+00:22:30.760 --> 00:22:32.900
+Terminamos aquí.
+
+453
+00:22:32.900 --> 00:22:36.807
+Pégalo, presiona Guardar, y ahora regresa.
+
+454
+00:22:36.807 --> 00:22:39.612
+Y puedes ver como se ven mucho mejor esas fuentes.
+
+455
+00:22:39.612 --> 00:22:42.343
+Las fuentes y los tipos de letra marcan una gran diferencia
+
+456
+00:22:42.343 --> 00:22:44.940
+en cualquier tipo de desarrollo "front-end"
+
+457
+00:22:44.940 --> 00:22:47.313
+y ahora puedes ver que eso se ve mucho mejor,
+
+458
+00:22:47.313 --> 00:22:49.773
+esto parece un componente de navegación
+
+459
+00:22:49.773 --> 00:22:52.070
+completamente profesional.
+
+460
+00:22:52.070 --> 00:22:54.200
+Si hiciste eso, fue un gran trabajo,
+
+461
+00:22:54.200 --> 00:22:57.512
+ahora sabes cómo construir un componente de navegación
+
+462
+00:22:57.512 --> 00:23:00.620
+completamente receptivo en HTML,
+
+463
+00:23:00.620 --> 00:23:03.528
+CSS, Flexbox y JavaScript.
+

@@ -1,0 +1,762 @@
+WEBVTT
+
+1
+00:00:00.900 --> 00:00:01.880
+En la última guía,
+
+2
+00:00:01.880 --> 00:00:06.510
+hicimos una estructura dentro de un contenedor.
+
+3
+00:00:06.510 --> 00:00:09.420
+Esto es algo muy importante
+
+4
+00:00:09.420 --> 00:00:11.850
+y quiero que lo repasemos un poco
+
+5
+00:00:11.850 --> 00:00:14.780
+antes de terminar la aplicación.
+
+6
+00:00:14.780 --> 00:00:17.120
+Y es importante porque es algo
+
+7
+00:00:17.120 --> 00:00:18.530
+que van a tener que hacer
+
+8
+00:00:18.530 --> 00:00:20.670
+para muchas aplicaciones.
+
+9
+00:00:20.670 --> 00:00:24.740
+Ahora estamos trabajando con datos del código fuente
+
+10
+00:00:24.740 --> 00:00:28.470
+así que todos nuestros datos ahora son
+
+11
+00:00:28.470 --> 00:00:29.990
+lo que escribimos en el código.
+
+12
+00:00:29.990 --> 00:00:33.670
+Así que aquí, si nos movemos hacia abajo,
+
+13
+00:00:33.670 --> 00:00:35.970
+se pueden ver que todas estas imágenes
+
+14
+00:00:35.970 --> 00:00:39.150
+están dentro de nuestro directorio de proyecto
+
+15
+00:00:39.150 --> 00:00:42.600
+y sabemos que dentro de este envoltorio
+
+16
+00:00:42.600 --> 00:00:44.310
+vamos a tener cuatro imágenes.
+
+17
+00:00:44.310 --> 00:00:46.320
+Pero normalmente,
+
+18
+00:00:46.320 --> 00:00:48.640
+van a tener que construir esto
+
+19
+00:00:48.640 --> 00:00:52.300
+en una especie de reacción o vista o vías.
+
+20
+00:00:52.300 --> 00:00:54.350
+Y cuando este sea el caso,
+
+21
+00:00:54.350 --> 00:00:57.020
+no van a saber cuántos ítems
+
+22
+00:00:57.020 --> 00:00:58.630
+van a ir dentro de él.
+
+23
+00:00:58.630 --> 00:01:01.360
+Y es por eso que deberán tener
+
+24
+00:01:01.360 --> 00:01:04.300
+un comportamiento dinámico,
+
+25
+00:01:04.300 --> 00:01:06.550
+a eso nos conduce la repetición.
+
+26
+00:01:06.550 --> 00:01:09.500
+Imaginen que están haciendo una página de eCommerce,
+
+27
+00:01:09.500 --> 00:01:11.990
+y una página de eCommerce es uno de los proyectos
+
+28
+00:01:11.990 --> 00:01:14.530
+que también haremos en este curso.
+
+29
+00:01:14.530 --> 00:01:18.070
+Y tendrán que mostrar unos cuantos productos,
+
+30
+00:01:18.070 --> 00:01:23.070
+y algunas páginas tendrán dos, y otras tal vez cuarenta.
+
+31
+00:01:23.460 --> 00:01:27.310
+Pueden saber cuántas columnas lleva,
+
+32
+00:01:27.310 --> 00:01:29.860
+pero no saben cuántas filas
+
+33
+00:01:29.860 --> 00:01:33.430
+porque eso depende de un número dinámico de productos,
+
+34
+00:01:33.430 --> 00:01:37.320
+eso es lo que quiero enfatizar,
+
+35
+00:01:37.320 --> 00:01:39.520
+la importancia de entender
+
+36
+00:01:39.520 --> 00:01:41.260
+lo que estamos haciendo con repetición,
+
+37
+00:01:41.260 --> 00:01:45.940
+le damos a nuestro programa la capacidad de ser dinámico.
+
+38
+00:01:45.940 --> 00:01:49.670
+Pueden probar esto yendo hacia abajo.
+
+39
+00:01:49.670 --> 00:01:51.683
+Vayamos hacia el final,
+
+40
+00:01:52.561 --> 00:01:54.920
+y digamos que tenemos ¿saben qué?,
+
+41
+00:01:54.920 --> 00:01:59.150
+no cuatro, sino ocho imágenes.
+
+42
+00:01:59.150 --> 00:02:02.470
+Vuelvan ahora y desplacense hacia abajo,
+
+43
+00:02:02.470 --> 00:02:06.170
+se puede ver que el comportamiento se mantiene.
+
+44
+00:02:06.170 --> 00:02:10.300
+Seguimos teniendo el espacio entre las columnas,
+
+45
+00:02:10.300 --> 00:02:11.570
+tenemos las columnas
+
+46
+00:02:11.570 --> 00:02:13.200
+y todo funciona,
+
+47
+00:02:13.200 --> 00:02:15.520
+independientemente de la cantidad de elementos.
+
+48
+00:02:15.520 --> 00:02:18.540
+Así que cuando se trata de recordar cosas,
+
+49
+00:02:18.540 --> 00:02:19.620
+siempre quiero destacar
+
+50
+00:02:19.620 --> 00:02:21.350
+que estamos trabajando
+
+51
+00:02:21.350 --> 00:02:23.840
+con algo que es muy importante entender,
+
+52
+00:02:23.840 --> 00:02:28.120
+el uso de la función de repetición.
+
+53
+00:02:28.120 --> 00:02:29.970
+Dicho todo esto,
+
+54
+00:02:29.970 --> 00:02:32.520
+concluyamos el proyecto.
+
+55
+00:02:32.520 --> 00:02:34.520
+Voy a volver a la parte inferior
+
+56
+00:02:34.520 --> 00:02:36.840
+¿para qué?
+
+57
+00:02:36.840 --> 00:02:39.660
+Y entre los vídeos vi cuál era el problema,
+
+58
+00:02:39.660 --> 00:02:44.270
+accidentalmente escribí pixeles en lugar de porcentaje.
+
+59
+00:02:44.270 --> 00:02:47.960
+Y eso nos lleva a otro tema importante,
+
+60
+00:02:47.960 --> 00:02:51.190
+pueden notar que encontramos en la estructura
+
+61
+00:02:51.190 --> 00:02:55.640
+elementos con logos basados en texto e imagen,
+
+62
+00:02:55.640 --> 00:03:00.350
+pueden ver que en uno de ellos podemos usar pixeles
+
+63
+00:03:00.350 --> 00:03:03.100
+y en el otro porcentaje para darles el tamaño.
+
+64
+00:03:03.100 --> 00:03:06.130
+Y eso es lo bueno de la estructura,
+
+65
+00:03:06.130 --> 00:03:09.050
+que es muy flexible con los tipos de estilos
+
+66
+00:03:09.050 --> 00:03:12.290
+que quieran agregar dentro de las columnas.
+
+67
+00:03:12.290 --> 00:03:15.323
+Así que arreglemos esto cambiándolo a porcentaje.
+
+68
+00:03:16.640 --> 00:03:19.370
+Lo guardo, y al volver,
+
+69
+00:03:19.370 --> 00:03:22.390
+pueden ver que ahora la estructura se ve fantástica.
+
+70
+00:03:22.390 --> 00:03:26.310
+Creo que es exactamente lo que buscamos,
+
+71
+00:03:26.310 --> 00:03:28.060
+así que ya estamos cerca.
+
+72
+00:03:28.060 --> 00:03:32.730
+Solo tenemos que agregar estos dos elementos abajo.
+
+73
+00:03:32.730 --> 00:03:34.800
+Así que desplacémonos.
+
+74
+00:03:34.800 --> 00:03:39.390
+Tenemos recursos, descargas y luego tenemos uso.
+
+75
+00:03:39.390 --> 00:03:41.880
+Y me parece que en este caso tiene sentido
+
+76
+00:03:41.880 --> 00:03:43.850
+ponerle a cada uno su propio envoltorio
+
+77
+00:03:43.850 --> 00:03:45.510
+porque tenemos unos cuantos estilos
+
+78
+00:03:45.510 --> 00:03:46.930
+que le vamos a agregar.
+
+79
+00:03:46.930 --> 00:03:48.740
+Así que voy a crear otra división
+
+80
+00:03:48.740 --> 00:03:53.410
+llamada detalles adicionales de la marca,
+
+81
+00:03:53.410 --> 00:03:56.890
+y dentro de ella vamos a tener un h3
+
+82
+00:03:57.758 --> 00:04:01.653
+de descarga de recursos.
+
+83
+00:04:03.200 --> 00:04:07.590
+Y luego vamos a tener otro de uso también.
+
+84
+00:04:07.590 --> 00:04:09.360
+Así que tenemos uso,
+
+85
+00:04:09.360 --> 00:04:11.890
+y entre esto vamos a tener
+
+86
+00:04:14.082 --> 00:04:16.492
+un enlace debajo de esto,
+
+87
+00:04:16.492 --> 00:04:18.810
+y vamos a tener un párrafo debajo de uso.
+
+88
+00:04:18.810 --> 00:04:22.100
+Pero voy a poner ambos dentro de una etiqueta de párrafo.
+
+89
+00:04:22.100 --> 00:04:26.470
+Y lo voy a llamar href de párrafo,
+
+90
+00:04:26.470 --> 00:04:29.433
+no va a conducir a ningún enlace,
+
+91
+00:04:29.433 --> 00:04:33.403
+y el texto debería decir descargar archivo zip,
+
+92
+00:04:34.480 --> 00:04:38.530
+eso es lo que habrá dentro de nuestro programa real.
+
+93
+00:04:38.530 --> 00:04:42.090
+Y luego, si voy a uso,
+
+94
+00:04:42.090 --> 00:04:44.200
+también hace falta una etiqueta para el párrafo,
+
+95
+00:04:44.200 --> 00:04:45.480
+dentro de esto simplemente
+
+96
+00:04:45.480 --> 00:04:47.290
+vamos a insertar el contenido,
+
+97
+00:04:47.290 --> 00:04:51.733
+así que nos deslicemos hacia abajo en la app de producción.
+
+98
+00:04:53.640 --> 00:04:58.640
+Copienlo, peguenlo y ya podemos seguir.
+
+99
+00:05:02.770 --> 00:05:05.720
+Muy bien, eso sería todo lo que necesitamos,
+
+100
+00:05:05.720 --> 00:05:08.850
+desde el punto de vista de html.
+
+101
+00:05:08.850 --> 00:05:11.886
+Vemos que ya falta muy poco,
+
+102
+00:05:11.886 --> 00:05:14.400
+ahora solo hace falta pulirlo un poco.
+
+103
+00:05:14.400 --> 00:05:17.830
+Así que ahora personalizamos el estilo de la cabecera,
+
+104
+00:05:17.830 --> 00:05:20.830
+del enlace, y eso sería todo,
+
+105
+00:05:20.830 --> 00:05:22.770
+eso y un poco de margen,
+
+106
+00:05:22.770 --> 00:05:25.010
+y ya estaría todo.
+
+107
+00:05:25.010 --> 00:05:27.490
+Entonces, volvamos aquí y
+
+108
+00:05:27.490 --> 00:05:32.490
+definamos el estilo una vez más.
+
+109
+00:05:34.640 --> 00:05:36.760
+Justo debajo de los logotipos
+
+110
+00:05:36.760 --> 00:05:38.920
+es donde vamos a comenzar a agregar todo.
+
+111
+00:05:38.920 --> 00:05:43.920
+Daremos detalles adicionales de la marca
+
+112
+00:05:48.360 --> 00:05:52.920
+en el margen superior de 75 pixeles
+
+113
+00:05:54.210 --> 00:05:56.820
+y hacemos lo mismo con el margen inferior.
+
+114
+00:05:58.290 --> 00:05:59.580
+Y eso es todo lo que hace falta,
+
+115
+00:05:59.580 --> 00:06:01.190
+aquí no se va a usar una estructura
+
+116
+00:06:01.190 --> 00:06:02.800
+ni nada por el estilo.
+
+117
+00:06:02.800 --> 00:06:07.030
+Si queremos actualizar el tamaño y el color de ese enlace,
+
+118
+00:06:07.030 --> 00:06:10.390 line:15% 
+tenemos detalles adicionales de la marca A
+
+119
+00:06:10.390 --> 00:06:12.310
+para seleccionar el enlace.
+
+120
+00:06:12.310 --> 00:06:15.660
+Y le agregaremos un color.
+
+121
+00:06:15.660 --> 00:06:18.020
+A este no lo tengo en mi cabecera
+
+122
+00:06:18.020 --> 00:06:20.610
+así que vengamos aquí e inspeccionemos el elemento.
+
+123
+00:06:20.610 --> 00:06:23.400
+Ven que usa ese tipo de azul claro.
+
+124
+00:06:23.400 --> 00:06:28.043
+Lo inspeccionamos y pueden copiar eso.
+
+125
+00:06:31.050 --> 00:06:32.530
+Peguenlo aquí.
+
+126
+00:06:32.530 --> 00:06:37.140
+Y ahora actualicemos el tamaño de la fuente también.
+
+127
+00:06:37.140 --> 00:06:40.183
+El tamaño de la fuente debería ser 19 pixeles.
+
+128
+00:06:42.170 --> 00:06:43.220
+Marquen guardar.
+
+129
+00:06:43.220 --> 00:06:45.920
+Y ahí tienen, se ve muy bien.
+
+130
+00:06:45.920 --> 00:06:49.300
+Creo que eso es todo lo que tenemos que hacer en esta.
+
+131
+00:06:49.300 --> 00:06:52.530
+El próximo paso es trabajar
+
+132
+00:06:52.530 --> 00:06:54.550
+con la etiqueta de párrafo.
+
+133
+00:06:54.550 --> 00:06:56.960
+Así que tengo que agregar el párrafo.
+
+134
+00:06:56.960 --> 00:06:58.580
+Esto, a pesar de que es un enlace,
+
+135
+00:06:58.580 --> 00:07:00.274
+está dentro de una etiqueta de párrafo
+
+136
+00:07:00.274 --> 00:07:01.617
+y esto también.
+
+137
+00:07:01.617 --> 00:07:02.790
+Le voy a agregar más margen
+
+138
+00:07:02.790 --> 00:07:05.080
+para que tengamos más espacio aquí.
+
+139
+00:07:05.080 --> 00:07:09.293
+Entonces, bajemos aquí, tomamos todo esto
+
+140
+00:07:11.690 --> 00:07:16.690
+y luego cambiamos la etiqueta A por una de párrafo,
+
+141
+00:07:19.150 --> 00:07:21.480
+y a partir de aquí lo único que tenemos que hacer
+
+142
+00:07:21.480 --> 00:07:25.480
+es definir el margen inferior
+
+143
+00:07:25.480 --> 00:07:28.040
+y el número adecuado sería 42.
+
+144
+00:07:28.040 --> 00:07:31.780
+Así que le ponemos 42 pixeles y listo.
+
+145
+00:07:31.780 --> 00:07:34.000
+Se ve mucho mejor.
+
+146
+00:07:34.000 --> 00:07:36.650
+Nos deslizamos completamente hasta arriba
+
+147
+00:07:36.650 --> 00:07:38.350
+para ver que todo funcione.
+
+148
+00:07:38.350 --> 00:07:41.210
+Entonces tenemos guías de la marca
+
+149
+00:07:41.210 --> 00:07:43.800
+y tenemos varios contenedores.
+
+150
+00:07:43.800 --> 00:07:47.510
+Todo se ve hermoso, me gusta.
+
+151
+00:07:47.510 --> 00:07:51.780
+Bueno, la próxima guía es especial, tiene un bono,
+
+152
+00:07:51.780 --> 00:07:54.190
+porque una de las cosas que van a escuchar bastante,
+
+153
+00:07:54.190 --> 00:07:57.500
+cuando estén trabajando con herramientas
+
+154
+00:07:57.500 --> 00:08:00.870
+como estructuras o cajas flex,
+
+155
+00:08:00.870 --> 00:08:02.330
+es que deberían usar estas herramientas
+
+156
+00:08:02.330 --> 00:08:06.310
+para poder crear componentes que respondan.
+
+157
+00:08:06.310 --> 00:08:08.530
+Cuando digo que respondan,
+
+158
+00:08:08.530 --> 00:08:11.690
+me refiero a que toda la página
+
+159
+00:08:11.690 --> 00:08:14.360
+debería verse bien en smartphones.
+
+160
+00:08:14.360 --> 00:08:15.730
+Pero veamos lo que ocurre,
+
+161
+00:08:15.730 --> 00:08:17.890
+probemosla ahora mismo.
+
+162
+00:08:17.890 --> 00:08:22.070
+Si encojo esto y lo muevo,
+
+163
+00:08:22.070 --> 00:08:26.010
+dándole el tamaño que debería tener un smartphone,
+
+164
+00:08:26.010 --> 00:08:30.090
+eso es todo lo que me deja achicarlo.
+
+165
+00:08:30.090 --> 00:08:33.980
+Pero déjenme probarlo ¿si?
+
+166
+00:08:33.980 --> 00:08:35.150
+Es un poco forzado,
+
+167
+00:08:35.150 --> 00:08:38.920
+pero bueno, es como queda,
+
+168
+00:08:38.920 --> 00:08:40.820
+como se vería en un smartphone.
+
+169
+00:08:40.820 --> 00:08:42.140
+Es un smartphone un poco ancho,
+
+170
+00:08:42.140 --> 00:08:44.140
+pero les da una idea de cómo es.
+
+171
+00:08:44.140 --> 00:08:49.010
+Pueden ver que se ve bien, pero no es perfecto.
+
+172
+00:08:49.010 --> 00:08:52.740
+Todavía se puede seguir trabajando,
+
+173
+00:08:52.740 --> 00:08:54.430
+por ejemplo,
+
+174
+00:08:54.430 --> 00:08:58.610
+no me gusta cómo se mantiene la estructura aquí
+
+175
+00:08:58.610 --> 00:09:01.070
+en un dispositivo del tipo de un smartphone.
+
+176
+00:09:01.070 --> 00:09:03.522
+Me parece que lo ideal sería
+
+177
+00:09:03.522 --> 00:09:08.522
+que este contenido ocupara el 100% del ancho
+
+178
+00:09:09.500 --> 00:09:12.590
+y esta imagen iría justo aquí abajo,
+
+179
+00:09:12.590 --> 00:09:15.447
+y ocuparía el 100%, y luego lo mismo.
+
+180
+00:09:15.447 --> 00:09:17.740
+Entonces, estas columnas
+
+181
+00:09:17.740 --> 00:09:20.080
+se apilarían una encima de otra.
+
+182
+00:09:20.080 --> 00:09:22.820
+Esto de verdad me gusta,
+
+183
+00:09:22.820 --> 00:09:24.040
+me gusta cómo queda.
+
+184
+00:09:24.040 --> 00:09:26.820
+En gran parte, ya está casi terminado,
+
+185
+00:09:26.820 --> 00:09:28.620
+pero todavía falta trabajar
+
+186
+00:09:28.620 --> 00:09:30.500
+para que realmente responda.
+
+187
+00:09:30.500 --> 00:09:32.590
+Así que en la próxima guía, vamos a hacer eso.
+
+188
+00:09:32.590 --> 00:09:34.560
+Vamos a ver cómo aprovechar herramientas
+
+189
+00:09:34.560 --> 00:09:38.920
+como buscadores para tomar la página completa
+
+190
+00:09:38.920 --> 00:09:41.713
+y hacerla ver bien en dispositivos móviles.
+

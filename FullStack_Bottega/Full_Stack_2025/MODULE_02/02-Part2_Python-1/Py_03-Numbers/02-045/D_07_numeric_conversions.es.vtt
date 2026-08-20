@@ -1,0 +1,505 @@
+WEBVTT
+
+1
+00:00:01.205 --> 00:00:03.740
+<v Jordan>En esta sección</v>
+sobre números en Python,
+
+2
+00:00:03.740 --> 00:00:05.930
+ya hablamos sobre números
+
+3
+00:00:05.930 --> 00:00:07.595
+desde una perspectiva de alto nivel
+
+4
+00:00:07.595 --> 00:00:10.583
+y algunas de las funciones asociadas,
+
+5
+00:00:10.583 --> 00:00:13.870
+tales como cómo ejecutar
+cálculos y elementos así.
+
+6
+00:00:13.870 --> 00:00:17.310
+Pero también hablamos
+sobre tipos de subdatos
+
+7
+00:00:17.310 --> 00:00:20.890
+dentro de los números,
+como enteros, flotantes
+
+8
+00:00:20.890 --> 00:00:22.720
+y distintos elementos así.
+
+9
+00:00:22.720 --> 00:00:26.183
+Y, en general, Python gestionará
+
+10
+00:00:26.183 --> 00:00:30.400
+el proceso de convertirlos automáticamente por nosotros.
+
+11
+00:00:30.400 --> 00:00:32.891
+Ya vimos cómo realizar
+
+12
+00:00:32.891 --> 00:00:36.082
+algo como costo de producto.
+
+13
+00:00:36.082 --> 00:00:38.320
+Pondremos esto
+en una declaración "print".
+
+14
+00:00:38.320 --> 00:00:41.820
+Entonces, si escribimos
+"print(costo producto *"
+
+15
+00:00:41.820 --> 00:00:44.143
+y multiplicamos esto
+
+16
+00:00:44.143 --> 00:00:46.300
+por la cantidad,
+
+17
+00:00:46.300 --> 00:00:48.066
+lo que esto hará,
+
+18
+00:00:48.066 --> 00:00:51.316
+aunque la cantidad sea un entero,
+
+19
+00:00:51.316 --> 00:00:53.310
+será ejecutar esto
+
+20
+00:00:53.310 --> 00:00:56.710
+y convertirá el número
+de archivo en un flotante.
+
+21
+00:00:56.710 --> 00:01:00.040
+Si apretamos "Devolver",
+vemos que es un flotante
+
+22
+00:01:00.040 --> 00:01:03.980
+y que realizó esa conversión automáticamente por nosotros.
+
+23
+00:01:03.980 --> 00:01:08.110
+Sin embargo, si alguna vez
+queremos hacerlo manualmente,
+
+24
+00:01:08.110 --> 00:01:10.280
+por ejemplo, si alguna vez queremos
+
+25
+00:01:10.280 --> 00:01:13.240
+tomar un flotante
+y convertirlo en un entero,
+
+26
+00:01:13.240 --> 00:01:16.140
+o viceversa, también podemos hacerlo.
+
+27
+00:01:16.140 --> 00:01:18.530
+Y eso haremos en esta guía.
+
+28
+00:01:18.530 --> 00:01:22.050
+Y la sintaxis para esto,
+explicaremos tres de ellas,
+
+29
+00:01:22.050 --> 00:01:26.247
+es brindar el nombre,
+que es una función
+
+30
+00:01:26.247 --> 00:01:29.855
+y empaquetar el valor
+que queramos convertir
+
+31
+00:01:29.855 --> 00:01:31.150
+dentro de eso.
+
+32
+00:01:31.150 --> 00:01:35.080
+Lo primero que haremos será un entero.
+
+33
+00:01:35.080 --> 00:01:37.860
+Tomaremos un costo de producto
+
+34
+00:01:37.860 --> 00:01:39.940
+y lo convertiremos a un entero.
+
+35
+00:01:39.940 --> 00:01:43.482
+Aunque ahora sea un flotante,
+quiero convertirlo.
+
+36
+00:01:43.482 --> 00:01:45.107
+Y la sintaxis se verá así:
+
+37
+00:01:45.107 --> 00:01:48.374
+escribiremos "int ".
+
+38
+00:01:48.374 --> 00:01:50.550
+Y eso lo convertirá por nosotros.
+
+39
+00:01:50.550 --> 00:01:53.200
+Colocaremos esto dentro
+de una declaración "print",
+
+40
+00:01:53.200 --> 00:01:55.500
+pero también podríamos
+colocarlo en una variable
+
+41
+00:01:55.500 --> 00:01:57.760
+y usarlo como queramos.
+
+42
+00:01:57.760 --> 00:02:00.390
+Entonces, escribiremos
+"print ",
+
+43
+00:02:00.390 --> 00:02:02.990
+que comenzó a 88.40.
+
+44
+00:02:02.990 --> 00:02:05.150
+Veamos qué sucede
+si lo ejecutamos ahora.
+
+45
+00:02:05.150 --> 00:02:07.180
+Vemos que ahora es 88.
+
+46
+00:02:07.180 --> 00:02:11.870
+Pero si cambiamos esto a 88.80
+
+47
+00:02:11.870 --> 00:02:14.845
+y lo volvemos a ejecutar,
+vemos que sigue siendo 88.
+
+48
+00:02:14.845 --> 00:02:17.530
+Se comporta similar
+
+49
+00:02:17.530 --> 00:02:21.240
+a cómo funciona
+el cociente de una división,
+
+50
+00:02:21.240 --> 00:02:24.465
+donde a pesar de que 88.8
+
+51
+00:02:24.465 --> 00:02:28.370
+está más cerca de 89, lo que en esencia hace
+
+52
+00:02:28.370 --> 00:02:31.410
+es solo tomar
+la variable de punto flotante
+
+53
+00:02:31.410 --> 00:02:35.202
+y deshacerse de ella.
+Debemos ser conscientes de que
+
+54
+00:02:35.202 --> 00:02:37.220
+si convertiremos esos valores,
+
+55
+00:02:37.220 --> 00:02:40.120
+no lo redondee
+al número entero más cercano,
+
+56
+00:02:40.120 --> 00:02:43.920
+sino que simplemente tome
+el valor entero que haya,
+
+57
+00:02:43.920 --> 00:02:46.580
+lo conserve e ignore el resto.
+
+58
+00:02:46.580 --> 00:02:49.250
+Eso es algo para tener en cuenta.
+
+59
+00:02:49.250 --> 00:02:52.110
+Lo siguiente es tomar nuestra cantidad
+
+60
+00:02:52.110 --> 00:02:54.080
+y convertirla en un flotante.
+
+61
+00:02:54.080 --> 00:02:58.076
+Para hacer eso,
+la palabra clave es flotante.
+
+62
+00:02:58.076 --> 00:03:00.090
+Podemos escribir "cantidad",
+
+63
+00:03:00.090 --> 00:03:03.250
+y ahora veamos qué hace esto.
+
+64
+00:03:03.250 --> 00:03:05.408
+Si apretamos "Devolver",
+vemos que 450
+
+65
+00:03:05.408 --> 00:03:07.241
+se convierte en 450.0,
+
+66
+00:03:08.840 --> 00:03:11.580
+por si alguna vez necesitamos eso.
+
+67
+00:03:11.580 --> 00:03:14.540
+Pero si trabajamos
+con la librería decimal,
+
+68
+00:03:14.540 --> 00:03:17.190
+con la que ya trabajamos,
+
+69
+00:03:17.190 --> 00:03:20.552
+esa función decimal ya convirtió
+
+70
+00:03:20.552 --> 00:03:22.430
+un flotante en un decimal.
+
+71
+00:03:22.430 --> 00:03:24.760
+Pero veamos cómo se ve otra vez.
+
+72
+00:03:24.760 --> 00:03:27.660
+Recuerden que para importar
+el decimal escribimos:
+
+73
+00:03:27.660 --> 00:03:30.118
+"import decimal
+
+74
+00:03:30.118 --> 00:03:33.410
+"from decimal".
+
+75
+00:03:33.410 --> 00:03:36.960
+Y ahora podemos hacer lo mismo,
+
+76
+00:03:36.960 --> 00:03:39.490
+excepto que ahora volvamos
+a tomar el costo de producto.
+
+77
+00:03:39.490 --> 00:03:42.043
+Entonces, tomemos eso.
+
+78
+00:03:44.470 --> 00:03:47.790
+Ah, si ven que tengo
+una sintaxis inválida
+
+79
+00:03:47.790 --> 00:03:49.300
+es porque tengo estos intercambiados.
+
+80
+00:03:49.300 --> 00:03:51.313
+Debería ser "from decimal
+
+81
+00:03:53.690 --> 00:03:55.580
+"import decimal".
+
+82
+00:03:55.580 --> 00:03:57.670
+Ahora podremos usar esto,
+
+83
+00:03:57.670 --> 00:03:59.840
+y tomaremos el costo de producto,
+
+84
+00:03:59.840 --> 00:04:03.080
+que en lugar de ser 88.80,
+
+85
+00:04:03.080 --> 00:04:07.210
+lo convertiremos en un decimal
+exacto y completo.
+
+86
+00:04:07.210 --> 00:04:09.730
+Veamos qué ocurre cuando hacemos eso.
+
+87
+00:04:09.730 --> 00:04:12.090
+Y vemos cómo luce esto.
+
+88
+00:04:12.090 --> 00:04:14.510
+Y desde una perspectiva matemática,
+
+89
+00:04:14.510 --> 00:04:18.330
+Python considera a 88.80
+
+90
+00:04:18.330 --> 00:04:22.170
+como un número increíblemente complejo:
+
+91
+00:04:22.170 --> 00:04:26.980
+88.79 y todo esos valores.
+
+92
+00:04:26.980 --> 00:04:29.210
+Es un número bastante grande.
+
+93
+00:04:29.210 --> 00:04:32.773
+Ya explicamos
+cómo realizar esa conversión.
+
+94
+00:04:32.773 --> 00:04:36.320
+Pero quería darles una lista completa para hacerlo.
+
+95
+00:04:36.320 --> 00:04:40.300
+El último que explicaremos quizá sea algo raro,
+
+96
+00:04:40.300 --> 00:04:42.841
+si no son personas que realizan
+
+97
+00:04:42.841 --> 00:04:45.920
+muchos cálculos científicos.
+
+98
+00:04:45.920 --> 00:04:47.898
+Pero lo que podemos hacer...
+
+99
+00:04:47.898 --> 00:04:52.898
+Haremos esto con la comisión,
+para usar también ese valor.
+
+100
+00:04:53.263 --> 00:04:56.040
+Entonces, podemos escribir "complex",
+
+101
+00:04:56.040 --> 00:04:59.360
+lo cual nos dará la notación científica
+
+102
+00:04:59.360 --> 00:05:00.990
+para la comisión.
+
+103
+00:05:00.990 --> 00:05:02.731
+Si apretamos "Devolver",
+
+104
+00:05:02.731 --> 00:05:06.800
+vemos que nos da 0.8
+
+105
+00:05:06.800 --> 00:05:10.850
+y la notación científica completa entre paréntesis.
+
+106
+00:05:10.850 --> 00:05:13.400
+Y como devuelve esto
+entre paréntesis,
+
+107
+00:05:13.400 --> 00:05:16.950
+nos da un objeto complejo
+con el que podemos trabajar.
+
+108
+00:05:16.950 --> 00:05:20.245
+En general no trabajamos
+con datos complejos,
+
+109
+00:05:20.245 --> 00:05:24.690
+a menos que realicemos bastantes cálculos científicos.
+
+110
+00:05:24.690 --> 00:05:28.000
+Pero sí quería mostrarlo
+por si se topaban con esto.
+
+111
+00:05:28.000 --> 00:05:32.763
+Los que más uso yo
+son el decimal y el entero,
+
+112
+00:05:32.763 --> 00:05:35.870
+y el decimal es el que más uso de todos
+
+113
+00:05:35.870 --> 00:05:40.790
+porque siempre que quiero
+convertir un tipo de número
+
+114
+00:05:40.790 --> 00:05:42.530
+y tener un nivel más alto de precisión
+
+115
+00:05:42.530 --> 00:05:44.135
+ingreso la librería decimal
+
+116
+00:05:44.135 --> 00:05:48.883
+para poder realizar la conversión igual que lo hicimos aquí.
+

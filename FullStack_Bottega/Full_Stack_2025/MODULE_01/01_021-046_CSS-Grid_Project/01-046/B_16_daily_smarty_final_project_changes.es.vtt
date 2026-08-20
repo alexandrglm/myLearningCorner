@@ -1,0 +1,262 @@
+WEBVTT
+
+1
+00:00:00.900 --> 00:00:02.570
+<v Instructor>En esta lección, vamos a terminar</v>
+
+2
+00:00:02.570 --> 00:00:05.740
+la implementación de la segunda página.
+
+3
+00:00:05.740 --> 00:00:09.550
+Y vamos a terminar con la actualización de este logo.
+
+4
+00:00:09.550 --> 00:00:13.180
+Ahora, creo que el mejor enfoque aquí es crear
+
+5
+00:00:13.180 --> 00:00:16.700
+una clase separada porque a diferencia de lo que tenemos
+
+6
+00:00:16.700 --> 00:00:18.640
+aquí con la barra de búsqueda y algunos de los otros
+
+7
+00:00:18.640 --> 00:00:20.690
+elementos como el contenedor,
+
+8
+00:00:20.690 --> 00:00:22.920
+esto va ser un poco diferente.
+
+9
+00:00:22.920 --> 00:00:25.400
+Así que definitivamente podrías construir
+
+10
+00:00:25.400 --> 00:00:27.840
+tu propia clase abstracta como lo hemos hecho antes
+
+11
+00:00:27.840 --> 00:00:30.500
+y luego agregar una personalizada aquí
+
+12
+00:00:30.500 --> 00:00:33.000
+pero esto no es realmente una tonelada de código
+
+13
+00:00:33.000 --> 00:00:35.028
+así que no creo que sea un problema en absoluto
+
+14
+00:00:35.028 --> 00:00:36.760
+para crear una clase personalizada.
+
+15
+00:00:36.760 --> 00:00:38.530
+Así que en vez de llamar a esto
+
+16
+00:00:38.530 --> 00:00:40.688
+el logo de la página de inicio,
+
+17
+00:00:40.688 --> 00:00:43.830
+voy a hacer que se llame el logotipo de los resultados.
+
+18
+00:00:43.830 --> 00:00:47.650
+Y en la parte inferior voy a añadir esos estilos.
+
+19
+00:00:47.650 --> 00:00:51.465
+Así que voy a decir el logo de los resultados
+
+20
+00:00:51.465 --> 00:00:53.600
+y vamos a añadir los estilos de la base aquí.
+
+21
+00:00:53.600 --> 00:00:57.766
+Entonces voy a usar la fila uno
+
+22
+00:00:57.766 --> 00:01:01.916
+y la columna dos de la cuadrícula.
+
+23
+00:01:01.916 --> 00:01:04.760
+Entonces esto también va a usar Flexbox.
+
+24
+00:01:04.760 --> 00:01:07.610
+Va a ser la primera implementación de Flexbox
+
+25
+00:01:07.610 --> 00:01:10.190
+que hemos usado hasta ahora en este proyecto.
+
+26
+00:01:10.190 --> 00:01:13.760
+Así que voy a decir que justifiques el contenido, centro
+
+27
+00:01:13.760 --> 00:01:17.130
+y a continuación, alinee los elementos.
+
+28
+00:01:17.130 --> 00:01:19.810
+Esto también va a estar centrado.
+
+29
+00:01:19.810 --> 00:01:22.530
+Entonces ahora si hago click aquí y vuelvo
+
+30
+00:01:22.530 --> 00:01:25.240
+puedes ver que tenemos nuestro logo gigante de vuelta
+
+31
+00:01:25.240 --> 00:01:27.630
+porque necesitamos darle estilo a eso.
+
+32
+00:01:27.630 --> 00:01:29.170
+Y eso no es un problema.
+
+33
+00:01:29.170 --> 00:01:30.910
+Podemos bajar aquí.
+
+34
+00:01:30.910 --> 00:01:35.100
+Recuerda que tenemos que agarrar la etiqueta de la imagen
+
+35
+00:01:35.100 --> 00:01:37.630
+de dentro de la imagen del logo de resultados.
+
+36
+00:01:37.630 --> 00:01:40.360
+Y aquí sólo vamos a usar píxeles.
+
+37
+00:01:40.360 --> 00:01:43.700
+Así que voy a decir ancho de cincuenta píxeles.
+
+38
+00:01:43.700 --> 00:01:45.730
+Volver, y eso es todo.
+
+39
+00:01:45.730 --> 00:01:48.060
+Así que esa es realmente la razón por la que no
+
+40
+00:01:48.060 --> 00:01:50.200
+tuve problema para crear una clase personalizada
+
+41
+00:01:50.200 --> 00:01:53.020
+para eso porque realmente no fue una tonelada
+
+42
+00:01:53.020 --> 00:01:53.940
+de código que tuvimos que escribir.
+
+43
+00:01:53.940 --> 00:01:55.830
+No había ni una tonelada de código que fuera
+
+44
+00:01:55.830 --> 00:01:59.610
+a ser reutilizados y así puedo ver que esto funciona bien
+
+45
+00:01:59.610 --> 00:02:01.300
+como una clase independiente.
+
+46
+00:02:01.300 --> 00:02:03.700
+Y si vienes justo aquí, puedes ver
+
+47
+00:02:03.700 --> 00:02:08.030
+que nuestras implementaciones son muy, muy similares.
+
+48
+00:02:08.030 --> 00:02:09.850
+Puedes hacer cualquier tipo de cambios.
+
+49
+00:02:09.850 --> 00:02:12.740
+Al igual que, si observas que en realidad
+
+50
+00:02:12.740 --> 00:02:15.980
+no tenemos resultados al darle a entrada.
+
+51
+00:02:15.980 --> 00:02:19.010
+Puedes quedártelo o deshacerte de él.
+
+52
+00:02:19.010 --> 00:02:20.527
+Depende completamente de ti.
+
+53
+00:02:21.506 --> 00:02:24.464
+Lo quitaré sólo para que podamos tenerlo un poco más cerca.
+
+54
+00:02:24.464 --> 00:02:25.360
+Y ahí lo tienes.
+
+55
+00:02:25.360 --> 00:02:27.620
+Así que ese es el que está terminado.
+
+56
+00:02:27.620 --> 00:02:29.730
+Y esto es lo que acabamos de construir.
+
+57
+00:02:29.730 --> 00:02:31.610
+Si quieres, puedes jugar con los márgenes,
+
+58
+00:02:31.610 --> 00:02:33.830
+hacer cualquier otra cosa que quieras extender,
+
+59
+00:02:33.830 --> 00:02:36.560
+pero estoy muy contento con esta implementación.
+
+60
+00:02:36.560 --> 00:02:39.860
+Hemos construido, usando CSS Grid
+
+61
+00:02:39.860 --> 00:02:44.010
+y un poco de Flexbox, toda esta página de inicio para el
+
+62
+00:02:44.010 --> 00:02:49.010
+motor de búsqueda y luego también la página de resultados.
+
+63
+00:02:49.240 --> 00:02:51.660
+Sería un gran trabajo si pasaras por eso.
+
+64
+00:02:51.660 --> 00:02:55.575
+Ahora ya sabe cómo construir la implementación de front-end
+
+65
+00:02:55.575 --> 00:02:57.048
+para un motor de búsqueda.
+

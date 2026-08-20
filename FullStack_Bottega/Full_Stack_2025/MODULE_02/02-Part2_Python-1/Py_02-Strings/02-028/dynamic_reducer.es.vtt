@@ -1,0 +1,1558 @@
+WEBVTT
+
+1
+00:00:00.930 --> 00:00:02.330
+[Instructor] Espero que estén de humor
+
+2
+00:00:02.330 --> 00:00:04.690
+para un ejercicio de Python desafiante
+
+3
+00:00:04.690 --> 00:00:09.225
+porque haremos un reductor dinámico hoy
+
+4
+00:00:09.225 --> 00:00:11.790
+y si nunca han trabajado
+
+5
+00:00:11.790 --> 00:00:14.000
+con este tipo de destrezas
+
+6
+00:00:14.000 --> 00:00:15.860
+eso quiere decir que tienen por delante
+
+7
+00:00:15.860 --> 00:00:17.630
+un poco de investigación pendiente
+
+8
+00:00:17.630 --> 00:00:21.460
+si quieren conseguir la solución al problema del ejercicio
+
+9
+00:00:21.460 --> 00:00:23.120
+y de verdad aprender los conceptos.
+
+10
+00:00:23.120 --> 00:00:25.430
+Así que, si nunca han escuchado hablar de reductores,
+
+11
+00:00:25.430 --> 00:00:26.620
+les daré instrucciones detalladas
+
+12
+00:00:26.620 --> 00:00:29.430
+sobre lo que se espera del ejercicio.
+
+13
+00:00:29.430 --> 00:00:31.332
+Así que comenzaré con un comentario
+
+14
+00:00:31.332 --> 00:00:35.830
+y, primero que todo, hay que hablar de entradas y salidas
+
+15
+00:00:35.830 --> 00:00:39.250
+porque cada vez que hay algo desafiante
+
+16
+00:00:39.250 --> 00:00:42.010
+en lo que debo trabajar, lo reduzco
+
+17
+00:00:42.010 --> 00:00:46.330
+a la explicación más simple en la que pueda pensar
+
+18
+00:00:46.330 --> 00:00:51.100
+y eso se trata de saber qué pondré en una función
+
+19
+00:00:51.100 --> 00:00:52.840
+y qué voy a obtener de ella.
+
+20
+00:00:52.840 --> 00:00:55.920
+Digamos que hemos creado una función
+
+21
+00:00:55.920 --> 00:00:58.027
+llamada dynamic_reducer.
+
+22
+00:01:00.170 --> 00:01:03.710
+Lo que quiero es la capacidad de procesar dos argumentos.
+
+23
+00:01:03.710 --> 00:01:05.300
+El primero será una lista
+
+24
+00:01:05.300 --> 00:01:07.760
+y tiene que ser una lista numérica,
+
+25
+00:01:07.760 --> 00:01:10.820
+así que puede ser algo como uno, dos y tres.
+
+26
+00:01:10.820 --> 00:01:14.430
+Y el segundo argumento será un operador
+
+27
+00:01:14.430 --> 00:01:17.760
+y este operador será procesado como texto.
+
+28
+00:01:17.760 --> 00:01:20.890
+Así que puede tener un signo de suma aquí
+
+29
+00:01:20.890 --> 00:01:24.170
+y lo que esperaría obtener en retorno acá
+
+30
+00:01:24.170 --> 00:01:27.070
+es la suma de cada uno de esos valores.
+
+31
+00:01:27.070 --> 00:01:29.370
+En este caso será seis.
+
+32
+00:01:29.370 --> 00:01:32.860
+Procesemos ahora un operador distinto.
+
+33
+00:01:32.860 --> 00:01:35.604
+Procesaremos todos esos valores
+
+34
+00:01:35.604 --> 00:01:39.780
+usando ahora un sigo de resta,
+
+35
+00:01:39.780 --> 00:01:41.950
+en ese momento debería esperar algo distinto.
+
+36
+00:01:41.950 --> 00:01:46.950
+Esperaría el resultado de uno menos dos menos tres,
+
+37
+00:01:47.510 --> 00:01:50.670
+así que debería obtener un número negativo
+
+38
+00:01:50.670 --> 00:01:55.430
+y también quisiera tenerlo para multiplicación
+
+39
+00:01:55.430 --> 00:02:00.080
+y para división.
+
+40
+00:02:00.080 --> 00:02:04.310
+Esta función será bastante flexible,
+
+41
+00:02:04.310 --> 00:02:05.720
+debe ser capaz de aceptar
+
+42
+00:02:05.720 --> 00:02:08.920
+cada uno de los operadores matemáticos principales
+
+43
+00:02:08.920 --> 00:02:12.005
+y debería correr
+
+44
+00:02:12.005 --> 00:02:17.005
+registrando y contabilizando cada uno de los elementos.
+
+45
+00:02:17.700 --> 00:02:20.060
+El proceso debe computar
+
+46
+00:02:20.060 --> 00:02:23.420
+y debería retornar un valor, cualquiera que este sea.
+
+47
+00:02:23.420 --> 00:02:28.310
+El caso básico más fácil es usar esto
+
+48
+00:02:28.310 --> 00:02:31.190
+con un signo de suma para que sea una suma.
+
+49
+00:02:31.190 --> 00:02:33.930
+En este caso, con los valores uno, dos y tres,
+
+50
+00:02:33.930 --> 00:02:37.910
+incluso si multiplicáramos, el valor debería ser seis
+
+51
+00:02:37.910 --> 00:02:40.470
+pero tan pronto como añadan otros valores,
+
+52
+00:02:40.470 --> 00:02:42.280
+el resultado será distinto.
+
+53
+00:02:42.280 --> 00:02:46.280
+Así que les daré un par de pistas sobre lo que deben saber
+
+54
+00:02:46.280 --> 00:02:48.430
+porque eso combinará
+
+55
+00:02:48.430 --> 00:02:51.698
+una variedad de tecnologías y habilidades distintas
+
+56
+00:02:51.698 --> 00:02:55.110
+y librerías que tendrán que usar.
+
+57
+00:02:55.110 --> 00:02:58.690
+Todas esas librerías están dentro de Python,
+
+58
+00:02:58.690 --> 00:03:01.320
+pero van a tener que importar algunas cosas,
+
+59
+00:03:01.320 --> 00:03:06.320
+así que tendremos que importar la librería de operadores.
+
+60
+00:03:06.760 --> 00:03:09.854
+Luego, de functools,
+
+61
+00:03:09.854 --> 00:03:13.937
+necesitaremos exportar la librería para reductores.
+
+62
+00:03:15.587 --> 00:03:18.532
+Así que esto es lo que les daré.
+
+63
+00:03:18.532 --> 00:03:21.967
+Lo que debemos hacer una vez más es construir
+
+64
+00:03:21.967 --> 00:03:25.000
+una función llamada dynamic_reducer,
+
+65
+00:03:25.000 --> 00:03:29.211
+esta procesa una lista y luego un operador como texto
+
+66
+00:03:29.211 --> 00:03:34.211
+y luego debería computar esa lista,
+
+67
+00:03:34.480 --> 00:03:38.490
+y si aún están un poco inseguros,
+
+68
+00:03:38.490 --> 00:03:41.360
+estoy dando referencias vagas a propósito
+
+69
+00:03:41.360 --> 00:03:43.350
+porque quiero que lleven a cabo
+
+70
+00:03:43.350 --> 00:03:46.519
+algo de investigación en esas dos librerías.
+
+71
+00:03:46.519 --> 00:03:49.580
+Primero la librería de operadores en Python
+
+72
+00:03:49.580 --> 00:03:53.620
+y luego la función reducer en functools.
+
+73
+00:03:53.620 --> 00:03:56.750
+Esto les será increíblemente útil
+
+74
+00:03:56.750 --> 00:03:59.280
+como parte de programación funcional
+
+75
+00:03:59.280 --> 00:04:02.990
+en la que introducen una función
+
+76
+00:04:02.990 --> 00:04:07.190
+y luego pueden correrla con múltiples valores.
+
+77
+00:04:07.190 --> 00:04:10.682
+Imaginen en este caso una función como la función reduce
+
+78
+00:04:10.682 --> 00:04:15.540
+en su implementación más simple,
+
+79
+00:04:15.540 --> 00:04:19.410
+la cual es una simple suma de valores
+
+80
+00:04:19.410 --> 00:04:21.530
+como pueden ver aquí,
+
+81
+00:04:21.530 --> 00:04:25.759
+tenemos una lista y reduce puede itera toda la lista
+
+82
+00:04:25.759 --> 00:04:29.060
+y contabilizar todos los elementos
+
+83
+00:04:29.060 --> 00:04:31.640
+pero necesitamos que sea un poco más flexible,
+
+84
+00:04:31.640 --> 00:04:34.600
+esa es la razón por la que se llama dynamic_reduce
+
+85
+00:04:34.600 --> 00:04:37.072
+porque necesitan procesar
+
+86
+00:04:37.072 --> 00:04:39.600
+cada uno de los cuatro operadores.
+
+87
+00:04:39.600 --> 00:04:42.280
+Espero que se diviertan
+
+88
+00:04:42.280 --> 00:04:44.010
+revisando esas librerías,
+
+89
+00:04:44.010 --> 00:04:47.820
+ambos son métodos poderosos para ser capaces
+
+90
+00:04:47.820 --> 00:04:50.320
+de trabajar con Python y ser capaces
+
+91
+00:04:50.320 --> 00:04:52.310
+de implementar programación funcional
+
+92
+00:04:52.310 --> 00:04:54.820
+y crear un programa bastante dinámico.
+
+93
+00:04:54.820 --> 00:04:57.628
+Recomiendo que pausen el video ahora
+
+94
+00:04:57.628 --> 00:05:01.390
+y traten de programar esto ustedes mismos
+
+95
+00:05:01.390 --> 00:05:05.203
+y luego vengan a ver mi solución personal.
+
+96
+00:05:06.530 --> 00:05:10.250
+Bienvenidos de vuelta, si pudieron programarlo, felicidades.
+
+97
+00:05:10.250 --> 00:05:14.111
+Esto definitivamente no es trivial
+
+98
+00:05:14.111 --> 00:05:17.890
+así que les recomiendo que, hayan sido capaces
+
+99
+00:05:17.890 --> 00:05:21.560
+de programar esto o no,
+
+100
+00:05:21.560 --> 00:05:24.350
+no se preocupen, veremos la solución paso a paso
+
+101
+00:05:24.350 --> 00:05:26.803
+y también les explicaré
+
+102
+00:05:26.803 --> 00:05:30.370
+por qué elegí esta solución en específico
+
+103
+00:05:30.370 --> 00:05:32.330
+cuando hice este programa.
+
+104
+00:05:32.330 --> 00:05:36.080
+Ahora comenzaré por crear una función,
+
+105
+00:05:36.080 --> 00:05:41.075
+crearé una función dynamic_reducer aquí,
+
+106
+00:05:41.075 --> 00:05:46.075
+procesaré una colección y luego un operador.
+
+107
+00:05:46.430 --> 00:05:49.430
+Hago este llamado aquí a propósito
+
+108
+00:05:49.430 --> 00:05:54.430
+porque si revisaron la documentación
+
+109
+00:05:54.705 --> 00:05:58.643
+de la librería de operadores, sabrían que si llamo
+
+110
+00:05:58.643 --> 00:06:01.550
+este operador, tendríamos una colisión de nombres
+
+111
+00:06:01.550 --> 00:06:03.270
+y eso es algo que no queremos hacer.
+
+112
+00:06:03.270 --> 00:06:06.429
+Tampoco quiero ocultar la importación.
+
+113
+00:06:06.429 --> 00:06:09.340
+ASí que solo lo llamaré operador
+
+114
+00:06:09.340 --> 00:06:11.950
+y luego colocaré el argumento.
+
+115
+00:06:11.950 --> 00:06:14.040
+Adentro de esto lo que haré
+
+116
+00:06:14.040 --> 00:06:16.200
+es crear un diccionario.
+
+117
+00:06:16.200 --> 00:06:20.330
+Así es como podré realizar la revisión
+
+118
+00:06:20.330 --> 00:06:24.660
+y decir que un signo de suma, de resta
+
+119
+00:06:24.660 --> 00:06:27.130
+o algo parecido de procese,
+
+120
+00:06:27.130 --> 00:06:30.510
+puedo tratarlo como un diccionario regular
+
+121
+00:06:30.510 --> 00:06:32.568
+y luego usar la librería de operadores
+
+122
+00:06:32.568 --> 00:06:35.060
+para llamar la función.
+
+123
+00:06:35.060 --> 00:06:38.740
+Así que entonces crearé el diccionario aquí,
+
+124
+00:06:38.740 --> 00:06:43.740
+se llamará "operadores" y usaré llaves adentro de este,
+
+125
+00:06:44.000 --> 00:06:48.370
+ahora nombraré cuatro pares de valores clave aquí.
+
+126
+00:06:48.370 --> 00:06:50.330
+El primero será el signo de suma
+
+127
+00:06:50.330 --> 00:06:52.339
+y esto es un diccionario clásico,
+
+128
+00:06:52.339 --> 00:06:54.965
+pero lo que usaré como valor aquí
+
+129
+00:06:54.965 --> 00:06:58.740
+es el llamado a la librería de operadores
+
+130
+00:06:58.740 --> 00:07:02.780
+y luego el llamado a la función de suma dentro de él.
+
+131
+00:07:02.780 --> 00:07:05.220
+Sí les parece un poco extraño,
+
+132
+00:07:05.220 --> 00:07:07.550
+les digo que lo que fui capaz de hacer
+
+133
+00:07:07.550 --> 00:07:12.120
+fue ir a la librería de operadores en Python
+
+134
+00:07:12.120 --> 00:07:14.640
+y su ven la documentación de la misma,
+
+135
+00:07:14.640 --> 00:07:16.300
+incluso si ven el código fuente,
+
+136
+00:07:16.300 --> 00:07:18.320
+lo que encontrarán es que tiene
+
+137
+00:07:18.320 --> 00:07:23.320
+una variedad de métodos dentro y uno de ellos es la suma
+
+138
+00:07:23.520 --> 00:07:25.919
+y así fue que fuimos capaces de sumar valores.
+
+139
+00:07:25.919 --> 00:07:29.858
+Ahora déjenme multiplicar esto un par de veces más.
+
+140
+00:07:29.858 --> 00:07:33.410
+La siguiente vez haremos una resta,
+
+141
+00:07:33.410 --> 00:07:36.560
+luego haremos multiplicación
+
+142
+00:07:36.560 --> 00:07:38.780
+y por último una división.
+
+143
+00:07:38.780 --> 00:07:42.380
+Adentro de esto, ya tenemos la suma,
+
+144
+00:07:42.380 --> 00:07:43.890
+es el llamado a la función.
+
+145
+00:07:43.890 --> 00:07:48.580
+Luego viene una sustracción y luego una multiplicación
+
+146
+00:07:48.580 --> 00:07:51.200
+con el llamado mul y luego la última operación
+
+147
+00:07:51.200 --> 00:07:53.840
+si están usando esto en Python 3,
+
+148
+00:07:53.840 --> 00:07:56.702
+verán que el llamado es un poco diferente
+
+149
+00:07:56.702 --> 00:08:00.530
+de lo que solía ser en Python 2.6
+
+150
+00:08:00.530 --> 00:08:02.500
+en donde se le solía llamar div,
+
+151
+00:08:02.500 --> 00:08:04.877
+pero ahora el llamado es truediv
+
+152
+00:08:04.877 --> 00:08:08.510
+y ahí tienen la tabla de revisión completa,
+
+153
+00:08:08.510 --> 00:08:10.078
+ese es nuestro diccionario.
+
+154
+00:08:10.078 --> 00:08:15.078
+Déjenme mover y reordenar esto
+
+155
+00:08:15.500 --> 00:08:17.932
+para que se vea un poco mejor.
+
+156
+00:08:17.932 --> 00:08:20.910
+Ahora tenemos un diccionario de Python,
+
+157
+00:08:20.910 --> 00:08:23.800
+este es un diccionario estándar como el que harían
+
+158
+00:08:23.800 --> 00:08:27.580
+con cualquier programa de Python y lo que tenemos
+
+159
+00:08:27.580 --> 00:08:31.270
+es una serie de pares de valores clave y cada una
+
+160
+00:08:31.270 --> 00:08:36.260
+es una palabra y el valor es, de hecho, una función.
+
+161
+00:08:36.260 --> 00:08:38.260
+Aquí es donde se diferencia un poco,
+
+162
+00:08:38.260 --> 00:08:41.210
+porque cada vez que llamo una línea de texto
+
+163
+00:08:41.210 --> 00:08:43.502
+y revisamos el signo de suma, por decir algo,
+
+164
+00:08:43.502 --> 00:08:47.470
+este retornará la función de suma.
+
+165
+00:08:47.470 --> 00:08:49.690
+Y al procesar el signo de menos,
+
+166
+00:08:49.690 --> 00:08:52.360
+retornará la función de resta.
+
+167
+00:08:52.360 --> 00:08:55.134
+Así es como haré la revisión.
+
+168
+00:08:55.134 --> 00:08:59.440
+Ahora que podemos realizar la revisión
+
+169
+00:08:59.440 --> 00:09:03.950
+con nuestros operadores, podemos usar la librería reduce.
+
+170
+00:09:03.950 --> 00:09:06.197
+Pondré aquí el retorno
+
+171
+00:09:06.197 --> 00:09:10.090
+y haré el llamado a la función reduce.
+
+172
+00:09:10.090 --> 00:09:12.040
+Si revisaron la función reduce,
+
+173
+00:09:12.040 --> 00:09:14.653
+saben que procesa dos argumentos.
+
+174
+00:09:14.653 --> 00:09:18.500
+El primero de estos es una función,
+
+175
+00:09:18.500 --> 00:09:21.720
+una función Lambda, específicamente,
+
+176
+00:09:21.720 --> 00:09:26.380
+así que pondré una función Lambda
+
+177
+00:09:26.380 --> 00:09:30.660
+y esta Lambda tendrá un total,
+
+178
+00:09:30.660 --> 00:09:34.590
+luego viene un elemento y lo que haré aquí
+
+179
+00:09:34.590 --> 00:09:37.490
+es mencionar los operadores,
+
+180
+00:09:37.490 --> 00:09:40.120
+y miren esto, si ven la línea 12,
+
+181
+00:09:40.120 --> 00:09:42.100
+verán que es el nombre de nuestro diccionario.
+
+182
+00:09:42.100 --> 00:09:43.804
+Usando los operadores,
+
+183
+00:09:43.804 --> 00:09:48.804
+usaré una sintaxis regular de revisión de diccionario
+
+184
+00:09:49.090 --> 00:09:52.570
+y colocaré la palabra clave op.
+
+185
+00:09:52.570 --> 00:09:56.500
+Esta palabra referencia al segundo argumento
+
+186
+00:09:56.500 --> 00:09:58.660
+que introdujimos en la función.
+
+187
+00:09:58.660 --> 00:10:01.240
+Simplemente introduciré esto
+
+188
+00:10:01.240 --> 00:10:03.610
+y esta es la manera en la que funciona,
+
+189
+00:10:03.610 --> 00:10:07.320
+y si les parece un poco raro,
+
+190
+00:10:07.320 --> 00:10:10.810
+les recomiendo que miren mi solución un par de veces
+
+191
+00:10:10.810 --> 00:10:13.940
+porque verán que lo que hago aquí, si recuerdan
+
+192
+00:10:13.940 --> 00:10:15.431
+cuando hice esta revisión,
+
+193
+00:10:15.431 --> 00:10:19.970
+recuerden lo que recibimos en retorno, es una función.
+
+194
+00:10:19.970 --> 00:10:22.519
+Ya que recibimos una función,
+
+195
+00:10:22.519 --> 00:10:25.144
+eso significa que la podemos llamar directamente
+
+196
+00:10:25.144 --> 00:10:29.450
+y luego introducir lo que esta espera.
+
+197
+00:10:29.450 --> 00:10:32.730
+Si revisaron la documentación de los operadores,
+
+198
+00:10:32.730 --> 00:10:37.337
+sabrán que las funciones add, substract, multiply y truediv
+
+199
+00:10:37.337 --> 00:10:39.770
+esperan dos argumentos.
+
+200
+00:10:39.770 --> 00:10:42.940
+Aquí esperan el primero
+
+201
+00:10:42.940 --> 00:10:45.030
+y en nuestro caso, será total,
+
+202
+00:10:45.030 --> 00:10:48.300
+y luego lo que sea este elemento.
+
+203
+00:10:48.300 --> 00:10:50.730
+Y eso es todo.
+
+204
+00:10:50.730 --> 00:10:55.730
+Ven que es bastante parecido al Python regular,
+
+205
+00:10:56.150 --> 00:10:58.400
+si ven aquí abajo, haré un comentario.
+
+206
+00:10:58.400 --> 00:11:03.400
+Cuando hacemos el llamado op y sucede que es un signo
+
+207
+00:11:03.750 --> 00:11:08.750
+de suma, es prácticamente lo mismo que decir dos más dos.
+
+208
+00:11:09.030 --> 00:11:10.506
+Si esos son los dos elementos,
+
+209
+00:11:10.506 --> 00:11:15.320
+si el total es puesto en dos y el elemento es dos,
+
+210
+00:11:15.320 --> 00:11:16.970
+eso es todo lo que estamos haciendo.
+
+211
+00:11:16.970 --> 00:11:19.430
+Sé que la sintaxis se ve un poco extraña
+
+212
+00:11:19.430 --> 00:11:22.620
+y la razón es que estamos llamando
+
+213
+00:11:22.620 --> 00:11:25.470
+los operadores de función directamente,
+
+214
+00:11:25.470 --> 00:11:27.307
+así es como lo hacemos dinámico.
+
+215
+00:11:27.307 --> 00:11:29.880
+Porque hay otra manera
+
+216
+00:11:29.880 --> 00:11:33.657
+y, si personalmente han hecho algo parecido,
+
+217
+00:11:33.657 --> 00:11:38.450
+si no querían programar este tipo de función,
+
+218
+00:11:38.450 --> 00:11:40.670
+pudieron haber programado un condicional
+
+219
+00:11:40.670 --> 00:11:44.980
+lo que no es una buena práctica en verdad
+
+220
+00:11:44.980 --> 00:11:46.860
+pero pudieron haber hecho algo así,
+
+221
+00:11:46.860 --> 00:11:51.860
+pudieron haber dicho que, si op es el signo de suma,
+
+222
+00:11:53.156 --> 00:11:58.156
+quieren que retorne esto
+
+223
+00:11:58.980 --> 00:12:03.980
+y entonces deberían usar varias declaraciones else if
+
+224
+00:12:04.610 --> 00:12:07.180
+para cada una, y entonces, en vez
+
+225
+00:12:07.180 --> 00:12:09.464
+de tener esta pequeña revisión,
+
+226
+00:12:09.464 --> 00:12:12.483
+harían algo como llamar el total
+
+227
+00:12:12.483 --> 00:12:16.830
+y en ese caso, sería el signo de suma
+
+228
+00:12:16.830 --> 00:12:20.190
+y eso sería esencialmente
+
+229
+00:12:20.190 --> 00:12:21.880
+lo que estamos haciendo aquí,
+
+230
+00:12:21.880 --> 00:12:23.335
+pero eso no sería dinámico,
+
+231
+00:12:23.335 --> 00:12:25.420
+ya que necesitarían hacer eso
+
+232
+00:12:25.420 --> 00:12:28.800
+para todas y cada uno de las condiciones.
+
+233
+00:12:28.800 --> 00:12:32.780
+Así que, cada vez que sea igual a menos, y sí,
+
+234
+00:12:32.780 --> 00:12:36.380
+sé que no es una declaración else if tradicional
+
+235
+00:12:36.380 --> 00:12:38.670
+porque de hecho no es lo que trato de programar,
+
+236
+00:12:38.670 --> 00:12:40.150
+pero cuando es un signo de resta,
+
+237
+00:12:40.150 --> 00:12:41.960
+entonces tendrás que cambiar esto de aquí a resta.
+
+238
+00:12:41.960 --> 00:12:44.217
+Cuando sea multiplicación,
+
+239
+00:12:44.217 --> 00:12:46.198
+deberás entonces cambiarlo a multiplicación,
+
+240
+00:12:46.198 --> 00:12:47.930
+¿se dan cuenta de la cantidad
+
+241
+00:12:47.930 --> 00:12:49.910
+de código que han duplicado?
+
+242
+00:12:49.910 --> 00:12:54.910
+Eso es una señal de alerta para cualquiera que conozca
+
+243
+00:12:54.951 --> 00:12:57.060
+Python y esté viendo el código.
+
+244
+00:12:57.060 --> 00:13:00.050
+No es bueno duplicar el código de esa manera.
+
+245
+00:13:00.050 --> 00:13:03.923
+No hay solución que pueda recomendarles,
+
+246
+00:13:03.923 --> 00:13:07.820
+lo que les puedo recomendar es que lo programen así
+
+247
+00:13:07.820 --> 00:13:12.530
+para poder revisar y procesar
+
+248
+00:13:12.530 --> 00:13:15.484
+lo que sea que sea ese operador dinámico
+
+249
+00:13:15.484 --> 00:13:18.980
+y luego podrán iterar todos
+
+250
+00:13:18.980 --> 00:13:23.360
+las valores de su conjunto para luego hacer la operación.
+
+251
+00:13:23.360 --> 00:13:26.150
+Cuando el signo sea de suma, se hará una suma,
+
+252
+00:13:26.150 --> 00:13:29.040
+cuando sea una multiplicación lo que se coloque,
+
+253
+00:13:29.040 --> 00:13:31.848
+se multiplicarán todos los elementos entre sí.
+
+254
+00:13:31.848 --> 00:13:34.760
+No terminamos aún con esto, aunque no nos falta mucho.
+
+255
+00:13:34.760 --> 00:13:37.780
+Recuerden que la función reduce procesa dos argumentos,
+
+256
+00:13:37.780 --> 00:13:40.080
+toma una función Lambda
+
+257
+00:13:40.080 --> 00:13:43.311
+y luego cualquier conjunto que tengamos.
+
+258
+00:13:43.311 --> 00:13:47.270
+Entonces, a menos que haya un error de tipeo,
+
+259
+00:13:47.270 --> 00:13:50.770
+eso es todo lo que necesitamos.
+
+260
+00:13:50.770 --> 00:13:55.770
+Voy aquí arriba y lo copiaré todo,
+
+261
+00:13:55.773 --> 00:13:59.204
+todo nuestro código de ejemplo,
+
+262
+00:13:59.204 --> 00:14:03.800
+lo guardaré y ejecutaré esto,
+
+263
+00:14:03.800 --> 00:14:05.570
+salvo que probablemente deba hacer
+
+264
+00:14:05.570 --> 00:14:07.343
+todo esto al mismo tiempo.
+
+265
+00:14:08.670 --> 00:14:11.040
+Las ejecutaré una por una,
+
+266
+00:14:11.040 --> 00:14:15.350
+la suma, la resta, la multiplicación
+
+267
+00:14:15.350 --> 00:14:20.350
+y podemos deshacernos de todo este código
+
+268
+00:14:20.810 --> 00:14:23.793
+cerrando cada uno de estos ítems.
+
+269
+00:14:28.420 --> 00:14:30.630
+Con todo puesto a punto,
+
+270
+00:14:30.630 --> 00:14:32.170
+deberíamos ser capaces de correr el programa
+
+271
+00:14:32.170 --> 00:14:35.120
+y de obtener cuatro resultados de salida,
+
+272
+00:14:35.120 --> 00:14:38.240
+uno para la suma, otro para la resta,
+
+273
+00:14:38.240 --> 00:14:42.830
+otro para la multiplicación y el última para la división.
+
+274
+00:14:42.830 --> 00:14:47.830
+Así que vendremos de allá hasta aquí y correré Python,
+
+275
+00:14:48.280 --> 00:14:50.720
+originalmente iba a llamar esto flexbile_counter
+
+276
+00:14:50.720 --> 00:14:54.190
+pero decidí cambiar el nombre a dynamic_reducer,
+
+277
+00:14:54.190 --> 00:14:56.080
+aunque decidí conservar el nombre del archivo.
+
+278
+00:14:56.080 --> 00:14:59.926
+Ahora, si corro esto... Oh, parece que tiene un error,
+
+279
+00:14:59.926 --> 00:15:01.730
+veamos que es.
+
+280
+00:15:01.730 --> 00:15:06.170
+Lo ejecuto y me dice SyntaxERror: Sintaxis Inválida.
+
+281
+00:15:06.170 --> 00:15:09.223
+Acomodemos el bug,
+
+282
+00:15:09.223 --> 00:15:14.080
+vemos que el bug está en la línea 19, por lo que parece.
+
+283
+00:15:14.080 --> 00:15:17.170
+Hay que cerrar esto de aquí, ¿ven el paréntesis
+
+284
+00:15:17.170 --> 00:15:19.893
+que se supone debía cerrar?
+
+285
+00:15:19.893 --> 00:15:23.780
+Ahora vamos a correrla de nuevo y, ¡bingo!
+
+286
+00:15:23.780 --> 00:15:25.300
+Corrió a la perfección.
+
+287
+00:15:25.300 --> 00:15:29.850
+Tenemos un seis para la suma, cuatro negativo para la resta,
+
+288
+00:15:29.850 --> 00:15:31.410
+seis para la multiplicación
+
+289
+00:15:31.410 --> 00:15:36.410
+y luego tenemos un .16 para la división.
+
+290
+00:15:37.080 --> 00:15:39.090
+Así que funciona a la perfección
+
+291
+00:15:39.090 --> 00:15:41.250
+y si introdujéramos cualquier otro valor,
+
+292
+00:15:41.250 --> 00:15:46.250
+digamos 250, y lo lleváramos a la multiplicación
+
+293
+00:15:46.331 --> 00:15:51.331
+haremos que esto sea de 55 y luego para nuestra división,
+
+294
+00:15:52.080 --> 00:15:54.780
+esta debe ser 100,
+
+295
+00:15:54.780 --> 00:15:57.460
+para así tener más valores que considerar
+
+296
+00:15:57.460 --> 00:15:59.340
+Si lo corro ahora,
+
+297
+00:15:59.340 --> 00:16:02.272
+verán que se ajusta de manera dinámica,
+
+298
+00:16:02.272 --> 00:16:06.290
+nuestra suma funciona, nuestra resta igual,
+
+299
+00:16:06.290 --> 00:16:08.340
+nuestra multiplicación esta perfecta también.
+
+300
+00:16:08.340 --> 00:16:10.630
+La división igualmente.
+
+301
+00:16:10.630 --> 00:16:14.174
+Hicimos unas cuantas cosas aquí, hagamos una revisión
+
+302
+00:16:14.174 --> 00:16:18.040
+para que quede claro, porque, como les dije antes,
+
+303
+00:16:18.040 --> 00:16:20.950
+este ejercicio no es nada trivial.
+
+304
+00:16:20.950 --> 00:16:23.865
+Debieron combinar números con distintas librerías de Python,
+
+305
+00:16:23.865 --> 00:16:26.210
+debieron trabajar con funciones Lambda,
+
+306
+00:16:26.210 --> 00:16:28.130
+debieron implementar un diccionario,
+
+307
+00:16:28.130 --> 00:16:32.880
+debieron revisar el diccionario con el valor de una función
+
+308
+00:16:32.880 --> 00:16:35.275
+a la cual tuvieron que llamar, eso es algo importante
+
+309
+00:16:35.275 --> 00:16:37.930
+que tampoco es nada fácil
+
+310
+00:16:37.930 --> 00:16:39.399
+si no lo has hecho antes.
+
+311
+00:16:39.399 --> 00:16:43.300
+Lo que hicimos fue referenciar en Python a la línea,
+
+312
+00:16:43.300 --> 00:16:46.280
+es lo que nos permitieron nacer aquí,
+
+313
+00:16:46.280 --> 00:16:49.670
+tener este diccionario de operadores pues
+
+314
+00:16:49.670 --> 00:16:51.599
+en donde podíamos revisar si un operador para salir
+
+315
+00:16:51.599 --> 00:16:56.599
+y luego introdujimos esto en varios operadores
+
+316
+00:16:57.220 --> 00:17:00.227
+como sumar, restar, multiplicar y dividir.
+
+317
+00:17:00.227 --> 00:17:05.227
+De ahí, también importante la libreria del operador reduce.
+
+318
+00:17:05.260 --> 00:17:08.765
+Se puede decir que reduce es un componente funcional
+
+319
+00:17:08.765 --> 00:17:12.400
+dentro de Python y cuando decimos funcional,
+
+320
+00:17:12.400 --> 00:17:15.980
+queremos decir que procesa funciones
+
+321
+00:17:15.980 --> 00:17:20.313
+y, en vez de tener que llamar elemento por elemento,
+
+322
+00:17:21.630 --> 00:17:24.610
+y hacer las tareas del programa por otras vías,
+
+323
+00:17:24.610 --> 00:17:26.160
+lo cual podríamos haber hecho
+
+324
+00:17:26.160 --> 00:17:28.560
+después de escribir muchas más líneas de código,
+
+325
+00:17:28.560 --> 00:17:32.140
+pudimos haber dicho que configuraríamos
+
+326
+00:17:32.140 --> 00:17:36.090
+algún tipo de variable total aquí y la llevaríamos a cero
+
+327
+00:17:36.090 --> 00:17:39.230
+para luego tomar nuestra colección de datos
+
+328
+00:17:39.230 --> 00:17:44.230
+y procesar elemento por elemento
+
+329
+00:17:47.050 --> 00:17:50.670
+para después hacer un par de cosas dentro del mismo
+
+330
+00:17:50.670 --> 00:17:53.590
+así que es ahí en donde se realiza la revisión
+
+331
+00:17:53.590 --> 00:17:58.280
+y se lleva a cabo la computación para obtener el total
+
+332
+00:17:58.280 --> 00:18:00.480
+y esa clase de cosas.
+
+333
+00:18:00.480 --> 00:18:02.627
+Pero eso no es un enfoque funcional,
+
+334
+00:18:02.627 --> 00:18:07.627
+solo sería una manera manual iterativa
+
+335
+00:18:08.220 --> 00:18:09.610
+de programar eso.
+
+336
+00:18:09.610 --> 00:18:12.500
+Lo que hace reduce es permitirnos
+
+337
+00:18:12.500 --> 00:18:15.590
+introducir una función y esa función
+
+338
+00:18:15.590 --> 00:18:18.860
+puede realizar la cantidad de procesos que le pidamos.
+
+339
+00:18:18.860 --> 00:18:22.520
+En tal caso, queríamos hacer algo bastante básico con ella,
+
+340
+00:18:22.520 --> 00:18:24.321
+o sea, llevar registro de un total,
+
+341
+00:18:24.321 --> 00:18:27.490
+para que luego se iteraran los elementos.
+
+342
+00:18:27.490 --> 00:18:29.729
+Vemos que no se usan nombres especiales,
+
+343
+00:18:29.729 --> 00:18:33.740
+o le habría puesto a esto X y a esto otro Y
+
+344
+00:18:33.740 --> 00:18:37.190
+y luego habría hecho lo mismo aquí.
+
+345
+00:18:37.190 --> 00:18:39.960
+Esto podría hacer sido X y esto otro Y,
+
+346
+00:18:39.960 --> 00:18:42.770
+así que no hay nada especial en estos nombre.
+
+347
+00:18:42.770 --> 00:18:47.770
+Al trabajar con reduce, deben saber que
+
+348
+00:18:48.650 --> 00:18:50.560
+esta espera una función Lambda
+
+349
+00:18:50.560 --> 00:18:54.200
+y que cuando la deban implementar,
+
+350
+00:18:54.200 --> 00:18:56.423
+el primer argumento debe ser el total,
+
+351
+00:18:56.423 --> 00:18:59.171
+sin importar cómo quieras llamarlo.
+
+352
+00:18:59.171 --> 00:19:02.370
+Me gusta llamarlo total porque es bastante claro
+
+353
+00:19:02.370 --> 00:19:04.440
+cada vez que vuelvo y lo leo.
+
+354
+00:19:04.440 --> 00:19:07.690
+Así que usaré eso, y eso será el primer argumento.
+
+355
+00:19:07.690 --> 00:19:10.320
+El segundo argumento será el elemento
+
+356
+00:19:10.320 --> 00:19:11.940
+que están iterando.
+
+357
+00:19:11.940 --> 00:19:16.590
+La primera vez que pase por esta lista de aquí,
+
+358
+00:19:16.590 --> 00:19:18.742
+el elemento será uno,
+
+359
+00:19:18.742 --> 00:19:21.510
+en la siguiente pasada, será dos,
+
+360
+00:19:21.510 --> 00:19:25.200
+luego 250 y así, estos son solo argumentos.
+
+361
+00:19:25.200 --> 00:19:27.591
+Si piensan en esto como funciones normales,
+
+362
+00:19:27.591 --> 00:19:31.377
+esto sería some_function
+
+363
+00:19:32.832 --> 00:19:37.011
+y la manera en la que funcionaría es con el total
+
+364
+00:19:37.011 --> 00:19:39.815
+y los elementos a iterar
+
+365
+00:19:39.815 --> 00:19:43.000
+serían los argumentos de esa función.
+
+366
+00:19:43.000 --> 00:19:46.180
+Sería lo mismo que decir que colocar total
+
+367
+00:19:46.180 --> 00:19:49.700
+y luego elemento al trabajar con funciones Lambda,
+
+368
+00:19:49.700 --> 00:19:51.380
+es así como introduces los argumentos,
+
+369
+00:19:51.380 --> 00:19:53.750
+solo dices Lambda e introduces
+
+370
+00:19:53.750 --> 00:19:56.397
+el valor que desees para esos argumentos,
+
+371
+00:19:56.397 --> 00:20:01.397
+y luego de eso, cuando pasas los dos puntos de aquí,
+
+372
+00:20:02.270 --> 00:20:04.040
+aquí se bloquea el código.
+
+373
+00:20:04.040 --> 00:20:06.230
+Aquí es donde estamos realizando la revisión
+
+374
+00:20:06.230 --> 00:20:07.998
+en nuestro diccionario de operadores
+
+375
+00:20:07.998 --> 00:20:10.833
+y estamos tomando el argumento total
+
+376
+00:20:10.833 --> 00:20:14.140
+y luego el argumento de elemento y luego estamos realizando
+
+377
+00:20:14.140 --> 00:20:17.540
+la operación que esté ahí presente y, a partir de ahí,
+
+378
+00:20:17.540 --> 00:20:20.130
+estamos haciendo a todo el conjunto de datos.
+
+379
+00:20:20.130 --> 00:20:23.100
+Si algo de eso no tiene sentido para ustedes,
+
+380
+00:20:23.100 --> 00:20:25.480
+comuníquenselo a su instructor
+
+381
+00:20:25.480 --> 00:20:29.420
+para que ellos puedan ayudarlo paso a paso
+
+382
+00:20:29.420 --> 00:20:32.210
+porque es de vital importancia que entiendan esto
+
+383
+00:20:32.210 --> 00:20:34.090
+Reviremos distintos tópicos,
+
+384
+00:20:34.090 --> 00:20:38.559
+pero todos son cosas fundamentales que hay que saber
+
+385
+00:20:38.559 --> 00:20:40.863
+sobre programar en Python
+
+386
+00:20:40.863 --> 00:20:43.590
+y trabajar con programas avanzados,
+
+387
+00:20:43.590 --> 00:20:45.860
+así que les recomiendo que lo revisen
+
+388
+00:20:45.860 --> 00:20:47.521
+hasta que todo tenga sentido para ustedes
+
+389
+00:20:47.521 --> 00:20:50.743
+y luego pueden avanzar a otras cosas
+

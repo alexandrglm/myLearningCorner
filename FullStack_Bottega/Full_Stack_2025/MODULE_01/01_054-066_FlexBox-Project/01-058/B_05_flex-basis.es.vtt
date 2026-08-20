@@ -1,0 +1,634 @@
+WEBVTT
+
+1
+00:00:00.375 --> 00:00:02.500
+<v Narrador>En este ejemplo vamos a cambiar</v>
+
+2
+00:00:02.500 --> 00:00:04.400
+un poco nuestro ejemplo.
+
+3
+00:00:04.400 --> 00:00:07.810
+Y es principalmente porque lo que quiero mostrarles ahora
+
+4
+00:00:07.810 --> 00:00:11.080
+es algo que va a ser un poco más dinámico.
+
+5
+00:00:11.080 --> 00:00:13.410
+Y así tenemos estos bloques aquí.
+
+6
+00:00:13.410 --> 00:00:16.350
+Y ahora mismo tienen algunos estilos bastante básicos.
+
+7
+00:00:16.350 --> 00:00:19.890
+No tengo ninguna propiedad flexible aquí para nada.
+
+8
+00:00:19.890 --> 00:00:22.460
+Y es por eso que simplemente se apilan
+
+9
+00:00:22.460 --> 00:00:24.090
+uno encima del otro.
+
+10
+00:00:24.090 --> 00:00:28.540
+Tengo un contenedor que tiene nuestro huésped normal.
+
+11
+00:00:28.540 --> 00:00:31.520
+Y luego tengo una clase de bloques vacía.
+
+12
+00:00:31.520 --> 00:00:33.760
+Y luego tengo una clase de bloque.
+
+13
+00:00:33.760 --> 00:00:37.250
+Y luego también tengo estos.
+
+14
+00:00:37.250 --> 00:00:39.380
+Así que tengo los bloques uno, dos y tres.
+
+15
+00:00:39.380 --> 00:00:42.310
+Y si vienes al HDML aquí,
+
+16
+00:00:42.310 --> 00:00:45.690
+Verás que tenemos un par de envolturas distintas.
+
+17
+00:00:45.690 --> 00:00:48.531
+Tenemos una clase contenedora que tiene
+
+18
+00:00:48.531 --> 00:00:50.450
+una clase de bloques.
+
+19
+00:00:50.450 --> 00:00:53.041
+Y la clase de bloques tiene tres divs diferentes
+
+20
+00:00:53.041 --> 00:00:54.360
+dentro de ella.
+
+21
+00:00:54.360 --> 00:00:57.670
+Cada uno de ellos tiene la clase de bloques, y aquí es donde
+
+22
+00:00:57.670 --> 00:01:01.070
+asigno esas clases específicas locales
+
+23
+00:01:01.070 --> 00:01:02.890
+a cada uno de ellos.
+
+24
+00:01:02.890 --> 00:01:05.520
+Entonces, de lo que vamos a hablar en esta guía
+
+25
+00:01:05.520 --> 00:01:10.090
+y también en las siguientes guías es la propiedad flex.
+
+26
+00:01:10.090 --> 00:01:14.330
+Y, por lo tanto, hemos estado hablando sobre cómo podemos
+
+27
+00:01:14.330 --> 00:01:17.290
+usar pantalla flexible y trabajar para alinear elementos,
+
+28
+00:01:17.290 --> 00:01:19.690
+justificar contenido, trabajar con contenedores y
+
+29
+00:01:19.690 --> 00:01:21.390
+elementos flex.
+
+30
+00:01:21.390 --> 00:01:24.900
+Y en esta guía vamos a adentrarnos un poco más
+
+31
+00:01:24.900 --> 00:01:27.400
+en la propiedad flex en sí misma.
+
+32
+00:01:27.400 --> 00:01:32.400
+Y cómo podemos usarlo para, realmente dictar los tamaños de
+
+33
+00:01:32.520 --> 00:01:35.690
+estos elementos y especialmente los tamaños en cómo
+
+34
+00:01:35.690 --> 00:01:37.133
+se relacionan entre sí.
+
+35
+00:01:38.330 --> 00:01:40.850
+Así que al final de esto, lo que quiero es tener
+
+36
+00:01:40.850 --> 00:01:44.680
+la capacidad de decir que quiero que
+
+37
+00:01:44.680 --> 00:01:46.400
+este bloque esté aquí abajo.
+
+38
+00:01:46.400 --> 00:01:49.660
+Quiero que ocupe un poco más
+
+39
+00:01:49.660 --> 00:01:51.740
+de un tercio de la pantalla.
+
+40
+00:01:51.740 --> 00:01:55.730
+Entonces quiero que los dos bloques sean mucho más pequeños.
+
+41
+00:01:55.730 --> 00:01:58.000
+Y luego quiero que los tres al final
+
+42
+00:01:58.000 --> 00:02:00.910
+ocupen el espacio que quede.
+
+43
+00:02:00.910 --> 00:02:03.490
+Y luego también veremos cómo podemos centrar
+
+44
+00:02:03.490 --> 00:02:05.620
+el texto en los bloques para que
+
+45
+00:02:05.620 --> 00:02:07.342
+siempre estén en el centro.
+
+46
+00:02:07.342 --> 00:02:09.930
+Así que vamos a trabajar esta vez con tres
+
+47
+00:02:09.930 --> 00:02:11.080
+contenedores flexibles diferentes.
+
+48
+00:02:11.080 --> 00:02:14.240
+Y luego veremos cómo podemos aislar los artículos y
+
+49
+00:02:14.240 --> 00:02:17.440
+darles sus propios estilos especiales.
+
+50
+00:02:17.440 --> 00:02:21.450
+Así que vayamos hasta este contenedor aquí.
+
+51
+00:02:21.450 --> 00:02:24.810
+Y en el contenedor vamos a comenzar
+
+52
+00:02:24.810 --> 00:02:27.597
+agregando nuestra propiedad de pantalla flexible.
+
+53
+00:02:27.597 --> 00:02:30.860
+Porque recuerden que esto es lo que tendrán que usar
+
+54
+00:02:30.860 --> 00:02:33.700
+cada vez que cree un contenedor flexible.
+
+55
+00:02:33.700 --> 00:02:35.920
+Así que voy a decir pantalla flexible.
+
+56
+00:02:35.920 --> 00:02:39.730
+Y luego quiero usar contenido justificado.
+
+57
+00:02:39.730 --> 00:02:41.410
+Céntrenlo.
+
+58
+00:02:41.410 --> 00:02:46.410
+Y luego para éste también voy a alinear los elementos.
+
+59
+00:02:46.700 --> 00:02:49.980
+Así que voy a decir alinear los elementos, no el contenido.
+
+60
+00:02:49.980 --> 00:02:51.270
+Vamos a entrar en eso más adelante.
+
+61
+00:02:51.270 --> 00:02:55.623
+Alinear elementos, y para esto también diremos centrado.
+
+62
+00:02:56.820 --> 00:02:58.960
+Así que voy a guardar esto.
+
+63
+00:02:58.960 --> 00:03:02.520
+Y puedes ver que eso nos da un comportamiento muy extraño.
+
+64
+00:03:02.520 --> 00:03:07.200
+Así que vamos a pasar a nuestra próxima clase.
+
+65
+00:03:07.200 --> 00:03:09.020
+Así que vamos a trabajar con bloques.
+
+66
+00:03:09.020 --> 00:03:12.870
+Y vamos a empezar mostrando flex.
+
+67
+00:03:12.870 --> 00:03:15.280
+Así que esto también va a ser un contenedor flexible.
+
+68
+00:03:15.280 --> 00:03:17.480
+Así que vamos a tener pantalla flexible.
+
+69
+00:03:17.480 --> 00:03:20.290
+Y luego quiero hacer lo mismo aquí.
+
+70
+00:03:20.290 --> 00:03:23.387
+Así que quiero alinear estos elementos en el centro.
+
+71
+00:03:23.387 --> 00:03:26.210
+Así que voy a copiar ambas líneas.
+
+72
+00:03:26.210 --> 00:03:31.210
+Y, por ejemplo, voy a decir que
+
+73
+00:03:31.360 --> 00:03:35.745
+quiero que tenga un ancho de mil pixeles.
+
+74
+00:03:35.745 --> 00:03:37.620
+Y verás por qué en un momento.
+
+75
+00:03:37.620 --> 00:03:41.130
+Y para ver correctamente el ejemplo completo,
+
+76
+00:03:41.130 --> 00:03:43.920
+tendremos que ver toda la pantalla.
+
+77
+00:03:43.920 --> 00:03:47.590
+Entonces, lo que tendremos aquí tendrá que ser visto
+
+78
+00:03:47.590 --> 00:03:50.280
+a todo lo ancho para obtener el efecto completo.
+
+79
+00:03:50.280 --> 00:03:51.890
+Así que voy a presionar guardar aquí.
+
+80
+00:03:51.890 --> 00:03:55.120
+Y eso ha movido nuestro elemento, si nos estamos acercando.
+
+81
+00:03:55.120 --> 00:03:56.920
+En realidad estamos muy cerca de lo que necesitamos.
+
+82
+00:03:56.920 --> 00:04:00.890
+Ahora recuerden que lo que quiero hacer ahora es comenzar
+
+83
+00:04:00.890 --> 00:04:03.430
+a dictar el tamaño de cada uno de estos elementos.
+
+84
+00:04:03.430 --> 00:04:08.080
+Así que podemos hacerlo moviéndonos hacia nuestra
+
+85
+00:04:08.080 --> 00:04:09.420
+tercera clase aquí, que es bloque.
+
+86
+00:04:09.420 --> 00:04:12.480
+También va a ser un contenedor flexible.
+
+87
+00:04:12.480 --> 00:04:15.650
+Y también, en realidad va a tener exactamente
+
+88
+00:04:15.650 --> 00:04:17.890
+los mismos elementos que tenemos aquí.
+
+89
+00:04:17.890 --> 00:04:20.970
+Así que sólo puedo agarrar estos tres.
+
+90
+00:04:20.970 --> 00:04:22.160
+No el ancho.
+
+91
+00:04:22.160 --> 00:04:24.660
+Y luego vamos a pegarlos aquí.
+
+92
+00:04:24.660 --> 00:04:27.560
+Tenemos pantalla flexible, contenido justificado al centro,
+
+93
+00:04:27.560 --> 00:04:29.250
+alinear elementos al centro.
+
+94
+00:04:29.250 --> 00:04:32.930
+Presionen guardar y podrán ver que eso cambió
+
+95
+00:04:32.930 --> 00:04:36.600
+los valores de las propiedades de texto dentro del bloque.
+
+96
+00:04:36.600 --> 00:04:38.640
+Así que eso es lo que los movió.
+
+97
+00:04:38.640 --> 00:04:41.398
+Y ahora mismo están centrados verticalmente
+
+98
+00:04:41.398 --> 00:04:42.880
+y horizontalmente.
+
+99
+00:04:42.880 --> 00:04:47.540
+Pero debido a que realmente no hemos aplicado ningún tipo
+
+100
+00:04:47.540 --> 00:04:49.348
+de tamaño a nuestras clases de bloque específicas no
+
+101
+00:04:49.348 --> 00:04:50.964
+se puede decir nada todavía.
+
+102
+00:04:50.964 --> 00:04:53.240
+Así que ahora vamos a hacer esto.
+
+103
+00:04:53.240 --> 00:04:57.180
+Así que vamos a usar una propiedad aquí que no hemos
+
+104
+00:04:57.180 --> 00:05:00.380
+usado antes llamada base flex.
+
+105
+00:05:00.380 --> 00:05:03.790
+Y más adelante, en algunas guías, les mostraré un atajo,
+
+106
+00:05:03.790 --> 00:05:07.380
+por lo que rara vez usarás base flex.
+
+107
+00:05:07.380 --> 00:05:10.850
+Pero para comprender la propiedad de flex,
+
+108
+00:05:10.850 --> 00:05:13.910
+deben comprender cómo funciona la base flex.
+
+109
+00:05:13.910 --> 00:05:16.640
+Así que por eso la estoy aislando aquí.
+
+110
+00:05:16.640 --> 00:05:21.640
+Y así tenemos la base flex, y la tengo a 400 pixeles
+
+111
+00:05:21.650 --> 00:05:22.970
+en la primera.
+
+112
+00:05:22.970 --> 00:05:27.250
+Voy a cambiarla a 100 pixeles aquí.
+
+113
+00:05:27.250 --> 00:05:29.970
+Y luego déjame copiar esto.
+
+114
+00:05:29.970 --> 00:05:33.261
+Y simplemente me desharé de, o arreglaré
+
+115
+00:05:33.261 --> 00:05:35.344
+los diferentes corchetes.
+
+116
+00:05:36.710 --> 00:05:39.000
+Y así tengo aquí 100 pixeles.
+
+117
+00:05:39.000 --> 00:05:43.003
+Y luego vamos a cambiar éste para que sea de 200 pixeles.
+
+118
+00:05:45.190 --> 00:05:48.050
+Así que ahora, si guardo esto, veremos
+
+119
+00:05:48.050 --> 00:05:50.170
+que tenemos el comportamiento que estamos buscando.
+
+120
+00:05:50.170 --> 00:05:53.740
+Entonces, ¿qué es lo que hace la base flexible?
+
+121
+00:05:54.768 --> 00:05:57.000
+Da a nuestros elementos un punto de partida.
+
+122
+00:05:57.000 --> 00:06:00.730
+Entonces, en este caso, estamos diciendo que el punto
+
+123
+00:06:00.730 --> 00:06:04.710
+de partida para el bloque superior será de 400 pixeles.
+
+124
+00:06:04.710 --> 00:06:07.860
+Ahora pueden decir con mucha precisión que estos
+
+125
+00:06:07.860 --> 00:06:09.016
+no son 400 pixeles.
+
+126
+00:06:09.016 --> 00:06:12.270
+Y es por eso que dije que tendríamos que ver esto
+
+127
+00:06:12.270 --> 00:06:14.120
+en el modo de pantalla completa.
+
+128
+00:06:14.120 --> 00:06:18.610
+Como pueden ver aquí, ahora estamos en 400 pixeles.
+
+129
+00:06:18.610 --> 00:06:19.780
+Aquí estamos en 100.
+
+130
+00:06:19.780 --> 00:06:21.820
+Y luego estos son 200.
+
+131
+00:06:21.820 --> 00:06:25.010
+Ahora lo mejor de cómo funciona esto,
+
+132
+00:06:25.010 --> 00:06:29.160
+y esto es parte de la razón por la que toda la herramienta
+
+133
+00:06:29.160 --> 00:06:33.660
+Flex Box se usa para un desarrollo responsivo es que si
+
+134
+00:06:33.660 --> 00:06:38.660
+tuviera que reducir esto de nuevo, y si lo creciera y
+
+135
+00:06:38.880 --> 00:06:42.430
+y lo encogiera, lo que verán es que nuestras cajas
+
+136
+00:06:42.430 --> 00:06:45.970
+están cambiando dinámicamente, pero están cambiando
+
+137
+00:06:45.970 --> 00:06:48.500
+dinámicamente a medida que se encogen y crecen,
+
+138
+00:06:48.500 --> 00:06:51.960
+están cambiando con éstos en tanto que puntos de partida.
+
+139
+00:06:51.960 --> 00:06:55.393
+Por lo tanto, a medida que se reducen, 400 pixeles pueden
+
+140
+00:06:55.393 --> 00:06:57.930
+acabar no siendo 400 pixeles.
+
+141
+00:06:57.930 --> 00:07:00.960
+Pero mantiene la misma relación de aspecto.
+
+142
+00:07:00.960 --> 00:07:02.860
+Así que mantiene la misma proporción.
+
+143
+00:07:02.860 --> 00:07:06.420
+Así que aquí imaginen que no son 400 pixeles,
+
+144
+00:07:06.420 --> 00:07:08.990
+sino que es sólo la propiedad cuatro.
+
+145
+00:07:08.990 --> 00:07:11.060
+Y que luego ésta es la propiedad uno.
+
+146
+00:07:11.060 --> 00:07:13.350
+Y luego esta es la propiedad dos.
+
+147
+00:07:13.350 --> 00:07:14.991
+Entonces, lo que significa es
+
+148
+00:07:14.991 --> 00:07:16.960
+que siempre va a ser el más grande.
+
+149
+00:07:16.960 --> 00:07:19.320
+Esto va a ser una cuarta parte de ese tamaño.
+
+150
+00:07:19.320 --> 00:07:21.520
+Y esto va a ser la mitad de ese tamaño.
+
+151
+00:07:21.520 --> 00:07:24.220
+Así que incluso cuando lo reducimos aquí,
+
+152
+00:07:24.220 --> 00:07:27.388
+y esto ya no es de 400 pixeles pero sigue siendo,
+
+153
+00:07:27.388 --> 00:07:29.913
+como pueden ver, cuatro veces más grande
+
+154
+00:07:29.913 --> 00:07:31.796
+que nuestra segunda caja.
+
+155
+00:07:31.796 --> 00:07:34.530
+Y es el doble de grande que nuestra tercera caja
+
+156
+00:07:34.530 --> 00:07:37.270
+porque mantiene esa proporción.
+
+157
+00:07:37.270 --> 00:07:40.820
+Así que eso es una introducción a la propiedad flex
+
+158
+00:07:40.820 --> 00:07:44.033
+al trabajar con base flex.
+

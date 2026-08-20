@@ -1,0 +1,1118 @@
+WEBVTT
+
+1
+00:00:01.270 --> 00:00:03.130
+<v Mentor>En esta guía de Python Strings,</v>
+
+2
+00:00:03.130 --> 00:00:05.710
+vamos a aprender cómo podemos empezar a cambiar
+
+3
+00:00:05.710 --> 00:00:08.820
+y manipular el caso de una cadena,
+
+4
+00:00:08.820 --> 00:00:10.320
+y esto nos va a introducir
+
+5
+00:00:10.320 --> 00:00:13.053
+a uno de los conceptos más importantes
+
+6
+00:00:13.053 --> 00:00:15.003
+dentro de la programación,
+
+7
+00:00:15.003 --> 00:00:17.690
+que es la capacidad de llamar funciones
+
+8
+00:00:17.690 --> 00:00:20.210
+y métodos en objetos.
+
+9
+00:00:20.210 --> 00:00:22.840
+Y si toda esa frase
+
+10
+00:00:22.840 --> 00:00:24.780
+no tiene sentido para ti, no te preocupes.
+
+11
+00:00:24.780 --> 00:00:27.900
+En esta guía y a lo largo de todo el curso,
+
+12
+00:00:27.900 --> 00:00:30.690
+vamos a seguir este principio bastante seguido
+
+13
+00:00:30.690 --> 00:00:33.480
+y vamos a ver más ejemplos
+
+14
+00:00:33.480 --> 00:00:35.490
+de los que puedas recordar en esta.
+
+15
+00:00:35.490 --> 00:00:36.570
+Así que, no te preocupes
+
+16
+00:00:36.570 --> 00:00:39.400
+si algunos de estos conceptos son un poco confusos.
+
+17
+00:00:39.400 --> 00:00:42.090
+Continuaremos reforzándolos
+
+18
+00:00:42.090 --> 00:00:45.380
+y se harán más claras cuanto más las hagan.
+
+19
+00:00:45.380 --> 00:00:48.200
+Veamos qué queremos hacer aquí.
+
+20
+00:00:48.200 --> 00:00:50.075
+Tenemos nuestra oración, que es,
+
+21
+00:00:50.075 --> 00:00:51.630
+El rápido zorro marrón saltó,
+
+22
+00:00:51.630 --> 00:00:54.680
+y yo acorté nuestra oración de ejemplo
+
+23
+00:00:54.680 --> 00:00:56.810
+sólo para que todo pueda estar en una línea
+
+24
+00:00:56.810 --> 00:00:59.610
+y para que también podamos llamar a las funciones en ella.
+
+25
+00:00:59.610 --> 00:01:02.020
+Así que si quiero hacer algo,
+
+26
+00:01:02.020 --> 00:01:05.230
+como convertir toda esta cadena
+
+27
+00:01:05.230 --> 00:01:08.130
+para que esté en mayúsculas,
+
+28
+00:01:08.130 --> 00:01:12.320
+entonces lo que puedo hacer al final de esta cadena,
+
+29
+00:01:12.320 --> 00:01:16.003
+puedo decir, punto, upper,
+
+30
+00:01:17.450 --> 00:01:19.210
+y luego paréntesis.
+
+31
+00:01:19.210 --> 00:01:22.370
+Y así, upper es un método reservado.
+
+32
+00:01:22.370 --> 00:01:24.590
+Está en la biblioteca del núcleo de Python,
+
+33
+00:01:24.590 --> 00:01:29.400
+así que esto es algo a lo que puedes llamar en una cadena
+
+34
+00:01:29.400 --> 00:01:32.450
+y lo que esto te va a dar la habilidad de hacer
+
+35
+00:01:32.450 --> 00:01:35.340
+es convertirlo a mayúsculas.
+
+36
+00:01:35.340 --> 00:01:37.900
+Así que ahora, si presiono Enter,
+
+37
+00:01:37.900 --> 00:01:39.308
+puedes ver que ahora,
+
+38
+00:01:39.308 --> 00:01:42.360
+toda nuestra cadena está en mayúsculas.
+
+39
+00:01:42.360 --> 00:01:45.850
+Y antes de pasar a otros tipos
+
+40
+00:01:45.850 --> 00:01:48.690
+de manipuladores de casos en Python,
+
+41
+00:01:48.690 --> 00:01:50.765
+quiero mostrarte la manera
+
+42
+00:01:50.765 --> 00:01:52.600
+cómo funciona esta llamada de función
+
+43
+00:01:52.600 --> 00:01:55.440
+porque es increíblemente importante
+
+44
+00:01:55.440 --> 00:01:57.150
+a medida que aprendes programación,
+
+45
+00:01:57.150 --> 00:01:59.920
+y especialmente a medida que aprendes cómo funciona Python
+
+46
+00:01:59.920 --> 00:02:01.760
+porque hay algunos matices
+
+47
+00:02:01.760 --> 00:02:04.570
+que si no entiendes cómo funcionan,
+
+48
+00:02:04.570 --> 00:02:07.120
+se volverán muy difíciles más adelante.
+
+49
+00:02:07.120 --> 00:02:08.290
+Te vas a topar con error
+
+50
+00:02:08.290 --> 00:02:10.900
+y te va a resultar más difícil descubrirlos.
+
+51
+00:02:10.900 --> 00:02:13.540
+Así que, veamos qué pasa
+
+52
+00:02:13.540 --> 00:02:16.950
+si vengo aquí
+
+53
+00:02:16.950 --> 00:02:20.220
+y creo una nueva línea y llamo a la oración
+
+54
+00:02:20.220 --> 00:02:21.730
+y saco esto,
+
+55
+00:02:21.730 --> 00:02:24.973
+así que voy a tomar esta llamada de método completa,
+
+56
+00:02:26.150 --> 00:02:27.860
+la pego aquí.
+
+57
+00:02:27.860 --> 00:02:30.560
+Ahora, si le doy a despejar y luego ejecutar,
+
+58
+00:02:30.560 --> 00:02:32.860
+¿qué crees que va a pasar?
+
+59
+00:02:32.860 --> 00:02:35.000
+Bueno, si le doy a esto, puedes ver
+
+60
+00:02:35.000 --> 00:02:37.660
+que no hubo ningún cambio.
+
+61
+00:02:37.660 --> 00:02:42.250
+Todo aquí es exactamente lo que se está imprimiendo,
+
+62
+00:02:42.250 --> 00:02:45.030
+lo que significa que lo que está sucediendo en la línea tres
+
+63
+00:02:45.030 --> 00:02:48.510
+cuando llamamos .upper en la oración
+
+64
+00:02:48.510 --> 00:02:51.790
+no está realmente alterando la oración.
+
+65
+00:02:51.790 --> 00:02:56.730
+Es sólo cuando llamamos a esto cuando se crea la oración.
+
+66
+00:02:56.730 --> 00:02:59.530
+Entonces, cuando esta variable está almacenando el valor.
+
+67
+00:02:59.530 --> 00:03:02.540
+Si llamamos a la parte superior de este objeto de cadena,
+
+68
+00:03:02.540 --> 00:03:05.160
+entonces se almacenará dentro de la oración.
+
+69
+00:03:05.160 --> 00:03:07.310
+Ahora, técnicamente, también podemos hacer esto.
+
+70
+00:03:07.310 --> 00:03:12.070
+Si corto esto y lo pego y lo ejecuto,
+
+71
+00:03:12.070 --> 00:03:15.110
+ahora este proceso ha ocurrido.
+
+72
+00:03:15.110 --> 00:03:17.970
+Así que, demos un pequeño paso atrás
+
+73
+00:03:17.970 --> 00:03:20.630
+y entendamos por qué está pasando esto.
+
+74
+00:03:20.630 --> 00:03:24.440
+Y voy a hacer algunos comentarios aquí arriba
+
+75
+00:03:24.440 --> 00:03:28.540
+para que te hagas una idea del flujo de trabajo.
+
+76
+00:03:28.540 --> 00:03:32.200
+Cuando tenemos esta frase y esta cadena aquí,
+
+77
+00:03:32.200 --> 00:03:35.330
+esto puede parecer, porque está en una línea
+
+78
+00:03:35.330 --> 00:03:37.830
+y sabemos que estamos almacenando esta cadena
+
+79
+00:03:37.830 --> 00:03:39.240
+dentro de la oración,
+
+80
+00:03:39.240 --> 00:03:42.360
+puede parecer que es un proceso,
+
+81
+00:03:42.360 --> 00:03:45.630
+pero técnicamente son unos cuantos procesos diferentes.
+
+82
+00:03:45.630 --> 00:03:49.370
+Por lo tanto, vamos a crear un comentario aquí arriba,
+
+83
+00:03:49.370 --> 00:03:52.150
+y sólo necesitamos un carácter etiqueta para el comentario.
+
+84
+00:03:52.150 --> 00:03:54.490
+Y así que, tenemos,
+
+85
+00:03:54.490 --> 00:03:58.003
+permítanme copiar y pegar toda la frase en su lugar.
+
+86
+00:03:59.360 --> 00:04:02.540
+Así que, este es nuestro objeto de oración
+
+87
+00:04:02.540 --> 00:04:04.790
+pero lo que realmente está sucediendo aquí
+
+88
+00:04:04.790 --> 00:04:09.420
+es primero, tenemos una oración,
+
+89
+00:04:09.420 --> 00:04:11.380
+si puedo deletrearla correctamente,
+
+90
+00:04:11.380 --> 00:04:15.430
+y lo que es esto es una variable.
+
+91
+00:04:15.430 --> 00:04:20.203
+Después de eso, tenemos nuestra cadena.
+
+92
+00:04:21.960 --> 00:04:26.960
+Y lo que es esto es una cadena por sí misma.
+
+93
+00:04:27.430 --> 00:04:29.588
+Por lo tanto, lo que tenemos
+
+94
+00:04:29.588 --> 00:04:32.980
+es que no se trata de un solo proceso,
+
+95
+00:04:32.980 --> 00:04:34.310
+sino de un proceso múltiple.
+
+96
+00:04:34.310 --> 00:04:37.550
+Tenemos un objeto de cadena aquí.
+
+97
+00:04:37.550 --> 00:04:39.300
+Y luego tenemos una variable.
+
+98
+00:04:39.300 --> 00:04:41.080
+Y con el signo de igual,
+
+99
+00:04:41.080 --> 00:04:42.670
+y podemos tener esto como una línea más
+
+100
+00:04:42.670 --> 00:04:44.940
+sólo para que puedas ver todo lo que está pasando.
+
+101
+00:04:44.940 --> 00:04:47.710
+Entonces, con un igual, lo que esto está haciendo
+
+102
+00:04:47.710 --> 00:04:52.143
+es realizar la asignación de variables.
+
+103
+00:04:53.500 --> 00:04:55.580
+Y entonces, lo que eso significa
+
+104
+00:04:55.580 --> 00:04:58.890
+es que en realidad tenemos tres procesos ocurriendo aquí.
+
+105
+00:04:58.890 --> 00:05:00.580
+Tenemos una cadena.
+
+106
+00:05:00.580 --> 00:05:02.540
+Luego tenemos una asignación.
+
+107
+00:05:02.540 --> 00:05:03.820
+Y luego tenemos una variable
+
+108
+00:05:03.820 --> 00:05:06.340
+que va a estar almacenando la cadena.
+
+109
+00:05:06.340 --> 00:05:07.990
+Por lo tanto, la razón por la que
+
+110
+00:05:07.990 --> 00:05:10.898
+cuando realizamos esta llamada
+
+111
+00:05:10.898 --> 00:05:15.410
+donde dije oración, punto, a upper,
+
+112
+00:05:15.410 --> 00:05:19.730
+en realidad no cambia la cadena en sí
+
+113
+00:05:19.730 --> 00:05:20.610
+ni la variable.
+
+114
+00:05:20.610 --> 00:05:23.100
+Lo cambia cuando es llamado justo aquí,
+
+115
+00:05:23.100 --> 00:05:25.770
+pero no hace el cambio permanentemente.
+
+116
+00:05:25.770 --> 00:05:29.880
+Simplemente se llama a la variable de la oración.
+
+117
+00:05:29.880 --> 00:05:32.670
+Y así, si imprimes este valor,
+
+118
+00:05:32.670 --> 00:05:34.770
+imprimes lo que está ocurriendo aquí,
+
+119
+00:05:34.770 --> 00:05:37.780
+entonces se mostrarán todas las mayúsculas.
+
+120
+00:05:37.780 --> 00:05:40.900
+Pero cuando usted simplemente realiza este proceso,
+
+121
+00:05:40.900 --> 00:05:43.550
+no hace ese cambio permanente.
+
+122
+00:05:43.550 --> 00:05:44.900
+Y puede que te preguntes
+
+123
+00:05:44.900 --> 00:05:47.470
+por qué estoy pasando tanto tiempo hablando de esto,
+
+124
+00:05:47.470 --> 00:05:49.920
+pero es por una razón muy importante.
+
+125
+00:05:49.920 --> 00:05:53.470
+Una de las cuestiones clave que veo
+
+126
+00:05:53.470 --> 00:05:55.570
+cuando los estudiantes están aprendiendo programación
+
+127
+00:05:55.570 --> 00:05:59.000
+es cierta confusión sobre el flujo de datos
+
+128
+00:05:59.000 --> 00:06:02.640
+y la posibilidad de ver cuándo ocurren los procesos.
+
+129
+00:06:02.640 --> 00:06:05.210
+Así que, esto puede parecer muy simple aquí,
+
+130
+00:06:05.210 --> 00:06:07.610
+porque solo tenemos tres líneas de código.
+
+131
+00:06:07.610 --> 00:06:09.080
+Pero imagina que estás construyendo
+
+132
+00:06:09.080 --> 00:06:11.790
+una gran web o una aplicación móvil
+
+133
+00:06:11.790 --> 00:06:15.315
+y llamas a un proceso a mitad
+
+134
+00:06:15.315 --> 00:06:17.900
+de camino a través de un gran archivo de código
+
+135
+00:06:17.900 --> 00:06:20.970
+y te preguntas por qué no está cambiando
+
+136
+00:06:20.970 --> 00:06:23.060
+lo que estás viendo en la pantalla,
+
+137
+00:06:23.060 --> 00:06:27.330
+y puede tener algo que ver con este asunto aquí,
+
+138
+00:06:27.330 --> 00:06:29.440
+donde está llamando a un proceso
+
+139
+00:06:29.440 --> 00:06:32.940
+pero no está almacenando el proceso en una variable,
+
+140
+00:06:32.940 --> 00:06:34.740
+no la estás llamando en el objeto
+
+141
+00:06:34.740 --> 00:06:37.300
+que en realidad está siendo creado,
+
+142
+00:06:37.300 --> 00:06:40.510
+y eso puede llevar a algunos errores confusos.
+
+143
+00:06:40.510 --> 00:06:45.150
+Por lo tanto, un patrón muy común es hacer algo como esto,
+
+144
+00:06:45.150 --> 00:06:48.420
+donde cada vez que quieres cambiar los valores,
+
+145
+00:06:48.420 --> 00:06:51.330
+creas una nueva variable.
+
+146
+00:06:51.330 --> 00:06:54.700
+Y ahora, puedes decir la oración a upper
+
+147
+00:06:54.700 --> 00:06:57.057
+y colocarla dentro de sentence_two.
+
+148
+00:06:58.000 --> 00:07:01.793
+Y ahora, si entro aquí,
+
+149
+00:07:03.410 --> 00:07:05.623
+vamos a imprimir ambos.
+
+150
+00:07:07.360 --> 00:07:09.850
+Y ahora, puedes ver que no hemos cambiado
+
+151
+00:07:09.850 --> 00:07:11.825
+el valor de la cadena inicial
+
+152
+00:07:11.825 --> 00:07:14.392
+pero lo hemos hecho con la otra,
+
+153
+00:07:14.392 --> 00:07:17.320
+y ese es un proceso que verás bastante
+
+154
+00:07:17.320 --> 00:07:18.900
+porque necesitas tener cuidado
+
+155
+00:07:19.977 --> 00:07:22.460
+cada vez que cambies un valor original
+
+156
+00:07:22.460 --> 00:07:25.010
+porque si lo cambias permanentemente,
+
+157
+00:07:25.010 --> 00:07:27.800
+entonces otros métodos que lo están llamando
+
+158
+00:07:27.800 --> 00:07:29.670
+pueden encontrarse con algunos errores
+
+159
+00:07:29.670 --> 00:07:32.010
+porque pueden esperar que se vea así,
+
+160
+00:07:32.010 --> 00:07:35.350
+pero es posible que accidentalmente lo hayamos convertido
+
+161
+00:07:35.350 --> 00:07:37.100
+a ser todas mayúsculas
+
+162
+00:07:37.100 --> 00:07:39.291
+o que hayamos realizado todos los demás tipos
+
+163
+00:07:39.291 --> 00:07:41.200
+de procesos diferentes en él.
+
+164
+00:07:41.200 --> 00:07:44.670
+Por lo tanto, voy a dejar todas estas notas diferentes
+
+165
+00:07:44.670 --> 00:07:47.570
+dentro de las notas del programa para esta guía
+
+166
+00:07:47.570 --> 00:07:50.530
+sólo para que puedas ver todos los diferentes procesos
+
+167
+00:07:50.530 --> 00:07:51.580
+que están sucediendo.
+
+168
+00:07:51.580 --> 00:07:55.120
+Sé que puede ser muy desafiante en esta etapa
+
+169
+00:07:55.120 --> 00:07:57.770
+cuando estás aprendiendo un nuevo lenguaje de programación
+
+170
+00:07:57.770 --> 00:08:00.700
+de querer saltar adelante y llegar a la parte divertida
+
+171
+00:08:00.700 --> 00:08:03.850
+de hacer cosas como construir aplicaciones.
+
+172
+00:08:03.850 --> 00:08:04.891
+Sin embargo, estos
+
+173
+00:08:04.891 --> 00:08:09.030
+principales tipos de procesos fundamentales
+
+174
+00:08:09.030 --> 00:08:10.920
+son muy importantes de entender
+
+175
+00:08:10.920 --> 00:08:13.170
+porque si no los haces bien
+
+176
+00:08:13.170 --> 00:08:15.480
+y no entiendes la forma en que funcionan procesos
+
+177
+00:08:15.480 --> 00:08:18.950
+como el flujo de datos o las asignaciones,
+
+178
+00:08:18.950 --> 00:08:22.480
+entonces cuando llegues a esos temas más avanzados,
+
+179
+00:08:22.480 --> 00:08:25.070
+va a ser muy difícil saber lo que está sucediendo.
+
+180
+00:08:25.070 --> 00:08:27.330
+Por lo tanto, te recomiendo encarecidamente
+
+181
+00:08:27.330 --> 00:08:29.288
+que tomes el tiempo para
+
+182
+00:08:29.288 --> 00:08:31.020
+ver exactamente lo que está sucediendo
+
+183
+00:08:31.020 --> 00:08:32.770
+con cada uno de estos procesos
+
+184
+00:08:32.770 --> 00:08:36.610
+para que puedas entenderlos más adelante.
+
+185
+00:08:36.610 --> 00:08:37.751
+Así que, eso es suficiente
+
+186
+00:08:37.751 --> 00:08:41.340
+con todas estas diferentes técnicas
+
+187
+00:08:41.340 --> 00:08:43.890
+en lo que respecta a llamar a estos métodos
+
+188
+00:08:43.890 --> 00:08:45.120
+y todo eso.
+
+189
+00:08:45.120 --> 00:08:47.160
+Voy a comentar todo esto
+
+190
+00:08:47.160 --> 00:08:49.320
+para que podamos tenerlo para las notas del programa.
+
+191
+00:08:49.320 --> 00:08:51.960
+Y ahora, vamos a hablar sobre algunos otros métodos.
+
+192
+00:08:51.960 --> 00:08:55.910
+Hablamos sobre upper, ahora veamos que queremos hacer
+
+193
+00:08:55.910 --> 00:09:00.910
+si quisiéramos decir sólo mayúsculas en la primera letra.
+
+194
+00:09:01.040 --> 00:09:03.710
+Así que, si voy a decir una oración
+
+195
+00:09:03.710 --> 00:09:06.990
+y tenemos una cadena
+
+196
+00:09:06.990 --> 00:09:09.680
+donde todo está en minúsculas,
+
+197
+00:09:09.680 --> 00:09:12.580
+y simplemente vamos a poner en mayúsculas
+
+198
+00:09:12.580 --> 00:09:15.960
+la primer letra aquí, lo que podemos hacer,
+
+199
+00:09:15.960 --> 00:09:20.100
+y voy a realizar esta tarea justo en la asignación,
+
+200
+00:09:20.100 --> 00:09:23.017
+puedo decir, capitalizar,
+
+201
+00:09:24.566 --> 00:09:25.416
+llamas paréntesis.
+
+202
+00:09:25.416 --> 00:09:28.130
+Si no llama paréntesis, no se producirá ningún proceso.
+
+203
+00:09:28.130 --> 00:09:31.493
+Y luego imprimamos esto en la pantalla.
+
+204
+00:09:32.510 --> 00:09:34.550
+Entonces ahora, si ejecuto esto,
+
+205
+00:09:34.550 --> 00:09:37.430
+puedes ver que ha tomado la primera letra
+
+206
+00:09:37.430 --> 00:09:39.770
+y la ha puesto en mayúsculas.
+
+207
+00:09:39.770 --> 00:09:43.400
+Así que voy a copiar eso, comentarlo,
+
+208
+00:09:43.400 --> 00:09:45.560
+y ahora, vamos con otro.
+
+209
+00:09:45.560 --> 00:09:47.693
+Por lo tanto, digamos que tenemos
+
+210
+00:09:47.693 --> 00:09:49.634
+algún título de entrada en el blog
+
+211
+00:09:49.634 --> 00:09:51.740
+y queremos tener la primera letra
+
+212
+00:09:51.740 --> 00:09:54.030
+de cada palabra en mayúsculas.
+
+213
+00:09:54.030 --> 00:09:57.350
+Mayúsculas sólo toma la primera letra
+
+214
+00:09:57.350 --> 00:10:00.000
+de toda la oración o de toda la cadena,
+
+215
+00:10:00.000 --> 00:10:03.800
+pero si llamamos título, lo que va a pasar,
+
+216
+00:10:03.800 --> 00:10:05.930
+si le doy ejecutar, puedes ver
+
+217
+00:10:05.930 --> 00:10:10.380
+que pasa y convierte cada uno de estos
+
+218
+00:10:10.380 --> 00:10:13.810
+de modo que la primera letra se titula
+
+219
+00:10:13.810 --> 00:10:16.390
+y por lo tanto, esta es una tarea muy popular para hacer.
+
+220
+00:10:16.390 --> 00:10:19.580
+Probablemente implemente el método del título
+
+221
+00:10:19.580 --> 00:10:22.130
+en casi todas las aplicaciones en las que trabajo
+
+222
+00:10:22.130 --> 00:10:26.510
+de una forma u otra porque puede ser muy útil.
+
+223
+00:10:26.510 --> 00:10:29.070
+Bien, voy a comentar esto
+
+224
+00:10:29.070 --> 00:10:30.940
+para que podamos tenerlo en las notas del programa.
+
+225
+00:10:30.940 --> 00:10:35.300
+Y el último que vamos a hacer es minúscula.
+
+226
+00:10:35.300 --> 00:10:37.840
+Y para conseguir nuestra minúscula,
+
+227
+00:10:37.840 --> 00:10:40.060
+primero voy a imprimir upper
+
+228
+00:10:40.060 --> 00:10:42.720
+para que podamos trabajar con esto.
+
+229
+00:10:42.720 --> 00:10:47.320
+Y así, voy a hacer todo esto en mayúsculas.
+
+230
+00:10:47.320 --> 00:10:51.370
+Y luego llamas lower en él.
+
+231
+00:10:51.370 --> 00:10:54.490
+Y si ejecuto esto, verás que lo convierte todo
+
+232
+00:10:54.490 --> 00:10:57.720
+para que todo sea en valor de minúsculas.
+
+233
+00:10:57.720 --> 00:11:02.100
+Ahora, no tienes que comenzar con valores en mayúsculas
+
+234
+00:11:02.100 --> 00:11:04.960
+si tienes un ejemplo
+
+235
+00:11:04.960 --> 00:11:09.630
+donde todo está en minúsculas y ejecutas esto,
+
+236
+00:11:09.630 --> 00:11:12.410
+no va a hacer ningún cambio en absoluto,
+
+237
+00:11:12.410 --> 00:11:17.410
+o si está mezclado donde tienes algunos de estos
+
+238
+00:11:19.020 --> 00:11:22.420
+que están en mayúsculas, entonces ejecutas esto,
+
+239
+00:11:22.420 --> 00:11:24.480
+y puedes ver que toma todos ellos
+
+240
+00:11:24.480 --> 00:11:27.460
+y los pone en minúsculas.
+
+241
+00:11:27.460 --> 00:11:29.330
+Entonces, al revisar esta guía,
+
+242
+00:11:29.330 --> 00:11:31.810
+hablamos sobre varios temas diferentes.
+
+243
+00:11:31.810 --> 00:11:33.570
+Comenzamos a un nivel muy alto
+
+244
+00:11:33.570 --> 00:11:38.110
+y hablamos sobre cómo puedes llamar funciones en objetos,
+
+245
+00:11:38.110 --> 00:11:40.660
+que una cadena es un tipo de objeto en Python.
+
+246
+00:11:40.660 --> 00:11:42.543
+Entonces, viste cómo podrías llamar
+
+247
+00:11:42.543 --> 00:11:44.319
+a una función en un objeto
+
+248
+00:11:44.319 --> 00:11:47.510
+y también viste cuándo ocurrió ese proceso.
+
+249
+00:11:47.510 --> 00:11:52.000
+Viste que solo llamarlo en un objeto por sí solo
+
+250
+00:11:52.000 --> 00:11:55.460
+no realiza ninguna tarea en lo que respecta
+
+251
+00:11:55.460 --> 00:11:58.270
+a lo que se imprime en la pantalla.
+
+252
+00:11:58.270 --> 00:12:01.060
+Entonces viste que tenías que llamar a esa función
+
+253
+00:12:01.060 --> 00:12:02.380
+en el momento correcto.
+
+254
+00:12:02.380 --> 00:12:04.620
+Puede ser como lo hicimos aquí
+
+255
+00:12:04.620 --> 00:12:06.550
+en el momento de la asignación.
+
+256
+00:12:06.550 --> 00:12:08.430
+Puede que sea cuando lo estés imprimiendo.
+
+257
+00:12:08.430 --> 00:12:10.820
+Entonces si colocas, en otras palabras,
+
+258
+00:12:10.820 --> 00:12:13.000
+si saco esto y llamo lower
+
+259
+00:12:14.110 --> 00:12:17.120
+en la declaración de impresión aquí mismo y lo ejecuto,
+
+260
+00:12:17.120 --> 00:12:18.570
+verás que funciona.
+
+261
+00:12:18.570 --> 00:12:21.090
+Entonces, puedes llamarlo cuando se está imprimiendo.
+
+262
+00:12:21.090 --> 00:12:24.310
+Y puede que te preguntes por qué es importante
+
+263
+00:12:24.310 --> 00:12:27.520
+o por qué nos importa incluso imprimir algo,
+
+264
+00:12:27.520 --> 00:12:29.750
+y la razón es que si estás creando
+
+265
+00:12:29.750 --> 00:12:32.130
+una aplicación web o una aplicación móvil,
+
+266
+00:12:32.130 --> 00:12:35.600
+esto es lo más cercano que puede usar la consola
+
+267
+00:12:35.600 --> 00:12:38.140
+para ver que salida es la que va a ser.
+
+268
+00:12:38.140 --> 00:12:39.181
+Por lo tanto, puedes utilizar
+
+269
+00:12:39.181 --> 00:12:42.830
+este mismo proceso exacto en un archivo HTML
+
+270
+00:12:42.830 --> 00:12:45.420
+cuando desees representarlo en la pantalla.
+
+271
+00:12:45.420 --> 00:12:46.803
+Esta es simplemente una forma
+
+272
+00:12:46.803 --> 00:12:48.760
+en la que podemos probarlo rápidamente
+
+273
+00:12:48.760 --> 00:12:52.070
+dentro del terminal, como lo estamos haciendo aquí mismo
+
+274
+00:12:52.070 --> 00:12:54.330
+para ver qué nos da la salida.
+
+275
+00:12:54.330 --> 00:12:57.213
+Y así, esas son las diferentes formas
+
+276
+00:12:57.213 --> 00:12:58.210
+en que puedes llamarlo.
+
+277
+00:12:58.210 --> 00:12:59.480
+Y luego pasamos
+
+278
+00:12:59.480 --> 00:13:01.950
+por varios métodos de manipulación de cadenas:
+
+279
+00:13:01.950 --> 00:13:06.663
+upper, mayúscula, título y luego lower.
+

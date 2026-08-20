@@ -1,0 +1,262 @@
+WEBVTT
+
+1
+00:00:01.490 --> 00:00:03.340
+<v Instructor>Siguiendo con nuestra discusión</v>
+
+2
+00:00:03.340 --> 00:00:06.380
+sobre lo que es programar, y esencialmente,
+
+3
+00:00:06.380 --> 00:00:10.800
+programar se reduce a darle a un ordenador una instrucciones
+
+4
+00:00:10.800 --> 00:00:14.590
+que pueda seguir para implementar un comportamiento.
+
+5
+00:00:14.590 --> 00:00:17.350
+En las siguientes guías, vamos a hablar sobre
+
+6
+00:00:17.350 --> 00:00:19.990
+cómo podéis hacer eso de una forma práctica,
+
+7
+00:00:19.990 --> 00:00:23.390
+y vamos a ayudaros a configurar tu entorno de desarrollo.
+
+8
+00:00:23.390 --> 00:00:25.970
+Ahora, voy a daros un variedad de opciones diferentes,
+
+9
+00:00:25.970 --> 00:00:30.970
+porque sé que puede que estéis en un Mac o en un PC
+
+10
+00:00:31.170 --> 00:00:34.200
+o en un dispositivo Linux, o quizás no queráis
+
+11
+00:00:34.200 --> 00:00:35.840
+configurar un entorno ahora mismo,
+
+12
+00:00:35.840 --> 00:00:37.890
+puede que queráis poneros directamente con el código.
+
+13
+00:00:37.890 --> 00:00:40.020
+Quiero daros un ejemplo
+
+14
+00:00:40.020 --> 00:00:42.270
+para cada uno de los escenarios y luego,
+
+15
+00:00:42.270 --> 00:00:45.520
+podéis escoger el que te venga mejor.
+
+16
+00:00:45.520 --> 00:00:48.740
+El primer ejemplo que voy a daros,
+
+17
+00:00:48.740 --> 00:00:50.650
+y el primer entorno de desarrollo,
+
+18
+00:00:50.650 --> 00:00:54.210
+es una entorno en la nube llamado Repl.it.
+
+19
+00:00:54.210 --> 00:00:56.070
+Y para ir a Repl.it,
+
+20
+00:00:56.070 --> 00:01:00.350
+debéis escribir R-E-P-L punto I-T,
+
+21
+00:01:00.350 --> 00:01:02.150
+es completamente gratis,
+
+22
+00:01:02.150 --> 00:01:05.200
+y podéis venir, registrarte con una cuenta,
+
+23
+00:01:05.200 --> 00:01:08.460
+y podéis empezar a trabajar al momento.
+
+24
+00:01:08.460 --> 00:01:10.730
+Si hago clic aquí, donde dice:
+
+25
+00:01:10.730 --> 00:01:14.130
+"Buscar un lenguaje" puedo empezar con Python3,
+
+26
+00:01:14.130 --> 00:01:15.930
+y esto es exactamente lo que queréis.
+
+27
+00:01:15.930 --> 00:01:19.070
+Bueno, queréis ir a la versión 3 de Python.
+
+28
+00:01:19.070 --> 00:01:20.990
+Más tarde, hablaremos sobre las diferencias
+
+29
+00:01:20.990 --> 00:01:23.230
+entre las diferentes versiones de Python.
+
+30
+00:01:23.230 --> 00:01:25.940
+Y, podéis escoger registrarte.
+
+31
+00:01:25.940 --> 00:01:28.000
+Yo tengo una cuenta, así que no voy a crear
+
+32
+00:01:28.000 --> 00:01:29.550
+otra cuenta de demostración ahora,
+
+33
+00:01:29.550 --> 00:01:31.270
+podéis simplemente registraros.
+
+34
+00:01:31.270 --> 00:01:33.510
+Todo el proceso es gratis.
+
+35
+00:01:33.510 --> 00:01:36.370
+Ahora, os daréis cuenta, al avanzar en este
+
+36
+00:01:36.370 --> 00:01:39.430
+curso, de que este es el entorno de desarrollo
+
+37
+00:01:39.430 --> 00:01:43.520
+que voy a usar, especialmente en los primeros módulos,
+
+38
+00:01:43.520 --> 00:01:46.640
+y son varias las razones.
+
+39
+00:01:46.640 --> 00:01:50.620
+Una: quiero daros el camino más rápido posible
+
+40
+00:01:50.620 --> 00:01:54.180
+a la redacción de código y esto nos da esa estabilidad.
+
+41
+00:01:54.180 --> 00:01:58.290
+Pero también: me gustan las herramientas como Repl.it para
+
+42
+00:01:58.290 --> 00:02:00.840
+grabación de pantalla y si habéis visto mi curso de Ruby,
+
+43
+00:02:00.840 --> 00:02:03.270
+esto os va a resultar muy familiar
+
+44
+00:02:03.270 --> 00:02:05.270
+porque uso exactamente la misma herramienta
+
+45
+00:02:05.270 --> 00:02:07.190
+para el lenguaje de programación Ruby.
+
+46
+00:02:07.190 --> 00:02:11.230
+Y la razón principal es porque puedo escribir código aquí,
+
+47
+00:02:11.230 --> 00:02:14.530
+y vosotros miráis y lo seguís todo,
+
+48
+00:02:14.530 --> 00:02:17.730
+podéis ver la salida aquí o en la derecha,
+
+49
+00:02:17.730 --> 00:02:22.020
+de forma que es es fácil, puedo tener estilo de código,
+
+50
+00:02:22.020 --> 00:02:25.550
+mi identificación, todo está aquí, y toda
+
+51
+00:02:25.550 --> 00:02:28.730
+la salida va a estar en el lado derecho.
+
+52
+00:02:28.730 --> 00:02:31.180
+Entonces, esto es solo una prueba para ver si funciona,
+
+53
+00:02:31.180 --> 00:02:34.930
+y para ver cómo funciona, voy a escribir un programa simple.
+
+54
+00:02:34.930 --> 00:02:36.500
+Voy a decir: "print"
+
+55
+00:02:36.500 --> 00:02:39.230
+y luego: usando estas comillas,
+
+56
+00:02:39.230 --> 00:02:40.900
+voy a decir, "Hola"
+
+57
+00:02:40.900 --> 00:02:43.830
+Y ese es un programa de Python muy pequeño.
+
+58
+00:02:43.830 --> 00:02:46.450
+Para ejecutar esto, voy a "Ejecutar",
+
+59
+00:02:46.450 --> 00:02:51.090
+o le doy al comando "Enter", y entonces en el lado derecho,
+
+60
+00:02:51.090 --> 00:02:53.650
+veréis la salida de, "Hola".
+
+61
+00:02:53.650 --> 00:02:58.490
+Entonces, estas es una forma básica y muy fácil
+
+62
+00:02:58.490 --> 00:03:01.110
+de empezar a escribir código en Python.
+
+63
+00:03:01.110 --> 00:03:02.960
+En las siguientes guías voy a mostraros
+
+64
+00:03:02.960 --> 00:03:06.600
+cómo podéis, además, instalar el sistema Python,
+
+65
+00:03:06.600 --> 00:03:09.713
+y ejecutar los scripts Python en vuestras máquinas locales.
+

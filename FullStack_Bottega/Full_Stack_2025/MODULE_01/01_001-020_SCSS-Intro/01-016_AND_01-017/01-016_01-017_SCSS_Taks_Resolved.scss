@@ -1,0 +1,59 @@
+@mixin flex-config($justify-content: false, $flex: false, $flex-direction: false, $align-items: false) {
+  display: flex;
+  
+  @if $justify-content != false {
+    justify-content: $justify-content;
+  }
+  
+  @if $flex != false {
+    flex: $flex;
+  }
+  
+  @if $flex-direction != false {
+    flex-direction: $flex-direction;
+  }
+  
+  @if $align-items != false {
+    align-items: $align-items;
+  } 
+}
+
+
+.container {
+  @include flex-config;
+  .item { 
+    @include flex-config($flex: 1, $justify-content: space-between);
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    .content {
+      @include flex-config($flex-direction: column, $justify-content: center);
+      .metadata {
+        margin-left: 20px;
+        .title {
+          margin: 0px;
+        }
+      }
+    }
+    .btn-group {
+      @include flex-config($align-items: center);
+      .button {
+        @include flex-config($flex-direction: row, $align-items: center, $justify-content: center);
+        height: 100%;
+        width: 42px;
+        font-size: 2em;
+        a {
+          color: green;
+          text-decoration: none;
+        }
+        &:hover {
+          background-color: maroon;
+          cursor: pointer;
+          a {
+           color: white; 
+          }
+        }
+      }
+    }
+  }
+}

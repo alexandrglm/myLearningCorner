@@ -1,0 +1,918 @@
+WEBVTT
+
+1
+00:00:01.100 --> 00:00:03.150
+<v Instructor>A medida que me vean pasar por este curso,</v>
+
+2
+00:00:03.150 --> 00:00:06.890
+notarán que utilizo algunas
+
+3
+00:00:06.890 --> 00:00:10.686
+tecnologías diferentes para mostrar exactamente
+
+4
+00:00:10.686 --> 00:00:13.260
+lo que estoy desarrollando,
+
+5
+00:00:13.260 --> 00:00:16.280
+y así es como quiero que sea este tipo
+
+6
+00:00:16.280 --> 00:00:19.270
+que es mostrarte esas herramientas para que puedas
+
+7
+00:00:19.270 --> 00:00:22.300
+ver si son algo que personalmente quieres usar.
+
+8
+00:00:22.300 --> 00:00:24.730
+Así que voy a reorganizar la
+
+9
+00:00:24.730 --> 00:00:28.000
+forma en que tengo todo lo que se muestra aquí porque cada
+
+10
+00:00:28.000 --> 00:00:30.670
+vez que estoy creando mis propias aplicaciones, generalmente
+
+11
+00:00:30.670 --> 00:00:34.260
+me gusta tener una visión de lo que estoy trabajando.
+
+12
+00:00:34.260 --> 00:00:37.120
+Especialmente cuando se trata de aplicaciones frontales
+
+13
+00:00:37.120 --> 00:00:39.810
+como las que construiremos con FlexBox.
+
+14
+00:00:39.810 --> 00:00:42.920
+Así que primero voy a ocultar esto
+
+15
+00:00:42.920 --> 00:00:45.500
+y luego voy a tener el navegador
+
+16
+00:00:45.500 --> 00:00:48.070
+aquí en el lado derecho
+
+17
+00:00:48.070 --> 00:00:50.550
+y el código en el lado izquierdo,
+
+18
+00:00:50.550 --> 00:00:53.950
+así que haré doble clic en eso y puedes ver que
+
+19
+00:00:53.950 --> 00:00:57.560
+Linux lo arregla muy bien para nosotros cuando hacemos eso.
+
+20
+00:00:57.560 --> 00:01:00.330
+Así que ahora tenemos el código aquí y vamos
+
+21
+00:01:00.330 --> 00:01:03.397
+a tener todo lo demás en el lado derecho.
+
+22
+00:01:03.397 --> 00:01:06.000
+Y así es, a medida que avancen, verán
+
+23
+00:01:06.000 --> 00:01:09.020
+cómo lo tengo configurado para el resto del curso.
+
+24
+00:01:09.020 --> 00:01:11.010
+Ahora, la otra cosa que vamos a hacer,
+
+25
+00:01:11.010 --> 00:01:14.520
+es configurar un corredor de tareas.
+
+26
+00:01:14.520 --> 00:01:16.280
+Ahora, si nunca has oído hablar de un corredor de tareas
+
+27
+00:01:16.280 --> 00:01:17.570
+esta perfectamente bien,
+
+28
+00:01:17.570 --> 00:01:19.200
+y para eso ya tengo este código
+
+29
+00:01:19.200 --> 00:01:21.290
+ya cargado aquí.
+
+30
+00:01:21.290 --> 00:01:24.240
+Y lo que podremos hacer
+
+31
+00:01:24.240 --> 00:01:25.810
+es poder escribir
+
+32
+00:01:25.810 --> 00:01:28.280
+código aquí en el lado izquierdo,
+
+33
+00:01:28.280 --> 00:01:32.090
+así que escribiré todo mi código en este archivo HTML
+
+34
+00:01:32.090 --> 00:01:34.450
+y luego cada vez presiono guardar,
+
+35
+00:01:34.450 --> 00:01:38.510
+se va a cargar automáticamente el navegador que tengo
+
+36
+00:01:38.510 --> 00:01:40.880
+abierto para lo que sea que esté trabajando.
+
+37
+00:01:40.880 --> 00:01:44.250
+Así que esto lo convierte en un entorno de trabajo muy
+
+38
+00:01:44.250 --> 00:01:47.120
+eficiente porque si no tuviera ese tipo de configuración
+
+39
+00:01:47.120 --> 00:01:49.240
+tendría que guardar el archivo aquí,
+
+40
+00:01:49.240 --> 00:01:52.510
+cambiar al navegador, pulsar actualizar
+
+41
+00:01:52.510 --> 00:01:54.770
+y ver si mi cambio funcionó o no.
+
+42
+00:01:54.770 --> 00:01:57.830
+Pero, en cambio, si configuro un corredor de tareas,
+
+43
+00:01:57.830 --> 00:02:01.370
+lo que sucederá es que se realizará
+
+44
+00:02:01.370 --> 00:02:04.490
+y observará todos los cambios que realice en este archivo
+
+45
+00:02:04.490 --> 00:02:08.118
+y luego volverá a cargar el navegador para que pueda verlo
+
+46
+00:02:08.118 --> 00:02:11.270
+en tiempo real mientras estoy construyendo mi aplicación.
+
+47
+00:02:11.270 --> 00:02:14.290
+Así que esta es una pequeña herramienta muy útil.
+
+48
+00:02:14.290 --> 00:02:17.860
+Así que haré algunos cambios antes de entrar
+
+49
+00:02:17.860 --> 00:02:20.080
+en la compilación de ese ejecutor de tareas.
+
+50
+00:02:20.080 --> 00:02:22.630
+Así que primero voy a cambiar esto en lugar
+
+51
+00:02:22.630 --> 00:02:24.150
+de decir hola flexbox,
+
+52
+00:02:24.150 --> 00:02:29.150
+voy a cambiarle el nombre y será index.html.
+
+53
+00:02:30.100 --> 00:02:32.580
+Y luego también voy
+
+54
+00:02:32.580 --> 00:02:36.000
+a tener un código HTML válido aquí.
+
+55
+00:02:36.000 --> 00:02:38.580
+Si siguió adelante cuando repasé
+
+56
+00:02:38.580 --> 00:02:41.050
+cómo agregar diferentes fragmentos de código que utilizo
+
+57
+00:02:41.050 --> 00:02:45.950
+si empiezo a escribir HTML y luego paso a HTML 5,
+
+58
+00:02:45.950 --> 00:02:48.760
+esto nos da nuestro texto aquí mismo.
+
+59
+00:02:48.760 --> 00:02:53.320
+Y así, ahora, este es realmente un código HTML válido.
+
+60
+00:02:53.320 --> 00:02:56.813
+Así que aquí puedo decir hola flexbox,
+
+61
+00:02:58.130 --> 00:03:02.340
+pulsar guardar, y ahora tenemos HTML válido aquí.
+
+62
+00:03:02.340 --> 00:03:03.980
+Y eso es necesario.
+
+63
+00:03:03.980 --> 00:03:07.840
+La sincronización del navegador no funcionará simplemente
+
+64
+00:03:07.840 --> 00:03:10.320
+con una simple etiqueta h1.
+
+65
+00:03:10.320 --> 00:03:14.910
+Se espera tener un documento HTML válido real para trabajar.
+
+66
+00:03:14.910 --> 00:03:16.840
+Así que ahora que tenemos esa configuración,
+
+67
+00:03:16.840 --> 00:03:20.017
+vamos y comencemos a instalar Gulp y las diferentes
+
+68
+00:03:20.017 --> 00:03:23.200
+herramientas que necesitamos para nuestras tareas.
+
+69
+00:03:23.200 --> 00:03:25.080
+Así que voy a abrir el terminal,
+
+70
+00:03:25.080 --> 00:03:28.310
+y técnicamente también podríamos hacer esto en el terminal
+
+71
+00:03:28.310 --> 00:03:30.060
+proporcionado por el código VS.
+
+72
+00:03:30.060 --> 00:03:31.710
+Pero al hacerlo de esta manera,
+
+73
+00:03:31.710 --> 00:03:33.792
+puedo hacer que se ejecute en segundo plano
+
+74
+00:03:33.792 --> 00:03:36.820
+y no ocupar ningún espacio en pantalla.
+
+75
+00:03:36.820 --> 00:03:40.340
+Así que me voy a cambiar al directorio,
+
+76
+00:03:40.340 --> 00:03:44.490
+así que, si no tiene un directorio de código
+
+77
+00:03:44.490 --> 00:03:46.840
+o si tiene el suyo guardado en un lugar diferente,
+
+78
+00:03:46.840 --> 00:03:49.900
+es posible que tenga que escribir algo un poco diferente.
+
+79
+00:03:49.900 --> 00:03:52.470
+Aumentaré el tamaño de letra aquí.
+
+80
+00:03:52.470 --> 00:03:57.400
+Y así tengo el mío ubicado en la raíz del sistema,
+
+81
+00:03:57.400 --> 00:04:00.168
+así puedo con barra diagonal de tilde
+
+82
+00:04:00.168 --> 00:04:03.578
+código barra diagonal de tilde curso flexbox,
+
+83
+00:04:03.578 --> 00:04:06.300
+y ahora he cambiado en ese directorio.
+
+84
+00:04:06.300 --> 00:04:10.692
+Si escribo LS puede ver que tenemos nuestro archivo HMTL de
+
+85
+00:04:10.692 --> 00:04:14.792
+índice allí. Y ahora vamos a usar NPM para instalar los
+
+86
+00:04:14.792 --> 00:04:18.780
+paquetes que necesitamos, así que puedo decir que NPM
+
+87
+00:04:18.780 --> 00:04:22.560
+instala y luego queremos tener algunos diferentes.
+
+88
+00:04:22.560 --> 00:04:24.510
+Necesitamos tener un gulp.
+
+89
+00:04:24.510 --> 00:04:27.890
+Luego necesitamos tener gulp guión CLI
+
+90
+00:04:27.890 --> 00:04:31.210
+y luego debemos tener sincronización de navegador.
+
+91
+00:04:31.210 --> 00:04:34.800
+Y así, cuando se estén instalando, explicaré
+
+92
+00:04:34.800 --> 00:04:36.830
+lo que están haciendo o lo que son.
+
+93
+00:04:36.830 --> 00:04:40.590
+Así que gulp es nuestro sistema de ejecución de tareas.
+
+94
+00:04:40.590 --> 00:04:43.580
+Entonces, es un módulo de nodo
+
+95
+00:04:43.580 --> 00:04:45.900
+que nos permitirá crear
+
+96
+00:04:45.900 --> 00:04:50.480 line:15% 
+observadores en varias tareas que se ejecutarán en nuestro
+
+97
+00:04:50.480 --> 00:04:52.380 line:15% 
+caso, vamos a configurar algo que vigilará
+
+98
+00:04:52.380 --> 00:04:54.740 line:15% 
+los cambios en un archivo HTML,
+
+99
+00:04:54.740 --> 00:04:57.950 line:15% 
+y luego los procesará.
+
+100
+00:04:57.950 --> 00:05:00.273 line:15% 
+Ahora la gulp CLI nos permite
+
+101
+00:05:00.273 --> 00:05:03.130 line:15% 
+ejecutar comandos aquí en el terminal.
+
+102
+00:05:03.130 --> 00:05:06.080 line:15% 
+Así que eso es necesario para que podamos iniciar el
+
+103
+00:05:06.080 --> 00:05:09.380 line:15% 
+proceso. Y luego la sincronización del navegador es nuestra
+
+104
+00:05:09.380 --> 00:05:12.635 line:15% 
+conexión con el navegador, así que eso es lo que va a
+
+105
+00:05:12.635 --> 00:05:16.618 line:15% 
+realizar esas recargas. Entonces, si todo funcionó y no
+
+106
+00:05:16.618 --> 00:05:19.160
+obtuvimos ningún error, parece que sí,
+
+107
+00:05:19.160 --> 00:05:21.810
+entonces podemos volver aquí
+
+108
+00:05:21.810 --> 00:05:25.430
+y veremos que hemos agregado algunos archivos nuevos.
+
+109
+00:05:25.430 --> 00:05:29.637
+Uno fue este paquete de archivos j-son, paquete de bloqueo
+
+110
+00:05:29.637 --> 00:05:32.011
+j-son. Y eso es lo que muestra todos los diferentes
+
+111
+00:05:32.011 --> 00:05:34.110
+paquetes que se instalaron.
+
+112
+00:05:34.110 --> 00:05:37.300
+Porque aunque solo seleccionamos tres paquetes,
+
+113
+00:05:37.300 --> 00:05:41.180
+esos tres contienen sus propios conjuntos de dependencia.
+
+114
+00:05:41.180 --> 00:05:42.590
+Así que eso es lo que hay.
+
+115
+00:05:42.590 --> 00:05:46.040
+Ahora los módulos de nodo es un directorio masivo que
+
+116
+00:05:46.040 --> 00:05:50.413
+incluye todo el código javascript que traga y la
+
+117
+00:05:50.413 --> 00:05:53.518
+sincronización del navegador y los tipos de herramientas que
+
+118
+00:05:53.518 --> 00:05:56.320
+usan. Ahora puede notar que tenemos
+
+119
+00:05:56.320 --> 00:05:58.140
+un pequeño problema aquí con Bit
+
+120
+00:05:58.140 --> 00:06:02.650
+donde cree que tenemos 5,000 cambios nuevos y,
+
+121
+00:06:02.650 --> 00:06:04.970
+por lo tanto, la mejor práctica,
+
+122
+00:06:04.970 --> 00:06:08.530
+y lo descubrirá cuando pase por el curso de Bit,
+
+123
+00:06:08.530 --> 00:06:11.990
+es no incluir estos controles de inversión.
+
+124
+00:06:11.990 --> 00:06:14.720
+Así que la forma en que puede hacerlo es creando un nuevo
+
+125
+00:06:14.720 --> 00:06:19.170
+archivo. No es un archivo nuevo dentro del módulo de nodo,
+
+126
+00:06:19.170 --> 00:06:21.130
+esto debe estar en la raíz del directorio,
+
+127
+00:06:21.130 --> 00:06:23.090
+así que cierre
+
+128
+00:06:23.090 --> 00:06:26.270
+y cree un nuevo archivo aquí llamado
+
+129
+00:06:26.270 --> 00:06:29.090
+punto, git, ignore
+
+130
+00:06:30.000 --> 00:06:33.400
+y dentro de aquí solo escriba
+
+131
+00:06:33.400 --> 00:06:36.450
+nodo, guión bajo, módulos
+
+132
+00:06:36.450 --> 00:06:37.810
+y presione guardar
+
+133
+00:06:37.810 --> 00:06:40.630
+y ya no será algo
+
+134
+00:06:40.630 --> 00:06:42.560
+que se compruebe en el control de desvío.
+
+135
+00:06:42.560 --> 00:06:45.500
+Lo que significa que cuando empujamos esto hacia github
+
+136
+00:06:45.500 --> 00:06:48.130
+no empujará este directorio de módulos de nodos,
+
+137
+00:06:48.130 --> 00:06:50.010
+que es lo que usted quiere porque,
+
+138
+00:06:50.010 --> 00:06:52.870
+debido a que tiene este paquete, el archivo de bloqueo j-son
+
+139
+00:06:52.870 --> 00:06:55.390
+siempre que ejecute la instalación de NPM,
+
+140
+00:06:55.390 --> 00:06:57.040
+los eliminará de todos modos,
+
+141
+00:06:57.040 --> 00:06:59.710
+así que ni siquiera necesitas tener esos.
+
+142
+00:06:59.710 --> 00:07:02.960
+Entonces, si vienes aquí a donde dice 5K,
+
+143
+00:07:02.960 --> 00:07:06.230
+puedes presionar actualizar y ahora
+
+144
+00:07:06.230 --> 00:07:08.410
+solo tienes que mostrar los cambios reales.
+
+145
+00:07:08.410 --> 00:07:11.570
+Así que eso es todo en ese lado.
+
+146
+00:07:11.570 --> 00:07:13.800
+Vamos a ver qué más tenemos que hacer.
+
+147
+00:07:13.800 --> 00:07:15.370
+Creo que somos buenos. Creo que
+
+148
+00:07:15.370 --> 00:07:19.610
+ahora podemos agregar nuestro corredor de tareas real.
+
+149
+00:07:19.610 --> 00:07:24.610
+Así que voy a crear un nuevo archivo, digamos gulp, file,
+
+150
+00:07:24.889 --> 00:07:29.889
+punto, js. Y dentro de aquí simplemente pegue este código.
+
+151
+00:07:30.040 --> 00:07:31.760
+Y lo he agregado a las notas de su programa
+
+152
+00:07:31.760 --> 00:07:34.550
+para que pueda pegarlo directamente,
+
+153
+00:07:34.550 --> 00:07:36.540
+lo veremos y le explicaré
+
+154
+00:07:36.540 --> 00:07:38.940
+exactamente lo que está haciendo.
+
+155
+00:07:38.940 --> 00:07:42.540
+Pero está trayendo estas dependencias.
+
+156
+00:07:42.540 --> 00:07:43.950
+Así que está trayendo gulp, trae
+
+157
+00:07:43.950 --> 00:07:46.760
+una sincronización del navegador, y luego la biblioteca de
+
+158
+00:07:46.760 --> 00:07:50.320
+recarga desde la sincronización del navegador.
+
+159
+00:07:50.320 --> 00:07:52.910
+Y luego desde allí estamos creando una tarea.
+
+160
+00:07:52.910 --> 00:07:55.520
+Así que va a crear una tarea llamada servir.
+
+161
+00:07:55.520 --> 00:07:57.160
+Entonces, lo que eso significa
+
+162
+00:07:57.160 --> 00:07:59.500
+es que podremos decir gulp verse,
+
+163
+00:07:59.500 --> 00:08:02.900
+y luego iniciará automáticamente esta función
+
+164
+00:08:02.900 --> 00:08:04.885
+donde se conecta a la sincronización del navegador
+
+165
+00:08:04.885 --> 00:08:08.020
+que está escuchando el directorio base
+
+166
+00:08:08.020 --> 00:08:10.610
+y que va a iniciar un pequeño servidor para nosotros.
+
+167
+00:08:10.610 --> 00:08:14.250
+Y luego vamos a tener gulp vigile
+
+168
+00:08:14.250 --> 00:08:17.170
+cualquier cambio en los archivos HTML y,
+
+169
+00:08:17.170 --> 00:08:21.950
+si hay cambios, se llamará "reload",
+
+170
+00:08:21.950 --> 00:08:25.010
+que si miras hasta la cima,
+
+171
+00:08:25.010 --> 00:08:28.030
+esa es la recarga que importamos allí.
+
+172
+00:08:28.030 --> 00:08:31.240
+Así que eso es lo que está haciendo nuestro archivo gulp.
+
+173
+00:08:31.240 --> 00:08:32.840
+Así que puedo cerrar esto.
+
+174
+00:08:32.840 --> 00:08:36.360
+Puedo ocultar ese lado izquierdo,
+
+175
+00:08:36.360 --> 00:08:38.840
+así que ahora puedes ver todo aquí.
+
+176
+00:08:38.840 --> 00:08:42.890
+Y ahora vamos a abrir la terminal de nuevo.
+
+177
+00:08:42.890 --> 00:08:45.522
+Y voy a reducirlo un poco.
+
+178
+00:08:45.522 --> 00:08:49.840
+Solo así, porque en realidad solo vamos a utilizar esto
+
+179
+00:08:49.840 --> 00:08:52.040
+como una tarea en segundo plano.
+
+180
+00:08:52.040 --> 00:08:54.050
+Así que voy a ahora,
+
+181
+00:08:54.050 --> 00:08:55.970
+asegúrate de que estás en el mismo directorio.
+
+182
+00:08:55.970 --> 00:08:58.590
+Puedes verificar eso escribiendo LS.
+
+183
+00:08:58.590 --> 00:09:02.055
+Puede ver nuestro archivo truculento y todos nuestros nuevos
+
+184
+00:09:02.055 --> 00:09:06.630
+archivos que agregamos. Y ahora puede decir gulp verse,
+
+185
+00:09:06.630 --> 00:09:09.230
+y si todo está instalado correctamente,
+
+186
+00:09:09.230 --> 00:09:12.890
+se abrirá automáticamente una nueva ventana del navegador
+
+187
+00:09:12.890 --> 00:09:16.260
+y comenzará a observar los cambios.
+
+188
+00:09:16.260 --> 00:09:18.400
+Así que voy a pulsar entrar.
+
+189
+00:09:18.400 --> 00:09:20.340
+Y parece que todo funcionó.
+
+190
+00:09:20.340 --> 00:09:23.330
+Así que puedes verlo incluso dice que está conectado a la
+
+191
+00:09:23.330 --> 00:09:26.307
+sincronización del navegador. Y ahora, si entro en el
+
+192
+00:09:26.307 --> 00:09:30.100
+archivo y ahora digo que creo una etiqueta de párrafo,
+
+193
+00:09:30.100 --> 00:09:32.740
+y digo algún contenido
+
+194
+00:09:34.390 --> 00:09:35.730
+y pulso guardar,
+
+195
+00:09:35.730 --> 00:09:38.600
+puede ver que eso se actualizó automáticamente.
+
+196
+00:09:38.600 --> 00:09:41.030
+No tuve que venir aquí y pulsar actualizar
+
+197
+00:09:41.030 --> 00:09:43.370
+justo cuando estoy haciendo los cambios.
+
+198
+00:09:43.370 --> 00:09:46.740
+Cada vez que presiono guardar el corredor de tareas gulp
+
+199
+00:09:46.740 --> 00:09:49.570
+se procesará y luego volverá
+
+200
+00:09:49.570 --> 00:09:52.570
+a cargar el navegador automáticamente.
+
+201
+00:09:52.570 --> 00:09:55.140
+Así que felicitaciones si pasaste por eso.
+
+202
+00:09:55.140 --> 00:09:59.180
+Ahora tiene configurado un corredor de tareas completo
+
+203
+00:09:59.180 --> 00:10:02.120
+y un tipo de configuración profesional
+
+204
+00:10:02.120 --> 00:10:04.200
+para su código frontal.
+
+205
+00:10:04.200 --> 00:10:07.080
+Ahora, si lo sigue y desea
+
+206
+00:10:07.080 --> 00:10:08.820
+colocarlo en github,
+
+207
+00:10:08.820 --> 00:10:10.650
+puede ingresar a la terminal,
+
+208
+00:10:10.650 --> 00:10:13.349
+puede detener el navegador o puede comenzar la tarea
+
+209
+00:10:13.349 --> 00:10:16.530
+escribiendo control C, que lo detendrá.
+
+210
+00:10:16.530 --> 00:10:19.570
+Y ahora puedes escribir obtener el estado.
+
+211
+00:10:19.570 --> 00:10:22.310
+Y puede ver todos los diferentes elementos
+
+212
+00:10:22.310 --> 00:10:24.220
+que se agregaron y cambiaron.
+
+213
+00:10:24.220 --> 00:10:27.780
+Y puede ver que eliminé el archivo hola flexbox
+
+214
+00:10:27.780 --> 00:10:32.050
+porque ahora estamos procesando todo en index.html.
+
+215
+00:10:32.050 --> 00:10:36.250
+Y, entonces, voy a decir git add todo
+
+216
+00:10:36.250 --> 00:10:39.160
+y luego git commit guión M,
+
+217
+00:10:39.160 --> 00:10:42.660
+y podemos decir gulp instalado
+
+218
+00:10:42.660 --> 00:10:45.023
+para la tarea en ejecución.
+
+219
+00:10:46.810 --> 00:10:50.430
+Y ahora solo teclea git push.
+
+220
+00:10:50.430 --> 00:10:52.420
+Y esto subirá a github
+
+221
+00:10:52.420 --> 00:10:56.300
+y podrás ver que todo está actualizado.
+
+222
+00:10:56.300 --> 00:10:58.020
+Entonces, si pulsa actualizar,
+
+223
+00:10:58.020 --> 00:11:00.210
+puede ver que tiene nuestro archivo gitignore,
+
+224
+00:11:00.210 --> 00:11:02.710
+nuestro archivo gulp, nuestro archivo de índice
+
+225
+00:11:02.710 --> 00:11:05.180
+y nuestro paquete de bloqueo j-son.
+
+226
+00:11:05.180 --> 00:11:06.940
+Así que estamos bien en nuestro camino.
+
+227
+00:11:06.940 --> 00:11:09.250
+Ahora tenemos nuestro sistema completamente configurado
+
+228
+00:11:09.250 --> 00:11:12.530
+para construir código del extremo frontal
+
+229
+00:11:12.530 --> 00:11:15.133
+y ahora podemos comenzar a aprender sobre flexbox.
+

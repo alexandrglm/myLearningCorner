@@ -1,0 +1,762 @@
+WEBVTT
+
+1
+00:00:00.640 --> 00:00:02.550
+<v Profesor>El proceso común que necesitarás</v>
+
+2
+00:00:02.550 --> 00:00:04.610
+llevar a cabo cuando trabajes con strings
+
+3
+00:00:04.610 --> 00:00:07.350
+es poder buscar dentro de ellas,
+
+4
+00:00:07.350 --> 00:00:09.490
+y te mostraré tres formas diferentes
+
+5
+00:00:09.490 --> 00:00:12.530
+de hacerlo en Python,
+
+6
+00:00:12.530 --> 00:00:15.620
+y después, cuando estudiemos temas más avanzados,
+
+7
+00:00:15.620 --> 00:00:19.450
+así como las expresiones regulares, necesitaremos regresar
+
+8
+00:00:19.450 --> 00:00:23.400
+y ver cómo las podemos utilizar,
+
+9
+00:00:23.400 --> 00:00:26.130
+las cuales, si no las conoces, no te preocupes.
+
+10
+00:00:26.130 --> 00:00:28.660
+Tendremos una sección entera dedicada a ellas.
+
+11
+00:00:28.660 --> 00:00:31.110
+Sin embargo, te estoy
+
+12
+00:00:31.110 --> 00:00:32.990
+anticipando
+
+13
+00:00:32.990 --> 00:00:36.393
+que te voy a abrir los caminos introductorios
+
+14
+00:00:36.393 --> 00:00:40.088
+para que puedas ver y filtrar contenido
+
+15
+00:00:40.088 --> 00:00:41.987
+y strings en Python por ahora, y más tarde,
+
+16
+00:00:41.987 --> 00:00:45.120
+te mostraré algunas alternativas también.
+
+17
+00:00:45.120 --> 00:00:47.820
+Tenemos nuestra oración justo aquí.
+
+18
+00:00:47.820 --> 00:00:50.690
+Te mostraré tres formas diferentes.
+
+19
+00:00:50.690 --> 00:00:54.300
+Las primera será con el método de encontrar.
+
+20
+00:00:54.300 --> 00:00:56.290
+La segunda será con el índice,
+
+21
+00:00:56.290 --> 00:01:00.300
+y la tercera será con el método de "in."
+
+22
+00:01:00.300 --> 00:01:03.320
+Y te explicaré el motivo
+
+23
+00:01:03.320 --> 00:01:05.070
+por el cual debes usar uno sobre otro.
+
+24
+00:01:05.070 --> 00:01:08.203
+Aquí, tenemos una búsqueda.
+
+25
+00:01:09.300 --> 00:01:12.300
+Y en esta búsqueda, primero requieres la oración.
+
+26
+00:01:12.300 --> 00:01:15.110
+Esta es la variable o la string.
+
+27
+00:01:15.110 --> 00:01:17.600
+Recuerda, que con la forma en que estas funcionan,
+
+28
+00:01:17.600 --> 00:01:21.820
+técnicamente, pudiera copiar esto y pegarlo aquí,
+
+29
+00:01:21.820 --> 00:01:25.040
+y luego requerir encontrarla, requerir a nuestra función.
+
+30
+00:01:25.040 --> 00:01:28.540
+Sin embargo, es mucho más limpio y profesional
+
+31
+00:01:28.540 --> 00:01:30.370
+requerir a la variable aquí.
+
+32
+00:01:30.370 --> 00:01:35.370
+Escribiré, sentence.find, y después "quick."
+
+33
+00:01:36.050 --> 00:01:37.410
+Y ahora,
+
+34
+00:01:37.410 --> 00:01:39.870
+si lo ejecuto,
+
+35
+00:01:39.870 --> 00:01:43.260
+ejecutaré una búsqueda de impresión.
+
+36
+00:01:43.260 --> 00:01:45.220
+Veamos lo que nos devuelve esto.
+
+37
+00:01:45.220 --> 00:01:49.170
+Si le doy a Enter, podrás ver que nos regresa un cuatro.
+
+38
+00:01:49.170 --> 00:01:51.340
+Eso es interesante,
+
+39
+00:01:51.340 --> 00:01:53.740
+porque le puse que encontrara a "quick,"
+
+40
+00:01:53.740 --> 00:01:55.610
+y lo que encontró fue cuatro.
+
+41
+00:01:55.610 --> 00:01:59.130
+¿Y qué representa ese cuatro aquí?
+
+42
+00:01:59.130 --> 00:02:03.840
+Bueno, el cuatro es el índice que encontró a "quick."
+
+43
+00:02:03.840 --> 00:02:08.180
+Aquí, la T comienza
+
+44
+00:02:08.180 --> 00:02:09.539
+en un índice cero.
+
+45
+00:02:09.539 --> 00:02:12.971
+Tenemos a cero, después, la H es uno,
+
+46
+00:02:12.971 --> 00:02:15.463
+hasta abajo en donde "quick"
+
+47
+00:02:15.463 --> 00:02:19.850
+es el cuarto índice dentro de la string.
+
+48
+00:02:19.850 --> 00:02:23.920
+Y así, esto está diciendo que, "sí, encontré la palabra
+
+49
+00:02:23.920 --> 00:02:25.790
+que buscabas," o, "encontré la string
+
+50
+00:02:25.790 --> 00:02:27.480
+que buscabas, "no tiene que ser una palabra.
+
+51
+00:02:27.480 --> 00:02:32.480
+Y si escribiera Q-U-I y lo ejecutara,
+
+52
+00:02:33.224 --> 00:02:36.700
+verás que me regresa exactamente el mismo valor.
+
+53
+00:02:36.700 --> 00:02:40.610
+Simplemente está en la búsqueda de una string coincidente,
+
+54
+00:02:40.610 --> 00:02:43.830
+y si te interesa la terminología formal de ciencias
+
+55
+00:02:43.830 --> 00:02:47.200
+de la computación, a esto se le llama substring.
+
+56
+00:02:47.200 --> 00:02:51.120
+Es una string dentro de otra string
+
+57
+00:02:51.120 --> 00:02:52.360
+que estamos buscando.
+
+58
+00:02:52.360 --> 00:02:56.630
+Esto regresará el valor índice.
+
+59
+00:02:56.630 --> 00:03:01.630
+Ahora, tenemos otro, lo rellenaré.
+
+60
+00:03:01.700 --> 00:03:04.840
+Lo copiaré y lo comentaré.
+
+61
+00:03:04.840 --> 00:03:09.680
+También tenemos esta función de índice aquí.
+
+62
+00:03:09.680 --> 00:03:14.500
+Y si ejecuto esto, verás que me regresa exactamente
+
+63
+00:03:14.500 --> 00:03:16.410
+el mismo valor.
+
+64
+00:03:16.410 --> 00:03:20.440
+El índice está encontrando exactamente de la misma manera
+
+65
+00:03:20.440 --> 00:03:22.340
+en que nuestra función de encontrar funcionó.
+
+66
+00:03:22.340 --> 00:03:25.700
+Sin embargo, existe una diferencia bien importante
+
+67
+00:03:25.700 --> 00:03:29.590
+entre los dos, y el índice, tendrás que ser cuidadoso
+
+68
+00:03:29.590 --> 00:03:31.370
+cuando uses esto.
+
+69
+00:03:31.370 --> 00:03:34.430
+Hay ocasiones para usarlo, y las explicaremos más tarde,
+
+70
+00:03:34.430 --> 00:03:36.220
+cuando expliquemos los algoritmos.
+
+71
+00:03:36.220 --> 00:03:41.220
+El índice dará un error si no puede encontrar el valor,
+
+72
+00:03:41.400 --> 00:03:45.070
+sin embargo, encontrar, simplemente regresa un uno negativo.
+
+73
+00:03:45.070 --> 00:03:49.660
+Aquí, haré el segundo,
+
+74
+00:03:49.660 --> 00:03:54.652
+llamado query_two, y después,
+
+75
+00:03:56.136 --> 00:03:59.100
+lo voy a imprimir.
+
+76
+00:03:59.100 --> 00:04:01.300
+Justo aquí, como podrás decir,
+
+77
+00:04:01.300 --> 00:04:02.892
+le daré a Limpiar.
+
+78
+00:04:02.892 --> 00:04:04.683
+Ambos funcionan exactamente de la misma
+
+79
+00:04:04.683 --> 00:04:09.350
+manera, porque encontraron a "quick" dentro de la oración.
+
+80
+00:04:09.350 --> 00:04:13.240
+Sin embargo, si cambio esto
+
+81
+00:04:13.240 --> 00:04:16.150
+para "oops," el cual no está contenido
+
+82
+00:04:16.150 --> 00:04:20.280
+en ninguna parte, e intento ejecutarlo, nos da un error.
+
+83
+00:04:20.280 --> 00:04:25.280
+Y si comento el método del índice aquí,
+
+84
+00:04:25.960 --> 00:04:27.330
+le doy a Limpiar,
+
+85
+00:04:27.330 --> 00:04:28.980
+verás que funcionó.
+
+86
+00:04:28.980 --> 00:04:32.550
+Encontrar, cuando busca un valor
+
+87
+00:04:32.550 --> 00:04:35.860
+que no encuentra dentro de una string,
+
+88
+00:04:35.860 --> 00:04:38.870
+te regresará un uno negativo.
+
+89
+00:04:38.870 --> 00:04:43.060
+Y si le pasa lo mismo al índice,
+
+90
+00:04:43.060 --> 00:04:45.517
+en el que le pases un valor que no está contenido
+
+91
+00:04:45.517 --> 00:04:49.080
+dentro del string, te da un error.
+
+92
+00:04:49.080 --> 00:04:52.330
+Y así, esa es la diferencia más importante
+
+93
+00:04:52.330 --> 00:04:54.330
+entre usar esos dos.
+
+94
+00:04:54.330 --> 00:04:56.598
+Y, como dije, más tarde, hablaremos sobre
+
+95
+00:04:56.598 --> 00:04:58.980
+cuándo es correcto usar el índice.
+
+96
+00:04:58.980 --> 00:05:02.150
+Y ahora que tienes estos dos completados,
+
+97
+00:05:02.150 --> 00:05:04.350
+avancemos a la tercera opción,
+
+98
+00:05:04.350 --> 00:05:08.580
+y esta es técnicamente la preferida
+
+99
+00:05:08.580 --> 00:05:10.380
+por los desarrolladores de Python.
+
+100
+00:05:10.380 --> 00:05:13.600
+Quería mostrarte todas las variaciones diferentes.
+
+101
+00:05:13.600 --> 00:05:16.025
+Sin embargo, esta última
+
+102
+00:05:16.025 --> 00:05:21.000
+es la que más te encontrarás cuando uses el programa Python.
+
+103
+00:05:21.000 --> 00:05:24.270
+Y se le llama: el operador "in."
+
+104
+00:05:24.270 --> 00:05:29.260
+Tengo una búsqueda. Y le puedo pasar un valor.
+
+105
+00:05:29.260 --> 00:05:32.930
+Pudiera pasarle a "quick," o pudiera pasarle a "fox."
+
+106
+00:05:32.930 --> 00:05:33.780
+Cualquier cosa como esa.
+
+107
+00:05:33.780 --> 00:05:38.370
+Entonces, escribiré fox in sentence.
+
+108
+00:05:38.370 --> 00:05:42.263
+Y ahora, si imprimo esto...
+
+109
+00:05:43.670 --> 00:05:47.690
+Ahora, puedo ejecutarlo, y se imprime como "true."
+
+110
+00:05:47.690 --> 00:05:52.690
+Y si le pasara algo como "oops,"
+
+111
+00:05:52.810 --> 00:05:56.300
+pasará, o regresará que el valor es, "false."
+
+112
+00:05:56.300 --> 00:05:59.340
+Y así, tienes tres versiones diferentes.
+
+113
+00:05:59.340 --> 00:06:02.420
+Si este encuentra un valor, regresará el índice
+
+114
+00:06:02.420 --> 00:06:07.370
+de dónde esa string se descubrió por primera vez.
+
+115
+00:06:07.370 --> 00:06:10.540
+El índice lo hará también, pero se meterá en el medio,
+
+116
+00:06:10.540 --> 00:06:13.330
+y causará que tu programa entero se detenga si intentas
+
+117
+00:06:13.330 --> 00:06:16.760
+ejecutarlo, y eso significaría que tu sitio web entero
+
+118
+00:06:16.760 --> 00:06:18.276
+se le bloquearía a cualquier usuario
+
+119
+00:06:18.276 --> 00:06:20.570
+que tratara de entrar en él.
+
+120
+00:06:20.570 --> 00:06:23.380
+Tienes que tener mucho cuidado cuando uses el índice.
+
+121
+00:06:23.380 --> 00:06:25.710
+Pero "in" es de mucha ayuda,
+
+122
+00:06:25.710 --> 00:06:27.270
+y es la razón por la cual es considerado
+
+123
+00:06:27.270 --> 00:06:31.830
+el método preferido, y porque no le interesará
+
+124
+00:06:31.830 --> 00:06:34.880
+un "true" o un "false," o, no le interesará un índice.
+
+125
+00:06:34.880 --> 00:06:37.630
+Solo le importan los valores "true" o "false."
+
+126
+00:06:37.630 --> 00:06:41.490
+Y, típicamente, y esta es mi experiencia,
+
+127
+00:06:41.490 --> 00:06:45.470
+pero además es la mejor práctica en la industria,
+
+128
+00:06:45.470 --> 00:06:48.030
+típicamente, cuando estés revisando
+
+129
+00:06:48.030 --> 00:06:51.860
+si un valor se encuentra dentro de una string,
+
+130
+00:06:51.860 --> 00:06:54.490
+no importará el valor del índice.
+
+131
+00:06:54.490 --> 00:06:58.500
+Y así, habrá veces en que querrás saber eso,
+
+132
+00:06:58.500 --> 00:07:01.470
+en donde querrás reemplazarlo, o comenzar un arreglo,
+
+133
+00:07:01.470 --> 00:07:02.790
+o algo así.
+
+134
+00:07:02.790 --> 00:07:06.170
+Sin embargo, usualmente, solo querrás saber si una string
+
+135
+00:07:06.170 --> 00:07:08.550
+contiene una substring,
+
+136
+00:07:08.550 --> 00:07:11.790
+lo cual es exactamente lo que está ocurriendo aquí.
+
+137
+00:07:11.790 --> 00:07:13.820
+Es un patrón muy común.
+
+138
+00:07:13.820 --> 00:07:15.850
+No nos hemos metido aún en las condicionales,
+
+139
+00:07:15.850 --> 00:07:17.630
+pero algo que verás muy a menudo
+
+140
+00:07:17.630 --> 00:07:19.660
+es el código escrito de esta manera,
+
+141
+00:07:19.660 --> 00:07:23.792
+en donde escribimos algo como...
+
+142
+00:07:23.792 --> 00:07:26.430
+Y puedo tomar este código entero de aquí.
+
+143
+00:07:26.430 --> 00:07:29.550
+Pudiera decir, si "oops" se encuentra en la oración
+
+144
+00:07:29.550 --> 00:07:33.800
+quiero que realices esta tarea de aquí.
+
+145
+00:07:33.800 --> 00:07:36.160
+¿Notaste cuán limpio y bien sale eso?
+
+146
+00:07:36.160 --> 00:07:37.810
+Una vez que estudiemos las condicionales,
+
+147
+00:07:37.810 --> 00:07:39.740
+usaremos a "in" a menudo,
+
+148
+00:07:39.740 --> 00:07:42.370
+y este es un patrón que verás
+
+149
+00:07:42.370 --> 00:07:44.120
+seguido en el desarrollo de Python.
+
+150
+00:07:44.120 --> 00:07:47.620
+Y date cuenta de cuán diferente esto hubiera sido
+
+151
+00:07:47.620 --> 00:07:51.100
+si hubiésemos usado "encontrar" o "índice."
+
+152
+00:07:51.100 --> 00:07:53.690
+Tendrás que escribir tu código así,
+
+153
+00:07:53.690 --> 00:07:58.690
+en donde podré copiar esto, y deshacerme de todo aquí,
+
+154
+00:07:59.830 --> 00:08:03.440
+meterlo entre comillas, o paréntesis,
+
+155
+00:08:03.440 --> 00:08:04.350
+y no te preocupes sobre esto.
+
+156
+00:08:04.350 --> 00:08:06.220
+Estudiaremos las condicionales
+
+157
+00:08:06.220 --> 00:08:07.940
+en su propia sección dedicada,
+
+158
+00:08:07.940 --> 00:08:11.240
+aunque solo quería mostrarte cuán limpia
+
+159
+00:08:11.240 --> 00:08:13.920
+es la sintaxis "in," comparada con esto.
+
+160
+00:08:13.920 --> 00:08:17.580
+Y aquí escribo if sentence.find
+
+161
+00:08:17.580 --> 00:08:22.080
+no es igual a uno negativo,
+
+162
+00:08:22.080 --> 00:08:25.817
+y ahora quiero que apliques la magia que tienes
+
+163
+00:08:25.817 --> 00:08:27.850
+dentro de tu condicional.
+
+164
+00:08:27.850 --> 00:08:32.160
+Esto no es fácil, comparado a leer
+
+165
+00:08:32.160 --> 00:08:36.610
+o a decir, "bueno, ¿esto es una string,
+
+166
+00:08:36.610 --> 00:08:41.080
+o esta string se podrá encontrar dentro de la oración?"
+
+167
+00:08:41.080 --> 00:08:44.090
+Porque si lo fuera, quiero que ejecutes todas estas tareas.
+
+168
+00:08:44.090 --> 00:08:46.160
+Si no lo es, no las hagas.
+
+169
+00:08:46.160 --> 00:08:48.600
+Es una manera muy limpia,
+
+170
+00:08:48.600 --> 00:08:50.170
+y la verás bien a menudo
+
+171
+00:08:50.170 --> 00:08:52.500
+en el desarrollo moderno de Python.
+
+172
+00:08:52.500 --> 00:08:54.970
+También verás otras opciones,
+
+173
+00:08:54.970 --> 00:08:58.360
+también existen otros programas Python que utilizo
+
+174
+00:08:58.360 --> 00:09:01.540
+que usan "find" e "index,"
+
+175
+00:09:01.540 --> 00:09:03.960
+y chequean el uno negativo, y hacen ese tipo de tareas.
+
+176
+00:09:03.960 --> 00:09:06.220
+Los verás, y es parte de la razón por la que quería
+
+177
+00:09:06.220 --> 00:09:08.580
+introducírtelos ahora.
+
+178
+00:09:08.580 --> 00:09:12.040
+Sin embargo, todo este curso está basado
+
+179
+00:09:12.040 --> 00:09:14.790
+en no solo aprender cómo programar
+
+180
+00:09:14.790 --> 00:09:16.530
+y aprender cómo edificar programas de Python,
+
+181
+00:09:16.530 --> 00:09:17.363
+sino también, cómo seguir
+
+182
+00:09:17.363 --> 00:09:20.420
+las mejores prácticas de la industria
+
+183
+00:09:20.420 --> 00:09:24.130
+usando un código parecido a este.
+
+184
+00:09:24.130 --> 00:09:26.620
+Si intentas localizar un substring,
+
+185
+00:09:26.620 --> 00:09:29.670
+el utilizar la sintaxis "in" siempre será
+
+186
+00:09:29.670 --> 00:09:31.130
+tu mejor opción.
+
+187
+00:09:31.130 --> 00:09:34.060
+En resumen, tenemos tres maneras distintas
+
+188
+00:09:34.060 --> 00:09:38.290
+de encontrar una string dentro de Python.
+
+189
+00:09:38.290 --> 00:09:41.690
+Podemos usar el método de "encontrar," el "índice,"
+
+190
+00:09:41.690 --> 00:09:43.563
+o podríamos usar "in."
+

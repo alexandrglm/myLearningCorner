@@ -1,0 +1,1234 @@
+WEBVTT
+
+1
+00:00:01.130 --> 00:00:03.500
+<v Narrador>Estoy muy emocionado con las próximas guías</v>
+
+2
+00:00:03.500 --> 00:00:05.070
+porque estas próximas guías
+
+3
+00:00:05.070 --> 00:00:09.620
+van a repasar la interpolación de cadenas en Python.
+
+4
+00:00:09.620 --> 00:00:13.330
+La interpolación de cadenas, es muy grande,
+
+5
+00:00:13.330 --> 00:00:16.690
+si nunca has oído hablar de ella, una palabra muy aterradora
+
+6
+00:00:16.690 --> 00:00:19.830
+pero tiene un objetivo bastante básico
+
+7
+00:00:19.830 --> 00:00:22.150
+que es darte la habilidad
+
+8
+00:00:22.150 --> 00:00:25.500
+para ejecutar código Python dentro de las cadenas.
+
+9
+00:00:25.500 --> 00:00:28.450
+Y la razón por la que estoy tan entusiasmado con estas guías
+
+10
+00:00:28.450 --> 00:00:30.960
+es porque creo que vas a ver
+
+11
+00:00:30.960 --> 00:00:34.850
+un camino muy práctico para esta función
+
+12
+00:00:34.850 --> 00:00:38.430
+y cómo se puede utilizar en aplicaciones del mundo real
+
+13
+00:00:38.430 --> 00:00:41.720
+ya que es bastante raro que las aplicaciones
+
+14
+00:00:41.720 --> 00:00:43.900
+que vas a construir sean estáticas.
+
+15
+00:00:43.900 --> 00:00:45.560
+Lo que significa que va a ser raro
+
+16
+00:00:45.560 --> 00:00:48.547
+que simplemente vas a tener cadenas de código duro
+
+17
+00:00:48.547 --> 00:00:51.410
+en tus aplicaciones que no cambian.
+
+18
+00:00:51.410 --> 00:00:54.620
+En su lugar, puedes tener algún contacto de cadena,
+
+19
+00:00:54.620 --> 00:00:57.000
+de modo que puedes tener algunos elementos que están
+
+20
+00:00:57.000 --> 00:00:58.708
+codificados y luego tiene otros elementos
+
+21
+00:00:58.708 --> 00:01:00.190
+que van a ser dinámicos.
+
+22
+00:01:00.190 --> 00:01:03.010
+Van a cambiar basados en el comportamiento del usuario
+
+23
+00:01:03.010 --> 00:01:05.243
+y eso es lo que la interpolación de cadenas
+
+24
+00:01:05.243 --> 00:01:06.840
+nos permite hacer.
+
+25
+00:01:06.840 --> 00:01:10.860
+Estoy usando Vim y la terminal
+
+26
+00:01:10.860 --> 00:01:13.830
+en esta guía y hay algunas razones para ello.
+
+27
+00:01:13.830 --> 00:01:17.150
+Uno, quiero ilustrar que puedes correr
+
+28
+00:01:17.150 --> 00:01:20.550
+este tipo de código en cualquier tipo de entorno
+
+29
+00:01:20.550 --> 00:01:22.850
+que puedes ejecutar código Python 3.
+
+30
+00:01:22.850 --> 00:01:25.580
+Aún puedes ejecutar todos estos scripts
+
+31
+00:01:25.580 --> 00:01:27.070
+dentro de Repl.it.
+
+32
+00:01:27.070 --> 00:01:30.470
+Puedes hacer esto simplemente en el entorno
+
+33
+00:01:30.470 --> 00:01:33.080
+Repl normal, aquí mismo en la terminal.
+
+34
+00:01:33.080 --> 00:01:35.820
+Podrías crear los guiones dentro de Atom
+
+35
+00:01:35.820 --> 00:01:37.930
+o Texto Sublime y luego ejecutarlos
+
+36
+00:01:37.930 --> 00:01:39.155
+en la terminal.
+
+37
+00:01:39.155 --> 00:01:41.132
+Hay muchas maneras de hacer esto
+
+38
+00:01:41.132 --> 00:01:43.700
+y quiero mostrarte un número de ellos
+
+39
+00:01:43.700 --> 00:01:45.722
+para que no importa lo que pase
+
+40
+00:01:45.722 --> 00:01:47.200
+su entorno de desarrollo,
+
+41
+00:01:47.200 --> 00:01:49.760
+vas a estar cómodo siguiéndolo.
+
+42
+00:01:49.760 --> 00:01:52.466
+Y otra razón es porque esto
+
+43
+00:01:52.466 --> 00:01:56.400
+que vamos a discutir, es muy moderno.
+
+44
+00:01:56.400 --> 00:02:01.190
+Así que en el momento de grabar esto la forma en que
+
+45
+00:02:01.190 --> 00:02:05.217
+voy a implementar la interpolación de cadenas ni siquiera
+
+46
+00:02:05.217 --> 00:02:08.730
+funciona correctamente en algunos tipos de ambientes.
+
+47
+00:02:08.730 --> 00:02:11.638
+Seguirá funcionando, mientras pueda ejecutar
+
+48
+00:02:11.638 --> 00:02:15.920
+código Python 3.6. o por encima de eso va a funcionar
+
+49
+00:02:15.920 --> 00:02:17.780
+pero algunos de los ambientes,
+
+50
+00:02:17.780 --> 00:02:20.500
+tales como Repl.it dan pequeñas advertencias.
+
+51
+00:02:20.500 --> 00:02:22.310
+Y las advertencias no son porque
+
+52
+00:02:22.310 --> 00:02:23.700
+estás escribiendo mal el código.
+
+53
+00:02:23.700 --> 00:02:26.022
+Es simplemente porque no han actualizado
+
+54
+00:02:26.022 --> 00:02:29.260
+su sistema y podrías recibir una advertencia.
+
+55
+00:02:29.260 --> 00:02:34.030
+Seguirá funcionando porque es un código Python 3.6 válido,
+
+56
+00:02:34.030 --> 00:02:36.320
+sino porque es tan moderno, no todos
+
+57
+00:02:36.320 --> 00:02:39.730
+los que está ahí fuera está al día.
+
+58
+00:02:39.730 --> 00:02:41.170
+Así que esa es una de las otras razones
+
+59
+00:02:41.170 --> 00:02:43.450
+por la que quiero enseñártelo aquí.
+
+60
+00:02:43.450 --> 00:02:46.210
+Y por último, otra razón es porque
+
+61
+00:02:46.210 --> 00:02:48.370
+tengo una serie de preguntas de estudiantes
+
+62
+00:02:48.370 --> 00:02:51.310
+que me preguntan cómo me gusta trabajar
+
+63
+00:02:51.310 --> 00:02:55.448
+y por lo tanto este es el mismo entorno que construyo
+
+64
+00:02:55.448 --> 00:02:59.130
+cuando estoy desarrollando para mis propios proyectos.
+
+65
+00:02:59.130 --> 00:03:01.505
+Me gusta usar herramientas como Vim
+
+66
+00:03:01.505 --> 00:03:03.796
+y tener el terminal abierto
+
+67
+00:03:03.796 --> 00:03:05.638
+para que pueda probar todo mi código
+
+68
+00:03:05.638 --> 00:03:08.780
+y esta es la interfaz que personalmente me gusta.
+
+69
+00:03:08.780 --> 00:03:10.240
+Eso no significa que tengas que copiarlo.
+
+70
+00:03:10.240 --> 00:03:13.540
+Deberías encontrar lo que funciona mejor para ti
+
+71
+00:03:13.540 --> 00:03:15.970
+pero esta es mi preferencia personal.
+
+72
+00:03:15.970 --> 00:03:17.660
+Así que con todo eso dicho,
+
+73
+00:03:17.660 --> 00:03:20.468
+ahora vamos a empezar a escribir
+
+74
+00:03:20.468 --> 00:03:23.410
+nuestro primer código de interpolación de cadenas.
+
+75
+00:03:23.410 --> 00:03:27.260
+Así que la interpolación de cadenas a un nivel muy alto
+
+76
+00:03:27.260 --> 00:03:30.520
+simplemente nos permite procesar el código Python
+
+77
+00:03:30.520 --> 00:03:31.980
+dentro de las cuerdas.
+
+78
+00:03:31.980 --> 00:03:33.806
+Así que comencemos con un ejemplo básico
+
+79
+00:03:33.806 --> 00:03:36.670
+como proporcionar una variable
+
+80
+00:03:36.670 --> 00:03:39.120
+y asignarle un nombre.
+
+81
+00:03:39.120 --> 00:03:41.245
+Así que voy a decir que el nombre es igual
+
+82
+00:03:41.245 --> 00:03:42.703
+a la cadena Kristine.
+
+83
+00:03:42.703 --> 00:03:45.410
+Y ahora voy a saludar
+
+84
+00:03:45.410 --> 00:03:48.010
+y la forma en que vas a hacer esto
+
+85
+00:03:48.010 --> 00:03:50.220
+y la sintaxis correcta es que vas a empezar
+
+86
+00:03:50.220 --> 00:03:54.870
+con la letra F y luego inicie la cadena.
+
+87
+00:03:54.870 --> 00:03:58.570
+Así que voy a decir "F" y luego una comilla
+
+88
+00:03:58.570 --> 00:04:02.400
+seguido de "hola" y luego la forma en que puedes
+
+89
+00:04:02.400 --> 00:04:04.270
+implementar la interpolación de cadenas
+
+90
+00:04:04.270 --> 00:04:06.146
+es con un solo corchete
+
+91
+00:04:06.146 --> 00:04:09.143
+y entonces puedes procesar cualquier tipo de código Python
+
+92
+00:04:09.143 --> 00:04:12.100
+que quieres justo dentro de esto.
+
+93
+00:04:12.100 --> 00:04:14.307
+Así que voy a guardar esto.
+
+94
+00:04:14.307 --> 00:04:16.260
+Y probablemente queramos imprimirlo,
+
+95
+00:04:16.260 --> 00:04:18.218
+sólo para que puedas ver cómo es.
+
+96
+00:04:18.218 --> 00:04:21.270
+Así que voy a guardar y cambiarlo.
+
+97
+00:04:21.270 --> 00:04:24.210
+Ahora, si estás siguiendo por primera vez
+
+98
+00:04:24.210 --> 00:04:26.580
+en el terminal en lugar de Repl.it
+
+99
+00:04:26.580 --> 00:04:30.470
+entonces, si recuerdas volver a las guías de configuración,
+
+100
+00:04:30.470 --> 00:04:32.950
+la forma en que puedes procesar tu código Python
+
+101
+00:04:32.950 --> 00:04:36.375
+es tecleando Python y dependiendo
+
+102
+00:04:36.375 --> 00:04:38.460
+de cuántas versiones tienes
+
+103
+00:04:38.460 --> 00:04:40.940
+y cuál es tu versión por defecto en tu sistema
+
+104
+00:04:40.940 --> 00:04:44.260
+puede que tengas que escribir Python 3.
+
+105
+00:04:44.260 --> 00:04:45.960
+La forma en que puedes contar tu versión
+
+106
+00:04:45.960 --> 00:04:49.820
+es escribir la palabra Python y pulsar volver
+
+107
+00:04:49.820 --> 00:04:52.680
+y te va a mostrar, justo arriba,
+
+108
+00:04:52.680 --> 00:04:55.570
+qué versión de Python estás usando.
+
+109
+00:04:55.570 --> 00:05:00.274
+Ahora bien, si tu versión dice Python 2.7
+
+110
+00:05:00.274 --> 00:05:03.060
+o una versión inferior
+
+111
+00:05:03.060 --> 00:05:07.450
+que cualquier cosa que sea 3.6 entonces este código
+
+112
+00:05:07.450 --> 00:05:09.550
+que estamos construyendo no funcionará
+
+113
+00:05:09.550 --> 00:05:13.161
+y puede que tengas que escribir Python 3
+
+114
+00:05:13.161 --> 00:05:15.440
+y entonces verás que tienes
+
+115
+00:05:15.440 --> 00:05:17.180
+la versión correcta configurada.
+
+116
+00:05:17.180 --> 00:05:21.000
+Si no lo haces, te recomiendo que pases
+
+117
+00:05:21.000 --> 00:05:23.700
+por las guías y te mostrará cómo configurar tu sistema
+
+118
+00:05:23.700 --> 00:05:25.900
+o utiliza una herramienta como Repl.it
+
+119
+00:05:25.900 --> 00:05:28.230
+que ejecutará este código para ti.
+
+120
+00:05:28.230 --> 00:05:31.700
+Porque tengo Python 3.6 configurado por defecto,
+
+121
+00:05:31.700 --> 00:05:36.580
+entonces puedo dirigir Python y luego simplemente pasar
+
+122
+00:05:36.580 --> 00:05:38.600
+la ruta a este archivo.
+
+123
+00:05:38.600 --> 00:05:41.600
+Tengo esta ruta dentro de un directorio
+
+124
+00:05:41.600 --> 00:05:46.005
+así que tengo un directorio llamado C_Strings.
+
+125
+00:05:46.005 --> 00:05:49.540
+Y luego tengo un archivo llamado interpolación.
+
+126
+00:05:49.540 --> 00:05:52.230
+Ahora todo lo que tengo que hacer es eso
+
+127
+00:05:52.230 --> 00:05:55.070
+y imprime "hola Kristine"
+
+128
+00:05:55.070 --> 00:05:56.929
+así que todo está funcionando bien.
+
+129
+00:05:56.929 --> 00:06:00.210
+Una vez más, si no tienes Python 3
+
+130
+00:06:00.210 --> 00:06:04.160
+por defecto, simplemente escribe Python 3
+
+131
+00:06:04.160 --> 00:06:08.670
+y funciona exactamente de la misma manera.
+
+132
+00:06:08.670 --> 00:06:12.490
+Así es como se puede usar un formulario muy básico
+
+133
+00:06:12.490 --> 00:06:15.080
+de interpolación de cadenas en Python.
+
+134
+00:06:15.080 --> 00:06:17.410
+Ahora hay un par de cosas a tener en cuenta aquí mismo.
+
+135
+00:06:17.410 --> 00:06:22.183
+Una es que el nombre simplemente está llamando al nombre
+
+136
+00:06:22.183 --> 00:06:24.960
+de la variable Python que tenemos aquí mismo.
+
+137
+00:06:24.960 --> 00:06:28.580
+Técnicamente, puedo ejecutar cualquier código Python que
+
+138
+00:06:28.580 --> 00:06:30.770
+quiera dentro de este corchete.
+
+139
+00:06:30.770 --> 00:06:34.120
+Si quiero decir hola 2+2
+
+140
+00:06:34.120 --> 00:06:36.370
+y estoy haciendo una ecuación real,
+
+141
+00:06:36.370 --> 00:06:38.960
+estoy haciendo una ecuación matemática,
+
+142
+00:06:38.960 --> 00:06:43.820
+si ejecuto esto entonces puedes ver que dice "Hola 4".
+
+143
+00:06:43.820 --> 00:06:45.690
+Así que es sólo un ejemplo de cómo mostrar
+
+144
+00:06:45.690 --> 00:06:48.710
+que cualquier cosa dentro de estos corchetes
+
+145
+00:06:48.710 --> 00:06:51.350
+va a ser analizado y tratado
+
+146
+00:06:51.350 --> 00:06:53.530
+como un guión de Python,
+
+147
+00:06:53.530 --> 00:06:56.850
+que es una pequeña herramienta muy útil.
+
+148
+00:06:56.850 --> 00:06:59.210
+Ahora, si vuelvo aquí,
+
+149
+00:06:59.210 --> 00:07:02.510
+quiero mostrarte algunos otros ejemplos
+
+150
+00:07:02.510 --> 00:07:06.491
+y uno, es que te habrás dado cuenta de que tenemos
+
+151
+00:07:06.491 --> 00:07:08.138
+los corchetes justo aquí.
+
+152
+00:07:08.138 --> 00:07:12.800
+Esto es exactamente lo que el intérprete de Python busca
+
+153
+00:07:12.800 --> 00:07:16.880
+para saber cada vez que lanzas la bandera F,
+
+154
+00:07:16.880 --> 00:07:18.310
+que es la bandera de formato.
+
+155
+00:07:18.310 --> 00:07:19.770
+Cuando sea que estés tirando eso,
+
+156
+00:07:19.770 --> 00:07:22.270
+Python va a buscar automáticamente los corchetes
+
+157
+00:07:22.270 --> 00:07:24.500
+porque sabe que quieres actuar
+
+158
+00:07:24.500 --> 00:07:26.030
+interpolación de cadenas.
+
+159
+00:07:26.030 --> 00:07:29.930
+Sin embargo, ¿qué pasa si realmente quieres
+
+160
+00:07:29.930 --> 00:07:31.910
+imprimir unos corchetes?
+
+161
+00:07:31.910 --> 00:07:35.410
+Así que puedes pensar que haces algo como esto así
+
+162
+00:07:35.410 --> 00:07:37.760
+que di que tengo una entrada en el blog y digo
+
+163
+00:07:37.760 --> 00:07:42.760
+esta es mi entrada en el blog.
+
+164
+00:07:45.260 --> 00:07:50.260
+Y dentro del soporte quiero envolverlos de esta manera
+
+165
+00:07:52.680 --> 00:07:55.120
+sólo porque esa es la forma en que quiero que aparezca
+
+166
+00:07:55.120 --> 00:07:56.890
+cuando lo estoy imprimiendo.
+
+167
+00:07:56.890 --> 00:07:59.660
+Y eso, puedes pensar que eso funcionaría
+
+168
+00:07:59.660 --> 00:08:01.120
+e imprimiría los corchetes
+
+169
+00:08:01.120 --> 00:08:04.390
+pero vamos a tener un pequeño problema
+
+170
+00:08:04.390 --> 00:08:05.500
+si intentamos esto.
+
+171
+00:08:05.500 --> 00:08:07.670
+Así que si ejecuto esto, puedes ver que tenemos un error
+
+172
+00:08:07.670 --> 00:08:10.329
+y dice que el nombres de corchete no está definido.
+
+173
+00:08:10.329 --> 00:08:13.490
+Y el problema que tenemos aquí es que
+
+174
+00:08:13.490 --> 00:08:17.570
+los corchetes en realidad lo son, y la palabra corchete,
+
+175
+00:08:17.570 --> 00:08:21.200
+está siendo tratado por Python como una variable o función.
+
+176
+00:08:21.200 --> 00:08:23.650
+Está buscando un objeto Python
+
+177
+00:08:23.650 --> 00:08:26.860
+así que no va a saber que realmente queríamos
+
+178
+00:08:26.860 --> 00:08:28.440
+imprimir los corchetes.
+
+179
+00:08:28.440 --> 00:08:30.969
+Ahora, si recuerdas como nosotros
+
+180
+00:08:30.969 --> 00:08:34.310
+típicamente escapan elementos en cuerdas,
+
+181
+00:08:34.310 --> 00:08:37.638
+tu próximo pensamiento puede ser: bien, voy a usar
+
+182
+00:08:37.638 --> 00:08:39.840
+los caracteres de la barra invertida.
+
+183
+00:08:39.840 --> 00:08:43.310
+Y cuando originalmente estaba aprendiendo esta nueva
+
+184
+00:08:43.310 --> 00:08:45.230
+sintaxis y esto es relativamente nuevo,
+
+185
+00:08:45.230 --> 00:08:46.720
+esto es lo primero que hice.
+
+186
+00:08:46.720 --> 00:08:49.100
+Cuando quise probar cómo podía
+
+187
+00:08:49.100 --> 00:08:50.670
+escapar de los corchetes,
+
+188
+00:08:50.670 --> 00:08:52.580
+esto fue lo primero que hice,
+
+189
+00:08:52.580 --> 00:08:54.980
+me equivoqué y necesitaba mirar
+
+190
+00:08:54.980 --> 00:08:56.030
+la documentación.
+
+191
+00:08:56.030 --> 00:08:58.800
+Porque si ejecutas esto, verás que te sale un error
+
+192
+00:08:58.800 --> 00:09:01.973
+y dice que hay un error de sintaxis en la expresión f-string
+
+193
+00:09:01.973 --> 00:09:05.350
+no puede incluir una barra invertida,
+
+194
+00:09:05.350 --> 00:09:07.940
+lo que pensé que era raro, pero
+
+195
+00:09:07.940 --> 00:09:11.537
+estoy seguro, que hay algunas razones detrás de por qué los
+
+196
+00:09:11.537 --> 00:09:13.100
+desarrolladores de Python decidieron hacer eso.
+
+197
+00:09:13.100 --> 00:09:15.096
+Así que una vez que busqué la documentación,
+
+198
+00:09:15.096 --> 00:09:18.050
+vi que la forma correcta de hacerlo
+
+199
+00:09:18.050 --> 00:09:19.890
+no es con una barra invertida
+
+200
+00:09:19.890 --> 00:09:22.180
+pero en realidad, si alguna vez quieres mostrar corchetes,
+
+201
+00:09:22.180 --> 00:09:24.531
+entonces simplemente rodeas esos corchetes
+
+202
+00:09:24.531 --> 00:09:28.160
+con corchetes dobles, así
+
+203
+00:09:28.160 --> 00:09:32.440
+Así que ahora, si vengo aquí y lo ejecuto,
+
+204
+00:09:32.440 --> 00:09:34.050
+puedes ver que se imprime
+
+205
+00:09:34.050 --> 00:09:35.950
+esta es mi entrada en el blog
+
+206
+00:09:35.950 --> 00:09:38.830
+y en realidad imprime los corchetes.
+
+207
+00:09:38.830 --> 00:09:41.490
+Y así es, si alguna vez te encuentras
+
+208
+00:09:41.490 --> 00:09:44.170
+en una situación en la que necesitas escapar de ellos,
+
+209
+00:09:44.170 --> 00:09:45.418
+así es como puedes hacerlo.
+
+210
+00:09:45.418 --> 00:09:47.340
+Ahora voy a aclarar eso
+
+211
+00:09:47.340 --> 00:09:49.980
+y quiero mostrarte un ejemplo más
+
+212
+00:09:49.980 --> 00:09:52.840
+que creo que es probablemente uno de los más importantes
+
+213
+00:09:52.840 --> 00:09:57.380
+que es como este tipo de interpolación de cadenas
+
+214
+00:09:57.380 --> 00:10:00.900
+se puede utilizar cuando se trabaja con 'here docs"
+
+215
+00:10:00.900 --> 00:10:02.730
+porque esta es una de mis partes favoritas
+
+216
+00:10:02.730 --> 00:10:04.750
+porque creo que vas a ser capaz de ver
+
+217
+00:10:04.750 --> 00:10:06.580
+un camino muy claro
+
+218
+00:10:06.580 --> 00:10:09.025
+entre lo que vamos a implementar aquí mismo
+
+219
+00:10:09.025 --> 00:10:12.090
+y una aplicación del mundo real.
+
+220
+00:10:12.090 --> 00:10:13.970
+Así que voy a deshacerme del saludo.
+
+221
+00:10:13.970 --> 00:10:15.010
+Voy a mantener el nombre.
+
+222
+00:10:15.010 --> 00:10:19.090
+Y voy a añadir otra variable llamada producto.
+
+223
+00:10:19.090 --> 00:10:24.089
+Y diremos que el curso de aprendizaje de python
+
+224
+00:10:25.420 --> 00:10:29.000
+y ahora voy a crear una variable
+
+225
+00:10:29.000 --> 00:10:32.960
+y sólo diremos que esto es contenido de correo electrónico
+
+226
+00:10:32.960 --> 00:10:37.960
+y vamos a poner esto al mismo nivel que el "here doc".
+
+227
+00:10:38.003 --> 00:10:42.550
+Así que le diré hola y la forma en que podemos
+
+228
+00:10:42.550 --> 00:10:44.710
+configurar esto está dentro
+
+229
+00:10:44.710 --> 00:10:45.970
+vamos a hacer unos corchetes.
+
+230
+00:10:45.970 --> 00:10:50.970
+Diré hola nombre y gracias por comprar el producto
+
+231
+00:10:55.110 --> 00:11:00.110
+y luego saludos,
+
+232
+00:11:00.569 --> 00:11:02.120
+equipo de ventas.
+
+233
+00:11:02.120 --> 00:11:03.240
+Es un mensaje muy aburrido.
+
+234
+00:11:03.240 --> 00:11:05.720
+Si alguna vez te dedicas al marketing o algo así
+
+235
+00:11:05.720 --> 00:11:07.690
+definitivamente limpiaría esto un poco
+
+236
+00:11:07.690 --> 00:11:09.740
+pero esto te va a demostrar,
+
+237
+00:11:09.740 --> 00:11:11.160
+este es un buen ejemplo,
+
+238
+00:11:11.160 --> 00:11:13.450
+de cómo puedes usar la interpolación de cadenas.
+
+239
+00:11:13.450 --> 00:11:17.260
+Ahora tienes que poner la F justo delante de esto.
+
+240
+00:11:17.260 --> 00:11:19.190
+Así que si no lo haces, no va a funcionar.
+
+241
+00:11:19.190 --> 00:11:21.540
+Simplemente va a imprimir "hola" y "nombre"
+
+242
+00:11:21.540 --> 00:11:23.060
+con los paréntesis a su alrededor
+
+243
+00:11:23.060 --> 00:11:26.100
+y por lo que va a formatearlo
+
+244
+00:11:26.100 --> 00:11:28.580
+así que de esa forma Python va a estar buscando
+
+245
+00:11:28.580 --> 00:11:31.080
+el código Python dentro de él.
+
+246
+00:11:31.080 --> 00:11:32.670
+Ahora vamos a imprimir esto.
+
+247
+00:11:32.670 --> 00:11:34.095
+Así que si digo imprimir,
+
+248
+00:11:34.095 --> 00:11:37.370
+el contenido del correo electrónico,
+
+249
+00:11:37.370 --> 00:11:39.950
+intentemos ejecutarlo y veamos si funciona.
+
+250
+00:11:39.950 --> 00:11:42.500
+Voy a ejecutar la interpolación Python
+
+251
+00:11:42.500 --> 00:11:43.333
+y mira eso.
+
+252
+00:11:43.333 --> 00:11:45.366
+Tenemos un correo electrónico
+
+253
+00:11:45.366 --> 00:11:47.420
+que ahora se escribe dinámicamente.
+
+254
+00:11:47.420 --> 00:11:50.460
+Así que, imagina que esto es una aplicación web
+
+255
+00:11:50.460 --> 00:11:52.500
+y es para un sitio de comercio electrónico.
+
+256
+00:11:52.500 --> 00:11:54.980
+Va a absorber elementos
+
+257
+00:11:54.980 --> 00:11:58.130
+como el nombre de un producto y el nombre de un usuario,
+
+258
+00:11:58.130 --> 00:12:02.270
+quienquiera que haya comprado, y es capaz de rodear
+
+259
+00:12:02.270 --> 00:12:04.580
+todos esos elementos dinámicos
+
+260
+00:12:04.580 --> 00:12:07.310
+con cualquier otro tipo de contenido.
+
+261
+00:12:07.310 --> 00:12:09.020
+Esta es una práctica tan común
+
+262
+00:12:09.020 --> 00:12:11.480
+que vas a implementar
+
+263
+00:12:11.480 --> 00:12:14.020
+este tipo de características en todas partes
+
+264
+00:12:14.020 --> 00:12:16.350
+todas las diferentes aplicaciones que construyes.
+
+265
+00:12:16.350 --> 00:12:18.820
+No recuerdo personalmente la última vez
+
+266
+00:12:18.820 --> 00:12:21.219
+usé una aplicación o construí una aplicación
+
+267
+00:12:21.219 --> 00:12:24.060
+que no usó interpolación
+
+268
+00:12:24.060 --> 00:12:26.240
+de cadenas en todo el sistema.
+
+269
+00:12:26.240 --> 00:12:29.360
+Porque en realidad, la razón
+
+270
+00:12:29.360 --> 00:12:31.640
+por la que estás aprendiendo a programar
+
+271
+00:12:31.640 --> 00:12:35.930
+es para ser capaz de construir sistemas dinámicos.
+
+272
+00:12:35.930 --> 00:12:38.060
+Si todo pudiera ser codificado,
+
+273
+00:12:38.060 --> 00:12:39.550
+no tendrías que estar tomando este curso.
+
+274
+00:12:39.550 --> 00:12:43.190
+Podrías simplemente tomar un curso básico de html/css,
+
+275
+00:12:43.190 --> 00:12:46.270
+codificar todos tus valores y habrías terminado.
+
+276
+00:12:46.270 --> 00:12:49.755
+Pero en cambio, cuando se trata de estos
+
+277
+00:12:49.755 --> 00:12:52.010
+lenguajes dinámicos de propósito general,
+
+278
+00:12:52.010 --> 00:12:55.710
+como Python y Ruby y este tipo de lenguajes,
+
+279
+00:12:55.710 --> 00:12:59.228
+están construidos para que puedas construir
+
+280
+00:12:59.228 --> 00:13:03.643
+sistemas dinámicos, para que puedas tomar cosas como
+
+281
+00:13:03.643 --> 00:13:06.430
+un contenido de correo electrónico como el que tenemos aquí,
+
+282
+00:13:06.430 --> 00:13:09.610
+y para que puedas tomarlo y puedas envolver
+
+283
+00:13:09.610 --> 00:13:10.910
+todos los diferentes elementos,
+
+284
+00:13:10.910 --> 00:13:13.490
+como un nombre o un nombre de producto
+
+285
+00:13:13.490 --> 00:13:15.729
+o cualquier cosa por el estilo
+
+286
+00:13:15.729 --> 00:13:19.260
+y luego puedes personalizarlo y luego construir tu sistema
+
+287
+00:13:19.260 --> 00:13:21.210
+y entonces simplemente se ejecutará y se verá personalizado.
+
+288
+00:13:21.210 --> 00:13:23.800
+Parecerá que cada uno de estos fue generado
+
+289
+00:13:23.800 --> 00:13:26.600
+sólo para este cliente y sólo para ese producto.
+
+290
+00:13:26.600 --> 00:13:29.470
+Y si alguna vez te has preguntado cuando compras algo,
+
+291
+00:13:29.470 --> 00:13:33.032
+así que imagina que has comprado un producto en Amazon
+
+292
+00:13:33.032 --> 00:13:36.870
+y recibes un correo electrónico de confirmación
+
+293
+00:13:36.870 --> 00:13:40.480
+saludando, gracias por comprar estos productos.
+
+294
+00:13:40.480 --> 00:13:44.140
+Ellos implementaron exactamente este tipo de característica.
+
+295
+00:13:44.140 --> 00:13:46.760
+Así es como se construyen este tipo de sistemas.
+
+296
+00:13:46.760 --> 00:13:48.440
+Así que creo que es muy emocionante.
+
+297
+00:13:48.440 --> 00:13:51.470
+Esta es una de las primeras veces
+
+298
+00:13:51.470 --> 00:13:54.680
+que tenemos que hacer en este curso hasta ahora,
+
+299
+00:13:54.680 --> 00:13:56.670
+donde hemos sido capaces de implementar
+
+300
+00:13:56.670 --> 00:14:01.080
+la versión final de una característica.
+
+301
+00:14:01.080 --> 00:14:04.190
+Cuando empezamos a trabajar con marcos de trabajo web
+
+302
+00:14:04.190 --> 00:14:05.490
+y ese tipo de cosas,
+
+303
+00:14:05.490 --> 00:14:07.640
+esta es la sintaxis exacta
+
+304
+00:14:07.640 --> 00:14:08.730
+que vas a usar para eso
+
+305
+00:14:08.730 --> 00:14:10.380
+así que creo que es muy emocionante.
+
+306
+00:14:10.380 --> 00:14:12.670
+Buen trabajo si pasaste por esto.
+
+307
+00:14:12.670 --> 00:14:15.240
+Buena suerte mientras pasas por el resto
+
+308
+00:14:15.240 --> 00:14:18.143
+de las guías de interpolación de cadenas.
+

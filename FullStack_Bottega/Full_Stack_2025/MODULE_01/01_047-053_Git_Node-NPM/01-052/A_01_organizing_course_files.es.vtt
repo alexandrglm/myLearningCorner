@@ -1,0 +1,470 @@
+WEBVTT
+
+1
+00:00:01.100 --> 00:00:02.530
+<v ->En esta guía vamos a recorrer</v>
+
+2
+00:00:02.530 --> 00:00:05.130
+cómo podemos organizar todos los archivos
+
+3
+00:00:05.130 --> 00:00:08.340
+que vamos a usar a lo largo de este curso de Flexbox.
+
+4
+00:00:08.340 --> 00:00:12.280
+Y cómo también podemos colocarlos en GitHub.
+
+5
+00:00:12.280 --> 00:00:14.440
+Y parte de la razón por la que haremos eso,
+
+6
+00:00:14.440 --> 00:00:16.380
+es porque vamos a estar trabajando con una serie
+
+7
+00:00:16.380 --> 00:00:19.670
+de proyectos y herramientas diferentes
+
+8
+00:00:19.670 --> 00:00:22.580
+a medida que pasamos por el curso específico de Flexbox
+
+9
+00:00:22.580 --> 00:00:25.910
+y algunas de ellas incluso
+
+10
+00:00:25.910 --> 00:00:28.000
+involucran subir tu Flexbox en la web.
+
+11
+00:00:28.000 --> 00:00:30.930
+GitHub nos da una herramienta realmente genial
+
+12
+00:00:30.930 --> 00:00:32.570
+para poder hacer eso.
+
+13
+00:00:32.570 --> 00:00:35.180
+Entonces, si quieres seguir adelante
+
+14
+00:00:35.180 --> 00:00:37.070
+y ver cómo lo estoy haciendo,
+
+15
+00:00:37.070 --> 00:00:39.040
+entonces pensé que sería útil para nosotros
+
+16
+00:00:39.040 --> 00:00:40.650
+tener la misma configuración.
+
+17
+00:00:40.650 --> 00:00:43.930
+Así que aquí mismo tengo el código de Visual Studio abierto
+
+18
+00:00:43.930 --> 00:00:45.810
+dentro de mi caja virtual
+
+19
+00:00:45.810 --> 00:00:49.930
+y simplemente voy a hacer clic en abrir carpeta
+
+20
+00:00:49.930 --> 00:00:53.890
+y haga clic aquí y dentro tengo un código
+
+21
+00:00:53.890 --> 00:00:56.080
+dentro de mi directorio de nombres de usuario,
+
+22
+00:00:56.080 --> 00:00:57.920
+tengo un directorio de códigos.
+
+23
+00:00:57.920 --> 00:01:02.230
+Y aquí simplemente voy a crear una nueva carpeta
+
+24
+00:01:02.230 --> 00:01:06.840
+llamada curso Flexbox.
+
+25
+00:01:06.840 --> 00:01:11.300
+Y esa va a ser la que yo quiera usar.
+
+26
+00:01:11.300 --> 00:01:13.810
+Ahora no tengo nada dentro todavía,
+
+27
+00:01:13.810 --> 00:01:17.050
+así que añadiremos un nuevo archivo aquí
+
+28
+00:01:17.050 --> 00:01:21.113
+y se va a llamar, hola Flexbox.
+
+29
+00:01:22.770 --> 00:01:26.410
+Y punto html.
+
+30
+00:01:26.410 --> 00:01:29.240
+Así que voy a poner algo
+
+31
+00:01:29.240 --> 00:01:32.253
+muy básico dentro de éste.
+
+32
+00:01:34.170 --> 00:01:36.930
+Y esto sólo va a ser para que tengamos
+
+33
+00:01:36.930 --> 00:01:40.110
+algo que podamos ver en GitHub.
+
+34
+00:01:40.110 --> 00:01:41.840
+Así que ahora que tenemos eso,
+
+35
+00:01:41.840 --> 00:01:45.360
+podemos crear nuestro repositorio Git.
+
+36
+00:01:45.360 --> 00:01:47.026
+Así que la forma en que podemos empezar
+
+37
+00:01:47.026 --> 00:01:49.490
+es escribiendo CNTL tilde,
+
+38
+00:01:49.490 --> 00:01:53.510
+que va a ser esa pequeña clave justo encima de su ficha.
+
+39
+00:01:53.510 --> 00:01:56.214
+Y eso va a abrir tu terminal
+
+40
+00:01:56.214 --> 00:01:57.613
+justo aquí.
+
+41
+00:01:57.613 --> 00:02:01.830
+Y ahora puedes escribir Git init
+
+42
+00:02:01.830 --> 00:02:03.470
+y luego te dice
+
+43
+00:02:03.470 --> 00:02:06.280
+que hemos inicializado un repositorio de Git vacío.
+
+44
+00:02:06.280 --> 00:02:10.140
+Y luego podemos decir, Git add punto,
+
+45
+00:02:10.140 --> 00:02:12.020
+que agregará ese archivo
+
+46
+00:02:12.020 --> 00:02:14.750
+y ahora si escribimos el estado de Git,
+
+47
+00:02:14.750 --> 00:02:16.840
+va a mostrar que tenemos ese nuevo archivo
+
+48
+00:02:16.840 --> 00:02:18.500
+que va a ser confirmado.
+
+49
+00:02:18.500 --> 00:02:21.100
+Ahora bien, si no has seguido
+
+50
+00:02:21.100 --> 00:02:23.550
+mi curso de Git y GitHub,
+
+51
+00:02:23.550 --> 00:02:26.360
+no voy a entrar en muchos detalles
+
+52
+00:02:26.360 --> 00:02:29.160
+sobre cómo funciona porque vas a seguir
+
+53
+00:02:29.160 --> 00:02:31.880
+todo lo que necesitas saber
+
+54
+00:02:33.280 --> 00:02:36.530
+sobre el control de versiones, cómo usar Git,
+
+55
+00:02:36.530 --> 00:02:37.710
+cómo usar GitHub
+
+56
+00:02:37.710 --> 00:02:39.760
+así que no te preocupes por eso.
+
+57
+00:02:39.760 --> 00:02:42.950
+Si siguiste adelante en la configuración del sistema,
+
+58
+00:02:42.950 --> 00:02:45.380
+entonces ya tienes a Git y GitHub
+
+59
+00:02:45.380 --> 00:02:47.660
+ya configurado en tu sistema
+
+60
+00:02:47.660 --> 00:02:50.070
+y así que puedes seguir con estos comandos
+
+61
+00:02:50.070 --> 00:02:52.750
+y más tarde, cuando hagas el curso de GitHub
+
+62
+00:02:52.750 --> 00:02:54.970
+tendrá sentido en lo que estamos haciendo.
+
+63
+00:02:54.970 --> 00:02:57.170
+Así que ahora que hemos añadido eso,
+
+64
+00:02:57.170 --> 00:02:58.370
+ahora podemos comprometernos.
+
+65
+00:02:58.370 --> 00:03:02.230
+Así que voy a decir que Git come dash m
+
+66
+00:03:02.230 --> 00:03:05.100
+y esto sólo va a crear una versión y darnos
+
+67
+00:03:05.100 --> 00:03:08.717
+un punto de referencia a tiempo para nuestro proyecto.
+
+68
+00:03:08.717 --> 00:03:13.717
+Entonces Git commit dash m initial commit.
+
+69
+00:03:14.270 --> 00:03:16.980
+Y ahora lo que podemos hacer es ir
+
+70
+00:03:16.980 --> 00:03:21.980
+y crear un proyecto en el sitio de GitHub.
+
+71
+00:03:22.270 --> 00:03:23.660
+Así que voy a abrir esto,
+
+72
+00:03:23.660 --> 00:03:26.830
+ya tengo mi Github conectado.
+
+73
+00:03:26.830 --> 00:03:29.430
+Puedo hacer clic en el nuevo repositorio aquí,
+
+74
+00:03:29.430 --> 00:03:34.170
+y escribiré "Flexbox dash course"
+
+75
+00:03:34.170 --> 00:03:37.140
+y eso es algo que puedo usar
+
+76
+00:03:37.140 --> 00:03:38.510
+porque tengo una pequeña marca verde aquí.
+
+77
+00:03:38.510 --> 00:03:39.730
+Va a ser público
+
+78
+00:03:39.730 --> 00:03:43.090
+y voy a hacer clic en crear un repositorio
+
+79
+00:03:43.090 --> 00:03:46.570
+y luego copiarlo en el portapapeles
+
+80
+00:03:46.570 --> 00:03:48.350
+y luego puedo volver aquí
+
+81
+00:03:48.350 --> 00:03:53.350
+y luego pegar esto directamente en el terminal.
+
+82
+00:03:53.790 --> 00:03:56.120
+Y entonces esto va a ser empujado hacia arriba
+
+83
+00:03:56.120 --> 00:03:58.560
+y parece que todo funciona.
+
+84
+00:03:58.560 --> 00:04:00.420
+Así que mientras no haya habido ningún error
+
+85
+00:04:00.420 --> 00:04:03.090
+y ya tienes tu Git preparado,
+
+86
+00:04:03.090 --> 00:04:05.800
+entonces deberías poder volver aquí,
+
+87
+00:04:05.800 --> 00:04:07.310
+abrir el repo
+
+88
+00:04:07.310 --> 00:04:11.430
+y luego está nuestro archivo HTML Flexbox.
+
+89
+00:04:11.430 --> 00:04:13.470
+Así que todo está preparado,
+
+90
+00:04:13.470 --> 00:04:15.080
+todo está funcionando
+
+91
+00:04:15.080 --> 00:04:16.920
+y vamos a poder de usarlo.
+
+92
+00:04:16.920 --> 00:04:19.200
+Y ahora, si vuelves aquí,
+
+93
+00:04:19.200 --> 00:04:21.060
+este va a ser el directorio
+
+94
+00:04:21.060 --> 00:04:23.720
+que vamos a usar a lo largo de todo el curso.
+
+95
+00:04:23.720 --> 00:04:25.790
+Así que vamos a crear otros subdirectorios,
+
+96
+00:04:25.790 --> 00:04:28.940
+y cada vez que tengamos una categoría
+
+97
+00:04:28.940 --> 00:04:32.290
+o algún tipo de proyecto que se vaya a construir,
+
+98
+00:04:32.290 --> 00:04:35.160
+voy a crear uno nuevo aquí a la izquierda
+
+99
+00:04:35.160 --> 00:04:37.110
+y luego podemos añadirlo GitHub
+
+100
+00:04:37.110 --> 00:04:40.890
+para que puedas mantenerlos todos en un solo lugar.
+
+101
+00:04:40.890 --> 00:04:43.490
+Y una cosa que he descubierto personalmente,
+
+102
+00:04:43.490 --> 00:04:46.460
+especialmente cuando se trata de trabajar con Flexbox,
+
+103
+00:04:46.460 --> 00:04:51.460
+es que hay un número de diferentes tipos de componentes
+
+104
+00:04:51.940 --> 00:04:55.090
+que uso, pero no siempre recuerdo
+
+105
+00:04:55.090 --> 00:04:57.640
+cada detalle que necesito escribir,
+
+106
+00:04:57.640 --> 00:05:01.150
+así que siempre que puedes mantener todo tu código
+
+107
+00:05:01.150 --> 00:05:03.970
+relacionado con un tema específico, como Flexbox,
+
+108
+00:05:03.970 --> 00:05:07.470
+en un solo lugar, lo hace realmente fácil de consultar.
+
+109
+00:05:07.470 --> 00:05:10.890
+Así que en cualquier momento que quiera, por ejemplo,
+
+110
+00:05:10.890 --> 00:05:13.960
+alinear elementos en el centro de la página
+
+111
+00:05:13.960 --> 00:05:15.680
+y usar Flexbox para hacerlo,
+
+112
+00:05:15.680 --> 00:05:17.650
+ni siquiera tienes que haber memorizado
+
+113
+00:05:17.650 --> 00:05:19.720
+todos esos comandos diferentes.
+
+114
+00:05:19.720 --> 00:05:22.240
+Puedes simplemente ir a tu repositorio
+
+115
+00:05:22.240 --> 00:05:24.760
+y ver la lección donde hiciste eso,
+
+116
+00:05:24.760 --> 00:05:28.960
+copiar ese código y luego agregarlo a tu nuevo proyecto.
+
+117
+00:05:28.960 --> 00:05:31.423
+Así que es bueno y útil tener eso.
+

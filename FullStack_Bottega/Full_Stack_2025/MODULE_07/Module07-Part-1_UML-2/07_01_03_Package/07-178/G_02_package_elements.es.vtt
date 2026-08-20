@@ -1,0 +1,226 @@
+﻿WEBVTT
+
+1
+00:00:00.610 --> 00:00:01.443
+Diagramas de paquetes en el UML
+
+2
+00:00:01.443 --> 00:00:02.376
+<v Instructor>Buen trabajo en lo que</v>
+
+3
+00:00:02.376 --> 00:00:03.980
+ha logrado en este curso.
+
+4
+00:00:03.980 --> 00:00:06.570
+Esta va a ser una de las secciones más cortas
+
+5
+00:00:06.570 --> 00:00:11.220
+de todo este curso y es por un buen motivo.
+
+6
+00:00:11.220 --> 00:00:14.470
+Vamos a hablar sobre Diagramas de paquetes en el UML
+
+7
+00:00:14.470 --> 00:00:16.760
+y, para comenzar, voy a hablar sobre
+
+8
+00:00:16.760 --> 00:00:19.600
+los elementos que componen un diagrama.
+
+9
+00:00:19.600 --> 00:00:23.040
+Va a ser algo que lo pueda sorprender un poco.
+
+10
+00:00:23.040 --> 00:00:26.390
+Los diagramas de paquetes, en un alto nivel, son formas
+
+11
+00:00:26.390 --> 00:00:31.100
+simples de rodear algunos de los demás componentes
+
+12
+00:00:31.100 --> 00:00:34.780
+en algunos de los demás diagramas y lo que representan.
+
+13
+00:00:34.780 --> 00:00:38.560
+Entonces, considerando que tiene algo similar a un diagrama
+
+14
+00:00:38.560 --> 00:00:41.166
+de clase, donde quiere enumerar, en detalle,
+
+15
+00:00:41.166 --> 00:00:43.190
+cada uno de los atributos,
+
+16
+00:00:43.190 --> 00:00:45.400
+querrá enumerar las diferentes operaciones,
+
+17
+00:00:45.400 --> 00:00:48.540
+la conectividad entre ambos y
+
+18
+00:00:48.540 --> 00:00:50.390
+si tienen multiplicidad o no.
+
+19
+00:00:50.390 --> 00:00:52.625
+Toda clase de cosas que son de nivel muy bajo.
+
+20
+00:00:52.625 --> 00:00:56.010
+Hablan directamente sobre cómo el código en sí mismo
+
+21
+00:00:56.010 --> 00:00:57.440
+necesita ser escrito.
+
+22
+00:00:57.440 --> 00:01:00.400
+Ahora, los diagramas de paquetes son muy diferentes.
+
+23
+00:01:00.400 --> 00:01:02.900
+En primer lugar, y lo más importante, tendrán
+
+24
+00:01:02.900 --> 00:01:04.950
+diferentes elementos abstractos.
+
+25
+00:01:04.950 --> 00:01:07.991
+Tipos, clasificadores, algunas de las cosas que hablamos.
+
+26
+00:01:07.991 --> 00:01:11.060
+En este curso, cuando hablamos sobre algunos
+
+27
+00:01:11.060 --> 00:01:15.480
+de los tipos compartidos de formas para nombrar elementos.
+
+28
+00:01:15.480 --> 00:01:19.818
+También puede tener algunos elementos más concretos.
+
+29
+00:01:19.818 --> 00:01:22.310
+Pero si observa lo que son,
+
+30
+00:01:22.310 --> 00:01:26.010
+son elementos que conformaron otros diagramas
+
+31
+00:01:26.010 --> 00:01:27.320
+que ya hemos revisado.
+
+32
+00:01:27.320 --> 00:01:31.762
+Entonces, un ejemplo sería una Clase, un Caso de uso,
+
+33
+00:01:31.762 --> 00:01:36.190
+un Componente, un Paquete, una Dependencia
+
+34
+00:01:36.190 --> 00:01:37.570
+y un Evento.
+
+35
+00:01:37.570 --> 00:01:41.536
+Entonces, su Diagrama de paquetes es algo que le permite
+
+36
+00:01:41.536 --> 00:01:44.443
+tomar los demás componentes diferentes,
+
+37
+00:01:44.443 --> 00:01:48.060
+dentro de su sistema y mostrar cómo
+
+38
+00:01:48.060 --> 00:01:51.055
+se relacionan entre sí y puede mostrar
+
+39
+00:01:51.055 --> 00:01:55.090
+dependencias y algunos elementos diferentes como ese.
+
+40
+00:01:55.090 --> 00:01:59.870
+Por lo general, uso un Diagrama de paquetes cuando creo
+
+41
+00:01:59.870 --> 00:02:04.063
+algo similar a una gema de rubí, alguna clase de biblioteca
+
+42
+00:02:04.063 --> 00:02:09.030
+independiente para mostrar dónde están las dependencias y
+
+43
+00:02:09.030 --> 00:02:11.410
+cómo cada uno de los módulos se relacionan entre sí.
+
+44
+00:02:11.410 --> 00:02:13.510
+Y, para nuestro ejemplo, eso es exactamente
+
+45
+00:02:13.510 --> 00:02:15.640
+lo que vamos a revisar.
+
+46
+00:02:15.640 --> 00:02:18.780
+Ahora, este es diferente que un diagrama de implementación.
+
+47
+00:02:18.780 --> 00:02:22.750
+Estos diagramas se comunican y muestran cómo tiene
+
+48
+00:02:22.750 --> 00:02:25.010
+todos esos nodos que están conectados, pero, generalmente,
+
+49
+00:02:25.010 --> 00:02:28.740
+tienen que lidiar con cómo tiene que implementar
+
+50
+00:02:28.740 --> 00:02:33.080
+un sistema y servidores y diferentes cosas como esa.
+
+51
+00:02:33.080 --> 00:02:35.100
+Los diagramas de paquetes son muy diferentes.
+
+52
+00:02:35.100 --> 00:02:39.220
+Simplemente, representan la estructura de su software
+
+53
+00:02:39.220 --> 00:02:43.056
+en un nivel muy alto y muestran cómo se puede componer y,
+
+54
+00:02:43.056 --> 00:02:47.510
+también, cómo cada uno de los elementos se interconecta.
+
+55
+00:02:47.510 --> 00:02:49.880
+Entonces, ahora que tiene una buena idea sobre el objetivo
+
+56
+00:02:49.880 --> 00:02:53.433
+de un Paquete de diagramas, veamos un ejemplo.
+

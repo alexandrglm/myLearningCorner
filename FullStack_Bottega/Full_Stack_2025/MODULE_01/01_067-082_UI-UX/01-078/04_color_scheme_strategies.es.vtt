@@ -1,0 +1,1159 @@
+WEBVTT
+
+1
+00:00:01.340 --> 00:00:03.360
+<v ->A medida que continuamos en esta sección</v>
+
+2
+00:00:03.360 --> 00:00:07.170
+en los elementos de diseño para interfaces de usuario,
+
+3
+00:00:07.170 --> 00:00:10.300
+en esta guía, vamos a hablar de colores
+
+4
+00:00:10.300 --> 00:00:12.320
+y como podemos usar los colores,
+
+5
+00:00:12.320 --> 00:00:13.830
+cómo podemos elegirlos,
+
+6
+00:00:13.830 --> 00:00:17.860
+y también vamos a entrar en algunos aspectos muy prácticos
+
+7
+00:00:17.860 --> 00:00:21.039
+de cuando hemos tenido algunos ejemplos donde
+
+8
+00:00:21.039 --> 00:00:25.200
+el color era algo más que algo que se veía bonito.
+
+9
+00:00:25.200 --> 00:00:26.033
+<v ->Correcto.</v>
+
+10
+00:00:26.033 --> 00:00:28.240
+<v ->El color en realidad determina partes</v>
+
+11
+00:00:28.240 --> 00:00:29.500
+de la experiencia de usuario,
+
+12
+00:00:29.500 --> 00:00:33.110
+y es por esto que creo que esta es
+
+13
+00:00:33.110 --> 00:00:36.374
+una guía muy importante, todavía hay
+
+14
+00:00:36.374 --> 00:00:40.100
+un poco de mentalidad en muchos desarrolladores
+
+15
+00:00:40.100 --> 00:00:42.780
+y en gente en general, que piensan que los diseñadores
+
+16
+00:00:42.780 --> 00:00:43.680
+hacen que las cosas se vean bonitas.
+
+17
+00:00:43.680 --> 00:00:44.513
+<v ->Correcto.</v>
+
+18
+00:00:44.513 --> 00:00:48.130
+<v ->Y eso es lo que hacen, y eso es todo</v>
+
+19
+00:00:48.130 --> 00:00:49.990
+lo que hay de la interfaz de usuario,
+
+20
+00:00:49.990 --> 00:00:52.690
+pero para nuestro caso de estudio
+
+21
+00:00:52.690 --> 00:00:56.670
+verás que el color determina
+
+22
+00:00:56.670 --> 00:00:59.970
+el sentimiento que las personas tenían cuando empezaron
+
+23
+00:00:59.970 --> 00:01:01.520
+a ver esta aplicación.
+
+24
+00:01:01.520 --> 00:01:05.550
+Por tanto, afecta a la experiencia del usuario, al negocio
+
+25
+00:01:05.550 --> 00:01:07.523
+y como se ve.
+
+26
+00:01:07.523 --> 00:01:09.910
+<v ->Sí, me encanta el color.</v>
+
+27
+00:01:09.910 --> 00:01:14.290
+Creo que es muy divertido elegir qué colores
+
+28
+00:01:14.290 --> 00:01:15.690
+se van a utilizar en una aplicación.
+
+29
+00:01:19.210 --> 00:01:20.940
+Tenía muchas ganas de conseguir un cliente
+
+30
+00:01:20.940 --> 00:01:22.840
+que me dejara diseñar algo completamente morado,
+
+31
+00:01:22.840 --> 00:01:26.510
+porque no lo he hecho como una aplicación completamente.
+
+32
+00:01:26.510 --> 00:01:28.665
+<v ->¿No fuiste contratado por Yahoo?</v>
+
+33
+00:01:28.665 --> 00:01:29.880
+<v ->Sí, exacto.</v>
+
+34
+00:01:29.880 --> 00:01:34.300
+Pero no, realmente me encanta poder planear
+
+35
+00:01:34.300 --> 00:01:36.980
+todo mi esquema de color para la aplicación.
+
+36
+00:01:36.980 --> 00:01:38.730
+Cuando hagas eso, estarás pensando
+
+37
+00:01:38.730 --> 00:01:40.210
+en algunas cosas.
+
+38
+00:01:40.210 --> 00:01:42.054
+No es necesariamente como, bueno,
+
+39
+00:01:42.054 --> 00:01:44.030
+me gusta este color, así que voy a elegirlo.
+
+40
+00:01:44.030 --> 00:01:48.226
+Tienes la marca de esa empresa o ese
+
+41
+00:01:48.226 --> 00:01:51.060
+proyecto específico que debes considerar.
+
+42
+00:01:51.060 --> 00:01:53.800
+Y necesitas saber cómo va ese color
+
+43
+00:01:53.800 --> 00:01:56.660
+a comportarse en todos los aspectos.
+
+44
+00:01:56.660 --> 00:02:00.650
+Por lo tanto, un ejemplo perfecto es en Dev Camp.
+
+45
+00:02:00.650 --> 00:02:02.210
+Estábamos usando un color verde,
+
+46
+00:02:02.210 --> 00:02:04.850
+y es un color verde más claro.
+
+47
+00:02:04.850 --> 00:02:07.570
+Y estábamos viendo eso, bueno,
+
+48
+00:02:07.570 --> 00:02:11.940
+cada vez que ese color estaba resaltado en el texto,
+
+49
+00:02:11.940 --> 00:02:14.380
+solo el texto, es muy difícil de ver.
+
+50
+00:02:14.380 --> 00:02:16.690
+Fue muy difícil, cuando estaba en blanco,
+
+51
+00:02:16.690 --> 00:02:19.400
+era muy difícil quitar ese verde.
+
+52
+00:02:19.400 --> 00:02:22.170
+Así que tuvimos que tener otro color verde más oscuro
+
+53
+00:02:22.170 --> 00:02:24.245
+y una parte de la guía de estilo fue
+
+54
+00:02:24.245 --> 00:02:27.880
+que cualquier texto cuando se pone verde,
+
+55
+00:02:27.880 --> 00:02:31.197
+debe ser este color más oscuro o este tono más oscuro
+
+56
+00:02:31.197 --> 00:02:33.730
+que nuestra marca de verde.
+
+57
+00:02:33.730 --> 00:02:36.340
+Así que estás pensando en algo más
+
+58
+00:02:36.340 --> 00:02:37.370
+que: oh esto se ve bien.
+
+59
+00:02:37.370 --> 00:02:40.020
+Sino en como va a ser utilizado.
+
+60
+00:02:40.020 --> 00:02:42.530
+A veces, como, realmente me gustan mucho
+
+61
+00:02:42.530 --> 00:02:45.700
+los blancos y grises realmente sutiles.
+
+62
+00:02:45.700 --> 00:02:47.690
+No me gustan los contrastes muy profundos,
+
+63
+00:02:47.690 --> 00:02:50.428
+como el estilo de 1995, como realmente
+
+64
+00:02:50.428 --> 00:02:52.800
+profundos contrastes entre los blancos y grises.
+
+65
+00:02:52.800 --> 00:02:56.170
+Sin embargo, estoy trabajando en un monitor muy bonito,
+
+66
+00:02:56.170 --> 00:02:57.750
+tal vez no todos lo sean.
+
+67
+00:02:57.750 --> 00:02:58.583
+<v ->Correcto.</v>
+
+68
+00:02:58.583 --> 00:03:02.010
+<v ->Y los malos realmente son malos en la separación</v>
+
+69
+00:03:02.010 --> 00:03:05.530
+de un F7 F7 F7 gris, por ejemplo,
+
+70
+00:03:05.530 --> 00:03:07.216
+de un blanco puro.
+
+71
+00:03:07.216 --> 00:03:08.049
+<v ->Vale.</v>
+
+72
+00:03:08.049 --> 00:03:09.410
+<v ->Y los dos parecen blancos.</v>
+
+73
+00:03:09.410 --> 00:03:11.057
+Y lo verás en los proyectores también.
+
+74
+00:03:11.057 --> 00:03:11.890
+<v ->Sí.</v>
+
+75
+00:03:12.930 --> 00:03:14.790
+<v ->Sí, es por eso que me aseguro cuando muestro a clientes,</v>
+
+76
+00:03:14.790 --> 00:03:16.670
+me gusta mostrarles esto, no un proyector,
+
+77
+00:03:16.670 --> 00:03:20.029
+porque parece que he hecho una aplicación totalmente blanca.
+
+78
+00:03:20.029 --> 00:03:22.168
+<v ->Los proyectores son un tipo muy malo</v>
+
+79
+00:03:22.168 --> 00:03:24.264
+de demostraciones para muchos clientes.
+
+80
+00:03:24.264 --> 00:03:25.381
+<v ->Sí, exacto.</v>
+
+81
+00:03:25.381 --> 00:03:29.020
+Entonces, sí, estás pensando en mucho más
+
+82
+00:03:29.020 --> 00:03:31.030
+que simplemente el aspecto,
+
+83
+00:03:31.030 --> 00:03:32.658
+que se vea bonita.
+
+84
+00:03:32.658 --> 00:03:34.260
+Una muy buena herramienta.
+
+85
+00:03:34.260 --> 00:03:37.570
+para planificar el esquema de color
+
+86
+00:03:37.570 --> 00:03:42.570
+y pondremos el sitio web en los materiales del curso,
+
+87
+00:03:43.050 --> 00:03:47.310
+pero Paletton, es un gran sitio web donde puedes entrar
+
+88
+00:03:47.310 --> 00:03:49.240
+y puedes poner un valor hexadecimal
+
+89
+00:03:49.240 --> 00:03:51.620
+y te dará tonos más claros y oscuros
+
+90
+00:03:51.620 --> 00:03:54.250
+dentro de esa misma familia de colores.
+
+91
+00:03:54.250 --> 00:03:57.360
+También te mostrará diferentes tonos, diferentes colores,
+
+92
+00:03:57.360 --> 00:04:00.774
+complementarios, cosas así que puedes usar.
+
+93
+00:04:00.774 --> 00:04:05.280
+Un error muy común que muchos desarrolladores cometen
+
+94
+00:04:05.280 --> 00:04:06.970
+cuando están, como, codificando un botón,
+
+95
+00:04:06.970 --> 00:04:08.640
+por ejemplo, decir que tienen un botón verde
+
+96
+00:04:08.640 --> 00:04:11.246
+y luego tienen otro color al pasar por encima el ratón.
+
+97
+00:04:11.246 --> 00:04:12.079
+<v ->Correcto.</v>
+
+98
+00:04:12.079 --> 00:04:15.900
+<v ->Y ese otro tono de verde</v>
+
+99
+00:04:15.900 --> 00:04:18.280
+es un tono diferente, tiene una sombra diferente,
+
+100
+00:04:18.280 --> 00:04:20.310
+la sombra está bien, pero es como, oh,
+
+101
+00:04:20.310 --> 00:04:22.320
+eso es un verde mas saturado
+
+102
+00:04:22.320 --> 00:04:24.240
+y así, como, así que tienes esto, como,
+
+103
+00:04:24.240 --> 00:04:25.730
+un verde lima va a un verde bosque
+
+104
+00:04:25.730 --> 00:04:27.999
+y se ve horrible.
+
+105
+00:04:27.999 --> 00:04:31.350
+Entonces, realmente, eso es, voy allí cada vez.
+
+106
+00:04:31.350 --> 00:04:34.230
+Nunca he elegido arbitrariamente un tono más oscuro.
+
+107
+00:04:34.230 --> 00:04:35.630
+Voy a paletton
+
+108
+00:04:35.630 --> 00:04:39.050
+y tengo todos mis tonos más claros y más oscuros,
+
+109
+00:04:39.050 --> 00:04:40.530
+así que usaré un tono más claro
+
+110
+00:04:40.530 --> 00:04:41.950
+para tal vez un botón inactivo
+
+111
+00:04:41.950 --> 00:04:44.470
+y luego el tono principal para cuando está activo
+
+112
+00:04:44.470 --> 00:04:47.720
+y un tono más oscuro para cuando está resaltado.
+
+113
+00:04:47.720 --> 00:04:49.110
+Entonces, realmente quieres
+
+114
+00:04:49.110 --> 00:04:52.950
+tener esta estrategia en toda la aplicación.
+
+115
+00:04:52.950 --> 00:04:55.862
+Estos son los resaltados, estos son los estados inactivos,
+
+116
+00:04:55.862 --> 00:04:57.634
+estos son los colores principales.
+
+117
+00:04:57.634 --> 00:05:02.634
+Y usaremos mayormente el color verde,
+
+118
+00:05:02.890 --> 00:05:04.580
+pero luego de vez en cuando vamos a usar
+
+119
+00:05:04.580 --> 00:05:07.940
+rojo o azul en casos muy específicos
+
+120
+00:05:07.940 --> 00:05:09.660
+o tal vez, eres una aplicación
+
+121
+00:05:09.660 --> 00:05:11.810
+que usa ambos al mismo tiempo.
+
+122
+00:05:11.810 --> 00:05:14.610
+<v ->Y un ejemplo de,</v>
+
+123
+00:05:14.610 --> 00:05:15.530
+como de volver
+
+124
+00:05:15.530 --> 00:05:17.707
+a asegurarnos de que todo es pixel perfecto,
+
+125
+00:05:17.707 --> 00:05:20.360
+una vez con Dev Camp,
+
+126
+00:05:20.360 --> 00:05:22.990
+estaba construyendo una pantalla de envío
+
+127
+00:05:22.990 --> 00:05:24.290
+y tenia un botón
+
+128
+00:05:24.290 --> 00:05:28.180
+y todo emparejado excepto cuando empezaron a usarlo,
+
+129
+00:05:28.180 --> 00:05:30.602
+algo parecía un poco diferente.
+
+130
+00:05:30.602 --> 00:05:31.435
+<v ->Mm-hmm.</v>
+
+131
+00:05:31.435 --> 00:05:32.880
+<v ->Y fuiste tú quien lo descubrió.</v>
+
+132
+00:05:32.880 --> 00:05:34.830
+Y resultó que
+
+133
+00:05:34.830 --> 00:05:37.200
+El borde de...
+
+134
+00:05:37.200 --> 00:05:40.138
+<v ->El botón era ligeramente diferente.</v>
+
+135
+00:05:40.138 --> 00:05:42.260
+Y eso es lo que falló.
+
+136
+00:05:42.260 --> 00:05:45.730
+Estamos hablando literalmente de un borde de un píxel
+
+137
+00:05:45.730 --> 00:05:47.777
+y ni siquiera era horrible, no era como...
+
+138
+00:05:47.777 --> 00:05:49.330
+<v ->Solo lo hizo parecer borroso.</v>
+
+139
+00:05:49.330 --> 00:05:50.400
+<v ->Exactamente.</v>
+<v ->Sí, sí.</v>
+
+140
+00:05:50.400 --> 00:05:51.480
+<v ->Simplemente destacaba</v>
+
+141
+00:05:51.480 --> 00:05:54.430
+y lo hizo sentir no muy bien.
+
+142
+00:05:54.430 --> 00:05:58.990
+Y solo otro ejemplo de lo detallado que es.
+
+143
+00:05:58.990 --> 00:05:59.823
+<v ->Correcto.</v>
+
+144
+00:05:59.823 --> 00:06:00.656
+<v ->Y lo importante que es eso.</v>
+
+145
+00:06:00.656 --> 00:06:02.491
+<v ->Y, y no te enojes con tus diseñadores</v>
+
+146
+00:06:02.491 --> 00:06:05.080
+si están siendo realmente quisquillosos
+
+147
+00:06:05.080 --> 00:06:08.010
+sobre cosas así porque hace una gran diferencia.
+
+148
+00:06:08.010 --> 00:06:08.950
+<v ->Realmente lo hace.</v>
+
+149
+00:06:08.950 --> 00:06:11.350
+Por eso nunca me enojo,
+
+150
+00:06:11.350 --> 00:06:13.146
+solo para que entiendas el proceso,
+
+151
+00:06:13.146 --> 00:06:16.560
+cuando estoy trabajando en un proyecto con Jesse,
+
+152
+00:06:16.560 --> 00:06:20.060
+envía las pantallas, las implemento,
+
+153
+00:06:20.060 --> 00:06:24.150
+y luego, cuando siento que coinciden con lo que veo,
+
+154
+00:06:24.150 --> 00:06:27.780
+se las vuelvo a enviar para un proceso de control de calidad
+
+155
+00:06:27.780 --> 00:06:30.430
+y él lo revisa y luego envía notas.
+
+156
+00:06:30.430 --> 00:06:33.460
+Nunca me enojo cuando Jesse me envía notas
+
+157
+00:06:33.460 --> 00:06:35.820
+diciendo que no, no y no.
+
+158
+00:06:35.820 --> 00:06:37.080
+Estas cosas tienen que ser arregladas.
+
+159
+00:06:37.080 --> 00:06:39.300
+Porque marcan una diferencia significativa.
+
+160
+00:06:39.300 --> 00:06:42.989
+Y en una primera pasada, mi ojo no puede ver esas cosas,
+
+161
+00:06:42.989 --> 00:06:44.660
+pero tú eres el que construyó el diseño,
+
+162
+00:06:44.660 --> 00:06:47.060
+así que te das cuenta enseguida dónde estaba el problema.
+
+163
+00:06:47.060 --> 00:06:47.893
+<v ->Oh sí.</v>
+
+164
+00:06:47.893 --> 00:06:49.830
+<v ->Y eso marca una gran diferencia.</v>
+
+165
+00:06:49.830 --> 00:06:50.663
+<v ->Oh sí.</v>
+
+166
+00:06:50.663 --> 00:06:52.780
+Y muchas veces ni siquiera son necesariamente cosas
+
+167
+00:06:52.780 --> 00:06:55.490
+que detecté desde el principio.
+
+168
+00:06:55.490 --> 00:06:57.450
+Y luego una vez que realmente lo veo en uso,
+
+169
+00:06:57.450 --> 00:06:58.830
+y puedo pasar el ratón sobre las cosas,
+
+170
+00:06:58.830 --> 00:07:00.659
+y empezar a ver cómo funcionan las cosas,
+
+171
+00:07:00.659 --> 00:07:02.910
+de repente es como, vaya,
+
+172
+00:07:02.910 --> 00:07:04.210
+mi estrategia estaba equivocada.
+
+173
+00:07:04.210 --> 00:07:05.980
+Como, recuerdo esto una vez,
+
+174
+00:07:05.980 --> 00:07:07.280
+estaba en el gimnasio
+
+175
+00:07:07.280 --> 00:07:09.310
+y me llamaste
+
+176
+00:07:09.310 --> 00:07:12.970
+y acabábamos de implementar una pantalla
+
+177
+00:07:12.970 --> 00:07:16.666
+que muestra a quién estás siguiendo en DailySmarty.
+
+178
+00:07:16.666 --> 00:07:20.610
+Y todos los botones de quien estabas siguiendo,
+
+179
+00:07:20.610 --> 00:07:22.580
+así que, bueno, estamos mirando botones
+
+180
+00:07:22.580 --> 00:07:23.840
+y es como, quiero seguir a alguien
+
+181
+00:07:23.840 --> 00:07:26.080
+así que al pasar el ratón se pone azul, haz clic en él.
+
+182
+00:07:26.080 --> 00:07:27.190
+Bueno, ¿ahora qué hace el botón?
+
+183
+00:07:27.190 --> 00:07:29.280
+Después de haber hecho clic en Seguir,
+
+184
+00:07:29.280 --> 00:07:31.340
+¿dónde está el botón de dejar de seguir?
+
+185
+00:07:31.340 --> 00:07:32.230
+¿Cómo se ve eso?
+
+186
+00:07:32.230 --> 00:07:34.280
+Bueno, originalmente teníamos
+
+187
+00:07:34.280 --> 00:07:38.350
+el botón rojo para dejar de seguir,
+
+188
+00:07:38.350 --> 00:07:40.614
+para diferenciarlo de los otros botones de seguir.
+
+189
+00:07:40.614 --> 00:07:42.510
+Pero había algo realmente extraño.
+
+190
+00:07:42.510 --> 00:07:44.350
+Y lo estábamos viendo
+
+191
+00:07:44.350 --> 00:07:45.183
+y nos quedamos como:
+
+192
+00:07:45.183 --> 00:07:47.830
+Hay algo que a ambos no nos gusta de esta pantalla.
+
+193
+00:07:47.830 --> 00:07:48.663
+<v ->Correcto.</v>
+
+194
+00:07:48.663 --> 00:07:50.443
+<v ->Pero no sabíamos lo que era.</v>
+
+195
+00:07:50.443 --> 00:07:53.620
+Y lo que nos dimos cuenta fue, bueno,
+
+196
+00:07:53.620 --> 00:07:56.820
+esto muestra el poder del color.
+
+197
+00:07:56.820 --> 00:07:59.570
+Lo que pasaba es que todas las personas que seguías,
+
+198
+00:07:59.570 --> 00:08:02.270
+de repente, tenían una gran cosa roja y gruesa junto a ellas
+
+199
+00:08:02.270 --> 00:08:04.390
+y tenía como un efecto negativo.
+
+200
+00:08:04.390 --> 00:08:05.223
+<v ->Correcto.</v>
+
+201
+00:08:05.223 --> 00:08:06.330
+<v ->Pero estas son las personas que estás siguiendo.</v>
+
+202
+00:08:06.330 --> 00:08:09.030
+Estas son las personas que más te gustan en esta plataforma
+
+203
+00:08:09.030 --> 00:08:11.020
+y tenía este gran, como,
+
+204
+00:08:11.020 --> 00:08:13.070
+botón rojo enojado justo al lado de ellas
+
+205
+00:08:13.070 --> 00:08:14.950
+y simplemente no se sentía bien.
+
+206
+00:08:14.950 --> 00:08:17.303
+Aunque era muy funcional,
+
+207
+00:08:17.303 --> 00:08:20.205
+sé dónde ir a hacer clic para dejar de seguir a esa persona,
+
+208
+00:08:20.205 --> 00:08:22.920
+pero simplemente no te hacía sentir bien
+
+209
+00:08:22.920 --> 00:08:25.400
+sobre la gente a la que estabas siguiendo.
+
+210
+00:08:25.400 --> 00:08:28.230
+<v ->Correcto. Y eso es una cosa importante,</v>
+
+211
+00:08:28.230 --> 00:08:29.915
+con el color,
+
+212
+00:08:29.915 --> 00:08:33.020
+el rojo, por ejemplo, es algo que
+
+213
+00:08:33.020 --> 00:08:35.320
+usualmente solo se usa para señalar
+
+214
+00:08:35.320 --> 00:08:37.264
+que algo malo sucedió.
+
+215
+00:08:37.264 --> 00:08:39.800
+Por lo general es un error ocurrido en la página,
+
+216
+00:08:39.800 --> 00:08:43.000
+un formulario que usted envió no tenía la información
+
+217
+00:08:43.000 --> 00:08:46.480
+que se necesita y necesita ir a arreglarlo.
+
+218
+00:08:46.480 --> 00:08:50.649
+Típicamente el rojo tiene esa connotación negativa
+
+219
+00:08:50.649 --> 00:08:52.730
+en la mente de las personas.
+
+220
+00:08:52.730 --> 00:08:55.420
+Y lo que realmente me gustó fue,
+
+221
+00:08:55.420 --> 00:08:57.280
+para el ejemplo DailySmarty,
+
+222
+00:08:57.280 --> 00:09:01.000
+después de que tuvimos esa conversación, Jesse recomendó
+
+223
+00:09:01.000 --> 00:09:02.680
+que miráramos
+
+224
+00:09:02.680 --> 00:09:04.130
+cómo lo hacían otras personas.
+
+225
+00:09:04.130 --> 00:09:06.880
+Así que, volviendo a una de nuestras primeras guías,
+
+226
+00:09:06.880 --> 00:09:09.530
+cuando hablamos de conseguir inspiración.
+
+227
+00:09:09.530 --> 00:09:12.760
+La inspiración no solo ocurre al principio.
+
+228
+00:09:12.760 --> 00:09:15.296
+También va en cada etapa
+
+229
+00:09:15.296 --> 00:09:17.560
+de ese ciclo de vida del desarrollo.
+
+230
+00:09:17.560 --> 00:09:19.450
+Fuimos y miramos Instagram.
+
+231
+00:09:19.450 --> 00:09:22.330
+¿Instagram pone el botón rojo?
+
+232
+00:09:22.330 --> 00:09:25.268
+Y no, de hecho, cuando presionas seguir,
+
+233
+00:09:25.268 --> 00:09:28.180
+automáticamente lo cambia a blanco
+
+234
+00:09:28.180 --> 00:09:30.220
+y luego le permite enviar un mensaje a la persona.
+
+235
+00:09:30.220 --> 00:09:34.010
+Así que no hay ese tipo de connotación negativa
+
+236
+00:09:34.010 --> 00:09:36.220
+cuando estás viendo a tus amigos.
+
+237
+00:09:36.220 --> 00:09:40.040
+Ahora, las versiones antiguas de Twitter solían tener
+
+238
+00:09:40.040 --> 00:09:41.710
+ese mismo botón de no seguir.
+
+239
+00:09:41.710 --> 00:09:45.140
+Al hacer clic en seguir, se vuelve rojo el botón,
+
+240
+00:09:45.140 --> 00:09:47.700
+y luego Twitter cambió eso eventualmente.
+
+241
+00:09:47.700 --> 00:09:50.890
+Tal vez por las mismas razones por las que lo cambiamos.
+
+242
+00:09:50.890 --> 00:09:53.300
+Y eso es solo un gran ejemplo,
+
+243
+00:09:53.300 --> 00:09:55.140
+un gran caso de estudio
+
+244
+00:09:55.140 --> 00:09:57.090
+para mostrar la importancia del color
+
+245
+00:09:57.090 --> 00:09:58.190
+en una aplicación.
+
+246
+00:09:58.190 --> 00:09:59.023
+<v ->Correcto.</v>
+
+247
+00:09:59.023 --> 00:10:01.460
+Y muestra cómo interactúa la interfaz de usuario
+
+248
+00:10:01.460 --> 00:10:03.560
+con la experiencia de usuario.
+
+249
+00:10:03.560 --> 00:10:05.370
+Porque estás pensando en un par de cosas.
+
+250
+00:10:05.370 --> 00:10:08.550
+Entonces, en ese punto tenemos que hacernos la pregunta,
+
+251
+00:10:08.550 --> 00:10:10.300
+esta bien, a Instagram
+
+252
+00:10:10.300 --> 00:10:13.330
+no les gusta dejar un montón de botones de no seguir
+
+253
+00:10:13.330 --> 00:10:15.540
+porque no quieren que la gente juegue con ellos.
+
+254
+00:10:15.540 --> 00:10:16.990
+No quieren que la gente entre solo
+
+255
+00:10:16.990 --> 00:10:18.960
+para no seguir, no seguir, no seguir.
+
+256
+00:10:18.960 --> 00:10:23.610
+Y así, ellos, ya sabes, quieren enterrar el botón.
+
+257
+00:10:23.610 --> 00:10:25.510
+Lo que siempre me preocupa al hablar
+
+258
+00:10:25.510 --> 00:10:27.590
+acerca de las interfaces específicas es que
+
+259
+00:10:27.590 --> 00:10:28.812
+para cuando la gente vea esto--
+
+260
+00:10:28.812 --> 00:10:29.910
+<v ->Podría haber cambiado.</v>
+
+261
+00:10:29.910 --> 00:10:32.083
+<v ->Podría haber cambiado y ser diferente.</v>
+
+262
+00:10:32.083 --> 00:10:33.540
+Pero tienes que, como, ir al perfil de la persona
+
+263
+00:10:33.540 --> 00:10:35.520
+y luego tienes que dejar de seguirla.
+
+264
+00:10:35.520 --> 00:10:36.830
+Y así, tenemos que preguntarnos
+
+265
+00:10:36.830 --> 00:10:38.970
+¿queremos hacerlo más difícil a propósito
+
+266
+00:10:38.970 --> 00:10:41.417
+el dejar de seguir a las personas en masa o no?
+
+267
+00:10:41.417 --> 00:10:44.410
+O tal vez hasta que lleguemos a una cierta cantidad
+
+268
+00:10:44.410 --> 00:10:46.330
+vamos a hacerlo lo más fácil de usar posible
+
+269
+00:10:46.330 --> 00:10:49.744
+y tras hacer clic en Seguir quizá se vuelve azul sólido
+
+270
+00:10:49.744 --> 00:10:51.730
+y luego dice Dejar de seguir.
+
+271
+00:10:51.730 --> 00:10:54.600
+Solo cambia las palabras, pero no se pone rojo
+
+272
+00:10:54.600 --> 00:10:55.748
+para connotar algo malo.
+
+273
+00:10:55.748 --> 00:10:57.090
+<v ->Absolutamente.</v>
+
+274
+00:10:57.090 --> 00:10:58.970
+Y esa es realmente una de las principales conclusiones
+
+275
+00:10:58.970 --> 00:11:02.072
+que quiero que obtengas de esta guía específica
+
+276
+00:11:02.072 --> 00:11:05.539
+es que los colores son mucho mas que
+
+277
+00:11:05.539 --> 00:11:09.130
+solo una especie de paleta en la pantalla.
+
+278
+00:11:09.130 --> 00:11:11.165
+Son algo que puede ayudar a dictar
+
+279
+00:11:11.165 --> 00:11:14.550
+esa experiencia de usuario y cambiar la forma
+
+280
+00:11:14.550 --> 00:11:17.140
+en que tus usuarios interactúen con el sistema.
+
+281
+00:11:17.140 --> 00:11:19.300
+Así que definitivamente te recomiendo que te vayas
+
+282
+00:11:19.300 --> 00:11:22.300
+y eches un vistazo a algunas aplicaciones populares
+
+283
+00:11:22.300 --> 00:11:26.370
+y tengas en cuenta los diferentes tipos de esquemas de color
+
+284
+00:11:26.370 --> 00:11:27.880
+y paletas que utilizan.
+
+285
+00:11:27.880 --> 00:11:29.740
+Mira como usan colores similares
+
+286
+00:11:29.740 --> 00:11:31.292
+para cosas como las que mencionaste, como,
+
+287
+00:11:31.292 --> 00:11:34.150
+para botones y efectos de desplazamiento del botón
+
+288
+00:11:34.150 --> 00:11:37.000
+y ver la forma en que crean ese tipo de combinación.
+
+289
+00:11:37.000 --> 00:11:39.050
+Y te veremos en la próxima guía.
+

@@ -1,0 +1,490 @@
+WEBVTT
+
+1
+00:00:01.000 --> 00:00:02.980
+<v Narrador>En esta lección, vamos a repasar</v>
+
+2
+00:00:02.980 --> 00:00:06.620
+la regla de justificación de contenido en flexbox.
+
+3
+00:00:06.620 --> 00:00:09.910
+Así que, hemos trabajado con un poco hasta este punto
+
+4
+00:00:09.910 --> 00:00:13.530
+pero ahora vamos a explorar todas las diferentes opciones
+
+5
+00:00:13.530 --> 00:00:17.500
+que puede utilizar cuando trabaje con contenido justificado.
+
+6
+00:00:17.500 --> 00:00:19.860
+Así que, hay algunas cosas diferentes
+
+7
+00:00:19.860 --> 00:00:22.950
+a tener en cuenta cuando se usa eso.
+
+8
+00:00:22.950 --> 00:00:26.530
+Así que hasta ahora, en lo que realmente nos hemos centrado
+
+9
+00:00:26.530 --> 00:00:29.490
+fue en realizar tareas como el centrado.
+
+10
+00:00:29.490 --> 00:00:33.880
+Y así, aquí puedo decir justificar el contenido
+
+11
+00:00:33.880 --> 00:00:36.780
+en el centro y luego puedes ver que se centra
+
+12
+00:00:36.780 --> 00:00:38.880
+en exactamente como lo esperábamos.
+
+13
+00:00:38.880 --> 00:00:41.370
+No tengo las partidas aquí
+
+14
+00:00:41.370 --> 00:00:43.840
+sólo porque quiero que eso te confunda pero por ahora
+
+15
+00:00:43.840 --> 00:00:48.160
+sólo quiero concentrarme en justificar el contenido.
+
+16
+00:00:48.160 --> 00:00:49.618
+Por lo tanto, hemos visto cómo podemos
+
+17
+00:00:49.618 --> 00:00:51.043
+centrar los elementos.
+
+18
+00:00:51.043 --> 00:00:55.300
+Ahora, aquí es donde voy a volver a mencionar la diferencia
+
+19
+00:00:55.300 --> 00:00:59.720
+entre un artículo flexible y un contenedor flexible porque
+
+20
+00:00:59.720 --> 00:01:01.620
+cuando estamos haciendo esto,
+
+21
+00:01:01.620 --> 00:01:05.280
+estamos diciendo que queremos justificar el contenido
+
+22
+00:01:05.280 --> 00:01:07.900
+de todo este elemento.
+
+23
+00:01:07.900 --> 00:01:11.030
+Así que, no pienses en ello como tres imágenes,
+
+24
+00:01:11.030 --> 00:01:14.040
+piensa en ello como en un solo div
+
+25
+00:01:14.040 --> 00:01:15.940
+y eso tendrá más sentido.
+
+26
+00:01:15.940 --> 00:01:17.950
+Esa es la razón por la que justify-content
+
+27
+00:01:17.950 --> 00:01:21.440
+simplemente desliza todos los elementos hacia aquí.
+
+28
+00:01:21.440 --> 00:01:23.510
+Así que, ese es el elemento padre.
+
+29
+00:01:23.510 --> 00:01:25.851
+Por lo tanto, justificar el contenido es usar el centro
+
+30
+00:01:25.851 --> 00:01:28.090
+como un solo ítem.
+
+31
+00:01:28.090 --> 00:01:33.090
+El valor por defecto es lo que se llama flex-start.
+
+32
+00:01:33.140 --> 00:01:35.433
+Así que, si digo flex-start,
+
+33
+00:01:35.433 --> 00:01:38.280
+va a colocarlo justo al principio
+
+34
+00:01:38.280 --> 00:01:40.940
+así que esto es exactamente lo mismo
+
+35
+00:01:40.940 --> 00:01:43.660
+que si yo no hubiera hecho nada en absoluto
+
+36
+00:01:43.660 --> 00:01:46.480
+y simplemente lo estuviera colocando allí.
+
+37
+00:01:46.480 --> 00:01:50.050
+Ahora, flex-start también tiene flex-end.
+
+38
+00:01:50.050 --> 00:01:51.610
+Así que, si presiono guardar,
+
+39
+00:01:51.610 --> 00:01:55.070
+puedes ver que el flex-end lo mueve
+
+40
+00:01:55.070 --> 00:01:56.970
+hasta el lado derecho.
+
+41
+00:01:56.970 --> 00:01:59.703
+Por lo tanto, hemos pasado por el centro,
+
+42
+00:02:00.700 --> 00:02:02.970
+flex-start y flex-end.
+
+43
+00:02:02.970 --> 00:02:06.280
+Ahora tenemos un par de otros que les voy a mostrar
+
+44
+00:02:06.280 --> 00:02:07.920
+pero son un poco diferentes
+
+45
+00:02:07.920 --> 00:02:11.560
+porque en este caso no van a hacer nada
+
+46
+00:02:11.560 --> 00:02:14.200
+por nosotros dentro de este contenedor
+
+47
+00:02:14.200 --> 00:02:18.480
+porque este contenedor sólo tiene un artículo dentro de él.
+
+48
+00:02:18.480 --> 00:02:21.330
+Sólo tiene este solo div.
+
+49
+00:02:21.330 --> 00:02:22.970
+Así que, lo que voy a hacer es
+
+50
+00:02:22.970 --> 00:02:25.770
+cambiar esto a centro,
+
+51
+00:02:25.770 --> 00:02:28.510
+sólo para que vuelva a estar en el centro
+
+52
+00:02:28.510 --> 00:02:30.560
+y ahora vamos a ver
+
+53
+00:02:30.560 --> 00:02:33.880
+cómo podemos usar la misma opción de justificar el contenido
+
+54
+00:02:33.880 --> 00:02:35.720
+para todos los elementos.
+
+55
+00:02:35.720 --> 00:02:40.270
+Así que, puedo bajar a este otro contenedor flexible
+
+56
+00:02:40.270 --> 00:02:42.430
+y ahora decir,
+
+57
+00:02:42.430 --> 00:02:46.540
+justificar-contenido y voy a usar uno diferente.
+
+58
+00:02:46.540 --> 00:02:49.830
+Así que aquí voy a decir espacio
+
+59
+00:02:49.830 --> 00:02:51.796
+e incluso vemos que tenemos espacio - alrededor
+
+60
+00:02:51.796 --> 00:02:53.340
+y entre el espacio y el espacio.
+
+61
+00:02:53.340 --> 00:02:54.980
+Empecemos con el espacio intermedio.
+
+62
+00:02:54.980 --> 00:02:57.960
+Voy a pulsar guardar y ahora puedes ver que eso nos da a
+
+63
+00:02:57.960 --> 00:03:02.360
+todos el espacio vacío que está disponible.
+
+64
+00:03:02.360 --> 00:03:04.660
+Por lo tanto, lo que hace la flexbox es
+
+65
+00:03:04.660 --> 00:03:07.700
+buscar todo el espacio disponible
+
+66
+00:03:07.700 --> 00:03:10.600
+que es accesible por el contenedor
+
+67
+00:03:10.600 --> 00:03:12.230
+y en este caso todo
+
+68
+00:03:12.230 --> 00:03:14.360
+desde arriba hasta abajo.
+
+69
+00:03:14.360 --> 00:03:17.200
+Hay veces en las que el único espacio disponible
+
+70
+00:03:17.200 --> 00:03:20.060
+es de aquí en la página a aquí, dependiendo de la
+
+71
+00:03:20.060 --> 00:03:22.530
+restricción que se le dé.
+
+72
+00:03:22.530 --> 00:03:26.400
+Pero por ahora estamos usando toda la página
+
+73
+00:03:26.400 --> 00:03:27.233
+de nuestro lienzo
+
+74
+00:03:27.233 --> 00:03:30.150
+así que, el espacio intermedio añade todo el espacio vacío.
+
+75
+00:03:30.150 --> 00:03:34.700
+Sólo espacia uniformemente entre cada uno de los ítems.
+
+76
+00:03:34.700 --> 00:03:37.950
+Ahora también hay uno que es uno que es una especie
+
+77
+00:03:37.950 --> 00:03:40.350
+de cierre que es el espacio alrededor.
+
+78
+00:03:40.350 --> 00:03:44.110
+Por lo tanto, si presiono Guardar aquí, lo que eso
+
+79
+00:03:44.110 --> 00:03:48.450
+va a hacer es que nos va a dar una distribución
+
+80
+00:03:48.450 --> 00:03:51.940
+uniforme desde el principio hasta el final.
+
+81
+00:03:51.940 --> 00:03:55.970
+Y así, hay muchas veces en las que no quieres
+
+82
+00:03:55.970 --> 00:03:59.620
+que los objetos vayan y se muevan contra el costado.
+
+83
+00:03:59.620 --> 00:04:01.730
+Imagínese si usted agrega tarjetas en la página
+
+84
+00:04:01.730 --> 00:04:04.020
+y las quiere centradas en la página
+
+85
+00:04:04.020 --> 00:04:07.610
+y esto es algo que he formateado bastante recientemente
+
+86
+00:04:07.610 --> 00:04:10.610
+con flexbox donde yo quería que se centrara en la página
+
+87
+00:04:10.610 --> 00:04:14.610
+pero no quería que fuera completamente de lado a lado.
+
+88
+00:04:14.610 --> 00:04:16.020
+Quería que estuvieran contenidos
+
+89
+00:04:16.020 --> 00:04:19.050
+y ahí es donde el espacio alrededor puede ser útil.
+
+90
+00:04:19.050 --> 00:04:22.050
+Por lo tanto, tenemos cinco opciones
+
+91
+00:04:22.050 --> 00:04:24.970
+totales que podemos usar con contenido justificado.
+
+92
+00:04:24.970 --> 00:04:27.370
+Sólo para repasarlas, tenemos el centro
+
+93
+00:04:27.370 --> 00:04:29.840
+que es uno de los más comunes que utilizo.
+
+94
+00:04:29.840 --> 00:04:32.950
+Ahí es donde se centran todos los artículos.
+
+95
+00:04:32.950 --> 00:04:35.240
+Luego, tenemos flex-start
+
+96
+00:04:36.190 --> 00:04:39.350
+que va a ser lo mismo que no hacer nada
+
+97
+00:04:39.350 --> 00:04:41.680
+porque flex-start es el predeterminado.
+
+98
+00:04:41.680 --> 00:04:43.053
+Y tenemos flex-end.
+
+99
+00:04:44.000 --> 00:04:47.095
+Flex-end va a mover eso hasta el fondo y luego tenemos
+
+100
+00:04:47.095 --> 00:04:49.873
+los otros que son espacio-entre
+
+101
+00:04:49.873 --> 00:04:52.390
+y espacio-alrededor.
+
+102
+00:04:52.390 --> 00:04:56.010
+Ahora, como lo hicimos en nuestra guía de dirección
+
+103
+00:04:56.010 --> 00:04:57.560
+flexible, si cambié la fila
+
+104
+00:04:57.560 --> 00:05:00.580
+o me deshice por completo de la dirección flexible,
+
+105
+00:05:00.580 --> 00:05:03.730
+entonces va a tener este tipo de comportamiento
+
+106
+00:05:03.730 --> 00:05:05.790
+que se ve un poco diferente.
+
+107
+00:05:05.790 --> 00:05:09.670
+Y eso es porque se estira en ellos
+
+108
+00:05:09.670 --> 00:05:11.320
+de un lado a otro.
+
+109
+00:05:11.320 --> 00:05:16.320
+Y así que tener un flex-end aquí o tener espacio
+
+110
+00:05:17.179 --> 00:05:19.010
+entre ellos o algo así
+
+111
+00:05:19.010 --> 00:05:21.400
+va a actuar un poco raro.
+
+112
+00:05:21.400 --> 00:05:23.110
+Y así que veremos más adelante
+
+113
+00:05:23.110 --> 00:05:24.700
+cómo podríamos arreglar esto
+
+114
+00:05:24.700 --> 00:05:28.210
+si queremos que haga fila, pero esa fue parte de la razón
+
+115
+00:05:28.210 --> 00:05:31.630
+por la que para este conjunto de ejemplo voy a ir
+
+116
+00:05:31.630 --> 00:05:34.010
+con la columna sólo porque es más fácil de ver en la página
+
+117
+00:05:34.010 --> 00:05:37.360
+y que también tiene un comportamiento común que usted
+
+118
+00:05:37.360 --> 00:05:39.630
+querría si usted es esas imágenes como esa.
+
+119
+00:05:39.630 --> 00:05:43.840
+Por lo tanto, en resumen, ese es el conjunto de opciones
+
+120
+00:05:43.840 --> 00:05:46.730
+que puede utilizar siempre que trabaje con contenido
+
+121
+00:05:46.730 --> 00:05:50.050
+de justificación, es espacio entre,
+
+122
+00:05:50.050 --> 00:05:52.283
+espacio alrededor, centro, flex-end y flex-start.
+

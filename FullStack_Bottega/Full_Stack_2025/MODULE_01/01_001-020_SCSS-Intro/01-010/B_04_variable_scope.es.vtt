@@ -1,0 +1,478 @@
+WEBVTT
+
+1
+00:00:00.750 --> 00:00:01.750
+<v Instructor>Hasta ahora hemos hablado</v>
+
+2
+00:00:01.750 --> 00:00:03.990
+de como funcionan las variables en SCSS,
+
+3
+00:00:03.990 --> 00:00:07.010
+y hemos hablado de algunos componentes más avanzados
+
+4
+00:00:07.010 --> 00:00:10.330
+tales como cómo trabajar con variables por defecto,
+
+5
+00:00:10.330 --> 00:00:13.680
+y esto demuestra que es muy importante
+
+6
+00:00:13.680 --> 00:00:15.620
+comprender, no solo con SCSS,
+
+7
+00:00:15.620 --> 00:00:18.150
+pero cualquier lenguaje de programación punto.
+
+8
+00:00:18.150 --> 00:00:21.760
+Que es como trabajar con el ámbito de variables.
+
+9
+00:00:21.760 --> 00:00:24.660
+Entonces ¿Qué es esto exactamente?
+
+10
+00:00:24.660 --> 00:00:27.680
+Buen, el ámbito de variables nos da la habilidad
+
+11
+00:00:27.680 --> 00:00:32.490
+de definir que partes de nuestro programa tienen acceso
+
+12
+00:00:32.490 --> 00:00:35.610
+a variables, así que si venimos de un lenguaje
+
+13
+00:00:35.610 --> 00:00:38.800
+como Ruby, entonces una variable local,
+
+14
+00:00:38.800 --> 00:00:43.000
+sabes que ya está y solo se puede llamar
+
+15
+00:00:43.000 --> 00:00:46.880
+desde dentro de un método, mientras que si la quieres llamar
+
+16
+00:00:46.880 --> 00:00:51.110
+desde otro tipo de archivo, necesitas crear
+
+17
+00:00:51.110 --> 00:00:54.440
+un tipo distinto de variable y necesitas exportarla
+
+18
+00:00:54.440 --> 00:00:56.450
+y necesitas poder importarla.
+
+19
+00:00:56.450 --> 00:00:59.070
+Muy similar a como funcionan las cosas en SCSS,
+
+20
+00:00:59.070 --> 00:01:01.120
+excepto que SCSS sigue las reglas
+
+21
+00:01:01.120 --> 00:01:03.050
+de hojas de estilo en cascada,
+
+22
+00:01:03.050 --> 00:01:06.200
+que es lo que CSS significa, entonces aquí,
+
+23
+00:01:06.200 --> 00:01:09.070
+lo que tenemos es nuestro, lo he regresado
+
+24
+00:01:09.070 --> 00:01:11.650
+a nuestro archivo regular donde solo tenemos estas variables
+
+25
+00:01:11.650 --> 00:01:13.520
+de líneas top aquí,
+
+26
+00:01:13.520 --> 00:01:16.160
+y luego las llamamos desde distintas partes
+
+27
+00:01:16.160 --> 00:01:18.980
+de la aplicación, así que ahora mismo,
+
+28
+00:01:18.980 --> 00:01:21.500
+cada uno de estos objetos, puedes pensar en esto
+
+29
+00:01:21.500 --> 00:01:24.680
+como un ámbito de alto nivel para esas variables.
+
+30
+00:01:24.680 --> 00:01:26.800
+Ahora, con la forma en la que trabaja SCSS,
+
+31
+00:01:26.800 --> 00:01:30.630
+es que mientras más cercano y específico
+
+32
+00:01:30.630 --> 00:01:33.640
+definas esas variables,
+
+33
+00:01:33.640 --> 00:01:37.420
+más cercano será o tomará esos objetos
+
+34
+00:01:37.420 --> 00:01:39.400
+¿Qué significa eso exactamente?
+
+35
+00:01:39.400 --> 00:01:42.430
+Bueno, bajemos a .page-content.
+
+36
+00:01:42.430 --> 00:01:46.010
+Justo ahora el color de fondo es $featured-color,
+
+37
+00:01:46.010 --> 00:01:50.360
+que estamos definiendo aquí, pero si re-defino esto,
+
+38
+00:01:50.360 --> 00:01:54.580
+si copio esto y lo pego aquí,
+
+39
+00:01:54.580 --> 00:01:58.403
+y re-defino esto para decir coral claro
+
+40
+00:02:00.050 --> 00:02:00.990
+¿Ves lo que pasa?
+
+41
+00:02:00.990 --> 00:02:05.510
+Lo cambia, ahora está ignorando este valor
+
+42
+00:02:05.510 --> 00:02:07.550
+porque está siendo re-definido aquí.
+
+43
+00:02:07.550 --> 00:02:10.360
+Y este es uno de los conceptos más importantes
+
+44
+00:02:10.360 --> 00:02:12.680
+cuando se trata de entender no solo SCSS,
+
+45
+00:02:12.680 --> 00:02:16.190
+pero también como CSS funciona en general,
+
+46
+00:02:16.190 --> 00:02:20.470
+es, siendo capaz de saber que mientras más específico
+
+47
+00:02:20.470 --> 00:02:23.870
+es un objeto, ese será el que sea
+
+48
+00:02:23.870 --> 00:02:27.830
+llamado, entonces .page-content
+
+49
+00:02:27.830 --> 00:02:29.650
+justo aquí, que tiene $features-color,
+
+50
+00:02:29.650 --> 00:02:31.250
+llamará esta variable
+
+51
+00:02:31.250 --> 00:02:33.810
+y usará el valor de la variable
+
+52
+00:02:33.810 --> 00:02:37.610
+que es más específico, eso es algo que es
+
+53
+00:02:37.610 --> 00:02:41.470
+muy importante de entender porque te prometo
+
+54
+00:02:41.470 --> 00:02:44.960
+te encontrarás momentos donde pienses que
+
+55
+00:02:44.960 --> 00:02:48.140
+hiciste un cambio, y luego no te das cuenta
+
+56
+00:02:48.140 --> 00:02:51.410
+que de hecho sobreesctibiste ese valor,
+
+57
+00:02:51.410 --> 00:02:54.010
+o quizás estás trabajando un templete
+
+58
+00:02:54.010 --> 00:02:57.900
+y te preguntas por qué estás cambiando un valor variable
+
+59
+00:02:57.900 --> 00:03:01.990
+que no está poblando y no está cambiando más adelante.
+
+60
+00:03:01.990 --> 00:03:04.370
+Entonces, esto es muy importante entenderlo
+
+61
+00:03:04.370 --> 00:03:06.350
+para poder trabajar con ámbitos,
+
+62
+00:03:06.350 --> 00:03:09.520
+pero también debería darte algunas buenas ideas
+
+63
+00:03:09.520 --> 00:03:13.720
+en las mejores prácticas cuando se trata de CSS.
+
+64
+00:03:13.720 --> 00:03:18.100
+Porque si comienzas a hacer estas cosas muy a menudo,
+
+65
+00:03:18.100 --> 00:03:20.150
+donde estás sobreescibiendo variables,
+
+66
+00:03:20.150 --> 00:03:23.930
+entonces podrías estar introduciendo errores muy intrincados
+
+67
+00:03:23.930 --> 00:03:26.250
+en tu aplicación que serán más difícil
+
+68
+00:03:26.250 --> 00:03:28.730
+de descifrar más adelante, por ejemplo,
+
+69
+00:03:28.730 --> 00:03:31.820
+si sobreescribo el ámbito aquí,
+
+70
+00:03:31.820 --> 00:03:34.410
+y re-defino $featured-color,
+
+71
+00:03:34.410 --> 00:03:37.130
+si en algún momento después
+
+72
+00:03:37.130 --> 00:03:39.870
+alguien quiere cambiar esto de verde oscuro
+
+73
+00:03:41.340 --> 00:03:44.250
+a rojo oscuro, creo que este cambio
+
+74
+00:03:44.250 --> 00:03:46.460
+será poblado en el resto de la aplicación
+
+75
+00:03:46.460 --> 00:03:50.200
+pero si he sobreescrito
+
+76
+00:03:50.200 --> 00:03:52.510
+esa variable múltiples veces,
+
+77
+00:03:52.510 --> 00:03:57.010
+entonces quizás no suceda, no veré los cambios
+
+78
+00:03:57.010 --> 00:03:58.370
+tal como los estamos viendo aquí.
+
+79
+00:03:58.370 --> 00:04:00.570
+Hice el cambio a rojo oscuro, y fue
+
+80
+00:04:00.570 --> 00:04:03.740
+y pobló el cambio aquí para .featured,
+
+81
+00:04:03.740 --> 00:04:07.120
+pero no lo hizo para el $featured-color
+
+82
+00:04:07.120 --> 00:04:10.020
+para .page-content, entonces así es como funciona el ámbito
+
+83
+00:04:10.020 --> 00:04:13.210
+y esto en algunos lenguajes de programación, para variables
+
+84
+00:04:13.210 --> 00:04:16.200
+puede ser muy confuso. Si alguna vez has trabajado
+
+85
+00:04:16.200 --> 00:04:19.520
+con el ámbito de variables JavaScript, que tiene todo tipo
+
+86
+00:04:19.520 --> 00:04:23.040
+de distintos casos extremos y maneras
+
+87
+00:04:23.040 --> 00:04:24.850
+en las que te puede engañarte.
+
+88
+00:04:24.850 --> 00:04:28.200
+Cuando se trata de trabajar con el ámbito en SCSS,
+
+89
+00:04:28.200 --> 00:04:31.310
+sigue una regla bastante sencilla,
+
+90
+00:04:31.310 --> 00:04:34.500
+que es que en lo que entre,
+
+91
+00:04:34.500 --> 00:04:38.760
+utilizará cualquiera sea el elemento más específico,
+
+92
+00:04:38.760 --> 00:04:41.440
+y entonces lo mismo sucedería
+
+93
+00:04:41.440 --> 00:04:43.653
+déjame cortar esto aquí,
+
+94
+00:04:44.720 --> 00:04:47.933
+y ahora si voy al tope
+
+95
+00:04:49.010 --> 00:04:51.860
+y copio esto, mira le que sucede.
+
+96
+00:04:51.860 --> 00:04:56.340
+Ha cambiado el background-color de la página About us.
+
+97
+00:04:56.340 --> 00:04:58.330
+Porque esto está en el wrapper de página,
+
+98
+00:04:58.330 --> 00:05:01.260
+estamos definiendo $featured-color
+
+99
+00:05:01.260 --> 00:05:03.130
+no solo aquí en .page-content,
+
+100
+00:05:03.130 --> 00:05:07.760
+pero también estamos definiendo el color .featured-here.
+
+101
+00:05:07.760 --> 00:05:10.830
+Este es solo otro ejemplo de ámbito de variables.
+
+102
+00:05:10.830 --> 00:05:13.040
+Este es el ámbito de nivel tope justo aquí,
+
+103
+00:05:13.040 --> 00:05:16.050
+y luego mientras más nos acerquemos al elemento de la página
+
+104
+00:05:16.050 --> 00:05:20.040
+que intentamos cambiar, más,
+
+105
+00:05:20.040 --> 00:05:23.030
+o más importante será ese valor,
+
+106
+00:05:23.030 --> 00:05:25.820
+y será mayor la probabilidad de sobreescribirlo
+
+107
+00:05:25.820 --> 00:05:28.190
+para uno de estos, entonces hay momentos
+
+108
+00:05:28.190 --> 00:05:30.040
+donde querrás hacer esto,
+
+109
+00:05:30.040 --> 00:05:33.930
+y cuando comencemos a trabajar con cosas como funciones
+
+110
+00:05:33.930 --> 00:05:36.950
+o mixis, y habrán,
+
+111
+00:05:36.950 --> 00:05:39.450
+verás ejemplos de cuando esto puede ser importante
+
+112
+00:05:39.450 --> 00:05:41.930
+y cuando querrás cambiar esto dinámicamente,
+
+113
+00:05:41.930 --> 00:05:45.250
+tal como hacer algo como sobreescribir
+
+114
+00:05:45.250 --> 00:05:49.470
+el ancho de un componente si estás en un teléfono móvil
+
+115
+00:05:49.470 --> 00:05:52.800
+o tablet, comparado con una pantalla de tamaño regular,
+
+116
+00:05:52.800 --> 00:05:55.610
+un sistema de escritorio, para que no sea tanto algo
+
+117
+00:05:55.610 --> 00:05:57.880
+que ver con colores, es algo que harás
+
+118
+00:05:57.880 --> 00:06:00.600
+cuando entremos en cosas más complicadas como funciones.
+
+119
+00:06:00.600 --> 00:06:04.223
+Esta es una introducción al ámbito de variables en SCSS.
+

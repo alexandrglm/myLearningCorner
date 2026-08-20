@@ -1,0 +1,1058 @@
+WEBVTT
+
+1
+00:00:00.810 --> 00:00:03.130
+<v ->Hasta ahora, en este curso, hemos hablado</v>
+
+2
+00:00:03.130 --> 00:00:05.820
+de todo, desde lo que debería estar discutiendo
+
+3
+00:00:05.820 --> 00:00:08.580
+con sus clientes o con las partes interesadas del proyecto,
+
+4
+00:00:08.580 --> 00:00:11.450
+desde el principio, incluso antes de que
+
+5
+00:00:11.450 --> 00:00:14.550
+haya abierto su computadora, hasta el final
+
+6
+00:00:14.550 --> 00:00:18.200
+y cuando realmente diseñe el sistema.
+
+7
+00:00:18.200 --> 00:00:20.580
+Incluimos wireframes, todo tipo
+
+8
+00:00:20.580 --> 00:00:22.350
+de temas diferentes como ese.
+
+9
+00:00:22.350 --> 00:00:24.820
+Esos son cada uno de los pasos que tomaría
+
+10
+00:00:24.820 --> 00:00:27.060
+en cada nivel y en cada etapa
+
+11
+00:00:27.060 --> 00:00:29.560
+de este proceso de desarrollo de UX.
+
+12
+00:00:29.560 --> 00:00:32.580
+Pero en lo que no hemos entendido es cómo puedes
+
+13
+00:00:32.580 --> 00:00:36.020
+practicar prácticamente este tipo de temas
+
+14
+00:00:36.020 --> 00:00:39.820
+y cómo puedes mejorar como desarrollador de UX.
+
+15
+00:00:39.820 --> 00:00:43.240
+Y Jesse tiene mucha experiencia en esto
+
+16
+00:00:43.240 --> 00:00:47.710
+y definitivamente es uno de los jugadores con UX y UI más
+
+17
+00:00:47.710 --> 00:00:49.490
+talentosos con los que he tenido el placer de trabajar, así
+
+18
+00:00:49.490 --> 00:00:54.490
+que quiero saber tu opinión sobre cómo has mejorado, porque.
+
+19
+00:00:54.690 --> 00:00:55.523
+<v ->Cierto.</v>
+
+20
+00:00:55.523 --> 00:00:57.880
+<v ->Sé que probablemente naciste con un talento innato.</v>
+
+21
+00:00:58.916 --> 00:01:01.094
+<v ->Pero creo que probablemente lo hayas desarrollado</v>
+
+22
+00:01:01.094 --> 00:01:04.010
+debido a lo duro que has trabajado y los diferentes
+
+23
+00:01:04.010 --> 00:01:06.030
+pasos que tomas cada día para mejorar.
+
+24
+00:01:06.030 --> 00:01:07.680
+<v ->Claro, tan absolutamente.</v>
+
+25
+00:01:07.680 --> 00:01:10.100
+Quiero decir, creo que los desarrolladores a veces
+
+26
+00:01:10.100 --> 00:01:15.100
+están un poco asustados cuando las palabras o las letras UI
+
+27
+00:01:15.134 --> 00:01:16.390
+UX vienen volando alrededor.
+
+28
+00:01:16.390 --> 00:01:18.160
+<v ->Lo sé.</v>
+
+29
+00:01:18.160 --> 00:01:21.060
+<v ->Pero honestamente, como especialmente en UX, es un</v>
+
+30
+00:01:21.060 --> 00:01:23.630
+conjunto de habilidades muy similar a desarrollar.
+
+31
+00:01:23.630 --> 00:01:25.710
+Mucho pensamiento crítico, cosas así.
+
+32
+00:01:25.710 --> 00:01:27.600
+Sin embargo, quiero comenzar, en lo que creo que es la
+
+33
+00:01:27.600 --> 00:01:32.250
+parte más importante de ser un buen diseñador experimentado.
+
+34
+00:01:32.250 --> 00:01:34.520
+Y eso sería comunicación.
+
+35
+00:01:34.520 --> 00:01:38.250
+Mejorar su capacidad para comunicarse es realmente
+
+36
+00:01:38.250 --> 00:01:40.995
+lo que le permite a ambos obtener la información
+
+37
+00:01:40.995 --> 00:01:42.120
+del cliente.
+
+38
+00:01:42.120 --> 00:01:44.290
+Quiero decir, la mayor parte de lo que hago todo el día es
+
+39
+00:01:44.290 --> 00:01:45.853
+hablar y hablar con los clientes,
+
+40
+00:01:45.853 --> 00:01:47.811
+resolviendo sus problemas con ellos
+
+41
+00:01:47.811 --> 00:01:50.420
+y luego comunicándolos claramente
+
+42
+00:01:50.420 --> 00:01:54.170
+a mis desarrolladores, líderes del equipo.
+
+43
+00:01:54.170 --> 00:01:56.950
+La comunicación es tan importante en todo esto.
+
+44
+00:01:56.950 --> 00:02:00.170
+Ha habido tantos proyectos de software de los que he sido
+
+45
+00:02:00.170 --> 00:02:03.800
+parte y los que salieron bien
+
+46
+00:02:03.800 --> 00:02:06.320
+tuvieron una buena comunicación y los que salieron mal
+
+47
+00:02:06.320 --> 00:02:08.355
+tuvieron una mala comunicación. Quiero decir, si hay
+
+48
+00:02:08.355 --> 00:02:12.238
+una cosa que podría señalar que era eso. Y absolutamente,
+
+49
+00:02:12.238 --> 00:02:14.520
+quiero decir, estoy seguro de que has notado eso.
+
+50
+00:02:14.520 --> 00:02:16.160
+<v ->Absolutamente. - Si.</v>
+
+51
+00:02:16.160 --> 00:02:21.078
+<v ->Quiero decir que eso es algo que me gusta de todo el</v>
+
+52
+00:02:21.078 --> 00:02:24.631
+estudio de la experiencia del usuario, es la comunicación.
+
+53
+00:02:24.631 --> 00:02:29.010
+Es la comunicación sobre el objetivo del sistema
+
+54
+00:02:29.010 --> 00:02:33.670
+y lo que desea que haga, y se explica
+
+55
+00:02:33.670 --> 00:02:35.110
+en un formato visual.
+
+56
+00:02:35.110 --> 00:02:39.350
+Así que está diciendo que estas son las formas en que el
+
+57
+00:02:39.350 --> 00:02:43.180
+usuario debería interactuar con toda esta aplicación y
+
+58
+00:02:43.180 --> 00:02:46.635
+colocándola visualmente allí, eso le da a los
+
+59
+00:02:46.635 --> 00:02:50.210
+desarrolladores como yo la capacidad de tomar eso y correr
+
+60
+00:02:50.210 --> 00:02:54.630
+con él. Porque siempre que trato de hacer esto solo,
+
+61
+00:02:54.630 --> 00:02:57.590
+entonces sigo pareciendo, siempre me encuentro
+
+62
+00:02:57.590 --> 00:02:59.480
+con estos escollos.
+
+63
+00:02:59.480 --> 00:03:01.867
+Es como si pasara la mitad de mi tiempo tratando de
+
+64
+00:03:01.867 --> 00:03:04.402
+averiguar, así dónde debería colocar este botón, o tu sabes.
+
+65
+00:03:04.402 --> 00:03:05.235
+<v ->Si.</v>
+
+66
+00:03:05.235 --> 00:03:06.300
+<v ->Todo este tipo de cosas y luego termina</v>
+
+67
+00:03:06.300 --> 00:03:07.133
+siendo un error.
+
+68
+00:03:08.343 --> 00:03:11.397
+Y ahí es donde realmente se desarrollan esas habilidades
+
+69
+00:03:11.397 --> 00:03:15.100
+de pensamiento crítico y se practica eso, es donde es
+
+70
+00:03:15.100 --> 00:03:18.010
+tan práctico que puedes mejorar
+
+71
+00:03:18.010 --> 00:03:19.900
+y poder desarrollar esas habilidades continuamente.
+
+72
+00:03:19.900 --> 00:03:22.302
+<v ->Correcto y piénsalo como una casa, ¿cierto?</v>
+
+73
+00:03:22.302 --> 00:03:26.410
+Y estás trabajando con un propietario que te está haciendo
+
+74
+00:03:26.410 --> 00:03:28.430
+construir esta casa y estás poniendo el plano
+
+75
+00:03:28.430 --> 00:03:29.491
+para esta casa.
+
+76
+00:03:29.491 --> 00:03:32.730
+Ellos no saben cómo vas a hacer lo eléctrico.
+
+77
+00:03:32.730 --> 00:03:33.930
+Ellos no saben cómo vas a poner
+
+78
+00:03:33.930 --> 00:03:35.820
+los cerchas, no saben nada de eso.
+
+79
+00:03:35.820 --> 00:03:37.560
+Pero sí saben si es necesario que haya un garaje para uno
+
+80
+00:03:37.560 --> 00:03:38.800
+o dos automóviles. - Cierto.
+
+81
+00:03:38.800 --> 00:03:40.950
+<v ->Eso es algo que ellos saben, correcto, y eso</v>
+
+82
+00:03:40.950 --> 00:03:43.160
+es algo que ambos necesitan descargar
+
+83
+00:03:43.160 --> 00:03:47.370
+del cliente o el administrador y deben traducirlo
+
+84
+00:03:47.370 --> 00:03:48.540
+al papel.
+
+85
+00:03:48.540 --> 00:03:51.170
+Y necesitas ser un muy buen oyente,
+
+86
+00:03:51.170 --> 00:03:53.120
+muy buen comunicador.
+
+87
+00:03:53.120 --> 00:03:55.733
+Así que definitivamente es algo en lo que te recomendaría
+
+88
+00:03:55.733 --> 00:03:57.300
+que pienses.
+
+89
+00:03:57.300 --> 00:03:59.670
+Quiero decir que no piensas en convertirte en un mejor
+
+90
+00:03:59.670 --> 00:04:02.370
+comunicador, pero te prometo que te ayudará mucho en el
+
+91
+00:04:02.370 --> 00:04:06.150
+desarrollo si, ya sea a través de la investigación o
+
+92
+00:04:06.150 --> 00:04:09.148
+simplemente participando activamente en ese tipo de
+
+93
+00:04:09.148 --> 00:04:12.013
+conversación, haciendo preguntas realmente buenas, tratando
+
+94
+00:04:12.013 --> 00:04:14.090
+de elimine las cosas que no sabe que no sabe
+
+95
+00:04:14.090 --> 00:04:16.970
+o que no sabe que el cliente no sabe, ¿verdad?
+
+96
+00:04:16.970 --> 00:04:20.040
+Y así, ser bueno y honesto
+
+97
+00:04:20.040 --> 00:04:21.690
+y si no entiendes algo,
+
+98
+00:04:21.690 --> 00:04:23.410
+dices que no lo entiendes.
+
+99
+00:04:23.410 --> 00:04:25.290
+Pretender saber de lo que hablan
+
+100
+00:04:25.290 --> 00:04:28.300
+es solo morderte una y otra vez.
+
+101
+00:04:28.300 --> 00:04:29.700
+Entonces la comunicación.
+
+102
+00:04:29.700 --> 00:04:32.550
+Lo siguiente y lo mencioné un poco antes,
+
+103
+00:04:32.550 --> 00:04:36.631
+es la capacidad de acercar y alejar, sobre la marcha.
+
+104
+00:04:36.631 --> 00:04:40.494
+No pase demasiado tiempo resolviendo pequeños problemas
+
+105
+00:04:40.494 --> 00:04:43.900
+en un entorno aislado, ya que esos pequeños problemas
+
+106
+00:04:43.900 --> 00:04:46.312
+que está resolviendo, si bien son buenos, pueden tener un
+
+107
+00:04:46.312 --> 00:04:48.230
+efecto en el proyecto más grande.
+
+108
+00:04:48.230 --> 00:04:51.070
+Puede resolver este problema en esta página,
+
+109
+00:04:51.070 --> 00:04:53.980
+pero eso podría afectar el comportamiento de ese objeto
+
+110
+00:04:53.980 --> 00:04:57.691
+en el móvil o en tres páginas a partir de ahora, ¿verdad?
+
+111
+00:04:57.691 --> 00:04:58.524
+<v ->Cierto.</v>
+
+112
+00:04:58.524 --> 00:05:00.750
+<v ->Por lo tanto, debe poder ampliar,</v>
+
+113
+00:05:00.750 --> 00:05:03.215
+resolver pequeños problemas pero siempre alejarse
+
+114
+00:05:03.215 --> 00:05:07.110
+y preguntarse a sí mismo, ¿esto afecta otras cosas
+
+115
+00:05:07.110 --> 00:05:09.400
+fuera de este incidente aislado?
+
+116
+00:05:09.400 --> 00:05:11.410
+<v ->Absolutamente, y me refiero a que uno</v>
+
+117
+00:05:11.410 --> 00:05:15.465
+de los conceptos fundamentales del pensamiento crítico
+
+118
+00:05:15.465 --> 00:05:18.950
+es poder tener esa perspectiva,
+
+119
+00:05:18.950 --> 00:05:21.670
+donde sí, puedes sumergirte y
+
+120
+00:05:21.670 --> 00:05:22.720
+ver los detalles.
+
+121
+00:05:22.720 --> 00:05:25.640
+Puede ver dónde va ese botón o
+
+122
+00:05:25.640 --> 00:05:28.670
+cómo se ve la barra de navegación, pero también tiene que,
+
+123
+00:05:28.670 --> 00:05:30.672
+como usted dijo, alejar y decir bien
+
+124
+00:05:30.672 --> 00:05:33.940
+si compilo esta característica o si estructuro la
+
+125
+00:05:33.940 --> 00:05:37.170
+experiencia del usuario de esta manera, ¿cómo afecta
+
+126
+00:05:37.170 --> 00:05:38.110
+la experiencia móvil?
+
+127
+00:05:38.110 --> 00:05:40.230
+¿Cómo afecta eso a lo que están haciendo en el escritorio
+
+128
+00:05:40.230 --> 00:05:42.570
+y luego, cuando tiene más experiencia,
+
+129
+00:05:42.570 --> 00:05:44.720
+cuando adquiere experiencia trabajando
+
+130
+00:05:44.720 --> 00:05:47.170
+con desarrolladores o como desarrollador,
+
+131
+00:05:47.170 --> 00:05:49.330
+entonces puede comprender que puede haber
+
+132
+00:05:49.330 --> 00:05:50.820
+otras ramificaciones
+
+133
+00:05:50.820 --> 00:05:52.930
+incluso más allá de eso. - Claro, absolutamente.
+
+134
+00:05:52.930 --> 00:05:55.480
+<v ->Porque puede soñar todo lo que quiera,</v>
+
+135
+00:05:55.480 --> 00:05:59.350
+pero algunas cosas también deben coincidir con el sistema
+
+136
+00:05:59.350 --> 00:06:00.210
+con el que se está construyendo.
+
+137
+00:06:00.210 --> 00:06:04.540
+<v ->100% y honestamente, cuanto más entiendes</v>
+
+138
+00:06:04.540 --> 00:06:07.690
+sobre desarrollo, sabes, dijiste que se llama unicornio
+
+139
+00:06:07.690 --> 00:06:11.140
+por una razón, pero si eres realmente bueno para comunicarte
+
+140
+00:06:11.140 --> 00:06:13.640
+y realmente eres, tienes una comprensión firme
+
+141
+00:06:13.640 --> 00:06:14.473
+del desarrollo.
+
+142
+00:06:14.473 --> 00:06:16.700
+Y también trabaja bien con las personas y
+
+143
+00:06:16.700 --> 00:06:21.116
+tiene un poco de ese diseño incorporado en su ADN un poco.
+
+144
+00:06:21.116 --> 00:06:26.116
+Es tan valioso porque ese puente, aquí está la cosa,
+
+145
+00:06:26.360 --> 00:06:27.950
+cuando tomo decisiones de diseño,
+
+146
+00:06:27.950 --> 00:06:29.540
+no tomo decisiones basadas
+
+147
+00:06:29.540 --> 00:06:31.880
+en cuál es más fácil de desarrollar, ¿verdad?
+
+148
+00:06:31.880 --> 00:06:33.480
+Y algunas de estas cosas son subjetivas.
+
+149
+00:06:33.480 --> 00:06:35.150
+Algunas de estas cosas es como si pudiera hacerlo de esta
+
+150
+00:06:35.150 --> 00:06:36.330
+manera o de esa manera y si sabes cuáles
+
+151
+00:06:36.330 --> 00:06:39.960
+son las ramificaciones de desarrollo, ¿realmente bien?
+
+152
+00:06:39.960 --> 00:06:43.250
+Fumas sagradas, como usted puede, realmente puede optimizar
+
+153
+00:06:43.250 --> 00:06:45.440
+ese flujo donde realmente está obteniendo
+
+154
+00:06:45.440 --> 00:06:49.580
+el mayor valor posible sin sacrificar toneladas
+
+155
+00:06:49.580 --> 00:06:50.930
+de tiempo en el desarrollo.
+
+156
+00:06:50.930 --> 00:06:54.354
+<v ->Absolutamente y eso también lo menciona, por lo que</v>
+
+157
+00:06:54.354 --> 00:06:56.670
+hablamos mucho sobre su pensamiento crítico
+
+158
+00:06:56.670 --> 00:07:00.300
+y sobre cómo desarrollar el marco de trabajo de Mendel sobre
+
+159
+00:07:00.300 --> 00:07:01.420
+cómo resolver estos problemas.
+
+160
+00:07:01.420 --> 00:07:04.930
+Ya sea en detalles o ser capaz de dar un paso atrás
+
+161
+00:07:04.930 --> 00:07:07.000
+y verlo a un alto nivel.
+
+162
+00:07:07.000 --> 00:07:08.810
+Desde el punto de vista práctico,
+
+163
+00:07:08.810 --> 00:07:12.140
+cuando se trata de practicar realmente,
+
+164
+00:07:12.140 --> 00:07:17.100
+lo que me gusta empezar a hacer es, en lugar de solo ir
+
+165
+00:07:17.100 --> 00:07:19.660
+cuando se está construyendo una nueva aplicación, ya sea
+
+166
+00:07:19.660 --> 00:07:22.408
+un proyecto paralelo o algo en lo que estés trabajando.
+
+167
+00:07:22.408 --> 00:07:25.900
+En lugar de simplemente ir con tu enfoque normal hacia
+
+168
+00:07:25.900 --> 00:07:29.130
+donde vas y simplemente comienzas a programar y piensas,
+
+169
+00:07:29.130 --> 00:07:31.820
+ah, solo voy a desarrollarlo y construiré el diseño
+
+170
+00:07:31.820 --> 00:07:33.856
+a medida que lo hago.
+
+171
+00:07:33.856 --> 00:07:37.746
+Detén eso ahora mismo
+
+172
+00:07:37.746 --> 00:07:41.630
+y, en cambio, comienza a practicar este tipo de técnicas.
+
+173
+00:07:41.630 --> 00:07:44.469
+Ahora no lo eres, tus wireframes de baja fidelidad
+
+174
+00:07:44.469 --> 00:07:47.940
+no lucirán tan bien como los de Jesse
+
+175
+00:07:47.940 --> 00:07:49.200
+la primera vez que los haces.
+
+176
+00:07:49.200 --> 00:07:51.748
+Al igual que si los hiciera, no se parecerían a nada de lo
+
+177
+00:07:51.748 --> 00:07:54.387
+que tendría alguien con experiencia,
+
+178
+00:07:54.387 --> 00:07:56.400
+pero ahí es donde entra la práctica.
+
+179
+00:07:56.400 --> 00:07:59.420
+Ahí es donde hacerlo una y otra vez.
+
+180
+00:07:59.420 --> 00:08:01.280
+Lo prometo, tu primera puede que no sea
+
+181
+00:08:01.280 --> 00:08:02.336
+la mejor
+
+182
+00:08:02.336 --> 00:08:03.770
+que está ahí fuera,
+
+183
+00:08:03.770 --> 00:08:07.800
+pero la cuarta, la quinta y la 50ª será.
+
+184
+00:08:07.800 --> 00:08:09.750
+Van a seguir mejorando.
+
+185
+00:08:09.750 --> 00:08:14.200
+Es como cualquier otra habilidad, y uno de los grandes
+
+186
+00:08:14.200 --> 00:08:18.147
+objetivos de este curso es intentar que toda la experiencia
+
+187
+00:08:18.147 --> 00:08:22.033
+del usuario haga que todo el proceso sea un poco menos
+
+188
+00:08:22.033 --> 00:08:24.850
+mágico. Si ha estado siguiendo este curso
+
+189
+00:08:24.850 --> 00:08:27.670
+y ha escuchado todos estos temas y lo primero
+
+190
+00:08:27.670 --> 00:08:30.310
+que le viene a la mente es que la mayoría de esto
+
+191
+00:08:30.310 --> 00:08:32.020
+es solo sentido común?
+
+192
+00:08:32.020 --> 00:08:34.650
+Tienes razón, lo es y así es como debería ser.
+
+193
+00:08:34.650 --> 00:08:37.810
+Y si fuera diferente a eso, entonces
+
+194
+00:08:37.810 --> 00:08:40.580
+habría un problema porque todo este proceso
+
+195
+00:08:40.580 --> 00:08:44.372
+tiene que ver con la lógica y el sentido común y la manera
+
+196
+00:08:44.372 --> 00:08:46.260
+correcta de pensar las cosas.
+
+197
+00:08:46.260 --> 00:08:48.700
+Y tener este enfoque sistemático
+
+198
+00:08:48.700 --> 00:08:53.530
+para desarrollar aplicaciones en lugar de tirar esta manta
+
+199
+00:08:53.530 --> 00:08:56.625
+sobre él y pensar que todo va a funcionar,
+
+200
+00:08:56.625 --> 00:08:59.589
+es pensar en cada etapa del ciclo
+
+201
+00:08:59.589 --> 00:09:02.470
+de vida de ese proyecto.
+
+202
+00:09:02.470 --> 00:09:04.340
+Desde el principio, desde el principio
+
+203
+00:09:04.340 --> 00:09:06.893
+hasta el objetivo principal del sistema,
+
+204
+00:09:06.893 --> 00:09:09.400
+a través de la implementación de ese diseño.
+
+205
+00:09:09.400 --> 00:09:13.260
+Y viendo como cada uno de esos pasos afecta al siguiente.
+
+206
+00:09:13.260 --> 00:09:15.202
+<v ->Correcto, y honestamente, hay muchas trampas diferentes</v>
+
+207
+00:09:15.202 --> 00:09:17.506
+en las que puedes quedar atrapado.
+
+208
+00:09:17.506 --> 00:09:21.579
+Una de las cuales es pensar que es fácil
+
+209
+00:09:21.579 --> 00:09:23.629
+porque realmente no lo es.
+
+210
+00:09:23.629 --> 00:09:26.700
+Cuando ves una aplicación que tiene una buena experiencia de
+
+211
+00:09:26.700 --> 00:09:28.973
+usuario, es como, bueno, claro, lo harías de esa manera.
+
+212
+00:09:28.973 --> 00:09:32.210
+Pero no es así como la mayoría de la gente lo hace y estoy
+
+213
+00:09:32.210 --> 00:09:34.730
+seguro de que has usado muchas aplicaciones,
+
+214
+00:09:34.730 --> 00:09:38.970
+me han costado cuatro clics y lo uso todos los días.
+
+215
+00:09:38.970 --> 00:09:41.467
+Y este otro botón en el que solo hago clic una vez al mes,
+
+216
+00:09:41.467 --> 00:09:43.447
+es como super prominente.
+
+217
+00:09:43.447 --> 00:09:48.013
+Que, no deberías notar buen diseño de experiencia de
+
+218
+00:09:48.013 --> 00:09:50.320
+usuario. ¿Cierto? - Absolutamente.
+
+219
+00:09:50.320 --> 00:09:52.625
+<v ->Lo notas cuando es malo porque realmente</v>
+
+220
+00:09:52.625 --> 00:09:55.283
+te enoja. - Claro, absolutamente.
+
+221
+00:09:55.283 --> 00:09:59.280
+<v ->No pienses que solo porque, como ves una aplicación</v>
+
+222
+00:09:59.280 --> 00:10:01.830
+que se ve realmente pulida y funciona muy bien,
+
+223
+00:10:01.830 --> 00:10:04.355
+llegaron a eso yendo directamente
+
+224
+00:10:04.355 --> 00:10:06.790
+a lo que era obvio.
+
+225
+00:10:06.790 --> 00:10:10.055
+Llegaron allí porque lo refinaron a lo largo de este
+
+226
+00:10:10.055 --> 00:10:13.410
+proceso, para tomar los pasos necesarios para rellenar esos
+
+227
+00:10:13.410 --> 00:10:16.030
+huecos, rellenar esos huecos, por lo que en el momento en
+
+228
+00:10:16.030 --> 00:10:17.430
+que llegó al desarrollo y ya estaba construido y luego
+
+229
+00:10:17.430 --> 00:10:18.810
+alguien dice, ahh, esto es realmente un dolor en el extremo,
+
+230
+00:10:18.810 --> 00:10:20.500
+es como si, bueno, ya lo construimos
+
+231
+00:10:20.500 --> 00:10:23.048
+y tenemos que entregarlo mañana, muy mal.
+
+232
+00:10:23.048 --> 00:10:24.850
+<v ->Eso solo ha pasado unas cuantas veces.</v>
+
+233
+00:10:27.980 --> 00:10:31.670
+Absolutamente, no, son todos estos pasos, ese es el
+
+234
+00:10:31.670 --> 00:10:34.570
+objetivo de este curso es tratar de ayudarlo
+
+235
+00:10:34.570 --> 00:10:38.190
+a tener esa mentalidad mental para que pueda realizar
+
+236
+00:10:38.190 --> 00:10:39.580
+este mismo tipo de tareas.
+
+237
+00:10:39.580 --> 00:10:42.125
+Y entonces no te topas con algunos de los mismos problemas
+
+238
+00:10:42.125 --> 00:10:45.118
+con los que he tenido que luchar y con los que Jesse tuvo
+
+239
+00:10:45.118 --> 00:10:47.190
+que enfrentarse a través de los años.
+
+240
+00:10:47.190 --> 00:10:50.110
+Y para que pueda aprender de nuestras experiencias de la
+
+241
+00:10:50.110 --> 00:10:52.915
+misma manera que nosotros tratamos de aprender de las
+
+242
+00:10:52.915 --> 00:10:57.110
+nuestras. Y, por lo tanto, todo su propósito es construir
+
+243
+00:10:57.110 --> 00:10:59.370
+realmente esa mentalidad y construir ese marco mental
+
+244
+00:10:59.370 --> 00:11:01.840
+para que cuando se le presente un proyecto,
+
+245
+00:11:01.840 --> 00:11:05.590
+no se limite a mirar a la persona, o simplemente no
+
+246
+00:11:05.590 --> 00:11:08.278
+vaya y empiece a intentar codifíquelo, pero que
+
+247
+00:11:08.278 --> 00:11:10.490
+usted construya un sistema para cómo ir y lo construya.
+
+248
+00:11:10.490 --> 00:11:13.490
+Y esto también es algo que si pasó por nuestro
+
+249
+00:11:13.490 --> 00:11:16.860
+curso de resolución de problemas, fue parte de la razón
+
+250
+00:11:16.860 --> 00:11:21.360
+por la que lo creamos para ayudarlo a desarrollar un sistema
+
+251
+00:11:21.360 --> 00:11:23.950
+para cada vez que reciba una nueva característica o un nuevo
+
+252
+00:11:23.950 --> 00:11:26.881
+producto, una nueva aplicación para construir, que serías
+
+253
+00:11:26.881 --> 00:11:29.400
+capaz de ir y sabrías los pasos.
+
+254
+00:11:29.400 --> 00:11:32.500
+Puede que no sepa cómo construir todo el sistema
+
+255
+00:11:32.500 --> 00:11:34.650
+de inmediato, pero al menos sabría cuál
+
+256
+00:11:34.650 --> 00:11:35.800
+es el primer paso.
+
+257
+00:11:35.800 --> 00:11:39.090
+Y eso te llevaría al segundo y al tercero.
+
+258
+00:11:39.090 --> 00:11:42.640
+Y esa es la razón por la que amo y por qué quería que el
+
+259
+00:11:42.640 --> 00:11:45.910
+sistema de Jesse se incluyera y fuera el único en este curso
+
+260
+00:11:45.910 --> 00:11:48.660
+por el que pasaríamos, porque eso es exactamente lo que es.
+
+261
+00:11:48.660 --> 00:11:50.870
+Es un enfoque sencillo
+
+262
+00:11:50.870 --> 00:11:53.840
+para poder planificar primero
+
+263
+00:11:53.840 --> 00:11:56.930
+y luego ejecutar cómo se pueden
+
+264
+00:11:56.930 --> 00:11:57.823
+diseñar las aplicaciones.
+

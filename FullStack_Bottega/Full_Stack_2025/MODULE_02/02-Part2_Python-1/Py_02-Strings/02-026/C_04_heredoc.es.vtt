@@ -1,0 +1,462 @@
+WEBVTT
+
+1
+00:00:00.750 --> 00:00:02.920
+<v Instructor>Hasta ahora, en esta sección sobre cadenas,</v>
+
+2
+00:00:02.920 --> 00:00:06.050
+nos enfocamos en cadenas de palabras
+
+3
+00:00:06.050 --> 00:00:08.850
+y oraciones de una sola línea. Sin embargo,
+
+4
+00:00:08.850 --> 00:00:11.840
+también hay veces en las que debe trabajar
+
+5
+00:00:11.840 --> 00:00:14.710
+con cadenas de múltiples líneas y eso es lo que vamos
+
+6
+00:00:14.710 --> 00:00:16.940
+a hablar en esta guía.
+
+7
+00:00:16.940 --> 00:00:19.690
+Las cadenas de múltiples líneas en programación
+
+8
+00:00:19.690 --> 00:00:22.690
+generalmente se llaman heredocs.
+
+9
+00:00:22.690 --> 00:00:26.000
+Para que sepa exactamente como se escriben
+
+10
+00:00:26.000 --> 00:00:30.280
+y cómo las debe usar, generalmente se llama heredoc.
+
+11
+00:00:30.280 --> 00:00:32.200
+Cada idioma es diferente, pero si llama
+
+12
+00:00:32.200 --> 00:00:36.290
+heredoc a una cadena de múltiples líneas, la mayoría de los
+
+13
+00:00:36.290 --> 00:00:39.010
+desarrolladores entenderán de lo que está hablando.
+
+14
+00:00:39.010 --> 00:00:42.110
+Es uno de los términos más comunes para eso.
+
+15
+00:00:42.110 --> 00:00:46.100
+Veamos qué podemos hacer para crear un heredoc.
+
+16
+00:00:46.100 --> 00:00:49.220
+Podemos empezar con usar un enfoque estándar.
+
+17
+00:00:49.220 --> 00:00:53.350
+Intentemos tratar esto como una variable regular.
+
+18
+00:00:53.350 --> 00:00:56.700
+Entonces, aquí, tengo tres párrafos pequeños
+
+19
+00:00:56.700 --> 00:00:59.000
+y cada uno tiene diferentes líneas.
+
+20
+00:00:59.000 --> 00:01:02.750
+Entonces, si escribo content y, luego, intento
+
+21
+00:01:02.750 --> 00:01:07.750
+agregar comillas dobles a este set completo de párrafos,
+
+22
+00:01:08.900 --> 00:01:10.230
+veamos que sucede.
+
+23
+00:01:10.230 --> 00:01:12.850
+Bien, no podemos ejecutarlo porque tenemos un error,
+
+24
+00:01:12.850 --> 00:01:14.850
+y el error es, como dice aquí,
+
+25
+00:01:14.850 --> 00:01:17.360
+EOL, que significa final de la línea,
+
+26
+00:01:17.360 --> 00:01:20.120
+mientras escanea la cadena literal.
+
+27
+00:01:20.120 --> 00:01:25.120
+Entonces, lo que significa es que el analizador sintáctico
+
+28
+00:01:25.140 --> 00:01:27.660
+de Python cruzó esta línea, vio el contenido,
+
+29
+00:01:27.660 --> 00:01:32.140
+vio el signo de igual, vio las comillas
+
+30
+00:01:32.140 --> 00:01:35.060
+y, entonces, dijo que esto sería una cadena.
+
+31
+00:01:35.060 --> 00:01:38.180
+Continuó hasta aquí, donde encontró que la
+
+32
+00:01:38.180 --> 00:01:43.180
+cadena terminaba y comenzaba una nueva, pero de la forma
+
+33
+00:01:43.560 --> 00:01:48.240
+en que trabaja el analizador sintáctico, arroja un error.
+
+34
+00:01:48.240 --> 00:01:51.330
+Lo que ocurrió es que el analizador sintáctico llegó
+
+35
+00:01:51.330 --> 00:01:55.290
+hasta aquí y esperaba encontrar el final de una cadena.
+
+36
+00:01:55.290 --> 00:01:58.670
+Esperaba encontrar comillas de cierre.
+
+37
+00:01:58.670 --> 00:02:01.220
+En cambio, solo encontró una línea nueva
+
+38
+00:02:01.220 --> 00:02:03.990
+y ese es uno de los motivos que porqué tenemos este error.
+
+39
+00:02:03.990 --> 00:02:07.130
+Entonces, necesitamos poder crear nuestro heredoc
+
+40
+00:02:07.130 --> 00:02:09.490
+con una sintaxis que sea algo diferente.
+
+41
+00:02:09.490 --> 00:02:12.880
+Si recuerda la sección de comentarios,
+
+42
+00:02:12.880 --> 00:02:15.510
+construir cadenas de múltiples líneas tiene una estructura
+
+43
+00:02:15.510 --> 00:02:19.750
+similar a los comentarios de múltiples líneas.
+
+44
+00:02:19.750 --> 00:02:24.750
+Entonces, si lo hice bien y agregué dos comillas más,
+
+45
+00:02:26.070 --> 00:02:27.870
+que pueden ser simples o dobles
+
+46
+00:02:27.870 --> 00:02:31.300
+ya que Python las considera exactamente iguales,
+
+47
+00:02:31.300 --> 00:02:33.520
+entonces si lo hice bien, sería lo mismo.
+
+48
+00:02:33.520 --> 00:02:36.110
+Personalmente, para mis propios heredocs,
+
+49
+00:02:36.110 --> 00:02:38.260
+me gusta usar tres comillas dobles solo
+
+50
+00:02:38.260 --> 00:02:41.780
+porque me gusta mantener mi estructura exactamente igual.
+
+51
+00:02:41.780 --> 00:02:44.400
+Luego, también puedo poner esto en una nueva línea
+
+52
+00:02:44.400 --> 00:02:47.520
+y, si llego hasta aquí,
+
+53
+00:02:47.520 --> 00:02:51.580
+también voy a poner esto en una nueva línea.
+
+54
+00:02:51.580 --> 00:02:55.100
+Ahora puede notar que nuestro error desapareció
+
+55
+00:02:55.100 --> 00:02:58.940
+y, si tomo el contenido y bajo hasta aquí,
+
+56
+00:02:58.940 --> 00:03:02.383
+puedo escribir print content .
+
+57
+00:03:03.850 --> 00:03:06.380
+Si puedo escribir,
+
+58
+00:03:06.380 --> 00:03:10.270
+y si ejecuto esto, todo funciona bien.
+
+59
+00:03:10.270 --> 00:03:12.600
+Entonces, esta es la forma correcta
+
+60
+00:03:12.600 --> 00:03:14.980
+de crear un heredoc en Python.
+
+61
+00:03:14.980 --> 00:03:16.780
+Ahora, a pesar de que funcionó,
+
+62
+00:03:16.780 --> 00:03:19.930
+todavía hay algunos posibles problemas.
+
+63
+00:03:19.930 --> 00:03:21.580
+Y no se trata de que es un problema
+
+64
+00:03:21.580 --> 00:03:24.590
+o de que hicimos algo mal, sino que hay algunos
+
+65
+00:03:24.590 --> 00:03:26.520
+problemas simples que quisiera abordar.
+
+66
+00:03:26.520 --> 00:03:28.520
+Debido a la forma en que funcionan los heredocs,
+
+67
+00:03:28.520 --> 00:03:30.680
+un heredoc es esencialmente
+
+68
+00:03:30.680 --> 00:03:35.630
+una cadena de múltiples líneas que cuenta
+
+69
+00:03:35.630 --> 00:03:37.780
+todos los caracteres de la nueva línea.
+
+70
+00:03:37.780 --> 00:03:40.840
+Entonces, si va hasta el resultado,
+
+71
+00:03:40.840 --> 00:03:44.100
+puede notar que, esto es un poco más difícil de ver,
+
+72
+00:03:44.100 --> 00:03:47.640
+pero tenemos un transporte en la parte superior.
+
+73
+00:03:47.640 --> 00:03:52.080
+De hecho, tenemos una nueva línea en la parte de más arriba
+
+74
+00:03:52.080 --> 00:03:54.710
+y una en la parte que está más abajo.
+
+75
+00:03:54.710 --> 00:03:57.690
+Entonces, existen algunas formas de solucionarlo.
+
+76
+00:03:57.690 --> 00:04:01.820
+Si voy aquí, puedo subirlo todo
+
+77
+00:04:01.820 --> 00:04:04.430
+hasta la parte superior y aquí
+
+78
+00:04:04.430 --> 00:04:06.810
+puedo subir todo esto hasta arriba
+
+79
+00:04:06.810 --> 00:04:09.170
+para que se pueda empalmar con el contenido.
+
+80
+00:04:09.170 --> 00:04:11.870
+Si presiono Return , puede ver
+
+81
+00:04:11.870 --> 00:04:13.790
+que esas líneas nuevas ya no están.
+
+82
+00:04:13.790 --> 00:04:17.120
+Ahora, esto funciona, pero no me gusta esta sintaxis.
+
+83
+00:04:17.120 --> 00:04:18.960
+Creo que parece desordenado,
+
+84
+00:04:18.960 --> 00:04:21.270
+me gusta como se veía antes.
+
+85
+00:04:21.270 --> 00:04:24.230
+Entonces, volvamos a como estaba antes
+
+86
+00:04:24.230 --> 00:04:26.010
+y les mostraré una forma diferente
+
+87
+00:04:26.010 --> 00:04:29.510
+de aprovechar un función llamada Strip.
+
+88
+00:04:29.510 --> 00:04:32.930
+Lo que puedo hacer con la función Strip
+
+89
+00:04:32.930 --> 00:04:35.040
+al final de esta cadena
+
+90
+00:04:35.040 --> 00:04:40.040
+es agregar .strip y, porque es una llamada de función,
+
+91
+00:04:40.310 --> 00:04:43.540
+recuerde que siempre agregamos paréntesis al final de una
+
+92
+00:04:43.540 --> 00:04:47.810
+llamada de función, si borro esto y lo vuelvo a ejecutar,
+
+93
+00:04:47.810 --> 00:04:50.410
+puede notar que obtenemos el mismo resultado.
+
+94
+00:04:50.410 --> 00:04:53.670
+Entonces, si extraigo los caracteres de la nueva línea
+
+95
+00:04:53.670 --> 00:04:56.150
+del comienzo y el final,
+
+96
+00:04:56.150 --> 00:04:58.220
+eso es lo que hace la función Strip.
+
+97
+00:04:58.220 --> 00:05:00.700
+Es una función muy útil
+
+98
+00:05:00.700 --> 00:05:05.250
+para eliminar cualquier exceso de caracteres en la línea
+
+99
+00:05:05.250 --> 00:05:07.840
+nueva dentro de una cadena de múltiples líneas como esta,
+
+100
+00:05:07.840 --> 00:05:10.730
+y eso es lo que hace que sea una excelente forma
+
+101
+00:05:10.730 --> 00:05:13.870
+de limpiar este tipo de contenido
+
+102
+00:05:13.870 --> 00:05:15.900
+porque se debe estar preguntado y pensando que
+
+103
+00:05:15.900 --> 00:05:18.950
+parece no tener sentido borrar este contenido.
+
+104
+00:05:18.950 --> 00:05:21.810
+Sin embargo, imagine que esto es una aplicación web
+
+105
+00:05:21.810 --> 00:05:23.880
+y está reuniendo contenido.
+
+106
+00:05:23.880 --> 00:05:27.180
+Digamos que es la descripción de un blog
+
+107
+00:05:27.180 --> 00:05:29.540
+y quiere eliminar los caracteres del comienzo
+
+108
+00:05:29.540 --> 00:05:32.720
+y el final. Esta es una excelente forma
+
+109
+00:05:32.720 --> 00:05:34.500
+de realizar una tarea como esta.
+
+110
+00:05:34.500 --> 00:05:37.930
+Entonces, lo que hemos discutido en esta guía es cómo
+
+111
+00:05:37.930 --> 00:05:40.630
+construir un heredoc en Python,
+
+112
+00:05:40.630 --> 00:05:45.610
+los motivos de porqué una cadena literal regular no
+
+113
+00:05:45.610 --> 00:05:48.240
+funcionará para cadenas de múltiples líneas y
+
+114
+00:05:48.240 --> 00:05:53.060
+cómo eliminar los caracteres del comienzo y final
+
+115
+00:05:53.060 --> 00:05:55.473
+al aprovechar la función Strip.
+

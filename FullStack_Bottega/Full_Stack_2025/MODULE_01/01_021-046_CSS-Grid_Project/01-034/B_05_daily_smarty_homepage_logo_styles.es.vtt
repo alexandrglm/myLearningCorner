@@ -1,0 +1,366 @@
+WEBVTT
+
+1
+00:00:00.670 --> 00:00:01.940
+<v Narrador>No sé tú,</v>
+
+2
+00:00:01.940 --> 00:00:04.310
+pero realmente me estoy cansando de ver este logo
+
+3
+00:00:04.310 --> 00:00:06.520
+gigante justo aquí
+
+4
+00:00:06.520 --> 00:00:10.010
+así que porque esto está en la parte superior de la página,
+
+5
+00:00:10.010 --> 00:00:13.240
+ahora agreguemos los estilos para el logo.
+
+6
+00:00:13.240 --> 00:00:17.000
+Así que voy a cambiar al archivo CSS principal
+
+7
+00:00:17.000 --> 00:00:21.460
+y aquí voy a aplicar dos definiciones de estilo diferentes.
+
+8
+00:00:21.460 --> 00:00:24.493
+La primera será por el logo en sí
+
+9
+00:00:25.564 --> 00:00:28.700
+y en realidad creo que llamé a esto "homepage-logo".
+
+10
+00:00:28.700 --> 00:00:32.620
+Y esto no va a tratar realmente con la imagen,
+
+11
+00:00:32.620 --> 00:00:35.160
+pero recuerda que hemos creado un div
+
+12
+00:00:35.160 --> 00:00:37.930
+y luego anidamos la imagen dentro de ella.
+
+13
+00:00:37.930 --> 00:00:41.020
+Bueno, si miras el HTML,
+
+14
+00:00:41.020 --> 00:00:43.608
+justo aquí puedes ver que tenemos este logo
+
+15
+00:00:43.608 --> 00:00:45.210
+en la página de inicio y eso es un div
+
+16
+00:00:45.210 --> 00:00:47.020
+y luego este elemento de imagen,
+
+17
+00:00:47.020 --> 00:00:49.810
+esta etiqueta de imagen de aquí, está dentro de ella,
+
+18
+00:00:49.810 --> 00:00:52.140
+lo que significa que vamos a tener que tener
+
+19
+00:00:52.140 --> 00:00:54.210
+dos definiciones de estilo.
+
+20
+00:00:54.210 --> 00:00:55.851
+Uno para el div,
+
+21
+00:00:55.851 --> 00:00:59.420
+este va a ser el elemento de la cuadrícula CSS.
+
+22
+00:00:59.420 --> 00:01:03.010
+Recuerda que el contenedor es el contenedor,
+
+23
+00:01:03.010 --> 00:01:04.780
+es el contenedor de la rejilla
+
+24
+00:01:04.780 --> 00:01:08.380
+y luego dentro de un contenedor, tienes elementos.
+
+25
+00:01:08.380 --> 00:01:11.770
+Y así, este va a ser el primer elemento
+
+26
+00:01:11.770 --> 00:01:12.603
+que actualizamos.
+
+27
+00:01:12.603 --> 00:01:15.900
+Así que, voy a añadir dos reglas diferentes aquí.
+
+28
+00:01:15.900 --> 00:01:18.075
+Uno será la columna de cuadrícula,
+
+29
+00:01:18.075 --> 00:01:21.150
+así que aquí diré la columna de cuadrícula
+
+30
+00:01:21.150 --> 00:01:26.150
+y diré dos y luego vamos a tener una cuadrícula
+
+31
+00:01:27.060 --> 00:01:31.010
+y voy a tener una cuadrícula igual a una
+
+32
+00:01:31.010 --> 00:01:34.780
+y eso es porque queremos que esto esté arriba.
+
+33
+00:01:34.780 --> 00:01:36.400
+Ahora bien, esto no va a tener el efecto
+
+34
+00:01:36.400 --> 00:01:38.100
+que estamos buscando de inmediato,
+
+35
+00:01:38.100 --> 00:01:41.750
+pero al menos nos dará un envoltorio
+
+36
+00:01:41.750 --> 00:01:43.070
+que vamos a ser capaces de usar.
+
+37
+00:01:43.070 --> 00:01:46.300
+Así que si presiono "Salvar" aquí mismo, y vuelvo,
+
+38
+00:01:46.300 --> 00:01:49.500
+nada ha cambiado realmente excepto que puedes notar
+
+39
+00:01:49.500 --> 00:01:53.330
+esto se encuentra ahora en el centro de la página,
+
+40
+00:01:53.330 --> 00:01:56.500
+así que si miras la página como un todo,
+
+41
+00:01:56.500 --> 00:01:59.100
+puedes ver que ahora tienes publicaciones recientes
+
+42
+00:01:59.100 --> 00:02:00.640
+en el lado derecho
+
+43
+00:02:00.640 --> 00:02:04.120
+y luego tienes la barra de búsqueda aquí a la izquierda.
+
+44
+00:02:04.120 --> 00:02:07.230
+Así que hemos reorganizado el orden y eso es lo que hacen
+
+45
+00:02:07.230 --> 00:02:09.900
+la cuadrícula-columna y la cuadrícula-fila.
+
+46
+00:02:09.900 --> 00:02:12.600
+Pero ahora, vamos a reducir esa imagen.
+
+47
+00:02:12.600 --> 00:02:15.690
+Así que voy a, déjame copiar esto
+
+48
+00:02:15.690 --> 00:02:18.470
+ya que va a empezar de la misma manera.
+
+49
+00:02:18.470 --> 00:02:20.650
+Así que va a decir el logo de la página principal,
+
+50
+00:02:20.650 --> 00:02:25.058
+pero ahora queremos agarrar esa etiqueta de imagen,
+
+51
+00:02:25.058 --> 00:02:28.620
+y dentro de ella, sólo vamos a tener una regla
+
+52
+00:02:28.620 --> 00:02:33.210
+y va a ser la anchura y vamos a 10.5rem
+
+53
+00:02:33.210 --> 00:02:36.360
+y creo que eso es todo lo que tenemos que hacer.
+
+54
+00:02:36.360 --> 00:02:39.830
+Así que presiona "salvar", regresa, y ahí vamos.
+
+55
+00:02:39.830 --> 00:02:42.970
+Así que esto ya se ve mucho mejor.
+
+56
+00:02:42.970 --> 00:02:45.511
+Si hago clic en inspeccionar aquí,
+
+57
+00:02:45.511 --> 00:02:48.880
+entonces y específicamente si voy
+
+58
+00:02:48.880 --> 00:02:51.110
+y vamos que si, vamos coger ese contenedor.
+
+59
+00:02:51.110 --> 00:02:52.930
+Si paso por encima del contenedor,
+
+60
+00:02:52.930 --> 00:02:55.450
+puedes ver que esto se ve mucho mejor.
+
+61
+00:02:55.450 --> 00:02:58.720
+Parece que yo, oh sí,
+
+62
+00:02:58.720 --> 00:03:01.810
+Olvidé quitar esta regla de aquí.
+
+63
+00:03:01.810 --> 00:03:05.520
+Debe ser de 1fr para cada uno de estos elementos
+
+64
+00:03:05.520 --> 00:03:07.740
+para que estén espaciadas uniformemente
+
+65
+00:03:07.740 --> 00:03:10.040
+y luego eventualmente nosotros, obviamente,
+
+66
+00:03:10.040 --> 00:03:12.950
+vamos a mover el logo en la parte superior.
+
+67
+00:03:12.950 --> 00:03:15.140
+Entonces tendremos la barra de búsqueda, este texto
+
+68
+00:03:15.140 --> 00:03:16.920
+y publicaciones recientes debajo.
+
+69
+00:03:16.920 --> 00:03:19.190
+Pero esto está avanzando, y realmente,
+
+70
+00:03:19.190 --> 00:03:21.470
+una de mis mayores metas al mostrarte esto
+
+71
+00:03:21.470 --> 00:03:24.180
+es tenerte enseñarte el proceso
+
+72
+00:03:24.180 --> 00:03:28.820
+de ver cómo CSS Grid y herramientas como Flexbox
+
+73
+00:03:28.820 --> 00:03:31.880
+y este tipo de habilidades pueden ser implementadas.
+
+74
+00:03:31.880 --> 00:03:34.350
+Y también para que puedas ver una forma práctica
+
+75
+00:03:34.350 --> 00:03:36.820
+sobre cómo lo hago personalmente
+
+76
+00:03:36.820 --> 00:03:39.370
+porque he llegado al punto ahora
+
+77
+00:03:39.370 --> 00:03:42.780
+porque me encantan Grid y Flexbox y estas herramientas tanto
+
+78
+00:03:42.780 --> 00:03:46.300
+que ya ni siquiera uso marcos de trabajo.
+
+79
+00:03:46.300 --> 00:03:48.570
+Así que no uso Bootstrap ni ninguno de esos
+
+80
+00:03:48.570 --> 00:03:51.010
+sólo porque como puedes ver aquí mismo
+
+81
+00:03:51.010 --> 00:03:53.500
+dentro de unas pocas líneas de código,
+
+82
+00:03:53.500 --> 00:03:57.520
+hemos sido capaces de reorganizar todos los elementos
+
+83
+00:03:57.520 --> 00:03:59.650
+de la página y cuanto más haces esto,
+
+84
+00:03:59.650 --> 00:04:01.350
+más rápido lo conseguirás también
+
+85
+00:04:01.350 --> 00:04:03.340
+y más intuitivo será.
+
+86
+00:04:03.340 --> 00:04:04.960
+Y entonces, llegarás a un punto en el que sólo
+
+87
+00:04:04.960 --> 00:04:07.270
+serás capaz de construir tus frontales desde cero
+
+88
+00:04:07.270 --> 00:04:09.120
+como lo estamos haciendo aquí.
+
+89
+00:04:09.120 --> 00:04:11.070
+Sería un gran trabajo si pasaras por eso.
+
+90
+00:04:11.070 --> 00:04:13.150
+En la siguiente guía, continuaremos con la adición
+
+91
+00:04:13.150 --> 00:04:18.150
+de contenedores y elementos adicionales de CSS Grid.
+

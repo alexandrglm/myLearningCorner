@@ -1,0 +1,570 @@
+﻿WEBVTT
+
+1
+00:00:01.000 --> 00:00:02.720
+<v ->Bienvenidos a la primera lección</v>
+
+2
+00:00:02.720 --> 00:00:05.050
+en el curso de Getting DRY con CSS.
+
+3
+00:00:05.050 --> 00:00:07.150
+En esta guía, lo que discutiremos
+
+4
+00:00:07.150 --> 00:00:11.050
+son el quien, que, cuando, donde, por que,
+
+5
+00:00:11.050 --> 00:00:13.800
+y como de lo que es el SCSS.
+
+6
+00:00:13.800 --> 00:00:16.270
+Y, además de ver eso,
+
+7
+00:00:16.270 --> 00:00:17.360
+antes de hacerlo,
+
+8
+00:00:17.360 --> 00:00:19.430
+Quiero decir que tomar este enfoque
+
+9
+00:00:19.430 --> 00:00:22.260
+es algo que hago cuando quiero aprender
+
+10
+00:00:22.260 --> 00:00:25.760
+cualquier lenguaje de programación o framework.
+
+11
+00:00:25.760 --> 00:00:27.390
+Parte de la razón porqué
+
+12
+00:00:27.390 --> 00:00:29.480
+es porque al obtener algo de antecedentes,
+
+13
+00:00:29.480 --> 00:00:32.970
+al aprender quien creó el framework,
+
+14
+00:00:32.970 --> 00:00:34.970
+eso da un pequeño vistazo
+
+15
+00:00:34.970 --> 00:00:37.450
+al problema que estaban tratando de resolver
+
+16
+00:00:37.450 --> 00:00:39.230
+si lograron hacerlo,
+
+17
+00:00:39.230 --> 00:00:41.860
+y, también, si eso te ayudará
+
+18
+00:00:41.860 --> 00:00:45.000
+mientras tratas de aprender e integrar ese sistema.
+
+19
+00:00:45.000 --> 00:00:46.490
+Comenzando con el quien,
+
+20
+00:00:46.490 --> 00:00:50.000
+SCSS fue creado por Hampton Catlin.
+
+21
+00:00:50.000 --> 00:00:54.770
+Hampton es como una celebridad en la comunidad Rails
+
+22
+00:00:54.770 --> 00:00:56.440
+y algunas otras
+
+23
+00:00:56.440 --> 00:00:58.530
+solo porque ha creado
+
+24
+00:00:58.530 --> 00:01:01.190
+algunas librerías populares,
+
+25
+00:01:01.190 --> 00:01:03.480
+cosas que podrías haber estado usando
+
+26
+00:01:03.480 --> 00:01:05.040
+y no lo habías notado.
+
+27
+00:01:05.040 --> 00:01:06.410
+Entonces, además de SCSS,
+
+28
+00:01:06.410 --> 00:01:09.980
+también creó la librería de templetes Haml
+
+29
+00:01:09.980 --> 00:01:12.170
+y Wikipedia móvil.
+
+30
+00:01:12.170 --> 00:01:13.670
+Pasando al que,
+
+31
+00:01:13.670 --> 00:01:18.020
+SCSS es abreviatura para "sassy cascading style sheets."
+
+32
+00:01:18.020 --> 00:01:21.910
+Y cuando fue creado, han sido ya 10 años,
+
+33
+00:01:21.910 --> 00:01:22.970
+lo que es algo loco
+
+34
+00:01:22.970 --> 00:01:25.610
+porque recuerdo haberlo usado hace algunos años
+
+35
+00:01:25.610 --> 00:01:27.810
+cuando era una tecnología relativamente nueva.
+
+36
+00:01:27.810 --> 00:01:30.520
+Pero ha estado por aquí por un largo tiempo.
+
+37
+00:01:30.520 --> 00:01:34.970
+Ha pasado por unas mejoras increíbles
+
+38
+00:01:34.970 --> 00:01:38.440
+que nos han permitido usarlo de formas bastante poderosas.
+
+39
+00:01:38.440 --> 00:01:41.550
+Y eso nos lleva directamente al donde,
+
+40
+00:01:41.550 --> 00:01:45.810
+que me gusta pensar que es ¿Dónde puedo usar SCSS?
+
+41
+00:01:45.810 --> 00:01:47.530
+Y eso es algo que es bastante genial
+
+42
+00:01:47.530 --> 00:01:49.070
+por como fue creado.
+
+43
+00:01:49.070 --> 00:01:51.650
+Aunque SCSS muy temprano
+
+44
+00:01:51.650 --> 00:01:55.390
+fue algo que simplemente fue considerado
+
+45
+00:01:55.390 --> 00:01:56.970
+ser una librería Rails,
+
+46
+00:01:56.970 --> 00:01:59.620
+ahora puede ser usado en casi
+
+47
+00:01:59.620 --> 00:02:02.110
+cualquier framework que poseas,
+
+48
+00:02:02.110 --> 00:02:03.810
+ya sea un framework móvil,
+
+49
+00:02:03.810 --> 00:02:05.760
+o un front end de JavaScript.
+
+50
+00:02:05.760 --> 00:02:09.750
+Lo agradable es que no está conectado o bloqueado para
+
+51
+00:02:09.750 --> 00:02:13.130
+trabajar con un tipo de stack u otro.
+
+52
+00:02:13.130 --> 00:02:15.830
+Y, de hecho, cuando veamos este curso,
+
+53
+00:02:15.830 --> 00:02:18.540
+usaremos un sistema completamente separado
+
+54
+00:02:18.540 --> 00:02:20.410
+para poder crear nuestras propias hojas de estilo
+
+55
+00:02:20.410 --> 00:02:23.250
+solo para que puedas ver que es completamente agnóstico
+
+56
+00:02:23.250 --> 00:02:25.780
+de cualquier stack en el que puedas estar trabajando.
+
+57
+00:02:25.780 --> 00:02:28.280
+Hasta ahora, hemos cubierto el quien, el que,
+
+58
+00:02:28.280 --> 00:02:30.290
+el cuando y el donde.
+
+59
+00:02:30.290 --> 00:02:34.550
+Y vamos a llegar a mi favorito, el por qué.
+
+60
+00:02:34.550 --> 00:02:37.280
+¿Por qué es importante y por qué es útil
+
+61
+00:02:37.280 --> 00:02:38.890
+aprender acerca de SCSS?
+
+62
+00:02:38.890 --> 00:02:43.300
+Y eso es algo que trato de inculcar en cualquier estudiante
+
+63
+00:02:43.300 --> 00:02:45.760
+cuando vienen y quieren entrar en
+
+64
+00:02:45.760 --> 00:02:49.910
+temas más avanzados cuando se trata de diseño front end,
+
+65
+00:02:49.910 --> 00:02:54.550
+y eso es lo que SCSS nos permite hacer, visualizar
+
+66
+00:02:54.550 --> 00:02:58.500
+nuestro proceso de implementación de diseño completo.
+
+67
+00:02:58.500 --> 00:03:01.010
+Si hasta este punto, siempre has escrito
+
+68
+00:03:01.010 --> 00:03:04.710
+en CSS puro, eso está perfectamente bien.
+
+69
+00:03:04.710 --> 00:03:06.910
+Es un gran lugar para comenzar.
+
+70
+00:03:06.910 --> 00:03:08.790
+Pero lo que SCSS nos permite hacer
+
+71
+00:03:08.790 --> 00:03:10.910
+es visualizar el proceso.
+
+72
+00:03:10.910 --> 00:03:13.000
+Entonces, todo lo que SCSS hace
+
+73
+00:03:13.000 --> 00:03:16.180
+gira alrededor de poder eliminar
+
+74
+00:03:16.180 --> 00:03:18.450
+cualquier tipo de proceso repetitivo.
+
+75
+00:03:18.450 --> 00:03:20.810
+Así que, si te encuentras escribiendo
+
+76
+00:03:20.810 --> 00:03:22.870
+el mismo tipo de retazo de código
+
+77
+00:03:22.870 --> 00:03:26.340
+o incluso tipos similares de estilos CSS
+
+78
+00:03:26.340 --> 00:03:27.710
+de manera regular,
+
+79
+00:03:27.710 --> 00:03:31.160
+SCSS te permite detener toda esa repetición
+
+80
+00:03:31.160 --> 00:03:33.470
+y comenzar a usar código compartido.
+
+81
+00:03:33.470 --> 00:03:34.990
+En este curso,
+
+82
+00:03:34.990 --> 00:03:37.940
+verás como la mayor parte de las herramientas
+
+83
+00:03:37.940 --> 00:03:41.500
+que tiene SCSS te dan la habilidad
+
+84
+00:03:41.500 --> 00:03:45.370
+de hacer que tus hojas de estilo sean mucho más escalables.
+
+85
+00:03:45.370 --> 00:03:48.600
+Todo desde poder construir mixins,
+
+86
+00:03:48.600 --> 00:03:52.060
+donde puedes cargar un montón de funcionalidades
+
+87
+00:03:52.060 --> 00:03:54.500
+dentro de un tipo de elemento
+
+88
+00:03:54.500 --> 00:03:57.470
+y luego compartirlo en todo tu sistema,
+
+89
+00:03:57.470 --> 00:04:01.110
+hasta usar condicionales para poder revisar
+
+90
+00:04:01.110 --> 00:04:04.280
+si un estilo es lo que quieres en una situación,
+
+91
+00:04:04.280 --> 00:04:07.520
+y si es algo que quieres en la otra situación,
+
+92
+00:04:07.520 --> 00:04:10.090
+los estilos pueden cambiar dinámicamente,
+
+93
+00:04:10.090 --> 00:04:12.260
+que es algo que, antes de esto,
+
+94
+00:04:12.260 --> 00:04:14.870
+teníamos que usar cosas como
+
+95
+00:04:14.870 --> 00:04:17.340
+implementar código dentro de nuestras vistas
+
+96
+00:04:17.340 --> 00:04:18.970
+o crear ayudantes de vista
+
+97
+00:04:18.970 --> 00:04:21.990
+para poder crear ese mismo tipo de función.
+
+98
+00:04:21.990 --> 00:04:25.560
+Todo eso está disponible directamente en el archivo SCSS
+
+99
+00:04:25.560 --> 00:04:27.710
+Funciona como un lenguaje de programación.
+
+100
+00:04:27.710 --> 00:04:29.980
+Además de herramientas como mixins,
+
+101
+00:04:29.980 --> 00:04:33.410
+SCSS también nos da el concepto de variables.
+
+102
+00:04:33.410 --> 00:04:35.550
+Si alguna vez has tenido una situación
+
+103
+00:04:35.550 --> 00:04:37.360
+donde has tenido una hoja de estilo CSS
+
+104
+00:04:37.360 --> 00:04:41.500
+y has tenido una definición de color en 20 puntos,
+
+105
+00:04:41.500 --> 00:04:44.540
+y luego decides que quieres cambiar el color
+
+106
+00:04:44.540 --> 00:04:47.840
+solo un poco, cambiar el hex un poco,
+
+107
+00:04:47.840 --> 00:04:50.600
+tendrías que ir y o cambiar y reemplazar,
+
+108
+00:04:50.600 --> 00:04:54.950
+o ir y encontrar cada punto en la aplicación
+
+109
+00:04:54.950 --> 00:04:57.050
+solo para hacer ese cambio,
+
+110
+00:04:57.050 --> 00:05:01.100
+con una variable, puedes definir todos tus colores de estilo
+
+111
+00:05:01.100 --> 00:05:04.490
+y tamaños y ese tipo de cosas, todo al principio,
+
+112
+00:05:04.490 --> 00:05:07.380
+y luego llamarlos en toda la aplicación.
+
+113
+00:05:07.380 --> 00:05:09.270
+Entonces, cuando quieres hacer ese cambio,
+
+114
+00:05:09.270 --> 00:05:10.627
+lo haces en un solo punto
+
+115
+00:05:10.627 --> 00:05:13.450
+y eso cambia cada otro punto.
+
+116
+00:05:13.450 --> 00:05:16.190
+Como fije, todo en SCSS gira alrededor
+
+117
+00:05:16.190 --> 00:05:18.810
+de poder crear código compartido
+
+118
+00:05:18.810 --> 00:05:22.170
+que es mucho más conciso y sigue las mejores prácticas.
+
+119
+00:05:22.170 --> 00:05:24.130
+Entonces ¿Cómo es todo eso posible?
+
+120
+00:05:24.130 --> 00:05:26.170
+Esto nos lleva directamente a la última pregunta
+
+121
+00:05:26.170 --> 00:05:29.460
+que responderemos en esta guía, que es el como.
+
+122
+00:05:29.460 --> 00:05:33.480
+Entonces, lo que SCSS hace es que te permite
+
+123
+00:05:33.480 --> 00:05:36.260
+escribir estilos tipo CSS.
+
+124
+00:05:36.260 --> 00:05:38.390
+Se parecerá mucho al CSS
+
+125
+00:05:38.390 --> 00:05:41.330
+con algunas capas geniales encima.
+
+126
+00:05:41.330 --> 00:05:45.370
+Pero técnicamente, SCSS es lo que se llama un pre-procesador
+
+127
+00:05:45.370 --> 00:05:47.690
+lo que significa que simplemente es
+
+128
+00:05:47.690 --> 00:05:49.760
+un tipo de lenguaje guión
+
+129
+00:05:49.760 --> 00:05:51.690
+que el navegador no puede interpretar,
+
+130
+00:05:51.690 --> 00:05:54.970
+así que tienes que tener este pre-procesador además de eso,
+
+131
+00:05:54.970 --> 00:05:58.800
+y luego, mientras el sistema corre,
+
+132
+00:05:58.800 --> 00:06:01.020
+mientras el procesador trabaja,
+
+133
+00:06:01.020 --> 00:06:03.610
+toma todo ese código que escribiste,
+
+134
+00:06:03.610 --> 00:06:05.940
+todos esos estilos SCSS,
+
+135
+00:06:05.940 --> 00:06:09.570
+y los convierte directamente a CSS.
+
+136
+00:06:09.570 --> 00:06:12.520
+Toma todas las diferentes eficiencias,
+
+137
+00:06:12.520 --> 00:06:15.290
+las variables, los mixins, las funciones,
+
+138
+00:06:15.290 --> 00:06:17.720
+los condicionales, todos esos ítems,
+
+139
+00:06:17.720 --> 00:06:22.430
+y luego crea tus propios archivos CSS para ti.
+
+140
+00:06:22.430 --> 00:06:24.950
+Y en la próxima guía, veremos
+
+141
+00:06:24.950 --> 00:06:26.580
+un pequeño demo en screencast
+
+142
+00:06:26.580 --> 00:06:29.943
+donde podrás ver exactamente como ese proceso sucede.
+

@@ -1,0 +1,360 @@
+﻿WEBVTT
+
+1
+00:00:00.630 --> 00:00:03.770
+<v ->Este es un curso de diseño y análisis de sistemas,</v>
+
+2
+00:00:03.770 --> 00:00:07.880
+así que vale la pena retroceder un poco
+
+3
+00:00:07.880 --> 00:00:11.850
+y ver qué es exactamente un sistema de software.
+
+4
+00:00:11.850 --> 00:00:14.100
+Ya que es un término bastante genérico,
+
+5
+00:00:14.100 --> 00:00:16.200
+creo que es mejor aclararlo,
+
+6
+00:00:16.200 --> 00:00:21.180
+porque puedes pensar que son una cosa,
+
+7
+00:00:21.180 --> 00:00:24.120
+un tipo de práctica,
+
+8
+00:00:24.120 --> 00:00:27.880
+pero, en realidad, existen muchas formas diferentes
+
+9
+00:00:27.880 --> 00:00:31.010
+de aplicar un sistema de software.
+
+10
+00:00:31.010 --> 00:00:34.590
+Personalmente, me gusta diferenciar dos categorías.
+
+11
+00:00:34.590 --> 00:00:38.690
+La primera es el sistema de alto nivel.
+
+12
+00:00:38.690 --> 00:00:41.080
+Esto es cuando creas
+
+13
+00:00:41.080 --> 00:00:45.240
+un tipo de aplicación que puede ser una aplicación web
+
+14
+00:00:45.240 --> 00:00:48.280
+como Twitter o Facebook,
+
+15
+00:00:48.280 --> 00:00:51.750
+o cualquier tipo de aplicación web,
+
+16
+00:00:51.750 --> 00:00:54.350
+también una aplicación para móviles.
+
+17
+00:00:54.350 --> 00:00:58.750
+Yo los considero sistemas de alto nivel.
+
+18
+00:00:58.750 --> 00:01:01.690
+Cualquier aplicación con la que interactúan
+
+19
+00:01:01.690 --> 00:01:06.180
+los usuarios es
+un sistema de alto nivel.
+
+20
+00:01:06.180 --> 00:01:10.780
+Un sistema de bajo nivel es un tipo de software
+
+21
+00:01:10.780 --> 00:01:15.220
+con el que normalmente
+el usuario no interactúa.
+
+22
+00:01:15.220 --> 00:01:18.640
+Podría ser un sistema que representara
+
+23
+00:01:18.640 --> 00:01:20.307
+algún tipo de biblioteca de códigos,
+
+24
+00:01:20.307 --> 00:01:21.830
+así que, si eres un desarrollador de Ruby
+
+25
+00:01:21.830 --> 00:01:26.230
+y creas un gem de Ruby, eso sería un sistema de bajo nivel.
+
+26
+00:01:26.230 --> 00:01:28.970
+Sigue siendo un sistema. Aunque los usuarios
+
+27
+00:01:28.970 --> 00:01:32.300
+no pulsen botones ni escriban información,
+
+28
+00:01:32.300 --> 00:01:34.520
+no significa que no sea un sistema.
+
+29
+00:01:34.520 --> 00:01:37.570
+Otro sería un sistema operativo.
+
+30
+00:01:37.570 --> 00:01:39.236
+Lleva "sistema" en el nombre,
+
+31
+00:01:39.236 --> 00:01:40.830
+así que, sin duda, es un sistema.
+
+32
+00:01:40.830 --> 00:01:45.150
+Windows, Mac, Linux... todos son sistemas.
+
+33
+00:01:45.150 --> 00:01:48.060
+Así que para comprender
+
+34
+00:01:48.060 --> 00:01:50.710
+y crear un análisis adecuado,
+
+35
+00:01:50.710 --> 00:01:53.270
+y luego un diseño para estos sistemas,
+
+36
+00:01:53.270 --> 00:01:55.990
+es útil tener una visión holística
+
+37
+00:01:55.990 --> 00:01:57.740
+de lo que representan.
+
+38
+00:01:57.740 --> 00:02:01.080
+Eso puede significar que pienses en un sistema
+
+39
+00:02:01.080 --> 00:02:03.347
+como la creación del conjunto completo
+
+40
+00:02:03.347 --> 00:02:04.800
+de puntos de interacción
+
+41
+00:02:04.800 --> 00:02:06.560
+para tu aplicación para móviles.
+
+42
+00:02:06.560 --> 00:02:10.480
+Pero podría ser solo configurar la biblioteca de códigos
+
+43
+00:02:10.480 --> 00:02:14.620
+para recibir y enviar ciertos tipos de mensajes.
+
+44
+00:02:14.620 --> 00:02:16.910
+Así que es algo muy importante
+
+45
+00:02:16.910 --> 00:02:20.350
+que quería aclarar,
+
+46
+00:02:20.350 --> 00:02:23.460
+porque vamos a crear tipos de proyectos diferentes,
+
+47
+00:02:23.460 --> 00:02:25.470
+vamos a crear proyectos
+
+48
+00:02:25.470 --> 00:02:29.030
+muy centrados
+en el usuario de la interfaz
+
+49
+00:02:29.030 --> 00:02:32.610
+y van a centrarse mucho en el comportamiento
+
+50
+00:02:32.610 --> 00:02:36.290
+y creación de roles de autorización.
+
+51
+00:02:36.290 --> 00:02:38.633
+También, más tarde, pasaremos
+
+52
+00:02:38.633 --> 00:02:40.270
+a crear
+
+53
+00:02:40.270 --> 00:02:42.790
+diagramas de paquetes y diagramas de secuencias,
+
+54
+00:02:42.790 --> 00:02:45.990
+que son partes diferentes del sistema,
+
+55
+00:02:45.990 --> 00:02:49.070
+y la creación de ambas cosas
+es muy importante.
+
+56
+00:02:49.070 --> 00:02:51.680
+Me gustaría que tuvierais
+
+57
+00:02:51.680 --> 00:02:54.770
+un tipo de esquema mental de la A a la Z
+
+58
+00:02:54.770 --> 00:02:58.150
+a la hora de pensar qué tipo de sistema
+
+59
+00:02:58.150 --> 00:02:59.110
+vais a crear.
+
+60
+00:02:59.110 --> 00:03:02.250
+Porque está relacionado
+con la solución de problemas,
+
+61
+00:03:02.250 --> 00:03:05.230
+porque quizá penséis
+en la solución de problemas
+
+62
+00:03:05.230 --> 00:03:08.460
+como la creación
+de un tipo de aplicación
+
+63
+00:03:08.460 --> 00:03:11.070
+para solucionar un problema concreto.
+
+64
+00:03:11.070 --> 00:03:13.500
+Pero esa es una visión de muy alto nivel.
+
+65
+00:03:13.500 --> 00:03:18.180
+Generalmente, tengo
+más seguridad y más éxito
+
+66
+00:03:18.180 --> 00:03:21.890
+cuando divido las cosas en partes pequeñas.
+
+67
+00:03:21.890 --> 00:03:26.260
+Solo pensar en una aplicación que necesito crear
+
+68
+00:03:26.260 --> 00:03:28.140
+puede intimidar un poco.
+
+69
+00:03:28.140 --> 00:03:30.000
+Llevo haciendo esto mucho tiempo
+
+70
+00:03:30.000 --> 00:03:34.460
+y aún me intimida cuando alguien propone un proyecto
+
+71
+00:03:34.460 --> 00:03:38.690
+en un lenguaje o entorno que nunca he utilizado,
+
+72
+00:03:38.690 --> 00:03:41.330
+algo que nunca haya hecho antes.
+
+73
+00:03:41.330 --> 00:03:45.120
+Y lo que más me ayuda es dividirlo en partes
+
+74
+00:03:45.120 --> 00:03:49.340
+y pensar: "¿En cuántos sistemas puedo dividirlo?
+
+75
+00:03:49.340 --> 00:03:53.450
+¿Puedo dividirlo a un nivel tan bajo que pueda analizarlo
+
+76
+00:03:53.450 --> 00:03:56.490
+y pensar solamente
+en tipos muy sencillos
+
+77
+00:03:56.490 --> 00:03:59.270
+de bibliotecas de códigos que integraré en él?".
+
+78
+00:03:59.270 --> 00:04:02.720
+Y después puedo pensar
+en los mensajes que enviaré
+
+79
+00:04:02.720 --> 00:04:05.210
+de una clase a otra.
+
+80
+00:04:05.210 --> 00:04:07.870
+Porque he descubierto que, cuando puedo dividirlo
+
+81
+00:04:07.870 --> 00:04:11.640
+en ese tipo de sistemas y uso ese enfoque,
+
+82
+00:04:11.640 --> 00:04:13.380
+de pronto me siento mucho más seguro.
+
+83
+00:04:13.380 --> 00:04:16.230
+Porque sé que puedo hacerlo,
+
+84
+00:04:16.230 --> 00:04:19.690
+sé que puedo crear un método que llame a otro método
+
+85
+00:04:19.690 --> 00:04:22.040
+y que pase valores de uno a otro.
+
+86
+00:04:22.040 --> 00:04:26.750
+Cuando tengo una perspectiva de muy alto nivel
+
+87
+00:04:26.750 --> 00:04:30.363
+de algún tipo de aplicación es cuando hay confusiones.
+

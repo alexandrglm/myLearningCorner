@@ -1,0 +1,866 @@
+WEBVTT
+
+1
+00:00:01.180 --> 00:00:03.040
+<v Narrador>En esta guía, enseñaremos</v>
+
+2
+00:00:03.040 --> 00:00:07.012
+cómo usar variables dentro de Python.
+
+3
+00:00:07.012 --> 00:00:09.250
+Ahora, si eres nuevo en Python,
+
+4
+00:00:09.250 --> 00:00:11.450
+o en el tema de programación, puede que el concepto
+
+5
+00:00:11.450 --> 00:00:15.130
+de variables te sea un poco extraño.
+
+6
+00:00:15.130 --> 00:00:16.970
+Y en esta guía
+
+7
+00:00:16.970 --> 00:00:18.620
+las estudiaremos a fondo.
+
+8
+00:00:18.620 --> 00:00:21.710
+Te mostraré dos distintos tipos de variables,
+
+9
+00:00:21.710 --> 00:00:24.680
+y también cuatro maneras
+
+10
+00:00:24.680 --> 00:00:27.430
+en que pudieras ejecutar este programa.
+
+11
+00:00:27.430 --> 00:00:29.950
+No lo explicaré todo en una única guía,
+
+12
+00:00:29.950 --> 00:00:34.640
+usualmente me aferraría a un solo tipo de entorno,
+
+13
+00:00:34.640 --> 00:00:37.230
+pero para que haya más simplicidad,
+
+14
+00:00:37.230 --> 00:00:39.560
+y para que no te sea confuso
+
+15
+00:00:39.560 --> 00:00:43.130
+cuando yo use un entorno, y tú otro,
+
+16
+00:00:43.130 --> 00:00:45.448
+quería mostrarte que tú pudieras usar
+
+17
+00:00:45.448 --> 00:00:48.322
+cualquiera de los entornos de los que hablé
+
+18
+00:00:48.322 --> 00:00:51.570
+en la última sección con el programa de Python.
+
+19
+00:00:51.570 --> 00:00:53.890
+Por lo que repl.it será lo que usaré
+
+20
+00:00:53.890 --> 00:00:55.990
+para algunos de los programas más básicos,
+
+21
+00:00:55.990 --> 00:00:58.480
+y la razón principal es porque
+
+22
+00:00:58.480 --> 00:01:01.356
+nos brinda la habilidad de ver lado a lado
+
+23
+00:01:01.356 --> 00:01:03.330
+cómo va nuestro código.
+
+24
+00:01:03.330 --> 00:01:06.852
+Si fueras a ver la guía de configuración del sistema,
+
+25
+00:01:06.852 --> 00:01:09.890
+tendrías todo esto predeterminado,
+
+26
+00:01:09.890 --> 00:01:12.560
+y podrás visitar a repl.it, e iniciar sesión,
+
+27
+00:01:12.560 --> 00:01:14.620
+estoy usando mis datos de GitHub,
+
+28
+00:01:14.620 --> 00:01:17.840
+y ahí podrás crear un nuevo repl,
+
+29
+00:01:17.840 --> 00:01:20.200
+y seleccionar Python3 desde ahí.
+
+30
+00:01:20.200 --> 00:01:22.640
+Si no se muestra en la sección de Popular,
+
+31
+00:01:22.640 --> 00:01:24.480
+porque cambia dinámicamente,
+
+32
+00:01:24.480 --> 00:01:29.180
+podrás empezar a escribir python, y seleccionar Python3,
+
+33
+00:01:29.180 --> 00:01:32.530
+y te generará uno nuevo por ti.
+
+34
+00:01:32.530 --> 00:01:35.657
+Para crear una variable en Python,
+
+35
+00:01:35.657 --> 00:01:38.735
+que es muy básica, simplemente le das el nombre
+
+36
+00:01:38.735 --> 00:01:41.115
+de tu variable, y en este caso,
+
+37
+00:01:41.115 --> 00:01:44.230
+crearé una variable llamada "name,"
+
+38
+00:01:44.230 --> 00:01:47.841
+y después le das un signo de igual, seguido por
+
+39
+00:01:47.841 --> 00:01:51.920
+lo que sea que quieras que almacene esa variable.
+
+40
+00:01:51.920 --> 00:01:56.920
+En este caso, escribiré Kristine, y listo.
+
+41
+00:01:57.180 --> 00:01:59.883
+Ahora, una variable al más alto nivel,
+
+42
+00:01:59.883 --> 00:02:03.930
+es un constructo de programación que te permite a ti
+
+43
+00:02:03.930 --> 00:02:07.790
+y a tu programa, almacenar diferentes tipos de datos,
+
+44
+00:02:07.790 --> 00:02:10.230
+y arreglaré esa pequeña falta de ortografía,
+
+45
+00:02:10.230 --> 00:02:13.870
+y justo aquí, tenemos una variable llamada "name,"
+
+46
+00:02:13.870 --> 00:02:18.040
+y es igual a lo que es llamada string,
+
+47
+00:02:18.040 --> 00:02:20.870
+y en este caso, es una string llamada Kristine.
+
+48
+00:02:20.870 --> 00:02:24.650
+Esta también pudiera ser una oración completa, o párrafo,
+
+49
+00:02:24.650 --> 00:02:27.850
+y explicaremos otras maneras de almacenar strings,
+
+50
+00:02:27.850 --> 00:02:30.550
+y tenemos una sección entera dedicada
+
+51
+00:02:30.550 --> 00:02:33.170
+a los datos de tipo string, pero por ahora,
+
+52
+00:02:33.170 --> 00:02:35.330
+simplemente hablaremos sobre variables.
+
+53
+00:02:35.330 --> 00:02:36.900
+Tenemos a "name."
+
+54
+00:02:36.900 --> 00:02:40.073
+Esta variable contiene un tipo muy específico
+
+55
+00:02:40.073 --> 00:02:43.070
+de valor, añadamos otro más.
+
+56
+00:02:43.070 --> 00:02:44.630
+Imagina que edificas un sitio,
+
+57
+00:02:44.630 --> 00:02:46.110
+y es de redes sociales,
+
+58
+00:02:46.110 --> 00:02:48.650
+y quieres ver cuántas publicaciones tienes,
+
+59
+00:02:48.650 --> 00:02:53.430
+podemos escribir post_count, y ponerlo igual
+
+60
+00:02:53.430 --> 00:02:55.640
+a cierto tipo de números.
+
+61
+00:02:55.640 --> 00:02:58.440
+Ahora tienes una variable name,
+
+62
+00:02:58.440 --> 00:03:01.090
+y una de post_count.
+
+63
+00:03:01.090 --> 00:03:03.833
+Ambas son variables de Python,
+
+64
+00:03:03.833 --> 00:03:06.010
+son perfectamente válidas,
+
+65
+00:03:06.010 --> 00:03:09.470
+y se ejecutarán como deberían.
+
+66
+00:03:09.470 --> 00:03:13.100
+Si hablamos de otros lenguajes como Java,
+
+67
+00:03:13.100 --> 00:03:17.020
+C, o C++, esto pudiera lucir bien diferente,
+
+68
+00:03:17.020 --> 00:03:18.870
+y es debido a la manera
+
+69
+00:03:18.870 --> 00:03:21.790
+en que Python usa su tipo de de sistema.
+
+70
+00:03:21.790 --> 00:03:24.000
+Y no te preocupes si la palabra
+
+71
+00:03:24.000 --> 00:03:25.780
+"tipo de sistema" suena confusa,
+
+72
+00:03:25.780 --> 00:03:27.512
+lo que eso significa aquí,
+
+73
+00:03:27.512 --> 00:03:30.925
+incluso aunque esas variables estén siendo
+
+74
+00:03:30.925 --> 00:03:32.800
+representadas exactamente de la misma manera,
+
+75
+00:03:32.800 --> 00:03:34.860
+estamos creando una variable llamada "name,"
+
+76
+00:03:34.860 --> 00:03:37.470
+y creamos una variable llamada post_count,
+
+77
+00:03:37.470 --> 00:03:40.760
+estas almacenan distintos tipos de valores,
+
+78
+00:03:40.760 --> 00:03:43.680
+y si diríamos, Java,
+
+79
+00:03:43.680 --> 00:03:46.560
+tendríamos que decir que este post_count
+
+80
+00:03:46.560 --> 00:03:49.520
+almacenará un valor entero,
+
+81
+00:03:49.520 --> 00:03:52.240
+porque es exactamente lo que es el número 42,
+
+82
+00:03:52.240 --> 00:03:57.234
+es entero, y la computadora y el lenguaje de programación
+
+83
+00:03:57.234 --> 00:03:59.140
+necesitan que les digas por adelantado,
+
+84
+00:03:59.140 --> 00:04:03.781
+así como este valor de string, en Java, o C++,
+
+85
+00:04:03.781 --> 00:04:06.880
+tendríamos que escribir, name, y después
+
+86
+00:04:06.880 --> 00:04:08.863
+tendríamos que poner que es un string,
+
+87
+00:04:08.863 --> 00:04:12.310
+y después podrás igualarlo a este valor.
+
+88
+00:04:12.310 --> 00:04:17.046
+Pero debido a que Python es muy dinámico, no tendrás
+
+89
+00:04:17.046 --> 00:04:20.540
+que añadir ningún tipo de chequeador de entradas.
+
+90
+00:04:20.540 --> 00:04:23.460
+En vez de eso, pudieras decir,
+
+91
+00:04:23.460 --> 00:04:26.200
+tengo una variable aquí llamada name,
+
+92
+00:04:26.200 --> 00:04:29.900
+y será igual al valor Kristine,
+
+93
+00:04:29.900 --> 00:04:32.330
+la cual es una string, y después tenemos el post_count,
+
+94
+00:04:32.330 --> 00:04:34.810
+que será igual a 42.
+
+95
+00:04:34.810 --> 00:04:37.240
+Y para imprimir estos,
+
+96
+00:04:37.240 --> 00:04:39.760
+necesitaremos el comando de impresión,
+
+97
+00:04:39.760 --> 00:04:42.440
+y necesitaremos poner a name,
+
+98
+00:04:42.440 --> 00:04:45.740
+y después haré otro comando de imprimir
+
+99
+00:04:45.740 --> 00:04:46.993
+que diga post_count.
+
+100
+00:04:48.880 --> 00:04:51.330
+Ahora, esto se guardará automáticamente,
+
+101
+00:04:51.330 --> 00:04:55.560
+y si vengo aquí y le doy a Ejecutar,
+
+102
+00:04:55.560 --> 00:04:57.220
+que lo podrás ver a la derecha,
+
+103
+00:04:57.220 --> 00:05:00.500
+que todo se ejecutó correctamente, por lo que está bien.
+
+104
+00:05:00.500 --> 00:05:03.970
+Esto es exactamente lo que queríamos que hiciera el sistema,
+
+105
+00:05:03.970 --> 00:05:06.320
+el cual fue capaz de tomar
+
+106
+00:05:06.320 --> 00:05:08.777
+un valor de name, y de post_count,
+
+107
+00:05:08.777 --> 00:05:12.350
+y luego imprimirlos, por lo que a un alto nivel,
+
+108
+00:05:12.350 --> 00:05:15.520
+lo que es una variable, es un simple contenedor,
+
+109
+00:05:15.520 --> 00:05:18.430
+te da la habilidad de almacenar elementos,
+
+110
+00:05:18.430 --> 00:05:22.140
+y luego reusarlos después, así como aquí.
+
+111
+00:05:22.140 --> 00:05:25.820
+Así es como edificarías un programa basado en variables
+
+112
+00:05:25.820 --> 00:05:30.820
+dentro de Python, y usando el entorno de desarrollo
+
+113
+00:05:30.860 --> 00:05:33.610
+de repl.it. Pero quería mostrarte, en caso
+
+114
+00:05:33.610 --> 00:05:37.420
+de que te encuentres con otro tipo de entorno,
+
+115
+00:05:37.420 --> 00:05:42.000
+así como usando un terminal, un tipo preferible de sistema,
+
+116
+00:05:42.000 --> 00:05:44.000
+quería mostrarte cómo luce, también.
+
+117
+00:05:44.000 --> 00:05:46.940
+Cambiaré a terminal,
+
+118
+00:05:46.940 --> 00:05:49.670
+y tengo el mismo programa justo aquí.
+
+119
+00:05:49.670 --> 00:05:53.980
+Estoy dentro de un directorio llamado python-intro,
+
+120
+00:05:53.980 --> 00:05:58.980
+y tengo un archivo llamado 01_basic,
+
+121
+00:05:59.400 --> 00:06:01.860
+y esto se ejecutará, como podrás ver,
+
+122
+00:06:01.860 --> 00:06:05.720
+es el programa idéntico. Estoy dentro de ellos,
+
+123
+00:06:05.720 --> 00:06:08.903
+no permitas que todas estas rayas con puntos,
+
+124
+00:06:08.903 --> 00:06:11.930
+ni las tildes, se interpongan en el camino,
+
+125
+00:06:11.930 --> 00:06:15.290
+más tarde te mostraré más detalles.
+
+126
+00:06:15.290 --> 00:06:16.980
+Al final del día, lo importante
+
+127
+00:06:16.980 --> 00:06:19.988
+es que tenemos el mismo programa exacto
+
+128
+00:06:19.988 --> 00:06:22.070
+que teníamos en repl.it,
+
+129
+00:06:22.070 --> 00:06:24.610
+y esa es una de las características más importantes
+
+130
+00:06:24.610 --> 00:06:27.705
+de esta guía que quiero que te aprendas, es que un programa
+
+131
+00:06:27.705 --> 00:06:31.140
+de Python puede ejecutarse de numerosas maneras.
+
+132
+00:06:31.140 --> 00:06:36.140
+Y aquí, si oculto esto, déjame ocultarlos,
+
+133
+00:06:38.240 --> 00:06:42.860
+lo que puedo hacer es escribir python3, y luego,
+
+134
+00:06:44.250 --> 00:06:49.250
+revisaré mis variables, y luego aquí,
+
+135
+00:06:49.300 --> 00:06:52.060
+tenemos a basic, y este es un comando ejecutable.
+
+136
+00:06:52.060 --> 00:06:54.400
+Así que digamos que creaste un archivo,
+
+137
+00:06:54.400 --> 00:06:57.520
+y que lo tienes dentro de cierto directorio de código,
+
+138
+00:06:57.520 --> 00:06:59.460
+simplemente abres tu terminal,
+
+139
+00:06:59.460 --> 00:07:03.340
+exactamente así, digamos, python3,
+
+140
+00:07:03.340 --> 00:07:07.000
+luego la ruta del archivo Python, ejecútalo,
+
+141
+00:07:07.000 --> 00:07:09.538
+y podrás ver aquí, que tenemos el mismo resultado
+
+142
+00:07:09.538 --> 00:07:12.923
+exacto que tuvimos en repl.it.
+
+143
+00:07:12.923 --> 00:07:14.820
+Y debido a que te dije
+
+144
+00:07:14.820 --> 00:07:17.180
+que tenemos numerosas maneras de hacer esto,
+
+145
+00:07:17.180 --> 00:07:18.950
+quiero mostrarte la tercera ahora,
+
+146
+00:07:18.950 --> 00:07:22.160
+la cual es muy similar a esta aquí,
+
+147
+00:07:22.160 --> 00:07:25.820
+la cual se pone en práctica si usaras un editor de texto,
+
+148
+00:07:25.820 --> 00:07:27.240
+así como Sublime Text.
+
+149
+00:07:27.240 --> 00:07:30.360
+En la segunda opción, te mostré que estaba usando Vim,
+
+150
+00:07:30.360 --> 00:07:33.578
+y este es Sublime Text, uno de los más populares
+
+151
+00:07:33.578 --> 00:07:35.950
+editores de texto que existen.
+
+152
+00:07:35.950 --> 00:07:39.170
+Si usas un editor, así como Atom,
+
+153
+00:07:39.170 --> 00:07:41.510
+es increíblemente similar a ese.
+
+154
+00:07:41.510 --> 00:07:44.940
+Podrás notar que tenemos aquí nuestro programa idéntico,
+
+155
+00:07:44.940 --> 00:07:47.990
+pero tengo este archivo justo en el escritorio,
+
+156
+00:07:47.990 --> 00:07:51.240
+así que si abro el terminal,
+
+157
+00:07:51.240 --> 00:07:56.240
+y escribo python3 ~/Desktop,
+
+158
+00:07:58.294 --> 00:08:00.390
+y para cambiarlo de vuelta,
+
+159
+00:08:00.390 --> 00:08:02.680
+quiero asegurarme de tener bien el nombre del archivo,
+
+160
+00:08:02.680 --> 00:08:05.870
+este es llamado hipython, y está en el escritorio,
+
+161
+00:08:05.870 --> 00:08:10.750
+así que pondré hipython.py, y si le doy a Enter,
+
+162
+00:08:10.750 --> 00:08:13.996
+podrás ver que el resultado es exactamente el mismo,
+
+163
+00:08:13.996 --> 00:08:18.000
+y vamos por el ejemplo tres de cuatro.
+
+164
+00:08:18.000 --> 00:08:22.490
+Y por si quieres otro ejemplo más, digamos, python3,
+
+165
+00:08:22.490 --> 00:08:25.685
+y esto abrirá un repl por aquí
+
+166
+00:08:25.685 --> 00:08:29.160
+en el mismo terminal, y podré
+
+167
+00:08:29.160 --> 00:08:31.690
+escribir el mismo programa exacto, así que pondré
+
+168
+00:08:31.690 --> 00:08:36.180
+que name es igual a Kristine, y después
+
+169
+00:08:36.180 --> 00:08:41.088
+que este post_count será igual a 42,
+
+170
+00:08:41.088 --> 00:08:42.496
+y luego si escribo
+
+171
+00:08:42.496 --> 00:08:47.484
+que print , y que print ,
+
+172
+00:08:48.390 --> 00:08:51.490
+y me dará un resultado idéntico.
+
+173
+00:08:51.490 --> 00:08:54.810
+Sé que hablamos sobre cada uno de esos tipos
+
+174
+00:08:54.810 --> 00:08:58.290
+de entornos de desarrollo en la sección pasada.
+
+175
+00:08:58.290 --> 00:09:01.710
+Sin embargo, nunca vimos un programa en sí
+
+176
+00:09:01.710 --> 00:09:03.890
+cuando lo hicimos, y quería mostrarte
+
+177
+00:09:03.890 --> 00:09:07.150
+una comparación de lado a lado con cada uno de esos
+
+178
+00:09:07.150 --> 00:09:10.130
+en la explicación de nuestra guía de variables,
+
+179
+00:09:10.130 --> 00:09:12.930
+porque sé que puede que en el futuro estés sentado
+
+180
+00:09:12.930 --> 00:09:16.200
+junto a otro estudiante que pudiera usar
+
+181
+00:09:16.200 --> 00:09:18.750
+un entorno completamente distinto de desarrollo
+
+182
+00:09:18.750 --> 00:09:20.220
+en este curso,
+
+183
+00:09:20.220 --> 00:09:22.440
+y lo que quiero que entiendas
+
+184
+00:09:22.440 --> 00:09:24.040
+es que no tiene importancia.
+
+185
+00:09:24.040 --> 00:09:26.010
+Quiero que uses
+
+186
+00:09:26.010 --> 00:09:27.630
+el que te sea más cómodo,
+
+187
+00:09:27.630 --> 00:09:28.992
+porque al fin y al cabo todos
+
+188
+00:09:28.992 --> 00:09:31.480
+podrán ejecutar los programas de la misma manera,
+
+189
+00:09:31.480 --> 00:09:34.110
+sin importar el entorno de desarrollo,
+
+190
+00:09:34.110 --> 00:09:37.270
+y mientras tengas acceso al lenguaje de programación,
+
+191
+00:09:37.270 --> 00:09:40.100
+y una manera de ejecutar el código,
+
+192
+00:09:40.100 --> 00:09:41.660
+estarás bien.
+
+193
+00:09:41.660 --> 00:09:44.920
+Un gran consejo que le doy a mis estudiantes
+
+194
+00:09:44.920 --> 00:09:47.897
+es que tu entorno de programación coincida
+
+195
+00:09:47.897 --> 00:09:49.855
+con tu nivel de experiencia.
+
+196
+00:09:49.855 --> 00:09:54.830
+Así, si tienes mucha experiencia
+
+197
+00:09:54.830 --> 00:09:56.760
+configurando entornos de desarrollo,
+
+198
+00:09:56.760 --> 00:09:59.110
+y solo quieres aprender Python
+
+199
+00:09:59.110 --> 00:10:00.920
+como un nuevo lenguaje de programación,
+
+200
+00:10:00.920 --> 00:10:03.910
+podrás usar una herramienta como Vim,
+
+201
+00:10:03.910 --> 00:10:06.240
+en donde tienes un ambiente completamente integrado,
+
+202
+00:10:06.240 --> 00:10:09.560
+y tendrás accesos a todos los distintos archivos,
+
+203
+00:10:09.560 --> 00:10:10.560
+como tenemos aquí.
+
+204
+00:10:10.560 --> 00:10:14.290
+Ese es el que yo uso personalmente cuando desarrollo.
+
+205
+00:10:14.290 --> 00:10:17.780
+Si no quieres que te sea difícil,
+
+206
+00:10:17.780 --> 00:10:20.800
+te recomiendo usar una herramienta como repl.it,
+
+207
+00:10:20.800 --> 00:10:24.360
+en donde simplemente entiendas los conceptos básicos
+
+208
+00:10:24.360 --> 00:10:27.260
+detrás de cómo edificar estos programas de Python,
+
+209
+00:10:27.260 --> 00:10:29.500
+y después, a medida que avances,
+
+210
+00:10:29.500 --> 00:10:31.110
+y te sientas más cómodo,
+
+211
+00:10:31.110 --> 00:10:33.130
+te puedas reajustar, y puedas
+
+212
+00:10:33.130 --> 00:10:35.860
+edificar tu entorno local de desarrollo,
+
+213
+00:10:35.860 --> 00:10:38.580
+y edifiques los programas desde ahí.
+
+214
+00:10:38.580 --> 00:10:40.930
+Espero que esto te haya dado una buena idea,
+
+215
+00:10:40.930 --> 00:10:44.836
+no solo de cuáles son las variables, sino de cómo
+
+216
+00:10:44.836 --> 00:10:48.093
+puedes ejecutar programas de Python en tu sistema.
+

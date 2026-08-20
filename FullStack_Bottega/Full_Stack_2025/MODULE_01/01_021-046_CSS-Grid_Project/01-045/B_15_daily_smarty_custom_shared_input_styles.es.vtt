@@ -1,0 +1,586 @@
+WEBVTT
+
+1
+00:00:00.770 --> 00:00:01.940
+<v Profesor>Ahora que tenemos nuestros resultados</v>
+
+2
+00:00:01.940 --> 00:00:03.800
+como que queremos que estén,
+
+3
+00:00:03.800 --> 00:00:06.260
+creo que el siguiente elemento con el que deberíamos
+
+4
+00:00:06.260 --> 00:00:08.090
+trabajar es la entrada.
+
+5
+00:00:08.090 --> 00:00:10.870
+Ahora esto va a requerir un poco de trabajo,
+
+6
+00:00:10.870 --> 00:00:15.650
+no solo en el elemento en sí, sino también en hacer algo
+
+7
+00:00:15.650 --> 00:00:19.210
+muy similar a lo que hicimos con el contenedor.
+
+8
+00:00:19.210 --> 00:00:23.270
+Como puedes ver, hay una serie de estilos compartidos
+
+9
+00:00:23.270 --> 00:00:27.550
+tanto para este elemento como para este.
+
+10
+00:00:27.550 --> 00:00:31.010
+puedes ver que incluso el enfoque es muy similar,
+
+11
+00:00:31.010 --> 00:00:33.920
+el tamaño es similar, excepto por la altura
+
+12
+00:00:33.920 --> 00:00:35.420
+y todo lo demás.
+
+13
+00:00:35.420 --> 00:00:38.880
+Así que lo que quiero hacer es, quiero compartir y sacar
+
+14
+00:00:38.880 --> 00:00:43.880
+y abstraer tanta información de estilo como podamos.
+
+15
+00:00:44.310 --> 00:00:47.600
+Y así, cada uno de los elementos del índice y en la página
+
+16
+00:00:47.600 --> 00:00:52.600
+de resultados puede agregar algunos estilos personalizados
+
+17
+00:00:53.380 --> 00:00:56.010
+y no tenemos muchos códigos duplicados.
+
+18
+00:00:56.010 --> 00:00:59.500
+Entonces, veamos cual es la mejor forma de hacer eso.
+
+19
+00:00:59.500 --> 00:01:04.430
+Voy a entrar en el CSS principal, y si subimos,
+
+20
+00:01:04.430 --> 00:01:07.570
+y nos fijamos en nuestra entrada.
+
+21
+00:01:07.570 --> 00:01:12.570
+Así que vamos a llegar hasta cerca de la cima y veamos.
+
+22
+00:01:13.210 --> 00:01:14.043
+Ahí está.
+
+23
+00:01:14.043 --> 00:01:16.360
+Así que aquí mismo, donde se puede ver la altura
+
+24
+00:01:16.360 --> 00:01:20.100
+y cómo tenemos 11.8.
+
+25
+00:01:20.100 --> 00:01:23.640
+Lo que quiero hacer es cambiar el nombre aquí.
+
+26
+00:01:23.640 --> 00:01:27.710
+Así que, en vez de barra de búsqueda de la página de inicio,
+
+27
+00:01:27.710 --> 00:01:29.323
+la quiero llamar solo barra de búsqueda.
+
+28
+00:01:31.070 --> 00:01:36.070
+Y quiero hacer lo mismo aquí y luego aquí.
+
+29
+00:01:36.820 --> 00:01:39.830
+Porque, como estoy viendo esto, y esto es algo
+
+30
+00:01:39.830 --> 00:01:44.830
+que estoy haciendo sobre la marcha, al mirar el código.
+
+31
+00:01:44.990 --> 00:01:48.530
+Y la razón principal es porque, lo que he notado,
+
+32
+00:01:48.530 --> 00:01:52.370
+es que muchos de estos estilos son compartidos.
+
+33
+00:01:52.370 --> 00:01:54.890
+Y hay muchos de ellos que se comparten de hecho
+
+34
+00:01:54.890 --> 00:01:57.950
+que no creo que realmente valga la pena crear
+
+35
+00:01:57.950 --> 00:01:59.530
+una clase completamente nueva.
+
+36
+00:01:59.530 --> 00:02:01.820
+Creo que podemos hacer, un poco como lo que hicimos
+
+37
+00:02:01.820 --> 00:02:03.650
+con el contenedor.
+
+38
+00:02:03.650 --> 00:02:05.410
+Así que esto va a romper todo.
+
+39
+00:02:05.410 --> 00:02:07.610
+Así que vamos al índice.
+
+40
+00:02:07.610 --> 00:02:11.093
+Y en lugar de la barra de búsqueda de la página de inicio,
+
+41
+00:02:11.970 --> 00:02:15.160
+Esto debería ser solo la barra de búsqueda.
+
+42
+00:02:15.160 --> 00:02:17.140
+Y así que ahora vamos a mirar.
+
+43
+00:02:17.140 --> 00:02:19.620
+Podemos ver que obviamente esto no está funcionando.
+
+44
+00:02:19.620 --> 00:02:22.750
+Pero ahora vamos a trabajar primero hacia atrás
+
+45
+00:02:22.750 --> 00:02:25.240
+y conseguir que el índice funcione.
+
+46
+00:02:25.240 --> 00:02:27.780
+Y puedes ver que este funciona perfectamente.
+
+47
+00:02:27.780 --> 00:02:28.770
+Así que eso es bueno.
+
+48
+00:02:28.770 --> 00:02:33.470
+Ahora vamos a agregar nuestro elemento personalizado aquí.
+
+49
+00:02:33.470 --> 00:02:37.060
+Así que voy a decir barra de búsqueda, y luego digamos
+
+50
+00:02:37.060 --> 00:02:39.653
+barra de búsqueda de página de inicio.
+
+51
+00:02:41.690 --> 00:02:46.300
+Y ahora dentro de nuestro principal CSS, podemos
+
+52
+00:02:46.300 --> 00:02:49.130
+tomar elemento de altura.
+
+53
+00:02:49.130 --> 00:02:51.810
+Esta es la gran diferencia aquí.
+
+54
+00:02:51.810 --> 00:02:55.480
+Y lo que podemos hacer es decir página de inicio
+
+55
+00:02:58.740 --> 00:02:59.673
+barra de búsqueda.
+
+56
+00:03:01.080 --> 00:03:05.270
+Y ahora solo pongamos esa altura ahí dentro.
+
+57
+00:03:05.270 --> 00:03:08.900
+Si vuelvo, y puedes ver que no está funcionando.
+
+58
+00:03:08.900 --> 00:03:10.930
+¿Tengo un error tipográfico?
+
+59
+00:03:10.930 --> 00:03:15.070
+Barra de búsqueda de la página principal, y esa altura.
+
+60
+00:03:15.070 --> 00:03:19.100
+Vamos al índice, barra de búsqueda de la página de inicio.
+
+61
+00:03:19.100 --> 00:03:20.930
+Así que todo eso está ahí.
+
+62
+00:03:20.930 --> 00:03:22.950
+A ver, ¿cuál es el problema?
+
+63
+00:03:22.950 --> 00:03:25.360
+¿Por qué no está recibiendo esa altura?
+
+64
+00:03:25.360 --> 00:03:28.410
+Así que barra de búsqueda, página de inicio.
+
+65
+00:03:28.410 --> 00:03:31.963
+Pinchamos con el botón derecho, miramos el elemento y a ver.
+
+66
+00:03:32.860 --> 00:03:36.380
+Bien, aquí mismo tenemos este elemento.
+
+67
+00:03:36.380 --> 00:03:38.550
+Y tiene...
+
+68
+00:03:38.550 --> 00:03:39.383
+¡Oh!
+
+69
+00:03:39.383 --> 00:03:43.293
+Por eso, necesito agregar esto y agregar la entrada.
+
+70
+00:03:45.480 --> 00:03:46.350
+Ahí vamos.
+
+71
+00:03:46.350 --> 00:03:50.120
+Espero que puedas ver cuál es el problema que hice ahí.
+
+72
+00:03:50.120 --> 00:03:53.730
+La entrada de barra de búsqueda, tenía que seleccionar
+
+73
+00:03:53.730 --> 00:03:57.080
+el valor de entrada en sí, o la etiqueta de entrada.
+
+74
+00:03:57.080 --> 00:04:00.600
+Antes solo estaba seleccionando la clase,
+
+75
+00:04:00.600 --> 00:04:02.010
+y eso no estaba haciendo nada.
+
+76
+00:04:02.010 --> 00:04:03.860
+Necesitábamos seleccionar la entrada.
+
+77
+00:04:03.860 --> 00:04:06.490
+Puedes ver que ahora eso está funcionando.
+
+78
+00:04:06.490 --> 00:04:10.110
+Entonces, estamos listos para ir a este lado.
+
+79
+00:04:10.110 --> 00:04:12.330
+Y puede que tengamos que volver o no
+
+80
+00:04:12.330 --> 00:04:13.740
+y actualizar algunas otras cosas.
+
+81
+00:04:13.740 --> 00:04:15.750
+Pero espero que puedas ver lo que hice.
+
+82
+00:04:15.750 --> 00:04:18.660
+He sacado el elemento de la página de inicio,
+
+83
+00:04:18.660 --> 00:04:21.660
+que la única diferencia realmente era la altura ahí.
+
+84
+00:04:21.660 --> 00:04:25.110
+Y ahora lo que voy a hacer es irme
+
+85
+00:04:25.110 --> 00:04:26.840
+a la página de resultados.
+
+86
+00:04:26.840 --> 00:04:29.163
+Vayamos también a ver cómo está esto.
+
+87
+00:04:31.630 --> 00:04:36.630
+Y ahora podemos ir, y podemos actualizar los nombres aquí.
+
+88
+00:04:36.650 --> 00:04:40.740
+En lugar de barra de búsqueda de la página de inicio,
+
+89
+00:04:40.740 --> 00:04:43.200
+ahora solo voy a llamarla barra de búsqueda.
+
+90
+00:04:43.200 --> 00:04:46.030
+Y vamos a añadir una clase aquí.
+
+91
+00:04:46.030 --> 00:04:48.980
+Así que esto tiene que ser resultados.
+
+92
+00:04:48.980 --> 00:04:49.883
+Barra de búsqueda.
+
+93
+00:04:52.290 --> 00:04:56.600
+Bien, ahora podemos ver que nos estamos acercando.
+
+94
+00:04:56.600 --> 00:05:00.220
+Ahora el selector está funcionando; todo en esa página
+
+95
+00:05:00.220 --> 00:05:01.053
+está funcionando.
+
+96
+00:05:01.053 --> 00:05:01.970
+Ahora podemos personalizarla.
+
+97
+00:05:01.970 --> 00:05:04.880
+Así que resultados, barra de búsqueda.
+
+98
+00:05:04.880 --> 00:05:08.410
+Bajemos justo debajo de la página de inicio.
+
+99
+00:05:08.410 --> 00:05:11.553
+Resultados, almohadilla barra de búsqueda.
+
+100
+00:05:13.400 --> 00:05:15.610
+Y veamos los estilos personalizados.
+
+101
+00:05:15.610 --> 00:05:17.790
+Sabemos que vamos a...
+
+102
+00:05:17.790 --> 00:05:20.483
+Ah, y casi vuelvo a cometer el mismo error.
+
+103
+00:05:21.660 --> 00:05:22.493
+Entrada.
+
+104
+00:05:23.340 --> 00:05:25.420
+Bien, ahora que tenemos eso,
+
+105
+00:05:25.420 --> 00:05:28.400
+vamos a añadir el componente personalizado aquí.
+
+106
+00:05:28.400 --> 00:05:31.110
+Sabemos que la altura debe ser diferente.
+
+107
+00:05:31.110 --> 00:05:34.170
+Voy a usar 5rem para esto.
+
+108
+00:05:34.170 --> 00:05:37.810
+Y veamos, empecemos con eso
+
+109
+00:05:37.810 --> 00:05:39.290
+y a ver si eso lo arregla.
+
+110
+00:05:39.290 --> 00:05:40.940
+Bien, eso está mucho mejor.
+
+111
+00:05:40.940 --> 00:05:43.920
+Así que como puedes ver, hemos vuelto
+
+112
+00:05:43.920 --> 00:05:47.230
+a donde queremos que esté todo.
+
+113
+00:05:47.230 --> 00:05:51.630
+Ahora veamos qué otros elementos hay que implementar.
+
+114
+00:05:51.630 --> 00:05:56.630
+Bien, creo que si solo agrego un margen inferior aquí.
+
+115
+00:05:56.950 --> 00:06:00.600
+Así que podemos decir margen inferior de 1em.
+
+116
+00:06:00.600 --> 00:06:05.600
+Y luego agregar un margen superior de, digamos, tres.
+
+117
+00:06:08.060 --> 00:06:11.190
+Esto debería darnos lo que queremos, y lo hace.
+
+118
+00:06:11.190 --> 00:06:12.500
+Eso se ve muy bien.
+
+119
+00:06:12.500 --> 00:06:16.300
+Así que ahora la barra de búsqueda está bastante
+
+120
+00:06:16.300 --> 00:06:17.920
+como la queremos.
+
+121
+00:06:17.920 --> 00:06:20.030
+Ahora, si quieres que sea pixel perfecto
+
+122
+00:06:20.030 --> 00:06:21.510
+con lo que tenemos aquí.
+
+123
+00:06:21.510 --> 00:06:25.410
+La única diferencia aquí está en la versión anterior.
+
+124
+00:06:25.410 --> 00:06:28.820
+Cuando creé esta implementación, tuve
+
+125
+00:06:28.820 --> 00:06:31.160
+dos clases diferentes, una para la página de inicio
+
+126
+00:06:31.160 --> 00:06:33.550
+y una para la página de resultados.
+
+127
+00:06:33.550 --> 00:06:37.720
+Y por eso tengo un color y tamaño de letra algo diferente.
+
+128
+00:06:37.720 --> 00:06:40.280
+Así que puedes hacer exactamente lo que acabamos de hacer
+
+129
+00:06:40.280 --> 00:06:41.660
+con toda la barra.
+
+130
+00:06:41.660 --> 00:06:44.090
+Puedes hacerlo con el atributo de texto.
+
+131
+00:06:44.090 --> 00:06:48.230
+Puedes venir aquí e implementar el mismo comportamiento.
+
+132
+00:06:48.230 --> 00:06:50.380
+No lo voy a hacer aquí, porque literalmente
+
+133
+00:06:50.380 --> 00:06:52.430
+acabo de pasar por todo ese proceso.
+
+134
+00:06:52.430 --> 00:06:55.460
+Pero hazlo si es algo que quieres hacer.
+
+135
+00:06:55.460 --> 00:07:00.270
+Puedes replicar eso; crear una entrada de barra de búsqueda
+
+136
+00:07:00.270 --> 00:07:03.560
+que tenga un nivel abstracto.
+
+137
+00:07:03.560 --> 00:07:07.110
+Y desde ahí cambiar el tamaño de tipografía y el color.
+
+138
+00:07:07.110 --> 00:07:09.940
+Pero estoy muy contento con cómo está esto ahora.
+
+139
+00:07:09.940 --> 00:07:13.160
+Como puedes ver, esto ha ido mucho más rápido
+
+140
+00:07:13.160 --> 00:07:15.840
+que la página de inicio del índice; porque hemos podido
+
+141
+00:07:15.840 --> 00:07:17.790
+reutilizar tanto código.
+
+142
+00:07:17.790 --> 00:07:20.950
+Y esa es la señal de que estás construyendo un sistema
+
+143
+00:07:20.950 --> 00:07:24.240
+de la manera correcta cuando eres capaz de reutilizar
+
+144
+00:07:24.240 --> 00:07:26.420
+componentes anteriores que has construido,
+
+145
+00:07:26.420 --> 00:07:30.040
+y te ayudan en cualquier tipo de características futuras
+
+146
+00:07:30.040 --> 00:07:31.923
+que quieres construir en el sistema.
+

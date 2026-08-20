@@ -1,0 +1,762 @@
+WEBVTT
+
+1
+00:00:00.610 --> 00:00:02.760
+<v ->Esta será una guía realmente práctica y divertida</v>
+
+2
+00:00:02.760 --> 00:00:05.930
+porque hablaremos acerca de
+
+3
+00:00:05.930 --> 00:00:09.150
+crear una guía de estilo, así que esencialmente
+
+4
+00:00:09.150 --> 00:00:12.240
+lo que haremos es tomar todo lo que hemos aprendido
+
+5
+00:00:12.240 --> 00:00:15.040
+y de lo que hemos hablado en el curso hasta el momento
+
+6
+00:00:15.040 --> 00:00:17.780
+y hablar sobre cómo puede involucrarse para que pueda luego
+
+7
+00:00:17.780 --> 00:00:20.260
+ser comunicada a los programadores.
+
+8
+00:00:20.260 --> 00:00:21.990
+Cierto, y es aquí donde es importante
+
+9
+00:00:21.990 --> 00:00:24.630
+ser detallista, y esto va de la mano
+
+10
+00:00:24.630 --> 00:00:26.640
+con mantener tu habitación ordenada y
+
+11
+00:00:26.640 --> 00:00:28.973
+mantener amplias notas de tus diseños.
+
+12
+00:00:29.840 --> 00:00:31.930
+Así que lo que aquí importa
+
+13
+00:00:31.930 --> 00:00:33.420
+es la comunicación
+
+14
+00:00:33.420 --> 00:00:35.830
+a la cual me he referido en otras guías.
+
+15
+00:00:35.830 --> 00:00:38.740
+El proceso de comunicación es crítico
+
+16
+00:00:38.740 --> 00:00:41.600
+para asegurarse que estos diseños sean realizados
+
+17
+00:00:41.600 --> 00:00:43.780
+por los programadores de la manera que deseas
+
+18
+00:00:43.780 --> 00:00:46.860
+y viceversa, que tú como programador
+
+19
+00:00:46.860 --> 00:00:49.750
+seas capaz de entender cómo interpretar
+
+20
+00:00:49.750 --> 00:00:53.530
+las notas de un diseñador si las hay.
+
+21
+00:00:53.530 --> 00:00:56.940
+Entonces, lo que importa es identificar
+
+22
+00:00:56.940 --> 00:00:58.790
+objetos, fuentes y cosas de este tipo
+
+23
+00:00:58.790 --> 00:01:01.670
+que serán utilizadas a lo largo de la aplicación.
+
+24
+00:01:01.670 --> 00:01:04.840
+No solo querrás que se diferencien y usen
+
+25
+00:01:04.840 --> 00:01:07.812
+esos distintos elementos
+
+26
+00:01:07.812 --> 00:01:11.066
+porque quieras esa continuidad en la aplicación,
+
+27
+00:01:11.066 --> 00:01:13.680
+querrás asegurarte que todos los encabezados
+
+28
+00:01:13.680 --> 00:01:15.170
+sean los mismos, querrás asegurarte
+
+29
+00:01:15.170 --> 00:01:16.760
+que los botones siempre luzcan igual,
+
+30
+00:01:16.760 --> 00:01:19.170
+que su anchura o tamaño de fuente
+
+31
+00:01:19.170 --> 00:01:21.397
+no sea distinto, cuestiones como esta,
+
+32
+00:01:21.397 --> 00:01:22.830
+que todos se comporten igual,
+
+33
+00:01:22.830 --> 00:01:24.900
+que se comporten igual al posicionar el puntero
+
+34
+00:01:24.900 --> 00:01:26.746
+y tengan el mismo estado de inactividad.
+
+35
+00:01:26.746 --> 00:01:29.047
+Así que lo que estás haciendo es decir
+
+36
+00:01:29.047 --> 00:01:30.547
+"bien, sé que este es el botón
+
+37
+00:01:30.547 --> 00:01:32.330
+que se usará una y otra vez",
+
+38
+00:01:32.330 --> 00:01:34.730
+y lo puedes crear, agregarlo a la guía de estilo,
+
+39
+00:01:34.730 --> 00:01:36.587
+que diga: "bien, así es el botón activo,
+
+40
+00:01:36.587 --> 00:01:40.217
+así es el botón inactivo, así es
+
+41
+00:01:40.217 --> 00:01:44.094
+el botón al darle clic", ¿cierto?
+
+42
+00:01:44.094 --> 00:01:47.370
+"Luego, así es el botón al colocar el puntero encima",
+
+43
+00:01:47.370 --> 00:01:51.250
+estos son los aspectos que debes tener en mente
+
+44
+00:01:51.250 --> 00:01:52.980
+y no solo usarlos en el diseño,
+
+45
+00:01:52.980 --> 00:01:54.440
+sino documentarlos
+
+46
+00:01:54.440 --> 00:01:56.110
+para que cuando se pasen al programador
+
+47
+00:01:56.110 --> 00:01:57.450
+no tenga que estar preguntándote
+
+48
+00:01:57.450 --> 00:01:59.310
+cómo luciría eso.
+
+49
+00:01:59.310 --> 00:02:01.470
+<v ->¿Qué tipo de herramienta o</v>
+
+50
+00:02:01.470 --> 00:02:04.763
+herramientas usas para comunicar esto?
+
+51
+00:02:04.763 --> 00:02:06.680
+Exacto, algunas herramientas muy buenas.
+
+52
+00:02:06.680 --> 00:02:10.330
+Primero está el diseño de estas pantallas
+
+53
+00:02:10.330 --> 00:02:13.670
+lo cual yo hago en Sketch, y lo hago específicamente
+
+54
+00:02:13.670 --> 00:02:16.140
+por su integración a Invision.
+
+55
+00:02:16.140 --> 00:02:20.650
+Invision es un producto fantástico al que puedes suscribirte
+
+56
+00:02:20.650 --> 00:02:23.200
+que te permite tomar tus diseños
+
+57
+00:02:23.200 --> 00:02:25.610
+y compartirlos con un programador, y luego el programador
+
+58
+00:02:25.610 --> 00:02:27.640
+inspeccionará tus diseños, muy similar a
+
+59
+00:02:27.640 --> 00:02:30.160
+utilizar una herramienta de inspección en tu navegador.
+
+60
+00:02:30.160 --> 00:02:32.690
+Entonces lo puedes inspeccionar, te mostrará estilos,
+
+61
+00:02:32.690 --> 00:02:35.040
+el peso de las fuentes,
+
+62
+00:02:35.040 --> 00:02:37.140
+todas estas cosas que son de mucha ayuda
+
+63
+00:02:37.140 --> 00:02:39.620
+a diferencia de solo entregarle a alguien un PDF
+
+64
+00:02:39.620 --> 00:02:42.260
+y si no tienes Sketch, o
+
+65
+00:02:42.260 --> 00:02:44.650
+Photoshop o Illustrator, no lo podrás abrir
+
+66
+00:02:44.650 --> 00:02:46.440
+así que solo estarás midiendo todo al ojo
+
+67
+00:02:46.440 --> 00:02:48.300
+y todos sabemos cuál es el resultado
+
+68
+00:02:48.300 --> 00:02:50.060
+de hacer eso.
+
+69
+00:02:50.060 --> 00:02:53.060
+Sí, es fantástico que te entreguen
+
+70
+00:02:53.060 --> 00:02:57.080
+pantallas en un prototipo de Invision,
+
+71
+00:02:57.080 --> 00:02:59.840
+porque allí tendrás toda la información
+
+72
+00:02:59.840 --> 00:03:01.440
+aunque eso no significa que no
+
+73
+00:03:01.440 --> 00:03:02.873
+querrás una guía de estilo
+
+74
+00:03:03.770 --> 00:03:06.070
+donde ellos no podrán establecer sus estilos CSS
+
+75
+00:03:06.070 --> 00:03:08.370
+que solo podrían encontrar en ese botón
+
+76
+00:03:08.370 --> 00:03:10.750
+o en un H1 o de otra forma.
+
+77
+00:03:10.750 --> 00:03:13.070
+<v ->Ciertamente, y esto es algo</v>
+
+78
+00:03:13.070 --> 00:03:15.820
+desde la posición del programador
+
+79
+00:03:15.820 --> 00:03:18.470
+en lo que tengo algo de experiencia
+
+80
+00:03:18.470 --> 00:03:21.490
+cuando digamos, me das un conjunto de
+
+81
+00:03:21.490 --> 00:03:23.710
+estilos y me das estas pantallas
+
+82
+00:03:23.710 --> 00:03:25.530
+lo primero que yo haré
+
+83
+00:03:25.530 --> 00:03:29.320
+será crear, con una herramienta como SAS,
+
+84
+00:03:29.320 --> 00:03:32.650
+un grupo de variables en la aplicación.
+
+85
+00:03:32.650 --> 00:03:34.830
+Solo creo un archivo llamado variables
+
+86
+00:03:34.830 --> 00:03:36.500
+y luego les daré nombre.
+
+87
+00:03:36.500 --> 00:03:38.500
+Para DailySmarty, por ejemplo,
+
+88
+00:03:38.500 --> 00:03:41.580
+tenemos ese tipo de azul muy específico.
+
+89
+00:03:41.580 --> 00:03:45.290
+Creé una variable llamada "Azul DailySmarty"
+
+90
+00:03:45.290 --> 00:03:49.170
+y salvé el código de color Hex que enviaste
+
+91
+00:03:49.170 --> 00:03:51.240
+así que en todo lado en la aplicación
+
+92
+00:03:51.240 --> 00:03:53.280
+y en todos los otros archivos SAS
+
+93
+00:03:53.280 --> 00:03:56.290
+puedo buscar la variable llamada Azul DailySmarty
+
+94
+00:03:56.290 --> 00:03:58.070
+y no tengo que ir a buscar
+
+95
+00:03:58.070 --> 00:04:00.650
+cada vez cuál era ese código de color Hex.
+
+96
+00:04:00.650 --> 00:04:03.950
+Luego hago esto para cada color
+
+97
+00:04:03.950 --> 00:04:06.540
+en la guía de estilo, así que verifico
+
+98
+00:04:06.540 --> 00:04:10.170
+cuál es el color de fondo, cuál es la gama de colores,
+
+99
+00:04:10.170 --> 00:04:12.730
+cuál es el enlace al posicionarse y luego creo
+
+100
+00:04:12.730 --> 00:04:15.500
+una variable por cada uno de estos y eso
+
+101
+00:04:15.500 --> 00:04:17.490
+simplemente lo hará más fácil y se asegura
+
+102
+00:04:17.490 --> 00:04:19.700
+de que esté usando los colores correctos en todo momento
+
+103
+00:04:19.700 --> 00:04:23.480
+lo cual es una parte de esto.
+
+104
+00:04:23.480 --> 00:04:27.849
+Luego también copiaré la guía de estilo,
+
+105
+00:04:27.849 --> 00:04:30.670
+especialmente si es extensa. Con DailySmarty no era
+
+106
+00:04:30.670 --> 00:04:33.600
+tan masiva por lo que pude contener todo
+
+107
+00:04:33.600 --> 00:04:36.370
+dentro del archivo SAS, pero no para devCamp
+
+108
+00:04:36.370 --> 00:04:38.620
+que tiene una muy extensa con todo
+
+109
+00:04:38.620 --> 00:04:40.730
+tipo de encabezados principalmente,
+
+110
+00:04:40.730 --> 00:04:43.100
+tenemos dos tipos distintos de encabezados
+
+111
+00:04:43.100 --> 00:04:44.960
+que tienen colores y tamaños diferentes,
+
+112
+00:04:44.960 --> 00:04:46.960
+entonces para estos
+
+113
+00:04:46.960 --> 00:04:49.720
+los agregaría a la aplicación ReadMe
+
+114
+00:04:49.720 --> 00:04:51.730
+y así cada vez que tenga una duda al respecto
+
+115
+00:04:51.730 --> 00:04:53.760
+solo verifico esa guía de estilo
+
+116
+00:04:53.760 --> 00:04:55.640
+y muchas veces lo que hago
+
+117
+00:04:55.640 --> 00:04:57.770
+es poner, cual sea el nombre
+
+118
+00:04:57.770 --> 00:04:59.730
+del componente, pongo cual sea
+
+119
+00:04:59.730 --> 00:05:03.710
+la variable cuyo nombre guardé en los archivos SAS
+
+120
+00:05:03.710 --> 00:05:07.370
+y luego coloco el valor real
+
+121
+00:05:07.370 --> 00:05:09.580
+para tener todo al frente mio,
+
+122
+00:05:09.580 --> 00:05:12.510
+lo cual es una preferencia personal,
+
+123
+00:05:12.510 --> 00:05:16.460
+pero que considero que es muy efectivo.
+
+124
+00:05:16.460 --> 00:05:18.480
+<v ->Sí, lo que encontrarás cuando creas</v>
+
+125
+00:05:18.480 --> 00:05:20.550
+esta guía de estilo es muy importante,
+
+126
+00:05:20.550 --> 00:05:22.399
+"bueno, ¿cuando la creo la puedo modificar
+
+127
+00:05:22.399 --> 00:05:23.629
+en otro momento?
+
+128
+00:05:23.629 --> 00:05:25.870
+Porque si vas a establecer esta idea
+
+129
+00:05:25.870 --> 00:05:29.930
+de una guía de estilo estarás muy
+
+130
+00:05:29.930 --> 00:05:32.950
+apurado en hacerla funcionar en toda la aplicación,
+
+131
+00:05:32.950 --> 00:05:35.050
+verás un caso específico de uso
+
+132
+00:05:35.050 --> 00:05:36.807
+y pensarás "OH, no había pensado en eso",
+
+133
+00:05:36.807 --> 00:05:39.907
+"quizás mi H4s deba ser un poco más grande"
+
+134
+00:05:39.907 --> 00:05:44.010
+"o quizás necesite agregar otro estilo aquí".
+
+135
+00:05:44.010 --> 00:05:47.830
+Por tanto es genial crearlo desde el comienzo
+
+136
+00:05:47.830 --> 00:05:50.210
+y definitivamente deberías establecer
+
+137
+00:05:50.210 --> 00:05:51.970
+los colores, escoger las distintas
+
+138
+00:05:51.970 --> 00:05:54.130
+familias de fuentes que utilizarás,
+
+139
+00:05:54.130 --> 00:05:56.450
+preparar los distintos encabezados,
+
+140
+00:05:56.450 --> 00:05:57.860
+el cuerpo, cosas como esas,
+
+141
+00:05:57.860 --> 00:06:00.010
+entonces comienzas a disponer en conjunto todo eso
+
+142
+00:06:00.010 --> 00:06:01.990
+y en muchos de los programas de diseño
+
+143
+00:06:01.990 --> 00:06:03.970
+hasta puedes tener estilos de caracteres
+
+144
+00:06:03.970 --> 00:06:05.690
+y de párrafos y buscarlos
+
+145
+00:06:05.690 --> 00:06:07.850
+fácilmente en vez de hacerlo
+
+146
+00:06:07.850 --> 00:06:09.680
+de forma manual; simplemente
+
+147
+00:06:09.680 --> 00:06:11.497
+dirías "este es el encabezado
+
+148
+00:06:11.497 --> 00:06:13.750
+número uno",
+
+149
+00:06:13.750 --> 00:06:16.650
+y se aplicaría ese estilo automáticamente.
+
+150
+00:06:16.650 --> 00:06:18.730
+No solo ayuda en el proceso de diseño
+
+151
+00:06:18.730 --> 00:06:21.390
+sino también para mantener la consistencia en la aplicación.
+
+152
+00:06:21.390 --> 00:06:23.710
+Pero cuando te encuentras con esos casos
+
+153
+00:06:23.710 --> 00:06:26.700
+donde no funciona o pruebas con todos
+
+154
+00:06:26.700 --> 00:06:28.630
+los estilos que seleccionaste, es como que ninguno funcione.
+
+155
+00:06:28.630 --> 00:06:30.780
+Ya sea que vaya a ser realmente pequeña,
+
+156
+00:06:30.780 --> 00:06:33.050
+como hacer que todo esté en mayúsculas
+
+157
+00:06:33.050 --> 00:06:35.640
+y en negrita porque es tan pequeño que cuesta leerlo
+
+158
+00:06:35.640 --> 00:06:38.800
+y es como "bien, creo que agregaremos una H7".
+
+159
+00:06:38.800 --> 00:06:42.540
+Allí lo tienes, es bueno y definitivamente
+
+160
+00:06:42.540 --> 00:06:45.960
+no enloquezcas desviándote de él,
+
+161
+00:06:45.960 --> 00:06:47.680
+pues probablemente tendrás una aplicación que
+
+162
+00:06:47.680 --> 00:06:50.360
+no luzca muy cohesiva, si tienes
+
+163
+00:06:50.360 --> 00:06:53.420
+10 tipos distintos de radios de bordes para distintas
+
+164
+00:06:53.420 --> 00:06:55.540
+fichas y botones y cuestiones de este tipo,
+
+165
+00:06:55.540 --> 00:06:57.540
+pero no lo hagas tan rígido que
+
+166
+00:06:57.540 --> 00:07:01.330
+te imposibilite diseñar una página que luzca bien.
+
+167
+00:07:01.330 --> 00:07:04.640
+<v ->Sí, definitivamente, y lo que quiero que hagas</v>
+
+168
+00:07:04.640 --> 00:07:05.750
+conforme avances en este curso,
+
+169
+00:07:05.750 --> 00:07:07.630
+la tarea para esta guía será
+
+170
+00:07:07.630 --> 00:07:10.720
+ir a algún tipo de aplicación,
+
+171
+00:07:10.720 --> 00:07:14.030
+puede ser popular como Facecbook o Twitter,
+
+172
+00:07:14.030 --> 00:07:16.690
+y crear una guía de estilo
+
+173
+00:07:16.690 --> 00:07:19.300
+para esa aplicación, lo cual será muy parecido
+
+174
+00:07:19.300 --> 00:07:21.030
+al proceso que harías si acabaras de terminar
+
+175
+00:07:21.030 --> 00:07:23.120
+de crear la interfaz de usuario
+
+176
+00:07:23.120 --> 00:07:25.490
+y luego regresaras a verificar
+
+177
+00:07:25.490 --> 00:07:27.010
+cuáles fueron todos los estilos.
+
+178
+00:07:27.010 --> 00:07:29.780
+Mira cuál es el tamaño de fuente del encabezado,
+
+179
+00:07:29.780 --> 00:07:32.180
+los colores, el color de fondo,
+
+180
+00:07:32.180 --> 00:07:34.410
+todos estos distintos tipos de componentes
+
+181
+00:07:34.410 --> 00:07:36.340
+incluso siendo muy detallista,
+
+182
+00:07:36.340 --> 00:07:39.280
+hasta una enorme que he visto,
+
+183
+00:07:39.280 --> 00:07:41.130
+con la que nos hemos topado y por la que
+
+184
+00:07:41.130 --> 00:07:43.150
+te he preguntado muchas veces porque no estaba
+
+185
+00:07:43.150 --> 00:07:46.920
+incluida en la guía de estilo: el radio del borde.
+
+186
+00:07:46.920 --> 00:07:48.270
+Esta hace una gran diferencia,
+
+187
+00:07:48.270 --> 00:07:51.430
+así que asegúrate de que
+
+188
+00:07:51.430 --> 00:07:53.740
+cada uno de los bordes de las divisiones esté redondeado
+
+189
+00:07:53.740 --> 00:07:57.530
+de la forma correcta, así que ve y haz eso
+
+190
+00:07:57.530 --> 00:08:00.133
+y nos vemos en la próxima guía.
+

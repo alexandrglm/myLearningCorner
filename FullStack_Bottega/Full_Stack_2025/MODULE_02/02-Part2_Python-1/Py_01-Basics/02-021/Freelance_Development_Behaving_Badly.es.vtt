@@ -1,0 +1,462 @@
+WEBVTT
+
+1
+00:00:00.400 --> 00:00:03.100
+<v ->Imagína por un minuto que eres un desarrollador autónomo</v>
+
+2
+00:00:03.100 --> 00:00:05.910
+a quien le dan una característica para que la construya.
+
+3
+00:00:05.910 --> 00:00:09.280
+Luego, imagínate construyendo una característica elegante,
+
+4
+00:00:09.280 --> 00:00:11.240
+todo el código funcionando perfectamente.
+
+5
+00:00:11.240 --> 00:00:14.540
+Sigues las mejores prácticas y te aseguras de que todos
+
+6
+00:00:14.540 --> 00:00:17.850
+los posibles casos de borde están completamente cubiertos.
+
+7
+00:00:17.850 --> 00:00:20.520
+Ahora, imagina que estás demostrando la brillante
+
+8
+00:00:20.520 --> 00:00:22.660
+y maravillosa característica para el cliente.
+
+9
+00:00:22.660 --> 00:00:23.930
+Pero en vez de decirte que
+
+10
+00:00:23.930 --> 00:00:25.720
+eres el mejor desarrollador del mundo,
+
+11
+00:00:25.720 --> 00:00:27.560
+que van a llamar a su primer hijo
+
+12
+00:00:27.560 --> 00:00:30.750
+como tú, miran la aplicación confundidos porque
+
+13
+00:00:30.750 --> 00:00:34.310
+lo que construiste no encajaba con lo que tenían en mente.
+
+14
+00:00:34.310 --> 00:00:36.680
+Este es un escenario que sucede
+
+15
+00:00:36.680 --> 00:00:39.810
+bastante en el mundo del desarrollo autónomo.
+
+16
+00:00:39.810 --> 00:00:44.580
+Y muchas veces se debe a la escasa obtención de requisitos.
+
+17
+00:00:44.580 --> 00:00:47.580
+Esa historia no es una parábola inventada.
+
+18
+00:00:47.580 --> 00:00:49.590
+Me pasó hace poco y cuando
+
+19
+00:00:49.590 --> 00:00:52.930
+digo "recientemente" quiero decir, ayer.
+
+20
+00:00:52.930 --> 00:00:55.100
+Entonces, ¿qué hice mal?
+
+21
+00:00:55.100 --> 00:00:57.230
+El problema fue causado por mi apresuramiento
+
+22
+00:00:57.230 --> 00:01:00.280
+a través de la fase de obtención de requisitos.
+
+23
+00:01:00.280 --> 00:01:03.910
+Había trabajado para este cliente por más de cinco años.
+
+24
+00:01:03.910 --> 00:01:06.260
+Y me volví perezoso confirmando el conjunto exacto
+
+25
+00:01:06.260 --> 00:01:08.560
+de requisitos necesarios para la característica.
+
+26
+00:01:08.560 --> 00:01:09.930
+Vamos a repasar lo que pasó,
+
+27
+00:01:09.930 --> 00:01:13.330
+para que evites la misma vergüenza y pérdida de tiempo.
+
+28
+00:01:13.330 --> 00:01:15.470
+Hace unas semanas el cliente me contactó
+
+29
+00:01:15.470 --> 00:01:17.660
+y dijo que una aplicación que yo había construido
+
+30
+00:01:17.660 --> 00:01:19.450
+para ellos necesitaba una nueva función.
+
+31
+00:01:19.450 --> 00:01:21.870
+La aplicación es un sistema de facturación
+
+32
+00:01:21.870 --> 00:01:24.400
+que sus conductores utilizan para generar facturas
+
+33
+00:01:24.400 --> 00:01:26.560
+para los clientes, bastante sencillo.
+
+34
+00:01:26.560 --> 00:01:29.500
+En un correo el cliente adjuntó esta hoja de cálculo.
+
+35
+00:01:29.500 --> 00:01:31.800
+Dijo que la aplicación tenía que generar
+
+36
+00:01:31.800 --> 00:01:34.650
+esta factura para entregar al cliente.
+
+37
+00:01:34.650 --> 00:01:36.190
+Después de recibir el correo electrónico, pasé
+
+38
+00:01:36.190 --> 00:01:38.050
+unos días modelando la nueva función.
+
+39
+00:01:38.050 --> 00:01:39.670
+Puse una lista de todos los mensajes
+
+40
+00:01:39.670 --> 00:01:41.930
+que tendrían que pasar entre los módulos.
+
+41
+00:01:41.930 --> 00:01:43.940
+Construí diagramas UML para asegurar
+
+42
+00:01:43.940 --> 00:01:45.650
+que los datos fueron modelados correctamente.
+
+43
+00:01:45.650 --> 00:01:48.520
+Y después de una cuidadosa planificación, pasé dos semanas
+
+44
+00:01:48.520 --> 00:01:52.470
+construyendo la nueva característica y salió muy bien.
+
+45
+00:01:52.470 --> 00:01:55.960
+Para ser honesto, estaba muy orgulloso del trabajo que hice.
+
+46
+00:01:55.960 --> 00:01:58.710
+Esa característica fue impecable y libre de errores.
+
+47
+00:01:58.710 --> 00:02:02.150
+También encaja perfectamente con el resto de la aplicación.
+
+48
+00:02:02.150 --> 00:02:04.930
+Usé el código del servidor de preparación y esperé
+
+49
+00:02:04.930 --> 00:02:07.220
+que el cliente empezara a ducharme con elogios.
+
+50
+00:02:07.220 --> 00:02:09.500
+Pero el elogio nunca ocurrió.
+
+51
+00:02:09.500 --> 00:02:12.930
+Le envié un correo al cliente con un demo de la función.
+
+52
+00:02:12.930 --> 00:02:15.860
+Unas horas más tarde recibí un correo del cliente
+
+53
+00:02:15.860 --> 00:02:19.647
+que decía "Estoy confundido, ¿qué es exactamente todo esto?
+
+54
+00:02:19.647 --> 00:02:22.157
+"En mi correo me refería a que necesitamos las facturas
+
+55
+00:02:22.157 --> 00:02:24.420
+"tengan el formato de esta hoja de cálculo."
+
+56
+00:02:24.420 --> 00:02:26.280
+Así que resultó que el cliente no quería
+
+57
+00:02:26.280 --> 00:02:28.990
+un nuevo módulo integrado en la aplicación.
+
+58
+00:02:28.990 --> 00:02:31.110
+En vez de eso, simplemente querían
+
+59
+00:02:31.110 --> 00:02:34.160
+una opción de formato para sus facturas.
+
+60
+00:02:34.160 --> 00:02:35.960
+Entonces, ¿quién fue el culpable exactamente?
+
+61
+00:02:35.960 --> 00:02:38.170
+Puede parecer natural culpar al cliente
+
+62
+00:02:38.170 --> 00:02:40.840
+ya que no dejaron la petición clara en absoluto.
+
+63
+00:02:40.840 --> 00:02:43.100
+Y estuve tentado a enfadarme y culparlos,
+
+64
+00:02:43.100 --> 00:02:46.130
+especialmente durante los primeros 10 a 20 s de mi furia.
+
+65
+00:02:46.130 --> 00:02:47.670
+Pero entonces me di cuenta de que este asunto
+
+66
+00:02:47.670 --> 00:02:50.250
+estaba completamente bajo mi control.
+
+67
+00:02:50.250 --> 00:02:52.210
+Como autónomos es nuestro trabajo
+
+68
+00:02:52.210 --> 00:02:55.030
+gestionar cada etapa de un proyecto.
+
+69
+00:02:55.030 --> 00:02:58.490
+Si nos apresuramos en la fase de obtención de requisitos
+
+70
+00:02:58.490 --> 00:03:02.350
+todo lo que pase después de eso caerá sobre nosotros.
+
+71
+00:03:02.350 --> 00:03:04.290
+Entonces, ¿cómo podría haberse evitado esto?
+
+72
+00:03:04.290 --> 00:03:06.540
+Vamos a repasar el proceso que debería haber seguido
+
+73
+00:03:06.540 --> 00:03:08.900
+y que normalmente sigo cuando trabajo
+
+74
+00:03:08.900 --> 00:03:11.810
+con clientes y que habría conducido a un mejor resultado.
+
+75
+00:03:11.810 --> 00:03:14.350
+Justo después de recibir el correo debería haber respondido
+
+76
+00:03:14.350 --> 00:03:17.360
+de vuelta al cliente con preguntas aclaratorias.
+
+77
+00:03:17.360 --> 00:03:19.670
+Algunos ejemplos podrían haber sido: ¿quieres que esto
+
+78
+00:03:19.670 --> 00:03:23.100
+esté en una nueva página de la aplicación?
+
+79
+00:03:23.100 --> 00:03:24.710
+Esto es mejor que decir algo
+
+80
+00:03:24.710 --> 00:03:26.780
+como si quisieras que este fuera un nuevo módulo
+
+81
+00:03:26.780 --> 00:03:28.570
+porque un cliente no técnico
+
+82
+00:03:28.570 --> 00:03:30.540
+no va a saber lo que es un módulo.
+
+83
+00:03:30.540 --> 00:03:33.760
+Pero entenderán lo que es una nueva página en el sitio.
+
+84
+00:03:33.760 --> 00:03:36.470
+Otra pregunta podría haber sido ¿cómo interactuará esto
+
+85
+00:03:36.470 --> 00:03:38.650
+con las otras partes del sitio web?
+
+86
+00:03:38.650 --> 00:03:41.430
+Esta pregunta me habría dado instantáneamente la respuesta
+
+87
+00:03:41.430 --> 00:03:43.620
+para saber la hoja de cálculo estaba simplemente destinada
+
+88
+00:03:43.620 --> 00:03:46.620
+a ser una opción de formato de factura diferente.
+
+89
+00:03:46.620 --> 00:03:50.160
+Otra pregunta podría haber sido, ¿puedes describir el flujo
+
+90
+00:03:50.160 --> 00:03:51.920
+sobre cómo se generará esto?
+
+91
+00:03:51.920 --> 00:03:54.070
+Esta es una de mis preguntas favoritas.
+
+92
+00:03:54.070 --> 00:03:56.870
+porque obliga a un cliente a ser explícito
+
+93
+00:03:56.870 --> 00:03:58.960
+sobre cómo debería funcionar una nueva característica.
+
+94
+00:03:58.960 --> 00:04:01.530
+Muchas veces le pediría a un cliente que cree un PowerPoint
+
+95
+00:04:01.530 --> 00:04:04.710
+mostrando el flujo que quieren de la función.
+
+96
+00:04:04.710 --> 00:04:06.870
+Después de hacer preguntas aclaratorias
+
+97
+00:04:06.870 --> 00:04:10.040
+debería haber seguido con un pequeño prototipo.
+
+98
+00:04:10.040 --> 00:04:12.000
+Podría haber usado una herramienta como InVision
+
+99
+00:04:12.000 --> 00:04:15.070
+o incluso sólo un deck de PowerPoint, donde cada diapositiva
+
+100
+00:04:15.070 --> 00:04:17.930
+tuviera una página diferente de la nueva característica.
+
+101
+00:04:17.930 --> 00:04:21.930
+Los ejemplos empezarían con la primera diapositiva "Aquí
+
+102
+00:04:21.930 --> 00:04:25.160
+puede hacer clic en un botón para ir a la nueva página."
+
+103
+00:04:25.160 --> 00:04:27.570
+En la diapositiva dos mostraría la página del formulario
+
+104
+00:04:27.570 --> 00:04:30.230
+donde el usuario puede introducir sus datos.
+
+105
+00:04:30.230 --> 00:04:33.100
+Por último, en la diapositiva tres mostraría la factura
+
+106
+00:04:33.100 --> 00:04:35.660
+que fue generada con la nueva característica.
+
+107
+00:04:35.660 --> 00:04:37.810
+Si hubiera seguido estos dos pasos me habría llevado
+
+108
+00:04:37.810 --> 00:04:40.190
+desde unos pocos minutos hasta unas pocas horas
+
+109
+00:04:40.190 --> 00:04:43.710
+establecer qué característica era realmente necesaria.
+
+110
+00:04:43.710 --> 00:04:45.900
+Como pueden imaginar, esta es una opción mucho mejor
+
+111
+00:04:45.900 --> 00:04:48.950
+en comparación con las semanas perdidas de desarrollo.
+
+112
+00:04:48.950 --> 00:04:50.950
+Espero que esta haya sido una guía útil
+
+113
+00:04:50.950 --> 00:04:53.450
+a la obtención de requisitos para autónomos,
+
+114
+00:04:53.450 --> 00:04:55.770
+y que serás capaz de aprender de mi error
+
+115
+00:04:55.770 --> 00:04:57.490
+y aplicarlo a tu propio negocio.
+

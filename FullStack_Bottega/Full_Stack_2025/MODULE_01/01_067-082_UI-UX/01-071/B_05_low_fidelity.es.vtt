@@ -1,0 +1,782 @@
+WEBVTT
+
+1
+00:00:01.060 --> 00:00:03.880
+<v ->En esta guía, vamos a seguir avanzando</v>
+
+2
+00:00:03.880 --> 00:00:07.155
+en el proceso en que...
+
+3
+00:00:07.155 --> 00:00:11.723
+Jesse, cuando vas a un cliente o cuando estás construyendo
+
+4
+00:00:11.723 --> 00:00:12.923
+algo para DevCamp,
+
+5
+00:00:12.923 --> 00:00:15.720
+así que hemos hablado de cómo puedes construir tus diagramas
+
+6
+00:00:15.720 --> 00:00:19.160
+para mostrar páginas y lo que va a ser el flujo de usuarios
+
+7
+00:00:19.160 --> 00:00:22.300
+y cómo lo lees en las historias de los usuarios
+
+8
+00:00:22.300 --> 00:00:25.850
+y ahora vamos a dar un paso más allá y vamos a entrar en
+
+9
+00:00:25.850 --> 00:00:27.975
+los marcos de alambre de baja fidelidad; porque
+
+10
+00:00:27.975 --> 00:00:31.693
+la primera vez que oí marcos de alambre de baja fidelidad
+
+11
+00:00:31.693 --> 00:00:34.453
+ni idea de lo que era
+
+12
+00:00:34.453 --> 00:00:38.459
+por tanto, puedes dar un nivel bastante alto de lo que son
+
+13
+00:00:38.459 --> 00:00:40.725
+y por qué elegirías hacerlo,
+
+14
+00:00:40.725 --> 00:00:44.165
+en lugar de algo más detallado y ese tipo de cosas?
+
+15
+00:00:44.165 --> 00:00:46.280
+<v ->Claro, claro, así que,</v>
+
+16
+00:00:46.280 --> 00:00:48.900
+Y de nuevo esto es la elección de un traficante,
+
+17
+00:00:48.900 --> 00:00:51.200
+diferentes diseñadores y directores creativos
+
+18
+00:00:52.130 --> 00:00:56.890
+pueden tener, podrían decir sólo marco de alambre.
+
+19
+00:00:56.890 --> 00:01:00.500
+Me gusta dividirlo en alta de baja y media fidelidad
+
+20
+00:01:00.500 --> 00:01:02.630
+y esta es la razón.
+
+21
+00:01:02.630 --> 00:01:06.198
+Con un marco de alambre de baja fidelidad.
+
+22
+00:01:06.198 --> 00:01:10.200
+estrictamente te enfocas en la experiencia del usuario;
+
+23
+00:01:10.200 --> 00:01:12.733
+es muy fácil dejarse llevar y querer empezar a diseñar
+
+24
+00:01:12.733 --> 00:01:14.930
+cosas como si estuvieras emocionado,
+
+25
+00:01:14.930 --> 00:01:16.600
+estás poniendo todos estos objetos ahí.
+
+26
+00:01:16.600 --> 00:01:20.250
+La idea, donde estamos con nuestro mapa del sitio,
+
+27
+00:01:20.250 --> 00:01:22.485
+dónde identificamos qué páginas existen
+
+28
+00:01:22.485 --> 00:01:24.360
+y qué acciones clave necesitan suceder,
+
+29
+00:01:24.360 --> 00:01:28.035
+el objetivo principal de construir los marcos
+
+30
+00:01:28.035 --> 00:01:32.090
+de alambre de baja fidelidad es para que conozcas todos los
+
+31
+00:01:32.090 --> 00:01:34.220
+objetos que necesitan existir en cada página.
+
+32
+00:01:34.220 --> 00:01:37.502
+No necesariamente importa lo grande que sea el botón,
+
+33
+00:01:37.502 --> 00:01:39.285
+sólo necesitas saber que el botón
+
+34
+00:01:39.285 --> 00:01:40.568
+tiene que estar ahí ¿Cierto?
+
+35
+00:01:40.568 --> 00:01:43.400
+Entonces, la idea de los marcos de alambre de baja fidelidad
+
+36
+00:01:43.400 --> 00:01:48.016
+es no pensar en la interfaz de usuario en absoluto.
+
+37
+00:01:48.016 --> 00:01:52.870
+Quiero decir, tal vez 5/10%, pero eso es sólo porque
+
+38
+00:01:52.870 --> 00:01:55.240
+voy a hacer que un cuadrado signifique un botón,
+
+39
+00:01:55.240 --> 00:01:57.006
+así que esa es la extensión de lo que estás haciendo
+
+40
+00:01:57.006 --> 00:01:58.380
+que las cosas se vean bien.
+
+41
+00:01:58.380 --> 00:02:01.392
+La parte importante es que en realidad estás diciendo, bien
+
+42
+00:02:01.392 --> 00:02:03.500
+para que estas acciones ocurran
+
+43
+00:02:03.500 --> 00:02:05.070
+¿qué objetos tienen que existir?
+
+44
+00:02:05.070 --> 00:02:08.550
+K, que puede incluir mi barra de navegación
+
+45
+00:02:08.550 --> 00:02:11.770
+que puede incluir algunos o algunos perfiles de usuario
+
+46
+00:02:11.770 --> 00:02:13.404
+una imagen de perfil que se representa con un círculo,
+
+47
+00:02:13.404 --> 00:02:14.270
+lo que sea.
+
+48
+00:02:14.270 --> 00:02:17.240
+Es una fidelidad muy, muy baja.
+
+49
+00:02:17.240 --> 00:02:21.470
+Así que lo que te obliga a hacer es empezar a identificar
+
+50
+00:02:21.470 --> 00:02:24.380
+más agujeros donde se necesita....
+
+51
+00:02:26.450 --> 00:02:28.940
+descubrir las cosas que no has hecho antes
+
+52
+00:02:28.940 --> 00:02:30.210
+en el mapa de su sitio.
+
+53
+00:02:30.210 --> 00:02:32.840
+Así que cuando estás haciendo tu mapa del sitio piensas que
+
+54
+00:02:32.840 --> 00:02:36.330
+tienes todo respondido, pero puede que necesites un poco más
+
+55
+00:02:36.330 --> 00:02:39.450
+de contexto para encontrar realmente algunos problemas más.
+
+56
+00:02:39.450 --> 00:02:43.580
+<v ->Absolutamente y me recuerda mucho,</v>
+
+57
+00:02:43.580 --> 00:02:46.267
+para cualquiera que esté a través de nuestro UML
+
+58
+00:02:46.267 --> 00:02:48.533
+y nuestro curso de resolución de problemas
+
+59
+00:02:48.533 --> 00:02:50.550
+algunas áreas bastante grandes de superposición aquí.
+
+60
+00:02:50.550 --> 00:02:53.750
+Por ejemplo, en la especificación UML, en realidad
+
+61
+00:02:53.750 --> 00:02:57.680
+es un requisito que tienes que empezar con tu más alto nivel
+
+62
+00:02:57.680 --> 00:03:00.495
+de cosas genéricas primero, y es para la práctica
+
+63
+00:03:00.495 --> 00:03:02.730
+nivel de cosas genéricas primero, y es para la práctica
+
+64
+00:03:02.730 --> 00:03:05.750
+razón por la que si te pones muy detallado,
+
+65
+00:03:05.750 --> 00:03:08.740
+sólo vas a acabas perdiendo el tiempo porque vas a tener que
+
+66
+00:03:08.740 --> 00:03:12.060
+pasar todo este tiempo creando, como para el botón ejemplo,
+
+67
+00:03:12.060 --> 00:03:16.550
+este precioso botón con este pequeño gris dentro,
+
+68
+00:03:16.550 --> 00:03:18.750
+o sabes lo que sea que vas a poner ahí
+
+69
+00:03:18.750 --> 00:03:23.500
+y luego vas a descubrir más tarde que no necesita
+
+70
+00:03:23.500 --> 00:03:25.950
+un botón justo ahí porque no coincide
+
+71
+00:03:25.950 --> 00:03:28.040
+con lo que realmente se necesitaba.
+
+72
+00:03:28.040 --> 00:03:31.930
+Y recuerdo la primera vez que me enviaron a un nivel bajo
+
+73
+00:03:31.930 --> 00:03:34.365
+alambre de fidelidad, me sorprendió porque normalmente
+
+74
+00:03:34.365 --> 00:03:37.280
+alambre de fidelidad, me sorprendió porque normalmente
+
+75
+00:03:37.280 --> 00:03:40.590
+estaba consiguiendo más detalles que normalmente se veían
+
+76
+00:03:40.590 --> 00:03:42.740
+como en Photoshop pantallas y me enviaron esto
+
+77
+00:03:42.740 --> 00:03:44.370
+y se veía muy feo.
+
+78
+00:03:44.370 --> 00:03:45.203
+<v Jesse>Sí, oh, sí.</v>
+
+79
+00:03:45.203 --> 00:03:46.036
+<v Anfitrión>Pero eso es bueno.</v>
+
+80
+00:03:46.036 --> 00:03:46.869
+<v Jesse>Sí.</v>
+
+81
+00:03:46.869 --> 00:03:48.319
+[Anfitrión] Esa es la forma en que se supone que es
+
+82
+00:03:48.319 --> 00:03:50.290
+y eso es algo que hay que tener en cuenta mientras
+
+83
+00:03:50.290 --> 00:03:54.700
+construyes tus propios marcos de alambre y especialmente
+
+84
+00:03:54.700 --> 00:03:58.430
+esta etapa de baja fidelidad, es que es importante.
+
+85
+00:03:58.430 --> 00:04:01.200
+Como mencionaste, no te importa la interfaz de usuario en
+
+86
+00:04:01.200 --> 00:04:05.760
+este punto, sólo estás tratando de dar un paso más allá,
+
+87
+00:04:05.760 --> 00:04:09.650
+un paso más cerca de la línea de meta para asegurarse de
+
+88
+00:04:09.650 --> 00:04:12.740
+que cuando finalmente se lo pasas al promotor, ellos van a
+
+89
+00:04:12.740 --> 00:04:14.490
+para saber exactamente lo que necesitan para construir.
+
+90
+00:04:14.490 --> 00:04:16.820
+<v Jesse>Correcto, exactamente y permite que algunas</v>
+
+91
+00:04:16.820 --> 00:04:20.460
+de las tareas de backend se inicien mientras que en realidad
+
+92
+00:04:20.460 --> 00:04:22.020
+se están haciendo las maquetas de alta fidelidad, ¿verdad?
+
+93
+00:04:22.020 --> 00:04:23.519
+Así que cuando estás haciendo ese diseño,
+
+94
+00:04:23.519 --> 00:04:24.860
+eso puede tomar algún tiempo
+
+95
+00:04:24.860 --> 00:04:26.640
+y especialmente cuando estás trabajando con un cliente,
+
+96
+00:04:26.640 --> 00:04:29.130
+se ponen muy exigentes en ese punto
+
+97
+00:04:29.130 --> 00:04:31.110
+y así el proceso puede ir un poco más lento
+
+98
+00:04:31.110 --> 00:04:35.430
+en la parte delantera, pero si tienes estos marcos de
+
+99
+00:04:35.430 --> 00:04:38.727
+alambre que fuiste capaz de sacar, la parte trasera puede
+
+100
+00:04:38.727 --> 00:04:41.029
+obtener esos marcos de alambre y empezar a trabajar en ellos
+
+101
+00:04:41.029 --> 00:04:42.760
+porque conocen los objetos que necesitan existir,
+
+102
+00:04:42.760 --> 00:04:45.550
+conocen los datos que necesitan para estar allí;
+
+103
+00:04:45.550 --> 00:04:47.522
+no les importa cómo se vea, pero tienen algo con lo
+
+104
+00:04:47.522 --> 00:04:50.380
+que puedan empezar a trabajar, para construir la
+
+105
+00:04:50.380 --> 00:04:52.252
+aplicación mientras trabajas en otras partes de ella.
+
+106
+00:04:52.252 --> 00:04:55.493
+Y realmente, no puedo enfatizar esto lo suficiente
+
+107
+00:04:55.493 --> 00:04:57.320
+la razón por la que la baja fidelidad es tan importante
+
+108
+00:04:57.320 --> 00:04:58.995
+es porque te obliga a concentrarte
+
+109
+00:04:58.995 --> 00:05:00.050
+en la experiencia del usuario.
+
+110
+00:05:00.050 --> 00:05:05.046
+Lo digo en serio, incluso algo tan simple como Tinder,
+
+111
+00:05:05.046 --> 00:05:10.005
+hay muchas partes de la interfaz de usuario,
+
+112
+00:05:10.005 --> 00:05:11.522
+pero la experiencia del usuario,
+
+113
+00:05:11.522 --> 00:05:15.488
+¿cuál es la mejor manera para mí para recorrer los perfiles?
+
+114
+00:05:15.488 --> 00:05:19.006
+Ese gesto, que dio inicio a un montón de aplicaciones usando
+
+115
+00:05:19.006 --> 00:05:22.424
+ese mismo gesto no era necesariamente la decisión
+
+116
+00:05:22.424 --> 00:05:25.026
+del usuario de interfaz, fue él diciendo:
+
+117
+00:05:25.026 --> 00:05:26.350
+estoy en esta pantalla
+
+118
+00:05:26.350 --> 00:05:28.880
+y necesito que se tome algún tipo de decisión,
+
+119
+00:05:28.880 --> 00:05:31.770
+necesito tomar algún tipo de acción
+
+120
+00:05:31.770 --> 00:05:34.300
+y no quiero apretar un botón, voy a hacer que esto suceda
+
+121
+00:05:34.300 --> 00:05:36.865
+a través de un gesto, cierto
+
+122
+00:05:36.865 --> 00:05:40.020
+y la razón por la que días como este son algo que va a pasar
+
+123
+00:05:40.020 --> 00:05:42.470
+muy a menudo, tiene un montón de cosas que está pensando
+
+124
+00:05:42.470 --> 00:05:45.530
+y te obliga a pensar a través de esas cosas específicas
+
+125
+00:05:45.530 --> 00:05:47.770
+para decir, hay un montón de cosas en esta página,
+
+126
+00:05:47.770 --> 00:05:49.303
+esto es complicado; o espera un segundo
+
+127
+00:05:49.303 --> 00:05:51.910
+¿cómo sé qué número poner aquí?
+
+128
+00:05:51.910 --> 00:05:54.480
+si no he sacado estos datos de esta otra pantalla,
+
+129
+00:05:54.480 --> 00:05:57.970
+así que te está forzando a pensar en esa página por el flujo
+
+130
+00:05:57.970 --> 00:06:02.260
+de usuarios de la página y no estás perdiendo el tiempo.
+
+131
+00:06:02.260 --> 00:06:05.360
+En este punto estarías perdiendo el tiempo diseñando todos
+
+132
+00:06:05.360 --> 00:06:08.360
+estos botones, haciendo que todo esté bien equilibrado bien,
+
+133
+00:06:08.360 --> 00:06:10.570
+sí, tengo una buena cantidad de color ahí, el balance
+
+134
+00:06:10.570 --> 00:06:12.770
+en la página es bueno, y entonces de repente descubres
+
+135
+00:06:12.770 --> 00:06:15.840
+es como si esperara, necesito como 10 objetos más aquí.
+
+136
+00:06:15.840 --> 00:06:18.850
+Eso va a afectar todo y esas cinco horas de diseño
+
+137
+00:06:18.850 --> 00:06:20.840
+que acabas de hacer es ahora inútil porque tienes que irte
+
+138
+00:06:20.840 --> 00:06:22.930
+y cambiarlo todo con el nuevo equilibrio.
+
+139
+00:06:22.930 --> 00:06:27.170
+Así que lo que esto hace es que te obliga a concentrarte
+
+140
+00:06:27.170 --> 00:06:30.742
+en ese problema de experiencia de usuario y realmente
+
+141
+00:06:30.742 --> 00:06:33.065
+se puede crear una buena fluyen de una pantalla a otra.
+
+142
+00:06:33.065 --> 00:06:35.350
+Vas a volver y lo vas a diseñar
+
+143
+00:06:35.350 --> 00:06:37.480
+o un diseñador lo va a diseñar o lo que sea,
+
+144
+00:06:37.480 --> 00:06:41.407
+pero desde el punto de vista de la experiencia del usuario,
+
+145
+00:06:41.407 --> 00:06:43.670
+esta parte es absolutamente crítica para hacer lo correcto.
+
+146
+00:06:43.670 --> 00:06:47.360
+<v ->Sí, y eso es algo que he notado cuando</v>
+
+147
+00:06:47.360 --> 00:06:52.030
+he liderado equipos en proyectos es cuando se usaron marcos
+
+148
+00:06:52.030 --> 00:06:55.630
+de alambre de baja fidelidad, que pudieron automatizar
+
+149
+00:06:55.630 --> 00:06:58.777
+muchos de los otros procesos para el equipo de desarrollo,
+
+150
+00:06:58.777 --> 00:07:01.842
+porque estaba acostumbrado a tener que esperar hasta que el
+
+151
+00:07:01.842 --> 00:07:04.583
+diseñador terminara con todo el sistema
+
+152
+00:07:04.583 --> 00:07:07.220
+antes de que realmente pudiera comenzar a programar
+
+153
+00:07:07.220 --> 00:07:11.562
+y eso se debió principalmente a que tuve muchos tipos de
+
+154
+00:07:11.562 --> 00:07:15.850
+experiencias malas en las que creía que habían terminado
+
+155
+00:07:15.850 --> 00:07:18.900
+y que empezaría a construirlo y luego tendría que ir a
+
+156
+00:07:18.900 --> 00:07:22.170
+limpiar las pizarras y comenzar de cero porque terminaron
+
+157
+00:07:22.170 --> 00:07:24.470
+cambiando algo muy significativo.
+
+158
+00:07:24.470 --> 00:07:28.605
+Mientras que ahora, cuando trabajo con estos tipos de baja
+
+159
+00:07:28.605 --> 00:07:32.850
+fidelidad tipo de marcos de alambre, me da una ventaja,
+
+160
+00:07:32.850 --> 00:07:36.120
+no tengo para esperar por los diseños, lo sé
+
+161
+00:07:36.120 --> 00:07:39.620
+y puedo estar seguro que probablemente la parte
+
+162
+00:07:39.620 --> 00:07:42.900
+significativa de ese usuario y que la interacción es exacta.
+
+163
+00:07:42.900 --> 00:07:43.991
+Así que puedo cogerlos,
+
+164
+00:07:43.991 --> 00:07:46.220
+puedo codificar directamente de ellos,
+
+165
+00:07:46.220 --> 00:07:48.610
+no tengo que preocuparme por el diseño, sé que me llevaré
+
+166
+00:07:48.610 --> 00:07:51.600
+de implementar eso cada vez que me envíen
+
+167
+00:07:51.600 --> 00:07:53.370
+los de alta fidelidad.
+
+168
+00:07:53.370 --> 00:07:57.180
+¿Que son, así como has mencionado cosas, elementos como
+
+169
+00:07:57.180 --> 00:07:59.504
+imágenes y botones, incluso gestos,
+
+170
+00:07:59.504 --> 00:08:02.040
+hay algún otro tipo de elementos
+
+171
+00:08:02.040 --> 00:08:05.460
+o cualquier otro tipo de acciones
+
+172
+00:08:05.460 --> 00:08:08.175
+que estés intentando capturar?
+
+173
+00:08:08.175 --> 00:08:12.060
+<v ->Hm, quiero decir, tal vez no acciones tanto como empezar</v>
+
+174
+00:08:12.060 --> 00:08:15.930
+a identificar cuáles son los datos correctos que estás
+
+175
+00:08:15.930 --> 00:08:18.810
+sacando, así que si es un tablero, estás diciendo,
+
+176
+00:08:18.810 --> 00:08:21.150
+necesito ser capaz de mostrar este pedazo de metadatos
+
+177
+00:08:21.150 --> 00:08:23.730
+y esta pieza de metadatos que ayuda al desarrollador del
+
+178
+00:08:23.730 --> 00:08:26.130
+backend porque sabe que no le importa que sean 50 puntos,
+
+179
+00:08:26.130 --> 00:08:28.100
+él sabe que tiene que estar ahí
+
+180
+00:08:28.100 --> 00:08:30.280
+y es exactamente lo mismo que tomar DailySmarty
+
+181
+00:08:30.280 --> 00:08:33.480
+por la existencia como si uno de tus objetos fuera un poste.
+
+182
+00:08:33.480 --> 00:08:38.300
+En la página de índice de mensajes, ¿qué tipo de metadatos
+
+183
+00:08:38.300 --> 00:08:40.180
+necesito para entrar? ¿necesito entrar en las categorías?
+
+184
+00:08:40.180 --> 00:08:43.813
+para retirar al autor de la publicación, ¿necesito retirar
+
+185
+00:08:43.813 --> 00:08:48.813
+a la fecha? Así que puedo mostrarte que necesitas toda esta
+
+186
+00:08:48.890 --> 00:08:50.460
+información, No sé cómo se va a ver, pero ya sabes, puedo
+
+187
+00:08:50.460 --> 00:08:52.790
+representarlo muy rápidamente, no me importan los tamaños de
+
+188
+00:08:52.790 --> 00:08:55.990
+fuente, No me importa mucho, pero empiezas a tener una idea
+
+189
+00:08:55.990 --> 00:08:58.931
+clara No me importa mucho, pero empiezas a tener una idea
+
+190
+00:08:58.931 --> 00:09:00.348
+clara de las cosas que necesitas
+
+191
+00:09:00.348 --> 00:09:02.450
+para empezar realmente para construirlo.
+
+192
+00:09:02.450 --> 00:09:04.061
+<v ->Absolutamente.</v>
+
+193
+00:09:04.061 --> 00:09:07.161
+Sí, así que eso es una guía para poder conocer el escenario
+
+194
+00:09:07.161 --> 00:09:09.620
+Sí, así que eso es una guía para poder conocer el escenario
+
+195
+00:09:09.620 --> 00:09:13.095
+de cuándo construir tus marcos de alambre de baja fidelidad.
+

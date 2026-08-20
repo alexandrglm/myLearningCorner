@@ -1,0 +1,238 @@
+WEBVTT
+
+1
+00:00:00.780 --> 00:00:04.230
+<v Narrador>Bienvenidos a este curso de CSS Grid.</v>
+
+2
+00:00:04.230 --> 00:00:07.455
+El enfoque que vamos a tomar con este curso es en lugar
+
+3
+00:00:07.455 --> 00:00:12.040
+de simplemente mirar cada una de las reglas de CSS Grid
+
+4
+00:00:12.040 --> 00:00:13.740
+y cómo puedes usarlo,
+
+5
+00:00:13.740 --> 00:00:16.100
+quería adoptar un enfoque un poco diferente.
+
+6
+00:00:16.100 --> 00:00:19.810
+Muchos de los tutoriales que encontré simplemente usan cosas
+
+7
+00:00:19.810 --> 00:00:23.710
+como algunos bloques con algunos fondos de color
+
+8
+00:00:23.710 --> 00:00:26.160
+y luego los mueven por la página.
+
+9
+00:00:26.160 --> 00:00:29.640
+Y eso está bien para aprender CSS Grid
+
+10
+00:00:29.640 --> 00:00:31.200
+de una manera teórica.
+
+11
+00:00:31.200 --> 00:00:34.447
+Pero quería que este curso fuera mucho más práctico.
+
+12
+00:00:34.447 --> 00:00:36.894
+Entonces en cada sección de este curso,
+
+13
+00:00:36.894 --> 00:00:41.630
+vamos a construir un proyecto real de la vida real.
+
+14
+00:00:41.630 --> 00:00:45.017
+Entonces esta sección será nuestro proyecto más
+
+15
+00:00:45.017 --> 00:00:48.350
+introductorio por el que vamos a pasar.
+
+16
+00:00:48.350 --> 00:00:52.700
+Vamos a construir y ver cómo construí esta
+
+17
+00:00:52.700 --> 00:00:55.950
+página de directrices de marca para DailySmarty.
+
+18
+00:00:55.950 --> 00:00:58.800
+Así que puedes ir a ver esta página ahora mismo.
+
+19
+00:00:58.800 --> 00:01:03.460
+Si vas a dailysmarty.com/corporate/branding.
+
+20
+00:01:03.460 --> 00:01:06.420
+Y puedes ver que este es un proyecto de la vida real
+
+21
+00:01:06.420 --> 00:01:09.240
+y construí todo esto usando CSS Grid.
+
+22
+00:01:09.240 --> 00:01:13.150
+Así que lo que vamos a hacer es diseccionar esto
+
+23
+00:01:13.150 --> 00:01:16.910
+y vamos a ver cómo podemos aprovechar CSS Grid
+
+24
+00:01:16.910 --> 00:01:20.080
+para construir una página como esta.
+
+25
+00:01:20.080 --> 00:01:22.900
+Creo que te va a gustar mucho trabajar
+
+26
+00:01:22.900 --> 00:01:25.730
+con la red y vas a ver
+
+27
+00:01:25.730 --> 00:01:27.440
+que es mucho más práctico
+
+28
+00:01:27.440 --> 00:01:30.920
+y cómo eres capaz de usar herramientas como grid,
+
+29
+00:01:30.920 --> 00:01:33.430
+combinarlos con herramientas como Flexbox.
+
+30
+00:01:33.430 --> 00:01:36.930
+Y que ni siquiera necesitas utilizar marcos de trabajo
+
+31
+00:01:36.930 --> 00:01:40.170
+como Twitter Bootstrap o Foundation
+
+32
+00:01:40.170 --> 00:01:41.550
+ni nada de eso.
+
+33
+00:01:41.550 --> 00:01:44.110
+Y este va a ser un curso muy divertido
+
+34
+00:01:44.110 --> 00:01:47.515
+y con suerte serás capaz al final de sentirte
+
+35
+00:01:47.515 --> 00:01:50.600
+como si pudieras construir algunas aplicaciones
+
+36
+00:01:50.600 --> 00:01:54.490
+bastante geniales y puedes hacerlo usando sólo Vanilla CSS.
+
+37
+00:01:54.490 --> 00:01:58.220
+Entonces lo que vas a construir está justo aquí
+
+38
+00:01:58.220 --> 00:02:02.470
+y con lo que vas a ser capaz de empezar es que puedes entrar
+
+39
+00:02:02.470 --> 00:02:05.440
+en el Grid CSS de Bottega Code School,
+
+40
+00:02:05.440 --> 00:02:06.820
+ir a este recobro.
+
+41
+00:02:06.820 --> 00:02:11.150
+Y aquí tengo el directorio básico.
+
+42
+00:02:11.150 --> 00:02:13.879
+Y dentro de lo básico, tengo la solución
+
+43
+00:02:13.879 --> 00:02:16.240
+completa que construiremos aquí mismo.
+
+44
+00:02:16.240 --> 00:02:19.233
+Pero no tienes que preocuparte por eso porque vamos
+
+45
+00:02:19.233 --> 00:02:21.830
+a escribirlo todo manualmente y caminando a través de él.
+
+46
+00:02:21.830 --> 00:02:24.560
+Pero si quieres acceder a las imágenes,
+
+47
+00:02:24.560 --> 00:02:28.390
+entonces puedes simplemente hacer clic en esto y luego
+
+48
+00:02:28.390 --> 00:02:32.500
+descargar cada una de estas imágenes a su sistema local.
+
+49
+00:02:32.500 --> 00:02:35.040
+Así que tengo el código VS abierto justo aquí.
+
+50
+00:02:35.040 --> 00:02:38.689
+Y si miramos a la izquierda,
+
+51
+00:02:38.689 --> 00:02:41.710
+pueden ver que cada uno de ellos se ha descargado
+
+52
+00:02:41.710 --> 00:02:43.560
+y puedo acceder a él.
+
+53
+00:02:43.560 --> 00:02:45.840
+Así que con todo eso dicho,
+
+54
+00:02:45.840 --> 00:02:47.930
+ese es el proyecto que vamos a construir.
+
+55
+00:02:47.930 --> 00:02:52.210
+Y es cómo puedes ir y acceder al material de referencia
+
+56
+00:02:52.210 --> 00:02:54.430
+que vamos a utilizar para este proyecto.
+
+57
+00:02:54.430 --> 00:02:56.960
+Y en la siguiente diapositiva vamos a ir viendo
+
+58
+00:02:56.960 --> 00:03:00.240
+a través de la introducción del código Boilerplate que vamos
+
+59
+00:03:00.240 --> 00:03:01.693
+a usar para construir esta aplicación.
+

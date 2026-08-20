@@ -1,0 +1,1202 @@
+WEBVTT
+
+1
+00:00:01.270 --> 00:00:03.240
+<v Instructor>Continuando, en nuestro viaje</v>
+
+2
+00:00:03.240 --> 00:00:05.051
+por las variables de Python,
+
+3
+00:00:05.051 --> 00:00:08.230
+quiero discutir algo que es muy importante
+
+4
+00:00:08.230 --> 00:00:11.200
+y puede que no parezca el mayor problema en este momento,
+
+5
+00:00:11.200 --> 00:00:13.010
+pero cuanto más avanzan
+
+6
+00:00:13.010 --> 00:00:16.010
+en su travesía de desarrollo de Python,
+
+7
+00:00:16.010 --> 00:00:17.800
+descubrirán que
+
+8
+00:00:17.800 --> 00:00:19.310
+hay una serie de
+
+9
+00:00:19.310 --> 00:00:22.470
+convenciones estándar que utiliza la industria.
+
+10
+00:00:22.470 --> 00:00:24.180
+Así que, aquí mismo, volveremos
+
+11
+00:00:24.180 --> 00:00:26.920
+a nuestro ejemplo donde tenemos dos variables,
+
+12
+00:00:26.920 --> 00:00:30.910
+una es el nombre, y la otro es el recuento de publicaciones.
+
+13
+00:00:30.910 --> 00:00:33.710
+Ahora el nombre es bastante explicativo
+
+14
+00:00:33.710 --> 00:00:36.810
+porque es solo una palabra.
+
+15
+00:00:36.810 --> 00:00:39.240
+Sin embargo, siempre que tengan una variable
+
+16
+00:00:39.240 --> 00:00:40.073
+que tenga varias palabras,
+
+17
+00:00:40.073 --> 00:00:42.750
+como el recuento de publicaciones,
+
+18
+00:00:42.750 --> 00:00:44.560
+la convención común es
+
+19
+00:00:44.560 --> 00:00:48.470
+poner un guión bajo entre las palabras.
+
+20
+00:00:48.470 --> 00:00:53.190
+Y la razón de esto es porque cuando otro desarrollador
+
+21
+00:00:53.190 --> 00:00:55.050
+venga y mire su código,
+
+22
+00:00:55.050 --> 00:00:57.610
+o digamos que construyen algún tipo de paquete
+
+23
+00:00:57.610 --> 00:00:59.300
+que alguien más usa,
+
+24
+00:00:59.300 --> 00:01:02.950
+entonces querrán usar las convenciones estándar
+
+25
+00:01:02.950 --> 00:01:05.371
+que otros desarrolladores de Python están usando,
+
+26
+00:01:05.371 --> 00:01:07.230
+porque por ejemplo,
+
+27
+00:01:07.230 --> 00:01:11.843
+si cambian el recuento de publicaciones para que se vea así,
+
+28
+00:01:13.830 --> 00:01:14.690
+técnicamente,
+
+29
+00:01:14.690 --> 00:01:17.409
+lo que pasaría es que esto funcionaría,
+
+30
+00:01:17.409 --> 00:01:21.120
+entonces si guardo esto aquí y lo ejecuto,
+
+31
+00:01:21.120 --> 00:01:23.880
+verán que todo funciona exactamente igual,
+
+32
+00:01:23.880 --> 00:01:26.610
+excepto que hay un pequeño problema aquí
+
+33
+00:01:26.610 --> 00:01:28.160
+y en realidad es un problema bastante grande
+
+34
+00:01:28.160 --> 00:01:30.130
+si alguna vez quieren ser desarrolladores de Python
+
+35
+00:01:30.130 --> 00:01:32.060
+y trabajar con otros desarrolladores de Python,
+
+36
+00:01:32.060 --> 00:01:36.340
+y esa es la estructura que acabo de usar aquí,
+
+37
+00:01:36.340 --> 00:01:38.180
+técnicamente es la forma en que
+
+38
+00:01:38.180 --> 00:01:41.750
+deberían estructurar sus nombres de clase Python,
+
+39
+00:01:41.750 --> 00:01:44.950
+y así si tienen algún tipo de variable,
+
+40
+00:01:44.950 --> 00:01:48.410
+en cuya creación usen esta convención,
+
+41
+00:01:48.410 --> 00:01:51.280
+lo que pasaría es que otro desarrollador
+
+42
+00:01:51.280 --> 00:01:53.910
+revisaría el código, vean que,
+
+43
+00:01:53.910 --> 00:01:58.020
+y esperaría que esto sea una clase y no una variable,
+
+44
+00:01:58.020 --> 00:02:00.450
+así que si tienen este recuento de publicaciones
+
+45
+00:02:00.450 --> 00:02:03.110
+invocada desde alguna otra parte del programa,
+
+46
+00:02:03.110 --> 00:02:05.250
+posiblemente incluso un archivo diferente,
+
+47
+00:02:05.250 --> 00:02:07.200
+entonces ese otro desarrollador
+
+48
+00:02:07.200 --> 00:02:08.880
+se encontrará con una serie de errores
+
+49
+00:02:08.880 --> 00:02:11.530
+porque tratarán esto como una clase,
+
+50
+00:02:11.530 --> 00:02:13.070
+y no como una variable,
+
+51
+00:02:13.070 --> 00:02:15.660
+y no estarán muy contentos con ustedes,
+
+52
+00:02:15.660 --> 00:02:19.420
+entonces es muy importante el uso
+
+53
+00:02:19.420 --> 00:02:21.540
+de las convenciones estándar.
+
+54
+00:02:21.540 --> 00:02:23.670
+Ahora, lo que se invoca aquí,
+
+55
+00:02:23.670 --> 00:02:26.660
+siempre que lo tengan y esto no es específico de Python,
+
+56
+00:02:26.660 --> 00:02:29.540
+esto es general en todos los lenguajes de programación,
+
+57
+00:02:29.540 --> 00:02:30.373
+es lo que se llama una convención
+
+58
+00:02:30.373 --> 00:02:33.040
+de nombres de caso de serpiente,
+
+59
+00:02:34.140 --> 00:02:38.630
+entonces si tuviera otra variable aquí, entonces si dijera,
+
+60
+00:02:38.630 --> 00:02:40.751
+una frase larga con palabras,
+
+61
+00:02:40.751 --> 00:02:42.097
+una frase larga con palabras,
+
+62
+00:02:42.097 --> 00:02:45.070
+una frase larga con palabras,
+
+63
+00:02:45.070 --> 00:02:46.350
+así como esto,
+
+64
+00:02:46.350 --> 00:02:49.600
+y tenía una cadena con un montón de palabras en ella
+
+65
+00:02:49.600 --> 00:02:50.880
+que componían una frase,
+
+66
+00:02:50.880 --> 00:02:52.690
+no estoy diciendo que este sea un gran nombre,
+
+67
+00:02:52.690 --> 00:02:55.940
+sin embargo, es un ejemplo de una situación
+
+68
+00:02:55.940 --> 00:02:58.240
+donde tienen cinco palabras diferentes
+
+69
+00:02:58.240 --> 00:02:59.840
+que componen un nombre de variable,
+
+70
+00:02:59.840 --> 00:03:01.890
+en la práctica esto
+
+71
+00:03:01.890 --> 00:03:05.750
+separará cada una de esas palabras
+
+72
+00:03:05.750 --> 00:03:07.720
+con un guión bajo,
+
+73
+00:03:07.720 --> 00:03:10.780
+y esa es una forma en que pueden escribir sus variables
+
+74
+00:03:10.780 --> 00:03:13.290
+para que sean mucho más fáciles de leer,
+
+75
+00:03:13.290 --> 00:03:17.410
+ahora si vienen de un lenguaje como JavaScript,
+
+76
+00:03:17.410 --> 00:03:20.970
+en JavaScript la forma en que crean una variable como esa
+
+77
+00:03:20.970 --> 00:03:22.400
+es que escribirían
+
+78
+00:03:22.400 --> 00:03:24.612
+una frase larga con palabras,
+
+79
+00:03:24.612 --> 00:03:26.321
+una frase larga con palabras,
+
+80
+00:03:26.321 --> 00:03:28.830
+una frase larga con palabras,
+
+81
+00:03:28.830 --> 00:03:31.500
+y esto se llama caso del camello.
+
+82
+00:03:31.500 --> 00:03:34.920
+Entonces, aquí tenemos nuestro caso de serpientes,
+
+83
+00:03:34.920 --> 00:03:37.030
+y luego tenemos el caso de camellos,
+
+84
+00:03:37.030 --> 00:03:40.370
+y literalmente no hay diferencia entre ellos,
+
+85
+00:03:40.370 --> 00:03:42.130
+ambos declaran variables,
+
+86
+00:03:42.130 --> 00:03:45.600
+ambos lenguajes JavaScript y Python las usan
+
+87
+00:03:45.600 --> 00:03:47.040
+en formas muy similares,
+
+88
+00:03:47.040 --> 00:03:50.360
+la única diferencia clave es que la convención,
+
+89
+00:03:50.360 --> 00:03:53.290
+porque cuando miran un programa de Python,
+
+90
+00:03:53.290 --> 00:03:56.320
+esperan ver variables que se usan así,
+
+91
+00:03:56.320 --> 00:03:59.840
+así que si ven un tipo muy largo de variable
+
+92
+00:03:59.840 --> 00:04:01.210
+con todos estos guiones bajos,
+
+93
+00:04:01.210 --> 00:04:04.409
+entienden que es una variable.
+
+94
+00:04:04.409 --> 00:04:05.930
+Solo para que no piensen
+
+95
+00:04:05.930 --> 00:04:09.720
+que estoy diciendo este tipo de cosas solo por ser exigente,
+
+96
+00:04:09.720 --> 00:04:12.320
+abriré y pondré esto en las notas del programa,
+
+97
+00:04:12.320 --> 00:04:14.020
+esto se llama PEP 8,
+
+98
+00:04:14.020 --> 00:04:18.370
+que es la guía de estilo oficial para el código Python.
+
+99
+00:04:18.370 --> 00:04:23.360
+Como podrán ver, esta es una guía de estilo muy larga,
+
+100
+00:04:23.360 --> 00:04:25.350
+tienen todo tipo de cosas diferentes,
+
+101
+00:04:25.350 --> 00:04:27.610
+como convenciones de nomenclatura,
+
+102
+00:04:27.610 --> 00:04:29.860
+y cómo construir cadenas entre comillas,
+
+103
+00:04:29.860 --> 00:04:33.550
+y espacios en blanco y qué tipo de sangría utilizar
+
+104
+00:04:33.550 --> 00:04:34.383
+entre tabulaciones y espacios,
+
+105
+00:04:34.383 --> 00:04:37.060
+y todo tipo de reglas como esas.
+
+106
+00:04:37.060 --> 00:04:39.880
+No revisaré la lista completa en este momento
+
+107
+00:04:39.880 --> 00:04:41.280
+porque es masiva
+
+108
+00:04:41.280 --> 00:04:43.840
+y tampoco creo que sea de mucha ayuda,
+
+109
+00:04:43.840 --> 00:04:46.130
+porque introduciría una serie de conceptos
+
+110
+00:04:46.130 --> 00:04:48.040
+que aún no hemos revisado,
+
+111
+00:04:48.040 --> 00:04:51.410
+así que lo que haré a lo largo de todo este curso,
+
+112
+00:04:51.410 --> 00:04:53.210
+e incluso en el curso avanzado,
+
+113
+00:04:53.210 --> 00:04:55.360
+tomaré estos conceptos,
+
+114
+00:04:55.360 --> 00:04:58.800
+y estaré construyendo cada uno de los módulos
+
+115
+00:04:58.800 --> 00:05:00.870
+que hagamos en este curso,
+
+116
+00:05:00.870 --> 00:05:04.710
+para coincidir con la norma PEP 8,
+
+117
+00:05:04.710 --> 00:05:08.597
+o al menos estará cerca de la norma PEP 8.
+
+118
+00:05:08.597 --> 00:05:12.820
+Al igual que cualquier otro tipo de norma publicada,
+
+119
+00:05:12.820 --> 00:05:14.560
+hay algo de flexibilidad,
+
+120
+00:05:14.560 --> 00:05:16.865
+si intentan mantenerse tan estrictos
+
+121
+00:05:16.865 --> 00:05:19.910
+como para seguir una sola convención,
+
+122
+00:05:19.910 --> 00:05:21.340
+entonces pasarán todo su tiempo
+
+123
+00:05:21.340 --> 00:05:25.400
+asegurándose de construir todo según la especificación
+
+124
+00:05:25.400 --> 00:05:28.100
+y eso puede alejarlos de lo que realmente quieren hacer
+
+125
+00:05:28.100 --> 00:05:30.030
+que es construir aplicaciones.
+
+126
+00:05:30.030 --> 00:05:32.360
+Entonces, mi preferencia personal
+
+127
+00:05:32.360 --> 00:05:35.040
+es encontrar las convenciones estándar,
+
+128
+00:05:35.040 --> 00:05:35.930
+para encontrar esas cosas
+
+129
+00:05:35.930 --> 00:05:36.763
+como lo que acabamos de discutir
+
+130
+00:05:36.763 --> 00:05:39.263
+sobre cómo construir variables
+
+131
+00:05:40.130 --> 00:05:42.630
+y el tipo de estructura que usan para ellas,
+
+132
+00:05:42.630 --> 00:05:43.463
+y entonces las sigo, y trato de
+
+133
+00:05:43.463 --> 00:05:46.340
+permanecer estrechamente alineado
+
+134
+00:05:46.340 --> 00:05:47.210
+con las otras normas,
+
+135
+00:05:47.210 --> 00:05:50.862
+pero definitivamente hay un poco de margen de maniobra.
+
+136
+00:05:50.862 --> 00:05:53.080
+Solo para que vean algunos ejemplos
+
+137
+00:05:53.080 --> 00:05:54.820
+que se relacionan con variables,
+
+138
+00:05:54.820 --> 00:05:56.790
+si vengo aquí
+
+139
+00:05:56.790 --> 00:05:59.290
+y hago clic en convenciones de nomenclatura,
+
+140
+00:05:59.290 --> 00:06:00.810
+esto pasará una cantidad de
+
+141
+00:06:00.810 --> 00:06:05.080
+los diferentes estilos de nombres que están ahí fuera,
+
+142
+00:06:05.080 --> 00:06:07.080
+todo desde minúsculas,
+
+143
+00:06:07.080 --> 00:06:08.830
+en minúsculas con guiones bajos,
+
+144
+00:06:08.830 --> 00:06:10.000
+que es el caso de serpiente,
+
+145
+00:06:10.000 --> 00:06:11.890
+que ya hemos discutido,
+
+146
+00:06:11.890 --> 00:06:13.170
+palabras en mayúsculas,
+
+147
+00:06:13.170 --> 00:06:15.720
+y por eso recomiendo venir por aquí
+
+148
+00:06:15.720 --> 00:06:19.470
+y tener una idea de lo que representa cada uno de estos,
+
+149
+00:06:19.470 --> 00:06:21.750
+no deben memorizarlos ni nada de eso,
+
+150
+00:06:21.750 --> 00:06:23.030
+es más solo quiero
+
+151
+00:06:23.030 --> 00:06:25.420
+que puedan familiarizarse con ellos,
+
+152
+00:06:25.420 --> 00:06:27.330
+y también dar algunos ejemplos
+
+153
+00:06:27.330 --> 00:06:30.040
+de algunas formas realmente malas de hacer las cosas,
+
+154
+00:06:30.040 --> 00:06:31.580
+para que sepan cómo no hacerlas,
+
+155
+00:06:31.580 --> 00:06:35.526
+he visto algunos alumnos que presentan sus proyectos
+
+156
+00:06:35.526 --> 00:06:37.640
+y cuando reviso sus archivos
+
+157
+00:06:37.640 --> 00:06:39.864
+veré cosas como esta.
+
+158
+00:06:39.864 --> 00:06:40.697
+Donde veo un nombre de variable
+
+159
+00:06:40.697 --> 00:06:43.447
+que usa las palabras en mayúscula
+
+160
+00:06:44.480 --> 00:06:47.130
+pero luego tiene guiones bajos entre cada una.
+
+161
+00:06:47.130 --> 00:06:50.230
+Eso, como se puede ver aquí, es muy feo,
+
+162
+00:06:50.230 --> 00:06:52.680
+así que recomiendo encarecidamente no hacer eso,
+
+163
+00:06:52.680 --> 00:06:54.380
+y esa es la razón por la cual
+
+164
+00:06:54.380 --> 00:06:57.950
+estoy poniendo esta guía tan temprano en el curso,
+
+165
+00:06:57.950 --> 00:07:01.657
+porque de esta manera, se familiarizan con la estructura,
+
+166
+00:07:01.657 --> 00:07:04.300
+y para que sigan las mejores prácticas
+
+167
+00:07:04.300 --> 00:07:06.160
+desde el primer día.
+
+168
+00:07:06.160 --> 00:07:08.010
+Bajo un poco más,
+
+169
+00:07:08.010 --> 00:07:11.260
+porque había otro elemento aquí
+
+170
+00:07:11.260 --> 00:07:15.478
+que quería que vieran, que son los nombres a evitar.
+
+171
+00:07:15.478 --> 00:07:17.877
+Indica que nunca deben usar los caracteres l,
+
+172
+00:07:17.877 --> 00:07:21.268
+la letra l minúscula, la letra o mayúscula o la letra i,
+
+173
+00:07:21.268 --> 00:07:23.760
+la letra l minúscula, la O mayúscula o la i,
+
+174
+00:07:23.760 --> 00:07:24.593
+una letra i mayúscula, como nombres
+
+175
+00:07:24.593 --> 00:07:27.260
+de variable de un solo carácter,
+
+176
+00:07:28.810 --> 00:07:33.130
+y la razón de esto es si se dan cuenta, esta l
+
+177
+00:07:33.130 --> 00:07:36.850
+y esta i mayúscula parecen casi idénticas.
+
+178
+00:07:36.850 --> 00:07:41.750
+Y cómo una o se parece mucho al número cero.
+
+179
+00:07:41.750 --> 00:07:44.170
+La razón es porque si otro desarrollador
+
+180
+00:07:44.170 --> 00:07:46.690
+o incluso ustedes mismos más tarde en la línea,
+
+181
+00:07:46.690 --> 00:07:50.477
+encuentran algún tipo de variable que sea l,
+
+182
+00:07:50.477 --> 00:07:53.370
+no sabrán si eso es una i mayúscula,
+
+183
+00:07:53.370 --> 00:07:57.580
+o si es una l minúscula, y eso puede causar confusión.
+
+184
+00:07:57.580 --> 00:08:00.560
+Y eso también me lleva al siguiente tema
+
+185
+00:08:00.560 --> 00:08:02.580
+que quería discutir en esta guía,
+
+186
+00:08:02.580 --> 00:08:05.968
+que son las mejores prácticas en torno a los nombres.
+
+187
+00:08:05.968 --> 00:08:08.720
+Como pueden ver con estos nombres, aquí mismo,
+
+188
+00:08:08.720 --> 00:08:13.580
+tenemos una variable muy descriptiva, se llama nombre,
+
+189
+00:08:13.580 --> 00:08:15.050
+así que conocemos esta variable nombre
+
+190
+00:08:15.050 --> 00:08:17.160
+y deberíamos estar bastante seguros
+
+191
+00:08:17.160 --> 00:08:19.980
+que esto almacenará un nombre.
+
+192
+00:08:19.980 --> 00:08:22.470
+Con recuento de publicaciones , creo que esto también es
+
+193
+00:08:22.470 --> 00:08:25.747
+un tipo de nombre de variable que se explica a sí mismo,
+
+194
+00:08:25.747 --> 00:08:30.010
+y dice que esto es un recuento de publicaciones,
+
+195
+00:08:30.010 --> 00:08:31.530
+así que es muy descriptivo.
+
+196
+00:08:31.530 --> 00:08:35.050
+Incluso esta frase larga con palabras es descriptiva
+
+197
+00:08:35.050 --> 00:08:36.790
+y si veo esta variable,
+
+198
+00:08:36.790 --> 00:08:39.320
+sabré que contiene una frase larga con palabras.
+
+199
+00:08:39.320 --> 00:08:41.530
+Esto probablemente no es algo que yo usaría
+
+200
+00:08:41.530 --> 00:08:44.240
+porque realmente no describe lo que almacena
+
+201
+00:08:44.240 --> 00:08:45.680
+desde una perspectiva de contenido,
+
+202
+00:08:45.680 --> 00:08:47.130
+así que me desharé de esto.
+
+203
+00:08:48.301 --> 00:08:49.930
+Pero lo principal que quiero que eviten usar,
+
+204
+00:08:49.930 --> 00:08:53.260
+y veo esto mucho con los nuevos desarrolladores,
+
+205
+00:08:53.260 --> 00:08:56.570
+y no es típicamente culpa del desarrollador,
+
+206
+00:08:56.570 --> 00:08:59.180
+he visto una serie de tutoriales
+
+207
+00:08:59.180 --> 00:09:02.040
+que usan algunos nombres de variables horribles,
+
+208
+00:09:02.040 --> 00:09:03.970
+que nunca verían en la industria,
+
+209
+00:09:03.970 --> 00:09:06.820
+así que quiero que puedan ver eso ahora mismo
+
+210
+00:09:06.820 --> 00:09:09.050
+para que no lo copien mas tarde.
+
+211
+00:09:09.050 --> 00:09:12.820
+Digamos que estoy sumando dos números,
+
+212
+00:09:12.820 --> 00:09:16.820
+podría comenzar con una variable llamada x
+
+213
+00:09:16.820 --> 00:09:20.370
+y otra variable llamada y.
+
+214
+00:09:20.370 --> 00:09:21.203
+Ahora bien, esto se consideraría
+
+215
+00:09:21.203 --> 00:09:24.410
+como una práctica bastante pobre.
+
+216
+00:09:24.410 --> 00:09:26.550
+Quizá haya algunas veces donde estén construyendo
+
+217
+00:09:26.550 --> 00:09:28.700
+una clase de muy alto nivel,
+
+218
+00:09:28.700 --> 00:09:32.480
+o función de alto nivel que simplemente agrega dos números
+
+219
+00:09:32.480 --> 00:09:36.726
+y puede usar algunos tipos bastante genéricos de variables,
+
+220
+00:09:36.726 --> 00:09:37.559
+pero en realidad, incluso esa no
+
+221
+00:09:37.559 --> 00:09:40.226
+es una gran manera de hacer esto
+
+222
+00:09:41.647 --> 00:09:44.370
+y la razón es porque si digo
+
+223
+00:09:44.370 --> 00:09:46.120
+que tengo un gran programa,
+
+224
+00:09:46.120 --> 00:09:49.320
+y no está claro lo que representa x,
+
+225
+00:09:49.320 --> 00:09:52.000
+será difícil para mi rastrear
+
+226
+00:09:52.000 --> 00:09:56.140
+qué tipo de valor es x y cómo puedo usarlo.
+
+227
+00:09:56.140 --> 00:09:59.910
+Así que no sé, si x es un número o es una cadena.
+
+228
+00:09:59.910 --> 00:10:02.370
+¿Es una frase, es un booleano?
+
+229
+00:10:02.370 --> 00:10:04.640
+Lo que significa que es un valor verdadero o falso,
+
+230
+00:10:04.640 --> 00:10:07.174
+¿qué es exactamente x?, no tengo idea
+
+231
+00:10:07.174 --> 00:10:10.750
+sin venir a ver como se declaró
+
+232
+00:10:10.750 --> 00:10:12.190
+y muchos de estos ejemplos
+
+233
+00:10:12.190 --> 00:10:14.180
+quizá no tengan mucho sentido en este momento
+
+234
+00:10:14.180 --> 00:10:17.330
+porque estamos viendo un programa de ocho líneas.
+
+235
+00:10:17.330 --> 00:10:20.040
+Sin embargo, la mayoría de los programas tienen miles
+
+236
+00:10:20.040 --> 00:10:22.320
+o incluso decenas de miles de líneas de largo,
+
+237
+00:10:22.320 --> 00:10:25.560
+y si tienen nombres como este,
+
+238
+00:10:25.560 --> 00:10:26.810
+puede ser muy difícil
+
+239
+00:10:26.810 --> 00:10:30.490
+entender exactamente lo que representan.
+
+240
+00:10:30.490 --> 00:10:34.569
+Así que un mejor ejemplo sería algo así como num uno.
+
+241
+00:10:34.569 --> 00:10:36.319
+Y entonces,
+
+242
+00:10:36.319 --> 00:10:38.010
+num dos.
+
+243
+00:10:38.010 --> 00:10:40.430
+Y así, lo que esto hace es que de inmediato
+
+244
+00:10:40.430 --> 00:10:43.420
+describe que esto es un número,
+
+245
+00:10:43.420 --> 00:10:44.990
+y representa uno
+
+246
+00:10:44.990 --> 00:10:48.410
+lo que significa que debería haber un dos o un tres
+
+247
+00:10:48.410 --> 00:10:51.230
+y deberían haber múltiplos de estos elementos,
+
+248
+00:10:51.230 --> 00:10:54.100
+y lo mismo aquí, así que voy,
+
+249
+00:10:54.100 --> 00:10:55.870
+si estoy construyendo ahora el programa
+
+250
+00:10:55.870 --> 00:10:57.790
+y veo esta variable num uno,
+
+251
+00:10:57.790 --> 00:11:01.360
+con bastante seguridad puedo tratarla como un número.
+
+252
+00:11:01.360 --> 00:11:03.940
+Ahora hay otros elementos en la programación
+
+253
+00:11:03.940 --> 00:11:06.150
+que tenemos que hacer para realizar comprobaciones,
+
+254
+00:11:06.150 --> 00:11:08.310
+y revisaremos algunos de esos más adelante
+
+255
+00:11:08.310 --> 00:11:10.140
+para asegurar que en realidad sea un número,
+
+256
+00:11:10.140 --> 00:11:12.810
+pero esto tiene que ver, no tanto con la programación,
+
+257
+00:11:12.810 --> 00:11:16.630
+sino que más bien se ajusta a las mejores prácticas,
+
+258
+00:11:16.630 --> 00:11:20.480
+y para asegurar que sus nombres sean muy descriptivos.
+
+259
+00:11:20.480 --> 00:11:23.210
+Si alguna vez han escuchado sobre los comentarios de código,
+
+260
+00:11:23.210 --> 00:11:24.043
+ahí es donde pueden agregar comentarios
+
+261
+00:11:24.043 --> 00:11:26.043
+que describan el código,
+
+262
+00:11:27.260 --> 00:11:28.093
+y muchas veces lo que encontré es
+
+263
+00:11:28.093 --> 00:11:30.760
+que si mis nombres de variables,
+
+264
+00:11:31.680 --> 00:11:32.830
+y mis nombres de método,
+
+265
+00:11:32.830 --> 00:11:35.530
+y mis nombres de clase son muy descriptivos,
+
+266
+00:11:35.530 --> 00:11:38.610
+o he hecho un buen trabajo al nombrarlos,
+
+267
+00:11:38.610 --> 00:11:39.550
+y describen los tipos
+
+268
+00:11:39.550 --> 00:11:41.970
+de valores que poseen,
+
+269
+00:11:41.970 --> 00:11:44.770
+entonces no necesito tener muchos comentarios de código
+
+270
+00:11:44.770 --> 00:11:46.340
+y de hecho se considera
+
+271
+00:11:46.340 --> 00:11:49.730
+una buena práctica en muchos lenguajes de programación
+
+272
+00:11:49.730 --> 00:11:50.563
+limitar sus comentarios de código
+
+273
+00:11:50.563 --> 00:11:53.760
+para que sus nombres de variables
+
+274
+00:11:53.760 --> 00:11:56.440
+y sus nombres de clase puedan ser descriptivos.
+
+275
+00:11:56.440 --> 00:11:59.210
+Es algo que hay que tener en cuenta lo importante que es
+
+276
+00:11:59.210 --> 00:12:03.580
+asegurar que sus nombres estén muy bien pensados.
+
+277
+00:12:03.580 --> 00:12:04.413
+Uno de mis programadores favoritos
+
+278
+00:12:04.413 --> 00:12:07.170
+es un caballero llamado DHH,
+
+279
+00:12:07.170 --> 00:12:10.340
+es el creador del framework Ruby on Rails.
+
+280
+00:12:10.340 --> 00:12:11.173
+Dijo que en realidad mantiene un
+
+281
+00:12:11.173 --> 00:12:13.590
+tesauro junto a su escritorio
+
+282
+00:12:15.580 --> 00:12:18.770
+porque nombrar es tan crítico para él
+
+283
+00:12:18.770 --> 00:12:22.240
+que trata de encontrar los nombres más descriptivos
+
+284
+00:12:22.240 --> 00:12:24.050
+y si no está contento con el nombre,
+
+285
+00:12:24.050 --> 00:12:27.040
+abre su tesauro y comprueba
+
+286
+00:12:27.040 --> 00:12:29.320
+para ver cuáles podrían ser algunos nombres mejores
+
+287
+00:12:29.320 --> 00:12:30.810
+que sean mas descriptivos.
+
+288
+00:12:30.810 --> 00:12:31.660
+No estoy diciendo que necesiten
+
+289
+00:12:31.660 --> 00:12:33.750
+tener un diccionario junto a tu escritorio,
+
+290
+00:12:33.750 --> 00:12:37.400
+Sin embargo, este es un desarrollador muy talentoso
+
+291
+00:12:37.400 --> 00:12:40.830
+que valora la denominación de variables
+
+292
+00:12:40.830 --> 00:12:41.663
+en diferentes construcciones de código
+
+293
+00:12:41.663 --> 00:12:44.640
+tanto como para hacer eso,
+
+294
+00:12:44.640 --> 00:12:46.240
+así que eso es algo a tener en cuenta
+
+295
+00:12:46.240 --> 00:12:49.860
+siempre que estén construyendo algún tipo de programa.
+
+296
+00:12:49.860 --> 00:12:52.904
+Asegúrense de no solo sacar nombres genéricos por ahí,
+
+297
+00:12:52.904 --> 00:12:54.788
+sino de pensar en ellos,
+
+298
+00:12:54.788 --> 00:12:58.260
+estructurarlos adecuadamente para que se ajusten
+
+299
+00:12:58.260 --> 00:12:59.640
+a la guía de estilo,
+
+300
+00:12:59.640 --> 00:13:03.303
+y que describan los valores que poseen.
+

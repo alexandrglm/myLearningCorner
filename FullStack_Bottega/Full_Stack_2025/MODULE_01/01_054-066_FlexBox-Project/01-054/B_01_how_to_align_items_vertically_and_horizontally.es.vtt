@@ -1,0 +1,1086 @@
+WEBVTT
+
+1
+00:00:01.040 --> 00:00:02.530
+<v Instructor>Vamos a divertirnos</v>
+
+2
+00:00:02.530 --> 00:00:04.760
+con nuestro primer proyecto Flexbox.
+
+3
+00:00:04.760 --> 00:00:06.850
+En esta guía lo que haremos
+
+4
+00:00:06.850 --> 00:00:09.960
+será crear una página de error.
+
+5
+00:00:09.960 --> 00:00:13.180
+Crearemos una de esas páginas de error
+
+6
+00:00:13.180 --> 00:00:15.837
+que ves cuando dice: "Lo sentimos,
+
+7
+00:00:15.837 --> 00:00:19.290
+algo salió mal en esta página".
+
+8
+00:00:19.290 --> 00:00:21.110
+Añadiremos imágenes
+
+9
+00:00:21.110 --> 00:00:22.670
+y usaremos Flexbox para distribuir
+
+10
+00:00:22.670 --> 00:00:24.640
+todo en la página.
+
+11
+00:00:24.640 --> 00:00:26.610
+También usaremos fuentes personalizadas
+
+12
+00:00:26.610 --> 00:00:28.350
+y cosas como esa,
+
+13
+00:00:28.350 --> 00:00:30.270
+para que parezca una página de error real.
+
+14
+00:00:30.270 --> 00:00:33.900
+Es algo que puedes utilizar en proyectos futuros.
+
+15
+00:00:33.900 --> 00:00:37.530
+Aquí, colocaré un enlace a este bot
+
+16
+00:00:37.530 --> 00:00:40.390
+de tumblr en mostrar notas
+
+17
+00:00:40.390 --> 00:00:42.330
+así esta será la imagen
+
+18
+00:00:42.330 --> 00:00:43.240
+que utilizaremos.
+
+19
+00:00:43.240 --> 00:00:47.090
+Haz clic en descargar y eso
+
+20
+00:00:47.090 --> 00:00:50.870
+te dará acceso al archivo raíz.
+
+21
+00:00:50.870 --> 00:00:52.740
+Luego puedes guardar la imagen
+
+22
+00:00:52.740 --> 00:00:57.240
+y colocar esto
+
+23
+00:00:57.240 --> 00:00:58.540
+dentro del proyecto.
+
+24
+00:00:58.540 --> 00:01:01.920
+Podemos poner curso Flexbox
+
+25
+00:01:01.920 --> 00:01:04.320
+y guardarlo aquí
+
+26
+00:01:04.320 --> 00:01:05.900
+para poder moverlo luego
+
+27
+00:01:05.900 --> 00:01:07.780
+a cualquier lugar que quieras.
+
+28
+00:01:07.780 --> 00:01:10.670
+Pero eso te dará la imagen que necesitas.
+
+29
+00:01:10.670 --> 00:01:14.950
+Haré doble clic arriba
+
+30
+00:01:14.950 --> 00:01:16.290
+para volver a nuestra configuración.
+
+31
+00:01:16.290 --> 00:01:18.940
+Ahora, ya tengo gulp en funcionamiento
+
+32
+00:01:18.940 --> 00:01:23.940
+así que cualquier cambio que haga al archivo html
+
+33
+00:01:24.140 --> 00:01:26.320
+será actualizado, así que puedo poner
+
+34
+00:01:26.320 --> 00:01:30.090
+contenido actualizado, seleccionar guardar
+
+35
+00:01:30.090 --> 00:01:33.260
+y puedes ver que se actualiza en el lado derecho.
+
+36
+00:01:33.260 --> 00:01:35.190
+Ahora, con todo esto en marcha,
+
+37
+00:01:35.190 --> 00:01:39.730
+comencemos a construir y a usar Flexbox.
+
+38
+00:01:39.730 --> 00:01:43.980
+Tendremos todo aquí, en la misma página,
+
+39
+00:01:43.980 --> 00:01:46.510
+así que iré a utilizar
+
+40
+00:01:46.510 --> 00:01:48.020
+estilos incrustados.
+
+41
+00:01:48.020 --> 00:01:50.120
+Literalmente no hay diferencia
+
+42
+00:01:50.120 --> 00:01:54.550
+entre usar estilos incrustados y tener una hoja de estilo,
+
+43
+00:01:54.550 --> 00:01:56.630
+como en un proyecto real en que tendrías
+
+44
+00:01:56.630 --> 00:01:58.850
+una hoja de estilo separada y la enlazarías,
+
+45
+00:01:58.850 --> 00:02:01.300
+pero voy a tenerla aquí, en la misma página
+
+46
+00:02:01.300 --> 00:02:04.620
+para que todo esté enfrente de ti.
+
+47
+00:02:04.620 --> 00:02:07.130
+Vamos a darle un título.
+
+48
+00:02:07.130 --> 00:02:10.820
+Digamos página de error y vayamos
+
+49
+00:02:10.820 --> 00:02:13.600
+a añadir contenido al cuerpo html.
+
+50
+00:02:13.600 --> 00:02:17.900
+Crearé primero un Wrapper Div.
+
+51
+00:02:17.900 --> 00:02:20.917
+Escribiré div.error_wrapper
+
+52
+00:02:24.330 --> 00:02:28.780
+y si no usas Visual Studio Code,
+
+53
+00:02:28.780 --> 00:02:31.120
+puede que debas tipearlo de forma manual,
+
+54
+00:02:31.120 --> 00:02:33.130
+ese es otro de los buenos atajos
+
+55
+00:02:33.130 --> 00:02:35.273
+que me gustan de VS Code,
+
+56
+00:02:35.273 --> 00:02:38.700
+que si usas Atom o Sublime creo que
+
+57
+00:02:38.700 --> 00:02:42.010
+el plugin que te permite hacer eso se llama Emmet,
+
+58
+00:02:42.010 --> 00:02:44.500
+pero es una buena forma de poder escribir
+
+59
+00:02:44.500 --> 00:02:47.930
+tu código html sin tener que tipear cada paréntesis
+
+60
+00:02:47.930 --> 00:02:49.620
+y todo eso.
+
+61
+00:02:49.620 --> 00:02:52.640
+Ahora que tenemos nuestro Wrapper Div,
+
+62
+00:02:52.640 --> 00:02:55.620
+crearé otro Div dentro de él
+
+63
+00:02:55.620 --> 00:02:57.900
+y escribiré div.error_heading
+
+64
+00:03:01.970 --> 00:03:04.150
+que será donde colocaremos
+
+65
+00:03:04.150 --> 00:03:07.700
+nuestro encabezado y por ahora vamos con h2
+
+66
+00:03:07.700 --> 00:03:09.673
+y escribiré "Rayos..."
+
+67
+00:03:12.820 --> 00:03:13.890
+y luego podemos ingresar
+
+68
+00:03:13.890 --> 00:03:16.810
+cualquier slogan de error que queramos.
+
+69
+00:03:16.810 --> 00:03:21.810
+Escribiré "Quién sabe cuándo estará disponible
+
+70
+00:03:21.817 --> 00:03:26.817
+esta página, ¿quieres intentar con otra?"
+
+71
+00:03:28.870 --> 00:03:31.510
+y ahora guardaré este archivo
+
+72
+00:03:31.510 --> 00:03:34.160
+y puedes ver que se actualizó
+
+73
+00:03:34.160 --> 00:03:37.310
+y todo funciona correctamente allí.
+
+74
+00:03:37.310 --> 00:03:39.550
+Ahora agreguemos nuestra imagen
+
+75
+00:03:39.550 --> 00:03:42.530
+y esto todavía estará dentro del Wrapper,
+
+76
+00:03:42.530 --> 00:03:44.670
+pero no dentro del encabezado,
+
+77
+00:03:44.670 --> 00:03:46.450
+y puedo escribir imágen
+
+78
+00:03:46.450 --> 00:03:50.577
+y la fuente de esto, debería poder escribir
+
+79
+00:03:50.577 --> 00:03:54.150
+tbot.png
+
+80
+00:03:54.150 --> 00:03:57.350
+y si selecciono guardar, sí, trajo eso
+
+81
+00:03:57.350 --> 00:03:59.780
+y funciona correctamente.
+
+82
+00:03:59.780 --> 00:04:01.870
+Ahora, se que esto se ve horrible
+
+83
+00:04:01.870 --> 00:04:03.600
+y ese es el punto.
+
+84
+00:04:03.600 --> 00:04:08.450
+Por ahora, simplemente añadimos el html sin procesar.
+
+85
+00:04:08.450 --> 00:04:11.280
+Todavía no hemos tocado el código CSS
+
+86
+00:04:11.280 --> 00:04:15.180
+o el código Flexbox y eso es lo que haremos ahora.
+
+87
+00:04:15.180 --> 00:04:18.430
+Si sale un pequeño ícono de error
+
+88
+00:04:18.430 --> 00:04:21.830
+y no ves el bot de tumblr aquí,
+
+89
+00:04:21.830 --> 00:04:24.940
+eso significa que el archivo
+
+90
+00:04:24.940 --> 00:04:27.180
+no está en la ubicación correcta.
+
+91
+00:04:27.180 --> 00:04:30.530
+Si abres tu Explorador de Archivos aquí,
+
+92
+00:04:30.530 --> 00:04:34.700
+deberías ver el archivo tbot.png aquí.
+
+93
+00:04:34.700 --> 00:04:36.600
+Si no, significa que lo has guardado
+
+94
+00:04:36.600 --> 00:04:38.420
+en el lugar incorrecto.
+
+95
+00:04:38.420 --> 00:04:41.260
+Ahora que tenemos eso, comencemos
+
+96
+00:04:41.260 --> 00:04:43.550
+añadiendo nuestro estilo.
+
+97
+00:04:43.550 --> 00:04:46.760
+Vendré aquí arriba
+
+98
+00:04:46.760 --> 00:04:48.380
+y voy a...
+
+99
+00:04:48.380 --> 00:04:50.640
+Ah, debo crear mis estilos incrustados,
+
+100
+00:04:50.640 --> 00:04:54.110
+escribiré "estilo" y ahora aquí adentro
+
+101
+00:04:54.110 --> 00:04:56.450
+es a donde van a ir
+
+102
+00:04:56.450 --> 00:04:58.400
+todos nuestros estilos incrustados Flexbox.
+
+103
+00:04:58.400 --> 00:05:03.400
+Escribiré "cuerpo", y aquí dentro
+
+104
+00:05:03.720 --> 00:05:06.280
+pondremos un color de fondo,
+
+105
+00:05:06.280 --> 00:05:09.130
+así que debo tener algún tipo de color de fondo,
+
+106
+00:05:09.130 --> 00:05:14.130
+y elegiré un dorado suave
+
+107
+00:05:14.320 --> 00:05:16.450
+como color de fondo.
+
+108
+00:05:16.450 --> 00:05:19.400
+Si presiono guardar, esto se actualiza,
+
+109
+00:05:19.400 --> 00:05:22.120
+y funciona bien.
+
+110
+00:05:22.120 --> 00:05:25.600
+Lo próximo es crear nuestros estilos de Wrapper de error,
+
+111
+00:05:25.600 --> 00:05:27.600
+escribiré .error_wrapper
+
+112
+00:05:30.640 --> 00:05:33.220
+y aquí dentro, esto será
+
+113
+00:05:33.220 --> 00:05:36.160
+nuestra primera introducción a Flexbox.
+
+114
+00:05:36.160 --> 00:05:39.430
+Lo primero que debemos hacer
+
+115
+00:05:39.430 --> 00:05:42.730
+es escribir display flex,
+
+116
+00:05:42.730 --> 00:05:46.750
+así que cada vez que trabajes con Flexbox
+
+117
+00:05:46.750 --> 00:05:48.580
+este es, seguramente, el primer elemento
+
+118
+00:05:48.580 --> 00:05:50.610
+que ingresarás.
+
+119
+00:05:50.610 --> 00:05:55.610
+Esto nos dará una herramienta muy especial
+
+120
+00:05:56.028 --> 00:05:59.020
+llamada Flexbox que nos permite,
+
+121
+00:05:59.020 --> 00:06:01.310
+como vieron, en este momento se reajustó.
+
+122
+00:06:01.310 --> 00:06:04.070
+No lo arregló, no lo puso en el estilo
+
+123
+00:06:04.070 --> 00:06:07.720
+que queremos todavía, pero sí ordenó su posición.
+
+124
+00:06:07.720 --> 00:06:12.470
+En vez de usar alguno de los métodos más viejos
+
+125
+00:06:12.470 --> 00:06:15.120
+de presentación, como block o absolute
+
+126
+00:06:15.120 --> 00:06:18.170
+o algo como eso, lo que podemos hacer con Flexbox
+
+127
+00:06:18.170 --> 00:06:22.020
+es, digamos que queremos usar definiciones de estilo
+
+128
+00:06:22.020 --> 00:06:25.590
+Flex aquí, y ese es el modo en que comienzas,
+
+129
+00:06:25.590 --> 00:06:27.610
+declarándolo.
+
+130
+00:06:27.610 --> 00:06:32.400
+Debajo de eso añadiremos algunos otros elementos.
+
+131
+00:06:32.400 --> 00:06:36.070
+Escribiremos justificar contenido
+
+132
+00:06:36.070 --> 00:06:39.310
+y esto se centrará.
+
+133
+00:06:39.310 --> 00:06:43.950
+Luego quiero alinear los elementos
+
+134
+00:06:43.950 --> 00:06:47.260
+y esto también se centrará.
+
+135
+00:06:47.260 --> 00:06:51.300
+Y quiero establecer la altura de esto
+
+136
+00:06:51.300 --> 00:06:55.220
+en 100vh, y esto significa
+
+137
+00:06:55.220 --> 00:06:58.150
+el 100% de la altura de vista,
+
+138
+00:06:58.150 --> 00:07:00.820
+por lo que esto tomará en cuenta
+
+139
+00:07:00.820 --> 00:07:02.920
+diferentes navegadores, y por eso
+
+140
+00:07:02.920 --> 00:07:05.580
+es mejor que solo decir 100%.
+
+141
+00:07:05.580 --> 00:07:10.500
+Luego, debemos escribir flex-direction
+
+142
+00:07:10.500 --> 00:07:14.400
+e iremos con columna,
+
+143
+00:07:14.400 --> 00:07:18.080
+así que guardemos esto y veamos qué hace.
+
+144
+00:07:18.080 --> 00:07:19.920
+Esto se ve mucho mejor.
+
+145
+00:07:19.920 --> 00:07:23.870
+Hagamos vamos a expandir esto un poco más.
+
+146
+00:07:23.870 --> 00:07:26.460
+Puedes ver que va tomando forma.
+
+147
+00:07:26.460 --> 00:07:28.820
+Todavía no llegamos a donde queremos,
+
+148
+00:07:28.820 --> 00:07:31.220
+pero definitivamente se ve mucho mejor.
+
+149
+00:07:31.220 --> 00:07:34.610
+Observa cómo sucede sin que hagamos demasiado.
+
+150
+00:07:34.610 --> 00:07:36.900
+Lo estiraré en todo el ancho.
+
+151
+00:07:36.900 --> 00:07:39.630
+Sin hacer demasiado más que escribir
+
+152
+00:07:39.630 --> 00:07:43.450
+unas líneas de código, podemos hacer
+
+153
+00:07:43.450 --> 00:07:45.620
+algo que solía llevar mucho tiempo.
+
+154
+00:07:45.620 --> 00:07:48.950
+Si nunca has trabajado con versiones más antiguas
+
+155
+00:07:48.950 --> 00:07:52.910
+de CSS o CCS solo, es muy interesante,
+
+156
+00:07:52.910 --> 00:07:56.130
+uno de los conceptos que pensarías
+
+157
+00:07:56.130 --> 00:07:59.390
+que es increíblemente claro, que es
+
+158
+00:07:59.390 --> 00:08:03.000
+alinear elementos en vertical y horizontal,
+
+159
+00:08:03.000 --> 00:08:05.110
+solía requerir bastante código.
+
+160
+00:08:05.110 --> 00:08:08.320
+Cuando me enamoré de Flexbox
+
+161
+00:08:08.320 --> 00:08:11.370
+fue cuando vi que con solo tres o cuatro
+
+162
+00:08:11.370 --> 00:08:15.100
+líneas de código podía alinear elementos en la página
+
+163
+00:08:15.100 --> 00:08:17.770
+y ubicarlos directamente en el centro.
+
+164
+00:08:17.770 --> 00:08:21.670
+Eso es algo que con CSS puro
+
+165
+00:08:21.670 --> 00:08:23.560
+no es exactamente trivial.
+
+166
+00:08:23.560 --> 00:08:27.430
+Minimicemos esto y sigamos.
+
+167
+00:08:27.430 --> 00:08:30.770
+Porque no terminamos aun, todavía tenemos un par de cosas
+
+168
+00:08:30.770 --> 00:08:35.770
+que hacer y luego podremos tener
+
+169
+00:08:35.920 --> 00:08:38.000
+una página de error muy linda.
+
+170
+00:08:38.000 --> 00:08:40.310
+Esto está estirado por allí
+
+171
+00:08:40.310 --> 00:08:43.190
+y ahora que tenemos nuestro Wrapper de error
+
+172
+00:08:43.190 --> 00:08:47.760
+vayamos a lo que se denomina flex-item.
+
+173
+00:08:47.760 --> 00:08:50.230
+Hablaremos sobre esto más adelante,
+
+174
+00:08:50.230 --> 00:08:52.870
+pero lo que tenemos aquí con nuestro Wrapper de error,
+
+175
+00:08:52.870 --> 00:08:57.870
+este es el Wrapper para toda la configuración flex
+
+176
+00:08:59.360 --> 00:09:02.560
+y dentro de él tendremos flex-item,
+
+177
+00:09:02.560 --> 00:09:05.250
+por lo que oirás el término flex-container.
+
+178
+00:09:05.250 --> 00:09:07.850
+Esto es eso, es un contenedor de flex.
+
+179
+00:09:07.850 --> 00:09:11.020
+Luego, dentro de él tenemos elementos flex,
+
+180
+00:09:11.020 --> 00:09:16.020
+y aquí tomaremos nuestro Wrapper de error
+
+181
+00:09:16.040 --> 00:09:20.907
+y tomaremos nuestro error_heading y añadiremos
+
+182
+00:09:23.920 --> 00:09:25.340
+un margen al final,
+
+183
+00:09:25.340 --> 00:09:27.053
+así que margin-bottom.
+
+184
+00:09:28.380 --> 00:09:30.653
+De 42 píxeles.
+
+185
+00:09:32.320 --> 00:09:34.910
+Por último, actualicemos nuestra imagen.
+
+186
+00:09:34.910 --> 00:09:36.600
+Solo tenemos una imagen allí.
+
+187
+00:09:36.600 --> 00:09:39.350
+Si trabajas con una aplicación que tiene
+
+188
+00:09:39.350 --> 00:09:41.090
+múltiples imágenes en la misma página,
+
+189
+00:09:41.090 --> 00:09:43.870
+puedes añadirles una clase o ID y seleccionarlas.
+
+190
+00:09:43.870 --> 00:09:46.070
+Pero por ahora, podemos venir
+
+191
+00:09:46.070 --> 00:09:47.920
+y tomar la imagen misma,
+
+192
+00:09:47.920 --> 00:09:49.550
+no .image.
+
+193
+00:09:49.550 --> 00:09:51.950
+Aquí dentro escribiré
+
+194
+00:09:51.950 --> 00:09:55.380
+ancho y 50%
+
+195
+00:09:56.400 --> 00:09:59.230
+me desharé de esa línea, seleccionaré guardar
+
+196
+00:09:59.230 --> 00:10:00.350
+y aquí vamos.
+
+197
+00:10:00.350 --> 00:10:01.560
+Funciona.
+
+198
+00:10:01.560 --> 00:10:03.920
+Puede que creas que se ve pequeño,
+
+199
+00:10:03.920 --> 00:10:05.650
+pero la razón es que, por lo general,
+
+200
+00:10:05.650 --> 00:10:08.650
+lo verás así.
+
+201
+00:10:08.650 --> 00:10:11.170
+Y puedes ver, cuando está en pantalla completa,
+
+202
+00:10:11.170 --> 00:10:13.150
+se ve hermoso y puedes
+
+203
+00:10:13.150 --> 00:10:15.540
+jugar con los estilos para ver
+
+204
+00:10:15.540 --> 00:10:17.710
+si hay algo más que quieres hacer.
+
+205
+00:10:17.710 --> 00:10:20.160
+Lo único que me gustaría hacer
+
+206
+00:10:20.160 --> 00:10:22.990
+para que esto se vea un poco más profesional,
+
+207
+00:10:22.990 --> 00:10:24.910
+algo de lo que quieras alardear,
+
+208
+00:10:24.910 --> 00:10:27.140
+es personalizar la fuente.
+
+209
+00:10:27.140 --> 00:10:32.140
+Vayamos a fonts.google.com.
+
+210
+00:10:33.650 --> 00:10:35.410
+Y esto nos dará acceso
+
+211
+00:10:35.410 --> 00:10:39.980
+para tomar una fuente mucho más linda.
+
+212
+00:10:39.980 --> 00:10:43.630
+La que he estado usando mucho últimamente
+
+213
+00:10:43.630 --> 00:10:45.690
+se llama Merriweather,
+
+214
+00:10:45.690 --> 00:10:48.100
+así que iré a buscar esto
+
+215
+00:10:48.100 --> 00:10:49.660
+y el modo en que consigues una fuente personalizada
+
+216
+00:10:49.660 --> 00:10:52.020
+es dar clic en seleccionar esta fuente,
+
+217
+00:10:52.020 --> 00:10:55.830
+saldrá aquí con instrucciones
+
+218
+00:10:55.830 --> 00:11:00.830
+y puedo copiar este código, volver a Visual Studio Code.
+
+219
+00:11:01.950 --> 00:11:05.320
+Y arriba de todo para poder colocar esto,
+
+220
+00:11:05.320 --> 00:11:08.920
+justo sobre tus estilos,
+
+221
+00:11:08.920 --> 00:11:10.093
+puedes pegar esto.
+
+222
+00:11:11.030 --> 00:11:15.280
+Y ahora que tenemos eso, podemos acceder
+
+223
+00:11:15.280 --> 00:11:17.310
+exactamente como dijeron aquí.
+
+224
+00:11:17.310 --> 00:11:20.380
+Copiaré esto.
+
+225
+00:11:20.380 --> 00:11:23.620
+Volveré y dentro del cuerpo
+
+226
+00:11:23.620 --> 00:11:27.820
+escribiré font-family: 'Merriweather', serif;
+
+227
+00:11:27.820 --> 00:11:31.300
+Guardar, y ahora si volvemos al buscador
+
+228
+00:11:31.300 --> 00:11:33.250
+y vemos nuestra página de error,
+
+229
+00:11:33.250 --> 00:11:35.110
+puedes ver que se ve mucho más limpia,
+
+230
+00:11:35.110 --> 00:11:37.650
+y es una fuente mucho más profesional.
+
+231
+00:11:37.650 --> 00:11:40.600
+Esto es algo que usaría.
+
+232
+00:11:40.600 --> 00:11:44.900
+De hecho, estoy por integrar esta misma página de error
+
+233
+00:11:44.900 --> 00:11:47.760
+a una aplicación en proceso de producción que tengo.
+
+234
+00:11:47.760 --> 00:11:49.050
+Esa es la razón por la que la elegí,
+
+235
+00:11:49.050 --> 00:11:50.580
+y pensé que sería un proyecto divertido.
+
+236
+00:11:50.580 --> 00:11:55.580
+Revisemos los elementos Flexbox
+
+237
+00:11:55.880 --> 00:11:57.030
+de todo lo que acabamos de hacer.
+
+238
+00:11:57.030 --> 00:12:00.740
+Como ves, no requirió demasiado código
+
+239
+00:12:00.740 --> 00:12:02.330
+para integrar Flexbox.
+
+240
+00:12:02.330 --> 00:12:04.680
+En parte es la razón por la que a la gente le encanta.
+
+241
+00:12:04.680 --> 00:12:08.160
+Con solo crear un contenedor flex aquí.
+
+242
+00:12:08.160 --> 00:12:09.970
+Escribiendo display: flex;
+
+243
+00:12:09.970 --> 00:12:12.250
+justificamos el contenido
+
+244
+00:12:12.250 --> 00:12:13.540
+y lo centramos.
+
+245
+00:12:13.540 --> 00:12:16.320
+Escribimos align: items: center
+
+246
+00:12:16.320 --> 00:12:19.170
+y luego flex-direction: column,
+
+247
+00:12:19.170 --> 00:12:22.090
+y eso hizo el trabajo por nosotros.
+
+248
+00:12:22.090 --> 00:12:23.930
+Ahora, si quieres
+
+249
+00:12:23.930 --> 00:12:26.120
+más detalles sobre esto, no te preocupes.
+
+250
+00:12:26.120 --> 00:12:28.600
+Entraremos en detalles sobre qué representa
+
+251
+00:12:28.600 --> 00:12:31.580
+cada cada elemento en este curso.
+
+252
+00:12:31.580 --> 00:12:34.660
+Lo que quería hacer era comenzar
+
+253
+00:12:34.660 --> 00:12:38.010
+mostrándote cómo con solo una líneas de código
+
+254
+00:12:38.010 --> 00:12:42.210
+Flexbox podemos armar un página que se ve bien
+
+255
+00:12:42.210 --> 00:12:45.960
+solo con eso, y es algo que hago en muchas
+
+256
+00:12:45.960 --> 00:12:49.180
+aplicaciones de producción real.
+
+257
+00:12:49.180 --> 00:12:53.100
+Así que cuando necesites centrar algo
+
+258
+00:12:53.100 --> 00:12:55.750
+directamente en la página, y esto también funcionaría
+
+259
+00:12:55.750 --> 00:12:58.270
+si necesitas centrar algo
+
+260
+00:12:58.270 --> 00:13:00.740
+directamente en un div o algo así,
+
+261
+00:13:00.740 --> 00:13:03.560
+puedes ver este proyecto
+
+262
+00:13:03.560 --> 00:13:06.160
+y ver exactamente cómo hacerlo.
+
+263
+00:13:06.160 --> 00:13:09.440
+Y ahora entraremos en más detalles
+
+264
+00:13:09.440 --> 00:13:12.210
+y veremos qué representa exactemente
+
+265
+00:13:12.210 --> 00:13:13.080
+justificar contenido.
+
+266
+00:13:13.080 --> 00:13:16.160
+¿Qué otras opciones podemos agregarle?
+
+267
+00:13:16.160 --> 00:13:17.810
+Y lo mismo con los elementos de línea
+
+268
+00:13:17.810 --> 00:13:21.070
+y flex-direction y cómo podemos utilizar muchos
+
+269
+00:13:21.070 --> 00:13:23.210
+contenedores flex, y cosas así,
+
+270
+00:13:23.210 --> 00:13:26.030
+pero por ahora, buen trabajo si llegaste hasta aquí.
+
+271
+00:13:26.030 --> 00:13:29.763
+Ya sabes usar Flexbox para centrar elementos en una página.
+

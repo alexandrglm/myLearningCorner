@@ -1,0 +1,538 @@
+WEBVTT
+
+1
+00:00:00.680 --> 00:00:01.513
+<v Instructor>En la última guía</v>
+
+2
+00:00:01.513 --> 00:00:03.660
+instalamos el lenguaje de programación
+
+3
+00:00:03.660 --> 00:00:06.980
+en una máquina Windows, y también abrimos
+
+4
+00:00:06.980 --> 00:00:09.880
+el símbolo del sistema para asegurarnos de que
+
+5
+00:00:09.880 --> 00:00:11.930
+nuestra instalación se realizó adecuadamente.
+
+6
+00:00:11.930 --> 00:00:13.440
+Ahora puedes usar el símbolo del sistema,
+
+7
+00:00:13.440 --> 00:00:15.760
+o puedes usar Windows PowerShell
+
+8
+00:00:15.760 --> 00:00:18.290
+si lo tienes instalado en tu sistema.
+
+9
+00:00:18.290 --> 00:00:20.370
+Estoy usando esto para estos ejemplos
+
+10
+00:00:20.370 --> 00:00:23.300
+pero todo el código que voy a usar
+
+11
+00:00:23.300 --> 00:00:25.710
+es totalmente idéntico,
+
+12
+00:00:25.710 --> 00:00:27.183
+tantos si usas Windows PowerShell,
+
+13
+00:00:27.183 --> 00:00:29.390
+o si usas el símbolo del sistema,
+
+14
+00:00:29.390 --> 00:00:32.660
+o si usas el REPL en un Mac,
+
+15
+00:00:32.660 --> 00:00:34.570
+así puedes seguirme.
+
+16
+00:00:34.570 --> 00:00:36.740
+Esta guía va sobre
+
+17
+00:00:36.740 --> 00:00:41.060
+el uso básico del símbolo del sistema.
+
+18
+00:00:41.060 --> 00:00:44.220
+Así que este es nuestro REPL, y esto nos permite
+
+19
+00:00:44.220 --> 00:00:48.310
+ejecutar código y procesarlo a código Python,
+
+20
+00:00:48.310 --> 00:00:49.940
+y ver la salida.
+
+21
+00:00:49.940 --> 00:00:52.460
+Para empezar, de nuevo,
+
+22
+00:00:52.460 --> 00:00:56.020
+escribimos python, y si estás en un Mac pon python tres,
+
+23
+00:00:56.020 --> 00:00:59.470
+y esto va a iniciar nuestra sesión REPL.
+
+24
+00:00:59.470 --> 00:01:02.500
+Así que lo primero que quiero hacer
+
+25
+00:01:02.500 --> 00:01:05.420
+es mostraros algunas de las cosas que son posibles.
+
+26
+00:01:05.420 --> 00:01:07.130
+Hemos mostrado unas declaraciones print
+
+27
+00:01:07.130 --> 00:01:10.500
+pero también puedes ver el proceso del código normal.
+
+28
+00:01:10.500 --> 00:01:14.750
+Así puedes decir dos más dos y te devuelve cuatro.
+
+29
+00:01:14.750 --> 00:01:16.410
+Así que llamas a cálculos,
+
+30
+00:01:16.410 --> 00:01:20.520
+y puedes realizar todas esas tareas aquí.
+
+31
+00:01:20.520 --> 00:01:24.230
+Pondríais eso en el archivo y ejecutarías eso,
+
+32
+00:01:24.230 --> 00:01:26.280
+como vamos a hacer más adelante en este curso,
+
+33
+00:01:26.280 --> 00:01:31.130
+y como haremos en la versión online REPL IDE
+
+34
+00:01:31.130 --> 00:01:33.880
+de Repl.it, lo podéis hacer aquí.
+
+35
+00:01:33.880 --> 00:01:35.370
+Así que quería mostraros
+
+36
+00:01:35.370 --> 00:01:38.090
+todas las diferentes versiones y variaciones
+
+37
+00:01:38.090 --> 00:01:39.600
+que podéis usar, puedes escoger
+
+38
+00:01:39.600 --> 00:01:42.260
+la que prefiráis.
+
+39
+00:01:42.260 --> 00:01:46.150
+Ahora, extendiendo nuestro conocimiento de uso básico,
+
+40
+00:01:46.150 --> 00:01:51.150
+vamos a ver cómo en Windows podemos salir del REPL.
+
+41
+00:01:51.770 --> 00:01:55.510
+Podría escribir exit, con paréntesis,
+
+42
+00:01:55.510 --> 00:01:57.820
+y eso me sacaría.
+
+43
+00:01:57.820 --> 00:02:02.820
+También podría, si vuelvo a entrar, si presiono Ctrl + Z,
+
+44
+00:02:02.930 --> 00:02:07.190
+y luego retroceso, eso también me sacaría,
+
+45
+00:02:07.190 --> 00:02:09.100
+solo en caso de que si me seguís
+
+46
+00:02:09.100 --> 00:02:13.090
+y nunca habéis salido de Python REPL.
+
+47
+00:02:13.090 --> 00:02:15.620
+Ahora estamos dentro de nuevo, y ahora
+
+48
+00:02:15.620 --> 00:02:18.450
+vamos a ver algunos ejemplos,
+
+49
+00:02:18.450 --> 00:02:22.820
+para que os familiaricéis con cómo se usa este REPL.
+
+50
+00:02:22.820 --> 00:02:25.810
+Ahora si quiero escribir algún tipo de condicional,
+
+51
+00:02:25.810 --> 00:02:28.550
+y no os preocupéis si no entendéis este código,
+
+52
+00:02:28.550 --> 00:02:30.770
+os estoy mostrando un poco
+
+53
+00:02:30.770 --> 00:02:32.900
+lo que haremos más tarde,
+
+54
+00:02:32.900 --> 00:02:35.670
+pero necesito poder mostraros algo de código
+
+55
+00:02:35.670 --> 00:02:38.530
+para que veamos como usar REPL.
+
+56
+00:02:38.530 --> 00:02:41.110
+Así que voy a hacer una declaración básica,
+
+57
+00:02:41.110 --> 00:02:46.110
+así que voy a decir "If true:" y presiono retroceso.
+
+58
+00:02:46.630 --> 00:02:48.770
+Ahora lo que quiero que veáis es
+
+59
+00:02:48.770 --> 00:02:53.770
+que REPL te permite tener códigos multilineales.
+
+60
+00:02:53.920 --> 00:02:57.040
+Así que aquí, la forma en que lo aborda Python
+
+61
+00:02:57.040 --> 00:02:59.830
+es que puedes ver nuestros tres símbolos mayor que,
+
+62
+00:02:59.830 --> 00:03:02.200
+y luego puedes ver tres puntos.
+
+63
+00:03:02.200 --> 00:03:05.350
+Lo que eso significa es que Python espera
+
+64
+00:03:05.350 --> 00:03:07.380
+que escribamos más código.
+
+65
+00:03:07.380 --> 00:03:10.400
+Y entonces, solo para daros una pequeña vista previa de
+
+66
+00:03:10.400 --> 00:03:14.340
+cómo funcionan los condicionales, necesitamos más espacios,
+
+67
+00:03:14.340 --> 00:03:17.750
+y podéis darle más espacios así,
+
+68
+00:03:17.750 --> 00:03:21.680
+digo print "hola" y esto es lo que ocurrirá,
+
+69
+00:03:21.680 --> 00:03:24.750
+dado que true es siempre cierto, esto ejecutará
+
+70
+00:03:24.750 --> 00:03:26.600
+y esto va a imprimir "hola".
+
+71
+00:03:26.600 --> 00:03:30.800
+Así que si presiono retroceso y luego otra vez,
+
+72
+00:03:30.800 --> 00:03:32.900
+puedes ver que ha imprimido "hola"
+
+73
+00:03:32.900 --> 00:03:34.970
+justo como esperaríamos.
+
+74
+00:03:34.970 --> 00:03:39.970
+Así que esta es la forma básica de usar el código multilínea
+
+75
+00:03:40.070 --> 00:03:42.730
+dentro de una interfaz de comando de líneas.
+
+76
+00:03:42.730 --> 00:03:45.360
+Ahora la siguiente tarea que haremos,
+
+77
+00:03:45.360 --> 00:03:49.300
+es que vamos a ver cómo importar otros módulos,
+
+78
+00:03:49.300 --> 00:03:52.590
+hay otros módulos en Python
+
+79
+00:03:52.590 --> 00:03:54.700
+que puedes llamar
+
+80
+00:03:54.700 --> 00:03:56.690
+cuando necesitas funcionalidades adicionales.
+
+81
+00:03:56.690 --> 00:03:58.310
+Ahora no vamos a verlos todos
+
+82
+00:03:58.310 --> 00:04:02.010
+porque es bastante amplio y hay algunos de terceros
+
+83
+00:04:02.010 --> 00:04:03.830
+para los que necesitarás llamas
+
+84
+00:04:03.830 --> 00:04:06.040
+un diferente gestor de paquetes para instalarlos,
+
+85
+00:04:06.040 --> 00:04:09.180
+vamos a tener una sección entera dedicada a ello.
+
+86
+00:04:09.180 --> 00:04:11.070
+Así que por ahora, voy a mostraros
+
+87
+00:04:11.070 --> 00:04:13.690
+cómo usar uno para que cuando lo use
+
+88
+00:04:13.690 --> 00:04:17.620
+en el curso no se sienta raro.
+
+89
+00:04:17.620 --> 00:04:19.320
+La forma de hacer esto es
+
+90
+00:04:19.320 --> 00:04:21.420
+escribes la palabra import
+
+91
+00:04:21.420 --> 00:04:24.200
+Así que voy a decir: import math.
+
+92
+00:04:24.200 --> 00:04:26.530
+Así que esto va a ir al código
+
+93
+00:04:26.530 --> 00:04:30.020
+de Python y va a coger
+
+94
+00:04:30.020 --> 00:04:33.640
+está librería extra llamada librería de matemáticas.
+
+95
+00:04:33.640 --> 00:04:36.770
+Y si le doy a retroceso y no hay errores,
+
+96
+00:04:36.770 --> 00:04:39.030
+eso significa que ha encontrado la librería
+
+97
+00:04:39.030 --> 00:04:41.290
+y podemos acceder a ella.
+
+98
+00:04:41.290 --> 00:04:44.260
+Así que podría hacer algo como decir: math.sqrt
+
+99
+00:04:46.800 --> 00:04:51.800
+y luego pasar al paréntesis, código como 25, número 25.
+
+100
+00:04:52.270 --> 00:04:55.270
+Si le doy a retroceso, entonces la librería de matemáticas
+
+101
+00:04:55.270 --> 00:04:59.230
+tiene una función de raíz cuadrada y le hemos dado un valor,
+
+102
+00:04:59.230 --> 00:05:02.580
+de forma que nos devuelve el resultado de eso, que es cinco.
+
+103
+00:05:02.580 --> 00:05:06.800
+Así es como puedes importar otra librería.
+
+104
+00:05:06.800 --> 00:05:09.050
+Ahora lo último que vamos a ver
+
+105
+00:05:09.050 --> 00:05:11.120
+es la capacidad de conseguir ayuda.
+
+106
+00:05:11.120 --> 00:05:14.280
+Muchas veces cuando tengo preguntas
+
+107
+00:05:14.280 --> 00:05:16.700
+sobre una función que voy a usar,
+
+108
+00:05:16.700 --> 00:05:20.060
+o simplemente quiero conocer la documentación,
+
+109
+00:05:20.060 --> 00:05:21.210
+y no la quiero ver en Google,
+
+110
+00:05:21.210 --> 00:05:23.980
+simplemente quiero hacerlo mientras trabajo aquí.
+
+111
+00:05:23.980 --> 00:05:27.400
+Por suerte, existe una función de ayuda completa
+
+112
+00:05:27.400 --> 00:05:30.440
+ya dentro de la interfaz del linea de comandos.
+
+113
+00:05:30.440 --> 00:05:35.440
+Así que escribo help, y paso a aquello de lo que quiero
+
+114
+00:05:35.750 --> 00:05:40.750
+ayuda, así que pongo math.sqrt, justo así,
+
+115
+00:05:41.150 --> 00:05:44.350
+y le doy a retroceso, podéis ver que sale
+
+116
+00:05:44.350 --> 00:05:47.720
+y me trae la documentación de la raíz cuadrada.
+
+117
+00:05:47.720 --> 00:05:49.660
+Esta es una función muy básica,
+
+118
+00:05:49.660 --> 00:05:52.190
+así que es muy fácil que vuelva y te diga
+
+119
+00:05:52.190 --> 00:05:54.580
+la función raíz cuadrada te proporciona
+
+120
+00:05:54.580 --> 00:05:56.950
+la raíz cuadrada de X.
+
+121
+00:05:56.950 --> 00:05:59.910
+Así que esto me dice es que la forma de llamar a esto
+
+122
+00:05:59.910 --> 00:06:03.200
+es que tengo el nombre de la función, introduzco un valor,
+
+123
+00:06:03.200 --> 00:06:08.200
+y luego describe qué hará el comportamiento.
+
+124
+00:06:08.230 --> 00:06:12.700
+Así que resumiendo, hemos visto el uso básico de
+
+125
+00:06:12.700 --> 00:06:16.930
+la interfaz de lineas de comando, también llamada REPL.
+
+126
+00:06:16.930 --> 00:06:19.390
+Hemos visto cómo ejecutar comandos,
+
+127
+00:06:19.390 --> 00:06:22.630
+hemos visto cómo ejecutar comandos multilínea,
+
+128
+00:06:22.630 --> 00:06:24.925
+hemos visto como importar librerías
+
+129
+00:06:24.925 --> 00:06:27.080
+de terceros, o debería decir
+
+130
+00:06:27.080 --> 00:06:31.510
+librerías que están ya instaladas en el sistema,
+
+131
+00:06:31.510 --> 00:06:33.630
+entraremos en las librerías de terceros más tarde,
+
+132
+00:06:33.630 --> 00:06:36.110
+y hemos visto cómo podemos conseguir ayuda
+
+133
+00:06:36.110 --> 00:06:38.900
+para tener documentación adicional
+
+134
+00:06:38.900 --> 00:06:40.913
+sobre las funciones con las que trabajamos.
+

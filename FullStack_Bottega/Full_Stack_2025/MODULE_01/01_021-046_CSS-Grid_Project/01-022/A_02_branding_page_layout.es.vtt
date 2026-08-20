@@ -1,0 +1,562 @@
+WEBVTT
+
+1
+00:00:00.900 --> 00:00:01.733
+<v Instructor>En esta guía,</v>
+
+2
+00:00:01.733 --> 00:00:04.950
+Vamos a empezar a construir esta página,
+
+3
+00:00:04.950 --> 00:00:06.780
+y vamos a usar varias
+
+4
+00:00:06.780 --> 00:00:09.517
+tecnologías distintas para lograrlo.
+
+5
+00:00:09.517 --> 00:00:12.640
+Ahora vamos a ignorar la barra de navegación.
+
+6
+00:00:12.640 --> 00:00:14.680
+En un proyecto futuro, veremos
+
+7
+00:00:14.680 --> 00:00:16.320
+cómo podemos construir una barra de navegación,
+
+8
+00:00:16.320 --> 00:00:19.410
+pero por ahora en esta introducción básica,
+
+9
+00:00:19.410 --> 00:00:23.460
+Yo solamente quiero centrarme en los principios básicos
+
+10
+00:00:23.460 --> 00:00:27.180
+que rodean a CSS Grid y como podemos usarlo.
+
+11
+00:00:27.180 --> 00:00:29.790
+Ahora, si miramos, podemos ver que
+
+12
+00:00:29.790 --> 00:00:32.680
+empezando aquí en Branding Guidelines
+
+13
+00:00:32.680 --> 00:00:35.310
+y bajando por la página,
+
+14
+00:00:35.310 --> 00:00:39.020
+podemos ver que el contenido está dentro de un contenedor.
+
+15
+00:00:39.020 --> 00:00:42.210
+Así que hay un contenedor CSS
+
+16
+00:00:42.210 --> 00:00:45.650
+que va desde aquí hasta más o menos aquí en la página.
+
+17
+00:00:45.650 --> 00:00:48.110
+Así que pienso que probablemente una
+
+18
+00:00:48.110 --> 00:00:52.070
+de las primeras cosas que debemos hacer es construir eso.
+
+19
+00:00:52.070 --> 00:00:53.610
+Ahora, voy a hacer algo
+
+20
+00:00:53.610 --> 00:00:58.120
+que puede parecer un poco extraño para un curso de CSS Grid,
+
+21
+00:00:58.120 --> 00:00:59.880
+y es que te mostraré
+
+22
+00:00:59.880 --> 00:01:04.380
+cómo puedes usar CSS Grid y Flexbox al mismo tiempo.
+
+23
+00:01:04.380 --> 00:01:07.600
+Y eso puede parecer un poco contradictorio,
+
+24
+00:01:07.600 --> 00:01:09.570
+pero la razón por la que lo hago
+
+25
+00:01:09.570 --> 00:01:13.750
+es porque he visto muchas preguntas diferentes,
+
+26
+00:01:13.750 --> 00:01:16.560
+especialmente de estudiantes y desarrolladores
+
+27
+00:01:16.560 --> 00:01:19.410
+que lo están aprendiendo, y que piensan que se trata de
+
+28
+00:01:19.410 --> 00:01:24.170
+herramientas excluyentes, CSS Grid frente a Flexbox,
+
+29
+00:01:24.170 --> 00:01:25.470
+y ese no es el caso.
+
+30
+00:01:25.470 --> 00:01:29.010
+Entonces, siempre que me hace la pregunta un estudiante o
+
+31
+00:01:29.010 --> 00:01:33.230
+un desarrollador: ¿debo usar CSS Grid o debo usar Flexbox?
+
+32
+00:01:33.230 --> 00:01:36.250
+Mi pregunta es si estás haciendo un sándwich:
+
+33
+00:01:36.250 --> 00:01:37.820
+¿vas a usar crema de cacahuete,
+
+34
+00:01:37.820 --> 00:01:39.370
+o vas a usar mermelada?
+
+35
+00:01:39.370 --> 00:01:42.860
+¿Por qué no puedes simplemente ponerlas juntas?
+
+36
+00:01:42.860 --> 00:01:45.810
+Y así, en esta aplicación, eso es lo que vamos a hacer.
+
+37
+00:01:45.810 --> 00:01:50.040
+En realidad, vamos a combinar el uso de Flexbox
+
+38
+00:01:50.040 --> 00:01:52.360
+en ciertos lugares y luego Grid en otros.
+
+39
+00:01:52.360 --> 00:01:54.730
+Y lo primero que haré es mostrarles
+
+40
+00:01:54.730 --> 00:01:59.280
+cómo envolver todo este contenedor
+
+41
+00:01:59.280 --> 00:02:03.080
+en Flexbox, y luego, veremos cómo podemos colocar
+
+42
+00:02:03.080 --> 00:02:08.080
+los componentes de CSS Grid dentro de éste.
+
+43
+00:02:08.200 --> 00:02:10.870
+Ahora, en futuros proyectos, les mostraré, obviamente,
+
+44
+00:02:10.870 --> 00:02:15.870
+cómo puedes usar CSS Grid para envolver una página completa,
+
+45
+00:02:16.420 --> 00:02:20.420
+y cuanto más vayas y utilices ambas herramientas,
+
+46
+00:02:20.420 --> 00:02:23.330
+verás cuándo querrás usar una en lugar de la otra,
+
+47
+00:02:23.330 --> 00:02:27.030
+así que comencemos con esto.
+
+48
+00:02:27.030 --> 00:02:29.270
+En la última guía, en Show Notes,
+
+49
+00:02:29.270 --> 00:02:32.070
+deberían haber obtenido el código de inicio aquí.
+
+50
+00:02:32.070 --> 00:02:34.550
+Es bastante básico, y en esta guía
+
+51
+00:02:34.550 --> 00:02:37.220
+voy a mantener todos nuestros estilos incrustados aquí.
+
+52
+00:02:37.220 --> 00:02:39.400
+En proyectos posteriores, los moveré
+
+53
+00:02:39.400 --> 00:02:41.850
+a una hoja de estilo externa,
+
+54
+00:02:41.850 --> 00:02:44.490
+pero ahora mismo podemos tener todo esto frente a nosotros.
+
+55
+00:02:44.490 --> 00:02:46.440
+Estoy trayendo un par de fuentes,
+
+56
+00:02:46.440 --> 00:02:50.380
+así que traigo la fuente Lato o Lato font
+
+57
+00:02:50.380 --> 00:02:52.220
+y la fuente PT Serif.
+
+58
+00:02:52.220 --> 00:02:54.930
+Son dos que vamos a utilizar aquí.
+
+59
+00:02:54.930 --> 00:02:57.950
+Y luego configuro cómo vamos a usar esas fuentes.
+
+60
+00:02:57.950 --> 00:03:01.120
+Así que pueden comenzar con este código de inicio,
+
+61
+00:03:01.120 --> 00:03:03.140
+y ahora podemos comenzar a construir
+
+62
+00:03:03.140 --> 00:03:07.710
+el código que usaremos para nuestro contenido.
+
+63
+00:03:07.710 --> 00:03:11.180
+Así que comenzando por el cuerpo, aquí en el cuerpo,
+
+64
+00:03:11.180 --> 00:03:13.633
+voy a crear una clase de contenedor.
+
+65
+00:03:15.530 --> 00:03:17.270
+Y dentro de esa clase de contenedor,
+
+66
+00:03:17.270 --> 00:03:20.950
+ahí es donde irá todo el contenido
+
+67
+00:03:20.950 --> 00:03:21.800
+de esta aplicación.
+
+68
+00:03:21.800 --> 00:03:22.960
+Así que voy a dar algo de espacio
+
+69
+00:03:22.960 --> 00:03:25.990
+sólo para asegurarme de que no nos encontremos con ningún
+
+70
+00:03:25.990 --> 00:03:29.240
+problema al no envolver nuestras divs o algo por el estilo.
+
+71
+00:03:29.240 --> 00:03:30.370
+Ahora dentro de aquí,
+
+72
+00:03:30.370 --> 00:03:33.270
+también voy a crear una div anidada.
+
+73
+00:03:33.270 --> 00:03:37.000
+Así que voy a crear lo que se llama,
+
+74
+00:03:37.000 --> 00:03:40.960
+voy a llamar a una div de envoltura de contenido.
+
+75
+00:03:40.960 --> 00:03:44.220
+Y todo irá dentro de aquí también.
+
+76
+00:03:44.220 --> 00:03:46.080
+Ahora, la razón por la que hago esto
+
+77
+00:03:46.080 --> 00:03:49.400
+es porque quiero poder tener un contenedor
+
+78
+00:03:49.400 --> 00:03:53.400
+que use Flexbox, para poder centrar
+
+79
+00:03:53.400 --> 00:03:57.420
+esta envoltura de contenido en la página.
+
+80
+00:03:57.420 --> 00:03:59.820
+Así que ahora mismo no tenemos ningún contenido para eso,
+
+81
+00:03:59.820 --> 00:04:02.490
+así que vamos y tomemos algo de esto.
+
+82
+00:04:02.490 --> 00:04:04.490
+Tenemos nuestras Branding Guidelines
+
+83
+00:04:04.490 --> 00:04:06.450
+y todo este contenido aquí,
+
+84
+00:04:06.450 --> 00:04:10.970
+así que puedo copiar simplemente todo esto, cambiar
+
+85
+00:04:10.970 --> 00:04:15.970
+nuevamente, pegarlo directamente y envolvamos esto.
+
+86
+00:04:18.640 --> 00:04:21.530
+Así que dentro de Branding Guidelines,
+
+87
+00:04:21.530 --> 00:04:24.096
+hagamos de esto una etiqueta h3,
+
+88
+00:04:24.096 --> 00:04:26.900
+o una etiqueta h2 en realidad, sí.
+
+89
+00:04:26.900 --> 00:04:28.853
+Así que voy a hacer una etiqueta h2,
+
+90
+00:04:32.518 --> 00:04:35.310
+y luego aquí, deshacernos de esto.
+
+91
+00:04:35.310 --> 00:04:38.070
+Nuestro autocompletado trató de ayudarnos un poco.
+
+92
+00:04:38.070 --> 00:04:39.940
+Y luego cada uno de estos elementos
+
+93
+00:04:39.940 --> 00:04:42.930
+será una etiqueta de párrafo.
+
+94
+00:04:42.930 --> 00:04:45.873
+Así que haré una etiqueta de párrafo aquí,
+
+95
+00:04:47.222 --> 00:04:48.530
+y luego, al final de la línea,
+
+96
+00:04:48.530 --> 00:04:51.100
+terminaremos esa etiqueta de párrafo.
+
+97
+00:04:51.100 --> 00:04:52.920
+Y luego haremos lo mismo
+
+98
+00:04:52.920 --> 00:04:55.010
+para cada uno de estos otros.
+
+99
+00:04:55.010 --> 00:04:56.963
+Así que la etiqueta del párrafo aquí.
+
+100
+00:04:58.830 --> 00:05:00.340
+A veces, el autocompletado es útil
+
+101
+00:05:00.340 --> 00:05:03.110
+y otras veces en realidad te frena un poco.
+
+102
+00:05:03.110 --> 00:05:04.110
+Aquí vamos.
+
+103
+00:05:04.110 --> 00:05:06.590
+Y sólo uno más.
+
+104
+00:05:06.590 --> 00:05:11.590
+Así que etiqueta de párrafo, y luego vamos a cerrarla.
+
+105
+00:05:13.920 --> 00:05:18.010
+Bien, eso nos va a dar nuestro contenido inicial.
+
+106
+00:05:18.010 --> 00:05:21.110
+Vamos a ver qué aspecto tiene.
+
+107
+00:05:21.110 --> 00:05:24.370
+Y sí, entonces tenemos lo que estamos buscando aquí,
+
+108
+00:05:24.370 --> 00:05:26.386
+e incluso tenemos nuestras fuentes personalizadas
+
+109
+00:05:26.386 --> 00:05:27.461
+que trajimos.
+
+110
+00:05:27.461 --> 00:05:29.910
+Así que hasta ahora, todo bien.
+
+111
+00:05:29.910 --> 00:05:34.350
+Ahora vamos a crear algunos estilos para nuestro contenedor
+
+112
+00:05:34.350 --> 00:05:36.440
+y luego nuestros contenedores de contenido.
+
+113
+00:05:36.440 --> 00:05:37.903
+Así que subiré aquí,
+
+114
+00:05:39.750 --> 00:05:41.560
+y este contenedor estará
+
+115
+00:05:41.560 --> 00:05:44.290
+donde estamos implementando Flexbox,
+
+116
+00:05:44.290 --> 00:05:48.320
+así que diremos "display Flex" y será muy básico.
+
+117
+00:05:48.320 --> 00:05:53.270
+Simplemente va a justificar el contenido: centrar.
+
+118
+00:05:54.700 --> 00:05:58.200
+Y ahora, dentro de este contenedor de contenido,
+
+119
+00:05:58.200 --> 00:05:59.640
+lo que quiero hacer es
+
+120
+00:06:01.540 --> 00:06:04.500
+que esto es lo que va a definir el ancho.
+
+121
+00:06:04.500 --> 00:06:06.820
+Así que esto también va a ser bastante básico.
+
+122
+00:06:06.820 --> 00:06:11.480
+Así que aquí voy a decir que el ancho será de 660 píxeles,
+
+123
+00:06:11.480 --> 00:06:13.750
+que es lo que tenemos con DailySmarty.
+
+124
+00:06:13.750 --> 00:06:16.030
+Si presiono guardar ahora y regreso,
+
+125
+00:06:16.030 --> 00:06:19.680
+puedes ver que esto ha envuelto todo de manera correcta.
+
+126
+00:06:19.680 --> 00:06:24.590
+Así que al confrontar la versión final,
+
+127
+00:06:24.590 --> 00:06:27.570
+puedes ver que todo está saliendo bien.
+
+128
+00:06:27.570 --> 00:06:29.630
+Así que eso es todo lo que vamos a hacer en este video.
+
+129
+00:06:29.630 --> 00:06:33.230
+En realidad, solo se trata de crear el diseño
+
+130
+00:06:33.230 --> 00:06:37.740
+y también de brindarte información muy importante,
+
+131
+00:06:37.740 --> 00:06:40.120
+ya que no es necesario elegir
+
+132
+00:06:40.120 --> 00:06:43.450
+entre usar Flexbox o CSS Grid,
+
+133
+00:06:43.450 --> 00:06:45.890
+sino que se pueden usar indistintamente
+
+134
+00:06:45.890 --> 00:06:48.850
+y cada una tiene sus fortalezas.
+
+135
+00:06:48.850 --> 00:06:50.760
+Y a medida que avancemos en estos proyectos,
+
+136
+00:06:50.760 --> 00:06:54.400
+verán dónde Grid es muy buena en ciertas cosas
+
+137
+00:06:54.400 --> 00:06:56.350
+y Flexbox es excelente en otras,
+
+138
+00:06:56.350 --> 00:06:59.030
+y eso te permitirá elegir la herramienta adecuada
+
+139
+00:06:59.030 --> 00:07:02.100
+para el trabajo correcto, y en la próxima guía, vamos a
+
+140
+00:07:02.100 --> 00:07:05.233
+empezar a construir nuestro primer contenedor de cuadrícula.
+

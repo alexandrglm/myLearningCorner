@@ -1,0 +1,522 @@
+WEBVTT
+
+1
+00:00:00.900 --> 00:00:02.260
+<v Instructor>En esta guía de flexbox,</v>
+
+2
+00:00:02.260 --> 00:00:05.600
+veremos cómo podemos usar las propiedades flex shrink y
+
+3
+00:00:05.600 --> 00:00:10.600
+flex grow dentro de nuestro archivo HTML.
+
+4
+00:00:10.970 --> 00:00:14.253
+Así que ahora mismo, tenemos nuestras reglas de flex basis
+
+5
+00:00:14.253 --> 00:00:15.836
+preexistentes aquí.
+
+6
+00:00:16.830 --> 00:00:19.340
+Y si recuerdan la última Guía,
+
+7
+00:00:19.340 --> 00:00:23.450
+vimos cómo flex basis nos da la capacidad de definir
+
+8
+00:00:23.450 --> 00:00:28.250
+un tamaño de línea base para cada uno de estos elementos.
+
+9
+00:00:28.250 --> 00:00:32.820
+Y luego, a medida que crece y se encoge, flex basis
+
+10
+00:00:32.820 --> 00:00:36.770
+no cambia, pero sí dicta automáticamente
+
+11
+00:00:36.770 --> 00:00:39.887
+el porcentaje del elemento madre que estos elementos
+
+12
+00:00:39.887 --> 00:00:41.490
+van a utilizar.
+
+13
+00:00:41.490 --> 00:00:45.900
+Y puedes pensar, y cuando te muestro cómo funciona
+
+14
+00:00:45.900 --> 00:00:49.180
+flex grow, puedes pensar que flex grow y flex basis
+
+15
+00:00:49.180 --> 00:00:50.680
+son lo mismo.
+
+16
+00:00:50.680 --> 00:00:53.210
+Y entonces te voy a mostrar por qué aquí.
+
+17
+00:00:53.210 --> 00:00:57.570
+Voy a comentar cada uno de nuestros elementos basis.
+
+18
+00:00:57.570 --> 00:00:59.610
+Y voy a presionar guardar.
+
+19
+00:00:59.610 --> 00:01:02.170
+Y así volvemos a donde estábamos al principio.
+
+20
+00:01:02.170 --> 00:01:06.010
+Pero ahora vamos a usar nuestra propiedad flex grow.
+
+21
+00:01:06.010 --> 00:01:08.620
+Entonces, aquí voy a mantener nuestros mismos números,
+
+22
+00:01:08.620 --> 00:01:10.830
+pero Flex Grow no usa pixeles.
+
+23
+00:01:10.830 --> 00:01:13.440
+En lugar de eso, sólo utiliza un número.
+
+24
+00:01:13.440 --> 00:01:16.680
+Y así, flex grow usa esencialmente un múltiplo.
+
+25
+00:01:16.680 --> 00:01:19.570
+Así que tenemos que flex grow aquí es 4.
+
+26
+00:01:19.570 --> 00:01:22.713
+Y luego voy a hacer que este sea 1.
+
+27
+00:01:23.730 --> 00:01:26.690
+Y entonces éste será 2.
+
+28
+00:01:26.690 --> 00:01:29.100
+Y así, lo que esto nos permitirá hacer
+
+29
+00:01:29.100 --> 00:01:33.870
+es ver la diferencia entre flex basis y flex grow.
+
+30
+00:01:33.870 --> 00:01:36.100
+Si guardo esto, pueden pensar
+
+31
+00:01:36.100 --> 00:01:38.960
+que casi hemos replicado lo que teníamos
+
+32
+00:01:38.960 --> 00:01:40.390
+en flex basis.
+
+33
+00:01:40.390 --> 00:01:43.600
+Pero ese no es totalmente cierto, y les mostraré por qué.
+
+34
+00:01:43.600 --> 00:01:48.400
+Si venimos aquí, haré doble clic en esto.
+
+35
+00:01:48.400 --> 00:01:52.000
+Y puedes ver que esto es en realidad más grande
+
+36
+00:01:52.000 --> 00:01:53.810
+que 400 pixeles.
+
+37
+00:01:53.810 --> 00:01:57.530
+Y así, si vengo aquí al panel de inspección,
+
+38
+00:01:57.530 --> 00:02:01.320
+si en este bloque 1, que he seleccionado.
+
+39
+00:02:01.320 --> 00:02:06.150
+Si quito flexbox grow 4, puedes ver
+
+40
+00:02:06.150 --> 00:02:07.200
+que se contrae completamente.
+
+41
+00:02:07.200 --> 00:02:11.650
+Y luego, si vuelvo a poner flex basis en 400,
+
+42
+00:02:11.650 --> 00:02:13.130
+puedes ver que se agranda de nuevo.
+
+43
+00:02:13.130 --> 00:02:17.380
+Pero es diferente a cuando flexbox grow está activado.
+
+44
+00:02:17.380 --> 00:02:19.500
+Y si combinas ambos, entonces ocupa
+
+45
+00:02:19.500 --> 00:02:21.240
+aún más espacio.
+
+46
+00:02:21.240 --> 00:02:22.980
+¿Entonces cuál es la diferencia?
+
+47
+00:02:22.980 --> 00:02:26.300
+Bueno, la diferencia clave es que flex grow
+
+48
+00:02:26.300 --> 00:02:31.300
+es la propiedad que define la proporción de la rapidez con
+
+49
+00:02:31.710 --> 00:02:36.710
+que crece uno de los elementos en relación con los demás.
+
+50
+00:02:37.110 --> 00:02:40.550
+Entonces, cuando digo que flex grow es 4.
+
+51
+00:02:40.550 --> 00:02:42.780
+Y eliminemos la base aquí por un segundo.
+
+52
+00:02:42.780 --> 00:02:47.140
+Cuando digo flex grow 4, esto significa que este elemento,
+
+53
+00:02:47.140 --> 00:02:50.660
+este bloque 1, crecerá cuatro veces más rápido
+
+54
+00:02:50.660 --> 00:02:54.940
+que un elemento que, por ejemplo, el número dos aquí,
+
+55
+00:02:54.940 --> 00:02:57.830
+que tiene un flex grow de 1.
+
+56
+00:02:57.830 --> 00:03:01.560
+Así que el elemento de crecimiento o la propiedad grow
+
+57
+00:03:01.560 --> 00:03:06.560
+dictan la velocidad a la que un elemento crece.
+
+58
+00:03:06.600 --> 00:03:09.000
+Así que esa es la clave de la diferencia.
+
+59
+00:03:09.000 --> 00:03:12.390
+Ahora, veamos también, ya que tenemos flex grow,
+
+60
+00:03:12.390 --> 00:03:15.150
+y hemos quitado la base.
+
+61
+00:03:15.150 --> 00:03:19.220
+Vayamos y echemos un vistazo a flex shrink.
+
+62
+00:03:19.220 --> 00:03:22.280
+Por lo tanto, voy a comentar todo esto,
+
+63
+00:03:22.280 --> 00:03:24.713
+y escribir flex shrink.
+
+64
+00:03:26.180 --> 00:03:29.000
+Y ahora, éste es un poco al revés.
+
+65
+00:03:29.000 --> 00:03:32.870
+Así que esto es un poco lo contrario de los demás elementos.
+
+66
+00:03:32.870 --> 00:03:35.740
+Funciona de la misma manera que flex grow,
+
+67
+00:03:35.740 --> 00:03:38.460
+excepto que va en dirección contraria.
+
+68
+00:03:38.460 --> 00:03:43.460
+Así que si digo que flex shrink aquí es 2, y luego pongo 1
+
+69
+00:03:45.600 --> 00:03:48.270
+de este lado, porque realmente no tiene sentido
+
+70
+00:03:48.270 --> 00:03:51.610
+si todos fueran iguales.
+
+71
+00:03:51.610 --> 00:03:55.120
+Porque, recuerden, son múltiplos el uno del otro.
+
+72
+00:03:55.120 --> 00:03:58.190
+Así que ahora puedes ver que todos son iguales.
+
+73
+00:03:58.190 --> 00:04:01.030
+Y realmente no va a dar ninguna diferencia en el
+
+74
+00:04:01.030 --> 00:04:05.419
+comportamiento, y es porque no hemos dado una línea de base.
+
+75
+00:04:05.419 --> 00:04:09.150
+Por lo general, la forma en que trabaja con flex shrink
+
+76
+00:04:09.150 --> 00:04:12.850
+es que tendría una base flex para uno de estos elementos.
+
+77
+00:04:12.850 --> 00:04:16.330
+Así que voy a dar una base flex aquí,
+
+78
+00:04:16.330 --> 00:04:19.130
+y voy a activarla para cada uno de estos.
+
+79
+00:04:20.580 --> 00:04:21.530
+Presiona Guardar.
+
+80
+00:04:21.530 --> 00:04:25.240
+Y ahora puedes ver que estamos casi de regreso
+
+81
+00:04:25.240 --> 00:04:26.080
+a donde estábamos.
+
+82
+00:04:26.080 --> 00:04:28.270
+Pero aquí es donde está la diferencia clave.
+
+83
+00:04:28.270 --> 00:04:32.130
+¿Te das cuenta de que el que está aquí en realidad
+
+84
+00:04:32.130 --> 00:04:34.700
+ocupa menos espacio?
+
+85
+00:04:34.700 --> 00:04:36.610
+Entonces, voy a venir aquí.
+
+86
+00:04:36.610 --> 00:04:40.260
+Observen cómo uno, cuanto más lo contraigo,
+
+87
+00:04:40.260 --> 00:04:44.740
+más se..., o debería decir, más se estrecha.
+
+88
+00:04:44.740 --> 00:04:48.210
+Y si abro todo esto de nuevo,
+
+89
+00:04:48.210 --> 00:04:51.660
+puedes ver que 1 vuelve a tener 400 pixeles de ancho.
+
+90
+00:04:51.660 --> 00:04:56.660
+Y eso es porque 1 tiene una flex basis de 400 pixeles.
+
+91
+00:04:57.440 --> 00:05:01.580
+Pero cuando dije que flex shrink es 2, esto se verá
+
+92
+00:05:01.580 --> 00:05:03.722
+en todas las otras propiedades.
+
+93
+00:05:03.722 --> 00:05:05.613
+Tomará en cuenta a cada uno de los otros elementos
+
+94
+00:05:05.613 --> 00:05:06.660
+flexbox aquí.
+
+95
+00:05:06.660 --> 00:05:09.930
+Y va a decir, está bien, el bloque número 2 se reducirá
+
+96
+00:05:09.930 --> 00:05:14.410
+dos veces más rápido que todos los demás elementos.
+
+97
+00:05:14.410 --> 00:05:18.210
+Así como cuando tuvimos un flex grow y dijimos 4,
+
+98
+00:05:18.210 --> 00:05:21.550
+4 significaba que queríamos que 1 creciera
+
+99
+00:05:21.550 --> 00:05:24.900
+cuatro veces más rápido que los otros elementos.
+
+100
+00:05:24.900 --> 00:05:29.860
+Flex shrink dice: está bien, esto debe reducirse
+
+101
+00:05:29.860 --> 00:05:33.060
+dos veces más rápido o dos veces más rápido que todos
+
+102
+00:05:33.060 --> 00:05:36.680
+los otros elementos que tendrían un flex shrink de 1.
+
+103
+00:05:36.680 --> 00:05:40.960
+Por lo tanto, es muy importante tener esto en cuenta,
+
+104
+00:05:40.960 --> 00:05:45.780
+porque si aplican flex basis y desean que éste sea
+
+105
+00:05:45.780 --> 00:05:47.970
+su elemento más grande.
+
+106
+00:05:47.970 --> 00:05:51.160
+Pero luego le aplicas flex shrink, y pones
+
+107
+00:05:51.160 --> 00:05:55.140
+el valor más alto en flex shrink, entonces ese elemento
+
+108
+00:05:55.140 --> 00:05:57.210
+se reducirá más rápidamente.
+
+109
+00:05:57.210 --> 00:06:00.200
+Entonces, cuanto más pequeña sea la pantalla,
+
+110
+00:06:00.200 --> 00:06:04.360
+entonces si estás creando un sitio web sensible que necesita
+
+111
+00:06:04.360 --> 00:06:06.780
+funcionar de esta manera y se debe poder reducir a este
+
+112
+00:06:06.780 --> 00:06:09.500
+tamaño, ese elemento se reducirá dos veces más rápido
+
+113
+00:06:09.500 --> 00:06:11.030
+o cualquiera que sea el valor.
+
+114
+00:06:11.030 --> 00:06:13.603
+Si definí 4 aquí,
+
+115
+00:06:16.140 --> 00:06:19.500
+se reducirá aún más rápido, como se puede ver
+
+116
+00:06:19.500 --> 00:06:23.220
+hasta casi no ocupar más ancho
+
+117
+00:06:23.220 --> 00:06:25.810
+que el contenido dentro de él.
+
+118
+00:06:25.810 --> 00:06:28.660
+Y si lo agrando un poco,
+
+119
+00:06:28.660 --> 00:06:30.860
+puedes ver que se ha encogido.
+
+120
+00:06:30.860 --> 00:06:35.400
+Ahora todavía es más grande que 2, y es porque aún así,
+
+121
+00:06:35.400 --> 00:06:37.970
+la flex basis todavía lo afecta.
+
+122
+00:06:37.970 --> 00:06:40.350
+Pero ahora todo lo que estamos haciendo es decir
+
+123
+00:06:40.350 --> 00:06:44.290
+que a medida que se reduce, quiero que se reduzca cuatro
+
+124
+00:06:44.290 --> 00:06:47.580
+veces más rápido que cada uno de estos otros elementos.
+
+125
+00:06:47.580 --> 00:06:52.240
+De modo que esto es una descripción general de flex basis,
+
+126
+00:06:52.240 --> 00:06:53.800
+flex grow y el flex shrink.
+
+127
+00:06:53.800 --> 00:06:56.530
+Y hay algo muy útil que veremos
+
+128
+00:06:56.530 --> 00:06:59.960
+en la próxima Guía y que reúne todo esto.
+
+129
+00:06:59.960 --> 00:07:03.930
+Y eso es trabajar con la propiedad flex en sí,
+
+130
+00:07:03.930 --> 00:07:07.103
+y eso combina cada uno de estos elementos.
+

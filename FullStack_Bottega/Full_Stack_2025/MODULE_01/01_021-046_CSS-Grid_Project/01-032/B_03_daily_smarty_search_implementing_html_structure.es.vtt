@@ -1,0 +1,674 @@
+WEBVTT
+
+1
+00:00:00.670 --> 00:00:03.203
+<v Narrador>Ahora que tenemos todo nuestro HTML en la</v>
+
+2
+00:00:03.203 --> 00:00:06.845
+página. Lo que quiero hacer ahora es darle a nuestro HTML
+
+3
+00:00:06.845 --> 00:00:10.625
+un tipo de estructura. Entonces, lo que significa es que
+
+4
+00:00:10.625 --> 00:00:15.584
+cada una de estas etiquetas, como esta etiqueta de imagen o
+
+5
+00:00:15.584 --> 00:00:19.214
+esta etiqueta de entrada de texto, son buenas por sí mismas,
+
+6
+00:00:19.214 --> 00:00:23.687
+pero si no las organizas correctamente, será muy difícil
+
+7
+00:00:23.687 --> 00:00:26.690
+moverlas a la página de la manera que queremos.
+
+8
+00:00:26.690 --> 00:00:30.000
+Entonces, lo primero que vamos a hacer es
+
+9
+00:00:30.000 --> 00:00:33.114
+crear un div aquí que resumirá
+
+10
+00:00:33.114 --> 00:00:35.190
+todo el contenido.
+
+11
+00:00:35.190 --> 00:00:39.420
+Así que esto estará justo debajo de la etiqueta del cuerpo y
+
+12
+00:00:40.650 --> 00:00:45.650
+voy a llamar a este div un div con una clase de contenedor.
+
+13
+00:00:47.430 --> 00:00:50.970
+Así que esto va a envolver todo para que pueda
+
+14
+00:00:50.970 --> 00:00:55.040
+bajar al fondo aquí y esa será
+
+15
+00:00:55.040 --> 00:00:56.990
+nuestra clase de contenedor.
+
+16
+00:00:56.990 --> 00:00:59.987
+Y ese también será nuestro primer contenedor de
+
+17
+00:00:59.987 --> 00:01:01.553
+rejilla también.
+
+18
+00:01:01.553 --> 00:01:03.905
+Así que eso va a envolver todo el contenido.
+
+19
+00:01:03.905 --> 00:01:07.130
+Como verás, esto no hace ninguna diferencia
+
+20
+00:01:07.130 --> 00:01:09.210
+en este momento porque hasta que realmente
+
+21
+00:01:09.210 --> 00:01:11.190
+le hayas dado un poco de estilo a esas clases,
+
+22
+00:01:11.190 --> 00:01:13.640
+realmente no hacen nada.
+
+23
+00:01:13.640 --> 00:01:16.370
+Lo siguiente que queremos hacer es crear
+
+24
+00:01:16.370 --> 00:01:18.800
+un envoltorio para este logotipo.
+
+25
+00:01:18.800 --> 00:01:21.090
+Así que voy a deshacerme de este comentario ya que
+
+26
+00:01:21.090 --> 00:01:22.710
+ya no es realmente necesario.
+
+27
+00:01:22.710 --> 00:01:26.060
+Y voy a decir div clase
+
+28
+00:01:26.060 --> 00:01:27.340
+y luego vamos a decir
+
+29
+00:01:27.340 --> 00:01:30.610
+llamémoslo realmente logotipo de la página de inicio.
+
+30
+00:01:30.610 --> 00:01:33.970
+Porque este logotipo será diferente
+
+31
+00:01:33.970 --> 00:01:35.640
+al logotipo en la página de resultados.
+
+32
+00:01:35.640 --> 00:01:39.130
+Y por eso quiero asegurarme de que quede claro.
+
+33
+00:01:39.130 --> 00:01:44.070
+Y así que ahora va a tener un logotipo de la página de
+
+34
+00:01:44.070 --> 00:01:46.750
+inicio y parece que podría tener un pequeño error.
+
+35
+00:01:46.750 --> 00:01:49.293
+Ah, no cerré esa etiqueta div.
+
+36
+00:01:51.190 --> 00:01:52.023
+Aquí vamos.
+
+37
+00:01:53.040 --> 00:01:56.930
+Y ahora si golpeo guardar, ahora debería estar bien.
+
+38
+00:01:56.930 --> 00:02:00.503
+Está bien, sí, así que ahora nuestro logo está envuelto
+
+39
+00:02:00.503 --> 00:02:05.130
+correctamente. Si bajamos aquí en nuestro cuadro de
+
+40
+00:02:05.130 --> 00:02:09.105
+búsqueda, ya tenemos un div envoltorio, así que ahora
+
+41
+00:02:09.105 --> 00:02:12.420
+simplemente necesito aplicar una clase a esto.
+
+42
+00:02:12.420 --> 00:02:14.658
+Y voy a llamar a esta clase igual
+
+43
+00:02:14.658 --> 00:02:17.066
+y luego podemos llamarlo
+
+44
+00:02:17.066 --> 00:02:21.319
+barra de búsqueda de la página de inicio,
+
+45
+00:02:21.319 --> 00:02:25.700
+y luego dentro de aquí tendrá la entrada.
+
+46
+00:02:25.700 --> 00:02:27.810
+No necesitamos hacer nada con esto
+
+47
+00:02:27.810 --> 00:02:30.650
+porque podremos seleccionarlo cada vez
+
+48
+00:02:30.650 --> 00:02:32.406
+que vayamos y encontraremos
+
+49
+00:02:32.406 --> 00:02:34.180
+y seleccionaremos la barra de búsqueda de la página de
+
+50
+00:02:34.180 --> 00:02:35.930
+inicio que solo tendrá una entrada de barra de búsqueda
+
+51
+00:02:35.930 --> 00:02:39.490
+dentro de ella para que podamos encontrarla y cambiar la
+
+52
+00:02:39.490 --> 00:02:42.580
+barra de búsqueda para tener ese estilo realmente grande
+
+53
+00:02:42.580 --> 00:02:44.370
+como el que tendremos que hacer.
+
+54
+00:02:44.370 --> 00:02:47.960
+Ahora lo siguiente que debemos hacer es actualizar
+
+55
+00:02:47.960 --> 00:02:49.990
+el retorno de la prensa para buscar.
+
+56
+00:02:49.990 --> 00:02:51.690
+Solo eliminaré ese comentario
+
+57
+00:02:51.690 --> 00:02:53.890
+y se aplicará la misma regla.
+
+58
+00:02:53.890 --> 00:02:56.300
+Vea que podría aplicar una clase aquí.
+
+59
+00:02:56.300 --> 00:02:59.746
+Entonces podría decir algo como clase y luego algún
+
+60
+00:02:59.746 --> 00:03:02.700
+tipo de retorno al texto de búsqueda.
+
+61
+00:03:02.700 --> 00:03:05.540
+Pero la razón por la que no necesito hacer eso
+
+62
+00:03:05.540 --> 00:03:08.904
+es porque es la misma razón que con la entrada.
+
+63
+00:03:08.904 --> 00:03:12.880
+Si tienes un div envoltorio y es un div muy básico
+
+64
+00:03:12.880 --> 00:03:14.930
+como el que tenemos aquí, solo tiene dos elementos
+
+65
+00:03:14.930 --> 00:03:16.660
+y los elementos son únicos.
+
+66
+00:03:16.660 --> 00:03:19.730
+Como tener una entrada y un párrafo.
+
+67
+00:03:19.730 --> 00:03:22.950
+Lo que podré hacer es crear un selector
+
+68
+00:03:22.950 --> 00:03:26.417
+y diré que busque la barra de búsqueda de la página de
+
+69
+00:03:26.417 --> 00:03:30.675
+inicio de la clase y luego busque la entrada y luego aplique
+
+70
+00:03:30.675 --> 00:03:33.860
+algunos estilos y creará otra definición de estilo.
+
+71
+00:03:33.860 --> 00:03:35.880
+Eso dirá encuentre la barra de búsqueda de la página de
+
+72
+00:03:35.880 --> 00:03:39.132
+inicio y luego encuentre la etiqueta de párrafo dentro de
+
+73
+00:03:39.132 --> 00:03:42.311
+allí. Si tuviéramos etiquetas de varios párrafos, tendría
+
+74
+00:03:42.311 --> 00:03:45.040
+que aplicarle algún tipo de clase personalizada.
+
+75
+00:03:45.040 --> 00:03:48.513
+Pero porque todo es en sí, no necesitamos hacer eso.
+
+76
+00:03:49.530 --> 00:03:50.470
+Así que ahora que tenemos eso,
+
+77
+00:03:50.470 --> 00:03:53.880
+entremos en este envoltorio div y le
+
+78
+00:03:53.880 --> 00:03:57.276
+daré una clase y este solo será
+
+79
+00:03:57.276 --> 00:04:01.530
+reciente guión postes envoltura
+
+80
+00:04:01.530 --> 00:04:03.698
+y luego, dentro de aquí tenemos
+
+81
+00:04:03.698 --> 00:04:06.845
+reciente post y luego todo lo que tenemos que
+
+82
+00:04:06.845 --> 00:04:08.720
+hacer darle una clase a ello.
+
+83
+00:04:08.720 --> 00:04:12.180
+Así que aquí vamos a decir clase igual
+
+84
+00:04:13.175 --> 00:04:15.570
+reciente postes encabezado
+
+85
+00:04:17.150 --> 00:04:20.620
+y que, obviamente, con suerte tiene sentido.
+
+86
+00:04:20.620 --> 00:04:22.710
+Puedes llamar esto como quieras.
+
+87
+00:04:22.710 --> 00:04:24.810
+Me gusta ser muy descriptivo con ellos
+
+88
+00:04:24.810 --> 00:04:28.378
+y creo que esto hace un buen trabajo de explicar exactamente
+
+89
+00:04:28.378 --> 00:04:31.470
+lo que representa este reciente mensaje de texto.
+
+90
+00:04:31.470 --> 00:04:33.790
+Es el encabezado del post reciente.
+
+91
+00:04:33.790 --> 00:04:36.010
+Así que definitivamente puede sentirse libre de nombrarlos
+
+92
+00:04:36.010 --> 00:04:39.310
+como quiera, pero es una buena práctica asegurarse
+
+93
+00:04:39.310 --> 00:04:42.340
+de que sean lo suficientemente descriptivos para que alguien
+
+94
+00:04:42.340 --> 00:04:45.480
+más cuando estén leyendo ese código o usted más adelante
+
+95
+00:04:45.480 --> 00:04:48.740
+podrá ver la definición de estilo en el archivo CSS
+
+96
+00:04:48.740 --> 00:04:51.849
+y luego podrá saber
+
+97
+00:04:51.849 --> 00:04:54.750
+lo que está cambiando ese estilo.
+
+98
+00:04:54.750 --> 00:04:58.780
+Así que ahora que tenemos nuestra envoltura de publicaciones
+
+99
+00:04:58.780 --> 00:05:01.930
+recientes, tenemos nuestro encabezado de publicaciones
+
+100
+00:05:01.930 --> 00:05:05.380
+recientes y ahora solo puedo agregar una clase a esta
+
+101
+00:05:05.380 --> 00:05:10.380
+división de envolturas y esta será una publicación reciente.
+
+102
+00:05:10.470 --> 00:05:13.870
+Y cada uno de estos será el post reciente
+
+103
+00:05:13.870 --> 00:05:15.110
+que vemos en la página.
+
+104
+00:05:15.110 --> 00:05:19.740
+Y solo para su referencia, podemos ver que esto hace
+
+105
+00:05:19.740 --> 00:05:22.795
+referencia a todo este elemento aquí.
+
+106
+00:05:22.795 --> 00:05:24.760
+Y ahora solo estamos profundizando.
+
+107
+00:05:24.760 --> 00:05:26.640
+Nos estamos volviendo más y más específicos.
+
+108
+00:05:26.640 --> 00:05:29.129
+Así que ahora estamos haciendo referencia a los tres de
+
+109
+00:05:29.129 --> 00:05:32.719
+estos. Y ahora veamos cómo debe verse cada uno
+
+110
+00:05:32.719 --> 00:05:33.900
+de los elementos.
+
+111
+00:05:33.900 --> 00:05:35.880
+Así que tenemos nuestro reciente post.
+
+112
+00:05:35.880 --> 00:05:37.470
+Esto también es un envoltorio.
+
+113
+00:05:37.470 --> 00:05:40.110
+Aquí es donde el nombramiento se vuelve muy importante.
+
+114
+00:05:40.110 --> 00:05:43.330
+Así que tenemos post envoltorio más reciente aquí y luego
+
+115
+00:05:43.330 --> 00:05:45.270
+tenemos post reciente, así que asegúrate de que
+
+116
+00:05:45.270 --> 00:05:47.190
+esa parte no sea confusa.
+
+117
+00:05:47.190 --> 00:05:51.670
+Y ahora dentro de aquí vamos a tener un título.
+
+118
+00:05:51.670 --> 00:05:53.700
+Como puedes ver aquí mismo.
+
+119
+00:05:53.700 --> 00:05:57.544
+Y luego tenemos el div debajo de la categoría.
+
+120
+00:05:57.544 --> 00:06:01.336
+Creo que tiene sentido agregar una clase aquí y
+
+121
+00:06:01.336 --> 00:06:05.190
+voy a usar el singular, por lo que será
+
+122
+00:06:05.190 --> 00:06:08.790
+reciente guión post simplemente así.
+
+123
+00:06:08.790 --> 00:06:13.344
+Y luego dentro de aquí vamos a agregar otro div
+
+124
+00:06:13.344 --> 00:06:17.309
+y si alguna vez piensas que estoy usando muchos divs o crees
+
+125
+00:06:17.309 --> 00:06:20.884
+que parece extraño que tengamos tantos de estos.
+
+126
+00:06:20.884 --> 00:06:25.800
+Una vez me dijeron y esta es una lección que me ha apoyado
+
+127
+00:06:25.800 --> 00:06:30.440
+durante años y años que, como Desarrollador de
+
+128
+00:06:30.440 --> 00:06:34.060
+Implementación de Interfaz, nunca se pueden tener muchos
+
+129
+00:06:34.060 --> 00:06:37.889
+divs. Cada vez que tienes un div, tienes la capacidad de
+
+130
+00:06:37.889 --> 00:06:41.530
+tomar ese elemento y hacer lo que necesites con eso.
+
+131
+00:06:41.530 --> 00:06:45.370
+Entonces, la única vez que me he topado con errores de
+
+132
+00:06:45.370 --> 00:06:49.420
+implementación de interfaz es cuando no tenía suficientes
+
+133
+00:06:49.420 --> 00:06:51.920
+divs e intentaba estirar mis selectores
+
+134
+00:06:51.920 --> 00:06:54.171
+y esa fue la única vez
+
+135
+00:06:54.171 --> 00:06:56.100
+que realmente se volvió problemático.
+
+136
+00:06:56.100 --> 00:07:00.060
+Pero si tiene cada uno de sus elementos clave envuelto
+
+137
+00:07:00.060 --> 00:07:02.742
+adecuadamente, entonces es mucho más
+
+138
+00:07:02.742 --> 00:07:04.333
+sencillo seleccionarlos
+
+139
+00:07:04.333 --> 00:07:06.923
+y luego aplicar sus estilos.
+
+140
+00:07:07.814 --> 00:07:08.800
+Así que ahora que tenemos eso.
+
+141
+00:07:08.800 --> 00:07:12.250
+Llamemos a esto una clase de
+
+142
+00:07:12.250 --> 00:07:14.770
+reciente y simplemente llamémosle
+
+143
+00:07:14.770 --> 00:07:17.670
+título de post reciente porque eso es lo que es.
+
+144
+00:07:17.670 --> 00:07:22.640
+Y luego nuestro último será reciente post categoría.
+
+145
+00:07:22.640 --> 00:07:27.640
+Así que clase de reciente post categoría.
+
+146
+00:07:28.203 --> 00:07:30.970
+Ahora porque tengo esto, no creo que tenga
+
+147
+00:07:30.970 --> 00:07:33.708
+mucho sentido ir y agregarlo manualmente
+
+148
+00:07:33.708 --> 00:07:35.491
+aquí para estos otros titulares de lugar.
+
+149
+00:07:35.491 --> 00:07:37.880
+Solo voy a deshacerme de ellos.
+
+150
+00:07:37.880 --> 00:07:42.880
+Y ahora vamos a crear dos más de estos.
+
+151
+00:07:43.120 --> 00:07:46.010
+Así que solo voy a copiar eso y pegarlo.
+
+152
+00:07:46.010 --> 00:07:47.690
+Así que ahora tenemos tres de ellos.
+
+153
+00:07:47.690 --> 00:07:52.080
+Así que volvamos y veamos nuestra implementación actual.
+
+154
+00:07:52.080 --> 00:07:55.300
+Como puede ver, las cosas no cambian y, por una buena razón,
+
+155
+00:07:55.300 --> 00:07:56.970
+aún no hemos aplicado ningún estilo.
+
+156
+00:07:56.970 --> 00:08:00.402
+Pero ahora, si inspecciona uno de estos elementos aquí,
+
+157
+00:08:00.402 --> 00:08:05.090
+ahora verá que tiene para este específico,
+
+158
+00:08:05.090 --> 00:08:09.890
+ahora tiene una clase de reciente post título y, por lo
+
+159
+00:08:09.890 --> 00:08:12.510
+tanto, si desea hacer algo como si quiere hacerlo, diga
+
+160
+00:08:12.510 --> 00:08:15.040
+bien deseo cambiar el tamaño de fuente para esto
+
+161
+00:08:15.040 --> 00:08:18.530
+y deseo que sea de 20 píxeles.
+
+162
+00:08:18.530 --> 00:08:21.330
+Aunque se puede ver que eso ha cambiado.
+
+163
+00:08:21.330 --> 00:08:23.122
+Tenemos la capacidad de seleccionarlo
+
+164
+00:08:23.122 --> 00:08:25.770
+y luego cambiar sus propiedades.
+
+165
+00:08:25.770 --> 00:08:27.720
+Así que estoy feliz con eso allí mismo.
+
+166
+00:08:27.720 --> 00:08:29.676
+Vamos a pausar el vídeo ahora.
+
+167
+00:08:29.676 --> 00:08:32.506
+Y en la próxima guía comenzaremos a construir nuestro
+
+168
+00:08:32.506 --> 00:08:36.853
+primer Elemento de Cuadrícula de CSS para esta página.
+
