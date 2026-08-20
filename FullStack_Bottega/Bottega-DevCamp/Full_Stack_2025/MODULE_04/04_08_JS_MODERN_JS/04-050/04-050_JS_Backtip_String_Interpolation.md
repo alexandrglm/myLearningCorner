@@ -116,11 +116,11 @@ console.log(`Error ${error.code}: ${error.message}`);
         `${result}${str}<mark>${values[i] || ''}</mark>`, '');
     }
     ```
-
+    ```js
     console.log(highlight`Warning: ${5} alerts found`);\
     // "Warning: 5 alerts found"
 
-````
+    ```
 2. **Internationalization:** Combine with i18n libraries for dynamic translations
 
 ****
