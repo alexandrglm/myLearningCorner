@@ -154,11 +154,11 @@ That's not a problem with your browser or with code pen this is how the `let` va
 
 And if you want a little bit of insight on that if you come up and click on this little arrow here
 
-![large](../../../../../../.gitbook/assets/04-005_IMG1.png)
+![large](./04-005_IMG1.png)
 
 this is where we talked about analyzing JS. If you click on that you can see that it actually shows you the problem and it says that age has already been declared.
 
-![large](../../../../../../.gitbook/assets/04-005_IMG2.png)
+![large](./04-005_IMG2.png)
 
 It also says to google it which would give you a little bit of an idea on exactly what is happening.
 

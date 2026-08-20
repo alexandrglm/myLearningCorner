@@ -140,25 +140,25 @@ fullName = (first, last) => {
 
 Now I want to alert the browser so what I wanna do is I want an alert message to pop up with this fullName and I'll pass in a string of Kristine and then Hudgens. So this should theoretically work, so now let me pop over into the browser and if I type open then you can see right here on the desktop I have this index.s file.
 
-![large](../../../../../../../.gitbook/assets/06-108_IMG1.png)
+![large](.././06-108_IMG1.png)
 
 If I open this up an alert message doesn't pop up but instead, it simply is showing me the code that I wrote.
 
-![large](../../../../../../../.gitbook/assets/06-108_IMG2.png)
+![large](.././06-108_IMG2.png)
 
 So this is not how you get the browser to process your code. This is simply going to render your code out and this is very important to understand. If you want the browser to actually process to interpret and then run your javascript code you have to be explicit and you need to tell the browser that that is what you're wanting to do. If not it's simply going to look at it like a regular text file.
 
 So let's switch back into visual studio code. I'm going to take all of this copy it, and create a new file and save this on the desktop as well but this one I'm going to call `index.html`. Now inside of here, I'm going to type some HTML boilerplate code and in another guide, I'll give you a reference to how you can have all of your html5 boilerplate pop up exactly like how I have it right here.
 
-![large](../../../../../../../.gitbook/assets/06-108_IMG3.png)
+![large](.././06-108_IMG3.png)
 
 This is something specific to visual studio code and how I have my personal one configured but I'll show you how I did that and so now this is just regular HTML5 code. If I want to come down here in the body and add a heading I can say hi there. And then this is just a regular heading I'll save it, open this up so I'm not going to open up the js file but the index.html file.
 
-![large](../../../../../../../.gitbook/assets/06-108_IMG4.png)
+![large](.././06-108_IMG4.png)
 
 You can see that this works like a normal web page.
 
-![large](../../../../../../../.gitbook/assets/06-108_IMG5.png)
+![large](.././06-108_IMG5.png)
 
 So the way that we can get our javascript code to work is by coming down here and I'm going to place this below the end body tag. And I'm going to create a script tag and paste in our function.
 
@@ -174,7 +174,7 @@ So the way that we can get our javascript code to work is by coming down here an
 
 So this is our full name function just like how we had it before and then I'm calling it with an alert. So this is going to pop up a little alert in the browser so I will save this and because I'm calling the function, this is going to run as soon as I refresh the page. So if I hit refresh you can see the alert pops up and it says Kristine Hudgens, which is exactly what we passed into that fullName function.
 
-![large](../../../../../../../.gitbook/assets/06-108_IMG6.png)
+![large](.././06-108_IMG6.png)
 
 So why exactly did this work, and it didn't work when we simply tried to open up that index.js file? Well, it's because of how the browsers have been programmed in order to work. They are looking for certain keywords, so they're looking for HTML code just like we have in the index.html file.
 

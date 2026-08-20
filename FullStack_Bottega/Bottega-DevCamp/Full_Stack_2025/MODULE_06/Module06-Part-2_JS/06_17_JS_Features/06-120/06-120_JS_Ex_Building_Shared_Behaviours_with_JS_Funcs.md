@@ -205,11 +205,11 @@ So this goes and speaks directly to best practices as we are developing so that 
 
 So now that we have these HTML elements let me save here and come over to the page. So we have character count and says 144, this one says 20. And let me add an hr just so we have some separation here hit save. And so now we have these two elements on the page.
 
-![large](../../../../../../../.gitbook/assets/06-120_IMG1.png)
+![large](.././06-120_IMG1.png)
 
 So first let's come and let's create some more query selectors and I'm also going to get rid of this max value because we no longer have a global max value we're going to make this part of the function itself part of the function call. So here I'm going to grab message and instead of this one being message counter this one is going to be tag encounter and tag counter on the selector and then let's also add our tag input so tag inputs on both of these.
 
-![large](../../../../../../../.gitbook/assets/06-120_IMG2.png)
+![large](.././06-120_IMG2.png)
 
 OK so now we have selected our items now if I come down here how can we wrap this up in a function and I highly recommend right now for you to pause the video because this is a very important skill to learn and try to build this out yourself and then come back and then watch me go through the solution. So I'm going to walk through right now exactly how I would personally wrap up this entire event listener and all of its conditional logic into its own functions.
 
@@ -217,11 +217,11 @@ So I would start off by creating a variable's so I'm gonna say const and then sa
 
 And so inside of this, I'm going to come and I'm going to grab all of this code and place it inside of our new wrapper function instead of msgInput this is going to be textField everything else here is the same. Instead of message counter this is just going to be counter instead of max this is going to be maxCount, this.value.length will be exactly the same. And then if I come down here this value is going to be the same I just have to change maxCount over here and then instead of msgInput. This is where we are going to say textField and hit save.
 
-![large](../../../../../../../.gitbook/assets/06-120_IMG3.png)
+![large](.././06-120_IMG3.png)
 
 Now instead of having to duplicate all of that code. Now all I have to do is say textFieldLengthValidator pass in the values so I'll pass in my msgInput then my message counter and then whatever the max value I want so for this one I'm guessing 144 and on the tags I'm going to say that will make it 20. So for this one, its tag inputs and then tag it counter, and then the max here is going to be 20. So if I save this let's see if this is now working so hit refresh here on the page. Character count here is working perfectly. Come down to the tags this one's working perfectly as well and if you see when I come down and when I hit 0 then it's going to disable the field just like we're looking for.
 
-![large](../../../../../../../.gitbook/assets/06-120_IMG4.png)
+![large](.././06-120_IMG4.png)
 
 This is such a better implementation because now as you can see we do not simply have a feature. Now we actually have a true program you could wrap this up in its own NPM module and then you could call it from any other program pass in whatever the message input or the text field is where you want to have your countdown updated on the page and what the max value is and all the other users so it could be you in another program or it could be some other developer that's using your code.
 

@@ -179,7 +179,7 @@ Usually, I will use a syntax where I have the key in a string followed directly 
 
 However, I have seen a number of times where developers like to have the entire key wrapped in a space area in a string and, then, a space followed by the colon followed by another space and then the value.
 
-![medium](../../../../../../../../.gitbook/assets/02-066_IMG1.png)
+![medium](../.././02-066_IMG1.png)
 
 I personally like the way that I'm used to doing it just like this.
 
@@ -197,7 +197,7 @@ right after keys and let's see exactly what this prints out for us. So\
 if I print this you can see that I do get the keys and these look like\
 they're in a list.
 
-![large](../../../../../../../../.gitbook/assets/02-066_IMG2.png)
+![large](../.././02-066_IMG2.png)
 
 However, we have this `dict_keys` right before the list and it wraps the entire thing in parentheses.
 
@@ -227,7 +227,7 @@ We have keys, we have values and then items.
 
 Let's take a look at each one of these so if I say player keys here you already saw this one is where it's grabbing the keys.
 
-![large](../../../../../../../../.gitbook/assets/02-066_IMG3.png)
+![large](../.././02-066_IMG3.png)
 
 Not too much of a surprise there.
 
@@ -238,7 +238,7 @@ If I say values this returns another dictionary view object and it gives the val
 Now we haven't gotten to tuples yet but you can at least see what it returns so if I\
 run items you can see it returns a dictionary object of items and these parens show that it is a tuple so it is returning the key and the value for each one of these elements.
 
-![large](../../../../../../../../.gitbook/assets/02-066_IMG4.png)
+![large](../.././02-066_IMG4.png)
 
 Now let's go back to let's go with values because it's easy to see what the names are.
 
@@ -246,7 +246,7 @@ Now let's go back to let's go with values because it's easy to see what the name
 
 Now if I run the this we have what looks like a list
 
-![large](../../../../../../../../.gitbook/assets/02-066_IMG5.png)
+![large](../.././02-066_IMG5.png)
 
 but what happens if we try to treat it like a list.
 
@@ -255,7 +255,7 @@ theoretically if I can treat this as a list it means this would bring back the s
 
 But when I run this it gives me an error
 
-![medium](../../../../../../../../.gitbook/assets/02-066_IMG6.png)
+![medium](../.././02-066_IMG6.png)
 
 and the error says type error **dict\_values object does not support**\
 **indexing**.
@@ -309,7 +309,7 @@ This is what we can do.
 
 So, now if I run this you're going to see that we get our actual listof value and we can treat this exactly the way we would any list so now if I type 1 I get Altuve which is the first index item inside of that list.
 
-![large](../../../../../../../../.gitbook/assets/02-066_IMG7.png)
+![large](../.././02-066_IMG7.png)
 
 So, now, we can treat these exactly the same.
 
@@ -325,7 +325,7 @@ Well, that's where we can copy the list and this is a way you can make your enti
 
 So I'm gonna say player names and so now I'm going to cut all of this out.
 
-![large](../../../../../../../../.gitbook/assets/02-066_IMG8.png)
+![large](../.././02-066_IMG8.png)
 
 Put it down here and the process to do this is to use the copy function.
 
@@ -337,7 +337,7 @@ player_names = list( players   .copy().values()      )
 
 Now if I pronounce player names you're going to get exactly the same list we have Correa, Altuve, Bregman, Gattis, and Springer.
 
-![large](../../../../../../../../.gitbook/assets/02-066_IMG9B.png)
+![large](../.././02-066_IMG9B.png)
 
 Now, what's happening under the hood with this though is that a copy is made of players and it's stored and accessed only by us and by our process so if someone else goes and they're making a change to players then it doesn't even matter.
 
@@ -362,7 +362,7 @@ Now let's talk about how we can work with nested items so if I want to do someth
 
 So let's print this out and just see what we have here.
 
-![large](../../../../../../../../.gitbook/assets/02-066_IMG9C.png)
+![large](../.././02-066_IMG9C.png)
 
 So, now, you can see we have a\*\* dictionary view object and inside of this is a set of these tuple items.\*\*
 
@@ -380,7 +380,7 @@ So right here if I do team groupings and then just type len even though this is 
 
 If I run this you can see that there are four elements which is exactly correct.
 
-![large](../../../../../../../../.gitbook/assets/02-066_IMG9D.png)
+![large](../.././02-066_IMG9D.png)
 
 Now, we have not gotten into iterable's and looping yet but as you can see from this next function we can see that we actually do have the ability with a dictionary view object to loop through though so if you want to implement some type of looping mechanism that goes through and list them all out such as on a web page or a mobile app then you can work with a for loop in all of those type of iterable that will get into\
 later on in the course and dictionary view objects are good for that.
@@ -403,7 +403,7 @@ So here we're going to have a list and you give some space just so we can see ea
 
 So we have Astro's we have angels Yankees and then red sox.
 
-![large](../../../../../../../../.gitbook/assets/02-066_IMG9C.png)
+![large](../.././02-066_IMG9C.png)
 
 But it's using this different kind of structure and don't let the parens confuse you.
 
@@ -423,14 +423,14 @@ So, if I want to grab the index one this is going to grab me this collection.
 
 So now if I run this again you can see now we have Trout and Pujols
 
-![large](../../../../../../../../.gitbook/assets/02-066_IMG9C.png)
+![large](../.././02-066_IMG9C.png)
 
 and just for fun let's chain on one more element and also so that you\
 can see that you can pass these chained elements in and these chained\
 lookups just right next to each other. And so now if I run it again you\
 can see we have trout.
 
-![IMG](../../../../../../../../.gitbook/assets/02-066_IMG9G.png)
+![IMG](../.././02-066_IMG9G.png)
 
 So if you ever have a data collection like this where you have a\
 dictionary and you have all of these elements here and you want to grab\

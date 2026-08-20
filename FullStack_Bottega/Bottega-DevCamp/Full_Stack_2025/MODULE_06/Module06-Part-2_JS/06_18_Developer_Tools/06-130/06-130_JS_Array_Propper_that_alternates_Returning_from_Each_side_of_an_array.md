@@ -53,7 +53,7 @@ class ArrayPopper {
 * **`this.atBeginning`**: Tracks whether to remove from the start (`shift`) or end (`pop`).
 * **Ternary Operator**: Switches between `pop()` and `shift()` based on the toggle.
 
-![Class Implementation](../../../../../../../.gitbook/assets/06-130_IMG1.png)
+![Class Implementation](.././06-130_IMG1.png)
 
 ***
 
@@ -69,7 +69,7 @@ class ArrayPopper {
    * `atBeginning` flips back to `true` → `shift()` removes `2` (returns `2`).
    * Array becomes `[3, 4]`.
 
-![Execution Flow](../../../../../../../.gitbook/assets/06-130_IMG3.png)
+![Execution Flow](.././06-130_IMG3.png)
 
 ***
 
@@ -96,7 +96,7 @@ strPopper.togglePopper();     // 'JS'
 
 ```
 
-![String Example](../../../../../../../.gitbook/assets/06-130_IMG4.png)
+![String Example](.././06-130_IMG4.png)
 
 ***
 
@@ -207,15 +207,15 @@ So if you are not used to working with ternary operators let's walk through exac
 
 So let's give this a test and see if it's working. I'm gonna create a const variable here and I'm just going to call it ap which is short for ArrayPopper and then say new ArrayPopper. And we're going to pass in an array so let's pass in that sample one we already talked about because I think it's a nice easy base case, so I'm gonna say 1, 2, 3, 4, and 5.
 
-![large](../../../../../../../.gitbook/assets/06-130_IMG1.png)
+![large](.././06-130_IMG1.png)
 
 Now I'm going to save this and actually let me cancel out I don't need to save it because I already have my Quokka on. So you're going to be able to see all of this in real time so I can say ap dot togglePopper and now lets see what this first value is. So that is a one.
 
-![large](../../../../../../../.gitbook/assets/06-130_IMG2.png)
+![large](.././06-130_IMG2.png)
 
 Now let's do this again. Now you can see the next value is 5, trying it again you can see the next one is 2 followed by 4 followed by 3. So this is working perfectly.
 
-![large](../../../../../../../.gitbook/assets/06-130_IMG3.png)
+![large](.././06-130_IMG3.png)
 
 So togglePopper right here, when we initially call it the value is 1 and the reason why it's one is because whenever we create this constructor, whenever we create a new ArrayPopper then atBeginning is going to start off true. We call togglePopper it's going to be false. And what that means is that it's going to hit this.arr.pop ternary operator, it's going to recognize this value right here is false so it's going to skip ahead and it's going to go to this.arr.shift value.
 
@@ -225,15 +225,15 @@ Now, this is not specific just to numbers. So let's say that we want to do somet
 
 The very first time we call it it's going to say Hi, the next time we call it it's going to say JS. As you can see that's the very last element in that array. Then it's gonna say there and then from. And let's see what happens if we call this one more time. So we've gone through the entire array. And if we call it one more time it's going to come up with undefined and that's because we have removed all of the elements from the array at this point.
 
-![large](../../../../../../../.gitbook/assets/06-130_IMG4.png)
+![large](.././06-130_IMG4.png)
 
 So if you're curious about the state of the array you can do something like this. I'll get rid of this line right here and let's just call that strap variable. So I'm going to call the strap variable dot and we can call array because it's just an element inside of that class and you can see that we have an empty array at this point. So this is because we have called either shift or pop on each one of the elements.
 
-![large](../../../../../../../.gitbook/assets/06-130_IMG5.png)
+![large](.././06-130_IMG5.png)
 
 Now if we called somewhere in the middle here and wanted to see the state of it here we could call the strap and then the array. And now if we take a look at this state now you can see that the array at this point has there and from.
 
-![large](../../../../../../../.gitbook/assets/06-130_IMG6.png)
+![large](.././06-130_IMG6.png)
 
 So at this stage, we still have a form of this array left and it's not until we've called togglePopper a couple more times that we've actually removed each one of those items.
 

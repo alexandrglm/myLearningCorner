@@ -192,7 +192,7 @@ So if everything works here we should see a greeting followed by a\
 full set of the arguments. If I run this you can see that that worked\
 perfectly.
 
-![large](../../../../../../../../.gitbook/assets/03-104_IMG1.png)
+![large](../.././03-104_IMG1.png)
 
 It says Hi Kristine Hudgens, I hope you're having a great morning\
 Your tasks for the day are: first to empty the dishwasher, second take\

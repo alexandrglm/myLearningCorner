@@ -147,7 +147,7 @@ I greatly appreciate your candor (which was a huge reason why I decided to give 
 
 One of the top tools I use to battle procrastination is thinking small. We, as developers, naturally tend to push challenging features away. Instead, we like to focus on working with components that we’re already comfortable with. That’s natural for everyone, however, it’s not good. And I have to remind myself of this fact daily.
 
-![small](../../../../../../../.gitbook/assets/05-091_IMG1.png)
+![small](.././05-091_IMG1.png)
 
 In his book Deep Work, Cal Newport discusses how deep work (the type of work that takes someone from good to great) is not fun. In fact, when researching top performers, Newport found that 100% of the individuals did not enjoy working on challenging tasks. So when it comes to approaching project development, please understand that the scariest features might be your greatest catalyst for improving as a programmer.
 

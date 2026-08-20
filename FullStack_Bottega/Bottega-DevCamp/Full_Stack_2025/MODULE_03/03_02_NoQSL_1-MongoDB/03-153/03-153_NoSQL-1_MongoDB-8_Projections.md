@@ -102,7 +102,7 @@ MongoCourse> db.Books.find( {}, { "name" : 1, "authors" : 1 } )
 ]
 ```
 
-![img](../../../../../../.gitbook/assets/03-153_IMG01.png)
+![img](./03-153_IMG01.png)
 
 ### **2. Excluding Specific Fields**
 
@@ -143,7 +143,7 @@ MongoCourse> db.Books.find( {}, { "authors" : 0 } )
 * You **cannot mix** inclusion (`1`) and exclusion (`0`) in the same query, **except for** `**_id**`.
 * If no projection is specified, all fields are returned by default.
 
-![img](../../../../../../.gitbook/assets/03-153_IMG02.png)
+![img](./03-153_IMG02.png)
 
 ###
 
@@ -170,11 +170,11 @@ In the past few guides as we've been going through some of the various querying 
 
 ***
 
-![large](../../../../../../.gitbook/assets/03-153_IMG1.png)
+![large](./03-153_IMG1.png)
 
 So let's take a look at what it looks like when it's `pretty` so we can see it easier.
 
-![large](../../../../../../.gitbook/assets/03-153_IMG2.png)
+![large](./03-153_IMG2.png)
 
 So you notice that we have the **name, published date, authors**, and the **id**. We have all of these different elements and that is fine in some cases, however, if you remember back when you were learning about SQL, if you have learned about SQL then you would remember that running a star query where you bring back all of the attributes, that's actually considered a poor practice.
 
@@ -192,31 +192,31 @@ Here I'm going to pass in one object and this is going to be similar to what we'
 
 There are times where I will wrap this up just like this in a string. But if you just say name just like I'm doing right here then Mongo is still going to be able to interpret that. So this is what we've done so far and if I copy this
 
-![large](../../../../../../.gitbook/assets/03-153_IMG3.png)
+![large](./03-153_IMG3.png)
 
 and come in the terminal and run it you can see that it brings back the correct book. However, it brings back all the attributes.
 
-![large](../../../../../../.gitbook/assets/03-153_IMG4.png)
+![large](./03-153_IMG4.png)
 
 So now what we can do is pass in a second object and in the second object, this is where all of our projections go, our constraints that allow us to say that we only want certain attributes.
 
 The way that we can do this is by naming the attributes that we want. So if I say `publishedDate` and then the way that you tell it if you want it or not is with either a **1** or **0**. In this case, I want the `publishedDate` and I want the `authors`.
 
-![large](../../../../../../.gitbook/assets/03-153_IMG5.png)
+![large](./03-153_IMG5.png)
 
 So now if I run this and run this in the terminal now you can see and let me make it so it's pretty as well. Now you can see that it's actually working and that we only got back the `id` the `publishedDate` and the list of `authors`.
 
-![large](../../../../../../.gitbook/assets/03-153_IMG6.png)
+![large](./03-153_IMG6.png)
 
 Now if we wanted the `name` then we could add that right to the list and here I will add my `pretty` statement right to the end, and now if I pass this and again you can see it's working and now we have the name back.
 
-![large](../../../../../../.gitbook/assets/03-153_IMG7.png)
+![large](./03-153_IMG7.png)
 
 Now let's see what happens when we want to not have some of those elements. So say I just want the `name` and the list of `authors` but not the `publishedDate`.
 
 So if I copy all of this and run it. Notice that the published date is not there anymore.
 
-![large](../../../../../../.gitbook/assets/03-153_IMG8.png)
+![large](./03-153_IMG8.png)
 
 You may think that you'd have to place a zero by the published date but that's not true because the way that Mongo works is it is expected that if you want the value then in that list of projections you're going to ask for it.
 
@@ -225,7 +225,7 @@ The only one that you do not have that's not the expected result is that `id` fi
 Remember this is an object so you have to pass it in and have a comma after each one of the items in the list.\
 Now let me clear this off and run it again and you can see that now we have run it and it does not have the `id` field anymore.
 
-![large](../../../../../../.gitbook/assets/03-153_IMG9.png)
+![large](./03-153_IMG9.png)
 
 The `id` field is the only one that comes by default in your projections. You simply have to list out with either a **1** or a **0** which one of the attributes that you want to return.
 

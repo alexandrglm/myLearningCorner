@@ -72,7 +72,7 @@ print(starter_sentence[0])
 
 Now if I hit return you can see it prints out only the T.
 
-![IMG](../../../../../../../.gitbook/assets/02-025_IMG1.png)
+![IMG](.././02-025_IMG1.png)
 
 This is working properly and I could change it and if I want to change it to say `12`
 
@@ -93,7 +93,7 @@ So, in other words, **we can't change the characters in the string**.
 
 A new variables can be created and alter them that way by performing some formatting and some different tasks like that.
 
-![IMG](../../../../../../../.gitbook/assets/02-025_IMG1b.png)
+![IMG](.././02-025_IMG1b.png)
 
 But if you want to test this out we know that this letter `O` was it this twelfth position.
 
@@ -101,7 +101,7 @@ And in many other programming languages you would be able to do something like t
 
 And now if I come to the starter sentence and try to print it out again it's going to return an error.
 
-![IMG](../../../../../../../.gitbook/assets/02-025_IMG2.png)
+![IMG](.././02-025_IMG2.png)
 
 And it says _"Type Error string objects does not support item_\
 _assignment"_ which is just another way of saying\*\* they are not able to\
@@ -141,7 +141,7 @@ Then this is simply going to be these three added together the first, second, an
 
 Finally, we'll print out our new sentence which should have the first word from what we have in our sense which is the so that works.
 
-![IMG](../../../../../../../.gitbook/assets/02-025_IMG3.png)
+![IMG](.././02-025_IMG3.png)
 
 \*\*That is a horrible way of doing \*\*it though and so I **only wanted to show** you that so that if this came up in a programming interview or anything like that you'll understand exactly **why you want to use ranges or how ranges can be utilized to make your code more efficient**.
 
@@ -161,7 +161,7 @@ And so if I do 0 3 right here and say first-word I can say new\_sentence and jus
 
 And now if I print this out you can see that we have the. And we're able to do that with a single range.
 
-![IMG](../../../../../../../.gitbook/assets/02-025_IMG4.png)
+![IMG](.././02-025_IMG4.png)
 
 **⚠️⚠️⚠️Now a very important but very subtle little issue here is watch what happens if I use two. ⚠️⚠️⚠️**
 
@@ -200,11 +200,11 @@ Well what we can do is I'm going to get rid of this and I'm just going to have a
 
 **\[start:] will catch from the start position until the end.**
 
-![IMG](../../../../../../../.gitbook/assets/02-025_IMG5.png)
+![IMG](.././02-025_IMG5.png)
 
 **\[:end] will catch from the real init position (0) until the selected end position (minus one, zero-based).**
 
-![IMG](../../../../../../../.gitbook/assets/02-025_IMG6.png)
+![IMG](.././02-025_IMG6.png)
 
 I'd like for you to pause the video and research how you can work with ranges and how this is possible and then come back and see how to do it.
 

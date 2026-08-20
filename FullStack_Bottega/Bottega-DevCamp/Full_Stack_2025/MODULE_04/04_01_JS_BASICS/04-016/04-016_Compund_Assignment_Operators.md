@@ -303,9 +303,9 @@ This lesson examines how to work with the Compound Assignment Operator in JavaSc
 
 Now that we've talked about operators. Let's talk about something called the `compound assignment` operator and I'm going make one little change here in case you're wondering if you ever want to have your console take up the entire window you come up to the top right-hand side here you can undock it into a separate window and you can see that it takes up the entire window.
 
-![large](../../../../../../.gitbook/assets/04-016_IMG1.png)
+![large](./04-016_IMG1.png)
 
-![large](../../../../../../.gitbook/assets/04-016_IMG2.png)
+![large](./04-016_IMG2.png)
 
 So just a little bit more room now.
 

@@ -107,19 +107,19 @@ git init
 
 So git init is the start of the entire git process that is going to initialize a new repository inside of this directory. Now it's very important that you are located in the directory that you want to create the repository in. So if you are working on a rails app you want to be at the root of the application, if you're in a Python project like this one, you want to be at the root of that project. Right now, I am at the root so I can say git init run and it gives me the output and says initialized an empty git repository and then it shows me the path, I'm at the `/Users/admin/Desktop/my-git-project/.git/` and then it shows me this path right here.
 
-![large](../../../../../../.gitbook/assets/05-106_IMG1.png)
+![large](./05-106_IMG1.png)
 
 Now you can see that it has at the very end here it says .git and so what that means is at the root of my project if I type LS I don't see anything.
 
-![large](../../../../../../.gitbook/assets/05-106_IMG2.png)
+![large](./05-106_IMG2.png)
 
 However, because it has a dot in front of it this means that this directory is hidden and so I can type if I'm on a Mac `ls -la` (`ls -l` on Linux). And now you can see that we do have this .git directory
 
-![large](../../../../../../.gitbook/assets/05-106_IMG3.png)
+![large](./05-106_IMG3.png)
 
 and so if you're using a tool like Sublime Text or visual studio code or something you can turn on your hidden files and then you'll be able to see these and so that is all you have to do in order to create that repository. And so now if I type get status this is going to give me the status of the repository and so what it says is that I'm on branch master. We're going to talk about branches, later on, they're going to have their own section.
 
-![large](../../../../../../.gitbook/assets/05-106_IMG4.png)
+![large](./05-106_IMG4.png)
 
 It says I have no commits yet, this is because we haven't created any versions for our project. It says no comments and that's perfectly fine. And then it says that I have Untracked files so that same file that I created here where it says my\_file.py what we need to do is we need to add this into the repository. Right now we just have an empty git repository and in order to create our first version, we need to tell it what we want that first version to look like.
 
@@ -127,18 +127,18 @@ The way you can do that is you can say git add and there are a couple of ways th
 
 Now if I type in get status you can see that it no longer says untracked files. Now it says changes to be committed.
 
-![large](../../../../../../.gitbook/assets/05-106_IMG5.png)
+![large](./05-106_IMG5.png)
 
 Right here it says that it is no longer in this green and you may have different colors depending on your color scheme and your terminal but now it says that there is a new file. It knows about it so it's no longer untracked but it says that in order to add that.
 
 So in order to add this to the repository, we need to commit it and so that's what we're gonna do next. I'm going to say get git commit -m and what the M stands for his message. So we're saying that we're going to pass a message to it. And so here I'm just gonna say initial comment and make sure that if you're using double quotation marks at the beginning that you do the same at the end and then if I hit return it says that it worked.
 
-![large](../../../../../../.gitbook/assets/05-106_IMG6.png)
+![large](./05-106_IMG6.png)
 
 So if you get a message like this or it says Master root commit and don't worry about some of these numbers and these weird hashes all you need to see is that it says that we did do our initial comment so that worked. It shows us some stats as well so it says one file was changed and there is one inserted because we added a new file and it showed that it created the my\_file.py there in the repository.
 
 Now if I type in git status you can see that we are all done
 
-![large](../../../../../../.gitbook/assets/05-106_IMG7.png)
+![large](./05-106_IMG7.png)
 
 so in review what we've done is we've created a new project, we initialized a new repository, and new git repository in that project, we were able to add the new file that we created for our project into the repository, then we were able to commit it. When we performed that commit step what we did is we created a version and we're going to look at that later on in the course. But that was a stage where we created the version and now that we did that, we're done. We have now successfully created our first commit our first version of our project and in the next guide, we're going to see how we can push this up to GitHub.

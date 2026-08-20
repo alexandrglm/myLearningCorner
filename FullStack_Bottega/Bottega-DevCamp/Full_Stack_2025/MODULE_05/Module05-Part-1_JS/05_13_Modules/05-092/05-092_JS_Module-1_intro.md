@@ -20,11 +20,11 @@ Typically you're going to have dozens if not hundreds of files in an application
 
 Let's imagine that you have some type of javascript application, and on a page, you might have a set of blog posts so your blog posts might be right here, right here, and right here.
 
-![large](../../../../../../../.gitbook/assets/05-092_IMG1.png)
+![large](.././05-092_IMG1.png)
 
 So the way that you would organize this is you'd have one main component. This would be something like app or home.
 
-![large](../../../../../../../.gitbook/assets/05-092_IMG2.png)
+![large](.././05-092_IMG2.png)
 
 You could name it however you wish.
 

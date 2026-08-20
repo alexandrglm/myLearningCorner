@@ -143,7 +143,7 @@ daily basis because I do a lot of API development.
 
 So with all that means that I will include a link to this **BlueMatador** post in your show notes and that is going to give you the set of commands you need in order to install this.
 
-![large](../../../../../../../.gitbook/assets/03-135_IMG1.png)
+![large](.././03-135_IMG1.png)
 
 So the very first thing that I'm going to do is copy this first line.\
 So we're going to end up copying each one of these will copy them one\
@@ -157,7 +157,7 @@ So I'm going to run this and it's going to go out and it's going to get\
 that Postman application and I'm going to let the video fast forward\
 while that is occurring.
 
-![large](../../../../../../../.gitbook/assets/03-135_IMG2.png)
+![large](.././03-135_IMG2.png)
 
 Okay looks like that installed properly. So now we are going to unpack it, so that's what we do when we run this `sudo tar -xzf postman.tar.gz -C /opt` command, it'll give us the raw data here and it's compressed so now we need to actually pack it with the command.
 
@@ -197,7 +197,7 @@ this and hit enter, and it appears that all worked so I'm going to quit\
 out of the terminal and then get back in, and let's come up here and see\
 if we have access to Postman in our applications and there it is.
 
-![large](../../../../../../../.gitbook/assets/03-135_IMG3.png)
+![large](.././03-135_IMG3.png)
 
 So if you click on that and if no errors pop up that means that\
 everything should have installed properly. So it is loading right here\
@@ -206,7 +206,7 @@ you have you may get a few different dialog boxes, I've noticed that\
 Postman is updated quite regularly so even within the past few months\
 I've noticed different dialog boxes come up.
 
-![large](../../../../../../../.gitbook/assets/03-135_IMG4.png)
+![large](.././03-135_IMG4.png)
 
 I definitely recommend that you sign up it's completely free to use,\
 so I'm going to first fill all of these fields in. Sign up and then\
@@ -214,7 +214,7 @@ that's going to go through the process of signing up and give you an\
 account. And I believe that when you do that means that you can share\
 your different workspaces across your computers.
 
-![large](../../../../../../../.gitbook/assets/03-135_IMG5.png)
+![large](.././03-135_IMG5.png)
 
 Now we have the ability to start building some requests. So now that\
 we have this I'm going to take a break here in the video and in the next\

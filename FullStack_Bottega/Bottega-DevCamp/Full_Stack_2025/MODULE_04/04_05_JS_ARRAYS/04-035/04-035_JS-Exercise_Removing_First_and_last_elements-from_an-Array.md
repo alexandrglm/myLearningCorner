@@ -230,15 +230,15 @@ In this JavaScript coding exercise, I want to walk through how we can create a t
 
 Now if you've never heard of the trim function it is a function that's available to strings in JavaScript. So if I were to do something like this where I say const and then just some kind of string and then inside of it have a lot of wasted space. A bunch of spaces and then I have some good content that I actually want followed by a bunch of bad spaces again that are pointless.
 
-![large](../../../../../../.gitbook/assets/04-035_IMG1.png)
+![large](./04-035_IMG1.png)
 
 If I want to, I can say str.trim and it's a function and if I call this you can see that it returns good content
 
-![large](../../../../../../.gitbook/assets/04-035_IMG2.png)
+![large](./04-035_IMG2.png)
 
 With that what the trim function does is it gets rid of everything in front of good content and then it gets rid of everything after it so that is incredibly helpful. Now what I want to do is to have the same kind of behavior with an array so if I have some kind of array here so let's create a let variable here and say array and then inside of it I have some bad content and then I have something good and then another good one and then I have some more ugh content here.
 
-![large](../../../../../../.gitbook/assets/04-035_IMG3.png)
+![large](./04-035_IMG3.png)
 
 What I want to be able to do is to call some type of function that works like trim where it removes the ughh content or it removes whatever is on this side and also whatever is on this side of the array. Essentially it's going to drop something from the first and the last part of the array and then return only what's in the middle.
 
@@ -260,7 +260,7 @@ So now let's come in and we only have really one line of code that we need to bu
 
 So imagine that we have an array like this `[1,2, 3, 4, 5]` and so if we had an array like this. What array slice 1 and -1 is going to do is it's going to grab this first element and it's going to say Okay, I want everything from here all the way until the 2nd to the last one because we gave -1.
 
-![large](../../../../../../.gitbook/assets/04-035_IMG4.png)
+![large](./04-035_IMG4.png)
 
 The way that slice works is it takes the first index and in this case, we're passing in 1. So 2 here has an index of 1 and I know that may sound confusing. Let's come here and add a string array `['A', 'B', 'C', 'D']`. So, in this case, A has an index of 0, B has an index of 1. So if we were to run this exact same process here what it would do is it would skip A because this has an index of zero.
 
@@ -268,19 +268,19 @@ It would say OK I want to start at an index of 1 and then it's going to go all t
 
 So now let's actually test this out, so I'm going to say `removeFirstAndLast` and let's pass in this element `([1, 2, 3, 4, 5])`. And let's see if this works. Yes so, in this case, we get 2 3 and 4 so as you can see it dropped the 1 and dropped the 5.
 
-![large](../../../../../../.gitbook/assets/04-035_IMG5.png)
+![large](./04-035_IMG5.png)
 
 And let's do the same thing here. So here I'm going to say `removeFirstAndLast` and pass in the argument this `(['A', 'B', 'C', 'D'])` and now you can see that we get a \[ 'B', 'C'].
 
-![large](../../../../../../.gitbook/assets/04-035_IMG6.png)
+![large](./04-035_IMG6.png)
 
 Now let's also make sure that our error is working. So I'll say `removeFirstAndLast`and let's just pass in `([1, 2])` and let's see if our error is working. And look at that we have nothing there that's actually going on because we have less than three elements.
 
-![large](../../../../../../.gitbook/assets/04-035_IMG7.png)
+![large](./04-035_IMG7.png)
 
 So if you want something to actually be explicit here say `console.log(removeFirstAndLast([1, 2]));`. So here we're actually getting our error. So I needed to add a throw new error right there and so now you can see this is working.
 
-![large](../../../../../../.gitbook/assets/04-035_IMG8.png)
+![large](./04-035_IMG8.png)
 
 Imagine that you are building this out for someone else, so if you are going through this as just a regular javascript coding exercise technically you could have built the entire program like this where you simply said return array slice 1 to -1 or something like that, and that would work fine. But I also wanted to show you a little bit more of an advanced approach because if you're building out something that other people are going to use, then you want to take into account what happens when they give you some values that you may not have expected or that array slice would not work with.
 

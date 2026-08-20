@@ -70,7 +70,7 @@ sentence = 'The quick brown fox jumped over the lazy Dog'
 
 And now if I create a new variable here called word and set this equal to quick what I can do is say. `if word in sentence:` then I can print it out so I can say `print('The word was found in the sentence')`. And so that will work. And let's add an `else:` clause here and `print('The word was not in the sentence')`. And so now if I run this you can see it says the word was found in the sentence.
 
-![large](../../../../../../../../.gitbook/assets/03-093_IMG1.png)
+![large](../.././03-093_IMG1.png)
 
 Because quick is in the sentence and that's what we are looking for.
 
@@ -80,7 +80,7 @@ I'm going to type in the word dog but notice even though we have a dog in this s
 
 So, we can test this out by running it just like this. And as you can see the word was not found.
 
-![large](../../../../../../../../.gitbook/assets/03-093_IMG2.png)
+![large](../.././03-093_IMG2.png)
 
 So, there are a number of ways around this that you're going to find in Python.
 
@@ -90,7 +90,7 @@ change them to lowercase and the same thing with this word.
 And now if I run this you can see that it prints out that the word was found in the\
 sentence so everything there is working properly.
 
-![large](../../../../../../../../.gitbook/assets/03-093_IMG3.png)
+![large](../.././03-093_IMG3.png)
 
 Now I'm going to place all of this in the show notes.
 
@@ -102,7 +102,7 @@ Now, what I can do is say `if 3 in nums:` then we can `print('The number was fou
 
 And so now if we run this code you'll see that it says the number was found.
 
-![large](../../../../../../../../.gitbook/assets/03-093_IMG4.png)
+![large](../.././03-093_IMG4.png)
 
 So this in operator is incredibly helpful because it checks not only\
 for membership in strings so it not only tells you if one string is\

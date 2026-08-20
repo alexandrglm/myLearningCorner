@@ -14,13 +14,13 @@ Now, `functions` in JavaScript are one of the most critical topics related to le
 
 If you've never heard of a function and you're new to programming, the way a function works is it's kind of like a machine.
 
-![large](../../../../../../.gitbook/assets/04-025_IMG1.png)
+![large](./04-025_IMG1.png)
 
 This machine has the ability - you can think of a machine on an assembly line or some kind of plant - this machine can take information in and then it performs all kinds of processes.
 
 These are processes that you tell it to perform, and then it returns a different value.
 
-![large](../../../../../../.gitbook/assets/04-025_IMG2.png)
+![large](./04-025_IMG2.png)
 
 So it takes in some kind of value and then it returns a different value. If you can understand that core concept related to functions, it's going to help you as you learn JavaScript as a whole.
 

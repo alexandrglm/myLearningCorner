@@ -69,7 +69,7 @@ MongoCourse> db.Books.insertMany([
 
 ### **Expected Output:**
 
-![MongoDB, .insertMany( {array} )](../../../../../../.gitbook/assets/03-150_IMG01.png)
+![MongoDB, .insertMany( {array} )](./03-150_IMG01.png)
 
 ### **Key Points:**
 
@@ -130,31 +130,31 @@ If you're building out a large application there's probably going to be a time w
 
 I'm going to switch to Sublime Text and create that function. We're going to start off with `db.books`. So we're going to start off with the name of our database object which represents whatever database we're using then books, the name, and the collection, and then the function is `insertMany`.
 
-![large](../../../../../../.gitbook/assets/03-150_IMG1.png)
+![large](./03-150_IMG1.png)
 
 Now `insertMany` is a little bit different, remember that with insert it took a Javascript object, `insertMany` takes an _array_. So you're going to go with the brackets just like this.
 
-![large](../../../../../../.gitbook/assets/03-150_IMG2.png)
+![large](./03-150_IMG2.png)
 
 Then inside of this is where we're going to place our objects. So I'm going to write the first one then I'll just paste a few more in so you don't have to watch me type all of this but it is good to practice this just so you can become familiar.
 
 So I'm going to say _name_ _Confident Ruby_, and we're going to stick with our _publishDate_ as our second attribute there and we'll just start off with _new Date()_, obviously you could pass in a custom one and that should be a comma there.
 
-![large](../../../../../../.gitbook/assets/03-150_IMG3.png)
+![large](./03-150_IMG3.png)
 
 Now let's pass in authors now authors can have one author or it can have multiple for this one it's just going to be a single author.
 
 Now here we're going to pass in an object for the authors, we are going to pass in a `"name": "Avdi Grimm"`.
 
-![large](../../../../../../.gitbook/assets/03-150_IMG4.png)
+![large](./03-150_IMG4.png)
 
 Now I'm going to go and grab some other ones that I wrote out previously and now I'll paste those in. If you notice they have the exact same structure so we have a _name_ a _publishedDate_, _authors_ and then the authors _name_.
 
-![large](../../../../../../.gitbook/assets/03-150_IMG5.png)
+![large](./03-150_IMG5.png)
 
 So each one of these matches they're going to have the same structure, and now if I copy this come into the terminal and hit save then it's going to save those.
 
-![large](../../../../../../.gitbook/assets/03-150_IMG6.png)
+![large](./03-150_IMG6.png)
 
 Now this gives us a different return value.
 
@@ -212,31 +212,31 @@ If you're building out a large application there's probably going to be a time w
 
 I'm going to switch to Sublime Text and create that function. We're going to start off with `db.books`. So we're going to start off with the name of our database object which represents whatever database we're using then books, the name, and the collection, and then the function is `insertMany`.
 
-![large](../../../../../../.gitbook/assets/03-150_IMG1.png)
+![large](./03-150_IMG1.png)
 
 Now `insertMany` is a little bit different, remember that with insert it took a Javascript object, `insertMany` takes an _array_. So you're going to go with the brackets just like this.
 
-![large](../../../../../../.gitbook/assets/03-150_IMG2.png)
+![large](./03-150_IMG2.png)
 
 Then inside of this is where we're going to place our objects. So I'm going to write the first one then I'll just paste a few more in so you don't have to watch me type all of this but it is good to practice this just so you can become familiar.
 
 So I'm going to say _name_ _Confident Ruby_, and we're going to stick with our _publishDate_ as our second attribute there and we'll just start off with _new Date()_, obviously you could pass in a custom one and that should be a comma there.
 
-![large](../../../../../../.gitbook/assets/03-150_IMG3.png)
+![large](./03-150_IMG3.png)
 
 Now let's pass in authors now authors can have one author or it can have multiple for this one it's just going to be a single author.
 
 Now here we're going to pass in an object for the authors, we are going to pass in a `"name": "Avdi Grimm"`.
 
-![large](../../../../../../.gitbook/assets/03-150_IMG4.png)
+![large](./03-150_IMG4.png)
 
 Now I'm going to go and grab some other ones that I wrote out previously and now I'll paste those in. If you notice they have the exact same structure so we have a _name_ a _publishedDate_, _authors_ and then the authors _name_.
 
-![large](../../../../../../.gitbook/assets/03-150_IMG5.png)
+![large](./03-150_IMG5.png)
 
 So each one of these matches they're going to have the same structure, and now if I copy this come into the terminal and hit save then it's going to save those.
 
-![large](../../../../../../.gitbook/assets/03-150_IMG6.png)
+![large](./03-150_IMG6.png)
 
 Now this gives us a different return value.
 

@@ -10,7 +10,7 @@ Now that we reviewed each of the key elements that make up a sequence diagram, l
 
 ***
 
-![medium](../../../../../../../.gitbook/assets/07-182_IMG1.png)
+![medium](.././07-182_IMG1.png)
 
 We're going to use the commission engine that I worked on about a year or so ago. we can take a look at it in kind of a holistic approach
 
@@ -18,7 +18,7 @@ Right here we have a "user dashboard" we have a "commission setting" and then we
 
 I wanted to abstract the features and I knew I could focus on the details later on. first I needed to give myself a frame of reference for how the system needed to work.
 
-![medium](../../../../../../../.gitbook/assets/07-182_IMG2.png)
+![medium](.././07-182_IMG2.png)
 
 Starting with the user dashboard, the first thing that happens is they're going to be asked if they want to select or create a user. This is self-referential and this is one of the action executions, so they can choose to select or create a user. All of that is going to happen in the user dashboard, which means the message is being sent internally. For example, if we had a user dashboard class it is going to communicate with itself in order to process that request.
 
@@ -32,11 +32,11 @@ Then it checks on their setting permission. If I were to create a sequence diagr
 
 Moving down the lifeline of the user dashboard, you can see the first time where it communicates with an outside system, it sends the render form message to the commission setting participant.
 
-![medium](../../../../../../../.gitbook/assets/07-182_IMG3.png)
+![medium](.././07-182_IMG3.png)
 
 This might be an entire dashboard dedicated just to setting permissions or setting the commission values or it might be a nested form inside of the user dashboard. Once again it doesn't really matter for the sake of what sequence diagrams care about. They care about what the message looks like. They care about what happens when you send a message and it cares about what happens when it gets back and everything in between. It doesn't care about user interface it doesn't care about class names or module names or anything like that. In this case it's going to render the form and then from there you may notice that we're entering into a frame.
 
-![medium](../../../../../../../.gitbook/assets/07-182_IMG4.png)
+![medium](.././07-182_IMG4.png)
 
 I specifically added this frame to show that it's a loop, if I didn't, it may be more challenging for developer reading this to notice that there is a chance that there could be identical versions of these arguments and values and combinations. You don't really have to worry about those names as they are specific to the commission engine system that I was building out. What is important, if you need to show what a loop looks like, leveraging a frame is a great way of doing that. A developer can look at it and instantly see that whatever is encapsulated inside of that frame may have to occur multiple times.
 

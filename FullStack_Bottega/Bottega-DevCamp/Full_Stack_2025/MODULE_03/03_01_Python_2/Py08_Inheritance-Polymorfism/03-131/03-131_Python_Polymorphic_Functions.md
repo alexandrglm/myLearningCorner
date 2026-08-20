@@ -185,7 +185,7 @@ So now all I have to do to get this behavior is I can say `html_render(div_one)`
 
 So I'll say div\_two and the heading. And now if I come and I run this code it looks like I've got a little bit of an error.
 
-![large](../../../../../../../.gitbook/assets/03-131_IMG1.png)
+![large](.././03-131_IMG1.png)
 
 It says tuple object has no attribute of render.
 

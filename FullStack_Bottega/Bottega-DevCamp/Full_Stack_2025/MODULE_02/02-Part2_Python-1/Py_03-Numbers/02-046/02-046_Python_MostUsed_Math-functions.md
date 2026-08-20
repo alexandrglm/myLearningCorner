@@ -190,7 +190,7 @@ So you say ABS loss and what it's going to do is it's going to take the absolute
 
 So now if I run this you can see the value is 20.25
 
-![large](../../../../../../../.gitbook/assets/02-046_IMG1.png)
+![large](.././02-046_IMG1.png)
 
 So that is simply available to the number class inside a python and if you want to test it out if you delete or just remove or comment out.
 
@@ -206,7 +206,7 @@ So I'm going to say **math.floor** and then call in product cost.
 
 So now let me run this and you can see that the value is 89.
 
-![large](../../../../../../../.gitbook/assets/02-046_IMG1b.png)
+![large](.././02-046_IMG1b.png)
 
 And so what we have here at the product cost is it looked at it, returned an integer, and it picked the floor of this product cost float.
 
@@ -241,7 +241,7 @@ I want the rounded down lower version of that and the other issue with it is we 
 So math also has a contrapositive called ceil which is short for ceiling and so now if I\
 run this you'll see that we get 90.
 
-![large](../../../../../../../.gitbook/assets/02-046_IMG2.png)
+![large](.././02-046_IMG2.png)
 
 Ceiling is going to give us the rounded up value.
 
@@ -253,7 +253,7 @@ right here.
 
 ### Combining math.floor() + math.ceil()
 
-![IMG](../../../../../../../.gitbook/assets/nesting.png)
+![IMG](.././nesting.png)
 
 Now the other thing you can do that's pretty cool is you can combine these.
 
@@ -279,7 +279,7 @@ And just so that you believe me. Let's do it even without that let's just do los
 
 So loss by itself is going to return -20.25
 
-![large](../../../../../../../.gitbook/assets/02-046_IMG4.png)
+![large](.././02-046_IMG4.png)
 
 So when we call `floor` on it it actually is going to give the opposite as if it were a positive number so -21 is the floor value because it is lower for a negative number.
 
@@ -301,7 +301,7 @@ So right now it's at 89.99 If I run this it's 90.
 
 Now if I change this back to 89.12 it's 89.
 
-![large](../../../../../../../.gitbook/assets/02-046_IMG6.png)
+![large](.././02-046_IMG6.png)
 
 So if you are curious about how you can get to the closest whole number then round is a nice way to do that.
 
@@ -313,7 +313,7 @@ They are square root and then we're going to work with exponents.
 
 So I'm going to copy that. And now instead of `round` I'm going to say math.sqrt and that's how you spell square root in the function. S Q R T and now if I run this we get a floating-point number of 9.48 and then a string of values
 
-![large](../../../../../../../.gitbook/assets/02-046_IMG7.png)
+![large](.././02-046_IMG7.png)
 
 So that is how you can quickly get the square root which is an incredibly helpful little function that I've used a number of times.
 
@@ -333,7 +333,7 @@ Now, this is the equivalent as you may have noticed to simply doing this because
 
 And if I run that I get the exact same number.
 
-![large](../../../../../../../.gitbook/assets/02-046_IMG8.png)
+![large](.././02-046_IMG8.png)
 
 ### "base \*\* exponent" VS math.pow(base, exponent)
 
@@ -341,7 +341,7 @@ If you're curious about why you'd want to use one versus the other:
 
 \*\*The answer is in the output. \*\*
 
-![IMG](../../../../../../../.gitbook/assets/exponents_vs_mathpow.png)
+![IMG](.././exponents_vs_mathpow.png)
 
 1. math.pow(b, e) returns **float-point numbers.**
 2. b \*\* e returns **Integers.**

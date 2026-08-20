@@ -105,13 +105,13 @@ So, in this case, let's imagine that we're building some type of sports Web appl
 
 And, now, if I try to print out the featured team you'll see that it works and it prints out the players for the Astros:
 
-![large](../../../../../../../../.gitbook/assets/02-065_IMG1.png)
+![large](../.././02-065_IMG1.png)
 
 because we looked up the Astro's and there is a key rate here and that all works perfectly.
 
 Now, what happens if we try to look up a key that does not exist in the dictionary. If I try running this now you'll see that we get an error and this gives us a full traceback and it says a key error "NONEXISTENT" right here
 
-![large](../../../../../../../../.gitbook/assets/02-065_IMG2.png)
+![large](../.././02-065_IMG2.png)
 
 which if you start as you're starting to learn what the error messages mean what this means is that there is no key named mets inside of this team's dictionary and this is fine sometimes there is going to be plenty of times where you are going to want to get this kind of an error because you do want an error to be thrown if the key doesn't\
 exist.
@@ -134,7 +134,7 @@ So if I want it to be simply a string that says no featured team then let's see 
 
 So if I run this we no longer get the error. Now it simply prints out no featured team.
 
-![large](../../../../../../../../.gitbook/assets/02-065_IMG3.png)
+![large](../.././02-065_IMG3.png)
 
 **Now, this is considered a best practice in the Python community to make sure that you are catching any kind of scenarios that have a situation like this where we're looking up a key that may or may not exist and you want to have some type of fallback and so this is going to give you instant feedback to let you know that what you tried to look up doesn't actually exist inside of the team's dictionary.**
 
@@ -142,7 +142,7 @@ Now, if we were to type in one that works.
 
 If I were to type in Yankees right here and run it you can see that it returns properly.
 
-![large](../../../../../../../../.gitbook/assets/02-065_IMG4.png)
+![large](../.././02-065_IMG4.png)
 
 So, this gives us almost like a conditional approach so I have performed these kinds of checks and other programming languages where I check to see something like this where I say if teams.
 

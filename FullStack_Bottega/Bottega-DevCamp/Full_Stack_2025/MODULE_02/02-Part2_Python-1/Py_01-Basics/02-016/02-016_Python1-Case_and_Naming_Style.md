@@ -21,7 +21,7 @@ When doing so, you want to be able to use the standard conventions that other Py
 PostCount = 42
 ```
 
-![IMG](../../../../../../../.gitbook/assets/02-016_IMG1.png)
+![IMG](.././02-016_IMG1.png)
 
 Technically, this would work except this is an issue if you were to further pursue Python developing.
 
@@ -79,7 +79,7 @@ To get an idea of what each represents, I recommend going through these. Not onl
 
 For example, I often look through students' files to find variable names with both capitalization and underscores between words.
 
-![IMG](../../../../../../../.gitbook/assets/02-016_IMG2.png)
+![IMG](.././02-016_IMG2.png)
 
 I would highly recommend taking this advice to access the best practice early on.
 
@@ -89,7 +89,7 @@ Another element worth mentioning is the letters that should never be used as a s
 * capital "O"
 * capital "i".
 
-![IMG](../../../../../../../.gitbook/assets/02-016_IMG3.png)
+![IMG](.././02-016_IMG3.png)
 
 The reason for this is that the lowercase "L" and uppercase "i" look nearly identical and the letter "O" can be mistaken for a zero.
 

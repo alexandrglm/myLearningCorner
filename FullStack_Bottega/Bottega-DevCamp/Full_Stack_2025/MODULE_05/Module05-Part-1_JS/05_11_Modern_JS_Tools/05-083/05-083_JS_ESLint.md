@@ -231,11 +231,11 @@ So before you go into that what exactly is a Linting tool. Well Lent is the proc
 
 So there is a very wide selection of different Linting tools and settings. And so what I want to walk there is more just to introduce what Linting is and then, later on, we may choose to implement it into a project. But for right now I just want to kind of give you the high-level concept. So let's walk through a basic example I'm going to create a greeting function here so I'll say const greeting and then I'm going to create an arrow function and then inside of it I'll just say return. And one thing you may notice as I'm typing it shows that there are error messages here and it says exactly where it is.
 
-![large](../../../../../../../.gitbook/assets/05-083_IMG1.png)
+![large](.././05-083_IMG1.png)
 
 and it makes sense because I haven't closed off the curly brackets I haven't added what the return value is going to be and you'll keep on seeing new errors popping up which is perfectly fine. So say hi there. Close it off and now you see another error.
 
-![large](../../../../../../../.gitbook/assets/05-083_IMG2.png)
+![large](.././05-083_IMG2.png)
 
 Now, this is more of a warning and it's very helpful, imagine that you have a very large program common best practice is to make sure that you don't build any functions that are not being used. And so if I hover over this it says greeting is assigned a value but never used. This may seem kind of like a trivial thing if you have one single function like we have here.
 
@@ -247,7 +247,7 @@ So what this is saying is hey you have this function you're assigning a value bu
 
 Now there are also some best practices that are integrated into these types of things so if I were to type in console log it is going to throw an error and it says an expected console statement. If I hover over it said unexpected console statement no console.
 
-![large](../../../../../../../.gitbook/assets/05-083_IMG4.png)
+![large](.././05-083_IMG4.png)
 
 Now the reason for this is, imagine a scenario where you have a production application and you are performing debugging, and so you add some console log statements as you are building out the program or fixing a bug and then you push that to production so you push your new fixed patch up to production and you forget to take out your console logs statements. What that could lead to is imagine that your console logs statements were making available certain security kinds of elements so your secret keys or something like that and that's a security vulnerability that you may not think of at first.
 
@@ -255,13 +255,13 @@ But I have seen applications where the developers did not have a Linting tool in
 
 Now you have a full set of rules configurations here and if I scroll down and actually can call out if you notice right when I hovered over it gave this little no console. That is their official name for the rules so if I just search for no console on the page you can see that it's right here and if I take this off each one of these things each one of these elements is a rule that I can remove. And so if I remove this then it's no longer going to have that error so here I can see that we are now completely lint free.
 
-![large](../../../../../../../.gitbook/assets/05-083_IMG5.png)
+![large](.././05-083_IMG5.png)
 
 And so what you may choose to do depending on how you have this type of service integrated into your project. You may choose to have console log statements be perfectly fine in your development environment and then create another set of rules for production to make sure that you wouldn't do something like push that up to a production application. And so this is a cool set of options where you can just go pick and choose all of the kinds of elements that you want to allow or not allow with these rules
 
 After you're done you can actually download an entire configuration JSON file
 
-![large](../../../../../../../.gitbook/assets/05-083_IMG6.png)
+![large](.././05-083_IMG6.png)
 
 And we're not going to do that now because you really only need to do this when you're building now a full project. Right now we're learning concepts and those kinds of things but we don't need to integrate this. This is more for what you would do with the project but I did want to show it to you one because it's pretty cool and I think it can be helpful for when you do get the point where you're building out projects.
 

@@ -194,7 +194,7 @@ function clearMessages() {
 
 So I've kept all the same code from the previous guide and this is going to be a pretty short lesson because all we're going to do is we're going to come here and we're going to add a new button. So I'm going to create a new button and I want it inside of this for it just to say `Clear messages` and then I want to give it an `onclick` handler.
 
-![large](../../../../../../../.gitbook/assets/06-124_IMG1.png)
+![large](.././06-124_IMG1.png)
 
 So say on click and we can just say `"clearMessages()"` and this is going to be a function that we need to create. Moving down here below the function make sure that you do this after the brackets here. And so when I'm going to do is create a `function` called `clearMessages()`. Once again it's not going to take any arguments and it's going to be a pretty basic one it's actually only going to be two lines of code.
 
@@ -204,7 +204,7 @@ And so now all we have to do is iterate over them and remove them so I can say `
 
 So I'm actually a keep it at `message` and then pass in an arrow function here and then say `message.remove` remove is a function provided to us in the latest version of JavaScript. And now if I hit save you can see that we have this new button here. Now the only reason is on 2 lines is because this is a just a very narrow window. Now let's test it out if I type. Clear message nothing is going to happen. Now let's see if it works with messages there.
 
-![large](../../../../../../../.gitbook/assets/06-124_IMG2.png)
+![large](.././06-124_IMG2.png)
 
 So say hi there and submit. And then another one submit that one and the third one just for good measure. And now if I hit clearMessages you can see it goes through and it removes them. Now let's see what's actually going on behind the scenes. If I click on element let's inspect the body and I can shrink this down a little bit and let's go into our widget and I'm going to add another one. As you can see right here it added that div and if I type another one again you can see we keep on adding these divs exactly like how we'd expect.
 

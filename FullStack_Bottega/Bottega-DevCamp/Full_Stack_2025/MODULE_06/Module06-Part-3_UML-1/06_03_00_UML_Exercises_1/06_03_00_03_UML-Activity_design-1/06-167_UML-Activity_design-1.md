@@ -69,7 +69,7 @@ Como cada Punto de Acción (Cada Acción) recae sobre un actor u otro, es import
 
 ## 2. Diagrama de Actividad
 
-![large](<../../../../../../../.gitbook/assets/Diagram 2025-06-13 22-21-16.png>)
+![large](<.././Diagram 2025-06-13 22-21-16.png>)
 
 Desarrollado en [UMLetino](https://www.umletino.com/umletino.html).
 

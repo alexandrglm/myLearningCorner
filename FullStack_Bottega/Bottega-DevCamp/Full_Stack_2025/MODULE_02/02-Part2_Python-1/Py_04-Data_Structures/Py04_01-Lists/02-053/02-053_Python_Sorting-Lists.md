@@ -126,7 +126,7 @@ So that means that if we make a change to our list that change is permanent so w
 
 Now, if I run yes you can see that it has swapped and now our sort function has all of the elements in alphabetical order.
 
-![large](../../../../../../../../.gitbook/assets/02-053_IMG1.png)
+![large](../.././02-053_IMG1.png)
 
 We have `code`, `development` , `python` and `tutorials`, alphabetically, so that works perfectly fine and that's something that is really nice.
 
@@ -154,7 +154,7 @@ And now what I can do if I run this it's going to show that this has\
 now been sorted and our tags are now in the opposite order. It has\
 tutorials, Python, development, and then code.
 
-![large](../../../../../../../../.gitbook/assets/02-053_IMG2.png)
+![large](../.././02-053_IMG2.png)
 
 So, this is taking the value of the alphabetical list and it simply flipping it back.
 
@@ -172,7 +172,7 @@ If I want to print(totals) just to make sure that our integer list here works I 
 
 Now if I want to call sort so I can just call `totals.sort()` and now print this out. You can see that it sorts them by their value.
 
-![large](../../../../../../../../.gitbook/assets/02-053_IMG3.png)
+![large](../.././02-053_IMG3.png)
 
 So, **this is how the sort function works and it works differently for strings than it does for integers by integers**.
 
@@ -181,7 +181,7 @@ It is sorting by the value that the integer represents when it comes to strings.
 It's sorting them in alphabetical order and if you want you can obviously call`reverse=True` on this if I can spell it correctly. And now if I run it\
 again you'll see that it goes from the greatest value all the way down.
 
-![large](../../../../../../../../.gitbook/assets/02-053_IMG4.png)
+![large](../.././02-053_IMG4.png)
 
 And the sort function is pretty intuitive in being able to check to see which values are inside and which data type is contained inside of each one of these elements and then it adjusts how it performs its sorting process based off, on that.
 

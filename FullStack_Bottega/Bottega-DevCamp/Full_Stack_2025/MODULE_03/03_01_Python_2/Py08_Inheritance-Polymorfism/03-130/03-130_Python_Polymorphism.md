@@ -245,7 +245,7 @@ going to walk through it right afterward and we're guessing exactly\
 what's going on. But first, let's try to run it. So you're going to run\
 python oop\_guide.
 
-![large](../../../../../../../.gitbook/assets/03-130_IMG1.png)
+![large](.././03-130_IMG1.png)
 
 And right here it's just printing out everything so it looks like we\
 do not have any typos or anything like that. So you can see it's\

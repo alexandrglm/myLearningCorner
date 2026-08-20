@@ -17,7 +17,7 @@ is at a flat line. It doesn't have any days in the code editor.
 
 > Important Note: It's recommended to not install a large number of VS Code extensions at this stage, since they can have some side effects that could interfere with your projects.
 
-![large](../../../../../../.gitbook/assets/06-021_IMG1.png)
+![large](./06-021_IMG1.png)
 
 Over the next two guides I'm gonna show you how you can actually trigger this, and we're also gonna build a pretty cool little application. It's actually a pretty advanced application, so I'm not gonna have you worry about learning every little piece of it. I'm gonna give you the code, we're gonna walk through what it's doing but then as you go through the course it's gonna start to make more sense. I don't want you to worry or get intimidated about it right now.
 
@@ -29,27 +29,27 @@ So I wanted to build a tool that would allow you to visualize that and to track 
 
 So let's get started. We're gonna start off inside of visual studio code here. Now I want you to go down into the extensions panel, click on that. And then in the extensions marketplace type
 
-![large](../../../../../../.gitbook/assets/06-021_IMG2.png)
+![large](./06-021_IMG2.png)
 
 So this is gonna install it. And as you can see you have this little check mark that says devCamp down below here,
 
-![large](../../../../../../.gitbook/assets/06-021_IMG3.png)
+![large](./06-021_IMG3.png)
 
 yours may or may not show up quite yet. You may have to do the next step first. So what the next step is and I have the instructions here in the setup and it says copy your visual studio code token from your account page.
 
 Well, where is that? Well, you can click on this link, click open and it's gonna pop open your account, your personal info.
 
-![large](../../../../../../.gitbook/assets/06-021_IMG4.png)
+![large](./06-021_IMG4.png)
 
-![large](../../../../../../.gitbook/assets/06-021_IMG5.png)
+![large](./06-021_IMG5.png)
 
-![large](../../../../../../.gitbook/assets/06-021_IMG6.png)
+![large](./06-021_IMG6.png)
 
 So right here, you can see you have a API token your visual studio code token, click copy to clipboard and that's gonna place it in your clipboard and then open visual studio code again and then follow these commands. It says open the command palette, and you can do that on Mac typing command and then a P and then a shift. So command shift P and then on windows, shift control P.
 
 So depending on your operating system type those commands. So I'm on a Mac. So I'm gonna type command shift P it's gonna pop this open and then start typing devCamp provide token then hit return. And then up top there, you can see it gives you instructions it says provide the token from your account settings.
 
-![large](../../../../../../.gitbook/assets/06-021_IMG7.png)
+![large](./06-021_IMG7.png)
 
 So if you copied that to clipboard, just paste that in and then hit return. And then assuming you have this little devCamp check mark here, that means that this is all working.
 

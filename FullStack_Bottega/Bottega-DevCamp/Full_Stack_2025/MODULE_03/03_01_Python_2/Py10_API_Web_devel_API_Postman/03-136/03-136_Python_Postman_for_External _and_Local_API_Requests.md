@@ -245,7 +245,7 @@ have our application communicate with another server in another\
 application. So if you scroll down a little bit click on most recent\
 posts what an API gives you is a set of endpoints.
 
-![large](../../../../../../../.gitbook/assets/03-136_IMG1.png)
+![large](.././03-136_IMG1.png)
 
 So an endpoint is just a URL. So right here, this URL is `https://api.dailysmarty.com/posts` so this is just a URL, just like if you were going to go to it in your\
 browser. Now the difference here is that this is going to return JSON\
@@ -258,7 +258,7 @@ parse it and then render it on the screen. So if I copy this and paste\
 it into the browser then you're going to see that we get data right\
 here.
 
-![large](../../../../../../../.gitbook/assets/03-136_IMG2.png)
+![large](.././03-136_IMG2.png)
 
 So even though we are not using any kind of outside application or\
 any kind of framework you can go to this endpoint. It's really just a\
@@ -282,9 +282,9 @@ be the same no matter what version you have and we want to set up a\
 basic request so if I click on request right here it allows us to give\
 it a name.
 
-![large](../../../../../../../.gitbook/assets/03-136_IMG3.png)
+![large](.././03-136_IMG3.png)
 
-![large](../../../../../../../.gitbook/assets/03-136_IMG4.png)
+![large](.././03-136_IMG4.png)
 
 So I'm just going to say `Daily Smart Production Posts`\
 and then it also gives you the ability to create a collection. Now, this\
@@ -301,7 +301,7 @@ that there are multiple what are called HTTP verbs. So if you click on\
 this dialog box here this is going to give you access to each one of\
 those verbs.
 
-![large](../../../../../../../.gitbook/assets/03-136_IMG5.png)
+![large](.././03-136_IMG5.png)
 
 Now the most popular ones are here at the top. Like GET, POST, PUT,\
 PATCH, and DELETE. Now if we go back and look at that documentation you\
@@ -315,7 +315,7 @@ to this post endpoint then what we're saying is we want to get data back\
 just like we have in this example. So in order to run this in Postman I\
 can just paste this full link.
 
-![large](../../../../../../../.gitbook/assets/03-136_IMG6.png)
+![large](.././03-136_IMG6.png)
 
 We do not have any kind of authorization, this is important to know\
 because whenever you start to work with applications that require a\
@@ -336,7 +336,7 @@ with that outside API and then whenever it gets data back then it's\
 going to return it and we're going to be able to see it right here on\
 the screen.
 
-![large](../../../../../../../.gitbook/assets/03-136_IMG7.png)
+![large](.././03-136_IMG7.png)
 
 And there we go. So right here you can see this is coming in from a\
 live application. So this is as I'm recording this. This is the set of\
@@ -351,7 +351,7 @@ you'll be able to see exactly that post. I'm no longer in the API right\
 now, I'm just looking at the regular app, and in this case, it's a Rails\
 application, and you can see that post is here.
 
-![large](../../../../../../../.gitbook/assets/03-136_IMG8.png)
+![large](.././03-136_IMG8.png)
 
 It says steps for building a flask API with Python 3 and it has all\
 of the data, and if you scroll all the way down to the bottom it has\
@@ -421,7 +421,7 @@ communicate. So what I can come here and do is in Postman I'm going to\
 create another request here and I'm just going to type a localhost. This\
 will give me 3000. And then I have an endpoint called guides.
 
-![large](../../../../../../../.gitbook/assets/03-136_IMG9.png)
+![large](.././03-136_IMG9.png)
 
 Now unless you have this on your local machine then you're not going\
 to be able to type this exact command. I'm just doing this to show you\

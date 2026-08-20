@@ -204,12 +204,12 @@ And then adding our else condition we'll just say print and say you shall not pa
 
 Now let's run this and see if it's working. And as you can see right there access was permitted.
 
-![large](../../../../../../../../.gitbook/assets/03-094_IMG1.png)
+![large](../.././03-094_IMG1.png)
 
 Now, if the username got changed and now we changed it to something that does not match and run it you can see it says "You shall not pass!"\
 So this is working properly.
 
-![large](../../../../../../../../.gitbook/assets/03-094_IMG2.png)
+![large](../.././03-094_IMG2.png)
 
 Now, if this looks a little odd to you.
 
@@ -223,7 +223,7 @@ that it's possible instead of and I'm going to just add a colon and move the pas
 Now, we're saying if the username is jonsnow come into this code block. Once you're inside, check to see if the password is equal to thenorth. If that matches then you\
 can say access permitted and I'll change this back to the correct answer and if I run this you can see that it is still working properly so everything is good here.
 
-![large](../../../../../../../../.gitbook/assets/03-094_IMG1.png)
+![large](../.././03-094_IMG1.png)
 
 Now, **I wouldn't recommend doing it this way but I do like showing new alternate versions whenever they're there**.
 
@@ -296,13 +296,13 @@ Imagine a scenario where you've built out a login feature and you want to allow 
 
 So, now, if I come up and I run this code you can see access is still permitted even though I made the username blank.
 
-![large](../../../../../../../../.gitbook/assets/03-094_IMG6.png)
+![large](../.././03-094_IMG6.png)
 
 Because what happens is it comes in it sees the username doesn't match but says that's still okay because we have a or operator here and then it goes and it looks to see okay what does the email address do if it matches. Then it says okay this entire expression here is true.
 
 Now, if I come down here and say [jon@snow.net](mailto:jon@snow.net) instead of .com this is no longer going to match and so it should say you shall not pass. So if I hit run that executes properly.
 
-![large](../../../../../../../../.gitbook/assets/03-094_IMG7.png)
+![large](../.././03-094_IMG7.png)
 
 So, this entire expression here got returned as false and so everything is working properly. Now if I switch this back so it's .com so we know this is true but then our password is false and I run this.
 
@@ -311,7 +311,7 @@ It also is going to say you shall not pass because we are back in the situation 
 So, this full expression hs to return True and Everything on the right-hand side has\
 to return true as well.
 
-![large](../../../../../../../../.gitbook/assets/03-094_IMG8.png)
+![large](../.././03-094_IMG8.png)
 
 So in summary that is how to use the and the or operator.
 
@@ -335,7 +335,7 @@ Then we can print this out you can access the admin dashboard and else we\
 can print out you can only access the standard dashboard. So now if I\
 run this you can see it says you can only access the standard dashboard.
 
-![large](../../../../../../../../.gitbook/assets/03-094_IMG9.png)
+![large](../.././03-094_IMG9.png)
 
 And so what is going on here? Well let's look at the top of the very beginning we have a logged-in user that is set to true a standard user.
 
@@ -371,7 +371,7 @@ standard user. So this is false. And if we run this code it says that\
 you can access the admin dashboard because in this case, everything is\
 working.
 
-![large](../../../../../../../../.gitbook/assets/03-094_IMG9b.png)
+![large](../.././03-094_IMG9b.png)
 
 This side is true. And then on the right-hand side, this is false and\
 because of that, the entire expression returns true and it will execute\

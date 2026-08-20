@@ -245,7 +245,7 @@ Instead, we're just using elements and **we're listing the elements out just lik
 
 If I come down here and print out tags, everything here will work as normal so you can see we have tutorials python and coding and this has the set syntax where we have these curly brackets.
 
-![large](../../../../../../../.gitbook/assets/03-078_IMG1.png)
+![large](.././03-078_IMG1.png)
 
 ***
 
@@ -260,7 +260,7 @@ If I add a new duplicate item such as coding again notice how we have three elem
 
 If I run this one more time notice how we still have 3 elements even though we have coding listed twice. It is not included in the output.
 
-![large](../../../../../../../.gitbook/assets/03-078_IMG2.png)
+![large](.././03-078_IMG2.png)
 
 That is very important whenever we're using a set, our set is always going to be guaranteed to have unique elements and so that is one of the top reasons.
 
@@ -282,11 +282,11 @@ print(tags[0])
 
 However, if I run this for one you can see we have an error right there
 
-![large](../../../../../../../.gitbook/assets/03-078_IMG3.png)
+![large](.././03-078_IMG3.png)
 
 But let's try it anyway and I'm going to run it. You can see we have an error
 
-![large](../../../../../../../.gitbook/assets/03-078_IMG4.png)
+![large](.././03-078_IMG4.png)
 
 where it says traceback file python line X, which is right here and set and so it knows this is a set object does not support indexing so this tells us exactly what our problem is.
 
@@ -302,7 +302,7 @@ so let's see what that looks like. So if I say query and I'm going to\
 create a couple of them if I say query\_one and I check to see is python\
 in this set I can say `'python' in tags` and let's see what this gives us. So I'm going to try to print this out and it's going to tell me that it is true.
 
-![large](../../../../../../../.gitbook/assets/03-078_IMG5.png)
+![large](.././03-078_IMG5.png)
 
 So, what our query is going to give us back is not the element because, obviously, we already know what the element is right here.
 
@@ -310,7 +310,7 @@ We are asking in this set of tags is python does it exist in there and if it doe
 
 Now, if we duplicate this and create another query, I'm going to say query\_two, and we can just say is `'ruby' in tags` and try to print that out. We're going to get a false.
 
-![large](../../../../../../../.gitbook/assets/03-078_IMG6.png)
+![large](.././03-078_IMG6.png)
 
 because ruby does not exist in this list of tags or in the set of tags and that's exactly what we get.
 
@@ -353,7 +353,7 @@ print(tags)
 
 As you can see, a frozen set cannot handle any manipulation:
 
-![IMG](../../../../../../../.gitbook/assets/03-078_IMG7.png)
+![IMG](.././03-078_IMG7.png)
 
 ***
 

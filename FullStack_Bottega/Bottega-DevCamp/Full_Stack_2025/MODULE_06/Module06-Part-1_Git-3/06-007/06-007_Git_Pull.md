@@ -176,7 +176,7 @@ However, if you're working with a team then that adds a whole nother component a
 
 So if I come up to my\_file.py right here
 
-![large](../../../../../../.gitbook/assets/06-007_IMG1.png)
+![large](./06-007_IMG1.png)
 
 you have the ability to come and to make changes directly in Github.
 
@@ -190,26 +190,26 @@ print('Hi from another dev')
 
 And now if I come down here I can update the changes so I'll just say updated python code and then from there I can commit changes
 
-![large](../../../../../../.gitbook/assets/06-007_IMG2.png)
+![large](./06-007_IMG2.png)
 
 and it gives you a few options. But like I said you're very rarely ever going to be making changes directly on GitHub what you usually want to make sure that if you're personally making changes to a repository you're doing it on your local machine and then pushing it up but right here we're just pretending that there is another developer who made a change to this file.
 
 Now if I come down to my local repository so if I open this up in the text editor and look at my file you notice I do not have those changes.
 
-![large](../../../../../../.gitbook/assets/06-007_IMG3.png)
+![large](./06-007_IMG3.png)
 
 So we need to walk through how we can pull down the latest version of the application. So the way we can do that is with the term git pull. So if I type in git pull this is going to bring down after I type in my password the latest version of the application.
 
-![large](../../../../../../.gitbook/assets/06-007_IMG4.png)
+![large](./06-007_IMG4.png)
 
 So if I come and see that it is calling the remote it is comparing the objects and then from there, it is updating the current version so it's giving the new version with this new commit ID. And then you can even see it tells you which file was changed and it had two lines that were added.
 
 And so now if I type status there are no changes because we brought down the newest changes
 
-![large](../../../../../../.gitbook/assets/06-007_IMG5.png)
+![large](./06-007_IMG5.png)
 
 and if I open the file up you can see that the file has been updated
 
-![large](../../../../../../.gitbook/assets/06-007_IMG6.png)
+![large](.06-007_IMG6.png)
 
 and so that is how you can pull down someone else's changes onto your local machine.

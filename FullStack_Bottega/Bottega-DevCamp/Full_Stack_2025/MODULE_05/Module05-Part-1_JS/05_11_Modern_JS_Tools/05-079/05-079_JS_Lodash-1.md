@@ -239,7 +239,7 @@ to having to write all of the code yourself.
 
 Now obviously that doesn't mean it'll write all your code for you. However, it does have some very helpful functions and in the show notes, you will see a link directly to the lodash system, and then if you click on documentation right here you can see all of the different functions that are available inside of lodash.
 
-![large](../../../../../../../.gitbook/assets/05-079_IMG1.png)
+![large](.././05-079_IMG1.png)
 
 This is a very useful library it is something that I utilize on pretty much every project that I have because it brings quite a bit of power and robustness when it comes to functions such as chunk, or compact, or the full list of all of these things and so what we're going to do in this guide is we're going to walk through five of the most popular ones and the ones that I use the most often.
 
@@ -269,7 +269,7 @@ Now in a real-world application such as a react application than you wouldn't do
 
 So now that we have this set up now I want to go and let's see how we can start writing this code. And also because what we're going to be doing is we're going to be outputting this to the browser console. So just open up that file so wherever you save that file open up in the browser and then so right here mine is just index I'm going to open that up and you'll see it's blank. So just open up your javascript console which you can hit command option J if you're on a Mac you can also just right click then click on inspect and then click on console and this is going to actually be where our output is shown.
 
-![large](../../../../../../../.gitbook/assets/05-079_IMG2.png)
+![large](.././05-079_IMG2.png)
 
 I'm going to bring our console up because all of our output is going to be right here we're not to render anything on the page itself. And now that we have this I'm going to zoom in just so you can see everything a little bit easier. Okay so with all this setup in place now we can actually start building out the program and the very first function that we're going to analyze is going to be the Times function.
 
@@ -306,15 +306,15 @@ And so this is essentially us simply calling randNumber five times and then the 
     console.log(sampleNumbers);
 ```
 
-![large](../../../../../../../.gitbook/assets/05-079_IMG3.png)
+![large](.././05-079_IMG3.png)
 
 So this is console logged and you can see we have five random numbers of 62, 58, 35, 12, and 3. Now if I hit refresh now you can see we have different numbers.
 
-![large](../../../../../../../.gitbook/assets/05-079_IMG4.png)
+![large](.././05-079_IMG4.png)
 
 So what we are essentially doing is we're running this process but it is different each time. So you're going to have a different set of numbers theoretically every once in a while from a probability perspective every once in a while you will have a duplicate but for the most part, you should be pretty safe and you should have a new and nice set of random numbers every time.
 
-![large](../../../../../../../.gitbook/assets/05-079_IMG5.png)
+![large](.././05-079_IMG5.png)
 
 If we didn't do this, if we didn't call times what we'd have to do is create a loop and then we'd say OK for X number of times I want you to loop through either with a while loop or some type of for loop I want you to iterate and then call this function each one of those times.
 
@@ -330,7 +330,7 @@ Now if we were to do this without a tool like filter that would take a lot of co
 
 Then I created five other ones and they're all mapped here.
 
-![large](../../../../../../../.gitbook/assets/05-079_IMG6.png)
+![large](.././05-079_IMG6.png)
 
 If you look you can see we have batting averages for two of the players Altuve and Gonzalez that are over .300 and everyone else was under 300. So what I want to do is imagine a scenario where I'm building out some type of top player report or say I'm working on the MLB website and I've been hired to do that and I want to show all of the players that are above .300 or maybe I want to highlight them how can I go in and grab that? Because that's not the most intuitive thing.
 
@@ -348,11 +348,11 @@ const over300 = _.filter(players, player => {
 console.log(over300);
 ```
 
-![large](../../../../../../../.gitbook/assets/05-079_IMG7.png)
+![large](.././05-079_IMG7.png)
 
 Now, if we come back here to the browser and hit refresh you can see that we get an array of two items and if I open this up you can see there are the two players that were over .300 we could flip this if we wanted. And I could say that I want everyone below .300 and then it's going to switch it up so it clear and then refresh. Now you can see we have three items and they are the people who were under 300
 
-![large](../../../../../../../.gitbook/assets/05-079_IMG8.png)
+![large](.././05-079_IMG8.png)
 
 Obviously, you could do greater than or equal to or anything like that and it would all work so you can see after making that change we're back to having Altuve and Gonzalez so this is working.
 

@@ -311,7 +311,7 @@ Customer
 
 ```
 
-![large](../../../../../../../.gitbook/assets/Class-Customer_conGETTER.png)
+![large](.././Class-Customer_conGETTER.png)
 
 \*\* Es importante señalar que UML, al final, no define código, sino conceptos de diseño.\*\*
 
@@ -334,7 +334,7 @@ En nuestro código "antiguo" como en el moderno, donde estamos especificando var
 
 ### 7. UML actual, simplificado, sin variables privadas con interfaz pública.
 
-![large](../../../../../../../.gitbook/assets/Class-Customer_SIMPLIFIC.png)
+![large](.././Class-Customer_SIMPLIFIC.png)
 
 ```
 Customer

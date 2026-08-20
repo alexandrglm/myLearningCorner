@@ -42,7 +42,7 @@ const toCapital = str => {
 
 Now, let's see what this looks like. If I call toCapital, and then I pass it, let's pass it the longStr, you can see that we're getting undefined, cause I need to return this. Here I'll say, return words, there you go. You can see that we're getting an array of the words, and they're all split up the way we want.
 
-![large](../../../../../../../.gitbook/assets/06-133_IMG1.png)
+![large](.././06-133_IMG1.png)
 
 That's the first step. Really, we only have one more line of code, in order to get this working. Instead of returning words, what I wanna do is, return words and I wanna map over it. I want to iterate over the collection of words we just created, and run a process here.
 
@@ -62,7 +62,7 @@ If I say, let's just grab some word, so let's just call it word actually, just t
 
 Here, you can see that I am calling the string, word and I'm calling slice on it. And then I pass in one, and you see this returns ord.
 
-![large](../../../../../../../.gitbook/assets/06-133_IMG2.png)
+![large](.././06-133_IMG2.png)
 
 Slice is a really helpful function when you're working with strings and you want to slice them up. Now, by default, if you only pass in one value, what this is gonna do, is it's gonna start at whatever index you pass in. Since I'm passing in one, that means that it's gonna start at index one, which is the O, and then it's just gonna return the rest of the string.
 
@@ -72,7 +72,7 @@ We simply want it to skip whatever the first letter is, and then return that. Th
 
 Let's un-comment this out and finish out this function. I'm saying word.slice, let's close it off. As you can see right here, when we're calling this function, this is now working. We can already tell that it's working, because each one of these words, now has a capital for the very first letter.
 
-![large](../../../../../../../.gitbook/assets/06-133_IMG3.png)
+![large](.././06-133_IMG3.png)
 
 We wanna also just return a string, not an array, so from there, just say, join, and then we're going to join it with a space. Right up here, we remove the space when we combined it, here we're adding it, so we're returning a string. Just hit save.
 

@@ -79,7 +79,7 @@ print(letter)
 
 Finally, if I run this you can see that it prints out each one of the elements exactly like how we walk through with the data collections.
 
-![large](../../../../../../../../.gitbook/assets/03-083_IMG1.png)
+![large](../.././03-083_IMG1.png)
 
 ***
 

@@ -32,7 +32,7 @@
 
 Frames in UML are **encapsulation containers** that provide contextual boundaries around diagram elements.
 
-![large](../../../../../../../.gitbook/assets/06-153_IMG3.png)
+![large](.././06-153_IMG3.png)
 
 They **serve as visual organizers** that wrap entire diagrams or significant portions of diagrams within a **defined boundary**, complete **with descriptive headers** that immediately communicate the diagram's purpose, type, and scope.
 
@@ -42,7 +42,7 @@ Just as a labeled folder helps **you quickly identify its contents without openi
 
 ### Purpose
 
-![large](../../../../../../../.gitbook/assets/06-153_IMG1.png)
+![large](.././06-153_IMG1.png)
 
 #### Primary Functions
 
@@ -66,7 +66,7 @@ Just as a labeled folder helps **you quickly identify its contents without openi
 
 Every UML frame consists of **TWO** essential components:
 
-![](../../../../../../../.gitbook/assets/06-153_IMG04.png)
+![](.././06-153_IMG04.png)
 
 #### Frame Border
 
@@ -424,15 +424,15 @@ You want to know a couple of things:
 
 As you start to get into more advanced UML diagrams there are some subtle differences and it's nice when you can have a mapping of how you can understand what one is just by looking at it. How we implement that is by having some headings and then we have descriptive notation on what the model is, we'll go into a direct mapping and a common naming convention that you can use. Once again, the most important reason why you want to implement frames is because when you are working on large systems, you and the developers that are working with the system, want to instantly understand the context and what you're talking about.
 
-![large](../../../../../../../.gitbook/assets/06-153_IMG1.png)
+![large](.././06-153_IMG1.png)
 
 The next thing we're to talk about is the diagram mapping for frames. I talked about how you need to have a standardized naming convention, this is the one that is recommended by UML.
 
-![large](../../../../../../../.gitbook/assets/06-153_IMG2.png)
+![large](.././06-153_IMG2.png)
 
 The example we have right here is for a Use Case Diagram.
 
-![large](../../../../../../../.gitbook/assets/06-153_IMG3.png)
+![large](.././06-153_IMG3.png)
 
 The important part to look at is in the top left-hand side, you see where it says UC SongRequest and then it's wrapping the entire thing in a box. What this allows me as a developer to see is if someone else's software engineer brings me this diagram I can instantly tell that this is a use case diagram because of the little UC in the top left-hand side. I know that it is a use case diagram for the SongRequest module so I'm going to know exactly where this needs to be implemented in the application. I also will know how to interpret the diagram.
 

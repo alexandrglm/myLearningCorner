@@ -291,7 +291,7 @@ So, the first thing that I want to do is sort that list so I'm going to say sort
 
 If I print this out you can see that that list is sorted.
 
-![large](../../../../../../../../.gitbook/assets/02-058_IMG1.png)
+![large](../.././02-058_IMG1.png)
 
 Now from a visual perspective in this example, I know that I have `1, 2, 3, 4, 5, 6, 7, 8, 9`elements and so that means that in this case, the fifth element which is 83 is going to be that median value.
 
@@ -327,7 +327,7 @@ So let's see if this is working.
 
 If I say print first sale items just like this. This is going to give me 1, 3, 10, and 40. Which is perfect.
 
-![large](../../../../../../../../.gitbook/assets/02-058_IMG2.png)
+![large](../.././02-058_IMG2.png)
 
 So, this takes me to everything except the median which is exactly what I wanted.
 
@@ -353,7 +353,7 @@ the way to the end. So now if I try this again. There we go. So now I\
 have 100, 100, 220, and 400 which is exactly what I want. It's the last\
 four items.
 
-![large](../../../../../../../../.gitbook/assets/02-058_IMG3.png)
+![large](../.././02-058_IMG3.png)
 
 Now, creating that first\_sales\_items and last\_sale\_items that were not part of the exercise. I simply wanted to reinforce exactly how slicing worked and how you could combine computations with that.
 
@@ -369,7 +369,7 @@ And so now if I want to print out my median come down here and let's see if this
 
 We have 83 which was the median element so everything there is working properly
 
-![large](../../../../../../../../.gitbook/assets/02-058_IMG4.png)
+![large](../.././02-058_IMG4.png)
 
 Now, **from a code perspective, this is pretty ugly**.
 
@@ -380,7 +380,7 @@ Now, **from a code perspective, this is pretty ugly**.
 A way that you could clean this up is you could come here and just say we could say`half_slice`, some type of variable just like that and then I could say\
 math floor input all of this code here just like that.
 
-![large](../../../../../../../../.gitbook/assets/02-058_IMG5.png)
+![large](../.././02-058_IMG5.png)
 
 And half\_slice is not completely accurate but for the sake of everything we're doing here, we'll say that it is and I'm going to do the same thing here.
 
@@ -388,7 +388,7 @@ And in each spot where we call this just to make it a little bit easier to read.
 
 And now if I run this you can see all of the output is completely identical.
 
-![IMG](../../../../../../../../.gitbook/assets/02-058_IMG6.png)
+![IMG](../.././02-058_IMG6.png)
 
 **That has less to do with programming and more to do with best practices**.
 

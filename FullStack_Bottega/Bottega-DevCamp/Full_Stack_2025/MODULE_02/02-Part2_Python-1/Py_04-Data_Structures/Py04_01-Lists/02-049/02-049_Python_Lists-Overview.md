@@ -58,7 +58,7 @@ Now, if you're coming from a language such as Ruby or javascript then this is go
 
 So, now that we have that I can say print users and, if I run it, you're going to see that it's printing out each one of those users.
 
-![large](../../../../../../../../.gitbook/assets/02-049_IMG1.png)
+![large](../.././02-049_IMG1.png)
 
 Now that doesn't seem like a very big deal because it almost kind of looks like it just printed out exactly what we typed in and it did.
 
@@ -81,7 +81,7 @@ This is the same kind of index process that we saw with strings and every other 
 
 So, if we want to add Anthony and we're going to add them at the zero index right here:
 
-![large](../../../../../../../../.gitbook/assets/02-049_IMG2.png)
+![large](../.././02-049_IMG2.png)
 
 What that's going to do is it's going to make our list now be four elements and then Anthony is going to be placed in front of Kristine.
 
@@ -117,7 +117,7 @@ Then I can run this and you can see in this very last one.
 
 We still are keeping everybody else so we have `Kristine, Anthony, Tiffany, Jordan`, and then, at the very end we've added another element, so this element of the string name Ian **gets added to the end of the list**.
 
-![large](../../../../../../../../.gitbook/assets/02-049_IMG4.png)
+![large](../.././02-049_IMG4.png)
 
 **This is one of the easier ways of adding any kind of element to a list**and especially when you don't really care about the order you simply want to add it to the end.
 
@@ -164,7 +164,7 @@ And so this is going to return a list with a single element like so.
 
 And as you can see here now we have the string Tiffany inside of its own list.
 
-![large](../../../../../../../../.gitbook/assets/02-049_IMG5.png)
+![large](../.././02-049_IMG5.png)
 
 That's a way that you can do that.
 
@@ -189,7 +189,7 @@ So this is how it's going to replace it.
 
 And now if I say print users now it's going to show Ian replaced with Brayden.
 
-![large](../../../../../../../../.gitbook/assets/02-049_IMG6.png)
+![large](../.././02-049_IMG6.png)
 
 If I run this you can see it didn't change in any of these first printouts but now at the very end.
 

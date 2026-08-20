@@ -142,17 +142,17 @@ OK let's save this and run our server. If we don't have any spelling mistakes or
 
 So now if I type send then this should work and we should get back that guide that we created in the last lesson. And that works.
 
-![large](../../../../../../../.gitbook/assets/03-141_IMG1.png)
+![large](.././03-141_IMG1.png)
 
 Now that's kind of boring. Let's go back out and a new guide, just to make sure that this is working. One hint that this is working is notice the one change we had is it now is returning a list of guides, as we can see from the square brackets here.
 
 But let's not just trust that so I'm going say POST and go to a `localhost:5000/guide` inside of the body. Let's say my second guide and we can leave the content they're the same. So now if I hit send on this. That looks like it worked.
 
-![large](../../../../../../../.gitbook/assets/03-141_IMG2.png)
+![large](.././03-141_IMG2.png)
 
 It has some content and then 'my second guide' notice that it doesn't always keep the order there, but that's fine. And so now if I say `localhost:5000/guide` and make it a GET request and hit send, Now you can see that our query is working so we know that we save two guides to the database and now those are getting returned.
 
-![large](../../../../../../../.gitbook/assets/03-141_IMG3.png)
+![large](.././03-141_IMG3.png)
 
 Just like this. So nice job. If you went through that we now have two endpoints completed for our guides API.
 

@@ -152,13 +152,13 @@ If you are familiar with working with Python dictionaries, this is going to feel
 
 Here, we have a key of `posts`, and then we have all of these posts inside of it. Nested inside of those posts is a list that contains a key of `id` with a value of `434`, a key of `title` with a value of `speed reading application`, and so on.
 
-![IMG](../../../../../../../../.gitbook/assets/03-115_IMG1.png)
+![IMG](../.././03-115_IMG1.png)
 
 When you're going through this, you're going to have a fully different set of values here because these change as new posts get added.
 
 As you can see, this is just a structured way of organizing the data.
 
-![IMG](../../../../../../../../.gitbook/assets/03-115_IMG2.png)
+![IMG](../.././03-115_IMG2.png)
 
 The **requests package** is going to allow us to reach out and communicate with that application. If you want to install this on your own system, you can switch over to the terminal or the command prompt (if you're on Windows) and simply type in:bash
 
@@ -196,11 +196,11 @@ If you want to see what the JSON looks like, I can use the variable and then pas
 
 Since I'm working with JSON data here, I can call this, and this will show all of the code that we saw in the browser.
 
-![IMG](../../../../../../../../.gitbook/assets/03-115_IMG4.png)
+![IMG](../.././03-115_IMG4.png)
 
 If you switch back to the browser and go to that same endpoint, you can see this is our full set of key-value pairs.
 
-![IMG](../../../../../../../../.gitbook/assets/03-115_IMG5.png)
+![IMG](../.././03-115_IMG5.png)
 
 By default, it's not formatted when the requests library brings it back to us, so this is very hard to read.
 
@@ -216,7 +216,7 @@ Now, if I run this, you can see we get a\
 fully formatted response, and this looks a lot closer to what we had in\
 the browser.
 
-![IMG](../../../../../../../../.gitbook/assets/03-115_IMG6.png)
+![IMG](../.././03-115_IMG6.png)
 
 This is the full list of live posts, and this is incredibly cool.
 
@@ -235,7 +235,7 @@ like a dictionary.
 
 I'm going to use bracket syntax. I'll start with brackets and then pass a string of `posts`. Let's see if that works for us. If I run this, you can see that it has brought back the posts.
 
-![IMG](../../../../../../../../.gitbook/assets/03-115_IMG7.png)
+![IMG](../.././03-115_IMG7.png)
 
 That may not seem like a big deal because that's what we had before, but I wanted to do that to make sure that we didn't run into any errors.
 
@@ -243,7 +243,7 @@ Remember, making small steps as we build out our programs is critical.
 
 Now, that I have our list of posts, I can actually treat these like a traditional list. I can pass in the bracket syntax and grab the zero-width index. You can see that I have access to the very first post.
 
-![IMG](../../../../../../../../.gitbook/assets/03-115_IMG8.png)
+![IMG](../.././03-115_IMG8.png)
 
 I can access its content, the date that it was created, its ID, any links inside of it (which you can see is another nested list), its title, or even the URL. If I want to grab just the URL, I can treat this like a dictionary and chain on one additional bracket:
 
@@ -253,13 +253,13 @@ pprint.pprint(r.json()['posts'][0]['url_for_post'])
 
 Run this, and there you go. We have a string with the URL.
 
-![IMG](../../../../../../../../.gitbook/assets/03-115_IMG9.png)
+![IMG](../.././03-115_IMG9.png)
 
 Just to make sure that this is working the way we'd expect, I'm going to\
 copy this, come into the browser, paste it in (make sure you remove the\
 strings there), and as you can see, that worked perfectly.
 
-![IMG](../../../../../../../../.gitbook/assets/03-115_IMG9.png)
+![IMG](../.././03-115_IMG9.png)
 
 This was a real live URL passed through the DailySmarty API that we accessed\
 on our local machine, and we were able to work with that data.

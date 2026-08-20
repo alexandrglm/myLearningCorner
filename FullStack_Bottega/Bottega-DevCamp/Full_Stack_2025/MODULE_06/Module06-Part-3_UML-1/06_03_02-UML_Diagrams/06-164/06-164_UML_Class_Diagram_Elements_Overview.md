@@ -261,7 +261,7 @@ diagram. We've walked through it a few times.
 
 I wanted to design this course so in the future you would have a quick reference.
 
-![](../../../../../../../.gitbook/assets/06-163_IMG1.png)
+![](.././06-163_IMG1.png)
 
 A Class diagram has three elements.
 

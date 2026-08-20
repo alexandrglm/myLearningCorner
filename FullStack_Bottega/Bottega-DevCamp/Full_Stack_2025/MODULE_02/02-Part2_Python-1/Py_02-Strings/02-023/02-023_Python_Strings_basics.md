@@ -23,7 +23,7 @@ You will see that this basic sentence has single quotes.
 
 If I say "print sentence", you will see it print this out. If I change it to double quotes and run it again, it will produce a syntax error stating “_end of line while scanning string literal_”.
 
-![IMG](../../../../../../../.gitbook/assets/02-023_IMG1.png)
+![IMG](.././02-023_IMG1.png)
 
 This may seem like an obvious example however, these are the errors you will run into most often.
 
@@ -55,14 +55,14 @@ The Python interpreter will see the apostrophe as the end of the string, therefo
 
 If I try to run it, it says “invalid syntax” and shows exactly where the error is.
 
-![IMG](../../../../../../../.gitbook/assets/02-023_IMG3.png)
+![IMG](.././02-023_IMG3.png)
 
 There are a couple different solutions to this challenge (), and I will demonstrate both.
 
 * One option is to escape the character by using a backslash.\
   A backslash tells the Python interpreter that the next character should still be treated as a string value instead of a programming construct.\
   If I hit enter, you can see it successfully prints everything out and includes the apostrophe instead of ending the line.\
-  ![IMG](../../../../../../../.gitbook/assets/02-023_IMG4.png)
+  ![IMG](.././02-023_IMG4.png)
 *   If I want a sentence three, I can wrap them in double quotes and rid the backslash character.
 
     ```python
@@ -80,6 +80,6 @@ Here, I can use a backslash characters and do another one at the end of the set 
 
 The multiple backslash characters helps protect the double quotes.
 
-![IMG](../../../../../../../.gitbook/assets/02-023_IMG5.png)
+![IMG](.././02-023_IMG5.png)
 
 So, these are four different examples of how to create strings and how to utilize backslash characters in order to escape string values within Python.

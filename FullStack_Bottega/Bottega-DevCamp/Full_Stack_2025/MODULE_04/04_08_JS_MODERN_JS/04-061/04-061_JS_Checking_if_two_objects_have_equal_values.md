@@ -146,7 +146,7 @@ So, let's first test for that because that's a nice, easy thing to check for. So
 
 So let's save this, come all the way down to the bottom and you can see right now we're getting undefined. We have object one and object two not being the same, and that's because I have a little typo here, that needs to be obj2Keys. Now if I hit save, come back down, there we go, we're getting false because these two are not equal.
 
-![large](../../../../../../.gitbook/assets/04-061_IMG1.png)
+![large](./04-061_IMG1.png)
 
 Now I'm going to just get rid of this and we're getting undefined now because we're not returning true or anything. This first condition is simply going to return false based on the length, and this is an approach that I take as I'm building out pretty much any kind of function, I put the easiest kinds of conditions right at the top, especially the ones that are probably going to be triggered the most often.
 

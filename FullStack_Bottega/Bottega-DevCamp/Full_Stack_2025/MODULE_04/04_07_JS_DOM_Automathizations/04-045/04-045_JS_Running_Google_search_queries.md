@@ -218,7 +218,7 @@ If I were to `right-click` here, and click on `view page source`: this is all th
 
 I like to do that so that shows me exactly what I'm working with, and I'm going to slide this to the right. So it's a little bit easier to see.
 
-![large](../../../../../../.gitbook/assets/04-045_IMG1.png)
+![large](./04-045_IMG1.png)
 
 Now what this tells me is it tells me some details about the `input element`. Thankfully this element has a `class` in an `ID`. Those are two things that we could use and we could work with. That is the first thing that I know that we need, and this is going to be the easy part is actually setting the text. Then, later on, we're going to see how we can click the button.
 
@@ -228,7 +228,7 @@ In this specific case, it doesn't matter because I know there is only one of the
 
 The first is to use this `$` syntax where I say `$` and then in parentheses, I go with a quote, and then I can just paste in the className that we grab. Now if I finish that off and hit enter you can see it returns that entire `DOM node`, which is this `input element` right there.
 
-![large](../../../../../../.gitbook/assets/04-045_IMG2.png)
+![large](./04-045_IMG2.png)
 
 That is perfectly fine. Now the other way that could do this is writing pure Javascript. So I could say something like:
 
@@ -238,7 +238,7 @@ const searchBar = document.querySelector('.gsfi')
 
 In this case, I only want to grab one so I can say `querySelector` and not `querySelectorAll`. Then use the exact same syntax and it will say `undefined`, but then if I find my search bar you can see it returns the exact same value.
 
-![large](../../../../../../.gitbook/assets/04-045_IMG3.png)
+![large](./04-045_IMG3.png)
 
 So everything that we did with that first syntax can be accomplished in regular Javascript. Now the key difference here is if you're building out in testing a real javascript code snippet, something that you're going to put in a javascript file, then you have to go with this syntax.
 
@@ -258,29 +258,29 @@ $('.gsfi').value = 'JavaScript tips'
 
 You can see right up here. It now says javascript tips.
 
-![large](../../../../../../.gitbook/assets/04-045_IMG4.png)
+![large](./04-045_IMG4.png)
 
 What we did is we grabbed this value, we grabbed the search bar, and then we said I want you to change the value. So now we want to have this string inside of it. That is working nicely. Now that we have that, now let's go and let's find the button.
 
 This one's going to get a little bit trickier, but it's good because it's going to teach us how we can traverse that `DOM node`. I'm going to come here once again, click on inspect, and then google search and now you can see. That we have this Google search input.
 
-![large](../../../../../../.gitbook/assets/04-045_IMG5.png)
+![large](./04-045_IMG5.png)
 
 Now there is only one little trick to this, and that is: do you notice how there is not an ID or a className here? That means that we can't use our normal selectors. What we're going to have to do is we're going to have to it's called `traversing the DOM`, which means we're going to grab the element a little bit higher up.
 
 In fact, we're going to grab this `JSB class element`, and then we are going to search through the elements until we find the Google search ones.
 
-![large](../../../../../../.gitbook/assets/04-045_IMG6.png)
+![large](./04-045_IMG6.png)
 
 I'm just going to copy this JSB one here, and I'm going to use the same syntax. I'm going to say: `$('.jsb')` just like that. You can see that gives us the entire object. This is good, but we don't really care about clicking on this wrapper. As you can see when I hover over here that is highlighting everything.
 
-![large](../../../../../../.gitbook/assets/04-045_IMG7.png)
+![large](./04-045_IMG7.png)
 
 So we want to actually get only this Google search button. If you click here, you can see that button is inside of `center`, and that is where we can find it. So what I'm going to do now is I'm going to hit `up`. I can say: `$('.jsb')`, and now the function that I want to run is called `childNodes`.
 
 What this tells JavaScript and what it does in the browser is it says: "okay, thank you for bringing me this JSB here, but I'm actually interested in what's inside of it. I'm interested in what's nested there." So now if I click on that, you can see it returns a `NodeList`, and this NodeList has a single element called `center`.
 
-![large](../../../../../../.gitbook/assets/04-045_IMG8.png)
+![large](./04-045_IMG8.png)
 
 That's fine. We want to grab this element, we can see it has an index of `0`, so here I can say `$('.jsb').childNodes[0]`, and let's just treat this as an array. It's not technically an array, it's in a NodeList, but we can use this bracket syntax. Now we have our center object.
 
@@ -292,7 +292,7 @@ $('.jsb').childNodes[0].childNodes
 
 Now you can see we're getting closer.
 
-![large](../../../../../../.gitbook/assets/04-045_IMG9.png)
+![large](./04-045_IMG9.png)
 
 Now we have these three inputs here, and this first one is what we're looking for. This is the Google search. So in order to get what we actually want, let's just hit `up` once, and because that's a node list we can treat it very similar to an array. Now if I give `[0]`, we have exactly what we're looking for.
 
@@ -306,7 +306,7 @@ What javascript is going to do is it actually going to, it still has our javascr
 
 Now if I hit enter. It clicked, it worked, and you notice we didn't actually have to do anything ourselves. Now it searched for JavaScript tips, so that is working perfectly. Now like I said at the beginning this is not an automation tool that you will probably be using directly, because usually it's just a lot easier to type into the search bar.
 
-![large](../../../../../../.gitbook/assets/04-045_IMG10.png)
+![large](./04-045_IMG10.png)
 
 Hopefully, now you have a little bit more of an idea on first how you can find the elements that you want to select in the DOM in the browser. Then from there how you can traverse to elements you can't quite select as much along with being able to use functions such as selecting and then clicking. We'll see you in the next video where we're going to take a look at Instagram.
 

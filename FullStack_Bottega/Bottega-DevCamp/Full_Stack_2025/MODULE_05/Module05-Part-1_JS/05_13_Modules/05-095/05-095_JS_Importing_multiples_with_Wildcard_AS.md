@@ -84,11 +84,11 @@ export const greeting = 'Hi there';
 
 If I want to have access to this 'Hi there' variable inside a bootstrap the way that I can do it is I can simply list off all of the different elements that I want. So I can say multiply and now I can also say greeting and as you can see on the right-hand side I don't have any errors.
 
-![large](../../../../../../../.gitbook/assets/05-095_IMG1.png)
+![large](.././05-095_IMG1.png)
 
 And if I come over here and instead of multiply if I say greeting instead on the right-hand side you can see that this is logged out perfectly.
 
-![large](../../../../../../../.gitbook/assets/05-095_IMG2.png)
+![large](.././05-095_IMG2.png)
 
 So we now have access to both multiply and to greeting inside of our bootstrap.js file.
 
@@ -102,15 +102,15 @@ import * as helper from './helper'
 
 And so what I can do now we're going to get an error because we don't have access to greeting directly
 
-![large](../../../../../../../.gitbook/assets/05-095_IMG3.png)
+![large](.././05-095_IMG3.png)
 
 but instead what we have access to is the ability to call helper.greeting. And as you can see now everything is back and working and high there is now functioning properly.
 
-![large](../../../../../../../.gitbook/assets/05-095_IMG4.png)
+![large](.././05-095_IMG4.png)
 
 And let's just test this out and make sure that we can call our multiply function too. So I can say multiply and then just pass and 2 numbers so say 5 and 6 so we should get a console log of 30 here on the right-hand side. And as you can see right here we get that.
 
-![large](../../../../../../../.gitbook/assets/05-095_IMG5.png)
+![large](.././05-095_IMG5.png)
 
 So those are two different ways of pulling in multiple named exports. One is to list them all out manually inside of curly brackets and then the other is to use star and then from within that star then you have to give a specific name for what you want to call these because you wouldn't simply want to call star and then have all of these different variables and functions available globally because they could cause conflicts with your functions and your variables inside of this bootstrap file.
 

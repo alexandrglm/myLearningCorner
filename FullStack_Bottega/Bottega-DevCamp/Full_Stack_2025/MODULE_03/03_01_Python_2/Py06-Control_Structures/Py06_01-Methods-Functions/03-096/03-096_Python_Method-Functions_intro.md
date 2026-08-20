@@ -135,7 +135,7 @@ housing price in a particular city. So we could create a function here\
 and so I'm just going to say something like predict\_price and now this\
 function is going to take in a few inputs.
 
-![large](../../../../../../../../.gitbook/assets/03-096_IMG1.png)
+![large](../.././03-096_IMG1.png)
 
 So it might take in a current house whatever house that you're\
 wanting to estimate. So we could just say house this is the first\
@@ -151,7 +151,7 @@ where it puts them on this graph based on maybe the square footage of\
 the home and then it also has the price and this is a very common\
 machine learning algorithm.
 
-![large](../../../../../../../../.gitbook/assets/03-096_IMG2.png)
+![large](../.././03-096_IMG2.png)
 
 I don't want you to worry about all of this. I'm just giving you an\
 example of the power that you could utilize whenever you're working with\

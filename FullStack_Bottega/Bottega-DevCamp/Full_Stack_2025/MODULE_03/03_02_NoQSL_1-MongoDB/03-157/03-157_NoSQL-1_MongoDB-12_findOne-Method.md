@@ -56,7 +56,7 @@ Atlas atlas-terube-shard-0 [primary] test> db.Books.findOne(
 }
 ```
 
-![img](../../../../../../.gitbook/assets/03-157_IMG01.png)
+![img](./03-157_IMG01.png)
 
 **Benefits of `findOne()`:**
 
@@ -123,7 +123,7 @@ But if you want to take care of it on the query side you also have the ability t
 
 So I'm going to get rid of this link call and instead of saying find I'm going to say findOne. Now if I return this you can see it does a couple of things.
 
-![large](../../../../../../.gitbook/assets/03-157_IMG1.png)
+![large](./03-157_IMG1.png)
 
 It only returns one item.
 

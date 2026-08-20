@@ -234,14 +234,14 @@ from here I can print out and have access to that active users method.\
 So I'm going to hit save here and let's run this code you can see it\
 prints out five hundred now.
 
-![large](../../../../../../../.gitbook/assets/03-129_IMG1.png)
+![large](.././03-129_IMG1.png)
 
 If I try to do the same thing with Kristine so if I have the user\
 Kristine and I try to allow her to access that active users method I'm\
 going to get an error. And it says AttributeError User object has no\
 attribute active user.
 
-![large](../../../../../../../.gitbook/assets/03-129_IMG2.png)
+![large](.././03-129_IMG2.png)
 
 So this is it doing exactly what we want. We've created a specialized\
 class that has all of the attributes and all the behavior of the parent\

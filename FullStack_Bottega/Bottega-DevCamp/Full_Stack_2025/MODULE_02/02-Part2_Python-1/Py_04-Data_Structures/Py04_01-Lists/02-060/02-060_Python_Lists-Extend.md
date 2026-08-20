@@ -42,7 +42,7 @@ You may think that you're adding onto the list but if you go and look at our ini
 
 **It didn't add into it, it simply replaced 'code' with 'programming'.**
 
-![large](../../../../../../../../.gitbook/assets/02-060_IMG1.png)
+![large](../.././02-060_IMG1.png)
 
 So it's a very important thing to keep in mind, I'm going to comment that out.
 
@@ -60,7 +60,7 @@ So, if I say extend and I pass in let's just copy `Programming` from right here,
 
 I run this and it worked it didn't give us an error but look at what it did.
 
-![large](../../../../../../../../.gitbook/assets/02-060_IMG2.png)
+![large](../.././02-060_IMG2.png)
 
 What extend does is it actually spreads out each one of the elements that are given to it.
 
@@ -76,7 +76,7 @@ So, if I wrap this as a list extend is going to treat this as a single element.
 
 Now if I run this you can see we have `Python`, `development`, `tutorials`, `code` and then `programming`.
 
-![large](../../../../../../../../.gitbook/assets/02-060_IMG3.png)
+![large](../.././02-060_IMG3.png)
 
 And, typically whenever you're wanting to add onto a list this option on line starting with `tags.extend( [ ] )` is going to be one of the most common processes that you're going to be working with.
 
@@ -125,20 +125,20 @@ And now if I run this you can see we now have our new list and it has\
 the combined elements of Python development tutorials in code and then\
 it added to the end programming.
 
-![large](../../../../../../../../.gitbook/assets/02-060_IMG4.png)
+![large](../.././02-060_IMG4.png)
 
 Now, once again, a very important thing to understand is how python works with combining data types.
 
 If you're coming from other languages that might be a little bit more simple on the syntax or is less forgiving on the syntax perspective, you may think you'd be able to do\
 this where you could simply tack on this element into tags but this is going to give you an error because you can't combine a string with a list.
 
-![large](../../../../../../../../.gitbook/assets/02-060_IMG5.png)
+![large](../.././02-060_IMG5.png)
 
 So, you simply have to wrap that inside of that list square bracket syntax and then you can add it onto tags just like we did.
 
 And now that works.
 
-![large](../../../../../../../../.gitbook/assets/02-060_IMG6.png)
+![large](../.././02-060_IMG6.png)
 
 And just to see why you would do that.
 
@@ -151,7 +151,7 @@ Because now, if I run this you can see right here that we have two different pri
 
 This contains five elements and the second one is our preexisting tag list right here which still has 4.
 
-![large](../../../../../../../../.gitbook/assets/02-060_IMG7.png)
+![large](../.././02-060_IMG7.png)
 
 So, the second way is `not in place` and it allows you to tack on different elements, and you could put as many as you want in here and it is not going to alter this first one.
 

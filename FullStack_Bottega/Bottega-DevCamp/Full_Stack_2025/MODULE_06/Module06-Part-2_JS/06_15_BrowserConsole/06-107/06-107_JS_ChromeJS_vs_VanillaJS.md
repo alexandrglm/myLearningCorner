@@ -38,7 +38,7 @@ Modern browsers provide powerful developer tools that include:
 
 [An example DevCamp guide to be used here](https://basque.devcamp.com/pt-full-stack-development-javascript-python-react/guide/comparison-chromes-command-line-api-vs-vanilla-javascript)
 
-![Example used, the original guide from DevCamp](../../../../../../../.gitbook/assets/06-107_IMG1b.png)
+![Example used, the original guide from DevCamp](.././06-107_IMG1b.png)
 
 DevCamp skelleton guides' structure is:
 
@@ -102,14 +102,14 @@ So,
 $('.CodeRay')
 ```
 
-![Selecting an entire class](../../../../../../../.gitbook/assets/06-107_IMG2b.png)
+![Selecting an entire class](.././06-107_IMG2b.png)
 
 ```js
 // Select first matching element and hide it
 $('.CodeRay').first().hide()
 ```
 
-![](../../../../../../../.gitbook/assets/06-107_IMG3b.png)
+![](.././06-107_IMG3b.png)
 
 ***
 
@@ -269,15 +269,15 @@ After we have walked through the command line API we're going to see how we coul
 
 So in order to open this up, I'm going to type Command + Option+ j and this is going to open up the console. Now I want to look and I have this daily smarty page open right here and you can open up any website that you want and what I'm going to show you how to do is how to use the inspector so if you come to this left little icon here that says select an element in the page you could also type Command + Shift + C
 
-![large](../../../../../../../.gitbook/assets/06-107_IMG1.png)
+![large](.././06-107_IMG1.png)
 
 then it's going to switch over and show us all of the HTML on the page. So if I want to select say this little image right here
 
-![large](../../../../../../../.gitbook/assets/06-107_IMG2.png)
+![large](.././06-107_IMG2.png)
 
 then it's going to show me exactly what that code looks like.
 
-![large](../../../../../../../.gitbook/assets/06-107_IMG3.png)
+![large](.././06-107_IMG3.png)
 
 So we can see that it has a class of image item and so this is what I want to work with and I'll double-click on it. Copy it and come back over to the console and the command line API uses a syntax where any time that you want to select an item you start off with the dollar sign and then from there add parentheses. And here you're going to pass in a string so I'm going to use the same type of selection syntax I would use if I was working with jquery or if I was working with CSS so if I hit dot because this is a class and paste in image item then this is going to be what I want
 
@@ -287,11 +287,11 @@ $('.image-item')
 
 and so I can type this out and it's already giving me some helpful options here.
 
-![large](../../../../../../../.gitbook/assets/06-107_IMG4.png)
+![large](.././06-107_IMG4.png)
 
 But for right now I simply want to find this image item on the page so I'm going to run this and you can see it brings back an array so it brings back all of the image items because image item is a class so each one of these images has that same class.
 
-![large](../../../../../../../.gitbook/assets/06-107_IMG5.png)
+![large](.././06-107_IMG5.png)
 
 And if I open them up it'll give me all of the details for that. So it'll give me the baseURI it will give me all of the dom elements everything like that so that is very helpful.
 
@@ -301,19 +301,19 @@ So now because I have image-item if I want to grab an element from there so I re
 
 I'm gonna click here
 
-![large](../../../../../../../.gitbook/assets/06-107_IMG5b.png)
+![large](.././06-107_IMG5b.png)
 
 and you can see that this is a single image item, it's not the entire list it shows the previous object which includes all of those but here we just have a single one.
 
 So now I can also perform other tasks on this, so pay attention on your screen for the image for Speed Reading Application with PDF Uploads, because I can call a function such as dot hide, and now if I run this you can see I have removed that from the screen.
 
-![large](../../../../../../../.gitbook/assets/06-107_IMG6.png)
+![large](.././06-107_IMG6.png)
 
 Now, this does not change the code for daily smarty. All this is doing is it's hiding it from your browser and this is part of the goal of this guide is to show you that because javascript is interpreted by the browser were able to do anything that we want. We could do the same thing on a giant site.
 
 If I come to Wall Street Journal right here and I open up the same set of tools and I'm going to come and select this banner so I don't like this banner for the president's day sale.
 
-![large](../../../../../../../.gitbook/assets/06-107_IMG7.png)
+![large](.././06-107_IMG7.png)
 
 I can come grab the ID come into the console and I can perform the same selectors, I'll say dollar and then paste in this ID right here. And actually sorry I am calling as a class but it needs to be as an ID and from there I can just call hide and now it's gone.
 
@@ -321,7 +321,7 @@ I can come grab the ID come into the console and I can perform the same selector
 $('#cx-candybarhp).hide();
 ```
 
-![large](../../../../../../../.gitbook/assets/06-107_IMG8.png)
+![large](.././06-107_IMG8.png)
 
 This has nothing to do with the code on their server, all this is doing is it's changing it for us. Where the power in this lies is that it shows that the browser is able to interpret this. This is getting all that code or writing in the command line API that gets converted into Javascript and then you can perform these tasks and the browser is capable of doing that.
 
@@ -331,9 +331,9 @@ But for right now I want to show you a side by side comparison so I'm going to o
 
 Now I'm going to just call first because remember that that's going to return a collection and then I can call hide. And if I run this it has hidden that element.
 
-![large](../../../../../../../.gitbook/assets/06-107_IMG9.png)
+![large](.././06-107_IMG9.png)
 
-![large](../../../../../../../.gitbook/assets/06-107_IMG10.png)
+![large](.././06-107_IMG10.png)
 
 So that is nice and easy it's taken that entire element off the page. Now I'm going to hit refresh and this is going to bring everything back and I'll close this out. Give us room to write. And now the syntax we used before was this was the class selector followed by first followed by hide.
 
@@ -351,15 +351,15 @@ Now from this point, we are going to pass in a string so I'm just going to paste
 
 So now that we have that we need to perform the same filter so instead of simply grabbing all of them we only want one. Now we can't call DOT first, that's something that's only available in the command line API. We have to use pure Javascript so I'm going to use the bracket syntax and say I want the first element and in programming language that is going to mean that I want the zero-ith index which will bring us the first one, and as you can see that brings back the element.
 
-![large](../../../../../../../.gitbook/assets/06-107_IMG11.png)
+![large](.././06-107_IMG11.png)
 
 We now have access to this entire div. If I hover over it as you can see right there it shows it on the page.
 
-![large](../../../../../../../.gitbook/assets/06-107_IMG12.png)
+![large](.././06-107_IMG12.png)
 
 And now we want to grab the style property. So I'm going to say style and then dot display because we want to change the display style and set it to none. And now if I run this code you can see that that is now gone.
 
-![large](../../../../../../../.gitbook/assets/06-107_IMG13.png)
+![large](.././06-107_IMG13.png)
 
 And if I run it again it's not going to have any effect because it still has the same exact post item wrapper element in memory it has not actually deleted it, it's only hiding it. And so this is the pure vanilla javascript code right here that is going to function identical to our image item or in this case, our post item wrapper first hide.
 

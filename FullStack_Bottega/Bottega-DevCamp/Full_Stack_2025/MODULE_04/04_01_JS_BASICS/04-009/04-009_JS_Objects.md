@@ -171,11 +171,11 @@ console.log(user.name);
 
 Now if I run this, you can see that that object has been changed.
 
-![large](../../../../../../.gitbook/assets/04-009_IMG1.png)
+![large](./04-009_IMG1.png)
 
 What I did was I reset the name and got rid of Kristine put Jordan instead called it. Now we're referencing that new name. That's a very basic way of working with objects. Now let's get into a little bit more of an advanced example. The syntax whenever you're defining just a single key-value pair and that's what you have here. You have a key on the left-hand side followed by a colon followed by whatever the value is. Whenever you have just one it's fine for you to put it on one line. But when you have multiple then usually you're going to want to put this on multiple lines just like we're doing in the example below. Now, as you add more items or as you add more key-value pairs put a comma at the end and then add your next one. Here I'm going to say age is equal to 12 and city is equal to Scottsdale.
 
-![large](../../../../../../.gitbook/assets/04-009_IMG2.png)
+![large](./04-009_IMG2.png)
 
 Now I can reference age. Run this again and it returns 12. We could also set city this same exact way. I won't go through that because that's what we just did. But you can play around with these so you can get familiar with the syntax.
 
@@ -183,7 +183,7 @@ Essentially what this is doing is it's giving us the ability to create an object
 
 This is something that is very commonplace for things like API development where you need to be able to group items inside of other items. Here I'm going to say grades and from there we're going to use the same exact syntax so I'm going to use curly braces again. We started with curly braces when we assign the variable and then we put our values grades is still just a key for our user object. But now grades has semicolon but instead of something like a string or a number we're putting another object right there. Here I can put more keys and more key-value pairs so I can say math and we'll say 90 and then science and we'll call 80 and then Language Arts we'll put it at a hundred.
 
-![large](../../../../../../.gitbook/assets/04-009_IMG3.png)
+![large](./04-009_IMG3.png)
 
 The way that you'd reference this may seem intuitive but maybe not depending on your experience with it. But just like we able to call age if we want grades all we have to do, is traverse the object so we're calling grades. If I were to console.log that it's going to print out each one of those grades. Now if I want a specific grade it's the same exact way we picked up age. So if I come here and now I want to grab math I just type drop math hit run and it prints out 90 which is the value for math.
 

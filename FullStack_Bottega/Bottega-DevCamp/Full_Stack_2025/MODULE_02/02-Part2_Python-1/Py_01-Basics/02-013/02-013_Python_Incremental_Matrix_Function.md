@@ -75,7 +75,7 @@ def manual_incrementing_matrix(n):
 print(manual_incrementing_matrix(5))
 ```
 
-![IMG](../../../../../../../.gitbook/assets/02-013_IMG0.png)
+![IMG](.././02-013_IMG0.png)
 
 ***
 
@@ -86,7 +86,7 @@ that is prefilled with auto-incrementing values.
 If that sounds a little confusing right here in this comment I have an\
 example of what we're looking for our function to be able to do.
 
-![IMG](../../../../../../../.gitbook/assets/02-013_IMG1.png)
+![IMG](.././02-013_IMG1.png)
 
 I have a list that contains lists inside of it and this is a\
 traditional matrix so I have a list and inside of it there are five list\
@@ -128,7 +128,7 @@ So if I pass in 5 it will give us what we have up here\
 in the comment if I pass in 100 it will create this gigantic matrix so\
 that is the way that I'm going to define it.
 
-![IMG](../../../../../../../.gitbook/assets/02-013_IMG2.png)
+![IMG](.././02-013_IMG2.png)
 
 Now the very first step and let's actually outline in some comments what we want to do.
 
@@ -147,11 +147,11 @@ exactly how many it's going to create for us.
 
 Let's close off that first list comprehension and then we're going to have a second one because as you can see from above we are going for a nested matrix.
 
-![IMG](../../../../../../../.gitbook/assets/02-013_IMG3.png)
+![IMG](.././02-013_IMG3.png)
 
 I'm going to say now for `x in range n` because this is going to be the end and then I can close this off.
 
-![IMG](../../../../../../../.gitbook/assets/02-013_IMG4.png)
+![IMG](.././02-013_IMG4.png)
 
 If that looks a little bit weird for you let's just take a quick break\
 here and let's see exactly what this will give us.
@@ -166,7 +166,7 @@ So right down here I need to say return matrix.
 
 Now if I save it and run it there we go. That's perfect.
 
-![IMG](../../../../../../../.gitbook/assets/02-013_IMG5.png)
+![IMG](.././02-013_IMG5.png)
 
 So as you can see right here what we have is our basic empty matrix it\
 starts with a list that wraps the entire system up and then we have one\
@@ -178,7 +178,7 @@ And if you see we have `1` `2` `3` `4` and `5`.
 
 So we've already created our matrix and so that is one part.
 
-![IMG](../../../../../../../.gitbook/assets/02-013_IMG6.png)
+![IMG](.././02-013_IMG6.png)
 
 Now we need to go and we actually need to populate it.
 
@@ -292,7 +292,7 @@ The way to do that in Python is to first cast this matrix to the `enumerate` fun
 
 So I am gonna say `in enumerate` just like that.
 
-![IMG](../../../../../../../.gitbook/assets/02-013_IMG7.png)
+![IMG](.././02-013_IMG7.png)
 
 What that's going to allow me to do is, normally with a `for` loop, it would say `for L in Matrix`, and that would allow me to have access to this element, then to the second one, and so on.
 
@@ -346,7 +346,7 @@ Then I can say `counter` increment by `1`.
 
 At the very end, it is going to just return that matrix value.
 
-![IMG](../../../../../../../.gitbook/assets/02-013_IMG8.png)
+![IMG](.././02-013_IMG8.png)
 
 So let's save this and see if it's working and I believe I have\
 everything there that's needed. So as a python manual incrementing\
@@ -354,7 +354,7 @@ matrix. And that is working perfectly as you can see we have 5 elements 0\
 1 2 3 and 4 and the first one 1 2 3 4 and the second one and it goes\
 all the way through.
 
-![IMG](../../../../../../../.gitbook/assets/02-013_IMG9.png)
+![IMG](.././02-013_IMG9.png)
 
 This perfectly matches up with what we had up here in the comments so\
 we've effectively built out a full functioning matrix and we did it all\

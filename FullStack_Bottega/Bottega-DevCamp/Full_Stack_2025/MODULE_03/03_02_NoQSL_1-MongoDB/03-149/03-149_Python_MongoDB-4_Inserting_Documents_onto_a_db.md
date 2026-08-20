@@ -42,7 +42,7 @@ MongoCourse> db.Books.insertOne(
 
 #### **Expected Output:**
 
-![MongoDB, .insertOne()](../../../../../../.gitbook/assets/03-149_IMG01.png)
+![MongoDB, .insertOne()](./03-149_IMG01.png)
 
 **Note:** `ObjectId` is a unique identifier automatically generated for each document.
 
@@ -79,7 +79,7 @@ db.Books.insertMany([
 
 ### Expected Output:
 
-![MongoDB, flexible data schema](../../../../../../.gitbook/assets/03-150_IMG03.png)
+![MongoDB, flexible data schema](./03-150_IMG03.png)
 
 ***
 
@@ -149,7 +149,7 @@ What this means is notice that this is a Javascript object right here and that i
 
 I can copy this again paste it in the terminal and it got written as well, so this is now in the database. So I wanted to add two items in so that you could see one and that you can put in as many items as you want
 
-![large](../../../../../../.gitbook/assets/03-149_IMG1.png)
+![large](./03-149_IMG1.png)
 
 But notice how the system didn't care whatsoever about a couple of things.
 
@@ -157,7 +157,7 @@ It didn't care that we sent in a duplicate name but also it didn't require the s
 
 Now just to throw it off even a little bit more let's imagine right here with `publishedDate` if I change this to `startDate` copy this again and paste it in everything worked exactly like normal.
 
-![large](../../../../../../.gitbook/assets/03-149_IMG2.png)
+![large](./03-149_IMG2.png)
 
 Now, this goes to one of the most critical parts of understanding how Mongo works compared with a traditional SQL database and that is is that there is no schema whatsoever.
 

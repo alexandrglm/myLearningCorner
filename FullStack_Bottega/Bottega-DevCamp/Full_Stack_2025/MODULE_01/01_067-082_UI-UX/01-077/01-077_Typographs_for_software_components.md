@@ -89,7 +89,7 @@ Sans Serif is like when fonts have little things poking out from him.
 And then you're sanding those off right, let's think of it like that. You sand those off\
 and you have a font like Roboto
 
-![IMG](../../../../../../.gitbook/assets/01-077_IMG1.png)
+![IMG](./01-077_IMG1.png)
 
 Where every all the characters just stop they just end.
 

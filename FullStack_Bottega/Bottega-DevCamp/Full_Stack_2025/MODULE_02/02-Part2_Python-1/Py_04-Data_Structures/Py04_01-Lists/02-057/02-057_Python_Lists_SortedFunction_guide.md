@@ -114,7 +114,7 @@ If I come here and I say `sale_prices.sort` and then come and print out sale pri
 
 And, as you can see, it goes from one to 400 with these lists of integers, and that all works.
 
-![large](../../../../../../../../.gitbook/assets/02-057_IMG1.png)
+![large](../.././02-057_IMG1.png)
 
 However, you may notice we're actually calling the original list.
 
@@ -164,7 +164,7 @@ Now I actually get the full sorted list and it's working properly now to make su
 Let's actually print out our sale prices. So I'm going to hit return and now you can\
 see sale prices now is completely intact:
 
-![large](../../../../../../../../.gitbook/assets/02-057_IMG2.png)
+![large](../.././02-057_IMG2.png)
 
 It is now something where we can trust that we didn't change the order of those values and the rest of **our program still can be more confident that those values have not been altered.**
 
@@ -183,7 +183,7 @@ sorted_list = sorted(sale_prices, reverse=True)
 
 And I'm going to delete sale prices since we know that that is intact return and now you can see it is sorting in a _top to bottom_ order:
 
-![large](../../../../../../../../.gitbook/assets/02-057_IMG3.png)
+![large](../.././02-057_IMG3.png)
 
 where it's taking the greatest values and it's putting them there first.
 

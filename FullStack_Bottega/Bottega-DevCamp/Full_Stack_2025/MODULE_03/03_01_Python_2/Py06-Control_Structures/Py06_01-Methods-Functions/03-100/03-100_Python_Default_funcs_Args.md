@@ -120,7 +120,7 @@ They are just like we have right here in our example for greeting where we have 
 
 So, if we were to just try to call it just like this we would run into an error:
 
-![large](../../../../../../../../.gitbook/assets/03-100_IMG1.png)
+![large](../.././03-100_IMG1.png)
 
 The error is that we have a one missing required positional argument, that is name.
 
@@ -136,7 +136,7 @@ So, in this case, we're just going to say, guest. And so now if I run\
 this code you can see that it prints out Hi guest whenever no arguments\
 are provided.
 
-![large](../../../../../../../../.gitbook/assets/03-100_IMG2.png)
+![large](../.././03-100_IMG2.png)
 
 But whenever we do pass in a string as we have right here then that overrides the default argument.
 
@@ -184,7 +184,7 @@ Now depending on what text editor you're using have you're using Repl. You\
 can see we already have a warning here and the warning says dangerous\
 default value as argument.
 
-![large](../../../../../../../../.gitbook/assets/03-100_IMG3.png)
+![large](../.././03-100_IMG3.png)
 
 The reason for this goes to the topic of **mutability versus immutability** and if you're curious about why I discussed that topic so much earlier on in the course it's because you are constantly going to see this issue arise as you're building out Python programs.
 
@@ -192,11 +192,11 @@ The reason for this goes to the topic of **mutability versus immutability** and 
 
 So, in order to see this, we need to print it out, then if I call this just like I have it here. It seems like it works. You can see that we have a list of one.
 
-![large](../../../../../../../../.gitbook/assets/03-100_IMG4.png)
+![large](../.././03-100_IMG4.png)
 
 Now if I were to call this somewhere in another part of the program imagine that this is even in a different file a completely different part of the application you would most likely expect that the collection here would return the value of a list with 1 just like we got returned right here.
 
-![large](../../../../../../../../.gitbook/assets/03-100_IMG5.png)
+![large](../.././03-100_IMG5.png)
 
 That would be the logical behavior at least in my mind and in most people's minds.
 

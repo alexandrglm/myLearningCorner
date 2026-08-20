@@ -140,7 +140,7 @@ I'm going to say num which is short for number and say for num in range and then
 
 And then inside of this let's just see what happens when I print out num this is going to iterate over this range and as you can see it prints out 1 all the way through 9.
 
-![large](../../../../../../../../.gitbook/assets/03-084_IMG1.png)
+![large](../.././03-084_IMG1.png)
 
 You may think that this is a little confusing because I passed in the variables or the arguments of one to 10.
 
@@ -157,7 +157,7 @@ So, that is one through ten, if we wanted to truly get the values of 1 through 1
 
 And as you can see now on the right-hand side the values 1 through 10 and get printed out.
 
-![large](../../../../../../../../.gitbook/assets/03-084_IMG2.png)
+![large](../.././03-084_IMG2.png)
 
 ***
 
@@ -173,11 +173,11 @@ You can see that what it does is it still goes over the same range except now in
 
 Now it goes and it skips 1 so it goes with every second value.
 
-![large](../../../../../../../../.gitbook/assets/03-084_IMG3.png)
+![large](../.././03-084_IMG3.png)
 
 And as you might have guessed if I change this to three and run it again it is good to go with every third value as you can see right here we have 1 4 7 and 10.
 
-![large](../../../../../../../../.gitbook/assets/03-084_IMG4.png)
+![large](../.././03-084_IMG4.png)
 
 And this is a really nice way of being able to create a range and then have the kind of control and flexibility for only grabbing the elements and the intervals that you actually want to show.
 

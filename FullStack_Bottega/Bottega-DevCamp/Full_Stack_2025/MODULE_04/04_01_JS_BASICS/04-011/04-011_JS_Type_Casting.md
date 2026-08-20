@@ -206,11 +206,11 @@ var ageOne = 12;
 
 Now, if I wanted to convert this number into a string there are two ways to do it. The first is by calling the string function here and just passing in ageOne. And this is going to return 12 but it's going to return 12 as a string.
 
-![large](../../../../../../.gitbook/assets/04-011_IMG1.png)
+![large](./04-011_IMG1.png)
 
 This is where I can pass ageOne in as a function argument, which we'll talk about in a later module. But it has another syntax option. I can say `ageOne.toString` and also because this is a function I need to end it with these parentheses. If I run this you can see it performs exactly the same way.
 
-![large](../../../../../../.gitbook/assets/04-011_IMG2.png)
+![large](./04-011_IMG2.png)
 
 There's really not a big difference in how this is functioning. It really comes down to a matter of what the implementation is and if it works better to have a function argument or the second one. Typically I use the two string method because typically when I'm trying to convert something, it's easier to just use that dot syntax. But I definitely recommend that you try both out. That is how you can convert numbers into strings.
 
@@ -218,7 +218,7 @@ Let's talk about how we can convert strings into numbers. Because there are many
 
 The first way is very similar to how we did it with the function argument. Now if I say `number(ageTwo);` it prints out `33`.
 
-![medium](../../../../../../.gitbook/assets/04-011_IMG3.png)
+![medium](./04-011_IMG3.png)
 
 What it's going to return is 33, but it returns it as a number. Now we do not have a `.toNumber` method.
 
@@ -226,7 +226,7 @@ If I tried to do something like `ageTwo.toNumber` you can see we don't get any m
 
 The first that I'm going to go into after number is one called `parseInt`. Here we can pass in `ageOne` again, and that works.
 
-![medium](../../../../../../.gitbook/assets/04-011_IMG4.png)
+![medium](./04-011_IMG4.png)
 
 I'm going to go into in a little bit exactly what parseInt does and how else we can use it.
 

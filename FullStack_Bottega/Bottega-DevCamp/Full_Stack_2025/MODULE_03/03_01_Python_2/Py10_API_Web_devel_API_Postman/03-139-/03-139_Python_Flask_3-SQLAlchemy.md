@@ -201,7 +201,7 @@ Instead, we're going to be able to simply create a file that will function exact
 
 Now the first thing I'm going to do is, we don't need this `basic app route` or anything like that here anymore. We're going to be building now our own `API endpoint`, so let's just remove that just so it doesn't get in the way.
 
-![large](../../../../../../../.gitbook/assets/03-139_IMG1.png)
+![large](.././03-139_IMG1.png)
 
 The next thing we're going to do is we're going to integrate with the file system. So we need to be able to save our database to our project. In order to do that, if you remember back on `line 4`, we imported the `OS library` which stands for operating system. So now we can work with it.
 
@@ -380,7 +380,7 @@ That is everything that we need, I believe, in order to get this working. So let
 
 So you're going to hit run, and it might give you a little warning. That's fine, as long as it doesn't give you an error then you are fine.
 
-![large](../../../../../../../.gitbook/assets/03-139_IMG2.png)
+![large](.././03-139_IMG2.png)
 
 Now, I'm going to say: `db.create_all()`.
 
@@ -395,11 +395,11 @@ with app.app_context():
 
 That's a function, so call it with a `parens` at the end. Hit `enter`, and as long as you don't get any error there, you should be fine. Now let's close it off. The REPL session that is, with `control + d`. Now if you type `ls`, now you can see that we have a new file here called `app.sqlite`.
 
-![large](../../../../../../../.gitbook/assets/03-139_IMG3.png)
+![large](.././03-139_IMG3.png)
 
 What we've done, and if you look at this file, it's not really a thing that you can look at. You can see just as all these weird types of characters you're not really meant for looking at this file. You can see a few things you can see that we have an `ID` you have a `title` and you have `content` right there.
 
-![large](../../../../../../../.gitbook/assets/03-139_IMG4.png)
+![large](.././03-139_IMG4.png)
 
 That's kind of cool, and it even has all of our values, such as a title having a 100 characters, and a content having 144. That means that all of our commands worked. Let's review it really quickly because I do realize this may be very foreign to you. Now that you've seen the end result, and you've seen what gets created, maybe the first part of what we did might be a little bit more clear.
 
@@ -411,7 +411,7 @@ We said: I want you to configure the SQL Alchemy Database URI. So that is going 
 
 So it's going to look for the specific key, and it's going to see if it's set, then it's going to go and look for that value. What we did is we said we want to create an SQLite location here, and we want to pass in the path of our base directory, and then we want to create an embedded database of `app.sqlite`.
 
-![large](../../../../../../../.gitbook/assets/03-139_IMG5.png)
+![large](.././03-139_IMG5.png)
 
 From there, we instantiated a new database object with SQL Alchemy, and remember what SQL Alchemy is, it gives us a programmatic way of interacting with the database. It created, right here, an object for us, and that object allowed us to perform tasks such as creating this guide table. Then creating the guide schema, and everything that we did from `lines 13 through 29`. That is what we're doing there.
 

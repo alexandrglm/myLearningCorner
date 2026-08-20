@@ -179,11 +179,11 @@ const externalLinks = document.querySelectorAll('a[href^="http"]');
 
 So right here I have stretched out our HTML code here and I now have two divs one as a main heading and one is a subheading and you can see these on the right-hand side in the browser.
 
-![large](../../../../../../../.gitbook/assets/06-114_IMG1.png)
+![large](.././06-114_IMG1.png)
 
 And what we've done so far is we'll create something like a const variable and we can call this Heading or main Heading or whatever you want to call it then we call document.getElement and we've either worked with element by ID or elements by a class name and so that would work and we could simply call that class name of mainHeading. And now if I console log out heading hit save and if I see what we have here you can see that we have our HTML collection has a length of 1 and it contains that main heading element
 
-![large](../../../../../../../.gitbook/assets/06-114_IMG2.png)
+![large](.././06-114_IMG2.png)
 
 and that works perfectly fine and there are going to be many different circumstances where you use both getElementById and getElementsByClassName.
 
@@ -195,7 +195,7 @@ But these bottom two querySelector and then querySelectorAll these are going to 
 
 And so here I'm gonna pass in a string of mainHeading. And now if I cancel log out this heading once again I should have pretty much the exact same thing so if I come back here hit refresh. Now you can see that I've selected the item.
 
-![large](../../../../../../../.gitbook/assets/06-114_IMG3.png)
+![large](.././06-114_IMG3.png)
 
 I didn't go and I wasn't grabbing a series of items so I didn't get an HTML collection instead I just got the single element that I was trying to query. So the query selector brought me back to this div mainHeading and everything in sight of it. So that worked properly.
 
@@ -203,11 +203,11 @@ Now I'm going to get rid of all of this code in our script tag and let's walk th
 
 So I'm going to come down here and add a button and then on this button. I'm going to add an onclick event so I'm gonna say onclick and then set this equal to a function and the way this is going to work is I'm going to create a function and I'm just going to call this contentToggle. Make sure you call it just like regular JavaScript and then I'm going to go and create a function down in the script tag that is going to be executed every time that this button is clicked. so if I come here and hit refresh it would help if I put some content here so I'll just say toggle content hit save come hit refresh and now we have a button.
 
-![large](../../../../../../../.gitbook/assets/06-114_IMG4.png)
+![large](.././06-114_IMG4.png)
 
 And now if we come down here to the script tag and test it out I can create this function so I'll say content toggle It's not gonna take any arguments and for right now let's just log something out and say I was clicked and if everything is wired up properly then it should say I was clicked right down here. So hit refresh toggle content and that is working.
 
-![large](../../../../../../../.gitbook/assets/06-114_IMG5.png)
+![large](.././06-114_IMG5.png)
 
 So we've set up and wired up our onclick handler here and it is calling this content toggle function.
 
@@ -215,11 +215,11 @@ So now that we have that in place let's set up our query selector. So I'm going 
 
 Okay now if I hit save let's see what we have for our headings. So if I hit refresh you can see that now I don't get an HTML collection.
 
-![large](../../../../../../../.gitbook/assets/06-114_IMG6.png)
+![large](.././06-114_IMG6.png)
 
 And this is one of the key differences between using something like getElementsByClassName and then get querySelectorAll. querySelectorAll returns a node list it's going to be very similar you're going to be able to work with it in a very similar manner to the HTML collection but it is important to understand that you're getting a node list right here shows you that you have two items and here you can see that we have our mainHeading and our subHeading.
 
-![large](../../../../../../../.gitbook/assets/06-114_IMG7.png)
+![large](.././06-114_IMG7.png)
 
 So our querySelectorAll worked it brought back everything that we wanted. It brought back the first div and the second div but it didn't bring back the button because it wasn't wrapped in a div so that selector worked. So now that we have that and we know that we've successfully grabbed our headings let's get rid of our console log statements and now let's actually build in the functionality.
 
@@ -233,13 +233,13 @@ So if it has that it's going to iterate through it's going to check to see if it
 
 So we're going to add one called hideElement which is just going to hide it's going to make the visibility none and that's all we're going to have to do and so I'm going to save this and let's see if we have this working up until this point so clear. Hit refresh. If I press toggle content it works. It went and it hit it.
 
-![large](../../../../../../../.gitbook/assets/06-114_IMG8.png)
+![large](.././06-114_IMG8.png)
 
 Now we have to do the other side of it. We need to get the else condition so that it toggles back forth. So now we'll say else just copy this down and we'll say heading.classList
 
 Now we're going to remove the hideElement and then show the showElement or we're going to add it to the classList. So save that file come back here hit refresh. And now if they click toggle content you'll see it works perfectly.
 
-![large](../../../../../../../.gitbook/assets/06-114_IMG9.png)
+![large](.././06-114_IMG9.png)
 
 So we've effectively built a toggler that will show and hide the content at the click of a button. And one of the really nice things about working with querySelectorAll is this gives you a lot more flexibility. So whenever you need to be able to perform a query that is not based on a class and not based on id but something that's a little bit either more generic like a div or something where you want to pass an entire detailed selection criteria to it then querySelector allows you to make that possible. So that's how you can use querySelectorAll.
 
@@ -247,7 +247,7 @@ Now another way of doing this and technically the way that I've done it right he
 
 Now what I've done is I've created a single div that has two divs nested inside of it and what I want to do is instead of having to iterate over each one of the heading divs and add that hide class each time. Now I just want to look at this one div, this one component on the page, and say OK I want you to be hidden or I want to show you based on if I click toggle content. So that is all we have to change on the HTML side coming down here let's comment this out. And let's also comment all of this out so that you can have it in the show notes.
 
-![large](../../../../../../../.gitbook/assets/06-114_IMG10.png)
+![large](.././06-114_IMG10.png)
 
 And let's now look at querySelectors, I'm gonna say const widget equals we'll say document querySelector, not querySelectorAll and we're just going to pass in a class of widget
 
@@ -259,11 +259,11 @@ And as you can see I'm not passing in the widget by itself as a string I'm passi
 
 So here we have selected that element and let's take a look at it really quick. So I'm gonna say console log widget hit save and now if I refresh you can see that we have our widget which contains our two divs inside of it.
 
-![large](../../../../../../../.gitbook/assets/06-114_IMG11.png)
+![large](.././06-114_IMG11.png)
 
 Now the key thing that I want you to take away from this guide and that is the difference between querySelector and querySelectorAll as you notice querySelector brings back the actual object that you're trying to select. It brought me back this one div
 
-![large](../../../../../../../.gitbook/assets/06-114_IMG12.png)
+![large](.././06-114_IMG12.png)
 
 whereas when we use querySelectorAll it brought back a node list and so that's a very important thing to understand because that means that when you are using querySelector then you need to start whatever process you want to run on your query. You need to do that right away whereas with a querySelectorAll you need to iterate over. So just the same reason why we had this for each loop right here, the reason we had to do that was because we got back a list where right here we're getting back a single element and you're going to have cases where you need to use one versus the other.
 
@@ -275,7 +275,7 @@ So now I'm going to say if widget not heading so if widget.classList contains sh
 
 So hit refresh hit toggle content and that is working perfectly.
 
-![large](../../../../../../../.gitbook/assets/06-114_IMG13.png)
+![large](.././06-114_IMG13.png)
 
 So as you can see we've walked through now 4 different ways that you can query elements on the browser page so your applications can find any elements on the dom and then it can do whatever it needs with them it can hide them it can add different classes it can remove classes that can perform all kinds of different processes.
 

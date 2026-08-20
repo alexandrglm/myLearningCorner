@@ -139,15 +139,15 @@ Now one other thing just as you're going through the course I'm also going to ma
 
 I'm going to finish off this talk on variables in CodePen. Because I like the way that it renders out, it also makes it easier to see everything. We saw how we could store a name, let's now also talk about how we can store multiple values. I'm going to make one small change here, I'm going to come up to settings and I'm going to come up to behavior.
 
-![large](../../../../../../.gitbook/assets/04-004_IMG1.png)
+![large](./04-004_IMG1.png)
 
 We talked about javascript and some of the different options. If I click on behavior I don't want this to be auto-saved and I do not want auto-updating preview. It's perfectly fine if you have it. The only thing that I don't like about it, for providing a tutorial and you being able to watch it is on the console. You actually see output maybe sooner than I would want you to be able to see it. It may be kind of confusing. I'm just going to make it so that it doesn't auto-update. You can leave that on your side but I want to be very clear with what every type of code I write does. So I'm going to change that one option, so now that's saved. Now you can see we have this new button here called run.
 
-![large](../../../../../../.gitbook/assets/04-004_IMG2.png)
+![large](./04-004_IMG2.png)
 
 It's not auto-saving anymore and it's not auto-running. Now we just have to press run and it will run the code for us. Now if I type in the same thing I'm going to say `var name = 'Kristine';` I'm doing the same exact code just so you see everything's working. Now if I press run nothing's going to happen because nothing gets returned. This is where code pen and the javascript console are a little bit different. If we want anything to show up down here then we have to do something like this where I say `console.log(name);` and now if I run this it's going to show Kristine.
 
-![large](../../../../../../.gitbook/assets/04-004_IMG3.png)
+![large](./04-004_IMG3.png)
 
 Another option just so you know it's available and we'll do it a few times and this course is an alert. What an alert does is for example, if you've ever been on a browser and pressed a button and a little screen came up that said "Are you sure you want to do this" such as if you tried to delete something you may have a little pop up that says "Are you sure you want to do that." Well many times that is a javascript alert.
 
@@ -157,7 +157,7 @@ If I run
 
 you can see that we have a little thing that popped up and it says Kristine because we called alert and name.
 
-![large](../../../../../../.gitbook/assets/04-004_IMG4.png)
+![large](./04-004_IMG4.png)
 
 Those are two ways of being able to view what we have available.
 
@@ -185,7 +185,7 @@ All put together it should look like this
 
 Now if I run this, then you can see we have age 12 Kristine and then Scottsdale.
 
-![medium](../../../../../../.gitbook/assets/04-004_IMG5.png)
+![medium](./04-004_IMG5.png)
 
 This is another common convention that you're going to see when declaring variables. It's just simply declaring the name. Essentially you're defining and saying OK I have these different data points I want to work with and sometime later I'm going to define them. Now you may wonder why in the world would I ever want to do this.
 

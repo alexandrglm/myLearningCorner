@@ -297,25 +297,25 @@ Now notice that it's keyBy so the comment that I added right here it should tech
 
 Now that I have keyBy I can just click on it and what is going to return is a full set of instructions on how to use the function and they have this for each one of the functions inside of lodash which is very helpful.
 
-![large](../../../../../../../.gitbook/assets/05-080_IMG1.png)
+![large](.././05-080_IMG1.png)
 
 It also shows when the function was available so it's version
 
-![large](../../../../../../../.gitbook/assets/05-080_IMG2.png)
+![large](.././05-080_IMG2.png)
 
 and then it lists the arguments that are needed
 
-![large](../../../../../../../.gitbook/assets/05-080_IMG3.png)
+![large](.././05-080_IMG3.png)
 
 and what it returns
 
-![large](../../../../../../../.gitbook/assets/05-080_IMG4.png)
+![large](.././05-080_IMG4.png)
 
 Right here you can see that it returns an object and the arguments it expects as a collection and then the iterator that you want to use to transform the keys.
 
 Now that may be very vague and that may make no sense at all, that's perfectly fine. They also have a summary here that reads a little bit closer to just standard English.
 
-![large](../../../../../../../.gitbook/assets/05-080_IMG5.png)
+![large](.././05-080_IMG5.png)
 
 So it says it creates an object composed of keys generated from the results of running each element of collection through the iteratee. Now that still probably unless you are very accustomed to reading documentation that still might be a little vague. So let's get into our example and you'll see that this is actually a very powerful function and we'll see how we can use it.
 
@@ -345,11 +345,11 @@ So in this case what I want to do is I just care about the position values and s
 
 So let's see what this looks like so I'm gonna say console log positions. This isn't everything that I want to implement but it's part of it so I'm going to come back to the webpage hit refresh and see what it prints out it's still loading and looks like a little time out error because in the background I after I finish a video I actually upload it while I'm filming the next one so the issue is I'm trying to pull the CDN call in and the internet is slow so let me just hit refresh one more time and now it's working.
 
-![large](../../../../../../../.gitbook/assets/05-080_IMG6.png)
+![large](.././05-080_IMG6.png)
 
 So what you can see here is we have a set of objects so this shouldn't surprise you but what might surprise you is. Notice how now we have a new set of keys so I think it may help to print out our roster right next to it. So let me just duplicate this. So I'm going to put the roster up top, save, hit refresh and now we're going to have two items.
 
-![large](../../../../../../../.gitbook/assets/05-080_IMG7.png)
+![large](.././05-080_IMG7.png)
 
 First is a list the other set is actually, it's not a list, it is an object so we have these to our list has these different index items so we have zero through 4. That's because if we look at our roster this is an array element this whole element is an array element it's the one at the zero index. Then we have one at the one index and so on and so forth. Now if we close this off and look at our new positions ones that had keyBy run over them.
 
@@ -365,7 +365,7 @@ And so if you notice I'm no longer treating this like an array like I had to her
 
 Hit refresh and I forgot to console log second base there you go. That would help. One more time and now we have what we want.
 
-![large](../../../../../../../.gitbook/assets/05-080_IMG8.png)
+![large](.././05-080_IMG8.png)
 
 So as you can see right here we have a new object. So this is going in. It's grabbing the second base spot here. So everything that was at the second base position the entire object. We now have access to it and I cannot tell you how much this helps. Whenever you're working with a collection such as something that you get in from an API.
 
@@ -373,7 +373,7 @@ So this gives you the ability to instead of having to build all these workaround
 
 So if I want to say that I want to have the third base object here I can go in grab it and then say a third base save hit refresh here.
 
-![large](../../../../../../../.gitbook/assets/05-080_IMG9.png)
+![large](.././05-080_IMG9.png)
 
 And as you can see we have so we have our third baseman with the name of Bregman and it also still does bring back that position value because it brings back the entire object, so that is the keyBy function.
 
@@ -381,7 +381,7 @@ I'm going to clear all of this off and now we're going to go through a different
 
 So I think you will as well, I'm going to first give us a base case scenario this is going to be the ability to just sum up a collection of numbers so I'm going to say `const sum = _.reduce()` and then reduce expects and let's just very quickly open up the lodash documentation and say reduce click it and you'll see a full set of examples right here.
 
-![large](../../../../../../../.gitbook/assets/05-080_IMG10.png)
+![large](.././05-080_IMG10.png)
 
 So I definitely recommend for you to check those out and then I'm going to walk through some of my own examples that I've pulled off from other projects I've worked on in the past.
 
@@ -403,7 +403,7 @@ Then it's going to take one plus two get at it together and then you're going to
 
 If you want to say that you want to start counting from 100 you could start it at 100. I'm going to start it right at zero because in this case, that's the most logical approach. And now let's just print some out. So the way that you could do that is by saying `console.log(sum);` and just print it out just like that save it come back to your index file and the browser. And there you go. We have six so this works perfectly.
 
-![large](../../../../../../../.gitbook/assets/05-080_IMG11.png)
+![large](.././05-080_IMG11.png)
 
 So we are what we're doing is we're leveraging reduce in order to tally up a collection and it does that very nicely if you were to do this manually much like how we walk through with filter and keyBy there would be a lot of manual looping that you would have to do and so reduce does that automatically.
 
@@ -423,7 +423,7 @@ const totalHomeruns = _.reduce(homerunStats, function(total, player)
 
 We have const totalHomeruns equals so we are assigning that to that entire functions we're calling reduce, we're passing in homerunStats and I'm going to walk through how we can access these values in a second. And then the second argument once again is a function. It's an anonymous function that expects to have a total and then a player. So right here inside of it, now what we can do is I can say return total and I can't just call homerun. I have to call my player object and then say player.hr and once again the third argument is where we want it to start and we want it to start at 0 and so let's now just console log our total home runs hit save and so now if I hit refresh you can see we have a 118 and that is accurate if you add each one of these homeruns up that is 118.
 
-![large](../../../../../../../.gitbook/assets/05-080_IMG12.png)
+![large](.././05-080_IMG12.png)
 
 Just looking back at this code I know the syntax might look a little bit strange if you've never used it before. This is a very small amount of code for building something that is pretty non-trivial. We're going into multiple nested collections here and different types of data types. We're going into an array followed by a nested set of objects and from there just a couple of lines of code we're grabbing the values from one of the keys.
 
@@ -461,7 +461,7 @@ console.log(webLinks);
 
 So console webLinks and if everything I did is right there we should have a set of three a tags so clear hit refresh and there we go that worked.
 
-![large](../../../../../../../.gitbook/assets/05-080_IMG13.png)
+![large](.././05-080_IMG13.png)
 
 You can see we have an a tag that says href airbnb. And then it has the link has the end closing tag has a\
 and then it immediately goes right into the other tag so this is working perfectly. And so this is how you could build out an entire set of these links that are actually HTML worthy so if you're building something say you're building a widget that takes in links and then it makes some clickable then this is a way that you could do that and we used reduce for it.
@@ -488,7 +488,7 @@ Notice how we didn't have to do anything like we did before like how we had to r
 
 LodashSampleNumbers and if I don't have a typo's this should give us exactly what we had before but now in a much easier to read and much easier to remember kind of syntax so hit refresh and look at that. We have a full set of random numbers and a very nice random number generator.
 
-![large](../../../../../../../.gitbook/assets/05-080_IMG14.png)
+![large](.././05-080_IMG14.png)
 
 So this is I think a much easier way to write a random number generator. And here you can see we've combined a couple of different lodash functions all in one.
 

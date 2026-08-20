@@ -19,7 +19,7 @@ Starting at the time of this filming over 22 years ago some developers decided t
 
 They need to be on the server, and if you're building a website, that server has to build up all these processes and wrap that code up in a way that the browser can actually interpret.
 
-![large](../../../../../../.gitbook/assets/01-001_IMG1.png)
+![large](./01-001_IMG1.png)
 
 JavaScript is a little bit different. It was created to be the one language that a browser would actually be able to understand. What this means is you can write JavaScript code, simply open it up in the browser, and that browser can parse through the code interpret it and then run the program.
 

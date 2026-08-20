@@ -112,7 +112,7 @@ I'm going to start off just so you can watch the way that the list develops.
 
 And so we're going to print out all of our users just like we have right here it looks like everything is working properly.
 
-![large](../../../../../../../../.gitbook/assets/02-050_IMG1.png)
+![large](../.././02-050_IMG1.png)
 
 ***
 
@@ -134,7 +134,7 @@ Now I can run this and you can see the updated list does not have me in there.
 
 Just as Kristine Tiffany and Leanne, I used to be at the index of two and I have been removed.
 
-![large](../../../../../../../../.gitbook/assets/02-050_IMG2.png)
+![large](../.././02-050_IMG2.png)
 
 Now, this is a very nice and handy way of being able to extract users or elements from an array like this because usually in many other languages you would have to run a query if you only had the value find the index and then remove that index manually.
 
@@ -180,7 +180,7 @@ And then let's also see what the users list looks like now.
 
 So, if I run this you can see that we get our last element this string of Leann and if we look at what the users list looks like now it only has two elements so we started with four we removed one then we popped one but we were able to use that element and then now we're left with two.
 
-![large](../../../../../../../../.gitbook/assets/02-050_IMG3.png)
+![large](../.././02-050_IMG3.png)
 
 **Some popping use cases**
 
@@ -213,7 +213,7 @@ We should only have a single element in the list of Tiffany.
 
 So if I run this you can see that's exactly what we have.
 
-![large](../../../../../../../../.gitbook/assets/02-050_IMG4.png)
+![large](../.././02-050_IMG4.png)
 
 ***
 
@@ -221,7 +221,7 @@ So if I run this you can see that's exactly what we have.
 
 This is not included in the original guide but let's wipe the entire list:
 
-![IMG](../../../../../../../../.gitbook/assets/02-050_IMG_CLEAR.png)
+![IMG](../.././02-050_IMG_CLEAR.png)
 
 ***
 

@@ -111,7 +111,7 @@ new_customers = ['Tiffany', 'Kristine']
 
 Well, you may think that we can do something like this where we could just say that the raw database. So just raw\_db equals and then combine legacy customers and then new customers. Let's see what this gives us if I say print raw\_db this is going to print out Alice and Bob inside of their own list and then Tiffany and Kristine inside of their list.
 
-![IMG](../../../../../../../../.gitbook/assets/03-087_IMG1.png)
+![IMG](../.././03-087_IMG1.png)
 
 Essentially all we've done is we've created a list that contains multiple lists which is not what we want. So I'm going to copy this just to walk through what we're actually going for. I'll add this is a comment.
 
@@ -126,7 +126,7 @@ for legacy_customer in legacy_customers:
 
 So now I can say print and have our new customers so we don't even need to create a new list. We can simply tack on our legacy customers into this new customers list. And if I run this you can see we get the desired output.
 
-![IMG](../../../../../../../../.gitbook/assets/03-087_IMG2.png)
+![IMG](../.././03-087_IMG2.png)
 
 So right here instead of having a list that contains two nested lists instead, we have simply added on to our new\_customers database here and we've tacked on Alice and Bob. So the way that this is able to work is because we've utilized the for-in loop. So all we're doing is we're iterating through our legacy customer lists so we're just iterating through Alice and Bob and then with each loop we are saying I'm calling this new customers list here.
 

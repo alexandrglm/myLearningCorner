@@ -227,7 +227,7 @@ call Python file\_matcher, and there you go, it prints out text files,\
 something2, and then something so, so far, so good, everything here is\
 working.
 
-![large](../../../../../../../.gitbook/assets/03-133_IMG1.png)
+![large](.././03-133_IMG1.png)
 
 Now, while we're in this loop though, we can perform any other\
 conditionals that we want, so here, I can, instead of saying, "I want to\
@@ -268,7 +268,7 @@ up properly. You can see it's grabbing all the Python files, which, it's\
 only finding one. Then, it's finding that Ruby file, then the text\
 files, and then the YML file.
 
-![large](../../../../../../../.gitbook/assets/03-133_IMG2.png)
+![large](.././03-133_IMG2.png)
 
 What we did here is, just in review, we pulled in this fnmatch\
 library. This is giving us the ability to pass in a regular expression\
@@ -371,7 +371,7 @@ here will be the second base players variable, hit save. Now, if we run\
 this again, you can see that worked perfectly, we have players that\
 play second base, Jose Altuve and Scooter Gennett.
 
-![large](../../../../../../../.gitbook/assets/03-133_IMG3.png)
+![large](.././03-133_IMG3.png)
 
 In review, what we've done here is we've leveraged the fnmatch\
 library in Python, and we've seen how we can pass in patterns of data.\

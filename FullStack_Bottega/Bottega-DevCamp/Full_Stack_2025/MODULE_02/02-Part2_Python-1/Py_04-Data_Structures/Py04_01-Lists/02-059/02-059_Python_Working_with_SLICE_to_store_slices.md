@@ -143,7 +143,7 @@ With that being said I'm going to now show you another approach to doing that.
 
 So far in this course, we've worked with implementing slices like this where I could say print and tags and grab the first few elements all the way to ending with the second index which will give us python and development
 
-![large](../../../../../../../../.gitbook/assets/02-059_IMG1.png)
+![large](../.././02-059_IMG1.png)
 
 And this works fine.
 
@@ -167,7 +167,7 @@ But then we have access to that result set through the object and I know that pr
 
 If I run this you can see that all we get back is what looks like little function call where it says **slice(None, two, None)** :\*\*
 
-![large](../../../../../../../../.gitbook/assets/02-059_IMG2.png)
+![large](../.././02-059_IMG2.png)
 
 And **this gives us a little bit of a hint on what is available to us**.
 
@@ -179,7 +179,7 @@ I can just call tags and then pass in using the same bracket syntax pass in our 
 
 Now if I run this you can see we get python and development.
 
-![large](../../../../../../../../.gitbook/assets/02-059_IMG3.png)
+![large](../.././02-059_IMG3.png)
 
 So now that you see it working.
 
@@ -190,13 +190,13 @@ So, what we have right here is very similar to what we have here when we were wo
 Instead of doing something like what we have right here if I tried to do this and pass it\
 and you'll see that I get an error.
 
-![large](../../../../../../../../.gitbook/assets/02-059_IMG4.png)
+![large](../.././02-059_IMG4.png)
 
 And so t**his is a very nice way of being able to store your slice so that you can reuse it on any other kinds of lists**.
 
 So, if I run it again, you can see everything is back and working.
 
-![large](../../../../../../../../.gitbook/assets/02-059_IMG3.png)
+![large](../.././02-059_IMG3.png)
 
 Now, that we have that let's talk about the different variations and how you can call this, I'm going to print out that object again.
 
@@ -234,7 +234,7 @@ We're going to have the first set.
 
 Print it out using our explicit type of syntax and the second one using a slice object. And if I run this you can see we get the exact same result set.
 
-![large](../../../../../../../../.gitbook/assets/02-059_IMG5.png)
+![large](../.././02-059_IMG5.png)
 
 We get development because we started at one then it skips because we said there's going to be a step here that is two.
 
@@ -253,19 +253,19 @@ And you may think this is kind of pointless because in this example we could sim
 But I want you to think in a little bit more of a production application there are going to be times where an algorithm might return a slice and you have no idea what the start, stop and step points are and so when you can work with this type of function it's\
 really nice because I can say slice object and then call start and what this is going to do is it's going to tell me the first index so this is going to tell me it started at 1
 
-![large](../../../../../../../../.gitbook/assets/02-059_IMG6.png)
+![large](../.././02-059_IMG6.png)
 
 Then, if I want to print out when it's ending it's going to give me the last index which is four.
 
-![large](../../../../../../../../.gitbook/assets/02-059_IMG6.png)
+![large](../.././02-059_IMG6.png)
 
 And then, if I want to see what the step is I can do step run that and you can see this gives us 1 4 and 2.
 
-![large](../../../../../../../../.gitbook/assets/02-059_IMG8.png)
+![large](../.././02-059_IMG8.png)
 
 which is exactly what got placed here.
 
-![large](../../../../../../../../.gitbook/assets/02-059_IMG9.png)
+![large](../.././02-059_IMG9.png)
 
 Once again, there's not much of a point to it.
 

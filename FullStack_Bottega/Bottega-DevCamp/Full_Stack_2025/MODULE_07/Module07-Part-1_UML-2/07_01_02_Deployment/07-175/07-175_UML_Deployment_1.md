@@ -46,7 +46,7 @@ They are primarily used for **system architecture decisions** and show how softw
 
 Deployment diagrams consist of **SIX** fundamental elements that work together to represent system architecture:
 
-![large](../../../../../../../.gitbook/assets/07-175_IMG0.png)
+![large](.././07-175_IMG0.png)
 
 * **Nodes**: Physical or logical hardware/software units
 * **Components**: Software applications or services running on nodes
@@ -67,7 +67,7 @@ Deployment diagrams consist of **SIX** fundamental elements that work together t
 
 ### **Visual Representation**
 
-![large](../../../../../../../.gitbook/assets/07-175_IMG1.png)
+![large](.././07-175_IMG1.png)
 
 Three-dimensional boxes or cubes representing physical or logical deployment targets
 
@@ -100,11 +100,11 @@ Three-dimensional boxes or cubes representing physical or logical deployment tar
 
 > **Software applications, services, or logical units that run within nodes** and handle business logic and communication.
 
-![large](../../../../../../../.gitbook/assets/07-175_IMG3.png)
+![large](.././07-175_IMG3.png)
 
 ### **Visual Representation**
 
-![large](../../../../../../../.gitbook/assets/07-175_IMG2.png)
+![large](.././07-175_IMG2.png)
 
 Rounded rectangles contained within nodes, often with component stereotypes
 
@@ -144,7 +144,7 @@ Different UML tools may represent components with varying visual styles:
 
 Text surrounded by angle brackets (e.g., `<<device>>`, `<<angular web service>>`)
 
-![large](../../../../../../../.gitbook/assets/07-175_IMG4.png)
+![large](.././07-175_IMG4.png)
 
 ### **Purpose**
 
@@ -191,7 +191,7 @@ Basic connections between nodes showing that communication occurs between system
 
 Simple lines connecting nodes without directional information
 
-![large](../../../../../../../.gitbook/assets/07-175_IMG5.png)
+![large](.././07-175_IMG5.png)
 
 ### **Purpose**
 
@@ -223,7 +223,7 @@ Directional relationships that specify which nodes depend on others for function
 
 Dotted lines with arrows pointing toward the nodes being depended upon
 
-![large](../../../../../../../.gitbook/assets/07-175_IMG6.png)
+![large](.././07-175_IMG6.png)
 
 ### **Purpose**
 
@@ -258,7 +258,7 @@ Complex relationships in distributed systems that show how multiple nodes work t
 
 Lines connecting multiple nodes, often in hub-and-spoke or network patterns
 
-![large](../../../../../../../.gitbook/assets/07-175_IMG7.png)
+![large](.././07-175_IMG7.png)
 
 ### **Use Cases**
 
@@ -326,7 +326,7 @@ In this section we're going to walk through the deployment diagram. Many times w
 
 We're going to start this off by walking through the six elements that make up a deployment diagram;
 
-![IMG](../../../../../../../.gitbook/assets/07-175_IMG0.png)
+![IMG](.././07-175_IMG0.png)
 
 * Nodes
 * Components
@@ -339,17 +339,17 @@ We're going to start this off by walking through the six elements that make up a
 
 The very first item is the node, it is one of the most important parts of the entire system. Essentially, every component of a deployment diagram is a node. Everything else is simply adding detail to that node or it's showing how the nodes are related to each other. The node itself is the actual real-world component. We have a web server and that web server has an angular front end system. We're going to go into the details of everything shortly but for right now just know that a node could be anything from a server to a database or it could be an API. It's anything that you can communicate with.
 
-![IMG](../../../../../../../.gitbook/assets/07-175_IMG1.png)
+![IMG](.././07-175_IMG1.png)
 
 ## Components
 
 Now we're going to talk about components. There are a couple of different syntax options for components. The component is the kind of rounded rectangle storing the angular web service. A component could be an application, a web service, it could be the API itself or it could be a database, there are numerous things a component could be. Usually, it is the actual piece of software that manages communication and handles the business logic for the node that it resides on.
 
-![IMG](../../../../../../../.gitbook/assets/07-175_IMG2.png)
+![IMG](.././07-175_IMG2.png)
 
 I also want to show you a separate syntax, the main reason is depending on the type of software that you use, you might have a couple of different options for showing and visualizing components. If you use something like an enterprise architect, your components inside a deployment diagram are going to look like this.
 
-![IMG](../../../../../../../.gitbook/assets/07-175_IMG3.png)
+![IMG](.././07-175_IMG3.png)
 
 It's going to look like the host web server, either option is valid for you to use. Remember, the most important thing when working with UML is not to worry about all of the little details or getting every single symbol right. The most critical part is that you're able to visualize and represent your system in a way that makes sense to you and to all of the other stakeholders on the project.
 
@@ -357,7 +357,7 @@ It's going to look like the host web server, either option is valid for you to u
 
 The next item is the artifact. Artifacts are those items that are surrounded by the angle brackets (device and angular web service). When analyzing a deployment diagram, if I want to see what type of server I'm going to deploy or the type of application that I'm going to configure, these are the items that I look at.
 
-![IMG](../../../../../../../.gitbook/assets/07-175_IMG4.png)
+![IMG](.././07-175_IMG4.png)
 
 Right here I would be able to look at that bottom component and know that the server needs to work with angular, I would need to install a node, NPM, and other dependencies. If it said Rail's web service, then there would be different items that I would have to install.
 
@@ -369,19 +369,19 @@ This is a formal way of defining the type of server and the type of device in UM
 
 Now we have links. The links are those lines that are connecting each one of the nodes. We have a link from the angular front end to the authentication system. We have a link between the front end and the rails API and then we have a link between the API and the authentication system. That's a way of showing how each one of the nodes is connected.
 
-![IMG](../../../../../../../.gitbook/assets/07-175_IMG5.png)
+![IMG](.././07-175_IMG5.png)
 
 ## Dependencies
 
 Dependencies put a twist on what links do. Links connect our items, if we want to be more specific, we can add dependencies. Dependencies are represented by that dotted line with arrows going in the direction of the node. It shows what other nodes it depends on. At a cursory glance, you'd be able to look at this and understand that the angular front end depends on the auth system and it also depends on the API. The API depends on the auth system and you can see that simply by knowing that it's a dotted line with arrows going to each one of those other nodes.
 
-![IMG](../../../../../../../.gitbook/assets/07-175_IMG6.png)
+![IMG](.././07-175_IMG6.png)
 
 ## Associations
 
 The association element is very similar to the link and the dependency. It is a way of connecting all of the nodes and showing how they're associated. In this case, we have an entire system that represents how a user and an API can connect with a web application that leverages a load balancer. We're not going to focus on how load balancers work, however, by looking at this system you can tell that a load balancer can take in a request from the Internet and then maps that to various applications servers.
 
-![IMG](../../../../../../../.gitbook/assets/07-175_IMG7.png)
+![IMG](.././07-175_IMG7.png)
 
 When I see something like this, it's helpful for me to understand what has to be done from a deployment strategy. I know that I'm going to:
 

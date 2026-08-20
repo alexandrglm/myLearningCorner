@@ -11,7 +11,7 @@ While you can create beautiful, functional applications with either option, it i
 important to look closely at the two so you can pick the one that is\
 right for your needs.
 
-![IMG](../../../../../../../.gitbook/assets/02-020_IMG1.png)
+![IMG](.././02-020_IMG1.png)
 
 ## Monolithic Architecture
 

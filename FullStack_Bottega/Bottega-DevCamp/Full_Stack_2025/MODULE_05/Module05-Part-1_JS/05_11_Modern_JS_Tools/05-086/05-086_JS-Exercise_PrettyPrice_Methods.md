@@ -38,21 +38,21 @@ OK, now let's talk about the base case scenario. So before we get into having to
 
 So if I have a value, so let's say that I make gross price here is something like 3.50. If my goal is to get rid of this 50 cents there are a few ways of doing it. But I think the easiest way here is to just call a function on it so I'm going to say Math.floor and then pass in that value and now you can see that the number 3 gets returned.
 
-![large](../../../../../../../.gitbook/assets/05-086_IMG1.png)
+![large](.././05-086_IMG1.png)
 
 And so if we duplicate this and let's say here we passed in 10.83 then ten gets returned and if we put a million different numbers in there each time it would take that decimal and then it would simply strip off whatever decimal value is on there and it's going to return that whole number.
 
-![large](../../../../../../../.gitbook/assets/05-086_IMG2.png)
+![large](.././05-086_IMG2.png)
 
 And the nice thing about this is if we pass in just 10 then it still works because whenever you call Math.floor on an integer, it just returns the exact same integer. So that is all that we need to do it for the first part of this. So if I say return and then Math.floor and pass in the gross price then when I can do is say gross price plus extension and that's going to get us our base case perfectly taken care of.
 
 So now we can call this function, so let's say pretty price and pass in 3.42 and then pass in 0.95 and let's end the expression and see what that gives us, and that's it 3.95.
 
-![large](../../../../../../../.gitbook/assets/05-086_IMG3.png)
+![large](.././05-086_IMG3.png)
 
 Now if we wanted it to be 3.99 pass that in and it works beautifully.
 
-![large](../../../../../../../.gitbook/assets/05-086_IMG4.png)
+![large](.././05-086_IMG4.png)
 
 So I'm really happy with this first part of the solution but it's not perfect yet because watch what happens if we try to pass in a whole number. Now it's doing what you'd expect, it is taking 3.42 down to 3 and then it's adding 99 to it.
 
@@ -71,7 +71,7 @@ const prettyPrice = (grossPrice, extension) => {
 
 Okay, so now if you come down you can see our output has already updated. So now on line 9 here even when we pass in 99 the correct value is still being output so our filter is working perfectly.
 
-![large](../../../../../../../.gitbook/assets/05-086_IMG6.png)
+![large](.././05-086_IMG6.png)
 
 We could pass in a decimal, we could pass in a whole number. And then the system is going to be able to check for what got placed in and then it's going to go through and run through the entire system generate that pretty price. And now we can use it on a web application, a mobile application, or whatever type of JavaScript app that you're working on.
 

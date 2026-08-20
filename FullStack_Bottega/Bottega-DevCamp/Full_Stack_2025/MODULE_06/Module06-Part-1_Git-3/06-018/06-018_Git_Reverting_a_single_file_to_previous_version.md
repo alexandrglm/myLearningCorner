@@ -26,11 +26,11 @@ So I'm going to go down and also if you want to get all the way to the very end 
 
 So we need to grab the comment and copy it.
 
-![large](../../../../../../.gitbook/assets/06-018_IMG1.png)
+![large](./06-018_IMG1.png)
 
 And let's quit out of git log and the syntax for doing this is going to be typing git checkout paste in that full commit ID hash dash dash followed by the path to the file.
 
-![large](../../../../../../.gitbook/assets/06-018_IMG2.png)
+![large](./06-018_IMG2.png)
 
 Now just file by itself won't work if you have it nested inside of other directories so make sure that you give the full path to the file here and then type enter.
 
@@ -38,18 +38,18 @@ Now if I type git status now this is going to show that we have modified that fi
 
 Now let's open this up just to confirm that it actually worked so you can see that this file is now completely different and if we open it up compare it to the demo file on the other side you can see the demo file is the way that our python file my file was just a minute ago but now it's been completely reverted to the previous time in history where we only had these 3 lines of code so this worked perfectly.
 
-![large](../../../../../../.gitbook/assets/06-018_IMG3.png)
+![large](./06-018_IMG3.png)
 
 Now I'm going to remove that demo file since we don't need to anymore and the way that we can update the site is just by going through the same process again and say git add all git commit and say reverted back to and then usually you're going to do something like paste in the hash for my\_file.py that I just so it's very explicit.
 
-![large](../../../../../../.gitbook/assets/06-018_IMG4.png)
+![large](./06-018_IMG4.png)
 
 Later on, in a future guide, I'll show you how you can add even more detail to your commit messages. But right now we can just do it like this and hit save and you can see that it followed the exact same process that we did before and if I type git push now it's going to go through.
 
-![large](../../../../../../.gitbook/assets/06-018_IMG5.png)
+![large](./06-018_IMG5.png)
 
 Push it up to the remote repository if you hit refresh and come down to my\_file.py you can see it has been reverted back perfectly.
 
-![large](../../../../../../.gitbook/assets/06-018_IMG6.png)
+![large](./06-018_IMG6.png)
 
 So this is how you can revert back to a previous version of the file by using git.

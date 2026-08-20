@@ -8,17 +8,17 @@
 
 ## Video lesson speech
 
-![large](../../../../../../.gitbook/assets/06-009_IMG1.png)
+![large](./06-009_IMG1.png)
 
 As you can see right here in this diagram we have a set of diamonds. Each one of these diamonds represents a version of our application and the one on the far left shows that the long line going to the center is what is called the master branch.
 
-![large](../../../../../../.gitbook/assets/06-009_IMG2.png)
+![large](./06-009_IMG2.png)
 
 You can think of this branch as being the live version of your application. Now there are times where you need to go and build some features and you don't want to immediately place all of your changes directly in the master branch. What usually causes you to use a branch is to build something that maybe isn't just a quick fix it might be something that requires multiple files in the codebase to be changed and you don't want to make all of those changes directly on the live site.
 
 What you can do is you can branch off of the entire code base and this is typically called a feature branch. So as you can see here we have a couple of different branches we have our little feature and then down below we have our big feature.
 
-![large](../../../../../../.gitbook/assets/06-009_IMG3.png)
+![large](./06-009_IMG3.png)
 
 What you can think of this process is the ability to break the entire code base out and then work on some type of feature. And while you're working on your feature other developers, other team members, or even yourself will still have the working version of the code until your entire new feature is done.
 

@@ -134,7 +134,7 @@ So, we are going to have four different elements.
 
 And so this is going to replicate for example sales data where `g` will be for Google, `f` for Facebook, `x` for X (Twitter) and `0` for offline.
 
-![large](../../../../../../../../.gitbook/assets/02-069_IMG1.png)
+![large](../.././02-069_IMG1.png)
 
 And then each one of these elements is going to be these little dollar signs.
 
@@ -158,7 +158,7 @@ If you remember back to when we were talking about numbers and strings you saw t
 If I go four plus say a W and try to print that out you see that we get an error\
 where it says unsupported operand plus for int and string.
 
-![large](../../../../../../../../.gitbook/assets/02-069_IMG2.png)
+![large](../.././02-069_IMG2.png)
 
 Now that means that we can't combine a string and an integer or a number like we just did.
 
@@ -166,7 +166,7 @@ However, **there is something we can do it doesn't mean you can't perform any ki
 
 If I do 4 times w you're going to see that that brings us 4 W's it returns a string.
 
-![large](../../../../../../../../.gitbook/assets/02-069_IMG3.png)
+![large](../.././02-069_IMG3.png)
 
 I want you to be able to **take this concept to combine it with dictionaries** and, also, I want you to have something that prints out this exact histogram right here.
 
@@ -224,7 +224,7 @@ So, I'm going to create a dictionary here and I'm gonna store it in a variable c
 
 And then offline had 12. And so these are sales figures that are stored in a key-value based dictionary.
 
-![large](../../../../../../../../.gitbook/assets/02-069_IMG4.png)
+![large](../.././02-069_IMG4.png)
 
 Now, in order to get this output we're going to have to perform some calculations and then also have some output.
 
@@ -262,17 +262,17 @@ So, after we've done that then we will be able to add that.
 
 So I'm going to hit enter and you can see this work perfectly.
 
-![large](../../../../../../../../.gitbook/assets/02-069_IMG5.png)
+![large](../.././02-069_IMG5.png)
 
 So now let's just replicate that for each one of the other elements.\
 Here we have f for Facebook and next, we're going to go with t for\
 Twitter and lastly we will go with o for offline.
 
-![large](../../../../../../../../.gitbook/assets/02-069_IMG6.png)
+![large](../.././02-069_IMG6.png)
 
 Now let's run this and see if it gives us what we want. And there you go.
 
-![large](../../../../../../../../.gitbook/assets/02-069_IMG7.png)
+![large](../.././02-069_IMG7.png)
 
 You notice we have an identical histogram right here where we're able\
 to calculate each one of the values parse them grab the count value for\

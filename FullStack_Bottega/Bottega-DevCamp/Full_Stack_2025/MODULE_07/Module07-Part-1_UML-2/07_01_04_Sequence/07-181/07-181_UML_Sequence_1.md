@@ -33,7 +33,7 @@ We're going to go through each one of those elements
 
 Starting it off we have Class Rules or Participants. When I say "or" I mean that you may see it named a "class role" in one form of the documentation or with one type of software and then it may be called a "participant" with others. I've seen it called both ways, that's a reason why I included both options.
 
-![large](../../../../../../../.gitbook/assets/07-181_IMG1.png)
+![large](.././07-181_IMG1.png)
 
 Now what they are is if you look at the very top those colored little rectangles that says "User Dashboard" "Commission Settings" and then "Commission Validation Engine" those are participants. Those are the class roles. One of the nice things about sequence diagrams is they allow you to isolate all of the different communication occurrences that will happen to a participant.
 
@@ -43,7 +43,7 @@ Once we get into the full demo and analyze a full system, you're going to see th
 
 The next element we're going to talk about is the Activation or the Execution Occurrence. What that is, if you look at those vertical pipe looking items one is gray and the other set are white. Those are execution occurrences.
 
-![medium](../../../../../../../.gitbook/assets/07-181_IMG2.png)
+![medium](.././07-181_IMG2.png)
 
 Essentially they are the event when something transpires when it either receives a message or when it sends it. What that tells me from a developer's perspective, when I see that I know there's going to probably have to be some type of method there's going to have to be a module or something that can manage that communication.
 
@@ -51,7 +51,7 @@ Essentially they are the event when something transpires when it either receives
 
 The next element is one of the most important and that is the message.
 
-![large](../../../../../../../.gitbook/assets/07-181_IMG3.png)
+![large](.././07-181_IMG3.png)
 
 The messages are represented by lines with arrows going in the direction that the message is being sent. They also can have names, just like here
 
@@ -71,6 +71,6 @@ If you're working with some type of asynchronous system, say you're working with
 
 Now moving down the line, we have Lifelines.
 
-![large](../../../../../../../.gitbook/assets/07-181_IMG4.png)
+![large](.././07-181_IMG4.png)
 
 Lifelines are those dotted lines that go from the participant all the way down for the entire diagram. What they really represent is to make it easier for us to see each one of the stages and to give a spot where the messages can be sent. They don't actually do anything, they're more there so we can know at what stage a message is going to be sent to one of the participants and so on and so forth. That's what the lines are, if you're building informal UML they are always represented by dotted lines. Part of the reason for that is so that we don't get them confused with some of the other items such as a activation event or something like that.

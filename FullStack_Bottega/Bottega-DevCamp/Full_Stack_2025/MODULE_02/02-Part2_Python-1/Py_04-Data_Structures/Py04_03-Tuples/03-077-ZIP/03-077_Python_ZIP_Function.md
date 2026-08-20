@@ -230,7 +230,7 @@ This returns a zip object as you can see but if we can just cast it as a list we
 
 So I run it now and it works.
 
-![large](../../../../../../../../.gitbook/assets/03-077_IMG1.png)
+![large](../.././03-077_IMG1.png)
 
 So as you can see we have a list and inside of this list it has a set of four tuples.
 

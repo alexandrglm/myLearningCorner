@@ -143,7 +143,7 @@ else:
 
 And so now if I run this code you can see it says welcome.
 
-![large](../../../../../../../../.gitbook/assets/03-092_IMG1.png)
+![large](../.././03-092_IMG1.png)
 
 Because of this equality operator.
 
@@ -155,7 +155,7 @@ And so if you read this it really represents if the username is not equal to the
 
 If not so if that is not the case then I want you to run the code in this else block and so now if I run this code you can see it says "You shall not pass!"
 
-![large](../../../../../../../../.gitbook/assets/03-092_IMG2.png)
+![large](../.././03-092_IMG2.png)
 
 So we've effectively flipped that conditional logic and if you remember back to our basic introduction on conditionals you remember that I said that what a condition checks for is simply a true or false value.
 
@@ -176,7 +176,7 @@ Now I can add in any kind of number to compare this to. So I could say age is no
 
 If I run this you can see that it says welcome.
 
-![large](../../../../../../../../.gitbook/assets/03-092_IMG3.png)
+![large](../.././03-092_IMG3.png)
 
 Because this is going to hit this code block for any number that is not equal to 90 and so you can see that this works.
 
@@ -198,7 +198,7 @@ and **these only work for numbers** which I think is kind of a logical approach 
 
 As you can see it says you shall not pass.
 
-![large](../../../../../../../../.gitbook/assets/03-092_IMG4.png)
+![large](../.././03-092_IMG4.png)
 
 And this makes no sense.
 
@@ -209,7 +209,7 @@ Now if we do switch this back to a set of numbers.
 That is where all of these greater than and less than options can go. So if I say, if the\
 age is greater than 10 and if I run this then you can see it says Welcome.
 
-![large](../../../../../../../../.gitbook/assets/03-092_IMG5.png)
+![large](../.././03-092_IMG5.png)
 
 And so the common convention is you're going to use your greater than and your less than symbols for any objects that are items such as numbers and then your inequality and your equality values.
 
@@ -226,13 +226,13 @@ understand that an else block is just going to run whatever happens if\
 this is not the case. So now if I run this you can see that nothing gets\
 printed out
 
-![large](../../../../../../../../.gitbook/assets/03-092_IMG6.png)
+![large](../.././03-092_IMG6.png)
 
 because these items don't match these lists do not match.
 
 Now , if I grab these usernames from user\_list and place them in the second\_list if I run this now you can see it prints out and says that they match which is exactly what we're looking for.
 
-![large](../../../../../../../../.gitbook/assets/03-092_IMG7.png)
+![large](../.././03-092_IMG7.png)
 
 And you may wonder why in the world would I ever want to compare two identical lists?
 

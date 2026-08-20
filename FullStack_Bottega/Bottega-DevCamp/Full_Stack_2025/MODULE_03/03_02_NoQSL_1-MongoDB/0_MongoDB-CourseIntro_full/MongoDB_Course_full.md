@@ -532,7 +532,7 @@ What will you need?
 
 *   A MongoDB (free) registered account (https://www.mongodb.com/cloud/atlas/register)
 
-    ![MongoDB Atlas Account types](<../../../../../../.gitbook/assets/03-146_IMG01 (1).png>)
+    ![MongoDB Atlas Account types](<./03-146_IMG01 (1).png>)
 *
 
 ### What is MongoDB Atlas?
@@ -545,7 +545,7 @@ _MongoDB Atlas is a multi-cloud database service by the same people that build M
 
 _Play around with a **free cluster**, launch a serverless instance, or define a dedicated cluster configuration for your application._
 
-![IMG](<../../../../../../.gitbook/assets/03-146_IMG02 (1).png>)
+![IMG](<./03-146_IMG02 (1).png>)
 
 _To choose a deployment type, see Database Deployment Types._
 
@@ -553,7 +553,7 @@ _To choose a deployment type, see Database Deployment Types._
 
 _Deploy your database to the same cloud provider and region as your applications to reduce latency and standardize security controls._
 
-![img](<../../../../../../.gitbook/assets/03-146_IMG03 (1).png>)
+![img](<./03-146_IMG03 (1).png>)
 
 #### 2)     Secure the Database
 
@@ -563,13 +563,13 @@ _Define an IP access list for your cluster._
 
 **This can include the IPs of your server, or your webservice on Render, Vercel, etc; or, your IP/DynDNS to access from your shell**.
 
-![Atlas IP configs](<../../../../../../.gitbook/assets/03-146_IMG04 (1).png>)
+![Atlas IP configs](<./03-146_IMG04 (1).png>)
 
 **2.2 Manage Database Users**
 
 _Define how your team members and applications authenticate to your database and what data they can access_.
 
-![MongoDB Atlas Accounts](<../../../../../../.gitbook/assets/03-146_IMG05 (1).png>)
+![MongoDB Atlas Accounts](<./03-146_IMG05 (1).png>)
 
 **This means you can create different users, with different permissions, as needed. It is mandatory that you create one, and I suggest to NOT use the default username/passwords of your MongoDB account.**
 
@@ -579,7 +579,7 @@ _Define how your team members and applications authenticate to your database and
 
 _Connect to your database using the MongoDB Shell, one ofMongoDB's native language drivers, MongoDB Compass, or theMongoDB Connector for BI._
 
-![img](<../../../../../../.gitbook/assets/03-146_IMG06 (1).png>)
+![img](<./03-146_IMG06 (1).png>)
 
 **From this point on, everything is created and configured, so that, how you configure and connect your service depends on the use you are going to make of it (Shell, WebGUI, Render/Vercel/etc...).**
 
@@ -828,7 +828,7 @@ Expected output:
 
 This confirms that our user `testing` has been successfully created with the specified roles.
 
-![terminal output](<../../../../../../.gitbook/assets/03-147_IMG01 (1).png>)
+![terminal output](<./03-147_IMG01 (1).png>)
 
 ***
 
@@ -963,7 +963,7 @@ MongoCourse> db.Books.getIndexes()
 
 ***
 
-![MongoShell, creating db, and getting indexes](<../../../../../../.gitbook/assets/03-148_IMG01 (1).png>)
+![MongoShell, creating db, and getting indexes](<./03-148_IMG01 (1).png>)
 
 ***
 
@@ -1028,7 +1028,7 @@ MongoCourse> db.Books.insertOne(
 
 #### **Expected Output:**
 
-![MongoDB, .insertOne()](<../../../../../../.gitbook/assets/03-149_IMG01 (1).png>)
+![MongoDB, .insertOne()](<./03-149_IMG01 (1).png>)
 
 **Note:** `ObjectId` is a unique identifier automatically generated for each document.
 
@@ -1159,7 +1159,7 @@ MongoCourse> db.Books.insertMany([
 
 #### **Expected Output:**
 
-![MongoDB, .insertMany( {array} )](<../../../../../../.gitbook/assets/03-150_IMG01 (1).png>)
+![MongoDB, .insertMany( {array} )](<./03-150_IMG01 (1).png>)
 
 #### **Key Points:**
 
@@ -1514,7 +1514,7 @@ MongoCourse> db.Books.countDocuments({
 2
 ```
 
-![img](<../../../../../../.gitbook/assets/03-151_IMG02 (1).png>)
+![img](<./03-151_IMG02 (1).png>)
 
 ***
 
@@ -1715,7 +1715,7 @@ MongoCourse> db.Books.findOne({ "authors.name" : "Guy Delisle"  })
 
 This ensures that only **one** document is returned, even if multiple matches exist.
 
-![img](<../../../../../../.gitbook/assets/03-152_IMG02 (1).png>)
+![img](<./03-152_IMG02 (1).png>)
 
 ***
 
@@ -1846,7 +1846,7 @@ MongoCourse> db.Books.find( {}, { "name" : 1, "authors" : 1 } )
 ]
 ```
 
-![img](<../../../../../../.gitbook/assets/03-153_IMG01 (1).png>)
+![img](<./03-153_IMG01 (1).png>)
 
 #### **2. Excluding Specific Fields**
 
@@ -1887,7 +1887,7 @@ MongoCourse> db.Books.find( {}, { "authors" : 0 } )
 * You **cannot mix** inclusion (`1`) and exclusion (`0`) in the same query, **except for** `**_id**`.
 * If no projection is specified, all fields are returned by default.
 
-![img](<../../../../../../.gitbook/assets/03-153_IMG02 (1).png>)
+![img](<./03-153_IMG02 (1).png>)
 
 ####
 
@@ -2078,7 +2078,7 @@ The above query will return only the **first author** from the `authors` array.
 ]
 ```
 
-![img](<../../../../../../.gitbook/assets/03-154_IMG03 (1).png>)
+![img](<./03-154_IMG03 (1).png>)
 
 ***
 
@@ -2146,7 +2146,7 @@ db.books.remove({ name: "Machine Learning" })
 db.Books.remove({ name: "Data Science 101" }, 1)
 ```
 
-![img remove, deprecated, but useful](<../../../../../../.gitbook/assets/03-155_IMG01 (1).png>)
+![img remove, deprecated, but useful](<./03-155_IMG01 (1).png>)
 
 ***
 
@@ -2383,7 +2383,7 @@ Atlas atlas-terube-shard-0 [primary] test> db.Books.find(
 
 ***
 
-![img](<../../../../../../.gitbook/assets/03-156_IMG01 (1).png>)
+![img](<./03-156_IMG01 (1).png>)
 
 ***
 
@@ -2458,7 +2458,7 @@ Atlas atlas-terube-shard-0 [primary] test> db.Books.findOne(
 }
 ```
 
-![img](<../../../../../../.gitbook/assets/03-157_IMG01 (1).png>)
+![img](<./03-157_IMG01 (1).png>)
 
 **Benefits of `findOne()`:**
 
@@ -2664,7 +2664,7 @@ Atlas atlas-terube-shard-0 [primary] test> db.Books.findOne(
 
 ***
 
-![img](<../../../../../../.gitbook/assets/03-158_IMG01 (1).png>)
+![img](<./03-158_IMG01 (1).png>)
 
 ***
 

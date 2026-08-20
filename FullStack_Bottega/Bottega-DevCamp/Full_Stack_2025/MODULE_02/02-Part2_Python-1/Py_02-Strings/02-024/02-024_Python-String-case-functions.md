@@ -32,7 +32,7 @@ And what this is going to give you the ability to do is to convert it to be uppe
 
 Now if I hit enter you can see that now our entire string is in upper case.
 
-![IMG](../../../../../../../.gitbook/assets/02-024_IMG1.png)
+![IMG](.././02-024_IMG1.png)
 
 Before we go on to some of the other types of case manipulators in Python.
 
@@ -48,7 +48,7 @@ So let's see what happens if I come down here and create a new line and call sen
 
 Now if I hit clear and then run. What do you think's going to happen? Well if I hit this you can see that there was no change made.
 
-![IMG](../../../../../../../.gitbook/assets/02-024_IMG1b.png)
+![IMG](.././02-024_IMG1b.png)
 
 Everything here is exactly what's being printed out which means that what's happening on line 3 when we call `.upper` on the sentence is not actually altering the sentence.
 
@@ -56,7 +56,7 @@ It is only when we call this when the sentence is created.
 
 So when this variable is storing the value if we call up Upper on this string object then it's going to be stored inside of sentence.
 
-![IMG](../../../../../../../.gitbook/assets/02-024_IMG2.png)
+![IMG](.././02-024_IMG2.png)
 
 Now technically we can also do this if I cut this out and pasted in and I run it.
 
@@ -78,7 +78,7 @@ So this is our sentence object but what actually is happening here is:
    If I can spell it correctly and what this is is a variable.
 2. After that, we have our string and what this is is an actual string by itself.
 
-![IMG](../../../../../../../.gitbook/assets/02-024_IMG3.png)
+![IMG](.././02-024_IMG3.png)
 
 So what we have going on is this is not just one process.
 
@@ -110,7 +110,7 @@ And it may have something to do with this issue right here where you're calling 
 So a very common pattern is to do something like this where whenever you want to change the values you create a new variable and now you can say `sentence.upper`\
 and place it inside of sentence two and now if I come in here now let's print both of these out.
 
-![IMG](../../../../../../../.gitbook/assets/02-024_IMG4.png)
+![IMG](.././02-024_IMG4.png)
 
 And now you can see we have not changed the initial string value but we have with the other one and that's a process that you'll see quite a bit because **you need to be careful with how you change an original value** because **if you change it permanently then other methods that are calling it may run into some bugs** because they may expect it to look like this but we may have accidentally converted it to be in all upper case or performed all other kinds of different processes on it.
 
@@ -144,7 +144,7 @@ print this out to the screen.
 
 Now if I run this you can see it has taken the very first letter and it has capitalized it.
 
-![IMG](../../../../../../../.gitbook/assets/02-024_IMG5.png)
+![IMG](.././02-024_IMG5.png)
 
 I'm going to copy that commented out.
 
@@ -158,7 +158,7 @@ But if we call title what is going to happen if I run.
 
 You can see that it goes through and it converts each one of these so that the first letter is title-ized:
 
-![IMG](../../../../../../../.gitbook/assets/02-024_IMG6.png)
+![IMG](.././02-024_IMG6.png)
 
 This is a very popular task to do I probably implement the title method and pretty much every application that I work on in some form or another because it can become quite handy.
 
@@ -172,7 +172,7 @@ The last one that we're going to do is lower and in order to get our lower I'm g
 
 I'm going to make this all uppercase and then call lower on it and if I run this you'll see that it converts it so that it's all in lower case values.
 
-![IMG](../../../../../../../.gitbook/assets/02-024_IMG7.png)
+![IMG](.././02-024_IMG7.png)
 
 You do not have to start with uppercase values if you have an example where everything is lowercase and you run this.
 
@@ -197,7 +197,7 @@ So in review in this guide, we talked about a number of different topics.
   It might be when you're printing it out.\
   So if you place in other words if I take this out and call lower in the print statement\
   right here and run it you'll see that it works.\
-  ![IMG](../../../../../../../.gitbook/assets/02-024_IMG8.png)
+  ![IMG](.././02-024_IMG8.png)
 *   So you can call it when it's being printed out and you may wonder why that is important or why we even care about printing anything out.
 
     The reason is because if you're building a web application or a mobile app this is the closest that you can get.

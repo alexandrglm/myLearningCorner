@@ -155,7 +155,7 @@ I'm going to create a variable here called post and we could imagine that this c
 
 So, if I create a comment here a list is going to use brackets, a dictionary uses curly braces and a tuple is going to use parens.
 
-![large](../../../../../../../../.gitbook/assets/02-070_IMG1.png)
+![large](../.././02-070_IMG1.png)
 
 So, that is the basic difference in terms of the syntax and we're going to get into the differences and why you'd want to use one versus the other.
 
@@ -175,7 +175,7 @@ And so if I do something like this where I say title subheading and then content
 
 So, say subheading and that's going to be the same as post\[1]. And then content is going to be the same as post\[2].
 
-![large](../../../../../../../../.gitbook/assets/02-070_IMG2.png)
+![large](../.././02-070_IMG2.png)
 
 You know based on our discussion on lists that if we did something like this and then went and printed each of these out that we'd be able to get access to that element.
 
@@ -189,7 +189,7 @@ We're simply going to go and use our basic query selector here by using an index
 
 Now if I run this you can see I've accessed each one of these elements the same as if we were using a basic python list.
 
-![large](../../../../../../../../.gitbook/assets/02-070_IMG3.png)
+![large](../.././02-070_IMG3.png)
 
 But now what I'm going to do..... I'm going to **use this unpacking technique** where I'm placing all of these elements on one line and you're going to see that it works exactly the same way as if I queried the elements one at a time with their index manually.
 
@@ -231,7 +231,7 @@ And remember this is a list. So what happens if that occurs?
 
 Well, let's run it and see if we try that you can see that our title variable is no longer storing Python basics but it's now storing intro guide to Python as you can see right here.
 
-![large](../../../../../../../../.gitbook/assets/02-070_IMG4.png)
+![large](../.././02-070_IMG4.png)
 
 The subheading is Python basics and then content still is mapped to the last one because that's simply how it worked out with sort so this is one of the top reasons why you would not want to use a list when you are working with this type of unpacking.
 
@@ -240,7 +240,7 @@ Because with a list if the order of the elements change then you're unpacking ma
 
 Now, if we change this back into a tuple and we try to call sort on this we're simply going to get an error because a tuple cannot be sorted.
 
-![large](../../../../../../../../.gitbook/assets/02-070_IMG5.png)
+![large](../.././02-070_IMG5.png)
 
 and that is for a very good reason because you can't do this.
 

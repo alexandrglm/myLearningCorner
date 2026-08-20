@@ -51,7 +51,7 @@ Stereotypes comes with `<< >>`, labeling-wrapping into one or two words that giv
 
 That's what you would use when you want to name an abstract system componentes, like in a _"Model- Viewer-Controller_ pattern.
 
-![IMG](../../../../../../../.gitbook/assets/06-156_IMG04.png)
+![IMG](.././06-156_IMG04.png)
 
 ***
 
@@ -200,7 +200,7 @@ The UML specification defines specific visual elements for comments:
 └─────────────────┘
 ```
 
-![large](../../../../../../../.gitbook/assets/06-156_IMG03.png)
+![large](.././06-156_IMG03.png)
 
 **The folded corner (◣) is a distinctive feature that immediately identifies the element as a comment.**
 
@@ -421,7 +421,7 @@ Comments add clarification for anybody reading the code, however, they are not f
 
 You can put pretty much anything you want in a comment. Comments can be incredibly helpful if you're working with developers that are unfamiliar with UML and also when you are building diagrams that may be shown to non-technical stakeholders.
 
-![IMG](../../../../../../../.gitbook/assets/06-155_IMG1.png)
+![IMG](.././06-155_IMG1.png)
 
 If I'm building a system for a client that has no idea what UML is, they're not going to be able to read the formal naming conventions or know what a filled-in circular dot means and how it differs from a circle that's not filled in. Comments allow us to add clarification and make it very evident to the goals you're trying to accomplish with a specific diagram.
 
@@ -429,7 +429,7 @@ Comments are in rectangular boxes and they have a dotted line to the element the
 
 Here is an example for a class diagram.
 
-![IMG](../../../../../../../.gitbook/assets/06-155_IMG2.png)
+![IMG](.././06-155_IMG2.png)
 
 This is a class diagram called Topic, it has three comments or three notes. The first one points to the title attribute in the Topic class and indicates it is a required field. The next one points to the Slug attribute and indicates it is automatically generated. When someone goes to the URL bar, they can type in the topic name and it will navigate to that page. We're letting the developer know that these should be auto-generated via the friendly ID library. The last one points to the top Ten attributes and states the query scope for the most popular topics should be called top Ten.
 

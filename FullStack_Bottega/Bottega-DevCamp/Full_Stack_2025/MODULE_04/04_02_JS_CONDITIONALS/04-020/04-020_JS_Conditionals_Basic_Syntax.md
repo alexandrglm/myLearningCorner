@@ -28,7 +28,7 @@ Now what the syntax is for checking for seeing if items are equal, we can say if
 
 So now if we run this, this is should run absolutely nothing because they're not equal. Now if I change this to 12 hit-run you can see it prints out that they are equal because the values were changed.
 
-![large](../../../../../../.gitbook/assets/04-020_IMG1.png)
+![large](./04-020_IMG1.png)
 
 This is the basic syntax. Now in addition to equals, we also have what's called triple equals(===). If I do three equals this is going to check to see (it's called strict equal) is what the name of the operator is, or the comparison operator.
 

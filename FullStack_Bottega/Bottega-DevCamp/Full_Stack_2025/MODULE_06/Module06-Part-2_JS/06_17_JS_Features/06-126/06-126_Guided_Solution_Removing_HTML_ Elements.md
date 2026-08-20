@@ -12,45 +12,45 @@ In this Javascript tutorial, I'm going to walk through how you can build out the
 
 So here in the HTML side, you see that we have a div class of to-do's that has the heading and a UL tag, and then we have an empty UL. It just has a placeholder here called completed footer and what I want to do is to place in each one of the items dynamically, right inside of this completed to-do wrapper.
 
-![large](../../../../../../../.gitbook/assets/06-126_IMG1.png)
+![large](.././06-126_IMG1.png)
 
 So let's get to that. I am going to inside of this script tag, I'm going to start off by grabbing all of the two items. So I'm going to create a variable here called `const todos` an-d then I'm going to grab those values so I can use query selector all for that and then pass in that class name, ( `const todos = document.querySelectorAll('.todoItem');`). I'm going to also see which to to-do's have been created or which ones have been completed. So I'm going to say `completedTodos = document.querySelector('.completed');`. Then as you can tell right now we do not have (`.completed`) anywhere on the page and that's fine.
 
-![large](../../../../../../../.gitbook/assets/06-126_IMG2.png)
+![large](.././06-126_IMG2.png)
 
 That is what we were going to be adding later so I'm going to also make sure that that's a "const" variable and then next I'm going to create or call that completed to-do wrapper. So I'll say, `const completedTodoWrapper = document.querySelector('.completedTodoWrapper');`. OK I believe that I have each one of those items selected. Now what I'm going to do is I'm going to iterate through the to-do's. So I can say `todos.forEach()`, and for each expects a function. So we're going to grab a single to-do and then inside of this we're going to add an event listener to it. So lets say `(todo => todo.addEventListener('click', (event)))` and we're going to listen for a click. Then that click gives us another event.
 
-![large](../../../../../../../.gitbook/assets/06-126_IMG3.png)
+![large](.././06-126_IMG3.png)
 
 You can spell event however you want. I can just spell it completely out like that. Now I'm not going to actually use this event. I simply need access to the values inside of that so I'm not going to worry too much about it but I just wanted to place it in there so that you know that you do have access to it if you need it yourself. So now inside of here I'm going to pass in a function and let's create a few variables. Now these are going to continually get reassigned so I'm going to make them. I'm gonna make them be "let" variables.
 
-![large](../../../../../../../.gitbook/assets/06-126_IMG4.png)
+![large](.././06-126_IMG4.png)
 
 So I'm going to say that I want LI tag and I want to store that inside of the completed to-do it. Then I need to have content. So this is going to be `let todoContent = document.createTextNode(todo.textContent);`. So we're going to store it in a variable and now what we can do is check for our completed to-do's and then append that child.
 
-![large](../../../../../../../.gitbook/assets/06-126_IMG5.png)
+![large](.././06-126_IMG5.png)
 
 If that naming sounds a little weird then you can feel free to use whatever you personally want. And then from that point I just need to do one other thing and that is to remove the item from the pending to-do list. So here I can say `todo.remove();` call that function and hit save. It looks like I'm may have a little bit of a syntax error. So the reason is because if you notice that when I hit prettify or when I saved it it looks like we're missing a bracket somewhere here.
 
 Here I have the two iterating over and then that is going to grab the click and the event. I'm not really seeing where the issue is but I'm sure we'll see it here in a second. Oh and it looks like it's working. So I just saved again and updated it. Sometimes prettify the extension in VScode will do that. Okay so now that we have that. Let's see if it's working that should be all of the code that we need to get it working. So if I click on one of these you can see that works perfect so I can click on this third one or the fourth one and that's gotten moved down.
 
-![large](../../../../../../../.gitbook/assets/06-126_IMG6.png)
+![large](.././06-126_IMG6.png)
 
-![large](../../../../../../../.gitbook/assets/06-126_IMG7.png)
+![large](.././06-126_IMG7.png)
 
 Do it again, again and again and it's working perfectly. So let's take a look at the DOM and see what's going on here. I'll stretch this all the way out and hit refresh and move all of our pending to-do's back where they belong. So now if I go into completed do-to wrapper. Let's take a look at what's happening here.
 
-![large](../../../../../../../.gitbook/assets/06-126_IMG8.png)
+![large](.././06-126_IMG8.png)
 
 So what is going on, is when I click on this first one which you can see is here. If I click on this it is getting deleted from its original spot. So when I use that for each loop, we were iterating over the to-do items right here. So we're iterating over those and then it's getting removed.
 
-![large](../../../../../../../.gitbook/assets/06-126_IMG9.png)
+![large](.././06-126_IMG9.png)
 
-![large](../../../../../../../.gitbook/assets/06-126_IMG10.png)
+![large](.././06-126_IMG10.png)
 
 This is because on this line right here, on line 43. When I said remove that is removing it from the DOM's spot where it was.
 
-![large](../../../../../../../.gitbook/assets/06-126_IMG1.png)
+![large](.././06-126_IMG1.png)
 
 Then when I create the element I'm not really copying that. That's one thing I want to make clear when I'm walking through this. It's not like JavaScript is taking this DOM node and it's moving it here. Instead what's going on is it's selecting the value. It's extracting that text value here. It's creating a completely new DOM node and as you notice there is no class of to-do item when it gets moved down here and when you click on this nothing happens like we would want it to be.
 

@@ -48,7 +48,7 @@ Before writing a single line of code, UML helps establish a clear roadmap and ar
 
 ## A)    Activity Diagrams
 
-![](../../../../../../../.gitbook/assets/07-173_IMG2.png)
+![](.././07-173_IMG2.png)
 
 **Usage**
 
@@ -73,7 +73,7 @@ Planning a user registration system where you need to understand the flow from i
 
 ## B)    Deployment Diagrams
 
-![](../../../../../../../.gitbook/assets/06-151_IMG2.png)
+![](.././06-151_IMG2.png)
 
 **Usage**
 
@@ -109,7 +109,7 @@ During development, UML helps maintain organization and ensures best practices w
 
 ## C)    Class Diagrams
 
-![Class Diagram Example](../../../../../../../.gitbook/assets/06-151_IMG3.png)
+![Class Diagram Example](.././06-151_IMG3.png)
 
 **Usage**
 
@@ -135,7 +135,7 @@ Designing an e-commerce database with User, Product, Order, and Payment entities
 
 ## D)    Use Case Diagrams
 
-![Use Case Diagram Example](../../../../../../../.gitbook/assets/06-151_IMG4.png)
+![Use Case Diagram Example](.././06-151_IMG4.png)
 
 **Usage**
 
@@ -169,7 +169,7 @@ After the system is built, UML continues to provide value for maintenance, optim
 
 ## E)    Sequence Diagrams
 
-![Sequence Diagrams Example](../../../../../../../.gitbook/assets/06-151_IMG5.png)
+![Sequence Diagrams Example](.././06-151_IMG5.png)
 
 **Usage**
 
@@ -195,7 +195,7 @@ Understanding the message flow in a payment processing system to add new payment
 
 ## F)    Package Diagrams
 
-![Package Diagrams Example](../../../../../../../.gitbook/assets/06-151_IMG6.png)
+![Package Diagrams Example](.././06-151_IMG6.png)
 
 **Usage**
 
@@ -363,7 +363,7 @@ Whenever you are approached with building an application or adding a new feature
 
 While deciding when to use UML, before you've touched a single line of code, it is helpful to actually start building some diagrams. For example: if you're a little confused on the functionality you're going to build for an application you might want to start with a visual before you write any code, create a controller generator, or anything like that. You may want to start off with building an Activity Diagram which allows you to say what happens at each stage of an application's flow. You can say a user has the ability to perform one task, then they're going to be asked a question, then based off of that input they're going to have other options. It's a way of being able to break down the flow of an application into very small manageable chunks.
 
-![Activity Diagrams](../../../../../../../.gitbook/assets/07-173_IMG2.png)
+![Activity Diagrams](.././07-173_IMG2.png)
 
 ## Deployment Diagram
 
@@ -371,30 +371,30 @@ Another tool that I find incredibly helpful before I've built out an application
 
 I've found that there have been many times when I would start to build the system before building a deployment diagram, and I may make some missteps. I may make a decision that I have to pull back which causes me to waste time if I had spent a little bit more time planning with a deployment diagram it would have helped me in the long run. Those are a couple of diagrams that you can use before you've even started coding a single line of code during development.
 
-![Deployment Diagrams](../../../../../../../.gitbook/assets/06-151_IMG2.png)
+![Deployment Diagrams](.././06-151_IMG2.png)
 
 ## Class Diagram
 
 During development, you can use Class Diagrams to help you model your entire database to see the relationships between tables and to ensure that you're performing best practices such as database normalization, etc. if you build it prior to building the entire system, you'll find that you're going to have a much more organized approach to modeling your databases.
 
-![Class Diagramns](../../../../../../../.gitbook/assets/06-151_IMG3.png)
+![Class Diagramns](.././06-151_IMG3.png)
 
 ## Use Case Diagram
 
 Another diagram I use in the middle of the development process is a Use Case Diagram. Use Case Diagrams are very high level and allow you to organize each of the processes a specific user of the system is allowed to access. When I'm building an authorization system I can check to see the different features that users or that type of user should have access to. By utilizing a Use Case Diagram, it allows me to take a visual approach. It also is something I can use to show non-technical stakeholders to ensure that I'm building the system in the right way.
 
-![Use Case Diagrams](../../../../../../../.gitbook/assets/06-151_IMG4.png)
+![Use Case Diagrams](.././06-151_IMG4.png)
 
 ## Sequence Diagram
 
 Lastly, after the entire application has been built, UML can still play a very helpful role. For example: if I have to build in a more advanced feature or refactor something that was built awhile ago, I can use what's called a Sequence Diagram. Sequence Diagrams are able to see all of the messages the system is passing internally to ensure that I'm building my methods in an efficient way and I'm following best practices so I can implement something that'll actually work in the system.
 
-![Sequence Diagrams](../../../../../../../.gitbook/assets/06-151_IMG5.png)
+![Sequence Diagrams](.././06-151_IMG5.png)
 
 ## Package Diagram
 
 In the final example, we will be using a Package Diagram. After the entire system has been built, there are times where I personally go look at the code base and see how I can organize it be more efficient or I want to decrease the coupling between different modules. I may take out one part of the entire application and turn it into an outside code library. To do that, I can use a Package Diagram to see how I'm organizing the entire code base. That also gives me a very high-level overview for every component in the system and allows me to make sure that I'm conforming to best practices. If I bring a new member to the team, I can show them that Package Diagram and they'll be able to see how the entire system is organized.
 
-![Package Diagramns](../../../../../../../.gitbook/assets/06-151_IMG6.png)
+![Package Diagramns](.././06-151_IMG6.png)
 
 Those are just a few of the examples of the different types of diagrams we're going to go through in this course. Technically, each one of these diagrams could be used at each stage of a project's lifecycle. Part of going through this course and part of what my goals are is to impart to you is so that you can learn about each diagram and see when it's right for you to use it in your own applications.

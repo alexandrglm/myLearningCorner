@@ -112,11 +112,11 @@ The way that JavaScript is going to interpret that is it's going to place that i
 
 The real-world analogy that I like to give to really help explain and solidify why arrays are so important is: imagine that you're going to the grocery store. If you go to the grocery store for just a few items, then you can just pick those up put them in your hands, and then carry them to the cash register.
 
-![large](../../../../../../.gitbook/assets/04-036_IMG1.png)
+![large](./04-036_IMG1.png)
 
 If you go and you have 100 items to get or even 12 items to get, any number that you can't really carry in your hands, you need something to put those into. You need a shopping cart typically.
 
-![large](../../../../../../.gitbook/assets/04-036_IMG2.png)
+![large](./04-036_IMG2.png)
 
 Well, inside of JavaScript that's what you use `arrays` for. You can really only store so many items inside of a `variable`, such as just you can put one number in a variable, or you can put one string in a variable. You can only really have so many variables before it starts to get a little messy.
 

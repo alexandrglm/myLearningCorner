@@ -188,7 +188,7 @@ So I'm a save and switch over now if you are following along for the first time 
 
 Then, if you remember back to the configuration guides the way you can process your python code is by typing in python and depending on how many versions you have and what your default version is on your system you may have to type Python 3 the way you can tell your version is just type the word python and hit return and it's going to show you right at the top what version of Python you're using:
 
-![large](../../../../../../../.gitbook/assets/02-029_IMG1.png)
+![large](.././02-029_IMG1.png)
 
 If your version says Python 2.7 or lower version than anything that is 3.6 then this code that we're building will not work and you may have to type in Python 3 and then you'll see that you have the correct version set up if you do not.
 
@@ -200,13 +200,13 @@ Now I have this path inside of a directory so I have a directory called C\_Strin
 
 Now all I have to do is run that and it prints out: `Hi Kristine`
 
-![large](../../../../../../../.gitbook/assets/02-029_IMG2.png)
+![large](.././02-029_IMG2.png)
 
 It's all working properly.
 
 Once again if you do not have Python 3 as your default then simply type Python3 just like this. Run it and it runs exactly the same way.
 
-![large](../../../../../../../.gitbook/assets/02-029_IMG3.png)
+![large](.././02-029_IMG3.png)
 
 That is how you can use a very basic form of string interpolation in Python.
 
@@ -218,7 +218,7 @@ Technically I can run any python code I want inside of these curly brackets so i
 
 If I run this then you can see it says `hi 4`.
 
-![large](../../../../../../../.gitbook/assets/02-029_IMG4.png)
+![large](.././02-029_IMG4.png)
 
 So that's just an example of showing that anything inside of those curly brackets is going to be parsed and treated like a python script which is a very helpful little tool.
 
@@ -236,7 +236,7 @@ But we're going to be in for a little bit of a bug if we try this.
 
 So if I run this you can see we have an error
 
-![large](../../../../../../../.gitbook/assets/02-029_IMG5.png)
+![large](.././02-029_IMG5.png)
 
 and it says the name bracket is not defined.
 
@@ -250,7 +250,7 @@ This is the first thing I did when I wanted to test out how I could escape the c
 
 his was the very first thing I did.
 
-![large](../../../../../../../.gitbook/assets/02-029_IMG6.png)
+![large](.././02-029_IMG6.png)
 
 I was wrong and I needed to look up the documentation because if you run this you'll see you get an error and it says there's a syntax err F String expression part cannot include a backslash which I thought was weird but there is I'm sure some reasons behind why the python developers decided to do that.
 
@@ -261,7 +261,7 @@ So now if I come over here and I run it you can see that it prints out.
 
 This is my bracket blog post and it actually prints out the brackets
 
-![large](../../../../../../../.gitbook/assets/02-029_IMG7.png)
+![large](.././02-029_IMG7.png)
 
 That is if you ever find yourself in a situation where you need to escape them.
 

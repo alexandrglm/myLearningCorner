@@ -103,7 +103,7 @@ However, there is also another use case for importing, and that is when you're b
 
 That's what we're going to walk through in this guide. We're going to see how we can create a custom module, just like we have right here with our `helper.py` file and our `greeter` function.
 
-![large](../../../../../../../../.gitbook/assets/03-109_IMG1.png)
+![large](../.././03-109_IMG1.png)
 
 Then, we are going to create another file and import it directly. Later on in the guide, we're going to expand our knowledge and see how we can call our helper functions from outside of the current directory.
 
@@ -111,7 +111,7 @@ We're going to cover all of that in this guide. Let's first go with the base cas
 
 It's going to be called `main.py`. I'm going to save this file, and if I come and refresh the tree here on the left-hand side, you can see we have a `main.py` file.
 
-![large](../../../../../../../../.gitbook/assets/03-109_IMG2.png)
+![large](../.././03-109_IMG2.png)
 
 Now, in order to import this, it's actually the exact same syntax that we used for the REPL. I can say `import helper`. What Python is going to do by default is look inside of the current directory for a `helper.py` file. Then, it's going to import that module and the functions inside of it. So, I'm going to import the helper and then create a function called `render`. It's not going to take any arguments, and from there, I'm simply going to print out `helper.greeting` and pass in the string. I'll say `'Tiffany'`, `'Hudgens'`, and that's all I need to do.
 
@@ -134,7 +134,7 @@ Now, if I open up the terminal right inside this directory—and that is very ke
 
 Then, run `python main.py`. If I run this, you can see that it works perfectly.
 
-![large](../../../../../../../../.gitbook/assets/03-109_IMG1.png)
+![large](../.././03-109_IMG1.png)
 
 It went, grabbed the `helper` module, brought it into the `main` file, and then had access to the `greeting` function. So far, everything is looking really good.
 
@@ -145,13 +145,13 @@ directories. When you want to do that, you have to add a few more steps.
 
 I'm going to recreate that by creating a directory here called `libs`, and then I'm going to move our `helper` module into the `libs` directory. So, everything's going to be identical except now, if I come down and hit refresh, you can see that I have a `libs` directory, and that is where the `helper.py` file is located.
 
-![large](../../../../../../../../.gitbook/assets/03-109_IMG2.png)
+![large](../.././03-109_IMG2.png)
 
 Now, if I go into `main` and don't make any changes and try to run this, you're going to see that we run into an error.
 
 If I run this, you can see it gives the error that inside of the `main.py` file on line 1 for `import helper`, the module was not found.
 
-![large](../../../../../../../../.gitbook/assets/03-109_IMG5.png)
+![large](../.././03-109_IMG5.png)
 
 The reason for that goes directly to the default behavior of how\
 Python imports modules. Whenever you're using this kind of syntax `import helper`,\
@@ -182,7 +182,7 @@ called `libs`. Then, it's going to insert that path. So, I'm\
 going to save this file. Now, we're going to try to rerun this code. If I\
 run this now, you can see that it is working properly.
 
-![large](../../../../../../../../.gitbook/assets/03-109_IMG6.png)
+![large](../.././03-109_IMG6.png)
 
 So, congratulations! If you went through that, you now know how to create a custom Python module, call it from either the current directory that your other files are in, or even a directory somewhere else on your system entirely.
 

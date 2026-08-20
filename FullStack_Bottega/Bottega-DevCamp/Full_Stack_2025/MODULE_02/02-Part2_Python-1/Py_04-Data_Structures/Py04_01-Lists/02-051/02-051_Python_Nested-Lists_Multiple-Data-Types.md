@@ -141,13 +141,13 @@ And the first element can be an integer. The next element could be a float. The 
 
 If I print out mixed\_list you'll see that this worked perfectly we have a regular list object where each element is exactly how we represented it right here.
 
-![large](../../../../../../../../.gitbook/assets/02-051_IMG1.png)
+![large](../.././02-051_IMG1.png)
 
 #### Storing a list inside a list
 
 **We can also even put lists inside of lists**. So I could take this user list here paste it all in and if I run that you can see that we now have a list nested inside of another list,
 
-![large](../../../../../../../../.gitbook/assets/02-051_IMG2.png)
+![large](../.././02-051_IMG2.png)
 
 And, the cleaner way of doing it as opposed to putting all the elements in is actually storing it in the variable like we have right there.
 
@@ -155,7 +155,7 @@ And, the cleaner way of doing it as opposed to putting all the elements in is ac
 
 Now, I have users here at the very last element and if I run this you can see that it slides the entire list of users right inside at the very end.
 
-![large](../../../../../../../../.gitbook/assets/02-051_IMG3.png)
+![large](../.././02-051_IMG3.png)
 
 #### Running .functions() inside a mixed list
 
@@ -169,7 +169,7 @@ And now I can print out our mixed list and our user list.
 
 Let's see how this looks. As you can see right here that worked properly.
 
-![large](../../../../../../../../.gitbook/assets/02-051_IMG4.png)
+![large](../.././02-051_IMG4.png)
 
 So we have our regular mixed lists that we printed out here.
 
@@ -177,7 +177,7 @@ Then we removed.
 
 So we called Pop on this user list the last element and stored it in the user list variable. And you can see that right here:
 
-![large](../../../../../../../../.gitbook/assets/02-051_IMG5.png)
+![large](../.././02-051_IMG5.png)
 
 A part of the reason I also wanted to show this to you was every other time that I've called `pop` it's been on a single element such as a string and that string is what gets returned.\
 However, right here, I called `pop` on an element there was actually a list itself, and as you can see, the list got returned.
@@ -201,7 +201,7 @@ over them.
 
 I want to point out that this course doesn't just focus on programming, but also on industry best practices. I want to highlight here, on the line that stores the `mixed_list`:
 
-![large](../../../../../../../../.gitbook/assets/02-051_IMG6.png)
+![large](../.././02-051_IMG6.png)
 
 What we're doing here could potentially be quite dangerous.
 

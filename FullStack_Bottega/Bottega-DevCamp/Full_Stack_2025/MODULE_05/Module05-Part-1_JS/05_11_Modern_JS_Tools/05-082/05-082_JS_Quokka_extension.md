@@ -67,15 +67,15 @@ The mode is perfect for quick prototyping, testing, and experimenting with code 
 
 Press `Cmd/Ctrl + K, Q` to run Quokka on the current file. Quokka will execute your code file as a **standalone self-contained program**, as if the file was the entry point of your application.
 
-![Quokka start](../../../../../../../.gitbook/assets/05-082_IMG01.png)
+![Quokka start](.././05-082_IMG01.png)
 
 You can invoke functions declared in the file, use imported project files and modules.
 
 The mode is perfect for debugging, testing, and validating your code within the context of your project files.
 
-![Quokka working](../../../../../../../.gitbook/assets/05-082_IMG02.png)
+![Quokka working](.././05-082_IMG02.png)
 
-![Quokka working 2](../../../../../../../.gitbook/assets/05-082_IMG03.png)
+![Quokka working 2](.././05-082_IMG03.png)
 
 ```js
 function sum(a, b) { return a + b; }
@@ -184,7 +184,7 @@ But I will show you what it does so that you can kind of make up your own mind. 
 
 ./05-081\_IMG1.pngSo if I open up Visual Studio code here where it's installe
 
-![large](../../../../../../../.gitbook/assets/05-082_IMG1.png)
+![large](.././05-082_IMG1.png)
 
 I already have it installed but you can install yours and then you'll have access to it and so let me start it up I'll hit command shift P and a couple of ways you can do is you can start in a new JavaScript file or if you have one open then you can say start on current file. I'll start a new JavaScript file and it gives you an output panel here and I'm going to keep it open but it's optional and I personally prefer to see it all in line.
 
@@ -198,13 +198,13 @@ sum(2, 5);//?
 
 and then what it does is it'll actually output the total. You see how it shows 7 right here.
 
-![large](../../../../../../../.gitbook/assets/05-082_IMG2.png)
+![large](.././05-082_IMG2.png)
 
 It also shows it in the output down here but I love that it puts the output dynamically right on the same line which means I don't have to go back and check in the browser when I'm building
 
 Now I told you I was going to tell you the difference between the pro and the free version and the key difference is in the paid version I have that cool little syntax where I can do slash, s./05-082\_IMG3.pnglash, question mark, and that will allow the output to be shown. If you have the free version then you can just type console logs so I can say console log and then it will automatically show that on the right-hand side.
 
-![large](../../../../../../../.gitbook/assets/05-082_IMG3.png)
+![large](.././05-082_IMG3.png)
 
 If you don't feel like spending any money on it that's fine. I personally I use it so much that it was worth it for me but for you, if you are just used to placing console log statements in your code you can do that and now you don't even have to go and check in the browser if all you were using it for was to print something out.
 

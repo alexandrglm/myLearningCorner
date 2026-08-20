@@ -392,7 +392,7 @@ Class diagrams are the primary location for detailed feature and property specif
 └─────────────────────────────┘
 ```
 
-![large](../../../../../../../.gitbook/assets/06-158_IMG03.png)
+![large](.././06-158_IMG03.png)
 
 **Feature representation**
 
@@ -1120,7 +1120,7 @@ Next item on the list of common UML components is a Feature and a Property.
 
 This is something that you're going to see pretty much universally throughout all of the UML diagrams in the course and as you build them yourself.
 
-![large](../../../../../../../.gitbook/assets/06-158_IMG1.png)
+![large](.././06-158_IMG1.png)
 
 They represent attributes of an element. You may assume pretty much every diagram has elements at some point or another. Why is it important? It's important because one of the most critical parts of UML is being able to establish standardize naming conventions.
 
@@ -1130,7 +1130,7 @@ One helpful part about utilizing tools like UML is you can standardize those typ
 
 Here's an example.
 
-![large](../../../../../../../.gitbook/assets/06-158_IMG2.png)
+![large](.././06-158_IMG2.png)
 
 I have expanded the topic class that we've looked at previously and we have features and properties inside. The title, the slug, created at, updated at, and top ten, those are all various features and properties.
 

@@ -89,7 +89,7 @@ If I were to call remove first and last pass in the HTML the output that I would
 
 So I just would want to have some content and that's all I would want returned because I want to have this first element and this last element removed.
 
-![large](../../../../../../../../.gitbook/assets/03-095_IMG1.png)
+![large](../.././03-095_IMG1.png)
 
 Now, that by itself is not that hard because you could essentially just build something that went and grabbed the second element in the array, but let's imagine that we extend this a little bit.
 
@@ -109,7 +109,7 @@ And, if you're curious on how this could be beneficial, this is something that I
 
 Then, this is something that can be quite helpful so I recommend if you're going through this that you pause the video right now, and you try to build this out on your own and then come back and watch my own solution to it.
 
-![large](../../../../../../../../.gitbook/assets/03-095_IMG2.png)
+![large](../.././03-095_IMG2.png)
 
 ***
 
@@ -277,7 +277,7 @@ one, *two, three = [1, 2, 3, 45, 6]
 
 So because of that, we can build our solution with this code.
 
-![IMG](../../../../../../../../.gitbook/assets/03-095_IMG3.png)
+![IMG](../.././03-095_IMG3.png)
 
 ***
 
@@ -329,11 +329,11 @@ remove_first_and_last(html_content)
 
 ***
 
-![IMG](../../../../../../../../.gitbook/assets/03-095_IMG4.png)
+![IMG](../.././03-095_IMG4.png)
 
 Now we can also test it out with our **second test case** right here. If I come down and get rid of our first one and now let's just **print this out**. If I run it again, you can see it returned `'Some content'` and then `'more'`, so it is **globbing up all of the elements inside the list** besides the first one and the last one, which get dropped.
 
-![IMG](../../../../../../../../.gitbook/assets/03-095_IMG5.png)
+![IMG](../.././03-095_IMG5.png)
 
 So out of all the languages that I've built out this specific code exercise for, **Python really has one of the cleanest syntaxes for it**, because of **destructuring** and because you're able to **glob up these elements**. It's a really nice and easy way to read how this works.
 

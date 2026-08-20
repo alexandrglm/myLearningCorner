@@ -348,13 +348,13 @@ Okay, that's a lot of code then let's see if this is all working. And we all sor
 
 Now, let's come into Postman. You should already have Postman installed, and so our system is running on port 5000, so I can come up here to create a new tab, and let's call localhost. And right here we have `localhost:5000/guide`
 
-![large](../../../../../../../.gitbook/assets/03-140_IMG1.png)
+![large](.././03-140_IMG1.png)
 
 And then this is going to be a POST request. Our goal is to create a new guide and then we need to pass the data in. Now, this is going to show you where Postman is very helpful because instead of having to perform some weird curl code in order to pass in those values, you can click on body, then raw, and we want to change the data type to JSON because the this is a JSON API.
 
 Now inside of here, we're going to simply paste in some JSON.
 
-![large](../../../../../../../.gitbook/assets/03-140_IMG2.png)
+![large](.././03-140_IMG2.png)
 
 Okay, so this is the moment of truth. If everything that we did worked, we should get back is this object But it should also give us the ID, Along with these values. So let's just make sure it's calling `localhost:5000/guide`, everything there looks like it's working. We have raw and then we make sure that the server is running. So with all of that in place let's hit send and there you go.
 
@@ -362,7 +362,7 @@ We now have it looks like that all worked properly. You can click on cookies you
 
 And so so far it looks like everything worked. And the other thing that you can see to test it out to make sure is right here if you got a status of 200 OK
 
-![large](../../../../../../../.gitbook/assets/03-140_IMG3.png)
+![large](.././03-140_IMG3.png)
 
 That means that it worked properly if you got some other type of message such as 404 or a 500. That means that there may have been a typo or you may have either in the URL or in the code itself. One other thing to look at if you come up here to headers then you can see that this is telling you that JSON was sent back to us.
 

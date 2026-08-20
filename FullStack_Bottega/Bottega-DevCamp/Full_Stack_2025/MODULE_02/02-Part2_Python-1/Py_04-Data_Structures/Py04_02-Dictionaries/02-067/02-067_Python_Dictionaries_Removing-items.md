@@ -145,7 +145,7 @@ The first one is the most basic way and that is simply by deleting the item with
 
 So, if I say that I want to delete the Astro's then I can run this and you can see here in the output that we no longer have the Astro's listed here in the list of key-value pairs.
 
-![large](../../../../../../../../.gitbook/assets/02-067_IMG1.png)
+![large](../.././02-067_IMG1.png)
 
 Now, this works perfectly fine and for many circumstances such as when you know with 100% certainty that that key exists in the dictionary.
 
@@ -153,19 +153,19 @@ This is going to work.
 
 Now I'm going to show you when this is going to cause an error and that is when you try to perform delete on a key that doesn't exist so if I type the Mets in here which does not exist in the list of keys you're going to see that I get a key error.
 
-![large](../../../../../../../../.gitbook/assets/02-067_IMG2.png)
+![large](../.././02-067_IMG2.png)
 
 Now, this is very similar to looking up an element, and if you remember back to when we talked about the `get` function and talked about the differences and we can do it right here just for the sake of review.
 
 So, if I try to print out teams by performing a lookup on Mets I'm going to get a key error
 
-![large](../../../../../../../../.gitbook/assets/02-067_IMG2.png)
+![large](../.././02-067_IMG2.png)
 
 and if you remember **the fix for that is by using the get function**.
 
 I can say get and then provide a default value so I can say "no team found by that name" and that is going to give me a fixed type of output so it's not going to throw an error it's simply going to give me that value of no team found by that name.
 
-![large](../../../../../../../../.gitbook/assets/02-067_IMG3.png)
+![large](../.././02-067_IMG3.png)
 
 So, just like we have this get function.
 
@@ -187,12 +187,12 @@ We'll say "no team found by that name" and if I run this now you're\
 going to see that it performed that deletion so we no longer have\
 Astro's here in the team dictionary.
 
-![large](../../../../../../../../.gitbook/assets/02-067_IMG4.png)
+![large](../.././02-067_IMG4.png)
 
 Now, what happens if I type in a team and a key that doesn't exist?\
 If I run this now you'll see that everything works and we get no output.
 
-![large](../../../../../../../../.gitbook/assets/02-067_IMG5.png)
+![large](../.././02-067_IMG5.png)
 
 That may be a little bit of curiosity to you if you want to know where exactly is this 'No team found by that name' going?
 
@@ -207,7 +207,7 @@ So I'm going to say removed\_team and set equal to teams.pop everything else sta
 And now let's just at the very bottom print out remove\_team. Now if I run us you'll\
 see that no team found by that name is printed out.
 
-![large](../../../../../../../../.gitbook/assets/02-067_IMG6.png)
+![large](../.././02-067_IMG6.png)
 
 So, that is the way that pop works.
 
@@ -217,7 +217,7 @@ Now, **keep in mind this is not the key and value**.
 
 Notice it doesn't say Yankees it's simply the value of the Look-Up.
 
-![large](../../../../../../../../.gitbook/assets/02-067_IMG7.png)
+![large](../.././02-067_IMG7.png)
 
 So pop works in a very similar way as the get function with the key difference simply being that it also has the side effect of removing that element from the dictionary and so whenever I'm working with a dictionary in python and I want to remove an element and I want to have access to it and have the ability to have a default in case there was\
 not a key by that name inside the dictionary then pop is a great option so I highly recommend for you to experiment with using both delete and pop to see which one you prefer.
@@ -226,7 +226,7 @@ not a key by that name inside the dictionary then pop is a great option so I hig
 
 ## .clear()
 
-![IMG](../../../../../../../../.gitbook/assets/02-067_IMG8_clear.png)
+![IMG](../.././02-067_IMG8_clear.png)
 
 ***
 

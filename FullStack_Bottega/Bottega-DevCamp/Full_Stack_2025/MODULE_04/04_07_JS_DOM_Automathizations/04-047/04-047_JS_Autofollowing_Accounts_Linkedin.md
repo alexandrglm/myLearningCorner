@@ -233,7 +233,7 @@ fashion.
 
 Right here you can see I've gone to My Network on [LinkedIn](https://www.linkedin.com/), and they give you all of these recommended items. Now you could also do this on a group page, and I'm going to use the hashtag page for this.
 
-![large](../../../../../../.gitbook/assets/04-047_IMG1.png)
+![large](./04-047_IMG1.png)
 
 The reason why I'm going to be doing that is that if I did it for all: it would send it to a bunch of people, and I am not 100% sure if I want to add all of these recommended people. However, I know there are a lot of people out there and developers out there, who are trying to build out their network, and they simply want to run through and add a bunch of connections.
 
@@ -243,7 +243,7 @@ So this will work for people, for all, or for hashtags. I'm going to switch over
 
 Right here you can see that we have the button. This button element is actually what we're looking for. So here in the button, this is going to be relatively straightforward, because we have a class that we can grab.
 
-![large](../../../../../../.gitbook/assets/04-047_IMG2.png)
+![large](./04-047_IMG2.png)
 
 All I have to do is grab this `mn-discovery-hashtag-card__action-btn`. That's a nice long name. Hit copy, and then come to the console. Let me clear out any errors that we had. Right here let's run a test, and make sure that we have access to everything that we think we have access to. So I'm going to say:
 
@@ -253,7 +253,7 @@ let hashtagBtns = document.querySelectorAll('.mn-discovery-hashtag-card__action-
 
 Now what I can do is just run the selector, and now if I look for a `hashtagBtns` you can see it brings up all of the specific follow buttons that we have right here. If I wanted to check out the length. I can see I have `32` of those.
 
-![large](../../../../../../.gitbook/assets/04-047_IMG3.png)
+![large](./04-047_IMG3.png)
 
 Now what we can do is we can just automate the process of following all of those hashtags. So here, I can say: `hashtagBtns.forEach()`. For each in JavaScript takes a function. So I'm just going to say:
 
@@ -263,13 +263,13 @@ hashtagBtns.forEach(btn => btn.click())
 
 This is the `click function` that is available in JavaScript. Now if I run that you can see that it went and it followed every one of those hashtags. So now if I hit refresh on this page, you can see that I'm now following each one of the hashtags. So every one of those that was on there, I am now following.
 
-![large](../../../../../../.gitbook/assets/04-047_IMG4.png)
+![large](./04-047_IMG4.png)
 
 Now you could do the exact same thing here, and I'm going to. I want to show you both sides of it, so I showed you how you could do it for **following**.
 
 Now if you want to unfollow say all of these different elements. Let's see if we can do that. So I'm going to click `inspect` here, and so now you have this `actor_follow_toggle`. This is a control name. Then the `class`, you have `follows-recommendation-card__follow-btn`. This is what we're looking for, this class right here.
 
-![large](../../../../../../.gitbook/assets/04-047_IMG5.png)
+![large](./04-047_IMG5.png)
 
 I'm going to copy this, and we're going to do the same thing. So I'm going to say, this time it doesn't matter if you use `const`, `let`, or `var` for the variable. I'm not going to change it, so I'm going to say:
 
@@ -285,7 +285,7 @@ followingBtns.forEach(followbtn => followbtn.click())
 
 Now you can see it went in it unfollowed each one of those hashtags.
 
-![large](../../../../../../.gitbook/assets/04-047_IMG6.png)
+![large](./04-047_IMG6.png)
 
 So with just writing a single line of code, we're able to follow all of those hashtags on the page, and then writing another very similar line of code we're able to go in and unfollow those. If that is something that you're looking to do, where you're trying to build your network or in that specific to LinkedIn, but these processes that just walk through this could be applied to any kind of page.
 

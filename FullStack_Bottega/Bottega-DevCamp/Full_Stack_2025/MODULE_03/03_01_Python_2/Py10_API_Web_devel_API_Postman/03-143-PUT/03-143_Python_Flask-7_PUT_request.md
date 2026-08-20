@@ -211,11 +211,11 @@ OK. I believe everything there is working so we're about to find out. We'll test
 
 So let's hit send and OK that looked like it worked.
 
-![large](../../../../../../../.gitbook/assets/03-143_IMG1.png)
+![large](.././03-143_IMG1.png)
 
 And we also have `Updated First Guide Title`. So that looks like it's all working let's test it out. Let's go back to our index actions as a get and let's just say get guides, just bring back all of them. So now if I hit send and yes that's working.
 
-![large](../../../../../../../.gitbook/assets/03-143_IMG2.png)
+![large](.././03-143_IMG2.png)
 
 The first one that was returned is `Updated First Guide Title`. So what that means is that our update action is working and we now have the ability to edit our guides via API requests.
 

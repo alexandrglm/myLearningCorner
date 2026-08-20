@@ -192,11 +192,11 @@ programs.
 
 So to start off I have our set up here where I have the text editor, the terminal, and then the browser are all open
 
-![large](../../../../../../../.gitbook/assets/05-094_IMG1.png)
+![large](.././05-094_IMG1.png)
 
 and in future guides, I most likely will simply have the server running here but for the sake of repetition so that you can get used to running these commands I'm going to run npm start. That is going to start up the server for a module section program and then I can open up the javascript console right here. And for right now it's just giving us some errors from earlier. And there isn't anything showing up because we don't have any code.
 
-![large](../../../../../../../.gitbook/assets/05-094_IMG2.png)
+![large](.././05-094_IMG2.png)
 
 I'm going to clear that off and now let's talk about the syntax we need in order to add imports into our programs. So far throughout this course, we have for the most part kept all of our code in one file. Now there were times where we learned about say the lodash library in that case we were importing the lodash code but we were doing it from a completely different server and so what we're going to do now is separate code snippets out into different files and then our system is going to put them together.
 
@@ -206,11 +206,11 @@ And then I started to diving into vanilla javascript into the modern syntaxes an
 
 So first and foremost I want to create another file so I'm going to show you a few different ways you can import code so I'm going to come into the source directory here I'm going to right-click click and select new file
 
-![large](../../../../../../../.gitbook/assets/05-094_IMG3.png)
+![large](.././05-094_IMG3.png)
 
 And here I'm just going to say something such as helper.js
 
-![large](../../../../../../../.gitbook/assets/05-094_IMG4.png)
+![large](.././05-094_IMG4.png)
 
 you can call this whatever you want and here I'm going to start off with the most basic example I can think of so I'm going to say const and we'll say greeting. We're going to stick with our greeting function here or a greeting variable in this case. I'm going to say
 
@@ -231,7 +231,7 @@ Now you may think that I could simply do something like helper.js but as logical
 
 And let me show that to you right here just so you will believe me. If I tried to console.log out greeting from here you're going to see we have an error.
 
-![large](../../../../../../../.gitbook/assets/05-094_IMG5.png)
+![large](.././05-094_IMG5.png)
 
 It says that the module could not be found. We cannot resolve helper in and this is the key `/Users/admin/Desktop/ModuleSection/src`. So the issue here is that if we do not essentially tell the javascript that we want to find this helper function or this helper module inside of the directory it's actually going to simply look at source and instead of looking at source like it's a directory it's simply going to try to find it inside of source and so that's not going to work. So what I can do is say ./helper and now this is going to actually work.
 
@@ -251,7 +251,7 @@ export const greeting = 'Hi there';
 
 So I have called import greeting and let me just click on our helper and pull and pulling that and so I'm importing greeting and then I simply want to console log out that value. I'm going to hit save. And let me come here and I'm going to clear all of this out and we will hit refresh. And OK we still have an error. So it says console is 0. That would probably be a big mistake console and you as you were following along you probably saw that. So console.log and here you go. Now we have Hi there.
 
-![large](../../../../../../../.gitbook/assets/05-094_IMG6.png)
+![large](.././05-094_IMG6.png)
 
 So this is working properly. This is your base case for understanding import and export statements. So far just in review the way that this works is any time that you want to export some variable or some function or even a class from one file to another you have to explicitly say that you want to export this value.
 
@@ -281,7 +281,7 @@ console.log(multiply(2, 5));
 
 Hit save and as you can see on the right-hand side right here this works.
 
-![large](../../../../../../../.gitbook/assets/05-094_IMG7.png)
+![large](.././05-094_IMG7.png)
 
 So I have the hot reloading built directly into the code base that you're working with so you don't even have to come and hit refresh it auto loads here in the browser so as you can see here in the javascript console that we now have a fully functional module so we have a file here of helper that we can pull in to any other file. So imagine a scenario where you're building out an application and you have one piece of code that needs to be shared across many different files. By leveraging this syntax, this ES6 import syntax. We can quickly import this multiply function anywhere else in the application we need it without having to duplicate that code.
 

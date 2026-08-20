@@ -107,7 +107,7 @@ Now from there I'm simply creating a new variable called 'guide' and calling the
 
 So let's save this and let's see if it's working. So run `python app.py` that looks so far so good. No typos or anything. And now if I open up Postman, and go up to the top, this is going to be a little bit different syntax it's going to be `localhost:5000/guide/1`, while still using a GET request. So now if I clicked send, you can see that return 'some content' and then 'my first guide.'
 
-![large](../../../../../../../.gitbook/assets/03-142_IMG2.png)
+![large](.././03-142_IMG2.png)
 
 So that's working. If I type in '2' that this is going to bring back the second guide which is perfect. Now if I ask for 200 then it's just going to bring me back an empty object. And this is very important to understand this does not bring in air. So if you're building an application and you don't get or you pass in an invalid ID you're not going to get an error you're simply going to get an empty object.
 

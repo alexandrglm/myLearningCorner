@@ -87,13 +87,13 @@ And don't worry, you're not going to build all of that out if you are new to dev
 
 We're going to start by going to the analytics dashboard and you can find the link here to the GitHub link and you can get this in the show notes. So there are a few ways that you can pull down this starter code. So if you go to code download here if you have the GitHub CLI set up, then you can copy that.
 
-![large](../../../../../../.gitbook/assets/06-022_IMG1.png)
+![large](./06-022_IMG1.png)
 
 You can use SSH and you can copy that link or HTTPS. So depending on what your setup is like, you can clone this. And so if you're going to use say SSH, you're going to copy this link and then you'll switch into the terminal. So let me do that right now, I'll set a terminal session up, zoom in so you can see it.
 
 And you would type git clone and then paste the link in there.
 
-![large](../../../../../../.gitbook/assets/06-022_IMG2.png)
+![large](./06-022_IMG2.png)
 
 And the same thing would be true if you're using the HTTPS version. I'm going to be using the GitHub CLI version. And in that case, you don't have to type git clone, I'm just going to copy this.
 
@@ -101,15 +101,15 @@ Now, if you are still not very familiar with GitHub or you're not comfortable do
 
 I'm going to show how to use the GitHub CLI. So I'm just going to copy that. I'm going to switch into my terminal session, paste that in and it's going to clone this repo.
 
-![large](../../../../../../.gitbook/assets/06-022_IMG3.png)
+![large](./06-022_IMG3.png)
 
 And this is just going to put it at the root of my entire system. You could change into any directory that you want. And so this is where it placed it, and you can see it here analytics dashboard. Let me type LS just so you can see that.
 
-![large](../../../../../../.gitbook/assets/06-022_IMG4.png)
+![large](./06-022_IMG4.png)
 
 Yeah, so this is the project. So this is what we're going to open up in Visual Studio Code. And this is at the root of my entire system. So I'm going to open up Visual Studio Code, hit command O, or go up to file and open. And then from there, I'm going to go to the root of my system. It's going to be wherever you have yours placed. And I'm going to click on analytics dashboard. And this is going to open up that entire project for us.
 
-![large](../../../../../../.gitbook/assets/06-022_IMG5.png)
+![large](./06-022_IMG5.png)
 
 Now here, you're going to want to open up your terminal because we're not quite ready to go yet. We first have to install all of the dependencies and we're going to get into this as we go through the course. We're going to learn exactly everything that's happening. So I'm not going to go into detail now. Simply follow along and you'll kind of start to get a feel at a high level for what we're going to be doing in the future.
 
@@ -121,7 +121,7 @@ Say that some developer out there, he created a function that allowed you to qui
 
 So he wrapped that up as a external library, he published it on registry and he said, anybody that wants to use this special function that allows you to get an average of two numbers, you can use it. And then what we do is we add that to a list of dependencies and you can see it if you click on the package JSON file here. If you go down to dependencies, each one of these is referencing one of those external libraries. Like you can even see right here, react is one of those libraries.
 
-![large](../../../../../../.gitbook/assets/06-022_IMG6.png)
+![large](./06-022_IMG6.png)
 
 So all of the power and all of the tooling we get from working with React, it's just really some JavaScript code that other developers wrote and that we're pulling in. And so when we run that NPM install command, that is what we're doing. Is we're bringing all of that code into our project. And we are going to be talking about that quite a bit over the next several months as you go through the program.
 
@@ -129,7 +129,7 @@ So don't worry if that's fuzzy now. I just wanted to give you a high level intro
 
 Okay, if you got a message that looks like this, where it says that a certain number of packages were installed, it took three minutes, gives the full set of packages. And it's perfectly fine if you have some warnings. The only issue is if you have any that say NPM error.
 
-![large](../../../../../../.gitbook/assets/06-022_IMG7.png)
+![large](./06-022_IMG7.png)
 
 If all of this is working, then we are good to go. I'll close out the terminal and you only have to make one change to get this working. So you're going to go into the SRC directory and then you have your bootstrap file here. You're not going to have to make any changes, this is just the kind of starter file.
 
@@ -137,7 +137,7 @@ And then click on components. And you have your app component here. And you have
 
 So you can click, copy to clipboard, and then up here at the top, simply select everything that's here and then paste yours in. Mine's exactly the same, so that is my API token.
 
-![large](../../../../../../.gitbook/assets/06-022_IMG8.png)
+![large](./06-022_IMG8.png)
 
 And then you can put in your name you don't have to make any changes here to the end point. That is the API that we're calling. So if you've never worked or even heard of an API before, what it is is it stands for `Application Programming Interface` which sounds fancy, all it is is a URL.
 
@@ -153,13 +153,13 @@ In this case, we're setting what's called a series. This is how we're going to b
 
 Then here, this use effect, this is just a fancy name for setting a automatic trigger. So whenever the site loads up, we want to go get the data.
 
-![large](../../../../../../.gitbook/assets/06-022_IMG9.png)
+![large](./06-022_IMG9.png)
 
 So here we're calling a API library called Axios. We're saying, I want you to get this end point. Remember this end point is what we set up here. And so I want to get that end point and we're passing in some header data. This is how, remember when I said that API, is the whole point of an API was giving the ability for applications to talk with each other. So in this case, our application here is communicating with DevCamp, which is pretty cool. We don't have to do it, the computers will do it manually for us.
 
 Then what's going to happen is it's going to call DevCamp, it's going to pass in that API token. This is how it knows who we are. And then after that happens, and we even used the keyword then, then what's going to happen is we're going to get an API response back. And this is how we're going to set the data. And then we're going to do some data polishing things that allow us to set the data and store it in the chart.
 
-![large](../../../../../../.gitbook/assets/06-022_IMG10.png)
+![large](./06-022_IMG10.png)
 
 Don't worry if your eyes gloss over when you look at some of this code. By the end of this entire program you're actually going to be able to write code exactly like this, which if you don't believe me, just give it a little bit of time and it will happen I promise.
 
@@ -180,7 +180,7 @@ Now to get this running because this is a React application, so we're actually g
 
 So let's open up Google Chrome, go to local host 3000, just like that. And there we are, there is the chart.
 
-![large](../../../../../../.gitbook/assets/06-022_IMG11.png)
+![large](./06-022_IMG11.png)
 
 So all of this, I already prebuilt for you. So you don't have to worry about styling it. You can do that if you want. You can definitely, all of this code is yours. You can change it however you want. But now what you can see is the comparison between this chart and what you have on your profile. And this is a reason why I wanted to give you your own application. Because here this is a cool little chart to get an idea of how much work you're doing in the code editor.
 
@@ -188,11 +188,11 @@ But right here, this has a lot more data. Here, you're able to see on a very gra
 
 Say I want to go and look at December of this year. I can go to that area and then click and drag this. And then it zooms in for us, which is pretty cool.
 
-![large](../../../../../../.gitbook/assets/06-022_IMG12.gif)
+![large](./06-022_IMG12.gif)
 
 So it gives us the ability to see all the way from December 1st, all the way through the end of the month. And you can see those patterns, see those date ranges on when you were working in the code editor. And this is really helpful. You can click home and it'll return you back.
 
-![large](../../../../../../.gitbook/assets/06-022_IMG13.png)
+![large](./06-022_IMG13.png)
 
 And this has all of your data that you are going to have. So your chart is going to be really empty because if you just installed the visual code extension, then you might just have one little bump, you might not even have anything.
 
@@ -200,11 +200,11 @@ So what this chart does, is this is something where you can use this for months 
 
 This chart also has some other cool features that you can play with, like say that you wanted to put in your resume. So after all of this is done and you're applying for a job, say you want to put in your resume, all of the work you're doing, and you want to have real data to back it up. Well, if you come up here to the top right hand side, click on menu and click on download PNG.
 
-![large](../../../../../../.gitbook/assets/06-022_IMG14.png)
+![large](./06-022_IMG14.png)
 
 This is pretty cool it actually gives you an image. It generates an image for you, and you could show this like on your resume or maybe on your portfolio all of the work that you're doing.
 
-![large](../../../../../../.gitbook/assets/06-022_IMG15.png)
+![large](./06-022_IMG15.png)
 
 So here on the left-hand side you can see the number of hours. So you can see one day I did pull like a 24 hour marathon coding session. That was actually about two weeks ago. But you can see all of that data here and you can get an idea for when you were working and just hopefully it's something that's fun for you, that helps you progress.
 
@@ -214,15 +214,15 @@ Now let's take a look before we end and continue on with the course. Let's take 
 
 On a Mac, you can do that with just the keyboard command, `command + option + J` and I'll also let me pop this out just to make it a little bit easier to see. And I'll zoom in. So right here, this console log statement this is what I placed here. So when I put console log I grabbed the data and this is what got rendered out.
 
-![large](../../../../../../.gitbook/assets/06-022_IMG16.png)
+![large](./06-022_IMG16.png)
 
 So I can click on array. And then here you can see it's just an array of elements ranging from zero to 183.
 
-![large](../../../../../../.gitbook/assets/06-022_IMG17.png)
+![large](./06-022_IMG17.png)
 
 And you can see it's pretty basic. It's a set of objects. So it is a hundred.
 
-![large](../../../../../../.gitbook/assets/06-022_IMG18.png)
+![large](./06-022_IMG18.png)
 
 Don't let this get you confused. This isn't sending to arrays, this is simply the way that the browser limits how many items can be shown in a single array. So we're actually only getting one array item and they're just breaking it up so we can see it a little bit better.
 

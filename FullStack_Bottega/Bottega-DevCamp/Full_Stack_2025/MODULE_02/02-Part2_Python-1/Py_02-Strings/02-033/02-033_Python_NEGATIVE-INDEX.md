@@ -100,7 +100,7 @@ passing in a negative one.
 
 So now if I print this out you can see it has the period there
 
-![large](../../../../../../../.gitbook/assets/02-033_IMG1.png)
+![large](.././02-033_IMG1.png)
 
 If I want to go back even further I can say -3 and it's going to\
 print out the "o" from "dog" and we could just keep going and grab our\
@@ -125,7 +125,7 @@ the argument blank then it's going to go to the very end of the string.\
 So if this works this should print out "dog" with the period at the very\
 end. After running this you can see that is exactly what we get.
 
-![large](../../../../../../../.gitbook/assets/02-033_IMG2.png)
+![large](.././02-033_IMG2.png)
 
 So in review, this is how you can work with negative indices inside of a python string.
 

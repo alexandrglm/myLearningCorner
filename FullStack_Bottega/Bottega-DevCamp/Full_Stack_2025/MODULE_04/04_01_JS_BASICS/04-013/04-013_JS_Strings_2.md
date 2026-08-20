@@ -216,7 +216,7 @@ That definitely falls into the vein of very advanced so much so that I'd say hal
 
 Now if I change this and I'm not going to use a variable I can just use a regular string and I change this to be (5 5 5) 5 5 5 - 5 5 5 5 just like a phone number pattern if I hit return. Now, look at that. That gives us a full object back.
 
-![picture](../../../../../../.gitbook/assets/04-013_IMG1.png)
+![picture](./04-013_IMG1.png)
 
 Now don't worry about knowing every one of these items, because some of these we haven't gone over yet such as arrays and nested objects inside of arrays. But if you click on this you can see that it did in fact find this pattern. If you really want to spend some time understanding regular expressions a little bit more if you come in, you can see that right here it has things like the parens. It's looking for the parens right here.
 
@@ -234,7 +234,7 @@ And you can also if you wanted to you could pass in a regular expression as that
 
 The next one is going to be search. This one I'm going to copy again because I thought the example that worked best was a phone number one again. I'm going to paste this in then we'll talk about it.
 
-![picture](../../../../../../.gitbook/assets/04-013_IMG2.png)
+![picture](./04-013_IMG2.png)
 
 Here we have a valid phone number. And also notice this pattern right here doesn't require the parentheses that also allows for this kind of dash notation right here. Here it's saying this is my phone number search and then we're passing in a regular expression. And if I run this it says zero. So what exactly is search doing? Well, what search does is, it looks and when it finds a pattern that it matches with, then it will actually return the index. So zero does not mean that it didn't find it. It means that it did find it and it found it at the zeroth index. Now if I run this again with just `foo`. I run this and it returns negative one.
 

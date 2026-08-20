@@ -59,7 +59,7 @@ So for DailySmarty, for example, we have that very specific kind of blue.
 
 I created a variable called `$dailysmarty-blue` and then saved the hex color that you sent over.
 
-![IMG](../../../../../../.gitbook/assets/01-081_IMG1.png)
+![IMG](./01-081_IMG1.png)
 
 Then, everywhere in the application, and in all of the other Sass files, I can just call the `$dailysmarty-blue` variable.
 

@@ -102,7 +102,7 @@ nums = list(range(1, 100))
 
 which really means as you probably know by now that is going to be a range from 1 to 99 so if we want to see what this looks like you can say print nums run this and you'll see we have a list that goes from 1 to 99.
 
-![large](../../../../../../../../.gitbook/assets/03-086_IMG1.png)
+![large](../.././03-086_IMG1.png)
 
 Now, if we want to iterate over this list if
 
@@ -114,7 +114,7 @@ for num in nums:
     print(num)
 ```
 
-![large](../../../../../../../../.gitbook/assets/03-086_IMG2.png)
+![large](../.././03-086_IMG2.png)
 
 We've walked through this example a few times now but with a while loop, it is not quite this easy.
 
@@ -143,7 +143,7 @@ So, where it says while the length of nums is greater than zero, this is finally
 
 So, if I run this you're going to see that we get the behavior we're looking for
 
-![large](../../../../../../../../.gitbook/assets/03-086_IMG3.png)
+![large](../.././03-086_IMG3.png)
 
 Notice here, also a slightly different behavior:
 
@@ -227,13 +227,13 @@ number 42.
 
 So, if I hit return her
 
-![large](../../../../../../../../.gitbook/assets/03-086_IMG4.png)
+![large](../.././03-086_IMG4.png)
 
 And I'm gonna sa
 
-![large](../../../../../../../../.gitbook/assets/03-086_IMG5.png)
+![large](../.././03-086_IMG5.png)
 
-![large](../../../../../../../../.gitbook/assets/03-086_IMG6.png)
+![large](../.././03-086_IMG6.png)
 
 So, notice the behavior here because we have a while loop.
 
@@ -245,7 +245,7 @@ until it returns false.
 
 Now, if I type in the number 37, ut says you correctly guessed it and then notice the while loop ended:
 
-![large](../../../../../../../../.gitbook/assets/03-086_IMG7.png)
+![large](../.././03-086_IMG7.png)
 
 So when I hit return False it is now breaking outside of the while\
 loop and it returns false here. And so it ends the program and says that\

@@ -180,14 +180,14 @@ So if I'm going to call this function I can say full\_name and then\
 give parens because that's going to execute the function and notice how I\
 have two lines right here.
 
-![large](../../../../../../../../.gitbook/assets/03-097_IMG1.png)
+![large](../.././03-097_IMG1.png)
 
 This makes the code more readable and you will see that in\
 traditional Python programs this is the structure for this. Now if I run\
 this code you can see that it prints out hi on the right-hand side so\
 everything there is working properly.
 
-![large](../../../../../../../../.gitbook/assets/03-097_IMG1.png)
+![large](../.././03-097_IMG1.png)
 
 But this is pretty boring so let's come and let's actually add some true dynamic behavior to this. So our full name needs to take in a first\
 name and a last name. So inside of the parens I'm going to put the\
@@ -220,17 +220,17 @@ full_name()
 And now if I try to call full\_name just like this I'm going to get an\
 error. So, if I run this you can see that it gives me a TypeError.
 
-![large](../../../../../../../../.gitbook/assets/03-097_IMG3.png)
+![large](../.././03-097_IMG3.png)
 
 The explanation is that full\_name is missing two required positional arguments so these positional arguments are first and the last and what Python is telling me is that full\_name needs to be supplied those elements. So here I can pass in two strings so Kristine and then Hudgens and if I run this you can see that it prints this out correctly.
 
-![large](../../../../../../../../.gitbook/assets/03-097_IMG4.png)
+![large](../.././03-097_IMG4.png)
 
 Now, that may not seem like a very big deal because technically we could have done the exact same thing by just calling our print statement but what full name is allowing us to do, is imagine that you have a program and you want to be able to build out this kind of functionality and call this full name function from anywhere.
 
 You can do this and now you can simply pass in values and have this full name function that does all of the work for you.
 
-![large](../../../../../../../../.gitbook/assets/03-097_IMG5.png)
+![large](../.././03-097_IMG5.png)
 
 Now, this may seem like a dead-simple example and it is. It is really our first true function that we've built out.
 
@@ -259,11 +259,11 @@ So, now, if I come down here and I call our auth function and pass in something 
 
 So, if I say [jordan@hudgens.com](mailto:jordan@hudgens.com) and I pass in the secret password so everything here is the same except for my name. So if I attempt to do this it's going to say not authorized.
 
-![large](../../../../../../../../.gitbook/assets/03-097_IMG6.png)
+![large](../.././03-097_IMG6.png)
 
 But if I change this username or this email address here and run it again. Now you can see that it is authorized.
 
-![large](../../../../../../../../.gitbook/assets/03-097_IMG7.png)
+![large](../.././03-097_IMG7.png)
 
 So we have effectively built in a full condition right into this auth function and now we can call this from anywhere else in the program.
 
@@ -302,7 +302,7 @@ having parens at the end. And now if you run this code you can see that\
 it has printed out the numbers 1 through 100 so even though we didn't\
 pass in any values here it still worked.
 
-![large](../../../../../../../../.gitbook/assets/03-097_IMG8.png)
+![large](../.././03-097_IMG8.png)
 
 Now if you wanted to add some level of complexity so say that you\
 wanted to create a function that say, was called counter and you wanted\
@@ -312,7 +312,7 @@ going to put this inside of the range. So instead of 101, this is going\
 to be dynamic and so now if I say 501 and run this you can see that it\
 prints out to five hundred.
 
-![large](../../../../../../../../.gitbook/assets/03-097_IMG9.png)
+![large](../.././03-097_IMG9.png)
 
 So we're able to take a very basic example where we simply hardcoded\
 the value in and then you saw how with a few very small changes such as\

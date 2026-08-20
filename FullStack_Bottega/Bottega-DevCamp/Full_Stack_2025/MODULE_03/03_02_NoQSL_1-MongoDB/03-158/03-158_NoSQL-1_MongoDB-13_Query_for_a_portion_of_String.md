@@ -165,7 +165,7 @@ Atlas atlas-terube-shard-0 [primary] test> db.Books.findOne(
 
 ***
 
-![img](../../../../../../.gitbook/assets/03-158_IMG01.png)
+![img](./03-158_IMG01.png)
 
 ***
 
@@ -203,7 +203,7 @@ Now what we've done so far in regards to querying is all of those searches that 
 
 And that is not something that you're usually going to do in a real application. Instead, you're going to implement what's called a regular expression, and then you're going to match for something similar. So let's go in and we're going to add this into the database.
 
-![IMG](../../../../../../.gitbook/assets/03-158_IMG1.png)
+![IMG](./03-158_IMG1.png)
 
 And so that got inserted. And now what we're going to do is build out that query the one that uses regular expressions. So I can say db.books. findOne. If you remember back. So we just want to find one item that matches here.
 
@@ -219,7 +219,7 @@ and let's run it and see if this works.
 
 Then we'll take a step back and analyze the entire expression. So you can see that that worked
 
-![IMG](../../../../../../.gitbook/assets/03-158_IMG2.png)
+![IMG](./03-158_IMG2.png)
 
 If we would have done that with just the regular find and then the name it would not have worked. Just so you trust me on that one, I'm going to test it out. So we're in a deep work just with the text by itself. And now if I run this it returns NULL which means it couldn't find anything.
 

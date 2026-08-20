@@ -37,11 +37,11 @@ Now, this H1 part has to be dynamic though so I can't just come up here and hard
 
 So I'm going to save this and once again I do this pretty much every single video that's my normal workflow but I want to actually show you with Quokka and so I'm just going to render it all in real-time so I'm gonna say heading generator. Now we're going to pass in our title so here let's make the title a string and just say greetings and then the second argument let's make it an h2 tag so I'm going to pass in h2 and now if I call this you can see that I get greetings inside of an h2 tag.
 
-![large](../../../../../../.gitbook/assets/04-053_IMG1.png)
+![large](./04-053_IMG1.png)
 
 Now if I want to change that title I can say Hi there and change it to an H1 tag. Now you can see we're generating a full top-line heading with an H1 that says Hi there.
 
-![large](../../../../../../.gitbook/assets/04-053_IMG2.png)
+![large](./04-053_IMG2.png)
 
 As you can see with just a pretty small amount of code we're able to leverage string literals and this is something specific and you need to be able to have a tool such as ES6 in order to use this type of syntax. If you are using older versions of JavaScript then what you would need to do is inside of that function you'd need to say something like return and than pass in strings so you'd pass in the H and then say plus typeOfHeading and then you just kind of keep on going like that with a bunch of plus signs connecting all of them.
 

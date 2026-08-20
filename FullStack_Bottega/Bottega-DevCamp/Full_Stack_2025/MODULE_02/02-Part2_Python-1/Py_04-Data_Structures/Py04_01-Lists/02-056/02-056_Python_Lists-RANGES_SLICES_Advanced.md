@@ -177,7 +177,7 @@ So, it's going to go all the way and it's going to skip computer science that is
 
 So, if I print this out you can see that you will have a tag range that includes development all the way through programming.
 
-![large](../../../../../../../../.gitbook/assets/02-056_IMG1.png)
+![large](../.././02-056_IMG1.png)
 
 So, it skips the first one and the last one and includes everything else inside of it.
 
@@ -321,7 +321,7 @@ If I hit return you can see we have a very different result set.
 
 Let me put it right here so that we can look at them and see what the difference is.
 
-![large](../../../../../../../../.gitbook/assets/02-056_IMG3.png)
+![large](../.././02-056_IMG3.png)
 
 So, when we were reverse sorting by the index value we were able to look at the very last element and then put it in the first place, then `programming` which was the second one. And we put it there.
 
@@ -348,7 +348,7 @@ So, let's say that I want to create a variable called `sorted_tags = tags.sort(r
 
 if I want to print this out let's see what happens. So if I run this I get none.
 
-![large](../../../../../../../../.gitbook/assets/02-056_IMG4.png)
+![large](../.././02-056_IMG4.png)
 
 **That's weird** because I kind of would have thought that I would have gotten exactly the values that I got here because that is exactly what I thought I was doing was I was sorting in reverse.
 
@@ -383,7 +383,7 @@ But let's say that we sort this and we don't assign it to a variable and then we
 
 You can see they have been sorted even though we didn't store this in a variable.
 
-![large](../../../../../../../../.gitbook/assets/02-056_IMG5.png)
+![large](../.././02-056_IMG5.png)
 
 So, it went and it changed all of the elements and the order and everything inside of the list.
 

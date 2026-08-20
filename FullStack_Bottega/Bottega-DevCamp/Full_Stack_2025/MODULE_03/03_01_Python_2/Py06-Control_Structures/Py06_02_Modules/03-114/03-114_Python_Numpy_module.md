@@ -125,7 +125,7 @@ In this lesson, we're going to install our very first Python package, and we're 
 
 Right here, I have opened in the browser the **Python Package Index**, which is also called the **Cheese Shop**. If you scroll all the way down, you can see that there is a little reference right down here to an old Monty Python sketch related to a cheese shop.
 
-![IMG](../../../../../../../../.gitbook/assets/03-114_IMG1.png)
+![IMG](../.././03-114_IMG1.png)
 
 That is how the Python Package Index got its name. If you're curious about it and want to know more, just Google **Python Package Index Cheese Shop**, and you'll be able to see the entire Monty Python sketch.
 
@@ -135,7 +135,7 @@ What I want to do is show you how you can find and then learn more about differe
 
 The very first one that we're going to go with is called **NumPy**. NumPy is a very powerful package that allows you to process numbers, records, and objects, as you can see right here.
 
-![IMG](../../../../../../../../.gitbook/assets/03-114_IMG2.png)
+![IMG](../.././03-114_IMG2.png)
 
 This is a basic description. It also gives an associated weight, which has to do with a number of criteria. Usually, the popularity of it has quite a bit to do with it.
 
@@ -143,7 +143,7 @@ So, if you click on this, you'll see that this is one of the most popular librar
 
 Here on the show page, you can see that there is a much longer description.
 
-![IMG](../../../../../../../../.gitbook/assets/03-114_IMG3.png)
+![IMG](../.././03-114_IMG3.png)
 
 Essentially, I'll give you a summary: **NumPy** allows you to process large collections of data in a very efficient manner.
 
@@ -155,19 +155,19 @@ This is something that you're going to find incredibly helpful when you start im
 
 So, the way that we can install it is with **pip**. If you did not install pip or do not want to, you can also download NumPy directly to your system and use it directly, the same way that we have used our own custom modules that we've worked with up until this time. I personally will highly recommend that you use **pip** for this. The way you can do it is if you come to your terminal, type `pip install` and then the name of the library. So, in this case, it's going to be `numpy`. Now, if you already have a library installed on your system, then it's going to skip the installation process. So, if I hit return, because I already have this on my system, it says **requirement already satisfied: numpy**, and then it shows the path in the system where my version of NumPy is installed.
 
-![IMG](../../../../../../../../.gitbook/assets/03-114_IMG4.png)
+![IMG](../.././03-114_IMG4.png)
 
 So, if you have that installed, now we can start up the Python REPL. I'm going to start Python up, and let's create a cool little process here where we leverage arrays. Let's imagine that you've been tasked with building out a system that takes a number and then from that number, it builds a variable number of list items. If that isn't clear at all, let me write up a little visual right here. Say, if I wanted to have a few items in a list, like `1, 2, 3, 4, 5, 6, 7, 8`, and then I asked you to build out a function that would return this and say, have one list that contained a nested list of `[1, 2]`, and then another nested list of `[3, 4]`, and so on. It needed to be variable, so you couldn't hard-code any of these elements in. That would be a little bit of a time-consuming process to build.
 
 But what I'm going to show you is how we can leverage NumPy to make this possible. I'm going to import NumPy and alias it, so `import numpy as np`. That works. As long as after you hit return right there, you did not get an error, that means that we have successfully imported the NumPy library and aliased it as `np`.
 
-![IMG](../../../../../../../../.gitbook/assets/03-114_IMG5.png)
+![IMG](../.././03-114_IMG5.png)
 
 Now, I can say I'm going to create a variable here. I'm going to say `num_range` and then say `np.arange`. What this is going to do is allow me to pass in a number. So, I'm going to say `16`, and this is going to generate a range with an array.
 
 So, it's going to say, "OK, there are going to be 16 elements," and I'm going to generate an array of 16 elements. It takes in a range where it's going to start at zero and go all the way up to 15, so it's going to have 16 elements. If you run this and then type `num_range`, you can see that we now have an array that is `0` to `15`.
 
-![IMG](../../../../../../../../.gitbook/assets/03-114_IMG6.png)
+![IMG](../.././03-114_IMG6.png)
 
 If you're wondering what an array is, an array is very similar to a list.
 
@@ -179,7 +179,7 @@ I wanted the ability to take in any kind of arbitrary set of numbers and have a 
 
 So, if I call `num_range` and then call the function `reshape`, I can pass in two different numbers here. If I pass in `4` and `4`, what this is going to give me, as you can see right here, is a nested set of four nested arrays inside of that master array, and inside each one of those arrays are four elements.
 
-![IMG](../../../../../../../../.gitbook/assets/03-114_IMG7.png)
+![IMG](../.././03-114_IMG7.png)
 
 This gives us the ability to create an entire matrix of values.
 
@@ -199,7 +199,7 @@ I highly recommend that you go and look at the documentation and explore other f
 
 If you go back to that Cheese Shop page and scroll down, you can see that there is a home page. If you click on this, it has everything from getting to know it all the way through having an entire NumPy tutorial.
 
-![IMG](../../../../../../../../.gitbook/assets/03-114_IMG8.png)
+![IMG](../.././03-114_IMG8.png)
 
 This has a number of the popular functions, and I highly recommend that you go through that and try them out in the REPL. Imagine the kinds of different levels of functionality that you can build into your program by leveraging what is included in this package.
 
@@ -237,7 +237,7 @@ python package index and this is also called the Cheese Shop. If you\
 scroll all the way down you can see that there is a little reference\
 right down here to an old Monty Python sketch related to a cheese shop.
 
-![large](../../../../../../../../.gitbook/assets/03-114_IMG1.png)
+![large](../.././03-114_IMG1.png)
 
 And that is how the python package index got its name. If you're\
 curious about it and you want to know more just google Python package\
@@ -251,7 +251,7 @@ first one that we're going to go with is called NumPy. And so what\
 NumPy is, is its a very powerful package that allows you to process\
 numbers, records, and objects like you can see right here.
 
-![large](../../../../../../../../.gitbook/assets/03-114_IMG2.png)
+![large](../.././03-114_IMG2.png)
 
 This is a basic description. It also gives an associated weight and\
 the weight has to deal with a number of criteria. Usually, the\
@@ -261,7 +261,7 @@ community. So it is definitely a good one to become familiar with and\
 here on the show page, you can see that there is a much longer\
 description.
 
-![large](../../../../../../../../.gitbook/assets/03-114_IMG3.png)
+![large](../.././03-114_IMG3.png)
 
 Essentially, I'll give you a summary NumPy allows you to process\
 large collections of data in a very efficient manner. So usually things\
@@ -285,7 +285,7 @@ installation process. So if I hit return because I already have this on\
 my system it says requirement already satisfied. Numpy in and then it\
 shows the path in the system where my version of NumPy is installed.
 
-![large](../../../../../../../../.gitbook/assets/03-114_IMG4.png)
+![large](../.././03-114_IMG4.png)
 
 So if you have that installed, now we can start up the python repl so\
 I'm going to start Python up and let's create a cool little process\
@@ -306,7 +306,7 @@ so import NumPy as np and that works so as long as after you hit return\
 right there, as long as you did not get an error that means that we\
 have successfully imported the NumPy library and we've aliased it as np.
 
-![large](../../../../../../../../.gitbook/assets/03-114_IMG5.png)
+![large](../.././03-114_IMG5.png)
 
 Now I can say I'm going to create a variable here so I'm gonna say\
 num\_range and then say np.arange which is what this is going to do is\
@@ -340,7 +340,7 @@ to give me as you can see right here is a nested set of four nested\
 arrays inside of that master array and inside each one of those arrays\
 are four elements.
 
-![large](../../../../../../../../.gitbook/assets/03-114_IMG6.png)
+![large](../.././03-114_IMG6.png)
 
 This gives us the ability to create an entire matrix of values. And\
 this is going to be incredibly necessary when you when it comes to\
@@ -382,7 +382,7 @@ that there is a home page. So if you click on this it has everything\
 from getting to know it all the way through having an entire NumPy\
 tutorial.
 
-![large](../../../../../../../../.gitbook/assets/03-114_IMG7.png)
+![large](../.././03-114_IMG7.png)
 
 so this has a number of the popular functions and I highly recommend that you go through that, try them out in the repl.
 

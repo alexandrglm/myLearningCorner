@@ -182,7 +182,7 @@ Now, this is going to represent 20 percent and we can check that here\
 by print out percentage. You'll see that it prints out point 2 which is\
 equivalent to 20 percent.
 
-![large](../../../../../../../.gitbook/assets/02-040_IMG1.png)
+![large](.././02-040_IMG1.png)
 
 And so the cool thing about each one of these is notice how we didn't\
 have to do any work to tell python what kinds of numbers that we're\
@@ -219,7 +219,7 @@ these subtypes such as float and integer and they all can work\
 together. And so if I do something like this where I say sale price plus\
 new product and I go and I print this out you'll see it says 164.99
 
-![large](../../../../../../../.gitbook/assets/02-040_IMG2.png)
+![large](.././02-040_IMG2.png)
 
 What happened here is we took two different data types or I should\
 say two different numbered data types of float and integer and when you\

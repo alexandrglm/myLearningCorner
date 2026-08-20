@@ -279,7 +279,7 @@ We have the promise name followed by .then followed by whatever we want to do wi
 
 I'm going to hit run and it should take two seconds and it should give us back our Hello. And there you go.
 
-![small](../../../../../../.gitbook/assets/04-068_IMG1.png)
+![small](./04-068_IMG1.png)
 
 So this is working.
 
@@ -287,7 +287,7 @@ All of this is set up properly so this is kind of your base skeleton. Now, we're
 
 Now if I hit run again what's going to happen is it's going to go two seconds and then just like this. It gives us our object error.
 
-![small](../../../../../../.gitbook/assets/04-068_IMG2.png)
+![small](./04-068_IMG2.png)
 
 So what happened is it called sleepyGreeting it did it's setTimeout and it called the reject because it couldn't find to resolve.
 

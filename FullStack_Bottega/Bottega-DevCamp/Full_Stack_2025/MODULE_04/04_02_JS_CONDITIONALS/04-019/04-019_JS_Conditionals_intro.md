@@ -16,11 +16,11 @@ The reason for that is because `conditionals` allow you to have dynamic behavior
 
 Not even in regards to programming, but if you're driving down the street and you see that you come up to a red light, that is actually you running a conditional in your head where you say: "if the light is red then I'm going to stop."
 
-![large](../../../../../../.gitbook/assets/01-019_IMG1.png)
+![large](./01-019_IMG1.png)
 
 Conditionals in programming work very similarly. Let's say that you're building out a program for a rental car company, and the rental car company says that if the driver's age is under 25 years old: they're not allowed to rent that car. That is a conditional.
 
-![large](../../../../../../.gitbook/assets/01-019_IMG2.png)
+![large](./01-019_IMG2.png)
 
 Now, we're going to start off with those basic types of scenarios, and then we're also going to extend it into some more advanced kinds of concepts, such as compound conditionals. To take that rental car, for example, say that you have a policy where you can rent a car if you're 25 years through 80 years old.
 

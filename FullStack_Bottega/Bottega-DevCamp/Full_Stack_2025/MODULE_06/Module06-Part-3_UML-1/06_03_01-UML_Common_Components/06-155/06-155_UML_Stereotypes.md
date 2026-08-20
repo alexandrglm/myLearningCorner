@@ -117,7 +117,7 @@ EmailService
 UserRepository
 ```
 
-![IMG](../../../../../../../.gitbook/assets/06-155_IMG1.png)
+![IMG](.././06-155_IMG1.png)
 
 ### 2.3 Placement Guidelines
 
@@ -497,13 +497,13 @@ UserController
 
 Stereotypes are something that may look a little bit strange to you if you are not familiar with UML. In many cases they can look kind of strange even if you use UML on a regular basis. Part of the reason is because they're not used in every single type of diagram. Even when they are used, many people don't really understand the correct implementation so it can be a little bit confusing. I want to show it because you are going to see this notation in a number of diagrams as you go through this course and as you move through your career. I don't want it to trip you up when you see them.
 
-![large](../../../../../../../.gitbook/assets/06-155_IMG1.png)
+![large](.././06-155_IMG1.png)
 
 The syntax is right there in the "how" where it shows a stereotype and it has a double angle brackets on both sides. So why do we use this? It extends a medic class but what in the world does that even mean? It allows us to take a more complicated or abstract kind of system, maybe something that has a little bit of a weird type of component name, and then give a much more practical name. A name that is going to make more sense to the developers when they're working within the system. The name can also follow a more standardized naming convention that you'll see throughout the rest of the software engineering implementation.
 
 A good example is to show that a stereotype can represent how Model View Controller (MVC) architectures can be designed.
 
-![large](../../../../../../../.gitbook/assets/06-155_IMG2.png)
+![large](.././06-155_IMG2.png)
 
 look at this top set of diagram components, if we look at the Boundary, Control and Entity, we may be a bit confused on what that represents. If you're working with developers who haven't been trained in UML, these things are going to look incredibly confusing. They're going to spend more time trying to understand the diagram instead of interpreting the diagram as a list of instructions and blueprint.
 

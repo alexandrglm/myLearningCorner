@@ -129,14 +129,14 @@ for num in num_list:
 
 And so what this is going to do is it is going to cube each one of those values and let's see if this works. So I can say print cubed\_nums and let's see if I hit run. You can see this, in fact, does cube each one of those elements.
 
-![large](../../../../../../../../.gitbook/assets/03-088_IMG1.png)
+![large](../.././03-088_IMG1.png)
 
 If you do not trust me you can run this with just the regular num\_list to compare both of them.
 
 So here you can see that we have a range of 1 to 11. And let's cast this as a list just so make it so you can easily see what it's saying. So here we have the numbers 1 through\
 10 and down below we have the cube number. So we have 1, 8, 27, all the way through a thousand.
 
-![large](../../../../../../../../.gitbook/assets/03-088_IMG2.png)
+![large](../.././03-088_IMG2.png)
 
 So all of this is working properly.
 
@@ -170,13 +170,13 @@ So, I'm going to say `num ** 3` because that's the action we want to take and th
 
 And so now let's see if we get the exact same behavior, hit clear run it again.
 
-![large](../../../../../../../../.gitbook/assets/03-088_IMG3.png)
+![large](../.././03-088_IMG3.png)
 
 And as you can see we get the identical behavior for our cubed\_nums.
 
 And also watch if I delete this empty cubed\_nums creation on line two you can see that it's still working properly.
 
-![large](../../../../../../../../.gitbook/assets/03-088_IMG3.png)
+![large](../.././03-088_IMG3.png)
 
 So, we are able to save a decent amount of code. And all we're doing is we're running the identical kind of system that we had and that took up three lines of code before.
 
@@ -203,7 +203,7 @@ This first num maps in exactly the same way that we had num here and num here in
 
 So if I say `x ** 3` and I change this you're going to get the exact same behavior. So if I run this again you can see everything is working the same way.
 
-![large](../../../../../../../../.gitbook/assets/03-088_IMG5.png)
+![large](../.././03-088_IMG5.png)
 
 So, that is very important to understand is that this is your iterator variable.
 
@@ -263,7 +263,7 @@ If that is the case then I want to take my even numbers and then append whatever
 
 And now let's see if we have properly selected our even numbers on hit return here and you can see that this works perfectly.
 
-![large](../../../../../../../../.gitbook/assets/03-088_IMG6.png)
+![large](../.././03-088_IMG6.png)
 
 Right at the top, we have our regular num list 1 through 10 and then down below we have our even numbers 2, 4, 6, 8, and 10.
 
@@ -276,7 +276,7 @@ And I'm going to say num and then for num in num\_list. And this is where it get
 
 So, let's see if this works. If I run you can see it's still working properly.
 
-![large](../../../../../../../../.gitbook/assets/03-088_IMG7.png)
+![large](../.././03-088_IMG7.png)
 
 But now let's dive into each one of these elements to see exactly how we were able to take four lines of code and condense it down into a single line.
 

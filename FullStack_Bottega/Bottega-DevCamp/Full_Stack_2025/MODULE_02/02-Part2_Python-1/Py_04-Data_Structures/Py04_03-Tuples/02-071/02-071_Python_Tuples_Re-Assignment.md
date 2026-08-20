@@ -127,7 +127,7 @@ So I'm going to come here and let's walk through reassignment so I'm gonna say p
 
 Now, this is going to look a little bit odd if you've never seen this before but I'm going explain why we need to utilize this syntax whenever you're adding to a tuple what you need to do is to place in whatever value you have so here I'm going to say published.
 
-![large](../../../../../../../../.gitbook/assets/02-071_IMG1.png)
+![large](../.././02-071_IMG1.png)
 
 However, based on how tuples work and how python works when it comes to evaluating expressions what would happen right here is these parens.
 
@@ -155,7 +155,7 @@ So if I run this you can see we don't have any errors.
 If I take this out then Python's really just going to look at this like it's a single\
 string and you can't add a string to a tuple so if I run this you'll see that we get an error where it says it's a _**TypeError can only concatenate tuple to another tuple**_:
 
-![large](../../../../../../../../.gitbook/assets/02-071_IMG2.png)
+![large](../.././02-071_IMG2.png)
 
 which means that i**n order to make publish something that we can add inside of this post tuple we need to add a comma and now they are both tuples and they can be added together**.
 
@@ -169,7 +169,7 @@ So if I say status post and now I can print each one of these out so I can print
 
 And now our new one which is status so let's see if everything here worked and it did.
 
-![large](../../../../../../../../.gitbook/assets/02-071_IMG4.png)
+![large](../.././02-071_IMG4.png)
 
 Now, you can see we have access to this new status element here called published which is not included in our initial post definition but we added to it.
 
@@ -191,7 +191,7 @@ it you can always go with our mass assignment operator here and say\
 plus equals whatever this value is. If I run this again you can see we\
 get the exact same result.
 
-![large](../../../../../../../../.gitbook/assets/02-071_IMG4.png)
+![large](../.././02-071_IMG4.png)
 
 And **this is going to be the type of syntax you are going to see in production applications now because the topic of immutability is so key**.
 
@@ -216,7 +216,7 @@ So, in other words, in memory in the computer right now or in this case, because
 So, if I say print and then call the ID function and passed in post right here,\
 then you're going to see a specific ID in memory for this post.
 
-![large](../../../../../../../../.gitbook/assets/02-071_IMG6.png)
+![large](../.././02-071_IMG6.png)
 
 So, in other words what it means is **this tuple is in-memory with this long identifier.**
 
@@ -236,7 +236,7 @@ object and therefore it's going to give a new object in memory.
 
 So if I run this now
 
-![large](../../../../../../../../.gitbook/assets/02-071_IMG7.png)
+![large](../.././02-071_IMG7.png)
 
 You can see the first two elements here because it's referencing the exact same post tuple have an identical number.
 

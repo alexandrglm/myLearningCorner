@@ -33,7 +33,7 @@ const user = { name: "Alice", age: 25 };
 console.log("User:", user, "Logged at:", new Date());
 ```
 
-![Multiple Values Log](../../../../../../../.gitbook/assets/06-128_IMG2.png)\
+![Multiple Values Log](.././06-128_IMG2.png)\
 &#xNAN;_&#x45;xample: Logging strings, objects, and dates in a single call._
 
 ***
@@ -52,7 +52,7 @@ const players = [
 ]
 ```
 
-![Table Output](../../../../../../../.gitbook/assets/06-128_IMG4.png)\
+![Table Output](.././06-128_IMG4.png)\
 &#xNAN;_&#x45;xample: Tabular view of array data._
 
 ***
@@ -67,7 +67,7 @@ Use for critical issues (e.g., invalid API responses):
 console.error("Failed to fetch data: 404 Not Found");
 ```
 
-![Error Message](../../../../../../../.gitbook/assets/06-128_IMG5.png)
+![Error Message](.././06-128_IMG5.png)
 
 ### `console.warn()`
 
@@ -77,7 +77,7 @@ Use for deprecations or non-breaking issues:
 console.warn("This method will be deprecated in v2.0");
 ```
 
-![Warning Message](../../../../../../../.gitbook/assets/06-128_IMG6.png)
+![Warning Message](.././06-128_IMG6.png)
 
 ***
 
@@ -124,7 +124,7 @@ to log out.
 
 Then if you open up a file so right now I have an index.html file I have it open in the browser and if I run this you can see that it displays the hi message that I just had.
 
-![large](../../../../../../../.gitbook/assets/06-128_IMG1.png)
+![large](.././06-128_IMG1.png)
 
 Now that is something you probably learned the very first day that you learned javascript but in this guide, we're going to walk through a number of different ways that you can use the console. So console log is one of the more basic ones but we also have some extensions to this that can be very helpful in a number of ways so that's what we're going to cover in this guide.
 
@@ -132,11 +132,11 @@ In addition to console log imagine a scenario where you have a number of variabl
 
 You can see that this printed out high then it printed out our object and then it printed out After object.
 
-![large](../../../../../../../.gitbook/assets/06-128_IMG2.png)
+![large](.././06-128_IMG2.png)
 
 This is a really helpful way of understanding not just console log but also just JavaScript in general. You can see here console log and especially the log portion here is just a function and as a function, it can take any number of arguments and if you hover over it in Visual Studio code you can even see that where it says that it's a method and it takes in a message with any number of arguments
 
-![large](../../../../../../../.gitbook/assets/06-128_IMG3.png)
+![large](.././06-128_IMG3.png)
 
 so you could pass in strings, you could pass in numbers, or pass in an object like we did right here and it will print those out. That is a very helpful way of being able to consolidate your console log statements. So if you have been getting in the habit of if you have 5 items if you feel like you have to log out each one of those items on its own line you can actually combine those all into a single call which is very helpful.
 
@@ -150,7 +150,7 @@ So that's all we need and so what we can do here with table is it is required th
 
 So if I hit save now and come over here clear and refresh you can see this very helpful table that gets printed out.
 
-![large](../../../../../../../.gitbook/assets/06-128_IMG4.png)
+![large](.././06-128_IMG4.png)
 
 So if you have been using console log for printing now the output from one of your arrays and it is something like this it has a structure like this then I'm not sure about you but for me, I really like being able to see it in this kind of format it makes it much easier to read. I can see the index value which notice this is something that isn't even shown here so I can see right away with the index as I can see the name attribute and the position attribute. So this is very helpful whenever you're working with more complex data structures and so that is console table.
 
@@ -160,11 +160,11 @@ So for example, if I want to show an error message I can say console.error and t
 
 So if they pass in the wrong data type or something you need to let them know and the better your error messages are the more likely they are going to use your tool which is what you're wanting whenever you're working with open source kind of software so I'm going to clear this and as you can see this doesn't print out a regular console log statement instead it prints out oops which is exactly what we're wanting in this case.
 
-![large](../../../../../../../.gitbook/assets/06-128_IMG5.png)
+![large](.././06-128_IMG5.png)
 
 Because if they make a mistake and you want to make it very clear that a mistake was made you don't simply want to do a normal console log statement instead you want to show that something bad happened and that they need to fix it. So just like we have console log we also have console warned so lets comment this out. And say console.warn and say something is about to go wrong. And so what you typically use console warn for is if you are building out a tool that other people are using and say that they used an older syntax something that you're about to deprecate or something like that. If you come here and hit refresh you can see that it didn't give an error it simply gave a warning.
 
-![large](../../../../../../../.gitbook/assets/06-128_IMG6.png)
+![large](.././06-128_IMG6.png)
 
 And there's a pretty big distinction there and it's a common industry practice that if you're building out tools that others are using and in the future, if you're planning on changing that tool you don't simply change it right away because then you're going to break other people's code but instead you give some period of time where you show a warning.
 

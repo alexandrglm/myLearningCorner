@@ -24,19 +24,19 @@ So managing those errors is important but it becomes even more critical with Jav
 
 Let's take an example so let's say that you build a react or angular application. That application is going to live on a server but it can be rendered in the browser. So you're going to have a server over here and this is where we'll just say with an R this is our react application.
 
-![large](../../../../../../../.gitbook/assets/05-087_IMG1.png)
+![large](.././05-087_IMG1.png)
 
 Now, this can be rendered right in the browser. So all of your content all your buttons forms everything like that, that's going to be rendered in the browser.
 
-![large](../../../../../../../.gitbook/assets/05-087_IMG2.png)
+![large](.././05-087_IMG2.png)
 
 But now your react application typically is not going to live completely on its own. Usually, when you build a react or angular apps they need to have some type of back end. And so what that means is this is going to have to communicate with another server. So let's imagine that we create a python server over here and this python server has a database and it has an API server and this is doing all of the logic for the system.
 
-![large](../../../../../../../.gitbook/assets/05-087_IMG3.png)
+![large](.././05-087_IMG3.png)
 
 The react app is simply making calls to that system and it's getting data calls back.
 
-![large](../../../../../../../.gitbook/assets/05-087_IMG4.png)
+![large](.././05-087_IMG4.png)
 
 Now imagine a scenario where this python server runs into an error. So say that there was some issue and something occurred where this server either went down or it started getting very slow. Even if your react application this Javascript-based application even if it was coded perfectly. If it is connecting to a service or trying to connect to a service that throws an error back or that it can't reach you need to be able to accommodate for that.
 
@@ -44,7 +44,7 @@ So you need the ability to not just assume that every time that you communicate 
 
 But then for managing logins you might have what's called an authentication server right here and if you can't reach the authentication server you can't do anything.
 
-![large](../../../../../../../.gitbook/assets/05-087_IMG5.png)
+![large](.././05-087_IMG5.png)
 
 And so you need to make sure that you are watching for any kinds of errors. Another common issue is you might be communicating with these servers and it may not be down it might just be slow. Your system will get an error back or it could get an error back and so you need to be able to constantly retry that type of communication.
 
