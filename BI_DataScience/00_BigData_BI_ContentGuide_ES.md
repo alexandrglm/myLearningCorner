@@ -26,9 +26,9 @@
 | [X] | 02-003 | Data Hub, EDW, Data Lake | [Arquitecturas Big Data](./02_BigData/02-003_Arquitecturas_Big_Data.md) | 2026-06-16 |
 | [X] | 02-004 | | [EDW vs Data Hub vs Data Lake (Comparación de modelos)](./02_BigData/02-004_EDW_Almacen_Datos_Aumentado.md) | 2026-06-16 |
 | [X] | 02-005 | | [Machine Learning, definición, fases](./02_BigData/02-005_Machine_Learning.md) | 2026-06-16 |
-| [X] | 02-006 | | Machine Learning, métodos | 2026-06-29 |
-| [X] | 02-007 | | Agentes de inteligencia artificial | 2026-06-29 |
-| [X] | 02-008 | | Áreas de aplicación de la inteligencia artificial | 2026-06-29 |
+| [X] | 02-006 | | [Machine Learning, métodos](/02_BigData/02-006_Machine_Learning_2_metodos.md) | 2026-06-29 |
+| [X] | 02-007 | | [Agentes de inteligencia artificial](/02_BigData/02-007_Agentes_de_Inteligencia_Artificial.md) | 2026-06-29 |
+| [X] | 02-008 | | [Áreas de aplicación de la inteligencia artificial](/02_BigData/02-008_Areas_de_Aplicacion_de_IA.md) | 2026-06-29 |
 
 ---
 
@@ -217,7 +217,7 @@
 | Status | Guide | Type | Title | Date |
 | ------ | ----- | ---- | ----- | ---- |
 | [X] | 09-001 | | [RGPD - LOPDGG](./09_Normativa/09-001_RPGD_LOPDGDD.md) | 2026-08-18 |
-| [X] | 09-004 | | [Retos. ¿Qué problemas previos trata de resolver el RGPD?](./09_Normativa/09-002_Retos.md) | 2026-08-18 |
-| [X] | 09-005 | | [Cookies](./09_Normativa/09-003_Cookies.md) | 2026-08-18 |
+| [X] | 09-002 | | [Retos. ¿Qué problemas previos trata de resolver el RGPD?](./09_Normativa/09-002_Retos.md) | 2026-08-18 |
+| [X] | 09-003 | | [Cookies](./09_Normativa/09-003_Cookies.md) | 2026-08-18 |
 
 ---

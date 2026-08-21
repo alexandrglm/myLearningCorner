@@ -1,4 +1,4 @@
-# 02-005:	Machine Learning
+# 02-005:	Machine Learning (1)
 
 > Una vez ya sabemos cuales son los distintos pasos por los que tiene que pasar un proyecto de big data, las personas involucradas así como las arquitecturas disponibles para que esa personas puedan operar fase a fase por un proyecto de Big Data, pasamos a detallar cómo consatruir un proyecto de machine Learning.
 
@@ -93,6 +93,7 @@ Implica la ejecución de la fase anterior, mejorando el rendimiento, supeditado 
 
 Podríamos plantear que no tenemos datos suficientes o que no están bien preparados y por este motivo trabajar de nuevo en la fase 1. En cambio, podríamos plantear sacar características de los datos no previstas antes y que podrían tener un mayor impacto. O, en cambio, utilizar en el paso 3 algoritmos de Machine Learning distintos para mejorar el rendimiento.
 
+![](./img/02-038.png)
 
 ---
 
