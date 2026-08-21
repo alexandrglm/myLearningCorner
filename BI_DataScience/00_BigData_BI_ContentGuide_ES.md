@@ -26,9 +26,9 @@
 | [X] | 02-003 | Data Hub, EDW, Data Lake | [Arquitecturas Big Data](./02_BigData/02-003_Arquitecturas_Big_Data.md) | 2026-06-16 |
 | [X] | 02-004 | | [EDW vs Data Hub vs Data Lake (Comparación de modelos)](./02_BigData/02-004_EDW_Almacen_Datos_Aumentado.md) | 2026-06-16 |
 | [X] | 02-005 | | [Machine Learning, definición, fases](./02_BigData/02-005_Machine_Learning.md) | 2026-06-16 |
-| [X] | 02-006 | | [Machine Learning, métodos](/02_BigData/02-006_Machine_Learning_2_metodos.md) | 2026-06-29 |
-| [X] | 02-007 | | [Agentes de inteligencia artificial](/02_BigData/02-007_Agentes_de_Inteligencia_Artificial.md) | 2026-06-29 |
-| [X] | 02-008 | | [Áreas de aplicación de la inteligencia artificial](/02_BigData/02-008_Areas_de_Aplicacion_de_IA.md) | 2026-06-29 |
+| [X] | 02-006 | | [Machine Learning, métodos](./02_BigData/02-006_Machine_Learning_2_metodos.md) | 2026-06-29 |
+| [X] | 02-007 | | [Agentes de inteligencia artificial](./02_BigData/02-007_Agentes_de_Inteligencia_Artificial.md) | 2026-06-29 |
+| [X] | 02-008 | | [Áreas de aplicación de la inteligencia artificial](./02_BigData/02-008_Areas_de_Aplicacion_de_IA.md) | 2026-06-29 |
 
 ---
 
@@ -72,9 +72,9 @@
 | [X] | 04-009 | | [Condicionales](./04_Python/04-009_Condicionales.md) | 2026-07-02 |
 | [X] | 04-010 | | [Funciones](./04_Python/04-010_Funciones.md) | 2026-07-02 |
 | [X] | 04-011 | Ejercicio | [Funciones 1](./04_Python/04-011_Ejercicio_funciones.md) | 2026-07-02 |
-| [X] | 04-013 | | File Handling | 2026-07-03 |
-| [X] | 04-014 | | Tablas | 2026-07-03 |
-| [X] | 04-015 | | OOP | 2026-07-03 |
+| [X] | 04-013 | | [File Handling](./04_Python/04-012_File_Handling.md) | 2026-07-03 |
+| [X] | 04-014 | | [Tablas](./04_Python/04-013_Tablas.md) | 2026-07-03 |
+| [X] | 04-015 | | [OOP](./04_Python/04-014_OOP.md) | 2026-07-03 |
 ---
 
 ## MODULE 5 - Tableau / Data Visualisation
