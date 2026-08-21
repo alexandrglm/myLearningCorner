@@ -138,21 +138,21 @@
 | [X] | 06-013 | | [Filtros](./06_PowerBI/06-013_Filtros_1.md) | 2026-07-21 |
 | [X] | 06-014 | | [Limitación de Filtros](./06_PowerBI/06-014_Filtros_2.md) | 2026-07-21 |
 | [X] | 06-015 | | [Controles de Interacción](./06_PowerBI/06-015_Controles_de_Interaccion.md) | 2026-07-21 |
-| [X] | 06-016 | | Medidas | 2026-07-21 |
+| [X] | 06-016 | | [Medidas](./06_PowerBI/06-016_Medidas.md)) | 2026-07-21 |
 
 ### CREACIÓN DE GRUPOS DE DATOS
 
 | Status | Guide | Type | Title | Date |
 | ------ | ----- | ---- | ----- | ---- |
-| [X] | 06-017 | | Marcadores | 2026-07-21 |
-| [X] | 06-018 | | Grupos de Marcadores | 2026-07-21 |
-| [X] | 06-019 | | Drill Down | 2026-07-21 |
+| [X] | 06-017 | | [Marcadores](./06_PowerBI/06-017_Marcadores.md) | 2026-07-21 |
+| [X] | 06-018 | | [Grupos de Marcadores](./06_PowerBI/06-018_Grupos_de_Marcadores_Grupos_de_Datos.md) | 2026-07-21 |
+| [X] | 06-019 | | [Drill Down](./06_PowerBI/06-019_DrillDown.md) | 2026-07-21 |
 
 ### MÁS ELEMENTOS
 
 | Status | Guide | Type | Title | Date |
 | ------ | ----- | ---- | ----- | ---- |
-| [X] | 06-020 | | Importación de gráficos | 2026-07-23 |
+| [X] | 06-020 | | [Importación de gráficos](./06_PowerBI/06-020_Importar_Elementos_Visuales.md) | 2026-07-23 |
 
 ---
 
