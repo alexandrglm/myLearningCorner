@@ -41,19 +41,22 @@
 | [X] | 03-003 | Orientado a Consultas, NO Join, CQL Cassandra Query Language (traductor SQL cmds), AP Availability - Partition Tolerance, BASE, Row -> Column = (Key-Value-Timestamp) | [Apache Cassandra](./03_NoSQL/03-003_Apache_Cassandra.md) | 2026-06-30 |
 | [X] | 03-004 | Collections/Documents, BSONs, Key-Value, Orientado a Consultas, REGEX, Escalabilidad, Balanceado, MapReduce, JS Syntax, GridFS, API 27017 | [MongoDB](./03_NoSQL/03-004_MongoDB.md) | 2026-07-01 |
 | [X] | 03-005 | Grafos, Nodos Interconectados, Modela datos enlazados por semántica, ACID, API Rest (deprecada >v.40), SDK Java, CYPHER | [Neo4J](./03_NoSQL/03-005_Neo4J.md) | 2026-07-01 |
-| [X] | 03-006 | Key-Value, Tipos: `String` `Hash` `List` `Set`, EXPIRE, Escalable 1 `MASTER-REDIS` -> `SLAVE-REDIS`, Escalable 2 `CLUSTERS`, Filtro BLOOM | [REDIS](./03_NoSQL/03-006_REDIS.md) | 2026-07-01 |
-| [X] | 03-007 | Documents - Multimodal, CAP no Consistencia, Por commits, JavaScript, REST, Map, Reduce | [Couch DB](./03_NoSQL/03-007_CouchDB.md) | 2026-07-02 |
+| [X] | 03-006 | Key-Value, Tipos: `String` `Hash` `List` `Set`, EXPIRE, Escalable 1 `MASTER-REDIS` -> `SLAVE-REDIS`, Escalable 2 `CLUSTERS` | [REDIS](./03_NoSQL/03-006_REDIS.md) | 2026-07-01 |
 
-- Implementaciones - Ejemplo, pendientes de proyectar:
+
 
 | Status | Guide | Type | Title | Date |
 | ------ | ----- | ---- | ----- | ---- |
-| pending | 03-002b | Lab Example | Implementación HBase | |
-| pending | 03-003b | Lab Example | Implementación Cassandra | |
-| pending | 03-004b | Lab Example | Implementación MongoDB (via Atlas) | |
-| pending | 03-005b | Lab Example | Implementación Neo4J | |
-| pending | 03-006b | Lab Example | Implementación REDIS | |
-| pending | 03-007b | Lab Example | Implementación Couch DB | |
+| [X] | 03-007 | Probabilístico, Estructura de Datos Hash, Pertenece o No Pertenece (Falso Positivo), Alta Eficiencia en Espacio/Tiempo, Optimización de Busquedas BBDD NoSQL | [Filtro Bloom](./03_NoSQL/03-007_Filtro_BLOOM.md) | 2026-07-02 |
+| [X] | 03-008 | Relacional vs NoRelacional, Escalabilidad Horizontal/Vertical, ACID vs BASE, Esquema Rígido vs Flexible, Caso de Uso / Rendimiento | [NoSQL vs SQL](./03_NoSQL/03-008_SQL_vs_NoSQL.md) | 2026-07-02 |
+
+
+#### CouchDB 
+
+| Status | Guide | Type | Title | Date |
+| ------ | ----- | ---- | ----- | ---- |
+| [X] | 03-009 | CAP AP no Consistencia, Documents, REST API, BSON-like/JSON, Multi-Master Replication, MapReduce (JS), Vistas, CouchApp (MVC) Documents - Multimodal  [Couch DB](./03_NoSQL/03-009_CouchDB.md) | 2026-07-02 |
+
 
 ---
 

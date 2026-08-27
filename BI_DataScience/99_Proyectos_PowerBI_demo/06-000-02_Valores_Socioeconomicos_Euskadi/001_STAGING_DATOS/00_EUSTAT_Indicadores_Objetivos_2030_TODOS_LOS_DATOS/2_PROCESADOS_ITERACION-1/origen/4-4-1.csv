@@ -1,0 +1,2017 @@
+Year,Habilidad informática,Edad,Sexo,Territorio histórico,Units,Value
+2022,,,,,%,68.8
+2024,,,,,%,69.8
+2019,,,,,%,67.0
+2023,,,,,%,71.5
+2025,,,,,%,71.8
+2020,,,,,%,69.8
+2021,,,,,%,75.0
+2020,,,,Araba/Álava,%,70.1
+2019,,,,Araba/Álava,%,68.5
+2024,,,,Araba/Álava,%,69.6
+2022,,,,Araba/Álava,%,68.3
+2023,,,,Araba/Álava,%,71.3
+2021,,,,Araba/Álava,%,75.4
+2025,,,,Araba/Álava,%,70.9
+2019,,,,Bizkaia,%,67.7
+2023,,,,Bizkaia,%,71.3
+2022,,,,Bizkaia,%,68.5
+2021,,,,Bizkaia,%,74.6
+2025,,,,Bizkaia,%,73.0
+2024,,,,Bizkaia,%,70.8
+2020,,,,Bizkaia,%,69.5
+2020,,,,Gipuzkoa,%,70.2
+2022,,,,Gipuzkoa,%,69.4
+2023,,,,Gipuzkoa,%,72.0
+2024,,,,Gipuzkoa,%,68.4
+2025,,,,Gipuzkoa,%,70.1
+2019,,,,Gipuzkoa,%,65.2
+2021,,,,Gipuzkoa,%,75.4
+2023,,,Mujer,,%,70.5
+2020,,,Mujer,,%,68.3
+2022,,,Mujer,,%,68.2
+2021,,,Mujer,,%,73.8
+2025,,,Mujer,,%,70.6
+2019,,,Mujer,,%,64.5
+2024,,,Mujer,,%,68.4
+2022,,,Mujer,Araba/Álava,%,67.8
+2025,,,Mujer,Araba/Álava,%,69.6
+2020,,,Mujer,Araba/Álava,%,70.8
+2019,,,Mujer,Araba/Álava,%,66.1
+2024,,,Mujer,Araba/Álava,%,67.0
+2021,,,Mujer,Araba/Álava,%,74.4
+2023,,,Mujer,Araba/Álava,%,72.8
+2024,,,Mujer,Bizkaia,%,69.1
+2020,,,Mujer,Bizkaia,%,67.7
+2022,,,Mujer,Bizkaia,%,67.3
+2025,,,Mujer,Bizkaia,%,71.9
+2019,,,Mujer,Bizkaia,%,64.6
+2023,,,Mujer,Bizkaia,%,69.6
+2021,,,Mujer,Bizkaia,%,72.8
+2021,,,Mujer,Gipuzkoa,%,75.0
+2020,,,Mujer,Gipuzkoa,%,68.1
+2019,,,Mujer,Gipuzkoa,%,63.6
+2025,,,Mujer,Gipuzkoa,%,68.9
+2024,,,Mujer,Gipuzkoa,%,67.8
+2022,,,Mujer,Gipuzkoa,%,70.0
+2023,,,Mujer,Gipuzkoa,%,70.9
+2019,,,Hombre,,%,69.7
+2024,,,Hombre,,%,71.4
+2025,,,Hombre,,%,72.9
+2023,,,Hombre,,%,72.5
+2020,,,Hombre,,%,71.4
+2021,,,Hombre,,%,76.2
+2022,,,Hombre,,%,69.4
+2020,,,Hombre,Araba/Álava,%,69.5
+2024,,,Hombre,Araba/Álava,%,72.3
+2021,,,Hombre,Araba/Álava,%,76.4
+2019,,,Hombre,Araba/Álava,%,71.0
+2023,,,Hombre,Araba/Álava,%,69.8
+2025,,,Hombre,Araba/Álava,%,72.3
+2022,,,Hombre,Araba/Álava,%,68.9
+2025,,,Hombre,Bizkaia,%,74.2
+2019,,,Hombre,Bizkaia,%,71.0
+2022,,,Hombre,Bizkaia,%,69.9
+2021,,,Hombre,Bizkaia,%,76.5
+2020,,,Hombre,Bizkaia,%,71.4
+2023,,,Hombre,Bizkaia,%,73.0
+2024,,,Hombre,Bizkaia,%,72.6
+2021,,,Hombre,Gipuzkoa,%,75.8
+2023,,,Hombre,Gipuzkoa,%,73.0
+2025,,,Hombre,Gipuzkoa,%,71.3
+2020,,,Hombre,Gipuzkoa,%,72.3
+2019,,,Hombre,Gipuzkoa,%,66.9
+2024,,,Hombre,Gipuzkoa,%,69.0
+2022,,,Hombre,Gipuzkoa,%,68.8
+2022,,16-24 años,,,%,95.5
+2023,,16-24 años,,,%,95.9
+2024,,16-24 años,,,%,93.9
+2025,,16-24 años,,,%,92.2
+2021,,16-24 años,,,%,96.2
+2020,,16-24 años,,,%,95.9
+2019,,16-24 años,,,%,95.7
+2022,,16-24 años,,Araba/Álava,%,94.6
+2021,,16-24 años,,Araba/Álava,%,96.8
+2024,,16-24 años,,Araba/Álava,%,95.8
+2019,,16-24 años,,Araba/Álava,%,95.6
+2020,,16-24 años,,Araba/Álava,%,98.4
+2025,,16-24 años,,Araba/Álava,%,91.6
+2023,,16-24 años,,Araba/Álava,%,99.5
+2019,,16-24 años,,Bizkaia,%,97.1
+2023,,16-24 años,,Bizkaia,%,93.8
+2020,,16-24 años,,Bizkaia,%,94.2
+2025,,16-24 años,,Bizkaia,%,92.0
+2022,,16-24 años,,Bizkaia,%,95.4
+2024,,16-24 años,,Bizkaia,%,92.0
+2021,,16-24 años,,Bizkaia,%,94.4
+2021,,16-24 años,,Gipuzkoa,%,98.4
+2023,,16-24 años,,Gipuzkoa,%,97.3
+2022,,16-24 años,,Gipuzkoa,%,96.1
+2020,,16-24 años,,Gipuzkoa,%,97.2
+2019,,16-24 años,,Gipuzkoa,%,94.0
+2025,,16-24 años,,Gipuzkoa,%,92.7
+2024,,16-24 años,,Gipuzkoa,%,95.8
+2023,,16-24 años,Mujer,,%,98.8
+2021,,16-24 años,Mujer,,%,96.7
+2025,,16-24 años,Mujer,,%,92.3
+2024,,16-24 años,Mujer,,%,95.5
+2022,,16-24 años,Mujer,,%,97.5
+2019,,16-24 años,Mujer,,%,97.9
+2020,,16-24 años,Mujer,,%,96.5
+2025,,16-24 años,Mujer,Araba/Álava,%,89.6
+2022,,16-24 años,Mujer,Araba/Álava,%,96.5
+2024,,16-24 años,Mujer,Araba/Álava,%,98.9
+2023,,16-24 años,Mujer,Araba/Álava,%,98.8
+2019,,16-24 años,Mujer,Araba/Álava,%,98.8
+2020,,16-24 años,Mujer,Araba/Álava,%,96.6
+2021,,16-24 años,Mujer,Araba/Álava,%,96.3
+2020,,16-24 años,Mujer,Bizkaia,%,96.6
+2024,,16-24 años,Mujer,Bizkaia,%,92.8
+2023,,16-24 años,Mujer,Bizkaia,%,97.9
+2025,,16-24 años,Mujer,Bizkaia,%,90.6
+2022,,16-24 años,Mujer,Bizkaia,%,99.0
+2019,,16-24 años,Mujer,Bizkaia,%,97.0
+2021,,16-24 años,Mujer,Bizkaia,%,95.5
+2021,,16-24 años,Mujer,Gipuzkoa,%,98.7
+2025,,16-24 años,Mujer,Gipuzkoa,%,96.0
+2023,,16-24 años,Mujer,Gipuzkoa,%,100.0
+2019,,16-24 años,Mujer,Gipuzkoa,%,98.7
+2024,,16-24 años,Mujer,Gipuzkoa,%,97.8
+2020,,16-24 años,Mujer,Gipuzkoa,%,96.3
+2022,,16-24 años,Mujer,Gipuzkoa,%,95.8
+2022,,16-24 años,Hombre,,%,93.5
+2023,,16-24 años,Hombre,,%,93.1
+2024,,16-24 años,Hombre,,%,92.5
+2025,,16-24 años,Hombre,,%,92.1
+2020,,16-24 años,Hombre,,%,95.3
+2021,,16-24 años,Hombre,,%,95.7
+2019,,16-24 años,Hombre,,%,93.6
+2025,,16-24 años,Hombre,Araba/Álava,%,93.9
+2023,,16-24 años,Hombre,Araba/Álava,%,100.0
+2021,,16-24 años,Hombre,Araba/Álava,%,97.2
+2019,,16-24 años,Hombre,Araba/Álava,%,91.9
+2022,,16-24 años,Hombre,Araba/Álava,%,92.7
+2024,,16-24 años,Hombre,Araba/Álava,%,92.8
+2020,,16-24 años,Hombre,Araba/Álava,%,100.0
+2021,,16-24 años,Hombre,Bizkaia,%,93.3
+2022,,16-24 años,Hombre,Bizkaia,%,91.8
+2019,,16-24 años,Hombre,Bizkaia,%,97.2
+2020,,16-24 años,Hombre,Bizkaia,%,92.0
+2025,,16-24 años,Hombre,Bizkaia,%,93.3
+2024,,16-24 años,Hombre,Bizkaia,%,91.3
+2023,,16-24 años,Hombre,Bizkaia,%,89.7
+2021,,16-24 años,Hombre,Gipuzkoa,%,98.3
+2020,,16-24 años,Hombre,Gipuzkoa,%,98.1
+2022,,16-24 años,Hombre,Gipuzkoa,%,96.4
+2023,,16-24 años,Hombre,Gipuzkoa,%,94.6
+2024,,16-24 años,Hombre,Gipuzkoa,%,94.0
+2019,,16-24 años,Hombre,Gipuzkoa,%,89.4
+2025,,16-24 años,Hombre,Gipuzkoa,%,89.6
+2024,,25-74 años,,,%,66.5
+2022,,25-74 años,,,%,65.3
+2019,,25-74 años,,,%,63.8
+2020,,25-74 años,,,%,66.6
+2025,,25-74 años,,,%,68.6
+2023,,25-74 años,,,%,68.3
+2021,,25-74 años,,,%,72.2
+2023,,25-74 años,,Araba/Álava,%,67.4
+2024,,25-74 años,,Araba/Álava,%,66.1
+2021,,25-74 años,,Araba/Álava,%,72.5
+2019,,25-74 años,,Araba/Álava,%,65.5
+2020,,25-74 años,,Araba/Álava,%,66.6
+2025,,25-74 años,,Araba/Álava,%,68.0
+2022,,25-74 años,,Araba/Álava,%,65.2
+2025,,25-74 años,,Bizkaia,%,70.2
+2021,,25-74 años,,Bizkaia,%,72.1
+2019,,25-74 años,,Bizkaia,%,64.7
+2023,,25-74 años,,Bizkaia,%,68.4
+2024,,25-74 años,,Bizkaia,%,68.0
+2022,,25-74 años,,Bizkaia,%,65.0
+2020,,25-74 años,,Bizkaia,%,66.6
+2024,,25-74 años,,Gipuzkoa,%,64.2
+2019,,25-74 años,,Gipuzkoa,%,61.7
+2021,,25-74 años,,Gipuzkoa,%,72.1
+2023,,25-74 años,,Gipuzkoa,%,68.4
+2022,,25-74 años,,Gipuzkoa,%,65.7
+2025,,25-74 años,,Gipuzkoa,%,66.5
+2020,,25-74 años,,Gipuzkoa,%,66.6
+2025,,25-74 años,Mujer,,%,67.4
+2019,,25-74 años,Mujer,,%,60.8
+2024,,25-74 años,Mujer,,%,64.9
+2020,,25-74 años,Mujer,,%,65.0
+2023,,25-74 años,Mujer,,%,67.0
+2021,,25-74 años,Mujer,,%,70.9
+2022,,25-74 años,Mujer,,%,64.5
+2023,,25-74 años,Mujer,Araba/Álava,%,69.8
+2021,,25-74 años,Mujer,Araba/Álava,%,71.8
+2025,,25-74 años,Mujer,Araba/Álava,%,66.6
+2020,,25-74 años,Mujer,Araba/Álava,%,67.8
+2019,,25-74 años,Mujer,Araba/Álava,%,62.2
+2022,,25-74 años,Mujer,Araba/Álava,%,64.5
+2024,,25-74 años,Mujer,Araba/Álava,%,62.9
+2019,,25-74 años,Mujer,Bizkaia,%,61.3
+2023,,25-74 años,Mujer,Bizkaia,%,66.2
+2024,,25-74 años,Mujer,Bizkaia,%,66.3
+2020,,25-74 años,Mujer,Bizkaia,%,64.4
+2025,,25-74 años,Mujer,Bizkaia,%,69.3
+2021,,25-74 años,Mujer,Bizkaia,%,70.0
+2022,,25-74 años,Mujer,Bizkaia,%,63.3
+2025,,25-74 años,Mujer,Gipuzkoa,%,64.8
+2023,,25-74 años,Mujer,Gipuzkoa,%,67.0
+2022,,25-74 años,Mujer,Gipuzkoa,%,66.5
+2020,,25-74 años,Mujer,Gipuzkoa,%,64.6
+2021,,25-74 años,Mujer,Gipuzkoa,%,72.0
+2019,,25-74 años,Mujer,Gipuzkoa,%,59.3
+2024,,25-74 años,Mujer,Gipuzkoa,%,63.6
+2025,,25-74 años,Hombre,,%,69.9
+2021,,25-74 años,Hombre,,%,73.4
+2020,,25-74 años,Hombre,,%,68.3
+2023,,25-74 años,Hombre,,%,69.6
+2024,,25-74 años,Hombre,,%,68.1
+2019,,25-74 años,Hombre,,%,66.9
+2022,,25-74 años,Hombre,,%,66.1
+2025,,25-74 años,Hombre,Araba/Álava,%,69.4
+2023,,25-74 años,Hombre,Araba/Álava,%,65.0
+2020,,25-74 años,Hombre,Araba/Álava,%,65.3
+2024,,25-74 años,Hombre,Araba/Álava,%,69.4
+2019,,25-74 años,Hombre,Araba/Álava,%,68.8
+2022,,25-74 años,Hombre,Araba/Álava,%,65.9
+2021,,25-74 años,Hombre,Araba/Álava,%,73.2
+2023,,25-74 años,Hombre,Bizkaia,%,70.8
+2025,,25-74 años,Hombre,Bizkaia,%,71.1
+2020,,25-74 años,Hombre,Bizkaia,%,68.8
+2024,,25-74 años,Hombre,Bizkaia,%,69.8
+2021,,25-74 años,Hombre,Bizkaia,%,74.3
+2022,,25-74 años,Hombre,Bizkaia,%,66.9
+2019,,25-74 años,Hombre,Bizkaia,%,68.2
+2019,,25-74 años,Hombre,Gipuzkoa,%,64.0
+2025,,25-74 años,Hombre,Gipuzkoa,%,68.2
+2020,,25-74 años,Hombre,Gipuzkoa,%,68.8
+2022,,25-74 años,Hombre,Gipuzkoa,%,64.8
+2024,,25-74 años,Hombre,Gipuzkoa,%,64.9
+2023,,25-74 años,Hombre,Gipuzkoa,%,69.9
+2021,,25-74 años,Hombre,Gipuzkoa,%,72.1
+2025,Instalar software o aplicaciones(apps),,,,%,45.8
+2021,Instalar software o aplicaciones(apps),,,,%,64.6
+2022,Instalar software o aplicaciones(apps),,,,%,54.0
+2019,Instalar software o aplicaciones(apps),,,,%,53.9
+2024,Instalar software o aplicaciones(apps),,,,%,47.8
+2023,Instalar software o aplicaciones(apps),,,,%,51.6
+2020,Instalar software o aplicaciones(apps),,,,%,58.8
+2021,Instalar software o aplicaciones(apps),,,Araba/Álava,%,65.8
+2020,Instalar software o aplicaciones(apps),,,Araba/Álava,%,57.3
+2019,Instalar software o aplicaciones(apps),,,Araba/Álava,%,54.5
+2024,Instalar software o aplicaciones(apps),,,Araba/Álava,%,48.8
+2025,Instalar software o aplicaciones(apps),,,Araba/Álava,%,46.8
+2022,Instalar software o aplicaciones(apps),,,Araba/Álava,%,53.0
+2023,Instalar software o aplicaciones(apps),,,Araba/Álava,%,52.5
+2021,Instalar software o aplicaciones(apps),,,Bizkaia,%,64.3
+2024,Instalar software o aplicaciones(apps),,,Bizkaia,%,48.4
+2023,Instalar software o aplicaciones(apps),,,Bizkaia,%,51.9
+2019,Instalar software o aplicaciones(apps),,,Bizkaia,%,55.2
+2020,Instalar software o aplicaciones(apps),,,Bizkaia,%,58.3
+2022,Instalar software o aplicaciones(apps),,,Bizkaia,%,54.5
+2025,Instalar software o aplicaciones(apps),,,Bizkaia,%,46.5
+2020,Instalar software o aplicaciones(apps),,,Gipuzkoa,%,60.2
+2022,Instalar software o aplicaciones(apps),,,Gipuzkoa,%,53.6
+2023,Instalar software o aplicaciones(apps),,,Gipuzkoa,%,50.7
+2024,Instalar software o aplicaciones(apps),,,Gipuzkoa,%,46.4
+2021,Instalar software o aplicaciones(apps),,,Gipuzkoa,%,64.6
+2025,Instalar software o aplicaciones(apps),,,Gipuzkoa,%,44.3
+2019,Instalar software o aplicaciones(apps),,,Gipuzkoa,%,51.6
+2019,Instalar software o aplicaciones(apps),,Mujer,,%,50.6
+2023,Instalar software o aplicaciones(apps),,Mujer,,%,49.0
+2022,Instalar software o aplicaciones(apps),,Mujer,,%,51.9
+2025,Instalar software o aplicaciones(apps),,Mujer,,%,42.5
+2024,Instalar software o aplicaciones(apps),,Mujer,,%,44.6
+2021,Instalar software o aplicaciones(apps),,Mujer,,%,61.2
+2020,Instalar software o aplicaciones(apps),,Mujer,,%,56.7
+2025,Instalar software o aplicaciones(apps),,Mujer,Araba/Álava,%,43.5
+2024,Instalar software o aplicaciones(apps),,Mujer,Araba/Álava,%,43.8
+2020,Instalar software o aplicaciones(apps),,Mujer,Araba/Álava,%,55.8
+2023,Instalar software o aplicaciones(apps),,Mujer,Araba/Álava,%,52.5
+2022,Instalar software o aplicaciones(apps),,Mujer,Araba/Álava,%,50.2
+2019,Instalar software o aplicaciones(apps),,Mujer,Araba/Álava,%,49.8
+2021,Instalar software o aplicaciones(apps),,Mujer,Araba/Álava,%,62.0
+2025,Instalar software o aplicaciones(apps),,Mujer,Bizkaia,%,42.9
+2022,Instalar software o aplicaciones(apps),,Mujer,Bizkaia,%,52.2
+2024,Instalar software o aplicaciones(apps),,Mujer,Bizkaia,%,45.8
+2020,Instalar software o aplicaciones(apps),,Mujer,Bizkaia,%,56.8
+2019,Instalar software o aplicaciones(apps),,Mujer,Bizkaia,%,51.5
+2023,Instalar software o aplicaciones(apps),,Mujer,Bizkaia,%,49.4
+2021,Instalar software o aplicaciones(apps),,Mujer,Bizkaia,%,60.6
+2024,Instalar software o aplicaciones(apps),,Mujer,Gipuzkoa,%,43.1
+2021,Instalar software o aplicaciones(apps),,Mujer,Gipuzkoa,%,62.0
+2022,Instalar software o aplicaciones(apps),,Mujer,Gipuzkoa,%,52.2
+2025,Instalar software o aplicaciones(apps),,Mujer,Gipuzkoa,%,41.5
+2020,Instalar software o aplicaciones(apps),,Mujer,Gipuzkoa,%,56.9
+2019,Instalar software o aplicaciones(apps),,Mujer,Gipuzkoa,%,49.4
+2023,Instalar software o aplicaciones(apps),,Mujer,Gipuzkoa,%,46.9
+2024,Instalar software o aplicaciones(apps),,Hombre,,%,51.2
+2021,Instalar software o aplicaciones(apps),,Hombre,,%,68.1
+2023,Instalar software o aplicaciones(apps),,Hombre,,%,54.3
+2025,Instalar software o aplicaciones(apps),,Hombre,,%,49.2
+2019,Instalar software o aplicaciones(apps),,Hombre,,%,57.3
+2022,Instalar software o aplicaciones(apps),,Hombre,,%,56.2
+2020,Instalar software o aplicaciones(apps),,Hombre,,%,60.9
+2023,Instalar software o aplicaciones(apps),,Hombre,Araba/Álava,%,52.5
+2020,Instalar software o aplicaciones(apps),,Hombre,Araba/Álava,%,58.7
+2021,Instalar software o aplicaciones(apps),,Hombre,Araba/Álava,%,69.7
+2025,Instalar software o aplicaciones(apps),,Hombre,Araba/Álava,%,50.2
+2019,Instalar software o aplicaciones(apps),,Hombre,Araba/Álava,%,59.3
+2024,Instalar software o aplicaciones(apps),,Hombre,Araba/Álava,%,53.9
+2022,Instalar software o aplicaciones(apps),,Hombre,Araba/Álava,%,56.0
+2021,Instalar software o aplicaciones(apps),,Hombre,Bizkaia,%,68.2
+2023,Instalar software o aplicaciones(apps),,Hombre,Bizkaia,%,54.6
+2024,Instalar software o aplicaciones(apps),,Hombre,Bizkaia,%,51.2
+2020,Instalar software o aplicaciones(apps),,Hombre,Bizkaia,%,59.8
+2019,Instalar software o aplicaciones(apps),,Hombre,Bizkaia,%,59.0
+2022,Instalar software o aplicaciones(apps),,Hombre,Bizkaia,%,57.0
+2025,Instalar software o aplicaciones(apps),,Hombre,Bizkaia,%,50.1
+2021,Instalar software o aplicaciones(apps),,Hombre,Gipuzkoa,%,67.1
+2024,Instalar software o aplicaciones(apps),,Hombre,Gipuzkoa,%,49.9
+2023,Instalar software o aplicaciones(apps),,Hombre,Gipuzkoa,%,54.5
+2025,Instalar software o aplicaciones(apps),,Hombre,Gipuzkoa,%,47.1
+2022,Instalar software o aplicaciones(apps),,Hombre,Gipuzkoa,%,55.1
+2020,Instalar software o aplicaciones(apps),,Hombre,Gipuzkoa,%,63.7
+2019,Instalar software o aplicaciones(apps),,Hombre,Gipuzkoa,%,53.9
+2025,Instalar software o aplicaciones(apps),16-24 años,,,%,63.9
+2019,Instalar software o aplicaciones(apps),16-24 años,,,%,83.4
+2020,Instalar software o aplicaciones(apps),16-24 años,,,%,87.5
+2024,Instalar software o aplicaciones(apps),16-24 años,,,%,69.3
+2022,Instalar software o aplicaciones(apps),16-24 años,,,%,81.1
+2021,Instalar software o aplicaciones(apps),16-24 años,,,%,88.7
+2023,Instalar software o aplicaciones(apps),16-24 años,,,%,76.6
+2019,Instalar software o aplicaciones(apps),16-24 años,,Araba/Álava,%,82.8
+2021,Instalar software o aplicaciones(apps),16-24 años,,Araba/Álava,%,89.7
+2023,Instalar software o aplicaciones(apps),16-24 años,,Araba/Álava,%,72.3
+2025,Instalar software o aplicaciones(apps),16-24 años,,Araba/Álava,%,62.0
+2020,Instalar software o aplicaciones(apps),16-24 años,,Araba/Álava,%,92.4
+2022,Instalar software o aplicaciones(apps),16-24 años,,Araba/Álava,%,79.5
+2024,Instalar software o aplicaciones(apps),16-24 años,,Araba/Álava,%,70.0
+2019,Instalar software o aplicaciones(apps),16-24 años,,Bizkaia,%,84.9
+2022,Instalar software o aplicaciones(apps),16-24 años,,Bizkaia,%,82.2
+2025,Instalar software o aplicaciones(apps),16-24 años,,Bizkaia,%,64.2
+2023,Instalar software o aplicaciones(apps),16-24 años,,Bizkaia,%,76.0
+2021,Instalar software o aplicaciones(apps),16-24 años,,Bizkaia,%,87.1
+2020,Instalar software o aplicaciones(apps),16-24 años,,Bizkaia,%,87.1
+2024,Instalar software o aplicaciones(apps),16-24 años,,Bizkaia,%,64.8
+2024,Instalar software o aplicaciones(apps),16-24 años,,Gipuzkoa,%,75.3
+2021,Instalar software o aplicaciones(apps),16-24 años,,Gipuzkoa,%,90.5
+2019,Instalar software o aplicaciones(apps),16-24 años,,Gipuzkoa,%,81.5
+2022,Instalar software o aplicaciones(apps),16-24 años,,Gipuzkoa,%,80.0
+2020,Instalar software o aplicaciones(apps),16-24 años,,Gipuzkoa,%,86.0
+2023,Instalar software o aplicaciones(apps),16-24 años,,Gipuzkoa,%,79.3
+2025,Instalar software o aplicaciones(apps),16-24 años,,Gipuzkoa,%,64.2
+2023,Instalar software o aplicaciones(apps),16-24 años,Mujer,,%,79.7
+2025,Instalar software o aplicaciones(apps),16-24 años,Mujer,,%,59.4
+2024,Instalar software o aplicaciones(apps),16-24 años,Mujer,,%,65.5
+2021,Instalar software o aplicaciones(apps),16-24 años,Mujer,,%,86.3
+2020,Instalar software o aplicaciones(apps),16-24 años,Mujer,,%,86.8
+2019,Instalar software o aplicaciones(apps),16-24 años,Mujer,,%,85.7
+2022,Instalar software o aplicaciones(apps),16-24 años,Mujer,,%,78.5
+2023,Instalar software o aplicaciones(apps),16-24 años,Mujer,Araba/Álava,%,78.4
+2021,Instalar software o aplicaciones(apps),16-24 años,Mujer,Araba/Álava,%,84.2
+2022,Instalar software o aplicaciones(apps),16-24 años,Mujer,Araba/Álava,%,82.4
+2019,Instalar software o aplicaciones(apps),16-24 años,Mujer,Araba/Álava,%,83.5
+2020,Instalar software o aplicaciones(apps),16-24 años,Mujer,Araba/Álava,%,91.9
+2024,Instalar software o aplicaciones(apps),16-24 años,Mujer,Araba/Álava,%,66.6
+2025,Instalar software o aplicaciones(apps),16-24 años,Mujer,Araba/Álava,%,59.8
+2020,Instalar software o aplicaciones(apps),16-24 años,Mujer,Bizkaia,%,88.5
+2023,Instalar software o aplicaciones(apps),16-24 años,Mujer,Bizkaia,%,79.7
+2019,Instalar software o aplicaciones(apps),16-24 años,Mujer,Bizkaia,%,86.8
+2024,Instalar software o aplicaciones(apps),16-24 años,Mujer,Bizkaia,%,62.3
+2021,Instalar software o aplicaciones(apps),16-24 años,Mujer,Bizkaia,%,86.7
+2025,Instalar software o aplicaciones(apps),16-24 años,Mujer,Bizkaia,%,55.7
+2022,Instalar software o aplicaciones(apps),16-24 años,Mujer,Bizkaia,%,80.3
+2023,Instalar software o aplicaciones(apps),16-24 años,Mujer,Gipuzkoa,%,80.1
+2025,Instalar software o aplicaciones(apps),16-24 años,Mujer,Gipuzkoa,%,64.8
+2019,Instalar software o aplicaciones(apps),16-24 años,Mujer,Gipuzkoa,%,85.2
+2022,Instalar software o aplicaciones(apps),16-24 años,Mujer,Gipuzkoa,%,74.2
+2021,Instalar software o aplicaciones(apps),16-24 años,Mujer,Gipuzkoa,%,86.6
+2024,Instalar software o aplicaciones(apps),16-24 años,Mujer,Gipuzkoa,%,69.7
+2020,Instalar software o aplicaciones(apps),16-24 años,Mujer,Gipuzkoa,%,82.0
+2019,Instalar software o aplicaciones(apps),16-24 años,Hombre,,%,81.0
+2025,Instalar software o aplicaciones(apps),16-24 años,Hombre,,%,68.2
+2023,Instalar software o aplicaciones(apps),16-24 años,Hombre,,%,73.7
+2020,Instalar software o aplicaciones(apps),16-24 años,Hombre,,%,88.2
+2024,Instalar software o aplicaciones(apps),16-24 años,Hombre,,%,72.7
+2021,Instalar software o aplicaciones(apps),16-24 años,Hombre,,%,90.8
+2022,Instalar software o aplicaciones(apps),16-24 años,Hombre,,%,83.5
+2021,Instalar software o aplicaciones(apps),16-24 años,Hombre,Araba/Álava,%,94.3
+2022,Instalar software o aplicaciones(apps),16-24 años,Hombre,Araba/Álava,%,76.7
+2024,Instalar software o aplicaciones(apps),16-24 años,Hombre,Araba/Álava,%,73.2
+2019,Instalar software o aplicaciones(apps),16-24 años,Hombre,Araba/Álava,%,82.0
+2020,Instalar software o aplicaciones(apps),16-24 años,Hombre,Araba/Álava,%,92.8
+2023,Instalar software o aplicaciones(apps),16-24 años,Hombre,Araba/Álava,%,67.6
+2025,Instalar software o aplicaciones(apps),16-24 años,Hombre,Araba/Álava,%,64.4
+2024,Instalar software o aplicaciones(apps),16-24 años,Hombre,Bizkaia,%,67.1
+2020,Instalar software o aplicaciones(apps),16-24 años,Hombre,Bizkaia,%,85.7
+2022,Instalar software o aplicaciones(apps),16-24 años,Hombre,Bizkaia,%,84.0
+2025,Instalar software o aplicaciones(apps),16-24 años,Hombre,Bizkaia,%,72.0
+2021,Instalar software o aplicaciones(apps),16-24 años,Hombre,Bizkaia,%,87.5
+2023,Instalar software o aplicaciones(apps),16-24 años,Hombre,Bizkaia,%,72.4
+2019,Instalar software o aplicaciones(apps),16-24 años,Hombre,Bizkaia,%,82.9
+2022,Instalar software o aplicaciones(apps),16-24 años,Hombre,Gipuzkoa,%,85.5
+2023,Instalar software o aplicaciones(apps),16-24 años,Hombre,Gipuzkoa,%,78.6
+2024,Instalar software o aplicaciones(apps),16-24 años,Hombre,Gipuzkoa,%,80.3
+2020,Instalar software o aplicaciones(apps),16-24 años,Hombre,Gipuzkoa,%,89.7
+2025,Instalar software o aplicaciones(apps),16-24 años,Hombre,Gipuzkoa,%,63.5
+2019,Instalar software o aplicaciones(apps),16-24 años,Hombre,Gipuzkoa,%,78.0
+2021,Instalar software o aplicaciones(apps),16-24 años,Hombre,Gipuzkoa,%,93.7
+2024,Instalar software o aplicaciones(apps),25-74 años,,,%,44.8
+2023,Instalar software o aplicaciones(apps),25-74 años,,,%,48.3
+2025,Instalar software o aplicaciones(apps),25-74 años,,,%,43.1
+2021,Instalar software o aplicaciones(apps),25-74 años,,,%,61.4
+2020,Instalar software o aplicaciones(apps),25-74 años,,,%,55.2
+2022,Instalar software o aplicaciones(apps),25-74 años,,,%,50.4
+2019,Instalar software o aplicaciones(apps),25-74 años,,,%,50.6
+2019,Instalar software o aplicaciones(apps),25-74 años,,Araba/Álava,%,51.3
+2025,Instalar software o aplicaciones(apps),25-74 años,,Araba/Álava,%,44.6
+2024,Instalar software o aplicaciones(apps),25-74 años,,Araba/Álava,%,45.9
+2023,Instalar software o aplicaciones(apps),25-74 años,,Araba/Álava,%,49.8
+2020,Instalar software o aplicaciones(apps),25-74 años,,Araba/Álava,%,52.9
+2021,Instalar software o aplicaciones(apps),25-74 años,,Araba/Álava,%,62.6
+2022,Instalar software o aplicaciones(apps),25-74 años,,Araba/Álava,%,49.9
+2023,Instalar software o aplicaciones(apps),25-74 años,,Bizkaia,%,48.9
+2022,Instalar software o aplicaciones(apps),25-74 años,,Bizkaia,%,50.9
+2020,Instalar software o aplicaciones(apps),25-74 años,,Bizkaia,%,54.9
+2019,Instalar software o aplicaciones(apps),25-74 años,,Bizkaia,%,52.1
+2025,Instalar software o aplicaciones(apps),25-74 años,,Bizkaia,%,43.8
+2024,Instalar software o aplicaciones(apps),25-74 años,,Bizkaia,%,46.2
+2021,Instalar software o aplicaciones(apps),25-74 años,,Bizkaia,%,61.4
+2024,Instalar software o aplicaciones(apps),25-74 años,,Gipuzkoa,%,42.0
+2021,Instalar software o aplicaciones(apps),25-74 años,,Gipuzkoa,%,60.9
+2025,Instalar software o aplicaciones(apps),25-74 años,,Gipuzkoa,%,41.2
+2019,Instalar software o aplicaciones(apps),25-74 años,,Gipuzkoa,%,47.9
+2023,Instalar software o aplicaciones(apps),25-74 años,,Gipuzkoa,%,46.7
+2022,Instalar software o aplicaciones(apps),25-74 años,,Gipuzkoa,%,49.9
+2020,Instalar software o aplicaciones(apps),25-74 años,,Gipuzkoa,%,56.9
+2024,Instalar software o aplicaciones(apps),25-74 años,Mujer,,%,41.9
+2023,Instalar software o aplicaciones(apps),25-74 años,Mujer,,%,45.2
+2020,Instalar software o aplicaciones(apps),25-74 años,Mujer,,%,53.2
+2021,Instalar software o aplicaciones(apps),25-74 años,Mujer,,%,58.1
+2022,Instalar software o aplicaciones(apps),25-74 años,Mujer,,%,48.5
+2019,Instalar software o aplicaciones(apps),25-74 años,Mujer,,%,46.7
+2025,Instalar software o aplicaciones(apps),25-74 años,Mujer,,%,40.1
+2022,Instalar software o aplicaciones(apps),25-74 años,Mujer,Araba/Álava,%,46.4
+2025,Instalar software o aplicaciones(apps),25-74 años,Mujer,Araba/Álava,%,41.0
+2021,Instalar software o aplicaciones(apps),25-74 años,Mujer,Araba/Álava,%,59.3
+2020,Instalar software o aplicaciones(apps),25-74 años,Mujer,Araba/Álava,%,51.7
+2023,Instalar software o aplicaciones(apps),25-74 años,Mujer,Araba/Álava,%,49.4
+2024,Instalar software o aplicaciones(apps),25-74 años,Mujer,Araba/Álava,%,40.9
+2019,Instalar software o aplicaciones(apps),25-74 años,Mujer,Araba/Álava,%,45.8
+2020,Instalar software o aplicaciones(apps),25-74 años,Mujer,Bizkaia,%,53.2
+2025,Instalar software o aplicaciones(apps),25-74 años,Mujer,Bizkaia,%,41.0
+2021,Instalar software o aplicaciones(apps),25-74 años,Mujer,Bizkaia,%,57.3
+2023,Instalar software o aplicaciones(apps),25-74 años,Mujer,Bizkaia,%,45.7
+2019,Instalar software o aplicaciones(apps),25-74 años,Mujer,Bizkaia,%,47.9
+2024,Instalar software o aplicaciones(apps),25-74 años,Mujer,Bizkaia,%,43.8
+2022,Instalar software o aplicaciones(apps),25-74 años,Mujer,Bizkaia,%,48.7
+2022,Instalar software o aplicaciones(apps),25-74 años,Mujer,Gipuzkoa,%,49.2
+2021,Instalar software o aplicaciones(apps),25-74 años,Mujer,Gipuzkoa,%,58.9
+2020,Instalar software o aplicaciones(apps),25-74 años,Mujer,Gipuzkoa,%,53.7
+2019,Instalar software o aplicaciones(apps),25-74 años,Mujer,Gipuzkoa,%,45.1
+2025,Instalar software o aplicaciones(apps),25-74 años,Mujer,Gipuzkoa,%,38.0
+2024,Instalar software o aplicaciones(apps),25-74 años,Mujer,Gipuzkoa,%,39.3
+2023,Instalar software o aplicaciones(apps),25-74 años,Mujer,Gipuzkoa,%,42.4
+2023,Instalar software o aplicaciones(apps),25-74 años,Hombre,,%,51.5
+2022,Instalar software o aplicaciones(apps),25-74 años,Hombre,,%,52.5
+2021,Instalar software o aplicaciones(apps),25-74 años,Hombre,,%,64.8
+2020,Instalar software o aplicaciones(apps),25-74 años,Hombre,,%,57.4
+2024,Instalar software o aplicaciones(apps),25-74 años,Hombre,,%,47.9
+2019,Instalar software o aplicaciones(apps),25-74 años,Hombre,,%,54.7
+2025,Instalar software o aplicaciones(apps),25-74 años,Hombre,,%,46.2
+2025,Instalar software o aplicaciones(apps),25-74 años,Hombre,Araba/Álava,%,48.3
+2019,Instalar software o aplicaciones(apps),25-74 años,Hombre,Araba/Álava,%,56.9
+2023,Instalar software o aplicaciones(apps),25-74 años,Hombre,Araba/Álava,%,50.1
+2022,Instalar software o aplicaciones(apps),25-74 años,Hombre,Araba/Álava,%,53.4
+2024,Instalar software o aplicaciones(apps),25-74 años,Hombre,Araba/Álava,%,51.2
+2021,Instalar software o aplicaciones(apps),25-74 años,Hombre,Araba/Álava,%,65.9
+2020,Instalar software o aplicaciones(apps),25-74 años,Hombre,Araba/Álava,%,54.1
+2025,Instalar software o aplicaciones(apps),25-74 años,Hombre,Bizkaia,%,46.6
+2019,Instalar software o aplicaciones(apps),25-74 años,Hombre,Bizkaia,%,56.4
+2021,Instalar software o aplicaciones(apps),25-74 años,Hombre,Bizkaia,%,65.6
+2022,Instalar software o aplicaciones(apps),25-74 años,Hombre,Bizkaia,%,53.4
+2023,Instalar software o aplicaciones(apps),25-74 años,Hombre,Bizkaia,%,52.2
+2020,Instalar software o aplicaciones(apps),25-74 años,Hombre,Bizkaia,%,56.6
+2024,Instalar software o aplicaciones(apps),25-74 años,Hombre,Bizkaia,%,48.9
+2021,Instalar software o aplicaciones(apps),25-74 años,Hombre,Gipuzkoa,%,62.9
+2025,Instalar software o aplicaciones(apps),25-74 años,Hombre,Gipuzkoa,%,44.4
+2019,Instalar software o aplicaciones(apps),25-74 años,Hombre,Gipuzkoa,%,50.8
+2020,Instalar software o aplicaciones(apps),25-74 años,Hombre,Gipuzkoa,%,60.1
+2024,Instalar software o aplicaciones(apps),25-74 años,Hombre,Gipuzkoa,%,44.8
+2022,Instalar software o aplicaciones(apps),25-74 años,Hombre,Gipuzkoa,%,50.6
+2023,Instalar software o aplicaciones(apps),25-74 años,Hombre,Gipuzkoa,%,51.1
+2023,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,,,%,33.4
+2021,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,,,%,27.9
+2020,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,,,%,28.4
+2019,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,,,%,16.0
+2025,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,,,%,29.2
+2024,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,,,%,21.3
+2022,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,,,%,23.0
+2020,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,,Araba/Álava,%,26.8
+2019,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,,Araba/Álava,%,16.2
+2021,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,,Araba/Álava,%,27.0
+2023,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,,Araba/Álava,%,31.7
+2025,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,,Araba/Álava,%,28.9
+2024,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,,Araba/Álava,%,24.2
+2022,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,,Araba/Álava,%,23.6
+2022,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,,Bizkaia,%,22.5
+2024,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,,Bizkaia,%,21.5
+2025,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,,Bizkaia,%,30.0
+2019,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,,Bizkaia,%,16.7
+2023,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,,Bizkaia,%,34.4
+2020,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,,Bizkaia,%,27.9
+2021,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,,Bizkaia,%,28.0
+2021,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,,Gipuzkoa,%,28.1
+2022,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,,Gipuzkoa,%,23.7
+2020,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,,Gipuzkoa,%,30.1
+2025,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,,Gipuzkoa,%,28.1
+2019,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,,Gipuzkoa,%,14.7
+2024,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,,Gipuzkoa,%,19.4
+2023,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,,Gipuzkoa,%,32.7
+2021,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,Mujer,,%,23.5
+2024,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,Mujer,,%,19.4
+2023,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,Mujer,,%,29.3
+2020,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,Mujer,,%,25.5
+2022,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,Mujer,,%,19.5
+2025,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,Mujer,,%,25.4
+2019,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,Mujer,,%,11.6
+2020,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,Mujer,Araba/Álava,%,24.4
+2022,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,Mujer,Araba/Álava,%,19.3
+2023,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,Mujer,Araba/Álava,%,26.0
+2021,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,Mujer,Araba/Álava,%,24.1
+2019,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,Mujer,Araba/Álava,%,8.7
+2025,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,Mujer,Araba/Álava,%,23.8
+2024,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,Mujer,Araba/Álava,%,24.9
+2020,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,Mujer,Bizkaia,%,24.8
+2023,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,Mujer,Bizkaia,%,30.3
+2025,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,Mujer,Bizkaia,%,26.6
+2024,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,Mujer,Bizkaia,%,19.6
+2021,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,Mujer,Bizkaia,%,22.4
+2022,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,Mujer,Bizkaia,%,18.4
+2019,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,Mujer,Bizkaia,%,13.5
+2023,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,Mujer,Gipuzkoa,%,29.3
+2025,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,Mujer,Gipuzkoa,%,24.1
+2020,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,Mujer,Gipuzkoa,%,27.1
+2019,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,Mujer,Gipuzkoa,%,9.8
+2024,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,Mujer,Gipuzkoa,%,16.7
+2021,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,Mujer,Gipuzkoa,%,25.1
+2022,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,Mujer,Gipuzkoa,%,21.3
+2023,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,Hombre,,%,37.7
+2020,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,Hombre,,%,31.5
+2021,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,Hombre,,%,32.2
+2025,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,Hombre,,%,33.1
+2019,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,Hombre,,%,20.5
+2022,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,Hombre,,%,26.7
+2024,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,Hombre,,%,23.2
+2020,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,Hombre,Araba/Álava,%,29.3
+2019,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,Hombre,Araba/Álava,%,23.9
+2021,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,Hombre,Araba/Álava,%,29.9
+2024,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,Hombre,Araba/Álava,%,23.4
+2025,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,Hombre,Araba/Álava,%,34.1
+2022,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,Hombre,Araba/Álava,%,28.0
+2023,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,Hombre,Araba/Álava,%,37.3
+2020,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,Hombre,Bizkaia,%,31.1
+2024,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,Hombre,Bizkaia,%,23.6
+2019,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,Hombre,Bizkaia,%,20.1
+2023,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,Hombre,Bizkaia,%,38.8
+2021,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,Hombre,Bizkaia,%,33.7
+2022,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,Hombre,Bizkaia,%,26.8
+2025,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,Hombre,Bizkaia,%,33.5
+2023,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,Hombre,Gipuzkoa,%,36.2
+2025,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,Hombre,Gipuzkoa,%,32.1
+2024,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,Hombre,Gipuzkoa,%,22.3
+2021,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,Hombre,Gipuzkoa,%,31.0
+2020,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,Hombre,Gipuzkoa,%,33.1
+2019,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,Hombre,Gipuzkoa,%,19.7
+2022,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",,Hombre,Gipuzkoa,%,26.1
+2024,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,,,%,30.9
+2023,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,,,%,45.5
+2019,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,,,%,26.8
+2025,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,,,%,39.3
+2021,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,,,%,46.2
+2020,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,,,%,47.1
+2022,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,,,%,36.7
+2022,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,,Araba/Álava,%,40.3
+2020,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,,Araba/Álava,%,50.9
+2019,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,,Araba/Álava,%,24.8
+2021,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,,Araba/Álava,%,40.3
+2024,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,,Araba/Álava,%,37.6
+2025,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,,Araba/Álava,%,33.9
+2023,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,,Araba/Álava,%,39.4
+2024,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,,Bizkaia,%,28.9
+2021,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,,Bizkaia,%,47.3
+2022,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,,Bizkaia,%,36.4
+2023,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,,Bizkaia,%,45.5
+2019,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,,Bizkaia,%,28.0
+2025,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,,Bizkaia,%,40.8
+2020,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,,Bizkaia,%,46.3
+2024,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,,Gipuzkoa,%,31.0
+2020,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,,Gipuzkoa,%,46.5
+2022,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,,Gipuzkoa,%,35.6
+2023,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,,Gipuzkoa,%,48.4
+2021,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,,Gipuzkoa,%,47.3
+2019,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,,Gipuzkoa,%,26.0
+2025,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,,Gipuzkoa,%,39.4
+2025,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,Mujer,,%,33.6
+2020,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,Mujer,,%,46.3
+2021,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,Mujer,,%,38.3
+2019,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,Mujer,,%,20.9
+2022,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,Mujer,,%,33.3
+2023,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,Mujer,,%,43.7
+2024,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,Mujer,,%,27.4
+2020,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,Mujer,Araba/Álava,%,53.0
+2025,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,Mujer,Araba/Álava,%,33.3
+2019,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,Mujer,Araba/Álava,%,16.0
+2024,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,Mujer,Araba/Álava,%,39.4
+2021,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,Mujer,Araba/Álava,%,38.0
+2023,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,Mujer,Araba/Álava,%,40.9
+2022,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,Mujer,Araba/Álava,%,37.7
+2021,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,Mujer,Bizkaia,%,39.1
+2025,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,Mujer,Bizkaia,%,35.1
+2019,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,Mujer,Bizkaia,%,23.5
+2024,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,Mujer,Bizkaia,%,21.2
+2020,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,Mujer,Bizkaia,%,45.2
+2023,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,Mujer,Bizkaia,%,39.8
+2022,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,Mujer,Bizkaia,%,29.0
+2021,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,Mujer,Gipuzkoa,%,37.2
+2020,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,Mujer,Gipuzkoa,%,44.9
+2022,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,Mujer,Gipuzkoa,%,38.1
+2024,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,Mujer,Gipuzkoa,%,31.2
+2025,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,Mujer,Gipuzkoa,%,31.6
+2019,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,Mujer,Gipuzkoa,%,19.6
+2023,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,Mujer,Gipuzkoa,%,50.5
+2021,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,Hombre,,%,53.3
+2023,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,Hombre,,%,47.3
+2024,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,Hombre,,%,34.1
+2020,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,Hombre,,%,47.9
+2025,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,Hombre,,%,44.8
+2022,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,Hombre,,%,40.0
+2019,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,Hombre,,%,32.8
+2025,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,Hombre,Araba/Álava,%,34.5
+2024,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,Hombre,Araba/Álava,%,35.8
+2022,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,Hombre,Araba/Álava,%,42.9
+2021,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,Hombre,Araba/Álava,%,42.2
+2020,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,Hombre,Araba/Álava,%,49.0
+2023,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,Hombre,Araba/Álava,%,38.2
+2019,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,Hombre,Araba/Álava,%,35.2
+2022,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,Hombre,Bizkaia,%,43.8
+2025,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,Hombre,Bizkaia,%,46.1
+2024,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,Hombre,Bizkaia,%,35.8
+2019,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,Hombre,Bizkaia,%,32.6
+2023,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,Hombre,Bizkaia,%,51.2
+2021,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,Hombre,Bizkaia,%,55.2
+2020,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,Hombre,Bizkaia,%,47.4
+2020,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,Hombre,Gipuzkoa,%,47.9
+2023,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,Hombre,Gipuzkoa,%,46.3
+2025,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,Hombre,Gipuzkoa,%,46.8
+2021,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,Hombre,Gipuzkoa,%,55.5
+2019,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,Hombre,Gipuzkoa,%,32.2
+2022,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,Hombre,Gipuzkoa,%,33.2
+2024,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",16-24 años,Hombre,Gipuzkoa,%,30.9
+2022,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,,,%,21.2
+2020,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,,,%,26.1
+2019,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,,,%,14.8
+2023,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,,,%,31.8
+2021,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,,,%,25.4
+2025,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,,,%,27.7
+2024,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,,,%,19.9
+2023,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,,Araba/Álava,%,30.6
+2025,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,,Araba/Álava,%,28.2
+2020,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,,Araba/Álava,%,23.8
+2022,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,,Araba/Álava,%,21.6
+2024,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,,Araba/Álava,%,22.4
+2019,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,,Araba/Álava,%,15.2
+2021,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,,Araba/Álava,%,25.2
+2022,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,,Bizkaia,%,20.7
+2023,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,,Bizkaia,%,33.0
+2021,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,,Bizkaia,%,25.5
+2019,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,,Bizkaia,%,15.5
+2024,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,,Bizkaia,%,20.6
+2020,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,,Bizkaia,%,25.7
+2025,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,,Bizkaia,%,28.4
+2019,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,,Gipuzkoa,%,13.3
+2020,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,,Gipuzkoa,%,27.9
+2022,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,,Gipuzkoa,%,22.0
+2024,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,,Gipuzkoa,%,17.7
+2025,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,,Gipuzkoa,%,26.2
+2021,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,,Gipuzkoa,%,25.3
+2023,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,,Gipuzkoa,%,30.5
+2023,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,Mujer,,%,27.5
+2019,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,Mujer,,%,10.6
+2022,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,Mujer,,%,17.7
+2024,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,Mujer,,%,18.4
+2021,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,Mujer,,%,21.7
+2020,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,Mujer,,%,23.0
+2025,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,Mujer,,%,24.1
+2021,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,Mujer,Araba/Álava,%,22.4
+2024,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,Mujer,Araba/Álava,%,23.1
+2019,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,Mujer,Araba/Álava,%,7.9
+2020,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,Mujer,Araba/Álava,%,21.1
+2023,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,Mujer,Araba/Álava,%,24.2
+2022,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,Mujer,Araba/Álava,%,17.1
+2025,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,Mujer,Araba/Álava,%,22.4
+2023,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,Mujer,Bizkaia,%,29.1
+2022,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,Mujer,Bizkaia,%,17.1
+2024,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,Mujer,Bizkaia,%,19.4
+2021,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,Mujer,Bizkaia,%,20.3
+2019,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,Mujer,Bizkaia,%,12.5
+2025,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,Mujer,Bizkaia,%,25.4
+2020,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,Mujer,Bizkaia,%,22.5
+2022,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,Mujer,Gipuzkoa,%,19.0
+2020,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,Mujer,Gipuzkoa,%,24.8
+2023,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,Mujer,Gipuzkoa,%,26.4
+2025,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,Mujer,Gipuzkoa,%,22.9
+2024,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,Mujer,Gipuzkoa,%,14.6
+2021,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,Mujer,Gipuzkoa,%,23.6
+2019,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,Mujer,Gipuzkoa,%,8.6
+2019,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,Hombre,,%,19.1
+2022,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,Hombre,,%,24.9
+2021,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,Hombre,,%,29.2
+2024,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,Hombre,,%,21.5
+2023,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,Hombre,,%,36.4
+2025,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,Hombre,,%,31.3
+2020,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,Hombre,,%,29.3
+2022,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,Hombre,Araba/Álava,%,26.2
+2020,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,Hombre,Araba/Álava,%,26.6
+2024,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,Hombre,Araba/Álava,%,21.7
+2023,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,Hombre,Araba/Álava,%,37.1
+2021,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,Hombre,Araba/Álava,%,28.0
+2019,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,Hombre,Araba/Álava,%,22.7
+2025,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,Hombre,Araba/Álava,%,34.1
+2022,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,Hombre,Bizkaia,%,24.5
+2020,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,Hombre,Bizkaia,%,29.0
+2025,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,Hombre,Bizkaia,%,31.5
+2021,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,Hombre,Bizkaia,%,30.9
+2019,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,Hombre,Bizkaia,%,18.7
+2024,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,Hombre,Bizkaia,%,21.9
+2023,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,Hombre,Bizkaia,%,37.1
+2024,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,Hombre,Gipuzkoa,%,20.9
+2023,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,Hombre,Gipuzkoa,%,34.7
+2022,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,Hombre,Gipuzkoa,%,25.0
+2019,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,Hombre,Gipuzkoa,%,18.1
+2021,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,Hombre,Gipuzkoa,%,27.1
+2025,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,Hombre,Gipuzkoa,%,29.6
+2020,"Cambiar la configuración de cualquier software, incluídos el sistema operativo y los programas de seguridad",25-74 años,Hombre,Gipuzkoa,%,31.1
+2025,Copiar o mover ficheros o carpetas,,,,%,53.7
+2024,Copiar o mover ficheros o carpetas,,,,%,51.0
+2022,Copiar o mover ficheros o carpetas,,,,%,57.2
+2020,Copiar o mover ficheros o carpetas,,,,%,55.4
+2019,Copiar o mover ficheros o carpetas,,,,%,55.4
+2023,Copiar o mover ficheros o carpetas,,,,%,56.3
+2021,Copiar o mover ficheros o carpetas,,,,%,61.5
+2022,Copiar o mover ficheros o carpetas,,,Araba/Álava,%,56.7
+2024,Copiar o mover ficheros o carpetas,,,Araba/Álava,%,52.0
+2025,Copiar o mover ficheros o carpetas,,,Araba/Álava,%,54.2
+2020,Copiar o mover ficheros o carpetas,,,Araba/Álava,%,54.0
+2023,Copiar o mover ficheros o carpetas,,,Araba/Álava,%,54.8
+2019,Copiar o mover ficheros o carpetas,,,Araba/Álava,%,55.8
+2021,Copiar o mover ficheros o carpetas,,,Araba/Álava,%,61.9
+2025,Copiar o mover ficheros o carpetas,,,Bizkaia,%,54.1
+2022,Copiar o mover ficheros o carpetas,,,Bizkaia,%,56.7
+2024,Copiar o mover ficheros o carpetas,,,Bizkaia,%,51.2
+2019,Copiar o mover ficheros o carpetas,,,Bizkaia,%,55.8
+2021,Copiar o mover ficheros o carpetas,,,Bizkaia,%,61.6
+2020,Copiar o mover ficheros o carpetas,,,Bizkaia,%,54.3
+2023,Copiar o mover ficheros o carpetas,,,Bizkaia,%,56.0
+2022,Copiar o mover ficheros o carpetas,,,Gipuzkoa,%,58.3
+2023,Copiar o mover ficheros o carpetas,,,Gipuzkoa,%,57.3
+2020,Copiar o mover ficheros o carpetas,,,Gipuzkoa,%,57.7
+2021,Copiar o mover ficheros o carpetas,,,Gipuzkoa,%,61.0
+2025,Copiar o mover ficheros o carpetas,,,Gipuzkoa,%,53.0
+2024,Copiar o mover ficheros o carpetas,,,Gipuzkoa,%,50.3
+2019,Copiar o mover ficheros o carpetas,,,Gipuzkoa,%,54.5
+2020,Copiar o mover ficheros o carpetas,,Mujer,,%,53.5
+2025,Copiar o mover ficheros o carpetas,,Mujer,,%,53.2
+2019,Copiar o mover ficheros o carpetas,,Mujer,,%,53.0
+2023,Copiar o mover ficheros o carpetas,,Mujer,,%,55.8
+2024,Copiar o mover ficheros o carpetas,,Mujer,,%,49.7
+2021,Copiar o mover ficheros o carpetas,,Mujer,,%,60.2
+2022,Copiar o mover ficheros o carpetas,,Mujer,,%,56.5
+2025,Copiar o mover ficheros o carpetas,,Mujer,Araba/Álava,%,55.0
+2021,Copiar o mover ficheros o carpetas,,Mujer,Araba/Álava,%,59.5
+2020,Copiar o mover ficheros o carpetas,,Mujer,Araba/Álava,%,53.8
+2019,Copiar o mover ficheros o carpetas,,Mujer,Araba/Álava,%,51.7
+2022,Copiar o mover ficheros o carpetas,,Mujer,Araba/Álava,%,57.6
+2023,Copiar o mover ficheros o carpetas,,Mujer,Araba/Álava,%,55.5
+2024,Copiar o mover ficheros o carpetas,,Mujer,Araba/Álava,%,48.7
+2025,Copiar o mover ficheros o carpetas,,Mujer,Bizkaia,%,53.4
+2024,Copiar o mover ficheros o carpetas,,Mujer,Bizkaia,%,50.1
+2022,Copiar o mover ficheros o carpetas,,Mujer,Bizkaia,%,55.3
+2021,Copiar o mover ficheros o carpetas,,Mujer,Bizkaia,%,59.5
+2020,Copiar o mover ficheros o carpetas,,Mujer,Bizkaia,%,51.2
+2023,Copiar o mover ficheros o carpetas,,Mujer,Bizkaia,%,55.2
+2019,Copiar o mover ficheros o carpetas,,Mujer,Bizkaia,%,53.1
+2024,Copiar o mover ficheros o carpetas,,Mujer,Gipuzkoa,%,49.6
+2023,Copiar o mover ficheros o carpetas,,Mujer,Gipuzkoa,%,57.1
+2020,Copiar o mover ficheros o carpetas,,Mujer,Gipuzkoa,%,57.0
+2022,Copiar o mover ficheros o carpetas,,Mujer,Gipuzkoa,%,57.9
+2025,Copiar o mover ficheros o carpetas,,Mujer,Gipuzkoa,%,51.9
+2021,Copiar o mover ficheros o carpetas,,Mujer,Gipuzkoa,%,61.8
+2019,Copiar o mover ficheros o carpetas,,Mujer,Gipuzkoa,%,53.6
+2019,Copiar o mover ficheros o carpetas,,Hombre,,%,57.8
+2022,Copiar o mover ficheros o carpetas,,Hombre,,%,57.9
+2023,Copiar o mover ficheros o carpetas,,Hombre,,%,56.7
+2024,Copiar o mover ficheros o carpetas,,Hombre,,%,52.4
+2025,Copiar o mover ficheros o carpetas,,Hombre,,%,54.3
+2020,Copiar o mover ficheros o carpetas,,Hombre,,%,57.3
+2021,Copiar o mover ficheros o carpetas,,Hombre,,%,62.7
+2022,Copiar o mover ficheros o carpetas,,Hombre,Araba/Álava,%,55.9
+2021,Copiar o mover ficheros o carpetas,,Hombre,Araba/Álava,%,64.3
+2024,Copiar o mover ficheros o carpetas,,Hombre,Araba/Álava,%,55.3
+2023,Copiar o mover ficheros o carpetas,,Hombre,Araba/Álava,%,54.1
+2019,Copiar o mover ficheros o carpetas,,Hombre,Araba/Álava,%,60.0
+2025,Copiar o mover ficheros o carpetas,,Hombre,Araba/Álava,%,53.4
+2020,Copiar o mover ficheros o carpetas,,Hombre,Araba/Álava,%,54.3
+2019,Copiar o mover ficheros o carpetas,,Hombre,Bizkaia,%,58.6
+2025,Copiar o mover ficheros o carpetas,,Hombre,Bizkaia,%,54.7
+2021,Copiar o mover ficheros o carpetas,,Hombre,Bizkaia,%,63.8
+2022,Copiar o mover ficheros o carpetas,,Hombre,Bizkaia,%,58.1
+2024,Copiar o mover ficheros o carpetas,,Hombre,Bizkaia,%,52.3
+2023,Copiar o mover ficheros o carpetas,,Hombre,Bizkaia,%,57.0
+2020,Copiar o mover ficheros o carpetas,,Hombre,Bizkaia,%,57.5
+2024,Copiar o mover ficheros o carpetas,,Hombre,Gipuzkoa,%,51.1
+2025,Copiar o mover ficheros o carpetas,,Hombre,Gipuzkoa,%,54.1
+2020,Copiar o mover ficheros o carpetas,,Hombre,Gipuzkoa,%,58.4
+2022,Copiar o mover ficheros o carpetas,,Hombre,Gipuzkoa,%,58.7
+2021,Copiar o mover ficheros o carpetas,,Hombre,Gipuzkoa,%,60.2
+2019,Copiar o mover ficheros o carpetas,,Hombre,Gipuzkoa,%,55.4
+2023,Copiar o mover ficheros o carpetas,,Hombre,Gipuzkoa,%,57.4
+2020,Copiar o mover ficheros o carpetas,16-24 años,,,%,86.6
+2024,Copiar o mover ficheros o carpetas,16-24 años,,,%,81.4
+2021,Copiar o mover ficheros o carpetas,16-24 años,,,%,86.6
+2022,Copiar o mover ficheros o carpetas,16-24 años,,,%,87.4
+2023,Copiar o mover ficheros o carpetas,16-24 años,,,%,89.1
+2025,Copiar o mover ficheros o carpetas,16-24 años,,,%,79.6
+2019,Copiar o mover ficheros o carpetas,16-24 años,,,%,89.4
+2025,Copiar o mover ficheros o carpetas,16-24 años,,Araba/Álava,%,80.8
+2019,Copiar o mover ficheros o carpetas,16-24 años,,Araba/Álava,%,91.1
+2024,Copiar o mover ficheros o carpetas,16-24 años,,Araba/Álava,%,86.7
+2022,Copiar o mover ficheros o carpetas,16-24 años,,Araba/Álava,%,82.6
+2021,Copiar o mover ficheros o carpetas,16-24 años,,Araba/Álava,%,85.7
+2023,Copiar o mover ficheros o carpetas,16-24 años,,Araba/Álava,%,94.8
+2020,Copiar o mover ficheros o carpetas,16-24 años,,Araba/Álava,%,80.6
+2020,Copiar o mover ficheros o carpetas,16-24 años,,Bizkaia,%,83.3
+2021,Copiar o mover ficheros o carpetas,16-24 años,,Bizkaia,%,87.2
+2019,Copiar o mover ficheros o carpetas,16-24 años,,Bizkaia,%,90.0
+2023,Copiar o mover ficheros o carpetas,16-24 años,,Bizkaia,%,87.1
+2024,Copiar o mover ficheros o carpetas,16-24 años,,Bizkaia,%,81.2
+2025,Copiar o mover ficheros o carpetas,16-24 años,,Bizkaia,%,81.0
+2022,Copiar o mover ficheros o carpetas,16-24 años,,Bizkaia,%,88.1
+2022,Copiar o mover ficheros o carpetas,16-24 años,,Gipuzkoa,%,88.4
+2023,Copiar o mover ficheros o carpetas,16-24 años,,Gipuzkoa,%,89.5
+2019,Copiar o mover ficheros o carpetas,16-24 años,,Gipuzkoa,%,87.9
+2020,Copiar o mover ficheros o carpetas,16-24 años,,Gipuzkoa,%,94.1
+2021,Copiar o mover ficheros o carpetas,16-24 años,,Gipuzkoa,%,86.1
+2024,Copiar o mover ficheros o carpetas,16-24 años,,Gipuzkoa,%,79.5
+2025,Copiar o mover ficheros o carpetas,16-24 años,,Gipuzkoa,%,77.1
+2020,Copiar o mover ficheros o carpetas,16-24 años,Mujer,,%,88.0
+2024,Copiar o mover ficheros o carpetas,16-24 años,Mujer,,%,83.0
+2021,Copiar o mover ficheros o carpetas,16-24 años,Mujer,,%,85.6
+2022,Copiar o mover ficheros o carpetas,16-24 años,Mujer,,%,89.6
+2019,Copiar o mover ficheros o carpetas,16-24 años,Mujer,,%,93.7
+2023,Copiar o mover ficheros o carpetas,16-24 años,Mujer,,%,92.9
+2025,Copiar o mover ficheros o carpetas,16-24 años,Mujer,,%,80.4
+2021,Copiar o mover ficheros o carpetas,16-24 años,Mujer,Araba/Álava,%,86.5
+2019,Copiar o mover ficheros o carpetas,16-24 años,Mujer,Araba/Álava,%,91.8
+2022,Copiar o mover ficheros o carpetas,16-24 años,Mujer,Araba/Álava,%,91.4
+2023,Copiar o mover ficheros o carpetas,16-24 años,Mujer,Araba/Álava,%,96.8
+2024,Copiar o mover ficheros o carpetas,16-24 años,Mujer,Araba/Álava,%,91.2
+2020,Copiar o mover ficheros o carpetas,16-24 años,Mujer,Araba/Álava,%,80.8
+2025,Copiar o mover ficheros o carpetas,16-24 años,Mujer,Araba/Álava,%,79.2
+2025,Copiar o mover ficheros o carpetas,16-24 años,Mujer,Bizkaia,%,81.4
+2024,Copiar o mover ficheros o carpetas,16-24 años,Mujer,Bizkaia,%,82.1
+2021,Copiar o mover ficheros o carpetas,16-24 años,Mujer,Bizkaia,%,84.9
+2019,Copiar o mover ficheros o carpetas,16-24 años,Mujer,Bizkaia,%,93.0
+2023,Copiar o mover ficheros o carpetas,16-24 años,Mujer,Bizkaia,%,90.4
+2022,Copiar o mover ficheros o carpetas,16-24 años,Mujer,Bizkaia,%,90.4
+2020,Copiar o mover ficheros o carpetas,16-24 años,Mujer,Bizkaia,%,85.0
+2021,Copiar o mover ficheros o carpetas,16-24 años,Mujer,Gipuzkoa,%,86.2
+2025,Copiar o mover ficheros o carpetas,16-24 años,Mujer,Gipuzkoa,%,79.2
+2019,Copiar o mover ficheros o carpetas,16-24 años,Mujer,Gipuzkoa,%,95.6
+2020,Copiar o mover ficheros o carpetas,16-24 años,Mujer,Gipuzkoa,%,95.6
+2024,Copiar o mover ficheros o carpetas,16-24 años,Mujer,Gipuzkoa,%,80.9
+2022,Copiar o mover ficheros o carpetas,16-24 años,Mujer,Gipuzkoa,%,87.4
+2023,Copiar o mover ficheros o carpetas,16-24 años,Mujer,Gipuzkoa,%,95.1
+2020,Copiar o mover ficheros o carpetas,16-24 años,Hombre,,%,85.2
+2024,Copiar o mover ficheros o carpetas,16-24 años,Hombre,,%,79.9
+2019,Copiar o mover ficheros o carpetas,16-24 años,Hombre,,%,85.1
+2025,Copiar o mover ficheros o carpetas,16-24 años,Hombre,,%,78.9
+2022,Copiar o mover ficheros o carpetas,16-24 años,Hombre,,%,85.4
+2023,Copiar o mover ficheros o carpetas,16-24 años,Hombre,,%,85.6
+2021,Copiar o mover ficheros o carpetas,16-24 años,Hombre,,%,87.5
+2019,Copiar o mover ficheros o carpetas,16-24 años,Hombre,Araba/Álava,%,90.2
+2025,Copiar o mover ficheros o carpetas,16-24 años,Hombre,Araba/Álava,%,82.6
+2024,Copiar o mover ficheros o carpetas,16-24 años,Hombre,Araba/Álava,%,82.4
+2023,Copiar o mover ficheros o carpetas,16-24 años,Hombre,Araba/Álava,%,93.3
+2020,Copiar o mover ficheros o carpetas,16-24 años,Hombre,Araba/Álava,%,80.5
+2022,Copiar o mover ficheros o carpetas,16-24 años,Hombre,Araba/Álava,%,74.0
+2021,Copiar o mover ficheros o carpetas,16-24 años,Hombre,Araba/Álava,%,85.0
+2025,Copiar o mover ficheros o carpetas,16-24 años,Hombre,Bizkaia,%,80.5
+2024,Copiar o mover ficheros o carpetas,16-24 años,Hombre,Bizkaia,%,80.4
+2020,Copiar o mover ficheros o carpetas,16-24 años,Hombre,Bizkaia,%,81.7
+2019,Copiar o mover ficheros o carpetas,16-24 años,Hombre,Bizkaia,%,87.1
+2022,Copiar o mover ficheros o carpetas,16-24 años,Hombre,Bizkaia,%,85.8
+2021,Copiar o mover ficheros o carpetas,16-24 años,Hombre,Bizkaia,%,89.5
+2023,Copiar o mover ficheros o carpetas,16-24 años,Hombre,Bizkaia,%,83.9
+2025,Copiar o mover ficheros o carpetas,16-24 años,Hombre,Gipuzkoa,%,75.0
+2022,Copiar o mover ficheros o carpetas,16-24 años,Hombre,Gipuzkoa,%,89.4
+2021,Copiar o mover ficheros o carpetas,16-24 años,Hombre,Gipuzkoa,%,86.0
+2020,Copiar o mover ficheros o carpetas,16-24 años,Hombre,Gipuzkoa,%,92.7
+2019,Copiar o mover ficheros o carpetas,16-24 años,Hombre,Gipuzkoa,%,80.5
+2024,Copiar o mover ficheros o carpetas,16-24 años,Hombre,Gipuzkoa,%,78.3
+2023,Copiar o mover ficheros o carpetas,16-24 años,Hombre,Gipuzkoa,%,84.1
+2024,Copiar o mover ficheros o carpetas,25-74 años,,,%,46.8
+2025,Copiar o mover ficheros o carpetas,25-74 años,,,%,49.8
+2022,Copiar o mover ficheros o carpetas,25-74 años,,,%,53.2
+2020,Copiar o mover ficheros o carpetas,25-74 años,,,%,51.5
+2019,Copiar o mover ficheros o carpetas,25-74 años,,,%,51.5
+2023,Copiar o mover ficheros o carpetas,25-74 años,,,%,51.9
+2021,Copiar o mover ficheros o carpetas,25-74 años,,,%,58.1
+2023,Copiar o mover ficheros o carpetas,25-74 años,,Araba/Álava,%,49.3
+2025,Copiar o mover ficheros o carpetas,25-74 años,,Araba/Álava,%,50.4
+2022,Copiar o mover ficheros o carpetas,25-74 años,,Araba/Álava,%,53.6
+2020,Copiar o mover ficheros o carpetas,25-74 años,,Araba/Álava,%,50.7
+2021,Copiar o mover ficheros o carpetas,25-74 años,,Araba/Álava,%,58.7
+2024,Copiar o mover ficheros o carpetas,25-74 años,,Araba/Álava,%,47.3
+2019,Copiar o mover ficheros o carpetas,25-74 años,,Araba/Álava,%,51.8
+2025,Copiar o mover ficheros o carpetas,25-74 años,,Bizkaia,%,50.0
+2022,Copiar o mover ficheros o carpetas,25-74 años,,Bizkaia,%,52.6
+2024,Copiar o mover ficheros o carpetas,25-74 años,,Bizkaia,%,47.2
+2020,Copiar o mover ficheros o carpetas,25-74 años,,Bizkaia,%,50.9
+2021,Copiar o mover ficheros o carpetas,25-74 años,,Bizkaia,%,58.4
+2019,Copiar o mover ficheros o carpetas,25-74 años,,Bizkaia,%,52.2
+2023,Copiar o mover ficheros o carpetas,25-74 años,,Bizkaia,%,52.1
+2023,Copiar o mover ficheros o carpetas,25-74 años,,Gipuzkoa,%,52.8
+2024,Copiar o mover ficheros o carpetas,25-74 años,,Gipuzkoa,%,45.9
+2022,Copiar o mover ficheros o carpetas,25-74 años,,Gipuzkoa,%,54.1
+2025,Copiar o mover ficheros o carpetas,25-74 años,,Gipuzkoa,%,49.2
+2020,Copiar o mover ficheros o carpetas,25-74 años,,Gipuzkoa,%,52.9
+2019,Copiar o mover ficheros o carpetas,25-74 años,,Gipuzkoa,%,50.3
+2021,Copiar o mover ficheros o carpetas,25-74 años,,Gipuzkoa,%,57.4
+2021,Copiar o mover ficheros o carpetas,25-74 años,Mujer,,%,57.1
+2020,Copiar o mover ficheros o carpetas,25-74 años,Mujer,,%,49.4
+2024,Copiar o mover ficheros o carpetas,25-74 años,Mujer,,%,45.5
+2025,Copiar o mover ficheros o carpetas,25-74 años,Mujer,,%,49.1
+2022,Copiar o mover ficheros o carpetas,25-74 años,Mujer,,%,52.3
+2023,Copiar o mover ficheros o carpetas,25-74 años,Mujer,,%,51.2
+2019,Copiar o mover ficheros o carpetas,25-74 años,Mujer,,%,48.5
+2023,Copiar o mover ficheros o carpetas,25-74 años,Mujer,Araba/Álava,%,50.6
+2021,Copiar o mover ficheros o carpetas,25-74 años,Mujer,Araba/Álava,%,56.3
+2020,Copiar o mover ficheros o carpetas,25-74 años,Mujer,Araba/Álava,%,50.7
+2025,Copiar o mover ficheros o carpetas,25-74 años,Mujer,Araba/Álava,%,51.3
+2022,Copiar o mover ficheros o carpetas,25-74 años,Mujer,Araba/Álava,%,53.6
+2019,Copiar o mover ficheros o carpetas,25-74 años,Mujer,Araba/Álava,%,46.9
+2024,Copiar o mover ficheros o carpetas,25-74 años,Mujer,Araba/Álava,%,43.2
+2025,Copiar o mover ficheros o carpetas,25-74 años,Mujer,Bizkaia,%,49.4
+2022,Copiar o mover ficheros o carpetas,25-74 años,Mujer,Bizkaia,%,51.0
+2020,Copiar o mover ficheros o carpetas,25-74 años,Mujer,Bizkaia,%,47.3
+2019,Copiar o mover ficheros o carpetas,25-74 años,Mujer,Bizkaia,%,48.9
+2021,Copiar o mover ficheros o carpetas,25-74 años,Mujer,Bizkaia,%,56.3
+2024,Copiar o mover ficheros o carpetas,25-74 años,Mujer,Bizkaia,%,46.3
+2023,Copiar o mover ficheros o carpetas,25-74 años,Mujer,Bizkaia,%,50.9
+2019,Copiar o mover ficheros o carpetas,25-74 años,Mujer,Gipuzkoa,%,48.5
+2025,Copiar o mover ficheros o carpetas,25-74 años,Mujer,Gipuzkoa,%,47.7
+2024,Copiar o mover ficheros o carpetas,25-74 años,Mujer,Gipuzkoa,%,45.2
+2021,Copiar o mover ficheros o carpetas,25-74 años,Mujer,Gipuzkoa,%,58.7
+2023,Copiar o mover ficheros o carpetas,25-74 años,Mujer,Gipuzkoa,%,51.9
+2020,Copiar o mover ficheros o carpetas,25-74 años,Mujer,Gipuzkoa,%,52.2
+2022,Copiar o mover ficheros o carpetas,25-74 años,Mujer,Gipuzkoa,%,53.9
+2024,Copiar o mover ficheros o carpetas,25-74 años,Hombre,,%,48.2
+2021,Copiar o mover ficheros o carpetas,25-74 años,Hombre,,%,59.2
+2020,Copiar o mover ficheros o carpetas,25-74 años,Hombre,,%,53.7
+2023,Copiar o mover ficheros o carpetas,25-74 años,Hombre,,%,52.6
+2022,Copiar o mover ficheros o carpetas,25-74 años,Hombre,,%,54.2
+2025,Copiar o mover ficheros o carpetas,25-74 años,Hombre,,%,50.4
+2019,Copiar o mover ficheros o carpetas,25-74 años,Hombre,,%,54.6
+2019,Copiar o mover ficheros o carpetas,25-74 años,Hombre,Araba/Álava,%,56.8
+2024,Copiar o mover ficheros o carpetas,25-74 años,Hombre,Araba/Álava,%,51.5
+2022,Copiar o mover ficheros o carpetas,25-74 años,Hombre,Araba/Álava,%,53.7
+2020,Copiar o mover ficheros o carpetas,25-74 años,Hombre,Araba/Álava,%,50.7
+2023,Copiar o mover ficheros o carpetas,25-74 años,Hombre,Araba/Álava,%,47.9
+2021,Copiar o mover ficheros o carpetas,25-74 años,Hombre,Araba/Álava,%,61.2
+2025,Copiar o mover ficheros o carpetas,25-74 años,Hombre,Araba/Álava,%,49.5
+2022,Copiar o mover ficheros o carpetas,25-74 años,Hombre,Bizkaia,%,54.3
+2019,Copiar o mover ficheros o carpetas,25-74 años,Hombre,Bizkaia,%,55.6
+2021,Copiar o mover ficheros o carpetas,25-74 años,Hombre,Bizkaia,%,60.5
+2025,Copiar o mover ficheros o carpetas,25-74 años,Hombre,Bizkaia,%,50.6
+2024,Copiar o mover ficheros o carpetas,25-74 años,Hombre,Bizkaia,%,48.2
+2020,Copiar o mover ficheros o carpetas,25-74 años,Hombre,Bizkaia,%,54.5
+2023,Copiar o mover ficheros o carpetas,25-74 años,Hombre,Bizkaia,%,53.4
+2025,Copiar o mover ficheros o carpetas,25-74 años,Hombre,Gipuzkoa,%,50.7
+2021,Copiar o mover ficheros o carpetas,25-74 años,Hombre,Gipuzkoa,%,56.1
+2019,Copiar o mover ficheros o carpetas,25-74 años,Hombre,Gipuzkoa,%,52.1
+2022,Copiar o mover ficheros o carpetas,25-74 años,Hombre,Gipuzkoa,%,54.2
+2023,Copiar o mover ficheros o carpetas,25-74 años,Hombre,Gipuzkoa,%,53.6
+2020,Copiar o mover ficheros o carpetas,25-74 años,Hombre,Gipuzkoa,%,53.7
+2024,Copiar o mover ficheros o carpetas,25-74 años,Hombre,Gipuzkoa,%,46.6
+2020,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,,,%,45.0
+2023,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,,,%,41.1
+2019,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,,,%,42.2
+2024,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,,,%,40.0
+2025,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,,,%,43.1
+2022,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,,,%,42.3
+2021,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,,,%,46.0
+2023,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,,Araba/Álava,%,38.4
+2024,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,,Araba/Álava,%,38.1
+2025,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,,Araba/Álava,%,43.8
+2020,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,,Araba/Álava,%,43.0
+2019,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,,Araba/Álava,%,41.8
+2021,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,,Araba/Álava,%,46.6
+2022,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,,Araba/Álava,%,43.5
+2023,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,,Bizkaia,%,40.7
+2020,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,,Bizkaia,%,45.1
+2019,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,,Bizkaia,%,42.4
+2021,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,,Bizkaia,%,46.1
+2022,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,,Bizkaia,%,41.9
+2024,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,,Bizkaia,%,40.6
+2025,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,,Bizkaia,%,43.5
+2020,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,,Gipuzkoa,%,45.7
+2025,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,,Gipuzkoa,%,42.2
+2022,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,,Gipuzkoa,%,42.3
+2021,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,,Gipuzkoa,%,45.4
+2019,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,,Gipuzkoa,%,42.2
+2023,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,,Gipuzkoa,%,42.9
+2024,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,,Gipuzkoa,%,40.0
+2025,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,Mujer,,%,43.1
+2019,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,Mujer,,%,41.7
+2022,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,Mujer,,%,42.9
+2023,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,Mujer,,%,41.8
+2020,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,Mujer,,%,44.5
+2024,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,Mujer,,%,38.6
+2021,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,Mujer,,%,45.1
+2022,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,Mujer,Araba/Álava,%,44.3
+2025,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,Mujer,Araba/Álava,%,43.9
+2023,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,Mujer,Araba/Álava,%,39.6
+2020,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,Mujer,Araba/Álava,%,42.4
+2021,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,Mujer,Araba/Álava,%,44.9
+2024,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,Mujer,Araba/Álava,%,35.8
+2019,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,Mujer,Araba/Álava,%,42.9
+2022,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,Mujer,Bizkaia,%,42.1
+2019,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,Mujer,Bizkaia,%,40.6
+2021,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,Mujer,Bizkaia,%,43.9
+2025,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,Mujer,Bizkaia,%,44.0
+2020,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,Mujer,Bizkaia,%,43.9
+2024,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,Mujer,Bizkaia,%,39.8
+2023,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,Mujer,Bizkaia,%,42.1
+2025,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,Mujer,Gipuzkoa,%,41.1
+2020,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,Mujer,Gipuzkoa,%,46.5
+2023,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,Mujer,Gipuzkoa,%,42.3
+2021,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,Mujer,Gipuzkoa,%,47.0
+2019,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,Mujer,Gipuzkoa,%,43.0
+2022,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,Mujer,Gipuzkoa,%,43.7
+2024,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,Mujer,Gipuzkoa,%,37.8
+2022,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,Hombre,,%,41.7
+2025,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,Hombre,,%,43.1
+2021,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,Hombre,,%,46.8
+2019,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,Hombre,,%,42.7
+2023,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,Hombre,,%,40.3
+2020,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,Hombre,,%,45.5
+2024,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,Hombre,,%,41.5
+2019,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,Hombre,Araba/Álava,%,40.6
+2025,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,Hombre,Araba/Álava,%,43.8
+2024,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,Hombre,Araba/Álava,%,40.4
+2023,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,Hombre,Araba/Álava,%,37.2
+2020,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,Hombre,Araba/Álava,%,43.6
+2022,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,Hombre,Araba/Álava,%,42.7
+2021,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,Hombre,Araba/Álava,%,48.3
+2019,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,Hombre,Bizkaia,%,44.2
+2020,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,Hombre,Bizkaia,%,46.3
+2024,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,Hombre,Bizkaia,%,41.5
+2023,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,Hombre,Bizkaia,%,39.2
+2025,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,Hombre,Bizkaia,%,42.9
+2021,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,Hombre,Bizkaia,%,48.4
+2022,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,Hombre,Bizkaia,%,41.8
+2024,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,Hombre,Gipuzkoa,%,42.2
+2023,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,Hombre,Gipuzkoa,%,43.5
+2019,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,Hombre,Gipuzkoa,%,41.4
+2021,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,Hombre,Gipuzkoa,%,43.7
+2025,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,Hombre,Gipuzkoa,%,43.2
+2022,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,Hombre,Gipuzkoa,%,40.9
+2020,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",,Hombre,Gipuzkoa,%,45.0
+2019,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,,,%,85.3
+2023,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,,,%,83.5
+2021,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,,,%,82.8
+2022,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,,,%,81.3
+2025,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,,,%,80.6
+2024,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,,,%,79.5
+2020,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,,,%,86.4
+2020,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,,Araba/Álava,%,78.9
+2022,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,,Araba/Álava,%,83.7
+2019,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,,Araba/Álava,%,89.2
+2023,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,,Araba/Álava,%,83.6
+2021,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,,Araba/Álava,%,77.0
+2025,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,,Araba/Álava,%,85.2
+2024,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,,Araba/Álava,%,85.2
+2020,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,,Bizkaia,%,86.6
+2025,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,,Bizkaia,%,81.2
+2019,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,,Bizkaia,%,88.1
+2022,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,,Bizkaia,%,82.7
+2024,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,,Bizkaia,%,74.8
+2021,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,,Bizkaia,%,83.3
+2023,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,,Bizkaia,%,82.0
+2022,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,,Gipuzkoa,%,78.2
+2019,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,,Gipuzkoa,%,79.9
+2021,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,,Gipuzkoa,%,84.7
+2023,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,,Gipuzkoa,%,85.7
+2024,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,,Gipuzkoa,%,83.7
+2020,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,,Gipuzkoa,%,89.6
+2025,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,,Gipuzkoa,%,77.9
+2023,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,Mujer,,%,90.3
+2024,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,Mujer,,%,86.5
+2020,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,Mujer,,%,86.5
+2025,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,Mujer,,%,84.4
+2022,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,Mujer,,%,85.7
+2021,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,Mujer,,%,83.2
+2019,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,Mujer,,%,88.7
+2020,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,Mujer,Araba/Álava,%,74.8
+2024,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,Mujer,Araba/Álava,%,93.1
+2025,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,Mujer,Araba/Álava,%,85.0
+2023,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,Mujer,Araba/Álava,%,92.2
+2022,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,Mujer,Araba/Álava,%,94.0
+2019,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,Mujer,Araba/Álava,%,89.8
+2021,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,Mujer,Araba/Álava,%,83.9
+2022,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,Mujer,Bizkaia,%,84.3
+2025,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,Mujer,Bizkaia,%,85.8
+2023,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,Mujer,Bizkaia,%,88.7
+2021,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,Mujer,Bizkaia,%,80.2
+2020,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,Mujer,Bizkaia,%,87.6
+2019,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,Mujer,Bizkaia,%,90.7
+2024,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,Mujer,Bizkaia,%,84.0
+2021,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,Mujer,Gipuzkoa,%,87.5
+2025,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,Mujer,Gipuzkoa,%,81.9
+2024,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,Mujer,Gipuzkoa,%,87.3
+2023,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,Mujer,Gipuzkoa,%,91.7
+2022,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,Mujer,Gipuzkoa,%,84.4
+2020,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,Mujer,Gipuzkoa,%,90.0
+2019,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,Mujer,Gipuzkoa,%,85.4
+2023,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,Hombre,,%,77.2
+2019,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,Hombre,,%,81.9
+2020,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,Hombre,,%,86.4
+2025,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,Hombre,,%,77.0
+2022,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,Hombre,,%,77.0
+2024,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,Hombre,,%,73.2
+2021,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,Hombre,,%,82.5
+2023,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,Hombre,Araba/Álava,%,76.9
+2022,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,Hombre,Araba/Álava,%,73.5
+2019,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,Hombre,Araba/Álava,%,88.5
+2024,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,Hombre,Araba/Álava,%,77.8
+2020,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,Hombre,Araba/Álava,%,82.5
+2025,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,Hombre,Araba/Álava,%,85.4
+2021,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,Hombre,Araba/Álava,%,71.4
+2021,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,Hombre,Bizkaia,%,86.3
+2022,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,Hombre,Bizkaia,%,81.1
+2025,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,Hombre,Bizkaia,%,76.9
+2024,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,Hombre,Bizkaia,%,66.6
+2023,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,Hombre,Bizkaia,%,75.5
+2020,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,Hombre,Bizkaia,%,85.8
+2019,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,Hombre,Bizkaia,%,85.5
+2021,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,Hombre,Gipuzkoa,%,82.4
+2023,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,Hombre,Gipuzkoa,%,79.9
+2025,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,Hombre,Gipuzkoa,%,74.0
+2024,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,Hombre,Gipuzkoa,%,80.5
+2022,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,Hombre,Gipuzkoa,%,72.4
+2020,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,Hombre,Gipuzkoa,%,89.2
+2019,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",16-24 años,Hombre,Gipuzkoa,%,74.7
+2019,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,,,%,37.4
+2025,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,,,%,37.4
+2020,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,,,%,39.9
+2021,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,,,%,41.0
+2022,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,,,%,37.2
+2024,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,,,%,34.5
+2023,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,,,%,35.4
+2020,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,,Araba/Álava,%,38.5
+2019,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,,Araba/Álava,%,36.4
+2025,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,,Araba/Álava,%,37.9
+2021,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,,Araba/Álava,%,42.5
+2023,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,,Araba/Álava,%,32.1
+2024,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,,Araba/Álava,%,31.7
+2022,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,,Araba/Álava,%,38.7
+2019,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,,Bizkaia,%,37.6
+2021,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,,Bizkaia,%,41.4
+2024,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,,Bizkaia,%,36.0
+2025,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,,Bizkaia,%,37.8
+2023,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,,Bizkaia,%,35.5
+2020,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,,Bizkaia,%,40.2
+2022,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,,Bizkaia,%,36.6
+2022,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,,Gipuzkoa,%,37.3
+2019,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,,Gipuzkoa,%,37.5
+2021,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,,Gipuzkoa,%,39.7
+2020,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,,Gipuzkoa,%,40.0
+2024,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,,Gipuzkoa,%,33.3
+2025,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,,Gipuzkoa,%,36.5
+2023,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,,Gipuzkoa,%,36.9
+2021,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,Mujer,,%,40.3
+2019,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,Mujer,,%,36.5
+2024,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,Mujer,,%,32.4
+2023,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,Mujer,,%,35.7
+2022,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,Mujer,,%,37.5
+2020,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,Mujer,,%,39.6
+2025,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,Mujer,,%,37.0
+2023,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,Mujer,Araba/Álava,%,33.3
+2022,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,Mujer,Araba/Álava,%,38.5
+2020,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,Mujer,Araba/Álava,%,38.7
+2024,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,Mujer,Araba/Álava,%,28.5
+2025,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,Mujer,Araba/Álava,%,37.7
+2021,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,Mujer,Araba/Álava,%,40.2
+2019,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,Mujer,Araba/Álava,%,37.2
+2019,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,Mujer,Bizkaia,%,35.5
+2023,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,Mujer,Bizkaia,%,36.5
+2022,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,Mujer,Bizkaia,%,36.8
+2025,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,Mujer,Bizkaia,%,38.0
+2021,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,Mujer,Bizkaia,%,39.4
+2020,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,Mujer,Bizkaia,%,39.0
+2024,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,Mujer,Bizkaia,%,34.4
+2021,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,Mujer,Gipuzkoa,%,41.8
+2020,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,Mujer,Gipuzkoa,%,41.1
+2024,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,Mujer,Gipuzkoa,%,30.9
+2022,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,Mujer,Gipuzkoa,%,38.2
+2019,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,Mujer,Gipuzkoa,%,37.9
+2023,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,Mujer,Gipuzkoa,%,35.6
+2025,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,Mujer,Gipuzkoa,%,34.9
+2025,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,Hombre,,%,37.8
+2022,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,Hombre,,%,36.8
+2023,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,Hombre,,%,35.1
+2021,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,Hombre,,%,41.7
+2019,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,Hombre,,%,38.3
+2024,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,Hombre,,%,36.7
+2020,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,Hombre,,%,40.1
+2023,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,Hombre,Araba/Álava,%,30.9
+2021,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,Hombre,Araba/Álava,%,44.8
+2025,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,Hombre,Araba/Álava,%,38.2
+2022,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,Hombre,Araba/Álava,%,39.0
+2024,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,Hombre,Araba/Álava,%,35.1
+2020,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,Hombre,Araba/Álava,%,38.3
+2019,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,Hombre,Araba/Álava,%,35.5
+2025,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,Hombre,Bizkaia,%,37.5
+2024,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,Hombre,Bizkaia,%,37.8
+2020,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,Hombre,Bizkaia,%,41.4
+2021,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,Hombre,Bizkaia,%,43.4
+2023,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,Hombre,Bizkaia,%,34.4
+2022,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,Hombre,Bizkaia,%,36.4
+2019,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,Hombre,Bizkaia,%,39.7
+2024,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,Hombre,Gipuzkoa,%,35.8
+2023,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,Hombre,Gipuzkoa,%,38.3
+2022,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,Hombre,Gipuzkoa,%,36.3
+2021,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,Hombre,Gipuzkoa,%,37.5
+2020,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,Hombre,Gipuzkoa,%,38.9
+2019,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,Hombre,Gipuzkoa,%,37.2
+2025,"Crear presentaciones o documentos que integren texto, imágenes, tablas o gráficos",25-74 años,Hombre,Gipuzkoa,%,38.1
+2023,Programar en un lenguaje de programación,,,,%,6.2
+2021,Programar en un lenguaje de programación,,,,%,5.3
+2025,Programar en un lenguaje de programación,,,,%,5.8
+2024,Programar en un lenguaje de programación,,,,%,4.5
+2020,Programar en un lenguaje de programación,,,,%,5.7
+2022,Programar en un lenguaje de programación,,,,%,5.3
+2019,Programar en un lenguaje de programación,,,,%,5.6
+2020,Programar en un lenguaje de programación,,,Araba/Álava,%,5.7
+2021,Programar en un lenguaje de programación,,,Araba/Álava,%,5.7
+2019,Programar en un lenguaje de programación,,,Araba/Álava,%,5.3
+2024,Programar en un lenguaje de programación,,,Araba/Álava,%,3.7
+2023,Programar en un lenguaje de programación,,,Araba/Álava,%,4.3
+2025,Programar en un lenguaje de programación,,,Araba/Álava,%,4.9
+2022,Programar en un lenguaje de programación,,,Araba/Álava,%,4.7
+2024,Programar en un lenguaje de programación,,,Bizkaia,%,4.9
+2019,Programar en un lenguaje de programación,,,Bizkaia,%,5.8
+2022,Programar en un lenguaje de programación,,,Bizkaia,%,5.1
+2023,Programar en un lenguaje de programación,,,Bizkaia,%,6.9
+2025,Programar en un lenguaje de programación,,,Bizkaia,%,6.5
+2021,Programar en un lenguaje de programación,,,Bizkaia,%,5.2
+2020,Programar en un lenguaje de programación,,,Bizkaia,%,5.7
+2025,Programar en un lenguaje de programación,,,Gipuzkoa,%,5.2
+2019,Programar en un lenguaje de programación,,,Gipuzkoa,%,5.2
+2024,Programar en un lenguaje de programación,,,Gipuzkoa,%,4.1
+2020,Programar en un lenguaje de programación,,,Gipuzkoa,%,5.6
+2022,Programar en un lenguaje de programación,,,Gipuzkoa,%,5.7
+2021,Programar en un lenguaje de programación,,,Gipuzkoa,%,5.2
+2023,Programar en un lenguaje de programación,,,Gipuzkoa,%,6.1
+2024,Programar en un lenguaje de programación,,Mujer,,%,2.9
+2022,Programar en un lenguaje de programación,,Mujer,,%,3.4
+2019,Programar en un lenguaje de programación,,Mujer,,%,3.1
+2023,Programar en un lenguaje de programación,,Mujer,,%,4.4
+2021,Programar en un lenguaje de programación,,Mujer,,%,3.1
+2025,Programar en un lenguaje de programación,,Mujer,,%,3.1
+2020,Programar en un lenguaje de programación,,Mujer,,%,4.0
+2019,Programar en un lenguaje de programación,,Mujer,Araba/Álava,%,3.0
+2021,Programar en un lenguaje de programación,,Mujer,Araba/Álava,%,3.7
+2024,Programar en un lenguaje de programación,,Mujer,Araba/Álava,%,2.1
+2025,Programar en un lenguaje de programación,,Mujer,Araba/Álava,%,3.5
+2023,Programar en un lenguaje de programación,,Mujer,Araba/Álava,%,3.5
+2022,Programar en un lenguaje de programación,,Mujer,Araba/Álava,%,3.0
+2020,Programar en un lenguaje de programación,,Mujer,Araba/Álava,%,4.6
+2025,Programar en un lenguaje de programación,,Mujer,Bizkaia,%,3.0
+2023,Programar en un lenguaje de programación,,Mujer,Bizkaia,%,5.3
+2020,Programar en un lenguaje de programación,,Mujer,Bizkaia,%,3.6
+2021,Programar en un lenguaje de programación,,Mujer,Bizkaia,%,3.3
+2019,Programar en un lenguaje de programación,,Mujer,Bizkaia,%,3.3
+2024,Programar en un lenguaje de programación,,Mujer,Bizkaia,%,4.0
+2022,Programar en un lenguaje de programación,,Mujer,Bizkaia,%,3.7
+2025,Programar en un lenguaje de programación,,Mujer,Gipuzkoa,%,3.1
+2023,Programar en un lenguaje de programación,,Mujer,Gipuzkoa,%,3.4
+2022,Programar en un lenguaje de programación,,Mujer,Gipuzkoa,%,2.8
+2021,Programar en un lenguaje de programación,,Mujer,Gipuzkoa,%,2.6
+2020,Programar en un lenguaje de programación,,Mujer,Gipuzkoa,%,4.5
+2019,Programar en un lenguaje de programación,,Mujer,Gipuzkoa,%,2.7
+2024,Programar en un lenguaje de programación,,Mujer,Gipuzkoa,%,1.5
+2021,Programar en un lenguaje de programación,,Hombre,,%,7.4
+2023,Programar en un lenguaje de programación,,Hombre,,%,8.1
+2019,Programar en un lenguaje de programación,,Hombre,,%,8.1
+2024,Programar en un lenguaje de programación,,Hombre,,%,6.1
+2025,Programar en un lenguaje de programación,,Hombre,,%,8.6
+2020,Programar en un lenguaje de programación,,Hombre,,%,7.4
+2022,Programar en un lenguaje de programación,,Hombre,,%,7.2
+2022,Programar en un lenguaje de programación,,Hombre,Araba/Álava,%,6.5
+2025,Programar en un lenguaje de programación,,Hombre,Araba/Álava,%,6.3
+2023,Programar en un lenguaje de programación,,Hombre,Araba/Álava,%,5.0
+2020,Programar en un lenguaje de programación,,Hombre,Araba/Álava,%,6.8
+2021,Programar en un lenguaje de programación,,Hombre,Araba/Álava,%,7.7
+2024,Programar en un lenguaje de programación,,Hombre,Araba/Álava,%,5.3
+2019,Programar en un lenguaje de programación,,Hombre,Araba/Álava,%,7.6
+2019,Programar en un lenguaje de programación,,Hombre,Bizkaia,%,8.5
+2021,Programar en un lenguaje de programación,,Hombre,Bizkaia,%,7.0
+2023,Programar en un lenguaje de programación,,Hombre,Bizkaia,%,8.5
+2025,Programar en un lenguaje de programación,,Hombre,Bizkaia,%,10.1
+2022,Programar en un lenguaje de programación,,Hombre,Bizkaia,%,6.6
+2020,Programar en un lenguaje de programación,,Hombre,Bizkaia,%,8.0
+2024,Programar en un lenguaje de programación,,Hombre,Bizkaia,%,5.8
+2024,Programar en un lenguaje de programación,,Hombre,Gipuzkoa,%,6.9
+2023,Programar en un lenguaje de programación,,Hombre,Gipuzkoa,%,8.9
+2025,Programar en un lenguaje de programación,,Hombre,Gipuzkoa,%,7.3
+2021,Programar en un lenguaje de programación,,Hombre,Gipuzkoa,%,7.8
+2022,Programar en un lenguaje de programación,,Hombre,Gipuzkoa,%,8.6
+2020,Programar en un lenguaje de programación,,Hombre,Gipuzkoa,%,6.7
+2019,Programar en un lenguaje de programación,,Hombre,Gipuzkoa,%,7.8
+2021,Programar en un lenguaje de programación,16-24 años,,,%,14.7
+2023,Programar en un lenguaje de programación,16-24 años,,,%,16.6
+2020,Programar en un lenguaje de programación,16-24 años,,,%,13.2
+2024,Programar en un lenguaje de programación,16-24 años,,,%,11.2
+2022,Programar en un lenguaje de programación,16-24 años,,,%,11.0
+2025,Programar en un lenguaje de programación,16-24 años,,,%,11.8
+2019,Programar en un lenguaje de programación,16-24 años,,,%,12.3
+2025,Programar en un lenguaje de programación,16-24 años,,Araba/Álava,%,8.0
+2022,Programar en un lenguaje de programación,16-24 años,,Araba/Álava,%,11.1
+2020,Programar en un lenguaje de programación,16-24 años,,Araba/Álava,%,7.0
+2021,Programar en un lenguaje de programación,16-24 años,,Araba/Álava,%,14.5
+2023,Programar en un lenguaje de programación,16-24 años,,Araba/Álava,%,14.4
+2019,Programar en un lenguaje de programación,16-24 años,,Araba/Álava,%,10.6
+2024,Programar en un lenguaje de programación,16-24 años,,Araba/Álava,%,17.1
+2020,Programar en un lenguaje de programación,16-24 años,,Bizkaia,%,16.1
+2019,Programar en un lenguaje de programación,16-24 años,,Bizkaia,%,14.2
+2025,Programar en un lenguaje de programación,16-24 años,,Bizkaia,%,13.9
+2024,Programar en un lenguaje de programación,16-24 años,,Bizkaia,%,10.2
+2021,Programar en un lenguaje de programación,16-24 años,,Bizkaia,%,14.5
+2023,Programar en un lenguaje de programación,16-24 años,,Bizkaia,%,20.1
+2022,Programar en un lenguaje de programación,16-24 años,,Bizkaia,%,11.4
+2021,Programar en un lenguaje de programación,16-24 años,,Gipuzkoa,%,14.9
+2023,Programar en un lenguaje de programación,16-24 años,,Gipuzkoa,%,12.5
+2025,Programar en un lenguaje de programación,16-24 años,,Gipuzkoa,%,10.3
+2024,Programar en un lenguaje de programación,16-24 años,,Gipuzkoa,%,10.3
+2022,Programar en un lenguaje de programación,16-24 años,,Gipuzkoa,%,10.5
+2020,Programar en un lenguaje de programación,16-24 años,,Gipuzkoa,%,11.7
+2019,Programar en un lenguaje de programación,16-24 años,,Gipuzkoa,%,10.5
+2019,Programar en un lenguaje de programación,16-24 años,Mujer,,%,8.9
+2022,Programar en un lenguaje de programación,16-24 años,Mujer,,%,9.1
+2021,Programar en un lenguaje de programación,16-24 años,Mujer,,%,11.1
+2025,Programar en un lenguaje de programación,16-24 años,Mujer,,%,8.0
+2024,Programar en un lenguaje de programación,16-24 años,Mujer,,%,6.3
+2020,Programar en un lenguaje de programación,16-24 años,Mujer,,%,9.7
+2023,Programar en un lenguaje de programación,16-24 años,Mujer,,%,12.1
+2019,Programar en un lenguaje de programación,16-24 años,Mujer,Araba/Álava,%,7.9
+2021,Programar en un lenguaje de programación,16-24 años,Mujer,Araba/Álava,%,9.2
+2024,Programar en un lenguaje de programación,16-24 años,Mujer,Araba/Álava,%,5.9
+2022,Programar en un lenguaje de programación,16-24 años,Mujer,Araba/Álava,%,4.7
+2020,Programar en un lenguaje de programación,16-24 años,Mujer,Araba/Álava,%,4.1
+2025,Programar en un lenguaje de programación,16-24 años,Mujer,Araba/Álava,%,6.5
+2023,Programar en un lenguaje de programación,16-24 años,Mujer,Araba/Álava,%,9.0
+2025,Programar en un lenguaje de programación,16-24 años,Mujer,Bizkaia,%,9.6
+2024,Programar en un lenguaje de programación,16-24 años,Mujer,Bizkaia,%,8.4
+2023,Programar en un lenguaje de programación,16-24 años,Mujer,Bizkaia,%,15.5
+2022,Programar en un lenguaje de programación,16-24 años,Mujer,Bizkaia,%,13.1
+2021,Programar en un lenguaje de programación,16-24 años,Mujer,Bizkaia,%,13.4
+2020,Programar en un lenguaje de programación,16-24 años,Mujer,Bizkaia,%,11.5
+2019,Programar en un lenguaje de programación,16-24 años,Mujer,Bizkaia,%,10.7
+2023,Programar en un lenguaje de programación,16-24 años,Mujer,Gipuzkoa,%,8.3
+2025,Programar en un lenguaje de programación,16-24 años,Mujer,Gipuzkoa,%,6.2
+2024,Programar en un lenguaje de programación,16-24 años,Mujer,Gipuzkoa,%,3.6
+2022,Programar en un lenguaje de programación,16-24 años,Mujer,Gipuzkoa,%,4.7
+2021,Programar en un lenguaje de programación,16-24 años,Mujer,Gipuzkoa,%,8.3
+2019,Programar en un lenguaje de programación,16-24 años,Mujer,Gipuzkoa,%,6.8
+2020,Programar en un lenguaje de programación,16-24 años,Mujer,Gipuzkoa,%,9.3
+2023,Programar en un lenguaje de programación,16-24 años,Hombre,,%,20.8
+2020,Programar en un lenguaje de programación,16-24 años,Hombre,,%,16.5
+2024,Programar en un lenguaje de programación,16-24 años,Hombre,,%,15.6
+2019,Programar en un lenguaje de programación,16-24 años,Hombre,,%,15.8
+2025,Programar en un lenguaje de programación,16-24 años,Hombre,,%,15.5
+2021,Programar en un lenguaje de programación,16-24 años,Hombre,,%,17.8
+2022,Programar en un lenguaje de programación,16-24 años,Hombre,,%,12.9
+2025,Programar en un lenguaje de programación,16-24 años,Hombre,Araba/Álava,%,9.8
+2024,Programar en un lenguaje de programación,16-24 años,Hombre,Araba/Álava,%,27.8
+2022,Programar en un lenguaje de programación,16-24 años,Hombre,Araba/Álava,%,17.3
+2023,Programar en un lenguaje de programación,16-24 años,Hombre,Araba/Álava,%,18.6
+2020,Programar en un lenguaje de programación,16-24 años,Hombre,Araba/Álava,%,9.6
+2019,Programar en un lenguaje de programación,16-24 años,Hombre,Araba/Álava,%,13.7
+2021,Programar en un lenguaje de programación,16-24 años,Hombre,Araba/Álava,%,18.8
+2022,Programar en un lenguaje de programación,16-24 años,Hombre,Bizkaia,%,9.6
+2020,Programar en un lenguaje de programación,16-24 años,Hombre,Bizkaia,%,20.5
+2025,Programar en un lenguaje de programación,16-24 años,Hombre,Bizkaia,%,17.8
+2023,Programar en un lenguaje de programación,16-24 años,Hombre,Bizkaia,%,24.5
+2021,Programar en un lenguaje de programación,16-24 años,Hombre,Bizkaia,%,15.6
+2019,Programar en un lenguaje de programación,16-24 años,Hombre,Bizkaia,%,17.7
+2024,Programar en un lenguaje de programación,16-24 años,Hombre,Bizkaia,%,11.8
+2025,Programar en un lenguaje de programación,16-24 años,Hombre,Gipuzkoa,%,14.1
+2021,Programar en un lenguaje de programación,16-24 años,Hombre,Gipuzkoa,%,20.3
+2024,Programar en un lenguaje de programación,16-24 años,Hombre,Gipuzkoa,%,16.1
+2020,Programar en un lenguaje de programación,16-24 años,Hombre,Gipuzkoa,%,13.9
+2022,Programar en un lenguaje de programación,16-24 años,Hombre,Gipuzkoa,%,16.0
+2019,Programar en un lenguaje de programación,16-24 años,Hombre,Gipuzkoa,%,14.1
+2023,Programar en un lenguaje de programación,16-24 años,Hombre,Gipuzkoa,%,16.5
+2021,Programar en un lenguaje de programación,25-74 años,,,%,4.0
+2025,Programar en un lenguaje de programación,25-74 años,,,%,4.9
+2019,Programar en un lenguaje de programación,25-74 años,,,%,4.8
+2020,Programar en un lenguaje de programación,25-74 años,,,%,4.8
+2023,Programar en un lenguaje de programación,25-74 años,,,%,4.9
+2022,Programar en un lenguaje de programación,25-74 años,,,%,4.5
+2024,Programar en un lenguaje de programación,25-74 años,,,%,3.5
+2023,Programar en un lenguaje de programación,25-74 años,,Araba/Álava,%,2.9
+2022,Programar en un lenguaje de programación,25-74 años,,Araba/Álava,%,4.0
+2019,Programar en un lenguaje de programación,25-74 años,,Araba/Álava,%,4.7
+2025,Programar en un lenguaje de programación,25-74 años,,Araba/Álava,%,4.5
+2024,Programar en un lenguaje de programación,25-74 años,,Araba/Álava,%,1.8
+2020,Programar en un lenguaje de programación,25-74 años,,Araba/Álava,%,5.6
+2021,Programar en un lenguaje de programación,25-74 años,,Araba/Álava,%,4.5
+2019,Programar en un lenguaje de programación,25-74 años,,Bizkaia,%,5.0
+2020,Programar en un lenguaje de programación,25-74 años,,Bizkaia,%,4.5
+2023,Programar en un lenguaje de programación,25-74 años,,Bizkaia,%,5.2
+2021,Programar en un lenguaje de programación,25-74 años,,Bizkaia,%,4.0
+2024,Programar en un lenguaje de programación,25-74 años,,Bizkaia,%,4.2
+2022,Programar en un lenguaje de programación,25-74 años,,Bizkaia,%,4.3
+2025,Programar en un lenguaje de programación,25-74 años,,Bizkaia,%,5.4
+2023,Programar en un lenguaje de programación,25-74 años,,Gipuzkoa,%,5.2
+2022,Programar en un lenguaje de programación,25-74 años,,Gipuzkoa,%,5.0
+2019,Programar en un lenguaje de programación,25-74 años,,Gipuzkoa,%,4.6
+2020,Programar en un lenguaje de programación,25-74 años,,Gipuzkoa,%,4.8
+2021,Programar en un lenguaje de programación,25-74 años,,Gipuzkoa,%,3.8
+2024,Programar en un lenguaje de programación,25-74 años,,Gipuzkoa,%,3.2
+2025,Programar en un lenguaje de programación,25-74 años,,Gipuzkoa,%,4.4
+2025,Programar en un lenguaje de programación,25-74 años,Mujer,,%,2.4
+2019,Programar en un lenguaje de programación,25-74 años,Mujer,,%,2.4
+2020,Programar en un lenguaje de programación,25-74 años,Mujer,,%,3.4
+2023,Programar en un lenguaje de programación,25-74 años,Mujer,,%,3.5
+2022,Programar en un lenguaje de programación,25-74 años,Mujer,,%,2.6
+2024,Programar en un lenguaje de programación,25-74 años,Mujer,,%,2.5
+2021,Programar en un lenguaje de programación,25-74 años,Mujer,,%,2.1
+2019,Programar en un lenguaje de programación,25-74 años,Mujer,Araba/Álava,%,2.5
+2025,Programar en un lenguaje de programación,25-74 años,Mujer,Araba/Álava,%,3.1
+2023,Programar en un lenguaje de programación,25-74 años,Mujer,Araba/Álava,%,2.9
+2020,Programar en un lenguaje de programación,25-74 años,Mujer,Araba/Álava,%,4.7
+2024,Programar en un lenguaje de programación,25-74 años,Mujer,Araba/Álava,%,1.6
+2022,Programar en un lenguaje de programación,25-74 años,Mujer,Araba/Álava,%,2.8
+2021,Programar en un lenguaje de programación,25-74 años,Mujer,Araba/Álava,%,3.0
+2025,Programar en un lenguaje de programación,25-74 años,Mujer,Bizkaia,%,2.1
+2024,Programar en un lenguaje de programación,25-74 años,Mujer,Bizkaia,%,3.5
+2022,Programar en un lenguaje de programación,25-74 años,Mujer,Bizkaia,%,2.6
+2023,Programar en un lenguaje de programación,25-74 años,Mujer,Bizkaia,%,4.1
+2021,Programar en un lenguaje de programación,25-74 años,Mujer,Bizkaia,%,2.1
+2019,Programar en un lenguaje de programación,25-74 años,Mujer,Bizkaia,%,2.5
+2020,Programar en un lenguaje de programación,25-74 años,Mujer,Bizkaia,%,2.7
+2021,Programar en un lenguaje de programación,25-74 años,Mujer,Gipuzkoa,%,1.8
+2023,Programar en un lenguaje de programación,25-74 años,Mujer,Gipuzkoa,%,2.7
+2020,Programar en un lenguaje de programación,25-74 años,Mujer,Gipuzkoa,%,3.9
+2019,Programar en un lenguaje de programación,25-74 años,Mujer,Gipuzkoa,%,2.2
+2025,Programar en un lenguaje de programación,25-74 años,Mujer,Gipuzkoa,%,2.7
+2024,Programar en un lenguaje de programación,25-74 años,Mujer,Gipuzkoa,%,1.2
+2022,Programar en un lenguaje de programación,25-74 años,Mujer,Gipuzkoa,%,2.6
+2025,Programar en un lenguaje de programación,25-74 años,Hombre,,%,7.5
+2023,Programar en un lenguaje de programación,25-74 años,Hombre,,%,6.3
+2024,Programar en un lenguaje de programación,25-74 años,Hombre,,%,4.6
+2021,Programar en un lenguaje de programación,25-74 años,Hombre,,%,5.9
+2020,Programar en un lenguaje de programación,25-74 años,Hombre,,%,6.2
+2022,Programar en un lenguaje de programación,25-74 años,Hombre,,%,6.5
+2019,Programar en un lenguaje de programación,25-74 años,Hombre,,%,7.3
+2025,Programar en un lenguaje de programación,25-74 años,Hombre,Araba/Álava,%,5.9
+2020,Programar en un lenguaje de programación,25-74 años,Hombre,Araba/Álava,%,6.5
+2024,Programar en un lenguaje de programación,25-74 años,Hombre,Araba/Álava,%,2.1
+2022,Programar en un lenguaje de programación,25-74 años,Hombre,Araba/Álava,%,5.2
+2019,Programar en un lenguaje de programación,25-74 años,Hombre,Araba/Álava,%,7.0
+2021,Programar en un lenguaje de programación,25-74 años,Hombre,Araba/Álava,%,6.0
+2023,Programar en un lenguaje de programación,25-74 años,Hombre,Araba/Álava,%,2.8
+2025,Programar en un lenguaje de programación,25-74 años,Hombre,Bizkaia,%,8.8
+2022,Programar en un lenguaje de programación,25-74 años,Hombre,Bizkaia,%,6.2
+2023,Programar en un lenguaje de programación,25-74 años,Hombre,Bizkaia,%,6.4
+2019,Programar en un lenguaje de programación,25-74 años,Hombre,Bizkaia,%,7.5
+2024,Programar en un lenguaje de programación,25-74 años,Hombre,Bizkaia,%,4.9
+2020,Programar en un lenguaje de programación,25-74 años,Hombre,Bizkaia,%,6.4
+2021,Programar en un lenguaje de programación,25-74 años,Hombre,Bizkaia,%,5.9
+2020,Programar en un lenguaje de programación,25-74 años,Hombre,Gipuzkoa,%,5.7
+2025,Programar en un lenguaje de programación,25-74 años,Hombre,Gipuzkoa,%,6.2
+2024,Programar en un lenguaje de programación,25-74 años,Hombre,Gipuzkoa,%,5.3
+2023,Programar en un lenguaje de programación,25-74 años,Hombre,Gipuzkoa,%,7.9
+2022,Programar en un lenguaje de programación,25-74 años,Hombre,Gipuzkoa,%,7.5
+2019,Programar en un lenguaje de programación,25-74 años,Hombre,Gipuzkoa,%,7.0
+2021,Programar en un lenguaje de programación,25-74 años,Hombre,Gipuzkoa,%,5.8
+2023,Usar hojas de cálculo,,,,%,41.9
+2025,Usar hojas de cálculo,,,,%,42.4
+2020,Usar hojas de cálculo,,,,%,41.1
+2019,Usar hojas de cálculo,,,,%,41.9
+2021,Usar hojas de cálculo,,,,%,44.4
+2024,Usar hojas de cálculo,,,,%,42.7
+2022,Usar hojas de cálculo,,,,%,42.2
+2024,Usar hojas de cálculo,,,Araba/Álava,%,41.5
+2022,Usar hojas de cálculo,,,Araba/Álava,%,44.9
+2021,Usar hojas de cálculo,,,Araba/Álava,%,44.1
+2019,Usar hojas de cálculo,,,Araba/Álava,%,42.9
+2025,Usar hojas de cálculo,,,Araba/Álava,%,41.7
+2020,Usar hojas de cálculo,,,Araba/Álava,%,39.7
+2023,Usar hojas de cálculo,,,Araba/Álava,%,37.4
+2019,Usar hojas de cálculo,,,Bizkaia,%,41.1
+2022,Usar hojas de cálculo,,,Bizkaia,%,40.9
+2024,Usar hojas de cálculo,,,Bizkaia,%,43.5
+2025,Usar hojas de cálculo,,,Bizkaia,%,43.3
+2023,Usar hojas de cálculo,,,Bizkaia,%,41.5
+2021,Usar hojas de cálculo,,,Bizkaia,%,44.6
+2020,Usar hojas de cálculo,,,Bizkaia,%,41.2
+2024,Usar hojas de cálculo,,,Gipuzkoa,%,42.1
+2022,Usar hojas de cálculo,,,Gipuzkoa,%,43.2
+2020,Usar hojas de cálculo,,,Gipuzkoa,%,41.6
+2019,Usar hojas de cálculo,,,Gipuzkoa,%,42.8
+2023,Usar hojas de cálculo,,,Gipuzkoa,%,44.4
+2025,Usar hojas de cálculo,,,Gipuzkoa,%,41.2
+2021,Usar hojas de cálculo,,,Gipuzkoa,%,44.4
+2022,Usar hojas de cálculo,,Mujer,,%,41.1
+2021,Usar hojas de cálculo,,Mujer,,%,42.3
+2023,Usar hojas de cálculo,,Mujer,,%,40.9
+2025,Usar hojas de cálculo,,Mujer,,%,40.7
+2020,Usar hojas de cálculo,,Mujer,,%,39.8
+2019,Usar hojas de cálculo,,Mujer,,%,39.6
+2024,Usar hojas de cálculo,,Mujer,,%,39.0
+2023,Usar hojas de cálculo,,Mujer,Araba/Álava,%,39.3
+2020,Usar hojas de cálculo,,Mujer,Araba/Álava,%,39.7
+2022,Usar hojas de cálculo,,Mujer,Araba/Álava,%,43.9
+2019,Usar hojas de cálculo,,Mujer,Araba/Álava,%,40.2
+2021,Usar hojas de cálculo,,Mujer,Araba/Álava,%,43.2
+2025,Usar hojas de cálculo,,Mujer,Araba/Álava,%,39.3
+2024,Usar hojas de cálculo,,Mujer,Araba/Álava,%,37.1
+2022,Usar hojas de cálculo,,Mujer,Bizkaia,%,38.9
+2021,Usar hojas de cálculo,,Mujer,Bizkaia,%,41.0
+2020,Usar hojas de cálculo,,Mujer,Bizkaia,%,38.2
+2023,Usar hojas de cálculo,,Mujer,Bizkaia,%,39.9
+2024,Usar hojas de cálculo,,Mujer,Bizkaia,%,39.4
+2019,Usar hojas de cálculo,,Mujer,Bizkaia,%,38.1
+2025,Usar hojas de cálculo,,Mujer,Bizkaia,%,41.8
+2023,Usar hojas de cálculo,,Mujer,Gipuzkoa,%,43.2
+2024,Usar hojas de cálculo,,Mujer,Gipuzkoa,%,39.2
+2021,Usar hojas de cálculo,,Mujer,Gipuzkoa,%,44.0
+2022,Usar hojas de cálculo,,Mujer,Gipuzkoa,%,43.4
+2020,Usar hojas de cálculo,,Mujer,Gipuzkoa,%,42.3
+2025,Usar hojas de cálculo,,Mujer,Gipuzkoa,%,39.6
+2019,Usar hojas de cálculo,,Mujer,Gipuzkoa,%,41.6
+2020,Usar hojas de cálculo,,Hombre,,%,42.5
+2022,Usar hojas de cálculo,,Hombre,,%,43.4
+2024,Usar hojas de cálculo,,Hombre,,%,46.7
+2023,Usar hojas de cálculo,,Hombre,,%,42.8
+2025,Usar hojas de cálculo,,Hombre,,%,44.1
+2021,Usar hojas de cálculo,,Hombre,,%,46.6
+2019,Usar hojas de cálculo,,Hombre,,%,44.3
+2020,Usar hojas de cálculo,,Hombre,Araba/Álava,%,39.7
+2022,Usar hojas de cálculo,,Hombre,Araba/Álava,%,46.0
+2023,Usar hojas de cálculo,,Hombre,Araba/Álava,%,35.4
+2019,Usar hojas de cálculo,,Hombre,Araba/Álava,%,45.7
+2025,Usar hojas de cálculo,,Hombre,Araba/Álava,%,44.2
+2021,Usar hojas de cálculo,,Hombre,Araba/Álava,%,44.9
+2024,Usar hojas de cálculo,,Hombre,Araba/Álava,%,46.1
+2019,Usar hojas de cálculo,,Hombre,Bizkaia,%,44.2
+2025,Usar hojas de cálculo,,Hombre,Bizkaia,%,44.8
+2023,Usar hojas de cálculo,,Hombre,Bizkaia,%,43.3
+2020,Usar hojas de cálculo,,Hombre,Bizkaia,%,44.3
+2021,Usar hojas de cálculo,,Hombre,Bizkaia,%,48.2
+2022,Usar hojas de cálculo,,Hombre,Bizkaia,%,43.0
+2024,Usar hojas de cálculo,,Hombre,Bizkaia,%,47.8
+2025,Usar hojas de cálculo,,Hombre,Gipuzkoa,%,42.9
+2022,Usar hojas de cálculo,,Hombre,Gipuzkoa,%,43.0
+2024,Usar hojas de cálculo,,Hombre,Gipuzkoa,%,45.1
+2019,Usar hojas de cálculo,,Hombre,Gipuzkoa,%,43.9
+2020,Usar hojas de cálculo,,Hombre,Gipuzkoa,%,40.9
+2021,Usar hojas de cálculo,,Hombre,Gipuzkoa,%,44.8
+2023,Usar hojas de cálculo,,Hombre,Gipuzkoa,%,45.6
+2025,Usar hojas de cálculo,16-24 años,,,%,62.4
+2019,Usar hojas de cálculo,16-24 años,,,%,70.1
+2021,Usar hojas de cálculo,16-24 años,,,%,67.3
+2020,Usar hojas de cálculo,16-24 años,,,%,70.7
+2022,Usar hojas de cálculo,16-24 años,,,%,68.3
+2023,Usar hojas de cálculo,16-24 años,,,%,63.6
+2024,Usar hojas de cálculo,16-24 años,,,%,64.1
+2020,Usar hojas de cálculo,16-24 años,,Araba/Álava,%,68.9
+2024,Usar hojas de cálculo,16-24 años,,Araba/Álava,%,67.6
+2021,Usar hojas de cálculo,16-24 años,,Araba/Álava,%,61.3
+2025,Usar hojas de cálculo,16-24 años,,Araba/Álava,%,61.5
+2023,Usar hojas de cálculo,16-24 años,,Araba/Álava,%,57.8
+2019,Usar hojas de cálculo,16-24 años,,Araba/Álava,%,70.0
+2022,Usar hojas de cálculo,16-24 años,,Araba/Álava,%,74.6
+2019,Usar hojas de cálculo,16-24 años,,Bizkaia,%,69.1
+2023,Usar hojas de cálculo,16-24 años,,Bizkaia,%,60.9
+2025,Usar hojas de cálculo,16-24 años,,Bizkaia,%,62.0
+2020,Usar hojas de cálculo,16-24 años,,Bizkaia,%,68.8
+2021,Usar hojas de cálculo,16-24 años,,Bizkaia,%,64.2
+2022,Usar hojas de cálculo,16-24 años,,Bizkaia,%,69.1
+2024,Usar hojas de cálculo,16-24 años,,Bizkaia,%,60.4
+2022,Usar hojas de cálculo,16-24 años,,Gipuzkoa,%,64.6
+2021,Usar hojas de cálculo,16-24 años,,Gipuzkoa,%,74.5
+2019,Usar hojas de cálculo,16-24 años,,Gipuzkoa,%,71.5
+2025,Usar hojas de cálculo,16-24 años,,Gipuzkoa,%,63.4
+2024,Usar hojas de cálculo,16-24 años,,Gipuzkoa,%,67.8
+2023,Usar hojas de cálculo,16-24 años,,Gipuzkoa,%,70.1
+2020,Usar hojas de cálculo,16-24 años,,Gipuzkoa,%,74.4
+2020,Usar hojas de cálculo,16-24 años,Mujer,,%,68.8
+2024,Usar hojas de cálculo,16-24 años,Mujer,,%,64.1
+2025,Usar hojas de cálculo,16-24 años,Mujer,,%,64.8
+2019,Usar hojas de cálculo,16-24 años,Mujer,,%,70.3
+2021,Usar hojas de cálculo,16-24 años,Mujer,,%,64.2
+2022,Usar hojas de cálculo,16-24 años,Mujer,,%,68.7
+2023,Usar hojas de cálculo,16-24 años,Mujer,,%,64.5
+2022,Usar hojas de cálculo,16-24 años,Mujer,Araba/Álava,%,72.2
+2021,Usar hojas de cálculo,16-24 años,Mujer,Araba/Álava,%,62.5
+2020,Usar hojas de cálculo,16-24 años,Mujer,Araba/Álava,%,64.6
+2024,Usar hojas de cálculo,16-24 años,Mujer,Araba/Álava,%,75.0
+2025,Usar hojas de cálculo,16-24 años,Mujer,Araba/Álava,%,60.7
+2023,Usar hojas de cálculo,16-24 años,Mujer,Araba/Álava,%,62.4
+2019,Usar hojas de cálculo,16-24 años,Mujer,Araba/Álava,%,70.3
+2022,Usar hojas de cálculo,16-24 años,Mujer,Bizkaia,%,69.4
+2019,Usar hojas de cálculo,16-24 años,Mujer,Bizkaia,%,67.8
+2024,Usar hojas de cálculo,16-24 años,Mujer,Bizkaia,%,58.0
+2021,Usar hojas de cálculo,16-24 años,Mujer,Bizkaia,%,59.5
+2020,Usar hojas de cálculo,16-24 años,Mujer,Bizkaia,%,65.8
+2025,Usar hojas de cálculo,16-24 años,Mujer,Bizkaia,%,65.3
+2023,Usar hojas de cálculo,16-24 años,Mujer,Bizkaia,%,58.9
+2025,Usar hojas de cálculo,16-24 años,Mujer,Gipuzkoa,%,65.8
+2022,Usar hojas de cálculo,16-24 años,Mujer,Gipuzkoa,%,66.2
+2021,Usar hojas de cálculo,16-24 años,Mujer,Gipuzkoa,%,72.3
+2023,Usar hojas de cálculo,16-24 años,Mujer,Gipuzkoa,%,73.5
+2020,Usar hojas de cálculo,16-24 años,Mujer,Gipuzkoa,%,75.1
+2019,Usar hojas de cálculo,16-24 años,Mujer,Gipuzkoa,%,73.9
+2024,Usar hojas de cálculo,16-24 años,Mujer,Gipuzkoa,%,68.1
+2019,Usar hojas de cálculo,16-24 años,Hombre,,%,69.8
+2022,Usar hojas de cálculo,16-24 años,Hombre,,%,68.0
+2024,Usar hojas de cálculo,16-24 años,Hombre,,%,64.1
+2021,Usar hojas de cálculo,16-24 años,Hombre,,%,70.2
+2023,Usar hojas de cálculo,16-24 años,Hombre,,%,62.7
+2020,Usar hojas de cálculo,16-24 años,Hombre,,%,72.5
+2025,Usar hojas de cálculo,16-24 años,Hombre,,%,60.0
+2024,Usar hojas de cálculo,16-24 años,Hombre,Araba/Álava,%,60.7
+2023,Usar hojas de cálculo,16-24 años,Hombre,Araba/Álava,%,54.2
+2021,Usar hojas de cálculo,16-24 años,Hombre,Araba/Álava,%,60.4
+2025,Usar hojas de cálculo,16-24 años,Hombre,Araba/Álava,%,62.3
+2019,Usar hojas de cálculo,16-24 años,Hombre,Araba/Álava,%,69.7
+2022,Usar hojas de cálculo,16-24 años,Hombre,Araba/Álava,%,77.0
+2020,Usar hojas de cálculo,16-24 años,Hombre,Araba/Álava,%,72.7
+2019,Usar hojas de cálculo,16-24 años,Hombre,Bizkaia,%,70.3
+2020,Usar hojas de cálculo,16-24 años,Hombre,Bizkaia,%,71.7
+2023,Usar hojas de cálculo,16-24 años,Hombre,Bizkaia,%,62.9
+2025,Usar hojas de cálculo,16-24 años,Hombre,Bizkaia,%,58.8
+2024,Usar hojas de cálculo,16-24 años,Hombre,Bizkaia,%,62.6
+2021,Usar hojas de cálculo,16-24 años,Hombre,Bizkaia,%,68.8
+2022,Usar hojas de cálculo,16-24 años,Hombre,Bizkaia,%,68.8
+2022,Usar hojas de cálculo,16-24 años,Hombre,Gipuzkoa,%,63.2
+2019,Usar hojas de cálculo,16-24 años,Hombre,Gipuzkoa,%,69.2
+2024,Usar hojas de cálculo,16-24 años,Hombre,Gipuzkoa,%,67.6
+2020,Usar hojas de cálculo,16-24 años,Hombre,Gipuzkoa,%,73.7
+2021,Usar hojas de cálculo,16-24 años,Hombre,Gipuzkoa,%,76.3
+2023,Usar hojas de cálculo,16-24 años,Hombre,Gipuzkoa,%,66.8
+2025,Usar hojas de cálculo,16-24 años,Hombre,Gipuzkoa,%,61.0
+2024,Usar hojas de cálculo,25-74 años,,,%,39.8
+2022,Usar hojas de cálculo,25-74 años,,,%,38.8
+2020,Usar hojas de cálculo,25-74 años,,,%,37.4
+2023,Usar hojas de cálculo,25-74 años,,,%,39.0
+2019,Usar hojas de cálculo,25-74 años,,,%,38.7
+2021,Usar hojas de cálculo,25-74 años,,,%,41.4
+2025,Usar hojas de cálculo,25-74 años,,,%,39.4
+2019,Usar hojas de cálculo,25-74 años,,Araba/Álava,%,39.8
+2023,Usar hojas de cálculo,25-74 años,,Araba/Álava,%,34.5
+2022,Usar hojas de cálculo,25-74 años,,Araba/Álava,%,41.3
+2020,Usar hojas de cálculo,25-74 años,,Araba/Álava,%,36.0
+2021,Usar hojas de cálculo,25-74 años,,Araba/Álava,%,41.7
+2025,Usar hojas de cálculo,25-74 años,,Araba/Álava,%,38.9
+2024,Usar hojas de cálculo,25-74 años,,Araba/Álava,%,38.0
+2024,Usar hojas de cálculo,25-74 años,,Bizkaia,%,41.2
+2019,Usar hojas de cálculo,25-74 años,,Bizkaia,%,38.2
+2020,Usar hojas de cálculo,25-74 años,,Bizkaia,%,37.9
+2025,Usar hojas de cálculo,25-74 años,,Bizkaia,%,40.5
+2022,Usar hojas de cálculo,25-74 años,,Bizkaia,%,37.2
+2021,Usar hojas de cálculo,25-74 años,,Bizkaia,%,42.1
+2023,Usar hojas de cálculo,25-74 años,,Bizkaia,%,39.1
+2022,Usar hojas de cálculo,25-74 años,,Gipuzkoa,%,40.2
+2023,Usar hojas de cálculo,25-74 años,,Gipuzkoa,%,40.8
+2020,Usar hojas de cálculo,25-74 años,,Gipuzkoa,%,37.3
+2019,Usar hojas de cálculo,25-74 años,,Gipuzkoa,%,39.2
+2025,Usar hojas de cálculo,25-74 años,,Gipuzkoa,%,37.7
+2024,Usar hojas de cálculo,25-74 años,,Gipuzkoa,%,38.2
+2021,Usar hojas de cálculo,25-74 años,,Gipuzkoa,%,40.0
+2024,Usar hojas de cálculo,25-74 años,Mujer,,%,35.8
+2023,Usar hojas de cálculo,25-74 años,Mujer,,%,37.9
+2021,Usar hojas de cálculo,25-74 años,Mujer,,%,39.6
+2019,Usar hojas de cálculo,25-74 años,Mujer,,%,36.1
+2022,Usar hojas de cálculo,25-74 años,Mujer,,%,37.6
+2020,Usar hojas de cálculo,25-74 años,Mujer,,%,36.3
+2025,Usar hojas de cálculo,25-74 años,Mujer,,%,37.2
+2021,Usar hojas de cálculo,25-74 años,Mujer,Araba/Álava,%,40.9
+2023,Usar hojas de cálculo,25-74 años,Mujer,Araba/Álava,%,36.6
+2020,Usar hojas de cálculo,25-74 años,Mujer,Araba/Álava,%,36.9
+2019,Usar hojas de cálculo,25-74 años,Mujer,Araba/Álava,%,36.6
+2024,Usar hojas de cálculo,25-74 años,Mujer,Araba/Álava,%,32.3
+2025,Usar hojas de cálculo,25-74 años,Mujer,Araba/Álava,%,36.1
+2022,Usar hojas de cálculo,25-74 años,Mujer,Araba/Álava,%,40.6
+2025,Usar hojas de cálculo,25-74 años,Mujer,Bizkaia,%,38.5
+2024,Usar hojas de cálculo,25-74 años,Mujer,Bizkaia,%,37.2
+2023,Usar hojas de cálculo,25-74 años,Mujer,Bizkaia,%,37.6
+2020,Usar hojas de cálculo,25-74 años,Mujer,Bizkaia,%,35.0
+2019,Usar hojas de cálculo,25-74 años,Mujer,Bizkaia,%,35.0
+2022,Usar hojas de cálculo,25-74 años,Mujer,Bizkaia,%,35.1
+2021,Usar hojas de cálculo,25-74 años,Mujer,Bizkaia,%,38.7
+2025,Usar hojas de cálculo,25-74 años,Mujer,Gipuzkoa,%,35.6
+2024,Usar hojas de cálculo,25-74 años,Mujer,Gipuzkoa,%,35.1
+2022,Usar hojas de cálculo,25-74 años,Mujer,Gipuzkoa,%,40.3
+2021,Usar hojas de cálculo,25-74 años,Mujer,Gipuzkoa,%,40.4
+2020,Usar hojas de cálculo,25-74 años,Mujer,Gipuzkoa,%,38.3
+2019,Usar hojas de cálculo,25-74 años,Mujer,Gipuzkoa,%,37.7
+2023,Usar hojas de cálculo,25-74 años,Mujer,Gipuzkoa,%,39.1
+2024,Usar hojas de cálculo,25-74 años,Hombre,,%,44.0
+2023,Usar hojas de cálculo,25-74 años,Hombre,,%,40.1
+2021,Usar hojas de cálculo,25-74 años,Hombre,,%,43.2
+2025,Usar hojas de cálculo,25-74 años,Hombre,,%,41.6
+2020,Usar hojas de cálculo,25-74 años,Hombre,,%,38.6
+2022,Usar hojas de cálculo,25-74 años,Hombre,,%,40.1
+2019,Usar hojas de cálculo,25-74 años,Hombre,,%,41.4
+2025,Usar hojas de cálculo,25-74 años,Hombre,Araba/Álava,%,41.8
+2022,Usar hojas de cálculo,25-74 años,Hombre,Araba/Álava,%,42.1
+2021,Usar hojas de cálculo,25-74 años,Hombre,Araba/Álava,%,42.6
+2019,Usar hojas de cálculo,25-74 años,Hombre,Araba/Álava,%,43.2
+2020,Usar hojas de cálculo,25-74 años,Hombre,Araba/Álava,%,35.2
+2023,Usar hojas de cálculo,25-74 años,Hombre,Araba/Álava,%,32.4
+2024,Usar hojas de cálculo,25-74 años,Hombre,Araba/Álava,%,44.0
+2025,Usar hojas de cálculo,25-74 años,Hombre,Bizkaia,%,42.6
+2024,Usar hojas de cálculo,25-74 años,Hombre,Bizkaia,%,45.6
+2023,Usar hojas de cálculo,25-74 años,Hombre,Bizkaia,%,40.7
+2022,Usar hojas de cálculo,25-74 años,Hombre,Bizkaia,%,39.4
+2021,Usar hojas de cálculo,25-74 años,Hombre,Bizkaia,%,45.5
+2020,Usar hojas de cálculo,25-74 años,Hombre,Bizkaia,%,40.9
+2019,Usar hojas de cálculo,25-74 años,Hombre,Bizkaia,%,41.4
+2025,Usar hojas de cálculo,25-74 años,Hombre,Gipuzkoa,%,39.9
+2019,Usar hojas de cálculo,25-74 años,Hombre,Gipuzkoa,%,40.7
+2021,Usar hojas de cálculo,25-74 años,Hombre,Gipuzkoa,%,39.7
+2024,Usar hojas de cálculo,25-74 años,Hombre,Gipuzkoa,%,41.4
+2023,Usar hojas de cálculo,25-74 años,Hombre,Gipuzkoa,%,42.6
+2022,Usar hojas de cálculo,25-74 años,Hombre,Gipuzkoa,%,40.1
+2020,Usar hojas de cálculo,25-74 años,Hombre,Gipuzkoa,%,36.3
+2025,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,,,%,41.9
+2023,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,,,%,50.0
+2019,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,,,%,51.9
+2024,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,,,%,37.0
+2021,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,,,%,60.3
+2020,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,,,%,55.2
+2022,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,,,%,52.1
+2025,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,,Araba/Álava,%,40.0
+2024,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,,Araba/Álava,%,38.4
+2022,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,,Araba/Álava,%,52.5
+2023,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,,Araba/Álava,%,46.0
+2020,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,,Araba/Álava,%,55.9
+2019,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,,Araba/Álava,%,51.6
+2021,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,,Araba/Álava,%,59.6
+2020,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,,Bizkaia,%,54.2
+2024,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,,Bizkaia,%,37.4
+2019,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,,Bizkaia,%,52.8
+2021,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,,Bizkaia,%,60.3
+2023,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,,Bizkaia,%,50.6
+2025,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,,Bizkaia,%,42.5
+2022,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,,Bizkaia,%,52.3
+2025,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,,Gipuzkoa,%,41.8
+2019,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,,Gipuzkoa,%,50.6
+2021,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,,Gipuzkoa,%,60.6
+2020,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,,Gipuzkoa,%,56.4
+2024,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,,Gipuzkoa,%,35.7
+2023,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,,Gipuzkoa,%,50.8
+2022,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,,Gipuzkoa,%,51.6
+2023,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,Mujer,,%,48.1
+2019,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,Mujer,,%,50.1
+2024,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,Mujer,,%,34.5
+2020,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,Mujer,,%,52.6
+2025,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,Mujer,,%,39.7
+2021,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,Mujer,,%,58.6
+2022,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,Mujer,,%,51.1
+2025,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,Mujer,Araba/Álava,%,37.7
+2021,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,Mujer,Araba/Álava,%,56.3
+2024,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,Mujer,Araba/Álava,%,35.7
+2019,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,Mujer,Araba/Álava,%,48.6
+2023,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,Mujer,Araba/Álava,%,46.0
+2022,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,Mujer,Araba/Álava,%,52.9
+2020,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,Mujer,Araba/Álava,%,54.3
+2019,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,Mujer,Bizkaia,%,50.3
+2025,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,Mujer,Bizkaia,%,40.5
+2020,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,Mujer,Bizkaia,%,51.4
+2024,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,Mujer,Bizkaia,%,34.9
+2021,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,Mujer,Bizkaia,%,58.5
+2022,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,Mujer,Bizkaia,%,50.5
+2023,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,Mujer,Bizkaia,%,47.9
+2020,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,Mujer,Gipuzkoa,%,53.6
+2023,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,Mujer,Gipuzkoa,%,49.4
+2021,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,Mujer,Gipuzkoa,%,60.0
+2025,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,Mujer,Gipuzkoa,%,39.3
+2022,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,Mujer,Gipuzkoa,%,51.2
+2019,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,Mujer,Gipuzkoa,%,50.3
+2024,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,Mujer,Gipuzkoa,%,33.2
+2023,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,Hombre,,%,51.9
+2022,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,Hombre,,%,53.2
+2020,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,Hombre,,%,57.8
+2019,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,Hombre,,%,53.8
+2025,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,Hombre,,%,44.1
+2021,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,Hombre,,%,62.0
+2024,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,Hombre,,%,39.7
+2024,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,Hombre,Araba/Álava,%,41.1
+2025,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,Hombre,Araba/Álava,%,42.4
+2019,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,Hombre,Araba/Álava,%,54.8
+2023,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,Hombre,Araba/Álava,%,46.1
+2022,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,Hombre,Araba/Álava,%,52.2
+2021,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,Hombre,Araba/Álava,%,62.9
+2020,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,Hombre,Araba/Álava,%,57.6
+2024,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,Hombre,Bizkaia,%,40.1
+2025,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,Hombre,Bizkaia,%,44.5
+2022,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,Hombre,Bizkaia,%,54.2
+2023,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,Hombre,Bizkaia,%,53.4
+2021,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,Hombre,Bizkaia,%,62.2
+2020,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,Hombre,Bizkaia,%,57.0
+2019,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,Hombre,Bizkaia,%,55.3
+2023,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,Hombre,Gipuzkoa,%,52.3
+2022,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,Hombre,Gipuzkoa,%,52.1
+2021,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,Hombre,Gipuzkoa,%,61.2
+2020,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,Hombre,Gipuzkoa,%,59.2
+2019,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,Hombre,Gipuzkoa,%,50.9
+2025,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,Hombre,Gipuzkoa,%,44.3
+2024,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",,Hombre,Gipuzkoa,%,38.3
+2021,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,,,%,85.2
+2025,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,,,%,60.9
+2022,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,,,%,78.1
+2023,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,,,%,77.6
+2024,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,,,%,54.3
+2019,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,,,%,84.9
+2020,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,,,%,84.6
+2024,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,,Araba/Álava,%,69.4
+2022,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,,Araba/Álava,%,81.7
+2021,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,,Araba/Álava,%,82.3
+2020,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,,Araba/Álava,%,86.9
+2019,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,,Araba/Álava,%,84.7
+2023,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,,Araba/Álava,%,83.9
+2025,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,,Araba/Álava,%,59.3
+2022,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,,Bizkaia,%,76.6
+2019,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,,Bizkaia,%,88.2
+2024,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,,Bizkaia,%,51.8
+2020,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,,Bizkaia,%,83.9
+2021,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,,Bizkaia,%,85.4
+2023,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,,Bizkaia,%,76.4
+2025,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,,Bizkaia,%,60.9
+2022,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,,Gipuzkoa,%,78.9
+2025,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,,Gipuzkoa,%,61.7
+2021,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,,Gipuzkoa,%,86.2
+2023,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,,Gipuzkoa,%,76.4
+2019,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,,Gipuzkoa,%,80.4
+2020,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,,Gipuzkoa,%,84.6
+2024,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,,Gipuzkoa,%,51.8
+2021,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,Mujer,,%,82.6
+2025,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,Mujer,,%,60.4
+2023,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,Mujer,,%,84.3
+2024,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,Mujer,,%,53.7
+2019,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,Mujer,,%,88.6
+2020,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,Mujer,,%,84.4
+2022,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,Mujer,,%,81.1
+2023,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,Mujer,Araba/Álava,%,89.9
+2020,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,Mujer,Araba/Álava,%,82.3
+2022,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,Mujer,Araba/Álava,%,85.6
+2024,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,Mujer,Araba/Álava,%,77.7
+2025,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,Mujer,Araba/Álava,%,56.9
+2019,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,Mujer,Araba/Álava,%,87.2
+2021,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,Mujer,Araba/Álava,%,84.9
+2020,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,Mujer,Bizkaia,%,85.6
+2022,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,Mujer,Bizkaia,%,81.2
+2024,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,Mujer,Bizkaia,%,48.9
+2023,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,Mujer,Bizkaia,%,84.2
+2019,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,Mujer,Bizkaia,%,89.0
+2025,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,Mujer,Bizkaia,%,60.6
+2021,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,Mujer,Bizkaia,%,83.6
+2024,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,Mujer,Gipuzkoa,%,50.2
+2020,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,Mujer,Gipuzkoa,%,83.6
+2021,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,Mujer,Gipuzkoa,%,80.0
+2023,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,Mujer,Gipuzkoa,%,82.2
+2022,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,Mujer,Gipuzkoa,%,78.9
+2025,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,Mujer,Gipuzkoa,%,61.7
+2019,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,Mujer,Gipuzkoa,%,88.6
+2022,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,Hombre,,%,75.2
+2021,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,Hombre,,%,87.5
+2025,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,Hombre,,%,61.4
+2024,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,Hombre,,%,54.9
+2023,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,Hombre,,%,71.3
+2019,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,Hombre,,%,81.1
+2020,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,Hombre,,%,84.8
+2024,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,Hombre,Araba/Álava,%,61.5
+2021,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,Hombre,Araba/Álava,%,80.1
+2025,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,Hombre,Araba/Álava,%,61.9
+2023,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,Hombre,Araba/Álava,%,79.3
+2019,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,Hombre,Araba/Álava,%,81.8
+2020,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,Hombre,Araba/Álava,%,91.0
+2022,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,Hombre,Araba/Álava,%,77.9
+2023,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,Hombre,Bizkaia,%,68.9
+2019,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,Hombre,Bizkaia,%,87.4
+2025,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,Hombre,Bizkaia,%,61.2
+2021,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,Hombre,Bizkaia,%,87.2
+2020,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,Hombre,Bizkaia,%,82.3
+2022,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,Hombre,Bizkaia,%,72.0
+2024,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,Hombre,Bizkaia,%,54.4
+2020,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,Hombre,Gipuzkoa,%,85.5
+2022,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,Hombre,Gipuzkoa,%,78.8
+2025,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,Hombre,Gipuzkoa,%,61.6
+2024,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,Hombre,Gipuzkoa,%,53.1
+2019,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,Hombre,Gipuzkoa,%,72.4
+2021,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,Hombre,Gipuzkoa,%,91.1
+2023,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",16-24 años,Hombre,Gipuzkoa,%,70.8
+2023,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,,,%,46.3
+2025,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,,,%,39.0
+2021,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,,,%,57.0
+2024,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,,,%,34.6
+2022,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,,,%,48.7
+2020,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,,,%,51.5
+2019,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,,,%,48.2
+2019,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,,Araba/Álava,%,47.9
+2023,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,,Araba/Álava,%,40.8
+2022,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,,Araba/Álava,%,49.0
+2021,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,,Araba/Álava,%,56.5
+2025,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,,Araba/Álava,%,37.3
+2020,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,,Araba/Álava,%,52.0
+2024,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,,Araba/Álava,%,34.2
+2020,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,,Bizkaia,%,50.6
+2023,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,,Bizkaia,%,47.3
+2019,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,,Bizkaia,%,49.0
+2021,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,,Bizkaia,%,57.1
+2024,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,,Bizkaia,%,35.5
+2022,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,,Bizkaia,%,49.1
+2025,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,,Bizkaia,%,39.7
+2021,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,,Gipuzkoa,%,56.9
+2024,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,,Gipuzkoa,%,33.2
+2025,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,,Gipuzkoa,%,38.6
+2020,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,,Gipuzkoa,%,52.7
+2022,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,,Gipuzkoa,%,47.8
+2023,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,,Gipuzkoa,%,47.2
+2019,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,,Gipuzkoa,%,46.9
+2024,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,Mujer,,%,32.0
+2019,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,Mujer,,%,45.8
+2020,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,Mujer,,%,48.8
+2021,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,Mujer,,%,55.6
+2022,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,Mujer,,%,47.3
+2023,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,Mujer,,%,43.6
+2025,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,Mujer,,%,36.6
+2020,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,Mujer,Araba/Álava,%,51.1
+2019,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,Mujer,Araba/Álava,%,44.0
+2021,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,Mujer,Araba/Álava,%,52.8
+2023,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,Mujer,Araba/Álava,%,40.8
+2025,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,Mujer,Araba/Álava,%,34.8
+2024,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,Mujer,Araba/Álava,%,30.3
+2022,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,Mujer,Araba/Álava,%,49.1
+2023,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,Mujer,Bizkaia,%,43.5
+2022,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,Mujer,Bizkaia,%,46.6
+2025,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,Mujer,Bizkaia,%,37.6
+2024,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,Mujer,Bizkaia,%,33.2
+2021,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,Mujer,Bizkaia,%,55.3
+2020,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,Mujer,Bizkaia,%,47.5
+2019,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,Mujer,Bizkaia,%,46.4
+2024,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,Mujer,Gipuzkoa,%,30.8
+2020,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,Mujer,Gipuzkoa,%,49.9
+2019,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,Mujer,Gipuzkoa,%,45.7
+2022,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,Mujer,Gipuzkoa,%,47.5
+2021,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,Mujer,Gipuzkoa,%,57.4
+2025,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,Mujer,Gipuzkoa,%,35.8
+2023,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,Mujer,Gipuzkoa,%,45.0
+2024,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,Hombre,,%,37.3
+2025,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,Hombre,,%,41.4
+2022,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,Hombre,,%,50.2
+2021,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,Hombre,,%,58.3
+2020,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,Hombre,,%,54.3
+2019,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,Hombre,,%,50.6
+2023,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,Hombre,,%,49.2
+2024,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,Hombre,Araba/Álava,%,38.2
+2022,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,Hombre,Araba/Álava,%,49.0
+2020,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,Hombre,Araba/Álava,%,53.0
+2021,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,Hombre,Araba/Álava,%,60.3
+2023,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,Hombre,Araba/Álava,%,40.9
+2025,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,Hombre,Araba/Álava,%,39.7
+2019,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,Hombre,Araba/Álava,%,51.9
+2022,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,Hombre,Bizkaia,%,51.8
+2023,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,Hombre,Bizkaia,%,51.3
+2025,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,Hombre,Bizkaia,%,41.8
+2024,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,Hombre,Bizkaia,%,38.0
+2021,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,Hombre,Bizkaia,%,58.9
+2020,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,Hombre,Bizkaia,%,53.8
+2019,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,Hombre,Bizkaia,%,51.9
+2021,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,Hombre,Gipuzkoa,%,56.4
+2025,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,Hombre,Gipuzkoa,%,41.5
+2024,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,Hombre,Gipuzkoa,%,35.8
+2023,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,Hombre,Gipuzkoa,%,49.6
+2022,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,Hombre,Gipuzkoa,%,48.1
+2019,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,Hombre,Gipuzkoa,%,48.1
+2020,"Transferir ficheros entre el ordenador y otros dispositivos (cámaras digitales, teléfonos móviles, mp3 o mp4)",25-74 años,Hombre,Gipuzkoa,%,55.6

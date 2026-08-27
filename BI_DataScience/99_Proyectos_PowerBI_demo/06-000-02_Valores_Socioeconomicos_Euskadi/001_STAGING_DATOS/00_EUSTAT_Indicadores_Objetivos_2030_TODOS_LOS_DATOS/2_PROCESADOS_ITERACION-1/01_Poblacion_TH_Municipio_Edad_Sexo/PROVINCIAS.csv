@@ -1,0 +1,53 @@
+COD_PROV;PROVINCIA;COD_CA;COMUNIDAD_AUTONOMA;CAPITAL
+01;Araba/Álava;16;País Vasco/Euskadi;Vitoria-Gasteiz
+02;Albacete;08;Castilla-La Mancha;Albacete
+03;Alacant/Alicante;10;Comunitat Valenciana;Alacant/Alicante
+04;Almería;01;Andalucía;Almería
+05;Ávila;07;Castilla y León;Ávila
+06;Badajoz;11;Extremadura;Badajoz
+07;Illes Balears;04;Illes Balears;Palma
+08;Barcelona;09;Cataluña/Catalunya;Barcelona
+09;Burgos;07;Castilla y León;Burgos
+10;Cáceres;11;Extremadura;Cáceres
+11;Cádiz;01;Andalucía;Cádiz
+12;Castelló/Castellón;10;Comunitat Valenciana;Castelló de la Plana/Castellón de la Plana
+13;Ciudad Real;08;Castilla-La Mancha;Ciudad Real
+14;Córdoba;01;Andalucía;Córdoba
+15;A Coruña;12;Galicia;A Coruña
+16;Cuenca;08;Castilla-La Mancha;Cuenca
+17;Girona;09;Cataluña/Catalunya;Girona
+18;Granada;01;Andalucía;Granada
+19;Guadalajara;08;Castilla-La Mancha;Guadalajara
+20;Gipuzkoa;16;País Vasco/Euskadi;Donostia/San Sebastián
+21;Huelva;01;Andalucía;Huelva
+22;Huesca;02;Aragón;Huesca
+23;Jaén;01;Andalucía;Jaén
+24;León;07;Castilla y León;León
+25;Lleida;09;Cataluña/Catalunya;Lleida
+26;La Rioja;17;La Rioja;Logroño
+27;Lugo;12;Galicia;Lugo
+28;Madrid;13;Comunidad de Madrid;Madrid
+29;Málaga;01;Andalucía;Málaga
+30;Murcia;14;Región de Murcia;Murcia
+31;Navarra;15;Comunidad Foral de Navarra;Pamplona/Iruña
+32;Ourense;12;Galicia;Ourense
+33;Asturias;03;Principado de Asturias;Oviedo
+34;Palencia;07;Castilla y León;Palencia
+35;Las Palmas;05;Canarias;Las Palmas de Gran Canaria
+36;Pontevedra;12;Galicia;Pontevedra
+37;Salamanca;07;Castilla y León;Salamanca
+38;Santa Cruz de Tenerife;05;Canarias;Santa Cruz de Tenerife
+39;Cantabria;06;Cantabria;Santander
+40;Segovia;07;Castilla y León;Segovia
+41;Sevilla;01;Andalucía;Sevilla
+42;Soria;07;Castilla y León;Soria
+43;Tarragona;09;Cataluña/Catalunya;Tarragona
+44;Teruel;02;Aragón;Teruel
+45;Toledo;08;Castilla-La Mancha;Toledo
+46;València/Valencia;10;Comunitat Valenciana;València
+47;Valladolid;07;Castilla y León;Valladolid
+48;Bizkaia;16;País Vasco/Euskadi;Bilbao
+49;Zamora;07;Castilla y León;Zamora
+50;Zaragoza;02;Aragón;Zaragoza
+51;Ceuta;18;Ciudad Autónoma de Ceuta;Ceuta
+52;Melilla;19;Ciudad Autónoma de Melilla;Melilla
