@@ -7,7 +7,7 @@
 
 | Status | Guide | Type | Title | Date |
 | ------ | ----- | ---- | ----- | ---- |
-| [ ] | 01-001 | | ¿Qué es Power Business Inteligence? | |
+| [X] | [01-001](./01_Intro_PowerBI/01-001_Introduccion_PowerBI.md) | | [¿Qué es Power Business Inteligence?](./01_Intro_PowerBI/01-001_Introduccion_PowerBI.md) | 2026-09-02 |
 | [ ] | 01-002 | | Descargando PowerBI | |
 | [ ] | 01-003 | | Interfaz y componentes de PowerBI | |
 | [ ] | 01-004 | | Casos de uso | |
