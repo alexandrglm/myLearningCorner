@@ -8,9 +8,9 @@
 | Status | Guide | Type | Title | Date |
 | ------ | ----- | ---- | ----- | ---- |
 | [X] | [01-001](./01_Intro_PowerBI/01-001_Introduccion_PowerBI.md) | | [¿Qué es Power Business Inteligence?](./01_Intro_PowerBI/01-001_Introduccion_PowerBI.md) | 2026-09-02 |
-| [ ] | 01-002 | | Descargando PowerBI | |
-| [ ] | 01-003 | | Interfaz y componentes de PowerBI | |
-| [ ] | 01-004 | | Casos de uso | |
+| [X] | [01-002](./01-002_Descargando_PowerBI.md) | | [Descargando PowerBI]./(01-002_Descargando_PowerBI.md) | 2026-09-07 |
+| [X] | [01-003](./01-003_Interfaz_Componentes_PowerBI.md) | | [Interfaz y componentes de PowerBI](./01-003_Interfaz_Componentes_PowerBI.md) | 2026-09-07 |
+| [ ] | [01-004](./01-004_Casos_de_Uso.md) | `Principios de data visualisation ( Simplificar, Comparar, Mostrar, Diversificar, Responder un por qué)` | [Casos de uso](./01-004_Casos_de_Uso.md) | pending |
 
 ---
 
