@@ -18,8 +18,8 @@
 
 | Status | Guide | Type | Title | Date |
 | ------ | ----- | ---- | ----- | ---- |
-| [ ] | 02-001 | | Introducción a PowerBI Desktop | |
-| [ ] | 02-002 | | Instalación y puesta en marcha | |
+| [X] | [02-001](./02_Preparacion_Datos_PowerBI/02-001_PowerBI_Desktop_intro.md) | `Desktop`, `SaaS`, `Tipos de Licencia (Free, Pro, Premium PPU, Fabric)`, `Perfiles de Usuario (Diseñador, Consumidor, Administrador, Desarrollador)`, `Flujo de trabajo habitual` | [Introducción a PowerBI Desktop](./02_Preparacion_Datos_PowerBI/02-001_PowerBI_Desktop_intro.md) | 2026-09-12 |
+| [X] | [02-002](./02_Preparacion_Datos_PowerBI/02-002_Puesta_en_marcha.md) | | [Instalación y puesta en marcha](./02_Preparacion_Datos_PowerBI/02-002_Puesta_en_marcha.md) | 2026-09-12 |
 | [ ] | 02-003 | | Conectando fuentes de datos a PowerBI | |
 | [ ] | 02-004 | | Vista de datos en Power BI Desktop | |
 | [ ] | 02-005 | | Filtrado de datos | |
@@ -153,4 +153,3 @@
 | Status | Guide | Type | Title | Date |
 | ------ | ----- | ---- | ----- | ---- |
 | [ ]    | 09-00x | | Actividad PowerBI Mobile ||
-
