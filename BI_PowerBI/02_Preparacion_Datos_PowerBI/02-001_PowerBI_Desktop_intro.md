@@ -195,18 +195,18 @@ Aunque no hay un flujo de trabajo estricto al que haya que adaptarse de forma es
 ![](./img/02-009.png)
 
 
-- **CONSUMIDOR**
+- **CONSUMIDOR**  
 Utiliza el servicio Power BI y Power BI mobile. Puede ver la información en objetos visuales, recibe la información en los paneles, informes y aplicaciones que han creado los diseñadores. Interacciona con la aplicación para obtener la información deseada.
 
-- **DISEÑADOR**
+- **DISEÑADOR**  
 Utiliza la aplicación Power BI desktop para obtener la información desde la diferentes fuentes de datos, crea modelos de datos con sus relaciones, genera diferentes métricas y diseña los paneles, informes y aplicaciones para consumo de otros usuarios.
 
 
-- **ADMINISTRADOR**
+- **ADMINISTRADOR**  
 Administra el servicio Power BI: activa característica, revisa el uso y rendimiento, administra licencias y acceso de usuarios, administra recursos y capacidad.
 
 
-- **DESARROLLADOR**
+- **DESARROLLADOR**  
 Power BI desktop integra por defecto los objetos visuales más comunes, además permite importar objetos desarrollados por terceros tanto gratuitos como de compra. Los desarrolladores pueden crear de objetos visuales personalizados.
 
 
@@ -220,20 +220,20 @@ Power BI desktop integra por defecto los objetos visuales más comunes, además 
 Desde el punto del vista del tipo de usuario, el flujo normal de trabajo con Power BI es:
 
 **El diseñador usa PowerBI Desktop para:**  
-	* Conectarse a los diferentes orígenes de datos.
-	* Importar los datos relevantes para el informe que quiera diseñar en forma de tablas.
-	* Realizar la interconexión entre los datos.
-	* Generar los campos calculados necesarios.
-	* Diseñar el informe usando los objetos visuales.
-	* Establecer los filtros y agrupaciones necesarias.
-	* Publicar el informe para los usuarios del servicio Power BI.
+	* Conectarse a los diferentes orígenes de datos.  
+	* Importar los datos relevantes para el informe que quiera diseñar en forma de tablas.  
+	* Realizar la interconexión entre los datos.  
+	* Generar los campos calculados necesarios.  
+	* Diseñar el informe usando los objetos visuales.  
+	* Establecer los filtros y agrupaciones necesarias.  
+	* Publicar el informe para los usuarios del servicio Power BI.  
 
 
-**El consumidor usa el servicio PowerBI para:**
-	* Ver informes e interaccionar con ellos cambiando filtros y agrupaciones.
-	* Poder crear paneles a partir de los objetos visuales de los informes.
-	* Poder crear aplicaciones y áreas de trabajo.
-	* Poder compartir los informes, paneles, aplicaciones y áreas de trabajo con otros usuarios.
+**El consumidor usa el servicio PowerBI para:**  
+	* Ver informes e interaccionar con ellos cambiando filtros y agrupaciones.  
+	* Poder crear paneles a partir de los objetos visuales de los informes.  
+	* Poder crear aplicaciones y áreas de trabajo.  
+	* Poder compartir los informes, paneles, aplicaciones y áreas de trabajo con otros usuarios.  
 
-**El consumidor puede usar PowerBI Mobile para:**
-	* Ver informes y paneles publicados.
+**El consumidor puede usar PowerBI Mobile para:**  
+	* Ver informes y paneles publicados.  
