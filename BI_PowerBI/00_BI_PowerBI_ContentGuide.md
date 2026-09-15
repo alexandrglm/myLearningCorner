@@ -20,18 +20,14 @@
 | ------ | ----- | ---- | ----- | ---- |
 | [X] | [02-001](./02_Preparacion_Datos_PowerBI/02-001_PowerBI_Desktop_intro.md) | `Desktop`, `SaaS`, `Tipos de Licencia (Free, Pro, Premium PPU, Fabric)`, `Perfiles de Usuario (Diseñador, Consumidor, Administrador, Desarrollador)`, `Flujo de trabajo habitual` | [Introducción a PowerBI Desktop](./02_Preparacion_Datos_PowerBI/02-001_PowerBI_Desktop_intro.md) | 2026-09-12 |
 | [X] | [02-002](./02_Preparacion_Datos_PowerBI/02-002_Puesta_en_marcha.md) | | [Instalación y puesta en marcha](./02_Preparacion_Datos_PowerBI/02-002_Puesta_en_marcha.md) | 2026-09-12 |
-| [ ] | 02-003 | | Conectando fuentes de datos a PowerBI | |
-| [ ] | 02-004 | | Vista de datos en Power BI Desktop | |
-| [ ] | 02-005 | | Filtrado de datos | |
+| [X] | [02-003](./02_Preparacion_Datos_PowerBI/02-003_Conectar_Fuentes_de_Datos.md) | `Orígenes de Datos`, | [Conectando fuentes de datos a PowerBI](./02_Preparacion_Datos_PowerBI/02-003_Conectar_Fuentes_de_Datos.md) | 2026-09-15 |
+| [X] | [02-004](./02_Preparacion_Datos_PowerBI/02-004_Vista_de_Datos.md) | `Vista de Informe`, `Vista de Datos`, `Vista de Modelo` | [Vista de datos en Power BI Desktop](./02_Preparacion_Datos_PowerBI/02-004_Vista_de_Datos.md) | 2026-09-15 |
+| [X] | [02-005](./02_Preparacion_Datos_PowerBI/02-005_Filtrado_de_Datos.md) | `Filtrado, desde Vistas de Datos` | [Filtrado de datos](./02_Preparacion_Datos_PowerBI/02-005_Filtrado_de_Datos.md) | 2026-09-15 |
 
 | Status | Guide | Type | Title | Date |
 | ------ | ----- | ---- | ----- | ---- |
-| [ ]    | 02-00x | | Actividad escritorio PowerBI ||
+| [X]    | 02-006 | | Lab PowerBI Desktop I | 2026-09-15 |
 
-
-| Status | Guide | Type | Title | Date |
-| ------ | ----- | ---- | ----- | ---- |
-| [ ]    | 02-00x | | Actividad .pbix ||
 
 
 ---
