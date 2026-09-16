@@ -36,15 +36,13 @@
 
 | Status | Guide | Type | Title | Date |
 | ------ | ----- | ---- | ----- | ---- |
-| [ ] | 03-001 | | Interface del Editor de Power Query | |
-| [ ] | 03-002 | | Tipos de Datos | |
+| [X] | [03-001](./03_Consultas_y_editor_PowerQuery/03-001_Interface_del_editor_PowerQuery.md) | `ETL`, `Transformar Datos`, `Editor de Consultas`, `Pasos Aplicados`, `Ventajas (Rendimiento, eficacia, control total de ETL, reducción de errores)`| [Interface del Editor de Power Query](./03_Consultas_y_editor_PowerQuery/03-001_Interface_del_editor_PowerQuery.md) | 2026-09-16 |
+| [X] | [03-002](./03_Consultas_y_editor_PowerQuery/03-002-Tipos_de_Datos.md) | `Transformar`, `Agregar Columna`, `Cambio manual del tipo de dato`, `Detección automática` | [Tipos de Datos](./03_Consultas_y_editor_PowerQuery/03-002-Tipos_de_Datos.md) | 2026-09-16 |
 | [ ] | 03-003 | | Agrupar filas | |
 | [ ] | 03-004 | | Crear columnas personalizadas | |
 | [ ] | 03-005 | | Dinamizar columnas | |
 | [ ] | 03-006 | | Fórmulas de consulta personalizadas | |
 | [ ] | 03-007 | | Condicionales | |
-
-
 
 
 ---
