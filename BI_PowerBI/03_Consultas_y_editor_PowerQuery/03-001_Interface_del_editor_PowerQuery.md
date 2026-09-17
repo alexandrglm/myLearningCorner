@@ -161,7 +161,7 @@ Hay numerosas opciones disponibles al transformar los datos en el Editor de cons
 
 * El sistema es bastante intuitivo, desde la localización de **Propiedades de la consulta** hasta los **Pasos Aplicados**, permitiendo en tiempo real avanzar, cambiar, filtrar, duplicar columnas, **pivotar o despivotar** tablas, etc, en menos tiempo y con necesidad de menores recursos en uso.  
 
-* **Además, permite tener más capacidad para la gestión de la información, con menos posibilidad de errores en el procesado y la gestión de todas las bases de datos y tablas.  
+* **Además, permite tener más capacidad para la gestión de la información, con menos posibilidad de errores en el procesado y la gestión de todas las bases de datos y tablas**.  
 
 
 

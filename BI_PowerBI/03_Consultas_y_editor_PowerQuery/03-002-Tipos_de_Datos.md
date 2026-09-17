@@ -22,7 +22,7 @@ Este concepto es importante porque algunas funciones que utilizará DAX tienen r
 
 
 > [!IMPORTANT]
-> **REVISIÓN OBLIGATORIA DE TIPOS DE DATOS**
+> **REVISIÓN OBLIGATORIA DE TIPOS DE DATOS**  
 > Un paso importante que debemos dar en esta fase del proyecto es el de **confirmar y corregir los tipos de datos de cada columna**.
 
 ![](./img/03-010.png)

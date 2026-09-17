@@ -38,12 +38,11 @@
 | ------ | ----- | ---- | ----- | ---- |
 | [X] | [03-001](./03_Consultas_y_editor_PowerQuery/03-001_Interface_del_editor_PowerQuery.md) | `ETL`, `Transformar Datos`, `Editor de Consultas`, `Pasos Aplicados`, `Ventajas (Rendimiento, eficacia, control total de ETL, reducción de errores)`| [Interface del Editor de Power Query](./03_Consultas_y_editor_PowerQuery/03-001_Interface_del_editor_PowerQuery.md) | 2026-09-16 |
 | [X] | [03-002](./03_Consultas_y_editor_PowerQuery/03-002-Tipos_de_Datos.md) | `Transformar`, `Agregar Columna`, `Cambio manual del tipo de dato`, `Detección automática` | [Tipos de Datos](./03_Consultas_y_editor_PowerQuery/03-002-Tipos_de_Datos.md) | 2026-09-16 |
-| [ ] | 03-003 | | Agrupar filas | |
-| [ ] | 03-004 | | Crear columnas personalizadas | |
-| [ ] | 03-005 | | Dinamizar columnas | |
-| [ ] | 03-006 | | Fórmulas de consulta personalizadas | |
-| [ ] | 03-007 | | Condicionales | |
-
+| [X] | [03-003](./03_Consultas_y_editor_PowerQuery/03-003_Agrupar_Filas.md) | `Primera Fila como Encabezado`, `Quitar Filas (Superiores, Inferiores, Alternas, Duplicados, Filas en Blanco, Errores)`, `Valores en *null* antes que eliminar blancos`, `Agrupar Filas (similar a Tablas Dinámicas de Excel)` | [Agrupar filas](./03_Consultas_y_editor_PowerQuery/03-003_Agrupar_Filas.md) | 2026-09-17 |
+| [X] | [03-004](./03_Consultas_y_editor_PowerQuery/03-004_Crear_Columnas_Dinamicas.md) | `Eliminar columnas`, `Ordenar columnas (Decreciente Z->A, Creciente A->Z)`, `Eliminar duplicados`, `Valorar bien cuando datos son duplicados y cuando son DIFERENCIADOS aunque sean el mismo valor` | [Crear columnas personalizadas](./03_Consultas_y_editor_PowerQuery/03-004_Crear_Columnas_Dinamicas.md) | 2026-09-17 |
+| [X] | [03-005](./03_Consultas_y_editor_PowerQuery/03-005_Dinamizar_Columnas.md) | `Transformar > Columna Dinámica`, `Suma`, `Recuento (Todos)`, `Recuento (NO en blanco)`, `Min`, `Max`, `Mediana`, `Promedio`, `No Agregar` | [Dinamizar columnas](./03_Consultas_y_editor_PowerQuery/03-005_Dinamizar_Columnas.md) | 2026-09-17 |
+| [X] | [03-006](./03_Consultas_y_editor_PowerQuery/03-006_Formulas_de_Consulta_Personalizadas.md) | `Funciones personalizadas`, `Agregar Columna Personalizada`, `Built´-in functions`, `Funciones propias en M`, `Editor Avanzado, la MEJOR herramienta para un ETL limpio y depurado` | [Fórmulas de consulta personalizadas](./03_Consultas_y_editor_PowerQuery/03-006_Formulas_de_Consulta_Personalizadas.md) | 2026-09-17 |
+| [X] | [03-007](./03_Consultas_y_editor_PowerQuery/03-007_Columnas_Condicionales.md) | `Condiciones (Nombre de columna a evaluar, Operador-Tipo de condición, Valor comparativo, Return if true, Anidar otras condiciones, Return else`, `Dependencias de las consultas (mapa)`,  | [Condicionales](./03_Consultas_y_editor_PowerQuery/03-007_Columnas_Condicionales.md) | 2026-09-17 |
 
 ---
 
