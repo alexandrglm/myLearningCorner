@@ -26,7 +26,7 @@
 
 | Status | Guide | Type | Title | Date |
 | ------ | ----- | ---- | ----- | ---- |
-| [X]    | 02-006 | | Lab PowerBI Desktop I | 2026-09-15 |
+| [X]    | [02-006](https://github.com/alexandrglm/demos-powerbi-training-2026/tree/main/02_Financials_Training-2/Iter-1_UD2) | | [Lab PowerBI Desktop I](https://github.com/alexandrglm/demos-powerbi-training-2026/tree/main/02_Financials_Training-2/Iter-1_UD2) | 2026-09-15 |
 
 
 
@@ -60,7 +60,7 @@
 
 | Status | Guide | Type | Title | Date |
 | ------ | ----- | ---- | ----- | ---- |
-| [X]    | 04-00x | | Lab Creación del modelo | 2026-09-18 |
+| [X]    | [04-007](https://github.com/alexandrglm/demos-powerbi-training-2026/tree/main/02_Financials_Training-2/Iter-2_UD4_Columnas_Modelo_Estrella) | | [Lab Creación del modelo](https://github.com/alexandrglm/demos-powerbi-training-2026/tree/main/02_Financials_Training-2/Iter-2_UD4_Columnas_Modelo_Estrella) | 2026-09-18 |
 
 ---
 
