@@ -52,16 +52,15 @@
 | ------ | ----- | ---- | ----- | ---- |
 | [X] | [04-001](./04_Creacion_del_modelo/04-001_Introduccion_modelado_de_datos.md) | `E**T**L`, `Modelado Relacional (1-a-1)`, `Modelado de Estrella (1-a-todos)` | [Introducción al modelado de datos](./04_Creacion_del_modelo/04-001_Introduccion_modelado_de_datos.md) | 2026-09-18 |
 | [X] | [04-002](./04_Creacion_del_modelo/04-002_Usar_las_relaciones_de_datos.md) | `Roles (Tipos de relación`, `Direccionalidad`, `Navegabilidad` | [Utilizar las relaciones de datos](./04_Creacion_del_modelo/04-002_Usar_las_relaciones_de_datos.md) | 2026-09-18 |
-| [ ] | 04-003 | | Crear columnas | |
-| [ ] | 04-004 | | Optimizando modelos de datos | |
-| [ ] | 04-005 | | Crear tablas | |
-| [ ] | 04-006 | | Configuración en estrella | |
-
+| [X] | [04-003](./04_Creacion_del_modelo/04-003_Crear_columnas.md) | `Herramientas de Tablas` > `Nueva Columna`, `Expresiones en DAX` | [Crear columnas](./04_Creacion_del_modelo/04-003_Crear_columnas.md) | 2026-09-18 |
+| [X] | [04-004](./04_Creacion_del_modelo/04-004_Optimizando_modelos_de_datos.md) | `Ocultar Campos`, `Ordenar por Columna`, `Establecer el tipo de datos` | [Optimizando modelos de datos](./04_Creacion_del_modelo/04-004_Optimizando_modelos_de_datos.md) | 2026-09-18 |
+| [X] | [04-005](./04_Creacion_del_modelo/04-005_Crear_Tablas.md | `Crear Tablas con DAX:`, `Nombre de Tabla = <Función de Tabla>( <Tabla de Origen> o <Columna(s)>, [Argumentos/Filtros], [<Anidado de Funciones>] )` | [Crear tablas](./04_Creacion_del_modelo/04-005_Crear_Tablas.md) | 2026-09-18 |
+| [X] | [04-006](./04_Creacion_del_modelo/04-006_Configuracion_en_Estrella.md) | `Hechos`, `Dimensiones`, `1-a-todos`, `Bidireccional`, `Tablas Normalizadas` | [Configuración en estrella](./04_Creacion_del_modelo/04-006_Configuracion_en_Estrella.md) | 2026-09-18 |
 
 
 | Status | Guide | Type | Title | Date |
 | ------ | ----- | ---- | ----- | ---- |
-| [ ]    | 04-00x | | Actividad Creación Modelo ||
+| [X]    | 04-00x | | Lab Creación del modelo | 2026-09-18 |
 
 ---
 
