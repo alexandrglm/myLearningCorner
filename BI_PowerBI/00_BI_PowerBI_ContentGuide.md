@@ -50,12 +50,13 @@
 
 | Status | Guide | Type | Title | Date |
 | ------ | ----- | ---- | ----- | ---- |
-| [ ] | 04-001 | | Introducción al modelado de datos | |
-| [ ] | 04-002 | | Utilizar las relaciones de datos | |
+| [X] | [04-001](./04_Creacion_del_modelo/04-001_Introduccion_modelado_de_datos.md) | `E**T**L`, `Modelado Relacional (1-a-1)`, `Modelado de Estrella (1-a-todos)` | [Introducción al modelado de datos](./04_Creacion_del_modelo/04-001_Introduccion_modelado_de_datos.md) | 2026-09-18 |
+| [X] | [04-002](./04_Creacion_del_modelo/04-002_Usar_las_relaciones_de_datos.md) | `Roles (Tipos de relación`, `Direccionalidad`, `Navegabilidad` | [Utilizar las relaciones de datos](./04_Creacion_del_modelo/04-002_Usar_las_relaciones_de_datos.md) | 2026-09-18 |
 | [ ] | 04-003 | | Crear columnas | |
 | [ ] | 04-004 | | Optimizando modelos de datos | |
 | [ ] | 04-005 | | Crear tablas | |
 | [ ] | 04-006 | | Configuración en estrella | |
+
 
 
 | Status | Guide | Type | Title | Date |
