@@ -1,7 +1,5 @@
 # 04-004:	Optimizando modelos de datos
 
-
-
 Normalmente, **los set de datos importados suelen contener campos que no necesitamos** incluir, o **que están sucios**, en los objetos visuales que crearemos para nuestros informes, ya sea porque contengan información adicional o porque esos datos ya estén disponibles en otra columna.  
 
 > [!IMPORTANT]

@@ -99,7 +99,7 @@ Podremos crear y eliminar relaciones con facilidad en esta vista, por ejemplo:
 > [!IMPORTANT]
 > Como un **estándar de las bases de datos**, las relaciones que se establecen entre las tablas de datos deben obedecer a un modelo relacional, donde las claves de cada uno de los sets de datos deben corresponderse de acuerdo con el negocio que se desea representar en el manejo de la información.  
 
-- Tipo de relación (Rol):	**1-a-1**  
+- Tipo de relación (Rol, **CARDINALIDAD**):	**1-a-1**, `1:1`  
 
 ![](./img/04-008.png)
 
@@ -117,7 +117,7 @@ Por ello, se debe **organizar la información de una forma optimizada** para que
 
 ![](./img/04-010.png)
 
-- Tipo de relación (Rol):	**1-a-todos**  
+- Tipo de relación (Rol, **CARDINALIDAD**):	**1-a-varios** , `1:*`    
 
 * Power BI funciona mejor con modelos tabulares diseñados con esquema en forma de estrella.   
 

@@ -14,12 +14,12 @@
 
 ---
 
-### Roles de las tablas en las relaciones
+## Roles de las tablas en las relaciones
 
-#### Tipos de Relación
+### Tipos de Relación (Rol, CARDINALIDAD)
 
 > [!IMPORTANT]
-> Los roles se establecen o definen por el extremo de la relación entre las tablas.
+> Los roles (**CARDINALIDAD**, su **DIRECCIONALIDAD** y la **NAVEGABILIDAD** de los datos resultante) se establecen o definen por el extremo de la relación entre las tablas.
 
 
 
@@ -36,10 +36,13 @@ En la imagen, la columna Channel de la tabla Channel representa el extremo `1` d
 
 
 
-#### Direccionalidad y Navegabilidad (`->`, `<->`)
+### Direccionalidad (y navegabilidad ímplicita) 
 
 > [!IMPORTANT]
 > La direccionalidad de las relaciones **definirá después el filtrado automático**.
+
+- **Única**, `->`, unidireccional.
+- **Ambas** `<->`, bidireccional.
 
 - Los datos se pueden filtrar en uno o en ambos lados de la relación, según sea el caso.  
 

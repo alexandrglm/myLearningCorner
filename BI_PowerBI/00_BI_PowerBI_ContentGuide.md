@@ -50,12 +50,12 @@
 
 | Status | Guide | Type | Title | Date |
 | ------ | ----- | ---- | ----- | ---- |
-| [X] | [04-001](./04_Creacion_del_modelo/04-001_Introduccion_modelado_de_datos.md) | `E**T**L`, `Modelado Relacional (1-a-1)`, `Modelado de Estrella (1-a-todos)` | [Introducción al modelado de datos](./04_Creacion_del_modelo/04-001_Introduccion_modelado_de_datos.md) | 2026-09-18 |
-| [X] | [04-002](./04_Creacion_del_modelo/04-002_Usar_las_relaciones_de_datos.md) | `Roles (Tipos de relación`, `Direccionalidad`, `Navegabilidad` | [Utilizar las relaciones de datos](./04_Creacion_del_modelo/04-002_Usar_las_relaciones_de_datos.md) | 2026-09-18 |
+| [X] | [04-001](./04_Creacion_del_modelo/04-001_Introduccion_modelado_de_datos.md) | `E**T**L`, `Modelado Relacional (1-a-1, 1:1)`, `Modelado de Estrella (1-a-varios, 1:*)` | [Introducción al modelado de datos](./04_Creacion_del_modelo/04-001_Introduccion_modelado_de_datos.md) | 2026-09-18 |
+| [X] | [04-002](./04_Creacion_del_modelo/04-002_Usar_las_relaciones_de_datos.md) | `Roles (Tipos de relación)`, `Cardinalidad`, `Direccionalidad`, `Navegabilidad` | [Utilizar las relaciones de datos](./04_Creacion_del_modelo/04-002_Usar_las_relaciones_de_datos.md) | 2026-09-18 |
 | [X] | [04-003](./04_Creacion_del_modelo/04-003_Crear_columnas.md) | `Herramientas de Tablas` > `Nueva Columna`, `Expresiones en DAX` | [Crear columnas](./04_Creacion_del_modelo/04-003_Crear_columnas.md) | 2026-09-18 |
 | [X] | [04-004](./04_Creacion_del_modelo/04-004_Optimizando_modelos_de_datos.md) | `Ocultar Campos`, `Ordenar por Columna`, `Establecer el tipo de datos` | [Optimizando modelos de datos](./04_Creacion_del_modelo/04-004_Optimizando_modelos_de_datos.md) | 2026-09-18 |
-| [X] | [04-005](./04_Creacion_del_modelo/04-005_Crear_Tablas.md) | `Crear Tablas con DAX:`, `Nombre de Tabla = <Función de Tabla>( <Tabla de Origen> o <Columna(s)>, [Argumentos/Filtros], [<Anidado de Funciones>] )` | [Crear tablas](./04_Creacion_del_modelo/04-005_Crear_Tablas.md) | 2026-09-18 |
-| [X] | [04-006](./04_Creacion_del_modelo/04-006_Configuracion_en_Estrella.md) | `Hechos`, `Dimensiones`, `1-a-todos`, `Bidireccional`, `Tablas Normalizadas` | [Configuración en estrella](./04_Creacion_del_modelo/04-006_Configuracion_en_Estrella.md) | 2026-09-18 |
+| [X] | [04-005](./04_Creacion_del_modelo/04-005_Crear_Tablas.md | `Crear Tablas con DAX:`, `Nombre de Tabla = <Función de Tabla>( <Tabla de Origen> o <Columna(s)>, [Argumentos/Filtros], [<Anidado de Funciones>] )` | [Crear tablas](./04_Creacion_del_modelo/04-005_Crear_Tablas.md) | 2026-09-18 |
+| [X] | [04-006](./04_Creacion_del_modelo/04-006_Configuracion_en_Estrella.md) | `Hechos`, `Dimensiones`, `1-a-todos 1:*`, `Bidireccional`, `Tablas Normalizadas` | [Configuración en estrella](./04_Creacion_del_modelo/04-006_Configuracion_en_Estrella.md) | 2026-09-18 |
 
 
 | Status | Guide | Type | Title | Date |
@@ -68,7 +68,7 @@
 
 | Status | Guide | Type | Title | Date |
 | ------ | ----- | ---- | ----- | ---- |
-| [ ] | 05-001 | | Introducción a las relaciones entre tablas | |
+| [X] | [05-001](./05_Creacion_de_relaciones/05-001_Relaciones_entre_las_tablas.md) | `Vista de Modelo`, `Subconjuntos de diagramas en nuevas páginas`, `Detección Automática de Relaciones`, `Editar relaciones`, `Solamente UNA relación activa`, `CARDINALIDAD (1:1, 1:*, *:1, *:*)`,  `DIRECCIONALIDAD (Única -> , Ambas <->)` | [Introducción a las relaciones entre tablas](./05_Creacion_de_relaciones/05-001_Relaciones_entre_las_tablas.md) | 2026-09-19 |
 | [ ] | 05-002 | | Detección automática de relaciones | |
 | [ ] | 05-003 | | Creación de relaciones manual | |
 | [ ] | 05-004 | | Edición de relaciones y propiedades | |
@@ -77,10 +77,6 @@
 | ------ | ----- | ---- | ----- | ---- |
 | [ ]    | 05-00x | | Actividad Tracking ||
 
-
-| Status | Guide | Type | Title | Date |
-| ------ | ----- | ---- | ----- | ---- |
-| [ ]    | 05-00x | | Actividad .pbix TRacking ||
 
 ---
 
