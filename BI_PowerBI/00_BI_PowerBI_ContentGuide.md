@@ -69,13 +69,13 @@
 | Status | Guide | Type | Title | Date |
 | ------ | ----- | ---- | ----- | ---- |
 | [X] | [05-001](./05_Creacion_de_relaciones/05-001_Relaciones_entre_las_tablas.md) | `Vista de Modelo`, `Subconjuntos de diagramas en nuevas páginas`, `Detección Automática de Relaciones`, `Editar relaciones`, `Solamente UNA relación activa`, `CARDINALIDAD (1:1, 1:*, *:1, *:*)`,  `DIRECCIONALIDAD (Única -> , Ambas <->)` | [Introducción a las relaciones entre tablas](./05_Creacion_de_relaciones/05-001_Relaciones_entre_las_tablas.md) | 2026-09-19 |
-| [ ] | 05-002 | | Detección automática de relaciones | |
-| [ ] | 05-003 | | Creación de relaciones manual | |
-| [ ] | 05-004 | | Edición de relaciones y propiedades | |
+| [X] | [05-002](./05_Creacion_de_relaciones/05-002_Deteccion_Automatica_de_Relaciones.md) | `Busca valores iguales en columnas`, `Usa estadísticas internas para modelos de importación`, `Consulta generación de perfiles al origen de datos si es un modelo DirectQuery`, `Es necesaria corrección de posibles errores`, `Son actualizables antes, durante y después de la importación de datos` | [Detección automática de relaciones](./05_Creacion_de_relaciones/05-002_Deteccion_Automatica_de_Relaciones.md) | 2026-09-23 |
+| [X] | [05-003](./05_Creacion_de_relaciones/05-003_Creación_de_relaciones_manual.md) |  | [Creación de relaciones manual](./05_Creacion_de_relaciones/05-003_Creación_de_relaciones_manual.md) | 2026-09-23 |
+| [X] | [05-004](./05_Creacion_de_relaciones/05-004_Edicion_de_relaciones_y_propiedades.md) | | [Edición de relaciones y propiedades](./05_Creacion_de_relaciones/05-004_Edicion_de_relaciones_y_propiedades.md) | 2026-09-23 |
 
 | Status | Guide | Type | Title | Date |
 | ------ | ----- | ---- | ----- | ---- |
-| [ ]    | 05-00x | | Actividad Tracking ||
+| [ ]    | 05-00x | | Actividad Tracking |
 
 
 ---
